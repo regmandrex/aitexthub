@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  @apply antialiased bg-slate-50 text-slate-900;
+}
+
+h1,
+h2,
+h3 {
+  @apply font-semibold text-slate-900 tracking-tight;
+}
+
+p {
+  @apply leading-relaxed text-slate-700;
+}
+
+textarea,
+input {
+  @apply border border-slate-200 rounded-lg bg-white text-slate-900;
+}
+
+a {
+  @apply text-brand-600 hover:text-brand-700;
+}
+
+.ad-slot {
+  @apply my-6 flex items-center justify-center rounded-lg border border-dashed border-slate-300 bg-white p-6 text-sm text-slate-500;
+}
