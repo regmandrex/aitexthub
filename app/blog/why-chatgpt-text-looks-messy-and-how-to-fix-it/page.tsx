@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { buildMeta } from '@/lib/seo-meta';
+import AdSenseSlot from '../../../components/ads/AdSenseSlot';
 
 export const metadata = buildMeta({
   title: 'Why ChatGPT Text Looks Messy and How to Fix It | GPT CLEAN UP',
@@ -10,7 +11,9 @@ export const metadata = buildMeta({
 export default function WhyChatGPTTextLooksMessyPage() {
   return (
     <article className="prose max-w-none prose-slate">
-      <div className="ad-slot">Ad slot (replace with AdSense)</div>
+      <div className="ad-slot">
+        <AdSenseSlot className="w-full" />
+      </div>
       <h1>Why ChatGPT Text Looks Messy and How to Fix It</h1>
       <p>
         ChatGPT and other AI models often return great ideas wrapped in strange formatting: unexpected line breaks, double spaces,
@@ -44,7 +47,9 @@ export default function WhyChatGPTTextLooksMessyPage() {
         odd gaps after pasting from ChatGPT, Gemini, or Claude.
       </p>
 
-      <div className="ad-slot">Ad slot (replace with AdSense)</div>
+      <div className="ad-slot">
+        <AdSenseSlot className="w-full" />
+      </div>
 
       <div className="mt-8 rounded-2xl border border-brand-100 bg-brand-50 p-4 text-sm text-brand-800">
         <p className="font-semibold">Ready to clean your AI text?</p>

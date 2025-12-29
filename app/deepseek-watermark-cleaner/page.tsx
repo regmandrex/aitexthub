@@ -7,6 +7,7 @@ import { JsonLd } from "../../components/JsonLd";
 import { webPageSchema } from "../../lib/schema/webpage";
 import { siteUrl } from "../../lib/schema/site";
 import { RelatedTools } from "../../components/tool/RelatedTools";
+import AdSenseSlot from "../../components/ads/AdSenseSlot";
 
 function RailAd({ side }: { side: 'left' | 'right' }) {
   const sideClass = side === 'left' ? 'left-4' : 'right-4';
@@ -14,7 +15,7 @@ function RailAd({ side }: { side: 'left' | 'right' }) {
   return (
     <div className={`hidden xl:block fixed top-[220px] ${sideClass} z-20`}>
       <div className="w-[180px] min-h-[260px] border border-dashed border-[#d7d7d7] rounded-lg p-4 text-center text-sm text-[#666] flex items-center justify-center bg-[#f7f9ff]">
-        Sidebar ad slot (replace with AdSense)
+        <AdSenseSlot className="w-full" />
       </div>
     </div>
   );
@@ -215,10 +216,7 @@ export default function DeepSeekWatermarkCleanerPage() {
       <div className="mx-auto w-full max-w-[1400px] px-4">
         <div className="mt-4 mb-6">
           <div className="w-full overflow-hidden rounded-xl border border-dashed border-slate-300/70 bg-slate-50/40 px-4 py-6 text-center text-sm font-medium text-slate-500">
-            Top ad slot (replace with AdSense)
-            <div className="mt-1 text-xs text-slate-400">
-              Responsive leaderboard / banner (e.g., 728x90, 970x90, 970x250)
-            </div>
+            <AdSenseSlot className="w-full" />
           </div>
         </div>
       </div>

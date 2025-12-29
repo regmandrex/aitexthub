@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { buildMeta } from '@/lib/seo-meta';
+import AdSenseSlot from '../../../components/ads/AdSenseSlot';
 
 export const metadata = buildMeta({
   title: 'ChatGPT Formatting Fixer - Clean AI Output for Word & Docs | GPT CLEAN UP',
@@ -10,7 +11,9 @@ export const metadata = buildMeta({
 export default function ChatGPTFormattingFixerPage() {
   return (
     <article className="prose max-w-none prose-slate">
-      <div className="ad-slot">Ad slot (replace with AdSense)</div>
+      <div className="ad-slot">
+        <AdSenseSlot className="w-full" />
+      </div>
       <h1>ChatGPT Formatting Fixer - Clean AI Output for Word &amp; Docs</h1>
       <p>
         Pasting ChatGPT text into Word or Google Docs should be painless, but the AI often adds double spaces, uneven bullets, or stray
@@ -44,7 +47,9 @@ export default function ChatGPTFormattingFixerPage() {
         into Word, Docs, or slides.
       </p>
 
-      <div className="ad-slot">Ad slot (replace with AdSense)</div>
+      <div className="ad-slot">
+        <AdSenseSlot className="w-full" />
+      </div>
       <div className="mt-8 rounded-2xl border border-brand-100 bg-brand-50 p-4 text-sm text-brand-800">
         <p className="font-semibold">Clean it before you paste it.</p>
         <p>

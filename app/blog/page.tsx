@@ -1,4 +1,5 @@
 import BlogCard from '../../components/BlogCard';
+import AdSenseSlot from '../../components/ads/AdSenseSlot';
 
 const posts = [
   {
@@ -18,7 +19,9 @@ const posts = [
 export default function BlogIndexPage() {
   return (
     <div className="space-y-6">
-      <div className="ad-slot">Ad slot (replace with AdSense)</div>
+      <div className="ad-slot">
+        <AdSenseSlot className="w-full" />
+      </div>
       <div className="grid gap-4">
         {posts.map((post) => (
           <BlogCard key={post.slug} href={`/blog/${post.slug}`} title={post.title} description={post.description} date={post.date} />
