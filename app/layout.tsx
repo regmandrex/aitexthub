@@ -35,6 +35,13 @@ type RootLayoutProps = {
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en">
+      <head>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8764610479002120"
+          crossOrigin="anonymous"
+        ></script>
+      </head>
       <body className="bg-slate-50 text-slate-900 antialiased">
         <JsonLd data={webSiteSchema()} />
         <JsonLd data={siteNavigationSchema()} />
