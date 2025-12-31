@@ -19,7 +19,7 @@ function RailAd({ side }: { side: 'left' | 'right' }) {
 
   return (
     <div className={`hidden xl:block fixed top-[220px] ${sideClass} z-20`}>
-      <div className="w-[180px] min-h-[260px] border border-dashed border-[#d7d7d7] rounded-lg p-4 text-center text-sm text-[#666] flex items-center justify-center bg-[#f7f9ff]">
+      <div className="w-[180px] min-h-[260px]">
         <AdSenseSlot className="w-full" />
       </div>
     </div>
@@ -30,7 +30,7 @@ function TopBannerAd() {
   return (
     <div className="mx-auto w-full max-w-[1400px] px-4">
       <div className="mt-4 mb-6">
-        <div className="w-full overflow-hidden rounded-xl border border-dashed border-slate-300/70 bg-slate-50/40 px-4 py-6 text-center text-sm font-medium text-slate-500">
+        <div className="w-full overflow-hidden">
           <AdSenseSlot className="w-full" />
         </div>
       </div>
@@ -64,6 +64,8 @@ export function ToolPageShell({ tool, ui, related, children }: ToolPageShellProp
     </div>
   );
 }
+
+
 
 
 
