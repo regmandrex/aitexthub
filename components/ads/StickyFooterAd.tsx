@@ -80,7 +80,7 @@ export default function StickyFooterAd() {
     : { width: 320, height: 50, slot: MOBILE_SLOT };
 
   return (
-    <div className="fixed inset-x-0 bottom-0 z-40 border-t border-slate-200/60 bg-white/70 backdrop-blur-sm">
+    <div className="fixed inset-x-0 bottom-0 z-40 border-t border-slate-200 bg-white/95 backdrop-blur">
       <div className="mx-auto flex w-full max-w-[1400px] justify-center px-4 py-2">
         <ins
           ref={slotRef}

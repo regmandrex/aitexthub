@@ -19,7 +19,7 @@ function RailAd({ side }: { side: 'left' | 'right' }) {
   const sideClass = side === 'left' ? 'left-4' : 'right-4';
 
   return (
-    <div className={`hidden xl:block fixed top-[160px] ${sideClass} z-20`}>
+    <div className={`hidden xl:block fixed top-[220px] ${sideClass} z-20`}>
       <div className="w-[180px] min-h-[260px]">
         <AdSenseSlot className="w-full" />
       </div>
@@ -53,7 +53,6 @@ export function ToolPageShell({ tool, ui, related, children }: ToolPageShellProp
     </div>
   );
 }
-
 
 
 
