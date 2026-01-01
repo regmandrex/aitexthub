@@ -3,6 +3,7 @@ import { ReactNode } from 'react';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import { JsonLd } from '../components/JsonLd';
+import StickyFooterAd from '../components/ads/StickyFooterAd';
 import { webSiteSchema, siteNavigationSchema } from '../lib/schema/site';
 import '../styles/globals.css';
 
@@ -42,7 +43,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
           crossOrigin="anonymous"
         ></script>
       </head>
-      <body className="bg-slate-50 text-slate-900 antialiased">
+      <body className="bg-slate-50 text-slate-900 antialiased pb-[80px] md:pb-[120px] lg:pb-[140px]">
         <JsonLd data={webSiteSchema()} />
         <JsonLd data={siteNavigationSchema()} />
         {/* Example AdSense integration (replace ca-pub-XXXX with your publisher id)
@@ -57,6 +58,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <Header />
         <main className="min-h-screen">{children}</main>
         <Footer />
+        <StickyFooterAd />
       </body>
     </html>
   );

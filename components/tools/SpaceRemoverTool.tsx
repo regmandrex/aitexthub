@@ -2,7 +2,6 @@
 
 import { useState } from 'react';
 import ToolTextArea from './ToolTextArea';
-import MobileAdSlot from '../ads/MobileAdSlot';
 import { cleanSpaces } from '@/lib/tools/spaceRemover';
 
 type SpaceRemoverToolProps = {
@@ -36,7 +35,6 @@ export function SpaceRemoverTool(_: SpaceRemoverToolProps) {
           placeholder="Paste text to clean..."
           rows={12}
         />
-        <MobileAdSlot />
         <ToolTextArea
           label="Output"
           value={output}
@@ -75,6 +73,9 @@ export function SpaceRemoverTool(_: SpaceRemoverToolProps) {
     </div>
   );
 }
+
+
+
 
 
 

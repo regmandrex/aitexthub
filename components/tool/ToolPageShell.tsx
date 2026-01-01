@@ -1,5 +1,6 @@
 import { ReactNode } from 'react';
 import AdSenseSlot from '../ads/AdSenseSlot';
+import BelowToolAd from '../ads/BelowToolAd';
 
 type Tool = {
   slug: string;
@@ -26,24 +27,10 @@ function RailAd({ side }: { side: 'left' | 'right' }) {
   );
 }
 
-function TopBannerAd() {
-  return (
-    <div className="mx-auto w-full max-w-[1400px] px-4">
-      <div className="mt-4 mb-6">
-        <div className="w-full overflow-hidden">
-          <AdSenseSlot className="w-full" />
-        </div>
-      </div>
-    </div>
-  );
-}
-
 export function ToolPageShell({ tool, ui, related, children }: ToolPageShellProps) {
   return (
     <div className="relative min-h-screen bg-[#f7f9ff]">
-      <RailAd side="left" />
       <RailAd side="right" />
-      <TopBannerAd />
 
       <div className="mx-auto w-full max-w-4xl px-4 py-10">
         <section className="space-y-3 text-center">
@@ -57,6 +44,8 @@ export function ToolPageShell({ tool, ui, related, children }: ToolPageShellProp
           </div>
         </section>
 
+        <BelowToolAd />
+
         {children}
 
         {related}
@@ -64,6 +53,8 @@ export function ToolPageShell({ tool, ui, related, children }: ToolPageShellProp
     </div>
   );
 }
+
+
 
 
 

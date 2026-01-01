@@ -8,6 +8,7 @@ import { webPageSchema } from '../../lib/schema/webpage';
 import { siteUrl } from '../../lib/schema/site';
 import { RelatedTools } from '../../components/tool/RelatedTools';
 import AdSenseSlot from '../../components/ads/AdSenseSlot';
+import BelowToolAd from '../../components/ads/BelowToolAd';
 
 function RailAd({ side }: { side: 'left' | 'right' }) {
   const sideClass = side === 'left' ? 'left-4' : 'right-4';
@@ -216,17 +217,7 @@ export default function ClaudeWatermarkCleanerPage() {
             'Remove hidden characters and watermarks from Claude output. Strip zero-width/NBSP Unicode, fix spacing, and prepare clean text for Word, Docs, and CMS.',
         })}
       />
-      <RailAd side="left" />
       <RailAd side="right" />
-
-      {/* Top Ad (under navbar, above H1) */}
-      <div className="mx-auto w-full max-w-[1400px] px-4">
-        <div className="mt-4 mb-6">
-          <div className="w-full overflow-hidden">
-            <AdSenseSlot className="w-full" />
-          </div>
-        </div>
-      </div>
 
       <div className="mx-auto w-full max-w-4xl px-4 py-10">
         <section className="space-y-3 text-center">
@@ -249,6 +240,8 @@ export default function ClaudeWatermarkCleanerPage() {
             />
           </div>
         </section>
+
+        <BelowToolAd />
 
         <RelatedTools currentSlug="claude-watermark-cleaner" />
 

@@ -2,7 +2,6 @@
 
 import { useState, useMemo } from 'react';
 import ToolTextArea from './ToolTextArea';
-import MobileAdSlot from '../ads/MobileAdSlot';
 import { analyzeWatermarkSignals } from '@/lib/tools/watermarkSignals';
 
 type WatermarkDetectorToolProps = {
@@ -150,7 +149,6 @@ export function WatermarkDetectorTool(_: WatermarkDetectorToolProps) {
           placeholder="Paste text to inspect..."
           rows={12}
         />
-        <MobileAdSlot />
         <div className="space-y-2">
           <label className="text-sm font-semibold text-slate-800">Highlighted</label>
           <div

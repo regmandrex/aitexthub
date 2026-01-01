@@ -4,7 +4,6 @@ import { useMemo, useState } from 'react';
 import CopyButton from './CopyButton';
 import ToolTextarea from './ToolTextarea';
 import { chatgptSpaceRemover, chatgptTextCleaner, geminiSpaceRemover } from '../lib/tools';
-import MobileAdSlot from './ads/MobileAdSlot';
 
 type ProcessorKey = 'chatgptTextCleaner' | 'chatgptSpaceRemover' | 'geminiSpaceRemover';
 
@@ -69,7 +68,6 @@ export default function ToolWorkbench({
             </div>
           }
         />
-        <MobileAdSlot />
         <div className="flex flex-col gap-3">
           <ToolTextarea
             label={outputLabel}

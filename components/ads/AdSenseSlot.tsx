@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import type { CSSProperties } from 'react';
 
 type AdSenseSlotProps = {
@@ -14,6 +14,7 @@ const AD_SLOT = '3825906278';
 export default function AdSenseSlot({ className, style }: AdSenseSlotProps) {
   const slotRef = useRef<HTMLModElement | null>(null);
   const hasPushedRef = useRef(false);
+  const [isReady, setIsReady] = useState(false);
 
   useEffect(() => {
     const element = slotRef.current;
@@ -21,35 +22,27 @@ export default function AdSenseSlot({ className, style }: AdSenseSlotProps) {
       return;
     }
 
-    const tryInit = () => {
-      if (hasPushedRef.current) {
-        return;
-      }
-
+    const markReady = () => {
       if (!element.isConnected || element.offsetWidth === 0) {
-        return;
+        return false;
       }
 
-      try {
-        const win = window as Window & { adsbygoogle?: Array<unknown> };
-        (win.adsbygoogle = win.adsbygoogle || []).push({});
-        hasPushedRef.current = true;
-      } catch (error) {
-        // Avoid runtime crashes from AdSense TagError when slots are invalid.
-      }
+      setIsReady(true);
+      return true;
     };
 
-    tryInit();
+    if (markReady()) {
+      return;
+    }
 
     if (typeof ResizeObserver === 'undefined') {
-      const handleResize = () => tryInit();
+      const handleResize = () => markReady();
       window.addEventListener('resize', handleResize);
       return () => window.removeEventListener('resize', handleResize);
     }
 
     const observer = new ResizeObserver(() => {
-      tryInit();
-      if (hasPushedRef.current) {
+      if (markReady()) {
         observer.disconnect();
       }
     });
@@ -58,7 +51,21 @@ export default function AdSenseSlot({ className, style }: AdSenseSlotProps) {
     return () => observer.disconnect();
   }, []);
 
-  const classes = ['adsbygoogle', className].filter(Boolean).join(' ');
+  useEffect(() => {
+    const element = slotRef.current;
+    if (!element || !isReady || hasPushedRef.current) {
+      return;
+    }
+
+    try {
+      const win = window as Window & { adsbygoogle?: Array<unknown> };
+      (win.adsbygoogle = win.adsbygoogle || []).push({});
+      hasPushedRef.current = true;
+    } catch {
+    }
+  }, [isReady]);
+
+  const classes = [isReady ? 'adsbygoogle' : null, className].filter(Boolean).join(' ');
 
   return (
     <ins

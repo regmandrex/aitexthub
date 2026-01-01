@@ -8,6 +8,7 @@ import { webPageSchema } from '../../lib/schema/webpage';
 import { siteUrl } from '../../lib/schema/site';
 import { RelatedTools } from '../tool/RelatedTools';
 import AdSenseSlot from '../ads/AdSenseSlot';
+import BelowToolAd from '../ads/BelowToolAd';
 
 type Props = {
   modelName: string;
@@ -28,18 +29,6 @@ function RailAd({ side }: { side: 'left' | 'right' }) {
   );
 }
 
-function TopBannerAd() {
-  return (
-    <div className="mx-auto w-full max-w-[1400px] px-4">
-      <div className="mt-4 mb-6">
-        <div className="w-full overflow-hidden">
-          <AdSenseSlot className="w-full" />
-        </div>
-      </div>
-    </div>
-  );
-}
-
 export default function SpaceRemoverPage({ modelName, modelSlug, faqItems, content }: Props) {
   const url = `${siteUrl}/${modelSlug}-space-remover/`;
   const title = `${modelName} Space Remover`;
@@ -48,9 +37,7 @@ export default function SpaceRemoverPage({ modelName, modelSlug, faqItems, conte
   return (
     <div className="relative min-h-screen bg-[#f7f9ff]">
       <JsonLd data={webPageSchema({ name: title, url, description })} />
-      <RailAd side="left" />
       <RailAd side="right" />
-      <TopBannerAd />
 
       <div className="mx-auto w-full max-w-4xl px-4 py-10">
         <section className="space-y-3 text-center">
@@ -67,6 +54,8 @@ export default function SpaceRemoverPage({ modelName, modelSlug, faqItems, conte
             <SpaceRemoverTool modelName={modelName} />
           </div>
         </section>
+
+        <BelowToolAd />
 
         <RelatedTools currentSlug={`${modelSlug}-space-remover`} showModeTools={false} />
 
