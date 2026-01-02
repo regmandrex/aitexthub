@@ -30,6 +30,12 @@ export const toolPages: ToolPage[] = [
     category: 'text',
   },
   {
+    slug: 'space-remover',
+    title: 'Space Remover',
+    description: 'Remove extra spaces, trim lines, and normalize whitespace for clean, paste-ready text.',
+    category: 'text',
+  },
+  {
     slug: 'chatgpt-space-remover',
     title: 'ChatGPT Space Remover',
     description: 'Remove extra spaces and blank lines from ChatGPT output in one click.',
