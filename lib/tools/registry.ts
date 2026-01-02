@@ -4,13 +4,27 @@ export type Tool = {
   slug: string;
   title: string;
   shortDescription: string;
+  seoTitle?: string;
   category?: string;
   model?: string;
   modelSlug?: string;
   mode?: string;
   modeLabel?: string;
   ui: {
-    kind: 'space-remover' | 'text-cleaner' | 'watermark-detector';
+    kind:
+      | 'space-remover'
+      | 'text-cleaner'
+      | 'watermark-detector'
+      | 'case-converter'
+      | 'em-dash-remover'
+      | 'find-and-replace'
+      | 'invisible-character-detector'
+      | 'remove-duplicate-lines'
+      | 'remove-line-breaks'
+      | 'strip-html'
+      | 'url-encoder-decoder'
+      | 'word-counter'
+      | 'zero-width-space-remover';
   };
   content?: {
     disclaimers?: string[];
@@ -35,22 +49,46 @@ const MODE_LABELS: Record<string, string> = {
   'space-remover': 'Space Remover',
   'watermark-cleaner': 'Watermark Cleaner',
   'watermark-detector': 'Watermark Detector',
+  utility: 'Text Utility',
 };
 
-function getModelSlug(slug: string): string {
+const UTILITY_SLUGS = new Set([
+  'case-converter',
+  'em-dash-remover',
+  'find-and-replace',
+  'invisible-character-detector',
+  'remove-duplicate-lines',
+  'remove-line-breaks',
+  'strip-html',
+  'url-encoder-decoder',
+  'word-counter',
+  'zero-width-space-remover',
+]);
+
+const MODEL_SLUGS = new Set(Object.keys(MODEL_LABELS));
+
+function getModelSlug(slug: string): string | undefined {
   if (slug === '') {
     return 'chatgpt';
   }
-  return slug.split('-')[0] || 'chatgpt';
+  if (UTILITY_SLUGS.has(slug)) {
+    return undefined;
+  }
+  const candidate = slug.split('-')[0];
+  return MODEL_SLUGS.has(candidate) ? candidate : undefined;
 }
 
-function getModelLabel(modelSlug: string): string {
+function getModelLabel(modelSlug?: string): string | undefined {
+  if (!modelSlug) return undefined;
   return MODEL_LABELS[modelSlug] ?? `${modelSlug.charAt(0).toUpperCase()}${modelSlug.slice(1)}`;
 }
 
 function getModeSlug(slug: string): string {
   if (slug === '') {
     return 'text-cleaner';
+  }
+  if (UTILITY_SLUGS.has(slug)) {
+    return 'utility';
   }
   if (slug.includes('watermark-detector')) {
     return 'watermark-detector';
@@ -69,9 +107,27 @@ function getModeLabel(mode: string): string {
 }
 
 // Map slugs to UI kinds
-function getUIKind(slug: string): 'space-remover' | 'text-cleaner' | 'watermark-detector' {
+function getUIKind(
+  slug: string
+):
+  | 'space-remover'
+  | 'text-cleaner'
+  | 'watermark-detector'
+  | 'case-converter'
+  | 'em-dash-remover'
+  | 'find-and-replace'
+  | 'invisible-character-detector'
+  | 'remove-duplicate-lines'
+  | 'remove-line-breaks'
+  | 'strip-html'
+  | 'url-encoder-decoder'
+  | 'word-counter'
+  | 'zero-width-space-remover' {
   if (slug === '') {
     return 'text-cleaner';
+  }
+  if (UTILITY_SLUGS.has(slug)) {
+    return slug as Tool['ui']['kind'];
   }
   if (slug.includes('watermark-detector')) {
     return 'watermark-detector';
@@ -92,6 +148,7 @@ const tools: Tool[] = toolPages.map((page) => {
     slug: page.slug,
     title: page.title,
     shortDescription: page.description,
+    seoTitle: page.seoTitle,
     category: page.category,
     model: getModelLabel(modelSlug),
     modelSlug,
@@ -132,6 +189,9 @@ export function getRelatedTools(currentTool: Tool, limit: number = 8): Tool[] {
   
   return related.slice(0, limit);
 }
+
+
+
 
 
 

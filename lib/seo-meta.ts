@@ -32,3 +32,20 @@ export function buildMeta({ title, description, urlPath }: MetaInput): Metadata 
   };
 }
 
+type ToolMetaInput = {
+  title: string;
+  description: string;
+  urlPath: string;
+  seoTitle?: string;
+};
+
+export function buildToolMeta({ title, description, urlPath, seoTitle }: ToolMetaInput): Metadata {
+  const trimmedDescription = description.replace(/\.$/, '').trim();
+  const fullTitle = seoTitle ?? (trimmedDescription ? `${title} - ${trimmedDescription}` : title);
+
+  return buildMeta({
+    title: fullTitle,
+    description,
+    urlPath,
+  });
+}

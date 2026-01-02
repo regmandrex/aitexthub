@@ -2,6 +2,7 @@ type ToolPage = {
   slug: string; // without leading slash
   title: string;
   description: string;
+  seoTitle?: string;
   category?: string;
   models?: string[];
   canonicalTo?: string;
@@ -33,6 +34,76 @@ export const toolPages: ToolPage[] = [
     slug: 'space-remover',
     title: 'Space Remover',
     description: 'Remove extra spaces, trim lines, and normalize whitespace for clean, paste-ready text.',
+    category: 'text',
+  },
+  {
+    slug: 'case-converter',
+    title: 'Case Converter',
+    description: 'Convert text to uppercase, lowercase, title case, or sentence case.',
+    seoTitle: 'Case Converter - Uppercase, Lowercase, Title & Sentence Case',
+    category: 'text',
+  },
+  {
+    slug: 'em-dash-remover',
+    title: 'Em Dash Remover / Replacer',
+    description: 'Remove or replace em dashes and en dashes with your preferred spacing.',
+    seoTitle: 'Em Dash Remover - Replace or Remove Em & En Dashes',
+    category: 'text',
+  },
+  {
+    slug: 'find-and-replace',
+    title: 'Find & Replace',
+    description: 'Find text and replace it with custom values, with optional case matching.',
+    seoTitle: 'Find and Replace Tool - Bulk Text Replace Online',
+    category: 'text',
+  },
+  {
+    slug: 'invisible-character-detector',
+    title: 'Invisible Character Detector',
+    description: 'Detect hidden Unicode characters and show where they appear in your text.',
+    seoTitle: 'Invisible Character Detector - Find Hidden Unicode',
+    category: 'text',
+  },
+  {
+    slug: 'remove-duplicate-lines',
+    title: 'Remove Duplicate Lines',
+    description: 'Remove duplicate lines while keeping the original order intact.',
+    seoTitle: 'Remove Duplicate Lines - Delete Duplicate Text',
+    category: 'text',
+  },
+  {
+    slug: 'remove-line-breaks',
+    title: 'Remove Line Breaks',
+    description: 'Join wrapped lines into clean paragraphs by removing line breaks.',
+    seoTitle: 'Remove Line Breaks - Join Lines into Paragraphs',
+    category: 'text',
+  },
+  {
+    slug: 'strip-html',
+    title: 'Strip HTML',
+    description: 'Remove HTML tags and return clean plain text.',
+    seoTitle: 'Strip HTML Tags - Convert HTML to Plain Text Free',
+    category: 'text',
+  },
+  {
+    slug: 'url-encoder-decoder',
+    title: 'URL Encoder / Decoder',
+    description: 'Encode or decode URLs, query strings, and text fragments.',
+    seoTitle: 'URL Encoder Decoder - Encode or Decode URLs',
+    category: 'text',
+  },
+  {
+    slug: 'word-counter',
+    title: 'Word Counter',
+    description: 'Count words, characters, lines, sentences, and paragraphs.',
+    seoTitle: 'Word Counter - Count Words, Characters & Lines',
+    category: 'text',
+  },
+  {
+    slug: 'zero-width-space-remover',
+    title: 'Zero-Width Space Remover',
+    description: 'Remove zero-width spaces and invisible Unicode characters.',
+    seoTitle: 'Zero-Width Space Remover - Remove Invisible Unicode',
     category: 'text',
   },
   {

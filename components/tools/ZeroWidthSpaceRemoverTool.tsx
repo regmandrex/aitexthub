@@ -2,23 +2,24 @@
 
 import { useState } from 'react';
 import ToolTextArea from './ToolTextArea';
-import { cleanSpaces } from '@/lib/tools/spaceRemover';
 
-type SpaceRemoverToolProps = {
-  modelName?: string;
-};
+const ZERO_WIDTH_REGEX = /[\u200B\u200C\u200D\u2060\uFEFF\u200E\u200F]/g;
 
-export function SpaceRemoverTool(_: SpaceRemoverToolProps) {
+export function ZeroWidthSpaceRemoverTool() {
   const [input, setInput] = useState('');
   const [output, setOutput] = useState('');
+  const [removedCount, setRemovedCount] = useState(0);
 
-  const handleClean = () => {
-    setOutput(cleanSpaces(input));
+  const handleRemove = () => {
+    const matches = input.match(ZERO_WIDTH_REGEX);
+    setRemovedCount(matches ? matches.length : 0);
+    setOutput(input.replace(ZERO_WIDTH_REGEX, ''));
   };
 
   const handleClear = () => {
     setInput('');
     setOutput('');
+    setRemovedCount(0);
   };
 
   const handleCopy = () => {
@@ -32,27 +33,27 @@ export function SpaceRemoverTool(_: SpaceRemoverToolProps) {
           label="Input text"
           value={input}
           onChange={setInput}
-          placeholder="Paste text to clean..."
+          placeholder="Paste text with zero-width characters..."
           rows={12}
         />
         <ToolTextArea
           label="Output"
           value={output}
           onChange={setOutput}
-          placeholder="Cleaned text will appear here."
+          placeholder="Clean text will appear here."
           rows={12}
           readOnly
-          helperText="Copy the cleaned text when ready."
+          helperText={removedCount ? `Removed ${removedCount} characters` : 'No removals yet'}
         />
       </div>
 
       <div className="flex flex-wrap gap-3">
         <button
           type="button"
-          onClick={handleClean}
+          onClick={handleRemove}
           className="inline-flex items-center justify-center rounded-lg bg-brand-700 px-4 py-2 text-sm font-semibold text-white shadow hover:bg-brand-800"
         >
-          Remove spaces
+          Remove zero-width spaces
         </button>
         <button
           type="button"
@@ -69,23 +70,6 @@ export function SpaceRemoverTool(_: SpaceRemoverToolProps) {
           Clear
         </button>
       </div>
-
     </div>
   );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
