@@ -16,13 +16,6 @@ type CategoryPage = {
   noindex?: boolean;
 };
 
-type ModelPage = {
-  slug: string;
-  title: string;
-  description: string;
-  noindex?: boolean;
-};
-
 export const toolPages: ToolPage[] = [
   {
     slug: '',
@@ -266,18 +259,5 @@ export const categoryPages: CategoryPage[] = [
     title: 'Text Tools',
     description: 'AI text cleanup and formatting tools.',
     noindex: true,
-  },
-];
-
-export const modelPages: ModelPage[] = [
-  {
-    slug: 'models/chatgpt',
-    title: 'ChatGPT Tools',
-    description: 'Tools tailored for ChatGPT outputs.',
-  },
-  {
-    slug: 'models/gemini',
-    title: 'Gemini Tools',
-    description: 'Tools tailored for Gemini outputs.',
   },
 ];
