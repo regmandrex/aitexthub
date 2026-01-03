@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { ReactNode } from 'react';
+import { headers } from 'next/headers';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import { JsonLd } from '../components/JsonLd';
@@ -33,17 +34,32 @@ type RootLayoutProps = {
   children: ReactNode;
 };
 
-export default function RootLayout({ children }: RootLayoutProps) {
+export default async function RootLayout({ children }: RootLayoutProps) {
+  const headerList = await headers();
+  const lang = headerList.get('x-site-lang') === 'ko' ? 'ko' : 'en';
+  const bodyClassName = [
+    'bg-slate-50',
+    'text-slate-900',
+    'antialiased',
+    lang === 'ko' ? 'break-keep' : '',
+    'pb-[80px]',
+    'md:pb-[120px]',
+    'lg:pb-[140px]',
+  ]
+    .filter(Boolean)
+    .join(' ');
+
   return (
-    <html lang="en">
+    <html lang={lang}>
       <head>
+        {lang === 'ko' ? <meta charSet="utf-8" /> : null}
         <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8764610479002120"
           crossOrigin="anonymous"
         ></script>
       </head>
-      <body className="bg-slate-50 text-slate-900 antialiased pb-[80px] md:pb-[120px] lg:pb-[140px]">
+      <body className={bodyClassName}>
         <JsonLd data={webSiteSchema()} />
         <JsonLd data={siteNavigationSchema()} />
         {/* Example AdSense integration (replace ca-pub-XXXX with your publisher id)
