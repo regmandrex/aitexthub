@@ -107,6 +107,13 @@ export const toolPages: ToolPage[] = [
     category: 'text',
   },
   {
+    slug: 'korean-nickname-generator',
+    title: '별명 짓기',
+    description: '이름과 특징을 입력하면 어울리는 별명 추천을 생성하는 한국어 닉네임 생성기.',
+    seoTitle: '별명 짓기 | 닉네임 추천 생성기',
+    category: 'text',
+  },
+  {
     slug: 'chatgpt-space-remover',
     title: 'ChatGPT Space Remover',
     description: 'Remove extra spaces and blank lines from ChatGPT output in one click.',
