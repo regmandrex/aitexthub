@@ -6,15 +6,15 @@ export function removeHiddenChars(text: string): string {
     .replace(/\u00A0/g, ' ');
 }
 
-// 2) Normalize punctuation (curly quotes + em/en dashes -> straight versions)
+// 2) Normalize punctuation (curly quotes -> straight, em/en dashes -> space)
 export function normalizePunctuation(text: string): string {
   return text
     // curly double quotes -> straight
     .replace(/[""]/g, '"')
     // curly single quotes / apostrophes -> straight
     .replace(/['']/g, "'")
-    // em dash / en dash -> single space
-    .replace(/[--]/g, ' ')
+    // em dash / en dash / horizontal bar -> single space
+    .replace(/[\u2013\u2014\u2015]/g, ' ')
     // collapse multiple hyphens to a single hyphen (for any remaining runs)
     .replace(/-{2,}/g, '-');
 }

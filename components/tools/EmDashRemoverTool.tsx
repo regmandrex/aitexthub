@@ -12,7 +12,8 @@ export function EmDashRemoverTool() {
   const [collapseSpaces, setCollapseSpaces] = useState(true);
 
   const handleProcess = () => {
-    let result = input.replace(DASH_REGEX, replacement);
+    const effectiveReplacement = replacement.trim().length === 0 ? ' ' : replacement;
+    let result = input.replace(DASH_REGEX, effectiveReplacement);
     if (collapseSpaces) {
       result = result.replace(/[ \t]{2,}/g, ' ').replace(/[ \t]+\n/g, '\n');
     }
@@ -50,7 +51,7 @@ export function EmDashRemoverTool() {
 
       <div className="grid gap-3 md:grid-cols-2">
         <label className="space-y-1 text-sm font-semibold text-slate-700">
-          Replacement text (leave blank to remove)
+          Replacement text (leave blank for a space)
           <input
             type="text"
             value={replacement}
