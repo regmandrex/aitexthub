@@ -1,13 +1,15 @@
 ﻿import type { Metadata } from 'next';
 import FAQSection from '@/components/FAQSection';
+import AdSenseSlot from '@/components/ads/AdSenseSlot';
+import BelowToolAd from '@/components/ads/BelowToolAd';
 import { JsonLd } from '@/components/JsonLd';
 import { NicknameTool } from './NicknameTool';
 import { faqItems } from './faq';
 import { buildFaqJsonLd } from './jsonld';
 
-const title = '별명 짓기 | 닉네임 추천 생성기';
+const title = '한국어 닉네임 생성기 | 닉네임 추천 생성기';
 const description =
-  '이름과 특징을 입력하면 20개의 별명 추천을 바로 보여주는 별명 짓기 도구입니다. 귀여운·멋있는·재미있는·감성적인·짧은·영어닉·한글닉까지 로컬에서 규칙 기반으로 생성합니다.';
+  '이름과 특징을 입력하면 20개의 닉네임 추천을 바로 보여주는 닉네임 생성기 도구입니다. 귀여운·멋있는·재미있는·감성적인·짧은·영어닉·한글닉까지 로컬에서 규칙 기반으로 생성합니다.';
 const canonicalUrl = 'https://gptcleanuptools.com/korean-nickname-generator';
 
 export const metadata: Metadata = {
@@ -30,16 +32,29 @@ export const metadata: Metadata = {
   },
 };
 
+function RailAd({ side }: { side: 'left' | 'right' }) {
+  const sideClass = side === 'left' ? 'left-4' : 'right-4';
+
+  return (
+    <div className={`hidden lg:block fixed top-[220px] ${sideClass} z-20`}>
+      <div className="w-[180px] min-h-[260px]">
+        <AdSenseSlot className="w-full" />
+      </div>
+    </div>
+  );
+}
+
 export default function NicknamePage() {
   return (
-    <div className="bg-[#f7f9ff]">
+    <div className="relative min-h-screen bg-[#f7f9ff]">
       <JsonLd data={buildFaqJsonLd(faqItems)} />
+      <RailAd side="right" />
 
       <div className="mx-auto w-full max-w-3xl px-4 py-10">
         <section className="space-y-3 text-center">
-          <h1 className="text-3xl font-semibold text-slate-900 md:text-4xl">별명 짓기</h1>
+          <h1 className="text-3xl font-semibold text-slate-900 md:text-4xl">한국어 닉네임 생성기</h1>
           <p className="text-sm text-slate-700 md:text-base">
-            이름과 특징을 입력하면 어울리는 별명을 추천해 드려요.
+            이름과 특징을 입력하면 어울리는 닉네임을 추천해 드려요.
           </p>
         </section>
 
@@ -47,46 +62,43 @@ export default function NicknamePage() {
           <NicknameTool />
         </section>
 
-        <div className="mt-3 space-y-1 text-xs text-slate-500">
-          <p>입력한 내용은 브라우저에서만 처리됩니다(서버 저장 없음).</p>
-          <p>안전한 사용을 위해 타인에게 불쾌감을 주는 표현은 피해주세요.</p>
-        </div>
+        <BelowToolAd />
 
         <section className="mt-10 space-y-10 text-slate-700 leading-relaxed">
           <div className="space-y-4">
-            <h2 className="text-2xl font-semibold text-slate-900">별명 짓기란?</h2>
+            <h2 className="text-2xl font-semibold text-slate-900">닉네임 생성기란?</h2>
             <p>
-              별명 짓기는 본명과는 다른 별칭을 만들어 상황에 맞게 사용하는 문화적 습관입니다. 친구 사이에서는 친근함을 더하고,
+              닉네임 만들기는 본명과는 다른 별칭을 만들어 상황에 맞게 사용하는 문화적 습관입니다. 친구 사이에서는 친근함을 더하고,
               커뮤니티에서는 나를 기억하기 쉽게 만들어 주기 때문에 많은 사람들이 별명 만들기에 관심을 가집니다. 특히 온라인에서는
               닉네임 추천을 통해 분위기와 취향을 자연스럽게 드러낼 수 있어 프로필의 첫인상을 결정하는 요소가 되곤 합니다.
             </p>
             <p>
               별명은 정답이 있는 정밀한 작업이 아니라, 취향과 분위기를 맞추는 창의적인 선택입니다. 이름에서 리듬을 살리거나,
-              좋아하는 활동과 성격을 담아 두면 별명이 더 자연스럽고 설득력 있게 느껴집니다. 그래서 별명 생성기는 다양한 조합을
+              좋아하는 활동과 성격을 담아 두면 별명이 더 자연스럽고 설득력 있게 느껴집니다. 그래서 닉네임 생성기(닉네임 크리에이터)는 다양한 조합을
               빠르게 보여 주어, 여러 아이디어를 비교하고 마음에 드는 후보를 고를 수 있게 도와줍니다.
             </p>
             <p>
-              이 페이지의 별명 짓기 도구는 단순한 랜덤 출력이 아니라, 규칙과 패턴을 바탕으로 결과를 구성합니다. 귀여운,
+              이 페이지의 닉네임 생성기 도구는 단순한 랜덤 출력이 아니라, 규칙과 패턴을 바탕으로 결과를 구성합니다. 귀여운,
               멋있는, 재미있는, 감성적인, 짧은 스타일을 선택하면 단어 풀과 결합 방식이 달라져 결과 분위기도 달라집니다. 한글닉과
               영어닉을 함께 제공해 다양한 플랫폼에서 쓸 수 있도록 구성했으니, 자신의 상황에 맞게 골라 활용해 보세요.
             </p>
             <p>
-              별명 추천은 결국 “내가 어떤 느낌으로 기억되고 싶은지”를 정리하는 과정이기도 합니다. 본명만으로 전달하기 어려운
+              닉네임 추천은 결국 “내가 어떤 느낌으로 기억되고 싶은지”를 정리하는 과정이기도 합니다. 본명만으로 전달하기 어려운
               성격이나 취향을 별명에 담으면, 상대가 당신을 더 쉽게 떠올릴 수 있습니다. 가볍게 시작해도 괜찮고, 여러 후보를 비교해
               가장 자연스러운 별명을 찾는 방식도 좋습니다.
             </p>
             <p>
               별명은 스스로에게도 작은 브랜딩이 됩니다. 같은 별명이라도 어디에서 어떻게 쓰느냐에 따라 인상이 달라지므로, 상황과
               청중을 생각하고 선택하는 것이 좋습니다. 예를 들어 가족과 친구에게 쓰는 별명은 부드럽고 친근한 느낌이, 공개 계정에서는
-              명확하고 깔끔한 느낌이 어울립니다. 이런 차이를 이해하면 별명 추천을 고르는 기준도 더 뚜렷해집니다.
+              명확하고 깔끔한 느낌이 어울립니다. 이런 차이를 이해하면 닉네임 추천을 고르는 기준도 더 뚜렷해집니다.
             </p>
           </div>
 
           <div className="space-y-4">
-            <h2 className="text-2xl font-semibold text-slate-900">좋은 별명을 만드는 5가지 기준</h2>
+            <h2 className="text-2xl font-semibold text-slate-900">좋은 닉네임을 만드는 5가지 기준</h2>
             <p>
-              좋은 별명은 화려한 단어보다도 일상에서 쓰기 편한지를 기준으로 판단하는 것이 좋습니다. 아래 기준을 확인하면
-              별명 추천 중에서 실용적인 후보를 쉽게 골라낼 수 있습니다.
+              좋은 닉네임은 화려한 단어보다도 일상에서 쓰기 편한지를 기준으로 판단하는 것이 좋습니다. 아래 기준을 확인하면
+              닉네임 추천 중에서 실용적인 후보를 쉽게 골라낼 수 있습니다.
             </p>
             <ol className="list-decimal space-y-3 pl-5">
               <li>
@@ -94,12 +106,12 @@ export default function NicknamePage() {
                 친구들이 한두 번만 들어도 떠올릴 수 있는 별명이 실제 사용에서 더 살아남습니다.
               </li>
               <li>
-                <strong className="text-slate-900">발음과 타이핑의 편의성</strong> - 말하기 편한 별명은 자연스럽게 호출됩니다. 온라인에서는
+                <strong className="text-slate-900">발음과 타이핑의 편의성</strong> - 말하기 편한 닉네임은 자연스럽게 호출됩니다. 온라인에서는
                 입력하기 쉬운 철자가 중요하므로, 복잡한 조합보다는 간단한 형태가 유리합니다.
               </li>
               <li>
                 <strong className="text-slate-900">특징 반영</strong> - 성격, 취미, 분위기처럼 나를 설명하는 힌트가 들어가면 더 설득력 있습니다.
-                “활발함”, “게임 좋아함” 같은 키워드는 별명 생성기에서 개성을 살리는 데 도움이 됩니다.
+                “활발함”, “게임 좋아함” 같은 키워드는 닉네임 생성기에서 개성을 살리는 데 도움이 됩니다.
               </li>
               <li>
                 <strong className="text-slate-900">톤과 분위기 일치</strong> - 귀여운 스타일인지, 멋있는 스타일인지에 따라 어울리는 단어가 달라집니다.
@@ -132,9 +144,9 @@ export default function NicknamePage() {
           </div>
 
           <div className="space-y-4">
-            <h2 className="text-2xl font-semibold text-slate-900">별명 추천이 필요한 상황</h2>
+            <h2 className="text-2xl font-semibold text-slate-900">닉네임 추천이 필요한 상황</h2>
             <p>
-              별명 짓기는 특정한 상황에서 더 필요해집니다. 아래 예시는 실제로 별명 만들기 수요가 많은 대표적인 장면입니다.
+              닉네임 생성기는 특정한 상황에서 더 필요해집니다. 아래 예시는 실제로 별명 만들기 수요가 많은 대표적인 장면입니다.
               상황에 맞는 분위기를 떠올리며 결과를 비교해 보세요.
             </p>
 
@@ -144,7 +156,7 @@ export default function NicknamePage() {
               인상을 줄 수 있습니다. 프로필 사진, 피드 분위기와 어울리는 톤을 선택하면 팔로워가 기억하기 더 쉽습니다.
             </p>
             <p>
-              인스타그램이나 트위터처럼 이름을 자주 보게 되는 플랫폼에서는 짧고 리듬 있는 별명이 유리합니다. 별명 추천 후보 중
+              인스타그램이나 트위터처럼 이름을 자주 보게 되는 플랫폼에서는 짧고 리듬 있는 별명이 유리합니다. 닉네임 추천 후보 중
               시각적으로도 보기 좋은 조합을 골라 두면 브랜드처럼 통일된 느낌을 만들 수 있습니다.
             </p>
 
@@ -162,7 +174,7 @@ export default function NicknamePage() {
             <h3 className="text-lg font-semibold text-slate-900">커플·친구</h3>
             <p>
               친한 사람 사이의 별명은 관계의 친밀도를 높여 줍니다. 둘만의 특징이나 기억을 담으면 더 특별한 별명이 되지만,
-              처음에는 가벼운 느낌의 별명 추천으로 시작해도 좋습니다. 귀여운 스타일이나 감성적인 스타일은 부드러운 분위기에
+              처음에는 가벼운 느낌의 닉네임 추천으로 시작해도 좋습니다. 귀여운 스타일이나 감성적인 스타일은 부드러운 분위기에
               어울립니다.
             </p>
             <p>
@@ -188,7 +200,7 @@ export default function NicknamePage() {
           </div>
 
           <div className="space-y-4">
-            <h2 className="text-2xl font-semibold text-slate-900">이 도구는 어떻게 별명을 만들까요?</h2>
+            <h2 className="text-2xl font-semibold text-slate-900">이 닉네임 생성기는 어떻게 닉네임을 만들까요?</h2>
             <p>
               이 닉네임 생성기는 규칙 기반 조합 방식을 사용합니다. 예를 들어 형용사 + 이름, 특징 + 접미사, 두 음절 축약,
               캐릭터 느낌의 역할어 같은 패턴을 미리 정의해 두고, 입력값에 맞게 단어를 선택해 결과를 만듭니다. 따라서 같은 입력이라도
@@ -218,7 +230,7 @@ export default function NicknamePage() {
           <div className="space-y-4">
             <h2 className="text-2xl font-semibold text-slate-900">사용 시 주의사항 및 한계</h2>
             <p>
-              별명 짓기 도구는 재미와 창의성을 위한 도구이며, 결과의 고유성을 보장하지 않습니다. 같은 입력을 사용하면 비슷한 결과가
+              닉네임 생성기 도구는 재미와 창의성을 위한 도구이며, 결과의 고유성을 보장하지 않습니다. 같은 입력을 사용하면 비슷한 결과가
               나올 수 있으므로 실제 사용 전에는 중복 여부를 확인하는 것이 좋습니다. 특히 아이디 중복이 허용되지 않는 플랫폼에서는
               최종 등록 가능 여부를 직접 확인해야 합니다.
             </p>
@@ -233,7 +245,7 @@ export default function NicknamePage() {
               커뮤니티 규칙을 존중하는 태도가 중요합니다.
             </p>
             <p>
-              별명 추천 결과는 과학적 분석이나 심리 진단을 제공하지 않으며, 개인의 성격을 정확히 예측하는 기능도 없습니다. 따라서
+              닉네임 추천 결과는 과학적 분석이나 심리 진단을 제공하지 않으며, 개인의 성격을 정확히 예측하는 기능도 없습니다. 따라서
               결과를 절대적인 판단으로 받아들이기보다는 참고용 아이디어로 활용하는 것이 좋습니다. 필요하다면 철자, 숫자, 이모지 등을
               추가해 자신만의 톤을 완성해 보세요.
             </p>
@@ -249,7 +261,7 @@ export default function NicknamePage() {
           <FAQSection
             items={faqItems}
             title="자주 묻는 질문"
-            intro="별명 짓기, 닉네임 추천, 입력 방식에 대한 궁금증을 정리했습니다."
+            intro="닉네임 생성기, 닉네임 추천, 입력 방식에 대한 궁금증을 정리했습니다."
           />
         </section>
       </div>

@@ -334,7 +334,7 @@ export function NicknameTool() {
       <div className="grid gap-4 md:grid-cols-2">
         <div className="space-y-2">
           <label className="text-sm font-medium text-slate-700" htmlFor="nickname-name">
-            이름 (선택)
+            이름
           </label>
           <input
             id="nickname-name"
@@ -348,7 +348,7 @@ export function NicknameTool() {
 
         <div className="space-y-2 md:col-span-1">
           <label className="text-sm font-medium text-slate-700" htmlFor="nickname-features">
-            특징 (선택)
+            특징
           </label>
           <textarea
             id="nickname-features"
