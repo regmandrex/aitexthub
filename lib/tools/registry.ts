@@ -50,6 +50,7 @@ const MODE_LABELS: Record<string, string> = {
   'watermark-cleaner': 'Watermark Cleaner',
   'watermark-detector': 'Watermark Detector',
   utility: 'Text Utility',
+  generator: 'Generator',
 };
 
 const UTILITY_SLUGS = new Set([
@@ -64,6 +65,8 @@ const UTILITY_SLUGS = new Set([
   'word-counter',
   'zero-width-space-remover',
 ]);
+
+const GENERATOR_SLUGS = new Set(['korean-nickname-generator']);
 
 const MODEL_SLUGS = new Set(Object.keys(MODEL_LABELS));
 
@@ -86,6 +89,9 @@ function getModelLabel(modelSlug?: string): string | undefined {
 function getModeSlug(slug: string): string {
   if (slug === '') {
     return 'text-cleaner';
+  }
+  if (GENERATOR_SLUGS.has(slug)) {
+    return 'generator';
   }
   if (UTILITY_SLUGS.has(slug)) {
     return 'utility';
@@ -189,6 +195,8 @@ export function getRelatedTools(currentTool: Tool, limit: number = 8): Tool[] {
   
   return related.slice(0, limit);
 }
+
+
 
 
 
