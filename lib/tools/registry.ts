@@ -34,6 +34,7 @@ export type Tool = {
 };
 
 const MODEL_LABELS: Record<string, string> = {
+  ai: 'AI',
   chatgpt: 'ChatGPT',
   gemini: 'Gemini',
   claude: 'Claude',
@@ -195,6 +196,9 @@ export function getRelatedTools(currentTool: Tool, limit: number = 8): Tool[] {
   
   return related.slice(0, limit);
 }
+
+
+
 
 
 

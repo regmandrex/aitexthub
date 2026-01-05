@@ -30,6 +30,12 @@ export const toolPages: ToolPage[] = [
     category: 'text',
   },
   {
+    slug: 'ai-space-remover',
+    title: 'AI Space Remover',
+    description: 'Remove extra spaces, hidden Unicode, and irregular whitespace from AI-era text.',
+    category: 'text',
+  },
+  {
     slug: 'case-converter',
     title: 'Case Converter',
     description: 'Convert text to uppercase, lowercase, title case, or sentence case.',
@@ -117,6 +123,12 @@ export const toolPages: ToolPage[] = [
     slug: 'chatgpt-watermark-remover',
     title: 'ChatGPT Watermark Remover',
     description: 'Remove hidden characters and formatting artifacts from ChatGPT output.',
+    category: 'text',
+  },
+  {
+    slug: 'ai-watermark-remover',
+    title: 'AI Watermark Remover',
+    description: 'Clean formatting artifacts, normalize Unicode, and tidy AI-era text for publishing.',
     category: 'text',
   },
   {
@@ -208,6 +220,12 @@ export const toolPages: ToolPage[] = [
     slug: 'chatgpt-watermark-detector',
     title: 'ChatGPT Watermark Detector',
     description: 'Inspect ChatGPT text for possible formatting artifacts and hidden Unicode.',
+    category: 'text',
+  },
+  {
+    slug: 'ai-watermark-detector',
+    title: 'AI Watermark Detector',
+    description: 'Analyze text for hidden Unicode, spacing patterns, and structural signals.',
     category: 'text',
   },
   {
