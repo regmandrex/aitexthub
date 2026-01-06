@@ -1,9 +1,10 @@
-import type { Metadata } from 'next';
+import { buildMeta } from '@/lib/seo-meta';
 
-export const metadata: Metadata = {
+export const metadata = buildMeta({
   title: 'Disclaimer | GPT CLEAN UP',
   description: 'Disclaimer for GPT CLEAN UP tools.',
-};
+  urlPath: '/disclaimer',
+});
 
 export default function DisclaimerPage() {
   return (

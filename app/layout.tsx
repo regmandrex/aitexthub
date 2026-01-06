@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { ReactNode } from 'react';
+import Script from 'next/script';
 import { headers } from 'next/headers';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
@@ -22,11 +23,17 @@ export const metadata: Metadata = {
     url: 'https://gptcleanuptools.com',
     siteName: 'GPT CLEAN UP',
     type: 'website',
+    images: [
+      {
+        url: 'https://gptcleanuptools.com/brand/gpt-clean-up-tools.png',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'GPT CLEAN UP - Free AI Text Cleaning Tools',
     description: 'Clean and fix messy AI text from ChatGPT, Gemini, and Claude.',
+    images: ['https://gptcleanuptools.com/brand/gpt-clean-up-tools.png'],
   },
 };
 
@@ -53,13 +60,15 @@ export default async function RootLayout({ children }: RootLayoutProps) {
     <html lang={lang}>
       <head>
         {lang === 'ko' ? <meta charSet="utf-8" /> : null}
-        <script
+        <link rel="preconnect" href="https://pagead2.googlesyndication.com" />
+      </head>
+      <body className={bodyClassName}>
+        <Script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8764610479002120"
           crossOrigin="anonymous"
-        ></script>
-      </head>
-      <body className={bodyClassName}>
+          strategy="afterInteractive"
+        />
         <JsonLd data={webSiteSchema()} />
         <JsonLd data={siteNavigationSchema()} />
         {/* Example AdSense integration (replace ca-pub-XXXX with your publisher id)

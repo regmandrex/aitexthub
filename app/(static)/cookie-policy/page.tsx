@@ -1,9 +1,10 @@
-import type { Metadata } from 'next';
+import { buildMeta } from '@/lib/seo-meta';
 
-export const metadata: Metadata = {
+export const metadata = buildMeta({
   title: 'Cookie Policy | GPT CLEAN UP',
   description: 'Cookie Policy for GPT CLEAN UP tools.',
-};
+  urlPath: '/cookie-policy',
+});
 
 export default function CookiePolicyPage() {
   return (

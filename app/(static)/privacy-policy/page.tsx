@@ -1,9 +1,10 @@
-import type { Metadata } from 'next';
+import { buildMeta } from '@/lib/seo-meta';
 
-export const metadata: Metadata = {
+export const metadata = buildMeta({
   title: 'Privacy Policy | GPT CLEAN UP',
   description: 'Privacy details for GPT CLEAN UP tools.',
-};
+  urlPath: '/privacy-policy',
+});
 
 export default function PrivacyPolicyPage() {
   return (

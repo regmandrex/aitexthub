@@ -251,6 +251,18 @@ function generateNicknames({
   return Array.from(results).slice(0, MAX_RESULTS);
 }
 
+function loadFavorites(): string[] {
+  if (typeof window === 'undefined') return [];
+  try {
+    const stored = window.localStorage.getItem(FAVORITES_KEY);
+    if (!stored) return [];
+    const parsed = JSON.parse(stored);
+    return Array.isArray(parsed) ? parsed : [];
+  } catch {
+    return [];
+  }
+}
+
 export function NicknameTool() {
   const [name, setName] = useState('');
   const [features, setFeatures] = useState('');
@@ -259,24 +271,10 @@ export function NicknameTool() {
   const [error, setError] = useState('');
   const [roll, setRoll] = useState(0);
   const [copiedValue, setCopiedValue] = useState<string | null>(null);
-  const [favorites, setFavorites] = useState<string[]>([]);
+  const [favorites, setFavorites] = useState<string[]>(loadFavorites);
 
   const favoriteSet = useMemo(() => new Set(favorites), [favorites]);
   const activeStyle = useMemo(() => STYLE_OPTIONS.find((option) => option.key === style), [style]);
-
-  useEffect(() => {
-    try {
-      const stored = localStorage.getItem(FAVORITES_KEY);
-      if (stored) {
-        const parsed = JSON.parse(stored) as string[];
-        if (Array.isArray(parsed)) {
-          setFavorites(parsed);
-        }
-      }
-    } catch {
-      setFavorites([]);
-    }
-  }, []);
 
   useEffect(() => {
     try {

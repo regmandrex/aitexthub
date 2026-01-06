@@ -24,7 +24,8 @@ export type Tool = {
       | 'strip-html'
       | 'url-encoder-decoder'
       | 'word-counter'
-      | 'zero-width-space-remover';
+      | 'zero-width-space-remover'
+      | 'line-spacing';
   };
   content?: {
     disclaimers?: string[];
@@ -50,6 +51,7 @@ const MODE_LABELS: Record<string, string> = {
   'space-remover': 'Space Remover',
   'watermark-cleaner': 'Watermark Cleaner',
   'watermark-detector': 'Watermark Detector',
+  'line-spacing': 'Line Spacing',
   utility: 'Text Utility',
   generator: 'Generator',
 };
@@ -100,6 +102,9 @@ function getModeSlug(slug: string): string {
   if (slug.includes('watermark-detector')) {
     return 'watermark-detector';
   }
+  if (slug.includes('line-spacing')) {
+    return 'line-spacing';
+  }
   if (slug.includes('space-remover')) {
     return 'space-remover';
   }
@@ -129,7 +134,8 @@ function getUIKind(
   | 'strip-html'
   | 'url-encoder-decoder'
   | 'word-counter'
-  | 'zero-width-space-remover' {
+  | 'zero-width-space-remover'
+  | 'line-spacing' {
   if (slug === '') {
     return 'text-cleaner';
   }
@@ -138,6 +144,9 @@ function getUIKind(
   }
   if (slug.includes('watermark-detector')) {
     return 'watermark-detector';
+  }
+  if (slug.includes('line-spacing')) {
+    return 'line-spacing';
   }
   if (slug.includes('space-remover')) {
     return 'space-remover';
@@ -196,6 +205,14 @@ export function getRelatedTools(currentTool: Tool, limit: number = 8): Tool[] {
   
   return related.slice(0, limit);
 }
+
+
+
+
+
+
+
+
 
 
 

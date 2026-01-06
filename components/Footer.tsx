@@ -3,7 +3,7 @@
  */
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useMemo } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { getAllTools, getToolBySlug } from '@/lib/tools/registry';
@@ -50,10 +50,20 @@ const legalLinks = [
 
 const MAX_RELATED = 4;
 
-function shuffle<T>(items: T[]) {
+function hashString(input: string) {
+  let hash = 0;
+  for (let i = 0; i < input.length; i += 1) {
+    hash = (hash * 31 + input.charCodeAt(i)) | 0;
+  }
+  return hash >>> 0;
+}
+
+function seededShuffle<T>(items: T[], seed: number) {
   const next = [...items];
+  let state = seed || 1;
   for (let i = next.length - 1; i > 0; i -= 1) {
-    const j = Math.floor(Math.random() * (i + 1));
+    state = (state * 1664525 + 1013904223) >>> 0;
+    const j = state % (i + 1);
     [next[i], next[j]] = [next[j], next[i]];
   }
   return next;
@@ -92,12 +102,14 @@ function buildRelatedLinks(pathname: string, sourceTools: ToolLink[] = allTools)
 
 export default function Footer() {
   const pathname = usePathname();
-  const [relatedLinks, setRelatedLinks] = useState(() => buildRelatedLinks(pathname || '/'));
-
-  useEffect(() => {
-    const randomized = buildRelatedLinks(pathname || '/', shuffle(allTools));
-    setRelatedLinks(randomized);
-  }, [pathname]);
+  const relatedLinks = useMemo(
+    () => {
+      const safePath = pathname || '/';
+      const seed = hashString(safePath);
+      return buildRelatedLinks(safePath, seededShuffle(allTools, seed));
+    },
+    [pathname]
+  );
 
   return (
     <footer className="mt-10 border-t border-slate-200 bg-slate-50">

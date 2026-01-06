@@ -1,36 +1,21 @@
-﻿import type { Metadata } from 'next';
-import FAQSection from '@/components/FAQSection';
+﻿import FAQSection from '@/components/FAQSection';
 import AdSenseSlot from '@/components/ads/AdSenseSlot';
 import BelowToolAd from '@/components/ads/BelowToolAd';
 import { JsonLd } from '@/components/JsonLd';
+import { RelatedTools } from '@/components/tool/RelatedTools';
 import { NicknameTool } from './NicknameTool';
 import { faqItems } from './faq';
 import { buildFaqJsonLd } from './jsonld';
+import { buildMeta } from '@/lib/seo-meta';
 
 const title = '별명 짓기 | 닉네임 추천 생성기';
 const description =
   '이름과 특징을 입력하면 20개의 닉네임 추천을 바로 보여주는 닉네임 생성기 도구입니다. 귀여운·멋있는·재미있는·감성적인·짧은·영어닉·한글닉까지 로컬에서 규칙 기반으로 생성합니다.';
-const canonicalUrl = 'https://gptcleanuptools.com/korean-nickname-generator';
-
-export const metadata: Metadata = {
+export const metadata = buildMeta({
   title,
   description,
-  alternates: {
-    canonical: canonicalUrl,
-  },
-  openGraph: {
-    title,
-    description,
-    url: canonicalUrl,
-    type: 'website',
-    siteName: 'GPT CLEAN UP Tools',
-  },
-  twitter: {
-    card: 'summary',
-    title,
-    description,
-  },
-};
+  urlPath: '/korean-nickname-generator',
+});
 
 function RailAd({ side }: { side: 'left' | 'right' }) {
   const sideClass = side === 'left' ? 'left-4' : 'right-4';
@@ -63,6 +48,8 @@ export default function NicknamePage() {
         </section>
 
         <BelowToolAd />
+
+        <RelatedTools currentSlug="korean-nickname-generator" showModeTools={true} />
 
         <section className="mt-10 space-y-10 text-slate-700 leading-relaxed">
           <div className="space-y-4">

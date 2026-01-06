@@ -1,10 +1,11 @@
-import type { Metadata } from 'next';
 import Link from 'next/link';
+import { buildMeta } from '@/lib/seo-meta';
 
-export const metadata: Metadata = {
+export const metadata = buildMeta({
   title: 'About | GPT CLEAN UP',
   description: 'Learn about GPT CLEAN UP and how we help tidy AI text from ChatGPT, Gemini, and more.',
-};
+  urlPath: '/about',
+});
 
 export default function AboutPage() {
   return (

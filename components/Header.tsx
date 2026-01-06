@@ -25,6 +25,8 @@ export default function Header() {
           className="inline-flex items-center justify-center rounded-lg p-2 text-slate-600 hover:bg-slate-100 md:hidden"
           onClick={() => setOpen((prev) => !prev)}
           aria-label="Toggle navigation"
+          aria-expanded={open}
+          aria-controls="mobile-nav"
         >
           <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             {open ? (
@@ -43,7 +45,7 @@ export default function Header() {
         </nav>
       </div>
       {open ? (
-        <div className="border-t border-slate-200 bg-white px-4 py-3 md:hidden">
+        <div id="mobile-nav" className="border-t border-slate-200 bg-white px-4 py-3 md:hidden">
           <nav className="flex flex-col gap-3 text-sm font-medium text-slate-700">
             {navLinks.map((link) => (
               <Link

@@ -15,6 +15,7 @@ import { UrlEncoderDecoderTool } from '@/components/tools/UrlEncoderDecoderTool'
 import { WatermarkDetectorTool } from '@/components/tools/WatermarkDetectorTool';
 import { WordCounterTool } from '@/components/tools/WordCounterTool';
 import { ZeroWidthSpaceRemoverTool } from '@/components/tools/ZeroWidthSpaceRemoverTool';
+import { LineSpacingTool } from '@/components/tools/LineSpacingTool';
 import { getToolBySlug } from '@/lib/tools/registry';
 
 type ToolPageRendererProps = {
@@ -35,6 +36,7 @@ const uiComponentMap = {
   'watermark-detector': WatermarkDetectorTool,
   'word-counter': WordCounterTool,
   'zero-width-space-remover': ZeroWidthSpaceRemoverTool,
+  'line-spacing': LineSpacingTool,
 } as const;
 
 export function ToolPageRenderer({ slug }: ToolPageRendererProps) {

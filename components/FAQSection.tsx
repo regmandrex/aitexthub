@@ -9,7 +9,6 @@ type FAQSectionProps = {
 
 export default function FAQSection({ items, title = 'FAQ', intro, showCategories = true }: FAQSectionProps) {
   const data = items ?? defaultFaqItems;
-  let lastCategory: string | null = null;
 
   return (
     <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6">
@@ -17,16 +16,14 @@ export default function FAQSection({ items, title = 'FAQ', intro, showCategories
       {intro ? <p className="mt-2 text-sm text-slate-700 whitespace-pre-line">{intro}</p> : null}
       <div className="mt-4 space-y-3">
         {data.map((faq, idx) => {
-          const shouldShowCategory = showCategories && faq.category !== lastCategory;
+          const previousCategory = idx > 0 ? data[idx - 1]?.category : null;
+          const shouldShowCategory = showCategories && faq.category !== previousCategory;
           const categoryHeading =
             shouldShowCategory ? (
               <h3 key={`${faq.category}-heading`} className="mt-3 text-sm font-semibold uppercase text-slate-600 first:mt-0">
                 {faq.category}
               </h3>
             ) : null;
-          if (showCategories) {
-            lastCategory = faq.category;
-          }
           return (
             <div key={faq.question}>
               {categoryHeading}

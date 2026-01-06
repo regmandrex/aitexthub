@@ -1,9 +1,10 @@
-import type { Metadata } from 'next';
+import { buildMeta } from '@/lib/seo-meta';
 
-export const metadata: Metadata = {
+export const metadata = buildMeta({
   title: 'Terms of Service | GPT CLEAN UP',
   description: 'Terms of Service for GPT CLEAN UP tools.',
-};
+  urlPath: '/terms-of-service',
+});
 
 export default function TermsOfServicePage() {
   return (
