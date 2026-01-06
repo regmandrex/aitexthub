@@ -1,3 +1,5 @@
+'use client';
+
 import ToolCard from '../ToolCard';
 import { getAllTools, getToolBySlug } from '@/lib/tools/registry';
 
@@ -11,11 +13,17 @@ function buildToolHref(slug: string) {
   return slug === '' ? '/' : `/${slug}`;
 }
 
-export function RelatedTools({ currentSlug, maxItems = 8, showModeTools = true }: RelatedToolsProps) {
+export function RelatedTools({
+  currentSlug,
+  maxItems = 8,
+  showModeTools = true,
+}: RelatedToolsProps) {
   const tools = getAllTools();
   const currentTool = getToolBySlug(currentSlug);
 
   if (!currentTool) {
+    // Tool not found - this shouldn't happen, but return null to avoid errors
+    console.warn(`RelatedTools: Tool not found for slug "${currentSlug}"`);
     return null;
   }
 
@@ -28,6 +36,7 @@ export function RelatedTools({ currentSlug, maxItems = 8, showModeTools = true }
   const limitedModeTools =
     showModeTools && currentTool.mode !== 'watermark-cleaner' ? modeTools.slice(0, maxItems) : [];
 
+  // Return nothing if we don't have related tools to show
   if (limitedModelTools.length === 0 && limitedModeTools.length === 0) {
     return null;
   }
@@ -62,9 +71,21 @@ export function RelatedTools({ currentSlug, maxItems = 8, showModeTools = true }
           </div>
         </section>
       ) : null}
+
     </div>
   );
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import FAQSection from '../components/FAQSection';
 import FaqJsonLd from '../components/FaqJsonLd';
 import { faqItems } from '../components/faqData';
@@ -23,7 +24,7 @@ function RailAd({ side }: { side: 'left' | 'right' }) {
 }
 
 export const metadata = buildMeta({
-  title: 'ChatGPT Text Cleaner – Remove Hidden Characters & Fix AI Spacing | GPT CLEAN UP',
+  title: 'ChatGPT Text Cleaner - Remove Hidden Characters & Fix AI Spacing | GPT CLEAN UP',
   description: 'Clean ChatGPT, Gemini, and Claude text by removing hidden Unicode (ZWSP, NBSP, BOM), fixing spacing, and keeping paragraph breaks intact for Word, Docs, and CMS.',
   urlPath: '/',
 });
@@ -65,7 +66,7 @@ export default function HomePage() {
         <BelowToolAd />
 
         <div id="tools">
-          <RelatedTools currentSlug="" />
+          <RelatedTools currentSlug="" showModeTools={false} />
         </div>
 
         <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 space-y-4 mt-10">
@@ -114,7 +115,7 @@ export default function HomePage() {
             Counts and limits make sense. Hidden characters can inflate totals or break character-limited fields. After ChatGPT Text Clean Up, the numbers you see are the numbers systems count. That makes drafting to a target-like a scholarship answer box or meta description-much more straightforward.
           </p>
 
-          <h3 className="text-xl font-semibold text-slate-900">Who Uses GPT CLEAN UP Tools – Practical Use Cases</h3>
+          <h3 className="text-xl font-semibold text-slate-900">Who Uses GPT CLEAN UP Tools - Practical Use Cases</h3>
           <p>Students and academics use the ChatGPT AI Text Cleaner to submit essays, responses, and manuscripts that paste cleanly into school portals. References stay readable, paragraph breaks remain intact, and stray characters do not inflate counts.</p>
           <p>Professionals and writers rely on GPT CLEAN UP Tools for proposals, briefs, newsletters, and blog drafts. Clean text means fewer hours spent fixing spacing errors inside corporate editors and content management systems.</p>
           <p>Creators and marketers publish captions and long-form content with confidence. After ChatGPT Text Clean Up, copy carries a consistent voice without technical glitches that distract readers or break layouts on mobile.</p>
@@ -134,7 +135,7 @@ export default function HomePage() {
             Privacy is a core design choice. GPT CLEAN UP Tools processes text locally in your browser. We do not upload content to servers, we do not store inputs, and we do not log cleaned results. This architecture gives you speed and control without trade-offs.
           </p>
           <p>
-            Because processing is client-side, you can safely use GPT CLEAN UP Tools for drafts that include sensitive information. Always follow your organization’s policies, but rest assured that the ChatGPT AI Text Cleaner itself does not transmit your text over the network.
+            Because processing is client-side, you can safely use GPT CLEAN UP Tools for drafts that include sensitive information. Always follow your organization's policies, but rest assured that the ChatGPT AI Text Cleaner itself does not transmit your text over the network.
           </p>
           <p>
             Transparency matters. GPT CLEAN UP Tools describes what the tool changes-hidden Unicode removal, punctuation normalization, spacing cleanup-so you understand how the output was produced and why it behaves predictably in downstream editors.
@@ -238,8 +239,15 @@ and extra blank lines fixed.
         <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6">
           <h2 className="text-xl font-semibold text-slate-900">Learn more</h2>
           <p className="mt-2 text-sm text-slate-700">
-            Read our guides on keeping AI text tidy: <a href="/blog/why-chatgpt-text-looks-messy-and-how-to-fix-it" className="font-semibold">Why ChatGPT text looks messy</a> and{' '}
-            <a href="/blog/chatgpt-formatting-fixer-for-word-and-docs" className="font-semibold">ChatGPT formatting fixer for Word & Docs</a>.
+            Read our guides on keeping AI text tidy:{' '}
+            <Link href="/blog/why-chatgpt-text-looks-messy-and-how-to-fix-it" className="font-semibold">
+              Why ChatGPT text looks messy
+            </Link>{' '}
+            and{' '}
+            <Link href="/blog/chatgpt-formatting-fixer-for-word-and-docs" className="font-semibold">
+              ChatGPT formatting fixer for Word & Docs
+            </Link>
+            .
           </p>
         </section>
         <FaqJsonLd faqs={faqItems} />
