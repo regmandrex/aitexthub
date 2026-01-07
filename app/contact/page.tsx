@@ -1,7 +1,10 @@
-export const metadata = {
+import { buildMeta } from '@/lib/seo-meta';
+
+export const metadata = buildMeta({
   title: 'Contact | GPT CLEAN UP Tools',
   description: 'Get in touch with the GPT CLEAN UP Tools team for feedback, partnership ideas, or questions about the utilities.',
-};
+  urlPath: '/contact',
+});
 
 export default function ContactPage() {
   return (

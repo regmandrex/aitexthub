@@ -241,7 +241,6 @@ export const toolPages: ToolPage[] = [
     title: 'Gemini Space Remover',
     description: 'Clean extra spaces and blank lines from Google Gemini output.',
     category: 'ai-cleanup',
-    canonicalTo: 'chatgpt-space-remover',
   },
   {
     slug: 'gemini-watermark-cleaner',
@@ -375,6 +374,27 @@ export const toolPages: ToolPage[] = [
     description: 'Analyze Claude text for hidden Unicode and spacing artifacts.',
     category: 'ai-cleanup',
   },
+  {
+    slug: 'text-to-morse-code',
+    title: 'Text to Morse Code Converter',
+    description: 'Convert plain text into Morse code using standard ITU encoding. Fast, accurate, and privacy-friendly.',
+    seoTitle: 'Text to Morse Code Converter - Free Online Morse Code Encoding Tool',
+    category: 'encoding',
+  },
+  {
+    slug: 'extract-numbers-from-text',
+    title: 'Extract Numbers From Text',
+    description: 'Extract all numbers from text, including integers and decimals. Options for ordering, uniqueness, and delimiters.',
+    seoTitle: 'Extract Numbers From Text - Free Online Number Extraction Tool',
+    category: 'text',
+  },
+  {
+    slug: 'text-to-hex',
+    title: 'Text to HEX Converter',
+    description: 'Convert text characters into hexadecimal representation. Supports UTF-8 encoding with uppercase/lowercase and spacing options.',
+    seoTitle: 'Text to HEX Converter - Free Online Hexadecimal Encoding Tool',
+    category: 'encoding',
+  },
 ];
 
 export const categoryPages: CategoryPage[] = [
@@ -385,3 +405,7 @@ export const categoryPages: CategoryPage[] = [
     noindex: true,
   },
 ];
+
+export function getToolPageBySlug(slug: string): ToolPage | undefined {
+  return toolPages.find((page) => page.slug === slug);
+}

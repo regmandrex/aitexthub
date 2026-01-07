@@ -7,16 +7,18 @@ type MetaInput = {
   title: string;
   description: string;
   urlPath: string;
+  canonicalTo?: string;
 };
 
-export function buildMeta({ title, description, urlPath }: MetaInput): Metadata {
+export function buildMeta({ title, description, urlPath, canonicalTo }: MetaInput): Metadata {
   const url = `${BASE_URL}${urlPath}`;
+  const canonicalUrl = canonicalTo ? `${BASE_URL}/${canonicalTo}` : url;
 
   return {
     title,
     description,
     alternates: {
-      canonical: url,
+      canonical: canonicalUrl,
     },
     openGraph: {
       title,
@@ -52,9 +54,10 @@ type ToolMetaInput = {
   description: string;
   urlPath: string;
   seoTitle?: string;
+  canonicalTo?: string;
 };
 
-export function buildToolMeta({ title, description, urlPath, seoTitle }: ToolMetaInput): Metadata {
+export function buildToolMeta({ title, description, urlPath, seoTitle, canonicalTo }: ToolMetaInput): Metadata {
   const trimmedDescription = description.replace(/\.$/, '').trim();
   const fullTitle = seoTitle ?? (trimmedDescription ? `${title} - ${trimmedDescription}` : title);
 
@@ -62,5 +65,6 @@ export function buildToolMeta({ title, description, urlPath, seoTitle }: ToolMet
     title: fullTitle,
     description,
     urlPath,
+    canonicalTo,
   });
 }

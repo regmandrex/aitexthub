@@ -68,6 +68,8 @@ const UTILITY_SLUGS = new Set([
   'url-encoder-decoder',
   'word-counter',
   'zero-width-space-remover',
+  'extract-numbers-from-text',
+  'text-to-hex',
 ]);
 
 const GENERATOR_SLUGS = new Set(['korean-nickname-generator', 'morse-code-generator', 'random-hex-generator']);
@@ -150,7 +152,7 @@ function getUIKind(
   if (slug.includes('line-spacing')) {
     return 'line-spacing';
   }
-  if (slug.includes('morse-code-generator')) {
+  if (slug.includes('morse-code-generator') || slug === 'text-to-morse-code') {
     return 'morse-generator';
   }
   if (slug.includes('space-remover')) {

@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { ToolPageRenderer } from '@/components/tool/ToolPageRenderer';
 import { buildToolMeta } from '@/lib/seo-meta';
 import { getAllTools, getToolBySlug } from '@/lib/tools/registry';
+import { getToolPageBySlug } from '@/lib/seo/registry';
 
 type PageProps = {
   params: { slug: string };
