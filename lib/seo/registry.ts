@@ -197,6 +197,13 @@ export const toolPages: ToolPage[] = [
     category: 'encoding',
   },
   {
+    slug: 'morse-code-generator',
+    title: 'Morse Code Generator',
+    description: 'Convert plain text into clean Morse code with slashes or spaces, ready for puzzles, learning, and signaling.',
+    seoTitle: 'Morse Code Generator - Encode Text to Morse Code',
+    category: 'generator',
+  },
+  {
     slug: 'korean-nickname-generator',
     title: '한국어 닉네임 생성기',
     description:

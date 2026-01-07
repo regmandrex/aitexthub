@@ -25,7 +25,8 @@ export type Tool = {
       | 'url-encoder-decoder'
       | 'word-counter'
       | 'zero-width-space-remover'
-      | 'line-spacing';
+      | 'line-spacing'
+      | 'morse-generator';
   };
   content?: {
     disclaimers?: string[];
@@ -69,7 +70,7 @@ const UTILITY_SLUGS = new Set([
   'zero-width-space-remover',
 ]);
 
-const GENERATOR_SLUGS = new Set(['korean-nickname-generator']);
+const GENERATOR_SLUGS = new Set(['korean-nickname-generator', 'morse-code-generator', 'random-hex-generator']);
 
 const MODEL_SLUGS = new Set(Object.keys(MODEL_LABELS));
 
@@ -135,7 +136,8 @@ function getUIKind(
   | 'url-encoder-decoder'
   | 'word-counter'
   | 'zero-width-space-remover'
-  | 'line-spacing' {
+  | 'line-spacing'
+  | 'morse-generator' {
   if (slug === '') {
     return 'text-cleaner';
   }
@@ -147,6 +149,9 @@ function getUIKind(
   }
   if (slug.includes('line-spacing')) {
     return 'line-spacing';
+  }
+  if (slug.includes('morse-code-generator')) {
+    return 'morse-generator';
   }
   if (slug.includes('space-remover')) {
     return 'space-remover';
