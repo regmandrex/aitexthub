@@ -197,7 +197,7 @@ const writeUp = (
 
       <h2>What Is a Random Hex Number?</h2>
       <p>
-        A random hex string is a readable representation of random bytes. Hex uses the digits 0-9 and letters A-F to represent values from 0 to
+        A random hex string (also known as a random zahl in German) is a readable representation of random bytes. Hex uses the digits 0-9 and letters A-F to represent values from 0 to
         15. A random hex string generator produces those values so they are easy to copy, paste, and use in code or documents. That simplicity
         makes hex a common choice for IDs, tokens, and visual values like color codes.
       </p>
@@ -215,7 +215,7 @@ const writeUp = (
       <h2>Why This Tool Matters</h2>
       <p>
         Random identifiers are everywhere. A product team may need short IDs for test data, a developer may need tokens for a demo API, and a
-        designer may need color codes for mockups. In each case, a random hex number generator provides a fast, consistent way to produce values
+        designer may need color codes for mockups. In each case, a random hex number generator (or random zahl generator) provides a fast, consistent way to produce values
         without writing custom scripts. It removes friction from everyday tasks and keeps output easy to copy and share.
       </p>
       <p>
@@ -559,7 +559,7 @@ const secureHex = Array.from(buffer).map(b => b.toString(16).padStart(2, '0')).j
       <p>
         Use this tool for IDs, demo tokens, color codes, and other everyday tasks that need quick randomness. For long lived secrets or
         production keys, generate values on the server and manage them securely. This tool is best for fast, client-side generation where
-        convenience and clarity matter. It is a practical random hex string generator for quick, repeatable output today.
+        convenience and clarity matter. It is a practical random hex string generator (or random zahl generator) for quick, repeatable output today.
       </p>
     </div>
   </section>
