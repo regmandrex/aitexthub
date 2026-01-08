@@ -36,3 +36,4 @@ export function extractNumbers(text: string, options: NumberExtractOptions): str
   return numbers.join(delimiterMap[options.delimiter]);
 }
 
+
