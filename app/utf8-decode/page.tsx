@@ -12,7 +12,7 @@ import { siteUrl } from '@/lib/schema/site';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
 
-const toolSlug = 'utf-8-decode';
+const toolSlug = 'utf8-decode';
 const tool = getToolBySlug(toolSlug);
 const description = tool?.shortDescription ?? 'Decode UTF-8 byte values back into readable text.';
 const title = tool?.title ?? 'UTF-8 Decode';

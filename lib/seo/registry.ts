@@ -141,14 +141,14 @@ export const toolPages: ToolPage[] = [
     category: 'encoding',
   },
   {
-    slug: 'utf-8-encode',
+    slug: 'utf8-encode',
     title: 'UTF-8 Encode',
     description: 'Encode text into UTF-8 byte values for accurate transport.',
     seoTitle: 'UTF-8 Encode - Convert Text to UTF-8 Bytes',
     category: 'encoding',
   },
   {
-    slug: 'utf-8-decode',
+    slug: 'utf8-decode',
     title: 'UTF-8 Decode',
     description: 'Decode UTF-8 byte values back into readable text.',
     seoTitle: 'UTF-8 Decode - Convert UTF-8 Bytes to Text',
