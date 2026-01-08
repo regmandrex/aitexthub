@@ -1,5 +1,7 @@
 import { notFound } from 'next/navigation';
 import { JsonLd } from '@/components/JsonLd';
+import FaqJsonLd from '@/components/FaqJsonLd';
+import type { FaqItem } from '@/components/faqData';
 import { RelatedTools } from '@/components/tool/RelatedTools';
 import { ToolPageShell } from '@/components/tool/ToolPageShell';
 import { CaseConverterTool } from '@/components/tools/CaseConverterTool';
@@ -80,17 +82,26 @@ export function ToolPageRenderer({ slug }: ToolPageRendererProps) {
         ) : null}
 
         {tool.content?.faq && tool.content.faq.length ? (
-          <section className="mt-10 space-y-4">
-            <h2 className="text-xl font-semibold text-slate-900">Frequently Asked Questions</h2>
-            <div className="space-y-3">
-              {tool.content.faq.map((item, idx) => (
-                <div key={idx} className="rounded-lg border border-slate-200 bg-white p-4 shadow-sm">
-                  <h3 className="text-base font-semibold text-slate-900">{item.q}</h3>
-                  <p className="mt-2 text-sm text-slate-700">{item.a}</p>
-                </div>
-              ))}
-            </div>
-          </section>
+          <>
+            <section className="mt-10 space-y-4">
+              <h2 className="text-xl font-semibold text-slate-900">Frequently Asked Questions</h2>
+              <div className="space-y-3">
+                {tool.content.faq.map((item, idx) => (
+                  <div key={idx} className="rounded-lg border border-slate-200 bg-white p-4 shadow-sm">
+                    <h3 className="text-base font-semibold text-slate-900">{item.q}</h3>
+                    <p className="mt-2 text-sm text-slate-700">{item.a}</p>
+                  </div>
+                ))}
+              </div>
+            </section>
+            <FaqJsonLd
+              faqs={tool.content.faq.map((item) => ({
+                category: 'General',
+                question: item.q,
+                answer: item.a,
+              }))}
+            />
+          </>
         ) : null}
 
         <section className="mt-10 space-y-2">
