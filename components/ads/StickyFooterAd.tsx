@@ -77,7 +77,7 @@ export default function StickyFooterAd() {
 
   const slot = isDesktop
     ? { width: 728, height: 90, slot: DESKTOP_SLOT }
-    : { width: 320, height: 50, slot: MOBILE_SLOT };
+    : { width: 728, height: 90, slot: MOBILE_SLOT };
 
   return (
     <div className="fixed inset-x-0 bottom-0 z-40 border-t border-slate-200 bg-white/95 backdrop-blur">
