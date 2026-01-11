@@ -168,7 +168,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-6 text-center text-xs text-slate-600">
-          © 2025{' '}
+          © 2026{' '}
           <Link href="https://gptcleanuptools.com" className="font-semibold text-slate-800 hover:underline">
             GPT Cleanup Tools
           </Link>{' '}
