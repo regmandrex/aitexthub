@@ -37,8 +37,8 @@ const quickLinks = [
 
 const toolsLinks = [
   { href: '/chatgpt-space-remover', label: 'ChatGPT Space Remover' },
-  { href: '/gemini-space-remover', label: 'Gemini Space Remover' },
-  { href: '/', label: 'ChatGPT Text Cleaner' },
+  { href: '/chatgpt-watermark-remover', label: 'ChatGPT Watermark Remover' },
+  { href: '/strip-html', label: 'Strip HTML' },
 ];
 
 const legalLinks = [
