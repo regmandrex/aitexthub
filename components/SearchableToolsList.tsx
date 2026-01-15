@@ -136,7 +136,12 @@ export default function SearchableToolsList({ tools }: SearchableToolsListProps)
         {searchQuery && (
           <p className="mt-2 text-sm text-slate-600">
             Found {filteredTools.length} {filteredTools.length === 1 ? 'tool' : 'tools'}
-            {searchQuery && ` matching "${searchQuery}"`}
+            {searchQuery ? (
+              <>
+                {' '}
+                matching &quot;{searchQuery}&quot;
+              </>
+            ) : null}
           </p>
         )}
       </div>
@@ -144,7 +149,7 @@ export default function SearchableToolsList({ tools }: SearchableToolsListProps)
       {/* Tools List */}
       {filteredTools.length === 0 ? (
         <div className="text-center py-12">
-          <p className="text-slate-600 text-lg">No tools found matching "{searchQuery}"</p>
+          <p className="text-slate-600 text-lg">No tools found matching &quot;{searchQuery}&quot;</p>
           <p className="text-slate-500 text-sm mt-2">Try a different search term</p>
         </div>
       ) : (
@@ -181,4 +186,3 @@ export default function SearchableToolsList({ tools }: SearchableToolsListProps)
     </div>
   );
 }
-
