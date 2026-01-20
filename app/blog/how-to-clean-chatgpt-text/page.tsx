@@ -3,6 +3,8 @@ import { buildArticleMeta } from '@/lib/seo-meta';
 import { JsonLd } from '@/components/JsonLd';
 import { blogPostingSchema } from '@/lib/schema/blog';
 import AdSenseSlot from '../../../components/ads/AdSenseSlot';
+import { getServerLocale } from '@/lib/server-i18n';
+import type { Metadata } from 'next';
 
 const urlPath = '/blog/how-to-clean-chatgpt-text';
 const title = 'How to Clean ChatGPT Text (Step-by-Step Guide for Publishing, SEO & Performance) | GPT CLEAN UP';
@@ -10,11 +12,15 @@ const headline = 'How to Clean ChatGPT Text (Complete Step-by-Step Guide for Pub
 const description =
   'Learn how to remove invisible characters, normalize whitespace, fix structure, and publish clean, SEO-safe ChatGPT text.';
 
-export const metadata = buildArticleMeta({
-  title,
-  description,
-  urlPath,
-});
+export async function generateMetadata(): Promise<Metadata> {
+  const { locale } = await getServerLocale();
+  return buildArticleMeta({
+    title,
+    description,
+    urlPath,
+    locale,
+  });
+}
 
 export default function HowToCleanChatGPTTextPage() {
   return (

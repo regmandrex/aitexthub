@@ -3,6 +3,8 @@ import { buildArticleMeta } from '@/lib/seo-meta';
 import { JsonLd } from '@/components/JsonLd';
 import { blogPostingSchema } from '@/lib/schema/blog';
 import AdSenseSlot from '../../../components/ads/AdSenseSlot';
+import { getServerLocale } from '@/lib/server-i18n';
+import type { Metadata } from 'next';
 
 const urlPath = '/blog/ai-content-cleaning-vs-traditional-text-sanitization-for-seo';
 const title = 'AI Content Cleaning vs Traditional Text Sanitization for SEO (What Works in 2026) | GPT CLEAN UP';
@@ -10,11 +12,15 @@ const headline = 'AI Content Cleaning vs Traditional Text Sanitization for SEO (
 const description =
   'Traditional sanitization removes unsafe HTML. AI content cleaning removes invisible Unicode, normalizes whitespace, reduces DOM bloat, and improves Core Web Vitals for SEO.';
 
-export const metadata = buildArticleMeta({
-  title,
-  description,
-  urlPath,
-});
+export async function generateMetadata(): Promise<Metadata> {
+  const { locale } = await getServerLocale();
+  return buildArticleMeta({
+    title,
+    description,
+    urlPath,
+    locale,
+  });
+}
 
 export default function AiCleaningVsSanitizationSeoPage() {
   return (

@@ -1,3 +1,5 @@
+'use client';
+
 import type { ReactNode } from 'react';
 import FAQSection from '../FAQSection';
 import FaqJsonLd from '../FaqJsonLd';
@@ -9,6 +11,7 @@ import { siteUrl } from '../../lib/schema/site';
 import { RelatedTools } from '../tool/RelatedTools';
 import AdSenseSlot from '../ads/AdSenseSlot';
 import BelowToolAd from '../ads/BelowToolAd';
+import { useI18n } from '../../lib/client-i18n';
 
 type Props = {
   modelName: string;
@@ -30,8 +33,9 @@ function RailAd({ side }: { side: 'left' | 'right' }) {
 }
 
 export default function SpaceRemoverPage({ modelName, modelSlug, faqItems, content }: Props) {
+  const { t } = useI18n();
   const url = `${siteUrl}/${modelSlug}-space-remover/`;
-  const title = `${modelName} Space Remover`;
+  const title = t('SpaceRemoverPage.title', { modelName });
   const description = `Tighten whitespace, trim messy spacing, and make ${modelName} text easier to paste into docs and CMS editors.`;
 
   return (
@@ -44,7 +48,7 @@ export default function SpaceRemoverPage({ modelName, modelSlug, faqItems, conte
           <h1 className="text-2xl font-semibold text-slate-900 md:text-3xl">{title}</h1>
           <div className="space-y-2">
             <p className="max-w-2xl mx-auto text-sm text-slate-700 md:text-[15px]">
-              Remove extra spaces and tidy lines for clean, paste-ready text.
+              {t('SpaceRemoverPage.subtitle')}
             </p>
           </div>
         </section>
@@ -64,34 +68,33 @@ export default function SpaceRemoverPage({ modelName, modelSlug, faqItems, conte
         ) : (
           <section className="space-y-6 mt-10">
             <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 space-y-4">
-              <h2 className="text-xl font-semibold text-slate-900">How it works</h2>
+              <h2 className="text-xl font-semibold text-slate-900">{t('SpaceRemoverPage.howItWorks')}</h2>
               <ul className="list-disc list-inside space-y-1 text-slate-700">
-                <li>Collapses repeated spaces while keeping your line breaks intact.</li>
-                <li>Trims leading and trailing line whitespace for cleaner paragraphs.</li>
-                <li>Normalizes tabs and line endings for consistent formatting across tools.</li>
+                <li>{t('SpaceRemoverPage.howItWorks1')}</li>
+                <li>{t('SpaceRemoverPage.howItWorks2')}</li>
+                <li>{t('SpaceRemoverPage.howItWorks3')}</li>
               </ul>
             </div>
             <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 space-y-4">
-              <h2 className="text-xl font-semibold text-slate-900">What it can / can&apos;t do</h2>
+              <h2 className="text-xl font-semibold text-slate-900">{t('SpaceRemoverPage.whatCanCant')}</h2>
               <ul className="list-disc list-inside space-y-1 text-slate-700">
-                <li>Can reduce formatting glitches caused by inconsistent spacing.</li>
-                <li>Can&apos;t verify authorship, provenance, or model identity.</li>
-                <li>Not a bypass tool; it only adjusts spacing and formatting.</li>
-                <li>Not a guarantee; use responsibly and review the output before publishing.</li>
+                <li>{t('SpaceRemoverPage.whatCanCant1')}</li>
+                <li>{t('SpaceRemoverPage.whatCanCant2')}</li>
+                <li>{t('SpaceRemoverPage.whatCanCant3')}</li>
+                <li>{t('SpaceRemoverPage.whatCanCant4')}</li>
               </ul>
             </div>
           </section>
         )}
 
         <div className="mt-10 space-y-3">
-          <h2 className="text-2xl font-semibold text-slate-900">{modelName} Space Remover - Frequently Asked Questions</h2>
+          <h2 className="text-2xl font-semibold text-slate-900">{t('SpaceRemoverPage.faqHeading', { modelName })}</h2>
           <p className="text-slate-700">
-            This FAQ covers common spacing issues, what the tool changes, and what it does not. Review the cleaned output to confirm spacing and
-            formatting match your intended use.
+            {t('SpaceRemoverPage.faqIntro')}
           </p>
         </div>
 
-        <FAQSection items={faqItems} />
+        <FAQSection items={faqItems} translationPrefix="FAQ.spaceRemover" />
         <FaqJsonLd faqs={faqItems} />
       </div>
     </div>

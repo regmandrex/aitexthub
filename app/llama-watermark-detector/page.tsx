@@ -1,6 +1,8 @@
-﻿import type { FaqItem } from '@/components/faqData';
+import type { FaqItem } from '@/components/faqData';
 import WatermarkDetectorPage from '@/components/tools/WatermarkDetectorPage';
 import { buildMeta } from '@/lib/seo-meta';
+import { getServerLocale } from '@/lib/server-i18n';
+import { createServerT } from '@/lib/server-t';
 
 const modelName = 'LLAMA (Meta AI)';
 const modelSlug = 'llama';
@@ -167,11 +169,19 @@ const faqs: FaqItem[] = [
   },
 ];
 
-export const metadata = buildMeta({
-  title: `${modelName} Watermark Detector - Scan ${modelName} Text for Hidden Unicode and Formatting Signals`,
-  description: `Inspect ${modelName} text for possible hidden Unicode, whitespace patterns, and repeated punctuation.`,
-  urlPath: `/${modelSlug}-watermark-detector`,
-});
+export async function generateMetadata() {
+  const { locale } = await getServerLocale();
+  const t = await createServerT(locale);
+  const title = t('WatermarkDetectorPage.title', { modelName });
+  const description = t('WatermarkDetectorPage.subtitle');
+  
+  return buildMeta({
+    title: `${title} - ${description}`,
+    description: description || `Inspect ${modelName} text for possible hidden Unicode, whitespace patterns, and repeated punctuation.`,
+    urlPath: `/${modelSlug}-watermark-detector`,
+    locale,
+  });
+}
 
 export default function LlamaWatermarkDetectorPage() {
   const writeUp = (

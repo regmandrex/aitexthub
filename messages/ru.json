@@ -1,0 +1,322 @@
+{
+  "Nav": {
+    "home": "Главная",
+    "tools": "Бесплатные AI‑инструменты",
+    "blog": "Блог",
+    "language": "Язык"
+  },
+  "Common": {
+    "language": "Язык"
+  },
+  "AllTools": {
+    "title": "Все инструменты",
+    "subtitle": "Просматривайте коллекцию GPT CLEAN UP Tools, сгруппированную по категориям, чтобы быстро найти нужную утилиту.",
+    "seoTitle": "Все инструменты | GPT CLEAN UP",
+    "seoDescription": "Просматривайте коллекцию GPT CLEAN UP Tools - очистка текста ИИ, удаление водяных знаков, инструменты форматирования и многое другое. Быстро найдите нужную утилиту."
+  },
+  "ToolUI": {
+    "inputText": "Входной текст",
+    "output": "Результат",
+    "copy": "Копировать",
+    "clear": "Очистить",
+    "yes": "Да",
+    "no": "Нет"
+  },
+  "Tools": {
+    "home": {
+      "title": "Limpiador de texto de ChatGPT",
+      "description": "Limpia y normaliza texto de IA eliminando Unicode oculto y corrigiendo el espaciado."
+    },
+    "space-remover": {
+      "title": "Eliminador de espacios",
+      "description": "Elimina espacios extra, recorta líneas y normaliza los espacios en blanco para un texto limpio y listo para pegar."
+    },
+    "ai-space-remover": {
+      "title": "Eliminador de espacios de IA",
+      "description": "Elimina espacios extra, Unicode oculto y espacios irregulares del texto generado por IA."
+    },
+    "case-converter": {
+      "title": "Convertidor de mayúsculas y minúsculas",
+      "description": "Convierte texto a MAYÚSCULAS, minúsculas, Título o frase.",
+      "seoTitle": "Convertidor de mayúsculas y minúsculas - MAYÚSCULAS, minúsculas, Título y frase"
+    },
+    "em-dash-remover": {
+      "title": "Eliminador / reemplazador de guiones largos",
+      "description": "Elimina o reemplaza guiones largos (—) y guiones cortos (–) con el espaciado que prefieras.",
+      "seoTitle": "Eliminador de guiones largos - Reemplaza o elimina guiones — y –"
+    },
+    "find-and-replace": {
+      "title": "Buscar y reemplazar",
+      "description": "Busca texto y reemplázalo por valores personalizados, con coincidencia opcional de mayúsculas/minúsculas.",
+      "seoTitle": "Herramienta de buscar y reemplazar - Reemplazo masivo de texto online"
+    },
+    "invisible-character-detector": {
+      "title": "Detector de caracteres invisibles",
+      "description": "Detecta caracteres Unicode ocultos y muestra dónde aparecen en tu texto.",
+      "seoTitle": "Detector de caracteres invisibles - Encuentra Unicode oculto"
+    },
+    "remove-duplicate-lines": {
+      "title": "Eliminar líneas duplicadas",
+      "description": "Elimina líneas duplicadas manteniendo el orden original.",
+      "seoTitle": "Eliminar líneas duplicadas - Borra texto duplicado"
+    },
+    "remove-line-breaks": {
+      "title": "Eliminar saltos de línea",
+      "description": "Une líneas envueltas en párrafos limpios eliminando saltos de línea.",
+      "seoTitle": "Eliminar saltos de línea - Unir líneas en párrafos"
+    },
+    "strip-html": {
+      "title": "Eliminar HTML",
+      "description": "Elimina etiquetas HTML y devuelve texto plano limpio.",
+      "seoTitle": "Eliminar etiquetas HTML - Convertir HTML a texto plano gratis"
+    },
+    "url-encoder-decoder": {
+      "title": "Codificador / decodificador de URL",
+      "description": "Codifica o decodifica URLs, cadenas de consulta y fragmentos de texto.",
+      "seoTitle": "Codificador y decodificador de URL - Codifica o decodifica URLs"
+    },
+    "word-counter": {
+      "title": "Contador de palabras",
+      "description": "Cuenta palabras, caracteres, líneas, frases y párrafos.",
+      "seoTitle": "Contador de palabras - Cuenta palabras, caracteres y líneas"
+    },
+    "zero-width-space-remover": {
+      "title": "Eliminador de espacios de ancho cero",
+      "description": "Elimina espacios de ancho cero y caracteres Unicode invisibles.",
+      "seoTitle": "Eliminador de espacios de ancho cero - Quita Unicode invisible"
+    },
+    "hex-to-binary": {
+      "title": "Convertidor de HEX a binario",
+      "description": "Convierte cadenas hexadecimales a binario con opciones de formato.",
+      "seoTitle": "Convertidor de HEX a binario - Herramienta rápida de HEX a binario"
+    },
+    "random-hex-generator": {
+      "title": "Generador de HEX aleatorio",
+      "description": "Genera cadenas hexadecimales aleatorias con controles de longitud y formato.",
+      "seoTitle": "Generador de HEX aleatorio - Cadenas HEX aleatorias"
+    },
+    "morse-code-translator": {
+      "title": "Traductor de código Morse",
+      "description": "Traduce texto a código Morse o decodifica Morse a texto.",
+      "seoTitle": "Traductor de código Morse - Codifica y decodifica Morse"
+    },
+    "idn-encode": {
+      "title": "Codificar IDN",
+      "description": "Convierte dominios internacionales a ASCII (Punycode).",
+      "seoTitle": "Codificar IDN - Convertir dominios internacionales a Punycode"
+    },
+    "idn-decode": {
+      "title": "Decodificar IDN",
+      "description": "Convierte dominios Punycode a Unicode legible.",
+      "seoTitle": "Decodificar IDN - Convertir Punycode a Unicode"
+    },
+    "utf8-encode": {
+      "title": "Codificar UTF-8",
+      "description": "Codifica texto en bytes UTF-8 para un transporte fiable.",
+      "seoTitle": "Codificar UTF-8 - Convertir texto a bytes UTF-8"
+    },
+    "utf8-decode": {
+      "title": "Decodificar UTF-8",
+      "description": "Decodifica valores de bytes UTF-8 a texto legible.",
+      "seoTitle": "Decodificar UTF-8 - Convertir bytes UTF-8 a texto"
+    },
+    "url-encode": {
+      "title": "Codificar URL",
+      "description": "Codifica texto de URL y valores de consulta en cadenas seguras con percent-encoding.",
+      "seoTitle": "Codificar URL - Percent-encoding para URLs y texto"
+    },
+    "url-decode": {
+      "title": "Decodificar URL",
+      "description": "Decodifica URLs y cadenas de consulta con percent-encoding a texto legible.",
+      "seoTitle": "Decodificar URL - Convertir URLs codificadas a texto"
+    },
+    "base64-encode": {
+      "title": "Codificar Base64",
+      "description": "Convierte texto a Base64 para un transporte seguro en apps y configuraciones.",
+      "seoTitle": "Codificar Base64 - Convertir texto a cadenas Base64"
+    },
+    "base64-decode": {
+      "title": "Decodificar Base64",
+      "description": "Decodifica cadenas Base64 a texto legible con soporte UTF-8.",
+      "seoTitle": "Decodificar Base64 - Convertir Base64 a texto"
+    },
+    "html-entities-to-text": {
+      "title": "Convertidor de entidades HTML a texto",
+      "description": "Decodifica entidades HTML como &amp; y &#169; a texto legible.",
+      "seoTitle": "Entidades HTML a texto - Decodificar entidades HTML"
+    },
+    "text-to-html-entities": {
+      "title": "Convertidor de texto a entidades HTML",
+      "description": "Codifica texto en entidades HTML para un marcado seguro.",
+      "seoTitle": "Texto a entidades HTML - Codificar entidades HTML"
+    },
+    "morse-code-generator": {
+      "title": "Generador de código Morse",
+      "description": "Convierte texto en código Morse limpio con barras o espacios, listo para aprender, practicar o señalizar."
+    },
+    "korean-nickname-generator": {
+      "title": "Generador de apodos coreanos",
+      "description": "Genera 20 apodos a partir de un nombre y rasgos. Estilos lindo, genial, divertido, emotivo y más. Funciona localmente en tu navegador."
+    },
+    "chatgpt-space-remover": {
+      "title": "Eliminador de espacios de ChatGPT",
+      "description": "Elimina espacios extra y líneas en blanco del texto de ChatGPT con un solo clic."
+    },
+    "chatgpt-line-spacing": {
+      "title": "Herramienta de interlineado para ChatGPT",
+      "description": "Ajusta el interlineado del texto de ChatGPT a sencillo, 1.5, doble o personalizado para un formato profesional."
+    },
+    "chatgpt-watermark-remover": {
+      "title": "Eliminador de marcas de agua de ChatGPT",
+      "description": "Elimina caracteres ocultos y artefactos de formato del texto de ChatGPT."
+    },
+    "ai-watermark-remover": {
+      "title": "Eliminador de marcas de agua de IA",
+      "description": "Limpia artefactos de formato, normaliza Unicode y deja el texto de IA listo para publicar."
+    },
+    "gemini-space-remover": {
+      "title": "Eliminador de espacios de Gemini",
+      "description": "Limpia espacios extra y líneas en blanco del texto de Google Gemini."
+    },
+    "gemini-watermark-cleaner": {
+      "title": "Limpiador de marcas de agua de Gemini",
+      "description": "Elimina marcas de agua ocultas y Unicode invisible del texto de Gemini."
+    },
+    "grok-watermark-cleaner": {
+      "title": "Limpiador de marcas de agua de Grok",
+      "description": "Elimina marcas de agua ocultas y Unicode invisible del texto de Grok."
+    },
+    "deepseek-watermark-cleaner": {
+      "title": "Limpiador de marcas de agua de DeepSeek",
+      "description": "Elimina marcas de agua ocultas y Unicode invisible del texto de DeepSeek."
+    },
+    "claude-watermark-cleaner": {
+      "title": "Limpiador de marcas de agua de Claude",
+      "description": "Elimina marcas de agua ocultas y Unicode invisible del texto de Claude."
+    },
+    "llama-watermark-cleaner": {
+      "title": "Limpiador de marcas de agua de LLAMA",
+      "description": "Elimina marcas de agua ocultas y Unicode invisible del texto de LLAMA."
+    },
+    "perplexity-watermark-cleaner": {
+      "title": "Limpiador de marcas de agua de Perplexity",
+      "description": "Elimina marcas de agua ocultas y Unicode invisible del texto de Perplexity."
+    },
+    "grok-space-remover": {
+      "title": "Eliminador de espacios de Grok",
+      "description": "Limpia espacios extra y normaliza el texto de Grok para pegarlo fácilmente."
+    },
+    "deepseek-space-remover": {
+      "title": "Eliminador de espacios de DeepSeek",
+      "description": "Agrupa espacios en blanco extra en respuestas de DeepSeek manteniendo el significado."
+    },
+    "llama-space-remover": {
+      "title": "Eliminador de espacios de LLAMA",
+      "description": "Limpia texto de LLAMA (Meta AI) recortando líneas y estabilizando el espaciado."
+    },
+    "perplexity-space-remover": {
+      "title": "Eliminador de espacios de Perplexity",
+      "description": "Corrige el espaciado y espacios ocultos en respuestas de Perplexity."
+    },
+    "mistral-space-remover": {
+      "title": "Eliminador de espacios de Mistral",
+      "description": "Normaliza los espacios en blanco en texto generado por Mistral."
+    },
+    "mistral-watermark-cleaner": {
+      "title": "Limpiador de marcas de agua de Mistral",
+      "description": "Elimina marcas de agua ocultas y Unicode invisible del texto de Mistral."
+    },
+    "claude-space-remover": {
+      "title": "Eliminador de espacios de Claude",
+      "description": "Recorta, agrupa y normaliza espacios en respuestas de Claude."
+    },
+    "chatgpt-watermark-detector": {
+      "title": "Detector de marcas de agua de ChatGPT",
+      "description": "Inspecciona texto de ChatGPT en busca de posibles artefactos de formato y Unicode oculto."
+    },
+    "ai-watermark-detector": {
+      "title": "Detector de marcas de agua de IA",
+      "description": "Analiza texto en busca de Unicode oculto, patrones de espacios y señales estructurales."
+    },
+    "grok-watermark-detector": {
+      "title": "Detector de marcas de agua de Grok",
+      "description": "Analiza texto de Grok en busca de posibles artefactos y anomalías de espaciado."
+    },
+    "deepseek-watermark-detector": {
+      "title": "Detector de marcas de agua de DeepSeek",
+      "description": "Escanea texto de DeepSeek en busca de señales de formato tipo “marca de agua”."
+    },
+    "llama-watermark-detector": {
+      "title": "Detector de marcas de agua de LLAMA",
+      "description": "Revisa texto de LLAMA (Meta AI) para detectar Unicode oculto y patrones de espacios."
+    },
+    "perplexity-watermark-detector": {
+      "title": "Detector de marcas de agua de Perplexity",
+      "description": "Muestra posibles artefactos de formato en texto de Perplexity."
+    },
+    "gemini-watermark-detector": {
+      "title": "Detector de marcas de agua de Gemini",
+      "description": "Inspecciona texto de Gemini en busca de caracteres ocultos y señales de espacios."
+    },
+    "mistral-watermark-detector": {
+      "title": "Detector de marcas de agua de Mistral",
+      "description": "Identifica posibles patrones de formato en texto generado por Mistral."
+    },
+    "claude-watermark-detector": {
+      "title": "Detector de marcas de agua de Claude",
+      "description": "Analiza texto de Claude en busca de Unicode oculto y artefactos de espaciado."
+    },
+    "text-to-morse-code": {
+      "title": "Convertidor de texto a código Morse",
+      "description": "Convierte texto a código Morse con codificación ITU estándar. Rápido, preciso y respetuoso con la privacidad."
+    },
+    "combination-generator": {
+      "title": "Генератор комбинаций",
+      "description": "Генерирует все возможные комбинации из набора элементов. Порядок не имеет значения в комбинациях."
+    },
+    "line-combination-generator": {
+      "title": "Генератор комбинаций строк",
+      "description": "Генерирует все возможные комбинации строк из вашего текста. Сохраняет переносы строк в выводе."
+    },
+    "permutation-generator": {
+      "title": "Генератор перестановок",
+      "description": "Генерирует все возможные перестановки, где важен порядок. Создает упорядоченные расположения элементов."
+    },
+    "extract-numbers-from-text": {
+      "title": "Extraer números del texto",
+      "description": "Extrae todos los números del texto, incluidos enteros y decimales. Opciones de orden, unicidad y separadores."
+    },
+    "text-to-hex": {
+      "title": "Convertidor de texto a HEX",
+      "description": "Convierte caracteres de texto a representación hexadecimal. Soporta UTF-8 con opciones de mayúsculas/minúsculas y espaciado."
+    }
+  },
+  "Footer": {
+    "discoverMore": "Откройте больше инструментов:",
+    "aboutTitle": "О GPT CLEAN UP TOOLS",
+    "aboutBlurb": "Бесплатные инструменты для очистки AI‑текста: убрать мусорные символы, исправить форматирование и лишние пробелы.",
+    "exploreTitle": "Разделы",
+    "topToolsTitle": "Популярные инструменты",
+    "legalTitle": "Документы",
+    "links": {
+      "home": "Главная",
+      "about": "О нас",
+      "contact": "Контакты",
+      "blog": "Блог"
+    },
+    "topTools": {
+      "chatgptSpaceRemover": "Удаление пробелов ChatGPT",
+      "chatgptWatermarkRemover": "Удаление водяных знаков ChatGPT",
+      "stripHtml": "Удалить HTML"
+    },
+    "legal": {
+      "privacy": "Политика конфиденциальности",
+      "terms": "Условия использования",
+      "disclaimer": "Отказ от ответственности",
+      "cookies": "Политика cookie"
+    },
+    "copyrightPrefix": "© 2026",
+    "tagline": " — ваш надёжный детектор водяных знаков ChatGPT и очиститель AI‑текста для удаления или исправления zero‑width пробелов и скрытых Unicode‑маркеров.",
+    "rights": "Все права защищены."
+  }
+}

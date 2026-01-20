@@ -1,6 +1,8 @@
-﻿import type { FaqItem } from '@/components/faqData';
+import type { FaqItem } from '@/components/faqData';
 import SpaceRemoverPage from '@/components/tools/SpaceRemoverPage';
 import { buildMeta } from '@/lib/seo-meta';
+import { getServerLocale } from '@/lib/server-i18n';
+import { createServerT } from '@/lib/server-t';
 
 const modelName = 'LLAMA (Meta AI)';
 const modelSlug = 'llama';
@@ -344,11 +346,19 @@ const writeUp = (
 
 
 
-export const metadata = buildMeta({
-  title: `${modelName} Space Remover - Remove Extra Spaces from ${modelName} Text`,
-  description: `Remove extra spaces, trim lines, and normalize whitespace in ${modelName} output.`,
-  urlPath: `/${modelSlug}-space-remover`,
-});
+export async function generateMetadata() {
+  const { locale } = await getServerLocale();
+  const t = await createServerT(locale);
+  const title = t('SpaceRemoverPage.title', { modelName });
+  const description = t('SpaceRemoverPage.subtitle');
+  
+  return buildMeta({
+    title: `${title} - ${t(`Tools.${modelSlug}-space-remover.description`)}`,
+    description: description || `Remove extra spaces, trim lines, and normalize whitespace in ${modelName} output.`,
+    urlPath: `/${modelSlug}-space-remover`,
+    locale,
+  });
+}
 
 export default function LlamaSpaceRemoverPage() {
   return <SpaceRemoverPage modelName={modelName} modelSlug={modelSlug} faqItems={faqs} content={writeUp} />;

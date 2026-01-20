@@ -11,18 +11,33 @@ import { buildToolMeta } from '@/lib/seo-meta';
 import { siteUrl } from '@/lib/schema/site';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
+import { getServerLocale } from '@/lib/server-i18n';
+import { createServerT } from '@/lib/server-t';
 
 const toolSlug = 'html-entities-to-text';
-const tool = getToolBySlug(toolSlug);
-const description = tool?.shortDescription ?? 'Decode HTML entities into readable text.';
-const title = tool?.title ?? 'HTML Entities to Text Converter';
 
-export const metadata: Metadata = buildToolMeta({
-  title,
-  description,
-  seoTitle: tool?.seoTitle,
-  urlPath: `/${toolSlug}`,
-});
+export async function generateMetadata(): Promise<Metadata> {
+  const { locale } = await getServerLocale();
+  const t = await createServerT(locale);
+  const tool = getToolBySlug(toolSlug);
+  const toolKey = toolSlug === '' ? 'home' : toolSlug;
+  
+  const title = t(`Tools.${toolKey}.title`) !== `Tools.${toolKey}.title` 
+    ? t(`Tools.${toolKey}.title`) 
+    : tool?.title ?? 'HTML Entities to Text Converter';
+  const description = t(`Tools.${toolKey}.description`) !== `Tools.${toolKey}.description`
+    ? t(`Tools.${toolKey}.description`)
+    : tool?.shortDescription ?? 'Decode HTML entities into readable text.';
+  const seoTitle = tool?.seoTitle ? (t(`Tools.${toolKey}.seoTitle`) !== `Tools.${toolKey}.seoTitle` ? t(`Tools.${toolKey}.seoTitle`) : tool.seoTitle) : undefined;
+  
+  return buildToolMeta({
+    title,
+    description,
+    seoTitle,
+    urlPath: `/${toolSlug}`,
+    locale,
+  });
+}
 
 const faqs: FaqItem[] = [
   {
@@ -582,26 +597,36 @@ const decoded = decodeHtmlEntities(raw);
   </section>
 );
 
-export default function HtmlEntitiesToTextPage() {
+export default async function HtmlEntitiesToTextPage() {
+  const { locale } = await getServerLocale();
+  const t = await createServerT(locale);
   const toolData = getToolBySlug(toolSlug);
   if (!toolData) return notFound();
+
+  const toolKey = toolSlug === '' ? 'home' : toolSlug;
+  const title = t(`Tools.${toolKey}.title`) !== `Tools.${toolKey}.title` 
+    ? t(`Tools.${toolKey}.title`) 
+    : toolData.title;
+  const description = t(`Tools.${toolKey}.description`) !== `Tools.${toolKey}.description`
+    ? t(`Tools.${toolKey}.description`)
+    : toolData.shortDescription;
 
   const url = `${siteUrl}/${toolSlug}/`;
   const webAppSchema = {
     '@context': 'https://schema.org',
     '@type': 'WebApplication',
-    name: toolData.title,
+    name: title,
     applicationCategory: 'UtilitiesApplication',
     operatingSystem: 'Web',
-    description: toolData.shortDescription,
+    description: description,
     url,
   };
 
   return (
     <>
-      <JsonLd data={webPageSchema({ name: toolData.title, url, description: toolData.shortDescription })} />
+      <JsonLd data={webPageSchema({ name: title, url, description })} />
       <JsonLd data={webAppSchema} />
-      <ToolPageShell tool={toolData} ui={<HtmlEntitiesToTextTool />} related={<RelatedTools currentSlug={toolData.slug} />}>
+      <ToolPageShell tool={{ ...toolData, title, shortDescription: description }} ui={<HtmlEntitiesToTextTool />} related={<RelatedTools currentSlug={toolData.slug} />}>
         {writeUp}
         <div className="mt-10 space-y-3">
           <h2 className="text-2xl font-semibold text-slate-900">HTML Entities to Text FAQ</h2>

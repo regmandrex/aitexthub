@@ -1,27 +1,32 @@
 import Link from 'next/link';
 import { buildMeta } from '@/lib/seo-meta';
+import { getServerLocale } from '@/lib/server-i18n';
+import { createServerT } from '@/lib/server-t';
 
-export const metadata = buildMeta({
-  title: 'About | GPT CLEAN UP',
-  description: 'Learn about GPT CLEAN UP and how we help tidy AI text from ChatGPT, Gemini, and more.',
-  urlPath: '/about',
-});
+export async function generateMetadata() {
+  const { locale } = await getServerLocale();
+  const t = await createServerT(locale);
+  
+  return buildMeta({
+    title: `About | GPT CLEAN UP`,
+    description: 'Learn about GPT CLEAN UP and how we help tidy AI text from ChatGPT, Gemini, and more.',
+    urlPath: '/about',
+    locale,
+  });
+}
 
-export default function AboutPage() {
+export default async function AboutPage() {
+  const { locale } = await getServerLocale();
+  const t = await createServerT(locale);
+
   return (
     <article className="prose max-w-none prose-slate">
-      <h1>About GPT CLEAN UP</h1>
+      <h1>{t('AboutPage.title')}</h1>
+      <p>{t('AboutPage.p1')}</p>
+      <p>{t('AboutPage.p2')}</p>
       <p>
-        GPT CLEAN UP is a simple toolkit for cleaning and formatting AI-generated text. We focus on removing messy spacing, blank lines, and
-        invisible characters that appear when you paste responses from ChatGPT, Gemini, Claude, and other models.
-      </p>
-      <p>
-        These tools run in your browser-no accounts or logins required. We are not affiliated with OpenAI or Google, and this site is built
-        purely to save you time when working with AI content.
-      </p>
-      <p>
-        Try the main <Link href="/">ChatGPT Text Cleaner</Link> or the dedicated{' '}
-        <Link href="/chatgpt-space-remover">space remover</Link> if spacing is your biggest issue.
+        {t('AboutPage.p3')} <Link href="/">{t('AboutPage.chatgptTextCleaner')}</Link> {t('AboutPage.or')}{' '}
+        <Link href="/chatgpt-space-remover">{t('AboutPage.spaceRemover')}</Link> {t('AboutPage.ifSpacing')}
       </p>
     </article>
   );

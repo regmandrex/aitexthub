@@ -2,12 +2,14 @@
 
 import { useState } from 'react';
 import ToolTextArea from './ToolTextArea';
+import { useI18n } from '@/lib/client-i18n';
 
 function escapeRegExp(value: string) {
   return value.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 }
 
 export function FindReplaceTool() {
+  const { t } = useI18n();
   const [input, setInput] = useState('');
   const [output, setOutput] = useState('');
   const [findValue, setFindValue] = useState('');
@@ -48,42 +50,42 @@ export function FindReplaceTool() {
     <div className="space-y-4">
       <div className="grid gap-4 md:grid-cols-2">
         <ToolTextArea
-          label="Input text"
+          label={t('FindAndReplacePage.ui.inputLabel')}
           value={input}
           onChange={setInput}
-          placeholder="Paste text to search..."
+          placeholder={t('FindAndReplacePage.ui.inputPlaceholder')}
           rows={12}
         />
         <ToolTextArea
-          label="Output"
+          label={t('FindAndReplacePage.ui.outputLabel')}
           value={output}
           onChange={setOutput}
-          placeholder="Updated text will appear here."
+          placeholder={t('FindAndReplacePage.ui.outputPlaceholder')}
           rows={12}
           readOnly
-          helperText={matchCount ? `${matchCount} matches` : 'No matches yet'}
+          helperText={matchCount ? `${matchCount} ${t('FindAndReplacePage.ui.matchesText')}` : t('FindAndReplacePage.ui.noMatchesHelper')}
         />
       </div>
 
       <div className="grid gap-3 md:grid-cols-2">
         <label className="space-y-1 text-sm font-semibold text-slate-700">
-          Find
+          {t('FindAndReplacePage.ui.findLabel')}
           <input
             type="text"
             value={findValue}
             onChange={(event) => setFindValue(event.target.value)}
             className="w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm font-normal text-slate-800 shadow-sm focus:border-brand-300 focus:outline-none focus:ring-2 focus:ring-brand-100"
-            placeholder="Text to find"
+            placeholder={t('FindAndReplacePage.ui.findPlaceholder')}
           />
         </label>
         <label className="space-y-1 text-sm font-semibold text-slate-700">
-          Replace with
+          {t('FindAndReplacePage.ui.replaceLabel')}
           <input
             type="text"
             value={replaceValue}
             onChange={(event) => setReplaceValue(event.target.value)}
             className="w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm font-normal text-slate-800 shadow-sm focus:border-brand-300 focus:outline-none focus:ring-2 focus:ring-brand-100"
-            placeholder="Replacement text"
+            placeholder={t('FindAndReplacePage.ui.replacePlaceholder')}
           />
         </label>
       </div>
@@ -96,7 +98,7 @@ export function FindReplaceTool() {
             checked={caseSensitive}
             onChange={() => setCaseSensitive((prev) => !prev)}
           />
-          Case sensitive
+          {t('FindAndReplacePage.ui.caseSensitiveLabel')}
         </label>
         <label className="flex items-center gap-2">
           <input
@@ -105,7 +107,7 @@ export function FindReplaceTool() {
             checked={wholeWord}
             onChange={() => setWholeWord((prev) => !prev)}
           />
-          Match whole word
+          {t('FindAndReplacePage.ui.wholeWordLabel')}
         </label>
       </div>
 
@@ -115,21 +117,21 @@ export function FindReplaceTool() {
           onClick={handleReplace}
           className="inline-flex items-center justify-center rounded-lg bg-brand-700 px-4 py-2 text-sm font-semibold text-white shadow hover:bg-brand-800"
         >
-          Replace text
+          {t('FindAndReplacePage.ui.replaceButton')}
         </button>
         <button
           type="button"
           onClick={handleCopy}
           className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
         >
-          Copy
+          {t('FindAndReplacePage.ui.copyButton')}
         </button>
         <button
           type="button"
           onClick={handleClear}
           className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
         >
-          Clear
+          {t('FindAndReplacePage.ui.clearButton')}
         </button>
       </div>
     </div>

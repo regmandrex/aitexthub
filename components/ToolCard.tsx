@@ -4,9 +4,10 @@ type ToolCardProps = {
   title: string;
   description: string;
   href: string;
+  ctaLabel?: string;
 };
 
-export default function ToolCard({ title, description, href }: ToolCardProps) {
+export default function ToolCard({ title, description, href, ctaLabel = 'Open tool' }: ToolCardProps) {
   return (
     <Link
       href={href}
@@ -15,7 +16,7 @@ export default function ToolCard({ title, description, href }: ToolCardProps) {
       <h3 className="text-base font-semibold text-slate-900 md:text-lg">{title}</h3>
       <p className="mt-2 text-sm text-slate-700 md:mt-3">{description}</p>
       <span className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-brand-600">
-        Open tool
+        {ctaLabel}
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"

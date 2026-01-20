@@ -1,10 +1,16 @@
 import { buildMeta } from '@/lib/seo-meta';
+import { getServerLocale } from '@/lib/server-i18n';
+import type { Metadata } from 'next';
 
-export const metadata = buildMeta({
-  title: 'Disclaimer | GPT CLEAN UP',
-  description: 'Disclaimer for GPT CLEAN UP tools.',
-  urlPath: '/disclaimer',
-});
+export async function generateMetadata(): Promise<Metadata> {
+  const { locale } = await getServerLocale();
+  return buildMeta({
+    title: 'Disclaimer | GPT CLEAN UP',
+    description: 'Disclaimer for GPT CLEAN UP tools.',
+    urlPath: '/disclaimer',
+    locale,
+  });
+}
 
 export default function DisclaimerPage() {
   return (

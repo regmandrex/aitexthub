@@ -1,11 +1,22 @@
 import Link from 'next/link';
 import ToolCard from '@/components/ToolCard';
 import { getAllTools } from '@/lib/tools/registry';
+import { getServerLocale } from '@/lib/server-i18n';
+import { createServerT } from '@/lib/server-t';
 
-export default function NotFound() {
+export default async function NotFound() {
+  const { locale } = await getServerLocale();
+  const t = await createServerT(locale);
   const suggestions = getAllTools()
     .filter((tool) => tool.slug !== '')
     .slice(0, 4);
+  const resolveToolText = (tool: { slug: string; title: string; shortDescription: string }, field: 'title' | 'description') => {
+    const slugKey = tool.slug === '' ? 'home' : tool.slug;
+    const key = `Tools.${slugKey}.${field === 'title' ? 'title' : 'description'}`;
+    const translated = t(key);
+    if (translated !== key) return translated;
+    return field === 'title' ? tool.title : tool.shortDescription;
+  };
 
   return (
     <section className="relative overflow-hidden bg-[#f7f9ff]">
@@ -19,39 +30,41 @@ export default function NotFound() {
             <span className="inline-flex items-center gap-2 rounded-full border border-brand-100 bg-white/70 px-3 py-1 text-xs font-semibold uppercase tracking-[0.25em] text-brand-700">
               404
               <span className="h-2 w-2 rounded-full bg-brand-600" />
-              Not found
+              {t('NotFound.badge')}
             </span>
             <h1 className="text-3xl font-semibold text-slate-900 md:text-5xl">
-              We scrubbed this page a little too hard.
+              {t('NotFound.title')}
             </h1>
             <p className="max-w-xl text-base text-slate-700 md:text-lg">
-              The URL might be outdated, or the tool moved. Jump back to the main cleaner or explore the toolkit below.
+              {t('NotFound.subtitle')}
             </p>
             <div className="flex flex-wrap gap-3">
               <Link
                 href="/"
                 className="inline-flex items-center rounded-lg bg-brand-600 px-4 py-2 text-sm font-semibold text-white shadow hover:bg-brand-700 hover:text-white"
               >
-                Go to home
+                {t('NotFound.primaryCta')}
               </Link>
               <Link
                 href="/all-tools"
                 className="inline-flex items-center rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 shadow-sm hover:border-slate-300 hover:text-slate-900"
               >
-                Browse all tools
+                {t('NotFound.secondaryCta')}
               </Link>
             </div>
             <div className="flex items-center gap-3 text-xs text-slate-500">
-              <span className="rounded-full bg-slate-100 px-2 py-1 font-semibold uppercase tracking-wide text-slate-600">Tip</span>
-              Try the tool list if you copied a link from an old post.
+              <span className="rounded-full bg-slate-100 px-2 py-1 font-semibold uppercase tracking-wide text-slate-600">
+                {t('NotFound.tipLabel')}
+              </span>
+              {t('NotFound.tipText')}
             </div>
           </div>
 
           <div className="relative">
             <div className="rounded-3xl border border-slate-200 bg-white/90 p-6 shadow-sm backdrop-blur">
               <div className="flex items-center justify-between text-xs uppercase tracking-[0.2em] text-slate-400">
-                <span>Cleanup log</span>
-                <span>Status: 404</span>
+                <span>{t('NotFound.logLabel')}</span>
+                <span>{t('NotFound.logStatus')}</span>
               </div>
               <div className="mt-5 space-y-3">
                 <div className="h-3 w-4/5 rounded-full bg-slate-100" />
@@ -60,7 +73,7 @@ export default function NotFound() {
                 <div className="h-3 w-5/6 rounded-full bg-slate-100" />
               </div>
               <div className="mt-6 rounded-2xl border border-brand-100 bg-brand-50 px-4 py-3 text-sm text-brand-700">
-                Page path removed from the clean list.
+                {t('NotFound.logMessage')}
               </div>
             </div>
             <div className="absolute -right-4 -bottom-6 hidden rounded-2xl border border-slate-200 bg-white px-4 py-3 shadow-sm md:block">
@@ -72,18 +85,19 @@ export default function NotFound() {
         {suggestions.length ? (
           <section className="mt-12">
             <div className="flex items-center justify-between">
-              <h2 className="text-lg font-semibold text-slate-900">Try these tools instead</h2>
+              <h2 className="text-lg font-semibold text-slate-900">{t('NotFound.suggestionsTitle')}</h2>
               <Link href="/all-tools" className="text-sm font-semibold text-brand-600 hover:text-brand-700">
-                View all
+                {t('NotFound.viewAll')}
               </Link>
             </div>
             <div className="mt-4 grid gap-4 md:grid-cols-2">
               {suggestions.map((tool) => (
                 <ToolCard
                   key={tool.slug}
-                  title={tool.title}
-                  description={tool.shortDescription}
+                  title={resolveToolText(tool, 'title')}
+                  description={resolveToolText(tool, 'description')}
                   href={`/${tool.slug}`}
+                  ctaLabel={t('ToolCard.openTool')}
                 />
               ))}
             </div>

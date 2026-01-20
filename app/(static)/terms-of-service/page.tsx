@@ -1,45 +1,45 @@
 import { buildMeta } from '@/lib/seo-meta';
+import { getServerLocale } from '@/lib/server-i18n';
+import { createServerT } from '@/lib/server-t';
 
-export const metadata = buildMeta({
-  title: 'Terms of Service | GPT CLEAN UP',
-  description: 'Terms of Service for GPT CLEAN UP tools.',
-  urlPath: '/terms-of-service',
-});
+export async function generateMetadata() {
+  const { locale } = await getServerLocale();
+  const t = await createServerT(locale);
+  
+  return buildMeta({
+    title: t('TermsPage.metaTitle'),
+    description: t('TermsPage.metaDescription'),
+    urlPath: '/terms-of-service',
+  });
+}
 
-export default function TermsOfServicePage() {
+export default async function TermsOfServicePage() {
+  const { locale } = await getServerLocale();
+  const t = await createServerT(locale);
+  
   return (
     <article className="prose max-w-none prose-slate">
-      <h1>Terms of Service</h1>
-      <p>Last Updated: July 7, 2023</p>
-      <p>
-        Please read these Terms of Service (&quot;Terms&quot;) carefully before using the GPT CLEAN UP website and tools (&quot;the
-        Service&quot;).
-      </p>
+      <h1>{t('TermsPage.title')}</h1>
+      <p>{t('TermsPage.lastUpdated')}</p>
+      <p>{t('TermsPage.intro')}</p>
 
-      <h2>1. Acceptance of Terms</h2>
-      <p>
-        By accessing or using the Service, you agree to be bound by these Terms. If you do not agree, you must discontinue use of the Service
-        immediately.
-      </p>
+      <h2>{t('TermsPage.section1Title')}</h2>
+      <p>{t('TermsPage.section1Text')}</p>
 
-      <h2>2. Description of the Service</h2>
-      <p>
-        GPT CLEAN UP provides browser-based utilities designed to help users improve the readability, structure, and formatting of text. Our
-        tools operate primarily within your browser and may remove formatting inconsistencies, spacing issues, invisible characters, or
-        similar artifacts.
-      </p>
-      <p>The Service is provided &quot;as is&quot; and &quot;as available.&quot;</p>
+      <h2>{t('TermsPage.section2Title')}</h2>
+      <p>{t('TermsPage.section2Text1')}</p>
+      <p>{t('TermsPage.section2Text2')}</p>
 
-      <h2>3. Permitted Use</h2>
-      <p>You agree to use the Service only for lawful, ethical purposes.</p>
-      <p>You may not:</p>
+      <h2>{t('TermsPage.section3Title')}</h2>
+      <p>{t('TermsPage.section3Text1')}</p>
+      <p>{t('TermsPage.section3Text2')}</p>
       <ul>
-        <li>violate any applicable laws or regulations</li>
-        <li>use the Service to engage in academic dishonesty or plagiarism</li>
-        <li>use the Service to misrepresent authorship or source of work</li>
-        <li>attempt to interfere with the functionality or security of the Service</li>
-        <li>use any automated tools (bots, scrapers, crawlers) to access or extract data</li>
-        <li>attempt to reverse engineer, copy, or exploit the Service in unfair or harmful ways</li>
+        <li>{t('TermsPage.section3Item1')}</li>
+        <li>{t('TermsPage.section3Item2')}</li>
+        <li>{t('TermsPage.section3Item3')}</li>
+        <li>{t('TermsPage.section3Item4')}</li>
+        <li>{t('TermsPage.section3Item5')}</li>
+        <li>{t('TermsPage.section3Item6')}</li>
       </ul>
 
       <h2>4. User Content</h2>

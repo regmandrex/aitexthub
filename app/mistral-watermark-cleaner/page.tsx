@@ -9,6 +9,8 @@ import { siteUrl } from "../../lib/schema/site";
 import { RelatedTools } from "../../components/tool/RelatedTools";
 import AdSenseSlot from "../../components/ads/AdSenseSlot";
 import BelowToolAd from "../../components/ads/BelowToolAd";
+import { getServerLocale } from '../../lib/server-i18n';
+import { createServerT } from '../../lib/server-t';
 
 function RailAd({ side }: { side: 'left' | 'right' }) {
   const sideClass = side === 'left' ? 'left-4' : 'right-4';
@@ -193,12 +195,16 @@ const faqs: FaqItem[] = [
   },
 ];
 
-export const metadata = buildMeta({
-  title: 'Mistral Watermark Cleaner - Remove Hidden Characters from Mistral AI Text',
-  description:
-    'Remove hidden characters and watermarks from Mistral output. Strip zero-width/NBSP Unicode, fix spacing, and prepare clean text for Word, Docs, and CMS.',
-  urlPath: '/mistral-watermark-cleaner',
-});
+export async function generateMetadata() {
+  const { locale } = await getServerLocale();
+  const t = await createServerT(locale);
+  
+  return buildMeta({
+    title: t('Tools.mistral-watermark-cleaner.seoTitle') || t('Tools.mistral-watermark-cleaner.title'),
+    description: t('Tools.mistral-watermark-cleaner.description'),
+    urlPath: '/mistral-watermark-cleaner',
+  });
+}
 
 const pageFaqs = faqs.map((item) => ({
   ...item,
@@ -206,25 +212,26 @@ const pageFaqs = faqs.map((item) => ({
   answer: item.answer.replace(/Mistral/g, 'Mistral'),
 }));
 
-export default function MistralWatermarkCleanerPage() {
+export default async function MistralWatermarkCleanerPage() {
+  const { locale } = await getServerLocale();
+  const t = await createServerT(locale);
+  
   return (
     <div className="relative min-h-screen bg-[#f7f9ff]">
       <JsonLd
         data={webPageSchema({
-          name: 'Mistral Watermark Cleaner',
+          name: t('Tools.mistral-watermark-cleaner.title'),
           url: `${siteUrl}/mistral-watermark-cleaner/`,
-          description:
-            'Remove hidden characters and watermarks from Mistral output. Strip zero-width/NBSP Unicode, fix spacing, and prepare clean text for Word, Docs, and CMS.',
+          description: t('Tools.mistral-watermark-cleaner.description'),
         })}
       />
       <RailAd side="right" />
 
       <div className="mx-auto w-full max-w-4xl px-4 py-10">
         <section className="space-y-3 text-center">
-          <h1 className="text-2xl font-semibold text-slate-900 md:text-3xl">Mistral Watermark Cleaner</h1>
+          <h1 className="text-2xl font-semibold text-slate-900 md:text-3xl">{t('Tools.mistral-watermark-cleaner.title')}</h1>
           <p className="max-w-2xl mx-auto text-sm text-slate-700 md:text-[15px]">
-            Remove hidden characters and watermarks from Mistral outputs. Keep paragraphs intact and prepare clean, editor-safe text for Word,
-            Docs, and SEO-friendly publishing.
+            {t('MistralWatermarkCleanerPage.subtitle') || 'Remove hidden characters and watermarks from Mistral outputs. Keep paragraphs intact and prepare clean, editor-safe text for Word, Docs, and SEO-friendly publishing.'}
           </p>
         </section>
 
@@ -232,11 +239,11 @@ export default function MistralWatermarkCleanerPage() {
           <div className="w-full max-w-none rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6">
             <ToolWorkbench
               processor="chatgptTextCleaner"
-              primaryLabel="Clean Text"
-              inputLabel="Paste your Mistral AI text"
-              outputLabel="Clean result"
-              inputPlaceholder="Paste text from Mistral..."
-              outputPlaceholder="Your cleaned text will appear here."
+              primaryLabel={t('ToolUI.clean') || t('HomePage.cleanPrimary')}
+              inputLabel={t('MistralWatermarkCleanerPage.inputLabel') || 'Paste your Mistral AI text'}
+              outputLabel={t('HomePage.cleanOutputLabel')}
+              inputPlaceholder={t('MistralWatermarkCleanerPage.inputPlaceholder') || 'Paste text from Mistral...'}
+              outputPlaceholder={t('ToolUI.outputPlaceholder')}
             />
           </div>
         </section>

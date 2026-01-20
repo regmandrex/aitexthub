@@ -3,6 +3,8 @@ import { buildArticleMeta } from '@/lib/seo-meta';
 import { JsonLd } from '@/components/JsonLd';
 import { blogPostingSchema } from '@/lib/schema/blog';
 import AdSenseSlot from '../../../components/ads/AdSenseSlot';
+import { getServerLocale } from '@/lib/server-i18n';
+import type { Metadata } from 'next';
 
 const urlPath = '/blog/chatgpt-text-to-wordpress-cleanest-copy-paste-workflow';
 const title = 'ChatGPT Text to WordPress: Cleanest Copy-Paste Workflow (SEO-Safe & Performance-Optimized) | GPT CLEAN UP';
@@ -10,11 +12,15 @@ const headline = 'ChatGPT Text to WordPress: The Cleanest Copy-Paste Workflow (S
 const description =
   'A reliable workflow to move ChatGPT text into WordPress without broken blocks, invisible Unicode, spacing issues, or Core Web Vitals regressions.';
 
-export const metadata = buildArticleMeta({
-  title,
-  description,
-  urlPath,
-});
+export async function generateMetadata(): Promise<Metadata> {
+  const { locale } = await getServerLocale();
+  return buildArticleMeta({
+    title,
+    description,
+    urlPath,
+    locale,
+  });
+}
 
 export default function ChatGPTTextToWordPressWorkflowPage() {
   return (

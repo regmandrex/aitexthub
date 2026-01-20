@@ -1,17 +1,10 @@
 "use client";
 
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import ToolTextArea from './ToolTextArea';
+import { useI18n } from '@/lib/client-i18n';
 
 type CaseMode = 'upper' | 'lower' | 'title' | 'sentence' | 'toggle';
-
-const CASE_OPTIONS: Array<{ value: CaseMode; label: string }> = [
-  { value: 'upper', label: 'Uppercase' },
-  { value: 'lower', label: 'Lowercase' },
-  { value: 'title', label: 'Title Case' },
-  { value: 'sentence', label: 'Sentence case' },
-  { value: 'toggle', label: 'Toggle Case' },
-];
 
 function toTitleCase(text: string) {
   return text.replace(/\S+/g, (word) => `${word.charAt(0).toUpperCase()}${word.slice(1).toLowerCase()}`);
@@ -38,9 +31,18 @@ function toggleCase(text: string) {
 }
 
 export function CaseConverterTool() {
+  const { t } = useI18n();
   const [input, setInput] = useState('');
   const [output, setOutput] = useState('');
   const [mode, setMode] = useState<CaseMode>('upper');
+
+  const CASE_OPTIONS: Array<{ value: CaseMode; label: string }> = useMemo(() => [
+    { value: 'upper', label: t('CaseConverterPage.ui.caseOptions.upper') },
+    { value: 'lower', label: t('CaseConverterPage.ui.caseOptions.lower') },
+    { value: 'title', label: t('CaseConverterPage.ui.caseOptions.title') },
+    { value: 'sentence', label: t('CaseConverterPage.ui.caseOptions.sentence') },
+    { value: 'toggle', label: t('CaseConverterPage.ui.caseOptions.toggle') },
+  ], [t]);
 
   const handleConvert = () => {
     let result = input;
@@ -79,17 +81,17 @@ export function CaseConverterTool() {
     <div className="space-y-4">
       <div className="grid gap-4 md:grid-cols-2">
         <ToolTextArea
-          label="Input text"
+          label={t('CaseConverterPage.ui.inputLabel')}
           value={input}
           onChange={setInput}
-          placeholder="Paste text to convert..."
+          placeholder={t('CaseConverterPage.ui.inputPlaceholder')}
           rows={12}
         />
         <ToolTextArea
-          label="Output"
+          label={t('CaseConverterPage.ui.outputLabel')}
           value={output}
           onChange={setOutput}
-          placeholder="Converted text will appear here."
+          placeholder={t('CaseConverterPage.ui.outputPlaceholder')}
           rows={12}
           readOnly
         />
@@ -97,7 +99,7 @@ export function CaseConverterTool() {
 
       <div className="flex flex-wrap items-center gap-3">
         <label className="text-sm font-semibold text-slate-700" htmlFor="case-mode">
-          Conversion
+          {t('CaseConverterPage.ui.conversionLabel')}
         </label>
         <select
           id="case-mode"
@@ -119,21 +121,21 @@ export function CaseConverterTool() {
           onClick={handleConvert}
           className="inline-flex items-center justify-center rounded-lg bg-brand-700 px-4 py-2 text-sm font-semibold text-white shadow hover:bg-brand-800"
         >
-          Convert case
+          {t('CaseConverterPage.ui.convertButton')}
         </button>
         <button
           type="button"
           onClick={handleCopy}
           className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
         >
-          Copy
+          {t('CaseConverterPage.ui.copyButton')}
         </button>
         <button
           type="button"
           onClick={handleClear}
           className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
         >
-          Clear
+          {t('CaseConverterPage.ui.clearButton')}
         </button>
       </div>
     </div>

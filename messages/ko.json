@@ -1,0 +1,1318 @@
+{
+  "Nav": {
+    "home": "홈",
+    "tools": "무료 AI 도구",
+    "blog": "블로그",
+    "language": "언어"
+  },
+  "Common": {
+    "language": "언어"
+  },
+  "AllTools": {
+    "title": "전체 도구",
+    "subtitle": "카테고리별로 정리된 GPT CLEAN UP Tools 모음을 둘러보고 필요한 유틸리티를 빠르게 찾으세요.",
+    "seoTitle": "전체 도구 | GPT CLEAN UP",
+    "seoDescription": "카테고리별로 정리된 GPT CLEAN UP Tools 모음 - AI 텍스트 정리, 워터마크 제거, 포맷팅 도구 등. 필요한 유틸리티를 빠르게 찾으세요."
+  },
+  "ToolUI": {
+    "inputText": "입력 텍스트",
+    "output": "출력",
+    "copy": "복사",
+    "clear": "지우기",
+    "yes": "예",
+    "no": "아니요"
+  },
+  "Tools": {
+    "home": {
+      "title": "ChatGPT 텍스트 정리기",
+      "description": "숨겨진 Unicode를 제거하고 간격을 수정하여 AI 텍스트를 정리하고 정규화합니다."
+    },
+    "space-remover": {
+      "title": "Eliminador de espacios",
+      "description": "Elimina espacios extra, recorta líneas y normaliza los espacios en blanco para un texto limpio y listo para pegar."
+    },
+    "ai-space-remover": {
+      "title": "Eliminador de espacios de IA",
+      "description": "Elimina espacios extra, Unicode oculto y espacios irregulares del texto generado por IA."
+    },
+    "case-converter": {
+      "title": "Convertidor de mayúsculas y minúsculas",
+      "description": "Convierte texto a MAYÚSCULAS, minúsculas, Título o frase.",
+      "seoTitle": "Convertidor de mayúsculas y minúsculas - MAYÚSCULAS, minúsculas, Título y frase"
+    },
+    "em-dash-remover": {
+      "title": "Eliminador / reemplazador de guiones largos",
+      "description": "Elimina o reemplaza guiones largos (—) y guiones cortos (–) con el espaciado que prefieras.",
+      "seoTitle": "Eliminador de guiones largos - Reemplaza o elimina guiones — y –"
+    },
+    "find-and-replace": {
+      "title": "Buscar y reemplazar",
+      "description": "Busca texto y reemplázalo por valores personalizados, con coincidencia opcional de mayúsculas/minúsculas.",
+      "seoTitle": "Herramienta de buscar y reemplazar - Reemplazo masivo de texto online"
+    },
+    "invisible-character-detector": {
+      "title": "Detector de caracteres invisibles",
+      "description": "Detecta caracteres Unicode ocultos y muestra dónde aparecen en tu texto.",
+      "seoTitle": "Detector de caracteres invisibles - Encuentra Unicode oculto"
+    },
+    "remove-duplicate-lines": {
+      "title": "Eliminar líneas duplicadas",
+      "description": "Elimina líneas duplicadas manteniendo el orden original.",
+      "seoTitle": "Eliminar líneas duplicadas - Borra texto duplicado"
+    },
+    "remove-line-breaks": {
+      "title": "Eliminar saltos de línea",
+      "description": "Une líneas envueltas en párrafos limpios eliminando saltos de línea.",
+      "seoTitle": "Eliminar saltos de línea - Unir líneas en párrafos"
+    },
+    "strip-html": {
+      "title": "Eliminar HTML",
+      "description": "Elimina etiquetas HTML y devuelve texto plano limpio.",
+      "seoTitle": "Eliminar etiquetas HTML - Convertir HTML a texto plano gratis"
+    },
+    "url-encoder-decoder": {
+      "title": "Codificador / decodificador de URL",
+      "description": "Codifica o decodifica URLs, cadenas de consulta y fragmentos de texto.",
+      "seoTitle": "Codificador y decodificador de URL - Codifica o decodifica URLs"
+    },
+    "word-counter": {
+      "title": "Contador de palabras",
+      "description": "Cuenta palabras, caracteres, líneas, frases y párrafos.",
+      "seoTitle": "Contador de palabras - Cuenta palabras, caracteres y líneas"
+    },
+    "zero-width-space-remover": {
+      "title": "Eliminador de espacios de ancho cero",
+      "description": "Elimina espacios de ancho cero y caracteres Unicode invisibles.",
+      "seoTitle": "Eliminador de espacios de ancho cero - Quita Unicode invisible"
+    },
+    "hex-to-binary": {
+      "title": "Convertidor de HEX a binario",
+      "description": "Convierte cadenas hexadecimales a binario con opciones de formato.",
+      "seoTitle": "Convertidor de HEX a binario - Herramienta rápida de HEX a binario"
+    },
+    "random-hex-generator": {
+      "title": "Generador de HEX aleatorio",
+      "description": "Genera cadenas hexadecimales aleatorias con controles de longitud y formato.",
+      "seoTitle": "Generador de HEX aleatorio - Cadenas HEX aleatorias"
+    },
+    "morse-code-translator": {
+      "title": "Traductor de código Morse",
+      "description": "Traduce texto a código Morse o decodifica Morse a texto.",
+      "seoTitle": "Traductor de código Morse - Codifica y decodifica Morse"
+    },
+    "idn-encode": {
+      "title": "Codificar IDN",
+      "description": "Convierte dominios internacionales a ASCII (Punycode).",
+      "seoTitle": "Codificar IDN - Convertir dominios internacionales a Punycode"
+    },
+    "idn-decode": {
+      "title": "Decodificar IDN",
+      "description": "Convierte dominios Punycode a Unicode legible.",
+      "seoTitle": "Decodificar IDN - Convertir Punycode a Unicode"
+    },
+    "utf8-encode": {
+      "title": "Codificar UTF-8",
+      "description": "Codifica texto en bytes UTF-8 para un transporte fiable.",
+      "seoTitle": "Codificar UTF-8 - Convertir texto a bytes UTF-8"
+    },
+    "utf8-decode": {
+      "title": "Decodificar UTF-8",
+      "description": "Decodifica valores de bytes UTF-8 a texto legible.",
+      "seoTitle": "Decodificar UTF-8 - Convertir bytes UTF-8 a texto"
+    },
+    "url-encode": {
+      "title": "Codificar URL",
+      "description": "Codifica texto de URL y valores de consulta en cadenas seguras con percent-encoding.",
+      "seoTitle": "Codificar URL - Percent-encoding para URLs y texto"
+    },
+    "url-decode": {
+      "title": "Decodificar URL",
+      "description": "Decodifica URLs y cadenas de consulta con percent-encoding a texto legible.",
+      "seoTitle": "Decodificar URL - Convertir URLs codificadas a texto"
+    },
+    "base64-encode": {
+      "title": "Codificar Base64",
+      "description": "Convierte texto a Base64 para un transporte seguro en apps y configuraciones.",
+      "seoTitle": "Codificar Base64 - Convertir texto a cadenas Base64"
+    },
+    "base64-decode": {
+      "title": "Decodificar Base64",
+      "description": "Decodifica cadenas Base64 a texto legible con soporte UTF-8.",
+      "seoTitle": "Decodificar Base64 - Convertir Base64 a texto"
+    },
+    "html-entities-to-text": {
+      "title": "Convertidor de entidades HTML a texto",
+      "description": "Decodifica entidades HTML como &amp; y &#169; a texto legible.",
+      "seoTitle": "Entidades HTML a texto - Decodificar entidades HTML"
+    },
+    "text-to-html-entities": {
+      "title": "Convertidor de texto a entidades HTML",
+      "description": "Codifica texto en entidades HTML para un marcado seguro.",
+      "seoTitle": "Texto a entidades HTML - Codificar entidades HTML"
+    },
+    "morse-code-generator": {
+      "title": "Generador de código Morse",
+      "description": "Convierte texto en código Morse limpio con barras o espacios, listo para aprender, practicar o señalizar."
+    },
+    "korean-nickname-generator": {
+      "title": "Generador de apodos coreanos",
+      "description": "Genera 20 apodos a partir de un nombre y rasgos. Estilos lindo, genial, divertido, emotivo y más. Funciona localmente en tu navegador."
+    },
+    "chatgpt-space-remover": {
+      "title": "Eliminador de espacios de ChatGPT",
+      "description": "Elimina espacios extra y líneas en blanco del texto de ChatGPT con un solo clic."
+    },
+    "chatgpt-line-spacing": {
+      "title": "Herramienta de interlineado para ChatGPT",
+      "description": "Ajusta el interlineado del texto de ChatGPT a sencillo, 1.5, doble o personalizado para un formato profesional."
+    },
+    "chatgpt-watermark-remover": {
+      "title": "Eliminador de marcas de agua de ChatGPT",
+      "description": "Elimina caracteres ocultos y artefactos de formato del texto de ChatGPT."
+    },
+    "ai-watermark-remover": {
+      "title": "Eliminador de marcas de agua de IA",
+      "description": "Limpia artefactos de formato, normaliza Unicode y deja el texto de IA listo para publicar."
+    },
+    "gemini-space-remover": {
+      "title": "Eliminador de espacios de Gemini",
+      "description": "Limpia espacios extra y líneas en blanco del texto de Google Gemini."
+    },
+    "gemini-watermark-cleaner": {
+      "title": "Limpiador de marcas de agua de Gemini",
+      "description": "Elimina marcas de agua ocultas y Unicode invisible del texto de Gemini."
+    },
+    "grok-watermark-cleaner": {
+      "title": "Limpiador de marcas de agua de Grok",
+      "description": "Elimina marcas de agua ocultas y Unicode invisible del texto de Grok."
+    },
+    "deepseek-watermark-cleaner": {
+      "title": "Limpiador de marcas de agua de DeepSeek",
+      "description": "Elimina marcas de agua ocultas y Unicode invisible del texto de DeepSeek."
+    },
+    "claude-watermark-cleaner": {
+      "title": "Limpiador de marcas de agua de Claude",
+      "description": "Elimina marcas de agua ocultas y Unicode invisible del texto de Claude."
+    },
+    "llama-watermark-cleaner": {
+      "title": "Limpiador de marcas de agua de LLAMA",
+      "description": "Elimina marcas de agua ocultas y Unicode invisible del texto de LLAMA."
+    },
+    "perplexity-watermark-cleaner": {
+      "title": "Limpiador de marcas de agua de Perplexity",
+      "description": "Elimina marcas de agua ocultas y Unicode invisible del texto de Perplexity."
+    },
+    "grok-space-remover": {
+      "title": "Eliminador de espacios de Grok",
+      "description": "Limpia espacios extra y normaliza el texto de Grok para pegarlo fácilmente."
+    },
+    "deepseek-space-remover": {
+      "title": "Eliminador de espacios de DeepSeek",
+      "description": "Agrupa espacios en blanco extra en respuestas de DeepSeek manteniendo el significado."
+    },
+    "llama-space-remover": {
+      "title": "Eliminador de espacios de LLAMA",
+      "description": "Limpia texto de LLAMA (Meta AI) recortando líneas y estabilizando el espaciado."
+    },
+    "perplexity-space-remover": {
+      "title": "Eliminador de espacios de Perplexity",
+      "description": "Corrige el espaciado y espacios ocultos en respuestas de Perplexity."
+    },
+    "mistral-space-remover": {
+      "title": "Eliminador de espacios de Mistral",
+      "description": "Normaliza los espacios en blanco en texto generado por Mistral."
+    },
+    "mistral-watermark-cleaner": {
+      "title": "Limpiador de marcas de agua de Mistral",
+      "description": "Elimina marcas de agua ocultas y Unicode invisible del texto de Mistral."
+    },
+    "claude-space-remover": {
+      "title": "Eliminador de espacios de Claude",
+      "description": "Recorta, agrupa y normaliza espacios en respuestas de Claude."
+    },
+    "chatgpt-watermark-detector": {
+      "title": "Detector de marcas de agua de ChatGPT",
+      "description": "Inspecciona texto de ChatGPT en busca de posibles artefactos de formato y Unicode oculto."
+    },
+    "ai-watermark-detector": {
+      "title": "Detector de marcas de agua de IA",
+      "description": "Analiza texto en busca de Unicode oculto, patrones de espacios y señales estructurales."
+    },
+    "grok-watermark-detector": {
+      "title": "Detector de marcas de agua de Grok",
+      "description": "Analiza texto de Grok en busca de posibles artefactos y anomalías de espaciado."
+    },
+    "deepseek-watermark-detector": {
+      "title": "Detector de marcas de agua de DeepSeek",
+      "description": "Escanea texto de DeepSeek en busca de señales de formato tipo “marca de agua”."
+    },
+    "llama-watermark-detector": {
+      "title": "Detector de marcas de agua de LLAMA",
+      "description": "Revisa texto de LLAMA (Meta AI) para detectar Unicode oculto y patrones de espacios."
+    },
+    "perplexity-watermark-detector": {
+      "title": "Detector de marcas de agua de Perplexity",
+      "description": "Muestra posibles artefactos de formato en texto de Perplexity."
+    },
+    "gemini-watermark-detector": {
+      "title": "Detector de marcas de agua de Gemini",
+      "description": "Inspecciona texto de Gemini en busca de caracteres ocultos y señales de espacios."
+    },
+    "mistral-watermark-detector": {
+      "title": "Detector de marcas de agua de Mistral",
+      "description": "Identifica posibles patrones de formato en texto generado por Mistral."
+    },
+    "claude-watermark-detector": {
+      "title": "Claude 워터마크 감지기",
+      "description": "Claude 텍스트에서 숨겨진 Unicode 및 간격 아티팩트를 분석합니다."
+    },
+    "chatgpt-detector": {
+      "title": "ChatGPT 감지기",
+      "description": "AI 생성 콘텐츠를 감지하고 텍스트가 ChatGPT 또는 기타 AI 모델로 생성되었는지 확인합니다."
+    },
+    "chatgpt-humanizer": {
+      "title": "ChatGPT 휴머나이저",
+      "description": "ChatGPT 텍스트를 휴머나이즈하여 더 자연스럽고 인간이 작성한 것처럼 들리게 합니다."
+    },
+    "chatgpt-gptzero-checker": {
+      "title": "ChatGPT GPTZero 검사기",
+      "description": "텍스트가 GPTZero AI 감지 도구에 의해 감지될지 확인합니다."
+    },
+    "chatgpt-turnitin-checker": {
+      "title": "ChatGPT Turnitin 검사기",
+      "description": "ChatGPT로 생성된 콘텐츠가 Turnitin 표절 감지를 통과할지 확인합니다."
+    },
+    "chatgpt-originality-checker": {
+      "title": "ChatGPT 독창성 검사기",
+      "description": "ChatGPT로 생성된 콘텐츠의 독창성과 진정성을 확인합니다."
+    },
+    "chatgpt-copyleaks-checker": {
+      "title": "ChatGPT Copyleaks 검사기",
+      "description": "ChatGPT 콘텐츠가 Copyleaks AI 감지에 의해 감지될지 확인합니다."
+    },
+    "chatgpt-paraphraser": {
+      "title": "ChatGPT 패러프레이저",
+      "description": "의미를 유지하면서 ChatGPT로 생성된 텍스트를 패러프레이즈하고 재구성합니다."
+    },
+    "chatgpt-sentence-rewriter": {
+      "title": "ChatGPT 문장 재작성기",
+      "description": "ChatGPT 출력의 문장을 재작성하여 명확성과 스타일을 개선합니다."
+    },
+    "chatgpt-paragraph-rewriter": {
+      "title": "ChatGPT 단락 재작성기",
+      "description": "ChatGPT의 전체 단락을 재작성하여 흐름과 가독성을 향상시킵니다."
+    },
+    "chatgpt-essay-rewriter": {
+      "title": "ChatGPT 에세이 재작성기",
+      "description": "ChatGPT 에세이를 재작성하여 품질, 구조 및 학술적 톤을 개선합니다."
+    },
+    "chatgpt-grammar-checker": {
+      "title": "ChatGPT 문법 검사기",
+      "description": "ChatGPT로 생성된 텍스트의 문법 오류를 확인하고 수정합니다."
+    },
+    "chatgpt-readability-checker": {
+      "title": "ChatGPT 가독성 검사기",
+      "description": "ChatGPT 출력의 가독성 점수를 분석하고 텍스트 명확성을 개선합니다."
+    },
+    "chatgpt-tone-analyzer": {
+      "title": "ChatGPT 톤 분석기",
+      "description": "ChatGPT로 생성된 콘텐츠의 톤과 감정을 분석합니다."
+    },
+    "chatgpt-style-analyzer": {
+      "title": "ChatGPT 스타일 분석기",
+      "description": "ChatGPT로 생성된 텍스트의 작성 스타일과 일관성을 분석합니다."
+    },
+    "chatgpt-passive-voice-fixer": {
+      "title": "ChatGPT 수동태 수정기",
+      "description": "ChatGPT로 생성된 콘텐츠의 수동태를 능동태로 변환합니다."
+    },
+    "chatgpt-essay-checker": {
+      "title": "ChatGPT 에세이 검사기",
+      "description": "ChatGPT로 생성된 에세이의 품질, 구조 및 오류를 확인합니다."
+    },
+    "chatgpt-thesis-checker": {
+      "title": "ChatGPT 논문 검사기",
+      "description": "ChatGPT로 생성된 학술 콘텐츠의 논문 진술과 논증을 확인합니다."
+    },
+    "chatgpt-research-paper-checker": {
+      "title": "ChatGPT 연구 논문 검사기",
+      "description": "ChatGPT로 생성된 연구 논문이 학술 기준을 충족하는지 확인합니다."
+    },
+    "chatgpt-assignment-checker": {
+      "title": "ChatGPT 과제 검사기",
+      "description": "ChatGPT로 생성된 과제의 품질과 준수를 확인합니다."
+    },
+    "chatgpt-academic-humanizer": {
+      "title": "ChatGPT 학술 휴머나이저",
+      "description": "품질을 유지하면서 AI 감지를 통과하도록 ChatGPT 학술 콘텐츠를 휴머나이즈합니다."
+    },
+    "chatgpt-blog-post-validator": {
+      "title": "ChatGPT 블로그 게시물 검증기",
+      "description": "SEO 및 가독성을 위해 ChatGPT로 생성된 블로그 게시물을 검증하고 개선합니다."
+    },
+    "chatgpt-product-description-improver": {
+      "title": "ChatGPT 제품 설명 개선기",
+      "description": "더 나은 판매 전환을 위해 ChatGPT로 생성된 제품 설명을 개선합니다."
+    },
+    "chatgpt-meta-description-generator": {
+      "title": "ChatGPT 메타 설명 생성기",
+      "description": "ChatGPT 콘텐츠에서 SEO 최적화된 메타 설명을 생성합니다."
+    },
+    "chatgpt-title-tag-generator": {
+      "title": "ChatGPT 제목 태그 생성기",
+      "description": "ChatGPT로 생성된 콘텐츠에서 SEO 최적화된 제목 태그를 생성합니다."
+    },
+    "chatgpt-alt-text-generator": {
+      "title": "ChatGPT 대체 텍스트 생성기",
+      "description": "ChatGPT 설명에서 이미지에 대한 접근 가능한 대체 텍스트를 생성합니다."
+    },
+    "chatgpt-email-humanizer": {
+      "title": "ChatGPT 이메일 휴머나이저",
+      "description": "ChatGPT로 생성된 이메일을 휴머나이즈하여 더 개인적이고 자연스럽게 들리게 합니다."
+    },
+    "chatgpt-cover-letter-humanizer": {
+      "title": "ChatGPT 자기소개서 휴머나이저",
+      "description": "ChatGPT 자기소개서를 휴머나이즈하여 더 진정하고 개인적으로 만듭니다."
+    },
+    "chatgpt-resume-humanizer": {
+      "title": "ChatGPT 이력서 휴머나이저",
+      "description": "ChatGPT 이력서 콘텐츠를 휴머나이즈하여 더 자연스럽고 ATS 친화적으로 만듭니다."
+    },
+    "chatgpt-linkedin-rewriter": {
+      "title": "ChatGPT LinkedIn 재작성기",
+      "description": "참여도와 진정성을 향상시키기 위해 LinkedIn용 ChatGPT 콘텐츠를 재작성합니다."
+    },
+    "chatgpt-press-release-polisher": {
+      "title": "ChatGPT 보도 자료 다듬기 도구",
+      "description": "전문 출판을 위해 ChatGPT로 생성된 보도 자료를 다듬고 개선합니다."
+    },
+    "text-to-morse-code": {
+      "title": "Convertidor de texto a código Morse",
+      "description": "Convierte texto a código Morse con codificación ITU estándar. Rápido, preciso y respetuoso con la privacidad."
+    },
+    "combination-generator": {
+      "title": "조합 생성기",
+      "description": "항목 집합에서 가능한 모든 조합을 생성합니다. 조합에서 순서는 중요하지 않습니다."
+    },
+    "line-combination-generator": {
+      "title": "줄 조합 생성기",
+      "description": "텍스트의 줄에서 가능한 모든 조합을 생성합니다. 출력에서 줄바꿈을 유지합니다."
+    },
+    "permutation-generator": {
+      "title": "순열 생성기",
+      "description": "순서가 중요한 모든 가능한 순열을 생성합니다. 항목의 순서가 있는 배열을 만듭니다."
+    },
+    "extract-numbers-from-text": {
+      "title": "Extraer números del texto",
+      "description": "Extrae todos los números del texto, incluidos enteros y decimales. Opciones de orden, unicidad y separadores."
+    },
+    "text-to-hex": {
+      "title": "Convertidor de texto a HEX",
+      "description": "Convierte caracteres de texto a representación hexadecimal. Soporta UTF-8 con opciones de mayúsculas/minúsculas y espaciado."
+    }
+  },
+  "RemoveLineBreaksPage": {
+    "ui": {
+      "inputLabel": "입력 텍스트",
+      "inputPlaceholder": "줄바꿈이 있는 텍스트 붙여넣기...",
+      "outputLabel": "출력",
+      "outputPlaceholder": "결합된 텍스트가 여기에 표시됩니다.",
+      "preserveParagraphs": "단락 줄바꿈 유지",
+      "replaceWithSpace": "줄바꿈을 공백으로 교체",
+      "collapseSpaces": "추가 공백 축소",
+      "removeButton": "줄바꿈 제거",
+      "copyButton": "복사",
+      "clearButton": "지우기"
+    },
+    "writeUp": {
+      "title": "텍스트에서 줄바꿈 제거 - 온라인 줄 결합 도구",
+      "introductionTitle": "소개",
+      "introductionP1": "줄바꿈 제거는 의도가 아닌 레이아웃에 의해 줄바꿈된 텍스트에 대한 포맷팅 단계입니다. PDF, 이메일 클라이언트 또는 좁은 열에서 복사할 때 각 시각적 줄 끝에 줄바꿈이 삽입됩니다. 결과는 문서나 콘텐츠 편집기에 붙여넣을 때 깨진 것처럼 보이는 텍스트 블록입니다. 단락처럼 흐르는 대신 각 줄이 일찍 끝나 편집과 읽기가 더 어려워집니다. 텍스트가 최종 목적지에 도달하기 전에 종종 여러 시스템을 거치기 때문에 이것은 현대 워크플로우에서 흔한 문제입니다.",
+      "introductionP2": "많은 경우 줄바꿈은 텍스트를 다른 곳에 붙여넣을 때까지 문제로 보이지 않습니다. PDF 뷰어는 페이지 너비에서 줄바꿈된 줄을 표시할 수 있지만, 복사된 텍스트는 각 줄 뒤에 줄바꿈 문자가 포함됩니다. 이메일 클라이언트는 호환성을 위해 때때로 72자에서 줄바꿈하여 단일 단락을 수십 개의 짧은 줄로 만듭니다. 해당 텍스트가 CMS로 이동하면 들쭉날쭉한 줄바꿈과 예상치 못한 간격이 생성됩니다. 문제는 콘텐츠 문제가 아닌 레이아웃 아티팩트이므로 전용 정리 단계가 매우 유용합니다.",
+      "introductionP3": "gptcleanuptools.com의 줄바꿈 제거 도구는 단어 자체를 변경하지 않고 이러한 줄바꿈을 정리하도록 설계되었습니다. 줄을 부드러운 단락으로 결합하고, 필요할 때 단락 경계를 유지하며, 출력이 깔끔하게 읽히도록 간격을 정규화합니다. 결정적이고 사용하기 쉬운 온라인 줄바꿈 제거 유틸리티가 필요하다면, 이 도구는 붙여넣은 텍스트에서 작동하는 집중된 솔루션을 제공합니다. 복잡한 편집기나 스크립팅 없이 포맷팅을 수정하는 데 도움이 된다는 의미에서 무료 줄바꿈 제거 도구입니다.",
+      "introductionP4": "일반적인 사용 사례에는 PDF에서 복사한 텍스트 정리, 웹 페이지용 이메일 콘텐츠 준비, 또는 하드 줄바꿈된 보고서를 읽을 수 있는 초안으로 변환하는 것이 포함됩니다. 메타데이터 설명이나 가져오기 양식과 같은 단일 단락 필드에 텍스트를 배치해야 할 때도 유용합니다. 이러한 시나리오에서 목표는 의미를 변경하는 것이 아니라 포맷팅 제약으로 인해 도입된 줄바꿈을 제거하는 것입니다.",
+      "whatIsTitle": "줄바꿈 제거란 무엇인가요?",
+      "whatIsP1": "줄바꿈 제거는 제공한 텍스트에서 줄바꿈 문자를 제거하는 결정적 텍스트 포맷팅 도구입니다. 단어가 분리되도록 줄바꿈을 공백으로 교체하거나, 연속 문자열이 필요할 때 완전히 제거할 수 있습니다. 또한 단락 줄바꿈 유지를 지원하므로 각 단락 내의 줄을 결합하면서 단락 간 의도적인 빈 줄을 유지합니다.",
+      "whatIsP2": "소프트 줄바꿈과 하드 줄바꿈을 구별하는 것이 도움이 됩니다. 소프트 줄바꿈은 편집기에서만 시각적 중단이며 기본 텍스트에는 존재하지 않습니다. 하드 줄바꿈은 텍스트에 포함된 실제 줄바꿈 문자입니다. 줄바꿈 제거 도구는 하드 줄바꿈을 제거하므로 복사된 콘텐츠에는 효과적이지만 이미 소프트 줄바꿈된 텍스트가 워드 프로세서에서 표시되는 방식은 변경하지 않습니다. 이 차이를 이해하면 PDF에서 붙여넣은 블록이 정리가 필요한 반면 문서에서 작성한 단락은 그렇지 않은 이유를 설명하는 데 도움이 됩니다.",
+      "whatIsP3": "도구는 다시 쓰거나 의역하지 않습니다. 의미나 스타일을 해석하지 않습니다. 단순히 줄바꿈과 간격에 명확하고 예측 가능한 규칙을 적용합니다. 이것은 콘텐츠 자체를 변경하지 않고 텍스트를 정리하는 신뢰할 수 있는 방법이 필요한 편집자, 학생 및 전문가에게 적합합니다. 입력에만 작동하고 브라우저에서 로컬로 실행되므로 출력이 일관되고 검토하기 쉽습니다.",
+      "whyMattersTitle": "이 도구가 중요한 이유",
+      "whyMattersP1": "줄바꿈은 종종 작성자가 아닌 레이아웃 엔진에 의해 삽입됩니다. PDF는 고정 너비에서 줄을 줄바꿈할 수 있고, 이메일 클라이언트는 좁은 열에 맞추기 위해 줄바꿈을 삽입할 수 있습니다. 해당 텍스트를 다른 환경에 붙여넣으면 이러한 줄바꿈이 남아 있고 텍스트가 끊어진 것처럼 보입니다. 이것은 편집을 느리게 하고, 검색 및 교체를 더 어렵게 만들며, 게시된 콘텐츠에서 포맷팅 오류를 생성할 수 있습니다.",
+      "whyMattersP2": "텍스트 줄바꿈 제거기는 줄을 자연스러운 흐름으로 결합하여 소스에서 문제를 수정합니다. 이것은 콘텐츠를 읽고, 인용하고, 재사용하기 쉽게 만듭니다. 또한 텍스트를 CMS나 보고서에 복사할 때 오류 위험을 줄입니다. 하드 줄바꿈된 줄 세트가 아닌 깨끗한 단락으로 작업하기 때문입니다. 팀의 경우 결정적 도구는 다양한 기여자 간에 일관된 결과를 제공하여 품질을 유지하고 수동 정리 시간을 줄이는 데 도움이 됩니다.",
+      "whyMattersP3": "줄바꿈은 검색, 번역 메모리, 자동 추출과 같은 다운스트림 프로세스에도 영향을 줄 수 있습니다. 문장이 줄에 걸쳐 분할되면 간단한 검색 쿼리가 실패하거나 부분 결과를 반환할 수 있습니다. 자동 가져오기 도구는 각 줄을 별도의 레코드로 해석할 수 있으며, 이는 데이터 파이프라인을 중단할 수 있습니다. 재사용하기 전에 줄바꿈을 정리하면 이러한 위험을 줄이고 텍스트를 인간과 기계 모두에게 더 일관되게 만듭니다. 동일한 텍스트가 여러 시스템에서 재사용될 때 이것은 특히 중요합니다.",
+      "whyMattersP4": "도구는 작지만 비용이 많이 드는 포맷팅 실수를 방지하는 데도 도움이 됩니다. 문장 내의 줄바꿈은 검색 쿼리를 중단하거나 문장이 템플릿에서 잘못 줄바꿈되도록 할 수 있습니다. 이러한 줄바꿈을 제거하면 텍스트를 다운스트림에서 더 쉽게 처리할 수 있는 상태로 유지합니다. 이것은 많은 워크플로우에서 텍스트의 신뢰성을 향상시키는 실용적이고 낮은 위험의 단계입니다.",
+      "howWorksTitle": "도구 작동 방식(단계별)",
+      "howWorksP1": "줄바꿈 제거 도구는 명확한 입력-출력 프로세스를 따릅니다. 외부 서비스나 복잡한 분석에 의존하지 않습니다. 각 단계는 결정적이고 반복 가능합니다.",
+      "howWorksInputTitle": "1) 입력",
+      "howWorksInputP1": "입력 상자에 텍스트를 붙여넣거나 입력합니다. 도구는 문서, 이메일 및 웹 페이지에서 복사한 콘텐츠를 포함하여 모든 일반 텍스트를 허용합니다. 다양한 운영 체제 스타일이 일관되게 처리되도록 줄 끝을 정규화합니다.",
+      "howWorksProcessingTitle": "2) 처리",
+      "howWorksProcessingP1": "단락 줄바꿈 유지가 활성화된 경우 도구는 빈 줄 시퀀스를 식별하고 단락 경계로 표시합니다. 그런 다음 나머지 줄바꿈을 제거합니다. 줄바꿈을 공백으로 교체하도록 선택하면 각 줄바꿈이 존재했던 위치에 단일 공백이 삽입됩니다. 교체하지 않도록 선택하면 줄바꿈이 완전히 제거됩니다.",
+      "howWorksProcessingP2": "추가 공백 축소가 활성화된 경우 도구는 반복되는 공백과 탭을 단일 공백으로 줄입니다. 이것은 PDF 추출이나 복사-붙여넣기에서 자주 발생하는 불규칙한 간격을 정리하는 데 도움이 됩니다.",
+      "howWorksProcessingP3": "이러한 옵션은 정리가 얼마나 공격적이어야 하는지 제어할 수 있게 해줍니다. 서술적 텍스트의 경우 단락을 유지하고 줄바꿈을 공백으로 교체하면 일반적으로 최상의 결과를 얻습니다. 단일 줄이 필요한 데이터 필드의 경우 모든 줄바꿈을 제거할 수 있습니다. 프로세스가 결정적이므로 다른 설정으로 도구를 여러 번 실행하고 출력을 비교할 수 있습니다. 결과는 브라우저나 시간에 의존하지 않으며, 텍스트와 선택한 옵션에만 의존합니다.",
+      "howWorksOutputTitle": "3) 출력",
+      "howWorksOutputP1": "출력이 정규화된 간격으로 깨끗한 단락으로 결과 영역에 나타납니다. 도구는 선행 및 후행 공백을 잘라 출력이 깔끔하게 시작되고 끝나도록 합니다. 문서, CMS 또는 부드러운 텍스트 블록이 필요한 모든 워크플로우에서 사용할 수 있도록 결과를 복사할 수 있습니다.",
+      "commonProblemsTitle": "이 도구가 해결하는 일반적인 문제",
+      "commonProblemsP1": "많은 텍스트 문제는 하드 줄바꿈과 일관성 없는 간격으로 인해 발생합니다. 줄바꿈 제거는 다양한 실용적인 문제를 해결합니다.",
+      "commonProblemsItem1": "PDF에서 복사한 텍스트가 전체 단락 대신 짧은 줄로 나타납니다.",
+      "commonProblemsItem2": "이메일 클라이언트가 고정 너비에서 줄바꿈을 삽입하여 초안 재사용이 어렵습니다.",
+      "commonProblemsItem3": "도구에서 내보낸 보고서에 열의 각 줄 뒤에 줄바꿈이 포함됩니다.",
+      "commonProblemsItem4": "복사-붙여넣기가 추가 공백과 탭을 추가하여 텍스트를 고르지 않게 만듭니다.",
+      "commonProblemsItem5": "CMS 필드는 단일 단락을 기대하지만 붙여넣은 텍스트에 하드 줄바꿈이 포함되어 있습니다.",
+      "commonProblemsItem6": "채팅 기록과 메모에 읽기 흐름을 방해하는 수동 줄바꿈이 포함되어 있습니다.",
+      "commonProblemsP2": "각 경우에 문제는 콘텐츠 자체가 아니라 소스에 의해 부과된 구조입니다. 줄바꿈 제거기는 구조를 수정하여 텍스트를 수동 재흐름 없이 편집하고 재사용할 수 있게 합니다.",
+      "commonProblemsP3": "예를 들어, 연구원이 저널 초록을 복사하고 각 줄바꿈이 보고서 템플릿에서 새 줄로 변환되는 것을 발견할 수 있습니다. 지원 담당자가 긴 이메일을 티켓에 붙여넣고 줄바꿈이 포맷팅을 깨는 것을 볼 수 있습니다. 줄바꿈을 제거하면 읽고, 응답하고, 보관하기 쉬운 단락 스타일을 복원합니다. 소스 레이아웃과 대상 레이아웃 간의 불일치가 핵심 문제이기 때문에 동일한 패턴이 많은 소스에서 나타납니다.",
+      "supportedSourcesTitle": "지원되는 텍스트 소스",
+      "supportedSourcesP1": "도구는 브라우저에 붙여넣을 수 있는 모든 텍스트에서 작동합니다. 특정 형식이 필요하지 않으며 소스에 의존하지 않습니다.",
+      "supportedSourcesWebTitle": "웹 페이지 및 CMS 초안",
+      "supportedSourcesWebP1": "웹 페이지에서 복사한 콘텐츠는 좁은 열이나 반응형 레이아웃에서 올 때 종종 하드 줄바꿈을 포함합니다. 이러한 줄바꿈을 제거하면 CMS나 문서 편집기에 붙여넣기 쉬운 깨끗한 단락이 생성됩니다.",
+      "supportedSourcesPdfTitle": "PDF 내보내기",
+      "supportedSourcesPdfP1": "PDF 복사-붙여넣기는 종종 각 시각적 줄 뒤에 줄바꿈을 초래합니다. 도구는 이러한 줄을 읽을 수 있는 단락으로 결합하고 PDF 추출이 남긴 추가 공백을 줄일 수 있습니다. 하드 줄바꿈된 PDF 텍스트에 대한 일반적인 수정입니다.",
+      "supportedSourcesWordTitle": "Word 문서",
+      "supportedSourcesWordP1": "워드 프로세서는 때때로 테이블, 열 또는 주석에서 텍스트를 복사할 때 줄바꿈을 삽입합니다. 도구는 단어를 변경하지 않고 이러한 줄바꿈을 제거하므로 텍스트를 다른 형식으로 이동해야 할 때 도움이 됩니다.",
+      "supportedSourcesSpreadsheetTitle": "스프레드시트 및 양식 내보내기",
+      "supportedSourcesSpreadsheetP1": "스프레드시트 및 양식 내보내기는 때때로 복사할 때 줄바꿈으로 변환되는 줄바꿈된 셀 콘텐츠를 포함합니다. 셀에 긴 메모나 주소가 포함된 경우 이것이 일반적입니다. 줄바꿈을 제거하면 필드 경계를 깨지 않고 다른 시스템으로 가져올 수 있는 단일 줄로 콘텐츠가 변환됩니다. 분석 전에 응답을 정규화해야 할 때도 도움이 됩니다.",
+      "supportedSourcesOcrTitle": "OCR 및 스캔된 텍스트",
+      "supportedSourcesOcrP1": "OCR 및 스캔된 문서는 소프트웨어가 문장 구조가 아닌 페이지 레이아웃을 따르기 때문에 종종 불규칙한 줄바꿈이 있는 텍스트를 생성합니다. 도구는 이러한 줄을 읽을 수 있는 단락으로 결합할 수 있습니다. OCR은 또한 추가 공백이나 누락된 문자를 도입할 수 있으므로 빠른 검토가 여전히 필요합니다. 줄바꿈 제거는 추가 정리 전에 좋은 첫 번째 단계입니다.",
+      "supportedSourcesEmailTitle": "이메일 및 지원 티켓",
+      "supportedSourcesEmailP1": "이메일 클라이언트는 종종 고정 너비에서 줄을 줄바꿈합니다. 지원 티켓 시스템은 또한 복사된 텍스트를 재사용하기 어렵게 만드는 줄바꿈을 삽입합니다. 도구는 보고서나 문서에서 더 깨끗한 재사용을 위해 단일 단락 흐름을 복원합니다.",
+      "supportedSourcesAiTitle": "AI 생성 초안",
+      "supportedSourcesAiP1": "AI 생성 초안은 때때로 수동 줄바꿈이나 복사된 포맷팅 아티팩트를 포함합니다. 이 도구는 AI 모델에 연결되지 않지만 붙여넣은 텍스트를 정리하여 편집 전에 포맷팅이 일관되도록 할 수 있습니다.",
+      "supportedSourcesCodeTitle": "코드 스니펫 및 로그",
+      "supportedSourcesCodeP1": "코드 주석이나 로그 메시지가 좁은 디스플레이에 의해 하드 줄바꿈될 때 줄바꿈을 제거하면 읽기 쉬워질 수 있습니다. 코드와 로그에서 줄바꿈이 종종 의미가 있으므로 주의하십시오. 도구는 구조화된 코드보다 서술적 텍스트에 가장 적합합니다.",
+      "whatNotDoTitle": "이 도구가 하지 않는 것",
+      "whatNotDoP1": "줄바꿈 제거는 포맷팅 유틸리티입니다. 출력이 예측 가능하고 안전하게 사용할 수 있도록 명확한 제한이 있습니다.",
+      "whatNotDoItem1": "텍스트를 다시 쓰거나, 의역하거나, 요약하지 않습니다.",
+      "whatNotDoItem2": "PDF에서 머리글, 바닥글 또는 페이지 번호를 제거하지 않습니다.",
+      "whatNotDoItem3": "줄 끝의 하이픈 연결을 수정하지 않습니다.",
+      "whatNotDoItem4": "목록, 테이블 또는 문서 구조를 자동으로 감지하지 않습니다.",
+      "whatNotDoItem5": "AI 모델이나 외부 서비스에 연결하지 않습니다.",
+      "whatNotDoP2": "구조적 편집이나 콘텐츠 다시 쓰기가 필요한 경우 다른 도구를 사용하십시오. 줄바꿈 제거는 의도적으로 범위가 좁아 결과가 일관되고 검증하기 쉽습니다.",
+      "privacyTitle": "개인정보 보호 및 보안",
+      "privacyP1": "도구는 브라우저에서 로컬로 텍스트를 처리합니다. 콘텐츠를 업로드하거나 서버에 저장하지 않습니다. 이것은 데이터를 세션 내에 유지하고 민감한 텍스트에 대한 노출을 줄입니다.",
+      "privacyP2": "로컬 처리에도 불구하고 기밀 데이터에 대한 조직 정책을 따르십시오. 민감한 문서로 작업하는 경우 브라우저 기반 도구가 요구 사항에 맞는지 확인하십시오. 도구는 계정을 생성하지 않고, 입력을 추적하지 않으며, 페이지를 닫은 후 출력을 보관하지 않습니다. 붙여넣고 복사하는 것을 제어합니다.",
+      "professionalUseCasesTitle": "전문 사용 사례",
+      "professionalUseCasesP1": "줄바꿈 정리는 텍스트가 다르게 줄바꿈하는 시스템 간에 이동하기 때문에 전문 역할에서 일반적입니다.",
+      "professionalUseCasesWritersTitle": "작가 및 편집자",
+      "professionalUseCasesWritersP1": "편집자는 종종 PDF나 이메일 스레드에서 복사한 초안을 받습니다. 줄바꿈을 제거하면 수동 포맷팅보다 콘텐츠에 집중할 수 있습니다. 또한 스타일 변경을 적용하고 출판용 초안을 준비하기 쉽게 만듭니다.",
+      "professionalUseCasesDevelopersTitle": "개발자 및 기술 팀",
+      "professionalUseCasesDevelopersP1": "기술 팀은 여러 소스에서 로그 메시지, 오류 설명 및 문서를 복사합니다. 깨끗한 단락은 분석하고 보고서에 포함하기 쉽습니다. 도구는 텍스트를 변경하지 않고 포맷팅 노이즈를 제거하는 데 도움이 됩니다.",
+      "professionalUseCasesOperationsTitle": "운영 및 지원",
+      "professionalUseCasesOperationsP1": "지원 팀은 종종 메모와 티켓 요약을 컴파일합니다. 하드 줄바꿈된 줄은 이러한 요약을 스캔하기 어렵게 만듭니다. 줄바꿈을 제거하면 지식 기반이나 상태 업데이트에 붙여넣을 수 있는 깨끗하고 공유 가능한 메모가 생성됩니다.",
+      "professionalUseCasesMarketingTitle": "마케팅 및 콘텐츠 운영",
+      "professionalUseCasesMarketingP1": "마케팅 팀은 종종 이메일 캠페인, 랜딩 페이지 및 내부 브리핑에서 카피를 재사용합니다. 해당 카피는 PDF, 슬라이드 및 공유 문서 간에 자주 이동합니다. 줄바꿈을 제거하면 텍스트가 최종 채널에서 올바르게 흐르고 재포맷팅 작업을 줄입니다. 콘텐츠 운영 팀은 단일 하드 줄바꿈이 템플릿에서 일관성 없는 필드를 생성할 수 있는 대량 가져오기를 준비할 때도 혜택을 봅니다.",
+      "professionalUseCasesLegalTitle": "법률 및 규정 준수 팀",
+      "professionalUseCasesLegalP1": "법률 검토는 종종 PDF나 스캔된 문서에서 복사한 텍스트를 포함합니다. 줄바꿈을 정리하면 검토자가 각 단락을 수동으로 재포맷팅하지 않고 문구와 구조에 집중할 수 있습니다.",
+      "professionalUseCasesP2": "이러한 역할에서 도구는 깨끗한 텍스트에 의존하는 워크플로우에서 명확성을 향상시키고 마찰을 줄이는 간단한 정리 단계로 작동합니다.",
+      "educationalUseCasesTitle": "교육 사용 사례",
+      "educationalUseCasesP1": "학생과 교육자는 종종 학술 PDF, 저널 및 이메일 스레드에서 복사한 텍스트로 작업합니다. 줄바꿈을 제거하면 인용, 주석 처리 및 과제에 포함하기 쉬운 깨끗한 단락이 생성됩니다. 도구가 의미를 변경하지 않기 때문에 정확성이 중요한 학술 워크플로우에 안전합니다.",
+      "educationalUseCasesP2": "연구원은 분석을 위한 발췌를 준비하거나 정성적 도구로 가져오기 전에 전사본과 메모를 정리하는 데 사용할 수 있습니다. 결정적 출력은 연구 방법론에서 결과를 재현하고 정리 단계를 문서화하기 쉽게 만듭니다.",
+      "educationalUseCasesP3": "또 다른 교육 사용 사례는 줄바꿈으로 내보낸 설문 응답이나 동료 피드백을 정리하는 것입니다. 각 응답이 짧은 줄로 분할되면 읽고 응답을 비교하기 어려워집니다. 줄바꿈을 제거하면 보고서에서 인용하거나 요약하기 쉬운 더 깨끗한 보기가 생성됩니다. 혼합 소스에서 학습 가이드나 수업 유인물을 만들 때도 도움이 되며, 일관된 단락 포맷팅이 시각적 노이즈를 줄이고 콘텐츠 자체에 집중을 유지합니다.",
+      "publishingSeoTitle": "게시 및 SEO 사용 사례",
+      "publishingSeoP1": "게시 워크플로우는 종종 CMS 필드, 요약 및 메타데이터에 대한 깨끗한 단락에 의존합니다. 하드 줄바꿈은 어색한 간격이나 라이브 사이트에서 잘 표시되지 않는 줄바꿈을 도입할 수 있습니다. 줄바꿈을 제거하면 텍스트가 이러한 필드에서 일반 단락으로 나타납니다.",
+      "publishingSeoP2": "SEO 관점에서 도구는 키워드를 변경하거나 콘텐츠를 추가하지 않습니다. 단순히 가독성을 위해 포맷팅을 개선합니다. 이것은 더 나은 편집 품질을 지원하고 단일 단락을 기대하는 메타데이터 필드의 오류를 줄일 수 있습니다. 최적화 전략이 아닌 콘텐츠가 최종화된 후 포맷팅 단계로 사용하십시오.",
+      "publishingSeoP3": "또 다른 일반적인 시나리오는 설명이나 요약의 대량 가져오기입니다. 많은 CMS 필드는 줄바꿈을 별도의 단락이나 잘못된 문자로 처리합니다. 가져오기 전에 제거하면 포맷팅 오류를 줄이고 모든 장치에서 미리보기를 일관되게 유지합니다. 소셜 공유나 RSS 피드용 발췌를 준비할 때도 도움이 되며, 줄바꿈이 콘텐츠를 잘라내거나 잘못 정렬할 수 있습니다. 결과는 문구를 변경하지 않고 더 예측 가능한 렌더링입니다.",
+      "accessibilityTitle": "접근성 및 사용성 이점",
+      "accessibilityP1": "깨끗한 단락은 화면 읽기 프로그램에 의존하는 사용자를 포함하여 모든 사용자의 가독성을 향상시킵니다. 하드 줄바꿈은 문장의 흐름을 방해하고 콘텐츠를 해석하기 어렵게 만들 수 있습니다. 이러한 줄바꿈을 제거하면 텍스트가 더 자연스럽게 읽히고 탐색하기 쉬워집니다.",
+      "accessibilityP2": "사용성 검토의 경우 단일 텍스트 단락이 예상치 못한 줄바꿈이 있는 블록보다 스캔하기 쉽습니다. 이것은 콘텐츠 팀이 텍스트를 더 빠르게 검토하고 승인하는 데 도움이 됩니다. 도구는 구조를 추가하지 않지만 독자의 주의를 분산시킬 수 있는 노이즈를 제거합니다.",
+      "accessibilityP3": "접근성 감사에서 깨끗한 텍스트는 명확성과 읽기 순서를 평가하기 쉽게 만듭니다. 하드 줄바꿈은 화면 읽기 프로그램이 부자연스러운 곳에서 일시 중지하거나 의도하지 않은 곳에서 줄바꿈을 발표하도록 할 수 있습니다. 이러한 줄바꿈을 제거하면 텍스트가 더 자연스럽게 들리고 따라하기 쉬워집니다. 도구는 의미를 변경하지 않지만 보조 기술과 예측 가능한 문장 흐름에 의존하는 독자를 위한 텍스트의 리듬을 개선합니다.",
+      "whyOnlineToolTitle": "수동 편집 대신 온라인 도구를 사용하는 이유는 무엇인가요?",
+      "whyOnlineToolP1": "수동 줄바꿈 제거는 느리고 오류가 발생하기 쉽습니다. 각 줄바꿈을 식별하고, 제거하고, 간격이 올바른지 확인해야 합니다. 텍스트가 길거나 줄바꿈이 많을 때 이것이 어려워집니다. 결정적 도구는 몇 초 만에 전체 입력에 동일한 규칙을 적용합니다.",
+      "whyOnlineToolP2": "온라인 도구는 또한 프로세스를 반복 가능하게 만듭니다. 여러 문서에서 동일한 정리를 실행하고 일관된 결과를 얻을 수 있습니다. 유사한 형식의 많은 문서를 처리하는 팀에게 특히 유용합니다. 누락된 줄바꿈의 가능성을 줄이고 워크플로우에서 정리 단계를 문서화하기 쉽게 만듭니다.",
+      "edgeCasesTitle": "엣지 케이스 및 알려진 제한 사항",
+      "edgeCasesP1": "줄바꿈 제거는 간단하지만 출력에 영향을 줄 수 있는 엣지 케이스가 있습니다. 이러한 제한 사항을 이해하면 올바른 설정을 선택하고 예상을 피하는 데 도움이 됩니다.",
+      "edgeCasesItem1": "하이픈 연결된 줄 끝은 출력에 잘못된 하이픈을 남길 수 있습니다.",
+      "edgeCasesItem2": "단일 줄바꿈에 의존하는 목록이 단일 줄로 병합될 수 있습니다.",
+      "edgeCasesItem3": "다중 열 PDF 텍스트가 잘못된 읽기 순서로 붙여넣을 수 있습니다.",
+      "edgeCasesItem4": "코드와 미리 포맷된 텍스트는 줄바꿈이 제거될 때 구조를 잃을 수 있습니다.",
+      "edgeCasesItem5": "비분리 공백과 같은 숨겨진 문자가 간격 결과를 변경할 수 있습니다.",
+      "edgeCasesP2": "이러한 문제가 나타나면 후속 정리 단계가 필요할 수 있습니다. 예를 들어, 줄 끝 하이픈 연결을 수정하거나 도구를 실행하기 전에 열을 별도로 복사하는 검색 및 교체를 사용하십시오. 도구는 깨끗한 기반을 제공하지만 복잡한 소스에 의해 도입된 모든 포맷팅 아티팩트를 해결하려고 시도하지 않습니다.",
+      "edgeCasesP3": "또 다른 제한 사항은 데이터 세트의 줄당 하나의 항목과 같이 줄바꿈을 레코드 구분 기호로 사용하는 텍스트입니다. 이러한 줄바꿈을 제거하면 레코드가 병합되고 데이터를 구문 분석하기 어려울 수 있습니다. 입력이 단락과 한 줄 레코드를 혼합하는 경우 콘텐츠를 분할하고 단락 섹션만 정리하는 것을 고려하십시오. 도구는 서술적 텍스트를 위해 설계되었으므로 구조화된 데이터는 정리 전에 줄바꿈을 구분 기호로 교체하는 것과 같은 다른 접근 방식이 필요할 수 있습니다.",
+      "bestPracticesTitle": "줄바꿈 제거 사용 시 모범 사례",
+      "bestPracticesP1": "몇 가지 간단한 사례는 결과를 개선하고 도구 실행 후 수동 정리의 필요성을 줄일 수 있습니다.",
+      "bestPracticesItem1": "서술적 콘텐츠 및 보고서에 대해 단락 줄바꿈 유지를 활성화합니다.",
+      "bestPracticesItem2": "산문에서 병합된 단어를 피하기 위해 줄바꿈을 공백으로 교체합니다.",
+      "bestPracticesItem3": "입력이 PDF나 테이블에서 올 때 추가 공백 축소를 사용합니다.",
+      "bestPracticesItem4": "정리 후 하이픈 연결 및 제목에 대한 출력을 검토합니다.",
+      "bestPracticesItem5": "되돌려야 할 경우를 대비해 원본 텍스트의 복사본을 보관합니다.",
+      "bestPracticesP2": "이러한 단계는 워크플로우를 예측 가능하게 유지하고 협력자나 검토자에게 정리 프로세스를 설명하기 쉽게 만듭니다. 처리 후 짧은 검토는 일반적으로 자동화된 정리가 해결할 수 없는 몇 가지 엣지 케이스를 포착하기에 충분합니다.",
+      "bestPracticesP3": "입력에 대해 확실하지 않을 때 먼저 작은 샘플을 실행하는 것도 도움이 될 수 있습니다. 단락을 테스트하고, 간격을 확인한 다음 동일한 설정을 전체 텍스트에 적용하십시오. 소스에 숨겨진 문자가 포함된 경우 줄바꿈을 제거하기 전에 이 도구를 보이지 않는 문자 감지기와 함께 사용하십시오. 이 시퀀스는 예상을 피하고 출력이 다운스트림 사용에 준비되도록 보장하는 데 도움이 됩니다.",
+      "misunderstoodTitle": "자주 오해되는 개념",
+      "misunderstoodHardWrapsTitle": "하드 줄바꿈은 단락이 아닙니다",
+      "misunderstoodHardWrapsP1": "하드 줄바꿈은 작성자 의도가 아닌 레이아웃에 의해 삽입된 줄바꿈입니다. 단락 줄바꿈은 의미가 있습니다. 도구는 가능할 때 단락 줄바꿈을 유지하면서 하드 줄바꿈을 제거하도록 설계되었습니다.",
+      "misunderstoodPreserveTitle": "단락 유지는 새 단락을 생성하지 않습니다",
+      "misunderstoodPreserveP1": "단락 유지 옵션은 입력에 이미 존재하는 빈 줄을 유지합니다. 소스에 빈 줄이 포함되어 있지 않으면 새 단락이 시작되어야 하는 위치를 추측하지 않습니다. 모든 것이 단일 줄바꿈으로 구분되면 도구는 이를 하나의 단락으로 처리합니다. 단락 구분이 필요한 경우 도구를 실행하기 전에 빈 줄을 추가하거나 나중에 삽입하십시오.",
+      "misunderstoodReplacingTitle": "줄바꿈 교체는 제거와 다릅니다",
+      "misunderstoodReplacingP1": "줄바꿈을 공백으로 교체하면 단어 분리가 유지됩니다. 공백 없이 제거하는 것은 다른 작업이며 소스에 후행 공백이 포함되어 있지 않으면 단어를 병합할 수 있습니다.",
+      "misunderstoodCollapsingTitle": "공백 축소는 자르기와 다릅니다",
+      "misunderstoodCollapsingP1": "자르기는 출력의 시작과 끝에서 공백을 제거합니다. 공백 축소는 텍스트 내의 반복 공백을 줄입니다. 그들은 다른 문제를 해결하며 함께 활성화할 수 있습니다.",
+      "misunderstoodDeterministicTitle": "결정적 처리는 의미를 추론하지 않습니다",
+      "misunderstoodDeterministicP1": "도구는 구조를 추론하거나 문구를 수정하지 않습니다. 줄바꿈과 간격에 문자 그대로 규칙을 적용합니다. 모든 의미론적 편집은 별도로 수행되어야 합니다.",
+      "misunderstoodRewritingTitle": "줄바꿈 제거는 다시 쓰기가 아닙니다",
+      "misunderstoodRewritingP1": "도구는 콘텐츠를 생성하거나 의역하지 않습니다. 제공한 텍스트의 레이아웃만 변경하므로 의미가 그대로 유지되어야 하는 워크플로우에 안전합니다.",
+      "responsibleUseTitle": "책임 있는 사용 면책 조항",
+      "responsibleUseP1": "줄바꿈 제거는 결정적 텍스트 포맷팅 도구입니다. 제공한 텍스트에서만 작동하며, AI 모델에 연결되지 않으며, AI 제공자와의 제휴를 주장하지 않습니다. 콘텐츠를 생성하거나, 의미를 변경하거나, 감지 시스템을 우회하지 않습니다. 텍스트를 처리할 권리가 있는 컨텍스트에서 정리 및 포맷팅에 사용하십시오.",
+      "finalSummaryTitle": "최종 요약 및 이 도구를 사용할 때",
+      "finalSummaryP1": "gptcleanuptools.com의 줄바꿈 제거 도구는 하드 줄바꿈된 텍스트를 정리하는 간단하고 신뢰할 수 있는 방법입니다. 줄을 단락으로 결합하고, 필요할 때 단락 줄바꿈을 유지하며, 읽을 수 있는 출력을 위해 간격을 정규화합니다. 도구는 브라우저에서 로컬로 실행되므로 프로세스가 비공개이고 결정적입니다.",
+      "finalSummaryP2": "PDF, 이메일 또는 좁은 열에서 복사한 텍스트에서 줄바꿈을 제거해야 할 때 사용하십시오. CMS, 보고서 또는 단일 단락을 기대하는 양식 필드에 콘텐츠를 준비하는 데 이상적입니다. 다시 쓰기 도구가 아니며 의미를 수정하지 않으므로 민감하거나 정확한 콘텐츠에 안전합니다.",
+      "finalSummaryP3": "줄바꿈이 우발적이고 편집을 방해할 때 이 도구는 빠르고 일관된 수정을 제공합니다. 출력의 빠른 검토와 함께 사용하면 다음 단계에 준비된 깨끗한 텍스트를 얻을 수 있습니다.",
+      "finalSummaryP4": "더 광범위한 정리 워크플로우의 경우 이 도구를 다른 유틸리티와 함께 사용할 수 있습니다. 먼저 줄바꿈을 제거한 다음 필요에 따라 단어 카운터를 실행하거나 중복 줄을 제거하십시오. 각 도구는 하나의 명확한 작업을 수행하므로 워크플로우를 예측 가능하고 감사하기 쉽게 만듭니다. 목표는 콘텐츠를 변환하는 것이 아니라 정확한 편집, 게시 또는 분석을 위해 준비하는 것입니다."
+    },
+    "faqs": {
+      "faq1": {
+        "category": "일반",
+        "question": "줄바꿈 제거 도구는 무엇을 하나요?",
+        "answer": "줄바꿈 제거 도구는 원래 단어를 유지하면서 줄바꿈된 줄을 연속 단락으로 결합합니다. PDF, 이메일 또는 좁은 열에서 하드 줄바꿈이 있는 텍스트가 도착할 때 결정적 정리를 위해 설계되었습니다. 텍스트를 붙여넣고, 단락 줄바꿈을 유지할지 선택하면 도구가 그에 따라 줄바꿈을 제거합니다. 줄바꿈을 공백으로 교체하도록 선택하면 각 줄바꿈이 존재했던 위치에 단일 공백이 삽입되어 단어가 병합되지 않습니다. 복사-붙여넣기 후에 자주 나타나는 반복 공백과 탭도 축소할 수 있습니다.\n\n도구는 다시 쓰거나, 의역하거나, 의미를 해석하지 않습니다. 선택한 옵션에 따라 줄바꿈 문자를 단순히 변환합니다. 출력은 더 읽기 쉬운 흐름을 가진 동일한 콘텐츠로, 편집, 검색 또는 문서에 붙여넣기를 쉽게 만듭니다."
+      },
+      "faq2": {
+        "category": "일반",
+        "question": "줄바꿈 제거와 단락 제거의 차이점은 무엇인가요?",
+        "answer": "줄바꿈 제거는 레이아웃이나 내보내기에 의해 줄바꿈된 줄을 결합하는 반면, 단락 제거는 아이디어 간의 의도적 간격을 제거합니다. 많은 소스가 문장이 계속되더라도 각 시각적 줄 끝에 줄바꿈을 삽입합니다. 이러한 줄바꿈을 제거하면 문장이 일반 단락이 됩니다. 단락 줄바꿈은 일반적으로 하나 이상의 빈 줄로 표시됩니다. 구조적이며 종종 새 주제, 단계 또는 섹션을 나타냅니다.\n\n이 도구를 사용하면 빈 줄이 유지되는 동안 내부 줄바꿈이 사라지도록 단락 줄바꿈을 유지할 수 있습니다. 이것은 문서 구조를 읽기 쉽게 유지합니다. 단락 유지를 끄면 모든 줄바꿈이 제거되고 출력이 단일 블록이 됩니다. 이것은 한 줄이 필요한 양식이나 데이터 필드에 유용할 수 있지만 일반적으로 기사나 보고서에는 이상적이지 않습니다. 구별은 실수로 발생한 줄바꿈만 제거하는 데 도움이 됩니다."
+      },
+      "faq3": {
+        "category": "기술",
+        "question": "단락 줄바꿈 유지 옵션은 어떻게 작동하나요?",
+        "answer": "단락 줄바꿈 유지는 두 개 이상의 줄바꿈 시퀀스를 찾아 단락 경계로 처리합니다. 도구는 줄바꿈을 제거하기 전에 이러한 경계를 표시한 다음 출력에서 빈 줄로 복원합니다. 이것은 각 단락 내의 줄이 부드러운 블록으로 결합되는 동안 단락을 분리된 상태로 유지합니다. 문서를 평평하게 만들지 않고 하드 줄바꿈된 텍스트를 정리하는 실용적인 방법입니다.\n\n옵션은 입력에 빈 줄이 있는 것에 의존합니다. 소스가 모든 것에 단일 줄바꿈을 사용하는 경우 도구는 단락을 추론할 방법이 없으며 전체 입력을 하나의 단락으로 처리합니다. 이 경우 도구를 실행하기 전에 수동으로 단락 구분 기호를 추가하거나 출력을 편집을 위한 단일 블록으로 사용할 수 있습니다. 동작은 결정적이며 단락이 어디에 있어야 하는지 추측하지 않습니다."
+      },
+      "faq4": {
+        "category": "사용",
+        "question": "줄바꿈을 공백으로 교체해야 하나요, 아니면 완전히 제거해야 하나요?",
+        "answer": "줄바꿈을 공백으로 교체하는 것은 산문에 가장 안전한 기본값입니다. 줄바꿈이 문장 중간에 나타나면 일반적으로 단어가 분리된 상태로 유지되도록 공백이 필요합니다. 도구는 각 줄바꿈이 존재했던 위치에 단일 공백을 삽입합니다. 이것은 단어 경계를 유지하고 단어를 병합하는 것을 방지합니다. 출력을 문서나 CMS에 붙여넣을 때 가독성도 향상시킵니다.\n\n공백을 추가하지 않고 줄바꿈을 제거하는 것은 줄바꿈이 이미 공백으로 둘러싸여 있거나 간격이 없는 연속 문자열이 필요한 경우에만 유용합니다. 예에는 특정 데이터 형식, URL 목록 또는 세그먼트 간의 모든 공백을 제거하려는 경우가 포함됩니다. 단어가 함께 실행되는 것을 보면 공백으로 교체 옵션을 켜고 도구를 다시 실행하십시오. 선택은 최종 텍스트가 어떻게 흐르기를 원하는지에 관한 것입니다."
+      },
+      "faq5": {
+        "category": "포맷팅",
+        "question": "추가 공백 축소는 무엇을 하나요?",
+        "answer": "추가 공백 축소는 여러 공백과 탭을 단일 공백으로 줄입니다. 복사-붙여넣기는 종종 추가 간격을 도입하며, 특히 텍스트가 PDF나 테이블에서 가져올 때 그렇습니다. 이러한 추가 공백은 출력을 고르지 않게 보이게 만들 수 있으며 여러 공백을 다르게 처리하는 양식이나 편집기에 텍스트를 붙여넣을 때 문제를 일으킬 수 있습니다.\n\n이 옵션이 활성화되면 도구는 반복되는 공백과 탭 문자를 스캔하고 각 시퀀스를 하나의 공백으로 교체합니다. 모든 간격을 제거하지 않습니다. 단순히 정규화합니다. 이것은 줄바꿈이 제거된 후 깨끗하고 읽을 수 있는 문장을 생성하는 데 도움이 됩니다. 고정 너비 레이아웃이나 정렬된 열과 같이 정확한 간격을 유지해야 하는 경우 이 옵션을 비활성화해야 합니다. 일반 산문과 대부분의 목록의 경우 공백 축소가 더 자연스러운 결과를 생성합니다."
+      },
+      "faq6": {
+        "category": "포맷팅",
+        "question": "줄바꿈을 제거한 후 일부 단어가 함께 실행되는 이유는 무엇인가요?",
+        "answer": "공백을 삽입하지 않고 줄바꿈을 제거하면 단어가 함께 실행됩니다. 일부 소스는 고정 너비에서 줄을 줄바꿈하고 줄바꿈 전에 공백을 포함하지 않습니다. 줄바꿈이 제거되면 한 줄의 마지막 단어와 다음 줄의 첫 번째 단어가 단일 단어가 됩니다. 이것은 PDF 내보내기와 이메일 클라이언트에서 일반적입니다.\n\n가장 간단한 수정은 줄바꿈을 공백으로 교체 옵션을 활성화하는 것입니다. 이것은 각 줄바꿈에 공백을 삽입하여 단어가 분리된 상태로 유지되도록 합니다. 또 다른 원인은 줄 끝의 하이픈 연결입니다. 소스가 줄에 걸쳐 단어를 분할하기 위해 하이픈을 사용하는 경우 도구는 하이픈을 유지하므로 \"inter-\" 다음에 \"national\"이 오는 것과 같은 단어를 남길 수 있습니다. 하이픈을 수동으로 제거하거나 대상 검색 및 교체를 사용해야 할 수 있습니다. 출력의 빠른 검토는 이러한 경우를 포착하는 데 도움이 됩니다."
+      },
+      "faq7": {
+        "category": "사용",
+        "question": "도구가 PDF에서 복사한 텍스트를 수정할 수 있나요?",
+        "answer": "예, 도구는 PDF 복사-붙여넣기 문제에 매우 적합합니다. 많은 PDF가 좁은 열에 텍스트를 저장하거나 각 줄 뒤에 하드 줄바꿈을 저장합니다. 복사할 때 이러한 줄바꿈은 문장이 계속되더라도 줄바꿈 문자로 나타납니다. 줄바꿈 제거 도구는 이러한 줄을 결합하여 자연스러운 단락 흐름을 복원합니다. 또한 PDF 추출이 종종 단어 사이나 구두점 뒤에 추가하는 추가 간격을 제거하는 데 도움이 됩니다.\n\n그러나 PDF 텍스트는 머리글, 바닥글, 페이지 번호 및 하이픈 연결된 줄 끝과 같은 더 복잡한 아티팩트를 포함할 수 있습니다. 도구는 줄바꿈과 간격에서만 작동하기 때문에 자동으로 제거하지 않습니다. 실행한 후 산만한 머리글이나 하이픈이 있는 단어에 대한 출력을 스캔하고 필요에 따라 정리하십시오. 다중 열 PDF의 경우 혼합 읽기 순서를 피하기 위해 각 열을 별도로 복사해야 할 수 있습니다. 도구는 빠른 기준선을 제공하지만 여전히 빠른 인간 검토의 이점을 봅니다."
+      },
+      "faq8": {
+        "category": "일반",
+        "question": "도구가 구두점이나 의미를 변경하나요?",
+        "answer": "아니요. 도구는 구두점, 철자 또는 의미를 변경하지 않습니다. 줄바꿈 문자만 제거하고 선택적으로 공백을 삽입하거나 반복 공백을 축소합니다. 이것은 제공한 단어가 동일한 순서로 유지되고 구두점이 정확히 나타나는 대로 유지됨을 의미합니다. 결과는 하드 줄바꿈된 줄 시리즈 대신 일반 단락처럼 읽히는 더 부드러운 레이아웃일 뿐입니다.\n\n도구가 결정적이기 때문에 동일한 입력과 설정이 항상 동일한 출력을 생성합니다. 의역, 다시 쓰기 또는 AI 기반 추론이 없습니다. 이것은 의미가 보존되어야 하는 법률 텍스트, 학술 인용 또는 기술 문서에 중요합니다. 문구 변경을 발견하면 줄바꿈이 제거된 방식이나 입력에 비정상적인 간격이 포함되어 있기 때문일 수 있습니다. 출력을 검토하고 필요에 따라 설정을 조정하지만 도구 자체는 포맷팅을 넘어 콘텐츠를 변경하지 않습니다."
+      },
+      "faq9": {
+        "category": "기술",
+        "question": "Windows 및 Mac 줄 끝을 어떻게 처리하나요?",
+        "answer": "도구는 처리 전에 줄 끝을 정규화합니다. 다른 시스템은 줄바꿈을 다르게 나타냅니다. Windows는 캐리지 리턴과 줄 바꿈을 사용하는 반면 Unix와 macOS는 일반적으로 줄 바꿈만 사용합니다. 도구는 Windows 스타일 줄바꿈을 일관된 형식으로 변환한 다음 제거 로직을 적용합니다. 이것은 일부 줄바꿈이 제거되고 다른 줄바꿈이 제거되지 않는 불일치를 방지합니다.\n\n수동으로 아무것도 조정할 필요가 없습니다. 텍스트를 붙여넣고 도구를 실행하기만 하면 됩니다. 정규화 단계는 내부적이고 결정적이므로 텍스트가 Windows, Mac 또는 웹 페이지에서 왔는지 여부에 관계없이 출력이 동일합니다. 여전히 예상치 못한 동작을 보는 경우 일반적으로 비분리 공백이나 페이지 나누기와 같은 다른 숨겨진 문자 때문입니다. 이러한 경우 보이지 않는 문자 감지기를 사용하면 입력을 진단하는 데 도움이 될 수 있습니다. 줄 끝 정규화는 워크플로우의 표준 부분입니다."
+      },
+      "faq10": {
+        "category": "포맷팅",
+        "question": "빈 줄과 추가 간격을 제거하나요?",
+        "answer": "빈 줄은 단락 줄바꿈 유지 설정에 따라 처리됩니다. 단락 유지가 활성화된 경우 연속 빈 줄이 단락 구분 기호로 처리되고 출력에 유지됩니다. 도구는 각 단락 내의 줄바꿈을 제거하지만 단락 간의 빈 줄을 남겨 구조를 읽기 쉽게 유지합니다. 단락 유지가 비활성화된 경우 이러한 빈 줄이 다른 줄바꿈과 함께 제거되어 단일 텍스트 블록을 생성합니다.\n\n줄 내의 추가 간격은 공백 축소 옵션에 의해 처리됩니다. 활성화되면 반복되는 공백과 탭이 단일 공백으로 줄어듭니다. 출력은 시작과 끝에서도 잘려 실수로 선행 또는 후행 공백이 제거됩니다. 정확한 간격이나 들여쓰기를 유지해야 하는 경우 공백 축소를 비활성화하고 단락 유지를 켜두는 것을 고려하십시오. 도구는 줄바꿈을 정리하는 동안 유지할 구조의 양을 제어할 수 있게 해줍니다."
+      },
+      "faq11": {
+        "category": "워크플로우",
+        "question": "긴 문서에 안전한가요?",
+        "answer": "일반적으로 긴 문서에 안전하지만 성능은 장치와 브라우저에 따라 다릅니다. 처리는 브라우저에서 로컬로 발생하므로 큰 입력은 더 많은 메모리와 시간이 필요합니다. 대부분의 기사, 보고서 또는 이메일 스레드의 경우 도구가 빠르게 실행됩니다. 매우 큰 문서를 붙여넣으면 응답이 느려지거나 브라우저 지연이 발생할 수 있습니다.\n\n실용적인 접근 방식은 섹션별로 작업하는 것입니다. 텍스트를 더 작은 청크로 분할하고, 각 청크에서 도구를 실행한 다음 출력을 다시 조립하십시오. 이것은 인터페이스를 반응적으로 유지하고 실수로 브라우저가 느려지는 위험을 줄입니다. 도구는 결정적이므로 결과를 변경하지 않고 섹션을 어떤 순서로든 처리할 수 있습니다. 대량 정리를 실행하기 전에 항상 원본 텍스트의 복사본을 보관하여 필요할 경우 복원할 수 있도록 하십시오. 일상적인 사용 사례의 경우 도구는 큰 블록을 잘 처리합니다."
+      },
+      "faq12": {
+        "category": "사용",
+        "question": "목록이나 글머리 기호에 사용할 수 있나요?",
+        "answer": "목록에 사용할 수 있지만 주의해야 합니다. 많은 목록이 항목을 구분하기 위해 줄바꿈에 의존합니다. 단락을 유지하지 않고 줄바꿈을 제거하면 모든 항목이 단일 줄로 병합되어 목록을 읽거나 재사용하기 어렵습니다. 각 항목이 빈 줄로 구분된 경우 단락 유지는 목록 구조를 유지할 수 있지만 단일 줄바꿈을 사용하는 목록은 결합됩니다.\n\n목록 항목을 분리된 상태로 유지해야 하는 경우 줄바꿈 제거를 피하거나 먼저 목록을 쉼표나 세미콜론과 같은 구분 기호로 변환할 수 있습니다. 또 다른 접근 방식은 목록 구분 기호를 그대로 두고 각 항목 내의 줄에서만 도구를 실행하는 것입니다. 줄바꿈 제거 도구는 산문과 단락에 가장 적합합니다. 구조화된 목록의 경우 줄바꿈을 제거하기 전에 줄바꿈이 의미가 있는지 고려하십시오."
+      },
+      "faq13": {
+        "category": "제한",
+        "question": "코드 스니펫이나 로그에 사용할 수 있나요?",
+        "answer": "코드 스니펫이나 로그를 붙여넣을 수 있지만 줄바꿈은 이러한 형식에서 종종 의미가 있습니다. 소스 코드에서 줄바꿈을 제거하면 의미가 변경되거나 읽을 수 없게 될 수 있습니다. 로그는 또한 이벤트를 구분하기 위해 줄바꿈에 의존합니다. 제거하면 시퀀스를 추적하거나 타임스탬프를 상관시키는 능력을 잃을 수 있습니다.\n\n도움이 되는 제한된 경우가 있습니다. 예를 들어 코드 주석이나 로그 항목이 좁은 디스플레이에 의해 하드 줄바꿈되고 단일 줄로 읽고 싶을 때입니다. 이러한 경우 단락 줄바꿈을 유지하고 줄바꿈을 공백으로 교체하여 텍스트가 읽을 수 있도록 유지하십시오. 실행 가능한 코드나 구조화된 로그 파일에서 도구를 사용하지 마십시오. 코드 포맷팅이나 로그 처리가 아닌 일반 텍스트 정리를 위해 설계되었습니다. 기술 워크플로우에서 사용하기 전에 항상 출력을 검토하십시오."
+      },
+      "faq14": {
+        "category": "기술",
+        "question": "다른 소스에서 동일한 텍스트를 붙여넣을 때 출력이 변하는 이유는 무엇인가요?",
+        "answer": "기본 입력이 동일하지 않을 때 출력이 변할 수 있습니다. 다른 소스에서 동일한 보이는 텍스트를 복사하면 숨겨진 문자, 비분리 공백 또는 다른 줄 끝이 도입될 수 있습니다. PDF 리더는 추가 공백을 삽입할 수 있는 반면 웹 페이지는 소프트 줄바꿈이나 보이지 않는 문자를 포함할 수 있습니다. 이러한 미묘한 차이는 도구가 줄바꿈과 간격을 해석하는 방식에 영향을 줍니다.\n\n도구는 일관된 규칙을 적용하므로 출력의 차이는 일반적으로 입력의 차이를 반영합니다. 예상치 못한 결과를 보는 경우 먼저 텍스트를 일반 텍스트 편집기에 붙여넣거나 보이지 않는 문자 감지기를 사용하여 숨겨진 기호를 표시하십시오. 공백 축소 옵션을 전환하여 간격을 정규화할 수도 있습니다. 입력이 깨끗하고 일관되면 출력도 일관됩니다. 도구 자체는 무작위성이나 가변성을 도입하지 않습니다."
+      },
+      "faq15": {
+        "category": "SEO",
+        "question": "줄바꿈 제거가 SEO나 게시에 도움이 되나요?",
+        "answer": "줄바꿈 제거는 검색 순위를 직접 개선하지는 않지만 게시 워크플로우를 지원할 수 있습니다. 깨끗한 단락은 편집, 교정 및 CMS에 붙여넣기가 쉽습니다. 줄바꿈이 그대로 남아 있을 때 나타날 수 있는 포맷팅 오류를 줄입니다. 예를 들어 어색한 줄바꿈이나 템플릿의 예상치 못한 간격입니다.\n\nSEO 관련 작업의 경우 단일 단락이어야 하는 메타 설명, 발췌 또는 구조화된 스니펫을 준비할 때 도구가 유용합니다. 줄바꿈을 잘 처리하지 못하는 필드에서 텍스트가 깨끗하게 보이도록 보장합니다. 키워드를 추가하거나 의미를 변경하지 않으므로 자체적으로 최적화 기술이 아닙니다. 세련된 콘텐츠를 제공하는 데 도움이 되는 포맷팅 유틸리티로 생각하십시오. 이것은 사용자 인식과 편집 정확성을 향상시킬 수 있습니다."
+      },
+      "faq16": {
+        "category": "개인정보 보호",
+        "question": "도구는 어떤 개인정보 보호를 제공하나요?",
+        "answer": "개인정보 보호는 로컬 처리를 통해 처리됩니다. 도구는 브라우저에서 실행되며 텍스트를 외부 서비스로 보내지 않습니다. 계정 요구 사항이 없으며 서버에 입력이나 출력을 저장하지 않습니다. 이것은 콘텐츠를 공유하지 않고 빠른 포맷팅을 원하는 일반 정리 작업에 적합합니다.\n\n로컬 처리에도 불구하고 민감한 데이터에 대한 내부 정책을 따라야 합니다. 기밀 자료를 처리하는 경우 브라우저 기반 도구가 환경에 적합한지 고려하십시오. 줄바꿈 제거 도구는 AI 모델이나 타사 API에 연결되지 않으며 페이지를 닫은 후 콘텐츠를 보관하지 않습니다. 붙여넣고, 복사하고, 보관하는 것을 제어합니다. 이 간단한 워크플로우는 데이터를 제어하에 유지하는 데 도움이 됩니다."
+      },
+      "faq17": {
+        "category": "호환성",
+        "question": "어떤 브라우저가 지원되나요?",
+        "answer": "도구는 표준 JavaScript 텍스트 처리를 지원하는 최신 브라우저에서 작동합니다. Chrome, Edge, Firefox 및 Safari는 모두 필요한 기능을 처리합니다. 로직이 간단하고 결정적이기 때문에 출력은 브라우저가 아닌 입력과 선택한 옵션에 따라 다릅니다. 지원되는 모든 브라우저에서 동일한 결과를 볼 수 있어야 합니다.\n\n차이점을 경험하는 경우 일반적으로 텍스트가 브라우저에 복사된 방식이나 클립보드 콘텐츠를 수정하는 확장 프로그램에서 비롯됩니다. 확장 프로그램을 비활성화하거나 먼저 일반 텍스트 편집기에 붙여넣으십시오. 도구는 복사 버튼에 대한 표준 클립보드 액세스 외에 고급 API에 의존하지 않습니다. 브라우저가 클립보드 액세스를 차단하는 경우 수동으로 출력을 선택하고 복사할 수 있습니다. 전반적으로 최신 브라우저에 대해 호환성이 강합니다."
+      },
+      "faq18": {
+        "category": "제한",
+        "question": "언제 줄바꿈 제거를 피해야 하나요?",
+        "answer": "줄바꿈이 의미가 있을 때 줄바꿈 제거를 피해야 합니다. 시, 주소, 법률 조항 및 포맷된 목록은 종종 구조를 표시하기 위해 줄바꿈에 의존합니다. 제거하면 텍스트가 읽히거나 해석되는 방식이 변경될 수 있습니다. 코드 및 구성 파일에서 줄바꿈은 일반적으로 의미가 있으며 보존되어야 합니다.\n\n텍스트가 이미 잘 포맷된 경우 정리가 필요하지 않을 수 있습니다. 도구는 줄바꿈이 작성자가 아닌 포맷팅 제약에 의해 삽입된 경우를 위한 것입니다. 확실하지 않은 경우 먼저 작은 샘플에서 도구를 실행하고 결과를 비교하십시오. 줄바꿈이 콘텐츠의 일부일 때는 보존하고 레이아웃을 변경하지 않는 다른 도구를 사용하십시오. 가장 안전한 규칙은 줄바꿈이 명확히 실수인 경우에만 제거하는 것입니다."
+      },
+      "faq19": {
+        "category": "워크플로우",
+        "question": "변경 사항을 실행 취소하거나 되돌릴 수 있나요?",
+        "answer": "도구는 실행 취소 버튼을 제공하지 않으므로 가장 안전한 방법은 원본 텍스트의 복사본을 보관하는 것입니다. 원본을 별도의 문서에 붙여넣거나 출력을 검토하는 동안 입력 필드에 보관할 수 있습니다. 변경 사항을 되돌려야 하는 경우 수동으로 줄바꿈을 다시 삽입하거나 텍스트를 고정 너비로 줄바꿈하는 다른 도구를 사용할 수 있습니다.\n\n도구가 결정적이기 때문에 더 많은 구조를 유지하려는 경우 다른 설정으로 다시 실행할 수도 있습니다. 예를 들어 단락 유지를 활성화하거나 줄바꿈을 공백으로 교체하면 원본 레이아웃에 더 가까운 결과를 얻을 수 있습니다. 여전히 소스 텍스트를 보관하지 않는 한 원본 줄바꿈을 완벽하게 재구성하는 것은 불가능합니다. 도구를 단방향 포맷팅 단계로 취급하고 원본 구조가 중요할 때 백업을 보관하십시오."
+      },
+      "faq20": {
+        "category": "기술",
+        "question": "하이픈 연결된 줄바꿈을 어떻게 처리해야 하나요?",
+        "answer": "하이픈 연결된 줄바꿈은 단어가 줄 끝에서 분할되고 하이픈이 추가될 때 발생합니다. 예를 들어 \"inter-\" 다음에 \"national\"이 오는 경우입니다. 줄바꿈이 제거되면 하이픈이 남아 단어 중간에 잘못된 하이픈을 남길 수 있습니다. 도구는 의도적인 하이픈과 줄바꿈 하이픈을 신뢰할 수 있게 구별할 수 없기 때문에 이러한 하이픈을 자동으로 제거하지 않습니다.\n\n이 패턴을 보면 대상 검색 및 교체로 수정할 수 있습니다. 예를 들어 하이픈이 줄 끝에만 나타나는 것을 알고 있을 때 \"- \"를 빈 문자열로 교체하십시오. 이것이 합법적인 하이픈도 제거할 수 있으므로 주의하십시오. 더 안전한 접근 방식은 빠른 수동 검토 또는 더 고급 편집기에서 정규식을 사용하는 것입니다. 도구는 깨끗한 단락 흐름을 제공하며 모든 줄 끝 하이픈 연결을 후속 정리 단계로 처리합니다."
+      },
+      "faq21": {
+        "category": "일반",
+        "question": "도구가 AI나 외부 서비스와 상호 작용하나요?",
+        "answer": "아니요. 도구는 제공한 텍스트에서만 작동하는 결정적 텍스트 유틸리티입니다. AI 모델을 호출하지 않으며, 외부 API로 콘텐츠를 보내지 않으며, 텍스트를 생성하거나 다시 쓰지 않습니다. 출력은 줄바꿈과 간격의 간단한 로컬 변환에 의해 생성됩니다. 이것은 투명성에 중요합니다. 콘텐츠가 어떻게 변경될지 정확히 예측할 수 있기 때문입니다.\n\n다시 쓰기나 요약을 위한 AI 지원이 필요한 경우 다른 유형의 도구입니다. 줄바꿈 제거는 포맷팅 정리 전용입니다. 하드 줄바꿈과 복사된 텍스트로 인한 레이아웃 문제를 수정하면서 의미를 그대로 유지하도록 설계되었습니다. 이것은 또한 감지 시스템을 우회하지 않거나 감지 불가능성에 대한 주장을 하지 않음을 의미합니다. 신뢰하고 감사할 수 있는 순수한 포맷팅 단계입니다."
+      },
+      "faq22": {
+        "category": "워크플로우",
+        "question": "이것이 수동 편집이나 찾기 및 교체와 어떻게 비교되나요?",
+        "answer": "수동 편집은 짧은 구절에 대해 작동할 수 있지만 긴 문서에 대해서는 느리고 일관성이 없어집니다. 각 줄바꿈을 검색하고, 제거하고, 간격이 올바른지 확인해야 합니다. 줄바꿈을 놓치거나 실수로 구두점을 삭제하기 쉽습니다. 찾기 및 교체 명령은 대량으로 줄바꿈을 제거할 수 있지만 일반적으로 단락 줄바꿈 유지나 추가 공백 축소 옵션이 부족합니다.\n\n이 도구는 일관된 규칙 세트를 적용하고 단락 유지 및 간격에 대한 옵션을 제공합니다. 또한 검토를 위한 깨끗한 출력 영역을 제공합니다. 워크플로우는 더 빠르고 더 반복 가능하며, 특히 여러 소스에서 텍스트를 정리해야 할 때 그렇습니다. 수동 편집은 여전히 미묘한 결정에 자리를 잡고 있지만, 일반적인 줄바꿈 정리의 경우 결정적 도구가 더 신뢰할 수 있고 워크플로우에서 설명하기 쉽습니다."
+      }
+    },
+    "faqHeading": "줄바꿈 제거 - 자주 묻는 질문",
+    "faqIntro": "줄 결합, 단락 유지 및 포맷팅 문제 방지에 대한 자세한 답변."
+  },
+  "HomePage": {
+    "seoName": "ChatGPT 텍스트 정리 도구",
+    "seoDescription": "AI 생성 텍스트를 정리하고 정규화: 숨겨진 유니코드(ZWSP, NBSP, BOM) 제거, 간격 수정, Word, Docs 및 SEO 친화적 게시를 위해 단락 유지.",
+    "heroTitle": "ChatGPT 텍스트 정리 도구",
+    "heroSubtitle": "AI 생성 텍스트를 정리하고 정규화: 숨겨진 유니코드(ZWSP, NBSP, BOM) 제거, 간격 수정, Word, Docs 및 SEO 친화적 게시를 위해 단락 유지.",
+    "cleanPrimary": "텍스트 정리",
+    "cleanInputLabel": "지저분한 AI 텍스트 붙여넣기",
+    "cleanOutputLabel": "정리된 결과",
+    "cleanInputPlaceholder": "ChatGPT, Gemini, Claude의 텍스트 붙여넣기...",
+    "cleanOutputPlaceholder": "정리된 텍스트가 여기에 표시됩니다.",
+    "mainTitle": "GPT CLEAN UP Tools - ChatGPT AI 텍스트 정리 도구 (GPT CLEAN UP Tools / ChatGPT 텍스트 정리)",
+    "aboutTitle": "GPT CLEAN UP Tools 소개",
+    "aboutP1": "GPT CLEAN UP Tools는 AI 시대의 현실을 위해 만들어진 무료 브라우저 기반 플랫폼입니다. 우리는 실용적인 문제를 해결하는 빠르고 개인적인 도구를 구축합니다: AI 텍스트 정리, 숨겨진 문자 제거, 형식 정규화, PDF 관리, 일상적인 작성 및 게시 워크플로우 개선. GPT CLEAN UP Tools의 모든 것은 브라우저에서 로컬로 실행되므로 콘텐츠가 기기를 떠나지 않습니다.",
+    "aboutP2": "GPT CLEAN UP Tools의 목표는 간단합니다: 학생, 전문가, 크리에이터 및 팀에게 신뢰할 수 있는 안정적인 장소를 제공합니다. 수십 개의 사이트를 오가며 작업하는 대신 GPT CLEAN UP Tools를 열고 콘텐츠를 붙여넣으면 학교 포털, 기업 편집기, CMS 및 온라인 양식에서 작동하는 깨끗하고 호환되는 결과를 얻을 수 있습니다. 우리의 접근 방식은 과대 광고보다 명확성을, 데이터 수집보다 개인정보 보호를 선호합니다.",
+    "aboutP3": "플랫폼의 핵심은 GPT CLEAN UP Tools 또는 ChatGPT 텍스트 정리로 자주 검색되는 ChatGPT AI 텍스트 정리 도구입니다. 이 플래그십 도구는 의미, 스타일 및 톤을 보존하면서 AI 지원 작성의 보이지 않는 아티팩트를 제거합니다. 단어를 바꾸거나 수정하지 않습니다. 작업이 여전히 귀하의 것임을 보장하기 위해 기술적 정리에 집중합니다.",
+    "cleanerTitle": "ChatGPT AI 텍스트 정리 도구 (GPT CLEAN UP Tools / ChatGPT 텍스트 정리)",
+    "cleanerP1": "텍스트가 대규모 언어 모델에 의해 생성되거나 크게 지원될 때 복사 및 붙여넣기는 보이는 단어보다 더 많은 것을 전달할 수 있습니다. 제로폭 공백, 비분리 공백, 바이트 순서 표시 및 흩어진 제어 코드와 같은 문자는 텍스트에 부착되어 미묘한 문제를 일으킬 수 있습니다. GPT CLEAN UP Tools의 ChatGPT AI 텍스트 정리 도구는 이러한 아티팩트를 제거하여 콘텐츠가 어디서나 일반 텍스트처럼 작동하도록 합니다.",
+    "cleanerP2": "GPT CLEAN UP Tools의 ChatGPT 텍스트 정리는 네 가지에 집중합니다: 숨겨진 문자 제거, 구두점 정규화, 간격 및 줄바꿈 안정화, 편집기 안전한 일반 텍스트 출력. 결과는 문서, 학습 시스템, 웹사이트 빌더, 이메일 클라이언트 및 게시 플랫폼에 이상한 간격이나 깨진 형식 없이 깨끗하게 붙여넣을 수 있는 콘텐츠입니다.",
+    "cleanerP3": "많은 독자들이 GPT CLEAN UP Tools가 탐지를 우회하는 것과 동일한지 묻습니다. 그렇지 않습니다. GPT CLEAN UP Tools는 기술적 정리만 수행합니다. 일부 탐지 도구는 작성 스타일과 컨텍스트도 분석합니다. 텍스트 정리는 피할 수 있는 기술 신호를 줄이지만 타사 시스템과의 결과에 대한 보장은 아닙니다. 가장 안전하고 지속 가능한 접근 방식은 깨끗한 형식과 자신의 수정 및 목소리를 결합하는 것입니다.",
+    "watermarksTitle": "AI 텍스트 워터마크 및 숨겨진 아티팩트란 무엇인가?",
+    "watermarksP1": "AI 텍스트 워터마크 및 숨겨진 아티팩트는 화면에서는 보이지 않지만 소프트웨어에서 감지할 수 있는 기술적 흔적입니다. 일반적인 예로는 제로폭 공백(U+200B), 제로폭 비조인터(U+200C), 비분리 공백(U+00A0) 및 바이트 순서 표시(U+FEFF)가 있습니다. 또한 엄격한 텍스트 필드를 혼란스럽게 만드는 방식으로 복사되는 곡선 따옴표, 긴 대시 및 기타 구두점이 포함될 수 있습니다.",
+    "watermarksP2": "문자 외에도 복사 및 붙여넣기는 리치 편집기의 은밀한 형식을 전달할 수 있습니다. 예를 들어, 흩어진 HTML 속성이나 남은 RTF 제어 단어는 특정 환경에서 생존할 수 있어 붙여넣은 텍스트가 입력한 것과 다르게 보일 수 있습니다. GPT CLEAN UP Tools는 텍스트를 읽기 쉽고 편집하기 쉽고 재사용하기 쉬운 단순하고 예측 가능한 기준선으로 되돌리는 데 집중합니다.",
+    "watermarksP3": "기술 신호를 고려하는 탐지기는 의심스러운 보이지 않는 문자 클러스터나 일관된 간격 이상을 찾을 수 있습니다. GPT CLEAN UP Tools는 ChatGPT AI 텍스트 정리 도구와 ChatGPT 텍스트 정리로 이러한 기술 신호를 제거합니다. 다시 강조하지만: 숨겨진 문자 제거는 재작성이나 저작권 마스킹과는 다릅니다. 디지털 텍스트의 기본 위생입니다.",
+    "benefitsTitle": "ChatGPT 텍스트 정리를 위해 GPT CLEAN UP Tools 사용의 이점",
+    "benefitsP1": "가독성과 표현이 즉시 개선됩니다. 한 편집기에서 잘 보이던 텍스트가 다른 편집기에서 무너지거나 늘어날 수 있습니다. 구두점과 간격을 예측 가능한 기본값으로 재설정함으로써 GPT CLEAN UP Tools는 줄이 올바르게 줄바꿈되고, 인용문이 일관되게 표시되며, 목록과 제목이 안정적으로 유지되도록 도와줍니다.",
+    "benefitsP2": "시스템 간 호환성이 증가합니다. 메모 앱, 학습 포털, CMS 및 PDF 사이에서 작업하는 경우 GPT CLEAN UP Tools의 깨끗하고 단순한 출력은 각 대상에 붙여넣을 때 안정적으로 작동합니다. 이는 마지막 순간 레이아웃 놀라움과 깨진 양식이 적다는 것을 의미합니다.",
+    "benefitsP3": "카운트와 제한이 의미가 있습니다. 숨겨진 문자는 총계를 부풀리거나 문자 제한 필드를 깨뜨릴 수 있습니다. ChatGPT 텍스트 정리 후에는 보는 숫자가 시스템이 계산하는 숫자입니다. 이는 장학금 답변 상자나 메타 설명과 같은 목표에 대한 초안 작성이 훨씬 더 간단해집니다.",
+    "useCasesTitle": "GPT CLEAN UP Tools 사용자 - 실용적인 사용 사례",
+    "useCases1": "학생과 학자들은 ChatGPT AI 텍스트 정리 도구를 사용하여 학교 포털에 깨끗하게 붙여넣을 수 있는 에세이, 응답 및 원고를 제출합니다. 참조는 읽을 수 있고, 단락 구분은 그대로 유지되며, 흩어진 문자가 카운트를 부풀리지 않습니다.",
+    "useCases2": "전문가와 작가는 제안서, 브리핑, 뉴스레터 및 블로그 초안에 GPT CLEAN UP Tools를 사용합니다. 깨끗한 텍스트는 기업 편집기 및 콘텐츠 관리 시스템 내에서 간격 오류를 수정하는 데 소요되는 시간을 줄입니다.",
+    "useCases3": "크리에이터와 마케터는 자신감을 가지고 캡션과 장문 콘텐츠를 게시합니다. ChatGPT 텍스트 정리 후 복사본은 독자를 산만하게 하거나 모바일에서 레이아웃을 깨는 기술적 결함 없이 일관된 목소리를 전달합니다.",
+    "useCases4": "연구원과 개발자는 조용한 유니코드 놀라움 없이 문서 및 README 콘텐츠를 붙여넣습니다. 인쇄되지 않는 문자를 제거하면 텍스트가 코드나 데이터 형식과 상호작용할 때 모호한 버그를 방지합니다.",
+    "howToUseTitle": "ChatGPT AI 텍스트 정리 도구 사용 방법",
+    "howToUse1": "콘텐츠를 복사합니다. ChatGPT와 같은 AI 시스템으로 생성하거나 개선한 텍스트를 선택하고 클립보드에 복사합니다.",
+    "howToUse2": "GPT CLEAN UP Tools에 붙여넣기. ChatGPT AI 텍스트 정리 도구 페이지를 열고 입력 영역에 텍스트를 붙여넣습니다.",
+    "howToUse3": "옵션 선택. 곡선 따옴표나 긴 대시를 유지하려면 해당 정규화를 비활성화하세요. 그렇지 않으면 기본값을 켜둡니다.",
+    "howToUse4": "정리. 텍스트 정리를 클릭하여 GPT CLEAN UP Tools를 실행합니다. GPT CLEAN UP Tools가 브라우저에서 완전히 작동하므로 작업이 즉시 완료됩니다.",
+    "howToUse5": "검토 및 복사. 결과를 살펴봅니다. 추가 줄바꿈이나 다른 대시 스타일을 원하면 조정하고 다시 정리를 클릭하세요. 출력을 복사하여 필요한 곳에 붙여넣습니다.",
+    "privacyTitle": "GPT CLEAN UP Tools의 개인정보 보호 및 보안",
+    "privacyP1": "개인정보 보호는 핵심 디자인 선택입니다. GPT CLEAN UP Tools는 브라우저에서 로컬로 텍스트를 처리합니다. 서버에 콘텐츠를 업로드하지 않고, 입력을 저장하지 않으며, 정리된 결과를 기록하지 않습니다. 이 아키텍처는 절충 없이 속도와 제어를 제공합니다.",
+    "privacyP2": "처리가 클라이언트 측에서 이루어지기 때문에 민감한 정보를 포함하는 초안에 GPT CLEAN UP Tools를 안전하게 사용할 수 있습니다. 항상 조직의 정책을 따르되, ChatGPT AI 텍스트 정리 도구 자체가 네트워크를 통해 텍스트를 전송하지 않는다는 것을 안심하세요.",
+    "privacyP3": "투명성이 중요합니다. GPT CLEAN UP Tools는 도구가 변경하는 내용(숨겨진 유니코드 제거, 구두점 정규화, 간격 정리)을 설명하여 출력이 어떻게 생성되었는지, 그리고 하류 편집기에서 예측 가능하게 작동하는 이유를 이해할 수 있도록 합니다.",
+    "detectionTitle": "AI 탐지, 오탐 및 실용적 제한",
+    "detectionP1": "많은 기관과 플랫폼이 텍스트를 검토하기 위해 자동화된 시스템을 사용합니다. 일부 시스템은 기술 신호에 집중하는 반면 다른 시스템은 문구와 구조를 분석합니다. GPT CLEAN UP Tools는 ChatGPT AI 텍스트 정리 도구와 ChatGPT 텍스트 정리로 기술적 측면을 다룹니다.",
+    "detectionP2": "텍스트 정리는 소프트웨어가 콘텐츠를 해석하는 방식을 왜곡할 수 있는 혼란의 피할 수 있는 원인(인쇄되지 않는 문자나 불규칙한 간격 등)을 제거합니다. 그러나 스타일 기반 분석은 별개입니다. 가장 신뢰할 수 있는 접근 방식은 깨끗한 형식과 자신의 목소리, 예시 및 관점을 결합하는 것입니다.",
+    "detectionP3": "GPT CLEAN UP Tools는 스타일을 변경한다고 주장하거나 시도하지 않습니다. 사명은 명확성과 호환성입니다. 귀하는 여전히 작성자입니다. 도구는 텍스트를 깔끔하게 유지합니다.",
+    "bestPracticesTitle": "ChatGPT 텍스트 정리 후 모범 사례",
+    "bestPractices1": "소규모 개인 수정을 추가합니다. 컨텍스트를 반영하는 구체적인 세부 사항, 경험 또는 참조를 삽입합니다. 깨끗한 형식과 개인 컨텍스트는 각각 단독으로 사용하는 것보다 더 강력하게 읽힙니다.",
+    "bestPractices2": "청중에 맞게 톤을 조정합니다. GPT CLEAN UP Tools 후 간결성이나 형식성을 조정하여 텍스트가 교실, 고객 또는 출판물의 기대와 일치하도록 합니다.",
+    "bestPractices3": "원본을 보관하세요. GPT CLEAN UP Tools가 깨끗한 출력을 생성하기 때문에 나중에 비교, 병합 또는 스타일 요소를 복원할 수 있도록 소스 초안을 보관하는 것이 유용합니다.",
+    "whyChooseTitle": "단일 목적 사이트보다 GPT CLEAN UP Tools를 선택하는 이유",
+    "whyChooseP1": "GPT CLEAN UP Tools는 단일 페이지 유틸리티 이상입니다. 플랫폼은 함께 작동하도록 설계된 AI 시대 도구의 성장하는 라이브러리입니다. ChatGPT AI 텍스트 정리 도구와 함께 공백 제거 도구, AI 워터마크 감지기, 단어 카운팅 유틸리티, PDF 병합/분할/압축 옵션 및 검색 최적화 도우미를 찾을 수 있습니다.",
+    "whyChooseP2": "이 폭은 실제 워크플로우가 지저분하기 때문에 중요합니다. 같은 세션에서 간격 정리, 초안 검사, PDF 변환 및 메타 설명 개선이 필요할 수 있습니다. GPT CLEAN UP Tools를 사용하면 사이트를 떠나거나 추적을 수락할 필요 없이 이를 수행할 수 있습니다.",
+    "cleanInstantlyTitle": "우리 도구로 ChatGPT 텍스트를 즉시 정리하세요",
+    "cleanInstantlyP": "게시하거나 공유하기 전에 ChatGPT 텍스트를 정리해야 하나요? 무료 온라인 정리 도구는 숨겨진 문자, AI 워터마크, 이상한 간격 및 형식 아티팩트를 제거하여 콘텐츠가 인간적이고 일관되며 전문적으로 보이도록 합니다. 텍스트를 붙여넣고 정리를 클릭하면 몇 초 만에 완료됩니다.",
+    "whyCleanTitle": "ChatGPT 텍스트를 정리해야 하는 이유",
+    "whyClean1": "숨겨진 문자: 제로폭 공백, 비분리 공백 및 흩어진 유니코드는 복사/붙여넣기, 검색 또는 단어 카운트를 깨뜨릴 수 있습니다.",
+    "whyClean2": "형식 노이즈: 추가 빈 줄, 이상한 글머리 기호 및 markdown 잔여물은 가독성을 감소시킵니다.",
+    "whyClean3": "일관성: 깨끗한 복사본은 UX, SEO 및 Docs, Word, CMS 또는 이메일 도구로의 이전을 개선합니다.",
+    "howToCleanTitle": "ChatGPT 텍스트 정리 방법 (빠른 단계)",
+    "howToClean1": "ChatGPT 출력을 위의 상자에 붙여넣습니다.",
+    "howToClean2": "정리를 클릭하여 ChatGPT 텍스트를 자동으로 정리합니다.",
+    "howToClean3": "정리된 결과 미리보기(이전/이후).",
+    "howToClean4": "최종 텍스트를 편집기, CMS 또는 문서로 복사하거나 다운로드합니다.",
+    "whatWeFixTitle": "우리 정리 도구가 수정하는 내용",
+    "whatWeFix1": "제로폭/인쇄되지 않는 문자(ZWSP, NBSP, BOM 등) 제거.",
+    "whatWeFix2": "공백, 구두점 및 줄바꿈 정규화.",
+    "whatWeFix3": "복사된 ChatGPT 응답에서 이상한 HTML/markdown 잔여물 제거.",
+    "whatWeFix4": "선택 사항: 선행/후행 공백을 자르고 여러 빈 줄을 축소합니다.",
+    "beforeAfterTitle": "이전 vs 이후 (예시)",
+    "beforeLabel": "이전 (원시 ChatGPT)",
+    "afterLabel": "이후 (정리됨)",
+    "relatedToolsTitle": "더 깨끗한 AI 출력을 위한 관련 도구",
+    "relatedToolsP": "가장 어려운 간격 문제의 경우 ChatGPT 공백 제거 도구를 사용하여 중복되거나 보이지 않는 공백을 적극적으로 제거하세요. 초안에 여전히 AI 패턴이 포함되어 있는지 확인하고 싶으신가요? ChatGPT 워터마크 감지기로 스캔하세요.",
+    "relatedTools1": "ChatGPT 공백 제거 도구: 중복/보이지 않는 공백을 제거하고 간격을 즉시 정리합니다.",
+    "relatedTools2": "ChatGPT 워터마크 감지기: AI 워터마크 패턴 및 형식 지문에 대한 텍스트 스캔.",
+    "bestPracticesTextTitle": "텍스트를 깨끗하게 유지하는 모범 사례",
+    "bestPracticesText1": "더 짧은 AI 출력을 재생성한 다음 편집 전에 ChatGPT 텍스트를 정리하세요.",
+    "bestPracticesText2": "가독성을 위해 제목(H2/H3), 짧은 단락 및 목록을 사용하세요.",
+    "bestPracticesText3": "수동 편집 후 최종 정리를 실행하여 새로운 아티팩트를 제거하세요.",
+    "conclusionTitle": "결론",
+    "conclusionP": "GPT CLEAN UP은 명확성, 개인정보 보호 및 신뢰할 수 있는 결과를 위해 구축되었습니다. 도구 간에 콘텐츠를 복사할 때마다 GPT Clean Up 및 ChatGPT 텍스트 정리를 위해 ChatGPT AI 텍스트 정리 도구를 사용하세요. 깨끗한 형식은 피할 수 있는 문제를 방지하고, 의미를 보존하며, 작업을 시스템 간에 이식 가능하게 유지합니다. AI 시대에 깨끗하고 편집기 안전한 텍스트를 위한 기반으로 GPT CLEAN UP을 북마크하세요.",
+    "learnMoreTitle": "더 알아보기",
+    "learnMoreText": "AI 텍스트를 깔끔하게 유지하는 방법에 대한 가이드를 읽어보세요:",
+    "learnMoreLink1": "ChatGPT 텍스트가 지저분해 보이는 이유",
+    "learnMoreAnd": "및",
+    "learnMoreLink2": "Word 및 Docs용 ChatGPT 형식 수정 도구"
+  },
+  "ToolCard": {
+    "openTool": "도구 열기"
+  },
+  "RelatedTools": {
+    "otherModelTools": "기타 {model} 도구",
+    "otherModeTools": "기타 {mode} 도구",
+    "otherWatermarkTools": "기타 워터마크 도구"
+  },
+  "SpaceRemoverTool": {
+    "inputLabel": "입력 텍스트",
+    "inputPlaceholder": "정리할 텍스트를 붙여넣으세요...",
+    "outputLabel": "출력",
+    "outputPlaceholder": "정리된 텍스트가 여기에 표시됩니다.",
+    "outputHelper": "준비되면 정리된 텍스트를 복사하세요.",
+    "primaryAction": "공백 제거"
+  },
+  "TextCleanerTool": {
+    "inputLabel": "입력 텍스트",
+    "inputPlaceholder": "정리할 텍스트를 붙여넣으세요...",
+    "outputLabel": "출력",
+    "outputPlaceholder": "정리된 텍스트가 여기에 표시됩니다",
+    "clean": "텍스트 정리",
+    "copyOutput": "출력 복사",
+    "removeBlankLines": "추가 빈 줄 제거",
+    "normalizeWhitespace": "공백 정규화",
+    "unicodeNormalize": "Unicode 정규화 (NFKC)",
+    "removeZeroWidth": "제로 너비 문자 제거"
+  },
+  "WatermarkDetectorTool": {
+    "inputLabel": "입력 텍스트",
+    "inputPlaceholder": "검사할 텍스트를 붙여넣으세요...",
+    "highlightedLabel": "강조 표시",
+    "highlightedPlaceholder": "감지된 워터마크가 빨간색으로 강조 표시되어 여기에 표시됩니다.",
+    "scan": "텍스트 스캔",
+    "results": "결과",
+    "copyReport": "보고서 복사",
+    "hiddenUnicode": "숨겨진/보이지 않는 Unicode를 찾았나요?",
+    "suspiciousWhitespace": "의심스러운 공백 패턴인가요?",
+    "repeatedPunctuation": "반복되는 구두점 패턴인가요?",
+    "zeroWidthNbspCount": "제로 너비 / NBSP 개수",
+    "bomCount": "BOM 개수",
+    "softHyphenCount": "소프트 하이픈 개수",
+    "summarySuffix": "결과는 가능한 형식 이상을 보여주며 작성자 또는 출처에 대한 보장은 아닙니다."
+  },
+  "LineSpacingTool": {
+    "inputLabel": "입력 텍스트",
+    "inputPlaceholder": "줄 간격을 조정할 텍스트를 붙여넣으세요...",
+    "outputLabel": "출력",
+    "outputPlaceholder": "줄 간격이 조정된 텍스트가 여기에 표시됩니다.",
+    "outputHelper": "준비되면 조정된 텍스트를 복사하세요.",
+    "lineSpacing": "줄 간격",
+    "single": "단일",
+    "onePointFive": "1.5",
+    "double": "이중",
+    "custom": "사용자 정의",
+    "customLineBreaks": "사용자 정의 줄바꿈",
+    "customHelp": "단락 사이의 줄바꿈 수 (1-10)",
+    "adjust": "줄 간격 조정"
+  },
+  "ToolPage": {
+    "faqTitle": "자주 묻는 질문",
+    "disclaimersTitle": "면책 조항",
+    "disclaimer1": "이 도구는 텍스트 정리/분석만 수행합니다.",
+    "disclaimer2": "결과는 정보 제공용이며 보장이 아닙니다.",
+    "disclaimer3": "책임감 있게 사용하고 플랫폼/게시자 정책을 따르세요."
+  },
+  "SpaceRemoverPage": {
+    "title": "{modelName} 공백 제거기",
+    "subtitle": "추가 공백을 제거하고 줄을 정리하여 깨끗하고 붙여넣기 준비된 텍스트를 만듭니다.",
+    "howItWorks": "작동 방식",
+    "howItWorks1": "줄바꿈을 유지하면서 반복되는 공백을 축소합니다.",
+    "howItWorks2": "더 깨끗한 단락을 위해 줄의 앞뒤 공백을 자릅니다.",
+    "howItWorks3": "도구 간 일관된 형식을 위해 탭과 줄 끝을 정규화합니다.",
+    "whatCanCant": "할 수 있는 것 / 할 수 없는 것",
+    "whatCanCant1": "일관되지 않은 간격으로 인한 형식 문제를 줄일 수 있습니다.",
+    "whatCanCant2": "작성자, 출처 또는 모델 ID를 확인할 수 없습니다.",
+    "whatCanCant3": "우회 도구가 아닙니다. 간격과 형식만 조정합니다.",
+    "whatCanCant4": "보장이 아닙니다. 책임감 있게 사용하고 게시하기 전에 출력을 검토하세요.",
+    "faqHeading": "{modelName} 공백 제거기 - 자주 묻는 질문",
+    "faqIntro": "이 FAQ는 일반적인 간격 문제, 도구가 변경하는 것 및 변경하지 않는 것을 다룹니다. 의도한 사용과 일치하는지 확인하려면 정리된 출력을 검토하세요."
+  },
+  "WatermarkDetectorPage": {
+    "title": "{modelName} 워터마크 감지기",
+    "subtitle": "숨겨진 Unicode 문자, 공백 패턴 및 반복되는 구두점과 같은 형식 아티팩트를 찾기 위해 텍스트를 스캔합니다.",
+    "howItWorks": "작동 방식",
+    "howItWorks1": "제로 너비 문자, BOM, NBSP 및 소프트 하이픈을 포함하여 숨겨진 또는 보이지 않는 Unicode를 스캔합니다.",
+    "howItWorks2": "과도한 간격이나 혼합된 탭/공백과 같은 공백 구조 문제를 확인합니다.",
+    "howItWorks3": "형식 아티팩트를 나타낼 수 있는 반복되는 구두점 패턴을 표시합니다.",
+    "whatCanCant": "할 수 있는 것 / 할 수 없는 것",
+    "whatCanCant1": "형식을 정리하고 일관성을 개선할 수 있도록 가능한 아티팩트를 강조할 수 있습니다.",
+    "whatCanCant2": "작성자를 확인하거나 독점 워터마크를 확실하게 감지할 수 없습니다.",
+    "whatCanCant3": "우회 도구가 아닙니다. 정보 신호만 보고합니다.",
+    "whatCanCant4": "보장이 아닙니다. 책임감 있게 사용하고 관련 정책을 따르세요.",
+    "faqHeading": "{modelName} 워터마크 감지기 - 자주 묻는 질문",
+    "faqIntroDefault": "이 답변은 스캔이 확인하는 내용과 결과를 해석하는 방법을 설명합니다. 감지기는 증거가 아닌 가능한 형식 아티팩트를 보고합니다."
+  },
+  "LineSpacingPage": {
+    "title": "{modelName} 줄 간격 도구",
+    "subtitle": "줄 간격을 단일, 1.5, 이중 또는 사용자 정의로 조정하여 깨끗하고 전문적인 형식을 만듭니다.",
+    "howItWorks": "작동 방식",
+    "howItWorks1": "단락 구조를 유지하면서 줄 사이에 선택한 간격을 적용합니다.",
+    "howItWorks2": "다양한 편집기에서 일관된 형식을 위해 줄바꿈을 정규화합니다.",
+    "howItWorks3": "특정 형식 요구 사항을 충족하기 위해 사용자 정의 간격을 허용합니다.",
+    "whatCanCant": "할 수 있는 것 / 할 수 없는 것",
+    "whatCanCant1": "줄 간격을 조정하여 가독성을 향상시킬 수 있습니다.",
+    "whatCanCant2": "내용이나 텍스트의 의미를 수정할 수 없습니다.",
+    "whatCanCant3": "재작성 도구가 아닙니다. 간격만 조정합니다.",
+    "whatCanCant4": "보장이 아닙니다. 게시하기 전에 출력을 검토하세요.",
+    "faqHeading": "{modelName} 줄 간격 도구 - 자주 묻는 질문",
+    "faqIntro": "이 FAQ는 줄 간격 도구를 사용하는 방법과 텍스트의 가독성을 개선하는 방법을 설명합니다."
+  },
+  "AboutPage": {
+    "title": "GPT CLEAN UP 소개",
+    "p1": "GPT CLEAN UP은 AI 생성 텍스트를 정리하고 형식화하는 간단한 도구 모음입니다. ChatGPT, Gemini, Claude 및 기타 모델의 응답을 붙여넣을 때 나타나는 지저분한 간격, 빈 줄 및 보이지 않는 문자를 제거하는 데 중점을 둡니다.",
+    "p2": "이 도구는 브라우저에서 실행됩니다 - 계정이나 로그인이 필요하지 않습니다. 우리는 OpenAI나 Google과 제휴하지 않으며 이 사이트는 AI 콘텐츠 작업 시 시간을 절약하기 위해 순수하게 구축되었습니다.",
+    "p3": "주요",
+    "chatgptTextCleaner": "ChatGPT 텍스트 정리기",
+    "or": "또는 전용",
+    "spaceRemover": "공백 제거기",
+    "ifSpacing": "를 사용해보세요. 간격이 가장 큰 문제인 경우."
+  },
+  "Site": {
+    "meta": {
+      "title": "GPT CLEAN UP - ChatGPT 텍스트 정리기 및 AI 워터마크 제거기",
+      "description": "AI 생성 텍스트를 정리하고 정규화합니다. 숨겨진 Unicode 문자를 제거하고 간격을 수정하며 Word, Docs 및 CMS용 깨끗한 텍스트를 준비합니다."
+    }
+  },
+  "ContactPage": {
+    "seoTitle": "문의하기 | GPT CLEAN UP",
+    "seoDescription": "GPT CLEAN UP에 문의하세요. AI 텍스트 정리 도구에 대한 질문을 도와드립니다.",
+    "title": "문의하기",
+    "subtitle": "질문이나 피드백이 있으신가요? 여러분의 의견을 듣고 싶습니다.",
+    "howToReach": "연락 방법",
+    "emailLabel": "이메일 보내기:"
+  },
+  "BlogPage": {
+    "seoTitle": "GPT CLEAN UP 블로그 - 지저분한 AI 텍스트 및 형식 수정",
+    "seoDescription": "AI 출력 정리, 형식 문제 수정 및 문서용 ChatGPT 또는 Gemini 텍스트 준비에 대한 실용적인 가이드."
+  },
+  "TermsPage": {
+    "metaTitle": "서비스 약관 | GPT CLEAN UP",
+    "metaDescription": "GPT CLEAN UP 도구의 서비스 약관.",
+    "title": "서비스 약관",
+    "lastUpdated": "최종 업데이트: 2023년 7월 7일",
+    "intro": "GPT CLEAN UP 웹사이트 및 도구(\"서비스\")를 사용하기 전에 이러한 서비스 약관(\"약관\")을 주의 깊게 읽어보세요.",
+    "section1Title": "1. 약관 수락",
+    "section1Text": "서비스에 액세스하거나 사용함으로써 귀하는 이러한 약관에 구속되는 데 동의합니다. 동의하지 않는 경우 즉시 서비스 사용을 중단해야 합니다.",
+    "section2Title": "2. 서비스 설명",
+    "section2Text1": "GPT CLEAN UP은 사용자가 텍스트의 가독성, 구조 및 형식을 개선하는 데 도움이 되도록 설계된 브라우저 기반 유틸리티를 제공합니다. 우리 도구는 주로 브라우저 내에서 작동하며 형식 불일치, 간격 문제, 보이지 않는 문자 또는 유사한 아티팩트를 제거할 수 있습니다.",
+    "section2Text2": "서비스는 \"있는 그대로\" 및 \"사용 가능한 대로\" 제공됩니다.",
+    "section3Title": "3. 허용된 사용",
+    "section3Text1": "귀하는 합법적이고 윤리적인 목적으로만 서비스를 사용하는 데 동의합니다.",
+    "section3Text2": "다음을 수행할 수 없습니다:",
+    "section3Item1": "적용 가능한 법률 또는 규정을 위반",
+    "section3Item2": "서비스를 사용하여 학술적 부정행위나 표절에 관여",
+    "section3Item3": "서비스를 사용하여 작업의 작성자 또는 출처를 잘못 표시",
+    "section3Item4": "서비스의 기능이나 보안을 방해하려고 시도",
+    "section3Item5": "자동화된 도구(봇, 스크래퍼, 크롤러)를 사용하여 데이터에 액세스하거나 추출",
+    "section3Item6": "불공정하거나 해로운 방식으로 서비스를 역공학, 복사 또는 악용하려고 시도"
+  },
+  "Footer": {
+    "discoverMore": "더 많은 도구 보기:",
+    "aboutTitle": "GPT CLEAN UP TOOLS 소개",
+    "aboutBlurb": "AI 텍스트를 깔끔하게 정리하는 무료 도구: 보이지 않는 문자 제거, 서식 수정, 불필요한 공백 정리.",
+    "exploreTitle": "탐색",
+    "topToolsTitle": "인기 도구",
+    "legalTitle": "법적 고지",
+    "links": {
+      "home": "홈",
+      "about": "회사 소개",
+      "contact": "문의하기",
+      "blog": "블로그"
+    },
+    "topTools": {
+      "chatgptSpaceRemover": "ChatGPT 공백 제거",
+      "chatgptWatermarkRemover": "ChatGPT 워터마크 제거",
+      "stripHtml": "HTML 제거"
+    },
+    "legal": {
+      "privacy": "개인정보 처리방침",
+      "terms": "서비스 약관",
+      "disclaimer": "면책 조항",
+      "cookies": "쿠키 정책"
+    },
+    "copyrightPrefix": "© 2026",
+    "tagline": " - 제로폭 공백과 숨겨진 유니코드 마커를 제거/수정하는 신뢰할 수 있는 ChatGPT 워터마크 감지기 및 AI 텍스트 클리너.",
+    "rights": "All rights reserved."
+  },
+  "FAQ": {
+    "title": "자주 묻는 질문",
+    "categories": {
+      "General": "일반",
+      "Technical": "기술",
+      "Usage": "사용",
+      "Detection and Limits": "탐지 및 제한",
+      "Compatibility and Formats": "호환성 및 형식",
+      "Privacy and Security": "개인정보 보호 및 보안",
+      "Advanced Workflow": "고급 워크플로",
+      "Troubleshooting and Comparison": "문제 해결 및 비교",
+      "Additional Questions": "추가 질문"
+    },
+    "home": {
+      "items": [
+        {
+          "question": "ChatGPT AI 텍스트 클리너란 무엇인가요?",
+          "answer": "GPT CLEAN UP의 ChatGPT AI 텍스트 클리너는 ChatGPT 텍스트 정리(종종 GPT Clean Up이라고 함)를 수행하는 브라우저 기반 유틸리티입니다. 제로폭 공백, NBSP 및 BOM과 같은 숨겨진 유니코드를 제거하고, 선택 시 구두점을 정규화하며, 텍스트가 예측 가능하게 동작하도록 간격을 안정화합니다. 패러프레이징 도구와 달리 GPT CLEAN UP은 기술적 정리에만 집중하여 의미와 톤을 보존하면서 편집기 안전한 일반 텍스트를 제공합니다."
+        },
+        {
+          "question": "GPT Clean Up에는 무엇이 포함되나요?",
+          "answer": "GPT CLEAN UP의 GPT Clean Up에는 네 가지 핵심 단계가 포함됩니다: 보이지 않는 문자 제거, 구두점 정규화, 중복 공백 축소, 깨끗한 일반 텍스트 출력. 이 순서는 에세이, 보고서 및 게시물이 LMS 및 CMS 편집기에 깨끗하게 붙여넣을 수 있도록 도와줍니다. ChatGPT AI 텍스트 클리너는 속도, 개인정보 보호 및 명확성을 위해 설계되었습니다."
+        },
+        {
+          "question": "ChatGPT 텍스트 정리는 탐지기 우회와 같은 것인가요?",
+          "answer": "아닙니다. GPT CLEAN UP은 피할 수 있는 아티팩트를 제거하는 기술적 정리를 제공합니다. 인간 스타일을 모방하려고 시도하지 않습니다. 일부 자동화 시스템은 형식 이상의 쓰기 패턴을 분석합니다. ChatGPT 텍스트 정리는 기술적 노이즈를 줄여 콘텐츠를 더 명확하고 호환 가능하게 만듭니다."
+        },
+        {
+          "question": "AI 보조 텍스트에 숨겨진 문자가 포함되는 이유는 무엇인가요?",
+          "answer": "리치 편집기 간 복사 및 붙여넣기는 인쇄되지 않는 유니코드와 은밀한 형식을 가져올 수 있습니다. GPT CLEAN UP은 ChatGPT AI 텍스트 클리너로 이러한 아티팩트를 대상으로 하여 텍스트가 안정적이고 읽기 쉽며 플랫폼 간에 이식 가능하도록 합니다. 이것은 디지털 쓰기를 위한 실용적인 위생이며, 저작의 대체재가 아닙니다."
+        },
+        {
+          "question": "누가 GPT CLEAN UP을 사용해야 하나요?",
+          "answer": "깨끗하고 신뢰할 수 있는 텍스트가 필요한 학생, 전문가, 크리에이터, 연구원 및 팀이 GPT CLEAN UP의 이점을 얻습니다. 앱, 편집기 또는 포털 간에 콘텐츠를 이동하는 경우 ChatGPT 텍스트 정리는 간격 오류와 보이지 않는 문자가 작업을 방해하는 것을 방지합니다."
+        },
+        {
+          "question": "6. 제로폭 문자란 무엇이며 왜 제거해야 하나요?",
+          "answer": "U+200B와 같은 제로폭 문자는 일반 편집기에서는 보이지 않지만 계산, 줄바꿈 및 검증을 방해할 수 있습니다. GPT CLEAN UP은 GPT Clean Up 중에 이를 제거하여 ChatGPT AI 텍스트 클리너가 시스템이 일관되게 해석하는 텍스트를 출력하도록 합니다. 이것은 양식, 문서 또는 코드 블록에 붙여넣을 때 신뢰성을 향상시킵니다."
+        },
+        {
+          "question": "7. 도구는 NBSP (U+00A0)를 어떻게 처리하나요?",
+          "answer": "줄바꿈 금지 공백은 자연스러운 줄바꿈을 방지하고 이상한 간격을 만들 수 있습니다. GPT CLEAN UP은 ChatGPT 텍스트 정리 중에 NBSP를 표준 공백으로 교체하여 단락이 정상적으로 흐르도록 합니다. 목표는 원하지 않는 레이아웃 문제 없이 예측 가능하고 읽기 쉬운 출력입니다."
+        },
+        {
+          "question": "8. 구두점이 기본적으로 변경되나요?",
+          "answer": "GPT CLEAN UP에서 구두점 정규화를 제어할 수 있습니다. 활성화되면 ChatGPT AI 텍스트 클리너는 곡선 따옴표를 직선 따옴표로 변환하고 em/en 대시를 하이픈으로 변환합니다. 곡선 따옴표나 em 대시를 유지하려면 GPT Clean Up 전에 정규화를 끄세요."
+        },
+        {
+          "question": "9. 도구는 코드와 Markdown을 보존하나요?",
+          "answer": "예. GPT CLEAN UP은 구문 문자를 피하면서 인쇄되지 않는 유니코드와 은밀한 형식을 대상으로 합니다. 결과적으로 ChatGPT 텍스트 정리는 코드 토큰과 Markdown 구조를 그대로 유지하면서 복사-붙여넣기 신뢰성을 향상시킵니다."
+        },
+        {
+          "question": "10. BOM (U+FEFF) 및 방치된 제어 코드는 어떻나요?",
+          "answer": "GPT CLEAN UP의 ChatGPT AI 텍스트 클리너는 시스템을 혼란스럽게 할 수 있는 BOM과 모호한 제어 코드를 제거합니다. 이것은 깨끗한 일반 텍스트를 모든 대상에 준비시키는 GPT Clean Up 순서의 일부입니다."
+        },
+        {
+          "question": "11. ChatGPT 텍스트 정리를 어떻게 실행하나요?",
+          "answer": "GPT CLEAN UP을 열고 초안을 붙여넣고 정규화 옵션을 선택한 다음 정리 버튼을 클릭하세요. ChatGPT AI 텍스트 클리너는 처리가 브라우저에서 로컬로 이루어지기 때문에 즉시 실행됩니다. 출력을 복사하여 필요한 곳에 붙여넣으세요."
+        },
+        {
+          "question": "12. 최대 길이가 있나요?",
+          "answer": "최신 브라우저는 긴 입력을 잘 처리합니다. GPT CLEAN UP은 에세이 및 보고서에 맞게 조정되었습니다. 실용적인 제한에 도달하면 텍스트를 분할하고 GPT Clean Up을 두 번 실행한 다음 출력을 다시 결합하세요."
+        },
+        {
+          "question": "13. 모바일 및 태블릿에서 작동하나요?",
+          "answer": "예. GPT CLEAN UP은 최신 모바일 브라우저를 지원하므로 어디서나 ChatGPT 텍스트 정리를 수행할 수 있습니다. 인터페이스는 빠르고 이동 중 사용에 충분히 간단합니다."
+        },
+        {
+          "question": "14. 정리 규칙을 사용자 정의할 수 있나요?",
+          "answer": "예. GPT CLEAN UP을 사용하면 구두점 정규화 및 간격 동작을 전환할 수 있습니다. 즉, ChatGPT AI 텍스트 클리너는 대상 편집기에 따라 엄격하거나 부드러울 수 있습니다."
+        },
+        {
+          "question": "15. 정리 후에도 Turnitin이 내 글을 표시하나요?",
+          "answer": "GPT CLEAN UP은 ChatGPT 텍스트 정리로 숨겨진 유니코드와 이상한 간격을 제거하여 기술적 신호를 줄입니다. 일부 시스템은 스타일도 분석하는데, 정리는 이를 변경하지 않습니다. 모범 사례는 GPT Clean Up을 귀하의 관점을 반영하는 진정한 편집과 결합하는 것입니다."
+        },
+        {
+          "question": "16. GPTZero 및 유사한 도구는 어떻나요?",
+          "answer": "GPT CLEAN UP은 자동화된 검사를 영향을 줄 수 있는 기술적 아티팩트를 처리합니다. 인간 스타일을 모방하려고 시도하지 않습니다. ChatGPT AI 텍스트 클리너는 명확성, 호환성 및 예측 가능한 형식에 집중합니다."
+        },
+        {
+          "question": "17. 완전한 우회가 현실적인가요?",
+          "answer": "어떤 솔루션도 이를 약속할 수 없습니다. GPT CLEAN UP은 텍스트가 기술적으로 건전하도록 실용적이고 투명한 정리를 제공합니다. 진정한 쓰기 선택은 여전히 귀하에게 달려 있습니다."
+        },
+        {
+          "question": "18. GPT CLEAN UP은 다국어 텍스트를 지원하나요?",
+          "answer": "예. GPT CLEAN UP은 ChatGPT 텍스트 정리 중에 대부분의 유니코드 스크립트에서 합법적인 문자를 보존하면서 인쇄되지 않는 문자를 제거합니다. 이것은 분음 부호, 합자 또는 RTL 방향을 사용하는 언어로 콘텐츠를 읽을 수 있게 유지합니다."
+        },
+        {
+          "question": "19. 하이퍼링크와 목록이 정리 후에도 유지되나요?",
+          "answer": "예. ChatGPT AI 텍스트 클리너는 문자 수준 아티팩트 및 간격 정리에 집중합니다. 글머리 기호 목록, 번호가 매겨진 단계 및 링크는 일반 텍스트에서 계속 사용할 수 있습니다."
+        },
+        {
+          "question": "20. JSON, CSV, XML 또는 YAML을 정리할 수 있나요?",
+          "answer": "예. GPT CLEAN UP은 구조적 구문을 건드리지 않고 숨겨진 문자를 제거하므로 ChatGPT 텍스트 정리는 데이터가 구문 분석 가능하게 유지되도록 도와줍니다."
+        },
+        {
+          "question": "21. 출력이 SEO에 친화적인가요?",
+          "answer": "GPT CLEAN UP의 더 깨끗한 텍스트는 종종 크롤링 가능성을 향상시키고 인코딩 예외를 줄입니다. GPT Clean Up은 주제를 변경하지 않습니다. 텍스트가 의도한 대로 렌더링되도록 보장합니다."
+        },
+        {
+          "question": "22. 내 텍스트가 서버에 업로드되나요?",
+          "answer": "아닙니다. GPT CLEAN UP은 브라우저에서 로컬로 ChatGPT AI 텍스트 클리너를 실행합니다. ChatGPT 텍스트 정리는 텍스트를 전송하거나 서버에 저장하지 않습니다."
+        },
+        {
+          "question": "23. 콘텐츠를 기록하거나 분석하나요?",
+          "answer": "아닙니다. GPT CLEAN UP은 입력 또는 출력을 기록하지 않습니다. GPT Clean Up은 개인정보 보호 및 속도를 위해 설계된 클라이언트 측 작업입니다."
+        },
+        {
+          "question": "24. 기밀 초안에 사용할 수 있나요?",
+          "answer": "예. GPT CLEAN UP은 로컬이기 때문에 ChatGPT AI 텍스트 클리너는 기밀 텍스트를 네트워크를 통해 전송하지 않습니다. 조직의 정책을 따르고 기록을 위해 원본을 보관하세요."
+        },
+        {
+          "question": "25. 곡선 따옴표와 em 대시를 유지할 수 있나요?",
+          "answer": "예. GPT CLEAN UP에서 구두점 정규화를 비활성화하여 ChatGPT 텍스트 정리가 해당 문자를 그대로 유지하도록 할 수 있습니다. 최대 호환성이 필요한 경우 직선 따옴표와 하이픈에 대한 정규화를 활성화하세요."
+        },
+        {
+          "question": "26. 이전과 이후를 비교할 수 있나요?",
+          "answer": "변경 사항을 이해하기 위해 소스와 비교하여 정리된 출력을 검토할 수 있습니다. GPT CLEAN UP은 ChatGPT 텍스트 정리를 투명하고 예측 가능하게 유지합니다."
+        },
+        {
+          "question": "27. 대량 또는 API 액세스를 지원하나요?",
+          "answer": "배치 옵션을 탐색하고 있습니다. 현재 GPT CLEAN UP은 브라우저 내 GPT Clean Up으로 신뢰성과 개인정보 보호를 강조합니다."
+        },
+        {
+          "question": "28. 다른 편집기에서 간격이 여전히 이상해 보입니다 - 왜 그런가요?",
+          "answer": "일부 편집기는 붙여넣을 때 자동으로 형식을 지정합니다. 일반 텍스트로 붙여넣거나 조정된 간격으로 GPT CLEAN UP을 다시 실행해 보세요. ChatGPT 텍스트 정리는 아티팩트를 제거하지만 다운스트림 편집기는 추가 규칙을 부과할 수 있습니다."
+        },
+        {
+          "question": "29. GPT CLEAN UP은 단일 용도 사이트와 어떻게 다른가요?",
+          "answer": "GPT CLEAN UP은 플랫폼입니다. ChatGPT AI 텍스트 클리너 외에도 간격 도구, 탐지기, PDF 및 SEO 도우미 등을 찾을 수 있습니다. 이 생태계는 깨끗하고 이식 가능한 텍스트를 위한 종단 간 워크플로를 지원합니다."
+        },
+        {
+          "question": "30. 기능을 어디서 요청할 수 있나요?",
+          "answer": "GPT CLEAN UP의 연락처 링크를 사용하여 ChatGPT AI 텍스트 클리너 및 전체 GPT Clean Up 경험에 대한 개선 사항을 제안하세요."
+        },
+        {
+          "question": "31. GPT CLEAN UP은 특정 편집기를 위해 ChatGPT 텍스트 정리를 사용자 정의할 수 있나요?",
+          "answer": "예. GPT CLEAN UP을 사용하면 정규화를 조정하여 ChatGPT AI 텍스트 클리너가 엄격한 편집기 및 양식 필드와 정렬되도록 할 수 있습니다. 곡선 따옴표를 유지하거나 em 대시를 유지하거나 최대 호환성을 위해 ASCII를 선호할 수 있습니다. 이 유연성은 GPT Clean Up이 붙여넣는 위치에서 올바르게 동작하는 텍스트를 생성하도록 보장합니다."
+        },
+        {
+          "question": "32. GPT CLEAN UP은 gpt clean up 워크플로의 Quillbot 또는 재작성 도구와 어떻게 다른가요?",
+          "answer": "패러프레이저는 문장을 재작성하고 의미를 변경할 수 있습니다. GPT CLEAN UP은 AI 텍스트 정리에 집중하여 메시지, 인용 및 앵커를 보존하면서 워터마크와 같은 토큰 패턴을 정규화합니다. 이 접근 방식은 무거운 패러프레이징보다 SEO 일관성과 더 안전한 편집을 지원합니다."
+        },
+        {
+          "question": "33. ChatGPT AI 텍스트 클리너는 Jasper(구 Jarvis), Copy.ai, Writesonic 또는 Sudowrite의 콘텐츠에 도움이 될 수 있나요?",
+          "answer": "예. 많은 현대적인 어시스턴트가 통계적 특징을 공유합니다. GPT CLEAN UP은 Jasper(Jarvis), Copy.ai, Writesonic, Sudowrite, Claude, Gemini, Llama 기반 도구 등으로 생성된 초안에서 gpt clean up을 수행하여 감지 가능한 마커를 줄이면서 귀하의 목소리를 유지합니다."
+        },
+        {
+          "question": "34. AI 텍스트 정리가 대상으로 하는 주요 AI '워터마크' 유형은 무엇인가요?",
+          "answer": "실제로 대부분의 플래그는 토큰 규칙성, 반복, 이상한 Unicode/제로폭 문자, 간격 아티팩트 및 과도하게 템플릿화된 문구에서 발생합니다. GPT CLEAN UP은 초안을 대폭 수정하지 않고 gpt clean up 중에 이러한 패턴에 집중합니다."
+        },
+        {
+          "question": "35. GPT clean up은 브랜드 스타일 가이드, 음성 톤 또는 숫자 데이터를 변경하나요?",
+          "answer": "아닙니다. ChatGPT AI 텍스트 클리너는 톤, 브랜드 용어, 수치 및 참조를 보존합니다. AI 텍스트 정리 후 항상 숫자 테이블 및 인라인 통계를 교정하여 형식을 확인하세요."
+        },
+        {
+          "question": "37. GPT CLEAN UP은 Gemini/Bard, Claude 3, Llama 3 및 Mistral 출력에 도움이 되나요?",
+          "answer": "예. 우리의 AI 텍스트 정리는 인기 있는 모델(Gemini, Claude, Llama, Mistral 등)에서 공통 통계 패턴을 정규화합니다. 최상의 결과를 위해 gpt clean up 후 가벼운 인간 편집을 추가하세요."
+        },
+        {
+          "question": "38. 태그를 깨지 않고 HTML/Markdown에서 gpt clean up을 사용할 수 있나요?",
+          "answer": "예. 콘텐츠를 붙여넣고 AI 텍스트 정리를 실행하세요. 간격과 토큰 규칙성이 정규화되는 동안 의미는 그대로 유지됩니다. 정리 후 항상 CMS에서 미리보기를 확인하세요."
+        },
+        {
+          "question": "39. 매우 긴 문서나 전자책에 대해 고려해야 할 제한 사항은 무엇인가요?",
+          "answer": "안정성을 위해 패스당 8-12k 문자를 처리하세요. 장을 분할하고 각각에 ChatGPT AI 텍스트 클리너를 실행한 다음 병합하세요. 이렇게 하면 gpt clean up이 빠르고 일관되게 유지됩니다."
+        },
+        {
+          "question": "40. GPT CLEAN UP은 GPTZero, Originality.ai 또는 Turnitin과 같은 탐지기의 오탐지를 줄이는 데 도움이 되나요?",
+          "answer": "워터마크 패턴을 정규화하여 AI 가능성 신호를 낮추는 경우가 많지만 어떤 도구도 우회를 보장할 수 없습니다. 최상의 결과를 위해 AI 텍스트 정리를 고유한 통찰력, 인용 및 편집과 결합하세요."
+        },
+        {
+          "question": "41. SEO 최적화(제목, 링크, 스키마) 전에 또는 후에 gpt clean up을 실행해야 하나요?",
+          "answer": "먼저 ChatGPT AI 텍스트 클리너를 실행하여 텍스트를 안정화한 다음 제목, 내부 링크 및 스키마를 최적화하세요. 이렇게 하면 SEO 변경 사항이 그대로 유지되면서 AI 패턴을 최소화합니다."
+        },
+        {
+          "question": "42. Jasper(Jarvis) 또는 Copy.ai 초안과 함께 사용하는 최상의 워크플로는 무엇인가요?",
+          "answer": "초안을 생성하세요. 2) GPT CLEAN UP에서 gpt clean up을 실행하세요. 3) 브랜드 톤과 예제를 추가하세요. 4) SEO를 최적화하세요. 5) 게시하세요. 이 계층화된 흐름은 진정성을 유지하고 AI 서명을 줄입니다."
+        },
+        {
+          "question": "43. GPT CLEAN UP은 AI 보조 초안을 정리하는 동안 학술적 무결성을 지원할 수 있나요?",
+          "answer": "예. GPT CLEAN UP은 오탐지를 유발할 수 있는 기술적 아티팩트를 제거하지만 학술적 무결성은 적절한 귀속, 원본 분석 및 기관 정책 준수가 필요합니다. 인용, 사실 확인 및 자신의 비판적 사고를 포함하는 투명한 워크플로의 일부로 ChatGPT AI 텍스트 클리너를 사용하세요."
+        },
+        {
+          "question": "GPT clean up은 가독성을 향상시키거나 패턴만 제거하나요?",
+          "answer": "목표는 자연스러운 리듬이며 재작성이 아닙니다. 많은 사용자가 ChatGPT AI 텍스트 클리너를 통과한 후 반복적인 시퀀스와 간격 이상이 줄어들어 가독성이 향상되었다고 보고합니다."
+        },
+        {
+          "question": "법률, 의료 또는 금융 텍스트에 도구를 안전하게 사용할 수 있나요?",
+          "answer": "예, 하지만 규정 준수는 여전히 귀하의 책임입니다. AI 텍스트 정리를 사용하여 구조를 정규화한 다음 도메인 전문가가 사실과 언어를 검토하도록 하세요."
+        },
+        {
+          "question": "GPT CLEAN UP은 앵커, 각주 및 상호 참조를 보존하나요?",
+          "answer": "예. 제거기는 통계적 신호와 숨겨진 문자를 대상으로 하며 참조는 아닙니다. gpt clean up 후 앵커 텍스트와 번호 매기기를 다시 확인하세요."
+        },
+        {
+          "question": "GPT CLEAN UP은 다국어 초안(스페인어, 프랑스어, 독일어, 아랍어 등)과 어떻게 동작하나요?",
+          "answer": "많은 언어를 지원합니다. 토큰 분포는 언어마다 다르므로 항상 정리된 텍스트를 훑어보고 정리 후 관용구와 구두점을 확인하세요."
+        },
+        {
+          "question": "GPT clean up은 AI 생성 코드 주석, README 또는 기술 문서를 정리할 수 있나요?",
+          "answer": "예. 주석의 로봇 문구를 부드럽게 하면서 코드 블록을 그대로 유지합니다. ChatGPT AI 텍스트 클리너 후 linters/테스트를 실행하여 형식을 확인하세요."
+        },
+        {
+          "question": "매우 템플릿화된 AI 콘텐츠에 대한 현실적인 기대는 무엇인가요?",
+          "answer": "AI 텍스트 정리는 반복성과 플래그를 줄이지만 템플릿화된 초안은 여전히 일반적으로 느껴질 수 있습니다. 예제, 데이터 및 분석을 추가하여 독창성을 복원하세요."
+        },
+        {
+          "question": "GPT CLEAN UP은 제로폭 문자, 줄바꿈 금지 공백 및 이상한 Unicode를 제거하나요?",
+          "answer": "예. 도구는 탐지기에 의해 자주 포착되는 제로폭, nbsp 및 유사한 숨겨진 마커를 정규화하여 더 안전한 gpt clean up을 지원합니다."
+        },
+        {
+          "question": "최상의 결과를 위해 AI 텍스트 정리와 인간 편집을 어떻게 결합하나요?",
+          "answer": "먼저 ChatGPT AI 텍스트 클리너를 사용하여 패턴을 정규화한 다음 명확성을 위해 개선하고 소스를 추가하며 브랜드 음성을 보장하세요. 이 두 단계 접근 방식은 가장 자연스러운 결과를 생성합니다."
+        },
+        {
+          "question": "GPT CLEAN UP은 LLM에서 초안을 후번역하는 현지화 팀을 도울 수 있나요?",
+          "answer": "예. gpt clean up을 사용한 후 MT 정리는 반복적인 문구와 간격 아티팩트를 완화할 수 있습니다. 네이티브 편집자는 여전히 관용구와 스타일을 최종 결정해야 합니다."
+        },
+        {
+          "question": "GPT clean up은 SEO를 위한 키워드 순서, 구조화된 데이터 또는 메타 태그에 영향을 미치나요?",
+          "answer": "아닙니다. GPT CLEAN UP은 반복 패턴을 정규화하는 동시에 의도한 키워드 순서나 스키마 속성을 수정하는 것을 피합니다."
+        },
+        {
+          "question": "에이전시는 어떻게 GPT CLEAN UP을 대규모로 사용해야 하나요?",
+          "answer": "섹션에서 병렬로 AI 텍스트 정리를 실행하고 내부 체크리스트를 유지하며 다가오는 API/배치 기능을 고려하세요. 이것은 계정 간 음성을 표준화합니다."
+        },
+        {
+          "question": "GPT CLEAN UP은 클라이언트 측 개인정보 보호가 필요한 팀을 위한 gptcleanup 대안인가요?",
+          "answer": "예. 많은 사용자가 클라이언트 측 처리 및 ChatGPT AI 텍스트 클리너 워크플로에 맞춘 빠른 UI로 인해 이를 gptcleanup 대안으로 채택합니다."
+        },
+        {
+          "question": "GPT clean up은 Claude, Gemini, Llama 및 Mistral 출력에서 동일하게 작동하나요?",
+          "answer": "패턴은 모델마다 다르지만 GPT CLEAN UP은 생태계 전반에 걸쳐 공통 신호를 대상으로 합니다. 항상 편집된 구절을 검토하여 뉘앙스와 도메인 정확성을 확인하세요."
+        },
+        {
+          "question": "마켓플레이스 또는 UGC 플랫폼을 위한 콘텐츠를 준비하기 위해 GPT CLEAN UP을 사용할 수 있나요?",
+          "answer": "예. AI 텍스트 정리로 초안을 정규화한 다음 제출 전에 플랫폼 정책에 따라 톤과 공개를 사용자 정의하세요."
+        },
+        {
+          "question": "정리 후 탐지기가 여전히 내 텍스트를 플래그하는 경우 무엇을 변경해야 하나요?",
+          "answer": "인간 편집을 늘리세요: 문장 길이를 다양하게 하고 원본 예제/데이터를 추가하며 템플릿화된 문구를 줄이세요. 간격 아티팩트가 지속되면 gpt clean up을 다시 실행하세요."
+        },
+        {
+          "question": "GPT CLEAN UP은 지식 기반 및 도움말 센터에 사용할 수 있나요?",
+          "answer": "예. 단계와 코드 스니펫을 보존하면서 톤을 통합하는 데 도움이 됩니다. AI 텍스트 정리 후 링크, 스크린샷 및 버전 번호를 확인하세요."
+        },
+        {
+          "question": "AI 텍스트 정리가 수정할 수 있는 일반적인 형식 문제는 무엇인가요?",
+          "answer": "숨겨진 기호, 이상한 간격, 불량 속성 및 반복된 기능 단어. GPT CLEAN UP은 구조를 존중하면서 이러한 문제를 해결합니다."
+        },
+        {
+          "question": "GPT CLEAN UP은 아랍어 또는 히브리어와 같은 오른쪽에서 왼쪽 언어를 지원하나요?",
+          "answer": "예. gpt clean up 후 CMS 미리보기에서 방향성과 구두점 간격을 확인하여 레이아웃 무결성을 보장하세요."
+        },
+        {
+          "question": "ChatGPT AI 텍스트 클리너는 소셜 캡션 및 광고에 유용한가요?",
+          "answer": "예. 짧은 형식 복사는 CTA와 브랜드 음성을 유지하면서 로봇 리듬을 제거하기 위한 정규화의 이점을 얻습니다."
+        },
+        {
+          "question": "GPT clean up은 내부 링크에 중요한 앵커 텍스트를 변경하나요?",
+          "answer": "아닙니다. AI 텍스트 정리는 앵커와 링크 대상을 보존합니다. 게시 후 SEO 플러그인으로 다시 확인하세요."
+        },
+        {
+          "question": "제거기는 새로운 워터마킹 또는 탐지 방법을 추적하기 위해 얼마나 자주 업데이트되나요?",
+          "answer": "LLM 및 탐지기 전반에 걸쳐 워터마킹/탐지가 진화함에 따라 GPT CLEAN UP이 효과적으로 유지되도록 정기적으로 반복합니다."
+        },
+        {
+          "question": "GPT clean up 중에 정확히 무엇이 변경되었는지 미리 볼 수 있나요?",
+          "answer": "예. 전후 패널을 사용하여 메시지를 그대로 유지하면서 ChatGPT AI 텍스트 클리너가 정규화한 내용을 확인하세요."
+        },
+        {
+          "question": "브라우저 확장 또는 VS Code 통합이 계획되어 있나요?",
+          "answer": "예. 가벼운 확장 및 편집기 통합이 AI 텍스트 정리를 간소화하기 위해 로드맵에 있습니다."
+        },
+        {
+          "question": "GPT clean up은 프리미엄 출판물의 편집 수용에 도움이 되나요?",
+          "answer": "종종 리듬을 개선하고 반복적인 문구를 줄입니다. 편집자는 여전히 정리와 함께 강력한 보고, 음성 및 소싱을 기대합니다."
+        },
+        {
+          "question": "GPT CLEAN UP은 Perplexity, You.com 또는 Neeva 스타일 어시스턴트와 함께 작동하나요?",
+          "answer": "예. 이러한 도구의 요약 및 인용에서 AI 텍스트 정리를 실행한 다음 링크와 귀속을 확인할 수 있습니다."
+        },
+        {
+          "question": "학술 또는 규정 준수 컨텍스트에 대해 고려해야 할 면책 조항은 무엇인가요?",
+          "answer": "필요한 경우 AI 지원을 공개하고 소스를 적절히 인용하며 gpt clean up을 형식 지정 도구로 취급하세요 - 탐지기 우회가 아닙니다."
+        },
+        {
+          "question": "AI 텍스트 정리는 LLM 출력의 제목, 테이블 및 목록을 보존하나요?",
+          "answer": "예. 문서 구조가 아닌 통계 패턴과 숨겨진 문자를 대상으로 합니다. 붙여넣기 후 테이블 정렬을 검토하세요."
+        },
+        {
+          "question": "GPT CLEAN UP은 다국어 SEO(hreflang 사이트)에 도움이 되나요?",
+          "answer": "예 - gpt clean up으로 로케일별로 초안을 정규화한 다음 로컬 편집자가 각 시장에 대한 관용구와 규정 준수를 최종 결정합니다."
+        },
+        {
+          "question": "엔터프라이즈 편집 패스(스타일, 법률, 브랜드) 전에 또는 후에 정리를 실행해야 하나요?",
+          "answer": "먼저 ChatGPT AI 텍스트 클리너를 실행하여 텍스트를 안정화하세요. 후속 법률/브랜드 편집은 아티팩트를 다시 도입하지 않고 그대로 유지됩니다."
+        },
+        {
+          "question": "GPT CLEAN UP은 성적표, 팟캐스트 및 인터뷰 기록에 사용할 수 있나요?",
+          "answer": "예. AI 텍스트 정리는 반복적인 채우기와 간격 문제를 부드럽게 합니다. 인간 편집은 여전히 내러티브 흐름과 맥락을 만들어야 합니다."
+        },
+        {
+          "question": "도구는 FAQ, 용어집 또는 API 문서와 같은 구조화된 콘텐츠에 영향을 미치나요?",
+          "answer": "구조를 보존합니다. FAQ 및 용어집의 경우 키워드를 유지하면서 드리프트를 방지하기 위해 각 항목에서 gpt clean up을 실행하세요."
+        },
+        {
+          "question": "과도한 정리 또는 스타일적 플레어 손실의 위험이 있나요?",
+          "answer": "최소입니다. 제거기는 미묘한 정규화를 목표로 합니다. 스타일이 평평하게 느껴지면 AI 텍스트 정리 후 인간 변형과 예제를 추가하세요."
+        },
+        {
+          "question": "GPT CLEAN UP은 제로폭 또는 nbsp 아티팩트에 대한 수동 찾기 및 바꾸기와 어떻게 비교되나요?",
+          "answer": "수동 정리는 더 깊은 토큰 패턴을 놓칩니다. GPT CLEAN UP은 한 번의 패스에서 숨겨진 문자 제거와 통계 정규화를 모두 자동화합니다."
+        },
+        {
+          "question": "GPT CLEAN UP은 규정 준수 문서(GDPR, HIPAA, SOC 2) 작성에 도움이 될 수 있나요?",
+          "answer": "초안 아티팩트를 정규화할 수 있지만 규정 준수 정확성과 법적 검토가 필수적입니다. gpt clean up을 형식 지정 보조 도구로만 취급하세요."
+        },
+        {
+          "question": "매우 공식적인 AI 제품 리뷰에서 어떤 개선을 기대할 수 있나요?",
+          "answer": "덜 반복적인 문구와 더 자연스러운 흐름. 신뢰성과 순위를 위해 정리 후 고유한 테스트 노트와 사진을 추가하세요."
+        },
+        {
+          "question": "제거기는 인간과 AI 텍스트를 혼합하는 하이브리드 초안에서 작동하나요?",
+          "answer": "예. GPT CLEAN UP은 혼합 저자권을 위해 설계되었습니다. AI 텍스트 정리는 인간 편집을 보존하면서 일관성을 가져옵니다."
+        },
+        {
+          "question": "GPT CLEAN UP은 Jasper(Jarvis) 및 Copy.ai 스택으로 작업하는 에이전시를 위한 실행 가능한 gptcleanup 대안인가요?",
+          "answer": "예. 에이전시는 클라이언트 측 개인정보 보호, 속도 및 대규모 콘텐츠 파이프라인에서 ChatGPT AI 텍스트 클리너를 사용한 자연스러운 결과로 인해 이를 gptcleanup 대안으로 사용합니다."
+        },
+        {
+          "question": "\"ChatGPT 텍스트 정리\"는 실제로 무엇을 하나요?",
+          "answer": "보이지 않는 문자를 제거하고, 간격/줄바꿈을 정규화하며, 남은 HTML/markdown을 제거하여 텍스트를 쉽게 복사, 검색 및 게시할 수 있도록 합니다."
+        },
+        {
+          "question": "정리가 내 의미나 톤을 변경하나요?",
+          "answer": "아닙니다. 클리너는 형식 노이즈와 숨겨진 문자만 대상으로 합니다. 귀하의 단어는 그대로 유지됩니다."
+        },
+        {
+          "question": "무언가를 설치해야 하나요?",
+          "answer": "아닙니다. 브라우저에서 바로 실행됩니다. 붙여넣기, 정리, 복사 - 완료."
+        },
+        {
+          "question": "도구는 민감한 초안에 안전한가요?",
+          "answer": "예, 처리는 세션에 로컬입니다. 매우 민감한 데이터의 경우 모든 온라인 도구에 붙여넣는 것을 피하세요."
+        },
+        {
+          "question": "이것이 AI 워터마크에 도움이 될 수 있나요?",
+          "answer": "정리는 AI 출력에 자주 남아 있는 일반적인 비인쇄 아티팩트와 형식 지문을 제거하여 깨끗하고 전문적인 텍스트를 제공하는 데 도움이 됩니다."
+        }
+      ]
+    }
+  },
+  "NotFound": {
+    "badge": "찾을 수 없음",
+    "title": "페이지를 찾을 수 없습니다",
+    "subtitle": "찾고 계신 페이지가 존재하지 않거나 이동되었습니다.",
+    "primaryCta": "홈으로 가기",
+    "secondaryCta": "도구 둘러보기",
+    "tipLabel": "팁",
+    "tipText": "URL에 오타가 있는지 확인하거나 검색을 사용하여 필요한 내용을 찾아보세요.",
+    "logLabel": "오류 로그",
+    "logStatus": "404",
+    "logMessage": "경로를 찾을 수 없습니다. 요청한 페이지를 찾을 수 없습니다.",
+    "suggestionsTitle": "인기 도구",
+    "viewAll": "모든 도구 보기"
+  }
+}

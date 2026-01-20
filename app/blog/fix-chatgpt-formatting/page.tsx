@@ -3,6 +3,8 @@ import { buildArticleMeta } from '@/lib/seo-meta';
 import { JsonLd } from '@/components/JsonLd';
 import { blogPostingSchema } from '@/lib/schema/blog';
 import AdSenseSlot from '../../../components/ads/AdSenseSlot';
+import { getServerLocale } from '@/lib/server-i18n';
+import type { Metadata } from 'next';
 
 const urlPath = '/blog/fix-chatgpt-formatting';
 const title = 'Fix ChatGPT Formatting: Headings, Lists, Spacing & Layout Issues | GPT CLEAN UP';
@@ -10,11 +12,15 @@ const headline = 'Fix ChatGPT Formatting: Headings, Lists, Spacing & Layout Issu
 const description =
   'Fix broken headings, lists, spacing, and layout issues after copying ChatGPT text into WordPress, email editors, CMSs, and docs.';
 
-export const metadata = buildArticleMeta({
-  title,
-  description,
-  urlPath,
-});
+export async function generateMetadata(): Promise<Metadata> {
+  const { locale } = await getServerLocale();
+  return buildArticleMeta({
+    title,
+    description,
+    urlPath,
+    locale,
+  });
+}
 
 export default function FixChatGPTFormattingPage() {
   return (

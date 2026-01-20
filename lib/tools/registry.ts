@@ -26,7 +26,10 @@ export type Tool = {
       | 'word-counter'
       | 'zero-width-space-remover'
       | 'line-spacing'
-      | 'morse-generator';
+      | 'morse-generator'
+      | 'combination-generator'
+      | 'line-combination-generator'
+      | 'permutation-generator';
   };
   content?: {
     disclaimers?: string[];
@@ -139,9 +142,21 @@ function getUIKind(
   | 'word-counter'
   | 'zero-width-space-remover'
   | 'line-spacing'
-  | 'morse-generator' {
+  | 'morse-generator'
+  | 'combination-generator'
+  | 'line-combination-generator'
+  | 'permutation-generator' {
   if (slug === '') {
     return 'text-cleaner';
+  }
+  if (slug === 'combination-generator') {
+    return 'combination-generator';
+  }
+  if (slug === 'line-combination-generator') {
+    return 'line-combination-generator';
+  }
+  if (slug === 'permutation-generator') {
+    return 'permutation-generator';
   }
   if (UTILITY_SLUGS.has(slug)) {
     return slug as Tool['ui']['kind'];

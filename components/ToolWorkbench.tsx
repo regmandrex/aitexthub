@@ -1,9 +1,10 @@
-"use client";
+'use client';
 
 import { useMemo, useState } from 'react';
 import CopyButton from './CopyButton';
 import ToolTextarea from './ToolTextarea';
 import { chatgptSpaceRemover, chatgptTextCleaner, geminiSpaceRemover } from '../lib/tools';
+import { useI18n } from '../lib/client-i18n';
 
 type ProcessorKey = 'chatgptTextCleaner' | 'chatgptSpaceRemover' | 'geminiSpaceRemover';
 
@@ -25,11 +26,12 @@ type ToolWorkbenchProps = {
 export default function ToolWorkbench({
   processor,
   primaryLabel,
-  inputLabel = 'Paste your messy AI text',
-  outputLabel = 'Clean result',
-  inputPlaceholder = 'Paste text from ChatGPT, Gemini, Claude, etc.',
-  outputPlaceholder = 'Your clean text will appear here.',
+  inputLabel,
+  outputLabel,
+  inputPlaceholder,
+  outputPlaceholder,
 }: ToolWorkbenchProps) {
+  const { t } = useI18n();
   const [input, setInput] = useState('');
   const [output, setOutput] = useState('');
 
@@ -56,22 +58,22 @@ export default function ToolWorkbench({
     <div className="space-y-4">
       <div className="grid gap-4 md:grid-cols-2">
         <ToolTextarea
-          label={inputLabel}
-          placeholder={inputPlaceholder}
+          label={inputLabel ?? t('HomePage.cleanInputLabel')}
+          placeholder={inputPlaceholder ?? t('ToolUI.inputPlaceholder')}
           value={input}
           onChange={setInput}
           rows={12}
           labelSecondary={
             <div className="flex items-center gap-2 text-xs font-semibold text-slate-600">
-              <span className="rounded-full bg-slate-100 px-3 py-1">{stats.words} words</span>
-              <span className="rounded-full bg-slate-100 px-3 py-1">{stats.hidden} hidden</span>
+              <span className="rounded-full bg-slate-100 px-3 py-1">{t('ToolUI.wordsCount', { count: stats.words })}</span>
+              <span className="rounded-full bg-slate-100 px-3 py-1">{t('ToolUI.hiddenCount', { count: stats.hidden })}</span>
             </div>
           }
         />
         <div className="flex flex-col gap-3">
           <ToolTextarea
-            label={outputLabel}
-            placeholder={outputPlaceholder}
+            label={outputLabel ?? t('HomePage.cleanOutputLabel')}
+            placeholder={outputPlaceholder ?? t('ToolUI.outputPlaceholder')}
             value={output}
             onChange={setOutput}
             rows={12}
@@ -92,9 +94,9 @@ export default function ToolWorkbench({
           onClick={handleClear}
           className="inline-flex items-center rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
         >
-          Clear
+          {t('ToolUI.clear')}
         </button>
-        <CopyButton text={output} label="Copy Output" />
+        <CopyButton text={output} label={t('ToolUI.copyOutput')} />
       </div>
     </div>
   );

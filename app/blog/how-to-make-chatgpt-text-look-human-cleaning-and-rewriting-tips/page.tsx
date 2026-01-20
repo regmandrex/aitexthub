@@ -3,6 +3,8 @@ import { buildArticleMeta } from '@/lib/seo-meta';
 import { JsonLd } from '@/components/JsonLd';
 import { blogPostingSchema } from '@/lib/schema/blog';
 import AdSenseSlot from '../../../components/ads/AdSenseSlot';
+import { getServerLocale } from '@/lib/server-i18n';
+import type { Metadata } from 'next';
 
 const urlPath = '/blog/how-to-make-chatgpt-text-look-human-cleaning-and-rewriting-tips';
 const title = 'How to Make ChatGPT Text Look Human (Cleaning and Rewriting Tips) | GPT CLEAN UP';
@@ -10,11 +12,15 @@ const headline = 'How to Make ChatGPT Text Look Human (Cleaning vs Rewriting, Wh
 const description =
   'Learn how to make ChatGPT text read naturally without harming SEO: clean invisible Unicode first, then apply light rewriting for rhythm, clarity, and trust.';
 
-export const metadata = buildArticleMeta({
-  title,
-  description,
-  urlPath,
-});
+export async function generateMetadata(): Promise<Metadata> {
+  const { locale } = await getServerLocale();
+  return buildArticleMeta({
+    title,
+    description,
+    urlPath,
+    locale,
+  });
+}
 
 export default function MakeChatGPTTextLookHumanPage() {
   return (

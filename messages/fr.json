@@ -1,0 +1,1295 @@
+{
+  "Nav": {
+    "home": "Accueil",
+    "tools": "Outils IA gratuits",
+    "blog": "Blog",
+    "language": "Langue"
+  },
+  "Common": {
+    "language": "Langue"
+  },
+  "AllTools": {
+    "title": "Tous les outils",
+    "subtitle": "Parcourez la collection GPT CLEAN UP Tools, regroupée par catégorie pour trouver rapidement l'outil qu'il vous faut.",
+    "seoTitle": "Tous les outils | GPT CLEAN UP",
+    "seoDescription": "Parcourez la collection GPT CLEAN UP Tools - nettoyage de texte IA, suppression de filigranes, outils de formatage et plus encore. Trouvez rapidement l'outil qu'il vous faut."
+  },
+  "ToolUI": {
+    "inputText": "Texte d'entrée",
+    "output": "Sortie",
+    "copy": "Copier",
+    "clear": "Effacer",
+    "yes": "Oui",
+    "no": "Non"
+  },
+  "Tools": {
+    "home": {
+      "title": "Nettoyeur de texte ChatGPT",
+      "description": "Nettoie et normalise le texte IA en supprimant l'Unicode caché et en corrigeant l'espacement."
+    },
+    "space-remover": {
+      "title": "Suppresseur d'espaces",
+      "description": "Supprime les espaces supplémentaires, coupe les lignes et normalise les espaces blancs pour un texte propre et prêt à coller."
+    },
+    "ai-space-remover": {
+      "title": "Suppresseur d'espaces IA",
+      "description": "Supprime les espaces supplémentaires, l'Unicode caché et les espaces irréguliers du texte généré par IA."
+    },
+    "case-converter": {
+      "title": "Convertisseur de casse",
+      "description": "Convertit le texte en MAJUSCULES, minuscules, Titre ou Phrase."
+    },
+    "em-dash-remover": {
+      "title": "Suppresseur / remplaceur de tirets cadratins",
+      "description": "Supprime ou remplace les tirets cadratins (—) et les tirets demi-cadratins (–) avec l'espacement de votre choix."
+    },
+    "find-and-replace": {
+      "title": "Rechercher et remplacer",
+      "description": "Recherche du texte et le remplace par des valeurs personnalisées, avec correspondance optionnelle de casse."
+    },
+    "invisible-character-detector": {
+      "title": "Détecteur de caractères invisibles",
+      "description": "Détecte les caractères Unicode cachés et montre où ils apparaissent dans votre texte."
+    },
+    "remove-duplicate-lines": {
+      "title": "Supprimer les lignes en double",
+      "description": "Supprime les lignes en double en conservant l'ordre original."
+    },
+    "remove-line-breaks": {
+      "title": "Supprimer les sauts de ligne",
+      "description": "Joint les lignes enveloppées en paragraphes propres en supprimant les sauts de ligne."
+    },
+    "strip-html": {
+      "title": "Supprimer le HTML",
+      "description": "Supprime les balises HTML et renvoie du texte brut propre."
+    },
+    "url-encoder-decoder": {
+      "title": "Codeur / décodeur d'URL",
+      "description": "Code ou décode les URL, les chaînes de requête et les fragments de texte."
+    },
+    "word-counter": {
+      "title": "Compteur de mots",
+      "description": "Compte les mots, caractères, lignes, phrases et paragraphes."
+    },
+    "zero-width-space-remover": {
+      "title": "Suppresseur d'espaces à largeur nulle",
+      "description": "Supprime les espaces à largeur nulle et les caractères Unicode invisibles."
+    },
+    "hex-to-binary": {
+      "title": "Convertisseur HEX en binaire",
+      "description": "Convertit les chaînes hexadécimales en binaire avec des options de formatage."
+    },
+    "random-hex-generator": {
+      "title": "Générateur HEX aléatoire",
+      "description": "Génère des chaînes hexadécimales aléatoires avec des contrôles de longueur et de format."
+    },
+    "morse-code-translator": {
+      "title": "Traducteur de code Morse",
+      "description": "Traduit le texte en code Morse ou décode le Morse en texte."
+    },
+    "idn-encode": {
+      "title": "Encoder IDN",
+      "description": "Convertit les domaines internationaux en ASCII (Punycode)."
+    },
+    "idn-decode": {
+      "title": "Décoder IDN",
+      "description": "Convertit les domaines Punycode en Unicode lisible."
+    },
+    "utf8-encode": {
+      "title": "Encoder UTF-8",
+      "description": "Encode le texte en octets UTF-8 pour un transport fiable."
+    },
+    "utf8-decode": {
+      "title": "Décoder UTF-8",
+      "description": "Décode les valeurs d'octets UTF-8 en texte lisible."
+    },
+    "url-encode": {
+      "title": "Encoder URL",
+      "description": "Encode le texte d'URL et les valeurs de requête en chaînes sécurisées avec le percent-encoding."
+    },
+    "url-decode": {
+      "title": "Décoder URL",
+      "description": "Décode les URL et les chaînes de requête avec percent-encoding en texte lisible."
+    },
+    "base64-encode": {
+      "title": "Encoder Base64",
+      "description": "Convertit le texte en Base64 pour un transport sécurisé dans les applications et configurations."
+    },
+    "base64-decode": {
+      "title": "Décoder Base64",
+      "description": "Décode les chaînes Base64 en texte lisible avec support UTF-8."
+    },
+    "html-entities-to-text": {
+      "title": "Convertisseur d'entités HTML en texte",
+      "description": "Décode les entités HTML comme &amp; et &#169; en texte lisible."
+    },
+    "text-to-html-entities": {
+      "title": "Convertisseur de texte en entités HTML",
+      "description": "Encode le texte en entités HTML pour un balisage sécurisé."
+    },
+    "morse-code-generator": {
+      "title": "Générateur de code Morse",
+      "description": "Convertit le texte en code Morse propre avec des barres ou des espaces, prêt à apprendre, pratiquer ou signaler."
+    },
+    "korean-nickname-generator": {
+      "title": "Générateur de surnoms coréens",
+      "description": "Génère 20 surnoms à partir d'un nom et de traits. Styles mignon, cool, amusant, émotionnel et plus. Fonctionne localement dans votre navigateur."
+    },
+    "chatgpt-space-remover": {
+      "title": "Suppresseur d'espaces ChatGPT",
+      "description": "Supprime les espaces supplémentaires et les lignes vides du texte ChatGPT en un seul clic."
+    },
+    "chatgpt-line-spacing": {
+      "title": "Outil d'interlignage pour ChatGPT",
+      "description": "Ajuste l'interlignage du texte ChatGPT à simple, 1.5, double ou personnalisé pour un formatage professionnel."
+    },
+    "chatgpt-watermark-remover": {
+      "title": "Suppresseur de filigranes ChatGPT",
+      "description": "Supprime les caractères cachés et les artefacts de formatage du texte ChatGPT."
+    },
+    "ai-watermark-remover": {
+      "title": "Suppresseur de filigranes IA",
+      "description": "Nettoie les artefacts de formatage, normalise l'Unicode et prépare le texte IA pour la publication."
+    },
+    "gemini-space-remover": {
+      "title": "Suppresseur d'espaces Gemini",
+      "description": "Nettoie les espaces supplémentaires et les lignes vides du texte Google Gemini."
+    },
+    "gemini-watermark-cleaner": {
+      "title": "Nettoyeur de filigranes Gemini",
+      "description": "Supprime les filigranes cachés et l'Unicode invisible du texte Gemini."
+    },
+    "grok-watermark-cleaner": {
+      "title": "Nettoyeur de filigranes Grok",
+      "description": "Supprime les filigranes cachés et l'Unicode invisible du texte Grok."
+    },
+    "deepseek-watermark-cleaner": {
+      "title": "Nettoyeur de filigranes DeepSeek",
+      "description": "Supprime les filigranes cachés et l'Unicode invisible du texte DeepSeek."
+    },
+    "claude-watermark-cleaner": {
+      "title": "Nettoyeur de filigranes Claude",
+      "description": "Supprime les filigranes cachés et l'Unicode invisible du texte Claude."
+    },
+    "llama-watermark-cleaner": {
+      "title": "Nettoyeur de filigranes LLAMA",
+      "description": "Supprime les filigranes cachés et l'Unicode invisible du texte LLAMA."
+    },
+    "perplexity-watermark-cleaner": {
+      "title": "Nettoyeur de filigranes Perplexity",
+      "description": "Supprime les filigranes cachés et l'Unicode invisible du texte Perplexity."
+    },
+    "grok-space-remover": {
+      "title": "Suppresseur d'espaces Grok",
+      "description": "Nettoie les espaces supplémentaires et normalise le texte Grok pour un collage facile."
+    },
+    "deepseek-space-remover": {
+      "title": "Suppresseur d'espaces DeepSeek",
+      "description": "Regroupe les espaces blancs supplémentaires dans les réponses DeepSeek tout en préservant le sens."
+    },
+    "llama-space-remover": {
+      "title": "Suppresseur d'espaces LLAMA",
+      "description": "Nettoie le texte LLAMA (Meta AI) en coupant les lignes et en stabilisant l'espacement."
+    },
+    "perplexity-space-remover": {
+      "title": "Suppresseur d'espaces Perplexity",
+      "description": "Corrige l'espacement et les espaces cachés dans les réponses Perplexity."
+    },
+    "mistral-space-remover": {
+      "title": "Suppresseur d'espaces Mistral",
+      "description": "Normalise les espaces blancs dans le texte généré par Mistral."
+    },
+    "mistral-watermark-cleaner": {
+      "title": "Nettoyeur de filigranes Mistral",
+      "description": "Supprime les filigranes cachés et l'Unicode invisible du texte Mistral."
+    },
+    "claude-space-remover": {
+      "title": "Suppresseur d'espaces Claude",
+      "description": "Coupe, regroupe et normalise les espaces dans les réponses Claude."
+    },
+    "chatgpt-watermark-detector": {
+      "title": "Détecteur de filigranes ChatGPT",
+      "description": "Inspecte le texte ChatGPT pour détecter d'éventuels artefacts de formatage et Unicode caché."
+    },
+    "ai-watermark-detector": {
+      "title": "Détecteur de filigranes IA",
+      "description": "Analyse le texte pour détecter l'Unicode caché, les motifs d'espaces et les signaux structurels."
+    },
+    "grok-watermark-detector": {
+      "title": "Détecteur de filigranes Grok",
+      "description": "Analyse le texte Grok pour détecter d'éventuels artefacts et anomalies d'espacement."
+    },
+    "deepseek-watermark-detector": {
+      "title": "Détecteur de filigranes DeepSeek",
+      "description": "Scanne le texte DeepSeek pour détecter les signaux de formatage de type \"filigrane\"."
+    },
+    "llama-watermark-detector": {
+      "title": "Détecteur de filigranes LLAMA",
+      "description": "Examine le texte LLAMA (Meta AI) pour détecter l'Unicode caché et les motifs d'espaces."
+    },
+    "perplexity-watermark-detector": {
+      "title": "Détecteur de filigranes Perplexity",
+      "description": "Affiche les artefacts de formatage possibles dans le texte Perplexity."
+    },
+    "gemini-watermark-detector": {
+      "title": "Détecteur de filigranes Gemini",
+      "description": "Inspecte le texte Gemini pour détecter les caractères cachés et les signaux d'espaces."
+    },
+    "mistral-watermark-detector": {
+      "title": "Détecteur de filigranes Mistral",
+      "description": "Identifie les motifs de formatage possibles dans le texte généré par Mistral."
+    },
+    "claude-watermark-detector": {
+      "title": "Détecteur de filigranes Claude",
+      "description": "Analyse le texte Claude pour détecter l'Unicode caché et les artefacts d'espacement."
+    },
+    "chatgpt-detector": {
+      "title": "Détecteur ChatGPT",
+      "description": "Détectez le contenu généré par IA et vérifiez si le texte a été créé par ChatGPT ou d'autres modèles IA."
+    },
+    "chatgpt-humanizer": {
+      "title": "Humaniseur ChatGPT",
+      "description": "Humanisez le texte ChatGPT pour qu'il sonne plus naturel et écrit par l'homme."
+    },
+    "chatgpt-gptzero-checker": {
+      "title": "Vérificateur GPTZero ChatGPT",
+      "description": "Vérifiez si votre texte sera détecté par l'outil de détection IA GPTZero."
+    },
+    "chatgpt-turnitin-checker": {
+      "title": "Vérificateur Turnitin ChatGPT",
+      "description": "Vérifiez si votre contenu généré par ChatGPT passera la détection de plagiat Turnitin."
+    },
+    "chatgpt-originality-checker": {
+      "title": "Vérificateur d'originalité ChatGPT",
+      "description": "Vérifiez l'originalité et l'authenticité du contenu généré par ChatGPT."
+    },
+    "chatgpt-copyleaks-checker": {
+      "title": "Vérificateur Copyleaks ChatGPT",
+      "description": "Vérifiez si le contenu ChatGPT sera détecté par la détection IA Copyleaks."
+    },
+    "chatgpt-paraphraser": {
+      "title": "Paraphraser ChatGPT",
+      "description": "Paraphrasez et reformulez le texte généré par ChatGPT tout en conservant le sens."
+    },
+    "chatgpt-sentence-rewriter": {
+      "title": "Réécrivain de phrases ChatGPT",
+      "description": "Réécrivez les phrases de la sortie ChatGPT pour améliorer la clarté et le style."
+    },
+    "chatgpt-paragraph-rewriter": {
+      "title": "Réécrivain de paragraphes ChatGPT",
+      "description": "Réécrivez des paragraphes entiers de ChatGPT pour améliorer le flux et la lisibilité."
+    },
+    "chatgpt-essay-rewriter": {
+      "title": "Réécrivain d'essais ChatGPT",
+      "description": "Réécrivez les essais ChatGPT pour améliorer la qualité, la structure et le ton académique."
+    },
+    "chatgpt-grammar-checker": {
+      "title": "Correcteur grammatical ChatGPT",
+      "description": "Vérifiez et corrigez les erreurs grammaticales dans le texte généré par ChatGPT."
+    },
+    "chatgpt-readability-checker": {
+      "title": "Vérificateur de lisibilité ChatGPT",
+      "description": "Analysez les scores de lisibilité et améliorez la clarté du texte de la sortie ChatGPT."
+    },
+    "chatgpt-tone-analyzer": {
+      "title": "Analyseur de ton ChatGPT",
+      "description": "Analysez le ton et le sentiment du contenu généré par ChatGPT."
+    },
+    "chatgpt-style-analyzer": {
+      "title": "Analyseur de style ChatGPT",
+      "description": "Analysez le style d'écriture et la cohérence dans le texte généré par ChatGPT."
+    },
+    "chatgpt-passive-voice-fixer": {
+      "title": "Correcteur de voix passive ChatGPT",
+      "description": "Convertissez la voix passive en voix active dans le contenu généré par ChatGPT."
+    },
+    "chatgpt-essay-checker": {
+      "title": "Vérificateur d'essais ChatGPT",
+      "description": "Vérifiez les essais générés par ChatGPT pour la qualité, la structure et les erreurs."
+    },
+    "chatgpt-thesis-checker": {
+      "title": "Vérificateur de thèse ChatGPT",
+      "description": "Vérifiez les déclarations de thèse et les arguments dans le contenu académique généré par ChatGPT."
+    },
+    "chatgpt-research-paper-checker": {
+      "title": "Vérificateur d'articles de recherche ChatGPT",
+      "description": "Vérifiez les articles de recherche générés par ChatGPT selon les normes académiques."
+    },
+    "chatgpt-assignment-checker": {
+      "title": "Vérificateur de devoirs ChatGPT",
+      "description": "Vérifiez les devoirs générés par ChatGPT pour la qualité et la conformité."
+    },
+    "chatgpt-academic-humanizer": {
+      "title": "Humaniseur académique ChatGPT",
+      "description": "Humanisez le contenu académique ChatGPT pour passer la détection IA tout en maintenant la qualité."
+    },
+    "chatgpt-blog-post-validator": {
+      "title": "Validateur d'articles de blog ChatGPT",
+      "description": "Validez et améliorez les articles de blog générés par ChatGPT pour le SEO et la lisibilité."
+    },
+    "chatgpt-product-description-improver": {
+      "title": "Améliorateur de descriptions de produits ChatGPT",
+      "description": "Améliorez les descriptions de produits générées par ChatGPT pour une meilleure conversion des ventes."
+    },
+    "chatgpt-meta-description-generator": {
+      "title": "Générateur de meta descriptions ChatGPT",
+      "description": "Générez des meta descriptions optimisées SEO à partir du contenu ChatGPT."
+    },
+    "chatgpt-title-tag-generator": {
+      "title": "Générateur d'étiquettes de titre ChatGPT",
+      "description": "Générez des étiquettes de titre optimisées SEO à partir du contenu généré par ChatGPT."
+    },
+    "chatgpt-alt-text-generator": {
+      "title": "Générateur de texte alternatif ChatGPT",
+      "description": "Générez du texte alternatif accessible pour les images à partir des descriptions ChatGPT."
+    },
+    "chatgpt-email-humanizer": {
+      "title": "Humaniseur d'emails ChatGPT",
+      "description": "Humanisez les emails générés par ChatGPT pour qu'ils sonnent plus personnels et naturels."
+    },
+    "chatgpt-cover-letter-humanizer": {
+      "title": "Humaniseur de lettres de motivation ChatGPT",
+      "description": "Humanisez les lettres de motivation ChatGPT pour les rendre plus authentiques et personnelles."
+    },
+    "chatgpt-resume-humanizer": {
+      "title": "Humaniseur de CV ChatGPT",
+      "description": "Humanisez le contenu du CV ChatGPT pour le rendre plus naturel et compatible ATS."
+    },
+    "chatgpt-linkedin-rewriter": {
+      "title": "Réécrivain LinkedIn ChatGPT",
+      "description": "Réécrivez le contenu ChatGPT pour LinkedIn pour améliorer l'engagement et l'authenticité."
+    },
+    "chatgpt-press-release-polisher": {
+      "title": "Polisseur de communiqués de presse ChatGPT",
+      "description": "Polissez et affinez les communiqués de presse générés par ChatGPT pour une publication professionnelle."
+    },
+    "text-to-morse-code": {
+      "title": "Convertisseur de texte en code Morse",
+      "description": "Convertit le texte en code Morse avec encodage ITU standard. Rapide, précis et respectueux de la vie privée."
+    },
+    "combination-generator": {
+      "title": "Générateur de Combinaisons",
+      "description": "Génère toutes les combinaisons possibles d'un ensemble d'éléments. L'ordre n'a pas d'importance dans les combinaisons."
+    },
+    "line-combination-generator": {
+      "title": "Générateur de Combinaisons de Lignes",
+      "description": "Génère toutes les combinaisons possibles de lignes de votre texte. Préserve les sauts de ligne dans la sortie."
+    },
+    "permutation-generator": {
+      "title": "Générateur de Permutations",
+      "description": "Génère toutes les permutations possibles où l'ordre compte. Crée des arrangements ordonnés d'éléments."
+    },
+    "extract-numbers-from-text": {
+      "title": "Extraire les nombres du texte",
+      "description": "Extrait tous les nombres du texte, y compris les entiers et les décimales. Options d'ordre, d'unicité et de séparateurs."
+    },
+    "text-to-hex": {
+      "title": "Convertisseur de texte en HEX",
+      "description": "Convertit les caractères de texte en représentation hexadécimale. Prend en charge UTF-8 avec options de casse et d'espacement."
+    }
+  },
+  "RemoveLineBreaksPage": {
+    "ui": {
+      "inputLabel": "Texte d'entrée",
+      "inputPlaceholder": "Collez le texte avec des sauts de ligne...",
+      "outputLabel": "Sortie",
+      "outputPlaceholder": "Le texte joint apparaîtra ici.",
+      "preserveParagraphs": "Préserver les sauts de paragraphe",
+      "replaceWithSpace": "Remplacer les sauts de ligne par des espaces",
+      "collapseSpaces": "Réduire les espaces supplémentaires",
+      "removeButton": "Supprimer les sauts de ligne",
+      "copyButton": "Copier",
+      "clearButton": "Effacer"
+    },
+    "writeUp": {
+      "title": "Supprimer les sauts de ligne du texte - Outil en ligne pour joindre les lignes",
+      "introductionTitle": "Introduction",
+      "introductionP1": "Supprimer les sauts de ligne est une étape de formatage pour le texte qui a été enveloppé par la mise en page plutôt que par intention. Lorsque vous copiez depuis des PDF, des clients de messagerie ou des colonnes étroites, des sauts de ligne sont insérés à la fin de chaque ligne visuelle. Le résultat est un bloc de texte qui semble cassé lorsqu'il est collé dans un document ou un éditeur de contenu. Au lieu de s'écouler comme un paragraphe, chaque ligne se termine tôt, ce qui rend l'édition et la lecture plus difficiles. C'est un problème courant dans les flux de travail modernes car le texte passe souvent par plusieurs systèmes avant d'atteindre sa destination finale.",
+      "introductionP2": "Dans de nombreux cas, les sauts de ligne ne sont pas visibles comme un problème jusqu'à ce que vous colliez le texte ailleurs. Un visualiseur PDF peut afficher des lignes enveloppées à une largeur de page, tandis que le texte copié inclut des caractères de nouvelle ligne après chaque ligne. Les clients de messagerie enveloppent parfois à 72 caractères pour la compatibilité, ce qui transforme un seul paragraphe en dizaines de lignes courtes. Lorsque ce texte est déplacé dans un CMS, il produit des sauts irréguliers et un espacement inattendu. Le problème est un artefact de mise en page, pas un problème de contenu, c'est pourquoi une étape de nettoyage dédiée est si utile.",
+      "introductionP3": "L'outil Supprimer les sauts de ligne sur gptcleanuptools.com est conçu pour nettoyer ces enveloppements de ligne sans changer les mots eux-mêmes. Il joint les lignes en un paragraphe fluide, préserve les limites de paragraphe lorsque vous en avez besoin, et normalise l'espacement pour que la sortie se lise proprement. Si vous avez besoin d'une utilité en ligne pour supprimer les sauts de ligne qui soit déterministe et facile à utiliser, cet outil fournit une solution ciblée qui fonctionne sur le texte que vous collez. C'est un outil gratuit pour supprimer les sauts de ligne dans le sens où il vous aide à corriger le formatage sans un éditeur complexe ou un script.",
+      "introductionP4": "Les cas d'usage courants incluent le nettoyage du texte copié depuis des PDF, la préparation du contenu de messagerie pour une page web, ou la transformation d'un rapport avec enveloppement dur en un brouillon lisible. Il est également utile lorsque vous devez placer du texte dans un champ de paragraphe unique, tel qu'une description de métadonnées ou un formulaire d'importation. Dans ces scénarios, l'objectif n'est pas de changer le sens mais de supprimer les sauts de ligne qui ont été introduits par des contraintes de formatage.",
+      "whatIsTitle": "Qu'est-ce que Supprimer les sauts de ligne ?",
+      "whatIsP1": "Supprimer les sauts de ligne est un outil de formatage de texte déterministe qui supprime les caractères de nouvelle ligne du texte que vous fournissez. Il peut remplacer les sauts de ligne par des espaces pour que les mots restent séparés, ou les supprimer complètement lorsque vous avez besoin d'une chaîne continue. Il prend également en charge la préservation des sauts de paragraphe, ce qui signifie qu'il conserve les lignes blanches intentionnelles entre les paragraphes tout en joignant les lignes à l'intérieur de chaque paragraphe.",
+      "whatIsP2": "Il est utile de distinguer entre les enveloppements souples et les enveloppements durs. Un enveloppement souple n'est qu'une rupture visuelle dans l'éditeur et n'existe pas dans le texte sous-jacent. Un enveloppement dur est un caractère de nouvelle ligne réel intégré dans le texte. L'outil Supprimer les sauts de ligne supprime les enveloppements durs, c'est pourquoi il est efficace pour le contenu copié mais ne change pas la façon dont un traitement de texte affiche le texte qui est déjà enveloppé souplement. Comprendre cette différence aide à expliquer pourquoi un bloc collé depuis un PDF a besoin de nettoyage tandis qu'un paragraphe rédigé dans un document ne l'a pas.",
+      "whatIsP3": "L'outil ne réécrit ni ne paraphrase pas. Il n'interprète pas le sens ou le style. Il applique simplement des règles claires et prévisibles aux sauts de ligne et à l'espacement. Cela le rend adapté aux éditeurs, étudiants et professionnels qui ont besoin d'un moyen fiable de nettoyer le texte sans altérer le contenu lui-même. Comme il fonctionne uniquement sur votre entrée et s'exécute localement dans le navigateur, la sortie est cohérente et facile à réviser.",
+      "whyMattersTitle": "Pourquoi cet outil est important",
+      "whyMattersP1": "Les sauts de ligne sont souvent insérés par les moteurs de mise en page, pas par les auteurs. Un PDF peut envelopper les lignes à une largeur fixe, et un client de messagerie peut insérer des sauts de ligne pour s'adapter à une colonne étroite. Lorsque vous collez ce texte dans un environnement différent, ces sauts restent, et le texte semble haché. Cela peut ralentir l'édition, rendre la recherche et le remplacement plus difficiles, et créer des erreurs de formatage dans le contenu publié.",
+      "whyMattersP2": "Un suppresseur de sauts de ligne de texte corrige le problème à la source en joignant les lignes en un flux naturel. Cela facilite la lecture, la citation et la réutilisation du contenu. Il réduit également le risque d'erreurs lorsque vous copiez le texte dans un CMS ou un rapport, car vous travaillez avec des paragraphes propres plutôt qu'un ensemble de lignes avec enveloppement dur. Pour les équipes, un outil déterministe fournit des résultats cohérents à travers différents contributeurs, ce qui aide à maintenir la qualité et réduit le temps de nettoyage manuel.",
+      "whyMattersP3": "Les sauts de ligne peuvent également affecter les processus en aval tels que la recherche, la mémoire de traduction et l'extraction automatisée. Lorsque les phrases sont divisées entre les lignes, les requêtes de recherche simples peuvent échouer ou retourner des résultats partiels. Les outils d'importation automatisés peuvent interpréter chaque ligne comme un enregistrement séparé, ce qui peut casser les pipelines de données. En nettoyant les sauts de ligne avant la réutilisation, vous réduisez ces risques et rendez le texte plus cohérent à la fois pour les humains et les machines. Ceci est particulièrement important lorsque le même texte sera réutilisé dans plusieurs systèmes.",
+      "whyMattersP4": "L'outil aide également à prévenir de petites erreurs de formatage mais coûteuses. Un saut de ligne à l'intérieur d'une phrase peut casser une requête de recherche ou faire en sorte qu'une phrase s'enveloppe mal dans un modèle. En supprimant ces sauts, vous gardez le texte dans un état plus facile à traiter en aval. C'est une étape pratique et à faible risque qui améliore la fiabilité du texte dans de nombreux flux de travail.",
+      "howWorksTitle": "Comment fonctionne l'outil (étape par étape)",
+      "howWorksP1": "L'outil Supprimer les sauts de ligne suit un processus clair d'entrée à sortie. Il ne dépend pas de services externes ou d'analyses complexes. Chaque étape est déterministe et répétable.",
+      "howWorksInputTitle": "1) Entrée",
+      "howWorksInputP1": "Vous collez ou tapez du texte dans la zone de saisie. L'outil accepte tout texte brut, y compris le contenu copié depuis des documents, des e-mails et des pages web. Il normalise les fins de ligne pour que les différents styles de système d'exploitation soient traités de manière cohérente.",
+      "howWorksProcessingTitle": "2) Traitement",
+      "howWorksProcessingP1": "Si la préservation des sauts de paragraphe est activée, l'outil identifie les séries de lignes blanches et les marque comme limites de paragraphe. Il supprime ensuite les sauts de ligne restants. Si vous choisissez de remplacer les sauts de ligne par des espaces, un seul espace est inséré là où chaque saut de ligne existait. Si vous choisissez de ne pas les remplacer, les sauts de ligne sont supprimés complètement.",
+      "howWorksProcessingP2": "Si la réduction des espaces supplémentaires est activée, l'outil réduit les espaces et tabulations répétés à un seul espace. Cela aide à nettoyer l'espacement irrégulier qui vient souvent de l'extraction PDF ou du copier-coller.",
+      "howWorksProcessingP3": "Ces options vous donnent le contrôle sur l'agressivité du nettoyage. Pour le texte narratif, préserver les paragraphes et remplacer les sauts de ligne par des espaces produit généralement le meilleur résultat. Pour les champs de données qui nécessitent une seule ligne, vous pouvez supprimer tous les sauts. Comme le processus est déterministe, vous pouvez exécuter l'outil plusieurs fois avec différents paramètres et comparer la sortie. Le résultat ne dépend pas du navigateur ou de l'heure de la journée, seulement du texte et des options que vous sélectionnez.",
+      "howWorksOutputTitle": "3) Sortie",
+      "howWorksOutputP1": "La sortie apparaît dans la zone de résultat comme des paragraphes propres avec un espacement normalisé. L'outil supprime les espaces blancs en début et fin pour que la sortie commence et se termine proprement. Vous pouvez copier le résultat pour l'utiliser dans un document, un CMS ou tout flux de travail qui nécessite un bloc de texte fluide.",
+      "commonProblemsTitle": "Problèmes courants que cet outil résout",
+      "commonProblemsP1": "De nombreux problèmes de texte sont causés par des sauts de ligne durs et un espacement incohérent. Supprimer les sauts de ligne résout une gamme de problèmes pratiques.",
+      "commonProblemsItem1": "Le texte copié depuis des PDF apparaît comme des lignes courtes au lieu de paragraphes complets.",
+      "commonProblemsItem2": "Les clients de messagerie insèrent des sauts de ligne à largeurs fixes, rendant les brouillons difficiles à réutiliser.",
+      "commonProblemsItem3": "Les rapports exportés depuis des outils incluent un saut de ligne après chaque ligne d'une colonne.",
+      "commonProblemsItem4": "Le copier-coller ajoute des espaces et tabulations supplémentaires qui rendent le texte irrégulier.",
+      "commonProblemsItem5": "Les champs CMS attendent un seul paragraphe, mais le texte collé contient des enveloppements durs.",
+      "commonProblemsItem6": "Les transcriptions de chat et notes contiennent des sauts de ligne manuels qui perturbent le flux de lecture.",
+      "commonProblemsP2": "Dans chaque cas, le problème n'est pas le contenu lui-même mais la structure imposée par la source. Un suppresseur de sauts de ligne corrige la structure pour que le texte puisse être édité et réutilisé sans reflot manuel.",
+      "commonProblemsP3": "Par exemple, un chercheur pourrait copier un résumé de journal et découvrir que chaque saut de ligne se transforme en une nouvelle ligne dans un modèle de rapport. Un agent de support pourrait coller un long e-mail dans un ticket et voir des sauts de ligne casser le formatage. Supprimer les sauts de ligne restaure un style de paragraphe plus facile à lire, répondre et archiver. Le même modèle apparaît dans de nombreuses sources car le problème central est un décalage entre la mise en page de la source et la mise en page de la cible.",
+      "supportedSourcesTitle": "Sources de texte prises en charge",
+      "supportedSourcesP1": "L'outil fonctionne avec tout texte que vous pouvez coller dans un navigateur. Il ne nécessite pas de format spécifique et ne dépend pas de la source.",
+      "supportedSourcesWebTitle": "Pages web et brouillons CMS",
+      "supportedSourcesWebP1": "Le contenu copié depuis des pages web inclut souvent des sauts de ligne durs lorsqu'il provient de colonnes étroites ou de mises en page réactives. Supprimer ces sauts produit un paragraphe propre plus facile à coller dans un CMS ou un éditeur de documentation.",
+      "supportedSourcesPdfTitle": "Exportations PDF",
+      "supportedSourcesPdfP1": "Le copier-coller PDF résulte fréquemment en sauts de ligne après chaque ligne visuelle. L'outil joint ces lignes en paragraphes lisibles et peut réduire les espaces supplémentaires laissés par l'extraction PDF. C'est une correction courante pour le texte PDF avec enveloppement dur.",
+      "supportedSourcesWordTitle": "Documents Word",
+      "supportedSourcesWordP1": "Les traitements de texte insèrent parfois des sauts de ligne lorsque le texte est copié depuis des tableaux, colonnes ou commentaires. L'outil supprime ces sauts sans altérer les mots, ce qui aide lorsque vous devez déplacer le texte dans un format différent.",
+      "supportedSourcesSpreadsheetTitle": "Feuilles de calcul et exportations de formulaires",
+      "supportedSourcesSpreadsheetP1": "Les feuilles de calcul et exportations de formulaires incluent parfois du contenu de cellule enveloppé qui se transforme en sauts de ligne lorsqu'il est copié. C'est courant lorsqu'une cellule contient une note longue ou une adresse. Supprimer les sauts de ligne convertit le contenu en une seule ligne qui peut être importée dans un autre système sans casser les limites de champ. Cela aide également lorsque vous devez normaliser les réponses avant l'analyse.",
+      "supportedSourcesOcrTitle": "OCR et texte scanné",
+      "supportedSourcesOcrP1": "L'OCR et les documents scannés produisent souvent du texte avec des sauts de ligne irréguliers car le logiciel suit la mise en page de page plutôt que la structure de phrase. L'outil peut joindre ces lignes en paragraphes lisibles. L'OCR peut également introduire des espaces supplémentaires ou des caractères manquants, donc une révision rapide est toujours nécessaire. Supprimer les sauts de ligne est un bon premier pas avant un nettoyage supplémentaire.",
+      "supportedSourcesEmailTitle": "E-mail et tickets de support",
+      "supportedSourcesEmailP1": "Les clients de messagerie enveloppent souvent les lignes à largeurs fixes. Les systèmes de tickets de support insèrent également des sauts qui rendent le texte copié plus difficile à réutiliser. L'outil restaure un flux de paragraphe unique pour une réutilisation plus propre dans les rapports ou la documentation.",
+      "supportedSourcesAiTitle": "Brouillons générés par IA",
+      "supportedSourcesAiP1": "Les brouillons générés par IA incluent parfois des sauts de ligne manuels ou des artefacts de formatage copiés. Cet outil ne se connecte à aucun modèle d'IA, mais il peut nettoyer le texte que vous collez pour que le formatage soit cohérent avant l'édition.",
+      "supportedSourcesCodeTitle": "Extraits de code et journaux",
+      "supportedSourcesCodeP1": "Lorsqu'un commentaire de code ou un message de journal est enveloppé dur par un affichage étroit, supprimer les sauts de ligne peut le rendre plus facile à lire. Utilisez la prudence, car les sauts de ligne sont souvent significatifs dans le code et les journaux. L'outil est meilleur pour le texte narratif plutôt que le code structuré.",
+      "whatNotDoTitle": "Ce que cet outil ne fait PAS",
+      "whatNotDoP1": "Supprimer les sauts de ligne est une utilité de formatage. Il a des limites claires pour que la sortie soit prévisible et sûre à utiliser.",
+      "whatNotDoItem1": "Il ne réécrit, ne paraphrase ni ne résume pas le texte.",
+      "whatNotDoItem2": "Il ne supprime pas les en-têtes, pieds de page ou numéros de page des PDF.",
+      "whatNotDoItem3": "Il ne corrige pas la césure aux fins de ligne.",
+      "whatNotDoItem4": "Il ne détecte pas automatiquement les listes, tableaux ou structure de document.",
+      "whatNotDoItem5": "Il ne se connecte pas aux modèles d'IA ou services externes.",
+      "whatNotDoP2": "Si vous avez besoin d'édition structurelle ou de réécriture de contenu, utilisez un autre outil. Supprimer les sauts de ligne est intentionnellement limité en portée pour que le résultat soit cohérent et facile à vérifier.",
+      "privacyTitle": "Confidentialité et sécurité",
+      "privacyP1": "L'outil traite le texte localement dans votre navigateur. Il ne télécharge pas votre contenu ni ne le stocke sur un serveur. Cela garde vos données dans votre session et réduit l'exposition pour le texte sensible.",
+      "privacyP2": "Même avec le traitement local, suivez les politiques de votre organisation pour les données confidentielles. Si vous travaillez avec des documents sensibles, assurez-vous qu'un outil basé sur navigateur correspond à vos exigences. L'outil ne crée pas de comptes, ne suit pas votre entrée ni ne retient la sortie après avoir fermé la page. Vous contrôlez ce que vous collez et ce que vous copiez.",
+      "professionalUseCasesTitle": "Cas d'usage professionnels",
+      "professionalUseCasesP1": "Le nettoyage des sauts de ligne est courant dans les rôles professionnels car le texte se déplace entre des systèmes qui l'enveloppent différemment.",
+      "professionalUseCasesWritersTitle": "Rédacteurs et éditeurs",
+      "professionalUseCasesWritersP1": "Les éditeurs reçoivent souvent des brouillons copiés depuis des PDF ou des fils de discussion e-mail. Supprimer les sauts de ligne leur permet de se concentrer sur le contenu plutôt que sur le formatage manuel. Cela facilite également l'application de changements de style et la préparation de brouillons pour publication.",
+      "professionalUseCasesDevelopersTitle": "Développeurs et équipes techniques",
+      "professionalUseCasesDevelopersP1": "Les équipes techniques copient des messages de journal, des descriptions d'erreur et de la documentation depuis plusieurs sources. Un paragraphe propre est plus facile à analyser et à inclure dans les rapports. L'outil aide à supprimer le bruit de formatage sans changer le texte.",
+      "professionalUseCasesOperationsTitle": "Opérations et support",
+      "professionalUseCasesOperationsP1": "Les équipes de support compilent souvent des notes et des résumés de tickets. Les lignes avec enveloppement dur rendent ces résumés plus difficiles à scanner. Supprimer les sauts de ligne produit des notes propres et partageables qui peuvent être collées dans des bases de connaissances ou des mises à jour de statut.",
+      "professionalUseCasesMarketingTitle": "Marketing et opérations de contenu",
+      "professionalUseCasesMarketingP1": "Les équipes marketing réutilisent souvent la copie dans les campagnes e-mail, les pages de destination et les briefs internes. Cette copie est fréquemment déplacée entre PDF, diapositives et documents partagés. Supprimer les sauts de ligne assure que le texte s'écoule correctement dans le canal final et réduit le travail de reformatage. Les équipes d'opérations de contenu bénéficient également lors de la préparation d'importations en masse, où un seul enveloppement dur peut créer des champs incohérents dans un modèle.",
+      "professionalUseCasesLegalTitle": "Équipes juridiques et conformité",
+      "professionalUseCasesLegalP1": "Les révisions juridiques impliquent souvent du texte copié depuis des PDF ou des documents scannés. Nettoyer les sauts de ligne aide les réviseurs à se concentrer sur la formulation et la structure sans reformater chaque paragraphe manuellement.",
+      "professionalUseCasesP2": "À travers ces rôles, l'outil agit comme une simple étape de nettoyage qui améliore la clarté et réduit la friction dans les flux de travail qui dépendent de texte propre.",
+      "educationalUseCasesTitle": "Cas d'usage éducatifs",
+      "educationalUseCasesP1": "Les étudiants et éducateurs travaillent fréquemment avec du texte copié depuis des PDF académiques, des journaux et des fils de discussion e-mail. Supprimer les sauts de ligne produit des paragraphes propres plus faciles à citer, annoter et inclure dans les devoirs. Comme l'outil ne change pas le sens, il est sûr pour les flux de travail académiques où la précision est importante.",
+      "educationalUseCasesP2": "Les chercheurs peuvent l'utiliser pour préparer des extraits pour analyse ou pour nettoyer des transcriptions et notes avant de les importer dans des outils qualitatifs. La sortie déterministe facilite la reproduction des résultats et la documentation des étapes de nettoyage dans une méthodologie de recherche.",
+      "educationalUseCasesP3": "Un autre cas d'usage éducatif est le nettoyage des réponses d'enquête ou des commentaires de pairs qui ont été exportés avec des enveloppements de ligne. Lorsque chaque réponse est divisée en lignes courtes, il devient difficile de lire et comparer les réponses. Supprimer les sauts de ligne produit une vue plus propre plus facile à citer ou résumer dans un rapport. Cela aide également lors de la construction de guides d'étude ou de polycopiés de classe depuis des sources mixtes, car le formatage cohérent de paragraphe réduit le bruit visuel et garde l'attention sur le contenu lui-même.",
+      "publishingSeoTitle": "Cas d'usage de publication et SEO",
+      "publishingSeoP1": "Les flux de travail de publication dépendent souvent de paragraphes propres pour les champs CMS, résumés et métadonnées. Les sauts de ligne durs peuvent introduire un espacement gênant ou des enveloppements de ligne qui s'affichent mal sur un site en direct. Supprimer les sauts de ligne assure que le texte apparaît comme un paragraphe normal dans ces champs.",
+      "publishingSeoP2": "D'un point de vue SEO, l'outil ne change pas les mots-clés ni n'ajoute de contenu. Il améliore simplement le formatage pour la lisibilité. Cela peut soutenir une meilleure qualité éditoriale et réduire les erreurs dans les champs de métadonnées qui attendent un seul paragraphe. Utilisez-le comme une étape de formatage après que le contenu soit finalisé, pas comme une stratégie d'optimisation.",
+      "publishingSeoP3": "Un autre scénario courant est l'importation en masse de descriptions ou résumés. De nombreux champs CMS traitent les sauts de ligne comme des paragraphes séparés ou des caractères invalides. Les supprimer avant l'importation réduit les erreurs de formatage et garde les aperçus cohérents sur tous les appareils. Cela aide également lors de la préparation d'extraits pour le partage social ou les flux RSS, où les sauts de ligne peuvent tronquer ou désaligner le contenu. Le résultat est un rendu plus prévisible sans changer la formulation.",
+      "accessibilityTitle": "Avantages d'accessibilité et d'utilisabilité",
+      "accessibilityP1": "Les paragraphes propres améliorent la lisibilité pour tous les utilisateurs, y compris ceux qui dépendent des lecteurs d'écran. Les sauts de ligne durs peuvent interrompre le flux des phrases et rendre le contenu plus difficile à interpréter. En supprimant ces sauts, le texte se lit plus naturellement et est plus facile à naviguer.",
+      "accessibilityP2": "Pour les révisions d'utilisabilité, un seul paragraphe de texte est plus facile à scanner qu'un bloc avec des sauts de ligne inattendus. Cela aide les équipes de contenu à réviser et approuver le texte plus rapidement. L'outil n'ajoute pas de structure, mais supprime le bruit qui peut distraire les lecteurs.",
+      "accessibilityP3": "Dans les audits d'accessibilité, le texte propre facilite l'évaluation de la clarté et de l'ordre de lecture. Les sauts de ligne durs peuvent faire que les lecteurs d'écran fassent une pause dans des endroits non naturels ou annoncent des sauts où aucun n'était prévu. En supprimant ces sauts, le texte sonne plus naturel et est plus facile à suivre. L'outil ne change pas le sens, mais améliore le rythme du texte pour les technologies d'assistance et pour les lecteurs qui dépendent d'un flux de phrases prévisible.",
+      "whyOnlineToolTitle": "Pourquoi utiliser un outil en ligne au lieu de l'édition manuelle ?",
+      "whyOnlineToolP1": "La suppression manuelle des sauts de ligne est lente et sujette aux erreurs. Vous devez identifier chaque saut de ligne, le supprimer et vérifier que l'espacement est correct. Cela devient difficile lorsque le texte est long ou lorsque les sauts de ligne sont nombreux. Un outil déterministe applique la même règle sur toute l'entrée en quelques secondes.",
+      "whyOnlineToolP2": "Un outil en ligne rend également le processus répétable. Vous pouvez exécuter le même nettoyage sur plusieurs documents et obtenir des résultats cohérents. C'est particulièrement précieux pour les équipes qui gèrent de nombreux documents dans des formats similaires. Il réduit les chances de sauts manqués et rend l'étape de nettoyage plus facile à documenter dans un flux de travail.",
+      "edgeCasesTitle": "Cas limites et limitations connues",
+      "edgeCasesP1": "Supprimer les sauts de ligne est simple, mais il y a des cas limites qui peuvent affecter la sortie. Comprendre ces limitations vous aide à choisir les bons paramètres et éviter les surprises.",
+      "edgeCasesItem1": "Les fins de ligne avec césure peuvent laisser des traits d'union incorrects dans la sortie.",
+      "edgeCasesItem2": "Les listes qui dépendent de sauts de ligne simples peuvent fusionner en une seule ligne.",
+      "edgeCasesItem3": "Le texte PDF multi-colonnes peut être collé dans le mauvais ordre de lecture.",
+      "edgeCasesItem4": "Le code et le texte préformaté peuvent perdre de la structure lorsque les sauts de ligne sont supprimés.",
+      "edgeCasesItem5": "Les caractères cachés comme les espaces insécables peuvent changer les résultats d'espacement.",
+      "edgeCasesP2": "Si ces problèmes apparaissent, vous pourriez avoir besoin d'une étape de nettoyage de suivi. Par exemple, utilisez rechercher et remplacer pour corriger la césure de fin de ligne ou copiez les colonnes séparément avant d'exécuter l'outil. L'outil fournit une base propre, mais il n'essaie pas de résoudre tous les artefacts de formatage introduits par des sources complexes.",
+      "edgeCasesP3": "Une autre limitation est le texte qui utilise des sauts de ligne comme séparateurs d'enregistrement, comme un élément par ligne dans un ensemble de données. Supprimer ces sauts peut fusionner les enregistrements et rendre les données difficiles à analyser. Si votre entrée mélange des paragraphes avec des enregistrements d'une ligne, envisagez de diviser le contenu et de nettoyer uniquement les sections de paragraphe. L'outil est conçu pour le texte narratif, donc les données structurées peuvent nécessiter une approche différente comme remplacer les sauts de ligne par un délimiteur avant le nettoyage.",
+      "bestPracticesTitle": "Meilleures pratiques lors de l'utilisation de Supprimer les sauts de ligne",
+      "bestPracticesP1": "Quelques pratiques simples peuvent améliorer les résultats et réduire le besoin de nettoyage manuel après l'exécution de l'outil.",
+      "bestPracticesItem1": "Activez préserver les sauts de paragraphe pour le contenu narratif et les rapports.",
+      "bestPracticesItem2": "Remplacez les sauts de ligne par des espaces pour éviter les mots fusionnés dans la prose.",
+      "bestPracticesItem3": "Utilisez réduire les espaces supplémentaires lorsque l'entrée provient de PDF ou de tableaux.",
+      "bestPracticesItem4": "Révisez la sortie pour la césure et les en-têtes après le nettoyage.",
+      "bestPracticesItem5": "Gardez une copie du texte original au cas où vous auriez besoin de revenir en arrière.",
+      "bestPracticesP2": "Ces étapes maintiennent le flux de travail prévisible et facilitent l'explication du processus de nettoyage aux collaborateurs ou réviseurs. Une révision courte après le traitement est généralement suffisante pour attraper les quelques cas limites que le nettoyage automatisé ne peut pas traiter.",
+      "bestPracticesP3": "Il peut également aider à exécuter un petit échantillon d'abord lorsque vous n'êtes pas sûr de l'entrée. Testez un paragraphe, vérifiez l'espacement, puis appliquez les mêmes paramètres au texte complet. Si la source inclut des caractères cachés, associez cet outil avec un détecteur de caractères invisibles avant de supprimer les sauts de ligne. Cette séquence vous aide à éviter les surprises et assure que la sortie est prête pour une utilisation en aval.",
+      "misunderstoodTitle": "Concepts souvent mal compris",
+      "misunderstoodHardWrapsTitle": "Les enveloppements durs ne sont pas des paragraphes",
+      "misunderstoodHardWrapsP1": "Un enveloppement dur est un saut de ligne inséré par la mise en page, pas par l'intention de l'auteur. Les sauts de paragraphe sont significatifs. L'outil est conçu pour supprimer les enveloppements durs tout en préservant les sauts de paragraphe lorsque c'est possible.",
+      "misunderstoodPreserveTitle": "Préserver les paragraphes ne crée pas de nouveaux paragraphes",
+      "misunderstoodPreserveP1": "L'option préserver le paragraphe garde les lignes blanches qui existent déjà dans l'entrée. Il ne devine pas où un nouveau paragraphe devrait commencer si la source n'inclut pas de ligne blanche. Si tout est séparé par des sauts de ligne simples, l'outil le traite comme un paragraphe. Si vous avez besoin de séparation de paragraphe, ajoutez des lignes blanches avant d'exécuter l'outil ou insérez-les après.",
+      "misunderstoodReplacingTitle": "Remplacer les sauts de ligne est différent de les supprimer",
+      "misunderstoodReplacingP1": "Remplacer les sauts de ligne par des espaces préserve la séparation des mots. Les supprimer sans espaces est une action différente et peut fusionner des mots si la source n'incluait pas d'espace de fin.",
+      "misunderstoodCollapsingTitle": "Réduire les espaces n'est pas la même chose que couper",
+      "misunderstoodCollapsingP1": "Couper supprime les espaces au début et à la fin de la sortie. Réduire les espaces diminue les espaces répétés dans le texte. Ils résolvent des problèmes différents et peuvent être activés ensemble.",
+      "misunderstoodDeterministicTitle": "Le traitement déterministe n'infère pas le sens",
+      "misunderstoodDeterministicP1": "L'outil n'infère pas la structure ni ne corrige la formulation. Il applique des règles littérales aux sauts de ligne et à l'espacement. Toute édition sémantique doit être faite séparément.",
+      "misunderstoodRewritingTitle": "Supprimer les sauts de ligne n'est pas réécrire",
+      "misunderstoodRewritingP1": "L'outil ne génère ni ne paraphrase le contenu. Il change uniquement la mise en page du texte que vous fournissez, c'est pourquoi il est sûr pour les flux de travail qui nécessitent que le sens reste intact.",
+      "responsibleUseTitle": "Avertissement d'utilisation responsable",
+      "responsibleUseP1": "Supprimer les sauts de ligne est un outil de formatage de texte déterministe. Il fonctionne uniquement sur le texte que vous fournissez, ne se connecte pas aux modèles d'IA et ne prétend pas être affilié à un fournisseur d'IA. Il ne génère pas de contenu, ne change pas le sens et ne contourne pas les systèmes de détection. Utilisez-le pour le nettoyage et le formatage dans des contextes où vous avez le droit de traiter le texte.",
+      "finalSummaryTitle": "Résumé final et quand utiliser cet outil",
+      "finalSummaryP1": "L'outil Supprimer les sauts de ligne sur gptcleanuptools.com est un moyen simple et fiable de nettoyer le texte avec enveloppement dur. Il joint les lignes en paragraphes, préserve les sauts de paragraphe lorsque nécessaire et normalise l'espacement pour une sortie lisible. L'outil s'exécute localement dans votre navigateur, ce qui garde le processus privé et déterministe.",
+      "finalSummaryP2": "Utilisez-le lorsque vous devez supprimer les sauts de ligne du texte copié depuis des PDF, e-mails ou colonnes étroites. Il est idéal pour préparer le contenu pour un CMS, un rapport ou un champ de formulaire qui attend un seul paragraphe. Ce n'est pas un outil de réécriture et il ne modifie pas le sens, ce qui le rend sûr pour le contenu sensible ou précis.",
+      "finalSummaryP3": "Lorsque les sauts de ligne sont accidentels et gênent l'édition, cet outil fournit une correction rapide et cohérente. Associez-le avec une révision rapide de la sortie, et vous aurez un texte propre prêt pour votre prochaine étape.",
+      "finalSummaryP4": "Pour des flux de travail de nettoyage plus larges, vous pouvez associer cet outil avec d'autres utilitaires. Supprimez d'abord les sauts de ligne, puis exécutez un compteur de mots ou supprimez les lignes dupliquées si nécessaire. Chaque outil effectue une tâche claire, ce qui maintient le flux de travail prévisible et facile à auditer. L'objectif n'est pas de transformer le contenu mais de le préparer pour une édition précise, une publication ou une analyse."
+    },
+    "faqs": {
+      "faq1": {
+        "category": "Général",
+        "question": "Que fait l'outil Supprimer les sauts de ligne ?",
+        "answer": "Un outil Supprimer les sauts de ligne joint les lignes enveloppées en un paragraphe continu tout en gardant vos mots originaux. Il est conçu pour le nettoyage déterministe lorsque le texte arrive avec des sauts de ligne durs depuis des PDF, e-mails ou colonnes étroites. Vous collez le texte, choisissez si préserver les sauts de paragraphe, et l'outil supprime les sauts de ligne en conséquence. Si vous choisissez de remplacer les sauts de ligne par des espaces, il insère un seul espace là où un saut de ligne existait pour que les mots ne fusionnent pas. Il peut également réduire les espaces et tabulations répétés, qui apparaissent souvent après copier-coller.\n\nL'outil ne réécrit, ne paraphrase ni n'interprète pas le sens. Il transforme simplement les caractères de saut de ligne basés sur les options sélectionnées. La sortie est le même contenu avec un flux plus lisible, ce qui facilite l'édition, la recherche ou le collage dans un document."
+      },
+      "faq2": {
+        "category": "Général",
+        "question": "Quelle est la différence entre supprimer les sauts de ligne et supprimer les paragraphes ?",
+        "answer": "Supprimer les sauts de ligne joint les lignes qui ont été enveloppées par la mise en page ou l'exportation, tandis que supprimer les paragraphes élimine l'espacement intentionnel entre les idées. De nombreuses sources insèrent un saut de ligne à la fin de chaque ligne visuelle même si la phrase continue. Si vous supprimez ces sauts de ligne, la phrase devient un paragraphe normal. Les sauts de paragraphe sont généralement représentés par une ou plusieurs lignes blanches. Ils sont structurels et indiquent souvent un nouveau sujet, étape ou section.\n\nCet outil vous permet de préserver les sauts de paragraphe pour que les lignes blanches restent tandis que les sauts de ligne internes disparaissent. Cela garde la structure du document lisible. Si vous désactivez la préservation de paragraphe, tous les sauts sont supprimés et la sortie devient un seul bloc. Cela peut être utile pour les formulaires ou champs de données qui nécessitent une ligne, mais ce n'est généralement pas idéal pour les articles ou rapports. La distinction vous aide à supprimer uniquement les sauts qui sont accidentels."
+      },
+      "faq3": {
+        "category": "Technique",
+        "question": "Comment fonctionne l'option préserver les sauts de paragraphe ?",
+        "answer": "Préserver les sauts de paragraphe cherche des séries de deux ou plus de sauts de ligne et les traite comme une limite de paragraphe. L'outil marque ces limites avant de supprimer les sauts de ligne, puis les restaure comme lignes blanches dans la sortie. Cela garde les paragraphes séparés tandis que les lignes à l'intérieur de chaque paragraphe sont jointes en un bloc fluide. C'est une façon pratique de nettoyer le texte avec enveloppement dur sans aplatir le document.\n\nL'option dépend de l'entrée ayant des lignes blanches. Si votre source utilise des sauts de ligne simples pour tout, l'outil n'a aucun moyen d'inférer les paragraphes et traitera toute l'entrée comme un paragraphe. Dans ce cas, vous pouvez ajouter des séparateurs de paragraphe manuellement avant d'exécuter l'outil ou utiliser la sortie comme un seul bloc pour l'édition. Le comportement est déterministe et ne devine pas où les paragraphes devraient être."
+      },
+      "faq4": {
+        "category": "Utilisation",
+        "question": "Dois-je remplacer les sauts de ligne par des espaces ou les supprimer complètement ?",
+        "answer": "Remplacer les sauts de ligne par des espaces est la valeur par défaut la plus sûre pour la prose. Lorsqu'un saut de ligne apparaît au milieu d'une phrase, vous avez généralement besoin d'un espace pour que les mots restent séparés. L'outil insère un seul espace là où chaque saut de ligne existait. Cela préserve les limites de mots et évite de fusionner les mots. Cela améliore également la lisibilité lorsque vous collez la sortie dans un document ou un CMS.\n\nSupprimer les sauts de ligne sans ajouter d'espaces n'est utile que lorsque vous savez que les sauts sont déjà entourés d'espaces ou lorsque vous avez besoin d'une chaîne continue sans aucun espacement. Les exemples incluent certains formats de données, listes d'URL, ou cas où vous voulez supprimer tout l'espace blanc entre les segments. Si vous voyez des mots courir ensemble, activez l'option remplacer par des espaces et exécutez l'outil à nouveau. Le choix concerne la façon dont vous voulez que le texte final s'écoule."
+      },
+      "faq5": {
+        "category": "Formatage",
+        "question": "Que fait réduire les espaces supplémentaires ?",
+        "answer": "Réduire les espaces supplémentaires diminue plusieurs espaces et tabulations à un seul espace. Le copier-coller introduit souvent un espacement supplémentaire, surtout lorsque le texte est pris depuis des PDF ou tableaux. Ces espaces supplémentaires peuvent faire que la sortie semble inégale et peuvent causer des problèmes lorsque vous collez le texte dans des formulaires ou éditeurs qui traitent plusieurs espaces différemment.\n\nLorsque cette option est activée, l'outil scanne les espaces et caractères de tabulation répétés et remplace chaque série par un espace. Il ne supprime pas tout l'espacement ; il le normalise simplement. Cela aide à produire des phrases propres et lisibles après que les sauts de ligne sont supprimés. Si vous devez préserver l'espacement exact, comme dans une mise en page à largeur fixe ou colonnes alignées, vous devez désactiver cette option. Pour la prose régulière et la plupart des listes, réduire les espaces produit un résultat plus naturel."
+      },
+      "faq6": {
+        "category": "Formatage",
+        "question": "Pourquoi certaines mots se sont-ils fusionnés après avoir supprimé les sauts de ligne ?",
+        "answer": "Les mots se fusionnent lorsque les sauts de ligne sont supprimés sans insérer d'espaces. Certaines sources enveloppent les lignes à une largeur fixe et n'incluent pas d'espace avant le saut de ligne. Lorsque le saut est supprimé, le dernier mot d'une ligne et le premier mot de la ligne suivante deviennent un seul mot. C'est courant dans les exportations PDF et les clients de messagerie.\n\nLa correction la plus simple est d'activer l'option remplacer les sauts de ligne par des espaces. Cela insère un espace à chaque saut pour que les mots restent séparés. Une autre cause est la césure aux fins de ligne. Si la source utilise des traits d'union pour diviser les mots entre les lignes, l'outil gardera le trait d'union, ce qui peut laisser un mot comme \"inter-\" suivi de \"national\". Vous pourriez avoir besoin de supprimer le trait d'union manuellement ou d'utiliser rechercher et remplacer ciblé. Une révision rapide de la sortie aide à détecter ces cas."
+      },
+      "faq7": {
+        "category": "Utilisation",
+        "question": "L'outil peut-il corriger le texte copié depuis des PDF ?",
+        "answer": "Oui, l'outil est très adapté aux problèmes de copier-coller PDF. De nombreux PDF stockent le texte dans des colonnes étroites ou avec des sauts de ligne durs après chaque ligne. Lorsque vous copiez, ces sauts apparaissent comme des caractères de nouvelle ligne même si la phrase continue. L'outil Supprimer les sauts de ligne joint ces lignes, restaurant le flux naturel de paragraphe. Il aide également à supprimer l'espacement supplémentaire que l'extraction PDF ajoute souvent entre les mots ou après la ponctuation.\n\nCependant, le texte PDF peut inclure des artefacts plus complexes, tels que les en-têtes, pieds de page, numéros de page et fins de ligne avec césure. L'outil ne supprime pas ceux-ci automatiquement car il fonctionne uniquement sur les sauts de ligne et l'espacement. Après l'avoir exécuté, scannez la sortie pour les en-têtes errants ou les mots avec césure et nettoyez-les selon les besoins. Pour les PDF multi-colonnes, vous pourriez avoir besoin de copier chaque colonne séparément pour éviter l'ordre de lecture mixte. L'outil fournit une ligne de base rapide mais bénéficie toujours d'une révision humaine rapide."
+      },
+      "faq8": {
+        "category": "Général",
+        "question": "L'outil change-t-il la ponctuation ou le sens ?",
+        "answer": "Non. L'outil ne change pas la ponctuation, l'orthographe ou le sens. Il supprime uniquement les caractères de saut de ligne et insère optionnellement des espaces ou réduit les espaces répétés. Cela signifie que les mots que vous fournissez restent dans le même ordre et la ponctuation reste exactement comme elle apparaît. Le résultat est simplement une mise en page plus fluide qui se lit comme un paragraphe normal au lieu d'une série de lignes avec enveloppement dur.\n\nComme l'outil est déterministe, la même entrée et les mêmes paramètres produisent toujours la même sortie. Il n'y a pas de paraphrase, réécriture ou inférence pilotée par IA. Ceci est important pour le texte juridique, les citations académiques ou la documentation technique où le sens doit être préservé. Si vous remarquez des changements de formulation, c'est probablement dû à la façon dont les sauts de ligne ont été supprimés ou parce que l'entrée contenait un espacement inhabituel. Révisez la sortie et ajustez les paramètres si nécessaire, mais l'outil lui-même n'altère pas le contenu au-delà du formatage."
+      },
+      "faq9": {
+        "category": "Technique",
+        "question": "Comment gère-t-il les fins de ligne Windows et Mac ?",
+        "answer": "L'outil normalise les fins de ligne avant le traitement. Différents systèmes représentent les sauts de ligne différemment : Windows utilise retour chariot plus alimentation de ligne, tandis qu'Unix et macOS utilisent généralement uniquement l'alimentation de ligne. L'outil convertit les sauts de style Windows en un format cohérent, puis applique la logique de suppression. Cela empêche les décalages où certains sauts sont supprimés et d'autres non.\n\nVous n'avez pas besoin d'ajuster quoi que ce soit manuellement. Collez simplement le texte et exécutez l'outil. L'étape de normalisation est interne et déterministe, donc la sortie est la même indépendamment de si le texte vient de Windows, Mac ou une page web. Si vous voyez encore un comportement inattendu, c'est généralement dû à d'autres caractères cachés tels que les espaces insécables ou les sauts de page. Dans ces cas, utiliser un détecteur de caractères invisibles peut aider à diagnostiquer l'entrée. La normalisation des fins de ligne est une partie standard du flux de travail."
+      },
+      "faq10": {
+        "category": "Formatage",
+        "question": "Supprimera-t-il les lignes blanches et l'espacement supplémentaire ?",
+        "answer": "Les lignes blanches sont gérées basées sur le paramètre préserver les sauts de paragraphe. Si préserver les paragraphes est activé, les lignes blanches consécutives sont traitées comme séparateurs de paragraphe et sont gardées dans la sortie. L'outil supprime les sauts de ligne à l'intérieur de chaque paragraphe mais laisse la ligne blanche entre les paragraphes pour que la structure reste lisible. Si préserver les paragraphes est désactivé, ces lignes blanches sont supprimées avec les autres sauts de ligne, produisant un seul bloc de texte.\n\nL'espacement supplémentaire à l'intérieur des lignes est géré par l'option réduire les espaces. Lorsqu'elle est activée, les espaces et tabulations répétés sont réduits à un seul espace. La sortie est également coupée au début et à la fin, ce qui supprime l'espace blanc initial ou final accidentel. Si vous devez garder l'espacement exact ou l'indentation, désactivez réduire les espaces et envisagez de laisser la préservation de paragraphe activée. L'outil vous donne le contrôle sur la quantité de structure à garder tout en nettoyant les sauts de ligne."
+      },
+      "faq11": {
+        "category": "Flux de travail",
+        "question": "Est-ce sûr pour les longs documents ?",
+        "answer": "C'est généralement sûr pour les longs documents, mais les performances dépendent de votre appareil et navigateur. Le traitement se produit localement dans le navigateur, donc les grandes entrées nécessitent plus de mémoire et de temps. Pour la plupart des articles, rapports ou fils de discussion e-mail, l'outil s'exécute rapidement. Si vous collez un document extrêmement grand, vous pourriez voir une réponse plus lente ou un retard du navigateur.\n\nUne approche pratique est de travailler en sections. Divisez le texte en fragments plus petits, exécutez l'outil sur chaque fragment, puis réassemblez la sortie. Cela garde l'interface réactive et réduit le risque de ralentissements accidentels du navigateur. L'outil est déterministe, donc vous pouvez traiter les sections dans n'importe quel ordre sans changer les résultats. Gardez toujours une copie du texte original avant d'exécuter tout nettoyage en masse pour que vous puissiez le restaurer si nécessaire. Pour les cas d'usage quotidiens, l'outil gère bien les grands blocs."
+      },
+      "faq12": {
+        "category": "Utilisation",
+        "question": "Puis-je l'utiliser sur des listes ou des puces ?",
+        "answer": "Il peut être utilisé sur des listes, mais vous devriez être prudent. De nombreuses listes dépendent des sauts de ligne pour séparer les éléments. Si vous supprimez les sauts de ligne sans préserver les paragraphes, tous les éléments peuvent fusionner en une seule ligne, ce qui rend la liste difficile à lire ou réutiliser. Si chaque élément est séparé par une ligne blanche, préserver les paragraphes peut garder la structure de la liste, mais une liste qui utilise des sauts de ligne simples sera jointe.\n\nSi vous devez garder les éléments de liste séparés, vous pourriez éviter de supprimer les sauts de ligne ou vous pourriez convertir la liste en délimiteur d'abord, comme des virgules ou des points-virgules. Une autre approche est d'exécuter l'outil uniquement sur les lignes à l'intérieur de chaque élément, laissant les séparateurs de liste intacts. L'outil Supprimer les sauts de ligne est meilleur pour la prose et les paragraphes. Pour les listes structurées, considérez si les sauts de ligne ont un sens avant de les supprimer."
+      },
+      "faq13": {
+        "category": "Limites",
+        "question": "Puis-je l'utiliser pour des extraits de code ou des journaux ?",
+        "answer": "Vous pouvez coller des extraits de code ou des journaux, mais les sauts de ligne sont souvent significatifs dans ces formats. Supprimer les sauts de ligne dans le code source peut changer son sens ou le rendre illisible. Les journaux dépendent également des sauts de ligne pour séparer les événements. Si vous les supprimez, vous pourriez perdre la capacité de tracer les séquences ou de corréler les horodatages.\n\nIl y a des cas limités où cela aide, comme lorsqu'un commentaire de code ou une entrée de journal est enveloppé dur par un affichage étroit et que vous voulez le lire comme une seule ligne. Dans ces cas, préservez les sauts de paragraphe et remplacez les sauts de ligne par des espaces pour que le texte reste lisible. Évitez d'utiliser l'outil sur du code exécutable ou des fichiers de journal structurés. Il est conçu pour le nettoyage de texte brut, pas pour le formatage de code ou le traitement de journaux. Révisez toujours la sortie avant de l'utiliser dans un flux de travail technique."
+      },
+      "faq14": {
+        "category": "Technique",
+        "question": "Pourquoi la sortie varie-t-elle lorsque je colle le même texte depuis différentes sources ?",
+        "answer": "La sortie peut varier lorsque l'entrée sous-jacente n'est pas identique. Copier le même texte visible depuis différentes sources peut introduire des caractères cachés, des espaces insécables ou différents fins de ligne. Un lecteur PDF pourrait insérer des espaces supplémentaires, tandis qu'une page web pourrait inclure des sauts de ligne souples ou des caractères invisibles. Ces différences subtiles affectent la façon dont l'outil interprète les sauts de ligne et l'espacement.\n\nL'outil applique des règles cohérentes, donc les différences dans la sortie reflètent généralement les différences dans l'entrée. Si vous voyez des résultats inattendus, collez le texte dans un éditeur de texte brut d'abord ou utilisez un détecteur de caractères invisibles pour révéler les symboles cachés. Vous pouvez également basculer l'option réduire les espaces pour normaliser l'espacement. Lorsque l'entrée est propre et cohérente, la sortie sera également cohérente. L'outil lui-même n'introduit pas de hasard ou de variabilité."
+      },
+      "faq15": {
+        "category": "SEO",
+        "question": "Supprimer les sauts de ligne aide-t-il au SEO ou à la publication ?",
+        "answer": "Supprimer les sauts de ligne n'améliore pas directement les classements de recherche, mais il peut soutenir les flux de travail de publication. Les paragraphes propres sont plus faciles à éditer, réviser et coller dans un CMS. Ils réduisent les erreurs de formatage qui peuvent apparaître lorsque les sauts de ligne sont laissés en place, comme des enveloppements de ligne gênants ou un espacement inattendu dans les modèles.\n\nPour les tâches liées au SEO, l'outil est utile lorsque vous préparez des descriptions meta, extraits ou fragments structurés qui devraient être un seul paragraphe. Il assure que le texte semble propre dans les champs qui ne gèrent pas bien les sauts de ligne. Il n'ajoute pas de mots-clés ou ne change pas le sens, donc ce n'est pas une technique d'optimisation en soi. Pensez-y comme une utilité de formatage qui vous aide à livrer du contenu poli, ce qui peut améliorer la perception de l'utilisateur et la précision éditoriale."
+      },
+      "faq16": {
+        "category": "Confidentialité",
+        "question": "Quelles protections de confidentialité l'outil fournit-il ?",
+        "answer": "La confidentialité est gérée par le traitement local. L'outil s'exécute dans votre navigateur et n'envoie pas votre texte à des services externes. Il n'y a pas d'exigence de compte et pas de stockage d'entrée ou de sortie sur un serveur. Cela le rend adapté aux tâches de nettoyage de routine où vous voulez un formatage rapide sans partager le contenu.\n\nMême avec le traitement local, vous devriez suivre toutes les politiques internes pour les données sensibles. Si vous gérez du matériel confidentiel, considérez si un outil basé sur navigateur est approprié pour votre environnement. L'outil Supprimer les sauts de ligne ne se connecte pas aux modèles d'IA ou aux API tierces, et il ne retient pas le contenu après avoir fermé la page. Vous contrôlez ce que vous collez, ce que vous copiez et ce que vous gardez. Ce flux de travail simple aide à garder vos données sous votre contrôle."
+      },
+      "faq17": {
+        "category": "Compatibilité",
+        "question": "Quels navigateurs sont pris en charge ?",
+        "answer": "L'outil fonctionne dans les navigateurs modernes qui prennent en charge le traitement de texte JavaScript standard. Chrome, Edge, Firefox et Safari gèrent toutes les fonctionnalités requises. Comme la logique est simple et déterministe, la sortie dépend de l'entrée et des options sélectionnées, pas du navigateur. Vous devriez voir les mêmes résultats sur tous les navigateurs pris en charge.\n\nSi vous rencontrez des différences, elles viennent généralement de la façon dont le texte a été copié dans le navigateur ou des extensions qui modifient le contenu du presse-papiers. Essayez de désactiver les extensions ou de coller dans un éditeur de texte brut d'abord. L'outil ne dépend pas d'API avancées au-delà de l'accès standard au presse-papiers pour le bouton copier. Si votre navigateur bloque l'accès au presse-papiers, vous pouvez toujours sélectionner et copier la sortie manuellement. Dans l'ensemble, la compatibilité est forte pour tout navigateur à jour."
+      },
+      "faq18": {
+        "category": "Limites",
+        "question": "Quand dois-je éviter de supprimer les sauts de ligne ?",
+        "answer": "Vous devriez éviter de supprimer les sauts de ligne lorsque les sauts ont un sens. La poésie, les adresses, les clauses légales et les listes formatées dépendent souvent des sauts de ligne pour montrer la structure. Les supprimer peut changer la façon dont le texte est lu ou interprété. Dans le code et les fichiers de configuration, les sauts de ligne sont généralement significatifs et doivent être préservés.\n\nSi le texte est déjà bien formaté, il pourrait ne pas avoir besoin de nettoyage. L'outil est destiné aux cas où les sauts de ligne ont été insérés par des contraintes de formatage plutôt que par l'auteur. Si vous n'êtes pas sûr, exécutez l'outil sur un petit échantillon d'abord et comparez le résultat. Lorsque les sauts de ligne font partie du contenu, préservez-les et utilisez d'autres outils qui n'altèrent pas la mise en page. La règle la plus sûre est de supprimer les sauts uniquement lorsqu'ils sont clairement accidentels."
+      },
+      "faq19": {
+        "category": "Flux de travail",
+        "question": "Puis-je annuler ou inverser le changement ?",
+        "answer": "L'outil ne fournit pas de bouton d'annulation, donc l'approche la plus sûre est de garder une copie de votre texte original. Vous pouvez coller l'original dans un document séparé ou le garder dans le champ de saisie pendant que vous révisez la sortie. Si vous devez inverser les changements, vous pouvez réinsérer les sauts de ligne manuellement ou utiliser un autre outil pour envelopper le texte à une largeur fixe.\n\nComme l'outil est déterministe, vous pouvez également le réexécuter avec différents paramètres si vous voulez garder plus de structure. Par exemple, activer la préservation de paragraphe ou remplacer les sauts de ligne par des espaces peut produire un résultat plus proche de la mise en page originale. Encore, il n'est pas possible de reconstruire parfaitement les sauts de ligne originaux à moins que vous ayez gardé le texte source. Traitez l'outil comme une étape de formatage à sens unique et gardez des sauvegardes lorsque la structure originale compte."
+      },
+      "faq20": {
+        "category": "Technique",
+        "question": "Comment dois-je gérer les sauts de ligne avec césure ?",
+        "answer": "Les sauts de ligne avec césure se produisent lorsqu'un mot est divisé à la fin d'une ligne et qu'un trait d'union est ajouté, comme \"inter-\" suivi de \"national\". Lorsque les sauts de ligne sont supprimés, le trait d'union reste, ce qui peut laisser un trait d'union incorrect au milieu d'un mot. L'outil ne supprime pas automatiquement ces traits d'union car il ne peut pas distinguer de manière fiable les traits d'union intentionnels des traits d'union de saut de ligne.\n\nSi vous voyez ce modèle, vous pouvez le corriger avec rechercher et remplacer ciblé. Par exemple, remplacez \"- \" par une chaîne vide lorsque vous savez que le trait d'union n'apparaît qu'aux fins de ligne. Faites attention, car cela pourrait également supprimer des traits d'union légitimes. Une approche plus sûre est une révision manuelle rapide ou une expression régulière dans un éditeur plus avancé. L'outil fournit le flux de paragraphe propre, et vous gérez toute césure de fin de ligne comme une étape de nettoyage de suivi."
+      },
+      "faq21": {
+        "category": "Général",
+        "question": "L'outil interagit-il avec l'IA ou des services externes ?",
+        "answer": "Non. L'outil est une utilité de texte déterministe qui fonctionne uniquement sur le texte que vous fournissez. Il n'appelle pas de modèles d'IA, n'envoie pas de contenu à des API externes et ne génère ni ne réécrit le texte. La sortie est produite par des transformations simples et locales de sauts de ligne et d'espacement. Ceci est important pour la transparence, car vous pouvez prédire exactement comment votre contenu changera.\n\nSi vous avez besoin d'assistance IA pour réécrire ou résumer, c'est un type d'outil différent. Supprimer les sauts de ligne est uniquement pour le nettoyage de formatage. Il est conçu pour garder le sens intact tout en corrigeant les problèmes de mise en page causés par les enveloppements durs et le texte copié. Cela signifie également qu'il ne contourne pas les systèmes de détection ni ne fait de déclarations sur l'indétectabilité. C'est purement une étape de formatage en laquelle vous pouvez faire confiance et auditer."
+      },
+      "faq22": {
+        "category": "Flux de travail",
+        "question": "Comment cela se compare-t-il à l'édition manuelle ou rechercher et remplacer ?",
+        "answer": "L'édition manuelle peut fonctionner pour des passages courts, mais devient lente et incohérente pour les longs documents. Vous devez rechercher chaque saut de ligne, le supprimer et vous assurer que l'espacement est correct. Il est facile de manquer un saut ou de supprimer accidentellement la ponctuation. Une commande rechercher et remplacer peut supprimer les sauts de ligne en masse, mais manque généralement d'options pour préserver les sauts de paragraphe ou réduire les espaces supplémentaires.\n\nCet outil applique un ensemble cohérent de règles et vous donne des options pour la préservation de paragraphe et l'espacement. Il fournit également une zone de sortie propre pour révision. Le flux de travail est plus rapide et plus répétable, surtout lorsque vous devez nettoyer le texte depuis plusieurs sources. L'édition manuelle a encore sa place pour les décisions nuancées, mais pour le nettoyage de routine des sauts de ligne, un outil déterministe est plus fiable et plus facile à expliquer dans un flux de travail."
+      }
+    },
+    "faqHeading": "Supprimer les sauts de ligne - Questions fréquemment posées",
+    "faqIntro": "Réponses détaillées sur la jointure de lignes, la préservation de paragraphes et l'évitement de problèmes de formatage."
+  },
+  "HomePage": {
+    "seoName": "Nettoyeur de texte ChatGPT",
+    "seoDescription": "Nettoyez et normalisez le texte généré par l'IA : supprimez les caractères Unicode cachés (ZWSP, NBSP, BOM), corrigez l'espacement et gardez les paragraphes intacts pour Word, Docs et une publication optimisée pour le SEO.",
+    "heroTitle": "Nettoyeur de texte ChatGPT",
+    "heroSubtitle": "Nettoyez et normalisez le texte généré par l'IA : supprimez les caractères Unicode cachés (ZWSP, NBSP, BOM), corrigez l'espacement et gardez les paragraphes intacts pour Word, Docs et une publication optimisée pour le SEO.",
+    "cleanPrimary": "Nettoyer le texte",
+    "cleanInputLabel": "Collez votre texte IA désordonné",
+    "cleanOutputLabel": "Résultat nettoyé",
+    "cleanInputPlaceholder": "Collez du texte de ChatGPT, Gemini, Claude...",
+    "cleanOutputPlaceholder": "Votre texte nettoyé apparaîtra ici.",
+    "mainTitle": "GPT CLEAN UP Tools - Nettoyeur de texte IA ChatGPT (GPT CLEAN UP Tools / Nettoyage de texte ChatGPT)",
+    "aboutTitle": "À propos de GPT CLEAN UP Tools",
+    "aboutP1": "GPT CLEAN UP Tools est une plateforme gratuite basée sur le navigateur créée pour les réalités de l'ère de l'IA. Nous construisons des outils rapides et privés qui résolvent des problèmes pratiques : nettoyer le texte IA, supprimer les caractères cachés, normaliser le formatage, gérer les PDF et améliorer les flux de travail quotidiens d'écriture et de publication. Tout sur GPT CLEAN UP Tools s'exécute localement dans votre navigateur, donc votre contenu ne quitte jamais votre appareil.",
+    "aboutP2": "L'objectif de GPT CLEAN UP Tools est simple : donner aux étudiants, professionnels, créateurs et équipes un endroit fiable auquel ils peuvent faire confiance. Au lieu de jongler avec des dizaines de sites, vous pouvez ouvrir GPT CLEAN UP Tools, coller votre contenu et obtenir un résultat propre et compatible qui fonctionne dans les portails scolaires, les éditeurs d'entreprise, les CMS et les formulaires en ligne. Notre approche favorise la clarté plutôt que le battage médiatique et la confidentialité plutôt que la collecte de données.",
+    "aboutP3": "Au cœur de la plateforme se trouve le Nettoyeur de texte IA ChatGPT, fréquemment recherché comme GPT CLEAN UP Tools ou Nettoyage de texte ChatGPT. Cet outil phare supprime les artefacts invisibles de l'écriture assistée par l'IA tout en préservant le sens, le style et le ton. Il ne paraphrase ni ne modifie vos mots ; il se concentre sur le nettoyage technique pour que votre travail reste le vôtre.",
+    "cleanerTitle": "Nettoyeur de texte IA ChatGPT (GPT CLEAN UP Tools / Nettoyage de texte ChatGPT)",
+    "cleanerP1": "Lorsque le texte est généré ou fortement assisté par de grands modèles de langage, le copier-coller peut transporter plus que des mots visibles. Des caractères tels que les espaces à largeur nulle, les espaces insécables, les marques d'ordre d'octets et les codes de contrôle errants peuvent s'attacher au texte et causer des problèmes subtils. Le Nettoyeur de texte IA ChatGPT de GPT CLEAN UP Tools supprime ces artefacts pour que votre contenu se comporte comme un texte normal partout.",
+    "cleanerP2": "Le Nettoyage de texte ChatGPT sur GPT CLEAN UP Tools se concentre sur quatre choses : supprimer les caractères cachés, normaliser la ponctuation, stabiliser l'espacement et les sauts de ligne, et produire du texte brut sûr pour les éditeurs. Le résultat est un contenu qui se colle proprement dans les documents, les systèmes d'apprentissage, les constructeurs de sites web, les clients de messagerie et les plateformes de publication sans espacement étrange ou formatage cassé.",
+    "cleanerP3": "De nombreux lecteurs demandent si GPT CLEAN UP Tools est la même chose que contourner la détection. Ce n'est pas le cas. GPT CLEAN UP Tools effectue uniquement un nettoyage technique. Certains outils de détection analysent également le style d'écriture et le contexte. Nettoyer le texte réduit les signaux techniques évitables, mais ce n'est pas une garantie de résultat avec les systèmes tiers. L'approche la plus sûre et la plus durable est de combiner un formatage propre avec vos propres révisions et votre voix.",
+    "watermarksTitle": "Que sont les filigranes de texte IA et les artefacts cachés ?",
+    "watermarksP1": "Les filigranes de texte IA et les artefacts cachés sont des traces techniques qui sont souvent invisibles à l'écran mais détectables par les logiciels. Les exemples courants incluent l'espace à largeur nulle (U+200B), le non-jointeur à largeur nulle (U+200C), l'espace insécable (U+00A0) et la marque d'ordre d'octets (U+FEFF). Ils peuvent également inclure des guillemets courbes, des tirets longs et d'autres signes de ponctuation qui se copient d'une manière qui confond les champs de texte stricts.",
+    "watermarksP2": "Au-delà des caractères, le copier-coller peut transporter un formatage furtif provenant d'éditeurs riches. Par exemple, des attributs HTML errants ou des mots de contrôle RTF restants peuvent survivre dans certains environnements, faisant que le texte collé semble différent de ce que vous avez tapé. GPT CLEAN UP Tools se concentre sur le retour du texte à une base simple et prévisible pour qu'il soit facile à lire, facile à éditer et facile à réutiliser.",
+    "watermarksP3": "Les détecteurs qui considèrent les signaux techniques peuvent rechercher des groupes suspects de caractères invisibles ou des anomalies d'espacement cohérentes. GPT CLEAN UP Tools supprime ces signaux techniques avec le Nettoyeur de texte IA ChatGPT et le Nettoyage de texte ChatGPT. Nous soulignons à nouveau : la suppression des caractères cachés n'est pas la même chose que la réécriture ou le masquage de la paternité. C'est une hygiène de base pour le texte numérique.",
+    "benefitsTitle": "Avantages d'utiliser GPT CLEAN UP Tools pour le Nettoyage de texte ChatGPT",
+    "benefitsP1": "La lisibilité et la présentation s'améliorent immédiatement. Le texte qui semblait bien dans un éditeur peut s'effondrer ou s'étirer dans un autre. En réinitialisant la ponctuation et l'espacement à des valeurs par défaut prévisibles, GPT CLEAN UP Tools aide les lignes à s'envelopper correctement, les citations à s'afficher de manière cohérente et les listes et en-têtes à rester stables.",
+    "benefitsP2": "La compatibilité entre systèmes augmente. Si vous travaillez entre une application de prise de notes, un portail d'apprentissage, un CMS et un PDF, la sortie propre et simple de GPT CLEAN UP Tools se comporte de manière fiable lorsqu'elle est collée dans chaque destination. Cela signifie moins de surprises de mise en page de dernière minute et moins de formulaires cassés.",
+    "benefitsP3": "Les comptes et limites ont du sens. Les caractères cachés peuvent gonfler les totaux ou casser les champs à caractères limités. Après le Nettoyage de texte ChatGPT, les chiffres que vous voyez sont les chiffres que les systèmes comptent. Cela rend la rédaction vers un objectif, comme une boîte de réponse de bourse ou une méta description, beaucoup plus simple.",
+    "useCasesTitle": "Qui utilise GPT CLEAN UP Tools - Cas d'utilisation pratiques",
+    "useCases1": "Les étudiants et les universitaires utilisent le Nettoyeur de texte IA ChatGPT pour soumettre des essais, des réponses et des manuscrits qui se collent proprement dans les portails scolaires. Les références restent lisibles, les sauts de paragraphe restent intacts et les caractères errants n'enflent pas les comptes.",
+    "useCases2": "Les professionnels et les écrivains s'appuient sur GPT CLEAN UP Tools pour les propositions, les briefs, les newsletters et les brouillons de blog. Le texte propre signifie moins d'heures passées à corriger les erreurs d'espacement dans les éditeurs d'entreprise et les systèmes de gestion de contenu.",
+    "useCases3": "Les créateurs et les spécialistes du marketing publient des légendes et du contenu long format avec confiance. Après le Nettoyage de texte ChatGPT, la copie porte une voix cohérente sans pépins techniques qui distraient les lecteurs ou cassent les mises en page sur mobile.",
+    "useCases4": "Les chercheurs et les développeurs collent de la documentation et du contenu README sans surprises Unicode silencieuses. Supprimer les caractères non imprimables empêche les bugs obscurs lorsque le texte interagit avec le code ou les formats de données.",
+    "howToUseTitle": "Comment utiliser le Nettoyeur de texte IA ChatGPT",
+    "howToUse1": "Copiez votre contenu. Sélectionnez le texte que vous avez créé ou affiné avec un système IA tel que ChatGPT et copiez-le dans votre presse-papiers.",
+    "howToUse2": "Collez dans GPT CLEAN UP Tools. Ouvrez la page du Nettoyeur de texte IA ChatGPT et collez votre texte dans la zone de saisie.",
+    "howToUse3": "Choisissez les options. Si vous souhaitez conserver les guillemets courbes ou les tirets longs, désactivez ces normalisations. Sinon, laissez les valeurs par défaut activées.",
+    "howToUse4": "Nettoyer. Cliquez sur Nettoyer le texte pour exécuter GPT CLEAN UP Tools. L'opération se termine instantanément car GPT CLEAN UP Tools fonctionne entièrement dans votre navigateur.",
+    "howToUse5": "Examinez et copiez. Parcourez le résultat. Si vous voulez des sauts de ligne supplémentaires ou un style de tiret différent, ajustez et cliquez sur Nettoyer à nouveau. Copiez la sortie et collez-la où vous en avez besoin.",
+    "privacyTitle": "Confidentialité et sécurité chez GPT CLEAN UP Tools",
+    "privacyP1": "La confidentialité est un choix de conception fondamental. GPT CLEAN UP Tools traite le texte localement dans votre navigateur. Nous ne téléchargeons pas de contenu sur les serveurs, nous ne stockons pas les entrées et nous n'enregistrons pas les résultats nettoyés. Cette architecture vous donne vitesse et contrôle sans compromis.",
+    "privacyP2": "Parce que le traitement est côté client, vous pouvez utiliser GPT CLEAN UP Tools en toute sécurité pour les brouillons qui incluent des informations sensibles. Suivez toujours les politiques de votre organisation, mais soyez assuré que le Nettoyeur de texte IA ChatGPT lui-même ne transmet pas votre texte sur le réseau.",
+    "privacyP3": "La transparence compte. GPT CLEAN UP Tools décrit ce que l'outil change - suppression d'Unicode caché, normalisation de la ponctuation, nettoyage de l'espacement - pour que vous compreniez comment la sortie a été produite et pourquoi elle se comporte de manière prévisible dans les éditeurs en aval.",
+    "detectionTitle": "Détection IA, faux positifs et limites pratiques",
+    "detectionP1": "De nombreuses institutions et plateformes utilisent des systèmes automatisés pour examiner le texte. Certains systèmes se concentrent sur les signaux techniques, tandis que d'autres analysent la formulation et la structure. GPT CLEAN UP Tools aborde le côté technique avec le Nettoyeur de texte IA ChatGPT et le Nettoyage de texte ChatGPT.",
+    "detectionP2": "Nettoyer le texte supprime les sources évitables de confusion - comme les caractères non imprimables ou l'espacement irrégulier - qui peuvent déformer la façon dont le logiciel interprète le contenu. Cependant, l'analyse basée sur le style est séparée. L'approche la plus fiable est de combiner un formatage propre avec votre propre voix, vos exemples et votre perspective.",
+    "detectionP3": "GPT CLEAN UP Tools ne prétend pas ni n'essaie d'altérer le style. La mission est la clarté et la compatibilité. Vous restez l'auteur ; l'outil garde votre texte propre.",
+    "bestPracticesTitle": "Meilleures pratiques après le Nettoyage de texte ChatGPT",
+    "bestPractices1": "Ajoutez un petit tour de révision personnelle. Insérez des détails spécifiques, des expériences ou des références qui reflètent votre contexte. Formatage propre plus contexte personnel se lit plus fort que l'un ou l'autre seul.",
+    "bestPractices2": "Adaptez le ton au public. Après GPT CLEAN UP Tools, ajustez la concision ou la formalité pour que le texte s'aligne sur les attentes de la salle de classe, du client ou de la publication.",
+    "bestPractices3": "Gardez un original. Parce que GPT CLEAN UP Tools produit une sortie propre, il est utile de conserver votre brouillon source pour que vous puissiez comparer, fusionner ou restaurer des éléments stylistiques plus tard.",
+    "whyChooseTitle": "Pourquoi choisir GPT CLEAN UP Tools plutôt que des sites à usage unique",
+    "whyChooseP1": "GPT CLEAN UP Tools est plus qu'une utilité à page unique. La plateforme est une bibliothèque croissante d'outils de l'ère de l'IA conçus pour travailler ensemble. À côté du Nettoyeur de texte IA ChatGPT, vous trouverez un Suppresseur d'espaces, un Détecteur de filigranes IA, des utilitaires de comptage de mots, des options de fusion/division/compression PDF et des assistants d'optimisation de recherche.",
+    "whyChooseP2": "Cette largeur compte car les flux de travail réels sont désordonnés. Vous pourriez avoir besoin de nettoyer l'espacement, d'inspecter un brouillon, de convertir un PDF et d'affiner une méta description tout dans la même session. Avec GPT CLEAN UP Tools, vous n'avez pas à quitter le site ou à accepter le suivi pour le faire.",
+    "cleanInstantlyTitle": "Nettoyez le texte ChatGPT instantanément avec notre outil",
+    "cleanInstantlyP": "Besoin de nettoyer le texte ChatGPT avant de le publier ou de le partager ? Notre nettoyeur gratuit en ligne supprime les caractères cachés, les filigranes IA, l'espacement étrange et les artefacts de formatage - pour que votre contenu semble humain, cohérent et professionnel. Collez votre texte, cliquez sur Nettoyer et vous avez terminé en quelques secondes.",
+    "whyCleanTitle": "Pourquoi vous devriez nettoyer le texte ChatGPT",
+    "whyClean1": "Caractères cachés : Les espaces à largeur nulle, les espaces insécables et l'Unicode errant peuvent casser le copier-coller, la recherche ou les comptes de mots.",
+    "whyClean2": "Bruit de formatage : Les lignes vierges supplémentaires, les puces étranges et les restes de markdown réduisent la lisibilité.",
+    "whyClean3": "Cohérence : La copie propre améliore l'UX, le SEO et le transfert vers Docs, Word, CMS ou les outils de messagerie.",
+    "howToCleanTitle": "Comment nettoyer le texte ChatGPT (étapes rapides)",
+    "howToClean1": "Collez votre sortie ChatGPT dans la boîte ci-dessus.",
+    "howToClean2": "Cliquez sur Nettoyer pour nettoyer automatiquement le texte ChatGPT.",
+    "howToClean3": "Aperçu du résultat nettoyé (avant/après).",
+    "howToClean4": "Copiez ou téléchargez le texte final dans votre éditeur, CMS ou document.",
+    "whatWeFixTitle": "Ce que notre nettoyeur corrige",
+    "whatWeFix1": "Supprime les caractères à largeur nulle/non imprimables (ZWSP, NBSP, BOM, etc.).",
+    "whatWeFix2": "Normalise les espaces, la ponctuation et les sauts de ligne.",
+    "whatWeFix3": "Supprime les restes HTML/markdown étranges des réponses ChatGPT copiées.",
+    "whatWeFix4": "Optionnel : supprime les espaces de début/fin et réduit plusieurs lignes vierges.",
+    "beforeAfterTitle": "Avant vs Après (exemple)",
+    "beforeLabel": "Avant (ChatGPT brut)",
+    "afterLabel": "Après (nettoyé)",
+    "relatedToolsTitle": "Outils connexes pour une sortie IA plus propre",
+    "relatedToolsP": "Pour les problèmes d'espacement les plus difficiles, essayez notre Suppresseur d'espaces ChatGPT pour supprimer agressivement les espaces dupliqués ou invisibles. Vous voulez vérifier si votre brouillon contient encore des modèles IA ? Scannez-le avec le Détecteur de filigranes ChatGPT.",
+    "relatedTools1": "Suppresseur d'espaces ChatGPT : Supprimez les espaces dupliqués/invisibles et rangez l'espacement instantanément.",
+    "relatedTools2": "Détecteur de filigranes ChatGPT : Scannez le texte pour les modèles de filigranes IA et les empreintes de formatage.",
+    "bestPracticesTextTitle": "Meilleures pratiques pour garder le texte propre",
+    "bestPracticesText1": "Régénérez des sorties IA plus courtes, puis nettoyez le texte ChatGPT avant d'éditer.",
+    "bestPracticesText2": "Utilisez des en-têtes (H2/H3), des paragraphes courts et des listes pour la lisibilité.",
+    "bestPracticesText3": "Exécutez un nettoyage final après les modifications manuelles pour supprimer tout nouvel artefact.",
+    "conclusionTitle": "Conclusion",
+    "conclusionP": "GPT CLEAN UP est construit pour la clarté, la confidentialité et des résultats fiables. Utilisez le Nettoyeur de texte IA ChatGPT pour GPT Clean Up et Nettoyage de texte ChatGPT chaque fois que vous copiez du contenu entre outils. Le formatage propre prévient les problèmes évitables, préserve votre sens et garde votre travail portable entre systèmes. Marquez GPT CLEAN UP comme votre base pour un texte propre et sûr pour les éditeurs à l'ère de l'IA.",
+    "learnMoreTitle": "En savoir plus",
+    "learnMoreText": "Lisez nos guides sur la façon de garder le texte IA propre :",
+    "learnMoreLink1": "Pourquoi le texte ChatGPT semble désordonné",
+    "learnMoreAnd": "et",
+    "learnMoreLink2": "Correcteur de formatage ChatGPT pour Word et Docs"
+  },
+  "ToolCard": {
+    "openTool": "Ouvrir l'outil"
+  },
+  "RelatedTools": {
+    "otherModelTools": "Autres outils {model}",
+    "otherModeTools": "Autres outils {mode}",
+    "otherWatermarkTools": "Autres outils de filigrane"
+  },
+  "SpaceRemoverTool": {
+    "inputLabel": "Texte d'entrée",
+    "inputPlaceholder": "Collez le texte à nettoyer...",
+    "outputLabel": "Sortie",
+    "outputPlaceholder": "Le texte nettoyé apparaîtra ici.",
+    "outputHelper": "Copiez le texte nettoyé quand vous êtes prêt.",
+    "primaryAction": "Supprimer les espaces"
+  },
+  "TextCleanerTool": {
+    "inputLabel": "Texte d'entrée",
+    "inputPlaceholder": "Collez le texte à nettoyer...",
+    "outputLabel": "Sortie",
+    "outputPlaceholder": "Le texte nettoyé apparaîtra ici",
+    "clean": "Nettoyer le texte",
+    "copyOutput": "Copier la sortie",
+    "removeBlankLines": "Supprimer les lignes vides supplémentaires",
+    "normalizeWhitespace": "Normaliser les espaces blancs",
+    "unicodeNormalize": "Normaliser Unicode (NFKC)",
+    "removeZeroWidth": "Supprimer les caractères à largeur nulle"
+  },
+  "WatermarkDetectorTool": {
+    "inputLabel": "Texte d'entrée",
+    "inputPlaceholder": "Collez le texte à inspecter...",
+    "highlightedLabel": "Surligné",
+    "highlightedPlaceholder": "Les filigranes détectés apparaîtront ici surlignés en rouge.",
+    "scan": "Scanner le texte",
+    "results": "Résultats",
+    "copyReport": "Copier le rapport",
+    "hiddenUnicode": "Unicode caché/invisible trouvé ?",
+    "suspiciousWhitespace": "Modèles d'espaces suspects ?",
+    "repeatedPunctuation": "Modèles de ponctuation répétés ?",
+    "zeroWidthNbspCount": "Compte largeur zéro / NBSP",
+    "bomCount": "Compte BOM",
+    "softHyphenCount": "Compte trait d'union doux",
+    "summarySuffix": "Les résultats montrent des anomalies de formatage possibles et ne sont pas une garantie d'auteur ou d'origine."
+  },
+  "LineSpacingTool": {
+    "inputLabel": "Texte d'entrée",
+    "inputPlaceholder": "Collez le texte pour ajuster l'espacement des lignes...",
+    "outputLabel": "Sortie",
+    "outputPlaceholder": "Le texte avec espacement de ligne ajusté apparaîtra ici.",
+    "outputHelper": "Copiez le texte ajusté quand vous êtes prêt.",
+    "lineSpacing": "Espacement des lignes",
+    "single": "Simple",
+    "onePointFive": "1.5",
+    "double": "Double",
+    "custom": "Personnalisé",
+    "customLineBreaks": "Sauts de ligne personnalisés",
+    "customHelp": "Nombre de sauts de ligne entre les paragraphes (1-10)",
+    "adjust": "Ajuster l'espacement des lignes"
+  },
+  "ToolPage": {
+    "faqTitle": "Questions fréquemment posées",
+    "disclaimersTitle": "Avertissements",
+    "disclaimer1": "Cet outil effectue uniquement le nettoyage/analyse de texte.",
+    "disclaimer2": "Les résultats sont informatifs et ne constituent pas une garantie.",
+    "disclaimer3": "Utilisez de manière responsable et suivez les politiques de la plateforme/éditeur."
+  },
+  "SpaceRemoverPage": {
+    "title": "{modelName} Suppresseur d'espaces",
+    "subtitle": "Supprimez les espaces supplémentaires et nettoyez les lignes pour un texte propre et prêt à coller.",
+    "howItWorks": "Comment ça fonctionne",
+    "howItWorks1": "Réduit les espaces répétés tout en gardant vos sauts de ligne intacts.",
+    "howItWorks2": "Supprime les espaces blancs de début et de fin de ligne pour des paragraphes plus propres.",
+    "howItWorks3": "Normalise les tabulations et les fins de ligne pour un formatage cohérent entre les outils.",
+    "whatCanCant": "Ce qu'il peut / ne peut pas faire",
+    "whatCanCant1": "Peut réduire les problèmes de formatage causés par un espacement incohérent.",
+    "whatCanCant2": "Ne peut pas vérifier la paternité, la provenance ou l'identité du modèle.",
+    "whatCanCant3": "N'est pas un outil de contournement ; il ajuste uniquement l'espacement et le formatage.",
+    "whatCanCant4": "N'est pas une garantie ; utilisez de manière responsable et examinez la sortie avant de publier.",
+    "faqHeading": "{modelName} Suppresseur d'espaces - Questions fréquemment posées",
+    "faqIntro": "Cette FAQ couvre les problèmes d'espacement courants, ce que l'outil change et ce qu'il ne change pas. Examinez la sortie nettoyée pour confirmer que l'espacement et le formatage correspondent à votre utilisation prévue."
+  },
+  "WatermarkDetectorPage": {
+    "title": "{modelName} Détecteur de filigrane",
+    "subtitle": "Scannez le texte pour détecter les artefacts de formatage comme les caractères Unicode cachés, les modèles d'espaces blancs et les signes de ponctuation répétés.",
+    "howItWorks": "Comment ça fonctionne",
+    "howItWorks1": "Scanne les caractères Unicode cachés ou invisibles, y compris les caractères à largeur nulle, BOM, NBSP et traits d'union doux.",
+    "howItWorks2": "Vérifie les problèmes de structure d'espacement comme l'espacement excessif ou les tabulations/espaces mixtes.",
+    "howItWorks3": "Signale les modèles de ponctuation répétés qui peuvent indiquer des artefacts de formatage.",
+    "whatCanCant": "Ce qu'il peut / ne peut pas faire",
+    "whatCanCant1": "Peut mettre en évidence les artefacts possibles pour que vous puissiez nettoyer le formatage et améliorer la cohérence.",
+    "whatCanCant2": "Ne peut pas confirmer la paternité ou détecter les filigranes propriétaires avec certitude.",
+    "whatCanCant3": "N'est pas un outil de contournement ; il signale uniquement des signaux informatifs.",
+    "whatCanCant4": "N'est pas une garantie ; utilisez de manière responsable et suivez les politiques pertinentes.",
+    "faqHeading": "{modelName} Détecteur de filigrane - Questions fréquemment posées",
+    "faqIntroDefault": "Ces réponses expliquent ce que le scan vérifie et comment interpréter les résultats. Le détecteur signale les artefacts de formatage possibles, pas une preuve."
+  },
+  "LineSpacingPage": {
+    "title": "{modelName} Outil d'espacement des lignes",
+    "subtitle": "Ajustez l'espacement des lignes à simple, 1.5, double ou personnalisé pour un formatage propre et professionnel.",
+    "howItWorks": "Comment ça fonctionne",
+    "howItWorks1": "Applique l'espacement sélectionné entre les lignes tout en préservant la structure des paragraphes.",
+    "howItWorks2": "Normalise les sauts de ligne pour un formatage cohérent dans différents éditeurs.",
+    "howItWorks3": "Permet un espacement personnalisé pour répondre à des besoins spécifiques de formatage.",
+    "whatCanCant": "Ce qu'il peut / ne peut pas faire",
+    "whatCanCant1": "Peut améliorer la lisibilité en ajustant l'espacement des lignes.",
+    "whatCanCant2": "Ne peut pas modifier le contenu ou le sens du texte.",
+    "whatCanCant3": "N'est pas un outil de réécriture ; il ajuste uniquement l'espacement.",
+    "whatCanCant4": "N'est pas une garantie ; examinez la sortie avant de publier.",
+    "faqHeading": "{modelName} Outil d'espacement des lignes - Questions fréquemment posées",
+    "faqIntro": "Cette FAQ explique comment utiliser l'outil d'espacement des lignes et ce qu'il peut faire pour améliorer la lisibilité de votre texte."
+  },
+  "AboutPage": {
+    "title": "À propos de GPT CLEAN UP",
+    "p1": "GPT CLEAN UP est une boîte à outils simple pour nettoyer et formater le texte généré par IA. Nous nous concentrons sur la suppression des espacements désordonnés, des lignes vides et des caractères invisibles qui apparaissent lorsque vous collez les réponses de ChatGPT, Gemini, Claude et d'autres modèles.",
+    "p2": "Ces outils fonctionnent dans votre navigateur - aucun compte ou connexion requis. Nous ne sommes pas affiliés à OpenAI ou Google, et ce site est construit uniquement pour vous faire gagner du temps lorsque vous travaillez avec du contenu IA.",
+    "p3": "Essayez le principal",
+    "chatgptTextCleaner": "Nettoyeur de texte ChatGPT",
+    "or": "ou le dédié",
+    "spaceRemover": "suppresseur d'espaces",
+    "ifSpacing": "si l'espacement est votre plus gros problème."
+  },
+  "Site": {
+    "meta": {
+      "title": "GPT CLEAN UP - Nettoyeur de texte ChatGPT et suppresseur de filigrane IA",
+      "description": "Nettoyez et normalisez le texte généré par IA. Supprimez les caractères Unicode cachés, corrigez l'espacement et préparez un texte propre pour Word, Docs et CMS."
+    }
+  },
+  "ContactPage": {
+    "seoTitle": "Contactez-nous | GPT CLEAN UP",
+    "seoDescription": "Contactez GPT CLEAN UP. Nous sommes là pour vous aider avec des questions sur nos outils de nettoyage de texte IA.",
+    "title": "Contactez-nous",
+    "subtitle": "Des questions ou des commentaires ? Nous aimerions avoir de vos nouvelles.",
+    "howToReach": "Comment nous joindre",
+    "emailLabel": "Envoyez-nous un e-mail à :"
+  },
+  "BlogPage": {
+    "seoTitle": "Blog GPT CLEAN UP - Corriger le texte IA désordonné et le formatage",
+    "seoDescription": "Guides pratiques pour nettoyer la sortie IA, corriger les problèmes de formatage et préparer le texte ChatGPT ou Gemini pour les documents."
+  },
+  "TermsPage": {
+    "metaTitle": "Conditions d'utilisation | GPT CLEAN UP",
+    "metaDescription": "Conditions d'utilisation pour les outils GPT CLEAN UP.",
+    "title": "Conditions d'utilisation",
+    "lastUpdated": "Dernière mise à jour : 7 juillet 2023",
+    "intro": "Veuillez lire attentivement ces Conditions d'utilisation (\"Conditions\") avant d'utiliser le site Web et les outils GPT CLEAN UP (\"le Service\").",
+    "section1Title": "1. Acceptation des conditions",
+    "section1Text": "En accédant ou en utilisant le Service, vous acceptez d'être lié par ces Conditions. Si vous n'êtes pas d'accord, vous devez cesser d'utiliser le Service immédiatement.",
+    "section2Title": "2. Description du service",
+    "section2Text1": "GPT CLEAN UP fournit des utilitaires basés sur navigateur conçus pour aider les utilisateurs à améliorer la lisibilité, la structure et le formatage du texte. Nos outils fonctionnent principalement dans votre navigateur et peuvent supprimer les incohérences de formatage, les problèmes d'espacement, les caractères invisibles ou des artefacts similaires.",
+    "section2Text2": "Le Service est fourni \"tel quel\" et \"tel que disponible\".",
+    "section3Title": "3. Utilisation autorisée",
+    "section3Text1": "Vous acceptez d'utiliser le Service uniquement à des fins légales et éthiques.",
+    "section3Text2": "Vous ne pouvez pas :",
+    "section3Item1": "violer toute loi ou réglementation applicable",
+    "section3Item2": "utiliser le Service pour se livrer à une malhonnêteté académique ou au plagiat",
+    "section3Item3": "utiliser le Service pour fausser la paternité ou la source du travail",
+    "section3Item4": "tenter d'interférer avec la fonctionnalité ou la sécurité du Service",
+    "section3Item5": "utiliser des outils automatisés (bots, scrapers, crawlers) pour accéder ou extraire des données",
+    "section3Item6": "tenter de rétroconcevoir, copier ou exploiter le Service de manière déloyale ou nuisible"
+  },
+  "Footer": {
+    "discoverMore": "Découvrir plus d'outils :",
+    "aboutTitle": "À propos de GPT CLEAN UP TOOLS",
+    "aboutBlurb": "Outils gratuits pour nettoyer le texte IA : nettoyer, corriger la mise en forme et supprimer les caractères invisibles.",
+    "exploreTitle": "Explorer",
+    "topToolsTitle": "Nos meilleurs outils",
+    "legalTitle": "Juridique",
+    "links": {
+      "home": "Accueil",
+      "about": "À propos",
+      "contact": "Contact",
+      "blog": "Blog"
+    },
+    "topTools": {
+      "chatgptSpaceRemover": "Suppresseur d'espaces ChatGPT",
+      "chatgptWatermarkRemover": "Suppresseur de filigranes ChatGPT",
+      "stripHtml": "Supprimer le HTML"
+    },
+    "legal": {
+      "privacy": "Politique de confidentialité",
+      "terms": "Conditions d'utilisation",
+      "disclaimer": "Avertissement",
+      "cookies": "Politique de cookies"
+    },
+    "copyrightPrefix": "© 2026",
+    "tagline": " - votre détecteur de filigranes ChatGPT et nettoyeur de texte IA de confiance pour supprimer ou corriger les espaces à largeur nulle et les marqueurs Unicode cachés.",
+    "rights": "Tous droits réservés."
+  },
+  "FAQ": {
+    "title": "Questions fréquemment posées",
+    "categories": {
+      "General": "Général",
+      "Technical": "Technique",
+      "Usage": "Utilisation",
+      "Detection and Limits": "Détection et limites",
+      "Compatibility and Formats": "Compatibilité et formats",
+      "Privacy and Security": "Confidentialité et sécurité",
+      "Advanced Workflow": "Flux de travail avancé",
+      "Troubleshooting and Comparison": "Dépannage et comparaison",
+      "Additional Questions": "Questions supplémentaires"
+    },
+    "home": {
+      "items": [
+        {
+          "question": "Qu'est-ce que le Nettoyeur de texte IA ChatGPT ?",
+          "answer": "Le Nettoyeur de texte IA ChatGPT de GPT CLEAN UP est un utilitaire basé sur navigateur qui effectue le Nettoyage de texte ChatGPT, souvent appelé GPT Clean Up. Il supprime l'Unicode caché tel que les espaces à largeur nulle, NBSP et BOM, normalise la ponctuation lorsque sélectionné, et stabilise l'espacement pour que le texte se comporte de manière prévisible. Contrairement aux outils de paraphrase, GPT CLEAN UP se concentre uniquement sur le nettoyage technique, préservant votre sens et votre voix tout en fournissant du texte brut sûr pour les éditeurs."
+        },
+        {
+          "question": "Que comprend GPT Clean Up ?",
+          "answer": "GPT Clean Up sur GPT CLEAN UP comprend quatre étapes principales : supprimer les caractères invisibles, normaliser la ponctuation, réduire les espaces blancs redondants et produire du texte brut propre. Cette séquence aide les essais, rapports et publications à se coller proprement dans les éditeurs LMS et CMS. Le Nettoyeur de texte IA ChatGPT est conçu pour la vitesse, la confidentialité et la clarté."
+        },
+        {
+          "question": "Le Nettoyage de texte ChatGPT est-il la même chose que contourner les détecteurs ?",
+          "answer": "Non. GPT CLEAN UP fournit un nettoyage technique qui supprime les artefacts évitables ; il n'essaie pas d'imiter le style humain. Certains systèmes automatisés analysent les modèles d'écriture au-delà du formatage. Le Nettoyage de texte ChatGPT réduit le bruit technique pour que votre contenu soit plus clair et plus compatible."
+        },
+        {
+          "question": "Pourquoi le texte assisté par IA contient-il des caractères cachés ?",
+          "answer": "Copier-coller entre des éditeurs riches peut apporter de l'Unicode non imprimable et un formatage furtif. GPT CLEAN UP cible ces artefacts avec le Nettoyeur de texte IA ChatGPT pour que votre texte soit stable, lisible et portable entre les plateformes. C'est une hygiène pratique pour l'écriture numérique, pas un substitut à la paternité."
+        },
+        {
+          "question": "Qui devrait utiliser GPT CLEAN UP ?",
+          "answer": "Les étudiants, professionnels, créateurs, chercheurs et équipes qui ont besoin de texte propre et fiable bénéficient de GPT CLEAN UP. Si vous déplacez du contenu entre applications, éditeurs ou portails, le Nettoyage de texte ChatGPT empêche les dysfonctionnements d'espacement et les caractères invisibles de casser votre travail."
+        },
+        {
+          "question": "6. Que sont les caractères à largeur nulle et pourquoi les supprimer ?",
+          "answer": "Les caractères à largeur nulle comme U+200B sont invisibles dans les éditeurs normaux mais peuvent perturber le comptage, l'enveloppement et la validation. GPT CLEAN UP les supprime pendant GPT Clean Up pour que le Nettoyeur de texte IA ChatGPT produise du texte que les systèmes interprètent de manière cohérente. Cela améliore la fiabilité lorsque vous collez dans des formulaires, documents ou blocs de code."
+        },
+        {
+          "question": "7. Comment l'outil gère-t-il NBSP (U+00A0) ?",
+          "answer": "L'espace insécable empêche l'enveloppement naturel et peut créer des espaces étranges. GPT CLEAN UP remplace NBSP par un espace standard pendant le Nettoyage de texte ChatGPT, faisant couler les paragraphes normalement. L'objectif est une sortie prévisible et lisible sans problèmes de mise en page indésirables."
+        },
+        {
+          "question": "8. La ponctuation sera-t-elle modifiée par défaut ?",
+          "answer": "Vous contrôlez la normalisation de la ponctuation dans GPT CLEAN UP. Si activée, le Nettoyeur de texte IA ChatGPT convertit les guillemets courbes en guillemets droits et les tirets em/en en tirets. Si vous voulez conserver les guillemets courbes ou les tirets em, désactivez la normalisation avant GPT Clean Up."
+        },
+        {
+          "question": "9. L'outil préserve-t-il le code et Markdown ?",
+          "answer": "Oui. GPT CLEAN UP cible l'Unicode non imprimable et le formatage furtif tout en évitant les caractères de syntaxe. En conséquence, le Nettoyage de texte ChatGPT laisse les jetons de code et la structure Markdown intacts tout en améliorant la fiabilité du copier-coller."
+        },
+        {
+          "question": "10. Qu'en est-il de BOM (U+FEFF) et des codes de contrôle égarés ?",
+          "answer": "Le Nettoyeur de texte IA ChatGPT sur GPT CLEAN UP supprime BOM et les codes de contrôle obscurs qui peuvent confondre les systèmes. Cela fait partie de la séquence GPT Clean Up qui assure un texte brut propre prêt pour toute destination."
+        },
+        {
+          "question": "11. Comment exécuter le Nettoyage de texte ChatGPT ?",
+          "answer": "Ouvrez GPT CLEAN UP, collez votre brouillon, choisissez les options de normalisation et cliquez sur Nettoyer. Le Nettoyeur de texte IA ChatGPT s'exécute instantanément car le traitement est local à votre navigateur. Copiez la sortie et collez-la où vous en avez besoin."
+        },
+        {
+          "question": "12. Y a-t-il une longueur maximale ?",
+          "answer": "Les navigateurs modernes gèrent bien les entrées longues. GPT CLEAN UP est réglé pour les essais et rapports ; si vous atteignez une limite pratique, divisez le texte, exécutez GPT Clean Up deux fois et rejoignez la sortie."
+        },
+        {
+          "question": "13. Fonctionne-t-il sur mobile et tablettes ?",
+          "answer": "Oui. GPT CLEAN UP prend en charge les navigateurs mobiles modernes, vous pouvez donc effectuer le Nettoyage de texte ChatGPT depuis n'importe où. L'interface est suffisamment simple pour une utilisation rapide en déplacement."
+        },
+        {
+          "question": "14. Puis-je personnaliser les règles de nettoyage ?",
+          "answer": "Oui. GPT CLEAN UP vous permet d'activer/désactiver la normalisation de la ponctuation et le comportement de l'espacement. Cela signifie que le Nettoyeur de texte IA ChatGPT peut être strict ou doux selon votre éditeur cible."
+        },
+        {
+          "question": "15. Turnitin signalera-t-il toujours mon écriture après le nettoyage ?",
+          "answer": "GPT CLEAN UP réduit les signaux techniques en supprimant l'Unicode caché et l'espacement étrange avec le Nettoyage de texte ChatGPT. Certains systèmes analysent également le style, ce que le nettoyage ne change pas. La meilleure pratique est d'associer GPT Clean Up à des modifications authentiques qui reflètent votre perspective."
+        },
+        {
+          "question": "16. Qu'en est-il de GPTZero et des outils similaires ?",
+          "answer": "GPT CLEAN UP traite les artefacts techniques qui pourraient influencer les vérifications automatisées ; il n'essaie pas d'imiter le style humain. Le Nettoyeur de texte IA ChatGPT garde l'accent sur la clarté, la compatibilité et le formatage prévisible."
+        },
+        {
+          "question": "17. Le contournement complet est-il réaliste ?",
+          "answer": "Aucune solution ne peut promettre cela. GPT CLEAN UP fournit un nettoyage pratique et transparent pour que votre texte soit techniquement solide. Les choix d'écriture authentiques vous appartiennent toujours."
+        },
+        {
+          "question": "18. GPT CLEAN UP prend-il en charge le texte multilingue ?",
+          "answer": "Oui. GPT CLEAN UP préserve les caractères légitimes dans la plupart des scripts Unicode tout en supprimant ceux non imprimables pendant le Nettoyage de texte ChatGPT. Cela garde le contenu lisible dans les langues qui utilisent des diacritiques, ligatures ou direction RTL."
+        },
+        {
+          "question": "19. Les hyperliens et listes survivront-ils au nettoyage ?",
+          "answer": "Oui. Le Nettoyeur de texte IA ChatGPT se concentre sur les artefacts au niveau des caractères et le nettoyage de l'espacement. Les listes à puces, les étapes numérotées et les liens restent utilisables en texte brut."
+        },
+        {
+          "question": "20. Puis-je nettoyer JSON, CSV, XML ou YAML ?",
+          "answer": "Oui. GPT CLEAN UP supprime les caractères cachés sans toucher à la syntaxe structurelle, donc le Nettoyage de texte ChatGPT aide les données à rester analysables."
+        },
+        {
+          "question": "21. La sortie est-elle conviviale pour le SEO ?",
+          "answer": "Le texte plus propre de GPT CLEAN UP améliore souvent la crawlabilité et réduit les surprises d'encodage. GPT Clean Up ne change pas votre sujet ; il assure que le texte s'affiche comme prévu."
+        },
+        {
+          "question": "22. Mon texte est-il téléchargé sur des serveurs ?",
+          "answer": "Non. GPT CLEAN UP exécute le Nettoyeur de texte IA ChatGPT localement dans votre navigateur. Le Nettoyage de texte ChatGPT ne transmet pas votre texte ni ne le stocke sur nos serveurs."
+        },
+        {
+          "question": "23. Enregistrez-vous ou analysez-vous le contenu ?",
+          "answer": "Non. GPT CLEAN UP n'enregistre pas les entrées ni les sorties ; GPT Clean Up est une opération côté client conçue pour la confidentialité et la vitesse."
+        },
+        {
+          "question": "24. Puis-je utiliser cela pour des brouillons confidentiels ?",
+          "answer": "Oui. Parce que GPT CLEAN UP est local, le Nettoyeur de texte IA ChatGPT n'envoie jamais votre texte confidentiel sur le réseau. Suivez les politiques de votre organisation et gardez un original pour vos dossiers."
+        },
+        {
+          "question": "25. Puis-je garder les guillemets courbes et les tirets em ?",
+          "answer": "Oui. Dans GPT CLEAN UP, vous pouvez désactiver la normalisation de la ponctuation pour que le Nettoyage de texte ChatGPT laisse ces caractères intacts. Si vous avez besoin d'une compatibilité maximale, activez la normalisation pour les guillemets droits et les tirets."
+        },
+        {
+          "question": "26. Puis-je comparer avant et après ?",
+          "answer": "Vous pouvez examiner la sortie nettoyée par rapport à votre source pour comprendre les changements. GPT CLEAN UP garde le Nettoyage de texte ChatGPT transparent et prévisible."
+        },
+        {
+          "question": "27. Prenez-vous en charge l'accès en masse ou API ?",
+          "answer": "Nous explorons les options de traitement par lots. Aujourd'hui, GPT CLEAN UP met l'accent sur la fiabilité et la confidentialité avec GPT Clean Up dans le navigateur."
+        },
+        {
+          "question": "28. Mon espacement semble toujours étrange dans un autre éditeur - pourquoi ?",
+          "answer": "Certains éditeurs formatent automatiquement lors du collage. Essayez de coller en texte brut ou réexécutez GPT CLEAN UP avec un espacement ajusté. Le Nettoyage de texte ChatGPT supprime les artefacts, mais les éditeurs en aval peuvent imposer des règles supplémentaires."
+        },
+        {
+          "question": "29. En quoi GPT CLEAN UP est-il différent des sites à usage unique ?",
+          "answer": "GPT CLEAN UP est une plateforme. Au-delà du Nettoyeur de texte IA ChatGPT, vous trouverez des outils d'espacement, des détecteurs, des aides PDF et SEO, et plus encore. Cet écosystème prend en charge un flux de travail de bout en bout pour un texte propre et portable."
+        },
+        {
+          "question": "30. Où puis-je demander une fonctionnalité ?",
+          "answer": "Utilisez le lien de contact sur GPT CLEAN UP pour suggérer des améliorations au Nettoyeur de texte IA ChatGPT et à l'expérience globale GPT Clean Up."
+        },
+        {
+          "question": "31. GPT CLEAN UP peut-il personnaliser le Nettoyage de texte ChatGPT pour des éditeurs spécifiques ?",
+          "answer": "Oui. GPT CLEAN UP vous permet d'ajuster la normalisation pour que le Nettoyeur de texte IA ChatGPT s'aligne avec les éditeurs stricts et les champs de formulaire. Vous pouvez conserver les guillemets courbes, garder les tirets em, ou favoriser ASCII pour une compatibilité maximale. Cette flexibilité garantit que GPT Clean Up produit du texte qui se comporte correctement là où vous le collez."
+        },
+        {
+          "question": "32. En quoi GPT CLEAN UP diffère-t-il des paraphraseurs comme Quillbot ou des outils de réécriture dans les flux de travail gpt clean up ?",
+          "answer": "Les paraphraseurs réécrivent les phrases et peuvent changer le sens. GPT CLEAN UP se concentre sur le nettoyage de texte IA, normalisant les modèles de jetons de type filigrane tout en préservant votre message, citations et ancres. Cette approche soutient la cohérence SEO et des modifications plus sûres que la paraphrase lourde."
+        },
+        {
+          "question": "33. Le Nettoyeur de texte IA ChatGPT peut-il aider avec le contenu de Jasper (anciennement Jarvis), Copy.ai, Writesonic ou Sudowrite ?",
+          "answer": "Oui. De nombreux assistants modernes partagent des empreintes statistiques. GPT CLEAN UP effectue gpt clean up sur les brouillons créés avec Jasper (Jarvis), Copy.ai, Writesonic, Sudowrite, Claude, Gemini, outils basés sur Llama, et plus encore - réduisant les marqueurs détectables tout en gardant votre voix."
+        },
+        {
+          "question": "34. Quels sont les principaux types de 'filigrane' IA que le nettoyage de texte IA cible ?",
+          "answer": "En pratique, la plupart des drapeaux proviennent de régularités de jetons, répétition, Unicode/ caractères à largeur nulle étranges, artefacts d'espacement et phrasé trop modélisé. GPT CLEAN UP se concentre sur ces modèles pendant gpt clean up sans refondre votre copie."
+        },
+        {
+          "question": "35. GPT clean up modifiera-t-il les guides de style de marque, le ton de voix ou les données numériques ?",
+          "answer": "Non. Le Nettoyeur de texte IA ChatGPT préserve le ton, les termes de marque, les chiffres et les références. Toujours relire les tableaux numériques et les statistiques en ligne après le nettoyage de texte IA pour valider le formatage."
+        },
+        {
+          "question": "37. GPT CLEAN UP aide-t-il avec les sorties Gemini/Bard, Claude 3, Llama 3 et Mistral ?",
+          "answer": "Oui. Notre nettoyage de texte IA normalise les modèles statistiques communs à travers les modèles populaires (Gemini, Claude, Llama, Mistral, etc.). Pour de meilleurs résultats, ajoutez des modifications humaines légères après gpt clean up."
+        },
+        {
+          "question": "38. Puis-je utiliser gpt clean up sur HTML/Markdown sans casser les balises ?",
+          "answer": "Oui. Collez le contenu et exécutez le nettoyage de texte IA. La sémantique reste intacte tandis que l'espacement et les régularités de jetons sont normalisés. Toujours prévisualiser dans votre CMS après le nettoyage."
+        },
+        {
+          "question": "39. Quelles limites dois-je considérer pour les très longs documents ou livres électroniques ?",
+          "answer": "Pour la stabilité, traitez 8-12k caractères par passe. Divisez les chapitres, exécutez le Nettoyeur de texte IA ChatGPT sur chacun, puis fusionnez. Cela garde gpt clean up rapide et cohérent."
+        },
+        {
+          "question": "40. GPT CLEAN UP aide-t-il à réduire les faux positifs des détecteurs comme GPTZero, Originality.ai ou Turnitin ?",
+          "answer": "Il réduit souvent les signaux de probabilité IA en normalisant les modèles de filigrane, mais aucun outil ne peut garantir le contournement. Combinez le nettoyage de texte IA avec des idées uniques, citations et édition pour de meilleurs résultats."
+        },
+        {
+          "question": "41. Dois-je exécuter gpt clean up avant ou après l'optimisation SEO (titres, liens, schéma) ?",
+          "answer": "Exécutez d'abord le Nettoyeur de texte IA ChatGPT pour stabiliser le texte, puis optimisez les titres, liens internes et schéma. Cela garde les changements SEO intacts tout en minimisant les modèles IA."
+        },
+        {
+          "question": "42. Quel est le meilleur flux de travail avec les brouillons Jasper (Jarvis) ou Copy.ai ?",
+          "answer": "Générez votre brouillon. 2) Exécutez gpt clean up dans GPT CLEAN UP. 3) Ajoutez le ton de marque et des exemples. 4) Optimisez pour SEO. 5) Publiez. Ce flux en couches maintient l'authenticité et réduit les signatures IA."
+        },
+        {
+          "question": "43. GPT CLEAN UP peut-il soutenir l'intégrité académique tout en nettoyant les brouillons assistés par IA ?",
+          "answer": "Oui. GPT CLEAN UP supprime les artefacts techniques qui peuvent déclencher des faux positifs, mais l'intégrité académique nécessite une attribution appropriée, une analyse originale et l'adhésion aux politiques de votre institution. Utilisez le Nettoyeur de texte IA ChatGPT comme partie d'un flux de travail transparent qui inclut la citation, la vérification des faits et votre propre pensée critique."
+        },
+        {
+          "question": "GPT clean up améliorera-t-il la lisibilité ou supprimera-t-il uniquement les modèles ?",
+          "answer": "L'objectif est une cadence naturelle, pas une réécriture. De nombreux utilisateurs rapportent une meilleure lisibilité après le passage du Nettoyeur de texte IA ChatGPT car les séquences répétitives et les anomalies d'espacement sont réduites."
+        },
+        {
+          "question": "Puis-je utiliser l'outil en toute sécurité pour les textes juridiques, médicaux ou financiers ?",
+          "answer": "Oui, mais la conformité reste votre responsabilité. Utilisez le nettoyage de texte IA pour normaliser la structure, puis faites examiner les faits et la langue par un expert du domaine."
+        },
+        {
+          "question": "GPT CLEAN UP préserve-t-il les ancres, notes de bas de page et références croisées ?",
+          "answer": "Oui. Le suppresseur cible les signaux statistiques et les caractères cachés, pas vos références. Vérifiez à nouveau le texte d'ancrage et la numérotation après gpt clean up."
+        },
+        {
+          "question": "Comment GPT CLEAN UP se comporte-t-il avec les brouillons multilingues (espagnol, français, allemand, arabe, etc.) ?",
+          "answer": "Il prend en charge de nombreuses langues. Les distributions de jetons diffèrent selon la langue, donc parcourez toujours le texte nettoyé pour confirmer les idiomes et la ponctuation après le nettoyage."
+        },
+        {
+          "question": "GPT clean up peut-il assainir les commentaires de code générés par IA, README ou documents techniques ?",
+          "answer": "Oui. Il garde les blocs de code intacts tout en lissant les formulations robotiques dans les commentaires. Après le Nettoyeur de texte IA ChatGPT, exécutez les linters/tests pour confirmer le formatage."
+        },
+        {
+          "question": "Quelles sont les attentes réalistes pour le contenu IA hautement modélisé ?",
+          "answer": "Le nettoyage de texte IA réduit la répétitivité et les drapeaux, mais les brouillons modélisés peuvent encore sembler génériques. Ajoutez des exemples, des données et des analyses pour restaurer l'originalité."
+        },
+        {
+          "question": "GPT CLEAN UP supprime-t-il les caractères à largeur nulle, les espaces insécables et l'Unicode étrange ?",
+          "answer": "Oui. L'outil normalise les marqueurs cachés à largeur nulle, nbsp et similaires souvent détectés par les détecteurs, soutenant un gpt clean up plus sûr."
+        },
+        {
+          "question": "Comment combiner le nettoyage de texte IA avec l'édition humaine pour de meilleurs résultats ?",
+          "answer": "Utilisez d'abord le Nettoyeur de texte IA ChatGPT pour normaliser les modèles, puis affinez pour la clarté, ajoutez des sources et assurez la voix de la marque. Cette approche en deux étapes produit le résultat le plus naturel."
+        },
+        {
+          "question": "GPT CLEAN UP peut-il aider les équipes de localisation à post-traduire les brouillons des LLM ?",
+          "answer": "Oui. Le nettoyage post-MT avec gpt clean up peut atténuer les formulations répétitives et les artefacts d'espacement. Les éditeurs natifs devraient encore finaliser les idiomes et le style."
+        },
+        {
+          "question": "GPT clean up affectera-t-il l'ordre des mots-clés, les données structurées ou les balises meta pour le SEO ?",
+          "answer": "Non. GPT CLEAN UP évite de modifier l'ordre des mots-clés prévu ou les propriétés de schéma tout en normalisant les modèles répétitifs."
+        },
+        {
+          "question": "Comment les agences devraient-elles utiliser GPT CLEAN UP à grande échelle ?",
+          "answer": "Exécutez le nettoyage de texte IA sur les sections en parallèle, maintenez une liste de contrôle interne et envisagez les fonctionnalités API/lot à venir. Cela standardise la voix entre les comptes."
+        },
+        {
+          "question": "GPT CLEAN UP est-il une alternative gptcleanup pour les équipes qui ont besoin de confidentialité côté client ?",
+          "answer": "Oui. De nombreux utilisateurs l'adoptent comme alternative gptcleanup en raison du traitement côté client et de l'interface rapide adaptée aux flux de travail du Nettoyeur de texte IA ChatGPT."
+        },
+        {
+          "question": "GPT clean up fonctionne-t-il également sur les sorties Claude, Gemini, Llama et Mistral ?",
+          "answer": "Les modèles diffèrent par modèle, mais GPT CLEAN UP cible les signaux communs à travers les écosystèmes. Toujours examiner les passages édités pour la nuance et la précision du domaine."
+        },
+        {
+          "question": "Puis-je utiliser GPT CLEAN UP pour préparer le contenu pour les marchés ou les plateformes UGC ?",
+          "answer": "Oui. Normalisez les brouillons avec le nettoyage de texte IA, puis personnalisez le ton et les divulgations selon la politique de la plateforme avant la soumission."
+        },
+        {
+          "question": "Que dois-je changer si les détecteurs signalent toujours mon texte après le nettoyage ?",
+          "answer": "Augmentez les modifications humaines : variez la longueur des phrases, ajoutez des exemples/données originaux et réduisez les formulations modélisées. Réexécutez gpt clean up si les artefacts d'espacement persistent."
+        },
+        {
+          "question": "GPT CLEAN UP peut-il être utilisé pour les bases de connaissances et les centres d'aide ?",
+          "answer": "Oui. Il aide à unifier le ton tout en préservant les étapes et les extraits de code. Après le nettoyage de texte IA, vérifiez les liens, captures d'écran et numéros de version."
+        },
+        {
+          "question": "Quels sont les problèmes de formatage courants que le nettoyage de texte IA peut corriger ?",
+          "answer": "Symboles cachés, espacement étrange, attributs indésirables et mots fonctionnels répétés. GPT CLEAN UP résout ces problèmes tout en respectant votre structure."
+        },
+        {
+          "question": "GPT CLEAN UP prend-il en charge les langues de droite à gauche comme l'arabe ou l'hébreu ?",
+          "answer": "Oui. Après gpt clean up, confirmez la directionnalité et l'espacement de ponctuation dans votre aperçu CMS pour assurer l'intégrité de la mise en page."
+        },
+        {
+          "question": "Le Nettoyeur de texte IA ChatGPT est-il utile pour les légendes sociales et les publicités ?",
+          "answer": "Oui. Le texte court bénéficie de la normalisation pour supprimer la cadence robotique tout en conservant les CTA et la voix de la marque."
+        },
+        {
+          "question": "GPT clean up changera-t-il le texte d'ancrage crucial pour les liens internes ?",
+          "answer": "Non. Le nettoyage de texte IA préserve les ancres et les destinations de liens. Reconfirmez avec votre plugin SEO après publication."
+        },
+        {
+          "question": "À quelle fréquence le suppresseur est-il mis à jour pour suivre les nouvelles méthodes de filigrane ou de détection ?",
+          "answer": "Nous itérons régulièrement pour que GPT CLEAN UP reste efficace alors que le filigrane/la détection évolue à travers les LLM et les détecteurs."
+        },
+        {
+          "question": "Puis-je prévisualiser exactement ce qui a changé pendant gpt clean up ?",
+          "answer": "Oui. Utilisez les panneaux avant/après pour voir ce que le Nettoyeur de texte IA ChatGPT a normalisé tout en gardant votre message intact."
+        },
+        {
+          "question": "Y a-t-il une extension de navigateur ou une intégration VS Code prévue ?",
+          "answer": "Oui. Une extension légère et des intégrations d'éditeur sont prévues pour rationaliser le nettoyage de texte IA."
+        },
+        {
+          "question": "GPT clean up aidera-t-il à l'acceptation éditoriale pour les publications premium ?",
+          "answer": "Il améliore souvent la cadence et réduit les formulations répétitives. Les éditeurs s'attendent toujours à un reporting solide, une voix et un sourcing aux côtés du nettoyage."
+        },
+        {
+          "question": "GPT CLEAN UP fonctionne-t-il avec Perplexity, You.com ou les assistants de style Neeva ?",
+          "answer": "Oui. Vous pouvez exécuter le nettoyage de texte IA sur les résumés et citations de ces outils, puis valider les liens et attributions."
+        },
+        {
+          "question": "Quels avertissements dois-je considérer pour les contextes académiques ou de conformité ?",
+          "answer": "Divulguez l'assistance IA si nécessaire, citez les sources correctement et traitez gpt clean up comme un outil de formatage - pas un contournement de détecteur."
+        },
+        {
+          "question": "Le nettoyage de texte IA préservera-t-il les titres, tableaux et listes des sorties LLM ?",
+          "answer": "Oui. Il cible les modèles statistiques et les caractères cachés, pas votre structure de document. Vérifiez l'alignement des tableaux après le collage."
+        },
+        {
+          "question": "GPT CLEAN UP aide-t-il avec le SEO multilingue (sites hreflang) ?",
+          "answer": "Oui - normalisez les brouillons par locale avec gpt clean up, puis les éditeurs locaux finalisent les idiomes et la conformité pour chaque marché."
+        },
+        {
+          "question": "Dois-je exécuter le nettoyage avant ou après les passes d'édition d'entreprise (style, légal, marque) ?",
+          "answer": "Exécutez d'abord le Nettoyeur de texte IA ChatGPT pour stabiliser le texte. Les modifications légales/marque ultérieures restent alors intactes sans réintroduire d'artefacts."
+        },
+        {
+          "question": "GPT CLEAN UP peut-il être utilisé pour les transcriptions, podcasts et rédactions d'interviews ?",
+          "answer": "Oui. Le nettoyage de texte IA lisse les remplisseurs répétitifs et les problèmes d'espacement. L'édition humaine devrait encore créer le flux narratif et le contexte."
+        },
+        {
+          "question": "L'outil impacte-t-il le contenu structuré comme les FAQ, glossaires ou docs API ?",
+          "answer": "Il préserve la structure. Pour les FAQ et glossaires, exécutez gpt clean up sur chaque entrée pour éviter la dérive tout en maintenant les mots-clés."
+        },
+        {
+          "question": "Y a-t-il un risque de sur-nettoyage ou de perte de flair stylistique ?",
+          "answer": "Minimal. Le suppresseur vise une normalisation subtile. Si le style semble aplati, ajoutez des variations humaines et des exemples après le nettoyage de texte IA."
+        },
+        {
+          "question": "Comment GPT CLEAN UP se compare-t-il au recherche-remplacement manuel pour les artefacts à largeur nulle ou nbsp ?",
+          "answer": "Le nettoyage manuel manque les modèles de jetons plus profonds. GPT CLEAN UP automatise à la fois la suppression des caractères cachés et la normalisation statistique en une seule passe."
+        },
+        {
+          "question": "GPT CLEAN UP peut-il aider dans les rédactions de conformité (GDPR, HIPAA, SOC 2) ?",
+          "answer": "Il peut normaliser les artefacts de rédaction, mais la précision de conformité et l'examen juridique sont essentiels. Traitez gpt clean up comme une aide au formatage uniquement."
+        },
+        {
+          "question": "Quelles améliorations puis-je attendre sur les critiques de produits IA hautement formulaires ?",
+          "answer": "Moins de formulations répétitives et un flux plus naturel. Ajoutez des notes de test uniques et des photos après le nettoyage pour la crédibilité et le classement."
+        },
+        {
+          "question": "Le suppresseur fonctionne-t-il sur les brouillons hybrides qui mélangent texte humain et IA ?",
+          "answer": "Oui. GPT CLEAN UP est conçu pour la paternité mixte. Le nettoyage de texte IA apporte la cohérence tout en préservant les modifications humaines."
+        },
+        {
+          "question": "GPT CLEAN UP est-il une alternative gptcleanup viable pour les agences travaillant avec les piles Jasper (Jarvis) et Copy.ai ?",
+          "answer": "Oui. Les agences l'utilisent comme alternative gptcleanup en raison de la confidentialité côté client, de la vitesse et des résultats naturels avec le Nettoyeur de texte IA ChatGPT dans les grands pipelines de contenu."
+        },
+        {
+          "question": "Que fait réellement \"nettoyer le texte ChatGPT\" ?",
+          "answer": "Il supprime les caractères invisibles, normalise l'espacement/sauts de ligne et supprime le HTML/markdown restant pour que votre texte soit facile à copier, rechercher et publier."
+        },
+        {
+          "question": "Le nettoyage changera-t-il mon sens ou mon ton ?",
+          "answer": "Non, le nettoyeur ne cible que le bruit de formatage et les caractères cachés. Vos mots restent les mêmes."
+        },
+        {
+          "question": "Dois-je installer quelque chose ?",
+          "answer": "Non, cela fonctionne directement dans votre navigateur. Collez, nettoyez, copiez - terminé."
+        },
+        {
+          "question": "L'outil est-il sûr pour les brouillons sensibles ?",
+          "answer": "Oui, le traitement est local à votre session. Pour les données hautement sensibles, évitez de coller dans tout outil en ligne."
+        },
+        {
+          "question": "Cela peut-il aider avec les filigranes IA ?",
+          "answer": "Le nettoyage supprime les artefacts non imprimables courants et les empreintes de formatage souvent laissées dans les sorties IA, ce qui aide à fournir un texte propre et professionnel."
+        }
+      ]
+    }
+  },
+  "NotFound": {
+    "badge": "NON TROUVÉ",
+    "title": "Page Non Trouvée",
+    "subtitle": "La page que vous recherchez n'existe pas ou a été déplacée.",
+    "primaryCta": "Aller à l'Accueil",
+    "secondaryCta": "Parcourir les Outils",
+    "tipLabel": "ASTUCE",
+    "tipText": "Vérifiez l'URL pour les fautes de frappe ou utilisez la recherche pour trouver ce dont vous avez besoin.",
+    "logLabel": "JOURNAL D'ERREUR",
+    "logStatus": "404",
+    "logMessage": "Route non trouvée. La page demandée n'a pas pu être localisée.",
+    "suggestionsTitle": "Outils Populaires",
+    "viewAll": "Voir Tous les Outils"
+  }
+}

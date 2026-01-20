@@ -3,6 +3,8 @@ import { buildArticleMeta } from '@/lib/seo-meta';
 import { JsonLd } from '@/components/JsonLd';
 import { blogPostingSchema } from '@/lib/schema/blog';
 import AdSenseSlot from '../../../components/ads/AdSenseSlot';
+import { getServerLocale } from '@/lib/server-i18n';
+import type { Metadata } from 'next';
 
 const urlPath = '/blog/how-to-clean-chatgpt-text-for-emails-and-newsletters';
 const title = 'How to Clean ChatGPT Text for Emails and Newsletters | GPT CLEAN UP';
@@ -10,11 +12,15 @@ const headline = 'How to Clean ChatGPT Text for Emails and Newsletters (Delivera
 const description =
   'A practical workflow to remove invisible Unicode, normalize whitespace, and prevent broken rendering and spam triggers when using AI text in email tools.';
 
-export const metadata = buildArticleMeta({
-  title,
-  description,
-  urlPath,
-});
+export async function generateMetadata(): Promise<Metadata> {
+  const { locale } = await getServerLocale();
+  return buildArticleMeta({
+    title,
+    description,
+    urlPath,
+    locale,
+  });
+}
 
 export default function CleanChatGPTTextForEmailsAndNewslettersPage() {
   return (

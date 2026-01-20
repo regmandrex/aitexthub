@@ -1,10 +1,16 @@
 import { buildMeta } from '@/lib/seo-meta';
+import { getServerLocale } from '@/lib/server-i18n';
+import type { Metadata } from 'next';
 
-export const metadata = buildMeta({
-  title: 'Cookie Policy | GPT CLEAN UP',
-  description: 'Cookie Policy for GPT CLEAN UP tools.',
-  urlPath: '/cookie-policy',
-});
+export async function generateMetadata(): Promise<Metadata> {
+  const { locale } = await getServerLocale();
+  return buildMeta({
+    title: 'Cookie Policy | GPT CLEAN UP',
+    description: 'Cookie Policy for GPT CLEAN UP tools.',
+    urlPath: '/cookie-policy',
+    locale,
+  });
+}
 
 export default function CookiePolicyPage() {
   return (

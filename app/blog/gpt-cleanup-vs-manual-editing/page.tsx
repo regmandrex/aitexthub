@@ -3,6 +3,8 @@ import { buildArticleMeta } from '@/lib/seo-meta';
 import { JsonLd } from '@/components/JsonLd';
 import { blogPostingSchema } from '@/lib/schema/blog';
 import AdSenseSlot from '../../../components/ads/AdSenseSlot';
+import { getServerLocale } from '@/lib/server-i18n';
+import type { Metadata } from 'next';
 
 const urlPath = '/blog/gpt-cleanup-vs-manual-editing';
 const title = 'GPT Cleanup vs Manual Editing (SEO, Performance, and Scale) | GPT CLEAN UP';
@@ -10,11 +12,15 @@ const headline = 'GPT Cleanup vs Manual Editing: Which Is Better for SEO, Perfor
 const description =
   'GPT cleanup removes invisible Unicode and normalizes structure; manual editing improves voice and expertise. Learn the best order for SEO and scalable publishing.';
 
-export const metadata = buildArticleMeta({
-  title,
-  description,
-  urlPath,
-});
+export async function generateMetadata(): Promise<Metadata> {
+  const { locale } = await getServerLocale();
+  return buildArticleMeta({
+    title,
+    description,
+    urlPath,
+    locale,
+  });
+}
 
 export default function GptCleanupVsManualEditingPage() {
   return (

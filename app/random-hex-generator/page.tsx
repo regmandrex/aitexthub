@@ -11,18 +11,33 @@ import { buildToolMeta } from '@/lib/seo-meta';
 import { siteUrl } from '@/lib/schema/site';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
+import { getServerLocale } from '@/lib/server-i18n';
+import { createServerT } from '@/lib/server-t';
 
 const toolSlug = 'random-hex-generator';
-const tool = getToolBySlug(toolSlug);
-const description = tool?.shortDescription ?? 'Generate random hex strings with length and format controls.';
-const title = tool?.title ?? 'Random Hex Number Generator';
 
-export const metadata: Metadata = buildToolMeta({
-  title,
-  description,
-  seoTitle: tool?.seoTitle,
-  urlPath: `/${toolSlug}`,
-});
+export async function generateMetadata(): Promise<Metadata> {
+  const { locale } = await getServerLocale();
+  const t = await createServerT(locale);
+  const tool = getToolBySlug(toolSlug);
+  const toolKey = toolSlug === '' ? 'home' : toolSlug;
+  
+  const title = t(`Tools.${toolKey}.title`) !== `Tools.${toolKey}.title` 
+    ? t(`Tools.${toolKey}.title`) 
+    : tool?.title ?? 'Random Hex Number Generator';
+  const description = t(`Tools.${toolKey}.description`) !== `Tools.${toolKey}.description`
+    ? t(`Tools.${toolKey}.description`)
+    : tool?.shortDescription ?? 'Generate random hex strings with length and format controls.';
+  const seoTitle = tool?.seoTitle ? (t(`Tools.${toolKey}.seoTitle`) !== `Tools.${toolKey}.seoTitle` ? t(`Tools.${toolKey}.seoTitle`) : tool.seoTitle) : undefined;
+  
+  return buildToolMeta({
+    title,
+    description,
+    seoTitle,
+    urlPath: `/${toolSlug}`,
+    locale,
+  });
+}
 
 const faqs: FaqItem[] = [
   {
@@ -565,26 +580,36 @@ const secureHex = Array.from(buffer).map(b => b.toString(16).padStart(2, '0')).j
   </section>
 );
 
-export default function RandomHexGeneratorPage() {
+export default async function RandomHexGeneratorPage() {
+  const { locale } = await getServerLocale();
+  const t = await createServerT(locale);
   const toolData = getToolBySlug(toolSlug);
   if (!toolData) return notFound();
+
+  const toolKey = toolSlug === '' ? 'home' : toolSlug;
+  const title = t(`Tools.${toolKey}.title`) !== `Tools.${toolKey}.title` 
+    ? t(`Tools.${toolKey}.title`) 
+    : toolData.title;
+  const description = t(`Tools.${toolKey}.description`) !== `Tools.${toolKey}.description`
+    ? t(`Tools.${toolKey}.description`)
+    : toolData.shortDescription;
 
   const url = `${siteUrl}/${toolSlug}/`;
   const webAppSchema = {
     '@context': 'https://schema.org',
     '@type': 'WebApplication',
-    name: toolData.title,
+    name: title,
     applicationCategory: 'UtilitiesApplication',
     operatingSystem: 'Web',
-    description: toolData.shortDescription,
+    description: description,
     url,
   };
 
   return (
     <>
-      <JsonLd data={webPageSchema({ name: toolData.title, url, description: toolData.shortDescription })} />
+      <JsonLd data={webPageSchema({ name: title, url, description })} />
       <JsonLd data={webAppSchema} />
-      <ToolPageShell tool={toolData} ui={<RandomHexGeneratorTool />} related={<RelatedTools currentSlug={toolData.slug} />}>
+      <ToolPageShell tool={{ ...toolData, title, shortDescription: description }} ui={<RandomHexGeneratorTool />} related={<RelatedTools currentSlug={toolData.slug} />}>
         {writeUp}
         <div className="mt-10 space-y-3">
           <h2 className="text-2xl font-semibold text-slate-900">Random Hex Generator FAQ</h2>

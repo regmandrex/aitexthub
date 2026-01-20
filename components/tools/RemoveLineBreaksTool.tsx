@@ -2,8 +2,10 @@
 
 import { useState } from 'react';
 import ToolTextArea from './ToolTextArea';
+import { useI18n } from '@/lib/client-i18n';
 
 export function RemoveLineBreaksTool() {
+  const { t } = useI18n();
   const [input, setInput] = useState('');
   const [output, setOutput] = useState('');
   const [preserveParagraphs, setPreserveParagraphs] = useState(true);
@@ -46,17 +48,17 @@ export function RemoveLineBreaksTool() {
     <div className="space-y-4">
       <div className="grid gap-4 md:grid-cols-2">
         <ToolTextArea
-          label="Input text"
+          label={t('RemoveLineBreaksPage.ui.inputLabel')}
           value={input}
           onChange={setInput}
-          placeholder="Paste text with line breaks..."
+          placeholder={t('RemoveLineBreaksPage.ui.inputPlaceholder')}
           rows={12}
         />
         <ToolTextArea
-          label="Output"
+          label={t('RemoveLineBreaksPage.ui.outputLabel')}
           value={output}
           onChange={setOutput}
-          placeholder="Joined text will appear here."
+          placeholder={t('RemoveLineBreaksPage.ui.outputPlaceholder')}
           rows={12}
           readOnly
         />
@@ -70,7 +72,7 @@ export function RemoveLineBreaksTool() {
             checked={preserveParagraphs}
             onChange={() => setPreserveParagraphs((prev) => !prev)}
           />
-          Preserve paragraph breaks
+          {t('RemoveLineBreaksPage.ui.preserveParagraphs')}
         </label>
         <label className="flex items-center gap-2">
           <input
@@ -79,7 +81,7 @@ export function RemoveLineBreaksTool() {
             checked={replaceWithSpace}
             onChange={() => setReplaceWithSpace((prev) => !prev)}
           />
-          Replace line breaks with spaces
+          {t('RemoveLineBreaksPage.ui.replaceWithSpace')}
         </label>
         <label className="flex items-center gap-2">
           <input
@@ -88,7 +90,7 @@ export function RemoveLineBreaksTool() {
             checked={collapseSpaces}
             onChange={() => setCollapseSpaces((prev) => !prev)}
           />
-          Collapse extra spaces
+          {t('RemoveLineBreaksPage.ui.collapseSpaces')}
         </label>
       </div>
 
@@ -98,21 +100,21 @@ export function RemoveLineBreaksTool() {
           onClick={handleRemove}
           className="inline-flex items-center justify-center rounded-lg bg-brand-700 px-4 py-2 text-sm font-semibold text-white shadow hover:bg-brand-800"
         >
-          Remove line breaks
+          {t('RemoveLineBreaksPage.ui.removeButton')}
         </button>
         <button
           type="button"
           onClick={handleCopy}
           className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
         >
-          Copy
+          {t('RemoveLineBreaksPage.ui.copyButton')}
         </button>
         <button
           type="button"
           onClick={handleClear}
           className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
         >
-          Clear
+          {t('RemoveLineBreaksPage.ui.clearButton')}
         </button>
       </div>
     </div>

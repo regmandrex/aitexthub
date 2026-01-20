@@ -3,6 +3,8 @@ import { buildArticleMeta } from '@/lib/seo-meta';
 import { JsonLd } from '@/components/JsonLd';
 import { blogPostingSchema } from '@/lib/schema/blog';
 import AdSenseSlot from '../../../components/ads/AdSenseSlot';
+import { getServerLocale } from '@/lib/server-i18n';
+import type { Metadata } from 'next';
 
 const urlPath = '/blog/chatgpt-formatting-fixer-for-word-and-docs';
 const title = 'ChatGPT Formatting Fixer for Word and Docs (Clean Documents Every Time) | GPT CLEAN UP';
@@ -10,11 +12,15 @@ const headline = 'ChatGPT Formatting Fixer for Word and Docs (How to Get Clean, 
 const description =
   'Stop broken spacing, headings, bullets, and PDF export issues: clean invisible Unicode, normalize whitespace, then apply Word/Docs styles natively.';
 
-export const metadata = buildArticleMeta({
-  title,
-  description,
-  urlPath,
-});
+export async function generateMetadata(): Promise<Metadata> {
+  const { locale } = await getServerLocale();
+  return buildArticleMeta({
+    title,
+    description,
+    urlPath,
+    locale,
+  });
+}
 
 export default function ChatGPTFormattingFixerForWordAndDocsPage() {
   return (

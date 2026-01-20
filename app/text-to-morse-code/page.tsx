@@ -11,20 +11,33 @@ import { buildToolMeta } from '@/lib/seo-meta';
 import { getToolBySlug } from '@/lib/tools/registry';
 import { siteUrl } from '@/lib/schema/site';
 import { webPageSchema } from '@/lib/schema/webpage';
+import { getServerLocale } from '@/lib/server-i18n';
+import { createServerT } from '@/lib/server-t';
 
 const toolSlug = 'text-to-morse-code';
-const toolData = getToolBySlug(toolSlug);
-const description =
-  toolData?.shortDescription ??
-  'Convert plain text into Morse code using standard ITU encoding. Fast, accurate, and privacy-friendly.';
-const title = toolData?.title ?? 'Text to Morse Code Converter';
 
-export const metadata: Metadata = buildToolMeta({
-  title,
-  description,
-  seoTitle: toolData?.seoTitle,
-  urlPath: `/${toolSlug}`,
-});
+export async function generateMetadata(): Promise<Metadata> {
+  const { locale } = await getServerLocale();
+  const t = await createServerT(locale);
+  const toolData = getToolBySlug(toolSlug);
+  const toolKey = toolSlug === '' ? 'home' : toolSlug;
+  
+  const title = t(`Tools.${toolKey}.title`) !== `Tools.${toolKey}.title` 
+    ? t(`Tools.${toolKey}.title`) 
+    : toolData?.title ?? 'Text to Morse Code Converter';
+  const description = t(`Tools.${toolKey}.description`) !== `Tools.${toolKey}.description`
+    ? t(`Tools.${toolKey}.description`)
+    : toolData?.shortDescription ?? 'Convert plain text into Morse code using standard ITU encoding. Fast, accurate, and privacy-friendly.';
+  const seoTitle = toolData?.seoTitle ? (t(`Tools.${toolKey}.seoTitle`) !== `Tools.${toolKey}.seoTitle` ? t(`Tools.${toolKey}.seoTitle`) : toolData.seoTitle) : undefined;
+  
+  return buildToolMeta({
+    title,
+    description,
+    seoTitle,
+    urlPath: `/${toolSlug}`,
+    locale,
+  });
+}
 
 const faqs: FaqItem[] = [
   {
@@ -488,25 +501,36 @@ const writeUp = (
   </section>
 );
 
-export default function TextToMorseCodePage() {
+export default async function TextToMorseCodePage() {
+  const { locale } = await getServerLocale();
+  const t = await createServerT(locale);
+  const toolData = getToolBySlug(toolSlug);
   if (!toolData) return notFound();
+
+  const toolKey = toolSlug === '' ? 'home' : toolSlug;
+  const title = t(`Tools.${toolKey}.title`) !== `Tools.${toolKey}.title` 
+    ? t(`Tools.${toolKey}.title`) 
+    : toolData.title;
+  const description = t(`Tools.${toolKey}.description`) !== `Tools.${toolKey}.description`
+    ? t(`Tools.${toolKey}.description`)
+    : toolData.shortDescription;
 
   const url = `${siteUrl}/${toolSlug}/`;
   const schemaData = {
     '@context': 'https://schema.org',
     '@type': 'WebApplication',
-    name: toolData.title,
+    name: title,
     applicationCategory: 'UtilitiesApplication',
     operatingSystem: 'Web',
-    description: toolData.shortDescription,
+    description: description,
     url,
   };
 
   return (
     <>
-      <JsonLd data={webPageSchema({ name: toolData.title, url, description: toolData.shortDescription })} />
+      <JsonLd data={webPageSchema({ name: title, url, description })} />
       <JsonLd data={schemaData} />
-      <ToolPageShell tool={toolData} ui={<TextToMorseCodeTool />} related={<RelatedTools currentSlug={toolSlug} />}>
+      <ToolPageShell tool={{ ...toolData, title, shortDescription: description }} ui={<TextToMorseCodeTool />} related={<RelatedTools currentSlug={toolSlug} />}>
         {writeUp}
         <div className="mt-10 space-y-3">
           <h2 className="text-2xl font-semibold text-slate-900">Text to Morse Code Converter FAQ</h2>

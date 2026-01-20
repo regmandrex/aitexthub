@@ -1,0 +1,1318 @@
+{
+  "Nav": {
+    "home": "首页",
+    "tools": "免费 AI 工具",
+    "blog": "博客",
+    "language": "语言"
+  },
+  "Common": {
+    "language": "语言"
+  },
+  "AllTools": {
+    "title": "全部工具",
+    "subtitle": "按类别浏览 GPT CLEAN UP Tools 工具合集，快速找到合适的实用工具。",
+    "seoTitle": "全部工具 | GPT CLEAN UP",
+    "seoDescription": "按类别浏览 GPT CLEAN UP Tools 工具合集 - AI 文本清理、水印移除、格式化工具等。快速找到合适的实用工具。"
+  },
+  "ToolUI": {
+    "inputText": "输入文本",
+    "output": "输出",
+    "copy": "复制",
+    "clear": "清除",
+    "yes": "是",
+    "no": "否"
+  },
+  "Tools": {
+    "home": {
+      "title": "ChatGPT 文本清理器",
+      "description": "通过删除隐藏的 Unicode 和修复间距来清理和规范化 AI 文本。"
+    },
+    "space-remover": {
+      "title": "Eliminador de espacios",
+      "description": "Elimina espacios extra, recorta líneas y normaliza los espacios en blanco para un texto limpio y listo para pegar."
+    },
+    "ai-space-remover": {
+      "title": "Eliminador de espacios de IA",
+      "description": "Elimina espacios extra, Unicode oculto y espacios irregulares del texto generado por IA."
+    },
+    "case-converter": {
+      "title": "Convertidor de mayúsculas y minúsculas",
+      "description": "Convierte texto a MAYÚSCULAS, minúsculas, Título o frase.",
+      "seoTitle": "Convertidor de mayúsculas y minúsculas - MAYÚSCULAS, minúsculas, Título y frase"
+    },
+    "em-dash-remover": {
+      "title": "Eliminador / reemplazador de guiones largos",
+      "description": "Elimina o reemplaza guiones largos (—) y guiones cortos (–) con el espaciado que prefieras.",
+      "seoTitle": "Eliminador de guiones largos - Reemplaza o elimina guiones — y –"
+    },
+    "find-and-replace": {
+      "title": "Buscar y reemplazar",
+      "description": "Busca texto y reemplázalo por valores personalizados, con coincidencia opcional de mayúsculas/minúsculas.",
+      "seoTitle": "Herramienta de buscar y reemplazar - Reemplazo masivo de texto online"
+    },
+    "invisible-character-detector": {
+      "title": "Detector de caracteres invisibles",
+      "description": "Detecta caracteres Unicode ocultos y muestra dónde aparecen en tu texto.",
+      "seoTitle": "Detector de caracteres invisibles - Encuentra Unicode oculto"
+    },
+    "remove-duplicate-lines": {
+      "title": "Eliminar líneas duplicadas",
+      "description": "Elimina líneas duplicadas manteniendo el orden original.",
+      "seoTitle": "Eliminar líneas duplicadas - Borra texto duplicado"
+    },
+    "remove-line-breaks": {
+      "title": "Eliminar saltos de línea",
+      "description": "Une líneas envueltas en párrafos limpios eliminando saltos de línea.",
+      "seoTitle": "Eliminar saltos de línea - Unir líneas en párrafos"
+    },
+    "strip-html": {
+      "title": "Eliminar HTML",
+      "description": "Elimina etiquetas HTML y devuelve texto plano limpio.",
+      "seoTitle": "Eliminar etiquetas HTML - Convertir HTML a texto plano gratis"
+    },
+    "url-encoder-decoder": {
+      "title": "Codificador / decodificador de URL",
+      "description": "Codifica o decodifica URLs, cadenas de consulta y fragmentos de texto.",
+      "seoTitle": "Codificador y decodificador de URL - Codifica o decodifica URLs"
+    },
+    "word-counter": {
+      "title": "Contador de palabras",
+      "description": "Cuenta palabras, caracteres, líneas, frases y párrafos.",
+      "seoTitle": "Contador de palabras - Cuenta palabras, caracteres y líneas"
+    },
+    "zero-width-space-remover": {
+      "title": "Eliminador de espacios de ancho cero",
+      "description": "Elimina espacios de ancho cero y caracteres Unicode invisibles.",
+      "seoTitle": "Eliminador de espacios de ancho cero - Quita Unicode invisible"
+    },
+    "hex-to-binary": {
+      "title": "Convertidor de HEX a binario",
+      "description": "Convierte cadenas hexadecimales a binario con opciones de formato.",
+      "seoTitle": "Convertidor de HEX a binario - Herramienta rápida de HEX a binario"
+    },
+    "random-hex-generator": {
+      "title": "Generador de HEX aleatorio",
+      "description": "Genera cadenas hexadecimales aleatorias con controles de longitud y formato.",
+      "seoTitle": "Generador de HEX aleatorio - Cadenas HEX aleatorias"
+    },
+    "morse-code-translator": {
+      "title": "Traductor de código Morse",
+      "description": "Traduce texto a código Morse o decodifica Morse a texto.",
+      "seoTitle": "Traductor de código Morse - Codifica y decodifica Morse"
+    },
+    "idn-encode": {
+      "title": "Codificar IDN",
+      "description": "Convierte dominios internacionales a ASCII (Punycode).",
+      "seoTitle": "Codificar IDN - Convertir dominios internacionales a Punycode"
+    },
+    "idn-decode": {
+      "title": "Decodificar IDN",
+      "description": "Convierte dominios Punycode a Unicode legible.",
+      "seoTitle": "Decodificar IDN - Convertir Punycode a Unicode"
+    },
+    "utf8-encode": {
+      "title": "Codificar UTF-8",
+      "description": "Codifica texto en bytes UTF-8 para un transporte fiable.",
+      "seoTitle": "Codificar UTF-8 - Convertir texto a bytes UTF-8"
+    },
+    "utf8-decode": {
+      "title": "Decodificar UTF-8",
+      "description": "Decodifica valores de bytes UTF-8 a texto legible.",
+      "seoTitle": "Decodificar UTF-8 - Convertir bytes UTF-8 a texto"
+    },
+    "url-encode": {
+      "title": "Codificar URL",
+      "description": "Codifica texto de URL y valores de consulta en cadenas seguras con percent-encoding.",
+      "seoTitle": "Codificar URL - Percent-encoding para URLs y texto"
+    },
+    "url-decode": {
+      "title": "Decodificar URL",
+      "description": "Decodifica URLs y cadenas de consulta con percent-encoding a texto legible.",
+      "seoTitle": "Decodificar URL - Convertir URLs codificadas a texto"
+    },
+    "base64-encode": {
+      "title": "Codificar Base64",
+      "description": "Convierte texto a Base64 para un transporte seguro en apps y configuraciones.",
+      "seoTitle": "Codificar Base64 - Convertir texto a cadenas Base64"
+    },
+    "base64-decode": {
+      "title": "Decodificar Base64",
+      "description": "Decodifica cadenas Base64 a texto legible con soporte UTF-8.",
+      "seoTitle": "Decodificar Base64 - Convertir Base64 a texto"
+    },
+    "html-entities-to-text": {
+      "title": "Convertidor de entidades HTML a texto",
+      "description": "Decodifica entidades HTML como &amp; y &#169; a texto legible.",
+      "seoTitle": "Entidades HTML a texto - Decodificar entidades HTML"
+    },
+    "text-to-html-entities": {
+      "title": "Convertidor de texto a entidades HTML",
+      "description": "Codifica texto en entidades HTML para un marcado seguro.",
+      "seoTitle": "Texto a entidades HTML - Codificar entidades HTML"
+    },
+    "morse-code-generator": {
+      "title": "Generador de código Morse",
+      "description": "Convierte texto en código Morse limpio con barras o espacios, listo para aprender, practicar o señalizar."
+    },
+    "korean-nickname-generator": {
+      "title": "Generador de apodos coreanos",
+      "description": "Genera 20 apodos a partir de un nombre y rasgos. Estilos lindo, genial, divertido, emotivo y más. Funciona localmente en tu navegador."
+    },
+    "chatgpt-space-remover": {
+      "title": "Eliminador de espacios de ChatGPT",
+      "description": "Elimina espacios extra y líneas en blanco del texto de ChatGPT con un solo clic."
+    },
+    "chatgpt-line-spacing": {
+      "title": "Herramienta de interlineado para ChatGPT",
+      "description": "Ajusta el interlineado del texto de ChatGPT a sencillo, 1.5, doble o personalizado para un formato profesional."
+    },
+    "chatgpt-watermark-remover": {
+      "title": "Eliminador de marcas de agua de ChatGPT",
+      "description": "Elimina caracteres ocultos y artefactos de formato del texto de ChatGPT."
+    },
+    "ai-watermark-remover": {
+      "title": "Eliminador de marcas de agua de IA",
+      "description": "Limpia artefactos de formato, normaliza Unicode y deja el texto de IA listo para publicar."
+    },
+    "gemini-space-remover": {
+      "title": "Eliminador de espacios de Gemini",
+      "description": "Limpia espacios extra y líneas en blanco del texto de Google Gemini."
+    },
+    "gemini-watermark-cleaner": {
+      "title": "Limpiador de marcas de agua de Gemini",
+      "description": "Elimina marcas de agua ocultas y Unicode invisible del texto de Gemini."
+    },
+    "grok-watermark-cleaner": {
+      "title": "Limpiador de marcas de agua de Grok",
+      "description": "Elimina marcas de agua ocultas y Unicode invisible del texto de Grok."
+    },
+    "deepseek-watermark-cleaner": {
+      "title": "Limpiador de marcas de agua de DeepSeek",
+      "description": "Elimina marcas de agua ocultas y Unicode invisible del texto de DeepSeek."
+    },
+    "claude-watermark-cleaner": {
+      "title": "Limpiador de marcas de agua de Claude",
+      "description": "Elimina marcas de agua ocultas y Unicode invisible del texto de Claude."
+    },
+    "llama-watermark-cleaner": {
+      "title": "Limpiador de marcas de agua de LLAMA",
+      "description": "Elimina marcas de agua ocultas y Unicode invisible del texto de LLAMA."
+    },
+    "perplexity-watermark-cleaner": {
+      "title": "Limpiador de marcas de agua de Perplexity",
+      "description": "Elimina marcas de agua ocultas y Unicode invisible del texto de Perplexity."
+    },
+    "grok-space-remover": {
+      "title": "Eliminador de espacios de Grok",
+      "description": "Limpia espacios extra y normaliza el texto de Grok para pegarlo fácilmente."
+    },
+    "deepseek-space-remover": {
+      "title": "Eliminador de espacios de DeepSeek",
+      "description": "Agrupa espacios en blanco extra en respuestas de DeepSeek manteniendo el significado."
+    },
+    "llama-space-remover": {
+      "title": "Eliminador de espacios de LLAMA",
+      "description": "Limpia texto de LLAMA (Meta AI) recortando líneas y estabilizando el espaciado."
+    },
+    "perplexity-space-remover": {
+      "title": "Eliminador de espacios de Perplexity",
+      "description": "Corrige el espaciado y espacios ocultos en respuestas de Perplexity."
+    },
+    "mistral-space-remover": {
+      "title": "Eliminador de espacios de Mistral",
+      "description": "Normaliza los espacios en blanco en texto generado por Mistral."
+    },
+    "mistral-watermark-cleaner": {
+      "title": "Limpiador de marcas de agua de Mistral",
+      "description": "Elimina marcas de agua ocultas y Unicode invisible del texto de Mistral."
+    },
+    "claude-space-remover": {
+      "title": "Eliminador de espacios de Claude",
+      "description": "Recorta, agrupa y normaliza espacios en respuestas de Claude."
+    },
+    "chatgpt-watermark-detector": {
+      "title": "Detector de marcas de agua de ChatGPT",
+      "description": "Inspecciona texto de ChatGPT en busca de posibles artefactos de formato y Unicode oculto."
+    },
+    "ai-watermark-detector": {
+      "title": "Detector de marcas de agua de IA",
+      "description": "Analiza texto en busca de Unicode oculto, patrones de espacios y señales estructurales."
+    },
+    "grok-watermark-detector": {
+      "title": "Detector de marcas de agua de Grok",
+      "description": "Analiza texto de Grok en busca de posibles artefactos y anomalías de espaciado."
+    },
+    "deepseek-watermark-detector": {
+      "title": "Detector de marcas de agua de DeepSeek",
+      "description": "Escanea texto de DeepSeek en busca de señales de formato tipo “marca de agua”."
+    },
+    "llama-watermark-detector": {
+      "title": "Detector de marcas de agua de LLAMA",
+      "description": "Revisa texto de LLAMA (Meta AI) para detectar Unicode oculto y patrones de espacios."
+    },
+    "perplexity-watermark-detector": {
+      "title": "Detector de marcas de agua de Perplexity",
+      "description": "Muestra posibles artefactos de formato en texto de Perplexity."
+    },
+    "gemini-watermark-detector": {
+      "title": "Detector de marcas de agua de Gemini",
+      "description": "Inspecciona texto de Gemini en busca de caracteres ocultos y señales de espacios."
+    },
+    "mistral-watermark-detector": {
+      "title": "Detector de marcas de agua de Mistral",
+      "description": "Identifica posibles patrones de formato en texto generado por Mistral."
+    },
+    "claude-watermark-detector": {
+      "title": "Claude 水印检测器",
+      "description": "分析 Claude 文本中的隐藏 Unicode 和间距伪影。"
+    },
+    "chatgpt-detector": {
+      "title": "ChatGPT 检测器",
+      "description": "检测 AI 生成的内容，检查文本是否由 ChatGPT 或其他 AI 模型创建。"
+    },
+    "chatgpt-humanizer": {
+      "title": "ChatGPT 人性化工具",
+      "description": "将 ChatGPT 文本人性化，使其听起来更自然、更像人类写作。"
+    },
+    "chatgpt-gptzero-checker": {
+      "title": "ChatGPT GPTZero 检查器",
+      "description": "检查您的文本是否会被 GPTZero AI 检测工具检测到。"
+    },
+    "chatgpt-turnitin-checker": {
+      "title": "ChatGPT Turnitin 检查器",
+      "description": "检查您由 ChatGPT 生成的内容是否通过 Turnitin 抄袭检测。"
+    },
+    "chatgpt-originality-checker": {
+      "title": "ChatGPT 原创性检查器",
+      "description": "检查 ChatGPT 生成内容的原创性和真实性。"
+    },
+    "chatgpt-copyleaks-checker": {
+      "title": "ChatGPT Copyleaks 检查器",
+      "description": "检查 ChatGPT 内容是否会被 Copyleaks AI 检测检测到。"
+    },
+    "chatgpt-paraphraser": {
+      "title": "ChatGPT 改写工具",
+      "description": "改写和重新表述 ChatGPT 生成的文本，同时保持含义。"
+    },
+    "chatgpt-sentence-rewriter": {
+      "title": "ChatGPT 句子重写器",
+      "description": "重写 ChatGPT 输出中的句子以提高清晰度和风格。"
+    },
+    "chatgpt-paragraph-rewriter": {
+      "title": "ChatGPT 段落重写器",
+      "description": "重写 ChatGPT 的整个段落以增强流畅性和可读性。"
+    },
+    "chatgpt-essay-rewriter": {
+      "title": "ChatGPT 论文重写器",
+      "description": "重写 ChatGPT 论文以提高质量、结构和学术语调。"
+    },
+    "chatgpt-grammar-checker": {
+      "title": "ChatGPT 语法检查器",
+      "description": "检查并纠正 ChatGPT 生成文本中的语法错误。"
+    },
+    "chatgpt-readability-checker": {
+      "title": "ChatGPT 可读性检查器",
+      "description": "分析可读性分数并提高 ChatGPT 输出的文本清晰度。"
+    },
+    "chatgpt-tone-analyzer": {
+      "title": "ChatGPT 语调分析器",
+      "description": "分析 ChatGPT 生成内容的语调和情感。"
+    },
+    "chatgpt-style-analyzer": {
+      "title": "ChatGPT 风格分析器",
+      "description": "分析 ChatGPT 生成文本中的写作风格和一致性。"
+    },
+    "chatgpt-passive-voice-fixer": {
+      "title": "ChatGPT 被动语态修正器",
+      "description": "将 ChatGPT 生成内容中的被动语态转换为主动语态。"
+    },
+    "chatgpt-essay-checker": {
+      "title": "ChatGPT 论文检查器",
+      "description": "检查 ChatGPT 生成的论文的质量、结构和错误。"
+    },
+    "chatgpt-thesis-checker": {
+      "title": "ChatGPT 论文检查器",
+      "description": "检查 ChatGPT 生成的学术内容中的论文陈述和论点。"
+    },
+    "chatgpt-research-paper-checker": {
+      "title": "ChatGPT 研究论文检查器",
+      "description": "检查 ChatGPT 生成的研究论文是否符合学术标准。"
+    },
+    "chatgpt-assignment-checker": {
+      "title": "ChatGPT 作业检查器",
+      "description": "检查 ChatGPT 生成的作业的质量和合规性。"
+    },
+    "chatgpt-academic-humanizer": {
+      "title": "ChatGPT 学术人性化工具",
+      "description": "将 ChatGPT 学术内容人性化，以通过 AI 检测同时保持质量。"
+    },
+    "chatgpt-blog-post-validator": {
+      "title": "ChatGPT 博客文章验证器",
+      "description": "验证和改进 ChatGPT 生成的博客文章以提高 SEO 和可读性。"
+    },
+    "chatgpt-product-description-improver": {
+      "title": "ChatGPT 产品描述改进器",
+      "description": "改进 ChatGPT 生成的产品描述以提高销售转化率。"
+    },
+    "chatgpt-meta-description-generator": {
+      "title": "ChatGPT 元描述生成器",
+      "description": "从 ChatGPT 内容生成 SEO 优化的元描述。"
+    },
+    "chatgpt-title-tag-generator": {
+      "title": "ChatGPT 标题标签生成器",
+      "description": "从 ChatGPT 生成的内容生成 SEO 优化的标题标签。"
+    },
+    "chatgpt-alt-text-generator": {
+      "title": "ChatGPT 替代文本生成器",
+      "description": "从 ChatGPT 描述为图像生成可访问的替代文本。"
+    },
+    "chatgpt-email-humanizer": {
+      "title": "ChatGPT 电子邮件人性化工具",
+      "description": "将 ChatGPT 生成的电子邮件人性化，使其听起来更个人化和自然。"
+    },
+    "chatgpt-cover-letter-humanizer": {
+      "title": "ChatGPT 求职信人性化工具",
+      "description": "将 ChatGPT 求职信人性化，使其更真实和个人化。"
+    },
+    "chatgpt-resume-humanizer": {
+      "title": "ChatGPT 简历人性化工具",
+      "description": "将 ChatGPT 简历内容人性化，使其更自然且符合 ATS 要求。"
+    },
+    "chatgpt-linkedin-rewriter": {
+      "title": "ChatGPT LinkedIn 重写器",
+      "description": "重写 ChatGPT 内容用于 LinkedIn 以提高参与度和真实性。"
+    },
+    "chatgpt-press-release-polisher": {
+      "title": "ChatGPT 新闻稿润色器",
+      "description": "润色和完善 ChatGPT 生成的新闻稿以供专业发布。"
+    },
+    "text-to-morse-code": {
+      "title": "Convertidor de texto a código Morse",
+      "description": "Convierte texto a código Morse con codificación ITU estándar. Rápido, preciso y respetuoso con la privacidad."
+    },
+    "combination-generator": {
+      "title": "组合生成器",
+      "description": "从一组项目中生成所有可能的组合。组合中顺序不重要。"
+    },
+    "line-combination-generator": {
+      "title": "行组合生成器",
+      "description": "从文本中生成所有可能的行组合。在输出中保留换行符。"
+    },
+    "permutation-generator": {
+      "title": "排列生成器",
+      "description": "生成所有可能的排列，其中顺序很重要。创建项目的有序排列。"
+    },
+    "extract-numbers-from-text": {
+      "title": "Extraer números del texto",
+      "description": "Extrae todos los números del texto, incluidos enteros y decimales. Opciones de orden, unicidad y separadores."
+    },
+    "text-to-hex": {
+      "title": "Convertidor de texto a HEX",
+      "description": "Convierte caracteres de texto a representación hexadecimal. Soporta UTF-8 con opciones de mayúsculas/minúsculas y espaciado."
+    }
+  },
+  "RemoveLineBreaksPage": {
+    "ui": {
+      "inputLabel": "输入文本",
+      "inputPlaceholder": "粘贴带换行符的文本...",
+      "outputLabel": "输出",
+      "outputPlaceholder": "合并后的文本将显示在这里。",
+      "preserveParagraphs": "保留段落换行",
+      "replaceWithSpace": "用空格替换换行符",
+      "collapseSpaces": "压缩多余空格",
+      "removeButton": "删除换行符",
+      "copyButton": "复制",
+      "clearButton": "清除"
+    },
+    "writeUp": {
+      "title": "删除文本中的换行符 - 在线行连接工具",
+      "introductionTitle": "简介",
+      "introductionP1": "删除换行符是对因布局而非意图而换行的文本进行格式化的步骤。当您从PDF、电子邮件客户端或窄列复制时，每行末尾都会插入换行符。结果是一个文本块，粘贴到文档或内容编辑器时看起来是断开的。每行过早结束，而不是像段落一样流动，这使得编辑和阅读更加困难。这是现代工作流程中的常见问题，因为文本在到达最终目的地之前通常会经过多个系统。",
+      "introductionP2": "在许多情况下，换行符在您将文本粘贴到其他地方之前不会显示为问题。PDF查看器可能以页面宽度显示换行的行，而复制的文本在每行后包含换行符。电子邮件客户端有时为了兼容性在72个字符处换行，这会将单个段落变成数十个短行。当该文本移动到CMS中时，会产生锯齿状的换行和意外的间距。问题是布局伪影，而不是内容问题，这就是为什么专门的清理步骤如此有用。",
+      "introductionP3": "gptcleanuptools.com上的删除换行符工具旨在清理这些换行，而不改变单词本身。它将行连接成流畅的段落，在需要时保留段落边界，并规范化间距，使输出清晰易读。如果您需要一个确定且易于使用的在线删除换行符实用程序，此工具提供了一个专注于您粘贴文本的解决方案。它是一个免费的删除换行符工具，因为它可以帮助您修复格式，而无需复杂的编辑器或脚本。",
+      "introductionP4": "常见用例包括清理从PDF复制的文本、为网页准备电子邮件内容，或将硬换行的报告转换为可读的草稿。当您需要将文本放入单个段落字段（如元数据描述或导入表单）时，它也很有用。在这些场景中，目标不是改变含义，而是删除由格式约束引入的换行符。",
+      "whatIsTitle": "什么是删除换行符？",
+      "whatIsP1": "删除换行符是一个确定性的文本格式化工具，可从您提供的文本中删除换行符。它可以用空格替换换行符，使单词保持分离，或者在您需要连续字符串时完全删除它们。它还支持保留段落换行，这意味着它在连接每个段落内的行的同时，保留段落之间有意保留的空白行。",
+      "whatIsP2": "区分软换行和硬换行很有帮助。软换行只是编辑器中的视觉换行，在底层文本中不存在。硬换行是嵌入在文本中的实际换行符。删除换行符工具删除硬换行，这就是为什么它对复制的内容有效，但不会改变字处理器显示已经软换行的文本的方式。理解这种差异有助于解释为什么从PDF粘贴的块需要清理，而文档中起草的段落则不需要。",
+      "whatIsP3": "该工具不会重写或释义。它不解释含义或风格。它只是对换行符和间距应用清晰、可预测的规则。这使得它适合需要可靠方式清理文本而不改变内容本身的编辑者、学生和专业人士。因为它只对您的输入进行操作并在浏览器中本地运行，所以输出是一致的且易于审查。",
+      "whyMattersTitle": "为什么这个工具很重要",
+      "whyMattersP1": "换行符通常由布局引擎插入，而不是由作者插入。PDF可能以固定宽度换行，电子邮件客户端可能插入换行符以适应窄列。当您将该文本粘贴到不同的环境中时，这些换行仍然存在，文本看起来断断续续。这可能会减慢编辑速度，使搜索和替换更加困难，并在发布的内容中产生格式错误。",
+      "whyMattersP2": "文本换行符删除器通过将行连接成自然流来从源头修复问题。这使得阅读、引用和重用内容变得更加容易。当您将文本复制到CMS或报告中时，它还可以降低错误风险，因为您正在使用干净的段落而不是一组硬换行的行。对于团队来说，确定性工具在不同贡献者之间提供一致的结果，这有助于保持质量并减少手动清理时间。",
+      "whyMattersP3": "换行符也会影响下游流程，如搜索、翻译记忆和自动提取。当句子跨行分割时，简单的搜索查询可能会失败或返回部分结果。自动导入工具可能将每行解释为单独的记录，这可能会破坏数据管道。通过在重用之前清理换行符，您可以降低这些风险，并使文本对人类和机器都更加一致。当同一文本将在多个系统中重用时，这一点尤其重要。",
+      "whyMattersP4": "该工具还有助于防止小而代价高昂的格式错误。句子内的换行符可能会破坏搜索查询或导致句子在模板中换行不佳。通过删除这些换行，您可以将文本保持在更容易在下游处理的状态。这是一个实用的、低风险的步骤，可以提高许多工作流程中文本的可靠性。",
+      "howWorksTitle": "工具如何工作（逐步）",
+      "howWorksP1": "删除换行符工具遵循清晰的输入到输出过程。它不依赖外部服务或复杂分析。每个步骤都是确定性的和可重复的。",
+      "howWorksInputTitle": "1) 输入",
+      "howWorksInputP1": "您将文本粘贴或输入到输入框中。该工具接受任何纯文本，包括从文档、电子邮件和网页复制的内容。它规范化行尾，以便不同操作系统样式得到一致处理。",
+      "howWorksProcessingTitle": "2) 处理",
+      "howWorksProcessingP1": "如果启用了保留段落换行，工具会识别空白行序列并将它们标记为段落边界。然后它删除剩余的换行符。如果您选择用空格替换换行符，则在每个换行符存在的位置插入单个空格。如果您选择不替换它们，则完全删除换行符。",
+      "howWorksProcessingP2": "如果启用了压缩多余空格，工具会将重复的空格和制表符减少为单个空格。这有助于清理通常来自PDF提取或复制粘贴的不规则间距。",
+      "howWorksProcessingP3": "这些选项让您可以控制清理的激进程度。对于叙述性文本，保留段落并用空格替换换行符通常会产生最佳结果。对于需要单行的数据字段，您可以删除所有换行。因为该过程是确定性的，您可以使用不同的设置多次运行该工具并比较输出。结果不依赖于浏览器或时间，只依赖于文本和您选择的选项。",
+      "howWorksOutputTitle": "3) 输出",
+      "howWorksOutputP1": "输出以规范化间距的干净段落形式出现在结果区域中。工具会修剪前导和尾随空白，使输出干净地开始和结束。您可以复制结果以在文档、CMS或任何需要流畅文本块的工作流程中使用。",
+      "commonProblemsTitle": "此工具解决的常见问题",
+      "commonProblemsP1": "许多文本问题是由硬换行和不一致的间距引起的。删除换行符解决了一系列实际问题。",
+      "commonProblemsItem1": "从PDF复制的文本显示为短行而不是完整段落。",
+      "commonProblemsItem2": "电子邮件客户端以固定宽度插入换行符，使草稿难以重用。",
+      "commonProblemsItem3": "从工具导出的报告在列的每一行后都包含换行符。",
+      "commonProblemsItem4": "复制和粘贴会添加额外的空格和制表符，使文本不均匀。",
+      "commonProblemsItem5": "CMS字段期望单个段落，但粘贴的文本包含硬换行。",
+      "commonProblemsItem6": "聊天记录和笔记包含手动换行符，会中断阅读流程。",
+      "commonProblemsP2": "在每种情况下，问题不是内容本身，而是源强加的结构。换行符删除器修复结构，使文本可以在不手动重排的情况下进行编辑和重用。",
+      "commonProblemsP3": "例如，研究人员可能会复制期刊摘要，发现每个换行符在报告模板中变成新行。支持代理可能会将长电子邮件粘贴到工单中，看到换行符破坏格式。删除换行符可恢复更易于阅读、响应和归档的段落样式。相同的模式出现在许多源中，因为核心问题是源布局和目标布局之间的不匹配。",
+      "supportedSourcesTitle": "支持的文本源",
+      "supportedSourcesP1": "该工具适用于您可以粘贴到浏览器中的任何文本。它不需要特定格式，也不依赖于源。",
+      "supportedSourcesWebTitle": "网页和CMS草稿",
+      "supportedSourcesWebP1": "从网页复制的内容在来自窄列或响应式布局时通常包括硬换行符。删除这些换行符会产生一个干净的段落，更容易粘贴到CMS或文档编辑器中。",
+      "supportedSourcesPdfTitle": "PDF导出",
+      "supportedSourcesPdfP1": "PDF复制粘贴经常导致每行视觉行后都有换行符。该工具将这些行连接成可读段落，并可以减少PDF提取留下的额外空格。这是硬换行PDF文本的常见修复方法。",
+      "supportedSourcesWordTitle": "Word文档",
+      "supportedSourcesWordP1": "字处理器有时在从表格、列或注释复制文本时插入换行符。该工具删除这些换行符而不改变单词，这在您需要将文本移动到不同格式时很有帮助。",
+      "supportedSourcesSpreadsheetTitle": "电子表格和表单导出",
+      "supportedSourcesSpreadsheetP1": "电子表格和表单导出有时包括换行的单元格内容，复制时会变成换行符。当单元格包含长注释或地址时，这很常见。删除换行符将内容转换为可以导入到另一个系统而不会破坏字段边界的单行。当您需要在分析之前规范化响应时，它也很有帮助。",
+      "supportedSourcesOcrTitle": "OCR和扫描文本",
+      "supportedSourcesOcrP1": "OCR和扫描文档通常产生具有不规则换行符的文本，因为软件遵循页面布局而不是句子结构。该工具可以将这些行连接成可读段落。OCR还可能引入额外的空格或缺失字符，因此仍需要快速审查。删除换行符是进一步清理之前的一个好第一步。",
+      "supportedSourcesEmailTitle": "电子邮件和支持工单",
+      "supportedSourcesEmailP1": "电子邮件客户端通常以固定宽度换行。支持工单系统也插入换行符，使复制的文本更难重用。该工具恢复单个段落流，以便在报告或文档中更干净地重用。",
+      "supportedSourcesAiTitle": "AI生成的草稿",
+      "supportedSourcesAiP1": "AI生成的草稿有时包括手动换行符或复制的格式伪影。此工具不连接到任何AI模型，但它可以清理您粘贴的文本，使格式在编辑前保持一致。",
+      "supportedSourcesCodeTitle": "代码片段和日志",
+      "supportedSourcesCodeP1": "当代码注释或日志消息被窄显示硬换行时，删除换行符可以使其更易于阅读。请谨慎使用，因为换行符在代码和日志中通常是有意义的。该工具最适合叙述性文本而不是结构化代码。",
+      "whatNotDoTitle": "此工具不做什么",
+      "whatNotDoP1": "删除换行符是一个格式化实用程序。它有明确的限制，使输出可预测且安全使用。",
+      "whatNotDoItem1": "它不会重写、释义或总结文本。",
+      "whatNotDoItem2": "它不会从PDF中删除页眉、页脚或页码。",
+      "whatNotDoItem3": "它不会修复行尾的连字符。",
+      "whatNotDoItem4": "它不会自动检测列表、表格或文档结构。",
+      "whatNotDoItem5": "它不连接到AI模型或外部服务。",
+      "whatNotDoP2": "如果您需要结构编辑或内容重写，请使用其他工具。删除换行符在范围上故意狭窄，使结果一致且易于验证。",
+      "privacyTitle": "隐私和安全",
+      "privacyP1": "该工具在您的浏览器中本地处理文本。它不上传您的内容或将其存储在服务器上。这使您的数据保持在您的会话中，并减少敏感文本的暴露。",
+      "privacyP2": "即使使用本地处理，也应遵循组织的机密数据政策。如果您正在处理敏感文档，请确保基于浏览器的工具符合您的要求。该工具不创建帐户、跟踪您的输入或在您关闭页面后保留输出。您控制粘贴和复制的内容。",
+      "professionalUseCasesTitle": "专业用例",
+      "professionalUseCasesP1": "换行符清理在专业角色中很常见，因为文本在以不同方式换行的系统之间移动。",
+      "professionalUseCasesWritersTitle": "作家和编辑",
+      "professionalUseCasesWritersP1": "编辑经常收到从PDF或电子邮件线程复制的草稿。删除换行符使他们能够专注于内容而不是手动格式化。它还使应用样式更改和准备发布草稿变得更加容易。",
+      "professionalUseCasesDevelopersTitle": "开发人员和技术团队",
+      "professionalUseCasesDevelopersP1": "技术团队从多个源复制日志消息、错误描述和文档。干净的段落更容易分析和包含在报告中。该工具有助于在不改变文本的情况下删除格式噪音。",
+      "professionalUseCasesOperationsTitle": "运营和支持",
+      "professionalUseCasesOperationsP1": "支持团队经常编译笔记和工单摘要。硬换行的行使这些摘要更难扫描。删除换行符会产生可以粘贴到知识库或状态更新中的干净、可共享的笔记。",
+      "professionalUseCasesMarketingTitle": "营销和内容运营",
+      "professionalUseCasesMarketingP1": "营销团队经常在电子邮件活动、登录页面和内部简报中重用文案。该文案经常在PDF、幻灯片和共享文档之间移动。删除换行符确保文本在最终渠道中正确流动，并减少重新格式化工作。内容运营团队在准备批量导入时也受益，其中单个硬换行可能在模板中创建不一致的字段。",
+      "professionalUseCasesLegalTitle": "法律和合规团队",
+      "professionalUseCasesLegalP1": "法律审查通常涉及从PDF或扫描文档复制的文本。清理换行符有助于审查者专注于措辞和结构，而无需手动重新格式化每个段落。",
+      "professionalUseCasesP2": "在这些角色中，该工具作为简单的清理步骤，提高了依赖干净文本的工作流程的清晰度并减少了摩擦。",
+      "educationalUseCasesTitle": "教育用例",
+      "educationalUseCasesP1": "学生和教育工作者经常使用从学术PDF、期刊和电子邮件线程复制的文本。删除换行符会产生更容易引用、注释和包含在作业中的干净段落。因为该工具不改变含义，所以对于准确性很重要的学术工作流程是安全的。",
+      "educationalUseCasesP2": "研究人员可以使用它来准备用于分析的摘录，或在将转录和笔记导入定性工具之前清理它们。确定性输出使在研究方法论中更容易重现结果和记录清理步骤。",
+      "educationalUseCasesP3": "另一个教育用例是清理以换行导出的调查响应或同行反馈。当每个响应被分割成短行时，阅读和比较答案变得困难。删除换行符会产生更清晰的视图，更容易在报告中引用或总结。在从混合源构建学习指南或课堂讲义时，它也很有帮助，因为一致的段落格式减少了视觉噪音，并将注意力集中在内容本身上。",
+      "publishingSeoTitle": "发布和SEO用例",
+      "publishingSeoP1": "发布工作流程通常依赖CMS字段、摘要和元数据的干净段落。硬换行符可能会引入尴尬的间距或换行，在实时站点上显示不佳。删除换行符确保文本在这些字段中显示为正常段落。",
+      "publishingSeoP2": "从SEO角度来看，该工具不会更改关键字或添加内容。它只是改善格式以提高可读性。这可以支持更好的编辑质量，并减少期望单个段落的元数据字段中的错误。在内容最终确定后将其用作格式化步骤，而不是作为优化策略。",
+      "publishingSeoP3": "另一个常见场景是批量导入描述或摘要。许多CMS字段将换行符视为单独的段落或无效字符。在导入之前删除它们可以减少格式错误，并保持跨设备的预览一致。在准备用于社交分享或RSS提要的摘录时，它也很有帮助，其中换行符可能会截断或错位内容。结果是更可预测的渲染，而不会改变措辞。",
+      "accessibilityTitle": "可访问性和可用性优势",
+      "accessibilityP1": "干净的段落提高了所有用户的可读性，包括依赖屏幕阅读器的用户。硬换行符可能会中断句子流，使内容更难解释。通过删除这些换行，文本读起来更自然，更容易导航。",
+      "accessibilityP2": "对于可用性审查，单个文本段落比具有意外换行符的块更容易扫描。这有助于内容团队更快地审查和批准文本。该工具不添加结构，但会删除可能分散读者注意力的噪音。",
+      "accessibilityP3": "在可访问性审计中，干净的文本使评估清晰度和阅读顺序变得更加容易。硬换行符可能导致屏幕阅读器在不自然的地方暂停，或在没有意图的地方宣布换行。通过删除这些换行，文本听起来更自然，更容易跟随。该工具不改变含义，但改善了辅助技术和依赖可预测句子流的读者的文本节奏。",
+      "whyOnlineToolTitle": "为什么使用在线工具而不是手动编辑？",
+      "whyOnlineToolP1": "手动删除换行符很慢且容易出错。您必须识别每个换行符，删除它，并验证间距是否正确。当文本很长或换行符很多时，这变得困难。确定性工具在几秒钟内对整个输入应用相同的规则。",
+      "whyOnlineToolP2": "在线工具还使过程可重复。您可以在多个文档上运行相同的清理并获得一致的结果。这对于处理许多类似格式文档的团队特别有价值。它减少了遗漏换行的机会，并使清理步骤更容易在工作流程中记录。",
+      "edgeCasesTitle": "边缘情况和已知限制",
+      "edgeCasesP1": "删除换行符很简单，但有一些边缘情况可能会影响输出。了解这些限制有助于您选择正确的设置并避免意外。",
+      "edgeCasesItem1": "带连字符的行尾可能在输出中留下不正确的连字符。",
+      "edgeCasesItem2": "依赖单换行符的列表可能会合并成单行。",
+      "edgeCasesItem3": "多列PDF文本可能以错误的阅读顺序粘贴。",
+      "edgeCasesItem4": "代码和预格式化文本在删除换行符时可能会失去结构。",
+      "edgeCasesItem5": "隐藏字符（如不间断空格）可能会改变间距结果。",
+      "edgeCasesP2": "如果出现这些问题，您可能需要后续清理步骤。例如，使用查找和替换来修复行尾连字符，或在运行工具之前分别复制列。该工具提供了干净的基础，但不会尝试解决复杂源引入的所有格式伪影。",
+      "edgeCasesP3": "另一个限制是使用换行符作为记录分隔符的文本，例如数据集中的每行一个项目。删除这些换行可能会合并记录并使数据难以解析。如果您的输入混合了段落和单行记录，请考虑分割内容并仅清理段落部分。该工具是为叙述性文本设计的，因此结构化数据可能需要不同的方法，例如在清理之前用分隔符替换换行符。",
+      "bestPracticesTitle": "使用删除换行符时的最佳实践",
+      "bestPracticesP1": "一些简单的实践可以改善结果并减少工具运行后手动清理的需要。",
+      "bestPracticesItem1": "为叙述性内容和报告启用保留段落换行。",
+      "bestPracticesItem2": "用空格替换换行符以避免散文中合并的单词。",
+      "bestPracticesItem3": "当输入来自PDF或表格时，使用压缩多余空格。",
+      "bestPracticesItem4": "清理后检查输出的连字符和标题。",
+      "bestPracticesItem5": "保留原始文本的副本，以防需要恢复。",
+      "bestPracticesP2": "这些步骤使工作流程可预测，并使向协作者或审查者解释清理过程变得更加容易。处理后的简短审查通常足以捕获自动化清理无法解决的少数边缘情况。",
+      "bestPracticesP3": "当您不确定输入时，首先运行小样本也很有帮助。测试一个段落，检查间距，然后将相同的设置应用于完整文本。如果源包含隐藏字符，请在删除换行符之前将此工具与不可见字符检测器配对。该序列有助于您避免意外，并确保输出已准备好用于下游使用。",
+      "misunderstoodTitle": "经常被误解的概念",
+      "misunderstoodHardWrapsTitle": "硬换行不是段落",
+      "misunderstoodHardWrapsP1": "硬换行是由布局插入的换行符，而不是作者的意图。段落换行是有意义的。该工具旨在删除硬换行，同时在可能时保留段落换行。",
+      "misunderstoodPreserveTitle": "保留段落不会创建新段落",
+      "misunderstoodPreserveP1": "保留段落选项保留输入中已存在的空白行。如果源不包含空白行，它不会猜测新段落应该从哪里开始。如果所有内容都由单换行符分隔，工具会将其视为一个段落。如果您需要段落分隔，请在运行工具之前添加空白行，或在之后插入它们。",
+      "misunderstoodReplacingTitle": "替换换行符与删除它们不同",
+      "misunderstoodReplacingP1": "用空格替换换行符保留单词分离。在没有空格的情况下删除它们是不同的操作，如果源不包含尾随空格，可能会合并单词。",
+      "misunderstoodCollapsingTitle": "压缩空格与修剪不同",
+      "misunderstoodCollapsingP1": "修剪删除输出开头和结尾的空格。压缩空格减少文本中重复的空格。它们解决不同的问题，可以一起启用。",
+      "misunderstoodDeterministicTitle": "确定性处理不推断含义",
+      "misunderstoodDeterministicP1": "该工具不推断结构或纠正措辞。它对换行符和间距应用字面规则。任何语义编辑都必须单独完成。",
+      "misunderstoodRewritingTitle": "删除换行符不是重写",
+      "misunderstoodRewritingP1": "该工具不生成或释义内容。它只更改您提供的文本的布局，这就是为什么它对于需要保持含义完整的工作流程是安全的。",
+      "responsibleUseTitle": "负责任使用免责声明",
+      "responsibleUseP1": "删除换行符是一个确定性的文本格式化工具。它只对您提供的文本起作用，不连接到AI模型，也不声称与任何AI提供商有隶属关系。它不生成内容、更改含义或绕过检测系统。在您有权处理文本的上下文中将其用于清理和格式化。",
+      "finalSummaryTitle": "最终摘要和何时使用此工具",
+      "finalSummaryP1": "gptcleanuptools.com上的删除换行符工具是一种简单、可靠的方法来清理硬换行文本。它将行连接成段落，在需要时保留段落换行，并规范化间距以获得可读的输出。该工具在您的浏览器中本地运行，这使过程保持私密和确定性。",
+      "finalSummaryP2": "当您需要从PDF、电子邮件或窄列复制的文本中删除换行符时使用它。它非常适合为CMS、报告或期望单个段落的表单字段准备内容。它不是重写工具，也不会修改含义，这使其对敏感或精确内容是安全的。",
+      "finalSummaryP3": "当换行符是意外的并妨碍编辑时，此工具提供了快速、一致的修复。将其与输出的快速审查配对，您将拥有准备好进行下一步的干净文本。",
+      "finalSummaryP4": "对于更广泛的清理工作流程，您可以将此工具与其他实用程序配对。首先删除换行符，然后根据需要运行字数统计器或删除重复行。每个工具执行一个明确的任务，这使工作流程可预测且易于审核。目标不是转换内容，而是为准确的编辑、发布或分析做准备。"
+    },
+    "faqs": {
+      "faq1": {
+        "category": "一般",
+        "question": "删除换行符工具做什么？",
+        "answer": "删除换行符工具将换行的行连接成连续段落，同时保留您的原始单词。它设计用于当文本从PDF、电子邮件或窄列到达时带有硬换行符的确定性清理。您粘贴文本，选择是否保留段落换行，工具相应地删除换行符。如果您选择用空格替换换行符，它会在每个换行符存在的位置插入单个空格，这样单词就不会合并。它还可以压缩重复的空格和制表符，这些通常在复制粘贴后出现。\n\n该工具不会重写、释义或解释含义。它只是根据所选选项转换换行符字符。输出是具有更可读流程的相同内容，这使得编辑、搜索或粘贴到文档中变得更加容易。"
+      },
+      "faq2": {
+        "category": "一般",
+        "question": "删除换行符和删除段落有什么区别？",
+        "answer": "删除换行符连接由布局或导出换行的行，而删除段落则消除想法之间的有意间距。许多源在每行视觉行的末尾插入换行符，即使句子继续。如果您删除这些换行符，句子将变成正常段落。段落换行通常由一个或多个空白行表示。它们是结构性的，通常表示新主题、步骤或部分。\n\n此工具允许您保留段落换行，以便空白行保留，而内部换行符消失。这使文档结构保持可读。如果您关闭段落保留，所有换行都会被删除，输出变成单个块。这对于需要一行的表单或数据字段可能很有用，但对于文章或报告通常不是理想的。这种区别有助于您只删除意外换行。"
+      },
+      "faq3": {
+        "category": "技术",
+        "question": "保留段落换行选项如何工作？",
+        "answer": "保留段落换行查找两个或更多换行符的序列，并将它们视为段落边界。工具在删除换行符之前标记这些边界，然后在输出中将它们恢复为空白行。这使段落保持分离，同时每个段落内的行连接成流畅的块。这是一种清理硬换行文本而不压平文档的实用方法。\n\n该选项依赖于输入具有空白行。如果您的源对所有内容使用单换行符，工具无法推断段落，并将整个输入视为一个段落。在这种情况下，您可以在运行工具之前手动添加段落分隔符，或者将输出用作编辑的单个块。行为是确定性的，不会猜测段落应该在哪里。"
+      },
+      "faq4": {
+        "category": "使用",
+        "question": "我应该用空格替换换行符还是完全删除它们？",
+        "answer": "用空格替换换行符是散文最安全的默认值。当换行符出现在句子中间时，您通常需要一个空格，以便单词保持分离。工具在每个换行符存在的位置插入单个空格。这保留了单词边界并避免合并单词。当您将输出粘贴到文档或CMS中时，它还提高了可读性。\n\n删除换行符而不添加空格仅在您知道换行符已经被空格包围或需要没有任何间距的连续字符串时才有用。示例包括某些数据格式、URL列表或您想要删除段之间所有空白的情况。如果您看到单词连在一起，请打开用空格替换选项并再次运行工具。选择是关于您希望最终文本如何流动。"
+      },
+      "faq5": {
+        "category": "格式化",
+        "question": "压缩多余空格做什么？",
+        "answer": "压缩多余空格将多个空格和制表符减少为单个空格。复制粘贴经常引入额外的间距，特别是当文本从PDF或表格中获取时。这些额外的空格可能使输出看起来不均匀，并在您将文本粘贴到以不同方式处理多个空格的表单或编辑器时可能导致问题。\n\n启用此选项后，工具会扫描重复的空格和制表符，并将每个序列替换为一个空格。它不会删除所有间距；它只是规范化它。这有助于在删除换行符后产生干净、可读的句子。如果您需要保留精确间距，例如在固定宽度布局或对齐列中，您应该禁用此选项。对于常规散文和大多数列表，压缩空格会产生更自然的结果。"
+      },
+      "faq6": {
+        "category": "格式化",
+        "question": "为什么删除换行符后某些单词连在一起？",
+        "answer": "当删除换行符而不插入空格时，单词会连在一起。某些源以固定宽度换行，并且在换行符之前不包含空格。当删除换行时，一行的最后一个单词和下一行的第一个单词变成一个单词。这在PDF导出和电子邮件客户端中很常见。\n\n最简单的修复是启用用空格替换换行符选项。这会在每个换行处插入一个空格，以便单词保持分离。另一个原因是行尾的连字符。如果源使用连字符在行之间分割单词，工具将保留连字符，这可能会留下像\"inter-\"后跟\"national\"这样的单词。您可能需要手动删除连字符或使用有针对性的查找和替换。快速审查输出有助于捕获这些情况。"
+      },
+      "faq7": {
+        "category": "使用",
+        "question": "工具可以修复从PDF复制的文本吗？",
+        "answer": "是的，该工具非常适合PDF复制粘贴问题。许多PDF以窄列存储文本，或在每行后带有硬换行符。当您复制时，即使句子继续，这些换行也会显示为换行符。删除换行符工具将这些行连接起来，恢复自然段落流。它还有助于删除PDF提取经常在单词之间或标点符号后添加的额外间距。\n\n但是，PDF文本可能包括更复杂的伪影，例如页眉、页脚、页码和带连字符的行尾。工具不会自动删除这些，因为它只处理换行符和间距。运行后，扫描输出以查找杂散页眉或带连字符的单词，并根据需要进行清理。对于多列PDF，您可能需要分别复制每列以避免混合阅读顺序。该工具提供了快速基线，但仍受益于快速的人工审查。"
+      },
+      "faq8": {
+        "category": "一般",
+        "question": "工具会改变标点符号或含义吗？",
+        "answer": "不会。该工具不会改变标点符号、拼写或含义。它只删除换行符字符，并可选择插入空格或压缩重复的空格。这意味着您提供的单词保持相同的顺序，标点符号完全保持原样。结果只是一个更流畅的布局，读起来像正常段落而不是一系列硬换行的行。\n\n因为该工具是确定性的，相同的输入和设置总是产生相同的输出。没有释义、重写或AI驱动的推理。这对于必须保留含义的法律文本、学术引用或技术文档很重要。如果您注意到措辞变化，可能是由于换行符的删除方式或输入包含不寻常的间距。审查输出并根据需要调整设置，但工具本身不会改变格式之外的内容。"
+      },
+      "faq9": {
+        "category": "技术",
+        "question": "它如何处理Windows和Mac的行尾？",
+        "answer": "工具在处理之前规范化行尾。不同系统以不同方式表示换行符：Windows使用回车加换行，而Unix和macOS通常只使用换行。工具将Windows样式的换行转换为一致格式，然后应用删除逻辑。这防止了某些换行被删除而其他换行未被删除的不匹配。\n\n您不需要手动调整任何内容。只需粘贴文本并运行工具。规范化步骤是内部的和确定性的，因此无论文本来自Windows、Mac还是网页，输出都是相同的。如果您仍然看到意外行为，通常是由于其他隐藏字符，如不间断空格或分页符。在这些情况下，使用不可见字符检测器可以帮助诊断输入。行尾规范化是工作流程的标准部分。"
+      },
+      "faq10": {
+        "category": "格式化",
+        "question": "它会删除空白行和额外间距吗？",
+        "answer": "空白行根据保留段落换行设置进行处理。如果启用了保留段落，连续的空白行被视为段落分隔符，并在输出中保留。工具删除每个段落内的换行符，但保留段落之间的空白行，以便结构保持可读。如果禁用了保留段落，这些空白行会与其他换行符一起被删除，产生单个文本块。\n\n行内的额外间距由压缩空格选项处理。启用后，重复的空格和制表符会减少为单个空格。输出也会在开头和结尾进行修剪，这会删除意外的前导或尾随空白。如果您需要保留精确间距或缩进，请禁用压缩空格，并考虑保持段落保留开启。工具让您可以控制清理换行符时保留多少结构。"
+      },
+      "faq11": {
+        "category": "工作流程",
+        "question": "对长文档安全吗？",
+        "answer": "对于长文档通常是安全的，但性能取决于您的设备和浏览器。处理在浏览器中本地进行，因此大型输入需要更多内存和时间。对于大多数文章、报告或电子邮件线程，工具运行很快。如果您粘贴非常大的文档，可能会看到响应变慢或浏览器延迟。\n\n实用的方法是分段工作。将文本分成较小的块，在每个块上运行工具，然后重新组装输出。这使界面保持响应，并降低意外浏览器减速的风险。工具是确定性的，因此您可以按任何顺序处理部分而不会改变结果。在运行任何批量清理之前，始终保留原始文本的副本，以便在需要时可以恢复它。对于日常用例，工具可以很好地处理大块文本。"
+      },
+      "faq12": {
+        "category": "使用",
+        "question": "我可以在列表或项目符号上使用它吗？",
+        "answer": "可以在列表上使用，但应该谨慎。许多列表依赖换行符来分隔项目。如果您删除换行符而不保留段落，所有项目可能会合并成单行，这使得列表难以阅读或重用。如果每个项目由空白行分隔，保留段落可能会保持列表结构，但使用单换行符的列表将被连接。\n\n如果您需要保持列表项目分离，您可能避免删除换行符，或者首先将列表转换为分隔符，如逗号或分号。另一种方法是在每个项目内的行上运行工具，保持列表分隔符完整。删除换行符工具最适合散文和段落。对于结构化列表，在删除之前考虑换行符是否有意义。"
+      },
+      "faq13": {
+        "category": "限制",
+        "question": "我可以将它用于代码片段或日志吗？",
+        "answer": "可以粘贴代码片段或日志，但换行符在这些格式中通常是有意义的。删除源代码中的换行符可能会改变其含义或使其不可读。日志也依赖换行符来分隔事件。如果您删除它们，可能会失去跟踪序列或关联时间戳的能力。\n\n在有限的情况下它有帮助，例如当代码注释或日志条目被窄显示硬换行，您想将其作为单行阅读时。在这些情况下，保留段落换行并用空格替换换行符，以便文本保持可读。避免在可执行代码或结构化日志文件上使用该工具。它设计用于纯文本清理，而不是代码格式化或日志处理。在技术工作流程中使用之前，始终审查输出。"
+      },
+      "faq14": {
+        "category": "技术",
+        "question": "为什么从不同源粘贴相同文本时输出会变化？",
+        "answer": "当底层输入不完全相同时，输出可能会变化。从不同源复制相同的可见文本可能会引入隐藏字符、不间断空格或不同的行尾。PDF阅读器可能会插入额外的空格，而网页可能包括软换行符或不可见字符。这些细微差异影响工具如何解释换行符和间距。\n\n工具应用一致的规则，因此输出的差异通常反映输入的差异。如果您看到意外结果，请先将文本粘贴到纯文本编辑器中，或使用不可见字符检测器来显示隐藏符号。您还可以切换压缩空格选项以规范化间距。当输入干净且一致时，输出也将一致。工具本身不会引入随机性或可变性。"
+      },
+      "faq15": {
+        "category": "SEO",
+        "question": "删除换行符有助于SEO或发布吗？",
+        "answer": "删除换行符不会直接改善搜索排名，但可以支持发布工作流程。干净的段落更容易编辑、校对和粘贴到CMS中。它们减少了当换行符留在原处时可能出现的格式错误，例如尴尬的换行或模板中的意外间距。\n\n对于SEO相关任务，当您准备应该是单个段落的元描述、摘录或结构化片段时，该工具很有用。它确保文本在不能很好处理换行符的字段中看起来干净。它不添加关键字或更改含义，因此它本身不是优化技术。将其视为格式化实用程序，可帮助您提供精美的内容，这可以改善用户感知和编辑准确性。"
+      },
+      "faq16": {
+        "category": "隐私",
+        "question": "工具提供什么隐私保护？",
+        "answer": "隐私通过本地处理来处理。工具在您的浏览器中运行，不会将您的文本发送到外部服务。没有帐户要求，也不会在服务器上存储输入或输出。这使其适用于您想要快速格式化而不共享内容的常规清理任务。\n\n即使使用本地处理，您也应该遵循任何内部敏感数据政策。如果您正在处理机密材料，请考虑基于浏览器的工具是否适合您的环境。删除换行符工具不连接到AI模型或第三方API，也不会在您关闭页面后保留内容。您控制粘贴、复制和保留的内容。这个简单的工作流程有助于将您的数据保持在您的控制之下。"
+      },
+      "faq17": {
+        "category": "兼容性",
+        "question": "支持哪些浏览器？",
+        "answer": "该工具在支持标准JavaScript文本处理的现代浏览器中工作。Chrome、Edge、Firefox和Safari都处理所需的功能。因为逻辑简单且确定，输出取决于输入和所选选项，而不是浏览器。您应该在所有支持的浏览器中看到相同的结果。\n\n如果您遇到差异，它们通常来自文本如何复制到浏览器或修改剪贴板内容的扩展。尝试禁用扩展或先粘贴到纯文本编辑器中。该工具不依赖除复制按钮的标准剪贴板访问之外的高级API。如果您的浏览器阻止剪贴板访问，您仍然可以手动选择和复制输出。总的来说，对于任何最新的浏览器，兼容性都很强。"
+      },
+      "faq18": {
+        "category": "限制",
+        "question": "我应该什么时候避免删除换行符？",
+        "answer": "当换行符有意义时，您应该避免删除换行符。诗歌、地址、法律条款和格式化列表通常依赖换行符来显示结构。删除它们可能会改变文本的阅读或解释方式。在代码和配置文件中，换行符通常是有意义的，应该保留。\n\n如果文本已经格式良好，可能不需要清理。该工具适用于换行符由格式约束而不是作者插入的情况。如果您不确定，请先在小型样本上运行工具并比较结果。当换行符是内容的一部分时，请保留它们并使用不改变布局的其他工具。最安全的规则是仅在换行符明显是意外时才删除它们。"
+      },
+      "faq19": {
+        "category": "工作流程",
+        "question": "我可以撤销或逆转更改吗？",
+        "answer": "该工具不提供撤销按钮，因此最安全的方法是保留原始文本的副本。您可以将原始文本粘贴到单独的文档中，或在审查输出时将其保留在输入字段中。如果您需要逆转更改，可以手动重新插入换行符或使用另一个工具将文本换行到固定宽度。\n\n因为该工具是确定性的，如果您想保留更多结构，也可以使用不同设置重新运行它。例如，启用段落保留或用空格替换换行符可能会产生更接近原始布局的结果。仍然，除非您保留了源文本，否则不可能完美重建原始换行符。将工具视为单向格式化步骤，并在原始结构重要时保留备份。"
+      },
+      "faq20": {
+        "category": "技术",
+        "question": "我应该如何处理带连字符的换行符？",
+        "answer": "带连字符的换行符发生在单词在行尾分割并添加连字符时，例如\"inter-\"后跟\"national\"。当删除换行符时，连字符保留，这可能在单词中间留下不正确的连字符。工具不会自动删除这些连字符，因为它无法可靠地区分有意连字符和换行连字符。\n\n如果您看到这种模式，可以使用有针对性的查找和替换来修复它。例如，当您知道连字符只出现在行尾时，将\"- \"替换为空字符串。要小心，因为这可能也会删除合法的连字符。更安全的方法是快速手动审查或在更高级的编辑器中使用正则表达式。工具提供干净的段落流，您将任何行尾连字符作为后续清理步骤处理。"
+      },
+      "faq21": {
+        "category": "一般",
+        "question": "工具是否与AI或外部服务交互？",
+        "answer": "不会。该工具是一个确定性的文本实用程序，只对您提供的文本起作用。它不调用AI模型，不向外部API发送内容，也不生成或重写文本。输出是通过对换行符和间距的简单本地转换产生的。这对透明度很重要，因为您可以准确预测内容将如何变化。\n\n如果您需要AI协助进行重写或总结，那是不同类型的工具。删除换行符仅用于格式化清理。它设计用于在修复由硬换行和复制的文本引起的布局问题时保持含义完整。这也意味着它不会绕过检测系统或对不可检测性做出任何声明。这纯粹是一个您可以信任和审核的格式化步骤。"
+      },
+      "faq22": {
+        "category": "工作流程",
+        "question": "这与手动编辑或查找替换相比如何？",
+        "answer": "手动编辑对于短段落可能有效，但对于长文档会变得缓慢且不一致。您必须搜索每个换行符，删除它，并确保间距正确。很容易遗漏换行或意外删除标点符号。查找替换命令可以批量删除换行符，但通常缺少保留段落换行或压缩额外空格的选项。\n\n此工具应用一致的规则集，并为您提供段落保留和间距的选项。它还提供了一个干净的输出区域供审查。工作流程更快、更可重复，特别是当您需要从多个源清理文本时。手动编辑仍然在细微决策中有其位置，但对于常规换行符清理，确定性工具更可靠，更容易在工作流程中解释。"
+      }
+    },
+    "faqHeading": "删除换行符 - 常见问题",
+    "faqIntro": "关于连接行、保留段落和避免格式化问题的详细答案。"
+  },
+  "HomePage": {
+    "seoName": "ChatGPT 文本清理工具",
+    "seoDescription": "清理和规范化 AI 生成的文本：移除隐藏的 Unicode 字符（ZWSP、NBSP、BOM），修复间距，保持段落完整，适用于 Word、Docs 和 SEO 友好的发布。",
+    "heroTitle": "ChatGPT 文本清理工具",
+    "heroSubtitle": "清理和规范化 AI 生成的文本：移除隐藏的 Unicode 字符（ZWSP、NBSP、BOM），修复间距，保持段落完整，适用于 Word、Docs 和 SEO 友好的发布。",
+    "cleanPrimary": "清理文本",
+    "cleanInputLabel": "粘贴您的混乱 AI 文本",
+    "cleanOutputLabel": "清理结果",
+    "cleanInputPlaceholder": "粘贴来自 ChatGPT、Gemini、Claude 的文本...",
+    "cleanOutputPlaceholder": "您的清理文本将在此显示。",
+    "mainTitle": "GPT CLEAN UP Tools - ChatGPT AI 文本清理工具（GPT CLEAN UP Tools / ChatGPT 文本清理）",
+    "aboutTitle": "关于 GPT CLEAN UP Tools",
+    "aboutP1": "GPT CLEAN UP Tools 是一个免费的基于浏览器的平台，专为 AI 时代的现实而创建。我们构建快速、私密的工具来解决实际问题：清理 AI 文本、移除隐藏字符、规范化格式、管理 PDF，以及改进日常写作和发布工作流程。GPT CLEAN UP Tools 上的所有内容都在您的浏览器中本地运行，因此您的内容永远不会离开您的设备。",
+    "aboutP2": "GPT CLEAN UP Tools 的目标很简单：为学生、专业人士、创作者和团队提供一个值得信赖的可靠平台。您不必在数十个网站之间切换，只需打开 GPT CLEAN UP Tools，粘贴您的内容，即可获得干净、兼容的结果，适用于学校门户、企业编辑器、CMS 和在线表单。我们的方法注重清晰而非炒作，注重隐私而非数据收集。",
+    "aboutP3": "平台的核心是 ChatGPT AI 文本清理工具，经常被搜索为 GPT CLEAN UP Tools 或 ChatGPT 文本清理。这个旗舰工具可以移除 AI 辅助写作中的不可见痕迹，同时保留含义、风格和语调。它不会改写或修改您的文字；它专注于技术清理，让您的工作保持原样。",
+    "cleanerTitle": "ChatGPT AI 文本清理工具（GPT CLEAN UP Tools / ChatGPT 文本清理）",
+    "cleanerP1": "当文本由大型语言模型生成或大量辅助时，复制粘贴可能会携带比可见文字更多的东西。零宽空格、不间断空格、字节顺序标记和零散的控制代码等字符可能会附加到文本上并导致微妙的问题。GPT CLEAN UP Tools 的 ChatGPT AI 文本清理工具会清除这些痕迹，使您的内容在任何地方都能像普通文本一样工作。",
+    "cleanerP2": "GPT CLEAN UP Tools 上的 ChatGPT 文本清理专注于四件事：移除隐藏字符、规范化标点符号、稳定间距和换行，以及输出编辑器安全的纯文本。结果是内容可以干净地粘贴到文档、学习系统、网站构建器、电子邮件客户端和发布平台中，而不会出现奇怪的间距或格式损坏。",
+    "cleanerP3": "许多读者询问 GPT CLEAN UP Tools 是否等同于绕过检测。它不是。GPT CLEAN UP Tools 仅执行技术清理。一些检测工具还会分析写作风格和上下文。清理文本可以减少可避免的技术信号，但这不能保证与第三方系统的任何结果。最安全、最持久的方法是将干净的格式与您自己的修订和声音相结合。",
+    "watermarksTitle": "什么是 AI 文本水印和隐藏痕迹？",
+    "watermarksP1": "AI 文本水印和隐藏痕迹是技术痕迹，通常在屏幕上不可见，但可被软件检测到。常见示例包括零宽空格（U+200B）、零宽非连接符（U+200C）、不间断空格（U+00A0）和字节顺序标记（U+FEFF）。它们还可能包括弯引号、长破折号和其他标点符号，这些符号以混淆严格文本字段的方式复制。",
+    "watermarksP2": "除了字符之外，复制粘贴还可能携带来自富文本编辑器的隐藏格式。例如，零散的 HTML 属性或剩余的 RTF 控制词可能在某些环境中存活，使粘贴的文本看起来与您输入的不同。GPT CLEAN UP Tools 专注于将文本返回到简单、可预测的基线，使其易于阅读、易于编辑和易于重用。",
+    "watermarksP3": "考虑技术信号的检测器可能会寻找可疑的不可见字符簇或一致的间距异常。GPT CLEAN UP Tools 使用 ChatGPT AI 文本清理工具和 ChatGPT 文本清理来移除这些技术信号。我们再次强调：移除隐藏字符与重写或掩盖作者身份不同。这是数字文本的基本卫生。",
+    "benefitsTitle": "使用 GPT CLEAN UP Tools 进行 ChatGPT 文本清理的好处",
+    "benefitsP1": "可读性和呈现立即改善。在一个编辑器中看起来很好的文本在另一个编辑器中可能会崩溃或拉伸。通过将标点符号和间距重置为可预测的默认值，GPT CLEAN UP Tools 有助于正确换行、一致显示引号，以及保持列表和标题稳定。",
+    "benefitsP2": "跨系统兼容性增加。如果您在笔记应用、学习门户、CMS 和 PDF 之间工作，GPT CLEAN UP Tools 的干净、简单的输出在粘贴到每个目标时都能可靠地工作。这意味着更少的最后一刻布局意外和更少的损坏表单。",
+    "benefitsP3": "计数和限制变得有意义。隐藏字符可能会夸大总数或破坏字符限制字段。在 ChatGPT 文本清理之后，您看到的数字就是系统计数的数字。这使得针对目标（如奖学金答案框或元描述）进行起草变得更加简单。",
+    "useCasesTitle": "谁使用 GPT CLEAN UP Tools - 实际用例",
+    "useCases1": "学生和学者使用 ChatGPT AI 文本清理工具提交可以干净地粘贴到学校门户的论文、回答和手稿。参考文献保持可读，段落换行保持完整，零散字符不会夸大计数。",
+    "useCases2": "专业人士和作家依赖 GPT CLEAN UP Tools 处理提案、简报、新闻通讯和博客草稿。干净的文本意味着在企业编辑器和内容管理系统中花费更少的时间来修复间距错误。",
+    "useCases3": "创作者和营销人员自信地发布标题和长格式内容。在 ChatGPT 文本清理之后，副本具有一致的声音，没有分散读者注意力或在移动设备上破坏布局的技术故障。",
+    "useCases4": "研究人员和开发人员粘贴文档和 README 内容，而不会出现无声的 Unicode 意外。移除不可打印字符可以防止文本与代码或数据格式交互时出现模糊的错误。",
+    "howToUseTitle": "如何使用 ChatGPT AI 文本清理工具",
+    "howToUse1": "复制您的内容。选择您使用 ChatGPT 等 AI 系统创建或改进的文本，并将其复制到剪贴板。",
+    "howToUse2": "粘贴到 GPT CLEAN UP Tools。打开 ChatGPT AI 文本清理工具页面，将您的文本粘贴到输入区域。",
+    "howToUse3": "选择选项。如果您想保留弯引号或长破折号，请禁用这些规范化。否则，保持默认设置开启。",
+    "howToUse4": "清理。单击清理文本以运行 GPT CLEAN UP Tools。操作会立即完成，因为 GPT CLEAN UP Tools 完全在您的浏览器中运行。",
+    "howToUse5": "查看并复制。浏览结果。如果您想要额外的换行或不同的破折号样式，请调整并再次单击清理。复制输出并将其粘贴到您需要的任何地方。",
+    "privacyTitle": "GPT CLEAN UP Tools 的隐私和安全性",
+    "privacyP1": "隐私是核心设计选择。GPT CLEAN UP Tools 在您的浏览器中本地处理文本。我们不上传内容到服务器，不存储输入，也不记录清理结果。这种架构为您提供速度和控制，无需权衡。",
+    "privacyP2": "由于处理是客户端进行的，您可以安全地使用 GPT CLEAN UP Tools 处理包含敏感信息的草稿。始终遵循您组织的政策，但请放心，ChatGPT AI 文本清理工具本身不会通过网络传输您的文本。",
+    "privacyP3": "透明度很重要。GPT CLEAN UP Tools 描述了工具更改的内容 - 移除隐藏 Unicode、规范化标点符号、清理间距 - 以便您了解输出是如何产生的，以及为什么在下游编辑器中表现可预测。",
+    "detectionTitle": "AI 检测、误报和实际限制",
+    "detectionP1": "许多机构和平台使用自动化系统来审查文本。一些系统专注于技术信号，而其他系统则分析措辞和结构。GPT CLEAN UP Tools 使用 ChatGPT AI 文本清理工具和 ChatGPT 文本清理来解决技术方面的问题。",
+    "detectionP2": "清理文本会移除可避免的混淆来源 - 如不可打印字符或不规则间距 - 这些可能会扭曲软件解释内容的方式。但是，基于风格的分析是分开的。最可靠的方法是将干净的格式与您自己的声音、示例和观点相结合。",
+    "detectionP3": "GPT CLEAN UP Tools 不声称也不试图改变风格。使命是清晰和兼容性。您仍然是作者；工具保持您的文本整洁。",
+    "bestPracticesTitle": "ChatGPT 文本清理后的最佳实践",
+    "bestPractices1": "添加一小轮个人修订。插入反映您上下文的具体细节、经验或参考。干净的格式加上个人上下文比单独使用任何一种都更有力。",
+    "bestPractices2": "根据受众调整语调。在 GPT CLEAN UP Tools 之后，调整简洁性或正式性，使文本符合课堂、客户或出版物的期望。",
+    "bestPractices3": "保留原件。由于 GPT CLEAN UP Tools 产生干净的输出，保留您的源草稿很有用，这样您以后可以比较、合并或恢复风格元素。",
+    "whyChooseTitle": "为什么选择 GPT CLEAN UP Tools 而不是单一用途网站",
+    "whyChooseP1": "GPT CLEAN UP Tools 不仅仅是单页实用程序。该平台是一个不断增长的 AI 时代工具库，旨在协同工作。除了 ChatGPT AI 文本清理工具，您还会找到空格移除工具、AI 水印检测器、字数统计实用程序、PDF 合并/拆分/压缩选项和搜索优化助手。",
+    "whyChooseP2": "这种广度很重要，因为实际工作流程很混乱。您可能需要在同一会话中清理间距、检查草稿、转换 PDF 和完善元描述。使用 GPT CLEAN UP Tools，您不必离开网站或接受跟踪即可完成此操作。",
+    "cleanInstantlyTitle": "使用我们的工具立即清理 ChatGPT 文本",
+    "cleanInstantlyP": "需要在发布或分享之前清理 ChatGPT 文本吗？我们的免费在线清理工具会移除隐藏字符、AI 水印、奇怪的间距和格式痕迹 - 让您的内容看起来人性化、一致且专业。粘贴您的文本，单击清理，几秒钟内即可完成。",
+    "whyCleanTitle": "为什么应该清理 ChatGPT 文本",
+    "whyClean1": "隐藏字符：零宽空格、不间断空格和零散的 Unicode 可能会破坏复制/粘贴、搜索或字数统计。",
+    "whyClean2": "格式噪音：额外的空行、奇怪的项目符号和 markdown 残留会降低可读性。",
+    "whyClean3": "一致性：干净的副本改善了 UX、SEO 以及向 Docs、Word、CMS 或电子邮件工具的移交。",
+    "howToCleanTitle": "如何清理 ChatGPT 文本（快速步骤）",
+    "howToClean1": "将您的 ChatGPT 输出粘贴到上面的框中。",
+    "howToClean2": "单击清理以自动清理 ChatGPT 文本。",
+    "howToClean3": "预览清理结果（之前/之后）。",
+    "howToClean4": "将最终文本复制或下载到您的编辑器、CMS 或文档中。",
+    "whatWeFixTitle": "我们的清理工具修复的内容",
+    "whatWeFix1": "移除零宽/不可打印字符（ZWSP、NBSP、BOM 等）。",
+    "whatWeFix2": "规范化空格、标点符号和换行。",
+    "whatWeFix3": "从复制的 ChatGPT 响应中移除奇怪的 HTML/markdown 残留。",
+    "whatWeFix4": "可选：修剪前导/尾随空格并折叠多个空行。",
+    "beforeAfterTitle": "之前 vs 之后（示例）",
+    "beforeLabel": "之前（原始 ChatGPT）",
+    "afterLabel": "之后（已清理）",
+    "relatedToolsTitle": "用于更清洁 AI 输出的相关工具",
+    "relatedToolsP": "对于最棘手的间距问题，请尝试我们的 ChatGPT 空格移除工具来积极移除重复或不可见的空格。想检查您的草稿是否仍包含 AI 模式？使用 ChatGPT 水印检测器扫描它。",
+    "relatedTools1": "ChatGPT 空格移除工具：立即移除重复/不可见空格并整理间距。",
+    "relatedTools2": "ChatGPT 水印检测器：扫描文本以查找 AI 水印模式和格式指纹。",
+    "bestPracticesTextTitle": "保持文本清洁的最佳实践",
+    "bestPracticesText1": "重新生成较短的 AI 输出，然后在编辑前清理 ChatGPT 文本。",
+    "bestPracticesText2": "使用标题（H2/H3）、短段落和列表以提高可读性。",
+    "bestPracticesText3": "在手动编辑后运行最终清理以移除任何新痕迹。",
+    "conclusionTitle": "结论",
+    "conclusionP": "GPT CLEAN UP 专为清晰、隐私和可靠的结果而构建。在工具之间复制内容时，请使用 ChatGPT AI 文本清理工具进行 GPT Clean Up 和 ChatGPT 文本清理。干净的格式可以防止可避免的问题，保留您的含义，并保持您的工作在系统之间可移植。将 GPT CLEAN UP 标记为 AI 时代干净、编辑器安全文本的基础。",
+    "learnMoreTitle": "了解更多",
+    "learnMoreText": "阅读我们关于保持 AI 文本整洁的指南：",
+    "learnMoreLink1": "为什么 ChatGPT 文本看起来混乱",
+    "learnMoreAnd": "和",
+    "learnMoreLink2": "ChatGPT Word 和 Docs 格式修复工具"
+  },
+  "ToolCard": {
+    "openTool": "打开工具"
+  },
+  "RelatedTools": {
+    "otherModelTools": "其他 {model} 工具",
+    "otherModeTools": "其他 {mode} 工具",
+    "otherWatermarkTools": "其他水印工具"
+  },
+  "SpaceRemoverTool": {
+    "inputLabel": "输入文本",
+    "inputPlaceholder": "粘贴要清理的文本...",
+    "outputLabel": "输出",
+    "outputPlaceholder": "清理后的文本将显示在这里。",
+    "outputHelper": "准备好后复制清理后的文本。",
+    "primaryAction": "删除空格"
+  },
+  "TextCleanerTool": {
+    "inputLabel": "输入文本",
+    "inputPlaceholder": "粘贴要清理的文本...",
+    "outputLabel": "输出",
+    "outputPlaceholder": "清理后的文本将显示在这里",
+    "clean": "清理文本",
+    "copyOutput": "复制输出",
+    "removeBlankLines": "删除多余的空白行",
+    "normalizeWhitespace": "规范化空白字符",
+    "unicodeNormalize": "Unicode 规范化 (NFKC)",
+    "removeZeroWidth": "删除零宽字符"
+  },
+  "WatermarkDetectorTool": {
+    "inputLabel": "输入文本",
+    "inputPlaceholder": "粘贴要检查的文本...",
+    "highlightedLabel": "高亮显示",
+    "highlightedPlaceholder": "检测到的水印将在此处以红色高亮显示。",
+    "scan": "扫描文本",
+    "results": "结果",
+    "copyReport": "复制报告",
+    "hiddenUnicode": "找到隐藏/不可见 Unicode？",
+    "suspiciousWhitespace": "可疑的空白字符模式？",
+    "repeatedPunctuation": "重复的标点符号模式？",
+    "zeroWidthNbspCount": "零宽 / NBSP 计数",
+    "bomCount": "BOM 计数",
+    "softHyphenCount": "软连字符计数",
+    "summarySuffix": "结果显示了可能的格式异常，不能保证作者身份或来源。"
+  },
+  "LineSpacingTool": {
+    "inputLabel": "输入文本",
+    "inputPlaceholder": "粘贴文本以调整行距...",
+    "outputLabel": "输出",
+    "outputPlaceholder": "调整行距后的文本将显示在这里。",
+    "outputHelper": "准备好后复制调整后的文本。",
+    "lineSpacing": "行距",
+    "single": "单倍",
+    "onePointFive": "1.5 倍",
+    "double": "双倍",
+    "custom": "自定义",
+    "customLineBreaks": "自定义换行",
+    "customHelp": "段落之间的换行数 (1-10)",
+    "adjust": "调整行距"
+  },
+  "ToolPage": {
+    "faqTitle": "常见问题",
+    "disclaimersTitle": "免责声明",
+    "disclaimer1": "此工具仅执行文本清理/分析。",
+    "disclaimer2": "结果仅供参考，不构成保证。",
+    "disclaimer3": "请负责任地使用并遵循平台/发布者政策。"
+  },
+  "SpaceRemoverPage": {
+    "title": "{modelName} 空格删除器",
+    "subtitle": "删除多余空格并整理行，生成干净、可粘贴的文本。",
+    "howItWorks": "工作原理",
+    "howItWorks1": "压缩重复的空格，同时保持换行完整。",
+    "howItWorks2": "修剪行首和行尾的空白字符，使段落更整洁。",
+    "howItWorks3": "规范化制表符和行尾，确保跨工具的一致格式。",
+    "whatCanCant": "能做什么 / 不能做什么",
+    "whatCanCant1": "可以减少由不一致间距引起的格式问题。",
+    "whatCanCant2": "无法验证作者身份、来源或模型身份。",
+    "whatCanCant3": "不是绕过工具；它只调整间距和格式。",
+    "whatCanCant4": "不构成保证；请负责任地使用并在发布前检查输出。",
+    "faqHeading": "{modelName} 空格删除器 - 常见问题",
+    "faqIntro": "此常见问题解答涵盖常见的间距问题、工具会更改什么以及不会更改什么。检查清理后的输出以确认间距和格式符合您的预期用途。"
+  },
+  "WatermarkDetectorPage": {
+    "title": "{modelName} 水印检测器",
+    "subtitle": "扫描文本以查找格式伪影，如隐藏的 Unicode 字符、空白字符模式和重复的标点符号。",
+    "howItWorks": "工作原理",
+    "howItWorks1": "扫描隐藏或不可见的 Unicode，包括零宽字符、BOM、NBSP 和软连字符。",
+    "howItWorks2": "检查空白字符结构问题，如多余的空格或混合的制表符/空格。",
+    "howItWorks3": "标记可能表示格式伪影的重复标点符号模式。",
+    "whatCanCant": "能做什么 / 不能做什么",
+    "whatCanCant1": "可以突出显示可能的伪影，以便您可以清理格式并提高一致性。",
+    "whatCanCant2": "无法确认作者身份或确定性地检测专有水印。",
+    "whatCanCant3": "不是绕过工具；它只报告信息信号。",
+    "whatCanCant4": "不构成保证；请负责任地使用并遵循相关政策。",
+    "faqHeading": "{modelName} 水印检测器 - 常见问题",
+    "faqIntroDefault": "这些答案解释了扫描检查的内容以及如何解释结果。检测器报告可能的格式伪影，而不是证明。"
+  },
+  "LineSpacingPage": {
+    "title": "{modelName} 行距工具",
+    "subtitle": "将行距调整为单倍、1.5 倍、双倍或自定义，以获得干净、专业的格式。",
+    "howItWorks": "工作原理",
+    "howItWorks1": "在行之间应用选定的间距，同时保持段落结构。",
+    "howItWorks2": "规范化换行，确保在不同编辑器中的一致格式。",
+    "howItWorks3": "允许自定义间距以满足特定的格式需求。",
+    "whatCanCant": "能做什么 / 不能做什么",
+    "whatCanCant1": "可以通过调整行距来提高可读性。",
+    "whatCanCant2": "无法修改内容或文本的含义。",
+    "whatCanCant3": "不是重写工具；它只调整间距。",
+    "whatCanCant4": "不构成保证；发布前请检查输出。",
+    "faqHeading": "{modelName} 行距工具 - 常见问题",
+    "faqIntro": "此常见问题解答解释了如何使用行距工具以及它可以如何改善文本的可读性。"
+  },
+  "AboutPage": {
+    "title": "关于 GPT CLEAN UP",
+    "p1": "GPT CLEAN UP 是一个用于清理和格式化 AI 生成文本的简单工具包。我们专注于删除混乱的间距、空行和粘贴来自 ChatGPT、Gemini、Claude 和其他模型的响应时出现的不可见字符。",
+    "p2": "这些工具在您的浏览器中运行 - 无需账户或登录。我们不隶属于 OpenAI 或 Google，此网站纯粹是为了在您处理 AI 内容时节省时间而构建的。",
+    "p3": "试试主要的",
+    "chatgptTextCleaner": "ChatGPT 文本清理器",
+    "or": "或专用的",
+    "spaceRemover": "空格删除器",
+    "ifSpacing": "如果间距是您最大的问题。"
+  },
+  "Site": {
+    "meta": {
+      "title": "GPT CLEAN UP - ChatGPT 文本清理器和 AI 水印移除器",
+      "description": "清理和规范化 AI 生成的文本。删除隐藏的 Unicode 字符，修复间距，并为 Word、Docs 和 CMS 准备干净的文本。"
+    }
+  },
+  "ContactPage": {
+    "seoTitle": "联系我们 | GPT CLEAN UP",
+    "seoDescription": "联系 GPT CLEAN UP。我们随时为您解答有关我们的 AI 文本清理工具的问题。",
+    "title": "联系我们",
+    "subtitle": "有问题或反馈？我们很乐意听取您的意见。",
+    "howToReach": "如何联系我们",
+    "emailLabel": "发送电子邮件至："
+  },
+  "BlogPage": {
+    "seoTitle": "GPT CLEAN UP 博客 - 修复混乱的 AI 文本和格式",
+    "seoDescription": "清理 AI 输出、修复格式问题以及为文档准备 ChatGPT 或 Gemini 文本的实用指南。"
+  },
+  "TermsPage": {
+    "metaTitle": "服务条款 | GPT CLEAN UP",
+    "metaDescription": "GPT CLEAN UP 工具的服务条款。",
+    "title": "服务条款",
+    "lastUpdated": "最后更新：2023 年 7 月 7 日",
+    "intro": "在使用 GPT CLEAN UP 网站和工具（\"服务\"）之前，请仔细阅读这些服务条款（\"条款\"）。",
+    "section1Title": "1. 接受条款",
+    "section1Text": "通过访问或使用服务，您同意受这些条款的约束。如果您不同意，必须立即停止使用服务。",
+    "section2Title": "2. 服务说明",
+    "section2Text1": "GPT CLEAN UP 提供基于浏览器的实用工具，旨在帮助用户改善文本的可读性、结构和格式。我们的工具主要在您的浏览器中运行，可能会删除格式不一致、间距问题、不可见字符或类似的伪影。",
+    "section2Text2": "服务按\"原样\"和\"可用\"提供。",
+    "section3Title": "3. 允许的使用",
+    "section3Text1": "您同意仅将服务用于合法、道德的目的。",
+    "section3Text2": "您不得：",
+    "section3Item1": "违反任何适用的法律或法规",
+    "section3Item2": "使用服务进行学术不诚实或剽窃",
+    "section3Item3": "使用服务歪曲作品作者或来源",
+    "section3Item4": "试图干扰服务的功能或安全性",
+    "section3Item5": "使用任何自动化工具（机器人、抓取器、爬虫）访问或提取数据",
+    "section3Item6": "试图以不公平或有害的方式逆向工程、复制或利用服务"
+  },
+  "Footer": {
+    "discoverMore": "发现更多工具：",
+    "aboutTitle": "关于 GPT CLEAN UP TOOLS",
+    "aboutBlurb": "免费的 AI 文本清理工具：清理文本、修复格式、去除隐藏字符与多余空格。",
+    "exploreTitle": "探索",
+    "topToolsTitle": "热门工具",
+    "legalTitle": "法律",
+    "links": {
+      "home": "首页",
+      "about": "关于我们",
+      "contact": "联系",
+      "blog": "博客"
+    },
+    "topTools": {
+      "chatgptSpaceRemover": "ChatGPT 空格清理",
+      "chatgptWatermarkRemover": "ChatGPT 水印移除",
+      "stripHtml": "去除 HTML"
+    },
+    "legal": {
+      "privacy": "隐私政策",
+      "terms": "服务条款",
+      "disclaimer": "免责声明",
+      "cookies": "Cookie 政策"
+    },
+    "copyrightPrefix": "© 2026",
+    "tagline": " - 可信赖的 ChatGPT 水印检测与 AI 文本清理工具，用于移除或修复零宽字符与隐藏的 Unicode 标记。",
+    "rights": "版权所有。"
+  },
+  "FAQ": {
+    "title": "常见问题",
+    "categories": {
+      "General": "一般",
+      "Technical": "技术",
+      "Usage": "使用",
+      "Detection and Limits": "检测和限制",
+      "Compatibility and Formats": "兼容性和格式",
+      "Privacy and Security": "隐私和安全",
+      "Advanced Workflow": "高级工作流",
+      "Troubleshooting and Comparison": "故障排除和比较",
+      "Additional Questions": "其他问题"
+    },
+    "home": {
+      "items": [
+        {
+          "question": "什么是 ChatGPT AI 文本清理器？",
+          "answer": "GPT CLEAN UP 的 ChatGPT AI 文本清理器是一个基于浏览器的实用工具，可执行 ChatGPT 文本清理（通常称为 GPT Clean Up）。它删除隐藏的 Unicode（如零宽空格、NBSP 和 BOM），在选中时规范化标点符号，并稳定间距，使文本行为可预测。与改写工具不同，GPT CLEAN UP 仅专注于技术清理，在提供编辑器安全的纯文本的同时保留您的意思和语气。"
+        },
+        {
+          "question": "GPT Clean Up 包括什么？",
+          "answer": "GPT CLEAN UP 上的 GPT Clean Up 包括四个核心步骤：删除不可见字符、规范化标点符号、压缩冗余空白并输出干净的纯文本。此序列有助于将论文、报告和帖子干净地粘贴到 LMS 和 CMS 编辑器中。ChatGPT AI 文本清理器专为速度、隐私和清晰度而设计。"
+        },
+        {
+          "question": "ChatGPT 文本清理是否等同于绕过检测器？",
+          "answer": "不是。GPT CLEAN UP 提供技术清理，删除可避免的伪影；它不试图模仿人类风格。一些自动化系统会分析超出格式的写作模式。ChatGPT 文本清理减少技术噪音，使您的内容更清晰、更兼容。"
+        },
+        {
+          "question": "为什么 AI 辅助文本会携带隐藏字符？",
+          "answer": "在富文本编辑器之间复制粘贴可能会带来不可打印的 Unicode 和隐藏格式。GPT CLEAN UP 使用 ChatGPT AI 文本清理器定位这些伪影，使您的文本稳定、可读并在平台间可移植。这是数字写作的实用卫生，而不是作者身份的替代品。"
+        },
+        {
+          "question": "谁应该使用 GPT CLEAN UP？",
+          "answer": "需要干净、可靠文本的学生、专业人士、创作者、研究人员和团队都可以从 GPT CLEAN UP 中受益。如果您在应用程序、编辑器或门户之间移动内容，ChatGPT 文本清理可防止间距故障和不可见字符破坏您的工作。"
+        },
+        {
+          "question": "6. 什么是零宽字符，为什么要删除它们？",
+          "answer": "零宽字符（如 U+200B）在普通编辑器中不可见，但可能会干扰计数、换行和验证。GPT CLEAN UP 在 GPT Clean Up 期间删除它们，使 ChatGPT AI 文本清理器输出系统一致解释的文本。当您粘贴到表单、文档或代码块时，这提高了可靠性。"
+        },
+        {
+          "question": "7. 该工具如何处理 NBSP (U+00A0)？",
+          "answer": "不间断空格会阻止自然换行并可能产生奇怪的间隙。GPT CLEAN UP 在 ChatGPT 文本清理期间将 NBSP 替换为标准空格，使段落正常流动。目标是可预测、可读的输出，没有不需要的布局问题。"
+        },
+        {
+          "question": "8. 标点符号默认会更改吗？",
+          "answer": "您可以在 GPT CLEAN UP 中控制标点符号规范化。如果启用，ChatGPT AI 文本清理器会将弯引号转换为直引号，将 em/en 破折号转换为连字符。如果您想保留弯引号或 em 破折号，请在 GPT Clean Up 之前关闭规范化。"
+        },
+        {
+          "question": "9. 该工具是否保留代码和 Markdown？",
+          "answer": "是的。GPT CLEAN UP 针对不可打印的 Unicode 和隐藏格式，同时避免语法字符。因此，ChatGPT 文本清理保持代码标记和 Markdown 结构完整，同时提高复制粘贴的可靠性。"
+        },
+        {
+          "question": "10. BOM (U+FEFF) 和杂散控制代码呢？",
+          "answer": "GPT CLEAN UP 上的 ChatGPT AI 文本清理器删除可能混淆系统的 BOM 和模糊控制代码。这是 GPT Clean Up 序列的一部分，确保干净的纯文本准备好用于任何目的地。"
+        },
+        {
+          "question": "11. 如何运行 ChatGPT 文本清理？",
+          "answer": "打开 GPT CLEAN UP，粘贴您的草稿，选择规范化选项，然后单击清理。ChatGPT AI 文本清理器立即运行，因为处理在您的浏览器本地进行。复制输出并将其粘贴到您需要的位置。"
+        },
+        {
+          "question": "12. 有最大长度吗？",
+          "answer": "现代浏览器可以很好地处理长输入。GPT CLEAN UP 针对论文和报告进行了调整；如果您遇到实际限制，请拆分文本，运行 GPT Clean Up 两次，然后重新连接输出。"
+        },
+        {
+          "question": "13. 它可以在手机和平板电脑上使用吗？",
+          "answer": "是的。GPT CLEAN UP 支持现代移动浏览器，因此您可以从任何地方执行 ChatGPT 文本清理。界面足够简单，适合快速、随时使用。"
+        },
+        {
+          "question": "14. 我可以自定义清理规则吗？",
+          "answer": "是的。GPT CLEAN UP 允许您切换标点符号规范化和间距行为。这意味着 ChatGPT AI 文本清理器可以根据您的目标编辑器严格或温和。"
+        },
+        {
+          "question": "15. Turnitin 在清理后仍会标记我的写作吗？",
+          "answer": "GPT CLEAN UP 通过使用 ChatGPT 文本清理删除隐藏的 Unicode 和奇怪的间距来减少技术信号。一些系统还分析风格，清理不会改变这一点。最佳实践是将 GPT Clean Up 与反映您观点的真实编辑相结合。"
+        },
+        {
+          "question": "16. GPTZero 和类似工具呢？",
+          "answer": "GPT CLEAN UP 处理可能影响自动检查的技术伪影；它不试图模仿人类风格。ChatGPT AI 文本清理器专注于清晰度、兼容性和可预测的格式。"
+        },
+        {
+          "question": "17. 完全绕过是否现实？",
+          "answer": "没有解决方案可以保证这一点。GPT CLEAN UP 提供实用、透明的清理，使您的文本在技术上健全。真实的写作选择仍然取决于您。"
+        },
+        {
+          "question": "18. GPT CLEAN UP 是否支持多语言文本？",
+          "answer": "是的。GPT CLEAN UP 在 ChatGPT 文本清理期间保留大多数 Unicode 脚本中的合法字符，同时删除不可打印的字符。这使使用变音符号、连字或 RTL 方向的语言的内容保持可读。"
+        },
+        {
+          "question": "19. 超链接和列表会在清理后保留吗？",
+          "answer": "是的。ChatGPT AI 文本清理器专注于字符级伪影和间距清理。项目符号列表、编号步骤和链接在纯文本中仍然可用。"
+        },
+        {
+          "question": "20. 我可以清理 JSON、CSV、XML 或 YAML 吗？",
+          "answer": "是的。GPT CLEAN UP 删除隐藏字符而不触及结构语法，因此 ChatGPT 文本清理有助于数据保持可解析。"
+        },
+        {
+          "question": "21. 输出是否对 SEO 友好？",
+          "answer": "GPT CLEAN UP 的更清洁文本通常可以提高可爬行性并减少编码意外。GPT Clean Up 不会改变您的主题；它确保文本按预期呈现。"
+        },
+        {
+          "question": "22. 我的文本是否会上传到服务器？",
+          "answer": "不会。GPT CLEAN UP 在您的浏览器本地运行 ChatGPT AI 文本清理器。ChatGPT 文本清理不会传输您的文本或将其存储在我们的服务器上。"
+        },
+        {
+          "question": "23. 您是否记录或分析内容？",
+          "answer": "不会。GPT CLEAN UP 不记录输入或输出；GPT Clean Up 是为隐私和速度而设计的客户端操作。"
+        },
+        {
+          "question": "24. 我可以将其用于机密草稿吗？",
+          "answer": "可以。因为 GPT CLEAN UP 是本地的，ChatGPT AI 文本清理器永远不会通过网络发送您的机密文本。请遵循您组织的政策并保留原始文件以供记录。"
+        },
+        {
+          "question": "25. 我可以保留弯引号和 em 破折号吗？",
+          "answer": "可以。在 GPT CLEAN UP 中，您可以禁用标点符号规范化，使 ChatGPT 文本清理保持这些字符完整。如果您需要最大兼容性，请启用直引号和连字符的规范化。"
+        },
+        {
+          "question": "26. 我可以比较前后吗？",
+          "answer": "您可以对照源文件检查清理后的输出以了解更改。GPT CLEAN UP 使 ChatGPT 文本清理透明且可预测。"
+        },
+        {
+          "question": "27. 您是否支持批量或 API 访问？",
+          "answer": "我们正在探索批处理选项。目前，GPT CLEAN UP 强调浏览器内 GPT Clean Up 的可靠性和隐私性。"
+        },
+        {
+          "question": "28. 我的间距在另一个编辑器中仍然看起来很奇怪 - 为什么？",
+          "answer": "某些编辑器在粘贴时会自动格式化。尝试以纯文本粘贴或使用调整后的间距重新运行 GPT CLEAN UP。ChatGPT 文本清理删除伪影，但下游编辑器可能会施加额外的规则。"
+        },
+        {
+          "question": "29. GPT CLEAN UP 与单一用途网站有何不同？",
+          "answer": "GPT CLEAN UP 是一个平台。除了 ChatGPT AI 文本清理器，您还会找到间距工具、检测器、PDF 和 SEO 助手等。该生态系统支持端到端工作流，用于干净、可移植的文本。"
+        },
+        {
+          "question": "30. 我可以在哪里请求功能？",
+          "answer": "使用 GPT CLEAN UP 上的联系链接，建议改进 ChatGPT AI 文本清理器和整体 GPT Clean Up 体验。"
+        },
+        {
+          "question": "31. GPT CLEAN UP 可以为特定编辑器自定义 ChatGPT 文本清理吗？",
+          "answer": "可以。GPT CLEAN UP 允许您调整规范化，使 ChatGPT AI 文本清理器与严格的编辑器和表单字段对齐。您可以保留弯引号、保留 em 破折号，或优先使用 ASCII 以获得最大兼容性。这种灵活性确保 GPT Clean Up 生成的文本在您粘贴的地方表现正确。"
+        },
+        {
+          "question": "32. GPT CLEAN UP 与 Quillbot 等改写工具或 gpt clean up 工作流中的改写工具有何不同？",
+          "answer": "改写工具会重写句子并可能改变含义。GPT CLEAN UP 专注于 AI 文本清理，规范化类似水印的标记模式，同时保留您的消息、引用和锚点。这种方法比大量改写更支持 SEO 一致性和更安全的编辑。"
+        },
+        {
+          "question": "33. ChatGPT AI 文本清理器可以帮助处理来自 Jasper（原 Jarvis）、Copy.ai、Writesonic 或 Sudowrite 的内容吗？",
+          "answer": "可以。许多现代助手共享统计特征。GPT CLEAN UP 对使用 Jasper（Jarvis）、Copy.ai、Writesonic、Sudowrite、Claude、Gemini、基于 Llama 的工具等创建的草稿执行 gpt clean up，减少可检测的标记，同时保持您的声音。"
+        },
+        {
+          "question": "34. AI 文本清理针对的主要 AI '水印'类型是什么？",
+          "answer": "实际上，大多数标记来自标记规律性、重复、奇怪的 Unicode/零宽字符、间距伪影和过度模板化的措辞。GPT CLEAN UP 在 gpt clean up 期间专注于这些模式，而不彻底改变您的副本。"
+        },
+        {
+          "question": "35. GPT clean up 会改变品牌风格指南、语调或数字数据吗？",
+          "answer": "不会。ChatGPT AI 文本清理器保留语调、品牌术语、数字和引用。在 AI 文本清理后，始终校对数字表格和内联统计数据以验证格式。"
+        },
+        {
+          "question": "37. GPT CLEAN UP 是否有助于处理 Gemini/Bard、Claude 3、Llama 3 和 Mistral 的输出？",
+          "answer": "可以。我们的 AI 文本清理规范化流行模型（Gemini、Claude、Llama、Mistral 等）中的常见统计模式。为了获得最佳结果，在 gpt clean up 后添加轻微的人工编辑。"
+        },
+        {
+          "question": "38. 我可以在 HTML/Markdown 上使用 gpt clean up 而不破坏标签吗？",
+          "answer": "可以。粘贴内容并运行 AI 文本清理。语义保持完整，同时间距和标记规律性被规范化。清理后始终在 CMS 中预览。"
+        },
+        {
+          "question": "39. 对于非常长的文档或电子书，我应该考虑哪些限制？",
+          "answer": "为了稳定性，每次处理 8-12k 字符。分割章节，对每个章节运行 ChatGPT AI 文本清理器，然后合并。这使 gpt clean up 保持快速和一致。"
+        },
+        {
+          "question": "40. GPT CLEAN UP 是否有助于减少来自 GPTZero、Originality.ai 或 Turnitin 等检测器的误报？",
+          "answer": "它通常通过规范化水印模式来降低 AI 可能性信号，但没有工具可以保证绕过。将 AI 文本清理与独特的见解、引用和编辑相结合以获得最佳结果。"
+        },
+        {
+          "question": "41. 我应该在进行 SEO 优化（标题、链接、架构）之前还是之后运行 gpt clean up？",
+          "answer": "首先运行 ChatGPT AI 文本清理器以稳定文本，然后优化标题、内部链接和架构。这使 SEO 更改保持完整，同时最小化 AI 模式。"
+        },
+        {
+          "question": "42. 使用 Jasper（Jarvis）或 Copy.ai 草稿的最佳工作流程是什么？",
+          "answer": "生成您的草稿。2) 在 GPT CLEAN UP 中运行 gpt clean up。3) 添加品牌语调和示例。4) 优化 SEO。5) 发布。这种分层流程保持真实性并减少 AI 签名。"
+        },
+        {
+          "question": "43. GPT CLEAN UP 是否可以在清理 AI 辅助草稿时支持学术诚信？",
+          "answer": "可以。GPT CLEAN UP 删除可能触发误报的技术伪影，但学术诚信需要适当的归属、原始分析和遵守您机构的政策。将 ChatGPT AI 文本清理器用作透明工作流的一部分，包括引用、事实核查和您自己的批判性思维。"
+        },
+        {
+          "question": "GPT clean up 会提高可读性还是只删除模式？",
+          "answer": "目标是自然的节奏，而不是重写。许多用户报告在使用 ChatGPT AI 文本清理器后可读性更好，因为重复序列和间距异常减少了。"
+        },
+        {
+          "question": "我可以安全地将该工具用于法律、医疗或金融文本吗？",
+          "answer": "可以，但合规性仍然是您的责任。使用 AI 文本清理来规范化结构，然后让领域专家审查事实和语言。"
+        },
+        {
+          "question": "GPT CLEAN UP 是否保留锚点、脚注和交叉引用？",
+          "answer": "是的。清理器针对统计信号和隐藏字符，而不是您的引用。在 gpt clean up 后重新检查锚文本和编号。"
+        },
+        {
+          "question": "GPT CLEAN UP 如何处理多语言草稿（西班牙语、法语、德语、阿拉伯语等）？",
+          "answer": "它支持多种语言。标记分布因语言而异，因此始终浏览清理后的文本以确认习语和标点符号。"
+        },
+        {
+          "question": "GPT clean up 可以清理 AI 生成的代码注释、README 或技术文档吗？",
+          "answer": "可以。它保持代码块完整，同时平滑注释中的机器人措辞。在使用 ChatGPT AI 文本清理器后，运行 linters/测试以确认格式。"
+        },
+        {
+          "question": "对于高度模板化的 AI 内容，现实的期望是什么？",
+          "answer": "AI 文本清理减少了重复性和标记，但模板化的草稿仍然可能感觉通用。添加示例、数据和分析以恢复原创性。"
+        },
+        {
+          "question": "GPT CLEAN UP 是否删除零宽字符、不间断空格和奇怪的 Unicode？",
+          "answer": "是的。该工具规范化零宽、nbsp 和类似的隐藏标记，这些标记经常被检测器捕获，支持更安全的 gpt clean up。"
+        },
+        {
+          "question": "如何将 AI 文本清理与人工编辑相结合以获得最佳结果？",
+          "answer": "首先使用 ChatGPT AI 文本清理器规范化模式，然后为清晰度进行优化，添加来源并确保品牌声音。这种两步方法产生最自然的结果。"
+        },
+        {
+          "question": "GPT CLEAN UP 可以帮助本地化团队后翻译来自 LLM 的草稿吗？",
+          "answer": "可以。使用 gpt clean up 进行后 MT 清理可以减轻重复措辞和间距伪影。本地编辑仍应最终确定习语和风格。"
+        },
+        {
+          "question": "GPT clean up 会影响 SEO 的关键字顺序、结构化数据或元标记吗？",
+          "answer": "不会。GPT CLEAN UP 避免修改预期的关键字顺序或架构属性，同时规范化重复模式。"
+        },
+        {
+          "question": "机构应如何大规模使用 GPT CLEAN UP？",
+          "answer": "并行对部分运行 AI 文本清理，维护内部检查清单，并考虑即将推出的 API/批处理功能。这标准化了跨帐户的声音。"
+        },
+        {
+          "question": "GPT CLEAN UP 是需要客户端隐私的团队的 gptcleanup 替代方案吗？",
+          "answer": "是的。许多用户将其采用为 gptcleanup 替代方案，因为它具有客户端处理和针对 ChatGPT AI 文本清理器工作流的快速 UI。"
+        },
+        {
+          "question": "GPT clean up 在 Claude、Gemini、Llama 和 Mistral 输出上是否同样有效？",
+          "answer": "模式因模型而异，但 GPT CLEAN UP 针对跨生态系统的常见信号。始终审查编辑的段落以了解细微差别和领域准确性。"
+        },
+        {
+          "question": "我可以使用 GPT CLEAN UP 为市场或 UGC 平台准备内容吗？",
+          "answer": "可以。使用 AI 文本清理规范化草稿，然后根据平台政策在提交前自定义语调和披露。"
+        },
+        {
+          "question": "如果清理后检测器仍然标记我的文本，我应该更改什么？",
+          "answer": "增加人工编辑：改变句子长度，添加原始示例/数据，并减少模板化措辞。如果间距伪影持续存在，请重新运行 gpt clean up。"
+        },
+        {
+          "question": "GPT CLEAN UP 可以用于知识库和帮助中心吗？",
+          "answer": "可以。它有助于统一语调，同时保留步骤和代码片段。在 AI 文本清理后，验证链接、截图和版本号。"
+        },
+        {
+          "question": "AI 文本清理可以修复哪些常见的格式问题？",
+          "answer": "隐藏符号、奇怪的间距、流氓属性和重复的功能词。GPT CLEAN UP 在尊重您的结构的同时解决这些问题。"
+        },
+        {
+          "question": "GPT CLEAN UP 是否支持从右到左的语言，如阿拉伯语或希伯来语？",
+          "answer": "是的。在 gpt clean up 后，在 CMS 预览中确认方向性和标点间距以确保布局完整性。"
+        },
+        {
+          "question": "ChatGPT AI 文本清理器对社交媒体标题和广告有用吗？",
+          "answer": "是的。短格式副本受益于规范化，以去除机器人节奏，同时保留 CTA 和品牌声音。"
+        },
+        {
+          "question": "GPT clean up 会更改对内部链接至关重要的锚文本吗？",
+          "answer": "不会。AI 文本清理保留锚点和链接目标。发布后与您的 SEO 插件重新确认。"
+        },
+        {
+          "question": "清理器多久更新一次以跟踪新的水印或检测方法？",
+          "answer": "我们定期迭代，以便 GPT CLEAN UP 在 LLM 和检测器之间的水印/检测演变时保持有效。"
+        },
+        {
+          "question": "我可以预览在 gpt clean up 期间确切发生了什么变化吗？",
+          "answer": "可以。使用前后面板查看 ChatGPT AI 文本清理器规范化的内容，同时保持您的消息完整。"
+        },
+        {
+          "question": "是否计划浏览器扩展或 VS Code 集成？",
+          "answer": "是的。轻量级扩展和编辑器集成正在路线图上，以简化 AI 文本清理。"
+        },
+        {
+          "question": "GPT clean up 会帮助获得高级出版物的编辑接受吗？",
+          "answer": "它通常改善节奏并减少重复措辞。编辑仍然期望在清理之外有强有力的报告、声音和来源。"
+        },
+        {
+          "question": "GPT CLEAN UP 是否与 Perplexity、You.com 或 Neeva 风格的助手一起工作？",
+          "answer": "是的。您可以对这些工具的摘要和引用运行 AI 文本清理，然后验证链接和归属。"
+        },
+        {
+          "question": "我应该考虑哪些免责声明用于学术或合规上下文？",
+          "answer": "在需要的地方披露 AI 协助，正确引用来源，并将 gpt clean up 视为格式化工具，而不是检测器绕过。"
+        },
+        {
+          "question": "AI 文本清理会保留来自 LLM 输出的标题、表格和列表吗？",
+          "answer": "是的。它针对统计模式和隐藏字符，而不是您的文档结构。粘贴后检查表格对齐。"
+        },
+        {
+          "question": "GPT CLEAN UP 是否有助于多语言 SEO（hreflang 站点）？",
+          "answer": "是的 - 使用 gpt clean up 按语言环境规范化草稿，然后本地编辑为每个市场最终确定习语和合规性。"
+        },
+        {
+          "question": "我应该在企业编辑传递（风格、法律、品牌）之前还是之后运行清理？",
+          "answer": "首先运行 ChatGPT AI 文本清理器以稳定文本。随后的法律/品牌编辑然后保持完整，不会重新引入伪影。"
+        },
+        {
+          "question": "GPT CLEAN UP 可以用于转录、播客和采访记录吗？",
+          "answer": "可以。AI 文本清理平滑重复的填充词和间距问题。人工编辑仍应制作叙事流程和上下文。"
+        },
+        {
+          "question": "该工具是否影响结构化内容，如 FAQ、词汇表或 API 文档？",
+          "answer": "它保留结构。对于 FAQ 和词汇表，在每个条目上运行 gpt clean up 以防止漂移，同时保持关键字。"
+        },
+        {
+          "question": "是否存在过度清理或失去风格风格的风险？",
+          "answer": "最小。清理器旨在进行微妙的规范化。如果风格感觉平淡，在 AI 文本清理后添加人工变化和示例。"
+        },
+        {
+          "question": "GPT CLEAN UP 与手动查找和替换零宽或 nbsp 伪影相比如何？",
+          "answer": "手动清理会遗漏更深的标记模式。GPT CLEAN UP 在一次传递中自动执行隐藏字符删除和统计规范化。"
+        },
+        {
+          "question": "GPT CLEAN UP 可以协助合规性文档（GDPR、HIPAA、SOC 2）吗？",
+          "answer": "它可以规范化起草伪影，但合规准确性和法律审查至关重要。仅将 gpt clean up 视为格式化辅助工具。"
+        },
+        {
+          "question": "对于高度公式化的 AI 产品评论，我可以期待哪些改进？",
+          "answer": "减少重复措辞和更自然的流程。在清理后添加独特的测试笔记和照片以提高可信度和排名。"
+        },
+        {
+          "question": "清理器是否适用于混合人类和 AI 文本的混合草稿？",
+          "answer": "是的。GPT CLEAN UP 专为混合作者身份而设计。AI 文本清理带来一致性，同时保留人工编辑。"
+        },
+        {
+          "question": "GPT CLEAN UP 是使用 Jasper（Jarvis）和 Copy.ai 堆栈的机构的可行 gptcleanup 替代方案吗？",
+          "answer": "是的。机构将其用作 gptcleanup 替代方案，因为它具有客户端隐私、速度以及在大型内容管道中使用 ChatGPT AI 文本清理器的自然结果。"
+        },
+        {
+          "question": "\"清理 ChatGPT 文本\"实际上做什么？",
+          "answer": "它删除不可见字符，规范化间距/换行，并去除剩余的 HTML/markdown，使您的文本易于复制、搜索和发布。"
+        },
+        {
+          "question": "清理会改变我的意思或语调吗？",
+          "answer": "不会，清理器只针对格式噪音和隐藏字符。您的文字保持不变。"
+        },
+        {
+          "question": "我需要安装什么吗？",
+          "answer": "不需要，它直接在您的浏览器中运行。粘贴、清理、复制 - 完成。"
+        },
+        {
+          "question": "该工具对敏感草稿安全吗？",
+          "answer": "是的，处理是本地到您的会话。对于高度敏感的数据，避免粘贴到任何在线工具中。"
+        },
+        {
+          "question": "这可以帮助处理 AI 水印吗？",
+          "answer": "清理会删除 AI 输出中经常留下的常见非打印伪影和格式指纹，这有助于提供干净、专业的文本。"
+        }
+      ]
+    }
+  },
+  "NotFound": {
+    "badge": "未找到",
+    "title": "页面未找到",
+    "subtitle": "您要查找的页面不存在或已被移动。",
+    "primaryCta": "返回首页",
+    "secondaryCta": "浏览工具",
+    "tipLabel": "提示",
+    "tipText": "检查 URL 是否有拼写错误，或使用搜索功能查找您需要的内容。",
+    "logLabel": "错误日志",
+    "logStatus": "404",
+    "logMessage": "路由未找到。无法定位请求的页面。",
+    "suggestionsTitle": "热门工具",
+    "viewAll": "查看所有工具"
+  }
+}

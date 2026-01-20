@@ -1,3 +1,5 @@
+'use client';
+
 import type { ReactNode } from 'react';
 import FAQSection from '../FAQSection';
 import FaqJsonLd from '../FaqJsonLd';
@@ -9,6 +11,7 @@ import { siteUrl } from '../../lib/schema/site';
 import { RelatedTools } from '../tool/RelatedTools';
 import AdSenseSlot from '../ads/AdSenseSlot';
 import BelowToolAd from '../ads/BelowToolAd';
+import { useI18n } from '../../lib/client-i18n';
 
 type Props = {
   modelName: string;
@@ -31,8 +34,9 @@ function RailAd({ side }: { side: 'left' | 'right' }) {
 }
 
 export default function WatermarkDetectorPage({ modelName, modelSlug, faqItems, content, faqIntro }: Props) {
+  const { t } = useI18n();
   const url = `${siteUrl}/${modelSlug}-watermark-detector/`;
-  const title = `${modelName} Watermark Detector`;
+  const title = t('WatermarkDetectorPage.title', { modelName });
   const description = `Inspect ${modelName} text for possible formatting artifacts, hidden Unicode, and whitespace patterns.`;
 
   return (
@@ -45,7 +49,7 @@ export default function WatermarkDetectorPage({ modelName, modelSlug, faqItems, 
           <h1 className="text-2xl font-semibold text-slate-900 md:text-3xl">{title}</h1>
           <div className="space-y-2">
             <p className="max-w-2xl mx-auto text-sm text-slate-700 md:text-[15px]">
-              Scan text for formatting artifacts like hidden Unicode characters, whitespace patterns, and repeated punctuation marks.
+              {t('WatermarkDetectorPage.subtitle')}
             </p>
           </div>
         </section>
@@ -65,34 +69,33 @@ export default function WatermarkDetectorPage({ modelName, modelSlug, faqItems, 
         ) : (
           <section className="space-y-6 mt-10">
             <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 space-y-4">
-              <h2 className="text-xl font-semibold text-slate-900">How it works</h2>
+              <h2 className="text-xl font-semibold text-slate-900">{t('WatermarkDetectorPage.howItWorks')}</h2>
               <ul className="list-disc list-inside space-y-1 text-slate-700">
-                <li>Scans for hidden or invisible Unicode, including zero-width characters, BOM, NBSP, and soft hyphens.</li>
-                <li>Checks for whitespace structure issues like excess spacing or mixed tabs/spaces.</li>
-                <li>Flags repeated punctuation patterns that can indicate formatting artifacts.</li>
+                <li>{t('WatermarkDetectorPage.howItWorks1')}</li>
+                <li>{t('WatermarkDetectorPage.howItWorks2')}</li>
+                <li>{t('WatermarkDetectorPage.howItWorks3')}</li>
               </ul>
             </div>
             <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 space-y-4">
-              <h2 className="text-xl font-semibold text-slate-900">What it can / can&apos;t do</h2>
+              <h2 className="text-xl font-semibold text-slate-900">{t('WatermarkDetectorPage.whatCanCant')}</h2>
               <ul className="list-disc list-inside space-y-1 text-slate-700">
-                <li>Can highlight possible artifacts so you can clean formatting and improve consistency.</li>
-                <li>Can&apos;t confirm authorship or detect proprietary watermarks with certainty.</li>
-                <li>Not a bypass tool; it only reports informational signals.</li>
-                <li>Not a guarantee; use responsibly and follow relevant policies.</li>
+                <li>{t('WatermarkDetectorPage.whatCanCant1')}</li>
+                <li>{t('WatermarkDetectorPage.whatCanCant2')}</li>
+                <li>{t('WatermarkDetectorPage.whatCanCant3')}</li>
+                <li>{t('WatermarkDetectorPage.whatCanCant4')}</li>
               </ul>
             </div>
           </section>
         )}
 
         <div className="mt-10 space-y-3">
-          <h2 className="text-2xl font-semibold text-slate-900">{modelName} Watermark Detector - Frequently Asked Questions</h2>
+          <h2 className="text-2xl font-semibold text-slate-900">{t('WatermarkDetectorPage.faqHeading', { modelName })}</h2>
           <p className="text-slate-700">
-            {faqIntro ??
-              'These answers explain what the scan checks and how to interpret results. The detector reports possible formatting artifacts, not proof.'}
+            {faqIntro ?? t('WatermarkDetectorPage.faqIntroDefault')}
           </p>
         </div>
 
-        <FAQSection items={faqItems} />
+        <FAQSection items={faqItems} translationPrefix="FAQ.watermarkDetector" />
         <FaqJsonLd faqs={faqItems} />
       </div>
     </div>

@@ -3,6 +3,8 @@ import { buildArticleMeta } from '@/lib/seo-meta';
 import { JsonLd } from '@/components/JsonLd';
 import { blogPostingSchema } from '@/lib/schema/blog';
 import AdSenseSlot from '../../../components/ads/AdSenseSlot';
+import { getServerLocale } from '@/lib/server-i18n';
+import type { Metadata } from 'next';
 
 const urlPath = '/blog/comprehensive-guide-to-cleaning-ai-text-before-publishing';
 const title = 'Comprehensive Guide to Cleaning AI Text Before Publishing | GPT CLEAN UP';
@@ -10,11 +12,15 @@ const headline = 'Comprehensive Guide to Cleaning AI Text Before Publishing';
 const description =
   'A complete 2026 workflow to sanitize AI text: remove invisible Unicode, normalize whitespace, rebuild structure, and publish SEO-safe content.';
 
-export const metadata = buildArticleMeta({
-  title,
-  description,
-  urlPath,
-});
+export async function generateMetadata(): Promise<Metadata> {
+  const { locale } = await getServerLocale();
+  return buildArticleMeta({
+    title,
+    description,
+    urlPath,
+    locale,
+  });
+}
 
 export default function ComprehensiveGuideCleaningAITextPage() {
   return (

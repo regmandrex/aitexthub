@@ -11,18 +11,33 @@ import { buildToolMeta } from '@/lib/seo-meta';
 import { siteUrl } from '@/lib/schema/site';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
+import { getServerLocale } from '@/lib/server-i18n';
+import { createServerT } from '@/lib/server-t';
 
 const toolSlug = 'utf8-encode';
-const tool = getToolBySlug(toolSlug);
-const description = tool?.shortDescription ?? 'Encode text into UTF-8 byte values for accurate transport.';
-const title = tool?.title ?? 'UTF-8 Encode';
 
-export const metadata: Metadata = buildToolMeta({
-  title,
-  description,
-  seoTitle: tool?.seoTitle,
-  urlPath: `/${toolSlug}`,
-});
+export async function generateMetadata(): Promise<Metadata> {
+  const { locale } = await getServerLocale();
+  const t = await createServerT(locale);
+  const tool = getToolBySlug(toolSlug);
+  const toolKey = toolSlug === '' ? 'home' : toolSlug;
+  
+  const title = t(`Tools.${toolKey}.title`) !== `Tools.${toolKey}.title` 
+    ? t(`Tools.${toolKey}.title`) 
+    : tool?.title ?? 'UTF-8 Encode';
+  const description = t(`Tools.${toolKey}.description`) !== `Tools.${toolKey}.description`
+    ? t(`Tools.${toolKey}.description`)
+    : tool?.shortDescription ?? 'Encode text into UTF-8 byte values for accurate transport.';
+  const seoTitle = tool?.seoTitle ? (t(`Tools.${toolKey}.seoTitle`) !== `Tools.${toolKey}.seoTitle` ? t(`Tools.${toolKey}.seoTitle`) : tool.seoTitle) : undefined;
+  
+  return buildToolMeta({
+    title,
+    description,
+    seoTitle,
+    urlPath: `/${toolSlug}`,
+    locale,
+  });
+}
 
 const faqs: FaqItem[] = [
   {
@@ -450,26 +465,36 @@ const hex = Array.from(bytes, (b) => b.toString(16).padStart(2, '0')).join(' ');
   </section>
 );
 
-export default function Utf8EncodePage() {
+export default async function Utf8EncodePage() {
+  const { locale } = await getServerLocale();
+  const t = await createServerT(locale);
   const toolData = getToolBySlug(toolSlug);
   if (!toolData) return notFound();
+
+  const toolKey = toolSlug === '' ? 'home' : toolSlug;
+  const title = t(`Tools.${toolKey}.title`) !== `Tools.${toolKey}.title` 
+    ? t(`Tools.${toolKey}.title`) 
+    : toolData.title;
+  const description = t(`Tools.${toolKey}.description`) !== `Tools.${toolKey}.description`
+    ? t(`Tools.${toolKey}.description`)
+    : toolData.shortDescription;
 
   const url = `${siteUrl}/${toolSlug}/`;
   const webAppSchema = {
     '@context': 'https://schema.org',
     '@type': 'WebApplication',
-    name: toolData.title,
+    name: title,
     applicationCategory: 'UtilitiesApplication',
     operatingSystem: 'Web',
-    description: toolData.shortDescription,
+    description: description,
     url,
   };
 
   return (
     <>
-      <JsonLd data={webPageSchema({ name: toolData.title, url, description: toolData.shortDescription })} />
+      <JsonLd data={webPageSchema({ name: title, url, description })} />
       <JsonLd data={webAppSchema} />
-      <ToolPageShell tool={toolData} ui={<Utf8EncodeTool />} related={<RelatedTools currentSlug={toolData.slug} />}>
+      <ToolPageShell tool={{ ...toolData, title, shortDescription: description }} ui={<Utf8EncodeTool />} related={<RelatedTools currentSlug={toolData.slug} />}>
         {writeUp}
         <div className="mt-10 space-y-3">
           <h2 className="text-2xl font-semibold text-slate-900">UTF-8 Encode FAQ</h2>

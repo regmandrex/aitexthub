@@ -9,6 +9,8 @@ import { siteUrl } from "../../lib/schema/site";
 import { RelatedTools } from "../../components/tool/RelatedTools";
 import AdSenseSlot from "../../components/ads/AdSenseSlot";
 import BelowToolAd from "../../components/ads/BelowToolAd";
+import { getServerLocale } from '../../lib/server-i18n';
+import { createServerT } from '../../lib/server-t';
 
 function RailAd({ side }: { side: 'left' | 'right' }) {
   const sideClass = side === 'left' ? 'left-4' : 'right-4';
@@ -193,12 +195,16 @@ const faqs: FaqItem[] = [
   },
 ];
 
-export const metadata = buildMeta({
-  title: 'Grok Watermark Cleaner - Remove Hidden Characters from Grok AI Text',
-  description:
-    'Remove hidden characters and watermarks from Grok output. Strip zero-width/NBSP Unicode, fix spacing, and prepare clean text for Word, Docs, and CMS.',
-  urlPath: '/grok-watermark-cleaner',
-});
+export async function generateMetadata() {
+  const { locale } = await getServerLocale();
+  const t = await createServerT(locale);
+  
+  return buildMeta({
+    title: t('Tools.grok-watermark-cleaner.seoTitle') || t('Tools.grok-watermark-cleaner.title'),
+    description: t('Tools.grok-watermark-cleaner.description'),
+    urlPath: '/grok-watermark-cleaner',
+  });
+}
 
 const pageFaqs = faqs.map((item) => ({
   ...item,
@@ -206,25 +212,26 @@ const pageFaqs = faqs.map((item) => ({
   answer: item.answer.replace(/Grok/g, 'Grok'),
 }));
 
-export default function GrokWatermarkCleanerPage() {
+export default async function GrokWatermarkCleanerPage() {
+  const { locale } = await getServerLocale();
+  const t = await createServerT(locale);
+  
   return (
     <div className="relative min-h-screen bg-[#f7f9ff]">
       <JsonLd
         data={webPageSchema({
-          name: 'Grok Watermark Cleaner',
+          name: t('Tools.grok-watermark-cleaner.title'),
           url: `${siteUrl}/grok-watermark-cleaner/`,
-          description:
-            'Remove hidden characters and watermarks from Grok output. Strip zero-width/NBSP Unicode, fix spacing, and prepare clean text for Word, Docs, and CMS.',
+          description: t('Tools.grok-watermark-cleaner.description'),
         })}
       />
       <RailAd side="right" />
 
       <div className="mx-auto w-full max-w-4xl px-4 py-10">
         <section className="space-y-3 text-center">
-          <h1 className="text-2xl font-semibold text-slate-900 md:text-3xl">Grok Watermark Cleaner</h1>
+          <h1 className="text-2xl font-semibold text-slate-900 md:text-3xl">{t('Tools.grok-watermark-cleaner.title')}</h1>
           <p className="max-w-2xl mx-auto text-sm text-slate-700 md:text-[15px]">
-            Remove hidden characters and watermarks from Grok outputs. Keep paragraphs intact and prepare clean, editor-safe text for Word,
-            Docs, and SEO-friendly publishing.
+            {t('GrokWatermarkCleanerPage.subtitle') || 'Remove hidden characters and watermarks from Grok outputs. Keep paragraphs intact and prepare clean, editor-safe text for Word, Docs, and SEO-friendly publishing.'}
           </p>
         </section>
 
@@ -232,11 +239,11 @@ export default function GrokWatermarkCleanerPage() {
           <div className="w-full max-w-none rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6">
             <ToolWorkbench
               processor="chatgptTextCleaner"
-              primaryLabel="Clean Text"
-              inputLabel="Paste your Grok AI text"
-              outputLabel="Clean result"
-              inputPlaceholder="Paste text from Grok..."
-              outputPlaceholder="Your cleaned text will appear here."
+              primaryLabel={t('ToolUI.clean') || t('HomePage.cleanPrimary')}
+              inputLabel={t('GrokWatermarkCleanerPage.inputLabel') || 'Paste your Grok AI text'}
+              outputLabel={t('HomePage.cleanOutputLabel')}
+              inputPlaceholder={t('GrokWatermarkCleanerPage.inputPlaceholder') || 'Paste text from Grok...'}
+              outputPlaceholder={t('ToolUI.outputPlaceholder')}
             />
           </div>
         </section>

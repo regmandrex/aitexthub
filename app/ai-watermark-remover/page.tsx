@@ -9,6 +9,8 @@ import { siteUrl } from '../../lib/schema/site';
 import { RelatedTools } from '../../components/tool/RelatedTools';
 import AdSenseSlot from '../../components/ads/AdSenseSlot';
 import BelowToolAd from '../../components/ads/BelowToolAd';
+import { getServerLocale } from '../../lib/server-i18n';
+import { createServerT } from '../../lib/server-t';
 
 function RailAd({ side }: { side: 'left' | 'right' }) {
   const sideClass = side === 'left' ? 'left-4' : 'right-4';
@@ -660,30 +662,37 @@ const article = (
   </section>
 );
 
-export const metadata = buildMeta({
-  title: 'AI Watermark Remover - Clean Formatting Artifacts in AI Text',
-  description: 'Remove invisible Unicode, normalize spacing, and clean AI-era text for editing and publishing.',
-  urlPath: '/ai-watermark-remover',
-});
+export async function generateMetadata() {
+  const { locale } = await getServerLocale();
+  const t = await createServerT(locale);
+  
+  return buildMeta({
+    title: t('Tools.ai-watermark-remover.seoTitle') || t('Tools.ai-watermark-remover.title'),
+    description: t('Tools.ai-watermark-remover.description'),
+    urlPath: '/ai-watermark-remover',
+  });
+}
 
-export default function AIWatermarkRemoverPage() {
+export default async function AIWatermarkRemoverPage() {
+  const { locale } = await getServerLocale();
+  const t = await createServerT(locale);
+  
   return (
     <div className="relative min-h-screen bg-[#f7f9ff]">
       <JsonLd
         data={webPageSchema({
-          name: 'AI Watermark Remover',
+          name: t('Tools.ai-watermark-remover.title'),
           url: `${siteUrl}/ai-watermark-remover/`,
-          description: 'Clean formatting artifacts, normalize Unicode, and prepare AI-era text for publishing.',
+          description: t('Tools.ai-watermark-remover.description'),
         })}
       />
       <RailAd side="right" />
 
       <div className="mx-auto w-full max-w-4xl px-4 py-10">
         <section className="space-y-3 text-center">
-          <h1 className="text-2xl font-semibold text-slate-900 md:text-3xl">AI Watermark Remover</h1>
+          <h1 className="text-2xl font-semibold text-slate-900 md:text-3xl">{t('Tools.ai-watermark-remover.title')}</h1>
           <p className="max-w-2xl mx-auto text-sm text-slate-700 md:text-[15px]">
-            Remove hidden characters and formatting artifacts from AI-era text. Keep paragraphs intact and prepare clean, editor-safe copy for
-            documents, CMS tools, and reports.
+            {t('AIWatermarkRemoverPage.subtitle') || 'Remove hidden characters and formatting artifacts from AI-era text. Keep paragraphs intact and prepare clean, editor-safe copy for documents, CMS tools, and reports.'}
           </p>
         </section>
 
@@ -691,11 +700,11 @@ export default function AIWatermarkRemoverPage() {
           <div className="w-full max-w-none rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6">
             <ToolWorkbench
               processor="chatgptTextCleaner"
-              primaryLabel="Clean Text"
-              inputLabel="Paste your AI text"
-              outputLabel="Clean result"
-              inputPlaceholder="Paste AI-generated text..."
-              outputPlaceholder="Your cleaned text will appear here."
+              primaryLabel={t('ToolUI.clean') || t('HomePage.cleanPrimary')}
+              inputLabel={t('AIWatermarkRemoverPage.inputLabel') || 'Paste your AI text'}
+              outputLabel={t('HomePage.cleanOutputLabel')}
+              inputPlaceholder={t('AIWatermarkRemoverPage.inputPlaceholder') || 'Paste AI-generated text...'}
+              outputPlaceholder={t('ToolUI.outputPlaceholder')}
             />
           </div>
         </section>

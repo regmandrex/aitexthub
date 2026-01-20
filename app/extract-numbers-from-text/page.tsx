@@ -11,20 +11,33 @@ import { buildToolMeta } from '@/lib/seo-meta';
 import { getToolBySlug } from '@/lib/tools/registry';
 import { siteUrl } from '@/lib/schema/site';
 import { webPageSchema } from '@/lib/schema/webpage';
+import { getServerLocale } from '@/lib/server-i18n';
+import { createServerT } from '@/lib/server-t';
 
 const toolSlug = 'extract-numbers-from-text';
-const toolData = getToolBySlug(toolSlug);
-const description =
-  toolData?.shortDescription ??
-  'Extract all numbers from text, including integers and decimals. Options for ordering, uniqueness, and delimiters.';
-const title = toolData?.title ?? 'Extract Numbers From Text';
 
-export const metadata: Metadata = buildToolMeta({
-  title,
-  description,
-  seoTitle: toolData?.seoTitle,
-  urlPath: `/${toolSlug}`,
-});
+export async function generateMetadata(): Promise<Metadata> {
+  const { locale } = await getServerLocale();
+  const t = await createServerT(locale);
+  const toolData = getToolBySlug(toolSlug);
+  const toolKey = toolSlug === '' ? 'home' : toolSlug;
+  
+  const title = t(`Tools.${toolKey}.title`) !== `Tools.${toolKey}.title` 
+    ? t(`Tools.${toolKey}.title`) 
+    : toolData?.title ?? 'Extract Numbers From Text';
+  const description = t(`Tools.${toolKey}.description`) !== `Tools.${toolKey}.description`
+    ? t(`Tools.${toolKey}.description`)
+    : toolData?.shortDescription ?? 'Extract all numbers from text, including integers and decimals. Options for ordering, uniqueness, and delimiters.';
+  const seoTitle = toolData?.seoTitle ? (t(`Tools.${toolKey}.seoTitle`) !== `Tools.${toolKey}.seoTitle` ? t(`Tools.${toolKey}.seoTitle`) : toolData.seoTitle) : undefined;
+  
+  return buildToolMeta({
+    title,
+    description,
+    seoTitle,
+    urlPath: `/${toolSlug}`,
+    locale,
+  });
+}
 
 const faqs: FaqItem[] = [
   {
@@ -361,25 +374,36 @@ const writeUp = (
   </section>
 );
 
-export default function ExtractNumbersFromTextPage() {
+export default async function ExtractNumbersFromTextPage() {
+  const { locale } = await getServerLocale();
+  const t = await createServerT(locale);
+  const toolData = getToolBySlug(toolSlug);
   if (!toolData) return notFound();
+
+  const toolKey = toolSlug === '' ? 'home' : toolSlug;
+  const title = t(`Tools.${toolKey}.title`) !== `Tools.${toolKey}.title` 
+    ? t(`Tools.${toolKey}.title`) 
+    : toolData.title;
+  const description = t(`Tools.${toolKey}.description`) !== `Tools.${toolKey}.description`
+    ? t(`Tools.${toolKey}.description`)
+    : toolData.shortDescription;
 
   const url = `${siteUrl}/${toolSlug}/`;
   const schemaData = {
     '@context': 'https://schema.org',
     '@type': 'WebApplication',
-    name: toolData.title,
+    name: title,
     applicationCategory: 'UtilitiesApplication',
     operatingSystem: 'Web',
-    description: toolData.shortDescription,
+    description: description,
     url,
   };
 
   return (
     <>
-      <JsonLd data={webPageSchema({ name: toolData.title, url, description: toolData.shortDescription })} />
+      <JsonLd data={webPageSchema({ name: title, url, description })} />
       <JsonLd data={schemaData} />
-      <ToolPageShell tool={toolData} ui={<ExtractNumbersFromTextTool />} related={<RelatedTools currentSlug={toolSlug} />}>
+      <ToolPageShell tool={{ ...toolData, title, shortDescription: description }} ui={<ExtractNumbersFromTextTool />} related={<RelatedTools currentSlug={toolSlug} />}>
         {writeUp}
         <div className="mt-10 space-y-3">
           <h2 className="text-2xl font-semibold text-slate-900">Extract Numbers From Text FAQ</h2>

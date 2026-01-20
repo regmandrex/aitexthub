@@ -1,0 +1,295 @@
+{
+  "Nav": {
+    "home": "Home",
+    "tools": "Strumenti IA gratuiti",
+    "blog": "Blog",
+    "language": "Lingua"
+  },
+  "Common": {
+    "language": "Lingua"
+  },
+  "ToolUI": {
+    "inputText": "Testo di input",
+    "output": "Output",
+    "copy": "Copia",
+    "clear": "Pulisci",
+    "yes": "Sì",
+    "no": "No"
+  },
+  "Tools": {
+    "home": {
+      "title": "Pulitore di testo ChatGPT",
+      "description": "Pulisce e normalizza il testo IA rimuovendo Unicode nascosto e correggendo la spaziatura."
+    },
+    "space-remover": {
+      "title": "Rimuovi spazi",
+      "description": "Rimuove spazi extra, taglia le righe e normalizza gli spazi bianchi per un testo pulito e pronto da incollare."
+    },
+    "ai-space-remover": {
+      "title": "Rimuovi spazi IA",
+      "description": "Rimuove spazi extra, Unicode nascosto e spazi irregolari dal testo generato da IA."
+    },
+    "case-converter": {
+      "title": "Convertitore di maiuscole/minuscole",
+      "description": "Converte il testo in MAIUSCOLE, minuscole, Titolo o Frase."
+    },
+    "em-dash-remover": {
+      "title": "Rimuovi / sostituisci trattini lunghi",
+      "description": "Rimuove o sostituisce trattini lunghi (—) e trattini corti (–) con la spaziatura che preferisci."
+    },
+    "find-and-replace": {
+      "title": "Cerca e sostituisci",
+      "description": "Cerca testo e lo sostituisce con valori personalizzati, con corrispondenza opzionale di maiuscole/minuscole."
+    },
+    "invisible-character-detector": {
+      "title": "Rilevatore di caratteri invisibili",
+      "description": "Rileva caratteri Unicode nascosti e mostra dove appaiono nel tuo testo."
+    },
+    "remove-duplicate-lines": {
+      "title": "Rimuovi righe duplicate",
+      "description": "Rimuove righe duplicate mantenendo l'ordine originale."
+    },
+    "remove-line-breaks": {
+      "title": "Rimuovi interruzioni di riga",
+      "description": "Unisce righe avvolte in paragrafi puliti rimuovendo le interruzioni di riga."
+    },
+    "strip-html": {
+      "title": "Rimuovi HTML",
+      "description": "Rimuove i tag HTML e restituisce testo semplice pulito."
+    },
+    "url-encoder-decoder": {
+      "title": "Codificatore / decodificatore URL",
+      "description": "Codifica o decodifica URL, stringhe di query e frammenti di testo."
+    },
+    "word-counter": {
+      "title": "Contatore di parole",
+      "description": "Conta parole, caratteri, righe, frasi e paragrafi."
+    },
+    "zero-width-space-remover": {
+      "title": "Rimuovi spazi a larghezza zero",
+      "description": "Rimuove spazi a larghezza zero e caratteri Unicode invisibili."
+    },
+    "hex-to-binary": {
+      "title": "Convertitore HEX in binario",
+      "description": "Converte stringhe esadecimali in binario con opzioni di formattazione."
+    },
+    "random-hex-generator": {
+      "title": "Generatore HEX casuale",
+      "description": "Genera stringhe esadecimali casuali con controlli di lunghezza e formato."
+    },
+    "morse-code-translator": {
+      "title": "Traduttore codice Morse",
+      "description": "Traduce testo in codice Morse o decodifica Morse in testo."
+    },
+    "idn-encode": {
+      "title": "Codifica IDN",
+      "description": "Converte domini internazionali in ASCII (Punycode)."
+    },
+    "idn-decode": {
+      "title": "Decodifica IDN",
+      "description": "Converte domini Punycode in Unicode leggibile."
+    },
+    "utf8-encode": {
+      "title": "Codifica UTF-8",
+      "description": "Codifica testo in byte UTF-8 per un trasporto affidabile."
+    },
+    "utf8-decode": {
+      "title": "Decodifica UTF-8",
+      "description": "Decodifica valori di byte UTF-8 in testo leggibile."
+    },
+    "url-encode": {
+      "title": "Codifica URL",
+      "description": "Codifica testo URL e valori di query in stringhe sicure con percent-encoding."
+    },
+    "url-decode": {
+      "title": "Decodifica URL",
+      "description": "Decodifica URL e stringhe di query con percent-encoding in testo leggibile."
+    },
+    "base64-encode": {
+      "title": "Codifica Base64",
+      "description": "Converte testo in Base64 per un trasporto sicuro in app e configurazioni."
+    },
+    "base64-decode": {
+      "title": "Decodifica Base64",
+      "description": "Decodifica stringhe Base64 in testo leggibile con supporto UTF-8."
+    },
+    "html-entities-to-text": {
+      "title": "Convertitore entità HTML in testo",
+      "description": "Decodifica entità HTML come &amp; e &#169; in testo leggibile."
+    },
+    "text-to-html-entities": {
+      "title": "Convertitore testo in entità HTML",
+      "description": "Codifica testo in entità HTML per markup sicuro."
+    },
+    "morse-code-generator": {
+      "title": "Generatore codice Morse",
+      "description": "Converte testo in codice Morse pulito con barre o spazi, pronto per imparare, praticare o segnalare."
+    },
+    "korean-nickname-generator": {
+      "title": "Generatore soprannomi coreani",
+      "description": "Genera 20 soprannomi da un nome e tratti. Stili carino, cool, divertente, emotivo e altro. Funziona localmente nel tuo browser."
+    },
+    "chatgpt-space-remover": {
+      "title": "Rimuovi spazi ChatGPT",
+      "description": "Rimuove spazi extra e righe vuote dal testo ChatGPT con un solo clic."
+    },
+    "chatgpt-line-spacing": {
+      "title": "Strumento interlinea per ChatGPT",
+      "description": "Regola l'interlinea del testo ChatGPT a singola, 1.5, doppia o personalizzata per una formattazione professionale."
+    },
+    "chatgpt-watermark-remover": {
+      "title": "Rimuovi filigrana ChatGPT",
+      "description": "Rimuove caratteri nascosti e artefatti di formattazione dal testo ChatGPT."
+    },
+    "ai-watermark-remover": {
+      "title": "Rimuovi filigrana IA",
+      "description": "Pulisce artefatti di formattazione, normalizza Unicode e prepara il testo IA per la pubblicazione."
+    },
+    "gemini-space-remover": {
+      "title": "Rimuovi spazi Gemini",
+      "description": "Pulisce spazi extra e righe vuote dal testo Google Gemini."
+    },
+    "gemini-watermark-cleaner": {
+      "title": "Pulitore filigrana Gemini",
+      "description": "Rimuove filigrane nascoste e Unicode invisibile dal testo Gemini."
+    },
+    "grok-watermark-cleaner": {
+      "title": "Pulitore filigrana Grok",
+      "description": "Rimuove filigrane nascoste e Unicode invisibile dal testo Grok."
+    },
+    "deepseek-watermark-cleaner": {
+      "title": "Pulitore filigrana DeepSeek",
+      "description": "Rimuove filigrane nascoste e Unicode invisibile dal testo DeepSeek."
+    },
+    "claude-watermark-cleaner": {
+      "title": "Pulitore filigrana Claude",
+      "description": "Rimuove filigrane nascoste e Unicode invisibile dal testo Claude."
+    },
+    "llama-watermark-cleaner": {
+      "title": "Pulitore filigrana LLAMA",
+      "description": "Rimuove filigrane nascoste e Unicode invisibile dal testo LLAMA."
+    },
+    "perplexity-watermark-cleaner": {
+      "title": "Pulitore filigrana Perplexity",
+      "description": "Rimuove filigrane nascoste e Unicode invisibile dal testo Perplexity."
+    },
+    "grok-space-remover": {
+      "title": "Rimuovi spazi Grok",
+      "description": "Pulisce spazi extra e normalizza il testo Grok per un incollaggio facile."
+    },
+    "deepseek-space-remover": {
+      "title": "Rimuovi spazi DeepSeek",
+      "description": "Raggruppa spazi bianchi extra nelle risposte DeepSeek mantenendo il significato."
+    },
+    "llama-space-remover": {
+      "title": "Rimuovi spazi LLAMA",
+      "description": "Pulisce testo LLAMA (Meta AI) tagliando righe e stabilizzando la spaziatura."
+    },
+    "perplexity-space-remover": {
+      "title": "Rimuovi spazi Perplexity",
+      "description": "Corregge la spaziatura e gli spazi nascosti nelle risposte Perplexity."
+    },
+    "mistral-space-remover": {
+      "title": "Rimuovi spazi Mistral",
+      "description": "Normalizza gli spazi bianchi nel testo generato da Mistral."
+    },
+    "mistral-watermark-cleaner": {
+      "title": "Pulitore filigrana Mistral",
+      "description": "Rimuove filigrane nascoste e Unicode invisibile dal testo Mistral."
+    },
+    "claude-space-remover": {
+      "title": "Rimuovi spazi Claude",
+      "description": "Taglia, raggruppa e normalizza spazi nelle risposte Claude."
+    },
+    "chatgpt-watermark-detector": {
+      "title": "Rilevatore filigrana ChatGPT",
+      "description": "Ispeziona testo ChatGPT per possibili artefatti di formattazione e Unicode nascosto."
+    },
+    "ai-watermark-detector": {
+      "title": "Rilevatore filigrana IA",
+      "description": "Analizza testo per Unicode nascosto, pattern di spazi e segnali strutturali."
+    },
+    "grok-watermark-detector": {
+      "title": "Rilevatore filigrana Grok",
+      "description": "Analizza testo Grok per possibili artefatti e anomalie di spaziatura."
+    },
+    "deepseek-watermark-detector": {
+      "title": "Rilevatore filigrana DeepSeek",
+      "description": "Scansiona testo DeepSeek per segnali di formattazione tipo \"filigrana\"."
+    },
+    "llama-watermark-detector": {
+      "title": "Rilevatore filigrana LLAMA",
+      "description": "Esamina testo LLAMA (Meta AI) per rilevare Unicode nascosto e pattern di spazi."
+    },
+    "perplexity-watermark-detector": {
+      "title": "Rilevatore filigrana Perplexity",
+      "description": "Mostra possibili artefatti di formattazione nel testo Perplexity."
+    },
+    "gemini-watermark-detector": {
+      "title": "Rilevatore filigrana Gemini",
+      "description": "Ispeziona testo Gemini per caratteri nascosti e segnali di spazi."
+    },
+    "mistral-watermark-detector": {
+      "title": "Rilevatore filigrana Mistral",
+      "description": "Identifica possibili pattern di formattazione nel testo generato da Mistral."
+    },
+    "claude-watermark-detector": {
+      "title": "Rilevatore filigrana Claude",
+      "description": "Analizza testo Claude per Unicode nascosto e artefatti di spaziatura."
+    },
+    "text-to-morse-code": {
+      "title": "Convertitore testo in codice Morse",
+      "description": "Converte testo in codice Morse con codifica ITU standard. Veloce, preciso e rispettoso della privacy."
+    },
+    "combination-generator": {
+      "title": "Generatore di Combinazioni",
+      "description": "Genera tutte le combinazioni possibili da un insieme di elementi. L'ordine non conta nelle combinazioni."
+    },
+    "line-combination-generator": {
+      "title": "Generatore di Combinazioni di Righe",
+      "description": "Genera tutte le combinazioni possibili di righe dal tuo testo. Mantiene gli a capo nell'output."
+    },
+    "permutation-generator": {
+      "title": "Generatore di Permutazioni",
+      "description": "Genera tutte le permutazioni possibili dove l'ordine conta. Crea disposizioni ordinate di elementi."
+    },
+    "extract-numbers-from-text": {
+      "title": "Estrai numeri dal testo",
+      "description": "Estrae tutti i numeri dal testo, inclusi interi e decimali. Opzioni per ordine, unicità e separatori."
+    },
+    "text-to-hex": {
+      "title": "Convertitore testo in HEX",
+      "description": "Converte caratteri di testo in rappresentazione esadecimale. Supporta UTF-8 con opzioni di maiuscole/minuscole e spaziatura."
+    }
+  },
+  "Footer": {
+    "discoverMore": "Scopri altri strumenti:",
+    "aboutTitle": "Informazioni su GPT CLEAN UP TOOLS",
+    "aboutBlurb": "Strumento gratuito per la pulizia GPT - Pulitore di testo AI, correzione della formattazione e pulizia del testo ChatGPT",
+    "exploreTitle": "Esplora",
+    "topToolsTitle": "I nostri strumenti migliori",
+    "legalTitle": "Legale",
+    "languageTitle": "Lingua",
+    "links": {
+      "home": "Home",
+      "about": "Chi siamo",
+      "contact": "Contattaci",
+      "blog": "Blog"
+    },
+    "topTools": {
+      "chatgptSpaceRemover": "Rimuovi spazi ChatGPT",
+      "chatgptWatermarkRemover": "Rimuovi filigrana ChatGPT",
+      "stripHtml": "Rimuovi HTML"
+    },
+    "legal": {
+      "privacy": "Informativa sulla privacy",
+      "terms": "Termini di servizio",
+      "disclaimer": "Disclaimer",
+      "cookies": "Informativa sui cookie"
+    },
+    "copyrightPrefix": "© 2026",
+    "tagline": " - il tuo rilevatore di filigrana ChatGPT e pulitore di testo AI affidabile per rimuovere o correggere spazi a larghezza zero e marcatori Unicode nascosti.",
+    "rights": "Tutti i diritti riservati."
+  }
+}
+

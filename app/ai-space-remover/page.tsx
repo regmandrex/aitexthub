@@ -1,6 +1,8 @@
 import type { FaqItem } from '@/components/faqData';
 import SpaceRemoverPage from '@/components/tools/SpaceRemoverPage';
 import { buildMeta } from '@/lib/seo-meta';
+import { getServerLocale } from '@/lib/server-i18n';
+import { createServerT } from '@/lib/server-t';
 
 const modelName = 'AI';
 const modelSlug = 'ai';
@@ -652,11 +654,19 @@ const writeUp = (
   </section>
 );
 
-export const metadata = buildMeta({
-  title: 'AI Space Remover - Remove Extra Spaces and Clean AI Text',
-  description: 'Remove extra spaces, normalize whitespace, and clean pasted AI-era text for editing and publishing.',
-  urlPath: '/ai-space-remover',
-});
+export async function generateMetadata() {
+  const { locale } = await getServerLocale();
+  const t = await createServerT(locale);
+  const title = t('SpaceRemoverPage.title', { modelName });
+  const description = t('SpaceRemoverPage.subtitle');
+  
+  return buildMeta({
+    title: `${title} - ${t('Tools.ai-space-remover.description')}`,
+    description: description || 'Remove extra spaces, normalize whitespace, and clean pasted AI-era text for editing and publishing.',
+    urlPath: '/ai-space-remover',
+    locale,
+  });
+}
 
 export default function AISpaceRemoverPage() {
   return <SpaceRemoverPage modelName={modelName} modelSlug={modelSlug} faqItems={faqs} content={writeUp} />;

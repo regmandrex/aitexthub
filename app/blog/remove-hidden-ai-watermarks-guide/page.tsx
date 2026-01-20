@@ -3,6 +3,8 @@ import { buildArticleMeta } from '@/lib/seo-meta';
 import { JsonLd } from '@/components/JsonLd';
 import { blogPostingSchema } from '@/lib/schema/blog';
 import AdSenseSlot from '../../../components/ads/AdSenseSlot';
+import { getServerLocale } from '@/lib/server-i18n';
+import type { Metadata } from 'next';
 
 const urlPath = '/blog/remove-hidden-ai-watermarks-guide';
 const title = 'Remove Hidden AI Watermarks (Step-by-Step Guide) | GPT CLEAN UP';
@@ -10,11 +12,15 @@ const headline = 'Remove Hidden AI Watermarks: A Practical, Step-by-Step Guide (
 const description =
   'A practical guide to removing real hidden AI text artifacts (invisible Unicode, mixed whitespace, formatting remnants) without rewriting or harming SEO.';
 
-export const metadata = buildArticleMeta({
-  title,
-  description,
-  urlPath,
-});
+export async function generateMetadata(): Promise<Metadata> {
+  const { locale } = await getServerLocale();
+  return buildArticleMeta({
+    title,
+    description,
+    urlPath,
+    locale,
+  });
+}
 
 export default function RemoveHiddenAiWatermarksGuidePage() {
   return (

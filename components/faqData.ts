@@ -2,6 +2,7 @@ export type FaqItem = {
   category: string;
   question: string;
   answer: string;
+  translationKey?: string; // Optional translation key prefix
 };
 
 export const faqItems: FaqItem[] = [

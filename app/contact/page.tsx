@@ -1,27 +1,35 @@
 import { buildMeta } from '@/lib/seo-meta';
+import { getServerLocale } from '@/lib/server-i18n';
+import { createServerT } from '@/lib/server-t';
 
-export const metadata = buildMeta({
-  title: 'Contact | GPT CLEAN UP Tools',
-  description: 'Get in touch with the GPT CLEAN UP Tools team for feedback, partnership ideas, or questions about the utilities.',
-  urlPath: '/contact',
-});
+export async function generateMetadata() {
+  const { locale } = await getServerLocale();
+  const t = await createServerT(locale);
+  return buildMeta({
+    title: t('ContactPage.seoTitle'),
+    description: t('ContactPage.seoDescription'),
+    urlPath: '/contact',
+    locale,
+  });
+}
 
-export default function ContactPage() {
+export default async function ContactPage() {
+  const { locale } = await getServerLocale();
+  const t = await createServerT(locale);
   return (
     <div className="min-h-screen bg-[#f7f9ff]">
       <div className="mx-auto max-w-3xl px-4 py-16 space-y-8">
         <section className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
-          <h1 className="text-3xl font-semibold text-slate-900">Contact GPT CLEAN UP Tools</h1>
+          <h1 className="text-3xl font-semibold text-slate-900">{t('ContactPage.title')}</h1>
           <p className="mt-3 text-slate-600">
-            Need help with a tool, want to report an issue, or have a suggestion? Drop us a line via email and we will
-            respond as soon as possible.
+            {t('ContactPage.subtitle')}
           </p>
         </section>
 
         <section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-          <h2 className="text-2xl font-semibold text-slate-900">How to reach us</h2>
+          <h2 className="text-2xl font-semibold text-slate-900">{t('ContactPage.howToReach')}</h2>
           <div className="mt-5 rounded-2xl border border-slate-100 bg-slate-50 p-6 text-lg font-semibold text-slate-900">
-            <p>EMAIL</p>
+            <p>{t('ContactPage.emailLabel')}</p>
             <a href="mailto:support@gpthelpertools.com" className="text-brand-700 hover:underline">
               support@gpthelpertools.com
             </a>

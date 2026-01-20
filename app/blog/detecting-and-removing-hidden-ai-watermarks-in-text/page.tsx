@@ -3,18 +3,24 @@ import { buildArticleMeta } from '@/lib/seo-meta';
 import { JsonLd } from '@/components/JsonLd';
 import { blogPostingSchema } from '@/lib/schema/blog';
 import AdSenseSlot from '../../../components/ads/AdSenseSlot';
+import { getServerLocale } from '@/lib/server-i18n';
+import type { Metadata } from 'next';
 
 const urlPath = '/blog/detecting-and-removing-hidden-ai-watermarks-in-text';
 const title = "Detecting and Removing Hidden AI Watermarks in Text (What's Real and What Works) | GPT CLEAN UP";
-const headline = "Detecting and Removing Hidden AI Watermarks in Text (What’s Real, What’s Not, and What Actually Works)";
+const headline = "Detecting and Removing Hidden AI Watermarks in Text (What's Real, What's Not, and What Actually Works)";
 const description =
-  'What “hidden AI watermarks” actually are: invisible Unicode artifacts vs pattern signals, plus how to detect and clean them without rewriting or harming SEO.';
+  'What "hidden AI watermarks" actually are: invisible Unicode artifacts vs pattern signals, plus how to detect and clean them without rewriting or harming SEO.';
 
-export const metadata = buildArticleMeta({
-  title,
-  description,
-  urlPath,
-});
+export async function generateMetadata(): Promise<Metadata> {
+  const { locale } = await getServerLocale();
+  return buildArticleMeta({
+    title,
+    description,
+    urlPath,
+    locale,
+  });
+}
 
 export default function DetectingAndRemovingHiddenAIWatermarksInTextPage() {
   return (

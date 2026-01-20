@@ -1,4 +1,4 @@
-﻿import FAQSection from '@/components/FAQSection';
+import FAQSection from '@/components/FAQSection';
 import AdSenseSlot from '@/components/ads/AdSenseSlot';
 import BelowToolAd from '@/components/ads/BelowToolAd';
 import { JsonLd } from '@/components/JsonLd';
@@ -7,15 +7,22 @@ import { NicknameTool } from './NicknameTool';
 import { faqItems } from './faq';
 import { buildFaqJsonLd } from './jsonld';
 import { buildMeta } from '@/lib/seo-meta';
+import { getServerLocale } from '@/lib/server-i18n';
+import type { Metadata } from 'next';
 
 const title = '별명 짓기 | 닉네임 추천 생성기';
 const description =
   '이름과 특징을 입력하면 20개의 닉네임 추천을 바로 보여주는 닉네임 생성기 도구입니다. 귀여운·멋있는·재미있는·감성적인·짧은·영어닉·한글닉까지 로컬에서 규칙 기반으로 생성합니다.';
-export const metadata = buildMeta({
-  title,
-  description,
-  urlPath: '/korean-nickname-generator',
-});
+
+export async function generateMetadata(): Promise<Metadata> {
+  const { locale } = await getServerLocale();
+  return buildMeta({
+    title,
+    description,
+    urlPath: '/korean-nickname-generator',
+    locale,
+  });
+}
 
 function RailAd({ side }: { side: 'left' | 'right' }) {
   const sideClass = side === 'left' ? 'left-4' : 'right-4';
@@ -55,8 +62,8 @@ export default function NicknamePage() {
           <div className="space-y-4">
             <h2 className="text-2xl font-semibold text-slate-900">닉네임 생성기란?</h2>
             <p>
-              닉네임 만들기는 본명과는 다른 별칭을 만들어 상황에 맞게 사용하는 문화적 습관입니다. 친구 사이에서는 친근함을 더하고,
-              커뮤니티에서는 나를 기억하기 쉽게 만들어 주기 때문에 많은 사람들이 별명 만들기에 관심을 가집니다. 특히 온라인에서는
+              별명 짓기는 본명과는 다른 별칭을 만들어 상황에 맞게 사용하는 문화적 습관입니다. 닉네임 만들기는 친구 사이에서는 친근함을 더하고,
+              커뮤니티에서는 나를 기억하기 쉽게 만들어 주기 때문에 많은 사람들이 별명 짓기에 관심을 가집니다. 특히 온라인에서는
               닉네임 추천을 통해 분위기와 취향을 자연스럽게 드러낼 수 있어 프로필의 첫인상을 결정하는 요소가 되곤 합니다.
             </p>
             <p>
@@ -110,7 +117,7 @@ export default function NicknamePage() {
               </li>
             </ol>
             <p>
-              이 기준을 완벽히 맞추려고 하기보다는, 여러 후보를 만들어 보고 가까운 방향으로 다듬는 과정이 중요합니다. 별명은
+              이 기준을 완벽히 맞추려고 하기보다는, 여러 후보를 만들어 보고 가까운 방향으로 다듬는 과정이 중요합니다. 별명 짓기는
               시간이 지나면서 자연스럽게 변하기도 하니, 부담 없이 시작하고 반응을 보며 조정해 보세요.
             </p>
             <p>
@@ -121,11 +128,11 @@ export default function NicknamePage() {
             <p>
               또 다른 팁은 실제로 부르거나 타이핑했을 때의 느낌을 확인하는 것입니다. 글자로 볼 때 예쁜 별명이라도 발음이 어렵다면
               실사용에서 금방 바뀔 수 있습니다. 후보를 소리 내어 읽어 보고, 주변 사람에게 한 번 불러 달라고 하면 반응을 확인하기
-              좋습니다. 이런 작은 테스트는 별명 만들기의 만족도를 높여 줍니다.
+              좋습니다. 이런 작은 테스트는 별명 짓기의 만족도를 높여 줍니다.
             </p>
             <p>
-              마지막으로, 별명은 나만의 취향과 환경에 맞게 손보는 과정이 필요합니다. 기본 후보가 마음에 들더라도 한 글자만 바꾸거나
-              접미사를 교체하면 더 자연스럽게 다듬을 수 있습니다. 예를 들어 같은 별명이라도 “-냥”, “-루키”처럼 다른 느낌을 붙이면
+              마지막으로, 별명 짓기는 나만의 취향과 환경에 맞게 손보는 과정이 필요합니다. 기본 후보가 마음에 들더라도 한 글자만 바꾸거나
+              접미사를 교체하면 더 자연스럽게 다듬을 수 있습니다. 예를 들어 같은 별명이라도 "-냥", "-루키"처럼 다른 느낌을 붙이면
               활용 범위가 넓어집니다. 추천 결과를 출발점으로 삼고 자신만의 버전을 만들어 보세요.
             </p>
           </div>
@@ -133,7 +140,7 @@ export default function NicknamePage() {
           <div className="space-y-4">
             <h2 className="text-2xl font-semibold text-slate-900">닉네임 추천이 필요한 상황</h2>
             <p>
-              닉네임 생성기는 특정한 상황에서 더 필요해집니다. 아래 예시는 실제로 별명 만들기 수요가 많은 대표적인 장면입니다.
+              닉네임 생성기는 특정한 상황에서 더 필요해집니다. 아래 예시는 실제로 별명 짓기 수요가 많은 대표적인 장면입니다.
               상황에 맞는 분위기를 떠올리며 결과를 비교해 보세요.
             </p>
 

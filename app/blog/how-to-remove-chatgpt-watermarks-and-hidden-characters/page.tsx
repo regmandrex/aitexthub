@@ -3,6 +3,8 @@ import { buildArticleMeta } from '@/lib/seo-meta';
 import { JsonLd } from '@/components/JsonLd';
 import { blogPostingSchema } from '@/lib/schema/blog';
 import AdSenseSlot from '../../../components/ads/AdSenseSlot';
+import { getServerLocale } from '@/lib/server-i18n';
+import type { Metadata } from 'next';
 
 const urlPath = '/blog/how-to-remove-chatgpt-watermarks-and-hidden-characters';
 const title = 'How to Remove ChatGPT Watermarks and Hidden Characters (Technical Guide) | GPT CLEAN UP';
@@ -10,11 +12,15 @@ const headline = 'How to Remove ChatGPT Watermarks and Hidden Characters (Comple
 const description =
   'Learn how to detect and remove invisible Unicode and formatting artifacts in ChatGPT output, plus how to reduce AI fingerprints safely.';
 
-export const metadata = buildArticleMeta({
-  title,
-  description,
-  urlPath,
-});
+export async function generateMetadata(): Promise<Metadata> {
+  const { locale } = await getServerLocale();
+  return buildArticleMeta({
+    title,
+    description,
+    urlPath,
+    locale,
+  });
+}
 
 export default function RemoveChatGPTWatermarksAndHiddenCharactersPage() {
   return (
