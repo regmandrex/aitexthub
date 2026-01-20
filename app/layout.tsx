@@ -53,7 +53,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
   const { locale, messages } = await getServerLocale();
   
   // Special handling for languages that need specific CSS classes
-  const needsBreakKeep = locale === 'ko' || locale === 'zh-cn' || locale === 'ja';
+  const needsBreakKeep = locale === 'ko' || locale === 'zh-cn';
   const bodyClassName = [
     'bg-slate-50',
     'text-slate-900',
@@ -67,7 +67,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
     .join(' ');
 
   return (
-    <html lang={locale} dir={locale === 'ar' ? 'rtl' : 'ltr'}>
+    <html lang={locale} dir="ltr">
       <head>
         {needsBreakKeep ? <meta charSet="utf-8" /> : null}
         <link rel="preconnect" href="https://pagead2.googlesyndication.com" />

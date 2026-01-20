@@ -144,14 +144,14 @@ export async function ToolPageRenderer({ slug }: ToolPageRendererProps) {
   if (!tool) return notFound();
   const { locale } = await getServerLocale();
   const t = await createServerT(locale);
-  const resolveToolText = (field: 'title' | 'description' | 'seoTitle') => {
+  const resolveToolText = (field: 'title' | 'description' | 'seoTitle'): string => {
     const slugKey = tool.slug === '' ? 'home' : tool.slug;
     const key = `Tools.${slugKey}.${field}`;
     const translated = t(key);
     if (translated !== key) return translated;
     if (field === 'title') return tool.title;
     if (field === 'description') return tool.shortDescription;
-    return tool.seoTitle;
+    return tool.seoTitle || tool.title;
   };
   const displayTool = {
     ...tool,

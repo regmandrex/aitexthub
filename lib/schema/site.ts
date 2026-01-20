@@ -22,7 +22,7 @@ export function siteNavigationSchema() {
   return {
     '@context': 'https://schema.org',
     '@type': 'SiteNavigationElement',
-    name: navLinks.map((link) => link.label),
+    name: navLinks.map((link) => link.key),
     url: navUrls,
   };
 }

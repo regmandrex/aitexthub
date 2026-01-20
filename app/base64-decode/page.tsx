@@ -592,7 +592,7 @@ export default async function Base64DecodePage() {
   const toolData = getToolBySlug(toolSlug);
   if (!toolData) return notFound();
 
-  const toolKey = toolSlug === '' ? 'home' : toolSlug;
+  const toolKey = toolSlug;
   const title = t(`Tools.${toolKey}.title`) !== `Tools.${toolKey}.title` 
     ? t(`Tools.${toolKey}.title`) 
     : toolData.title;
