@@ -431,7 +431,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const { locale } = await getServerLocale();
   const t = await createServerT(locale);
   const tool = getToolBySlug(toolSlug);
-  const toolKey = toolSlug === '' ? 'home' : toolSlug;
+  const toolKey = toolSlug;
   
   const title = t(`Tools.${toolKey}.title`) !== `Tools.${toolKey}.title` 
     ? t(`Tools.${toolKey}.title`) 
@@ -456,7 +456,7 @@ export default async function SpaceRemoverPage() {
   const tool = getToolBySlug(toolSlug);
   if (!tool) return notFound();
 
-  const toolKey = toolSlug === '' ? 'home' : toolSlug;
+  const toolKey = toolSlug;
   const title = t(`Tools.${toolKey}.title`) !== `Tools.${toolKey}.title` 
     ? t(`Tools.${toolKey}.title`) 
     : tool.title;

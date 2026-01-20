@@ -20,7 +20,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const { locale } = await getServerLocale();
   const t = await createServerT(locale);
   const tool = getToolBySlug(toolSlug);
-  const toolKey = toolSlug === '' ? 'home' : toolSlug;
+  const toolKey = toolSlug;
   
   const title = t(`Tools.${toolKey}.title`) !== `Tools.${toolKey}.title` 
     ? t(`Tools.${toolKey}.title`) 
@@ -672,7 +672,7 @@ export default async function RemoveDuplicateLinesPage() {
   const toolData = getToolBySlug(toolSlug);
   if (!toolData) return notFound();
 
-  const toolKey = toolSlug === '' ? 'home' : toolSlug;
+  const toolKey = toolSlug;
   const title = t(`Tools.${toolKey}.title`) !== `Tools.${toolKey}.title` 
     ? t(`Tools.${toolKey}.title`) 
     : toolData.title;

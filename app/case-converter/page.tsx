@@ -220,7 +220,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const toolData = getToolBySlug(toolSlug);
   if (!toolData) return {};
 
-  const toolKey = toolSlug === '' ? 'home' : toolSlug;
+  const toolKey = toolSlug;
   const title = t(`Tools.${toolKey}.title`) !== `Tools.${toolKey}.title` 
     ? t(`Tools.${toolKey}.title`) 
     : toolData.title;
@@ -244,7 +244,7 @@ export default async function CaseConverterPage() {
   const toolData = getToolBySlug(toolSlug);
   if (!toolData) return notFound();
 
-  const toolKey = toolSlug === '' ? 'home' : toolSlug;
+  const toolKey = toolSlug;
   const title = t(`Tools.${toolKey}.title`) !== `Tools.${toolKey}.title` 
     ? t(`Tools.${toolKey}.title`) 
     : toolData.title;
