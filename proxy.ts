@@ -60,17 +60,31 @@ export function proxy(request: NextRequest) {
   let locale: SupportedLocale;
   let pathWithoutLocale = pathname;
 
+  // Static pages that should be English-only (no translations)
+  const staticEnglishOnlyPages = ['blog', 'about', 'contact', 'terms-of-service', 'privacy-policy', 'disclaimer', 'cookie-policy'];
+  
   // Check if URL already has locale prefix
   if (firstSegment && isSupportedLocale(firstSegment)) {
     locale = firstSegment;
     pathWithoutLocale = '/' + pathnameSegments.slice(1).join('/') || '/';
     
-    // Blog routes are English-only - redirect localized blog URLs to /blog
-    if (pathWithoutLocale.startsWith('/blog')) {
+    // Check if the path (without locale) is a static English-only page
+    const isStaticEnglishPage = staticEnglishOnlyPages.some(page => pathWithoutLocale.startsWith(`/${page}`) || pathWithoutLocale === `/${page}`);
+    
+    // Static English-only pages - redirect localized URLs to English version
+    if (isStaticEnglishPage) {
       const url = request.nextUrl.clone();
       url.pathname = pathWithoutLocale;
-      return NextResponse.redirect(url);
+      const redirectResponse = NextResponse.redirect(url);
+      // Clear locale cookie for static pages (English-only)
+      redirectResponse.cookies.set('locale', DEFAULT_LOCALE, {
+        path: '/',
+        maxAge: 60 * 60 * 24 * 365,
+        sameSite: 'lax',
+      });
+      return redirectResponse;
     }
+    
     
     // If it's the default locale (English), redirect to remove the prefix
     // This ensures /en/ redirects to / for cleaner URLs
@@ -117,9 +131,11 @@ export function proxy(request: NextRequest) {
   // No locale in URL - detect from cookie/header
   locale = getLocale(request);
   
-  // Blog routes are English-only - don't redirect to localized URLs
-  if (pathname.startsWith('/blog')) {
-    // Force English locale for blog routes
+  // Check if current path is a static English-only page
+  const isStaticEnglishPage = staticEnglishOnlyPages.some(page => pathname.startsWith(`/${page}`) || pathname === `/${page}`);
+  
+  // Static English-only pages - force English locale
+  if (isStaticEnglishPage) {
     const requestHeaders = new Headers(request.headers);
     requestHeaders.set('x-site-locale', DEFAULT_LOCALE);
     requestHeaders.set('x-site-lang', DEFAULT_LOCALE);
@@ -128,6 +144,13 @@ export function proxy(request: NextRequest) {
       request: {
         headers: requestHeaders,
       },
+    });
+    
+    // Set cookie to English for static pages
+    response.cookies.set('locale', DEFAULT_LOCALE, {
+      path: '/',
+      maxAge: 60 * 60 * 24 * 365,
+      sameSite: 'lax',
     });
     
     return response;

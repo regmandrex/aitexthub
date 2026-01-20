@@ -123,22 +123,6 @@ const uiComponentMap: Record<string, React.ComponentType> = {
 };
 
 // Dynamic content loader - tries to load custom write-ups and FAQs
-async function loadToolContent(slug: string): Promise<{ writeUp?: () => React.ReactNode; faqs?: FaqItem[] } | null> {
-  try {
-    // Try to dynamically import custom content
-    const contentModule = await import(`@/app/${slug}/content`).catch(() => null);
-    if (contentModule) {
-      return {
-        writeUp: contentModule.createWriteUp,
-        faqs: contentModule.faqs,
-      };
-    }
-  } catch {
-    // Content file doesn't exist, that's fine
-  }
-  return null;
-}
-
 export async function ToolPageRenderer({ slug }: ToolPageRendererProps) {
   const tool = getToolBySlug(slug);
   if (!tool) return notFound();
@@ -171,9 +155,6 @@ export async function ToolPageRenderer({ slug }: ToolPageRendererProps) {
     return notFound();
   }
 
-  // Try to load custom content
-  const customContent = await loadToolContent(slug);
-  
   const disclaimers =
     tool.content?.disclaimers ?? [
       t('ToolPage.disclaimer1'),
@@ -198,11 +179,8 @@ export async function ToolPageRenderer({ slug }: ToolPageRendererProps) {
       <JsonLd data={softwareJsonLd} />
       <div className="bg-[#f7f9ff]">
         <ToolPageShell tool={displayTool} ui={<UIComponent />} related={<RelatedTools currentSlug={tool.slug} />}>
-          {/* Custom write-up from content file */}
-          {customContent?.writeUp ? customContent.writeUp() : null}
-          
           {/* Registry-based intro markdown */}
-          {!customContent?.writeUp && tool.content?.introMarkdown ? (
+          {tool.content?.introMarkdown ? (
             <section className="prose prose-slate mt-10 max-w-4xl">
               {tool.content.introMarkdown.split('\n\n').map((paragraph, idx) => (
                 <p key={idx}>{paragraph}</p>
@@ -210,22 +188,8 @@ export async function ToolPageRenderer({ slug }: ToolPageRendererProps) {
             </section>
           ) : null}
 
-          {/* Custom FAQs from content file */}
-          {customContent?.faqs && customContent.faqs.length > 0 ? (
-            <>
-              <div className="mt-10 space-y-3">
-                <h2 className="text-2xl font-semibold text-slate-900">Frequently Asked Questions</h2>
-                <p className="text-slate-700">
-                  Common questions about {displayTool.title} and how it works.
-                </p>
-              </div>
-              <FAQSection items={customContent.faqs} />
-              <FaqJsonLd faqs={customContent.faqs} />
-            </>
-          ) : null}
-
           {/* Registry-based FAQs */}
-          {!customContent?.faqs && tool.content?.faq && tool.content.faq.length > 0 ? (
+          {tool.content?.faq && tool.content.faq.length > 0 ? (
             <>
               <section className="mt-10 space-y-4">
                 <h2 className="text-xl font-semibold text-slate-900">{t('ToolPage.faqTitle')}</h2>
