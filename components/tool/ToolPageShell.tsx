@@ -46,9 +46,9 @@ export function ToolPageShell({ tool, ui, related, children }: ToolPageShellProp
 
         <BelowToolAd />
 
-        {children}
-
         {related}
+
+        {children}
       </div>
     </div>
   );

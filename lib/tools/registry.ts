@@ -75,7 +75,14 @@ const UTILITY_SLUGS = new Set([
   'text-to-hex',
 ]);
 
-const GENERATOR_SLUGS = new Set(['korean-nickname-generator', 'morse-code-generator', 'random-hex-generator']);
+const GENERATOR_SLUGS = new Set([
+  'korean-nickname-generator',
+  'morse-code-generator',
+  'random-hex-generator',
+  'combination-generator',
+  'line-combination-generator',
+  'permutation-generator',
+]);
 
 const MODEL_SLUGS = new Set(Object.keys(MODEL_LABELS));
 
@@ -95,12 +102,9 @@ function getModelLabel(modelSlug?: string): string | undefined {
   return MODEL_LABELS[modelSlug] ?? `${modelSlug.charAt(0).toUpperCase()}${modelSlug.slice(1)}`;
 }
 
-function getModeSlug(slug: string): string {
+function getModeSlug(slug: string, category?: string): string {
   if (slug === '') {
     return 'text-cleaner';
-  }
-  if (GENERATOR_SLUGS.has(slug)) {
-    return 'generator';
   }
   if (UTILITY_SLUGS.has(slug)) {
     return 'utility';
@@ -117,6 +121,21 @@ function getModeSlug(slug: string): string {
   if (slug.includes('watermark-cleaner') || slug.includes('watermark-remover')) {
     return 'watermark-cleaner';
   }
+
+  // Use category when available to avoid misclassification (e.g. generators, encoding tools)
+  if (category === 'generator' || GENERATOR_SLUGS.has(slug)) {
+    return 'generator';
+  }
+  if (
+    category === 'text' ||
+    category === 'encoding' ||
+    category === 'data-format' ||
+    category === 'number-systems' ||
+    category === 'color-css'
+  ) {
+    return 'utility';
+  }
+
   return 'text-cleaner';
 }
 
@@ -180,7 +199,7 @@ function getUIKind(
 // Convert toolPages to Tool format
 const tools: Tool[] = toolPages.map((page) => {
   const modelSlug = getModelSlug(page.slug);
-  const mode = getModeSlug(page.slug);
+  const mode = getModeSlug(page.slug, page.category);
 
   return {
     slug: page.slug,

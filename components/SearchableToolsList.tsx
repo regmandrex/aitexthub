@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useCallback } from 'react';
 import type { Tool } from '@/lib/tools/registry';
 import ToolCard from '@/components/ToolCard';
 import { useI18n } from '@/lib/client-i18n';
@@ -73,13 +73,17 @@ type SearchableToolsListProps = {
 export default function SearchableToolsList({ tools }: SearchableToolsListProps) {
   const [searchQuery, setSearchQuery] = useState('');
   const { t } = useI18n();
-  const resolveToolText = (tool: Tool, field: 'title' | 'description') => {
+
+  const resolveToolText = useCallback(
+    (tool: Tool, field: 'title' | 'description') => {
     const slugKey = tool.slug === '' ? 'home' : tool.slug;
     const key = `Tools.${slugKey}.${field === 'title' ? 'title' : 'description'}`;
     const translated = t(key);
     if (translated !== key) return translated;
     return field === 'title' ? tool.title : tool.shortDescription;
-  };
+    },
+    [t]
+  );
 
   // Filter tools based on search query
   const filteredTools = useMemo(() => {
@@ -90,12 +94,13 @@ export default function SearchableToolsList({ tools }: SearchableToolsListProps)
     const query = searchQuery.toLowerCase().trim();
     return tools.filter(
       (tool) =>
-        tool.title.toLowerCase().includes(query) ||
-        tool.shortDescription.toLowerCase().includes(query) ||
+        resolveToolText(tool, 'title').toLowerCase().includes(query) ||
+        resolveToolText(tool, 'description').toLowerCase().includes(query) ||
         tool.category?.toLowerCase().includes(query) ||
-        tool.model?.toLowerCase().includes(query)
+        tool.model?.toLowerCase().includes(query) ||
+        tool.slug.toLowerCase().includes(query)
     );
-  }, [tools, searchQuery]);
+  }, [tools, searchQuery, resolveToolText]);
 
   // Group filtered tools by category
   const groupedTools = useMemo(() => {
