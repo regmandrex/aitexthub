@@ -5,7 +5,7 @@ import type { Metadata } from 'next';
 export async function generateMetadata(): Promise<Metadata> {
   const { locale } = await getServerLocale();
   return buildMeta({
-    title: 'Cookie Policy | GPT CLEAN UP',
+    title: 'Cookie Policy - GPT CLEAN UP Privacy & Tracking',
     description: 'Cookie Policy for GPT CLEAN UP tools.',
     urlPath: '/cookie-policy',
     locale,

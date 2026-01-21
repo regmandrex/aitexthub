@@ -51,7 +51,7 @@ type PrivacyContent = {
 
 const CONTENT_BY_LOCALE: Record<string, PrivacyContent> = {
   en: {
-    metaTitle: 'Privacy Policy | GPT CLEAN UP',
+    metaTitle: 'Privacy Policy - GPT CLEAN UP Data Protection',
     metaDescription: 'Privacy details for GPT CLEAN UP tools.',
     title: 'Privacy Policy',
     updated: 'Last Updated: July 7, 2023',

@@ -35,8 +35,15 @@ export function RelatedTools({
   const modeTools = currentTool.mode ? tools.filter((tool) => tool.slug !== currentSlug && tool.mode === currentTool.mode) : [];
 
   const limitedModelTools = modelTools.slice(0, maxItems);
-  const limitedModeTools =
-    showModeTools && currentTool.mode !== 'watermark-cleaner' ? modeTools.slice(0, maxItems) : [];
+  
+  // Only show mode tools if there are no model tools, or if mode tools are significantly different
+  // This prevents showing redundant "Other Text Cleaner Tools" when "Other ChatGPT Tools" is already shown
+  const shouldShowModeTools = 
+    showModeTools && 
+    currentTool.mode !== 'watermark-cleaner' &&
+    limitedModelTools.length === 0; // Only show mode tools if no model tools exist
+  
+  const limitedModeTools = shouldShowModeTools ? modeTools.slice(0, maxItems) : [];
 
   // Return nothing if we don't have related tools to show
   if (limitedModelTools.length === 0 && limitedModeTools.length === 0) {

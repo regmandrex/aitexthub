@@ -430,7 +430,7 @@
   "AllTools": {
     "title": "All Tools",
     "subtitle": "Browse the GPT CLEAN UP Tools collection, grouped by category so you can find the right utility fast.",
-    "seoTitle": "All Tools | GPT CLEAN UP",
+    "seoTitle": "All AI Text Tools - Free Content & Writing Utilities",
     "seoDescription": "Browse the GPT CLEAN UP Tools collection - AI text cleanup, watermark removal, formatting tools, and more. Find the right utility fast.",
     "searchPlaceholder": "Search tools...",
     "clearSearch": "Clear search",
@@ -1154,7 +1154,7 @@
     }
   },
   "ContactPage": {
-    "seoTitle": "Contact Us | GPT CLEAN UP",
+    "seoTitle": "Contact GPT CLEAN UP - Get Help & Support",
     "seoDescription": "Get in touch with GPT CLEAN UP. We're here to help with questions about our AI text cleaning tools.",
     "title": "Contact Us",
     "subtitle": "Have questions or feedback? We'd love to hear from you.",
@@ -1162,11 +1162,11 @@
     "emailLabel": "Email us at:"
   },
   "BlogPage": {
-    "seoTitle": "GPT CLEAN UP Blog - Fix Messy AI Text & Formatting",
+    "seoTitle": "AI Text Cleaning Blog - GPT CLEAN UP Guides & Tips",
     "seoDescription": "Practical guides for cleaning up AI output, fixing formatting issues, and preparing ChatGPT or Gemini text for documents."
   },
   "TermsPage": {
-    "metaTitle": "Terms of Service | GPT CLEAN UP",
+    "metaTitle": "Terms of Service - GPT CLEAN UP Usage Guidelines",
     "metaDescription": "Terms of Service for GPT CLEAN UP tools.",
     "title": "Terms of Service",
     "lastUpdated": "Last Updated: July 7, 2023",
