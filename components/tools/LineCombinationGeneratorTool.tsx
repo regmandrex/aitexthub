@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from 'react';
 import ToolTextArea from './ToolTextArea';
+import { useI18n } from '@/lib/client-i18n';
 
 // Generate all combinations of size r from array
 function generateCombinations<T>(arr: T[], r: number): T[][] {
@@ -38,6 +39,7 @@ function clampNumber(value: number, min: number, max: number): number {
 }
 
 export function LineCombinationGeneratorTool() {
+  const { t } = useI18n();
   const [input, setInput] = useState('');
   const [size, setSize] = useState('2');
   const [prefix, setPrefix] = useState('');
@@ -57,16 +59,16 @@ export function LineCombinationGeneratorTool() {
   const errors = useMemo(() => {
     const errs: { input?: string; size?: string } = {};
     if (lines.length === 0) {
-      errs.input = 'Enter at least one line.';
+      errs.input = t('LineCombinationGeneratorPage.ui.errorEnterLines');
     }
     if (sizeValue < 1 || sizeValue > 20) {
-      errs.size = 'Size must be between 1 and 20.';
+      errs.size = t('LineCombinationGeneratorPage.ui.errorSizeRange');
     }
     if (sizeValue > lines.length) {
-      errs.size = `Size cannot be greater than the number of lines (${lines.length}).`;
+      errs.size = t('LineCombinationGeneratorPage.ui.errorSizeTooLarge', { count: lines.length });
     }
     return errs;
-  }, [lines.length, sizeValue]);
+  }, [lines.length, sizeValue, t]);
 
   // Replace \x with newline, \t with tab, etc.
   const processSpecialChars = (text: string): string => {
@@ -140,13 +142,13 @@ export function LineCombinationGeneratorTool() {
       <div className="grid gap-4 md:grid-cols-2">
         <div className="space-y-2">
           <label className="text-sm font-semibold text-slate-800" htmlFor="line-combo-input">
-            Lines (one per line)
+            {t('LineCombinationGeneratorPage.ui.linesLabel')}
           </label>
           <textarea
             id="line-combo-input"
             value={input}
             onChange={(e) => setInput(e.target.value)}
-            placeholder="Enter lines of text, one per line..."
+            placeholder={t('LineCombinationGeneratorPage.ui.linesPlaceholder')}
             rows={10}
             className="w-full rounded-xl border border-slate-200 bg-white px-3 py-3 text-sm text-slate-800 shadow-sm outline-none transition focus:border-brand-300 focus:ring-2 focus:ring-brand-100"
           />
@@ -155,7 +157,7 @@ export function LineCombinationGeneratorTool() {
         <div className="space-y-4">
           <div className="space-y-2">
             <label className="text-sm font-semibold text-slate-800" htmlFor="line-combo-size">
-              Combination Size
+              {t('LineCombinationGeneratorPage.ui.combinationSizeLabel')}
             </label>
             <input
               id="line-combo-size"
@@ -166,73 +168,73 @@ export function LineCombinationGeneratorTool() {
               onChange={(e) => setSize(e.target.value)}
               className="w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm text-slate-700 shadow-sm focus:border-brand-300 focus:outline-none focus:ring-2 focus:ring-brand-100"
             />
-            <p className="text-xs text-slate-500">Choose how many lines per combination (1-20).</p>
+            <p className="text-xs text-slate-500">{t('LineCombinationGeneratorPage.ui.combinationSizeHint')}</p>
             {errors.size ? <p className="text-xs font-semibold text-rose-600">{errors.size}</p> : null}
           </div>
           <div className="space-y-2">
             <label className="text-sm font-semibold text-slate-800" htmlFor="line-combo-prefix">
-              Prefix sets with
+              {t('LineCombinationGeneratorPage.ui.prefixLabel')}
             </label>
             <input
               id="line-combo-prefix"
               type="text"
               value={prefix}
               onChange={(e) => setPrefix(e.target.value)}
-              placeholder="Optional prefix"
+              placeholder={t('LineCombinationGeneratorPage.ui.prefixPlaceholder')}
               className="w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm text-slate-700 shadow-sm focus:border-brand-300 focus:outline-none focus:ring-2 focus:ring-brand-100"
             />
-            <p className="text-xs text-slate-500">Add text before each combination. Use \x for newline.</p>
+            <p className="text-xs text-slate-500">{t('LineCombinationGeneratorPage.ui.prefixHint')}</p>
           </div>
           <div className="space-y-2">
             <label className="text-sm font-semibold text-slate-800" htmlFor="line-combo-suffix">
-              Suffix sets with
+              {t('LineCombinationGeneratorPage.ui.suffixLabel')}
             </label>
             <input
               id="line-combo-suffix"
               type="text"
               value={suffix}
               onChange={(e) => setSuffix(e.target.value)}
-              placeholder="Optional suffix"
+              placeholder={t('LineCombinationGeneratorPage.ui.suffixPlaceholder')}
               className="w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm text-slate-700 shadow-sm focus:border-brand-300 focus:outline-none focus:ring-2 focus:ring-brand-100"
             />
-            <p className="text-xs text-slate-500">Add text after each combination. Use \x for newline.</p>
+            <p className="text-xs text-slate-500">{t('LineCombinationGeneratorPage.ui.suffixHint')}</p>
           </div>
           <div className="space-y-2">
             <label className="text-sm font-semibold text-slate-800" htmlFor="line-combo-delimiter">
-              Delimit lines with
+              {t('LineCombinationGeneratorPage.ui.delimiterLabel')}
             </label>
             <input
               id="line-combo-delimiter"
               type="text"
               value={delimiter}
               onChange={(e) => setDelimiter(e.target.value)}
-              placeholder="\n"
+              placeholder={t('LineCombinationGeneratorPage.ui.delimiterPlaceholder')}
               className="w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm text-slate-700 shadow-sm focus:border-brand-300 focus:outline-none focus:ring-2 focus:ring-brand-100"
             />
-            <p className="text-xs text-slate-500">Separator between lines in each combination. Use \x for newline (default).</p>
+            <p className="text-xs text-slate-500">{t('LineCombinationGeneratorPage.ui.delimiterHint')}</p>
           </div>
           <div className="space-y-2">
             <label className="text-sm font-semibold text-slate-800" htmlFor="line-combo-join">
-              Join sets with
+              {t('LineCombinationGeneratorPage.ui.joinSetsLabel')}
             </label>
             <input
               id="line-combo-join"
               type="text"
               value={joinSets}
               onChange={(e) => setJoinSets(e.target.value)}
-              placeholder="\n\n---\n\n"
+              placeholder={t('LineCombinationGeneratorPage.ui.joinSetsPlaceholder')}
               className="w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm text-slate-700 shadow-sm focus:border-brand-300 focus:outline-none focus:ring-2 focus:ring-brand-100"
             />
-            <p className="text-xs text-slate-500">Separator between combinations. Use \x for newline.</p>
+            <p className="text-xs text-slate-500">{t('LineCombinationGeneratorPage.ui.joinSetsHint')}</p>
           </div>
           <div className="rounded-xl border border-slate-200 bg-slate-50 p-4">
-            <h3 className="text-sm font-semibold text-slate-800">Info</h3>
+            <h3 className="text-sm font-semibold text-slate-800">{t('LineCombinationGeneratorPage.ui.infoTitle')}</h3>
             <p className="mt-2 text-xs text-slate-600">
-              Lines: {lines.length}
+              {t('LineCombinationGeneratorPage.ui.linesCount')}: {lines.length}
               <br />
-              Size: {sizeValue}
+              {t('LineCombinationGeneratorPage.ui.sizeLabel')}: {sizeValue}
               <br />
-              Total combinations: {totalCombinations.toLocaleString()}
+              {t('LineCombinationGeneratorPage.ui.totalCombinations')}: {totalCombinations.toLocaleString()}
             </p>
           </div>
         </div>
@@ -245,21 +247,21 @@ export function LineCombinationGeneratorTool() {
           disabled={!!errors.input || !!errors.size || lines.length === 0}
           className="inline-flex items-center justify-center rounded-lg bg-brand-700 px-4 py-2 text-sm font-semibold text-white shadow hover:bg-brand-800 disabled:bg-slate-300 disabled:cursor-not-allowed"
         >
-          Generate Combinations
+          {t('LineCombinationGeneratorPage.ui.generateButton')}
         </button>
         <button
           type="button"
           onClick={handleSample}
           className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
         >
-          Load Sample
+          {t('LineCombinationGeneratorPage.ui.loadSampleButton')}
         </button>
         <button
           type="button"
           onClick={handleClear}
           className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
         >
-          Clear
+          {t('LineCombinationGeneratorPage.ui.clearButton')}
         </button>
       </div>
 
@@ -267,7 +269,7 @@ export function LineCombinationGeneratorTool() {
         <div className="space-y-3">
           <div className="flex items-center justify-between">
             <h3 className="text-sm font-semibold text-slate-800">
-              Results ({results.length.toLocaleString()} combinations)
+              {t('LineCombinationGeneratorPage.ui.resultsTitle')} ({results.length.toLocaleString()} {t('LineCombinationGeneratorPage.ui.combinationsLabel')})
             </h3>
             <div className="flex gap-2">
               <button
@@ -275,14 +277,14 @@ export function LineCombinationGeneratorTool() {
                 onClick={handleCopyAll}
                 className="text-xs font-semibold text-brand-700 hover:text-brand-800"
               >
-                Copy All
+                {t('LineCombinationGeneratorPage.ui.copyAllButton')}
               </button>
               <button
                 type="button"
                 onClick={handleDownload}
                 className="text-xs font-semibold text-brand-700 hover:text-brand-800"
               >
-                Download
+                {t('LineCombinationGeneratorPage.ui.downloadButton')}
               </button>
             </div>
           </div>
@@ -294,13 +296,13 @@ export function LineCombinationGeneratorTool() {
                   className="rounded-lg border border-slate-200 bg-slate-50 p-3"
                 >
                   <div className="mb-2 flex items-center justify-between">
-                    <span className="text-xs font-semibold text-slate-600">Combination {idx + 1}</span>
+                    <span className="text-xs font-semibold text-slate-600">{t('LineCombinationGeneratorPage.ui.combinationLabel')} {idx + 1}</span>
                     <button
                       type="button"
                       onClick={() => handleCopy(result)}
                       className="text-xs font-semibold text-brand-700 hover:text-brand-800"
                     >
-                      Copy
+                      {t('LineCombinationGeneratorPage.ui.copyButton')}
                     </button>
                   </div>
                   <pre className="whitespace-pre-wrap text-sm text-slate-700">{result}</pre>
