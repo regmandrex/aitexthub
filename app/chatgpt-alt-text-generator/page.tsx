@@ -156,7 +156,7 @@ const writeUp = (
       <h2>Technical Implementation</h2>
       <p>Understanding how to implement alt text ensures it works effectively.</p>
       <h3>HTML Implementation</h3>
-      <p>Add alt text in HTML: <img src="image.jpg" alt="Your description">. Most CMS platforms provide alt text fields in image settings.</p>
+      <p>Add alt text in HTML: <code>&lt;img src="image.jpg" alt="Your description"&gt;</code>. Most CMS platforms provide alt text fields in image settings.</p>
       <h3>CMS Integration</h3>
       <p>Popular CMS platforms (WordPress, Shopify, etc.) have built-in alt text fields. Use these for easy management across your site.</p>
       <h3>Empty Alt Text</h3>

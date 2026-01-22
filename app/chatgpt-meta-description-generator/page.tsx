@@ -134,7 +134,7 @@ const writeUp = (
       <h2>Technical Implementation</h2>
       <p>Understanding how to implement meta descriptions ensures they work effectively.</p>
       <h3>HTML Implementation</h3>
-      <p>Add meta descriptions in the HTML <head> section: <meta name="description" content="Your description here">. Most CMS platforms provide SEO settings for easy implementation.</p>
+      <p>Add meta descriptions in the HTML <code>&lt;head&gt;</code> section: <code>&lt;meta name="description" content="Your description here"&gt;</code>. Most CMS platforms provide SEO settings for easy implementation.</p>
       <h3>CMS Integration</h3>
       <p>Popular CMS platforms (WordPress, Shopify, etc.) have built-in SEO fields for meta descriptions. Use these for easy management.</p>
       <h3>Character Encoding</h3>

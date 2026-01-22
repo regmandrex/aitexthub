@@ -26,7 +26,7 @@ const faqs: FaqItem[] = [
   { category: 'ChatGPT Title Tag Generator FAQs', question: 'Should every page have a unique title tag?', answer: 'Yes, unique title tags help each page stand out in search results and improve SEO. Duplicate title tags can confuse search engines and reduce effectiveness.' },
   { category: 'ChatGPT Title Tag Generator FAQs', question: 'What makes a good title tag?', answer: 'Good title tags are descriptive, include primary keywords near the beginning, accurately represent page content, and are compelling enough to encourage clicks.' },
   { category: 'ChatGPT Title Tag Generator FAQs', question: 'Where should keywords appear in title tags?', answer: 'Place primary keywords near the beginning of title tags. Front-loading keywords improves SEO and ensures they display even if titles get truncated.' },
-  { category: 'ChatGPT Title Tag Generator FAQs', question: 'How do I add title tags to my website?', answer: 'Add title tags in the HTML <head> section using the <title> tag, or through your CMS\'s SEO settings. Most platforms provide easy title tag management.' },
+  { category: 'ChatGPT Title Tag Generator FAQs', question: 'How do I add title tags to my website?', answer: 'Add title tags in the HTML head section using the title tag, or through your CMS\'s SEO settings. Most platforms provide easy title tag management.' },
   { category: 'ChatGPT Title Tag Generator FAQs', question: 'Can I use the same title tag for multiple pages?', answer: 'Avoid duplicate title tags. Each page should have a unique title that accurately represents its specific content and includes relevant keywords.' },
   { category: 'ChatGPT Title Tag Generator FAQs', question: 'What if my title tag is too long?', answer: 'Search engines truncate long title tags. Keep within 50-60 characters to ensure your full title displays in search results.' },
   { category: 'ChatGPT Title Tag Generator FAQs', question: 'Should title tags match H1 headings?', answer: 'Title tags and H1 headings can be similar but don\'t need to match exactly. Title tags are for search results; H1s are for on-page content.' },
@@ -60,7 +60,7 @@ const writeUp = (
       <h2>Understanding Title Tags</h2>
       <p>Title tags are HTML elements that specify web page titles. They appear in multiple places and serve crucial functions.</p>
       <h3>What They Are</h3>
-      <p>Title tags are HTML elements (<title>) in the page <head> section. They define the page title that appears in browser tabs, bookmarks, social media shares, and most importantly, search engine results.</p>
+      <p>Title tags are HTML elements (<code>&lt;title&gt;</code>) in the page <code>&lt;head&gt;</code> section. They define the page title that appears in browser tabs, bookmarks, social media shares, and most importantly, search engine results.</p>
       <h3>Where They Appear</h3>
       <p>Title tags appear in browser tabs, bookmarks, social media link previews, and as the clickable headline in search engine results pages (SERPs). This visibility makes them critical for both SEO and user experience.</p>
       <h3>SEO Importance</h3>
@@ -134,7 +134,7 @@ const writeUp = (
       <h2>Technical Implementation</h2>
       <p>Understanding how to implement title tags ensures they work effectively.</p>
       <h3>HTML Implementation</h3>
-      <p>Add title tags in the HTML <head> section: <title>Your Title Here</title>. Most CMS platforms provide SEO settings for easy implementation.</p>
+      <p>Add title tags in the HTML <code>&lt;head&gt;</code> section: <code>&lt;title&gt;Your Title Here&lt;/title&gt;</code>. Most CMS platforms provide SEO settings for easy implementation.</p>
       <h3>CMS Integration</h3>
       <p>Popular CMS platforms (WordPress, Shopify, etc.) have built-in SEO fields for title tags. Use these for easy management.</p>
       <h3>Dynamic Titles</h3>
