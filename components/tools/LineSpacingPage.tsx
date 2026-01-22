@@ -35,7 +35,10 @@ function RailAd({ side }: { side: 'left' | 'right' }) {
 export default function LineSpacingPage({ modelName, modelSlug, faqItems, content }: Props) {
   const { t } = useI18n();
   const url = `${siteUrl}/${modelSlug}-line-spacing/`;
-  const title = t('LineSpacingPage.title', { modelName });
+  const titleKey = t('LineSpacingPage.title', { modelName });
+  const title = titleKey !== 'LineSpacingPage.title' ? titleKey : `${modelName} Line Spacing`;
+  const subtitleKey = t('LineSpacingPage.subtitle');
+  const subtitle = subtitleKey !== 'LineSpacingPage.subtitle' ? subtitleKey : 'Adjust line spacing in text for better readability and formatting.';
   const description = `Adjust line spacing in ${modelName} text to single, 1.5, double, or custom spacing for better readability and formatting.`;
   const normalizedContent = content ? Children.toArray(content) : null;
 
@@ -49,7 +52,7 @@ export default function LineSpacingPage({ modelName, modelSlug, faqItems, conten
           <h1 className="text-2xl font-semibold text-slate-900 md:text-3xl">{title}</h1>
           <div className="space-y-2">
             <p className="max-w-2xl mx-auto text-sm text-slate-700 md:text-[15px]">
-              {t('LineSpacingPage.subtitle')}
+              {subtitle}
             </p>
           </div>
         </section>

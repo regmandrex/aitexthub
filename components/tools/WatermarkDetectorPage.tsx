@@ -36,7 +36,10 @@ function RailAd({ side }: { side: 'left' | 'right' }) {
 export default function WatermarkDetectorPage({ modelName, modelSlug, faqItems, content, faqIntro }: Props) {
   const { t } = useI18n();
   const url = `${siteUrl}/${modelSlug}-watermark-detector/`;
-  const title = t('WatermarkDetectorPage.title', { modelName });
+  const titleKey = t('WatermarkDetectorPage.title', { modelName });
+  const title = titleKey !== 'WatermarkDetectorPage.title' ? titleKey : `${modelName} Watermark Detector`;
+  const subtitleKey = t('WatermarkDetectorPage.subtitle');
+  const subtitle = subtitleKey !== 'WatermarkDetectorPage.subtitle' ? subtitleKey : 'Scan text for formatting artifacts like hidden Unicode characters, whitespace patterns, and repeated punctuation marks.';
   const description = `Inspect ${modelName} text for possible formatting artifacts, hidden Unicode, and whitespace patterns.`;
 
   return (
@@ -49,7 +52,7 @@ export default function WatermarkDetectorPage({ modelName, modelSlug, faqItems, 
           <h1 className="text-2xl font-semibold text-slate-900 md:text-3xl">{title}</h1>
           <div className="space-y-2">
             <p className="max-w-2xl mx-auto text-sm text-slate-700 md:text-[15px]">
-              {t('WatermarkDetectorPage.subtitle')}
+              {subtitle}
             </p>
           </div>
         </section>

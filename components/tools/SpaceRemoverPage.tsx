@@ -35,7 +35,10 @@ function RailAd({ side }: { side: 'left' | 'right' }) {
 export default function SpaceRemoverPage({ modelName, modelSlug, faqItems, content }: Props) {
   const { t } = useI18n();
   const url = `${siteUrl}/${modelSlug}-space-remover/`;
-  const title = t('SpaceRemoverPage.title', { modelName });
+  const titleKey = t('SpaceRemoverPage.title', { modelName });
+  const title = titleKey !== 'SpaceRemoverPage.title' ? titleKey : `${modelName} Space Remover`;
+  const subtitleKey = t('SpaceRemoverPage.subtitle');
+  const subtitle = subtitleKey !== 'SpaceRemoverPage.subtitle' ? subtitleKey : 'Remove extra spaces and tidy lines for clean, paste-ready text.';
   const description = `Tighten whitespace, trim messy spacing, and make ${modelName} text easier to paste into docs and CMS editors.`;
 
   return (
@@ -48,7 +51,7 @@ export default function SpaceRemoverPage({ modelName, modelSlug, faqItems, conte
           <h1 className="text-2xl font-semibold text-slate-900 md:text-3xl">{title}</h1>
           <div className="space-y-2">
             <p className="max-w-2xl mx-auto text-sm text-slate-700 md:text-[15px]">
-              {t('SpaceRemoverPage.subtitle')}
+              {subtitle}
             </p>
           </div>
         </section>
@@ -68,29 +71,37 @@ export default function SpaceRemoverPage({ modelName, modelSlug, faqItems, conte
         ) : (
           <section className="space-y-6 mt-10">
             <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 space-y-4">
-              <h2 className="text-xl font-semibold text-slate-900">{t('SpaceRemoverPage.howItWorks')}</h2>
+              <h2 className="text-xl font-semibold text-slate-900">{t('SpaceRemoverPage.howItWorks') !== 'SpaceRemoverPage.howItWorks' ? t('SpaceRemoverPage.howItWorks') : 'How it works'}</h2>
               <ul className="list-disc list-inside space-y-1 text-slate-700">
-                <li>{t('SpaceRemoverPage.howItWorks1')}</li>
-                <li>{t('SpaceRemoverPage.howItWorks2')}</li>
-                <li>{t('SpaceRemoverPage.howItWorks3')}</li>
+                <li>{t('SpaceRemoverPage.howItWorks1') !== 'SpaceRemoverPage.howItWorks1' ? t('SpaceRemoverPage.howItWorks1') : 'Collapses repeated spaces while keeping your line breaks intact.'}</li>
+                <li>{t('SpaceRemoverPage.howItWorks2') !== 'SpaceRemoverPage.howItWorks2' ? t('SpaceRemoverPage.howItWorks2') : 'Trims leading and trailing line whitespace for cleaner paragraphs.'}</li>
+                <li>{t('SpaceRemoverPage.howItWorks3') !== 'SpaceRemoverPage.howItWorks3' ? t('SpaceRemoverPage.howItWorks3') : 'Normalizes tabs and line endings for consistent formatting across tools.'}</li>
               </ul>
             </div>
             <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 space-y-4">
-              <h2 className="text-xl font-semibold text-slate-900">{t('SpaceRemoverPage.whatCanCant')}</h2>
+              <h2 className="text-xl font-semibold text-slate-900">{t('SpaceRemoverPage.whatCanCant') !== 'SpaceRemoverPage.whatCanCant' ? t('SpaceRemoverPage.whatCanCant') : 'What it can / can\'t do'}</h2>
               <ul className="list-disc list-inside space-y-1 text-slate-700">
-                <li>{t('SpaceRemoverPage.whatCanCant1')}</li>
-                <li>{t('SpaceRemoverPage.whatCanCant2')}</li>
-                <li>{t('SpaceRemoverPage.whatCanCant3')}</li>
-                <li>{t('SpaceRemoverPage.whatCanCant4')}</li>
+                <li>{t('SpaceRemoverPage.whatCanCant1') !== 'SpaceRemoverPage.whatCanCant1' ? t('SpaceRemoverPage.whatCanCant1') : 'Can reduce formatting glitches caused by inconsistent spacing.'}</li>
+                <li>{t('SpaceRemoverPage.whatCanCant2') !== 'SpaceRemoverPage.whatCanCant2' ? t('SpaceRemoverPage.whatCanCant2') : 'Can\'t verify authorship, provenance, or model identity.'}</li>
+                <li>{t('SpaceRemoverPage.whatCanCant3') !== 'SpaceRemoverPage.whatCanCant3' ? t('SpaceRemoverPage.whatCanCant3') : 'Not a bypass tool; it only adjusts spacing and formatting.'}</li>
+                <li>{t('SpaceRemoverPage.whatCanCant4') !== 'SpaceRemoverPage.whatCanCant4' ? t('SpaceRemoverPage.whatCanCant4') : 'Not a guarantee; use responsibly and review the output before publishing.'}</li>
               </ul>
             </div>
           </section>
         )}
 
         <div className="mt-10 space-y-3">
-          <h2 className="text-2xl font-semibold text-slate-900">{t('SpaceRemoverPage.faqHeading', { modelName })}</h2>
+          <h2 className="text-2xl font-semibold text-slate-900">
+            {(() => {
+              const heading = t('SpaceRemoverPage.faqHeading', { modelName });
+              return heading !== 'SpaceRemoverPage.faqHeading' ? heading : `${modelName} Space Remover - Frequently Asked Questions`;
+            })()}
+          </h2>
           <p className="text-slate-700">
-            {t('SpaceRemoverPage.faqIntro')}
+            {(() => {
+              const intro = t('SpaceRemoverPage.faqIntro');
+              return intro !== 'SpaceRemoverPage.faqIntro' ? intro : 'This FAQ covers common spacing issues, what the tool changes, and what it does not. Review the cleaned output to confirm spacing and formatting match your intended use.';
+            })()}
           </p>
         </div>
 
