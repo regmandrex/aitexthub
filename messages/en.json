@@ -48,6 +48,11 @@
       "description": "Join wrapped lines into clean paragraphs by removing line breaks.",
       "seoTitle": "Remove Line Breaks - Join lines into paragraphs"
     },
+    "remove-whitespace": {
+      "title": "Remove Whitespace",
+      "description": "Remove all whitespace characters including spaces, tabs, and line breaks from text.",
+      "seoTitle": "Remove Whitespace Online - Remove All Spaces, Tabs & Line Breaks"
+    },
     "strip-html": {
       "title": "Strip HTML",
       "description": "Remove HTML tags and return clean plain text.",
@@ -184,6 +189,16 @@
     "ai-watermark-remover": {
       "title": "AI Watermark Remover",
       "description": "Clean formatting artifacts, normalize Unicode, and make AI text ready to publish."
+    },
+    "ai-code-cleaner": {
+      "title": "AI Code Cleaner",
+      "description": "Clean and normalize code formatting, remove trailing spaces, fix indentation, and remove invisible characters from AI-generated code.",
+      "seoTitle": "AI Code Cleaner - Clean and Format AI-Generated Code"
+    },
+    "ai-code-fixer": {
+      "title": "AI Code Fixer",
+      "description": "Fix common code issues, syntax errors, indentation problems, and formatting inconsistencies in AI-generated code.",
+      "seoTitle": "AI Code Fixer - Fix Common Issues in AI-Generated Code"
     },
     "gemini-space-remover": {
       "title": "Gemini Space Remover",
@@ -3119,6 +3134,254 @@
     "faqHeading": "Remove Line Breaks - Frequently Asked Questions",
     "faqIntro": "Detailed answers about joining lines, preserving paragraphs, and avoiding formatting issues."
   },
+  "RemoveWhitespacePage": {
+    "ui": {
+      "inputLabel": "Input text",
+      "inputPlaceholder": "Paste text with whitespace...",
+      "outputLabel": "Output",
+      "outputPlaceholder": "Text without whitespace will appear here.",
+      "helperText": "All spaces, tabs, and line breaks will be removed.",
+      "removeButton": "Remove whitespace",
+      "copyButton": "Copy",
+      "clearButton": "Clear"
+    },
+    "writeUp": {
+      "title": "Remove Whitespace from Text - Complete Guide to Online Whitespace Remover Tool",
+      "introductionTitle": "Introduction to Remove Whitespace",
+      "introductionP1": "Remove Whitespace is a powerful text formatting tool designed to eliminate all whitespace characters from your text, including spaces, tabs, newlines, carriage returns, and other Unicode whitespace characters. This comprehensive tool is essential when you need to create a continuous string without any spacing, such as for URL slugs, unique identifiers, API parameters, or when processing text for specific applications that require completely whitespace-free content.",
+      "introductionP2": "Whitespace characters are invisible formatting elements that create spacing, indentation, and structure in text. While these characters are crucial for readability and proper formatting in most contexts—from documents and code to web content—there are numerous professional and technical scenarios where you need to completely remove all whitespace to create a compact, continuous string. This tool provides an instant, reliable, and secure way to strip every type of whitespace character from your text, ensuring you get exactly the format you need for your specific use case.",
+      "introductionP3": "The Remove Whitespace tool on gptcleanuptools.com processes your text entirely locally in your browser using advanced JavaScript regex patterns, ensuring complete privacy and security. Unlike server-based tools that upload your content, this tool never transmits your data over the internet. It removes all types of whitespace characters comprehensively, including regular spaces, tabs, line breaks, non-breaking spaces, zero-width spaces, and other Unicode whitespace characters, leaving you with a perfectly clean, continuous string ready for immediate use.",
+      "introductionP4": "This comprehensive guide explores everything you need to know about removing whitespace from text, from understanding what whitespace is and why you might need to remove it, to practical use cases across different industries and technical applications. Whether you're a developer working with APIs, a data analyst processing text files, a content creator preparing identifiers, or a professional handling technical documentation, understanding how to effectively remove whitespace is a valuable skill in today's digital workflows.",
+      "whatIsTitle": "What Is Remove Whitespace?",
+      "whatIsP1": "Remove Whitespace is a specialized text processing utility that completely eliminates all whitespace characters from text input. Whitespace encompasses a broad category of characters that create visual spacing and formatting, including regular spaces (U+0020), tabs (U+0009), newlines (U+000A), carriage returns (U+000D), form feeds (U+000C), vertical tabs (U+000B), and numerous Unicode whitespace characters such as non-breaking spaces (U+00A0), zero-width spaces (U+200B), and various other spacing characters defined in the Unicode standard.",
+      "whatIsP2": "This tool is fundamentally different from space removers or whitespace normalizers that only remove extra spaces, collapse multiple spaces into one, or normalize inconsistent spacing. Remove Whitespace takes a more aggressive approach: it removes ALL whitespace characters completely and unconditionally, creating a single continuous string without any breaks, spacing, or formatting characters whatsoever. The result is a compact string where all non-whitespace characters are concatenated directly together.",
+      "whatIsP3": "The tool operates using sophisticated regex pattern matching that identifies every possible whitespace character according to Unicode standards. It processes your input character by character, systematically removing every instance of whitespace while meticulously preserving all other characters—letters, numbers, punctuation marks, special symbols, emojis, and any other non-whitespace Unicode characters. This ensures that your actual content remains completely intact while only the formatting whitespace is eliminated.",
+      "whyNeededTitle": "Why Remove All Whitespace? Understanding the Need",
+      "whyNeededP1": "There are countless professional, technical, and practical scenarios where removing all whitespace from text is not just convenient but absolutely necessary. Understanding these use cases helps you determine when this tool is the right solution for your specific needs.",
+      "whyNeededItem1": "Creating unique identifiers, codes, or keys that must not contain any spaces or formatting characters for database storage, API usage, or system integration",
+      "whyNeededItem2": "Preparing text for URL encoding, query parameters, or API endpoints where whitespace can cause encoding issues or break functionality",
+      "whyNeededItem3": "Processing data for legacy systems, mainframes, or specialized applications that have strict requirements prohibiting whitespace in certain fields",
+      "whyNeededItem4": "Creating compact strings for efficient storage, transmission, or compression where every character counts and whitespace adds unnecessary overhead",
+      "whyNeededItem5": "Generating hash inputs, checksums, or cryptographic strings where whitespace could alter the output and break validation",
+      "whyNeededItem6": "Preparing text for barcode generation, QR codes, or machine-readable formats that require continuous character strings",
+      "whyNeededP2": "Beyond these technical requirements, removing whitespace is also valuable for data normalization, text comparison, duplicate detection, and various text processing pipelines where consistent formatting is critical. In many programming and data processing contexts, whitespace can introduce subtle bugs, cause parsing errors, or create inconsistencies that are difficult to detect and troubleshoot.",
+      "technicalDetailsTitle": "Technical Details: How Whitespace Removal Works",
+      "technicalDetailsP1": "The Remove Whitespace tool employs advanced regex (regular expression) pattern matching to identify and eliminate whitespace characters. The core regex pattern used is /\\s+/g, where \\s matches any whitespace character according to JavaScript's Unicode-aware whitespace definition, the + quantifier matches one or more consecutive whitespace characters, and the g flag ensures global matching throughout the entire input string.",
+      "technicalDetailsP2": "This regex pattern is comprehensive and matches all standard whitespace characters defined in the Unicode standard, including: regular spaces, tabs, line feeds, carriage returns, form feeds, vertical tabs, non-breaking spaces, zero-width spaces, thin spaces, hair spaces, mathematical spaces, ideographic spaces, and many other Unicode whitespace variants. The tool processes the entire input string in a single pass, making it highly efficient even for large text blocks.",
+      "technicalDetailsP3": "The implementation uses JavaScript's native String.replace() method with the regex pattern, which is optimized for performance and handles Unicode correctly. This ensures that the tool works accurately with text in any language, including languages with complex scripts, right-to-left languages, and languages with extensive Unicode character sets. The processing happens entirely client-side, meaning your text never leaves your browser and is never transmitted over the network.",
+      "howWorksTitle": "How the Remove Whitespace Tool Works: Step-by-Step Process",
+      "howWorksP1": "The Remove Whitespace tool follows a straightforward, deterministic process that ensures consistent, reliable results every time you use it. Understanding this process helps you use the tool effectively and predict the output accurately.",
+      "step1Title": "Step 1: Input Processing",
+      "step1P1": "When you paste or type text into the input field, the tool immediately captures the entire input string. The tool accepts any plain text content, including text copied from documents, web pages, code editors, spreadsheets, databases, or any other source. There are no restrictions on text length, language, or character encoding—the tool handles Unicode text of any size.",
+      "step2Title": "Step 2: Whitespace Detection",
+      "step2P1": "The tool applies a comprehensive regex pattern that scans the entire input string to identify every whitespace character. This pattern matches all Unicode whitespace characters, ensuring that no whitespace variant is missed. The detection happens in a single pass through the string, making the process highly efficient.",
+      "step3Title": "Step 3: Whitespace Removal",
+      "step3P1": "Once all whitespace characters are identified, the tool removes them completely, replacing them with nothing (empty string). This means that consecutive whitespace characters are all removed, and non-whitespace characters that were separated by whitespace are now directly adjacent to each other in the output.",
+      "step4Title": "Step 4: Output Generation",
+      "step4P1": "The processed text appears in the output field as a continuous string with all whitespace removed. The output preserves the exact order of all non-whitespace characters from the input, ensuring that your content structure remains intact while only the formatting whitespace is eliminated.",
+      "useCasesTitle": "Comprehensive Use Cases for Remove Whitespace",
+      "useCasesP1": "The Remove Whitespace tool serves a wide variety of professional and technical use cases across multiple industries and applications. Understanding these scenarios helps you identify when this tool can solve your specific problems.",
+      "useCasesDevelopersTitle": "For Developers and Programmers",
+      "useCasesDevelopersP1": "Developers frequently need to remove whitespace when working with APIs, generating identifiers, processing user input, or handling data transformations. Common scenarios include:",
+      "useCasesDevelopersItem1": "Creating URL slugs, API keys, or unique identifiers that must be whitespace-free for proper system integration",
+      "useCasesDevelopersItem2": "Preparing strings for hash functions, checksums, or cryptographic operations where whitespace would alter the result",
+      "useCasesDevelopersItem3": "Processing user input from forms or text fields before validation or storage in databases",
+      "useCasesDevelopersItem4": "Generating code or configuration files where whitespace needs to be minimized for size or compatibility",
+      "useCasesDevelopersItem5": "Preparing data for JSON serialization, XML encoding, or other data formats with strict whitespace requirements",
+      "useCasesDataAnalystsTitle": "For Data Analysts and Scientists",
+      "useCasesDataAnalystsP1": "Data professionals use whitespace removal for data cleaning, normalization, and processing:",
+      "useCasesDataAnalystsItem1": "Normalizing text data before analysis to ensure consistent formatting across datasets",
+      "useCasesDataAnalystsItem2": "Preparing data for machine learning models where whitespace can affect feature extraction",
+      "useCasesDataAnalystsItem3": "Cleaning imported data from external sources that may contain inconsistent whitespace",
+      "useCasesDataAnalystsItem4": "Creating compact data representations for efficient storage or transmission",
+      "useCasesDataAnalystsItem5": "Preparing text for text mining, natural language processing, or sentiment analysis pipelines",
+      "useCasesContentCreatorsTitle": "For Content Creators and Marketers",
+      "useCasesContentCreatorsP1": "Content professionals use this tool for various content preparation tasks:",
+      "useCasesContentCreatorsItem1": "Creating URL-friendly slugs from titles or headings without spaces",
+      "useCasesContentCreatorsItem2": "Generating social media handles, usernames, or identifiers that cannot contain spaces",
+      "useCasesContentCreatorsItem3": "Preparing text for meta tags, alt text, or other HTML attributes where whitespace needs to be controlled",
+      "useCasesContentCreatorsItem4": "Creating compact text for SMS, push notifications, or character-limited platforms",
+      "useCasesBusinessTitle": "For Business and Enterprise Applications",
+      "useCasesBusinessP1": "Business applications often require whitespace removal for system integration and data processing:",
+      "useCasesBusinessItem1": "Preparing customer data, product codes, or inventory identifiers for legacy system integration",
+      "useCasesBusinessItem2": "Generating invoice numbers, order IDs, or transaction codes that must be whitespace-free",
+      "useCasesBusinessItem3": "Processing data for EDI (Electronic Data Interchange) systems with strict formatting requirements",
+      "useCasesBusinessItem4": "Creating compact data formats for efficient database storage or archival systems",
+      "comparisonTitle": "Remove Whitespace vs. Other Text Tools: Understanding the Differences",
+      "comparisonP1": "It's important to understand how Remove Whitespace differs from other similar text processing tools to choose the right tool for your needs.",
+      "comparisonSpaceRemoverTitle": "Remove Whitespace vs. Space Remover",
+      "comparisonSpaceRemoverP1": "A Space Remover typically removes extra spaces, normalizes spacing, or collapses multiple spaces into single spaces while preserving line breaks and other formatting. Remove Whitespace is more aggressive—it removes ALL whitespace characters completely, including spaces, tabs, and line breaks, creating a single continuous string.",
+      "comparisonTrimTitle": "Remove Whitespace vs. Trim",
+      "comparisonTrimP1": "Trim functions remove whitespace only from the beginning and end of strings, preserving all internal whitespace. Remove Whitespace removes whitespace from everywhere in the text, including the beginning, middle, and end.",
+      "comparisonNormalizeTitle": "Remove Whitespace vs. Normalize Whitespace",
+      "comparisonNormalizeP1": "Whitespace normalization tools standardize whitespace (e.g., converting tabs to spaces, normalizing line endings) while preserving the overall structure. Remove Whitespace eliminates all whitespace entirely, removing structure and creating a continuous string.",
+      "bestPracticesTitle": "Best Practices for Using Remove Whitespace",
+      "bestPracticesP1": "Following best practices ensures you get the most value from the Remove Whitespace tool while avoiding potential issues.",
+      "bestPracticesItem1": "Always keep a backup of your original text before processing, as whitespace removal is typically irreversible without the original",
+      "bestPracticesItem2": "Review the output carefully, especially when processing code, structured data, or text where whitespace might be meaningful",
+      "bestPracticesItem3": "Use this tool specifically when you need complete whitespace removal—don't use it for general text cleanup where you might want to preserve some formatting",
+      "bestPracticesItem4": "Test with a small sample first when processing large amounts of text to ensure the output meets your requirements",
+      "bestPracticesItem5": "Be cautious when processing code, JSON, XML, or other structured formats where whitespace removal could break syntax",
+      "privacySecurityTitle": "Privacy and Security: How Your Data is Protected",
+      "privacySecurityP1": "The Remove Whitespace tool is designed with privacy and security as fundamental principles. All processing happens entirely in your browser using client-side JavaScript—your text never leaves your device and is never transmitted to any server.",
+      "privacySecurityP2": "This local processing approach means: no data is uploaded to external servers, no content is stored in databases, no tracking or analytics capture your input, no cookies or session data retain your text, and you have complete control over your data throughout the entire process. This makes the tool safe for sensitive information, proprietary content, confidential documents, and any text you want to keep completely private.",
+      "limitationsTitle": "Limitations and When Not to Use Remove Whitespace",
+      "limitationsP1": "While Remove Whitespace is powerful for its intended use cases, there are situations where you should not use it or should use it with extreme caution.",
+      "limitationsItem1": "Do not use for code, JSON, XML, YAML, or other structured formats where whitespace is syntactically meaningful and removal would break the format",
+      "limitationsItem2": "Avoid using for poetry, formatted text, or content where whitespace creates visual structure or meaning",
+      "limitationsItem3": "Do not use for addresses, legal documents, or formatted lists where whitespace preserves important structure",
+      "limitationsItem4": "Be cautious with multilingual text where whitespace rules vary between languages and removal might affect readability",
+      "limitationsItem5": "Do not use as a general text cleanup tool when you actually need whitespace normalization or selective removal",
+      "conclusionTitle": "Conclusion: Mastering Whitespace Removal for Your Workflow",
+      "conclusionP1": "The Remove Whitespace tool provides a simple, powerful, and secure solution for eliminating all whitespace characters from your text. Whether you're creating identifiers, preparing data for APIs, processing text for specialized systems, or working on any project that requires completely whitespace-free content, this tool delivers reliable results instantly.",
+      "conclusionP2": "With its local processing architecture, the tool ensures your data remains completely private and secure—no uploads, no storage, no tracking. This makes it ideal for sensitive information and proprietary content. The tool's comprehensive Unicode support means it works accurately with text in any language, script, or character set.",
+      "conclusionP3": "Understanding when and how to use Remove Whitespace effectively is a valuable skill in modern digital workflows. By following best practices, understanding the tool's capabilities and limitations, and applying it to appropriate use cases, you can streamline your text processing tasks and achieve consistent, reliable results. Whether you're a developer, data analyst, content creator, or business professional, this tool can save time and ensure accuracy in your whitespace removal needs."
+    },
+    "faqs": {
+      "faq1": {
+        "category": "General",
+        "question": "What does the Remove Whitespace tool do?",
+        "answer": "The Remove Whitespace tool removes all whitespace characters from your text, including spaces, tabs, line breaks, and other Unicode whitespace characters. It creates a continuous string with no spacing or breaks."
+      },
+      "faq2": {
+        "category": "General",
+        "question": "What types of whitespace are removed?",
+        "answer": "The tool removes all types of whitespace characters, including regular spaces, tabs, newlines, carriage returns, form feeds, and other Unicode whitespace characters. Everything that creates spacing or formatting is removed."
+      },
+      "faq3": {
+        "category": "Technical",
+        "question": "How does the tool identify whitespace?",
+        "answer": "The tool uses a regex pattern (\\s+) that matches all Unicode whitespace characters. This includes spaces, tabs, newlines, and other whitespace characters defined in the Unicode standard."
+      },
+      "faq4": {
+        "category": "Usage",
+        "question": "When should I use this tool?",
+        "answer": "Use this tool when you need to create a continuous string without any whitespace, such as for creating identifiers, preparing text for APIs, processing data for systems that require no whitespace, or creating compact strings for storage or transmission."
+      },
+      "faq5": {
+        "category": "Formatting",
+        "question": "Will the tool preserve other characters?",
+        "answer": "Yes, the tool only removes whitespace characters. All other characters, including letters, numbers, punctuation, and special characters, are preserved exactly as they appear in the input."
+      },
+      "faq6": {
+        "category": "Formatting",
+        "question": "What happens to punctuation and special characters?",
+        "answer": "Punctuation and special characters are preserved exactly as they appear in the input. Only whitespace characters are removed, so your text content remains intact."
+      },
+      "faq7": {
+        "category": "Usage",
+        "question": "Can I use this tool for code or structured data?",
+        "answer": "While the tool can remove whitespace from any text, be cautious when using it with code or structured data where whitespace may be meaningful. The tool removes ALL whitespace, which could break code syntax or data structure."
+      },
+      "faq8": {
+        "category": "General",
+        "question": "Is the tool free to use?",
+        "answer": "Yes, the Remove Whitespace tool is completely free to use. There are no limits on usage, no account required, and no hidden fees."
+      },
+      "faq9": {
+        "category": "Technical",
+        "question": "How is my data handled?",
+        "answer": "Your data is processed entirely in your browser. Nothing is sent to any server, and no data is stored. Your text remains private and secure throughout the process."
+      },
+      "faq10": {
+        "category": "Formatting",
+        "question": "Does the tool work with Unicode characters?",
+        "answer": "Yes, the tool works with all Unicode characters. It removes Unicode whitespace characters while preserving all other Unicode characters, including emojis, special symbols, and characters from any language."
+      },
+      "faq11": {
+        "category": "Workflow",
+        "question": "Can I undo the changes?",
+        "answer": "The tool does not provide an undo function. However, your original text remains in the input field, so you can always refer back to it. For safety, keep a copy of your original text before processing."
+      },
+      "faq12": {
+        "category": "Usage",
+        "question": "What's the difference between this and a space remover?",
+        "answer": "A space remover typically removes extra spaces or normalizes spacing, while this tool removes ALL whitespace characters completely, including spaces, tabs, and line breaks, creating a continuous string with no spacing."
+      },
+      "faq13": {
+        "category": "Limits",
+        "question": "Is there a limit on text length?",
+        "answer": "The tool can process text of any length that your browser can handle. Very large texts may take longer to process, but there are no artificial limits imposed by the tool."
+      },
+      "faq14": {
+        "category": "Technical",
+        "question": "Does the tool work offline?",
+        "answer": "Yes, the tool works entirely in your browser using client-side JavaScript. Once the page is loaded, you can use it offline without an internet connection."
+      },
+      "faq15": {
+        "category": "SEO",
+        "question": "Will removing whitespace affect SEO?",
+        "answer": "This tool is not designed for SEO purposes. Removing whitespace from content would make it unreadable and would negatively impact SEO. Use this tool only for technical purposes like creating identifiers or processing data."
+      },
+      "faq16": {
+        "category": "Privacy",
+        "question": "Is my text stored or shared?",
+        "answer": "No, your text is never stored or shared. The tool processes everything locally in your browser, and no data is transmitted to any server. Your privacy is completely protected."
+      },
+      "faq17": {
+        "category": "Compatibility",
+        "question": "Which browsers are supported?",
+        "answer": "The tool works in all modern browsers that support JavaScript, including Chrome, Firefox, Safari, and Edge. It uses standard JavaScript features available in all current browsers."
+      },
+      "faq18": {
+        "category": "Limits",
+        "question": "Can I process multiple texts at once?",
+        "answer": "The tool processes one text at a time. You can paste your text, process it, copy the result, clear the fields, and then process another text. For batch processing, you would need to process each text separately."
+      },
+      "faq19": {
+        "category": "Workflow",
+        "question": "How do I copy the result?",
+        "answer": "After processing, click the 'Copy' button to copy the result to your clipboard. You can then paste it wherever you need it. The original input text remains in the input field for reference."
+      },
+      "faq20": {
+        "category": "Technical",
+        "question": "What regex pattern does the tool use?",
+        "answer": "The tool uses the regex pattern /\\s+/g, which matches one or more whitespace characters. This includes all Unicode whitespace characters defined in the JavaScript specification."
+      },
+      "faq21": {
+        "category": "General",
+        "question": "Can I use this tool for passwords or sensitive data?",
+        "answer": "Yes, the tool is safe to use with sensitive data because it processes everything locally in your browser. No data is transmitted or stored. However, always follow your organization's security policies when handling sensitive information."
+      },
+      "faq22": {
+        "category": "Workflow",
+        "question": "How do I clear the input and output?",
+        "answer": "Click the 'Clear' button to clear both the input and output fields. This allows you to start fresh with new text."
+      },
+      "faq23": {
+        "category": "Technical",
+        "question": "Does the tool handle right-to-left languages?",
+        "answer": "Yes, the tool works correctly with right-to-left languages like Arabic and Hebrew. It removes whitespace while preserving the actual characters and their order, regardless of text direction. The output will be a continuous string in the same direction as the input."
+      },
+      "faq24": {
+        "category": "Formatting",
+        "question": "What happens to numbers and special characters?",
+        "answer": "Numbers, special characters, punctuation, and all non-whitespace characters are preserved exactly as they appear in the input. Only whitespace characters are removed, so mathematical expressions, currency symbols, and other special characters remain intact."
+      },
+      "faq25": {
+        "category": "Usage",
+        "question": "Can I use this tool for preparing text for regex patterns?",
+        "answer": "Yes, removing whitespace can be useful when preparing text for regex matching, especially when you need to match patterns without worrying about whitespace variations. However, be aware that the resulting string will have no spaces, which may affect pattern matching if your regex expects whitespace."
+      },
+      "faq26": {
+        "category": "Technical",
+        "question": "How does the tool handle very long texts?",
+        "answer": "The tool can handle texts of virtually any length that your browser can process. Very long texts (millions of characters) may take a few seconds to process, but the tool is efficient and should complete the operation. If you encounter performance issues with extremely large texts, consider processing in smaller chunks."
+      },
+      "faq27": {
+        "category": "Workflow",
+        "question": "Is the output deterministic?",
+        "answer": "Yes, the output is completely deterministic. Given the same input, you will always get the exact same output, regardless of when you run the tool or which browser you use. This makes the tool reliable for automated workflows and testing."
+      },
+      "faq28": {
+        "category": "General",
+        "question": "Can I use this tool offline?",
+        "answer": "Yes, once the page is loaded, the tool works completely offline. All processing happens in your browser using client-side JavaScript, so no internet connection is required after the initial page load. This makes it useful for working in environments with limited connectivity."
+      }
+    },
+    "faqHeading": "Remove Whitespace - Frequently Asked Questions",
+    "faqIntro": "Detailed answers about removing all whitespace characters from text."
+  },
   "ChatGPTDetectorPage": {
     "writeUp": {
       "title": "ChatGPT Detector: Free AI Content Detection Tool for Identifying ChatGPT-Generated Text",
@@ -5630,6 +5893,506 @@
       "errorSizeRange": "Size must be between 1 and 10.",
       "errorSizeTooLarge": "Size cannot be greater than the number of items ({count}).",
       "errorFullPermutationLimit": "For full permutations, maximum 10 items allowed. Use size option for larger sets."
+    }
+  },
+  "AICodeCleanerPage": {
+    "writeUp": {
+      "title": "AI Code Cleaner: The Ultimate Guide to Cleaning and Formatting AI-Generated Code",
+      "introductionTitle": "Introduction to AI Code Cleaning",
+      "introductionP1": "AI Code Cleaner is a specialized, browser-based tool designed to clean and normalize code formatting from AI-generated code. As artificial intelligence becomes increasingly integrated into software development workflows, developers face new challenges with code quality and consistency. AI models like ChatGPT, GitHub Copilot, and other code generation assistants produce functional code, but they often introduce formatting inconsistencies that can cause problems in version control systems, break team coding standards, and make code harder to read and maintain.",
+      "introductionP2": "When AI models generate code, they frequently include formatting issues such as mixed indentation styles (tabs vs spaces), trailing whitespace, irregular line breaks, hidden Unicode characters, inconsistent operator spacing, and non-standard whitespace patterns. These seemingly minor issues can create significant problems: they generate unnecessary diff noise in version control systems like Git, violate team coding standards, trigger linter warnings, and reduce code readability. AI Code Cleaner addresses these issues systematically, transforming messy AI-generated code into clean, professional, production-ready code.",
+      "introductionP3": "The tool operates entirely in your browser using client-side JavaScript, ensuring complete privacy and instant processing speed. It processes code locally without sending it to any server, making it safe for proprietary code, sensitive projects, and enterprise environments. With customizable options, you can control exactly which cleaning operations are applied to match your team's coding standards and preferences. Whether you're working with JavaScript, Python, Java, C++, or any other text-based programming language, AI Code Cleaner provides universal code formatting normalization.",
+      "introductionP4": "This comprehensive guide explores everything you need to know about AI Code Cleaner, from understanding why code cleaning matters to implementing best practices in your development workflow. We'll examine the specific formatting issues AI-generated code presents, how the tool addresses each problem, and how to integrate code cleaning into your development process effectively.",
+      "whatIsTitle": "What is AI Code Cleaner?",
+      "whatIsP1": "AI Code Cleaner is a web-based code formatting tool specifically designed to address the formatting inconsistencies commonly found in AI-generated code. Unlike general-purpose code formatters like Prettier or Black, which focus on language-specific syntax formatting, AI Code Cleaner targets the universal formatting issues that affect code regardless of programming language: whitespace normalization, indentation consistency, line ending standardization, and invisible character removal.",
+      "whatIsP2": "The tool processes code through multiple cleaning stages, each addressing a specific category of formatting problems. It operates on the principle that clean, consistent formatting improves code readability, reduces version control conflicts, and makes code easier to maintain. By normalizing formatting at the character and whitespace level, AI Code Cleaner ensures that code meets professional standards before it enters your codebase.",
+      "whatIsP3": "One of the key differentiators of AI Code Cleaner is its language-agnostic approach. While tools like ESLint, Prettier, and Black are excellent for language-specific formatting, they require configuration and may not catch all formatting issues, especially those introduced by AI models. AI Code Cleaner works at a more fundamental level, cleaning code before it reaches language-specific formatters, ensuring a solid foundation for further processing.",
+      "whyNeededTitle": "Why AI-Generated Code Needs Cleaning",
+      "whyNeededP1": "AI code generation has revolutionized software development, enabling developers to write code faster and explore solutions more efficiently. However, this speed comes with a trade-off: AI models prioritize functionality over formatting consistency. Understanding why AI-generated code needs cleaning helps developers make informed decisions about when and how to use cleaning tools.",
+      "formattingIssuesTitle": "Common Formatting Issues in AI-Generated Code",
+      "formattingIssuesP1": "AI models generate code that works, but the formatting often leaves much to be desired. Here are the most common formatting problems developers encounter:",
+      "formattingIssuesItem1": "Mixed Indentation: AI models may use tabs in some places and spaces in others, or inconsistent numbers of spaces. This creates visual confusion and violates most coding standards.",
+      "formattingIssuesItem2": "Trailing Whitespace: Lines ending with spaces or tabs are invisible to the eye but create unnecessary diff noise in version control systems. They also violate many linting rules.",
+      "formattingIssuesItem3": "Invisible Unicode Characters: Zero-width spaces, non-breaking spaces, and other invisible characters can cause compilation errors, break string comparisons, and create mysterious bugs that are difficult to diagnose.",
+      "formattingIssuesItem4": "Inconsistent Line Endings: Mixing Windows (CRLF) and Unix (LF) line endings causes issues in version control systems and can break scripts that expect consistent line endings.",
+      "versionControlTitle": "Version Control System Impact",
+      "versionControlP1": "Formatting inconsistencies create significant problems in version control systems like Git. When code contains mixed indentation or trailing whitespace, every formatting change creates a diff, making it difficult to see actual code changes. This 'diff noise' slows down code reviews, makes merge conflicts more likely, and obscures the real changes in pull requests.",
+      "versionControlP2": "Teams using Git hooks with pre-commit formatting checks will find that AI-generated code often fails these checks, requiring manual cleanup before commits. AI Code Cleaner automates this process, ensuring code passes formatting checks on the first try. This saves time, reduces frustration, and maintains clean commit history.",
+      "readabilityTitle": "Code Readability and Maintainability",
+      "readabilityP1": "Consistent formatting is essential for code readability. When code uses mixed indentation or inconsistent spacing, it becomes harder to understand the code structure, identify logical blocks, and spot errors. Professional code follows consistent formatting standards that make it easier for team members to read, understand, and modify code.",
+      "readabilityP2": "Maintainability suffers when formatting is inconsistent. Developers spend mental energy parsing inconsistent formatting instead of focusing on code logic. Over time, inconsistent formatting accumulates, making codebases harder to maintain. AI Code Cleaner helps establish consistent formatting from the start, preventing formatting debt from accumulating.",
+      "featuresTitle": "Key Features of AI Code Cleaner",
+      "featuresP1": "AI Code Cleaner provides comprehensive code cleaning capabilities through a set of focused, customizable features. Each feature addresses a specific category of formatting issues, allowing developers to tailor the cleaning process to their needs.",
+      "trailingSpacesTitle": "Trailing Space Removal",
+      "trailingSpacesP1": "Trailing spaces are spaces or tabs at the end of lines that serve no purpose but create problems. They're invisible in most code editors, making them easy to miss, but they cause issues in version control systems and violate many linting rules. AI Code Cleaner removes all trailing whitespace from every line, ensuring clean code that passes linting checks.",
+      "trailingSpacesP2": "This feature is particularly important for teams using automated linting in their CI/CD pipelines. Trailing spaces trigger warnings in most linters, and fixing them manually is tedious. AI Code Cleaner handles this automatically, saving time and ensuring consistency across the codebase.",
+      "indentationTitle": "Indentation Normalization",
+      "indentationP1": "Consistent indentation is fundamental to readable code. AI Code Cleaner normalizes indentation to 2 spaces, which is the most common standard in modern development. It detects the existing indentation pattern in your code and converts it to consistent 2-space indentation throughout, regardless of whether the original used tabs, 4 spaces, or mixed styles.",
+      "indentationP2": "The tool preserves the logical structure of your code while normalizing the visual presentation. Nested blocks maintain their relative indentation levels, ensuring that the code's structure remains intact while the formatting becomes consistent. This is especially valuable when working with code that has mixed indentation from multiple sources.",
+      "zeroWidthTitle": "Zero-Width Character Removal",
+      "zeroWidthP1": "Invisible Unicode characters like zero-width spaces, zero-width non-joiners, and byte order marks can cause mysterious bugs. They're invisible in code editors but can break string comparisons, cause parsing errors, and create issues that are extremely difficult to diagnose. AI Code Cleaner identifies and removes all these problematic characters, ensuring clean, reliable code.",
+      "zeroWidthP2": "These characters often find their way into code when copying from web pages, documentation, or other sources. AI models may also introduce them during code generation. Removing them proactively prevents hard-to-debug issues and ensures code behaves consistently across different environments.",
+      "lineEndingsTitle": "Line Ending Normalization",
+      "lineEndingsP1": "Different operating systems use different line ending conventions: Windows uses CRLF (\\r\\n), Unix/Linux/Mac use LF (\\n), and older Mac systems used CR (\\r). Mixing line endings causes problems in version control systems and can break scripts. AI Code Cleaner normalizes all line endings to Unix style (LF), which is the standard for most modern development environments.",
+      "lineEndingsP2": "This normalization is especially important for cross-platform development teams. When developers on different operating systems work on the same codebase, inconsistent line endings can cause merge conflicts and other issues. Normalizing to Unix-style line endings ensures consistency across all platforms.",
+      "blankLinesTitle": "Extra Blank Line Removal",
+      "blankLinesP1": "AI-generated code sometimes includes excessive blank lines that serve no purpose. While some blank lines improve readability, too many create visual clutter and waste vertical space. AI Code Cleaner removes extra blank lines while preserving intentional spacing that improves code structure.",
+      "whitespaceTitle": "Whitespace Normalization",
+      "whitespaceP1": "Inconsistent whitespace usage makes code harder to read. AI Code Cleaner normalizes whitespace patterns, ensuring consistent spacing throughout your code. This includes collapsing multiple spaces into single spaces where appropriate and ensuring consistent spacing around operators and keywords.",
+      "operatorsTitle": "Operator Spacing Cleanup",
+      "operatorsP1": "Consistent spacing around operators improves code readability. AI Code Cleaner ensures proper spacing around operators like =, +, -, *, /, and others, making code easier to read and more consistent with common coding standards. This feature helps maintain professional code appearance and improves readability.",
+      "howItWorksTitle": "How AI Code Cleaner Works",
+      "howItWorksP1": "AI Code Cleaner processes code through a series of cleaning stages, each designed to address specific formatting issues. Understanding how the tool works helps you use it effectively and understand what changes it makes to your code.",
+      "step1Title": "Step 1: Input Processing",
+      "step1P1": "When you paste code into AI Code Cleaner, the tool first analyzes the code structure. It identifies line boundaries, detects existing indentation patterns, and scans for problematic characters. This analysis phase ensures that cleaning operations preserve code logic while improving formatting.",
+      "step2Title": "Step 2: Selective Cleaning",
+      "step2P1": "Based on your selected options, AI Code Cleaner applies specific cleaning operations. Each operation is independent, allowing you to customize the cleaning process. The tool processes code line by line, applying selected transformations while preserving code structure and content.",
+      "step3Title": "Step 3: Output Generation",
+      "step3P1": "After processing, AI Code Cleaner generates cleaned code that maintains all original functionality while improving formatting consistency. The output is ready to copy and paste directly into your project, with all selected cleaning operations applied.",
+      "step4Title": "Step 4: Verification",
+      "step4P1": "The cleaned code preserves all comments, strings, and code logic. Only formatting and whitespace are modified, ensuring that the cleaned code behaves identically to the original. You can verify this by comparing functionality before and after cleaning.",
+      "bestPracticesTitle": "Best Practices for Using AI Code Cleaner",
+      "bestPracticesP1": "Effective use of AI Code Cleaner involves understanding when to use it, how to integrate it into your workflow, and how to combine it with other development tools. Following best practices ensures maximum benefit from the tool.",
+      "beforeCommitTitle": "Clean Before Committing",
+      "beforeCommitP1": "The most effective use of AI Code Cleaner is cleaning code before committing to version control. This ensures that your commits contain only meaningful changes, not formatting noise. Many teams integrate code cleaning into their pre-commit hooks, automatically cleaning code before it enters the repository.",
+      "codeReviewTitle": "Use in Code Review Workflows",
+      "codeReviewP1": "Cleaning AI-generated code before submitting pull requests makes code reviews more efficient. Reviewers can focus on logic and functionality rather than formatting issues. This speeds up the review process and improves code quality.",
+      "teamStandardsTitle": "Establish Team Standards",
+      "teamStandardsP1": "While AI Code Cleaner provides default settings, teams should establish standards for which cleaning options to use. Document these standards in your team's coding guidelines and ensure all team members use consistent settings. This ensures uniform code formatting across the entire codebase.",
+      "useCasesTitle": "Use Cases and Applications",
+      "useCasesP1": "AI Code Cleaner serves various use cases across different development scenarios. Understanding these use cases helps you identify when the tool can benefit your workflow.",
+      "aiGeneratedTitle": "Cleaning AI-Generated Code",
+      "aiGeneratedP1": "The primary use case is cleaning code generated by AI assistants like ChatGPT, GitHub Copilot, or other code generation tools. These tools produce functional code but often include formatting inconsistencies. AI Code Cleaner transforms this code into production-ready, professionally formatted code that meets team standards.",
+      "legacyCodeTitle": "Standardizing Legacy Code",
+      "legacyCodeP1": "When working with legacy codebases that have inconsistent formatting, AI Code Cleaner can help standardize formatting across the codebase. While it won't fix architectural issues, it can improve code readability and make maintenance easier by establishing consistent formatting standards.",
+      "crossPlatformTitle": "Cross-Platform Development",
+      "crossPlatformP1": "Teams working across different operating systems benefit from line ending normalization. AI Code Cleaner ensures consistent line endings regardless of which platform developers use, preventing version control issues and cross-platform compatibility problems.",
+      "securityTitle": "Security and Privacy",
+      "securityP1": "AI Code Cleaner processes all code entirely in your browser using client-side JavaScript. Your code never leaves your device, ensuring complete privacy and security. This makes the tool safe for proprietary code, sensitive projects, and enterprise environments where code security is paramount.",
+      "securityP2": "Unlike cloud-based code formatters that send your code to remote servers, AI Code Cleaner operates locally. This eliminates security concerns about code exposure, data breaches, or unauthorized access. Your code remains private throughout the cleaning process.",
+      "limitationsTitle": "Limitations and Considerations",
+      "limitationsP1": "While AI Code Cleaner is powerful, it has limitations. Understanding these limitations helps you use the tool effectively and know when to supplement it with other tools:",
+      "limitationsItem1": "Language-Specific Formatting: AI Code Cleaner focuses on universal formatting issues. For language-specific formatting (like Python's PEP 8 or JavaScript's specific style requirements), you may need additional tools like Black or Prettier.",
+      "limitationsItem2": "Code Logic: The tool only modifies formatting and whitespace. It does not fix logic errors, improve algorithms, or address code quality issues beyond formatting.",
+      "limitationsItem3": "Minified Code: While the tool works with minified code, it may reformat it in ways that change file size. For production minified code, consider disabling certain options to preserve the minified format.",
+      "comparisonTitle": "AI Code Cleaner vs. Other Tools",
+      "comparisonP1": "Understanding how AI Code Cleaner compares to other code formatting tools helps you choose the right tool for your needs and use them effectively together.",
+      "vsPrettierTitle": "AI Code Cleaner vs. Prettier",
+      "vsPrettierP1": "Prettier is a popular code formatter that focuses on language-specific syntax formatting. AI Code Cleaner complements Prettier by handling universal formatting issues that Prettier may miss, such as invisible characters and inconsistent line endings. Using both tools together provides comprehensive code formatting: AI Code Cleaner for universal issues, Prettier for language-specific formatting.",
+      "vsESLintTitle": "AI Code Cleaner vs. ESLint",
+      "vsESLintP1": "ESLint identifies code quality issues and enforces coding standards, but it doesn't automatically fix formatting. AI Code Cleaner actually fixes formatting issues, making code pass ESLint checks. They work well together: AI Code Cleaner fixes formatting, ESLint verifies code quality and style compliance.",
+      "conclusionTitle": "Conclusion: Integrating AI Code Cleaner into Your Workflow",
+      "conclusionP1": "AI Code Cleaner addresses a critical need in modern software development: maintaining code quality and consistency when working with AI-generated code. As AI code generation becomes more prevalent, tools like AI Code Cleaner become essential for maintaining professional code standards. The tool's browser-based operation ensures privacy and security, while its customizable options allow teams to adapt it to their specific needs.",
+      "conclusionP2": "By integrating AI Code Cleaner into your development workflow, you can ensure that AI-generated code meets your team's formatting standards from the start. This saves time, reduces code review overhead, and maintains clean version control history. Whether you're cleaning code before commits, standardizing legacy codebases, or ensuring cross-platform compatibility, AI Code Cleaner provides the tools you need to maintain professional code quality in the age of AI-assisted development."
+    },
+    "faqHeading": "Frequently Asked Questions",
+    "faqIntro": "Common questions about AI Code Cleaner:",
+    "faqs": {
+      "faq1": {
+        "category": "General",
+        "question": "What is AI Code Cleaner?",
+        "answer": "AI Code Cleaner is a formatting tool that cleans and normalizes code generated by AI models. It removes trailing spaces, fixes indentation, normalizes line endings, removes invisible Unicode characters, and standardizes whitespace to produce clean, properly formatted code."
+      },
+      "faq2": {
+        "category": "General",
+        "question": "What types of code does it support?",
+        "answer": "AI Code Cleaner works with any text-based code, including JavaScript, Python, Java, C++, HTML, CSS, JSON, and more. It focuses on formatting and whitespace rather than language-specific syntax, making it universal for all programming languages."
+      },
+      "faq3": {
+        "category": "Technical",
+        "question": "Does it change the code logic or functionality?",
+        "answer": "No. AI Code Cleaner only modifies formatting, whitespace, and invisible characters. It does not alter code logic, variable names, function calls, or any functional aspects of your code. The cleaned code behaves identically to the original."
+      },
+      "faq4": {
+        "category": "Usage",
+        "question": "How do I use the tool?",
+        "answer": "Simply paste your AI-generated code into the input field, select the cleaning options you want to apply, and click the 'Clean Code' button. The cleaned code will appear in the output field, ready to copy and use in your project."
+      },
+      "faq5": {
+        "category": "Formatting",
+        "question": "What indentation style does it use?",
+        "answer": "The tool normalizes indentation to 2 spaces by default, which is a common standard. It detects the existing indentation pattern in your code and converts it to a consistent 2-space indentation throughout."
+      },
+      "faq6": {
+        "category": "Formatting",
+        "question": "Does it preserve code comments?",
+        "answer": "Yes, all code comments are preserved. The tool only modifies whitespace and formatting, not the actual content of your code, including comments, strings, and code logic."
+      },
+      "faq7": {
+        "category": "Usage",
+        "question": "Can I customize which cleaning operations are applied?",
+        "answer": "Yes, the tool provides checkboxes for each cleaning operation, allowing you to enable or disable specific features like removing trailing spaces, normalizing indentation, removing zero-width characters, and more."
+      },
+      "faq8": {
+        "category": "General",
+        "question": "Is my code sent to a server?",
+        "answer": "No. All processing happens entirely in your browser. Your code never leaves your device, ensuring complete privacy and security for proprietary or sensitive code."
+      },
+      "faq9": {
+        "category": "Technical",
+        "question": "What invisible characters does it remove?",
+        "answer": "The tool removes zero-width spaces, zero-width non-joiners, zero-width joiners, byte order marks (BOM), and other invisible Unicode characters that can cause issues in code editors and version control systems."
+      },
+      "faq10": {
+        "category": "Formatting",
+        "question": "Does it work with minified code?",
+        "answer": "Yes, but be aware that the tool may reformat minified code, which could change its appearance. For minified code, you may want to disable certain options like 'Normalize Whitespace' to preserve the minified format."
+      },
+      "faq11": {
+        "category": "Technical",
+        "question": "How does AI Code Cleaner handle different programming languages?",
+        "answer": "AI Code Cleaner is language-agnostic and works with any text-based programming language. It focuses on universal formatting issues like whitespace, indentation, and line endings rather than language-specific syntax. This makes it effective for JavaScript, Python, Java, C++, HTML, CSS, JSON, and any other text-based code format."
+      },
+      "faq12": {
+        "category": "Best Practices",
+        "question": "Should I use AI Code Cleaner before or after other formatters like Prettier?",
+        "answer": "It's generally best to use AI Code Cleaner first to handle universal formatting issues like invisible characters and line endings, then use language-specific formatters like Prettier for syntax formatting. This two-stage approach ensures comprehensive code formatting."
+      },
+      "faq13": {
+        "category": "Best Practices",
+        "question": "Can I integrate AI Code Cleaner into my CI/CD pipeline?",
+        "answer": "While AI Code Cleaner is a browser-based tool, you can use it as part of your workflow by cleaning code before committing. For automated CI/CD integration, consider using command-line formatters, but AI Code Cleaner is excellent for manual pre-commit cleaning and code review preparation."
+      },
+      "faq14": {
+        "category": "Technical",
+        "question": "What happens to code comments and strings during cleaning?",
+        "answer": "All code comments and strings are preserved exactly as they are. AI Code Cleaner only modifies whitespace and formatting characters, never the actual content of your code. Comments, string literals, and code logic remain completely unchanged."
+      },
+      "faq15": {
+        "category": "Usage",
+        "question": "How large can the code files be that I clean?",
+        "answer": "AI Code Cleaner can handle reasonably large code files in the browser. Very large files (over 100,000 lines) may take longer to process, but the tool is designed to handle typical code snippets and files efficiently. For extremely large files, consider processing them in sections."
+      },
+      "faq16": {
+        "category": "Formatting",
+        "question": "Does the tool preserve my existing code structure and organization?",
+        "answer": "Yes, AI Code Cleaner preserves all code structure, organization, and logic. It only modifies formatting and whitespace, ensuring that your code's functionality, variable names, function definitions, and overall architecture remain exactly the same."
+      },
+      "faq17": {
+        "category": "Security",
+        "question": "Is my proprietary code safe when using AI Code Cleaner?",
+        "answer": "Absolutely. AI Code Cleaner processes all code entirely in your browser using client-side JavaScript. Your code never leaves your device or is transmitted to any server. This makes it completely safe for proprietary code, sensitive projects, and enterprise environments."
+      },
+      "faq18": {
+        "category": "Performance",
+        "question": "How fast is AI Code Cleaner?",
+        "answer": "AI Code Cleaner processes code instantly in your browser, typically completing cleaning operations in milliseconds for normal-sized code files. Since processing happens locally, there's no network latency, making it faster than cloud-based alternatives."
+      },
+      "faq19": {
+        "category": "Integration",
+        "question": "Can I use AI Code Cleaner with version control systems like Git?",
+        "answer": "Yes, AI Code Cleaner is designed to work seamlessly with Git and other version control systems. By cleaning code before committing, you reduce diff noise and make code reviews more efficient. Many developers use it as part of their pre-commit workflow."
+      },
+      "faq20": {
+        "category": "Troubleshooting",
+        "question": "What should I do if the cleaned code doesn't work as expected?",
+        "answer": "AI Code Cleaner only modifies formatting and whitespace, so functionality should never change. If you encounter issues, verify that you haven't accidentally modified the code logic. The tool preserves all code content, so any functionality issues likely existed in the original code."
+      },
+      "faq21": {
+        "category": "Troubleshooting",
+        "question": "Why does my code still have formatting issues after cleaning?",
+        "answer": "Check which cleaning options you have enabled. Some formatting issues may require specific options to be selected. Also, remember that AI Code Cleaner handles universal formatting issues; for language-specific formatting, you may need additional tools like Prettier or ESLint."
+      },
+      "faq22": {
+        "category": "Best Practices",
+        "question": "Should I clean code every time I use AI-generated code?",
+        "answer": "Yes, it's a best practice to clean AI-generated code before using it in your project. This ensures consistent formatting from the start and prevents formatting issues from accumulating in your codebase. Making cleaning part of your standard workflow saves time in the long run."
+      },
+      "faq23": {
+        "category": "Technical",
+        "question": "How does AI Code Cleaner detect and handle different indentation styles?",
+        "answer": "AI Code Cleaner analyzes your code to detect the existing indentation pattern, whether it uses tabs, spaces, or mixed styles. It then normalizes everything to consistent 2-space indentation while preserving the logical structure and nesting levels of your code."
+      },
+      "faq24": {
+        "category": "Usage",
+        "question": "Can I save my preferred cleaning options?",
+        "answer": "Currently, AI Code Cleaner doesn't save preferences between sessions, but you can quickly select your preferred options each time. For consistent team usage, document your preferred settings in your team's coding guidelines so everyone uses the same options."
+      },
+      "faq25": {
+        "category": "Formatting",
+        "question": "Does AI Code Cleaner work with code that has mixed line ending styles?",
+        "answer": "Yes, that's one of its key features. AI Code Cleaner detects and normalizes mixed line endings (CRLF, LF, CR) to consistent Unix-style (LF) line endings, which is the standard for most modern development environments and prevents version control issues."
+      },
+      "faq26": {
+        "category": "Technical",
+        "question": "What's the difference between AI Code Cleaner and a linter?",
+        "answer": "Linters like ESLint identify code quality issues and style violations but don't automatically fix them. AI Code Cleaner actually fixes formatting issues automatically. They complement each other: use AI Code Cleaner to fix formatting, then use a linter to verify code quality and catch other issues."
+      },
+      "faq27": {
+        "category": "Best Practices",
+        "question": "How do I ensure my team uses consistent cleaning settings?",
+        "answer": "Document your team's preferred AI Code Cleaner settings in your coding standards or style guide. Include which options should be enabled and provide examples. Consider creating a team checklist that includes code cleaning as a standard step before committing code."
+      },
+      "faq28": {
+        "category": "Integration",
+        "question": "Can AI Code Cleaner be used alongside other code quality tools?",
+        "answer": "Absolutely. AI Code Cleaner works well with other tools in your development stack. Use it for formatting cleanup, then use linters for code quality checks, formatters for language-specific formatting, and testing tools for functionality verification. Each tool serves a specific purpose in maintaining code quality."
+      }
+    },
+    "ui": {
+      "inputLabel": "Code Input",
+      "inputPlaceholder": "Paste your AI-generated code here...",
+      "outputLabel": "Cleaned Code",
+      "outputPlaceholder": "Cleaned code will appear here...",
+      "optionsTitle": "Cleaning Options",
+      "removeTrailingSpaces": "Remove trailing spaces",
+      "normalizeIndentation": "Normalize indentation (2 spaces)",
+      "removeZeroWidth": "Remove zero-width characters",
+      "normalizeLineEndings": "Normalize line endings (Unix style)",
+      "removeExtraBlankLines": "Remove extra blank lines",
+      "normalizeWhitespace": "Normalize whitespace",
+      "cleanOperators": "Clean operator spacing",
+      "cleanButton": "Clean Code",
+      "copyButton": "Copy",
+      "clearButton": "Clear"
+    }
+  },
+  "AICodeFixerPage": {
+    "writeUp": {
+      "title": "AI Code Fixer: Comprehensive Guide to Automatically Fixing Common Issues in AI-Generated Code",
+      "introductionTitle": "Introduction to AI Code Fixing",
+      "introductionP1": "AI Code Fixer is a specialized, browser-based tool designed to automatically identify and correct common code issues and formatting problems in AI-generated code. As developers increasingly rely on AI assistants like ChatGPT, GitHub Copilot, and other code generation tools, they encounter a new category of code quality issues: minor errors and inconsistencies that don't prevent code from running but create problems with code style, readability, and maintainability.",
+      "introductionP2": "AI models generate functional code, but they often introduce subtle issues such as inconsistent indentation, mixed quote styles, missing spaces around operators, common typos in programming keywords, bracket spacing inconsistencies, and syntax irregularities. While these issues may not cause immediate errors, they violate coding standards, trigger linter warnings, reduce code readability, and make code harder to maintain. AI Code Fixer automatically identifies and corrects these common issues, transforming problematic AI-generated code into clean, professional, standards-compliant code.",
+      "introductionP3": "The tool operates entirely in your browser using client-side JavaScript, ensuring complete privacy and instant processing. Your code never leaves your device, making it safe for proprietary code, sensitive projects, and enterprise environments. With customizable options, you can choose which fixes to apply, allowing you to maintain control over your code while benefiting from automated error correction. Whether you're working with JavaScript, Python, Java, or any other programming language, AI Code Fixer provides universal code fixing capabilities.",
+      "introductionP4": "This comprehensive guide explores everything you need to know about AI Code Fixer, from understanding the common issues it addresses to implementing best practices in your development workflow. We'll examine the specific problems AI-generated code presents, how the tool fixes each issue, and how to integrate automated code fixing into your development process effectively.",
+      "whatIsTitle": "What is AI Code Fixer?",
+      "whatIsP1": "AI Code Fixer is an automated code correction tool specifically designed to address the common issues found in AI-generated code. Unlike general-purpose linters that identify problems, AI Code Fixer actually fixes them automatically. It focuses on the types of errors that AI models commonly introduce: formatting inconsistencies, quote style mismatches, indentation problems, common typos, and syntax irregularities.",
+      "whatIsP2": "The tool processes code through multiple fixing stages, each addressing a specific category of common issues. It operates on the principle that automated fixing of common problems saves developers time and ensures code quality. By correcting issues automatically, AI Code Fixer allows developers to focus on logic and functionality rather than spending time on tedious formatting and syntax corrections.",
+      "whatIsP3": "One of the key advantages of AI Code Fixer is its language-agnostic approach combined with language-aware fixing. While it works with any text-based programming language, it understands common patterns across languages and can fix issues that are universal (like indentation) as well as language-specific (like quote consistency in JavaScript or Python).",
+      "whyNeededTitle": "Why AI-Generated Code Needs Fixing",
+      "whyNeededP1": "AI code generation has transformed software development, enabling rapid prototyping and code exploration. However, AI models prioritize functionality over code quality details. Understanding why AI-generated code needs fixing helps developers make informed decisions about when and how to use fixing tools.",
+      "commonIssuesTitle": "Common Issues in AI-Generated Code",
+      "commonIssuesP1": "AI models generate code that works, but it often contains issues that need correction. Here are the most common problems:",
+      "commonIssuesItem1": "Indentation Errors: AI models may use inconsistent indentation, mixing tabs and spaces or using incorrect indentation levels, making code structure unclear.",
+      "commonIssuesItem2": "Quote Inconsistency: Code may mix single and double quotes inconsistently, violating style guides and making code harder to read and maintain.",
+      "commonIssuesItem3": "Syntax Irregularities: Missing spaces around operators, incorrect bracket spacing, and other syntax issues that don't cause errors but violate coding standards.",
+      "commonIssuesItem4": "Common Typos: AI models sometimes introduce typos in programming keywords like 'fucntion' instead of 'function' or 'retrun' instead of 'return', which can cause runtime errors.",
+      "productivityTitle": "Productivity and Time Savings",
+      "productivityP1": "Manually fixing common code issues is time-consuming and tedious. AI Code Fixer automates this process, saving developers significant time. Instead of spending minutes or hours fixing formatting and syntax issues, developers can focus on logic, architecture, and functionality. This productivity gain becomes especially valuable when working with large amounts of AI-generated code.",
+      "productivityP2": "The tool also reduces cognitive load by handling routine corrections automatically. Developers can think about code logic and design rather than worrying about quote styles or indentation consistency. This mental bandwidth savings improves code quality and developer satisfaction.",
+      "qualityTitle": "Code Quality and Standards Compliance",
+      "qualityP1": "Consistent code quality is essential for maintainable codebases. AI Code Fixer ensures that AI-generated code meets team standards from the start, preventing code quality issues from accumulating. This is especially important in team environments where code quality standards must be maintained across all contributions.",
+      "featuresTitle": "Key Features of AI Code Fixer",
+      "featuresP1": "AI Code Fixer provides comprehensive code fixing capabilities through a set of focused, customizable features. Each feature addresses a specific category of common issues, allowing developers to tailor the fixing process to their needs.",
+      "indentationFixTitle": "Indentation Error Correction",
+      "indentationFixP1": "Consistent indentation is fundamental to readable code. AI Code Fixer automatically detects and corrects indentation errors, ensuring that code blocks are properly nested and visually structured. It normalizes indentation to consistent levels, making code structure immediately clear.",
+      "indentationFixP2": "The tool understands code structure and preserves logical relationships while fixing visual presentation. This ensures that fixed code maintains its original functionality while becoming more readable and maintainable.",
+      "quotesTitle": "Quote Consistency Fixing",
+      "quotesP1": "Mixed quote styles make code inconsistent and harder to read. AI Code Fixer detects the most common quote style in your code and standardizes all quotes to match. This ensures consistency across the entire codebase, making code easier to read and maintain.",
+      "quotesP2": "The tool handles both single and double quotes intelligently, preserving escaped quotes and understanding context. It ensures that quote changes don't break string functionality while achieving style consistency.",
+      "syntaxTitle": "Common Syntax Issue Correction",
+      "syntaxP1": "AI Code Fixer addresses common syntax issues like missing spaces around operators, incorrect bracket spacing, and other formatting problems that violate coding standards. These fixes improve code readability and ensure compliance with style guides.",
+      "syntaxP2": "The tool understands operator precedence and context, ensuring that spacing fixes don't change code meaning. It applies fixes intelligently, maintaining code functionality while improving appearance and standards compliance.",
+      "bracketsTitle": "Bracket Spacing Correction",
+      "bracketsP1": "Consistent spacing around brackets improves code readability. AI Code Fixer ensures proper spacing around parentheses, square brackets, and curly braces, making code easier to read and more consistent with common coding standards.",
+      "semicolonsTitle": "Trailing Semicolon Removal",
+      "semicolonsP1": "In languages where semicolons are optional (like JavaScript), trailing semicolons can be unnecessary. AI Code Fixer can optionally remove trailing semicolons, helping maintain consistent code style. This feature is optional and can be toggled based on your team's preferences.",
+      "typosTitle": "Common Typo Correction",
+      "typosP1": "AI models sometimes introduce typos in programming keywords. AI Code Fixer automatically detects and corrects common typos like 'fucntion' → 'function', 'retrun' → 'return', 'fals' → 'false', and 'ture' → 'true'. This prevents runtime errors and ensures code correctness.",
+      "typosP2": "The tool maintains a comprehensive dictionary of common programming keyword typos and their corrections. It only fixes whole words, ensuring that typos within strings or comments are not incorrectly modified.",
+      "howItWorksTitle": "How AI Code Fixer Works",
+      "howItWorksP1": "AI Code Fixer processes code through a series of fixing stages, each designed to address specific common issues. Understanding how the tool works helps you use it effectively and understand what changes it makes to your code.",
+      "step1Title": "Step 1: Code Analysis",
+      "step1P1": "When you paste code into AI Code Fixer, the tool first analyzes the code structure, identifying patterns, detecting issues, and understanding context. This analysis phase ensures that fixes are applied correctly and that code logic is preserved.",
+      "step2Title": "Step 2: Selective Fixing",
+      "step2P1": "Based on your selected options, AI Code Fixer applies specific fixing operations. Each operation is independent, allowing you to customize the fixing process. The tool processes code intelligently, applying fixes while preserving functionality and code structure.",
+      "step3Title": "Step 3: Output Generation",
+      "step3P1": "After processing, AI Code Fixer generates fixed code that maintains all original functionality while correcting identified issues. The output is ready to copy and paste directly into your project, with all selected fixes applied.",
+      "step4Title": "Step 4: Verification",
+      "step4P1": "The fixed code preserves all code logic, functionality, and structure. Only the identified issues are corrected, ensuring that fixed code behaves identically to the original while meeting higher quality standards.",
+      "bestPracticesTitle": "Best Practices for Using AI Code Fixer",
+      "bestPracticesP1": "Effective use of AI Code Fixer involves understanding when to use it, how to integrate it into your workflow, and how to combine it with other development tools. Following best practices ensures maximum benefit from the tool.",
+      "selectiveTitle": "Use Selective Fixing",
+      "selectiveP1": "Not all fixes are appropriate for all situations. Use the tool's customizable options to select only the fixes you need. For example, you might want to fix indentation and quotes but preserve existing semicolon usage. Selective fixing gives you control while benefiting from automation.",
+      "reviewTitle": "Always Review Fixed Code",
+      "reviewP1": "While AI Code Fixer is designed to preserve functionality, always review fixed code before committing. Verify that fixes are correct and that no unexpected changes were introduced. This review process ensures code quality and catches any edge cases.",
+      "testingTitle": "Test After Fixing",
+      "testingP1": "After using AI Code Fixer, test your code to ensure it still works correctly. While the tool is designed to preserve functionality, testing provides an additional safety check. This is especially important for production code or code that's part of critical systems.",
+      "useCasesTitle": "Use Cases and Applications",
+      "useCasesP1": "AI Code Fixer serves various use cases across different development scenarios. Understanding these use cases helps you identify when the tool can benefit your workflow.",
+      "aiGeneratedTitle": "Fixing AI-Generated Code",
+      "aiGeneratedP1": "The primary use case is fixing code generated by AI assistants like ChatGPT, GitHub Copilot, or other code generation tools. These tools produce functional code but often include minor issues. AI Code Fixer transforms this code into production-ready, standards-compliant code.",
+      "quickFixesTitle": "Quick Fixes for Common Issues",
+      "quickFixesP1": "When you encounter common code issues during development, AI Code Fixer can quickly fix them. Instead of manually correcting indentation, quotes, or typos, let the tool handle these routine corrections automatically, saving time and ensuring consistency.",
+      "learningTitle": "Learning and Code Quality Improvement",
+      "learningP1": "For developers learning new languages or coding standards, AI Code Fixer can help by automatically applying correct patterns. Seeing how issues are fixed helps developers learn proper coding practices and improve their code quality over time.",
+      "securityTitle": "Security and Privacy",
+      "securityP1": "AI Code Fixer processes all code entirely in your browser using client-side JavaScript. Your code never leaves your device, ensuring complete privacy and security. This makes the tool safe for proprietary code, sensitive projects, and enterprise environments where code security is paramount.",
+      "securityP2": "Unlike cloud-based code fixing services that send your code to remote servers, AI Code Fixer operates locally. This eliminates security concerns about code exposure, data breaches, or unauthorized access. Your code remains private throughout the fixing process.",
+      "limitationsTitle": "Limitations and Considerations",
+      "limitationsP1": "While AI Code Fixer is powerful, it has limitations. Understanding these limitations helps you use the tool effectively and know when to supplement it with other tools:",
+      "limitationsItem1": "Logic Errors: AI Code Fixer focuses on formatting and common syntax issues. It does not fix logic errors, algorithmic problems, or design issues. For these, you need code review, testing, and proper debugging tools.",
+      "limitationsItem2": "Complex Syntax: The tool handles common syntax issues but may not catch all edge cases or language-specific complexities. For comprehensive error checking, use proper compilers, linters, and language-specific tools.",
+      "limitationsItem3": "Code Architecture: AI Code Fixer fixes issues within code but doesn't improve code architecture, design patterns, or overall structure. These require human judgment and architectural expertise.",
+      "comparisonTitle": "AI Code Fixer vs. Other Tools",
+      "comparisonP1": "Understanding how AI Code Fixer compares to other code quality tools helps you choose the right tool for your needs and use them effectively together.",
+      "vsLintersTitle": "AI Code Fixer vs. Linters",
+      "vsLintersP1": "Linters like ESLint identify code quality issues but don't automatically fix them. AI Code Fixer actually fixes issues automatically. They complement each other: use AI Code Fixer to fix common issues, then use linters to catch remaining problems and verify code quality.",
+      "vsFormattersTitle": "AI Code Fixer vs. Code Formatters",
+      "vsFormattersP1": "Code formatters like Prettier focus on formatting code according to style guides. AI Code Fixer focuses on fixing common errors and issues. They serve different purposes and work well together: use AI Code Fixer to fix errors, then use formatters to apply comprehensive style formatting.",
+      "conclusionTitle": "Conclusion: Integrating AI Code Fixer into Your Workflow",
+      "conclusionP1": "AI Code Fixer addresses a critical need in modern software development: maintaining code quality when working with AI-generated code. As AI code generation becomes more prevalent, tools like AI Code Fixer become essential for ensuring that AI-generated code meets professional standards. The tool's browser-based operation ensures privacy and security, while its customizable options allow teams to adapt it to their specific needs.",
+      "conclusionP2": "By integrating AI Code Fixer into your development workflow, you can ensure that AI-generated code is corrected and improved before it enters your codebase. This saves time, improves code quality, and maintains professional standards. Whether you're fixing AI-generated code, correcting common issues, or learning proper coding practices, AI Code Fixer provides the tools you need to maintain code quality in the age of AI-assisted development."
+    },
+    "faqHeading": "Frequently Asked Questions",
+    "faqIntro": "Common questions about AI Code Fixer:",
+    "faqs": {
+      "faq1": {
+        "category": "General",
+        "question": "What is AI Code Fixer?",
+        "answer": "AI Code Fixer is an automated tool that fixes common code issues in AI-generated code, including indentation errors, quote inconsistencies, syntax problems, bracket spacing issues, and common typos in keywords."
+      },
+      "faq2": {
+        "category": "General",
+        "question": "What types of issues does it fix?",
+        "answer": "The tool fixes indentation problems, quote consistency (single vs double quotes), common syntax errors, bracket spacing, missing semicolons, and common typos in programming keywords like 'function', 'return', 'console', etc."
+      },
+      "faq3": {
+        "category": "Technical",
+        "question": "Does it fix all code errors?",
+        "answer": "No. AI Code Fixer focuses on formatting and common syntax issues. It does not fix logic errors, type errors, or complex syntax problems. For comprehensive error checking, use a proper code linter or compiler."
+      },
+      "faq4": {
+        "category": "Usage",
+        "question": "How do I use the tool?",
+        "answer": "Paste your AI-generated code into the input field, select which fixes you want to apply using the checkboxes, and click 'Fix Code'. The fixed code will appear in the output field, ready to copy."
+      },
+      "faq5": {
+        "category": "Formatting",
+        "question": "What quote style does it use?",
+        "answer": "The tool detects the most common quote style in your code and standardizes all quotes to match. By default, it prefers double quotes, but you can adjust this based on your codebase's style guide."
+      },
+      "faq6": {
+        "category": "Formatting",
+        "question": "Does it preserve my code structure?",
+        "answer": "Yes. The tool only fixes formatting and common issues. It does not restructure your code, change function names, or modify the overall code architecture."
+      },
+      "faq7": {
+        "category": "Usage",
+        "question": "Can I choose which fixes to apply?",
+        "answer": "Yes, the tool provides checkboxes for each type of fix, allowing you to enable or disable specific corrections like indentation fixing, quote consistency, syntax fixes, and more."
+      },
+      "faq8": {
+        "category": "General",
+        "question": "Is my code secure?",
+        "answer": "Yes. All processing happens entirely in your browser. Your code is never sent to any server, ensuring complete privacy and security for your proprietary code."
+      },
+      "faq9": {
+        "category": "Technical",
+        "question": "What common typos does it fix?",
+        "answer": "The tool fixes common typos in programming keywords such as 'fucntion' → 'function', 'retrun' → 'return', 'fals' → 'false', 'ture' → 'true', 'undefiend' → 'undefined', and similar common misspellings."
+      },
+      "faq10": {
+        "category": "Formatting",
+        "question": "Does it work with all programming languages?",
+        "answer": "Yes, the tool works with any text-based programming language. However, some fixes like semicolon removal are language-specific and should be used carefully based on your language's requirements."
+      },
+      "faq11": {
+        "category": "Technical",
+        "question": "How does AI Code Fixer handle different programming languages?",
+        "answer": "AI Code Fixer works with any text-based programming language, applying universal fixes like indentation and quote consistency. Some fixes, like semicolon removal, are language-aware and should be used appropriately based on your language's syntax requirements. The tool understands common patterns across languages while respecting language-specific conventions."
+      },
+      "faq12": {
+        "category": "Best Practices",
+        "question": "Should I fix code immediately after AI generation or wait?",
+        "answer": "It's best practice to fix code immediately after generation, before it enters your codebase. This ensures code quality from the start and prevents issues from accumulating. Fixing early also makes it easier to identify whether issues came from AI generation or were introduced later."
+      },
+      "faq13": {
+        "category": "Best Practices",
+        "question": "Can AI Code Fixer replace code review?",
+        "answer": "No, AI Code Fixer complements but doesn't replace code review. It fixes common formatting and syntax issues, but code review is still essential for logic verification, architecture assessment, and catching complex issues that automated tools can't identify."
+      },
+      "faq14": {
+        "category": "Technical",
+        "question": "What happens if AI Code Fixer makes an incorrect fix?",
+        "answer": "AI Code Fixer is designed to be conservative and preserve code functionality. However, if you notice an incorrect fix, you can simply not use that specific fix option or manually correct it. Always review fixed code before committing to ensure correctness."
+      },
+      "faq15": {
+        "category": "Usage",
+        "question": "How do I know which fixes to enable?",
+        "answer": "Start with the default fixes (indentation, quotes, syntax) which are generally safe. Enable additional fixes like semicolon removal only if they match your team's coding standards. When in doubt, enable fixes one at a time and review the results to see what works best for your codebase."
+      },
+      "faq16": {
+        "category": "Formatting",
+        "question": "Does AI Code Fixer change my code's functionality?",
+        "answer": "No, AI Code Fixer only fixes formatting and common syntax issues. It does not change code logic, variable names, function definitions, or any functional aspects. The fixed code should behave identically to the original, just with improved formatting and corrected common issues."
+      },
+      "faq17": {
+        "category": "Security",
+        "question": "Is my code secure when using AI Code Fixer?",
+        "answer": "Yes, absolutely. AI Code Fixer processes all code entirely in your browser. Your code never leaves your device or is transmitted to any server. This makes it completely safe for proprietary code, sensitive projects, and enterprise environments."
+      },
+      "faq18": {
+        "category": "Performance",
+        "question": "How fast is AI Code Fixer?",
+        "answer": "AI Code Fixer processes code instantly in your browser, typically completing fixes in milliseconds for normal-sized code files. Since all processing happens locally, there's no network latency, making it faster than cloud-based alternatives."
+      },
+      "faq19": {
+        "category": "Integration",
+        "question": "Can I use AI Code Fixer with linters and formatters?",
+        "answer": "Yes, AI Code Fixer works well with other tools. Use it to fix common issues first, then use linters to catch remaining problems and formatters to apply comprehensive style formatting. Each tool serves a specific purpose in maintaining code quality."
+      },
+      "faq20": {
+        "category": "Troubleshooting",
+        "question": "What if my code has errors after fixing?",
+        "answer": "AI Code Fixer only modifies formatting and common syntax issues, so it shouldn't introduce errors. If you encounter issues, they likely existed in the original code. Review the original code to verify, and consider that some fixes (like semicolon removal) may not be appropriate for your language."
+      },
+      "faq21": {
+        "category": "Troubleshooting",
+        "question": "Why doesn't AI Code Fixer fix all the issues in my code?",
+        "answer": "AI Code Fixer focuses on common formatting and syntax issues. It doesn't fix logic errors, complex syntax problems, or architectural issues. For comprehensive error checking, use proper compilers, linters, and language-specific tools in addition to AI Code Fixer."
+      },
+      "faq22": {
+        "category": "Best Practices",
+        "question": "Should I fix code before or after testing?",
+        "answer": "It's generally best to fix code before testing, as fixing common issues can reveal other problems. However, always test after fixing to ensure functionality is preserved. The fixing process should be transparent and not introduce new issues."
+      },
+      "faq23": {
+        "category": "Technical",
+        "question": "How does AI Code Fixer detect quote inconsistencies?",
+        "answer": "AI Code Fixer analyzes your code to identify the most common quote style (single or double quotes) and then standardizes all quotes to match that style. It handles escaped quotes intelligently and preserves string functionality while achieving consistency."
+      },
+      "faq24": {
+        "category": "Usage",
+        "question": "Can I use AI Code Fixer for code written by humans?",
+        "answer": "Yes, AI Code Fixer works with any code, not just AI-generated code. It can fix common issues in human-written code as well, making it useful for standardizing codebases, fixing legacy code, and maintaining consistency across team contributions."
+      },
+      "faq25": {
+        "category": "Formatting",
+        "question": "Does AI Code Fixer preserve code comments and documentation?",
+        "answer": "Yes, all code comments, documentation strings, and inline comments are preserved exactly as they are. AI Code Fixer only modifies code formatting and syntax, never the content of comments or documentation."
+      },
+      "faq26": {
+        "category": "Technical",
+        "question": "What's the difference between fixing and formatting?",
+        "answer": "Fixing addresses errors and issues that affect code correctness or standards compliance (like typos, indentation errors, quote inconsistencies). Formatting focuses on style and appearance (like spacing, line breaks, alignment). AI Code Fixer does both: it fixes errors and improves formatting."
+      },
+      "faq27": {
+        "category": "Best Practices",
+        "question": "How do I ensure my team uses AI Code Fixer consistently?",
+        "answer": "Document your team's preferred AI Code Fixer settings in your coding standards. Include which fixes should be enabled and provide examples. Consider making code fixing a standard step in your development workflow, especially when working with AI-generated code."
+      },
+      "faq28": {
+        "category": "Integration",
+        "question": "Can AI Code Fixer be integrated into automated workflows?",
+        "answer": "While AI Code Fixer is a browser-based tool, you can use it as part of your manual workflow before committing code. For fully automated CI/CD integration, you may need command-line alternatives, but AI Code Fixer is excellent for pre-commit fixing and code review preparation."
+      }
+    },
+    "ui": {
+      "inputLabel": "Code Input",
+      "inputPlaceholder": "Paste your AI-generated code here...",
+      "outputLabel": "Fixed Code",
+      "outputPlaceholder": "Fixed code will appear here...",
+      "optionsTitle": "Fix Options",
+      "fixIndentation": "Fix indentation",
+      "fixQuoteConsistency": "Fix quote consistency",
+      "fixCommonSyntax": "Fix common syntax issues",
+      "fixBracketSpacing": "Fix bracket spacing",
+      "removeTrailingSemicolons": "Remove trailing semicolons",
+      "fixCommonTypos": "Fix common typos",
+      "fixButton": "Fix Code",
+      "copyButton": "Copy",
+      "clearButton": "Clear"
     }
   }
 }

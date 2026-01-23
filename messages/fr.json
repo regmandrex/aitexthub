@@ -59,6 +59,11 @@
       "title": "Supprimer les sauts de ligne",
       "description": "Joint les lignes enveloppées en paragraphes propres en supprimant les sauts de ligne."
     },
+    "remove-whitespace": {
+      "title": "Supprimer les espaces blancs",
+      "description": "Supprimez tous les caractères d'espace blanc, y compris les espaces, tabulations et sauts de ligne du texte.",
+      "seoTitle": "Supprimer les espaces blancs en ligne - Supprimer tous les espaces, tabulations et sauts de ligne"
+    },
     "strip-html": {
       "title": "Supprimer le HTML",
       "description": "Supprime les balises HTML et renvoie du texte brut propre."
@@ -150,6 +155,16 @@
     "ai-watermark-remover": {
       "title": "Suppresseur de filigranes IA",
       "description": "Nettoie les artefacts de formatage, normalise l'Unicode et prépare le texte IA pour la publication."
+    },
+    "ai-code-cleaner": {
+      "title": "Nettoyeur de Code IA",
+      "description": "Nettoie et normalise le formatage du code, supprime les espaces de fin, corrige l'indentation et supprime les caractères invisibles du code généré par IA.",
+      "seoTitle": "Nettoyeur de Code IA - Nettoyer et Formater le Code Généré par IA"
+    },
+    "ai-code-fixer": {
+      "title": "Correcteur de Code IA",
+      "description": "Corrige les problèmes de code courants, les erreurs de syntaxe, les problèmes d'indentation et les incohérences de formatage dans le code généré par IA.",
+      "seoTitle": "Correcteur de Code IA - Corriger les Problèmes Courants dans le Code Généré par IA"
     },
     "gemini-space-remover": {
       "title": "Suppresseur d'espaces Gemini",
@@ -650,6 +665,254 @@
     },
     "faqHeading": "Supprimer les sauts de ligne - Questions fréquemment posées",
     "faqIntro": "Réponses détaillées sur la jointure de lignes, la préservation de paragraphes et l'évitement de problèmes de formatage."
+  },
+  "RemoveWhitespacePage": {
+    "ui": {
+      "inputLabel": "Texte d'entrée",
+      "inputPlaceholder": "Collez le texte avec des espaces blancs...",
+      "outputLabel": "Sortie",
+      "outputPlaceholder": "Le texte sans espaces blancs apparaîtra ici.",
+      "helperText": "Tous les espaces, tabulations et sauts de ligne seront supprimés.",
+      "removeButton": "Supprimer les espaces blancs",
+      "copyButton": "Copier",
+      "clearButton": "Effacer"
+    },
+    "writeUp": {
+      "title": "Supprimer les espaces blancs du texte - Guide complet de l'outil en ligne de suppression d'espaces blancs",
+      "introductionTitle": "Introduction à la suppression d'espaces blancs",
+      "introductionP1": "Supprimer les espaces blancs est un outil puissant de formatage de texte conçu pour éliminer tous les caractères d'espace blanc de votre texte, y compris les espaces, tabulations, sauts de ligne, retours chariot et autres caractères Unicode d'espace blanc. Cet outil complet est essentiel lorsque vous devez créer une chaîne continue sans aucun espacement, comme pour les slugs d'URL, identifiants uniques, paramètres d'API, ou lors du traitement de texte pour des applications spécifiques qui nécessitent un contenu complètement sans espaces blancs.",
+      "introductionP2": "Les caractères d'espace blanc sont des éléments de formatage invisibles qui créent l'espacement, l'indentation et la structure dans le texte. Bien que ces caractères soient cruciaux pour la lisibilité et le formatage approprié dans la plupart des contextes—des documents et du code au contenu web—il existe de nombreux scénarios professionnels et techniques où vous devez supprimer complètement tous les espaces blancs pour créer une chaîne compacte et continue. Cet outil fournit un moyen instantané, fiable et sécurisé de supprimer chaque type de caractère d'espace blanc de votre texte, garantissant que vous obtenez exactement le format dont vous avez besoin pour votre cas d'utilisation spécifique.",
+      "introductionP3": "L'outil Supprimer les espaces blancs sur gptcleanuptools.com traite votre texte entièrement localement dans votre navigateur en utilisant des motifs regex avancés de JavaScript, garantissant une confidentialité et une sécurité complètes. Contrairement aux outils basés sur serveur qui téléchargent votre contenu, cet outil ne transmet jamais vos données sur Internet. Il supprime tous les types de caractères d'espace blanc de manière complète, y compris les espaces réguliers, tabulations, sauts de ligne, espaces insécables, espaces de largeur zéro et autres caractères Unicode d'espace blanc, vous laissant avec une chaîne parfaitement propre et continue prête à être utilisée immédiatement.",
+      "introductionP4": "Ce guide complet explore tout ce que vous devez savoir sur la suppression des espaces blancs du texte, de la compréhension de ce qu'est l'espace blanc et pourquoi vous pourriez avoir besoin de le supprimer, aux cas d'utilisation pratiques dans différentes industries et applications techniques. Que vous soyez un développeur travaillant avec des API, un analyste de données traitant des fichiers texte, un créateur de contenu préparant des identifiants, ou un professionnel gérant de la documentation technique, comprendre comment supprimer efficacement les espaces blancs est une compétence précieuse dans les flux de travail numériques d'aujourd'hui.",
+      "whatIsTitle": "Qu'est-ce que Supprimer les espaces blancs ?",
+      "whatIsP1": "Supprimer les espaces blancs est une utilité de traitement de texte spécialisée qui élimine complètement tous les caractères d'espace blanc de l'entrée de texte. L'espace blanc englobe une large catégorie de caractères qui créent l'espacement visuel et le formatage, y compris les espaces réguliers (U+0020), tabulations (U+0009), sauts de ligne (U+000A), retours chariot (U+000D), sauts de page (U+000C), tabulations verticales (U+000B), et de nombreux caractères Unicode d'espace blanc tels que les espaces insécables (U+00A0), espaces de largeur zéro (U+200B), et divers autres caractères d'espacement définis dans la norme Unicode.",
+      "whatIsP2": "Cet outil est fondamentalement différent des suppresseurs d'espaces ou normalisateurs d'espaces blancs qui ne suppriment que les espaces supplémentaires, réduisent plusieurs espaces en un, ou normalisent l'espacement incohérent. Supprimer les espaces blancs adopte une approche plus agressive : il supprime TOUS les caractères d'espace blanc complètement et inconditionnellement, créant une seule chaîne continue sans aucun saut, espacement ou caractères de formatage. Le résultat est une chaîne compacte où tous les caractères non-espace blanc sont concaténés directement ensemble.",
+      "whatIsP3": "L'outil fonctionne en utilisant une correspondance de motifs regex sophistiquée qui identifie chaque caractère d'espace blanc possible selon les normes Unicode. Il traite votre entrée caractère par caractère, supprimant systématiquement chaque instance d'espace blanc tout en préservant méticuleusement tous les autres caractères—lettres, chiffres, signes de ponctuation, symboles spéciaux, emojis et tout autre caractère Unicode non-espace blanc. Cela garantit que votre contenu réel reste complètement intact tandis que seul l'espace blanc de formatage est éliminé.",
+      "whyNeededTitle": "Pourquoi supprimer tous les espaces blancs ? Comprendre le besoin",
+      "whyNeededP1": "Il existe d'innombrables scénarios professionnels, techniques et pratiques où la suppression de tous les espaces blancs du texte n'est pas seulement pratique mais absolument nécessaire. Comprendre ces cas d'utilisation vous aide à déterminer quand cet outil est la bonne solution pour vos besoins spécifiques.",
+      "whyNeededItem1": "Créer des identifiants uniques, codes ou clés qui ne doivent pas contenir d'espaces ou de caractères de formatage pour le stockage en base de données, l'utilisation d'API ou l'intégration de systèmes",
+      "whyNeededItem2": "Préparer du texte pour l'encodage d'URL, paramètres de requête ou points de terminaison d'API où l'espace blanc peut causer des problèmes d'encodage ou casser la fonctionnalité",
+      "whyNeededItem3": "Traiter des données pour des systèmes hérités, mainframes ou applications spécialisées qui ont des exigences strictes interdisant l'espace blanc dans certains champs",
+      "whyNeededItem4": "Créer des chaînes compactes pour un stockage efficace, transmission ou compression où chaque caractère compte et l'espace blanc ajoute une surcharge inutile",
+      "whyNeededItem5": "Générer des entrées de hachage, checksums ou chaînes cryptographiques où l'espace blanc pourrait altérer la sortie et casser la validation",
+      "whyNeededItem6": "Préparer du texte pour la génération de codes-barres, codes QR ou formats lisibles par machine qui nécessitent des chaînes de caractères continues",
+      "whyNeededP2": "Au-delà de ces exigences techniques, la suppression des espaces blancs est également précieuse pour la normalisation des données, la comparaison de texte, la détection de doublons et diverses pipelines de traitement de texte où le formatage cohérent est critique. Dans de nombreux contextes de programmation et de traitement de données, l'espace blanc peut introduire des bugs subtils, causer des erreurs d'analyse ou créer des incohérences difficiles à détecter et à résoudre.",
+      "technicalDetailsTitle": "Détails techniques : Comment fonctionne la suppression d'espaces blancs",
+      "technicalDetailsP1": "L'outil Supprimer les espaces blancs utilise une correspondance de motifs regex (expressions régulières) avancée pour identifier et éliminer les caractères d'espace blanc. Le motif regex central utilisé est /\\s+/g, où \\s correspond à tout caractère d'espace blanc selon la définition d'espace blanc Unicode de JavaScript, le quantificateur + correspond à un ou plusieurs caractères d'espace blanc consécutifs, et le drapeau g assure une correspondance globale dans toute la chaîne d'entrée.",
+      "technicalDetailsP2": "Ce motif regex est complet et correspond à tous les caractères d'espace blanc standard définis dans la norme Unicode, y compris : espaces réguliers, tabulations, sauts de ligne, retours chariot, sauts de page, tabulations verticales, espaces insécables, espaces de largeur zéro, espaces fins, espaces capillaires, espaces mathématiques, espaces idéographiques et de nombreuses autres variantes d'espace blanc Unicode. L'outil traite toute la chaîne d'entrée en une seule passe, le rendant hautement efficace même pour de gros blocs de texte.",
+      "technicalDetailsP3": "L'implémentation utilise la méthode String.replace() native de JavaScript avec le motif regex, qui est optimisée pour les performances et gère Unicode correctement. Cela garantit que l'outil fonctionne avec précision avec du texte dans n'importe quelle langue, y compris les langues avec des scripts complexes, les langues de droite à gauche et les langues avec des jeux de caractères Unicode étendus. Le traitement se produit entièrement côté client, ce qui signifie que votre texte ne quitte jamais votre navigateur et n'est jamais transmis sur le réseau.",
+      "howWorksTitle": "Comment fonctionne l'outil Supprimer les espaces blancs : Processus étape par étape",
+      "howWorksP1": "L'outil Supprimer les espaces blancs suit un processus simple et déterministe qui garantit des résultats cohérents et fiables à chaque fois que vous l'utilisez. Comprendre ce processus vous aide à utiliser l'outil efficacement et à prédire la sortie avec précision.",
+      "step1Title": "Étape 1 : Traitement de l'entrée",
+      "step1P1": "Lorsque vous collez ou tapez du texte dans le champ d'entrée, l'outil capture immédiatement toute la chaîne d'entrée. L'outil accepte tout contenu de texte brut, y compris le texte copié depuis des documents, pages web, éditeurs de code, feuilles de calcul, bases de données ou toute autre source. Il n'y a aucune restriction sur la longueur du texte, la langue ou l'encodage des caractères—l'outil gère le texte Unicode de n'importe quelle taille.",
+      "step2Title": "Étape 2 : Détection des espaces blancs",
+      "step2P1": "L'outil applique un motif regex complet qui scanne toute la chaîne d'entrée pour identifier chaque caractère d'espace blanc. Ce motif correspond à tous les caractères d'espace blanc Unicode, garantissant qu'aucune variante d'espace blanc n'est manquée. La détection se produit en une seule passe à travers la chaîne, rendant le processus hautement efficace.",
+      "step3Title": "Étape 3 : Suppression des espaces blancs",
+      "step3P1": "Une fois que tous les caractères d'espace blanc sont identifiés, l'outil les supprime complètement, les remplaçant par rien (chaîne vide). Cela signifie que les caractères d'espace blanc consécutifs sont tous supprimés, et les caractères non-espace blanc qui étaient séparés par de l'espace blanc sont maintenant directement adjacents les uns aux autres dans la sortie.",
+      "step4Title": "Étape 4 : Génération de la sortie",
+      "step4P1": "Le texte traité apparaît dans le champ de sortie comme une chaîne continue avec tous les espaces blancs supprimés. La sortie préserve l'ordre exact de tous les caractères non-espace blanc de l'entrée, garantissant que la structure de votre contenu reste intacte tandis que seul l'espace blanc de formatage est éliminé.",
+      "useCasesTitle": "Cas d'utilisation complets pour Supprimer les espaces blancs",
+      "useCasesP1": "L'outil Supprimer les espaces blancs sert une grande variété de cas d'utilisation professionnels et techniques dans plusieurs industries et applications. Comprendre ces scénarios vous aide à identifier quand cet outil peut résoudre vos problèmes spécifiques.",
+      "useCasesDevelopersTitle": "Pour les développeurs et programmeurs",
+      "useCasesDevelopersP1": "Les développeurs ont fréquemment besoin de supprimer les espaces blancs lorsqu'ils travaillent avec des API, génèrent des identifiants, traitent l'entrée utilisateur ou gèrent des transformations de données. Les scénarios courants incluent :",
+      "useCasesDevelopersItem1": "Créer des slugs d'URL, clés d'API ou identifiants uniques qui doivent être sans espaces blancs pour une intégration système appropriée",
+      "useCasesDevelopersItem2": "Préparer des chaînes pour des fonctions de hachage, checksums ou opérations cryptographiques où l'espace blanc altérerait le résultat",
+      "useCasesDevelopersItem3": "Traiter l'entrée utilisateur depuis des formulaires ou champs de texte avant validation ou stockage dans des bases de données",
+      "useCasesDevelopersItem4": "Générer du code ou des fichiers de configuration où l'espace blanc doit être minimisé pour la taille ou la compatibilité",
+      "useCasesDevelopersItem5": "Préparer des données pour la sérialisation JSON, l'encodage XML ou d'autres formats de données avec des exigences strictes d'espace blanc",
+      "useCasesDataAnalystsTitle": "Pour les analystes de données et scientifiques",
+      "useCasesDataAnalystsP1": "Les professionnels des données utilisent la suppression d'espaces blancs pour le nettoyage de données, la normalisation et le traitement :",
+      "useCasesDataAnalystsItem1": "Normaliser les données texte avant l'analyse pour assurer un formatage cohérent dans les ensembles de données",
+      "useCasesDataAnalystsItem2": "Préparer des données pour des modèles d'apprentissage automatique où l'espace blanc peut affecter l'extraction de caractéristiques",
+      "useCasesDataAnalystsItem3": "Nettoyer les données importées depuis des sources externes qui peuvent contenir des espaces blancs incohérents",
+      "useCasesDataAnalystsItem4": "Créer des représentations de données compactes pour un stockage ou une transmission efficace",
+      "useCasesDataAnalystsItem5": "Préparer du texte pour l'exploration de texte, le traitement du langage naturel ou les pipelines d'analyse de sentiment",
+      "useCasesContentCreatorsTitle": "Pour les créateurs de contenu et marketeurs",
+      "useCasesContentCreatorsP1": "Les professionnels du contenu utilisent cet outil pour diverses tâches de préparation de contenu :",
+      "useCasesContentCreatorsItem1": "Créer des slugs d'URL conviviaux depuis des titres ou en-têtes sans espaces",
+      "useCasesContentCreatorsItem2": "Générer des handles de réseaux sociaux, noms d'utilisateur ou identifiants qui ne peuvent pas contenir d'espaces",
+      "useCasesContentCreatorsItem3": "Préparer du texte pour les balises meta, texte alternatif ou autres attributs HTML où l'espace blanc doit être contrôlé",
+      "useCasesContentCreatorsItem4": "Créer du texte compact pour SMS, notifications push ou plateformes avec limite de caractères",
+      "useCasesBusinessTitle": "Pour les applications d'entreprise et commerciales",
+      "useCasesBusinessP1": "Les applications d'entreprise nécessitent souvent la suppression d'espaces blancs pour l'intégration de systèmes et le traitement de données :",
+      "useCasesBusinessItem1": "Préparer des données clients, codes produits ou identifiants d'inventaire pour l'intégration de systèmes hérités",
+      "useCasesBusinessItem2": "Générer des numéros de facture, IDs de commande ou codes de transaction qui doivent être sans espaces blancs",
+      "useCasesBusinessItem3": "Traiter des données pour des systèmes EDI (Échange de Données Électronique) avec des exigences de formatage strictes",
+      "useCasesBusinessItem4": "Créer des formats de données compactes pour un stockage efficace en base de données ou systèmes d'archivage",
+      "comparisonTitle": "Supprimer les espaces blancs vs. Autres outils de texte : Comprendre les différences",
+      "comparisonP1": "Il est important de comprendre comment Supprimer les espaces blancs diffère des autres outils de traitement de texte similaires pour choisir le bon outil pour vos besoins.",
+      "comparisonSpaceRemoverTitle": "Supprimer les espaces blancs vs. Suppresseur d'espaces",
+      "comparisonSpaceRemoverP1": "Un Suppresseur d'espaces supprime généralement les espaces supplémentaires, normalise l'espacement ou réduit plusieurs espaces en espaces simples tout en préservant les sauts de ligne et autres formatages. Supprimer les espaces blancs est plus agressif—il supprime TOUS les caractères d'espace blanc complètement, y compris les espaces, tabulations et sauts de ligne, créant une seule chaîne continue.",
+      "comparisonTrimTitle": "Supprimer les espaces blancs vs. Trim",
+      "comparisonTrimP1": "Les fonctions Trim suppriment l'espace blanc uniquement du début et de la fin des chaînes, préservant tout l'espace blanc interne. Supprimer les espaces blancs supprime l'espace blanc de partout dans le texte, y compris le début, le milieu et la fin.",
+      "comparisonNormalizeTitle": "Supprimer les espaces blancs vs. Normaliser les espaces blancs",
+      "comparisonNormalizeP1": "Les outils de normalisation d'espaces blancs standardisent l'espace blanc (par exemple, convertir les tabulations en espaces, normaliser les fins de ligne) tout en préservant la structure globale. Supprimer les espaces blancs élimine tout l'espace blanc entièrement, supprimant la structure et créant une chaîne continue.",
+      "bestPracticesTitle": "Meilleures pratiques pour utiliser Supprimer les espaces blancs",
+      "bestPracticesP1": "Suivre les meilleures pratiques garantit que vous tirez le maximum de valeur de l'outil Supprimer les espaces blancs tout en évitant les problèmes potentiels.",
+      "bestPracticesItem1": "Toujours garder une sauvegarde de votre texte original avant le traitement, car la suppression d'espaces blancs est généralement irréversible sans l'original",
+      "bestPracticesItem2": "Examiner attentivement la sortie, surtout lors du traitement de code, données structurées ou texte où l'espace blanc pourrait être significatif",
+      "bestPracticesItem3": "Utiliser cet outil spécifiquement lorsque vous avez besoin d'une suppression complète d'espaces blancs—ne pas l'utiliser pour le nettoyage général de texte où vous pourriez vouloir préserver un certain formatage",
+      "bestPracticesItem4": "Tester avec un petit échantillon d'abord lors du traitement de grandes quantités de texte pour s'assurer que la sortie répond à vos exigences",
+      "bestPracticesItem5": "Faire preuve de prudence lors du traitement de code, JSON, XML ou autres formats structurés où la suppression d'espaces blancs pourrait casser la syntaxe",
+      "privacySecurityTitle": "Confidentialité et sécurité : Comment vos données sont protégées",
+      "privacySecurityP1": "L'outil Supprimer les espaces blancs est conçu avec la confidentialité et la sécurité comme principes fondamentaux. Tout le traitement se produit entièrement dans votre navigateur en utilisant JavaScript côté client—votre texte ne quitte jamais votre appareil et n'est jamais transmis à un serveur.",
+      "privacySecurityP2": "Cette approche de traitement local signifie : aucune donnée n'est téléchargée vers des serveurs externes, aucun contenu n'est stocké dans des bases de données, aucun suivi ou analyse ne capture votre entrée, aucun cookie ou données de session ne retient votre texte, et vous avez un contrôle complet sur vos données tout au long du processus. Cela rend l'outil sûr pour les informations sensibles, le contenu propriétaire, les documents confidentiels et tout texte que vous souhaitez garder complètement privé.",
+      "limitationsTitle": "Limitations et quand ne pas utiliser Supprimer les espaces blancs",
+      "limitationsP1": "Bien que Supprimer les espaces blancs soit puissant pour ses cas d'utilisation prévus, il existe des situations où vous ne devriez pas l'utiliser ou devriez l'utiliser avec une extrême prudence.",
+      "limitationsItem1": "Ne pas utiliser pour le code, JSON, XML, YAML ou autres formats structurés où l'espace blanc est syntaxiquement significatif et la suppression casserait le format",
+      "limitationsItem2": "Éviter d'utiliser pour la poésie, le texte formaté ou le contenu où l'espace blanc crée une structure visuelle ou un sens",
+      "limitationsItem3": "Ne pas utiliser pour les adresses, documents légaux ou listes formatées où l'espace blanc préserve une structure importante",
+      "limitationsItem4": "Faire preuve de prudence avec le texte multilingue où les règles d'espace blanc varient entre les langues et la suppression pourrait affecter la lisibilité",
+      "limitationsItem5": "Ne pas utiliser comme outil général de nettoyage de texte lorsque vous avez réellement besoin de normalisation d'espaces blancs ou de suppression sélective",
+      "conclusionTitle": "Conclusion : Maîtriser la suppression d'espaces blancs pour votre flux de travail",
+      "conclusionP1": "L'outil Supprimer les espaces blancs fournit une solution simple, puissante et sécurisée pour éliminer tous les caractères d'espace blanc de votre texte. Que vous créiez des identifiants, prépariez des données pour des API, traitiez du texte pour des systèmes spécialisés, ou travailliez sur tout projet nécessitant un contenu complètement sans espaces blancs, cet outil fournit des résultats fiables instantanément.",
+      "conclusionP2": "Avec son architecture de traitement local, l'outil garantit que vos données restent complètement privées et sécurisées—aucun téléchargement, aucun stockage, aucun suivi. Cela le rend idéal pour les informations sensibles et le contenu propriétaire. Le support complet Unicode de l'outil signifie qu'il fonctionne avec précision avec du texte dans n'importe quelle langue, script ou jeu de caractères.",
+      "conclusionP3": "Comprendre quand et comment utiliser Supprimer les espaces blancs efficacement est une compétence précieuse dans les flux de travail numériques modernes. En suivant les meilleures pratiques, en comprenant les capacités et limitations de l'outil, et en l'appliquant à des cas d'utilisation appropriés, vous pouvez rationaliser vos tâches de traitement de texte et obtenir des résultats cohérents et fiables. Que vous soyez développeur, analyste de données, créateur de contenu ou professionnel d'entreprise, cet outil peut faire gagner du temps et assurer la précision dans vos besoins de suppression d'espaces blancs."
+    },
+    "faqs": {
+      "faq1": {
+        "category": "Général",
+        "question": "Que fait l'outil Supprimer les espaces blancs ?",
+        "answer": "L'outil Supprimer les espaces blancs supprime tous les caractères d'espace blanc de votre texte, y compris les espaces, tabulations, sauts de ligne et autres caractères Unicode d'espace blanc. Il crée une chaîne continue sans espacement ni sauts."
+      },
+      "faq2": {
+        "category": "Général",
+        "question": "Quels types d'espaces blancs sont supprimés ?",
+        "answer": "L'outil supprime tous les types de caractères d'espace blanc, y compris les espaces réguliers, tabulations, sauts de ligne, retours chariot, sauts de page et autres caractères Unicode d'espace blanc. Tout ce qui crée de l'espacement ou du formatage est supprimé."
+      },
+      "faq3": {
+        "category": "Technique",
+        "question": "Comment l'outil identifie-t-il les espaces blancs ?",
+        "answer": "L'outil utilise un motif regex (\\s+) qui correspond à tous les caractères d'espace blanc Unicode. Cela inclut les espaces, tabulations, sauts de ligne et autres caractères d'espace blanc définis dans la norme Unicode."
+      },
+      "faq4": {
+        "category": "Utilisation",
+        "question": "Quand dois-je utiliser cet outil ?",
+        "answer": "Utilisez cet outil lorsque vous devez créer une chaîne continue sans aucun espace blanc, comme pour créer des identifiants, préparer du texte pour des API, traiter des données pour des systèmes qui nécessitent sans espace blanc, ou créer des chaînes compactes pour le stockage ou la transmission."
+      },
+      "faq5": {
+        "category": "Formatage",
+        "question": "L'outil préservera-t-il les autres caractères ?",
+        "answer": "Oui, l'outil supprime uniquement les caractères d'espace blanc. Tous les autres caractères, y compris les lettres, chiffres, ponctuation et caractères spéciaux, sont préservés exactement comme ils apparaissent dans l'entrée."
+      },
+      "faq6": {
+        "category": "Formatage",
+        "question": "Que se passe-t-il avec la ponctuation et les caractères spéciaux ?",
+        "answer": "La ponctuation et les caractères spéciaux sont préservés exactement comme ils apparaissent dans l'entrée. Seuls les caractères d'espace blanc sont supprimés, donc votre contenu texte reste intact."
+      },
+      "faq7": {
+        "category": "Utilisation",
+        "question": "Puis-je utiliser cet outil pour le code ou les données structurées ?",
+        "answer": "Bien que l'outil puisse supprimer les espaces blancs de n'importe quel texte, soyez prudent lors de son utilisation avec du code ou des données structurées où l'espace blanc peut être significatif. L'outil supprime TOUT l'espace blanc, ce qui pourrait casser la syntaxe du code ou la structure des données."
+      },
+      "faq8": {
+        "category": "Général",
+        "question": "L'outil est-il gratuit ?",
+        "answer": "Oui, l'outil Supprimer les espaces blancs est complètement gratuit. Il n'y a aucune limite d'utilisation, aucun compte requis et aucun frais caché."
+      },
+      "faq9": {
+        "category": "Technique",
+        "question": "Comment mes données sont-elles gérées ?",
+        "answer": "Vos données sont traitées entièrement dans votre navigateur. Rien n'est envoyé à un serveur et aucune donnée n'est stockée. Votre texte reste privé et sécurisé tout au long du processus."
+      },
+      "faq10": {
+        "category": "Formatage",
+        "question": "L'outil fonctionne-t-il avec les caractères Unicode ?",
+        "answer": "Oui, l'outil fonctionne avec tous les caractères Unicode. Il supprime les caractères d'espace blanc Unicode tout en préservant tous les autres caractères Unicode, y compris les emojis, symboles spéciaux et caractères de n'importe quelle langue."
+      },
+      "faq11": {
+        "category": "Flux de travail",
+        "question": "Puis-je annuler les modifications ?",
+        "answer": "L'outil ne fournit pas de fonction d'annulation. Cependant, votre texte original reste dans le champ d'entrée, vous pouvez donc toujours vous y référer. Pour la sécurité, gardez une copie de votre texte original avant le traitement."
+      },
+      "faq12": {
+        "category": "Utilisation",
+        "question": "Quelle est la différence entre cela et un suppresseur d'espaces ?",
+        "answer": "Un suppresseur d'espaces supprime généralement les espaces supplémentaires ou normalise l'espacement, tandis que cet outil supprime TOUS les caractères d'espace blanc complètement, y compris les espaces, tabulations et sauts de ligne, créant une chaîne continue sans espacement."
+      },
+      "faq13": {
+        "category": "Limites",
+        "question": "Y a-t-il une limite sur la longueur du texte ?",
+        "answer": "L'outil peut traiter du texte de n'importe quelle longueur que votre navigateur peut gérer. Les textes très longs peuvent prendre plus de temps à traiter, mais il n'y a aucune limite artificielle imposée par l'outil."
+      },
+      "faq14": {
+        "category": "Technique",
+        "question": "L'outil fonctionne-t-il hors ligne ?",
+        "answer": "Oui, l'outil fonctionne entièrement dans votre navigateur en utilisant JavaScript côté client. Une fois la page chargée, vous pouvez l'utiliser hors ligne sans connexion Internet."
+      },
+      "faq15": {
+        "category": "SEO",
+        "question": "La suppression d'espaces blancs affectera-t-elle le SEO ?",
+        "answer": "Cet outil n'est pas conçu pour des fins SEO. Supprimer les espaces blancs du contenu le rendrait illisible et affecterait négativement le SEO. Utilisez cet outil uniquement à des fins techniques comme créer des identifiants ou traiter des données."
+      },
+      "faq16": {
+        "category": "Confidentialité",
+        "question": "Mon texte est-il stocké ou partagé ?",
+        "answer": "Non, votre texte n'est jamais stocké ni partagé. L'outil traite tout localement dans votre navigateur et aucune donnée n'est transmise à un serveur. Votre confidentialité est complètement protégée."
+      },
+      "faq17": {
+        "category": "Compatibilité",
+        "question": "Quels navigateurs sont pris en charge ?",
+        "answer": "L'outil fonctionne dans tous les navigateurs modernes qui supportent JavaScript, y compris Chrome, Firefox, Safari et Edge. Il utilise des fonctionnalités JavaScript standard disponibles dans tous les navigateurs actuels."
+      },
+      "faq18": {
+        "category": "Limites",
+        "question": "Puis-je traiter plusieurs textes à la fois ?",
+        "answer": "L'outil traite un texte à la fois. Vous pouvez coller votre texte, le traiter, copier le résultat, effacer les champs, puis traiter un autre texte. Pour le traitement par lots, vous devriez traiter chaque texte séparément."
+      },
+      "faq19": {
+        "category": "Flux de travail",
+        "question": "Comment copier le résultat ?",
+        "answer": "Après le traitement, cliquez sur le bouton 'Copier' pour copier le résultat dans votre presse-papiers. Vous pouvez ensuite le coller où vous en avez besoin. Le texte d'entrée original reste dans le champ d'entrée pour référence."
+      },
+      "faq20": {
+        "category": "Technique",
+        "question": "Quel motif regex l'outil utilise-t-il ?",
+        "answer": "L'outil utilise le motif regex /\\s+/g, qui correspond à un ou plusieurs caractères d'espace blanc. Cela inclut tous les caractères d'espace blanc Unicode définis dans la spécification JavaScript."
+      },
+      "faq21": {
+        "category": "Général",
+        "question": "Puis-je utiliser cet outil pour les mots de passe ou données sensibles ?",
+        "answer": "Oui, l'outil est sûr à utiliser avec des données sensibles car il traite tout localement dans votre navigateur. Aucune donnée n'est transmise ni stockée. Cependant, suivez toujours les politiques de sécurité de votre organisation lors de la manipulation d'informations sensibles."
+      },
+      "faq22": {
+        "category": "Flux de travail",
+        "question": "Comment effacer l'entrée et la sortie ?",
+        "answer": "Cliquez sur le bouton 'Effacer' pour effacer à la fois le champ d'entrée et le champ de sortie. Cela vous permet de recommencer avec un nouveau texte."
+      },
+      "faq23": {
+        "category": "Technique",
+        "question": "L'outil gère-t-il les langues de droite à gauche ?",
+        "answer": "Oui, l'outil fonctionne correctement avec les langues de droite à gauche comme l'arabe et l'hébreu. Il supprime les espaces blancs tout en préservant les caractères réels et leur ordre, quelle que soit la direction du texte. La sortie sera une chaîne continue dans la même direction que l'entrée."
+      },
+      "faq24": {
+        "category": "Formatage",
+        "question": "Que se passe-t-il avec les chiffres et caractères spéciaux ?",
+        "answer": "Les chiffres, caractères spéciaux, ponctuation et tous les caractères non-espace blanc sont préservés exactement comme ils apparaissent dans l'entrée. Seuls les caractères d'espace blanc sont supprimés, donc les expressions mathématiques, symboles monétaires et autres caractères spéciaux restent intacts."
+      },
+      "faq25": {
+        "category": "Utilisation",
+        "question": "Puis-je utiliser cet outil pour préparer du texte pour des motifs regex ?",
+        "answer": "Oui, supprimer les espaces blancs peut être utile lors de la préparation de texte pour la correspondance regex, surtout lorsque vous devez faire correspondre des motifs sans vous soucier des variations d'espace blanc. Cependant, notez que la chaîne résultante n'aura pas d'espaces, ce qui peut affecter la correspondance de motifs si votre regex attend de l'espace blanc."
+      },
+      "faq26": {
+        "category": "Technique",
+        "question": "Comment l'outil gère-t-il les textes très longs ?",
+        "answer": "L'outil peut gérer des textes de pratiquement n'importe quelle longueur que votre navigateur peut traiter. Les textes très longs (millions de caractères) peuvent prendre quelques secondes à traiter, mais l'outil est efficace et devrait compléter l'opération. Si vous rencontrez des problèmes de performance avec des textes extrêmement grands, envisagez de traiter par petits morceaux."
+      },
+      "faq27": {
+        "category": "Flux de travail",
+        "question": "La sortie est-elle déterministe ?",
+        "answer": "Oui, la sortie est complètement déterministe. Étant donné la même entrée, vous obtiendrez toujours exactement la même sortie, peu importe quand vous exécutez l'outil ou quel navigateur vous utilisez. Cela rend l'outil fiable pour les flux de travail automatisés et les tests."
+      },
+      "faq28": {
+        "category": "Général",
+        "question": "Puis-je utiliser cet outil hors ligne ?",
+        "answer": "Oui, une fois la page chargée, l'outil fonctionne complètement hors ligne. Tout le traitement se produit dans votre navigateur en utilisant JavaScript côté client, donc aucune connexion Internet n'est requise après le chargement initial de la page. Cela le rend utile pour travailler dans des environnements avec une connectivité limitée."
+      }
+    },
+    "faqHeading": "Supprimer les espaces blancs - Questions fréquemment posées",
+    "faqIntro": "Réponses détaillées sur la suppression de tous les caractères d'espace blanc du texte."
   },
   "HomePage": {
     "seoName": "Nettoyeur de texte ChatGPT",
@@ -2073,6 +2336,506 @@
       "errorSizeRange": "La taille doit être entre 1 et 10.",
       "errorSizeTooLarge": "La taille ne peut pas être supérieure au nombre d'éléments ({count}).",
       "errorFullPermutationLimit": "Pour les permutations complètes, maximum 10 éléments autorisés. Utilisez l'option de taille pour les ensembles plus grands."
+    }
+  },
+  "AICodeCleanerPage": {
+    "writeUp": {
+      "title": "Nettoyeur de Code IA : Guide Complet pour Nettoyer et Formater le Code Généré par IA",
+      "introductionTitle": "Introduction au Nettoyage de Code IA",
+      "introductionP1": "Le Nettoyeur de Code IA est un outil spécialisé basé sur navigateur conçu pour nettoyer et normaliser le formatage du code généré par IA. Alors que l'intelligence artificielle s'intègre de plus en plus dans les flux de travail de développement logiciel, les développeurs font face à de nouveaux défis concernant la qualité et la cohérence du code. Les modèles IA comme ChatGPT, GitHub Copilot et d'autres assistants de génération de code produisent du code fonctionnel, mais ils introduisent souvent des incohérences de formatage qui peuvent causer des problèmes dans les systèmes de contrôle de version, enfreindre les normes de codage de l'équipe et rendre le code plus difficile à lire et à maintenir.",
+      "introductionP2": "Lorsque les modèles IA génèrent du code, ils incluent fréquemment des problèmes de formatage tels que des styles d'indentation mixtes (tabulations vs espaces), des espaces de fin, des sauts de ligne irréguliers, des caractères Unicode cachés, un espacement d'opérateurs inconsistent et des modèles d'espaces non standard. Ces problèmes apparemment mineurs peuvent créer des problèmes significatifs : ils génèrent du bruit de diff inutile dans les systèmes de contrôle de version comme Git, violent les normes de codage de l'équipe, déclenchent des avertissements de linter et réduisent la lisibilité du code. Le Nettoyeur de Code IA aborde ces problèmes systématiquement, transformant le code généré par IA désordonné en code propre, professionnel et prêt pour la production.",
+      "introductionP3": "L'outil fonctionne entièrement dans votre navigateur en utilisant JavaScript côté client, garantissant une confidentialité complète et une vitesse de traitement instantanée. Il traite le code localement sans l'envoyer à un serveur, ce qui le rend sûr pour le code propriétaire, les projets sensibles et les environnements d'entreprise. Avec des options personnalisables, vous pouvez contrôler exactement quelles opérations de nettoyage sont appliquées pour correspondre aux normes de codage et préférences de votre équipe. Que vous travailliez avec JavaScript, Python, Java, C++ ou tout autre langage de programmation basé sur texte, le Nettoyeur de Code IA fournit une normalisation universelle du formatage de code.",
+      "introductionP4": "Ce guide complet explore tout ce que vous devez savoir sur le Nettoyeur de Code IA, de la compréhension de l'importance du nettoyage de code à l'implémentation des meilleures pratiques dans votre flux de travail de développement. Nous examinerons les problèmes de formatage spécifiques que présente le code généré par IA, comment l'outil aborde chaque problème et comment intégrer le nettoyage de code dans votre processus de développement de manière efficace.",
+      "whatIsTitle": "Qu'est-ce que le Nettoyeur de Code IA ?",
+      "whatIsP1": "Le Nettoyeur de Code IA est un outil de formatage de code basé sur le web spécifiquement conçu pour résoudre les incohérences de formatage couramment trouvées dans le code généré par IA. Contrairement aux formateurs de code à usage général comme Prettier ou Black, qui se concentrent sur le formatage de syntaxe spécifique au langage, le Nettoyeur de Code IA cible les problèmes de formatage universels qui affectent le code indépendamment du langage de programmation : normalisation des espaces, cohérence d'indentation, standardisation des fins de ligne et suppression des caractères invisibles.",
+      "whatIsP2": "L'outil traite le code à travers plusieurs étapes de nettoyage, chacune abordant une catégorie spécifique de problèmes de formatage. Il fonctionne sur le principe que le formatage propre et cohérent améliore la lisibilité du code, réduit les conflits de contrôle de version et facilite la maintenance du code. En normalisant le formatage au niveau des caractères et des espaces, le Nettoyeur de Code IA garantit que le code répond aux normes professionnelles avant d'entrer dans votre base de code.",
+      "whatIsP3": "L'un des différenciateurs clés du Nettoyeur de Code IA est son approche indépendante du langage. Bien que des outils comme ESLint, Prettier et Black soient excellents pour le formatage spécifique au langage, ils nécessitent une configuration et peuvent ne pas détecter tous les problèmes de formatage, en particulier ceux introduits par les modèles IA. Le Nettoyeur de Code IA fonctionne à un niveau plus fondamental, nettoyant le code avant qu'il n'atteigne les formateurs spécifiques au langage, garantissant une base solide pour un traitement ultérieur.",
+      "whyNeededTitle": "Pourquoi le Code Généré par IA Nécessite un Nettoyage",
+      "whyNeededP1": "La génération de code par IA a révolutionné le développement logiciel, permettant aux développeurs d'écrire du code plus rapidement et d'explorer des solutions plus efficacement. Cependant, cette rapidité s'accompagne d'un compromis : les modèles IA priorisent la fonctionnalité sur la cohérence du formatage. Comprendre pourquoi le code généré par IA nécessite un nettoyage aide les développeurs à prendre des décisions éclairées sur quand et comment utiliser les outils de nettoyage.",
+      "formattingIssuesTitle": "Problèmes de Formatage Courants dans le Code Généré par IA",
+      "formattingIssuesP1": "Les modèles IA génèrent du code qui fonctionne, mais le formatage laisse souvent beaucoup à désirer. Voici les problèmes de formatage les plus courants rencontrés par les développeurs :",
+      "formattingIssuesItem1": "Indentation Mixte : Les modèles IA peuvent utiliser des tabulations à certains endroits et des espaces à d'autres, ou des nombres inconsistants d'espaces. Cela crée une confusion visuelle et viole la plupart des normes de codage.",
+      "formattingIssuesItem2": "Espaces de Fin : Les lignes se terminant par des espaces ou des tabulations sont invisibles à l'œil mais créent un bruit de diff inutile dans les systèmes de contrôle de version. Ils violent également de nombreuses règles de linting.",
+      "formattingIssuesItem3": "Caractères Unicode Invisibles : Les espaces de largeur zéro, les espaces insécables et autres caractères invisibles peuvent causer des erreurs de compilation, casser les comparaisons de chaînes et créer des bugs mystérieux difficiles à diagnostiquer.",
+      "formattingIssuesItem4": "Fins de Ligne Inconsistantes : Mélanger les fins de ligne Windows (CRLF) et Unix (LF) cause des problèmes dans les systèmes de contrôle de version et peut casser les scripts qui s'attendent à des fins de ligne cohérentes.",
+      "versionControlTitle": "Impact sur le Système de Contrôle de Version",
+      "versionControlP1": "Les incohérences de formatage créent des problèmes significatifs dans les systèmes de contrôle de version comme Git. Lorsque le code contient une indentation mixte ou des espaces de fin, chaque changement de formatage crée un diff, rendant difficile de voir les changements réels du code. Ce 'bruit de diff' ralentit les révisions de code, rend les conflits de fusion plus probables et masque les vrais changements dans les pull requests.",
+      "versionControlP2": "Les équipes utilisant des hooks Git avec des vérifications de formatage pre-commit trouveront que le code généré par IA échoue souvent à ces vérifications, nécessitant un nettoyage manuel avant les commits. Le Nettoyeur de Code IA automatise ce processus, garantissant que le code passe les vérifications de formatage du premier coup. Cela économise du temps, réduit la frustration et maintient un historique de commits propre.",
+      "readabilityTitle": "Lisibilité et Maintenabilité du Code",
+      "readabilityP1": "Le formatage cohérent est essentiel pour la lisibilité du code. Lorsque le code utilise une indentation mixte ou un espacement inconsistant, il devient plus difficile de comprendre la structure du code, d'identifier les blocs logiques et de repérer les erreurs. Le code professionnel suit des normes de formatage cohérentes qui facilitent la lecture, la compréhension et la modification du code par les membres de l'équipe.",
+      "readabilityP2": "La maintenabilité souffre lorsque le formatage est inconsistant. Les développeurs dépensent de l'énergie mentale à analyser le formatage inconsistant au lieu de se concentrer sur la logique du code. Au fil du temps, le formatage inconsistant s'accumule, rendant les bases de code plus difficiles à maintenir. Le Nettoyeur de Code IA aide à établir un formatage cohérent dès le départ, empêchant l'accumulation de dette de formatage.",
+      "featuresTitle": "Caractéristiques Clés du Nettoyeur de Code IA",
+      "featuresP1": "Le Nettoyeur de Code IA fournit des capacités complètes de nettoyage de code à travers un ensemble de fonctionnalités ciblées et personnalisables. Chaque fonctionnalité aborde une catégorie spécifique de problèmes de formatage, permettant aux développeurs d'adapter le processus de nettoyage à leurs besoins.",
+      "trailingSpacesTitle": "Suppression des Espaces de Fin",
+      "trailingSpacesP1": "Les espaces de fin sont des espaces ou des tabulations à la fin des lignes qui ne servent à rien mais créent des problèmes. Ils sont invisibles dans la plupart des éditeurs de code, les rendant faciles à manquer, mais ils causent des problèmes dans les systèmes de contrôle de version et violent de nombreuses règles de linting. Le Nettoyeur de Code IA supprime tous les espaces de fin de chaque ligne, garantissant un code propre qui passe les vérifications de linting.",
+      "trailingSpacesP2": "Cette fonctionnalité est particulièrement importante pour les équipes utilisant le linting automatisé dans leurs pipelines CI/CD. Les espaces de fin déclenchent des avertissements dans la plupart des linters, et les corriger manuellement est fastidieux. Le Nettoyeur de Code IA gère cela automatiquement, économisant du temps et garantissant la cohérence dans toute la base de code.",
+      "indentationTitle": "Normalisation de l'Indentation",
+      "indentationP1": "L'indentation cohérente est fondamentale pour un code lisible. Le Nettoyeur de Code IA normalise l'indentation à 2 espaces, qui est la norme la plus courante dans le développement moderne. Il détecte le modèle d'indentation existant dans votre code et le convertit en une indentation cohérente de 2 espaces partout, que l'original ait utilisé des tabulations, 4 espaces ou des styles mixtes.",
+      "indentationP2": "L'outil préserve la structure logique de votre code tout en normalisant la présentation visuelle. Les blocs imbriqués maintiennent leurs niveaux d'indentation relatifs, garantissant que la structure du code reste intacte tandis que le formatage devient cohérent. Ceci est particulièrement précieux lors du travail avec du code ayant une indentation mixte provenant de multiples sources.",
+      "zeroWidthTitle": "Suppression des Caractères de Largeur Zéro",
+      "zeroWidthP1": "Les caractères Unicode invisibles comme les espaces de largeur zéro, les non-jointeurs de largeur zéro et les marques d'ordre d'octet peuvent causer des bugs mystérieux. Ils sont invisibles dans les éditeurs de code mais peuvent casser les comparaisons de chaînes, causer des erreurs d'analyse et créer des problèmes extrêmement difficiles à diagnostiquer. Le Nettoyeur de Code IA identifie et supprime tous ces caractères problématiques, garantissant un code propre et fiable.",
+      "zeroWidthP2": "Ces caractères se retrouvent souvent dans le code lors de la copie depuis des pages web, de la documentation ou d'autres sources. Les modèles IA peuvent également les introduire lors de la génération de code. Les supprimer de manière proactive prévient les problèmes difficiles à déboguer et garantit que le code se comporte de manière cohérente dans différents environnements.",
+      "lineEndingsTitle": "Normalisation des Fins de Ligne",
+      "lineEndingsP1": "Différents systèmes d'exploitation utilisent différentes conventions de fins de ligne : Windows utilise CRLF (\\r\\n), Unix/Linux/Mac utilisent LF (\\n) et les anciens systèmes Mac utilisaient CR (\\r). Mélanger les fins de ligne cause des problèmes dans les systèmes de contrôle de version et peut casser les scripts. Le Nettoyeur de Code IA normalise toutes les fins de ligne au style Unix (LF), qui est la norme pour la plupart des environnements de développement modernes.",
+      "lineEndingsP2": "Cette normalisation est particulièrement importante pour les équipes de développement multiplateforme. Lorsque les développeurs sur différents systèmes d'exploitation travaillent sur la même base de code, les fins de ligne inconsistantes peuvent causer des conflits de fusion et d'autres problèmes. Normaliser aux fins de ligne style Unix garantit la cohérence sur toutes les plateformes.",
+      "blankLinesTitle": "Suppression des Lignes Vides Supplémentaires",
+      "blankLinesP1": "Le code généré par IA inclut parfois des lignes vides excessives qui ne servent à rien. Bien que certaines lignes vides améliorent la lisibilité, trop nombreuses créent un encombrement visuel et gaspillent l'espace vertical. Le Nettoyeur de Code IA supprime les lignes vides supplémentaires tout en préservant l'espacement intentionnel qui améliore la structure du code.",
+      "whitespaceTitle": "Normalisation des Espaces",
+      "whitespaceP1": "L'utilisation inconsistante des espaces rend le code plus difficile à lire. Le Nettoyeur de Code IA normalise les modèles d'espaces, garantissant un espacement cohérent dans tout votre code. Cela inclut la réduction de multiples espaces en espaces simples où approprié et garantit un espacement cohérent autour des opérateurs et mots-clés.",
+      "operatorsTitle": "Nettoyage de l'Espacement des Opérateurs",
+      "operatorsP1": "L'espacement cohérent autour des opérateurs améliore la lisibilité du code. Le Nettoyeur de Code IA garantit un espacement approprié autour des opérateurs comme =, +, -, *, / et autres, rendant le code plus facile à lire et plus cohérent avec les normes de codage communes. Cette fonctionnalité aide à maintenir l'apparence professionnelle du code et améliore la lisibilité.",
+      "howItWorksTitle": "Comment Fonctionne le Nettoyeur de Code IA",
+      "howItWorksP1": "Le Nettoyeur de Code IA traite le code à travers une série d'étapes de nettoyage, chacune conçue pour résoudre des problèmes de formatage spécifiques. Comprendre comment fonctionne l'outil vous aide à l'utiliser efficacement et à comprendre quels changements il apporte à votre code.",
+      "step1Title": "Étape 1 : Traitement de l'Entrée",
+      "step1P1": "Lorsque vous collez du code dans le Nettoyeur de Code IA, l'outil analyse d'abord la structure du code. Il identifie les limites de ligne, détecte les modèles d'indentation existants et scanne les caractères problématiques. Cette phase d'analyse garantit que les opérations de nettoyage préservent la logique du code tout en améliorant le formatage.",
+      "step2Title": "Étape 2 : Nettoyage Sélectif",
+      "step2P1": "Basé sur vos options sélectionnées, le Nettoyeur de Code IA applique des opérations de nettoyage spécifiques. Chaque opération est indépendante, vous permettant de personnaliser le processus de nettoyage. L'outil traite le code ligne par ligne, appliquant les transformations sélectionnées tout en préservant la structure et le contenu du code.",
+      "step3Title": "Étape 3 : Génération de Sortie",
+      "step3P1": "Après traitement, le Nettoyeur de Code IA génère du code nettoyé qui maintient toute la fonctionnalité originale tout en améliorant la cohérence du formatage. La sortie est prête à être copiée et collée directement dans votre projet, avec toutes les opérations de nettoyage sélectionnées appliquées.",
+      "step4Title": "Étape 4 : Vérification",
+      "step4P1": "Le code nettoyé préserve tous les commentaires, chaînes et logique du code. Seuls le formatage et les espaces sont modifiés, garantissant que le code nettoyé se comporte de manière identique à l'original. Vous pouvez vérifier cela en comparant la fonctionnalité avant et après le nettoyage.",
+      "bestPracticesTitle": "Meilleures Pratiques pour Utiliser le Nettoyeur de Code IA",
+      "bestPracticesP1": "L'utilisation efficace du Nettoyeur de Code IA implique de comprendre quand l'utiliser, comment l'intégrer dans votre flux de travail et comment le combiner avec d'autres outils de développement. Suivre les meilleures pratiques garantit un bénéfice maximum de l'outil.",
+      "beforeCommitTitle": "Nettoyer Avant de Commiter",
+      "beforeCommitP1": "L'utilisation la plus efficace du Nettoyeur de Code IA est de nettoyer le code avant de le commiter dans le contrôle de version. Cela garantit que vos commits contiennent uniquement des changements significatifs, pas du bruit de formatage. De nombreuses équipes intègrent le nettoyage de code dans leurs hooks pre-commit, nettoyant automatiquement le code avant qu'il n'entre dans le dépôt.",
+      "codeReviewTitle": "Utiliser dans les Flux de Travail de Révision de Code",
+      "codeReviewP1": "Nettoyer le code généré par IA avant de soumettre des pull requests rend les révisions de code plus efficaces. Les réviseurs peuvent se concentrer sur la logique et la fonctionnalité plutôt que sur les problèmes de formatage. Cela accélère le processus de révision et améliore la qualité du code.",
+      "teamStandardsTitle": "Établir les Normes de l'Équipe",
+      "teamStandardsP1": "Bien que le Nettoyeur de Code IA fournisse des paramètres par défaut, les équipes devraient établir des normes pour quelles options de nettoyage utiliser. Documentez ces normes dans les directives de codage de votre équipe et assurez-vous que tous les membres de l'équipe utilisent des paramètres cohérents. Cela garantit un formatage de code uniforme dans toute la base de code.",
+      "useCasesTitle": "Cas d'Usage et Applications",
+      "useCasesP1": "Le Nettoyeur de Code IA sert divers cas d'usage dans différents scénarios de développement. Comprendre ces cas d'usage vous aide à identifier quand l'outil peut bénéficier à votre flux de travail.",
+      "aiGeneratedTitle": "Nettoyer le Code Généré par IA",
+      "aiGeneratedP1": "Le cas d'usage principal est de nettoyer le code généré par des assistants IA comme ChatGPT, GitHub Copilot ou d'autres outils de génération de code. Ces outils produisent du code fonctionnel mais incluent souvent des incohérences de formatage. Le Nettoyeur de Code IA transforme ce code en code prêt pour la production, formaté professionnellement qui répond aux normes de l'équipe.",
+      "legacyCodeTitle": "Standardiser le Code Legacy",
+      "legacyCodeP1": "Lors du travail avec des bases de code legacy ayant un formatage inconsistant, le Nettoyeur de Code IA peut aider à standardiser le formatage dans toute la base de code. Bien qu'il ne corrige pas les problèmes architecturaux, il peut améliorer la lisibilité du code et faciliter la maintenance en établissant des normes de formatage cohérentes.",
+      "crossPlatformTitle": "Développement Multiplateforme",
+      "crossPlatformP1": "Les équipes travaillant sur différents systèmes d'exploitation bénéficient de la normalisation des fins de ligne. Le Nettoyeur de Code IA garantit des fins de ligne cohérentes indépendamment de la plateforme utilisée par les développeurs, prévenant les problèmes de contrôle de version et les problèmes de compatibilité multiplateforme.",
+      "securityTitle": "Sécurité et Confidentialité",
+      "securityP1": "Le Nettoyeur de Code IA traite tout le code entièrement dans votre navigateur en utilisant JavaScript côté client. Votre code ne quitte jamais votre appareil, garantissant une confidentialité et une sécurité complètes. Cela rend l'outil sûr pour le code propriétaire, les projets sensibles et les environnements d'entreprise où la sécurité du code est primordiale.",
+      "securityP2": "Contrairement aux formateurs de code basés sur le cloud qui envoient votre code à des serveurs distants, le Nettoyeur de Code IA fonctionne localement. Cela élimine les préoccupations de sécurité concernant l'exposition du code, les violations de données ou l'accès non autorisé. Votre code reste privé tout au long du processus de nettoyage.",
+      "limitationsTitle": "Limitations et Considérations",
+      "limitationsP1": "Bien que le Nettoyeur de Code IA soit puissant, il a des limitations. Comprendre ces limitations vous aide à utiliser l'outil efficacement et à savoir quand le compléter avec d'autres outils :",
+      "limitationsItem1": "Formatage Spécifique au Langage : Le Nettoyeur de Code IA se concentre sur les problèmes de formatage universels. Pour le formatage spécifique au langage (comme PEP 8 de Python ou les exigences de style spécifiques de JavaScript), vous pourriez avoir besoin d'outils supplémentaires comme Black ou Prettier.",
+      "limitationsItem2": "Logique du Code : L'outil ne modifie que le formatage et les espaces. Il ne corrige pas les erreurs de logique, n'améliore pas les algorithmes ou ne résout pas les problèmes de qualité de code au-delà du formatage.",
+      "limitationsItem3": "Code Minifié : Bien que l'outil fonctionne avec du code minifié, il peut le reformater de manière à changer la taille du fichier. Pour le code minifié de production, envisagez de désactiver certaines options comme 'Normaliser les Espaces' pour préserver le format minifié.",
+      "comparisonTitle": "Nettoyeur de Code IA vs. Autres Outils",
+      "comparisonP1": "Comprendre comment le Nettoyeur de Code IA se compare aux autres outils de formatage de code vous aide à choisir le bon outil pour vos besoins et à les utiliser efficacement ensemble.",
+      "vsPrettierTitle": "Nettoyeur de Code IA vs. Prettier",
+      "vsPrettierP1": "Prettier est un formateur de code populaire qui se concentre sur le formatage de syntaxe spécifique au langage. Le Nettoyeur de Code IA complète Prettier en gérant les problèmes de formatage universels que Prettier peut manquer, tels que les caractères invisibles et les fins de ligne inconsistantes. Utiliser les deux outils ensemble fournit un formatage de code complet : Nettoyeur de Code IA pour les problèmes universels, Prettier pour le formatage spécifique au langage.",
+      "vsESLintTitle": "Nettoyeur de Code IA vs. ESLint",
+      "vsESLintP1": "ESLint identifie les problèmes de qualité de code et applique les normes de codage, mais il ne corrige pas automatiquement le formatage. Le Nettoyeur de Code IA corrige réellement les problèmes de formatage, faisant passer le code aux vérifications ESLint. Ils fonctionnent bien ensemble : Nettoyeur de Code IA corrige le formatage, ESLint vérifie la qualité du code et la conformité au style.",
+      "conclusionTitle": "Conclusion : Intégrer le Nettoyeur de Code IA dans votre Flux de Travail",
+      "conclusionP1": "Le Nettoyeur de Code IA répond à un besoin critique dans le développement logiciel moderne : maintenir la qualité et la cohérence du code lors du travail avec du code généré par IA. Alors que la génération de code par IA devient plus répandue, des outils comme le Nettoyeur de Code IA deviennent essentiels pour maintenir des normes de code professionnelles. Le fonctionnement basé sur navigateur de l'outil garantit la confidentialité et la sécurité, tandis que ses options personnalisables permettent aux équipes de l'adapter à leurs besoins spécifiques.",
+      "conclusionP2": "En intégrant le Nettoyeur de Code IA dans votre flux de travail de développement, vous pouvez garantir que le code généré par IA répond aux normes de formatage de votre équipe dès le départ. Cela économise du temps, réduit la surcharge de révision de code et maintient un historique de contrôle de version propre. Que vous nettoyiez le code avant les commits, standardisiez les bases de code legacy ou assuriez la compatibilité multiplateforme, le Nettoyeur de Code IA fournit les outils dont vous avez besoin pour maintenir la qualité professionnelle du code à l'ère du développement assisté par IA."
+    },
+    "faqHeading": "Questions Fréquemment Posées",
+    "faqIntro": "Questions courantes sur le Nettoyeur de Code IA :",
+    "faqs": {
+      "faq1": {
+        "category": "Général",
+        "question": "Qu'est-ce que le Nettoyeur de Code IA ?",
+        "answer": "Le Nettoyeur de Code IA est un outil de formatage qui nettoie et normalise le code généré par les modèles IA. Il supprime les espaces de fin, corrige l'indentation, normalise les fins de ligne, supprime les caractères Unicode invisibles et standardise les espaces pour produire un code propre et correctement formaté."
+      },
+      "faq2": {
+        "category": "Général",
+        "question": "Quels types de code prend-il en charge ?",
+        "answer": "Le Nettoyeur de Code IA fonctionne avec tout code basé sur du texte, y compris JavaScript, Python, Java, C++, HTML, CSS, JSON et plus encore. Il se concentre sur le formatage et les espaces plutôt que sur la syntaxe spécifique au langage, ce qui le rend universel pour tous les langages de programmation."
+      },
+      "faq3": {
+        "category": "Technique",
+        "question": "Modifie-t-il la logique ou la fonctionnalité du code ?",
+        "answer": "Non. Le Nettoyeur de Code IA ne modifie que le formatage, les espaces et les caractères invisibles. Il ne modifie pas la logique du code, les noms de variables, les appels de fonctions ou tout aspect fonctionnel de votre code. Le code nettoyé se comporte de manière identique à l'original."
+      },
+      "faq4": {
+        "category": "Utilisation",
+        "question": "Comment utiliser l'outil ?",
+        "answer": "Collez simplement votre code généré par IA dans le champ de saisie, sélectionnez les options de nettoyage que vous souhaitez appliquer et cliquez sur le bouton 'Nettoyer le Code'. Le code nettoyé apparaîtra dans le champ de sortie, prêt à être copié et utilisé dans votre projet."
+      },
+      "faq5": {
+        "category": "Formatage",
+        "question": "Quel style d'indentation utilise-t-il ?",
+        "answer": "L'outil normalise l'indentation à 2 espaces par défaut, ce qui est une norme courante. Il détecte le modèle d'indentation existant dans votre code et le convertit en une indentation cohérente de 2 espaces dans tout le code."
+      },
+      "faq6": {
+        "category": "Formatage",
+        "question": "Préserve-t-il les commentaires du code ?",
+        "answer": "Oui, tous les commentaires du code sont préservés. L'outil ne modifie que les espaces et le formatage, pas le contenu réel de votre code, y compris les commentaires, les chaînes et la logique du code."
+      },
+      "faq7": {
+        "category": "Utilisation",
+        "question": "Puis-je personnaliser quelles opérations de nettoyage sont appliquées ?",
+        "answer": "Oui, l'outil fournit des cases à cocher pour chaque opération de nettoyage, vous permettant d'activer ou de désactiver des fonctionnalités spécifiques telles que la suppression des espaces de fin, la normalisation de l'indentation, la suppression des caractères de largeur zéro et plus encore."
+      },
+      "faq8": {
+        "category": "Général",
+        "question": "Mon code est-il envoyé à un serveur ?",
+        "answer": "Non. Tout le traitement se fait entièrement dans votre navigateur. Votre code ne quitte jamais votre appareil, garantissant une confidentialité et une sécurité complètes pour le code propriétaire ou sensible."
+      },
+      "faq9": {
+        "category": "Technique",
+        "question": "Quels caractères invisibles supprime-t-il ?",
+        "answer": "L'outil supprime les espaces de largeur zéro, les non-jointeurs de largeur zéro, les jointeurs de largeur zéro, les marques d'ordre d'octet (BOM) et d'autres caractères Unicode invisibles qui peuvent causer des problèmes dans les éditeurs de code et les systèmes de contrôle de version."
+      },
+      "faq10": {
+        "category": "Formatage",
+        "question": "Fonctionne-t-il avec le code minifié ?",
+        "answer": "Oui, mais sachez que l'outil peut reformater le code minifié, ce qui pourrait changer son apparence. Pour le code minifié, vous pouvez vouloir désactiver certaines options comme 'Normaliser les Espaces' pour préserver le format minifié."
+      },
+      "faq11": {
+        "category": "Technique",
+        "question": "Comment le Nettoyeur de Code IA gère-t-il différents langages de programmation ?",
+        "answer": "Le Nettoyeur de Code IA est indépendant du langage et fonctionne avec tout langage de programmation basé sur texte. Il se concentre sur les problèmes de formatage universels comme les espaces, l'indentation et les fins de ligne plutôt que sur la syntaxe spécifique au langage. Cela le rend efficace pour JavaScript, Python, Java, C++, HTML, CSS, JSON et tout autre format de code basé sur texte."
+      },
+      "faq12": {
+        "category": "Meilleures Pratiques",
+        "question": "Dois-je utiliser le Nettoyeur de Code IA avant ou après d'autres formateurs comme Prettier ?",
+        "answer": "Il est généralement préférable d'utiliser le Nettoyeur de Code IA en premier pour gérer les problèmes de formatage universels comme les caractères invisibles et les fins de ligne, puis d'utiliser des formateurs spécifiques au langage comme Prettier pour le formatage de syntaxe. Cette approche en deux étapes assure un formatage de code complet."
+      },
+      "faq13": {
+        "category": "Meilleures Pratiques",
+        "question": "Puis-je intégrer le Nettoyeur de Code IA dans mon pipeline CI/CD ?",
+        "answer": "Bien que le Nettoyeur de Code IA soit un outil basé sur navigateur, vous pouvez l'utiliser dans votre flux de travail en nettoyant le code avant de commiter. Pour une intégration CI/CD automatisée, envisagez d'utiliser des formateurs en ligne de commande, mais le Nettoyeur de Code IA est excellent pour le nettoyage manuel pre-commit et la préparation de révision de code."
+      },
+      "faq14": {
+        "category": "Technique",
+        "question": "Que se passe-t-il avec les commentaires et chaînes du code pendant le nettoyage ?",
+        "answer": "Tous les commentaires et chaînes du code sont préservés exactement tels quels. Le Nettoyeur de Code IA ne modifie que les espaces et les caractères de formatage, jamais le contenu réel de votre code. Les commentaires, littéraux de chaîne et logique du code restent complètement inchangés."
+      },
+      "faq15": {
+        "category": "Utilisation",
+        "question": "Quelle taille peuvent avoir les fichiers de code que je nettoie ?",
+        "answer": "Le Nettoyeur de Code IA peut gérer des fichiers de code raisonnablement grands dans le navigateur. Les fichiers très grands (plus de 100 000 lignes) peuvent prendre plus de temps à traiter, mais l'outil est conçu pour gérer efficacement des extraits et fichiers de code typiques. Pour les fichiers extrêmement grands, envisagez de les traiter par sections."
+      },
+      "faq16": {
+        "category": "Formatage",
+        "question": "L'outil préserve-t-il ma structure et organisation de code existante ?",
+        "answer": "Oui, le Nettoyeur de Code IA préserve toute la structure, organisation et logique du code. Il ne modifie que le formatage et les espaces, garantissant que la fonctionnalité de votre code, les noms de variables, les définitions de fonctions et l'architecture globale restent exactement les mêmes."
+      },
+      "faq17": {
+        "category": "Sécurité",
+        "question": "Mon code propriétaire est-il sûr lors de l'utilisation du Nettoyeur de Code IA ?",
+        "answer": "Absolument. Le Nettoyeur de Code IA traite tout le code entièrement dans votre navigateur en utilisant JavaScript côté client. Votre code ne quitte jamais votre appareil ni n'est transmis à un serveur. Cela le rend complètement sûr pour le code propriétaire, les projets sensibles et les environnements d'entreprise."
+      },
+      "faq18": {
+        "category": "Performance",
+        "question": "Quelle est la vitesse du Nettoyeur de Code IA ?",
+        "answer": "Le Nettoyeur de Code IA traite le code instantanément dans votre navigateur, complétant généralement les opérations de nettoyage en millisecondes pour les fichiers de code de taille normale. Comme le traitement se produit localement, il n'y a pas de latence réseau, le rendant plus rapide que les alternatives basées sur le cloud."
+      },
+      "faq19": {
+        "category": "Intégration",
+        "question": "Puis-je utiliser le Nettoyeur de Code IA avec des systèmes de contrôle de version comme Git ?",
+        "answer": "Oui, le Nettoyeur de Code IA est conçu pour fonctionner parfaitement avec Git et d'autres systèmes de contrôle de version. En nettoyant le code avant de commiter, vous réduisez le bruit de diff et rendez les révisions de code plus efficaces. De nombreux développeurs l'utilisent dans leur flux de travail pre-commit."
+      },
+      "faq20": {
+        "category": "Dépannage",
+        "question": "Que dois-je faire si le code nettoyé ne fonctionne pas comme prévu ?",
+        "answer": "Le Nettoyeur de Code IA ne modifie que le formatage et les espaces, donc la fonctionnalité ne devrait jamais changer. Si vous rencontrez des problèmes, vérifiez que vous n'avez pas accidentellement modifié la logique du code. L'outil préserve tout le contenu du code, donc tout problème de fonctionnalité existait probablement dans le code original."
+      },
+      "faq21": {
+        "category": "Dépannage",
+        "question": "Pourquoi mon code a-t-il encore des problèmes de formatage après le nettoyage ?",
+        "answer": "Vérifiez quelles options de nettoyage vous avez activées. Certains problèmes de formatage peuvent nécessiter que des options spécifiques soient sélectionnées. Aussi, rappelez-vous que le Nettoyeur de Code IA gère les problèmes de formatage universels ; pour le formatage spécifique au langage, vous pourriez avoir besoin d'outils supplémentaires comme Prettier ou ESLint."
+      },
+      "faq22": {
+        "category": "Meilleures Pratiques",
+        "question": "Dois-je nettoyer le code chaque fois que j'utilise du code généré par IA ?",
+        "answer": "Oui, c'est une meilleure pratique de nettoyer le code généré par IA avant de l'utiliser dans votre projet. Cela assure un formatage cohérent dès le départ et empêche les problèmes de formatage de s'accumuler dans votre base de code. Faire du nettoyage une partie de votre flux de travail standard économise du temps à long terme."
+      },
+      "faq23": {
+        "category": "Technique",
+        "question": "Comment le Nettoyeur de Code IA détecte-t-il et gère-t-il différents styles d'indentation ?",
+        "answer": "Le Nettoyeur de Code IA analyse votre code pour détecter le modèle d'indentation existant, qu'il utilise des tabulations, des espaces ou des styles mixtes. Il normalise ensuite tout à une indentation cohérente de 2 espaces tout en préservant la structure logique et les niveaux d'imbrication de votre code."
+      },
+      "faq24": {
+        "category": "Utilisation",
+        "question": "Puis-je sauvegarder mes options de nettoyage préférées ?",
+        "answer": "Actuellement, le Nettoyeur de Code IA ne sauvegarde pas les préférences entre les sessions, mais vous pouvez rapidement sélectionner vos options préférées à chaque fois. Pour un usage cohérent de l'équipe, documentez vos paramètres préférés dans les directives de codage de votre équipe pour que tout le monde utilise les mêmes options."
+      },
+      "faq25": {
+        "category": "Formatage",
+        "question": "Le Nettoyeur de Code IA fonctionne-t-il avec du code ayant des styles de fins de ligne mixtes ?",
+        "answer": "Oui, c'est l'une de ses caractéristiques clés. Le Nettoyeur de Code IA détecte et normalise les fins de ligne mixtes (CRLF, LF, CR) en fins de ligne cohérentes style Unix (LF), qui est la norme pour la plupart des environnements de développement modernes et prévient les problèmes de contrôle de version."
+      },
+      "faq26": {
+        "category": "Technique",
+        "question": "Quelle est la différence entre le Nettoyeur de Code IA et un linter ?",
+        "answer": "Les linters comme ESLint identifient les problèmes de qualité de code et les violations de style mais ne les corrigent pas automatiquement. Le Nettoyeur de Code IA corrige réellement les problèmes de formatage automatiquement. Ils se complètent : utilisez le Nettoyeur de Code IA pour corriger le formatage, puis utilisez un linter pour vérifier la qualité du code et détecter d'autres problèmes."
+      },
+      "faq27": {
+        "category": "Meilleures Pratiques",
+        "question": "Comment m'assurer que mon équipe utilise le Nettoyeur de Code IA de manière cohérente ?",
+        "answer": "Documentez les paramètres préférés du Nettoyeur de Code IA de votre équipe dans vos normes de codification. Incluez quelles corrections doivent être activées et fournissez des exemples. Envisagez de faire du nettoyage de code une étape standard dans votre flux de travail de développement, surtout lorsque vous travaillez avec du code généré par IA."
+      },
+      "faq28": {
+        "category": "Intégration",
+        "question": "Le Nettoyeur de Code IA peut-il être utilisé avec d'autres outils de qualité de code ?",
+        "answer": "Absolument. Le Nettoyeur de Code IA fonctionne bien avec d'autres outils dans votre stack de développement. Utilisez-le pour le nettoyage de formatage, puis utilisez des linters pour les vérifications de qualité de code, des formateurs pour le formatage spécifique au langage et des outils de test pour la vérification de fonctionnalité. Chaque outil sert un objectif spécifique dans le maintien de la qualité du code."
+      }
+    },
+    "ui": {
+      "inputLabel": "Saisie de Code",
+      "inputPlaceholder": "Collez votre code généré par IA ici...",
+      "outputLabel": "Code Nettoyé",
+      "outputPlaceholder": "Le code nettoyé apparaîtra ici...",
+      "optionsTitle": "Options de Nettoyage",
+      "removeTrailingSpaces": "Supprimer les espaces de fin",
+      "normalizeIndentation": "Normaliser l'indentation (2 espaces)",
+      "removeZeroWidth": "Supprimer les caractères de largeur zéro",
+      "normalizeLineEndings": "Normaliser les fins de ligne (style Unix)",
+      "removeExtraBlankLines": "Supprimer les lignes vides supplémentaires",
+      "normalizeWhitespace": "Normaliser les espaces",
+      "cleanOperators": "Nettoyer l'espacement des opérateurs",
+      "cleanButton": "Nettoyer le Code",
+      "copyButton": "Copier",
+      "clearButton": "Effacer"
+    }
+  },
+  "AICodeFixerPage": {
+    "writeUp": {
+      "title": "Correcteur de Code IA : Guide Complet pour Corriger Automatiquement les Problèmes Courants dans le Code Généré par IA",
+      "introductionTitle": "Introduction à la Correction de Code IA",
+      "introductionP1": "Le Correcteur de Code IA est une outil spécialisé basé sur navigateur conçu pour identifier et corriger automatiquement les problèmes de code courants et les problèmes de formatage dans le code généré par IA. Alors que les développeurs dépendent de plus en plus d'asistants IA comme ChatGPT, GitHub Copilot et d'autres outils de génération de code, ils rencontrent une nouvelle catégorie de problèmes de qualité de code : erreurs mineures et inconsistances qui n'empêchent pas le code de s'exécuter mais créent des problèmes avec le style de code, la lisibilité et la maintenabilité.",
+      "introductionP2": "Les modèles IA génèrent du code fonctionnel, mais ils introduisent souvent des problèmes subtils comme une indentation inconsistante, des styles de guillemets mixtes, des espaces manquants autour des opérateurs, des fautes de frappe courantes dans les mots-clés de programmation, des inconsistances d'espacement de crochets et des irrégularités de syntaxe. Bien que ces problèmes puissent ne pas causer d'erreurs immédiates, ils violent les standards de codage, déclenchent des avertissements de linter, réduisent la lisibilité du code et rendent le code plus difficile à maintenir. Le Correcteur de Code IA identifie et corrige automatiquement ces problèmes courants, transformant le code généré par IA problématique en code propre, professionnel et conforme aux standards.",
+      "introductionP3": "L'outil opère entièrement dans votre navigateur en utilisant JavaScript côté client, garantissant une confidentialité complète et un traitement instantané. Votre code ne quitte jamais votre appareil, le rendant sûr pour le code propriétaire, les projets sensibles et les environnements d'entreprise. Avec des options personnalisables, vous pouvez choisir quelles corrections appliquer, vous permettant de maintenir le contrôle sur votre code tout en bénéficiant de la correction automatique d'erreurs. Que vous travailliez avec JavaScript, Python, Java ou tout autre langage de programmation, le Correcteur de Code IA fournit des capacités universelles de correction de code.",
+      "introductionP4": "Ce guide complet explore tout ce que vous devez savoir sur le Correcteur de Code IA, de la compréhension des problèmes courants qu'il aborde à l'implémentation des meilleures pratiques dans votre flux de travail de développement. Nous examinerons les problèmes spécifiques que présente le code généré par IA, comment l'outil corrige chaque problème et comment intégrer la correction automatique de code dans votre processus de développement de manière efficace.",
+      "whatIsTitle": "Qu'est-ce que le Correcteur de Code IA ?",
+      "whatIsP1": "Le Correcteur de Code IA est un outil de correction de code automatisé spécifiquement conçu pour aborder les problèmes courants trouvés dans le code généré par IA. Contrairement aux linters à usage général qui identifient les problèmes, le Correcteur de Code IA les corrige réellement automatiquement. Il se concentre sur les types d'erreurs que les modèles IA introduisent couramment : inconsistances de formatage, désajustements de style de guillemets, problèmes d'indentation, fautes de frappe courantes et irrégularités de syntaxe.",
+      "whatIsP2": "L'outil traite le code à travers plusieurs étapes de correction, chacune abordant une catégorie spécifique de problèmes courants. Il fonctionne sur le principe que la correction automatisée de problèmes courants économise du temps aux développeurs et assure la qualité du code. En corrigeant les problèmes automatiquement, le Correcteur de Code IA permet aux développeurs de se concentrer sur la logique et la fonctionnalité plutôt que de passer du temps sur des corrections fastidieuses de formatage et de syntaxe.",
+      "whatIsP3": "L'un des avantages clés du Correcteur de Code IA est son approche indépendante du langage combinée à une correction consciente du langage. Bien qu'il fonctionne avec tout langage de programmation basé sur texte, il comprend les modèles communs entre langages et peut corriger les problèmes qui sont universels (comme l'indentation) ainsi que spécifiques au langage (comme la cohérence des guillemets en JavaScript ou Python).",
+      "whyNeededTitle": "Pourquoi le Code Généré par IA Nécessite une Correction",
+      "whyNeededP1": "La génération de code par IA a transformé le développement logiciel, permettant un prototypage rapide et une exploration de code. Cependant, les modèles IA priorisent la fonctionnalité sur les détails de qualité de code. Comprendre pourquoi le code généré par IA nécessite une correction aide les développeurs à prendre des décisions éclairées sur quand et comment utiliser les outils de correction.",
+      "commonIssuesTitle": "Problèmes Courants dans le Code Généré par IA",
+      "commonIssuesP1": "Les modèles IA génèrent du code qui fonctionne, mais il contient souvent des problèmes nécessitant une correction. Voici les problèmes les plus courants :",
+      "commonIssuesItem1": "Erreurs d'Indentation : Les modèles IA peuvent utiliser une indentation inconsistante, mélangeant tabulations et espaces ou utilisant des niveaux d'indentation incorrects, rendant la structure du code peu claire.",
+      "commonIssuesItem2": "Inconsistance de Guillemets : Le code peut mélanger des guillemets simples et doubles de manière inconsistante, violant les guides de style et rendant le code plus difficile à lire et maintenir.",
+      "commonIssuesItem3": "Irrégularités de Syntaxe : Espaces manquants autour des opérateurs, espacement de crochets incorrect et autres problèmes de syntaxe qui ne causent pas d'erreurs mais violent les standards de codage.",
+      "commonIssuesItem4": "Fautes de Frappe Courantes : Les modèles IA introduisent parfois des fautes de frappe dans les mots-clés de programmation comme 'fucntion' au lieu de 'function' ou 'retrun' au lieu de 'return', qui peuvent causer des erreurs d'exécution.",
+      "productivityTitle": "Productivité et Économie de Temps",
+      "productivityP1": "Corriger manuellement les problèmes de code courants est chronophage et fastidieux. Le Correcteur de Code IA automatise ce processus, économisant un temps significatif aux développeurs. Au lieu de passer des minutes ou des heures à corriger des problèmes de formatage et de syntaxe, les développeurs peuvent se concentrer sur la logique, l'architecture et la fonctionnalité. Ce gain de productivité devient particulièrement précieux lors du travail avec de grandes quantités de code généré par IA.",
+      "productivityP2": "L'outil réduit également la charge cognitive en gérant les corrections routinières automatiquement. Les développeurs peuvent penser à la logique et au design du code plutôt que de s'inquiéter des styles de guillemets ou de la cohérence d'indentation. Cette économie de bande passante mentale améliore la qualité du code et la satisfaction du développeur.",
+      "qualityTitle": "Qualité du Code et Conformité aux Standards",
+      "qualityP1": "Une qualité de code cohérente est essentielle pour les bases de code maintenables. Le Correcteur de Code IA assure que le code généré par IA répond aux standards de l'équipe dès le départ, empêchant l'accumulation de problèmes de qualité de code. Ceci est particulièrement important dans les environnements d'équipe où les standards de qualité de code doivent être maintenus dans toutes les contributions.",
+      "featuresTitle": "Caractéristiques Clés du Correcteur de Code IA",
+      "featuresP1": "Le Correcteur de Code IA fournit des capacités complètes de correction de code à travers un ensemble de fonctionnalités ciblées et personnalisables. Chaque fonctionnalité aborde une catégorie spécifique de problèmes courants, permettant aux développeurs d'adapter le processus de correction à leurs besoins.",
+      "indentationFixTitle": "Correction des Erreurs d'Indentation",
+      "indentationFixP1": "L'indentation cohérente est fondamentale pour un code lisible. Le Correcteur de Code IA détecte et corrige automatiquement les erreurs d'indentation, assurant que les blocs de code sont correctement imbriqués et structurés visuellement. Il normalise l'indentation à des niveaux cohérents, rendant la structure du code immédiatement claire.",
+      "indentationFixP2": "L'outil comprend la structure du code et préserve les relations logiques tout en corrigeant la présentation visuelle. Cela assure que le code corrigé maintient sa fonctionnalité originale tout en devenant plus lisible et maintenable.",
+      "quotesTitle": "Correction de la Cohérence des Guillemets",
+      "quotesP1": "Les styles de guillemets mixtes rendent le code inconsistant et plus difficile à lire. Le Correcteur de Code IA détecte le style de guillemets le plus commun dans votre code et standardise tous les guillemets pour correspondre. Cela assure la cohérence dans toute la base de code, rendant le code plus facile à lire et maintenir.",
+      "quotesP2": "L'outil gère intelligemment les guillemets simples et doubles, préservant les guillemets échappés et comprenant le contexte. Il assure que les changements de guillemets ne cassent pas la fonctionnalité des chaînes tout en atteignant la cohérence de style.",
+      "syntaxTitle": "Correction des Problèmes de Syntaxe Courants",
+      "syntaxP1": "Le Correcteur de Code IA aborde les problèmes de syntaxe courants comme les espaces manquants autour des opérateurs, l'espacement de crochets incorrect et autres problèmes de formatage qui violent les standards de codage. Ces corrections améliorent la lisibilité du code et assurent la conformité aux guides de style.",
+      "syntaxP2": "L'outil comprend la précédence des opérateurs et le contexte, assurant que les corrections d'espacement ne changent pas la signification du code. Il applique les corrections intelligemment, maintenant la fonctionnalité du code tout en améliorant l'apparence et la conformité aux standards.",
+      "bracketsTitle": "Correction de l'Espacement des Crochets",
+      "bracketsP1": "L'espacement cohérent autour des crochets améliore la lisibilité du code. Le Correcteur de Code IA assure un espacement approprié autour des parenthèses, crochets carrés et accolades, rendant le code plus facile à lire et plus cohérent avec les standards communs de codage.",
+      "semicolonsTitle": "Suppression des Points-Virgules Finaux",
+      "semicolonsP1": "Dans les langages où les points-virgules sont optionnels (comme JavaScript), les points-virgules finaux peuvent être inutiles. Le Correcteur de Code IA peut optionnellement supprimer les points-virgules finaux, aidant à maintenir un style de code cohérent. Cette fonctionnalité est optionnelle et peut être activée/désactivée selon les préférences de votre équipe.",
+      "typosTitle": "Correction des Fautes de Frappe Courantes",
+      "typosP1": "Les modèles IA introduisent parfois des fautes de frappe dans les mots-clés de programmation. Le Correcteur de Code IA détecte et corrige automatiquement les fautes de frappe courantes comme 'fucntion' → 'function', 'retrun' → 'return', 'fals' → 'false' et 'ture' → 'true'. Cela prévient les erreurs d'exécution et assure la correction du code.",
+      "typosP2": "L'outil maintient un dictionnaire complet des fautes de frappe courantes des mots-clés de programmation et leurs corrections. Il ne corrige que les mots entiers, assurant que les fautes de frappe dans les chaînes ou commentaires ne sont pas incorrectement modifiées.",
+      "howItWorksTitle": "Comment Fonctionne le Correcteur de Code IA",
+      "howItWorksP1": "Le Correcteur de Code IA traite le code à travers une série d'étapes de correction, chacune conçue pour aborder des problèmes courants spécifiques. Comprendre comment fonctionne l'outil vous aide à l'utiliser efficacement et à comprendre quels changements il apporte à votre code.",
+      "step1Title": "Étape 1 : Analyse du Code",
+      "step1P1": "Lorsque vous collez du code dans le Correcteur de Code IA, l'outil analyse d'abord la structure du code, identifiant les modèles, détectant les problèmes et comprenant le contexte. Cette phase d'analyse assure que les corrections sont appliquées correctement et que la logique du code est préservée.",
+      "step2Title": "Étape 2 : Correction Sélective",
+      "step2P1": "Basé sur vos options sélectionnées, le Correcteur de Code IA applique des opérations de correction spécifiques. Chaque opération est indépendante, vous permettant de personnaliser le processus de correction. L'outil traite le code intelligemment, appliquant les corrections tout en préservant la fonctionnalité et la structure du code.",
+      "step3Title": "Étape 3 : Génération de Sortie",
+      "step3P1": "Après traitement, le Correcteur de Code IA génère du code corrigé qui maintient toute la fonctionnalité originale tout en corrigeant les problèmes identifiés. La sortie est prête à être copiée et collée directement dans votre projet, avec toutes les corrections sélectionnées appliquées.",
+      "step4Title": "Étape 4 : Vérification",
+      "step4P1": "Le code corrigé préserve toute la logique, fonctionnalité et structure du code. Seuls les problèmes identifiés sont corrigés, assurant que le code corrigé se comporte de manière identique à l'original tout en répondant à des standards de qualité plus élevés.",
+      "bestPracticesTitle": "Meilleures Pratiques pour Utiliser le Correcteur de Code IA",
+      "bestPracticesP1": "L'utilisation efficace du Correcteur de Code IA implique de comprendre quand l'utiliser, comment l'intégrer dans votre flux de travail et comment le combiner avec d'autres outils de développement. Suivre les meilleures pratiques assure un bénéfice maximum de l'outil.",
+      "selectiveTitle": "Utiliser la Correction Sélective",
+      "selectiveP1": "Toutes les corrections ne sont pas appropriées pour toutes les situations. Utilisez les options personnalisables de l'outil pour sélectionner uniquement les corrections dont vous avez besoin. Par exemple, vous pourriez vouloir corriger l'indentation et les guillemets mais préserver l'utilisation existante des points-virgules. La correction sélective vous donne le contrôle tout en bénéficiant de l'automatisation.",
+      "reviewTitle": "Toujours Réviser le Code Corrigé",
+      "reviewP1": "Bien que le Correcteur de Code IA soit conçu pour préserver la fonctionnalité, révisiez toujours le code corrigé avant de commiter. Vérifiez que les corrections sont correctes et qu'aucun changement inattendu n'a été introduit. Ce processus de révision assure la qualité du code et détecte tout cas limite.",
+      "testingTitle": "Tester Après Correction",
+      "testingP1": "Après avoir utilisé le Correcteur de Code IA, testez votre code pour vous assurer qu'il fonctionne toujours correctement. Bien que l'outil soit conçu pour préserver la fonctionnalité, les tests fournissent une vérification de sécurité supplémentaire. Ceci est particulièrement important pour le code de production ou le code qui fait partie de systèmes critiques.",
+      "useCasesTitle": "Cas d'Usage et Applications",
+      "useCasesP1": "Le Correcteur de Code IA sert divers cas d'usage dans différents scénarios de développement. Comprendre ces cas d'usage vous aide à identifier quand l'outil peut bénéficier à votre flux de travail.",
+      "aiGeneratedTitle": "Corriger le Code Généré par IA",
+      "aiGeneratedP1": "Le cas d'usage principal est de corriger le code généré par des assistants IA comme ChatGPT, GitHub Copilot ou d'autres outils de génération de code. Ces outils produisent du code fonctionnel mais incluent souvent des problèmes mineurs. Le Correcteur de Code IA transforme ce code en code prêt pour la production qui répond aux standards.",
+      "quickFixesTitle": "Corrections Rapides pour Problèmes Courants",
+      "quickFixesP1": "Lorsque vous rencontrez des problèmes de code courants pendant le développement, le Correcteur de Code IA peut les corriger rapidement. Au lieu de corriger manuellement l'indentation, les guillemets ou les fautes de frappe, laissez l'outil gérer ces corrections routinières automatiquement, économisant du temps et assurant la cohérence.",
+      "learningTitle": "Apprentissage et Amélioration de la Qualité du Code",
+      "learningP1": "Pour les développeurs apprenant de nouveaux langages ou standards de codage, le Correcteur de Code IA peut aider en appliquant automatiquement des modèles corrects. Voir comment les problèmes sont corrigés aide les développeurs à apprendre les pratiques de codage appropriées et à améliorer leur qualité de code au fil du temps.",
+      "securityTitle": "Sécurité et Confidentialité",
+      "securityP1": "Le Correcteur de Code IA traite tout le code entièrement dans votre navigateur en utilisant JavaScript côté client. Votre code ne quitte jamais votre appareil, garantissant une confidentialité et une sécurité complètes. Cela rend l'outil sûr pour le code propriétaire, les projets sensibles et les environnements d'entreprise où la sécurité du code est primordiale.",
+      "securityP2": "Contrairement aux services de correction de code basés sur le cloud qui envoient votre code à des serveurs distants, le Correcteur de Code IA opère localement. Cela élimine les préoccupations de sécurité concernant l'exposition du code, les violations de données ou l'accès non autorisé. Votre code reste privé pendant tout le processus de correction.",
+      "limitationsTitle": "Limitations et Considérations",
+      "limitationsP1": "Bien que le Correcteur de Code IA soit puissant, il a des limitations. Comprendre ces limitations vous aide à utiliser l'outil efficacement et à savoir quand le compléter avec d'autres outils :",
+      "limitationsItem1": "Erreurs de Logique : Le Correcteur de Code IA se concentre sur les problèmes de formatage et de syntaxe courants. Il ne corrige pas les erreurs de logique, les problèmes algorithmiques ou les problèmes de design. Pour ceux-ci, vous avez besoin de révision de code, de tests et d'outils de débogage appropriés.",
+      "limitationsItem2": "Syntaxe Complexe : L'outil gère les problèmes de syntaxe courants mais peut ne pas détecter tous les cas limites ou complexités spécifiques au langage. Pour une vérification complète des erreurs, utilisez des compilateurs, linters et outils spécifiques au langage appropriés.",
+      "limitationsItem3": "Architecture du Code : Le Correcteur de Code IA corrige les problèmes dans le code mais n'améliore pas l'architecture du code, les modèles de design ou la structure globale. Ceux-ci nécessitent le jugement humain et l'expertise architecturale.",
+      "comparisonTitle": "Correcteur de Code IA vs. Autres Outils",
+      "comparisonP1": "Comprendre comment le Correcteur de Code IA se compare aux autres outils de qualité de code vous aide à choisir le bon outil pour vos besoins et à les utiliser efficacement ensemble.",
+      "vsLintersTitle": "Correcteur de Code IA vs. Linters",
+      "vsLintersP1": "Les linters comme ESLint identifient les problèmes de qualité de code mais ne les corrigent pas automatiquement. Le Correcteur de Code IA corrige réellement les problèmes automatiquement. Ils se complètent : utilisez le Correcteur de Code IA pour corriger les problèmes courants, puis utilisez des linters pour détecter les problèmes restants et vérifier la qualité du code.",
+      "vsFormattersTitle": "Correcteur de Code IA vs. Formateurs de Code",
+      "vsFormattersP1": "Les formateurs de code comme Prettier se concentrent sur le formatage du code selon les guides de style. Le Correcteur de Code IA se concentre sur la correction des erreurs et problèmes courants. Ils servent des objectifs différents et fonctionnent bien ensemble : utilisez le Correcteur de Code IA pour corriger les erreurs, puis utilisez des formateurs pour appliquer un formatage de style complet.",
+      "conclusionTitle": "Conclusion : Intégrer le Correcteur de Code IA dans votre Flux de Travail",
+      "conclusionP1": "Le Correcteur de Code IA répond à un besoin critique dans le développement logiciel moderne : maintenir la qualité du code lors du travail avec du code généré par IA. Alors que la génération de code par IA devient plus répandue, des outils comme le Correcteur de Code IA deviennent essentiels pour assurer que le code généré par IA répond aux standards professionnels. Le fonctionnement basé sur navigateur de l'outil garantit la confidentialité et la sécurité, tandis que ses options personnalisables permettent aux équipes de l'adapter à leurs besoins spécifiques.",
+      "conclusionP2": "En intégrant le Correcteur de Code IA dans votre flux de travail de développement, vous pouvez assurer que le code généré par IA est corrigé et amélioré avant d'entrer dans votre base de code. Cela économise du temps, améliore la qualité du code et maintient des standards professionnels. Que vous corrigiez du code généré par IA, corrigiez des problèmes courants ou appreniez des pratiques de codage appropriées, le Correcteur de Code IA fournit les outils dont vous avez besoin pour maintenir la qualité du code à l'ère du développement assisté par IA."
+    },
+    "faqHeading": "Questions Fréquemment Posées",
+    "faqIntro": "Questions courantes sur le Correcteur de Code IA :",
+    "faqs": {
+      "faq1": {
+        "category": "Général",
+        "question": "Qu'est-ce que le Correcteur de Code IA ?",
+        "answer": "Le Correcteur de Code IA est un outil automatisé qui corrige les problèmes de code courants dans le code généré par IA, y compris les erreurs d'indentation, les incohérences de guillemets, les problèmes de syntaxe, les problèmes d'espacement des crochets et les fautes de frappe courantes dans les mots-clés."
+      },
+      "faq2": {
+        "category": "Général",
+        "question": "Quels types de problèmes corrige-t-il ?",
+        "answer": "L'outil corrige les problèmes d'indentation, la cohérence des guillemets (guillemets simples vs doubles), les erreurs de syntaxe courantes, l'espacement des crochets, les points-virgules manquants et les fautes de frappe courantes dans les mots-clés de programmation comme 'function', 'return', 'console', etc."
+      },
+      "faq3": {
+        "category": "Technique",
+        "question": "Corrige-t-il toutes les erreurs de code ?",
+        "answer": "Non. Le Correcteur de Code IA se concentre sur les problèmes de formatage et de syntaxe courants. Il ne corrige pas les erreurs de logique, les erreurs de type ou les problèmes de syntaxe complexes. Pour une vérification complète des erreurs, utilisez un linter ou un compilateur de code approprié."
+      },
+      "faq4": {
+        "category": "Utilisation",
+        "question": "Comment utiliser l'outil ?",
+        "answer": "Collez votre code généré par IA dans le champ de saisie, sélectionnez les corrections que vous souhaitez appliquer à l'aide des cases à cocher et cliquez sur 'Corriger le Code'. Le code corrigé apparaîtra dans le champ de sortie, prêt à être copié."
+      },
+      "faq5": {
+        "category": "Formatage",
+        "question": "Quel style de guillemets utilise-t-il ?",
+        "answer": "L'outil détecte le style de guillemets le plus courant dans votre code et standardise tous les guillemets pour correspondre. Par défaut, il préfère les guillemets doubles, mais vous pouvez ajuster cela en fonction du guide de style de votre base de code."
+      },
+      "faq6": {
+        "category": "Formatage",
+        "question": "Préserve-t-il la structure de mon code ?",
+        "answer": "Oui. L'outil ne corrige que le formatage et les problèmes courants. Il ne restructure pas votre code, ne change pas les noms de fonctions ni ne modifie l'architecture globale du code."
+      },
+      "faq7": {
+        "category": "Utilisation",
+        "question": "Puis-je choisir quelles corrections appliquer ?",
+        "answer": "Oui, l'outil fournit des cases à cocher pour chaque type de correction, vous permettant d'activer ou de désactiver des corrections spécifiques telles que la correction d'indentation, la cohérence des guillemets, les corrections de syntaxe et plus encore."
+      },
+      "faq8": {
+        "category": "Général",
+        "question": "Mon code est-il sécurisé ?",
+        "answer": "Oui. Tout le traitement se fait entièrement dans votre navigateur. Votre code n'est jamais envoyé à un serveur, garantissant une confidentialité et une sécurité complètes pour votre code propriétaire."
+      },
+      "faq9": {
+        "category": "Technique",
+        "question": "Quelles fautes de frappe courantes corrige-t-il ?",
+        "answer": "L'outil corrige les fautes de frappe courantes dans les mots-clés de programmation telles que 'fucntion' → 'function', 'retrun' → 'return', 'fals' → 'false', 'ture' → 'true', 'undefiend' → 'undefined' et des fautes de frappe similaires courantes."
+      },
+      "faq10": {
+        "category": "Formatage",
+        "question": "Fonctionne-t-il avec tous les langages de programmation ?",
+        "answer": "Oui, l'outil fonctionne avec n'importe quel langage de programmation basé sur du texte. Cependant, certaines corrections comme la suppression des points-virgules sont spécifiques au langage et doivent être utilisées avec précaution en fonction des exigences de votre langage."
+      },
+      "faq11": {
+        "category": "Technique",
+        "question": "Comment le Correcteur de Code IA gère-t-il différents langages de programmation ?",
+        "answer": "Le Correcteur de Code IA fonctionne avec tout langage de programmation basé sur texte, appliquant des corrections universelles comme l'indentation et la cohérence des guillemets. Certaines corrections, comme la suppression des points-virgules, sont conscientes du langage et doivent être utilisées appropriément selon les exigences de syntaxe de votre langage. L'outil comprend les modèles communs entre langages tout en respectant les conventions spécifiques au langage."
+      },
+      "faq12": {
+        "category": "Meilleures Pratiques",
+        "question": "Dois-je corriger le code immédiatement après la génération par IA ou attendre ?",
+        "answer": "C'est une meilleure pratique de corriger le code immédiatement après la génération, avant qu'il n'entre dans votre base de code. Cela assure la qualité du code dès le départ et empêche l'accumulation de problèmes. Corriger tôt facilite également l'identification de savoir si les problèmes provenaient de la génération par IA ou ont été introduits plus tard."
+      },
+      "faq13": {
+        "category": "Meilleures Pratiques",
+        "question": "Le Correcteur de Code IA peut-il remplacer la révision de code ?",
+        "answer": "Non, le Correcteur de Code IA complète mais ne remplace pas la révision de code. Il corrige les problèmes courants de formatage et de syntaxe, mais la révision de code reste essentielle pour la vérification de logique, l'évaluation d'architecture et la détection de problèmes complexes que les outils automatisés ne peuvent identifier."
+      },
+      "faq14": {
+        "category": "Technique",
+        "question": "Que se passe-t-il si le Correcteur de Code IA fait une correction incorrecte ?",
+        "answer": "Le Correcteur de Code IA est conçu pour être conservateur et préserver la fonctionnalité du code. Cependant, si vous remarquez une correction incorrecte, vous pouvez simplement ne pas utiliser cette option de correction spécifique ou la corriger manuellement. Révisiez toujours le code corrigé avant de commiter pour assurer la correction."
+      },
+      "faq15": {
+        "category": "Utilisation",
+        "question": "Comment savoir quelles corrections activer ?",
+        "answer": "Commencez avec les corrections par défaut (indentation, guillemets, syntaxe) qui sont généralement sûres. Activez des corrections supplémentaires comme la suppression des points-virgules uniquement si elles correspondent aux standards de codage de votre équipe. En cas de doute, activez les corrections une à la fois et révisiez les résultats pour voir ce qui fonctionne le mieux pour votre base de code."
+      },
+      "faq16": {
+        "category": "Formatage",
+        "question": "Le Correcteur de Code IA change-t-il la fonctionnalité de mon code ?",
+        "answer": "Non, le Correcteur de Code IA ne corrige que le formatage et les problèmes de syntaxe courants. Il ne change pas la logique du code, les noms de variables, les définitions de fonctions ni aucun aspect fonctionnel. Le code corrigé devrait se comporter de manière identique à l'original, juste avec un formatage amélioré et des problèmes courants corrigés."
+      },
+      "faq17": {
+        "category": "Sécurité",
+        "question": "Mon code est-il sûr lors de l'utilisation du Correcteur de Code IA ?",
+        "answer": "Oui, absolument. Le Correcteur de Code IA traite tout le code entièrement dans votre navigateur. Votre code ne quitte jamais votre appareil ni n'est transmis à un serveur. Cela le rend complètement sûr pour le code propriétaire, les projets sensibles et les environnements d'entreprise."
+      },
+      "faq18": {
+        "category": "Performance",
+        "question": "Quelle est la vitesse du Correcteur de Code IA ?",
+        "answer": "Le Correcteur de Code IA traite le code instantanément dans votre navigateur, complétant généralement les corrections en millisecondes pour les fichiers de code de taille normale. Comme tout le traitement se produit localement, il n'y a pas de latence réseau, le rendant plus rapide que les alternatives basées sur le cloud."
+      },
+      "faq19": {
+        "category": "Intégration",
+        "question": "Puis-je utiliser le Correcteur de Code IA avec des linters et formateurs ?",
+        "answer": "Oui, le Correcteur de Code IA fonctionne bien avec d'autres outils. Utilisez-le pour corriger les problèmes courants d'abord, puis utilisez des linters pour détecter les problèmes restants et des formateurs pour appliquer un formatage de style complet. Chaque outil sert un objectif spécifique dans le maintien de la qualité du code."
+      },
+      "faq20": {
+        "category": "Dépannage",
+        "question": "Que faire si mon code a des erreurs après correction ?",
+        "answer": "Le Correcteur de Code IA ne modifie que le formatage et les problèmes de syntaxe courants, donc il ne devrait pas introduire d'erreurs. Si vous rencontrez des problèmes, ils existaient probablement dans le code original. Révisez le code original pour vérifier, et considérez que certaines corrections (comme la suppression des points-virgules) peuvent ne pas être appropriées pour votre langage."
+      },
+      "faq21": {
+        "category": "Dépannage",
+        "question": "Pourquoi le Correcteur de Code IA ne corrige-t-il pas tous les problèmes dans mon code ?",
+        "answer": "Le Correcteur de Code IA se concentre sur les problèmes courants de formatage et de syntaxe. Il ne corrige pas les erreurs de logique, les problèmes de syntaxe complexes ou les problèmes architecturaux. Pour une vérification complète des erreurs, utilisez des compilateurs, linters et outils spécifiques au langage appropriés en plus du Correcteur de Code IA."
+      },
+      "faq22": {
+        "category": "Meilleures Pratiques",
+        "question": "Dois-je corriger le code avant ou après les tests ?",
+        "answer": "Il est généralement préférable de corriger le code avant les tests, car corriger les problèmes courants peut révéler d'autres problèmes. Cependant, testez toujours après correction pour vous assurer que la fonctionnalité est préservée. Le processus de correction devrait être transparent et ne pas introduire de nouveaux problèmes."
+      },
+      "faq23": {
+        "category": "Technique",
+        "question": "Comment le Correcteur de Code IA détecte-t-il les inconsistances de guillemets ?",
+        "answer": "Le Correcteur de Code IA analyse votre code pour identifier le style de guillemets le plus commun (guillemets simples ou doubles) et standardise ensuite tous les guillemets pour correspondre. Il gère les guillemets échappés intelligemment et préserve la fonctionnalité des chaînes tout en atteignant la cohérence."
+      },
+      "faq24": {
+        "category": "Utilisation",
+        "question": "Puis-je utiliser le Correcteur de Code IA pour du code écrit par des humains ?",
+        "answer": "Oui, le Correcteur de Code IA fonctionne avec tout code, pas seulement le code généré par IA. Il peut corriger les problèmes courants dans le code écrit par des humains également, le rendant utile pour standardiser les bases de code, corriger le code legacy et maintenir la cohérence dans toutes les contributions de l'équipe."
+      },
+      "faq25": {
+        "category": "Formatage",
+        "question": "Le Correcteur de Code IA préserve-t-il les commentaires et la documentation du code ?",
+        "answer": "Oui, tous les commentaires du code, chaînes de documentation et commentaires en ligne sont préservés exactement tels quels. Le Correcteur de Code IA ne modifie que le formatage et la syntaxe du code, jamais le contenu des commentaires ou de la documentation."
+      },
+      "faq26": {
+        "category": "Technique",
+        "question": "Quelle est la différence entre corriger et formater ?",
+        "answer": "Corriger aborde les erreurs et problèmes qui affectent la correction du code ou la conformité aux standards (comme les fautes de frappe, erreurs d'indentation, inconsistances de guillemets). Formater se concentre sur le style et l'apparence (comme l'espacement, les sauts de ligne, l'alignement). Le Correcteur de Code IA fait les deux : il corrige les erreurs et améliore le formatage."
+      },
+      "faq27": {
+        "category": "Meilleures Pratiques",
+        "question": "Comment m'assurer que mon équipe utilise le Correcteur de Code IA de manière cohérente ?",
+        "answer": "Documentez les paramètres préférés du Correcteur de Code IA de votre équipe dans vos standards de codification. Incluez quelles corrections doivent être activées et fournissez des exemples. Envisagez de faire de la correction de code une étape standard dans votre flux de travail de développement, surtout lorsque vous travaillez avec du code généré par IA."
+      },
+      "faq28": {
+        "category": "Intégration",
+        "question": "Le Correcteur de Code IA peut-il être intégré dans des flux de travail automatisés ?",
+        "answer": "Bien que le Correcteur de Code IA soit un outil basé sur navigateur, vous pouvez l'utiliser dans votre flux de travail manuel avant de commiter le code. Pour une intégration complètement automatisée CI/CD, vous pourriez avoir besoin d'alternatives en ligne de commande, mais le Correcteur de Code IA est excellent pour la correction pre-commit et la préparation de révision de code."
+      }
+    },
+    "ui": {
+      "inputLabel": "Saisie de Code",
+      "inputPlaceholder": "Collez votre code généré par IA ici...",
+      "outputLabel": "Code Corrigé",
+      "outputPlaceholder": "Le code corrigé apparaîtra ici...",
+      "optionsTitle": "Options de Correction",
+      "fixIndentation": "Corriger l'indentation",
+      "fixQuoteConsistency": "Corriger la cohérence des guillemets",
+      "fixCommonSyntax": "Corriger les problèmes de syntaxe courants",
+      "fixBracketSpacing": "Corriger l'espacement des crochets",
+      "removeTrailingSemicolons": "Supprimer les points-virgules de fin",
+      "fixCommonTypos": "Corriger les fautes de frappe courantes",
+      "fixButton": "Corriger le Code",
+      "copyButton": "Copier",
+      "clearButton": "Effacer"
     }
   }
 }

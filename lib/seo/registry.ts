@@ -79,6 +79,13 @@ export const toolPages: ToolPage[] = [
     category: 'text',
   },
   {
+    slug: 'remove-whitespace',
+    title: 'Remove Whitespace',
+    description: 'Remove all whitespace characters including spaces, tabs, and line breaks from text.',
+    seoTitle: 'Remove Whitespace Online - Remove All Spaces, Tabs & Line Breaks',
+    category: 'text',
+  },
+  {
     slug: 'strip-html',
     title: 'Strip HTML',
     description: 'Remove HTML tags and return clean plain text.',
@@ -235,6 +242,20 @@ export const toolPages: ToolPage[] = [
     slug: 'ai-watermark-remover',
     title: 'AI Watermark Remover',
     description: 'Clean formatting artifacts, normalize Unicode, and tidy AI-era text for publishing.',
+    category: 'ai-cleanup',
+  },
+  {
+    slug: 'ai-code-cleaner',
+    title: 'AI Code Cleaner',
+    description: 'Clean and normalize code formatting, remove trailing spaces, fix indentation, and remove invisible characters from AI-generated code.',
+    seoTitle: 'AI Code Cleaner - Clean and Format AI-Generated Code',
+    category: 'ai-cleanup',
+  },
+  {
+    slug: 'ai-code-fixer',
+    title: 'AI Code Fixer',
+    description: 'Fix common code issues, syntax errors, indentation problems, and formatting inconsistencies in AI-generated code.',
+    seoTitle: 'AI Code Fixer - Fix Common Issues in AI-Generated Code',
     category: 'ai-cleanup',
   },
   {

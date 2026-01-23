@@ -21,6 +21,7 @@ export type Tool = {
       | 'invisible-character-detector'
       | 'remove-duplicate-lines'
       | 'remove-line-breaks'
+      | 'remove-whitespace'
       | 'strip-html'
       | 'url-encoder-decoder'
       | 'word-counter'
@@ -29,7 +30,9 @@ export type Tool = {
       | 'morse-generator'
       | 'combination-generator'
       | 'line-combination-generator'
-      | 'permutation-generator';
+      | 'permutation-generator'
+      | 'ai-code-cleaner'
+      | 'ai-code-fixer';
   };
   content?: {
     disclaimers?: string[];
@@ -156,6 +159,7 @@ function getUIKind(
   | 'invisible-character-detector'
   | 'remove-duplicate-lines'
   | 'remove-line-breaks'
+  | 'remove-whitespace'
   | 'strip-html'
   | 'url-encoder-decoder'
   | 'word-counter'
@@ -164,7 +168,9 @@ function getUIKind(
   | 'morse-generator'
   | 'combination-generator'
   | 'line-combination-generator'
-  | 'permutation-generator' {
+  | 'permutation-generator'
+  | 'ai-code-cleaner'
+  | 'ai-code-fixer' {
   if (slug === '') {
     return 'text-cleaner';
   }
@@ -176,6 +182,12 @@ function getUIKind(
   }
   if (slug === 'permutation-generator') {
     return 'permutation-generator';
+  }
+  if (slug === 'ai-code-cleaner') {
+    return 'ai-code-cleaner';
+  }
+  if (slug === 'ai-code-fixer') {
+    return 'ai-code-fixer';
   }
   if (UTILITY_SLUGS.has(slug)) {
     return slug as Tool['ui']['kind'];

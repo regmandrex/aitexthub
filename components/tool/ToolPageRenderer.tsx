@@ -11,6 +11,7 @@ import { FindReplaceTool } from '@/components/tools/FindReplaceTool';
 import { InvisibleCharacterDetectorTool } from '@/components/tools/InvisibleCharacterDetectorTool';
 import { RemoveDuplicateLinesTool } from '@/components/tools/RemoveDuplicateLinesTool';
 import { RemoveLineBreaksTool } from '@/components/tools/RemoveLineBreaksTool';
+import { RemoveWhitespaceTool } from '@/components/tools/RemoveWhitespaceTool';
 import { SpaceRemoverTool } from '@/components/tools/SpaceRemoverTool';
 import { StripHtmlTool } from '@/components/tools/StripHtmlTool';
 import { TextCleanerTool } from '@/components/tools/TextCleanerTool';
@@ -23,6 +24,8 @@ import { MorseCodeGeneratorTool } from '@/components/tools/MorseCodeGeneratorToo
 import { CombinationGeneratorTool } from '@/components/tools/CombinationGeneratorTool';
 import { LineCombinationGeneratorTool } from '@/components/tools/LineCombinationGeneratorTool';
 import { PermutationGeneratorTool } from '@/components/tools/PermutationGeneratorTool';
+import { AICodeCleanerTool } from '@/components/tools/AICodeCleanerTool';
+import { AICodeFixerTool } from '@/components/tools/AICodeFixerTool';
 // ChatGPT tools
 import { ChatGPTDetectorTool } from '@/components/tools/ChatGPTDetectorTool';
 import { ChatGPTHumanizerTool } from '@/components/tools/ChatGPTHumanizerTool';
@@ -72,6 +75,7 @@ const uiComponentMap: Record<string, React.ComponentType> = {
   'invisible-character-detector': InvisibleCharacterDetectorTool,
   'remove-duplicate-lines': RemoveDuplicateLinesTool,
   'remove-line-breaks': RemoveLineBreaksTool,
+  'remove-whitespace': RemoveWhitespaceTool,
   'space-remover': SpaceRemoverTool,
   'strip-html': StripHtmlTool,
   'text-cleaner': TextCleanerTool,
@@ -84,6 +88,8 @@ const uiComponentMap: Record<string, React.ComponentType> = {
   'combination-generator': CombinationGeneratorTool,
   'line-combination-generator': LineCombinationGeneratorTool,
   'permutation-generator': PermutationGeneratorTool,
+  'ai-code-cleaner': AICodeCleanerTool,
+  'ai-code-fixer': AICodeFixerTool,
   // ChatGPT tools
   'chatgpt-detector': ChatGPTDetectorTool,
   'chatgpt-humanizer': ChatGPTHumanizerTool,
