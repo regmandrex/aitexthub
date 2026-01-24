@@ -2,6 +2,21 @@ import type { NextRequest } from 'next/server';
 import { NextResponse } from 'next/server';
 import { DEFAULT_LOCALE, isSupportedLocale, type SupportedLocale } from './lib/i18n';
 
+const WATERMARK_REMOVER_TO_CLEANER_REDIRECTS: Record<string, string> = {
+  '/claude-watermark-remover': '/claude-watermark-cleaner',
+  '/mistral-watermark-remover': '/mistral-watermark-cleaner',
+  '/deepseek-watermark-remover': '/deepseek-watermark-cleaner',
+  '/grok-watermark-remover': '/grok-watermark-cleaner',
+  '/gemini-watermark-remover': '/gemini-watermark-cleaner',
+  '/perplexity-watermark-remover': '/perplexity-watermark-cleaner',
+  '/llama-watermark-remover': '/llama-watermark-cleaner',
+};
+
+function stripTrailingSlash(pathname: string) {
+  if (pathname.length > 1 && pathname.endsWith('/')) return pathname.slice(0, -1);
+  return pathname;
+}
+
 function getLocale(request: NextRequest): SupportedLocale {
   // Check if locale is in the URL path
   const pathname = request.nextUrl.pathname;
@@ -53,6 +68,31 @@ export function proxy(request: NextRequest) {
     pathname.includes('.') // files with extensions
   ) {
     return NextResponse.next();
+  }
+
+  // 301 redirects for legacy model watermark remover slugs -> watermark cleaner slugs
+  // Handle both with and without locale prefix (e.g. /es/claude-watermark-remover).
+  {
+    const normalized = stripTrailingSlash(pathname);
+    const directDest = WATERMARK_REMOVER_TO_CLEANER_REDIRECTS[normalized];
+    if (directDest) {
+      const url = request.nextUrl.clone();
+      url.pathname = directDest;
+      return NextResponse.redirect(url, 301);
+    }
+
+    const segments = normalized.split('/').filter(Boolean);
+    const first = segments[0];
+    if (first && isSupportedLocale(first)) {
+      const localeFromPath = first;
+      const withoutLocale = '/' + segments.slice(1).join('/');
+      const dest = WATERMARK_REMOVER_TO_CLEANER_REDIRECTS[withoutLocale];
+      if (dest) {
+        const url = request.nextUrl.clone();
+        url.pathname = localeFromPath === DEFAULT_LOCALE ? dest : `/${localeFromPath}${dest}`;
+        return NextResponse.redirect(url, 301);
+      }
+    }
   }
 
   const pathnameSegments = pathname.split('/').filter(Boolean);
