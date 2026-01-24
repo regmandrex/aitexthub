@@ -71,9 +71,20 @@ export default async function RootLayout({ children }: RootLayoutProps) {
       <head>
         {needsBreakKeep ? <meta charSet="utf-8" /> : null}
         <link rel="preconnect" href="https://pagead2.googlesyndication.com" />
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
       </head>
       <body className={bodyClassName}>
         <I18nProvider locale={locale} messages={messages}>
+          {/* Google tag (gtag.js) */}
+          <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-YZ37PVSNQ2" />
+          <Script id="gtag-init" strategy="afterInteractive">
+            {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-YZ37PVSNQ2');
+            `}
+          </Script>
           <Script
             async
             src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8764610479002120"
