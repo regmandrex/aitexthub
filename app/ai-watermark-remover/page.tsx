@@ -11,6 +11,7 @@ import AdSenseSlot from '../../components/ads/AdSenseSlot';
 import BelowToolAd from '../../components/ads/BelowToolAd';
 import { getServerLocale } from '../../lib/server-i18n';
 import { createServerT } from '../../lib/server-t';
+import { tOr } from '@/lib/i18n-fallback';
 
 function RailAd({ side }: { side: 'left' | 'right' }) {
   const sideClass = side === 'left' ? 'left-4' : 'right-4';
@@ -666,9 +667,16 @@ export async function generateMetadata() {
   const { locale } = await getServerLocale();
   const t = await createServerT(locale);
   
+  const title = tOr(t, 'Tools.ai-watermark-remover.seoTitle', tOr(t, 'Tools.ai-watermark-remover.title', 'AI Watermark Remover'));
+  const description = tOr(
+    t,
+    'Tools.ai-watermark-remover.description',
+    'Remove hidden characters and formatting artifacts from AI-era text.'
+  );
+
   return buildMeta({
-    title: t('Tools.ai-watermark-remover.seoTitle') || t('Tools.ai-watermark-remover.title'),
-    description: t('Tools.ai-watermark-remover.description'),
+    title,
+    description,
     urlPath: '/ai-watermark-remover',
   });
 }
@@ -676,23 +684,34 @@ export async function generateMetadata() {
 export default async function AIWatermarkRemoverPage() {
   const { locale } = await getServerLocale();
   const t = await createServerT(locale);
+  const toolTitle = tOr(t, 'Tools.ai-watermark-remover.title', 'AI Watermark Remover');
+  const toolDescription = tOr(
+    t,
+    'Tools.ai-watermark-remover.description',
+    'Remove hidden characters and formatting artifacts from AI-era text.'
+  );
+  const subtitle = tOr(
+    t,
+    'AIWatermarkRemoverPage.subtitle',
+    'Remove hidden characters and formatting artifacts from AI-era text. Keep paragraphs intact and prepare clean, editor-safe copy for documents, CMS tools, and reports.'
+  );
   
   return (
     <div className="relative min-h-screen bg-[#f7f9ff]">
       <JsonLd
         data={webPageSchema({
-          name: t('Tools.ai-watermark-remover.title'),
+          name: toolTitle,
           url: `${siteUrl}/ai-watermark-remover/`,
-          description: t('Tools.ai-watermark-remover.description'),
+          description: toolDescription,
         })}
       />
       <RailAd side="right" />
 
       <div className="mx-auto w-full max-w-4xl px-4 py-10">
         <section className="space-y-3 text-center">
-          <h1 className="text-2xl font-semibold text-slate-900 md:text-3xl">{t('Tools.ai-watermark-remover.title')}</h1>
+          <h1 className="text-2xl font-semibold text-slate-900 md:text-3xl">{toolTitle}</h1>
           <p className="max-w-2xl mx-auto text-sm text-slate-700 md:text-[15px]">
-            {t('AIWatermarkRemoverPage.subtitle') || 'Remove hidden characters and formatting artifacts from AI-era text. Keep paragraphs intact and prepare clean, editor-safe copy for documents, CMS tools, and reports.'}
+            {subtitle}
           </p>
         </section>
 
@@ -700,10 +719,10 @@ export default async function AIWatermarkRemoverPage() {
           <div className="w-full max-w-none rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6">
             <ToolWorkbench
               processor="chatgptTextCleaner"
-              primaryLabel={t('ToolUI.clean') || t('HomePage.cleanPrimary')}
-              inputLabel={t('AIWatermarkRemoverPage.inputLabel') || 'Paste your AI text'}
+              primaryLabel={tOr(t, 'ToolUI.clean', tOr(t, 'HomePage.cleanPrimary', 'Clean'))}
+              inputLabel={tOr(t, 'AIWatermarkRemoverPage.inputLabel', 'Paste your AI text')}
               outputLabel={t('HomePage.cleanOutputLabel')}
-              inputPlaceholder={t('AIWatermarkRemoverPage.inputPlaceholder') || 'Paste AI-generated text...'}
+              inputPlaceholder={tOr(t, 'AIWatermarkRemoverPage.inputPlaceholder', 'Paste AI-generated text...')}
               outputPlaceholder={t('ToolUI.outputPlaceholder')}
             />
           </div>

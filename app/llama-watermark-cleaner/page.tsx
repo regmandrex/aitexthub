@@ -11,6 +11,7 @@ import AdSenseSlot from '../../components/ads/AdSenseSlot';
 import BelowToolAd from '../../components/ads/BelowToolAd';
 import { getServerLocale } from '../../lib/server-i18n';
 import { createServerT } from '../../lib/server-t';
+import { tOr } from '@/lib/i18n-fallback';
 
 function RailAd({ side }: { side: 'left' | 'right' }) {
   const sideClass = side === 'left' ? 'left-4' : 'right-4';
@@ -28,9 +29,20 @@ export async function generateMetadata() {
   const { locale } = await getServerLocale();
   const t = await createServerT(locale);
   
+  const title = tOr(
+    t,
+    'Tools.llama-watermark-cleaner.seoTitle',
+    tOr(t, 'Tools.llama-watermark-cleaner.title', 'LLAMA Watermark Cleaner')
+  );
+  const description = tOr(
+    t,
+    'Tools.llama-watermark-cleaner.description',
+    'Remove hidden characters and formatting artifacts from LLAMA output.'
+  );
+
   return buildMeta({
-    title: t('Tools.llama-watermark-cleaner.seoTitle') || t('Tools.llama-watermark-cleaner.title'),
-    description: t('Tools.llama-watermark-cleaner.description'),
+    title,
+    description,
     urlPath: '/llama-watermark-cleaner',
   });
 }
@@ -238,23 +250,34 @@ Support accessibility and formatting compliance in publishing workflows`,
 export default async function LLAMAWatermarkCleanerPage() {
   const { locale } = await getServerLocale();
   const t = await createServerT(locale);
+  const toolTitle = tOr(t, 'Tools.llama-watermark-cleaner.title', 'LLAMA Watermark Cleaner');
+  const toolDescription = tOr(
+    t,
+    'Tools.llama-watermark-cleaner.description',
+    'Remove hidden characters and formatting artifacts from LLAMA output.'
+  );
+  const subtitle = tOr(
+    t,
+    'LLAMAWatermarkCleanerPage.subtitle',
+    'Remove hidden characters and watermarks from LLAMA outputs. Keep paragraphs intact and prepare clean, editor-safe text for Word, Docs, and SEO-friendly publishing.'
+  );
   
   return (
     <div className="relative min-h-screen bg-[#f7f9ff]">
       <JsonLd
         data={webPageSchema({
-          name: t('Tools.llama-watermark-cleaner.title'),
+          name: toolTitle,
           url: `${siteUrl}/llama-watermark-cleaner/`,
-          description: t('Tools.llama-watermark-cleaner.description'),
+          description: toolDescription,
         })}
       />
       <RailAd side="right" />
 
       <div className="mx-auto w-full max-w-4xl px-4 py-10">
         <section className="space-y-3 text-center">
-          <h1 className="text-2xl font-semibold text-slate-900 md:text-3xl">{t('Tools.llama-watermark-cleaner.title')}</h1>
+          <h1 className="text-2xl font-semibold text-slate-900 md:text-3xl">{toolTitle}</h1>
           <p className="max-w-2xl mx-auto text-sm text-slate-700 md:text-[15px]">
-            {t('LLAMAWatermarkCleanerPage.subtitle') || 'Remove hidden characters and watermarks from LLAMA outputs. Keep paragraphs intact and prepare clean, editor-safe text for Word, Docs, and SEO-friendly publishing.'}
+            {subtitle}
           </p>
         </section>
 
@@ -262,10 +285,10 @@ export default async function LLAMAWatermarkCleanerPage() {
           <div className="w-full max-w-none rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6">
             <ToolWorkbench
               processor="chatgptTextCleaner"
-              primaryLabel={t('ToolUI.clean') || t('HomePage.cleanPrimary')}
-              inputLabel={t('LLAMAWatermarkCleanerPage.inputLabel') || 'Paste your LLAMA AI text'}
+              primaryLabel={tOr(t, 'ToolUI.clean', tOr(t, 'HomePage.cleanPrimary', 'Clean'))}
+              inputLabel={tOr(t, 'LLAMAWatermarkCleanerPage.inputLabel', 'Paste your LLAMA AI text')}
               outputLabel={t('HomePage.cleanOutputLabel')}
-              inputPlaceholder={t('LLAMAWatermarkCleanerPage.inputPlaceholder') || 'Paste text from LLAMA...'}
+              inputPlaceholder={tOr(t, 'LLAMAWatermarkCleanerPage.inputPlaceholder', 'Paste text from LLAMA...')}
               outputPlaceholder={t('ToolUI.outputPlaceholder')}
             />
           </div>
