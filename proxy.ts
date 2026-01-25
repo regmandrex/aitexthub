@@ -151,6 +151,7 @@ export function proxy(request: NextRequest) {
     const requestHeaders = new Headers(request.headers);
     requestHeaders.set('x-site-locale', locale);
     requestHeaders.set('x-site-lang', locale);
+    requestHeaders.set('x-site-pathname', pathWithoutLocale || '/');
     
     const response = NextResponse.rewrite(url, {
       request: {
@@ -179,6 +180,7 @@ export function proxy(request: NextRequest) {
     const requestHeaders = new Headers(request.headers);
     requestHeaders.set('x-site-locale', DEFAULT_LOCALE);
     requestHeaders.set('x-site-lang', DEFAULT_LOCALE);
+    requestHeaders.set('x-site-pathname', pathname || '/');
     
     const response = NextResponse.next({
       request: {
@@ -217,6 +219,7 @@ export function proxy(request: NextRequest) {
   const requestHeaders = new Headers(request.headers);
   requestHeaders.set('x-site-locale', locale);
   requestHeaders.set('x-site-lang', locale);
+  requestHeaders.set('x-site-pathname', pathname || '/');
   
   const response = NextResponse.next({
     request: {
