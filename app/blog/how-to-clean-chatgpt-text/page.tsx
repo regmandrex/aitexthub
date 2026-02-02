@@ -7,7 +7,7 @@ import { getServerLocale } from '@/lib/server-i18n';
 import type { Metadata } from 'next';
 
 const urlPath = '/blog/how-to-clean-chatgpt-text';
-const title = 'How to Clean ChatGPT Text (Step-by-Step Guide for Publishing, SEO & Performance) | GPT CLEAN UP';
+const title = 'How to Clean ChatGPT Text (Step-by-Step Guide for Publishing, SEO & Performance) | GPTCLEANUP AI';
 const headline = 'How to Clean ChatGPT Text (Complete Step-by-Step Guide for Publishing, SEO & Performance)';
 const description =
   'Learn how to remove invisible characters, normalize whitespace, fix structure, and publish clean, SEO-safe ChatGPT text.';

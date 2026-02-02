@@ -7,7 +7,7 @@ import { getServerLocale } from '@/lib/server-i18n';
 import type { Metadata } from 'next';
 
 const urlPath = '/blog/advanced-dom-optimization-for-ai-generated-content';
-const title = 'Advanced DOM Optimization for AI-Generated Content (Reduce Bloat, Improve Speed & Stabilize Layouts) | GPT CLEAN UP';
+const title = 'Advanced DOM Optimization for AI-Generated Content (Reduce Bloat, Improve Speed & Stabilize Layouts) | GPTCLEANUP AI';
 const headline = 'Advanced DOM Optimization for AI-Generated Content (Reduce Bloat, Improve Speed & Stabilize Layouts)';
 const description =
   'Learn how AI-generated text can bloat the DOM, hurt LCP/CLS/INP, and how to reduce node count and layout work without sacrificing SEO.';

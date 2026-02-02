@@ -33,7 +33,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
       title,
       description,
       url,
-      siteName: 'GPT CLEAN UP',
+      siteName: 'GPTCLEANUP AI',
       type: 'website',
     },
   };

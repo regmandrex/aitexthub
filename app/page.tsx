@@ -36,7 +36,7 @@ export async function generateMetadata() {
     'ko': '숨겨진 문자 제거 및 AI 간격 수정'
   };
   const subtitle = subtitleMap[locale] || subtitleMap['en'];
-  const fullTitle = `${baseTitle} - ${subtitle} | GPT CLEAN UP`;
+  const fullTitle = `${baseTitle} - ${subtitle} | GPTCLEANUP AI`;
   
   return buildMeta({
     title: fullTitle,

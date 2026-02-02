@@ -5,8 +5,8 @@ import type { Metadata } from 'next';
 export async function generateMetadata(): Promise<Metadata> {
   const { locale } = await getServerLocale();
   return buildMeta({
-    title: 'Disclaimer - GPT CLEAN UP AI Text Tools Terms',
-    description: 'Disclaimer for GPT CLEAN UP tools.',
+    title: 'Disclaimer - GPTCLEANUP AI Text Tools Terms',
+    description: 'Disclaimer for GPTCLEANUP AI tools.',
     urlPath: '/disclaimer',
     locale,
   });

@@ -7,7 +7,7 @@ import { getServerLocale } from '@/lib/server-i18n';
 import type { Metadata } from 'next';
 
 const urlPath = '/blog/developers-guide-clean-chatgpt-text-before-using-in-code-or-docs';
-const title = "Developer's Guide: Clean ChatGPT Text for Code, Docs & Technical Projects | GPT CLEAN UP";
+const title = "Developer's Guide: Clean ChatGPT Text for Code, Docs & Technical Projects | GPTCLEANUP AI";
 const headline = "Developer's Guide: How to Clean ChatGPT Text Before Using It in Code, Docs, and Technical Projects";
 const description =
   'A developer-focused workflow to remove invisible Unicode, normalize whitespace and quotes, and prevent Markdown/config/CI failures when using ChatGPT output.';

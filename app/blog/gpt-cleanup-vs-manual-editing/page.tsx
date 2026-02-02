@@ -7,7 +7,7 @@ import { getServerLocale } from '@/lib/server-i18n';
 import type { Metadata } from 'next';
 
 const urlPath = '/blog/gpt-cleanup-vs-manual-editing';
-const title = 'GPT Cleanup vs Manual Editing (SEO, Performance, and Scale) | GPT CLEAN UP';
+const title = 'GPT Cleanup vs Manual Editing (SEO, Performance, and Scale) | GPTCLEANUP AI';
 const headline = 'GPT Cleanup vs Manual Editing: Which Is Better for SEO, Performance, and Scale?';
 const description =
   'GPT cleanup removes invisible Unicode and normalizes structure; manual editing improves voice and expertise. Learn the best order for SEO and scalable publishing.';

@@ -25,14 +25,14 @@ export async function generateMetadata(): Promise<Metadata> {
     metadataBase: new URL('https://gptcleanuptools.com'),
     title: {
       default: title,
-      template: '%s | GPT CLEAN UP',
+      template: '%s | GPTCLEANUP AI',
     },
     description,
     openGraph: {
       title,
       description,
       url: 'https://gptcleanuptools.com',
-      siteName: 'GPT CLEAN UP',
+      siteName: 'GPTCLEANUP AI',
       type: 'website',
       images: [
         {

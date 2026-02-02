@@ -7,7 +7,7 @@ import { getServerLocale } from '@/lib/server-i18n';
 import type { Metadata } from 'next';
 
 const urlPath = '/blog/fix-chatgpt-formatting';
-const title = 'Fix ChatGPT Formatting: Headings, Lists, Spacing & Layout Issues | GPT CLEAN UP';
+const title = 'Fix ChatGPT Formatting: Headings, Lists, Spacing & Layout Issues | GPTCLEANUP AI';
 const headline = 'Fix ChatGPT Formatting: Headings, Lists, Spacing & Layout Issues (Complete Guide)';
 const description =
   'Fix broken headings, lists, spacing, and layout issues after copying ChatGPT text into WordPress, email editors, CMSs, and docs.';

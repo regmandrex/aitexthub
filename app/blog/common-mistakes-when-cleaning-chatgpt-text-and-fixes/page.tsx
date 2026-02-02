@@ -7,7 +7,7 @@ import { getServerLocale } from '@/lib/server-i18n';
 import type { Metadata } from 'next';
 
 const urlPath = '/blog/common-mistakes-when-cleaning-chatgpt-text-and-fixes';
-const title = 'Common Mistakes When Cleaning ChatGPT Text (And Fixes That Stick) | GPT CLEAN UP';
+const title = 'Common Mistakes When Cleaning ChatGPT Text (And Fixes That Stick) | GPTCLEANUP AI';
 const headline = 'Common Mistakes When Cleaning ChatGPT Text (And How to Fix Them Permanently)';
 const description =
   'Avoid the most common AI text cleanup mistakes (cleaning after formatting, ignoring invisible Unicode, using paraphrasers) and use a repeatable, SEO-safe workflow.';

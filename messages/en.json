@@ -438,7 +438,7 @@
       "disclaimer": "Disclaimer",
       "cookies": "Cookie Policy"
     },
-    "copyrightPrefix": "Ac 2026",
+    "copyrightPrefix": "©",
     "tagline": " - your trusted ChatGPT watermark detector and AI text cleaner for removing or fixing zero-width spaces and hidden Unicode markers.",
     "rights": "All rights reserved."
   },
@@ -1057,8 +1057,8 @@
           "answer": "'Yes. Agencies use it as a gptcleanup alternative due to client-side privacy, speed, and natural results with the ChatGPT AI Text Cleaner in large content pipelines."
         },
         {
-          "question": "What does ",
-          "answer": "'It removes invisible characters, normalizes spacing/line breaks, and strips leftover HTML/markdown so your text is easy to copy, search, and publish."
+          "question": "What does the text cleaner do?",
+          "answer": "It removes invisible characters, normalizes spacing/line breaks, and strips leftover HTML/markdown so your text is easy to copy, search, and publish."
         },
         {
           "question": "Will cleaning change my meaning or tone?",

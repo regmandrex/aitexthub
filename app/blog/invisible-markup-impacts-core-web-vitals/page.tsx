@@ -7,7 +7,7 @@ import { getServerLocale } from '@/lib/server-i18n';
 import type { Metadata } from 'next';
 
 const urlPath = '/blog/invisible-markup-impacts-core-web-vitals';
-const title = 'How Invisible Markup Impacts Core Web Vitals (And How to Fix It) | GPT CLEAN UP';
+const title = 'How Invisible Markup Impacts Core Web Vitals (And How to Fix It) | GPTCLEANUP AI';
 const headline = 'How Invisible Markup Impacts Core Web Vitals (And How to Fix It)';
 const description =
   'Invisible Unicode and malformed whitespace can inflate DOM complexity, cause layout shifts, and degrade LCP/CLS/INP. Learn how to detect and fix it.';

@@ -7,7 +7,7 @@ import { getServerLocale } from '@/lib/server-i18n';
 import type { Metadata } from 'next';
 
 const urlPath = '/blog/the-science-of-invisible-spaces-in-ai-text';
-const title = 'The Science of Invisible Spaces in AI Text | GPT CLEAN UP';
+const title = 'The Science of Invisible Spaces in AI Text | GPTCLEANUP AI';
 const headline = 'The Science of Invisible Spaces in AI Text (Why They Exist, How They Break Websites, and How to Remove Them)';
 const description =
   'Learn what invisible Unicode spaces are, why AI text contains them, how they impact SEO, accessibility, and Core Web Vitals, and how to remove them safely.';

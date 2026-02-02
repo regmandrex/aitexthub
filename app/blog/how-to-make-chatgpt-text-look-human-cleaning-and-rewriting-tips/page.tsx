@@ -7,7 +7,7 @@ import { getServerLocale } from '@/lib/server-i18n';
 import type { Metadata } from 'next';
 
 const urlPath = '/blog/how-to-make-chatgpt-text-look-human-cleaning-and-rewriting-tips';
-const title = 'How to Make ChatGPT Text Look Human (Cleaning and Rewriting Tips) | GPT CLEAN UP';
+const title = 'How to Make ChatGPT Text Look Human (Cleaning and Rewriting Tips) | GPTCLEANUP AI';
 const headline = 'How to Make ChatGPT Text Look Human (Cleaning vs Rewriting, What Works, and What to Avoid)';
 const description =
   'Learn how to make ChatGPT text read naturally without harming SEO: clean invisible Unicode first, then apply light rewriting for rhythm, clarity, and trust.';

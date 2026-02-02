@@ -53,7 +53,7 @@ export function buildMeta({ title, description, urlPath, canonicalTo, locale }: 
       title,
       description,
       url: currentUrl,
-      siteName: 'GPT CLEAN UP',
+      siteName: 'GPTCLEANUP AI',
       type: 'website',
       images: [{ url: DEFAULT_OG_IMAGE }],
     },

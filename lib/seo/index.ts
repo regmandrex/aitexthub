@@ -22,7 +22,7 @@ export function buildMeta({ title, description, urlPath }: MetaInput): Metadata 
       title,
       description,
       url,
-      siteName: 'GPT CLEAN UP',
+      siteName: 'GPTCLEANUP AI',
       type: 'website',
       images: [{ url: DEFAULT_OG_IMAGE }],
     },

@@ -7,7 +7,7 @@ import { getServerLocale } from '@/lib/server-i18n';
 import type { Metadata } from 'next';
 
 const urlPath = '/blog/how-to-remove-chatgpt-watermarks-and-hidden-characters';
-const title = 'How to Remove ChatGPT Watermarks and Hidden Characters (Technical Guide) | GPT CLEAN UP';
+const title = 'How to Remove ChatGPT Watermarks and Hidden Characters (Technical Guide) | GPTCLEANUP AI';
 const headline = 'How to Remove ChatGPT Watermarks and Hidden Characters (Complete Technical Guide)';
 const description =
   'Learn how to detect and remove invisible Unicode and formatting artifacts in ChatGPT output, plus how to reduce AI fingerprints safely.';

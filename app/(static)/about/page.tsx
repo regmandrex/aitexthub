@@ -8,8 +8,8 @@ export async function generateMetadata() {
   const t = await createServerT(locale);
   
   return buildMeta({
-    title: `About GPT CLEAN UP - Free AI Text Cleaning Tools`,
-    description: 'Learn about GPT CLEAN UP and how we help tidy AI text from ChatGPT, Gemini, and more.',
+    title: `About GPTCLEANUP AI - Free AI Text Cleaning Tools`,
+    description: 'Learn about GPTCLEANUP AI and how we help tidy AI text from ChatGPT, Gemini, and more.',
     urlPath: '/about',
     locale,
   });

@@ -7,7 +7,7 @@ import { getServerLocale } from '@/lib/server-i18n';
 import type { Metadata } from 'next';
 
 const urlPath = '/blog/why-ai-watermarks-matter-and-how-to-clean-chatgpt-text-safely';
-const title = 'Why AI Watermarks Matter (and How to Clean ChatGPT Text Safely) | GPT CLEAN UP';
+const title = 'Why AI Watermarks Matter (and How to Clean ChatGPT Text Safely) | GPTCLEANUP AI';
 const headline = 'Why AI Watermarks Matter (and How to Clean ChatGPT Text Safely Without Hurting SEO)';
 const description =
   'Separate AI watermark myths from real technical risks: invisible Unicode, structural inefficiency, and performance issues—and how to clean safely without rewriting.';

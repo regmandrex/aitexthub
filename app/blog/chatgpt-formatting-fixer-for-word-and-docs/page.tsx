@@ -7,7 +7,7 @@ import { getServerLocale } from '@/lib/server-i18n';
 import type { Metadata } from 'next';
 
 const urlPath = '/blog/chatgpt-formatting-fixer-for-word-and-docs';
-const title = 'ChatGPT Formatting Fixer for Word and Docs (Clean Documents Every Time) | GPT CLEAN UP';
+const title = 'ChatGPT Formatting Fixer for Word and Docs (Clean Documents Every Time) | GPTCLEANUP AI';
 const headline = 'ChatGPT Formatting Fixer for Word and Docs (How to Get Clean, Professional Documents Every Time)';
 const description =
   'Stop broken spacing, headings, bullets, and PDF export issues: clean invisible Unicode, normalize whitespace, then apply Word/Docs styles natively.';
