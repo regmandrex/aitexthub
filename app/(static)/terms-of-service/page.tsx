@@ -101,7 +101,7 @@ export default async function TermsOfServicePage() {
       <h2>12. Contact</h2>
       <p>For questions regarding these Terms, contact us at:</p>
       <p>
-        <a href="mailto:support@gptcleanuptools.com">support@gptcleanuptools.com</a>
+        <a href="mailto:support@gpthelpertools.com">support@gpthelpertools.com</a>
       </p>
     </article>
   );

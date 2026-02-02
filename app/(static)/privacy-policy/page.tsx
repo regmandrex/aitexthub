@@ -125,7 +125,7 @@ const CONTENT_BY_LOCALE: Record<string, PrivacyContent> = {
       'We may revise this policy as we add tools, features, or advertising partners. Any updates will be reflected in the "Last Updated" date at the top of this page.',
     contactTitle: '10. Contact Us',
     contactP1: 'If you have any questions about this Privacy Policy, contact us at:',
-    contactP2: 'support@gptcleanuptools.com',
+    contactP2: 'support@gpthelpertools.com',
     contactP3: 'We are happy to help with any privacy-related concerns.',
   },
   es: {
@@ -203,7 +203,7 @@ const CONTENT_BY_LOCALE: Record<string, PrivacyContent> = {
       'Podemos revisar esta política a medida que añadimos herramientas, funciones o socios publicitarios. Cualquier actualización se reflejará en la fecha de "Última actualización" en la parte superior de esta página.',
     contactTitle: '10. Contacto',
     contactP1: 'Si tienes preguntas sobre esta Política de privacidad, contáctanos en:',
-    contactP2: 'support@gptcleanuptools.com',
+    contactP2: 'support@gpthelpertools.com',
     contactP3: 'Estamos encantados de ayudar con cualquier duda relacionada con la privacidad.',
   },
 };

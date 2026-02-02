@@ -98,7 +98,7 @@ export default function DisclaimerPage() {
       <h2>9. Contact Us</h2>
       <p>If you have any concerns regarding this Disclaimer, contact us at:</p>
       <p>
-        <a href="mailto:support@gptcleanuptools.com">support@gptcleanuptools.com</a>
+        <a href="mailto:support@gpthelpertools.com">support@gpthelpertools.com</a>
       </p>
       <p>We respond as quickly as possible.</p>
     </article>
