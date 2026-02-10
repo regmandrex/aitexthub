@@ -2521,6 +2521,8 @@
     "faqIntro": "Common questions about removing and replacing em dashes in text."
   },
   "SpaceRemoverPage": {
+    "title": "{modelName} Space Remover",
+    "subtitle": "Remove extra spaces and tidy lines for clean, paste-ready text.",
     "ui": {
       "inputLabel": "Input text",
       "inputPlaceholder": "Paste text to clean...",

@@ -322,12 +322,14 @@ const writeUp = (
 export async function generateMetadata() {
   const { locale } = await getServerLocale();
   const t = await createServerT(locale);
-  const title = t('SpaceRemoverPage.title', { modelName });
-  const description = t('SpaceRemoverPage.subtitle');
-  
+  const titleRaw = t('SpaceRemoverPage.title', { modelName });
+  const title = titleRaw !== 'SpaceRemoverPage.title' ? titleRaw : `${modelName} Space Remover`;
+  const descRaw = t('SpaceRemoverPage.subtitle');
+  const description = descRaw !== 'SpaceRemoverPage.subtitle' ? descRaw : `Remove extra spaces, trim lines, and normalize whitespace in ${modelName} output.`;
+
   return buildMeta({
     title: `${title} - ${t(`Tools.${modelSlug}-space-remover.description`)}`,
-    description: description || `Remove extra spaces, trim lines, and normalize whitespace in ${modelName} output.`,
+    description,
     urlPath: `/${modelSlug}-space-remover`,
     locale,
   });

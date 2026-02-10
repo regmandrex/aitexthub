@@ -657,12 +657,14 @@ const writeUp = (
 export async function generateMetadata() {
   const { locale } = await getServerLocale();
   const t = await createServerT(locale);
-  const title = t('SpaceRemoverPage.title', { modelName });
-  const description = t('SpaceRemoverPage.subtitle');
-  
+  const titleRaw = t('SpaceRemoverPage.title', { modelName });
+  const title = titleRaw !== 'SpaceRemoverPage.title' ? titleRaw : `${modelName} Space Remover`;
+  const descRaw = t('SpaceRemoverPage.subtitle');
+  const description = descRaw !== 'SpaceRemoverPage.subtitle' ? descRaw : 'Remove extra spaces, normalize whitespace, and clean pasted AI-era text for editing and publishing.';
+
   return buildMeta({
     title: `${title} - ${t('Tools.ai-space-remover.description')}`,
-    description: description || 'Remove extra spaces, normalize whitespace, and clean pasted AI-era text for editing and publishing.',
+    description,
     urlPath: '/ai-space-remover',
     locale,
   });

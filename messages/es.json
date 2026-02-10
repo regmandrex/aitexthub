@@ -2497,6 +2497,8 @@
     "faqIntro": "Preguntas comunes sobre eliminar y reemplazar guiones largos en texto."
   },
   "SpaceRemoverPage": {
+    "title": "Eliminador de espacios de {modelName}",
+    "subtitle": "Elimina espacios extra y ordena líneas para un texto limpio y listo para pegar.",
     "ui": {
       "inputLabel": "Texto de entrada",
       "inputPlaceholder": "Pega el texto para limpiar...",
