@@ -45,11 +45,13 @@ type RootLayoutProps = {
 };
 
 export default async function RootLayout({ children }: RootLayoutProps) {
+  // Try to get pathname from headers, fallback to 'en'
   const reqHeaders = await headers();
-  const pathname = reqHeaders.get('x-site-pathname') || '/';
+  const pathname = reqHeaders.get('x-site-pathname') || reqHeaders.get('x-pathname') || '/';
+  const lang = pathname === '/korean-nickname-generator' || pathname.startsWith('/korean-nickname-generator/') ? 'ko' : 'en';
 
   return (
-    <html lang="en" dir="ltr">
+    <html lang={lang} dir="ltr">
       <head>
         <link rel="preconnect" href="https://pagead2.googlesyndication.com" />
         <link rel="preconnect" href="https://www.googletagmanager.com" />

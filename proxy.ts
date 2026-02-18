@@ -16,9 +16,17 @@ function stripTrailingSlash(pathname: string) {
   return pathname;
 }
 
+function nextWithPathname(request: NextRequest) {
+  const requestHeaders = new Headers(request.headers);
+  requestHeaders.set('x-site-pathname', request.nextUrl.pathname);
+  return NextResponse.next({
+    request: { headers: requestHeaders },
+  });
+}
+
 export function proxy(request: NextRequest) {
   const pathname = request.nextUrl.pathname;
-  
+
   // Skip proxy for static files and API routes
   if (
     pathname.startsWith('/_next') ||
@@ -27,7 +35,7 @@ export function proxy(request: NextRequest) {
     pathname.startsWith('/brand') ||
     pathname.includes('.') // files with extensions
   ) {
-    return NextResponse.next();
+    return nextWithPathname(request);
   }
 
   // 301 redirects for legacy model watermark remover slugs -> watermark cleaner slugs
@@ -49,7 +57,7 @@ export function proxy(request: NextRequest) {
     return NextResponse.redirect(url, 301);
   }
 
-  return NextResponse.next();
+  return nextWithPathname(request);
 }
 
 export const config = {

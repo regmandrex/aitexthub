@@ -9,8 +9,12 @@ type PageProps = {
 };
 
 // Generate static params for all tools at build time
+// Exclude tools that have their own dedicated page routes
 export function generateStaticParams() {
-  return getAllTools().map((tool) => ({ slug: tool.slug }));
+  const toolsWithDedicatedPages = new Set(['korean-nickname-generator']);
+  return getAllTools()
+    .filter((tool) => !toolsWithDedicatedPages.has(tool.slug))
+    .map((tool) => ({ slug: tool.slug }));
 }
 
 // Enable dynamic route handling for tools not in static params
