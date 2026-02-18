@@ -5,6 +5,12 @@
 const nextConfig = {
   async redirects() {
     return [
+      // all-tools -> ai-tools (301 for SEO when URL was renamed)
+      {
+        source: '/all-tools',
+        destination: '/ai-tools',
+        permanent: true,
+      },
       {
         source: '/blog/sample-old-wordpress-url/',
         destination: '/',

@@ -9,8 +9,6 @@ import { siteUrl } from '../../lib/schema/site';
 import { RelatedTools } from '../../components/tool/RelatedTools';
 import AdSenseSlot from '../../components/ads/AdSenseSlot';
 import BelowToolAd from '../../components/ads/BelowToolAd';
-import { getServerLocale } from '../../lib/server-i18n';
-import { createServerT } from '../../lib/server-t';
 import { tOr } from '@/lib/i18n-fallback';
 
 function RailAd({ side }: { side: 'left' | 'right' }) {
@@ -26,23 +24,9 @@ function RailAd({ side }: { side: 'left' | 'right' }) {
 }
 
 export async function generateMetadata() {
-  const { locale } = await getServerLocale();
-  const t = await createServerT(locale);
-  
-  const title = tOr(
-    t,
-    'Tools.claude-watermark-cleaner.seoTitle',
-    tOr(t, 'Tools.claude-watermark-cleaner.title', 'Claude Watermark Cleaner')
-  );
-  const description = tOr(
-    t,
-    'Tools.claude-watermark-cleaner.description',
-    'Remove hidden characters and formatting artifacts from Claude output.'
-  );
-
   return buildMeta({
-    title,
-    description,
+    title: 'Claude Watermark Cleaner',
+    description: 'Remove hidden characters and formatting artifacts from Claude output.',
     urlPath: '/claude-watermark-cleaner',
   });
 }
@@ -224,9 +208,9 @@ const faqs: FaqItem[] = [
   },
 ];
 
+const t = () => '';
+
 export default async function ClaudeWatermarkCleanerPage() {
-  const { locale } = await getServerLocale();
-  const t = await createServerT(locale);
   const toolTitle = tOr(t, 'Tools.claude-watermark-cleaner.title', 'Claude Watermark Cleaner');
   const toolDescription = tOr(
     t,
@@ -264,9 +248,9 @@ export default async function ClaudeWatermarkCleanerPage() {
               processor="chatgptTextCleaner"
               primaryLabel={tOr(t, 'ToolUI.clean', tOr(t, 'HomePage.cleanPrimary', 'Clean'))}
               inputLabel={tOr(t, 'ClaudeWatermarkCleanerPage.inputLabel', 'Paste your Claude AI text')}
-              outputLabel={t('HomePage.cleanOutputLabel')}
+              outputLabel='HomePage.cleanOutputLabel'
               inputPlaceholder={tOr(t, 'ClaudeWatermarkCleanerPage.inputPlaceholder', 'Paste text from Claude...')}
-              outputPlaceholder={t('ToolUI.outputPlaceholder')}
+              outputPlaceholder='ToolUI.outputPlaceholder'
             />
           </div>
         </section>

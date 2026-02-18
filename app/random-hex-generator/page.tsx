@@ -11,31 +11,23 @@ import { buildToolMeta } from '@/lib/seo-meta';
 import { siteUrl } from '@/lib/schema/site';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
-import { getServerLocale } from '@/lib/server-i18n';
-import { createServerT } from '@/lib/server-t';
 
 const toolSlug = 'random-hex-generator';
 
 export async function generateMetadata(): Promise<Metadata> {
-  const { locale } = await getServerLocale();
-  const t = await createServerT(locale);
+  
   const tool = getToolBySlug(toolSlug);
   const toolKey = toolSlug;
   
-  const title = t(`Tools.${toolKey}.title`) !== `Tools.${toolKey}.title` 
-    ? t(`Tools.${toolKey}.title`) 
-    : tool?.title ?? 'Random Hex Number Generator';
-  const description = t(`Tools.${toolKey}.description`) !== `Tools.${toolKey}.description`
-    ? t(`Tools.${toolKey}.description`)
-    : tool?.shortDescription ?? 'Generate random hex strings with length and format controls.';
-  const seoTitle = tool?.seoTitle ? (t(`Tools.${toolKey}.seoTitle`) !== `Tools.${toolKey}.seoTitle` ? t(`Tools.${toolKey}.seoTitle`) : tool.seoTitle) : undefined;
+  const title = "Random Hex Generator";
+  const description = "Generate random hex strings with length and format controls.";
+  const seoTitle = "Random Hex Generator - Random hex strings";
   
   return buildToolMeta({
     title,
     description,
     seoTitle,
     urlPath: `/${toolSlug}`,
-    locale,
   });
 }
 
@@ -581,18 +573,12 @@ const secureHex = Array.from(buffer).map(b => b.toString(16).padStart(2, '0')).j
 );
 
 export default async function RandomHexGeneratorPage() {
-  const { locale } = await getServerLocale();
-  const t = await createServerT(locale);
+  
   const toolData = getToolBySlug(toolSlug);
   if (!toolData) return notFound();
 
-  const toolKey = toolSlug;
-  const title = t(`Tools.${toolKey}.title`) !== `Tools.${toolKey}.title` 
-    ? t(`Tools.${toolKey}.title`) 
-    : toolData.title;
-  const description = t(`Tools.${toolKey}.description`) !== `Tools.${toolKey}.description`
-    ? t(`Tools.${toolKey}.description`)
-    : toolData.shortDescription;
+  const title = toolData.title;
+  const description = toolData.shortDescription;
 
   const url = `${siteUrl}/${toolSlug}/`;
   const webAppSchema = {

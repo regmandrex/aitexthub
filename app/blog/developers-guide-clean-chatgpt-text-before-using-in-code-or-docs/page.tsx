@@ -3,7 +3,6 @@ import { buildArticleMeta } from '@/lib/seo-meta';
 import { JsonLd } from '@/components/JsonLd';
 import { blogPostingSchema } from '@/lib/schema/blog';
 import AdSenseSlot from '../../../components/ads/AdSenseSlot';
-import { getServerLocale } from '@/lib/server-i18n';
 import type { Metadata } from 'next';
 
 const urlPath = '/blog/developers-guide-clean-chatgpt-text-before-using-in-code-or-docs';
@@ -13,13 +12,11 @@ const description =
   'A developer-focused workflow to remove invisible Unicode, normalize whitespace and quotes, and prevent Markdown/config/CI failures when using ChatGPT output.';
 
 export async function generateMetadata(): Promise<Metadata> {
-  const { locale } = await getServerLocale();
   return buildArticleMeta({
     title,
     description,
     urlPath,
-    locale,
-  });
+    });
 }
 
 export default function DevelopersGuideCleanChatGPTTextPage() {

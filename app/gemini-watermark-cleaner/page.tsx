@@ -9,9 +9,9 @@ import { siteUrl } from '../../lib/schema/site';
 import { RelatedTools } from '../../components/tool/RelatedTools';
 import AdSenseSlot from '../../components/ads/AdSenseSlot';
 import BelowToolAd from '../../components/ads/BelowToolAd';
-import { getServerLocale } from '../../lib/server-i18n';
-import { createServerT } from '../../lib/server-t';
 import { tOr } from '@/lib/i18n-fallback';
+
+const t = () => '';
 
 function RailAd({ side }: { side: 'left' | 'right' }) {
   const sideClass = side === 'left' ? 'left-4' : 'right-4';
@@ -26,8 +26,7 @@ function RailAd({ side }: { side: 'left' | 'right' }) {
 }
 
 export async function generateMetadata() {
-  const { locale } = await getServerLocale();
-  const t = await createServerT(locale);
+  
   
   const title = tOr(
     t,
@@ -216,8 +215,7 @@ const faqs: FaqItem[] = [
 ];
 
 export default async function GeminiWatermarkCleanerPage() {
-  const { locale } = await getServerLocale();
-  const t = await createServerT(locale);
+  
   const toolTitle = tOr(t, 'Tools.gemini-watermark-cleaner.title', 'Gemini Watermark Cleaner');
   const toolDescription = tOr(
     t,
@@ -257,9 +255,9 @@ export default async function GeminiWatermarkCleanerPage() {
               processor="chatgptTextCleaner"
               primaryLabel={tOr(t, 'ToolUI.clean', tOr(t, 'HomePage.cleanPrimary', 'Clean'))}
               inputLabel={inputLabel}
-              outputLabel={t('HomePage.cleanOutputLabel')}
+              outputLabel='HomePage.cleanOutputLabel'
               inputPlaceholder={inputPlaceholder}
-              outputPlaceholder={t('ToolUI.outputPlaceholder')}
+              outputPlaceholder='ToolUI.outputPlaceholder'
             />
           </div>
         </section>

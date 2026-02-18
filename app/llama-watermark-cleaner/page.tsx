@@ -9,9 +9,9 @@ import { siteUrl } from '../../lib/schema/site';
 import { RelatedTools } from '../../components/tool/RelatedTools';
 import AdSenseSlot from '../../components/ads/AdSenseSlot';
 import BelowToolAd from '../../components/ads/BelowToolAd';
-import { getServerLocale } from '../../lib/server-i18n';
-import { createServerT } from '../../lib/server-t';
 import { tOr } from '@/lib/i18n-fallback';
+
+const t = () => '';
 
 function RailAd({ side }: { side: 'left' | 'right' }) {
   const sideClass = side === 'left' ? 'left-4' : 'right-4';
@@ -26,8 +26,7 @@ function RailAd({ side }: { side: 'left' | 'right' }) {
 }
 
 export async function generateMetadata() {
-  const { locale } = await getServerLocale();
-  const t = await createServerT(locale);
+  
   
   const title = tOr(
     t,
@@ -248,8 +247,7 @@ Support accessibility and formatting compliance in publishing workflows`,
 ];
 
 export default async function LLAMAWatermarkCleanerPage() {
-  const { locale } = await getServerLocale();
-  const t = await createServerT(locale);
+  
   const toolTitle = tOr(t, 'Tools.llama-watermark-cleaner.title', 'LLAMA Watermark Cleaner');
   const toolDescription = tOr(
     t,
@@ -287,9 +285,9 @@ export default async function LLAMAWatermarkCleanerPage() {
               processor="chatgptTextCleaner"
               primaryLabel={tOr(t, 'ToolUI.clean', tOr(t, 'HomePage.cleanPrimary', 'Clean'))}
               inputLabel={tOr(t, 'LLAMAWatermarkCleanerPage.inputLabel', 'Paste your LLAMA AI text')}
-              outputLabel={t('HomePage.cleanOutputLabel')}
+              outputLabel='HomePage.cleanOutputLabel'
               inputPlaceholder={tOr(t, 'LLAMAWatermarkCleanerPage.inputPlaceholder', 'Paste text from LLAMA...')}
-              outputPlaceholder={t('ToolUI.outputPlaceholder')}
+              outputPlaceholder='ToolUI.outputPlaceholder'
             />
           </div>
         </section>

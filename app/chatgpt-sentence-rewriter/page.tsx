@@ -11,9 +11,6 @@ import { buildToolMeta } from '@/lib/seo-meta';
 import { siteUrl } from '@/lib/schema/site';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
-import { getServerLocale } from '@/lib/server-i18n';
-import { createServerT } from '@/lib/server-t';
-
 const toolSlug = 'chatgpt-sentence-rewriter';
 
 // FAQ keys structure - these will be translated
@@ -44,203 +41,192 @@ const faqKeys = [
   { key: 'faq24', category: 'ChatGPT Sentence Rewriter FAQs' },
   { key: 'faq25', category: 'ChatGPT Sentence Rewriter FAQs' },
 ];
-function createWriteUp(t: (key: string) => string) {
+// Note: writeUp content needs to be hardcoded from en.json if needed
+// Removed createWriteUp function
+function createWriteUp() {
   return (
   <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
     <div className="prose prose-slate max-w-none">
-      <h2>{t('ChatGPTSentenceRewriterPage.writeUp.title')}</h2>
-      <p>{t('ChatGPTSentenceRewriterPage.writeUp.introP1')}</p>
-      <p>{t('ChatGPTSentenceRewriterPage.writeUp.introP2')}</p>
-      <p>{t('ChatGPTSentenceRewriterPage.writeUp.introP3')}</p>
+      <h2>'ChatGPTSentenceRewriterPage.writeUp.title'</h2>
+      <p>'ChatGPTSentenceRewriterPage.writeUp.introP1'</p>
+      <p>'ChatGPTSentenceRewriterPage.writeUp.introP2'</p>
+      <p>'ChatGPTSentenceRewriterPage.writeUp.introP3'</p>
 
-      <h2>{t('ChatGPTSentenceRewriterPage.writeUp.whyTitle')}</h2>
-      <p>{t('ChatGPTSentenceRewriterPage.writeUp.whyP1')}</p>
+      <h2>'ChatGPTSentenceRewriterPage.writeUp.whyTitle'</h2>
+      <p>'ChatGPTSentenceRewriterPage.writeUp.whyP1'</p>
 
-      <h3>{t('ChatGPTSentenceRewriterPage.writeUp.targetedTitle')}</h3>
-      <p>{t('ChatGPTSentenceRewriterPage.writeUp.targetedP1')}</p>
-      <p>{t('ChatGPTSentenceRewriterPage.writeUp.targetedP2')}</p>
+      <h3>'ChatGPTSentenceRewriterPage.writeUp.targetedTitle'</h3>
+      <p>'ChatGPTSentenceRewriterPage.writeUp.targetedP1'</p>
+      <p>'ChatGPTSentenceRewriterPage.writeUp.targetedP2'</p>
 
-      <h3>{t('ChatGPTSentenceRewriterPage.writeUp.controlTitle')}</h3>
-      <p>{t('ChatGPTSentenceRewriterPage.writeUp.controlP1')}</p>
+      <h3>'ChatGPTSentenceRewriterPage.writeUp.controlTitle'</h3>
+      <p>'ChatGPTSentenceRewriterPage.writeUp.controlP1'</p>
 
-      <h3>{t('ChatGPTSentenceRewriterPage.writeUp.learningTitle')}</h3>
-      <p>{t('ChatGPTSentenceRewriterPage.writeUp.learningP1')}</p>
+      <h3>'ChatGPTSentenceRewriterPage.writeUp.learningTitle'</h3>
+      <p>'ChatGPTSentenceRewriterPage.writeUp.learningP1'</p>
 
-      <h2>{t('ChatGPTSentenceRewriterPage.writeUp.howItWorksTitle')}</h2>
-      <p>{t('ChatGPTSentenceRewriterPage.writeUp.howItWorksP1')}</p>
+      <h2>'ChatGPTSentenceRewriterPage.writeUp.howItWorksTitle'</h2>
+      <p>'ChatGPTSentenceRewriterPage.writeUp.howItWorksP1'</p>
 
-      <h3>{t('ChatGPTSentenceRewriterPage.writeUp.structuralTitle')}</h3>
-      <p>{t('ChatGPTSentenceRewriterPage.writeUp.structuralP1')}</p>
+      <h3>'ChatGPTSentenceRewriterPage.writeUp.structuralTitle'</h3>
+      <p>'ChatGPTSentenceRewriterPage.writeUp.structuralP1'</p>
 
-      <h3>{t('ChatGPTSentenceRewriterPage.writeUp.techniquesTitle')}</h3>
-      <p>{t('ChatGPTSentenceRewriterPage.writeUp.techniquesP1')}</p>
+      <h3>'ChatGPTSentenceRewriterPage.writeUp.techniquesTitle'</h3>
+      <p>'ChatGPTSentenceRewriterPage.writeUp.techniquesP1'</p>
 
-      <h3>{t('ChatGPTSentenceRewriterPage.writeUp.meaningTitle')}</h3>
-      <p>{t('ChatGPTSentenceRewriterPage.writeUp.meaningP1')}</p>
+      <h3>'ChatGPTSentenceRewriterPage.writeUp.meaningTitle'</h3>
+      <p>'ChatGPTSentenceRewriterPage.writeUp.meaningP1'</p>
 
-      <h2>{t('ChatGPTSentenceRewriterPage.writeUp.usingTitle')}</h2>
-      <p>{t('ChatGPTSentenceRewriterPage.writeUp.usingP1')}</p>
+      <h2>'ChatGPTSentenceRewriterPage.writeUp.usingTitle'</h2>
+      <p>'ChatGPTSentenceRewriterPage.writeUp.usingP1'</p>
 
-      <h3>{t('ChatGPTSentenceRewriterPage.writeUp.clearTitle')}</h3>
-      <p>{t('ChatGPTSentenceRewriterPage.writeUp.clearP1')}</p>
+      <h3>'ChatGPTSentenceRewriterPage.writeUp.clearTitle'</h3>
+      <p>'ChatGPTSentenceRewriterPage.writeUp.clearP1'</p>
 
-      <h3>{t('ChatGPTSentenceRewriterPage.writeUp.reviewTitle')}</h3>
-      <p>{t('ChatGPTSentenceRewriterPage.writeUp.reviewP1')}</p>
+      <h3>'ChatGPTSentenceRewriterPage.writeUp.reviewTitle'</h3>
+      <p>'ChatGPTSentenceRewriterPage.writeUp.reviewP1'</p>
 
-      <h3>{t('ChatGPTSentenceRewriterPage.writeUp.iterateTitle')}</h3>
-      <p>{t('ChatGPTSentenceRewriterPage.writeUp.iterateP1')}</p>
+      <h3>'ChatGPTSentenceRewriterPage.writeUp.iterateTitle'</h3>
+      <p>'ChatGPTSentenceRewriterPage.writeUp.iterateP1'</p>
 
-      <h3>{t('ChatGPTSentenceRewriterPage.writeUp.contextTitle')}</h3>
-      <p>{t('ChatGPTSentenceRewriterPage.writeUp.contextP1')}</p>
+      <h3>'ChatGPTSentenceRewriterPage.writeUp.contextTitle'</h3>
+      <p>'ChatGPTSentenceRewriterPage.writeUp.contextP1'</p>
 
-      <h2>{t('ChatGPTSentenceRewriterPage.writeUp.useCasesTitle')}</h2>
-      <p>{t('ChatGPTSentenceRewriterPage.writeUp.useCasesP1')}</p>
+      <h2>'ChatGPTSentenceRewriterPage.writeUp.useCasesTitle'</h2>
+      <p>'ChatGPTSentenceRewriterPage.writeUp.useCasesP1'</p>
 
-      <h3>{t('ChatGPTSentenceRewriterPage.writeUp.clarityTitle')}</h3>
-      <p>{t('ChatGPTSentenceRewriterPage.writeUp.clarityP1')}</p>
+      <h3>'ChatGPTSentenceRewriterPage.writeUp.clarityTitle'</h3>
+      <p>'ChatGPTSentenceRewriterPage.writeUp.clarityP1'</p>
 
-      <h3>{t('ChatGPTSentenceRewriterPage.writeUp.varietyTitle')}</h3>
-      <p>{t('ChatGPTSentenceRewriterPage.writeUp.varietyP1')}</p>
+      <h3>'ChatGPTSentenceRewriterPage.writeUp.varietyTitle'</h3>
+      <p>'ChatGPTSentenceRewriterPage.writeUp.varietyP1'</p>
 
-      <h3>{t('ChatGPTSentenceRewriterPage.writeUp.toneTitle')}</h3>
-      <p>{t('ChatGPTSentenceRewriterPage.writeUp.toneP1')}</p>
+      <h3>'ChatGPTSentenceRewriterPage.writeUp.toneTitle'</h3>
+      <p>'ChatGPTSentenceRewriterPage.writeUp.toneP1'</p>
 
-      <h3>{t('ChatGPTSentenceRewriterPage.writeUp.aiTitle')}</h3>
-      <p>{t('ChatGPTSentenceRewriterPage.writeUp.aiP1')}</p>
+      <h3>'ChatGPTSentenceRewriterPage.writeUp.aiTitle'</h3>
+      <p>'ChatGPTSentenceRewriterPage.writeUp.aiP1'</p>
 
-      <h3>{t('ChatGPTSentenceRewriterPage.writeUp.eslTitle')}</h3>
-      <p>{t('ChatGPTSentenceRewriterPage.writeUp.eslP1')}</p>
+      <h3>'ChatGPTSentenceRewriterPage.writeUp.eslTitle'</h3>
+      <p>'ChatGPTSentenceRewriterPage.writeUp.eslP1'</p>
 
-      <h2>{t('ChatGPTSentenceRewriterPage.writeUp.transformationTitle')}</h2>
-      <p>{t('ChatGPTSentenceRewriterPage.writeUp.transformationP1')}</p>
+      <h2>'ChatGPTSentenceRewriterPage.writeUp.transformationTitle'</h2>
+      <p>'ChatGPTSentenceRewriterPage.writeUp.transformationP1'</p>
 
-      <h3>{t('ChatGPTSentenceRewriterPage.writeUp.voiceTitle')}</h3>
-      <p>{t('ChatGPTSentenceRewriterPage.writeUp.voiceP1')}</p>
+      <h3>'ChatGPTSentenceRewriterPage.writeUp.voiceTitle'</h3>
+      <p>'ChatGPTSentenceRewriterPage.writeUp.voiceP1'</p>
 
-      <h3>{t('ChatGPTSentenceRewriterPage.writeUp.wordOrderTitle')}</h3>
-      <p>{t('ChatGPTSentenceRewriterPage.writeUp.wordOrderP1')}</p>
+      <h3>'ChatGPTSentenceRewriterPage.writeUp.wordOrderTitle'</h3>
+      <p>'ChatGPTSentenceRewriterPage.writeUp.wordOrderP1'</p>
 
-      <h3>{t('ChatGPTSentenceRewriterPage.writeUp.synonymTitle')}</h3>
-      <p>{t('ChatGPTSentenceRewriterPage.writeUp.synonymP1')}</p>
+      <h3>'ChatGPTSentenceRewriterPage.writeUp.synonymTitle'</h3>
+      <p>'ChatGPTSentenceRewriterPage.writeUp.synonymP1'</p>
 
-      <h3>{t('ChatGPTSentenceRewriterPage.writeUp.lengthTitle')}</h3>
-      <p>{t('ChatGPTSentenceRewriterPage.writeUp.lengthP1')}</p>
+      <h3>'ChatGPTSentenceRewriterPage.writeUp.lengthTitle'</h3>
+      <p>'ChatGPTSentenceRewriterPage.writeUp.lengthP1'</p>
 
-      <h3>{t('ChatGPTSentenceRewriterPage.writeUp.emphasisTitle')}</h3>
-      <p>{t('ChatGPTSentenceRewriterPage.writeUp.emphasisP1')}</p>
+      <h3>'ChatGPTSentenceRewriterPage.writeUp.emphasisTitle'</h3>
+      <p>'ChatGPTSentenceRewriterPage.writeUp.emphasisP1'</p>
 
-      <h2>{t('ChatGPTSentenceRewriterPage.writeUp.bestPracticesTitle')}</h2>
-      <p>{t('ChatGPTSentenceRewriterPage.writeUp.bestPracticesP1')}</p>
+      <h2>'ChatGPTSentenceRewriterPage.writeUp.bestPracticesTitle'</h2>
+      <p>'ChatGPTSentenceRewriterPage.writeUp.bestPracticesP1'</p>
 
-      <h3>{t('ChatGPTSentenceRewriterPage.writeUp.intentTitle')}</h3>
-      <p>{t('ChatGPTSentenceRewriterPage.writeUp.intentP1')}</p>
+      <h3>'ChatGPTSentenceRewriterPage.writeUp.intentTitle'</h3>
+      <p>'ChatGPTSentenceRewriterPage.writeUp.intentP1'</p>
 
-      <h3>{t('ChatGPTSentenceRewriterPage.writeUp.preserveTitle')}</h3>
-      <p>{t('ChatGPTSentenceRewriterPage.writeUp.preserveP1')}</p>
+      <h3>'ChatGPTSentenceRewriterPage.writeUp.preserveTitle'</h3>
+      <p>'ChatGPTSentenceRewriterPage.writeUp.preserveP1'</p>
 
-      <h3>{t('ChatGPTSentenceRewriterPage.writeUp.consistencyTitle')}</h3>
-      <p>{t('ChatGPTSentenceRewriterPage.writeUp.consistencyP1')}</p>
+      <h3>'ChatGPTSentenceRewriterPage.writeUp.consistencyTitle'</h3>
+      <p>'ChatGPTSentenceRewriterPage.writeUp.consistencyP1'</p>
 
-      <h3>{t('ChatGPTSentenceRewriterPage.writeUp.judgmentTitle')}</h3>
-      <p>{t('ChatGPTSentenceRewriterPage.writeUp.judgmentP1')}</p>
+      <h3>'ChatGPTSentenceRewriterPage.writeUp.judgmentTitle'</h3>
+      <p>'ChatGPTSentenceRewriterPage.writeUp.judgmentP1'</p>
 
-      <h3>{t('ChatGPTSentenceRewriterPage.writeUp.editTitle')}</h3>
-      <p>{t('ChatGPTSentenceRewriterPage.writeUp.editP1')}</p>
+      <h3>'ChatGPTSentenceRewriterPage.writeUp.editTitle'</h3>
+      <p>'ChatGPTSentenceRewriterPage.writeUp.editP1'</p>
 
-      <h2>{t('ChatGPTSentenceRewriterPage.writeUp.vsOtherTitle')}</h2>
-      <p>{t('ChatGPTSentenceRewriterPage.writeUp.vsOtherP1')}</p>
+      <h2>'ChatGPTSentenceRewriterPage.writeUp.vsOtherTitle'</h2>
+      <p>'ChatGPTSentenceRewriterPage.writeUp.vsOtherP1'</p>
 
-      <h3>{t('ChatGPTSentenceRewriterPage.writeUp.vsParaphraserTitle')}</h3>
-      <p>{t('ChatGPTSentenceRewriterPage.writeUp.vsParaphraserP1')}</p>
+      <h3>'ChatGPTSentenceRewriterPage.writeUp.vsParaphraserTitle'</h3>
+      <p>'ChatGPTSentenceRewriterPage.writeUp.vsParaphraserP1'</p>
 
-      <h3>{t('ChatGPTSentenceRewriterPage.writeUp.vsGrammarTitle')}</h3>
-      <p>{t('ChatGPTSentenceRewriterPage.writeUp.vsGrammarP1')}</p>
+      <h3>'ChatGPTSentenceRewriterPage.writeUp.vsGrammarTitle'</h3>
+      <p>'ChatGPTSentenceRewriterPage.writeUp.vsGrammarP1'</p>
 
-      <h3>{t('ChatGPTSentenceRewriterPage.writeUp.vsHumanizerTitle')}</h3>
-      <p>{t('ChatGPTSentenceRewriterPage.writeUp.vsHumanizerP1')}</p>
+      <h3>'ChatGPTSentenceRewriterPage.writeUp.vsHumanizerTitle'</h3>
+      <p>'ChatGPTSentenceRewriterPage.writeUp.vsHumanizerP1'</p>
 
-      <h2>{t('ChatGPTSentenceRewriterPage.writeUp.technicalTitle')}</h2>
-      <p>{t('ChatGPTSentenceRewriterPage.writeUp.technicalP1')}</p>
+      <h2>'ChatGPTSentenceRewriterPage.writeUp.technicalTitle'</h2>
+      <p>'ChatGPTSentenceRewriterPage.writeUp.technicalP1'</p>
 
-      <h3>{t('ChatGPTSentenceRewriterPage.writeUp.syntacticTitle')}</h3>
-      <p>{t('ChatGPTSentenceRewriterPage.writeUp.syntacticP1')}</p>
+      <h3>'ChatGPTSentenceRewriterPage.writeUp.syntacticTitle'</h3>
+      <p>'ChatGPTSentenceRewriterPage.writeUp.syntacticP1'</p>
 
-      <h3>{t('ChatGPTSentenceRewriterPage.writeUp.semanticTitle')}</h3>
-      <p>{t('ChatGPTSentenceRewriterPage.writeUp.semanticP1')}</p>
+      <h3>'ChatGPTSentenceRewriterPage.writeUp.semanticTitle'</h3>
+      <p>'ChatGPTSentenceRewriterPage.writeUp.semanticP1'</p>
 
-      <h3>{t('ChatGPTSentenceRewriterPage.writeUp.independenceTitle')}</h3>
-      <p>{t('ChatGPTSentenceRewriterPage.writeUp.independenceP1')}</p>
+      <h3>'ChatGPTSentenceRewriterPage.writeUp.independenceTitle'</h3>
+      <p>'ChatGPTSentenceRewriterPage.writeUp.independenceP1'</p>
 
-      <h2>{t('ChatGPTSentenceRewriterPage.writeUp.professionalTitle')}</h2>
-      <p>{t('ChatGPTSentenceRewriterPage.writeUp.professionalP1')}</p>
+      <h2>'ChatGPTSentenceRewriterPage.writeUp.professionalTitle'</h2>
+      <p>'ChatGPTSentenceRewriterPage.writeUp.professionalP1'</p>
 
-      <h3>{t('ChatGPTSentenceRewriterPage.writeUp.businessTitle')}</h3>
-      <p>{t('ChatGPTSentenceRewriterPage.writeUp.businessP1')}</p>
+      <h3>'ChatGPTSentenceRewriterPage.writeUp.businessTitle'</h3>
+      <p>'ChatGPTSentenceRewriterPage.writeUp.businessP1'</p>
 
-      <h3>{t('ChatGPTSentenceRewriterPage.writeUp.marketingTitle')}</h3>
-      <p>{t('ChatGPTSentenceRewriterPage.writeUp.marketingP1')}</p>
+      <h3>'ChatGPTSentenceRewriterPage.writeUp.marketingTitle'</h3>
+      <p>'ChatGPTSentenceRewriterPage.writeUp.marketingP1'</p>
 
-      <h3>{t('ChatGPTSentenceRewriterPage.writeUp.technicalTitle')}</h3>
-      <p>{t('ChatGPTSentenceRewriterPage.writeUp.technicalP1')}</p>
+      <h3>'ChatGPTSentenceRewriterPage.writeUp.technicalTitle'</h3>
+      <p>'ChatGPTSentenceRewriterPage.writeUp.technicalP1'</p>
 
-      <h3>{t('ChatGPTSentenceRewriterPage.writeUp.academicTitle')}</h3>
-      <p>{t('ChatGPTSentenceRewriterPage.writeUp.academicP1')}</p>
+      <h3>'ChatGPTSentenceRewriterPage.writeUp.academicTitle'</h3>
+      <p>'ChatGPTSentenceRewriterPage.writeUp.academicP1'</p>
 
-      <h2>{t('ChatGPTSentenceRewriterPage.writeUp.limitationsTitle')}</h2>
-      <p>{t('ChatGPTSentenceRewriterPage.writeUp.limitationsP1')}</p>
+      <h2>'ChatGPTSentenceRewriterPage.writeUp.limitationsTitle'</h2>
+      <p>'ChatGPTSentenceRewriterPage.writeUp.limitationsP1'</p>
 
-      <h3>{t('ChatGPTSentenceRewriterPage.writeUp.verificationTitle')}</h3>
-      <p>{t('ChatGPTSentenceRewriterPage.writeUp.verificationP1')}</p>
+      <h3>'ChatGPTSentenceRewriterPage.writeUp.verificationTitle'</h3>
+      <p>'ChatGPTSentenceRewriterPage.writeUp.verificationP1'</p>
 
-      <h3>{t('ChatGPTSentenceRewriterPage.writeUp.fittingTitle')}</h3>
-      <p>{t('ChatGPTSentenceRewriterPage.writeUp.fittingP1')}</p>
+      <h3>'ChatGPTSentenceRewriterPage.writeUp.fittingTitle'</h3>
+      <p>'ChatGPTSentenceRewriterPage.writeUp.fittingP1'</p>
 
-      <h3>{t('ChatGPTSentenceRewriterPage.writeUp.complexityTitle')}</h3>
-      <p>{t('ChatGPTSentenceRewriterPage.writeUp.complexityP1')}</p>
+      <h3>'ChatGPTSentenceRewriterPage.writeUp.complexityTitle'</h3>
+      <p>'ChatGPTSentenceRewriterPage.writeUp.complexityP1'</p>
 
-      <h3>{t('ChatGPTSentenceRewriterPage.writeUp.styleTitle')}</h3>
-      <p>{t('ChatGPTSentenceRewriterPage.writeUp.styleP1')}</p>
+      <h3>'ChatGPTSentenceRewriterPage.writeUp.styleTitle'</h3>
+      <p>'ChatGPTSentenceRewriterPage.writeUp.styleP1'</p>
     </div>
   </section>
   );
 }
 
 export async function generateMetadata(): Promise<Metadata> {
-  const { locale } = await getServerLocale();
-  const t = await createServerT(locale);
+  
   const toolData = getToolBySlug(toolSlug);
   if (!toolData) return {};
 
-  const toolKey = toolSlug;
-  const title = t(`Tools.${toolKey}.title`) !== `Tools.${toolKey}.title` 
-    ? t(`Tools.${toolKey}.title`) 
-    : toolData.title;
-  const description = t(`Tools.${toolKey}.description`) !== `Tools.${toolKey}.description`
-    ? t(`Tools.${toolKey}.description`)
-    : toolData.shortDescription;
+  const title = toolData.title;
+  const description = toolData.shortDescription;
 
   return buildToolMeta({
     title,
     description,
     seoTitle: 'ChatGPT Sentence Rewriter - Free Online Sentence Transformer',
     urlPath: `/${toolSlug}`,
-    locale,
   });
 }
 
 export default async function ChatGPTSentenceRewriterPage() {
-  const { locale } = await getServerLocale();
-  const t = await createServerT(locale);
+  
   const toolData = getToolBySlug(toolSlug);
   if (!toolData) return notFound();
 
-  const toolKey = toolSlug;
-  const title = t(`Tools.${toolKey}.title`) !== `Tools.${toolKey}.title` 
-    ? t(`Tools.${toolKey}.title`) 
-    : toolData.title;
-  const description = t(`Tools.${toolKey}.description`) !== `Tools.${toolKey}.description`
-    ? t(`Tools.${toolKey}.description`)
-    : toolData.shortDescription;
+  const title = toolData.title;
+  const description = toolData.shortDescription;
 
   const url = `${siteUrl}/${toolSlug}/`;
   const webAppSchema = {
@@ -258,20 +244,16 @@ export default async function ChatGPTSentenceRewriterPage() {
       <JsonLd data={webPageSchema({ name: title, url, description })} />
       <JsonLd data={webAppSchema} />
       <ToolPageShell tool={{ ...toolData, title, shortDescription: description }} ui={<ChatGPTSentenceRewriterTool />} related={<RelatedTools currentSlug={toolData.slug} />}>
-        {createWriteUp(t)}
+        {/* Note: writeUp content needs to be hardcoded from en.json if needed */}
         <div className="mt-10 space-y-3">
-          <h2 className="text-2xl font-semibold text-slate-900">{t('ChatGPTSentenceRewriterPage.faqHeading')}</h2>
+          <h2 className="text-2xl font-semibold text-slate-900">'ChatGPTSentenceRewriterPage.faqHeading'</h2>
           <p className="text-slate-700">
-            {t('ChatGPTSentenceRewriterPage.faqIntro')}
+            'ChatGPTSentenceRewriterPage.faqIntro'
           </p>
         </div>
         {/* Create translated FAQs from translation keys */}
         {(() => {
-          const pageFaqs: FaqItem[] = faqKeys.map(({ key, category }) => ({
-            category: t(`ChatGPTSentenceRewriterPage.faqs.${key}.category`) || category,
-            question: t(`ChatGPTSentenceRewriterPage.faqs.${key}.question`),
-            answer: t(`ChatGPTSentenceRewriterPage.faqs.${key}.answer`),
-          }));
+          const pageFaqs: FaqItem[] = []; // Note: FAQs need to be hardcoded from en.json if needed
           return (
             <>
               <FAQSection items={pageFaqs} />

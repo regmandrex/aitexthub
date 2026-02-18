@@ -11,31 +11,23 @@ import { buildToolMeta } from '@/lib/seo-meta';
 import { getToolBySlug } from '@/lib/tools/registry';
 import { siteUrl } from '@/lib/schema/site';
 import { webPageSchema } from '@/lib/schema/webpage';
-import { getServerLocale } from '@/lib/server-i18n';
-import { createServerT } from '@/lib/server-t';
 
 const toolSlug = 'extract-numbers-from-text';
 
 export async function generateMetadata(): Promise<Metadata> {
-  const { locale } = await getServerLocale();
-  const t = await createServerT(locale);
+  
   const toolData = getToolBySlug(toolSlug);
   const toolKey = toolSlug;
   
-  const title = t(`Tools.${toolKey}.title`) !== `Tools.${toolKey}.title` 
-    ? t(`Tools.${toolKey}.title`) 
-    : toolData?.title ?? 'Extract Numbers From Text';
-  const description = t(`Tools.${toolKey}.description`) !== `Tools.${toolKey}.description`
-    ? t(`Tools.${toolKey}.description`)
-    : toolData?.shortDescription ?? 'Extract all numbers from text, including integers and decimals. Options for ordering, uniqueness, and delimiters.';
-  const seoTitle = toolData?.seoTitle ? (t(`Tools.${toolKey}.seoTitle`) !== `Tools.${toolKey}.seoTitle` ? t(`Tools.${toolKey}.seoTitle`) : toolData.seoTitle) : undefined;
+  const title = "Extract Numbers From Text";
+  const description = "Extract all numbers from text, including integers and decimals. Options for ordering, uniqueness, and delimiters.";
+  const seoTitle = undefined;
   
   return buildToolMeta({
     title,
     description,
     seoTitle,
     urlPath: `/${toolSlug}`,
-    locale,
   });
 }
 
@@ -375,18 +367,12 @@ const writeUp = (
 );
 
 export default async function ExtractNumbersFromTextPage() {
-  const { locale } = await getServerLocale();
-  const t = await createServerT(locale);
+  
   const toolData = getToolBySlug(toolSlug);
   if (!toolData) return notFound();
 
-  const toolKey = toolSlug;
-  const title = t(`Tools.${toolKey}.title`) !== `Tools.${toolKey}.title` 
-    ? t(`Tools.${toolKey}.title`) 
-    : toolData.title;
-  const description = t(`Tools.${toolKey}.description`) !== `Tools.${toolKey}.description`
-    ? t(`Tools.${toolKey}.description`)
-    : toolData.shortDescription;
+  const title = toolData.title;
+  const description = toolData.shortDescription;
 
   const url = `${siteUrl}/${toolSlug}/`;
   const schemaData = {

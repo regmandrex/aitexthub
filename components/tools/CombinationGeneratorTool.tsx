@@ -2,7 +2,38 @@
 
 import { useMemo, useState } from 'react';
 import ToolTextArea from './ToolTextArea';
-import { useI18n } from '@/lib/client-i18n';
+
+const LABELS = {
+  errorEnterItems: 'Enter at least one item.',
+  errorSizeRange: 'Size must be between 1 and 20.',
+  errorSizeTooLarge: (count: number) => `Size cannot be greater than the number of items (${count}).`,
+  combinationSizeLabel: 'Combination Size',
+  combinationSizeHint: 'Choose how many items per combination (1-20).',
+  prefixLabel: 'Prefix sets with',
+  prefixPlaceholder: 'Optional prefix',
+  prefixHint: 'Add text before each combination. Use \\n for newline.',
+  suffixLabel: 'Suffix sets with',
+  suffixPlaceholder: 'Optional suffix',
+  suffixHint: 'Add text after each combination. Use \\n for newline.',
+  delimiterLabel: 'Delimit objects with',
+  delimiterPlaceholder: ', ',
+  delimiterHint: 'Separator between items in each combination. Use \\n for newline.',
+  joinSetsLabel: 'Join sets with',
+  joinSetsPlaceholder: '\\n',
+  joinSetsHint: 'Separator between combinations. Use \\n for newline (default).',
+  infoTitle: 'Info',
+  itemsCount: 'Items',
+  sizeLabel: 'Size',
+  totalCombinations: 'Total combinations',
+  generateButton: 'Generate Combinations',
+  loadSampleButton: 'Load Sample',
+  clearButton: 'Clear',
+  resultsTitle: 'Results',
+  combinationsLabel: 'combinations',
+  copyAllButton: 'Copy All',
+  downloadButton: 'Download',
+  copyButton: 'Copy',
+};
 
 // Generate all combinations of size r from array
 function generateCombinations<T>(arr: T[], r: number): T[][] {
@@ -39,7 +70,6 @@ function clampNumber(value: number, min: number, max: number): number {
 }
 
 export function CombinationGeneratorTool() {
-  const { t } = useI18n();
   const [input, setInput] = useState('');
   const [size, setSize] = useState('2');
   const [prefix, setPrefix] = useState('');
@@ -59,16 +89,16 @@ export function CombinationGeneratorTool() {
   const errors = useMemo(() => {
     const errs: { input?: string; size?: string } = {};
     if (items.length === 0) {
-      errs.input = t('CombinationGeneratorPage.ui.errorEnterItems');
+      errs.input = LABELS.errorEnterItems;
     }
     if (sizeValue < 1 || sizeValue > 20) {
-      errs.size = t('CombinationGeneratorPage.ui.errorSizeRange');
+      errs.size = LABELS.errorSizeRange;
     }
     if (sizeValue > items.length) {
-      errs.size = t('CombinationGeneratorPage.ui.errorSizeTooLarge', { count: items.length });
+      errs.size = LABELS.errorSizeTooLarge(items.length);
     }
     return errs;
-  }, [items.length, sizeValue, t]);
+  }, [items.length, sizeValue]);
 
   // Replace \x with newline, \t with tab, etc.
   const processSpecialChars = (text: string): string => {
@@ -157,7 +187,7 @@ export function CombinationGeneratorTool() {
         <div className="space-y-4">
           <div className="space-y-2">
             <label className="text-sm font-semibold text-slate-800" htmlFor="combo-size">
-              {t('CombinationGeneratorPage.ui.combinationSizeLabel')}
+              {"Combination Size"}
             </label>
             <input
               id="combo-size"
@@ -168,73 +198,73 @@ export function CombinationGeneratorTool() {
               onChange={(e) => setSize(e.target.value)}
               className="w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm text-slate-700 shadow-sm focus:border-brand-300 focus:outline-none focus:ring-2 focus:ring-brand-100"
             />
-            <p className="text-xs text-slate-500">{t('CombinationGeneratorPage.ui.combinationSizeHint')}</p>
+            <p className="text-xs text-slate-500">{LABELS.combinationSizeHint}</p>
             {errors.size ? <p className="text-xs font-semibold text-rose-600">{errors.size}</p> : null}
           </div>
           <div className="space-y-2">
             <label className="text-sm font-semibold text-slate-800" htmlFor="combo-prefix">
-              {t('CombinationGeneratorPage.ui.prefixLabel')}
+              {LABELS.prefixLabel}
             </label>
             <input
               id="combo-prefix"
               type="text"
               value={prefix}
               onChange={(e) => setPrefix(e.target.value)}
-              placeholder={t('CombinationGeneratorPage.ui.prefixPlaceholder')}
+              placeholder={LABELS.prefixPlaceholder}
               className="w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm text-slate-700 shadow-sm focus:border-brand-300 focus:outline-none focus:ring-2 focus:ring-brand-100"
             />
-            <p className="text-xs text-slate-500">{t('CombinationGeneratorPage.ui.prefixHint')}</p>
+            <p className="text-xs text-slate-500">{LABELS.prefixHint}</p>
           </div>
           <div className="space-y-2">
             <label className="text-sm font-semibold text-slate-800" htmlFor="combo-suffix">
-              {t('CombinationGeneratorPage.ui.suffixLabel')}
+              {"Suffix sets with"}
             </label>
             <input
               id="combo-suffix"
               type="text"
               value={suffix}
               onChange={(e) => setSuffix(e.target.value)}
-              placeholder={t('CombinationGeneratorPage.ui.suffixPlaceholder')}
+              placeholder={LABELS.suffixPlaceholder}
               className="w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm text-slate-700 shadow-sm focus:border-brand-300 focus:outline-none focus:ring-2 focus:ring-brand-100"
             />
-            <p className="text-xs text-slate-500">{t('CombinationGeneratorPage.ui.suffixHint')}</p>
+            <p className="text-xs text-slate-500">{"Add text after each combination. Use \\x for newline."}</p>
           </div>
           <div className="space-y-2">
             <label className="text-sm font-semibold text-slate-800" htmlFor="combo-delimiter">
-              {t('CombinationGeneratorPage.ui.delimiterLabel')}
+              {LABELS.delimiterLabel}
             </label>
             <input
               id="combo-delimiter"
               type="text"
               value={delimiter}
               onChange={(e) => setDelimiter(e.target.value)}
-              placeholder={t('CombinationGeneratorPage.ui.delimiterPlaceholder')}
+              placeholder={LABELS.delimiterPlaceholder}
               className="w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm text-slate-700 shadow-sm focus:border-brand-300 focus:outline-none focus:ring-2 focus:ring-brand-100"
             />
-            <p className="text-xs text-slate-500">{t('CombinationGeneratorPage.ui.delimiterHint')}</p>
+            <p className="text-xs text-slate-500">{"Separator between items in each combination. Use \\x for newline."}</p>
           </div>
           <div className="space-y-2">
             <label className="text-sm font-semibold text-slate-800" htmlFor="combo-join">
-              {t('CombinationGeneratorPage.ui.joinSetsLabel')}
+              {LABELS.joinSetsLabel}
             </label>
             <input
               id="combo-join"
               type="text"
               value={joinSets}
               onChange={(e) => setJoinSets(e.target.value)}
-              placeholder={t('CombinationGeneratorPage.ui.joinSetsPlaceholder')}
+              placeholder={"\\x"}
               className="w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm text-slate-700 shadow-sm focus:border-brand-300 focus:outline-none focus:ring-2 focus:ring-brand-100"
             />
-            <p className="text-xs text-slate-500">{t('CombinationGeneratorPage.ui.joinSetsHint')}</p>
+            <p className="text-xs text-slate-500">{LABELS.joinSetsHint}</p>
           </div>
           <div className="rounded-xl border border-slate-200 bg-slate-50 p-4">
-            <h3 className="text-sm font-semibold text-slate-800">{t('CombinationGeneratorPage.ui.infoTitle')}</h3>
+            <h3 className="text-sm font-semibold text-slate-800">{LABELS.infoTitle}</h3>
             <p className="mt-2 text-xs text-slate-600">
-              {t('CombinationGeneratorPage.ui.itemsCount')}: {items.length}
+              {"Items"}: {items.length}
               <br />
-              {t('CombinationGeneratorPage.ui.sizeLabel')}: {sizeValue}
+              {LABELS.sizeLabel}: {sizeValue}
               <br />
-              {t('CombinationGeneratorPage.ui.totalCombinations')}: {totalCombinations.toLocaleString()}
+              {"Total combinations"}: {totalCombinations.toLocaleString()}
             </p>
           </div>
         </div>
@@ -247,21 +277,21 @@ export function CombinationGeneratorTool() {
           disabled={!!errors.input || !!errors.size || items.length === 0}
           className="inline-flex items-center justify-center rounded-lg bg-brand-700 px-4 py-2 text-sm font-semibold text-white shadow hover:bg-brand-800 disabled:bg-slate-300 disabled:cursor-not-allowed"
         >
-          {t('CombinationGeneratorPage.ui.generateButton')}
+          {LABELS.generateButton}
         </button>
         <button
           type="button"
           onClick={handleSample}
           className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
         >
-          {t('CombinationGeneratorPage.ui.loadSampleButton')}
+          {LABELS.loadSampleButton}
         </button>
         <button
           type="button"
           onClick={handleClear}
           className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
         >
-          {t('CombinationGeneratorPage.ui.clearButton')}
+          {"Clear"}
         </button>
       </div>
 
@@ -269,7 +299,7 @@ export function CombinationGeneratorTool() {
         <div className="space-y-3">
           <div className="flex items-center justify-between">
             <h3 className="text-sm font-semibold text-slate-800">
-              {t('CombinationGeneratorPage.ui.resultsTitle')} ({results.length.toLocaleString()} {t('CombinationGeneratorPage.ui.combinationsLabel')})
+              {LABELS.resultsTitle} ({results.length.toLocaleString()} {LABELS.combinationsLabel})
             </h3>
             <div className="flex gap-2">
               <button
@@ -277,14 +307,14 @@ export function CombinationGeneratorTool() {
                 onClick={handleCopyAll}
                 className="text-xs font-semibold text-brand-700 hover:text-brand-800"
               >
-                {t('CombinationGeneratorPage.ui.copyAllButton')}
+                {"Copy All"}
               </button>
               <button
                 type="button"
                 onClick={handleDownload}
                 className="text-xs font-semibold text-brand-700 hover:text-brand-800"
               >
-                {t('CombinationGeneratorPage.ui.downloadButton')}
+                {LABELS.downloadButton}
               </button>
             </div>
           </div>
@@ -301,7 +331,7 @@ export function CombinationGeneratorTool() {
                     onClick={() => handleCopy(result)}
                     className="text-xs font-semibold text-brand-700 hover:text-brand-800"
                   >
-                    {t('CombinationGeneratorPage.ui.copyButton')}
+                    {LABELS.copyButton}
                   </button>
                 </div>
               ))}

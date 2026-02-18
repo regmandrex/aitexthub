@@ -9,9 +9,9 @@ import { siteUrl } from "../../lib/schema/site";
 import { RelatedTools } from "../../components/tool/RelatedTools";
 import AdSenseSlot from "../../components/ads/AdSenseSlot";
 import BelowToolAd from "../../components/ads/BelowToolAd";
-import { getServerLocale } from '../../lib/server-i18n';
-import { createServerT } from '../../lib/server-t';
 import { tOr } from '@/lib/i18n-fallback';
+
+const t = () => '';
 
 function RailAd({ side }: { side: 'left' | 'right' }) {
   const sideClass = side === 'left' ? 'left-4' : 'right-4';
@@ -197,8 +197,7 @@ const faqs: FaqItem[] = [
 ];
 
 export async function generateMetadata() {
-  const { locale } = await getServerLocale();
-  const t = await createServerT(locale);
+  
   
   const title = tOr(
     t,
@@ -225,8 +224,7 @@ const pageFaqs = faqs.map((item) => ({
 }));
 
 export default async function GrokWatermarkCleanerPage() {
-  const { locale } = await getServerLocale();
-  const t = await createServerT(locale);
+  
   const toolTitle = tOr(t, 'Tools.grok-watermark-cleaner.title', 'Grok Watermark Cleaner');
   const toolDescription = tOr(t, 'Tools.grok-watermark-cleaner.description', 'Remove hidden characters and formatting artifacts from Grok output.');
   const subtitle = tOr(
@@ -260,9 +258,9 @@ export default async function GrokWatermarkCleanerPage() {
               processor="chatgptTextCleaner"
               primaryLabel={tOr(t, 'ToolUI.clean', tOr(t, 'HomePage.cleanPrimary', 'Clean'))}
               inputLabel={tOr(t, 'GrokWatermarkCleanerPage.inputLabel', 'Paste your Grok AI text')}
-              outputLabel={t('HomePage.cleanOutputLabel')}
+              outputLabel='HomePage.cleanOutputLabel'
               inputPlaceholder={tOr(t, 'GrokWatermarkCleanerPage.inputPlaceholder', 'Paste text from Grok...')}
-              outputPlaceholder={t('ToolUI.outputPlaceholder')}
+              outputPlaceholder='ToolUI.outputPlaceholder'
             />
           </div>
         </section>

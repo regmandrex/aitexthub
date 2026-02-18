@@ -1,14 +1,11 @@
 import { buildMeta } from '@/lib/seo-meta';
-import { getServerLocale } from '@/lib/server-i18n';
 import type { Metadata } from 'next';
 
 export async function generateMetadata(): Promise<Metadata> {
-  const { locale } = await getServerLocale();
   return buildMeta({
     title: 'Cookie Policy - GPTCLEANUP AI Privacy & Tracking',
     description: 'Cookie Policy for GPTCLEANUP AI tools.',
     urlPath: '/cookie-policy',
-    locale,
   });
 }
 

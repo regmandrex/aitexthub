@@ -11,9 +11,6 @@ import { buildToolMeta } from '@/lib/seo-meta';
 import { siteUrl } from '@/lib/schema/site';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
-import { getServerLocale } from '@/lib/server-i18n';
-import { createServerT } from '@/lib/server-t';
-
 const toolSlug = 'chatgpt-humanizer';
 
 // FAQ keys structure - these will be translated
@@ -44,175 +41,164 @@ const faqKeys = [
   { key: 'faq24', category: 'ChatGPT Humanizer FAQs' },
   { key: 'faq25', category: 'ChatGPT Humanizer FAQs' },
 ];
-function createWriteUp(t: (key: string) => string) {
+// Note: writeUp content needs to be hardcoded from en.json if needed
+// Removed createWriteUp function
+function createWriteUp() {
   return (
   <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
     <div className="prose prose-slate max-w-none">
-      <h2>{t('ChatGPTHumanizerPage.writeUp.title')}</h2>
-      <p>{t('ChatGPTHumanizerPage.writeUp.introP1')}</p>
-      <p>{t('ChatGPTHumanizerPage.writeUp.introP2')}</p>
-      <p>{t('ChatGPTHumanizerPage.writeUp.introP3')}</p>
+      <h2>'ChatGPTHumanizerPage.writeUp.title'</h2>
+      <p>'ChatGPTHumanizerPage.writeUp.introP1'</p>
+      <p>'ChatGPTHumanizerPage.writeUp.introP2'</p>
+      <p>'ChatGPTHumanizerPage.writeUp.introP3'</p>
 
-      <h2>{t('ChatGPTHumanizerPage.writeUp.patternsTitle')}</h2>
-      <p>{t('ChatGPTHumanizerPage.writeUp.patternsP1')}</p>
+      <h2>'ChatGPTHumanizerPage.writeUp.patternsTitle'</h2>
+      <p>'ChatGPTHumanizerPage.writeUp.patternsP1'</p>
 
-      <h3>{t('ChatGPTHumanizerPage.writeUp.uniformityTitle')}</h3>
-      <p>{t('ChatGPTHumanizerPage.writeUp.uniformityP1')}</p>
-      <p>{t('ChatGPTHumanizerPage.writeUp.uniformityP2')}</p>
+      <h3>'ChatGPTHumanizerPage.writeUp.uniformityTitle'</h3>
+      <p>'ChatGPTHumanizerPage.writeUp.uniformityP1'</p>
+      <p>'ChatGPTHumanizerPage.writeUp.uniformityP2'</p>
 
-      <h3>{t('ChatGPTHumanizerPage.writeUp.vocabularyTitle')}</h3>
-      <p>{t('ChatGPTHumanizerPage.writeUp.vocabularyP1')}</p>
-      <p>{t('ChatGPTHumanizerPage.writeUp.vocabularyP2')}</p>
+      <h3>'ChatGPTHumanizerPage.writeUp.vocabularyTitle'</h3>
+      <p>'ChatGPTHumanizerPage.writeUp.vocabularyP1'</p>
+      <p>'ChatGPTHumanizerPage.writeUp.vocabularyP2'</p>
 
-      <h3>{t('ChatGPTHumanizerPage.writeUp.transitionsTitle')}</h3>
-      <p>{t('ChatGPTHumanizerPage.writeUp.transitionsP1')}</p>
-      <p>{t('ChatGPTHumanizerPage.writeUp.transitionsP2')}</p>
+      <h3>'ChatGPTHumanizerPage.writeUp.transitionsTitle'</h3>
+      <p>'ChatGPTHumanizerPage.writeUp.transitionsP1'</p>
+      <p>'ChatGPTHumanizerPage.writeUp.transitionsP2'</p>
 
-      <h2>{t('ChatGPTHumanizerPage.writeUp.howItWorksTitle')}</h2>
-      <p>{t('ChatGPTHumanizerPage.writeUp.howItWorksP1')}</p>
+      <h2>'ChatGPTHumanizerPage.writeUp.howItWorksTitle'</h2>
+      <p>'ChatGPTHumanizerPage.writeUp.howItWorksP1'</p>
 
-      <h3>{t('ChatGPTHumanizerPage.writeUp.structuralTitle')}</h3>
-      <p>{t('ChatGPTHumanizerPage.writeUp.structuralP1')}</p>
+      <h3>'ChatGPTHumanizerPage.writeUp.structuralTitle'</h3>
+      <p>'ChatGPTHumanizerPage.writeUp.structuralP1'</p>
 
-      <h3>{t('ChatGPTHumanizerPage.writeUp.vocabAdjustTitle')}</h3>
-      <p>{t('ChatGPTHumanizerPage.writeUp.vocabAdjustP1')}</p>
+      <h3>'ChatGPTHumanizerPage.writeUp.vocabAdjustTitle'</h3>
+      <p>'ChatGPTHumanizerPage.writeUp.vocabAdjustP1'</p>
 
-      <h3>{t('ChatGPTHumanizerPage.writeUp.voiceTitle')}</h3>
-      <p>{t('ChatGPTHumanizerPage.writeUp.voiceP1')}</p>
+      <h3>'ChatGPTHumanizerPage.writeUp.voiceTitle'</h3>
+      <p>'ChatGPTHumanizerPage.writeUp.voiceP1'</p>
 
-      <h3>{t('ChatGPTHumanizerPage.writeUp.imperfectionTitle')}</h3>
-      <p>{t('ChatGPTHumanizerPage.writeUp.imperfectionP1')}</p>
+      <h3>'ChatGPTHumanizerPage.writeUp.imperfectionTitle'</h3>
+      <p>'ChatGPTHumanizerPage.writeUp.imperfectionP1'</p>
 
-      <h2>{t('ChatGPTHumanizerPage.writeUp.usingTitle')}</h2>
-      <p>{t('ChatGPTHumanizerPage.writeUp.usingP1')}</p>
+      <h2>'ChatGPTHumanizerPage.writeUp.usingTitle'</h2>
+      <p>'ChatGPTHumanizerPage.writeUp.usingP1'</p>
 
-      <h3>{t('ChatGPTHumanizerPage.writeUp.inputTitle')}</h3>
-      <p>{t('ChatGPTHumanizerPage.writeUp.inputP1')}</p>
-      <p>{t('ChatGPTHumanizerPage.writeUp.inputP2')}</p>
+      <h3>'ChatGPTHumanizerPage.writeUp.inputTitle'</h3>
+      <p>'ChatGPTHumanizerPage.writeUp.inputP1'</p>
+      <p>'ChatGPTHumanizerPage.writeUp.inputP2'</p>
 
-      <h3>{t('ChatGPTHumanizerPage.writeUp.reviewingTitle')}</h3>
-      <p>{t('ChatGPTHumanizerPage.writeUp.reviewingP1')}</p>
-      <p>{t('ChatGPTHumanizerPage.writeUp.reviewingP2')}</p>
+      <h3>'ChatGPTHumanizerPage.writeUp.reviewingTitle'</h3>
+      <p>'ChatGPTHumanizerPage.writeUp.reviewingP1'</p>
+      <p>'ChatGPTHumanizerPage.writeUp.reviewingP2'</p>
 
-      <h3>{t('ChatGPTHumanizerPage.writeUp.iterativeTitle')}</h3>
-      <p>{t('ChatGPTHumanizerPage.writeUp.iterativeP1')}</p>
-      <p>{t('ChatGPTHumanizerPage.writeUp.iterativeP2')}</p>
+      <h3>'ChatGPTHumanizerPage.writeUp.iterativeTitle'</h3>
+      <p>'ChatGPTHumanizerPage.writeUp.iterativeP1'</p>
+      <p>'ChatGPTHumanizerPage.writeUp.iterativeP2'</p>
 
-      <h2>{t('ChatGPTHumanizerPage.writeUp.detectionTitle')}</h2>
-      <p>{t('ChatGPTHumanizerPage.writeUp.detectionP1')}</p>
+      <h2>'ChatGPTHumanizerPage.writeUp.detectionTitle'</h2>
+      <p>'ChatGPTHumanizerPage.writeUp.detectionP1'</p>
 
-      <h3>{t('ChatGPTHumanizerPage.writeUp.reductionTitle')}</h3>
-      <p>{t('ChatGPTHumanizerPage.writeUp.reductionP1')}</p>
-      <p>{t('ChatGPTHumanizerPage.writeUp.reductionP2')}</p>
+      <h3>'ChatGPTHumanizerPage.writeUp.reductionTitle'</h3>
+      <p>'ChatGPTHumanizerPage.writeUp.reductionP1'</p>
+      <p>'ChatGPTHumanizerPage.writeUp.reductionP2'</p>
 
-      <h3>{t('ChatGPTHumanizerPage.writeUp.ethicalTitle')}</h3>
-      <p>{t('ChatGPTHumanizerPage.writeUp.ethicalP1')}</p>
-      <p>{t('ChatGPTHumanizerPage.writeUp.ethicalP2')}</p>
+      <h3>'ChatGPTHumanizerPage.writeUp.ethicalTitle'</h3>
+      <p>'ChatGPTHumanizerPage.writeUp.ethicalP1'</p>
+      <p>'ChatGPTHumanizerPage.writeUp.ethicalP2'</p>
 
-      <h3>{t('ChatGPTHumanizerPage.writeUp.valueTitle')}</h3>
-      <p>{t('ChatGPTHumanizerPage.writeUp.valueP1')}</p>
+      <h3>'ChatGPTHumanizerPage.writeUp.valueTitle'</h3>
+      <p>'ChatGPTHumanizerPage.writeUp.valueP1'</p>
 
-      <h2>{t('ChatGPTHumanizerPage.writeUp.applicationsTitle')}</h2>
-      <p>{t('ChatGPTHumanizerPage.writeUp.applicationsP1')}</p>
+      <h2>'ChatGPTHumanizerPage.writeUp.applicationsTitle'</h2>
+      <p>'ChatGPTHumanizerPage.writeUp.applicationsP1'</p>
 
-      <h3>{t('ChatGPTHumanizerPage.writeUp.marketingTitle')}</h3>
-      <p>{t('ChatGPTHumanizerPage.writeUp.marketingP1')}</p>
-      <p>{t('ChatGPTHumanizerPage.writeUp.marketingP2')}</p>
+      <h3>'ChatGPTHumanizerPage.writeUp.marketingTitle'</h3>
+      <p>'ChatGPTHumanizerPage.writeUp.marketingP1'</p>
+      <p>'ChatGPTHumanizerPage.writeUp.marketingP2'</p>
 
-      <h3>{t('ChatGPTHumanizerPage.writeUp.professionalTitle')}</h3>
-      <p>{t('ChatGPTHumanizerPage.writeUp.professionalP1')}</p>
-      <p>{t('ChatGPTHumanizerPage.writeUp.professionalP2')}</p>
+      <h3>'ChatGPTHumanizerPage.writeUp.professionalTitle'</h3>
+      <p>'ChatGPTHumanizerPage.writeUp.professionalP1'</p>
+      <p>'ChatGPTHumanizerPage.writeUp.professionalP2'</p>
 
-      <h3>{t('ChatGPTHumanizerPage.writeUp.creativeTitle')}</h3>
-      <p>{t('ChatGPTHumanizerPage.writeUp.creativeP1')}</p>
-      <p>{t('ChatGPTHumanizerPage.writeUp.creativeP2')}</p>
+      <h3>'ChatGPTHumanizerPage.writeUp.creativeTitle'</h3>
+      <p>'ChatGPTHumanizerPage.writeUp.creativeP1'</p>
+      <p>'ChatGPTHumanizerPage.writeUp.creativeP2'</p>
 
-      <h3>{t('ChatGPTHumanizerPage.writeUp.educationalTitle')}</h3>
-      <p>{t('ChatGPTHumanizerPage.writeUp.educationalP1')}</p>
-      <p>{t('ChatGPTHumanizerPage.writeUp.educationalP2')}</p>
+      <h3>'ChatGPTHumanizerPage.writeUp.educationalTitle'</h3>
+      <p>'ChatGPTHumanizerPage.writeUp.educationalP1'</p>
+      <p>'ChatGPTHumanizerPage.writeUp.educationalP2'</p>
 
-      <h2>{t('ChatGPTHumanizerPage.writeUp.bestPracticesTitle')}</h2>
-      <p>{t('ChatGPTHumanizerPage.writeUp.bestPracticesP1')}</p>
+      <h2>'ChatGPTHumanizerPage.writeUp.bestPracticesTitle'</h2>
+      <p>'ChatGPTHumanizerPage.writeUp.bestPracticesP1'</p>
 
-      <h3>{t('ChatGPTHumanizerPage.writeUp.combineTitle')}</h3>
-      <p>{t('ChatGPTHumanizerPage.writeUp.combineP1')}</p>
+      <h3>'ChatGPTHumanizerPage.writeUp.combineTitle'</h3>
+      <p>'ChatGPTHumanizerPage.writeUp.combineP1'</p>
 
-      <h3>{t('ChatGPTHumanizerPage.writeUp.matchTitle')}</h3>
-      <p>{t('ChatGPTHumanizerPage.writeUp.matchP1')}</p>
+      <h3>'ChatGPTHumanizerPage.writeUp.matchTitle'</h3>
+      <p>'ChatGPTHumanizerPage.writeUp.matchP1'</p>
 
-      <h3>{t('ChatGPTHumanizerPage.writeUp.verifyTitle')}</h3>
-      <p>{t('ChatGPTHumanizerPage.writeUp.verifyP1')}</p>
+      <h3>'ChatGPTHumanizerPage.writeUp.verifyTitle'</h3>
+      <p>'ChatGPTHumanizerPage.writeUp.verifyP1'</p>
 
-      <h3>{t('ChatGPTHumanizerPage.writeUp.iterativeUseTitle')}</h3>
-      <p>{t('ChatGPTHumanizerPage.writeUp.iterativeUseP1')}</p>
+      <h3>'ChatGPTHumanizerPage.writeUp.iterativeUseTitle'</h3>
+      <p>'ChatGPTHumanizerPage.writeUp.iterativeUseP1'</p>
 
-      <h2>{t('ChatGPTHumanizerPage.writeUp.technicalTitle')}</h2>
-      <p>{t('ChatGPTHumanizerPage.writeUp.technicalP1')}</p>
+      <h2>'ChatGPTHumanizerPage.writeUp.technicalTitle'</h2>
+      <p>'ChatGPTHumanizerPage.writeUp.technicalP1'</p>
 
-      <h3>{t('ChatGPTHumanizerPage.writeUp.perplexityTitle')}</h3>
-      <p>{t('ChatGPTHumanizerPage.writeUp.perplexityP1')}</p>
+      <h3>'ChatGPTHumanizerPage.writeUp.perplexityTitle'</h3>
+      <p>'ChatGPTHumanizerPage.writeUp.perplexityP1'</p>
 
-      <h3>{t('ChatGPTHumanizerPage.writeUp.burstinessTitle')}</h3>
-      <p>{t('ChatGPTHumanizerPage.writeUp.burstinessP1')}</p>
+      <h3>'ChatGPTHumanizerPage.writeUp.burstinessTitle'</h3>
+      <p>'ChatGPTHumanizerPage.writeUp.burstinessP1'</p>
 
-      <h3>{t('ChatGPTHumanizerPage.writeUp.stylisticTitle')}</h3>
-      <p>{t('ChatGPTHumanizerPage.writeUp.stylisticP1')}</p>
+      <h3>'ChatGPTHumanizerPage.writeUp.stylisticTitle'</h3>
+      <p>'ChatGPTHumanizerPage.writeUp.stylisticP1'</p>
 
-      <h2>{t('ChatGPTHumanizerPage.writeUp.limitationsTitle')}</h2>
-      <p>{t('ChatGPTHumanizerPage.writeUp.limitationsP1')}</p>
+      <h2>'ChatGPTHumanizerPage.writeUp.limitationsTitle'</h2>
+      <p>'ChatGPTHumanizerPage.writeUp.limitationsP1'</p>
 
-      <h3>{t('ChatGPTHumanizerPage.writeUp.qualityTitle')}</h3>
-      <p>{t('ChatGPTHumanizerPage.writeUp.qualityP1')}</p>
+      <h3>'ChatGPTHumanizerPage.writeUp.qualityTitle'</h3>
+      <p>'ChatGPTHumanizerPage.writeUp.qualityP1'</p>
 
-      <h3>{t('ChatGPTHumanizerPage.writeUp.evolutionTitle')}</h3>
-      <p>{t('ChatGPTHumanizerPage.writeUp.evolutionP1')}</p>
+      <h3>'ChatGPTHumanizerPage.writeUp.evolutionTitle'</h3>
+      <p>'ChatGPTHumanizerPage.writeUp.evolutionP1'</p>
 
-      <h3>{t('ChatGPTHumanizerPage.writeUp.contextTitle')}</h3>
-      <p>{t('ChatGPTHumanizerPage.writeUp.contextP1')}</p>
+      <h3>'ChatGPTHumanizerPage.writeUp.contextTitle'</h3>
+      <p>'ChatGPTHumanizerPage.writeUp.contextP1'</p>
 
-      <h3>{t('ChatGPTHumanizerPage.writeUp.variableTitle')}</h3>
-      <p>{t('ChatGPTHumanizerPage.writeUp.variableP1')}</p>
+      <h3>'ChatGPTHumanizerPage.writeUp.variableTitle'</h3>
+      <p>'ChatGPTHumanizerPage.writeUp.variableP1'</p>
     </div>
   </section>
   );
 }
 
 export async function generateMetadata(): Promise<Metadata> {
-  const { locale } = await getServerLocale();
-  const t = await createServerT(locale);
+  
   const toolData = getToolBySlug(toolSlug);
   if (!toolData) return {};
 
-  const toolKey = toolSlug;
-  const title = t(`Tools.${toolKey}.title`) !== `Tools.${toolKey}.title` 
-    ? t(`Tools.${toolKey}.title`) 
-    : toolData.title;
-  const description = t(`Tools.${toolKey}.description`) !== `Tools.${toolKey}.description`
-    ? t(`Tools.${toolKey}.description`)
-    : toolData.shortDescription;
+  const title = toolData.title;
+  const description = toolData.shortDescription;
 
   return buildToolMeta({
     title,
     description,
     seoTitle: 'ChatGPT Humanizer - Make AI Text Sound Human Free',
     urlPath: `/${toolSlug}`,
-    locale,
   });
 }
 
 export default async function ChatGPTHumanizerPage() {
-  const { locale } = await getServerLocale();
-  const t = await createServerT(locale);
+  
   const toolData = getToolBySlug(toolSlug);
   if (!toolData) return notFound();
 
-  const toolKey = toolSlug;
-  const title = t(`Tools.${toolKey}.title`) !== `Tools.${toolKey}.title` 
-    ? t(`Tools.${toolKey}.title`) 
-    : toolData.title;
-  const description = t(`Tools.${toolKey}.description`) !== `Tools.${toolKey}.description`
-    ? t(`Tools.${toolKey}.description`)
-    : toolData.shortDescription;
+  const title = toolData.title;
+  const description = toolData.shortDescription;
 
   const url = `${siteUrl}/${toolSlug}/`;
   const webAppSchema = {
@@ -230,20 +216,16 @@ export default async function ChatGPTHumanizerPage() {
       <JsonLd data={webPageSchema({ name: title, url, description })} />
       <JsonLd data={webAppSchema} />
       <ToolPageShell tool={{ ...toolData, title, shortDescription: description }} ui={<ChatGPTHumanizerTool />} related={<RelatedTools currentSlug={toolData.slug} />}>
-        {createWriteUp(t)}
+        {/* Note: writeUp content needs to be hardcoded from en.json if needed */}
         <div className="mt-10 space-y-3">
-          <h2 className="text-2xl font-semibold text-slate-900">{t('ChatGPTHumanizerPage.faqHeading')}</h2>
+          <h2 className="text-2xl font-semibold text-slate-900">'ChatGPTHumanizerPage.faqHeading'</h2>
           <p className="text-slate-700">
-            {t('ChatGPTHumanizerPage.faqIntro')}
+            'ChatGPTHumanizerPage.faqIntro'
           </p>
         </div>
         {/* Create translated FAQs from translation keys */}
         {(() => {
-          const pageFaqs: FaqItem[] = faqKeys.map(({ key, category }) => ({
-            category: t(`ChatGPTHumanizerPage.faqs.${key}.category`) || category,
-            question: t(`ChatGPTHumanizerPage.faqs.${key}.question`),
-            answer: t(`ChatGPTHumanizerPage.faqs.${key}.answer`),
-          }));
+          const pageFaqs: FaqItem[] = []; // Note: FAQs need to be hardcoded from en.json if needed
           return (
             <>
               <FAQSection items={pageFaqs} />

@@ -1,52 +1,36 @@
 'use client';
 
 import { faqItems as defaultFaqItems, type FaqItem } from './faqData';
-import { useI18n } from '../lib/client-i18n';
+
+const CATEGORY_LABELS: Record<string, string> = {
+  'General': 'General',
+  'Technical': 'Technical',
+  'Usage': 'Usage',
+  'Detection and Limits': 'Detection and Limits',
+  'Compatibility and Formats': 'Compatibility and Formats',
+  'Privacy and Security': 'Privacy and Security',
+  'Advanced Workflow': 'Advanced Workflow',
+  'Troubleshooting and Comparison': 'Troubleshooting and Comparison',
+  'Additional Questions': 'Additional Questions',
+};
 
 type FAQSectionProps = {
   items?: FaqItem[];
   title?: string;
   intro?: string;
   showCategories?: boolean;
-  translationPrefix?: string; // e.g., "FAQ.home" or "FAQ.spaceRemover"
+  translationPrefix?: string; // Ignored - kept for API compatibility
 };
 
 export default function FAQSection({ items, title, intro, showCategories = true, translationPrefix }: FAQSectionProps) {
-  const { t } = useI18n();
-  const defaultTitle = t('FAQ.title') === 'FAQ.title' ? 'FAQ' : t('FAQ.title');
-  const resolvedTitle = title ?? defaultTitle;
+  const resolvedTitle = title ?? 'FAQ';
   const data = items ?? defaultFaqItems;
 
-  // Translate FAQ items
-  const translatedItems = data.map((faq, idx) => {
-    // Use translation prefix from prop or FAQ item
-    const prefix = translationPrefix || faq.translationKey || 'FAQ';
-    
-    // Try to translate using the prefix
-    const questionKey = `${prefix}.items.${idx}.question`;
-    const answerKey = `${prefix}.items.${idx}.answer`;
-    const translatedQuestion = t(questionKey);
-    const translatedAnswer = t(answerKey);
-    
-    // If translation not found, try category-based keys
-    const categoryQuestionKey = `FAQ.${faq.category}.${idx}.question`;
-    const categoryAnswerKey = `FAQ.${faq.category}.${idx}.answer`;
-    const categoryTranslatedQuestion = t(categoryQuestionKey);
-    const categoryTranslatedAnswer = t(categoryAnswerKey);
-    
-    return {
-      ...faq,
-      question: translatedQuestion !== questionKey 
-        ? translatedQuestion 
-        : (categoryTranslatedQuestion !== categoryQuestionKey ? categoryTranslatedQuestion : faq.question),
-      answer: translatedAnswer !== answerKey 
-        ? translatedAnswer 
-        : (categoryTranslatedAnswer !== categoryAnswerKey ? categoryTranslatedAnswer : faq.answer),
-      category: t(`FAQ.categories.${faq.category}`) !== `FAQ.categories.${faq.category}` 
-        ? t(`FAQ.categories.${faq.category}`) 
-        : faq.category,
-    };
-  });
+  // Use FAQ items as-is (already in English)
+  const translatedItems = data.map((faq) => ({
+    ...faq,
+    category: CATEGORY_LABELS[faq.category] || faq.category,
+  }));
 
   return (
     <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6">

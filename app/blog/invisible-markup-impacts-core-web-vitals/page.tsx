@@ -3,7 +3,6 @@ import { buildArticleMeta } from '@/lib/seo-meta';
 import { JsonLd } from '@/components/JsonLd';
 import { blogPostingSchema } from '@/lib/schema/blog';
 import AdSenseSlot from '../../../components/ads/AdSenseSlot';
-import { getServerLocale } from '@/lib/server-i18n';
 import type { Metadata } from 'next';
 
 const urlPath = '/blog/invisible-markup-impacts-core-web-vitals';
@@ -13,13 +12,11 @@ const description =
   'Invisible Unicode and malformed whitespace can inflate DOM complexity, cause layout shifts, and degrade LCP/CLS/INP. Learn how to detect and fix it.';
 
 export async function generateMetadata(): Promise<Metadata> {
-  const { locale } = await getServerLocale();
   return buildArticleMeta({
     title,
     description,
     urlPath,
-    locale,
-  });
+    });
 }
 
 export default function InvisibleMarkupCoreWebVitalsPage() {

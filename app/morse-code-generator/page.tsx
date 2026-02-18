@@ -11,31 +11,23 @@ import { buildToolMeta } from '@/lib/seo-meta';
 import { getToolBySlug } from '@/lib/tools/registry';
 import { siteUrl } from '@/lib/schema/site';
 import { webPageSchema } from '@/lib/schema/webpage';
-import { getServerLocale } from '@/lib/server-i18n';
-import { createServerT } from '@/lib/server-t';
 
 const toolSlug = 'morse-code-generator';
 
 export async function generateMetadata(): Promise<Metadata> {
-  const { locale } = await getServerLocale();
-  const t = await createServerT(locale);
+  
   const toolData = getToolBySlug(toolSlug);
   const toolKey = toolSlug;
   
-  const title = t(`Tools.${toolKey}.title`) !== `Tools.${toolKey}.title` 
-    ? t(`Tools.${toolKey}.title`) 
-    : toolData?.title ?? 'Morse Code Generator';
-  const description = t(`Tools.${toolKey}.description`) !== `Tools.${toolKey}.description`
-    ? t(`Tools.${toolKey}.description`)
-    : toolData?.shortDescription ?? 'Generate clean Morse code from your text using dots, dashes, and configurable separators.';
-  const seoTitle = toolData?.seoTitle ? t(`Tools.${toolKey}.seoTitle`) !== `Tools.${toolKey}.seoTitle` ? t(`Tools.${toolKey}.seoTitle`) : toolData.seoTitle : undefined;
+  const title = "Morse Code Generator";
+  const description = "Convert text into clean Morse code with slashes or spaces, ready for learning, practice, or signaling.";
+  const seoTitle = undefined;
   
   return buildToolMeta({
     title,
     description,
     seoTitle,
     urlPath: `/${toolSlug}`,
-    locale,
   });
 }
 
@@ -462,18 +454,12 @@ print("Morse Code:", morse_code)
 );
 
 export default async function MorseCodeGeneratorPage() {
-  const { locale } = await getServerLocale();
-  const t = await createServerT(locale);
+  
   const toolData = getToolBySlug(toolSlug);
   if (!toolData) return notFound();
 
-  const toolKey = toolSlug;
-  const title = t(`Tools.${toolKey}.title`) !== `Tools.${toolKey}.title` 
-    ? t(`Tools.${toolKey}.title`) 
-    : toolData.title;
-  const description = t(`Tools.${toolKey}.description`) !== `Tools.${toolKey}.description`
-    ? t(`Tools.${toolKey}.description`)
-    : toolData.shortDescription;
+  const title = toolData.title;
+  const description = toolData.shortDescription;
 
   const url = `${siteUrl}/${toolSlug}/`;
   const schemaData = {

@@ -11,7 +11,6 @@ import { siteUrl } from '../../lib/schema/site';
 import { RelatedTools } from '../tool/RelatedTools';
 import AdSenseSlot from '../ads/AdSenseSlot';
 import BelowToolAd from '../ads/BelowToolAd';
-import { useI18n } from '../../lib/client-i18n';
 
 type Props = {
   modelName: string;
@@ -33,12 +32,9 @@ function RailAd({ side }: { side: 'left' | 'right' }) {
 }
 
 export default function LineSpacingPage({ modelName, modelSlug, faqItems, content }: Props) {
-  const { t } = useI18n();
   const url = `${siteUrl}/${modelSlug}-line-spacing/`;
-  const titleKey = t('LineSpacingPage.title', { modelName });
-  const title = titleKey !== 'LineSpacingPage.title' ? titleKey : `${modelName} Line Spacing`;
-  const subtitleKey = t('LineSpacingPage.subtitle');
-  const subtitle = subtitleKey !== 'LineSpacingPage.subtitle' ? subtitleKey : 'Adjust line spacing in text for better readability and formatting.';
+  const title = `${modelName} Line Spacing`;
+  const subtitle = 'Adjust line spacing in text for better readability and formatting.';
   const description = `Adjust line spacing in ${modelName} text to single, 1.5, double, or custom spacing for better readability and formatting.`;
   const normalizedContent = content ? Children.toArray(content) : null;
 
@@ -72,29 +68,29 @@ export default function LineSpacingPage({ modelName, modelSlug, faqItems, conten
         ) : (
           <section className="space-y-6 mt-10">
             <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 space-y-4">
-              <h2 className="text-xl font-semibold text-slate-900">{t('LineSpacingPage.howItWorks')}</h2>
+              <h2 className="text-xl font-semibold text-slate-900">How it works</h2>
               <ul className="list-disc list-inside space-y-1 text-slate-700">
-                <li>{t('LineSpacingPage.howItWorks1')}</li>
-                <li>{t('LineSpacingPage.howItWorks2')}</li>
-                <li>{t('LineSpacingPage.howItWorks3')}</li>
+                <li>Choose single, 1.5, double, or custom line spacing.</li>
+                <li>Paste text and get consistently spaced output.</li>
+                <li>Use for readability and formatting in docs or CMS.</li>
               </ul>
             </div>
             <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 space-y-4">
-              <h2 className="text-xl font-semibold text-slate-900">{t('LineSpacingPage.whatCanCant')}</h2>
+              <h2 className="text-xl font-semibold text-slate-900">What it can / can&apos;t do</h2>
               <ul className="list-disc list-inside space-y-1 text-slate-700">
-                <li>{t('LineSpacingPage.whatCanCant1')}</li>
-                <li>{t('LineSpacingPage.whatCanCant2')}</li>
-                <li>{t('LineSpacingPage.whatCanCant3')}</li>
-                <li>{t('LineSpacingPage.whatCanCant4')}</li>
+                <li>Can normalize line spacing for cleaner layout.</li>
+                <li>Can&apos;t verify authorship or AI origin.</li>
+                <li>Not a bypass tool; formatting only.</li>
+                <li>Review output before publishing.</li>
               </ul>
             </div>
           </section>
         )}
 
         <div className="mt-10 space-y-3">
-          <h2 className="text-2xl font-semibold text-slate-900">{t('LineSpacingPage.faqHeading', { modelName })}</h2>
+          <h2 className="text-2xl font-semibold text-slate-900">{modelName} Line Spacing – FAQ</h2>
           <p className="text-slate-700">
-            {t('LineSpacingPage.faqIntro')}
+            Common questions about line spacing and formatting.
           </p>
         </div>
 

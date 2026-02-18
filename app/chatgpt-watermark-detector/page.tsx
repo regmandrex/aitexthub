@@ -1,4 +1,4 @@
-﻿import type { FaqItem } from '@/components/faqData';
+import type { FaqItem } from '@/components/faqData';
 import WatermarkDetectorPage from '@/components/tools/WatermarkDetectorPage';
 import { buildMeta } from '@/lib/seo-meta';
 

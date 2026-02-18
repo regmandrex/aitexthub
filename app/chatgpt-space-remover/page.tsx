@@ -1,4 +1,4 @@
-﻿import type { FaqItem } from '@/components/faqData';
+import type { FaqItem } from '@/components/faqData';
 import SpaceRemoverPage from '@/components/tools/SpaceRemoverPage';
 import { buildMeta } from '@/lib/seo-meta';
 

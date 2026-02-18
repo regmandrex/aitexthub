@@ -11,31 +11,23 @@ import { buildToolMeta } from '@/lib/seo-meta';
 import { getToolBySlug } from '@/lib/tools/registry';
 import { siteUrl } from '@/lib/schema/site';
 import { webPageSchema } from '@/lib/schema/webpage';
-import { getServerLocale } from '@/lib/server-i18n';
-import { createServerT } from '@/lib/server-t';
 
 const toolSlug = 'text-to-hex';
 
 export async function generateMetadata(): Promise<Metadata> {
-  const { locale } = await getServerLocale();
-  const t = await createServerT(locale);
+  
   const toolData = getToolBySlug(toolSlug);
   const toolKey = toolSlug;
   
-  const title = t(`Tools.${toolKey}.title`) !== `Tools.${toolKey}.title` 
-    ? t(`Tools.${toolKey}.title`) 
-    : toolData?.title ?? 'Text to HEX Converter';
-  const description = t(`Tools.${toolKey}.description`) !== `Tools.${toolKey}.description`
-    ? t(`Tools.${toolKey}.description`)
-    : toolData?.shortDescription ?? 'Convert text characters into hexadecimal representation. Supports UTF-8 encoding with uppercase/lowercase and spacing options.';
-  const seoTitle = toolData?.seoTitle ? (t(`Tools.${toolKey}.seoTitle`) !== `Tools.${toolKey}.seoTitle` ? t(`Tools.${toolKey}.seoTitle`) : toolData.seoTitle) : undefined;
+  const title = "Text to HEX Converter";
+  const description = "Convert text characters into hexadecimal representation. Supports UTF-8 encoding with uppercase/lowercase and spacing options.";
+  const seoTitle = undefined;
   
   return buildToolMeta({
     title,
     description,
     seoTitle,
     urlPath: `/${toolSlug}`,
-    locale,
   });
 }
 
@@ -414,18 +406,12 @@ const writeUp = (
 );
 
 export default async function TextToHexPage() {
-  const { locale } = await getServerLocale();
-  const t = await createServerT(locale);
+  
   const toolData = getToolBySlug(toolSlug);
   if (!toolData) return notFound();
 
-  const toolKey = toolSlug;
-  const title = t(`Tools.${toolKey}.title`) !== `Tools.${toolKey}.title` 
-    ? t(`Tools.${toolKey}.title`) 
-    : toolData.title;
-  const description = t(`Tools.${toolKey}.description`) !== `Tools.${toolKey}.description`
-    ? t(`Tools.${toolKey}.description`)
-    : toolData.shortDescription;
+  const title = toolData.title;
+  const description = toolData.shortDescription;
 
   const url = `${siteUrl}/${toolSlug}/`;
   const schemaData = {

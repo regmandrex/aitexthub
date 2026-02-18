@@ -11,31 +11,23 @@ import { buildToolMeta } from '@/lib/seo-meta';
 import { siteUrl } from '@/lib/schema/site';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
-import { getServerLocale } from '@/lib/server-i18n';
-import { createServerT } from '@/lib/server-t';
 
 const toolSlug = 'hex-to-binary';
 
 export async function generateMetadata(): Promise<Metadata> {
-  const { locale } = await getServerLocale();
-  const t = await createServerT(locale);
+  
   const tool = getToolBySlug(toolSlug);
   const toolKey = toolSlug;
   
-  const title = t(`Tools.${toolKey}.title`) !== `Tools.${toolKey}.title` 
-    ? t(`Tools.${toolKey}.title`) 
-    : tool?.title ?? 'Hex to Binary Converter';
-  const description = t(`Tools.${toolKey}.description`) !== `Tools.${toolKey}.description`
-    ? t(`Tools.${toolKey}.description`)
-    : tool?.shortDescription ?? 'Convert hex strings to binary with formatting options.';
-  const seoTitle = tool?.seoTitle ? (t(`Tools.${toolKey}.seoTitle`) !== `Tools.${toolKey}.seoTitle` ? t(`Tools.${toolKey}.seoTitle`) : tool.seoTitle) : undefined;
+  const title = "Hex to Binary Converter";
+  const description = "Convert hex strings to binary with formatting options.";
+  const seoTitle = "Hex to Binary Converter - Fast hex to binary tool";
   
   return buildToolMeta({
     title,
     description,
     seoTitle,
     urlPath: `/${toolSlug}`,
-    locale,
   });
 }
 
@@ -605,18 +597,12 @@ return hex.split('').map((digit) => map[digit.toUpperCase()]).join('');`}</code>
 );
 
 export default async function HexToBinaryPage() {
-  const { locale } = await getServerLocale();
-  const t = await createServerT(locale);
+  
   const toolData = getToolBySlug(toolSlug);
   if (!toolData) return notFound();
 
-  const toolKey = toolSlug;
-  const title = t(`Tools.${toolKey}.title`) !== `Tools.${toolKey}.title` 
-    ? t(`Tools.${toolKey}.title`) 
-    : toolData.title;
-  const description = t(`Tools.${toolKey}.description`) !== `Tools.${toolKey}.description`
-    ? t(`Tools.${toolKey}.description`)
-    : toolData.shortDescription;
+  const title = toolData.title;
+  const description = toolData.shortDescription;
 
   const url = `${siteUrl}/${toolSlug}/`;
   const webAppSchema = {

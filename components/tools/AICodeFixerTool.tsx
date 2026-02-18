@@ -2,7 +2,6 @@
 
 import { useState } from 'react';
 import ToolTextArea from './ToolTextArea';
-import { useI18n } from '@/lib/client-i18n';
 
 // Code fixing functions
 function fixIndentation(text: string): string {
@@ -108,7 +107,6 @@ function fixCommonTypos(text: string): string {
 }
 
 export function AICodeFixerTool() {
-  const { t } = useI18n();
   const [input, setInput] = useState('');
   const [output, setOutput] = useState('');
   const [options, setOptions] = useState({
@@ -163,17 +161,17 @@ export function AICodeFixerTool() {
     <div className="space-y-4">
       <div className="grid gap-4 md:grid-cols-2">
         <ToolTextArea
-          label={t('AICodeFixerPage.ui.inputLabel')}
+          label={"Code Input"}
           value={input}
           onChange={setInput}
-          placeholder={t('AICodeFixerPage.ui.inputPlaceholder')}
+          placeholder={"Paste your AI-generated code here..."}
           rows={12}
         />
         <ToolTextArea
-          label={t('AICodeFixerPage.ui.outputLabel')}
+          label={"Fixed Code"}
           value={output}
           onChange={setOutput}
-          placeholder={t('AICodeFixerPage.ui.outputPlaceholder')}
+          placeholder={"Fixed code will appear here..."}
           rows={12}
           readOnly
         />
@@ -181,7 +179,7 @@ export function AICodeFixerTool() {
 
       <div className="rounded-xl border border-slate-200 bg-slate-50 p-4">
         <h3 className="text-sm font-semibold text-slate-800 mb-3">
-          {t('AICodeFixerPage.ui.optionsTitle')}
+          {"Fix Options"}
         </h3>
         <div className="grid gap-2 md:grid-cols-2">
           <label className="flex items-center gap-2 text-xs font-semibold text-slate-700">
@@ -191,7 +189,7 @@ export function AICodeFixerTool() {
               checked={options.fixIndentation}
               onChange={() => toggleOption('fixIndentation')}
             />
-            {t('AICodeFixerPage.ui.fixIndentation')}
+            {"Fix indentation"}
           </label>
           <label className="flex items-center gap-2 text-xs font-semibold text-slate-700">
             <input
@@ -200,7 +198,7 @@ export function AICodeFixerTool() {
               checked={options.fixQuoteConsistency}
               onChange={() => toggleOption('fixQuoteConsistency')}
             />
-            {t('AICodeFixerPage.ui.fixQuoteConsistency')}
+            {"Fix quote consistency"}
           </label>
           <label className="flex items-center gap-2 text-xs font-semibold text-slate-700">
             <input
@@ -209,7 +207,7 @@ export function AICodeFixerTool() {
               checked={options.fixCommonSyntax}
               onChange={() => toggleOption('fixCommonSyntax')}
             />
-            {t('AICodeFixerPage.ui.fixCommonSyntax')}
+            {"Fix common syntax issues"}
           </label>
           <label className="flex items-center gap-2 text-xs font-semibold text-slate-700">
             <input
@@ -218,7 +216,7 @@ export function AICodeFixerTool() {
               checked={options.fixBracketSpacing}
               onChange={() => toggleOption('fixBracketSpacing')}
             />
-            {t('AICodeFixerPage.ui.fixBracketSpacing')}
+            {"Fix bracket spacing"}
           </label>
           <label className="flex items-center gap-2 text-xs font-semibold text-slate-700">
             <input
@@ -227,7 +225,7 @@ export function AICodeFixerTool() {
               checked={options.removeTrailingSemicolons}
               onChange={() => toggleOption('removeTrailingSemicolons')}
             />
-            {t('AICodeFixerPage.ui.removeTrailingSemicolons')}
+            {"Remove trailing semicolons"}
           </label>
           <label className="flex items-center gap-2 text-xs font-semibold text-slate-700">
             <input
@@ -236,7 +234,7 @@ export function AICodeFixerTool() {
               checked={options.fixCommonTypos}
               onChange={() => toggleOption('fixCommonTypos')}
             />
-            {t('AICodeFixerPage.ui.fixCommonTypos')}
+            {"Fix common typos"}
           </label>
         </div>
       </div>
@@ -247,7 +245,7 @@ export function AICodeFixerTool() {
           onClick={handleFix}
           className="inline-flex items-center justify-center rounded-lg bg-brand-700 px-4 py-2 text-sm font-semibold text-white shadow hover:bg-brand-800"
         >
-          {t('AICodeFixerPage.ui.fixButton')}
+          {"Fix Code"}
         </button>
         <button
           type="button"
@@ -255,14 +253,14 @@ export function AICodeFixerTool() {
           disabled={!output}
           className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50 disabled:bg-slate-100 disabled:text-slate-400"
         >
-          {t('AICodeFixerPage.ui.copyButton')}
+          {"Copy"}
         </button>
         <button
           type="button"
           onClick={handleClear}
           className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
         >
-          {t('AICodeFixerPage.ui.clearButton')}
+          {"Clear"}
         </button>
       </div>
     </div>

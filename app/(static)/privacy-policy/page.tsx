@@ -1,5 +1,4 @@
 import { buildMeta } from '@/lib/seo-meta';
-import { getServerLocale } from '@/lib/server-i18n';
 
 type PrivacyContent = {
   metaTitle: string;
@@ -209,8 +208,7 @@ const CONTENT_BY_LOCALE: Record<string, PrivacyContent> = {
 };
 
 export async function generateMetadata() {
-  const { locale } = await getServerLocale();
-  const content = CONTENT_BY_LOCALE[locale] ?? CONTENT_BY_LOCALE.en;
+  const content = CONTENT_BY_LOCALE.en;
   return buildMeta({
     title: content.metaTitle,
     description: content.metaDescription,
@@ -219,8 +217,7 @@ export async function generateMetadata() {
 }
 
 export default async function PrivacyPolicyPage() {
-  const { locale } = await getServerLocale();
-  const content = CONTENT_BY_LOCALE[locale] ?? CONTENT_BY_LOCALE.en;
+  const content = CONTENT_BY_LOCALE.en;
 
   return (
     <article className="prose max-w-none prose-slate">

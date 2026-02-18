@@ -2,7 +2,6 @@
 
 import { useState } from 'react';
 import ToolTextArea from './ToolTextArea';
-import { useI18n } from '@/lib/client-i18n';
 
 // Code cleaning functions
 function removeTrailingSpaces(text: string): string {
@@ -82,7 +81,6 @@ function cleanOperators(text: string): string {
 }
 
 export function AICodeCleanerTool() {
-  const { t } = useI18n();
   const [input, setInput] = useState('');
   const [output, setOutput] = useState('');
   const [options, setOptions] = useState({
@@ -141,17 +139,17 @@ export function AICodeCleanerTool() {
     <div className="space-y-4">
       <div className="grid gap-4 md:grid-cols-2">
         <ToolTextArea
-          label={t('AICodeCleanerPage.ui.inputLabel')}
+          label={"Code Input"}
           value={input}
           onChange={setInput}
-          placeholder={t('AICodeCleanerPage.ui.inputPlaceholder')}
+          placeholder={"Paste your AI-generated code here..."}
           rows={12}
         />
         <ToolTextArea
-          label={t('AICodeCleanerPage.ui.outputLabel')}
+          label={"Cleaned Code"}
           value={output}
           onChange={setOutput}
-          placeholder={t('AICodeCleanerPage.ui.outputPlaceholder')}
+          placeholder={"Cleaned code will appear here..."}
           rows={12}
           readOnly
         />
@@ -159,7 +157,7 @@ export function AICodeCleanerTool() {
 
       <div className="rounded-xl border border-slate-200 bg-slate-50 p-4">
         <h3 className="text-sm font-semibold text-slate-800 mb-3">
-          {t('AICodeCleanerPage.ui.optionsTitle')}
+          {"Cleaning Options"}
         </h3>
         <div className="grid gap-2 md:grid-cols-2">
           <label className="flex items-center gap-2 text-xs font-semibold text-slate-700">
@@ -169,7 +167,7 @@ export function AICodeCleanerTool() {
               checked={options.removeTrailingSpaces}
               onChange={() => toggleOption('removeTrailingSpaces')}
             />
-            {t('AICodeCleanerPage.ui.removeTrailingSpaces')}
+            {"Remove trailing spaces"}
           </label>
           <label className="flex items-center gap-2 text-xs font-semibold text-slate-700">
             <input
@@ -178,7 +176,7 @@ export function AICodeCleanerTool() {
               checked={options.normalizeIndentation}
               onChange={() => toggleOption('normalizeIndentation')}
             />
-            {t('AICodeCleanerPage.ui.normalizeIndentation')}
+            {"Normalize indentation (2 spaces)"}
           </label>
           <label className="flex items-center gap-2 text-xs font-semibold text-slate-700">
             <input
@@ -187,7 +185,7 @@ export function AICodeCleanerTool() {
               checked={options.removeZeroWidth}
               onChange={() => toggleOption('removeZeroWidth')}
             />
-            {t('AICodeCleanerPage.ui.removeZeroWidth')}
+            {"Remove zero-width characters"}
           </label>
           <label className="flex items-center gap-2 text-xs font-semibold text-slate-700">
             <input
@@ -196,7 +194,7 @@ export function AICodeCleanerTool() {
               checked={options.normalizeLineEndings}
               onChange={() => toggleOption('normalizeLineEndings')}
             />
-            {t('AICodeCleanerPage.ui.normalizeLineEndings')}
+            {"Normalize line endings (Unix style)"}
           </label>
           <label className="flex items-center gap-2 text-xs font-semibold text-slate-700">
             <input
@@ -205,7 +203,7 @@ export function AICodeCleanerTool() {
               checked={options.removeExtraBlankLines}
               onChange={() => toggleOption('removeExtraBlankLines')}
             />
-            {t('AICodeCleanerPage.ui.removeExtraBlankLines')}
+            {"Remove extra blank lines"}
           </label>
           <label className="flex items-center gap-2 text-xs font-semibold text-slate-700">
             <input
@@ -214,7 +212,7 @@ export function AICodeCleanerTool() {
               checked={options.normalizeWhitespace}
               onChange={() => toggleOption('normalizeWhitespace')}
             />
-            {t('AICodeCleanerPage.ui.normalizeWhitespace')}
+            {"Normalize whitespace"}
           </label>
           <label className="flex items-center gap-2 text-xs font-semibold text-slate-700">
             <input
@@ -223,7 +221,7 @@ export function AICodeCleanerTool() {
               checked={options.cleanOperators}
               onChange={() => toggleOption('cleanOperators')}
             />
-            {t('AICodeCleanerPage.ui.cleanOperators')}
+            {"Clean operator spacing"}
           </label>
         </div>
       </div>
@@ -234,7 +232,7 @@ export function AICodeCleanerTool() {
           onClick={handleClean}
           className="inline-flex items-center justify-center rounded-lg bg-brand-700 px-4 py-2 text-sm font-semibold text-white shadow hover:bg-brand-800"
         >
-          {t('AICodeCleanerPage.ui.cleanButton')}
+          {"Clean Code"}
         </button>
         <button
           type="button"
@@ -242,14 +240,14 @@ export function AICodeCleanerTool() {
           disabled={!output}
           className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50 disabled:bg-slate-100 disabled:text-slate-400"
         >
-          {t('AICodeCleanerPage.ui.copyButton')}
+          {"Copy"}
         </button>
         <button
           type="button"
           onClick={handleClear}
           className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
         >
-          {t('AICodeCleanerPage.ui.clearButton')}
+          {"Clear"}
         </button>
       </div>
     </div>

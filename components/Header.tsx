@@ -3,27 +3,22 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import { useState } from 'react';
-import { useI18n, useLocale } from '../lib/client-i18n';
-import { addLocaleToPath } from '../lib/i18n';
-import LanguageSwitcher from './LanguageSwitcher';
 
-const navLinkKeys = [
-  { href: '/', key: 'Nav.home' },
-  { href: '/all-tools', key: 'Nav.tools' },
+const navLinks = [
+  { href: '/', label: 'Home' },
+  { href: '/ai-tools', label: 'Free AI Tools' },
 ];
 
 export default function Header() {
   const [open, setOpen] = useState(false);
-  const { t } = useI18n();
-  const locale = useLocale();
 
   return (
     <header className="relative z-40 border-b border-slate-200 bg-white/80 backdrop-blur">
       <div className="relative mx-auto flex max-w-5xl items-center justify-between px-4 py-4 md:px-1">
-        <Link href={addLocaleToPath('/', locale)} className="flex items-center">
+        <Link href="/" className="flex items-center">
           <Image
             src="/brand/gpt-clean-up-tools.png"
-            alt={t('Nav.logoAlt')}
+            alt="GPT Clean Up Tools"
             width={200}
             height={56}
             className="h-[52px] w-auto"
@@ -31,11 +26,10 @@ export default function Header() {
           />
         </Link>
         <div className="flex items-center gap-4">
-          <LanguageSwitcher />
           <button
             className="inline-flex items-center justify-center rounded-lg p-2 text-slate-600 hover:bg-slate-100 md:hidden"
             onClick={() => setOpen((prev) => !prev)}
-            aria-label={t('Nav.toggleNavigation')}
+            aria-label="Toggle navigation"
             aria-expanded={open}
             aria-controls="mobile-nav"
           >
@@ -48,9 +42,9 @@ export default function Header() {
             </svg>
           </button>
           <nav className="hidden items-center gap-6 text-sm font-medium text-slate-700 md:flex">
-            {navLinkKeys.map((link) => (
-              <Link key={link.href} href={addLocaleToPath(link.href, locale)} className="hover:text-brand-700">
-                {t(link.key)}
+            {navLinks.map((link) => (
+              <Link key={link.href} href={link.href} className="hover:text-brand-700">
+                {link.label}
               </Link>
             ))}
           </nav>
@@ -59,14 +53,14 @@ export default function Header() {
       {open ? (
         <div id="mobile-nav" className="border-t border-slate-200 bg-white px-4 py-3 md:hidden">
           <nav className="flex flex-col gap-3 text-sm font-medium text-slate-700">
-            {navLinkKeys.map((link) => (
+            {navLinks.map((link) => (
               <Link
                 key={link.href}
-                href={addLocaleToPath(link.href, locale)}
+                href={link.href}
                 className="rounded-lg px-2 py-2 hover:bg-slate-100"
                 onClick={() => setOpen(false)}
               >
-                {t(link.key)}
+                {link.label}
               </Link>
             ))}
           </nav>

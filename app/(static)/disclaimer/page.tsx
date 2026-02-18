@@ -1,14 +1,11 @@
 import { buildMeta } from '@/lib/seo-meta';
-import { getServerLocale } from '@/lib/server-i18n';
 import type { Metadata } from 'next';
 
 export async function generateMetadata(): Promise<Metadata> {
-  const { locale } = await getServerLocale();
   return buildMeta({
     title: 'Disclaimer - GPTCLEANUP AI Text Tools Terms',
     description: 'Disclaimer for GPTCLEANUP AI tools.',
     urlPath: '/disclaimer',
-    locale,
   });
 }
 

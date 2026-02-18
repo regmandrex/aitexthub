@@ -58,8 +58,6 @@ import { ChatGPTResumeHumanizerTool } from '@/components/tools/ChatGPTResumeHuma
 import { ChatGPTLinkedInRewriterTool } from '@/components/tools/ChatGPTLinkedInRewriterTool';
 import { ChatGPTPressReleasePolisherTool } from '@/components/tools/ChatGPTPressReleasePolisherTool';
 import { getToolBySlug } from '@/lib/tools/registry';
-import { getServerLocale } from '@/lib/server-i18n';
-import { createServerT } from '@/lib/server-t';
 import { siteUrl } from '@/lib/schema/site';
 import { webPageSchema } from '@/lib/schema/webpage';
 
@@ -132,21 +130,10 @@ const uiComponentMap: Record<string, React.ComponentType> = {
 export async function ToolPageRenderer({ slug }: ToolPageRendererProps) {
   const tool = getToolBySlug(slug);
   if (!tool) return notFound();
-  const { locale } = await getServerLocale();
-  const t = await createServerT(locale);
-  const resolveToolText = (field: 'title' | 'description' | 'seoTitle'): string => {
-    const slugKey = tool.slug === '' ? 'home' : tool.slug;
-    const key = `Tools.${slugKey}.${field}`;
-    const translated = t(key);
-    if (translated !== key) return translated;
-    if (field === 'title') return tool.title;
-    if (field === 'description') return tool.shortDescription;
-    return tool.seoTitle || tool.title;
-  };
   const displayTool = {
     ...tool,
-    title: resolveToolText('title'),
-    shortDescription: resolveToolText('description'),
+    title: tool.title,
+    shortDescription: tool.shortDescription,
   };
 
   // Get UI component - try slug first (for ChatGPT tools and others with specific components)
@@ -163,9 +150,9 @@ export async function ToolPageRenderer({ slug }: ToolPageRendererProps) {
 
   const disclaimers =
     tool.content?.disclaimers ?? [
-      t('ToolPage.disclaimer1'),
-      t('ToolPage.disclaimer2'),
-      t('ToolPage.disclaimer3'),
+      'This tool processes text locally in your browser. No data is sent to external servers.',
+      'Results are provided as-is. Always review output before using in production.',
+      'This tool is for general use. Verify results match your specific requirements.',
     ];
 
   const url = `${siteUrl}/${tool.slug}/`;
@@ -198,7 +185,7 @@ export async function ToolPageRenderer({ slug }: ToolPageRendererProps) {
           {tool.content?.faq && tool.content.faq.length > 0 ? (
             <>
               <section className="mt-10 space-y-4">
-                <h2 className="text-xl font-semibold text-slate-900">{t('ToolPage.faqTitle')}</h2>
+                <h2 className="text-xl font-semibold text-slate-900">Frequently Asked Questions</h2>
                 <div className="space-y-3">
                   {tool.content.faq.map((item, idx) => (
                     <div key={idx} className="rounded-lg border border-slate-200 bg-white p-4 shadow-sm">
@@ -219,7 +206,7 @@ export async function ToolPageRenderer({ slug }: ToolPageRendererProps) {
           ) : null}
 
           <section className="mt-10 space-y-2">
-            <h2 className="text-base font-semibold text-slate-900">{t('ToolPage.disclaimersTitle')}</h2>
+            <h2 className="text-base font-semibold text-slate-900">Disclaimers</h2>
             <ul className="space-y-1 text-sm text-slate-700">
               {disclaimers.map((line, idx) => (
                 <li key={idx}>&bull; {line}</li>

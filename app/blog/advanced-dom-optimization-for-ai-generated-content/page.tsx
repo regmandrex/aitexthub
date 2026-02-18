@@ -3,7 +3,6 @@ import { buildArticleMeta } from '@/lib/seo-meta';
 import { JsonLd } from '@/components/JsonLd';
 import { blogPostingSchema } from '@/lib/schema/blog';
 import AdSenseSlot from '../../../components/ads/AdSenseSlot';
-import { getServerLocale } from '@/lib/server-i18n';
 import type { Metadata } from 'next';
 
 const urlPath = '/blog/advanced-dom-optimization-for-ai-generated-content';
@@ -13,13 +12,11 @@ const description =
   'Learn how AI-generated text can bloat the DOM, hurt LCP/CLS/INP, and how to reduce node count and layout work without sacrificing SEO.';
 
 export async function generateMetadata(): Promise<Metadata> {
-  const { locale } = await getServerLocale();
   return buildArticleMeta({
     title,
     description,
     urlPath,
-    locale,
-  });
+    });
 }
 
 export default function AdvancedDomOptimizationAiContentPage() {

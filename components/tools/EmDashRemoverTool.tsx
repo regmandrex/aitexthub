@@ -2,12 +2,23 @@
 
 import { useState } from 'react';
 import ToolTextArea from './ToolTextArea';
-import { useI18n } from '@/lib/client-i18n';
 
 const DASH_REGEX = /\s*[\u2013\u2014\u2015]\s*/g;
 
+const LABELS = {
+  inputLabel: 'Input text',
+  inputPlaceholder: 'Paste or type text here…',
+  outputLabel: 'Output',
+  outputPlaceholder: 'Processed text appears here.',
+  replacementLabel: 'Replacement',
+  replacementPlaceholder: ' e.g. " - " or space',
+  collapseSpacesLabel: 'Collapse multiple spaces',
+  replaceButton: 'Replace dashes',
+  copyButton: 'Copy',
+  clearButton: 'Clear',
+};
+
 export function EmDashRemoverTool() {
-  const { t } = useI18n();
   const [input, setInput] = useState('');
   const [output, setOutput] = useState('');
   const [replacement, setReplacement] = useState(' - ');
@@ -35,17 +46,17 @@ export function EmDashRemoverTool() {
     <div className="space-y-4">
       <div className="grid gap-4 md:grid-cols-2">
         <ToolTextArea
-          label={t('EmDashRemoverPage.ui.inputLabel')}
+          label={LABELS.inputLabel}
           value={input}
           onChange={setInput}
-          placeholder={t('EmDashRemoverPage.ui.inputPlaceholder')}
+          placeholder={LABELS.inputPlaceholder}
           rows={12}
         />
         <ToolTextArea
-          label={t('EmDashRemoverPage.ui.outputLabel')}
+          label={LABELS.outputLabel}
           value={output}
           onChange={setOutput}
-          placeholder={t('EmDashRemoverPage.ui.outputPlaceholder')}
+          placeholder={LABELS.outputPlaceholder}
           rows={12}
           readOnly
         />
@@ -53,13 +64,13 @@ export function EmDashRemoverTool() {
 
       <div className="grid gap-3 md:grid-cols-2">
         <label className="space-y-1 text-sm font-semibold text-slate-700">
-          {t('EmDashRemoverPage.ui.replacementLabel')}
+          {"Replacement text (leave blank for a space)"}
           <input
             type="text"
             value={replacement}
             onChange={(event) => setReplacement(event.target.value)}
             className="w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm font-normal text-slate-800 shadow-sm focus:border-brand-300 focus:outline-none focus:ring-2 focus:ring-brand-100"
-            placeholder={t('EmDashRemoverPage.ui.replacementPlaceholder')}
+            placeholder={LABELS.replacementPlaceholder}
           />
         </label>
         <label className="flex items-center gap-2 text-sm font-semibold text-slate-700">
@@ -69,7 +80,7 @@ export function EmDashRemoverTool() {
             checked={collapseSpaces}
             onChange={() => setCollapseSpaces((prev) => !prev)}
           />
-          {t('EmDashRemoverPage.ui.collapseSpacesLabel')}
+          {LABELS.collapseSpacesLabel}
         </label>
       </div>
 
@@ -79,21 +90,21 @@ export function EmDashRemoverTool() {
           onClick={handleProcess}
           className="inline-flex items-center justify-center rounded-lg bg-brand-700 px-4 py-2 text-sm font-semibold text-white shadow hover:bg-brand-800"
         >
-          {t('EmDashRemoverPage.ui.replaceButton')}
+          {LABELS.replaceButton}
         </button>
         <button
           type="button"
           onClick={handleCopy}
           className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
         >
-          {t('EmDashRemoverPage.ui.copyButton')}
+          {LABELS.copyButton}
         </button>
         <button
           type="button"
           onClick={handleClear}
           className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
         >
-          {t('EmDashRemoverPage.ui.clearButton')}
+          {LABELS.clearButton}
         </button>
       </div>
     </div>

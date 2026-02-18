@@ -2,7 +2,43 @@
 
 import { useMemo, useState } from 'react';
 import ToolTextArea from './ToolTextArea';
-import { useI18n } from '@/lib/client-i18n';
+
+const LABELS = {
+  errorEnterItems: 'Enter at least one item (one per line).',
+  errorSizeRange: 'Size must be between 1 and 10.',
+  errorSizeTooLarge: 'Size cannot exceed number of items.',
+  errorFullPermutationLimit: 'Full permutation is limited to 10 items.',
+  itemsLabel: 'Items (one per line)',
+  itemsPlaceholder: 'Enter items, one per line...',
+  permutationSizeLabel: 'Permutation size',
+  permutationSizePlaceholder: 'Leave empty for all',
+  permutationSizeHint: '1–10, or empty to use all items.',
+  prefixLabel: 'Prefix',
+  prefixPlaceholder: 'Optional text before each result',
+  prefixHint: 'Added to the start of each permutation.',
+  suffixLabel: 'Suffix',
+  suffixPlaceholder: 'Optional text after each result',
+  suffixHint: 'Added to the end of each permutation.',
+  delimiterLabel: 'Delimiter',
+  delimiterPlaceholder: 'e.g. ", " or " | "',
+  delimiterHint: 'Separator between items in each result. \\n = newline.',
+  joinSetsLabel: 'Join results with',
+  joinSetsPlaceholder: 'e.g. \\n',
+  joinSetsHint: 'Separator between results when copying/downloading.',
+  infoTitle: 'Summary',
+  itemsCount: 'Items',
+  sizeLabel: 'Size',
+  sizeAll: 'all',
+  totalPermutations: 'Total permutations',
+  generateButton: 'Generate',
+  loadSampleButton: 'Load sample',
+  clearButton: 'Clear',
+  resultsTitle: 'Results',
+  permutationsLabel: 'permutations',
+  copyAllButton: 'Copy all',
+  downloadButton: 'Download',
+  copyButton: 'Copy',
+};
 
 // Generate all permutations of size r from array
 function generatePermutations<T>(arr: T[], r: number): T[][] {
@@ -53,7 +89,6 @@ function clampNumber(value: number, min: number, max: number): number {
 }
 
 export function PermutationGeneratorTool() {
-  const { t } = useI18n();
   const [input, setInput] = useState('');
   const [size, setSize] = useState('');
   const [prefix, setPrefix] = useState('');
@@ -76,19 +111,19 @@ export function PermutationGeneratorTool() {
   const errors = useMemo(() => {
     const errs: { input?: string; size?: string } = {};
     if (items.length === 0) {
-      errs.input = t('PermutationGeneratorPage.ui.errorEnterItems');
+      errs.input = LABELS.errorEnterItems;
     }
     if (size !== '' && (sizeValue < 1 || sizeValue > 10)) {
-      errs.size = t('PermutationGeneratorPage.ui.errorSizeRange');
+      errs.size = LABELS.errorSizeRange;
     }
     if (size !== '' && sizeValue > items.length) {
-      errs.size = t('PermutationGeneratorPage.ui.errorSizeTooLarge', { count: items.length });
+      errs.size = `Size cannot exceed ${items.length} items.`;
     }
     if (items.length > 10 && size === '') {
-      errs.input = t('PermutationGeneratorPage.ui.errorFullPermutationLimit');
+      errs.input = LABELS.errorFullPermutationLimit;
     }
     return errs;
-  }, [items.length, size, sizeValue, t]);
+  }, [items.length, size, sizeValue]);
 
   // Replace \x with newline, \t with tab, etc.
   const processSpecialChars = (text: string): string => {
@@ -161,13 +196,13 @@ export function PermutationGeneratorTool() {
       <div className="grid gap-4 md:grid-cols-2">
         <div className="space-y-2">
           <label className="text-sm font-semibold text-slate-800" htmlFor="perm-input">
-            {t('PermutationGeneratorPage.ui.itemsLabel')}
+            {LABELS.itemsLabel}
           </label>
           <textarea
             id="perm-input"
             value={input}
             onChange={(e) => setInput(e.target.value)}
-            placeholder={t('PermutationGeneratorPage.ui.itemsPlaceholder')}
+            placeholder={LABELS.itemsPlaceholder}
             rows={10}
             className="w-full rounded-xl border border-slate-200 bg-white px-3 py-3 text-sm text-slate-800 shadow-sm outline-none transition focus:border-brand-300 focus:ring-2 focus:ring-brand-100"
           />
@@ -176,7 +211,7 @@ export function PermutationGeneratorTool() {
         <div className="space-y-4">
           <div className="space-y-2">
             <label className="text-sm font-semibold text-slate-800" htmlFor="perm-size">
-              {t('PermutationGeneratorPage.ui.permutationSizeLabel')}
+              {LABELS.permutationSizeLabel}
             </label>
             <input
               id="perm-size"
@@ -185,78 +220,78 @@ export function PermutationGeneratorTool() {
               max={10}
               value={size}
               onChange={(e) => setSize(e.target.value)}
-              placeholder={t('PermutationGeneratorPage.ui.permutationSizePlaceholder')}
+              placeholder={LABELS.permutationSizePlaceholder}
               className="w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm text-slate-700 shadow-sm focus:border-brand-300 focus:outline-none focus:ring-2 focus:ring-brand-100"
             />
             <p className="text-xs text-slate-500">
-              {t('PermutationGeneratorPage.ui.permutationSizeHint')}
+              {LABELS.permutationSizeHint}
             </p>
             {errors.size ? <p className="text-xs font-semibold text-rose-600">{errors.size}</p> : null}
           </div>
           <div className="space-y-2">
             <label className="text-sm font-semibold text-slate-800" htmlFor="perm-prefix">
-              {t('PermutationGeneratorPage.ui.prefixLabel')}
+              {LABELS.prefixLabel}
             </label>
             <input
               id="perm-prefix"
               type="text"
               value={prefix}
               onChange={(e) => setPrefix(e.target.value)}
-              placeholder={t('PermutationGeneratorPage.ui.prefixPlaceholder')}
+              placeholder={LABELS.prefixPlaceholder}
               className="w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm text-slate-700 shadow-sm focus:border-brand-300 focus:outline-none focus:ring-2 focus:ring-brand-100"
             />
-            <p className="text-xs text-slate-500">{t('PermutationGeneratorPage.ui.prefixHint')}</p>
+            <p className="text-xs text-slate-500">{LABELS.prefixHint}</p>
           </div>
           <div className="space-y-2">
             <label className="text-sm font-semibold text-slate-800" htmlFor="perm-suffix">
-              {t('PermutationGeneratorPage.ui.suffixLabel')}
+              {LABELS.suffixLabel}
             </label>
             <input
               id="perm-suffix"
               type="text"
               value={suffix}
               onChange={(e) => setSuffix(e.target.value)}
-              placeholder={t('PermutationGeneratorPage.ui.suffixPlaceholder')}
+              placeholder={LABELS.suffixPlaceholder}
               className="w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm text-slate-700 shadow-sm focus:border-brand-300 focus:outline-none focus:ring-2 focus:ring-brand-100"
             />
-            <p className="text-xs text-slate-500">{t('PermutationGeneratorPage.ui.suffixHint')}</p>
+            <p className="text-xs text-slate-500">{LABELS.suffixHint}</p>
           </div>
           <div className="space-y-2">
             <label className="text-sm font-semibold text-slate-800" htmlFor="perm-delimiter">
-              {t('PermutationGeneratorPage.ui.delimiterLabel')}
+              {LABELS.delimiterLabel}
             </label>
             <input
               id="perm-delimiter"
               type="text"
               value={delimiter}
               onChange={(e) => setDelimiter(e.target.value)}
-              placeholder={t('PermutationGeneratorPage.ui.delimiterPlaceholder')}
+              placeholder={LABELS.delimiterPlaceholder}
               className="w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm text-slate-700 shadow-sm focus:border-brand-300 focus:outline-none focus:ring-2 focus:ring-brand-100"
             />
-            <p className="text-xs text-slate-500">{t('PermutationGeneratorPage.ui.delimiterHint')}</p>
+            <p className="text-xs text-slate-500">{LABELS.delimiterHint}</p>
           </div>
           <div className="space-y-2">
             <label className="text-sm font-semibold text-slate-800" htmlFor="perm-join">
-              {t('PermutationGeneratorPage.ui.joinSetsLabel')}
+              {LABELS.joinSetsLabel}
             </label>
             <input
               id="perm-join"
               type="text"
               value={joinSets}
               onChange={(e) => setJoinSets(e.target.value)}
-              placeholder={t('PermutationGeneratorPage.ui.joinSetsPlaceholder')}
+              placeholder={LABELS.joinSetsPlaceholder}
               className="w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm text-slate-700 shadow-sm focus:border-brand-300 focus:outline-none focus:ring-2 focus:ring-brand-100"
             />
-            <p className="text-xs text-slate-500">{t('PermutationGeneratorPage.ui.joinSetsHint')}</p>
+            <p className="text-xs text-slate-500">{LABELS.joinSetsHint}</p>
           </div>
           <div className="rounded-xl border border-slate-200 bg-slate-50 p-4">
-            <h3 className="text-sm font-semibold text-slate-800">{t('PermutationGeneratorPage.ui.infoTitle')}</h3>
+            <h3 className="text-sm font-semibold text-slate-800">{LABELS.infoTitle}</h3>
             <p className="mt-2 text-xs text-slate-600">
-              {t('PermutationGeneratorPage.ui.itemsCount')}: {items.length}
+              {LABELS.itemsCount}: {items.length}
               <br />
-              {t('PermutationGeneratorPage.ui.sizeLabel')}: {actualSize === items.length ? t('PermutationGeneratorPage.ui.sizeAll') : actualSize}
+              {LABELS.sizeLabel}: {actualSize === items.length ? LABELS.sizeAll : actualSize}
               <br />
-              {t('PermutationGeneratorPage.ui.totalPermutations')}: {totalPermutations.toLocaleString()}
+              {LABELS.totalPermutations}: {totalPermutations.toLocaleString()}
             </p>
           </div>
         </div>
@@ -269,21 +304,21 @@ export function PermutationGeneratorTool() {
           disabled={!!errors.input || !!errors.size || items.length === 0}
           className="inline-flex items-center justify-center rounded-lg bg-brand-700 px-4 py-2 text-sm font-semibold text-white shadow hover:bg-brand-800 disabled:bg-slate-300 disabled:cursor-not-allowed"
         >
-          {t('PermutationGeneratorPage.ui.generateButton')}
+          {LABELS.generateButton}
         </button>
         <button
           type="button"
           onClick={handleSample}
           className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
         >
-          {t('PermutationGeneratorPage.ui.loadSampleButton')}
+          {LABELS.loadSampleButton}
         </button>
         <button
           type="button"
           onClick={handleClear}
           className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
         >
-          {t('PermutationGeneratorPage.ui.clearButton')}
+          {LABELS.clearButton}
         </button>
       </div>
 
@@ -291,7 +326,7 @@ export function PermutationGeneratorTool() {
         <div className="space-y-3">
           <div className="flex items-center justify-between">
             <h3 className="text-sm font-semibold text-slate-800">
-              {t('PermutationGeneratorPage.ui.resultsTitle')} ({results.length.toLocaleString()} {t('PermutationGeneratorPage.ui.permutationsLabel')})
+              {LABELS.resultsTitle} ({results.length.toLocaleString()} {LABELS.permutationsLabel})
             </h3>
             <div className="flex gap-2">
               <button
@@ -299,14 +334,14 @@ export function PermutationGeneratorTool() {
                 onClick={handleCopyAll}
                 className="text-xs font-semibold text-brand-700 hover:text-brand-800"
               >
-                {t('PermutationGeneratorPage.ui.copyAllButton')}
+                {LABELS.copyAllButton}
               </button>
               <button
                 type="button"
                 onClick={handleDownload}
                 className="text-xs font-semibold text-brand-700 hover:text-brand-800"
               >
-                {t('PermutationGeneratorPage.ui.downloadButton')}
+                {LABELS.downloadButton}
               </button>
             </div>
           </div>
@@ -323,7 +358,7 @@ export function PermutationGeneratorTool() {
                     onClick={() => handleCopy(result)}
                     className="text-xs font-semibold text-brand-700 hover:text-brand-800"
                   >
-                    {t('PermutationGeneratorPage.ui.copyButton')}
+                    {LABELS.copyButton}
                   </button>
                 </div>
               ))}

@@ -11,7 +11,6 @@ import { siteUrl } from '../../lib/schema/site';
 import { RelatedTools } from '../tool/RelatedTools';
 import AdSenseSlot from '../ads/AdSenseSlot';
 import BelowToolAd from '../ads/BelowToolAd';
-import { useI18n } from '../../lib/client-i18n';
 
 type Props = {
   modelName: string;
@@ -34,12 +33,9 @@ function RailAd({ side }: { side: 'left' | 'right' }) {
 }
 
 export default function WatermarkDetectorPage({ modelName, modelSlug, faqItems, content, faqIntro }: Props) {
-  const { t } = useI18n();
   const url = `${siteUrl}/${modelSlug}-watermark-detector/`;
-  const titleKey = t('WatermarkDetectorPage.title', { modelName });
-  const title = titleKey !== 'WatermarkDetectorPage.title' ? titleKey : `${modelName} Watermark Detector`;
-  const subtitleKey = t('WatermarkDetectorPage.subtitle');
-  const subtitle = subtitleKey !== 'WatermarkDetectorPage.subtitle' ? subtitleKey : 'Scan text for formatting artifacts like hidden Unicode characters, whitespace patterns, and repeated punctuation marks.';
+  const title = `${modelName} Watermark Detector`;
+  const subtitle = 'Scan text for formatting artifacts like hidden Unicode characters, whitespace patterns, and repeated punctuation marks.';
   const description = `Inspect ${modelName} text for possible formatting artifacts, hidden Unicode, and whitespace patterns.`;
 
   return (
@@ -72,29 +68,29 @@ export default function WatermarkDetectorPage({ modelName, modelSlug, faqItems, 
         ) : (
           <section className="space-y-6 mt-10">
             <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 space-y-4">
-              <h2 className="text-xl font-semibold text-slate-900">{t('WatermarkDetectorPage.howItWorks')}</h2>
+              <h2 className="text-xl font-semibold text-slate-900">How it works</h2>
               <ul className="list-disc list-inside space-y-1 text-slate-700">
-                <li>{t('WatermarkDetectorPage.howItWorks1')}</li>
-                <li>{t('WatermarkDetectorPage.howItWorks2')}</li>
-                <li>{t('WatermarkDetectorPage.howItWorks3')}</li>
+                <li>Scans for hidden Unicode (e.g. zero-width spaces, non-breaking spaces).</li>
+                <li>Highlights irregular spacing and repeated punctuation.</li>
+                <li>Reports structural patterns; does not determine authorship.</li>
               </ul>
             </div>
             <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 space-y-4">
-              <h2 className="text-xl font-semibold text-slate-900">{t('WatermarkDetectorPage.whatCanCant')}</h2>
+              <h2 className="text-xl font-semibold text-slate-900">What it can / can&apos;t do</h2>
               <ul className="list-disc list-inside space-y-1 text-slate-700">
-                <li>{t('WatermarkDetectorPage.whatCanCant1')}</li>
-                <li>{t('WatermarkDetectorPage.whatCanCant2')}</li>
-                <li>{t('WatermarkDetectorPage.whatCanCant3')}</li>
-                <li>{t('WatermarkDetectorPage.whatCanCant4')}</li>
+                <li>Can highlight formatting artifacts and hidden characters.</li>
+                <li>Cannot confirm authorship or AI origin.</li>
+                <li>Not a bypass tool; for analysis and cleanup only.</li>
+                <li>Review output and use responsibly.</li>
               </ul>
             </div>
           </section>
         )}
 
         <div className="mt-10 space-y-3">
-          <h2 className="text-2xl font-semibold text-slate-900">{t('WatermarkDetectorPage.faqHeading', { modelName })}</h2>
+          <h2 className="text-2xl font-semibold text-slate-900">{modelName} Watermark Detector – FAQ</h2>
           <p className="text-slate-700">
-            {faqIntro ?? t('WatermarkDetectorPage.faqIntroDefault')}
+            {faqIntro ?? 'Common questions about watermark detection and text analysis.'}
           </p>
         </div>
 

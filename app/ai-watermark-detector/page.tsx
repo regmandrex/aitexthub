@@ -1,8 +1,6 @@
 import type { FaqItem } from '@/components/faqData';
 import WatermarkDetectorPage from '@/components/tools/WatermarkDetectorPage';
 import { buildMeta } from '@/lib/seo-meta';
-import { getServerLocale } from '@/lib/server-i18n';
-import { createServerT } from '@/lib/server-t';
 
 const modelName = 'AI';
 const modelSlug = 'ai';
@@ -621,16 +619,12 @@ const writeUp = (
 );
 
 export async function generateMetadata() {
-  const { locale } = await getServerLocale();
-  const t = await createServerT(locale);
-  const title = t('WatermarkDetectorPage.title', { modelName: 'AI' });
-  const description = t('WatermarkDetectorPage.subtitle');
-  
+  const title = 'AI Watermark Detector';
+  const description = 'Scan text for hidden Unicode, spacing patterns, and structural signals commonly seen in AI-era content.';
   return buildMeta({
     title: `${title} - ${description}`,
-    description: description || 'Scan text for hidden Unicode, spacing patterns, and structural signals commonly seen in AI-era content.',
+    description,
     urlPath: '/ai-watermark-detector',
-    locale,
   });
 }
 

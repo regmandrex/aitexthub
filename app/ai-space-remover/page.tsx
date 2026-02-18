@@ -1,8 +1,6 @@
 import type { FaqItem } from '@/components/faqData';
 import SpaceRemoverPage from '@/components/tools/SpaceRemoverPage';
 import { buildMeta } from '@/lib/seo-meta';
-import { getServerLocale } from '@/lib/server-i18n';
-import { createServerT } from '@/lib/server-t';
 
 const modelName = 'AI';
 const modelSlug = 'ai';
@@ -655,18 +653,12 @@ const writeUp = (
 );
 
 export async function generateMetadata() {
-  const { locale } = await getServerLocale();
-  const t = await createServerT(locale);
-  const titleRaw = t('SpaceRemoverPage.title', { modelName });
-  const title = titleRaw !== 'SpaceRemoverPage.title' ? titleRaw : `${modelName} Space Remover`;
-  const descRaw = t('SpaceRemoverPage.subtitle');
-  const description = descRaw !== 'SpaceRemoverPage.subtitle' ? descRaw : 'Remove extra spaces, normalize whitespace, and clean pasted AI-era text for editing and publishing.';
-
+  const title = `${modelName} Space Remover - Remove extra spaces, hidden Unicode, and irregular spacing from AI-generated text.`;
+  const description = 'Remove extra spaces and tidy lines for clean, paste-ready text.';
   return buildMeta({
-    title: `${title} - ${t('Tools.ai-space-remover.description')}`,
+    title,
     description,
     urlPath: '/ai-space-remover',
-    locale,
   });
 }
 

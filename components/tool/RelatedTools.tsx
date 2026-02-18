@@ -2,7 +2,6 @@
 
 import ToolCard from '../ToolCard';
 import { getAllTools, getToolBySlug } from '@/lib/tools/registry';
-import { useI18n } from '@/lib/client-i18n';
 
 type RelatedToolsProps = {
   currentSlug: string;
@@ -19,7 +18,6 @@ export function RelatedTools({
   maxItems = 8,
   showModeTools = true,
 }: RelatedToolsProps) {
-  const { t } = useI18n();
   const tools = getAllTools();
   const currentTool = getToolBySlug(currentSlug);
 
@@ -50,18 +48,14 @@ export function RelatedTools({
     return null;
   }
 
-  const modelLabel = currentTool.model ?? t('RelatedTools.defaultModel');
-  const modeLabel = currentTool.modeLabel ?? t('RelatedTools.defaultMode');
+  const modelLabel = currentTool.model ?? 'AI';
+  const modeLabel = currentTool.modeLabel ?? 'Tool';
   const modeHeading =
     currentTool.mode === 'watermark-cleaner'
-      ? t('RelatedTools.otherWatermarkTools')
-      : t('RelatedTools.otherModeTools', { mode: modeLabel });
-  const modelHeading = t('RelatedTools.otherModelTools', { model: modelLabel });
+      ? 'Other Watermark Tools'
+      : `Other ${modeLabel} Tools`;
+  const modelHeading = `Other ${modelLabel} Tools`;
   const resolveToolText = (tool: { slug: string; title: string; shortDescription: string }, field: 'title' | 'description') => {
-    const slugKey = tool.slug === '' ? 'home' : tool.slug;
-    const key = `Tools.${slugKey}.${field === 'title' ? 'title' : 'description'}`;
-    const translated = t(key);
-    if (translated !== key) return translated;
     return field === 'title' ? tool.title : tool.shortDescription;
   };
 
@@ -79,7 +73,7 @@ export function RelatedTools({
                 title={resolveToolText(tool, 'title')}
                 description={resolveToolText(tool, 'description')}
                 href={buildToolHref(tool.slug)}
-                ctaLabel={t('ToolCard.openTool')}
+                ctaLabel="Open Tool →"
               />
             ))}
           </div>
@@ -98,7 +92,7 @@ export function RelatedTools({
                 title={resolveToolText(tool, 'title')}
                 description={resolveToolText(tool, 'description')}
                 href={buildToolHref(tool.slug)}
-                ctaLabel={t('ToolCard.openTool')}
+                ctaLabel="Open Tool →"
               />
             ))}
           </div>

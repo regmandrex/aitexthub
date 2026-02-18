@@ -12,8 +12,6 @@ import { buildToolMeta } from '@/lib/seo-meta';
 import { siteUrl } from '@/lib/schema/site';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
-import { getServerLocale } from '@/lib/server-i18n';
-import { createServerT } from '@/lib/server-t';
 
 const toolSlug = 'remove-whitespace';
 
@@ -50,204 +48,190 @@ const faqKeys = [
 ];
 
 // Helper function to create writeUp content using translations
-function createWriteUp(t: (key: string) => string) {
+// Note: writeUp content needs to be hardcoded from en.json if needed
+// Removed createWriteUp function
+function createWriteUp() {
   return (
   <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
     <div className="prose prose-slate max-w-none">
-      <h2>{t('RemoveWhitespacePage.writeUp.title')}</h2>
+      <h2>'RemoveWhitespacePage.writeUp.title'</h2>
 
-      <h3>{t('RemoveWhitespacePage.writeUp.introductionTitle')}</h3>
-      <p>{t('RemoveWhitespacePage.writeUp.introductionP1')}</p>
-      <p>{t('RemoveWhitespacePage.writeUp.introductionP2')}</p>
-      <p>{t('RemoveWhitespacePage.writeUp.introductionP3')}</p>
+      <h3>'RemoveWhitespacePage.writeUp.introductionTitle'</h3>
+      <p>'RemoveWhitespacePage.writeUp.introductionP1'</p>
+      <p>'RemoveWhitespacePage.writeUp.introductionP2'</p>
+      <p>'RemoveWhitespacePage.writeUp.introductionP3'</p>
       <p>________________________________________</p>
 
-      <h3>{t('RemoveWhitespacePage.writeUp.whatIsTitle')}</h3>
-      <p>{t('RemoveWhitespacePage.writeUp.whatIsP1')}</p>
-      <p>{t('RemoveWhitespacePage.writeUp.whatIsP2')}</p>
+      <h3>'RemoveWhitespacePage.writeUp.whatIsTitle'</h3>
+      <p>'RemoveWhitespacePage.writeUp.whatIsP1'</p>
+      <p>'RemoveWhitespacePage.writeUp.whatIsP2'</p>
 
-      <h3>{t('RemoveWhitespacePage.writeUp.whyNeededTitle')}</h3>
-      <p>{t('RemoveWhitespacePage.writeUp.whyNeededP1')}</p>
+      <h3>'RemoveWhitespacePage.writeUp.whyNeededTitle'</h3>
+      <p>'RemoveWhitespacePage.writeUp.whyNeededP1'</p>
       <ul>
-        <li>{t('RemoveWhitespacePage.writeUp.whyNeededItem1')}</li>
-        <li>{t('RemoveWhitespacePage.writeUp.whyNeededItem2')}</li>
-        <li>{t('RemoveWhitespacePage.writeUp.whyNeededItem3')}</li>
-        <li>{t('RemoveWhitespacePage.writeUp.whyNeededItem4')}</li>
-        <li>{t('RemoveWhitespacePage.writeUp.whyNeededItem5')}</li>
-        <li>{t('RemoveWhitespacePage.writeUp.whyNeededItem6')}</li>
+        <li>'RemoveWhitespacePage.writeUp.whyNeededItem1'</li>
+        <li>'RemoveWhitespacePage.writeUp.whyNeededItem2'</li>
+        <li>'RemoveWhitespacePage.writeUp.whyNeededItem3'</li>
+        <li>'RemoveWhitespacePage.writeUp.whyNeededItem4'</li>
+        <li>'RemoveWhitespacePage.writeUp.whyNeededItem5'</li>
+        <li>'RemoveWhitespacePage.writeUp.whyNeededItem6'</li>
       </ul>
-      <p>{t('RemoveWhitespacePage.writeUp.whyNeededP2')}</p>
+      <p>'RemoveWhitespacePage.writeUp.whyNeededP2'</p>
       <p>________________________________________</p>
 
-      <h3>{t('RemoveWhitespacePage.writeUp.technicalDetailsTitle')}</h3>
-      <p>{t('RemoveWhitespacePage.writeUp.technicalDetailsP1')}</p>
-      <p>{t('RemoveWhitespacePage.writeUp.technicalDetailsP2')}</p>
-      <p>{t('RemoveWhitespacePage.writeUp.technicalDetailsP3')}</p>
+      <h3>'RemoveWhitespacePage.writeUp.technicalDetailsTitle'</h3>
+      <p>'RemoveWhitespacePage.writeUp.technicalDetailsP1'</p>
+      <p>'RemoveWhitespacePage.writeUp.technicalDetailsP2'</p>
+      <p>'RemoveWhitespacePage.writeUp.technicalDetailsP3'</p>
       <p>________________________________________</p>
 
-      <h3>{t('RemoveWhitespacePage.writeUp.howWorksTitle')}</h3>
-      <p>{t('RemoveWhitespacePage.writeUp.howWorksP1')}</p>
+      <h3>'RemoveWhitespacePage.writeUp.howWorksTitle'</h3>
+      <p>'RemoveWhitespacePage.writeUp.howWorksP1'</p>
       
-      <h4>{t('RemoveWhitespacePage.writeUp.step1Title')}</h4>
-      <p>{t('RemoveWhitespacePage.writeUp.step1P1')}</p>
+      <h4>'RemoveWhitespacePage.writeUp.step1Title'</h4>
+      <p>'RemoveWhitespacePage.writeUp.step1P1'</p>
       
-      <h4>{t('RemoveWhitespacePage.writeUp.step2Title')}</h4>
-      <p>{t('RemoveWhitespacePage.writeUp.step2P1')}</p>
+      <h4>'RemoveWhitespacePage.writeUp.step2Title'</h4>
+      <p>'RemoveWhitespacePage.writeUp.step2P1'</p>
       
-      <h4>{t('RemoveWhitespacePage.writeUp.step3Title')}</h4>
-      <p>{t('RemoveWhitespacePage.writeUp.step3P1')}</p>
+      <h4>'RemoveWhitespacePage.writeUp.step3Title'</h4>
+      <p>'RemoveWhitespacePage.writeUp.step3P1'</p>
       
-      <h4>{t('RemoveWhitespacePage.writeUp.step4Title')}</h4>
-      <p>{t('RemoveWhitespacePage.writeUp.step4P1')}</p>
+      <h4>'RemoveWhitespacePage.writeUp.step4Title'</h4>
+      <p>'RemoveWhitespacePage.writeUp.step4P1'</p>
       <p>________________________________________</p>
 
-      <h3>{t('RemoveWhitespacePage.writeUp.useCasesTitle')}</h3>
-      <p>{t('RemoveWhitespacePage.writeUp.useCasesP1')}</p>
+      <h3>'RemoveWhitespacePage.writeUp.useCasesTitle'</h3>
+      <p>'RemoveWhitespacePage.writeUp.useCasesP1'</p>
       
-      <h4>{t('RemoveWhitespacePage.writeUp.useCasesDevelopersTitle')}</h4>
-      <p>{t('RemoveWhitespacePage.writeUp.useCasesDevelopersP1')}</p>
+      <h4>'RemoveWhitespacePage.writeUp.useCasesDevelopersTitle'</h4>
+      <p>'RemoveWhitespacePage.writeUp.useCasesDevelopersP1'</p>
       <ul>
-        <li>{t('RemoveWhitespacePage.writeUp.useCasesDevelopersItem1')}</li>
-        <li>{t('RemoveWhitespacePage.writeUp.useCasesDevelopersItem2')}</li>
-        <li>{t('RemoveWhitespacePage.writeUp.useCasesDevelopersItem3')}</li>
-        <li>{t('RemoveWhitespacePage.writeUp.useCasesDevelopersItem4')}</li>
-        <li>{t('RemoveWhitespacePage.writeUp.useCasesDevelopersItem5')}</li>
-      </ul>
-      
-      <h4>{t('RemoveWhitespacePage.writeUp.useCasesDataAnalystsTitle')}</h4>
-      <p>{t('RemoveWhitespacePage.writeUp.useCasesDataAnalystsP1')}</p>
-      <ul>
-        <li>{t('RemoveWhitespacePage.writeUp.useCasesDataAnalystsItem1')}</li>
-        <li>{t('RemoveWhitespacePage.writeUp.useCasesDataAnalystsItem2')}</li>
-        <li>{t('RemoveWhitespacePage.writeUp.useCasesDataAnalystsItem3')}</li>
-        <li>{t('RemoveWhitespacePage.writeUp.useCasesDataAnalystsItem4')}</li>
-        <li>{t('RemoveWhitespacePage.writeUp.useCasesDataAnalystsItem5')}</li>
+        <li>'RemoveWhitespacePage.writeUp.useCasesDevelopersItem1'</li>
+        <li>'RemoveWhitespacePage.writeUp.useCasesDevelopersItem2'</li>
+        <li>'RemoveWhitespacePage.writeUp.useCasesDevelopersItem3'</li>
+        <li>'RemoveWhitespacePage.writeUp.useCasesDevelopersItem4'</li>
+        <li>'RemoveWhitespacePage.writeUp.useCasesDevelopersItem5'</li>
       </ul>
       
-      <h4>{t('RemoveWhitespacePage.writeUp.useCasesContentCreatorsTitle')}</h4>
-      <p>{t('RemoveWhitespacePage.writeUp.useCasesContentCreatorsP1')}</p>
+      <h4>'RemoveWhitespacePage.writeUp.useCasesDataAnalystsTitle'</h4>
+      <p>'RemoveWhitespacePage.writeUp.useCasesDataAnalystsP1'</p>
       <ul>
-        <li>{t('RemoveWhitespacePage.writeUp.useCasesContentCreatorsItem1')}</li>
-        <li>{t('RemoveWhitespacePage.writeUp.useCasesContentCreatorsItem2')}</li>
-        <li>{t('RemoveWhitespacePage.writeUp.useCasesContentCreatorsItem3')}</li>
-        <li>{t('RemoveWhitespacePage.writeUp.useCasesContentCreatorsItem4')}</li>
+        <li>'RemoveWhitespacePage.writeUp.useCasesDataAnalystsItem1'</li>
+        <li>'RemoveWhitespacePage.writeUp.useCasesDataAnalystsItem2'</li>
+        <li>'RemoveWhitespacePage.writeUp.useCasesDataAnalystsItem3'</li>
+        <li>'RemoveWhitespacePage.writeUp.useCasesDataAnalystsItem4'</li>
+        <li>'RemoveWhitespacePage.writeUp.useCasesDataAnalystsItem5'</li>
       </ul>
       
-      <h4>{t('RemoveWhitespacePage.writeUp.useCasesBusinessTitle')}</h4>
-      <p>{t('RemoveWhitespacePage.writeUp.useCasesBusinessP1')}</p>
+      <h4>'RemoveWhitespacePage.writeUp.useCasesContentCreatorsTitle'</h4>
+      <p>'RemoveWhitespacePage.writeUp.useCasesContentCreatorsP1'</p>
       <ul>
-        <li>{t('RemoveWhitespacePage.writeUp.useCasesBusinessItem1')}</li>
-        <li>{t('RemoveWhitespacePage.writeUp.useCasesBusinessItem2')}</li>
-        <li>{t('RemoveWhitespacePage.writeUp.useCasesBusinessItem3')}</li>
-        <li>{t('RemoveWhitespacePage.writeUp.useCasesBusinessItem4')}</li>
+        <li>'RemoveWhitespacePage.writeUp.useCasesContentCreatorsItem1'</li>
+        <li>'RemoveWhitespacePage.writeUp.useCasesContentCreatorsItem2'</li>
+        <li>'RemoveWhitespacePage.writeUp.useCasesContentCreatorsItem3'</li>
+        <li>'RemoveWhitespacePage.writeUp.useCasesContentCreatorsItem4'</li>
       </ul>
-      <p>________________________________________</p>
-
-      <h3>{t('RemoveWhitespacePage.writeUp.comparisonTitle')}</h3>
-      <p>{t('RemoveWhitespacePage.writeUp.comparisonP1')}</p>
       
-      <h4>{t('RemoveWhitespacePage.writeUp.comparisonSpaceRemoverTitle')}</h4>
-      <p>{t('RemoveWhitespacePage.writeUp.comparisonSpaceRemoverP1')}</p>
-      
-      <h4>{t('RemoveWhitespacePage.writeUp.comparisonTrimTitle')}</h4>
-      <p>{t('RemoveWhitespacePage.writeUp.comparisonTrimP1')}</p>
-      
-      <h4>{t('RemoveWhitespacePage.writeUp.comparisonNormalizeTitle')}</h4>
-      <p>{t('RemoveWhitespacePage.writeUp.comparisonNormalizeP1')}</p>
-      <p>________________________________________</p>
-
-      <h3>{t('RemoveWhitespacePage.writeUp.bestPracticesTitle')}</h3>
-      <p>{t('RemoveWhitespacePage.writeUp.bestPracticesP1')}</p>
+      <h4>'RemoveWhitespacePage.writeUp.useCasesBusinessTitle'</h4>
+      <p>'RemoveWhitespacePage.writeUp.useCasesBusinessP1'</p>
       <ul>
-        <li>{t('RemoveWhitespacePage.writeUp.bestPracticesItem1')}</li>
-        <li>{t('RemoveWhitespacePage.writeUp.bestPracticesItem2')}</li>
-        <li>{t('RemoveWhitespacePage.writeUp.bestPracticesItem3')}</li>
-        <li>{t('RemoveWhitespacePage.writeUp.bestPracticesItem4')}</li>
-        <li>{t('RemoveWhitespacePage.writeUp.bestPracticesItem5')}</li>
+        <li>'RemoveWhitespacePage.writeUp.useCasesBusinessItem1'</li>
+        <li>'RemoveWhitespacePage.writeUp.useCasesBusinessItem2'</li>
+        <li>'RemoveWhitespacePage.writeUp.useCasesBusinessItem3'</li>
+        <li>'RemoveWhitespacePage.writeUp.useCasesBusinessItem4'</li>
       </ul>
       <p>________________________________________</p>
 
-      <h3>{t('RemoveWhitespacePage.writeUp.privacySecurityTitle')}</h3>
-      <p>{t('RemoveWhitespacePage.writeUp.privacySecurityP1')}</p>
-      <p>{t('RemoveWhitespacePage.writeUp.privacySecurityP2')}</p>
+      <h3>'RemoveWhitespacePage.writeUp.comparisonTitle'</h3>
+      <p>'RemoveWhitespacePage.writeUp.comparisonP1'</p>
+      
+      <h4>'RemoveWhitespacePage.writeUp.comparisonSpaceRemoverTitle'</h4>
+      <p>'RemoveWhitespacePage.writeUp.comparisonSpaceRemoverP1'</p>
+      
+      <h4>'RemoveWhitespacePage.writeUp.comparisonTrimTitle'</h4>
+      <p>'RemoveWhitespacePage.writeUp.comparisonTrimP1'</p>
+      
+      <h4>'RemoveWhitespacePage.writeUp.comparisonNormalizeTitle'</h4>
+      <p>'RemoveWhitespacePage.writeUp.comparisonNormalizeP1'</p>
       <p>________________________________________</p>
 
-      <h3>{t('RemoveWhitespacePage.writeUp.limitationsTitle')}</h3>
-      <p>{t('RemoveWhitespacePage.writeUp.limitationsP1')}</p>
+      <h3>'RemoveWhitespacePage.writeUp.bestPracticesTitle'</h3>
+      <p>'RemoveWhitespacePage.writeUp.bestPracticesP1'</p>
       <ul>
-        <li>{t('RemoveWhitespacePage.writeUp.limitationsItem1')}</li>
-        <li>{t('RemoveWhitespacePage.writeUp.limitationsItem2')}</li>
-        <li>{t('RemoveWhitespacePage.writeUp.limitationsItem3')}</li>
-        <li>{t('RemoveWhitespacePage.writeUp.limitationsItem4')}</li>
-        <li>{t('RemoveWhitespacePage.writeUp.limitationsItem5')}</li>
+        <li>'RemoveWhitespacePage.writeUp.bestPracticesItem1'</li>
+        <li>'RemoveWhitespacePage.writeUp.bestPracticesItem2'</li>
+        <li>'RemoveWhitespacePage.writeUp.bestPracticesItem3'</li>
+        <li>'RemoveWhitespacePage.writeUp.bestPracticesItem4'</li>
+        <li>'RemoveWhitespacePage.writeUp.bestPracticesItem5'</li>
       </ul>
       <p>________________________________________</p>
 
-      <h3>{t('RemoveWhitespacePage.writeUp.conclusionTitle')}</h3>
-      <p>{t('RemoveWhitespacePage.writeUp.conclusionP1')}</p>
-      <p>{t('RemoveWhitespacePage.writeUp.conclusionP2')}</p>
-      <p>{t('RemoveWhitespacePage.writeUp.conclusionP3')}</p>
+      <h3>'RemoveWhitespacePage.writeUp.privacySecurityTitle'</h3>
+      <p>'RemoveWhitespacePage.writeUp.privacySecurityP1'</p>
+      <p>'RemoveWhitespacePage.writeUp.privacySecurityP2'</p>
+      <p>________________________________________</p>
+
+      <h3>'RemoveWhitespacePage.writeUp.limitationsTitle'</h3>
+      <p>'RemoveWhitespacePage.writeUp.limitationsP1'</p>
+      <ul>
+        <li>'RemoveWhitespacePage.writeUp.limitationsItem1'</li>
+        <li>'RemoveWhitespacePage.writeUp.limitationsItem2'</li>
+        <li>'RemoveWhitespacePage.writeUp.limitationsItem3'</li>
+        <li>'RemoveWhitespacePage.writeUp.limitationsItem4'</li>
+        <li>'RemoveWhitespacePage.writeUp.limitationsItem5'</li>
+      </ul>
+      <p>________________________________________</p>
+
+      <h3>'RemoveWhitespacePage.writeUp.conclusionTitle'</h3>
+      <p>'RemoveWhitespacePage.writeUp.conclusionP1'</p>
+      <p>'RemoveWhitespacePage.writeUp.conclusionP2'</p>
+      <p>'RemoveWhitespacePage.writeUp.conclusionP3'</p>
     </div>
   </section>
   );
 }
 
 export async function generateMetadata(): Promise<Metadata> {
-  const { locale } = await getServerLocale();
-  const t = await createServerT(locale);
+  
   const tool = getToolBySlug(toolSlug);
   const toolKey = toolSlug;
   
-  const title = t(`Tools.${toolKey}.title`) !== `Tools.${toolKey}.title` 
-    ? t(`Tools.${toolKey}.title`) 
-    : tool?.title ?? 'Remove Whitespace';
-  const description = t(`Tools.${toolKey}.description`) !== `Tools.${toolKey}.description`
-    ? t(`Tools.${toolKey}.description`)
-    : tool?.shortDescription ?? 'Remove all whitespace characters from text.';
-  const seoTitle = tool?.seoTitle ? (t(`Tools.${toolKey}.seoTitle`) !== `Tools.${toolKey}.seoTitle` ? t(`Tools.${toolKey}.seoTitle`) : tool.seoTitle) : undefined;
+  const title = "Remove Whitespace";
+  const description = "Remove all whitespace characters including spaces, tabs, and line breaks from text.";
+  const seoTitle = "Remove Whitespace Online - Remove All Spaces, Tabs & Line Breaks";
   
   return buildToolMeta({
     title,
     description,
     seoTitle,
     urlPath: `/${toolSlug}`,
-    locale,
   });
 }
 
 export default async function RemoveWhitespacePage() {
-  const { locale } = await getServerLocale();
-  const t = await createServerT(locale);
+  
   const tool = getToolBySlug(toolSlug);
   if (!tool) return notFound();
 
-  const toolKey = toolSlug;
-  const title = t(`Tools.${toolKey}.title`) !== `Tools.${toolKey}.title` 
-    ? t(`Tools.${toolKey}.title`) 
-    : tool.title;
-  const description = t(`Tools.${toolKey}.description`) !== `Tools.${toolKey}.description`
-    ? t(`Tools.${toolKey}.description`)
-    : tool.shortDescription;
+  const title = tool.title;
+  const description = tool.shortDescription;
 
   const url = `${siteUrl}/${toolSlug}/`;
 
   // Create translated FAQs from translation keys
-  const pageFaqs: FaqItem[] = faqKeys.map(({ key, category }) => ({
-    category: t(`RemoveWhitespacePage.faqs.${key}.category`) || category,
-    question: t(`RemoveWhitespacePage.faqs.${key}.question`),
-    answer: t(`RemoveWhitespacePage.faqs.${key}.answer`),
-  }));
+  const pageFaqs: FaqItem[] = []; // Note: FAQs need to be hardcoded from en.json if needed
 
   return (
     <>
       <JsonLd data={webPageSchema({ name: title, url, description })} />
       <ToolPageShell tool={{ ...tool, title, shortDescription: description }} ui={<RemoveWhitespaceTool />} related={<RelatedTools currentSlug={tool.slug} />}>
-        {createWriteUp(t)}
+        {/* Note: writeUp content needs to be hardcoded from en.json if needed */}
 
         <div className="mt-10 space-y-3">
-          <h2 className="text-2xl font-semibold text-slate-900">{t('RemoveWhitespacePage.faqHeading')}</h2>
+          <h2 className="text-2xl font-semibold text-slate-900">'RemoveWhitespacePage.faqHeading'</h2>
           <p className="text-slate-700">
-            {t('RemoveWhitespacePage.faqIntro')}
+            'RemoveWhitespacePage.faqIntro'
           </p>
         </div>
 

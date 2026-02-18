@@ -2,10 +2,22 @@
 
 import { useMemo, useState } from 'react';
 import ToolTextArea from './ToolTextArea';
-import { useI18n } from '@/lib/client-i18n';
+
+const LABELS = {
+  inputLabel: 'Input text',
+  inputPlaceholder: 'Paste or type text here…',
+  countsLabel: 'Counts',
+  wordsLabel: 'Words',
+  charactersLabel: 'Characters',
+  charactersNoSpacesLabel: 'Characters (no spaces)',
+  linesLabel: 'Lines',
+  sentencesLabel: 'Sentences',
+  paragraphsLabel: 'Paragraphs',
+  copyReport: 'Copy report',
+  clear: 'Clear',
+};
 
 export function WordCounterTool() {
-  const { t } = useI18n();
   const [input, setInput] = useState('');
 
   const stats = useMemo(() => {
@@ -34,37 +46,37 @@ export function WordCounterTool() {
 
   const handleCopy = () => {
     const report = [
-      `${t('WordCounterPage.ui.wordsLabel')}: ${stats.words}`,
-      `${t('WordCounterPage.ui.charactersLabel')}: ${stats.characters}`,
-      `${t('WordCounterPage.ui.charactersNoSpacesLabel')}: ${stats.charactersNoSpaces}`,
-      `${t('WordCounterPage.ui.linesLabel')}: ${stats.lines}`,
-      `${t('WordCounterPage.ui.sentencesLabel')}: ${stats.sentences}`,
-      `${t('WordCounterPage.ui.paragraphsLabel')}: ${stats.paragraphs}`,
+      `${LABELS.wordsLabel}: ${stats.words}`,
+      `${LABELS.charactersLabel}: ${stats.characters}`,
+      `${LABELS.charactersNoSpacesLabel}: ${stats.charactersNoSpaces}`,
+      `${LABELS.linesLabel}: ${stats.lines}`,
+      `${LABELS.sentencesLabel}: ${stats.sentences}`,
+      `${LABELS.paragraphsLabel}: ${stats.paragraphs}`,
     ].join('\n');
     navigator.clipboard.writeText(report);
   };
 
   const statCards = useMemo(() => [
-    { label: t('WordCounterPage.ui.wordsLabel'), value: stats.words },
-    { label: t('WordCounterPage.ui.charactersLabel'), value: stats.characters },
-    { label: t('WordCounterPage.ui.charactersNoSpacesLabel'), value: stats.charactersNoSpaces },
-    { label: t('WordCounterPage.ui.linesLabel'), value: stats.lines },
-    { label: t('WordCounterPage.ui.sentencesLabel'), value: stats.sentences },
-    { label: t('WordCounterPage.ui.paragraphsLabel'), value: stats.paragraphs },
-  ], [stats, t]);
+    { label: LABELS.wordsLabel, value: stats.words },
+    { label: LABELS.charactersLabel, value: stats.characters },
+    { label: LABELS.charactersNoSpacesLabel, value: stats.charactersNoSpaces },
+    { label: LABELS.linesLabel, value: stats.lines },
+    { label: LABELS.sentencesLabel, value: stats.sentences },
+    { label: LABELS.paragraphsLabel, value: stats.paragraphs },
+  ], [stats]);
 
   return (
     <div className="space-y-4">
       <div className="grid gap-4 md:grid-cols-2">
         <ToolTextArea
-          label={t('WordCounterPage.ui.inputLabel')}
+          label={LABELS.inputLabel}
           value={input}
           onChange={setInput}
-          placeholder={t('WordCounterPage.ui.inputPlaceholder')}
+          placeholder={LABELS.inputPlaceholder}
           rows={12}
         />
         <div className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
-          <h3 className="text-sm font-semibold text-slate-800">{t('WordCounterPage.ui.countsLabel')}</h3>
+          <h3 className="text-sm font-semibold text-slate-800">{LABELS.countsLabel}</h3>
           <div className="mt-3 grid gap-3 sm:grid-cols-2">
             {statCards.map((card) => (
               <div key={card.label} className="rounded-lg border border-slate-200 bg-slate-50 px-3 py-2">
@@ -82,14 +94,14 @@ export function WordCounterTool() {
           onClick={handleCopy}
           className="inline-flex items-center justify-center rounded-lg bg-brand-700 px-4 py-2 text-sm font-semibold text-white shadow hover:bg-brand-800"
         >
-          {t('WordCounterPage.ui.copyStatsButton')}
+          {LABELS.copyReport}
         </button>
         <button
           type="button"
           onClick={handleClear}
           className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
         >
-          {t('WordCounterPage.ui.clearButton')}
+          {LABELS.clear}
         </button>
       </div>
     </div>

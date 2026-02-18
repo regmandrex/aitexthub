@@ -1,45 +1,39 @@
 import { buildMeta } from '@/lib/seo-meta';
-import { getServerLocale } from '@/lib/server-i18n';
-import { createServerT } from '@/lib/server-t';
 
 export async function generateMetadata() {
-  const { locale } = await getServerLocale();
-  const t = await createServerT(locale);
-  
   return buildMeta({
-    title: t('TermsPage.metaTitle'),
-    description: t('TermsPage.metaDescription'),
+    title: 'Terms of Service - GPTCLEANUP AI',
+    description: 'Terms of Service for GPTCLEANUP AI tools.',
     urlPath: '/terms-of-service',
   });
 }
 
 export default async function TermsOfServicePage() {
-  const { locale } = await getServerLocale();
-  const t = await createServerT(locale);
+  
   
   return (
     <article className="prose max-w-none prose-slate">
-      <h1>{t('TermsPage.title')}</h1>
-      <p>{t('TermsPage.lastUpdated')}</p>
-      <p>{t('TermsPage.intro')}</p>
+      <h1>'TermsPage.title'</h1>
+      <p>'TermsPage.lastUpdated'</p>
+      <p>'TermsPage.intro'</p>
 
-      <h2>{t('TermsPage.section1Title')}</h2>
-      <p>{t('TermsPage.section1Text')}</p>
+      <h2>'TermsPage.section1Title'</h2>
+      <p>'TermsPage.section1Text'</p>
 
-      <h2>{t('TermsPage.section2Title')}</h2>
-      <p>{t('TermsPage.section2Text1')}</p>
-      <p>{t('TermsPage.section2Text2')}</p>
+      <h2>'TermsPage.section2Title'</h2>
+      <p>'TermsPage.section2Text1'</p>
+      <p>'TermsPage.section2Text2'</p>
 
-      <h2>{t('TermsPage.section3Title')}</h2>
-      <p>{t('TermsPage.section3Text1')}</p>
-      <p>{t('TermsPage.section3Text2')}</p>
+      <h2>'TermsPage.section3Title'</h2>
+      <p>'TermsPage.section3Text1'</p>
+      <p>'TermsPage.section3Text2'</p>
       <ul>
-        <li>{t('TermsPage.section3Item1')}</li>
-        <li>{t('TermsPage.section3Item2')}</li>
-        <li>{t('TermsPage.section3Item3')}</li>
-        <li>{t('TermsPage.section3Item4')}</li>
-        <li>{t('TermsPage.section3Item5')}</li>
-        <li>{t('TermsPage.section3Item6')}</li>
+        <li>'TermsPage.section3Item1'</li>
+        <li>'TermsPage.section3Item2'</li>
+        <li>'TermsPage.section3Item3'</li>
+        <li>'TermsPage.section3Item4'</li>
+        <li>'TermsPage.section3Item5'</li>
+        <li>'TermsPage.section3Item6'</li>
       </ul>
 
       <h2>4. User Content</h2>

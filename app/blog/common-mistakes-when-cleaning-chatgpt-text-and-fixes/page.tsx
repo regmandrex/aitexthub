@@ -3,7 +3,6 @@ import { buildArticleMeta } from '@/lib/seo-meta';
 import { JsonLd } from '@/components/JsonLd';
 import { blogPostingSchema } from '@/lib/schema/blog';
 import AdSenseSlot from '../../../components/ads/AdSenseSlot';
-import { getServerLocale } from '@/lib/server-i18n';
 import type { Metadata } from 'next';
 
 const urlPath = '/blog/common-mistakes-when-cleaning-chatgpt-text-and-fixes';
@@ -13,13 +12,11 @@ const description =
   'Avoid the most common AI text cleanup mistakes (cleaning after formatting, ignoring invisible Unicode, using paraphrasers) and use a repeatable, SEO-safe workflow.';
 
 export async function generateMetadata(): Promise<Metadata> {
-  const { locale } = await getServerLocale();
   return buildArticleMeta({
     title,
     description,
     urlPath,
-    locale,
-  });
+    });
 }
 
 export default function CommonMistakesCleaningChatGPTTextPage() {

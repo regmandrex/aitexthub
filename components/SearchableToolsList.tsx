@@ -3,7 +3,6 @@
 import { useState, useMemo, useCallback } from 'react';
 import type { Tool } from '@/lib/tools/registry';
 import ToolCard from '@/components/ToolCard';
-import { useI18n } from '@/lib/client-i18n';
 
 const CATEGORY_ORDER: Array<string> = [
   'ai-cleanup',
@@ -19,50 +18,50 @@ const CATEGORY_ORDER: Array<string> = [
   'professional',
 ];
 
-const CATEGORY_KEYS: Record<string, { titleKey: string; descriptionKey: string }> = {
+const CATEGORY_LABELS: Record<string, { title: string; description: string }> = {
   'ai-cleanup': {
-    titleKey: 'AllTools.categories.ai-cleanup.title',
-    descriptionKey: 'AllTools.categories.ai-cleanup.description',
+    title: 'AI Tools',
+    description: 'AI detection tools, humanizers, cleaners, and model-specific utilities for AI-generated text.',
   },
   text: {
-    titleKey: 'AllTools.categories.text.title',
-    descriptionKey: 'AllTools.categories.text.description',
+    title: 'Text Tools',
+    description: 'General cleanup and formatting helpers for tightening up your writing.',
   },
   encoding: {
-    titleKey: 'AllTools.categories.encoding.title',
-    descriptionKey: 'AllTools.categories.encoding.description',
+    title: 'Encoding & Decoding',
+    description: 'Encode, decode, or translate text for safe transport and display.',
   },
   'data-format': {
-    titleKey: 'AllTools.categories.data-format.title',
-    descriptionKey: 'AllTools.categories.data-format.description',
+    title: 'Data Format Converters',
+    description: 'Flip between JSON, XML, Markdown, and HTML representations.',
   },
   'number-systems': {
-    titleKey: 'AllTools.categories.number-systems.title',
-    descriptionKey: 'AllTools.categories.number-systems.description',
+    title: 'Number Systems & Logic',
+    description: 'Base conversions, XOR, and related helpers for precise numeric formatting.',
   },
   'color-css': {
-    titleKey: 'AllTools.categories.color-css.title',
-    descriptionKey: 'AllTools.categories.color-css.description',
+    title: 'Color & CSS Converters',
+    description: 'HEX, RGB, rem, and px converters for styling and design work.',
   },
   generator: {
-    titleKey: 'AllTools.categories.generator.title',
-    descriptionKey: 'AllTools.categories.generator.description',
+    title: 'Generators',
+    description: 'Generate combinations, permutations, SEO content, and random data.',
   },
   academic: {
-    titleKey: 'AllTools.categories.academic.title',
-    descriptionKey: 'AllTools.categories.academic.description',
+    title: 'Academic Tools',
+    description: 'Essay checkers, thesis validators, research paper tools, and academic writing helpers.',
   },
   writing: {
-    titleKey: 'AllTools.categories.writing.title',
-    descriptionKey: 'AllTools.categories.writing.description',
+    title: 'Writing Tools',
+    description: 'Grammar checkers, readability analyzers, tone analyzers, and writing style tools.',
   },
   seo: {
-    titleKey: 'AllTools.categories.seo.title',
-    descriptionKey: 'AllTools.categories.seo.description',
+    title: 'SEO Tools',
+    description: 'Meta description generators, title tag generators, alt text generators, and SEO utilities.',
   },
   professional: {
-    titleKey: 'AllTools.categories.professional.title',
-    descriptionKey: 'AllTools.categories.professional.description',
+    title: 'Professional Tools',
+    description: 'Resume humanizers, cover letter tools, email humanizers, and professional content helpers.',
   },
 };
 
@@ -72,17 +71,12 @@ type SearchableToolsListProps = {
 
 export default function SearchableToolsList({ tools }: SearchableToolsListProps) {
   const [searchQuery, setSearchQuery] = useState('');
-  const { t } = useI18n();
 
   const resolveToolText = useCallback(
     (tool: Tool, field: 'title' | 'description') => {
-    const slugKey = tool.slug === '' ? 'home' : tool.slug;
-    const key = `Tools.${slugKey}.${field === 'title' ? 'title' : 'description'}`;
-    const translated = t(key);
-    if (translated !== key) return translated;
-    return field === 'title' ? tool.title : tool.shortDescription;
+      return field === 'title' ? tool.title : tool.shortDescription;
     },
-    [t]
+    []
   );
 
   // Filter tools based on search query
@@ -137,7 +131,7 @@ export default function SearchableToolsList({ tools }: SearchableToolsListProps)
           </div>
           <input
             type="text"
-            placeholder={t('AllTools.searchPlaceholder')}
+            placeholder="Search tools..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             className={`w-full pl-10 py-3 rounded-xl border border-slate-200 bg-white shadow-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent text-sm md:text-base text-slate-900 placeholder-slate-400 ${
@@ -148,7 +142,7 @@ export default function SearchableToolsList({ tools }: SearchableToolsListProps)
             <button
               onClick={() => setSearchQuery('')}
               className="absolute inset-y-0 right-0 flex items-center pr-3 text-slate-400 hover:text-slate-600 transition-colors"
-              aria-label={t('AllTools.clearSearch')}
+              aria-label="Clear search"
             >
               <svg
                 className="w-5 h-5"
@@ -169,7 +163,7 @@ export default function SearchableToolsList({ tools }: SearchableToolsListProps)
         </div>
         {searchQuery && (
           <p className="mt-2 text-sm text-slate-600">
-            {t('AllTools.foundCountTemplate', { count: filteredTools.length, query: searchQuery })}
+            {`Found ${filteredTools.length} tools matching "${searchQuery}"`}
           </p>
         )}
       </div>
@@ -177,8 +171,8 @@ export default function SearchableToolsList({ tools }: SearchableToolsListProps)
       {/* Tools List */}
       {filteredTools.length === 0 ? (
         <div className="text-center py-12">
-          <p className="text-slate-600 text-lg">{t('AllTools.noResultsTitleTemplate', { query: searchQuery })}</p>
-          <p className="text-slate-500 text-sm mt-2">{t('AllTools.noResultsHint')}</p>
+          <p className="text-slate-600 text-lg">{`No tools found matching "${searchQuery}"`}</p>
+          <p className="text-slate-500 text-sm mt-2">Try a different search term</p>
         </div>
       ) : (
         CATEGORY_ORDER.map((category) => {
@@ -186,9 +180,9 @@ export default function SearchableToolsList({ tools }: SearchableToolsListProps)
           if (!items?.length) {
             return null;
           }
-          const configKeys = CATEGORY_KEYS[category];
-          const title = configKeys ? t(configKeys.titleKey) : t('AllTools.otherToolsTitle');
-          const description = configKeys ? t(configKeys.descriptionKey) : '';
+          const labels = CATEGORY_LABELS[category];
+          const title = labels?.title ?? 'Other Tools';
+          const description = labels?.description ?? '';
 
           return (
             <section key={category} className="space-y-4">
@@ -203,7 +197,7 @@ export default function SearchableToolsList({ tools }: SearchableToolsListProps)
                     title={resolveToolText(tool, 'title')}
                     description={resolveToolText(tool, 'description')}
                     href={tool.slug === '' ? '/' : `/${tool.slug}`}
-                    ctaLabel={t('ToolCard.openTool')}
+                    ctaLabel="Open Tool →"
                   />
                 ))}
               </div>

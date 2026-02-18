@@ -2,10 +2,21 @@
 
 import { useState } from 'react';
 import ToolTextArea from './ToolTextArea';
-import { useI18n } from '@/lib/client-i18n';
+
+const LABELS = {
+  inputLabel: 'Input text',
+  inputPlaceholder: 'Paste or type text here…',
+  outputLabel: 'Output',
+  outputPlaceholder: 'Joined text appears here.',
+  preserveParagraphs: 'Preserve paragraph breaks',
+  replaceWithSpace: 'Replace line breaks with space',
+  collapseSpaces: 'Collapse multiple spaces',
+  removeButton: 'Remove line breaks',
+  copyButton: 'Copy',
+  clearButton: 'Clear',
+};
 
 export function RemoveLineBreaksTool() {
-  const { t } = useI18n();
   const [input, setInput] = useState('');
   const [output, setOutput] = useState('');
   const [preserveParagraphs, setPreserveParagraphs] = useState(true);
@@ -48,17 +59,17 @@ export function RemoveLineBreaksTool() {
     <div className="space-y-4">
       <div className="grid gap-4 md:grid-cols-2">
         <ToolTextArea
-          label={t('RemoveLineBreaksPage.ui.inputLabel')}
+          label={LABELS.inputLabel}
           value={input}
           onChange={setInput}
-          placeholder={t('RemoveLineBreaksPage.ui.inputPlaceholder')}
+          placeholder={LABELS.inputPlaceholder}
           rows={12}
         />
         <ToolTextArea
-          label={t('RemoveLineBreaksPage.ui.outputLabel')}
+          label={LABELS.outputLabel}
           value={output}
           onChange={setOutput}
-          placeholder={t('RemoveLineBreaksPage.ui.outputPlaceholder')}
+          placeholder={LABELS.outputPlaceholder}
           rows={12}
           readOnly
         />
@@ -72,7 +83,7 @@ export function RemoveLineBreaksTool() {
             checked={preserveParagraphs}
             onChange={() => setPreserveParagraphs((prev) => !prev)}
           />
-          {t('RemoveLineBreaksPage.ui.preserveParagraphs')}
+          {LABELS.preserveParagraphs}
         </label>
         <label className="flex items-center gap-2">
           <input
@@ -81,7 +92,7 @@ export function RemoveLineBreaksTool() {
             checked={replaceWithSpace}
             onChange={() => setReplaceWithSpace((prev) => !prev)}
           />
-          {t('RemoveLineBreaksPage.ui.replaceWithSpace')}
+          {"Replace line breaks with spaces"}
         </label>
         <label className="flex items-center gap-2">
           <input
@@ -90,7 +101,7 @@ export function RemoveLineBreaksTool() {
             checked={collapseSpaces}
             onChange={() => setCollapseSpaces((prev) => !prev)}
           />
-          {t('RemoveLineBreaksPage.ui.collapseSpaces')}
+          {LABELS.collapseSpaces}
         </label>
       </div>
 
@@ -100,21 +111,21 @@ export function RemoveLineBreaksTool() {
           onClick={handleRemove}
           className="inline-flex items-center justify-center rounded-lg bg-brand-700 px-4 py-2 text-sm font-semibold text-white shadow hover:bg-brand-800"
         >
-          {t('RemoveLineBreaksPage.ui.removeButton')}
+          {LABELS.removeButton}
         </button>
         <button
           type="button"
           onClick={handleCopy}
           className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
         >
-          {t('RemoveLineBreaksPage.ui.copyButton')}
+          {LABELS.copyButton}
         </button>
         <button
           type="button"
           onClick={handleClear}
           className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
         >
-          {t('RemoveLineBreaksPage.ui.clearButton')}
+          {LABELS.clearButton}
         </button>
       </div>
     </div>

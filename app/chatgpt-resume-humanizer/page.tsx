@@ -10,9 +10,7 @@ import { ChatGPTResumeHumanizerTool } from '@/components/tools/ChatGPTResumeHuma
 import { buildToolMeta } from '@/lib/seo-meta';
 import { siteUrl } from '@/lib/schema/site';
 import { webPageSchema } from '@/lib/schema/webpage';
-import { getToolBySlug } from '@/lib/tools/registry';
-import { getServerLocale } from '@/lib/server-i18n';
-import { createServerT } from '@/lib/server-t';
+import { getToolBySlug } from '@/lib/tools/registry';
 
 const toolSlug = 'chatgpt-resume-humanizer';
 
@@ -149,24 +147,20 @@ const writeUp = (
 );
 
 export async function generateMetadata(): Promise<Metadata> {
-  const { locale } = await getServerLocale();
-  const t = await createServerT(locale);
+  
   const toolData = getToolBySlug(toolSlug);
   if (!toolData) return {};
-  const toolKey = toolSlug;
-  const title = t(`Tools.${toolKey}.title`) !== `Tools.${toolKey}.title` ? t(`Tools.${toolKey}.title`) : toolData.title;
-  const description = t(`Tools.${toolKey}.description`) !== `Tools.${toolKey}.description` ? t(`Tools.${toolKey}.description`) : toolData.shortDescription;
-  return buildToolMeta({ title, description, seoTitle: 'ChatGPT Resume Humanizer - Make AI Resumes Authentic', urlPath: `/${toolSlug}`, locale });
+  const title = toolData.title;
+  const description = toolData.shortDescription;
+  return buildToolMeta({ title, description, seoTitle: 'ChatGPT Resume Humanizer - Make AI Resumes Authentic', urlPath: `/${toolSlug}` });
 }
 
 export default async function ChatGPTResumeHumanizerPage() {
-  const { locale } = await getServerLocale();
-  const t = await createServerT(locale);
+  
   const toolData = getToolBySlug(toolSlug);
   if (!toolData) return notFound();
-  const toolKey = toolSlug;
-  const title = t(`Tools.${toolKey}.title`) !== `Tools.${toolKey}.title` ? t(`Tools.${toolKey}.title`) : toolData.title;
-  const description = t(`Tools.${toolKey}.description`) !== `Tools.${toolKey}.description` ? t(`Tools.${toolKey}.description`) : toolData.shortDescription;
+  const title = toolData.title;
+  const description = toolData.shortDescription;
   const url = `${siteUrl}/${toolSlug}/`;
   const webAppSchema = { '@context': 'https://schema.org', '@type': 'WebApplication', name: title, applicationCategory: 'UtilitiesApplication', operatingSystem: 'Web', description, url };
 

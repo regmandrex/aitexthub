@@ -1,8 +1,6 @@
 import type { FaqItem } from '@/components/faqData';
 import SpaceRemoverPage from '@/components/tools/SpaceRemoverPage';
 import { buildMeta } from '@/lib/seo-meta';
-import { getServerLocale } from '@/lib/server-i18n';
-import { createServerT } from '@/lib/server-t';
 
 const modelName = 'Claude';
 const modelSlug = 'claude';
@@ -339,18 +337,13 @@ const writeUp = (
 );
 
 export async function generateMetadata() {
-  const { locale } = await getServerLocale();
-  const t = await createServerT(locale);
-  const titleRaw = t('SpaceRemoverPage.title', { modelName });
-  const title = titleRaw !== 'SpaceRemoverPage.title' ? titleRaw : `${modelName} Space Remover`;
-  const descRaw = t('SpaceRemoverPage.subtitle');
-  const description = descRaw !== 'SpaceRemoverPage.subtitle' ? descRaw : `Remove extra spaces, trim lines, and normalize whitespace in ${modelName} output.`;
-
+  
+  const title = `${modelName} Space Remover - Trim, collapse, and normalize spacing in Claude responses.`;
+  const description = 'Remove extra spaces and tidy lines for clean, paste-ready text.';
   return buildMeta({
-    title: `${title} - ${t(`Tools.${modelSlug}-space-remover.description`)}`,
+    title,
     description,
     urlPath: `/${modelSlug}-space-remover`,
-    locale,
   });
 }
 

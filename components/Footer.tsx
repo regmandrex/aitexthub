@@ -7,8 +7,6 @@ import { useMemo } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { getAllTools, getToolBySlug } from '@/lib/tools/registry';
-import { useI18n, useLocale } from '@/lib/client-i18n';
-import { addLocaleToPath, removeLocaleFromPath } from '@/lib/i18n';
 
 type ToolLink = {
   slug: string;
@@ -19,29 +17,28 @@ type ToolLink = {
 
 const WATERMARK_MODES = new Set(['watermark-cleaner', 'watermark-detector']);
 
-function buildToolHref(slug: string, locale: string) {
-  const path = slug === '' ? '/' : `/${slug}`;
-  return addLocaleToPath(path, locale as any);
+function buildToolHref(slug: string) {
+  return slug === '' ? '/' : `/${slug}`;
 }
 
 const quickLinks = [
-  { href: '/', key: 'Footer.links.home' },
-  { href: '/about', key: 'Footer.links.about' },
-  { href: '/contact', key: 'Footer.links.contact' },
-  { href: '/blog', key: 'Footer.links.blog' },
+  { href: '/', label: 'Home' },
+  { href: '/about', label: 'About' },
+  { href: '/contact', label: 'Contact' },
+  { href: '/blog', label: 'Blog' },
 ];
 
-const toolsLinkKeys = [
-  { href: '/chatgpt-space-remover', key: 'Footer.topTools.chatgptSpaceRemover' },
-  { href: '/chatgpt-watermark-remover', key: 'Footer.topTools.chatgptWatermarkRemover' },
-  { href: '/strip-html', key: 'Footer.topTools.stripHtml' },
+const toolsLinks = [
+  { href: '/chatgpt-space-remover', label: 'ChatGPT Space Remover' },
+  { href: '/chatgpt-watermark-remover', label: 'ChatGPT Watermark Remover' },
+  { href: '/strip-html', label: 'Strip HTML' },
 ];
 
-const legalLinkKeys = [
-  { href: '/privacy-policy', key: 'Footer.legal.privacy' },
-  { href: '/terms-of-service', key: 'Footer.legal.terms' },
-  { href: '/disclaimer', key: 'Footer.legal.disclaimer' },
-  { href: '/cookie-policy', key: 'Footer.legal.cookies' },
+const legalLinks = [
+  { href: '/privacy-policy', label: 'Privacy Policy' },
+  { href: '/terms-of-service', label: 'Terms of Service' },
+  { href: '/disclaimer', label: 'Disclaimer' },
+  { href: '/cookie-policy', label: 'Cookie Policy' },
 ];
 
 const MAX_RELATED = 4;
@@ -66,17 +63,16 @@ function seededShuffle<T>(items: T[], seed: number) {
 }
 
 function getSlugFromPathname(pathname: string) {
-  const pathWithoutLocale = removeLocaleFromPath(pathname);
-  if (!pathWithoutLocale || pathWithoutLocale === '/') {
+  if (!pathname || pathname === '/') {
     return '';
   }
-  return pathWithoutLocale.replace(/^\/+/, '').replace(/\/$/, '');
+  return pathname.replace(/^\/+/, '').replace(/\/$/, '');
 }
 
-function buildRelatedLinks(pathname: string, locale: string, sourceTools: ToolLink[]): ToolLink[] {
+function buildRelatedLinks(pathname: string, sourceTools: ToolLink[]): ToolLink[] {
   const slug = getSlugFromPathname(pathname);
   const currentTool = getToolBySlug(slug);
-  const currentHref = buildToolHref(slug, locale);
+  const currentHref = buildToolHref(slug);
   const pool = sourceTools.filter((tool) => tool.href !== currentHref);
 
   if (!currentTool) {
@@ -99,31 +95,25 @@ function buildRelatedLinks(pathname: string, locale: string, sourceTools: ToolLi
 
 export default function Footer() {
   const pathname = usePathname();
-  const locale = useLocale();
-  const { t } = useI18n();
 
   const allTools: ToolLink[] = useMemo(
     () =>
-      getAllTools().map((tool) => {
-        const toolKey = tool.slug === '' ? 'home' : tool.slug;
-        const translatedTitle = t(`Tools.${toolKey}.title`);
-        return {
-          slug: tool.slug,
-          href: buildToolHref(tool.slug, locale),
-          label: translatedTitle && translatedTitle !== `Tools.${toolKey}.title` ? translatedTitle : tool.title,
-          mode: tool.mode,
-        };
-      }),
-    [locale, t]
+      getAllTools().map((tool) => ({
+        slug: tool.slug,
+        href: buildToolHref(tool.slug),
+        label: tool.title,
+        mode: tool.mode,
+      })),
+    []
   );
 
   const relatedLinks = useMemo(
     () => {
       const safePath = pathname || '/';
       const seed = hashString(safePath);
-      return buildRelatedLinks(safePath, locale, seededShuffle(allTools, seed));
+      return buildRelatedLinks(safePath, seededShuffle(allTools, seed));
     },
-    [pathname, locale, allTools]
+    [pathname, allTools]
   );
 
   return (
@@ -131,7 +121,7 @@ export default function Footer() {
       <div className="mx-auto max-w-6xl px-4 py-4 text-sm text-slate-800">
         {relatedLinks.length > 0 ? (
           <div className="flex flex-wrap items-center gap-2 bg-white px-4 py-3 text-xs text-slate-700">
-            <span className="font-semibold text-slate-800">{t('Footer.discoverMore')}</span>
+            <span className="font-semibold text-slate-800">Discover More:</span>
             {relatedLinks.map((link, idx) => (
               <span key={`${link.href}-${link.label}`} className="flex items-center gap-2">
                 <Link href={link.href} className="text-brand-700 hover:underline">
@@ -147,47 +137,47 @@ export default function Footer() {
 
         <div className="grid gap-8 pb-6 md:grid-cols-4">
           <div className="space-y-2">
-            <h3 className="text-xs font-bold uppercase text-slate-900">{t('Footer.aboutTitle')}</h3>
-            <p>{t('Footer.aboutBlurb')}</p>
+            <h3 className="text-xs font-bold uppercase text-slate-900">About</h3>
+            <p>Free AI text cleanup tools to remove hidden Unicode, fix spacing, and normalize text for publishing.</p>
           </div>
           <div className="space-y-2">
-            <h3 className="text-xs font-bold uppercase text-slate-900">{t('Footer.exploreTitle')}</h3>
+            <h3 className="text-xs font-bold uppercase text-slate-900">Explore</h3>
             <div className="flex flex-col gap-1">
               {quickLinks.map((link) => (
                 <Link
                   key={link.href}
-                  href={addLocaleToPath(link.href, locale)}
+                  href={link.href}
                   className="hover:text-brand-700"
                 >
-                  {t(link.key)}
+                  {link.label}
                 </Link>
               ))}
             </div>
           </div>
           <div className="space-y-2">
-            <h3 className="text-xs font-bold uppercase text-slate-900">{t('Footer.topToolsTitle')}</h3>
+            <h3 className="text-xs font-bold uppercase text-slate-900">Top Tools</h3>
             <div className="flex flex-col gap-1">
-              {toolsLinkKeys.map((link) => (
+              {toolsLinks.map((link) => (
                 <Link
                   key={link.href}
-                  href={addLocaleToPath(link.href, locale)}
+                  href={link.href}
                   className="hover:text-brand-700"
                 >
-                  {t(link.key)}
+                  {link.label}
                 </Link>
               ))}
             </div>
           </div>
           <div className="space-y-2">
-            <h3 className="text-xs font-bold uppercase text-slate-900">{t('Footer.legalTitle')}</h3>
+            <h3 className="text-xs font-bold uppercase text-slate-900">Legal</h3>
             <div className="flex flex-col gap-1">
-              {legalLinkKeys.map((link) => (
+              {legalLinks.map((link) => (
                 <Link
                   key={link.href}
-                  href={addLocaleToPath(link.href, locale)}
+                  href={link.href}
                   className="hover:text-brand-700"
                 >
-                  {t(link.key)}
+                  {link.label}
                 </Link>
               ))}
             </div>
@@ -195,11 +185,12 @@ export default function Footer() {
         </div>
 
         <div className="mt-6 text-center text-xs text-slate-600">
-          {t('Footer.copyrightPrefix')} {new Date().getFullYear()}{' '}
+          © {new Date().getFullYear()}{' '}
           <Link href="https://gptcleanuptools.com" className="font-semibold text-slate-800 hover:underline">
             GPT Cleanup Tools
           </Link>
-          {t('Footer.tagline')} {t('Footer.rights')}
+          . Free AI text cleanup utilities.{' '}
+          All rights reserved.
         </div>
       </div>
     </footer>

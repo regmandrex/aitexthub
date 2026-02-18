@@ -3,7 +3,6 @@ import { buildArticleMeta } from '@/lib/seo-meta';
 import { JsonLd } from '@/components/JsonLd';
 import { blogPostingSchema } from '@/lib/schema/blog';
 import AdSenseSlot from '../../../components/ads/AdSenseSlot';
-import { getServerLocale } from '@/lib/server-i18n';
 import type { Metadata } from 'next';
 
 const urlPath = '/blog/future-of-ai-text-cleaning';
@@ -13,13 +12,11 @@ const description =
   'How AI text cleaning evolves from a copy-paste fix into infrastructure: Unicode normalization, performance-aware cleaning, and content QA pipelines.';
 
 export async function generateMetadata(): Promise<Metadata> {
-  const { locale } = await getServerLocale();
   return buildArticleMeta({
     title,
     description,
     urlPath,
-    locale,
-  });
+    });
 }
 
 export default function FutureOfAITextCleaningPage() {

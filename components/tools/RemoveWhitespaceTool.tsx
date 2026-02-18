@@ -2,10 +2,19 @@
 
 import { useState } from 'react';
 import ToolTextArea from './ToolTextArea';
-import { useI18n } from '@/lib/client-i18n';
+
+const LABELS = {
+  inputLabel: 'Input text',
+  inputPlaceholder: 'Paste or type text here…',
+  outputLabel: 'Output',
+  outputPlaceholder: 'Text with no whitespace appears here.',
+  helperText: 'All spaces, tabs, and line breaks are removed.',
+  removeButton: 'Remove whitespace',
+  copyButton: 'Copy',
+  clearButton: 'Clear',
+};
 
 export function RemoveWhitespaceTool() {
-  const { t } = useI18n();
   const [input, setInput] = useState('');
   const [output, setOutput] = useState('');
 
@@ -31,20 +40,20 @@ export function RemoveWhitespaceTool() {
     <div className="space-y-4">
       <div className="grid gap-4 md:grid-cols-2">
         <ToolTextArea
-          label={t('RemoveWhitespacePage.ui.inputLabel')}
+          label={LABELS.inputLabel}
           value={input}
           onChange={setInput}
-          placeholder={t('RemoveWhitespacePage.ui.inputPlaceholder')}
+          placeholder={LABELS.inputPlaceholder}
           rows={12}
         />
         <ToolTextArea
-          label={t('RemoveWhitespacePage.ui.outputLabel')}
+          label={LABELS.outputLabel}
           value={output}
           onChange={setOutput}
-          placeholder={t('RemoveWhitespacePage.ui.outputPlaceholder')}
+          placeholder={LABELS.outputPlaceholder}
           rows={12}
           readOnly
-          helperText={t('RemoveWhitespacePage.ui.helperText')}
+          helperText={LABELS.helperText}
         />
       </div>
 
@@ -54,21 +63,21 @@ export function RemoveWhitespaceTool() {
           onClick={handleRemove}
           className="inline-flex items-center justify-center rounded-lg bg-brand-700 px-4 py-2 text-sm font-semibold text-white shadow hover:bg-brand-800"
         >
-          {t('RemoveWhitespacePage.ui.removeButton')}
+          {LABELS.removeButton}
         </button>
         <button
           type="button"
           onClick={handleCopy}
           className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
         >
-          {t('RemoveWhitespacePage.ui.copyButton')}
+          {LABELS.copyButton}
         </button>
         <button
           type="button"
           onClick={handleClear}
           className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
         >
-          {t('RemoveWhitespacePage.ui.clearButton')}
+          {LABELS.clearButton}
         </button>
       </div>
     </div>
