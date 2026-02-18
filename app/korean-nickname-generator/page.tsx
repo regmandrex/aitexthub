@@ -35,11 +35,11 @@ function RailAd({ side }: { side: 'left' | 'right' }) {
 
 export default function NicknamePage() {
   return (
-    <div className="relative min-h-screen bg-[#f7f9ff]">
+    <div className="relative bg-[#f7f9ff]">
       <JsonLd data={buildFaqJsonLd(faqItems)} />
       <RailAd side="right" />
 
-      <div className="mx-auto w-full max-w-3xl px-4 py-10">
+      <div className="mx-auto w-full max-w-3xl px-4 py-10 min-h-screen">
         <section className="space-y-3 text-center">
           <h1 className="text-3xl font-semibold text-slate-900 md:text-4xl">한국어 닉네임 생성기</h1>
           <p className="text-sm text-slate-700 md:text-base">

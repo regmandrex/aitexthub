@@ -10,8 +10,8 @@ export async function generateMetadata() {
 
 export default async function ContactPage() {
   return (
-    <div className="min-h-screen bg-[#f7f9ff]">
-      <div className="mx-auto max-w-3xl px-4 py-16 space-y-8">
+    <div className="bg-[#f7f9ff]">
+      <div className="mx-auto max-w-3xl px-4 py-16 space-y-8 min-h-screen">
         <section className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
           <h1 className="text-3xl font-semibold text-slate-900">Contact Us</h1>
           <p className="mt-3 text-slate-600">

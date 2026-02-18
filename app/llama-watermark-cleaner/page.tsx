@@ -261,7 +261,7 @@ export default async function LLAMAWatermarkCleanerPage() {
   );
   
   return (
-    <div className="relative min-h-screen bg-[#f7f9ff]">
+    <div className="relative bg-[#f7f9ff]">
       <JsonLd
         data={webPageSchema({
           name: toolTitle,
@@ -271,7 +271,7 @@ export default async function LLAMAWatermarkCleanerPage() {
       />
       <RailAd side="right" />
 
-      <div className="mx-auto w-full max-w-4xl px-4 py-10">
+      <div className="mx-auto w-full max-w-4xl px-4 py-10 min-h-screen">
         <section className="space-y-3 text-center">
           <h1 className="text-2xl font-semibold text-slate-900 md:text-3xl">{toolTitle}</h1>
           <p className="max-w-2xl mx-auto text-sm text-slate-700 md:text-[15px]">

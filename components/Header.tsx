@@ -21,8 +21,9 @@ export default function Header() {
             alt="GPT Clean Up Tools"
             width={200}
             height={56}
-            className="h-[52px] w-auto"
+            className="h-[52px] w-[185px]"
             priority
+            style={{ width: '185px', height: '52px' }}
           />
         </Link>
         <div className="flex items-center gap-4">

@@ -39,11 +39,11 @@ export default function WatermarkDetectorPage({ modelName, modelSlug, faqItems, 
   const description = `Inspect ${modelName} text for possible formatting artifacts, hidden Unicode, and whitespace patterns.`;
 
   return (
-    <div className="relative min-h-screen bg-[#f7f9ff]">
+    <div className="relative bg-[#f7f9ff]">
       <JsonLd data={webPageSchema({ name: title, url, description })} />
       <RailAd side="right" />
 
-      <div className="mx-auto w-full max-w-4xl px-4 py-10">
+      <div className="mx-auto w-full max-w-4xl px-4 py-10 min-h-screen">
         <section className="space-y-3 text-center">
           <h1 className="text-2xl font-semibold text-slate-900 md:text-3xl">{title}</h1>
           <div className="space-y-2">
