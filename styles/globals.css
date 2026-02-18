@@ -6,6 +6,16 @@
   color-scheme: light;
 }
 
+/* Prevent AdSense from causing layout shifts - maintain stable container heights */
+.bg-\[#f7f9ff\] {
+  min-height: 100vh !important;
+}
+
+/* Override AdSense-injected height: auto styles that cause layout shifts */
+.relative.bg-\[#f7f9ff\] {
+  min-height: 100vh !important;
+}
+
 body {
   @apply antialiased bg-slate-50 text-slate-900;
 }
