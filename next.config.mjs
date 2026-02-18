@@ -3,6 +3,9 @@
  * Includes placeholder redirects for migrating legacy WordPress URLs.
  */
 const nextConfig = {
+  experimental: {
+    inlineCss: true,
+  },
   async redirects() {
     return [
       // all-tools -> ai-tools (301 for SEO when URL was renamed)
