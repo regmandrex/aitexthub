@@ -64,9 +64,9 @@ export default async function RootLayout({ children }: RootLayoutProps) {
         <link rel="preconnect" href="https://www.googletagmanager.com" />
       </head>
       <body className={`${inter.variable} bg-slate-50 text-slate-900 antialiased pb-[80px] md:pb-[120px] lg:pb-[140px]`}>
-        {/* Google tag (gtag.js) */}
-        <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-YZ37PVSNQ2" />
-        <Script id="gtag-init" strategy="afterInteractive">
+        {/* Google tag (gtag.js) - deferred to prevent blocking LCP */}
+        <Script strategy="lazyOnload" src="https://www.googletagmanager.com/gtag/js?id=G-YZ37PVSNQ2" />
+        <Script id="gtag-init" strategy="lazyOnload">
           {`
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
@@ -78,7 +78,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8764610479002120"
           crossOrigin="anonymous"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
         <JsonLd data={webSiteSchema()} />
         <JsonLd data={siteNavigationSchema()} />
