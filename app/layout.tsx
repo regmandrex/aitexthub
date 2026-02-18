@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { ReactNode } from 'react';
 import Script from 'next/script';
 import { headers } from 'next/headers';
+import { Inter } from 'next/font/google';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import { JsonLd } from '../components/JsonLd';
@@ -10,6 +11,12 @@ import { webSiteSchema, siteNavigationSchema } from '../lib/schema/site';
 import { breadcrumbListSchema } from '../lib/schema/breadcrumb';
 import { getToolBySlug } from '../lib/tools/registry';
 import '../styles/globals.css';
+
+const inter = Inter({
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-inter',
+});
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
@@ -55,10 +62,8 @@ export default async function RootLayout({ children }: RootLayoutProps) {
       <head>
         <link rel="preconnect" href="https://pagead2.googlesyndication.com" />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" crossOrigin="anonymous" />
       </head>
-      <body className="bg-slate-50 text-slate-900 antialiased pb-[80px] md:pb-[120px] lg:pb-[140px]">
+      <body className={`${inter.variable} bg-slate-50 text-slate-900 antialiased pb-[80px] md:pb-[120px] lg:pb-[140px]`}>
         {/* Google tag (gtag.js) */}
         <Script strategy="afterInteractive" src="https://www.googletagmanager.com/gtag/js?id=G-YZ37PVSNQ2" />
         <Script id="gtag-init" strategy="afterInteractive">
