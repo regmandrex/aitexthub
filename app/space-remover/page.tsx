@@ -7,41 +7,14 @@ import { JsonLd } from '@/components/JsonLd';
 import { RelatedTools } from '@/components/tool/RelatedTools';
 import { ToolPageShell } from '@/components/tool/ToolPageShell';
 import { SpaceRemoverTool } from '@/components/tools/SpaceRemoverTool';
-import type { FaqItem } from '@/components/faqData';
+import { SpaceRemoverWriteUp } from '@/components/tools/SpaceRemoverWriteUp';
 import { buildToolMeta } from '@/lib/seo-meta';
 import { siteUrl } from '@/lib/schema/site';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
+import { spaceRemoverFaqs } from '@/lib/tools/spaceRemoverFaqs';
 
 const toolSlug = 'space-remover';
-
-// FAQ keys structure - these will be translated
-const faqKeys = [
-  { key: 'faq1', category: 'General' },
-  { key: 'faq2', category: 'General' },
-  { key: 'faq3', category: 'General' },
-  { key: 'faq4', category: 'General' },
-  { key: 'faq5', category: 'General' },
-  { key: 'faq6', category: 'General' },
-  { key: 'faq7', category: 'General' },
-  { key: 'faq8', category: 'General' },
-  { key: 'faq9', category: 'General' },
-  { key: 'faq10', category: 'General' },
-  { key: 'faq11', category: 'General' },
-  { key: 'faq12', category: 'General' },
-  { key: 'faq13', category: 'General' },
-  { key: 'faq14', category: 'General' },
-  { key: 'faq15', category: 'General' },
-  { key: 'faq16', category: 'General' },
-  { key: 'faq17', category: 'General' },
-  { key: 'faq18', category: 'General' },
-  { key: 'faq19', category: 'General' },
-  { key: 'faq20', category: 'General' },
-  { key: 'faq21', category: 'General' },
-];
-
-// Note: writeUp content needs to be hardcoded from en.json if needed
-// Removed createWriteUp function - content should be added back with hardcoded English strings if needed
 
 export async function generateMetadata(): Promise<Metadata> {
   const tool = getToolBySlug(toolSlug);
@@ -61,27 +34,35 @@ export default async function SpaceRemoverPage() {
 
   const title = tool.title;
   const description = tool.shortDescription;
-
   const url = `${siteUrl}/${toolSlug}/`;
-
-  // Note: FAQs need to be hardcoded from en.json if needed
-  const pageFaqs: FaqItem[] = [];
 
   return (
     <>
       <JsonLd data={webPageSchema({ name: title, url, description })} />
-      <ToolPageShell tool={{ ...tool, title, shortDescription: description }} ui={<SpaceRemoverTool />} related={<RelatedTools currentSlug={tool.slug} />}>
-        {/* Note: writeUp content needs to be hardcoded from en.json if needed */}
+      <ToolPageShell
+        tool={{ ...tool, title, shortDescription: description }}
+        ui={<SpaceRemoverTool />}
+        related={<RelatedTools currentSlug={tool.slug} />}
+      >
+        <SpaceRemoverWriteUp />
 
         <div className="mt-10 space-y-3">
-          <h2 className="text-2xl font-semibold text-slate-900">Frequently Asked Questions</h2>
+          <h2 className="text-2xl font-semibold text-slate-900">
+            Frequently Asked Questions – Space Remover Online
+          </h2>
           <p className="text-slate-700">
-            Common questions about space removal, formatting, and text cleanup.
+            Common questions about the space remover tool, removing extra spaces,
+            normalizing whitespace, and cleaning text online.
           </p>
         </div>
 
-        <FAQSection items={pageFaqs} />
-        <FaqJsonLd faqs={pageFaqs} />
+        <FAQSection
+          items={spaceRemoverFaqs}
+          title="Space Remover FAQ"
+          intro="Find answers about using a space remover online tool to remove extra spaces, trim whitespace, and normalize text for documents, code, and SEO."
+          showCategories={true}
+        />
+        <FaqJsonLd faqs={spaceRemoverFaqs} />
       </ToolPageShell>
     </>
   );

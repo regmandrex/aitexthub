@@ -62,6 +62,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
       <head>
         <link rel="preconnect" href="https://pagead2.googlesyndication.com" />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="alternate" type="application/rss+xml" title="GPTCLEANUP AI Blog & Tools RSS Feed" href="https://gptcleanuptools.com/rss.xml" />
       </head>
       <body className={`${inter.variable} bg-slate-50 text-slate-900 antialiased pb-[80px] md:pb-[120px] lg:pb-[140px]`}>
         {/* Google tag (gtag.js) - deferred to prevent blocking LCP */}
