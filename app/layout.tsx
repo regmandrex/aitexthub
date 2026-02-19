@@ -108,10 +108,10 @@ export default async function RootLayout({ children }: RootLayoutProps) {
             return items.length > 1 ? <JsonLd data={breadcrumbListSchema(items)} /> : null;
           }
 
-          // Tool breadcrumbs: Home -> All Tools -> Tool
+          // Tool breadcrumbs: Home -> AI Tools -> Tool
           if (pathname === '/ai-tools') {
             items.push({
-              name: 'All Tools',
+              name: 'AI Tools',
               url: abs('/ai-tools'),
             });
             return <JsonLd data={breadcrumbListSchema(items)} />;
@@ -122,7 +122,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
             const tool = getToolBySlug(slug);
             if (tool) {
               items.push({
-                name: 'All Tools',
+                name: 'AI Tools',
                 url: abs('/ai-tools'),
               });
               items.push({
