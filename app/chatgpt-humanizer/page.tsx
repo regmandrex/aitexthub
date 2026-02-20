@@ -45,134 +45,22 @@ const faqKeys = [
 // Removed createWriteUp function
 function createWriteUp() {
   return (
-  <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
-    <div className="prose prose-slate max-w-none">
-      <h2>'ChatGPTHumanizerPage.writeUp.title'</h2>
-      <p>'ChatGPTHumanizerPage.writeUp.introP1'</p>
-      <p>'ChatGPTHumanizerPage.writeUp.introP2'</p>
-      <p>'ChatGPTHumanizerPage.writeUp.introP3'</p>
+    <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+      <div className="prose prose-slate max-w-none">
+        <h2>ChatGPT Humanizer: Make AI Text Sound Human</h2>
+        <p>This free tool helps rewrite AI-generated text so it reads more naturally. It adjusts vocabulary, sentence structure, and tone to reduce robotic patterns that detectors often flag.</p>
+        <p>Paste your text, run the humanizer, then review and edit the output. Use it to polish drafts while staying within your institution&apos;s or employer&apos;s AI policies.</p>
 
-      <h2>'ChatGPTHumanizerPage.writeUp.patternsTitle'</h2>
-      <p>'ChatGPTHumanizerPage.writeUp.patternsP1'</p>
+        <h2>How It Works</h2>
+        <p>The tool rephrases sentences, varies word choice, and adds natural variation in length and complexity. It aims to keep your meaning while making the text sound more human-written.</p>
 
-      <h3>'ChatGPTHumanizerPage.writeUp.uniformityTitle'</h3>
-      <p>'ChatGPTHumanizerPage.writeUp.uniformityP1'</p>
-      <p>'ChatGPTHumanizerPage.writeUp.uniformityP2'</p>
+        <h2>Using the Tool</h2>
+        <p>Paste your content and run the humanizer. Always review the result and make any edits needed for accuracy and style. For best results, combine with your own revisions.</p>
 
-      <h3>'ChatGPTHumanizerPage.writeUp.vocabularyTitle'</h3>
-      <p>'ChatGPTHumanizerPage.writeUp.vocabularyP1'</p>
-      <p>'ChatGPTHumanizerPage.writeUp.vocabularyP2'</p>
-
-      <h3>'ChatGPTHumanizerPage.writeUp.transitionsTitle'</h3>
-      <p>'ChatGPTHumanizerPage.writeUp.transitionsP1'</p>
-      <p>'ChatGPTHumanizerPage.writeUp.transitionsP2'</p>
-
-      <h2>'ChatGPTHumanizerPage.writeUp.howItWorksTitle'</h2>
-      <p>'ChatGPTHumanizerPage.writeUp.howItWorksP1'</p>
-
-      <h3>'ChatGPTHumanizerPage.writeUp.structuralTitle'</h3>
-      <p>'ChatGPTHumanizerPage.writeUp.structuralP1'</p>
-
-      <h3>'ChatGPTHumanizerPage.writeUp.vocabAdjustTitle'</h3>
-      <p>'ChatGPTHumanizerPage.writeUp.vocabAdjustP1'</p>
-
-      <h3>'ChatGPTHumanizerPage.writeUp.voiceTitle'</h3>
-      <p>'ChatGPTHumanizerPage.writeUp.voiceP1'</p>
-
-      <h3>'ChatGPTHumanizerPage.writeUp.imperfectionTitle'</h3>
-      <p>'ChatGPTHumanizerPage.writeUp.imperfectionP1'</p>
-
-      <h2>'ChatGPTHumanizerPage.writeUp.usingTitle'</h2>
-      <p>'ChatGPTHumanizerPage.writeUp.usingP1'</p>
-
-      <h3>'ChatGPTHumanizerPage.writeUp.inputTitle'</h3>
-      <p>'ChatGPTHumanizerPage.writeUp.inputP1'</p>
-      <p>'ChatGPTHumanizerPage.writeUp.inputP2'</p>
-
-      <h3>'ChatGPTHumanizerPage.writeUp.reviewingTitle'</h3>
-      <p>'ChatGPTHumanizerPage.writeUp.reviewingP1'</p>
-      <p>'ChatGPTHumanizerPage.writeUp.reviewingP2'</p>
-
-      <h3>'ChatGPTHumanizerPage.writeUp.iterativeTitle'</h3>
-      <p>'ChatGPTHumanizerPage.writeUp.iterativeP1'</p>
-      <p>'ChatGPTHumanizerPage.writeUp.iterativeP2'</p>
-
-      <h2>'ChatGPTHumanizerPage.writeUp.detectionTitle'</h2>
-      <p>'ChatGPTHumanizerPage.writeUp.detectionP1'</p>
-
-      <h3>'ChatGPTHumanizerPage.writeUp.reductionTitle'</h3>
-      <p>'ChatGPTHumanizerPage.writeUp.reductionP1'</p>
-      <p>'ChatGPTHumanizerPage.writeUp.reductionP2'</p>
-
-      <h3>'ChatGPTHumanizerPage.writeUp.ethicalTitle'</h3>
-      <p>'ChatGPTHumanizerPage.writeUp.ethicalP1'</p>
-      <p>'ChatGPTHumanizerPage.writeUp.ethicalP2'</p>
-
-      <h3>'ChatGPTHumanizerPage.writeUp.valueTitle'</h3>
-      <p>'ChatGPTHumanizerPage.writeUp.valueP1'</p>
-
-      <h2>'ChatGPTHumanizerPage.writeUp.applicationsTitle'</h2>
-      <p>'ChatGPTHumanizerPage.writeUp.applicationsP1'</p>
-
-      <h3>'ChatGPTHumanizerPage.writeUp.marketingTitle'</h3>
-      <p>'ChatGPTHumanizerPage.writeUp.marketingP1'</p>
-      <p>'ChatGPTHumanizerPage.writeUp.marketingP2'</p>
-
-      <h3>'ChatGPTHumanizerPage.writeUp.professionalTitle'</h3>
-      <p>'ChatGPTHumanizerPage.writeUp.professionalP1'</p>
-      <p>'ChatGPTHumanizerPage.writeUp.professionalP2'</p>
-
-      <h3>'ChatGPTHumanizerPage.writeUp.creativeTitle'</h3>
-      <p>'ChatGPTHumanizerPage.writeUp.creativeP1'</p>
-      <p>'ChatGPTHumanizerPage.writeUp.creativeP2'</p>
-
-      <h3>'ChatGPTHumanizerPage.writeUp.educationalTitle'</h3>
-      <p>'ChatGPTHumanizerPage.writeUp.educationalP1'</p>
-      <p>'ChatGPTHumanizerPage.writeUp.educationalP2'</p>
-
-      <h2>'ChatGPTHumanizerPage.writeUp.bestPracticesTitle'</h2>
-      <p>'ChatGPTHumanizerPage.writeUp.bestPracticesP1'</p>
-
-      <h3>'ChatGPTHumanizerPage.writeUp.combineTitle'</h3>
-      <p>'ChatGPTHumanizerPage.writeUp.combineP1'</p>
-
-      <h3>'ChatGPTHumanizerPage.writeUp.matchTitle'</h3>
-      <p>'ChatGPTHumanizerPage.writeUp.matchP1'</p>
-
-      <h3>'ChatGPTHumanizerPage.writeUp.verifyTitle'</h3>
-      <p>'ChatGPTHumanizerPage.writeUp.verifyP1'</p>
-
-      <h3>'ChatGPTHumanizerPage.writeUp.iterativeUseTitle'</h3>
-      <p>'ChatGPTHumanizerPage.writeUp.iterativeUseP1'</p>
-
-      <h2>'ChatGPTHumanizerPage.writeUp.technicalTitle'</h2>
-      <p>'ChatGPTHumanizerPage.writeUp.technicalP1'</p>
-
-      <h3>'ChatGPTHumanizerPage.writeUp.perplexityTitle'</h3>
-      <p>'ChatGPTHumanizerPage.writeUp.perplexityP1'</p>
-
-      <h3>'ChatGPTHumanizerPage.writeUp.burstinessTitle'</h3>
-      <p>'ChatGPTHumanizerPage.writeUp.burstinessP1'</p>
-
-      <h3>'ChatGPTHumanizerPage.writeUp.stylisticTitle'</h3>
-      <p>'ChatGPTHumanizerPage.writeUp.stylisticP1'</p>
-
-      <h2>'ChatGPTHumanizerPage.writeUp.limitationsTitle'</h2>
-      <p>'ChatGPTHumanizerPage.writeUp.limitationsP1'</p>
-
-      <h3>'ChatGPTHumanizerPage.writeUp.qualityTitle'</h3>
-      <p>'ChatGPTHumanizerPage.writeUp.qualityP1'</p>
-
-      <h3>'ChatGPTHumanizerPage.writeUp.evolutionTitle'</h3>
-      <p>'ChatGPTHumanizerPage.writeUp.evolutionP1'</p>
-
-      <h3>'ChatGPTHumanizerPage.writeUp.contextTitle'</h3>
-      <p>'ChatGPTHumanizerPage.writeUp.contextP1'</p>
-
-      <h3>'ChatGPTHumanizerPage.writeUp.variableTitle'</h3>
-      <p>'ChatGPTHumanizerPage.writeUp.variableP1'</p>
-    </div>
-  </section>
+        <h2>Limitations</h2>
+        <p>No tool can guarantee that text will pass every AI detector. Use this as a writing aid; final responsibility for originality and disclosure lies with you.</p>
+      </div>
+    </section>
   );
 }
 
@@ -216,11 +104,11 @@ export default async function ChatGPTHumanizerPage() {
       <JsonLd data={webPageSchema({ name: title, url, description })} />
       <JsonLd data={webAppSchema} />
       <ToolPageShell tool={{ ...toolData, title, shortDescription: description }} ui={<ChatGPTHumanizerTool />} related={<RelatedTools currentSlug={toolData.slug} />}>
-        {/* Note: writeUp content needs to be hardcoded from en.json if needed */}
+        {createWriteUp()}
         <div className="mt-10 space-y-3">
-          <h2 className="text-2xl font-semibold text-slate-900">'ChatGPTHumanizerPage.faqHeading'</h2>
+          <h2 className="text-2xl font-semibold text-slate-900">Frequently Asked Questions</h2>
           <p className="text-slate-700">
-            'ChatGPTHumanizerPage.faqIntro'
+            Common questions and answers about the ChatGPT Humanizer.
           </p>
         </div>
         {/* Create translated FAQs from translation keys */}

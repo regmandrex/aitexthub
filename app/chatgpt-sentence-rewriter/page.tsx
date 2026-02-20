@@ -41,166 +41,36 @@ const faqKeys = [
   { key: 'faq24', category: 'ChatGPT Sentence Rewriter FAQs' },
   { key: 'faq25', category: 'ChatGPT Sentence Rewriter FAQs' },
 ];
-// Note: writeUp content needs to be hardcoded from en.json if needed
-// Removed createWriteUp function
 function createWriteUp() {
   return (
-  <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
-    <div className="prose prose-slate max-w-none">
-      <h2>'ChatGPTSentenceRewriterPage.writeUp.title'</h2>
-      <p>'ChatGPTSentenceRewriterPage.writeUp.introP1'</p>
-      <p>'ChatGPTSentenceRewriterPage.writeUp.introP2'</p>
-      <p>'ChatGPTSentenceRewriterPage.writeUp.introP3'</p>
+    <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+      <div className="prose prose-slate max-w-none">
+        <h2>ChatGPT Sentence Rewriter: Free Online Sentence Transformer</h2>
+        <p>Sentence rewriting changes the structure and wording of a sentence while keeping its meaning. It helps you add variety, adjust tone, or express the same idea in a different way.</p>
+        <p>This tool uses AI to suggest rewritten versions of your sentences. You can rewrite one sentence or several. Always review the output and cite sources when you use ideas from others.</p>
 
-      <h2>'ChatGPTSentenceRewriterPage.writeUp.whyTitle'</h2>
-      <p>'ChatGPTSentenceRewriterPage.writeUp.whyP1'</p>
+        <h2>Why Use a Sentence Rewriter</h2>
+        <p>Rewriting gives you targeted control over clarity, style, and variety. It is useful for essays, emails, and any text where you want to improve flow without changing the message.</p>
 
-      <h3>'ChatGPTSentenceRewriterPage.writeUp.targetedTitle'</h3>
-      <p>'ChatGPTSentenceRewriterPage.writeUp.targetedP1'</p>
-      <p>'ChatGPTSentenceRewriterPage.writeUp.targetedP2'</p>
+        <h2>How It Works</h2>
+        <p>The tool analyzes your sentence and suggests alternatives using structural changes, synonyms, and reordering while preserving meaning. You can iterate until the result fits your needs.</p>
 
-      <h3>'ChatGPTSentenceRewriterPage.writeUp.controlTitle'</h3>
-      <p>'ChatGPTSentenceRewriterPage.writeUp.controlP1'</p>
+        <h2>Using the Tool</h2>
+        <p>Paste or type your text, run the rewriter, and review the result. Use clear input and keep context in mind. Edit the output as needed for accuracy and tone.</p>
 
-      <h3>'ChatGPTSentenceRewriterPage.writeUp.learningTitle'</h3>
-      <p>'ChatGPTSentenceRewriterPage.writeUp.learningP1'</p>
+        <h2>Use Cases</h2>
+        <p>Use it for clarity, sentence variety, tone adjustment, and to rephrase AI-generated or ESL text. It complements a paraphraser (which works on longer passages), a grammar checker (which fixes errors), and a humanizer (which changes style).</p>
 
-      <h2>'ChatGPTSentenceRewriterPage.writeUp.howItWorksTitle'</h2>
-      <p>'ChatGPTSentenceRewriterPage.writeUp.howItWorksP1'</p>
+        <h2>Best Practices</h2>
+        <p>Preserve the original intent and meaning. Keep tone and style consistent with the rest of your document. Use your judgment and edit the result before publishing.</p>
 
-      <h3>'ChatGPTSentenceRewriterPage.writeUp.structuralTitle'</h3>
-      <p>'ChatGPTSentenceRewriterPage.writeUp.structuralP1'</p>
+        <h2>Professional Use</h2>
+        <p>Sentence rewriting is useful in business, marketing, technical writing, and academic writing. Use it to refine drafts and improve readability.</p>
 
-      <h3>'ChatGPTSentenceRewriterPage.writeUp.techniquesTitle'</h3>
-      <p>'ChatGPTSentenceRewriterPage.writeUp.techniquesP1'</p>
-
-      <h3>'ChatGPTSentenceRewriterPage.writeUp.meaningTitle'</h3>
-      <p>'ChatGPTSentenceRewriterPage.writeUp.meaningP1'</p>
-
-      <h2>'ChatGPTSentenceRewriterPage.writeUp.usingTitle'</h2>
-      <p>'ChatGPTSentenceRewriterPage.writeUp.usingP1'</p>
-
-      <h3>'ChatGPTSentenceRewriterPage.writeUp.clearTitle'</h3>
-      <p>'ChatGPTSentenceRewriterPage.writeUp.clearP1'</p>
-
-      <h3>'ChatGPTSentenceRewriterPage.writeUp.reviewTitle'</h3>
-      <p>'ChatGPTSentenceRewriterPage.writeUp.reviewP1'</p>
-
-      <h3>'ChatGPTSentenceRewriterPage.writeUp.iterateTitle'</h3>
-      <p>'ChatGPTSentenceRewriterPage.writeUp.iterateP1'</p>
-
-      <h3>'ChatGPTSentenceRewriterPage.writeUp.contextTitle'</h3>
-      <p>'ChatGPTSentenceRewriterPage.writeUp.contextP1'</p>
-
-      <h2>'ChatGPTSentenceRewriterPage.writeUp.useCasesTitle'</h2>
-      <p>'ChatGPTSentenceRewriterPage.writeUp.useCasesP1'</p>
-
-      <h3>'ChatGPTSentenceRewriterPage.writeUp.clarityTitle'</h3>
-      <p>'ChatGPTSentenceRewriterPage.writeUp.clarityP1'</p>
-
-      <h3>'ChatGPTSentenceRewriterPage.writeUp.varietyTitle'</h3>
-      <p>'ChatGPTSentenceRewriterPage.writeUp.varietyP1'</p>
-
-      <h3>'ChatGPTSentenceRewriterPage.writeUp.toneTitle'</h3>
-      <p>'ChatGPTSentenceRewriterPage.writeUp.toneP1'</p>
-
-      <h3>'ChatGPTSentenceRewriterPage.writeUp.aiTitle'</h3>
-      <p>'ChatGPTSentenceRewriterPage.writeUp.aiP1'</p>
-
-      <h3>'ChatGPTSentenceRewriterPage.writeUp.eslTitle'</h3>
-      <p>'ChatGPTSentenceRewriterPage.writeUp.eslP1'</p>
-
-      <h2>'ChatGPTSentenceRewriterPage.writeUp.transformationTitle'</h2>
-      <p>'ChatGPTSentenceRewriterPage.writeUp.transformationP1'</p>
-
-      <h3>'ChatGPTSentenceRewriterPage.writeUp.voiceTitle'</h3>
-      <p>'ChatGPTSentenceRewriterPage.writeUp.voiceP1'</p>
-
-      <h3>'ChatGPTSentenceRewriterPage.writeUp.wordOrderTitle'</h3>
-      <p>'ChatGPTSentenceRewriterPage.writeUp.wordOrderP1'</p>
-
-      <h3>'ChatGPTSentenceRewriterPage.writeUp.synonymTitle'</h3>
-      <p>'ChatGPTSentenceRewriterPage.writeUp.synonymP1'</p>
-
-      <h3>'ChatGPTSentenceRewriterPage.writeUp.lengthTitle'</h3>
-      <p>'ChatGPTSentenceRewriterPage.writeUp.lengthP1'</p>
-
-      <h3>'ChatGPTSentenceRewriterPage.writeUp.emphasisTitle'</h3>
-      <p>'ChatGPTSentenceRewriterPage.writeUp.emphasisP1'</p>
-
-      <h2>'ChatGPTSentenceRewriterPage.writeUp.bestPracticesTitle'</h2>
-      <p>'ChatGPTSentenceRewriterPage.writeUp.bestPracticesP1'</p>
-
-      <h3>'ChatGPTSentenceRewriterPage.writeUp.intentTitle'</h3>
-      <p>'ChatGPTSentenceRewriterPage.writeUp.intentP1'</p>
-
-      <h3>'ChatGPTSentenceRewriterPage.writeUp.preserveTitle'</h3>
-      <p>'ChatGPTSentenceRewriterPage.writeUp.preserveP1'</p>
-
-      <h3>'ChatGPTSentenceRewriterPage.writeUp.consistencyTitle'</h3>
-      <p>'ChatGPTSentenceRewriterPage.writeUp.consistencyP1'</p>
-
-      <h3>'ChatGPTSentenceRewriterPage.writeUp.judgmentTitle'</h3>
-      <p>'ChatGPTSentenceRewriterPage.writeUp.judgmentP1'</p>
-
-      <h3>'ChatGPTSentenceRewriterPage.writeUp.editTitle'</h3>
-      <p>'ChatGPTSentenceRewriterPage.writeUp.editP1'</p>
-
-      <h2>'ChatGPTSentenceRewriterPage.writeUp.vsOtherTitle'</h2>
-      <p>'ChatGPTSentenceRewriterPage.writeUp.vsOtherP1'</p>
-
-      <h3>'ChatGPTSentenceRewriterPage.writeUp.vsParaphraserTitle'</h3>
-      <p>'ChatGPTSentenceRewriterPage.writeUp.vsParaphraserP1'</p>
-
-      <h3>'ChatGPTSentenceRewriterPage.writeUp.vsGrammarTitle'</h3>
-      <p>'ChatGPTSentenceRewriterPage.writeUp.vsGrammarP1'</p>
-
-      <h3>'ChatGPTSentenceRewriterPage.writeUp.vsHumanizerTitle'</h3>
-      <p>'ChatGPTSentenceRewriterPage.writeUp.vsHumanizerP1'</p>
-
-      <h2>'ChatGPTSentenceRewriterPage.writeUp.technicalTitle'</h2>
-      <p>'ChatGPTSentenceRewriterPage.writeUp.technicalP1'</p>
-
-      <h3>'ChatGPTSentenceRewriterPage.writeUp.syntacticTitle'</h3>
-      <p>'ChatGPTSentenceRewriterPage.writeUp.syntacticP1'</p>
-
-      <h3>'ChatGPTSentenceRewriterPage.writeUp.semanticTitle'</h3>
-      <p>'ChatGPTSentenceRewriterPage.writeUp.semanticP1'</p>
-
-      <h3>'ChatGPTSentenceRewriterPage.writeUp.independenceTitle'</h3>
-      <p>'ChatGPTSentenceRewriterPage.writeUp.independenceP1'</p>
-
-      <h2>'ChatGPTSentenceRewriterPage.writeUp.professionalTitle'</h2>
-      <p>'ChatGPTSentenceRewriterPage.writeUp.professionalP1'</p>
-
-      <h3>'ChatGPTSentenceRewriterPage.writeUp.businessTitle'</h3>
-      <p>'ChatGPTSentenceRewriterPage.writeUp.businessP1'</p>
-
-      <h3>'ChatGPTSentenceRewriterPage.writeUp.marketingTitle'</h3>
-      <p>'ChatGPTSentenceRewriterPage.writeUp.marketingP1'</p>
-
-      <h3>'ChatGPTSentenceRewriterPage.writeUp.technicalTitle'</h3>
-      <p>'ChatGPTSentenceRewriterPage.writeUp.technicalP1'</p>
-
-      <h3>'ChatGPTSentenceRewriterPage.writeUp.academicTitle'</h3>
-      <p>'ChatGPTSentenceRewriterPage.writeUp.academicP1'</p>
-
-      <h2>'ChatGPTSentenceRewriterPage.writeUp.limitationsTitle'</h2>
-      <p>'ChatGPTSentenceRewriterPage.writeUp.limitationsP1'</p>
-
-      <h3>'ChatGPTSentenceRewriterPage.writeUp.verificationTitle'</h3>
-      <p>'ChatGPTSentenceRewriterPage.writeUp.verificationP1'</p>
-
-      <h3>'ChatGPTSentenceRewriterPage.writeUp.fittingTitle'</h3>
-      <p>'ChatGPTSentenceRewriterPage.writeUp.fittingP1'</p>
-
-      <h3>'ChatGPTSentenceRewriterPage.writeUp.complexityTitle'</h3>
-      <p>'ChatGPTSentenceRewriterPage.writeUp.complexityP1'</p>
-
-      <h3>'ChatGPTSentenceRewriterPage.writeUp.styleTitle'</h3>
-      <p>'ChatGPTSentenceRewriterPage.writeUp.styleP1'</p>
-    </div>
-  </section>
+        <h2>Limitations</h2>
+        <p>Always verify the output for accuracy and fit. Complex or technical sentences may need manual editing. The tool is an aid, not a replacement for your own review.</p>
+      </div>
+    </section>
   );
 }
 
@@ -244,11 +114,11 @@ export default async function ChatGPTSentenceRewriterPage() {
       <JsonLd data={webPageSchema({ name: title, url, description })} />
       <JsonLd data={webAppSchema} />
       <ToolPageShell tool={{ ...toolData, title, shortDescription: description }} ui={<ChatGPTSentenceRewriterTool />} related={<RelatedTools currentSlug={toolData.slug} />}>
-        {/* Note: writeUp content needs to be hardcoded from en.json if needed */}
+        {createWriteUp()}
         <div className="mt-10 space-y-3">
-          <h2 className="text-2xl font-semibold text-slate-900">'ChatGPTSentenceRewriterPage.faqHeading'</h2>
+          <h2 className="text-2xl font-semibold text-slate-900">Frequently Asked Questions</h2>
           <p className="text-slate-700">
-            'ChatGPTSentenceRewriterPage.faqIntro'
+            Common questions and answers about the ChatGPT Sentence Rewriter.
           </p>
         </div>
         {/* Create translated FAQs from translation keys */}

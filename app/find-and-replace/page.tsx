@@ -57,173 +57,32 @@ const faqKeys = [
   { key: 'faq22', category: 'Responsible Use' },
 ];
 
-// Helper function to create writeUp content using translations
-// Note: writeUp content needs to be hardcoded from en.json if needed
-// Removed createWriteUp function
 function createWriteUp() {
   return (
-  <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
-    <div className="prose prose-slate max-w-none">
-      <h2>'FindAndReplacePage.writeUp.title'</h2>
-      <p>'FindAndReplacePage.writeUp.intro'</p>
+    <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+      <div className="prose prose-slate max-w-none">
+        <h2>Find and Replace: Bulk Text Replacement Tool</h2>
+        <p>This free tool finds every occurrence of a search string in your text and replaces it with another string. You can do one replacement or many. Useful for cleaning data, normalizing text, or batch edits.</p>
 
-      <h2>'FindAndReplacePage.writeUp.introductionTitle'</h2>
-      <p>'FindAndReplacePage.writeUp.introductionP1'</p>
-      <p>'FindAndReplacePage.writeUp.introductionP2'</p>
-      <p>'FindAndReplacePage.writeUp.introductionP3'</p>
-      <p>'FindAndReplacePage.writeUp.introductionP4'</p>
+        <h2>What It Does</h2>
+        <p>Enter the text to search for and the replacement text. The tool performs literal matching: it finds exact occurrences (optionally case-sensitive or whole-word) and replaces them. It does not use regex or rewrite meaning.</p>
 
-      <h2>'FindAndReplacePage.writeUp.whatIsTitle'</h2>
-      <p>'FindAndReplacePage.writeUp.whatIsP1'</p>
-      <p>'FindAndReplacePage.writeUp.whatIsP2'</p>
-      <p>'FindAndReplacePage.writeUp.whatIsP3'</p>
-      <p>'FindAndReplacePage.writeUp.whatIsP4'</p>
+        <h2>Why It Matters</h2>
+        <p>Bulk find-and-replace saves time when you need to change a word, phrase, or character throughout a document. Editors, developers, and analysts use it to normalize content or fix repeated typos.</p>
 
-      <h2>'FindAndReplacePage.writeUp.whyMattersTitle'</h2>
-      <p>'FindAndReplacePage.writeUp.whyMattersP1'</p>
-      <p>'FindAndReplacePage.writeUp.whyMattersP2'</p>
-      <p>'FindAndReplacePage.writeUp.whyMattersP3'</p>
-      <p>'FindAndReplacePage.writeUp.whyMattersP4'</p>
-      <p>'FindAndReplacePage.writeUp.whyMattersP5'</p>
+        <h2>How It Works</h2>
+        <p>Paste your text, enter find and replace strings, choose options (e.g., case-sensitive, whole word), and run. Processing is in your browser; your text is not sent to our servers.</p>
 
-      <h2>'FindAndReplacePage.writeUp.howWorksTitle'</h2>
-      <h3>'FindAndReplacePage.writeUp.step1Title'</h3>
-      <p>'FindAndReplacePage.writeUp.step1Text'</p>
-      <h3>'FindAndReplacePage.writeUp.step2Title'</h3>
-      <p>'FindAndReplacePage.writeUp.step2Text'</p>
-      <h3>'FindAndReplacePage.writeUp.step3Title'</h3>
-      <p>'FindAndReplacePage.writeUp.step3Text'</p>
-      <h3>'FindAndReplacePage.writeUp.step4Title'</h3>
-      <p>'FindAndReplacePage.writeUp.step4P1'</p>
-      <p>'FindAndReplacePage.writeUp.step4P2'</p>
-      <h3>'FindAndReplacePage.writeUp.step5Title'</h3>
-      <p>'FindAndReplacePage.writeUp.step5P1'</p>
-      <p>'FindAndReplacePage.writeUp.step5P2'</p>
+        <h2>What It Does Not Do</h2>
+        <p>It is not a grammar or style checker. It only replaces the exact text you specify. Order of operations matters if you run multiple replacements—run one at a time or in a clear sequence.</p>
 
-      <h2>'FindAndReplacePage.writeUp.commonProblemsTitle'</h2>
-      <p>'FindAndReplacePage.writeUp.commonProblemsIntro'</p>
-      <ul>
-        <li>'FindAndReplacePage.writeUp.commonProblemsItem1'</li>
-        <li>'FindAndReplacePage.writeUp.commonProblemsItem2'</li>
-        <li>'FindAndReplacePage.writeUp.commonProblemsItem3'</li>
-        <li>'FindAndReplacePage.writeUp.commonProblemsItem4'</li>
-        <li>'FindAndReplacePage.writeUp.commonProblemsItem5'</li>
-      </ul>
-      <p>'FindAndReplacePage.writeUp.commonProblemsP1'</p>
-      <p>'FindAndReplacePage.writeUp.commonProblemsP2'</p>
-      <p>'FindAndReplacePage.writeUp.commonProblemsP3'</p>
+        <h2>Privacy</h2>
+        <p>Your text is processed locally and is not stored or uploaded.</p>
 
-      <h2>'FindAndReplacePage.writeUp.supportedSourcesTitle'</h2>
-      <p>'FindAndReplacePage.writeUp.supportedSourcesP1'</p>
-      <h3>'FindAndReplacePage.writeUp.webPagesTitle'</h3>
-      <p>'FindAndReplacePage.writeUp.webPagesText'</p>
-      <h3>'FindAndReplacePage.writeUp.pdfTitle'</h3>
-      <p>'FindAndReplacePage.writeUp.pdfText'</p>
-      <h3>'FindAndReplacePage.writeUp.wordProcessorsTitle'</h3>
-      <p>'FindAndReplacePage.writeUp.wordProcessorsText'</p>
-      <h3>'FindAndReplacePage.writeUp.aiTitle'</h3>
-      <p>'FindAndReplacePage.writeUp.aiText'</p>
-      <h3>'FindAndReplacePage.writeUp.emailsTitle'</h3>
-      <p>'FindAndReplacePage.writeUp.emailsText'</p>
-      <p>'FindAndReplacePage.writeUp.supportedSourcesP2'</p>
-      <p>'FindAndReplacePage.writeUp.supportedSourcesP3'</p>
-
-      <h2>'FindAndReplacePage.writeUp.doesNotDoTitle'</h2>
-      <p>'FindAndReplacePage.writeUp.doesNotDoIntro'</p>
-      <ul>
-        <li>'FindAndReplacePage.writeUp.doesNotDoItem1'</li>
-        <li>'FindAndReplacePage.writeUp.doesNotDoItem2'</li>
-        <li>'FindAndReplacePage.writeUp.doesNotDoItem3'</li>
-        <li>'FindAndReplacePage.writeUp.doesNotDoItem4'</li>
-        <li>'FindAndReplacePage.writeUp.doesNotDoItem5'</li>
-      </ul>
-      <p>'FindAndReplacePage.writeUp.doesNotDoP1'</p>
-      <p>'FindAndReplacePage.writeUp.doesNotDoP2'</p>
-
-      <h2>'FindAndReplacePage.writeUp.privacyTitle'</h2>
-      <p>'FindAndReplacePage.writeUp.privacyP1'</p>
-      <p>'FindAndReplacePage.writeUp.privacyP2'</p>
-      <p>'FindAndReplacePage.writeUp.privacyP3'</p>
-
-      <h2>'FindAndReplacePage.writeUp.professionalTitle'</h2>
-      <p>'FindAndReplacePage.writeUp.professionalIntro'</p>
-      <h3>'FindAndReplacePage.writeUp.editorsTitle'</h3>
-      <p>'FindAndReplacePage.writeUp.editorsText'</p>
-      <h3>'FindAndReplacePage.writeUp.developersTitle'</h3>
-      <p>'FindAndReplacePage.writeUp.developersText'</p>
-      <h3>'FindAndReplacePage.writeUp.marketingTitle'</h3>
-      <p>'FindAndReplacePage.writeUp.marketingText'</p>
-      <h3>'FindAndReplacePage.writeUp.analystsTitle'</h3>
-      <p>'FindAndReplacePage.writeUp.analystsText'</p>
-      <p>'FindAndReplacePage.writeUp.professionalP1'</p>
-
-      <h2>'FindAndReplacePage.writeUp.educationalTitle'</h2>
-      <p>'FindAndReplacePage.writeUp.educationalP1'</p>
-      <p>'FindAndReplacePage.writeUp.educationalP2'</p>
-      <p>'FindAndReplacePage.writeUp.educationalP3'</p>
-
-      <h2>'FindAndReplacePage.writeUp.publishingTitle'</h2>
-      <p>'FindAndReplacePage.writeUp.publishingP1'</p>
-      <p>'FindAndReplacePage.writeUp.publishingP2'</p>
-      <p>'FindAndReplacePage.writeUp.publishingP3'</p>
-
-      <h2>'FindAndReplacePage.writeUp.accessibilityTitle'</h2>
-      <p>'FindAndReplacePage.writeUp.accessibilityP1'</p>
-      <p>'FindAndReplacePage.writeUp.accessibilityP2'</p>
-      <p>'FindAndReplacePage.writeUp.accessibilityP3'</p>
-
-      <h2>'FindAndReplacePage.writeUp.whyOnlineTitle'</h2>
-      <p>'FindAndReplacePage.writeUp.whyOnlineP1'</p>
-      <p>'FindAndReplacePage.writeUp.whyOnlineP2'</p>
-      <p>'FindAndReplacePage.writeUp.whyOnlineP3'</p>
-
-      <h2>'FindAndReplacePage.writeUp.edgeCasesTitle'</h2>
-      <p>'FindAndReplacePage.writeUp.edgeCasesIntro'</p>
-      <ul>
-        <li>'FindAndReplacePage.writeUp.edgeCasesItem1'</li>
-        <li>'FindAndReplacePage.writeUp.edgeCasesItem2'</li>
-        <li>'FindAndReplacePage.writeUp.edgeCasesItem3'</li>
-        <li>'FindAndReplacePage.writeUp.edgeCasesItem4'</li>
-        <li>'FindAndReplacePage.writeUp.edgeCasesItem5'</li>
-      </ul>
-      <p>'FindAndReplacePage.writeUp.edgeCasesP1'</p>
-      <p>'FindAndReplacePage.writeUp.edgeCasesP2'</p>
-
-      <h2>'FindAndReplacePage.writeUp.bestPracticesTitle'</h2>
-      <p>'FindAndReplacePage.writeUp.bestPracticesIntro'</p>
-      <ul>
-        <li>'FindAndReplacePage.writeUp.bestPracticesItem1'</li>
-        <li>'FindAndReplacePage.writeUp.bestPracticesItem2'</li>
-        <li>'FindAndReplacePage.writeUp.bestPracticesItem3'</li>
-        <li>'FindAndReplacePage.writeUp.bestPracticesItem4'</li>
-        <li>'FindAndReplacePage.writeUp.bestPracticesItem5'</li>
-      </ul>
-      <p>'FindAndReplacePage.writeUp.bestPracticesP1'</p>
-      <p>'FindAndReplacePage.writeUp.bestPracticesP2'</p>
-
-      <h2>'FindAndReplacePage.writeUp.misunderstoodTitle'</h2>
-      <h3>'FindAndReplacePage.writeUp.grammarToolTitle'</h3>
-      <p>'FindAndReplacePage.writeUp.grammarToolText'</p>
-      <h3>'FindAndReplacePage.writeUp.caseSensitivityTitle'</h3>
-      <p>'FindAndReplacePage.writeUp.caseSensitivityText'</p>
-      <h3>'FindAndReplacePage.writeUp.wholeWordTitle'</h3>
-      <p>'FindAndReplacePage.writeUp.wholeWordText'</p>
-      <h3>'FindAndReplacePage.writeUp.literalMatchingTitle'</h3>
-      <p>'FindAndReplacePage.writeUp.literalMatchingText'</p>
-      <h3>'FindAndReplacePage.writeUp.orderMattersTitle'</h3>
-      <p>'FindAndReplacePage.writeUp.orderMattersText'</p>
-
-      <h2>'FindAndReplacePage.writeUp.disclaimerTitle'</h2>
-      <p>'FindAndReplacePage.writeUp.disclaimerP1'</p>
-      <p>'FindAndReplacePage.writeUp.disclaimerP2'</p>
-
-      <h2>'FindAndReplacePage.writeUp.summaryTitle'</h2>
-      <p>'FindAndReplacePage.writeUp.summaryP1'</p>
-      <p>'FindAndReplacePage.writeUp.summaryP2'</p>
-      <p>'FindAndReplacePage.writeUp.summaryP3'</p>
-      <p>'FindAndReplacePage.writeUp.summaryP4'</p>
-    </div>
-  </section>
+        <h2>Summary</h2>
+        <p>Use Find and Replace to change every occurrence of a string in your text. Review the result to ensure all replacements are correct.</p>
+      </div>
+    </section>
   );
 }
 
@@ -244,11 +103,11 @@ export default async function FindAndReplacePage() {
     <>
       <JsonLd data={webPageSchema({ name: title, url, description })} />
       <ToolPageShell tool={{ ...toolData, title, shortDescription: description }} ui={<FindReplaceTool />} related={<RelatedTools currentSlug={toolData.slug} />}>
-        {/* Note: writeUp content needs to be hardcoded from en.json if needed */}
+        {createWriteUp()}
         <div className="mt-10 space-y-3">
-          <h2 className="text-2xl font-semibold text-slate-900">'FindAndReplacePage.faqHeading'</h2>
+          <h2 className="text-2xl font-semibold text-slate-900">Frequently Asked Questions</h2>
           <p className="text-slate-700">
-            'FindAndReplacePage.faqIntro'
+            Common questions and answers about the Find and Replace tool.
           </p>
         </div>
         <FAQSection items={pageFaqs} />

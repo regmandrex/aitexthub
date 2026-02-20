@@ -43,127 +43,24 @@ const faqKeys = [
 ];
 
 // Helper function to create writeUp content using translations
-// Note: writeUp content needs to be hardcoded from en.json if needed
-// Removed createWriteUp function
 function createWriteUp() {
   return (
-  <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
-    <div className="prose prose-slate max-w-none">
-      <h2>'ChatGPTOriginalityCheckerPage.writeUp.title'</h2>
-      <p>'ChatGPTOriginalityCheckerPage.writeUp.introP1'</p>
-      <p>'ChatGPTOriginalityCheckerPage.writeUp.introP2'</p>
-      <p>'ChatGPTOriginalityCheckerPage.writeUp.introP3'</p>
+    <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+      <div className="prose prose-slate max-w-none">
+        <h2>ChatGPT Originality Checker: Pre-Screen AI Content</h2>
+        <p>This free tool helps you estimate how original your text may appear to AI and plagiarism detectors. It analyzes patterns often associated with AI-generated or highly similar content.</p>
+        <p>Paste your text and run the check to see a score and suggestions. Use the result to revise before submitting to formal systems. It does not replace official plagiarism or AI checks required by your institution or employer.</p>
 
-      <h2>'ChatGPTOriginalityCheckerPage.writeUp.detectionTitle'</h2>
-      <p>'ChatGPTOriginalityCheckerPage.writeUp.detectionP1'</p>
+        <h2>Detection</h2>
+        <p>The checker looks at factors such as predictability, repetition, and structure. No single tool can definitively label text as AI or human; use this as a pre-screen only.</p>
 
-      <h3>'ChatGPTOriginalityCheckerPage.writeUp.authenticityTitle'</h3>
-      <p>'ChatGPTOriginalityCheckerPage.writeUp.authenticityP1'</p>
-      <p>'ChatGPTOriginalityCheckerPage.writeUp.authenticityP2'</p>
+        <h2>Using the Tool</h2>
+        <p>Paste your content and run the analysis. Review the feedback and edit as needed. For official decisions, use the tools and policies required by your school or workplace.</p>
 
-      <h3>'ChatGPTOriginalityCheckerPage.writeUp.patternsTitle'</h3>
-      <p>'ChatGPTOriginalityCheckerPage.writeUp.patternsP1'</p>
-      <p>'ChatGPTOriginalityCheckerPage.writeUp.patternsP2'</p>
-
-      <h3>'ChatGPTOriginalityCheckerPage.writeUp.combinedTitle'</h3>
-      <p>'ChatGPTOriginalityCheckerPage.writeUp.combinedP1'</p>
-      <p>'ChatGPTOriginalityCheckerPage.writeUp.combinedP2'</p>
-
-      <h2>'ChatGPTOriginalityCheckerPage.writeUp.applicationsTitle'</h2>
-      <p>'ChatGPTOriginalityCheckerPage.writeUp.applicationsP1'</p>
-
-      <h3>'ChatGPTOriginalityCheckerPage.writeUp.publisherTitle'</h3>
-      <p>'ChatGPTOriginalityCheckerPage.writeUp.publisherP1'</p>
-      <p>'ChatGPTOriginalityCheckerPage.writeUp.publisherP2'</p>
-
-      <h3>'ChatGPTOriginalityCheckerPage.writeUp.agencyTitle'</h3>
-      <p>'ChatGPTOriginalityCheckerPage.writeUp.agencyP1'</p>
-      <p>'ChatGPTOriginalityCheckerPage.writeUp.agencyP2'</p>
-
-      <h3>'ChatGPTOriginalityCheckerPage.writeUp.seoTitle'</h3>
-      <p>'ChatGPTOriginalityCheckerPage.writeUp.seoP1'</p>
-      <p>'ChatGPTOriginalityCheckerPage.writeUp.seoP2'</p>
-
-      <h3>'ChatGPTOriginalityCheckerPage.writeUp.freelanceTitle'</h3>
-      <p>'ChatGPTOriginalityCheckerPage.writeUp.freelanceP1'</p>
-      <p>'ChatGPTOriginalityCheckerPage.writeUp.freelanceP2'</p>
-
-      <h2>'ChatGPTOriginalityCheckerPage.writeUp.usingToolTitle'</h2>
-      <p>'ChatGPTOriginalityCheckerPage.writeUp.usingToolP1'</p>
-
-      <h3>'ChatGPTOriginalityCheckerPage.writeUp.analyzeTitle'</h3>
-      <p>'ChatGPTOriginalityCheckerPage.writeUp.analyzeP1'</p>
-      <p>'ChatGPTOriginalityCheckerPage.writeUp.analyzeP2'</p>
-
-      <h3>'ChatGPTOriginalityCheckerPage.writeUp.interpretingTitle'</h3>
-      <p>'ChatGPTOriginalityCheckerPage.writeUp.interpretingP1'</p>
-      <p>'ChatGPTOriginalityCheckerPage.writeUp.interpretingP2'</p>
-
-      <h3>'ChatGPTOriginalityCheckerPage.writeUp.improvementTitle'</h3>
-      <p>'ChatGPTOriginalityCheckerPage.writeUp.improvementP1'</p>
-      <p>'ChatGPTOriginalityCheckerPage.writeUp.improvementP2'</p>
-
-      <h2>'ChatGPTOriginalityCheckerPage.writeUp.comparingTitle'</h2>
-      <p>'ChatGPTOriginalityCheckerPage.writeUp.comparingP1'</p>
-
-      <h3>'ChatGPTOriginalityCheckerPage.writeUp.landscapeTitle'</h3>
-      <p>'ChatGPTOriginalityCheckerPage.writeUp.landscapeP1'</p>
-      <p>'ChatGPTOriginalityCheckerPage.writeUp.landscapeP2'</p>
-
-      <h3>'ChatGPTOriginalityCheckerPage.writeUp.differentToolsTitle'</h3>
-      <p>'ChatGPTOriginalityCheckerPage.writeUp.differentToolsP1'</p>
-      <p>'ChatGPTOriginalityCheckerPage.writeUp.differentToolsP2'</p>
-
-      <h3>'ChatGPTOriginalityCheckerPage.writeUp.costEffectiveTitle'</h3>
-      <p>'ChatGPTOriginalityCheckerPage.writeUp.costEffectiveP1'</p>
-      <p>'ChatGPTOriginalityCheckerPage.writeUp.costEffectiveP2'</p>
-
-      <h2>'ChatGPTOriginalityCheckerPage.writeUp.policiesTitle'</h2>
-      <p>'ChatGPTOriginalityCheckerPage.writeUp.policiesP1'</p>
-
-      <h3>'ChatGPTOriginalityCheckerPage.writeUp.expectationsTitle'</h3>
-      <p>'ChatGPTOriginalityCheckerPage.writeUp.expectationsP1'</p>
-      <p>'ChatGPTOriginalityCheckerPage.writeUp.expectationsP2'</p>
-
-      <h3>'ChatGPTOriginalityCheckerPage.writeUp.relationshipsTitle'</h3>
-      <p>'ChatGPTOriginalityCheckerPage.writeUp.relationshipsP1'</p>
-      <p>'ChatGPTOriginalityCheckerPage.writeUp.relationshipsP2'</p>
-
-      <h3>'ChatGPTOriginalityCheckerPage.writeUp.responsesTitle'</h3>
-      <p>'ChatGPTOriginalityCheckerPage.writeUp.responsesP1'</p>
-      <p>'ChatGPTOriginalityCheckerPage.writeUp.responsesP2'</p>
-
-      <h2>'ChatGPTOriginalityCheckerPage.writeUp.technicalTitle'</h2>
-      <p>'ChatGPTOriginalityCheckerPage.writeUp.technicalP1'</p>
-
-      <h3>'ChatGPTOriginalityCheckerPage.writeUp.triggerTitle'</h3>
-      <p>'ChatGPTOriginalityCheckerPage.writeUp.triggerP1'</p>
-      <p>'ChatGPTOriginalityCheckerPage.writeUp.triggerP2'</p>
-
-      <h3>'ChatGPTOriginalityCheckerPage.writeUp.factorsTitle'</h3>
-      <p>'ChatGPTOriginalityCheckerPage.writeUp.factorsP1'</p>
-      <p>'ChatGPTOriginalityCheckerPage.writeUp.factorsP2'</p>
-
-      <h3>'ChatGPTOriginalityCheckerPage.writeUp.limitationsTitle'</h3>
-      <p>'ChatGPTOriginalityCheckerPage.writeUp.limitationsP1'</p>
-      <p>'ChatGPTOriginalityCheckerPage.writeUp.limitationsP2'</p>
-
-      <h2>'ChatGPTOriginalityCheckerPage.writeUp.futureTitle'</h2>
-      <p>'ChatGPTOriginalityCheckerPage.writeUp.futureP1'</p>
-
-      <h3>'ChatGPTOriginalityCheckerPage.writeUp.evolvingTitle'</h3>
-      <p>'ChatGPTOriginalityCheckerPage.writeUp.evolvingP1'</p>
-      <p>'ChatGPTOriginalityCheckerPage.writeUp.evolvingP2'</p>
-
-      <h3>'ChatGPTOriginalityCheckerPage.writeUp.emergingTitle'</h3>
-      <p>'ChatGPTOriginalityCheckerPage.writeUp.emergingP1'</p>
-      <p>'ChatGPTOriginalityCheckerPage.writeUp.emergingP2'</p>
-
-      <h3>'ChatGPTOriginalityCheckerPage.writeUp.valueTitle'</h3>
-      <p>'ChatGPTOriginalityCheckerPage.writeUp.valueP1'</p>
-      <p>'ChatGPTOriginalityCheckerPage.writeUp.valueP2'</p>
-    </div>
-  </section>
+        <h2>Limitations</h2>
+        <p>Results are indicative, not conclusive. Different detectors use different methods; always follow your organization&apos;s required tools and disclosure rules.</p>
+      </div>
+    </section>
   );
 }
 
@@ -207,11 +104,11 @@ export default async function ChatGPTOriginalityCheckerPage() {
       <JsonLd data={webPageSchema({ name: title, url, description })} />
       <JsonLd data={webAppSchema} />
       <ToolPageShell tool={{ ...toolData, title, shortDescription: description }} ui={<ChatGPTOriginalityCheckerTool />} related={<RelatedTools currentSlug={toolData.slug} />}>
-        {/* Note: writeUp content needs to be hardcoded from en.json if needed */}
+        {createWriteUp()}
         <div className="mt-10 space-y-3">
-          <h2 className="text-2xl font-semibold text-slate-900">'ChatGPTOriginalityCheckerPage.faqHeading'</h2>
+          <h2 className="text-2xl font-semibold text-slate-900">Frequently Asked Questions</h2>
           <p className="text-slate-700">
-            'ChatGPTOriginalityCheckerPage.faqIntro'
+            Common questions and answers about the ChatGPT Originality checker.
           </p>
         </div>
         {/* Create translated FAQs from translation keys */}

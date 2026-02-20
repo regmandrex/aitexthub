@@ -46,133 +46,127 @@ const faqKeys = [
   { key: 'faq28', category: 'Integration' },
 ];
 
-// Helper function to create writeUp content using translations
-// Note: writeUp content needs to be hardcoded from en.json if needed
-// Removed createWriteUp function
 function createWriteUp() {
   return (
     <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
-        <h2>'AICodeFixerPage.writeUp.title'</h2>
-        
-        <h3>'AICodeFixerPage.writeUp.introductionTitle'</h3>
-        <p>'AICodeFixerPage.writeUp.introductionP1'</p>
-        <p>'AICodeFixerPage.writeUp.introductionP2'</p>
-        <p>'AICodeFixerPage.writeUp.introductionP3'</p>
-        <p>'AICodeFixerPage.writeUp.introductionP4'</p>
+        <h2>AI Code Fixer: Fix Common Issues in AI-Generated Code</h2>
 
-        <h2>'AICodeFixerPage.writeUp.whatIsTitle'</h2>
-        <p>'AICodeFixerPage.writeUp.whatIsP1'</p>
-        <p>'AICodeFixerPage.writeUp.whatIsP2'</p>
-        <p>'AICodeFixerPage.writeUp.whatIsP3'</p>
+        <h3>Introduction</h3>
+        <p>AI-generated code often has small but annoying issues: wrong indentation, mixed quotes, missing semicolons, or typos. Fixing these by hand is tedious. The AI Code Fixer helps you clean up that code quickly.</p>
+        <p>Paste your code, click fix, and get corrected output. The tool runs in your browser so your code is not sent to any server.</p>
+        <p>It supports common languages and focuses on formatting and obvious syntax fixes rather than deep refactoring.</p>
 
-        <h2>'AICodeFixerPage.writeUp.whyNeededTitle'</h2>
-        <p>'AICodeFixerPage.writeUp.whyNeededP1'</p>
-        
-        <h3>'AICodeFixerPage.writeUp.commonIssuesTitle'</h3>
-        <p>'AICodeFixerPage.writeUp.commonIssuesP1'</p>
+        <h2>What Is the AI Code Fixer?</h2>
+        <p>The AI Code Fixer is a free online tool that analyzes pasted code and applies fixes for common formatting and syntax issues.</p>
+        <p>It does not execute your code or change your logic—only indentation, quotes, brackets, and similar surface-level problems.</p>
+
+        <h2>Why You Need It</h2>
+        <p>AI code generators sometimes output inconsistent style or minor errors. Fixing these manually takes time.</p>
+
+        <h3>Common issues</h3>
+        <p>Typical problems include:</p>
         <ul>
-          <li>'AICodeFixerPage.writeUp.commonIssuesItem1'</li>
-          <li>'AICodeFixerPage.writeUp.commonIssuesItem2'</li>
-          <li>'AICodeFixerPage.writeUp.commonIssuesItem3'</li>
-          <li>'AICodeFixerPage.writeUp.commonIssuesItem4'</li>
+          <li>Inconsistent indentation (tabs vs spaces, wrong width)</li>
+          <li>Mixed single and double quotes</li>
+          <li>Unclosed or mismatched brackets</li>
+          <li>Missing or extra semicolons</li>
         </ul>
 
-        <h3>'AICodeFixerPage.writeUp.productivityTitle'</h3>
-        <p>'AICodeFixerPage.writeUp.productivityP1'</p>
-        <p>'AICodeFixerPage.writeUp.productivityP2'</p>
+        <h3>Productivity</h3>
+        <p>Using a fixer saves time so you can focus on logic and design instead of cleaning up formatting.</p>
+        <p>It also helps keep code consistent when copying from different sources.</p>
 
-        <h3>'AICodeFixerPage.writeUp.qualityTitle'</h3>
-        <p>'AICodeFixerPage.writeUp.qualityP1'</p>
+        <h3>Quality</h3>
+        <p>Consistent formatting improves readability and makes code easier to review and maintain.</p>
 
-        <h2>'AICodeFixerPage.writeUp.featuresTitle'</h2>
-        <p>'AICodeFixerPage.writeUp.featuresP1'</p>
+        <h2>Features</h2>
+        <p>The tool can fix a range of common code issues.</p>
 
-        <h3>'AICodeFixerPage.writeUp.indentationFixTitle'</h3>
-        <p>'AICodeFixerPage.writeUp.indentationFixP1'</p>
-        <p>'AICodeFixerPage.writeUp.indentationFixP2'</p>
+        <h3>Indentation</h3>
+        <p>It normalizes indentation (e.g., 2 or 4 spaces) and fixes mixed tabs and spaces.</p>
+        <p>This makes code easier to read and avoids editor-dependent display issues.</p>
 
-        <h3>'AICodeFixerPage.writeUp.quotesTitle'</h3>
-        <p>'AICodeFixerPage.writeUp.quotesP1'</p>
-        <p>'AICodeFixerPage.writeUp.quotesP2'</p>
+        <h3>Quotes</h3>
+        <p>It can normalize string quotes to a single style (single or double) where the language allows.</p>
+        <p>Consistent quoting improves style and reduces mistakes.</p>
 
-        <h3>'AICodeFixerPage.writeUp.syntaxTitle'</h3>
-        <p>'AICodeFixerPage.writeUp.syntaxP1'</p>
-        <p>'AICodeFixerPage.writeUp.syntaxP2'</p>
+        <h3>Syntax</h3>
+        <p>It can fix obvious syntax issues like missing semicolons in languages that use them, and similar small errors.</p>
+        <p>It does not replace a full linter or compiler—use it for quick cleanup.</p>
 
-        <h3>'AICodeFixerPage.writeUp.bracketsTitle'</h3>
-        <p>'AICodeFixerPage.writeUp.bracketsP1'</p>
+        <h3>Brackets</h3>
+        <p>It can fix mismatched or unclosed brackets, braces, and parentheses where possible.</p>
 
-        <h3>'AICodeFixerPage.writeUp.semicolonsTitle'</h3>
-        <p>'AICodeFixerPage.writeUp.semicolonsP1'</p>
+        <h3>Semicolons</h3>
+        <p>It can add or normalize semicolons in languages that expect them (e.g., JavaScript, C-style languages).</p>
 
-        <h3>'AICodeFixerPage.writeUp.typosTitle'</h3>
-        <p>'AICodeFixerPage.writeUp.typosP1'</p>
-        <p>'AICodeFixerPage.writeUp.typosP2'</p>
+        <h3>Typos</h3>
+        <p>It can correct common typos in keywords and identifiers when the intent is clear.</p>
+        <p>Always review changes; automatic fixes are not guaranteed to be correct in every case.</p>
 
-        <h2>'AICodeFixerPage.writeUp.howItWorksTitle'</h2>
-        <p>'AICodeFixerPage.writeUp.howItWorksP1'</p>
+        <h2>How It Works</h2>
+        <p>Paste your code into the input area, choose options if needed, and click the fix button. The tool analyzes the code and applies the selected fixes, then shows the result so you can copy it back.</p>
 
-        <h3>'AICodeFixerPage.writeUp.step1Title'</h3>
-        <p>'AICodeFixerPage.writeUp.step1P1'</p>
+        <h3>Step 1</h3>
+        <p>Paste or type your code into the input box.</p>
 
-        <h3>'AICodeFixerPage.writeUp.step2Title'</h3>
-        <p>'AICodeFixerPage.writeUp.step2P1'</p>
+        <h3>Step 2</h3>
+        <p>Select which fixes to apply (e.g., indentation, quotes).</p>
 
-        <h3>'AICodeFixerPage.writeUp.step3Title'</h3>
-        <p>'AICodeFixerPage.writeUp.step3P1'</p>
+        <h3>Step 3</h3>
+        <p>Click the fix button to process the code.</p>
 
-        <h3>'AICodeFixerPage.writeUp.step4Title'</h3>
-        <p>'AICodeFixerPage.writeUp.step4P1'</p>
+        <h3>Step 4</h3>
+        <p>Review the output and copy it into your project. Run your tests to confirm everything still works.</p>
 
-        <h2>'AICodeFixerPage.writeUp.bestPracticesTitle'</h2>
-        <p>'AICodeFixerPage.writeUp.bestPracticesP1'</p>
+        <h2>Best Practices</h2>
+        <p>Use the fixer as part of a normal workflow: paste, fix, then review and test.</p>
 
-        <h3>'AICodeFixerPage.writeUp.selectiveTitle'</h3>
-        <p>'AICodeFixerPage.writeUp.selectiveP1'</p>
+        <h3>Be selective</h3>
+        <p>Turn on only the fixes you need (e.g., indentation only) if you want to avoid broader changes.</p>
 
-        <h3>'AICodeFixerPage.writeUp.reviewTitle'</h3>
-        <p>'AICodeFixerPage.writeUp.reviewP1'</p>
+        <h3>Review</h3>
+        <p>Always skim the result. Automated fixes can occasionally change behavior in edge cases.</p>
 
-        <h3>'AICodeFixerPage.writeUp.testingTitle'</h3>
-        <p>'AICodeFixerPage.writeUp.testingP1'</p>
+        <h3>Testing</h3>
+        <p>After applying fixes, run your tests or build to ensure nothing broke.</p>
 
-        <h2>'AICodeFixerPage.writeUp.useCasesTitle'</h2>
-        <p>'AICodeFixerPage.writeUp.useCasesP1'</p>
+        <h2>Use Cases</h2>
+        <p>The tool is useful in several situations.</p>
 
-        <h3>'AICodeFixerPage.writeUp.aiGeneratedTitle'</h3>
-        <p>'AICodeFixerPage.writeUp.aiGeneratedP1'</p>
+        <h3>AI-generated code</h3>
+        <p>Clean up code from ChatGPT, Copilot, or other AI tools that has formatting or small syntax issues.</p>
 
-        <h3>'AICodeFixerPage.writeUp.quickFixesTitle'</h3>
-        <p>'AICodeFixerPage.writeUp.quickFixesP1'</p>
+        <h3>Quick fixes</h3>
+        <p>Fix indentation, quotes, or brackets in snippets before committing or sharing.</p>
 
-        <h3>'AICodeFixerPage.writeUp.learningTitle'</h3>
-        <p>'AICodeFixerPage.writeUp.learningP1'</p>
+        <h3>Learning</h3>
+        <p>See how consistent formatting and small syntax fixes improve code quality.</p>
 
-        <h2>'AICodeFixerPage.writeUp.securityTitle'</h2>
-        <p>'AICodeFixerPage.writeUp.securityP1'</p>
-        <p>'AICodeFixerPage.writeUp.securityP2'</p>
+        <h2>Security</h2>
+        <p>Processing runs in your browser. Your code is not uploaded to our servers.</p>
+        <p>Do not paste secrets, keys, or passwords. Prefer sanitized or sample code when trying the tool.</p>
 
-        <h2>'AICodeFixerPage.writeUp.limitationsTitle'</h2>
-        <p>'AICodeFixerPage.writeUp.limitationsP1'</p>
+        <h2>Limitations</h2>
+        <p>The tool is not a full IDE or linter. Limitations include:</p>
         <ul>
-          <li>'AICodeFixerPage.writeUp.limitationsItem1'</li>
-          <li>'AICodeFixerPage.writeUp.limitationsItem2'</li>
-          <li>'AICodeFixerPage.writeUp.limitationsItem3'</li>
+          <li>Best results with common languages and straightforward code</li>
+          <li>No guarantee that every fix is correct in all contexts</li>
+          <li>Complex refactoring or logic changes are out of scope</li>
         </ul>
 
-        <h2>'AICodeFixerPage.writeUp.comparisonTitle'</h2>
-        <p>'AICodeFixerPage.writeUp.comparisonP1'</p>
+        <h2>Comparison</h2>
+        <p>The AI Code Fixer complements linters and formatters.</p>
 
-        <h3>'AICodeFixerPage.writeUp.vsLintersTitle'</h3>
-        <p>'AICodeFixerPage.writeUp.vsLintersP1'</p>
+        <h3>Vs linters</h3>
+        <p>Linters report issues and enforce rules; the fixer applies concrete formatting and small syntax fixes. Use both for best results.</p>
 
-        <h3>'AICodeFixerPage.writeUp.vsFormattersTitle'</h3>
-        <p>'AICodeFixerPage.writeUp.vsFormattersP1'</p>
+        <h3>Vs formatters</h3>
+        <p>Dedicated formatters (e.g., Prettier) are great for full-project style. This tool is for quick, one-off cleanup of pasted code.</p>
 
-        <h2>'AICodeFixerPage.writeUp.conclusionTitle'</h2>
-        <p>'AICodeFixerPage.writeUp.conclusionP1'</p>
-        <p>'AICodeFixerPage.writeUp.conclusionP2'</p>
+        <h2>Conclusion</h2>
+        <p>The AI Code Fixer helps you quickly fix common formatting and syntax issues in pasted or AI-generated code. Use it to save time and keep code tidy, and always review and test the output.</p>
       </div>
     </section>
   );
@@ -209,12 +203,12 @@ export default async function AICodeFixerPage() {
     <>
       <JsonLd data={webPageSchema({ name: title, url, description })} />
       <ToolPageShell tool={{ ...toolData, title, shortDescription: description }} ui={<AICodeFixerTool />} related={<RelatedTools currentSlug={toolData.slug} />}>
-        {/* Note: writeUp content needs to be hardcoded from en.json if needed */}
+        {createWriteUp()}
 
         <div className="mt-10 space-y-3">
-          <h2 className="text-2xl font-semibold text-slate-900">'AICodeFixerPage.faqHeading'</h2>
+          <h2 className="text-2xl font-semibold text-slate-900">Frequently Asked Questions</h2>
           <p className="text-slate-700">
-            'AICodeFixerPage.faqIntro'
+            Common questions and answers about the AI Code Fixer.
           </p>
         </div>
 

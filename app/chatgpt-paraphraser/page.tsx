@@ -41,144 +41,66 @@ const faqKeys = [
   { key: 'faq24', category: 'ChatGPT Paraphraser FAQs' },
   { key: 'faq25', category: 'ChatGPT Paraphraser FAQs' },
 ];
-// Note: writeUp content needs to be hardcoded from en.json if needed
-// Removed createWriteUp function
 function createWriteUp() {
   return (
-  <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
-    <div className="prose prose-slate max-w-none">
-      <h2>'ChatGPTParaphraserPage.writeUp.title'</h2>
-      <p>'ChatGPTParaphraserPage.writeUp.introP1'</p>
-      <p>'ChatGPTParaphraserPage.writeUp.introP2'</p>
-      <p>'ChatGPTParaphraserPage.writeUp.introP3'</p>
+    <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+      <div className="prose prose-slate max-w-none">
+        <h2>ChatGPT Paraphraser: Free Online Text Rewriting Tool</h2>
+        <p>Paraphrasing means rewording text so the meaning stays the same but the wording changes. It helps you avoid repetition, match a different tone, or express ideas in your own words while keeping the original message.</p>
+        <p>This tool uses AI to suggest paraphrased versions of your text. It is not a plagiarism tool—paraphrasing changes wording; plagiarism is about attribution and copying. Always cite sources when you use someone else&apos;s ideas.</p>
 
-      <h2>'ChatGPTParaphraserPage.writeUp.understandingTitle'</h2>
-      <p>'ChatGPTParaphraserPage.writeUp.understandingP1'</p>
+        <h2>Understanding Paraphrasing</h2>
+        <p>Good paraphrasing keeps the main ideas and key facts but uses different sentence structure and vocabulary.</p>
 
-      <h3>'ChatGPTParaphraserPage.writeUp.whyTitle'</h3>
-      <p>'ChatGPTParaphraserPage.writeUp.whyP1'</p>
-      <p>'ChatGPTParaphraserPage.writeUp.whyP2'</p>
+        <h3>Why paraphrase</h3>
+        <p>Paraphrasing helps you clarify complex sources, vary your writing style, and integrate research without over-quoting. It is a standard skill in academic and professional writing.</p>
 
-      <h3>'ChatGPTParaphraserPage.writeUp.elementsTitle'</h3>
-      <p>'ChatGPTParaphraserPage.writeUp.elementsP1'</p>
-      <p>'ChatGPTParaphraserPage.writeUp.elementsP2'</p>
+        <h3>Elements</h3>
+        <p>Effective paraphrasing changes word choice and sentence structure while preserving meaning. It should sound like your voice, not a copy of the source.</p>
 
-      <h3>'ChatGPTParaphraserPage.writeUp.vsPlagiarismTitle'</h3>
-      <p>'ChatGPTParaphraserPage.writeUp.vsPlagiarismP1'</p>
-      <p>'ChatGPTParaphraserPage.writeUp.vsPlagiarismP2'</p>
+        <h3>Paraphrasing vs plagiarism</h3>
+        <p>Paraphrasing alone does not make use of a source acceptable. You must still cite the original. Plagiarism is using someone else&apos;s work or ideas without credit.</p>
 
-      <h2>'ChatGPTParaphraserPage.writeUp.howItWorksTitle'</h2>
-      <p>'ChatGPTParaphraserPage.writeUp.howItWorksP1'</p>
+        <h2>How It Works</h2>
+        <p>The tool analyzes your text and produces alternative phrasings using synonym substitution, sentence restructuring, and reordering while aiming to keep coherence.</p>
 
-      <h3>'ChatGPTParaphraserPage.writeUp.semanticTitle'</h3>
-      <p>'ChatGPTParaphraserPage.writeUp.semanticP1'</p>
+        <h3>Semantic understanding</h3>
+        <p>It tries to keep the same meaning when changing words and structure.</p>
 
-      <h3>'ChatGPTParaphraserPage.writeUp.synonymTitle'</h3>
-      <p>'ChatGPTParaphraserPage.writeUp.synonymP1'</p>
+        <h3>Synonyms and restructuring</h3>
+        <p>It uses synonyms and rewrites sentences so the result reads naturally. You should always review and edit the output.</p>
 
-      <h3>'ChatGPTParaphraserPage.writeUp.restructuringTitle'</h3>
-      <p>'ChatGPTParaphraserPage.writeUp.restructuringP1'</p>
+        <h2>Using the Tool</h2>
+        <p>Paste your text, run the paraphraser, and review the result. Use it as a starting point; then edit for accuracy, tone, and citation.</p>
 
-      <h3>'ChatGPTParaphraserPage.writeUp.coherenceTitle'</h3>
-      <p>'ChatGPTParaphraserPage.writeUp.coherenceP1'</p>
+        <h3>Input</h3>
+        <p>Use clear, complete sentences for best results. Very short or fragmentary text may not paraphrase well.</p>
 
-      <h2>'ChatGPTParaphraserPage.writeUp.usingTitle'</h2>
-      <p>'ChatGPTParaphraserPage.writeUp.usingP1'</p>
+        <h3>Review</h3>
+        <p>Always check that the paraphrased version is accurate and appropriate for your purpose. Fix any errors or awkward phrasing.</p>
 
-      <h3>'ChatGPTParaphraserPage.writeUp.inputTitle'</h3>
-      <p>'ChatGPTParaphraserPage.writeUp.inputP1'</p>
-      <p>'ChatGPTParaphraserPage.writeUp.inputP2'</p>
+        <h3>Citation</h3>
+        <p>If you paraphrase from a source, you must cite it. Paraphrasing does not remove the need for citation.</p>
 
-      <h3>'ChatGPTParaphraserPage.writeUp.reviewTitle'</h3>
-      <p>'ChatGPTParaphraserPage.writeUp.reviewP1'</p>
-      <p>'ChatGPTParaphraserPage.writeUp.reviewP2'</p>
+        <h2>Applications</h2>
+        <p>Use paraphrasing in academic writing, professional content, and learning—always with proper attribution.</p>
 
-      <h3>'ChatGPTParaphraserPage.writeUp.citationTitle'</h3>
-      <p>'ChatGPTParaphraserPage.writeUp.citationP1'</p>
-      <p>'ChatGPTParaphraserPage.writeUp.citationP2'</p>
+        <h3>Academic</h3>
+        <p>Paraphrase sources to integrate research into your arguments. Cite every source you paraphrase.</p>
 
-      <h2>'ChatGPTParaphraserPage.writeUp.applicationsTitle'</h2>
-      <p>'ChatGPTParaphraserPage.writeUp.applicationsP1'</p>
+        <h3>Professional and content</h3>
+        <p>Rephrase for clarity, tone, or audience. Do not use others&apos; ideas without permission or credit where required.</p>
 
-      <h3>'ChatGPTParaphraserPage.writeUp.academicTitle'</h3>
-      <p>'ChatGPTParaphraserPage.writeUp.academicP1'</p>
-      <p>'ChatGPTParaphraserPage.writeUp.academicP2'</p>
+        <h3>AI-generated content</h3>
+        <p>If you paraphrase AI output, follow your institution&apos;s or employer&apos;s rules on AI use and disclosure. Improve and verify the content; do not present it as someone else&apos;s human work without permission.</p>
 
-      <h3>'ChatGPTParaphraserPage.writeUp.professionalTitle'</h3>
-      <p>'ChatGPTParaphraserPage.writeUp.professionalP1'</p>
-      <p>'ChatGPTParaphraserPage.writeUp.professionalP2'</p>
+        <h2>Best Practices</h2>
+        <p>Understand the source, preserve meaning, match your audience, and cite. Use the tool to draft; then edit and cite properly.</p>
 
-      <h3>'ChatGPTParaphraserPage.writeUp.contentTitle'</h3>
-      <p>'ChatGPTParaphraserPage.writeUp.contentP1'</p>
-      <p>'ChatGPTParaphraserPage.writeUp.contentP2'</p>
-
-      <h3>'ChatGPTParaphraserPage.writeUp.learningTitle'</h3>
-      <p>'ChatGPTParaphraserPage.writeUp.learningP1'</p>
-      <p>'ChatGPTParaphraserPage.writeUp.learningP2'</p>
-
-      <h2>'ChatGPTParaphraserPage.writeUp.aiContentTitle'</h2>
-      <p>'ChatGPTParaphraserPage.writeUp.aiContentP1'</p>
-
-      <h3>'ChatGPTParaphraserPage.writeUp.effectsTitle'</h3>
-      <p>'ChatGPTParaphraserPage.writeUp.effectsP1'</p>
-      <p>'ChatGPTParaphraserPage.writeUp.effectsP2'</p>
-
-      <h3>'ChatGPTParaphraserPage.writeUp.improvingTitle'</h3>
-      <p>'ChatGPTParaphraserPage.writeUp.improvingP1'</p>
-      <p>'ChatGPTParaphraserPage.writeUp.improvingP2'</p>
-
-      <h2>'ChatGPTParaphraserPage.writeUp.bestPracticesTitle'</h2>
-      <p>'ChatGPTParaphraserPage.writeUp.bestPracticesP1'</p>
-
-      <h3>'ChatGPTParaphraserPage.writeUp.understandTitle'</h3>
-      <p>'ChatGPTParaphraserPage.writeUp.understandP1'</p>
-
-      <h3>'ChatGPTParaphraserPage.writeUp.substantialTitle'</h3>
-      <p>'ChatGPTParaphraserPage.writeUp.substantialP1'</p>
-
-      <h3>'ChatGPTParaphraserPage.writeUp.preserveTitle'</h3>
-      <p>'ChatGPTParaphraserPage.writeUp.preserveP1'</p>
-
-      <h3>'ChatGPTParaphraserPage.writeUp.matchTitle'</h3>
-      <p>'ChatGPTParaphraserPage.writeUp.matchP1'</p>
-
-      <h3>'ChatGPTParaphraserPage.writeUp.citeTitle'</h3>
-      <p>'ChatGPTParaphraserPage.writeUp.citeP1'</p>
-
-      <h2>'ChatGPTParaphraserPage.writeUp.techniquesTitle'</h2>
-      <p>'ChatGPTParaphraserPage.writeUp.techniquesP1'</p>
-
-      <h3>'ChatGPTParaphraserPage.writeUp.synonymSubTitle'</h3>
-      <p>'ChatGPTParaphraserPage.writeUp.synonymSubP1'</p>
-
-      <h3>'ChatGPTParaphraserPage.writeUp.voiceChangeTitle'</h3>
-      <p>'ChatGPTParaphraserPage.writeUp.voiceChangeP1'</p>
-
-      <h3>'ChatGPTParaphraserPage.writeUp.sentenceRestructureTitle'</h3>
-      <p>'ChatGPTParaphraserPage.writeUp.sentenceRestructureP1'</p>
-
-      <h3>'ChatGPTParaphraserPage.writeUp.reorderingTitle'</h3>
-      <p>'ChatGPTParaphraserPage.writeUp.reorderingP1'</p>
-
-      <h3>'ChatGPTParaphraserPage.writeUp.phraseTitle'</h3>
-      <p>'ChatGPTParaphraserPage.writeUp.phraseP1'</p>
-
-      <h2>'ChatGPTParaphraserPage.writeUp.limitationsTitle'</h2>
-      <p>'ChatGPTParaphraserPage.writeUp.limitationsP1'</p>
-
-      <h3>'ChatGPTParaphraserPage.writeUp.accuracyTitle'</h3>
-      <p>'ChatGPTParaphraserPage.writeUp.accuracyP1'</p>
-
-      <h3>'ChatGPTParaphraserPage.writeUp.styleTitle'</h3>
-      <p>'ChatGPTParaphraserPage.writeUp.styleP1'</p>
-
-      <h3>'ChatGPTParaphraserPage.writeUp.technicalTitle'</h3>
-      <p>'ChatGPTParaphraserPage.writeUp.technicalP1'</p>
-
-      <h3>'ChatGPTParaphraserPage.writeUp.lengthTitle'</h3>
-      <p>'ChatGPTParaphraserPage.writeUp.lengthP1'</p>
-    </div>
-  </section>
+        <h2>Limitations</h2>
+        <p>Output may sometimes change nuance or introduce errors. Technical or specialized text may need manual editing. Review everything before you use it.</p>
+      </div>
+    </section>
   );
 }
 
@@ -222,11 +144,11 @@ export default async function ChatGPTParaphraserPage() {
       <JsonLd data={webPageSchema({ name: title, url, description })} />
       <JsonLd data={webAppSchema} />
       <ToolPageShell tool={{ ...toolData, title, shortDescription: description }} ui={<ChatGPTParaphraserTool />} related={<RelatedTools currentSlug={toolData.slug} />}>
-        {/* Note: writeUp content needs to be hardcoded from en.json if needed */}
+        {createWriteUp()}
         <div className="mt-10 space-y-3">
-          <h2 className="text-2xl font-semibold text-slate-900">'ChatGPTParaphraserPage.faqHeading'</h2>
+          <h2 className="text-2xl font-semibold text-slate-900">Frequently Asked Questions</h2>
           <p className="text-slate-700">
-            'ChatGPTParaphraserPage.faqIntro'
+            Common questions and answers about the ChatGPT Paraphraser.
           </p>
         </div>
         {/* Create translated FAQs from translation keys */}

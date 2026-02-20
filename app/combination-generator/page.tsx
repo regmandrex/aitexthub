@@ -47,80 +47,26 @@ const faqKeys = [
   { key: 'faq30', category: 'Input' },
 ];
 
-// Helper function to create writeUp content using translations
-// Note: writeUp content needs to be hardcoded from en.json if needed
-// Removed createWriteUp function
 function createWriteUp() {
   return (
-  <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
-    <div className="prose prose-slate max-w-none">
-      <h2>'CombinationGeneratorPage.writeUp.title'</h2>
-      
-      <h2>'CombinationGeneratorPage.writeUp.introductionTitle'</h2>
-      <p>'CombinationGeneratorPage.writeUp.introductionP1'</p>
-      <p>'CombinationGeneratorPage.writeUp.introductionP2'</p>
-      <p>'CombinationGeneratorPage.writeUp.introductionP3'</p>
+    <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+      <div className="prose prose-slate max-w-none">
+        <h2>Combination Generator: All Possible Combinations Tool</h2>
+        <p>This free tool generates all possible combinations from a set of items. In combinations, order does not matter—so {`{A, B}`} and {`{B, A}`} are the same combination.</p>
 
-      <h2>'CombinationGeneratorPage.writeUp.whatAreCombinationsTitle'</h2>
-      <p>'CombinationGeneratorPage.writeUp.whatAreCombinationsP1'</p>
-      <p>'CombinationGeneratorPage.writeUp.whatAreCombinationsP2'</p>
-      <p>'CombinationGeneratorPage.writeUp.whatAreCombinationsP3'</p>
-      <p>'CombinationGeneratorPage.writeUp.whatAreCombinationsP4'</p>
+        <h2>What Are Combinations?</h2>
+        <p>A combination is a selection of items from a set where order is irrelevant. The number of ways to choose k items from n is given by the binomial coefficient C(n,k) = n! / (k!(n-k)!).</p>
 
-      <h2>'CombinationGeneratorPage.writeUp.howItWorksTitle'</h2>
-      <p>'CombinationGeneratorPage.writeUp.howItWorksP1'</p>
-      <p>'CombinationGeneratorPage.writeUp.howItWorksP2'</p>
-      <p>'CombinationGeneratorPage.writeUp.howItWorksP3'</p>
-      <p>'CombinationGeneratorPage.writeUp.howItWorksP4'</p>
-      <p>'CombinationGeneratorPage.writeUp.howItWorksP5'</p>
-      <p>'CombinationGeneratorPage.writeUp.howItWorksP6'</p>
+        <h2>How It Works</h2>
+        <p>Enter your items (e.g., letters, numbers, or words) and choose how many items per combination. The tool lists every possible combination. Processing runs in your browser.</p>
 
-      <h2>'CombinationGeneratorPage.writeUp.mathematicalFoundationTitle'</h2>
-      <p>'CombinationGeneratorPage.writeUp.mathematicalFoundationP1'</p>
-      <p>'CombinationGeneratorPage.writeUp.mathematicalFoundationP2'</p>
-      <p>'CombinationGeneratorPage.writeUp.mathematicalFoundationP3'</p>
-      <p>'CombinationGeneratorPage.writeUp.mathematicalFoundationP4'</p>
+        <h2>Use Cases</h2>
+        <p>Use it for lottery-style picks, sampling, password ideas, teaching combinatorics, or any task where you need all unordered subsets of a given size.</p>
 
-      <h2>'CombinationGeneratorPage.writeUp.useCasesTitle'</h2>
-      <p>'CombinationGeneratorPage.writeUp.useCasesP1'</p>
-      <p>'CombinationGeneratorPage.writeUp.useCasesP2'</p>
-      <p>'CombinationGeneratorPage.writeUp.useCasesP3'</p>
-      <p>'CombinationGeneratorPage.writeUp.useCasesP4'</p>
-      <p>'CombinationGeneratorPage.writeUp.useCasesP5'</p>
-      <p>'CombinationGeneratorPage.writeUp.useCasesP6'</p>
-      <p>'CombinationGeneratorPage.writeUp.useCasesP7'</p>
-
-      <h2>'CombinationGeneratorPage.writeUp.advancedFeaturesTitle'</h2>
-      <p>'CombinationGeneratorPage.writeUp.advancedFeaturesP1'</p>
-      <p>'CombinationGeneratorPage.writeUp.advancedFeaturesP2'</p>
-      <p>'CombinationGeneratorPage.writeUp.advancedFeaturesP3'</p>
-      <p>'CombinationGeneratorPage.writeUp.advancedFeaturesP4'</p>
-      <p>'CombinationGeneratorPage.writeUp.advancedFeaturesP5'</p>
-      <p>'CombinationGeneratorPage.writeUp.advancedFeaturesP6'</p>
-
-      <h2>'CombinationGeneratorPage.writeUp.bestPracticesTitle'</h2>
-      <p>'CombinationGeneratorPage.writeUp.bestPracticesP1'</p>
-      <p>'CombinationGeneratorPage.writeUp.bestPracticesP2'</p>
-      <p>'CombinationGeneratorPage.writeUp.bestPracticesP3'</p>
-      <p>'CombinationGeneratorPage.writeUp.bestPracticesP4'</p>
-      <p>'CombinationGeneratorPage.writeUp.bestPracticesP5'</p>
-
-      <h2>'CombinationGeneratorPage.writeUp.limitationsTitle'</h2>
-      <p>'CombinationGeneratorPage.writeUp.limitationsP1'</p>
-      <p>'CombinationGeneratorPage.writeUp.limitationsP2'</p>
-      <p>'CombinationGeneratorPage.writeUp.limitationsP3'</p>
-      <p>'CombinationGeneratorPage.writeUp.limitationsP4'</p>
-
-      <h2>'CombinationGeneratorPage.writeUp.comparisonTitle'</h2>
-      <p>'CombinationGeneratorPage.writeUp.comparisonP1'</p>
-      <p>'CombinationGeneratorPage.writeUp.comparisonP2'</p>
-      <p>'CombinationGeneratorPage.writeUp.comparisonP3'</p>
-
-      <h2>'CombinationGeneratorPage.writeUp.conclusionTitle'</h2>
-      <p>'CombinationGeneratorPage.writeUp.conclusionP1'</p>
-      <p>'CombinationGeneratorPage.writeUp.conclusionP2'</p>
-    </div>
-  </section>
+        <h2>Limitations</h2>
+        <p>Large sets produce many combinations. Use reasonable set sizes and subset sizes to avoid timeouts or huge output.</p>
+      </div>
+    </section>
   );
 }
 
@@ -169,11 +115,11 @@ export default async function CombinationGeneratorPage() {
       <JsonLd data={webPageSchema({ name: title, url, description })} />
       <JsonLd data={webAppSchema} />
       <ToolPageShell tool={{ ...toolData, title, shortDescription: description }} ui={<CombinationGeneratorTool />} related={<RelatedTools currentSlug={toolData.slug} />}>
-        {/* Note: writeUp content needs to be hardcoded from en.json if needed */}
+        {createWriteUp()}
         <div className="mt-10 space-y-3">
-          <h2 className="text-2xl font-semibold text-slate-900">'CombinationGeneratorPage.faqHeading'</h2>
+          <h2 className="text-2xl font-semibold text-slate-900">Frequently Asked Questions</h2>
           <p className="text-slate-700">
-            'CombinationGeneratorPage.faqIntro'
+            Common questions and answers about the Combination Generator.
           </p>
         </div>
         <FAQSection items={pageFaqs} />

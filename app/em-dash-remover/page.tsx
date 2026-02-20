@@ -57,162 +57,32 @@ const faqKeys = [
   { key: 'faq22', category: 'Responsible Use' },
 ];
 
-// Note: writeUp content needs to be hardcoded from en.json if needed
-// Removed createWriteUp function
 function createWriteUp() {
   return (
-  <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
-    <div className="prose prose-slate max-w-none">
-      <h2>'EmDashRemoverPage.writeUp.title'</h2>
-      <p>'EmDashRemoverPage.writeUp.intro'</p>
+    <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+      <div className="prose prose-slate max-w-none">
+        <h2>Em Dash Remover: Replace or Remove Em Dashes</h2>
+        <p>This free tool finds em dashes (—) in your text and replaces them with a character you choose—often a hyphen, comma, or space—or removes them. Useful when pasting from Word, PDFs, or web content into plain text or code.</p>
 
-      <h2>'EmDashRemoverPage.writeUp.introductionTitle'</h2>
-      <p>'EmDashRemoverPage.writeUp.introductionP1'</p>
-      <p>'EmDashRemoverPage.writeUp.introductionP2'</p>
-      <p>'EmDashRemoverPage.writeUp.introductionP3'</p>
-      <p>'EmDashRemoverPage.writeUp.introductionP4'</p>
+        <h2>What Is an Em Dash?</h2>
+        <p>An em dash (—) is a long dash used for pauses, asides, or emphasis. It can cause issues in plain text, URLs, or code, so replacing it with a hyphen or comma is common.</p>
 
-      <h2>'EmDashRemoverPage.writeUp.whatIsTitle'</h2>
-      <p>'EmDashRemoverPage.writeUp.whatIsP1'</p>
-      <p>'EmDashRemoverPage.writeUp.whatIsP2'</p>
-      <p>'EmDashRemoverPage.writeUp.whatIsP3'</p>
-      <p>'EmDashRemoverPage.writeUp.whatIsP4'</p>
+        <h2>Why It Matters</h2>
+        <p>Em dashes from copy-paste can break parsing, search, or formatting. Replacing them keeps text consistent and compatible with plain-text systems.</p>
 
-      <h2>'EmDashRemoverPage.writeUp.whyMattersTitle'</h2>
-      <p>'EmDashRemoverPage.writeUp.whyMattersP1'</p>
-      <p>'EmDashRemoverPage.writeUp.whyMattersP2'</p>
-      <p>'EmDashRemoverPage.writeUp.whyMattersP3'</p>
-      <p>'EmDashRemoverPage.writeUp.whyMattersP4'</p>
+        <h2>How It Works</h2>
+        <p>Paste your text, choose a replacement (hyphen, comma, space, or remove), and run. Processing is in your browser; your text is not sent to our servers.</p>
 
-      <h2>'EmDashRemoverPage.writeUp.howWorksTitle'</h2>
-      <h3>'EmDashRemoverPage.writeUp.step1Title'</h3>
-      <p>'EmDashRemoverPage.writeUp.step1Text'</p>
-      <h3>'EmDashRemoverPage.writeUp.step2Title'</h3>
-      <p>'EmDashRemoverPage.writeUp.step2Text'</p>
-      <h3>'EmDashRemoverPage.writeUp.step3Title'</h3>
-      <p>'EmDashRemoverPage.writeUp.step3Text'</p>
-      <h3>'EmDashRemoverPage.writeUp.step4Title'</h3>
-      <p>'EmDashRemoverPage.writeUp.step4P1'</p>
-      <p>'EmDashRemoverPage.writeUp.step4P2'</p>
+        <h2>What It Does Not Do</h2>
+        <p>It does not rewrite or paraphrase. It only finds and replaces em dashes (and optionally similar characters). Review the result to ensure it matches your needs.</p>
 
-      <h2>'EmDashRemoverPage.writeUp.commonProblemsTitle'</h2>
-      <p>'EmDashRemoverPage.writeUp.commonProblemsIntro'</p>
-      <ul>
-        <li>'EmDashRemoverPage.writeUp.commonProblemsItem1'</li>
-        <li>'EmDashRemoverPage.writeUp.commonProblemsItem2'</li>
-        <li>'EmDashRemoverPage.writeUp.commonProblemsItem3'</li>
-        <li>'EmDashRemoverPage.writeUp.commonProblemsItem4'</li>
-        <li>'EmDashRemoverPage.writeUp.commonProblemsItem5'</li>
-      </ul>
-      <p>'EmDashRemoverPage.writeUp.commonProblemsP1'</p>
-      <p>'EmDashRemoverPage.writeUp.commonProblemsP2'</p>
+        <h2>Privacy</h2>
+        <p>Your text is processed locally and is not stored or uploaded.</p>
 
-      <h2>'EmDashRemoverPage.writeUp.supportedSourcesTitle'</h2>
-      <p>'EmDashRemoverPage.writeUp.supportedSourcesP1'</p>
-      <h3>'EmDashRemoverPage.writeUp.webCmsTitle'</h3>
-      <p>'EmDashRemoverPage.writeUp.webCmsText'</p>
-      <h3>'EmDashRemoverPage.writeUp.pdfTitle'</h3>
-      <p>'EmDashRemoverPage.writeUp.pdfText'</p>
-      <h3>'EmDashRemoverPage.writeUp.wordTitle'</h3>
-      <p>'EmDashRemoverPage.writeUp.wordText'</p>
-      <h3>'EmDashRemoverPage.writeUp.emailsTitle'</h3>
-      <p>'EmDashRemoverPage.writeUp.emailsText'</p>
-      <h3>'EmDashRemoverPage.writeUp.aiTitle'</h3>
-      <p>'EmDashRemoverPage.writeUp.aiText'</p>
-      <h3>'EmDashRemoverPage.writeUp.chatTitle'</h3>
-      <p>'EmDashRemoverPage.writeUp.chatText'</p>
-      <p>'EmDashRemoverPage.writeUp.supportedSourcesP2'</p>
-
-      <h2>'EmDashRemoverPage.writeUp.doesNotDoTitle'</h2>
-      <p>'EmDashRemoverPage.writeUp.doesNotDoIntro'</p>
-      <ul>
-        <li>'EmDashRemoverPage.writeUp.doesNotDoItem1'</li>
-        <li>'EmDashRemoverPage.writeUp.doesNotDoItem2'</li>
-        <li>'EmDashRemoverPage.writeUp.doesNotDoItem3'</li>
-        <li>'EmDashRemoverPage.writeUp.doesNotDoItem4'</li>
-        <li>'EmDashRemoverPage.writeUp.doesNotDoItem5'</li>
-      </ul>
-      <p>'EmDashRemoverPage.writeUp.doesNotDoP1'</p>
-
-      <h2>'EmDashRemoverPage.writeUp.privacyTitle'</h2>
-      <p>'EmDashRemoverPage.writeUp.privacyP1'</p>
-      <p>'EmDashRemoverPage.writeUp.privacyP2'</p>
-      <p>'EmDashRemoverPage.writeUp.privacyP3'</p>
-
-      <h2>'EmDashRemoverPage.writeUp.professionalTitle'</h2>
-      <p>'EmDashRemoverPage.writeUp.professionalIntro'</p>
-      <h3>'EmDashRemoverPage.writeUp.editorsTitle'</h3>
-      <p>'EmDashRemoverPage.writeUp.editorsText'</p>
-      <h3>'EmDashRemoverPage.writeUp.developersTitle'</h3>
-      <p>'EmDashRemoverPage.writeUp.developersText'</p>
-      <h3>'EmDashRemoverPage.writeUp.marketingTitle'</h3>
-      <p>'EmDashRemoverPage.writeUp.marketingText'</p>
-      <h3>'EmDashRemoverPage.writeUp.legalTitle'</h3>
-      <p>'EmDashRemoverPage.writeUp.legalText'</p>
-      <p>'EmDashRemoverPage.writeUp.professionalP1'</p>
-      <p>'EmDashRemoverPage.writeUp.professionalP2'</p>
-
-      <h2>'EmDashRemoverPage.writeUp.educationalTitle'</h2>
-      <p>'EmDashRemoverPage.writeUp.educationalP1'</p>
-      <p>'EmDashRemoverPage.writeUp.educationalP2'</p>
-
-      <h2>'EmDashRemoverPage.writeUp.publishingTitle'</h2>
-      <p>'EmDashRemoverPage.writeUp.publishingP1'</p>
-      <p>'EmDashRemoverPage.writeUp.publishingP2'</p>
-      <p>'EmDashRemoverPage.writeUp.publishingP3'</p>
-
-      <h2>'EmDashRemoverPage.writeUp.accessibilityTitle'</h2>
-      <p>'EmDashRemoverPage.writeUp.accessibilityP1'</p>
-      <p>'EmDashRemoverPage.writeUp.accessibilityP2'</p>
-      <p>'EmDashRemoverPage.writeUp.accessibilityP3'</p>
-
-      <h2>'EmDashRemoverPage.writeUp.whyOnlineTitle'</h2>
-      <p>'EmDashRemoverPage.writeUp.whyOnlineP1'</p>
-      <p>'EmDashRemoverPage.writeUp.whyOnlineP2'</p>
-      <p>'EmDashRemoverPage.writeUp.whyOnlineP3'</p>
-
-      <h2>'EmDashRemoverPage.writeUp.edgeCasesTitle'</h2>
-      <p>'EmDashRemoverPage.writeUp.edgeCasesIntro'</p>
-      <ul>
-        <li>'EmDashRemoverPage.writeUp.edgeCasesItem1'</li>
-        <li>'EmDashRemoverPage.writeUp.edgeCasesItem2'</li>
-        <li>'EmDashRemoverPage.writeUp.edgeCasesItem3'</li>
-        <li>'EmDashRemoverPage.writeUp.edgeCasesItem4'</li>
-        <li>'EmDashRemoverPage.writeUp.edgeCasesItem5'</li>
-      </ul>
-      <p>'EmDashRemoverPage.writeUp.edgeCasesP1'</p>
-
-      <h2>'EmDashRemoverPage.writeUp.bestPracticesTitle'</h2>
-      <p>'EmDashRemoverPage.writeUp.bestPracticesIntro'</p>
-      <ul>
-        <li>'EmDashRemoverPage.writeUp.bestPracticesItem1'</li>
-        <li>'EmDashRemoverPage.writeUp.bestPracticesItem2'</li>
-        <li>'EmDashRemoverPage.writeUp.bestPracticesItem3'</li>
-        <li>'EmDashRemoverPage.writeUp.bestPracticesItem4'</li>
-        <li>'EmDashRemoverPage.writeUp.bestPracticesItem5'</li>
-      </ul>
-      <p>'EmDashRemoverPage.writeUp.bestPracticesP1'</p>
-
-      <h2>'EmDashRemoverPage.writeUp.misunderstoodTitle'</h2>
-      <h3>'EmDashRemoverPage.writeUp.notRewriteTitle'</h3>
-      <p>'EmDashRemoverPage.writeUp.notRewriteText'</p>
-      <h3>'EmDashRemoverPage.writeUp.differentCharsTitle'</h3>
-      <p>'EmDashRemoverPage.writeUp.differentCharsText'</p>
-      <h3>'EmDashRemoverPage.writeUp.rhythmTitle'</h3>
-      <p>'EmDashRemoverPage.writeUp.rhythmText'</p>
-      <h3>'EmDashRemoverPage.writeUp.plainTextLimitsTitle'</h3>
-      <p>'EmDashRemoverPage.writeUp.plainTextLimitsText'</p>
-
-      <h2>'EmDashRemoverPage.writeUp.disclaimerTitle'</h2>
-      <p>'EmDashRemoverPage.writeUp.disclaimerP1'</p>
-      <p>'EmDashRemoverPage.writeUp.disclaimerP2'</p>
-
-      <h2>'EmDashRemoverPage.writeUp.summaryTitle'</h2>
-      <p>'EmDashRemoverPage.writeUp.summaryP1'</p>
-      <p>'EmDashRemoverPage.writeUp.summaryP2'</p>
-      <p>'EmDashRemoverPage.writeUp.summaryP3'</p>
-    </div>
-  </section>
+        <h2>Summary</h2>
+        <p>Use the Em Dash Remover to normalize or remove em dashes in pasted text. Choose your replacement and review the output before using it.</p>
+      </div>
+    </section>
   );
 }
 
@@ -233,11 +103,11 @@ export default async function EmDashRemoverPage() {
     <>
       <JsonLd data={webPageSchema({ name: title, url, description })} />
       <ToolPageShell tool={{ ...toolData, title, shortDescription: description }} ui={<EmDashRemoverTool />} related={<RelatedTools currentSlug={toolData.slug} />}>
-        {/* Note: writeUp content needs to be hardcoded from en.json if needed */}
+        {createWriteUp()}
         <div className="mt-10 space-y-3">
-          <h2 className="text-2xl font-semibold text-slate-900">'EmDashRemoverPage.faqHeading'</h2>
+          <h2 className="text-2xl font-semibold text-slate-900">Frequently Asked Questions</h2>
           <p className="text-slate-700">
-            'EmDashRemoverPage.faqIntro'
+            Common questions and answers about the Em Dash Remover.
           </p>
         </div>
         <FAQSection items={pageFaqs} />

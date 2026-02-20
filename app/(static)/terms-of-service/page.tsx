@@ -13,27 +13,26 @@ export default async function TermsOfServicePage() {
   
   return (
     <article className="prose max-w-none prose-slate">
-      <h1>'TermsPage.title'</h1>
-      <p>'TermsPage.lastUpdated'</p>
-      <p>'TermsPage.intro'</p>
+      <h1>Terms of Service</h1>
+      <p>Last updated: February 2025</p>
+      <p>Welcome to GPT CLEAN UP. By using our website and tools, you agree to these Terms of Service. Please read them carefully.</p>
 
-      <h2>'TermsPage.section1Title'</h2>
-      <p>'TermsPage.section1Text'</p>
+      <h2>1. Acceptance of Terms</h2>
+      <p>By accessing or using the Service, you agree to be bound by these Terms. If you do not agree, do not use the Service.</p>
 
-      <h2>'TermsPage.section2Title'</h2>
-      <p>'TermsPage.section2Text1'</p>
-      <p>'TermsPage.section2Text2'</p>
+      <h2>2. Description of Service</h2>
+      <p>GPT CLEAN UP provides online text-processing and AI-related tools (the &quot;Service&quot;) for personal and lawful use.</p>
+      <p>We may change, suspend, or discontinue any part of the Service at any time without notice.</p>
 
-      <h2>'TermsPage.section3Title'</h2>
-      <p>'TermsPage.section3Text1'</p>
-      <p>'TermsPage.section3Text2'</p>
+      <h2>3. Acceptable Use</h2>
+      <p>You agree to use the Service only for lawful purposes and in accordance with these Terms. You must not:</p>
       <ul>
-        <li>'TermsPage.section3Item1'</li>
-        <li>'TermsPage.section3Item2'</li>
-        <li>'TermsPage.section3Item3'</li>
-        <li>'TermsPage.section3Item4'</li>
-        <li>'TermsPage.section3Item5'</li>
-        <li>'TermsPage.section3Item6'</li>
+        <li>use the Service for any illegal or unauthorized purpose</li>
+        <li>attempt to gain unauthorized access to our systems or other users&apos; data</li>
+        <li>interfere with or disrupt the Service or servers</li>
+        <li>use the Service to transmit malware or harmful code</li>
+        <li>scrape, automate, or overload the Service in a way that harms availability</li>
+        <li>violate any applicable laws or third-party rights</li>
       </ul>
 
       <h2>4. User Content</h2>

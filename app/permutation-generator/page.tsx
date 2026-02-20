@@ -51,96 +51,26 @@ const faqKeys = [
   { key: 'faq34', category: 'Technical' },
 ];
 
-// Helper function to create writeUp content using translations
-// Note: writeUp content needs to be hardcoded from en.json if needed
-// Removed createWriteUp function
 function createWriteUp() {
   return (
-  <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
-    <div className="prose prose-slate max-w-none">
-      <h2>'PermutationGeneratorPage.writeUp.title'</h2>
-      
-      <h2>'PermutationGeneratorPage.writeUp.introductionTitle'</h2>
-      <p>'PermutationGeneratorPage.writeUp.introductionP1'</p>
-      <p>'PermutationGeneratorPage.writeUp.introductionP2'</p>
-      <p>'PermutationGeneratorPage.writeUp.introductionP3'</p>
+    <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+      <div className="prose prose-slate max-w-none">
+        <h2>Permutation Generator: All Possible Orderings</h2>
+        <p>This free tool generates all possible permutations (orderings) of a set of items. In permutations, order matters—so ABC and BAC are different. Full permutations use every item once; partial permutations use a subset.</p>
 
-      <h2>'PermutationGeneratorPage.writeUp.whatArePermutationsTitle'</h2>
-      <p>'PermutationGeneratorPage.writeUp.whatArePermutationsP1'</p>
-      <p>'PermutationGeneratorPage.writeUp.whatArePermutationsP2'</p>
-      <p>'PermutationGeneratorPage.writeUp.whatArePermutationsP3'</p>
-      <p>'PermutationGeneratorPage.writeUp.whatArePermutationsP4'</p>
+        <h2>What Are Permutations?</h2>
+        <p>A permutation is an arrangement of items in a specific order. The number of permutations of n items is n! (n factorial). For k items chosen from n, the count is P(n,k) = n! / (n-k)!.</p>
 
-      <h2>'PermutationGeneratorPage.writeUp.howItWorksTitle'</h2>
-      <p>'PermutationGeneratorPage.writeUp.howItWorksP1'</p>
-      <p>'PermutationGeneratorPage.writeUp.howItWorksP2'</p>
-      <p>'PermutationGeneratorPage.writeUp.howItWorksP3'</p>
-      <p>'PermutationGeneratorPage.writeUp.howItWorksP4'</p>
-      <p>'PermutationGeneratorPage.writeUp.howItWorksP5'</p>
-      <p>'PermutationGeneratorPage.writeUp.howItWorksP6'</p>
-      <p>'PermutationGeneratorPage.writeUp.howItWorksP7'</p>
+        <h2>How It Works</h2>
+        <p>Enter your items and choose full or partial permutations (and how many per permutation if partial). The tool lists every ordering. Processing runs in your browser.</p>
 
-      <h2>'PermutationGeneratorPage.writeUp.mathematicalFoundationTitle'</h2>
-      <p>'PermutationGeneratorPage.writeUp.mathematicalFoundationP1'</p>
-      <p>'PermutationGeneratorPage.writeUp.mathematicalFoundationP2'</p>
-      <p>'PermutationGeneratorPage.writeUp.mathematicalFoundationP3'</p>
-      <p>'PermutationGeneratorPage.writeUp.mathematicalFoundationP4'</p>
-      <p>'PermutationGeneratorPage.writeUp.mathematicalFoundationP5'</p>
+        <h2>Use Cases</h2>
+        <p>Use it for password ideas, anagram-style orderings, scheduling, teaching combinatorics, or any task where order matters.</p>
 
-      <h2>'PermutationGeneratorPage.writeUp.useCasesTitle'</h2>
-      <p>'PermutationGeneratorPage.writeUp.useCasesP1'</p>
-      <p>'PermutationGeneratorPage.writeUp.useCasesP2'</p>
-      <p>'PermutationGeneratorPage.writeUp.useCasesP3'</p>
-      <p>'PermutationGeneratorPage.writeUp.useCasesP4'</p>
-      <p>'PermutationGeneratorPage.writeUp.useCasesP5'</p>
-      <p>'PermutationGeneratorPage.writeUp.useCasesP6'</p>
-      <p>'PermutationGeneratorPage.writeUp.useCasesP7'</p>
-      <p>'PermutationGeneratorPage.writeUp.useCasesP8'</p>
-      <p>'PermutationGeneratorPage.writeUp.useCasesP9'</p>
-
-      <h2>'PermutationGeneratorPage.writeUp.fullVsPartialTitle'</h2>
-      <p>'PermutationGeneratorPage.writeUp.fullVsPartialP1'</p>
-      <p>'PermutationGeneratorPage.writeUp.fullVsPartialP2'</p>
-      <p>'PermutationGeneratorPage.writeUp.fullVsPartialP3'</p>
-      <p>'PermutationGeneratorPage.writeUp.fullVsPartialP4'</p>
-
-      <h2>'PermutationGeneratorPage.writeUp.advancedFeaturesTitle'</h2>
-      <p>'PermutationGeneratorPage.writeUp.advancedFeaturesP1'</p>
-      <p>'PermutationGeneratorPage.writeUp.advancedFeaturesP2'</p>
-      <p>'PermutationGeneratorPage.writeUp.advancedFeaturesP3'</p>
-      <p>'PermutationGeneratorPage.writeUp.advancedFeaturesP4'</p>
-      <p>'PermutationGeneratorPage.writeUp.advancedFeaturesP5'</p>
-      <p>'PermutationGeneratorPage.writeUp.advancedFeaturesP6'</p>
-
-      <h2>'PermutationGeneratorPage.writeUp.bestPracticesTitle'</h2>
-      <p>'PermutationGeneratorPage.writeUp.bestPracticesP1'</p>
-      <p>'PermutationGeneratorPage.writeUp.bestPracticesP2'</p>
-      <p>'PermutationGeneratorPage.writeUp.bestPracticesP3'</p>
-      <p>'PermutationGeneratorPage.writeUp.bestPracticesP4'</p>
-      <p>'PermutationGeneratorPage.writeUp.bestPracticesP5'</p>
-
-      <h2>'PermutationGeneratorPage.writeUp.securityTitle'</h2>
-      <p>'PermutationGeneratorPage.writeUp.securityP1'</p>
-      <p>'PermutationGeneratorPage.writeUp.securityP2'</p>
-      <p>'PermutationGeneratorPage.writeUp.securityP3'</p>
-      <p>'PermutationGeneratorPage.writeUp.securityP4'</p>
-
-      <h2>'PermutationGeneratorPage.writeUp.limitationsTitle'</h2>
-      <p>'PermutationGeneratorPage.writeUp.limitationsP1'</p>
-      <p>'PermutationGeneratorPage.writeUp.limitationsP2'</p>
-      <p>'PermutationGeneratorPage.writeUp.limitationsP3'</p>
-      <p>'PermutationGeneratorPage.writeUp.limitationsP4'</p>
-
-      <h2>'PermutationGeneratorPage.writeUp.comparisonTitle'</h2>
-      <p>'PermutationGeneratorPage.writeUp.comparisonP1'</p>
-      <p>'PermutationGeneratorPage.writeUp.comparisonP2'</p>
-      <p>'PermutationGeneratorPage.writeUp.comparisonP3'</p>
-
-      <h2>'PermutationGeneratorPage.writeUp.conclusionTitle'</h2>
-      <p>'PermutationGeneratorPage.writeUp.conclusionP1'</p>
-      <p>'PermutationGeneratorPage.writeUp.conclusionP2'</p>
-    </div>
-  </section>
+        <h2>Limitations</h2>
+        <p>Large sets produce many permutations (e.g., 10 items = 3,628,800 full permutations). Use reasonable set sizes to avoid timeouts.</p>
+      </div>
+    </section>
   );
 }
 
@@ -191,9 +121,9 @@ export default async function PermutationGeneratorPage() {
       <ToolPageShell tool={{ ...toolData, title, shortDescription: description }} ui={<PermutationGeneratorTool />} related={<RelatedTools currentSlug={toolData.slug} />}>
         {/* Note: writeUp content needs to be hardcoded from en.json if needed */}
         <div className="mt-10 space-y-3">
-          <h2 className="text-2xl font-semibold text-slate-900">'PermutationGeneratorPage.faqHeading'</h2>
+          <h2 className="text-2xl font-semibold text-slate-900">Frequently Asked Questions</h2>
           <p className="text-slate-700">
-            'PermutationGeneratorPage.faqIntro'
+            Common questions and answers about the Permutation Generator.
           </p>
         </div>
         <FAQSection items={pageFaqs} />
