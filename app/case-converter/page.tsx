@@ -230,8 +230,13 @@ export default async function CaseConverterPage() {
   const title = toolData.title;
   const description = toolData.shortDescription;
 
-  // Note: FAQs need to be hardcoded from en.json if needed
-  const pageFaqs: FaqItem[] = [];
+  const pageFaqs: FaqItem[] = [
+    { category: 'General', question: 'What is the Case Converter tool?', answer: 'The Case Converter changes text capitalization without changing the words. You can convert to uppercase, lowercase, title case, sentence case, or toggle case. It runs in your browser and does not send your text to any server.' },
+    { category: 'Formatting', question: 'What is title case vs sentence case?', answer: 'Title case capitalizes the first letter of each word (e.g., "How To Use This Tool"). Sentence case capitalizes the first letter of each sentence only (e.g., "How to use this tool."). The tool applies the rule you select to the whole block.' },
+    { category: 'Usage', question: 'How do I use the case converter?', answer: 'Paste your text into the input field, choose a conversion mode (uppercase, lowercase, title case, sentence case, or toggle case), and click Convert. Copy the result from the output area. The tool preserves line breaks and spacing.' },
+    { category: 'Technical', question: 'Does it work with non-English text?', answer: 'Yes. The tool works on any letters (Latin and other scripts that have upper/lower variants). Characters that do not have case (e.g., numbers, symbols) are left unchanged.' },
+    { category: 'Privacy', question: 'Is my text stored?', answer: 'No. Conversion happens in your browser. Your text is not sent to our servers or stored. For sensitive content, you can use the tool without creating an account.' },
+  ];
 
   const url = `${siteUrl}/${toolSlug}/`;
 
@@ -239,7 +244,7 @@ export default async function CaseConverterPage() {
     <>
       <JsonLd data={webPageSchema({ name: title, url, description })} />
       <ToolPageShell tool={{ ...toolData, title, shortDescription: description }} ui={<CaseConverterTool />} related={<RelatedTools currentSlug={toolData.slug} />}>
-        {/* Note: writeUp content needs to be hardcoded from en.json if needed */}
+        {createWriteUp(() => '')}
         <div className="mt-10 space-y-3">
           <h2 className="text-2xl font-semibold text-slate-900">Case Converter - Frequently Asked Questions</h2>
           <p className="text-slate-700">

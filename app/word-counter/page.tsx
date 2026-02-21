@@ -235,8 +235,13 @@ export default async function WordCounterPage() {
   const description = toolData.shortDescription;
 
   // Note: FAQs and writeUp content would need to be hardcoded from en.json
-  // For now, using empty arrays - these should be populated with English content
-  const pageFaqs: FaqItem[] = [];
+  const pageFaqs: FaqItem[] = [
+    { category: 'General', question: 'What does the word counter count?', answer: 'The tool counts words, characters (with and without spaces), lines, sentences, and paragraphs. It uses whitespace to separate words and standard punctuation to detect sentence boundaries. Results are deterministic so the same text always gives the same counts.' },
+    { category: 'Usage', question: 'How do I use the word counter?', answer: 'Paste or type your text into the input box. Counts update as you edit. You can copy the results or use them to check limits for essays, forms, product descriptions, or any content with length requirements.' },
+    { category: 'Technical', question: 'Is my text sent to a server?', answer: 'No. Counting runs in your browser on the text you provide. Nothing is sent to our servers, so your content stays private.' },
+    { category: 'Formatting', question: 'Does it work with different languages?', answer: 'The tool counts words based on whitespace separation, so it works with any language that uses spaces between words. Languages that do not use spaces may show different word counts depending on how words are separated.' },
+    { category: 'Limits', question: 'Is there a character or word limit?', answer: 'Very long texts may take longer to process in the browser. For typical documents, essays, and articles, there is no practical limit. If you hit performance issues, try splitting the text.' },
+  ];
 
   const url = `${siteUrl}/${toolSlug}/`;
 
@@ -244,7 +249,7 @@ export default async function WordCounterPage() {
     <>
       <JsonLd data={webPageSchema({ name: title, url, description })} />
       <ToolPageShell tool={{ ...toolData, title, shortDescription: description }} ui={<WordCounterTool />} related={<RelatedTools currentSlug={toolData.slug} />}>
-        {/* Note: writeUp content needs to be hardcoded from en.json */}
+        {createWriteUp()}
         <div className="mt-10 space-y-3">
           <h2 className="text-2xl font-semibold text-slate-900">Frequently Asked Questions</h2>
           <p className="text-slate-700">

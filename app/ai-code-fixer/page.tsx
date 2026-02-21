@@ -199,6 +199,31 @@ export default async function AICodeFixerPage() {
 
   const url = `${siteUrl}/${toolSlug}/`;
 
+  const pageFaqs: FaqItem[] = [
+    { category: 'General', question: 'What is the AI Code Fixer?', answer: 'The AI Code Fixer is a free online tool that helps fix or improve code. It may suggest or apply corrections for common issues, formatting, or style. It runs in your browser and does not send your code to our servers.' },
+    { category: 'General', question: 'Is the AI Code Fixer free?', answer: 'Yes. This tool is free. Paste your code, run the fixer, and review the result. No account required.' },
+    { category: 'Usage', question: 'How do I use the AI Code Fixer?', answer: 'Paste your code into the input area and run the tool. Review the suggested or applied fixes and copy the result. Always test fixed code before using it in production.' },
+    { category: 'Technical', question: 'What does the fixer correct?', answer: 'It may fix formatting, indentation, common syntax issues, or style. Check the tool description for the exact scope. It does not replace a full linter or security review.' },
+    { category: 'Privacy', question: 'Is my code sent to a server or stored?', answer: 'No. The tool runs in your browser. Your code is not uploaded or stored. Safe for proprietary code.' },
+    { category: 'Use cases', question: 'Who should use an AI Code Fixer?', answer: 'Developers and students who want quick help with formatting or common code issues can use it. It is an aid, not a replacement for testing or human review.' },
+    { category: 'Limits', question: 'Can I fix long files?', answer: 'Typical file lengths work. Very long files may need to be split. Check the tool for limits.' },
+    { category: 'General', question: 'Will it change my code logic?', answer: 'The fixer aims to correct issues without changing intended behavior. Always review the output and run tests; the tool does not guarantee correctness.' },
+    { category: 'Technical', question: 'What languages does it support?', answer: 'The tool may support one or more languages. Check the tool description for supported languages and scope.' },
+    { category: 'Privacy', question: 'Do you keep a copy of my code?', answer: 'No. Processing is local in your browser. We do not store or log your code.' },
+    { category: 'Use cases', question: 'Can I use it for production code?', answer: 'You can use it as an aid. Always review and test the result. Do not rely on it alone for production changes.' },
+    { category: 'Technical', question: 'Does it work on mobile?', answer: 'Yes. The tool runs in the browser and works on phones and tablets.' },
+    { category: 'Limits', question: 'Is there a character or line limit?', answer: 'Typical limits are in the thousands of lines or characters. Check the tool interface.' },
+    { category: 'General', question: 'Do I need an account?', answer: 'No. You can use the AI Code Fixer without signing up.' },
+    { category: 'Usage', question: 'How often can I use it?', answer: 'The tool is free to use as often as you need.' },
+    { category: 'Technical', question: 'Does it fix security issues?', answer: 'The fixer may address some code quality or style issues. It is not a dedicated security scanner. Use proper security tools and review for sensitive code.' },
+    { category: 'Use cases', question: 'Is it suitable for learning?', answer: 'Yes. Students can use it to see suggested fixes and learn good practices. Always understand what changed and why.' },
+    { category: 'General', question: 'What is the difference from AI Code Cleaner?', answer: 'A code cleaner typically focuses on formatting and whitespace. A code fixer may suggest or apply logic or syntax fixes. Check each tool\'s description.' },
+    { category: 'Technical', question: 'Will it run or execute my code?', answer: 'No. The tool analyzes and may modify your code; it does not execute it. Run your own tests after applying fixes.' },
+    { category: 'Usage', question: 'Can I fix multiple files?', answer: 'You typically paste one block of code at a time. For multiple files, run the tool on each or combine as the tool allows.' },
+    { category: 'Technical', question: 'What about dependencies or imports?', answer: 'The fixer works on the code you paste. It does not resolve external dependencies or run in a full project context.' },
+    { category: 'Use cases', question: 'Is it good for refactoring?', answer: 'It may help with small fixes and style. For large refactors, use an IDE or dedicated refactoring tools and human review.' },
+  ];
+
   return (
     <>
       <JsonLd data={webPageSchema({ name: title, url, description })} />
@@ -211,17 +236,8 @@ export default async function AICodeFixerPage() {
             Common questions and answers about the AI Code Fixer.
           </p>
         </div>
-
-        {/* Create translated FAQs from translation keys */}
-        {(() => {
-          const pageFaqs: FaqItem[] = []; // Note: FAQs need to be hardcoded from en.json if needed
-          return (
-            <>
-              <FAQSection items={pageFaqs} />
-              <FaqJsonLd faqs={pageFaqs} />
-            </>
-          );
-        })()}
+        <FAQSection items={pageFaqs} />
+        <FaqJsonLd faqs={pageFaqs} />
       </ToolPageShell>
     </>
   );

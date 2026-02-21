@@ -648,6 +648,62 @@ export const toolPages: ToolPage[] = [
     seoTitle: 'ChatGPT Press Release Polisher - Polish Press Releases',
     category: 'professional',
   },
+  {
+    slug: 'fancy-english-translator',
+    title: 'Fancy English Translator',
+    description: 'Translate text into fancy, decorative, or stylized English with elegant fonts and ornate wording.',
+    seoTitle: 'Fancy English Translator - Fancy Text & Stylish English Generator',
+    category: 'generator',
+  },
+  {
+    slug: 'simlish-translator',
+    title: 'Simlish Translator',
+    description: 'Translate English or any text into Simlish, the fictional language from The Sims games.',
+    seoTitle: 'Simlish Translator - English to Simlish Converter',
+    category: 'generator',
+  },
+  {
+    slug: 'species-name-generator',
+    title: 'Species Name Generator',
+    description: 'Generate scientific-style species names for creatures, plants, and fictional organisms.',
+    seoTitle: 'Species Name Generator - Scientific & Fantasy Species Names',
+    category: 'generator',
+  },
+  {
+    slug: 'ganglish-translator',
+    title: 'Ganglish Translator',
+    description: 'Translate text into Ganglish—a blend of English and Punjabi often used in social and informal contexts.',
+    seoTitle: 'Ganglish Translator - English to Ganglish Converter',
+    category: 'generator',
+  },
+  {
+    slug: 'cartinese-translator',
+    title: 'Cartinese Translator',
+    description: 'Simulate or translate text into Cartinese, the exaggerated cartoon-style speech and expressions.',
+    seoTitle: 'Cartinese Translator - Cartoon Speech Simulator',
+    category: 'generator',
+  },
+  {
+    slug: 'word-descrambler',
+    title: 'Word Descrambler',
+    description: 'Unscramble jumbled letters to find words. Solve anagrams and word puzzles quickly.',
+    seoTitle: 'Word Descrambler - Unscramble Letters to Find Words',
+    category: 'text',
+  },
+  {
+    slug: 'gibberish-translator',
+    title: 'Gibberish Translator',
+    description: 'Translate text into Gibberish or decode Gibberish back to readable English.',
+    seoTitle: 'Gibberish Translator - Encode and Decode Gibberish',
+    category: 'generator',
+  },
+  {
+    slug: 'two-name-ambigram-generator',
+    title: 'Two Name Ambigram Generator',
+    description: 'Create ambigram designs that read as two different names when rotated or viewed from different angles.',
+    seoTitle: 'Ambigram Tattoo Generator - Two Name Ambigram Creator',
+    category: 'generator',
+  },
 ];
 
 export const categoryPages: CategoryPage[] = [

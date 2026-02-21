@@ -196,6 +196,31 @@ export default async function AICodeCleanerPage() {
 
   const url = `${siteUrl}/${toolSlug}/`;
 
+  const pageFaqs: FaqItem[] = [
+    { category: 'General', question: 'What is the AI Code Cleaner?', answer: 'The AI Code Cleaner is a free online tool that helps clean and format code. It can remove unnecessary whitespace, normalize indentation, and improve readability. It runs in your browser and does not send your code to our servers.' },
+    { category: 'General', question: 'Is the AI Code Cleaner free?', answer: 'Yes. This tool is free. Paste your code, run the cleaner, and copy the result. No account required.' },
+    { category: 'Usage', question: 'How do I use the AI Code Cleaner?', answer: 'Paste your code into the input area and run the tool. Review the cleaned output and copy it. You can adjust options if the tool offers them (e.g., indent size, trim trailing spaces).' },
+    { category: 'Technical', question: 'What languages does it support?', answer: 'The tool typically works on generic code or multiple languages (e.g., JavaScript, Python, HTML). Check the tool description for supported languages.' },
+    { category: 'Privacy', question: 'Is my code sent to a server or stored?', answer: 'No. The tool runs in your browser. Your code is not uploaded or stored. Safe for proprietary or confidential code.' },
+    { category: 'Use cases', question: 'Who should use an AI Code Cleaner?', answer: 'Developers and students who want to quickly clean pasted code, normalize formatting, or prepare code for commit or review can use it. It is a formatting aid, not a linter or security scanner.' },
+    { category: 'Limits', question: 'Can I clean long files?', answer: 'Typical file lengths work. Very long files may need to be processed in sections. Check the tool for limits.' },
+    { category: 'General', question: 'What does the cleaner do to my code?', answer: 'It typically trims trailing spaces, normalizes line endings, and may collapse or normalize indentation. It does not change logic or fix bugs unless the tool explicitly offers such features.' },
+    { category: 'Technical', question: 'Does it fix syntax errors?', answer: 'No. The cleaner focuses on formatting and whitespace. Use a linter or compiler to find and fix syntax errors.' },
+    { category: 'Privacy', question: 'Do you keep a copy of my code?', answer: 'No. Processing is local in your browser. We do not store or log your code.' },
+    { category: 'Use cases', question: 'Can I use it for production code?', answer: 'Yes, as a formatting step. Always review the output and run your own tests. The tool does not guarantee correctness.' },
+    { category: 'Technical', question: 'Does it work on mobile?', answer: 'Yes. The tool runs in the browser and works on phones and tablets. Pasting long code on mobile may be less convenient.' },
+    { category: 'Limits', question: 'Is there a character or line limit?', answer: 'Typical limits are in the thousands of lines or characters. Check the tool interface.' },
+    { category: 'General', question: 'Do I need an account?', answer: 'No. You can use the AI Code Cleaner without signing up.' },
+    { category: 'Usage', question: 'How often can I use it?', answer: 'The tool is free to use as often as you need.' },
+    { category: 'Technical', question: 'Will it change my logic or behavior?', answer: 'No. The cleaner aims to change only formatting (spaces, indentation, line breaks). It does not alter logic, variables, or control flow.' },
+    { category: 'Use cases', question: 'Is it suitable for team projects?', answer: 'Yes. Use it to normalize formatting before commit or review. Ensure the output matches your team\'s style guide.' },
+    { category: 'General', question: 'What is the difference from AI Code Fixer?', answer: 'A code cleaner typically focuses on formatting and whitespace. A code fixer may suggest or apply logic or syntax fixes. Check each tool\'s description for its scope.' },
+    { category: 'Technical', question: 'Does it support tabs vs spaces?', answer: 'Many cleaners let you choose indentation (tabs or spaces and width). Check the tool options.' },
+    { category: 'Usage', question: 'Can I clean minified code?', answer: 'You can paste minified code; the cleaner may normalize whitespace. It will not “un-minify” or beautify unless that is a stated feature.' },
+    { category: 'Technical', question: 'What about line endings (CRLF vs LF)?', answer: 'Some cleaners normalize line endings to LF or CRLF. Check the tool options if you need a specific format.' },
+    { category: 'Use cases', question: 'Is it good for learning?', answer: 'Yes. Students can use it to see how formatting affects readability and to prepare code for submission or review.' },
+  ];
+
   return (
     <>
       <JsonLd data={webPageSchema({ name: title, url, description })} />
@@ -208,17 +233,8 @@ export default async function AICodeCleanerPage() {
             Common questions and answers about the AI Code Cleaner.
           </p>
         </div>
-
-        {/* Create translated FAQs from translation keys */}
-        {(() => {
-          const pageFaqs: FaqItem[] = []; // Note: FAQs need to be hardcoded from en.json if needed
-          return (
-            <>
-              <FAQSection items={pageFaqs} />
-              <FaqJsonLd faqs={pageFaqs} />
-            </>
-          );
-        })()}
+        <FAQSection items={pageFaqs} />
+        <FaqJsonLd faqs={pageFaqs} />
       </ToolPageShell>
     </>
   );

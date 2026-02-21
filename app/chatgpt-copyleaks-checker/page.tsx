@@ -109,6 +109,31 @@ export default async function ChatGPTCopyleaksCheckerPage() {
     url,
   };
 
+  const pageFaqs: FaqItem[] = [
+    { category: 'General', question: 'What is the ChatGPT Copyleaks checker?', answer: 'The ChatGPT Copyleaks checker is a free online tool that helps you estimate how your text might be perceived by plagiarism and AI detection systems like Copyleaks. It is not Copyleaks and does not submit your text to any external service. Use it for pre-screening only.' },
+    { category: 'General', question: 'Is the Copyleaks checker free?', answer: 'Yes. This tool is free. Paste your text, run the check, and review the result. Processing runs in your browser; your text is not sent to our servers or to Copyleaks.' },
+    { category: 'Accuracy', question: 'How accurate is the Copyleaks checker?', answer: 'The tool gives an estimate based on common signals. It is not the same as Copyleaks and cannot replicate Copyleaks results. Use it for pre-screening and revision only.' },
+    { category: 'Privacy', question: 'Is my text sent to Copyleaks or stored?', answer: 'No. The tool runs in your browser. Your text is not sent to Copyleaks, our servers, or any third party. It is not stored.' },
+    { category: 'Usage', question: 'How do I use the ChatGPT Copyleaks checker?', answer: 'Paste your text into the input area and run the check. Review the result and any suggestions. Revise as needed. For official decisions, use the tools required by your institution or employer.' },
+    { category: 'Technical', question: 'What does the tool analyze?', answer: 'The tool looks at patterns often associated with AI-generated or low-originality text. It does not compare your text to the full web or Copyleaks databases.' },
+    { category: 'Use cases', question: 'Who should use a Copyleaks checker?', answer: 'Students, writers, and professionals who want a quick pre-check before submitting to Copyleaks or similar systems can use it. It is a screening aid, not a replacement for official checks.' },
+    { category: 'Limits', question: 'Does it replace official Copyleaks or Turnitin?', answer: 'No. For final plagiarism or AI decisions, use the tools and policies required by your organization. This checker is for pre-screening only.' },
+    { category: 'General', question: 'Can I check long documents?', answer: 'Typical article and essay lengths work. Very long texts may need to be split. Check the tool for limits.' },
+    { category: 'Privacy', question: 'Do you keep a copy of my text?', answer: 'No. Processing is local in your browser. We do not store or log your content.' },
+    { category: 'Technical', question: 'Why do different tools give different results?', answer: 'Each system uses different models and data. This tool gives an approximate indication; it will not match Copyleaks or others exactly.' },
+    { category: 'Usage', question: 'Should I revise based on the result?', answer: 'You can use the feedback to improve clarity and originality. Always ensure your work meets your institution\'s or employer\'s requirements.' },
+    { category: 'General', question: 'What is Copyleaks?', answer: 'Copyleaks is a third-party plagiarism and AI detection service. This tool is not Copyleaks; it is a separate utility for pre-screening. We do not submit your text to Copyleaks.' },
+    { category: 'Use cases', question: 'Can educators use this tool?', answer: 'Educators can use it to understand how such tools work or to pre-check sample text. For student work, follow your institution\'s approved tools and policies.' },
+    { category: 'Accuracy', question: 'Will this match my Copyleaks or Turnitin score?', answer: 'No. Different systems use different methods. This tool gives an approximate indication only.' },
+    { category: 'Technical', question: 'Does it work on mobile?', answer: 'Yes. The tool runs in the browser and works on phones and tablets.' },
+    { category: 'Limits', question: 'Is there a word limit?', answer: 'Typical limits are in the thousands of words. Check the tool interface.' },
+    { category: 'General', question: 'Do I need an account?', answer: 'No. You can use the ChatGPT Copyleaks checker without signing up.' },
+    { category: 'Usage', question: 'How often can I use it?', answer: 'The tool is free to use as often as you need.' },
+    { category: 'Technical', question: 'What languages does it support?', answer: 'The tool is optimized for English. Other languages may work but accuracy can vary.' },
+    { category: 'Use cases', question: 'Is it suitable for academic submissions?', answer: 'Use it only as a pre-screen. Final compliance must be with your institution\'s required tools and academic integrity policy.' },
+    { category: 'SEO', question: 'Is the Copyleaks checker useful for publishers?', answer: 'Publishers can use it to get a rough sense of originality. It does not replace formal plagiarism checks or contractual requirements.' },
+  ];
+
   return (
     <>
       <JsonLd data={webPageSchema({ name: title, url, description })} />
@@ -121,16 +146,8 @@ export default async function ChatGPTCopyleaksCheckerPage() {
             Common questions and answers about the ChatGPT Copyleaks checker.
           </p>
         </div>
-        {/* Create translated FAQs from translation keys */}
-        {(() => {
-          const pageFaqs: FaqItem[] = []; // Note: FAQs need to be hardcoded from en.json if needed
-          return (
-            <>
-              <FAQSection items={pageFaqs} />
-              <FaqJsonLd faqs={pageFaqs} />
-            </>
-          );
-        })()}
+        <FAQSection items={pageFaqs} />
+        <FaqJsonLd faqs={pageFaqs} />
       </ToolPageShell>
     </>
   );

@@ -109,6 +109,31 @@ export default async function ChatGPTSentenceRewriterPage() {
     url,
   };
 
+  const pageFaqs: FaqItem[] = [
+    { category: 'General', question: 'What is the ChatGPT Sentence Rewriter?', answer: 'The ChatGPT Sentence Rewriter is a free online tool that rewrites sentences to vary structure and wording while keeping meaning. It helps you rephrase for clarity, style, or to avoid repetition. It runs in your browser and does not send your text to our servers.' },
+    { category: 'General', question: 'Is the Sentence Rewriter free?', answer: 'Yes. This tool is free. Paste your text, run the rewriter, and copy the result. No account required.' },
+    { category: 'Usage', question: 'How do I use the ChatGPT Sentence Rewriter?', answer: 'Paste your sentences or paragraph into the input area and run the tool. Review the rewritten output and edit as needed. You can run it multiple times for different phrasings.' },
+    { category: 'Technical', question: 'Does it change the meaning of my text?', answer: 'The tool aims to preserve meaning while changing wording and structure. Always review the output to ensure accuracy and that your intent is preserved.' },
+    { category: 'Privacy', question: 'Is my text sent to a server or stored?', answer: 'No. The tool runs in your browser. Your text is not uploaded or stored.' },
+    { category: 'Use cases', question: 'Who should use a sentence rewriter?', answer: 'Writers, students, and professionals who want to rephrase sentences for clarity, avoid repetition, or adapt tone can use it. It is a writing aid, not a replacement for your own editing.' },
+    { category: 'Limits', question: 'Can I rewrite long documents?', answer: 'Typical paragraph and article lengths work. Very long texts may need to be processed in sections. Check the tool for limits.' },
+    { category: 'General', question: 'What is the difference from a paraphraser?', answer: 'A sentence rewriter often focuses on sentence-level changes. A paraphraser may work on whole paragraphs. Both aim to rephrase while preserving meaning; the scope may differ.' },
+    { category: 'SEO', question: 'Is the sentence rewriter useful for SEO?', answer: 'It can help vary phrasing and avoid duplicate-sounding content. Use it as part of an editorial process; ensure quality and relevance for your audience.' },
+    { category: 'Technical', question: 'What languages does it support?', answer: 'The tool is optimized for English. Other languages may work but quality can vary.' },
+    { category: 'Usage', question: 'Should I edit the output?', answer: 'Yes. Always review and edit the result. The tool supports your workflow; it does not replace judgment or accuracy checks.' },
+    { category: 'Privacy', question: 'Do you keep a copy of my text?', answer: 'No. Processing is local in your browser. We do not store or log your content.' },
+    { category: 'General', question: 'Can I use it for academic writing?', answer: 'You can use it to rephrase for clarity. Ensure your use complies with your institution\'s policy on AI and writing tools, and that you retain responsibility for content.' },
+    { category: 'Use cases', question: 'Can educators use this tool?', answer: 'Educators can use it to demonstrate rephrasing or to prepare materials. For student work, follow your institution\'s policies.' },
+    { category: 'Technical', question: 'Does it work on mobile?', answer: 'Yes. The tool runs in the browser and works on phones and tablets.' },
+    { category: 'Limits', question: 'Is there a word limit?', answer: 'Typical limits are in the thousands of words. Check the tool interface.' },
+    { category: 'General', question: 'Do I need an account?', answer: 'No. You can use the ChatGPT Sentence Rewriter without signing up.' },
+    { category: 'Usage', question: 'How often can I use it?', answer: 'The tool is free to use as often as you need.' },
+    { category: 'Technical', question: 'Will it fix grammar?', answer: 'Rephrasing may improve some grammar by changing structure. It is not a dedicated grammar checker. Use a grammar tool if you need full correction.' },
+    { category: 'Use cases', question: 'Is it suitable for professional content?', answer: 'Yes, as a writing aid. Always review output for tone, accuracy, and compliance with your organization\'s standards.' },
+    { category: 'General', question: 'What is sentence rewriting?', answer: 'Sentence rewriting means rephrasing one or more sentences to say the same thing in different words or structure. It helps with clarity, style, and avoiding repetition.' },
+    { category: 'Technical', question: 'Does it preserve citations or quotes?', answer: 'The tool may rephrase quoted or cited text if it is in the input. Always verify citations and quotes after rewriting.' },
+  ];
+
   return (
     <>
       <JsonLd data={webPageSchema({ name: title, url, description })} />
@@ -121,16 +146,8 @@ export default async function ChatGPTSentenceRewriterPage() {
             Common questions and answers about the ChatGPT Sentence Rewriter.
           </p>
         </div>
-        {/* Create translated FAQs from translation keys */}
-        {(() => {
-          const pageFaqs: FaqItem[] = []; // Note: FAQs need to be hardcoded from en.json if needed
-          return (
-            <>
-              <FAQSection items={pageFaqs} />
-              <FaqJsonLd faqs={pageFaqs} />
-            </>
-          );
-        })()}
+        <FAQSection items={pageFaqs} />
+        <FaqJsonLd faqs={pageFaqs} />
       </ToolPageShell>
     </>
   );

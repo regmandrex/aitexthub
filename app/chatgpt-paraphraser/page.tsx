@@ -139,6 +139,31 @@ export default async function ChatGPTParaphraserPage() {
     url,
   };
 
+  const pageFaqs: FaqItem[] = [
+    { category: 'General', question: 'What is the ChatGPT Paraphraser?', answer: 'The ChatGPT Paraphraser is a free online tool that rewrites text to say the same thing in different words. It helps you rephrase for clarity, avoid repetition, or adapt tone. It runs in your browser and does not send your text to our servers.' },
+    { category: 'General', question: 'Is the Paraphraser free?', answer: 'Yes. This tool is free. Paste your text, run the paraphraser, and copy the result. No account required.' },
+    { category: 'Usage', question: 'How do I use the ChatGPT Paraphraser?', answer: 'Paste your text into the input area and run the tool. Review the paraphrased output and edit as needed. You can run it multiple times for different phrasings.' },
+    { category: 'Technical', question: 'Does it preserve meaning?', answer: 'The tool aims to preserve meaning while changing wording. Always review the output to ensure accuracy and that your intent is preserved.' },
+    { category: 'Privacy', question: 'Is my text sent to a server or stored?', answer: 'No. The tool runs in your browser. Your text is not uploaded or stored.' },
+    { category: 'Use cases', question: 'Who should use a paraphraser?', answer: 'Writers, students, and professionals who want to rephrase for clarity, avoid plagiarism concerns with wording, or adapt content can use it. It is a writing aid, not a replacement for your own editing or citation.' },
+    { category: 'Limits', question: 'Can I paraphrase long documents?', answer: 'Typical paragraph and article lengths work. Very long texts may need to be processed in sections. Check the tool for limits.' },
+    { category: 'General', question: 'What is the difference from a sentence rewriter?', answer: 'A paraphraser often works on whole paragraphs or blocks. A sentence rewriter may focus on sentence-level changes. Both rephrase while aiming to preserve meaning.' },
+    { category: 'SEO', question: 'Is the paraphraser useful for SEO?', answer: 'It can help vary phrasing and avoid duplicate-sounding content. Use it as part of an editorial process; ensure quality and relevance for your audience.' },
+    { category: 'Technical', question: 'What languages does it support?', answer: 'The tool is optimized for English. Other languages may work but quality can vary.' },
+    { category: 'Usage', question: 'Should I edit the output?', answer: 'Yes. Always review and edit the result. The tool supports your workflow; it does not replace judgment or accuracy checks.' },
+    { category: 'Privacy', question: 'Do you keep a copy of my text?', answer: 'No. Processing is local in your browser. We do not store or log your content.' },
+    { category: 'General', question: 'Can I use it for academic writing?', answer: 'You can use it to rephrase for clarity. Ensure your use complies with your institution\'s policy on AI and writing tools. You are responsible for proper citation and originality.' },
+    { category: 'Use cases', question: 'Can educators use this tool?', answer: 'Educators can use it to demonstrate rephrasing or to prepare materials. For student work, follow your institution\'s policies.' },
+    { category: 'Technical', question: 'Does it work on mobile?', answer: 'Yes. The tool runs in the browser and works on phones and tablets.' },
+    { category: 'Limits', question: 'Is there a word limit?', answer: 'Typical limits are in the thousands of words. Check the tool interface.' },
+    { category: 'General', question: 'Do I need an account?', answer: 'No. You can use the ChatGPT Paraphraser without signing up.' },
+    { category: 'Usage', question: 'How often can I use it?', answer: 'The tool is free to use as often as you need.' },
+    { category: 'Technical', question: 'Will it fix grammar?', answer: 'Rephrasing may improve some grammar. It is not a dedicated grammar checker. Use a grammar tool if you need full correction.' },
+    { category: 'Use cases', question: 'Is it suitable for professional content?', answer: 'Yes, as a writing aid. Always review output for tone, accuracy, and compliance with your organization\'s standards.' },
+    { category: 'General', question: 'What is paraphrasing?', answer: 'Paraphrasing means rewriting text in your own words while keeping the original meaning. It is used for clarity, style, and to avoid copying wording.' },
+    { category: 'Technical', question: 'Does it preserve citations or quotes?', answer: 'The tool may rephrase quoted or cited text if it is in the input. Always verify citations and quotes after paraphrasing.' },
+  ];
+
   return (
     <>
       <JsonLd data={webPageSchema({ name: title, url, description })} />
@@ -151,16 +176,8 @@ export default async function ChatGPTParaphraserPage() {
             Common questions and answers about the ChatGPT Paraphraser.
           </p>
         </div>
-        {/* Create translated FAQs from translation keys */}
-        {(() => {
-          const pageFaqs: FaqItem[] = []; // Note: FAQs need to be hardcoded from en.json if needed
-          return (
-            <>
-              <FAQSection items={pageFaqs} />
-              <FaqJsonLd faqs={pageFaqs} />
-            </>
-          );
-        })()}
+        <FAQSection items={pageFaqs} />
+        <FaqJsonLd faqs={pageFaqs} />
       </ToolPageShell>
     </>
   );

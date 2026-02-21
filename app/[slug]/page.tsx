@@ -11,7 +11,17 @@ type PageProps = {
 // Generate static params for all tools at build time
 // Exclude tools that have their own dedicated page routes
 export function generateStaticParams() {
-  const toolsWithDedicatedPages = new Set(['korean-nickname-generator']);
+  const toolsWithDedicatedPages = new Set([
+  'korean-nickname-generator',
+  'fancy-english-translator',
+  'simlish-translator',
+  'species-name-generator',
+  'ganglish-translator',
+  'cartinese-translator',
+  'word-descrambler',
+  'gibberish-translator',
+  'two-name-ambigram-generator',
+]);
   return getAllTools()
     .filter((tool) => !toolsWithDedicatedPages.has(tool.slug))
     .map((tool) => ({ slug: tool.slug }));
