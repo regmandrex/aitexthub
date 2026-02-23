@@ -201,6 +201,7 @@ export async function ToolPageRenderer({ slug }: ToolPageRendererProps) {
                   question: item.q,
                   answer: item.a,
                 }))}
+                name={`${displayTool.title} – FAQs`}
               />
             </>
           ) : null}

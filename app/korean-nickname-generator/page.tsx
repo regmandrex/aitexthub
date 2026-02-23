@@ -34,9 +34,10 @@ function RailAd({ side }: { side: 'left' | 'right' }) {
 }
 
 export default function NicknamePage() {
+  const faqLd = buildFaqJsonLd(faqItems, `${title} – FAQs`);
   return (
     <div className="relative bg-[#f7f9ff]">
-      <JsonLd data={buildFaqJsonLd(faqItems)} />
+      {faqLd && <JsonLd data={faqLd} />}
       <RailAd side="right" />
 
       <div className="mx-auto w-full max-w-3xl px-4 py-10 min-h-screen">

@@ -137,7 +137,7 @@ export default async function ChatGPTGPTZeroCheckerPage() {
           </p>
         </div>
         <FAQSection items={pageFaqs} />
-        <FaqJsonLd faqs={pageFaqs} />
+        <FaqJsonLd faqs={pageFaqs} name={`${title} – FAQs`} />
       </ToolPageShell>
     </>
   );
