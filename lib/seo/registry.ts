@@ -704,6 +704,48 @@ export const toolPages: ToolPage[] = [
     seoTitle: 'Ambigram Tattoo Generator - Two Name Ambigram Creator',
     category: 'generator',
   },
+  {
+    slug: 'ambigram-tattoo-generator',
+    title: 'Ambigram Tattoo Generator',
+    description: 'Free online ambigram tattoo generator. Create two-name ambigram designs for tattoos, couple names, and gifts.',
+    seoTitle: 'Ambigram Tattoo Generator - Free Online Two-Name Ambigram Creator',
+    category: 'generator',
+  },
+  {
+    slug: 'medieval-translator',
+    title: 'Medieval Translator',
+    description: 'Medieval translator and Middle English translator in one. Translate to medieval or Middle English style for period writing, role-play, and education.',
+    seoTitle: 'Medieval Translator - Translate to Medieval & Middle English',
+    category: 'generator',
+  },
+  {
+    slug: 'shakespearean-translator',
+    title: 'Shakespearean Translator',
+    description: 'Translate into Shakespearean English. Shakespearean translator for thee, thou, and period phrasing—free online.',
+    seoTitle: 'Shakespearean Translator - Translate Into Shakespearean English',
+    category: 'generator',
+  },
+  {
+    slug: 'middle-english-translator',
+    title: 'Middle English Translator',
+    description: 'Middle English translator and Middle English converter online. Translate modern English to Middle English (Chaucer-style) for free.',
+    seoTitle: 'Middle English Translator - Middle English Converter Online',
+    category: 'generator',
+  },
+  {
+    slug: 'old-english-translator',
+    title: 'Old English Translator',
+    description: 'Translate to Anglo Saxon with our Old English translator. Convert modern English to Old English (Anglo-Saxon) for study and creative writing.',
+    seoTitle: 'Old English Translator - Translate to Anglo Saxon Online',
+    category: 'generator',
+  },
+  {
+    slug: 'navajo-translator',
+    title: 'Navajo Translator',
+    description: 'English to Navajo translator online. Convert English text to Navajo for learning and respectful use—free in your browser.',
+    seoTitle: 'Navajo Translator - English to Navajo Translation Online',
+    category: 'generator',
+  },
 ];
 
 export const categoryPages: CategoryPage[] = [

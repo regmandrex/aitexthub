@@ -21,6 +21,12 @@ export function generateStaticParams() {
   'word-descrambler',
   'gibberish-translator',
   'two-name-ambigram-generator',
+  'ambigram-tattoo-generator',
+  'medieval-translator',
+  'shakespearean-translator',
+  'middle-english-translator',
+  'old-english-translator',
+  'navajo-translator',
 ]);
   return getAllTools()
     .filter((tool) => !toolsWithDedicatedPages.has(tool.slug))
