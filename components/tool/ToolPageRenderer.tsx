@@ -26,6 +26,7 @@ import { LineCombinationGeneratorTool } from '@/components/tools/LineCombination
 import { PermutationGeneratorTool } from '@/components/tools/PermutationGeneratorTool';
 import { AICodeCleanerTool } from '@/components/tools/AICodeCleanerTool';
 import { AICodeFixerTool } from '@/components/tools/AICodeFixerTool';
+import { GodGoddessNameGeneratorTool } from '@/components/tools/GodGoddessNameGeneratorTool';
 // ChatGPT tools
 import { ChatGPTDetectorTool } from '@/components/tools/ChatGPTDetectorTool';
 import { ChatGPTHumanizerTool } from '@/components/tools/ChatGPTHumanizerTool';
@@ -88,6 +89,7 @@ const uiComponentMap: Record<string, React.ComponentType> = {
   'permutation-generator': PermutationGeneratorTool,
   'ai-code-cleaner': AICodeCleanerTool,
   'ai-code-fixer': AICodeFixerTool,
+  'god-goddess-name-generator': GodGoddessNameGeneratorTool,
   // ChatGPT tools
   'chatgpt-detector': ChatGPTDetectorTool,
   'chatgpt-humanizer': ChatGPTHumanizerTool,
