@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
-    "audit-tools": "node scripts/audit-tool-pages.mjs"
+    "audit-tools": "node scripts/audit-tool-pages.mjs",
+    "check-words": "node scripts/audit-tool-pages.mjs"
   },
   "dependencies": {
     "next": "^16.1.1",

@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 /**
- * Audit tool pages: min 4k words write-up + min 22 FAQs.
+ * Audit tool pages: min 4k words total (write-up + FAQs), min 23 FAQs, detailed long-form FAQs.
  * Usage: node scripts/audit-tool-pages.mjs
+ * Exit code 0 = all pass; 1 = one or more fail.
  */
 
 import fs from 'fs';
@@ -26,16 +27,58 @@ const TOOL_SLUGS = [
   'middle-english-translator',
   'old-english-translator',
   'navajo-translator',
+  // Name generators (4k + 23 long-form FAQs)
+  'muslim-name-generator',
+  'transformers-name-generator',
+  'naruto-name-generator',
+  'fallout-name-generator',
+  'elden-ring-name-generator',
+  'island-name-generator',
+  'ancient-greek-name-generator',
+  'anime-names-generator',
+  'tribe-name-generator',
+  'runescape-name-generator',
+  'steam-name-generator',
+  'god-goddess-name-generator',
+  'drag-queen-name-generator',
+  'wrestling-name-generator',
+  'royal-surname-generator',
+  'silly-name-generator',
+  'bracket-name-generator',
+  'mlp-name-generator',
+  'stripper-name-generator',
+  'shopify-store-name-generator',
+  'korean-name-generator-male',
 ];
 
-const MIN_WORDS = 4000;
-const MIN_FAQS = 22;
+const MIN_TOTAL_WORDS = 4000;
+const MIN_FAQS = 23;
+const MIN_AVG_WORDS_PER_FAQ = 50; // long-form: each answer at least ~50 words on average
 
 function countFaqs(content) {
   const match = content.match(/const pageFaqs: FaqItem\[\] = \[([\s\S]*?)\];/);
   if (!match) return 0;
   const inner = match[1];
   return (inner.match(/\{\s*category:/g) || []).length;
+}
+
+function extractFaqAnswerText(content) {
+  const match = content.match(/const pageFaqs: FaqItem\[\] = \[([\s\S]*?)\];/);
+  if (!match) return [];
+  const inner = match[1];
+  const answers = [];
+  const answerRe = /answer:\s*['"`]([\s\S]*?)['"`]\s*[,}]/g;
+  let m;
+  while ((m = answerRe.exec(inner)) !== null) {
+    const raw = m[1].replace(/\\'/g, "'").replace(/\\"/g, '"');
+    answers.push(raw);
+  }
+  return answers;
+}
+
+function countWords(str) {
+  if (!str || !str.trim()) return 0;
+  return str.replace(/\s+/g, ' ').trim().split(' ').filter(Boolean).length;
 }
 
 function extractWriteUpContent(content) {
@@ -66,47 +109,69 @@ function countWordsInWriteUp(content) {
     .replace(/<[^>]+>/g, ' ')
     .replace(/\s+/g, ' ')
     .trim();
-  return stripped ? stripped.split(' ').filter(Boolean).length : 0;
+  return countWords(stripped);
+}
+
+function countWordsInFaqs(content) {
+  const answers = extractFaqAnswerText(content);
+  return answers.reduce((sum, a) => sum + countWords(a), 0);
 }
 
 function audit() {
-  console.log('Audit: min 4k words write-up + min 22 FAQs\n');
+  console.log('Audit: min 4k total words (write-up + FAQs), min 23 FAQs, long-form FAQ answers\n');
   const rows = [];
   for (const slug of TOOL_SLUGS) {
     const filePath = path.join(root, 'app', slug, 'page.tsx');
     if (!fs.existsSync(filePath)) {
-      rows.push({ tool: slug, faqs: '-', write: 'N/A (no page)' });
+      rows.push({ tool: slug, faqs: '-', total: null, write: null, faqWords: null, status: 'N/A (no page)' });
       continue;
     }
     const content = fs.readFileSync(filePath, 'utf8');
-    const faqs = countFaqs(content);
-    const words = countWordsInWriteUp(content);
-    const writeStatus = words >= MIN_WORDS ? 'Long' : 'Short';
+    const faqCount = countFaqs(content);
+    const writeWords = countWordsInWriteUp(content);
+    const faqWords = countWordsInFaqs(content);
+    const totalWords = writeWords + faqWords;
+    const avgFaqWords = faqCount > 0 ? Math.round(faqWords / faqCount) : 0;
+    const totalOk = totalWords >= MIN_TOTAL_WORDS;
+    const faqCountOk = faqCount >= MIN_FAQS;
+    const faqLongFormOk = avgFaqWords >= MIN_AVG_WORDS_PER_FAQ;
+    const status = totalOk && faqCountOk && faqLongFormOk ? 'OK' : (totalOk ? '' : 'words') + (faqCountOk ? '' : 'faq#') + (faqLongFormOk ? '' : 'short');
     rows.push({
       tool: slug,
-      faqs,
-      words,
-      write: writeStatus,
-      faqOk: faqs >= MIN_FAQS,
-      writeOk: words >= MIN_WORDS,
+      faqs: faqCount,
+      total: totalWords,
+      write: writeWords,
+      faqWords,
+      avgFaqWords,
+      totalOk,
+      faqCountOk,
+      faqLongFormOk,
+      status: status || 'OK',
     });
   }
 
-  const col1 = Math.max(28, ...rows.map((r) => r.tool.length));
-  const header = `${'Tool'.padEnd(col1)}  FAQs    Write`;
+  const col1 = Math.max(32, ...rows.map((r) => r.tool.length));
+  const header = `${'Tool'.padEnd(col1)}  FAQs   Total   Write   FAQ w   AvgFAQ`;
   console.log(header);
   console.log('-'.repeat(header.length));
   for (const r of rows) {
-    const faqStr = r.faqs === '-' ? r.faqs : String(r.faqs).padStart(3);
-    const writeStr = r.write === 'N/A (no page)' ? r.write : (r.write + (r.words != null ? ` (~${r.words})` : ''));
-    console.log(`${r.tool.padEnd(col1)}  ${faqStr}    ${writeStr}`);
+    const faqStr = r.faqs === '-' ? '  -' : String(r.faqs).padStart(4);
+    const totalStr = r.total == null ? '   -' : String(r.total).padStart(5);
+    const writeStr = r.write == null ? '   -' : String(r.write).padStart(5);
+    const faqWStr = r.faqWords == null ? '   -' : String(r.faqWords).padStart(5);
+    const avgStr = r.avgFaqWords == null ? '  -' : String(r.avgFaqWords).padStart(5);
+    const statusStr = r.status !== 'OK' ? `  [${r.status}]` : '';
+    console.log(`${r.tool.padEnd(col1)}  ${faqStr}  ${totalStr}  ${writeStr}  ${faqWStr}  ${avgStr}${statusStr}`);
   }
   console.log('');
-  const allFaqOk = rows.every((r) => r.faqOk !== false);
-  const allWriteOk = rows.every((r) => r.writeOk !== false);
-  console.log(`FAQs (min ${MIN_FAQS}): ${allFaqOk ? 'Yes – all meet.' : 'No – some under.'}`);
-  console.log(`Write-up (min ${MIN_WORDS} words): ${allWriteOk ? 'Yes – all Long.' : 'Only partly – some Short.'}`);
-  process.exit(allFaqOk && allWriteOk ? 0 : 1);
+  const allTotalOk = rows.every((r) => r.totalOk !== false);
+  const allFaqCountOk = rows.every((r) => r.faqCountOk !== false);
+  const allFaqLongOk = rows.every((r) => r.faqLongFormOk !== false);
+  console.log(`Total words (write-up + FAQs) >= ${MIN_TOTAL_WORDS}: ${allTotalOk ? 'Yes' : 'No – some under.'}`);
+  console.log(`FAQs count >= ${MIN_FAQS}: ${allFaqCountOk ? 'Yes' : 'No – some under.'}`);
+  console.log(`FAQ answers long-form (avg >= ${MIN_AVG_WORDS_PER_FAQ} words): ${allFaqLongOk ? 'Yes' : 'No – some short.'}`);
+  const ok = allTotalOk && allFaqCountOk && allFaqLongOk;
+  process.exit(ok ? 0 : 1);
 }
 
 audit();

@@ -13,6 +13,25 @@ function buildToolHref(slug: string) {
   return slug === '' ? '/' : `/${slug}`;
 }
 
+/** Deterministic hash so the same (slug, seed) always gives the same order for rotation. */
+function hashString(s: string): number {
+  let h = 0;
+  for (let i = 0; i < s.length; i++) {
+    h = ((h << 5) - h + s.charCodeAt(i)) | 0;
+  }
+  return h;
+}
+
+/** Rotate generator (and other mode) tools so each page sees a different set; name generators and others all get listed. */
+function rotateModeTools<T>(tools: T[], currentSlug: string, getSlug: (t: T) => string): T[] {
+  if (tools.length <= 1) return tools;
+  return [...tools].sort((a, b) => {
+    const keyA = hashString(getSlug(a) + currentSlug);
+    const keyB = hashString(getSlug(b) + currentSlug);
+    return keyA - keyB;
+  });
+}
+
 export function RelatedTools({
   currentSlug,
   maxItems = 8,
@@ -30,7 +49,9 @@ export function RelatedTools({
   const modelTools = currentTool.modelSlug
     ? tools.filter((tool) => tool.slug !== currentSlug && tool.modelSlug === currentTool.modelSlug)
     : [];
-  const modeTools = currentTool.mode ? tools.filter((tool) => tool.slug !== currentSlug && tool.mode === currentTool.mode) : [];
+  const modeToolsRaw = currentTool.mode ? tools.filter((tool) => tool.slug !== currentSlug && tool.mode === currentTool.mode) : [];
+  // Rotate so different tools (including name generators) appear in "Other Generator Tools" on each page
+  const modeTools = rotateModeTools(modeToolsRaw, currentSlug, (t) => t.slug);
 
   const limitedModelTools = modelTools.slice(0, maxItems);
   
@@ -41,7 +62,9 @@ export function RelatedTools({
     currentTool.mode !== 'watermark-cleaner' &&
     limitedModelTools.length === 0; // Only show mode tools if no model tools exist
   
-  const limitedModeTools = shouldShowModeTools ? modeTools.slice(0, maxItems) : [];
+  // Show more generator tools when in generator mode so name generators and others all get visibility
+  const modeMax = currentTool.mode === 'generator' ? Math.max(maxItems, 12) : maxItems;
+  const limitedModeTools = shouldShowModeTools ? modeTools.slice(0, modeMax) : [];
 
   // Return nothing if we don't have related tools to show
   if (limitedModelTools.length === 0 && limitedModeTools.length === 0) {
