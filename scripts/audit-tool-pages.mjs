@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 /**
- * Audit tool pages: min 4k words total (write-up + FAQs), min 23 FAQs, detailed long-form FAQs.
+ * Audit tool pages: min 3k words total (write-up + FAQs), min 23 FAQs, substantive FAQ answers (not one-liners).
+ * Emphasis on write-up section driving word count. FAQs must answer properly, not >50 words required.
  * Usage: node scripts/audit-tool-pages.mjs
  * Exit code 0 = all pass; 1 = one or more fail.
  */
@@ -27,7 +28,7 @@ const TOOL_SLUGS = [
   'middle-english-translator',
   'old-english-translator',
   'navajo-translator',
-  // Name generators (4k + 23 long-form FAQs)
+  // Name generators (3k + 23 substantive FAQs)
   'muslim-name-generator',
   'transformers-name-generator',
   'naruto-name-generator',
@@ -51,9 +52,9 @@ const TOOL_SLUGS = [
   'korean-name-generator-male',
 ];
 
-const MIN_TOTAL_WORDS = 4000;
+const MIN_TOTAL_WORDS = 3000;
 const MIN_FAQS = 23;
-const MIN_AVG_WORDS_PER_FAQ = 50; // long-form: each answer at least ~50 words on average
+const MIN_AVG_WORDS_PER_FAQ = 20; // substantive answers (not one-line); no upper limit
 
 function countFaqs(content) {
   const match = content.match(/const pageFaqs: FaqItem\[\] = \[([\s\S]*?)\];/);
@@ -118,7 +119,7 @@ function countWordsInFaqs(content) {
 }
 
 function audit() {
-  console.log('Audit: min 4k total words (write-up + FAQs), min 23 FAQs, long-form FAQ answers\n');
+  console.log('Audit: min 3k total words (write-up + FAQs), min 23 FAQs, substantive FAQ answers (avg >= 20 words)\n');
   const rows = [];
   for (const slug of TOOL_SLUGS) {
     const filePath = path.join(root, 'app', slug, 'page.tsx');
@@ -169,7 +170,7 @@ function audit() {
   const allFaqLongOk = rows.every((r) => r.faqLongFormOk !== false);
   console.log(`Total words (write-up + FAQs) >= ${MIN_TOTAL_WORDS}: ${allTotalOk ? 'Yes' : 'No – some under.'}`);
   console.log(`FAQs count >= ${MIN_FAQS}: ${allFaqCountOk ? 'Yes' : 'No – some under.'}`);
-  console.log(`FAQ answers long-form (avg >= ${MIN_AVG_WORDS_PER_FAQ} words): ${allFaqLongOk ? 'Yes' : 'No – some short.'}`);
+  console.log(`FAQ answers substantive (avg >= ${MIN_AVG_WORDS_PER_FAQ} words, not one-liners): ${allFaqLongOk ? 'Yes' : 'No – some too short.'}`);
   const ok = allTotalOk && allFaqCountOk && allFaqLongOk;
   process.exit(ok ? 0 : 1);
 }

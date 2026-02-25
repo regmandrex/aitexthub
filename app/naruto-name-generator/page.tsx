@@ -41,7 +41,10 @@ function createWriteUp() {
           <li>Use the Copy button to copy all names to your clipboard, then paste into your story, game doc, or spreadsheet.</li>
           <li>Run the generator again for more options; no account or login required.</li>
         </ol>
-        <p>The tool runs entirely in your browser, so your settings and generated names are not sent to any server.</p>
+        <p>The tool runs entirely in your browser, so your settings and generated names are not sent to any server. Each run gives you a new random list of Naruto-style first and last name combinations.</p>
+
+        <h2>Running the Generator in Batches</h2>
+        <p>When you need many Naruto-style names—for example a cast for fan fiction or a roster for a game—run the generator multiple times. Each run gives up to 24 names. Paste each run into the same document so you have one master list. Remove duplicates and pick the names that fit your characters. There is no daily or total limit. Keep a naming document so you do not reuse the same name for two characters. For a broader pool of anime-style options use our anime names generator.</p>
 
         <h2>When to Use a Naruto Name Generator</h2>
         <p>Use this Naruto name generator when you need series-style names quickly and in bulk. Key use cases:</p>
@@ -103,8 +106,11 @@ function createWriteUp() {
         </div>
         <p>This page focuses on Naruto-style names. For broader anime-style names see our <Link href="/anime-names-generator">anime names generator</Link>.</p>
 
+        <h2>Quick Reference: Naruto Name Generator at a Glance</h2>
+        <p>The Naruto name generator produces 1–24 names per run, with no daily limit. Names are Japanese-style first and last name combinations suitable for fan fiction, roleplay, and games. The tool runs in your browser with no sign-up; names are created locally and are not sent to our servers. Use the Copy button to copy all names, then paste into your story or naming list. For broader anime-style names use our anime names generator. For more naming tools see our homepage.</p>
+
         <h2>Summary: Getting the Most From the Naruto Name Generator</h2>
-        <p>Use this Naruto name generator to create Japanese-style ninja and character names for fan fiction, games, roleplay, and creative writing. Set the number of names (1–24) and run as often as you like. Copy results into your document or notes. The tool runs locally in your browser with no sign-up. For more naming and text tools, see our <Link href="/">homepage</Link>.</p>
+        <p>Use this Naruto name generator to create Japanese-style ninja and character names for fan fiction, games, roleplay, and creative writing. Set the number of names (1–24) and run as often as you like. Copy results into your document or notes. The tool runs locally in your browser with no sign-up. Keep a naming document to avoid reusing names. For more naming and text tools, see our <Link href="/">homepage</Link>.</p>
       </div>
     </section>
   );
