@@ -7,6 +7,8 @@ const modelSlug = 'grok';
 const faqIntro =
   'This FAQ explains how the Grok (xAI) Watermark Detector on gptcleanuptools.com works, what kinds of text characteristics it evaluates, and how results should be interpreted responsibly. The tool is an independent, text-only analysis utility and does not connect to or interact with xAI or Grok systems.';
 
+export const revalidate = 86400;
+
 const faqs: FaqItem[] = [
   {
     category: 'Grok (xAI) Watermark Detector FAQs',

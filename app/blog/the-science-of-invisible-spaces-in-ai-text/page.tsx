@@ -11,6 +11,8 @@ const headline = 'The Science of Invisible Spaces in AI Text (Why They Exist, Ho
 const description =
   'Learn what invisible Unicode spaces are, why AI text contains them, how they impact SEO, accessibility, and Core Web Vitals, and how to remove them safely.';
 
+export const revalidate = 86400;
+
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({
     title,

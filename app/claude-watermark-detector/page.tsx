@@ -8,6 +8,8 @@ const modelSlug = 'claude';
 const faqIntro =
   'This FAQ section explains how the Claude Watermark Detector on gptcleanuptools.com works, what it analyzes, and how to interpret its results. The tool is designed for educational, editorial, and analytical purposes and performs text-only inspection without connecting to or interacting with Claude or Anthropic systems.';
 
+export const revalidate = 86400;
+
 const faqs: FaqItem[] = [
   {
     category: 'Claude Watermark Detector FAQs',

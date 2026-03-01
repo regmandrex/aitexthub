@@ -11,6 +11,8 @@ const headline = 'Common Problems with Extra Spaces in Documents (and How to Fix
 const description =
   'Real-world examples of spacing issues and practical solutions for writers, students, and professionals.';
 
+export const revalidate = 86400;
+
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({
     title,

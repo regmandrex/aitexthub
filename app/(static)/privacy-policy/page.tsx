@@ -207,6 +207,8 @@ const CONTENT_BY_LOCALE: Record<string, PrivacyContent> = {
   },
 };
 
+export const revalidate = 86400;
+
 export async function generateMetadata() {
   const content = CONTENT_BY_LOCALE.en;
   return buildMeta({

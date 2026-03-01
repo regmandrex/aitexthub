@@ -13,6 +13,8 @@ import { siteUrl } from '@/lib/schema/site';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
 
+export const revalidate = 86400;
+
 const toolSlug = 'remove-whitespace';
 
 // FAQ keys structure - these will be translated

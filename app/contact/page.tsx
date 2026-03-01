@@ -1,5 +1,7 @@
 import { buildMeta } from '@/lib/seo-meta';
 
+export const revalidate = 86400;
+
 export async function generateMetadata() {
   return buildMeta({
     title: 'Contact Us - GPT Clean Up Tools',

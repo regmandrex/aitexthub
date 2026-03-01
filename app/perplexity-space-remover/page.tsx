@@ -5,6 +5,8 @@ import { buildMeta } from '@/lib/seo-meta';
 const modelName = 'Perplexity';
 const modelSlug = 'perplexity';
 
+export const revalidate = 86400;
+
 const faqs: FaqItem[] = [
   {
     category: 'General',

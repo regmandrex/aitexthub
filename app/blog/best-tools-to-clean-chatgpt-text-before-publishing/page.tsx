@@ -11,6 +11,8 @@ const headline = 'Best Tools to Clean ChatGPT Text Before Publishing (Accuracy, 
 const description =
   'What matters in an AI text cleaner: invisible Unicode removal, whitespace normalization, CMS-friendly output, and performance-aware structure.';
 
+export const revalidate = 86400;
+
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({
     title,

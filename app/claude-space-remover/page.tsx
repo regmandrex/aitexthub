@@ -5,6 +5,8 @@ import { buildMeta } from '@/lib/seo-meta';
 const modelName = 'Claude';
 const modelSlug = 'claude';
 
+export const revalidate = 86400;
+
 const faqs: FaqItem[] = [
   {
     category: 'General',

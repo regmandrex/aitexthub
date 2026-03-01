@@ -14,6 +14,8 @@ import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
 import { spaceRemoverFaqs } from '@/lib/tools/spaceRemoverFaqs';
 
+export const revalidate = 86400;
+
 const toolSlug = 'space-remover';
 
 export async function generateMetadata(): Promise<Metadata> {

@@ -5,6 +5,8 @@ import { buildMeta } from '@/lib/seo-meta';
 const modelName = 'Mistral';
 const modelSlug = 'mistral';
 
+export const revalidate = 86400;
+
 const faqs: FaqItem[] = [
   {
     category: 'General',

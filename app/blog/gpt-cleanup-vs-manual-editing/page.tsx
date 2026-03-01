@@ -11,6 +11,8 @@ const headline = 'GPT Cleanup vs Manual Editing: Which Is Better for SEO, Perfor
 const description =
   'GPT cleanup removes invisible Unicode and normalizes structure; manual editing improves voice and expertise. Learn the best order for SEO and scalable publishing.';
 
+export const revalidate = 86400;
+
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({
     title,

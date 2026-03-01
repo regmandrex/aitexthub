@@ -7,6 +7,8 @@ type PageProps = {
   params: Promise<{ toolSlug: string }>;
 };
 
+export const revalidate = 86400;
+
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { toolSlug } = await params;
   const tool = getToolBySlug(toolSlug);

@@ -25,6 +25,8 @@ function RailAd({ side }: { side: 'left' | 'right' }) {
   );
 }
 
+export const revalidate = 86400;
+
 const faqs: FaqItem[] = [
   {
     category: 'AI Watermark Remover FAQs',

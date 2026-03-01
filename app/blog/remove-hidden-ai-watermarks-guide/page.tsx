@@ -11,6 +11,8 @@ const headline = 'Remove Hidden AI Watermarks: A Practical, Step-by-Step Guide (
 const description =
   'A practical guide to removing real hidden AI text artifacts (invisible Unicode, mixed whitespace, formatting remnants) without rewriting or harming SEO.';
 
+export const revalidate = 86400;
+
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({
     title,

@@ -5,6 +5,8 @@ import { buildMeta } from '@/lib/seo-meta';
 const modelName = 'Gemini';
 const modelSlug = 'gemini';
 
+export const revalidate = 86400;
+
 const faqs: FaqItem[] = [
   {
     category: 'General',

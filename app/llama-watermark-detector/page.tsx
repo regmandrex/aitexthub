@@ -7,6 +7,8 @@ const modelSlug = 'llama';
 const faqIntro =
   'This FAQ explains how the LLaMA (Meta AI) Watermark Detector on gptcleanuptools.com works, what kinds of text characteristics it inspects, and how to interpret results responsibly. The tool performs independent, text-only analysis and does not connect to or interact with Meta or LLaMA systems.';
 
+export const revalidate = 86400;
+
 const faqs: FaqItem[] = [
   {
     category: 'LLaMA (Meta AI) Watermark Detector FAQs',

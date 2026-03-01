@@ -3,6 +3,8 @@ import AdSenseSlot from '../../components/ads/AdSenseSlot';
 import { buildMeta } from '@/lib/seo-meta';
 import { blogPosts } from '@/lib/blog-posts';
 
+export const revalidate = 86400;
+
 export async function generateMetadata() {
   return buildMeta({
     title: 'AI Text Cleaning Blog - GPT CLEAN UP Guides & Tips',

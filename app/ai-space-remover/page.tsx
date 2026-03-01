@@ -5,6 +5,8 @@ import { buildMeta } from '@/lib/seo-meta';
 const modelName = 'AI';
 const modelSlug = 'ai';
 
+export const revalidate = 86400;
+
 const faqs: FaqItem[] = [
   {
     category: 'AI Space Remover FAQs',

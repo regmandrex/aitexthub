@@ -1,15 +1,13 @@
 import type { Metadata } from 'next';
 import { ReactNode } from 'react';
 import Script from 'next/script';
-import { headers } from 'next/headers';
 import { Inter } from 'next/font/google';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import { JsonLd } from '../components/JsonLd';
+import { BreadcrumbJsonLdAndLang } from '../components/BreadcrumbJsonLdAndLang';
 import StickyFooterAd from '../components/ads/StickyFooterAd';
 import { webSiteSchema, siteNavigationSchema } from '../lib/schema/site';
-import { breadcrumbListSchema } from '../lib/schema/breadcrumb';
-import { getToolBySlug } from '../lib/tools/registry';
 import '../styles/globals.css';
 
 const inter = Inter({
@@ -83,14 +81,12 @@ type RootLayoutProps = {
   children: ReactNode;
 };
 
-export default async function RootLayout({ children }: RootLayoutProps) {
-  // Try to get pathname from headers, fallback to 'en'
-  const reqHeaders = await headers();
-  const pathname = reqHeaders.get('x-site-pathname') || reqHeaders.get('x-pathname') || '/';
-  const lang = pathname === '/korean-nickname-generator' || pathname.startsWith('/korean-nickname-generator/') ? 'ko' : 'en';
+// Cache at edge for 24h to reduce Fast Origin Transfer (layout is now static)
+export const revalidate = 86400;
 
+export default async function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang={lang} dir="ltr">
+    <html lang="en" dir="ltr">
       <head>
         <link rel="preconnect" href="https://pagead2.googlesyndication.com" />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
@@ -115,72 +111,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
         />
         <JsonLd data={webSiteSchema()} />
         <JsonLd data={siteNavigationSchema()} />
-        {(() => {
-          // SEO-only breadcrumbs (JSON-LD). No visible UI.
-          const abs = (p: string) => {
-            const path = p === '/' ? '/' : `${p.startsWith('/') ? p : `/${p}`}/`;
-            return `https://gptcleanuptools.com${path.replace(/\/{2,}/g, '/')}`;
-          };
-
-          const items: Array<{ name: string; url: string }> = [];
-          items.push({ name: 'Home', url: abs('/') });
-
-          // Blog breadcrumbs
-          if (pathname === '/blog' || pathname.startsWith('/blog/')) {
-            items.push({ name: 'Blog', url: abs('/blog') });
-            if (pathname !== '/blog') {
-              const slug = pathname.replace(/^\/blog\//, '').replace(/\/$/, '');
-              const title = slug
-                .split('-')
-                .filter(Boolean)
-                .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
-                .join(' ');
-              items.push({ name: title || 'Post', url: abs(`/blog/${slug}`) });
-            }
-            return items.length > 1 ? <JsonLd data={breadcrumbListSchema(items)} /> : null;
-          }
-
-          // Tool breadcrumbs: Home -> AI Tools -> Tool
-          if (pathname === '/ai-tools') {
-            items.push({
-              name: 'AI Tools',
-              url: abs('/ai-tools'),
-            });
-            return <JsonLd data={breadcrumbListSchema(items)} />;
-          }
-
-          if (pathname.startsWith('/') && pathname.split('/').filter(Boolean).length === 1) {
-            const slug = pathname.slice(1);
-            const tool = getToolBySlug(slug);
-            if (tool) {
-              items.push({
-                name: 'AI Tools',
-                url: abs('/ai-tools'),
-              });
-              items.push({
-                name: tool.title,
-                url: abs(`/${slug}`),
-              });
-              return <JsonLd data={breadcrumbListSchema(items)} />;
-            }
-          }
-
-          // Static/other pages: Home -> Page
-          if (pathname !== '/' && pathname.startsWith('/')) {
-            const seg = pathname.split('/').filter(Boolean)[0] || '';
-            if (seg) {
-              const label = seg
-                .split('-')
-                .filter(Boolean)
-                .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
-                .join(' ');
-              items.push({ name: label, url: abs(`/${seg}`) });
-              return items.length > 1 ? <JsonLd data={breadcrumbListSchema(items)} /> : null;
-            }
-          }
-
-          return null;
-        })()}
+        <BreadcrumbJsonLdAndLang />
         {/* Example AdSense integration (replace ca-pub-XXXX with your publisher id)
           <Script
             id="adsense-init"

@@ -20,6 +20,9 @@ export async function generateMetadata() {
   });
 }
 
+// Cache at edge for 24h to reduce Fast Origin Transfer
+export const revalidate = 86400;
+
 export default async function HomePage() {
 
   return (

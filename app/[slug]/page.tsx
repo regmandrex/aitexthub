@@ -39,6 +39,7 @@ export function generateStaticParams() {
   'korean-name-generator-male',
   'ganglish-translator',
   'cartinese-translator',
+  'playboi-carti-translator',
   'word-descrambler',
   'gibberish-translator',
   'two-name-ambigram-generator',
@@ -56,6 +57,9 @@ export function generateStaticParams() {
 
 // Enable dynamic route handling for tools not in static params
 export const dynamicParams = true;
+
+// Cache at edge for 24h to reduce Fast Origin Transfer
+export const revalidate = 86400;
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const tool = getToolBySlug(params.slug);

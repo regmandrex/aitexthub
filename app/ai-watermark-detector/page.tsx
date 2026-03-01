@@ -8,6 +8,8 @@ const modelSlug = 'ai';
 const faqIntro =
   'This FAQ explains how the AI Watermark Detector on gptcleanuptools.com analyzes text, what its signals mean, and how to interpret results responsibly. The tool is text-only, does not connect to any AI system, and does not claim certainty about authorship.';
 
+export const revalidate = 86400;
+
 const faqs: FaqItem[] = [
   {
     category: 'AI Watermark Detector FAQs',

@@ -12,6 +12,8 @@ import { getToolBySlug } from '@/lib/tools/registry';
 import { siteUrl } from '@/lib/schema/site';
 import { webPageSchema } from '@/lib/schema/webpage';
 
+export const revalidate = 86400;
+
 const toolSlug = 'text-to-hex';
 
 export async function generateMetadata(): Promise<Metadata> {

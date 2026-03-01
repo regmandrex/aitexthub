@@ -14,6 +14,8 @@ import { getToolBySlug } from '@/lib/tools/registry';
 
 
 
+export const revalidate = 86400;
+
 const toolSlug = 'chatgpt-paragraph-rewriter';
 
 const faqs: FaqItem[] = [

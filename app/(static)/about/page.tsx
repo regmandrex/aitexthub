@@ -1,6 +1,8 @@
 import Link from 'next/link';
 import { buildMeta } from '@/lib/seo-meta';
 
+export const revalidate = 86400;
+
 export async function generateMetadata() {
   return buildMeta({
     title: `About GPTCLEANUP AI - Free AI Text Cleaning Tools`,

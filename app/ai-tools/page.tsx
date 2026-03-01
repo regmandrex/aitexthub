@@ -3,6 +3,8 @@ import { getAllTools } from '@/lib/tools/registry';
 import { buildMeta } from '@/lib/seo-meta';
 import SearchableToolsList from '@/components/SearchableToolsList';
 
+export const revalidate = 86400;
+
 export async function generateMetadata(): Promise<Metadata> {
   return buildMeta({
     title: 'All AI Text Tools - Free Content & Writing Utilities',

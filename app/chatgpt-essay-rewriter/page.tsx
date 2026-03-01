@@ -14,6 +14,8 @@ import { getToolBySlug } from '@/lib/tools/registry';
 
 
 
+export const revalidate = 86400;
+
 const toolSlug = 'chatgpt-essay-rewriter';
 
 const faqs: FaqItem[] = [

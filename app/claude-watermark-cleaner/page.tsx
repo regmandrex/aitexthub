@@ -23,6 +23,8 @@ function RailAd({ side }: { side: 'left' | 'right' }) {
   );
 }
 
+export const revalidate = 86400;
+
 export async function generateMetadata() {
   return buildMeta({
     title: 'Claude Watermark Cleaner',

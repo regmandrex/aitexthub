@@ -7,6 +7,8 @@ const modelSlug = 'deepseek';
 const faqIntro =
   'This FAQ explains how the DeepSeek AI Watermark Detector on gptcleanuptools.com operates, what kinds of text characteristics it inspects, and how its findings should be interpreted. The detector functions as an independent, text-only analysis tool and does not connect to or interact with DeepSeek AI systems.';
 
+export const revalidate = 86400;
+
 const faqs: FaqItem[] = [
   {
     category: 'DeepSeek AI Watermark Detector FAQs',

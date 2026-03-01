@@ -11,6 +11,8 @@ const headline = 'ChatGPT Formatting Fixer for Word and Docs (How to Get Clean, 
 const description =
   'Stop broken spacing, headings, bullets, and PDF export issues: clean invisible Unicode, normalize whitespace, then apply Word/Docs styles natively.';
 
+export const revalidate = 86400;
+
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({
     title,
