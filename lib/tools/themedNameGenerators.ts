@@ -167,3 +167,235 @@ const KOREAN_MALE_GIVEN = ['Min-ho', 'Jun-seo', 'Si-woo', 'Ha-jun', 'Do-yun', 'S
 export function generateKoreanMaleNames(count: number, seed?: number): SimpleNameResult[] {
   return generateFromLists(KOREAN_MALE_FAMILY, KOREAN_MALE_GIVEN, count, seed);
 }
+
+// Gorilla Tag (VR game) – monkey, parkour, tag-style names
+const GORILLA_TAG_FIRST = ['Monkey', 'Gorilla', 'Ape', 'Banana', 'Jungle', 'Vine', 'Swing', 'Tag', 'Chase', 'Climb', 'Leap', 'Bounce', 'Zoom', 'Dash', 'Peak', 'Summit', 'Tree', 'Canopy', 'Shadow', 'Ghost', 'Ninja', 'Speed', 'Turbo', 'Mega'];
+const GORILLA_TAG_SECOND = ['King', 'Master', 'Pro', 'X', '99', 'HD', 'VR', 'Tag', 'Runner', 'Hunter', 'Slayer', 'Monkey', 'Ape', 'Gorilla', ''];
+
+export function generateGorillaTagNames(count: number, seed?: number): SimpleNameResult[] {
+  return generateFromLists(GORILLA_TAG_FIRST, GORILLA_TAG_SECOND, count, seed);
+}
+
+// Hollow Knight – game, bug/knight themed
+const HOLLOW_KNIGHT_FIRST = ['Hornet', 'Knight', 'Hollow', 'Ghost', 'Zote', 'Quirrel', 'Tiso', 'Cloth', 'Cornifer', 'Iselda', 'Bardoon', 'Leg Eater', 'Divine', 'Salubra', 'Sly', 'Elderbug', 'Bretta', 'Myla', 'Dung', 'Tuk', 'Willoh', 'Mister', 'Snail', 'Shrumal'];
+const HOLLOW_KNIGHT_SECOND = ['the Knight', 'the Vessel', 'the Watcher', 'the Defender', ''];
+
+export function generateHollowKnightNames(count: number, seed?: number): SimpleNameResult[] {
+  return generateFromLists(HOLLOW_KNIGHT_FIRST, HOLLOW_KNIGHT_SECOND, count, seed);
+}
+
+// Coven – witch, mystical
+const COVEN_FIRST = ['Raven', 'Shadow', 'Luna', 'Stella', 'Thorn', 'Ivy', 'Willow', 'Sage', 'Mystic', 'Crystal', 'Ember', 'Storm', 'Night', 'Silver', 'Onyx', 'Jade', 'Scarlet', 'Violet', 'Hazel', 'Rowan', 'Aspen', 'Birch', 'Morgan', 'Hecate'];
+const COVEN_SECOND = ['Coven', 'Witch', 'Seer', 'Sage', ''];
+
+export function generateCovenNames(count: number, seed?: number): SimpleNameResult[] {
+  return generateFromLists(COVEN_FIRST, COVEN_SECOND, count, seed);
+}
+
+// BG3 / Baldur's Gate 3 – fantasy RPG
+const BG3_FIRST = ['Astarion', 'Shadowheart', 'Gale', 'Laezel', 'Wyll', 'Karlach', 'Minthara', 'Halsin', 'Jaheira', 'Minsc', 'Tav', 'Durge', 'Orin', 'Gortash', 'Ketheric', 'Raphael', 'Elminster', 'Volo', 'Alfira', 'Isobel', 'Dame', 'Lord', 'Duke', 'Count'];
+const BG3_SECOND = ['of Baldur\'s Gate', 'the Dark Urge', ''];
+
+export function generateBg3Names(count: number, seed?: number): SimpleNameResult[] {
+  return generateFromLists(BG3_FIRST, BG3_SECOND, count, seed);
+}
+
+// Secret organization
+const SECRET_ORG_FIRST = ['Shadow', 'Silent', 'Eclipse', 'Cipher', 'Phoenix', 'Viper', 'Serpent', 'Owl', 'Raven', 'Lotus', 'Ivy', 'Thorn', 'Cabal', 'Circle', 'Order', 'Guild', 'Sector', 'Cell', 'Cadre', 'Coven', 'Lodge', 'Council', 'Syndicate', 'League'];
+const SECRET_ORG_SECOND = ['Society', 'Order', 'Guild', 'Circle', ''];
+
+export function generateSecretOrganizationNames(count: number, seed?: number): SimpleNameResult[] {
+  return generateFromLists(SECRET_ORG_FIRST, SECRET_ORG_SECOND, count, seed);
+}
+
+// Genderbend – flipped / alternate names
+const GENDERBEND_FIRST = ['Alex', 'Sam', 'Jordan', 'Casey', 'Morgan', 'Riley', 'Quinn', 'Avery', 'Skyler', 'Cameron', 'Dakota', 'Jamie', 'Reese', 'Parker', 'Drew', 'Robin', 'Sage', 'River', 'Phoenix', 'Blake', 'Charlie', 'Finley', 'Harper', 'Emery'];
+const GENDERBEND_SECOND = ['Rose', 'Lee', 'Gray', 'Bell', ''];
+
+export function generateGenderbendNames(count: number, seed?: number): SimpleNameResult[] {
+  return generateFromLists(GENDERBEND_FIRST, GENDERBEND_SECOND, count, seed);
+}
+
+// Motorcycle club / biker
+const MC_FIRST = ['Iron', 'Steel', 'Thunder', 'Storm', 'Shadow', 'Ghost', 'Reaper', 'Viper', 'Cobra', 'Wolf', 'Bear', 'Eagle', 'Hawk', 'Phoenix', 'Outlaw', 'Renegade', 'Savage', 'Fury', 'Rage', 'Bone', 'Skull', 'Demon', 'Devil', 'Hell'];
+const MC_SECOND = ['Riders', 'Brothers', 'MC', 'Crew', ''];
+
+export function generateMotorcycleClubNames(count: number, seed?: number): SimpleNameResult[] {
+  return generateFromLists(MC_FIRST, MC_SECOND, count, seed);
+}
+
+// Beyblade
+const BEYBLADE_FIRST = ['Dragoon', 'Dranzer', 'Draciel', 'Driger', 'Wolborg', 'Galman', 'Zeus', 'Pegasus', 'Leone', 'Aquario', 'L-Drago', 'Phoenix', 'Storm', 'Lightning', 'Flame', 'Dark', 'Metal', 'Cyber', 'Turbo', 'Strike', 'Blade', 'Burst', 'Evolution', 'Master'];
+const BEYBLADE_SECOND = ['Storm', 'Flame', 'Galaxy', 'Fusion', ''];
+
+export function generateBeybladeNames(count: number, seed?: number): SimpleNameResult[] {
+  return generateFromLists(BEYBLADE_FIRST, BEYBLADE_SECOND, count, seed);
+}
+
+// Homestuck troll – alien naming
+const HOMESTUCK_FIRST = ['Karkat', 'Terezi', 'Vriska', 'Nepeta', 'Kanaya', 'Aradia', 'Tavros', 'Sollux', 'Equius', 'Gamzee', 'Eridan', 'Feferi', 'Rufioh', 'Diemen', 'Cronus', 'Meenah', 'Aranea', 'Porrim', 'Latula', 'Mituna', 'Kankri', 'Meulin', 'Kurloz', 'Damara'];
+const HOMESTUCK_SECOND = ['Makara', 'Vantas', 'Serket', 'Leijon', ''];
+
+export function generateHomestuckTrollNames(count: number, seed?: number): SimpleNameResult[] {
+  return generateFromLists(HOMESTUCK_FIRST, HOMESTUCK_SECOND, count, seed);
+}
+
+// Symbiote (Venom-style)
+const SYMBIOTE_FIRST = ['Venom', 'Carnage', 'Toxin', 'Riot', 'Scream', 'Phage', 'Agony', 'Lasher', 'Shadow', 'Void', 'Dark', 'Rage', 'Chaos', 'Fury', 'Sliver', 'Shard', 'Bind', 'Fuse', 'Host', 'Strain', 'Spike', 'Tendril', 'Ooze', 'Black'];
+const SYMBIOTE_SECOND = ['the Symbiote', 'X', ''];
+
+export function generateSymbioteNames(count: number, seed?: number): SimpleNameResult[] {
+  return generateFromLists(SYMBIOTE_FIRST, SYMBIOTE_SECOND, count, seed);
+}
+
+// Speedster (Flash-style)
+const SPEEDSTER_FIRST = ['Flash', 'Quick', 'Bolt', 'Blur', 'Zoom', 'Velocity', 'Turbo', 'Sonic', 'Lightning', 'Storm', 'Dash', 'Rush', 'Swift', 'Nitro', 'Accel', 'Velocity', 'Streak', 'Blaze', 'Thunder', 'Spark', 'Pulse', 'Surge', 'Jet', 'Rocket'];
+const SPEEDSTER_SECOND = ['Runner', 'X', ''];
+
+export function generateSpeedsterNames(count: number, seed?: number): SimpleNameResult[] {
+  return generateFromLists(SPEEDSTER_FIRST, SPEEDSTER_SECOND, count, seed);
+}
+
+// Boxer nicknames
+const BOXER_FIRST = ['Iron', 'Steel', 'Golden', 'Sugar', 'Smokin', 'Big', 'The', 'Kid', 'King', 'Champ', 'Heavy', 'Lightning', 'Thunder', 'Raging', 'Pretty', 'Hands', 'Fists', 'Jab', 'Hook', 'Uppercut', 'Dynamite', 'Tiger', 'Lion', 'Bull'];
+const BOXER_SECOND = ['Mike', 'Joe', 'Ray', 'Kid', ''];
+
+export function generateBoxerNames(count: number, seed?: number): SimpleNameResult[] {
+  return generateFromLists(BOXER_FIRST, BOXER_SECOND, count, seed);
+}
+
+// Hillbilly / country
+const HILLBILLY_FIRST = ['Billy', 'Bobby', 'Cletus', 'Jed', 'Jethro', 'Bubba', 'Duke', 'Earl', 'Hank', 'Jim Bob', 'Larry', 'Merle', 'Cooter', 'Daisy', 'Sue', 'Betty', 'Mabel', 'Maude', 'Vern', 'Dewey', 'Waylon', 'Homer', 'Roscoe', 'Gomer'];
+const HILLBILLY_SECOND = ['Joe', 'Ray', 'Lee', ''];
+
+export function generateHillbillyNames(count: number, seed?: number): SimpleNameResult[] {
+  return generateFromLists(HILLBILLY_FIRST, HILLBILLY_SECOND, count, seed);
+}
+
+// Crew / GTA-style
+const CREW_FIRST = ['Lost', 'Saints', 'Vagos', 'Ballas', 'Grove', 'Families', 'Mafia', 'Cartel', 'Syndicate', 'Empire', 'Legion', 'Phantom', 'Ghost', 'Shadow', 'Elite', 'Apex', 'Prime', 'Royal', 'Street', 'West', 'East', 'North', 'South', 'Central'];
+const CREW_SECOND = ['MC', 'Crew', 'Gang', 'Squad', ''];
+
+export function generateCrewNames(count: number, seed?: number): SimpleNameResult[] {
+  return generateFromLists(CREW_FIRST, CREW_SECOND, count, seed);
+}
+
+// TADC – The Amazing Digital Circus
+const TADC_FIRST = ['Pomni', 'Jax', 'Ragatha', 'Zooble', 'Kinger', 'Gangle', 'Caine', 'Bubble', 'Kaufmo', 'Abstract', 'Glitch', 'Digital', 'Pixel', 'Virtual', 'Circus', 'Ringmaster', 'Jester', 'Clown', 'Mime', 'Acrobat', 'Trapeze', 'Tent', 'Carnival', 'Funhouse'];
+const TADC_SECOND = ['the Clown', 'the Digital', ''];
+
+export function generateTadcNames(count: number, seed?: number): SimpleNameResult[] {
+  return generateFromLists(TADC_FIRST, TADC_SECOND, count, seed);
+}
+
+// HTTYD – How to Train Your Dragon
+const HTTYD_FIRST = ['Toothless', 'Stormfly', 'Hookfang', 'Barf', 'Belch', 'Meatlug', 'Skullcrusher', 'Cloudjumper', 'Screaming', 'Deadly', 'Nadder', 'Monstrous', 'Nightmare', 'Gronckle', 'Zippleback', 'Skrill', 'Bewilderbeast', 'Red', 'Death', 'Light Fury', 'Night Fury', 'Dragon', 'Hiccup', 'Astrid'];
+const HTTYD_SECOND = ['the Dragon', ''];
+
+export function generateHttydNames(count: number, seed?: number): SimpleNameResult[] {
+  return generateFromLists(HTTYD_FIRST, HTTYD_SECOND, count, seed);
+}
+
+// Drag king
+const DRAG_KING_FIRST = ['Max', 'King', 'Duke', 'Rex', 'Leo', 'Victor', 'Ace', 'Blaze', 'Storm', 'Steel', 'Razor', 'Phoenix', 'Jasper', 'Felix', 'Damien', 'Orion', 'Atlas', 'Titan', 'Zeus', 'Apollo', 'Mars', 'Thor', 'Loki', 'Prince'];
+const DRAG_KING_SECOND = ['Power', 'Royale', 'King', ''];
+
+export function generateDragKingNames(count: number, seed?: number): SimpleNameResult[] {
+  return generateFromLists(DRAG_KING_FIRST, DRAG_KING_SECOND, count, seed);
+}
+
+// Yautja / Predator
+const YAUTJA_FIRST = ['Wolf', 'Scar', 'Celtic', 'Chopper', 'Falconer', 'Tracker', 'Elder', 'Young', 'City', 'Super', 'Berserker', 'Assassin', 'Hunter', 'Predator', 'Yautja', 'Hish', 'Bad', 'Ahab', 'Prince', 'Dark', 'Ghost', 'Serpent', 'Scorpion', 'Viper'];
+const YAUTJA_SECOND = ['Predator', 'Hunter', ''];
+
+export function generateYautjaNames(count: number, seed?: number): SimpleNameResult[] {
+  return generateFromLists(YAUTJA_FIRST, YAUTJA_SECOND, count, seed);
+}
+
+// Badass username
+const BADASS_FIRST = ['Dark', 'Shadow', 'Phantom', 'Ghost', 'Razor', 'Viper', 'Storm', 'Blaze', 'Iron', 'Steel', 'Rage', 'Fury', 'Chaos', 'Void', 'Nova', 'Omega', 'Alpha', 'Reaper', 'Slayer', 'Demon', 'Wraith', 'Spectre', 'Onyx', 'Raven'];
+const BADASS_SECOND = ['Killer', 'Hunter', 'X', '99', ''];
+
+export function generateBadassUsernameNames(count: number, seed?: number): SimpleNameResult[] {
+  return generateFromLists(BADASS_FIRST, BADASS_SECOND, count, seed);
+}
+
+// Army / military
+const ARMY_FIRST = ['Alpha', 'Bravo', 'Delta', 'Echo', 'Foxtrot', 'Ghost', 'Reaper', 'Viper', 'Cobra', 'Raven', 'Hawk', 'Eagle', 'Wolf', 'Bear', 'Titan', 'Spartan', 'Ranger', 'Recon', 'Strike', 'Shadow', 'Phantom', 'Steel', 'Iron', 'Thunder'];
+const ARMY_SECOND = ['Squad', 'Team', 'Unit', 'Force', ''];
+
+export function generateArmyNames(count: number, seed?: number): SimpleNameResult[] {
+  return generateFromLists(ARMY_FIRST, ARMY_SECOND, count, seed);
+}
+
+// Nun / religious
+const NUN_FIRST = ['Sister', 'Mother', 'Mary', 'Margaret', 'Agnes', 'Bernadette', 'Teresa', 'Catherine', 'Clare', 'Francis', 'Joan', 'Lucy', 'Rose', 'Patricia', 'Elizabeth', 'Anne', 'Rita', 'Monica', 'Veronica', 'Felicity', 'Grace', 'Hope', 'Faith', 'Charity'];
+const NUN_SECOND = ['of Mercy', 'of Peace', ''];
+
+export function generateNunNames(count: number, seed?: number): SimpleNameResult[] {
+  return generateFromLists(NUN_FIRST, NUN_SECOND, count, seed);
+}
+
+// Clash Royale
+const CLASH_ROYALE_FIRST = ['Royal', 'Dark', 'Ice', 'Fire', 'Electro', 'Mega', 'Super', 'Mini', 'Giant', 'Knight', 'Prince', 'Princess', 'Wizard', 'Witch', 'P.E.K.K.A', 'Hog', 'Dragon', 'Baby', 'Skeleton', 'Golem', 'Lava', 'Sparky', 'Inferno', 'Battle'];
+const CLASH_ROYALE_SECOND = ['Rider', 'Tower', 'King', ''];
+
+export function generateClashRoyaleNames(count: number, seed?: number): SimpleNameResult[] {
+  return generateFromLists(CLASH_ROYALE_FIRST, CLASH_ROYALE_SECOND, count, seed);
+}
+
+// Task force
+const TASK_FORCE_FIRST = ['Alpha', 'Bravo', 'Delta', 'Ghost', 'Shadow', 'Phantom', 'Raven', 'Viper', 'Strike', 'Rapid', 'Elite', 'Tactical', 'Special', 'Covert', 'Black', 'Red', 'Blue', 'Omega', 'Sigma', 'Zero', 'First', 'Prime', 'Apex', 'Storm'];
+const TASK_FORCE_SECOND = ['One', 'Squad', 'Team', 'Unit', ''];
+
+export function generateTaskForceNames(count: number, seed?: number): SimpleNameResult[] {
+  return generateFromLists(TASK_FORCE_FIRST, TASK_FORCE_SECOND, count, seed);
+}
+
+// Kik / messenger username
+const KIK_FIRST = ['Cool', 'Pro', 'Dark', 'Shadow', 'King', 'Queen', 'Star', 'Moon', 'Sun', 'Fire', 'Ice', 'Storm', 'Ghost', 'Ninja', 'Dragon', 'Wolf', 'Tiger', 'Lion', 'Phoenix', 'Diamond', 'Ruby', 'Neon', 'Cyber', 'Pixel'];
+const KIK_SECOND = ['Guy', 'Girl', 'X', '99', ''];
+
+export function generateKikNames(count: number, seed?: number): SimpleNameResult[] {
+  return generateFromLists(KIK_FIRST, KIK_SECOND, count, seed);
+}
+
+// Tumblr blog name
+const TUMBLR_BLOG_FIRST = ['Aesthetic', 'Mood', 'Vibe', 'Soft', 'Dark', 'Cottage', 'Witch', 'Cozy', 'Chaos', 'Crystal', 'Luna', 'Stardust', 'Velvet', 'Moss', 'Fern', 'Rain', 'Cloud', 'Dream', 'Sleepy', 'Caffeine', 'Books', 'Art', 'Pixel', 'Retro'];
+const TUMBLR_BLOG_SECOND = ['core', 'blog', 'hours', ''];
+
+export function generateTumblrBlogNames(count: number, seed?: number): SimpleNameResult[] {
+  return generateFromLists(TUMBLR_BLOG_FIRST, TUMBLR_BLOG_SECOND, count, seed);
+}
+
+// Amusement park
+const AMUSEMENT_PARK_FIRST = ['Fun', 'Magic', 'Adventure', 'Thrill', 'Dream', 'Fantasy', 'Wonder', 'Joy', 'Splash', 'Wild', 'Safari', 'Cosmic', 'Galaxy', 'Storm', 'Lightning', 'Twister', 'Cyclone', 'Hurricane', 'Rocket', 'Star', 'Moon', 'Sun', 'Rainbow', 'Candy'];
+const AMUSEMENT_PARK_SECOND = ['Land', 'World', 'Park', 'Kingdom', ''];
+
+export function generateAmusementParkNames(count: number, seed?: number): SimpleNameResult[] {
+  return generateFromLists(AMUSEMENT_PARK_FIRST, AMUSEMENT_PARK_SECOND, count, seed);
+}
+
+// Fakemon (fan-made Pokémon)
+const FAKEMON_FIRST = ['Flame', 'Aqua', 'Leaf', 'Spark', 'Frost', 'Shadow', 'Crystal', 'Mist', 'Storm', 'Breeze', 'Moss', 'Vine', 'Thorn', 'Petal', 'Scale', 'Fang', 'Claw', 'Wing', 'Tail', 'Fluff', 'Puff', 'Nimbus', 'Ember', 'Blaze'];
+const FAKEMON_SECOND = ['mon', 'eon', 'izard', 'ite', ''];
+
+export function generateFakemonNames(count: number, seed?: number): SimpleNameResult[] {
+  return generateFromLists(FAKEMON_FIRST, FAKEMON_SECOND, count, seed);
+}
+
+// 40K planet (Warhammer)
+const FORTYK_FIRST = ['Krieg', 'Cadia', 'Terra', 'Mars', 'Fenris', 'Macragge', 'Armageddon', 'Catachan', 'Valhalla', 'Mordian', 'Tallarn', 'Vostroya', 'Necromunda', 'Ultramar', 'Segmentum', 'Sector', 'Imperium', 'Chaos', 'Warp', 'Eye', 'Cicatrix', 'Crusade', 'Siege', 'Exterminatus'];
+const FORTYK_SECOND = ['Prime', 'Secundus', 'Alpha', ''];
+
+export function generateFortykPlanetNames(count: number, seed?: number): SimpleNameResult[] {
+  return generateFromLists(FORTYK_FIRST, FORTYK_SECOND, count, seed);
+}
+
+// Magical girl
+const MAGICAL_GIRL_FIRST = ['Sailor', 'Cure', 'Pretty', 'Sparkle', 'Star', 'Moon', 'Crystal', 'Dream', 'Heart', 'Love', 'Peace', 'Hope', 'Light', 'Prism', 'Rainbow', 'Cosmic', 'Luna', 'Stella', 'Nova', 'Celestial', 'Angel', 'Fairy', 'Witch', 'Mystic'];
+const MAGICAL_GIRL_SECOND = ['Moon', 'Star', 'Heart', ''];
+
+export function generateMagicalGirlNames(count: number, seed?: number): SimpleNameResult[] {
+  return generateFromLists(MAGICAL_GIRL_FIRST, MAGICAL_GIRL_SECOND, count, seed);
+}

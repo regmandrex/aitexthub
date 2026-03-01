@@ -1,5 +1,4 @@
 import type { Metadata } from 'next';
-import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { JsonLd } from '@/components/JsonLd';
 import FAQSection from '@/components/FAQSection';
@@ -18,8 +17,8 @@ const toolSlug = 'island-name-generator';
 export async function generateMetadata(): Promise<Metadata> {
   return buildToolMeta({
     title: 'Island Name Generator',
-    description: 'Generate island names for games, stories, Animal Crossing, and worldbuilding.',
-    seoTitle: 'Island Name Generator - Names for Islands Free',
+    description: 'Free island name generator for island names. Create tropical and fantasy name ideas in your browser with no sign-up.',
+    seoTitle: 'Island Name Generator – Tropical & Island Names',
     urlPath: `/${toolSlug}`,
   });
 }
@@ -28,158 +27,170 @@ function createWriteUp() {
   return (
     <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
-        <h2>Island Name Generator - Names for Islands for Animal Crossing and Worldbuilding</h2>
+        <h2>Island Name Generator – Tropical & Island Names</h2>
         <h2>Introduction</h2>
         <p>
-          This guide explains how to use an island name generator (or names for islands generator) to get island names for games like Animal Crossing, stories, and worldbuilding. The tool runs in your browser and produces tropical, fantasy, or peaceful-sounding name combinations at the click of a button. It is designed for players, writers, and worldbuilders who need many island names quickly. The generator does not store data and runs entirely in your browser. You get 1–24 names per run and can run it as often as you like with no sign-up.
+          This guide explains how to use a Island name generator to create island names for Island and other fiction and creative projects. The tool runs in your browser and produces unique, memorable name ideas at the click of a button. It is designed for players who want Island name ideas quickly without sign-up or download. The generator does not store data and runs entirely in your browser. You get 1–24 names per run and can run it as often as you like. Always check your game or story for availability before committing to a name.
         </p>
         <p>
-          People often search for &quot;island name generator&quot; or &quot;names for islands generator&quot;; both refer to the same type of tool. This page serves those intents with one free generator. Whether you are naming an island in Animal Crossing, writing a novel set on an island, or building a fantasy world with many locations, the tool gives you a pool of ideas to choose from or adapt.
+          People search for Island name ideas and character name generators when setting up a new profile, an esports handle, or a stream name. This Island name generator serves that intent with one free, browser-based tool. Whether you need a single standout character name or a shortlist of options, the generator gives you a pool of ideas. Names must be unique on each service, so verifying availability on Island or your chosen platform is an essential step after generating ideas.
         </p>
-        <h2>What Is an Island Name Generator?</h2>
+
+        <h2>What Is a Island Name Generator?</h2>
         <p>
-          An island name generator is an online tool that creates island names for games (e.g. Animal Crossing), stories, and worldbuilding. You get tropical, fantasy, or peaceful-sounding names at the click of a button. The generator combines curated word elements (e.g. coral, isle, shores, haven, sunset, palm) at random so each run produces new combinations. It does not copy real place names; it is for creative use only. This free tool runs in your browser with no sign-up.
+          A Island name generator is an online tool that creates island names suitable for Island and other fiction and creative projects. You get unique name ideas at the click of a button. The generator combines curated tropical and fantasy words and elements at random so each run produces new combinations. The output is for inspiration only; you must check your platform for availability. This free Island name generator runs in your browser with no sign-up and does not send generated names to any server.
         </p>
         <p>
-          The output is plain text, one name per line. You can copy the list and paste it into a document, then pick the names that fit your game or story. Many games (including Animal Crossing) have a character limit for island names, so you may need to shorten or tweak a generated name. The generator gives you ideas; you adapt them as needed.
+          The output is plain text, one name per line. You can copy the full list and paste it into a notes app, then check your game or story for availability and pick one. Many users run the Island name generator multiple times to build a shortlist before deciding. Because names are created locally, your choices stay private and nothing is stored on our servers.
         </p>
+        <p>
+          Island name generators are useful when you are tired of reusing the same username or when you want a fresh character name that fits your style. The tool does not guarantee that a name is available; it only suggests combinations. Always confirm availability on your game or story before you commit to a new username.
+        </p>
+
         <h2>Why This Island Name Generator Matters</h2>
         <p>
-          Choosing an island name can be surprisingly hard. You want something memorable and fitting, and in games you often have a tight character limit. An island name generator speeds up the brainstorming step. Instead of staring at a blank field, you get a list of options in seconds. You can run it on a phone or desktop, copy the names you like, and then pick or adapt one. The tool is free and does not require an account.
+          Choosing a memorable Island name or character name can be time-consuming. A Island name generator speeds up brainstorming. Instead of staring at a blank field, you get options in seconds. You can run it on a phone or desktop, copy the names you like, and then check availability on your game or story. The tool is free and does not require an account, so there is no friction to trying many ideas.
         </p>
         <p>
-          The generator also keeps your ideas private. Names are created in your browser and are not sent to our servers. Writers and game designers can use it for unpublished projects without any data leaving their device.
+          The generator also keeps your ideas private. Names are created in your browser and are not sent to our servers. You can use it in a private or incognito window if you prefer. Because generation is local, there is no risk of your shortlist being stored or logged. That matters when you are testing ideas before you settle on a final Island name or character name.
         </p>
-        <h2>How to Use This Island Name Generator</h2>
-        <p>Follow these steps:</p>
-        <ol className="list-decimal pl-6 space-y-2">
-          <li>Set how many names you want per run (1–24).</li>
-          <li>Click &quot;Generate names&quot; to get a new list.</li>
-          <li>Use the Copy button to copy all names to your clipboard, then paste into your game, story, or notes.</li>
-          <li>Run again for more options; no account required.</li>
-        </ol>
-        <p>The tool runs in your browser; your settings and generated names are not sent to any server.</p>
-        <h2>When to Use an Island Name Generator</h2>
-        <p>Use this generator when you need island names quickly. Key use cases:</p>
-        <ul className="list-disc pl-6 space-y-1">
-          <li>Animal Crossing and other games that let you name an island</li>
-          <li>Stories and novels with island settings</li>
-          <li>Tabletop games and worldbuilding (fantasy, pirate, or tropical settings)</li>
-          <li>Creative writing and YouTube or social content</li>
-        </ul>
-        <p>It is ideal when you need many names at once or want to explore different styles without inventing every name by hand.</p>
-        <h2>Island Naming Style</h2>
-        <p>Island names often use natural or evocative word elements—coral, sunset, palm, isle, shores, haven. This generator uses curated first and second elements and combines them at random so you get new combinations that fit that style. The output is for creative use only.</p>
+        <p>
+          A good Island name generator also standardizes the workflow: set how many names you want, click generate, copy the list, and check availability. You get a consistent way to explore username ideas without writing scripts or visiting multiple sites. The output is easy to paste into notes or a document so you can track which names you have already checked on Island or other platforms.
+        </p>
+
         <h2>How the Island Name Generator Works (Step by Step)</h2>
         <p>
-          When you open the page, you choose how many names you want (1–24). Clicking &quot;Generate names&quot; triggers the tool to randomly combine curated island-style word elements in your browser. Each run is independent; no names or settings are sent to a server. The result is a list of name ideas, one per line. You can copy the full list with one click and paste it into a document or notes app. To get more ideas, run the generator again; each run produces a new random set.
+          When you open the page, you choose how many names you want per run (1–24). Clicking &quot;Generate names&quot; triggers the tool to randomly combine curated tropical and fantasy elements in your browser. Each run is independent; no names or settings are sent to a server. The result is a list of Island name ideas, one per line. You can copy the full list with one click and paste it into a notes app. To get more ideas, run the generator again. The tool does not check Island or any platform for availability—you must do that yourself.
         </p>
         <p>
-          The generator does not check against real place names or game databases. It only produces new combinations from its word list. Some names may resemble existing islands or places; many are unique. Use the output as inspiration and adapt spelling or length to fit your project.
-        </p>
-        <h2>Names for Islands: Tropical, Fantasy, and Peaceful Styles</h2>
-        <p>
-          The generator leans toward tropical, fantasy, and peaceful-sounding names. That fits Animal Crossing, pirate or tropical tabletop settings, and many fictional islands. If you need a darker or more dramatic tone, you can still use the list as a starting point and tweak a word or add a suffix. The tool is flexible; the main goal is to give you a pool of ideas so you are not stuck on a blank page.
-        </p>
-        <h2>Animal Crossing Island Names and Character Limits</h2>
-        <p>
-          Animal Crossing has a character limit for island names (typically 10 characters in many versions). The generator may produce names that are longer than the limit. When that happens, shorten the name (e.g. use one word from a two-word suggestion) or abbreviate. Many players run the generator, pick a name they like, and then trim it to fit. Keep the character limit in mind when you browse the list.
+          The underlying word lists are designed to sound like gaming island names: bold, memorable, and easy to type. The generator shuffles and combines these elements so that each run produces different combinations. That randomness helps you discover names you might not have thought of on your own. Because everything runs in the browser, the Island name generator works offline once the page is loaded and does not depend on a backend service.
         </p>
         <p>
-          Other games and platforms have different limits. Always check the rules for the game or project you are naming for. The generator gives you raw ideas; you apply the constraints of your medium.
+          There are no hidden steps. You set the count, click generate, and receive a list. Copying is one click; pasting into your own document keeps your shortlist in one place. Running the Island name generator multiple times is the intended workflow when you want a large pool of character name ideas before checking availability.
         </p>
+
+        <h2>How to Use This Island Name Generator</h2>
+        <p>Follow these steps to get Island name ideas:</p>
+        <ol className="list-decimal pl-6 space-y-2">
+          <li>Set how many names you want per run (1–24).</li>
+          <li>Click &quot;Generate names&quot; to get a new list of character name ideas.</li>
+          <li>Use the Copy button to copy all names to your clipboard.</li>
+          <li>Paste into a notes app or document, then check your game or story for availability and pick one.</li>
+          <li>Run again for more options; no account or download is required.</li>
+        </ol>
+        <p>
+          The Island name generator runs in your browser; your settings and generated names are not sent to any server. You can run it as often as you like. Building a shortlist of five to ten options before checking availability on Island is a good habit, since popular usernames are often taken. Have backups ready so that if your first choice is unavailable, you can try the next name on your list.
+        </p>
+
+        <h2>Island and Gamer Naming Style</h2>
+        <p>
+          Island names and character names often use bold, memorable word combinations: action words, nicknames, or creative spellings. This Island name generator uses curated tropical and fantasy elements and combines them at random so you get new combinations that fit that style. The output is for inspiration only; the tool does not check Island or any platform for availability. You can use the names as-is or tweak spelling and punctuation to make them your own.
+        </p>
+        <p>
+          Different games and communities favor different styles. Some players prefer short, punchy character names; others like longer usernames. Running the generator multiple times gives you a mix of lengths and styles. Skim the list, mark the ones you like, and then verify each one on your game or story. The Island name generator is a starting point—your final choice should fit your personality and the rules of your platform.
+        </p>
+
+        <h2>When to Use a Island Name Generator</h2>
+        <p>
+          Use this Island name generator when you need Island or tropical and fantasy username ideas quickly. Common use cases include creating a new Island account or updating your profile name, choosing an in-game name for esports or casual play, and picking a stream or social handle. The same tool works for other platforms—Discord, Xbox, PlayStation, or social profiles—as inspiration. Names must be unique on each platform, so always check availability before committing.
+        </p>
+        <p>
+          Another good time to use a Island name generator is when you are rebranding. If you have used the same character name for years and want a fresh identity, generating a batch of ideas helps you explore options without pressure. Run the tool several times, paste results into one document, and remove duplicates. Then check Island and any other platforms you use to see which names are still available. Having a shortlist saves time compared to checking one idea at a time.
+        </p>
+
+        <h2>Use Cases in Detail: Profiles, Esports, and Streams</h2>
+        <p>
+          Players use the Island name generator when creating a new Island account or refreshing their profile name. Esports and streamers use it for in-game names or stream handles. The same tool works for other platforms—Discord, Xbox, PlayStation, or social—as inspiration; you must check each platform for availability. Run the generator multiple times to build a shortlist, then check which names are free on your platform. The Island name generator does not reserve or validate names; it only suggests combinations.
+        </p>
+        <p>
+          Content creators often need a consistent handle across Steam, streaming, and social media. Generating a batch of character name ideas lets you test different options before you commit. Copy the names you like into a single list, then check availability on each service. If one name is taken on Island but free elsewhere, you can still use it on the platforms where it is available, or use the generator again to find alternatives that work everywhere.
+        </p>
+
+        <h2>Tips for Choosing a Island Username</h2>
+        <p>
+          Pick a name that is easy to remember and type. Short character names are easier to say in voice chat and less likely to be mistyped. Run the Island name generator multiple times to get a shortlist, then check your game or story for availability. Have a few backups in case your first choice is taken. Avoid names that might be mistaken for someone else or that break platform rules. The generator gives you ideas only; the final choice is yours.
+        </p>
+        <p>
+          Consider how the name will look in different contexts: in-game, on a stream overlay, or in a friend list. Some combinations look great in one font but odd in another. If you plan to use the same handle across multiple games and platforms, check availability everywhere before you invest in branding. The Island name generator is a free way to explore options without committing until you have confirmed that your chosen Island name or character name is available.
+        </p>
+
+        <h2>Running the Island Name Generator in Batches</h2>
+        <p>
+          When you need many username ideas, run the Island name generator multiple times. Each run gives up to 24 names. Paste each run into the same document and remove duplicates if any appear. Check availability on your platform for each name you like. There is no daily or total limit; you can run the generator as often as you want. Batching is useful when you are setting up several accounts, testing ideas for a team, or simply want a large pool of character name options before making a decision.
+        </p>
+        <p>
+          Keeping a single document with all your generated Island name ideas makes it easy to track which names you have already checked. Mark names as &quot;taken&quot; or &quot;available&quot; as you go. That way you avoid re-checking the same name on Island or another platform. The Island name generator does not remember previous runs, so your document is your only record of the ideas you have collected.
+        </p>
+
         <h2>Privacy and Local Processing</h2>
         <p>
-          This island name generator runs entirely in your browser. When you set the number of names and click generate, the names are created locally on your device. Your choices and the generated names are not sent to our servers. We do not store your inputs or the generated list. No account or login is required. You can use the tool in a private or incognito window if you prefer.
+          This Island name generator runs entirely in your browser. When you set the number of names and click generate, the names are created locally on your device. Your choices and the generated names are not sent to our servers. We do not store your inputs or the generated list. No account or login is required. That means your shortlist of character name ideas stays on your machine unless you choose to copy it somewhere else.
         </p>
-        <h2>Island Name Generator for Worldbuilding</h2>
         <p>
-          Writers and game designers building worlds with islands often need many location names. Run the generator multiple times to build a roster. Keep a naming document to avoid reusing names. For mixed settings you can pair this tool with other naming tools for creatures and teams; when pasting from the web, a space remover or strip-HTML step can keep formatting clean. A single master list helps you stay consistent across chapters or sessions.
+          Because generation is local, the tool is suitable for use in private or incognito windows. If you close the tab, the generated list is gone unless you have copied it. There is no server-side log of what names you generated or how many times you ran the Island name generator. This privacy model is intentional: username brainstorming is personal, and the tool is designed so that you control where your ideas go.
         </p>
+
         <h2>Copying and Exporting Names</h2>
-        <p>Use the Copy button to copy all names to your clipboard (one per line). Paste into Word, Google Docs, a spreadsheet, or notes. For long lists across multiple runs, paste each run into the same document and sort or deduplicate as needed. If you notice extra spaces or line breaks after pasting, run the text through a space remover or strip-HTML tool so formatting stays clean.</p>
-        <h2>Mobile and Cross-Device Use</h2>
-        <p>The island name generator runs in a web browser and works on desktop, tablet, and phone. No app install is required. Each run is independent; we do not save your history or preferences.</p>
-        <h2>Names for Islands Generator: Search Intent</h2>
-        <p>People search for &quot;island name generator&quot; or &quot;names for islands generator&quot;; both refer to the same type of tool. This page serves those intents with one generator.</p>
-        <h2>Combining With Other Generators</h2>
-        <p>Your project may need more than one naming style. Use this generator for island or location names and other naming tools on our site for creatures and characters. When assembling lists from multiple tools, keep a single naming document and clean pasted text (e.g. with a space remover or strip-HTML step) so formatting stays consistent.</p>
-        <h2>Why Use a Generator Instead of Picking Manually?</h2>
-        <p>Manually inventing dozens of island names can be time-consuming. An island name generator produces many options in seconds. Run it repeatedly and pick the names that best fit your game or story. For worldbuilding with many locations, the generator saves time and keeps naming style consistent (e.g. all tropical or all fantasy).</p>
-        <h2>Best Practices for Island Names</h2>
         <p>
-          Run the generator in batches when you need many names. Paste each run into a single document and remove duplicates. Check the character limit for your game (e.g. Animal Crossing) so you do not fall in love with a name that is too long. If you are naming multiple islands in one world or story, keep a naming document and mark which names you have already used so you stay consistent.
+          Use the Copy button to copy all generated Island name ideas to your clipboard (one per line). Paste into a notes app or document. Check your game or story for availability before committing to a name. The names are plain text, so they work in any editor or form. If you paste into a spreadsheet, each line can go in its own cell for easy tracking. The Island name generator does not export to a file; copying and pasting is the intended way to save your shortlist.
         </p>
-        <h2>Formatting and Pasting Into Games or Documents</h2>
-        <p>
-          The generator outputs one name per line in plain text. Use the Copy button to copy the full list to your clipboard, then paste into a notes app, document, or spreadsheet. If you paste from the web and notice extra spaces or line breaks, run the pasted text through a space remover or strip-HTML tool so the list stays clean. When you have a shortlist, type or paste your chosen name into the game&apos;s island name field, trimming to fit the character limit if needed.
-        </p>
-        <h2>No Download or Account Required</h2>
-        <p>
-          This island name generator runs entirely in your browser. You do not need to download software or create an account. Open the page, set how many names you want, and click generate. The tool is free and does not show ads or paywalls. You can bookmark the page and return whenever you need new island name ideas.
-        </p>
-        <h2>When to Use an Island Name Generator</h2>
-        <p>
-          Use this generator when you are naming an island in Animal Crossing or another game, writing a story or novel with island settings, building a tabletop or video game world with multiple islands, or creating content (e.g. YouTube, social media) that needs island names. It is ideal when you need many names at once or want to explore different styles without inventing every name by hand. The generator is not for checking real place names; it is for creative and fictional use.
-        </p>
-        <h2>Combining With Other Name Generators</h2>
-        <p>
-          If your project needs names for islands, characters, creatures, and teams, you can use this generator for islands and other naming tools on our site for the rest. Keep a single naming document and paste results from each tool into separate sections. When you paste from the web, use a space remover or strip-HTML step so formatting stays consistent. See our homepage for the full list of naming and text tools.
-        </p>
+
         <h2>Limits and Batch Size</h2>
         <p>
-          You can request 1–24 names per run. There is no daily or total limit. If you need more than 24, run the generator again and paste the new list into your document. For very large lists (e.g. fifty or a hundred island names for a world), run the generator in batches and then sort or deduplicate in your document. The tool is designed for quick, repeated use.
+          You can request 1–24 names per run with this Island name generator. There is no daily or total limit. Run the generator again for more options. No download or account is required. If you need more than 24 names in one go, run the tool multiple times and paste the results into one document. Removing duplicates is up to you; the generator does not track previous output.
         </p>
-        <h2>Island Name Generator Quick Reference</h2>
+
+        <h2>No Download or Account Required</h2>
         <p>
-          To get the most from this tool: run it several times and paste results into one document; mark which names you have already used; check your game&apos;s character limit (e.g. Animal Crossing); and trim or adapt names as needed. The generator does not store data and runs in your browser. You can generate 1–24 names per run with no daily limit. For more naming and text tools, see our homepage.
+          This Island name generator runs entirely in your browser. You do not need to download software or create an account. Open the page, set how many names you want, and click generate. The tool is free and works on desktop, tablet, and phone. That makes it easy to use when you are away from your main device or when you want to quickly generate character name ideas without installing anything.
         </p>
-        <h2>Practical Examples: From Generator to Game or Story</h2>
+
+        <h2>Who Uses a Island Name Generator?</h2>
         <p>
-          A typical workflow is: open the generator, request 12 or 24 names, copy the list, and paste it into a document. Scan the list and circle the names you like. For Animal Crossing, shorten your favorite to fit the character limit if needed, then enter it in the game. For a story or worldbuilding document, assign each name to an island and keep a master list so you do not reuse names.
-        </p>
-        <p>
-          Some users generate several batches and build a long list of fifty or a hundred names before choosing. Others generate a short list and pick immediately. Both approaches work. The generator has no limit on how often you run it. The output is plain text, one name per line, so you can paste into any app or game that accepts text.
-        </p>
-        <h2>Collision and Uniqueness</h2>
-        <p>
-          Because the generator combines a finite set of elements at random, two runs can occasionally produce the same name. If you build a long list across many runs, sort and remove duplicates so your shortlist is easier to manage. For creative projects, uniqueness is your responsibility; the generator only supplies ideas.
-        </p>
-        <h2>Teachers and Educational Use</h2>
-        <p>
-          Teachers can use this island name generator in lessons on creative writing, geography, or worldbuilding. Students might generate a list of island names for a story or a map project. Emphasize that the tool is for inspiration and that real place names should be researched separately. The generator runs in the browser with no sign-up, so it is suitable for classroom use.
-        </p>
-        <h2>Tropical vs Fantasy Island Names</h2>
-        <p>
-          The generator produces names that can read as tropical (e.g. sun, coral, palm) or more fantasy (e.g. isle, haven, shores). Run it multiple times to see the range. If you need a specific vibe, pick from the list and tweak a word. For Animal Crossing many players prefer short, cheerful names; for a novel you might want longer or more evocative combinations. The tool gives you raw material; you choose what fits.
-        </p>
-        <h2>Reusing and Sharing Your Island Name List</h2>
-        <p>
-          You can run this island name generator as often as you like and reuse the same list across multiple projects if you want. Many creators keep a personal bank of island names and draw from it for different stories or games. The names are algorithm-generated and not copyrighted; use them freely for creative work. If you build a list with this tool and other naming tools on our site, keep one master file and clean pasted text so formatting stays consistent when you copy between documents.
-        </p>
-        <h2>How Many Names to Generate</h2>
-        <p>
-          For a single island (e.g. one Animal Crossing island), one run of 12 or 24 names is usually enough. For a story or world with many islands, run the generator multiple times and build a list of fifty or more. Remove duplicates and trim names to fit your character limits. The generator has no daily or total limit, so you can build as large a list as you need.
-        </p>
-        <h2>Character Limits in Games and Stories</h2>
-        <p>
-          Games like Animal Crossing impose a character limit on island names (often 10 characters). Stories and novels have no technical limit, but short names are often easier for readers to remember. When you use this island name generator, keep your target medium in mind. If a generated name is too long, use one word from it or abbreviate. The generator supplies ideas; you apply the constraints of your project.
+          Players use the Island name generator when creating or updating a Island profile, or when they want a new character name for other platforms. Esports and streamers use it for in-game names or stream handles. The same tool works for Discord, Xbox, PlayStation, or social profiles—always check availability on each platform. Educators and workshop leaders sometimes use it to demonstrate username creation or digital identity in a classroom setting. No account or download is required on our site.
         </p>
         <p>
-          The tool outputs plain text, one name per line. You can copy the full list and paste it into a document, then trim or combine names as needed. Many users run the generator two or three times, paste all results into one file, and then pick the best fits for their game or story.
+          Anyone who needs a steady supply of username ideas can benefit. Whether you are a casual gamer, a competitive player, or a content creator, the Island name generator provides a fast way to explore options. The key is to treat the output as inspiration and always verify availability on Island and any other platform where you plan to use the name.
         </p>
-        <h2>Browser-Only and Free</h2>
+
+        <h2>Getting the Most Out of the Island Name Generator</h2>
         <p>
-          This island name generator runs entirely in your browser. You do not need to download software or create an account. Open the page, set how many names you want, and click generate. The tool is free and does not show ads or paywalls. You can bookmark the page and return whenever you need new island name ideas. Generation happens locally so your lists are never sent to a server. If you use the generator on a phone or tablet, the same applies: no app install, no account, and your names stay on your device until you copy or paste them elsewhere.
+          Run the generator several times and paste all results into one document. Skim for names that fit your style and check your platform for availability. Shortlist five to ten options so you have backups if your first choice is taken. The Island name generator does not check Island or any platform; you must do that yourself. When you have a shortlist, check availability one by one. Usernames are often taken on popular services, so having several options saves time.
         </p>
-        <h2>Tool Methodology and Limitations</h2>
-        <h3>How the island name generator works</h3>
-        <p>The tool uses curated first and second word elements (e.g. coral, isle, shores, haven). When you click generate, it randomly combines these in your browser so each run is different. No names or settings are sent to a server. The output is for creative use only.</p>
-        <h3>Disclaimer</h3>
-        <p>Generated names are for inspiration only. Some combinations may resemble existing place names.</p>
-        <h2>Summary</h2>
         <p>
-          Use this island name generator to create island names for Animal Crossing, stories, games, and worldbuilding. Set the number of names (1–24) and run as often as you like. Copy results into your document or notes. The tool runs locally in your browser with no sign-up. Keep a naming document and trim names to fit your game&apos;s character limit when needed. The generator does not store data and does not check real place names; it is for creative use only. Run it in batches when you need a long shortlist. No account or download is required. Each run is independent and random. The tool is free. You can bookmark the page and return whenever you need new island name ideas. Generation is instant and there are no ads. The tool works on desktop, tablet, and phone. No sign-up or download is required. Run the generator as often as you like. Keep a naming document for long projects and trim names to fit game limits. For more naming and text tools, see our <Link href="/">homepage</Link>.
+          Another tip is to try different batch sizes. Sometimes generating 24 names at once gives you a good mix; other times you may prefer smaller runs so you can review each set before generating more. The tool is flexible. Use it whenever you need new Island name ideas or character name inspiration. Bookmarking the page makes it easy to return when you are ready to refresh your profile or create a new account.
+        </p>
+
+        <h2>Typical Workflow for the Island Name Generator</h2>
+        <p>
+          A typical workflow is: open the page, set the number of names (e.g. 12 or 24), click generate, then copy the list. Paste into a notes app. Check your game or story for availability for each name you like. If your first choice is taken, try the next. Run the Island name generator again for more options. The whole process takes a few minutes. No account or download is required. Bookmark the page for quick access when you need new username ideas. The tool is free and runs in your browser with no sign-up.
+        </p>
+
+        <h2>What This Tool Does NOT Do</h2>
+        <ul>
+          <li>It does not check Island or any platform for username availability.</li>
+          <li>It does not reserve or hold names for you.</li>
+          <li>It does not store your generated list or your settings.</li>
+          <li>It does not connect to Steam, Discord, or any external gaming service.</li>
+        </ul>
+        <p>
+          This Island name generator produces name ideas only. It does not validate availability, create accounts, or manage your profile. You must check Island or your chosen platform yourself and follow that platform&apos;s rules when creating or changing your username. The tool is a brainstorming aid, not a replacement for checking availability.
+        </p>
+
+        <h2>Privacy and Security Notes</h2>
+        <p>
+          The Island name generator runs entirely in your browser. It does not send data to a server and does not store generated values. This is helpful for quick brainstorming and offline use. If you refresh the page, the last generated list is cleared. Copy any names you want to keep before closing or refreshing.
+        </p>
+        <p>
+          For account security, never share your Island password or other credentials. The generator only suggests usernames; it does not handle login or account creation. When you check availability on Island or another platform, use the official site or app and ensure you are on a secure connection. The Island name generator is a standalone tool and does not integrate with any login system.
+        </p>
+
+        <h2>Final Summary and When to Use This Tool</h2>
+        <p>
+          The Island name generator provides a fast way to create username and character name ideas for Island and other fiction and creative projects. Set the number of names (1–24) and run as often as you like. Copy results and check your platform for availability. The tool runs locally in your browser with no sign-up. Keep a shortlist of options in case your first choice is taken. No download or account is required. The generator is free and works on any device.
+        </p>
+        <p>
+          Use this Island name generator when you need Island name ideas, character name inspiration, or a quick way to explore options before checking availability. It is best for brainstorming, rebranding, and building a shortlist. Always verify availability on Island or your chosen platform before committing to a name. The tool is a practical free resource for gaming island names.
         </p>
       </div>
     </section>
@@ -187,30 +198,30 @@ function createWriteUp() {
 }
 
 const pageFaqs: FaqItem[] = [
-  { category: 'General', question: 'What is an island name generator?', answer: 'An island name generator is an online tool that creates island names for games (e.g. Animal Crossing), stories, and worldbuilding. You get names like "Coral Isle" or "Sunset Shores"—tropical, fantasy, or peaceful-sounding—for your projects. People sometimes search for "names for islands generator"; this page serves that intent. This free tool runs in your browser with no sign-up.' },
-  { category: 'Usage', question: 'How do I use the island name generator?', answer: 'Set how many names you want per run (1–24), click "Generate names" to get a new list, then use the Copy button to copy all names to your clipboard. Paste into your game, story, or notes. Run the generator again for more options; no account is required. The tool runs in your browser so your settings and generated names are not sent to any server.' },
-  { category: 'General', question: 'Is the island name generator free?', answer: 'Yes. This island name generator is free to use in your browser. You can generate names as often as you like without creating an account or paying. The tool runs locally on your device.' },
-  { category: 'Use cases', question: 'Can I use it for Animal Crossing?', answer: 'Yes. Many players use island name generators to get ideas for their Animal Crossing island name. Run the generator multiple times to get options and pick the one that fits. The names are for inspiration; you can tweak them to fit the character limit.' },
-  { category: 'Privacy', question: 'Is my data sent to a server?', answer: 'No. This island name generator runs in your browser. When you set the number of names and click generate, the names are created locally on your device. Your choices and the generated names are not sent to our servers. We do not store your inputs or the generated list.' },
-  { category: 'Compatibility', question: 'Does it work on mobile?', answer: 'Yes. The island name generator runs in a web browser and works on desktop, tablet, and phone. You do not need to install an app. Open the page, choose how many names you want, then generate. On a phone you can generate a short list and copy it into notes or email. Each run is independent; we do not save your history or preferences.' },
-  { category: 'Limits', question: 'How many names can I generate?', answer: 'You can request 1–24 names per run with this island name generator. If you need more than 24, run the generator again; each run produces a new random set. There is no daily or total limit. For very long lists run the generator in batches and paste results into one document.' },
-  { category: 'General', question: 'What other name generators do you have?', answer: 'We have name generators for tribe, species, god and goddess, ancient Greek, Naruto, Fallout, Elden Ring, Transformers, anime, and others. See our homepage for the full list.' },
-  { category: 'Usage', question: 'Can I copy the names to a document?', answer: 'Yes. Use the Copy button on this island name generator to copy all generated names to your clipboard. Paste into Word, Google Docs, a spreadsheet, or a notes app. The names are in a simple text format, one per line. If you build a long list across multiple runs, paste each run into the same document and then sort or deduplicate as needed. If you notice extra spaces or line breaks after pasting, run the pasted text through a space remover or strip-HTML tool so the list stays tidy.' },
-  { category: 'General', question: 'Do I need an account?', answer: 'No. This island name generator works without sign-up or login. The tool runs entirely in your browser.' },
-  { category: 'Use cases', question: 'Can I use the names in a book?', answer: 'Yes, for creative projects. The names are for inspiration. Writers use island name generators to name islands in novels, short stories, and worldbuilding. Run the generator multiple times to build a roster and keep a naming document so you do not reuse the same name for two locations.' },
-  { category: 'Privacy', question: 'Do you store the names I generate?', answer: 'No. Generation happens in your browser. We do not receive or store the names or your settings. The island name generator runs locally on your device. You can use the tool in a private or incognito window if you prefer.' },
-  { category: 'Limits', question: 'Can I get more than 24 names?', answer: 'Each run of this island name generator gives up to 24 names. To get more, run the generator again; each run produces a new random set. You can paste multiple runs into one document and then remove duplicates or trim as needed. There is no daily or total limit. For very large lists run the generator in batches and keep a master naming document.' },
-  { category: 'General', question: 'Why "names for islands generator"?', answer: 'That phrase matches how people search for this type of tool. "Island name generator" and "names for islands generator" refer to the same thing; this page serves both search intents with one generator.' },
-  { category: 'Use cases', question: 'Can I use it for tabletop games?', answer: 'Yes. GMs use this island name generator for island names in fantasy, pirate, or tropical settings. Run the generator several times to build a list. Keep a document of names you have already used to avoid duplicates.' },
-  { category: 'General', question: 'Are the names unique?', answer: 'The names are randomly combined from curated word lists. Some combinations may resemble existing place names; many are new. The tool does not check against a database of real islands. Use the output for creative use only.' },
-  { category: 'General', question: 'Can I combine with other generators?', answer: 'Yes. Use this island name generator for island or location names and other naming tools on our site for creatures, teams, or character names. When you assemble lists from multiple tools keep a single naming document and clean pasted text (e.g. with a space remover or strip-HTML step) so formatting stays consistent. See our homepage for the full list of naming tools.' },
-  { category: 'Technical', question: 'How are the names generated?', answer: 'This island name generator uses curated first and second word elements (e.g. coral, isle, shores, haven, sunset, palm). When you click generate, the tool randomly combines these in your browser so each run is different. No names or settings are sent to a server. The result is for creative use only.' },
-  { category: 'General', question: 'Is the island name generator good for worldbuilding?', answer: 'Yes. Writers and game designers use this island name generator to name islands in their worlds. Run the generator multiple times to build a roster and keep a naming document so you do not reuse the same name for two locations.' },
-  { category: 'Use cases', question: 'Can teachers use it?', answer: 'Yes. Teachers can use this island name generator in lessons on creative writing or geography-related activities. Students might generate a list of island names for a story or a map project. Emphasize that the tool is for inspiration.' },
-  { category: 'General', question: 'How do I cite the island name generator?', answer: 'For academic or formal use you can cite this island name generator as a source of inspiration for island names. The generated names are algorithm-produced and are not copyrighted; you can use them freely in your projects. A brief acknowledgment is optional. We do not require attribution.' },
-  { category: 'General', question: 'What if I need a specific theme?', answer: 'Run this island name generator multiple times to get variety; each run produces new random combinations. You can also tweak the results manually. If you need names from another category, see our homepage for the full list of naming tools.' },
-  { category: 'Use cases', question: 'Can I use the island name generator for YouTube or social media?', answer: 'Yes, for creative content. You can use names from this island name generator for video titles, worldbuilding lists, or project names on YouTube or social media.' },
-  { category: 'General', question: 'What is a "names for islands generator"?', answer: 'A "names for islands generator" is the same as an island name generator: a tool that produces island names for games (e.g. Animal Crossing), stories, and worldbuilding. People search for either phrase; this page serves both intents with one generator. You get tropical, fantasy, or peaceful-sounding names at the click of a button.' },
+  { category: 'General', question: 'What is a Island name generator?', answer: 'A Island name generator is an online tool that creates island names for Island and other fiction and creative projects. You get unique Island name ideas at the click of a button. The generator combines curated tropical and fantasy words at random in your browser so each run produces new combinations. This free Island name generator runs locally with no sign-up and does not send generated names to any server. Always check your game or story for availability before committing to a name.' },
+  { category: 'Usage', question: 'How do I use the Island name generator?', answer: 'Set how many names you want per run (1–24), click "Generate names" to get a new list of character name ideas, then use the Copy button to copy all names to your clipboard. Paste into a notes app and check your game or story for availability. Run again for more options; no sign-up is required. The Island name generator runs in your browser so your settings and generated names are not sent to any server. Building a shortlist of five to ten options before checking availability is a good habit.' },
+  { category: 'General', question: 'Is the Island name generator free?', answer: 'Yes. This Island name generator is free to use in your browser. You can generate Island name ideas as often as you like without creating an account or paying. The tool runs locally on your device and does not require a download. There is no daily or total limit on how many times you can run the generator.' },
+  { category: 'Use cases', question: 'Can I use the names for Steam?', answer: 'Yes. The Island name generator produces username ideas that you can use on Steam. Names must be unique on the platform, so always check Steam\'s availability before committing. Run the generator multiple times to build a shortlist of character name ideas, then check which names are available on Steam. The tool does not reserve or validate names; it only suggests combinations for you to verify on the platform.' },
+  { category: 'Privacy', question: 'Is my data sent to a server when I use the Island name generator?', answer: 'No. This Island name generator runs in your browser. When you set the number of names and click generate, the names are created locally on your device. Your choices and the generated Island name ideas are not sent to our servers. We do not store your inputs or the generated list. Generation is fully local and private.' },
+  { category: 'Compatibility', question: 'Does the Island name generator work on mobile?', answer: 'Yes. The Island name generator runs in a web browser and works on desktop, tablet, and phone. You do not need to install an app. Open the page, choose how many names you want, then generate. On a phone you can generate a short list and copy it into notes or check availability on Steam\'s app. The tool is responsive and works on any device with a modern browser.' },
+  { category: 'Limits', question: 'How many names can I generate with the Island name generator?', answer: 'You can request 1–24 names per run with this Island name generator. If you need more than 24 character name ideas, run the generator again; each run produces a new random set. There is no daily or total limit. Paste multiple runs into one document and remove duplicates if needed. The batch size is designed to keep the list manageable while giving you enough Island name options to shortlist.' },
+  { category: 'Usage', question: 'Can I copy the names from the Island name generator?', answer: 'Yes. Use the Copy button on this Island name generator to copy all generated names to your clipboard. Paste into a notes app or document. The names are plain text, one per line, so they work in any editor or form. Check your game or story for availability before choosing a name. Copying is the intended way to save your shortlist of character name ideas.' },
+  { category: 'General', question: 'Do I need an account to use the Island name generator?', answer: 'No. This Island name generator works without sign-up or login. The tool runs entirely in your browser. You do not need to create an account on our site to use it. Open the page, set how many Island name ideas you want, click generate, and copy the results. No email, password, or registration is required.' },
+  { category: 'Use cases', question: 'Can I use the Island name generator for other platforms?', answer: 'Yes. The names work as ideas for any gaming or social platform—Discord, Xbox, PlayStation, or others. The Island name generator is built for Steam-style character names but the output can inspire usernames elsewhere. Check each platform\'s availability; names must be unique on each service. The generator does not check availability for you, so always verify on the platform where you plan to use the name.' },
+  { category: 'Privacy', question: 'Do you store the names I generate with the Island name generator?', answer: 'No. Generation happens in your browser. We do not receive or store the Island name ideas or your settings. The Island name generator runs locally on your device. You can use the tool in a private or incognito window if you prefer. If you refresh the page, the last generated list is cleared unless you have already copied it.' },
+  { category: 'Limits', question: 'Can I get more than 24 names from the Island name generator?', answer: 'Each run of this Island name generator gives up to 24 names. To get more character name ideas, run the generator again; each run produces a new random set. You can paste multiple runs into one document and then remove duplicates. There is no daily or total limit. Batching runs is the intended workflow when you need a large pool of Island name options.' },
+  { category: 'General', question: 'Why "Steam" specifically in a Island name generator?', answer: 'Island is a major gaming platform, and people often search for Island name ideas and character name generators. The Island name generator serves that intent and produces names that fit Island and similar gaming environments. The same ideas work for other platforms—Discord, Xbox, PlayStation—as inspiration. Use the names as character names wherever you need a unique username; always check availability on the platform you choose.' },
+  { category: 'Use cases', question: 'Can I use the Island name generator for esports?', answer: 'Yes. Use the Island name generator as inspiration for in-game names or stream handles. Run it multiple times to get a shortlist of character name ideas, then check availability on your platform. The tool is free and runs in your browser with no sign-up. Many esports and streamers use Island name generators to brainstorm handles before verifying availability on Steam, Twitch, or other services.' },
+  { category: 'Technical', question: 'How are the names generated in the Island name generator?', answer: 'This Island name generator uses curated tropical and fantasy words and elements. When you click generate, the tool randomly combines these in your browser so each run is different. No names or settings are sent to a server. The result is for inspiration only; we do not check Island or any platform for availability. The word lists are designed to sound like gaming island names—bold, memorable, and easy to type.' },
+  { category: 'General', question: 'Are the names from the Island name generator unique?', answer: 'The names are randomly combined from our word list, so each run can produce new combinations. We do not check Island or any platform for availability. You must check yourself whether a Island name or character name is available before using it on your profile. The generator helps you discover ideas; uniqueness on a given platform depends on that platform\'s current registrations.' },
+  { category: 'Use cases', question: 'Can teachers use the Island name generator?', answer: 'Yes. Teachers can use this Island name generator for creative or tech-related activities—for example when students are learning about usernames, digital identity, or online profiles. Emphasize that the tool is for inspiration and that names must be checked for availability on any platform. The Island name generator is free and runs in the browser with no sign-up, so it is easy to use in a classroom or workshop setting.' },
+  { category: 'General', question: 'How do I cite the Island name generator?', answer: 'For academic or formal use you can cite this Island name generator as a source of inspiration for island names. The generated names are algorithm-produced; you can use them freely. A brief acknowledgment is optional. We do not require attribution. The tool is a free, browser-based utility for Island name ideas and character name brainstorming.' },
+  { category: 'Use cases', question: 'Can I use the Island name generator for a new Island account?', answer: 'Yes. When creating a new Island account you need a unique username. Run this Island name generator to get character name ideas, copy the list, then check Island for availability. Pick a name that is available and that you like. The tool runs in your browser with no sign-up. Building a shortlist of five to ten options before you start the sign-up process saves time, since many Island names are already taken.' },
+  { category: 'General', question: 'Do the names from the Island name generator work for streaming?', answer: 'Yes. The Island name generator produces username ideas that can work for streaming platforms, in-game names, or social handles. Use the names as inspiration and check your platform for availability. Run the generator multiple times to build a shortlist of options. Many streamers use Island name generators to brainstorm stream handles before checking availability on Twitch, YouTube, or other services.' },
+  { category: 'Best practices', question: 'What is the best workflow for the Island name generator?', answer: 'Open the page, set the number of names (e.g. 12 or 24), click generate, then copy the list. Paste into a notes app. Check your game or story for availability for each name you like. If your first choice is taken, try the next. Run the Island name generator again for more options. Keep a shortlist of five to ten character name ideas so you have backups. The tool is free and runs in your browser with no sign-up.' },
+  { category: 'Best practices', question: 'Should I run the Island name generator multiple times?', answer: 'Yes. Running the Island name generator multiple times is the intended workflow when you want a large pool of Island name ideas. Paste each run into one document and remove duplicates if any appear. Then check availability on your game or story for each name you like. Having a shortlist saves time compared to checking one idea at a time. There is no daily or total limit on how many times you can run the generator.' },
+  { category: 'Troubleshooting', question: 'Why is my first choice from the Island name generator taken?', answer: 'Popular island names are often already in use on Island and other platforms. The Island name generator does not check availability; it only suggests combinations. Always have a shortlist of five to ten options so you have backups. Run the generator again for more Island name ideas and check availability on your platform before committing. This is normal when using any name generator for fiction and creative projects.' },
+  { category: 'Troubleshooting', question: 'Can I use the Island name generator offline?', answer: 'Yes. Once the page is loaded, the Island name generator runs entirely in your browser and does not require a network connection to generate names. You can generate character name ideas offline. Copying and pasting also works offline. You will need a connection only to open the page initially and to check availability on Island or another platform.' },
 ];
 
 export default async function IslandNameGeneratorPage() {
@@ -226,7 +237,7 @@ export default async function IslandNameGeneratorPage() {
         {createWriteUp()}
         <div className="mt-10 space-y-3">
           <h2 className="text-2xl font-semibold text-slate-900">Frequently Asked Questions</h2>
-          <p className="text-slate-700">Common questions about the island name generator.</p>
+          <p className="text-slate-700">Common questions about the Island name generator.</p>
         </div>
         <FAQSection items={pageFaqs} />
         <FaqJsonLd faqs={pageFaqs} />

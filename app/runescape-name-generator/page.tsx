@@ -1,5 +1,4 @@
 import type { Metadata } from 'next';
-import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { JsonLd } from '@/components/JsonLd';
 import FAQSection from '@/components/FAQSection';
@@ -18,8 +17,8 @@ const toolSlug = 'runescape-name-generator';
 export async function generateMetadata(): Promise<Metadata> {
   return buildToolMeta({
     title: 'RuneScape Name Generator',
-    description: 'Generate RuneScape and OSRS-style usernames and character names.',
-    seoTitle: 'RuneScape Name Generator - OSRS Usernames',
+    description: 'Free RuneScape and OSRS name generator for usernames and character names. Create RuneScape username ideas in your browser with no sign-up. Check availability in RuneScape or OSRS.',
+    seoTitle: 'RuneScape Name Generator – Free OSRS Username & Character Name Ideas',
     urlPath: `/${toolSlug}`,
   });
 }
@@ -28,150 +27,170 @@ function createWriteUp() {
   return (
     <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
-        <h2>RuneScape Name Generator - OSRS Username Ideas and Character Names</h2>
+        <h2>RuneScape Name Generator – usernames and character names</h2>
         <h2>Introduction</h2>
         <p>
-          This guide explains how to use a RuneScape name generator (or OSRS name generator) to get username and character name ideas for RuneScape and Old School RuneScape. The tool runs in your browser and produces fantasy and medieval-style name combinations at the click of a button. It is designed for players who want quick inspiration before checking availability in-game. The generator does not store data and does not check names against the game; it only produces ideas. You get 1–24 names per run and can run it as often as you like with no sign-up.
+          This guide explains how to use a RuneScape name generator to create usernames and character names for RuneScape and other RuneScape, OSRS, and other MMO platforms. The tool runs in your browser and produces unique, memorable name ideas at the click of a button. It is designed for players who want RuneScape username ideas quickly without sign-up or download. The generator does not store data and runs entirely in your browser. You get 1–24 names per run and can run it as often as you like. Always check RuneScape or your platform for availability before committing to a name.
         </p>
         <p>
-          RuneScape and OSRS usernames must be unique on the platform. A name generator cannot reserve or guarantee a name; it gives you options to try. Many players use an OSRS name generator or RuneScape name generator to brainstorm, then check each name in the game client or website. This page serves that workflow with a single, free tool that runs locally and keeps your choices private.
+          People search for RuneScape username ideas and character name generators when setting up a new profile, an esports handle, or a stream name. This RuneScape name generator serves that intent with one free, browser-based tool. Whether you need a single standout character name or a shortlist of options, the generator gives you a pool of ideas. Names must be unique on each service, so verifying availability on RuneScape or your chosen platform is an essential step after generating ideas.
         </p>
+
         <h2>What Is a RuneScape Name Generator?</h2>
         <p>
-          A RuneScape name generator is an online tool that creates usernames and character names inspired by RuneScape and Old School RuneScape. People often search for &quot;OSRS name generator&quot; or &quot;RuneScape name generator&quot;; both refer to the same type of tool. You get one-word or multi-word name ideas that fit the game&apos;s fantasy and medieval style. The generator combines curated word elements at random so each run produces new combinations. It does not copy official character names or check availability; it is for inspiration only.
+          A RuneScape name generator is an online tool that creates usernames and character names suitable for RuneScape and other RuneScape, OSRS, and other MMO platforms. You get unique name ideas at the click of a button. The generator combines curated RuneScape and OSRS-style words and elements at random so each run produces new combinations. The output is for inspiration only; you must check your platform for availability. This free RuneScape name generator runs in your browser with no sign-up and does not send generated names to any server.
         </p>
         <p>
-          The output is plain text, one name per line. You can copy the list and paste it into a document, then check each name in RuneScape or OSRS. Because usernames are unique per platform, you may need to try several options before finding one that is available. Running the generator multiple times gives you a larger pool of ideas.
+          The output is plain text, one name per line. You can copy the full list and paste it into a notes app, then check RuneScape or your platform for availability and pick one. Many users run the RuneScape name generator multiple times to build a shortlist before deciding. Because names are created locally, your choices stay private and nothing is stored on our servers.
         </p>
+        <p>
+          RuneScape name generators are useful when you are tired of reusing the same username or when you want a fresh character name that fits your style. The tool does not guarantee that a name is available; it only suggests combinations. Always confirm availability on RuneScape or your platform before you commit to a new username.
+        </p>
+
         <h2>Why This RuneScape Name Generator Matters</h2>
         <p>
-          Choosing a username can be time-consuming. You want something memorable, fitting the game world, and available. A RuneScape name generator speeds up the brainstorming step. Instead of staring at a blank field, you get a list of options in seconds. You can run it on a phone or desktop, copy the names you like, and then check availability in the game. The tool is free and does not require an account, so there is no friction to trying many ideas.
+          Choosing a memorable RuneScape username or character name can be time-consuming. A RuneScape name generator speeds up brainstorming. Instead of staring at a blank field, you get options in seconds. You can run it on a phone or desktop, copy the names you like, and then check availability on RuneScape or your platform. The tool is free and does not require an account, so there is no friction to trying many ideas.
         </p>
         <p>
-          The generator also keeps your ideas private. Names are created in your browser and are not sent to our servers. If you are testing names for a new account or a name change, nothing is logged or stored. That is useful for players who prefer not to link their browsing to an account or who use the tool from a shared device.
+          The generator also keeps your ideas private. Names are created in your browser and are not sent to our servers. You can use it in a private or incognito window if you prefer. Because generation is local, there is no risk of your shortlist being stored or logged. That matters when you are testing ideas before you settle on a final RuneScape username or character name.
         </p>
-        <h2>How to Use This RuneScape Name Generator</h2>
-        <p>Follow these steps:</p>
-        <ol className="list-decimal pl-6 space-y-2">
-          <li>Set how many names you want per run (1–24).</li>
-          <li>Click &quot;Generate names&quot; to get a new list.</li>
-          <li>Use the Copy button to copy all names to your clipboard, then check the game for availability and pick one.</li>
-          <li>Run again for more options; no account required.</li>
-        </ol>
-        <p>The tool runs in your browser; your settings and generated names are not sent to any server.</p>
-        <h2>When to Use a RuneScape Name Generator</h2>
-        <p>Use this generator when you need RuneScape- or OSRS-style username ideas quickly. Key use cases: new RuneScape or OSRS character or account names; username ideas for other MMOs or gaming platforms; creative writing or roleplay with a game vibe. Usernames must be unique on each platform; always check availability.</p>
-        <h2>RuneScape and OSRS Naming Style</h2>
-        <p>RuneScape and OSRS usernames often use fantasy or medieval-style words. This generator uses curated elements and combines them at random so you get new combinations that fit that style. The output is for inspiration only; check the game for availability.</p>
+        <p>
+          A good RuneScape name generator also standardizes the workflow: set how many names you want, click generate, copy the list, and check availability. You get a consistent way to explore username ideas without writing scripts or visiting multiple sites. The output is easy to paste into notes or a document so you can track which names you have already checked on RuneScape or other platforms.
+        </p>
+
         <h2>How the RuneScape Name Generator Works (Step by Step)</h2>
         <p>
-          When you open the page, you choose how many names you want (1–24). Clicking &quot;Generate names&quot; triggers the tool to randomly combine curated RuneScape- and OSRS-style word elements in your browser. Each run is independent; no names or settings are sent to a server. The result is a list of name ideas, one per line. You can copy the full list with one click and paste it into a document or notes app. To get more ideas, run the generator again; each run produces a new random set.
+          When you open the page, you choose how many names you want per run (1–24). Clicking &quot;Generate names&quot; triggers the tool to randomly combine curated RuneScape and OSRS-style elements in your browser. Each run is independent; no names or settings are sent to a server. The result is a list of RuneScape username ideas, one per line. You can copy the full list with one click and paste it into a notes app. To get more ideas, run the generator again. The tool does not check RuneScape or any platform for availability—you must do that yourself.
         </p>
         <p>
-          The generator does not connect to RuneScape or OSRS. It cannot check whether a name is available or reserved. After you generate names, you must check each one in the game client or on the official website. Many players keep a shortlist of preferred names and try them in order until one is available.
-        </p>
-        <h2>RuneScape and OSRS Username Conventions</h2>
-        <p>
-          RuneScape and Old School RuneScape allow usernames that fit certain length and character rules. Names must be unique and are subject to the game&apos;s terms of service. Offensive, misleading, or impersonating names can be changed or banned. This generator produces ideas that fit a fantasy or medieval vibe; you are responsible for ensuring the final name meets the game&apos;s rules. Always confirm the current character limit and naming policy on the official RuneScape or OSRS site.
+          The underlying word lists are designed to sound like gaming usernames and character names: bold, memorable, and easy to type. The generator shuffles and combines these elements so that each run produces different combinations. That randomness helps you discover names you might not have thought of on your own. Because everything runs in the browser, the RuneScape name generator works offline once the page is loaded and does not depend on a backend service.
         </p>
         <p>
-          Some players prefer one-word names; others like two or more words. The generator can produce both, depending on the curated elements. If the game has a maximum length, trim or shorten a generated name as needed. The tool is flexible; you can use the output as a starting point and adjust spelling or length to fit your preference and the game&apos;s limits.
+          There are no hidden steps. You set the count, click generate, and receive a list. Copying is one click; pasting into your own document keeps your shortlist in one place. Running the RuneScape name generator multiple times is the intended workflow when you want a large pool of character name ideas before checking availability.
         </p>
-        <h2>Choosing and Checking OSRS Usernames</h2>
+
+        <h2>How to Use This RuneScape Name Generator</h2>
+        <p>Follow these steps to get RuneScape username ideas:</p>
+        <ol className="list-decimal pl-6 space-y-2">
+          <li>Set how many names you want per run (1–24).</li>
+          <li>Click &quot;Generate names&quot; to get a new list of character name ideas.</li>
+          <li>Use the Copy button to copy all names to your clipboard.</li>
+          <li>Paste into a notes app or document, then check RuneScape or your platform for availability and pick one.</li>
+          <li>Run again for more options; no account or download is required.</li>
+        </ol>
         <p>
-          Good usernames are memorable, easy to type, and available. Run this RuneScape name generator several times and note the names you like. Then check each one in the game. If your first choice is taken, try a slight variation (e.g. add a number or change a letter) or pick another from your list. Keeping a shortlist of five to ten options helps when availability is limited.
+          The RuneScape name generator runs in your browser; your settings and generated names are not sent to any server. You can run it as often as you like. Building a shortlist of five to ten options before checking availability on RuneScape is a good habit, since popular usernames are often taken. Have backups ready so that if your first choice is unavailable, you can try the next name on your list.
+        </p>
+
+        <h2>RuneScape and Gamer Naming Style</h2>
+        <p>
+          RuneScape usernames and character names often use bold, memorable word combinations: action words, nicknames, or creative spellings. This RuneScape name generator uses curated RuneScape and OSRS-style elements and combines them at random so you get new combinations that fit that style. The output is for inspiration only; the tool does not check RuneScape or any platform for availability. You can use the names as-is or tweak spelling and punctuation to make them your own.
         </p>
         <p>
-          Name changes in RuneScape and OSRS are often limited (e.g. one free change, then a cooldown or fee). So picking a name you will be happy with long term is worth the extra time. Use the generator to explore ideas, then verify availability and rules before committing.
+          Different games and communities favor different styles. Some players prefer short, punchy character names; others like longer usernames. Running the generator multiple times gives you a mix of lengths and styles. Skim the list, mark the ones you like, and then verify each one on RuneScape or your platform. The RuneScape name generator is a starting point—your final choice should fit your personality and the rules of your platform.
         </p>
+
+        <h2>When to Use a RuneScape Name Generator</h2>
+        <p>
+          Use this RuneScape name generator when you need RuneScape or RuneScape and OSRS-style username ideas quickly. Common use cases include creating a new RuneScape account or updating your profile name, choosing an in-game name for esports or casual play, and picking a stream or social handle. The same tool works for other platforms—Discord, Xbox, PlayStation, or social profiles—as inspiration. Names must be unique on each platform, so always check availability before committing.
+        </p>
+        <p>
+          Another good time to use a RuneScape name generator is when you are rebranding. If you have used the same character name for years and want a fresh identity, generating a batch of ideas helps you explore options without pressure. Run the tool several times, paste results into one document, and remove duplicates. Then check RuneScape and any other platforms you use to see which names are still available. Having a shortlist saves time compared to checking one idea at a time.
+        </p>
+
+        <h2>Use Cases in Detail: Profiles, Esports, and Streams</h2>
+        <p>
+          Players use the RuneScape name generator when creating a new RuneScape account or refreshing their profile name. Esports and streamers use it for in-game names or stream handles. The same tool works for other platforms—Discord, Xbox, PlayStation, or social—as inspiration; you must check each platform for availability. Run the generator multiple times to build a shortlist, then check which names are free on your platform. The RuneScape name generator does not reserve or validate names; it only suggests combinations.
+        </p>
+        <p>
+          Content creators often need a consistent handle across Steam, streaming, and social media. Generating a batch of character name ideas lets you test different options before you commit. Copy the names you like into a single list, then check availability on each service. If one name is taken on RuneScape but free elsewhere, you can still use it on the platforms where it is available, or use the generator again to find alternatives that work everywhere.
+        </p>
+
+        <h2>Tips for Choosing a RuneScape Username</h2>
+        <p>
+          Pick a name that is easy to remember and type. Short character names are easier to say in voice chat and less likely to be mistyped. Run the RuneScape name generator multiple times to get a shortlist, then check RuneScape or your platform for availability. Have a few backups in case your first choice is taken. Avoid names that might be mistaken for someone else or that break platform rules. The generator gives you ideas only; the final choice is yours.
+        </p>
+        <p>
+          Consider how the name will look in different contexts: in-game, on a stream overlay, or in a friend list. Some combinations look great in one font but odd in another. If you plan to use the same handle across multiple games and platforms, check availability everywhere before you invest in branding. The RuneScape name generator is a free way to explore options without committing until you have confirmed that your chosen RuneScape username or character name is available.
+        </p>
+
+        <h2>Running the RuneScape Name Generator in Batches</h2>
+        <p>
+          When you need many username ideas, run the RuneScape name generator multiple times. Each run gives up to 24 names. Paste each run into the same document and remove duplicates if any appear. Check availability on your platform for each name you like. There is no daily or total limit; you can run the generator as often as you want. Batching is useful when you are setting up several accounts, testing ideas for a team, or simply want a large pool of character name options before making a decision.
+        </p>
+        <p>
+          Keeping a single document with all your generated RuneScape username ideas makes it easy to track which names you have already checked. Mark names as &quot;taken&quot; or &quot;available&quot; as you go. That way you avoid re-checking the same name on RuneScape or another platform. The RuneScape name generator does not remember previous runs, so your document is your only record of the ideas you have collected.
+        </p>
+
         <h2>Privacy and Local Processing</h2>
         <p>
-          This RuneScape name generator runs entirely in your browser. When you set the number of names and click generate, the names are created locally on your device. Your choices and the generated names are not sent to our servers. We do not store your inputs or the generated list. No account or login is required. You can use the tool in a private or incognito window if you prefer. This keeps your username brainstorming private and avoids any link between your ideas and your identity.
+          This RuneScape name generator runs entirely in your browser. When you set the number of names and click generate, the names are created locally on your device. Your choices and the generated names are not sent to our servers. We do not store your inputs or the generated list. No account or login is required. That means your shortlist of character name ideas stays on your machine unless you choose to copy it somewhere else.
         </p>
+        <p>
+          Because generation is local, the tool is suitable for use in private or incognito windows. If you close the tab, the generated list is gone unless you have copied it. There is no server-side log of what names you generated or how many times you ran the RuneScape name generator. This privacy model is intentional: username brainstorming is personal, and the tool is designed so that you control where your ideas go.
+        </p>
+
         <h2>Copying and Exporting Names</h2>
-        <p>Use the Copy button to copy all names to your clipboard (one per line). Paste into a notes app or document. Check RuneScape or OSRS for availability before committing to a name. If you notice extra spaces or line breaks after pasting, run the text through a space remover or strip-HTML tool.</p>
-        <h2>OSRS Name Generator: Search Intent</h2>
-        <p>People search for &quot;RuneScape name generator&quot; or &quot;OSRS name generator&quot;; both refer to the same type of tool. This page serves those intents with one generator.</p>
-        <h2>Combining With Other Generators</h2>
-        <p>Your project may need more than one naming style. Use this generator for RuneScape-style names and other naming tools on our site for different platforms or character styles. When assembling lists from multiple tools, keep a single naming document and clean pasted text (e.g. with a space remover or strip-HTML step) so formatting stays consistent. See our <Link href="/">homepage</Link> for the full list.</p>
-        <h2>Tips for Choosing a RuneScape or OSRS Username</h2>
-        <p>Good usernames are memorable, fit the game world, and are available. Run this generator several times and note names you like, then check each one in the game client or website. Avoid names that are too long, hard to spell, or easily confused with others. Many players prefer fantasy or medieval-style words that match the setting. If your first choice is taken, try a slight variation or use the generator again for fresh ideas. Keeping a shortlist of backups helps when your preferred name is already in use.</p>
-        <h2>Character Limits and In-Game Rules</h2>
-        <p>RuneScape and Old School RuneScape enforce character limits and rules for usernames. Names must be unique and are subject to the game&apos;s terms of service and naming policy. Offensive, misleading, or impersonating names can be changed or banned. Use this generator for inspiration only; always confirm the exact character limit and rules on the official RuneScape or OSRS site before committing. Name changes may be possible in-game but are often limited, so picking a name you will be happy with long term is worth the extra check.</p>
-        <h2>Best Practices for RuneScape and OSRS Name Ideas</h2>
         <p>
-          Run the generator in batches when you need many ideas. Paste each run into a single document and remove duplicates. Check the game&apos;s current character limit and naming policy so you do not fall in love with a name that is too long or not allowed. If you are naming multiple characters (e.g. for a group or alt accounts), keep a naming document and mark which names you have already used so you stay consistent.
+          Use the Copy button to copy all generated RuneScape username ideas to your clipboard (one per line). Paste into a notes app or document. Check RuneScape or your platform for availability before committing to a name. The names are plain text, so they work in any editor or form. If you paste into a spreadsheet, each line can go in its own cell for easy tracking. The RuneScape name generator does not export to a file; copying and pasting is the intended way to save your shortlist.
         </p>
-        <p>
-          Do not assume a generated name is available. Always verify in the game. The generator cannot reserve names or check the database. Treat the output as a pool of ideas; availability is your responsibility.
-        </p>
-        <h2>Formatting and Copying Names</h2>
-        <p>
-          The generator outputs one name per line in plain text. Use the Copy button to copy the full list to your clipboard, then paste into a notes app, document, or spreadsheet. If you paste from the web and notice extra spaces or line breaks, run the pasted text through a space remover or strip-HTML tool so the list stays clean. When you have a shortlist, you can type or paste each name into the game&apos;s name check or sign-up flow to see if it is available.
-        </p>
-        <h2>OSRS Name Generator vs RuneScape Name Generator</h2>
-        <p>
-          People search for both &quot;OSRS name generator&quot; and &quot;RuneScape name generator.&quot; Old School RuneScape (OSRS) is a version of RuneScape with a dedicated player base. Username rules and availability are separate per game, but the naming style is similar—fantasy and medieval. This page serves both search intents with one tool. Whether you play RuneScape or OSRS, you get the same type of name ideas. Always check availability in the specific game you play.
-        </p>
-        <h2>When to Use a RuneScape or OSRS Name Generator</h2>
-        <p>
-          Use this generator when you are creating a new account, planning a name change, or brainstorming for an alt or group. It is also useful for content creators who want consistent naming for characters in guides or videos. The tool is not for checking availability; it is for generating ideas quickly. Combine it with the game&apos;s official name check or sign-up flow for best results.
-        </p>
-        <h2>Mobile and Cross-Device Use</h2>
-        <p>
-          The RuneScape name generator runs in a web browser and works on desktop, tablet, and phone. You do not need to install an app. Open the page, set the number of names, and generate. On a phone you can generate a short list and copy it into notes or email, then check availability when you are at a computer or in the game. Each run is independent; we do not save your history or preferences. The tool is responsive so buttons and controls work on small screens.
-        </p>
-        <h2>Combining With Other Name Generators</h2>
-        <p>
-          If your project needs names for more than one game or style, you can use this generator for RuneScape/OSRS and other naming tools on our site for different platforms (e.g. Steam, Elden Ring, Fallout). Keep a single naming document and paste results from each tool into separate sections. When you paste from the web, use a space remover or strip-HTML step so formatting stays consistent. See our homepage for the full list of naming and text tools.
-        </p>
-        <h2>Tool Methodology and Limitations</h2>
-        <p>
-          The tool uses curated RuneScape/OSRS-style word elements. When you click generate, it randomly combines these in your browser so each run is different. No names or settings are sent to a server. The output is for inspiration only; we do not check availability in-game. Generated names are for inspiration only; always check RuneScape or OSRS for username availability. The generator is not affiliated with RuneScape or Jagex.
-        </p>
-        <h2>Collision and Uniqueness</h2>
-        <p>
-          Because the generator combines a finite set of elements at random, two runs can occasionally produce the same name. That does not affect your use: you are checking availability in the game anyway. If you build a long list across many runs, you may want to sort and remove duplicates so your shortlist is easier to manage. Uniqueness in the game is enforced by RuneScape and OSRS, not by this tool.
-        </p>
-        <h2>No Download or Account Required</h2>
-        <p>
-          This RuneScape name generator runs entirely in your browser. You do not need to download software or create an account. Open the page, set how many names you want, and click generate. The tool is free and does not show ads or paywalls. You can bookmark the page and return whenever you need new username ideas. For more naming and text tools, see our homepage.
-        </p>
-        <h2>Practical Examples: From Generator to In-Game Name</h2>
-        <p>
-          A typical workflow is: open the generator, request 12 or 24 names, copy the list, and paste it into a document. Scan the list and circle or highlight the names you like. Then open RuneScape or OSRS and try each name in the sign-up or name-change flow. The first available name on your list is the one you can use. If none are available, run the generator again for a fresh set of ideas.
-        </p>
-        <p>
-          Some players prefer to generate several batches and build a long list of fifty or a hundred names before checking. Others prefer to generate a short list, check immediately, and then generate again if needed. Both approaches work. The generator has no limit on how often you run it, so you can adapt the workflow to your preference.
-        </p>
-        <p>
-          If you are creating multiple accounts (e.g. for different game modes or group play), keep a single naming document. List each account and the name you chose so you do not reuse a name or forget which name belongs to which character. The generator can supply ideas for all of them; you then check availability and assign names from your shortlist.
-        </p>
-        <h2>RuneScape Name Generator Quick Reference</h2>
-        <p>
-          To get the most from this tool: run it several times and paste results into one document; mark which names you have already tried or used; check the game&apos;s current character limit and naming policy; and always verify availability in RuneScape or OSRS before committing. The generator does not store data and does not check the game. It only produces ideas. Your privacy is preserved because generation happens in your browser.
-        </p>
-        <h2>One-Word vs Multi-Word OSRS Usernames</h2>
-        <p>
-          The generator can produce both one-word and multi-word name ideas. RuneScape and OSRS allow various formats, but each game has its own rules (e.g. spaces, length, special characters). One-word names are often easier to type and remember; multi-word names can be more distinctive. Run the generator and pick the style that fits your preference. If a generated name is too long for the game, shorten it or use one word from a two-word suggestion. The tool is flexible; use the output as inspiration and adapt as needed.
-        </p>
-        <p>
-          Some players like names that reference the game world (e.g. fantasy or medieval terms). Others prefer neutral or humorous names. The generator leans toward fantasy and medieval style to match the setting. You can always tweak a suggestion or combine elements from different runs to get a name that feels right for you.
-        </p>
-        <h2>Teachers and Educational Use</h2>
-        <p>
-          Teachers can use this RuneScape name generator in lessons on digital identity, gaming, or creative writing. Students might generate a list of username ideas and discuss what makes a name memorable or appropriate. Emphasize that usernames should be checked for availability and that the tool is for inspiration only. The generator runs in the browser with no sign-up, so it is suitable for classroom use. For more naming tools (e.g. for other cultures or genres), see our homepage.
-        </p>
+
         <h2>Limits and Batch Size</h2>
         <p>
-          You can request 1–24 names per run. There is no daily or total limit. If you need more than 24, run the generator again and paste the new list into your document. For very large lists (e.g. fifty or a hundred ideas), run the generator in batches and then sort or deduplicate in your document. The tool is designed for quick, repeated use so you can build a long shortlist without leaving the page. Each run is independent and random, so you may occasionally see the same name twice across runs; remove duplicates in your document if needed.
+          You can request 1–24 names per run with this RuneScape name generator. There is no daily or total limit. Run the generator again for more options. No download or account is required. If you need more than 24 names in one go, run the tool multiple times and paste the results into one document. Removing duplicates is up to you; the generator does not track previous output.
+        </p>
+
+        <h2>No Download or Account Required</h2>
+        <p>
+          This RuneScape name generator runs entirely in your browser. You do not need to download software or create an account. Open the page, set how many names you want, and click generate. The tool is free and works on desktop, tablet, and phone. That makes it easy to use when you are away from your main device or when you want to quickly generate character name ideas without installing anything.
+        </p>
+
+        <h2>Who Uses a RuneScape Name Generator?</h2>
+        <p>
+          Players use the RuneScape name generator when creating or updating a RuneScape profile, or when they want a new character name for other platforms. Esports and streamers use it for in-game names or stream handles. The same tool works for Discord, Xbox, PlayStation, or social profiles—always check availability on each platform. Educators and workshop leaders sometimes use it to demonstrate username creation or digital identity in a classroom setting. No account or download is required on our site.
         </p>
         <p>
-          The generator does not require an account or login. It runs entirely in your browser and does not track how many times you generate or which names you copy. You can use it as often as you like for personal or educational use.
+          Anyone who needs a steady supply of username ideas can benefit. Whether you are a casual gamer, a competitive player, or a content creator, the RuneScape name generator provides a fast way to explore options. The key is to treat the output as inspiration and always verify availability on RuneScape and any other platform where you plan to use the name.
         </p>
-        <h2>Summary</h2>
+
+        <h2>Getting the Most Out of the RuneScape Name Generator</h2>
         <p>
-          Use this RuneScape name generator to create username and character name ideas for RuneScape and OSRS. Set the number of names (1–24) and run as often as you like. Copy results and check the game for availability. The tool runs locally in your browser with no sign-up. Keep a naming document and verify each name in the game before committing. The generator is free and does not store or share your data. Run it in batches when you need a long shortlist. For more naming and text tools, see our <Link href="/">homepage</Link>.
+          Run the generator several times and paste all results into one document. Skim for names that fit your style and check your platform for availability. Shortlist five to ten options so you have backups if your first choice is taken. The RuneScape name generator does not check RuneScape or any platform; you must do that yourself. When you have a shortlist, check availability one by one. Usernames are often taken on popular services, so having several options saves time.
+        </p>
+        <p>
+          Another tip is to try different batch sizes. Sometimes generating 24 names at once gives you a good mix; other times you may prefer smaller runs so you can review each set before generating more. The tool is flexible. Use it whenever you need new RuneScape username ideas or character name inspiration. Bookmarking the page makes it easy to return when you are ready to refresh your profile or create a new account.
+        </p>
+
+        <h2>Typical Workflow for the RuneScape Name Generator</h2>
+        <p>
+          A typical workflow is: open the page, set the number of names (e.g. 12 or 24), click generate, then copy the list. Paste into a notes app. Check RuneScape or your platform for availability for each name you like. If your first choice is taken, try the next. Run the RuneScape name generator again for more options. The whole process takes a few minutes. No account or download is required. Bookmark the page for quick access when you need new username ideas. The tool is free and runs in your browser with no sign-up.
+        </p>
+
+        <h2>What This Tool Does NOT Do</h2>
+        <ul>
+          <li>It does not check RuneScape or any platform for username availability.</li>
+          <li>It does not reserve or hold names for you.</li>
+          <li>It does not store your generated list or your settings.</li>
+          <li>It does not connect to Steam, Discord, or any external gaming service.</li>
+        </ul>
+        <p>
+          This RuneScape name generator produces name ideas only. It does not validate availability, create accounts, or manage your profile. You must check RuneScape or your chosen platform yourself and follow that platform&apos;s rules when creating or changing your username. The tool is a brainstorming aid, not a replacement for checking availability.
+        </p>
+
+        <h2>Privacy and Security Notes</h2>
+        <p>
+          The RuneScape name generator runs entirely in your browser. It does not send data to a server and does not store generated values. This is helpful for quick brainstorming and offline use. If you refresh the page, the last generated list is cleared. Copy any names you want to keep before closing or refreshing.
+        </p>
+        <p>
+          For account security, never share your RuneScape password or other credentials. The generator only suggests usernames; it does not handle login or account creation. When you check availability on RuneScape or another platform, use the official site or app and ensure you are on a secure connection. The RuneScape name generator is a standalone tool and does not integrate with any login system.
+        </p>
+
+        <h2>Final Summary and When to Use This Tool</h2>
+        <p>
+          The RuneScape name generator provides a fast way to create username and character name ideas for RuneScape and other RuneScape, OSRS, and other MMO platforms. Set the number of names (1–24) and run as often as you like. Copy results and check your platform for availability. The tool runs locally in your browser with no sign-up. Keep a shortlist of options in case your first choice is taken. No download or account is required. The generator is free and works on any device.
+        </p>
+        <p>
+          Use this RuneScape name generator when you need RuneScape username ideas, character name inspiration, or a quick way to explore options before checking availability. It is best for brainstorming, rebranding, and building a shortlist. Always verify availability on RuneScape or your chosen platform before committing to a name. The tool is a practical free resource for gaming usernames and character names.
         </p>
       </div>
     </section>
@@ -179,30 +198,30 @@ function createWriteUp() {
 }
 
 const pageFaqs: FaqItem[] = [
-  { category: 'General', question: 'What is a RuneScape name generator?', answer: 'A RuneScape name generator is an online tool that creates usernames and character names for RuneScape and Old School RuneScape. You get game-style name ideas—one-word or multi-word. People sometimes search for "OSRS name generator"; this page serves that intent too. This free tool runs in your browser with no sign-up.' },
-  { category: 'Usage', question: 'How do I use the RuneScape name generator?', answer: 'Set how many names you want per run (1–24), click "Generate names" to get a new list, then use the Copy button to copy all names to your clipboard. Check RuneScape or OSRS for availability and pick one. Run the generator again for more options; no account is required. The tool runs in your browser so your settings and generated names are not sent to any server.' },
-  { category: 'General', question: 'What is an OSRS name generator?', answer: 'It is the same as a RuneScape name generator: a tool that produces usernames and character names for RuneScape and Old School RuneScape. People search for "OSRS name generator" or "RuneScape name generator"; this page serves both intents with one generator.' },
-  { category: 'General', question: 'Is the RuneScape name generator free?', answer: 'Yes. This RuneScape name generator is free to use in your browser. You can generate names as often as you like without creating an account or paying. The tool runs locally on your device.' },
-  { category: 'Use cases', question: 'Can I use the names for RuneScape?', answer: 'Yes. Use this RuneScape name generator for ideas; then check RuneScape or OSRS for availability—usernames must be unique on the platform. Run the generator multiple times to get options and check each one.' },
-  { category: 'Privacy', question: 'Is my data sent to a server?', answer: 'No. This RuneScape name generator runs in your browser. When you set the number of names and click generate, the names are created locally on your device. Your choices and the generated names are not sent to our servers. We do not store your inputs or the generated list.' },
-  { category: 'Compatibility', question: 'Does it work on mobile?', answer: 'Yes. The RuneScape name generator runs in a web browser and works on desktop, tablet, and phone. You do not need to install an app. Open the page, choose how many names you want, then generate. On a phone you can generate a short list and copy it into notes or check availability in the game. Each run is independent; we do not save your history or preferences.' },
-  { category: 'Limits', question: 'How many names can I generate?', answer: 'You can request 1–24 names per run with this RuneScape name generator. If you need more than 24, run the generator again; each run produces a new random set. There is no daily or total limit. For very long lists run the generator in batches and paste results into one document.' },
-  { category: 'General', question: 'What other name generators do you have?', answer: 'We have name generators for Steam, Elden Ring, Fallout, Naruto, Transformers, god and goddess, ancient Greek, species, tribe, island, and others. See our homepage for the full list.' },
-  { category: 'Usage', question: 'Can I copy the names to a document?', answer: 'Yes. Use the Copy button on this RuneScape name generator to copy all generated names to your clipboard. Paste into a notes app or document. The names are in a simple text format, one per line. You can then check each name for availability in RuneScape or OSRS. If you notice extra spaces or line breaks after pasting, run the pasted text through a space remover or strip-HTML tool.' },
-  { category: 'General', question: 'Do I need an account?', answer: 'No. This RuneScape name generator works without sign-up or login. The tool runs entirely in your browser.' },
-  { category: 'Use cases', question: 'Can I get one-word names?', answer: 'The generator can produce one-word or multi-word names depending on the curated elements. Run it and pick what fits. Check RuneScape or OSRS for character limits and availability.' },
-  { category: 'Privacy', question: 'Do you store the names I generate?', answer: 'No. Generation happens in your browser. We do not receive or store the names or your settings. The RuneScape name generator runs locally on your device. You can use the tool in a private or incognito window if you prefer.' },
-  { category: 'Limits', question: 'Can I get more than 24 names?', answer: 'Each run of this RuneScape name generator gives up to 24 names. To get more, run the generator again; each run produces a new random set. You can paste multiple runs into one document and then remove duplicates or trim as needed. There is no daily or total limit. For very large lists run the generator in batches.' },
-  { category: 'General', question: 'Why "OSRS" in the title?', answer: 'Many players search for OSRS username ideas. "RuneScape name generator" and "OSRS name generator" refer to the same type of tool; this page serves both intents.' },
-  { category: 'Use cases', question: 'Can I use it for other games?', answer: 'Yes. The names work as ideas for any gaming platform. Check each platform for availability and character limits.' },
-  { category: 'General', question: 'Can I combine with other generators?', answer: 'Yes. Use this RuneScape name generator for RuneScape/OSRS-style names and other naming tools on our site for different platforms or styles. When you assemble lists from multiple tools keep a single naming document and clean pasted text (e.g. with a space remover or strip-HTML step) so formatting stays consistent. See our homepage for the full list of naming tools.' },
-  { category: 'Technical', question: 'How are the names generated?', answer: 'This RuneScape name generator uses curated RuneScape/OSRS-style word elements. When you click generate, the tool randomly combines these in your browser so each run is different. No names or settings are sent to a server. The result is for inspiration only; we do not check in-game availability.' },
-  { category: 'General', question: 'Are the names unique?', answer: 'The names are randomly combined from curated elements. We do not check RuneScape or OSRS for availability. Always verify on the game before committing to a username.' },
-  { category: 'Use cases', question: 'Can teachers use it?', answer: 'Yes. Teachers can use this RuneScape name generator for creative or tech-related activities. Students might generate username ideas for a discussion on online identity or gaming. Emphasize that the tool is for inspiration and that usernames must be checked for availability on each platform.' },
-  { category: 'General', question: 'How do I cite the RuneScape name generator?', answer: 'For academic or formal use you can cite this RuneScape name generator as a source of inspiration for username ideas. The generated names are algorithm-produced; you can use them freely while checking platform availability. A brief acknowledgment is optional. We do not require attribution.' },
-  { category: 'General', question: 'What if I need a specific style?', answer: 'Run this RuneScape name generator multiple times to get variety; each run produces new random combinations. If you need names for another platform or genre, see our homepage for the full list of gaming and character name generators.' },
-  { category: 'Use cases', question: 'Can I use the RuneScape name generator for OSRS?', answer: 'Yes. This RuneScape name generator serves both RuneScape and Old School RuneScape (OSRS). Use the names as ideas and then check OSRS for availability—usernames must be unique. Run the generator multiple times to get options.' },
-  { category: 'General', question: 'RuneScape name generator vs Steam name generator?', answer: 'A RuneScape name generator produces names suited to RuneScape and OSRS (fantasy/medieval MMO style). A Steam name generator produces usernames and gamer tags for Steam and other platforms. Both are free and run in your browser. Use the RuneScape generator for RuneScape/OSRS and similar MMOs; use the Steam generator for Steam and broader gaming handles.' },
+  { category: 'General', question: 'What is a RuneScape name generator?', answer: 'A RuneScape name generator is an online tool that creates usernames and character names for RuneScape and other RuneScape, OSRS, and other MMO platforms. You get unique RuneScape username ideas at the click of a button. The generator combines curated RuneScape and OSRS-style words at random in your browser so each run produces new combinations. This free RuneScape name generator runs locally with no sign-up and does not send generated names to any server. Always check RuneScape or your platform for availability before committing to a name.' },
+  { category: 'Usage', question: 'How do I use the RuneScape name generator?', answer: 'Set how many names you want per run (1–24), click "Generate names" to get a new list of character name ideas, then use the Copy button to copy all names to your clipboard. Paste into a notes app and check RuneScape or your platform for availability. Run again for more options; no sign-up is required. The RuneScape name generator runs in your browser so your settings and generated names are not sent to any server. Building a shortlist of five to ten options before checking availability is a good habit.' },
+  { category: 'General', question: 'Is the RuneScape name generator free?', answer: 'Yes. This RuneScape name generator is free to use in your browser. You can generate RuneScape username ideas as often as you like without creating an account or paying. The tool runs locally on your device and does not require a download. There is no daily or total limit on how many times you can run the generator.' },
+  { category: 'Use cases', question: 'Can I use the names for Steam?', answer: 'Yes. The RuneScape name generator produces username ideas that you can use on Steam. Names must be unique on the platform, so always check Steam\'s availability before committing. Run the generator multiple times to build a shortlist of character name ideas, then check which names are available on Steam. The tool does not reserve or validate names; it only suggests combinations for you to verify on the platform.' },
+  { category: 'Privacy', question: 'Is my data sent to a server when I use the RuneScape name generator?', answer: 'No. This RuneScape name generator runs in your browser. When you set the number of names and click generate, the names are created locally on your device. Your choices and the generated RuneScape username ideas are not sent to our servers. We do not store your inputs or the generated list. Generation is fully local and private.' },
+  { category: 'Compatibility', question: 'Does the RuneScape name generator work on mobile?', answer: 'Yes. The RuneScape name generator runs in a web browser and works on desktop, tablet, and phone. You do not need to install an app. Open the page, choose how many names you want, then generate. On a phone you can generate a short list and copy it into notes or check availability on Steam\'s app. The tool is responsive and works on any device with a modern browser.' },
+  { category: 'Limits', question: 'How many names can I generate with the RuneScape name generator?', answer: 'You can request 1–24 names per run with this RuneScape name generator. If you need more than 24 character name ideas, run the generator again; each run produces a new random set. There is no daily or total limit. Paste multiple runs into one document and remove duplicates if needed. The batch size is designed to keep the list manageable while giving you enough RuneScape username options to shortlist.' },
+  { category: 'Usage', question: 'Can I copy the names from the RuneScape name generator?', answer: 'Yes. Use the Copy button on this RuneScape name generator to copy all generated names to your clipboard. Paste into a notes app or document. The names are plain text, one per line, so they work in any editor or form. Check RuneScape or your platform for availability before choosing a name. Copying is the intended way to save your shortlist of character name ideas.' },
+  { category: 'General', question: 'Do I need an account to use the RuneScape name generator?', answer: 'No. This RuneScape name generator works without sign-up or login. The tool runs entirely in your browser. You do not need to create an account on our site to use it. Open the page, set how many RuneScape username ideas you want, click generate, and copy the results. No email, password, or registration is required.' },
+  { category: 'Use cases', question: 'Can I use the RuneScape name generator for other platforms?', answer: 'Yes. The names work as ideas for any gaming or social platform—Discord, Xbox, PlayStation, or others. The RuneScape name generator is built for Steam-style character names but the output can inspire usernames elsewhere. Check each platform\'s availability; names must be unique on each service. The generator does not check availability for you, so always verify on the platform where you plan to use the name.' },
+  { category: 'Privacy', question: 'Do you store the names I generate with the RuneScape name generator?', answer: 'No. Generation happens in your browser. We do not receive or store the RuneScape username ideas or your settings. The RuneScape name generator runs locally on your device. You can use the tool in a private or incognito window if you prefer. If you refresh the page, the last generated list is cleared unless you have already copied it.' },
+  { category: 'Limits', question: 'Can I get more than 24 names from the RuneScape name generator?', answer: 'Each run of this RuneScape name generator gives up to 24 names. To get more character name ideas, run the generator again; each run produces a new random set. You can paste multiple runs into one document and then remove duplicates. There is no daily or total limit. Batching runs is the intended workflow when you need a large pool of RuneScape username options.' },
+  { category: 'General', question: 'Why "Steam" specifically in a RuneScape name generator?', answer: 'RuneScape is a major gaming platform, and people often search for RuneScape username ideas and character name generators. The RuneScape name generator serves that intent and produces names that fit RuneScape and similar gaming environments. The same ideas work for other platforms—Discord, Xbox, PlayStation—as inspiration. Use the names as character names wherever you need a unique username; always check availability on the platform you choose.' },
+  { category: 'Use cases', question: 'Can I use the RuneScape name generator for esports?', answer: 'Yes. Use the RuneScape name generator as inspiration for in-game names or stream handles. Run it multiple times to get a shortlist of character name ideas, then check availability on your platform. The tool is free and runs in your browser with no sign-up. Many esports and streamers use RuneScape name generators to brainstorm handles before verifying availability on Steam, Twitch, or other services.' },
+  { category: 'Technical', question: 'How are the names generated in the RuneScape name generator?', answer: 'This RuneScape name generator uses curated RuneScape and OSRS-style words and elements. When you click generate, the tool randomly combines these in your browser so each run is different. No names or settings are sent to a server. The result is for inspiration only; we do not check RuneScape or any platform for availability. The word lists are designed to sound like gaming usernames and character names—bold, memorable, and easy to type.' },
+  { category: 'General', question: 'Are the names from the RuneScape name generator unique?', answer: 'The names are randomly combined from our word list, so each run can produce new combinations. We do not check RuneScape or any platform for availability. You must check yourself whether a RuneScape username or character name is available before using it on your profile. The generator helps you discover ideas; uniqueness on a given platform depends on that platform\'s current registrations.' },
+  { category: 'Use cases', question: 'Can teachers use the RuneScape name generator?', answer: 'Yes. Teachers can use this RuneScape name generator for creative or tech-related activities—for example when students are learning about usernames, digital identity, or online profiles. Emphasize that the tool is for inspiration and that names must be checked for availability on any platform. The RuneScape name generator is free and runs in the browser with no sign-up, so it is easy to use in a classroom or workshop setting.' },
+  { category: 'General', question: 'How do I cite the RuneScape name generator?', answer: 'For academic or formal use you can cite this RuneScape name generator as a source of inspiration for usernames and character names. The generated names are algorithm-produced; you can use them freely. A brief acknowledgment is optional. We do not require attribution. The tool is a free, browser-based utility for RuneScape username ideas and character name brainstorming.' },
+  { category: 'Use cases', question: 'Can I use the RuneScape name generator for a new RuneScape account?', answer: 'Yes. When creating a new RuneScape account you need a unique username. Run this RuneScape name generator to get character name ideas, copy the list, then check RuneScape for availability. Pick a name that is available and that you like. The tool runs in your browser with no sign-up. Building a shortlist of five to ten options before you start the sign-up process saves time, since many RuneScape usernames are already taken.' },
+  { category: 'General', question: 'Do the names from the RuneScape name generator work for streaming?', answer: 'Yes. The RuneScape name generator produces username ideas that can work for streaming platforms, in-game names, or social handles. Use the names as inspiration and check your platform for availability. Run the generator multiple times to build a shortlist of options. Many streamers use RuneScape name generators to brainstorm stream handles before checking availability on Twitch, YouTube, or other services.' },
+  { category: 'Best practices', question: 'What is the best workflow for the RuneScape name generator?', answer: 'Open the page, set the number of names (e.g. 12 or 24), click generate, then copy the list. Paste into a notes app. Check RuneScape or your platform for availability for each name you like. If your first choice is taken, try the next. Run the RuneScape name generator again for more options. Keep a shortlist of five to ten character name ideas so you have backups. The tool is free and runs in your browser with no sign-up.' },
+  { category: 'Best practices', question: 'Should I run the RuneScape name generator multiple times?', answer: 'Yes. Running the RuneScape name generator multiple times is the intended workflow when you want a large pool of RuneScape username ideas. Paste each run into one document and remove duplicates if any appear. Then check availability on RuneScape or your platform for each name you like. Having a shortlist saves time compared to checking one idea at a time. There is no daily or total limit on how many times you can run the generator.' },
+  { category: 'Troubleshooting', question: 'Why is my first choice from the RuneScape name generator taken?', answer: 'Popular usernames and character names are often already in use on RuneScape and other platforms. The RuneScape name generator does not check availability; it only suggests combinations. Always have a shortlist of five to ten options so you have backups. Run the generator again for more RuneScape username ideas and check availability on your platform before committing. This is normal when using any name generator for RuneScape, OSRS, and other MMO platforms.' },
+  { category: 'Troubleshooting', question: 'Can I use the RuneScape name generator offline?', answer: 'Yes. Once the page is loaded, the RuneScape name generator runs entirely in your browser and does not require a network connection to generate names. You can generate character name ideas offline. Copying and pasting also works offline. You will need a connection only to open the page initially and to check availability on RuneScape or another platform.' },
 ];
 
 export default async function RunescapeNameGeneratorPage() {

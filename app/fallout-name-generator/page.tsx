@@ -1,5 +1,4 @@
 import type { Metadata } from 'next';
-import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { JsonLd } from '@/components/JsonLd';
 import FAQSection from '@/components/FAQSection';
@@ -18,8 +17,8 @@ const toolSlug = 'fallout-name-generator';
 export async function generateMetadata(): Promise<Metadata> {
   return buildToolMeta({
     title: 'Fallout Name Generator',
-    description: 'Generate Fallout-style character and faction names for roleplay and creative writing.',
-    seoTitle: 'Fallout Name Generator - Character & Faction Names',
+    description: 'Free fallout name generator for wasteland and faction names. Create Fallout-style name ideas in your browser with no sign-up.',
+    seoTitle: 'Fallout Name Generator – Wasteland & Faction Names',
     urlPath: `/${toolSlug}`,
   });
 }
@@ -28,108 +27,201 @@ function createWriteUp() {
   return (
     <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
-        <p className="text-slate-700 font-medium">
-          A Fallout name generator is a free online tool that creates character and faction names inspired by the Fallout games. Get 1–24 wasteland- and faction-style names per run. No sign-up; runs in your browser.
+        <h2>Fallout Name Generator – Wasteland & Faction Names</h2>
+        <h2>Introduction</h2>
+        <p>
+          This guide explains how to use a Fallout name generator to create wasteland and faction names for Fallout and other games and fiction. The tool runs in your browser and produces unique, memorable name ideas at the click of a button. It is designed for players who want Fallout name ideas quickly without sign-up or download. The generator does not store data and runs entirely in your browser. You get 1–24 names per run and can run it as often as you like. Always check your game or story for availability before committing to a name.
         </p>
+        <p>
+          People search for Fallout name ideas and character name generators when setting up a new profile, an esports handle, or a stream name. This Fallout name generator serves that intent with one free, browser-based tool. Whether you need a single standout character name or a shortlist of options, the generator gives you a pool of ideas. Names must be unique on each service, so verifying availability on Fallout or your chosen platform is an essential step after generating ideas.
+        </p>
+
         <h2>What Is a Fallout Name Generator?</h2>
-        <p>A Fallout name generator is an online tool that creates character and faction names inspired by the Fallout games—the wasteland, vaults, and faction naming style that fans know from the series. Use it for roleplay, fan fiction, tabletop and video games, and creative writing. You get wasteland-style and faction-style names at the click of a button. This free tool runs in your browser with no sign-up.</p>
+        <p>
+          A Fallout name generator is an online tool that creates wasteland and faction names suitable for Fallout and other games and fiction. You get unique name ideas at the click of a button. The generator combines curated Fallout-style words and elements at random so each run produces new combinations. The output is for inspiration only; you must check your platform for availability. This free Fallout name generator runs in your browser with no sign-up and does not send generated names to any server.
+        </p>
+        <p>
+          The output is plain text, one name per line. You can copy the full list and paste it into a notes app, then check your game or story for availability and pick one. Many users run the Fallout name generator multiple times to build a shortlist before deciding. Because names are created locally, your choices stay private and nothing is stored on our servers.
+        </p>
+        <p>
+          Fallout name generators are useful when you are tired of reusing the same username or when you want a fresh character name that fits your style. The tool does not guarantee that a name is available; it only suggests combinations. Always confirm availability on your game or story before you commit to a new username.
+        </p>
+
+        <h2>Why This Fallout Name Generator Matters</h2>
+        <p>
+          Choosing a memorable Fallout name or character name can be time-consuming. A Fallout name generator speeds up brainstorming. Instead of staring at a blank field, you get options in seconds. You can run it on a phone or desktop, copy the names you like, and then check availability on your game or story. The tool is free and does not require an account, so there is no friction to trying many ideas.
+        </p>
+        <p>
+          The generator also keeps your ideas private. Names are created in your browser and are not sent to our servers. You can use it in a private or incognito window if you prefer. Because generation is local, there is no risk of your shortlist being stored or logged. That matters when you are testing ideas before you settle on a final Fallout name or character name.
+        </p>
+        <p>
+          A good Fallout name generator also standardizes the workflow: set how many names you want, click generate, copy the list, and check availability. You get a consistent way to explore username ideas without writing scripts or visiting multiple sites. The output is easy to paste into notes or a document so you can track which names you have already checked on Fallout or other platforms.
+        </p>
+
+        <h2>How the Fallout Name Generator Works (Step by Step)</h2>
+        <p>
+          When you open the page, you choose how many names you want per run (1–24). Clicking &quot;Generate names&quot; triggers the tool to randomly combine curated Fallout-style elements in your browser. Each run is independent; no names or settings are sent to a server. The result is a list of Fallout name ideas, one per line. You can copy the full list with one click and paste it into a notes app. To get more ideas, run the generator again. The tool does not check Fallout or any platform for availability—you must do that yourself.
+        </p>
+        <p>
+          The underlying word lists are designed to sound like gaming wasteland and faction names: bold, memorable, and easy to type. The generator shuffles and combines these elements so that each run produces different combinations. That randomness helps you discover names you might not have thought of on your own. Because everything runs in the browser, the Fallout name generator works offline once the page is loaded and does not depend on a backend service.
+        </p>
+        <p>
+          There are no hidden steps. You set the count, click generate, and receive a list. Copying is one click; pasting into your own document keeps your shortlist in one place. Running the Fallout name generator multiple times is the intended workflow when you want a large pool of character name ideas before checking availability.
+        </p>
+
         <h2>How to Use This Fallout Name Generator</h2>
-        <p>Follow these steps:</p>
+        <p>Follow these steps to get Fallout name ideas:</p>
         <ol className="list-decimal pl-6 space-y-2">
           <li>Set how many names you want per run (1–24).</li>
-          <li>Click &quot;Generate names&quot; to get a new list.</li>
-          <li>Use the Copy button to copy all names to your clipboard, then paste into your story, game doc, or spreadsheet.</li>
-          <li>Run again for more options; no account required.</li>
+          <li>Click &quot;Generate names&quot; to get a new list of character name ideas.</li>
+          <li>Use the Copy button to copy all names to your clipboard.</li>
+          <li>Paste into a notes app or document, then check your game or story for availability and pick one.</li>
+          <li>Run again for more options; no account or download is required.</li>
         </ol>
-        <p>The tool runs in your browser; your settings and generated names are not sent to any server.</p>
+        <p>
+          The Fallout name generator runs in your browser; your settings and generated names are not sent to any server. You can run it as often as you like. Building a shortlist of five to ten options before checking availability on Fallout is a good habit, since popular usernames are often taken. Have backups ready so that if your first choice is unavailable, you can try the next name on your list.
+        </p>
+
+        <h2>Fallout and Gamer Naming Style</h2>
+        <p>
+          Fallout names and character names often use bold, memorable word combinations: action words, nicknames, or creative spellings. This Fallout name generator uses curated Fallout-style elements and combines them at random so you get new combinations that fit that style. The output is for inspiration only; the tool does not check Fallout or any platform for availability. You can use the names as-is or tweak spelling and punctuation to make them your own.
+        </p>
+        <p>
+          Different games and communities favor different styles. Some players prefer short, punchy character names; others like longer usernames. Running the generator multiple times gives you a mix of lengths and styles. Skim the list, mark the ones you like, and then verify each one on your game or story. The Fallout name generator is a starting point—your final choice should fit your personality and the rules of your platform.
+        </p>
+
         <h2>When to Use a Fallout Name Generator</h2>
-        <p>Use this generator when you need post-apocalyptic or faction-style names quickly. Key use cases:</p>
-        <ul className="list-disc pl-6 space-y-1">
-          <li>Fan fiction and roleplay set in Fallout-inspired or wasteland worlds</li>
-          <li>Tabletop and video game character or faction names</li>
-          <li>Worldbuilding for post-apocalyptic settings</li>
-          <li>Creative writing and YouTube or social content</li>
-        </ul>
-        <p>It is ideal when you need many names at once or want to explore different combinations without inventing every name by hand.</p>
-        <h2>Fallout Naming Style: Wasteland and Factions</h2>
-        <p>The games use a distinct wasteland and faction naming feel—rugged, survival-oriented, and faction-specific. This generator uses curated word elements and combines them at random so you get new combinations that fit that style. The output is for creative use only and is not official.</p>
-        <h2>Wasteland vs Faction Names: What to Expect</h2>
-        <p>Fallout-style names often fall into two broad categories: wasteland survivor names (rugged, practical, sometimes grim) and faction or group names (military, tribal, or settlement-style). This Fallout name generator produces both character-style and faction-style combinations. Run it multiple times to see the range. If you need names for a specific type of character—a vault dweller, a raider, a merchant—pick from the list and tweak if needed. The generator is meant to spark ideas rather than to reproduce exact in-game names.</p>
-        <h2>Tips for Choosing Fallout-Style Names</h2>
-        <p>Good Fallout-style names feel consistent with the setting: memorable but not overly cute, and fitting the tone of your story or game. Run the generator several times and keep a shortlist of names that match the vibe you want. For a cast of characters, mix wasteland and faction-style names so each person or group has a distinct feel. Avoid names that sound too modern or out of place in a post-apocalyptic world. If you are building a faction, consider how the name will look on a banner or how it will sound when characters say it aloud.</p>
-        <h2>Using Fallout Names in Fan Works and Commercial Projects</h2>
-        <p>The names from this Fallout name generator are inspired by the series but are not taken from official character or faction lists. For fan fiction, roleplay, and personal projects you can use them freely. For commercial or published work, avoid implying endorsement or partnership with the franchise: use the names as inspiration and do not suggest that your project is official. When in doubt, treat the output as a starting point and adjust names so they feel original while still fitting the wasteland aesthetic.</p>
-        <h2>Examples of Fallout Naming Conventions</h2>
-        <p>In the Fallout universe, names often reflect survival, place, or allegiance. Vault dwellers might have orderly or number-style references; wastelanders might use nicknames or place-based names; factions often use military or tribal wording. This generator does not copy specific in-game names but produces new combinations that echo those conventions—so you might get names that sound like they belong in a vault, a raider camp, or a settlement. Use the examples you get as a guide for the tone of your own naming document.</p>
+        <p>
+          Use this Fallout name generator when you need Fallout or Fallout-style username ideas quickly. Common use cases include creating a new Fallout account or updating your profile name, choosing an in-game name for esports or casual play, and picking a stream or social handle. The same tool works for other platforms—Discord, Xbox, PlayStation, or social profiles—as inspiration. Names must be unique on each platform, so always check availability before committing.
+        </p>
+        <p>
+          Another good time to use a Fallout name generator is when you are rebranding. If you have used the same character name for years and want a fresh identity, generating a batch of ideas helps you explore options without pressure. Run the tool several times, paste results into one document, and remove duplicates. Then check Fallout and any other platforms you use to see which names are still available. Having a shortlist saves time compared to checking one idea at a time.
+        </p>
+
+        <h2>Use Cases in Detail: Profiles, Esports, and Streams</h2>
+        <p>
+          Players use the Fallout name generator when creating a new Fallout account or refreshing their profile name. Esports and streamers use it for in-game names or stream handles. The same tool works for other platforms—Discord, Xbox, PlayStation, or social—as inspiration; you must check each platform for availability. Run the generator multiple times to build a shortlist, then check which names are free on your platform. The Fallout name generator does not reserve or validate names; it only suggests combinations.
+        </p>
+        <p>
+          Content creators often need a consistent handle across Steam, streaming, and social media. Generating a batch of character name ideas lets you test different options before you commit. Copy the names you like into a single list, then check availability on each service. If one name is taken on Fallout but free elsewhere, you can still use it on the platforms where it is available, or use the generator again to find alternatives that work everywhere.
+        </p>
+
+        <h2>Tips for Choosing a Fallout Username</h2>
+        <p>
+          Pick a name that is easy to remember and type. Short character names are easier to say in voice chat and less likely to be mistyped. Run the Fallout name generator multiple times to get a shortlist, then check your game or story for availability. Have a few backups in case your first choice is taken. Avoid names that might be mistaken for someone else or that break platform rules. The generator gives you ideas only; the final choice is yours.
+        </p>
+        <p>
+          Consider how the name will look in different contexts: in-game, on a stream overlay, or in a friend list. Some combinations look great in one font but odd in another. If you plan to use the same handle across multiple games and platforms, check availability everywhere before you invest in branding. The Fallout name generator is a free way to explore options without committing until you have confirmed that your chosen Fallout name or character name is available.
+        </p>
+
+        <h2>Running the Fallout Name Generator in Batches</h2>
+        <p>
+          When you need many username ideas, run the Fallout name generator multiple times. Each run gives up to 24 names. Paste each run into the same document and remove duplicates if any appear. Check availability on your platform for each name you like. There is no daily or total limit; you can run the generator as often as you want. Batching is useful when you are setting up several accounts, testing ideas for a team, or simply want a large pool of character name options before making a decision.
+        </p>
+        <p>
+          Keeping a single document with all your generated Fallout name ideas makes it easy to track which names you have already checked. Mark names as &quot;taken&quot; or &quot;available&quot; as you go. That way you avoid re-checking the same name on Fallout or another platform. The Fallout name generator does not remember previous runs, so your document is your only record of the ideas you have collected.
+        </p>
+
         <h2>Privacy and Local Processing</h2>
-        <p>This Fallout name generator runs in your browser. Names are created locally; your choices and generated names are not sent to our servers. No account or login is required. We do not store your inputs or the generated list.</p>
-        <h2>Fallout Name Generator for Worldbuilding</h2>
-        <p>Writers and GMs building post-apocalyptic or faction-based worlds often need many names. Run the generator multiple times to build a roster. Keep a naming document to avoid reusing names and to keep faction naming consistent. For mixed settings you can pair this tool with other naming tools for different cultures or creature names; when pasting from the web into a manuscript or spreadsheet, a space remover or strip-HTML step can keep formatting clean.</p>
+        <p>
+          This Fallout name generator runs entirely in your browser. When you set the number of names and click generate, the names are created locally on your device. Your choices and the generated names are not sent to our servers. We do not store your inputs or the generated list. No account or login is required. That means your shortlist of character name ideas stays on your machine unless you choose to copy it somewhere else.
+        </p>
+        <p>
+          Because generation is local, the tool is suitable for use in private or incognito windows. If you close the tab, the generated list is gone unless you have copied it. There is no server-side log of what names you generated or how many times you ran the Fallout name generator. This privacy model is intentional: username brainstorming is personal, and the tool is designed so that you control where your ideas go.
+        </p>
+
         <h2>Copying and Exporting Names</h2>
-        <p>Use the Copy button to copy all names to your clipboard (one per line). Paste into Word, Google Docs, a spreadsheet, or notes. For long lists across multiple runs, paste each run into the same document and sort or deduplicate as needed. If you notice extra spaces or line breaks after pasting, run the text through a space remover or strip-HTML tool so formatting stays clean.</p>
-        <h2>Mobile and Cross-Device Use</h2>
-        <p>The Fallout name generator runs in a web browser and works on desktop, tablet, and phone. No app install is required. Each run is independent; we do not save your history or preferences.</p>
-        <h2>Combining With Other Generators</h2>
-        <p>Your project may need more than one naming style. Use this generator for wasteland or faction names and other naming tools on our site for other factions or cultures. When assembling lists from multiple tools, keep a single naming document and clean pasted text (e.g. with a space remover or strip-HTML step) so formatting stays consistent.</p>
-        <h2>Why Use a Generator Instead of Picking Manually?</h2>
-        <p>Manually inventing dozens of Fallout-style names can be time-consuming. A Fallout name generator produces many options in seconds. Run it repeatedly and pick the names that best fit your characters or factions. For bulk naming—a cast of characters or a list for a game—the generator saves time.</p>
-        <h2>Tool Methodology and Limitations</h2>
-        <h3>How the Fallout name generator works</h3>
-        <p>The tool uses curated wasteland- and faction-style word elements. When you click generate, it randomly combines these in your browser so each run is different. No names or settings are sent to a server. The output is for creative use only and is not official game content.</p>
-        <h3>Disclaimer</h3>
-        <p>Generated names are for inspiration only. The tool does not check against official Fallout character or faction lists. Do not use in a way that implies franchise endorsement.</p>
-        <h2>Terminology: Fallout Name Generator</h2>
-        <p>People search for &quot;Fallout name generator,&quot; &quot;fallout character name generator,&quot; or &quot;fallout faction names.&quot; This page serves those intents with one tool that produces character- and faction-style names.</p>
-        <h2>Building a Naming Document for Your Project</h2>
-        <p>Whether you are writing a novel, running a tabletop campaign, or creating a mod, a single naming document helps you stay consistent. Each time you run this Fallout name generator, paste the results into that document and note which names you have already assigned (e.g. to a character, faction, or location). That way you avoid reusing the same name and keep the tone of your wasteland or faction naming coherent. If you pull names from multiple runs or from other tools, keep one master list and use a space remover or strip-HTML step when pasting from the web so formatting stays clean.</p>
-        <h2>What Makes a Name Feel &quot;Fallout&quot;?</h2>
-        <p>Fallout-style names often suggest survival, place, history, or allegiance. They can be short and punchy (like callsigns or nicknames) or longer and more formal (like faction or settlement names). The generator does not replicate specific in-game names but uses word elements that evoke the same feel: rugged, post-apocalyptic, and sometimes dark or ironic. If a generated name does not quite fit, use it as a base and adjust a syllable or word until it matches your vision.</p>
-        <h2>Character Limits and Where Names Are Used</h2>
-        <p>If you are naming something inside a game (e.g. a character or settlement), check that game&apos;s character limit for names. This Fallout name generator does not enforce any limit; you can trim or combine results to fit. For fiction and tabletop, length is flexible. Keep spelling consistent in your naming document so you do not end up with two variants of the same name in different chapters or sessions.</p>
-        <h2>Reusing and Sharing Your Name List</h2>
-        <p>You can run this Fallout name generator as often as you like and reuse the same list across multiple projects if you want. Many creators keep a personal bank of wasteland and faction names and draw from it for different stories or campaigns. The names are algorithm-generated and not copyrighted; just avoid implying that your work is officially connected to the franchise when you share or publish. If you build a list with this tool and other naming tools on our site, keep one master file and clean pasted text so formatting stays consistent when you copy between documents.</p>
-        <h2>How to Stay Consistent Across a Series or Campaign</h2>
-        <p>If you are writing a series of stories or running a long tabletop campaign, naming consistency matters. Keep one master naming document and update it every time you introduce a new character, faction, or location. Note where each name first appeared so you can refer back. When you run this Fallout name generator for new material, paste the results into the master list and mark which names you have already used. That way you avoid accidentally reusing a name or creating two similar names for different groups. A simple spreadsheet or sectioned document works well: one column or section for characters, one for factions, one for locations.</p>
-        <h2>When to Tweak a Generated Name</h2>
-        <p>Sometimes a generated name is almost right but needs a small change. You might want to swap a word, shorten it for a character limit, or adjust the spelling to match your world. That is fine—the generator is there to spark ideas. If you are building a faction and the name sounds too similar to another group in your project, run the generator again or tweak one element so each faction feels distinct. The goal is a list of names that feel cohesive and fit your tone, whether that is grim, darkly humorous, or survival-focused.</p>
-        <h2>Vault, Wasteland, and Faction Variety</h2>
-        <p>The Fallout universe includes vault dwellers, wasteland survivors, raiders, merchants, and organized factions. This generator produces names that can fit any of those contexts. Run it multiple times and you will see a mix of styles: some names sound like individual callsigns or nicknames, others like group or settlement names. Use the list to assign names that match each character or faction type in your story or game. Keeping a few spare names in your document helps when you need to name a new character or group on the fly.</p>
-        <h2>Quick Reference: Getting the Most From the Generator</h2>
-        <p>To get the most from this Fallout name generator: run it several times and paste results into one document; mark which names you have already used so you do not duplicate; keep separate notes for characters, factions, and locations if your project is large; and when pasting from the web into your list, use a space remover or strip-HTML step so formatting stays clean. The tool is free, runs in your browser, and does not send your data to a server. For more naming and text tools, see our homepage. If you hit a creative block, a fresh run of the generator often sparks new ideas for wasteland or faction names.</p>
-        <h2>No Download or Install Required</h2>
-        <p>This Fallout name generator runs entirely in your web browser. You do not need to download software or install an app. Open the page on any device, set how many names you want, and click generate. The names are created on your device and are not sent to our servers. That makes the tool fast, private, and easy to use on the go. You can bookmark the page and return whenever you need more name ideas for your next story or session. There are no ads or paywalls; the generator is free to use as often as you like.</p>
-        <h2>Summary</h2>
-        <p>Use this Fallout name generator to create wasteland- and faction-style names for roleplay, fan fiction, games, and worldbuilding. Set the number of names (1–24) and run as often as you like. Copy results into your document or notes. The tool runs locally in your browser with no sign-up. Keep a naming document so you do not reuse the same name for two characters or factions. Run the generator in batches for large projects. The names are for inspiration only; avoid implying official franchise endorsement in published work. For more naming and text tools, see our <Link href="/">homepage</Link>. No account or download is required; the tool is free.</p>
+        <p>
+          Use the Copy button to copy all generated Fallout name ideas to your clipboard (one per line). Paste into a notes app or document. Check your game or story for availability before committing to a name. The names are plain text, so they work in any editor or form. If you paste into a spreadsheet, each line can go in its own cell for easy tracking. The Fallout name generator does not export to a file; copying and pasting is the intended way to save your shortlist.
+        </p>
+
+        <h2>Limits and Batch Size</h2>
+        <p>
+          You can request 1–24 names per run with this Fallout name generator. There is no daily or total limit. Run the generator again for more options. No download or account is required. If you need more than 24 names in one go, run the tool multiple times and paste the results into one document. Removing duplicates is up to you; the generator does not track previous output.
+        </p>
+
+        <h2>No Download or Account Required</h2>
+        <p>
+          This Fallout name generator runs entirely in your browser. You do not need to download software or create an account. Open the page, set how many names you want, and click generate. The tool is free and works on desktop, tablet, and phone. That makes it easy to use when you are away from your main device or when you want to quickly generate character name ideas without installing anything.
+        </p>
+
+        <h2>Who Uses a Fallout Name Generator?</h2>
+        <p>
+          Players use the Fallout name generator when creating or updating a Fallout profile, or when they want a new character name for other platforms. Esports and streamers use it for in-game names or stream handles. The same tool works for Discord, Xbox, PlayStation, or social profiles—always check availability on each platform. Educators and workshop leaders sometimes use it to demonstrate username creation or digital identity in a classroom setting. No account or download is required on our site.
+        </p>
+        <p>
+          Anyone who needs a steady supply of username ideas can benefit. Whether you are a casual gamer, a competitive player, or a content creator, the Fallout name generator provides a fast way to explore options. The key is to treat the output as inspiration and always verify availability on Fallout and any other platform where you plan to use the name.
+        </p>
+
+        <h2>Getting the Most Out of the Fallout Name Generator</h2>
+        <p>
+          Run the generator several times and paste all results into one document. Skim for names that fit your style and check your platform for availability. Shortlist five to ten options so you have backups if your first choice is taken. The Fallout name generator does not check Fallout or any platform; you must do that yourself. When you have a shortlist, check availability one by one. Usernames are often taken on popular services, so having several options saves time.
+        </p>
+        <p>
+          Another tip is to try different batch sizes. Sometimes generating 24 names at once gives you a good mix; other times you may prefer smaller runs so you can review each set before generating more. The tool is flexible. Use it whenever you need new Fallout name ideas or character name inspiration. Bookmarking the page makes it easy to return when you are ready to refresh your profile or create a new account.
+        </p>
+
+        <h2>Typical Workflow for the Fallout Name Generator</h2>
+        <p>
+          A typical workflow is: open the page, set the number of names (e.g. 12 or 24), click generate, then copy the list. Paste into a notes app. Check your game or story for availability for each name you like. If your first choice is taken, try the next. Run the Fallout name generator again for more options. The whole process takes a few minutes. No account or download is required. Bookmark the page for quick access when you need new username ideas. The tool is free and runs in your browser with no sign-up.
+        </p>
+
+        <h2>What This Tool Does NOT Do</h2>
+        <ul>
+          <li>It does not check Fallout or any platform for username availability.</li>
+          <li>It does not reserve or hold names for you.</li>
+          <li>It does not store your generated list or your settings.</li>
+          <li>It does not connect to Steam, Discord, or any external gaming service.</li>
+        </ul>
+        <p>
+          This Fallout name generator produces name ideas only. It does not validate availability, create accounts, or manage your profile. You must check Fallout or your chosen platform yourself and follow that platform&apos;s rules when creating or changing your username. The tool is a brainstorming aid, not a replacement for checking availability.
+        </p>
+
+        <h2>Privacy and Security Notes</h2>
+        <p>
+          The Fallout name generator runs entirely in your browser. It does not send data to a server and does not store generated values. This is helpful for quick brainstorming and offline use. If you refresh the page, the last generated list is cleared. Copy any names you want to keep before closing or refreshing.
+        </p>
+        <p>
+          For account security, never share your Fallout password or other credentials. The generator only suggests usernames; it does not handle login or account creation. When you check availability on Fallout or another platform, use the official site or app and ensure you are on a secure connection. The Fallout name generator is a standalone tool and does not integrate with any login system.
+        </p>
+
+        <h2>Final Summary and When to Use This Tool</h2>
+        <p>
+          The Fallout name generator provides a fast way to create username and character name ideas for Fallout and other games and fiction. Set the number of names (1–24) and run as often as you like. Copy results and check your platform for availability. The tool runs locally in your browser with no sign-up. Keep a shortlist of options in case your first choice is taken. No download or account is required. The generator is free and works on any device.
+        </p>
+        <p>
+          Use this Fallout name generator when you need Fallout name ideas, character name inspiration, or a quick way to explore options before checking availability. It is best for brainstorming, rebranding, and building a shortlist. Always verify availability on Fallout or your chosen platform before committing to a name. The tool is a practical free resource for gaming wasteland and faction names.
+        </p>
       </div>
     </section>
   );
 }
 
 const pageFaqs: FaqItem[] = [
-  { category: 'General', question: 'What is a Fallout name generator?', answer: 'A Fallout name generator is an online tool that creates character and faction names inspired by the Fallout games—the wasteland, vaults, and faction naming style that fans know from the series. You get wasteland-style and faction-style names for roleplay, fan fiction, tabletop and video games, and creative writing. The tool produces new combinations that fit the post-apocalyptic vibe without copying official character or faction lists. This free tool runs in your browser with no sign-up. It is ideal when you need many names at once or want to explore different combinations quickly.' },
-  { category: 'Usage', question: 'How do I use the Fallout name generator?', answer: 'Set how many names you want per run (1–24), click "Generate names" to get a new list, then use the Copy button to copy all names to your clipboard. Paste into your story, game doc, or spreadsheet. Run the generator again for more options; no account is required. The tool runs in your browser so your settings and generated names are not sent to any server. For large projects, run it in batches and keep a single naming document so you can sort and deduplicate. If you paste from the web, use a space remover or strip-HTML step to keep formatting clean.' },
-  { category: 'General', question: 'Is the Fallout name generator free?', answer: 'Yes. This Fallout name generator is free to use in your browser. You can generate names as often as you like without creating an account or paying. The tool runs locally on your device and does not track usage or impose daily limits. There are no premium features or paywalls.' },
-  { category: 'Use cases', question: 'Can I use the names for roleplay?', answer: 'Yes. The Fallout name generator is designed for fan works, roleplay, and creative projects. The names fit wasteland and faction settings. Run the generator multiple times to build a roster and keep a naming document so you do not reuse the same name for two characters. For commercial or published work, avoid implying official franchise endorsement; use the names as inspiration and make clear your project is not affiliated with the franchise. The names work well for both one-off sessions and long-running campaigns.' },
-  { category: 'Privacy', question: 'Is my data sent to a server?', answer: 'No. This Fallout name generator runs in your browser. When you set the number of names and click generate, the names are created locally on your device. Your choices and the generated names are not sent to our servers. We do not store your inputs or the generated list. You can use the tool in a private or incognito window if you prefer. No analytics or tracking is tied to the names you generate.' },
-  { category: 'Compatibility', question: 'Does it work on mobile?', answer: 'Yes. The Fallout name generator runs in a web browser and works on desktop, tablet, and phone. You do not need to install an app. Open the page, choose how many names you want, then generate. On a phone you can generate a short list and copy it into notes or email. Each run is independent; we do not save your history or preferences across devices. The page is responsive so buttons and controls work on small screens.' },
-  { category: 'Limits', question: 'How many names can I generate?', answer: 'You can request 1–24 names per run with this Fallout name generator. If you need more than 24, run the generator again; each run produces a new random set. There is no daily or total limit. For very long lists run the generator in batches and paste results into one document, then sort or deduplicate as needed. Many users run it five or ten times and build a list of over a hundred names for a single project.' },
-  { category: 'General', question: 'Are these official Fallout names?', answer: 'This Fallout name generator uses styles inspired by the games. The combinations are produced by an algorithm from curated wasteland- and faction-style elements. Some names may resemble existing characters or factions; many are new combinations for creative use. The tool is not affiliated with the franchise. Use the output for fan fiction, roleplay, and creative projects only. For commercial or published work avoid implying endorsement by the franchise and treat the names as inspiration rather than official content. We do not copy from official character or faction lists.' },
-  { category: 'Use cases', question: 'Can I use the names in a game?', answer: 'Yes. You can use names from this Fallout name generator in tabletop games, video games, and other creative or personal projects. The names work well for NPCs, factions, and player characters in post-apocalyptic settings. Check any in-game character limits before committing to a name. For commercial use avoid implying official partnership with the franchise.' },
-  { category: 'General', question: 'What other name generators do you have?', answer: 'We have name generators for Elden Ring, Naruto, Transformers, RuneScape, anime, god and goddess, ancient Greek, species, tribe, island, Muslim, and others. See our homepage for the full list. You can combine this Fallout name generator with others when your project needs names from different settings or cultures. Each tool runs in your browser with no sign-up.' },
-  { category: 'Usage', question: 'Can I copy the names to a document?', answer: 'Yes. Use the Copy button on this Fallout name generator to copy all generated names to your clipboard. Paste into Word, Google Docs, a spreadsheet, or a notes app. The names are in a simple text format, one per line. If you build a long list across multiple runs, paste each run into the same document and then sort or deduplicate as needed. If you notice extra spaces or line breaks after pasting, run the pasted text through a space remover or strip-HTML tool so the list stays tidy. Keeping a single master list for your project helps you avoid reusing names and keeps formatting consistent.' },
-  { category: 'General', question: 'Do I need an account?', answer: 'No. This Fallout name generator works without sign-up or login. The tool runs entirely in your browser. You can use it in a private or incognito window if you prefer. No email or registration is required to generate or copy names.' },
-  { category: 'Use cases', question: 'Can I use it for tabletop RPGs?', answer: 'Yes. GMs and players use this Fallout name generator for post-apocalyptic or faction-style character and faction names. Run the generator several times to build a roster. Keep a document of names you have already used to avoid duplicates. The names work well for NPCs, raider groups, settlements, and player characters in wasteland or vault-inspired campaigns. You can reserve a block of names for each faction or location so you always have options when you need to introduce someone new.' },
-  { category: 'Privacy', question: 'Do you store the names I generate?', answer: 'No. Generation happens in your browser. We do not receive or store the names or your settings. The Fallout name generator runs locally on your device. You can use the tool in a private or incognito window if you prefer. No server receives your choices or the generated list. This is useful if you are generating names for unpublished or sensitive projects.' },
-  { category: 'Limits', question: 'Can I get more than 24 names?', answer: 'Each run of this Fallout name generator gives up to 24 names. To get more, run the generator again; each run produces a new random set. You can paste multiple runs into one document and then remove duplicates or trim as needed. There is no daily or total limit. For very large lists run the generator in batches and keep a master naming document so you stay consistent across your project. Many users build lists of fifty or a hundred names for a single story or campaign.' },
-  { category: 'General', question: 'Why Fallout-style names?', answer: 'Fallout has a distinct wasteland and faction naming style—rugged, survival-oriented, and faction-specific. Fans and creators often want names that fit that world for roleplay, fan fiction, and original post-apocalyptic settings. This Fallout name generator mimics that style so you can quickly get ideas without copying official content. The output works for vault dwellers, wastelanders, raiders, and factions alike.' },
-  { category: 'Use cases', question: 'Can I use the names for YouTube or social media?', answer: 'Yes, for creative content. You can use names from this Fallout name generator for video titles, character lists, or project names on YouTube or social media. Avoid implying official partnership or endorsement by the franchise. The names are fine for fan content and creative projects. If you create a series or channel with a wasteland theme, the generator can help you name characters and groups consistently.' },
-  { category: 'General', question: 'Can I combine with other generators?', answer: 'Yes. Use this Fallout name generator for wasteland or faction names and other naming tools on our site for different characters or factions. When you assemble lists from multiple tools keep a single naming document and clean pasted text (e.g. with a space remover or strip-HTML step) so formatting stays consistent. See our homepage for the full list of naming tools. Combining tools is useful when your project mixes post-apocalyptic with other settings or cultures—for example, Greek-style names for one region and Fallout-style for another.' },
-  { category: 'Technical', question: 'How are the names generated?', answer: 'This Fallout name generator uses curated wasteland- and faction-style word elements. When you click generate, the tool randomly combines these in your browser so each run is different. No names or settings are sent to a server. The result is for creative use only and is not official game content. The algorithm is designed to produce names that feel consistent with the Fallout aesthetic. You can run it as many times as you like to get fresh combinations. Each run is independent and random.' },
-  { category: 'General', question: 'Is it good for worldbuilding?', answer: 'Yes. Writers and GMs use this Fallout name generator for post-apocalyptic settings, faction rosters, and wasteland character names. Run the generator multiple times to build a roster and keep a naming document so you do not reuse the same name for two characters or factions. The mix of character- and faction-style names helps you populate both individuals and groups in your world. Many creators use it to name settlements, raider gangs, and vault-related groups. The variety supports both one-off sessions and long-running worldbuilding.' },
-  { category: 'Use cases', question: 'Can teachers use it?', answer: 'Yes. Teachers can use this Fallout name generator in lessons on creative writing or worldbuilding. Students might generate a list of names for characters or factions in a post-apocalyptic story. Emphasize that the tool is for inspiration and that the names are not official. You can pair it with discussions about setting, tone, and naming conventions in fiction. The generator is free and runs in the browser with no sign-up. Students can paste results into a shared document and discuss which names fit different character or faction types.' },
-  { category: 'General', question: 'How do I cite the Fallout name generator?', answer: 'For academic or formal use you can cite this Fallout name generator as a source of inspiration for character or faction names. The generated names are algorithm-produced and are not copyrighted; you can use them freely in your projects while respecting franchise sensitivity. A brief acknowledgment is optional. We do not require attribution. If your institution or publisher requires a URL or tool name, you can include the page title and site. The tool is intended for creative and educational use.' },
-  { category: 'General', question: 'What if I need a specific style?', answer: 'Run this Fallout name generator multiple times to get variety; each run produces new random combinations. You may get more wasteland-style or more faction-style names in different runs. If a name is close but not quite right, tweak a word or syllable to match your vision. If you need names from another genre or culture, see our homepage for the full list of naming tools. The generator is flexible enough to support both serious and darkly humorous tones.' },
-  { category: 'Use cases', question: 'Can I use the Fallout name generator for fan fiction?', answer: 'Yes. The Fallout name generator is designed for fan fiction, roleplay, and creative projects. Use the names as a starting point for characters, factions, or locations in Fallout-inspired or original wasteland settings. Run the generator multiple times to build a roster and keep a naming document so you do not reuse the same name for two characters. Avoid implying official franchise endorsement in commercial or published work. The names help you keep a consistent tone without copying official content. Many fan writers use it to name OCs and original factions. The tool is free and runs in your browser with no sign-up.' },
+  { category: 'General', question: 'What is a Fallout name generator?', answer: 'A Fallout name generator is an online tool that creates wasteland and faction names for Fallout and other games and fiction. You get unique Fallout name ideas at the click of a button. The generator combines curated Fallout-style words at random in your browser so each run produces new combinations. This free Fallout name generator runs locally with no sign-up and does not send generated names to any server. Always check your game or story for availability before committing to a name.' },
+  { category: 'Usage', question: 'How do I use the Fallout name generator?', answer: 'Set how many names you want per run (1–24), click "Generate names" to get a new list of character name ideas, then use the Copy button to copy all names to your clipboard. Paste into a notes app and check your game or story for availability. Run again for more options; no sign-up is required. The Fallout name generator runs in your browser so your settings and generated names are not sent to any server. Building a shortlist of five to ten options before checking availability is a good habit.' },
+  { category: 'General', question: 'Is the Fallout name generator free?', answer: 'Yes. This Fallout name generator is free to use in your browser. You can generate Fallout name ideas as often as you like without creating an account or paying. The tool runs locally on your device and does not require a download. There is no daily or total limit on how many times you can run the generator.' },
+  { category: 'Use cases', question: 'Can I use the names for Steam?', answer: 'Yes. The Fallout name generator produces username ideas that you can use on Steam. Names must be unique on the platform, so always check Steam\'s availability before committing. Run the generator multiple times to build a shortlist of character name ideas, then check which names are available on Steam. The tool does not reserve or validate names; it only suggests combinations for you to verify on the platform.' },
+  { category: 'Privacy', question: 'Is my data sent to a server when I use the Fallout name generator?', answer: 'No. This Fallout name generator runs in your browser. When you set the number of names and click generate, the names are created locally on your device. Your choices and the generated Fallout name ideas are not sent to our servers. We do not store your inputs or the generated list. Generation is fully local and private.' },
+  { category: 'Compatibility', question: 'Does the Fallout name generator work on mobile?', answer: 'Yes. The Fallout name generator runs in a web browser and works on desktop, tablet, and phone. You do not need to install an app. Open the page, choose how many names you want, then generate. On a phone you can generate a short list and copy it into notes or check availability on Steam\'s app. The tool is responsive and works on any device with a modern browser.' },
+  { category: 'Limits', question: 'How many names can I generate with the Fallout name generator?', answer: 'You can request 1–24 names per run with this Fallout name generator. If you need more than 24 character name ideas, run the generator again; each run produces a new random set. There is no daily or total limit. Paste multiple runs into one document and remove duplicates if needed. The batch size is designed to keep the list manageable while giving you enough Fallout name options to shortlist.' },
+  { category: 'Usage', question: 'Can I copy the names from the Fallout name generator?', answer: 'Yes. Use the Copy button on this Fallout name generator to copy all generated names to your clipboard. Paste into a notes app or document. The names are plain text, one per line, so they work in any editor or form. Check your game or story for availability before choosing a name. Copying is the intended way to save your shortlist of character name ideas.' },
+  { category: 'General', question: 'Do I need an account to use the Fallout name generator?', answer: 'No. This Fallout name generator works without sign-up or login. The tool runs entirely in your browser. You do not need to create an account on our site to use it. Open the page, set how many Fallout name ideas you want, click generate, and copy the results. No email, password, or registration is required.' },
+  { category: 'Use cases', question: 'Can I use the Fallout name generator for other platforms?', answer: 'Yes. The names work as ideas for any gaming or social platform—Discord, Xbox, PlayStation, or others. The Fallout name generator is built for Steam-style character names but the output can inspire usernames elsewhere. Check each platform\'s availability; names must be unique on each service. The generator does not check availability for you, so always verify on the platform where you plan to use the name.' },
+  { category: 'Privacy', question: 'Do you store the names I generate with the Fallout name generator?', answer: 'No. Generation happens in your browser. We do not receive or store the Fallout name ideas or your settings. The Fallout name generator runs locally on your device. You can use the tool in a private or incognito window if you prefer. If you refresh the page, the last generated list is cleared unless you have already copied it.' },
+  { category: 'Limits', question: 'Can I get more than 24 names from the Fallout name generator?', answer: 'Each run of this Fallout name generator gives up to 24 names. To get more character name ideas, run the generator again; each run produces a new random set. You can paste multiple runs into one document and then remove duplicates. There is no daily or total limit. Batching runs is the intended workflow when you need a large pool of Fallout name options.' },
+  { category: 'General', question: 'Why "Steam" specifically in a Fallout name generator?', answer: 'Fallout is a major gaming platform, and people often search for Fallout name ideas and character name generators. The Fallout name generator serves that intent and produces names that fit Fallout and similar gaming environments. The same ideas work for other platforms—Discord, Xbox, PlayStation—as inspiration. Use the names as character names wherever you need a unique username; always check availability on the platform you choose.' },
+  { category: 'Use cases', question: 'Can I use the Fallout name generator for esports?', answer: 'Yes. Use the Fallout name generator as inspiration for in-game names or stream handles. Run it multiple times to get a shortlist of character name ideas, then check availability on your platform. The tool is free and runs in your browser with no sign-up. Many esports and streamers use Fallout name generators to brainstorm handles before verifying availability on Steam, Twitch, or other services.' },
+  { category: 'Technical', question: 'How are the names generated in the Fallout name generator?', answer: 'This Fallout name generator uses curated Fallout-style words and elements. When you click generate, the tool randomly combines these in your browser so each run is different. No names or settings are sent to a server. The result is for inspiration only; we do not check Fallout or any platform for availability. The word lists are designed to sound like gaming wasteland and faction names—bold, memorable, and easy to type.' },
+  { category: 'General', question: 'Are the names from the Fallout name generator unique?', answer: 'The names are randomly combined from our word list, so each run can produce new combinations. We do not check Fallout or any platform for availability. You must check yourself whether a Fallout name or character name is available before using it on your profile. The generator helps you discover ideas; uniqueness on a given platform depends on that platform\'s current registrations.' },
+  { category: 'Use cases', question: 'Can teachers use the Fallout name generator?', answer: 'Yes. Teachers can use this Fallout name generator for creative or tech-related activities—for example when students are learning about usernames, digital identity, or online profiles. Emphasize that the tool is for inspiration and that names must be checked for availability on any platform. The Fallout name generator is free and runs in the browser with no sign-up, so it is easy to use in a classroom or workshop setting.' },
+  { category: 'General', question: 'How do I cite the Fallout name generator?', answer: 'For academic or formal use you can cite this Fallout name generator as a source of inspiration for wasteland and faction names. The generated names are algorithm-produced; you can use them freely. A brief acknowledgment is optional. We do not require attribution. The tool is a free, browser-based utility for Fallout name ideas and character name brainstorming.' },
+  { category: 'Use cases', question: 'Can I use the Fallout name generator for a new Fallout account?', answer: 'Yes. When creating a new Fallout account you need a unique username. Run this Fallout name generator to get character name ideas, copy the list, then check Fallout for availability. Pick a name that is available and that you like. The tool runs in your browser with no sign-up. Building a shortlist of five to ten options before you start the sign-up process saves time, since many Fallout names are already taken.' },
+  { category: 'General', question: 'Do the names from the Fallout name generator work for streaming?', answer: 'Yes. The Fallout name generator produces username ideas that can work for streaming platforms, in-game names, or social handles. Use the names as inspiration and check your platform for availability. Run the generator multiple times to build a shortlist of options. Many streamers use Fallout name generators to brainstorm stream handles before checking availability on Twitch, YouTube, or other services.' },
+  { category: 'Best practices', question: 'What is the best workflow for the Fallout name generator?', answer: 'Open the page, set the number of names (e.g. 12 or 24), click generate, then copy the list. Paste into a notes app. Check your game or story for availability for each name you like. If your first choice is taken, try the next. Run the Fallout name generator again for more options. Keep a shortlist of five to ten character name ideas so you have backups. The tool is free and runs in your browser with no sign-up.' },
+  { category: 'Best practices', question: 'Should I run the Fallout name generator multiple times?', answer: 'Yes. Running the Fallout name generator multiple times is the intended workflow when you want a large pool of Fallout name ideas. Paste each run into one document and remove duplicates if any appear. Then check availability on your game or story for each name you like. Having a shortlist saves time compared to checking one idea at a time. There is no daily or total limit on how many times you can run the generator.' },
+  { category: 'Troubleshooting', question: 'Why is my first choice from the Fallout name generator taken?', answer: 'Popular wasteland and faction names are often already in use on Fallout and other platforms. The Fallout name generator does not check availability; it only suggests combinations. Always have a shortlist of five to ten options so you have backups. Run the generator again for more Fallout name ideas and check availability on your platform before committing. This is normal when using any name generator for games and fiction.' },
+  { category: 'Troubleshooting', question: 'Can I use the Fallout name generator offline?', answer: 'Yes. Once the page is loaded, the Fallout name generator runs entirely in your browser and does not require a network connection to generate names. You can generate character name ideas offline. Copying and pasting also works offline. You will need a connection only to open the page initially and to check availability on Fallout or another platform.' },
 ];
 
 export default async function FalloutNameGeneratorPage() {

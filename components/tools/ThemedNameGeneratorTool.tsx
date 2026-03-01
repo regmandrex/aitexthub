@@ -20,6 +20,35 @@ import {
   generateRunescapeNames,
   generateShopifyStoreNames,
   generateKoreanMaleNames,
+  generateGorillaTagNames,
+  generateHollowKnightNames,
+  generateCovenNames,
+  generateBg3Names,
+  generateSecretOrganizationNames,
+  generateGenderbendNames,
+  generateMotorcycleClubNames,
+  generateBeybladeNames,
+  generateHomestuckTrollNames,
+  generateSymbioteNames,
+  generateSpeedsterNames,
+  generateBoxerNames,
+  generateHillbillyNames,
+  generateCrewNames,
+  generateTadcNames,
+  generateHttydNames,
+  generateDragKingNames,
+  generateYautjaNames,
+  generateBadassUsernameNames,
+  generateArmyNames,
+  generateNunNames,
+  generateClashRoyaleNames,
+  generateTaskForceNames,
+  generateKikNames,
+  generateTumblrBlogNames,
+  generateAmusementParkNames,
+  generateFakemonNames,
+  generateFortykPlanetNames,
+  generateMagicalGirlNames,
 } from '@/lib/tools/themedNameGenerators';
 
 type GeneratorKey =
@@ -40,7 +69,36 @@ type GeneratorKey =
   | 'stripper'
   | 'runescape'
   | 'shopify'
-  | 'korean-male';
+  | 'korean-male'
+  | 'gorilla-tag'
+  | 'hollow-knight'
+  | 'coven'
+  | 'bg3'
+  | 'secret-organization'
+  | 'genderbend'
+  | 'motorcycle-club'
+  | 'beyblade'
+  | 'homestuck-troll'
+  | 'symbiote'
+  | 'speedster'
+  | 'boxer'
+  | 'hillbilly'
+  | 'crew'
+  | 'tadc'
+  | 'httyd'
+  | 'drag-king'
+  | 'yautja'
+  | 'badass-username'
+  | 'army'
+  | 'nun'
+  | 'clash-royale'
+  | 'task-force'
+  | 'kik'
+  | 'tumblr-blog'
+  | 'amusement-park'
+  | 'fakemon'
+  | 'fortyk-planet'
+  | 'magical-girl';
 
 const GENERATORS: Record<GeneratorKey, (count: number, seed?: number) => { name: string }[]> = {
   'naruto': generateNarutoNames,
@@ -61,6 +119,35 @@ const GENERATORS: Record<GeneratorKey, (count: number, seed?: number) => { name:
   'runescape': generateRunescapeNames,
   'shopify': generateShopifyStoreNames,
   'korean-male': generateKoreanMaleNames,
+  'gorilla-tag': generateGorillaTagNames,
+  'hollow-knight': generateHollowKnightNames,
+  'coven': generateCovenNames,
+  'bg3': generateBg3Names,
+  'secret-organization': generateSecretOrganizationNames,
+  'genderbend': generateGenderbendNames,
+  'motorcycle-club': generateMotorcycleClubNames,
+  'beyblade': generateBeybladeNames,
+  'homestuck-troll': generateHomestuckTrollNames,
+  'symbiote': generateSymbioteNames,
+  'speedster': generateSpeedsterNames,
+  'boxer': generateBoxerNames,
+  'hillbilly': generateHillbillyNames,
+  'crew': generateCrewNames,
+  'tadc': generateTadcNames,
+  'httyd': generateHttydNames,
+  'drag-king': generateDragKingNames,
+  'yautja': generateYautjaNames,
+  'badass-username': generateBadassUsernameNames,
+  'army': generateArmyNames,
+  'nun': generateNunNames,
+  'clash-royale': generateClashRoyaleNames,
+  'task-force': generateTaskForceNames,
+  'kik': generateKikNames,
+  'tumblr-blog': generateTumblrBlogNames,
+  'amusement-park': generateAmusementParkNames,
+  'fakemon': generateFakemonNames,
+  'fortyk-planet': generateFortykPlanetNames,
+  'magical-girl': generateMagicalGirlNames,
 };
 
 const DEFAULT_COUNT = 10;
