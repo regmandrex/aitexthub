@@ -226,7 +226,7 @@ const pageFaqs: FaqItem[] = [
   { category: 'Troubleshooting', question: 'Can I use the 40K Planet name generator offline?', answer: 'Yes. Once the page is loaded, the 40K Planet name generator runs entirely in your browser and does not require a network connection to generate names. You can generate character name ideas offline. Copying and pasting also works offline. You will need a connection only to open the page initially and to check availability on 40K Planet or another platform.' },
 ];
 
-export default async function 40kPlanetNameGeneratorPage() {
+export default async function Planet40kNameGeneratorPage() {
   const toolData = getToolBySlug(toolSlug);
   if (!toolData) return notFound();
   const title = toolData.title;
