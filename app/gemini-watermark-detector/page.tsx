@@ -537,7 +537,7 @@ export default function GeminiWatermarkDetectorPage() {
         industries.
       </p>
 
-      <h3 className="text-xl font-semibold text-slate-900">Best Practices for Using the Gemini Watermark Detector</h3>
+      <h3 className="text-xl font-semibold text-slate-900">Tips for Consistent Use of the Gemini Watermark Detector</h3>
       <p>Whether you are a school, a newsroom, or a software developer, here is how to make the most of watermark detection:</p>
       <p>Do:</p>
       <ul className="list-disc list-inside space-y-1 text-slate-700">

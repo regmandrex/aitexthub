@@ -622,7 +622,7 @@ const article = (
         confirm that it behaves as expected.
       </p>
 
-      <h2>Best Practices for Using the Tool</h2>
+      <h2>Tips for Consistent Use of the Tool</h2>
       <p>
         AI Watermark Remover works best as part of a deliberate workflow. Use it after drafting, then review the output before final publishing.
         This keeps the cleanup step focused and avoids repeated changes that can introduce new spacing artifacts.
