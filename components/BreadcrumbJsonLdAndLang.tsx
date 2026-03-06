@@ -30,6 +30,10 @@ export function BreadcrumbJsonLdAndLang() {
   const items: Array<{ name: string; url: string }> = [];
   items.push({ name: 'Home', url: abs('/') });
 
+  if (pathname === '/') {
+    return <JsonLd data={breadcrumbListSchema(items)} />;
+  }
+
   if (pathname === '/blog' || pathname.startsWith('/blog/')) {
     items.push({ name: 'Blog', url: abs('/blog') });
     if (pathname !== '/blog') {

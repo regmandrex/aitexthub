@@ -48,6 +48,7 @@
     ".next/dev/types/**/*.ts"
   ],
   "exclude": [
-    "node_modules"
+    "node_modules",
+    "lib/seo/generated-registry-entries.ts"
   ]
 }

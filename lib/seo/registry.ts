@@ -859,7 +859,7 @@ export const toolPages: ToolPage[] = [
     category: 'professional',
   },
 
-  {
+{
     slug: 'gemini-detector',
     title: 'Gemini Detector',
     description: 'Detect AI-generated content and check if text was created by Gemini or other AI models.',

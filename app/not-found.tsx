@@ -28,7 +28,7 @@ export default async function NotFound() {
               Oops! Page Not Found
             </h1>
             <p className="max-w-xl text-base text-slate-700 md:text-lg">
-              The page you're looking for doesn't exist or has been moved. Let's get you back on track.
+              The page you&apos;re looking for doesn&apos;t exist or has been moved. Let&apos;s get you back on track.
             </p>
             <div className="flex flex-wrap gap-3">
               <Link
