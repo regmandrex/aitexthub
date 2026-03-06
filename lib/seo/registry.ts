@@ -2618,13 +2618,16 @@ export const toolPages: ToolPage[] = [
   },
 ];
 
-export const categoryPages: CategoryPage[] = [
-  {
-    slug: 'tools/text',
-    title: 'Text Tools',
-    description: 'AI text cleanup and formatting tools.',
-    noindex: true,
-  },
+export const categoryPages: CategoryPage[] = [];
+
+/** Static and index pages (about, legal, ai-tools) for sitemap and RSS. */
+export const staticPages: CategoryPage[] = [
+  { slug: 'about', title: 'About GPTCLEANUP AI - Free AI Text Cleaning Tools', description: 'Learn about GPTCLEANUP AI and how we help tidy AI text from ChatGPT, Gemini, and more.' },
+  { slug: 'privacy-policy', title: 'Privacy Policy - GPTCLEANUP AI Data Protection', description: 'Privacy details for GPTCLEANUP AI tools.' },
+  { slug: 'terms-of-service', title: 'Terms of Service - GPTCLEANUP AI', description: 'Terms of Service for GPTCLEANUP AI tools.' },
+  { slug: 'disclaimer', title: 'Disclaimer - GPTCLEANUP AI Text Tools Terms', description: 'Disclaimer for GPTCLEANUP AI tools.' },
+  { slug: 'cookie-policy', title: 'Cookie Policy - GPTCLEANUP AI Privacy & Tracking', description: 'Cookie Policy for GPTCLEANUP AI tools.' },
+  { slug: 'ai-tools', title: 'All AI Text Tools - Free Content & Writing Utilities', description: 'Browse the GPT CLEAN UP Tools collection - AI text cleanup, watermark removal, formatting tools, and more.' },
 ];
 
 export function getToolPageBySlug(slug: string): ToolPage | undefined {

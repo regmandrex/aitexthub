@@ -1,5 +1,5 @@
 import { blogPosts, blogDateToRfc822 } from '@/lib/blog-posts';
-import { toolPages } from '@/lib/seo/registry';
+import { toolPages, staticPages } from '@/lib/seo/registry';
 
 const SITE_URL = 'https://gptcleanuptools.com';
 
@@ -31,6 +31,17 @@ export function GET() {
     </item>`
   );
 
+  const staticItems = staticPages.map(
+      (page) => `
+    <item>
+      <title>${escapeXml(page.title)}</title>
+      <link>${toolUrl(page.slug)}</link>
+      <description>${escapeXml(page.description)}</description>
+      <pubDate>${lastBuild}</pubDate>
+      <guid isPermaLink="true">${toolUrl(page.slug)}</guid>
+    </item>`
+    );
+
   const toolItems = toolPages.map(
     (tool) => `
     <item>
@@ -52,6 +63,7 @@ export function GET() {
     <lastBuildDate>${lastBuild}</lastBuildDate>
     <atom:link href="${SITE_URL}/rss.xml" rel="self" type="application/rss+xml"/>
     ${blogItems.join('')}
+    ${staticItems.join('')}
     ${toolItems.join('')}
   </channel>
 </rss>`;
