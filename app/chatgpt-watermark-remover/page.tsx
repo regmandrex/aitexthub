@@ -171,7 +171,7 @@ export default function ChatGPTWatermarkCleanerPage() {
       <JsonLd
         data={webPageSchema({
           name: 'ChatGPT Watermark Remover',
-          url: `${siteUrl}/chatgpt-watermark-remover/`,
+          url: cleanUrl('chatgpt-watermark-remover'),
           description:
             'Remove hidden characters and watermarks from ChatGPT output. Strip zero-width/NBSP Unicode, fix spacing, and prepare clean text for Word, Docs, and CMS.',
         })}

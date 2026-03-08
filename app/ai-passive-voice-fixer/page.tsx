@@ -9,6 +9,7 @@ import { ToolPageShell } from '@/components/tool/ToolPageShell';
 import { ChatGPTPassiveVoiceFixerTool } from '@/components/tools/ChatGPTPassiveVoiceFixerTool';
 import { buildToolMeta } from '@/lib/seo-meta';
 import { siteUrl } from '@/lib/schema/site';
+import { cleanUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
 
@@ -147,7 +148,7 @@ export default async function AIPassiveVoiceFixerPage() {
   if (!toolData) return notFound();
   const title = toolData.title;
   const description = toolData.shortDescription;
-  const url = `${siteUrl}/${toolSlug}/`;
+  const url = cleanUrl(toolSlug);
   const webAppSchema = { '@context': 'https://schema.org', '@type': 'WebApplication', name: title, applicationCategory: 'UtilitiesApplication', operatingSystem: 'Web', description: description, url };
   const pageFaqs: FaqItem[] = [
     { category: 'General', question: 'Where can I learn more about the AI Passive Voice Fixer?', answer: 'This page provides an overview of the AI Passive Voice Fixer, including how it works, who should use it, and how to interpret results. Use the tool as a screening or support aid alongside your own judgment and any institutional or organizational policies. For more detail, see the sections above and the full FAQ list.' },

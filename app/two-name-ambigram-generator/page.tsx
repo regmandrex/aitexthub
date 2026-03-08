@@ -10,6 +10,7 @@ import { ToolPageShell } from '@/components/tool/ToolPageShell';
 import { TwoNameAmbigramGeneratorTool } from '@/components/tools/TwoNameAmbigramGeneratorTool';
 import { buildToolMeta } from '@/lib/seo-meta';
 import { siteUrl } from '@/lib/schema/site';
+import { cleanUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
 
@@ -138,7 +139,7 @@ export default async function TwoNameAmbigramGeneratorPage() {
 
   const title = toolData.title;
   const description = toolData.shortDescription;
-  const url = `${siteUrl}/${toolSlug}/`;
+  const url = cleanUrl(toolSlug);
 
   const pageFaqs: FaqItem[] = [
     { category: 'General', question: 'What is a two-name ambigram generator?', answer: 'A two-name ambigram generator helps you create or explore ambigrams that read as one name in one orientation and as a second name when rotated (e.g., 180°). You enter two names and get design concepts or instructions for tattoos, logos, or gifts.' },

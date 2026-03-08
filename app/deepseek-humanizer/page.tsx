@@ -9,6 +9,7 @@ import { ToolPageShell } from '@/components/tool/ToolPageShell';
 import { ChatGPTHumanizerTool } from '@/components/tools/ChatGPTHumanizerTool';
 import { buildToolMeta } from '@/lib/seo-meta';
 import { siteUrl } from '@/lib/schema/site';
+import { cleanUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
 
@@ -148,7 +149,7 @@ export default async function DeepSeekHumanizerPage() {
   if (!toolData) return notFound();
   const title = toolData.title;
   const description = toolData.shortDescription;
-  const url = `${siteUrl}/${toolSlug}/`;
+  const url = cleanUrl(toolSlug);
   const webAppSchema = { '@context': 'https://schema.org', '@type': 'WebApplication', name: title, applicationCategory: 'UtilitiesApplication', operatingSystem: 'Web', description: description, url };
   const pageFaqs: FaqItem[] = [
     { category: 'General', question: 'What is the DeepSeek Humanizer?', answer: 'The DeepSeek Humanizer is a free online tool that rewrites AI-generated text so it reads more naturally and sounds more human. It adjusts vocabulary, sentence structure, and tone to reduce robotic patterns that AI detectors often flag, while keeping your meaning intact. Use this humanizer to polish DeepSeek output or other AI text for essays, articles, and professional content. It runs in your browser and does not send your text to our servers, so you can humanize AI content privately.' },

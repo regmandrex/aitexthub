@@ -7,7 +7,7 @@ import type { FaqItem } from '../faqData';
 import { SpaceRemoverTool } from './SpaceRemoverTool';
 import { JsonLd } from '../JsonLd';
 import { webPageSchema } from '../../lib/schema/webpage';
-import { siteUrl } from '../../lib/schema/site';
+import { cleanUrl } from '@/lib/seo/url';
 import { RelatedTools } from '../tool/RelatedTools';
 import AdSenseSlot from '../ads/AdSenseSlot';
 import BelowToolAd from '../ads/BelowToolAd';
@@ -32,7 +32,7 @@ function RailAd({ side }: { side: 'left' | 'right' }) {
 }
 
 export default function SpaceRemoverPage({ modelName, modelSlug, faqItems, content }: Props) {
-  const url = `${siteUrl}/${modelSlug}-space-remover/`;
+  const url = cleanUrl(`${modelSlug}-space-remover`);
   const title = `${modelName} Space Remover`;
   const subtitle = 'Remove extra spaces and tidy lines for clean, paste-ready text.';
   const description = `Tighten whitespace, trim messy spacing, and make ${modelName} text easier to paste into docs and CMS editors.`;

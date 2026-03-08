@@ -9,6 +9,7 @@ import { ToolPageShell } from '@/components/tool/ToolPageShell';
 import { ChatGPTGrammarCheckerTool } from '@/components/tools/ChatGPTGrammarCheckerTool';
 import { buildToolMeta } from '@/lib/seo-meta';
 import { siteUrl } from '@/lib/schema/site';
+import { cleanUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
 
@@ -488,7 +489,7 @@ export default async function ChatGPTGrammarCheckerPage() {
   const title = toolData.title;
   const description = toolData.shortDescription;
 
-  const url = `${siteUrl}/${toolSlug}/`;
+  const url = cleanUrl(toolSlug);
   const webAppSchema = {
     '@context': 'https://schema.org',
     '@type': 'WebApplication',

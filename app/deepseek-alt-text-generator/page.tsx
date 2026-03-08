@@ -9,6 +9,7 @@ import { ToolPageShell } from '@/components/tool/ToolPageShell';
 import { ChatGPTAltTextGeneratorTool } from '@/components/tools/ChatGPTAltTextGeneratorTool';
 import { buildToolMeta } from '@/lib/seo-meta';
 import { siteUrl } from '@/lib/schema/site';
+import { cleanUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
 
@@ -147,7 +148,7 @@ export default async function DeepSeekAltTextGeneratorPage() {
   if (!toolData) return notFound();
   const title = toolData.title;
   const description = toolData.shortDescription;
-  const url = `${siteUrl}/${toolSlug}/`;
+  const url = cleanUrl(toolSlug);
   const webAppSchema = { '@context': 'https://schema.org', '@type': 'WebApplication', name: title, applicationCategory: 'UtilitiesApplication', operatingSystem: 'Web', description: description, url };
   const pageFaqs: FaqItem[] = [
     { category: 'General', question: 'What is the DeepSeek Alt Text Generator?', answer: 'The DeepSeek Alt Text Generator is a free online tool that generates accessible alt text for images from DeepSeek descriptions or your input. Alt text helps screen readers and search engines understand images and is essential for accessibility and can support SEO. The tool produces concise, accurate descriptions that work for all users. It runs in your browser; your text is not sent to our servers or stored.' },

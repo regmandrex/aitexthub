@@ -9,6 +9,7 @@ import { ToolPageShell } from '@/components/tool/ToolPageShell';
 import { GanglishTranslatorTool } from '@/components/tools/GanglishTranslatorTool';
 import { buildToolMeta } from '@/lib/seo-meta';
 import { siteUrl } from '@/lib/schema/site';
+import { cleanUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
 
@@ -141,7 +142,7 @@ export default async function GanglishTranslatorPage() {
 
   const title = toolData.title;
   const description = toolData.shortDescription;
-  const url = `${siteUrl}/${toolSlug}/`;
+  const url = cleanUrl(toolSlug);
 
   const pageFaqs: FaqItem[] = [
     { category: 'General', question: 'What is a Ganglish translator?', answer: 'A Ganglish translator converts English (or mixed) text into Ganglish—a blend of English and Punjabi (and sometimes other South Asian languages) often written in Roman script. It is used for informal and social content.' },

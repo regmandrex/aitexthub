@@ -9,6 +9,7 @@ import { ToolPageShell } from '@/components/tool/ToolPageShell';
 import { FindReplaceTool } from '@/components/tools/FindReplaceTool';
 import { buildToolMeta } from '@/lib/seo-meta';
 import { siteUrl } from '@/lib/schema/site';
+import { cleanUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
 
@@ -129,7 +130,7 @@ export default async function FindAndReplacePage() {
     { category: 'Workflow', question: 'How do I avoid replacing too much?', answer: 'Use whole-word matching when possible so short find strings do not match inside longer words. Prefer specific find strings (e.g., “Product Name” instead of “Name”). Always review the result before using it in production or publishing, and run one replacement at a time when order matters.' },
   ];
 
-  const url = `${siteUrl}/${toolSlug}/`;
+  const url = cleanUrl(toolSlug);
 
   return (
     <>

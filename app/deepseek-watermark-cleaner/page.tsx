@@ -238,7 +238,7 @@ export default async function DeepSeekWatermarkCleanerPage() {
       <JsonLd
         data={webPageSchema({
           name: toolTitle,
-          url: `${siteUrl}/deepseek-watermark-cleaner/`,
+          url: cleanUrl('deepseek-watermark-cleaner'),
           description: toolDescription,
         })}
       />

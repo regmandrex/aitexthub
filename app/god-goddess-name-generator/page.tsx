@@ -10,6 +10,7 @@ import { ToolPageShell } from '@/components/tool/ToolPageShell';
 import { GodGoddessNameGeneratorTool } from '@/components/tools/GodGoddessNameGeneratorTool';
 import { buildToolMeta } from '@/lib/seo-meta';
 import { siteUrl } from '@/lib/schema/site';
+import { cleanUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
 
@@ -125,7 +126,7 @@ export default async function GodGoddessNameGeneratorPage() {
   if (!toolData) return notFound();
   const title = toolData.title;
   const description = toolData.shortDescription;
-  const url = `${siteUrl}/${toolSlug}/`;
+  const url = cleanUrl(toolSlug);
   return (
     <>
       <JsonLd data={webPageSchema({ name: title, url, description })} />

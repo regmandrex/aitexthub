@@ -9,6 +9,7 @@ import { ToolPageShell } from '@/components/tool/ToolPageShell';
 import { UrlEncoderDecoderTool } from '@/components/tools/UrlEncoderDecoderTool';
 import { buildToolMeta } from '@/lib/seo-meta';
 import { siteUrl } from '@/lib/schema/site';
+import { cleanUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
 
@@ -643,7 +644,7 @@ export default async function UrlEncoderDecoderPage() {
   const title = toolData.title;
   const description = toolData.shortDescription;
 
-  const url = `${siteUrl}/${toolSlug}/`;
+  const url = cleanUrl(toolSlug);
 
   return (
     <>

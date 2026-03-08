@@ -9,6 +9,7 @@ import { ToolPageShell } from '@/components/tool/ToolPageShell';
 import { ChatGPTParagraphRewriterTool } from '@/components/tools/ChatGPTParagraphRewriterTool';
 import { buildToolMeta } from '@/lib/seo-meta';
 import { siteUrl } from '@/lib/schema/site';
+import { cleanUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
 
@@ -293,7 +294,7 @@ export default async function ChatGPTParagraphRewriterPage() {
   const title = toolData.title;
   const description = toolData.shortDescription;
 
-  const url = `${siteUrl}/${toolSlug}/`;
+  const url = cleanUrl(toolSlug);
   const webAppSchema = {
     '@context': 'https://schema.org',
     '@type': 'WebApplication',

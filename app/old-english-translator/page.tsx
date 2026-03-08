@@ -9,6 +9,7 @@ import { ToolPageShell } from '@/components/tool/ToolPageShell';
 import { OldEnglishTranslatorTool } from '@/components/tools/OldEnglishTranslatorTool';
 import { buildToolMeta } from '@/lib/seo-meta';
 import { siteUrl } from '@/lib/schema/site';
+import { cleanUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
 
@@ -199,7 +200,7 @@ export default async function OldEnglishTranslatorPage() {
 
   const title = toolData.title;
   const description = toolData.shortDescription;
-  const url = `${siteUrl}/${toolSlug}/`;
+  const url = cleanUrl(toolSlug);
 
   const pageFaqs: FaqItem[] = [
     { category: 'General', question: 'What is an Old English translator?', answer: 'An Old English translator is an online tool that converts modern English into Old English (Anglo-Saxon) style—the language of Beowulf and Anglo-Saxon England. It helps you translate to Anglo Saxon for study, creative writing, or education. The result is stylistic and approximate rather than word-for-word historical text.' },

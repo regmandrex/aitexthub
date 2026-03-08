@@ -9,6 +9,7 @@ import { ToolPageShell } from '@/components/tool/ToolPageShell';
 import { ChatGPTToneAnalyzerTool } from '@/components/tools/ChatGPTToneAnalyzerTool';
 import { buildToolMeta } from '@/lib/seo-meta';
 import { siteUrl } from '@/lib/schema/site';
+import { cleanUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
 
@@ -147,7 +148,7 @@ export default async function ClaudeToneAnalyzerPage() {
   if (!toolData) return notFound();
   const title = toolData.title;
   const description = toolData.shortDescription;
-  const url = `${siteUrl}/${toolSlug}/`;
+  const url = cleanUrl(toolSlug);
   const webAppSchema = { '@context': 'https://schema.org', '@type': 'WebApplication', name: title, applicationCategory: 'UtilitiesApplication', operatingSystem: 'Web', description: description, url };
   const pageFaqs: FaqItem[] = [
     { category: 'General', question: 'What is the Claude Tone Analyzer?', answer: 'The Claude Tone Analyzer is a free online tool that analyzes the tone and sentiment of Claude-generated content. It helps you understand how your text may be perceived—formal or casual, positive or neutral, assertive or cautious—so you can align tone with your audience and purpose. The tool examines word choice, sentence structure, and common tone markers. It runs in your browser; your text is not sent to our servers or stored.' },

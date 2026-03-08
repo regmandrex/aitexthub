@@ -9,6 +9,7 @@ import { ToolPageShell } from '@/components/tool/ToolPageShell';
 import { ChatGPTParaphraserTool } from '@/components/tools/ChatGPTParaphraserTool';
 import { buildToolMeta } from '@/lib/seo-meta';
 import { siteUrl } from '@/lib/schema/site';
+import { cleanUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
 export const revalidate = 86400;
@@ -181,7 +182,7 @@ export default async function ChatGPTParaphraserPage() {
   const title = toolData.title;
   const description = toolData.shortDescription;
 
-  const url = `${siteUrl}/${toolSlug}/`;
+  const url = cleanUrl(toolSlug);
   const webAppSchema = {
     '@context': 'https://schema.org',
     '@type': 'WebApplication',

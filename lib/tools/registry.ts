@@ -61,6 +61,7 @@ const MODE_LABELS: Record<string, string> = {
   'line-spacing': 'Line Spacing',
   utility: 'Text Utility',
   generator: 'Generator',
+  translator: 'Translator',
 };
 
 const UTILITY_SLUGS = new Set([
@@ -135,8 +136,6 @@ const GENERATOR_SLUGS = new Set([
   'combination-generator',
   'line-combination-generator',
   'permutation-generator',
-  'cartinese-translator',
-  'playboi-carti-translator',
 ]);
 
 const MODEL_SLUGS = new Set(Object.keys(MODEL_LABELS));
@@ -178,6 +177,9 @@ function getModeSlug(slug: string, category?: string): string {
   }
 
   // Use category when available to avoid misclassification (e.g. generators, encoding tools)
+  if (category === 'translator') {
+    return 'translator';
+  }
   if (category === 'generator' || GENERATOR_SLUGS.has(slug)) {
     return 'generator';
   }

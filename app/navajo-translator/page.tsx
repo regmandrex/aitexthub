@@ -9,6 +9,7 @@ import { ToolPageShell } from '@/components/tool/ToolPageShell';
 import { NavajoTranslatorTool } from '@/components/tools/NavajoTranslatorTool';
 import { buildToolMeta } from '@/lib/seo-meta';
 import { siteUrl } from '@/lib/schema/site';
+import { cleanUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
 
@@ -200,7 +201,7 @@ export default async function NavajoTranslatorPage() {
 
   const title = toolData.title;
   const description = toolData.shortDescription;
-  const url = `${siteUrl}/${toolSlug}/`;
+  const url = cleanUrl(toolSlug);
 
   const pageFaqs: FaqItem[] = [
     { category: 'General', question: 'What is a Navajo translator?', answer: 'A Navajo translator is an online tool that helps convert English text to Navajo (Diné bizaad) for learning and respectful use. It supports English to Navajo translation online and is designed as a learning aid, not a certified translation service. Pair it with community resources and certified materials for best use.' },

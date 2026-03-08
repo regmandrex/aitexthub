@@ -9,6 +9,7 @@ import { ToolPageShell } from '@/components/tool/ToolPageShell';
 import { ChatGPTAcademicHumanizerTool } from '@/components/tools/ChatGPTAcademicHumanizerTool';
 import { buildToolMeta } from '@/lib/seo-meta';
 import { siteUrl } from '@/lib/schema/site';
+import { cleanUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
 
@@ -141,7 +142,7 @@ export default async function GrokAcademicHumanizerPage() {
   if (!toolData) return notFound();
   const title = toolData.title;
   const description = toolData.shortDescription;
-  const url = `${siteUrl}/${toolSlug}/`;
+  const url = cleanUrl(toolSlug);
   const webAppSchema = { '@context': 'https://schema.org', '@type': 'WebApplication', name: title, applicationCategory: 'UtilitiesApplication', operatingSystem: 'Web', description: description, url };
   const pageFaqs: FaqItem[] = [
     { category: 'General', question: 'What is the Grok Academic Humanizer?', answer: 'The Grok Academic Humanizer is a free online tool that rewrites Grok-generated academic text so it reads more naturally and aligns with the expectations of educators and institutions. It adjusts vocabulary, sentence structure, and flow to reduce robotic patterns while keeping your arguments, evidence, and academic tone intact. Students and writers use it to polish AI-assisted drafts—essays, papers, and assignments—so the writing sounds more authentic. The tool runs in your browser; your text is not sent to our servers or stored.' },

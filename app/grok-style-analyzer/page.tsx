@@ -9,6 +9,7 @@ import { ToolPageShell } from '@/components/tool/ToolPageShell';
 import { ChatGPTStyleAnalyzerTool } from '@/components/tools/ChatGPTStyleAnalyzerTool';
 import { buildToolMeta } from '@/lib/seo-meta';
 import { siteUrl } from '@/lib/schema/site';
+import { cleanUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
 
@@ -147,7 +148,7 @@ export default async function GrokStyleAnalyzerPage() {
   if (!toolData) return notFound();
   const title = toolData.title;
   const description = toolData.shortDescription;
-  const url = `${siteUrl}/${toolSlug}/`;
+  const url = cleanUrl(toolSlug);
   const webAppSchema = { '@context': 'https://schema.org', '@type': 'WebApplication', name: title, applicationCategory: 'UtilitiesApplication', operatingSystem: 'Web', description: description, url };
   const pageFaqs: FaqItem[] = [
     { category: 'General', question: 'What is the Grok Style Analyzer?', answer: 'The Grok Style Analyzer is a free online tool that analyzes writing style and consistency in Grok-generated text. It helps you see patterns in word choice, sentence structure, and tone so you can improve consistency and align the style with your brand or voice. The tool examines vocabulary, sentence length variation, passive vs. active voice, and repetition. It runs in your browser; your text is not sent to our servers or stored.' },

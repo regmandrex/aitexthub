@@ -9,6 +9,7 @@ import { ToolPageShell } from '@/components/tool/ToolPageShell';
 import { ChatGPTGrammarCheckerTool } from '@/components/tools/ChatGPTGrammarCheckerTool';
 import { buildToolMeta } from '@/lib/seo-meta';
 import { siteUrl } from '@/lib/schema/site';
+import { cleanUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
 
@@ -147,7 +148,7 @@ export default async function PerplexityGrammarCheckerPage() {
   if (!toolData) return notFound();
   const title = toolData.title;
   const description = toolData.shortDescription;
-  const url = `${siteUrl}/${toolSlug}/`;
+  const url = cleanUrl(toolSlug);
   const webAppSchema = { '@context': 'https://schema.org', '@type': 'WebApplication', name: title, applicationCategory: 'UtilitiesApplication', operatingSystem: 'Web', description: description, url };
   const pageFaqs: FaqItem[] = [
     { category: 'General', question: 'What is the Perplexity Grammar Checker?', answer: 'The Perplexity Grammar Checker is a free online tool that checks and corrects grammar, punctuation, and style in Perplexity-generated text. It helps you catch errors, improve clarity, and polish writing before submission—whether for essays, emails, or professional content. This free grammar checker runs in your browser and does not send your text to our servers, so you can check AI content privately.' },

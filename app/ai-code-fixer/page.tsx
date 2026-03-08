@@ -9,6 +9,7 @@ import { ToolPageShell } from '@/components/tool/ToolPageShell';
 import { AICodeFixerTool } from '@/components/tools/AICodeFixerTool';
 import { buildToolMeta } from '@/lib/seo-meta';
 import { siteUrl } from '@/lib/schema/site';
+import { cleanUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
 
@@ -199,7 +200,7 @@ export default async function AICodeFixerPage() {
   const title = toolData.title;
   const description = toolData.shortDescription;
 
-  const url = `${siteUrl}/${toolSlug}/`;
+  const url = cleanUrl(toolSlug);
 
   const pageFaqs: FaqItem[] = [
     { category: 'General', question: 'What is the AI Code Fixer?', answer: 'The AI Code Fixer is a free online tool that helps fix or improve code. It may suggest or apply corrections for common issues, formatting, or style. It runs in your browser and does not send your code to our servers.' },

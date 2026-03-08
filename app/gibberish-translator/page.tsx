@@ -9,6 +9,7 @@ import { ToolPageShell } from '@/components/tool/ToolPageShell';
 import { GibberishTranslatorTool } from '@/components/tools/GibberishTranslatorTool';
 import { buildToolMeta } from '@/lib/seo-meta';
 import { siteUrl } from '@/lib/schema/site';
+import { cleanUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
 
@@ -145,7 +146,7 @@ export default async function GibberishTranslatorPage() {
 
   const title = toolData.title;
   const description = toolData.shortDescription;
-  const url = `${siteUrl}/${toolSlug}/`;
+  const url = cleanUrl(toolSlug);
 
   const pageFaqs: FaqItem[] = [
     { category: 'General', question: 'What is a Gibberish translator?', answer: 'A Gibberish translator encodes readable text into Gibberish (a playful code with inserted syllables) or decodes Gibberish back to English. You use it for fun, secret messages, and games.' },

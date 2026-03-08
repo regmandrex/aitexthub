@@ -240,7 +240,7 @@ export default async function GrokWatermarkCleanerPage() {
       <JsonLd
         data={webPageSchema({
           name: toolTitle,
-          url: `${siteUrl}/grok-watermark-cleaner/`,
+          url: cleanUrl('grok-watermark-cleaner'),
           description: toolDescription,
         })}
       />

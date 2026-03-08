@@ -6,6 +6,7 @@ import { buildMeta } from '@/lib/seo-meta';
 import { JsonLd } from '../../components/JsonLd';
 import { webPageSchema } from '../../lib/schema/webpage';
 import { siteUrl } from '../../lib/schema/site';
+import { cleanUrl } from '@/lib/seo/url';
 import { RelatedTools } from '../../components/tool/RelatedTools';
 import AdSenseSlot from '../../components/ads/AdSenseSlot';
 import BelowToolAd from '../../components/ads/BelowToolAd';
@@ -230,7 +231,7 @@ export default async function ClaudeWatermarkCleanerPage() {
       <JsonLd
         data={webPageSchema({
           name: toolTitle,
-          url: `${siteUrl}/claude-watermark-cleaner/`,
+          url: cleanUrl('claude-watermark-cleaner'),
           description: toolDescription,
         })}
       />

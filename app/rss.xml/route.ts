@@ -14,7 +14,7 @@ function escapeXml(text: string): string {
 
 function toolUrl(slug: string): string {
   if (!slug) return `${SITE_URL}/`;
-  return `${SITE_URL}/${slug}/`;
+  return `${SITE_URL}/${slug}`;
 }
 
 export function GET() {
@@ -24,10 +24,10 @@ export function GET() {
     (post) => `
     <item>
       <title>${escapeXml(post.title)}</title>
-      <link>${SITE_URL}/blog/${post.slug}/</link>
+      <link>${SITE_URL}/blog/${post.slug}</link>
       <description>${escapeXml(post.description)}</description>
       <pubDate>${blogDateToRfc822(post.date)}</pubDate>
-      <guid isPermaLink="true">${SITE_URL}/blog/${post.slug}/</guid>
+      <guid isPermaLink="true">${SITE_URL}/blog/${post.slug}</guid>
     </item>`
   );
 

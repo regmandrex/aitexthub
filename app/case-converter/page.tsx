@@ -9,6 +9,7 @@ import { ToolPageShell } from '@/components/tool/ToolPageShell';
 import { CaseConverterTool } from '@/components/tools/CaseConverterTool';
 import { buildToolMeta } from '@/lib/seo-meta';
 import { siteUrl } from '@/lib/schema/site';
+import { cleanUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
 export const revalidate = 86400;
@@ -240,7 +241,7 @@ export default async function CaseConverterPage() {
     { category: 'Privacy', question: 'Is my text stored?', answer: 'No. Conversion happens in your browser. Your text is not sent to our servers or stored. For sensitive content, you can use the tool without creating an account.' },
   ];
 
-  const url = `${siteUrl}/${toolSlug}/`;
+  const url = cleanUrl(toolSlug);
 
   return (
     <>

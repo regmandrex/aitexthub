@@ -10,6 +10,7 @@ import { ToolPageShell } from '@/components/tool/ToolPageShell';
 import { TwoNameAmbigramGeneratorTool } from '@/components/tools/TwoNameAmbigramGeneratorTool';
 import { buildToolMeta } from '@/lib/seo-meta';
 import { siteUrl } from '@/lib/schema/site';
+import { cleanUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
 
@@ -129,7 +130,7 @@ export default async function AmbigramTattooGeneratorPage() {
 
   const title = toolData.title;
   const description = toolData.shortDescription;
-  const url = `${siteUrl}/${toolSlug}/`;
+  const url = cleanUrl(toolSlug);
 
   const pageFaqs: FaqItem[] = [
     { category: 'General', question: 'What is an ambigram tattoo generator?', answer: 'An ambigram tattoo generator is an online tool that helps you create ambigram designs—lettering that reads as one name or word in one orientation and as another (or the same) when rotated, typically 180°. You enter two names or one name and get design concepts or instructions to use for tattoos, couple names, or gifts.' },

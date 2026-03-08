@@ -10,6 +10,7 @@ import { SpaceRemoverTool } from '@/components/tools/SpaceRemoverTool';
 import { SpaceRemoverWriteUp } from '@/components/tools/SpaceRemoverWriteUp';
 import { buildToolMeta } from '@/lib/seo-meta';
 import { siteUrl } from '@/lib/schema/site';
+import { cleanUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
 import { spaceRemoverFaqs } from '@/lib/tools/spaceRemoverFaqs';
@@ -36,7 +37,7 @@ export default async function SpaceRemoverPage() {
 
   const title = tool.title;
   const description = tool.shortDescription;
-  const url = `${siteUrl}/${toolSlug}/`;
+  const url = cleanUrl(toolSlug);
 
   return (
     <>

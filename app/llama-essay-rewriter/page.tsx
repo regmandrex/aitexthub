@@ -9,6 +9,7 @@ import { ToolPageShell } from '@/components/tool/ToolPageShell';
 import { ChatGPTEssayRewriterTool } from '@/components/tools/ChatGPTEssayRewriterTool';
 import { buildToolMeta } from '@/lib/seo-meta';
 import { siteUrl } from '@/lib/schema/site';
+import { cleanUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
 
@@ -148,7 +149,7 @@ export default async function LlamaEssayRewriterPage() {
   if (!toolData) return notFound();
   const title = toolData.title;
   const description = toolData.shortDescription;
-  const url = `${siteUrl}/${toolSlug}/`;
+  const url = cleanUrl(toolSlug);
   const webAppSchema = { '@context': 'https://schema.org', '@type': 'WebApplication', name: title, applicationCategory: 'UtilitiesApplication', operatingSystem: 'Web', description: description, url };
   const pageFaqs: FaqItem[] = [
     { category: 'General', question: 'What is the LLaMA (Meta AI) Essay Rewriter?', answer: 'The LLaMA (Meta AI) Essay Rewriter is a free online tool that rewrites LLaMA (Meta AI)-generated essays to improve quality, structure, and academic tone. It helps you strengthen arguments, improve flow, and align content with the expectations of teachers and institutions while keeping your ideas and voice at the center. The tool works at the essay level: it considers overall structure, paragraph flow, and tone. It runs in your browser; your text is not sent to our servers or stored.' },

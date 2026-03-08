@@ -9,6 +9,7 @@ import { ToolPageShell } from '@/components/tool/ToolPageShell';
 import { RemoveLineBreaksTool } from '@/components/tools/RemoveLineBreaksTool';
 import { buildToolMeta } from '@/lib/seo-meta';
 import { siteUrl } from '@/lib/schema/site';
+import { cleanUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
 
@@ -124,7 +125,7 @@ export default async function RemoveLineBreaksPage() {
   const title = toolData.title;
   const description = toolData.shortDescription;
 
-  const url = `${siteUrl}/${toolSlug}/`;
+  const url = cleanUrl(toolSlug);
 
   const pageFaqs: FaqItem[] = [
     { category: 'General', question: 'What does the remove line breaks tool do?', answer: 'The remove line breaks tool strips or replaces line breaks (newlines) in your text so you get one continuous line or a single merged paragraph. You can replace line breaks with a space to keep words separated or remove them entirely. It is useful for text copied from PDFs, emails, spreadsheets, or AI output.' },

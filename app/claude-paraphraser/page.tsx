@@ -9,6 +9,7 @@ import { ToolPageShell } from '@/components/tool/ToolPageShell';
 import { ChatGPTParaphraserTool } from '@/components/tools/ChatGPTParaphraserTool';
 import { buildToolMeta } from '@/lib/seo-meta';
 import { siteUrl } from '@/lib/schema/site';
+import { cleanUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
 
@@ -145,7 +146,7 @@ export default async function ClaudeParaphraserPage() {
   if (!toolData) return notFound();
   const title = toolData.title;
   const description = toolData.shortDescription;
-  const url = `${siteUrl}/${toolSlug}/`;
+  const url = cleanUrl(toolSlug);
   const webAppSchema = { '@context': 'https://schema.org', '@type': 'WebApplication', name: title, applicationCategory: 'UtilitiesApplication', operatingSystem: 'Web', description: description, url };
   const pageFaqs: FaqItem[] = [
     { category: 'General', question: 'What is the Claude Paraphraser?', answer: 'The Claude Paraphraser is a free online tool that rephrases Claude-generated text while preserving meaning. It helps you get alternative wording, avoid repetition, and adjust tone—useful for essays, articles, emails, and any content you want to polish without losing the original message. This free paraphraser runs in your browser and does not send your text to our servers, so you can rephrase AI content privately.' },

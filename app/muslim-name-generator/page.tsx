@@ -10,6 +10,7 @@ import { ToolPageShell } from '@/components/tool/ToolPageShell';
 import { MuslimNameGeneratorTool } from '@/components/tools/MuslimNameGeneratorTool';
 import { buildToolMeta } from '@/lib/seo-meta';
 import { siteUrl } from '@/lib/schema/site';
+import { cleanUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
 
@@ -142,7 +143,7 @@ export default async function MuslimNameGeneratorPage() {
 
   const title = toolData.title;
   const description = toolData.shortDescription;
-  const url = `${siteUrl}/${toolSlug}/`;
+  const url = cleanUrl(toolSlug);
 
   const pageFaqs: FaqItem[] = [
     { category: 'General', question: 'What is a Muslim name generator?', answer: 'A Muslim name generator is an online tool that creates Islamic and Arabic-style names for characters, babies, creative writing, or research. You can choose male, female, or both genders and often get optional meanings (e.g., "praiseworthy," "noble") next to each name. Writers use a Muslim name generator for fiction set in Muslim-majority regions or in fantasy worlds inspired by Islamic culture. Parents sometimes use an Islamic name generator or Muslim baby name generator for inspiration before consulting religious or family sources. Game designers and roleplayers use it to name NPCs and characters. The tool runs in your browser with no sign-up required. This Muslim name generator is for creative and general use—verify meanings and appropriateness with reliable sources when it matters.' },

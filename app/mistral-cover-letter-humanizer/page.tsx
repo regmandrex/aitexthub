@@ -9,6 +9,7 @@ import { ToolPageShell } from '@/components/tool/ToolPageShell';
 import { ChatGPTCoverLetterHumanizerTool } from '@/components/tools/ChatGPTCoverLetterHumanizerTool';
 import { buildToolMeta } from '@/lib/seo-meta';
 import { siteUrl } from '@/lib/schema/site';
+import { cleanUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
 
@@ -141,7 +142,7 @@ export default async function MistralCoverLetterHumanizerPage() {
   if (!toolData) return notFound();
   const title = toolData.title;
   const description = toolData.shortDescription;
-  const url = `${siteUrl}/${toolSlug}/`;
+  const url = cleanUrl(toolSlug);
   const webAppSchema = { '@context': 'https://schema.org', '@type': 'WebApplication', name: title, applicationCategory: 'UtilitiesApplication', operatingSystem: 'Web', description: description, url };
   const pageFaqs: FaqItem[] = [
     { category: 'General', question: 'What is the Mistral Cover Letter Humanizer?', answer: 'The Mistral Cover Letter Humanizer is a free online tool that humanizes Mistral-generated cover letters so they sound more authentic and personal. Cover letters need to reflect your voice and fit the role; this humanizer helps you polish AI-drafted letters so they feel genuine and compelling to hiring managers. It runs in your browser and does not send your text to our servers.' },

@@ -9,6 +9,7 @@ import { ToolPageShell } from '@/components/tool/ToolPageShell';
 import { ChatGPTSentenceRewriterTool } from '@/components/tools/ChatGPTSentenceRewriterTool';
 import { buildToolMeta } from '@/lib/seo-meta';
 import { siteUrl } from '@/lib/schema/site';
+import { cleanUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
 
@@ -145,7 +146,7 @@ export default async function AISentenceRewriterPage() {
   if (!toolData) return notFound();
   const title = toolData.title;
   const description = toolData.shortDescription;
-  const url = `${siteUrl}/${toolSlug}/`;
+  const url = cleanUrl(toolSlug);
   const webAppSchema = { '@context': 'https://schema.org', '@type': 'WebApplication', name: title, applicationCategory: 'UtilitiesApplication', operatingSystem: 'Web', description: description, url };
   const pageFaqs: FaqItem[] = [
     { category: 'General', question: 'What is the AI Sentence Rewriter?', answer: 'The AI Sentence Rewriter is a free online tool that rewrites sentences from AI output to improve clarity, flow, and style. It helps you fix awkward phrasing, vary sentence length, and strengthen structure—one sentence at a time—so your writing reads more naturally and professionally. Whether you are polishing an essay, article, or report, this sentence rewriter helps you refine AI-generated text without losing meaning. The tool runs in your browser; your text is not sent to our servers or stored.' },

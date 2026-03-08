@@ -244,7 +244,7 @@ export default async function MistralWatermarkCleanerPage() {
       <JsonLd
         data={webPageSchema({
           name: toolTitle,
-          url: `${siteUrl}/mistral-watermark-cleaner/`,
+          url: cleanUrl('mistral-watermark-cleaner'),
           description: toolDescription,
         })}
       />

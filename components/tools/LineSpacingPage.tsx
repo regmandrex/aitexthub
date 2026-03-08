@@ -7,7 +7,7 @@ import type { FaqItem } from '../faqData';
 import { LineSpacingTool } from './LineSpacingTool';
 import { JsonLd } from '../JsonLd';
 import { webPageSchema } from '../../lib/schema/webpage';
-import { siteUrl } from '../../lib/schema/site';
+import { cleanUrl } from '@/lib/seo/url';
 import { RelatedTools } from '../tool/RelatedTools';
 import AdSenseSlot from '../ads/AdSenseSlot';
 import BelowToolAd from '../ads/BelowToolAd';
@@ -32,7 +32,7 @@ function RailAd({ side }: { side: 'left' | 'right' }) {
 }
 
 export default function LineSpacingPage({ modelName, modelSlug, faqItems, content }: Props) {
-  const url = `${siteUrl}/${modelSlug}-line-spacing/`;
+  const url = cleanUrl(`${modelSlug}-line-spacing`);
   const title = `${modelName} Line Spacing`;
   const subtitle = 'Adjust line spacing in text for better readability and formatting.';
   const description = `Adjust line spacing in ${modelName} text to single, 1.5, double, or custom spacing for better readability and formatting.`;

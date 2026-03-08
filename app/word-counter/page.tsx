@@ -9,6 +9,7 @@ import { ToolPageShell } from '@/components/tool/ToolPageShell';
 import { WordCounterTool } from '@/components/tools/WordCounterTool';
 import { buildToolMeta } from '@/lib/seo-meta';
 import { siteUrl } from '@/lib/schema/site';
+import { cleanUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
 export const revalidate = 86400;
@@ -245,7 +246,7 @@ export default async function WordCounterPage() {
     { category: 'Limits', question: 'Is there a character or word limit?', answer: 'Very long texts may take longer to process in the browser. For typical documents, essays, and articles, there is no practical limit. If you hit performance issues, try splitting the text.' },
   ];
 
-  const url = `${siteUrl}/${toolSlug}/`;
+  const url = cleanUrl(toolSlug);
 
   return (
     <>

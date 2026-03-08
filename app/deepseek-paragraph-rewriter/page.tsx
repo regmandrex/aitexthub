@@ -9,6 +9,7 @@ import { ToolPageShell } from '@/components/tool/ToolPageShell';
 import { ChatGPTParagraphRewriterTool } from '@/components/tools/ChatGPTParagraphRewriterTool';
 import { buildToolMeta } from '@/lib/seo-meta';
 import { siteUrl } from '@/lib/schema/site';
+import { cleanUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
 
@@ -147,7 +148,7 @@ export default async function DeepSeekParagraphRewriterPage() {
   if (!toolData) return notFound();
   const title = toolData.title;
   const description = toolData.shortDescription;
-  const url = `${siteUrl}/${toolSlug}/`;
+  const url = cleanUrl(toolSlug);
   const webAppSchema = { '@context': 'https://schema.org', '@type': 'WebApplication', name: title, applicationCategory: 'UtilitiesApplication', operatingSystem: 'Web', description: description, url };
   const pageFaqs: FaqItem[] = [
     { category: 'General', question: 'What is the DeepSeek Paragraph Rewriter?', answer: 'The DeepSeek Paragraph Rewriter is a free online tool that rewrites full paragraphs from DeepSeek output to improve flow, coherence, and readability. It helps you strengthen topic sentences, improve transitions, and create better structure so each paragraph supports your argument or narrative clearly. The tool analyzes each paragraph as a unit and suggests rewrites that improve internal logic and clarity. It runs in your browser; your content is not sent to our servers or stored.' },

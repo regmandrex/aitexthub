@@ -9,6 +9,7 @@ import { ToolPageShell } from '@/components/tool/ToolPageShell';
 import { ChatGPTEmailHumanizerTool } from '@/components/tools/ChatGPTEmailHumanizerTool';
 import { buildToolMeta } from '@/lib/seo-meta';
 import { siteUrl } from '@/lib/schema/site';
+import { cleanUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
 
@@ -141,7 +142,7 @@ export default async function AIEmailHumanizerPage() {
   if (!toolData) return notFound();
   const title = toolData.title;
   const description = toolData.shortDescription;
-  const url = `${siteUrl}/${toolSlug}/`;
+  const url = cleanUrl(toolSlug);
   const webAppSchema = { '@context': 'https://schema.org', '@type': 'WebApplication', name: title, applicationCategory: 'UtilitiesApplication', operatingSystem: 'Web', description: description, url };
   const pageFaqs: FaqItem[] = [
     { category: 'General', question: 'What is the AI Email Humanizer?', answer: 'The AI Email Humanizer is a free online tool that humanizes AI-generated emails so they sound more natural and personal. AI-generated emails often sound robotic or generic; this humanizer helps you polish drafts so they feel authentic and engaging. It runs in your browser and does not send your text to our servers, so you can humanize email content privately.' },
