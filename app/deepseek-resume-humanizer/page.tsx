@@ -8,8 +8,7 @@ import { RelatedTools } from '@/components/tool/RelatedTools';
 import { ToolPageShell } from '@/components/tool/ToolPageShell';
 import { ChatGPTResumeHumanizerTool } from '@/components/tools/ChatGPTResumeHumanizerTool';
 import { buildToolMeta } from '@/lib/seo-meta';
-import { siteUrl } from '@/lib/schema/site';
-import { cleanUrl } from '@/lib/seo/url';
+import { siteUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
 
@@ -148,7 +147,7 @@ export default async function DeepSeekResumeHumanizerPage() {
   if (!toolData) return notFound();
   const title = toolData.title;
   const description = toolData.shortDescription;
-  const url = cleanUrl(toolSlug);
+  const url = `${siteUrl}/${toolSlug}`;
   const webAppSchema = { '@context': 'https://schema.org', '@type': 'WebApplication', name: title, applicationCategory: 'UtilitiesApplication', operatingSystem: 'Web', description: description, url };
   const pageFaqs: FaqItem[] = [
     { category: 'General', question: 'What is the DeepSeek Resume Humanizer?', answer: 'The DeepSeek Resume Humanizer is a free online tool that humanizes DeepSeek-generated resume content so it sounds more natural and performs better with recruiters and ATS. It helps you refine bullet points, summaries, and descriptions so your resume reads authentically and highlights your real experience. The tool rephrases content to add natural variation, strong action verbs, and clear outcomes. It runs in your browser; your text is not sent to our servers or stored.' },

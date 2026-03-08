@@ -13,7 +13,7 @@ function escapeXml(text: string): string {
 }
 
 function toolUrl(slug: string): string {
-  if (!slug) return `${SITE_URL}/`;
+  if (!slug) return SITE_URL;
   return `${SITE_URL}/${slug}`;
 }
 

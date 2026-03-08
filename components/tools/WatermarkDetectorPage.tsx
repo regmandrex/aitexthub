@@ -7,7 +7,7 @@ import type { FaqItem } from '../faqData';
 import { WatermarkDetectorTool } from '@/components/tools/WatermarkDetectorTool';
 import { JsonLd } from '../JsonLd';
 import { webPageSchema } from '../../lib/schema/webpage';
-import { cleanUrl } from '@/lib/seo/url';
+import { siteUrl } from '@/lib/seo/url';
 import { RelatedTools } from '../tool/RelatedTools';
 import AdSenseSlot from '../ads/AdSenseSlot';
 import BelowToolAd from '../ads/BelowToolAd';
@@ -33,7 +33,7 @@ function RailAd({ side }: { side: 'left' | 'right' }) {
 }
 
 export default function WatermarkDetectorPage({ modelName, modelSlug, faqItems, content, faqIntro }: Props) {
-  const url = cleanUrl(`${modelSlug}-watermark-detector`);
+  const url = `${siteUrl}/${modelSlug}-watermark-detector`;
   const title = `${modelName} Watermark Detector`;
   const subtitle = 'Scan text for formatting artifacts like hidden Unicode characters, whitespace patterns, and repeated punctuation marks.';
   const description = `Inspect ${modelName} text for possible formatting artifacts, hidden Unicode, and whitespace patterns.`;

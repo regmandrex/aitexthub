@@ -8,8 +8,7 @@ import { RelatedTools } from '@/components/tool/RelatedTools';
 import { ToolPageShell } from '@/components/tool/ToolPageShell';
 import { MiddleEnglishTranslatorTool } from '@/components/tools/MiddleEnglishTranslatorTool';
 import { buildToolMeta } from '@/lib/seo-meta';
-import { siteUrl } from '@/lib/schema/site';
-import { cleanUrl } from '@/lib/seo/url';
+import { siteUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
 
@@ -182,7 +181,7 @@ export default async function MiddleEnglishTranslatorPage() {
 
   const title = toolData.title;
   const description = toolData.shortDescription;
-  const url = cleanUrl(toolSlug);
+  const url = `${siteUrl}/${toolSlug}`;
 
   const pageFaqs: FaqItem[] = [
     { category: 'General', question: 'What is a Middle English translator?', answer: 'A Middle English translator is an online tool that converts modern English into Middle English—the language of Geoffrey Chaucer, medieval manuscripts, and the period from roughly the eleventh to the fifteenth century. It works as a Middle English converter for literature courses, historical fiction, role-play, and education. The result is stylistic and approximate rather than word-for-word Chaucer.' },

@@ -48,6 +48,6 @@ export function buildArticleMeta({ title, description, urlPath }: MetaInput): Me
 }
 
 export * from '../schema/webpage';
-export * from '../schema/site';
+export { webSiteSchema, siteNavigationSchema } from '../schema/site';
 export * from '../seo/url';
 export * from '../seo/registry';

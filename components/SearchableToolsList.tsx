@@ -8,6 +8,7 @@ const CATEGORY_ORDER: Array<string> = [
   'ai-cleanup',
   'text',
   'encoding',
+  'translator',
   'data-format',
   'number-systems',
   'color-css',
@@ -30,6 +31,10 @@ const CATEGORY_LABELS: Record<string, { title: string; description: string }> = 
   encoding: {
     title: 'Encoding & Decoding',
     description: 'Encode, decode, or translate text for safe transport and display.',
+  },
+  translator: {
+    title: 'Translators',
+    description: 'Style and language translators: Simlish, Shakespearean, gibberish, fancy English, and more.',
   },
   'data-format': {
     title: 'Data Format Converters',

@@ -8,8 +8,7 @@ import { RelatedTools } from '@/components/tool/RelatedTools';
 import { ToolPageShell } from '@/components/tool/ToolPageShell';
 import { ChatGPTAcademicHumanizerTool } from '@/components/tools/ChatGPTAcademicHumanizerTool';
 import { buildToolMeta } from '@/lib/seo-meta';
-import { siteUrl } from '@/lib/schema/site';
-import { cleanUrl } from '@/lib/seo/url';
+import { siteUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
 
@@ -142,7 +141,7 @@ export default async function PerplexityAcademicHumanizerPage() {
   if (!toolData) return notFound();
   const title = toolData.title;
   const description = toolData.shortDescription;
-  const url = cleanUrl(toolSlug);
+  const url = `${siteUrl}/${toolSlug}`;
   const webAppSchema = { '@context': 'https://schema.org', '@type': 'WebApplication', name: title, applicationCategory: 'UtilitiesApplication', operatingSystem: 'Web', description: description, url };
   const pageFaqs: FaqItem[] = [
     { category: 'General', question: 'What is the Perplexity Academic Humanizer?', answer: 'The Perplexity Academic Humanizer is a free online tool that rewrites Perplexity-generated academic text so it reads more naturally and aligns with the expectations of educators and institutions. It adjusts vocabulary, sentence structure, and flow to reduce robotic patterns while keeping your arguments, evidence, and academic tone intact. Students and writers use it to polish AI-assisted drafts—essays, papers, and assignments—so the writing sounds more authentic. The tool runs in your browser; your text is not sent to our servers or stored.' },

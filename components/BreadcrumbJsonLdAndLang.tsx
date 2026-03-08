@@ -9,7 +9,8 @@ import { getToolBySlug } from '@/lib/tools/registry';
 const SITE = 'https://gptcleanuptools.com';
 
 function abs(p: string) {
-  const path = p === '/' ? '/' : p.startsWith('/') ? p : `/${p}`;
+  if (p === '/' || p === '') return SITE;
+  const path = p.startsWith('/') ? p : `/${p}`;
   return `${SITE}${path.replace(/\/{2,}/g, '/')}`;
 }
 

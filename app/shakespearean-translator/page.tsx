@@ -8,8 +8,7 @@ import { RelatedTools } from '@/components/tool/RelatedTools';
 import { ToolPageShell } from '@/components/tool/ToolPageShell';
 import { ShakespeareanTranslatorTool } from '@/components/tools/ShakespeareanTranslatorTool';
 import { buildToolMeta } from '@/lib/seo-meta';
-import { siteUrl } from '@/lib/schema/site';
-import { cleanUrl } from '@/lib/seo/url';
+import { siteUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
 
@@ -225,7 +224,7 @@ export default async function ShakespeareanTranslatorPage() {
 
   const title = toolData.title;
   const description = toolData.shortDescription;
-  const url = cleanUrl(toolSlug);
+  const url = `${siteUrl}/${toolSlug}`;
 
   const pageFaqs: FaqItem[] = [
     { category: 'General', question: 'What is a Shakespearean translator?', answer: 'A Shakespearean translator is an online tool that converts modern English into Shakespearean-style English—the language of William Shakespeare and Early Modern English. It applies period-appropriate forms such as thee, thou, thy, hath, dost, and art so you can translate into Shakespearean for scripts, education, themed content, or social posts. The result is stylistic and approximate rather than word-for-word Shakespeare.' },

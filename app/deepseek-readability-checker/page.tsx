@@ -8,8 +8,7 @@ import { RelatedTools } from '@/components/tool/RelatedTools';
 import { ToolPageShell } from '@/components/tool/ToolPageShell';
 import { ChatGPTReadabilityCheckerTool } from '@/components/tools/ChatGPTReadabilityCheckerTool';
 import { buildToolMeta } from '@/lib/seo-meta';
-import { siteUrl } from '@/lib/schema/site';
-import { cleanUrl } from '@/lib/seo/url';
+import { siteUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
 
@@ -148,7 +147,7 @@ export default async function DeepSeekReadabilityCheckerPage() {
   if (!toolData) return notFound();
   const title = toolData.title;
   const description = toolData.shortDescription;
-  const url = cleanUrl(toolSlug);
+  const url = `${siteUrl}/${toolSlug}`;
   const webAppSchema = { '@context': 'https://schema.org', '@type': 'WebApplication', name: title, applicationCategory: 'UtilitiesApplication', operatingSystem: 'Web', description: description, url };
   const pageFaqs: FaqItem[] = [
     { category: 'General', question: 'What is the DeepSeek Readability Checker?', answer: 'The DeepSeek Readability Checker is a free online tool that analyzes readability scores and helps you improve text clarity from DeepSeek output. It shows how easy your content is to read—by grade level, sentence length, and word complexity—so you can adjust for your audience. The tool uses standard readability metrics such as Flesch-Kincaid grade level or Flesch Reading Ease. It runs in your browser; your text is not sent to our servers or stored.' },

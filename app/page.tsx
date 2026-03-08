@@ -6,7 +6,7 @@ import ToolWorkbench from '../components/ToolWorkbench';
 import { buildMeta } from '@/lib/seo-meta';
 import { JsonLd } from '../components/JsonLd';
 import { webPageSchema } from '../lib/schema/webpage';
-import { siteUrl } from '../lib/schema/site';
+import { siteUrl } from '@/lib/seo/url';
 import { RelatedTools } from '../components/tool/RelatedTools';
 import AdSenseSlot from '../components/ads/AdSenseSlot';
 import BelowToolAd from '../components/ads/BelowToolAd';
@@ -30,7 +30,7 @@ export default async function HomePage() {
       <JsonLd
         data={webPageSchema({
           name: 'ChatGPT Text Cleaner',
-          url: `${siteUrl}/`,
+          url: siteUrl,
           description: 'Clean and normalize AI output: remove hidden Unicode (ZWSP, NBSP, BOM), fix spacing, and keep paragraphs intact for Word, Docs, and SEO-friendly publishing.',
         })}
       />

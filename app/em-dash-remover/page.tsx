@@ -8,8 +8,7 @@ import { RelatedTools } from '@/components/tool/RelatedTools';
 import { ToolPageShell } from '@/components/tool/ToolPageShell';
 import { EmDashRemoverTool } from '@/components/tools/EmDashRemoverTool';
 import { buildToolMeta } from '@/lib/seo-meta';
-import { siteUrl } from '@/lib/schema/site';
-import { cleanUrl } from '@/lib/seo/url';
+import { siteUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
 
@@ -115,7 +114,7 @@ export default async function EmDashRemoverPage() {
   const title = toolData.title;
   const description = toolData.shortDescription;
 
-  const url = cleanUrl(toolSlug);
+  const url = `${siteUrl}/${toolSlug}`;
 
   const pageFaqs: FaqItem[] = [
     { category: 'General', question: 'What does the em dash remover do?', answer: 'The em dash remover finds every em dash (—) and en dash (–) in your text and replaces them with a character you choose—such as a hyphen, comma, or space—or removes them entirely. It helps normalize text copied from Word, PDFs, or the web so it works in plain text, URLs, code, and content management systems without encoding or display issues.' },

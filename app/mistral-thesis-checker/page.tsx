@@ -8,8 +8,7 @@ import { RelatedTools } from '@/components/tool/RelatedTools';
 import { ToolPageShell } from '@/components/tool/ToolPageShell';
 import { ChatGPTThesisCheckerTool } from '@/components/tools/ChatGPTThesisCheckerTool';
 import { buildToolMeta } from '@/lib/seo-meta';
-import { siteUrl } from '@/lib/schema/site';
-import { cleanUrl } from '@/lib/seo/url';
+import { siteUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
 
@@ -148,7 +147,7 @@ export default async function MistralThesisCheckerPage() {
   if (!toolData) return notFound();
   const title = toolData.title;
   const description = toolData.shortDescription;
-  const url = cleanUrl(toolSlug);
+  const url = `${siteUrl}/${toolSlug}`;
   const webAppSchema = { '@context': 'https://schema.org', '@type': 'WebApplication', name: title, applicationCategory: 'UtilitiesApplication', operatingSystem: 'Web', description: description, url };
   const pageFaqs: FaqItem[] = [
     { category: 'General', question: 'What is the Mistral Thesis Checker?', answer: 'The Mistral Thesis Checker is a free online tool that checks thesis statements and arguments in Mistral-generated academic content. It helps you verify that your central claim is clear, arguable, and well-supported so your essay or paper has a strong foundation. The tool looks for a clear main claim, specificity, and arguability, and may flag vague or overly broad thesis statements. It runs in your browser; your text is not sent to our servers or stored.' },

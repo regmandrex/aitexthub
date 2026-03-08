@@ -8,8 +8,7 @@ import { RelatedTools } from '@/components/tool/RelatedTools';
 import { ToolPageShell } from '@/components/tool/ToolPageShell';
 import { SimlishTranslatorTool } from '@/components/tools/SimlishTranslatorTool';
 import { buildToolMeta } from '@/lib/seo-meta';
-import { siteUrl } from '@/lib/schema/site';
-import { cleanUrl } from '@/lib/seo/url';
+import { siteUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
 
@@ -140,7 +139,7 @@ export default async function SimlishTranslatorPage() {
 
   const title = toolData.title;
   const description = toolData.shortDescription;
-  const url = cleanUrl(toolSlug);
+  const url = `${siteUrl}/${toolSlug}`;
 
   const pageFaqs: FaqItem[] = [
     { category: 'General', question: 'What is a Simlish translator?', answer: 'A Simlish translator is a tool that converts English or other text into Simlish—the fictional language from The Sims games. It produces Simlish-style phrases or text for fun and fan content. Simlish has no official written standard, so output is interpretive.' },

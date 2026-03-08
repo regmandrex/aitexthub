@@ -59,7 +59,7 @@ import { ChatGPTResumeHumanizerTool } from '@/components/tools/ChatGPTResumeHuma
 import { ChatGPTLinkedInRewriterTool } from '@/components/tools/ChatGPTLinkedInRewriterTool';
 import { ChatGPTPressReleasePolisherTool } from '@/components/tools/ChatGPTPressReleasePolisherTool';
 import { getToolBySlug } from '@/lib/tools/registry';
-import { cleanUrl } from '@/lib/seo/url';
+import { siteUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 
 type ToolPageRendererProps = {
@@ -157,7 +157,7 @@ export async function ToolPageRenderer({ slug }: ToolPageRendererProps) {
       'This tool is for general use. Verify results match your specific requirements.',
     ];
 
-  const url = cleanUrl(tool.slug);
+  const url = `${siteUrl}/${tool.slug}`;
   const softwareJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'SoftwareApplication',

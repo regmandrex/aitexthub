@@ -8,8 +8,7 @@ import { RelatedTools } from '@/components/tool/RelatedTools';
 import { ToolPageShell } from '@/components/tool/ToolPageShell';
 import { FancyEnglishTranslatorTool } from '@/components/tools/FancyEnglishTranslatorTool';
 import { buildToolMeta } from '@/lib/seo-meta';
-import { siteUrl } from '@/lib/schema/site';
-import { cleanUrl } from '@/lib/seo/url';
+import { siteUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
 
@@ -154,7 +153,7 @@ export default async function FancyEnglishTranslatorPage() {
 
   const title = toolData.title;
   const description = toolData.shortDescription;
-  const url = cleanUrl(toolSlug);
+  const url = `${siteUrl}/${toolSlug}`;
 
   const pageFaqs: FaqItem[] = [
     { category: 'General', question: 'What is a fancy English translator?', answer: 'A fancy English translator is a tool that converts normal text into stylized or ornate English. It can mean fancy Unicode fonts (script, bold, decorative characters) or fancy wording (formal, elegant phrasing). You enter text and get a fancy version to use in bios, captions, or invitations.' },

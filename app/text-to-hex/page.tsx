@@ -9,8 +9,7 @@ import { ToolPageShell } from '@/components/tool/ToolPageShell';
 import { TextToHexTool } from '@/components/tools/TextToHexTool';
 import { buildToolMeta } from '@/lib/seo-meta';
 import { getToolBySlug } from '@/lib/tools/registry';
-import { siteUrl } from '@/lib/schema/site';
-import { cleanUrl } from '@/lib/seo/url';
+import { siteUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 
 export const revalidate = 86400;
@@ -416,7 +415,7 @@ export default async function TextToHexPage() {
   const title = toolData.title;
   const description = toolData.shortDescription;
 
-  const url = cleanUrl(toolSlug);
+  const url = `${siteUrl}/${toolSlug}`;
   const schemaData = {
     '@context': 'https://schema.org',
     '@type': 'WebApplication',

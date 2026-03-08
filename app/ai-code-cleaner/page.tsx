@@ -8,8 +8,7 @@ import { RelatedTools } from '@/components/tool/RelatedTools';
 import { ToolPageShell } from '@/components/tool/ToolPageShell';
 import { AICodeCleanerTool } from '@/components/tools/AICodeCleanerTool';
 import { buildToolMeta } from '@/lib/seo-meta';
-import { siteUrl } from '@/lib/schema/site';
-import { cleanUrl } from '@/lib/seo/url';
+import { siteUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
 
@@ -197,7 +196,7 @@ export default async function AICodeCleanerPage() {
   const title = toolData.title;
   const description = toolData.shortDescription;
 
-  const url = cleanUrl(toolSlug);
+  const url = `${siteUrl}/${toolSlug}`;
 
   const pageFaqs: FaqItem[] = [
     { category: 'General', question: 'What is the AI Code Cleaner?', answer: 'The AI Code Cleaner is a free online tool that helps clean and format code. It can remove unnecessary whitespace, normalize indentation, and improve readability. It runs in your browser and does not send your code to our servers.' },

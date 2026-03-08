@@ -12,12 +12,7 @@ export function webSiteSchema() {
 }
 
 export function siteNavigationSchema() {
-  const navUrls = navLinks.map((link) => {
-    if (link.href.includes('#')) {
-      return `${siteUrl}${link.href}`;
-    }
-    return `${siteUrl}${link.href.endsWith('/') ? link.href : `${link.href}/`}`;
-  });
+  const navUrls = navLinks.map((link) => (link.href === '/' ? siteUrl : `${siteUrl}${link.href}`));
 
   return {
     '@context': 'https://schema.org',

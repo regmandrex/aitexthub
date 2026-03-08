@@ -8,8 +8,7 @@ import { RelatedTools } from '@/components/tool/RelatedTools';
 import { ToolPageShell } from '@/components/tool/ToolPageShell';
 import { ChatGPTMetaDescriptionGeneratorTool } from '@/components/tools/ChatGPTMetaDescriptionGeneratorTool';
 import { buildToolMeta } from '@/lib/seo-meta';
-import { siteUrl } from '@/lib/schema/site';
-import { cleanUrl } from '@/lib/seo/url';
+import { siteUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
 
@@ -148,7 +147,7 @@ export default async function MistralMetaDescriptionGeneratorPage() {
   if (!toolData) return notFound();
   const title = toolData.title;
   const description = toolData.shortDescription;
-  const url = cleanUrl(toolSlug);
+  const url = `${siteUrl}/${toolSlug}`;
   const webAppSchema = { '@context': 'https://schema.org', '@type': 'WebApplication', name: title, applicationCategory: 'UtilitiesApplication', operatingSystem: 'Web', description: description, url };
   const pageFaqs: FaqItem[] = [
     { category: 'General', question: 'What is the Mistral Meta Description Generator?', answer: 'The Mistral Meta Description Generator is a free online tool that generates SEO-optimized meta descriptions from Mistral content. Meta descriptions appear in search results and influence click-through rates; a good one is concise, relevant, and includes key terms. The tool helps you draft descriptions that fit length limits (around 155–160 characters) and support your SEO goals. It runs in your browser; your text is not sent to our servers or stored.' },

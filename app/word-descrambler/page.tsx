@@ -9,8 +9,7 @@ import { RelatedTools } from '@/components/tool/RelatedTools';
 import { ToolPageShell } from '@/components/tool/ToolPageShell';
 import { WordDescramblerTool } from '@/components/tools/WordDescramblerTool';
 import { buildToolMeta } from '@/lib/seo-meta';
-import { siteUrl } from '@/lib/schema/site';
-import { cleanUrl } from '@/lib/seo/url';
+import { siteUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
 
@@ -138,7 +137,7 @@ export default async function WordDescramblerPage() {
 
   const title = toolData.title;
   const description = toolData.shortDescription;
-  const url = cleanUrl(toolSlug);
+  const url = `${siteUrl}/${toolSlug}`;
 
   const pageFaqs: FaqItem[] = [
     { category: 'General', question: 'What does a word descrambler do?', answer: 'A word descrambler takes the letters you enter and finds every valid word that can be formed from those letters. You get a list of real dictionary words (and often game-valid words for Scrabble or Words with Friends) so you can unscramble jumbled letters quickly. It is also called an unscramble letters tool or anagram solver. Most word descramblers run in your browser and support options like word length and game-specific dictionaries.' },

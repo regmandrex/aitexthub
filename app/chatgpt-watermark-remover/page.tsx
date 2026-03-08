@@ -5,8 +5,7 @@ import ToolWorkbench from "../../components/ToolWorkbench";
 import { buildMeta } from '@/lib/seo-meta';
 import { JsonLd } from "../../components/JsonLd";
 import { webPageSchema } from "../../lib/schema/webpage";
-import { cleanUrl } from '@/lib/seo/url';
-import { siteUrl } from "../../lib/schema/site";
+import { siteUrl } from '@/lib/seo/url';
 import { RelatedTools } from "../../components/tool/RelatedTools";
 import AdSenseSlot from "../../components/ads/AdSenseSlot";
 import BelowToolAd from "../../components/ads/BelowToolAd";
@@ -172,7 +171,7 @@ export default function ChatGPTWatermarkCleanerPage() {
       <JsonLd
         data={webPageSchema({
           name: 'ChatGPT Watermark Remover',
-          url: cleanUrl('chatgpt-watermark-remover'),
+          url: `${siteUrl}/chatgpt-watermark-remover`,
           description:
             'Remove hidden characters and watermarks from ChatGPT output. Strip zero-width/NBSP Unicode, fix spacing, and prepare clean text for Word, Docs, and CMS.',
         })}
