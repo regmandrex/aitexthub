@@ -12,7 +12,8 @@ import '../styles/globals.css';
 
 const inter = Inter({
   subsets: ['latin'],
-  display: 'swap',
+  display: 'optional',
+  adjustFontFallback: true,
   variable: '--font-inter',
 });
 

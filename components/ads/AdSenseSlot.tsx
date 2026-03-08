@@ -68,14 +68,16 @@ export default function AdSenseSlot({ className, style }: AdSenseSlotProps) {
   const classes = [isReady ? 'adsbygoogle' : null, className].filter(Boolean).join(' ');
 
   return (
-    <ins
-      ref={slotRef}
-      className={classes}
-      style={{ display: 'block', width: '100%', ...style }}
-      data-ad-client={AD_CLIENT}
-      data-ad-slot={AD_SLOT}
-      data-ad-format="auto"
-      data-full-width-responsive="true"
-    />
+    <div className={['min-h-[100px]', className].filter(Boolean).join(' ')} style={style}>
+      <ins
+        ref={slotRef}
+        className={classes}
+        style={{ display: 'block', width: '100%' }}
+        data-ad-client={AD_CLIENT}
+        data-ad-slot={AD_SLOT}
+        data-ad-format="auto"
+        data-full-width-responsive="true"
+      />
+    </div>
   );
 }

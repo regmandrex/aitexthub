@@ -7,6 +7,9 @@ const DESKTOP_SLOT = '9684313551';
 const MOBILE_SLOT = '3230239855';
 const DESKTOP_QUERY = '(min-width: 768px)';
 
+/** Fixed height of the sticky bar so layout is reserved from first paint and CLS is avoided. */
+const BAR_HEIGHT_PX = 90;
+
 export default function StickyFooterAd() {
   const slotRef = useRef<HTMLModElement | null>(null);
   const hasPushedRef = useRef(false);
@@ -71,16 +74,17 @@ export default function StickyFooterAd() {
     return () => observer.disconnect();
   }, [isDesktop]);
 
-  if (isDesktop === null) {
-    return null;
-  }
-
-  const slot = isDesktop
-    ? { width: 728, height: 90, slot: DESKTOP_SLOT }
-    : { width: 320, height: 90, slot: MOBILE_SLOT };
+  // Always render the bar shell so layout is reserved from first paint (avoids CLS).
+  // Use mobile dimensions as default until we know viewport; then show correct slot.
+  const slot = isDesktop === true
+    ? { width: 728, height: BAR_HEIGHT_PX, slot: DESKTOP_SLOT }
+    : { width: 320, height: BAR_HEIGHT_PX, slot: MOBILE_SLOT };
 
   return (
-    <div className="fixed inset-x-0 bottom-0 z-40 border-t border-slate-200 bg-white/95 backdrop-blur">
+    <div
+      className="fixed inset-x-0 bottom-0 z-40 border-t border-slate-200 bg-white/95 backdrop-blur"
+      style={{ minHeight: BAR_HEIGHT_PX }}
+    >
       <div className="mx-auto flex w-full max-w-[1400px] justify-center px-4 py-2">
         <ins
           ref={slotRef}
