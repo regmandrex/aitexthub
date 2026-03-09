@@ -1,14 +1,16 @@
 import type { Metadata } from 'next';
 import { ReactNode } from 'react';
-import Script from 'next/script';
+import dynamic from 'next/dynamic';
 import { Inter } from 'next/font/google';
-import Footer from '../components/Footer';
 import Header from '../components/Header';
 import { JsonLd } from '../components/JsonLd';
 import { BreadcrumbJsonLdAndLang } from '../components/BreadcrumbJsonLdAndLang';
 import StickyFooterAd from '../components/ads/StickyFooterAd';
+import DeferredThirdPartyScripts from '../components/DeferredThirdPartyScripts';
 import { webSiteSchema, siteNavigationSchema } from '../lib/schema/site';
 import '../styles/globals.css';
+
+const Footer = dynamic(() => import('../components/Footer'), { ssr: true });
 
 const inter = Inter({
   subsets: ['latin'],
@@ -88,34 +90,10 @@ export default async function RootLayout({ children }: RootLayoutProps) {
         <link rel="alternate" type="application/rss+xml" title="GPTCLEANUP AI Blog & Tools RSS Feed" href="https://gptcleanuptools.com/rss.xml" />
       </head>
       <body className={`${inter.variable} bg-slate-50 text-slate-900 antialiased pb-[80px] md:pb-[120px] lg:pb-[140px]`}>
-        {/* Google tag (gtag.js) - deferred to prevent blocking LCP */}
-        <Script strategy="lazyOnload" src="https://www.googletagmanager.com/gtag/js?id=G-YZ37PVSNQ2" />
-        <Script id="gtag-init" strategy="lazyOnload">
-          {`
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-YZ37PVSNQ2');
-            `}
-        </Script>
-        <Script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8764610479002120"
-          crossOrigin="anonymous"
-          strategy="lazyOnload"
-        />
+        <DeferredThirdPartyScripts />
         <JsonLd data={webSiteSchema()} />
         <JsonLd data={siteNavigationSchema()} />
         <BreadcrumbJsonLdAndLang />
-        {/* Example AdSense integration (replace ca-pub-XXXX with your publisher id)
-          <Script
-            id="adsense-init"
-            strategy="afterInteractive"
-            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-            data-ad-client="ca-pub-XXXX"
-            async
-          />
-          */}
         <Header />
         <main className="min-h-screen">{children}</main>
         <Footer />

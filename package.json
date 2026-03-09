@@ -2,6 +2,12 @@
   "name": "gptcleanuptools",
   "version": "1.0.0",
   "private": true,
+  "browserslist": [
+    "Chrome >= 111",
+    "Firefox >= 111",
+    "Safari >= 16.4",
+    "Edge >= 111"
+  ],
   "scripts": {
     "dev": "next dev --turbo",
     "build": "next build",
