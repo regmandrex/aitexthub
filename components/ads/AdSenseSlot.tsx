@@ -11,6 +11,15 @@ type AdSenseSlotProps = {
 const AD_CLIENT = 'ca-pub-8764610479002120';
 const AD_SLOT = '3825906278';
 
+/** Defer ad init until after LCP window so main content can win LCP. */
+function afterLCPWindow(cb: () => void) {
+  if (typeof requestIdleCallback !== 'undefined') {
+    requestIdleCallback(cb, { timeout: 1800 });
+  } else {
+    setTimeout(cb, 1500);
+  }
+}
+
 export default function AdSenseSlot({ className, style }: AdSenseSlotProps) {
   const slotRef = useRef<HTMLModElement | null>(null);
   const hasPushedRef = useRef(false);
@@ -57,12 +66,15 @@ export default function AdSenseSlot({ className, style }: AdSenseSlotProps) {
       return;
     }
 
-    try {
-      const win = window as Window & { adsbygoogle?: Array<unknown> };
-      (win.adsbygoogle = win.adsbygoogle || []).push({});
-      hasPushedRef.current = true;
-    } catch {
-    }
+    afterLCPWindow(() => {
+      if (!slotRef.current?.isConnected || hasPushedRef.current) return;
+      try {
+        const win = window as Window & { adsbygoogle?: Array<unknown> };
+        (win.adsbygoogle = win.adsbygoogle || []).push({});
+        hasPushedRef.current = true;
+      } catch {
+      }
+    });
   }, [isReady]);
 
   const classes = [isReady ? 'adsbygoogle' : null, className].filter(Boolean).join(' ');

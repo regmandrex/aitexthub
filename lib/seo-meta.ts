@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 
 const BASE_URL = 'https://gptcleanuptools.com';
-const DEFAULT_OG_IMAGE = `${BASE_URL}/brand/gpt-clean-up-tools.png`;
 
 type MetaInput = {
   title: string;
@@ -29,13 +28,11 @@ export function buildMeta({ title, description, urlPath, canonicalTo }: MetaInpu
       url: currentUrl,
       siteName: 'GPTCLEANUP AI',
       type: 'website',
-      images: [{ url: DEFAULT_OG_IMAGE }],
     },
     twitter: {
-      card: 'summary_large_image',
+      card: 'summary',
       title,
       description,
-      images: [DEFAULT_OG_IMAGE],
     },
   };
 }

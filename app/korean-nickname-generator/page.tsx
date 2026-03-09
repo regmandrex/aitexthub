@@ -42,15 +42,15 @@ export default function NicknamePage() {
       {faqLd && <JsonLd data={faqLd} />}
       <RailAd side="right" />
 
-      <div className="mx-auto w-full max-w-3xl px-4 py-10 min-h-screen">
-        <section className="space-y-3 text-center">
-          <h1 className="text-3xl font-semibold text-slate-900 md:text-4xl">한국어 닉네임 생성기</h1>
-          <p className="text-sm text-slate-700 md:text-base">
+      <div className="mx-auto w-full max-w-3xl px-4 py-5 min-h-screen sm:py-8 md:py-10">
+        <section className="space-y-2 text-center md:space-y-3">
+          <h1 className="text-2xl font-semibold text-slate-900 sm:text-3xl md:text-4xl">한국어 닉네임 생성기</h1>
+          <p className="text-xs text-slate-700 sm:text-sm md:text-base">
             이름과 특징을 입력하면 어울리는 닉네임을 추천해 드려요.
           </p>
         </section>
 
-        <section className="mt-6 rounded-2xl border border-slate-200 bg-white p-5 shadow-sm md:p-6">
+        <section className="mt-4 rounded-xl border border-slate-200 bg-white p-3 shadow-sm md:mt-6 md:rounded-2xl md:p-6">
           <NicknameTool />
         </section>
 

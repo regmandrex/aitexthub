@@ -63,17 +63,11 @@ export async function generateMetadata(): Promise<Metadata> {
       url: 'https://gptcleanuptools.com',
       siteName: 'GPTCLEANUP AI',
       type: 'website',
-      images: [
-        {
-          url: 'https://gptcleanuptools.com/brand/gpt-clean-up-tools.png',
-        },
-      ],
     },
     twitter: {
-      card: 'summary_large_image',
+      card: 'summary',
       title: 'GPT Clean Up Tools - Free AI Text Cleanup Utilities',
       description: 'Free AI text cleanup tools - remove hidden Unicode, fix spacing, clean ChatGPT output, and normalize text for publishing.',
-      images: ['https://gptcleanuptools.com/brand/gpt-clean-up-tools.png'],
     },
   };
 }

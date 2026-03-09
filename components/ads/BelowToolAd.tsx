@@ -19,11 +19,10 @@ export default function BelowToolAd() {
       if (hasPushedRef.current) {
         return;
       }
-
-      if (!element.isConnected || element.offsetWidth === 0) {
+      const el = slotRef.current;
+      if (!el?.isConnected || el.offsetWidth === 0) {
         return;
       }
-
       try {
         const win = window as Window & { adsbygoogle?: Array<unknown> };
         (win.adsbygoogle = win.adsbygoogle || []).push({});
@@ -32,23 +31,43 @@ export default function BelowToolAd() {
       }
     };
 
-    tryInit();
+    let idleId: number | undefined;
+    let timeoutId: ReturnType<typeof setTimeout> | undefined;
+    let observer: ResizeObserver | undefined;
 
-    if (typeof ResizeObserver === 'undefined') {
-      const handleResize = () => tryInit();
-      window.addEventListener('resize', handleResize);
-      return () => window.removeEventListener('resize', handleResize);
+    if (typeof requestIdleCallback !== 'undefined') {
+      idleId = requestIdleCallback(() => {
+        tryInit();
+        if (hasPushedRef.current) return;
+        if (typeof ResizeObserver !== 'undefined' && slotRef.current) {
+          observer = new ResizeObserver(() => {
+            tryInit();
+            if (hasPushedRef.current && observer) observer.disconnect();
+          });
+          observer.observe(slotRef.current);
+        }
+      }, { timeout: 1800 });
+    } else {
+      timeoutId = setTimeout(() => {
+        tryInit();
+        if (hasPushedRef.current) return;
+        if (typeof ResizeObserver !== 'undefined' && slotRef.current) {
+          observer = new ResizeObserver(() => {
+            tryInit();
+            if (hasPushedRef.current && observer) observer.disconnect();
+          });
+          observer.observe(slotRef.current);
+        }
+      }, 1500);
     }
 
-    const observer = new ResizeObserver(() => {
-      tryInit();
-      if (hasPushedRef.current) {
-        observer.disconnect();
+    return () => {
+      if (idleId !== undefined && typeof cancelIdleCallback !== 'undefined') {
+        cancelIdleCallback(idleId);
       }
-    });
-
-    observer.observe(element);
-    return () => observer.disconnect();
+      if (timeoutId !== undefined) clearTimeout(timeoutId);
+      observer?.disconnect();
+    };
   }, []);
 
   return (

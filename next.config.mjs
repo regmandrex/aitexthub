@@ -6,6 +6,10 @@ const nextConfig = {
   experimental: {
     inlineCss: true,
   },
+  images: {
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048],
+    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+  },
   async redirects() {
     return [
       // all-tools -> ai-tools (301 for SEO when URL was renamed)

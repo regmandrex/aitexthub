@@ -243,16 +243,16 @@ export default async function GeminiWatermarkCleanerPage() {
       />
       <RailAd side="right" />
 
-      <div className="mx-auto w-full max-w-4xl px-4 py-10 min-h-screen">
-        <section className="space-y-3 text-center">
-          <h1 className="text-2xl font-semibold text-slate-900 md:text-3xl">{toolTitle}</h1>
-          <p className="max-w-2xl mx-auto text-sm text-slate-700 md:text-[15px]">
+      <div className="mx-auto w-full max-w-4xl px-4 py-5 min-h-screen sm:py-8 md:py-10">
+        <section className="space-y-2 text-center md:space-y-3">
+          <h1 className="text-xl font-semibold text-slate-900 sm:text-2xl md:text-3xl">{toolTitle}</h1>
+          <p className="max-w-2xl mx-auto text-xs text-slate-700 sm:text-sm md:text-[15px]">
             {subtitle}
           </p>
         </section>
 
-        <section className="relative w-full mt-6">
-          <div className="w-full max-w-none rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6">
+        <section className="relative w-full mt-4 md:mt-6">
+          <div className="w-full max-w-none rounded-xl border border-slate-200 bg-white p-3 shadow-sm md:rounded-2xl md:p-6">
             <ToolWorkbench
               processor="chatgptTextCleaner"
               primaryLabel={tOr(t, 'ToolUI.clean', tOr(t, 'HomePage.cleanPrimary', 'Clean'))}

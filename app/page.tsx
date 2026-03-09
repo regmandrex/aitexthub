@@ -8,7 +8,6 @@ import { JsonLd } from '../components/JsonLd';
 import { webPageSchema } from '../lib/schema/webpage';
 import { siteUrl } from '@/lib/seo/url';
 import { RelatedTools } from '../components/tool/RelatedTools';
-import AdSenseSlot from '../components/ads/AdSenseSlot';
 import BelowToolAd from '../components/ads/BelowToolAd';
 import RailAd from '../components/ads/RailAd';
 
@@ -36,16 +35,16 @@ export default async function HomePage() {
       />
       <RailAd side="right" />
 
-      <div className="mx-auto w-full max-w-4xl px-4 py-10 min-h-screen">
-        <section className="space-y-3 text-center">
-          <h1 className="text-2xl font-semibold text-slate-900 md:text-3xl">ChatGPT Text Cleaner</h1>
-          <p className="max-w-2xl mx-auto text-sm text-slate-700 md:text-[15px]">
+      <div className="mx-auto w-full max-w-4xl px-4 py-5 min-h-screen sm:py-8 md:py-10">
+        <section className="space-y-2 text-center md:space-y-3">
+          <h1 className="text-xl font-semibold text-slate-900 sm:text-2xl md:text-3xl">ChatGPT Text Cleaner</h1>
+          <p className="max-w-2xl mx-auto text-xs text-slate-700 sm:text-sm md:text-[15px]">
             Clean and normalize AI output: remove hidden Unicode (ZWSP, NBSP, BOM), fix spacing, and keep paragraphs intact for Word, Docs, and SEO-friendly publishing.
           </p>
         </section>
 
-        <section className="relative w-full mt-6">
-          <div className="w-full max-w-none rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6">
+        <section className="relative w-full mt-4 md:mt-6">
+          <div className="w-full max-w-none rounded-xl border border-slate-200 bg-white p-3 shadow-sm md:rounded-2xl md:p-6">
             <ToolWorkbench
               processor="chatgptTextCleaner"
               primaryLabel="Clean Text"

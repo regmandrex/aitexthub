@@ -18,10 +18,10 @@ export default async function AIToolsPage() {
 
   return (
     <div className="bg-[#f7f9ff] min-h-screen">
-      <div className="mx-auto w-full max-w-4xl px-4 py-10 space-y-10">
-        <section className="space-y-3 text-center">
-          <h1 className="text-2xl font-semibold text-slate-900 md:text-3xl">All Tools</h1>
-          <p className="max-w-2xl mx-auto text-sm text-slate-700 md:text-[15px]">
+      <div className="mx-auto w-full max-w-4xl px-4 py-5 space-y-10 sm:py-8 md:py-10">
+        <section className="space-y-2 text-center md:space-y-3">
+          <h1 className="text-xl font-semibold text-slate-900 sm:text-2xl md:text-3xl">All Tools</h1>
+          <p className="max-w-2xl mx-auto text-xs text-slate-700 sm:text-sm md:text-[15px]">
             Browse the GPT CLEAN UP Tools collection, grouped by category so you can find the right utility fast.
           </p>
         </section>
