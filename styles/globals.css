@@ -6,6 +6,11 @@
   color-scheme: light;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 /* Prevent AdSense from causing layout shifts - maintain stable container heights */
 .bg-\[#f7f9ff\] {
   min-height: 100vh !important;

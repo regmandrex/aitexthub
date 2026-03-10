@@ -5,6 +5,26 @@ import { useEffect, useRef } from 'react';
 const AD_CLIENT = 'ca-pub-8764610479002120';
 const BELOW_TOOL_SLOT = '5756159910';
 
+/** Wait for AdSense script then run callback (poll up to 8s). */
+function waitForAdsByGoogle(cb: () => void) {
+  if (typeof window === 'undefined') return;
+  const win = window as Window & { adsbygoogle?: unknown };
+  if (win.adsbygoogle) {
+    cb();
+    return;
+  }
+  let attempts = 0;
+  const t = setInterval(() => {
+    attempts++;
+    if (win.adsbygoogle) {
+      clearInterval(t);
+      cb();
+      return;
+    }
+    if (attempts >= 53) clearInterval(t);
+  }, 150);
+}
+
 export default function BelowToolAd() {
   const slotRef = useRef<HTMLModElement | null>(null);
   const hasPushedRef = useRef(false);
@@ -16,19 +36,19 @@ export default function BelowToolAd() {
     }
 
     const tryInit = () => {
-      if (hasPushedRef.current) {
-        return;
-      }
+      if (hasPushedRef.current) return;
       const el = slotRef.current;
-      if (!el?.isConnected || el.offsetWidth === 0) {
-        return;
-      }
-      try {
-        const win = window as Window & { adsbygoogle?: Array<unknown> };
-        (win.adsbygoogle = win.adsbygoogle || []).push({});
-        hasPushedRef.current = true;
-      } catch {
-      }
+      if (!el?.isConnected || el.offsetWidth === 0) return;
+      waitForAdsByGoogle(() => {
+        if (hasPushedRef.current || !slotRef.current?.isConnected) return;
+        try {
+          const win = window as Window & { adsbygoogle?: Array<unknown> };
+          (win.adsbygoogle = win.adsbygoogle || []).push({});
+          hasPushedRef.current = true;
+        } catch {
+          // ignore
+        }
+      });
     };
 
     let idleId: number | undefined;

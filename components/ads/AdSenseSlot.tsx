@@ -20,6 +20,26 @@ function afterLCPWindow(cb: () => void) {
   }
 }
 
+/** Wait for AdSense script then run callback (poll up to 8s). */
+function waitForAdsByGoogle(cb: () => void) {
+  if (typeof window === 'undefined') return;
+  const win = window as Window & { adsbygoogle?: unknown };
+  if (win.adsbygoogle) {
+    cb();
+    return;
+  }
+  let attempts = 0;
+  const t = setInterval(() => {
+    attempts++;
+    if (win.adsbygoogle) {
+      clearInterval(t);
+      cb();
+      return;
+    }
+    if (attempts >= 53) clearInterval(t);
+  }, 150);
+}
+
 export default function AdSenseSlot({ className, style }: AdSenseSlotProps) {
   const slotRef = useRef<HTMLModElement | null>(null);
   const hasPushedRef = useRef(false);
@@ -68,12 +88,16 @@ export default function AdSenseSlot({ className, style }: AdSenseSlotProps) {
 
     afterLCPWindow(() => {
       if (!slotRef.current?.isConnected || hasPushedRef.current) return;
-      try {
-        const win = window as Window & { adsbygoogle?: Array<unknown> };
-        (win.adsbygoogle = win.adsbygoogle || []).push({});
-        hasPushedRef.current = true;
-      } catch {
-      }
+      waitForAdsByGoogle(() => {
+        if (!slotRef.current?.isConnected || hasPushedRef.current) return;
+        try {
+          const win = window as Window & { adsbygoogle?: Array<unknown> };
+          (win.adsbygoogle = win.adsbygoogle || []).push({});
+          hasPushedRef.current = true;
+        } catch {
+          // ignore
+        }
+      });
     });
   }, [isReady]);
 

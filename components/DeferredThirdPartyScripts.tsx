@@ -2,27 +2,36 @@
 
 import { useEffect, useRef } from 'react';
 
-const LCP_WINDOW_MS = 2800;
+const ADSENSE_DEFER_MS = 1200;
+const GTM_DEFER_MS = 2800;
 
 /**
- * Injects GTM and AdSense scripts after LCP window so they don't block main thread during LCP.
+ * AdSense at 1.2s so ad slots can fill sooner; GTM at 2.8s to keep LCP clear.
  */
 export default function DeferredThirdPartyScripts() {
   const done = useRef(false);
+  const gtmDone = useRef(false);
 
   useEffect(() => {
     if (done.current) return;
     done.current = true;
 
-    const inject = () => {
+    const injectAdSense = () => {
       if (typeof document === 'undefined') return;
+      const adsScript = document.createElement('script');
+      adsScript.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8764610479002120';
+      adsScript.async = true;
+      adsScript.crossOrigin = 'anonymous';
+      document.body.appendChild(adsScript);
+    };
 
-      // GTM
+    const injectGTM = () => {
+      if (gtmDone.current || typeof document === 'undefined') return;
+      gtmDone.current = true;
       const gtagScript = document.createElement('script');
       gtagScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-YZ37PVSNQ2';
       gtagScript.async = true;
       document.body.appendChild(gtagScript);
-
       const gtagInit = document.createElement('script');
       gtagInit.id = 'gtag-init';
       gtagInit.textContent = `
@@ -32,19 +41,13 @@ export default function DeferredThirdPartyScripts() {
         gtag('config', 'G-YZ37PVSNQ2');
       `;
       document.body.appendChild(gtagInit);
-
-      // AdSense
-      const adsScript = document.createElement('script');
-      adsScript.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8764610479002120';
-      adsScript.async = true;
-      adsScript.crossOrigin = 'anonymous';
-      document.body.appendChild(adsScript);
     };
 
+    setTimeout(injectAdSense, ADSENSE_DEFER_MS);
     if (typeof requestIdleCallback !== 'undefined') {
-      requestIdleCallback(inject, { timeout: LCP_WINDOW_MS });
+      requestIdleCallback(injectGTM, { timeout: GTM_DEFER_MS });
     } else {
-      setTimeout(inject, LCP_WINDOW_MS);
+      setTimeout(injectGTM, GTM_DEFER_MS);
     }
   }, []);
 
