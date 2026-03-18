@@ -7,6 +7,10 @@ export const blogPosts: Array<{
   description: string;
   date: string;
 }> = [
+  { slug: 'best-chatgpt-cleanup-tools', title: 'Best ChatGPT Cleanup Tools for Cleaner, Faster Publishing', description: 'Compare real ChatGPT cleanup tools, what they must clean under the hood, and how to choose the right stack for SEO and performance.', date: 'Mar 2026' },
+  { slug: 'how-to-clean-chatgpt-text-on-android', title: 'How to Clean ChatGPT Text on Android', description: 'A mobile-first workflow to clean ChatGPT text on Android using AI space removal, invisible character detection, and safe copy-paste.', date: 'Mar 2026' },
+  { slug: 'chatgpt-watermark-remover-mobile', title: 'ChatGPT Watermark Remover on Mobile: What Actually Matters', description: 'What people really mean by ChatGPT watermarks, what you can clean on mobile, and how to stay safe and policy-aligned.', date: 'Mar 2026' },
+  { slug: 'chatgpt-text-cleaner-iphone', title: 'ChatGPT Text Cleaner for iPhone (Ready-to-Publish Workflow)', description: 'Step-by-step workflow to clean ChatGPT text on iPhone, remove invisible noise, and paste into Notes, Mail, or CMS without layout bugs.', date: 'Mar 2026' },
   { slug: 'how-to-quickly-fix-unwanted-spaces-in-word-documents', title: 'How to Quickly Fix Unwanted Spaces in Word Documents', description: 'Learn simple methods to remove extra spaces, fix paragraph gaps, and clean up Word documents using built-in tools and shortcuts.', date: 'Feb 2026' },
   { slug: 'the-best-ways-to-remove-blank-spaces-in-excel', title: 'The Best Ways to Remove Blank Spaces in Excel', description: 'Master Excel data cleaning with TRIM, SUBSTITUTE, and filtering techniques to eliminate unwanted spaces and improve accuracy.', date: 'Feb 2026' },
   { slug: 'what-is-a-space-remover-tool', title: 'What is a Space Remover Tool?', description: "Discover how space remover tools work, why they're essential for writers and developers, and how they improve text quality instantly.", date: 'Feb 2026' },
