@@ -122,7 +122,7 @@ export default function HowToSeeChatGptWatermarksPage() {
             <li>Paste your text into Notepad++.</li>
             <li>Go to View &rarr; Show Symbol &rarr; Show All Characters. This reveals all whitespace and some special characters.</li>
             <li>
-              Use Find (Ctrl+F) with &quot;Regular expression&quot; mode and search for <code>\x{200B}</code> to find
+              Use Find (Ctrl+F) with &quot;Regular expression&quot; mode and search for <code>{'\\x{200B}'}</code> to find
               zero-width spaces specifically.
             </li>
           </ol>
