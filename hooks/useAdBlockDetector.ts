@@ -33,10 +33,11 @@ export function useAdBlockDetector() {
           return;
         }
 
-        // Method 2: Wait for AdSense script to have loaded (injected at 1200ms),
-        // then check window.adsbygoogle — catches Ghostery and network-level blockers
-        await new Promise<void>((r) => setTimeout(r, 2500));
-        const scriptBlocked = typeof (window as Window & { adsbygoogle?: unknown }).adsbygoogle === 'undefined';
+        // Method 2: Wait for AdSense onload flag (set in DeferredThirdPartyScripts).
+        // AdSense injects at 1200ms + ~1s to fetch = check at 3s.
+        // If __adsLoaded is not set by then, the script was blocked (Ghostery etc.)
+        await new Promise<void>((r) => setTimeout(r, 3000));
+        const scriptBlocked = !(window as Window & { __adsLoaded?: boolean }).__adsLoaded;
         setAdBlocked(scriptBlocked);
       } catch {
         setAdBlocked(false);

@@ -22,6 +22,9 @@ export default function DeferredThirdPartyScripts() {
       adsScript.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8764610479002120';
       adsScript.async = true;
       adsScript.crossOrigin = 'anonymous';
+      adsScript.onload = () => {
+        (window as Window & { __adsLoaded?: boolean }).__adsLoaded = true;
+      };
       document.body.appendChild(adsScript);
     };
 
