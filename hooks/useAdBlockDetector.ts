@@ -8,7 +8,7 @@ export function useAdBlockDetector() {
   useEffect(() => {
     const detect = async () => {
       try {
-        // Bait element — adblockers hide elements with these class names
+        // Method 1: Bait element — catches uBlock, AdBlock Plus (CSS-based blockers)
         const bait = document.createElement('div');
         bait.className =
           'ad-banner pub_300x250 pub_300x250m pub_728x90 text-ad textAd text_ad text_ads text-ads text-ad-links';
@@ -18,7 +18,7 @@ export function useAdBlockDetector() {
 
         await new Promise<void>((r) => setTimeout(r, 150));
 
-        const blocked =
+        const cssBlocked =
           bait.offsetParent === null ||
           bait.offsetHeight === 0 ||
           bait.offsetWidth === 0 ||
@@ -26,7 +26,22 @@ export function useAdBlockDetector() {
           getComputedStyle(bait).visibility === 'hidden';
 
         document.body.removeChild(bait);
-        setAdBlocked(blocked);
+
+        if (cssBlocked) {
+          setAdBlocked(true);
+          return;
+        }
+
+        // Method 2: Network fetch — catches Ghostery and other network-level blockers
+        try {
+          await fetch(
+            'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js',
+            { method: 'HEAD', mode: 'no-cors', cache: 'no-store' }
+          );
+          setAdBlocked(false);
+        } catch {
+          setAdBlocked(true);
+        }
       } catch {
         setAdBlocked(false);
       } finally {
