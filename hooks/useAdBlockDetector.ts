@@ -9,6 +9,8 @@ export function useAdBlockDetector() {
     let cancelled = false;
 
     const detect = async () => {
+      console.log('[AdBlock] detection started');
+
       // Method 1: CSS bait element — catches uBlock, AdBlock Plus
       const bait = document.createElement('div');
       bait.className =
@@ -23,6 +25,7 @@ export function useAdBlockDetector() {
         getComputedStyle(bait).display === 'none' ||
         getComputedStyle(bait).visibility === 'hidden';
       document.body.removeChild(bait);
+      console.log('[AdBlock] CSS check:', cssBlocked);
 
       if (cssBlocked) {
         if (!cancelled) { setAdBlocked(true); setChecking(false); }
@@ -30,17 +33,17 @@ export function useAdBlockDetector() {
       }
 
       // Method 2: Try to load AdSense script directly via a script element.
-      // If Ghostery or any network-level blocker is active, onerror fires.
-      // Cache-bust with timestamp so the request always hits the network.
+      console.log('[AdBlock] starting network check...');
       const networkBlocked = await new Promise<boolean>((resolve) => {
         const script = document.createElement('script');
-        const timer = setTimeout(() => { script.remove(); resolve(true); }, 5000);
-        script.onload = () => { clearTimeout(timer); script.remove(); resolve(false); };
-        script.onerror = () => { clearTimeout(timer); script.remove(); resolve(true); };
+        const timer = setTimeout(() => { console.log('[AdBlock] network check timed out'); script.remove(); resolve(true); }, 5000);
+        script.onload = () => { console.log('[AdBlock] script loaded = NOT blocked'); clearTimeout(timer); script.remove(); resolve(false); };
+        script.onerror = () => { console.log('[AdBlock] script onerror = BLOCKED'); clearTimeout(timer); script.remove(); resolve(true); };
         script.src = `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?t=${Date.now()}`;
         document.head.appendChild(script);
       });
 
+      console.log('[AdBlock] networkBlocked:', networkBlocked);
       if (!cancelled) {
         setAdBlocked(networkBlocked);
         setChecking(false);
