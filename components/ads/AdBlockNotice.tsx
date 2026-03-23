@@ -4,10 +4,15 @@ import { useAdBlockDetector } from '@/hooks/useAdBlockDetector';
 export default function AdBlockNotice() {
   const { adBlocked, checking } = useAdBlockDetector();
 
-  if (checking || !adBlocked) return null;
+  // While checking: white overlay hides content so user can't see site during detection
+  if (checking) {
+    return <div className="fixed inset-0 z-[9999] bg-white" aria-hidden="true" />;
+  }
+
+  if (!adBlocked) return null;
 
   return (
-    <div className="fixed inset-0 z-[9999] flex items-center justify-center px-4 bg-black/40 backdrop-blur-sm">
+    <div className="fixed inset-0 z-[9999] flex items-center justify-center px-4 bg-black/60 backdrop-blur-sm">
       <div className="w-full max-w-md rounded-2xl border border-amber-200 bg-amber-50 shadow-2xl p-6 text-center">
         <span className="text-3xl">🙏</span>
         <p className="mt-3 text-base font-semibold text-amber-900">Ad blocker detected</p>

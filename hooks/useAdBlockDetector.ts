@@ -9,9 +9,7 @@ export function useAdBlockDetector() {
     let cancelled = false;
 
     const detect = async () => {
-      console.log('[AdBlock] detection started');
-
-      // Method 1: CSS bait element — catches uBlock, AdBlock Plus
+      // Method 1: CSS bait element — fast check for uBlock, AdBlock Plus
       const bait = document.createElement('div');
       bait.className =
         'pub_300x250 pub_300x250m pub_728x90 text-ad textAd text_ad text_ads text-ads ad-banner';
@@ -25,34 +23,28 @@ export function useAdBlockDetector() {
         getComputedStyle(bait).display === 'none' ||
         getComputedStyle(bait).visibility === 'hidden';
       document.body.removeChild(bait);
-      console.log('[AdBlock] CSS check:', cssBlocked);
 
-      if (cssBlocked) {
-        if (!cancelled) { setAdBlocked(true); setChecking(false); }
+      if (!cancelled && cssBlocked) {
+        setAdBlocked(true);
+        setChecking(false);
         return;
       }
 
-      // Method 2: Fetch the DoubleClick ad-serving endpoint (not the init script).
-      // Ghostery blocks ad content requests (doubleclick.net) even when it allows adsbygoogle.js.
-      // no-cors fetch returns an opaque response (no throw) when allowed;
-      // throws TypeError when an extension cancels the request.
-      console.log('[AdBlock] starting network check (doubleclick)...');
-      let networkBlocked = false;
-      try {
-        await fetch(
-          `https://googleads.g.doubleclick.net/pagead/id?t=${Date.now()}`,
-          { method: 'HEAD', mode: 'no-cors', cache: 'no-store' }
-        );
-        console.log('[AdBlock] doubleclick fetch succeeded = NOT blocked');
-        networkBlocked = false;
-      } catch {
-        console.log('[AdBlock] doubleclick fetch failed = BLOCKED');
-        networkBlocked = true;
-      }
+      // Method 2: DOM slot check — catches Ghostery and blockers that allow the
+      // AdSense init script but block actual ad content. AdSense fills each
+      // ins.adsbygoogle slot with an iframe when an ad is served. If no slot
+      // has an iframe after 6s, ads are being blocked.
+      // Wait long enough for: defer (1.2s) + script load + slot processing.
+      await new Promise<void>((r) => setTimeout(r, 6000));
+      if (cancelled) return;
 
-      console.log('[AdBlock] networkBlocked:', networkBlocked);
+      const slots = document.querySelectorAll('ins[data-ad-client]');
+      const anyFilled = Array.from(slots).some(
+        (el) => el.querySelector('iframe') !== null
+      );
+
       if (!cancelled) {
-        setAdBlocked(networkBlocked);
+        setAdBlocked(!anyFilled);
         setChecking(false);
       }
     };
