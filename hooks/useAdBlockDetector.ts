@@ -32,16 +32,23 @@ export function useAdBlockDetector() {
         return;
       }
 
-      // Method 2: Try to load AdSense script directly via a script element.
-      console.log('[AdBlock] starting network check...');
-      const networkBlocked = await new Promise<boolean>((resolve) => {
-        const script = document.createElement('script');
-        const timer = setTimeout(() => { console.log('[AdBlock] network check timed out'); script.remove(); resolve(true); }, 5000);
-        script.onload = () => { console.log('[AdBlock] script loaded = NOT blocked'); clearTimeout(timer); script.remove(); resolve(false); };
-        script.onerror = () => { console.log('[AdBlock] script onerror = BLOCKED'); clearTimeout(timer); script.remove(); resolve(true); };
-        script.src = `https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?t=${Date.now()}`;
-        document.head.appendChild(script);
-      });
+      // Method 2: Fetch the DoubleClick ad-serving endpoint (not the init script).
+      // Ghostery blocks ad content requests (doubleclick.net) even when it allows adsbygoogle.js.
+      // no-cors fetch returns an opaque response (no throw) when allowed;
+      // throws TypeError when an extension cancels the request.
+      console.log('[AdBlock] starting network check (doubleclick)...');
+      let networkBlocked = false;
+      try {
+        await fetch(
+          `https://googleads.g.doubleclick.net/pagead/id?t=${Date.now()}`,
+          { method: 'HEAD', mode: 'no-cors', cache: 'no-store' }
+        );
+        console.log('[AdBlock] doubleclick fetch succeeded = NOT blocked');
+        networkBlocked = false;
+      } catch {
+        console.log('[AdBlock] doubleclick fetch failed = BLOCKED');
+        networkBlocked = true;
+      }
 
       console.log('[AdBlock] networkBlocked:', networkBlocked);
       if (!cancelled) {
