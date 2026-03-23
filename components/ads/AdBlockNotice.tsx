@@ -1,15 +1,15 @@
 'use client';
+import { useState, useEffect } from 'react';
 import { useAdBlockDetector } from '@/hooks/useAdBlockDetector';
 
 export default function AdBlockNotice() {
   const { adBlocked, checking } = useAdBlockDetector();
+  const [mounted, setMounted] = useState(false);
 
-  // While checking: white overlay hides content so user can't see site during detection
-  if (checking) {
-    return <div className="fixed inset-0 z-[9999] bg-white" aria-hidden="true" />;
-  }
+  // Only render after mount to avoid SSR hydration mismatch
+  useEffect(() => { setMounted(true); }, []);
 
-  if (!adBlocked) return null;
+  if (!mounted || checking || !adBlocked) return null;
 
   return (
     <div className="fixed inset-0 z-[9999] flex items-center justify-center px-4 bg-black/60 backdrop-blur-sm">
