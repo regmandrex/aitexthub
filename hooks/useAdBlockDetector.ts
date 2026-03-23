@@ -29,19 +29,15 @@ export function useAdBlockDetector() {
 
         if (cssBlocked) {
           setAdBlocked(true);
+          setChecking(false);
           return;
         }
 
-        // Method 2: Network fetch — catches Ghostery and other network-level blockers
-        try {
-          await fetch(
-            'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js',
-            { method: 'HEAD', mode: 'no-cors', cache: 'no-store' }
-          );
-          setAdBlocked(false);
-        } catch {
-          setAdBlocked(true);
-        }
+        // Method 2: Wait for AdSense script to have loaded (injected at 1200ms),
+        // then check window.adsbygoogle — catches Ghostery and network-level blockers
+        await new Promise<void>((r) => setTimeout(r, 2500));
+        const scriptBlocked = typeof (window as Window & { adsbygoogle?: unknown }).adsbygoogle === 'undefined';
+        setAdBlocked(scriptBlocked);
       } catch {
         setAdBlocked(false);
       } finally {
