@@ -9,32 +9,40 @@ export function useAdBlockDetector() {
     let cancelled = false;
 
     const detect = async () => {
-      // Bait: use ins.adsbygoogle — the exact selector Ghostery/uBlock target with CSS injection.
-      // Generic div baits miss Ghostery; this catches it directly.
-      const bait = document.createElement('ins');
-      bait.className = 'adsbygoogle';
-      bait.style.cssText =
-        'display:block;width:300px;height:250px;position:absolute;left:-9999px;top:-9999px;';
-      document.body.appendChild(bait);
-      await new Promise<void>((r) => setTimeout(r, 300));
+      // Wait for StickyFooterAd and page ad slots to mount,
+      // and for Ghostery/uBlock to inject their CSS rules.
+      await new Promise<void>((r) => setTimeout(r, 2000));
+      if (cancelled) return;
 
-      const style = getComputedStyle(bait);
-      const blocked =
-        style.display === 'none' ||
-        style.visibility === 'hidden' ||
-        bait.offsetHeight === 0 ||
-        bait.offsetWidth === 0;
+      // Check the REAL ad slots already on the page — these are the
+      // elements Ghostery actually hides via CSS (display:none !important).
+      const slots = document.querySelectorAll('ins[data-ad-client]');
 
-      document.body.removeChild(bait);
+      if (slots.length === 0) {
+        // No ad slots on this page — can't detect, assume ok
+        setAdBlocked(false);
+        setChecking(false);
+        return;
+      }
+
+      // If every ad slot is hidden, an adblocker is active
+      const allHidden = Array.from(slots).every((el) => {
+        const s = getComputedStyle(el);
+        return (
+          s.display === 'none' ||
+          s.visibility === 'hidden' ||
+          (el as HTMLElement).offsetHeight === 0
+        );
+      });
 
       if (!cancelled) {
-        setAdBlocked(blocked);
+        setAdBlocked(allHidden);
         setChecking(false);
       }
     };
 
     detect().catch(() => {
-      if (!cancelled) setChecking(false);
+      if (!cancelled) { setAdBlocked(false); setChecking(false); }
     });
 
     return () => { cancelled = true; };
