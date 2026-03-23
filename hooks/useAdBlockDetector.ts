@@ -33,12 +33,16 @@ export function useAdBlockDetector() {
           return;
         }
 
-        // Method 2: Wait for AdSense onload flag (set in DeferredThirdPartyScripts).
-        // AdSense injects at 1200ms + ~1s to fetch = check at 3s.
-        // If __adsLoaded is not set by then, the script was blocked (Ghostery etc.)
-        await new Promise<void>((r) => setTimeout(r, 3000));
-        const scriptBlocked = !(window as Window & { __adsLoaded?: boolean }).__adsLoaded;
-        setAdBlocked(scriptBlocked);
+        // Method 2: Check if AdSense actually processed any ad slots.
+        // AdSense sets data-adsbygoogle-status on <ins> elements it runs on.
+        // Script injects at 1200ms, slots init after LCP window (~1800ms) = wait 4.5s.
+        // Ghostery allows the script to load but blocks ad serving — slots stay unprocessed.
+        await new Promise<void>((r) => setTimeout(r, 4500));
+        const slots = document.querySelectorAll('ins.adsbygoogle');
+        const anyProcessed = Array.from(slots).some((el) =>
+          el.hasAttribute('data-adsbygoogle-status')
+        );
+        setAdBlocked(!anyProcessed);
       } catch {
         setAdBlocked(false);
       } finally {
