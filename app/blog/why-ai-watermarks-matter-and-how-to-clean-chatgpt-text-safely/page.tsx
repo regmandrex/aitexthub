@@ -249,6 +249,14 @@ export default function WhyAiWatermarksMatterPage() {
           efficiency, performance stability, and user experience. Cleaning ChatGPT text safely is technical hygiene, not hiding AI usage.
         </p>
         <p className="text-slate-700">Clean text ranks better because it performs better. That is the reality.</p>
+        <div className="rounded-2xl border border-brand-100 bg-brand-50 p-4 text-sm text-brand-800">
+          <p className="font-semibold">Check your AI source.</p>
+          <p>
+            Using Grok? Scan for AI artifacts with the{' '}
+            <Link href="/grok-watermark-detector">Grok Watermark Detector</Link>. For ChatGPT text, use the{' '}
+            <Link href="/chatgpt-watermark-remover">ChatGPT Watermark Remover</Link>.
+          </p>
+        </div>
       </section>
 
       <div className="ad-slot">

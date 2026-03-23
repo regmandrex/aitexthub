@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import type { CSSProperties } from 'react';
+import { usePathname } from 'next/navigation';
 
 type AdSenseSlotProps = {
   className?: string;
@@ -40,7 +41,15 @@ function waitForAdsByGoogle(cb: () => void) {
   }, 150);
 }
 
+function resetAdSenseElement(element: HTMLElement) {
+  element.removeAttribute('data-adsbygoogle-status');
+  element.removeAttribute('data-ad-status');
+  element.removeAttribute('data-adtest');
+  element.innerHTML = '';
+}
+
 export default function AdSenseSlot({ className, style }: AdSenseSlotProps) {
+  const pathname = usePathname();
   const slotRef = useRef<HTMLModElement | null>(null);
   const hasPushedRef = useRef(false);
   const [isReady, setIsReady] = useState(false);
@@ -81,6 +90,14 @@ export default function AdSenseSlot({ className, style }: AdSenseSlotProps) {
   }, []);
 
   useEffect(() => {
+    // In Next.js App Router, some ad components can persist across navigations (layouts).
+    // Reset so AdSense can re-fill after client-side route changes.
+    hasPushedRef.current = false;
+    const element = slotRef.current;
+    if (element) resetAdSenseElement(element);
+  }, [pathname]);
+
+  useEffect(() => {
     const element = slotRef.current;
     if (!element || !isReady || hasPushedRef.current) {
       return;
@@ -91,6 +108,7 @@ export default function AdSenseSlot({ className, style }: AdSenseSlotProps) {
       waitForAdsByGoogle(() => {
         if (!slotRef.current?.isConnected || hasPushedRef.current) return;
         try {
+          resetAdSenseElement(slotRef.current);
           const win = window as Window & { adsbygoogle?: Array<unknown> };
           (win.adsbygoogle = win.adsbygoogle || []).push({});
           hasPushedRef.current = true;
@@ -99,7 +117,7 @@ export default function AdSenseSlot({ className, style }: AdSenseSlotProps) {
         }
       });
     });
-  }, [isReady]);
+  }, [isReady, pathname]);
 
   const classes = [isReady ? 'adsbygoogle' : null, className].filter(Boolean).join(' ');
 

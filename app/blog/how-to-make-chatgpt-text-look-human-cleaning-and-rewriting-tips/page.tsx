@@ -299,6 +299,13 @@ export default function MakeChatGPTTextLookHumanPage() {
           respecting the reader. The biggest mistake is skipping cleaning and jumping straight to rewriting.
         </p>
         <p className="text-slate-700">Clean first. Refine second. Publish confidently.</p>
+        <div className="rounded-2xl border border-brand-100 bg-brand-50 p-4 text-sm text-brand-800">
+          <p className="font-semibold">Clean and humanize in two steps.</p>
+          <p>
+            Start with the <Link href="/">ChatGPT Text Cleaner</Link> to remove invisible characters and normalize spacing, then use the{' '}
+            <Link href="/ai-humanizer">AI Humanizer</Link> to improve flow and natural rhythm.
+          </p>
+        </div>
       </section>
 
       <div className="ad-slot">

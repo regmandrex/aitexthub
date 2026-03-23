@@ -266,7 +266,8 @@ export default function UltimateWorkflowDetectCleanFormatChatGPTTextPage() {
           <p className="font-semibold">Start with detection and cleaning.</p>
           <p>
             Detect with the <Link href="/invisible-character-detector">Invisible Character Detector</Link>, then clean with the{' '}
-            <Link href="/">ChatGPT Text Cleaner</Link>.
+            <Link href="/">ChatGPT Text Cleaner</Link>. For Grok text, use the{' '}
+            <Link href="/grok-watermark-detector">Grok Watermark Detector</Link>.
           </p>
         </div>
       </section>

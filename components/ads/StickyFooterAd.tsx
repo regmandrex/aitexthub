@@ -32,6 +32,14 @@ function waitForAdsByGoogle(cb: () => void) {
   }, 150);
 }
 
+function resetAdSenseElement(element: HTMLElement) {
+  // AdSense marks filled slots with attributes and injects children; clear both to allow re-init.
+  element.removeAttribute('data-adsbygoogle-status');
+  element.removeAttribute('data-ad-status');
+  element.removeAttribute('data-adtest');
+  element.innerHTML = '';
+}
+
 export default function StickyFooterAd() {
   const pathname = usePathname();
   const slotRef = useRef<HTMLModElement | null>(null);
@@ -58,6 +66,7 @@ export default function StickyFooterAd() {
     const tryInit = () => {
       if (hasPushedRef.current) return;
       if (!element.isConnected || element.offsetWidth === 0) return;
+      resetAdSenseElement(element);
       waitForAdsByGoogle(() => {
         if (hasPushedRef.current || !slotRef.current?.isConnected) return;
         try {
@@ -95,7 +104,6 @@ export default function StickyFooterAd() {
     >
       <div className="mx-auto flex w-full max-w-[1400px] justify-center px-4 py-2 overflow-x-hidden">
         <ins
-          key={pathname ?? 'default'}
           ref={slotRef}
           className="adsbygoogle"
           style={{ display: 'inline-block', width: slot.width, height: slot.height }}

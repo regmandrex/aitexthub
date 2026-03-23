@@ -245,7 +245,8 @@ export default function FixChatGPTFormattingPage() {
         <div className="rounded-2xl border border-brand-100 bg-brand-50 p-4 text-sm text-brand-800">
           <p className="font-semibold">Make formatting predictable.</p>
           <p>
-            Clean your draft with the <Link href="/">ChatGPT Text Cleaner</Link>, then paste into your editor and format natively.
+            Clean your draft with the <Link href="/">ChatGPT Text Cleaner</Link>, then paste into your editor and format natively. If em dashes are breaking your layout, run the output through the{' '}
+            <Link href="/em-dash-remover">Em Dash Remover</Link> first.
           </p>
         </div>
       </section>

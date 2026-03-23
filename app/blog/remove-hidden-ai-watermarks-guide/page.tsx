@@ -236,7 +236,8 @@ export default function RemoveHiddenAiWatermarksGuidePage() {
         <div className="rounded-2xl border border-brand-100 bg-brand-50 p-4 text-sm text-brand-800">
           <p className="font-semibold">Clean text, stable results.</p>
           <p>
-            Detect hidden characters with the <Link href="/invisible-character-detector">Invisible Character Detector</Link>, then clean before you format.
+            Detect hidden characters with the <Link href="/invisible-character-detector">Invisible Character Detector</Link>, then clean before you format. For Grok text, try the{' '}
+            <Link href="/grok-watermark-detector">Grok Watermark Detector</Link>.
           </p>
         </div>
       </section>

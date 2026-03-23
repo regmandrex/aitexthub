@@ -227,6 +227,14 @@ export default function CleanChatGPTTextForEmailsAndNewslettersPage() {
           builds subscriber trust.
         </p>
         <p className="text-slate-700">AI can write your emails, but only clean text should send them.</p>
+        <div className="rounded-2xl border border-brand-100 bg-brand-50 p-4 text-sm text-brand-800">
+          <p className="font-semibold">Email-safe cleaning workflow.</p>
+          <p>
+            Remove invisible characters with the <Link href="/invisible-character-detector">Invisible Character Detector</Link>, clean with the{' '}
+            <Link href="/">ChatGPT Text Cleaner</Link>, and fix em dashes that break email clients with the{' '}
+            <Link href="/em-dash-remover">Em Dash Remover</Link>.
+          </p>
+        </div>
       </section>
 
       <div className="ad-slot">

@@ -32,7 +32,7 @@ export function BreadcrumbJsonLdAndLang() {
   items.push({ name: 'Home', url: abs('/') });
 
   if (pathname === '/') {
-    return <JsonLd data={breadcrumbListSchema(items)} />;
+    return null;
   }
 
   if (pathname === '/blog' || pathname.startsWith('/blog/')) {

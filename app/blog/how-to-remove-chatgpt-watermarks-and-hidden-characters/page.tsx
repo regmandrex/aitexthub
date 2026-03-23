@@ -291,7 +291,8 @@ export default function RemoveChatGPTWatermarksAndHiddenCharactersPage() {
           <p className="font-semibold">Clean it before you paste it.</p>
           <p>
             Start with the <Link href="/chatgpt-watermark-remover">ChatGPT Watermark Remover</Link>, then verify with the{' '}
-            <Link href="/invisible-character-detector">Invisible Character Detector</Link>.
+            <Link href="/invisible-character-detector">Invisible Character Detector</Link>. For Grok-generated text, use the{' '}
+            <Link href="/grok-watermark-detector">Grok Watermark Detector</Link>.
           </p>
         </div>
       </section>

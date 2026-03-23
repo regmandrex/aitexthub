@@ -1,6 +1,7 @@
 import type { FaqItem } from '@/components/faqData';
 import WatermarkDetectorPage from '@/components/tools/WatermarkDetectorPage';
 import { buildMeta } from '@/lib/seo-meta';
+import Link from 'next/link';
 
 const modelName = 'ChatGPT';
 const modelSlug = 'chatgpt';
@@ -520,6 +521,10 @@ const writeUp = (
     <p>
       As we move forward, combining ethical use, smart detection tools, and user awareness will be the key to navigating the blurred lines
       between human and AI authorship.
+    </p>
+    <p>
+      Using Grok instead of ChatGPT? Try the{' '}
+      <Link href="/grok-watermark-detector">Grok Watermark Detector</Link> for model-specific analysis.
     </p>
   </section>
 );

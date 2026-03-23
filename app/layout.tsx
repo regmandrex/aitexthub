@@ -6,6 +6,8 @@ import Header from '../components/Header';
 import { JsonLd } from '../components/JsonLd';
 import { BreadcrumbJsonLdAndLang } from '../components/BreadcrumbJsonLdAndLang';
 import StickyFooterAd from '../components/ads/StickyFooterAd';
+import AdBlockNotice from '../components/ads/AdBlockNotice';
+import AdSenseRouteRefresh from '../components/ads/AdSenseRouteRefresh';
 import DeferredThirdPartyScripts from '../components/DeferredThirdPartyScripts';
 import { webSiteSchema, siteNavigationSchema } from '../lib/schema/site';
 import '../styles/globals.css';
@@ -91,6 +93,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
       </head>
       <body className={`${inter.variable} bg-slate-50 text-slate-900 antialiased pb-[80px] md:pb-[120px] lg:pb-[140px]`}>
         <DeferredThirdPartyScripts />
+        <AdSenseRouteRefresh />
         <JsonLd data={webSiteSchema()} />
         <JsonLd data={siteNavigationSchema()} />
         <BreadcrumbJsonLdAndLang />
@@ -98,6 +101,7 @@ export default async function RootLayout({ children }: RootLayoutProps) {
         <main className="min-h-screen">{children}</main>
         <Footer />
         <StickyFooterAd />
+        <AdBlockNotice />
       </body>
     </html>
   );

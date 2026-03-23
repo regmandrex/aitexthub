@@ -246,7 +246,8 @@ export default function WhyChatGPTTextLooksMessyPage() {
         <p className="font-semibold">Want a clean copy-paste workflow?</p>
         <p>
           Start with the <Link href="/">ChatGPT Text Cleaner</Link>, then paste the clean output into WordPress, Word, Docs, or your email editor with
-          confidence.
+          confidence. For em dashes causing layout issues, also run the{' '}
+          <Link href="/em-dash-remover">Em Dash Remover</Link>.
         </p>
       </div>
     </article>

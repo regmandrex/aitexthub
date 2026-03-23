@@ -479,6 +479,11 @@ export default async function GrokWatermarkCleanerPage() {
           <p>
             Clean text isn’t about hiding AI. It’s about making AI-assisted writing practical, readable, and real.
           </p>
+          <p>
+            Not sure if your Grok text has watermarks? Run it through the{‘ ‘}
+            <a href="/grok-watermark-detector" className="text-brand-700 underline">Grok Watermark Detector</a>{‘ ‘}
+            first before cleaning.
+          </p>
         </section>
 
         <FAQSection items={pageFaqs} />

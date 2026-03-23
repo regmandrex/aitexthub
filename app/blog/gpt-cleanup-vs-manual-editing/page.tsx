@@ -273,7 +273,8 @@ export default function GptCleanupVsManualEditingPage() {
         <div className="rounded-2xl border border-brand-100 bg-brand-50 p-4 text-sm text-brand-800">
           <p className="font-semibold">Combine both strengths.</p>
           <p>
-            Clean with the <Link href="/">ChatGPT Text Cleaner</Link>, then edit for expertise and voice.
+            Clean with the <Link href="/">ChatGPT Text Cleaner</Link>, then edit for expertise and voice. Want a more natural-sounding result? Run it through the{' '}
+            <Link href="/ai-humanizer">AI Humanizer</Link> after cleaning.
           </p>
         </div>
       </section>

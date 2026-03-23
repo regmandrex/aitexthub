@@ -1,6 +1,7 @@
 import type { FaqItem } from '@/components/faqData';
 import WatermarkDetectorPage from '@/components/tools/WatermarkDetectorPage';
 import { buildMeta } from '@/lib/seo-meta';
+import Link from 'next/link';
 
 const modelName = 'AI';
 const modelSlug = 'ai';
@@ -615,6 +616,10 @@ const writeUp = (
         When used responsibly, the detector strengthens editorial workflows and supports transparency. It keeps the focus on text hygiene rather
         than on blame, which is essential for policy-aligned AI documentation. If your goal is clean, predictable text, the AI Watermark Detector
         is a useful, neutral tool in the broader AI-era toolkit.
+      </p>
+      <p>
+        Need a model-specific scan? Try the{' '}
+        <Link href="/grok-watermark-detector">Grok Watermark Detector</Link> for Grok-generated text.
       </p>
     </div>
   </section>

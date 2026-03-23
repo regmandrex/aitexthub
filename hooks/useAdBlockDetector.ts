@@ -1,0 +1,41 @@
+'use client';
+import { useState, useEffect } from 'react';
+
+export function useAdBlockDetector() {
+  const [adBlocked, setAdBlocked] = useState(false);
+  const [checking, setChecking] = useState(true);
+
+  useEffect(() => {
+    const detect = async () => {
+      try {
+        // Bait element — adblockers hide elements with these class names
+        const bait = document.createElement('div');
+        bait.className =
+          'ad-banner pub_300x250 pub_300x250m pub_728x90 text-ad textAd text_ad text_ads text-ads text-ad-links';
+        bait.style.cssText =
+          'width:1px!important;height:1px!important;position:absolute!important;left:-9999px!important;top:-9999px!important;';
+        document.body.appendChild(bait);
+
+        await new Promise<void>((r) => setTimeout(r, 150));
+
+        const blocked =
+          bait.offsetParent === null ||
+          bait.offsetHeight === 0 ||
+          bait.offsetWidth === 0 ||
+          getComputedStyle(bait).display === 'none' ||
+          getComputedStyle(bait).visibility === 'hidden';
+
+        document.body.removeChild(bait);
+        setAdBlocked(blocked);
+      } catch {
+        setAdBlocked(false);
+      } finally {
+        setChecking(false);
+      }
+    };
+
+    detect();
+  }, []);
+
+  return { adBlocked, checking };
+}

@@ -85,6 +85,10 @@ export default async function HomePage() {
             <Link href="/blog/chatgpt-formatting-fixer-for-word-and-docs" className="font-semibold">
               ChatGPT formatting fixer for Word & Docs
             </Link>
+            . Also try the{' '}
+            <Link href="/grok-watermark-detector" className="font-semibold">
+              Grok Watermark Detector
+            </Link>
             .
           </p>
         </section>

@@ -220,7 +220,8 @@ export default function ChatGPTTextToWordPressWorkflowPage() {
         <div className="rounded-2xl border border-brand-100 bg-brand-50 p-4 text-sm text-brand-800">
           <p className="font-semibold">Keep WordPress stable.</p>
           <p>
-            Clean your draft with the <Link href="/">ChatGPT Text Cleaner</Link>, paste via Code Editor, then format with blocks.
+            Clean your draft with the <Link href="/">ChatGPT Text Cleaner</Link>, paste via Code Editor, then format with blocks. If em dashes are corrupting Gutenberg blocks, fix them first with the{' '}
+            <Link href="/em-dash-remover">Em Dash Remover</Link>.
           </p>
         </div>
       </section>

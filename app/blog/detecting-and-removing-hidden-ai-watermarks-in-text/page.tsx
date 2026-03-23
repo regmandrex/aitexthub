@@ -246,7 +246,8 @@ export default function DetectingAndRemovingHiddenAIWatermarksInTextPage() {
           <p className="font-semibold">Clean text performs better.</p>
           <p>
             Detect hidden Unicode with the <Link href="/invisible-character-detector">Invisible Character Detector</Link>, then clean with the{' '}
-            <Link href="/">ChatGPT Text Cleaner</Link>.
+            <Link href="/">ChatGPT Text Cleaner</Link>. Using Grok? Try the{' '}
+            <Link href="/grok-watermark-detector">Grok Watermark Detector</Link>.
           </p>
         </div>
       </section>

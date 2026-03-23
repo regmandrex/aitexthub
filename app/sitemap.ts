@@ -6,9 +6,17 @@ import { getBlogSitemapSlugs } from '../lib/blog-posts';
 export default function sitemap(): MetadataRoute.Sitemap {
   const urls: MetadataRoute.Sitemap = [];
 
-  toolPages.forEach((page) => {
+  // Homepage — highest priority
+  urls.push({
+    url: siteUrl,
+    lastModified: new Date(),
+    changeFrequency: 'weekly',
+    priority: 1.0,
+  });
+
+  toolPages.filter((page) => page.slug !== '').forEach((page) => {
     urls.push({
-      url: page.slug ? `${siteUrl}/${page.slug}` : siteUrl,
+      url: `${siteUrl}/${page.slug}`,
       lastModified: new Date(),
       changeFrequency: 'weekly',
       priority: 0.8,
@@ -29,7 +37,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         url: page.slug ? `${siteUrl}/${page.slug}` : siteUrl,
         lastModified: new Date(),
         changeFrequency: 'monthly',
-        priority: 0.5,
+        priority: 0.6,
       });
     });
 
@@ -38,7 +46,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: slug ? `${siteUrl}/${slug}` : siteUrl,
       lastModified: new Date(),
       changeFrequency: 'monthly',
-      priority: 0.3,
+      priority: 0.6,
     });
   });
 
