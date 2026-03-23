@@ -14,7 +14,7 @@ export function useAdBlockDetector() {
       const bait = document.createElement('ins');
       bait.className = 'adsbygoogle';
       bait.style.cssText =
-        'display:block!important;width:300px!important;height:250px!important;position:absolute!important;left:-9999px!important;top:-9999px!important;';
+        'display:block;width:300px;height:250px;position:absolute;left:-9999px;top:-9999px;';
       document.body.appendChild(bait);
       await new Promise<void>((r) => setTimeout(r, 300));
 
