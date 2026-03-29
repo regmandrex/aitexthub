@@ -1,6 +1,6 @@
 export const navLinks = [
-  { href: '/', key: 'Nav.home' },
-  { href: '/ai-tools', key: 'Nav.tools' },
+  { href: '/' },
+  { href: '/ai-tools' },
 ];
 
 export function getLocalizedNavLinks() {

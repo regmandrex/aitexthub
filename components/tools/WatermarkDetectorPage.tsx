@@ -94,7 +94,7 @@ export default function WatermarkDetectorPage({ modelName, modelSlug, faqItems, 
           </p>
         </div>
 
-        <FAQSection items={faqItems} translationPrefix="FAQ.watermarkDetector" />
+        <FAQSection items={faqItems} />
         <FaqJsonLd faqs={faqItems} />
       </div>
     </div>

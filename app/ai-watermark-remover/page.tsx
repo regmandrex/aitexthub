@@ -9,9 +9,6 @@ import { siteUrl } from '@/lib/seo/url';
 import { RelatedTools } from '../../components/tool/RelatedTools';
 import AdSenseSlot from '../../components/ads/AdSenseSlot';
 import BelowToolAd from '../../components/ads/BelowToolAd';
-import { tOr } from '@/lib/i18n-fallback';
-
-const t = () => '';
 
 function RailAd({ side }: { side: 'left' | 'right' }) {
   const sideClass = side === 'left' ? 'left-4' : 'right-4';
@@ -668,12 +665,8 @@ const article = (
 export async function generateMetadata() {
   
   
-  const title = tOr(t, 'Tools.ai-watermark-remover.seoTitle', tOr(t, 'Tools.ai-watermark-remover.title', 'AI Watermark Remover'));
-  const description = tOr(
-    t,
-    'Tools.ai-watermark-remover.description',
-    'Remove hidden characters and formatting artifacts from AI-era text.'
-  );
+  const title = 'AI Watermark Remover';
+  const description = 'Remove hidden characters and formatting artifacts from AI-era text.';
 
   return buildMeta({
     title,
@@ -684,17 +677,9 @@ export async function generateMetadata() {
 
 export default async function AIWatermarkRemoverPage() {
   
-  const toolTitle = tOr(t, 'Tools.ai-watermark-remover.title', 'AI Watermark Remover');
-  const toolDescription = tOr(
-    t,
-    'Tools.ai-watermark-remover.description',
-    'Remove hidden characters and formatting artifacts from AI-era text.'
-  );
-  const subtitle = tOr(
-    t,
-    'AIWatermarkRemoverPage.subtitle',
-    'Remove hidden characters and formatting artifacts from AI-era text. Keep paragraphs intact and prepare clean, editor-safe copy for documents, CMS tools, and reports.'
-  );
+  const toolTitle = 'AI Watermark Remover';
+  const toolDescription = 'Remove hidden characters and formatting artifacts from AI-era text.';
+  const subtitle = 'Remove hidden characters and formatting artifacts from AI-era text. Keep paragraphs intact and prepare clean, editor-safe copy for documents, CMS tools, and reports.';
   
   return (
     <div className="relative bg-[#f7f9ff]">
@@ -719,11 +704,11 @@ export default async function AIWatermarkRemoverPage() {
           <div className="w-full max-w-none rounded-xl border border-slate-200 bg-white p-3 shadow-sm md:rounded-2xl md:p-6">
             <ToolWorkbench
               processor="chatgptTextCleaner"
-              primaryLabel={tOr(t, 'ToolUI.clean', tOr(t, 'HomePage.cleanPrimary', 'Clean'))}
-              inputLabel={tOr(t, 'AIWatermarkRemoverPage.inputLabel', 'Paste your AI text')}
-              outputLabel='HomePage.cleanOutputLabel'
-              inputPlaceholder={tOr(t, 'AIWatermarkRemoverPage.inputPlaceholder', 'Paste AI-generated text...')}
-              outputPlaceholder='ToolUI.outputPlaceholder'
+              primaryLabel={'Clean'}
+              inputLabel={'Paste your AI text'}
+              outputLabel='Clean result'
+              inputPlaceholder={'Paste AI-generated text...'}
+              outputPlaceholder='Your cleaned text will appear here.'
             />
           </div>
         </section>

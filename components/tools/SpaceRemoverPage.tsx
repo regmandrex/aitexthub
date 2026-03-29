@@ -93,7 +93,7 @@ export default function SpaceRemoverPage({ modelName, modelSlug, faqItems, conte
           </p>
         </div>
 
-        <FAQSection items={faqItems} translationPrefix="FAQ.spaceRemover" />
+        <FAQSection items={faqItems} />
         <FaqJsonLd faqs={faqItems} />
       </div>
     </div>

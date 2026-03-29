@@ -17,7 +17,9 @@ export function siteNavigationSchema() {
   return {
     '@context': 'https://schema.org',
     '@type': 'SiteNavigationElement',
-    name: navLinks.map((link) => link.key),
+    name: navLinks.map((link) =>
+      link.href === '/' ? 'Home' : link.href === '/ai-tools' ? 'AI Tools' : link.href
+    ),
     url: navUrls,
   };
 }

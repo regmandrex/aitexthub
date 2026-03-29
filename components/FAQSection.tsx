@@ -19,10 +19,9 @@ type FAQSectionProps = {
   title?: string;
   intro?: string;
   showCategories?: boolean;
-  translationPrefix?: string; // Ignored - kept for API compatibility
 };
 
-export default function FAQSection({ items, title, intro, showCategories = true, translationPrefix }: FAQSectionProps) {
+export default function FAQSection({ items, title, intro, showCategories = true }: FAQSectionProps) {
   const resolvedTitle = title ?? 'FAQ';
   const data = items ?? defaultFaqItems;
 

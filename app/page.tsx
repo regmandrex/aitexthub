@@ -72,7 +72,7 @@ export default async function HomePage() {
 
         <HomePageArticle />
 
-        <FAQSection items={faqItems} translationPrefix="FAQ.home" />
+        <FAQSection items={faqItems} />
 
         <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6">
           <h2 className="text-xl font-semibold text-slate-900">Learn more</h2>

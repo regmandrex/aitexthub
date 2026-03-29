@@ -9,9 +9,6 @@ import { siteUrl } from '@/lib/seo/url';
 import { RelatedTools } from "../../components/tool/RelatedTools";
 import AdSenseSlot from "../../components/ads/AdSenseSlot";
 import BelowToolAd from "../../components/ads/BelowToolAd";
-import { tOr } from '@/lib/i18n-fallback';
-
-const t = () => '';
 
 function RailAd({ side }: { side: 'left' | 'right' }) {
   const sideClass = side === 'left' ? 'left-4' : 'right-4';
@@ -199,18 +196,8 @@ const faqs: FaqItem[] = [
 ];
 
 export async function generateMetadata() {
-  
-  
-  const title = tOr(
-    t,
-    'Tools.grok-watermark-cleaner.seoTitle',
-    tOr(t, 'Tools.grok-watermark-cleaner.title', 'Grok Watermark Cleaner')
-  );
-  const description = tOr(
-    t,
-    'Tools.grok-watermark-cleaner.description',
-    'Remove hidden characters and formatting artifacts from Grok output.'
-  );
+  const title = 'Grok Watermark Cleaner';
+  const description = 'Remove hidden characters and formatting artifacts from Grok output.';
 
   return buildMeta({
     title,
@@ -226,14 +213,9 @@ const pageFaqs = faqs.map((item) => ({
 }));
 
 export default async function GrokWatermarkCleanerPage() {
-  
-  const toolTitle = tOr(t, 'Tools.grok-watermark-cleaner.title', 'Grok Watermark Cleaner');
-  const toolDescription = tOr(t, 'Tools.grok-watermark-cleaner.description', 'Remove hidden characters and formatting artifacts from Grok output.');
-  const subtitle = tOr(
-    t,
-    'GrokWatermarkCleanerPage.subtitle',
-    'Remove hidden characters and watermarks from Grok outputs. Keep paragraphs intact and prepare clean, editor-safe text for Word, Docs, and SEO-friendly publishing.'
-  );
+  const toolTitle = 'Grok Watermark Cleaner';
+  const toolDescription = 'Remove hidden characters and formatting artifacts from Grok output.';
+  const subtitle = 'Remove hidden characters and watermarks from Grok outputs. Keep paragraphs intact and prepare clean, editor-safe text for Word, Docs, and SEO-friendly publishing.';
   
   return (
     <div className="relative bg-[#f7f9ff]">
@@ -258,11 +240,11 @@ export default async function GrokWatermarkCleanerPage() {
           <div className="w-full max-w-none rounded-xl border border-slate-200 bg-white p-3 shadow-sm md:rounded-2xl md:p-6">
             <ToolWorkbench
               processor="chatgptTextCleaner"
-              primaryLabel={tOr(t, 'ToolUI.clean', tOr(t, 'HomePage.cleanPrimary', 'Clean'))}
-              inputLabel={tOr(t, 'GrokWatermarkCleanerPage.inputLabel', 'Paste your Grok AI text')}
-              outputLabel='HomePage.cleanOutputLabel'
-              inputPlaceholder={tOr(t, 'GrokWatermarkCleanerPage.inputPlaceholder', 'Paste text from Grok...')}
-              outputPlaceholder='ToolUI.outputPlaceholder'
+              primaryLabel={'Clean'}
+              inputLabel={'Paste your Grok AI text'}
+              outputLabel='Clean result'
+              inputPlaceholder={'Paste text from Grok...'}
+              outputPlaceholder='Your cleaned text will appear here.'
             />
           </div>
         </section>

@@ -26,33 +26,7 @@ export async function generateMetadata(): Promise<Metadata> {
   });
 }
 
-// FAQ keys structure - these will be translated
-const faqKeys = [
-  { key: 'faq1', category: 'General' },
-  { key: 'faq2', category: 'Technical' },
-  { key: 'faq3', category: 'Usage' },
-  { key: 'faq4', category: 'Formatting' },
-  { key: 'faq5', category: 'Technical' },
-  { key: 'faq6', category: 'Technical' },
-  { key: 'faq7', category: 'Technical' },
-  { key: 'faq8', category: 'General' },
-  { key: 'faq9', category: 'Usage' },
-  { key: 'faq10', category: 'SEO' },
-  { key: 'faq11', category: 'Academic' },
-  { key: 'faq12', category: 'Formatting' },
-  { key: 'faq13', category: 'Technical' },
-  { key: 'faq14', category: 'Formatting' },
-  { key: 'faq15', category: 'Limits' },
-  { key: 'faq16', category: 'Limits' },
-  { key: 'faq17', category: 'Privacy' },
-  { key: 'faq18', category: 'General' },
-  { key: 'faq19', category: 'Technical' },
-  { key: 'faq20', category: 'Usage' },
-  { key: 'faq21', category: 'Limits' },
-  { key: 'faq22', category: 'Workflow' },
-];
-
-// Helper function to create writeUp content
+// FAQ items for the page
 function createWriteUp() {
   return (
   <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">

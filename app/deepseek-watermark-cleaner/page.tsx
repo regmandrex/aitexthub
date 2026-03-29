@@ -9,9 +9,6 @@ import { siteUrl } from '@/lib/seo/url';
 import { RelatedTools } from "../../components/tool/RelatedTools";
 import AdSenseSlot from "../../components/ads/AdSenseSlot";
 import BelowToolAd from "../../components/ads/BelowToolAd";
-import { tOr } from '@/lib/i18n-fallback';
-
-const t = () => '';
 
 function RailAd({ side }: { side: 'left' | 'right' }) {
   const sideClass = side === 'left' ? 'left-4' : 'right-4';
@@ -195,16 +192,8 @@ const faqs: FaqItem[] = [
 export async function generateMetadata() {
   
   
-  const title = tOr(
-    t,
-    'Tools.deepseek-watermark-cleaner.seoTitle',
-    tOr(t, 'Tools.deepseek-watermark-cleaner.title', 'DeepSeek Watermark Cleaner')
-  );
-  const description = tOr(
-    t,
-    'Tools.deepseek-watermark-cleaner.description',
-    'Remove hidden characters and formatting artifacts from DeepSeek output.'
-  );
+  const title = 'DeepSeek Watermark Cleaner';
+  const description = 'Remove hidden characters and formatting artifacts from DeepSeek output.';
 
   return buildMeta({
     title,
@@ -221,17 +210,9 @@ const pageFaqs = faqs.map((item) => ({
 
 export default async function DeepSeekWatermarkCleanerPage() {
   
-  const toolTitle = tOr(t, 'Tools.deepseek-watermark-cleaner.title', 'DeepSeek Watermark Cleaner');
-  const toolDescription = tOr(
-    t,
-    'Tools.deepseek-watermark-cleaner.description',
-    'Remove hidden characters and formatting artifacts from DeepSeek output.'
-  );
-  const subtitle = tOr(
-    t,
-    'DeepSeekWatermarkCleanerPage.subtitle',
-    'Remove hidden characters and watermarks from DeepSeek outputs. Keep paragraphs intact and prepare clean, editor-safe text for Word, Docs, and SEO-friendly publishing.'
-  );
+  const toolTitle = 'DeepSeek Watermark Cleaner';
+  const toolDescription = 'Remove hidden characters and formatting artifacts from DeepSeek output.';
+  const subtitle = 'Remove hidden characters and watermarks from DeepSeek outputs. Keep paragraphs intact and prepare clean, editor-safe text for Word, Docs, and SEO-friendly publishing.';
   
   return (
     <div className="relative bg-[#f7f9ff]">
@@ -256,11 +237,11 @@ export default async function DeepSeekWatermarkCleanerPage() {
           <div className="w-full max-w-none rounded-xl border border-slate-200 bg-white p-3 shadow-sm md:rounded-2xl md:p-6">
             <ToolWorkbench
               processor="chatgptTextCleaner"
-              primaryLabel={tOr(t, 'ToolUI.clean', tOr(t, 'HomePage.cleanPrimary', 'Clean'))}
-              inputLabel={tOr(t, 'DeepSeekWatermarkCleanerPage.inputLabel', 'Paste your DeepSeek AI text')}
-              outputLabel='HomePage.cleanOutputLabel'
-              inputPlaceholder={tOr(t, 'DeepSeekWatermarkCleanerPage.inputPlaceholder', 'Paste text from DeepSeek...')}
-              outputPlaceholder='ToolUI.outputPlaceholder'
+              primaryLabel={'Clean'}
+              inputLabel={'Paste your DeepSeek AI text'}
+              outputLabel='Clean result'
+              inputPlaceholder={'Paste text from DeepSeek...'}
+              outputPlaceholder='Your cleaned text will appear here.'
             />
           </div>
         </section>

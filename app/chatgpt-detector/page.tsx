@@ -15,37 +15,7 @@ export const revalidate = 86400;
 
 const toolSlug = 'chatgpt-detector';
 
-// FAQ keys structure - these will be translated
-const faqKeys = [
-  { key: 'faq1', category: 'ChatGPT Detector FAQs' },
-  { key: 'faq2', category: 'ChatGPT Detector FAQs' },
-  { key: 'faq3', category: 'ChatGPT Detector FAQs' },
-  { key: 'faq4', category: 'ChatGPT Detector FAQs' },
-  { key: 'faq5', category: 'ChatGPT Detector FAQs' },
-  { key: 'faq6', category: 'ChatGPT Detector FAQs' },
-  { key: 'faq7', category: 'ChatGPT Detector FAQs' },
-  { key: 'faq8', category: 'ChatGPT Detector FAQs' },
-  { key: 'faq9', category: 'ChatGPT Detector FAQs' },
-  { key: 'faq10', category: 'ChatGPT Detector FAQs' },
-  { key: 'faq11', category: 'ChatGPT Detector FAQs' },
-  { key: 'faq12', category: 'ChatGPT Detector FAQs' },
-  { key: 'faq13', category: 'ChatGPT Detector FAQs' },
-  { key: 'faq14', category: 'ChatGPT Detector FAQs' },
-  { key: 'faq15', category: 'ChatGPT Detector FAQs' },
-  { key: 'faq16', category: 'ChatGPT Detector FAQs' },
-  { key: 'faq17', category: 'ChatGPT Detector FAQs' },
-  { key: 'faq18', category: 'ChatGPT Detector FAQs' },
-  { key: 'faq19', category: 'ChatGPT Detector FAQs' },
-  { key: 'faq20', category: 'ChatGPT Detector FAQs' },
-  { key: 'faq21', category: 'ChatGPT Detector FAQs' },
-  { key: 'faq22', category: 'ChatGPT Detector FAQs' },
-  { key: 'faq23', category: 'ChatGPT Detector FAQs' },
-  { key: 'faq24', category: 'ChatGPT Detector FAQs' },
-  { key: 'faq25', category: 'ChatGPT Detector FAQs' },
-];
-
 // Helper function to create writeUp content
-// Note: writeUp content needs to be hardcoded from en.json if needed
 function createWriteUp() {
   return (
   <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">

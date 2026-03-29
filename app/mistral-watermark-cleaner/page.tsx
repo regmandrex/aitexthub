@@ -9,9 +9,6 @@ import { siteUrl } from '@/lib/seo/url';
 import { RelatedTools } from "../../components/tool/RelatedTools";
 import AdSenseSlot from "../../components/ads/AdSenseSlot";
 import BelowToolAd from "../../components/ads/BelowToolAd";
-import { tOr } from '@/lib/i18n-fallback';
-
-const t = () => '';
 
 function RailAd({ side }: { side: 'left' | 'right' }) {
   const sideClass = side === 'left' ? 'left-4' : 'right-4';
@@ -199,18 +196,8 @@ const faqs: FaqItem[] = [
 ];
 
 export async function generateMetadata() {
-  
-  
-  const title = tOr(
-    t,
-    'Tools.mistral-watermark-cleaner.seoTitle',
-    tOr(t, 'Tools.mistral-watermark-cleaner.title', 'Mistral Watermark Cleaner')
-  );
-  const description = tOr(
-    t,
-    'Tools.mistral-watermark-cleaner.description',
-    'Remove hidden characters and formatting artifacts from Mistral output.'
-  );
+  const title = 'Mistral Watermark Cleaner';
+  const description = 'Remove hidden characters and formatting artifacts from Mistral output.';
 
   return buildMeta({
     title,
@@ -226,18 +213,9 @@ const pageFaqs = faqs.map((item) => ({
 }));
 
 export default async function MistralWatermarkCleanerPage() {
-  
-  const toolTitle = tOr(t, 'Tools.mistral-watermark-cleaner.title', 'Mistral Watermark Cleaner');
-  const toolDescription = tOr(
-    t,
-    'Tools.mistral-watermark-cleaner.description',
-    'Remove hidden characters and formatting artifacts from Mistral output.'
-  );
-  const subtitle = tOr(
-    t,
-    'MistralWatermarkCleanerPage.subtitle',
-    'Remove hidden characters and watermarks from Mistral outputs. Keep paragraphs intact and prepare clean, editor-safe text for Word, Docs, and SEO-friendly publishing.'
-  );
+  const toolTitle = 'Mistral Watermark Cleaner';
+  const toolDescription = 'Remove hidden characters and formatting artifacts from Mistral output.';
+  const subtitle = 'Remove hidden characters and watermarks from Mistral outputs. Keep paragraphs intact and prepare clean, editor-safe text for Word, Docs, and SEO-friendly publishing.';
   
   return (
     <div className="relative bg-[#f7f9ff]">
@@ -262,11 +240,11 @@ export default async function MistralWatermarkCleanerPage() {
           <div className="w-full max-w-none rounded-xl border border-slate-200 bg-white p-3 shadow-sm md:rounded-2xl md:p-6">
             <ToolWorkbench
               processor="chatgptTextCleaner"
-              primaryLabel={tOr(t, 'ToolUI.clean', tOr(t, 'HomePage.cleanPrimary', 'Clean'))}
-              inputLabel={tOr(t, 'MistralWatermarkCleanerPage.inputLabel', 'Paste your Mistral AI text')}
-              outputLabel='HomePage.cleanOutputLabel'
-              inputPlaceholder={tOr(t, 'MistralWatermarkCleanerPage.inputPlaceholder', 'Paste text from Mistral...')}
-              outputPlaceholder='ToolUI.outputPlaceholder'
+              primaryLabel={'Clean'}
+              inputLabel={'Paste your Mistral AI text'}
+              outputLabel='Clean result'
+              inputPlaceholder={'Paste text from Mistral...'}
+              outputPlaceholder='Your cleaned text will appear here.'
             />
           </div>
         </section>

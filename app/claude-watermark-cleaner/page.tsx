@@ -9,7 +9,6 @@ import { siteUrl } from '@/lib/seo/url';
 import { RelatedTools } from '../../components/tool/RelatedTools';
 import AdSenseSlot from '../../components/ads/AdSenseSlot';
 import BelowToolAd from '../../components/ads/BelowToolAd';
-import { tOr } from '@/lib/i18n-fallback';
 
 function RailAd({ side }: { side: 'left' | 'right' }) {
   const sideClass = side === 'left' ? 'left-4' : 'right-4';
@@ -210,20 +209,10 @@ const faqs: FaqItem[] = [
   },
 ];
 
-const t = () => '';
-
 export default async function ClaudeWatermarkCleanerPage() {
-  const toolTitle = tOr(t, 'Tools.claude-watermark-cleaner.title', 'Claude Watermark Cleaner');
-  const toolDescription = tOr(
-    t,
-    'Tools.claude-watermark-cleaner.description',
-    'Remove hidden characters and formatting artifacts from Claude output.'
-  );
-  const subtitle = tOr(
-    t,
-    'ClaudeWatermarkCleanerPage.subtitle',
-    'Remove hidden characters and watermarks from Claude outputs. Keep paragraphs intact and prepare clean, editor-safe text for Word, Docs, and SEO-friendly publishing.'
-  );
+  const toolTitle = 'Claude Watermark Cleaner';
+  const toolDescription = 'Remove hidden characters and formatting artifacts from Claude output.';
+  const subtitle = 'Remove hidden characters and watermarks from Claude outputs. Keep paragraphs intact and prepare clean, editor-safe text for Word, Docs, and SEO-friendly publishing.';
   
   return (
     <div className="relative bg-[#f7f9ff]">
@@ -248,11 +237,11 @@ export default async function ClaudeWatermarkCleanerPage() {
           <div className="w-full max-w-none rounded-xl border border-slate-200 bg-white p-3 shadow-sm md:rounded-2xl md:p-6">
             <ToolWorkbench
               processor="chatgptTextCleaner"
-              primaryLabel={tOr(t, 'ToolUI.clean', tOr(t, 'HomePage.cleanPrimary', 'Clean'))}
-              inputLabel={tOr(t, 'ClaudeWatermarkCleanerPage.inputLabel', 'Paste your Claude AI text')}
-              outputLabel='HomePage.cleanOutputLabel'
-              inputPlaceholder={tOr(t, 'ClaudeWatermarkCleanerPage.inputPlaceholder', 'Paste text from Claude...')}
-              outputPlaceholder='ToolUI.outputPlaceholder'
+              primaryLabel={'Clean'}
+              inputLabel={'Paste your Claude AI text'}
+              outputLabel='Clean result'
+              inputPlaceholder={'Paste text from Claude...'}
+              outputPlaceholder='Your cleaned text will appear here.'
             />
           </div>
         </section>

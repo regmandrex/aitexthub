@@ -1,0 +1,53 @@
+{
+  "group": "translators",
+  "tools": [
+    {
+      "slug": "ganglish-translator",
+      "toolName": "Ganglish translator",
+      "primaryKeyword": "Ganglish translator",
+      "shortDescription": "Translate text into Ganglish—a blend of English and Punjabi often used in social and informal contexts.",
+      "whatItDoes": "convert English into Ganglish-style text",
+      "languageStyle": "Ganglish"
+    },
+    {
+      "slug": "simlish-translator",
+      "toolName": "Simlish translator",
+      "primaryKeyword": "Simlish translator",
+      "shortDescription": "Translate text into Simlish—the fictional language from The Sims.",
+      "whatItDoes": "convert English into Simlish-style text",
+      "languageStyle": "Simlish"
+    },
+    {
+      "slug": "gibberish-translator",
+      "toolName": "gibberish translator",
+      "primaryKeyword": "gibberish translator",
+      "shortDescription": "Convert text into playful gibberish for fun or placeholder content.",
+      "whatItDoes": "convert text into gibberish",
+      "languageStyle": "gibberish"
+    },
+    {
+      "slug": "fancy-english-translator",
+      "toolName": "fancy English translator",
+      "primaryKeyword": "fancy English translator",
+      "shortDescription": "Convert plain text into fancy, decorative Unicode style.",
+      "whatItDoes": "convert plain text into fancy Unicode style",
+      "languageStyle": "fancy English"
+    },
+    {
+      "slug": "cartinese-translator",
+      "toolName": "Cartinese translator",
+      "primaryKeyword": "Cartinese translator",
+      "shortDescription": "Translate text into Cartinese—the playful style associated with Playboi Carti.",
+      "whatItDoes": "convert text into Cartinese-style",
+      "languageStyle": "Cartinese"
+    },
+    {
+      "slug": "playboi-carti-translator",
+      "toolName": "Playboi Carti translator",
+      "primaryKeyword": "Playboi Carti translator",
+      "shortDescription": "Translate text into the playful style associated with Playboi Carti.",
+      "whatItDoes": "convert text into Playboi Carti–style",
+      "languageStyle": "Playboi Carti style"
+    }
+  ]
+}

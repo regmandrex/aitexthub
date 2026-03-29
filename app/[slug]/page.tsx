@@ -5,12 +5,12 @@ import { buildToolMeta } from '@/lib/seo-meta';
 import { getAllTools, getToolBySlug } from '@/lib/tools/registry';
 
 type PageProps = {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 };
 
 // Generate static params for all tools at build time
 // Exclude tools that have their own dedicated page routes
-export function generateStaticParams() {
+export async function generateStaticParams() {
   const toolsWithDedicatedPages = new Set([
   'korean-nickname-generator',
   'fancy-english-translator',
@@ -62,7 +62,8 @@ export const dynamicParams = true;
 export const revalidate = 86400;
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
-  const tool = getToolBySlug(params.slug);
+  const { slug } = await params;
+  const tool = getToolBySlug(slug);
   if (!tool) return {};
 
   return buildToolMeta({
@@ -74,8 +75,10 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 }
 
 export default async function ToolPage({ params }: PageProps) {
-  const tool = getToolBySlug(params.slug);
+  const { slug } = await params;
+  const tool = getToolBySlug(slug);
   if (!tool) return notFound();
 
-  return <ToolPageRenderer slug={params.slug} />;
+  return <ToolPageRenderer slug={slug} />;
 }
+

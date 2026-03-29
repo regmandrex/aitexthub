@@ -1,0 +1,5 @@
+# {tool_name}: quick intro (template)
+
+Use the {tool_name} to {what_it_does}. This free online tool runs in your browser. Slug: {slug}. Target keyword: {primary_keyword}.
+
+What is {language_style}? {short_description}

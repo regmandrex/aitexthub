@@ -9,9 +9,6 @@ import { siteUrl } from '@/lib/seo/url';
 import { RelatedTools } from '../../components/tool/RelatedTools';
 import AdSenseSlot from '../../components/ads/AdSenseSlot';
 import BelowToolAd from '../../components/ads/BelowToolAd';
-import { tOr } from '@/lib/i18n-fallback';
-
-const t = () => '';
 
 function RailAd({ side }: { side: 'left' | 'right' }) {
   const sideClass = side === 'left' ? 'left-4' : 'right-4';
@@ -28,18 +25,8 @@ function RailAd({ side }: { side: 'left' | 'right' }) {
 export const revalidate = 86400;
 
 export async function generateMetadata() {
-  
-  
-  const title = tOr(
-    t,
-    'Tools.llama-watermark-cleaner.seoTitle',
-    tOr(t, 'Tools.llama-watermark-cleaner.title', 'LLAMA Watermark Cleaner')
-  );
-  const description = tOr(
-    t,
-    'Tools.llama-watermark-cleaner.description',
-    'Remove hidden characters and formatting artifacts from LLAMA output.'
-  );
+  const title = 'LLAMA Watermark Cleaner';
+  const description = 'Remove hidden characters and formatting artifacts from LLAMA output.';
 
   return buildMeta({
     title,
@@ -249,18 +236,9 @@ Support accessibility and formatting compliance in publishing workflows`,
 ];
 
 export default async function LLAMAWatermarkCleanerPage() {
-  
-  const toolTitle = tOr(t, 'Tools.llama-watermark-cleaner.title', 'LLAMA Watermark Cleaner');
-  const toolDescription = tOr(
-    t,
-    'Tools.llama-watermark-cleaner.description',
-    'Remove hidden characters and formatting artifacts from LLAMA output.'
-  );
-  const subtitle = tOr(
-    t,
-    'LLAMAWatermarkCleanerPage.subtitle',
-    'Remove hidden characters and watermarks from LLAMA outputs. Keep paragraphs intact and prepare clean, editor-safe text for Word, Docs, and SEO-friendly publishing.'
-  );
+  const toolTitle = 'LLAMA Watermark Cleaner';
+  const toolDescription = 'Remove hidden characters and formatting artifacts from LLAMA output.';
+  const subtitle = 'Remove hidden characters and watermarks from LLAMA outputs. Keep paragraphs intact and prepare clean, editor-safe text for Word, Docs, and SEO-friendly publishing.';
   
   return (
     <div className="relative bg-[#f7f9ff]">
@@ -285,11 +263,11 @@ export default async function LLAMAWatermarkCleanerPage() {
           <div className="w-full max-w-none rounded-xl border border-slate-200 bg-white p-3 shadow-sm md:rounded-2xl md:p-6">
             <ToolWorkbench
               processor="chatgptTextCleaner"
-              primaryLabel={tOr(t, 'ToolUI.clean', tOr(t, 'HomePage.cleanPrimary', 'Clean'))}
-              inputLabel={tOr(t, 'LLAMAWatermarkCleanerPage.inputLabel', 'Paste your LLAMA AI text')}
-              outputLabel='HomePage.cleanOutputLabel'
-              inputPlaceholder={tOr(t, 'LLAMAWatermarkCleanerPage.inputPlaceholder', 'Paste text from LLAMA...')}
-              outputPlaceholder='ToolUI.outputPlaceholder'
+              primaryLabel={'Clean'}
+              inputLabel={'Paste your LLAMA AI text'}
+              outputLabel='Clean result'
+              inputPlaceholder={'Paste text from LLAMA...'}
+              outputPlaceholder='Your cleaned text will appear here.'
             />
           </div>
         </section>

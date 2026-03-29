@@ -9,9 +9,6 @@ import { siteUrl } from '@/lib/seo/url';
 import { RelatedTools } from '../../components/tool/RelatedTools';
 import AdSenseSlot from '../../components/ads/AdSenseSlot';
 import BelowToolAd from '../../components/ads/BelowToolAd';
-import { tOr } from '@/lib/i18n-fallback';
-
-const t = () => '';
 
 function RailAd({ side }: { side: 'left' | 'right' }) {
   const sideClass = side === 'left' ? 'left-4' : 'right-4';
@@ -28,18 +25,8 @@ function RailAd({ side }: { side: 'left' | 'right' }) {
 export const revalidate = 86400;
 
 export async function generateMetadata() {
-  
-  
-  const title = tOr(
-    t,
-    'Tools.gemini-watermark-cleaner.seoTitle',
-    tOr(t, 'Tools.gemini-watermark-cleaner.title', 'Gemini Watermark Cleaner')
-  );
-  const description = tOr(
-    t,
-    'Tools.gemini-watermark-cleaner.description',
-    'Remove hidden characters and formatting artifacts from Gemini output.'
-  );
+  const title = 'Gemini Watermark Cleaner';
+  const description = 'Remove hidden characters and formatting artifacts from Gemini output.';
 
   return buildMeta({
     title,
@@ -217,20 +204,11 @@ const faqs: FaqItem[] = [
 ];
 
 export default async function GeminiWatermarkCleanerPage() {
-  
-  const toolTitle = tOr(t, 'Tools.gemini-watermark-cleaner.title', 'Gemini Watermark Cleaner');
-  const toolDescription = tOr(
-    t,
-    'Tools.gemini-watermark-cleaner.description',
-    'Remove hidden characters and formatting artifacts from Gemini output.'
-  );
-  const subtitle = tOr(
-    t,
-    'GeminiWatermarkCleanerPage.subtitle',
-    'Remove hidden characters and watermarks from Gemini outputs. Keep paragraphs intact and prepare clean, editor-safe text for Word, Docs, and SEO-friendly publishing.'
-  );
-  const inputLabel = tOr(t, 'GeminiWatermarkCleanerPage.inputLabel', 'Paste your Gemini AI text');
-  const inputPlaceholder = tOr(t, 'GeminiWatermarkCleanerPage.inputPlaceholder', 'Paste text from Gemini...');
+  const toolTitle = 'Gemini Watermark Cleaner';
+  const toolDescription = 'Remove hidden characters and formatting artifacts from Gemini output.';
+  const subtitle = 'Remove hidden characters and watermarks from Gemini outputs. Keep paragraphs intact and prepare clean, editor-safe text for Word, Docs, and SEO-friendly publishing.';
+  const inputLabel = 'Paste your Gemini AI text';
+  const inputPlaceholder = 'Paste text from Gemini...';
   
   return (
     <div className="relative bg-[#f7f9ff]">
@@ -255,11 +233,11 @@ export default async function GeminiWatermarkCleanerPage() {
           <div className="w-full max-w-none rounded-xl border border-slate-200 bg-white p-3 shadow-sm md:rounded-2xl md:p-6">
             <ToolWorkbench
               processor="chatgptTextCleaner"
-              primaryLabel={tOr(t, 'ToolUI.clean', tOr(t, 'HomePage.cleanPrimary', 'Clean'))}
+              primaryLabel={'Clean'}
               inputLabel={inputLabel}
-              outputLabel='HomePage.cleanOutputLabel'
+              outputLabel='Clean result'
               inputPlaceholder={inputPlaceholder}
-              outputPlaceholder='ToolUI.outputPlaceholder'
+              outputPlaceholder='Your cleaned text will appear here.'
             />
           </div>
         </section>
