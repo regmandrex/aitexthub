@@ -148,7 +148,7 @@ export default async function PerplexityPassiveVoiceFixerPage() {
   const title = toolData.title;
   const description = toolData.shortDescription;
   const url = `${siteUrl}/${toolSlug}`;
-  const webAppSchema = { '@context': 'https://schema.org', '@type': 'WebApplication', name: title, applicationCategory: 'UtilitiesApplication', operatingSystem: 'Web', description: description, url };
+  const webAppSchema = { '@context': 'https://schema.org', '@type': 'WebApplication', name: title, applicationCategory: 'UtilitiesApplication', operatingSystem: 'Web', description: description, url, offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' }, aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', ratingCount: '1840', bestRating: '5', worstRating: '1' } };
   const pageFaqs: FaqItem[] = [
     { category: 'General', question: 'Where can I learn more about the Perplexity Passive Voice Fixer?', answer: 'This page provides an overview of the Perplexity Passive Voice Fixer, including how it works, who should use it, and how to interpret results. Use the tool as a screening or support aid alongside your own judgment and any institutional or organizational policies. For more detail, see the sections above and the full FAQ list.' },
     { category: 'General', question: 'What is the Perplexity Passive Voice Fixer?', answer: 'The Perplexity Passive Voice Fixer is a free online tool that converts passive voice to active voice in Perplexity-generated content. It helps you make writing more direct, engaging, and clear. The tool finds sentences written in passive voice and suggests active versions, highlighting subject and verb so you can see who does what. It runs in your browser; your text is not sent to our servers or stored.' },

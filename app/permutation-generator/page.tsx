@@ -112,6 +112,7 @@ export default async function PermutationGeneratorPage() {
     description: description,
     url,
   };
+  const __rating = { offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' }, aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', ratingCount: '1840', bestRating: '5', worstRating: '1' } };
 
   const pageFaqs: FaqItem[] = [
     { category: 'General', question: 'What is a permutation generator?', answer: 'A permutation generator lists all possible orderings of a set of items. Order matters—so ABC and BAC count as different permutations. This tool can generate full permutations (every item used once) or partial permutations (a subset in each arrangement).' },

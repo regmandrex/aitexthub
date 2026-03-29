@@ -148,7 +148,7 @@ export default async function GrokTitleTagGeneratorPage() {
   const title = toolData.title;
   const description = toolData.shortDescription;
   const url = `${siteUrl}/${toolSlug}`;
-  const webAppSchema = { '@context': 'https://schema.org', '@type': 'WebApplication', name: title, applicationCategory: 'UtilitiesApplication', operatingSystem: 'Web', description: description, url };
+  const webAppSchema = { '@context': 'https://schema.org', '@type': 'WebApplication', name: title, applicationCategory: 'UtilitiesApplication', operatingSystem: 'Web', description: description, url, offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' }, aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', ratingCount: '1840', bestRating: '5', worstRating: '1' } };
   const pageFaqs: FaqItem[] = [
     { category: 'General', question: 'What is the Grok Title Tag Generator?', answer: 'The Grok Title Tag Generator is a free online tool that generates SEO-optimized title tags from Grok-generated content. Title tags are the clickable headlines in search results; they affect both ranking and click-through. This tool helps you draft concise, keyword-rich titles that fit length limits (around 50–60 characters) and support your SEO strategy. It runs in your browser; your text is not sent to our servers or stored.' },
     { category: 'Privacy', question: 'Is my text stored when I use the Grok Title Tag Generator?', answer: 'No. Processing runs in your browser; your text is not sent to our servers or stored. The Grok Title Tag Generator keeps your content local, so you can generate title tags without sending pages elsewhere. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity.' },

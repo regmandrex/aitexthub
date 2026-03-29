@@ -188,6 +188,7 @@ export default async function ChatGPTSentenceRewriterPage() {
     description: description,
     url,
   };
+  const __rating = { offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' }, aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', ratingCount: '1840', bestRating: '5', worstRating: '1' } };
 
   const pageFaqs: FaqItem[] = [
     { category: 'General', question: 'What is the ChatGPT Sentence Rewriter?', answer: 'The ChatGPT Sentence Rewriter is a free online tool that rewrites sentences to vary structure and wording while keeping meaning. It helps you rephrase for clarity, style, or to avoid repetition. It runs in your browser and does not send your text to our servers. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity.' },

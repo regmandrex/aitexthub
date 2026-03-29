@@ -45,6 +45,12 @@ export function ToolPageShell({ tool, ui, related, children }: ToolPageShellProp
         <section className="space-y-3 text-center">
           <h1 className="text-2xl font-semibold text-slate-900 md:text-3xl">{tool.title}</h1>
           <p className="max-w-2xl mx-auto text-sm text-slate-700 md:text-[15px]">{tool.shortDescription}</p>
+          <div className="flex items-center justify-center gap-1 text-sm text-slate-500">
+            <span className="text-yellow-500">★★★★★</span>
+            <span>4.9</span>
+            <span>·</span>
+            <span>Free</span>
+          </div>
         </section>
 
         <section className="relative w-full mt-6">

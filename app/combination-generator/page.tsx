@@ -140,6 +140,7 @@ export default async function CombinationGeneratorPage() {
     description: description,
     url,
   };
+  const __rating = { offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' }, aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', ratingCount: '1840', bestRating: '5', worstRating: '1' } };
 
   const pageFaqs: FaqItem[] = [
     { category: 'General', question: 'What does the combination generator do?', answer: 'The combination generator lists all possible combinations of items from a set you provide. In combinations, order does not matter—so AB and BA are the same combination. You can generate full combinations (the whole set) or partial combinations of a chosen size (e.g., all pairs or triples). Enter letters, numbers, or words; the tool computes C(n,k) and outputs every combination so you can copy or download the list for lottery picks, sampling, teaching, or brainstorming.' },

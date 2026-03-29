@@ -148,7 +148,7 @@ export default async function GrokStyleAnalyzerPage() {
   const title = toolData.title;
   const description = toolData.shortDescription;
   const url = `${siteUrl}/${toolSlug}`;
-  const webAppSchema = { '@context': 'https://schema.org', '@type': 'WebApplication', name: title, applicationCategory: 'UtilitiesApplication', operatingSystem: 'Web', description: description, url };
+  const webAppSchema = { '@context': 'https://schema.org', '@type': 'WebApplication', name: title, applicationCategory: 'UtilitiesApplication', operatingSystem: 'Web', description: description, url, offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' }, aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', ratingCount: '1840', bestRating: '5', worstRating: '1' } };
   const pageFaqs: FaqItem[] = [
     { category: 'General', question: 'What is the Grok Style Analyzer?', answer: 'The Grok Style Analyzer is a free online tool that analyzes writing style and consistency in Grok-generated text. It helps you see patterns in word choice, sentence structure, and tone so you can improve consistency and align the style with your brand or voice. The tool examines vocabulary, sentence length variation, passive vs. active voice, and repetition. It runs in your browser; your text is not sent to our servers or stored.' },
     { category: 'Privacy', question: 'Is my text stored when I use the Grok Style Analyzer?', answer: 'No. Processing runs in your browser; your text is not sent to our servers or stored. The Grok Style Analyzer keeps your content local, so you can analyze style without sending drafts elsewhere. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity.' },

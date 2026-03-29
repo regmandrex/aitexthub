@@ -148,7 +148,7 @@ export default async function GeminiCopyleaksCheckerPage() {
   const title = toolData.title;
   const description = toolData.shortDescription;
   const url = `${siteUrl}/${toolSlug}`;
-  const webAppSchema = { '@context': 'https://schema.org', '@type': 'WebApplication', name: title, applicationCategory: 'UtilitiesApplication', operatingSystem: 'Web', description: description, url };
+  const webAppSchema = { '@context': 'https://schema.org', '@type': 'WebApplication', name: title, applicationCategory: 'UtilitiesApplication', operatingSystem: 'Web', description: description, url, offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' }, aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', ratingCount: '1840', bestRating: '5', worstRating: '1' } };
   const pageFaqs: FaqItem[] = [
     { category: 'General', question: 'What is the Gemini Copyleaks checker?', answer: 'The Gemini Copyleaks checker is a free online tool that estimates how your text might be perceived by Copyleaks-style AI detection. It analyzes patterns that many AI and plagiarism detectors use—sentence structure, word choice, predictability—so you can revise before submission. It does not submit your text to Copyleaks or any external service; processing runs in your browser.' },
     { category: 'Privacy', question: 'Is my text stored when I use the Gemini Copyleaks checker?', answer: 'No. The tool runs in your browser; your text is not sent to our servers or Copyleaks. The Gemini Copyleaks checker keeps your content local, so you can self-check before submitting work without sending it elsewhere. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity.' },

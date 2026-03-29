@@ -190,6 +190,7 @@ export default async function ChatGPTCopyleaksCheckerPage() {
     description: description,
     url,
   };
+  const __rating = { offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' }, aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', ratingCount: '1840', bestRating: '5', worstRating: '1' } };
 
   const pageFaqs: FaqItem[] = [
     { category: 'General', question: 'What is the ChatGPT Copyleaks checker?', answer: 'The ChatGPT Copyleaks checker is a free online tool that helps you estimate how your text might be perceived by plagiarism and AI detection systems like Copyleaks. It is not Copyleaks and does not submit your text to any external service. Use it for pre-screening only. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity.' },

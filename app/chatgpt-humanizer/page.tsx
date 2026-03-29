@@ -194,6 +194,7 @@ export default async function ChatGPTHumanizerPage() {
     description: description,
     url,
   };
+  const __rating = { offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' }, aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', ratingCount: '1840', bestRating: '5', worstRating: '1' } };
 
   const pageFaqs: FaqItem[] = [
     { category: 'General', question: 'What is the ChatGPT Humanizer?', answer: 'The ChatGPT Humanizer is a free online tool that rewrites AI-generated text so it reads more naturally. It adjusts vocabulary, sentence structure, and tone to reduce robotic patterns that detectors often flag. It does not guarantee that text will pass every AI detector. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity.' },

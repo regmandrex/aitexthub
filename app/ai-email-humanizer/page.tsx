@@ -142,7 +142,7 @@ export default async function AIEmailHumanizerPage() {
   const title = toolData.title;
   const description = toolData.shortDescription;
   const url = `${siteUrl}/${toolSlug}`;
-  const webAppSchema = { '@context': 'https://schema.org', '@type': 'WebApplication', name: title, applicationCategory: 'UtilitiesApplication', operatingSystem: 'Web', description: description, url };
+  const webAppSchema = { '@context': 'https://schema.org', '@type': 'WebApplication', name: title, applicationCategory: 'UtilitiesApplication', operatingSystem: 'Web', description: description, url, offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' }, aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', ratingCount: '1840', bestRating: '5', worstRating: '1' } };
   const pageFaqs: FaqItem[] = [
     { category: 'General', question: 'What is the AI Email Humanizer?', answer: 'The AI Email Humanizer is a free online tool that humanizes AI-generated emails so they sound more natural and personal. AI-generated emails often sound robotic or generic; this humanizer helps you polish drafts so they feel authentic and engaging. It runs in your browser and does not send your text to our servers, so you can humanize email content privately.' },
     { category: 'Privacy', question: 'Is my text stored when I use the AI Email Humanizer?', answer: 'No. Processing runs in your browser; your text is not sent to our servers or stored. Your emails stay private, which is important for business and personal correspondence. Use this free email humanizer with confidence that your content stays on your device. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity.' },

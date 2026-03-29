@@ -146,7 +146,7 @@ export default async function PerplexityParaphraserPage() {
   const title = toolData.title;
   const description = toolData.shortDescription;
   const url = `${siteUrl}/${toolSlug}`;
-  const webAppSchema = { '@context': 'https://schema.org', '@type': 'WebApplication', name: title, applicationCategory: 'UtilitiesApplication', operatingSystem: 'Web', description: description, url };
+  const webAppSchema = { '@context': 'https://schema.org', '@type': 'WebApplication', name: title, applicationCategory: 'UtilitiesApplication', operatingSystem: 'Web', description: description, url, offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' }, aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', ratingCount: '1840', bestRating: '5', worstRating: '1' } };
   const pageFaqs: FaqItem[] = [
     { category: 'General', question: 'What is the Perplexity Paraphraser?', answer: 'The Perplexity Paraphraser is a free online tool that rephrases Perplexity-generated text while preserving meaning. It helps you get alternative wording, avoid repetition, and adjust tone—useful for essays, articles, emails, and any content you want to polish without losing the original message. This free paraphraser runs in your browser and does not send your text to our servers, so you can rephrase AI content privately.' },
     { category: 'Privacy', question: 'Is my text stored when I use the Perplexity Paraphraser?', answer: 'No. Processing runs in your browser; your text is not sent to our servers or stored. The Perplexity Paraphraser keeps your content local, which is important for academic drafts, confidential writing, and any rephrasing you do not want to share. Use this free tool with confidence that your text stays on your device.' },

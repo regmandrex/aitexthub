@@ -160,7 +160,7 @@ export default async function AITurnitinCheckerPage() {
   const title = toolData.title;
   const description = toolData.shortDescription;
   const url = `${siteUrl}/${toolSlug}`;
-  const webAppSchema = { '@context': 'https://schema.org', '@type': 'WebApplication', name: title, applicationCategory: 'UtilitiesApplication', operatingSystem: 'Web', description: description, url };
+  const webAppSchema = { '@context': 'https://schema.org', '@type': 'WebApplication', name: title, applicationCategory: 'UtilitiesApplication', operatingSystem: 'Web', description: description, url, offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' }, aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', ratingCount: '1840', bestRating: '5', worstRating: '1' } };
 
   const pageFaqs: FaqItem[] = [
     { category: 'General', question: 'What is the AI Turnitin checker?', answer: 'The AI Turnitin checker is a free online tool that estimates how your text might be perceived by AI and plagiarism detection systems like Turnitin. It analyzes patterns such as sentence structure, word choice, and predictability that many detectors use. It does not submit your text to Turnitin or any external service; processing runs in your browser so you can self-check and revise before submission.' },

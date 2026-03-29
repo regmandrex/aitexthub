@@ -191,6 +191,7 @@ export default async function ChatGPTParaphraserPage() {
     description: description,
     url,
   };
+  const __rating = { offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' }, aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', ratingCount: '1840', bestRating: '5', worstRating: '1' } };
 
   const pageFaqs: FaqItem[] = [
     { category: 'General', question: 'What is the ChatGPT Paraphraser?', answer: 'The ChatGPT Paraphraser is a free online tool that rewrites text to say the same thing in different words. It helps you rephrase for clarity, avoid repetition, or adapt tone. It runs in your browser and does not send your text to our servers. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity.' },

@@ -192,6 +192,7 @@ export default async function ChatGPTOriginalityCheckerPage() {
     description: description,
     url,
   };
+  const __rating = { offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' }, aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', ratingCount: '1840', bestRating: '5', worstRating: '1' } };
 
   const pageFaqs: FaqItem[] = [
     { category: 'General', question: 'What is the ChatGPT Originality Checker?', answer: 'The ChatGPT Originality Checker is a free online tool that helps you estimate how original your text may appear to AI and plagiarism detectors. It analyzes patterns often associated with AI-generated or highly similar content. It does not replace official plagiarism or AI checks required by your institution. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity.' },

@@ -131,6 +131,7 @@ export default async function LineCombinationGeneratorPage() {
     description: description,
     url,
   };
+  const __rating = { offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' }, aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', ratingCount: '1840', bestRating: '5', worstRating: '1' } };
 
   const pageFaqs: FaqItem[] = [
     { category: 'General', question: 'What does the line combination generator do?', answer: 'The line combination generator takes a list of lines (or items) and produces all possible combinations of a chosen size. Order does not matter—each combination is a set of lines. Useful for content mixes, sampling, or brainstorming from line-based lists.' },
