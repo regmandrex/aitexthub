@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { ReactNode } from 'react';
+import { headers } from 'next/headers';
 import dynamic from 'next/dynamic';
 import { Inter } from 'next/font/google';
 import Header from '../components/Header';
@@ -84,8 +85,11 @@ type RootLayoutProps = {
 export const revalidate = 86400;
 
 export default async function RootLayout({ children }: RootLayoutProps) {
+  const hdrs = await headers();
+  const lang = hdrs.get('x-page-lang') || 'en';
+
   return (
-    <html lang="en" dir="ltr">
+    <html lang={lang} dir="ltr">
       <head>
         <link rel="preconnect" href="https://pagead2.googlesyndication.com" />
         <link rel="preconnect" href="https://www.googletagmanager.com" />

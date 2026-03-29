@@ -17,8 +17,13 @@ function stripTrailingSlash(pathname: string) {
 }
 
 function nextWithPathname(request: NextRequest) {
+  const pathname = request.nextUrl.pathname;
   const requestHeaders = new Headers(request.headers);
-  requestHeaders.set('x-site-pathname', request.nextUrl.pathname);
+  requestHeaders.set('x-site-pathname', pathname);
+  const lang = pathname === '/korean-nickname-generator' || pathname.startsWith('/korean-nickname-generator/')
+    ? 'ko'
+    : 'en';
+  requestHeaders.set('x-page-lang', lang);
   return NextResponse.next({
     request: { headers: requestHeaders },
   });
