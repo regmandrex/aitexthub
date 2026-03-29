@@ -3,6 +3,7 @@ import type { ReactNode } from 'react';
 import Link from 'next/link';
 import Container from '../../components/Container';
 import { buildMeta } from '@/lib/seo-meta';
+import RailAd from '../../components/ads/RailAd';
 
 export const metadata: Metadata = buildMeta({
   title: 'GPTCLEANUP AI Blog - Fix Messy AI Text & Formatting',
@@ -13,6 +14,7 @@ export const metadata: Metadata = buildMeta({
 export default function BlogLayout({ children }: { children: ReactNode }) {
   return (
     <section>
+      <RailAd side="right" />
       <Container className="space-y-6">
         <div className="space-y-2">
           <div className="flex flex-wrap items-center justify-between gap-2">
