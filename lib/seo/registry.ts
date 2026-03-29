@@ -24,6 +24,20 @@ export const toolPages: ToolPage[] = [
     category: 'text',
   },
   {
+    slug: 'chatgpt-text-cleaner',
+    title: 'ChatGPT Text Cleaner',
+    description: 'Clean ChatGPT output by removing hidden Unicode characters, fixing spacing, and normalizing formatting for publishing.',
+    seoTitle: 'ChatGPT Text Cleaner – Remove Hidden Characters from AI Text Free',
+    category: 'text',
+  },
+  {
+    slug: 'ai-text-cleaner',
+    title: 'AI Text Cleaner',
+    description: 'Clean AI-generated text from any model by removing invisible characters, fixing whitespace, and preparing copy for publishing.',
+    seoTitle: 'AI Text Cleaner - Remove Hidden Characters & Clean AI Text Online Free',
+    category: 'ai-cleanup',
+  },
+  {
     slug: 'space-remover',
     title: 'Space Remover',
     description: 'Remove extra spaces, trim lines, and normalize whitespace for clean, paste-ready text.',
