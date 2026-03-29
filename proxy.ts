@@ -43,8 +43,15 @@ export function proxy(request: NextRequest) {
     return nextWithPathname(request);
   }
 
-  // 301 redirects for legacy model watermark remover slugs -> watermark cleaner slugs
+  // Redirect /index to homepage
   const normalized = stripTrailingSlash(pathname);
+  if (normalized === '/index') {
+    const url = request.nextUrl.clone();
+    url.pathname = '/';
+    return NextResponse.redirect(url, 301);
+  }
+
+  // 301 redirects for legacy model watermark remover slugs -> watermark cleaner slugs
   const directDest = WATERMARK_REMOVER_TO_CLEANER_REDIRECTS[normalized];
   if (directDest) {
     const url = request.nextUrl.clone();
