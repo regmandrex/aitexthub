@@ -49,6 +49,8 @@ export async function generateStaticParams() {
   'middle-english-translator',
   'old-english-translator',
   'navajo-translator',
+  'chatgpt-text-cleaner',
+  'ai-text-cleaner',
 ]);
   return getAllTools()
     .filter((tool) => !toolsWithDedicatedPages.has(tool.slug))
