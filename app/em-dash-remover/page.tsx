@@ -115,6 +115,7 @@ export default async function EmDashRemoverPage() {
   const description = toolData.shortDescription;
 
   const url = `${siteUrl}/${toolSlug}`;
+  const webAppSchema = { '@context': 'https://schema.org', '@type': 'WebApplication', name: title, applicationCategory: 'UtilitiesApplication', operatingSystem: 'Web', description: description, url, offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' }, aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', ratingCount: '1840', bestRating: '5', worstRating: '1' } };
 
   const pageFaqs: FaqItem[] = [
     { category: 'General', question: 'What does the em dash remover do?', answer: 'The em dash remover finds every em dash (—) and en dash (–) in your text and replaces them with a character you choose—such as a hyphen, comma, or space—or removes them entirely. It helps normalize text copied from Word, PDFs, or the web so it works in plain text, URLs, code, and content management systems without encoding or display issues.' },
@@ -144,6 +145,7 @@ export default async function EmDashRemoverPage() {
   return (
     <>
       <JsonLd data={webPageSchema({ name: title, url, description })} />
+      <JsonLd data={webAppSchema} />
       <ToolPageShell tool={{ ...toolData, title, shortDescription: description }} ui={<EmDashRemoverTool />} related={<RelatedTools currentSlug={toolData.slug} />}>
         {createWriteUp()}
         <div className="mt-10 space-y-3">

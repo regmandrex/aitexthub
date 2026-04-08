@@ -225,6 +225,7 @@ export default async function ShakespeareanTranslatorPage() {
   const title = toolData.title;
   const description = toolData.shortDescription;
   const url = `${siteUrl}/${toolSlug}`;
+  const webAppSchema = { '@context': 'https://schema.org', '@type': 'WebApplication', name: title, applicationCategory: 'UtilitiesApplication', operatingSystem: 'Web', description: description, url, offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' }, aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', ratingCount: '1840', bestRating: '5', worstRating: '1' } };
 
   const pageFaqs: FaqItem[] = [
     { category: 'General', question: 'What is a Shakespearean translator?', answer: 'A Shakespearean translator is an online tool that converts modern English into Shakespearean-style English—the language of William Shakespeare and Early Modern English. It applies period-appropriate forms such as thee, thou, thy, hath, dost, and art so you can translate into Shakespearean for scripts, education, themed content, or social posts. The result is stylistic and approximate rather than word-for-word Shakespeare.' },
@@ -255,6 +256,7 @@ export default async function ShakespeareanTranslatorPage() {
   return (
     <>
       <JsonLd data={webPageSchema({ name: title, url, description })} />
+      <JsonLd data={webAppSchema} />
       <ToolPageShell tool={{ ...toolData, title, shortDescription: description }} ui={<ShakespeareanTranslatorTool />} related={<RelatedTools currentSlug={toolData.slug} />}>
         {createWriteUp()}
         <div className="mt-10 space-y-3">

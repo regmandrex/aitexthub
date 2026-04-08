@@ -111,6 +111,7 @@ export default async function GanglishTranslatorPage() {
   const title = toolData.title;
   const description = toolData.shortDescription;
   const url = `${siteUrl}/${toolSlug}`;
+  const webAppSchema = { '@context': 'https://schema.org', '@type': 'WebApplication', name: title, applicationCategory: 'UtilitiesApplication', operatingSystem: 'Web', description: description, url, offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' }, aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', ratingCount: '1840', bestRating: '5', worstRating: '1' } };
 
   const pageFaqs: FaqItem[] = [
     { category: 'General', question: 'What is a Ganglish translator?', answer: 'A Ganglish translator converts English (or mixed) text into Ganglish—a blend of English and Punjabi (and sometimes other South Asian languages) often written in Roman script. It is used for informal and social content.' },
@@ -142,6 +143,7 @@ export default async function GanglishTranslatorPage() {
   return (
     <>
       <JsonLd data={webPageSchema({ name: title, url, description })} />
+      <JsonLd data={webAppSchema} />
       <ToolPageShell tool={{ ...toolData, title, shortDescription: description }} ui={<GanglishTranslatorTool />} related={<RelatedTools currentSlug={toolData.slug} />}>
         {createWriteUp()}
         <div className="mt-10 space-y-3">

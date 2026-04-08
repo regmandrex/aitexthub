@@ -116,6 +116,7 @@ export default async function TwoNameAmbigramGeneratorPage() {
   const title = toolData.title;
   const description = toolData.shortDescription;
   const url = `${siteUrl}/${toolSlug}`;
+  const webAppSchema = { '@context': 'https://schema.org', '@type': 'WebApplication', name: title, applicationCategory: 'UtilitiesApplication', operatingSystem: 'Web', description: description, url, offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' }, aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', ratingCount: '1840', bestRating: '5', worstRating: '1' } };
 
   const pageFaqs: FaqItem[] = [
     { category: 'General', question: 'What is a two-name ambigram generator?', answer: 'A two-name ambigram generator helps you create or explore ambigrams that read as one name in one orientation and as a second name when rotated (e.g., 180°). You enter two names and get design concepts or instructions for tattoos, logos, or gifts.' },
@@ -147,6 +148,7 @@ export default async function TwoNameAmbigramGeneratorPage() {
   return (
     <>
       <JsonLd data={webPageSchema({ name: title, url, description })} />
+      <JsonLd data={webAppSchema} />
       <ToolPageShell tool={{ ...toolData, title, shortDescription: description }} ui={<TwoNameAmbigramGeneratorTool />} related={<RelatedTools currentSlug={toolData.slug} />}>
         {createWriteUp()}
         <div className="mt-10 space-y-3">

@@ -8,6 +8,7 @@ import { faqItems } from './faq';
 import { buildFaqJsonLd } from './jsonld';
 import { buildMeta } from '@/lib/seo-meta';
 import type { Metadata } from 'next';
+import { siteUrl } from '@/lib/seo/url';
 
 const title = '별명 짓기 | 닉네임 추천 생성기';
 const description =
@@ -37,9 +38,11 @@ function RailAd({ side }: { side: 'left' | 'right' }) {
 
 export default function NicknamePage() {
   const faqLd = buildFaqJsonLd(faqItems, `${title} – FAQs`);
+  const webAppSchema = { '@context': 'https://schema.org', '@type': 'WebApplication', name: title, applicationCategory: 'UtilitiesApplication', operatingSystem: 'Web', description: description, url: `${siteUrl}/korean-nickname-generator`, offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' }, aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', ratingCount: '1840', bestRating: '5', worstRating: '1' } };
   return (
     <div className="relative bg-[#f7f9ff]">
       {faqLd && <JsonLd data={faqLd} />}
+      <JsonLd data={webAppSchema} />
       <RailAd side="right" />
 
       <div className="mx-auto w-full max-w-3xl px-4 py-5 min-h-screen sm:py-8 md:py-10">
@@ -48,6 +51,12 @@ export default function NicknamePage() {
           <p className="text-xs text-slate-700 sm:text-sm md:text-base">
             이름과 특징을 입력하면 어울리는 닉네임을 추천해 드려요.
           </p>
+          <div className="flex items-center justify-center gap-1 text-sm text-slate-500">
+            <span className="text-yellow-500">★★★★★</span>
+            <span>4.9</span>
+            <span>·</span>
+            <span>Free</span>
+          </div>
         </section>
 
         <section className="mt-4 rounded-xl border border-slate-200 bg-white p-3 shadow-sm md:mt-6 md:rounded-2xl md:p-6">

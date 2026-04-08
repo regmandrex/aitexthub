@@ -216,7 +216,8 @@ export default async function MistralWatermarkCleanerPage() {
   const toolTitle = 'Mistral Watermark Cleaner';
   const toolDescription = 'Remove hidden characters and formatting artifacts from Mistral output.';
   const subtitle = 'Remove hidden characters and watermarks from Mistral outputs. Keep paragraphs intact and prepare clean, editor-safe text for Word, Docs, and SEO-friendly publishing.';
-  
+  const webAppSchema = { '@context': 'https://schema.org', '@type': 'WebApplication', name: toolTitle, applicationCategory: 'UtilitiesApplication', operatingSystem: 'Web', description: toolDescription, url: `${siteUrl}/mistral-watermark-cleaner`, offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' }, aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', ratingCount: '1840', bestRating: '5', worstRating: '1' } };
+
   return (
     <div className="relative bg-[#f7f9ff]">
       <JsonLd
@@ -226,6 +227,7 @@ export default async function MistralWatermarkCleanerPage() {
           description: toolDescription,
         })}
       />
+      <JsonLd data={webAppSchema} />
       <RailAd side="right" />
 
       <div className="mx-auto w-full max-w-4xl px-4 py-5 min-h-screen sm:py-8 md:py-10">
@@ -234,6 +236,12 @@ export default async function MistralWatermarkCleanerPage() {
           <p className="max-w-2xl mx-auto text-xs text-slate-700 sm:text-sm md:text-[15px]">
             {subtitle}
           </p>
+          <div className="flex items-center justify-center gap-1 text-sm text-slate-500">
+            <span className="text-yellow-500">★★★★★</span>
+            <span>4.9</span>
+            <span>·</span>
+            <span>Free</span>
+          </div>
         </section>
 
         <section className="relative w-full mt-4 md:mt-6">

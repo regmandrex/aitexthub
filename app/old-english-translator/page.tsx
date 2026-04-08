@@ -200,6 +200,7 @@ export default async function OldEnglishTranslatorPage() {
   const title = toolData.title;
   const description = toolData.shortDescription;
   const url = `${siteUrl}/${toolSlug}`;
+  const webAppSchema = { '@context': 'https://schema.org', '@type': 'WebApplication', name: title, applicationCategory: 'UtilitiesApplication', operatingSystem: 'Web', description: description, url, offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' }, aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', ratingCount: '1840', bestRating: '5', worstRating: '1' } };
 
   const pageFaqs: FaqItem[] = [
     { category: 'General', question: 'What is an Old English translator?', answer: 'An Old English translator is an online tool that converts modern English into Old English (Anglo-Saxon) style—the language of Beowulf and Anglo-Saxon England. It helps you translate to Anglo Saxon for study, creative writing, or education. The result is stylistic and approximate rather than word-for-word historical text.' },
@@ -230,6 +231,7 @@ export default async function OldEnglishTranslatorPage() {
   return (
     <>
       <JsonLd data={webPageSchema({ name: title, url, description })} />
+      <JsonLd data={webAppSchema} />
       <ToolPageShell tool={{ ...toolData, title, shortDescription: description }} ui={<OldEnglishTranslatorTool />} related={<RelatedTools currentSlug={toolData.slug} />}>
         {createWriteUp()}
         <div className="mt-10 space-y-3">

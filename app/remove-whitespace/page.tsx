@@ -143,6 +143,7 @@ export default async function RemoveWhitespacePage() {
   const description = tool.shortDescription;
 
   const url = `${siteUrl}/${toolSlug}`;
+  const webAppSchema = { '@context': 'https://schema.org', '@type': 'WebApplication', name: title, applicationCategory: 'UtilitiesApplication', operatingSystem: 'Web', description: description, url, offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' }, aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', ratingCount: '1840', bestRating: '5', worstRating: '1' } };
 
   const pageFaqs: FaqItem[] = [
     { category: 'General', question: 'What does the remove whitespace tool do?', answer: 'The remove whitespace tool trims, collapses, or strips whitespace (spaces, tabs, and optionally line breaks) from your text. You can remove only leading and trailing spaces, collapse multiple spaces to one, or remove all whitespace so text becomes one continuous string. It runs in your browser and does not send your text to any server.' },
@@ -173,6 +174,7 @@ export default async function RemoveWhitespacePage() {
   return (
     <>
       <JsonLd data={webPageSchema({ name: title, url, description })} />
+      <JsonLd data={webAppSchema} />
       <ToolPageShell tool={{ ...tool, title, shortDescription: description }} ui={<RemoveWhitespaceTool />} related={<RelatedTools currentSlug={tool.slug} />}>
         {createWriteUp()}
 

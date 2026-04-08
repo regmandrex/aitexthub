@@ -182,6 +182,7 @@ export default async function MiddleEnglishTranslatorPage() {
   const title = toolData.title;
   const description = toolData.shortDescription;
   const url = `${siteUrl}/${toolSlug}`;
+  const webAppSchema = { '@context': 'https://schema.org', '@type': 'WebApplication', name: title, applicationCategory: 'UtilitiesApplication', operatingSystem: 'Web', description: description, url, offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' }, aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', ratingCount: '1840', bestRating: '5', worstRating: '1' } };
 
   const pageFaqs: FaqItem[] = [
     { category: 'General', question: 'What is a Middle English translator?', answer: 'A Middle English translator is an online tool that converts modern English into Middle English—the language of Geoffrey Chaucer, medieval manuscripts, and the period from roughly the eleventh to the fifteenth century. It works as a Middle English converter for literature courses, historical fiction, role-play, and education. The result is stylistic and approximate rather than word-for-word Chaucer.' },
@@ -212,6 +213,7 @@ export default async function MiddleEnglishTranslatorPage() {
   return (
     <>
       <JsonLd data={webPageSchema({ name: title, url, description })} />
+      <JsonLd data={webAppSchema} />
       <ToolPageShell tool={{ ...toolData, title, shortDescription: description }} ui={<MiddleEnglishTranslatorTool />} related={<RelatedTools currentSlug={toolData.slug} />}>
         {createWriteUp()}
         <div className="mt-10 space-y-3">

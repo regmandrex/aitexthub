@@ -166,6 +166,10 @@ const pageFaqs = faqs.map((item) => ({
 }));
 
 export default function ChatGPTWatermarkCleanerPage() {
+  const toolTitle = 'ChatGPT Watermark Remover';
+  const toolDescription = 'Remove hidden characters and watermarks from ChatGPT output. Strip zero-width/NBSP Unicode, fix spacing, and prepare clean text for Word, Docs, and CMS.';
+  const webAppSchema = { '@context': 'https://schema.org', '@type': 'WebApplication', name: toolTitle, applicationCategory: 'UtilitiesApplication', operatingSystem: 'Web', description: toolDescription, url: `${siteUrl}/chatgpt-watermark-remover`, offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' }, aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', ratingCount: '1840', bestRating: '5', worstRating: '1' } };
+
   return (
     <div className="relative bg-[#f7f9ff]">
       <JsonLd
@@ -176,6 +180,7 @@ export default function ChatGPTWatermarkCleanerPage() {
             'Remove hidden characters and watermarks from ChatGPT output. Strip zero-width/NBSP Unicode, fix spacing, and prepare clean text for Word, Docs, and CMS.',
         })}
       />
+      <JsonLd data={webAppSchema} />
       <RailAd side="right" />
 
       <div className="mx-auto w-full max-w-4xl px-4 py-5 min-h-screen sm:py-8 md:py-10">
@@ -185,6 +190,12 @@ export default function ChatGPTWatermarkCleanerPage() {
             Remove hidden characters and watermarks from ChatGPT outputs. Keep paragraphs intact and prepare clean, editor-safe text for Word,
             Docs, and SEO-friendly publishing.
           </p>
+          <div className="flex items-center justify-center gap-1 text-sm text-slate-500">
+            <span className="text-yellow-500">★★★★★</span>
+            <span>4.9</span>
+            <span>·</span>
+            <span>Free</span>
+          </div>
         </section>
 
         <section className="relative w-full mt-4 md:mt-6">

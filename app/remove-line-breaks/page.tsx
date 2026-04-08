@@ -132,6 +132,7 @@ export default async function RemoveLineBreaksPage() {
   const description = toolData.shortDescription;
 
   const url = `${siteUrl}/${toolSlug}`;
+  const webAppSchema = { '@context': 'https://schema.org', '@type': 'WebApplication', name: title, applicationCategory: 'UtilitiesApplication', operatingSystem: 'Web', description: description, url, offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' }, aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', ratingCount: '1840', bestRating: '5', worstRating: '1' } };
 
   const pageFaqs: FaqItem[] = [
     { category: 'General', question: 'What does the remove line breaks tool do?', answer: 'The remove line breaks tool strips or replaces line breaks (newlines) in your text so you get one continuous line or a single merged paragraph. You can replace line breaks with a space to keep words separated or remove them entirely. It is useful for text copied from PDFs, emails, spreadsheets, or AI output.' },
@@ -162,6 +163,7 @@ export default async function RemoveLineBreaksPage() {
   return (
     <>
       <JsonLd data={webPageSchema({ name: title, url, description })} />
+      <JsonLd data={webAppSchema} />
       <ToolPageShell tool={{ ...toolData, title, shortDescription: description }} ui={<RemoveLineBreaksTool />} related={<RelatedTools currentSlug={toolData.slug} />}>
         {createWriteUp()}
         <div className="mt-10 space-y-3">

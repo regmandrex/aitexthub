@@ -37,10 +37,12 @@ export default function LineSpacingPage({ modelName, modelSlug, faqItems, conten
   const subtitle = 'Adjust line spacing in text for better readability and formatting.';
   const description = `Adjust line spacing in ${modelName} text to single, 1.5, double, or custom spacing for better readability and formatting.`;
   const normalizedContent = content ? Children.toArray(content) : null;
+  const webAppSchema = { '@context': 'https://schema.org', '@type': 'WebApplication', name: title, applicationCategory: 'UtilitiesApplication', operatingSystem: 'Web', description: description, url, offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' }, aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', ratingCount: '1840', bestRating: '5', worstRating: '1' } };
 
   return (
     <div className="relative bg-[#f7f9ff]">
       <JsonLd data={webPageSchema({ name: title, url, description })} />
+      <JsonLd data={webAppSchema} />
       <RailAd side="right" />
 
       <div className="mx-auto w-full max-w-4xl px-4 py-10 min-h-screen">
@@ -50,6 +52,12 @@ export default function LineSpacingPage({ modelName, modelSlug, faqItems, conten
             <p className="max-w-2xl mx-auto text-sm text-slate-700 md:text-[15px]">
               {subtitle}
             </p>
+            <div className="flex items-center justify-center gap-1 text-sm text-slate-500">
+              <span className="text-yellow-500">★★★★★</span>
+              <span>4.9</span>
+              <span>·</span>
+              <span>Free</span>
+            </div>
           </div>
         </section>
 

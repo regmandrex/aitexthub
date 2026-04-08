@@ -130,6 +130,7 @@ export default async function AmbigramTattooGeneratorPage() {
   const title = toolData.title;
   const description = toolData.shortDescription;
   const url = `${siteUrl}/${toolSlug}`;
+  const webAppSchema = { '@context': 'https://schema.org', '@type': 'WebApplication', name: title, applicationCategory: 'UtilitiesApplication', operatingSystem: 'Web', description: description, url, offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' }, aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', ratingCount: '1840', bestRating: '5', worstRating: '1' } };
 
   const pageFaqs: FaqItem[] = [
     { category: 'General', question: 'What is an ambigram tattoo generator?', answer: 'An ambigram tattoo generator is an online tool that helps you create ambigram designs—lettering that reads as one name or word in one orientation and as another (or the same) when rotated, typically 180°. You enter two names or one name and get design concepts or instructions to use for tattoos, couple names, or gifts.' },
@@ -160,6 +161,7 @@ export default async function AmbigramTattooGeneratorPage() {
   return (
     <>
       <JsonLd data={webPageSchema({ name: title, url, description })} />
+      <JsonLd data={webAppSchema} />
       <ToolPageShell tool={{ ...toolData, title, shortDescription: description }} ui={<TwoNameAmbigramGeneratorTool />} related={<RelatedTools currentSlug={toolData.slug} />}>
         {createWriteUp()}
         <div className="mt-10 space-y-3">

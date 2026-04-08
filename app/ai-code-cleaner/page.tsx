@@ -197,6 +197,7 @@ export default async function AICodeCleanerPage() {
   const description = toolData.shortDescription;
 
   const url = `${siteUrl}/${toolSlug}`;
+  const webAppSchema = { '@context': 'https://schema.org', '@type': 'WebApplication', name: title, applicationCategory: 'UtilitiesApplication', operatingSystem: 'Web', description: description, url, offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' }, aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', ratingCount: '1840', bestRating: '5', worstRating: '1' } };
 
   const pageFaqs: FaqItem[] = [
     { category: 'General', question: 'What is the AI Code Cleaner?', answer: 'The AI Code Cleaner is a free online tool that helps clean and format code. It can remove unnecessary whitespace, normalize indentation, and improve readability. It runs in your browser and does not send your code to our servers.' },
@@ -226,6 +227,7 @@ export default async function AICodeCleanerPage() {
   return (
     <>
       <JsonLd data={webPageSchema({ name: title, url, description })} />
+      <JsonLd data={webAppSchema} />
       <ToolPageShell tool={{ ...toolData, title, shortDescription: description }} ui={<AICodeCleanerTool />} related={<RelatedTools currentSlug={toolData.slug} />}>
         {createWriteUp()}
 

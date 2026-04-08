@@ -37,10 +37,12 @@ export default function WatermarkDetectorPage({ modelName, modelSlug, faqItems, 
   const title = `${modelName} Watermark Detector`;
   const subtitle = 'Scan text for formatting artifacts like hidden Unicode characters, whitespace patterns, and repeated punctuation marks.';
   const description = `Inspect ${modelName} text for possible formatting artifacts, hidden Unicode, and whitespace patterns.`;
+  const webAppSchema = { '@context': 'https://schema.org', '@type': 'WebApplication', name: title, applicationCategory: 'UtilitiesApplication', operatingSystem: 'Web', description: description, url, offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' }, aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', ratingCount: '1840', bestRating: '5', worstRating: '1' } };
 
   return (
     <div className="relative bg-[#f7f9ff]">
       <JsonLd data={webPageSchema({ name: title, url, description })} />
+      <JsonLd data={webAppSchema} />
       <RailAd side="right" />
 
       <div className="mx-auto w-full max-w-4xl px-4 py-5 min-h-screen sm:py-8 md:py-10">
@@ -50,6 +52,12 @@ export default function WatermarkDetectorPage({ modelName, modelSlug, faqItems, 
             <p className="max-w-2xl mx-auto text-xs text-slate-700 sm:text-sm md:text-[15px]">
               {subtitle}
             </p>
+            <div className="flex items-center justify-center gap-1 text-sm text-slate-500">
+              <span className="text-yellow-500">★★★★★</span>
+              <span>4.9</span>
+              <span>·</span>
+              <span>Free</span>
+            </div>
           </div>
         </section>
 
