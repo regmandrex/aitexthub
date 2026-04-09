@@ -112,12 +112,12 @@ const faqs: FaqItem[] = [
   {
     category: 'Use Cases',
     question: 'When should content marketers use a format remover?',
-    answer: 'Content marketers should use a format remover every time they move AI-generated content from a chat interface into a CMS or publishing platform. Most AI models format their output with markdown, which does not render correctly in most CMS body editors. A format remover strips the markdown before the content enters the CMS, so the content team can apply formatting using the CMS\'s own editor (WYSIWYG buttons, heading selectors) rather than dealing with raw markdown syntax. This is especially important for teams that use WordPress, Shopify, Hubspot CMS, or other platforms where markdown is not natively supported in the content editor.',
+    answer: 'Content marketers should use a format remover — also called a formatting remover or text formatting remover — every time they move AI-generated content from a chat interface into a CMS or publishing platform. Most AI models format their output with markdown, which does not render correctly in most CMS body editors. To remove formatting before the content enters the CMS, run it through this tool so the content team can apply headings, bold, and structure using the CMS\'s own editor (WYSIWYG buttons, heading selectors) rather than dealing with raw markdown syntax. This is especially important for teams that use WordPress, Shopify, Hubspot CMS, or other platforms where markdown is not natively supported in the content editor.',
   },
   {
     category: 'Use Cases',
     question: 'Should copywriters use a format remover before delivering to clients?',
-    answer: 'Yes. Copywriters who deliver AI-assisted content should run it through a format remover as a standard quality step. Clients who receive formatted AI copy may encounter markdown symbols displaying as literal asterisks when they paste into their systems. Curly quotes can cause errors if the client\'s system processes the text programmatically. Delivering format-clean content demonstrates professionalism and prevents client-side issues that reflect poorly on the copywriter.',
+    answer: 'Yes. Copywriters who deliver AI-assisted content should run it through a format remover — or formatting remover — as a standard quality step. Clients who receive formatted AI copy may encounter markdown symbols displaying as literal asterisks when they paste into their systems. To remove formatting before delivery, paste the draft into the GPTCLEANUP AI format remover above and clean it in one click. Curly quotes can cause errors if the client\'s system processes the text programmatically. Delivering format-clean content demonstrates professionalism and prevents client-side issues that reflect poorly on the copywriter.',
   },
   {
     category: 'Use Cases',
@@ -160,7 +160,7 @@ const article = (
   <section className="mt-10 prose prose-slate max-w-none text-sm prose-headings:font-semibold prose-headings:text-slate-900 prose-p:text-slate-700 prose-li:text-slate-700">
     <h2>Format Remover — Strip Text Formatting Online in One Click</h2>
     <p>A <strong>format remover</strong> solves the fundamental problem of formatted text in the wrong place. When you copy content from ChatGPT, Claude, Gemini, Microsoft Word, a website, or any rich text source, formatting travels with the visible words. Markdown syntax, typographic punctuation, invisible Unicode characters, and irregular spacing all come along whether you want them or not. In a different editor, these formatting artifacts show up as literal symbols, break syntax in code and data files, cause layout problems in published pages, and produce rendering inconsistencies in email clients.</p>
-    <p>GPTCLEANUP AI is a free <strong>text format remover</strong> that handles every layer of formatting in a single click — markdown, curly quotes, em dashes, invisible Unicode, excess spacing. No account, no upload, no limit. Paste your text, click Clean Text, and copy plain, unformatted output that works in any application.</p>
+    <p>GPTCLEANUP AI is a free <strong>text format remover</strong> and <strong>formatting remover</strong> that handles every layer of formatting in a single click — markdown, curly quotes, em dashes, invisible Unicode, excess spacing. No account, no upload, no limit. Paste your text, click Clean Text, and copy plain, unformatted output that works in any application. Use it to <strong>remove formatting</strong> from AI output, Word documents, PDFs, websites, and any other source.</p>
 
     <h2>What a Format Remover Does</h2>
     <p>The job of a format remover is to strip every formatting layer from text while preserving the underlying words. This is distinct from both a reformatter (which changes formatting to a different style) and a text editor (which allows you to apply new formatting). A format remover returns text to a neutral, unformatted state — clean of all artifacts from the source document — so you can apply formatting from scratch in your target application.</p>
@@ -173,7 +173,8 @@ const article = (
     <h3>Invisible Character Removal</h3>
     <p>Invisible Unicode characters are the most hidden layer of formatting. Zero-width spaces, byte-order marks, non-breaking spaces, soft hyphens, and directional marks produce no visible output but affect how text behaves in every application that consumes it. The format remover removes all invisible Unicode characters as part of its formatting cleanup, ensuring the output contains no hidden artifacts beyond what is visible on screen.</p>
 
-    <h2>Sources of Formatting Artifacts</h2>
+    <h2>Where to Use a Format Remover — Common Sources of Formatting Artifacts</h2>
+    <p>Knowing which sources introduce which formatting artifacts helps you understand when to <strong>remove formatting</strong> and what the <strong>formatting remover</strong> will clean up in each case.</p>
     <h3>AI Chat Interfaces</h3>
     <p>ChatGPT, Claude.ai, and Google Gemini display AI output in a web browser that renders markdown. The text you see is a visual representation of markdown-formatted text. When you copy it, you are copying the underlying markdown syntax, not the rendered visual formatting. Every bold phrase comes with its asterisks, every heading comes with its hash marks, every code snippet comes with its backticks. Additionally, the rendering layer adds invisible Unicode characters at various positions during copy operations.</p>
     <h3>Microsoft Word and Google Docs</h3>
