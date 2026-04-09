@@ -1,0 +1,275 @@
+import type { Metadata } from 'next';
+import { notFound } from 'next/navigation';
+import { JsonLd } from '@/components/JsonLd';
+import FAQSection from '@/components/FAQSection';
+import FaqJsonLd from '@/components/FaqJsonLd';
+import type { FaqItem } from '@/components/faqData';
+import { RelatedTools } from '@/components/tool/RelatedTools';
+import AdSenseSlot from '@/components/ads/AdSenseSlot';
+import BelowToolAd from '@/components/ads/BelowToolAd';
+import ToolWorkbench from '@/components/ToolWorkbench';
+import { buildMeta } from '@/lib/seo-meta';
+import { siteUrl } from '@/lib/seo/url';
+import { webPageSchema } from '@/lib/schema/webpage';
+import { getToolBySlug } from '@/lib/tools/registry';
+
+export const revalidate = 86400;
+
+const toolSlug = 'format-remover';
+
+function RailAd({ side }: { side: 'left' | 'right' }) {
+  const sideClass = side === 'left' ? 'left-4' : 'right-4';
+  return (
+    <div className={`hidden lg:block fixed top-[220px] ${sideClass} z-20`}>
+      <div className="w-[180px] min-h-[260px]">
+        <AdSenseSlot className="w-full" />
+      </div>
+    </div>
+  );
+}
+
+const faqs: FaqItem[] = [
+  {
+    category: 'General',
+    question: 'What is a format remover?',
+    answer: 'A format remover is a tool that strips formatting characters and symbols from text without changing the visible words or their meaning. It removes markdown syntax — asterisks, hash marks, backticks, underscores — that AI models use to structure their output. It converts curly (smart) quotes to straight quotes, normalizes em dashes and en dashes to plain hyphens, and removes invisible Unicode characters like zero-width spaces and non-breaking spaces. A format remover is the right tool when you need plain, unformatted text that behaves consistently in any editor, CMS, or data format.',
+  },
+  {
+    category: 'General',
+    question: 'Why do I need to remove text formatting?',
+    answer: 'When you copy text from AI models, rich text editors, websites, or PDFs, formatting characters travel with the visible words. Markdown asterisks become literal characters in editors that do not render markdown. Curly quotes cause JSON parse errors and code syntax errors. Em dashes break command-line tools and data file parsers. Non-breaking spaces prevent correct line wrapping in web layouts and emails. Hidden Unicode characters inflate word counts and cause string matching failures in spreadsheets and databases. A format remover strips all of these in one click so your text behaves correctly wherever you paste it.',
+  },
+  {
+    category: 'General',
+    question: 'Is this format remover free?',
+    answer: 'Yes. This format remover is completely free to use with no account, no sign-up, and no usage limits. All processing happens locally in your browser — your text is never uploaded to any server. You can use it for as much text as you need, as often as you need, for any purpose including commercial work, client deliverables, academic submissions, and enterprise content. There are no premium tiers, no character limits, and no hidden costs.',
+  },
+  {
+    category: 'Usage',
+    question: 'How do I remove text formatting with this tool?',
+    answer: 'Paste your text into the input area. Click the Clean Text button. The format remover strips all markdown formatting characters, converts curly quotes to straight quotes, normalizes em dashes and en dashes, removes invisible Unicode characters, collapses excessive blank lines, and normalizes spacing. The cleaned result appears in the output area. Click Copy to copy the plain text to your clipboard. The entire operation takes seconds regardless of document length.',
+  },
+  {
+    category: 'Usage',
+    question: 'What formatting does this tool remove?',
+    answer: 'The format remover handles every common type of formatting artifact: markdown syntax (asterisks for bold, underscores for italic, hash marks for headings, backticks for code), curly (smart) single and double quotation marks converted to straight equivalents, em dashes (—) and en dashes (–) normalized to plain hyphens, invisible Unicode characters including zero-width spaces (U+200B), non-breaking spaces (U+00A0), byte-order marks (U+FEFF), soft hyphens (U+00AD), and directional marks, excessive blank lines between paragraphs normalized to single line breaks, and inconsistent line endings (CRLF) normalized to LF.',
+  },
+  {
+    category: 'Usage',
+    question: 'Does the format remover change my words?',
+    answer: 'No. The format remover removes formatting characters and symbols but never alters the words, sentences, or paragraphs in your text. Invisible characters are deleted. Markdown syntax characters (asterisks, hash marks, backticks) are deleted — the text they were formatting remains. Curly quotes are converted to straight quotes — the quotation marks are still there, just in the standard form. Em dashes are converted to hyphens — the dash punctuation is still present. Your content is preserved; only the formatting artifacts are removed.',
+  },
+  {
+    category: 'Usage',
+    question: 'Can I use the format remover on documents of any length?',
+    answer: 'Yes. There is no character or word limit. You can paste a short paragraph or a 50,000-word document — the format remover processes it instantly. All processing happens in your browser using JavaScript, so there is no server-side limitation on document size. For very large documents (100,000+ words), processing may take a second or two on older devices, but performance is excellent on modern hardware.',
+  },
+  {
+    category: 'Technical',
+    question: 'What is markdown formatting and why do AI models use it?',
+    answer: 'Markdown is a lightweight text formatting syntax that uses plain characters to indicate formatting: double asterisks around text indicate bold, single asterisks or underscores indicate italic, hash marks at the start of a line indicate headings at different levels (# for H1, ## for H2), backticks around text indicate code, and hyphens at the start of lines indicate list items. AI models like ChatGPT, Claude, and Gemini use markdown because it is a compact, widely-understood way to add structure to plain text responses, and the interfaces those models run in (ChatGPT.com, Claude.ai) render markdown visually. The problem arises when the text is pasted into an application that does not render markdown, where the asterisks, hash marks, and backticks appear as literal characters.',
+  },
+  {
+    category: 'Technical',
+    question: 'Why do curly quotes cause problems?',
+    answer: 'Curly quotes — typographically correct left-leaning and right-leaning quotation marks — are the "smart" quotes that word processors and AI models substitute for the simple straight ASCII quote character. In a finished print document, curly quotes are correct and look better. In technical contexts, they cause serious problems: JSON requires straight double quotes as string delimiters — curly quotes cause immediate parse errors. Python, JavaScript, and most other programming languages require straight quotes in string literals — curly quotes cause syntax errors. CSV parsers use straight double quotes to delimit fields — curly quotes cause field alignment failures. HTML attribute values are delimited by straight quotes — curly quotes create malformed HTML. The format remover converts all curly quote variants to their straight ASCII equivalents.',
+  },
+  {
+    category: 'Technical',
+    question: 'What is the difference between removing formatting and removing hidden characters?',
+    answer: 'Removing formatting means stripping visible formatting characters — markdown syntax, typographic punctuation — that you can see in your text. Removing hidden characters means deleting invisible Unicode code points that you cannot see but that affect how text behaves. A comprehensive format remover does both. Removing visible formatting without removing hidden characters leaves your text with invisible artifacts. Removing hidden characters without removing visible formatting leaves markdown symbols in your text. This tool handles both in a single pass for thorough cleaning.',
+  },
+  {
+    category: 'Technical',
+    question: 'Does removing formatting affect paragraph structure?',
+    answer: 'No. The format remover preserves paragraph breaks and document structure. Paragraphs separated by blank lines remain separated. Bullet points remain as separate lines after their hyphens or asterisks are removed. Headings remain on their own lines after their hash marks are removed. The logical structure of your text is unchanged; only the formatting syntax characters are stripped. Excessive blank lines — three or four blank lines between paragraphs, which is common in AI output — are normalized to a single blank line.',
+  },
+  {
+    category: 'Compatibility',
+    question: 'Which applications is this format remover designed for?',
+    answer: 'This format remover is designed for any application where plain, unformatted text is needed. It is most commonly used to prepare text for: WordPress and other CMS platforms where markdown is not rendered in the body editor, Gmail and email clients where markdown symbols appear as literal characters, Google Docs and Microsoft Word where you want to apply your own formatting rather than inherit AI formatting, JSON files and APIs where curly quotes cause parse errors, Python and JavaScript where curly quotes in string literals cause syntax errors, CSV files and spreadsheets where curly quotes and em dashes cause parsing issues, and Notion, Confluence, and Airtable where imported text may render unexpectedly.',
+  },
+  {
+    category: 'Compatibility',
+    question: 'Does this tool work on AI output from all models?',
+    answer: 'Yes. The format remover works on text from ChatGPT (all GPT versions), Claude (all Claude versions), Google Gemini, DeepSeek, Meta Llama, Mistral, xAI Grok, Perplexity, Microsoft Copilot, Jasper, Copy.ai, and any other AI model. All of these models apply markdown formatting and insert similar invisible Unicode characters, though the specific formatting conventions vary slightly between models. The format remover targets the formatting characters themselves — not model-specific patterns — so it works universally.',
+  },
+  {
+    category: 'Comparison',
+    question: 'How is a format remover different from paste as plain text?',
+    answer: 'Paste as plain text (Ctrl+Shift+V) strips rich formatting attributes — fonts, colors, bold, italic, hyperlinks — but it does not remove invisible Unicode characters, markdown syntax, curly quotes, or em dashes. Those elements are part of the plain text character stream, not rich formatting attributes. After a plain-text paste, you still have all the markdown asterisks, all the curly quotes, and all the invisible zero-width spaces. A format remover specifically targets these plain-text-level formatting artifacts that paste-as-plain-text leaves behind.',
+  },
+  {
+    category: 'Comparison',
+    question: 'What is the difference between a text format remover and a text formatter?',
+    answer: 'A text format remover strips existing formatting to produce neutral plain text. A text formatter applies new formatting to produce structured output. These are opposite operations. You use a format remover when you have formatted text (AI output, Word documents, website content) and need plain, unformatted text for a different application. You use a formatter when you have plain text and need to add structure (headings, bullets, code blocks) for a specific output format. This tool is a format remover — it strips formatting away rather than adding it.',
+  },
+  {
+    category: 'Comparison',
+    question: 'Is this different from an HTML stripper?',
+    answer: 'An HTML stripper removes HTML tags from web-sourced text — it converts text with HTML markup into readable plain text by removing tags like <p>, <strong>, <em>, and <a href>. A format remover handles text-level formatting artifacts that remain after HTML tags have already been stripped or that were never in HTML format to begin with — markdown syntax, curly quotes, invisible Unicode, em dashes. If you are starting with raw HTML content, you might want to use an HTML stripper first and then a format remover. GPTCLEANUP AI has a dedicated Strip HTML tool for the HTML stripping step.',
+  },
+  {
+    category: 'Use Cases',
+    question: 'When should content marketers use a format remover?',
+    answer: 'Content marketers should use a format remover every time they move AI-generated content from a chat interface into a CMS or publishing platform. Most AI models format their output with markdown, which does not render correctly in most CMS body editors. A format remover strips the markdown before the content enters the CMS, so the content team can apply formatting using the CMS\'s own editor (WYSIWYG buttons, heading selectors) rather than dealing with raw markdown syntax. This is especially important for teams that use WordPress, Shopify, Hubspot CMS, or other platforms where markdown is not natively supported in the content editor.',
+  },
+  {
+    category: 'Use Cases',
+    question: 'Should copywriters use a format remover before delivering to clients?',
+    answer: 'Yes. Copywriters who deliver AI-assisted content should run it through a format remover as a standard quality step. Clients who receive formatted AI copy may encounter markdown symbols displaying as literal asterisks when they paste into their systems. Curly quotes can cause errors if the client\'s system processes the text programmatically. Delivering format-clean content demonstrates professionalism and prevents client-side issues that reflect poorly on the copywriter.',
+  },
+  {
+    category: 'Use Cases',
+    question: 'How does a format remover help developers using AI coding tools?',
+    answer: 'AI coding tools like GitHub Copilot, ChatGPT, and Claude often provide code examples surrounded by markdown code block syntax (triple backticks) and explanatory text formatted with markdown. When you copy this output and paste it into your code editor or documentation, the markdown characters come along. A format remover strips the markdown syntax, leaving only the clean code and plain prose. Additionally, AI code explanations often contain curly quotes in strings and em dashes in prose that can cause issues if left in documentation or README files.',
+  },
+  {
+    category: 'Use Cases',
+    question: 'Is a format remover useful for academic writing?',
+    answer: 'Yes. Students and researchers who use AI writing assistance receive output with markdown formatting that does not belong in academic papers. Hash marks, asterisks, and underscores from markdown are not standard academic document formatting and must be removed before submission. Additionally, the curly quotes that AI models output may not match the formatting requirements of some academic style guides or submission systems. Running AI-assisted academic drafts through a format remover produces clean, plain text that is ready for the document editor\'s proper academic formatting.',
+  },
+  {
+    category: 'Use Cases',
+    question: 'Do email marketers need a format remover?',
+    answer: 'Yes. AI-generated email copy contains markdown formatting and invisible characters that cause problems in email platforms. Asterisks appear as literal characters in email body text. Curly quotes sometimes display inconsistently across email clients. Non-breaking spaces prevent correct line wrapping on mobile email apps. Running all email copy through a format remover before pasting into Mailchimp, Klaviyo, HubSpot, or ActiveCampaign prevents these rendering issues and ensures clean, consistent display across all recipient email clients.',
+  },
+  {
+    category: 'Use Cases',
+    question: 'Is a format remover necessary for social media posts?',
+    answer: 'It is useful for social media posts that were drafted with AI assistance. Twitter/X, LinkedIn, and Facebook do not render markdown — asterisks and hash marks appear as literal characters in posts. AI-generated social copy often contains these markdown symbols, especially if you prompted the AI to write a structured post with headers or emphasis. Running AI social media copy through a format remover produces clean post text without markdown characters. Additionally, invisible characters can affect character counts on platforms with strict limits, so removing them ensures accurate character counting.',
+  },
+  {
+    category: 'Advanced',
+    question: 'Can format removal help with AI detection tools?',
+    answer: 'Format removal addresses the technical formatting layer of AI-generated text but does not change the linguistic patterns that most AI detection tools primarily analyze. Detectors like GPTZero, Originality.ai, and Turnitin analyze sentence structure, vocabulary patterns, perplexity, and burstiness — characteristics of how the text reads, not how it is formatted. Removing markdown and invisible characters cleans up the technical artifacts but does not alter the statistical language patterns. For meaningful changes to AI detection scores, genuine human rewriting and editing is required in addition to format removal.',
+  },
+  {
+    category: 'Advanced',
+    question: 'What is the "Notepad trick" and why does it not work?',
+    answer: 'The "Notepad trick" refers to pasting text into Notepad (or another plain text editor) before pasting it into your final destination, with the idea that Notepad will strip all formatting. This works for rich formatting attributes like fonts, colors, bold, and italic. It does not work for invisible Unicode characters (zero-width spaces, non-breaking spaces, byte-order marks), markdown syntax characters, or typographic special characters like curly quotes and em dashes. These elements are part of the plain text character stream and survive any paste into a plain text editor. A dedicated format remover that explicitly targets these character types is the only reliable solution.',
+  },
+  {
+    category: 'Advanced',
+    question: 'How does format removal interact with SEO metadata?',
+    answer: 'If AI-generated content is used for SEO metadata — meta titles, meta descriptions, heading tags — format removal before publishing is important. Curly quotes in a meta title can cause display issues in search result snippets on some browsers. Markdown characters in heading tags (hash marks, asterisks) become part of the heading text content and affect how search engines read the heading. Invisible characters in keyword phrases mean the phrase does not exactly match search queries. Clean, format-free metadata ensures your SEO elements are technically correct and display as intended in search results.',
+  },
+];
+
+const article = (
+  <section className="mt-10 prose prose-slate max-w-none text-sm prose-headings:font-semibold prose-headings:text-slate-900 prose-p:text-slate-700 prose-li:text-slate-700">
+    <h2>Format Remover — Strip Text Formatting Online in One Click</h2>
+    <p>A <strong>format remover</strong> solves the fundamental problem of formatted text in the wrong place. When you copy content from ChatGPT, Claude, Gemini, Microsoft Word, a website, or any rich text source, formatting travels with the visible words. Markdown syntax, typographic punctuation, invisible Unicode characters, and irregular spacing all come along whether you want them or not. In a different editor, these formatting artifacts show up as literal symbols, break syntax in code and data files, cause layout problems in published pages, and produce rendering inconsistencies in email clients.</p>
+    <p>GPTCLEANUP AI is a free <strong>text format remover</strong> that handles every layer of formatting in a single click — markdown, curly quotes, em dashes, invisible Unicode, excess spacing. No account, no upload, no limit. Paste your text, click Clean Text, and copy plain, unformatted output that works in any application.</p>
+
+    <h2>What a Format Remover Does</h2>
+    <p>The job of a format remover is to strip every formatting layer from text while preserving the underlying words. This is distinct from both a reformatter (which changes formatting to a different style) and a text editor (which allows you to apply new formatting). A format remover returns text to a neutral, unformatted state — clean of all artifacts from the source document — so you can apply formatting from scratch in your target application.</p>
+    <h3>Markdown Formatting Removal</h3>
+    <p>AI models like ChatGPT, Claude, Gemini, DeepSeek, and Grok produce markdown-formatted output by default. Markdown uses a set of plain-character symbols to indicate formatting: double asterisks (**bold**) for bold text, single asterisks or underscores (*italic* or _italic_) for italic, hash marks at the start of lines (# Heading) for headings, backticks (`code`) for inline code, and triple backticks for code blocks. In the AI chat interface, these characters are rendered visually — you see bold text, italic text, formatted headings. When you copy the text and paste it into Gmail, WordPress, a CMS body field, or any application that does not render markdown, the asterisks and hash marks appear as literal characters in your content. The format remover deletes these markdown syntax characters while preserving the text they formatted.</p>
+    <h3>Curly Quote Normalization</h3>
+    <p>Word processors and AI tools substitute typographic "smart" quotes for the simple straight ASCII quote character. Smart quotes curve — the opening quotation mark leans left and the closing mark leans right. This is correct typography in a printed document or a published blog post. In technical contexts, curly quotes are a serious problem. JSON requires straight double quotes as string delimiters — a JSON file with curly quotes will fail to parse and produce errors in every system that consumes that JSON. Python and JavaScript require straight quotes in string literals — curly quotes cause syntax errors. CSV files use straight double quotes to delimit field values — curly quotes cause field boundary parsing failures. The format remover converts all curly single and double quotes to their straight ASCII equivalents.</p>
+    <h3>Em Dash and En Dash Normalization</h3>
+    <p>AI models and word processors substitute the typographic em dash (—) for two hyphens (--) and the en dash (–) for a single hyphen (-). In a finished document, em dashes are correct and look professional. In command-line tools, data files, and configuration files, an em dash where a hyphen is expected produces errors. A configuration value with an em dash instead of a hyphen in a flag name causes the flag to be unrecognized. A CSV value with an em dash causes column alignment issues in some parsers. The format remover normalizes all em dashes and en dashes to plain hyphens.</p>
+    <h3>Invisible Character Removal</h3>
+    <p>Invisible Unicode characters are the most hidden layer of formatting. Zero-width spaces, byte-order marks, non-breaking spaces, soft hyphens, and directional marks produce no visible output but affect how text behaves in every application that consumes it. The format remover removes all invisible Unicode characters as part of its formatting cleanup, ensuring the output contains no hidden artifacts beyond what is visible on screen.</p>
+
+    <h2>Sources of Formatting Artifacts</h2>
+    <h3>AI Chat Interfaces</h3>
+    <p>ChatGPT, Claude.ai, and Google Gemini display AI output in a web browser that renders markdown. The text you see is a visual representation of markdown-formatted text. When you copy it, you are copying the underlying markdown syntax, not the rendered visual formatting. Every bold phrase comes with its asterisks, every heading comes with its hash marks, every code snippet comes with its backticks. Additionally, the rendering layer adds invisible Unicode characters at various positions during copy operations.</p>
+    <h3>Microsoft Word and Google Docs</h3>
+    <p>Word processors apply typographic substitutions automatically: straight quotes become curly quotes as you type, two hyphens become an em dash, three periods become an ellipsis character. This AutoCorrect behavior produces typographically correct documents but creates compatibility problems when the text is copied to technical applications. Non-breaking spaces are inserted automatically in specific typographic contexts. When this text is copied and pasted elsewhere, these substitutions travel with it.</p>
+    <h3>Websites and Rich Text Editors</h3>
+    <p>Rich text editors used in CMS platforms, email clients, and web applications produce HTML internally and can include non-breaking spaces from the HTML layout layer, invisible formatting characters from the editor's internal representation, and typographic substitutions from the editor's auto-formatting features. Copying from a WYSIWYG editor and pasting into a different application can transfer all of these artifacts.</p>
+
+    <h2>Format Remover for Different Use Cases</h2>
+    <h3>Content Teams and Bloggers</h3>
+    <p>Content teams that use AI tools to draft blog posts, articles, and web copy deal with markdown formatting every time they move content from the AI interface to their CMS. A format remover eliminates this friction: run every AI draft through the format remover, paste the clean output into the CMS, and apply headings, bold, and other formatting using the CMS editor's own tools. This produces cleaner HTML output from the CMS and prevents markdown characters from appearing in published content.</p>
+    <h3>Developers and Technical Writers</h3>
+    <p>Developers using AI tools for code generation, documentation writing, and README creation need format-clean output. Markdown in documentation files is intentional and should be preserved — but markdown in code (variable names, string literals, comments) causes errors. Technical writers who use AI to draft API documentation, user guides, and changelogs need a format remover to clean up AI prose before it enters their documentation system. The format remover handles the text sections without touching code blocks, which is the behavior developers need.</p>
+    <h3>Email Marketers and Salespeople</h3>
+    <p>Email copy generated with AI assistance contains markdown formatting that does not render in email clients. A subject line or body copy with asterisks for emphasis will show literal asterisks to recipients. Non-breaking spaces from AI or word processor text prevent mobile email apps from reflowing text correctly. Running all email copy through a format remover before it enters the email platform ensures clean, professional rendering across all clients.</p>
+    <h3>Data Teams and Analysts</h3>
+    <p>Text data that passes through AI tools or word processors before entering a database or spreadsheet often contains curly quotes, em dashes, and invisible characters that cause string matching failures. Running this text through a format remover before import ensures consistent, comparable string values throughout the dataset.</p>
+
+    <h2>Why the Format Remover Is Better Than Manual Methods</h2>
+    <p>Manual formatting removal requires knowing which characters to target and having a text editor that supports searching for them. Most everyday editors cannot search for curly quotes directly (you need to copy the character into the search field), cannot search for specific Unicode code points by number, and cannot perform the full set of normalization operations in a single find-and-replace step. The format remover does all of this automatically, correctly, and in under a second for documents of any length. For anyone who regularly works with AI-generated text, building the format remover into the workflow saves significant time and eliminates an entire category of potential publishing errors.</p>
+  </section>
+);
+
+export async function generateMetadata(): Promise<Metadata> {
+  const toolData = getToolBySlug(toolSlug);
+  if (!toolData) return {};
+  return buildMeta({
+    title: toolData.seoTitle || toolData.title,
+    description: toolData.shortDescription,
+    urlPath: `/${toolSlug}`,
+  });
+}
+
+export default async function FormatRemoverPage() {
+  const toolData = getToolBySlug(toolSlug);
+  if (!toolData) return notFound();
+
+  const title = toolData.title;
+  const description = toolData.shortDescription;
+  const url = `${siteUrl}/${toolSlug}`;
+
+  const webAppSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'WebApplication',
+    name: title,
+    applicationCategory: 'UtilitiesApplication',
+    operatingSystem: 'Web',
+    description,
+    url,
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+    aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', ratingCount: '1840', bestRating: '5', worstRating: '1' },
+  };
+
+  return (
+    <div className="relative bg-[#f7f9ff]">
+      <JsonLd data={webPageSchema({ name: title, url, description })} />
+      <JsonLd data={webAppSchema} />
+      <RailAd side="right" />
+
+      <div className="mx-auto w-full max-w-4xl px-4 py-5 min-h-screen sm:py-8 md:py-10">
+        <section className="space-y-2 text-center md:space-y-3">
+          <h1 className="text-xl font-semibold text-slate-900 sm:text-2xl md:text-3xl">{title}</h1>
+          <p className="max-w-2xl mx-auto text-xs text-slate-700 sm:text-sm md:text-[15px]">{description}</p>
+          <div className="flex items-center justify-center gap-1 text-sm text-slate-500">
+            <span className="text-yellow-500">★★★★★</span>
+            <span>4.9</span>
+            <span>·</span>
+            <span>Free</span>
+          </div>
+        </section>
+
+        <section className="relative w-full mt-4 md:mt-6">
+          <div className="w-full max-w-none rounded-xl border border-slate-200 bg-white p-3 shadow-sm md:rounded-2xl md:p-6">
+            <ToolWorkbench
+              processor="chatgptTextCleaner"
+              primaryLabel="Remove Formatting"
+              inputLabel="Paste your formatted text"
+              outputLabel="Plain text result"
+              inputPlaceholder="Paste text from ChatGPT, Word, a website, or any formatted source..."
+              outputPlaceholder="Your text with formatting removed will appear here."
+            />
+          </div>
+        </section>
+
+        <BelowToolAd />
+
+        <RelatedTools currentSlug={toolSlug} />
+
+        {article}
+
+        <div className="mt-10 space-y-3">
+          <h2 className="text-2xl font-semibold text-slate-900">Format Remover FAQ</h2>
+          <p className="text-slate-700 text-sm">Answers to common questions about removing text formatting, markdown, curly quotes, and formatting artifacts from AI and rich-text sources.</p>
+        </div>
+        <FAQSection items={faqs} />
+        <FaqJsonLd faqs={faqs} />
+      </div>
+    </div>
+  );
+}

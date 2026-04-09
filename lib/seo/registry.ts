@@ -38,6 +38,27 @@ export const toolPages: ToolPage[] = [
     category: 'ai-cleanup',
   },
   {
+    slug: 'invisible-character-remover',
+    title: 'Invisible Character Remover',
+    description: 'Find and remove invisible Unicode characters — zero-width spaces, byte-order marks, soft hyphens, non-breaking spaces — from any text instantly.',
+    seoTitle: 'Invisible Character Remover – Remove Hidden Unicode Characters Free',
+    category: 'text',
+  },
+  {
+    slug: 'character-remover',
+    title: 'Character Remover',
+    description: 'Remove unwanted characters, symbols, and invisible Unicode from text to produce clean, standard output ready to paste anywhere.',
+    seoTitle: 'Character Remover – Remove Unwanted Characters from Text Online Free',
+    category: 'text',
+  },
+  {
+    slug: 'format-remover',
+    title: 'Format Remover',
+    description: 'Strip markdown formatting, curly quotes, em dashes, and invisible characters from AI and rich-text output in one click.',
+    seoTitle: 'Format Remover – Strip Text Formatting Online Free | GPTCLEANUP AI',
+    category: 'text',
+  },
+  {
     slug: 'space-remover',
     title: 'Space Remover',
     description: 'Remove extra spaces, trim lines, and normalize whitespace for clean, paste-ready text.',
