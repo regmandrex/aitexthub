@@ -38,6 +38,20 @@ export const toolPages: ToolPage[] = [
     category: 'ai-cleanup',
   },
   {
+    slug: 'text-cleaner',
+    title: 'Text Cleaner',
+    description: 'Clean text from any source — remove invisible characters, strip markdown, fix spacing, and produce plain, publish-ready output in one click.',
+    seoTitle: 'Text Cleaner – Clean Text Online Free | Remove Hidden Characters & Formatting',
+    category: 'text',
+  },
+  {
+    slug: 'clean-paste',
+    title: 'Clean Paste',
+    description: 'Clean text before pasting — remove invisible Unicode, markdown, and formatting artifacts so every paste is a clean paste.',
+    seoTitle: 'Clean Paste – Paste Clean Text Online Free | Remove Hidden Characters',
+    category: 'text',
+  },
+  {
     slug: 'invisible-character-remover',
     title: 'Invisible Character Remover',
     description: 'Find and remove invisible Unicode characters — zero-width spaces, byte-order marks, soft hyphens, non-breaking spaces — from any text instantly.',
