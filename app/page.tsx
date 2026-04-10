@@ -200,36 +200,120 @@ export default async function HomePage() {
 
         <BelowToolAd />
 
-        <section className="mt-8">
-          <div className="flex items-center justify-between mb-4">
-            <h2 className="text-lg font-semibold text-slate-900">AI Text Cleaning Tools</h2>
-            <Link href="/ai-tools" className="text-sm text-blue-600 hover:underline">See all tools →</Link>
+        {/* Core Tools — categorized grid */}
+        <section className="mt-8 space-y-8">
+
+          {/* Category 1 — AI Text Cleaners */}
+          <div>
+            <h2 className="text-base font-semibold text-slate-700 uppercase tracking-wide mb-3">AI Text Cleaners</h2>
+            <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
+              {[
+                { slug: 'chatgpt-text-cleaner', title: 'ChatGPT Text Cleaner', desc: 'Quickly remove hidden Unicode characters and formatting artifacts from ChatGPT output.' },
+                { slug: 'ai-text-cleaner', title: 'AI Text Cleaner', desc: 'Quickly clean invisible characters from any AI model — Claude, Gemini, DeepSeek, and more.' },
+                { slug: 'clean-ai', title: 'Clean AI Text', desc: 'Quickly strip all invisible Unicode and artifacts from any AI-generated text in one click.' },
+                { slug: 'text-cleaner', title: 'Text Cleaner', desc: 'Quickly clean text from any source — AI tools, PDFs, Word, or websites.' },
+              ].map(({ slug, title, desc }) => (
+                <Link key={slug} href={`/${slug}`} className="flex items-start gap-3 rounded-xl border border-slate-200 bg-white p-3 shadow-sm hover:border-blue-300 hover:shadow-md transition-all">
+                  <div className="shrink-0 w-9 h-9 rounded-lg bg-blue-50 flex items-center justify-center">
+                    <svg className="w-5 h-5 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="text-sm font-semibold text-slate-900 leading-tight">{title}</p>
+                    <p className="mt-0.5 text-xs text-slate-500 leading-snug">{desc}</p>
+                  </div>
+                </Link>
+              ))}
+            </div>
           </div>
-          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4">
-            {[
-              { slug: 'chatgpt-text-cleaner', title: 'ChatGPT Text Cleaner', desc: 'Remove hidden characters from ChatGPT output' },
-              { slug: 'ai-text-cleaner', title: 'AI Text Cleaner', desc: 'Clean text from any AI model in one click' },
-              { slug: 'clean-ai', title: 'Clean AI Text', desc: 'Universal clean AI tool for all models' },
-              { slug: 'text-cleaner', title: 'Text Cleaner', desc: 'Clean text from any source instantly' },
-              { slug: 'clean-paste', title: 'Clean Paste', desc: 'Remove artifacts before pasting anywhere' },
-              { slug: 'format-remover', title: 'Format Remover', desc: 'Strip markdown, curly quotes, and formatting' },
-              { slug: 'remove-text-formatting', title: 'Remove Text Formatting', desc: 'Remove all formatting from AI and Word text' },
-              { slug: 'invisible-character-remover', title: 'Invisible Character Remover', desc: 'Find and remove invisible Unicode characters' },
-              { slug: 'character-remover', title: 'Character Remover', desc: 'Remove special characters from any text' },
-              { slug: 'paragraph-space-remover', title: 'Paragraph Space Remover', desc: 'Remove extra space between paragraphs' },
-              { slug: 'space-remover', title: 'Space Remover', desc: 'Remove extra spaces and normalize whitespace' },
-              { slug: 'zero-width-space-remover', title: 'Zero Width Space Remover', desc: 'Strip zero-width spaces from AI text' },
-            ].map(({ slug, title, desc }) => (
-              <Link
-                key={slug}
-                href={`/${slug}`}
-                className="rounded-xl border border-slate-200 bg-white p-3 shadow-sm hover:border-blue-300 hover:shadow-md transition-all"
-              >
-                <p className="text-sm font-semibold text-slate-900 leading-tight">{title}</p>
-                <p className="mt-1 text-xs text-slate-500 leading-snug">{desc}</p>
-              </Link>
-            ))}
+
+          {/* Category 2 — Format & Paste */}
+          <div>
+            <h2 className="text-base font-semibold text-slate-700 uppercase tracking-wide mb-3">Format &amp; Paste Tools</h2>
+            <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
+              {[
+                { slug: 'clean-paste', title: 'Clean Paste', desc: 'Quickly remove formatting artifacts and invisible characters before pasting text anywhere.' },
+                { slug: 'format-remover', title: 'Format Remover', desc: 'Quickly strip markdown, curly quotes, em dashes, and all formatting from any text.' },
+                { slug: 'remove-text-formatting', title: 'Remove Text Formatting', desc: 'Quickly remove all text formatting from AI output, Word documents, and pasted content.' },
+              ].map(({ slug, title, desc }) => (
+                <Link key={slug} href={`/${slug}`} className="flex items-start gap-3 rounded-xl border border-slate-200 bg-white p-3 shadow-sm hover:border-blue-300 hover:shadow-md transition-all">
+                  <div className="shrink-0 w-9 h-9 rounded-lg bg-violet-50 flex items-center justify-center">
+                    <svg className="w-5 h-5 text-violet-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m5.231 13.481L15 17.25m-4.5-15H5.625c-.621 0-1.125.504-1.125 1.125v16.5c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9zm3.75 11.625a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="text-sm font-semibold text-slate-900 leading-tight">{title}</p>
+                    <p className="mt-0.5 text-xs text-slate-500 leading-snug">{desc}</p>
+                  </div>
+                </Link>
+              ))}
+            </div>
           </div>
+
+          {/* Category 3 — Space & Whitespace */}
+          <div>
+            <h2 className="text-base font-semibold text-slate-700 uppercase tracking-wide mb-3">Space &amp; Whitespace Tools</h2>
+            <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
+              {[
+                { slug: 'space-remover', title: 'Space Remover', desc: 'Quickly remove extra spaces and normalize whitespace throughout any text.' },
+                { slug: 'paragraph-space-remover', title: 'Paragraph Space Remover', desc: 'Quickly remove extra blank lines between paragraphs in AI content and documents.' },
+                { slug: 'ai-space-remover', title: 'AI Space Remover', desc: 'Quickly fix non-breaking spaces and irregular spacing from AI-generated text.' },
+                { slug: 'chatgpt-space-remover', title: 'ChatGPT Space Remover', desc: 'Quickly remove duplicate and invisible spaces from ChatGPT output.' },
+                { slug: 'zero-width-space-remover', title: 'Zero Width Space Remover', desc: 'Quickly strip zero-width spaces (U+200B) embedded in AI text.' },
+                { slug: 'remove-whitespace', title: 'Remove Whitespace', desc: 'Quickly remove all whitespace characters from text in one click.' },
+              ].map(({ slug, title, desc }) => (
+                <Link key={slug} href={`/${slug}`} className="flex items-start gap-3 rounded-xl border border-slate-200 bg-white p-3 shadow-sm hover:border-blue-300 hover:shadow-md transition-all">
+                  <div className="shrink-0 w-9 h-9 rounded-lg bg-sky-50 flex items-center justify-center">
+                    <svg className="w-5 h-5 text-sky-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="text-sm font-semibold text-slate-900 leading-tight">{title}</p>
+                    <p className="mt-0.5 text-xs text-slate-500 leading-snug">{desc}</p>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          {/* Category 4 — Watermark & Hidden Character Tools */}
+          <div>
+            <h2 className="text-base font-semibold text-slate-700 uppercase tracking-wide mb-3">Watermark &amp; Hidden Character Tools</h2>
+            <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
+              {[
+                { slug: 'chatgpt-watermark-remover', title: 'ChatGPT Watermark Remover', desc: 'Quickly remove ChatGPT watermark characters and invisible markers from text.' },
+                { slug: 'ai-watermark-remover', title: 'AI Watermark Remover', desc: 'Quickly strip AI watermark tokens and invisible Unicode from any AI output.' },
+                { slug: 'invisible-character-remover', title: 'Invisible Character Remover', desc: 'Quickly find and remove all invisible Unicode characters from any text source.' },
+                { slug: 'invisible-character-detector', title: 'Invisible Character Detector', desc: 'Quickly detect and identify hidden Unicode characters lurking in any text.' },
+                { slug: 'character-remover', title: 'Character Remover', desc: 'Quickly remove special characters, symbols, and unwanted characters from text.' },
+                { slug: 'chatgpt-watermark-detector', title: 'ChatGPT Watermark Detector', desc: 'Quickly scan text for ChatGPT watermark patterns and formatting fingerprints.' },
+                { slug: 'ai-watermark-detector', title: 'AI Watermark Detector', desc: 'Quickly detect AI watermark signals and hidden markers across any AI-generated text.' },
+                { slug: 'claude-watermark-cleaner', title: 'Claude Watermark Cleaner', desc: 'Quickly clean invisible watermark characters from Claude AI output.' },
+              ].map(({ slug, title, desc }) => (
+                <Link key={slug} href={`/${slug}`} className="flex items-start gap-3 rounded-xl border border-slate-200 bg-white p-3 shadow-sm hover:border-blue-300 hover:shadow-md transition-all">
+                  <div className="shrink-0 w-9 h-9 rounded-lg bg-emerald-50 flex items-center justify-center">
+                    <svg className="w-5 h-5 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M3.98 8.223A10.477 10.477 0 001.934 12C3.226 16.338 7.244 19.5 12 19.5c.993 0 1.953-.138 2.863-.395M6.228 6.228A10.45 10.45 0 0112 4.5c4.756 0 8.773 3.162 10.065 7.498a10.523 10.523 0 01-4.293 5.774M6.228 6.228L3 3m3.228 3.228l3.65 3.65m7.894 7.894L21 21m-3.228-3.228l-3.65-3.65m0 0a3 3 0 10-4.243-4.243m4.242 4.242L9.88 9.88" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p className="text-sm font-semibold text-slate-900 leading-tight">{title}</p>
+                    <p className="mt-0.5 text-xs text-slate-500 leading-snug">{desc}</p>
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </div>
+
+          <div className="text-center pt-2">
+            <Link href="/ai-tools" className="inline-flex items-center gap-1 text-sm font-medium text-blue-600 hover:underline">
+              See all free AI tools →
+            </Link>
+          </div>
+
         </section>
 
         <HomePageArticle />
