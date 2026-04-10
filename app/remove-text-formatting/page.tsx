@@ -77,7 +77,7 @@ const faqs: FaqItem[] = [
   {
     category: 'Technical',
     question: 'Does remove text formatting convert curly quotes to straight quotes?',
-    answer: 'Yes. Curly (smart) quotes are a common formatting artifact that this tool converts to straight quotes as part of the remove text formatting process. Curly double quotes (" ") become straight double quotes ("), and curly single quotes (' ') become straight single quotes (\') or apostrophes. This conversion is important for text that will be used in code, JSON, CSV, HTML attributes, or any other context where curly quotes cause syntax errors. After remove text formatting, all quotation marks in your text are standard straight quotes that work correctly in any application.',
+    answer: 'Yes. Curly (smart) quotes are a common formatting artifact that this tool converts to straight quotes as part of the remove text formatting process. Curly double quotes become straight double quotes, and curly single quotes become straight single quotes or apostrophes. This conversion is important for text that will be used in code, JSON, CSV, HTML attributes, or any other context where curly quotes cause syntax errors. After remove text formatting, all quotation marks in your text are standard straight quotes that work correctly in any application.',
   },
   {
     category: 'Technical',
