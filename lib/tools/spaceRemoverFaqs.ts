@@ -211,4 +211,10 @@ export const spaceRemoverFaqs: FaqItem[] = [
     answer:
       'When you copy content from Microsoft Word or Google Docs and paste it into another application, the paragraph spacing settings from the source document sometimes translate into multiple blank lines between paragraphs. To remove extra space between paragraphs in this pasted content, paste the text into this space remover and click clean. The tool detects and collapses consecutive blank lines — whether from Word paragraph spacing, Google Docs formatting, or AI-generated extra line breaks — to a single blank line between paragraphs. This makes the text immediately suitable for a CMS, email editor, or publishing platform without needing to manually delete the extra blank lines.',
   },
+  {
+    category: 'Usage',
+    question: 'What is an AI space remover and when do I need one?',
+    answer:
+      'An AI space remover is a space cleaning tool that targets the specific spacing problems AI-generated text introduces: non-breaking spaces (U+00A0), zero-width spaces (U+200B), and double spaces from AI line-break normalization. When you paste text from ChatGPT, Claude, Gemini, or any other AI model, the output often contains these invisible or irregular space characters that look fine on screen but behave differently in documents and web platforms. This tool is an AI space remover — it detects and normalizes every non-standard space character from AI output, replacing all of them with standard single ASCII spaces. Use this AI space remover any time AI-generated text has spacing issues after pasting.',
+  },
 ];
