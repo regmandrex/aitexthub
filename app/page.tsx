@@ -200,9 +200,37 @@ export default async function HomePage() {
 
         <BelowToolAd />
 
-        <div id="tools">
-          <RelatedTools currentSlug="" showModeTools={false} />
-        </div>
+        <section className="mt-8">
+          <div className="flex items-center justify-between mb-4">
+            <h2 className="text-lg font-semibold text-slate-900">AI Text Cleaning Tools</h2>
+            <Link href="/ai-tools" className="text-sm text-blue-600 hover:underline">See all tools →</Link>
+          </div>
+          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4">
+            {[
+              { slug: 'chatgpt-text-cleaner', title: 'ChatGPT Text Cleaner', desc: 'Remove hidden characters from ChatGPT output' },
+              { slug: 'ai-text-cleaner', title: 'AI Text Cleaner', desc: 'Clean text from any AI model in one click' },
+              { slug: 'clean-ai', title: 'Clean AI Text', desc: 'Universal clean AI tool for all models' },
+              { slug: 'text-cleaner', title: 'Text Cleaner', desc: 'Clean text from any source instantly' },
+              { slug: 'clean-paste', title: 'Clean Paste', desc: 'Remove artifacts before pasting anywhere' },
+              { slug: 'format-remover', title: 'Format Remover', desc: 'Strip markdown, curly quotes, and formatting' },
+              { slug: 'remove-text-formatting', title: 'Remove Text Formatting', desc: 'Remove all formatting from AI and Word text' },
+              { slug: 'invisible-character-remover', title: 'Invisible Character Remover', desc: 'Find and remove invisible Unicode characters' },
+              { slug: 'character-remover', title: 'Character Remover', desc: 'Remove special characters from any text' },
+              { slug: 'paragraph-space-remover', title: 'Paragraph Space Remover', desc: 'Remove extra space between paragraphs' },
+              { slug: 'space-remover', title: 'Space Remover', desc: 'Remove extra spaces and normalize whitespace' },
+              { slug: 'zero-width-space-remover', title: 'Zero Width Space Remover', desc: 'Strip zero-width spaces from AI text' },
+            ].map(({ slug, title, desc }) => (
+              <Link
+                key={slug}
+                href={`/${slug}`}
+                className="rounded-xl border border-slate-200 bg-white p-3 shadow-sm hover:border-blue-300 hover:shadow-md transition-all"
+              >
+                <p className="text-sm font-semibold text-slate-900 leading-tight">{title}</p>
+                <p className="mt-1 text-xs text-slate-500 leading-snug">{desc}</p>
+              </Link>
+            ))}
+          </div>
+        </section>
 
         <HomePageArticle />
 

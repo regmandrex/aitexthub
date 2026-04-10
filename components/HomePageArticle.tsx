@@ -104,10 +104,12 @@ and extra blank lines fixed.
       </div>
 
       <h4 className="text-lg font-semibold text-slate-900">Related tools for cleaner AI output</h4>
-      <p>For the toughest spacing issues, try our ChatGPT Space Remover to aggressively remove duplicate or invisible spaces. Want to check if your draft still contains AI patterns? Scan it with the ChatGPT Watermark Detector.</p>
+      <p>For the toughest spacing issues, try our ChatGPT Space Remover to aggressively remove duplicate or invisible spaces. Want to check if your draft still contains AI patterns? Scan it with the ChatGPT Watermark Detector. Need to <Link href="/clean-ai" className="text-blue-600 hover:underline font-medium">clean AI text</Link> from any model — ChatGPT, Claude, Gemini, DeepSeek — in one step? Use the dedicated <Link href="/clean-ai" className="text-blue-600 hover:underline font-medium">Clean AI Text tool</Link>.</p>
       <ul className="list-disc list-inside space-y-1 text-slate-700">
         <li><strong>ChatGPT Space Remover: Remove duplicate/invisible spaces and tidy spacing instantly.</strong></li>
         <li><strong>ChatGPT Watermark Detector: Scan text for AI watermark patterns and formatting fingerprints.</strong></li>
+        <li><Link href="/clean-ai" className="text-blue-600 hover:underline font-medium">Clean AI Text</Link>: <strong>Remove hidden Unicode and invisible characters from any AI model output in one click.</strong></li>
+        <li><Link href="/ai-text-cleaner" className="text-blue-600 hover:underline font-medium">AI Text Cleaner</Link>: <strong>Universal cleaner for ChatGPT, Claude, Gemini, DeepSeek, and every other AI model.</strong></li>
       </ul>
 
       <h4 className="text-lg font-semibold text-slate-900">Best practices to keep text clean</h4>
