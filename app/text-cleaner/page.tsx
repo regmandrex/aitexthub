@@ -159,6 +159,26 @@ const faqs: FaqItem[] = [
     question: 'Can text cleaning help with AI detection tools?',
     answer: 'Text cleaning removes technical artifacts — invisible Unicode characters, markdown formatting — that exist in AI-generated text. Some AI detection algorithms use character-level patterns, including the distribution of invisible characters, as one signal. Cleaning removes those signals. However, most AI detection tools primarily analyze linguistic patterns — sentence structure, vocabulary, perplexity, burstiness — which are not affected by text cleaning. For meaningful changes to detection scores, genuine human editing and rewriting is required in addition to technical cleaning.',
   },
+  {
+    category: 'General',
+    question: 'How do I remove text formatting and invisible characters at the same time?',
+    answer: 'This text cleaner removes both text formatting artifacts and invisible characters in a single operation. When you paste AI-generated or copy-pasted text and click Clean Text, the tool simultaneously strips markdown formatting (asterisks, hashes, backticks), removes invisible Unicode characters (zero-width spaces, byte-order marks, soft hyphens), normalizes curly quotes and em dashes to plain equivalents, and collapses irregular spacing. You do not need to run separate tools to remove text formatting and then remove hidden characters — one pass handles everything.',
+  },
+  {
+    category: 'General',
+    question: 'What does "clear the text" mean and how does this tool do it?',
+    answer: 'When people say they need to clear the text, they typically mean removing the invisible formatting layers that cause problems downstream — the hidden Unicode characters, markdown syntax, smart punctuation, and irregular whitespace that AI tools and rich text editors embed in their output. This text cleaner lets you clear the text of all of those artifacts in one click. Paste your text, click Clean Text, and you have output that is stripped down to visible characters only, with consistent spacing and no invisible stowaways.',
+  },
+  {
+    category: 'Use Cases',
+    question: 'Can this tool remove text from AI outputs before publishing?',
+    answer: 'Yes. This text cleaner is designed specifically for cleaning text from AI outputs before publishing. When you remove text artifacts from ChatGPT, Claude, Gemini, or other AI models before pasting into a CMS, document editor, or email tool, you prevent formatting glitches, broken word counts, extra whitespace in published HTML, and invisible characters that can interfere with how search engines parse your content. The workflow is: generate in AI, paste into text cleaner, click Clean Text, copy the result, paste into your publishing destination.',
+  },
+  {
+    category: 'General',
+    question: 'Is there a free way to clean text online without any upload?',
+    answer: 'Yes. This is a free clean text online tool that processes everything locally in your browser — your text is never uploaded to any server. There is no account, no subscription, and no usage limit. Clean text online means instant processing: paste your text, click the button, and the cleaned result is ready in under a second regardless of how long your text is. Because processing happens in your browser, the tool is also safe for sensitive, confidential, or client content that you cannot upload to third-party services.',
+  },
 ];
 
 const article = (
@@ -237,6 +257,10 @@ const article = (
     <p>HTML attribute values use straight quotes as delimiters. Curly quotes in an href, class, or id attribute produce malformed HTML that browsers may render incorrectly or refuse to parse. Invisible characters in heading text, link anchor text, and metadata fields affect how search engines read and index those elements. Non-breaking spaces in body text prevent correct word wrapping in responsive layouts. Text cleaning before publishing to any web platform — WordPress, Webflow, Shopify, Ghost, custom HTML — ensures technically correct HTML output from the first publish.</p>
     <h3>Text Cleaner for Markdown Files</h3>
     <p>This case is different from the others: when you are publishing to a markdown-aware system (GitHub README, Docusaurus, GitBook, Hugo), you may want to keep markdown formatting. In that case, use the text cleaner with markdown stripping disabled. The tool still removes invisible Unicode characters, normalizes spacing, and fixes typographic characters without touching the intentional markdown syntax. For markdown files, the text cleaner is primarily a hidden character remover and spacing normalizer rather than a markdown stripper.</p>
+
+    <h2>Remove Text Artifacts and Clear the Text in One Step</h2>
+    <p>People search for tools to <strong>remove text</strong> artifacts for many reasons—AI output that pastes messily, documents with mixed formatting from multiple sources, copy-pasted web content that carries invisible Unicode, or PDFs that export with non-breaking spaces and soft hyphens embedded. This text cleaner handles all of those cases. When you need to <strong>clear the text</strong> of everything except your visible words, paste it here and click Clean Text. The tool removes the full spectrum of text artifacts: invisible Unicode characters, markdown symbols, typographic special characters, and irregular whitespace. The result is text that behaves the same in every destination — plain, predictable, and free of any hidden cargo.</p>
+    <p>The remove text workflow is simple: paste raw text from any source, click the button, copy the clean result. You can remove text formatting artifacts from a single sentence or an entire document in the same single step. There is no need to identify which specific characters are causing issues — the text cleaner targets all known problem characters simultaneously.</p>
 
     <h2>Free Text Cleaner with No Limits</h2>
     <p>GPTCLEANUP AI is a <strong>text cleaner free</strong> to use with no account, no character limit, and no subscription. There is no premium tier — every feature is available to everyone at no cost. This includes invisible character removal, markdown stripping, curly quote normalization, em dash normalization, spacing normalization, and line ending normalization. The tool runs locally in your browser, processing text on your device without transmitting it to any server. This makes it safe for confidential content of any kind. Whether you clean one paragraph or a hundred-page document, the text cleaner handles it instantly and completely free. Bookmark this page and use it as your standard first step for any text that needs to move from an AI tool, word processor, or web source into a clean, reliable destination.</p>

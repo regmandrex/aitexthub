@@ -155,6 +155,26 @@ const faqs: FaqItem[] = [
     question: 'What Unicode categories does the AI Text Cleaner target?',
     answer: 'The AI text cleaner targets zero-width characters (U+200B through U+200F), word joiner (U+2060), byte-order marks (U+FEFF), soft hyphens (U+00AD), non-breaking spaces (U+00A0), invisible separators, directional formatting characters, and other control characters found in AI output. It also normalizes typographic punctuation (curly quotes, em dashes) and strips markdown formatting characters (asterisks, hashes, backticks).'
   },
+  {
+    category: 'General',
+    question: 'What does "clean AI text" mean and why is it important?',
+    answer: 'To clean AI text means to remove the invisible Unicode characters, markdown formatting artifacts, and typographic special characters that AI models embed in their output. When you generate text with ChatGPT, Claude, Gemini, or any other AI model and copy it into a document editor or CMS, the hidden characters from the AI output travel with the text and cause formatting issues. Clean AI text is text that has been processed to strip all of those artifacts, leaving only visible characters with consistent spacing. Clean AI text pastes into any destination without triggering formatting glitches, inflated word counts, or broken layouts. This AI text cleaner automates that process — paste, click, and your AI output is clean.'
+  },
+  {
+    category: 'General',
+    question: 'How do I make AI text clean before using it professionally?',
+    answer: 'The fastest way to make AI text clean is to paste it into this AI text cleaner and click the Clean Text button. The tool removes zero-width spaces, byte-order marks, soft hyphens, non-breaking spaces, and other invisible Unicode characters in the first pass, then normalizes curly quotes, em dashes, and markdown symbols in the second pass. The result is clean AI text that behaves identically to manually typed text in any application. For professional use — client deliverables, published content, legal documents, academic submissions — always run AI-generated text through a cleaner before final use. It takes under five seconds and prevents an entire category of formatting problems.'
+  },
+  {
+    category: 'General',
+    question: 'Is this an AI clean tool that works for all AI writing models?',
+    answer: 'Yes. This is a universal AI clean tool that works for text from any AI writing model: ChatGPT, Claude, Gemini, DeepSeek, Llama, Mistral, Grok, Perplexity, Copilot, and any model released in the future. The invisible characters that require an AI clean step are produced by AI models generally, not by a specific vendor. Different models embed slightly different distributions of hidden characters, but the full character set this tool targets covers all known AI-generated invisible artifacts. One AI clean tool for every model is the most efficient approach.'
+  },
+  {
+    category: 'Use Cases',
+    question: 'When should I clean AI writing before submitting or publishing?',
+    answer: 'You should clean AI writing before any professional use: before pasting into a CMS or document editor, before email delivery, before submission to an academic institution, before printing or PDF export, and before using the text in any data pipeline. The hidden characters in uncleaned AI writing cause issues that are hard to diagnose after the fact — extra whitespace in published HTML, word count discrepancies in submission portals, formatting inconsistencies in printed documents. Cleaning AI writing at the source, before it enters any downstream system, is the most reliable way to prevent these issues.'
+  },
 ];
 
 const article = (
@@ -240,6 +260,11 @@ const article = (
       <p>Using find-and-replace to search for specific Unicode characters requires you to know the exact code points to search for, have a text editor that supports Unicode search, and run a separate search for each character type. With over a dozen types of invisible characters to remove, this is a tedious process that is easy to do incompletely.</p>
       <p>Browser-based "paste as plain text" (Ctrl+Shift+V in most applications) strips rich formatting but, like Notepad, does not remove invisible Unicode characters. The hidden characters are part of the plain text data and persist through any plain-text paste operation.</p>
       <p>The AI text cleaner is the only method that specifically targets the invisible characters embedded by AI models while also normalizing spacing, fixing curly quotes, and stripping markdown. It is purpose-built for the exact problem that AI-generated text presents, and it handles every aspect of cleanup in a single operation.</p>
+
+      <h2>How to Clean AI Text: A Practical Guide</h2>
+      <p>The process to <strong>clean AI text</strong> is straightforward with the right tool. Copy your AI-generated text from ChatGPT, Claude, Gemini, or whichever model you use. Open this AI text cleaner, paste the text into the input area, and click Clean Text. The cleaner processes your text in under a second, removing all hidden Unicode characters, normalizing spacing, fixing curly quotes, and stripping markdown. Copy the clean AI text result and paste it wherever you need it — document editor, CMS, email, spreadsheet, or code project.</p>
+      <p>For content teams that produce high volumes of AI-generated copy, it is worth building the <strong>clean AI</strong> step explicitly into your production workflow. Every writer or editor who handles AI output should clean it before passing it downstream. This prevents hidden characters from accumulating in shared documents, CMS drafts, and email templates — where they cause formatting issues that are difficult to trace back to their source after the fact. The clean AI workflow is: generate, clean, then edit and publish.</p>
+      <p>The <strong>AI clean</strong> process is especially important when AI text will be used in technical contexts — JSON payloads, CSV imports, HTML templates, code files, or configuration files. In these contexts, a single invisible character can cause a parse error, a failed database import, or a broken layout. Cleaning AI text before it enters any technical workflow is not just a formatting nicety — it is a requirement for reliable downstream processing.</p>
 
       <h2>The Future of AI Text and Why Cleaning Will Remain Essential</h2>
       <p>As AI models continue to evolve and improve, the hidden character problem is unlikely to disappear. The characters are a byproduct of the tokenization, generation, and rendering pipeline that all large language models use. Even as models produce higher-quality text, the underlying architecture that introduces invisible characters remains fundamentally the same. New models from new companies will introduce the same types of artifacts because they use similar generation pipelines.</p>

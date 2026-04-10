@@ -154,6 +154,26 @@ const faqs: FaqItem[] = [
     question: 'How does format removal interact with SEO metadata?',
     answer: 'If AI-generated content is used for SEO metadata — meta titles, meta descriptions, heading tags — format removal before publishing is important. Curly quotes in a meta title can cause display issues in search result snippets on some browsers. Markdown characters in heading tags (hash marks, asterisks) become part of the heading text content and affect how search engines read the heading. Invisible characters in keyword phrases mean the phrase does not exactly match search queries. Clean, format-free metadata ensures your SEO elements are technically correct and display as intended in search results.',
   },
+  {
+    category: 'General',
+    question: 'Does this format remover also remove metadata from text?',
+    answer: 'Yes. When you run text through this format remover, it removes the hidden Unicode characters that serve as embedded metadata in text — byte-order marks (U+FEFF), directional formatting marks (U+200E, U+200F), and other control characters that carry contextual metadata about text direction, encoding, and formatting intent. These metadata characters are invisible but affect how text renders and processes in downstream systems. The format remover strips them all, leaving text that carries no hidden metadata — just visible words with clean spacing.',
+  },
+  {
+    category: 'General',
+    question: 'How is a format remover different from a plain text converter?',
+    answer: 'A plain text converter and a format remover accomplish similar goals with different scope. A plain text converter typically strips rich formatting attributes like fonts, colors, bold, and hyperlinks — the kinds of formatting stored in document formats like DOCX, RTF, or HTML. A format remover goes further: it also removes invisible Unicode characters, markdown syntax, typographic special characters (curly quotes, em dashes), and irregular whitespace that survive any plain text conversion. This format remover acts as both a plain text converter and a deeper Unicode-level cleaner in a single operation.',
+  },
+  {
+    category: 'Usage',
+    question: 'How do I strip formatting from text without losing the words?',
+    answer: 'To strip formatting safely, paste your text into this format remover and click Clean Text. The tool strips formatting layers — markdown symbols, typographic characters, invisible Unicode, excess spacing — while leaving every visible word exactly as it was. Nothing is rewritten or summarized. If your text had 300 words before formatting removal, it has 300 words after. The only difference is that all formatting artifacts are gone. Strip formatting from AI output, Word documents, websites, PDFs, or any other source and the cleaned text is immediately ready for use in any destination.',
+  },
+  {
+    category: 'Comparison',
+    question: 'Can I use this as a plain text converter for Word documents?',
+    answer: 'Yes. This format remover works as a plain text converter for content copied from Microsoft Word, Google Docs, and other rich text editors. When you copy from Word and paste here, the tool removes the markdown-like symbols, typographic characters, and invisible Unicode that Word documents embed in their text. The result is plain text equivalent to what you would get from a plain text converter, plus Unicode-level cleaning that standard converters miss. Use it whenever you need to extract clean, plain text from a Word document for use in a CMS, email, code file, or data system.',
+  },
 ];
 
 const article = (
@@ -220,6 +240,10 @@ const article = (
     <p><strong>Publishing and media</strong> — journalists, editors, and content publishers who use AI for research assistance, draft generation, or content acceleration need format removal before AI-generated passages enter their publication's CMS. Most professional publishing platforms do not render markdown, and AI-generated content with markdown artifacts in published articles reduces credibility and requires manual cleanup that a format remover automates.</p>
     <p><strong>Education and e-learning</strong> — educators and instructional designers who use AI to create course materials, quiz questions, and learning content need format removal before that content enters their LMS (Moodle, Canvas, Blackboard). LMS platforms often have limited markdown support, and AI-generated content with markdown syntax clutters course materials and confuses students. Format removal before LMS entry keeps course content clean and professional.</p>
     <p><strong>Legal and compliance</strong> — legal professionals who use AI to assist with contract drafting, brief writing, or compliance documentation need clean, plain text before it enters document management systems. Curly quotes in legal documents can cause display inconsistencies in different PDF viewers. Markdown formatting in legal text is inappropriate and unprofessional. A format remover ensures all AI-assisted legal content is formatted to the plain-text standard required for legal documents.</p>
+
+    <h2>Strip Formatting and Remove Metadata in One Operation</h2>
+    <p>When you <strong>strip formatting</strong> from text, you remove the visible formatting markers — markdown asterisks, hash marks, backticks — that appear as literal characters when pasted into non-markdown environments. When you <strong>remove metadata</strong> from text, you remove the hidden Unicode control characters — byte-order marks, directional marks, soft hyphens — that carry invisible contextual data alongside visible words. This format remover does both simultaneously. In a single click, it strips formatting from the surface layer and removes metadata from the hidden character layer, returning text that is clean at every level.</p>
+    <p>To <strong>strip formatting</strong> and <strong>remove metadata</strong> together: paste your text from any source, click Clean Text, and copy the result. No manual find-and-replace, no Unicode lookup tables, no separate tools for each layer. The format remover handles markdown stripping, curly quote normalization, em dash conversion, invisible Unicode removal, and spacing normalization in one pass. Strip formatting from AI output, Word documents, web pages, PDFs, and email chains — the same process works for any source.</p>
 
     <h2>Free Format Remover — No Account, No Limits</h2>
     <p>GPTCLEANUP AI is a free <strong>format remover</strong> and <strong>text format remover</strong> with no account required, no character limits, and no subscription. All processing happens in your browser — your text is never uploaded, stored, or logged. The format remover handles text from any source: AI models, word processors, websites, PDFs, email clients. It removes markdown formatting, converts curly quotes to straight quotes, normalizes em dashes, removes invisible Unicode characters, collapses excess blank lines, and normalizes spacing — all in one click. Paste your text, click Clean Text, and copy clean, plain, format-free output ready for any application.</p>

@@ -169,4 +169,22 @@ export const spaceRemoverFaqs: FaqItem[] = [
     answer:
       'A space remover online tool typically works on the text content between tags or in paragraphs; it normalizes spaces and line breaks without altering tag structure. For HTML or Markdown, paste the content and run the space remover—spacing and redundant whitespace are cleaned while semantics and tags remain intact. Always preview in your CMS or editor after cleaning to ensure headings, lists, and code blocks still render correctly. For full HTML minification (aggressive space removal in markup), use a dedicated minifier; for body text and copy, a standard space remover is safe and effective.',
   },
+  {
+    category: 'General',
+    question: 'What causes text space problems in AI-generated and copy-pasted content?',
+    answer:
+      'Text space problems in AI-generated content and copy-pasted text have several sources. AI models like ChatGPT and Claude sometimes insert non-breaking spaces (U+00A0) that look identical to regular spaces but behave differently in editors and browsers. Word processors and PDFs often embed double spaces after periods, leading spaces at paragraph starts, and trailing spaces at line ends. Websites and CMS editors introduce their own spacing artifacts during copy operations. When this content with text space irregularities is pasted into a new destination, the inconsistent spacing causes layout problems, broken word counts, and misaligned content. The space remover normalizes all text space issues to consistent single spacing in one pass.',
+  },
+  {
+    category: 'Usage',
+    question: 'How do I clear space from text before pasting into a CMS or document?',
+    answer:
+      'To clear space artifacts from text before pasting into a CMS or document: copy your source text, open this space remover, paste it in, click the clean button, and copy the result. The tool will clear space irregularities including double spaces, leading and trailing spaces per line, non-breaking spaces that look like regular spaces but are not, and excessive blank lines between paragraphs. Once you clear space issues from the source text, you can paste it into WordPress, Google Docs, Microsoft Word, Notion, or any other editor without the spacing artifacts carrying over.',
+  },
+  {
+    category: 'Usage',
+    question: 'What is the fastest way to fix a double space problem across a long document?',
+    answer:
+      'The fastest way to fix a double space problem throughout a long document is to paste the entire document into this space remover and click clean. The tool collapses all consecutive double spaces — and triple spaces, and more — to single spaces in one operation, regardless of where they appear in the text. It also trims leading and trailing spaces from each line, so you eliminate every double space issue at once rather than searching and replacing manually. For documents with thousands of words, the space remover processes the entire text in under a second, saving significant time compared to a manual double space fix.',
+  },
 ];
