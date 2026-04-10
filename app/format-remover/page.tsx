@@ -174,6 +174,51 @@ const faqs: FaqItem[] = [
     question: 'Can I use this as a plain text converter for Word documents?',
     answer: 'Yes. This format remover works as a plain text converter for content copied from Microsoft Word, Google Docs, and other rich text editors. When you copy from Word and paste here, the tool removes the markdown-like symbols, typographic characters, and invisible Unicode that Word documents embed in their text. The result is plain text equivalent to what you would get from a plain text converter, plus Unicode-level cleaning that standard converters miss. Use it whenever you need to extract clean, plain text from a Word document for use in a CMS, email, code file, or data system.',
   },
+  {
+    category: 'General',
+    question: 'How do I remove text formatting from AI and document content?',
+    answer: 'To remove text formatting from AI or document content, paste your text into this format remover and click Clean Text. The tool removes text formatting at every layer: markdown syntax (asterisks, hashes, backticks), typographic formatting characters (curly quotes, em dashes, ellipsis), and invisible Unicode formatting characters (zero-width spaces, byte-order marks, non-breaking spaces). Whether you need to remove text formatting from a ChatGPT response, a Google Docs copy, a Word document paste, or web-sourced content, one click strips all formatting layers and returns plain, neutral text ready for any destination.',
+  },
+  {
+    category: 'General',
+    question: 'How do I remove text formatting online without Microsoft Word?',
+    answer: 'You can remove text formatting online using this free format remover without needing Microsoft Word or any other software. Copy your formatted text from any source, paste it into the input area here, click Clean Text, and the formatted text is converted to clean plain text in seconds. Removing text formatting online works for content from any source — AI tools, Word documents, Google Docs, websites, PDFs, email chains — and requires no account, installation, or file upload. All processing happens in your browser, making it safe for confidential content.',
+  },
+  {
+    category: 'Use Cases',
+    question: 'How do I remove metadata from Word and clean pasted content?',
+    answer: 'When you copy text from Microsoft Word and paste it elsewhere, hidden metadata travels with it — non-breaking spaces from Word\'s AutoCorrect, curly quotes from typographic substitution, em dashes from automatic hyphen replacement, and invisible Unicode characters embedded during editing. To remove metadata from Word content before using it in a CMS, email, or code file: copy the Word text, paste into this format remover, click Clean Text, and copy the result. The format remover strips every category of hidden metadata that Word embeds in its text output, leaving clean content that behaves the same as manually typed text in any destination.',
+  },
+  {
+    category: 'Use Cases',
+    question: 'How do I clear text formatting from pasted content?',
+    answer: 'To clear text formatting from pasted content, paste it into this format remover and click Clean Text. The tool clears text formatting at three levels: visible formatting markers (markdown asterisks, hash marks, backticks), typographic special characters (curly quotes, em dashes, ellipsis characters), and invisible Unicode formatting characters (zero-width spaces, byte-order marks, directional marks). After you clear text formatting with this tool, the output contains only visible words with standard punctuation and spacing — no leftover formatting from the source document. You can then apply your own formatting from scratch in the destination application.',
+  },
+  {
+    category: 'Use Cases',
+    question: 'How do I get rid of markup in Word documents pasted into a CMS?',
+    answer: 'When you copy content from Microsoft Word and paste it into a CMS like WordPress, the hidden formatting markup comes along — non-breaking spaces, curly quotes, em dashes, and invisible Unicode characters. To get rid of markup from Word before pasting into a CMS: copy the Word content, paste it into this format remover, click Clean Text, and then paste the cleaned result into your CMS. This process strips the Word formatting markup before it enters your CMS, preventing the hidden characters from appearing in your published HTML source. It is much more thorough than using the CMS\'s own "paste as plain text" function, which misses invisible Unicode.',
+  },
+  {
+    category: 'Use Cases',
+    question: 'How do I remove word formatting marks from a document?',
+    answer: 'Word formatting marks include the typographic substitutions Word applies automatically — curly quotes replacing straight quotes, em dashes replacing double hyphens, non-breaking spaces replacing regular spaces in certain contexts — plus the invisible Unicode characters embedded during editing and import operations. To remove word formatting marks, copy the text from Word, paste it into this format remover, and click Clean Text. The tool identifies and removes every word formatting mark, including the invisible ones that survive a standard paste-as-plain-text operation. The result is text stripped of all word formatting marks with consistent standard punctuation throughout.',
+  },
+  {
+    category: 'Use Cases',
+    question: 'What is a metadata removal tool and does this qualify?',
+    answer: 'A metadata removal tool strips the hidden data embedded in text — invisible Unicode control characters, byte-order marks, directional marks, and typographic special characters that carry contextual information about text origin, encoding, and formatting intent. This format remover functions as a metadata removal tool for text content: it strips every category of hidden metadata from text copied from AI tools, word processors, websites, and PDFs. For file-level metadata removal (author names, timestamps, tracked changes in DOCX files), you need a different type of tool. For text-level hidden character metadata, this is a full metadata removal tool.',
+  },
+  {
+    category: 'Use Cases',
+    question: 'How do I strip metadata from a Word document\'s text content?',
+    answer: 'To strip metadata from Word document text — the hidden non-breaking spaces, curly quotes, em dashes, and invisible Unicode that Word embeds in its text output — copy the text from Word, paste it here, and click Clean Text. This format remover acts as a text-level metadata stripper: it removes the formatting metadata that Word embeds in the character stream, leaving only the visible words. This is different from stripping file-level metadata (document properties, author information, tracked changes), which requires Word\'s built-in document inspector. For copying Word text into any external application without formatting metadata, this tool provides the most thorough text-level stripping available.',
+  },
+  {
+    category: 'General',
+    question: 'What is a formatting cleaner and what does it do?',
+    answer: 'A formatting cleaner is a tool that removes unwanted formatting from text — markdown syntax, typographic special characters, invisible Unicode, and spacing irregularities. This format remover is a formatting cleaner that targets every layer of formatting contamination that accumulates when text passes through AI tools, word processors, rich text editors, and copy-paste operations. A formatting cleaner is different from a text editor or reformatter: it does not apply new formatting or change your content, it simply removes the old formatting artifacts and returns neutral, clean text. Use a formatting cleaner any time you need to start fresh with clean text from a formatted source.',
+  },
 ];
 
 const article = (
@@ -240,6 +285,13 @@ const article = (
     <p><strong>Publishing and media</strong> — journalists, editors, and content publishers who use AI for research assistance, draft generation, or content acceleration need format removal before AI-generated passages enter their publication's CMS. Most professional publishing platforms do not render markdown, and AI-generated content with markdown artifacts in published articles reduces credibility and requires manual cleanup that a format remover automates.</p>
     <p><strong>Education and e-learning</strong> — educators and instructional designers who use AI to create course materials, quiz questions, and learning content need format removal before that content enters their LMS (Moodle, Canvas, Blackboard). LMS platforms often have limited markdown support, and AI-generated content with markdown syntax clutters course materials and confuses students. Format removal before LMS entry keeps course content clean and professional.</p>
     <p><strong>Legal and compliance</strong> — legal professionals who use AI to assist with contract drafting, brief writing, or compliance documentation need clean, plain text before it enters document management systems. Curly quotes in legal documents can cause display inconsistencies in different PDF viewers. Markdown formatting in legal text is inappropriate and unprofessional. A format remover ensures all AI-assisted legal content is formatted to the plain-text standard required for legal documents.</p>
+
+    <h2>How to Remove Markup in Word and Clean Up Document Text</h2>
+    <p>When you copy from Microsoft Word and paste into any external application, Word's formatting markup comes along — non-breaking spaces from AutoCorrect, curly quotes from typographic substitution, em dashes from automatic hyphen replacement, and invisible Unicode characters embedded during editing. To <strong>remove markup in Word</strong> content before using it elsewhere: copy the Word text, paste it into this format remover, click Clean Text, and paste the clean result into your target application. The format remover strips every category of Word markup from the character stream, producing text that behaves identically to manually typed content in any destination. Use this approach to <strong>remove markup in Word</strong> content before pasting into WordPress, Gmail, Notion, a CMS, a code file, or a spreadsheet.</p>
+
+    <h2>Clean Up Metadata and Use This as a Metadata Clearer</h2>
+    <p>To <strong>clean up metadata</strong> embedded in text — the invisible Unicode control characters, byte-order marks, and directional formatting marks that carry hidden contextual information — paste your text into this format remover and click Clean Text. The tool acts as a <strong>metadata clearer</strong>: it removes every invisible character that serves as hidden metadata in the text data, leaving only visible words with standard spacing and punctuation. After you <strong>clean up metadata</strong> using this tool, the output contains no byte-order marks, no directional marks, no soft hyphens, and no zero-width characters — just the content you can see.</p>
+    <p>As a <strong>metadata clearer</strong>, this format remover is most useful for text that will be used in systems that are sensitive to hidden character metadata: database import pipelines where invisible characters in values cause matching failures, JSON structures where non-ASCII characters in keys or values cause parse errors, and HTML templates where hidden metadata characters appear in the page source and affect search engine parsing. Run your text through this metadata clearer before it enters any of these sensitive systems and the hidden character metadata is eliminated before it can cause problems.</p>
 
     <h2>Strip Formatting and Remove Metadata in One Operation</h2>
     <p>When you <strong>strip formatting</strong> from text, you remove the visible formatting markers — markdown asterisks, hash marks, backticks — that appear as literal characters when pasted into non-markdown environments. When you <strong>remove metadata</strong> from text, you remove the hidden Unicode control characters — byte-order marks, directional marks, soft hyphens — that carry invisible contextual data alongside visible words. This format remover does both simultaneously. In a single click, it strips formatting from the surface layer and removes metadata from the hidden character layer, returning text that is clean at every level.</p>

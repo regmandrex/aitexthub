@@ -187,4 +187,28 @@ export const spaceRemoverFaqs: FaqItem[] = [
     answer:
       'The fastest way to fix a double space problem throughout a long document is to paste the entire document into this space remover and click clean. The tool collapses all consecutive double spaces — and triple spaces, and more — to single spaces in one operation, regardless of where they appear in the text. It also trims leading and trailing spaces from each line, so you eliminate every double space issue at once rather than searching and replacing manually. For documents with thousands of words, the space remover processes the entire text in under a second, saving significant time compared to a manual double space fix.',
   },
+  {
+    category: 'General',
+    question: 'What is a space remover between paragraphs and when do I need one?',
+    answer:
+      'A space remover between paragraphs is a tool that collapses or removes the excessive blank lines and extra spacing that appear between paragraphs when text is copied from AI tools, PDFs, word processors, or websites. You need a space remover between paragraphs when your pasted content has two, three, or more blank lines between every paragraph instead of a single line break — a common artifact from AI models like ChatGPT and Claude, which tend to add extra spacing in their output. The space remover normalizes the space between paragraphs to a consistent single blank line throughout the document, making the text immediately ready for a CMS, document editor, or publishing platform without manual cleanup.',
+  },
+  {
+    category: 'General',
+    question: 'What is a text space remover and how is it different from a space remover?',
+    answer:
+      'A text space remover normalizes spacing within and around text content — collapsing multiple spaces to single spaces, trimming leading and trailing spaces from lines, and removing extra blank lines between paragraphs. It is the same core function as a space remover, just described from the perspective of cleaning text that has space irregularities. This tool is a text space remover: it processes any text you paste and fixes all space-related issues in one click — extra spaces between words, leading spaces at line starts, trailing spaces at line ends, and excessive blank lines between paragraphs. The result is text with clean, consistent spacing throughout.',
+  },
+  {
+    category: 'Usage',
+    question: 'How do I clear space from a copy paste without losing my paragraph structure?',
+    answer:
+      'To clear space from a copy-paste while keeping your paragraph structure intact, paste your text into this space remover and use the normalize option rather than the remove-all option. The normalize mode collapses multiple spaces to single spaces and trims extra whitespace without removing the paragraph breaks that define your document structure. After the clear space operation, each paragraph is preserved with a single blank line between paragraphs — no content rearrangement, no merging of paragraphs, just clean, consistent spacing throughout. This is the right approach when you want to clear space copy paste artifacts without restructuring your document.',
+  },
+  {
+    category: 'Usage',
+    question: 'How do I remove extra space between paragraphs in Word or Google Docs content?',
+    answer:
+      'When you copy content from Microsoft Word or Google Docs and paste it into another application, the paragraph spacing settings from the source document sometimes translate into multiple blank lines between paragraphs. To remove extra space between paragraphs in this pasted content, paste the text into this space remover and click clean. The tool detects and collapses consecutive blank lines — whether from Word paragraph spacing, Google Docs formatting, or AI-generated extra line breaks — to a single blank line between paragraphs. This makes the text immediately suitable for a CMS, email editor, or publishing platform without needing to manually delete the extra blank lines.',
+  },
 ];

@@ -154,6 +154,46 @@ const faqs: FaqItem[] = [
     question: 'What is a byte-order mark and why is it a problem?',
     answer: 'A byte-order mark (BOM) is the Unicode character U+FEFF. Its original purpose is to appear at the very start of a text file to indicate to the reading software whether the file uses big-endian or little-endian byte ordering. In UTF-8 encoded files, the BOM is technically unnecessary but still used by some software as a UTF-8 signature. The problem arises when a BOM appears anywhere other than the very start of a file — in the middle of text, at the beginning of a paragraph, or at the start of a string that is part of a larger document. In HTML, a mid-text BOM can cause rendering artifacts. In JSON, a BOM at the start of a value causes parse errors. In CSV, a BOM in a cell value corrupts the field. AI interfaces and copy-paste operations can introduce BOMs in unexpected positions, making BOM removal an important part of invisible character cleaning.',
   },
+  {
+    category: 'General',
+    question: 'What is "invisible letter copy and paste" and how do I remove it?',
+    answer: 'When people search for "invisible letter copy and paste," they are typically looking for one of two things: either a way to generate blank-looking text using invisible Unicode characters (zero-width spaces, invisible letters), or a way to remove those invisible letters that arrived via copy and paste from an AI tool or website. This invisible character remover handles the second use case — if your text contains invisible letters that were copied and pasted in from ChatGPT, Claude, a website, or a document, paste the text here and click Clean Text. The remover finds every invisible letter hiding in your copy-pasted content and strips them all out, leaving only the visible characters you actually want.',
+  },
+  {
+    category: 'General',
+    question: 'How do I remove invisible character copy and paste artifacts?',
+    answer: 'Invisible character copy and paste artifacts arrive in your text when you copy from a source that contains hidden Unicode — AI models, formatted documents, websites with special typography, or PDFs. The invisible characters are part of the clipboard content and paste silently into your target application. To remove invisible character copy and paste artifacts: copy your affected text, paste it into this invisible character remover, click Clean Text, and copy the cleaned result. The remover identifies and removes every zero-width space, byte-order mark, non-breaking space, soft hyphen, and other invisible Unicode character that arrived via copy and paste.',
+  },
+  {
+    category: 'General',
+    question: 'What are invisible words copy and paste characters and why do they appear?',
+    answer: 'Invisible words copy and paste characters are Unicode code points — specifically zero-width spaces (U+200B), word joiners (U+2060), and zero-width non-joiners (U+200C) — that appear between visible words when text is copied and pasted from AI tools or formatted documents. They look like spaces or nothing at all but are distinct characters in the data. They appear because AI models insert them as artifacts of the tokenization process, and because some fonts and document formats use them for typographic purposes that are meaningless in plain-text contexts. This invisible character remover detects and removes all invisible words copy and paste characters in one click.',
+  },
+  {
+    category: 'General',
+    question: 'What is "invisible copy paste" and how do I fix it?',
+    answer: 'Invisible copy paste refers to the hidden Unicode characters that silently transfer along with visible text during a copy-paste operation. When you copy from ChatGPT, Claude, a website, or a formatted document and paste the result into a new application, invisible characters — zero-width spaces, byte-order marks, non-breaking spaces — are included in the paste without any visual indication. The result is text that looks normal but contains hidden data that causes formatting problems, broken word counts, and unexpected behavior. To fix invisible copy paste artifacts, use this remover: paste your affected text, click Clean Text, and every invisible character from the copy-paste operation is removed.',
+  },
+  {
+    category: 'General',
+    question: 'What is "copy and paste invisible space" and how do I remove it?',
+    answer: 'Copy and paste invisible space refers to the non-breaking space (U+00A0) and zero-width space (U+200B) characters that get pasted into your text when you copy from AI tools, websites, or formatted documents. Unlike a regular space, a non-breaking space prevents line wrapping, behaves differently in string comparisons, and can cause layout issues in published content. A zero-width space is even more problematic — it takes up no visual space at all but can split words in some editors, inflate character counts, and cause unexpected behavior in code. This invisible character remover strips all copy and paste invisible space characters from your text in a single operation.',
+  },
+  {
+    category: 'General',
+    question: 'How do I remove hidden characters online without installing software?',
+    answer: 'This invisible character remover lets you remove hidden characters online without any software installation. Open the page in any browser, paste your text into the input area, click Clean Text, and copy the cleaned result. The entire process of removing hidden characters online happens locally in your browser — no upload, no account, no file transfer. It works on any device with a browser: desktop computers, laptops, tablets, and phones. For removing hidden characters online from AI-generated text, documents, or web-sourced content, this is the fastest and most private approach available.',
+  },
+  {
+    category: 'General',
+    question: 'How do I remove Unicode characters from text?',
+    answer: 'To remove Unicode characters — specifically the invisible and problematic ones — from text, paste your content into this invisible character remover and click Clean Text. The tool targets the Unicode code points known to cause problems: U+200B (zero-width space), U+200C (zero-width non-joiner), U+200D (zero-width joiner), U+FEFF (byte-order mark), U+00AD (soft hyphen), U+00A0 (non-breaking space), U+2060 (word joiner), and the directional marks U+200E and U+200F. These are the Unicode characters most commonly found in AI-generated text and copy-pasted content. After removing these Unicode characters, your text contains only standard visible characters that work reliably in any application.',
+  },
+  {
+    category: 'General',
+    question: 'How do I remove invisible characters from AI text specifically?',
+    answer: 'To remove invisible characters from AI text, copy your AI-generated content from ChatGPT, Claude, Gemini, DeepSeek, Grok, Llama, or any other model, then paste it into this invisible character remover and click Clean Text. AI text consistently contains more invisible characters than other sources because of the tokenization and generation pipeline all large language models use. This remover is optimized for AI text: it targets every Unicode code point known to appear in AI-generated content and removes them all in one pass. After removing invisible characters from your AI text, the cleaned result is safe to paste into any document editor, CMS, email client, or data system.',
+  },
 ];
 
 const article = (
@@ -216,6 +256,12 @@ const article = (
     <p><strong>Google Gemini</strong> — Gemini output can have clusters of invisible characters around heading and list formatting, particularly when generating structured documents. The interface rendering layer adds additional invisible characters during copy operations from the Gemini web interface.</p>
     <p><strong>DeepSeek, Llama, Mistral</strong> — Open-source and open-weight models accessed through third-party interfaces can have higher invisible character counts than models accessed through their official interfaces, because different interfaces add different amounts of invisible characters during copy operations. The invisible character remover works on output from all of these regardless of the interface.</p>
     <p><strong>Microsoft Copilot, Perplexity, Grok</strong> — These models have similar invisible character profiles to the underlying models they are based on (GPT, proprietary, or open models). Perplexity output can have additional invisible characters from its source citation formatting. The remover handles all of them.</p>
+
+    <h2>Invisible Letter Copy and Paste: Why It Happens and How to Fix It</h2>
+    <p>The search term <strong>invisible letter copy and paste</strong> reflects a real and common problem: when you copy text from an AI tool, website, or formatted document and paste it somewhere else, invisible letters arrive silently in the paste. You see nothing wrong on screen — the visible text looks exactly as expected — but the underlying character data contains zero-width spaces, byte-order marks, and other invisible Unicode code points that came along with the copy-paste operation.</p>
+    <p>This is why <strong>invisible character copy</strong> and paste issues are so frustrating to diagnose. The text looks correct in every editor and document viewer. The problem only becomes apparent when something downstream behaves unexpectedly: a word count tool reports a different number than expected, a string comparison in a spreadsheet fails to find a match, a CMS published page has subtle spacing issues, or an AI detector flags the text based on invisible character patterns.</p>
+    <p>The fix is straightforward: run your copy-pasted text through this invisible character remover before using it in any destination. Paste the text, click Clean Text, and every invisible letter and <strong>invisible copy paste</strong> artifact is removed. The cleaned text contains only the visible characters you can see — no hidden stowaways, no invisible letters, no Unicode artifacts from the copy-paste operation. For anyone who regularly copies from AI tools, websites, or documents, making this a standard step in the paste workflow eliminates the entire category of invisible letter copy and paste problems.</p>
+    <p>The same applies to <strong>invisible words copy and paste</strong> characters — zero-width characters that appear between words rather than within them — and to <strong>copy and paste invisible space</strong> characters like non-breaking spaces that look like normal spaces but are not. All of these are invisible character copy and paste artifacts, and this remover handles all of them in a single operation.</p>
 
     <h2>Invisible Characters vs Non-Breaking Spaces: Key Differences</h2>
     <p>Non-breaking spaces (U+00A0) deserve special mention because they are the invisible character most commonly found in word processor documents and are often confused with regular spaces. A non-breaking space looks identical to a regular space on screen but has two important differences: it prevents a line break from occurring at that position, and it is a distinct Unicode code point that many software systems treat differently from a regular space.</p>

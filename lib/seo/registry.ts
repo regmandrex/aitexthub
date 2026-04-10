@@ -73,6 +73,20 @@ export const toolPages: ToolPage[] = [
     category: 'text',
   },
   {
+    slug: 'remove-text-formatting',
+    title: 'Remove Text Formatting',
+    description: 'Remove text formatting from AI output, Word documents, and copy-pasted content — strip markdown, curly quotes, and invisible Unicode in one click.',
+    seoTitle: 'Remove Text Formatting Online Free – Strip Formatting from Any Text | GPTCLEANUP AI',
+    category: 'text',
+  },
+  {
+    slug: 'paragraph-space-remover',
+    title: 'Paragraph Space Remover',
+    description: 'Remove extra space between paragraphs in AI content, PDF exports, and Word documents. Normalize paragraph spacing to a clean single blank line.',
+    seoTitle: 'Paragraph Space Remover – Remove Extra Space Between Paragraphs Free | GPTCLEANUP AI',
+    category: 'text',
+  },
+  {
     slug: 'space-remover',
     title: 'Space Remover',
     description: 'Remove extra spaces, trim lines, and normalize whitespace for clean, paste-ready text.',

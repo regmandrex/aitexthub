@@ -175,6 +175,26 @@ const faqs: FaqItem[] = [
     question: 'How does this tool differ from gptcleanup.com and similar GPT cleanup sites?',
     answer: 'This GPT cleanup tool processes your text entirely in the browser with no server upload, no account creation, and no usage limits. GPT cleanup tools generally vary in which characters they target and whether they process data locally or send it to a server. This tool removes the full range of hidden Unicode characters found in ChatGPT output—not just zero-width spaces but also byte-order marks, soft hyphens, non-breaking spaces, word joiners, and directional marks—while also normalizing curly quotes, em dashes, and markdown formatting. All GPT cleanup happens client-side, making it safe for confidential content.'
   },
+  {
+    category: 'Technical',
+    question: 'How do I remove hidden code from ChatGPT text?',
+    answer: 'The "hidden code" in ChatGPT text refers to invisible Unicode characters — zero-width spaces, byte-order marks, non-breaking spaces, directional marks — that ChatGPT embeds in its output. To remove hidden code from ChatGPT text: copy your ChatGPT output, paste it into this ChatGPT text cleaner, click Clean Text, and copy the result. Every hidden Unicode character is stripped from the ChatGPT text, leaving only the visible words and punctuation you actually want. The process takes seconds and requires no technical knowledge — just paste and click.',
+  },
+  {
+    category: 'Technical',
+    question: 'How do I remove ChatGPT hidden characters from copied text?',
+    answer: 'To remove ChatGPT hidden characters: copy your text from ChatGPT, paste it into this cleaner, click Clean Text, and copy the cleaned output. The tool removes every category of ChatGPT hidden character including zero-width spaces (U+200B), byte-order marks (U+FEFF), non-breaking spaces (U+00A0), soft hyphens (U+00AD), zero-width non-joiners (U+200C), zero-width joiners (U+200D), word joiners (U+2060), and directional marks (U+200E, U+200F). After removing ChatGPT hidden characters, your text is safe to paste into any application without formatting problems.',
+  },
+  {
+    category: 'General',
+    question: 'What is a ChatGPT remover tool and what does it remove?',
+    answer: 'A ChatGPT remover (also called a ChatGPT text cleaner) removes the invisible Unicode characters, markdown formatting symbols, typographic special characters, and spacing irregularities that ChatGPT embeds in its generated text. This ChatGPT remover specifically targets the artifacts that cause problems when you paste ChatGPT output into real-world applications: zero-width spaces that inflate word counts, markdown asterisks that appear as literal symbols in non-markdown editors, curly quotes that cause syntax errors in code, and non-breaking spaces that prevent natural line wrapping. Runs entirely in the browser — no upload, no account required.',
+  },
+  {
+    category: 'Usage',
+    question: 'How do I use a ChatGPT mark remover to clean markdown symbols?',
+    answer: 'A ChatGPT mark remover strips the markdown marks — asterisks, hashes, backticks — that ChatGPT uses in its formatted responses. When you paste ChatGPT output into Gmail, a CMS, or any application that does not render markdown, those marks appear as literal characters in your text. This ChatGPT text cleaner includes a built-in mark remover: it strips all markdown formatting symbols from ChatGPT output while preserving the underlying text. Paste your ChatGPT response into the input area, click Clean Text, and the output is free of all ChatGPT marks — no asterisks around bold words, no hash marks on headings, no backticks around code.',
+  },
 ];
 
 const article = (
