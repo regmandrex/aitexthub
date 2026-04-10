@@ -87,6 +87,13 @@ export const toolPages: ToolPage[] = [
     category: 'text',
   },
   {
+    slug: 'clean-ai',
+    title: 'Clean AI Text',
+    description: 'Clean AI-generated text from any model — remove invisible characters, hidden Unicode, markdown, and spacing artifacts so your AI content is ready for professional use.',
+    seoTitle: 'Clean AI Text Free – Remove Hidden Characters & Artifacts from AI Output | GPTCLEANUP AI',
+    category: 'ai-cleanup',
+  },
+  {
     slug: 'space-remover',
     title: 'Space Remover',
     description: 'Remove extra spaces, trim lines, and normalize whitespace for clean, paste-ready text.',
