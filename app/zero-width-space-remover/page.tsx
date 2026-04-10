@@ -639,6 +639,9 @@ const writeUp = (
         become expensive problems. The tool is fast, deterministic, and easy to audit, which makes it a dependable part of any text cleanup
         process.
       </p>
+
+      <h2>Copy and Paste Invisible Space — Remove Zero Width Invisible Copy Paste Characters</h2>
+      <p>A <strong>copy and paste invisible space</strong> is a zero-width space (U+200B) or similar invisible Unicode character that gets copied along with visible text and then pasted into a new destination, where it continues to be invisible but causes the same problems it did in the source. <strong>Copy and paste invisible space</strong> characters are common in text copied from AI tools, websites, and PDFs — they travel silently through clipboard operations because they are part of the plain text data, not the rich formatting layer that paste-as-plain-text strips. This zero-width space remover eliminates every <strong>copy and paste invisible space</strong> character from pasted text, ensuring your clipboard content is free of hidden zero-width characters before it reaches its destination.</p>
     </div>
   </section>
 );
