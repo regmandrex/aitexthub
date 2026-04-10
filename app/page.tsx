@@ -199,7 +199,7 @@ export default async function HomePage() {
         </section>
 
         <BelowToolAd />
-        <RelatedTools currentSlug="chatgpt-text-cleaner" />
+        <RelatedTools currentSlug="" />
 
         {/* Core Tools — categorized grid */}
         <section className="mt-8 space-y-8">
