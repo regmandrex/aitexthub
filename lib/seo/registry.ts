@@ -2686,6 +2686,20 @@ export const toolPages: ToolPage[] = [
     seoTitle: 'Navajo Translator - English to Navajo Translation Online',
     category: 'translator',
   },
+  {
+    slug: 'invisible-text-copy-paste',
+    title: 'Invisible Text Copy and Paste',
+    description: 'Copy invisible text characters — zero-width spaces, blank spaces, and invisible Unicode — with one click. Free invisible text generator for any platform.',
+    seoTitle: 'Invisible Text Copy and Paste – Blank Space & Invisible Character Generator Free',
+    category: 'text',
+  },
+  {
+    slug: 'em-dash-copy-paste',
+    title: 'Em Dash Copy and Paste',
+    description: 'Copy em dash, en dash, ellipsis, and special punctuation symbols instantly. One-click copy for every dash, dot, and blank space symbol.',
+    seoTitle: 'Em Dash Copy and Paste – Copy Em Dash, En Dash & Ellipsis Symbol Free',
+    category: 'text',
+  },
 ];
 
 export const categoryPages: CategoryPage[] = [];
