@@ -2,6 +2,8 @@ import type { Metadata } from 'next';
 import { JsonLd } from '@/components/JsonLd';
 import AdSenseSlot from '@/components/ads/AdSenseSlot';
 import BelowToolAd from '@/components/ads/BelowToolAd';
+import ToolWorkbench from '@/components/ToolWorkbench';
+import { RelatedTools } from '@/components/tool/RelatedTools';
 import { siteUrl } from '@/lib/seo/url';
 
 export const revalidate = 86400;
@@ -306,8 +308,22 @@ export default async function RemoveSpacesExcelPage() {
           </div>
         </section>
 
-        <AdSenseSlot className="mt-6" />
+        <section className="relative w-full mt-6">
+          <div className="w-full max-w-none rounded-xl border border-slate-200 bg-white p-3 shadow-sm md:rounded-2xl md:p-6">
+            <p className="text-xs text-slate-500 mb-3">Paste text to clean before copying into Excel — strips invisible characters, non-breaking spaces, and formatting artifacts</p>
+            <ToolWorkbench
+              processor="chatgptTextCleaner"
+              primaryLabel="Clean for Excel"
+              inputLabel="Paste your text"
+              outputLabel="Clean result — ready to paste into Excel"
+              inputPlaceholder="Paste text with hidden spaces or formatting artifacts..."
+              outputPlaceholder="Clean text ready for Excel will appear here."
+            />
+          </div>
+        </section>
+
         <BelowToolAd />
+        <RelatedTools currentSlug="remove-spaces-excel" />
 
         {article}
 
