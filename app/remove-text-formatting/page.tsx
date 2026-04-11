@@ -216,6 +216,26 @@ const article = (
     <p>Microsoft Word uses its own set of formatting marks — non-breaking spaces, optional hyphens, em dashes, curly quotes, and field codes — that differ from the invisible Unicode characters AI models embed. When you copy Word content into another application, Word formatting marks travel with the text. To <strong>remove word formatting marks</strong> from copied content: paste the Word text into this remove text formatting tool and click Clean Text. The tool identifies and removes Word-specific formatting marks including non-breaking spaces, soft hyphens (the Word equivalent of optional hyphens), curly quotes, and em dashes, converting them all to standard ASCII equivalents.</p>
     <p>This is particularly important for Word content that will be used in web publishing, email, code, or data systems where Word formatting marks cause compatibility issues. The remove text formatting tool strips every Word formatting mark in a single operation, eliminating the need to individually identify and replace each type through find-and-replace in Word itself.</p>
 
+    <h2>How to Remove Paragraph Marks and Headings in Word</h2>
+    <p>
+      Microsoft Word users often need to <strong>remove paragraph marks in Word</strong> (the ¶ symbol) and clean up heading styles when moving content to another application. The paragraph mark (¶) — called a pilcrow — is Word's formatting symbol that represents the end of a paragraph. It is visible only when you turn on formatting marks (Ctrl+Shift+8 or the ¶ button in the Home tab). The ¶ symbol does not print and is not copied when you copy text — it is only a display indicator. However, the paragraph break it represents (a hidden newline character) does copy with your text.
+    </p>
+    <h3>How to Remove Paragraph Symbols in Word</h3>
+    <p>
+      To <strong>remove paragraph symbols in Word</strong> from view, click the ¶ button in the Home tab or press Ctrl+Shift+8. This toggles formatting marks off. The paragraphs remain in your document — only the ¶ symbol display is hidden. To <strong>remove paragraph marks</strong> and actually merge paragraphs, use Find and Replace: press Ctrl+H, click More, click Special, select Paragraph Mark (^p), leave Replace with empty, and click Replace All. This merges all paragraphs into a single block of text. Use this when you want to collapse a bulleted or line-broken AI response into flowing prose.
+    </p>
+    <h3>How to Remove Headings in Word</h3>
+    <p>
+      To <strong>remove headings in Word</strong> and convert heading-styled text to normal body text: select the heading text, then click <strong>Normal</strong> in the Styles gallery (Home tab). This removes the heading style and converts the paragraph to body text with no heading formatting. To remove all headings at once: press Ctrl+A to select all, then apply the Normal style — this resets every paragraph style to Normal, removing all Heading 1, Heading 2, and Heading 3 styles throughout the document. If you want to keep the text but remove the visual formatting (bold, large font), this is the correct approach.
+    </p>
+    <h3>Clear Formatting in Word</h3>
+    <p>
+      To <strong>clear formatting in Word</strong> completely: select the text (Ctrl+A for all), then press <strong>Ctrl+Spacebar</strong> to clear character formatting (bold, italic, font size, color) or click the <strong>Clear All Formatting</strong> button in the Home tab (the A with an eraser icon). This removes all manually applied character formatting while resetting to the current paragraph style. To also clear paragraph formatting (indents, spacing, alignment): select the text and press Ctrl+Q. Together, Ctrl+Spacebar and Ctrl+Q clear all formatting from selected text in Word.
+    </p>
+    <p>
+      When you copy content from Word after clearing formatting, invisible characters (non-breaking spaces, soft hyphens) still travel with the text. Run the copied text through this <strong>remove text formatting</strong> tool to strip those invisible characters before pasting into a CMS, email, or code file.
+    </p>
+
     <h2>Remove Text Formatting for SEO and Publishing</h2>
     <p>For SEO professionals and publishers who use AI to generate content at scale, removing text formatting is an essential quality control step before publishing. The HTML source of your published pages should contain only the characters you intend — no hidden Unicode from AI tools, no markdown artifacts from the generation process, no typographic special characters that affect how search engines parse your content. Clean source HTML gives search engines exactly what you want them to see.</p>
     <p>Invisible characters in heading tags affect how search engines read the heading text. Curly quotes in meta descriptions can produce unexpected display in search result snippets. Invisible characters in keyword phrases mean the phrase does not exactly match the search query that would otherwise trigger your page. For every piece of AI-generated content that will be published online, run it through this remove text formatting tool before the content enters your CMS. The few seconds it takes prevents a category of technical SEO issues that are difficult to diagnose after publication.</p>

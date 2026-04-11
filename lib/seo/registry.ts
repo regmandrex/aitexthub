@@ -2700,6 +2700,13 @@ export const toolPages: ToolPage[] = [
     seoTitle: 'Em Dash Copy and Paste – Copy Em Dash, En Dash & Ellipsis Symbol Free',
     category: 'text',
   },
+  {
+    slug: 'remove-spaces-excel',
+    title: 'Remove Spaces in Excel',
+    description: 'Remove spaces in Excel cells instantly — strip leading, trailing, and extra spaces using TRIM, CLEAN, Find & Replace, and free online tools.',
+    seoTitle: 'Remove Spaces in Excel – Clear All Spaces & Strip Formatting Free',
+    category: 'text',
+  },
 ];
 
 export const categoryPages: CategoryPage[] = [];
