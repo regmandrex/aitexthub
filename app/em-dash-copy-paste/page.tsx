@@ -128,14 +128,56 @@ const article = (
     </p>
 
     <h2>Em Dash in Different Style Guides</h2>
-    <h3>AP Style</h3>
-    <p>AP style uses em dashes to indicate a sudden break in thought or a parenthetical element, with no spaces around the dash. AP uses the em dash sparingly — preferring commas in most cases — but requires the proper em dash character (—) rather than two hyphens when it is used.</p>
+    <p>
+      Every major style guide has specific rules for when and how to use the em dash. Understanding the differences helps you apply the em dash correctly in academic, journalistic, and professional writing.
+    </p>
+    <h3>AP Style (Associated Press)</h3>
+    <p>
+      AP style uses em dashes to indicate a sudden break in thought, set off a series within a phrase, or add parenthetical emphasis. The rule: <strong>no spaces</strong> before or after the em dash. Example: "The bill — which passed 54–46 — now goes to the president." AP uses the em dash sparingly and prefers commas or parentheses for most parenthetical information. When an em dash is used in AP style, it must be the proper em dash character (—), not two hyphens (--). Wire copy and digital articles from AP-affiliated outlets all follow this no-space convention, making it the dominant style in American news writing.
+    </p>
     <h3>Chicago Manual of Style</h3>
-    <p>Chicago style uses em dashes extensively, with no spaces around them, for parenthetical remarks, abrupt changes in thought, and strong emphasis. Chicago also uses em dashes for source attribution in epigraphs and for indicating missing content in citations.</p>
+    <p>
+      Chicago style is the most permissive and extensive in its em dash usage, with no spaces around the em dash. Chicago uses em dashes for four distinct purposes: (1) <strong>parenthetical remarks</strong> set off from the main clause — like this — with an em dash on each side; (2) <strong>abrupt changes in thought</strong> mid-sentence; (3) <strong>lists introduced informally</strong> ("The answer is simple — stop trying"); (4) <strong>source attribution</strong> in block quotes and epigraphs, where the em dash precedes the author name. Chicago also uses the em dash in citations to indicate missing information (a missing date or author). For academic and trade book publishing, Chicago is the dominant standard and em dash usage is common and expected.
+    </p>
     <h3>MLA Style</h3>
-    <p>MLA style uses em dashes similarly to Chicago — no spaces, proper em dash character. MLA uses the em dash for parenthetical elements and abrupt interruptions. For indicating omission in quotations, MLA uses the ellipsis (with spaces: . . .) rather than the em dash.</p>
-    <h3>APA Style</h3>
-    <p>APA style (7th edition) permits em dashes for parenthetical elements and strong pauses, following the same no-spaces convention. APA also uses the en dash for ranges (pp. 10–25) and compound adjectives.</p>
+    <p>
+      MLA style (Modern Language Association) uses em dashes with no spaces for parenthetical elements and abrupt interruptions, following the same convention as Chicago. A key MLA distinction: for indicating omitted words within a quotation, MLA prefers the ellipsis (written as spaced periods: . . .) rather than the em dash. MLA also uses the em dash in works cited entries — a three-em-dash (———) substitutes for an author name when the same author is listed in consecutive entries. This three-em-dash convention is specific to MLA bibliography format and is not used in AP or APA style.
+    </p>
+    <h3>APA Style (7th Edition)</h3>
+    <p>
+      APA style (American Psychological Association, 7th edition) permits em dashes for parenthetical elements and strong breaks, using no spaces before or after the dash. APA emphasizes clarity and recommends using em dashes only when commas or parentheses do not provide sufficient emphasis or clarity. A critical APA distinction: the <strong>en dash</strong> (–) is required for ranges (pp. 10–25, 2018–2022) and for compound adjectives with multi-word elements. APA is explicit that the en dash, not a hyphen, is correct for these uses. Academic papers and journals following APA style frequently use both the em dash and en dash — making the copy buttons on this page particularly useful for APA writers who need both characters quickly.
+    </p>
+    <h3>British vs American Em Dash Spacing</h3>
+    <p>
+      American style (AP, Chicago, MLA, APA) uses no spaces around the em dash: word—word. British style typically uses an en dash with spaces instead of an em dash: word – word. When writing for a British audience or a publication following British style conventions (The Guardian, The Economist, most UK publishers), use the en dash with a space on each side rather than the em dash. Copy the en dash from this page for British-style dashes. For American publications, copy the em dash.
+    </p>
+
+    <h2>Em Dash in Different Writing Contexts</h2>
+    <h3>Em Dash in Academic Writing</h3>
+    <p>
+      In academic writing, the em dash is used sparingly and purposefully. The most common academic use is the <strong>parenthetical em dash</strong> — where two em dashes set off supplementary information without the formality of parentheses. Academic writers use em dashes when the parenthetical content is tightly connected to the sentence and the writer wants the reader to feel the connection more strongly than parentheses suggest. Em dashes are also used to introduce a concluding clause that summarizes or explains what came before: "Every experiment pointed to the same conclusion — the hypothesis was wrong." In academic prose, overusing em dashes reads as informal; one or two per page is typically the maximum in formal academic writing.
+    </p>
+    <h3>Em Dash in Journalism</h3>
+    <p>
+      Journalism is the domain where em dash rules are most strictly defined by style guides — primarily AP style in American journalism. In news writing, the em dash signals an abrupt content shift or a strong parenthetical remark. It is used to set off explanatory content in breaking news ("The suspect — a 34-year-old from Brooklyn — was arrested Thursday") and to introduce a dramatic close to a sentence. Journalistic writing avoids em dash overuse because tight word counts favor commas and dashes equally compete for limited punctuation budget. Digital journalism increasingly uses em dashes for SEO-optimized meta descriptions and headlines, where an em dash visually separates the headline from the site name.
+    </p>
+    <h3>Em Dash in Fiction Writing</h3>
+    <p>
+      Fiction writing is where the em dash has its richest and most varied applications. Fiction writers use em dashes for:
+    </p>
+    <ul>
+      <li><strong>Interrupted dialogue</strong>: "I told you not to—" She turned away before he could finish.</li>
+      <li><strong>Trailing thought that shifts direction</strong>: He reached for the door — then remembered what she had said.</li>
+      <li><strong>Internal monologue emphasis</strong>: It was simple — almost too simple — and that was what worried him.</li>
+      <li><strong>Dramatic beats</strong>: She opened the envelope. Inside: a key — and nothing else.</li>
+    </ul>
+    <p>
+      In fiction, the em dash creates rhythm and pacing. Used well, it mimics the natural cadence of thought and speech. Used too often, it creates a breathless, choppy quality. Most fiction editors recommend no more than a few em dashes per page for prose that is not intentionally fragmented. For dialogue specifically, the em dash is the standard way to indicate interruption — using an ellipsis instead suggests trailing off rather than being cut off.
+    </p>
+    <h3>Em Dash in Business and Professional Writing</h3>
+    <p>
+      In business writing — emails, reports, proposals, presentations — the em dash is acceptable but should be used selectively. Business writing favors clarity over stylistic flair, so the em dash works best when it provides genuine structural clarity that a comma cannot. Common business writing uses: setting off a critical condition ("The contract is valid — provided payment is received by Friday"), introducing a summary ("We reviewed all three proposals — the second option is the strongest"), and emphasizing a critical piece of data ("Revenue increased 34% — the highest in company history"). In formal business documents (contracts, legal briefs, regulatory filings), em dashes are used less frequently than in general business prose, where a more conservative comma or colon is preferred.
+    </p>
 
     <h2>Curly Quotes vs Straight Quotes — The Typographic Quote Guide</h2>
     <p>
@@ -167,7 +209,7 @@ const article = (
 
     <h2>Free Em Dash Copy and Paste — No Account, No Limits</h2>
     <p>
-      This em dash copy and paste tool is completely free with no account required and no usage limits. Copy any character from the panel above as many times as you need. Bookmark this page for instant access to em dashes, en dashes, ellipses, and all other special punctuation symbols whenever you need them.
+      This em dash copy and paste tool is completely free with no account required and no usage limits. Copy any character from the panel above as many times as you need. Bookmark this page for instant access to em dashes, en dashes, ellipses, and all other special punctuation symbols whenever you need them. All characters are the correct Unicode code points — not approximations — so what you copy is what publishers, editors, and style guides expect to see in professionally typeset documents.
     </p>
   </section>
 );
