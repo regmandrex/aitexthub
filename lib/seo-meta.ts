@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import { getToolPageBySlug } from '@/lib/seo/registry';
 
 const BASE_URL = 'https://gptcleanuptools.com';
 const OG_IMAGE = `${BASE_URL}/brand/gpt-clean-up-tools.png`;
@@ -60,7 +61,18 @@ type ToolMetaInput = {
   canonicalTo?: string;
 };
 
-export function buildToolMeta({ title, description, urlPath, seoTitle, canonicalTo }: ToolMetaInput): Metadata {
+export function buildToolMeta(slugOrInput: string | ToolMetaInput): Metadata {
+  if (typeof slugOrInput === 'string') {
+    const page = getToolPageBySlug(slugOrInput);
+    if (!page) throw new Error(`Tool not registered in seo/registry: ${slugOrInput}`);
+    return buildToolMeta({
+      title: page.title,
+      description: page.description,
+      urlPath: `/${slugOrInput}`,
+      seoTitle: page.seoTitle,
+    });
+  }
+  const { title, description, urlPath, seoTitle, canonicalTo } = slugOrInput;
   const trimmedDescription = description.replace(/\.$/, '').trim();
   const fullTitle = seoTitle ?? (trimmedDescription ? `${title} - ${trimmedDescription}` : title);
 
