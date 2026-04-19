@@ -128,7 +128,7 @@ const faqs: FaqItem[] = [
   {
     category: 'Tips',
     question: 'How do I convert multiple JSON files to CSV in batch?',
-    answer: `Our browser tool handles one JSON file at a time — for batch conversion of multiple files, command-line tools or scripts are more efficient. In Python with pandas: import os, json, pandas as pd; [pd.json_normalize(json.load(open(f))).to_csv(f.replace('.json','.csv'), index=False) for f in os.listdir('.') if f.endswith('.json')]. In Node.js with the json2csv package: const {Parser} = require('json2csv'); and loop through files. From the command line with jq (processing a directory): for f in *.json; do jq -r '(.[0]|keys_unsorted) as $k | $k, (.[] | [.[$k[]]] | @csv)' "$f" > "${f%.json}.csv"; done. These approaches allow processing dozens or hundreds of files without manual copy-pasting. If you have a one-time batch job with a small number of files, opening multiple browser tabs with our tool is a quick workaround.`,
+    answer: `Our browser tool handles one JSON file at a time — for batch conversion of multiple files, command-line tools or scripts are more efficient. In Python with pandas: import os, json, pandas as pd; [pd.json_normalize(json.load(open(f))).to_csv(f.replace('.json','.csv'), index=False) for f in os.listdir('.') if f.endswith('.json')]. In Node.js with the json2csv package: const {Parser} = require('json2csv'); and loop through files. From the command line with jq (processing a directory): for f in *.json; do jq -r '(.[0]|keys_unsorted) as $k | $k, (.[] | [.[$k[]]] | @csv)' "$f" > "\${f%.json}.csv"; done. These approaches allow processing dozens or hundreds of files without manual copy-pasting. If you have a one-time batch job with a small number of files, opening multiple browser tabs with our tool is a quick workaround.`,
   },
   {
     category: 'Tips',
@@ -267,7 +267,7 @@ const writeUp = (
       Python with pandas: best for production workflows, automation, large files, and complex nested structures. <code>df = pd.json_normalize(data); df.to_csv('output.csv', index=False)</code>. Handles deeply nested JSON, type inference, date parsing, and encoding correctly. Use when: conversion is part of an automated pipeline, the JSON is complex or large, or you need fine-grained control over the output format.
     </p>
     <p>
-      Node.js with json2csv or papaparse: best for JavaScript-native environments (Node.js scripts, serverless functions, web applications). <code>const {parse} = require('json2csv'); const csv = parse(jsonArray);</code>. Use when: you are building a web application feature that exports data as CSV or your pipeline is already Node.js-based.
+      Node.js with json2csv or papaparse: best for JavaScript-native environments (Node.js scripts, serverless functions, web applications). <code>const &#123;parse&#125; = require(&apos;json2csv&apos;); const csv = parse(jsonArray);</code>. Use when: you are building a web application feature that exports data as CSV or your pipeline is already Node.js-based.
     </p>
     <p>
       Command-line with jq: <code>jq -r '(.[0] | keys_unsorted) as $keys | $keys, (.[] | [.[$keys[]]] | @csv)' data.json</code> converts a JSON array to CSV via jq. Powerful but requires jq knowledge. Use when: you are comfortable with jq and need a quick command-line conversion without installing additional libraries.

@@ -192,7 +192,7 @@ const writeUp = (
       The social convention around ROT13 is as interesting as the technical mechanism. When a community adopts ROT13 for spoilers, it creates a shared protocol that requires a small amount of effort to breach — just enough to make the choice conscious. It is not security theater; everyone knows ROT13 is trivial to decode. The social meaning is: "I am flagging this as content you should only view intentionally."
     </p>
     <p>
-      Modern platforms have partly replaced ROT13 with native spoiler markup (Reddit's >!text!<, Discord's ||text||, and similar). But ROT13 persists in cross-platform contexts, in communities with strong Usenet cultural heritage, and in situations where the ROT13 encoding itself is part of the content's charm. It also remains the only spoiler convention that works in pure plain-text email, SMS, and any medium where markdown is not rendered.
+      Modern platforms have partly replaced ROT13 with native spoiler markup (Reddit&apos;s &gt;!text!&lt;, Discord&apos;s ||text||, and similar). But ROT13 persists in cross-platform contexts, in communities with strong Usenet cultural heritage, and in situations where the ROT13 encoding itself is part of the content's charm. It also remains the only spoiler convention that works in pure plain-text email, SMS, and any medium where markdown is not rendered.
     </p>
 
     <h2>ROT13 and Text Security: Clear Limitations</h2>

@@ -165,10 +165,10 @@ const writeUp = (
 
     <h2>Setting Up Your Base Font Size</h2>
     <p>
-      The base font size determines the px-to-rem conversion ratio for your specific project. Most projects use the browser's default 16px base — achieved by either not setting a font size on html, or setting html { font-size: 100%; }. Both approaches inherit the user's browser preference, which is 16px by default but can be changed by the user.
+      The base font size determines the px-to-rem conversion ratio for your specific project. Most projects use the browser's default 16px base — achieved by either not setting a font size on html, or setting html &#123; font-size: 100%; &#125;. Both approaches inherit the user's browser preference, which is 16px by default but can be changed by the user.
     </p>
     <p>
-      The popular 62.5% trick (html { font-size: 62.5%; }) sets the base to 10px, making conversions simpler: 16px = 1.6rem, 24px = 2.4rem. If your project uses this, set the base to 10 in our converter. The trade-off: you must set a body font size to compensate (body { font-size: 1.6rem; }) and third-party components may be affected by the non-standard root size.
+      The popular 62.5% trick (html &#123; font-size: 62.5%; &#125;) sets the base to 10px, making conversions simpler: 16px = 1.6rem, 24px = 2.4rem. If your project uses this, set the base to 10 in our converter. The trade-off: you must set a body font size to compensate (body &#123; font-size: 1.6rem; &#125;) and third-party components may be affected by the non-standard root size.
     </p>
 
     <h2>REM vs EM vs PX: Choosing the Right Unit</h2>
@@ -197,7 +197,7 @@ const writeUp = (
 
     <h2>Responsive Typography with REM</h2>
     <p>
-      REM enables powerful responsive typography patterns. The simplest: adjust the root font size at breakpoints. html { font-size: 14px; } at mobile, 16px at tablet, 18px at desktop — all rem-defined elements scale proportionally. One root change scales everything. More sophisticated: use CSS clamp() for fluid scaling without breakpoints: html { font-size: clamp(14px, 1.5vw + 10px, 18px); }. This smoothly scales the root (and therefore all rem values) between viewport sizes.
+      REM enables powerful responsive typography patterns. The simplest: adjust the root font size at breakpoints. html &#123; font-size: 14px; &#125; at mobile, 16px at tablet, 18px at desktop — all rem-defined elements scale proportionally. One root change scales everything. More sophisticated: use CSS clamp() for fluid scaling without breakpoints: html &#123; font-size: clamp(14px, 1.5vw + 10px, 18px); &#125;. This smoothly scales the root (and therefore all rem values) between viewport sizes.
     </p>
     <p>
       CSS viewport units combined with rem unlock fluid type: font-size: clamp(1rem, 2.5vw, 1.5rem) sets a minimum of 1rem, scales with the viewport, and caps at 1.5rem. This creates typography that is readable on all screen sizes without media query breakpoints. Our converter helps you understand what minimum and maximum px values your clamp() ranges represent.
