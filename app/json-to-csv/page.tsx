@@ -154,10 +154,10 @@ const writeUp = (
 
     <h2>Understanding JSON Structure for CSV Conversion</h2>
     <p>
-      The ideal input for JSON to CSV conversion is an array of flat objects with consistent keys. For example: [{"name":"Alice","age":30,"city":"New York"},{"name":"Bob","age":25,"city":"Los Angeles"}]. This becomes a three-column CSV with headers "name,age,city" and two data rows. The converter handles variations: missing keys across objects produce empty cells, additional keys in some objects expand the column list, and mixed string/number values are handled transparently.
+      The ideal input for JSON to CSV conversion is an array of flat objects with consistent keys. For example: [&#123;"name":"Alice","age":30,"city":"New York"&#125;,&#123;"name":"Bob","age":25,"city":"Los Angeles"&#125;]. This becomes a three-column CSV with headers "name,age,city" and two data rows. The converter handles variations: missing keys across objects produce empty cells, additional keys in some objects expand the column list, and mixed string/number values are handled transparently.
     </p>
     <p>
-      Real-world API responses are rarely perfectly flat. They often contain nested objects ({"address": {"street": "123 Main", "city": "NYC"}}) and arrays within objects ({"tags": ["javascript", "react"]}). The flatten option handles nested objects by expanding them to dot-notation columns (address.street, address.city). Arrays within objects are joined as semicolon-delimited strings in a single cell. Deep nesting is handled recursively.
+      Real-world API responses are rarely perfectly flat. They often contain nested objects (&#123;"address": &#123;"street": "123 Main", "city": "NYC"&#125;&#125;) and arrays within objects (&#123;"tags": ["javascript", "react"]&#125;). The flatten option handles nested objects by expanding them to dot-notation columns (address.street, address.city). Arrays within objects are joined as semicolon-delimited strings in a single cell. Deep nesting is handled recursively.
     </p>
 
     <h2>Converting API Responses to CSV</h2>
