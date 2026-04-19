@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import { ReactNode } from 'react';
-import { headers } from 'next/headers';
 import dynamic from 'next/dynamic';
 import { Inter } from 'next/font/google';
 import Header from '../components/Header';
@@ -84,12 +83,12 @@ type RootLayoutProps = {
 // Cache at edge for 24h to reduce Fast Origin Transfer (layout is now static)
 export const revalidate = 86400;
 
-export default async function RootLayout({ children }: RootLayoutProps) {
-  const hdrs = await headers();
-  const lang = hdrs.get('x-page-lang') || 'en';
+const SITE_SCHEMA = webSiteSchema();
+const NAV_SCHEMA = siteNavigationSchema();
 
+export default function RootLayout({ children }: RootLayoutProps) {
   return (
-    <html lang={lang} dir="ltr">
+    <html lang="en" dir="ltr">
       <head>
         <link rel="preconnect" href="https://pagead2.googlesyndication.com" />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
@@ -98,8 +97,8 @@ export default async function RootLayout({ children }: RootLayoutProps) {
       <body className={`${inter.variable} bg-slate-50 text-slate-900 antialiased pb-[80px] md:pb-[120px] lg:pb-[140px]`}>
         <DeferredThirdPartyScripts />
         <AdSenseRouteRefresh />
-        <JsonLd data={webSiteSchema()} />
-        <JsonLd data={siteNavigationSchema()} />
+        <JsonLd data={SITE_SCHEMA} />
+        <JsonLd data={NAV_SCHEMA} />
         <BreadcrumbJsonLdAndLang />
         <Header />
         <main className="min-h-screen">{children}</main>
