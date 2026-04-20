@@ -17,6 +17,7 @@ const CATEGORY_ORDER: Array<string> = [
   'writing',
   'seo',
   'professional',
+  'developer-tool',
 ];
 
 const CATEGORY_LABELS: Record<string, { title: string; description: string }> = {
@@ -67,6 +68,10 @@ const CATEGORY_LABELS: Record<string, { title: string; description: string }> = 
   professional: {
     title: 'Professional Tools',
     description: 'Resume humanizers, cover letter tools, email humanizers, and professional content helpers.',
+  },
+  'developer-tool': {
+    title: 'Developer Tools',
+    description: 'Converters, formatters, generators, calculators, and utilities for developers and power users.',
   },
 };
 
