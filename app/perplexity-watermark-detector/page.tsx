@@ -355,11 +355,11 @@ export default function PerplexityWatermarkDetectorPage() {
 
   return (
     <WatermarkDetectorPage
-      modelName=&#123;modelName&#125;
-      modelSlug=&#123;modelSlug&#125;
-      faqItems=&#123;faqs&#125;
-      faqIntro=&#123;faqIntro&#125;
-      content=&#123;writeUp&#125;
+      modelName={modelName}
+      modelSlug={modelSlug}
+      faqItems={faqs}
+      faqIntro={faqIntro}
+      content={writeUp}
     />
   );
 }

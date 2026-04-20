@@ -341,7 +341,7 @@ const writeUp = (
       Survey tools like Google Forms, Typeform, SurveyMonkey, and Qualtrics export results as CSV. Converting survey CSV to JSON enables more sophisticated analysis than is possible in spreadsheets — filtering by multiple conditions, calculating response distributions, and building visualizations with JavaScript chart libraries.
     </p>
     <p>
-      Google Forms CSV structure: each row is one response, each column is one question, the first column is typically a timestamp. Multiple-choice questions export as the selected text. Checkbox questions (multiple allowed answers) export as semicolon-separated values within a single cell — "Option A;Option B;Option C" — which requires post-processing after CSV to JSON conversion: <code>data.map(row =&gt; (&#123;...row, preferences: row.preferences.split(';')&#125;))</code>.
+      Google Forms CSV structure: each row is one response, each column is one question, the first column is typically a timestamp. Multiple-choice questions export as the selected text. Checkbox questions (multiple allowed answers) export as semicolon-separated values within a single cell — "Option A;Option B;Option C" — which requires post-processing after CSV to JSON conversion: <code>data.map(row =&gt; ({...row, preferences: row.preferences.split(';')}))</code>.
     </p>
     <p>
       Likert scale analysis: if your survey has 1-5 rating scales, enable type inference in the converter so ratings become JSON numbers rather than strings, enabling numerical aggregation: <code>const avgSatisfaction = data.reduce((sum, row) =&gt; sum + row.satisfaction, 0) / data.length</code>. Open-text responses remain as strings and require natural language processing for analysis. After CSV to JSON conversion, survey analysis code becomes straightforward: filter, group, count, and average directly in JavaScript without the limitations of spreadsheet formulas.
@@ -352,7 +352,7 @@ const writeUp = (
       When converting CSV to JSON, the array of objects (one object per row) format — called "records" orientation — is the most common and most useful for typical applications. But other JSON structures exist and suit different use cases.
     </p>
     <p>
-      Records format (default): <code>[&#123;"name":"Alice","age":30&#125;, &#123;"name":"Bob","age":25&#125;]</code> — each element is a complete object with all keys. Best for: REST APIs, MongoDB imports, JavaScript data processing, database seeding. This is what our converter produces.
+      Records format (default): <code>[{"name":"Alice","age":30}, &#123;"name":"Bob","age":25}]</code> — each element is a complete object with all keys. Best for: REST APIs, MongoDB imports, JavaScript data processing, database seeding. This is what our converter produces.
     </p>
     <p>
       Columns format: <code>&#123;"name":["Alice","Bob"],"age":[30,25]&#125;</code> — an object where each key is a column name containing an array of all values for that column. Best for: charting libraries that want each series as an array (e.g., Plotly, Chart.js with column data), statistical analysis in Python (this matches how pandas stores data internally in its columnar format). Convert records to columns in JavaScript: <code>const columns = Object.fromEntries(Object.keys(data[0]).map(key =&gt; [key, data.map(row =&gt; row[key])]));</code>.
@@ -415,7 +415,7 @@ export default async function CsvToJsonPage() {
     operatingSystem: 'Any',
     permissions: 'browser',
     isAccessibleForFree: true,
-    offers: &#123; '@type': 'Offer', price: '0', priceCurrency: 'USD' &#125;,
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
   };
 
   return (
@@ -423,12 +423,12 @@ export default async function CsvToJsonPage() {
       <JsonLd data={webAppSchema} />
       <JsonLd data={webPageSchema({ title: toolData.title, description: toolData.description, url })} />
       <ToolPageShell
-        toolSlug=&#123;toolSlug&#125;
-        toolComponent=&#123;<CsvToJsonTool />&#125;
-        relatedToolsComponent=&#123;<RelatedTools currentSlug={toolSlug} />&#125;
-        faqComponent=&#123;<FAQSection faqs={faqs} />&#125;
-        faqJsonLdComponent=&#123;<FaqJsonLd faqs={faqs} />&#125;
-        writeUp=&#123;writeUp&#125;
+        toolSlug={toolSlug}
+        toolComponent={<CsvToJsonTool />}
+        relatedToolsComponent={<RelatedTools currentSlug={toolSlug} />}
+        faqComponent={<FAQSection faqs={faqs} />}
+        faqJsonLdComponent={<FaqJsonLd faqs={faqs} />}
+        writeUp={writeUp}
       />
     </>
   );

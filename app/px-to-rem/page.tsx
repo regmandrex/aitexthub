@@ -292,7 +292,7 @@ const writeUp = (
       Reading a rem CSS custom property: <code>const remSpacingMd = getComputedStyle(document.documentElement).getPropertyValue('--space-md').trim();</code> returns "1rem". To use this as a pixel value in calculations: <code>const pxValue = parseFloat(remSpacingMd) * rootFontSize;</code>. Setting a CSS custom property from JavaScript: <code>document.documentElement.style.setProperty('--space-md', '1.25rem');</code> — note you set rem values as strings.
     </p>
     <p>
-      Animation with rem: when animating layout properties that use rem, calculate the pixel target first: <code>const targetPx = 2 * rootFontSize; // 2rem in pixels</code>, then animate to that pixel value. For Web Animations API: <code>element.animate([&#123; fontSize: '1rem' &#125;, &#123; fontSize: '2rem' &#125;], &#123; duration: 300 &#125;);</code> — the API accepts rem strings directly and handles the conversion internally.
+      Animation with rem: when animating layout properties that use rem, calculate the pixel target first: <code>const targetPx = 2 * rootFontSize; // 2rem in pixels</code>, then animate to that pixel value. For Web Animations API: <code>element.animate([{ fontSize: '1rem' }, &#123; fontSize: '2rem' }], &#123; duration: 300 });</code> — the API accepts rem strings directly and handles the conversion internally.
     </p>
 
     <h2>PX to REM Reference Table: Common Design Values</h2>
@@ -419,7 +419,7 @@ export default async function PxToRemPage() {
     operatingSystem: 'Any',
     permissions: 'browser',
     isAccessibleForFree: true,
-    offers: &#123; '@type': 'Offer', price: '0', priceCurrency: 'USD' &#125;,
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
   };
 
   return (
@@ -427,12 +427,12 @@ export default async function PxToRemPage() {
       <JsonLd data={webAppSchema} />
       <JsonLd data={webPageSchema({ title: toolData.title, description: toolData.description, url })} />
       <ToolPageShell
-        toolSlug=&#123;toolSlug&#125;
-        toolComponent=&#123;<PxToRemTool />&#125;
-        relatedToolsComponent=&#123;<RelatedTools currentSlug={toolSlug} />&#125;
-        faqComponent=&#123;<FAQSection faqs={faqs} />&#125;
-        faqJsonLdComponent=&#123;<FaqJsonLd faqs={faqs} />&#125;
-        writeUp=&#123;writeUp&#125;
+        toolSlug={toolSlug}
+        toolComponent={<PxToRemTool />}
+        relatedToolsComponent={<RelatedTools currentSlug={toolSlug} />}
+        faqComponent={<FAQSection faqs={faqs} />}
+        faqJsonLdComponent={<FaqJsonLd faqs={faqs} />}
+        writeUp={writeUp}
       />
     </>
   );

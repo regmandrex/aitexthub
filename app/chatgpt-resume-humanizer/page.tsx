@@ -231,7 +231,7 @@ export async function generateMetadata(): Promise<Metadata> {
   if (!toolData) return {};
   const title = toolData.title;
   const description = toolData.shortDescription;
-  return buildToolMeta(&#123; title, description, seoTitle: 'ChatGPT Resume Humanizer - Make AI Resumes Authentic', urlPath: `/$&#123;toolSlug&#125;` });
+  return buildToolMeta({ title, description, seoTitle: 'ChatGPT Resume Humanizer - Make AI Resumes Authentic', urlPath: `/${toolSlug}` });
 }
 
 export default async function ChatGPTResumeHumanizerPage() {
@@ -247,8 +247,8 @@ export default async function ChatGPTResumeHumanizerPage() {
     <>
       <JsonLd data={webPageSchema({ name: title, url, description })} />
       <JsonLd data={webAppSchema} />
-      <ToolPageShell tool={{ ...toolData, title, shortDescription: description }} ui={<ChatGPTResumeHumanizerTool />&#125; related=&#123;<RelatedTools currentSlug={toolData.slug} />&#125;>
-        &#123;writeUp&#125;
+      <ToolPageShell tool={{ ...toolData, title, shortDescription: description }} ui={<ChatGPTResumeHumanizerTool />} related={<RelatedTools currentSlug={toolData.slug} />}>
+        {writeUp}
         <div className="mt-10 space-y-3">
           <h2 className="text-2xl font-semibold text-slate-900">ChatGPT Resume Humanizer FAQ</h2>
           <p className="text-slate-700">Common questions about resume humanization, job applications, and authentic professional communication.</p>

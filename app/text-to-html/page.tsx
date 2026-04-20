@@ -224,7 +224,7 @@ const writeUp = (
       Modern JavaScript frameworks have specific patterns for rendering HTML from text strings, and understanding the right approach for each framework prevents both XSS vulnerabilities and incorrect rendering.
     </p>
     <p>
-      React: dangerouslySetInnerHTML is React's escape hatch for rendering raw HTML strings. Usage: <code>&lt;div dangerouslySetInnerHTML=&#123;&#123; __html: convertedHtml &#125;&#125; /&gt;</code>. The prop name is intentionally verbose to remind developers of the XSS risk. Only use dangerouslySetInnerHTML with HTML that has been properly sanitized — either server-side or using a library like DOMPurify on the client: <code>&lt;div dangerouslySetInnerHTML=&#123;&#123; __html: DOMPurify.sanitize(convertedHtml) &#125;&#125; /&gt;</code>. Our text-to-HTML converter already escapes HTML entities, making the output safe from XSS before it even reaches React.
+      React: dangerouslySetInnerHTML is React's escape hatch for rendering raw HTML strings. Usage: <code>&lt;div dangerouslySetInnerHTML={&#123; __html: convertedHtml }} /&gt;</code>. The prop name is intentionally verbose to remind developers of the XSS risk. Only use dangerouslySetInnerHTML with HTML that has been properly sanitized — either server-side or using a library like DOMPurify on the client: <code>&lt;div dangerouslySetInnerHTML={&#123; __html: DOMPurify.sanitize(convertedHtml) }} /&gt;</code>. Our text-to-HTML converter already escapes HTML entities, making the output safe from XSS before it even reaches React.
     </p>
     <p>
       Vue.js: the v-html directive renders raw HTML — <code>&lt;div v-html="convertedHtml"&gt;&lt;/div&gt;</code>. Like React's dangerouslySetInnerHTML, this should only be used with sanitized HTML. Vue also has v-text for text content (which automatically escapes HTML), but v-text renders the HTML as literal text, not as formatted HTML. Use v-html for our converter's output.
@@ -423,7 +423,7 @@ export default async function TextToHtmlPage() {
     operatingSystem: 'Any',
     permissions: 'browser',
     isAccessibleForFree: true,
-    offers: &#123; '@type': 'Offer', price: '0', priceCurrency: 'USD' &#125;,
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
   };
 
   return (
@@ -431,12 +431,12 @@ export default async function TextToHtmlPage() {
       <JsonLd data={webAppSchema} />
       <JsonLd data={webPageSchema({ title: toolData.title, description: toolData.description, url })} />
       <ToolPageShell
-        toolSlug=&#123;toolSlug&#125;
-        toolComponent=&#123;<TextToHtmlTool />&#125;
-        relatedToolsComponent=&#123;<RelatedTools currentSlug={toolSlug} />&#125;
-        faqComponent=&#123;<FAQSection faqs={faqs} />&#125;
-        faqJsonLdComponent=&#123;<FaqJsonLd faqs={faqs} />&#125;
-        writeUp=&#123;writeUp&#125;
+        toolSlug={toolSlug}
+        toolComponent={<TextToHtmlTool />}
+        relatedToolsComponent={<RelatedTools currentSlug={toolSlug} />}
+        faqComponent={<FAQSection faqs={faqs} />}
+        faqJsonLdComponent={<FaqJsonLd faqs={faqs} />}
+        writeUp={writeUp}
       />
     </>
   );

@@ -483,8 +483,8 @@ export default async function Utf8EncodePage() {
     <>
       <JsonLd data={webPageSchema({ name: title, url, description })} />
       <JsonLd data={webAppSchema} />
-      <ToolPageShell tool={{ ...toolData, title, shortDescription: description }} ui={<Utf8EncodeTool />&#125; related=&#123;<RelatedTools currentSlug={toolData.slug} />&#125;>
-        &#123;writeUp&#125;
+      <ToolPageShell tool={{ ...toolData, title, shortDescription: description }} ui={<Utf8EncodeTool />} related={<RelatedTools currentSlug={toolData.slug} />}>
+        {writeUp}
         <div className="mt-10 space-y-3">
           <h2 className="text-2xl font-semibold text-slate-900">UTF-8 Encode FAQ</h2>
           <p className="text-slate-700">

@@ -255,7 +255,7 @@ const writeUp = (
       </p>
       <p>Here is a short example of the mapping logic used for conversion:</p>
       <pre>
-        <code>{`const map = &#123; A: '1010', B: '1011', C: '1100', F: '1111' };
+        <code>{`const map = { A: '1010', B: '1011', C: '1100', F: '1111' };
 return hex.split('').map((digit) => map[digit.toUpperCase()]).join('');`}</code>
       </pre>
       <p>
@@ -622,8 +622,8 @@ export default async function HexToBinaryPage() {
     <>
       <JsonLd data={webPageSchema({ name: title, url, description })} />
       <JsonLd data={webAppSchema} />
-      <ToolPageShell tool={{ ...toolData, title, shortDescription: description }} ui={<HexToBinaryTool />&#125; related=&#123;<RelatedTools currentSlug={toolData.slug} />&#125;>
-        &#123;writeUp&#125;
+      <ToolPageShell tool={{ ...toolData, title, shortDescription: description }} ui={<HexToBinaryTool />} related={<RelatedTools currentSlug={toolData.slug} />}>
+        {writeUp}
         <div className="mt-10 space-y-3">
           <h2 className="text-2xl font-semibold text-slate-900">Hex to Binary Converter FAQ</h2>
           <p className="text-slate-700">

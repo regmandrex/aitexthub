@@ -581,8 +581,8 @@ export default async function UrlEncodePage() {
     <>
       <JsonLd data={webPageSchema({ name: title, url, description })} />
       <JsonLd data={webAppSchema} />
-      <ToolPageShell tool={{ ...toolData, title, shortDescription: description }} ui={<UrlEncodeTool />&#125; related=&#123;<RelatedTools currentSlug={toolData.slug} />&#125;>
-        &#123;writeUp&#125;
+      <ToolPageShell tool={{ ...toolData, title, shortDescription: description }} ui={<UrlEncodeTool />} related={<RelatedTools currentSlug={toolData.slug} />}>
+        {writeUp}
         <div className="mt-10 space-y-3">
           <h2 className="text-2xl font-semibold text-slate-900">URL Encode FAQ</h2>
           <p className="text-slate-700">

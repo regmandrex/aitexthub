@@ -323,10 +323,10 @@ export async function generateMetadata() {
   
   const title = `${modelName} Space Remover - Collapse extra whitespace in DeepSeek responses while preserving meaning.`;
   const description = 'Remove extra spaces and tidy lines for clean, paste-ready text.';
-  return buildMeta(&#123;
+  return buildMeta({
     title,
     description,
-    urlPath: `/$&#123;modelSlug&#125;-space-remover`,
+    urlPath: `/${modelSlug}-space-remover`,
   });
 }
 

@@ -628,8 +628,8 @@ const writeUp = (
 export async function generateMetadata() {
   const title = 'AI Watermark Detector';
   const description = 'Scan text for hidden Unicode, spacing patterns, and structural signals commonly seen in AI-era content.';
-  return buildMeta(&#123;
-    title: `$&#123;title&#125; - $&#123;description&#125;`,
+  return buildMeta({
+    title: `${title} - ${description}`,
     description,
     urlPath: '/ai-watermark-detector',
   });
@@ -638,11 +638,11 @@ export async function generateMetadata() {
 export default function AIWatermarkDetectorPage() {
   return (
     <WatermarkDetectorPage
-      modelName=&#123;modelName&#125;
-      modelSlug=&#123;modelSlug&#125;
-      faqItems=&#123;faqs&#125;
-      faqIntro=&#123;faqIntro&#125;
-      content=&#123;writeUp&#125;
+      modelName={modelName}
+      modelSlug={modelSlug}
+      faqItems={faqs}
+      faqIntro={faqIntro}
+      content={writeUp}
     />
   );
 }

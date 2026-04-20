@@ -154,10 +154,10 @@ const writeUp = (
 
     <h2>Understanding JSON Structure for CSV Conversion</h2>
     <p>
-      The ideal input for JSON to CSV conversion is an array of flat objects with consistent keys. For example: [&#123;"name":"Alice","age":30,"city":"New York"&#125;,&#123;"name":"Bob","age":25,"city":"Los Angeles"&#125;]. This becomes a three-column CSV with headers "name,age,city" and two data rows. The converter handles variations: missing keys across objects produce empty cells, additional keys in some objects expand the column list, and mixed string/number values are handled transparently.
+      The ideal input for JSON to CSV conversion is an array of flat objects with consistent keys. For example: [{"name":"Alice","age":30,"city":"New York"},&#123;"name":"Bob","age":25,"city":"Los Angeles"}]. This becomes a three-column CSV with headers "name,age,city" and two data rows. The converter handles variations: missing keys across objects produce empty cells, additional keys in some objects expand the column list, and mixed string/number values are handled transparently.
     </p>
     <p>
-      Real-world API responses are rarely perfectly flat. They often contain nested objects (&#123;"address": &#123;"street": "123 Main", "city": "NYC"&#125;&#125;) and arrays within objects (&#123;"tags": ["javascript", "react"]&#125;). The flatten option handles nested objects by expanding them to dot-notation columns (address.street, address.city). Arrays within objects are joined as semicolon-delimited strings in a single cell. Deep nesting is handled recursively.
+      Real-world API responses are rarely perfectly flat. They often contain nested objects ({"address": &#123;"street": "123 Main", "city": "NYC"}}) and arrays within objects ({"tags": ["javascript", "react"]}). The flatten option handles nested objects by expanding them to dot-notation columns (address.street, address.city). Arrays within objects are joined as semicolon-delimited strings in a single cell. Deep nesting is handled recursively.
     </p>
 
     <h2>Converting API Responses to CSV</h2>
@@ -295,10 +295,10 @@ const writeUp = (
       JSON to CSV conversion assumes that the input JSON represents tabular data — a collection of similar records. The two most common root-level JSON structures that represent tabular data are JSON arrays and JSON objects with an array property, and handling each correctly is important for successful conversion.
     </p>
     <p>
-      Root-level JSON array: the most common format for tabular JSON data. <code>[&#123;"id": 1, "name": "Alice"&#125;, &#123;"id": 2, "name": "Bob"&#125;]</code>. Each element of the array is one record (one CSV row). Our converter accepts this format directly — paste the array and convert. This is the standard output format of REST APIs that return lists of resources.
+      Root-level JSON array: the most common format for tabular JSON data. <code>[{"id": 1, "name": "Alice"}, &#123;"id": 2, "name": "Bob"}]</code>. Each element of the array is one record (one CSV row). Our converter accepts this format directly — paste the array and convert. This is the standard output format of REST APIs that return lists of resources.
     </p>
     <p>
-      Wrapped array (object with array property): many APIs wrap their data in a root object with metadata. <code>&#123;"total": 2, "data": [&#123;"id": 1, "name": "Alice"&#125;, &#123;"id": 2, "name": "Bob"&#125;]&#125;</code>. The actual records are in the "data" property. To convert, you need to extract the array first — copy just the value of the "data" property: <code>[&#123;"id": 1, "name": "Alice"&#125;, &#123;"id": 2, "name": "Bob"&#125;]</code>. Common wrapper property names: data, results, items, records, rows, content, payload, response. In JavaScript: <code>const records = response.data || response.results || response.items;</code> extracts the array for conversion.
+      Wrapped array (object with array property): many APIs wrap their data in a root object with metadata. <code>&#123;"total": 2, "data": [{"id": 1, "name": "Alice"}, &#123;"id": 2, "name": "Bob"}]}</code>. The actual records are in the "data" property. To convert, you need to extract the array first — copy just the value of the "data" property: <code>[{"id": 1, "name": "Alice"}, &#123;"id": 2, "name": "Bob"}]</code>. Common wrapper property names: data, results, items, records, rows, content, payload, response. In JavaScript: <code>const records = response.data || response.results || response.items;</code> extracts the array for conversion.
     </p>
     <p>
       Pagination handling: paginated APIs return one page of results per request, each wrapped in a response object with pagination metadata (total, page, per_page, next_cursor). To convert all pages to a single CSV: fetch all pages and concatenate the data arrays: <code>const allRecords = []; for (const page of pages) allRecords.push(...page.data); // then convert allRecords to CSV</code>. If you have multiple JSON files (one per page), convert each separately and paste the CSV rows together (excluding the header row from pages 2+).
@@ -360,7 +360,7 @@ const writeUp = (
       E-commerce platforms and product catalog management systems are among the most frequent sources of JSON-to-CSV conversion needs. Product APIs (Shopify, WooCommerce, Magento, BigCommerce), inventory management systems, and product information management (PIM) tools all expose product data as JSON. Converting this data to CSV enables bulk editing in spreadsheets, importing into marketing tools, generating price lists, and sharing catalogs with partners.
     </p>
     <p>
-      Shopify product JSON to CSV: Shopify's Admin API returns product data as JSON with nested variants, images, options, and metafields. A typical product JSON has the structure: <code>&#123;"id": 1234, "title": "T-Shirt", "variants": [&#123;"price": "19.99", "sku": "TS-BLK-M"&#125;], "images": [&#123;"src": "https://..."&#125;]&#125;</code>. For catalog CSV, flatten by variant: each variant becomes one row with the parent product's fields duplicated. This matches Shopify's own product CSV import format. After converting and adjusting column names to match Shopify's required headers, the CSV can be re-imported to update prices, inventory, or descriptions in bulk.
+      Shopify product JSON to CSV: Shopify's Admin API returns product data as JSON with nested variants, images, options, and metafields. A typical product JSON has the structure: <code>&#123;"id": 1234, "title": "T-Shirt", "variants": [{"price": "19.99", "sku": "TS-BLK-M"}], "images": [{"src": "https://..."}]}</code>. For catalog CSV, flatten by variant: each variant becomes one row with the parent product's fields duplicated. This matches Shopify's own product CSV import format. After converting and adjusting column names to match Shopify's required headers, the CSV can be re-imported to update prices, inventory, or descriptions in bulk.
     </p>
     <p>
       WooCommerce REST API to CSV: WooCommerce returns product data with similar nested structures. The CSV export for WooCommerce requires specific columns: ID, Type, SKU, Name, Published, Price, Sale Price, Stock, Categories, Tags, Images. After JSON-to-CSV conversion, map your JSON fields to these column names and ensure categories are pipe-separated (Clothing|T-Shirts) rather than in separate columns.
@@ -400,7 +400,7 @@ export default async function JsonToCsvPage() {
     operatingSystem: 'Any',
     permissions: 'browser',
     isAccessibleForFree: true,
-    offers: &#123; '@type': 'Offer', price: '0', priceCurrency: 'USD' &#125;,
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
   };
 
   return (
@@ -408,12 +408,12 @@ export default async function JsonToCsvPage() {
       <JsonLd data={webAppSchema} />
       <JsonLd data={webPageSchema({ title: toolData.title, description: toolData.description, url })} />
       <ToolPageShell
-        toolSlug=&#123;toolSlug&#125;
-        toolComponent=&#123;<JsonToCsvTool />&#125;
-        relatedToolsComponent=&#123;<RelatedTools currentSlug={toolSlug} />&#125;
-        faqComponent=&#123;<FAQSection faqs={faqs} />&#125;
-        faqJsonLdComponent=&#123;<FaqJsonLd faqs={faqs} />&#125;
-        writeUp=&#123;writeUp&#125;
+        toolSlug={toolSlug}
+        toolComponent={<JsonToCsvTool />}
+        relatedToolsComponent={<RelatedTools currentSlug={toolSlug} />}
+        faqComponent={<FAQSection faqs={faqs} />}
+        faqJsonLdComponent={<FaqJsonLd faqs={faqs} />}
+        writeUp={writeUp}
       />
     </>
   );

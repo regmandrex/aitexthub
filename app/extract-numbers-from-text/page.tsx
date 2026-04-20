@@ -385,16 +385,16 @@ export default async function ExtractNumbersFromTextPage() {
     operatingSystem: 'Web',
     description: description,
     url,
-    offers: &#123; '@type': 'Offer', price: '0', priceCurrency: 'USD' &#125;,
-    aggregateRating: &#123; '@type': 'AggregateRating', ratingValue: '4.9', ratingCount: '1840', bestRating: '5', worstRating: '1' &#125;,
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+    aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', ratingCount: '1840', bestRating: '5', worstRating: '1' },
   };
 
   return (
     <>
       <JsonLd data={webPageSchema({ name: title, url, description })} />
       <JsonLd data={schemaData} />
-      <ToolPageShell tool={{ ...toolData, title, shortDescription: description }} ui={<ExtractNumbersFromTextTool />&#125; related=&#123;<RelatedTools currentSlug={toolSlug} />&#125;>
-        &#123;writeUp&#125;
+      <ToolPageShell tool={{ ...toolData, title, shortDescription: description }} ui={<ExtractNumbersFromTextTool />} related={<RelatedTools currentSlug={toolSlug} />}>
+        {writeUp}
         <div className="mt-10 space-y-3">
           <h2 className="text-2xl font-semibold text-slate-900">Extract Numbers From Text FAQ</h2>
           <p className="text-slate-700">Common questions about extracting numbers from text, options, and usage.</p>

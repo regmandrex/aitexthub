@@ -530,19 +530,19 @@ const writeUp = (
 );
 
 export const metadata = buildMeta({
-  title: `$&#123;modelName&#125; Watermark Detector - Scan $&#123;modelName&#125; Text for Hidden Unicode and Formatting Signals`,
-  description: `Inspect $&#123;modelName&#125; text for possible hidden Unicode, whitespace patterns, and repeated punctuation.`,
-  urlPath: `/$&#123;modelSlug&#125;-watermark-detector`,
+  title: `${modelName} Watermark Detector - Scan ${modelName} Text for Hidden Unicode and Formatting Signals`,
+  description: `Inspect ${modelName} text for possible hidden Unicode, whitespace patterns, and repeated punctuation.`,
+  urlPath: `/${modelSlug}-watermark-detector`,
 });
 
 export default function ChatgptWatermarkDetectorPage() {
   return (
     <WatermarkDetectorPage
-      modelName=&#123;modelName&#125;
-      modelSlug=&#123;modelSlug&#125;
-      faqItems=&#123;faqs&#125;
-      faqIntro=&#123;faqIntro&#125;
-      content=&#123;writeUp&#125;
+      modelName={modelName}
+      modelSlug={modelSlug}
+      faqItems={faqs}
+      faqIntro={faqIntro}
+      content={writeUp}
     />
   );
 }

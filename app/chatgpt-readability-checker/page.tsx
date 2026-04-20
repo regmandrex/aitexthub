@@ -476,11 +476,11 @@ export async function generateMetadata(): Promise<Metadata> {
   const title = toolData.title;
   const description = toolData.shortDescription;
 
-  return buildToolMeta(&#123;
+  return buildToolMeta({
     title,
     description,
     seoTitle: 'ChatGPT Readability Checker - Free Text Readability Analysis',
-    urlPath: `/$&#123;toolSlug&#125;`,
+    urlPath: `/${toolSlug}`,
   });
 }
 
@@ -508,8 +508,8 @@ export default async function ChatGPTReadabilityCheckerPage() {
     <>
       <JsonLd data={webPageSchema({ name: title, url, description })} />
       <JsonLd data={webAppSchema} />
-      <ToolPageShell tool={{ ...toolData, title, shortDescription: description }} ui={<ChatGPTReadabilityCheckerTool />&#125; related=&#123;<RelatedTools currentSlug={toolData.slug} />&#125;>
-        &#123;writeUp&#125;
+      <ToolPageShell tool={{ ...toolData, title, shortDescription: description }} ui={<ChatGPTReadabilityCheckerTool />} related={<RelatedTools currentSlug={toolData.slug} />}>
+        {writeUp}
         <div className="mt-10 space-y-3">
           <h2 className="text-2xl font-semibold text-slate-900">ChatGPT Readability Checker FAQ</h2>
           <p className="text-slate-700">

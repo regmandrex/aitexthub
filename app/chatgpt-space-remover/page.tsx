@@ -327,9 +327,9 @@ const writeUp = (
 );
 
 export const metadata = buildMeta({
-  title: `$&#123;modelName&#125; Space Remover - Remove Extra Spaces from $&#123;modelName&#125; Text`,
-  description: `Remove extra spaces, trim lines, and normalize whitespace in $&#123;modelName&#125; output.`,
-  urlPath: `/$&#123;modelSlug&#125;-space-remover`,
+  title: `${modelName} Space Remover - Remove Extra Spaces from ${modelName} Text`,
+  description: `Remove extra spaces, trim lines, and normalize whitespace in ${modelName} output.`,
+  urlPath: `/${modelSlug}-space-remover`,
 });
 
 export default function ChatgptSpaceRemoverPage() {

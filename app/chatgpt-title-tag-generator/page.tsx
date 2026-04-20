@@ -273,7 +273,7 @@ export async function generateMetadata(): Promise<Metadata> {
   if (!toolData) return {};
   const title = toolData.title;
   const description = toolData.shortDescription;
-  return buildToolMeta(&#123; title, description, seoTitle: 'ChatGPT Title Tag Generator - Free SEO Title Tag Creator', urlPath: `/$&#123;toolSlug&#125;` });
+  return buildToolMeta({ title, description, seoTitle: 'ChatGPT Title Tag Generator - Free SEO Title Tag Creator', urlPath: `/${toolSlug}` });
 }
 
 export default async function ChatGPTTitleTagGeneratorPage() {
@@ -289,8 +289,8 @@ export default async function ChatGPTTitleTagGeneratorPage() {
     <>
       <JsonLd data={webPageSchema({ name: title, url, description })} />
       <JsonLd data={webAppSchema} />
-      <ToolPageShell tool={{ ...toolData, title, shortDescription: description }} ui={<ChatGPTTitleTagGeneratorTool />&#125; related=&#123;<RelatedTools currentSlug={toolData.slug} />&#125;>
-        &#123;writeUp&#125;
+      <ToolPageShell tool={{ ...toolData, title, shortDescription: description }} ui={<ChatGPTTitleTagGeneratorTool />} related={<RelatedTools currentSlug={toolData.slug} />}>
+        {writeUp}
         <div className="mt-10 space-y-3">
           <h2 className="text-2xl font-semibold text-slate-900">ChatGPT Title Tag Generator FAQ</h2>
           <p className="text-slate-700">Common questions about title tags, SEO optimization, and search result headlines.</p>

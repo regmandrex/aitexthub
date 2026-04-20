@@ -225,7 +225,7 @@ export async function generateMetadata(): Promise<Metadata> {
   if (!toolData) return {};
   const title = toolData.title;
   const description = toolData.shortDescription;
-  return buildToolMeta(&#123; title, description, seoTitle: 'ChatGPT Tone Analyzer - Free Writing Tone Detection Tool', urlPath: `/$&#123;toolSlug&#125;` });
+  return buildToolMeta({ title, description, seoTitle: 'ChatGPT Tone Analyzer - Free Writing Tone Detection Tool', urlPath: `/${toolSlug}` });
 }
 
 export default async function ChatGPTToneAnalyzerPage() {
@@ -241,8 +241,8 @@ export default async function ChatGPTToneAnalyzerPage() {
     <>
       <JsonLd data={webPageSchema({ name: title, url, description })} />
       <JsonLd data={webAppSchema} />
-      <ToolPageShell tool={{ ...toolData, title, shortDescription: description }} ui={<ChatGPTToneAnalyzerTool />&#125; related=&#123;<RelatedTools currentSlug={toolData.slug} />&#125;>
-        &#123;writeUp&#125;
+      <ToolPageShell tool={{ ...toolData, title, shortDescription: description }} ui={<ChatGPTToneAnalyzerTool />} related={<RelatedTools currentSlug={toolData.slug} />}>
+        {writeUp}
         <div className="mt-10 space-y-3">
           <h2 className="text-2xl font-semibold text-slate-900">ChatGPT Tone Analyzer FAQ</h2>
           <p className="text-slate-700">Common questions about tone analysis, emotional impact, and communication effectiveness.</p>

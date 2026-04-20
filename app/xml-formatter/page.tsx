@@ -409,7 +409,7 @@ export default async function XmlFormatterPage() {
     operatingSystem: 'Any',
     permissions: 'browser',
     isAccessibleForFree: true,
-    offers: &#123; '@type': 'Offer', price: '0', priceCurrency: 'USD' &#125;,
+    offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
   };
 
   return (
@@ -417,12 +417,12 @@ export default async function XmlFormatterPage() {
       <JsonLd data={webAppSchema} />
       <JsonLd data={webPageSchema({ title: toolData.title, description: toolData.description, url })} />
       <ToolPageShell
-        toolSlug=&#123;toolSlug&#125;
-        toolComponent=&#123;<XmlFormatterTool />&#125;
-        relatedToolsComponent=&#123;<RelatedTools currentSlug={toolSlug} />&#125;
-        faqComponent=&#123;<FAQSection faqs={faqs} />&#125;
-        faqJsonLdComponent=&#123;<FaqJsonLd faqs={faqs} />&#125;
-        writeUp=&#123;writeUp&#125;
+        toolSlug={toolSlug}
+        toolComponent={<XmlFormatterTool />}
+        relatedToolsComponent={<RelatedTools currentSlug={toolSlug} />}
+        faqComponent={<FAQSection faqs={faqs} />}
+        faqJsonLdComponent={<FaqJsonLd faqs={faqs} />}
+        writeUp={writeUp}
       />
     </>
   );
