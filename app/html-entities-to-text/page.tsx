@@ -615,7 +615,7 @@ export default async function HtmlEntitiesToTextPage() {
     <>
       <JsonLd data={webPageSchema({ name: title, url, description })} />
       <JsonLd data={webAppSchema} />
-      <ToolPageShell tool={{ ...toolData, title, shortDescription: description }} ui={<HtmlEntitiesToTextTool />&#125; related=&#123;<RelatedTools currentSlug={toolData.slug} />}>
+      <ToolPageShell tool={{ ...toolData, title, shortDescription: description }} ui={<HtmlEntitiesToTextTool />} related={<RelatedTools currentSlug={toolData.slug} />}>
         {writeUp}
         <div className="mt-10 space-y-3">
           <h2 className="text-2xl font-semibold text-slate-900">HTML Entities to Text FAQ</h2>

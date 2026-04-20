@@ -178,7 +178,7 @@ const writeUp = (
 
     <h2>Handling Nested JSON Structures</h2>
     <p>
-      Many APIs return deeply nested JSON. A typical e-commerce order API response might look like: {"order_id": 12345, "customer": {"id": 789, "name": "Alice Johnson", "email": "alice@example.com"&#125;, "items": [{"sku": "ABC123", "qty": 2, "price": 29.99&#125;], "shipping": {"address": "123 Main St", "city": "Portland", "state": "OR"&#125;&#125;. With our flatten option enabled, the nested "customer" and "shipping" objects expand to: customer.id, customer.name, customer.email, shipping.address, shipping.city, shipping.state. The items array (an array of objects) is stringified as JSON in a single cell — to properly expand arrays of nested objects into multiple rows, you would need a more specialized tool or preprocessing script.
+      Many APIs return deeply nested JSON. A typical e-commerce order API response might look like: &#123;"order_id": 12345, "customer": &#123;"id": 789, "name": "Alice Johnson", "email": "alice@example.com"&#125;, "items": [&#123;"sku": "ABC123", "qty": 2, "price": 29.99&#125;], "shipping": &#123;"address": "123 Main St", "city": "Portland", "state": "OR"&#125;&#125;. With our flatten option enabled, the nested "customer" and "shipping" objects expand to: customer.id, customer.name, customer.email, shipping.address, shipping.city, shipping.state. The items array (an array of objects) is stringified as JSON in a single cell — to properly expand arrays of nested objects into multiple rows, you would need a more specialized tool or preprocessing script.
     </p>
 
     <h2>JSON to CSV in Different Programming Languages</h2>

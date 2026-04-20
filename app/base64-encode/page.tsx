@@ -243,7 +243,7 @@ const writeUp = (
       <pre>
         <code>{`const input = 'Hello, world!';
 const encoded = btoa(unescape(encodeURIComponent(input)));
-// encoded => "SGVsbG8sIHdvcmxkIQ=="`&#125;</code>
+// encoded => "SGVsbG8sIHdvcmxkIQ=="`}</code>
       </pre>
       <p>
         The example shows the basic workflow. The tool performs the same steps, but handles Unicode properly and lets you choose URL-safe output
@@ -597,7 +597,7 @@ export default async function Base64EncodePage() {
     <>
       <JsonLd data={webPageSchema({ name: title, url, description })} />
       <JsonLd data={webAppSchema} />
-      <ToolPageShell tool={{ ...toolData, title, shortDescription: description }} ui={<Base64EncodeTool />&#125; related=&#123;<RelatedTools currentSlug={toolData.slug} />}>
+      <ToolPageShell tool={{ ...toolData, title, shortDescription: description }} ui={<Base64EncodeTool />} related={<RelatedTools currentSlug={toolData.slug} />}>
         {writeUp}
         <div className="mt-10 space-y-3">
           <h2 className="text-2xl font-semibold text-slate-900">Base64 Encode FAQ</h2>
