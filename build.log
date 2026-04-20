@@ -1,0 +1,185 @@
+﻿
+> gptcleanuptools@1.0.0 build
+> next build
+
+Γû▓ Next.js 16.1.1 (Turbopack)
+- Environments: .env.local
+- Experiments (use with caution):
+  Γ£ô inlineCss
+
+  Creating an optimized production build ...
+node.exe : 
+At line:1 char:1
++ & "C:\Program Files\nodejs/node.exe" "C:\Program Files\nodejs/node_mo ...
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+> Build error occurred
+Error: Turbopack build failed with 9 errors:
+./app/ai-watermark-remover/page.tsx:9:10
+Ecmascript file had an error
+[0m [90m  7 |[39m [36mimport[39m { webPageSchema } [36mfrom[39m [32m'../../lib/schema/webpage'[39m[33m;[39m
+ [90m  8 |[39m [36mimport[39m { siteUrl } [36mfrom[39m [32m'../../lib/schema/site'[39m[33m;[39m
+[31m[1m>[22m[39m[90m  9 |[39m [36mimport[39m { siteUrl } [36mfrom[39m [32m'@/lib/seo/url'[39m[33m;[39m
+ [90m    |[39m          [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[2
+2m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 10 |[39m [36mimport[39m { [33mRelatedTools[39m } [36mfrom[39m 
+[32m'../../components/tool/RelatedTools'[39m[33m;[39m
+ [90m 11 |[39m [36mimport[39m [33mAdSenseSlot[39m [36mfrom[39m 
+[32m'../../components/ads/AdSenseSlot'[39m[33m;[39m
+ [90m 12 |[39m [36mimport[39m [33mBelowToolAd[39m [36mfrom[39m 
+[32m'../../components/ads/BelowToolAd'[39m[33m;[39m[0m
+
+the name `siteUrl` is defined multiple times
+
+
+./app/chatgpt-watermark-remover/page.tsx:9:10
+Ecmascript file had an error
+[0m [90m  7 |[39m [36mimport[39m { webPageSchema } [36mfrom[39m [32m"../../lib/schema/webpage"[39m[33m;[39m
+ [90m  8 |[39m [36mimport[39m { siteUrl } [36mfrom[39m [32m'@/lib/seo/url'[39m[33m;[39m
+[31m[1m>[22m[39m[90m  9 |[39m [36mimport[39m { siteUrl } [36mfrom[39m 
+[32m"../../lib/schema/site"[39m[33m;[39m
+ [90m    |[39m          [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[2
+2m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 10 |[39m [36mimport[39m { [33mRelatedTools[39m } [36mfrom[39m 
+[32m"../../components/tool/RelatedTools"[39m[33m;[39m
+ [90m 11 |[39m [36mimport[39m [33mAdSenseSlot[39m [36mfrom[39m 
+[32m"../../components/ads/AdSenseSlot"[39m[33m;[39m
+ [90m 12 |[39m [36mimport[39m [33mBelowToolAd[39m [36mfrom[39m 
+[32m"../../components/ads/BelowToolAd"[39m[33m;[39m[0m
+
+the name `siteUrl` is defined multiple times
+
+
+./app/claude-watermark-cleaner/page.tsx:9:10
+Ecmascript file had an error
+[0m [90m  7 |[39m [36mimport[39m { webPageSchema } [36mfrom[39m [32m'../../lib/schema/webpage'[39m[33m;[39m
+ [90m  8 |[39m [36mimport[39m { siteUrl } [36mfrom[39m [32m'../../lib/schema/site'[39m[33m;[39m
+[31m[1m>[22m[39m[90m  9 |[39m [36mimport[39m { siteUrl } [36mfrom[39m [32m'@/lib/seo/url'[39m[33m;[39m
+ [90m    |[39m          [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[2
+2m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 10 |[39m [36mimport[39m { [33mRelatedTools[39m } [36mfrom[39m 
+[32m'../../components/tool/RelatedTools'[39m[33m;[39m
+ [90m 11 |[39m [36mimport[39m [33mAdSenseSlot[39m [36mfrom[39m 
+[32m'../../components/ads/AdSenseSlot'[39m[33m;[39m
+ [90m 12 |[39m [36mimport[39m [33mBelowToolAd[39m [36mfrom[39m 
+[32m'../../components/ads/BelowToolAd'[39m[33m;[39m[0m
+
+the name `siteUrl` is defined multiple times
+
+
+./app/deepseek-watermark-cleaner/page.tsx:9:10
+Ecmascript file had an error
+[0m [90m  7 |[39m [36mimport[39m { webPageSchema } [36mfrom[39m [32m"../../lib/schema/webpage"[39m[33m;[39m
+ [90m  8 |[39m [36mimport[39m { siteUrl } [36mfrom[39m [32m'@/lib/seo/url'[39m[33m;[39m
+[31m[1m>[22m[39m[90m  9 |[39m [36mimport[39m { siteUrl } [36mfrom[39m 
+[32m"../../lib/schema/site"[39m[33m;[39m
+ [90m    |[39m          [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[2
+2m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 10 |[39m [36mimport[39m { [33mRelatedTools[39m } [36mfrom[39m 
+[32m"../../components/tool/RelatedTools"[39m[33m;[39m
+ [90m 11 |[39m [36mimport[39m [33mAdSenseSlot[39m [36mfrom[39m 
+[32m"../../components/ads/AdSenseSlot"[39m[33m;[39m
+ [90m 12 |[39m [36mimport[39m [33mBelowToolAd[39m [36mfrom[39m 
+[32m"../../components/ads/BelowToolAd"[39m[33m;[39m[0m
+
+the name `siteUrl` is defined multiple times
+
+
+./app/gemini-watermark-cleaner/page.tsx:9:10
+Ecmascript file had an error
+[0m [90m  7 |[39m [36mimport[39m { webPageSchema } [36mfrom[39m [32m'../../lib/schema/webpage'[39m[33m;[39m
+ [90m  8 |[39m [36mimport[39m { siteUrl } [36mfrom[39m [32m'../../lib/schema/site'[39m[33m;[39m
+[31m[1m>[22m[39m[90m  9 |[39m [36mimport[39m { siteUrl } [36mfrom[39m [32m'@/lib/seo/url'[39m[33m;[39m
+ [90m    |[39m          [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[2
+2m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 10 |[39m [36mimport[39m { [33mRelatedTools[39m } [36mfrom[39m 
+[32m'../../components/tool/RelatedTools'[39m[33m;[39m
+ [90m 11 |[39m [36mimport[39m [33mAdSenseSlot[39m [36mfrom[39m 
+[32m'../../components/ads/AdSenseSlot'[39m[33m;[39m
+ [90m 12 |[39m [36mimport[39m [33mBelowToolAd[39m [36mfrom[39m 
+[32m'../../components/ads/BelowToolAd'[39m[33m;[39m[0m
+
+the name `siteUrl` is defined multiple times
+
+
+./app/grok-watermark-cleaner/page.tsx:9:10
+Ecmascript file had an error
+[0m [90m  7 |[39m [36mimport[39m { webPageSchema } [36mfrom[39m [32m"../../lib/schema/webpage"[39m[33m;[39m
+ [90m  8 |[39m [36mimport[39m { siteUrl } [36mfrom[39m [32m'@/lib/seo/url'[39m[33m;[39m
+[31m[1m>[22m[39m[90m  9 |[39m [36mimport[39m { siteUrl } [36mfrom[39m 
+[32m"../../lib/schema/site"[39m[33m;[39m
+ [90m    |[39m          [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[2
+2m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 10 |[39m [36mimport[39m { [33mRelatedTools[39m } [36mfrom[39m 
+[32m"../../components/tool/RelatedTools"[39m[33m;[39m
+ [90m 11 |[39m [36mimport[39m [33mAdSenseSlot[39m [36mfrom[39m 
+[32m"../../components/ads/AdSenseSlot"[39m[33m;[39m
+ [90m 12 |[39m [36mimport[39m [33mBelowToolAd[39m [36mfrom[39m 
+[32m"../../components/ads/BelowToolAd"[39m[33m;[39m[0m
+
+the name `siteUrl` is defined multiple times
+
+
+./app/llama-watermark-cleaner/page.tsx:9:10
+Ecmascript file had an error
+[0m [90m  7 |[39m [36mimport[39m { webPageSchema } [36mfrom[39m [32m'../../lib/schema/webpage'[39m[33m;[39m
+ [90m  8 |[39m [36mimport[39m { siteUrl } [36mfrom[39m [32m'../../lib/schema/site'[39m[33m;[39m
+[31m[1m>[22m[39m[90m  9 |[39m [36mimport[39m { siteUrl } [36mfrom[39m [32m'@/lib/seo/url'[39m[33m;[39m
+ [90m    |[39m          [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[2
+2m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 10 |[39m [36mimport[39m { [33mRelatedTools[39m } [36mfrom[39m 
+[32m'../../components/tool/RelatedTools'[39m[33m;[39m
+ [90m 11 |[39m [36mimport[39m [33mAdSenseSlot[39m [36mfrom[39m 
+[32m'../../components/ads/AdSenseSlot'[39m[33m;[39m
+ [90m 12 |[39m [36mimport[39m [33mBelowToolAd[39m [36mfrom[39m 
+[32m'../../components/ads/BelowToolAd'[39m[33m;[39m[0m
+
+the name `siteUrl` is defined multiple times
+
+
+./app/mistral-watermark-cleaner/page.tsx:9:10
+Ecmascript file had an error
+[0m [90m  7 |[39m [36mimport[39m { webPageSchema } [36mfrom[39m [32m"../../lib/schema/webpage"[39m[33m;[39m
+ [90m  8 |[39m [36mimport[39m { siteUrl } [36mfrom[39m [32m'@/lib/seo/url'[39m[33m;[39m
+[31m[1m>[22m[39m[90m  9 |[39m [36mimport[39m { siteUrl } [36mfrom[39m 
+[32m"../../lib/schema/site"[39m[33m;[39m
+ [90m    |[39m          [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[2
+2m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 10 |[39m [36mimport[39m { [33mRelatedTools[39m } [36mfrom[39m 
+[32m"../../components/tool/RelatedTools"[39m[33m;[39m
+ [90m 11 |[39m [36mimport[39m [33mAdSenseSlot[39m [36mfrom[39m 
+[32m"../../components/ads/AdSenseSlot"[39m[33m;[39m
+ [90m 12 |[39m [36mimport[39m [33mBelowToolAd[39m [36mfrom[39m 
+[32m"../../components/ads/BelowToolAd"[39m[33m;[39m[0m
+
+the name `siteUrl` is defined multiple times
+
+
+./app/perplexity-watermark-cleaner/page.tsx:9:10
+Ecmascript file had an error
+[0m [90m  7 |[39m [36mimport[39m { webPageSchema } [36mfrom[39m [32m'../../lib/schema/webpage'[39m[33m;[39m
+ [90m  8 |[39m [36mimport[39m { siteUrl } [36mfrom[39m [32m'../../lib/schema/site'[39m[33m;[39m
+[31m[1m>[22m[39m[90m  9 |[39m [36mimport[39m { siteUrl } [36mfrom[39m [32m'@/lib/seo/url'[39m[33m;[39m
+ [90m    |[39m          [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[2
+2m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 10 |[39m [36mimport[39m { [33mRelatedTools[39m } [36mfrom[39m 
+[32m'../../components/tool/RelatedTools'[39m[33m;[39m
+ [90m 11 |[39m [36mimport[39m [33mAdSenseSlot[39m [36mfrom[39m 
+[32m'../../components/ads/AdSenseSlot'[39m[33m;[39m
+ [90m 12 |[39m [36mimport[39m [33mBelowToolAd[39m [36mfrom[39m 
+[32m'../../components/ads/BelowToolAd'[39m[33m;[39m[0m
+
+the name `siteUrl` is defined multiple times
+
+
+    at <unknown> (./app/ai-watermark-remover/page.tsx:9:10)
+    at <unknown> (./app/chatgpt-watermark-remover/page.tsx:9:10)
+    at <unknown> (./app/claude-watermark-cleaner/page.tsx:9:10)
+    at <unknown> (./app/deepseek-watermark-cleaner/page.tsx:9:10)
+    at <unknown> (./app/gemini-watermark-cleaner/page.tsx:9:10)
+    at <unknown> (./app/grok-watermark-cleaner/page.tsx:9:10)
+    at <unknown> (./app/llama-watermark-cleaner/page.tsx:9:10)
+    at <unknown> (./app/mistral-watermark-cleaner/page.tsx:9:10)
+    at <unknown> (./app/perplexity-watermark-cleaner/page.tsx:9:10)

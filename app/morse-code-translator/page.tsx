@@ -308,10 +308,10 @@ const writeUp = (
           </tr>
         </thead>
         <tbody>
-          {MORSE_TABLE.map((row) => (
+          &#123;MORSE_TABLE.map((row) => (
             <tr key={row.symbol}>
-              <td>{row.symbol}</td>
-              <td>{row.code}</td>
+              <td>&#123;row.symbol&#125;</td>
+              <td>&#123;row.code&#125;</td>
             </tr>
           ))}
         </tbody>
@@ -588,11 +588,11 @@ export default async function MorseCodeTranslatorPage() {
       <JsonLd data={webPageSchema({ name: title, url, description })} />
       <JsonLd data={webAppSchema} />
       <ToolPageShell
-        tool={{ ...toolData, title, shortDescription: description }}
-        ui={<MorseCodeTranslatorTool />}
-        related={<RelatedTools currentSlug={toolData.slug} />}
+        tool=&#123;&#123; ...toolData, title, shortDescription: description &#125;&#125;
+        ui=&#123;<MorseCodeTranslatorTool />&#125;
+        related=&#123;<RelatedTools currentSlug={toolData.slug} />&#125;
       >
-        {writeUp}
+        &#123;writeUp&#125;
         <div className="mt-10 space-y-3">
           <h2 className="text-2xl font-semibold text-slate-900">Morse Code Translator FAQ</h2>
           <p className="text-slate-700">

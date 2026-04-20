@@ -339,7 +339,7 @@ const writeUp = (
         Building a small Python generator teaches you how these tools work and gives you a custom encoder for projects.
       </p>
       <pre className="rounded bg-slate-900 p-4 text-xs text-slate-100">
-{`MORSE_CODE_DICT = {
+{`MORSE_CODE_DICT = &#123;
     'A': '.-', 'B': '-...', 'C': '-.-.', 'D': '-..', 'E': '.',
     'F': '..-.', 'G': '--.', 'H': '....', 'I': '..', 'J': '.---',
     'K': '-.-', 'L': '.-..', 'M': '--', 'N': '-.', 'O': '---',
@@ -472,16 +472,16 @@ export default async function MorseCodeGeneratorPage() {
     operatingSystem: 'Web',
     description: description,
     url,
-    offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-    aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', ratingCount: '1840', bestRating: '5', worstRating: '1' },
+    offers: &#123; '@type': 'Offer', price: '0', priceCurrency: 'USD' &#125;,
+    aggregateRating: &#123; '@type': 'AggregateRating', ratingValue: '4.9', ratingCount: '1840', bestRating: '5', worstRating: '1' &#125;,
   };
 
   return (
     <>
       <JsonLd data={webPageSchema({ name: title, url, description })} />
       <JsonLd data={schemaData} />
-      <ToolPageShell tool={{ ...toolData, title, shortDescription: description }} ui={<MorseCodeGeneratorTool />} related={<RelatedTools currentSlug={toolSlug} />}>
-        {writeUp}
+      <ToolPageShell tool={{ ...toolData, title, shortDescription: description }} ui={<MorseCodeGeneratorTool />&#125; related=&#123;<RelatedTools currentSlug={toolSlug} />&#125;>
+        &#123;writeUp&#125;
         <div className="mt-10 space-y-3">
           <h2 className="text-2xl font-semibold text-slate-900">Morse Code Generator FAQ</h2>
           <p className="text-slate-700">Guidance on encoding conventions, spacing, privacy, and sharing.</p>

@@ -497,21 +497,21 @@ const writeUp = (
 export async function generateMetadata() {
   const title = `${modelName} Watermark Detector`;
   const description = `Inspect ${modelName} text for possible hidden Unicode, whitespace patterns, and repeated punctuation.`;
-  return buildMeta({
-    title: `${title} - ${description}`,
+  return buildMeta(&#123;
+    title: `$&#123;title&#125; - $&#123;description&#125;`,
     description,
-    urlPath: `/${modelSlug}-watermark-detector`,
+    urlPath: `/$&#123;modelSlug&#125;-watermark-detector`,
   });
 }
 
 export default function ClaudeWatermarkDetectorPage() {
   return (
     <WatermarkDetectorPage
-      modelName={modelName}
-      modelSlug={modelSlug}
-      faqItems={faqs}
-      faqIntro={faqIntro}
-      content={writeUp}
+      modelName=&#123;modelName&#125;
+      modelSlug=&#123;modelSlug&#125;
+      faqItems=&#123;faqs&#125;
+      faqIntro=&#123;faqIntro&#125;
+      content=&#123;writeUp&#125;
     />
   );
 }

@@ -618,7 +618,7 @@ const writeUp = (
         is a useful, neutral tool in the broader AI-era toolkit.
       </p>
       <p>
-        Need a model-specific scan? Try the{' '}
+        Need a model-specific scan? Try the{' '&#125;
         <Link href="/grok-watermark-detector">Grok Watermark Detector</Link> for Grok-generated text.
       </p>
     </div>
@@ -628,8 +628,8 @@ const writeUp = (
 export async function generateMetadata() {
   const title = 'AI Watermark Detector';
   const description = 'Scan text for hidden Unicode, spacing patterns, and structural signals commonly seen in AI-era content.';
-  return buildMeta({
-    title: `${title} - ${description}`,
+  return buildMeta(&#123;
+    title: `$&#123;title&#125; - $&#123;description&#125;`,
     description,
     urlPath: '/ai-watermark-detector',
   });
@@ -638,11 +638,11 @@ export async function generateMetadata() {
 export default function AIWatermarkDetectorPage() {
   return (
     <WatermarkDetectorPage
-      modelName={modelName}
-      modelSlug={modelSlug}
-      faqItems={faqs}
-      faqIntro={faqIntro}
-      content={writeUp}
+      modelName=&#123;modelName&#125;
+      modelSlug=&#123;modelSlug&#125;
+      faqItems=&#123;faqs&#125;
+      faqIntro=&#123;faqIntro&#125;
+      content=&#123;writeUp&#125;
     />
   );
 }

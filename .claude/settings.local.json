@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:claude.ai)",
+      "Bash(for dir:*)",
+      "Bash(do)",
+      "Bash(echo \"=== $dir ===\")",
+      "Read(//c/Users/user/Desktop/project/gptcleanuptools/app/blog/$dir/**)",
+      "Bash(done)",
+      "Bash(node -e \"const fs=require\\('fs'\\);const t=fs.readFileSync\\('app/text-cleaner/page.tsx','utf8'\\);const article=t.match\\(/const article[\\\\s\\\\S]*?^export/m\\)?.[0]||'';const faq=t.match\\(/const faqs[\\\\s\\\\S]*?^const article/m\\)?.[0]||'';const words=\\(article+faq\\).split\\(/\\\\s+/\\).length;console.log\\(words+' words'\\)\")",
+      "Bash(node -e \"const fs=require\\('fs'\\);const t=fs.readFileSync\\('app/clean-paste/page.tsx','utf8'\\);const article=t.match\\(/const article[\\\\s\\\\S]*?^export/m\\)?.[0]||'';const faq=t.match\\(/const faqs[\\\\s\\\\S]*?^const article/m\\)?.[0]||'';const words=\\(article+faq\\).split\\(/\\\\s+/\\).length;console.log\\(words+' words'\\)\")"
+    ]
+  }
+}

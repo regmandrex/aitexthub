@@ -271,7 +271,7 @@ const writeUp = (
       <pre>
         <code>{`const labels = hostname.split('.');
 const encoded = labels.map((label) => {
-  return /[^\x00-\x7F]/.test(label) ? ` + "`xn--${toPunycode(label)}`" + ` : label;
+  return /[^\x00-\x7F]/.test(label) ? ` + "`xn--$&#123;toPunycode(label)&#125;`" + ` : label;
 });
 return encoded.join('.');`}</code>
       </pre>
@@ -296,22 +296,22 @@ return encoded.join('.');`}</code>
         </thead>
         <tbody>
           <tr>
-            <td>{'m\u00fcnich.com'}</td>
+            <td>{'m\u00fcnich.com'&#125;</td>
             <td>xn--mnich-kva.com</td>
             <td>Single label encoded, TLD stays ASCII.</td>
           </tr>
           <tr>
-            <td>{'b\u00fccher.example'}</td>
+            <td>{'b\u00fccher.example'&#125;</td>
             <td>xn--bcher-kva.example</td>
             <td>Only the first label is encoded.</td>
           </tr>
           <tr>
-            <td>{'espa\u00f1a.test'}</td>
+            <td>{'espa\u00f1a.test'&#125;</td>
             <td>xn--espaa-rta.test</td>
             <td>Accented n encoded to ASCII.</td>
           </tr>
           <tr>
-            <td>{'caf\u00e9.example'}</td>
+            <td>{'caf\u00e9.example'&#125;</td>
             <td>xn--caf-dma.example</td>
             <td>Accent changes label output.</td>
           </tr>
@@ -580,8 +580,8 @@ export default async function IdnEncodePage() {
     <>
       <JsonLd data={webPageSchema({ name: title, url, description })} />
       <JsonLd data={webAppSchema} />
-      <ToolPageShell tool={{ ...toolData, title, shortDescription: description }} ui={<IdnEncodeTool />} related={<RelatedTools currentSlug={toolData.slug} />}>
-        {writeUp}
+      <ToolPageShell tool={{ ...toolData, title, shortDescription: description }} ui={<IdnEncodeTool />&#125; related=&#123;<RelatedTools currentSlug={toolData.slug} />&#125;>
+        &#123;writeUp&#125;
         <div className="mt-10 space-y-3">
           <h2 className="text-2xl font-semibold text-slate-900">IDN Encode FAQ</h2>
           <p className="text-slate-700">

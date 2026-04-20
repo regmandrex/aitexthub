@@ -467,9 +467,9 @@ const writeUp = (
 );
 
 export const metadata = buildMeta({
-  title: `${modelName} Line Spacing Tool - Adjust Line Spacing in ${modelName} Text`,
-  description: `Adjust line spacing in ${modelName} text to single, 1.5, double, or custom spacing. Format text instantly for professional results.`,
-  urlPath: `/${modelSlug}-line-spacing`,
+  title: `$&#123;modelName&#125; Line Spacing Tool - Adjust Line Spacing in $&#123;modelName&#125; Text`,
+  description: `Adjust line spacing in $&#123;modelName&#125; text to single, 1.5, double, or custom spacing. Format text instantly for professional results.`,
+  urlPath: `/$&#123;modelSlug&#125;-line-spacing`,
 });
 
 export default function ChatgptLineSpacingPage() {

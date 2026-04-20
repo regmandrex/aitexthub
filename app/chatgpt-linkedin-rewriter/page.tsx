@@ -233,7 +233,7 @@ export async function generateMetadata(): Promise<Metadata> {
   if (!toolData) return {};
   const title = toolData.title;
   const description = toolData.shortDescription;
-  return buildToolMeta({ title, description, seoTitle: 'ChatGPT LinkedIn Rewriter - Free LinkedIn Content Optimizer', urlPath: `/${toolSlug}` });
+  return buildToolMeta(&#123; title, description, seoTitle: 'ChatGPT LinkedIn Rewriter - Free LinkedIn Content Optimizer', urlPath: `/$&#123;toolSlug&#125;` });
 }
 
 export default async function ChatGPTLinkedInRewriterPage() {
@@ -249,8 +249,8 @@ export default async function ChatGPTLinkedInRewriterPage() {
     <>
       <JsonLd data={webPageSchema({ name: title, url, description })} />
       <JsonLd data={webAppSchema} />
-      <ToolPageShell tool={{ ...toolData, title, shortDescription: description }} ui={<ChatGPTLinkedInRewriterTool />} related={<RelatedTools currentSlug={toolData.slug} />}>
-        {writeUp}
+      <ToolPageShell tool={{ ...toolData, title, shortDescription: description }} ui={<ChatGPTLinkedInRewriterTool />&#125; related=&#123;<RelatedTools currentSlug={toolData.slug} />&#125;>
+        &#123;writeUp&#125;
         <div className="mt-10 space-y-3">
           <h2 className="text-2xl font-semibold text-slate-900">ChatGPT LinkedIn Rewriter FAQ</h2>
           <p className="text-slate-700">Common questions about LinkedIn rewriting, professional networking, and authentic communication.</p>

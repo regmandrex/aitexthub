@@ -210,7 +210,7 @@ export async function generateMetadata(): Promise<Metadata> {
   if (!toolData) return {};
   const title = toolData.title;
   const description = toolData.shortDescription;
-  return buildToolMeta({ title, description, seoTitle: 'ChatGPT Research Paper Checker - Free Academic Paper Analysis', urlPath: `/${toolSlug}` });
+  return buildToolMeta(&#123; title, description, seoTitle: 'ChatGPT Research Paper Checker - Free Academic Paper Analysis', urlPath: `/$&#123;toolSlug&#125;` });
 }
 
 export default async function ChatGPTResearchPaperCheckerPage() {
@@ -226,8 +226,8 @@ export default async function ChatGPTResearchPaperCheckerPage() {
     <>
       <JsonLd data={webPageSchema({ name: title, url, description })} />
       <JsonLd data={webAppSchema} />
-      <ToolPageShell tool={{ ...toolData, title, shortDescription: description }} ui={<ChatGPTResearchPaperCheckerTool />} related={<RelatedTools currentSlug={toolData.slug} />}>
-        {writeUp}
+      <ToolPageShell tool={{ ...toolData, title, shortDescription: description }} ui={<ChatGPTResearchPaperCheckerTool />&#125; related=&#123;<RelatedTools currentSlug={toolData.slug} />&#125;>
+        &#123;writeUp&#125;
         <div className="mt-10 space-y-3">
           <h2 className="text-2xl font-semibold text-slate-900">ChatGPT Research Paper Checker FAQ</h2>
           <p className="text-slate-700">Common questions about research paper evaluation, academic writing, and scholarly standards.</p>

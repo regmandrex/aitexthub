@@ -350,10 +350,10 @@ export async function generateMetadata() {
   
   const title = `${modelName} Space Remover - Clean LLAMA (Meta AI) text by trimming lines and stabilizing spacing.`;
   const description = 'Remove extra spaces and tidy lines for clean, paste-ready text.';
-  return buildMeta({
+  return buildMeta(&#123;
     title,
     description,
-    urlPath: `/${modelSlug}-space-remover`,
+    urlPath: `/$&#123;modelSlug&#125;-space-remover`,
   });
 }
 

@@ -236,7 +236,7 @@ export async function generateMetadata(): Promise<Metadata> {
   if (!toolData) return {};
   const title = toolData.title;
   const description = toolData.shortDescription;
-  return buildToolMeta({ title, description, seoTitle: 'ChatGPT Passive Voice Fixer - Free Active Voice Converter', urlPath: `/${toolSlug}` });
+  return buildToolMeta(&#123; title, description, seoTitle: 'ChatGPT Passive Voice Fixer - Free Active Voice Converter', urlPath: `/$&#123;toolSlug&#125;` });
 }
 
 export default async function ChatGPTPassiveVoiceFixerPage() {
@@ -252,8 +252,8 @@ export default async function ChatGPTPassiveVoiceFixerPage() {
     <>
       <JsonLd data={webPageSchema({ name: title, url, description })} />
       <JsonLd data={webAppSchema} />
-      <ToolPageShell tool={{ ...toolData, title, shortDescription: description }} ui={<ChatGPTPassiveVoiceFixerTool />} related={<RelatedTools currentSlug={toolData.slug} />}>
-        {writeUp}
+      <ToolPageShell tool={{ ...toolData, title, shortDescription: description }} ui={<ChatGPTPassiveVoiceFixerTool />&#125; related=&#123;<RelatedTools currentSlug={toolData.slug} />&#125;>
+        &#123;writeUp&#125;
         <div className="mt-10 space-y-3">
           <h2 className="text-2xl font-semibold text-slate-900">ChatGPT Passive Voice Fixer FAQ</h2>
           <p className="text-slate-700">Common questions about passive and active voice, when to use each, and how to improve your writing.</p>

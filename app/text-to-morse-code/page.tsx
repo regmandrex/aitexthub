@@ -512,16 +512,16 @@ export default async function TextToMorseCodePage() {
     operatingSystem: 'Web',
     description: description,
     url,
-    offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-    aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', ratingCount: '1840', bestRating: '5', worstRating: '1' },
+    offers: &#123; '@type': 'Offer', price: '0', priceCurrency: 'USD' &#125;,
+    aggregateRating: &#123; '@type': 'AggregateRating', ratingValue: '4.9', ratingCount: '1840', bestRating: '5', worstRating: '1' &#125;,
   };
 
   return (
     <>
       <JsonLd data={webPageSchema({ name: title, url, description })} />
       <JsonLd data={schemaData} />
-      <ToolPageShell tool={{ ...toolData, title, shortDescription: description }} ui={<TextToMorseCodeTool />} related={<RelatedTools currentSlug={toolSlug} />}>
-        {writeUp}
+      <ToolPageShell tool={{ ...toolData, title, shortDescription: description }} ui={<TextToMorseCodeTool />&#125; related=&#123;<RelatedTools currentSlug={toolSlug} />&#125;>
+        &#123;writeUp&#125;
         <div className="mt-10 space-y-3">
           <h2 className="text-2xl font-semibold text-slate-900">Text to Morse Code Converter FAQ</h2>
           <p className="text-slate-700">Common questions about encoding text into Morse code, spacing rules, and usage.</p>

@@ -340,10 +340,10 @@ const writeUp = (
 export async function generateMetadata() {
   const title = `${modelName} Space Remover - Fix spacing and hidden spaces in Perplexity responses.`;
   const description = 'Remove extra spaces and tidy lines for clean, paste-ready text.';
-  return buildMeta({
+  return buildMeta(&#123;
     title,
     description,
-    urlPath: `/${modelSlug}-space-remover`,
+    urlPath: `/$&#123;modelSlug&#125;-space-remover`,
   });
 }
 

@@ -269,17 +269,17 @@ return decoded.join('.');`}</code>
         <tbody>
           <tr>
             <td>xn--mnich-kva.com</td>
-            <td>{'m\u00fcnich.com'}</td>
+            <td>{'m\u00fcnich.com'&#125;</td>
             <td>Single label decoded.</td>
           </tr>
           <tr>
             <td>xn--bcher-kva.example</td>
-            <td>{'b\u00fccher.example'}</td>
+            <td>{'b\u00fccher.example'&#125;</td>
             <td>First label decoded only.</td>
           </tr>
           <tr>
             <td>xn--caf-dma.example</td>
-            <td>{'caf\u00e9.example'}</td>
+            <td>{'caf\u00e9.example'&#125;</td>
             <td>Accent restored to Unicode.</td>
           </tr>
           <tr>
@@ -528,8 +528,8 @@ export default async function IdnDecodePage() {
     <>
       <JsonLd data={webPageSchema({ name: title, url, description })} />
       <JsonLd data={webAppSchema} />
-      <ToolPageShell tool={{ ...toolData, title, shortDescription: description }} ui={<IdnDecodeTool />} related={<RelatedTools currentSlug={toolData.slug} />}>
-        {writeUp}
+      <ToolPageShell tool={{ ...toolData, title, shortDescription: description }} ui={<IdnDecodeTool />&#125; related=&#123;<RelatedTools currentSlug={toolData.slug} />&#125;>
+        &#123;writeUp&#125;
         <div className="mt-10 space-y-3">
           <h2 className="text-2xl font-semibold text-slate-900">IDN Decode FAQ</h2>
           <p className="text-slate-700">Helpful answers about Punycode decoding, Unicode output, and safe handling of IDN domains.</p>

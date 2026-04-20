@@ -173,7 +173,7 @@ const writeUp = (
 
     <h2>Binary Text in CTF Challenges</h2>
     <p>
-      Capture the Flag (CTF) competitions use binary encoding as a foundational challenge type. A typical challenge presents a string of 0s and 1s and asks participants to decode it to find the flag — a string like "FLAG{binary_is_basic}." The difficulty varies: simple challenges provide properly spaced 8-bit groups; harder challenges provide unseparated binary where you must group digits yourself; advanced challenges combine binary with other encodings (first decode binary to hex, then hex to ASCII).
+      Capture the Flag (CTF) competitions use binary encoding as a foundational challenge type. A typical challenge presents a string of 0s and 1s and asks participants to decode it to find the flag — a string like "FLAG&#123;binary_is_basic&#125;." The difficulty varies: simple challenges provide properly spaced 8-bit groups; harder challenges provide unseparated binary where you must group digits yourself; advanced challenges combine binary with other encodings (first decode binary to hex, then hex to ASCII).
     </p>
     <p>
       For CTF binary challenges: paste the binary into our converter's decode tab first. If the output is garbled, try re-grouping into 8-bit chunks manually (split every 8 characters). If still garbled, consider LSB-first ordering (reverse each 8-bit group). If the flag format includes ASCII and non-ASCII characters, verify the entire 0-255 byte range is being handled. These problem-solving steps build the systematic approach to binary analysis that is fundamental in cybersecurity work.
@@ -410,7 +410,7 @@ export default async function BinaryToTextPage() {
     operatingSystem: 'Any',
     permissions: 'browser',
     isAccessibleForFree: true,
-    offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+    offers: &#123; '@type': 'Offer', price: '0', priceCurrency: 'USD' &#125;,
   };
 
   return (
@@ -418,12 +418,12 @@ export default async function BinaryToTextPage() {
       <JsonLd data={webAppSchema} />
       <JsonLd data={webPageSchema({ title: toolData.title, description: toolData.description, url })} />
       <ToolPageShell
-        toolSlug={toolSlug}
-        toolComponent={<BinaryToTextTool />}
-        relatedToolsComponent={<RelatedTools currentSlug={toolSlug} />}
-        faqComponent={<FAQSection faqs={faqs} />}
-        faqJsonLdComponent={<FaqJsonLd faqs={faqs} />}
-        writeUp={writeUp}
+        toolSlug=&#123;toolSlug&#125;
+        toolComponent=&#123;<BinaryToTextTool />&#125;
+        relatedToolsComponent=&#123;<RelatedTools currentSlug={toolSlug} />&#125;
+        faqComponent=&#123;<FAQSection faqs={faqs} />&#125;
+        faqJsonLdComponent=&#123;<FaqJsonLd faqs={faqs} />&#125;
+        writeUp=&#123;writeUp&#125;
       />
     </>
   );

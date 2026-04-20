@@ -165,8 +165,8 @@ export default async function EpochConverterPage() {
     <>
       <JsonLd data={webPageSchema({ name: toolData.title, url, description: toolData.shortDescription })} />
       <JsonLd data={webAppSchema} />
-      <ToolPageShell tool={toolData} ui={<EpochConverterTool />} related={<RelatedTools currentSlug={toolSlug} />}>
-        {writeUp}
+      <ToolPageShell tool={toolData} ui={<EpochConverterTool />&#125; related=&#123;<RelatedTools currentSlug={toolSlug} />&#125;>
+        &#123;writeUp&#125;
         <div className="mt-10 space-y-3">
           <h2 className="text-2xl font-semibold text-slate-900">Epoch Converter – Frequently Asked Questions</h2>
           <p className="text-slate-700">Detailed answers about Unix timestamps, epoch time conversion, and timezone handling.</p>

@@ -178,7 +178,7 @@ const writeUp = (
 
     <h2>Handling Nested JSON Structures</h2>
     <p>
-      Many APIs return deeply nested JSON. A typical e-commerce order API response might look like: {"order_id": 12345, "customer": {"id": 789, "name": "Alice Johnson", "email": "alice@example.com"}, "items": [{"sku": "ABC123", "qty": 2, "price": 29.99}], "shipping": {"address": "123 Main St", "city": "Portland", "state": "OR"}}. With our flatten option enabled, the nested "customer" and "shipping" objects expand to: customer.id, customer.name, customer.email, shipping.address, shipping.city, shipping.state. The items array (an array of objects) is stringified as JSON in a single cell — to properly expand arrays of nested objects into multiple rows, you would need a more specialized tool or preprocessing script.
+      Many APIs return deeply nested JSON. A typical e-commerce order API response might look like: {"order_id": 12345, "customer": {"id": 789, "name": "Alice Johnson", "email": "alice@example.com"&#125;, "items": [{"sku": "ABC123", "qty": 2, "price": 29.99&#125;], "shipping": {"address": "123 Main St", "city": "Portland", "state": "OR"&#125;&#125;. With our flatten option enabled, the nested "customer" and "shipping" objects expand to: customer.id, customer.name, customer.email, shipping.address, shipping.city, shipping.state. The items array (an array of objects) is stringified as JSON in a single cell — to properly expand arrays of nested objects into multiple rows, you would need a more specialized tool or preprocessing script.
     </p>
 
     <h2>JSON to CSV in Different Programming Languages</h2>
@@ -400,7 +400,7 @@ export default async function JsonToCsvPage() {
     operatingSystem: 'Any',
     permissions: 'browser',
     isAccessibleForFree: true,
-    offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+    offers: &#123; '@type': 'Offer', price: '0', priceCurrency: 'USD' &#125;,
   };
 
   return (
@@ -408,12 +408,12 @@ export default async function JsonToCsvPage() {
       <JsonLd data={webAppSchema} />
       <JsonLd data={webPageSchema({ title: toolData.title, description: toolData.description, url })} />
       <ToolPageShell
-        toolSlug={toolSlug}
-        toolComponent={<JsonToCsvTool />}
-        relatedToolsComponent={<RelatedTools currentSlug={toolSlug} />}
-        faqComponent={<FAQSection faqs={faqs} />}
-        faqJsonLdComponent={<FaqJsonLd faqs={faqs} />}
-        writeUp={writeUp}
+        toolSlug=&#123;toolSlug&#125;
+        toolComponent=&#123;<JsonToCsvTool />&#125;
+        relatedToolsComponent=&#123;<RelatedTools currentSlug={toolSlug} />&#125;
+        faqComponent=&#123;<FAQSection faqs={faqs} />&#125;
+        faqJsonLdComponent=&#123;<FaqJsonLd faqs={faqs} />&#125;
+        writeUp=&#123;writeUp&#125;
       />
     </>
   );

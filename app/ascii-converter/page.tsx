@@ -267,7 +267,7 @@ const writeUp = (
       <strong>CSV (Comma-Separated Values)</strong>: CSV files are entirely ASCII or UTF-8 text. Each row is one line (terminated by LF or CRLF), fields are separated by commas (ASCII 44), and text fields may be quoted with double quotes (ASCII 34). The simplicity of the ASCII-based format is why CSV is universally compatible across different applications — any system that can read ASCII text can read a CSV file. Our CSV to JSON converter processes these ASCII/UTF-8 encoded files.
     </p>
     <p>
-      <strong>JSON (JavaScript Object Notation)</strong>: JSON is defined as a Unicode text format but is most commonly encoded in UTF-8. The JSON syntax characters (curly braces {}, square brackets [], colon :, comma ,, quotes ") are all ASCII characters, making JSON parseable with pure ASCII processing for the structural layer. String values containing non-ASCII characters are escaped as \uXXXX Unicode escapes — themselves ASCII text. A JSON string of Chinese characters becomes a sequence of \uXXXX escape sequences, all ASCII.
+      <strong>JSON (JavaScript Object Notation)</strong>: JSON is defined as a Unicode text format but is most commonly encoded in UTF-8. The JSON syntax characters (curly braces {&#125;, square brackets [], colon :, comma ,, quotes ") are all ASCII characters, making JSON parseable with pure ASCII processing for the structural layer. String values containing non-ASCII characters are escaped as \uXXXX Unicode escapes — themselves ASCII text. A JSON string of Chinese characters becomes a sequence of \uXXXX escape sequences, all ASCII.
     </p>
     <p>
       <strong>Magic bytes and file identification</strong>: the first few bytes of many file formats are ASCII characters that identify the file type. PDF files begin with "%PDF-" (ASCII codes 37 80 68 70 45). ZIP archives begin with "PK" (ASCII 80 75, the initials of Phil Katz who designed the format). GIF files begin with "GIF87a" or "GIF89a" in ASCII. HTML files often start with &lt;!DOCTYPE html&gt; in ASCII. PNG files begin with eight bytes, several of which are ASCII characters: the sequence "\x89PNG\r\n\x1a\n" — where "PNG" is ASCII 80 78 71. Understanding that file magic bytes are often ASCII text explains why hex editors show recognizable text at the beginning of many files.
@@ -358,10 +358,10 @@ const writeUp = (
       Character classification using ASCII code ranges is fundamental to text processing in every programming language. Understanding the ASCII ranges for different character classes enables efficient validation without regex for simple cases.
     </p>
     <p>
-      <strong>Testing if a character is printable ASCII</strong>: codes 32–126 are printable. Check: <code>code >= 32 && code <= 126</code>. This excludes control characters (0–31) and DEL (127). Use for: validating that input contains only displayable ASCII characters, filtering binary data to extract text, checking that a protocol field contains valid ASCII.
+      <strong>Testing if a character is printable ASCII</strong>: codes 32–126 are printable. Check: <code>code &gt;= 32 && code &lt;= 126</code>. This excludes control characters (0–31) and DEL (127). Use for: validating that input contains only displayable ASCII characters, filtering binary data to extract text, checking that a protocol field contains valid ASCII.
     </p>
     <p>
-      <strong>Testing if a character is a letter</strong>: uppercase 65–90 OR lowercase 97–122. Check: <code>(code >= 65 && code <= 90) || (code >= 97 && code <= 122)</code>. More compactly using the 32-bit trick: <code>(code | 32) >= 97 && (code | 32) <= 122</code> (ORing with 32 forces bit 5 to 1, converting uppercase to lowercase range). Use for: validating alphabetic input, implementing alphabetical sorting, extracting words from text.
+      <strong>Testing if a character is a letter</strong>: uppercase 65–90 OR lowercase 97–122. Check: <code>(code >= 65 && code <= 90) || (code >= 97 && code <= 122)</code>. More compactly using the 32-bit trick: <code>(code | 32) &gt;= 97 && (code | 32) &lt;= 122</code> (ORing with 32 forces bit 5 to 1, converting uppercase to lowercase range). Use for: validating alphabetic input, implementing alphabetical sorting, extracting words from text.
     </p>
     <p>
       <strong>Testing if a character is alphanumeric</strong>: letters (65–90, 97–122) OR digits (48–57). This is the check for valid identifier characters in most programming languages (plus underscore 95 and dollar sign 36 for many). Use for: validating usernames, slugs, variable names, and other identifier-like strings.
@@ -421,7 +421,7 @@ export default async function AsciiConverterPage() {
     operatingSystem: 'Any',
     permissions: 'browser',
     isAccessibleForFree: true,
-    offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+    offers: &#123; '@type': 'Offer', price: '0', priceCurrency: 'USD' &#125;,
   };
 
   return (
@@ -429,12 +429,12 @@ export default async function AsciiConverterPage() {
       <JsonLd data={webAppSchema} />
       <JsonLd data={webPageSchema({ title: toolData.title, description: toolData.description, url })} />
       <ToolPageShell
-        toolSlug={toolSlug}
-        toolComponent={<AsciiConverterTool />}
-        relatedToolsComponent={<RelatedTools currentSlug={toolSlug} />}
-        faqComponent={<FAQSection faqs={faqs} />}
-        faqJsonLdComponent={<FaqJsonLd faqs={faqs} />}
-        writeUp={writeUp}
+        toolSlug=&#123;toolSlug&#125;
+        toolComponent=&#123;<AsciiConverterTool />&#125;
+        relatedToolsComponent=&#123;<RelatedTools currentSlug={toolSlug} />&#125;
+        faqComponent=&#123;<FAQSection faqs={faqs} />&#125;
+        faqJsonLdComponent=&#123;<FaqJsonLd faqs={faqs} />&#125;
+        writeUp=&#123;writeUp&#125;
       />
     </>
   );

@@ -396,7 +396,7 @@ export default async function StringLengthCalculatorPage() {
     operatingSystem: 'Any',
     permissions: 'browser',
     isAccessibleForFree: true,
-    offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+    offers: &#123; '@type': 'Offer', price: '0', priceCurrency: 'USD' &#125;,
   };
 
   return (
@@ -404,12 +404,12 @@ export default async function StringLengthCalculatorPage() {
       <JsonLd data={webAppSchema} />
       <JsonLd data={webPageSchema({ title: toolData.title, description: toolData.description, url })} />
       <ToolPageShell
-        toolSlug={toolSlug}
-        toolComponent={<StringLengthCalculatorTool />}
-        relatedToolsComponent={<RelatedTools currentSlug={toolSlug} />}
-        faqComponent={<FAQSection faqs={faqs} />}
-        faqJsonLdComponent={<FaqJsonLd faqs={faqs} />}
-        writeUp={writeUp}
+        toolSlug=&#123;toolSlug&#125;
+        toolComponent=&#123;<StringLengthCalculatorTool />&#125;
+        relatedToolsComponent=&#123;<RelatedTools currentSlug={toolSlug} />&#125;
+        faqComponent=&#123;<FAQSection faqs={faqs} />&#125;
+        faqJsonLdComponent=&#123;<FaqJsonLd faqs={faqs} />&#125;
+        writeUp=&#123;writeUp&#125;
       />
     </>
   );

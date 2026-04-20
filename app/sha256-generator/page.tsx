@@ -244,7 +244,7 @@ const writeUp = (
       C# (.NET): using System.Security.Cryptography; using var sha = SHA256.Create(); byte[] hashBytes = sha.ComputeHash(Encoding.UTF8.GetBytes(text)); string hash = BitConverter.ToString(hashBytes).Replace("-", "").ToLower();. .NET 5+ adds Convert.ToHexString(hashBytes).ToLower() as a cleaner alternative. For HMAC-SHA256: using var hmac = new HMACSHA256(Encoding.UTF8.GetBytes(key)); string sig = Convert.ToHexString(hmac.ComputeHash(Encoding.UTF8.GetBytes(message))).ToLower();.
     </p>
     <p>
-      PHP: $hash = hash('sha256', $text); — returns lowercase hex string. For HMAC: $sig = hash_hmac('sha256', $message, $key);. PHP's hash_equals() function provides timing-safe comparison for verifying signatures. Rust: use sha2::{Sha256, Digest}; let hash = hex::encode(Sha256::digest(text.as_bytes())); — requires the sha2 and hex crates. Rust's type system ensures the digest is the correct length.
+      PHP: $hash = hash('sha256', $text); — returns lowercase hex string. For HMAC: $sig = hash_hmac('sha256', $message, $key);. PHP's hash_equals() function provides timing-safe comparison for verifying signatures. Rust: use sha2::&#123;Sha256, Digest}; let hash = hex::encode(Sha256::digest(text.as_bytes())); — requires the sha2 and hex crates. Rust's type system ensures the digest is the correct length.
     </p>
 
     <h2>SHA-256 for Password Storage: The Right Way and Wrong Way</h2>
@@ -431,7 +431,7 @@ export default async function Sha256GeneratorPage() {
     operatingSystem: 'Any',
     permissions: 'browser',
     isAccessibleForFree: true,
-    offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+    offers: &#123; '@type': 'Offer', price: '0', priceCurrency: 'USD' &#125;,
   };
 
   return (
@@ -439,12 +439,12 @@ export default async function Sha256GeneratorPage() {
       <JsonLd data={webAppSchema} />
       <JsonLd data={webPageSchema({ title: toolData.title, description: toolData.description, url })} />
       <ToolPageShell
-        toolSlug={toolSlug}
-        toolComponent={<Sha256GeneratorTool />}
-        relatedToolsComponent={<RelatedTools currentSlug={toolSlug} />}
-        faqComponent={<FAQSection faqs={faqs} />}
-        faqJsonLdComponent={<FaqJsonLd faqs={faqs} />}
-        writeUp={writeUp}
+        toolSlug=&#123;toolSlug&#125;
+        toolComponent=&#123;<Sha256GeneratorTool />&#125;
+        relatedToolsComponent=&#123;<RelatedTools currentSlug={toolSlug} />&#125;
+        faqComponent=&#123;<FAQSection faqs={faqs} />&#125;
+        faqJsonLdComponent=&#123;<FaqJsonLd faqs={faqs} />&#125;
+        writeUp=&#123;writeUp&#125;
       />
     </>
   );
