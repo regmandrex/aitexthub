@@ -244,7 +244,7 @@ const writeUp = (
       C# (.NET): using System.Security.Cryptography; using var sha = SHA256.Create(); byte[] hashBytes = sha.ComputeHash(Encoding.UTF8.GetBytes(text)); string hash = BitConverter.ToString(hashBytes).Replace("-", "").ToLower();. .NET 5+ adds Convert.ToHexString(hashBytes).ToLower() as a cleaner alternative. For HMAC-SHA256: using var hmac = new HMACSHA256(Encoding.UTF8.GetBytes(key)); string sig = Convert.ToHexString(hmac.ComputeHash(Encoding.UTF8.GetBytes(message))).ToLower();.
     </p>
     <p>
-      PHP: $hash = hash('sha256', $text); — returns lowercase hex string. For HMAC: $sig = hash_hmac('sha256', $message, $key);. PHP's hash_equals() function provides timing-safe comparison for verifying signatures. Rust: use sha2::&#123;Sha256, Digest}; let hash = hex::encode(Sha256::digest(text.as_bytes())); — requires the sha2 and hex crates. Rust's type system ensures the digest is the correct length.
+      PHP: $hash = hash('sha256', $text); — returns lowercase hex string. For HMAC: $sig = hash_hmac('sha256', $message, $key);. PHP's hash_equals() function provides timing-safe comparison for verifying signatures. Rust: use sha2::&#123;Sha256, Digest&#125;; let hash = hex::encode(Sha256::digest(text.as_bytes())); — requires the sha2 and hex crates. Rust's type system ensures the digest is the correct length.
     </p>
 
     <h2>SHA-256 for Password Storage: The Right Way and Wrong Way</h2>

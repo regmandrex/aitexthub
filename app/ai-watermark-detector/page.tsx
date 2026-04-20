@@ -618,7 +618,7 @@ const writeUp = (
         is a useful, neutral tool in the broader AI-era toolkit.
       </p>
       <p>
-        Need a model-specific scan? Try the{' '&#125;
+        Need a model-specific scan? Try the{' '}
         <Link href="/grok-watermark-detector">Grok Watermark Detector</Link> for Grok-generated text.
       </p>
     </div>

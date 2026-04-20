@@ -523,7 +523,7 @@ const writeUp = (
       between human and AI authorship.
     </p>
     <p>
-      Using Grok instead of ChatGPT? Try the{' '&#125;
+      Using Grok instead of ChatGPT? Try the{' '}
       <Link href="/grok-watermark-detector">Grok Watermark Detector</Link> for model-specific analysis.
     </p>
   </section>

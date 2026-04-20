@@ -257,32 +257,32 @@ const decoded = decodeHtmlEntities(raw);
         </thead>
         <tbody>
           <tr>
-            <td>{'&amp;'&#125;</td>
+            <td>{'&amp;'}</td>
             <td>&amp;</td>
             <td>Ampersand used in plain text.</td>
           </tr>
           <tr>
-            <td>{'&lt;'&#125;</td>
+            <td>{'&lt;'}</td>
             <td>&lt;</td>
             <td>Less-than symbol.</td>
           </tr>
           <tr>
-            <td>{'&gt;'&#125;</td>
+            <td>{'&gt;'}</td>
             <td>&gt;</td>
             <td>Greater-than symbol.</td>
           </tr>
           <tr>
-            <td>{'&quot;'&#125;</td>
+            <td>{'&quot;'}</td>
             <td>"</td>
             <td>Double quote.</td>
           </tr>
           <tr>
-            <td>{'&#39;'&#125;</td>
+            <td>{'&#39;'}</td>
             <td>'</td>
             <td>Single quote or apostrophe.</td>
           </tr>
           <tr>
-            <td>{'&#169;'&#125;</td>
+            <td>{'&#169;'}</td>
             <td>copyright symbol</td>
             <td>Common copyright symbol.</td>
           </tr>
@@ -615,7 +615,7 @@ export default async function HtmlEntitiesToTextPage() {
     <>
       <JsonLd data={webPageSchema({ name: title, url, description })} />
       <JsonLd data={webAppSchema} />
-      <ToolPageShell tool={{ ...toolData, title, shortDescription: description }} ui={<HtmlEntitiesToTextTool />} related={<RelatedTools currentSlug={toolData.slug} />}>
+      <ToolPageShell tool={{ ...toolData, title, shortDescription: description }} ui={<HtmlEntitiesToTextTool />&#125; related=&#123;<RelatedTools currentSlug={toolData.slug} />}>
         {writeUp}
         <div className="mt-10 space-y-3">
           <h2 className="text-2xl font-semibold text-slate-900">HTML Entities to Text FAQ</h2>
