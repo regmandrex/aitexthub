@@ -372,7 +372,7 @@ export default async function TextToSpeechPage() {
     '@context': 'https://schema.org',
     '@type': 'WebApplication',
     name: toolData.title,
-    description: toolData.description,
+    description: toolData.shortDescription,
     url,
     applicationCategory: 'UtilitiesApplication',
     operatingSystem: 'Any',
@@ -384,15 +384,12 @@ export default async function TextToSpeechPage() {
   return (
     <>
       <JsonLd data={webAppSchema} />
-      <JsonLd data={webPageSchema({ title: toolData.title, description: toolData.description, url })} />
-      <ToolPageShell
-        toolSlug={toolSlug}
-        toolComponent={<TextToSpeechTool />}
-        relatedToolsComponent={<RelatedTools currentSlug={toolSlug} />}
-        faqComponent={<FAQSection faqs={faqs} />}
-        faqJsonLdComponent={<FaqJsonLd faqs={faqs} />}
-        writeUp={writeUp}
-      />
+      <JsonLd data={webPageSchema({ name: toolData.title, description: toolData.shortDescription, url })} />
+      <ToolPageShell tool={toolData} ui={<TextToSpeechTool />} related={<RelatedTools currentSlug={toolSlug} />}>
+        {writeUp}
+        <FAQSection items={faqs} />
+        <FaqJsonLd faqs={faqs} />
+      </ToolPageShell>
     </>
   );
 }

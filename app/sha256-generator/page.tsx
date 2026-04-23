@@ -425,7 +425,7 @@ export default async function Sha256GeneratorPage() {
     '@context': 'https://schema.org',
     '@type': 'WebApplication',
     name: toolData.title,
-    description: toolData.description,
+    description: toolData.shortDescription,
     url,
     applicationCategory: 'UtilitiesApplication',
     operatingSystem: 'Any',
@@ -437,15 +437,12 @@ export default async function Sha256GeneratorPage() {
   return (
     <>
       <JsonLd data={webAppSchema} />
-      <JsonLd data={webPageSchema({ title: toolData.title, description: toolData.description, url })} />
-      <ToolPageShell
-        toolSlug={toolSlug}
-        toolComponent={<Sha256GeneratorTool />}
-        relatedToolsComponent={<RelatedTools currentSlug={toolSlug} />}
-        faqComponent={<FAQSection faqs={faqs} />}
-        faqJsonLdComponent={<FaqJsonLd faqs={faqs} />}
-        writeUp={writeUp}
-      />
+      <JsonLd data={webPageSchema({ name: toolData.title, description: toolData.shortDescription, url })} />
+      <ToolPageShell tool={toolData} ui={<Sha256GeneratorTool />} related={<RelatedTools currentSlug={toolSlug} />}>
+        {writeUp}
+        <FAQSection items={faqs} />
+        <FaqJsonLd faqs={faqs} />
+      </ToolPageShell>
     </>
   );
 }

@@ -361,7 +361,7 @@ const writeUp = (
       <strong>Testing if a character is printable ASCII</strong>: codes 32–126 are printable. Check: <code>code &gt;= 32 && code &lt;= 126</code>. This excludes control characters (0–31) and DEL (127). Use for: validating that input contains only displayable ASCII characters, filtering binary data to extract text, checking that a protocol field contains valid ASCII.
     </p>
     <p>
-      <strong>Testing if a character is a letter</strong>: uppercase 65–90 OR lowercase 97–122. Check: <code>(code >= 65 && code <= 90) || (code >= 97 && code <= 122)</code>. More compactly using the 32-bit trick: <code>(code | 32) &gt;= 97 && (code | 32) &lt;= 122</code> (ORing with 32 forces bit 5 to 1, converting uppercase to lowercase range). Use for: validating alphabetic input, implementing alphabetical sorting, extracting words from text.
+      <strong>Testing if a character is a letter</strong>: uppercase 65–90 OR lowercase 97–122. Check: <code>(code &gt;= 65 && code &lt;= 90) || (code &gt;= 97 && code &lt;= 122)</code>. More compactly using the 32-bit trick: <code>(code | 32) &gt;= 97 && (code | 32) &lt;= 122</code> (ORing with 32 forces bit 5 to 1, converting uppercase to lowercase range). Use for: validating alphabetic input, implementing alphabetical sorting, extracting words from text.
     </p>
     <p>
       <strong>Testing if a character is alphanumeric</strong>: letters (65–90, 97–122) OR digits (48–57). This is the check for valid identifier characters in most programming languages (plus underscore 95 and dollar sign 36 for many). Use for: validating usernames, slugs, variable names, and other identifier-like strings.
@@ -370,7 +370,7 @@ const writeUp = (
       <strong>Converting digit characters to integers</strong>: subtract 48 from the ASCII code of a digit character to get its numeric value. <code>'5' (code 53) - 48 = 5</code>. This is how manual integer parsing works in C and other languages — read characters one at a time and accumulate: <code>int value = 0; while (isdigit(*p)) value = value * 10 + (*p++ - '0');</code>. Understanding that digit characters are not equal to their numeric values (the character '0' is not 0, it is 48) prevents a common beginner mistake.
     </p>
     <p>
-      <strong>Converting hex characters to values</strong>: hex strings (used in color codes, hash values, URL encoding) contain digits 0–9 (codes 48–57) and letters A–F (codes 65–70) or a–f (codes 97–102). To convert a hex digit character to its numeric value: if code <= 57, subtract 48; if code <= 70, subtract 55; if code <= 102, subtract 87. This maps '0'–'9' to 0–9, 'A'–'F' to 10–15, and 'a'–'f' to 10–15. This conversion appears in every hex parser, color value handler, and URL decoder ever written.
+      <strong>Converting hex characters to values</strong>: hex strings (used in color codes, hash values, URL encoding) contain digits 0–9 (codes 48–57) and letters A–F (codes 65–70) or a–f (codes 97–102). To convert a hex digit character to its numeric value: if code &lt;= 57, subtract 48; if code &lt;= 70, subtract 55; if code &lt;= 102, subtract 87. This maps '0'–'9' to 0–9, 'A'–'F' to 10–15, and 'a'–'f' to 10–15. This conversion appears in every hex parser, color value handler, and URL decoder ever written.
     </p>
 
     <h2>ASCII and Regular Expressions</h2>
@@ -415,7 +415,7 @@ export default async function AsciiConverterPage() {
     '@context': 'https://schema.org',
     '@type': 'WebApplication',
     name: toolData.title,
-    description: toolData.description,
+    description: toolData.shortDescription,
     url,
     applicationCategory: 'DeveloperApplication',
     operatingSystem: 'Any',
@@ -427,15 +427,12 @@ export default async function AsciiConverterPage() {
   return (
     <>
       <JsonLd data={webAppSchema} />
-      <JsonLd data={webPageSchema({ title: toolData.title, description: toolData.description, url })} />
-      <ToolPageShell
-        toolSlug={toolSlug}
-        toolComponent={<AsciiConverterTool />}
-        relatedToolsComponent={<RelatedTools currentSlug={toolSlug} />}
-        faqComponent={<FAQSection faqs={faqs} />}
-        faqJsonLdComponent={<FaqJsonLd faqs={faqs} />}
-        writeUp={writeUp}
-      />
+      <JsonLd data={webPageSchema({ name: toolData.title, description: toolData.shortDescription, url })} />
+      <ToolPageShell tool={toolData} ui={<AsciiConverterTool />} related={<RelatedTools currentSlug={toolSlug} />}>
+        {writeUp}
+        <FAQSection items={faqs} />
+        <FaqJsonLd faqs={faqs} />
+      </ToolPageShell>
     </>
   );
 }

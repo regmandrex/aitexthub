@@ -391,7 +391,7 @@ export default async function PasswordStrengthCheckerPage() {
     '@context': 'https://schema.org',
     '@type': 'WebApplication',
     name: toolData.title,
-    description: toolData.description,
+    description: toolData.shortDescription,
     url,
     applicationCategory: 'SecurityApplication',
     operatingSystem: 'Any',
@@ -403,15 +403,12 @@ export default async function PasswordStrengthCheckerPage() {
   return (
     <>
       <JsonLd data={webAppSchema} />
-      <JsonLd data={webPageSchema({ title: toolData.title, description: toolData.description, url })} />
-      <ToolPageShell
-        toolSlug={toolSlug}
-        toolComponent={<PasswordStrengthCheckerTool />}
-        relatedToolsComponent={<RelatedTools currentSlug={toolSlug} />}
-        faqComponent={<FAQSection faqs={faqs} />}
-        faqJsonLdComponent={<FaqJsonLd faqs={faqs} />}
-        writeUp={writeUp}
-      />
+      <JsonLd data={webPageSchema({ name: toolData.title, description: toolData.shortDescription, url })} />
+      <ToolPageShell tool={toolData} ui={<PasswordStrengthCheckerTool />} related={<RelatedTools currentSlug={toolSlug} />}>
+        {writeUp}
+        <FAQSection items={faqs} />
+        <FaqJsonLd faqs={faqs} />
+      </ToolPageShell>
     </>
   );
 }

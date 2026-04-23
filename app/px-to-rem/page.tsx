@@ -413,7 +413,7 @@ export default async function PxToRemPage() {
     '@context': 'https://schema.org',
     '@type': 'WebApplication',
     name: toolData.title,
-    description: toolData.description,
+    description: toolData.shortDescription,
     url,
     applicationCategory: 'DeveloperApplication',
     operatingSystem: 'Any',
@@ -425,15 +425,12 @@ export default async function PxToRemPage() {
   return (
     <>
       <JsonLd data={webAppSchema} />
-      <JsonLd data={webPageSchema({ title: toolData.title, description: toolData.description, url })} />
-      <ToolPageShell
-        toolSlug={toolSlug}
-        toolComponent={<PxToRemTool />}
-        relatedToolsComponent={<RelatedTools currentSlug={toolSlug} />}
-        faqComponent={<FAQSection faqs={faqs} />}
-        faqJsonLdComponent={<FaqJsonLd faqs={faqs} />}
-        writeUp={writeUp}
-      />
+      <JsonLd data={webPageSchema({ name: toolData.title, description: toolData.shortDescription, url })} />
+      <ToolPageShell tool={toolData} ui={<PxToRemTool />} related={<RelatedTools currentSlug={toolSlug} />}>
+        {writeUp}
+        <FAQSection items={faqs} />
+        <FaqJsonLd faqs={faqs} />
+      </ToolPageShell>
     </>
   );
 }
