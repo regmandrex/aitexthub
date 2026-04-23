@@ -150,13 +150,6 @@ export async function ToolPageRenderer({ slug }: ToolPageRendererProps) {
     return notFound();
   }
 
-  const disclaimers =
-    tool.content?.disclaimers ?? [
-      'This tool processes text locally in your browser. No data is sent to external servers.',
-      'Results are provided as-is. Always review output before using in production.',
-      'This tool is for general use. Verify results match your specific requirements.',
-    ];
-
   const url = `${siteUrl}/${tool.slug}`;
   const softwareJsonLd = {
     '@context': 'https://schema.org',
@@ -205,15 +198,6 @@ export async function ToolPageRenderer({ slug }: ToolPageRendererProps) {
               />
             </>
           ) : null}
-
-          <section className="mt-10 space-y-2">
-            <h2 className="text-base font-semibold text-slate-900">Disclaimers</h2>
-            <ul className="space-y-1 text-sm text-slate-700">
-              {disclaimers.map((line, idx) => (
-                <li key={idx}>&bull; {line}</li>
-              ))}
-            </ul>
-          </section>
         </ToolPageShell>
       </div>
     </>
