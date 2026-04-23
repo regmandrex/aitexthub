@@ -16,7 +16,7 @@ export const revalidate = 86400;
 const toolSlug = 'epoch-converter';
 
 export async function generateMetadata(): Promise<Metadata> {
-  return buildToolMeta({ title: 'Epoch Converter – Unix Timestamp to Date & Time', description: 'Convert Unix timestamps to human-readable dates and convert dates back to Unix timestamps. Free epoch time converter online supporting seconds and milliseconds.', urlPath: `/${toolSlug}` });
+  return buildToolMeta(toolSlug);
 }
 
 const faqs: FaqItem[] = [
