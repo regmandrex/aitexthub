@@ -59,6 +59,7 @@ import { ChatGPTResumeHumanizerTool } from '@/components/tools/ChatGPTResumeHuma
 import { ChatGPTLinkedInRewriterTool } from '@/components/tools/ChatGPTLinkedInRewriterTool';
 import { ChatGPTPressReleasePolisherTool } from '@/components/tools/ChatGPTPressReleasePolisherTool';
 import { getToolBySlug } from '@/lib/tools/registry';
+import { getToolContent } from '@/lib/tools/content';
 import { siteUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 
@@ -161,41 +162,23 @@ export async function ToolPageRenderer({ slug }: ToolPageRendererProps) {
     url: url,
   };
 
+  const generated = getToolContent(slug);
+
   return (
     <>
       <JsonLd data={webPageSchema({ name: displayTool.title, url, description: displayTool.shortDescription })} />
       <JsonLd data={softwareJsonLd} />
       <div className="bg-[#f7f9ff]">
         <ToolPageShell tool={displayTool} ui={<UIComponent />} related={<RelatedTools currentSlug={tool.slug} />}>
-          {tool.content?.introMarkdown ? (
-            <section className="prose prose-slate mt-10 max-w-4xl">
-              {tool.content.introMarkdown.split('\n\n').map((paragraph, idx) => (
-                <p key={idx}>{paragraph}</p>
-              ))}
-            </section>
-          ) : null}
-
-          {tool.content?.faq && tool.content.faq.length > 0 ? (
+          {generated ? (
             <>
-              <section className="mt-10 space-y-4">
-                <h2 className="text-xl font-semibold text-slate-900">Frequently Asked Questions</h2>
-                <div className="space-y-3">
-                  {tool.content.faq.map((item, idx) => (
-                    <div key={idx} className="rounded-lg border border-slate-200 bg-white p-4 shadow-sm">
-                      <h3 className="text-base font-semibold text-slate-900">{item.q}</h3>
-                      <p className="mt-2 text-sm text-slate-700">{item.a}</p>
-                    </div>
-                  ))}
-                </div>
-              </section>
-              <FaqJsonLd
-                faqs={tool.content.faq.map((item) => ({
-                  category: 'General',
-                  question: item.q,
-                  answer: item.a,
-                }))}
-                name={`${displayTool.title} – FAQs`}
-              />
+              {generated.writeUp}
+              <div className="mt-10 space-y-3">
+                <h2 className="text-2xl font-semibold text-slate-900">Frequently Asked Questions</h2>
+                <p className="text-slate-700">Common questions about the {displayTool.title}.</p>
+              </div>
+              <FAQSection items={generated.faqs} />
+              <FaqJsonLd faqs={generated.faqs} name={`${displayTool.title} – FAQs`} />
             </>
           ) : null}
         </ToolPageShell>

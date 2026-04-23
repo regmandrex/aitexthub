@@ -1,5 +1,4 @@
 import { toolPages } from '@/lib/seo/registry';
-import { getToolContent } from './content';
 
 export type Tool = {
   slug: string;
@@ -267,7 +266,6 @@ function getUIKind(
 const tools: Tool[] = toolPages.map((page) => {
   const modelSlug = getModelSlug(page.slug);
   const mode = getModeSlug(page.slug, page.category);
-  const generated = getToolContent(page.slug);
 
   return {
     slug: page.slug,
@@ -282,9 +280,6 @@ const tools: Tool[] = toolPages.map((page) => {
     ui: {
       kind: getUIKind(page.slug),
     },
-    content: generated
-      ? { introMarkdown: generated.introMarkdown, faq: generated.faq }
-      : undefined,
   };
 });
 

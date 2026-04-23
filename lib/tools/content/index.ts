@@ -1,11 +1,13 @@
+import type { ReactNode } from 'react';
+import type { FaqItem } from '@/components/faqData';
 import { qrCodeReaderContent } from './qr-code-reader';
 
 export type ToolContent = {
-  introMarkdown: string;
-  faq: Array<{ q: string; a: string }>;
+  writeUp: ReactNode;
+  faqs: FaqItem[];
 };
 
-export const toolContentMap: Record<string, ToolContent> = {
+const toolContentMap: Record<string, ToolContent> = {
   'qr-code-reader': qrCodeReaderContent,
 };
 
