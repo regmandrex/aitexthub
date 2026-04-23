@@ -174,7 +174,6 @@ export async function ToolPageRenderer({ slug }: ToolPageRendererProps) {
       <JsonLd data={softwareJsonLd} />
       <div className="bg-[#f7f9ff]">
         <ToolPageShell tool={displayTool} ui={<UIComponent />} related={<RelatedTools currentSlug={tool.slug} />}>
-          {/* Registry-based intro markdown */}
           {tool.content?.introMarkdown ? (
             <section className="prose prose-slate mt-10 max-w-4xl">
               {tool.content.introMarkdown.split('\n\n').map((paragraph, idx) => (
@@ -183,7 +182,6 @@ export async function ToolPageRenderer({ slug }: ToolPageRendererProps) {
             </section>
           ) : null}
 
-          {/* Registry-based FAQs */}
           {tool.content?.faq && tool.content.faq.length > 0 ? (
             <>
               <section className="mt-10 space-y-4">
