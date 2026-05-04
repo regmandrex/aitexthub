@@ -405,7 +405,6 @@ const writeUp = (
     <p>
       Not all characters convert: the Mathematical Alphanumeric Symbols block contains only the 26 Latin letters (A-Z, a-z) and 10 digits (0-9) in each style. Numbers convert in most styles but not all. Punctuation, spaces, and special characters pass through unchanged as standard Unicode. If a specific character you need is missing from a style (some styles have gaps in the Unicode specification), the converter uses the closest available character or falls back to the standard character. Test your specific text before committing to a style for your profile.
     </p>
-  </div>
   </section>
 );
 

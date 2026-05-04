@@ -417,7 +417,6 @@ const writeUp = (
     <p>
       Anagram tradition: while not exactly reversal, the practice of rearranging letters has deep historical roots — court anagrammatists in Renaissance Europe were employed to find meaningful anagrams in names. Reversal is the most constrained form of anagram (only one specific rearrangement). Historical anagram puzzles frequently used reversal as one step. Our character reversal generates the "reversal anagram" of any word instantly.
     </p>
-  </div>
   </section>
 );
 

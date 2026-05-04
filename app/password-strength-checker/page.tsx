@@ -379,7 +379,6 @@ const writeUp = (
     <p>
       The bottom line: password security is one of the highest-return investments in personal and organizational cybersecurity. The combination of a password manager, unique strong passwords for every account, and two-factor authentication on high-value accounts eliminates the vast majority of realistic attack scenarios. Our password strength checker, built for complete privacy with all analysis happening locally in your browser, gives you the concrete data you need to understand your current password security and make informed improvements. Strong passwords are not complicated — they are long, random, and unique per account. Start with those three properties, and our checker will confirm you are on the right track. Use the built-in password generator for any new account you create, run your existing most-sensitive passwords through the strength analysis to identify weak spots, and enable two-factor authentication wherever possible — this combination of long random passwords, a password manager, and 2FA raises your security posture dramatically above the baseline and makes credential-based attacks against your accounts practically infeasible for any attacker who does not have direct physical access to your authenticated device.
     </p>
-  </div>
   </section>
 );
 

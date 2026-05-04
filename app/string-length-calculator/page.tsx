@@ -378,7 +378,6 @@ const writeUp = (
     <p>
       The tool is particularly effective as a companion tool during the writing process rather than as a final check after writing. Starting your draft with the target character or word count in view means every sentence you write is already informed by the constraint. For Twitter posts, this means natural compression from the start — you think in 280-character segments rather than writing a paragraph and then cutting. For SEO metadata, it means titles that fit within 60 characters emerge naturally from the drafting process rather than requiring awkward post-hoc trimming. For academic essays, seeing the word count climb toward a 1,000-word target in real time keeps you on track and signals when you have reached sufficient coverage of a section's topic. Open our tool alongside your writing environment and let the live metrics guide your drafting rather than constrain your editing. The sentence count, line count, and paragraph count statistics further help assess structure and readability rhythm — giving you a complete, data-informed view of your text from multiple angles simultaneously. Bookmark this free string length calculator for daily use in any workflow involving character limits, word targets, or byte-size constraints — it is the fastest and most comprehensive text measurement tool available in any browser, with no login, no upload, and no data leaving your device.
     </p>
-  </div>
   </section>
 );
 

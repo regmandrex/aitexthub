@@ -401,7 +401,6 @@ const writeUp = (
     <p>
       For linting and CI enforcement: add a Stylelint rule that disallows px units for font-size and related properties: <code>&#123; "rules": &#123; "unit-disallowed-list": [["px"], &#123; "severity": "warning", "message": "Use rem instead of px for font sizes" &#125;] &#125; &#125;</code>. Run Stylelint in CI to catch px-based font sizes before they reach production. This creates an automated safety net that enforces the accessibility standard across your entire team.
     </p>
-  </div>
   </section>
 );
 

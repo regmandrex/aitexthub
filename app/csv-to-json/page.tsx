@@ -397,7 +397,6 @@ const writeUp = (
     <p>
       Date handling: dates remain as strings after conversion. CSV has no date type and JSON has no date type — ISO 8601 date strings are the standard representation ("2026-04-18T12:00:00Z"). If your CSV contains dates in locale formats ("04/18/2026" or "18-Apr-2026"), they convert to those exact strings. Post-process to ISO format if your target requires it: in JavaScript, <code>new Date('04/18/2026').toISOString()</code> converts US date formats. Pandas handles date parsing automatically: <code>pd.read_csv('file.csv', parse_dates=['created_at'])</code> detects and parses date columns.
     </p>
-  </div>
   </section>
 );
 

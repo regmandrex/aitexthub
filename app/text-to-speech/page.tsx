@@ -360,7 +360,6 @@ const writeUp = (
     <p>
       <strong>Personalized voice adaptation</strong>: future TTS systems will adapt to individual listener preferences over time — learning your preferred speaking rate, vocabulary patterns, and even optimizing pronunciation of names and terms relevant to your field. Combined with voice cloning of the user's own voice for personal use, this personalization will make TTS feel like a natural extension of the user rather than a generic tool. Privacy-preserving personalization (running models locally without sharing data) will be a key design challenge for this next generation. These advances will make text-to-speech indispensable not just as an accessibility tool but as the primary content consumption mode for millions of people — making free, private, browser-based tools like ours increasingly important as an accessible entry point for anyone exploring TTS for the first time. Try our tool now: paste any text, pick a voice, and hear your content spoken aloud in seconds with no setup and no data leaving your device.
     </p>
-  </div>
   </section>
 );
 

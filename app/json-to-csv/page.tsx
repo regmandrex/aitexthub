@@ -382,7 +382,6 @@ const writeUp = (
     <p>
       For the most common use case — an API response you want to analyze in a spreadsheet — our JSON to CSV converter is the fastest tool available, requiring no installation, no account, and no data upload to external servers. Bookmark this page for the next time you receive a JSON API response and need to explore it in Excel or Google Sheets.
     </p>
-  </div>
   </section>
 );
 

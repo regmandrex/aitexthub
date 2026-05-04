@@ -391,7 +391,6 @@ const writeUp = (
     <p>
       Privacy is built into the design: because XML formatting uses the browser's own DOMParser and XMLSerializer, your XML never leaves your device. Sensitive configuration files containing database passwords, API keys, or internal hostnames can be formatted safely without concern about third-party data exposure. The tool is fast, reliable, and works identically in Chrome, Firefox, Safari, and Edge on any operating system. Bookmark it for the next time you receive an unreadable XML document and need to understand its structure instantly.
     </p>
-  </div>
   </section>
 );
 

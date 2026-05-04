@@ -392,7 +392,6 @@ const writeUp = (
     <p>
       <strong>Choosing the right encoding for your use case</strong>: educational content about how computers store text → use binary. Debugging binary file contents or network packets → use hexadecimal. Embedding images or files in JSON/XML → use Base64. Passing special characters in URLs → use URL encoding. Transmitting binary over email or in MIME types → use Base64. Each encoding scheme has its domain where it is the canonical choice.
     </p>
-  </div>
   </section>
 );
 

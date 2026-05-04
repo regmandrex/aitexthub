@@ -411,7 +411,6 @@ const writeUp = (
     <p>
       Reading the table: to encode "Hello", find H→U, e→r, l→y, l→y, o→b → "Uryyb". To decode "Uryyb", apply the same table: U→H, r→e, y→l, y→l, b→o → "Hello". The identical forward and reverse operation is what makes ROT13 its own inverse. All numbers, spaces, punctuation, and characters outside A-Z and a-z remain unchanged through ROT13 encoding. Our online tool applies this mapping instantly to any length of text you paste into the input field.
     </p>
-  </div>
   </section>
 );
 

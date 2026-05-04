@@ -403,7 +403,6 @@ const writeUp = (
     <p>
       <strong>Data cleaning with ASCII filters</strong>: data pipelines that process web-scraped or user-generated text often apply ASCII filters to detect anomalies. A document where fewer than 80% of characters are ASCII printable (32–126) may indicate a binary file misidentified as text, a corrupted encoding, or content in a script the pipeline was not designed for. An ASCII coverage filter is a simple, fast heuristic for basic text quality control. Our ASCII converter helps develop intuition for what ASCII coverage means in practice — paste various text samples and observe which characters fall outside the ASCII printable range.
     </p>
-  </div>
   </section>
 );
 

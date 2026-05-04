@@ -378,7 +378,6 @@ const writeUp = (
     <p>
       Ultimately, the goal is always the same: convert an opaque base64 string into a viewable image as efficiently as possible. Whether you are a developer debugging an AI image generation API, a data analyst inspecting database records, an email developer troubleshooting a newsletter template, or a student learning about encoding — our free online base64 to image decoder provides the fastest path from encoded string to visible image, with complete privacy and zero installation required.
     </p>
-  </div>
   </section>
 );
 

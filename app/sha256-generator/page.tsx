@@ -413,7 +413,6 @@ const writeUp = (
     <p>
       For production implementations: always implement SHA-256 in your own application code using your language's standard library. Use our tool for quick verification, testing implementations against known outputs, and learning SHA-256 behavior. The tool handles any text length, supports Unicode input (hashing the UTF-8 encoding of your text), and produces lowercase hexadecimal output — the standard format for SHA-256 hashes across all programming ecosystems. Bookmark this SHA-256 generator as your go-to tool for cryptographic hash generation, verification, and testing in any browser, on any device, with no installation required.
     </p>
-  </div>
   </section>
 );
 

@@ -35,7 +35,9 @@
       "Read(//c/Users/user/Desktop/project/gptcleanuptools/app/**)",
       "PowerShell(Get-Process -Name \"node\" -ErrorAction SilentlyContinue)",
       "PowerShell(cd \"c:\\\\Users\\\\user\\\\Desktop\\\\project\\\\gptcleanuptools\"; $lines = git status --short; Write-Host \"Total: $\\($lines.Count\\) files\")",
-      "Bash(measure-object -line)"
+      "Bash(measure-object -line)",
+      "Bash(git -c http.postBuffer=524288000 push origin main)",
+      "Bash(grep -n \"^const articleContent\\\\|^const writeUp\\\\|^const content\\\\|=\\\\s*\\(\\\\s*$\\\\|<div className\" \"c:/Users/user/Desktop/project/gptcleanuptools/app/ascii-converter/page.tsx\")"
     ],
     "additionalDirectories": [
       "\\tmp"
