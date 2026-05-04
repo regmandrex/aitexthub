@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { JsonLd } from '@/components/JsonLd';
 import FAQSection from '@/components/FAQSection';
@@ -14,7 +14,7 @@ import { getToolBySlug } from '@/lib/tools/registry';
 
 
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 
 const toolSlug = 'chatgpt-readability-checker';
 
@@ -522,3 +522,4 @@ export default async function ChatGPTReadabilityCheckerPage() {
     </>
   );
 }
+

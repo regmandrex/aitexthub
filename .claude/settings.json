@@ -1,7 +1,44 @@
 {
   "permissions": {
     "allow": [
-      "Bash(NODE_OPTIONS=--max-old-space-size=8192 npx next build)"
+      "Bash(NODE_OPTIONS=--max-old-space-size=8192 npx next build)",
+      "Bash(cross-env NODE_OPTIONS=\"--max-old-space-size=12288\" npx next build)",
+      "Bash(node_modules/.bin/cross-env NODE_OPTIONS=\"--max-old-space-size=12288\" node_modules/.bin/next build)",
+      "Bash(node -e ' *)",
+      "Bash(read slug *)",
+      "Bash([ ! -d \"c:/Users/user/Desktop/project/gptcleanuptools/app/$slug\" ])",
+      "Bash(grep -v \"^$\")",
+      "Bash(node_modules/.bin/tsc --noEmit --skipLibCheck)",
+      "Bash(node -e \"const p = require\\('./node_modules/next/package.json'\\); console.log\\(p.version\\)\")",
+      "WebFetch(domain:www.gptcleanup.com)",
+      "Bash(node /c/Users/user/Desktop/project/gptcleanuptools/scripts/compare.mjs)",
+      "Bash(node scripts/compare-slugs.mjs)",
+      "Bash(node scripts/patch-gen-script.mjs)",
+      "Bash(node --input-type=module --eval ' *)",
+      "Bash(node scripts/gen-content-files.mjs)",
+      "Bash(awk -F'\\(' '{print $1}')",
+      "Bash(node scripts/fix-apostrophes.mjs)",
+      "Bash(node scripts/fix-broken-strings.mjs)",
+      "Bash(grep -c \"slug:\" lib/seo/registry.ts)",
+      "Bash(grep -c \"'slug'\" lib/seo/registry.ts)",
+      "Bash(node scripts/fix-lang-files.mjs)",
+      "Bash(Get-Content \"c:\\\\Users\\\\user\\\\Desktop\\\\project\\\\gptcleanuptools\\\\lib\\\\tools\\\\content\\\\adobe-firefly-image-watermark-detector.tsx\")",
+      "Bash(Measure-Object -Line -Word -Character)",
+      "Bash(Select-Object Words, Lines)",
+      "PowerShell($content = Get-Content \"c:\\\\Users\\\\user\\\\Desktop\\\\project\\\\gptcleanuptools\\\\lib\\\\tools\\\\content\\\\adobe-firefly-image-watermark-detector.tsx\" -Raw; $words = \\($content -split '\\\\s+'\\).Count; $lines = \\($content -split '\\\\n'\\).Count; \"Words: $words, Lines: $lines\")",
+      "PowerShell($files = @\\(\"synthid-image-watermark-remover.tsx\", \"gemini-image-watermark-remover.tsx\"\\); foreach \\($f in $files\\) { $c = Get-Content \"c:\\\\Users\\\\user\\\\Desktop\\\\project\\\\gptcleanuptools\\\\lib\\\\tools\\\\content\\\\$f\" -Raw; $w = \\($c -split '\\\\s+'\\).Count; \"$f`: $w\" })",
+      "PowerShell($files = @\\(\"heygen-video-watermark-remover.tsx\", \"veo-video-watermark-detector.tsx\", \"sora-image-watermark-detector.tsx\", \"sora-video-watermark-detector.tsx\", \"runway-video-watermark-remover.tsx\", \"nano-banana-image-watermark-remover.tsx\", \"sora-video-watermark-remover.tsx\", \"stable-diffusion-watermark-remover.tsx\", \"veo-video-watermark-remover.tsx\", \"synthid-video-watermark-remover.tsx\", \"gemini-image-watermark-remover.tsx\", \"synthid-image-watermark-remover.tsx\"\\); foreach \\($f in $files\\) { $c = Get-Content \"c:\\\\Users\\\\user\\\\Desktop\\\\project\\\\gptcleanuptools\\\\lib\\\\tools\\\\content\\\\$f\" -Raw; $w = \\($c -split '\\\\s+'\\).Count; \"$f`: $w\" })",
+      "PowerShell($files = @\\(\"roleplay-humanizer.tsx\", \"wattpad-story-humanizer.tsx\", \"sermon-humanizer.tsx\"\\); foreach \\($f in $files\\) { $c = Get-Content \"c:\\\\Users\\\\user\\\\Desktop\\\\project\\\\gptcleanuptools\\\\lib\\\\tools\\\\content\\\\$f\" -Raw; $w = \\($c -split '\\\\s+'\\).Count; \"$f`: $w\" })",
+      "PowerShell($c = Get-Content \"c:\\\\Users\\\\user\\\\Desktop\\\\project\\\\gptcleanuptools\\\\lib\\\\tools\\\\content\\\\imagen-image-watermark-remover.tsx\" -Raw; \\($c -split '\\\\s+'\\).Count)",
+      "PowerShell($files = @\\(\"script-humanizer.tsx\", \"sermon-writer.tsx\", \"lyrics-humanizer.tsx\", \"wattpad-writer.tsx\", \"screenplay-rewriter.tsx\", \"ebook-humanizer.tsx\", \"quora-answer-humanizer.tsx\", \"roleplay-reply-generator.tsx\", \"newsletter-humanizer.tsx\", \"reddit-comment-generator.tsx\", \"discord-message-humanizer.tsx\", \"dnd-text-generator.tsx\"\\); foreach \\($f in $files\\) { $c = Get-Content \"c:\\\\Users\\\\user\\\\Desktop\\\\project\\\\gptcleanuptools\\\\lib\\\\tools\\\\content\\\\$f\" -Raw; $w = \\($c -split '\\\\s+'\\).Count; \"$f`: $w\" })",
+      "Bash(powershell -Command ' *)",
+      "Read(//c/Users/user/Desktop/project/gptcleanuptools/app/**)",
+      "PowerShell(Get-Process -Name \"node\" -ErrorAction SilentlyContinue)",
+      "PowerShell(cd \"c:\\\\Users\\\\user\\\\Desktop\\\\project\\\\gptcleanuptools\"; $lines = git status --short; Write-Host \"Total: $\\($lines.Count\\) files\")",
+      "Bash(measure-object -line)"
+    ],
+    "additionalDirectories": [
+      "\\tmp"
     ]
   }
 }

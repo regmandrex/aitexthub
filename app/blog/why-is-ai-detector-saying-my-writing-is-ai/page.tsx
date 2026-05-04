@@ -1,4 +1,4 @@
-import Link from 'next/link';
+﻿import Link from 'next/link';
 import { buildArticleMeta } from '@/lib/seo-meta';
 import { JsonLd } from '@/components/JsonLd';
 import { blogPostingSchema } from '@/lib/schema/blog';
@@ -11,7 +11,7 @@ const headline = 'Why Is the AI Detector Saying My Writing Is AI? The Complete G
 const description =
   'AI detectors flag human writing for predictable reasons: formal style, invisible characters, non-native English, and consistent structure. Here&apos;s how to fix each one.';
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({ title, description, urlPath });
@@ -282,3 +282,4 @@ export default function WhyIsAiDetectorSayingMyWritingIsAiPage() {
     </article>
   );
 }
+

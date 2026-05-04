@@ -1,4 +1,4 @@
-import Link from 'next/link';
+﻿import Link from 'next/link';
 import dynamic from 'next/dynamic';
 import FaqJsonLd from '../components/FaqJsonLd';
 import { faqItems } from '../components/faqData';
@@ -28,7 +28,7 @@ export async function generateMetadata() {
 }
 
 // Cache at edge for 24h to reduce Fast Origin Transfer
-export const revalidate = 86400;
+export const revalidate = 604800;
 
 const newFaqItems = [
   {
@@ -384,3 +384,4 @@ export default async function HomePage() {
     </div>
   );
 }
+

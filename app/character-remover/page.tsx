@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { JsonLd } from '@/components/JsonLd';
 import FAQSection from '@/components/FAQSection';
@@ -13,7 +13,7 @@ import { siteUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 
 const toolSlug = 'character-remover';
 
@@ -167,7 +167,7 @@ const faqs: FaqItem[] = [
 ];
 
 const article = (
-  <section className="mt-10 prose prose-slate max-w-none text-sm prose-headings:font-semibold prose-headings:text-slate-900 prose-p:text-slate-700 prose-li:text-slate-700">
+  <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10"><div className="prose prose-slate max-w-none">
     <h2>Character Remover — Remove Unwanted Characters from Text Online</h2>
     <p>A <strong>character remover</strong> is a tool that takes raw text from any source and strips out the characters that do not belong — invisible Unicode artifacts, markdown formatting symbols, non-standard punctuation, and other unwanted code points — while preserving every visible word and sentence. Whether you are cleaning AI-generated content before publishing, preparing copy-pasted text for a new editor, or sanitizing data for a spreadsheet or database, a character remover gives you clean, consistent output in seconds.</p>
     <p>GPTCLEANUP AI is a free <strong>character remover</strong> with no account, no upload, and no character limits. Paste your text, click Clean Text, and copy the clean result. The tool handles all categories of unwanted characters in a single pass — invisible Unicode, markdown syntax, curly quotes, em dashes, and spacing artifacts from AI tools, word processors, PDFs, and websites.</p>
@@ -251,6 +251,7 @@ const article = (
 
     <h2>Free Character Remover — No Account, No Limits</h2>
     <p>GPTCLEANUP AI is a free <strong>character remover</strong> with no account required, no character limits, and no subscription. All processing happens in your browser using JavaScript — your text is never uploaded to any server, never logged, and never stored. You can use it for as much text as you need, as often as you need, for any content including confidential business documents, legal drafts, healthcare records, client deliverables, and source code. The character remover handles all categories of unwanted characters — invisible Unicode, markdown, typographic special characters — in a single pass. Paste your text, click Clean Text, and copy the clean result in seconds.</p>
+  </div>
   </section>
 );
 
@@ -331,3 +332,4 @@ export default async function CharacterRemoverPage() {
     </div>
   );
 }
+

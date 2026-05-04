@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { JsonLd } from '@/components/JsonLd';
 import FAQSection from '@/components/FAQSection';
@@ -12,7 +12,7 @@ import { getToolBySlug } from '@/lib/tools/registry';
 import { siteUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 const toolSlug = 'unicode-text-converter';
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -405,6 +405,7 @@ const writeUp = (
     <p>
       Not all characters convert: the Mathematical Alphanumeric Symbols block contains only the 26 Latin letters (A-Z, a-z) and 10 digits (0-9) in each style. Numbers convert in most styles but not all. Punctuation, spaces, and special characters pass through unchanged as standard Unicode. If a specific character you need is missing from a style (some styles have gaps in the Unicode specification), the converter uses the closest available character or falls back to the standard character. Test your specific text before committing to a style for your profile.
     </p>
+  </div>
   </section>
 );
 
@@ -438,3 +439,4 @@ export default async function UnicodeTextConverterPage() {
     </>
   );
 }
+

@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { JsonLd } from '@/components/JsonLd';
 import FAQSection from '@/components/FAQSection';
@@ -12,7 +12,7 @@ import { getToolBySlug } from '@/lib/tools/registry';
 import { siteUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 const toolSlug = 'text-to-html';
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -405,6 +405,7 @@ const writeUp = (
     <p>
       Table-based layout for Outlook compatibility: Microsoft Outlook (desktop versions) uses the Word HTML rendering engine, which has poor CSS support. For emails that must display correctly in Outlook, the content wrapper should use table-based layout: <code>&lt;table width="600" cellpadding="0" cellspacing="0" border="0"&gt;&lt;tr&gt;&lt;td&gt;YOUR HTML CONTENT&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;</code>. Place your converted HTML content within the td cell. This single-column structure renders correctly across all email clients including Outlook 2007, 2010, 2013, 2016, 2019, and 365.
     </p>
+  </div>
   </section>
 );
 
@@ -438,3 +439,4 @@ export default async function TextToHtmlPage() {
     </>
   );
 }
+

@@ -1,4 +1,4 @@
-import type { FaqItem } from '@/components/faqData';
+﻿import type { FaqItem } from '@/components/faqData';
 import WatermarkDetectorPage from '@/components/tools/WatermarkDetectorPage';
 import { buildMeta } from '@/lib/seo-meta';
 import Link from 'next/link';
@@ -9,7 +9,7 @@ const modelSlug = 'chatgpt';
 const faqIntro =
   'This FAQ explains how the ChatGPT Watermark Detector on gptcleanuptools.com works, what it analyzes, and how its results should be interpreted. The tool performs independent, text-only analysis and does not connect to or interact with ChatGPT or OpenAI systems.';
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 
 const faqs: FaqItem[] = [
   {
@@ -546,4 +546,5 @@ export default function ChatgptWatermarkDetectorPage() {
     />
   );
 }
+
 

@@ -1,4 +1,4 @@
-import Link from 'next/link';
+﻿import Link from 'next/link';
 import { buildArticleMeta } from '@/lib/seo-meta';
 import { JsonLd } from '@/components/JsonLd';
 import { blogPostingSchema } from '@/lib/schema/blog';
@@ -11,7 +11,7 @@ const headline = 'How to Clean ChatGPT Text for Emails and Newsletters (Delivera
 const description =
   'A practical workflow to remove invisible Unicode, normalize whitespace, and prevent broken rendering and spam triggers when using AI text in email tools.';
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({
@@ -243,4 +243,5 @@ export default function CleanChatGPTTextForEmailsAndNewslettersPage() {
     </article>
   );
 }
+
 

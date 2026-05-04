@@ -1,10 +1,10 @@
-import { JsonLd } from '@/components/JsonLd';
+﻿import { JsonLd } from '@/components/JsonLd';
 import AdSenseSlot from '@/components/ads/AdSenseSlot';
 import BelowToolAd from '@/components/ads/BelowToolAd';
 import { siteUrl } from '@/lib/seo/url';
 import { SymbolGrid } from './SymbolGrid';
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 
 const faqs = [
   { question: 'How do I type an em dash?', answer: 'The easiest way to type an em dash is to copy it from this page using the Copy button next to the em dash character (—). Alternatively: on Mac, press Option+Shift+- (minus). On Windows, hold Alt and type 0151 on the numeric keypad (Alt+0151). In Microsoft Word, type two hyphens between words and Word will auto-convert to an em dash. In Google Docs, type -- between words and it auto-converts. For HTML, use the entity &mdash; or the Unicode &#8212;.' },
@@ -31,10 +31,14 @@ const faqs = [
   { question: 'Why does AI-generated text contain em dashes and curly quotes?', answer: 'AI models like ChatGPT, Claude, and Gemini are trained on professionally typeset text that uses proper typographic punctuation — em dashes, curly quotes, ellipses — rather than the basic ASCII substitutes (hyphens, straight quotes, three periods). As a result, AI output contains these typographic characters by default. While typographically correct, these characters can cause issues in code, CSV files, some CMS platforms, and any system expecting plain ASCII text. The Format Remover on this site converts all typographic punctuation (em dashes, curly quotes, ellipses) to their plain ASCII equivalents in one click.' },
   { question: 'How do I remove em dashes from text?', answer: 'To remove or replace em dashes from text, use the Format Remover on this site. Paste your text, click Clean Text, and the tool converts all em dashes (—) to standard hyphens (-), converts en dashes (–) to hyphens, converts curly quotes to straight quotes, and normalizes all other typographic special characters to plain ASCII equivalents. This is especially useful for AI-generated content that contains typographic punctuation you need in plain text format.' },
   { question: 'What special characters should I know for writing?', answer: 'The most useful special characters for writing are: em dash (—) for strong pauses and parentheticals, en dash (–) for ranges and compounds, ellipsis (…) for omissions and trailing thought, left/right double quotes (" ") for proper quotation marks, left/right single quotes (\u2018 \u2019) for apostrophes and single quotes, bullet point (•) for lists, copyright symbol (©), trademark symbol (™), registered trademark (®), and degree symbol (°). All of these are available on this page with one-click copy, and most have HTML entity equivalents for web use.' },
+  { question: 'What is emdash and how is it different from em dash?', answer: 'Emdash is simply an alternative spelling of em dash — both refer to the same punctuation character (—, Unicode U+2014). The spaced form "em dash" is the formally correct spelling used by style guides (AP, Chicago, MLA, APA). Emdash as one word is a common informal variant used in searches and coding contexts. Whether you spell it emdash or em dash, the character is identical. Click Copy next to Em Dash on this page to copy the emdash character (—) to your clipboard.' },
+  { question: 'What is the emdash copy and paste character and its Unicode?', answer: 'The emdash copy and paste character is — (Unicode U+2014). In HTML it is &mdash; or &#8212;. In CSS content property it is "4". In JavaScript it is —. In Python it can be written as chr(0x2014). The emdash is the longest of the three main dash characters, used for strong pauses, parenthetical remarks, and interruptions in prose. Click Copy next to Em Dash above to copy it instantly.' },
+  { question: 'How do I insert an em dash in Google Docs?', answer: 'In Google Docs, type a word, two hyphens (--), then another word and press Space — AutoCorrect converts the -- to an em dash (—) automatically. Alternatively, go to Insert > Special Characters, search for em dash, and click to insert. You can also copy the em dash from this page and paste it directly. On Mac, the keyboard shortcut is Option+Shift+- (minus). On Windows, Alt+0151 on the numeric keypad works in most browsers.' },
+  { question: 'What is the em dash symbol in different fonts?', answer: 'The em dash symbol (—) is always Unicode U+2014 regardless of font. Its visual appearance varies — in serif fonts like Times New Roman it has different weight than in sans-serif fonts like Arial, and in monospace code fonts it may appear similar in width to an en dash. The character is always U+2014. Copy it from this page and it renders correctly in whichever font your document or application uses.' },
 ];
 
 const article = (
-  <section className="mt-10 prose prose-slate max-w-none text-sm prose-headings:font-semibold prose-headings:text-slate-900 prose-p:text-slate-700 prose-li:text-slate-700">
+  <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10"><div className="prose prose-slate max-w-none">
     <h2>Em Dash Copy and Paste — The Complete Guide to Dashes and Special Symbols</h2>
     <p>
       The <strong>em dash</strong> (—) is one of the most useful and most misunderstood punctuation marks in the English language. Named for its width — approximately equal to the width of the letter M in a given typeface — the <strong>em dash</strong> is used to create a strong pause in a sentence, set off a parenthetical remark, or indicate an interruption in dialogue. Despite its usefulness, the <strong>em dash</strong> is absent from standard keyboard layouts, which is why <strong>em dash copy and paste</strong> is such a common need for writers, editors, students, and content creators.
@@ -211,6 +215,7 @@ const article = (
     <p>
       This em dash copy and paste tool is completely free with no account required and no usage limits. Copy any character from the panel above as many times as you need. Bookmark this page for instant access to em dashes, en dashes, ellipses, and all other special punctuation symbols whenever you need them. All characters are the correct Unicode code points — not approximations — so what you copy is what publishers, editors, and style guides expect to see in professionally typeset documents.
     </p>
+  </div>
   </section>
 );
 
@@ -294,3 +299,4 @@ export async function generateMetadata() {
     },
   };
 }
+

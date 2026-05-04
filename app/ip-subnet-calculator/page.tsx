@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { JsonLd } from '@/components/JsonLd';
 import FAQSection from '@/components/FAQSection';
@@ -12,7 +12,7 @@ import { getToolBySlug } from '@/lib/tools/registry';
 import { siteUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 const toolSlug = 'ip-subnet-calculator';
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -376,6 +376,7 @@ const writeUp = (
     <p>
       <strong>DHCP scope mismatch</strong>: DHCP servers assign addresses from a configured scope that must align with the subnet. A DHCP scope of 192.168.1.100-192.168.1.200 on a /24 subnet with gateway 192.168.1.1 is correctly aligned. But if the subnet was later changed to /23 to accommodate more hosts, the DHCP scope and gateway settings also need updating — failing to do so results in some dynamically-assigned devices having mismatched subnet masks compared to statically-configured devices, causing within-subnet communication failures between static and dynamic hosts. Use our IP subnet calculator before and after any subnet resize to confirm the network address, broadcast address, and full host range for both the old and new prefix lengths — this dual-check prevents scope mismatches and ensures your DHCP, gateway, and firewall configurations are all updated to reflect the new subnet boundary before you make the change in production.
     </p>
+  </div>
   </section>
 );
 
@@ -409,3 +410,4 @@ export default async function IpSubnetCalculatorPage() {
     </>
   );
 }
+

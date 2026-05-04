@@ -1,4 +1,4 @@
-import type { FaqItem } from '@/components/faqData';
+﻿import type { FaqItem } from '@/components/faqData';
 import WatermarkDetectorPage from '@/components/tools/WatermarkDetectorPage';
 import { buildMeta } from '@/lib/seo-meta';
 
@@ -7,7 +7,7 @@ const modelSlug = 'llama';
 const faqIntro =
   'This FAQ explains how the LLaMA (Meta AI) Watermark Detector on gptcleanuptools.com works, what kinds of text characteristics it inspects, and how to interpret results responsibly. The tool performs independent, text-only analysis and does not connect to or interact with Meta or LLaMA systems.';
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 
 const faqs: FaqItem[] = [
   {
@@ -404,4 +404,5 @@ export default function LlamaWatermarkDetectorPage() {
     />
   );
 }
+
 

@@ -1,4 +1,4 @@
-import Link from 'next/link';
+﻿import Link from 'next/link';
 import { buildArticleMeta } from '@/lib/seo-meta';
 import { JsonLd } from '@/components/JsonLd';
 import { blogPostingSchema } from '@/lib/schema/blog';
@@ -11,7 +11,7 @@ const headline = 'ChatGPT Watermark Remover: What It Is and How It Works';
 const description =
   'A ChatGPT watermark remover strips invisible Unicode characters and normalizes AI text artifacts. Here is what it removes, how it works, and when to use it.';
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({ title, description, urlPath });
@@ -288,3 +288,4 @@ export default function ChatGptWatermarkRemoverWhatItIsPage() {
     </article>
   );
 }
+

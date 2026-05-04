@@ -1,4 +1,4 @@
-import Link from 'next/link';
+﻿import Link from 'next/link';
 import { buildArticleMeta } from '@/lib/seo-meta';
 import { JsonLd } from '@/components/JsonLd';
 import { blogPostingSchema } from '@/lib/schema/blog';
@@ -11,7 +11,7 @@ const headline = 'How to Remove ChatGPT Watermarks from Word and Pages Documents
 const description =
   'Word and Pages documents are particularly susceptible to ChatGPT watermark artifacts. This guide covers the step-by-step workflow to clean AI artifacts from both applications.';
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({ title, description, urlPath });
@@ -247,3 +247,4 @@ export default function HowToRemoveChatGptWatermarksFromWordAndPagesPage() {
     </article>
   );
 }
+

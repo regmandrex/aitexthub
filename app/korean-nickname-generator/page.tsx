@@ -1,4 +1,4 @@
-import FAQSection from '@/components/FAQSection';
+﻿import FAQSection from '@/components/FAQSection';
 import AdSenseSlot from '@/components/ads/AdSenseSlot';
 import BelowToolAd from '@/components/ads/BelowToolAd';
 import { JsonLd } from '@/components/JsonLd';
@@ -14,7 +14,7 @@ const title = '별명 짓기 | 닉네임 추천 생성기';
 const description =
   '이름과 특징을 입력하면 20개의 닉네임 추천을 바로 보여주는 닉네임 생성기 도구입니다. 귀여운·멋있는·재미있는·감성적인·짧은·영어닉·한글닉까지 로컬에서 규칙 기반으로 생성합니다.';
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildMeta({
@@ -271,3 +271,4 @@ export default function NicknamePage() {
     </div>
   );
 }
+

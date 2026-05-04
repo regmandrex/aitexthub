@@ -1,4 +1,4 @@
-import Link from 'next/link';
+﻿import Link from 'next/link';
 import { buildArticleMeta } from '@/lib/seo-meta';
 import { JsonLd } from '@/components/JsonLd';
 import { blogPostingSchema } from '@/lib/schema/blog';
@@ -11,7 +11,7 @@ const headline = 'How to Remove ChatGPT Watermarks from Word Documents (Step-by-
 const description =
   'Step-by-step guide to removing ChatGPT watermarks from Word documents: specific characters to find and replace, tool workflow, and verification steps.';
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({ title, description, urlPath });
@@ -240,3 +240,4 @@ export default function HowToRemoveChatGptWatermarksFromWordWithScreenshotsPage(
     </article>
   );
 }
+

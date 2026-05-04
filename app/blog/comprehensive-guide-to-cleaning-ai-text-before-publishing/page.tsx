@@ -1,4 +1,4 @@
-import Link from 'next/link';
+﻿import Link from 'next/link';
 import { buildArticleMeta } from '@/lib/seo-meta';
 import { JsonLd } from '@/components/JsonLd';
 import { blogPostingSchema } from '@/lib/schema/blog';
@@ -11,7 +11,7 @@ const headline = 'Comprehensive Guide to Cleaning AI Text Before Publishing';
 const description =
   'A complete 2026 workflow to sanitize AI text: remove invisible Unicode, normalize whitespace, rebuild structure, and publish SEO-safe content.';
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({
@@ -288,4 +288,5 @@ export default function ComprehensiveGuideCleaningAITextPage() {
     </article>
   );
 }
+
 

@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { JsonLd } from '@/components/JsonLd';
 import FAQSection from '@/components/FAQSection';
@@ -13,7 +13,7 @@ import { siteUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 
 const toolSlug = 'paragraph-space-remover';
 
@@ -152,7 +152,7 @@ const faqs: FaqItem[] = [
 ];
 
 const article = (
-  <section className="mt-10 prose prose-slate max-w-none text-sm prose-headings:font-semibold prose-headings:text-slate-900 prose-p:text-slate-700 prose-li:text-slate-700">
+  <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10"><div className="prose prose-slate max-w-none">
     <h2>Paragraph Space Remover — Fix Extra Space Between Paragraphs Online Free</h2>
     <p>A <strong>paragraph space remover</strong> solves one of the most common formatting problems that content creators, writers, and developers face when working with AI-generated content, PDF exports, and copy-pasted text: excessive blank lines between paragraphs. When you paste text from ChatGPT, Claude, Google Docs, or a PDF, the paragraph spacing from the source document often translates into two, three, or more blank lines between every paragraph in the pasted result. A <strong>paragraph space remover</strong> collapses all of that excessive spacing to a clean, consistent single blank line between paragraphs while preserving your document structure.</p>
     <p>GPTCLEANUP AI is a free <strong>paragraph space remover</strong> that runs in your browser with no account required. Paste your text with uneven paragraph spacing, click Clean Text, and copy the clean, evenly-spaced result in seconds. Use it to remove space between paragraphs from AI output, Word documents, PDF exports, Google Docs copies, and any other source with excessive paragraph spacing.</p>
@@ -226,6 +226,7 @@ const article = (
 
     <h2>Free Paragraph Space Remover — No Account, No Limits</h2>
     <p>GPTCLEANUP AI is a free <strong>paragraph space remover</strong> with no account required, no character limits, and no subscription. All processing happens in your browser — your text is never uploaded, stored, or logged. Whether you are fixing paragraph spacing in a single-paragraph AI response or a 10,000-word document, the tool handles it instantly and completely free. Paste your text, click Clean Text, copy the clean result with normalized paragraph spacing. Bookmark this page as your standard first step for any text with excessive blank lines between paragraphs.</p>
+  </div>
   </section>
 );
 
@@ -306,3 +307,4 @@ export default async function ParagraphSpaceRemoverPage() {
     </div>
   );
 }
+

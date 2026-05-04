@@ -1,7 +1,7 @@
-import { buildMeta } from '@/lib/seo-meta';
+﻿import { buildMeta } from '@/lib/seo-meta';
 import type { Metadata } from 'next';
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildMeta({
@@ -103,3 +103,4 @@ export default function DisclaimerPage() {
     </article>
   );
 }
+

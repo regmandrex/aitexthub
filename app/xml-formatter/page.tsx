@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { JsonLd } from '@/components/JsonLd';
 import FAQSection from '@/components/FAQSection';
@@ -12,7 +12,7 @@ import { getToolBySlug } from '@/lib/tools/registry';
 import { siteUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 const toolSlug = 'xml-formatter';
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -391,6 +391,7 @@ const writeUp = (
     <p>
       Privacy is built into the design: because XML formatting uses the browser's own DOMParser and XMLSerializer, your XML never leaves your device. Sensitive configuration files containing database passwords, API keys, or internal hostnames can be formatted safely without concern about third-party data exposure. The tool is fast, reliable, and works identically in Chrome, Firefox, Safari, and Edge on any operating system. Bookmark it for the next time you receive an unreadable XML document and need to understand its structure instantly.
     </p>
+  </div>
   </section>
 );
 
@@ -424,3 +425,4 @@ export default async function XmlFormatterPage() {
     </>
   );
 }
+

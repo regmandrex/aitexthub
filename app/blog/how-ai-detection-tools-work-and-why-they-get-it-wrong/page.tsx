@@ -1,4 +1,4 @@
-import Link from 'next/link';
+﻿import Link from 'next/link';
 import { buildArticleMeta } from '@/lib/seo-meta';
 import { JsonLd } from '@/components/JsonLd';
 import { blogPostingSchema } from '@/lib/schema/blog';
@@ -11,7 +11,7 @@ const headline = 'How AI Detection Tools Work (And Why They Often Get It Wrong)'
 const description =
   'AI detection tools use perplexity, burstiness, and classifiers to identify AI text. This guide explains their methodology, failure modes, and what you should actually trust.';
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({ title, description, urlPath });
@@ -281,3 +281,4 @@ export default function HowAiDetectionToolsWorkAndWhyTheyGetItWrongPage() {
     </article>
   );
 }
+

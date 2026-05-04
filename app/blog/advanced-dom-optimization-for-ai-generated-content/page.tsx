@@ -1,4 +1,4 @@
-import Link from 'next/link';
+﻿import Link from 'next/link';
 import { buildArticleMeta } from '@/lib/seo-meta';
 import { JsonLd } from '@/components/JsonLd';
 import { blogPostingSchema } from '@/lib/schema/blog';
@@ -11,7 +11,7 @@ const headline = 'Advanced DOM Optimization for AI-Generated Content (Reduce Blo
 const description =
   'Learn how AI-generated text can bloat the DOM, hurt LCP/CLS/INP, and how to reduce node count and layout work without sacrificing SEO.';
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({
@@ -252,4 +252,5 @@ export default function AdvancedDomOptimizationAiContentPage() {
     </article>
   );
 }
+
 

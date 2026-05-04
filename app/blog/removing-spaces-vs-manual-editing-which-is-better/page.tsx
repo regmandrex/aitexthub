@@ -1,4 +1,4 @@
-import Link from 'next/link';
+﻿import Link from 'next/link';
 import { buildArticleMeta } from '@/lib/seo-meta';
 import { JsonLd } from '@/components/JsonLd';
 import { blogPostingSchema } from '@/lib/schema/blog';
@@ -11,7 +11,7 @@ const headline = 'Removing Spaces vs. Manual Editing: Which is Better?';
 const description =
   'Compare automated space removal tools with manual editing to find the most efficient approach for your workflow.';
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({
@@ -181,3 +181,4 @@ export default function RemovingSpacesVsManualEditingWhichIsBetterPage() {
     </article>
   );
 }
+

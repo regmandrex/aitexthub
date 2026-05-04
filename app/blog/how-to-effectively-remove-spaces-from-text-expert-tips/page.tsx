@@ -1,4 +1,4 @@
-import Link from 'next/link';
+﻿import Link from 'next/link';
 import { buildArticleMeta } from '@/lib/seo-meta';
 import { JsonLd } from '@/components/JsonLd';
 import { blogPostingSchema } from '@/lib/schema/blog';
@@ -11,7 +11,7 @@ const headline = 'How to Effectively Remove Spaces from Text: Expert Tips';
 const description =
   'Professional advice from content creators and developers on optimizing your text cleaning workflow.';
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({
@@ -193,3 +193,4 @@ export default function HowToEffectivelyRemoveSpacesFromTextExpertTipsPage() {
     </article>
   );
 }
+

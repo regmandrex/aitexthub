@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "dev": "cross-env NODE_OPTIONS=--max-old-space-size=8192 next dev --turbo",
-    "build": "cross-env NODE_OPTIONS=--max-old-space-size=8192 next build",
+    "build": "cross-env NODE_OPTIONS=--max-old-space-size=16384 next build --webpack",
     "start": "next start",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
@@ -18,6 +18,8 @@
     "check-words": "node scripts/audit-tool-pages.mjs"
   },
   "dependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "bcryptjs": "^3.0.3",
     "diff": "^9.0.0",
     "exifr": "^7.1.3",
     "figlet": "^1.11.0",

@@ -1,4 +1,4 @@
-import Link from 'next/link';
+﻿import Link from 'next/link';
 import { buildArticleMeta } from '@/lib/seo-meta';
 import { JsonLd } from '@/components/JsonLd';
 import { blogPostingSchema } from '@/lib/schema/blog';
@@ -12,7 +12,7 @@ const headline =
 const description =
   'Step-by-step guide to cleaning text online using space remover tools. Perfect for documents, coding, and content creation.';
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({
@@ -187,3 +187,4 @@ export default function HowToRemoveExtraSpacesFromTextOnlinePage() {
     </article>
   );
 }
+

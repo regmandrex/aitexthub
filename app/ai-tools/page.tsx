@@ -1,9 +1,9 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import { getAllTools } from '@/lib/tools/registry';
 import { buildMeta } from '@/lib/seo-meta';
 import SearchableToolsList from '@/components/SearchableToolsList';
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildMeta({
@@ -31,3 +31,4 @@ export default async function AIToolsPage() {
     </div>
   );
 }
+

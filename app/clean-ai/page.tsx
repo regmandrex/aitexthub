@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { JsonLd } from '@/components/JsonLd';
 import FAQSection from '@/components/FAQSection';
@@ -13,7 +13,7 @@ import { siteUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 
 const toolSlug = 'clean-ai';
 
@@ -167,7 +167,7 @@ const faqs: FaqItem[] = [
 ];
 
 const article = (
-  <section className="mt-10 prose prose-slate max-w-none text-sm prose-headings:font-semibold prose-headings:text-slate-900 prose-p:text-slate-700 prose-li:text-slate-700">
+  <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10"><div className="prose prose-slate max-w-none">
     <h2>Clean AI Text — Remove Hidden Characters from AI Output in One Click</h2>
     <p>Every time you generate text with an AI model and copy it somewhere, hidden characters travel with the visible words. To <strong>clean AI</strong> text means to remove all of those hidden Unicode characters — zero-width spaces, byte-order marks, non-breaking spaces, soft hyphens, directional marks — so the text is technically clean and behaves predictably in every application. Without a tool to <strong>clean AI</strong> output, those invisible characters accumulate in your documents, CMS platforms, email campaigns, and code files, causing formatting problems that are difficult to diagnose because the text looks completely normal on screen.</p>
     <p>GPTCLEANUP AI is a free tool to <strong>clean AI</strong> text from any model in one click. Paste your AI-generated output, click Clean Text, and copy the cleaned result. No account, no upload, no limit. Use it to <strong>clean AI</strong> text from ChatGPT, Claude, Gemini, DeepSeek, Grok, Llama, Mistral, Perplexity, Copilot, or any other model — the same invisible characters appear across every AI platform and the same clean AI process removes them all.</p>
@@ -228,6 +228,7 @@ const article = (
 
     <h2>Free Clean AI Tool — No Account, No Limits, Complete Privacy</h2>
     <p>GPTCLEANUP AI is a free <strong>clean AI</strong> tool with no account required, no character limits, and no subscription. All clean AI processing happens in your browser — your text is never uploaded, stored, or logged. The tool works on text from every AI model and every source. It removes every category of invisible Unicode character, converts typographic special characters to ASCII equivalents, strips markdown formatting symbols, normalizes spacing, and collapses excess blank lines — all in one click. Paste your AI-generated text, click Clean Text, and copy the output. The entire clean AI process takes under ten seconds and produces text that is genuinely clean at every character level. Make this clean AI tool the first step of every AI text workflow and eliminate invisible character problems from your professional work permanently.</p>
+  </div>
   </section>
 );
 
@@ -308,3 +309,4 @@ export default async function CleanAIPage() {
     </div>
   );
 }
+

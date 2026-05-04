@@ -1,4 +1,4 @@
-import Link from 'next/link';
+﻿import Link from 'next/link';
 import { buildArticleMeta } from '@/lib/seo-meta';
 import { JsonLd } from '@/components/JsonLd';
 import { blogPostingSchema } from '@/lib/schema/blog';
@@ -11,7 +11,7 @@ const headline = 'How Does an AI Detector Work? The Complete Guide';
 const description =
   'AI detectors use perplexity, burstiness, and Unicode scanning to classify text. This guide explains exactly how they work, where they fail, and what that means for your writing.';
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({ title, description, urlPath });
@@ -325,3 +325,4 @@ export default function HowDoesAnAiDetectorWorkPage() {
     </article>
   );
 }
+

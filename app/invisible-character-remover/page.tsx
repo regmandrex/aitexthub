@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { JsonLd } from '@/components/JsonLd';
 import FAQSection from '@/components/FAQSection';
@@ -13,7 +13,7 @@ import { siteUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 
 const toolSlug = 'invisible-character-remover';
 
@@ -202,7 +202,7 @@ const faqs: FaqItem[] = [
 ];
 
 const article = (
-  <section className="mt-10 prose prose-slate max-w-none text-sm prose-headings:font-semibold prose-headings:text-slate-900 prose-p:text-slate-700 prose-li:text-slate-700">
+  <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10"><div className="prose prose-slate max-w-none">
     <h2>Invisible Character Remover — Find and Remove Hidden Unicode Instantly</h2>
     <p>An <strong>invisible character remover</strong> solves one of the most persistent and frustrating problems in modern text workflows: characters that are present in your data but cannot be seen. When you copy text from an AI model like ChatGPT, Claude, Gemini, or DeepSeek, the visible words are not the only thing that travels to your clipboard. Dozens of invisible Unicode characters come along — zero-width spaces, byte-order marks, soft hyphens, non-breaking spaces, and directional formatting marks — all of which are completely invisible on screen but cause real problems when your text is pasted into another application.</p>
     <p>This free <strong>invisible character remover</strong> scans every character in your text, identifies every hidden Unicode code point, removes them all in a single pass, and shows you how many were found. No account required, no uploads, no character limit. Paste your text, click Clean Text, and copy the clean result in seconds.</p>
@@ -289,6 +289,7 @@ const article = (
     <p>Non-breaking spaces (U+00A0) deserve special mention because they are the invisible character most commonly found in word processor documents and are often confused with regular spaces. A non-breaking space looks identical to a regular space on screen but has two important differences: it prevents a line break from occurring at that position, and it is a distinct Unicode code point that many software systems treat differently from a regular space.</p>
     <p>Microsoft Word inserts non-breaking spaces automatically in specific contexts — between a number and its unit (100 km becomes 100\u00a0km), after abbreviations, and in other places where splitting across a line would be visually undesirable. This is correct typographic behavior in a print document. However, when you copy that text out of Word and paste it into a website, email, or CMS, those non-breaking spaces travel with it and cause layout problems in responsive designs where natural text wrapping is required.</p>
     <p>This invisible character remover replaces all non-breaking spaces with standard spaces as part of its cleaning process, along with all other invisible Unicode characters. The result is text where every space is a regular, standard space that behaves consistently in every application.</p>
+  </div>
   </section>
 );
 
@@ -369,3 +370,4 @@ export default async function InvisibleCharacterRemoverPage() {
     </div>
   );
 }
+

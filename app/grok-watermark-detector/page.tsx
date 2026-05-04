@@ -1,4 +1,4 @@
-import type { FaqItem } from '@/components/faqData';
+﻿import type { FaqItem } from '@/components/faqData';
 import WatermarkDetectorPage from '@/components/tools/WatermarkDetectorPage';
 import { buildMeta } from '@/lib/seo-meta';
 
@@ -7,7 +7,7 @@ const modelSlug = 'grok';
 const faqIntro =
   'This FAQ explains how the Grok (xAI) Watermark Detector on gptcleanuptools.com works, what kinds of text characteristics it evaluates, and how results should be interpreted responsibly. The tool is an independent, text-only analysis utility and does not connect to or interact with xAI or Grok systems.';
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 
 const faqs: FaqItem[] = [
   {
@@ -555,4 +555,5 @@ export default function GrokWatermarkDetectorPage() {
     />
   );
 }
+
 

@@ -1,4 +1,4 @@
-import Link from 'next/link';
+﻿import Link from 'next/link';
 import { buildArticleMeta } from '@/lib/seo-meta';
 import { JsonLd } from '@/components/JsonLd';
 import { blogPostingSchema } from '@/lib/schema/blog';
@@ -13,7 +13,7 @@ const headline =
 const description =
   'Master Excel data cleaning with TRIM, SUBSTITUTE, and filtering techniques to eliminate unwanted spaces and improve accuracy.';
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({
@@ -196,3 +196,4 @@ export default function TheBestWaysToRemoveBlankSpacesInExcelPage() {
     </article>
   );
 }
+

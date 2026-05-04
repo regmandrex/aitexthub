@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { JsonLd } from '@/components/JsonLd';
 import FAQSection from '@/components/FAQSection';
@@ -13,7 +13,7 @@ import { siteUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 
 const toolSlug = 'clean-paste';
 
@@ -182,7 +182,7 @@ const faqs: FaqItem[] = [
 ];
 
 const article = (
-  <section className="mt-10 prose prose-slate max-w-none text-sm prose-headings:font-semibold prose-headings:text-slate-900 prose-p:text-slate-700 prose-li:text-slate-700">
+  <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10"><div className="prose prose-slate max-w-none">
     <h2>Clean Paste — Paste Clean Text Every Time</h2>
     <p><strong>Clean paste</strong> is the practice of cleaning text before pasting it into your target application. The standard copy-paste operation does not filter the text you copy — everything travels: the visible words, the invisible Unicode characters, the markdown syntax, the curly quotes, the non-breaking spaces. A <strong>clean paste</strong> workflow inserts one step between copying from the source and pasting into the destination: running the text through a cleaner that removes all of the artifacts that should not be there.</p>
     <p>GPTCLEANUP AI provides a free <strong>cleanpaste</strong> tool — also known as a clean paste tool — that handles all categories of text contamination in a single click. Paste your text from any source, click Clean Text, and copy the clean result ready for your final destination.</p>
@@ -286,6 +286,7 @@ const article = (
     <h2>Free Cleanpaste Tool — No Account, No Limits</h2>
     <p>GPTCLEANUP AI is a free <strong>cleanpaste</strong> tool with no account required, no character limits, and no subscription. All processing happens in your browser — your text is never uploaded, logged, or stored. The clean paste tool works on text from every source: AI models (ChatGPT, Claude, Gemini, DeepSeek, Grok, Llama, Mistral, Perplexity), word processors (Microsoft Word, Google Docs), websites, PDFs, and email clients. It removes every category of text contamination — invisible Unicode, markdown, typographic special characters, spacing irregularities — in a single pass. Make clean paste part of every text workflow and eliminate hidden character problems from your content pipeline permanently. The tool is always available at this URL, always free, and always processes text with complete privacy protection.</p>
     <p>Whether you use it for a single blog post or as part of a high-volume content production pipeline, the clean paste tool delivers the same result every time: text that is technically clean, safe to publish, and ready for any downstream application. Paste clean, publish confidently. Bookmark this page to make clean paste the default first step in every text workflow — the difference between content that causes problems and content that just works.</p>
+  </div>
   </section>
 );
 
@@ -366,3 +367,4 @@ export default async function CleanPastePage() {
     </div>
   );
 }
+

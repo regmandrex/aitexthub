@@ -32,7 +32,11 @@ export type Tool = {
       | 'line-combination-generator'
       | 'permutation-generator'
       | 'ai-code-cleaner'
-      | 'ai-code-fixer';
+      | 'ai-code-fixer'
+      | 'rank-tracker'
+      | 'ai-detector'
+      | 'ai-humanizer'
+      | 'watermark-remover';
   };
   content?: {
     disclaimers?: string[];
@@ -224,7 +228,11 @@ function getUIKind(
   | 'line-combination-generator'
   | 'permutation-generator'
   | 'ai-code-cleaner'
-  | 'ai-code-fixer' {
+  | 'ai-code-fixer'
+  | 'rank-tracker'
+  | 'ai-detector'
+  | 'ai-humanizer'
+  | 'watermark-remover' {
   if (slug === '') {
     return 'text-cleaner';
   }
@@ -243,11 +251,33 @@ function getUIKind(
   if (slug === 'ai-code-fixer') {
     return 'ai-code-fixer';
   }
+  if (slug.includes('rank-tracker')) {
+    return 'rank-tracker';
+  }
   if (UTILITY_SLUGS.has(slug)) {
     return slug as Tool['ui']['kind'];
   }
   if (slug.includes('watermark-detector')) {
     return 'watermark-detector';
+  }
+  if (slug.includes('watermark-remover') || slug.includes('watermark-cleaner')) {
+    return 'watermark-remover';
+  }
+  if (slug.includes('detector')) {
+    return 'ai-detector';
+  }
+  if (
+    slug.includes('humanizer') ||
+    slug.includes('rewriter') ||
+    slug.includes('improver') ||
+    slug.includes('validator') ||
+    slug.includes('checker') ||
+    slug.includes('writer') ||
+    slug.includes('generator') ||
+    slug.includes('enhancer') ||
+    slug.includes('polisher')
+  ) {
+    return 'ai-humanizer';
   }
   if (slug.includes('line-spacing')) {
     return 'line-spacing';
@@ -312,10 +342,6 @@ export function getRelatedTools(currentTool: Tool, limit: number = 8): Tool[] {
   
   return related.slice(0, limit);
 }
-
-
-
-
 
 
 

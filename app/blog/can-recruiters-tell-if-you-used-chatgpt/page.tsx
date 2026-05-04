@@ -1,4 +1,4 @@
-import Link from 'next/link';
+﻿import Link from 'next/link';
 import { buildArticleMeta } from '@/lib/seo-meta';
 import { JsonLd } from '@/components/JsonLd';
 import { blogPostingSchema } from '@/lib/schema/blog';
@@ -11,7 +11,7 @@ const headline = 'Can Recruiters Tell If You Used ChatGPT? What Job Seekers Need
 const description =
   'Learn how recruiters detect ChatGPT-written resumes and cover letters. Understand detection methods, invisible watermarks, and how to use AI tools responsibly in your job search.';
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({
@@ -237,3 +237,4 @@ export default function CanRecruitersDetectChatGPTPage() {
     </article>
   );
 }
+

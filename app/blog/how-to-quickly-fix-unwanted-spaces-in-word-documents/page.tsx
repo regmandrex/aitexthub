@@ -1,4 +1,4 @@
-import Link from 'next/link';
+﻿import Link from 'next/link';
 import { buildArticleMeta } from '@/lib/seo-meta';
 import { JsonLd } from '@/components/JsonLd';
 import { blogPostingSchema } from '@/lib/schema/blog';
@@ -13,7 +13,7 @@ const headline =
 const description =
   'Learn simple methods to remove extra spaces, fix paragraph gaps, and clean up Word documents using built-in tools and shortcuts.';
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({
@@ -229,3 +229,4 @@ export default function HowToQuicklyFixUnwantedSpacesInWordDocumentsPage() {
     </article>
   );
 }
+

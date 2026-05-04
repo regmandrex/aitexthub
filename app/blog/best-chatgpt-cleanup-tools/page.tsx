@@ -1,4 +1,4 @@
-import Link from 'next/link';
+﻿import Link from 'next/link';
 import { buildArticleMeta } from '@/lib/seo-meta';
 import { JsonLd } from '@/components/JsonLd';
 import { blogPostingSchema } from '@/lib/schema/blog';
@@ -11,7 +11,7 @@ const headline = 'Best ChatGPT Cleanup Tools for Cleaner, Faster Publishing';
 const description =
   'Compare real ChatGPT cleanup tools, what they must remove under the hood, and how to choose a stack that protects SEO, UX, and performance.';
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({
@@ -170,4 +170,5 @@ export default function BestChatGPTCleanupToolsPage() {
     </article>
   );
 }
+
 

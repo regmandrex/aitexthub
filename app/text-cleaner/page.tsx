@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { JsonLd } from '@/components/JsonLd';
 import FAQSection from '@/components/FAQSection';
@@ -13,7 +13,7 @@ import { siteUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 
 const toolSlug = 'text-cleaner';
 
@@ -182,7 +182,8 @@ const faqs: FaqItem[] = [
 ];
 
 const article = (
-  <section className="mt-10 prose prose-slate max-w-none text-sm prose-headings:font-semibold prose-headings:text-slate-900 prose-p:text-slate-700 prose-li:text-slate-700">
+  <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+  <div className="prose prose-slate max-w-none text-sm prose-headings:font-semibold prose-headings:text-slate-900 prose-p:text-slate-700 prose-li:text-slate-700">
     <h2>Text Cleaner — Clean Text Online Free in One Click</h2>
     <p>A <strong>text cleaner</strong> removes the invisible and unwanted characters that accumulate in text during copy-paste operations from AI tools, word processors, websites, and PDFs. Every time you copy text from one application and paste it into another, formatting artifacts follow — zero-width spaces, non-breaking spaces, markdown symbols, curly quotes, em dashes — and cause problems ranging from cosmetic inconsistencies to outright errors in code and data systems. A <strong>text cleaner online</strong> strips all of these in one click and returns plain, neutral text that behaves consistently in any destination.</p>
     <p>GPTCLEANUP AI is a free <strong>text cleaner</strong> — also known as a <strong>textcleaner</strong> — that requires no account, no upload, and no subscription. Paste your text, click Clean Text, and copy the clean result in seconds. It works on text from any source: AI models, word processors, PDFs, websites, email clients, and spreadsheets.</p>
@@ -284,6 +285,7 @@ const article = (
 
     <h2>Free Text Cleaner with No Limits</h2>
     <p>GPTCLEANUP AI is a <strong>text cleaner free</strong> to use with no account, no character limit, and no subscription. There is no premium tier — every feature is available to everyone at no cost. This includes invisible character removal, markdown stripping, curly quote normalization, em dash normalization, spacing normalization, and line ending normalization. The tool runs locally in your browser, processing text on your device without transmitting it to any server. This makes it safe for confidential content of any kind. Whether you clean one paragraph or a hundred-page document, the text cleaner handles it instantly and completely free. Bookmark this page and use it as your standard first step for any text that needs to move from an AI tool, word processor, or web source into a clean, reliable destination.</p>
+  </div>
   </section>
 );
 
@@ -364,3 +366,4 @@ export default async function TextCleanerPage() {
     </div>
   );
 }
+

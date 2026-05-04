@@ -1,4 +1,4 @@
-import Link from 'next/link';
+﻿import Link from 'next/link';
 import { buildArticleMeta } from '@/lib/seo-meta';
 import { JsonLd } from '@/components/JsonLd';
 import { blogPostingSchema } from '@/lib/schema/blog';
@@ -11,7 +11,7 @@ const headline = 'Invisible Characters in ChatGPT Text: Why They Exist and How t
 const description =
   'A technical deep dive into every type of invisible character found in ChatGPT text: what each one is, why AI produces it, what it does, and how to remove it completely.';
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({ title, description, urlPath });
@@ -306,3 +306,4 @@ export default function InvisibleCharactersInChatGptTextPage() {
     </article>
   );
 }
+

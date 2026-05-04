@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { JsonLd } from '@/components/JsonLd';
 import FAQSection from '@/components/FAQSection';
@@ -12,7 +12,7 @@ import { getToolBySlug } from '@/lib/tools/registry';
 import { siteUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 const toolSlug = 'base64-to-image';
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -378,6 +378,7 @@ const writeUp = (
     <p>
       Ultimately, the goal is always the same: convert an opaque base64 string into a viewable image as efficiently as possible. Whether you are a developer debugging an AI image generation API, a data analyst inspecting database records, an email developer troubleshooting a newsletter template, or a student learning about encoding — our free online base64 to image decoder provides the fastest path from encoded string to visible image, with complete privacy and zero installation required.
     </p>
+  </div>
   </section>
 );
 
@@ -411,3 +412,4 @@ export default async function Base64ToImagePage() {
     </>
   );
 }
+

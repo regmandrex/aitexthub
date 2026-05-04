@@ -1,4 +1,4 @@
-import Link from 'next/link';
+﻿import Link from 'next/link';
 import { buildArticleMeta } from '@/lib/seo-meta';
 import { JsonLd } from '@/components/JsonLd';
 import { blogPostingSchema } from '@/lib/schema/blog';
@@ -11,7 +11,7 @@ const headline = 'How to Use AI for Your Resume Without Getting Flagged (2026 Gu
 const description =
   'Learn the smart workflow for using AI to write resumes in 2026. Remove watermarks, optimize for ATS systems, avoid AI detection, and produce applications that genuinely represent you.';
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({
@@ -204,3 +204,4 @@ export default function HowToUseAIForResumePage() {
     </article>
   );
 }
+

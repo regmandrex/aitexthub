@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import { JsonLd } from '@/components/JsonLd';
 import AdSenseSlot from '@/components/ads/AdSenseSlot';
 import BelowToolAd from '@/components/ads/BelowToolAd';
@@ -6,7 +6,7 @@ import ToolWorkbench from '@/components/ToolWorkbench';
 import { RelatedTools } from '@/components/tool/RelatedTools';
 import { siteUrl } from '@/lib/seo/url';
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 
 const faqs = [
   { question: 'How do I remove spaces in Excel?', answer: 'The most common way to remove spaces in Excel is to use the TRIM function. In an empty cell next to your data, type =TRIM(A1) (replacing A1 with the cell containing your text). Press Enter. TRIM removes all leading spaces, trailing spaces, and reduces multiple spaces between words to a single space. To apply to all rows, drag the formula down the column. Then copy the formula results, paste as values (Paste Special > Values), and delete the original column. This gives you clean data with all extra spaces removed.' },
@@ -38,7 +38,7 @@ const faqs = [
 ];
 
 const article = (
-  <section className="mt-10 prose prose-slate max-w-none text-sm prose-headings:font-semibold prose-headings:text-slate-900 prose-p:text-slate-700 prose-li:text-slate-700">
+  <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10"><div className="prose prose-slate max-w-none">
     <h2>Remove Spaces in Excel — The Complete Guide</h2>
     <p>
       <strong>Remove spaces in Excel</strong> is one of the most common data cleaning tasks in any spreadsheet workflow. Whether you are dealing with leading spaces before text, trailing spaces after values, double spaces between words, or invisible non-breaking spaces from web-copied data, extra spaces in Excel cells cause real problems: VLOOKUP returns errors, SUM returns zero for number cells, and data that looks identical fails every comparison. This guide covers every method to <strong>remove spaces in Excel</strong> — from the TRIM function for quick fixes to Power Query for automated recurring imports.
@@ -229,6 +229,7 @@ const article = (
       <li><strong>Power Query &gt; Trim</strong> — Best for: recurring imports or large datasets across many columns.</li>
       <li><strong>Format Remover (this site)</strong> — Best for: AI-generated or richly formatted text with multiple invisible character types before pasting into Excel.</li>
     </ul>
+  </div>
   </section>
 );
 
@@ -344,3 +345,4 @@ export default async function RemoveSpacesExcelPage() {
     </div>
   );
 }
+

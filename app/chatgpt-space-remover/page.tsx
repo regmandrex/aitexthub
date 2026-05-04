@@ -1,11 +1,11 @@
-import type { FaqItem } from '@/components/faqData';
+﻿import type { FaqItem } from '@/components/faqData';
 import SpaceRemoverPage from '@/components/tools/SpaceRemoverPage';
 import { buildMeta } from '@/lib/seo-meta';
 
 const modelName = 'ChatGPT';
 const modelSlug = 'chatgpt';
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 
 const faqs: FaqItem[] = [
   {
@@ -335,4 +335,5 @@ export const metadata = buildMeta({
 export default function ChatgptSpaceRemoverPage() {
   return <SpaceRemoverPage modelName={modelName} modelSlug={modelSlug} faqItems={faqs} content={writeUp} />;
 }
+
 

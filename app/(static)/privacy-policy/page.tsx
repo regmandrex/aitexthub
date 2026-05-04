@@ -1,4 +1,4 @@
-import { buildMeta } from '@/lib/seo-meta';
+﻿import { buildMeta } from '@/lib/seo-meta';
 
 type PrivacyContent = {
   metaTitle: string;
@@ -207,7 +207,7 @@ const CONTENT_BY_LOCALE: Record<string, PrivacyContent> = {
   },
 };
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 
 export async function generateMetadata() {
   const content = CONTENT_BY_LOCALE.en;
@@ -318,3 +318,4 @@ export default async function PrivacyPolicyPage() {
     </article>
   );
 }
+

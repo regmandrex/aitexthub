@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { JsonLd } from '@/components/JsonLd';
 import FAQSection from '@/components/FAQSection';
@@ -12,7 +12,7 @@ import { getToolBySlug } from '@/lib/tools/registry';
 import { siteUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 const toolSlug = 'csv-to-json';
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -397,6 +397,7 @@ const writeUp = (
     <p>
       Date handling: dates remain as strings after conversion. CSV has no date type and JSON has no date type — ISO 8601 date strings are the standard representation ("2026-04-18T12:00:00Z"). If your CSV contains dates in locale formats ("04/18/2026" or "18-Apr-2026"), they convert to those exact strings. Post-process to ISO format if your target requires it: in JavaScript, <code>new Date('04/18/2026').toISOString()</code> converts US date formats. Pandas handles date parsing automatically: <code>pd.read_csv('file.csv', parse_dates=['created_at'])</code> detects and parses date columns.
     </p>
+  </div>
   </section>
 );
 
@@ -430,3 +431,4 @@ export default async function CsvToJsonPage() {
     </>
   );
 }
+

@@ -1,4 +1,4 @@
-import Link from 'next/link';
+﻿import Link from 'next/link';
 import { buildArticleMeta } from '@/lib/seo-meta';
 import { JsonLd } from '@/components/JsonLd';
 import { blogPostingSchema } from '@/lib/schema/blog';
@@ -11,7 +11,7 @@ const headline = 'AI Text Watermarks Explained: What They Are and How to Remove 
 const description =
   'A technical explanation of AI text watermarks: the types that exist, how each is detected, and the complete workflow for removing them from any text.';
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({ title, description, urlPath });
@@ -259,3 +259,4 @@ export default function AiTextWatermarksExplainedPage() {
     </article>
   );
 }
+

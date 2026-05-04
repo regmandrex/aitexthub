@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { JsonLd } from '@/components/JsonLd';
 import FAQSection from '@/components/FAQSection';
@@ -13,7 +13,7 @@ import { siteUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 
 const toolSlug = 'format-remover';
 
@@ -232,7 +232,7 @@ const faqs: FaqItem[] = [
 ];
 
 const article = (
-  <section className="mt-10 prose prose-slate max-w-none text-sm prose-headings:font-semibold prose-headings:text-slate-900 prose-p:text-slate-700 prose-li:text-slate-700">
+  <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10"><div className="prose prose-slate max-w-none">
     <h2>Format Remover — Strip Text Formatting Online in One Click</h2>
     <p>A <strong>format remover</strong> solves the fundamental problem of formatted text in the wrong place. When you copy content from ChatGPT, Claude, Gemini, Microsoft Word, a website, or any rich text source, formatting travels with the visible words. Markdown syntax, typographic punctuation, invisible Unicode characters, and irregular spacing all come along whether you want them or not. In a different editor, these formatting artifacts show up as literal symbols, break syntax in code and data files, cause layout problems in published pages, and produce rendering inconsistencies in email clients.</p>
     <p>GPTCLEANUP AI is a free <strong>text format remover</strong> and <strong>formatting remover</strong> that handles every layer of formatting in a single click — markdown, curly quotes, em dashes, invisible Unicode, excess spacing. No account, no upload, no limit. Paste your text, click Clean Text, and copy plain, unformatted output that works in any application. Use it to <strong>remove formatting</strong> from AI output, Word documents, PDFs, websites, and any other source.</p>
@@ -317,6 +317,7 @@ const article = (
 
     <h2>Free Format Remover — No Account, No Limits</h2>
     <p>GPTCLEANUP AI is a free <strong>format remover</strong> and <strong>text format remover</strong> with no account required, no character limits, and no subscription. All processing happens in your browser — your text is never uploaded, stored, or logged. The format remover handles text from any source: AI models, word processors, websites, PDFs, email clients. It removes markdown formatting, converts curly quotes to straight quotes, normalizes em dashes, removes invisible Unicode characters, collapses excess blank lines, and normalizes spacing — all in one click. Paste your text, click Clean Text, and copy clean, plain, format-free output ready for any application.</p>
+  </div>
   </section>
 );
 
@@ -397,3 +398,4 @@ export default async function FormatRemoverPage() {
     </div>
   );
 }
+

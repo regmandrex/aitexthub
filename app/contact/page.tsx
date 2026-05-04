@@ -1,6 +1,6 @@
-import { buildMeta } from '@/lib/seo-meta';
+﻿import { buildMeta } from '@/lib/seo-meta';
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 
 export async function generateMetadata() {
   return buildMeta({
@@ -34,4 +34,5 @@ export default async function ContactPage() {
     </div>
   );
 }
+
 

@@ -1,4 +1,4 @@
-import Link from 'next/link';
+﻿import Link from 'next/link';
 import { buildArticleMeta } from '@/lib/seo-meta';
 import { JsonLd } from '@/components/JsonLd';
 import { blogPostingSchema } from '@/lib/schema/blog';
@@ -11,7 +11,7 @@ const headline = 'How to Clean ChatGPT Text on Android';
 const description =
   'A mobile-first workflow to clean ChatGPT text on Android using AI space removal, invisible character detection, and safe copy-paste into apps.';
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({
@@ -153,4 +153,5 @@ export default function HowToCleanChatGPTTextOnAndroidPage() {
     </article>
   );
 }
+
 

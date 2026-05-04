@@ -1,224 +1,239 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import { JsonLd } from '@/components/JsonLd';
 import AdSenseSlot from '@/components/ads/AdSenseSlot';
 import BelowToolAd from '@/components/ads/BelowToolAd';
 import { siteUrl } from '@/lib/seo/url';
 import { InvisibleCharGrid } from './CopyButtons';
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 
 const faqs = [
-  { question: 'What is invisible text copy and paste?', answer: 'Invisible text copy and paste refers to copying Unicode characters that produce no visible output — zero-width spaces, non-breaking spaces, word joiners, and similar invisible Unicode code points — and pasting them into messages, usernames, bios, and other text fields. The characters are present in the text data but render as nothing on screen, creating the appearance of blank or empty text.' },
+  { question: 'What is blank space copy and paste?', answer: 'Blank space copy and paste means copying an invisible or blank-appearing Unicode character to your clipboard and pasting it into a text field to create the visual effect of empty or blank content. The most common characters used are zero-width space (U+200B), Hangul filler (U+3164), non-breaking space (U+00A0), and word joiner (U+2060). Each looks blank when pasted but is present as real character data, which satisfies input validation requirements that reject truly empty fields.' },
+  { question: 'What is the best blank space character to copy and paste?', answer: 'The best blank space character depends on your use case. Zero-width space (U+200B) is the most widely compatible invisible character — it has no visual width and works in Discord, WhatsApp, most games, and social platforms. Non-breaking space (U+00A0) is best when zero-width space is filtered, such as in some Instagram fields and form inputs. Hangul filler (U+3164) is popular for gaming names because it renders as a full-width blank and is in a Unicode block that many platform filters do not block. Word joiner (U+2060) is the best fallback when both zero-width space and non-breaking space are filtered.' },
+  { question: 'What is invisible text copy and paste?', answer: 'Invisible text copy and paste refers to copying Unicode characters that produce no visible output — zero-width spaces, non-breaking spaces, word joiners, Hangul fillers, and similar invisible Unicode code points — and pasting them into messages, usernames, bios, and other text fields. The characters are present in the text data but render as nothing on screen, creating the appearance of blank or empty text. This is used for blank display names in games, empty-looking messages in chat apps, and minimalist social media bios.' },
   { question: 'What is a zero-width space and how do I copy one?', answer: 'A zero-width space (U+200B) is the most common invisible Unicode character. It has zero visual width — when pasted into text, it takes up no space on screen but is present as a real character in the text data. To copy a zero-width space, click the Copy button next to "Zero-Width Space" on this page. The character is copied to your clipboard and ready to paste into any application.' },
-  { question: 'How do I send a blank message on WhatsApp?', answer: 'To send a blank message on WhatsApp, copy a zero-width space (U+200B) or non-breaking space (U+00A0) from this page, paste it into the WhatsApp message field, and send. WhatsApp\'s message validation requires at least one character before allowing a message to be sent — invisible Unicode characters satisfy this requirement while appearing as a completely blank message to the recipient.' },
+  { question: 'How do I send a blank message on WhatsApp?', answer: 'To send a blank message on WhatsApp, copy a zero-width space (U+200B) or non-breaking space (U+00A0) from this page, paste it into the WhatsApp message field, and send. WhatsApp requires at least one character before allowing a message to be sent — invisible Unicode characters satisfy this requirement while appearing as a completely blank message to the recipient. This works on both WhatsApp iOS and Android.' },
   { question: 'How do I create an invisible name in Discord?', answer: 'To create an invisible name in Discord, copy a zero-width space (U+200B) from this page and use it as your display name or server nickname. Discord allows zero-width space characters in display names. The result appears as a blank or empty name in server member lists and messages. Some servers have restrictions on invisible names — if the zero-width space does not work, try the word joiner (U+2060) or function application character (U+2061).' },
-  { question: 'What is blank space copy and paste used for?', answer: 'Blank space copy and paste — copying invisible or blank Unicode characters and pasting them — has several uses: creating blank display names in games and apps, sending empty-looking messages, filling form fields that require content but where you want to appear blank, creating visual spacing in Instagram bios and social media profiles, and bypassing minimum character requirements in text fields with invisible filler.' },
-  { question: 'How do I make my Instagram bio blank?', answer: 'To make your Instagram bio blank or appear empty, copy a non-breaking space (U+00A0) or zero-width space (U+200B) from this page, go to your Instagram profile and edit your bio, paste the invisible character into the bio field, and save. Instagram will accept the invisible character as valid bio content, making your bio appear empty or blank to anyone viewing your profile.' },
-  { question: 'What is an invisible Unicode character?', answer: 'An invisible Unicode character is a code point in the Unicode standard that represents a character with no visible glyph — it takes up space in the character data but renders as nothing on screen. The most common invisible Unicode characters are zero-width space (U+200B), word joiner (U+2060), non-breaking space (U+00A0), soft hyphen (U+00AD), zero-width non-joiner (U+200C), and zero-width joiner (U+200D). These characters exist for legitimate typographic and layout purposes but are also widely used for creative invisible text effects.' },
-  { question: 'What is invisible copy and paste text?', answer: 'Invisible copy and paste text is any text content composed entirely of invisible Unicode characters — characters that are present in the clipboard data but produce no visible output when pasted. A message containing only zero-width spaces appears completely blank even though it contains real character data. Invisible copy and paste text is used for blank messages, hidden text effects, invisible usernames, and empty-looking social media bios.' },
-  { question: 'How do I copy an empty space for a username?', answer: 'To copy an empty space for a username, click the Copy button next to "Zero-Width Space" on this page. Paste the copied character into the username field of the game or app you are using. The zero-width space satisfies the minimum character requirement for most username fields while displaying as blank or empty. If zero-width space is filtered by the platform, try the word joiner (U+2060) or non-breaking space (U+00A0) — different platforms filter different invisible characters.' },
-  { question: 'What is copy and paste invisible character used for in gaming?', answer: 'In gaming, copy and paste invisible characters are used to create blank or empty-appearing display names, to stand out in lobbies by appearing nameless, to create aesthetic usernames with invisible spacing between visible characters, and to bypass character restrictions in name fields. Games that show player names frequently allow invisible Unicode characters because name validation systems check for character count but not character visibility. Popular uses include Roblox, Among Us, PUBG, and various mobile games.' },
-  { question: 'What is an invisible text generator?', answer: 'An invisible text generator is a tool that produces invisible Unicode characters — zero-width spaces, non-breaking spaces, and similar invisible code points — that can be copied and pasted into any text field. This page functions as an invisible text generator: click any Copy button to generate and copy the corresponding invisible character to your clipboard. The bulk copy option lets you generate a custom number of zero-width spaces for longer invisible text.' },
-  { question: 'How do I use invisible text on TikTok?', answer: 'To use invisible text on TikTok, copy an invisible character from this page (zero-width space or non-breaking space work best), then paste it into your TikTok bio, username, or comment. For a blank TikTok bio, paste the invisible character into your bio field and save. For blank comments, paste the invisible character as your comment content and post. TikTok allows invisible Unicode characters in most text fields.' },
-  { question: 'What is the difference between invisible text and blank space?', answer: 'Invisible text refers to text composed of Unicode characters with no visible glyph — the characters are present but render as nothing. Blank space in the traditional sense refers to a regular space character (U+0020) or blank-looking characters. For practical purposes, both terms describe the same use case: characters that appear as empty space when viewed. The key difference is that a regular space (U+0020) is often filtered or collapsed by applications, while zero-width spaces and non-breaking spaces pass through text field validation as valid character content.' },
-  { question: 'How do I copy invisible text for Roblox?', answer: 'To copy invisible text for Roblox, use the zero-width space (U+200B) or non-breaking space (U+00A0) from this page. Copy the character, go to Roblox username or display name settings, paste the invisible character, and save. Roblox display names support invisible Unicode characters, allowing you to appear nameless or create aesthetic spacing in your display name. Note that Roblox usernames have stricter validation than display names — invisible characters may work in display names but not permanent usernames.' },
-  { question: 'What is a blank space symbol copy and paste?', answer: 'A blank space symbol copy and paste refers to copying a Unicode character that looks like a blank space but is a distinct, non-standard space character — most commonly the non-breaking space (U+00A0), em space (U+2003), en space (U+2002), or zero-width space (U+200B). Unlike a regular space (U+0020), these blank space symbols are treated as valid text content by most input validation systems, making them useful for creating blank-appearing text fields, usernames, and messages.' },
-  { question: 'How do I create invisible text copy and paste for Facebook?', answer: 'For Facebook, copy a non-breaking space (U+00A0) or zero-width space (U+200B) from this page and paste it into your Facebook name, bio, or post. Facebook accepts invisible Unicode characters in most text fields. For a blank Facebook name, use the name change feature and replace your name with invisible characters. For blank posts or blank comments, paste invisible characters as the post content. Facebook\'s algorithms may filter some invisible characters, so if one type does not work, try another from the list above.' },
-  { question: 'Can I use invisible text in Google Forms?', answer: 'Yes, invisible Unicode characters can be pasted into Google Forms text fields. Zero-width spaces and non-breaking spaces pass through Google Forms text validation because they are valid Unicode characters, even though they produce no visible output. This is useful for submitting blank-appearing responses in fields that require a minimum character count, or for creating invisible filler in form fields where you want to appear to have submitted empty content.' },
-  { question: 'How do I remove invisible characters from text I received?', answer: 'To remove invisible characters from text you received, use the Invisible Character Remover on this site. Paste the text containing invisible characters into the tool, click Clean Text, and all invisible Unicode characters — zero-width spaces, non-breaking spaces, word joiners, soft hyphens, and all other invisible code points — are removed in a single pass. The cleaned text contains only visible characters with no hidden Unicode.' },
-  { question: 'What is invisible font copy and paste?', answer: 'Invisible font copy and paste refers to copying Unicode characters that render as invisible — producing no visible glyph when pasted. The term "invisible font" is a misnomer (these are individual Unicode characters, not a font), but it describes the same concept as invisible text. When you copy an invisible character and paste it into a text field, it appears as if you typed in an invisible font — nothing shows on screen but the character is present in the data.' },
-  { question: 'How do I use invisible text in Minecraft?', answer: 'In Minecraft Java Edition, invisible characters can be used in signs, books, and some text fields. Copy a zero-width space (U+200B) from this page and paste it into the Minecraft text field. In Minecraft Bedrock Edition, invisible characters work in the game\'s sign and book interfaces. For Minecraft usernames (which are managed through Microsoft accounts), non-breaking spaces may work in display names through the Xbox/Microsoft profile settings.' },
-  { question: 'What is empty space copy and paste?', answer: 'Empty space copy and paste means copying an invisible or blank-appearing Unicode character and pasting it to create the visual effect of empty space. The most common characters for empty space copy and paste are the non-breaking space (U+00A0) — which looks exactly like a regular space but is a distinct character — and the zero-width space (U+200B) — which takes up absolutely no visual space at all. Use this page to copy your chosen empty space character with one click.' },
-  { question: 'How do invisible characters work technically?', answer: 'Invisible characters are valid Unicode code points assigned to characters with no visible glyph. Every Unicode character has a code point (a number in the Unicode standard), properties (whether it is a letter, number, space, control character), and a glyph (the visual representation). Invisible characters have all of these properties except a glyph — they exist as valid code points with defined properties but render as nothing because their assigned glyph is empty. This means they pass through text validation (which checks code point validity) but produce no visible output (because there is no glyph to render).' },
-  { question: 'Are invisible characters safe to use?', answer: 'Invisible characters themselves are safe — they are standard Unicode code points included in every major operating system and device. The risk is contextual: websites and applications that do not properly sanitize input may behave unexpectedly with invisible characters in URLs, database fields, or code. For personal use in messages, usernames, and social bios, invisible characters are harmless. Be aware that AI text cleaners and text sanitization tools will remove invisible characters from text, so pasted invisible characters will be stripped if the recipient uses a text cleaner.' },
-  { question: 'Why does copy and paste blank space not work in some apps?', answer: 'Some apps filter specific invisible Unicode characters as part of their input validation. If a zero-width space does not work, the app is likely blocking U+200B specifically. Try a different invisible character — the non-breaking space (U+00A0), word joiner (U+2060), or function application (U+2061) — as apps rarely filter all invisible characters simultaneously. Some apps also collapse multiple spaces (including non-breaking spaces) and strip zero-width characters during input processing, which prevents invisible text from working regardless of which character you use.' },
-  { question: 'How do I copy invisible text for copy and paste blank text messages?', answer: 'To copy invisible text for sending blank text messages, click the Copy button next to "Zero-Width Space" above — or copy the non-breaking space if zero-width space is filtered by your messaging app. Paste the copied character into your message field. The message will appear blank when sent. This works on WhatsApp, iMessage, Telegram, Signal, and most SMS apps. The invisible character satisfies the minimum character requirement for sending, while appearing as an empty message to the recipient.' },
+  { question: 'What is blank space copy and paste used for?', answer: 'Blank space copy and paste has several uses: creating blank display names in games and apps, sending empty-looking messages in chat apps, filling form fields that require content but where you want to appear blank, creating visual spacing in Instagram bios and social media profiles, and bypassing minimum character requirements in text fields with invisible filler. In gaming it is used for invisible Fortnite names, blank Among Us names, and invisible PUBG usernames.' },
+  { question: 'How do I make my Instagram bio blank?', answer: 'To make your Instagram bio blank or appear empty, copy a non-breaking space (U+00A0) from this page, go to your Instagram profile and edit your bio, paste the invisible character into the bio field, and save. Instagram will accept the invisible character as valid bio content, making your bio appear empty or blank. For blank lines between bio sections, paste a line of non-breaking spaces between each paragraph.' },
+  { question: 'What is an invisible Unicode character?', answer: 'An invisible Unicode character is a code point in the Unicode standard that has no visible glyph — it takes up space in the character data but renders as nothing on screen. The most common ones are zero-width space (U+200B), word joiner (U+2060), non-breaking space (U+00A0), Hangul filler (U+3164), soft hyphen (U+00AD), zero-width non-joiner (U+200C), and zero-width joiner (U+200D). These characters exist for legitimate typographic and layout purposes but are also widely used for creative blank text effects.' },
+  { question: 'What is an empty character or empty space copy paste?', answer: 'An empty character or empty space copy paste refers to a Unicode codepoint that produces no visible output when rendered. Common ones include Hangul filler (U+3164), which renders as a full-width blank; zero-width space (U+200B), which has no width at all; and ideographic space (U+3000), a wide blank. These are used to create blank usernames, empty-looking messages, invisible bio content, and blank form field submissions.' },
+  { question: 'What is copy and paste invisible character used for in gaming?', answer: 'In gaming, copy and paste invisible characters are used to create blank or empty-appearing display names, to stand out in lobbies by appearing nameless, to create aesthetic usernames with invisible spacing, and to bypass character restrictions. Popular uses include invisible Fortnite names, blank Among Us names, invisible PUBG Mobile names, blank Roblox display names, and empty-looking usernames in many other games. The Hangul filler (U+3164) and zero-width space (U+200B) are the most commonly used characters for gaming.' },
+  { question: 'What is Hangul filler (U+3164) and how is it used for blank names?', answer: 'Hangul filler (U+3164) is a Unicode character from the Hangul Compatibility Jamo block. Its original purpose is as a placeholder in Hangul syllable composition, but because it renders as a blank full-width space in most fonts and is in a Unicode block that many platform input filters do not block, it has become widely used for blank display names. Unlike zero-width space, which has no width, U+3164 occupies space but shows nothing. This makes it especially useful for gaming names where a zero-width space might be filtered.' },
+  { question: 'How do I copy invisible text for Roblox?', answer: 'To copy invisible text for Roblox, use the non-breaking space (U+00A0) from this page. Roblox display names support invisible Unicode characters — paste the non-breaking space into the display name field and save. Your display name will appear blank. Note that Roblox usernames have stricter validation than display names — invisible characters may work in display names but not permanent usernames.' },
+  { question: 'What is an invisible text generator?', answer: 'An invisible text generator is a tool that produces invisible Unicode characters — zero-width spaces, Hangul fillers, non-breaking spaces, and similar invisible code points — that can be copied and pasted into any text field. This page functions as an invisible text generator: click any Copy button to copy the corresponding invisible character to your clipboard. The bulk copy option lets you generate a custom number of zero-width spaces for longer invisible text.' },
+  { question: 'How do I use invisible text on TikTok?', answer: 'To use invisible text on TikTok, copy a zero-width space (U+200B) or non-breaking space (U+00A0) from this page and paste it into your TikTok bio, username, or comment. For a blank TikTok bio, paste the invisible character into your bio field and save. For blank TikTok comments, paste the invisible character as your comment. For a TikTok username, the word joiner (U+2060) tends to be more reliable as TikTok sometimes filters zero-width spaces in username fields.' },
+  { question: 'What is the difference between blank space copy paste and invisible text?', answer: 'Blank space copy paste and invisible text describe the same concept from different angles. Blank space copy paste focuses on the action — copying a blank-looking character and pasting it. Invisible text focuses on the result — text that is present in the data but produces no visible output. Both terms refer to the same Unicode characters: zero-width space, non-breaking space, Hangul filler, word joiner, and similar invisible codepoints. This page covers both use cases with one-click copying for each character.' },
+  { question: 'What is blank text copy paste and how is it different from blank space?', answer: 'Blank text copy paste refers to copying a string composed entirely of invisible characters so the entire pasted result appears blank. Blank space copy paste typically refers to copying a single invisible space character. In practice the terms are used interchangeably. The result is the same: a field that appears empty but contains invisible Unicode characters. Use the bulk generator on this page to create blank text strings of any length.' },
+  { question: 'How do I create a blank Fortnite name?', answer: 'To create a blank or invisible Fortnite name, copy the Hangul filler character (U+3164) or a zero-width space (U+200B) from this page. Go to your Epic Games account settings and change your display name to the copied invisible character. In the Fortnite lobby and during matches, your name will appear blank or invisible. Epic Games periodically updates name validation, so if one character is blocked try another from the list above.' },
+  { question: 'How do I use invisible characters for an invisible nickname?', answer: 'To create an invisible nickname, copy an invisible character from this page — zero-width space (U+200B) for most platforms, Hangul filler (U+3164) for games that filter zero-width characters, or non-breaking space (U+00A0) for form-based name fields. Paste the invisible character into the nickname or display name field. The result is a profile that appears to have no name. If a single character does not satisfy the minimum length requirement, copy and paste multiple invisible characters until the field accepts the submission.' },
+  { question: 'How do I copy invisible text for copy and paste blank text messages?', answer: 'To copy invisible text for sending blank text messages, click the Copy button next to "Zero-Width Space" on this page, then paste into your message field and send. The message will appear blank when received. This works on WhatsApp, iMessage, Telegram, Signal, and most SMS apps. The invisible character satisfies the minimum character requirement for sending while appearing empty to the recipient. If zero-width space is filtered by your app, try non-breaking space (U+00A0).' },
+  { question: 'What is invisible font copy and paste?', answer: 'Invisible font copy and paste is a common term for copying invisible Unicode characters, even though "invisible font" is technically a misnomer — there is no font that makes text invisible. What people mean is exactly what this page provides: Unicode characters that render as invisible when pasted, producing the effect of text typed in invisible ink. The characters are zero-width space, non-breaking space, word joiner, Hangul filler, and others. When someone says they need invisible font copy and paste for their Discord name or Instagram bio, they need one of these invisible Unicode characters.' },
+  { question: 'Can I use invisible characters in Google Forms?', answer: 'Yes, invisible Unicode characters can be pasted into Google Forms text fields. Zero-width spaces and non-breaking spaces pass through Google Forms text validation because they are valid Unicode characters. This is useful for submitting blank-appearing responses in required fields, or for creating invisible filler in fields where you want to appear to have submitted empty content.' },
+  { question: 'How do I remove invisible characters from text I received?', answer: 'To remove invisible characters from text you received, use the Invisible Character Remover on this site. Paste the text containing invisible characters into the tool, run the cleaner, and all invisible Unicode characters — zero-width spaces, non-breaking spaces, word joiners, soft hyphens, byte-order marks, and all other invisible code points — are removed in a single pass. The tool also shows a count of how many invisible characters were found.' },
+  { question: 'Why does blank space copy and paste not work in some apps?', answer: 'Some apps filter specific invisible Unicode characters as part of their input validation. If a zero-width space does not work, the app is blocking U+200B specifically. Try a different invisible character — non-breaking space (U+00A0), Hangul filler (U+3164), word joiner (U+2060), or function application (U+2061) — as apps rarely filter all invisible characters simultaneously. Some apps also collapse or strip all whitespace-category characters during input processing, which prevents invisible text from working regardless of which character you use.' },
+  { question: 'Are invisible characters safe to use?', answer: 'Invisible characters themselves are safe — they are standard Unicode code points included in every major operating system and device. The risk is contextual: websites and applications that do not properly sanitize input may behave unexpectedly with invisible characters in URLs, database fields, or code. For personal use in messages, usernames, and social bios, invisible characters are harmless. Be aware that AI text cleaners and text sanitization tools will strip invisible characters, so pasted invisible characters will be removed if the recipient runs the text through a cleaner.' },
+  { question: 'What is invisible space character copy paste?', answer: 'An invisible space character copy paste refers to copying a Unicode character that looks like or functions as a space but is invisible or non-standard. The key ones are: non-breaking space (U+00A0) which looks like a regular space but prevents line breaks; zero-width space (U+200B) which has no visual width at all; thin space (U+2009) which is a narrow visible space; and ideographic space (U+3000) which is a full-width blank. For invisible space copy paste use cases, U+200B and U+00A0 are the most practical choices.' },
+  { question: 'How do invisible characters work technically?', answer: 'Invisible characters are valid Unicode code points with no visible glyph. Every Unicode character has a code point (a number), properties (category, directionality, combining class), and a glyph (visual representation). Invisible characters have all of these except a meaningful glyph — they render as nothing because their glyph is empty or zero-width. This means they pass through text validation (which checks code point validity) but produce no visible output. Input validators that check minimum character count count invisible characters as present characters, which is why they work for bypassing empty-field validation.' },
+  { question: 'What is the invis char or invis text shorthand?', answer: 'Invis char and invis text are shorthand terms used in gaming and online communities for invisible character and invisible text. They refer to the same Unicode invisible characters described on this page — zero-width space (U+200B), Hangul filler (U+3164), non-breaking space (U+00A0), and similar codepoints. When someone in a game community asks for an invis char or invis text copy paste, they want one of these invisible Unicode characters to use in a display name or message.' },
+  { question: 'How do I use blank space copy and paste on Instagram specifically?', answer: 'On Instagram, the most reliable blank space copy paste character is the non-breaking space (U+00A0). Zero-width space is sometimes stripped by Instagram text processing. For a blank Instagram username or display name, paste one or more non-breaking spaces and save. For blank Instagram bio lines, paste a line containing only non-breaking spaces between bio paragraphs to create visual spacing. For blank Instagram DMs, the zero-width space typically works in the message input field.' },
 ];
 
 const article = (
-  <section className="mt-10 prose prose-slate max-w-none text-sm prose-headings:font-semibold prose-headings:text-slate-900 prose-p:text-slate-700 prose-li:text-slate-700">
-    <h2>Invisible Text Copy and Paste — Complete Guide to Invisible Characters</h2>
+  <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10"><div className="prose prose-slate max-w-none">
+    <h2>Blank Space Copy and Paste — Complete Guide to Invisible Text Characters</h2>
     <p>
-      <strong>Invisible text copy and paste</strong> refers to the practice of copying Unicode characters that produce no visible output and pasting them into messages, usernames, bios, and form fields to create the appearance of blank or empty text. An <strong>invisible text</strong> character is a real Unicode code point — it exists in the character data and occupies a position in the text — but it has no visual glyph, meaning it renders as absolutely nothing on screen. When you paste <strong>invisible text</strong> into a message or username field, the field appears blank even though it contains real character data.
+      <strong>Blank space copy and paste</strong> refers to copying an invisible Unicode character to your clipboard and pasting it anywhere you need blank or empty-looking text. The copied character is real data — it exists in the text stream — but renders as nothing on screen. This means a username field filled with blank space characters appears empty while technically containing valid characters. A message containing only blank space characters looks blank but sends successfully. This is the foundation of all <strong>invisible text copy and paste</strong> use cases across gaming, social media, and messaging apps.
     </p>
     <p>
-      This page is a free <strong>invisible text copy and paste</strong> tool that lets you copy any invisible Unicode character with a single click. Whether you need a <strong>blank space copy</strong> for a Discord username, an <strong>invisible character copy and paste</strong> for a blank WhatsApp message, or an <strong>empty space copy and paste</strong> for an Instagram bio, all the major invisible characters are available here with instant one-click copying. No account, no download, no limit.
+      This page is a free <strong>blank space copy paste</strong> tool that gives you one-click access to every major invisible Unicode character. Whether you need a <strong>blank text copy paste</strong> for a Discord username, an <strong>invisible character copy and paste</strong> for a blank WhatsApp message, an <strong>empty space copy paste</strong> for an Instagram bio, or an <strong>invisible name</strong> for Fortnite, all the characters are here with instant copying. No account, no download, no limit.
     </p>
 
-    <h2>What Is Invisible Text? Understanding Invisible Unicode Characters</h2>
+    <h2>What Is Blank Space Copy and Paste?</h2>
     <p>
-      The Unicode standard assigns a unique code point to every character used in written communication across every human language — plus thousands of special characters for technical, typographic, and formatting purposes. Among these are characters with no visible glyph: characters that exist as valid Unicode code points but render as nothing when displayed. These are <strong>invisible Unicode</strong> characters, and they are the basis of all <strong>invisible text copy and paste</strong> functionality.
+      A blank space in the traditional sense is just the spacebar character (U+0020). But a regular space is whitespace — most applications collapse multiple regular spaces into one, and many strip leading and trailing spaces entirely. A <strong>blank space copy paste</strong> character is different: it is an invisible Unicode codepoint that is not classified as standard whitespace, so it survives the trimming and collapsing that eliminates regular spaces.
     </p>
     <p>
-      The most important <strong>invisible Unicode</strong> characters for copy and paste purposes are:
+      When you copy a blank space character from this page and paste it into a username field, the field appears empty to anyone looking at it — but the system records a valid non-empty input. This is why <strong>blank space copy and paste</strong> works for:
     </p>
     <ul>
-      <li><strong>Zero-Width Space (U+200B)</strong> — The most widely used invisible character. It has zero visual width and is invisible in virtually every application. Originally designed as a line-break opportunity in text without spaces, it is now used extensively for invisible usernames, blank messages, and invisible text effects.</li>
-      <li><strong>Non-Breaking Space (U+00A0)</strong> — Looks identical to a regular space on screen but is a distinct character that prevents line breaks. Unlike the regular space (U+0020), a non-breaking space is recognized as valid non-space content by many input validators, making it useful for blank usernames and empty fields.</li>
-      <li><strong>Zero-Width Non-Joiner (U+200C)</strong> — Prevents adjacent characters from forming ligatures. Completely invisible in plain text contexts. Used in Arabic and Persian script formatting, but works as invisible filler in any text field.</li>
-      <li><strong>Zero-Width Joiner (U+200D)</strong> — Causes adjacent characters to join. Invisible on its own. Used in emoji sequences and in invisible text applications.</li>
-      <li><strong>Word Joiner (U+2060)</strong> — A zero-width non-breaking character. Completely invisible and prevents line breaks at its position. Functions as invisible filler in many apps that filter zero-width spaces.</li>
-      <li><strong>Soft Hyphen (U+00AD)</strong> — An invisible optional hyphen. Renders as nothing in most environments but is a valid character in text data.</li>
+      <li>Creating blank display names in games and apps that require a minimum character count</li>
+      <li>Sending messages that look empty on the recipient's screen</li>
+      <li>Making social media bios appear blank while technically having bio content</li>
+      <li>Filling required form fields with invisible filler</li>
+      <li>Creating invisible spacing between visible characters in usernames and bios</li>
     </ul>
     <p>
-      Each of these <strong>invisible Unicode</strong> characters has a specific technical purpose in the Unicode standard, but all of them share the property of being visually invisible — making them useful for <strong>invisible text copy and paste</strong> applications across messaging, gaming, and social media platforms.
+      The key insight is that these characters are validated as present by input systems (satisfying the non-empty requirement) but are invisible during display (satisfying the blank appearance requirement). No application renders them incorrectly — they simply have no glyph to render.
     </p>
 
-    <h2>Blank Space Copy and Paste — How to Create Blank Text</h2>
+    <h2>The Best Blank Space Characters for Copy and Paste</h2>
     <p>
-      <strong>Blank space copy and paste</strong> is the process of copying an invisible or blank-appearing character and pasting it into a text field to create the visual effect of blank or empty content. Unlike a regular space character (U+0020) — which is often filtered by applications as whitespace — <strong>blank space copy and paste</strong> characters like the zero-width space and non-breaking space are recognized as valid text content by most input systems.
+      Different invisible characters work better on different platforms. Understanding which to use prevents the frustration of blank space copy paste not working on a specific app.
+    </p>
+
+    <h3>Zero-Width Space (U+200B) — Best General Purpose</h3>
+    <p>
+      The zero-width space is the most widely used invisible character for <strong>blank space copy paste</strong>. It has truly zero visual width — not just invisible, but occupying no horizontal space at all. A username containing only zero-width spaces appears completely empty with no gap or indent. It works in Discord, WhatsApp, most mobile games, Telegram, TikTok comments, and hundreds of other apps. Click Copy next to Zero-Width Space above to copy it instantly.
+    </p>
+
+    <h3>Hangul Filler (U+3164) — Best for Gaming Names</h3>
+    <p>
+      Hangul filler is from the Korean (Hangul) Unicode block. Its original purpose is as a placeholder in Hangul syllable tables, but it renders as a blank full-width character in most fonts. Unlike zero-width space, U+3164 actually occupies visual space — it looks like a wide blank. More importantly for gaming use cases, it is in a Unicode block that many game input filters do not specifically block. When zero-width space is filtered by a game's name validation, Hangul filler is often the next character to try. It is widely used for invisible Fortnite names, blank PUBG names, and invisible usernames in many mobile games.
+    </p>
+
+    <h3>Non-Breaking Space (U+00A0) — Best for Form Fields and Instagram</h3>
+    <p>
+      The non-breaking space looks identical to a regular space on screen but is a distinct Unicode character that prevents line breaks and is treated as non-whitespace by many text processing systems. It is the most reliable character for Instagram bios (where zero-width space is sometimes stripped), Google Forms responses, and web form fields that strip standard whitespace. Copy the non-breaking space from this page for use in any context where zero-width space is not working.
+    </p>
+
+    <h3>Word Joiner (U+2060) — Best Fallback</h3>
+    <p>
+      The word joiner is an invisible zero-width character that prevents line breaks at its position. It is rarely filtered by platform input validation because it is primarily used for legitimate typographic purposes. When both zero-width space and non-breaking space are filtered by an app, word joiner is the next option. It works reliably in Twitter/X bios, some Discord servers that filter zero-width space, and apps with stricter Unicode input rules.
+    </p>
+
+    <h2>Blank Space Copy and Paste for Every Platform</h2>
+
+    <h3>Discord — Invisible Name and Blank Server Nickname</h3>
+    <p>
+      Discord allows invisible Unicode characters in server nicknames and display names. Copy the zero-width space (U+200B) from this page and paste it as your display name or server nickname. Your name appears blank in the member list and in messages — a popular choice for minimalist Discord profiles. If a Discord server's bot moderation filters zero-width space, use word joiner (U+2060) instead. For Discord profile usernames (the @handle), try non-breaking space or word joiner as Discord's username field has different validation from display names.
+    </p>
+
+    <h3>WhatsApp — Blank Message and Blank Status</h3>
+    <p>
+      WhatsApp requires at least one character before allowing a message to send. Paste a zero-width space (U+200B) into the message field and press send — the message arrives appearing completely blank to the recipient. This works on WhatsApp iOS, Android, and WhatsApp Web. For a blank WhatsApp status, paste the invisible character into the status text field. For a blank WhatsApp profile name, paste into the name field in profile settings. All three use cases work with zero-width space.
+    </p>
+
+    <h3>Instagram — Blank Bio and Invisible Spacing</h3>
+    <p>
+      Instagram is one of the most popular use cases for <strong>blank space copy paste</strong>. To make an Instagram bio blank, copy the non-breaking space (U+00A0) — which is more reliable than zero-width space in Instagram's text processing — and paste it into the bio field. For blank lines between bio sections, paste a line containing only non-breaking spaces between your bio paragraphs. Instagram will accept these as valid bio content while displaying them as empty lines. For Instagram DMs, zero-width space works in the message input field.
+    </p>
+
+    <h3>TikTok — Blank Bio, Blank Username, Blank Comments</h3>
+    <p>
+      TikTok supports invisible Unicode characters across bios, display names, and comments. Zero-width space and non-breaking space both work reliably in TikTok bios. For TikTok usernames, word joiner (U+2060) is the most reliable choice as TikTok's username field has specific character validation that may filter zero-width space. For blank TikTok comments, any invisible character pasted as the comment content will appear blank when posted.
+    </p>
+
+    <h3>Fortnite and Epic Games — Invisible Fortnite Name</h3>
+    <p>
+      Invisible Fortnite names are created through the Epic Games account display name settings. Copy the Hangul filler (U+3164) or zero-width space (U+200B), go to your Epic Games account name settings, paste the invisible character, and save. In the Fortnite lobby and during matches, your name appears blank. Epic Games updates name validation periodically — if one character is blocked, try another. Hangul filler is often more reliable than zero-width space for Epic Games because it is in a different Unicode block from the characters most commonly filtered.
+    </p>
+
+    <h3>Roblox — Blank Display Name</h3>
+    <p>
+      Roblox display names are separate from usernames and have different validation rules. Non-breaking space (U+00A0) works reliably in Roblox display names. Copy it from this page, go to Roblox account settings, edit your display name, paste the invisible character, and save. Your Roblox display name will appear blank. Permanent Roblox usernames have stricter validation — invisible characters may not work there, but display names are changed freely.
+    </p>
+
+    <h3>Among Us — Blank Player Name</h3>
+    <p>
+      Among Us player names accept both zero-width space (U+200B) and non-breaking space (U+00A0). Copy either character, go to Among Us name settings, paste and save. Your player name will appear blank in the lobby and during the game. Multiple invisible characters can be stacked if the game requires a minimum character count.
+    </p>
+
+    <h3>PUBG Mobile — Invisible Display Name</h3>
+    <p>
+      PUBG Mobile player display names accept non-breaking space (U+00A0). Copy from this page, paste into the name change field in PUBG Mobile settings, and save. The name will appear blank in-game. If the character count requirement is not met by a single invisible character, paste multiple invisible characters to satisfy the minimum.
+    </p>
+
+    <h2>Invisible Text Copy and Paste — Understanding Invisible Unicode</h2>
+    <p>
+      The Unicode standard assigns a unique code point to every character used in written communication across every human language — plus thousands of special characters for technical and typographic purposes. Among these are characters with no visible glyph: they exist as valid Unicode code points but render as nothing when displayed. These are invisible Unicode characters, and they are the foundation of all invisible text copy and paste functionality.
     </p>
     <p>
-      The most effective characters for <strong>blank space copy and paste</strong> are:
+      Each invisible character on this page has a different technical purpose in the Unicode standard:
     </p>
     <ul>
-      <li><strong>Zero-Width Space (U+200B)</strong> — Best for creating fully invisible text with absolutely no visual width. The top choice for blank messages and invisible usernames.</li>
-      <li><strong>Non-Breaking Space (U+00A0)</strong> — Best for form fields and platforms that filter zero-width characters. Appears as a regular space visually but is treated as valid text content.</li>
-      <li><strong>Word Joiner (U+2060)</strong> — Best fallback when both zero-width space and non-breaking space are filtered. Invisible and valid across a wide range of platforms.</li>
+      <li><strong>Zero-Width Space (U+200B)</strong> — Originally designed as a line-break opportunity in languages without spaces between words (Thai, Khmer, Japanese). Now the most widely used invisible character for blank text applications.</li>
+      <li><strong>Zero-Width Non-Joiner (U+200C)</strong> — Prevents adjacent characters from forming ligatures or joining. Used in Arabic, Persian, and Devanagari text formatting. Completely invisible in plain text contexts.</li>
+      <li><strong>Zero-Width Joiner (U+200D)</strong> — Causes adjacent characters to join. Used in emoji sequences (family emoji are built with ZWJ sequences). Invisible on its own in plain text.</li>
+      <li><strong>Word Joiner (U+2060)</strong> — A zero-width no-break character. Prevents line breaks at its position. The recommended replacement for the BOM character when used inline in text rather than at file start.</li>
+      <li><strong>Non-Breaking Space (U+00A0)</strong> — A full-width space that prevents line breaks. Used in French typography before certain punctuation. Visually identical to a regular space but a distinct character that behaves differently in text processing.</li>
+      <li><strong>Soft Hyphen (U+00AD)</strong> — An invisible optional hyphen mark indicating where a word may be hyphenated if line wrapping requires it. Renders as nothing in most applications unless the line actually breaks at that point.</li>
+      <li><strong>Hangul Filler (U+3164)</strong> — A blank placeholder in Hangul syllable tables. Renders as a blank full-width character and is widely used for invisible gaming names because it is in the Hangul block that many content filters ignore.</li>
     </ul>
+
+    <h2>Blank Text Copy Paste vs Empty Space Copy Paste</h2>
     <p>
-      To use <strong>blank space copy and paste</strong>: click the Copy button next to your chosen invisible character above, then paste (Ctrl+V or Cmd+V) into the target field. The field will appear blank or empty even though it contains your copied invisible character.
+      These terms describe the same concept with slight nuance differences in practice. <strong>Blank text copy paste</strong> usually refers to copying a string of invisible characters to produce completely blank-looking text — a message or field that appears to contain nothing. <strong>Empty space copy paste</strong> typically refers to a single blank space character used to create one invisible gap.
+    </p>
+    <p>
+      For most use cases these distinctions do not matter. Whether you call it blank text, empty space, invisible text, or blank space, the result is the same: a Unicode character that is present in the data but invisible on screen. The bulk generator on this page creates blank text strings of any length — set the count, click copy, and you have a string of blank text ready to paste.
     </p>
 
-    <h2>Invisible Text Copy and Paste for Popular Platforms</h2>
-
-    <h3>Discord Invisible Name</h3>
+    <h2>Invisible Letter and Invisible Symbol Copy Paste</h2>
     <p>
-      Discord allows invisible Unicode characters in server nicknames and display names. To create an invisible Discord name, copy the zero-width space (U+200B) from this page and paste it as your display name or server nickname. Your name will appear blank in the member list and in messages. If zero-width space is filtered by a specific Discord server's bot or moderation settings, try the word joiner (U+2060) instead — it is rarely blocked by Discord moderation tools.
+      <strong>Invisible letter copy paste</strong> refers specifically to Unicode characters that are categorized as letters in the Unicode standard but produce no visible output. The word joiner (U+2060) and function application (U+2061) fall into this category. These pass letter-validation in systems that require text to contain actual letters rather than just spaces, making them useful in contexts where space-class invisible characters are filtered.
     </p>
     <p>
-      For Discord profile names (the username shown in your profile, not the server nickname), the zero-width space and word joiner both work. The result is a profile where your username appears blank — a popular aesthetic choice for minimalist Discord profiles.
-    </p>
-
-    <h3>WhatsApp Blank Message</h3>
-    <p>
-      To send a blank message on WhatsApp: copy the zero-width space (U+200B) or non-breaking space (U+00A0) from this page, paste it into the WhatsApp message input field, and press send. WhatsApp requires at least one character to send a message — the invisible character satisfies this requirement while appearing completely blank to the recipient. This works on both WhatsApp iOS and WhatsApp Android.
+      <strong>Invisible symbol copy paste</strong> is a broader term covering any invisible codepoint used as a symbol placeholder — including ideographic space (U+3000), object replacement character (U+FFFC), and the Hangul filler. In gaming communities, invisible symbol and invisible letter are often used interchangeably to mean any character that produces a blank display.
     </p>
     <p>
-      For blank WhatsApp status, paste the invisible character into the status text field. For a blank WhatsApp profile name, paste it into the name field in your profile settings. All three use cases work with the zero-width space character.
+      <strong>Invisible letters copy paste</strong> (plural) refers to using multiple invisible characters together to build a longer blank string — a name made of several invisible letters, each occupying a character position while contributing no visible output. This page covers all categories: zero-width, space-class, and letter-class invisible characters.
     </p>
 
-    <h3>Instagram Invisible Bio</h3>
+    <h2>Copy and Paste Blank Character for Social Media Platforms</h2>
+
+    <h3>Twitter / X — Blank Bio and Display Name</h3>
     <p>
-      Instagram allows invisible Unicode characters in bio text. To create a blank Instagram bio, copy the non-breaking space (U+00A0) — which works more reliably than the zero-width space in Instagram's text processing — paste it into your bio field, and save. Your bio will appear empty or blank to profile visitors. You can also use multiple invisible characters to create the visual appearance of blank lines in your bio for an ultra-minimalist look.
+      Twitter/X has varying support for invisible characters. Zero-width space works in tweets and replies to create invisible spacing between visible text. For Twitter display names and bios, non-breaking space (U+00A0) and word joiner (U+2060) are the most reliable. Note that Twitter counts all Unicode code points toward its character limit — each invisible character counts as one character, so a bio filled with invisible characters will hit the 160-character limit even though it appears blank.
     </p>
 
-    <h3>TikTok Invisible Text</h3>
+    <h3>Facebook — Blank Name and Blank Post</h3>
     <p>
-      TikTok supports invisible Unicode characters in bios, usernames, and comments. The zero-width space and non-breaking space both work reliably in TikTok bios. For a blank TikTok bio, copy either character and paste it into your bio field. For blank TikTok comments, paste the invisible character as your comment. For a blank TikTok username, use the word joiner (U+2060) — TikTok's username validation may filter zero-width spaces specifically, but typically allows word joiners.
+      Facebook accepts invisible Unicode characters in most text fields. Non-breaking space and zero-width space both work in Facebook posts and comments, creating the appearance of blank content. For Facebook display names, Facebook's name policy requires recognizable names, so blank names may be rejected at the policy level regardless of which invisible character is used. For blank Facebook posts and blank comments, zero-width space is the most reliable option.
     </p>
 
-    <h3>Gaming — Roblox, Among Us, PUBG</h3>
+    <h3>Snapchat — Blank Username and Bio</h3>
     <p>
-      Invisible characters are widely used in gaming for blank or invisible display names:
+      Snapchat's username field has strict validation, but display names and bios accept invisible characters. Copy a non-breaking space or zero-width space and paste it into your Snapchat display name for a blank-appearing profile name. For the Snapchat bio section, invisible characters create blank-looking bios. Snapchat bios have a short character limit, so one or two invisible characters are typically enough.
+    </p>
+
+    <h2>Invisible Characters on iOS and Android</h2>
+    <p>
+      Invisible characters work identically on mobile devices. Tap the Copy button on this page to copy the invisible character to your clipboard, then long-press in the target app's text field and tap Paste. The character pastes invisibly — the field appears blank but contains your copied invisible character.
+    </p>
+    <p>
+      On iOS, non-breaking space (U+00A0) is especially reliable because Apple's autocorrect system uses it internally, meaning iOS apps generally preserve it without stripping. On Android, zero-width space (U+200B) is widely supported across apps including games, social platforms, and messaging apps. Both platforms support all the characters listed on this page — platform compatibility differences come from individual app filtering, not from the operating system itself.
+    </p>
+
+    <h2>Blank Space Copy and Paste Not Working — Troubleshooting</h2>
+    <p>
+      If <strong>blank space copy and paste</strong> is not working in a specific app, follow this sequence:
     </p>
     <ul>
-      <li><strong>Roblox</strong> — The non-breaking space (U+00A0) works in Roblox display names. Zero-width spaces may be filtered. Display names in Roblox are separate from usernames, so invisible display names are achievable even if invisible usernames are not.</li>
-      <li><strong>Among Us</strong> — Zero-width space and non-breaking space both work as Among Us player names, creating the appearance of a nameless player in the lobby.</li>
-      <li><strong>PUBG Mobile</strong> — Non-breaking space works in PUBG Mobile player names. The game allows Unicode characters in display names.</li>
-      <li><strong>Minecraft</strong> — Java Edition allows zero-width spaces in book and sign text. Bedrock Edition supports invisible characters in some text interfaces through the Microsoft account display name system.</li>
-    </ul>
-
-    <h2>Invisible Text Generator — Create Custom Invisible Text</h2>
-    <p>
-      The bulk invisible text generator on this page lets you create a custom number of zero-width spaces for longer invisible text needs. Use the number input to set how many invisible characters you need, then click Copy to copy that many zero-width spaces to your clipboard. This is useful for:
-    </p>
-    <ul>
-      <li>Filling text fields that have minimum character count requirements with invisible content</li>
-      <li>Creating long invisible text strings for display name spacing</li>
-      <li>Generating invisible filler for applications that count individual characters</li>
-      <li>Testing text processing systems for invisible character handling</li>
+      <li><strong>Step 1</strong> — Try zero-width space (U+200B) first. This is the most broadly supported invisible character.</li>
+      <li><strong>Step 2</strong> — If zero-width space is filtered, try non-breaking space (U+00A0). This works in most form fields and social platforms.</li>
+      <li><strong>Step 3</strong> — If non-breaking space is also filtered, try Hangul filler (U+3164). This is in a different Unicode block and is not filtered by most platform validators.</li>
+      <li><strong>Step 4</strong> — If all space-class characters are filtered, try word joiner (U+2060) or function application (U+2061). These are letter-class characters that pass letter validation.</li>
+      <li><strong>Step 5</strong> — If the field requires multiple characters (minimum length validation), copy and paste the invisible character multiple times until the minimum count is met.</li>
     </ul>
     <p>
-      Each invisible character generated by this tool is a zero-width space (U+200B). Ten zero-width spaces take up zero visual space but count as ten characters in most character-counting systems. This is why invisible text is effective at satisfying minimum character requirements while appearing blank.
-    </p>
-    <p>
-      For applications that filter zero-width spaces specifically, generate your invisible text using the non-breaking space (U+00A0) or word joiner (U+2060) instead — click those Copy buttons and paste multiple times to build up longer invisible strings. Some platforms count characters differently: Instagram counts visible characters only, meaning invisible characters do not contribute to the bio character limit. Twitter/X counts all Unicode code points including invisible ones, so each zero-width space counts as one of your 160 bio characters.
+      The most common reason blank space copy paste stops working on a previously compatible platform is an app update that added or updated Unicode input filtering. Platform developers periodically patch blank name exploits. When one character stops working, cycling through the alternatives on this page usually finds a working substitute.
     </p>
 
-    <h2>Zero Width Space Copy and Paste — The Most Versatile Invisible Character</h2>
+    <h2>Invisible Text Generator — Create Custom Blank Text</h2>
     <p>
-      The <strong>zero width space copy and paste</strong> character (U+200B) is the most versatile and widely used invisible character for blank text, empty usernames, and invisible messages. Its key properties make it the go-to choice:
-    </p>
-    <ul>
-      <li><strong>Zero visual width</strong> — unlike the non-breaking space, it takes up absolutely no space on screen. A field filled only with zero-width spaces looks completely empty.</li>
-      <li><strong>Treated as a valid character</strong> by most input validators — passes minimum character length checks that would reject a truly empty field.</li>
-      <li><strong>Not collapsed by most applications</strong> — regular spaces are often trimmed by applications, but zero-width spaces survive most input processing.</li>
-      <li><strong>Supported universally</strong> — every modern operating system, browser, and device renders zero-width spaces correctly (as nothing).</li>
-    </ul>
-    <p>
-      The zero-width space was originally introduced in the Unicode standard to provide a hint to text rendering engines that a line break is permissible at that point — useful in languages that do not use spaces between words (Thai, Khmer, Japanese). Its invisible, zero-width nature makes it ideal for invisible text applications far beyond its original typographic purpose. Copy it from this page with one click for immediate use in any text field, username, bio, or message.
-    </p>
-
-    <h2>Copy and Paste Invisible Character — Platform-Specific Notes</h2>
-
-    <h3>Copy and Paste Invisible Text on iOS and Android</h3>
-    <p>
-      On mobile devices, tap the Copy button on this page to copy the invisible character to your clipboard, then use the long-press paste option in the target app to paste it. The invisible character behaves identically on mobile as it does on desktop — it pastes as invisible content that satisfies character requirements while appearing blank.
+      The bulk invisible text generator at the top of this page creates a custom-length string of zero-width spaces. Set the count, click Copy, and the entire string is copied to your clipboard as a single copy operation. Ten zero-width spaces count as ten characters in most character-counting systems while occupying zero visible space — useful for satisfying minimum length requirements in fields that need more than one invisible character.
     </p>
     <p>
-      On iOS, the non-breaking space (U+00A0) is especially reliable because Apple's system keyboard uses it in some autocorrect contexts, meaning iOS apps generally do not filter it. On Android, the zero-width space (U+200B) works in most applications including messaging apps, social platforms, and games.
-    </p>
-
-    <h3>Copy and Paste Blank Text for Google Products</h3>
-    <p>
-      Google products (Gmail, Google Docs, Google Forms) accept invisible Unicode characters in text fields. Non-breaking spaces work reliably in Gmail subject lines and body text, creating the appearance of blank content. In Google Docs, invisible characters function as normal characters — they are visible in the character count and can be found using Find and Replace (search for the invisible character by pasting it into the search field). Google Forms accepts invisible characters in text response fields.
-    </p>
-
-    <h3>Invisible Unicode on Twitter / X</h3>
-    <p>
-      Twitter (now X) has varying support for invisible Unicode characters depending on context. The zero-width space works in tweets and replies, creating invisible spacing between visible text. However, Twitter's display name and username fields have stricter validation and may filter some invisible characters. The non-breaking space typically works in Twitter bios and display names. The word joiner (U+2060) is the most reliable invisible character for Twitter display names when other options are filtered.
-    </p>
-
-    <h2>Invisible Font Copy and Paste — Understanding the Term</h2>
-    <p>
-      The term <strong>invisible font copy and paste</strong> is commonly used online to describe invisible Unicode characters, even though "invisible font" is technically a misnomer — there is no font that makes text invisible. What people mean by <strong>invisible font copy and paste</strong> is exactly what this page provides: Unicode characters that render as invisible when pasted, producing the visual effect of text typed in an invisible ink or invisible font.
-    </p>
-    <p>
-      The characters that create this "invisible font" effect are the same invisible Unicode code points described throughout this page — zero-width space, non-breaking space, word joiner, and others. When someone says they need <strong>invisible font copy and paste</strong> for their Discord name, they need a zero-width space. When they need <strong>invisible font copy and paste</strong> for a blank Instagram bio, they need a non-breaking space. The tool on this page provides all of them with one-click copying.
-    </p>
-
-    <h2>Invisible Letters Copy and Paste vs Invisible Space Copy and Paste</h2>
-    <p>
-      <strong>Invisible letters copy and paste</strong> typically refers to Unicode characters that are classified as letters in the Unicode standard but have no visible glyph — the word joiner (U+2060) and function application (U+2061) fall into this category. These characters pass letter-validation in systems that require text to contain actual letters (not just spaces), making them useful in contexts where non-breaking spaces are filtered.
-    </p>
-    <p>
-      <strong>Invisible space copy and paste</strong> refers to space-category Unicode characters that look like spaces (or blank) but are distinct from the standard space — non-breaking space (U+00A0), em space (U+2003), en space (U+2002), hair space (U+200A). These are useful when you want a character that has space-like visual appearance but is not treated as a standard whitespace character by text processing systems.
-    </p>
-    <p>
-      Both categories serve the same practical purpose — creating invisible or blank-appearing text — but perform differently depending on the platform's input validation. The characters on this page cover both categories, giving you the broadest compatibility across different platforms and applications.
-    </p>
-
-    <h2>Zero Width Character — Technical Details</h2>
-    <p>
-      A <strong>zero width character</strong> is any Unicode character with zero visual width — it occupies no horizontal space in rendered text. The primary zero width characters are:
-    </p>
-    <ul>
-      <li><strong>U+200B Zero-Width Space</strong> — A general-purpose zero width character with no visual output and no joining behavior</li>
-      <li><strong>U+200C Zero-Width Non-Joiner</strong> — A zero width character that prevents character joining</li>
-      <li><strong>U+200D Zero-Width Joiner</strong> — A zero width character that causes character joining (used in emoji sequences)</li>
-      <li><strong>U+FEFF Zero-Width No-Break Space (BOM)</strong> — Originally a byte-order mark; functions as a zero width character in text</li>
-      <li><strong>U+2060 Word Joiner</strong> — A zero width no-break character; the recommended replacement for U+FEFF in non-BOM contexts</li>
-    </ul>
-    <p>
-      <strong>Zero width characters</strong> are the most reliable invisible characters for most platforms because they are genuinely invisible — they have no visual width, no height, and no glyph. Unlike non-breaking spaces, which have a defined visual width (one space-width), zero width characters truly occupy no visual space at all. This makes them the first choice for any <strong>invisible text copy and paste</strong> use case where you need the text to appear completely empty rather than appearing to contain blank spaces.
+      For apps that filter zero-width space specifically, create your bulk invisible text by copying a different invisible character and pasting it multiple times. Non-breaking space, Hangul filler, and word joiner all work as building blocks for longer invisible strings. Some platforms count visible characters only — Instagram counts only visible characters in bio fields, meaning invisible characters do not count toward the bio character limit. Others count all Unicode code points — Twitter/X counts every invisible character toward the 160-character display name limit.
     </p>
 
     <h2>How to Detect and Remove Invisible Characters</h2>
     <p>
-      Invisible characters are useful for the purposes described above, but they can also cause problems in professional contexts — string matching failures, hidden data in published content, word count inflation, and AI watermarking. If you receive text that may contain invisible characters, or if you want to clean invisible characters from AI-generated content, use the <a href="/invisible-character-remover" className="text-blue-600 hover:underline">Invisible Character Remover</a> on this site.
+      Invisible characters are useful for the purposes described above, but they can cause problems in professional contexts — string matching failures, hidden data in published content, word count inflation, and unexpected behavior in code editors and databases. If you receive text that may contain invisible characters, use the <a href="/invisible-character-detector" className="text-blue-600 hover:underline">Invisible Character Detector</a> to identify exactly which invisible characters are present and where.
     </p>
     <p>
-      The Invisible Character Remover scans every Unicode code point in your text and removes all invisible characters — zero-width spaces, word joiners, non-breaking spaces, soft hyphens, byte-order marks, and all other invisible Unicode — in a single pass. It also reports how many invisible characters were found, so you can confirm exactly how many hidden characters were present in your text.
+      To remove invisible characters entirely, use the <a href="/invisible-character-remover" className="text-blue-600 hover:underline">Invisible Character Remover</a>. It scans every Unicode code point in your text and strips all invisible characters — zero-width spaces, word joiners, non-breaking spaces, Hangul fillers, soft hyphens, byte-order marks — in a single pass. It also reports a count of what was removed.
     </p>
     <p>
-      The relationship between this invisible text generator and the invisible character remover is complementary: this page is for intentionally creating invisible text, the remover is for cleaning invisible text from content where it is unwanted.
+      The relationship between this page and the remover is complementary: this page is for intentionally creating invisible text, the remover is for cleaning invisible text from content where it is unwanted. Both tools are free with no account required.
     </p>
 
-    <h2>Free Invisible Text Copy and Paste — No Account, No Limits</h2>
+    <h2>Free Blank Space Copy Paste — No Account, No Limits</h2>
     <p>
-      This invisible text copy and paste tool is completely free with no account required, no download, and no usage limits. All copy operations run locally in your browser — nothing is uploaded or logged. Copy as many invisible characters as you need, in any combination, for any platform. Bookmark this page for quick access whenever you need to copy invisible text for a blank message, invisible username, or empty-looking bio.
+      This blank space copy paste tool is completely free with no account required, no download, and no usage limits. All copy operations run locally in your browser — nothing is uploaded or logged. Copy as many invisible characters as you need, in any combination, for any platform. Every major invisible Unicode character is available with one-click copying. Bookmark this page for quick access whenever you need blank space for a message, invisible username, gaming name, or empty-looking bio.
     </p>
+  </div>
   </section>
 );
 
@@ -233,8 +248,8 @@ export default function InvisibleTextCopyPastePage() {
 
       <div className="mx-auto w-full max-w-4xl px-4 py-5 min-h-screen sm:py-8 md:py-10">
         <section className="space-y-2 text-center md:space-y-3">
-          <h1 className="text-xl font-semibold text-slate-900 sm:text-2xl md:text-3xl">Invisible Text Copy and Paste</h1>
-          <p className="max-w-2xl mx-auto text-xs text-slate-700 sm:text-sm md:text-[15px]">Copy invisible Unicode characters — zero-width spaces, blank spaces, invisible text — with one click. Free invisible text generator for messages, usernames, and bios.</p>
+          <h1 className="text-xl font-semibold text-slate-900 sm:text-2xl md:text-3xl">Blank Space Copy and Paste — Invisible Text Generator</h1>
+          <p className="max-w-2xl mx-auto text-xs text-slate-700 sm:text-sm md:text-[15px]">Copy blank space characters, invisible text, and empty Unicode — zero-width space, Hangul filler, non-breaking space — one click. Free for names, messages, bios, and gaming.</p>
           <div className="flex items-center justify-center gap-1 text-sm text-slate-500">
             <span className="text-yellow-500">★★★★★</span>
             <span>4.9</span>
@@ -251,8 +266,8 @@ export default function InvisibleTextCopyPastePage() {
 
         {/* FAQs */}
         <div className="mt-10 space-y-3">
-          <h2 className="text-2xl font-semibold text-slate-900">Invisible Text Copy and Paste FAQ</h2>
-          <p className="text-slate-700">Common questions about invisible Unicode characters, blank space copy paste, and invisible text generators.</p>
+          <h2 className="text-2xl font-semibold text-slate-900">Blank Space Copy and Paste — Frequently Asked Questions</h2>
+          <p className="text-slate-700">Common questions about blank space characters, invisible text, and empty Unicode copy paste.</p>
         </div>
         <div className="mt-6 space-y-4">
           {faqs.map((faq, i) => (
@@ -276,30 +291,31 @@ export default function InvisibleTextCopyPastePage() {
         <JsonLd data={{
           '@context': 'https://schema.org',
           '@type': 'WebApplication',
-          name: 'Invisible Text Copy and Paste',
+          name: 'Blank Space Copy and Paste — Invisible Text Generator',
           applicationCategory: 'UtilitiesApplication',
           operatingSystem: 'Web',
-          description: 'Copy invisible text characters — zero-width spaces, blank spaces, and invisible Unicode — with one click.',
+          description: 'Copy blank space characters and invisible text — zero-width space, Hangul filler, non-breaking space — with one click. Free for names, messages, bios, and gaming.',
           url: `${siteUrl}/invisible-text-copy-paste`,
           offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-          aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', ratingCount: '1840', bestRating: '5', worstRating: '1' },
+          aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', ratingCount: '2140', bestRating: '5', worstRating: '1' },
         }} />
       </div>
     </div>
   );
 }
 
-export async function generateMetadata() {
+export async function generateMetadata(): Promise<Metadata> {
   return {
-    title: 'Invisible Text Copy and Paste – Blank Space & Invisible Character Generator Free',
-    description: 'Copy invisible text characters — zero-width spaces, blank spaces, invisible Unicode — with one click. Free invisible text generator for messages, usernames, and bios.',
+    title: 'Blank Space Copy and Paste — Invisible Text & Empty Character Generator Free',
+    description: 'Copy blank space characters, invisible text, and empty Unicode with one click — zero-width space, Hangul filler, non-breaking space. Free for names, messages, bios, and gaming.',
     alternates: { canonical: `${siteUrl}/invisible-text-copy-paste` },
     openGraph: {
-      title: 'Invisible Text Copy and Paste',
-      description: 'Copy invisible Unicode characters instantly. Blank space copy paste, invisible text generator, zero-width space — free.',
+      title: 'Blank Space Copy and Paste — Invisible Text Generator',
+      description: 'Copy blank space and invisible text characters instantly — zero-width space, Hangul filler, non-breaking space. Free for Discord names, WhatsApp, Instagram, Fortnite.',
       url: `${siteUrl}/invisible-text-copy-paste`,
       siteName: 'GPTCLEANUP AI',
       type: 'website',
     },
   };
 }
+

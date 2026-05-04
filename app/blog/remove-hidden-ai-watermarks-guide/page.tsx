@@ -1,4 +1,4 @@
-import Link from 'next/link';
+﻿import Link from 'next/link';
 import { buildArticleMeta } from '@/lib/seo-meta';
 import { JsonLd } from '@/components/JsonLd';
 import { blogPostingSchema } from '@/lib/schema/blog';
@@ -11,7 +11,7 @@ const headline = 'Remove Hidden AI Watermarks: A Practical, Step-by-Step Guide (
 const description =
   'A practical guide to removing real hidden AI text artifacts (invisible Unicode, mixed whitespace, formatting remnants) without rewriting or harming SEO.';
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({
@@ -248,4 +248,5 @@ export default function RemoveHiddenAiWatermarksGuidePage() {
     </article>
   );
 }
+
 

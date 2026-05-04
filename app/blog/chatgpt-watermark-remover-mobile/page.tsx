@@ -1,4 +1,4 @@
-import Link from 'next/link';
+﻿import Link from 'next/link';
 import { buildArticleMeta } from '@/lib/seo-meta';
 import { JsonLd } from '@/components/JsonLd';
 import { blogPostingSchema } from '@/lib/schema/blog';
@@ -11,7 +11,7 @@ const headline = 'ChatGPT Watermark Remover on Mobile: What Actually Matters';
 const description =
   'What people really mean by ChatGPT watermarks, what you can safely clean on mobile, and how to use AI watermark remover tools without breaking policies.';
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({
@@ -125,4 +125,5 @@ export default function ChatGPTWatermarkRemoverMobilePage() {
     </article>
   );
 }
+
 

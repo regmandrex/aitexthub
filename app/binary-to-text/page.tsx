@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { JsonLd } from '@/components/JsonLd';
 import FAQSection from '@/components/FAQSection';
@@ -12,7 +12,7 @@ import { getToolBySlug } from '@/lib/tools/registry';
 import { siteUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 const toolSlug = 'binary-to-text';
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -392,6 +392,7 @@ const writeUp = (
     <p>
       <strong>Choosing the right encoding for your use case</strong>: educational content about how computers store text → use binary. Debugging binary file contents or network packets → use hexadecimal. Embedding images or files in JSON/XML → use Base64. Passing special characters in URLs → use URL encoding. Transmitting binary over email or in MIME types → use Base64. Each encoding scheme has its domain where it is the canonical choice.
     </p>
+  </div>
   </section>
 );
 
@@ -425,3 +426,4 @@ export default async function BinaryToTextPage() {
     </>
   );
 }
+

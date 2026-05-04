@@ -1,4 +1,4 @@
-import type { FaqItem } from '@/components/faqData';
+﻿import type { FaqItem } from '@/components/faqData';
 import WatermarkDetectorPage from '@/components/tools/WatermarkDetectorPage';
 import { buildMeta } from '@/lib/seo-meta';
 import Link from 'next/link';
@@ -9,7 +9,7 @@ const modelSlug = 'ai';
 const faqIntro =
   'This FAQ explains how the AI Watermark Detector on gptcleanuptools.com analyzes text, what its signals mean, and how to interpret results responsibly. The tool is text-only, does not connect to any AI system, and does not claim certainty about authorship.';
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 
 const faqs: FaqItem[] = [
   {
@@ -646,3 +646,4 @@ export default function AIWatermarkDetectorPage() {
     />
   );
 }
+

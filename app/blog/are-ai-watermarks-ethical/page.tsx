@@ -1,4 +1,4 @@
-import Link from 'next/link';
+﻿import Link from 'next/link';
 import { buildArticleMeta } from '@/lib/seo-meta';
 import { JsonLd } from '@/components/JsonLd';
 import { blogPostingSchema } from '@/lib/schema/blog';
@@ -11,7 +11,7 @@ const headline = 'Are AI Watermarks Ethical? The Privacy Debate Around Hidden Te
 const description =
   'AI watermarks raise legitimate questions about privacy, consent, and surveillance. This guide presents both sides and offers a practical framework for thinking about the debate.';
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({ title, description, urlPath });
@@ -283,3 +283,4 @@ export default function AreAiWatermarksEthicalPage() {
     </article>
   );
 }
+

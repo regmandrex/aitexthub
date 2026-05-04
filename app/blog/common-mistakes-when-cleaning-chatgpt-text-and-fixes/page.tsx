@@ -1,4 +1,4 @@
-import Link from 'next/link';
+﻿import Link from 'next/link';
 import { buildArticleMeta } from '@/lib/seo-meta';
 import { JsonLd } from '@/components/JsonLd';
 import { blogPostingSchema } from '@/lib/schema/blog';
@@ -11,7 +11,7 @@ const headline = 'Common Mistakes When Cleaning ChatGPT Text (And How to Fix The
 const description =
   'Avoid the most common AI text cleanup mistakes (cleaning after formatting, ignoring invisible Unicode, using paraphrasers) and use a repeatable, SEO-safe workflow.';
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({
@@ -277,4 +277,5 @@ export default function CommonMistakesCleaningChatGPTTextPage() {
     </article>
   );
 }
+
 

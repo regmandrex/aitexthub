@@ -1,4 +1,4 @@
-import Link from 'next/link';
+﻿import Link from 'next/link';
 import { buildArticleMeta } from '@/lib/seo-meta';
 import { JsonLd } from '@/components/JsonLd';
 import { blogPostingSchema } from '@/lib/schema/blog';
@@ -11,7 +11,7 @@ const headline = 'Why ChatGPT Text Looks Messy (and How to Fix It Permanently)';
 const description =
   'Learn why ChatGPT text breaks spacing, lists, and headings after copy-paste, and follow a clean workflow that fixes it for good.';
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({
@@ -253,4 +253,5 @@ export default function WhyChatGPTTextLooksMessyPage() {
     </article>
   );
 }
+
 

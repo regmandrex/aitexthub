@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { JsonLd } from '@/components/JsonLd';
 import FAQSection from '@/components/FAQSection';
@@ -12,7 +12,7 @@ import { getToolBySlug } from '@/lib/tools/registry';
 import { siteUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 const toolSlug = 'ascii-converter';
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -403,6 +403,7 @@ const writeUp = (
     <p>
       <strong>Data cleaning with ASCII filters</strong>: data pipelines that process web-scraped or user-generated text often apply ASCII filters to detect anomalies. A document where fewer than 80% of characters are ASCII printable (32–126) may indicate a binary file misidentified as text, a corrupted encoding, or content in a script the pipeline was not designed for. An ASCII coverage filter is a simple, fast heuristic for basic text quality control. Our ASCII converter helps develop intuition for what ASCII coverage means in practice — paste various text samples and observe which characters fall outside the ASCII printable range.
     </p>
+  </div>
   </section>
 );
 
@@ -436,3 +437,4 @@ export default async function AsciiConverterPage() {
     </>
   );
 }
+

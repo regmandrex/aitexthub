@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { JsonLd } from '@/components/JsonLd';
 import FAQSection from '@/components/FAQSection';
@@ -12,7 +12,7 @@ import { getToolBySlug } from '@/lib/tools/registry';
 import { siteUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 const toolSlug = 'sha256-generator';
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -413,6 +413,7 @@ const writeUp = (
     <p>
       For production implementations: always implement SHA-256 in your own application code using your language's standard library. Use our tool for quick verification, testing implementations against known outputs, and learning SHA-256 behavior. The tool handles any text length, supports Unicode input (hashing the UTF-8 encoding of your text), and produces lowercase hexadecimal output — the standard format for SHA-256 hashes across all programming ecosystems. Bookmark this SHA-256 generator as your go-to tool for cryptographic hash generation, verification, and testing in any browser, on any device, with no installation required.
     </p>
+  </div>
   </section>
 );
 
@@ -446,3 +447,4 @@ export default async function Sha256GeneratorPage() {
     </>
   );
 }
+

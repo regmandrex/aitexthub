@@ -1,4 +1,4 @@
-import Link from 'next/link';
+﻿import Link from 'next/link';
 import { buildArticleMeta } from '@/lib/seo-meta';
 import { JsonLd } from '@/components/JsonLd';
 import { blogPostingSchema } from '@/lib/schema/blog';
@@ -11,7 +11,7 @@ const headline = "Detecting and Removing Hidden AI Watermarks in Text (What's Re
 const description =
   'What "hidden AI watermarks" actually are: invisible Unicode artifacts vs pattern signals, plus how to detect and clean them without rewriting or harming SEO.';
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({
@@ -258,4 +258,5 @@ export default function DetectingAndRemovingHiddenAIWatermarksInTextPage() {
     </article>
   );
 }
+
 

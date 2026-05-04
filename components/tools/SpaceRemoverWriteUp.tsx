@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export function SpaceRemoverWriteUp() {
   return (
-    <article className="mt-10 prose prose-slate max-w-none rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6">
+    <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
       <h2 className="text-2xl font-semibold text-slate-900">
         Space Remover Online – Remove Extra Spaces &amp; Normalize Whitespace
       </h2>
@@ -288,6 +288,6 @@ export function SpaceRemoverWriteUp() {
       <p className="text-slate-700 mt-4">
         Use our <Link href="/space-remover" className="text-brand-600 font-semibold hover:underline">Space Remover</Link> to remove extra spaces and normalize whitespace in one click. For removing all whitespace (no spaces or line breaks at all), use our <Link href="/remove-whitespace" className="text-brand-600 font-semibold hover:underline">Remove Whitespace</Link> tool.
       </p>
-    </article>
+    </section>
   );
 }

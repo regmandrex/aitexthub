@@ -1,4 +1,4 @@
-import type { FaqItem } from '@/components/faqData';
+﻿import type { FaqItem } from '@/components/faqData';
 import WatermarkDetectorPage from '@/components/tools/WatermarkDetectorPage';
 import { buildMeta } from '@/lib/seo-meta';
 
@@ -7,7 +7,7 @@ const modelSlug = 'deepseek';
 const faqIntro =
   'This FAQ explains how the DeepSeek AI Watermark Detector on gptcleanuptools.com operates, what kinds of text characteristics it inspects, and how its findings should be interpreted. The detector functions as an independent, text-only analysis tool and does not connect to or interact with DeepSeek AI systems.';
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 
 const faqs: FaqItem[] = [
   {
@@ -650,4 +650,5 @@ export default function DeepseekWatermarkDetectorPage() {
     />
   );
 }
+
 

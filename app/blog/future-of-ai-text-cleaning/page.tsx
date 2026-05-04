@@ -1,4 +1,4 @@
-import Link from 'next/link';
+﻿import Link from 'next/link';
 import { buildArticleMeta } from '@/lib/seo-meta';
 import { JsonLd } from '@/components/JsonLd';
 import { blogPostingSchema } from '@/lib/schema/blog';
@@ -11,7 +11,7 @@ const headline = "Future of AI Text Cleaning (What's Coming Next for SEO, Publis
 const description =
   'How AI text cleaning evolves from a copy-paste fix into infrastructure: Unicode normalization, performance-aware cleaning, and content QA pipelines.';
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({
@@ -245,4 +245,5 @@ export default function FutureOfAITextCleaningPage() {
     </article>
   );
 }
+
 

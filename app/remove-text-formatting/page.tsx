@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { JsonLd } from '@/components/JsonLd';
 import FAQSection from '@/components/FAQSection';
@@ -13,7 +13,7 @@ import { siteUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 
 const toolSlug = 'remove-text-formatting';
 
@@ -157,7 +157,7 @@ const faqs: FaqItem[] = [
 ];
 
 const article = (
-  <section className="mt-10 prose prose-slate max-w-none text-sm prose-headings:font-semibold prose-headings:text-slate-900 prose-p:text-slate-700 prose-li:text-slate-700">
+  <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10"><div className="prose prose-slate max-w-none">
     <h2>Remove Text Formatting — Strip Formatting from Any Text Online Free</h2>
     <p>Every time you copy text from an AI tool, word processor, website, or PDF, formatting travels with the visible words. <strong>Remove text formatting</strong> is the process of stripping those formatting layers — markdown syntax, typographic special characters, and invisible Unicode characters — so the text arrives clean and neutral in your destination application. Without a dedicated tool to <strong>remove text formatting</strong>, you are left with literal asterisks in your CMS, broken syntax in your code files, layout issues in your published pages, and invisible characters causing unpredictable behavior wherever the text lands.</p>
     <p>GPTCLEANUP AI is a free <strong>remove text formatting</strong> tool that strips every formatting layer in a single click. Paste your text from any source, click Clean Text, and copy the clean, formatting-free result. No account, no upload, no limit. Use it to <strong>remove text formatting</strong> from AI output, Word documents, Google Docs, websites, emails, and any other formatted source.</p>
@@ -242,6 +242,7 @@ const article = (
 
     <h2>Free Remove Text Formatting Tool — No Account, No Limits</h2>
     <p>GPTCLEANUP AI provides a free <strong>remove text formatting</strong> tool with no account required, no character limits, and no subscription. All remove text formatting processing happens in your browser — your text is never uploaded, stored, or logged. The tool handles text from any source: AI models, word processors, websites, PDFs, email clients. It removes markdown formatting, converts curly quotes and em dashes, removes invisible Unicode characters, and normalizes spacing — all in one click. Whether you use it for a single paragraph or an entire article, the remove text formatting tool delivers the same thorough, consistent result every time. Paste your text, click Clean Text, copy the clean result, and your text is formatting-free and ready for any destination.</p>
+  </div>
   </section>
 );
 
@@ -322,3 +323,4 @@ export default async function RemoveTextFormattingPage() {
     </div>
   );
 }
+

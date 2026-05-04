@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { JsonLd } from '@/components/JsonLd';
 import FAQSection from '@/components/FAQSection';
@@ -12,7 +12,7 @@ import { getToolBySlug } from '@/lib/tools/registry';
 import { siteUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 const toolSlug = 'rot13-encoder';
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -411,6 +411,7 @@ const writeUp = (
     <p>
       Reading the table: to encode "Hello", find H→U, e→r, l→y, l→y, o→b → "Uryyb". To decode "Uryyb", apply the same table: U→H, r→e, y→l, y→l, b→o → "Hello". The identical forward and reverse operation is what makes ROT13 its own inverse. All numbers, spaces, punctuation, and characters outside A-Z and a-z remain unchanged through ROT13 encoding. Our online tool applies this mapping instantly to any length of text you paste into the input field.
     </p>
+  </div>
   </section>
 );
 
@@ -444,3 +445,4 @@ export default async function Rot13EncoderPage() {
     </>
   );
 }
+

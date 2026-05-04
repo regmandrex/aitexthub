@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { JsonLd } from '@/components/JsonLd';
 import FAQSection from '@/components/FAQSection';
@@ -12,7 +12,7 @@ import { getToolBySlug } from '@/lib/tools/registry';
 import { siteUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 const toolSlug = 'text-reverser';
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -417,6 +417,7 @@ const writeUp = (
     <p>
       Anagram tradition: while not exactly reversal, the practice of rearranging letters has deep historical roots — court anagrammatists in Renaissance Europe were employed to find meaningful anagrams in names. Reversal is the most constrained form of anagram (only one specific rearrangement). Historical anagram puzzles frequently used reversal as one step. Our character reversal generates the "reversal anagram" of any word instantly.
     </p>
+  </div>
   </section>
 );
 
@@ -450,3 +451,4 @@ export default async function TextReverserPage() {
     </>
   );
 }
+

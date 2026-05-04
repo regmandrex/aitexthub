@@ -1,11 +1,11 @@
-import type { FaqItem } from '@/components/faqData';
+﻿import type { FaqItem } from '@/components/faqData';
 import SpaceRemoverPage from '@/components/tools/SpaceRemoverPage';
 import { buildMeta } from '@/lib/seo-meta';
 
 const modelName = 'Claude';
 const modelSlug = 'claude';
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 
 const faqs: FaqItem[] = [
   {
@@ -338,4 +338,5 @@ export default function ClaudeSpaceRemoverPage() {
     <SpaceRemoverPage modelName={modelName} modelSlug={modelSlug} faqItems={faqs} content={writeUp} />
   );
 }
+
 

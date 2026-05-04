@@ -27,6 +27,46 @@ import { PermutationGeneratorTool } from '@/components/tools/PermutationGenerato
 import { AICodeCleanerTool } from '@/components/tools/AICodeCleanerTool';
 import { AICodeFixerTool } from '@/components/tools/AICodeFixerTool';
 import { GodGoddessNameGeneratorTool } from '@/components/tools/GodGoddessNameGeneratorTool';
+import { QrCodeReaderTool } from '@/components/tools/QrCodeReaderTool';
+import { JwtDecoderTool } from '@/components/tools/JwtDecoderTool';
+import { UuidGeneratorTool } from '@/components/tools/UuidGeneratorTool';
+import { Md5GeneratorTool } from '@/components/tools/Md5GeneratorTool';
+import { BcryptGeneratorTool } from '@/components/tools/BcryptGeneratorTool';
+import { HmacGeneratorTool } from '@/components/tools/HmacGeneratorTool';
+import { TotpGeneratorTool } from '@/components/tools/TotpGeneratorTool';
+import { JsonToYamlTool } from '@/components/tools/JsonToYamlTool';
+import { YamlToJsonTool } from '@/components/tools/YamlToJsonTool';
+import { YamlFormatterTool } from '@/components/tools/YamlFormatterTool';
+import { SqlFormatterTool } from '@/components/tools/SqlFormatterTool';
+import { MarkdownToHtmlTool } from '@/components/tools/MarkdownToHtmlTool';
+import { TextDiffTool } from '@/components/tools/TextDiffTool';
+import { RegexTesterTool } from '@/components/tools/RegexTesterTool';
+import { SlugGeneratorTool } from '@/components/tools/SlugGeneratorTool';
+import { WordFrequencyCounterTool } from '@/components/tools/WordFrequencyCounterTool';
+import { SortLinesTool } from '@/components/tools/SortLinesTool';
+import { HexToRgbTool } from '@/components/tools/HexToRgbTool';
+import { UrlShortenerTool } from '@/components/tools/UrlShortenerTool';
+import { ImageToBase64Tool } from '@/components/tools/ImageToBase64Tool';
+import { ImageMetadataViewerTool } from '@/components/tools/ImageMetadataViewerTool';
+import { ImageCompareTool } from '@/components/tools/ImageCompareTool';
+import { SvgViewerTool } from '@/components/tools/SvgViewerTool';
+import { SvgOptimizerTool } from '@/components/tools/SvgOptimizerTool';
+import { PlaceholderImageGeneratorTool } from '@/components/tools/PlaceholderImageGeneratorTool';
+import { FaviconGeneratorTool } from '@/components/tools/FaviconGeneratorTool';
+import { AsciiArtGeneratorTool } from '@/components/tools/AsciiArtGeneratorTool';
+import { BorderRadiusGeneratorTool } from '@/components/tools/BorderRadiusGeneratorTool';
+import { BoxShadowGeneratorTool } from '@/components/tools/BoxShadowGeneratorTool';
+import { CssFlexboxGeneratorTool } from '@/components/tools/CssFlexboxGeneratorTool';
+import { CssGridGeneratorTool } from '@/components/tools/CssGridGeneratorTool';
+import { HtmlTableGeneratorTool } from '@/components/tools/HtmlTableGeneratorTool';
+import { OpenGraphGeneratorTool } from '@/components/tools/OpenGraphGeneratorTool';
+import { RobotsTxtGeneratorTool } from '@/components/tools/RobotsTxtGeneratorTool';
+import { CronGeneratorTool } from '@/components/tools/CronGeneratorTool';
+import {
+  GenericAiTextTool,
+  GenericWatermarkTool,
+  RankTrackerTool,
+} from '@/components/tools/GenericToolFamilyPanels';
 // ChatGPT tools
 import { ChatGPTDetectorTool } from '@/components/tools/ChatGPTDetectorTool';
 import { ChatGPTHumanizerTool } from '@/components/tools/ChatGPTHumanizerTool';
@@ -60,6 +100,7 @@ import { ChatGPTLinkedInRewriterTool } from '@/components/tools/ChatGPTLinkedInR
 import { ChatGPTPressReleasePolisherTool } from '@/components/tools/ChatGPTPressReleasePolisherTool';
 import { getToolBySlug } from '@/lib/tools/registry';
 import { getToolContent } from '@/lib/tools/content';
+import { getSeoExpansionFaqs } from '@/lib/tools/content/seo-expansions';
 import { siteUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 
@@ -91,6 +132,42 @@ const uiComponentMap: Record<string, React.ComponentType> = {
   'ai-code-cleaner': AICodeCleanerTool,
   'ai-code-fixer': AICodeFixerTool,
   'god-goddess-name-generator': GodGoddessNameGeneratorTool,
+  'qr-code-reader': QrCodeReaderTool,
+  'jwt-decoder': JwtDecoderTool,
+  'uuid-generator': UuidGeneratorTool,
+  'md5-generator': Md5GeneratorTool,
+  'bcrypt-generator': BcryptGeneratorTool,
+  'hmac-generator': HmacGeneratorTool,
+  'totp-generator': TotpGeneratorTool,
+  'json-to-yaml': JsonToYamlTool,
+  'yaml-to-json': YamlToJsonTool,
+  'yaml-formatter': YamlFormatterTool,
+  'sql-formatter': SqlFormatterTool,
+  'markdown-to-html': MarkdownToHtmlTool,
+  'text-diff': TextDiffTool,
+  'regex-tester': RegexTesterTool,
+  'slug-generator': SlugGeneratorTool,
+  'word-frequency-counter': WordFrequencyCounterTool,
+  'sort-lines': SortLinesTool,
+  'hex-to-rgb': HexToRgbTool,
+  'url-shortener': UrlShortenerTool,
+  'image-to-base64': ImageToBase64Tool,
+  'image-metadata-viewer': ImageMetadataViewerTool,
+  'image-compare': ImageCompareTool,
+  'svg-viewer': SvgViewerTool,
+  'svg-optimizer': SvgOptimizerTool,
+  'placeholder-image-generator': PlaceholderImageGeneratorTool,
+  'favicon-generator': FaviconGeneratorTool,
+  'ascii-art-generator': AsciiArtGeneratorTool,
+  'border-radius-generator': BorderRadiusGeneratorTool,
+  'box-shadow-generator': BoxShadowGeneratorTool,
+  'css-flexbox-generator': CssFlexboxGeneratorTool,
+  'css-grid-generator': CssGridGeneratorTool,
+  'html-table-generator': HtmlTableGeneratorTool,
+  'open-graph-generator': OpenGraphGeneratorTool,
+  'robots-txt-generator': RobotsTxtGeneratorTool,
+  'cron-generator': CronGeneratorTool,
+  'rank-tracker': RankTrackerTool,
   // ChatGPT tools
   'chatgpt-detector': ChatGPTDetectorTool,
   'chatgpt-humanizer': ChatGPTHumanizerTool,
@@ -141,12 +218,12 @@ export async function ToolPageRenderer({ slug }: ToolPageRendererProps) {
 
   // Get UI component - try slug first (for ChatGPT tools and others with specific components)
   // then fall back to ui.kind (for generic tools)
+  const FAMILY_UI_KINDS = new Set(['watermark-remover', 'watermark-detector', 'ai-detector', 'ai-humanizer', 'rank-tracker']);
   let UIComponent = uiComponentMap[slug];
-  if (!UIComponent) {
-    // Fall back to ui.kind for tools that use generic components
+  if (!UIComponent && tool.ui?.kind) {
     UIComponent = uiComponentMap[tool.ui.kind];
   }
-  if (!UIComponent) {
+  if (!UIComponent && !FAMILY_UI_KINDS.has(tool.ui?.kind)) {
     console.warn(`No UI component found for tool: ${slug} (kind: ${tool.ui.kind})`);
     return notFound();
   }
@@ -163,13 +240,50 @@ export async function ToolPageRenderer({ slug }: ToolPageRendererProps) {
   };
 
   const generated = getToolContent(slug);
+  const generatedFaqs = generated ? [...generated.faqs, ...getSeoExpansionFaqs(tool, generated.faqs.length)] : [];
+  const familyUi =
+    tool.ui.kind === 'rank-tracker' ? (
+      <RankTrackerTool modelName={tool.model} />
+    ) : tool.ui.kind === 'ai-detector' ? (
+      <GenericAiTextTool
+        actionLabel="Analyze text"
+        outputLabel="Detection report"
+        inputPlaceholder={`Paste text to analyze with ${displayTool.title}...`}
+        outputPlaceholder="Detection analysis will appear here."
+        helperText={`${displayTool.title}: paste the text you want to analyze above and click Analyze text. Results show character count, word count, and sentence count alongside detection notes. Review the output and apply your own judgment for final decisions.`}
+      />
+    ) : tool.ui.kind === 'ai-humanizer' ? (
+      slug.includes('writer') || slug.includes('generator') ? (
+        <GenericAiTextTool
+          actionLabel="Generate"
+          outputLabel="Generated output"
+          inputPlaceholder={`Describe what you want ${displayTool.title} to create...`}
+          outputPlaceholder="Your generated content will appear here."
+          helperText={`${displayTool.title}: describe your prompt or paste a draft above and click Generate. Review the output before use.`}
+        />
+      ) : (
+        <GenericAiTextTool
+          actionLabel="Humanize text"
+          outputLabel="Humanized output"
+          inputPlaceholder={`Paste text to rewrite with ${displayTool.title}...`}
+          outputPlaceholder="The rewritten output will appear here."
+          helperText={`${displayTool.title}: paste your draft above and click Humanize text. The tool rewrites the text to match the authentic conventions of this content type. Review the output before use.`}
+        />
+      )
+    ) : tool.ui.kind === 'watermark-remover' ? (
+      <GenericWatermarkTool
+        mode="remove"
+        media={slug.includes('video') ? 'video' : 'image'}
+        modelName={tool.model}
+      />
+    ) : undefined;
 
   return (
     <>
       <JsonLd data={webPageSchema({ name: displayTool.title, url, description: displayTool.shortDescription })} />
       <JsonLd data={softwareJsonLd} />
       <div className="bg-[#f7f9ff]">
-        <ToolPageShell tool={displayTool} ui={<UIComponent />} related={<RelatedTools currentSlug={tool.slug} />}>
+        <ToolPageShell tool={displayTool} ui={familyUi ?? <UIComponent />} related={<RelatedTools currentSlug={tool.slug} />}>
           {generated ? (
             <>
               {generated.writeUp}
@@ -177,8 +291,8 @@ export async function ToolPageRenderer({ slug }: ToolPageRendererProps) {
                 <h2 className="text-2xl font-semibold text-slate-900">Frequently Asked Questions</h2>
                 <p className="text-slate-700">Common questions about the {displayTool.title}.</p>
               </div>
-              <FAQSection items={generated.faqs} />
-              <FaqJsonLd faqs={generated.faqs} name={`${displayTool.title} – FAQs`} />
+              <FAQSection items={generatedFaqs} />
+              <FaqJsonLd faqs={generatedFaqs} name={`${displayTool.title} – FAQs`} />
             </>
           ) : null}
         </ToolPageShell>

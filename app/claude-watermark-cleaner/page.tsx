@@ -1,4 +1,4 @@
-import FAQSection from '../../components/FAQSection';
+﻿import FAQSection from '../../components/FAQSection';
 import FaqJsonLd from '../../components/FaqJsonLd';
 import type { FaqItem } from '../../components/faqData';
 import ToolWorkbench from '../../components/ToolWorkbench';
@@ -22,7 +22,7 @@ function RailAd({ side }: { side: 'left' | 'right' }) {
   );
 }
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 
 export async function generateMetadata() {
   return buildMeta({
@@ -478,3 +478,4 @@ export default async function ClaudeWatermarkCleanerPage() {
     </div>
   );
 }
+

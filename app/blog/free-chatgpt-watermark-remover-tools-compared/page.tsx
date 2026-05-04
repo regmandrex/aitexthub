@@ -1,4 +1,4 @@
-import Link from 'next/link';
+﻿import Link from 'next/link';
 import { buildArticleMeta } from '@/lib/seo-meta';
 import { JsonLd } from '@/components/JsonLd';
 import { blogPostingSchema } from '@/lib/schema/blog';
@@ -11,7 +11,7 @@ const headline = 'Free ChatGPT Watermark Remover Tools Compared (2026 Edition)';
 const description =
   'A comparison of free ChatGPT watermark remover tools: what to look for, how different approaches work, and why browser-based tools are best for privacy.';
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({ title, description, urlPath });
@@ -282,3 +282,4 @@ export default function FreeChatGptWatermarkRemoverToolsComparedPage() {
     </article>
   );
 }
+

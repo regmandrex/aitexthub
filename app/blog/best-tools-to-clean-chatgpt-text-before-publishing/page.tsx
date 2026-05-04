@@ -1,4 +1,4 @@
-import Link from 'next/link';
+﻿import Link from 'next/link';
 import { buildArticleMeta } from '@/lib/seo-meta';
 import { JsonLd } from '@/components/JsonLd';
 import { blogPostingSchema } from '@/lib/schema/blog';
@@ -11,7 +11,7 @@ const headline = 'Best Tools to Clean ChatGPT Text Before Publishing (Accuracy, 
 const description =
   'What matters in an AI text cleaner: invisible Unicode removal, whitespace normalization, CMS-friendly output, and performance-aware structure.';
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({
@@ -286,4 +286,5 @@ export default function BestToolsToCleanChatGPTTextBeforePublishingPage() {
     </article>
   );
 }
+
 

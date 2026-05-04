@@ -1,4 +1,4 @@
-import Link from 'next/link';
+﻿import Link from 'next/link';
 import { buildArticleMeta } from '@/lib/seo-meta';
 import { JsonLd } from '@/components/JsonLd';
 import { blogPostingSchema } from '@/lib/schema/blog';
@@ -11,7 +11,7 @@ const headline = 'AI Watermarks and Academic Integrity: What Students Should Kno
 const description =
   'AI watermarks and detection tools affect academic submissions in ways students do not expect. Here is what is actually detected, what causes false positives, and what to do.';
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({ title, description, urlPath });
@@ -287,3 +287,4 @@ export default function AiWatermarksAndAcademicIntegrityPage() {
     </article>
   );
 }
+

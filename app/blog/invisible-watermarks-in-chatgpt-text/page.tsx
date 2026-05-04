@@ -1,4 +1,4 @@
-import Link from 'next/link';
+﻿import Link from 'next/link';
 import { buildArticleMeta } from '@/lib/seo-meta';
 import { JsonLd } from '@/components/JsonLd';
 import { blogPostingSchema } from '@/lib/schema/blog';
@@ -11,7 +11,7 @@ const headline = 'Invisible Watermarks in ChatGPT Text: How They Work and How To
 const description =
   'Zero-width characters and other invisible Unicode exist in ChatGPT text. Here is what they are, why they appear, and how to find and remove them.';
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({ title, description, urlPath });
@@ -282,3 +282,4 @@ export default function InvisibleWatermarksInChatGptTextPage() {
     </article>
   );
 }
+

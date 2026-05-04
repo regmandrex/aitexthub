@@ -1,4 +1,4 @@
-import Link from 'next/link';
+﻿import Link from 'next/link';
 import { buildArticleMeta } from '@/lib/seo-meta';
 import { JsonLd } from '@/components/JsonLd';
 import { blogPostingSchema } from '@/lib/schema/blog';
@@ -11,7 +11,7 @@ const headline = 'ChatGPT Text Cleaner for iPhone: Ready-to-Publish Workflow';
 const description =
   'Step-by-step workflow to clean ChatGPT text on iPhone, remove invisible noise, and paste into Notes, Mail, or CMS without layout bugs.';
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({
@@ -177,4 +177,5 @@ export default function ChatGPTTextCleanerIphonePage() {
     </article>
   );
 }
+
 

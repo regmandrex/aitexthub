@@ -1,4 +1,4 @@
-import Link from 'next/link';
+﻿import Link from 'next/link';
 import { buildArticleMeta } from '@/lib/seo-meta';
 import { JsonLd } from '@/components/JsonLd';
 import { blogPostingSchema } from '@/lib/schema/blog';
@@ -11,7 +11,7 @@ const headline = 'Fix ChatGPT Formatting: Headings, Lists, Spacing & Layout Issu
 const description =
   'Fix broken headings, lists, spacing, and layout issues after copying ChatGPT text into WordPress, email editors, CMSs, and docs.';
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({
@@ -257,4 +257,5 @@ export default function FixChatGPTFormattingPage() {
     </article>
   );
 }
+
 

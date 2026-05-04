@@ -1,9 +1,9 @@
-import BlogCard from '../../components/BlogCard';
+﻿import BlogCard from '../../components/BlogCard';
 import AdSenseSlot from '../../components/ads/AdSenseSlot';
 import { buildMeta } from '@/lib/seo-meta';
 import { blogPosts } from '@/lib/blog-posts';
 
-export const revalidate = 86400;
+export const revalidate = 604800;
 
 export async function generateMetadata() {
   return buildMeta({
@@ -27,4 +27,5 @@ export default async function BlogIndexPage() {
     </div>
   );
 }
+
 
