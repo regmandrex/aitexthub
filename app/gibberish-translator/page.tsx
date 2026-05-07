@@ -19,7 +19,7 @@ const toolSlug = 'gibberish-translator';
 export async function generateMetadata(): Promise<Metadata> {
   const title = 'Gibberish Translator';
   const description = 'Translate text into Gibberish or decode Gibberish back to readable English.';
-  const seoTitle = 'Gibberish Translator - Encode and Decode Gibberish';
+  const seoTitle = 'Free Gibberish Translator | Turn Nonsense into Clear Text';
   return buildToolMeta({ title, description, seoTitle, urlPath: `/${toolSlug}` });
 }
 
