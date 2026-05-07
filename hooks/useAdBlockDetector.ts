@@ -29,25 +29,19 @@ export function useAdBlockDetector() {
       const baitBlocked = bait.offsetHeight === 0 || bait.offsetParent === null;
       bait.remove();
 
-      // Signal 3: AdSense never processed any slot it should have by now.
-      // AdSense lazy-loads slots as they approach the viewport, so we only
-      // consider slots already in or near the viewport — distant slots
-      // legitimately have no data-ad-status yet.
-      const allSlots = Array.from(document.querySelectorAll('ins[data-ad-client]'));
-      const viewportH = window.innerHeight;
-      const nearbySlots = allSlots.filter((el) => {
-        const r = el.getBoundingClientRect();
-        return r.top < viewportH * 1.5 && r.bottom > -viewportH * 0.5;
+      // Signal 3: AdSense never processed the ad slots at all.
+      // When AdSense runs, it sets data-ad-status to "filled" or "unfilled"
+      // on every <ins>. If that attribute is missing on every slot, the
+      // adsbygoogle script was blocked from processing them.
+      const slots = document.querySelectorAll('ins[data-ad-client]');
+      const slotsBlocked = slots.length > 0 && Array.from(slots).every((el) => {
+        const s = getComputedStyle(el);
+        const hidden = s.display === 'none' || s.visibility === 'hidden';
+        const unprocessed = !el.hasAttribute('data-ad-status');
+        return hidden || unprocessed;
       });
-      // If any slot anywhere on the page got processed, AdSense is working.
-      const anyProcessed = allSlots.some((el) => el.hasAttribute('data-ad-status'));
-      const slotsBlocked = !anyProcessed && nearbySlots.length > 0;
 
-      // If AdSense is clearly running and filling slots, trust that over
-      // the bait signal — bait class names get caught by overly broad
-      // filter lists even when ads are working fine.
-      const adsenseWorking = anyProcessed;
-      const blocked = !adsenseWorking && (scriptBlocked || baitBlocked || slotsBlocked);
+      const blocked = scriptBlocked || baitBlocked || slotsBlocked;
 
       if (!cancelled) {
         setAdBlocked(blocked);
