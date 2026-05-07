@@ -290,6 +290,14 @@ export const toolPages: ToolPage[] = [
     category: 'generator',
   },
   {
+    slug: 'korean-cat-translator',
+    title: '고양이 번역기',
+    description:
+      '한국어 문장을 고양이 말투(냥냥체)로 바꿔주는 무료 고양이 번역기입니다. 사람 말을 고양이 언어처럼 변환하고, 냥냥이 말투로 메시지를 꾸며 SNS, 채팅, 인스타 캡션에 바로 사용할 수 있습니다.',
+    seoTitle: '고양이 번역기 | 냥냥체 변환기 (무료)',
+    category: 'translator',
+  },
+  {
     slug: 'chatgpt-space-remover',
     title: 'ChatGPT Space Remover',
     description: 'Remove extra spaces and blank lines from ChatGPT output in one click.',
