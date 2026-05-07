@@ -29,16 +29,15 @@ export function useAdBlockDetector() {
       const baitBlocked = bait.offsetHeight === 0 || bait.offsetParent === null;
       bait.remove();
 
-      // Signal 3: AdSense never processed the ad slots at all.
-      // When AdSense runs, it sets data-ad-status to "filled" or "unfilled"
-      // on every <ins>. If that attribute is missing on every slot, the
-      // adsbygoogle script was blocked from processing them.
+      // Signal 3: real ad slots on the page rendered with zero size
       const slots = document.querySelectorAll('ins[data-ad-client]');
       const slotsBlocked = slots.length > 0 && Array.from(slots).every((el) => {
         const s = getComputedStyle(el);
-        const hidden = s.display === 'none' || s.visibility === 'hidden';
-        const unprocessed = !el.hasAttribute('data-ad-status');
-        return hidden || unprocessed;
+        return (
+          s.display === 'none' ||
+          s.visibility === 'hidden' ||
+          (el as HTMLElement).offsetHeight === 0
+        );
       });
 
       const blocked = scriptBlocked || baitBlocked || slotsBlocked;
