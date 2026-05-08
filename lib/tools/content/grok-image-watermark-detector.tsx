@@ -249,6 +249,21 @@ const faqs: FaqItem[] = [
     question: 'Where can I find published research on AI image watermarking and C2PA?',
     answer: 'The C2PA specification is publicly available at c2pa.org. Academic research on AI image watermarking robustness is published in venues including IEEE Security & Privacy, ACM CCS, ICLR, CVPR, and NeurIPS. Notable research areas include watermark robustness to post-processing (Wang et al., 2023), diffusion model fingerprinting, and the trade-offs between imperceptible watermarking and robustness. Google DeepMind\'s SynthID paper provides particularly detailed technical analysis of the considerations involved in designing robust imperceptible watermarks for AI-generated content.',
   },
+  {
+    category: 'Accuracy',
+    question: 'Can the Grok detector return false positives or false negatives?',
+    answer: 'False positives on the C2PA layer are essentially impossible because the manifest is cryptographically signed by xAI; a positive detection is definitive. False negatives are common when metadata has been stripped by social media uploads, screenshots, or third-party apps "” a particularly relevant case for Grok images since they are often shared natively on X, which preserves some metadata but strips others. A "no watermark" result means metadata was absent or removed, not that the image definitely isn&#39;t from Grok/Aurora.',
+  },
+  {
+    category: 'Reporting',
+    question: 'What does the Grok detector report show?',
+    answer: 'The detector reports: (1) C2PA manifest presence with xAI as the signer, including assertion chain and generation timestamp; (2) XMP metadata in xAI namespaces identifying the Grok/Aurora model; (3) IPTC fields when present; (4) EXIF Software field; (5) optional pixel-level signal analysis. A clean image returns "no Grok watermark detected" across all layers; a watermarked image shows the manifest details and signature verification status.',
+  },
+  {
+    category: 'Workflow',
+    question: 'How do I integrate Grok detection into a content workflow?',
+    answer: 'For per-image checks, the browser tool is suitable. For automated workflows "” trust and safety pipelines, social media monitoring, or research datasets "” use ExifTool plus the c2patool CLI to extract assertions programmatically. The c2pa-rs and c2pa-python libraries integrate with Python or Rust services. A typical pipeline runs the C2PA check first, then metadata field inspection, then optionally a pixel-level visual classifier as a fallback for images with stripped metadata.',
+  },
 ];
 
 export const grokImageWatermarkDetectorContent: ToolContent = {

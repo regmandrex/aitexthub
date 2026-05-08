@@ -246,6 +246,24 @@ const faqs: FaqItem[] = [
     answer:
       'The current version processes one image at a time. For bulk verification workflows "” such as screening all images in a content submission queue or analyzing a dataset of images "” you would need to integrate a watermark detection API or run a local detection script using the same underlying analysis techniques. We are aware that bulk processing is a common need for platform trust and safety teams and researchers, and batch processing is on our feature roadmap. In the meantime, the single-image tool is fully capable for editorial and individual verification use cases.',
   },
+  {
+    category: 'Accuracy',
+    question: 'Can the ChatGPT image detector return false positives or false negatives?',
+    answer:
+      'False positives on the C2PA layer are essentially impossible because the manifest is cryptographically signed by OpenAI; a positive detection is definitive. False negatives are common when metadata has been stripped by social media uploads, screenshots, or third-party apps. A "no watermark" result means metadata was absent or removed before you received the file, not that the image definitely isn&#39;t from ChatGPT&#39;s image feature. Pixel-level signal detection is heuristic and reports confidence levels for ambiguous cases.',
+  },
+  {
+    category: 'Reporting',
+    question: 'What does the ChatGPT image detector report show?',
+    answer:
+      'The detector reports: (1) C2PA manifest presence with OpenAI as the signer, including assertion chain, generation timestamp, and content hash (the same manifest format as direct DALL-E API outputs because ChatGPT&#39;s image feature is powered by DALL-E); (2) XMP metadata in OpenAI namespaces; (3) IPTC fields when present; (4) EXIF Software field; (5) optional pixel-level signal analysis. A clean image returns "no watermark detected" across all layers; a watermarked image shows the manifest details and signature verification status.',
+  },
+  {
+    category: 'Workflow',
+    question: 'How do I integrate ChatGPT image detection into a content workflow?',
+    answer:
+      'For per-image checks, the browser tool is suitable. For automated workflows, use ExifTool plus the c2patool CLI to extract assertions programmatically. The c2pa-rs and c2pa-python libraries integrate with Python or Rust services. A typical pipeline runs the C2PA check first (fast, definitive when present), then metadata field inspection, then optionally a pixel-level visual classifier as a fallback for files with stripped metadata.',
+  },
 ];
 
 export const chatgptImageWatermarkDetectorContent: ToolContent = {

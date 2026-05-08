@@ -381,6 +381,24 @@ const faqs: FaqItem[] = [
     answer:
       'Yes, using our watermark detector is entirely legal. Detection of digital watermarks "” reading metadata or analyzing pixel patterns "” does not violate any applicable laws in most jurisdictions. In the United States, the Digital Millennium Copyright Act (DMCA) prohibits the removal of copyright management information but does not prohibit detection or reading of that information. Similar provisions apply in the EU under the Copyright Directive. Our tool is designed for legitimate uses including compliance verification, editorial integrity, research, and personal due diligence, all of which are clearly lawful.',
   },
+  {
+    category: 'Accuracy',
+    question: 'Can the Adobe Firefly detector return false positives or false negatives?',
+    answer:
+      'False positives on the C2PA Content Credentials layer are essentially impossible because the manifest is cryptographically signed by Adobe and the certificate chain is verifiable; a positive C2PA detection from Adobe is definitive. False negatives are common when Content Credentials have been stripped by social media uploads, image editors that don&#39;t preserve C2PA, or third-party processing pipelines. A "no watermark" result means Content Credentials were absent or removed before you received the file, not that the image definitely isn&#39;t from Firefly. Pixel-level signal detection is heuristic and reports confidence levels for ambiguous cases.',
+  },
+  {
+    category: 'Reporting',
+    question: 'What does the Adobe Firefly detector report show?',
+    answer:
+      'The detector reports: (1) C2PA Content Credentials manifest presence with Adobe as the signer, including the Firefly model version, generation timestamp, content hash, and any subsequent edit assertions added through Adobe Creative Cloud apps; (2) XMP metadata in Adobe namespaces; (3) IPTC fields when present; (4) optional pixel-level signal analysis for files where Content Credentials have been stripped. The report distinguishes "C2PA Detected — Verified" (manifest valid and unmodified) from "C2PA Detected — Modified" (manifest valid but content was edited after generation).',
+  },
+  {
+    category: 'Workflow',
+    question: 'How do I integrate Adobe Firefly detection into a content workflow?',
+    answer:
+      'For per-image checks, the browser tool is suitable. For automated workflows, use the c2patool CLI and the c2pa-rs / c2pa-python libraries for programmatic Content Credentials reading; Adobe&#39;s contentcredentials.org/verify provides web-based verification. A typical content moderation or editorial pipeline runs C2PA verification first (definitive when present), then ExifTool inspection for additional metadata signals, then optionally a pixel-level visual classifier as a fallback for files with stripped Content Credentials.',
+  },
 ];
 
 export const adobeFireflyImageWatermarkDetectorContent: ToolContent = {

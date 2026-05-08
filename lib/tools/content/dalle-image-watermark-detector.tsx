@@ -205,6 +205,24 @@ const faqs: FaqItem[] = [
     answer:
       'Third-party apps that access DALL-E through the OpenAI API receive images from OpenAI with C2PA metadata intact. However, the third-party app may strip or modify metadata before delivering the image to you "” some apps optimize images for web delivery, convert formats, or process images in ways that remove metadata. If you received a DALL-E image through a third-party tool and it shows no watermark, the third-party pipeline likely stripped the metadata. Images accessed directly through the OpenAI API or ChatGPT interface should always have metadata intact.',
   },
+  {
+    category: 'Accuracy',
+    question: 'Can the DALL-E detector return false positives or false negatives?',
+    answer:
+      'False positives are extremely rare for the metadata layer "” a C2PA manifest signed by OpenAI&#39;s certificate is cryptographically verifiable, so a positive C2PA detection is essentially definitive. False negatives are more common because metadata can be stripped by social media uploads, image editors, screenshots, or third-party apps; a "no watermark detected" result means metadata was either absent or removed before you received the file, not that the image definitely isn&#39;t from DALL-E. For the pixel-level layer, faint signals near the detection threshold can produce ambiguous results "” the report flags low-confidence findings explicitly so you can interpret them with appropriate skepticism.',
+  },
+  {
+    category: 'Reporting',
+    question: 'What information does the DALL-E detector show me?',
+    answer:
+      'The detector reports: (1) C2PA manifest presence and the signing party (OpenAI for genuine DALL-E), the assertion chain, generation timestamp, and content hash; (2) XMP metadata fields including software identifier and creator namespaces; (3) IPTC fields if present; (4) EXIF Software field; and (5) optional pixel-level signal analysis with a confidence score. A clean image returns "no DALL-E watermark detected" across all layers; a watermarked image shows the manifest details and signature verification status.',
+  },
+  {
+    category: 'Workflow',
+    question: 'How do I integrate DALL-E detection into a content moderation or editorial workflow?',
+    answer:
+      'For per-image checks, the browser tool is suitable. For automated workflows "” trust and safety pipelines, editorial fact-checking systems, or stock-image submission screening "” use ExifTool plus the c2patool CLI to extract C2PA assertions and metadata fields programmatically. The c2pa-rs (Rust) and c2pa-python libraries provide library access for integration into Python or Rust services. A typical pipeline runs the C2PA check first (fast, definitive when present), then runs metadata field inspection, then optionally a pixel-level visual classifier as a heuristic fallback for images that have had their metadata stripped.',
+  },
 ];
 
 export const dalleImageWatermarkDetectorContent: ToolContent = {
