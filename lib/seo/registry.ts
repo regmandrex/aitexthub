@@ -298,6 +298,46 @@ export const toolPages: ToolPage[] = [
     category: 'translator',
   },
   {
+    slug: 'korean-dialect-translator',
+    title: '사투리 번역기',
+    description:
+      '표준어를 경상도, 전라도, 충청도, 제주도 사투리로 바꿔주는 무료 사투리 번역기입니다. 드라마 대사, 캐릭터 설정, SNS 재미용으로 한국어 문장을 지역별 사투리로 변환해 드립니다.',
+    seoTitle: '사투리 번역기 | 경상도·전라도·제주도 변환 (무료)',
+    category: 'translator',
+  },
+  {
+    slug: 'korean-acrostic-poem-generator',
+    title: '삼행시 짓기',
+    description:
+      '이름이나 단어를 입력하면 각 글자로 시작하는 삼행시를 자동으로 만들어 주는 무료 삼행시 생성기입니다. 친구 이름 삼행시, 사행시, 오행시까지 생일·회식·SNS용으로 바로 활용할 수 있습니다.',
+    seoTitle: '삼행시 짓기 | 이름 삼행시 자동 생성기 (무료)',
+    category: 'generator',
+  },
+  {
+    slug: 'korean-nickname-maker',
+    title: '별명 짓기',
+    description:
+      '친구, 커플, 반려동물, 회사 동료에게 어울리는 별명을 추천해 주는 무료 별명 짓기 도구입니다. 이름과 특징을 입력하면 상황에 맞는 별명 후보를 한 번에 만들어 드립니다.',
+    seoTitle: '별명 짓기 | 친구·커플·반려동물 별명 추천기 (무료)',
+    category: 'generator',
+  },
+  {
+    slug: 'korean-instagram-username-generator',
+    title: '인스타 아이디 추천',
+    description:
+      '감성 아이디, 짧은 아이디, 영어 닉, 커플 아이디까지 자동으로 추천해 주는 무료 인스타 아이디 생성기입니다. 키워드와 분위기를 입력하면 인스타그램에 바로 쓸 수 있는 아이디를 만들어 드립니다.',
+    seoTitle: '인스타 아이디 추천 | 감성 아이디 생성기 (무료)',
+    category: 'generator',
+  },
+  {
+    slug: 'korean-word-chain-game',
+    title: '끝말잇기',
+    description:
+      '컴퓨터와 즐기는 무료 끝말잇기 게임입니다. 한국어 단어 사전 기반으로 두음법칙과 한방단어 규칙을 적용해 친구·가족과 함께 즐길 수 있는 끝말잇기 도구입니다.',
+    seoTitle: '끝말잇기 | 컴퓨터와 한국어 끝말잇기 게임 (무료)',
+    category: 'generator',
+  },
+  {
     slug: 'chatgpt-space-remover',
     title: 'ChatGPT Space Remover',
     description: 'Remove extra spaces and blank lines from ChatGPT output in one click.',
