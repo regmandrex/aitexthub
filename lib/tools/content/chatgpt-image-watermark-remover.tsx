@@ -214,6 +214,42 @@ const faqs: FaqItem[] = [
     answer:
       'Standard metadata removal does not affect image quality or color accuracy in any way "” pixel values are unchanged. The only scenario where quality could be affected is if you enable pixel-level signal attenuation, which makes tiny imperceptible changes to pixel values that could theoretically affect color accuracy at a sub-perceptible level (less than 0.1% color deviation in most cases). If color accuracy is critical "” for print production, color-managed workflows, or color-critical design "” either skip attenuation or verify the output with a color measurement tool. Keep the ICC profile by using selective removal mode.',
   },
+  {
+    category: 'Commercial Use',
+    question: 'How do I clean ChatGPT images for commercial use?',
+    answer:
+      'ChatGPT&#39;s image generation feature is powered by DALL-E behind the scenes, so commercial use rights and watermark management are governed by OpenAI&#39;s policies for paid ChatGPT Plus, Pro, and Team subscribers. Verify the current terms at openai.com/policies for your specific plan. Once commercial rights are confirmed, run images through this ChatGPT Image Watermark Remover to strip the C2PA manifest, XMP attribution, and IPTC metadata. Add your own copyright and creator metadata afterward. Note that metadata removal does not change OpenAI&#39;s license terms; AI disclosure obligations still apply regardless of whether the watermark is technically present.',
+  },
+  {
+    category: 'Comparison',
+    question: 'Does ChatGPT image generation use the same watermarks as DALL-E directly?',
+    answer:
+      'Yes "” ChatGPT&#39;s image feature is powered by DALL-E, so images generated through ChatGPT carry the same C2PA manifest, XMP, and IPTC fields that DALL-E generates directly through the API. The OpenAI signing certificate, manifest structure, and assertion format are identical. The ChatGPT Image Watermark Remover and the DALL-E Image Watermark Remover therefore perform the same underlying operation. We provide both pages because users search differently "” some look for "ChatGPT image watermark remover" and some look for "DALL-E watermark remover" "” but functionally the tools are equivalent.',
+  },
+  {
+    category: 'Detection',
+    question: 'How do I know if my ChatGPT image has a watermark?',
+    answer:
+      'Any image generated through ChatGPT&#39;s image feature after early 2024 carries C2PA metadata, XMP, and IPTC fields by default. To verify: upload the file to Adobe&#39;s contentcredentials.org/verify, which displays the embedded provenance manifest and shows OpenAI as the signing party; or run ExifTool on the file ("exiftool -a -G1 -s image.png") to reveal all metadata segments. The ChatGPT image watermark detector on this site automates these checks.',
+  },
+  {
+    category: 'Workflow',
+    question: 'Can you remove watermarks from multiple ChatGPT images at once?',
+    answer:
+      'The browser tool processes images one at a time, suitable for occasional use. For batch processing, the most efficient approach is the command line: "exiftool -all= *.png" strips metadata from every PNG in a directory in seconds. For automated pipelines that process AI imagery at scale, the c2pa-rs and c2pa-python libraries provide programmatic C2PA manifest removal.',
+  },
+  {
+    category: 'Safety',
+    question: 'Are ChatGPT images safe to use after removing metadata?',
+    answer:
+      'Yes "” the cleaned files are completely safe and remain valid PNG, JPEG, WebP, or TIFF files that open normally in any viewer or editing application. Stripping C2PA, XMP, and IPTC metadata does not introduce malware, corrupt the file, or change codec compatibility. The image content is functionally identical before and after.',
+  },
+  {
+    category: 'Performance',
+    question: 'How long does ChatGPT image watermark removal take?',
+    answer:
+      'Metadata removal is essentially instant "” typically under two seconds for a standard ChatGPT image (1024×1024 or 1792×1024). Processing involves parsing the image file structure, identifying the C2PA, XMP, and IPTC segments, and rewriting the file without those segments. There is no image re-encoding or quality loss. If you enable pixel-level attenuation, processing time increases to roughly 3"”8 seconds.',
+  },
 ];
 
 export const chatgptImageWatermarkRemoverContent: ToolContent = {

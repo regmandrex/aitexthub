@@ -274,6 +274,31 @@ const faqs: FaqItem[] = [
     question: 'Does the tool work on Firefly video that has already been through a post-production pipeline?',
     answer: 'Yes. The remover works on any version of a Firefly-generated video, including those that have been through Adobe Premiere Pro, DaVinci Resolve, After Effects, or other post-production tools. If the manifest survived post-production (most Adobe tools preserve it), the tool will remove it. If the manifest was already stripped during post-production, only the pixel-level scan and suppression step applies. The tool handles all combinations of manifest presence and pixel-signal strength.',
   },
+  {
+    category: 'Commercial Use',
+    question: 'How do I clean Adobe Firefly videos for commercial use?',
+    answer: 'Adobe Firefly Video is licensed for commercial use to paid Adobe Creative Cloud subscribers, with rights determined by your subscription plan. Once your commercial rights are confirmed, run videos through this Adobe Firefly Video Watermark Remover to strip the C2PA Content Credentials manifest, XMP attribution, and any embedded IPTC metadata. The cleaned video file is functionally identical to the original (audio and visual quality preserved bit-for-bit through stream copying). Apply your own metadata afterward via your DAM or NLE. Adobe&#39;s position is that Content Credentials should generally be preserved as transparency about AI use; removal is appropriate when delivery workflows specifically require schema-clean files.',
+  },
+  {
+    category: 'Detection',
+    question: 'How do I know if my Adobe Firefly video has a watermark?',
+    answer: 'Adobe Firefly videos carry C2PA Content Credentials by default. Upload the file to Adobe&#39;s contentcredentials.org/verify "” it displays the full Content Credentials manifest including Adobe as signer, the Firefly model version, and generation timestamp. ExifTool reveals XMP fields in Adobe&#39;s namespaces ("exiftool -a -G1 -s video.mp4"). For pixel-level signals, no public detector is currently available for Adobe&#39;s pixel watermarks specifically, but the metadata layer alone is enough to confirm AI origin.',
+  },
+  {
+    category: 'Audio',
+    question: 'Will my audio be intact after removing Firefly video watermarks?',
+    answer: 'Yes "” the audio track is preserved bit-for-bit. The Adobe Firefly Video Watermark Remover operates only on the video container&#39;s metadata segments and (in full mode) the visual frame data; it does not touch audio streams. Stream-copy operations move the audio elementary stream from the input file to the output file unchanged, so any music, narration, or sound design embedded in the video remains at original quality.',
+  },
+  {
+    category: 'Workflow',
+    question: 'Can I process multiple Adobe Firefly videos at once?',
+    answer: 'The browser tool processes one video at a time. For batch processing, the most efficient approach is the command line: "ffmpeg -i input.mp4 -map_metadata -1 -c copy output.mp4" strips metadata from a video in a fraction of a second per file with no quality loss, and a simple shell loop processes a directory in seconds. For automated pipelines, the c2pa-rs and c2pa-python libraries provide programmatic C2PA Content Credentials removal that integrates with Adobe&#39;s creative workflows.',
+  },
+  {
+    category: 'Performance',
+    question: 'How long does Adobe Firefly video watermark removal take?',
+    answer: 'Manifest-only removal completes in 5"”10 seconds for typical Firefly video lengths. The processing rewrites the video container without re-encoding the visual stream, so file duration does not significantly affect speed. Full removal mode (which addresses pixel-level signals via near-lossless re-encoding) scales with video length and resolution "” roughly real-time on a modern desktop browser, so a 30-second 1080p clip processes in 30"”60 seconds. Browser-based FFmpeg.wasm initialization adds a one-time 2"”5 second load on the first run per session.',
+  },
 ];
 
 export const adobeFireflyVideoWatermarkRemoverContent: ToolContent = {

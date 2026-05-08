@@ -337,6 +337,36 @@ const faqs: FaqItem[] = [
     answer:
       'No. Copyright ownership (or licensing rights) for AI-generated content is determined by the terms of your agreement with Adobe and applicable copyright law "” not by the presence or absence of metadata in the file. Removing C2PA metadata does not affect your legal rights to use the image. Note that copyright in AI-generated images is a complex and evolving legal area. In the US, copyright office guidance suggests that purely AI-generated content without human creative input may not be copyrightable, though this does not depend on whether watermarks are present or absent.',
   },
+  {
+    category: 'Commercial Use',
+    question: 'How do I clean Adobe Firefly images for commercial use?',
+    answer:
+      'Adobe Firefly is specifically designed for commercial use "” paid Adobe Creative Cloud subscribers receive a commercial license for Firefly outputs trained on Adobe Stock and properly licensed content. Once your commercial rights are confirmed, run images through this Adobe Firefly Image Watermark Remover to strip the comprehensive C2PA Content Credentials manifest, XMP attribution, and IPTC metadata. Apply your own copyright and creator metadata afterward using Photoshop File Info or ExifTool. Note that Adobe&#39;s position is that Content Credentials should generally be preserved as transparency about AI use; removal is appropriate when your DAM, prepress, or client workflow specifically requires a clean metadata schema.',
+  },
+  {
+    category: 'Detection',
+    question: 'How do I know if my Adobe Firefly image has a watermark?',
+    answer:
+      'Adobe Firefly images carry the most comprehensive C2PA Content Credentials of any major AI image generator, so detection is straightforward. Upload the file to Adobe&#39;s own contentcredentials.org/verify "” it displays the full Content Credentials manifest including Adobe as the signing party, the Firefly model version, generation timestamp, and any subsequent edit history. ExifTool also reveals XMP fields in Adobe&#39;s namespaces. Photoshop&#39;s File Info panel shows the embedded Content Credentials directly when you open a Firefly image.',
+  },
+  {
+    category: 'Safety',
+    question: 'Are Adobe Firefly images safe to use after removing watermarks?',
+    answer:
+      'Yes "” the cleaned files remain valid PNG, JPEG, WebP, or TIFF images that open normally in all viewers and editing applications including Photoshop, Lightroom, and Bridge. Removing the C2PA Content Credentials manifest and XMP fields does not introduce malware, corrupt the file, or affect image data. The image content is functionally identical before and after.',
+  },
+  {
+    category: 'Workflow',
+    question: 'Can you remove watermarks from multiple Adobe Firefly images at once?',
+    answer:
+      'The browser tool processes images one at a time. For batch processing of many Firefly outputs, the command line is most efficient: "exiftool -all= *.png" strips metadata from every PNG in a directory in seconds. For automated pipelines, the c2pa-rs and c2pa-python libraries provide programmatic C2PA Content Credentials manifest removal that integrates with Adobe&#39;s creative workflows or asset ingestion systems.',
+  },
+  {
+    category: 'Performance',
+    question: 'How long does Adobe Firefly watermark removal take?',
+    answer:
+      'Metadata removal is essentially instant "” under two seconds per image. Adobe Firefly Content Credentials manifests can be larger than other vendors&#39; C2PA manifests because they include detailed assertion chains and edit history when applicable, but parsing and stripping them is still nearly instantaneous. There is no image re-encoding or quality loss in basic metadata removal.',
+  },
 ];
 
 export const adobeFireflyImageWatermarkRemoverContent: ToolContent = {

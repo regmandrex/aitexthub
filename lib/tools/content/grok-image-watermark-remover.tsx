@@ -244,6 +244,31 @@ const faqs: FaqItem[] = [
     question: 'Where can I learn more about C2PA and AI image watermarking?',
     answer: 'The C2PA specification is publicly available at c2pa.org. The Content Authenticity Initiative (CAI) at contentauthenticity.org provides educational resources on provenance technology. Academic research on AI image watermarking robustness is published in IEEE Security & Privacy, ACM CCS, CVPR, and NeurIPS. Google DeepMind\'s SynthID paper provides detailed analysis of imperceptible watermark design trade-offs applicable to understanding pixel-level watermarks generally. xAI\'s approach to AI safety and content transparency is documented in their published AI safety framework.',
   },
+  {
+    category: 'Commercial Use',
+    question: 'How do I clean Grok images for commercial use?',
+    answer: 'Cleaning Grok-generated images for commercial use is a two-step process. First, confirm your X / Grok Premium subscription tier permits commercial use of generated images "” review the current xAI / X usage policies for the most up-to-date licensing terms. Second, run images through this Grok Image Watermark Remover to strip the C2PA manifest, XMP attribution, and IPTC metadata. Apply your own copyright and creator metadata afterward using Photoshop File Info or ExifTool. Note that metadata removal does not change xAI&#39;s license terms; AI disclosure obligations still apply regardless of whether the watermark is technically present.',
+  },
+  {
+    category: 'Detection',
+    question: 'How do I know if my Grok image has a watermark?',
+    answer: 'Grok-generated images carry C2PA provenance metadata and XMP fields by default. To verify: upload the file to Adobe&#39;s contentcredentials.org/verify, which displays the embedded provenance manifest and shows xAI as the signing party; or run ExifTool ("exiftool -a -G1 -s image.png") to reveal all metadata segments. The Grok image watermark detector on this site automates these checks and reports what is present.',
+  },
+  {
+    category: 'Safety',
+    question: 'Are Grok images safe to use after removing watermarks?',
+    answer: 'Yes "” the cleaned files remain valid PNG, JPEG, WebP, or TIFF images that open normally in any viewer or editing application. Stripping C2PA, XMP, and IPTC metadata does not introduce malware, corrupt the file, or change codec compatibility. The image content is functionally identical before and after metadata removal.',
+  },
+  {
+    category: 'Workflow',
+    question: 'Can you remove watermarks from multiple Grok images at once?',
+    answer: 'The browser tool processes images one at a time. For batch processing of many Grok-generated images, the command line is most efficient: "exiftool -all= *.png" strips metadata from every PNG in a directory in seconds. For automated pipelines, the c2pa-rs and c2pa-python libraries provide programmatic C2PA manifest removal that integrates with CI/CD or asset ingestion workflows.',
+  },
+  {
+    category: 'Performance',
+    question: 'How long does Grok watermark removal take?',
+    answer: 'Metadata removal is essentially instant "” under two seconds per image. The processing rewrites the file without re-encoding the image data, so quality is preserved bit-for-bit. If you enable pixel-level attenuation, processing time increases to roughly 3"”8 seconds depending on image size and your device&#39;s CPU.',
+  },
 ];
 
 export const grokImageWatermarkRemoverContent: ToolContent = {
