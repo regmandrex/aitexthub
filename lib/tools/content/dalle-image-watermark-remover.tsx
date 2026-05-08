@@ -184,6 +184,48 @@ const faqs: FaqItem[] = [
     answer:
       'You would produce an image with a C2PA manifest signed by your own certificate authority, identifying your organization as the asserting party rather than OpenAI. This is a legitimate use of the C2PA standard for publishers and editors who want to assert their own review and approval of content. The C2PA standard explicitly supports this editorial workflow. However, the new manifest would not claim AI generation origin (unless you include a CreativeWork assertion specifying AI involvement) "” you would be signing a provenance record for your editorial handling, not for the original generation. Consult the C2PA specification and c2pa-rs documentation for implementation guidance.',
   },
+  {
+    category: 'Commercial Use',
+    question: 'How do I clean DALL-E images for commercial use?',
+    answer:
+      'Cleaning DALL-E images for commercial use involves two steps. First, confirm your OpenAI plan permits commercial use of DALL-E outputs (paid ChatGPT subscribers and DALL-E API users generally have commercial rights "” verify the current terms at openai.com/policies). Second, run the image through this DALL-E image watermark remover to strip the C2PA manifest, XMP attribution, and IPTC metadata. The cleaned image is functionally identical to the original but no longer carries OpenAI provenance metadata that may conflict with your DAM, prepress, or licensing workflows. Add your own copyright and creator metadata afterward using Photoshop File Info, ExifTool, or your asset management system. Removing metadata does not change the underlying license terms "” your obligation to follow OpenAI&#39;s usage policy continues regardless of whether the C2PA manifest is present in the file.',
+  },
+  {
+    category: 'Commercial Use',
+    question: 'Can DALL-E images be used without watermarks in client deliverables?',
+    answer:
+      'Yes "” DALL-E images can be delivered to clients without C2PA watermarks once the metadata has been stripped. This is a common workflow in agency and freelance contexts where the client&#39;s asset library uses a custom metadata schema, or where the agency prefers to apply its own creator and copyright metadata before delivery. Use this DALL-E image watermark remover to strip the OpenAI manifest, then apply your own metadata (your studio name, project ID, copyright line) before exporting the deliverable. Note that delivering AI-generated imagery to clients without disclosing AI involvement may breach contracts, professional ethics codes, or marketplace rules "” the metadata removal is a file-management operation, not a license to misrepresent the image&#39;s origin in writing or in conversation with the client.',
+  },
+  {
+    category: 'Detection',
+    question: 'How do I know if my DALL-E image has a watermark?',
+    answer:
+      'You can check whether a DALL-E image carries a watermark using several methods. The simplest is to upload the image to the DALL-E image watermark detector on this site "” it inspects the file for C2PA manifests, XMP attribution fields, IPTC records, and known DALL-E EXIF signatures, and reports what it finds. For technical users, ExifTool reveals all metadata: run `exiftool -a -G1 -s image.png` to list every metadata segment. C2PA-compatible viewers like Adobe&#39;s Content Credentials inspector or the c2patool command-line utility will show whether a verified C2PA manifest is present and who signed it. Any DALL-E image generated through ChatGPT or the OpenAI API after early 2024 will almost certainly carry a C2PA manifest by default.',
+  },
+  {
+    category: 'Safety',
+    question: 'Are DALL-E images safe to use after removing metadata?',
+    answer:
+      'Yes "” DALL-E images are safe to use after metadata removal. Stripping C2PA, XMP, and IPTC metadata does not introduce malware, corrupt the image, or create any security risk. The cleaned file is a standard PNG, JPEG, WebP, or TIFF file that opens normally in any image viewer or editing application. The image data itself is untouched (unless you enable pixel-level attenuation, which makes imperceptible sub-pixel changes). The only difference between the original and cleaned file is the absence of the AI provenance metadata segments. There is no security trade-off "” metadata removal is a routine file-management operation equivalent to stripping GPS coordinates from a photograph.',
+  },
+  {
+    category: 'Workflow',
+    question: 'Can you remove watermarks from multiple DALL-E images at once?',
+    answer:
+      'This browser tool processes images one at a time through the upload interface, which is suitable for occasional use. For batch processing of many DALL-E images, the most efficient approach is the command line: `exiftool -all= *.png` strips metadata from every PNG in the current directory in seconds, and `for file in *.png; do exiftool -all= "$file"; done` works on systems where wildcards are limited. For automated pipelines that process AI imagery at scale, the c2pa-rs (Rust) and c2pa-python libraries provide programmatic C2PA manifest removal that integrates with CI/CD or asset ingestion workflows. If you handle a few hundred images per day, this browser tool is fine; for thousands, scripting is the right call.',
+  },
+  {
+    category: 'Comparison',
+    question: 'Does DALL-E use the same watermarking as ChatGPT image generation?',
+    answer:
+      'DALL-E and ChatGPT image generation are closely related "” ChatGPT&#39;s image feature is powered by DALL-E behind the scenes, so images generated through ChatGPT carry the same C2PA manifest, XMP, and IPTC fields that DALL-E generates directly through the API. The OpenAI signing certificate, the manifest structure, and the assertion format are identical. The DALL-E image watermark remover and the ChatGPT image watermark remover therefore perform the same underlying operation. We provide both pages because users search differently "” some look for "DALL-E watermark remover" and some look for "ChatGPT image watermark remover" "” but functionally the tools are equivalent.',
+  },
+  {
+    category: 'Performance',
+    question: 'How long does DALL-E watermark removal take?',
+    answer:
+      'Metadata removal is essentially instant "” typically under two seconds for a standard DALL-E PNG (1024×1024 or 1792×1024). The processing involves parsing the image file structure, identifying the C2PA, XMP, and IPTC segments, and rewriting the file without those segments. There is no image re-encoding or quality loss in basic metadata removal. If you enable pixel-level attenuation, processing time increases to roughly 3"”8 seconds depending on image size and your device&#39;s CPU, because the image data is processed through a series of frequency-domain transforms. Batch operations through ExifTool from the command line are even faster "” several hundred images per second on a modern machine.',
+  },
 ];
 
 export const dalleImageWatermarkRemoverContent: ToolContent = {

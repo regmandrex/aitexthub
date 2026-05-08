@@ -259,6 +259,42 @@ const faqs: FaqItem[] = [
     answer:
       'Metadata-only removal produces a bit-for-bit identical image "” no pixel values are changed. If you notice any visual difference with metadata-only removal, compare the file sizes: if the cleaned file is smaller, that confirms only metadata was removed with no pixel changes. If you enabled Pixel-Level Attenuation, the applied transforms are imperceptible by design (below 45 dB PSNR), but in images with very smooth gradients or flat color areas, extremely minor tonal variations may be visible at extreme zoom levels. If exact pixel preservation is critical, use metadata-only removal without attenuation.',
   },
+  {
+    category: 'Commercial Use',
+    question: 'How do I clean Sora images for commercial use?',
+    answer:
+      'Cleaning Sora images for commercial use is a two-step process. First, confirm your OpenAI plan permits commercial use of Sora outputs (currently available to ChatGPT Plus and Pro subscribers under OpenAI&#39;s usage policies "” verify the latest at openai.com/policies). Second, run the image through this Sora Image Watermark Remover to strip the C2PA manifest, XMP attribution, and IPTC metadata. The cleaned file is functionally identical to the original but no longer carries OpenAI provenance metadata that may conflict with DAM, prepress, or licensing workflows. Add your own copyright and creator metadata afterward using Photoshop File Info, ExifTool, or your asset management system. Removing metadata does not change the underlying license terms; OpenAI&#39;s usage policy still applies.',
+  },
+  {
+    category: 'Detection',
+    question: 'How do I know if my Sora image has a watermark?',
+    answer:
+      'Several methods reveal whether a Sora image carries a watermark. The simplest is the Sora image watermark detector on this site "” it inspects the file for C2PA manifests, XMP attribution fields, IPTC records, and known signatures, then reports what it finds. For technical users, ExifTool reveals all metadata: run "exiftool -a -G1 -s image.png" to list every metadata segment. Adobe&#39;s contentcredentials.org/verify is a free public C2PA viewer that displays the embedded provenance manifest and shows OpenAI as the signing party. Any image extracted from a Sora video downloaded directly from OpenAI will carry C2PA metadata by default.',
+  },
+  {
+    category: 'Safety',
+    question: 'Are Sora images safe to use after removing metadata?',
+    answer:
+      'Yes "” Sora images are completely safe after metadata removal. Stripping C2PA, XMP, and IPTC metadata does not introduce malware, corrupt the file, or create any security risk. The cleaned file is a standard PNG, JPEG, WebP, or TIFF that opens normally in any image viewer or editing application. The image data itself is untouched (unless you enable pixel-level attenuation, which makes imperceptible sub-pixel changes). The only difference between the original and cleaned file is the absence of the AI provenance metadata segments.',
+  },
+  {
+    category: 'Workflow',
+    question: 'Can you remove watermarks from multiple Sora images at once?',
+    answer:
+      'This browser tool processes images one at a time, which is suitable for occasional use. For batch processing of many Sora frames, the most efficient approach is the command line: "exiftool -all= *.png" strips metadata from every PNG in a directory in seconds. For automated workflows that ingest hundreds of frames per day from Sora video exports, the c2pa-rs (Rust) and c2pa-python libraries provide programmatic C2PA manifest removal that integrates with CI/CD or asset ingestion pipelines.',
+  },
+  {
+    category: 'Performance',
+    question: 'How long does it take to remove watermarks from a Sora image?',
+    answer:
+      'Metadata removal is essentially instant "” typically under two seconds for a standard Sora frame export (1080p or 1920×1080). Processing involves parsing the image file structure, identifying the C2PA, XMP, and IPTC segments, and rewriting the file without those segments. There is no image re-encoding or quality loss in basic metadata removal. If you enable pixel-level attenuation, processing time increases to roughly 3"”8 seconds depending on image size and your device&#39;s CPU.',
+  },
+  {
+    category: 'Frame Extraction',
+    question: 'How do I extract frames from a Sora video to clean as still images?',
+    answer:
+      'To extract still frames from a Sora video for use as standalone images, use FFmpeg from the command line: "ffmpeg -i sora-video.mp4 -vf fps=1 frame-%04d.png" extracts one frame per second; "ffmpeg -i sora-video.mp4 -ss 00:00:05 -vframes 1 frame.png" grabs a single frame at the 5-second mark. Many video editing applications (Premiere, Final Cut, DaVinci Resolve, CapCut) also support frame export. Extracted frames carry the same C2PA and XMP watermarks as Sora storyboard images, so run them through this tool before using them as standalone images.',
+  },
 ];
 
 export const soraImageWatermarkRemoverContent: ToolContent = {
