@@ -25,7 +25,7 @@ export default function TruthAboutChatGptWatermarksMythsVsRealityPage() {
 
       {/* Hero card */}
       <div className="rounded-[28px] border border-slate-200 bg-white/70 p-6 shadow-xl shadow-slate-900/5 backdrop-blur-lg">
-        <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Myths vs Reality 2025</p>
+        <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Myths vs Reality 2026</p>
         <h1 className="mt-3 text-3xl font-semibold text-slate-900">The Truth About ChatGPT Watermarks</h1>
         <p className="mt-2 text-slate-600">
           ChatGPT watermarks are one of the most misunderstood topics in AI content discussion. There are myths circulating

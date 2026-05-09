@@ -25,7 +25,7 @@ export default function FreeChatGptWatermarkRemoverToolsComparedPage() {
 
       {/* Hero card */}
       <div className="rounded-[28px] border border-slate-200 bg-white/70 p-6 shadow-xl shadow-slate-900/5 backdrop-blur-lg">
-        <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Tool Comparison 2025</p>
+        <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Tool Comparison 2026</p>
         <h1 className="mt-3 text-3xl font-semibold text-slate-900">Free ChatGPT Watermark Remover Tools Compared</h1>
         <p className="mt-2 text-slate-600">
           There are now dozens of tools claiming to remove ChatGPT watermarks. They vary significantly in what they actually

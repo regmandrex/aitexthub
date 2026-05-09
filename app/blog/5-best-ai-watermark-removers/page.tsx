@@ -25,11 +25,11 @@ export default function FiveBestAiWatermarkRemoversPage() {
 
       {/* Hero card */}
       <div className="rounded-[28px] border border-slate-200 bg-white/70 p-6 shadow-xl shadow-slate-900/5 backdrop-blur-lg">
-        <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Expert Comparison 2025</p>
-        <h1 className="mt-3 text-3xl font-semibold text-slate-900">5 Best AI Text Watermark Removers in 2025</h1>
+        <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Expert Comparison 2026</p>
+        <h1 className="mt-3 text-3xl font-semibold text-slate-900">5 Best AI Text Watermark Removers in 2026</h1>
         <p className="mt-2 text-slate-600">
           AI text watermark removers vary significantly in what they actually remove, how they handle privacy, and how comprehensive
-          their Unicode coverage is. This comparison covers the five best approaches in 2025, with honest assessments of what each
+          their Unicode coverage is. This comparison covers the five best approaches in 2026, with honest assessments of what each
           one does and does not do well. All tools mentioned here process text without requiring account creation.
         </p>
         <div className="mt-5 grid gap-4 sm:grid-cols-3">
