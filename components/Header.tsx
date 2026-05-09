@@ -9,7 +9,7 @@ export default function Header() {
           GPTCLEANUP <span className="font-normal text-slate-500">AI</span>
         </Link>
 
-        <div className="flex items-center gap-2 md:gap-3">
+        <div className="flex items-center gap-1 md:gap-2">
           <Link
             href="/login"
             className="hidden text-sm font-medium text-slate-700 hover:text-slate-900 md:inline-flex md:px-3 md:py-2"

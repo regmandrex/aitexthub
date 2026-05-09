@@ -3,7 +3,6 @@ import { ReactNode } from 'react';
 import dynamic from 'next/dynamic';
 import { Inter } from 'next/font/google';
 import Header from '../components/Header';
-import ProFunnelBanner from '../components/ProFunnelBanner';
 import { JsonLd } from '../components/JsonLd';
 import { BreadcrumbJsonLdAndLang } from '../components/BreadcrumbJsonLdAndLang';
 import StickyFooterAd from '../components/ads/StickyFooterAd';
@@ -101,7 +100,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <JsonLd data={SITE_SCHEMA} />
         <JsonLd data={NAV_SCHEMA} />
         <BreadcrumbJsonLdAndLang />
-        <ProFunnelBanner />
         <Header />
         <main className="min-h-screen">{children}</main>
         <Footer />

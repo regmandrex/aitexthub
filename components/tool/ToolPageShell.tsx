@@ -2,6 +2,7 @@ import { ReactNode } from 'react';
 import AdSenseSlot from '../ads/AdSenseSlot';
 import BelowToolAd from '../ads/BelowToolAd';
 import { Breadcrumbs } from '../Breadcrumbs';
+import ProFunnelBanner from '../ProFunnelBanner';
 
 type Tool = {
   slug: string;
@@ -52,6 +53,10 @@ export function ToolPageShell({ tool, ui, related, children }: ToolPageShellProp
             <span>Free</span>
           </div>
         </section>
+
+        <div className="mt-6 -mx-4 md:mx-0 md:rounded-xl md:overflow-hidden">
+          <ProFunnelBanner variant="inline" />
+        </div>
 
         <section className="relative w-full mt-6">
           <div className="w-full max-w-none rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6">
