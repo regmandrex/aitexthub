@@ -51,6 +51,22 @@ export default function HeaderMobileMenu() {
                 {link.label}
               </Link>
             ))}
+            <div className="mt-2 flex flex-col gap-2 border-t border-slate-200 pt-3">
+              <Link
+                href="/login"
+                className="rounded-lg px-2 py-2 text-slate-700 hover:bg-slate-100"
+                onClick={() => setOpen(false)}
+              >
+                Log in
+              </Link>
+              <Link
+                href="/signup"
+                className="rounded-full bg-brand-600 px-4 py-2 text-center text-white hover:bg-brand-700"
+                onClick={() => setOpen(false)}
+              >
+                Get Started
+              </Link>
+            </div>
           </nav>
         </div>
       ) : null}

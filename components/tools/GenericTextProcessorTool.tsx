@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import ToolTextArea from './ToolTextArea';
+import HumanizerUpsellCard from '../HumanizerUpsellCard';
 
 interface GenericTextProcessorToolProps {
   processText: (text: string) => string;
@@ -129,6 +130,8 @@ export function GenericTextProcessorTool({
           <span>Analyzing and processing your text...</span>
         </div>
       )}
+
+      {output && !isProcessing ? <HumanizerUpsellCard variant="cleanup" /> : null}
     </div>
   );
 }
