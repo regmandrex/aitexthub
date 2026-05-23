@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next';
+import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { JsonLd } from '@/components/JsonLd';
 import FAQSection from '@/components/FAQSection';
@@ -12,7 +12,7 @@ import { siteUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
 
-export const revalidate = 604800;
+export const revalidate = 2592000;
 
 const toolSlug = 'ai-humanizer';
 
@@ -102,7 +102,7 @@ function createWriteUp() {
         <p>Free does not mean unlimited or without limits. Check the tool interface for any word limits or rate limits, and use the AI Humanizer in line with your organization&apos;s policies. For official or high-stakes decisions, rely on whatever tools and procedures your institution or employer has approved.</p>
 
         <h2>Technical Background: What the AI Humanizer Analyzes</h2>
-        <p>Understanding a few key concepts can help you interpret the AI Humanizer&apos;s results. Many AI content tools look at statistical and linguistic features such as word choice predictability, sentence-length variation, and structural consistency. AI-generated text often has different patterns in these areas than human-written text, though overlap exists and no single metric is perfect. The AI Humanizer combines such signals to produce an indication or score that you can use alongside your own judgment.</p>
+        <p>Understanding a few key concepts can help you interpret the AI Humanizer&apos;s results. Detection platforms like <strong>Turnitin</strong>, <strong>GPTZero</strong>, <strong>Originality.ai</strong>, <strong>Copyleaks</strong>, <strong>Winston AI</strong>, and <strong>Sapling</strong> score text on statistical and linguistic features such as word choice predictability, token-level perplexity, burstiness, sentence-length variation, and structural consistency. AI-generated text tends to score unusually low on perplexity and unusually flat on burstiness compared to human writing, which is the primary signal these classifiers rely on — and crucially, the layer that formatting cleanup cannot reach. A humanizer is the right tool for that statistical layer because it actively rewrites sentence structure, varies length and complexity, and reshapes vocabulary distribution so the resulting text looks more like the uneven, bursty patterns of human drafting rather than the smooth probability curve of raw model output. The AI Humanizer targets exactly those features that <strong>GPTZero</strong>, <strong>Originality.ai</strong>, and <strong>Copyleaks</strong> weight most heavily, which is fundamentally different from what a watermark remover or text cleaner does.</p>
         <p>Results are typically probabilistic: they suggest likelihood rather than certainty. That is why the tool is best used as a screening aid and why follow-up with human review or discussion is recommended when the outcome matters for grades, publication, or compliance.</p>
 
         <h2>Integrating the AI Humanizer With Institutional Policies</h2>
@@ -174,6 +174,7 @@ export default async function AIHumanizerPage() {
     { category: 'Technical', question: 'Can the AI Humanizer change facts or citations?', answer: 'The tool aims to preserve meaning while changing style. Always verify facts and citations after humanizing; do not rely on it for accuracy. Recheck quotes, numbers, and references in your final draft. The AI Humanizer improves how text reads, not the correctness of content. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity.' },
     { category: 'Use cases', question: 'Is the AI Humanizer suitable for professional or business writing?', answer: 'Yes. Professionals use this free AI Humanizer to polish AI-generated reports, emails, and marketing copy so they sound more natural and on-brand. Always review output for tone and accuracy and ensure it meets your organization\'s standards. Combine humanized text with your own expertise and edits. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity.' },
     { category: 'General', question: 'What is the best way to humanize AI text for essays?', answer: 'Paste your essay draft into the AI Humanizer and run it. Then carefully review the result: fix any changed nuance, restore your voice, and add your own analysis and citations. Use the humanizer to improve flow and variation; do not submit without checking your institution\'s AI and disclosure rules. Best practice is one humanizer pass plus your own full edit.' },
+    { category: 'AI Detection', question: 'Does the AI Humanizer work against Turnitin, GPTZero, Originality.ai, and Copyleaks?', answer: 'The AI Humanizer targets the statistical layer that detection platforms like Turnitin, GPTZero, Originality.ai, Copyleaks, Winston AI, and Sapling actually score against, which is fundamentally different from what a text cleaner or watermark remover does. Those platforms primarily evaluate token-level perplexity, burstiness, sentence length variance, and vocabulary distribution. Raw AI output from ChatGPT, Claude, or Gemini scores unusually low on perplexity and unusually flat on burstiness, which is the main reason these classifiers flag it. Removing hidden Unicode characters addresses only one minor surface signal, but it does not change any of the statistical features that Turnitin, GPTZero, and Originality.ai weight most heavily. The humanizer is the right tool for that layer because it actively rewrites sentence structure, varies sentence length and complexity, and reshapes word choices to produce the uneven, bursty patterns that look more like human writing to Copyleaks, Winston AI, and Sapling. No tool can guarantee a specific detector outcome, since detectors evolve, but rewriting the statistical patterns is the only meaningful intervention at this layer. Always follow your institution or employer policies on AI use and disclosure.' },
   ];
 
   return (

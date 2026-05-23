@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next';
+import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { JsonLd } from '@/components/JsonLd';
 import FAQSection from '@/components/FAQSection';
@@ -13,7 +13,7 @@ import { siteUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
 
-export const revalidate = 604800;
+export const revalidate = 2592000;
 
 const toolSlug = 'text-cleaner';
 
@@ -88,6 +88,11 @@ const faqs: FaqItem[] = [
     category: 'Technical',
     question: 'Do invisible characters affect word count?',
     answer: 'Yes. Zero-width spaces are treated as word separators by some word count algorithms, inflating the word count by splitting single words into two. Non-breaking spaces are treated differently from regular spaces by some tools, causing discrepancies. Byte-order marks count as characters in some applications. This is why a document that is 500 words in ChatGPT can register as 507 words in Google Docs — invisible characters are being counted. Running text through the text cleaner before word counting gives you an accurate count.',
+  },
+  {
+    category: 'Detection',
+    question: 'Does this text cleaner work against Turnitin, GPTZero, Originality.ai, and Copyleaks?',
+    answer: 'The text cleaner targets the formatting layer that detection platforms like Turnitin, GPTZero, Originality.ai, Copyleaks, Winston AI, and Sapling can include as one of their surface signals, but it does not modify the underlying language patterns those tools score against. Hidden Unicode characters, zero-width spaces, and unusual spacing runs are easy fingerprints for any classifier to flag because they survive copy and paste from AI chat interfaces, and removing them addresses one technical detection vector. However, the deeper layer these detectors evaluate is statistical: token-level perplexity, burstiness, sentence length variance, and vocabulary distribution. Cleaning formatting does not change any of that, so a draft can still be flagged as AI-generated even after every invisible character is stripped. A clean text cleaner pass is a sensible first step for hygiene reasons alone, and it reduces one fingerprint Turnitin, GPTZero, and Copyleaks can use. To address the statistical layer that platforms like Originality.ai, Winston AI, and Sapling weight most heavily, you would need to rewrite the text with the GPTCleanup Pro humanizer, which targets perplexity and burstiness directly rather than just the formatting residue.',
   },
   {
     category: 'Compatibility',
@@ -198,9 +203,9 @@ const article = (
     <p>Word processors and AI tools substitute typographic punctuation for plain ASCII equivalents. Curly quotes replace straight quotes. Em dashes replace double hyphens. En dashes replace single hyphens. An ellipsis character replaces three periods. In print documents, these substitutions are correct and look professional. In JSON, Python, JavaScript, CSV, HTML, and command-line tools, they cause syntax errors, parse failures, and broken behavior. The text cleaner converts all typographic special characters to their standard ASCII equivalents.</p>
 
     <h2>Why AI-Generated Text Needs Cleaning</h2>
-    <p>AI language models are responsible for introducing most of the invisible characters that users encounter in modern text workflows. Understanding why helps you know when cleaning is most critical.</p>
+    <p>AI language models are responsible for introducing most of the invisible characters that users encounter in modern text workflows. Understanding why helps you know when cleaning is most critical, especially since these same invisible characters are one of the surface fingerprints that AI detection platforms like <strong>Turnitin</strong>, <strong>GPTZero</strong>, <strong>Originality.ai</strong>, <strong>Copyleaks</strong>, <strong>Winston AI</strong>, and <strong>Sapling</strong> can scan for alongside their statistical models.</p>
     <p>When an AI model generates text, it works through a tokenization process: input text is split into tokens (chunks of characters or subwords), processed through the neural network, and converted back to text. The conversion from output tokens back to text can introduce invisible characters at token boundaries. Additionally, the web interfaces where AI output is displayed use browser rendering engines that add their own invisible characters during the copy operation.</p>
-    <p>The result is that practically every piece of text copied from a ChatGPT, Claude, Gemini, or other AI chat interface contains invisible characters. The types and quantities vary — ChatGPT tends to produce more zero-width spaces, Claude tends to produce fewer — but no major AI model produces consistently clean output without a cleaning step. A <strong>text cleaner free</strong> to use with no limits is the practical solution for anyone who regularly uses AI tools in their writing or data workflows.</p>
+    <p>The result is that practically every piece of text copied from a ChatGPT, Claude, Gemini, or other AI chat interface contains invisible characters. The types and quantities vary — ChatGPT tends to produce more zero-width spaces, Claude tends to produce fewer — but no major AI model produces consistently clean output without a cleaning step. Running the text through a cleaner addresses the formatting-layer signal that detectors like <strong>Turnitin</strong>, <strong>GPTZero</strong>, and <strong>Originality.ai</strong> can pick up, though deeper statistical patterns require a separate humanizer pass. A <strong>text cleaner free</strong> to use with no limits is the practical solution for anyone who regularly uses AI tools in their writing or data workflows.</p>
 
     <h2>Text Cleaner Use Cases</h2>
     <h3>Content Writing and Blogging</h3>
@@ -330,7 +335,7 @@ export default async function TextCleanerPage() {
           <h1 className="text-xl font-semibold text-slate-900 sm:text-2xl md:text-3xl">{title}</h1>
           <p className="max-w-2xl mx-auto text-xs text-slate-700 sm:text-sm md:text-[15px]">{description}</p>
           <div className="flex items-center justify-center gap-1 text-sm text-slate-500">
-            <span className="text-yellow-500">★★★★★</span>
+            <span className="text-yellow-500">?????</span>
             <span>4.9</span>
             <span>·</span>
             <span>Free</span>

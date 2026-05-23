@@ -1,4 +1,4 @@
-﻿import FAQSection from "../../components/FAQSection";
+import FAQSection from "../../components/FAQSection";
 import FaqJsonLd from "../../components/FaqJsonLd";
 import type { FaqItem } from "../../components/faqData";
 import ToolWorkbench from "../../components/ToolWorkbench";
@@ -22,7 +22,7 @@ function RailAd({ side }: { side: 'left' | 'right' }) {
   );
 }
 
-export const revalidate = 604800;
+export const revalidate = 2592000;
 
 const faqs: FaqItem[] = [
   {
@@ -146,6 +146,11 @@ const faqs: FaqItem[] = [
     answer: `Yes, if your organization or institution requires disclosure. Cleanup does not change the origin of the text, it only improves formatting. Transparency is still important for ethical and policy reasons. Treat cleanup as a formatting step, not a way to mask authorship.`,
   },
   {
+    category: 'Detection',
+    question: 'Does ChatGPT Watermark Remover work against Turnitin, GPTZero, Originality.ai, and Copyleaks?',
+    answer: `ChatGPT Watermark Remover targets the formatting layer that detection platforms like Turnitin, GPTZero, Originality.ai, Copyleaks, Winston AI, and Sapling can incorporate as one of their surface signals, but it does not modify the underlying language patterns those tools score against. Hidden Unicode characters, zero width spaces, and unusual spacing runs are easy fingerprints for any classifier to flag because they survive copy and paste from a chat interface. Removing them with this tool eliminates one technical detection vector and produces clean text that behaves predictably in editors, forms, and CMS templates. However, the deeper layer these detectors evaluate is statistical: token level perplexity, burstiness, sentence length variance, and vocabulary distribution. Formatting cleanup does not change any of that, so a draft can still be flagged as AI generated even after every invisible character is stripped. If your goal is to address the statistical layer that Turnitin, GPTZero, and Originality.ai weight most heavily, you would need to rewrite the text with the GPTCleanup Pro humanizer, which targets perplexity and burstiness directly. Treat this remover as the first step in a clean text workflow, not as a detection bypass.`,
+  },
+  {
     category: 'Security',
     question: 'Can the tool be used in restricted or privacy sensitive environments?',
     answer: `The tool processes text in the browser, which keeps the workflow local to your device. That can be helpful in privacy sensitive contexts because it avoids sending text to AI services. However, you should still follow your own security requirements and confirm that local processing meets your compliance needs. If your environment restricts web access, you may need an approved workflow for access.`,
@@ -191,7 +196,7 @@ export default function ChatGPTWatermarkCleanerPage() {
             Docs, and SEO-friendly publishing.
           </p>
           <div className="flex items-center justify-center gap-1 text-sm text-slate-500">
-            <span className="text-yellow-500">★★★★★</span>
+            <span className="text-yellow-500">?????</span>
             <span>4.9</span>
             <span>·</span>
             <span>Free</span>
@@ -445,9 +450,12 @@ export default function ChatGPTWatermarkCleanerPage() {
           <h3 className="text-xl font-semibold text-slate-900">Zero Width and Non Breaking Spaces</h3>
           <p className="text-slate-700">
             Zero width spaces and non breaking spaces are invisible characters that can change how text behaves without changing how it looks.
-            They can prevent line wrapping in narrow layouts, break search matches, or inflate character counts in submission portals. These
-            characters often appear after copying from a browser interface or a rich editor. ChatGPT text cleanup removes them so your content
-            behaves like plain text across platforms.
+            They can prevent line wrapping in narrow layouts, break search matches, or inflate character counts in submission portals, and they
+            are also one of the surface fingerprints that AI detection platforms like <strong>Turnitin</strong>, <strong>GPTZero</strong>,{' '}
+            <strong>Originality.ai</strong>, <strong>Copyleaks</strong>, <strong>Winston AI</strong>, and <strong>Sapling</strong> can scan
+            for alongside their stylometric models. These characters often appear after copying from a browser interface or a rich editor.
+            ChatGPT text cleanup removes them so your content behaves like plain text across platforms and clears one of the cheaper detection
+            vectors before any classifier ever evaluates sentence-level patterns.
           </p>
 
           <h3 className="text-xl font-semibold text-slate-900">Punctuation Normalization and Quote Styles</h3>

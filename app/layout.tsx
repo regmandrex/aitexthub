@@ -16,8 +16,9 @@ const Footer = dynamic(() => import('../components/Footer'), { ssr: true });
 
 const inter = Inter({
   subsets: ['latin'],
-  display: 'optional',
+  display: 'swap',
   adjustFontFallback: true,
+  preload: true,
   variable: '--font-inter',
 });
 

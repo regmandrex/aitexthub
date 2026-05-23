@@ -1,4 +1,4 @@
-﻿import FAQSection from '../../components/FAQSection';
+import FAQSection from '../../components/FAQSection';
 import FaqJsonLd from '../../components/FaqJsonLd';
 import type { FaqItem } from '../../components/faqData';
 import ToolWorkbench from '../../components/ToolWorkbench';
@@ -22,7 +22,7 @@ function RailAd({ side }: { side: 'left' | 'right' }) {
   );
 }
 
-export const revalidate = 604800;
+export const revalidate = 2592000;
 
 export async function generateMetadata() {
   return buildMeta({
@@ -203,6 +203,12 @@ const faqs: FaqItem[] = [
   },
   {
     category: "Usage & Publishing",
+    question: "Will Claude Watermark Cleaner help my text pass Turnitin, GPTZero, or Originality.ai?",
+    answer:
+      "Claude Watermark Cleaner addresses the formatting layer that detection platforms like Turnitin, GPTZero, Originality.ai, Copyleaks, Winston AI, and Sapling can include as one of their surface signals, but it does not modify the deeper statistical patterns those classifiers score against. Hidden Unicode characters, zero-width spaces, and unusual spacing runs are easy fingerprints for any detector to flag because they survive copy and paste from a chat interface, and removing them eliminates one technical detection vector. However, Turnitin, GPTZero, and Originality.ai primarily weight token-level perplexity, burstiness, sentence length variance, and vocabulary distribution, none of which change when you normalize formatting. A draft can still be flagged as AI-generated even after every invisible character is stripped, especially since Claude output tends to be unusually consistent across the exact axes these tools measure. If your goal is to address the statistical layer that Turnitin, GPTZero, Copyleaks, and Winston AI weight most heavily, you would need to rewrite the text with the GPTCleanup Pro humanizer, which targets perplexity and burstiness directly. Treat this cleaner as the first step in a clean text workflow, not as a detection bypass.",
+  },
+  {
+    category: "Usage & Publishing",
     question: "How does the Claude Watermark Cleaner support responsible AI usage?",
     answer:
       'The tool enables responsible use by helping users present AI-assisted content in a clean, accessible, and readable format. It promotes ethical editing, transparency, and compliance with publishing standards. It does not attempt to misrepresent or conceal AI authorship and aligns with widely accepted editorial and academic norms.',
@@ -234,7 +240,7 @@ export default async function ClaudeWatermarkCleanerPage() {
             {subtitle}
           </p>
           <div className="flex items-center justify-center gap-1 text-sm text-slate-500">
-            <span className="text-yellow-500">★★★★★</span>
+            <span className="text-yellow-500">?????</span>
             <span>4.9</span>
             <span>·</span>
             <span>Free</span>
@@ -322,7 +328,13 @@ export default async function ClaudeWatermarkCleanerPage() {
           </p>
 
           <h3 className="text-xl font-semibold text-slate-900">Why Claude Watermarks Trigger AI Detectors</h3>
-          <p>Claude text often scores high on detectors because it is:</p>
+          <p>
+            Claude text often gets flagged by detection platforms like <strong>Turnitin</strong>, <strong>GPTZero</strong>,{' '}
+            <strong>Originality.ai</strong>, <strong>Copyleaks</strong>, <strong>Winston AI</strong>, and <strong>Sapling</strong> because
+            its statistical fingerprint is exactly what those classifiers are trained to recognize. These platforms score perplexity,
+            burstiness, sentence length variance, and token predictability across the entire document, and Claude output tends to be
+            unusually consistent across all of those axes. Claude text often scores high on detectors because it is:
+          </p>
           <ul className="list-disc list-inside space-y-1 text-slate-700">
             <li>Too coherent</li>
             <li>Too evenly paced</li>

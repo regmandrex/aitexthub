@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next';
+import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { JsonLd } from '@/components/JsonLd';
 import FAQSection from '@/components/FAQSection';
@@ -13,7 +13,7 @@ import { siteUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
 
-export const revalidate = 604800;
+export const revalidate = 2592000;
 
 const toolSlug = 'ai-text-cleaner';
 
@@ -104,6 +104,11 @@ const faqs: FaqItem[] = [
     category: 'AI Detection',
     question: 'Will cleaned AI text pass Turnitin, GPTZero, or Originality.ai?',
     answer: 'Cleaning removes hidden Unicode artifacts that some detectors use as one signal, but Turnitin, GPTZero, Originality.ai, and other detection platforms analyze many linguistic features beyond hidden characters. Cleaning ensures your text is free of invisible formatting issues but does not alter the linguistic patterns that detectors primarily rely on. Always follow your institution or employer policies regarding disclosure of AI-generated content.'
+  },
+  {
+    category: 'AI Detection',
+    question: 'Does the AI Text Cleaner work against GPTZero, Originality.ai, and Copyleaks together?',
+    answer: 'The AI Text Cleaner targets the formatting layer that detection platforms like Turnitin, GPTZero, Originality.ai, Copyleaks, Winston AI, and Sapling can include as one of their surface signals, but it does not modify the underlying language patterns those tools score against. Hidden Unicode characters, zero-width spaces, and unusual spacing runs are easy fingerprints for any classifier to flag because they survive copy and paste from AI chat interfaces, and removing them eliminates one technical detection vector. However, the deeper layer these detectors evaluate is statistical: token-level perplexity, burstiness, sentence length variance, and vocabulary distribution. Cleaning formatting does not change any of that, so a draft can still be flagged as AI-generated even after every invisible character is stripped. A clean text pass is a sensible first step for hygiene reasons alone, and it reduces one fingerprint GPTZero, Originality.ai, and Copyleaks can use. To address the statistical layer that Turnitin, Winston AI, and Sapling weight most heavily, you would need to rewrite the text with the GPTCleanup Pro humanizer, which targets perplexity and burstiness directly rather than just the formatting residue.'
   },
   {
     category: 'SEO',
@@ -244,7 +249,7 @@ const article = (
 
       <h2>AI Text Cleaner for Academic and Research Writing</h2>
       <p>Students, researchers, and academic professionals who use AI models as writing aids face particular challenges with hidden characters. Academic submission systems often enforce strict word count limits, and hidden characters can cause discrepancies between the word count you see in your editor and the word count the submission system reports. A research paper that appears to be exactly 5,000 words in Google Docs might register as 5,012 or 4,988 words in the submission portal due to hidden characters affecting word boundary detection.</p>
-      <p>Academic integrity tools used by universities may also be sensitive to hidden Unicode characters. Some plagiarism detection and AI detection platforms analyze the character composition of submitted text as one input to their scoring algorithms. While cleaning alone does not change the linguistic characteristics that these tools primarily analyze, it does ensure that your submission is free of artifacts that could complicate the analysis.</p>
+      <p>Academic integrity tools used by universities may also be sensitive to hidden Unicode characters. Detection platforms like <strong>Turnitin</strong>, <strong>GPTZero</strong>, <strong>Originality.ai</strong>, <strong>Copyleaks</strong>, <strong>Winston AI</strong>, and <strong>Sapling</strong> analyze the character composition of submitted text as one input to their scoring algorithms, alongside deeper stylometric features like perplexity and burstiness. Cleaning alone does not change the linguistic characteristics that these tools primarily analyze, but it does ensure that your submission is free of the surface artifacts that detectors can pick up as one of their easier fingerprints, and it produces text that behaves predictably in submission portals.</p>
       <p>For collaborative academic writing—where multiple authors contribute sections to a shared document—hidden characters from AI-generated sections can affect the formatting consistency of the entire document. If one author uses ChatGPT for their section and another uses Claude, both sections may contain different patterns of hidden characters that interact unpredictably when combined in a single document. Running all AI-generated sections through the AI text cleaner before merging them into the collaborative document ensures consistent formatting throughout.</p>
       <p>Dissertation and thesis writers who use AI models to help draft literature reviews, methodology descriptions, or analysis sections should clean their AI-generated text as a standard practice. The formatting requirements for academic documents are strict, and hidden characters can cause subtle issues with pagination, line spacing, and margin alignment that are difficult to trace to their root cause.</p>
 
@@ -389,7 +394,7 @@ export default async function AITextCleanerPage() {
           <h1 className="text-xl font-semibold text-slate-900 sm:text-2xl md:text-3xl">{title}</h1>
           <p className="max-w-2xl mx-auto text-xs text-slate-700 sm:text-sm md:text-[15px]">{description}</p>
           <div className="flex items-center justify-center gap-1 text-sm text-slate-500">
-            <span className="text-yellow-500">★★★★★</span>
+            <span className="text-yellow-500">?????</span>
             <span>4.9</span>
             <span>·</span>
             <span>Free</span>

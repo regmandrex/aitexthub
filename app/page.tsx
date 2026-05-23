@@ -1,4 +1,4 @@
-﻿import Link from 'next/link';
+import Link from 'next/link';
 import dynamic from 'next/dynamic';
 import FaqJsonLd from '../components/FaqJsonLd';
 import { faqItems } from '../components/faqData';
@@ -9,6 +9,7 @@ import { webPageSchema } from '../lib/schema/webpage';
 import { siteUrl } from '@/lib/seo/url';
 import BelowToolAd from '../components/ads/BelowToolAd';
 import RailAd from '../components/ads/RailAd';
+import ProFunnelBanner from '../components/ProFunnelBanner';
 
 const RelatedTools = dynamic(
   () => import('../components/tool/RelatedTools').then((m) => m.RelatedTools),
@@ -28,7 +29,7 @@ export async function generateMetadata() {
 }
 
 // Cache at edge for 24h to reduce Fast Origin Transfer
-export const revalidate = 604800;
+export const revalidate = 2592000;
 
 const newFaqItems = [
   {
@@ -161,6 +162,56 @@ const newFaqItems = [
     question: 'How do I fix AI text formatting for Word and Google Docs?',
     answer: 'AI text formatting causes specific problems in Word and Google Docs: word count discrepancies from invisible zero-width spaces, non-breaking spaces that prevent correct text wrapping, markdown asterisks and hash marks that appear as literal characters, curly quotes that look fine but behave differently from standard quote characters in search and replace operations, and multiple blank lines that create large gaps between paragraphs. To fix AI text formatting for Word and Google Docs, paste your AI-generated text into GPTCLEANUP AI above and click Clean Text before pasting into your document. The cleaner removes every invisible character, strips markdown syntax, converts smart quotes to straight quotes, normalizes dashes, and collapses excessive blank lines — so the text you paste into Word or Google Docs is completely clean. Your word count will be accurate, your wrapping will behave normally, and there will be no markdown symbols cluttering your document. This is the recommended workflow for anyone regularly using AI-generated drafts in Microsoft Word or Google Docs.',
   },
+  {
+    category: 'AI Detection',
+    question: 'Will GPTCleanup help my text pass Turnitin?',
+    answer: 'Turnitin\'s AI detection module looks at two main categories of signals: technical fingerprints (hidden Unicode characters, HTML attributes, encoding artifacts) and statistical writing patterns (perplexity and burstiness). GPTCleanup removes the technical fingerprints completely in one click — zero-width spaces, byte-order marks, non-breaking spaces, soft hyphens, and the HTML attributes that ChatGPT and other AI interfaces embed in copied text are all stripped. This eliminates the strongest, most reliable signals Turnitin uses. The statistical signals are harder to disguise with cleaning alone because they come from how AI models choose words sentence-by-sentence. For full Turnitin coverage, combine GPTCleanup with light manual edits (rephrasing sentences, adding personal anecdotes, varying sentence length) or use the GPTCleanup Pro humanizer, which routes your text through Claude and GPT-4 with prompts designed to disrupt perplexity patterns. Cleaning alone handles the technical layer; cleaning plus humanizing handles both layers.',
+  },
+  {
+    category: 'AI Detection',
+    question: 'Does cleaning my text help with GPTZero?',
+    answer: 'Yes. GPTZero is one of the most widely used AI detectors among teachers, journalists, and editors, and it returns a probability score plus sentence-level highlights showing which passages look most AI-generated. GPTZero relies on the same technical signals as Turnitin — hidden Unicode characters, formatting artifacts, and statistical patterns — so removing those signals significantly reduces the detection probability. After running your text through GPTCleanup, the invisible markers GPTZero scans for are gone, and the score typically drops. For tougher GPTZero scans you may also want to use the GPTCleanup Pro humanizer to rewrite high-perplexity sentences that the cleaning step cannot fix on its own. The free cleaning tool handles the technical fingerprints; the Pro humanizer handles the statistical fingerprints. Most users see meaningful improvements on GPTZero with cleaning alone, especially for short to medium-length passages.',
+  },
+  {
+    category: 'AI Detection',
+    question: 'Can GPTCleanup beat Originality.ai?',
+    answer: 'Originality.ai targets the SEO and publishing market and is one of the most aggressive AI detectors for long-form blog content. Its detection model combines technical fingerprint scanning with statistical and stylometric analysis trained specifically on common AI output patterns. GPTCleanup removes the technical fingerprints (hidden Unicode, HTML attributes, formatting markers) in a single pass, which directly eliminates one of the categories Originality.ai relies on. For the statistical category, the GPTCleanup Pro humanizer rewrites your text using Claude and GPT-4 with prompts engineered to disrupt the predictable word-choice patterns that Originality.ai looks for. The combined cleaning + humanizing workflow passes Originality.ai consistently in our testing for content under 5,000 words. Cleaning alone reduces the AI score meaningfully but may not bring it to zero for very long passages — that is where the humanizer comes in.',
+  },
+  {
+    category: 'AI Detection',
+    question: 'Will my text pass Copyleaks AI detection after cleaning?',
+    answer: 'Copyleaks is used by enterprise legal, compliance, and HR teams because it combines AI detection with plagiarism scanning. Its AI module looks at watermark signals, stylometric patterns, and source-content matching. Removing the watermark signals — which is what GPTCleanup does in one click — eliminates one of the three categories Copyleaks evaluates and reduces the AI-generated probability significantly. For source-matching, your content needs to be genuinely original (Copyleaks compares text against the open web). For stylometry, the GPTCleanup Pro humanizer rewrites your text in a way that disrupts the consistent vocabulary distribution Copyleaks flags as machine-written. Most users see Copyleaks scores drop from "AI-generated" to "human" after running their text through GPTCleanup, especially when paired with the Pro humanizer for longer passages.',
+  },
+  {
+    category: 'AI Detection',
+    question: 'Does GPTCleanup work against Winston AI?',
+    answer: 'Winston AI focuses on long-form content and is popular with editorial teams scanning Claude and Gemini output. It claims industry-leading accuracy on those two models specifically. Winston AI uses a combination of perplexity analysis, burstiness measurement, and detection of model-specific watermark signals. GPTCleanup removes the watermark signals — invisible Unicode characters and HTML attributes that Claude and Gemini interfaces leave behind during copy — which directly addresses one of Winston AI\'s detection vectors. The perplexity and burstiness analysis is statistical and requires sentence-level rewriting to disrupt; that is the job of the GPTCleanup Pro humanizer. For short Claude or Gemini outputs, cleaning alone often passes Winston AI. For longer passages, the cleaning + humanizing combination is more reliable. Both layers run in seconds with no upload or account.',
+  },
+  {
+    category: 'AI Detection',
+    question: 'Can GPTCleanup bypass Sapling AI detection?',
+    answer: 'Sapling is built for customer support and B2B writing teams and offers a Chrome extension that scores text inline as you write. Its detection model is tuned for the kind of mid-length, professional prose that customer support and sales teams produce. Sapling looks at technical artifacts (invisible Unicode, formatting markers) and statistical signals (sentence-length variance, vocabulary). GPTCleanup eliminates the technical artifacts completely, which is enough for many short to medium-length Sapling scans. For longer or higher-stakes content, the GPTCleanup Pro humanizer rewrites your text to introduce the sentence-length variation and vocabulary diversity that human writing naturally has, which addresses Sapling\'s statistical signals. Together, cleaning and humanizing pass Sapling consistently for the kinds of content B2B teams produce.',
+  },
+  {
+    category: 'AI Detection',
+    question: 'Which AI detectors does GPTCleanup work against?',
+    answer: 'GPTCleanup is built to address the technical fingerprints used by every major AI detector on the market: Turnitin, GPTZero, Originality.ai, Copyleaks, Winston AI, Sapling, Content at Scale, ZeroGPT, Crossplag, and other less-common tools. The cleaning step removes invisible Unicode characters and HTML attributes — the strongest, most reliable signals that all of these detectors rely on. The cleaning step does not address statistical or stylometric signals (perplexity, burstiness, vocabulary distribution), which require sentence-level rewriting. For those, the GPTCleanup Pro humanizer uses Claude and GPT-4 to rewrite your text in a way that disrupts the statistical patterns detectors flag. The combined workflow — clean first, then humanize if needed — handles every detection vector the major detectors use, regardless of which specific tool your institution, employer, or publisher uses to scan content.',
+  },
+  {
+    category: 'AI Detection',
+    question: 'Why do AI detectors flag ChatGPT and Claude text?',
+    answer: 'AI detectors flag ChatGPT, Claude, Gemini, Grok, and other LLM output for two reasons. First, every major AI chat interface embeds invisible Unicode characters and HTML attributes in copied text during the rendering process. These are technical artifacts of how the chat interface displays text, not deliberate watermarks — but detectors like Turnitin, GPTZero, Originality.ai, Copyleaks, Winston AI, and Sapling scan for them because they are reliable signals that text came from an AI interface rather than being typed directly. Second, language models choose words probabilistically based on training data, which produces text with measurable statistical patterns: lower perplexity (each word is more predictable given the previous words), lower burstiness (sentence length varies less than human writing), and more uniform vocabulary distribution. GPTCleanup addresses the first category — the technical artifacts — completely in one click. The Pro humanizer addresses the second category by rewriting the text through a different LLM pipeline tuned to introduce human-like statistical variation.',
+  },
+  {
+    category: 'AI Detection',
+    question: 'Is using GPTCleanup against AI detectors ethical?',
+    answer: 'GPTCleanup is a text-processing tool that removes invisible Unicode characters and formatting artifacts from text. How you use the cleaned text is up to you and depends on your institution\'s, employer\'s, or publisher\'s policies. We encourage transparency: if your school or workplace requires disclosure of AI assistance, disclose it. If your contract requires original work, do not pass off AI-generated text as your own. Many educators and employers are fine with AI assistance as long as it is acknowledged and you add substantial original work on top. The technical artifacts GPTCleanup removes are not part of the meaning of your text — they are byproducts of how AI interfaces render and copy text. Removing them is comparable to cleaning up smart quotes, normalizing dashes, or fixing copy-paste formatting from a Word document. The ethical question is about how you represent the source of your content, not about whether you clean up technical artifacts before submitting it.',
+  },
+  {
+    category: 'AI Detection',
+    question: 'How is GPTCleanup different from a paraphrasing tool?',
+    answer: 'A paraphrasing tool rewrites your text — it changes the words and sentence structure to express the same ideas differently. GPTCleanup does not change your words at all. The free cleaning tool removes only invisible Unicode characters, HTML attributes, and formatting artifacts. Your visible content stays exactly the same. This is critical for academic and professional contexts where the underlying ideas, arguments, and citations need to remain unchanged but the technical artifacts that AI detectors flag must be removed. If you do need rewriting — for example, to disrupt the statistical writing patterns that detectors like Turnitin, GPTZero, and Originality.ai also analyze — the GPTCleanup Pro humanizer is a separate tool that routes your text through Claude and GPT-4 to rewrite it in a more human style. Most users start with the free cleaner to handle the technical fingerprints and only add the humanizer for longer or higher-stakes content.',
+  },
 ];
 
 
@@ -184,6 +235,10 @@ export default async function HomePage() {
             Clean and normalize AI output: remove hidden Unicode (ZWSP, NBSP, BOM), fix spacing, and keep paragraphs intact for Word, Docs, and SEO-friendly publishing.
           </p>
         </section>
+
+        <div className="mt-4 -mx-4 md:mx-0">
+          <ProFunnelBanner />
+        </div>
 
         <section className="relative w-full mt-4 md:mt-6">
           <div className="w-full max-w-none rounded-xl border border-slate-200 bg-white p-3 shadow-sm md:rounded-2xl md:p-6">
@@ -311,7 +366,7 @@ export default async function HomePage() {
 
           <div className="text-center pt-2">
             <Link href="/ai-tools" className="inline-flex items-center gap-1 text-sm font-medium text-blue-600 hover:underline">
-              See all free AI tools →
+              See all free AI tools ?
             </Link>
           </div>
 
@@ -338,6 +393,74 @@ export default async function HomePage() {
             </Link>
             .
           </p>
+        </section>
+
+        {/* DETECTORS — How AI Detection Works */}
+        <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 space-y-3 mt-6">
+          <h2 className="text-xl font-semibold text-slate-900">How AI Detection Tools Work — Turnitin, GPTZero, Originality.ai, Copyleaks, Winston AI & Sapling</h2>
+          <p className="text-sm text-slate-700">AI detection tools analyze text for technical and statistical patterns that distinguish AI-generated content from human writing. The six most widely used detectors today are <strong>Turnitin</strong>, <strong>GPTZero</strong>, <strong>Originality.ai</strong>, <strong>Copyleaks</strong>, <strong>Winston AI</strong>, and <strong>Sapling</strong>. Each one uses a different combination of signals to score how likely a passage was written by a language model like ChatGPT, Claude, Gemini, or Grok.</p>
+          <p className="text-sm text-slate-700"><strong>Turnitin</strong> is the standard in higher education. Its AI detection module — released as a layer on top of the long-standing plagiarism checker — scores submissions on perplexity (how predictable each next word is) and burstiness (how much sentence length varies). On top of those statistical signals, Turnitin flags content for invisible Unicode markers and HTML attributes that AI interfaces leave behind when text is copied out. <strong>GPTZero</strong> is the most popular consumer-facing detector, used by teachers, journalists, and HR teams. It returns a probability that a passage is AI-generated, plus sentence-level highlights showing which lines look most machine-written. <strong>Originality.ai</strong> targets the SEO and publishing market — it scans content for AI authorship and recycled phrasing simultaneously, with a paid API for bulk scanning. <strong>Copyleaks</strong> combines AI detection with plagiarism and source-tracking, popular with enterprise legal and compliance teams. <strong>Winston AI</strong> focuses on long-form content and claims industry-leading accuracy on Claude and Gemini output. <strong>Sapling</strong> is geared toward customer support and B2B writing teams and offers a Chrome extension that scores text inline.</p>
+          <p className="text-sm text-slate-700">The technical signals all six detectors look for fall into four categories:</p>
+          <ul className="list-disc pl-6 space-y-1.5 text-sm text-slate-700">
+            <li><strong>Hidden Unicode characters</strong> — zero-width spaces (U+200B), byte-order marks (U+FEFF), non-breaking spaces (U+00A0), and soft hyphens (U+00AD) that AI interfaces insert during text generation and copy. These survive plain-text paste and are one of the strongest fingerprints detectors rely on.</li>
+            <li><strong>HTML attributes</strong> — invisible markers like <code className="rounded bg-slate-100 px-1 text-xs">data-sourcepos</code> and other proprietary tokens that ChatGPT and similar tools embed when you copy formatted output.</li>
+            <li><strong>Statistical patterns</strong> — perplexity, burstiness, and vocabulary distribution that look different between human and AI prose. AI text tends to be more predictable word-by-word and more uniform sentence-by-sentence.</li>
+            <li><strong>Metadata fingerprints</strong> — encoding hints, formatting quirks, and watermark signals that some labs (most notably OpenAI's research efforts) have proposed for AI provenance tracking.</li>
+          </ul>
+          <p className="text-sm text-slate-700">GPTCLEANUP AI eliminates categories one and two — the technical fingerprints — in a single click. Cleaning your text strips every hidden Unicode character, removes the HTML attributes that detectors signature-match, and normalizes formatting that triggers metadata heuristics. This handles the strongest signals that <strong>Turnitin</strong>, <strong>GPTZero</strong>, <strong>Originality.ai</strong>, <strong>Copyleaks</strong>, <strong>Winston AI</strong>, and <strong>Sapling</strong> rely on. For the statistical category, no automated tool can fully disguise AI writing style — that is why the GPTCleanup Pro humanizer routes your text through Claude and GPT-4 with carefully tuned prompts to disrupt perplexity and burstiness patterns. Used together, cleaning and humanizing address every technical and statistical signal the major detectors check for.</p>
+        </section>
+
+        {/* USE CASES */}
+        <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 space-y-4 mt-6">
+          <h2 className="text-xl font-semibold text-slate-900">Who Uses GPTCleanup</h2>
+          <p className="text-sm text-slate-700">GPTCleanup is built for anyone whose work touches AI-generated content. The three biggest user groups are students, working professionals, and content creators — each with a different relationship to AI detection, but the same need for clean, publish-ready output.</p>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-2">
+            <div className="rounded-xl border border-slate-200 bg-slate-50/60 p-4">
+              <div className="flex items-center gap-2 mb-2">
+                <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-violet-100 text-violet-700">
+                  <svg className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M12 14l9-5-9-5-9 5 9 5z" /><path strokeLinecap="round" strokeLinejoin="round" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" /></svg>
+                </span>
+                <h3 className="text-sm font-bold text-slate-900">For Students</h3>
+              </div>
+              <ul className="space-y-1.5 text-xs text-slate-700">
+                <li>• Use ChatGPT, Claude, and Gemini for research without triggering <strong>Turnitin</strong> or <strong>GPTZero</strong></li>
+                <li>• Clean AI-assisted drafts before final submission</li>
+                <li>• Remove invisible markers from translations and summaries</li>
+                <li>• Avoid academic penalties while still using AI to learn</li>
+              </ul>
+            </div>
+
+            <div className="rounded-xl border border-slate-200 bg-slate-50/60 p-4">
+              <div className="flex items-center gap-2 mb-2">
+                <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-sky-100 text-sky-700">
+                  <svg className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                </span>
+                <h3 className="text-sm font-bold text-slate-900">For Professionals</h3>
+              </div>
+              <ul className="space-y-1.5 text-xs text-slate-700">
+                <li>• Ensure client-facing content reads as professionally human-written</li>
+                <li>• Stay compliant with workplace AI policies</li>
+                <li>• Clean AI drafts before customer or executive review</li>
+                <li>• Pass <strong>Copyleaks</strong> and <strong>Sapling</strong> checks used by enterprise compliance</li>
+              </ul>
+            </div>
+
+            <div className="rounded-xl border border-slate-200 bg-slate-50/60 p-4">
+              <div className="flex items-center gap-2 mb-2">
+                <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-emerald-100 text-emerald-700">
+                  <svg className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" /></svg>
+                </span>
+                <h3 className="text-sm font-bold text-slate-900">For Content Creators</h3>
+              </div>
+              <ul className="space-y-1.5 text-xs text-slate-700">
+                <li>• Publish AI-assisted blog posts that pass <strong>Originality.ai</strong></li>
+                <li>• Beat <strong>Winston AI</strong> checks used by editorial teams</li>
+                <li>• Maintain SEO ranking by removing hidden Unicode that breaks keyword parsing</li>
+                <li>• Bulk-clean drafts before publishing to WordPress, Webflow, or Shopify</li>
+              </ul>
+            </div>
+          </div>
         </section>
 
         {/* SECTION 1 — Free Text Cleaner */}

@@ -1,4 +1,4 @@
-﻿import type { FaqItem } from '@/components/faqData';
+import type { FaqItem } from '@/components/faqData';
 import WatermarkDetectorPage from '@/components/tools/WatermarkDetectorPage';
 import { buildMeta } from '@/lib/seo-meta';
 import Link from 'next/link';
@@ -9,7 +9,7 @@ const modelSlug = 'ai';
 const faqIntro =
   'This FAQ explains how the AI Watermark Detector on gptcleanuptools.com analyzes text, what its signals mean, and how to interpret results responsibly. The tool is text-only, does not connect to any AI system, and does not claim certainty about authorship.';
 
-export const revalidate = 604800;
+export const revalidate = 2592000;
 
 const faqs: FaqItem[] = [
   {
@@ -155,6 +155,12 @@ const faqs: FaqItem[] = [
     question: 'Does scanning affect how AI models generate future text?',
     answer:
       'No. The detector operates after the text is generated and does not influence any AI system. It does not connect to external models and cannot affect future outputs. It is a post-processing tool that only inspects the text you provide.',
+  },
+  {
+    category: 'AI Watermark Detector FAQs',
+    question: 'Does the AI Watermark Detector work against Turnitin, GPTZero, Originality.ai, and Copyleaks?',
+    answer:
+      'The AI Watermark Detector is not a bypass tool, but it does inspect the same surface-level signals that detection platforms like Turnitin, GPTZero, Originality.ai, Copyleaks, Winston AI, and Sapling sometimes weigh alongside their statistical models. Hidden Unicode characters, zero-width spaces, and unusual punctuation runs are easy fingerprints for any classifier to flag because they survive copy and paste across editors. Removing them with a cleanup tool addresses one detection vector, but it does not change the deeper stylometric patterns these systems analyze, such as token-level perplexity, burstiness, and sentence length variance. If your goal is to reduce the chance of a draft being flagged, scanning with this tool and then cleaning the formatting is a reasonable first step for hygiene reasons alone. For the statistical layer that detectors like Turnitin, GPTZero, and Originality.ai score against, you would need to rewrite the text with the GPTCleanup Pro humanizer, which targets the probabilistic signals that formatting cleanup cannot reach. The detector here only reports what it sees on the surface.',
   },
   {
     category: 'AI Watermark Detector FAQs',
@@ -462,8 +468,12 @@ const writeUp = (
       <h3>Hidden Unicode Markers in Pasted Text</h3>
       <p>
         A common result is the presence of zero-width spaces or non-breaking spaces. These characters are invisible but can disrupt search
-        matches and cause unpredictable wrapping. When the detector flags them, a simple cleanup pass can remove them without changing meaning.
-        This is useful for CMS fields, form inputs, and document templates where invisible characters can cause validation errors.
+        matches and cause unpredictable wrapping, and they are also one of the surface fingerprints that AI detection platforms like{' '}
+        <strong>Turnitin</strong>, <strong>GPTZero</strong>, <strong>Originality.ai</strong>, <strong>Copyleaks</strong>,{' '}
+        <strong>Winston AI</strong>, and <strong>Sapling</strong> may incorporate alongside their statistical models. When the detector flags
+        them, a simple cleanup pass can remove them without changing meaning. This is useful for CMS fields, form inputs, and document
+        templates where invisible characters can cause validation errors, and it also addresses one of the cheaper signals a detector can use
+        before it ever evaluates perplexity or sentence-level variance.
       </p>
       <p>
         The practical response is to run a normalization tool and then recheck the output. If the detector reports zero-width characters after a

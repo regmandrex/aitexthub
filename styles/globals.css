@@ -22,7 +22,11 @@ body {
 }
 
 body {
-  @apply antialiased bg-slate-50 text-slate-900;
+  @apply antialiased bg-slate-50 text-slate-900 font-sans;
+}
+
+.prose {
+  @apply font-sans;
 }
 
 h1,
@@ -40,7 +44,7 @@ input {
   @apply border border-slate-200 rounded-lg bg-white text-slate-900;
 }
 
-a {
+.prose a {
   @apply text-brand-600 hover:text-brand-700;
 }
 

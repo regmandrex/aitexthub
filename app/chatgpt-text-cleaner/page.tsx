@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next';
+import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { JsonLd } from '@/components/JsonLd';
 import FAQSection from '@/components/FAQSection';
@@ -13,7 +13,7 @@ import { siteUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
 
-export const revalidate = 604800;
+export const revalidate = 2592000;
 
 const toolSlug = 'chatgpt-text-cleaner';
 
@@ -109,6 +109,11 @@ const faqs: FaqItem[] = [
     category: 'AI Detection',
     question: 'Will cleaned ChatGPT text pass Turnitin or GPTZero?',
     answer: 'Cleaning removes hidden Unicode artifacts that some detectors use as one signal, but Turnitin, GPTZero, Originality.ai, and other detection platforms analyze many features of text beyond hidden characters. Cleaning your ChatGPT text ensures it is free of invisible formatting issues, but it does not alter the linguistic patterns that detectors primarily rely on. Always follow your institution or employer policies regarding AI-generated content disclosure.'
+  },
+  {
+    category: 'AI Detection',
+    question: 'Does this cleaner help against Originality.ai, Copyleaks, Winston AI, and Sapling?',
+    answer: 'The ChatGPT Text Cleaner targets the formatting layer that detection platforms like Turnitin, GPTZero, Originality.ai, Copyleaks, Winston AI, and Sapling can include as one of their surface signals, but it does not modify the underlying language patterns those tools score against. Hidden Unicode characters, zero-width spaces, and unusual spacing runs are easy fingerprints for any classifier to flag because they survive copy and paste from the ChatGPT interface, and removing them eliminates one technical detection vector. However, the deeper layer these detectors evaluate is statistical: token-level perplexity, burstiness, sentence length variance, and vocabulary distribution. Cleaning formatting does not change any of that, so a draft can still be flagged as AI-generated even after every invisible character is stripped. A clean text pass is a sensible first step for hygiene reasons alone, and it reduces one fingerprint Originality.ai, Copyleaks, and Winston AI can use. To address the statistical layer that Turnitin, GPTZero, and Sapling weight most heavily, you would need to rewrite the text with the GPTCleanup Pro humanizer, which targets perplexity and burstiness directly rather than just the formatting residue.'
   },
   {
     category: 'SEO',
@@ -253,7 +258,7 @@ const article = (
       <h3>Broken Copy-Paste Chains</h3>
       <p>When someone copies text from your published document and pastes it somewhere else, the hidden characters travel with it. This means your hidden character problem can propagate through an entire chain of copy-paste operations—from ChatGPT to your document, from your document to a colleague's email, from the email to a presentation slide. Cleaning at the source prevents this chain of contamination.</p>
       <h3>AI Detection False Signals</h3>
-      <p>Some AI detection tools use the presence of specific Unicode characters as one signal in their detection algorithm. If your text contains zero-width spaces in patterns that are characteristic of ChatGPT output, a detector may weight that signal when producing its score. While cleaning alone does not make text undetectable—detectors analyze many linguistic features—it does remove one potential signal that could influence a detection score.</p>
+      <p>Detection platforms like <strong>Turnitin</strong>, <strong>GPTZero</strong>, <strong>Originality.ai</strong>, <strong>Copyleaks</strong>, <strong>Winston AI</strong>, and <strong>Sapling</strong> can use the presence of specific Unicode characters as one signal in their scoring algorithms, alongside the deeper stylometric features they primarily rely on. If your text contains zero-width spaces in patterns that are characteristic of ChatGPT output, a detector may weight that surface signal when producing its score. Cleaning alone does not make text undetectable, because detectors analyze many linguistic features like perplexity, burstiness, and sentence variance, but stripping invisible characters does eliminate one fingerprint that Turnitin, GPTZero, and Copyleaks can pick up before they ever evaluate sentence-level patterns.</p>
 
       <h2>ChatGPT Text Cleaner for SEO and Content Marketing</h2>
       <p>Content marketers and SEO professionals have a specific need for clean ChatGPT text. Search engines parse the HTML source of your pages, and hidden Unicode characters in your content can affect how that parsing works. While search engines are generally good at handling unusual characters, the safest approach for SEO is to serve clean, standard text that contains only the characters you intend.</p>
@@ -388,7 +393,7 @@ export default async function ChatGPTTextCleanerPage() {
           <h1 className="text-xl font-semibold text-slate-900 sm:text-2xl md:text-3xl">{title}</h1>
           <p className="max-w-2xl mx-auto text-xs text-slate-700 sm:text-sm md:text-[15px]">{description}</p>
           <div className="flex items-center justify-center gap-1 text-sm text-slate-500">
-            <span className="text-yellow-500">★★★★★</span>
+            <span className="text-yellow-500">?????</span>
             <span>4.9</span>
             <span>·</span>
             <span>Free</span>
