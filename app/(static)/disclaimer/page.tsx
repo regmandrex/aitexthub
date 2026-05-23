@@ -1,11 +1,11 @@
-﻿import { buildMeta } from '@/lib/seo-meta';
+import { buildMeta } from '@/lib/seo-meta';
 import type { Metadata } from 'next';
 
-export const revalidate = 604800;
+export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildMeta({
-    title: 'Disclaimer - GPTCLEANUP AI Text Tools Terms',
+    title: 'Disclaimer - Text Tools Terms',
     description: 'Disclaimer for GPTCLEANUP AI tools.',
     urlPath: '/disclaimer',
   });

@@ -1,11 +1,11 @@
-﻿import { buildMeta } from '@/lib/seo-meta';
+import { buildMeta } from '@/lib/seo-meta';
 import type { Metadata } from 'next';
 
-export const revalidate = 604800;
+export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildMeta({
-    title: 'Cookie Policy - GPTCLEANUP AI Privacy & Tracking',
+    title: 'Cookie Policy - Privacy & Tracking',
     description: 'Cookie Policy for GPTCLEANUP AI tools.',
     urlPath: '/cookie-policy',
   });

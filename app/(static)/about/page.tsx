@@ -1,11 +1,11 @@
-﻿import Link from 'next/link';
+import Link from 'next/link';
 import { buildMeta } from '@/lib/seo-meta';
 
-export const revalidate = 604800;
+export const revalidate = 2592000;
 
 export async function generateMetadata() {
   return buildMeta({
-    title: `About GPTCLEANUP AI - Free AI Text Cleaning Tools`,
+    title: 'About - Free AI Text Cleaning Tools',
     description: 'Learn about GPTCLEANUP AI and how we help tidy AI text from ChatGPT, Gemini, and more.',
     urlPath: '/about',
   });

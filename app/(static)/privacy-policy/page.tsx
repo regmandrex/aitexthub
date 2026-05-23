@@ -1,4 +1,4 @@
-﻿import { buildMeta } from '@/lib/seo-meta';
+import { buildMeta } from '@/lib/seo-meta';
 
 type PrivacyContent = {
   metaTitle: string;
@@ -50,7 +50,7 @@ type PrivacyContent = {
 
 const CONTENT_BY_LOCALE: Record<string, PrivacyContent> = {
   en: {
-    metaTitle: 'Privacy Policy - GPTCLEANUP AI Data Protection',
+    metaTitle: 'Privacy Policy - Data Protection',
     metaDescription: 'Privacy details for GPTCLEANUP AI tools.',
     title: 'Privacy Policy',
     updated: 'Last Updated: July 7, 2023',
@@ -128,7 +128,7 @@ const CONTENT_BY_LOCALE: Record<string, PrivacyContent> = {
     contactP3: 'We are happy to help with any privacy-related concerns.',
   },
   es: {
-    metaTitle: 'Política de privacidad | GPTCLEANUP AI',
+    metaTitle: 'Política de privacidad',
     metaDescription: 'Detalles de privacidad para las herramientas de GPT CLEAN UP.',
     title: 'Política de privacidad',
     updated: 'Última actualización: 7 de julio de 2023',
@@ -207,7 +207,7 @@ const CONTENT_BY_LOCALE: Record<string, PrivacyContent> = {
   },
 };
 
-export const revalidate = 604800;
+export const revalidate = 2592000;
 
 export async function generateMetadata() {
   const content = CONTENT_BY_LOCALE.en;

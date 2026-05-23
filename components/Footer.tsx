@@ -39,6 +39,7 @@ const legalLinks = [
   { href: '/terms-of-service', label: 'Terms of Service' },
   { href: '/disclaimer', label: 'Disclaimer' },
   { href: '/cookie-policy', label: 'Cookie Policy' },
+  { href: '/refund-policy', label: 'Refund Policy' },
 ];
 
 const MAX_RELATED = 4;
