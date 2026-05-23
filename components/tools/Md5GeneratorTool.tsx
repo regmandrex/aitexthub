@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import HumanizerUpsellCard from '../HumanizerUpsellCard';
 
 // MD5 implementation
 function md5(input: string): string {

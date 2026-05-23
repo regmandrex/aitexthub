@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next';
+import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { JsonLd } from '@/components/JsonLd';
 import FAQSection from '@/components/FAQSection';
@@ -12,7 +12,7 @@ import { getToolBySlug } from '@/lib/tools/registry';
 import { siteUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 
-export const revalidate = 604800;
+export const revalidate = 2592000;
 const toolSlug = 'ip-subnet-calculator';
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -133,7 +133,7 @@ const faqs: FaqItem[] = [
   {
     category: 'Technical',
     question: 'What is IPv6 subnetting and how does it differ from IPv4 subnetting?',
-    answer: `IPv6 subnetting follows the same CIDR principles as IPv4 but operates on a 128-bit address space instead of 32-bit, completely eliminating the address exhaustion problem that made IPv4 subnetting so critical. Key differences: Address notation: IPv6 uses hexadecimal groups separated by colons — 2001:0db8:85a3:0000:0000:8a2e:0370:7334. Consecutive groups of zeros can be compressed with :: — 2001:db8:85a3::8a2e:370:7334. Prefix length: /48 is a typical ISP allocation to a customer, /64 is the standard subnet prefix (leaving 64 bits for host addresses within a subnet), /128 is a single host. A single /64 subnet can address 2⁶⁴ ≈ 18.4 quintillion devices — more than enough for any conceivable network. No NAT required: every device gets a globally unique IPv6 address — no need for private address ranges (10.x.x.x, 192.168.x.x) or NAT gateways. Subnetting a /48 allocation: a /48 prefix gives you 2¹⁶ = 65,536 possible /64 subnets. Typical enterprise IPv6 plan: one /48 per site, divide into /64 subnets for each VLAN or department. Our IP subnet calculator focuses on IPv4 — for IPv6 subnetting, dedicated IPv6 calculators handle the 128-bit math more ergonomically.`,
+    answer: `IPv6 subnetting follows the same CIDR principles as IPv4 but operates on a 128-bit address space instead of 32-bit, completely eliminating the address exhaustion problem that made IPv4 subnetting so critical. Key differences: Address notation: IPv6 uses hexadecimal groups separated by colons — 2001:0db8:85a3:0000:0000:8a2e:0370:7334. Consecutive groups of zeros can be compressed with :: — 2001:db8:85a3::8a2e:370:7334. Prefix length: /48 is a typical ISP allocation to a customer, /64 is the standard subnet prefix (leaving 64 bits for host addresses within a subnet), /128 is a single host. A single /64 subnet can address 264 ˜ 18.4 quintillion devices — more than enough for any conceivable network. No NAT required: every device gets a globally unique IPv6 address — no need for private address ranges (10.x.x.x, 192.168.x.x) or NAT gateways. Subnetting a /48 allocation: a /48 prefix gives you 2¹6 = 65,536 possible /64 subnets. Typical enterprise IPv6 plan: one /48 per site, divide into /64 subnets for each VLAN or department. Our IP subnet calculator focuses on IPv4 — for IPv6 subnetting, dedicated IPv6 calculators handle the 128-bit math more ergonomically.`,
   },
 ];
 
@@ -224,7 +224,7 @@ const writeUp = (
       The best way to master subnetting is to practice with real problems. Try these: (1) You have 192.168.10.0/24. Divide it into 4 equal subnets. What is the network address, broadcast, and host range for each? (2) Host A has IP 172.16.45.200/20. What is its network address? Is host 172.16.32.1 on the same subnet? (3) You need to accommodate 500 hosts on a single subnet from the 10.0.0.0/8 space. What is the smallest subnet you can use? (4) A /27 subnet starts at 192.168.1.192. What is its broadcast address and how many usable hosts does it contain?
     </p>
     <p>
-      Use our calculator to check your answers. For (1): /26 gives 4 subnets of 64 addresses each — .0/26, .64/26, .128/26, .192/26. For (2): /20 means the interesting octet is the third. Mask is 255.255.240.0. Network address: apply mask to 172.16.45.200 → 45 AND 240 = 32. Network is 172.16.32.0. 172.16.32.1 IS on the same subnet. For (3): 500 hosts needs 2^9 = 512 addresses, so /23. For (4): 192.168.1.192/27 has broadcast 192.168.1.223 with 30 usable hosts.
+      Use our calculator to check your answers. For (1): /26 gives 4 subnets of 64 addresses each — .0/26, .64/26, .128/26, .192/26. For (2): /20 means the interesting octet is the third. Mask is 255.255.240.0. Network address: apply mask to 172.16.45.200 ? 45 AND 240 = 32. Network is 172.16.32.0. 172.16.32.1 IS on the same subnet. For (3): 500 hosts needs 2^9 = 512 addresses, so /23. For (4): 192.168.1.192/27 has broadcast 192.168.1.223 with 30 usable hosts.
     </p>
 
     <h2>Binary Subnet Mask: Understanding the Math</h2>
@@ -260,7 +260,7 @@ const writeUp = (
       IPv4's 4.3 billion address space is nearly exhausted. IPv6 provides 340 undecillion (3.4 × 10^38) addresses — enough to assign millions of addresses to every grain of sand on Earth. Understanding IPv6 subnetting is increasingly important as networks transition to the new protocol.
     </p>
     <p>
-      <strong>IPv6 address format</strong>: IPv6 addresses are 128 bits written as eight groups of four hexadecimal digits separated by colons: 2001:0db8:85a3:0000:0000:8a2e:0370:7334. Leading zeros in each group can be omitted: 2001:db8:85a3:0:0:8a2e:370:7334. Consecutive groups of all zeros can be replaced with double colon (only once per address): 2001:db8:85a3::8a2e:370:7334. The /64 prefix is the standard subnet size in IPv6 — giving each subnet 2^64 ≈ 18.4 quintillion host addresses. Even the smallest practical IPv6 subnet (/128, a single host address) is larger than the entire IPv4 address space in raw bit terms.
+      <strong>IPv6 address format</strong>: IPv6 addresses are 128 bits written as eight groups of four hexadecimal digits separated by colons: 2001:0db8:85a3:0000:0000:8a2e:0370:7334. Leading zeros in each group can be omitted: 2001:db8:85a3:0:0:8a2e:370:7334. Consecutive groups of all zeros can be replaced with double colon (only once per address): 2001:db8:85a3::8a2e:370:7334. The /64 prefix is the standard subnet size in IPv6 — giving each subnet 2^64 ˜ 18.4 quintillion host addresses. Even the smallest practical IPv6 subnet (/128, a single host address) is larger than the entire IPv4 address space in raw bit terms.
     </p>
     <p>
       <strong>IPv6 prefix hierarchy</strong>: ISPs receive /32 or /48 prefixes from Regional Internet Registries (RIRs). Organizations typically receive /48 prefixes from their ISP, which they can subdivide into up to 65,536 /64 subnets. Each /64 subnet provides effectively unlimited host addresses for practical purposes. This is why IPv6 eliminates the careful address conservation of IPv4 subnetting — there is no need to minimize subnet sizes or use /30 for point-to-point links.
@@ -311,7 +311,7 @@ const writeUp = (
       <strong>The key formulas to memorize</strong>: number of hosts per subnet = 2^(host bits) - 2. Number of subnets = 2^(borrowed bits). For any CIDR prefix /n: host bits = 32 - n. The "interesting octet" is the octet where the prefix boundary falls. The block size in the interesting octet = 256 - (decimal value of the interesting octet's mask). Subnets increment by the block size.
     </p>
     <p>
-      <strong>Rapid subnetting method</strong>: to find the subnet for any IP/prefix combination without full binary conversion — identify the interesting octet (where the mask is neither 0 nor 255). Compute block size: 256 minus the octet's mask value. Find the multiple of block size just below the IP's value in that octet — that is the network address's interesting octet. Example: 172.16.45.200/22. Mask is 255.255.252.0. Third octet mask is 252. Block size = 256 - 252 = 4. Multiples of 4: 40, 44, 48... The largest ≤ 45 is 44. Network address: 172.16.44.0. This mental math approach is faster than full binary conversion for exam conditions.
+      <strong>Rapid subnetting method</strong>: to find the subnet for any IP/prefix combination without full binary conversion — identify the interesting octet (where the mask is neither 0 nor 255). Compute block size: 256 minus the octet's mask value. Find the multiple of block size just below the IP's value in that octet — that is the network address's interesting octet. Example: 172.16.45.200/22. Mask is 255.255.252.0. Third octet mask is 252. Block size = 256 - 252 = 4. Multiples of 4: 40, 44, 48... The largest = 45 is 44. Network address: 172.16.44.0. This mental math approach is faster than full binary conversion for exam conditions.
     </p>
     <p>
       <strong>Using our calculator for exam prep</strong>: use our IP subnet calculator to generate practice problems. Enter an IP address and prefix length, note all the outputs, then cover the tool and try to compute each value manually. Check your answers against the calculator results. Repeat with varied addresses — especially those near octet boundaries (/8, /16, /24) and in the "interesting" ranges (/17-/23 for the third octet, /25-/30 for the fourth). Practice until you can compute any /24 to /30 subnet in under 30 seconds — the speed needed for exam conditions.

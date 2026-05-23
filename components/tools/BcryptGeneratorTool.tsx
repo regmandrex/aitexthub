@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import HumanizerUpsellCard from '../HumanizerUpsellCard';
 import bcrypt from 'bcryptjs';
 
 export function BcryptGeneratorTool() {

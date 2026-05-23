@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import HumanizerUpsellCard from '../HumanizerUpsellCard';
 
 export function CssFlexboxGeneratorTool() {
   const [direction, setDirection] = useState('row');

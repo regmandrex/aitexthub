@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import ToolTextArea from './ToolTextArea';
+import HumanizerUpsellCard from '../HumanizerUpsellCard';
 
 export function BinaryToTextTool() {
   const [tab, setTab] = useState<'toText' | 'toBin'>('toText');
@@ -76,6 +77,7 @@ export function BinaryToTextTool() {
           {copied ? 'Copied!' : 'Copy Output'}
         </button>
       </div>
+      {output && <HumanizerUpsellCard />}
     </div>
   );
 }

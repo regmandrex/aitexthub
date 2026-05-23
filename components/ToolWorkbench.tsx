@@ -3,6 +3,7 @@
 import { useMemo, useState } from 'react';
 import CopyButton from './CopyButton';
 import ToolTextarea from './ToolTextarea';
+import HumanizerUpsellCard from './HumanizerUpsellCard';
 import { chatgptSpaceRemover, chatgptTextCleaner, geminiSpaceRemover } from '../lib/tools';
 
 type ProcessorKey = 'chatgptTextCleaner' | 'chatgptSpaceRemover' | 'geminiSpaceRemover';
@@ -55,46 +56,46 @@ export default function ToolWorkbench({
   return (
     <div className="space-y-4">
       <div className="grid gap-4 md:grid-cols-2">
-        <ToolTextarea
-          label={inputLabel ?? 'Input text'}
-          placeholder={inputPlaceholder ?? 'Paste or type text here…'}
-          value={input}
-          onChange={setInput}
-          rows={12}
-          labelSecondary={
-            <div className="flex items-center gap-2 text-xs font-semibold text-slate-600">
-              <span className="rounded-full bg-slate-100 px-3 py-1">{stats.words} words</span>
-              <span className="rounded-full bg-slate-100 px-3 py-1">{stats.hidden} hidden</span>
-            </div>
-          }
-        />
         <div className="flex flex-col gap-3">
           <ToolTextarea
-            label={outputLabel ?? 'Output'}
-            placeholder={outputPlaceholder ?? 'Cleaned text appears here.'}
-            value={output}
-            onChange={setOutput}
+            label={inputLabel ?? 'Input text'}
+            placeholder={inputPlaceholder ?? 'Paste or type text here…'}
+            value={input}
+            onChange={setInput}
             rows={12}
+            labelSecondary={
+              <div className="flex items-center gap-2 text-xs font-semibold text-slate-600">
+                <span className="rounded-full bg-slate-100 px-3 py-1">{stats.words} words</span>
+                <span className="rounded-full bg-slate-100 px-3 py-1">{stats.hidden} hidden</span>
+              </div>
+            }
           />
+          <div className="flex flex-wrap items-center gap-3">
+            <button
+              type="button"
+              onClick={handleProcess}
+              className="inline-flex items-center rounded-lg bg-brand-600 px-4 py-2 text-sm font-semibold text-white shadow hover:bg-brand-700"
+            >
+              {primaryLabel}
+            </button>
+            <button
+              type="button"
+              onClick={handleClear}
+              className="inline-flex items-center rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
+            >
+              Clear
+            </button>
+          </div>
         </div>
-      </div>
-
-      <div className="flex flex-wrap items-center gap-3">
-        <button
-          type="button"
-          onClick={handleProcess}
-          className="inline-flex items-center rounded-lg bg-brand-600 px-4 py-2 text-sm font-semibold text-white shadow hover:bg-brand-700"
-        >
-          {primaryLabel}
-        </button>
-        <button
-          type="button"
-          onClick={handleClear}
-          className="inline-flex items-center rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
-        >
-          Clear
-        </button>
-        <CopyButton text={output} label="Copy output" />
+        <ToolTextarea
+          label={outputLabel ?? 'Output'}
+          placeholder={outputPlaceholder ?? 'Cleaned text appears here.'}
+          value={output}
+          onChange={setOutput}
+          rows={12}
+          labelSecondary={<CopyButton text={output} label="Copy" />}
+          beforeTextarea={output ? <HumanizerUpsellCard compact /> : null}
+        />
       </div>
     </div>
   );

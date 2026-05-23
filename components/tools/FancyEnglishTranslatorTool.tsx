@@ -1,18 +1,17 @@
 'use client';
-
 import { GenericTextProcessorTool } from './GenericTextProcessorTool';
+import { callAiTool } from '@/lib/tools/aiToolApi';
 
 export function FancyEnglishTranslatorTool() {
   return (
     <GenericTextProcessorTool
-      processText={(text) => (text.trim() ? `Fancy English translation for: "${text.trim().slice(0, 50)}${text.trim().length > 50 ? '...' : ''}" — Connect a style API to generate elegant or ornate English.` : '')}
-      inputLabel="Your text"
+      toolType="translator"
+      processText={(text) => callAiTool('fancy_english_translator', text)}
+      inputLabel="Plain English"
       outputLabel="Fancy English"
-      inputPlaceholder="Type or paste text to translate into fancy, stylish English..."
-      outputPlaceholder="Fancy text will appear here..."
-      processButtonLabel="Translate to Fancy English"
-      copyButtonLabel="Copy"
-      clearButtonLabel="Clear"
+      inputPlaceholder="Enter text to make fancy and sophisticated..."
+      outputPlaceholder="Fancy translation will appear here..."
+      processButtonLabel="Make it Fancy"
     />
   );
 }

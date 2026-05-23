@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import ToolTextArea from './ToolTextArea';
+import HumanizerUpsellCard from '../HumanizerUpsellCard';
 import { cleanSpaces } from '@/lib/tools/spaceRemover';
 
 type SpaceRemoverToolProps = {
@@ -54,6 +55,7 @@ export function SpaceRemoverTool(_: SpaceRemoverToolProps) {
           rows={12}
           readOnly
           helperText={labels.helperText}
+          beforeTextarea={output ? <HumanizerUpsellCard compact /> : null}
         />
       </div>
 
@@ -80,45 +82,6 @@ export function SpaceRemoverTool(_: SpaceRemoverToolProps) {
           {labels.clearButton}
         </button>
       </div>
-
     </div>
   );
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

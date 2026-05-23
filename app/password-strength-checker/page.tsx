@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next';
+import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { JsonLd } from '@/components/JsonLd';
 import FAQSection from '@/components/FAQSection';
@@ -12,7 +12,7 @@ import { getToolBySlug } from '@/lib/tools/registry';
 import { siteUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 
-export const revalidate = 604800;
+export const revalidate = 2592000;
 const toolSlug = 'password-strength-checker';
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -43,7 +43,7 @@ const faqs: FaqItem[] = [
   {
     category: 'Scoring',
     question: 'What is the difference between password entropy and password strength?',
-    answer: `Password entropy is a mathematical measure of a password's unpredictability, measured in bits. It is calculated as: entropy = log2(N^L) = L × log2(N), where N is the character set size and L is the password length. For a completely random 12-character password using lowercase letters (N=26): entropy = 12 × log2(26) ≈ 56.5 bits. Adding digits and uppercase (N=62): 71.5 bits. Adding symbols (N=95): 78.8 bits. Higher entropy means exponentially more guesses required to crack. Password strength, as evaluated by our tool, is a broader concept that includes entropy but also accounts for predictability factors that pure entropy cannot capture — dictionary words, common substitutions (@ for a, 0 for o), and sequential patterns. A password like "Password123!" has technically sufficient entropy if analyzed as random characters, but its predictability patterns make it much weaker in practice. Our checker combines both mathematical entropy and pattern analysis for a realistic assessment.`,
+    answer: `Password entropy is a mathematical measure of a password's unpredictability, measured in bits. It is calculated as: entropy = log2(N^L) = L × log2(N), where N is the character set size and L is the password length. For a completely random 12-character password using lowercase letters (N=26): entropy = 12 × log2(26) ˜ 56.5 bits. Adding digits and uppercase (N=62): 71.5 bits. Adding symbols (N=95): 78.8 bits. Higher entropy means exponentially more guesses required to crack. Password strength, as evaluated by our tool, is a broader concept that includes entropy but also accounts for predictability factors that pure entropy cannot capture — dictionary words, common substitutions (@ for a, 0 for o), and sequential patterns. A password like "Password123!" has technically sufficient entropy if analyzed as random characters, but its predictability patterns make it much weaker in practice. Our checker combines both mathematical entropy and pattern analysis for a realistic assessment.`,
   },
   {
     category: 'Scoring',
@@ -53,7 +53,7 @@ const faqs: FaqItem[] = [
   {
     category: 'Best Practices',
     question: 'How long should my password be in 2024 and beyond?',
-    answer: `Current security recommendations: minimum 12 characters for regular accounts (email, social media, shopping). Minimum 16 characters for sensitive accounts (banking, investment, healthcare). Minimum 20+ characters for high-value accounts (email account password, password manager master password, work systems). Passphrase format (random words) works well for longer passwords: "correct-horse-battery-staple" at 28 characters is both memorable and extremely secure. The math is compelling: a random 8-character password with full character set (95 characters) has about 52.6 bits of entropy. A 16-character password of just lowercase letters has 75.2 bits — more secure despite using a smaller character set. A 20-character random password has 131 bits of entropy — essentially uncrackable by any foreseeable technology. Length wins over complexity every time. NIST now recommends against forced periodic password changes (which lead to predictable patterns like "Password123" → "Password124") in favor of long, unique passwords that are only changed if compromised.`,
+    answer: `Current security recommendations: minimum 12 characters for regular accounts (email, social media, shopping). Minimum 16 characters for sensitive accounts (banking, investment, healthcare). Minimum 20+ characters for high-value accounts (email account password, password manager master password, work systems). Passphrase format (random words) works well for longer passwords: "correct-horse-battery-staple" at 28 characters is both memorable and extremely secure. The math is compelling: a random 8-character password with full character set (95 characters) has about 52.6 bits of entropy. A 16-character password of just lowercase letters has 75.2 bits — more secure despite using a smaller character set. A 20-character random password has 131 bits of entropy — essentially uncrackable by any foreseeable technology. Length wins over complexity every time. NIST now recommends against forced periodic password changes (which lead to predictable patterns like "Password123" ? "Password124") in favor of long, unique passwords that are only changed if compromised.`,
   },
   {
     category: 'Best Practices',
@@ -73,7 +73,7 @@ const faqs: FaqItem[] = [
   {
     category: 'Attack Types',
     question: 'What is a brute force attack and how does password length stop it?',
-    answer: `A brute force attack systematically tries every possible combination of characters until the password is found. With a 4-character password using only lowercase letters (26^4 = 456,976 combinations), a modern GPU can try all combinations in milliseconds. With an 8-character lowercase password (26^8 ≈ 208 billion combinations), the same GPU takes minutes to hours. With a 12-character password using all printable ASCII characters (95^12 ≈ 5.4 × 10^23 combinations), brute force is completely impractical — it would take longer than the age of the universe even with all the world's computing power. Each additional character multiplies the search space by the character set size. This exponential growth is why length is so powerful: adding one character to a password takes longer to crack by a factor of (character set size), which might be 10–100× depending on the character set. Going from 10 to 11 characters might increase crack time from 10 years to 1,000 years.`,
+    answer: `A brute force attack systematically tries every possible combination of characters until the password is found. With a 4-character password using only lowercase letters (26^4 = 456,976 combinations), a modern GPU can try all combinations in milliseconds. With an 8-character lowercase password (26^8 ˜ 208 billion combinations), the same GPU takes minutes to hours. With a 12-character password using all printable ASCII characters (95^12 ˜ 5.4 × 10^23 combinations), brute force is completely impractical — it would take longer than the age of the universe even with all the world's computing power. Each additional character multiplies the search space by the character set size. This exponential growth is why length is so powerful: adding one character to a password takes longer to crack by a factor of (character set size), which might be 10–100× depending on the character set. Going from 10 to 11 characters might increase crack time from 10 years to 1,000 years.`,
   },
   {
     category: 'Attack Types',
@@ -93,7 +93,7 @@ const faqs: FaqItem[] = [
   {
     category: 'Generation',
     question: 'What is a passphrase and is it more secure than a random character password?',
-    answer: `A passphrase is a password made of multiple random words: "correct-horse-battery-staple" (the famous XKCD example). Passphrases have two advantages: memorability and length. Four random words chosen from a vocabulary of 7,776 words (the EFF wordlist) gives 7776^4 ≈ 3.6 × 10^15 combinations — equivalent to about 51 bits of entropy. More words dramatically increase security: five words ≈ 64 bits, six words ≈ 77 bits, seven words ≈ 90 bits. A seven-word passphrase is both memorable and extremely secure. By comparison, a 12-character random password with all character types has about 78.8 bits of entropy — comparable to six to seven random words but much harder to remember. The tradeoff: passphrases are more memorable but slightly longer to type; random character passwords are shorter but require a password manager to be practical. For your password manager master password (the one you must memorize), a six to seven word passphrase is the ideal solution.`,
+    answer: `A passphrase is a password made of multiple random words: "correct-horse-battery-staple" (the famous XKCD example). Passphrases have two advantages: memorability and length. Four random words chosen from a vocabulary of 7,776 words (the EFF wordlist) gives 7776^4 ˜ 3.6 × 10^15 combinations — equivalent to about 51 bits of entropy. More words dramatically increase security: five words ˜ 64 bits, six words ˜ 77 bits, seven words ˜ 90 bits. A seven-word passphrase is both memorable and extremely secure. By comparison, a 12-character random password with all character types has about 78.8 bits of entropy — comparable to six to seven random words but much harder to remember. The tradeoff: passphrases are more memorable but slightly longer to type; random character passwords are shorter but require a password manager to be practical. For your password manager master password (the one you must memorize), a six to seven word passphrase is the ideal solution.`,
   },
   {
     category: 'Compliance',
@@ -157,7 +157,7 @@ const writeUp = (
 
     <h2>The Science of Password Length vs. Complexity</h2>
     <p>
-      Security research and NIST guidelines have converged on a clear finding: length matters more than complexity. A 16-character password of random lowercase letters (entropy: ≈75 bits) is more secure than an 8-character password with mandatory complexity requirements (entropy: ≈52 bits). The math is straightforward: each character added to a password multiplies the search space by the character set size. Each additional character type requirement adds a fixed bonus to complexity that is smaller than the benefit of a few extra characters.
+      Security research and NIST guidelines have converged on a clear finding: length matters more than complexity. A 16-character password of random lowercase letters (entropy: ˜75 bits) is more secure than an 8-character password with mandatory complexity requirements (entropy: ˜52 bits). The math is straightforward: each character added to a password multiplies the search space by the character set size. Each additional character type requirement adds a fixed bonus to complexity that is smaller than the benefit of a few extra characters.
     </p>
     <p>
       This is why NIST SP 800-63B explicitly recommends against complexity requirements — they lead users to make predictable choices (capital first letter, number at the end, symbol replacing a letter) that actually reduce security relative to what users would choose without those constraints. A policy saying "at least 12 random characters" produces stronger passwords than "at least 8 characters with uppercase, lowercase, number, and symbol."
@@ -223,13 +223,13 @@ const writeUp = (
       Password strength is most precisely expressed as entropy — the number of bits of randomness in a password. Higher entropy means more possible passwords, which means longer attack times. The formula is simple: entropy = log2(character set size ^ password length) = password length × log2(character set size).
     </p>
     <p>
-      <strong>Entropy by character set</strong>: a password using only 26 lowercase letters has log2(26) ≈ 4.70 bits per character. Add uppercase (52 characters): 5.70 bits per character. Add digits (62 characters): 5.95 bits. Add common symbols (72 characters): 6.17 bits. Add all printable ASCII (95 characters): 6.57 bits. These differences seem small per character but compound significantly over a full password length.
+      <strong>Entropy by character set</strong>: a password using only 26 lowercase letters has log2(26) ˜ 4.70 bits per character. Add uppercase (52 characters): 5.70 bits per character. Add digits (62 characters): 5.95 bits. Add common symbols (72 characters): 6.17 bits. Add all printable ASCII (95 characters): 6.57 bits. These differences seem small per character but compound significantly over a full password length.
     </p>
     <p>
       <strong>Concrete examples</strong>: an 8-character lowercase-only password: 8 × 4.70 = 37.6 bits — crackable in seconds on modern hardware. An 8-character password with all character types: 8 × 6.57 = 52.6 bits — takes hours to days offline. A 12-character lowercase password: 12 × 4.70 = 56.4 bits — similar security to the 8-character complex one. A 16-character lowercase password: 75.2 bits — years to decades. A 16-character all-character-types password: 105.1 bits — billions of years. NIST and CISA consider 112-bit entropy sufficient for long-term security.
     </p>
     <p>
-      <strong>Passphrases and diceware</strong>: diceware passphrases select random words from a list of 7,776 words (6^5 — one word per roll of 5 dice). Each word contributes log2(7,776) ≈ 12.92 bits of entropy. A 6-word diceware passphrase has approximately 77.5 bits of entropy. These passphrases are both highly secure and more memorable than random character strings — "correct-horse-battery-staple" is famously secure because its apparent predictability (real English words) does not reduce security when words are truly randomly selected from a large list.
+      <strong>Passphrases and diceware</strong>: diceware passphrases select random words from a list of 7,776 words (6^5 — one word per roll of 5 dice). Each word contributes log2(7,776) ˜ 12.92 bits of entropy. A 6-word diceware passphrase has approximately 77.5 bits of entropy. These passphrases are both highly secure and more memorable than random character strings — "correct-horse-battery-staple" is famously secure because its apparent predictability (real English words) does not reduce security when words are truly randomly selected from a large list.
     </p>
 
     <h2>Common Password Vulnerabilities and How to Avoid Them</h2>
@@ -271,7 +271,7 @@ const writeUp = (
 
     <h2>Privacy of Our Password Strength Checker</h2>
     <p>
-      Entering your actual password into any online tool requires trust that the tool does not capture and transmit it. Our password strength checker is built from the ground up for privacy — all analysis happens in your browser using JavaScript. No passwords are sent to our servers; no network requests are made when you type in the password field. You can verify this yourself using your browser's network monitoring tab (F12 → Network) — typing a password in our tool generates zero network requests.
+      Entering your actual password into any online tool requires trust that the tool does not capture and transmit it. Our password strength checker is built from the ground up for privacy — all analysis happens in your browser using JavaScript. No passwords are sent to our servers; no network requests are made when you type in the password field. You can verify this yourself using your browser's network monitoring tab (F12 ? Network) — typing a password in our tool generates zero network requests.
     </p>
     <p>
       The strength calculation, pattern detection, crack time estimation, and entropy calculation are all performed by JavaScript running locally in your browser. The password exists only in your browser's JavaScript memory during the session and is never stored or logged. When you close or reload the tab, the password is gone. This architecture means you can safely check passwords for your most sensitive accounts — financial, email, and work accounts — without any risk that the password will be captured.
@@ -294,7 +294,7 @@ const writeUp = (
       <strong>The role of salts</strong>: a cryptographic salt is a random value added to your password before hashing, unique to each user account. Salts prevent precomputation attacks (rainbow tables) — an attacker cannot hash "password" once and match it against all users who used "password," because each user's salt produces a different hash. Modern password hashing algorithms include salts automatically. If a service is breached and your password hash is exposed, the attacker must crack your specific hash individually — they cannot reuse work done to crack other users' hashes.
     </p>
     <p>
-      <strong>Why strong passwords matter despite hashing</strong>: bcrypt with 10 rounds limits cracking to approximately 100,000 guesses per second on modern hardware. An 8-character all-character password with 52.6 bits of entropy requires up to 2^52.6 ≈ 7 quadrillion guesses — at 100,000 per second, that is about 2,200 years. A weak 6-character lowercase password (27 bits) takes about 13 seconds. The difference in hash cracking resistance between a weak and strong password is the difference between being compromised in seconds and being effectively immune.
+      <strong>Why strong passwords matter despite hashing</strong>: bcrypt with 10 rounds limits cracking to approximately 100,000 guesses per second on modern hardware. An 8-character all-character password with 52.6 bits of entropy requires up to 2^52.6 ˜ 7 quadrillion guesses — at 100,000 per second, that is about 2,200 years. A weak 6-character lowercase password (27 bits) takes about 13 seconds. The difference in hash cracking resistance between a weak and strong password is the difference between being compromised in seconds and being effectively immune.
     </p>
 
     <h2>Evolution of Password Attacks: From Lists to AI</h2>

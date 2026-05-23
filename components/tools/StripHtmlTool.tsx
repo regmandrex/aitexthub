@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import ToolTextArea from './ToolTextArea';
+import HumanizerUpsellCard from '../HumanizerUpsellCard';
 
 function stripHtml(input: string, preserveLineBreaks: boolean) {
   if (typeof window === 'undefined') {
@@ -103,6 +104,7 @@ export function StripHtmlTool() {
           Clear
         </button>
       </div>
+      {output && <HumanizerUpsellCard />}
     </div>
   );
 }

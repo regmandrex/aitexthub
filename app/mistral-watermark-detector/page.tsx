@@ -1,4 +1,4 @@
-﻿import type { FaqItem } from '@/components/faqData';
+import type { FaqItem } from '@/components/faqData';
 import WatermarkDetectorPage from '@/components/tools/WatermarkDetectorPage';
 import { buildMeta } from '@/lib/seo-meta';
 
@@ -7,7 +7,7 @@ const modelSlug = 'mistral';
 const faqIntro =
   'This FAQ is designed to clarify how the Mistral AI Watermark Detector on gptcleanuptools.com evaluates text, what its findings mean in real-world use, and how results should be interpreted responsibly. The tool operates independently and performs text-only analysis, without any interaction with Mistral AI systems.';
 
-export const revalidate = 604800;
+export const revalidate = 2592000;
 
 const faqs: FaqItem[] = [
   {

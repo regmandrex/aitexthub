@@ -1,18 +1,17 @@
 'use client';
-
 import { GenericTextProcessorTool } from './GenericTextProcessorTool';
+import { callAiTool } from '@/lib/tools/aiToolApi';
 
 export function CartineseTranslatorTool() {
   return (
     <GenericTextProcessorTool
-      processText={(text) => (text.trim() ? `Cartinese (Playboi Carti style) — Connect an API to turn: "${text.trim().slice(0, 40)}..." into vamp/Carti-style text with ad-libs and signature styling.` : '')}
-      inputLabel="Your text"
+      toolType="translator"
+      processText={(text) => callAiTool('cartinese_translator', text)}
+      inputLabel="Normal Text"
       outputLabel="Cartinese"
-      inputPlaceholder="Enter text to convert to Playboi Carti style..."
-      outputPlaceholder="Cartinese (Carti-style) result will appear here..."
+      inputPlaceholder="Enter text to translate to Cartinese..."
+      outputPlaceholder="Cartinese translation will appear here..."
       processButtonLabel="Translate to Cartinese"
-      copyButtonLabel="Copy"
-      clearButtonLabel="Clear"
     />
   );
 }

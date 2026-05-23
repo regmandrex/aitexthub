@@ -1,19 +1,40 @@
 /**
  * Next.js configuration for GPT CLEAN UP.
- * Includes placeholder redirects for migrating legacy WordPress URLs.
  */
 const nextConfig = {
   experimental: {
     inlineCss: true,
-    cpus: 1,
+    cpus: 4,
   },
   images: {
-    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048],
-    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+    deviceSizes: [640, 828, 1080, 1200],
+    imageSizes: [16, 32, 64, 128, 256],
+  },
+  async headers() {
+    return [
+      {
+        // Cache static assets (JS/CSS chunks) for 1 year — they have hashed filenames
+        source: '/_next/static/:path*',
+        headers: [
+          { key: 'Cache-Control', value: 'public, max-age=31536000, immutable' },
+        ],
+      },
+      {
+        // Cache public assets (images, fonts) for 30 days
+        source: '/brand/:path*',
+        headers: [
+          { key: 'Cache-Control', value: 'public, max-age=2592000, stale-while-revalidate=86400' },
+        ],
+      },
+    ];
   },
   async redirects() {
     return [
-      // all-tools -> ai-tools (301 for SEO when URL was renamed)
+      {
+        source: '/api/auth/error',
+        destination: '/auth-error',
+        permanent: false,
+      },
       {
         source: '/all-tools',
         destination: '/ai-tools',
@@ -24,7 +45,6 @@ const nextConfig = {
         destination: '/',
         permanent: true,
       },
-      // Add more legacy WordPress URLs here as needed
     ];
   },
 };

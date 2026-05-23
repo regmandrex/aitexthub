@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next';
+import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { JsonLd } from '@/components/JsonLd';
 import FAQSection from '@/components/FAQSection';
@@ -13,7 +13,7 @@ import { siteUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
 
-export const revalidate = 604800;
+export const revalidate = 2592000;
 
 const toolSlug = 'paragraph-space-remover';
 
@@ -185,7 +185,7 @@ const article = (
     <h2>How to Remove Extra Space Between Paragraphs in Word</h2>
     <p>There are two different kinds of extra space between paragraphs in Microsoft Word: paragraph spacing attributes (Space Before/After settings) and literal blank lines (extra paragraph returns between blocks). This tool addresses the second kind — the literal blank lines that appear when content is pasted into Word from another source, or when Word content with literal blank lines is copied out.</p>
     <p>To <strong>remove extra space between paragraphs in Word</strong> content that you are copying out: copy the Word text, paste it into this paragraph space remover, click Clean Text, and paste the result into your target application. The extra blank lines are removed before the content reaches the destination.</p>
-    <p>For removing the paragraph spacing attributes within Word itself (the Space Before/After settings that control visual spacing in the Word document), use Word's built-in paragraph formatting dialog: select all text (Ctrl+A), open the Paragraph dialog (right-click → Paragraph), and set Space Before and Space After to 0pt. That approach addresses the Word-internal visual spacing; this tool addresses the literal blank lines in the character data when copying out of Word.</p>
+    <p>For removing the paragraph spacing attributes within Word itself (the Space Before/After settings that control visual spacing in the Word document), use Word's built-in paragraph formatting dialog: select all text (Ctrl+A), open the Paragraph dialog (right-click ? Paragraph), and set Space Before and Space After to 0pt. That approach addresses the Word-internal visual spacing; this tool addresses the literal blank lines in the character data when copying out of Word.</p>
 
     <h2>Remove Blank Lines Between Paragraphs vs Remove All Blank Lines</h2>
     <p>It is important to distinguish between removing excessive blank lines between paragraphs and removing all blank lines. The paragraph space remover uses a conservative approach: it collapses sequences of two or more consecutive blank lines to a single blank line, but it preserves single blank lines. This preserves your paragraph structure — the single blank lines that separate paragraphs remain — while eliminating the excessive double and triple blank lines that indicate copy-paste artifacts.</p>
@@ -271,7 +271,7 @@ export default async function ParagraphSpaceRemoverPage() {
           <h1 className="text-xl font-semibold text-slate-900 sm:text-2xl md:text-3xl">{title}</h1>
           <p className="max-w-2xl mx-auto text-xs text-slate-700 sm:text-sm md:text-[15px]">{description}</p>
           <div className="flex items-center justify-center gap-1 text-sm text-slate-500">
-            <span className="text-yellow-500">★★★★★</span>
+            <span className="text-yellow-500">?????</span>
             <span>4.9</span>
             <span>·</span>
             <span>Free</span>

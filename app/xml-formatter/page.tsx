@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next';
+import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { JsonLd } from '@/components/JsonLd';
 import FAQSection from '@/components/FAQSection';
@@ -12,7 +12,7 @@ import { getToolBySlug } from '@/lib/tools/registry';
 import { siteUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 
-export const revalidate = 604800;
+export const revalidate = 2592000;
 const toolSlug = 'xml-formatter';
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -295,13 +295,13 @@ const writeUp = (
       Productive XML development relies on formatter integration directly into the development environment. Here are the keyboard shortcuts and configurations for the most popular IDEs and editors.
     </p>
     <p>
-      <strong>IntelliJ IDEA / WebStorm / Android Studio</strong>: Code → Reformat Code (Ctrl+Alt+L on Windows/Linux, ⌘+Option+L on macOS) formats the current file with the configured XML style. Settings → Editor → Code Style → XML lets you configure: indent size, space before closing tag, attributes on new lines (important for complex Android layouts). IntelliJ's XML formatter is excellent and schema-aware when an XSD is associated with the file.
+      <strong>IntelliJ IDEA / WebStorm / Android Studio</strong>: Code ? Reformat Code (Ctrl+Alt+L on Windows/Linux, ?+Option+L on macOS) formats the current file with the configured XML style. Settings ? Editor ? Code Style ? XML lets you configure: indent size, space before closing tag, attributes on new lines (important for complex Android layouts). IntelliJ's XML formatter is excellent and schema-aware when an XSD is associated with the file.
     </p>
     <p>
       <strong>VS Code</strong>: Shift+Alt+F (Windows/Linux) or Shift+Option+F (macOS) triggers format. The built-in XML formatter is basic; installing the "XML" extension by Red Hat provides a full-featured XML language server with formatting, validation, and completion. For formatting on save, add to settings.json: <code>&quot;[xml]&quot;: &#123; &quot;editor.formatOnSave&quot;: true &#125;</code>. The Prettier formatter requires the <code>@prettier/plugin-xml</code> plugin to handle XML files.
     </p>
     <p>
-      <strong>Eclipse</strong>: Source → Format (Ctrl+Shift+F) formats XML files. Eclipse's XML editor provides built-in formatting with configurable settings under Window → Preferences → XML → XML Files → Editor. Eclipse also supports XML schema association for validation-aware editing.
+      <strong>Eclipse</strong>: Source ? Format (Ctrl+Shift+F) formats XML files. Eclipse's XML editor provides built-in formatting with configurable settings under Window ? Preferences ? XML ? XML Files ? Editor. Eclipse also supports XML schema association for validation-aware editing.
     </p>
     <p>
       <strong>Vim/Neovim</strong>: the <code>xmllint --format -</code> command can be mapped as a formatter: <code>:set formatprg=xmllint\ --format\ -</code> then <code>gq</code> to format. With plugins like null-ls or nvim-lspconfig, the XML Language Server provides formatting within Neovim. The <code>:%!xmllint --format -</code> ex command formats the entire buffer in-place.

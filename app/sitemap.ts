@@ -6,7 +6,7 @@ import { getBlogSitemapSlugs } from '../lib/blog-posts';
 export default function sitemap(): MetadataRoute.Sitemap {
   const urls: MetadataRoute.Sitemap = [];
 
-  // Homepage — highest priority
+  // Homepage â€” highest priority
   urls.push({
     url: siteUrl,
     lastModified: new Date(),

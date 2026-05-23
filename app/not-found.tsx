@@ -89,7 +89,7 @@ export default async function NotFound() {
                   title={resolveToolText(tool, 'title')}
                   description={resolveToolText(tool, 'description')}
                   href={`/${tool.slug}`}
-                  ctaLabel="Open Tool →"
+                  ctaLabel="Open Tool â†’"
                 />
               ))}
             </div>

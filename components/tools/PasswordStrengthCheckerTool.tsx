@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from 'react';
+import HumanizerUpsellCard from '../HumanizerUpsellCard';
 
 const COMMON = ['password','123456','qwerty','abc123','letmein','monkey','iloveyou','admin','welcome','login'];
 

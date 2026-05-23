@@ -1,4 +1,4 @@
-﻿import Link from 'next/link';
+import Link from 'next/link';
 import { buildArticleMeta } from '@/lib/seo-meta';
 import { JsonLd } from '@/components/JsonLd';
 import { blogPostingSchema } from '@/lib/schema/blog';
@@ -11,7 +11,7 @@ const headline = 'Common Mistakes When Cleaning ChatGPT Text (And How to Fix The
 const description =
   'Avoid the most common AI text cleanup mistakes (cleaning after formatting, ignoring invisible Unicode, using paraphrasers) and use a repeatable, SEO-safe workflow.';
 
-export const revalidate = 604800;
+export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({
@@ -70,7 +70,7 @@ export default function CommonMistakesCleaningChatGPTTextPage() {
           applied, invisible characters get embedded into blocks and cleanup becomes destructive.
         </p>
         <p className="text-slate-700">
-          <strong>The fix:</strong> Always follow this order: generate → clean → format → publish. Never reverse the sequence.
+          <strong>The fix:</strong> Always follow this order: generate ? clean ? format ? publish. Never reverse the sequence.
         </p>
       </section>
 

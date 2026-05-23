@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import ToolTextArea from './ToolTextArea';
+import HumanizerUpsellCard from '../HumanizerUpsellCard';
 
 const SEPARATORS: Record<string, string> = { Space: ' ', Comma: ',', Newline: '\n', None: '' };
 const BASES: Record<string, number> = { Decimal: 10, Hexadecimal: 16, Binary: 2, Octal: 8 };
@@ -104,6 +105,7 @@ export function AsciiConverterTool() {
           {copied ? 'Copied!' : 'Copy Output'}
         </button>
       </div>
+      {output && <HumanizerUpsellCard />}
     </div>
   );
 }

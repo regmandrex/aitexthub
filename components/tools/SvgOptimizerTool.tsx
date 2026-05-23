@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import HumanizerUpsellCard from '../HumanizerUpsellCard';
 
 function optimizeSvg(svg: string): string {
   return svg
@@ -52,6 +53,7 @@ export function SvgOptimizerTool() {
           </div>
         </div>
       )}
+      {output && <HumanizerUpsellCard />}
     </div>
   );
 }

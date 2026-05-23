@@ -1,4 +1,4 @@
-﻿import Link from 'next/link';
+import Link from 'next/link';
 import { buildArticleMeta } from '@/lib/seo-meta';
 import { JsonLd } from '@/components/JsonLd';
 import { blogPostingSchema } from '@/lib/schema/blog';
@@ -11,7 +11,7 @@ const headline = "Developer's Guide: How to Clean ChatGPT Text Before Using It i
 const description =
   'A developer-focused workflow to remove invisible Unicode, normalize whitespace and quotes, and prevent Markdown/config/CI failures when using ChatGPT output.';
 
-export const revalidate = 604800;
+export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({

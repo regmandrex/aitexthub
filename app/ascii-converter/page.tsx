@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next';
+import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { JsonLd } from '@/components/JsonLd';
 import FAQSection from '@/components/FAQSection';
@@ -12,7 +12,7 @@ import { getToolBySlug } from '@/lib/tools/registry';
 import { siteUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 
-export const revalidate = 604800;
+export const revalidate = 2592000;
 const toolSlug = 'ascii-converter';
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -38,12 +38,12 @@ const faqs: FaqItem[] = [
   {
     category: 'Usage',
     question: 'How do I convert text to ASCII codes?',
-    answer: `To convert text to ASCII codes using our tool: select the "Text → ASCII" tab, type or paste your text into the input area, and select your desired output format (decimal, hexadecimal, binary, or octal) and separator (space, comma, or newline). The conversion appears instantly as you type. For example, entering "Hello" with decimal format and space separator gives "72 101 108 108 111." With hex format: "48 65 6C 6C 6F." With binary format: "01001000 01100101 01101100 01101100 01101111." Each number corresponds to one character's ASCII code. The output can be copied to your clipboard with the Copy button. This is useful for programming exercises, encoding text data, creating hex dumps, binary representations for educational purposes, or any task that requires knowing the numeric values of characters.`,
+    answer: `To convert text to ASCII codes using our tool: select the "Text ? ASCII" tab, type or paste your text into the input area, and select your desired output format (decimal, hexadecimal, binary, or octal) and separator (space, comma, or newline). The conversion appears instantly as you type. For example, entering "Hello" with decimal format and space separator gives "72 101 108 108 111." With hex format: "48 65 6C 6C 6F." With binary format: "01001000 01100101 01101100 01101100 01101111." Each number corresponds to one character's ASCII code. The output can be copied to your clipboard with the Copy button. This is useful for programming exercises, encoding text data, creating hex dumps, binary representations for educational purposes, or any task that requires knowing the numeric values of characters.`,
   },
   {
     category: 'Usage',
     question: 'How do I convert ASCII codes back to text?',
-    answer: `To convert ASCII codes back to readable text: select the "ASCII → Text" tab, enter your ASCII codes (as decimal, hex, binary, or octal numbers) separated by spaces, commas, or newlines, and the tool decodes them to text instantly. The tool automatically detects the number base: decimal (default), hexadecimal (values prefixed with 0x or containing A-F), binary (8-bit groups of 0s and 1s), or octal. For example: entering "72 101 108 108 111" decodes to "Hello." Entering "48 65 6C 6C 6F" (hex) also decodes to "Hello." Entering "01001000 01100101 01101100 01101100 01101111" (binary) also gives "Hello." This is useful for decoding encoded text data, CTF (Capture the Flag) challenges, debugging network packets or binary files, and understanding what a sequence of numeric codes represents.`,
+    answer: `To convert ASCII codes back to readable text: select the "ASCII ? Text" tab, enter your ASCII codes (as decimal, hex, binary, or octal numbers) separated by spaces, commas, or newlines, and the tool decodes them to text instantly. The tool automatically detects the number base: decimal (default), hexadecimal (values prefixed with 0x or containing A-F), binary (8-bit groups of 0s and 1s), or octal. For example: entering "72 101 108 108 111" decodes to "Hello." Entering "48 65 6C 6C 6F" (hex) also decodes to "Hello." Entering "01001000 01100101 01101100 01101100 01101111" (binary) also gives "Hello." This is useful for decoding encoded text data, CTF (Capture the Flag) challenges, debugging network packets or binary files, and understanding what a sequence of numeric codes represents.`,
   },
   {
     category: 'Usage',
@@ -73,12 +73,12 @@ const faqs: FaqItem[] = [
   {
     category: 'Use Cases',
     question: 'When would a programmer need to use an ASCII converter?',
-    answer: `Programmers encounter ASCII conversion needs frequently. Debugging encoding issues: when a string displays incorrectly, checking the ASCII codes of each character identifies invisible or unexpected characters (like a zero-width space, non-breaking space, or a stray carriage return). Understanding escape sequences: converting characters like tab (\t, ASCII 9), newline (\n, ASCII 10), and null (\0, ASCII 0) helps when working with C strings or binary protocols. Bitwise operations: case conversion (XOR with 32 toggles case), character validation (is it a digit? 48 ≤ code ≤ 57), and character arithmetic (letters A–Z map to 0–25 by subtracting 65) all rely on knowing ASCII values. Network protocol development: many protocols (HTTP headers, SMTP, DNS) are ASCII-based. Creating test data: generating specific byte sequences for testing parsers or encoding schemes. CTF challenges: many beginner CTF problems involve decoding ASCII or shifting character codes. Our converter handles all these use cases instantly.`,
+    answer: `Programmers encounter ASCII conversion needs frequently. Debugging encoding issues: when a string displays incorrectly, checking the ASCII codes of each character identifies invisible or unexpected characters (like a zero-width space, non-breaking space, or a stray carriage return). Understanding escape sequences: converting characters like tab (\t, ASCII 9), newline (\n, ASCII 10), and null (\0, ASCII 0) helps when working with C strings or binary protocols. Bitwise operations: case conversion (XOR with 32 toggles case), character validation (is it a digit? 48 = code = 57), and character arithmetic (letters A–Z map to 0–25 by subtracting 65) all rely on knowing ASCII values. Network protocol development: many protocols (HTTP headers, SMTP, DNS) are ASCII-based. Creating test data: generating specific byte sequences for testing parsers or encoding schemes. CTF challenges: many beginner CTF problems involve decoding ASCII or shifting character codes. Our converter handles all these use cases instantly.`,
   },
   {
     category: 'Use Cases',
     question: 'How is ASCII used in cybersecurity and CTF challenges?',
-    answer: `ASCII encoding and decoding appear constantly in cybersecurity work and CTF (Capture the Flag) competitions. CTF challenges frequently encode messages as ASCII decimal sequences ("72 101 108 108 111" → "Hello"), hexadecimal dumps (seen in memory forensics and binary analysis), or binary sequences (educational challenges). Learning to quickly convert between these representations is a fundamental CTF skill. In penetration testing, understanding ASCII is essential for: SQL injection payloads (CHAR(65) in SQL = 'A', used to bypass string filters), XSS payloads (using decimal character references like &#65; = 'A' to bypass filters), buffer overflow analysis (identifying null terminators, newlines in shellcode), and analyzing network packet captures where protocol headers are ASCII-encoded. Our converter accelerates this work by handling conversions in seconds rather than manually looking up tables. Many CTF beginners start with their first ASCII decode challenge — if 72,73 decoded to "HI," you are on the right track.`,
+    answer: `ASCII encoding and decoding appear constantly in cybersecurity work and CTF (Capture the Flag) competitions. CTF challenges frequently encode messages as ASCII decimal sequences ("72 101 108 108 111" ? "Hello"), hexadecimal dumps (seen in memory forensics and binary analysis), or binary sequences (educational challenges). Learning to quickly convert between these representations is a fundamental CTF skill. In penetration testing, understanding ASCII is essential for: SQL injection payloads (CHAR(65) in SQL = 'A', used to bypass string filters), XSS payloads (using decimal character references like &#65; = 'A' to bypass filters), buffer overflow analysis (identifying null terminators, newlines in shellcode), and analyzing network packet captures where protocol headers are ASCII-encoded. Our converter accelerates this work by handling conversions in seconds rather than manually looking up tables. Many CTF beginners start with their first ASCII decode challenge — if 72,73 decoded to "HI," you are on the right track.`,
   },
   {
     category: 'Use Cases',
@@ -118,7 +118,7 @@ const faqs: FaqItem[] = [
   {
     category: 'Advanced',
     question: 'How do I convert binary data or file contents to ASCII hex dump?',
-    answer: `A hex dump shows the binary content of a file as hexadecimal ASCII codes, one byte per hex pair, grouped into rows. This is useful for inspecting binary file formats, identifying file magic numbers (JPEG files start with FF D8 FF; PNG starts with 89 50 4E 47; PDF starts with 25 50 44 46 which is %PDF in ASCII), debugging binary protocols, and analyzing unknown data. To create a hex dump on the command line: Linux/Mac: xxd filename | head. Windows: format-hex filename (PowerShell). In Python: with open('file','rb') as f: print(f.read(64).hex()). Our ASCII converter handles text-to-hex conversion for typed text. For binary file hex dumps, command-line tools are more appropriate. The reverse (reading a hex dump and converting it back) uses the ASCII → Text tab: paste hex values and the tool decodes them character by character. This is commonly needed when copying hex output from debugging tools and wanting to see the original text.`,
+    answer: `A hex dump shows the binary content of a file as hexadecimal ASCII codes, one byte per hex pair, grouped into rows. This is useful for inspecting binary file formats, identifying file magic numbers (JPEG files start with FF D8 FF; PNG starts with 89 50 4E 47; PDF starts with 25 50 44 46 which is %PDF in ASCII), debugging binary protocols, and analyzing unknown data. To create a hex dump on the command line: Linux/Mac: xxd filename | head. Windows: format-hex filename (PowerShell). In Python: with open('file','rb') as f: print(f.read(64).hex()). Our ASCII converter handles text-to-hex conversion for typed text. For binary file hex dumps, command-line tools are more appropriate. The reverse (reading a hex dump and converting it back) uses the ASCII ? Text tab: paste hex values and the tool decodes them character by character. This is commonly needed when copying hex output from debugging tools and wanting to see the original text.`,
   },
   {
     category: 'Advanced',
@@ -149,7 +149,7 @@ const writeUp = (
 
     <h2>How to Convert Text to ASCII Codes</h2>
     <p>
-      To convert text to ASCII: select the "Text → ASCII" tab, enter your text in the input field, choose your output format (decimal, hexadecimal, binary, or octal), choose a separator (space, comma, or newline), and the codes appear instantly. The tool updates in real time as you type, so you can see character codes appear for each keystroke.
+      To convert text to ASCII: select the "Text ? ASCII" tab, enter your text in the input field, choose your output format (decimal, hexadecimal, binary, or octal), choose a separator (space, comma, or newline), and the codes appear instantly. The tool updates in real time as you type, so you can see character codes appear for each keystroke.
     </p>
     <p>
       Decimal format shows familiar numbers (A=65, B=66). Hexadecimal format shows two-character hex codes (A=41, B=42) — the same values you see in hex editors and color codes. Binary shows 8-bit representations (A=01000001) — the actual bit patterns stored in memory. Octal (A=101) is less common but appears in Unix file permissions and older computing contexts. All four formats represent the same underlying values in different number bases.
@@ -157,7 +157,7 @@ const writeUp = (
 
     <h2>How to Convert ASCII Codes to Text</h2>
     <p>
-      Decoding ASCII is equally simple: select the "ASCII → Text" tab, enter your numeric codes separated by spaces or commas, and the text appears. The tool auto-detects the number base from the input: decimal numbers are taken at face value, hexadecimal values are identified by A-F characters or 0x prefix, binary values are recognized as 8-bit groups of 0s and 1s, and octal values fall between binary and hex in their character set.
+      Decoding ASCII is equally simple: select the "ASCII ? Text" tab, enter your numeric codes separated by spaces or commas, and the text appears. The tool auto-detects the number base from the input: decimal numbers are taken at face value, hexadecimal values are identified by A-F characters or 0x prefix, binary values are recognized as 8-bit groups of 0s and 1s, and octal values fall between binary and hex in their character set.
     </p>
     <p>
       You can mix separators — spaces, commas, and newlines are all recognized as delimiters. Invalid codes (numbers outside the 0–127 range for standard ASCII, or values that cannot be decoded) are either skipped or produce replacement characters, depending on configuration. This flexibility makes the decoder practical for real-world encoded text you find in different contexts.
@@ -200,7 +200,7 @@ const writeUp = (
       ASCII art represents one of the most creative applications of character codes. By exploiting the visual density of different characters — # and @ are visually heavy, . and , are light, space is empty — artists arrange characters in a grid to create images recognizable to the human eye. The technique dates to early computing when graphical displays were unavailable, and ASCII art became integral to BBS (Bulletin Board System) culture in the 1980s and 1990s.
     </p>
     <p>
-      Today ASCII art appears in terminal applications, source code headers, email signatures, and nostalgic aesthetic choices in modern media. Figlet fonts render text as large ASCII typography. Extended ASCII block characters (░▒▓█) from CP437 enable higher-resolution ASCII art with shading. Our related ASCII Art Generator tool uses figlet to create text-based typography from any input.
+      Today ASCII art appears in terminal applications, source code headers, email signatures, and nostalgic aesthetic choices in modern media. Figlet fonts render text as large ASCII typography. Extended ASCII block characters (¦¦¦¦) from CP437 enable higher-resolution ASCII art with shading. Our related ASCII Art Generator tool uses figlet to create text-based typography from any input.
     </p>
 
     <h2>Relationship Between ASCII and Modern Text Standards</h2>
@@ -350,7 +350,7 @@ const writeUp = (
       <strong>Hashing ASCII input</strong>: cryptographic hash functions (SHA-256, SHA-512, MD5) take arbitrary byte sequences as input and produce fixed-length output. When hashing a string, the string's characters are first converted to bytes (using ASCII or UTF-8 encoding), then the hash function processes the bytes. This is why our SHA256 Generator tool on this site asks for text input — it internally converts the text to UTF-8 bytes before hashing. Understanding that hashing works on bytes (derived from ASCII/Unicode codes) explains why "hello" and "Hello" produce completely different hashes — the ASCII codes differ by 32 (bit 5), and hash functions are designed to avalanche — tiny input changes produce completely different outputs.
     </p>
     <p>
-      <strong>Password hashing and character sets</strong>: password strength relates to the size of the character set and password length. If you use only lowercase ASCII letters (26 characters), each character contributes log2(26) ≈ 4.7 bits of entropy. Adding uppercase (52 chars total) gives 5.7 bits per character. Adding digits (62 chars) gives 5.95 bits. Adding all printable ASCII symbols (95 chars) gives 6.57 bits per character. A 12-character password using all printable ASCII has approximately 12 × 6.57 ≈ 79 bits of entropy — considered strong. The character set calculation is directly based on how many distinct ASCII (and Unicode) characters are included in the password alphabet.
+      <strong>Password hashing and character sets</strong>: password strength relates to the size of the character set and password length. If you use only lowercase ASCII letters (26 characters), each character contributes log2(26) ˜ 4.7 bits of entropy. Adding uppercase (52 chars total) gives 5.7 bits per character. Adding digits (62 chars) gives 5.95 bits. Adding all printable ASCII symbols (95 chars) gives 6.57 bits per character. A 12-character password using all printable ASCII has approximately 12 × 6.57 ˜ 79 bits of entropy — considered strong. The character set calculation is directly based on how many distinct ASCII (and Unicode) characters are included in the password alphabet.
     </p>
 
     <h2>Using ASCII Codes for Input Validation and Character Classification</h2>

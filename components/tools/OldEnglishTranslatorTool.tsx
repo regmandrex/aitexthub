@@ -1,18 +1,17 @@
 'use client';
-
 import { GenericTextProcessorTool } from './GenericTextProcessorTool';
+import { callAiTool } from '@/lib/tools/aiToolApi';
 
 export function OldEnglishTranslatorTool() {
   return (
     <GenericTextProcessorTool
-      processText={(text) => (text.trim() ? `Old English / Anglo-Saxon style — Translate to Anglo Saxon. "${text.trim().slice(0, 50)}${text.trim().length > 50 ? '...' : ''}"` : '')}
+      toolType="translator"
+      processText={(text) => callAiTool('old_english_translator', text)}
       inputLabel="Modern English"
-      outputLabel="Old English / Anglo-Saxon style"
-      inputPlaceholder="Enter text to translate to Old English (Anglo-Saxon)..."
+      outputLabel="Old English"
+      inputPlaceholder="Enter text to translate to Old English..."
       outputPlaceholder="Old English translation will appear here..."
-      processButtonLabel="Translate to Anglo Saxon"
-      copyButtonLabel="Copy"
-      clearButtonLabel="Clear"
+      processButtonLabel="Translate to Old English"
     />
   );
 }

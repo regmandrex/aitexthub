@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next';
+import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { JsonLd } from '@/components/JsonLd';
 import FAQSection from '@/components/FAQSection';
@@ -12,7 +12,7 @@ import { getToolBySlug } from '@/lib/tools/registry';
 import { siteUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 
-export const revalidate = 604800;
+export const revalidate = 2592000;
 const toolSlug = 'px-to-rem';
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -23,7 +23,7 @@ const faqs: FaqItem[] = [
   {
     category: 'Basics',
     question: 'What is px to rem conversion and why does it matter for CSS?',
-    answer: `PX to REM conversion translates pixel values (px) into REM units, which are relative to the root element's font size. 1rem equals the font size set on the HTML element — by default 16px in all major browsers. So 16px = 1rem, 32px = 2rem, 8px = 0.5rem, and 24px = 1.5rem. This conversion matters because REM units scale with the user's browser font size preference, while pixels are fixed. If a user increases their browser's base font size from 16px to 20px (for accessibility), all REM-sized elements scale proportionally — text becomes larger, spacing increases, components resize — maintaining the visual design while respecting the user's needs. Pixel sizes ignore this preference entirely. Using REMs for typography and spacing produces more accessible, flexible CSS that respects user preferences and adapts to different device contexts. Our tool provides instant PX↔REM conversion with a configurable base font size.`,
+    answer: `PX to REM conversion translates pixel values (px) into REM units, which are relative to the root element's font size. 1rem equals the font size set on the HTML element — by default 16px in all major browsers. So 16px = 1rem, 32px = 2rem, 8px = 0.5rem, and 24px = 1.5rem. This conversion matters because REM units scale with the user's browser font size preference, while pixels are fixed. If a user increases their browser's base font size from 16px to 20px (for accessibility), all REM-sized elements scale proportionally — text becomes larger, spacing increases, components resize — maintaining the visual design while respecting the user's needs. Pixel sizes ignore this preference entirely. Using REMs for typography and spacing produces more accessible, flexible CSS that respects user preferences and adapts to different device contexts. Our tool provides instant PX?REM conversion with a configurable base font size.`,
   },
   {
     category: 'Basics',
@@ -113,7 +113,7 @@ const faqs: FaqItem[] = [
   {
     category: 'Advanced',
     question: 'How does Sass/SCSS simplify px to rem conversion in a codebase?',
-    answer: `Sass/SCSS provides two powerful ways to handle px-to-rem conversion throughout a codebase. Method 1 — rem() function: @use 'sass:math'; @function rem($px) { @return math.div($px, 16px) * 1rem; } Usage: font-size: rem(24px); → outputs font-size: 1.5rem. Method 2 — CSS custom property approach: define pixel values as custom properties in the source and convert in a mixin. The rem() function approach is most popular — it keeps px values in source code (readable and matching design specs) while outputting rem in compiled CSS. If your base is 10px (62.5% trick): @function rem($px) { @return math.div($px, 10px) * 1rem; }. Configure the base as a variable: $base: 16px; @function rem($px) { @return math.div($px, $base) * 1rem; }. Many existing Sass utility libraries include a rem() function already. Our px-to-rem calculator is useful for verifying rem() function output and for CSS projects that do not use a preprocessor.`,
+    answer: `Sass/SCSS provides two powerful ways to handle px-to-rem conversion throughout a codebase. Method 1 — rem() function: @use 'sass:math'; @function rem($px) { @return math.div($px, 16px) * 1rem; } Usage: font-size: rem(24px); ? outputs font-size: 1.5rem. Method 2 — CSS custom property approach: define pixel values as custom properties in the source and convert in a mixin. The rem() function approach is most popular — it keeps px values in source code (readable and matching design specs) while outputting rem in compiled CSS. If your base is 10px (62.5% trick): @function rem($px) { @return math.div($px, 10px) * 1rem; }. Configure the base as a variable: $base: 16px; @function rem($px) { @return math.div($px, $base) * 1rem; }. Many existing Sass utility libraries include a rem() function already. Our px-to-rem calculator is useful for verifying rem() function output and for CSS projects that do not use a preprocessor.`,
   },
   {
     category: 'Technical',
@@ -123,7 +123,7 @@ const faqs: FaqItem[] = [
   {
     category: 'Technical',
     question: 'How do I use CSS clamp() with rem for responsive fluid typography?',
-    answer: `CSS clamp() with rem creates fluid typography that scales smoothly between viewport sizes without breakpoints. Syntax: font-size: clamp(min, preferred, max). A practical example: font-size: clamp(1rem, 0.5rem + 2.5vw, 2rem). This sets a minimum of 1rem (16px), grows fluidly using 0.5rem + 2.5vw, and caps at 2rem (32px). How the fluid part works: at 400px viewport width, 0.5rem + 2.5vw = 8px + 10px = 18px. At 800px: 8px + 20px = 28px. At 1200px: 8px + 30px = 38px, clamped to 32px max. The rem minimum and maximum respect user font-size preferences — if the user sets 20px base, the clamp min becomes 20px (1rem) and max becomes 40px (2rem). Formula for fluid type between two viewport sizes: the preferred value = calc(minSize + (maxSize − minSize) × ((100vw − minVP) / (maxVP − minVP))). Simplified: preferred ≈ Xrem + Yvw where X is the fixed offset and Y scales with viewport. Our px-to-rem converter helps translate Figma design spec px values to the rem units required inside clamp() expressions. Major browsers (Chrome, Firefox, Safari, Edge) fully support clamp() — use it freely in production.`,
+    answer: `CSS clamp() with rem creates fluid typography that scales smoothly between viewport sizes without breakpoints. Syntax: font-size: clamp(min, preferred, max). A practical example: font-size: clamp(1rem, 0.5rem + 2.5vw, 2rem). This sets a minimum of 1rem (16px), grows fluidly using 0.5rem + 2.5vw, and caps at 2rem (32px). How the fluid part works: at 400px viewport width, 0.5rem + 2.5vw = 8px + 10px = 18px. At 800px: 8px + 20px = 28px. At 1200px: 8px + 30px = 38px, clamped to 32px max. The rem minimum and maximum respect user font-size preferences — if the user sets 20px base, the clamp min becomes 20px (1rem) and max becomes 40px (2rem). Formula for fluid type between two viewport sizes: the preferred value = calc(minSize + (maxSize - minSize) × ((100vw - minVP) / (maxVP - minVP))). Simplified: preferred ˜ Xrem + Yvw where X is the fixed offset and Y scales with viewport. Our px-to-rem converter helps translate Figma design spec px values to the rem units required inside clamp() expressions. Major browsers (Chrome, Firefox, Safari, Edge) fully support clamp() — use it freely in production.`,
   },
   {
     category: 'Use Cases',
@@ -219,7 +219,7 @@ const writeUp = (
       WCAG 2.1 Success Criterion 1.4.4 (Resize Text, Level AA) requires that text can be resized up to 200% without loss of content or functionality. Browser zoom achieves this for both px and rem text. But Success Criterion 1.4.12 (Text Spacing, Level AA) requires that your layout does not break when line height, letter spacing, and word spacing are changed. Rem-based layouts are more resilient to these spacing adjustments because they scale with the base font size rather than overriding it with fixed pixel values.
     </p>
     <p>
-      The practical impact of using px for font sizes: test your site by going to browser Settings → Appearance → Font Size and setting it to "Very Large" or "Largest." If your text does not grow, you are using px for font sizes and failing accessibility users. Replace those px values with rem — our converter makes this a straightforward calculation. This single change can meaningfully improve usability for millions of users with visual impairments, cognitive disabilities, or simply aging eyesight.
+      The practical impact of using px for font sizes: test your site by going to browser Settings ? Appearance ? Font Size and setting it to "Very Large" or "Largest." If your text does not grow, you are using px for font sizes and failing accessibility users. Replace those px values with rem — our converter makes this a straightforward calculation. This single change can meaningfully improve usability for millions of users with visual impairments, cognitive disabilities, or simply aging eyesight.
     </p>
 
     <h2>Rem Units in CSS Custom Properties and Design Tokens</h2>
@@ -359,7 +359,7 @@ const writeUp = (
       Scenario 2 — Third-party component override: a UI library sets <code>font-size: 14px</code> on a component and you need to override it to match your rem-based system. Convert your target size to rem and override: <code>font-size: 0.875rem !important;</code>. Never increase specificity just to override a px value with another px value — use rem consistently.
     </p>
     <p>
-      Scenario 3 — Legacy codebase with 62.5% base: you join a project using the 62.5% trick (<code>html &#123; font-size: 62.5%; &#125;</code>). A new designer provides specs in px. Convert by dividing by 10: 24px → 2.4rem, 18px → 1.8rem, 14px → 1.4rem. Document this base convention in your project's CONTRIBUTING.md to prevent future confusion.
+      Scenario 3 — Legacy codebase with 62.5% base: you join a project using the 62.5% trick (<code>html &#123; font-size: 62.5%; &#125;</code>). A new designer provides specs in px. Convert by dividing by 10: 24px ? 2.4rem, 18px ? 1.8rem, 14px ? 1.4rem. Document this base convention in your project's CONTRIBUTING.md to prevent future confusion.
     </p>
     <p>
       Scenario 4 — Responsive icon sizing: icons that should scale with text use em (relative to parent font size) rather than rem. An icon inside a button with <code>font-size: 1.25rem</code> uses <code>width: 1em; height: 1em;</code> to match the button text size automatically. Use rem only for icons that should have an absolute size regardless of surrounding text.

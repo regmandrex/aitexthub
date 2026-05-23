@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next';
+import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { JsonLd } from '@/components/JsonLd';
 import FAQSection from '@/components/FAQSection';
@@ -12,7 +12,7 @@ import { getToolBySlug } from '@/lib/tools/registry';
 import { siteUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 
-export const revalidate = 604800;
+export const revalidate = 2592000;
 const toolSlug = 'text-reverser';
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -28,7 +28,7 @@ const faqs: FaqItem[] = [
   {
     category: 'Usage',
     question: 'How do I reverse text online?',
-    answer: `To reverse text using our tool: (1) Select the reversal mode — "Reverse Characters" reverses every character in the entire text, "Reverse Words" reverses word order while keeping each word's letters in order, or "Reverse Lines" reverses line order while keeping each line intact. (2) Type or paste your text into the left input panel. (3) The reversed output appears instantly in the right panel — no button click required. (4) Copy the result using the Copy Output button. The tool works on text of any length. For character reversal, Unicode characters (including emoji like 🎉, accented letters like é, and Chinese/Japanese/Korean characters) are handled correctly. For word reversal, whitespace between words is treated as the separator. For line reversal, each newline creates a new line unit. All processing happens in your browser — no text is uploaded to any server.`,
+    answer: `To reverse text using our tool: (1) Select the reversal mode — "Reverse Characters" reverses every character in the entire text, "Reverse Words" reverses word order while keeping each word's letters in order, or "Reverse Lines" reverses line order while keeping each line intact. (2) Type or paste your text into the left input panel. (3) The reversed output appears instantly in the right panel — no button click required. (4) Copy the result using the Copy Output button. The tool works on text of any length. For character reversal, Unicode characters (including emoji like ??, accented letters like é, and Chinese/Japanese/Korean characters) are handled correctly. For word reversal, whitespace between words is treated as the separator. For line reversal, each newline creates a new line unit. All processing happens in your browser — no text is uploaded to any server.`,
   },
   {
     category: 'Usage',
@@ -48,7 +48,7 @@ const faqs: FaqItem[] = [
   {
     category: 'Technical',
     question: 'How does the text reverser handle Unicode and emoji correctly?',
-    answer: `Handling Unicode reversal correctly is trickier than it appears. JavaScript strings internally represent text as UTF-16 code units. Most common characters fit in one UTF-16 code unit, but emoji and some characters (like many Chinese characters, ancient scripts, and mathematical symbols in the Unicode Supplementary Multilingual Plane) require two code units called a "surrogate pair." If you split a string by code units and reverse, surrogate pairs get split and the reversed text contains corrupted characters. Our tool uses Array.from(text) to split the string, which correctly handles surrogate pairs — each emoji or multi-code-unit character is treated as a single element. Similarly, some characters have combining marks (like accented characters composed of a base letter + combining diacritic). Proper Unicode reversal should keep base characters with their combining marks. Our tool handles the common case correctly for emoji and supplementary characters, ensuring that 🎉, 中, and similar characters reverse correctly rather than producing the replacement character (□) or garbled output.`,
+    answer: `Handling Unicode reversal correctly is trickier than it appears. JavaScript strings internally represent text as UTF-16 code units. Most common characters fit in one UTF-16 code unit, but emoji and some characters (like many Chinese characters, ancient scripts, and mathematical symbols in the Unicode Supplementary Multilingual Plane) require two code units called a "surrogate pair." If you split a string by code units and reverse, surrogate pairs get split and the reversed text contains corrupted characters. Our tool uses Array.from(text) to split the string, which correctly handles surrogate pairs — each emoji or multi-code-unit character is treated as a single element. Similarly, some characters have combining marks (like accented characters composed of a base letter + combining diacritic). Proper Unicode reversal should keep base characters with their combining marks. Our tool handles the common case correctly for emoji and supplementary characters, ensuring that ??, ?, and similar characters reverse correctly rather than producing the replacement character (?) or garbled output.`,
   },
   {
     category: 'Technical',
@@ -113,7 +113,7 @@ const faqs: FaqItem[] = [
   {
     category: 'Use Cases',
     question: 'How do I reverse lines in a text file to put the last line first?',
-    answer: `Reversing line order — putting the last line first — is useful for log files (most recent entries first), chronological data, or reversing a numbered list. Our "Reverse Lines" mode does this instantly: paste your multi-line text, select Reverse Lines, and the output has lines in the opposite order. For large files or automation, command-line tools are more efficient. On Linux/macOS: tac filename.txt outputs lines in reverse order (tac is cat spelled backward). On macOS alternatively: tail -r filename.txt. On Windows PowerShell: (Get-Content file.txt) [::−1] | Set-Content reversed.txt. In Python: lines = open('file.txt').readlines(); open('reversed.txt', 'w').writelines(reversed(lines)). Common use cases: log analysis (most recent first without rerunning the service), LIFO data processing (last in, first out), reversing numbered lists (100 down to 1), undoing a sort operation. The reverse-lines operation is also a common coding interview problem — implement a solution that handles empty lines, trailing newlines, and files with no newline on the last line.`,
+    answer: `Reversing line order — putting the last line first — is useful for log files (most recent entries first), chronological data, or reversing a numbered list. Our "Reverse Lines" mode does this instantly: paste your multi-line text, select Reverse Lines, and the output has lines in the opposite order. For large files or automation, command-line tools are more efficient. On Linux/macOS: tac filename.txt outputs lines in reverse order (tac is cat spelled backward). On macOS alternatively: tail -r filename.txt. On Windows PowerShell: (Get-Content file.txt) [::-1] | Set-Content reversed.txt. In Python: lines = open('file.txt').readlines(); open('reversed.txt', 'w').writelines(reversed(lines)). Common use cases: log analysis (most recent first without rerunning the service), LIFO data processing (last in, first out), reversing numbered lists (100 down to 1), undoing a sort operation. The reverse-lines operation is also a common coding interview problem — implement a solution that handles empty lines, trailing newlines, and files with no newline on the last line.`,
   },
   {
     category: 'Use Cases',
@@ -123,7 +123,7 @@ const faqs: FaqItem[] = [
   {
     category: 'Technical',
     question: 'How does text reversal interact with Unicode emoji and combining characters?',
-    answer: `Unicode text reversal is deceptively complex because not all visible characters are single code points. Simple reversal using JavaScript's .split('').reverse().join('') fails for several Unicode categories. Supplementary characters (emoji, rare CJK): characters above U+FFFF are stored as surrogate pairs in JavaScript (two UTF-16 code units). Naive reversal breaks the pair. Fix: use Array.from(str).reverse().join('') — Array.from() splits on code points, not UTF-16 code units. Emoji with skin tone modifiers: the thumbs-up with medium-dark skin (👍🏾) is two code points — base emoji (U+1F44D) plus a skin tone modifier (U+1F3FE). Reversing at code-point level would put the modifier first, breaking the sequence. Zero-width joiners (ZWJ): complex family emoji like 👨‍👩‍👧 combine multiple emoji via U+200D. Code-point reversal separates the ZWJ sequences. Combining diacritics: letters with accents can be stored as base letter + combining diacritic mark (two code points). Reversing code points separates them. Our reverser handles standard ASCII and most emoji correctly. For complex grapheme cluster sequences, the results may vary.`,
+    answer: `Unicode text reversal is deceptively complex because not all visible characters are single code points. Simple reversal using JavaScript's .split('').reverse().join('') fails for several Unicode categories. Supplementary characters (emoji, rare CJK): characters above U+FFFF are stored as surrogate pairs in JavaScript (two UTF-16 code units). Naive reversal breaks the pair. Fix: use Array.from(str).reverse().join('') — Array.from() splits on code points, not UTF-16 code units. Emoji with skin tone modifiers: the thumbs-up with medium-dark skin (????) is two code points — base emoji (U+1F44D) plus a skin tone modifier (U+1F3FE). Reversing at code-point level would put the modifier first, breaking the sequence. Zero-width joiners (ZWJ): complex family emoji like ???????? combine multiple emoji via U+200D. Code-point reversal separates the ZWJ sequences. Combining diacritics: letters with accents can be stored as base letter + combining diacritic mark (two code points). Reversing code points separates them. Our reverser handles standard ASCII and most emoji correctly. For complex grapheme cluster sequences, the results may vary.`,
   },
   {
     category: 'Use Cases',
@@ -139,7 +139,7 @@ const writeUp = (
       A text reverser is a tool that flips text in one of three ways: reversing individual characters (backward spelling), reversing word order while keeping each word intact, or reversing line order while keeping each line intact. Our free online text reverser provides all three modes with real-time output — type or paste text and the reversed version updates instantly.
     </p>
     <p>
-      Text reversal has applications in creative writing, programming practice, palindrome detection, puzzle creation, log file analysis, and list reordering. Our tool handles Unicode text correctly, including emoji, accented characters, and non-Latin scripts — using Array.from() to split by Unicode characters rather than raw bytes, ensuring multi-byte characters like 🎉 and 中 are treated as single units.
+      Text reversal has applications in creative writing, programming practice, palindrome detection, puzzle creation, log file analysis, and list reordering. Our tool handles Unicode text correctly, including emoji, accented characters, and non-Latin scripts — using Array.from() to split by Unicode characters rather than raw bytes, ensuring multi-byte characters like ?? and ? are treated as single units.
     </p>
 
     <h2>Three Reversal Modes Explained</h2>
@@ -177,7 +177,7 @@ const writeUp = (
       Text reversal with Unicode characters requires care. JavaScript strings are sequences of UTF-16 code units. Most characters occupy one code unit, but emoji, many mathematical symbols, and characters from certain Unicode planes occupy two code units (a surrogate pair). Naively splitting a string by code unit and reversing will corrupt surrogate pairs.
     </p>
     <p>
-      The correct approach: use Array.from() or the string spread operator ([...str]) to split by Unicode code points rather than code units. This treats each emoji and supplementary character as a single element during reversal. Our tool uses this approach, ensuring that 🎉 reversed produces 🎉 (unchanged), not two corrupted surrogate characters. This is a subtle but important implementation detail that separates correct Unicode-aware text processing from naive byte-level operations.
+      The correct approach: use Array.from() or the string spread operator ([...str]) to split by Unicode code points rather than code units. This treats each emoji and supplementary character as a single element during reversal. Our tool uses this approach, ensuring that ?? reversed produces ?? (unchanged), not two corrupted surrogate characters. This is a subtle but important implementation detail that separates correct Unicode-aware text processing from naive byte-level operations.
     </p>
 
     <h2>Creative Applications of Text Reversal</h2>
@@ -264,7 +264,7 @@ const writeUp = (
       Text reversal has a rich tradition in wordplay, puzzles, and creative writing. Understanding the landscape of text-reversal-based games and puzzles helps you use our tool creatively.
     </p>
     <p>
-      Semordnilap puzzles: a semordnilap (a coined reverse of "palindromes") is a word that spells a different valid word when reversed. Collecting and constructing semordnilap word pairs is a traditional wordplay hobby. Notable pairs: "stressed" ↔ "desserts", "dog" ↔ "god", "live" ↔ "evil", "star" ↔ "rats", "time" ↔ "emit", "doom" ↔ "mood", "repaid" ↔ "diaper", "reward" ↔ "drawer", "parts" ↔ "strap", "snap" ↔ "pans". Our character reversal mode lets you quickly check any word for semordnilap status.
+      Semordnilap puzzles: a semordnilap (a coined reverse of "palindromes") is a word that spells a different valid word when reversed. Collecting and constructing semordnilap word pairs is a traditional wordplay hobby. Notable pairs: "stressed" ? "desserts", "dog" ? "god", "live" ? "evil", "star" ? "rats", "time" ? "emit", "doom" ? "mood", "repaid" ? "diaper", "reward" ? "drawer", "parts" ? "strap", "snap" ? "pans". Our character reversal mode lets you quickly check any word for semordnilap status.
     </p>
     <p>
       Palindrome construction: writers deliberately construct palindromic sentences for literary effect. Famous examples: "A man, a plan, a canal — Panama", "Was it a car or a cat I saw?", "Never odd or even", "Madam, I'm Adam." Our reverser can verify a palindrome candidate by reversing it and checking if it matches the original (ignoring spaces and punctuation). Paste the cleaned text (remove spaces and punctuation), reverse, and compare — if identical, it is a palindrome.

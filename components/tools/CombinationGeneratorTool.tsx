@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from 'react';
 import ToolTextArea from './ToolTextArea';
+import HumanizerUpsellCard from '../HumanizerUpsellCard';
 
 const LABELS = {
   errorEnterItems: 'Enter at least one item.',

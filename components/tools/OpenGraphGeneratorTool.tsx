@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import HumanizerUpsellCard from '../HumanizerUpsellCard';
 
 export function OpenGraphGeneratorTool() {
   const [title, setTitle] = useState('');

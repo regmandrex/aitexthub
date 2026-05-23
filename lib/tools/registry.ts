@@ -106,6 +106,7 @@ const GENERATOR_SLUGS = new Set([
   'runescape-name-generator',
   'shopify-store-name-generator',
   'korean-name-generator-male',
+  'korean-name-generator-online',
   'gorilla-tag-name-generator',
   'hollow-knight-name-generator',
   'coven-name-generator',

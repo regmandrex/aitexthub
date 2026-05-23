@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import ToolTextArea from './ToolTextArea';
+import HumanizerUpsellCard from '../HumanizerUpsellCard';
 import { adjustLineSpacing, type LineSpacingOption } from '@/lib/tools/lineSpacing';
 
 type LineSpacingToolProps = {
@@ -142,7 +143,7 @@ export function LineSpacingTool(_: LineSpacingToolProps) {
           Clear
         </button>
       </div>
+      {output && <HumanizerUpsellCard />}
     </div>
   );
 }
-

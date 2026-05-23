@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import ToolTextArea from './ToolTextArea';
+import HumanizerUpsellCard from '../HumanizerUpsellCard';
 
 // Code cleaning functions
 function removeTrailingSpaces(text: string): string {
@@ -250,6 +251,7 @@ export function AICodeCleanerTool() {
           {"Clear"}
         </button>
       </div>
+      {output && <HumanizerUpsellCard />}
     </div>
   );
 }

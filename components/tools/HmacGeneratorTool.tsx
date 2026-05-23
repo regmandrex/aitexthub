@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import HumanizerUpsellCard from '../HumanizerUpsellCard';
 
 async function generateHmac(message: string, key: string, algo: string): Promise<string> {
   const enc = new TextEncoder();

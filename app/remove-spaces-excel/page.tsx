@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next';
+import type { Metadata } from 'next';
 import { JsonLd } from '@/components/JsonLd';
 import AdSenseSlot from '@/components/ads/AdSenseSlot';
 import BelowToolAd from '@/components/ads/BelowToolAd';
@@ -6,7 +6,7 @@ import ToolWorkbench from '@/components/ToolWorkbench';
 import { RelatedTools } from '@/components/tool/RelatedTools';
 import { siteUrl } from '@/lib/seo/url';
 
-export const revalidate = 604800;
+export const revalidate = 2592000;
 
 const faqs = [
   { question: 'How do I remove spaces in Excel?', answer: 'The most common way to remove spaces in Excel is to use the TRIM function. In an empty cell next to your data, type =TRIM(A1) (replacing A1 with the cell containing your text). Press Enter. TRIM removes all leading spaces, trailing spaces, and reduces multiple spaces between words to a single space. To apply to all rows, drag the formula down the column. Then copy the formula results, paste as values (Paste Special > Values), and delete the original column. This gives you clean data with all extra spaces removed.' },
@@ -283,7 +283,7 @@ export default async function RemoveSpacesExcelPage() {
           <h1 className="text-xl font-semibold text-slate-900 sm:text-2xl md:text-3xl">Remove Spaces in Excel</h1>
           <p className="max-w-2xl mx-auto text-xs text-slate-700 sm:text-sm md:text-[15px]">Strip leading, trailing, double, and invisible spaces from Excel cells. Every method — TRIM, SUBSTITUTE, Find &amp; Replace, Power Query — explained with step-by-step examples.</p>
           <div className="flex items-center justify-center gap-1 text-sm text-slate-500">
-            <span className="text-yellow-500">★★★★★</span>
+            <span className="text-yellow-500">?????</span>
             <span>4.9</span>
             <span>·</span>
             <span>Free Guide</span>
@@ -299,7 +299,7 @@ export default async function RemoveSpacesExcelPage() {
               { formula: '=SUBSTITUTE(A1," ","")', use: 'Remove ALL spaces including between words' },
               { formula: '=TRIM(CLEAN(A1))', use: 'Remove spaces + non-printable characters' },
               { formula: '=VALUE(TRIM(A1))', use: 'Remove spaces and convert text to number' },
-              { formula: 'Ctrl+H → space → empty', use: 'Find & Replace all spaces (no formula)' },
+              { formula: 'Ctrl+H ? space ? empty', use: 'Find & Replace all spaces (no formula)' },
             ].map((item) => (
               <div key={item.formula} className="rounded-lg border border-slate-100 bg-white p-3">
                 <p className="text-xs font-mono font-semibold text-blue-700 mb-1">{item.formula}</p>

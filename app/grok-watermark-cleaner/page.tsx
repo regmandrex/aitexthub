@@ -1,4 +1,4 @@
-﻿import FAQSection from "../../components/FAQSection";
+import FAQSection from "../../components/FAQSection";
 import FaqJsonLd from "../../components/FaqJsonLd";
 import type { FaqItem } from "../../components/faqData";
 import ToolWorkbench from "../../components/ToolWorkbench";
@@ -22,7 +22,7 @@ function RailAd({ side }: { side: 'left' | 'right' }) {
   );
 }
 
-export const revalidate = 604800;
+export const revalidate = 2592000;
 
 const faqs: FaqItem[] = [
   {
@@ -237,7 +237,7 @@ export default async function GrokWatermarkCleanerPage() {
             {subtitle}
           </p>
           <div className="flex items-center justify-center gap-1 text-sm text-slate-500">
-            <span className="text-yellow-500">★★★★★</span>
+            <span className="text-yellow-500">?????</span>
             <span>4.9</span>
             <span>·</span>
             <span>Free</span>

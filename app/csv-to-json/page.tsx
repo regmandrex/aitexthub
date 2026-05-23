@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next';
+import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { JsonLd } from '@/components/JsonLd';
 import FAQSection from '@/components/FAQSection';
@@ -12,7 +12,7 @@ import { getToolBySlug } from '@/lib/tools/registry';
 import { siteUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 
-export const revalidate = 604800;
+export const revalidate = 2592000;
 const toolSlug = 'csv-to-json';
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -108,12 +108,12 @@ const faqs: FaqItem[] = [
   {
     category: 'Use Cases',
     question: 'How do I convert CSV exported from Excel to JSON?',
-    answer: `Excel CSV exports have some quirks to watch for. Excel uses UTF-8 with BOM (byte order mark) — a hidden three-byte sequence at the start of the file. Most JSON converters handle this, but if you see garbled characters at the start of your first key name, strip the BOM first. Excel also defaults to comma delimiters on most systems, but uses semicolons on some European locales where the comma is the decimal separator (e.g., German Excel: 1.234,56 uses semicolons as field delimiters). Our converter auto-detects the delimiter, but you can manually set it to semicolon if the result looks like all columns merged into one. Date fields exported from Excel are formatted as locale-specific strings (e.g., "4/18/2026" or "18.04.2026") — these become JSON strings, not Date objects. If you need ISO 8601 dates in your JSON, post-process the output: transform "4/18/2026" → "2026-04-18". Number formatting: Excel sometimes exports numbers with commas (1,234.56) — if your locale uses commas in numbers, these may parse as strings rather than numbers in the converted JSON. Paste the Excel CSV directly into our tool or upload the .csv file for instant conversion.`,
+    answer: `Excel CSV exports have some quirks to watch for. Excel uses UTF-8 with BOM (byte order mark) — a hidden three-byte sequence at the start of the file. Most JSON converters handle this, but if you see garbled characters at the start of your first key name, strip the BOM first. Excel also defaults to comma delimiters on most systems, but uses semicolons on some European locales where the comma is the decimal separator (e.g., German Excel: 1.234,56 uses semicolons as field delimiters). Our converter auto-detects the delimiter, but you can manually set it to semicolon if the result looks like all columns merged into one. Date fields exported from Excel are formatted as locale-specific strings (e.g., "4/18/2026" or "18.04.2026") — these become JSON strings, not Date objects. If you need ISO 8601 dates in your JSON, post-process the output: transform "4/18/2026" ? "2026-04-18". Number formatting: Excel sometimes exports numbers with commas (1,234.56) — if your locale uses commas in numbers, these may parse as strings rather than numbers in the converted JSON. Paste the Excel CSV directly into our tool or upload the .csv file for instant conversion.`,
   },
   {
     category: 'Use Cases',
     question: 'How do I convert Google Sheets data to JSON?',
-    answer: `Google Sheets provides several paths to CSV and JSON. Direct CSV export: File → Download → Comma Separated Values (.csv) exports the active sheet. This creates a standard comma-delimited UTF-8 file. Paste into our tool or upload it for instant JSON conversion. Published sheet as CSV: If the sheet is published (File → Share → Publish to web), you can access it as CSV via URL: https://docs.google.com/spreadsheets/d/SHEET_ID/export?format=csv&gid=SHEET_GID. This URL can be fetched programmatically. Sheets API: For automated workflows, the Google Sheets API v4 returns data in JSON format directly — useful if you need to keep JSON in sync with a sheet without manual exports. IMPORTDATA formula: You can embed CSV data from a URL into another sheet using =IMPORTDATA(url). For our converter, the simplest path is File → Download → CSV, then paste the content into the input area. For sheets with special characters or international text, ensure the file is saved as UTF-8 — Google Sheets exports UTF-8 by default, so this is rarely an issue.`,
+    answer: `Google Sheets provides several paths to CSV and JSON. Direct CSV export: File ? Download ? Comma Separated Values (.csv) exports the active sheet. This creates a standard comma-delimited UTF-8 file. Paste into our tool or upload it for instant JSON conversion. Published sheet as CSV: If the sheet is published (File ? Share ? Publish to web), you can access it as CSV via URL: https://docs.google.com/spreadsheets/d/SHEET_ID/export?format=csv&gid=SHEET_GID. This URL can be fetched programmatically. Sheets API: For automated workflows, the Google Sheets API v4 returns data in JSON format directly — useful if you need to keep JSON in sync with a sheet without manual exports. IMPORTDATA formula: You can embed CSV data from a URL into another sheet using =IMPORTDATA(url). For our converter, the simplest path is File ? Download ? CSV, then paste the content into the input area. For sheets with special characters or international text, ensure the file is saved as UTF-8 — Google Sheets exports UTF-8 by default, so this is rarely an issue.`,
   },
   {
     category: 'Technical',
@@ -128,7 +128,7 @@ const faqs: FaqItem[] = [
   {
     category: 'Technical',
     question: 'Can I convert CSV to JSON with multiple sheets or multiple files?',
-    answer: `CSV format is inherently single-table — one file, one sheet. For multi-sheet data, you need to handle each sheet separately. Excel multi-sheet to multiple JSON: export each sheet as a separate CSV (right-click sheet tab → Move or Copy → check "Create a copy" if needed, then File → Download → CSV for each), then convert each CSV to its own JSON array. You can then combine them: { "customers": [...], "orders": [...], "products": [...] }. If your multi-sheet workbook represents related data (e.g., orders sheet + order_items sheet), consider the nested JSON approach after combining: match orders by ID to their items array to produce a hierarchical JSON structure. Batch conversion in code: if you have many CSV files to convert, use Node.js with Papa Parse: const files = fs.readdirSync('./csvs').filter(f => f.endsWith('.csv')); files.forEach(file => { const csv = fs.readFileSync(\`./csvs/\${file}\`, 'utf8'); const {data} = Papa.parse(csv, {header: true, dynamicTyping: true}); fs.writeFileSync(\`./json/\${file.replace('.csv', '.json')}\`, JSON.stringify(data, null, 2)); }). Our browser tool handles one file at a time — for batch processing, the scripting approach is more efficient.`,
+    answer: `CSV format is inherently single-table — one file, one sheet. For multi-sheet data, you need to handle each sheet separately. Excel multi-sheet to multiple JSON: export each sheet as a separate CSV (right-click sheet tab ? Move or Copy ? check "Create a copy" if needed, then File ? Download ? CSV for each), then convert each CSV to its own JSON array. You can then combine them: { "customers": [...], "orders": [...], "products": [...] }. If your multi-sheet workbook represents related data (e.g., orders sheet + order_items sheet), consider the nested JSON approach after combining: match orders by ID to their items array to produce a hierarchical JSON structure. Batch conversion in code: if you have many CSV files to convert, use Node.js with Papa Parse: const files = fs.readdirSync('./csvs').filter(f => f.endsWith('.csv')); files.forEach(file => { const csv = fs.readFileSync(\`./csvs/\${file}\`, 'utf8'); const {data} = Papa.parse(csv, {header: true, dynamicTyping: true}); fs.writeFileSync(\`./json/\${file.replace('.csv', '.json')}\`, JSON.stringify(data, null, 2)); }). Our browser tool handles one file at a time — for batch processing, the scripting approach is more efficient.`,
   },
   {
     category: 'Use Cases',
@@ -183,7 +183,7 @@ const writeUp = (
       Two of the most common CSV to JSON use cases are database seeding and data migration. For database seeding: define initial data in a spreadsheet (easily editable by the team), export to CSV, convert to JSON with our tool, and use the JSON array to seed the database — either directly as a MongoDB insertMany() argument, as a JSON file for mongoimport, as rows for a PostgreSQL COPY command (via further transformation), or as test fixtures in your testing framework.
     </p>
     <p>
-      For data migration: export records from the source system as CSV, convert to JSON, then import using the target system's API or import tools. This CSV → JSON → API/Database pattern appears in virtually every system migration project. The conversion step can be manual (using our tool) for one-time migrations, or automated (using Papa Parse, pandas, or csvtojson) for recurring data feeds.
+      For data migration: export records from the source system as CSV, convert to JSON, then import using the target system's API or import tools. This CSV ? JSON ? API/Database pattern appears in virtually every system migration project. The conversion step can be manual (using our tool) for one-time migrations, or automated (using Papa Parse, pandas, or csvtojson) for recurring data feeds.
     </p>
 
     <h2>CSV to JSON in Different Programming Environments</h2>
@@ -201,7 +201,7 @@ const writeUp = (
       Our CSV to JSON converter processes all data locally in your browser. No CSV content is transmitted to our servers. This makes it safe for converting sensitive data: customer records, financial data, health information, proprietary business data, or any information that should not be uploaded to third-party services. The browser's JavaScript engine handles the parsing and conversion entirely on your device. When you close the tab, all data is cleared from memory.
     </p>
     <p>
-      This privacy-by-design approach distinguishes our tool from server-side converters that upload your data for processing. You can verify the privacy claim: open browser Developer Tools → Network tab → paste CSV and click Convert. No network requests will be made. The conversion is purely local.
+      This privacy-by-design approach distinguishes our tool from server-side converters that upload your data for processing. You can verify the privacy claim: open browser Developer Tools ? Network tab ? paste CSV and click Convert. No network requests will be made. The conversion is purely local.
     </p>
 
     <h2>CSV File Format Deep Dive: Headers, Quoting, and Encoding</h2>
@@ -212,7 +212,7 @@ const writeUp = (
       Quoting rules are often misunderstood. Fields must be wrapped in double-quotes if they contain the delimiter character (a comma in standard CSV), a double-quote character, or a newline. A double-quote inside a quoted field is escaped by doubling it: the CSV value <code>He said ""hello""</code> represents the string <code>He said "hello"</code> in JSON. Parsers that do not handle this correctly will produce malformed JSON with dangling quote marks.
     </p>
     <p>
-      Character encoding is another frequent source of problems. Modern CSV files should be UTF-8 encoded. Excel on Windows historically saved CSV files in the system locale encoding (Windows-1252 for Western European locales) which looks identical to UTF-8 for ASCII characters but differs for accented characters like é, ü, ñ. If your converted JSON shows garbled characters for accented letters, re-save your CSV as UTF-8 from Excel (Save As → CSV UTF-8 (Comma delimited)) before converting. Google Sheets always exports UTF-8, so Sheets exports are safer for international content.
+      Character encoding is another frequent source of problems. Modern CSV files should be UTF-8 encoded. Excel on Windows historically saved CSV files in the system locale encoding (Windows-1252 for Western European locales) which looks identical to UTF-8 for ASCII characters but differs for accented characters like é, ü, ñ. If your converted JSON shows garbled characters for accented letters, re-save your CSV as UTF-8 from Excel (Save As ? CSV UTF-8 (Comma delimited)) before converting. Google Sheets always exports UTF-8, so Sheets exports are safer for international content.
     </p>
     <p>
       Empty fields deserve special attention. An empty field in a CSV row (two consecutive delimiters: <code>a,,c</code>) becomes either a null value or an empty string in JSON depending on the converter's configuration. Our tool converts empty fields to null by default, which is typically more useful than an empty string for downstream processing — it allows null checks rather than empty-string checks in your application code.
@@ -223,7 +223,7 @@ const writeUp = (
       Excel to JSON conversion is one of the most common data transformation tasks for developers, analysts, and data engineers. The standard workflow uses CSV as an intermediate format since Excel has no native JSON export. Here is the complete process:
     </p>
     <p>
-      Open your Excel workbook and select the sheet you want to convert. Clean up the data first: ensure the first row contains clean column headers (no merged cells, no multi-row headers), remove any summary rows at the bottom of the data (totals, averages) that you do not want in your JSON, and remove any completely empty rows in the middle of your data. Go to File → Save As, choose CSV UTF-8 (Comma delimited) as the format, and save. This exports only the active sheet.
+      Open your Excel workbook and select the sheet you want to convert. Clean up the data first: ensure the first row contains clean column headers (no merged cells, no multi-row headers), remove any summary rows at the bottom of the data (totals, averages) that you do not want in your JSON, and remove any completely empty rows in the middle of your data. Go to File ? Save As, choose CSV UTF-8 (Comma delimited) as the format, and save. This exports only the active sheet.
     </p>
     <p>
       If your Excel file has multiple sheets that all need to be in your final JSON, repeat the export process for each sheet, naming each CSV file descriptively (customers.csv, orders.csv, products.csv). Then convert each CSV to JSON separately using our tool. To combine them into a single JSON object, wrap each array: <code>&#123; "customers": [...], "orders": [...], "products": [...] &#125;</code> — paste this structure into a text editor and fill in each array with the tool's output.
@@ -285,7 +285,7 @@ const writeUp = (
       Error: columns shifted starting from row N. Symptom: rows after a certain point have values in the wrong properties. Cause: a cell in the CSV contains an unquoted comma, splitting that cell across two columns and shifting all subsequent columns. Fix: open the CSV in a text editor and find the row where the shift starts, then identify the cell with an unquoted comma and add quotation marks around it.
     </p>
     <p>
-      Error: garbled characters (é shows as Ã©). Symptom: accented or special characters appear as garbled multi-character sequences. Cause: the CSV is Windows-1252 encoded but was interpreted as UTF-8 (or vice versa). Fix: re-save the CSV as UTF-8 in Notepad (Windows) using Save As → Encoding: UTF-8, or in Excel using Save As → CSV UTF-8.
+      Error: garbled characters (é shows as Ã©). Symptom: accented or special characters appear as garbled multi-character sequences. Cause: the CSV is Windows-1252 encoded but was interpreted as UTF-8 (or vice versa). Fix: re-save the CSV as UTF-8 in Notepad (Windows) using Save As ? Encoding: UTF-8, or in Excel using Save As ? CSV UTF-8.
     </p>
     <p>
       Error: first property name has extra characters. Symptom: the first JSON key looks like <code>&#xFEFF;id</code> with a strange prefix. Cause: the CSV has a UTF-8 BOM (Byte Order Mark) — a hidden three-byte sequence at the start of the file that Excel adds to UTF-8 CSVs. Fix: use a BOM-stripped UTF-8 export, or strip the BOM with a text editor (VS Code can show and remove the BOM via the encoding selector in the bottom status bar).
@@ -327,7 +327,7 @@ const writeUp = (
       Avoid spaces in column names: a CSV header "First Name" becomes the JSON key "First Name". Accessing it in JavaScript requires bracket notation — <code>row["First Name"]</code> — instead of the more convenient dot notation — <code>row.firstName</code>. Prefer camelCase (firstName) or snake_case (first_name) depending on your target language's conventions. JavaScript and JSON conventionally use camelCase; Python and databases conventionally use snake_case.
     </p>
     <p>
-      Avoid special characters: parentheses, slashes, hyphens, and dots in column names create problematic JSON keys. "Revenue (USD)" becomes a key that must always use bracket notation in JavaScript. "Date/Time" would need to be accessed as <code>row["Date/Time"]</code>. Replace special characters with underscores or remove them: "Revenue (USD)" → "revenue_usd", "Date/Time" → "datetime".
+      Avoid special characters: parentheses, slashes, hyphens, and dots in column names create problematic JSON keys. "Revenue (USD)" becomes a key that must always use bracket notation in JavaScript. "Date/Time" would need to be accessed as <code>row["Date/Time"]</code>. Replace special characters with underscores or remove them: "Revenue (USD)" ? "revenue_usd", "Date/Time" ? "datetime".
     </p>
     <p>
       Avoid duplicate column names: CSV allows duplicate column names (two columns both named "Name"), but JSON cannot have duplicate property keys — the second value overwrites the first. If your CSV has duplicate headers, rename them before converting: Name_1, Name_2.

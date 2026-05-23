@@ -1,4 +1,4 @@
-﻿import Link from 'next/link';
+import Link from 'next/link';
 import { buildArticleMeta } from '@/lib/seo-meta';
 import { JsonLd } from '@/components/JsonLd';
 import { blogPostingSchema } from '@/lib/schema/blog';
@@ -13,7 +13,7 @@ const headline =
 const description =
   'Master Excel data cleaning with TRIM, SUBSTITUTE, and filtering techniques to eliminate unwanted spaces and improve accuracy.';
 
-export const revalidate = 604800;
+export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({
@@ -141,8 +141,8 @@ export default function TheBestWaysToRemoveBlankSpacesInExcelPage() {
         </h2>
         <p className="text-slate-700">
           For repeated imports (e.g. weekly reports), use Power Query. After
-          loading your data, select the columns with text, go to Transform →
-          Format → Trim. You can also add a custom column with{' '}
+          loading your data, select the columns with text, go to Transform ?
+          Format ? Trim. You can also add a custom column with{' '}
           <code>Text.Trim([ColumnName])</code> or replace values to handle
           non-breaking spaces. Then load to the worksheet or data model. Every
           refresh will re-apply the trim step so your data stays clean

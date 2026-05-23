@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from 'react';
 import ToolTextArea from './ToolTextArea';
+import HumanizerUpsellCard from '../HumanizerUpsellCard';
 import { extractNumbers, type NumberExtractOptions } from '@/lib/number-extract';
 
 export function ExtractNumbersFromTextTool() {

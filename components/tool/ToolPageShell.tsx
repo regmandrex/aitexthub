@@ -54,8 +54,8 @@ export function ToolPageShell({ tool, ui, related, children }: ToolPageShellProp
           </div>
         </section>
 
-        <div className="mt-6 -mx-4 md:mx-0 md:rounded-xl md:overflow-hidden">
-          <ProFunnelBanner variant="inline" />
+        <div className="mt-4 -mx-4 md:mx-0">
+          <ProFunnelBanner />
         </div>
 
         <section className="relative w-full mt-6">

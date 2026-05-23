@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import ToolTextArea from './ToolTextArea';
+import HumanizerUpsellCard from '../HumanizerUpsellCard';
 import { encodeHtmlEntities } from '@/lib/encoding';
 
 export function TextToHtmlEntitiesTool() {
@@ -103,6 +104,7 @@ export function TextToHtmlEntitiesTool() {
 
       <p className="text-xs text-slate-600">Encodes characters like &amp;, &lt;, &gt;, and quotes for safe HTML markup.</p>
       <p className="text-xs text-slate-500">Works only on text you provide. No data is stored.</p>
+      {output && <HumanizerUpsellCard />}
     </div>
   );
 }

@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next';
+import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { JsonLd } from '@/components/JsonLd';
 import FAQSection from '@/components/FAQSection';
@@ -12,7 +12,7 @@ import { getToolBySlug } from '@/lib/tools/registry';
 import { siteUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 
-export const revalidate = 604800;
+export const revalidate = 2592000;
 
 const toolSlug = 'text-to-hex';
 
@@ -285,7 +285,7 @@ const writeUp = (
               <td className="border border-slate-300 px-4 py-2 font-mono">C3 A9</td>
             </tr>
             <tr>
-              <td className="border border-slate-300 px-4 py-2 font-mono">🚀</td>
+              <td className="border border-slate-300 px-4 py-2 font-mono">??</td>
               <td className="border border-slate-300 px-4 py-2">128640 (0x1F680)</td>
               <td className="border border-slate-300 px-4 py-2">4 bytes: 0xF0 0x9F 0x98 0x80</td>
               <td className="border border-slate-300 px-4 py-2 font-mono">F0 9F 98 80</td>

@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import ToolTextArea from './ToolTextArea';
+import HumanizerUpsellCard from '../HumanizerUpsellCard';
 import { decodeHtmlEntities } from '@/lib/encoding';
 
 export function HtmlEntitiesToTextTool() {
@@ -90,6 +91,7 @@ export function HtmlEntitiesToTextTool() {
       </div>
 
       <p className="text-xs text-slate-500">Works only on text you provide. No data is stored.</p>
+      {output && <HumanizerUpsellCard />}
     </div>
   );
 }

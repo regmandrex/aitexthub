@@ -219,6 +219,7 @@ export async function ToolPageRenderer({ slug }: ToolPageRendererProps) {
   // Get UI component - try slug first (for ChatGPT tools and others with specific components)
   // then fall back to ui.kind (for generic tools)
   const FAMILY_UI_KINDS = new Set(['watermark-remover', 'watermark-detector', 'ai-detector', 'ai-humanizer', 'rank-tracker']);
+  const hasSlugComponent = slug in uiComponentMap;
   let UIComponent = uiComponentMap[slug];
   if (!UIComponent && tool.ui?.kind) {
     UIComponent = uiComponentMap[tool.ui.kind];
@@ -241,7 +242,7 @@ export async function ToolPageRenderer({ slug }: ToolPageRendererProps) {
 
   const generated = getToolContent(slug);
   const generatedFaqs = generated ? [...generated.faqs, ...getSeoExpansionFaqs(tool, generated.faqs.length)] : [];
-  const familyUi =
+  const familyUi = hasSlugComponent ? undefined :
     tool.ui.kind === 'rank-tracker' ? (
       <RankTrackerTool modelName={tool.model} />
     ) : tool.ui.kind === 'ai-detector' ? (

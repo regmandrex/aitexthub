@@ -1,4 +1,4 @@
-﻿import Link from 'next/link';
+import Link from 'next/link';
 import { buildArticleMeta } from '@/lib/seo-meta';
 import { JsonLd } from '@/components/JsonLd';
 import { blogPostingSchema } from '@/lib/schema/blog';
@@ -11,7 +11,7 @@ const headline = 'Best ChatGPT Cleanup Tools for Cleaner, Faster Publishing';
 const description =
   'Compare real ChatGPT cleanup tools, what they must remove under the hood, and how to choose a stack that protects SEO, UX, and performance.';
 
-export const revalidate = 604800;
+export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({
@@ -51,10 +51,10 @@ export default function BestChatGPTCleanupToolsPage() {
           make ChatGPT text behave badly in editors and CMSs. A true cleanup tool operates at the character and structure layer:
         </p>
         <ul className="list-disc pl-5 text-slate-700">
-          <li>Removes zero-width and non-breaking spaces that sneak in during copy‑paste.</li>
+          <li>Removes zero-width and non-breaking spaces that sneak in during copy-paste.</li>
           <li>Normalizes multiple spaces, stray tabs, and erratic line breaks without flattening paragraphs.</li>
           <li>Keeps your wording and keywords intact instead of rewriting them by default.</li>
-          <li>Produces paste‑ready text that does not break blocks in WordPress, Google Docs, or email builders.</li>
+          <li>Produces paste-ready text that does not break blocks in WordPress, Google Docs, or email builders.</li>
         </ul>
         <p className="text-slate-700">
           On this site, that core job is handled by the{' '}
@@ -78,7 +78,7 @@ export default function BestChatGPTCleanupToolsPage() {
             <p className="font-semibold text-slate-900">2. ChatGPT Space Remover</p>
             <p className="mt-2">
               Use <Link href="/chatgpt-space-remover">ChatGPT Space Remover</Link> when spacing itself is broken—multiple spaces, ragged
-              paragraphs, and copy‑paste artifacts from PDFs or chat windows. It leaves wording untouched and focuses on making text predictable.
+              paragraphs, and copy-paste artifacts from PDFs or chat windows. It leaves wording untouched and focuses on making text predictable.
             </p>
           </div>
           <div className="rounded-2xl border border-slate-200 bg-white/70 p-5 text-sm text-slate-700 shadow-sm">
@@ -110,13 +110,13 @@ export default function BestChatGPTCleanupToolsPage() {
             whitespace.
           </li>
           <li>
-            For high‑value pages, scan with the{' '}
+            For high-value pages, scan with the{' '}
             <Link href="/invisible-character-detector">Invisible Character Detector</Link> to catch any remaining Unicode artifacts.
           </li>
           <li>Paste the cleaned text into your CMS and apply headings, links, and images natively.</li>
         </ol>
         <p className="text-slate-700">
-          This stack is fast enough for daily publishing and strict enough for SEO, performance, and long‑term maintainability.
+          This stack is fast enough for daily publishing and strict enough for SEO, performance, and long-term maintainability.
         </p>
       </section>
 
@@ -142,7 +142,7 @@ export default function BestChatGPTCleanupToolsPage() {
         </p>
         <ul className="list-disc pl-5 text-slate-700">
           <li>
-            A cleaner should talk about whitespace, Unicode, line breaks, and copy‑paste artifacts.
+            A cleaner should talk about whitespace, Unicode, line breaks, and copy-paste artifacts.
           </li>
           <li>
             A rewriter will emphasize “humanizing,” synonyms, tone shifts, and rewriting paragraphs.
@@ -154,12 +154,12 @@ export default function BestChatGPTCleanupToolsPage() {
       </section>
 
       <section className="mt-10 space-y-4">
-        <h2 className="text-2xl font-semibold text-slate-900">Checklist: clean draft → publish-ready</h2>
+        <h2 className="text-2xl font-semibold text-slate-900">Checklist: clean draft ? publish-ready</h2>
         <ul className="list-disc pl-5 text-slate-700">
           <li>Paragraphs are real paragraphs (not chat window wraps).</li>
           <li>Bullets and numbering are consistent (no drifting indentation).</li>
           <li>No trailing spaces, double spaces, or odd gaps around punctuation.</li>
-          <li>Hidden characters have been checked on high‑value pages.</li>
+          <li>Hidden characters have been checked on high-value pages.</li>
           <li>Headings and links are applied in the destination editor (CMS/Docs/Mail) after cleaning.</li>
         </ul>
       </section>

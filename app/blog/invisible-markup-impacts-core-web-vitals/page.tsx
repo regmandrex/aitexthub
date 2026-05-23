@@ -1,4 +1,4 @@
-﻿import Link from 'next/link';
+import Link from 'next/link';
 import { buildArticleMeta } from '@/lib/seo-meta';
 import { JsonLd } from '@/components/JsonLd';
 import { blogPostingSchema } from '@/lib/schema/blog';
@@ -11,7 +11,7 @@ const headline = 'How Invisible Markup Impacts Core Web Vitals (And How to Fix I
 const description =
   'Invisible Unicode and malformed whitespace can inflate DOM complexity, cause layout shifts, and degrade LCP/CLS/INP. Learn how to detect and fix it.';
 
-export const revalidate = 604800;
+export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({
@@ -181,7 +181,7 @@ export default function InvisibleMarkupCoreWebVitalsPage() {
               and test before republishing.
             </li>
             <li>
-              <strong>Use a clean publishing workflow.</strong> AI → Clean → Code Editor → Visual Editor. Avoid AI → Visual Editor directly.
+              <strong>Use a clean publishing workflow.</strong> AI ? Clean ? Code Editor ? Visual Editor. Avoid AI ? Visual Editor directly.
             </li>
             <li>
               <strong>Monitor Core Web Vitals after cleaning.</strong> LCP often improves, CLS stabilizes, and INP becomes smoother.

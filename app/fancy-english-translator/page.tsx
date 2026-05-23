@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next';
+import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { JsonLd } from '@/components/JsonLd';
 import FAQSection from '@/components/FAQSection';
@@ -12,7 +12,7 @@ import { siteUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
 
-export const revalidate = 604800;
+export const revalidate = 2592000;
 
 const toolSlug = 'fancy-english-translator';
 
@@ -32,7 +32,7 @@ function createWriteUp() {
         <p>This free fancy English translator runs in your browser: you enter your text, pick the style you want, and copy the result. No sign-up is required, and your text is not sent to a server. Fancy English can mean two things: (1) visual style—Unicode characters that look like script, bold, or decorative type; or (2) wording style—rephrasing plain English into more formal, ornate, or archaic-sounding language. Some tools do both; others focus on one. In this guide we explain what fancy English is, how to use a fancy English translator step by step, when to use it for social media and design, and how to get the best results for fancy text and stylish English.</p>
 
         <h2>What Is Fancy English?</h2>
-        <p>Fancy English can refer to the look of the text (fancy fonts and Unicode) or the choice of words (fancy vocabulary and phrasing). Fancy fonts use Unicode characters that resemble script, calligraphy, or decorative type—so "Hello" might appear as 𝒯𝒽ℯ 𝒻𝒶𝓃𝒸𝓎 𝓋ℯ𝓇𝓈𝒾ℴ𝓃 or similar, depending on the style. Fancy wording means replacing plain words with more formal, ornate, or old-fashioned equivalents: for example, "very good" might become "exceedingly fine" or "splendid." A fancy English translator may offer one or both: style-only (same words, different characters) or wording-only (same meaning, fancier words), or a combination.</p>
+        <p>Fancy English can refer to the look of the text (fancy fonts and Unicode) or the choice of words (fancy vocabulary and phrasing). Fancy fonts use Unicode characters that resemble script, calligraphy, or decorative type—so "Hello" might appear as ????e ?????????? ??e??????o?? or similar, depending on the style. Fancy wording means replacing plain words with more formal, ornate, or old-fashioned equivalents: for example, "very good" might become "exceedingly fine" or "splendid." A fancy English translator may offer one or both: style-only (same words, different characters) or wording-only (same meaning, fancier words), or a combination.</p>
         <p>Fancy text is popular for social media bios, Instagram captions, YouTube titles, and usernames where you want text to stand out. Fancy wording is useful for invitations, speeches, or creative writing where you want a more elevated tone. Not every tool does both; check the description to see whether you get fancy characters, fancy vocabulary, or both.</p>
 
         <h2>How to Use a Fancy English Translator</h2>
@@ -45,7 +45,7 @@ function createWriteUp() {
         <p>If the tool focuses on fancy wording, it rephrases your sentence into more formal or ornate English. That is useful for invitations ("We request the pleasure of your company"), speeches, or creative writing. The result keeps the same meaning but uses fancier synonyms and sentence structure. Some tools let you choose intensity (slightly fancy vs very formal). Use fancy wording when you want to sound elegant or old-fashioned; avoid overdoing it in casual or professional contexts where plain English is preferred.</p>
 
         <h2>Unicode and Fancy Fonts: How It Works</h2>
-        <p>Fancy font generators use Unicode characters that look like different typefaces. For example, mathematical alphanumeric symbols and script characters exist in Unicode, so "A" can be displayed as 𝐀, 𝐴, or 𝒜. The translator maps each letter of your input to a corresponding fancy character and outputs the new string. When you copy it, you are copying those Unicode characters—so the fancy look appears wherever the font supports them. Some apps and websites have limited Unicode support, so the same text might look fancy in one place and like boxes or plain text in another.</p>
+        <p>Fancy font generators use Unicode characters that look like different typefaces. For example, mathematical alphanumeric symbols and script characters exist in Unicode, so "A" can be displayed as ??, ??, or ??. The translator maps each letter of your input to a corresponding fancy character and outputs the new string. When you copy it, you are copying those Unicode characters—so the fancy look appears wherever the font supports them. Some apps and websites have limited Unicode support, so the same text might look fancy in one place and like boxes or plain text in another.</p>
 
         <h2>When to Use Fancy English</h2>
         <p>Use a fancy English translator when you want to stand out on social media, create a distinctive username or title, or add a formal or decorative tone to a short text. It is ideal for bios, captions, invitations, and creative projects. Avoid using fancy text for long paragraphs (readability suffers) or for formal documents where standard fonts and plain language are expected. For accessibility, ensure important information is also available in plain text.</p>
@@ -87,7 +87,7 @@ function createWriteUp() {
         <p>To build a consistent brand with fancy text, pick one or two fancy styles and use them everywhere: bios, captions, and headers. Do not mix many different Unicode styles in one profile or document, or the result can look cluttered. If you use fancy wording, keep the same level of formality (e.g., always slightly formal vs. very ornate) so your voice is consistent. Save a plain-text version of your brand name and key phrases so you can paste them into forms or systems that do not support fancy characters. When you prepare copy for designers or printers, send clean text—use plain text if the text came from a webpage or email—so they receive consistent, editable content.</p>
 
         <h2>Why Fancy Text Sometimes Breaks or Shows as Boxes</h2>
-        <p>Fancy Unicode text can "break" or display as boxes (□) when the font or app does not support those character ranges. This often happens on older devices, in strict corporate systems, or in apps that use a limited font set. If your fancy text shows as boxes after pasting, try a simpler style (e.g., bold instead of script) or use the text in a different app that supports the Unicode block. Keeping a plain-text backup ensures you never lose the meaning of important content. For platforms that support only basic Latin, stick to fancy wording (same characters, fancier words) instead of fancy fonts so the text remains readable everywhere.</p>
+        <p>Fancy Unicode text can "break" or display as boxes (?) when the font or app does not support those character ranges. This often happens on older devices, in strict corporate systems, or in apps that use a limited font set. If your fancy text shows as boxes after pasting, try a simpler style (e.g., bold instead of script) or use the text in a different app that supports the Unicode block. Keeping a plain-text backup ensures you never lose the meaning of important content. For platforms that support only basic Latin, stick to fancy wording (same characters, fancier words) instead of fancy fonts so the text remains readable everywhere.</p>
 
         <h2>Fancy English Translator for Resumes and Professional Use</h2>
         <p>In most professional contexts—resumes, cover letters, formal emails—plain English and standard fonts are preferred. Fancy Unicode text is usually not appropriate for job applications or business correspondence because it can look unprofessional and may not display correctly in applicant tracking systems. Fancy wording (formal phrasing) can be used sparingly in cover letters if it fits the tone, but avoid ornate language that sounds archaic or unclear. Use the fancy English translator for personal branding, social profiles, and creative projects rather than for formal career documents. If you need to clean a resume or document that was copied from the web, use plain text so the formatting is consistent and free of hidden characters.</p>

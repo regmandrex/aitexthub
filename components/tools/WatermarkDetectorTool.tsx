@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from 'react';
 import ToolTextArea from './ToolTextArea';
+import HumanizerUpsellCard from '../HumanizerUpsellCard';
 import { analyzeWatermarkSignals } from '@/lib/tools/watermarkSignals';
 
 type WatermarkDetectorToolProps = {

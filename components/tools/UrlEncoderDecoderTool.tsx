@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import ToolTextArea from './ToolTextArea';
+import HumanizerUpsellCard from '../HumanizerUpsellCard';
 
 type EncodeMode = 'component' | 'full';
 
@@ -103,6 +104,7 @@ export function UrlEncoderDecoderTool() {
           Clear
         </button>
       </div>
+      {output && <HumanizerUpsellCard />}
     </div>
   );
 }

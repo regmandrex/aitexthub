@@ -51,8 +51,9 @@ export default function AccountDrawer({
 
       <aside
         className={`fixed right-0 top-0 z-[70] flex h-full w-[88vw] max-w-md flex-col bg-white shadow-2xl transition-transform ${
-          open ? 'translate-x-0' : 'translate-x-full'
+          open ? 'translate-x-0' : 'translate-x-full pointer-events-none'
         }`}
+        style={{ visibility: open ? 'visible' : 'hidden' }}
         role="dialog"
         aria-label="Account"
         aria-hidden={!open}

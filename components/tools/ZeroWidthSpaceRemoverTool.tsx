@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import ToolTextArea from './ToolTextArea';
+import HumanizerUpsellCard from '../HumanizerUpsellCard';
 
 const ZERO_WIDTH_REGEX = /[\u200B\u200C\u200D\u2060\uFEFF\u200E\u200F]/g;
 
@@ -70,6 +71,7 @@ export function ZeroWidthSpaceRemoverTool() {
           Clear
         </button>
       </div>
+      {output && <HumanizerUpsellCard />}
     </div>
   );
 }

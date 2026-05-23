@@ -1,4 +1,4 @@
-﻿import Link from 'next/link';
+import Link from 'next/link';
 import { buildArticleMeta } from '@/lib/seo-meta';
 import { JsonLd } from '@/components/JsonLd';
 import { blogPostingSchema } from '@/lib/schema/blog';
@@ -11,7 +11,7 @@ const headline = 'How to Clean ChatGPT Text on Android';
 const description =
   'A mobile-first workflow to clean ChatGPT text on Android using AI space removal, invisible character detection, and safe copy-paste into apps.';
 
-export const revalidate = 604800;
+export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({
@@ -44,15 +44,15 @@ export default function HowToCleanChatGPTTextOnAndroidPage() {
       </div>
 
       <section className="mt-10 space-y-4">
-        <h2 className="text-2xl font-semibold text-slate-900">Why Android copy‑paste makes ChatGPT text messy</h2>
+        <h2 className="text-2xl font-semibold text-slate-900">Why Android copy-paste makes ChatGPT text messy</h2>
         <p className="text-slate-700">
           On Android, text flows through multiple layers: the browser or ChatGPT app, the system clipboard, your keyboard, and finally the target
           app. Each hop can add:
         </p>
         <ul className="list-disc pl-5 text-slate-700">
           <li>Extra line breaks from narrow chat windows.</li>
-          <li>Non‑breaking spaces or zero‑width characters copied from the web view.</li>
-          <li>Mixed markdown and rich‑text formatting that some apps cannot interpret cleanly.</li>
+          <li>Non-breaking spaces or zero-width characters copied from the web view.</li>
+          <li>Mixed markdown and rich-text formatting that some apps cannot interpret cleanly.</li>
         </ul>
         <p className="text-slate-700">
           That is why a “clean first, then paste” workflow using web tools like the{' '}
@@ -61,7 +61,7 @@ export default function HowToCleanChatGPTTextOnAndroidPage() {
       </section>
 
       <section className="mt-10 space-y-4">
-        <h2 className="text-2xl font-semibold text-slate-900">Step‑by‑step Android cleaning workflow</h2>
+        <h2 className="text-2xl font-semibold text-slate-900">Step-by-step Android cleaning workflow</h2>
         <ol className="list-decimal pl-5 text-slate-700 space-y-2">
           <li>Generate your draft in the ChatGPT app or browser on Android.</li>
           <li>Copy the full answer.</li>
@@ -99,7 +99,7 @@ export default function HowToCleanChatGPTTextOnAndroidPage() {
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">When to use Invisible Character Detector</h2>
         <p className="text-slate-700">
-          For high‑stakes content—landing pages, app descriptions, or templates—add one more step: scan the cleaned text with the{' '}
+          For high-stakes content—landing pages, app descriptions, or templates—add one more step: scan the cleaned text with the{' '}
           <Link href="/invisible-character-detector">Invisible Character Detector</Link> on your phone&apos;s browser.
         </p>
         <ul className="list-disc pl-5 text-slate-700">

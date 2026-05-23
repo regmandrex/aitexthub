@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import ToolTextArea from './ToolTextArea';
+import HumanizerUpsellCard from '../HumanizerUpsellCard';
 
 const CASE_OPTIONS: Array<{ value: 'upper' | 'lower' | 'title' | 'sentence' | 'toggle'; label: string }> = [
   { value: 'upper', label: 'UPPERCASE' },
@@ -136,6 +137,7 @@ export function CaseConverterTool() {
           Clear
         </button>
       </div>
+      {output && <HumanizerUpsellCard />}
     </div>
   );
 }

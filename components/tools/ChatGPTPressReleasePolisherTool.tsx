@@ -1,27 +1,17 @@
 "use client";
-
 import { GenericTextProcessorTool } from './GenericTextProcessorTool';
+import { callAiTool } from '@/lib/tools/aiToolApi';
 
 export function ChatGPTPressReleasePolisherTool() {
-  const processText = (text: string): string => {
-    if (!text.trim()) {
-      return '';
-    }
-    
-    const words = text.trim().split(/\s+/).length;
-    const sentences = text.split(/[.!?]+/).filter(s => s.trim().length > 0).length;
-    const paragraphs = text.split(/\n\s*\n/).filter(p => p.trim().length > 0).length;
-    
-    return `Text Analysis:\n\n• Length: ${text.length} characters\n• Words: ${words}\n• Sentences: ${sentences}\n• Paragraphs: ${paragraphs}\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\nNote: This tool is currently in development. Polished press release will appear here once AI integration is complete.`;
-  };
-
   return (
     <GenericTextProcessorTool
-      processText={processText}
-      inputLabel="Press Release to Polish"
+      toolType="rewriter"
+      processText={(text) => callAiTool('press_release_polisher', text)}
+      inputLabel="Press Release"
       outputLabel="Polished Press Release"
-      inputPlaceholder="Paste press release to polish..."
+      inputPlaceholder="Paste your press release here..."
       outputPlaceholder="Polished press release will appear here..."
+      processButtonLabel="Polish Press Release"
     />
   );
 }

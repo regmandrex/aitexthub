@@ -1,4 +1,4 @@
-﻿import Link from 'next/link';
+import Link from 'next/link';
 import { buildArticleMeta } from '@/lib/seo-meta';
 import { JsonLd } from '@/components/JsonLd';
 import { blogPostingSchema } from '@/lib/schema/blog';
@@ -11,7 +11,7 @@ const headline = 'ChatGPT Formatting Fixer for Word and Docs (How to Get Clean, 
 const description =
   'Stop broken spacing, headings, bullets, and PDF export issues: clean invisible Unicode, normalize whitespace, then apply Word/Docs styles natively.';
 
-export const revalidate = 604800;
+export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({

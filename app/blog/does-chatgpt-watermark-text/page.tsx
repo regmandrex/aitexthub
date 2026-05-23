@@ -1,4 +1,4 @@
-﻿import Link from 'next/link';
+import Link from 'next/link';
 import { buildArticleMeta } from '@/lib/seo-meta';
 import { JsonLd } from '@/components/JsonLd';
 import { blogPostingSchema } from '@/lib/schema/blog';
@@ -11,7 +11,7 @@ const headline = 'Does ChatGPT Watermark Text? Here\'s What Actually Happens in 
 const description =
   'Does ChatGPT watermark text? Evidence shows AI-generated text carries hidden signals despite denials. Learn what\'s really embedded and how to detect and remove it.';
 
-export const revalidate = 604800;
+export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({

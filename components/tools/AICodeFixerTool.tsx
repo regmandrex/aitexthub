@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import ToolTextArea from './ToolTextArea';
+import HumanizerUpsellCard from '../HumanizerUpsellCard';
 
 // Code fixing functions
 function fixIndentation(text: string): string {
@@ -263,6 +264,7 @@ export function AICodeFixerTool() {
           {"Clear"}
         </button>
       </div>
+      {output && <HumanizerUpsellCard />}
     </div>
   );
 }

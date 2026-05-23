@@ -1,18 +1,17 @@
 'use client';
-
 import { GenericTextProcessorTool } from './GenericTextProcessorTool';
+import { callAiTool } from '@/lib/tools/aiToolApi';
 
 export function SimlishTranslatorTool() {
   return (
     <GenericTextProcessorTool
-      processText={(text) => (text.trim() ? `Simlish translation — Connect a Simlish phrase API to convert: "${text.trim().slice(0, 40)}..." into The Sims-style language.` : '')}
-      inputLabel="English (or your text)"
+      toolType="translator"
+      processText={(text) => callAiTool('simlish_translator', text)}
+      inputLabel="Normal Text"
       outputLabel="Simlish"
-      inputPlaceholder="Enter text to translate into Simlish..."
+      inputPlaceholder="Enter text to translate to Simlish..."
       outputPlaceholder="Simlish translation will appear here..."
       processButtonLabel="Translate to Simlish"
-      copyButtonLabel="Copy"
-      clearButtonLabel="Clear"
     />
   );
 }

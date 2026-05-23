@@ -1,4 +1,4 @@
-﻿import type { FaqItem } from '@/components/faqData';
+import type { FaqItem } from '@/components/faqData';
 import WatermarkDetectorPage from '@/components/tools/WatermarkDetectorPage';
 import { buildMeta } from '@/lib/seo-meta';
 
@@ -7,7 +7,7 @@ const modelSlug = 'perplexity';
 const faqIntro =
   'This FAQ explains how the Perplexity AI Watermark Detector works, what kinds of text characteristics it inspects, and how its findings should be interpreted. The detector operates independently as a text-only analysis tool and does not interact with Perplexity AI systems.';
 
-export const revalidate = 604800;
+export const revalidate = 2592000;
 
 const faqs: FaqItem[] = [
   {

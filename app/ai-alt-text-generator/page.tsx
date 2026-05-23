@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next';
+import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { JsonLd } from '@/components/JsonLd';
 import FAQSection from '@/components/FAQSection';
@@ -12,7 +12,7 @@ import { siteUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
 
-export const revalidate = 604800;
+export const revalidate = 2592000;
 
 const toolSlug = 'ai-alt-text-generator';
 
@@ -25,7 +25,7 @@ function createWriteUp() {
         <p>Content creators, designers, and site owners use an alt text generator to draft or improve image descriptions. Paste your image description or context, run the generator, and review the result. Always tailor the output to the specific image and context. This tool runs in your browser; your text is not sent to our servers or stored.</p>
 
         <h2>How the AI Alt Text Generator Works</h2>
-        <p>The tool uses your input—such as a description of the image or the surrounding content—to produce short alt text that describes the image clearly and concisely. Good alt text is specific and functional; it tells users what the image shows or why it matters.</p>
+        <p>The tool uses your inputâ€”such as a description of the image or the surrounding contentâ€”to produce short alt text that describes the image clearly and concisely. Good alt text is specific and functional; it tells users what the image shows or why it matters.</p>
 
         <h3>Why Alt Text Matters</h3>
         <p>Alt text makes images accessible to people using screen readers and helps search engines index images. It should be accurate and concise; avoid stuffing keywords or describing decorative images in detail unless needed.</p>
@@ -76,7 +76,7 @@ function createWriteUp() {
         <p>When in doubt, err on the side of human review and clear communication with students, authors, or colleagues rather than relying solely on the tool&apos;s output.</p>
 
         <h2>Step-by-Step: Getting Started With the AI Alt Text Generator</h2>
-        <p>If you are new to the AI Alt Text Generator, start by opening the tool in your browser and reading the short instructions on the page. Prepare a sample of text that is at least a few hundred words if the tool recommends a minimum length. Paste the text into the input area, run the analysis or processing, and review the result. Take note of how the tool presents its output—whether as a score, a label, or suggested edits—and use that as a starting point for your own assessment.</p>
+        <p>If you are new to the AI Alt Text Generator, start by opening the tool in your browser and reading the short instructions on the page. Prepare a sample of text that is at least a few hundred words if the tool recommends a minimum length. Paste the text into the input area, run the analysis or processing, and review the result. Take note of how the tool presents its outputâ€”whether as a score, a label, or suggested editsâ€”and use that as a starting point for your own assessment.</p>
         <p>Run the AI Alt Text Generator on a few different types of content (e.g. clearly human-written, clearly AI-generated, and mixed) to get a sense of how it behaves. That will help you interpret results when you use it on real submissions or drafts. Keep any institutional or organizational guidelines in mind so you use the tool in line with approved practices.</p>
 
         <h3>Academic Integrity and the AI Alt Text Generator</h3>
@@ -125,7 +125,7 @@ function createWriteUp() {
 
         <h2>Getting the Best Results From the AI Alt Text Generator</h2>
         <p>To maximize the usefulness of the AI Alt Text Generator, use it as part of a consistent workflow: run it on drafts or submissions when appropriate, review the results in context, and follow up with human judgment and any required institutional or organizational steps. The tool works best when combined with clear policies, transparent communication, and a commitment to fairness and accuracy in how you use its output.</p>
-        <p>Many users find it helpful to run the AI Alt Text Generator on sample text first—both clearly human-written and clearly AI-generated content—to see how it responds. That calibration helps you interpret results when you use it on real submissions or drafts. Keep in mind that no tool is perfect; use the AI Alt Text Generator as one input among others and always combine it with your own reading and any guidelines from your institution or employer.</p>
+        <p>Many users find it helpful to run the AI Alt Text Generator on sample text firstâ€”both clearly human-written and clearly AI-generated contentâ€”to see how it responds. That calibration helps you interpret results when you use it on real submissions or drafts. Keep in mind that no tool is perfect; use the AI Alt Text Generator as one input among others and always combine it with your own reading and any guidelines from your institution or employer.</p>
         <h3>Recap: When to Use the AI Alt Text Generator</h3>
         <p>Use the AI Alt Text Generator when you need a quick, free check or analysis of text and when you want to keep your content private by processing it locally in your browser. Use it as a screening aid for academic work, editorial submissions, or professional content. Do not use it as the sole basis for high-stakes decisions; follow your organization&apos;s approved tools and procedures for official verification. When used in line with these principles, the AI Alt Text Generator supports academic integrity, editorial quality, and transparent communication.</p>
         <h3>Recap: Limitations to Keep in Mind</h3>
@@ -162,7 +162,7 @@ export default async function AIAltTextGeneratorPage() {
     { category: 'Usage', question: 'Should I edit the output from the AI Alt Text Generator?', answer: 'Yes. Always review and edit the generated alt text to ensure it matches your image and context. Avoid redundant or vague phrasing. The tool gives you a draft; you are responsible for final accuracy and appropriateness for each image. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity.' },
     { category: 'Use cases', question: 'Can the AI Alt Text Generator help with SEO?', answer: 'Yes. Good alt text can support image SEO by helping search engines understand image content. Keep alt text accurate and concise; avoid keyword stuffing. Use the AI Alt Text Generator to draft descriptions, then tailor them for your specific images and keywords. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity.' },
     { category: 'Technical', question: 'What languages does the AI Alt Text Generator support?', answer: 'The tool is optimized for English. Other languages may work but quality can vary. For the best results when generating alt text for images, use English input. If you need alt text in another language, test a short sample first. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity.' },
-    { category: 'General', question: 'How often can I use the AI Alt Text Generator?', answer: 'The tool is free to use as often as you need. There are no per-day or per-user limits. Use it for every image that needs alt text—websites, documents, and content. Combine the output with your own review for the best results. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity.' },
+    { category: 'General', question: 'How often can I use the AI Alt Text Generator?', answer: 'The tool is free to use as often as you need. There are no per-day or per-user limits. Use it for every image that needs alt textâ€”websites, documents, and content. Combine the output with your own review for the best results. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity.' },
     { category: 'Use cases', question: 'Is the AI Alt Text Generator suitable for e-commerce product images?', answer: 'Yes. You can use it to draft alt text for product images. Describe the product or paste existing copy, run the generator, and review. Ensure the alt text is accurate and useful for screen reader users and search engines. Keep it concise and avoid redundant phrases like "image of" when the context is clear.' },
     { category: 'Limits', question: 'Does the AI Alt Text Generator replace manual alt text writing?', answer: 'No. It provides a draft that you should review and adjust. Always ensure the alt text matches the specific image and context. The AI Alt Text Generator speeds up workflow; you remain responsible for accuracy and accessibility standards. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity.' },
     { category: 'Usage', question: 'What input does the AI Alt Text Generator need?', answer: 'You can paste a description of the image, the surrounding content, or context about the page. The tool uses your input to produce short alt text that describes the image clearly and concisely. The more accurate your input, the better the draft output. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity.' },
@@ -186,7 +186,7 @@ export default async function AIAltTextGeneratorPage() {
           <p className="text-slate-700">Common questions about the AI Alt Text Generator.</p>
         </div>
         <FAQSection items={pageFaqs} />
-        <FaqJsonLd faqs={pageFaqs} name={`${title} – FAQs`} />
+        <FaqJsonLd faqs={pageFaqs} name={`${title} â€“ FAQs`} />
       </ToolPageShell>
     </>
   );

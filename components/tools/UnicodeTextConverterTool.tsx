@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from 'react';
+import HumanizerUpsellCard from '../HumanizerUpsellCard';
 
 const BOLD_OFF_A = 0x1D400, BOLD_OFF_a = 0x1D41A;
 const ITALIC_OFF_A = 0x1D434, ITALIC_OFF_a = 0x1D44E;

@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next';
+import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { JsonLd } from '@/components/JsonLd';
 import FAQSection from '@/components/FAQSection';
@@ -12,7 +12,7 @@ import { siteUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
 
-export const revalidate = 604800;
+export const revalidate = 2592000;
 
 const toolSlug = 'shakespearean-translator';
 
@@ -29,7 +29,7 @@ function createWriteUp() {
       <div className="prose prose-slate max-w-none">
         <h2>Shakespearean Translator: Translate Into Shakespearean English</h2>
         <p>A Shakespearean translator is an online tool that converts modern English into Shakespearean-style English—thee, thou, hath, dost, and the phrasing associated with William Shakespeare and Early Modern English. Whether you want to add a theatrical flair to a message, create period-accurate dialogue for a play or story, or simply have fun with "translate into Shakespearean" style text, a Shakespearean translator lets you type or paste your text and get a version that echoes the language of the Bard.</p>
-        <p>This free Shakespearean translator runs in your browser. You enter your text, click translate, and copy the result. No sign-up is required. The tool replaces common modern words with Shakespearean equivalents (e.g., you → thee, your → thy, are → art) and can adjust phrasing to sound more period-appropriate. In this guide we explain what Shakespearean English is, how to use a Shakespearean translator, when to use it for creative writing and education. For text cleanup and other tools, see the site.</p>
+        <p>This free Shakespearean translator runs in your browser. You enter your text, click translate, and copy the result. No sign-up is required. The tool replaces common modern words with Shakespearean equivalents (e.g., you ? thee, your ? thy, are ? art) and can adjust phrasing to sound more period-appropriate. In this guide we explain what Shakespearean English is, how to use a Shakespearean translator, when to use it for creative writing and education. For text cleanup and other tools, see the site.</p>
 
         <h2>What Is Shakespearean English?</h2>
         <p>Shakespearean English is the form of English used by William Shakespeare and his contemporaries in the late 16th and early 17th centuries. It is part of Early Modern English and includes pronouns like thee, thou, thy, and verbs like hath, dost, art, wilt. A Shakespearean translator does not reproduce Shakespeare word-for-word; it gives your modern sentences a Shakespearean flavor by swapping in these forms and similar vocabulary.</p>
@@ -68,7 +68,7 @@ function createWriteUp() {
         <p>When you paste from a webpage or document, use plain text so you have clean input. After translating, paste the result into your script or email.</p>
         <p>Shakespearean translator output is for creative and educational use. Do not rely on it for formal or legal documents.</p>
         <h2>Thee, Thou, Thy: A Quick Reference</h2>
-        <p>When you translate into Shakespearean, the most common swaps are: you → thee (or thou), your → thy, are → art, is → hath, have → hast, do → dost, does → doth, will → wilt, not → nay, yes → aye. The Shakespearean translator applies these so your text sounds period-appropriate. For more nuance, edit the output.</p>
+        <p>When you translate into Shakespearean, the most common swaps are: you ? thee (or thou), your ? thy, are ? art, is ? hath, have ? hast, do ? dost, does ? doth, will ? wilt, not ? nay, yes ? aye. The Shakespearean translator applies these so your text sounds period-appropriate. For more nuance, edit the output.</p>
         <h2>How Early Modern English Differs From Today</h2>
         <p>Early Modern English—the language of Shakespeare and the King James Bible—differs from modern English in pronouns, verb forms, and word order. "You" was used but "thee" and "thou" were common for singular address; "your" often appeared as "thy." Verbs took different endings: "has" could be "hath," "do" could be "dost" or "doth." A Shakespearean translator applies these patterns so your text reads with a period feel. It does not replicate every grammatical nuance of the era; for that, use the output as a draft and consult reference grammars or editions.</p>
         <p>Spelling was also variable in Early Modern English. The tool may leave modern spelling in place or adjust a few words for effect. If you need a specific look—for example for a programme or invitation—edit the result so it is consistent throughout.</p>
@@ -208,7 +208,7 @@ function createWriteUp() {
         <p>Do not use a Shakespearean translator for formal or legal documents, official correspondence, or any context where standard modern English is required. The tool is for creative, educational, and entertainment purposes. For business, academic citations, or legal text, use plain modern English. Similarly, if your project needs a different period—medieval, Middle English, or Old English (Anglo-Saxon)—use a translator built for that era so the language matches your setting.</p>
 
         <h2>Quick Reference: Thee, Thou, Thy and Common Verbs</h2>
-        <p>When you translate into Shakespearean, the most frequent substitutions are: you → thee or thou, your → thy, are → art, has → hath, have → hast or hath, do → dost, does → doth, will → wilt, and similar. The Shakespearean translator applies these so your text sounds period-appropriate. Sentence order may change slightly. For scripts, ensure lines remain speakable; for social posts, keep them short. Edit the output for nuance and readability.</p>
+        <p>When you translate into Shakespearean, the most frequent substitutions are: you ? thee or thou, your ? thy, are ? art, has ? hath, have ? hast or hath, do ? dost, does ? doth, will ? wilt, and similar. The Shakespearean translator applies these so your text sounds period-appropriate. Sentence order may change slightly. For scripts, ensure lines remain speakable; for social posts, keep them short. Edit the output for nuance and readability.</p>
         <p>Real Early Modern English had regional and social variation in how thee and thou were used. A general-purpose tool gives a consistent register suitable for most creative and educational uses. For scholarly or performance-grade accuracy, combine the tool with primary texts and reference materials.</p>
 
         <h2>Conclusion</h2>
@@ -242,7 +242,7 @@ export default async function ShakespeareanTranslatorPage() {
     { category: 'Limits', question: 'Is there a character limit?', answer: 'Browser-based Shakespearean translators typically handle normal paragraph and page lengths. For very long texts, process in sections so you can review and edit each part before combining. If the text was pasted from the web, plain text works best.' },
     { category: 'Compatibility', question: 'Does it work on mobile?', answer: 'Yes. The Shakespearean translator runs in your browser on phones and tablets with no install or download required. You can paste text, translate into Shakespearean style, and copy the result into any app. Bookmark the page for quick access when you need thee/thou style on the go.' },
     { category: 'General', question: 'Translate into Shakespearean vs translate to Anglo Saxon?', answer: 'Translate into Shakespearean targets Early Modern English (thee, thou, 16th–17th century). Translate to Anglo Saxon targets Old English—the much earlier language of Beowulf and the Anglo-Saxon Chronicle. They are different periods and languages. Use an Old English translator for Anglo-Saxon; use the Shakespearean translator for Bard-style text.' },
-    { category: 'Formatting', question: 'Can I get different Shakespearean styles?', answer: 'Tools vary: some focus mainly on pronoun substitution (you → thee, your → thy), while others adjust more vocabulary and phrasing. The output is always stylistic. For theatre or publication, edit the result with a director or script editor to get the level of period accuracy and clarity you need.' },
+    { category: 'Formatting', question: 'Can I get different Shakespearean styles?', answer: 'Tools vary: some focus mainly on pronoun substitution (you ? thee, your ? thy), while others adjust more vocabulary and phrasing. The output is always stylistic. For theatre or publication, edit the result with a director or script editor to get the level of period accuracy and clarity you need.' },
     { category: 'Use cases', question: 'Can I use Shakespearean text in a play?', answer: 'Yes. Theatre companies and drama students use a Shakespearean translator to draft or explore period-style dialogue. Use the output as a starting point and refine with a director or script editor for accuracy, speakability, and consistency. The tool speeds up the process of getting thee/thou style; human editing ensures it fits the production.' },
     { category: 'General', question: 'Do I need to install anything?', answer: 'No. The Shakespearean translator runs entirely in your browser, so there is no download or install. Open the page, paste your text, and translate into Shakespearean style. The same applies on mobile: no app install is required.' },
     { category: 'Workflow', question: 'Can I copy Shakespearean text to social media?', answer: 'Yes. Copy the Shakespearean-style output and paste it into any app for captions, bios, or themed posts. Keep phrases short for readability. The tool is popular for adding a literary or theatrical twist to social profiles; use it for fun and education, not for formal communication.' },

@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next';
+import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { JsonLd } from '@/components/JsonLd';
 import FAQSection from '@/components/FAQSection';
@@ -11,7 +11,7 @@ import { buildToolMeta } from '@/lib/seo-meta';
 import { siteUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
-export const revalidate = 604800;
+export const revalidate = 2592000;
 
 const toolSlug = 'combination-generator';
 
@@ -151,7 +151,7 @@ export default async function CombinationGeneratorPage() {
     { category: 'Usage', question: 'Can I generate combinations of numbers?', answer: 'Yes. Enter numbers as your items (one per line or comma-separated). The combination generator will list every combination of the chosen size. This is useful for lottery-style picks, sampling exercises, or math and combinatorics problems. You get the full set of combinations; you can then pick one at random or use the list as needed.' },
     { category: 'Formatting', question: 'In what order are combinations listed?', answer: 'Most combination generators list combinations in lexicographic or a fixed order (e.g., 1,2 then 1,3 then 2,3). Order within each set does not change the combination—only which items are included matters. The tool outputs in a consistent order so you can copy to Excel or use the list predictably.' },
     { category: 'Use cases', question: 'What are combinations used for?', answer: 'Combinations are used for sampling, lottery picks, team formation, feature selection, password ideas (when order does not matter), and any case where you need choose k from n “choose k from n” without caring about order. Teachers use a combination generator for combinatorics; analysts use it for subset enumeration.' },
-    { category: 'Limits', question: 'Why does the combination generator slow down for large sets?', answer: 'The number of combinations grows quickly (e.g., 20 items choose 10 ≈ 184,756). Very large n or k can produce millions of combinations and may take time or hit browser limits. Use reasonable set sizes.' },
+    { category: 'Limits', question: 'Why does the combination generator slow down for large sets?', answer: 'The number of combinations grows quickly (e.g., 20 items choose 10 ˜ 184,756). Very large n or k can produce millions of combinations and may take time or hit browser limits. Use reasonable set sizes.' },
     { category: 'Technical', question: 'Does the tool allow repeated items?', answer: 'Standard combinations use each item at most once per combination. If you need combinations with repetition (e.g., dice rolls or multisets), that uses a different formula (n+k-1 choose k) and some tools offer it as a separate mode. Check the combination generator options for "with repetition" or "multiset" if that is what you need.' },
     { category: 'General', question: 'Can I generate combinations of words?', answer: 'Yes. Enter words as your items (one per line or comma-separated). The combination generator will list every combination of the chosen size. Useful for brainstorming, content ideas, tag combinations, or passphrase inspiration. Each word is treated as one item and used at most once per combination unless you enable repetition.' },
     { category: 'Workflow', question: 'Can I copy combinations to Excel?', answer: 'Yes. Copy the output from the combination generator and paste into Excel or Google Sheets. Each combination can be one row or one column depending on how the tool formats the output. For very long lists, you may need to copy in chunks. The list is plain text so you can also paste into a CSV or text file.' },

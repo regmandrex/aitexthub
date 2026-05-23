@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import ToolTextArea from './ToolTextArea';
+import HumanizerUpsellCard from '../HumanizerUpsellCard';
 
 function formatXml(xml: string, indent: number): string {
   const INDENT = ' '.repeat(indent);
@@ -86,6 +87,7 @@ export function XmlFormatterTool() {
           {copied ? 'Copied!' : 'Copy'}
         </button>
       </div>
+      {output && <HumanizerUpsellCard />}
     </div>
   );
 }

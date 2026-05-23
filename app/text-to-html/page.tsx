@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next';
+import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { JsonLd } from '@/components/JsonLd';
 import FAQSection from '@/components/FAQSection';
@@ -12,7 +12,7 @@ import { getToolBySlug } from '@/lib/tools/registry';
 import { siteUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 
-export const revalidate = 604800;
+export const revalidate = 2592000;
 const toolSlug = 'text-to-html';
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -103,7 +103,7 @@ const faqs: FaqItem[] = [
   {
     category: 'Advanced',
     question: 'How do I handle special characters and Unicode in text to HTML conversion?',
-    answer: `Modern HTML5 with UTF-8 encoding handles Unicode characters natively — you do not need to convert Unicode characters to HTML entities for correct rendering. A character like é, 中, or 🎉 can appear directly in UTF-8 encoded HTML without any encoding. The critical characters to encode are only the five HTML-reserved characters (< > & " '). Non-ASCII characters only need encoding if: you cannot ensure UTF-8 encoding throughout the chain, you are using an older HTML charset, or specific characters need encoding for other reasons (like avoiding issues in attribute values). The entity for é is &eacute; or &#233; or &#xE9; — all equivalent, but the literal é is fine in UTF-8 HTML. Our converter with entity escaping enabled only escapes the HTML-significant characters (< > & " '), not arbitrary Unicode — this is the correct approach. If you need to encode all non-ASCII characters to entities, you would need a more aggressive encoding step, though this is rarely necessary for modern web applications that use UTF-8 throughout.`,
+    answer: `Modern HTML5 with UTF-8 encoding handles Unicode characters natively — you do not need to convert Unicode characters to HTML entities for correct rendering. A character like é, ?, or ?? can appear directly in UTF-8 encoded HTML without any encoding. The critical characters to encode are only the five HTML-reserved characters (< > & " '). Non-ASCII characters only need encoding if: you cannot ensure UTF-8 encoding throughout the chain, you are using an older HTML charset, or specific characters need encoding for other reasons (like avoiding issues in attribute values). The entity for é is &eacute; or &#233; or &#xE9; — all equivalent, but the literal é is fine in UTF-8 HTML. Our converter with entity escaping enabled only escapes the HTML-significant characters (< > & " '), not arbitrary Unicode — this is the correct approach. If you need to encode all non-ASCII characters to entities, you would need a more aggressive encoding step, though this is rarely necessary for modern web applications that use UTF-8 throughout.`,
   },
   {
     category: 'Practical',
@@ -278,7 +278,7 @@ const writeUp = (
       Semantic HTML elements: our converter wraps paragraphs in p tags, which is semantically correct and accessible. Screen readers announce paragraphs as distinct content units. Search engines use paragraph structure to understand content organization. Avoid using div tags for text content — p tags are semantically appropriate and carry implicit meaning.
     </p>
     <p>
-      Heading structure: our plain-text-to-HTML converter does not add heading tags (h1, h2, h3) since it cannot determine which lines are headings from unformatted text. After conversion, manually identify your headings and wrap them in appropriate heading tags. A logical heading hierarchy (h1 → h2 → h3, not skipping levels) is important for both SEO and screen reader navigation. Search engines use heading tags to understand page structure and identify key topic sections.
+      Heading structure: our plain-text-to-HTML converter does not add heading tags (h1, h2, h3) since it cannot determine which lines are headings from unformatted text. After conversion, manually identify your headings and wrap them in appropriate heading tags. A logical heading hierarchy (h1 ? h2 ? h3, not skipping levels) is important for both SEO and screen reader navigation. Search engines use heading tags to understand page structure and identify key topic sections.
     </p>
     <p>
       Line length and readability: the converted HTML does not enforce any line-length constraints — the browser wraps text at the container boundary. For optimal readability, use CSS to constrain content width: <code>max-width: 65ch; margin: 0 auto;</code> — the ch unit corresponds to the width of a character, and 65 characters per line is the optimal reading line length per typographic research. This CSS ensures comfortable readability across screen sizes without HTML structure changes.
@@ -349,7 +349,7 @@ const writeUp = (
       Character encoding: all modern HTML should use UTF-8 encoding, declared with <code>&lt;meta charset="UTF-8"&gt;</code> in the document head. UTF-8 can represent every Unicode character — all world languages, emoji, mathematical symbols, and special characters. Our converter produces HTML with proper entity encoding for HTML-special characters (&amp;, &lt;, &gt;, ") while preserving all other Unicode characters as-is. This means Arabic, Chinese, Japanese, Korean, Hindi, Russian, and all other scripts appear correctly in the output without additional encoding.
     </p>
     <p>
-      Right-to-left text: Arabic, Hebrew, Persian, and Urdu text are written right-to-left. When converting RTL text to HTML, add the dir attribute: <code>&lt;p dir="rtl"&gt;مرحباً&lt;/p&gt;</code>. For a page with mixed RTL and LTR content, use the Unicode Bidirectional Algorithm directives or the HTML dir attribute on the body element with individual elements overriding as needed. Our converter does not automatically add dir attributes — add them manually after conversion for RTL content.
+      Right-to-left text: Arabic, Hebrew, Persian, and Urdu text are written right-to-left. When converting RTL text to HTML, add the dir attribute: <code>&lt;p dir="rtl"&gt;??????&lt;/p&gt;</code>. For a page with mixed RTL and LTR content, use the Unicode Bidirectional Algorithm directives or the HTML dir attribute on the body element with individual elements overriding as needed. Our converter does not automatically add dir attributes — add them manually after conversion for RTL content.
     </p>
     <p>
       Language declaration: the lang attribute on the HTML element (or individual elements for multilingual content) tells browsers and screen readers which language the text is in. <code>&lt;html lang="en"&gt;</code> for English, <code>&lt;html lang="ar"&gt;</code> for Arabic, <code>&lt;html lang="zh-CN"&gt;</code> for Simplified Chinese. Screen readers use the lang attribute to select the appropriate text-to-speech voice and pronunciation rules. After converting text to HTML with our tool, ensure the lang attribute is correctly set on your page for the primary language, with lang attributes on specific elements for any sections in a different language.

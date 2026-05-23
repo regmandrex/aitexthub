@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next';
+import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { JsonLd } from '@/components/JsonLd';
 import FAQSection from '@/components/FAQSection';
@@ -11,7 +11,7 @@ import { buildToolMeta } from '@/lib/seo-meta';
 import { siteUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
-export const revalidate = 604800;
+export const revalidate = 2592000;
 
 const toolSlug = 'line-combination-generator';
 
@@ -142,7 +142,7 @@ export default async function LineCombinationGeneratorPage() {
     { category: 'Formatting', question: 'How are lines separated in the input?', answer: 'Typically one item per line: each new line is a new item. Paste from a spreadsheet (one column or row per line) or type lines directly. Some tools also allow comma-separated items. Check the input instructions. Duplicate lines may be removed by the tool; if duplicates matter, check the tool behavior.' },
     { category: 'Use cases', question: 'What are line combinations used for?', answer: 'Use them for content mixes (e.g., combining headlines with body options), sampling from lists, generating tag or category combinations, headline testing, recipe or ingredient sets, brainstorming, or any task where you need choose k lines from n “choose k lines from n” without order mattering.' },
     { category: 'Technical', question: 'What is the difference from a regular combination generator?', answer: 'A line combination generator works on lines (text rows) as items—each line is one element. A general combination generator often accepts comma- or line-separated items. Functionally they are the same: both list combinations of a chosen size where order does not matter. Use the line combination generator when your data is naturally line-based (headlines, tags, sentences); use a general combination generator for mixed or comma-separated lists.' },
-    { category: 'Limits', question: 'Why does it slow down for many lines?', answer: 'The number of combinations grows quickly (e.g., 15 lines choose 5 ≈ 3,003). Very large line counts can produce huge lists. Use a reasonable number of lines or smaller combination size if you hit limits.' },
+    { category: 'Limits', question: 'Why does it slow down for many lines?', answer: 'The number of combinations grows quickly (e.g., 15 lines choose 5 ˜ 3,003). Very large line counts can produce huge lists. Use a reasonable number of lines or smaller combination size if you hit limits.' },
     { category: 'Privacy', question: 'Is my list sent to a server?', answer: 'No. The line combination generator runs in your browser. Your lines and the generated list are not uploaded or stored on our servers. You can safely use it for confidential copy, client headlines, or any private list without privacy concerns.' },
     { category: 'General', question: 'Can I generate combinations of sentences?', answer: 'Yes. Treat each sentence as a line. Paste them in, choose combination size, and the line combination generator lists every combination. Useful for A/B copy, content variants, or exploring which sentences to combine. Copy the output for use in your editor or testing tool.' },
     { category: 'Workflow', question: 'Can I use it for headline testing?', answer: 'Yes. Put each headline (or variant) on its own line. Generate combinations of 2 or more to get pairs or sets for testing. Copy the output for use in your testing tool or spreadsheet. The line combination generator gives you every subset of a chosen size so you can systematically test headline combinations or content mixes.' },

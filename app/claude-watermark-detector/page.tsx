@@ -1,4 +1,4 @@
-﻿import type { FaqItem } from '@/components/faqData';
+import type { FaqItem } from '@/components/faqData';
 import WatermarkDetectorPage from '@/components/tools/WatermarkDetectorPage';
 import { buildMeta } from '@/lib/seo-meta';
 
@@ -8,7 +8,7 @@ const modelSlug = 'claude';
 const faqIntro =
   'This FAQ section explains how the Claude Watermark Detector on gptcleanuptools.com works, what it analyzes, and how to interpret its results. The tool is designed for educational, editorial, and analytical purposes and performs text-only inspection without connecting to or interacting with Claude or Anthropic systems.';
 
-export const revalidate = 604800;
+export const revalidate = 2592000;
 
 const faqs: FaqItem[] = [
   {

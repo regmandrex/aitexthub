@@ -1,11 +1,11 @@
-﻿import type { Metadata } from 'next';
+import type { Metadata } from 'next';
 import { JsonLd } from '@/components/JsonLd';
 import AdSenseSlot from '@/components/ads/AdSenseSlot';
 import BelowToolAd from '@/components/ads/BelowToolAd';
 import { siteUrl } from '@/lib/seo/url';
 import { InvisibleCharGrid } from './CopyButtons';
 
-export const revalidate = 604800;
+export const revalidate = 2592000;
 
 const faqs = [
   { question: 'What is blank space copy and paste?', answer: 'Blank space copy and paste means copying an invisible or blank-appearing Unicode character to your clipboard and pasting it into a text field to create the visual effect of empty or blank content. The most common characters used are zero-width space (U+200B), Hangul filler (U+3164), non-breaking space (U+00A0), and word joiner (U+2060). Each looks blank when pasted but is present as real character data, which satisfies input validation requirements that reject truly empty fields.' },
@@ -251,7 +251,7 @@ export default function InvisibleTextCopyPastePage() {
           <h1 className="text-xl font-semibold text-slate-900 sm:text-2xl md:text-3xl">Blank Space Copy and Paste — Invisible Text Generator</h1>
           <p className="max-w-2xl mx-auto text-xs text-slate-700 sm:text-sm md:text-[15px]">Copy blank space characters, invisible text, and empty Unicode — zero-width space, Hangul filler, non-breaking space — one click. Free for names, messages, bios, and gaming.</p>
           <div className="flex items-center justify-center gap-1 text-sm text-slate-500">
-            <span className="text-yellow-500">★★★★★</span>
+            <span className="text-yellow-500">?????</span>
             <span>4.9</span>
             <span>·</span>
             <span>Free</span>

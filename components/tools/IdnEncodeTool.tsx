@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import ToolTextArea from './ToolTextArea';
+import HumanizerUpsellCard from '../HumanizerUpsellCard';
 import { encodeIdn } from '@/lib/encoding';
 
 export function IdnEncodeTool() {
@@ -98,6 +99,7 @@ export function IdnEncodeTool() {
         The tool converts only the hostname portion into ASCII Punycode and keeps the rest of a URL intact.
       </p>
       <p className="text-xs text-slate-500">Works only on text you provide. No data is stored.</p>
+      {output && <HumanizerUpsellCard />}
     </div>
   );
 }

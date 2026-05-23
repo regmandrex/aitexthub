@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from 'react';
 import ToolTextArea from './ToolTextArea';
+import HumanizerUpsellCard from '../HumanizerUpsellCard';
 
 type RankTrackerToolProps = {
   modelName?: string;
@@ -154,11 +155,16 @@ export function GenericAiTextTool({
 }: GenericAiTextToolProps) {
   const [input, setInput] = useState('');
   const [output, setOutput] = useState('');
+  const [showUpsell, setShowUpsell] = useState(false);
+
+  const inputWords = input.trim() ? input.trim().split(/\s+/).length : 0;
+  const outputWords = output.trim() ? output.trim().split(/\s+/).length : 0;
 
   const handleRun = () => {
     const clean = input.trim();
     if (!clean) {
       setOutput('');
+      setShowUpsell(false);
       return;
     }
 
@@ -175,6 +181,7 @@ export function GenericAiTextTool({
         helperText,
       ].join('\n')
     );
+    setShowUpsell(true);
   };
 
   return (
@@ -196,6 +203,9 @@ export function GenericAiTextTool({
           readOnly
         />
       </div>
+      <div className="rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 text-xs text-slate-600">
+        Input: {input.length} chars / {inputWords} words · Output: {output.length} chars / {outputWords} words
+      </div>
       <div className="flex flex-wrap gap-3">
         <button
           type="button"
@@ -209,12 +219,14 @@ export function GenericAiTextTool({
           onClick={() => {
             setInput('');
             setOutput('');
+            setShowUpsell(false);
           }}
           className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
         >
           Clear
         </button>
       </div>
+      {showUpsell && output ? <HumanizerUpsellCard /> : null}
     </div>
   );
 }
@@ -222,10 +234,12 @@ export function GenericAiTextTool({
 export function GenericWatermarkTool({ mode, media, modelName }: GenericWatermarkToolProps) {
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
   const [report, setReport] = useState('');
+  const [showUpsell, setShowUpsell] = useState(false);
 
   const handleRun = () => {
     if (!selectedFile) {
       setReport('');
+      setShowUpsell(false);
       return;
     }
 
@@ -242,6 +256,7 @@ export function GenericWatermarkTool({ mode, media, modelName }: GenericWatermar
           : 'Keep the original file, review provenance requirements, then remove or normalize visible and metadata-level watermark layers where your workflow allows it.',
       ].join('\n')
     );
+    setShowUpsell(true);
   };
 
   return (
@@ -283,12 +298,19 @@ export function GenericWatermarkTool({ mode, media, modelName }: GenericWatermar
           onClick={() => {
             setSelectedFile(null);
             setReport('');
+            setShowUpsell(false);
           }}
           className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
         >
           Clear
         </button>
       </div>
+      {selectedFile ? (
+        <p className="text-xs text-slate-500">
+          Selected file: {selectedFile.name} ({(selectedFile.size / (1024 * 1024)).toFixed(2)} MB)
+        </p>
+      ) : null}
+      {showUpsell && report ? <HumanizerUpsellCard variant="watermark" /> : null}
     </div>
   );
 }

@@ -1,26 +1,17 @@
 "use client";
-
 import { GenericTextProcessorTool } from './GenericTextProcessorTool';
+import { callAiTool } from '@/lib/tools/aiToolApi';
 
 export function ChatGPTTitleTagGeneratorTool() {
-  const processText = (text: string): string => {
-    if (!text.trim()) {
-      return '';
-    }
-    
-    const words = text.trim().split(/\s+/).length;
-    const sentences = text.split(/[.!?]+/).filter(s => s.trim().length > 0).length;
-    
-    return `Text Analysis:\n\n• Length: ${text.length} characters\n• Words: ${words}\n• Sentences: ${sentences}\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\nNote: This tool is currently in development. SEO-optimized title tag will appear here once API integration is complete.`;
-  };
-
   return (
     <GenericTextProcessorTool
-      processText={processText}
-      inputLabel="Content for Title Tag"
-      outputLabel="Generated Title Tag"
-      inputPlaceholder="Paste content to generate title tag..."
-      outputPlaceholder="Title tag will appear here..."
+      toolType="rewriter"
+      processText={(text) => callAiTool('title_tag_generator', text)}
+      inputLabel="Page Content"
+      outputLabel="Generated Title Tags"
+      inputPlaceholder="Paste your page content here..."
+      outputPlaceholder="Title tags will appear here..."
+      processButtonLabel="Generate Title Tags"
     />
   );
 }

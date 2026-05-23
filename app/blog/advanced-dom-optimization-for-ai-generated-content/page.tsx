@@ -1,4 +1,4 @@
-﻿import Link from 'next/link';
+import Link from 'next/link';
 import { buildArticleMeta } from '@/lib/seo-meta';
 import { JsonLd } from '@/components/JsonLd';
 import { blogPostingSchema } from '@/lib/schema/blog';
@@ -11,7 +11,7 @@ const headline = 'Advanced DOM Optimization for AI-Generated Content (Reduce Blo
 const description =
   'Learn how AI-generated text can bloat the DOM, hurt LCP/CLS/INP, and how to reduce node count and layout work without sacrificing SEO.';
 
-export const revalidate = 604800;
+export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({
@@ -237,7 +237,7 @@ export default function AdvancedDomOptimizationAiContentPage() {
           AI-generated content has shifted the performance battlefield. DOM efficiency is now a content strategy issue, not just a developer
           concern. If you publish AI articles, care about Core Web Vitals, and want to scale safely, advanced DOM optimization is essential.
         </p>
-        <p className="text-slate-700">Clean text → Efficient DOM → Faster pages → Better rankings.</p>
+        <p className="text-slate-700">Clean text ? Efficient DOM ? Faster pages ? Better rankings.</p>
         <div className="rounded-2xl border border-brand-100 bg-brand-50 p-4 text-sm text-brand-800">
           <p className="font-semibold">Start at the source.</p>
           <p>

@@ -1,6 +1,7 @@
 ﻿"use client";
 
 import { useState } from 'react';
+import HumanizerUpsellCard from '../HumanizerUpsellCard';
 
 function normalizeUnicode(text: string) {
   if (typeof text.normalize === 'function') {
@@ -117,6 +118,7 @@ export function TextCleanerTool() {
           placeholder="Cleaned text will appear here"
         />
       </label>
+      {output && <HumanizerUpsellCard />}
     </div>
   );
 }

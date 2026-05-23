@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import HumanizerUpsellCard from '../HumanizerUpsellCard';
 import { format } from 'sql-formatter';
 
 export function SqlFormatterTool() {
@@ -51,6 +52,7 @@ export function SqlFormatterTool() {
           <textarea readOnly value={output} rows={8} className="w-full rounded-lg border border-slate-200 bg-slate-50 px-3 py-2 text-sm font-mono resize-none" />
         </div>
       )}
+      {output && <HumanizerUpsellCard />}
     </div>
   );
 }

@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import ToolTextArea from './ToolTextArea';
+import HumanizerUpsellCard from '../HumanizerUpsellCard';
 import { decodeUtf8FromHex } from '@/lib/encoding';
 
 export function Utf8DecodeTool() {
@@ -96,6 +97,7 @@ export function Utf8DecodeTool() {
 
       <p className="text-xs text-slate-600">Use hex byte values with optional spaces or 0x prefixes.</p>
       <p className="text-xs text-slate-500">Works only on text you provide. No data is stored.</p>
+      {output && <HumanizerUpsellCard />}
     </div>
   );
 }

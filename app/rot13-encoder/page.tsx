@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next';
+import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { JsonLd } from '@/components/JsonLd';
 import FAQSection from '@/components/FAQSection';
@@ -12,7 +12,7 @@ import { getToolBySlug } from '@/lib/tools/registry';
 import { siteUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 
-export const revalidate = 604800;
+export const revalidate = 2592000;
 const toolSlug = 'rot13-encoder';
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -23,7 +23,7 @@ const faqs: FaqItem[] = [
   {
     category: 'Basics',
     question: 'What is ROT13 and how does it work?',
-    answer: `ROT13 (Rotate by 13) is a simple letter substitution cipher that replaces each letter with the letter 13 positions ahead of it in the alphabet. Since the English alphabet has 26 letters, shifting by 13 positions is self-inverse — applying ROT13 twice returns the original text. A becomes N, B becomes O, C becomes P, and so on through Z becoming M. Lowercase letters are handled separately (a→n, b→o, etc.), and non-letter characters (numbers, punctuation, spaces) are left unchanged. ROT13 is used for light text obfuscation — hiding spoilers, puzzle answers, and mildly inappropriate content in online communities — rather than security, since anyone who knows the encoding can instantly decode it. Our tool applies ROT13 (and the related ROT47 variant) to any text you enter, with output updating in real time.`,
+    answer: `ROT13 (Rotate by 13) is a simple letter substitution cipher that replaces each letter with the letter 13 positions ahead of it in the alphabet. Since the English alphabet has 26 letters, shifting by 13 positions is self-inverse — applying ROT13 twice returns the original text. A becomes N, B becomes O, C becomes P, and so on through Z becoming M. Lowercase letters are handled separately (a?n, b?o, etc.), and non-letter characters (numbers, punctuation, spaces) are left unchanged. ROT13 is used for light text obfuscation — hiding spoilers, puzzle answers, and mildly inappropriate content in online communities — rather than security, since anyone who knows the encoding can instantly decode it. Our tool applies ROT13 (and the related ROT47 variant) to any text you enter, with output updating in real time.`,
   },
   {
     category: 'Basics',
@@ -78,7 +78,7 @@ const faqs: FaqItem[] = [
   {
     category: 'Educational',
     question: 'What is frequency analysis and why does it defeat ROT13?',
-    answer: `Frequency analysis is a cryptanalytic technique that exploits the fact that different letters appear with different frequencies in natural language. In English text: E is the most common letter (~13% of letters), followed by T (~9%), A (~8%), O (~7.5%), I (~7%), N (~7%). In a ROT13-encoded English text, these letters are shifted: E→R, T→G, A→N, O→B, I→V, N→A. So in the encoded text, R, G, N, B, V, A will be the most frequent letters — revealing the frequency pattern and thus the shift. An analyst seeing that R is the most common letter in the encoded text immediately knows the shift is 13 (since E→R is a shift of 13). Even without knowing about ROT13 specifically, frequency analysis of any Caesar cipher with sufficient text reveals the shift in seconds. ROT13's weakness is inherent to all simple substitution ciphers: the statistical structure of the language is preserved in the ciphertext. Modern ciphers (AES, ChaCha20) transform data so that the ciphertext has uniform statistical distribution, revealing nothing about the plaintext structure.`,
+    answer: `Frequency analysis is a cryptanalytic technique that exploits the fact that different letters appear with different frequencies in natural language. In English text: E is the most common letter (~13% of letters), followed by T (~9%), A (~8%), O (~7.5%), I (~7%), N (~7%). In a ROT13-encoded English text, these letters are shifted: E?R, T?G, A?N, O?B, I?V, N?A. So in the encoded text, R, G, N, B, V, A will be the most frequent letters — revealing the frequency pattern and thus the shift. An analyst seeing that R is the most common letter in the encoded text immediately knows the shift is 13 (since E?R is a shift of 13). Even without knowing about ROT13 specifically, frequency analysis of any Caesar cipher with sufficient text reveals the shift in seconds. ROT13's weakness is inherent to all simple substitution ciphers: the statistical structure of the language is preserved in the ciphertext. Modern ciphers (AES, ChaCha20) transform data so that the ciphertext has uniform statistical distribution, revealing nothing about the plaintext structure.`,
   },
   {
     category: 'Community',
@@ -93,7 +93,7 @@ const faqs: FaqItem[] = [
   {
     category: 'Technical',
     question: 'Why does applying ROT13 twice always return the original text?',
-    answer: `The self-inverse property of ROT13 follows from the algebra of modular arithmetic. The English alphabet has 26 letters, indexed 0–25 (A=0, B=1...Z=25). ROT13 adds 13 to each letter's index, modulo 26: new_index = (old_index + 13) mod 26. Applying ROT13 twice: ((old_index + 13) + 13) mod 26 = (old_index + 26) mod 26 = old_index mod 26 = old_index. Adding 26 modulo 26 returns to the original value, since 26 ≡ 0 (mod 26). This works specifically because 13 + 13 = 26, which is the modulus. The only other shift value with this property (in a 26-character alphabet) would be 0 (no shift) and 13 — those are the only values x where x + x ≡ 0 (mod 26). This is the same reason ROT47 is self-inverse: 47 + 47 = 94, and the ROT47 alphabet has exactly 94 characters. This mathematical property was recognized when ROT13 was adopted as the Usenet spoiler convention — the same program or command could encode and decode, which was practically convenient for users.`,
+    answer: `The self-inverse property of ROT13 follows from the algebra of modular arithmetic. The English alphabet has 26 letters, indexed 0–25 (A=0, B=1...Z=25). ROT13 adds 13 to each letter's index, modulo 26: new_index = (old_index + 13) mod 26. Applying ROT13 twice: ((old_index + 13) + 13) mod 26 = (old_index + 26) mod 26 = old_index mod 26 = old_index. Adding 26 modulo 26 returns to the original value, since 26 = 0 (mod 26). This works specifically because 13 + 13 = 26, which is the modulus. The only other shift value with this property (in a 26-character alphabet) would be 0 (no shift) and 13 — those are the only values x where x + x = 0 (mod 26). This is the same reason ROT47 is self-inverse: 47 + 47 = 94, and the ROT47 alphabet has exactly 94 characters. This mathematical property was recognized when ROT13 was adopted as the Usenet spoiler convention — the same program or command could encode and decode, which was practically convenient for users.`,
   },
   {
     category: 'Practical',
@@ -103,7 +103,7 @@ const faqs: FaqItem[] = [
   {
     category: 'Fun',
     question: 'What does "Hello World" look like in ROT13 and ROT47?',
-    answer: `"Hello World" encoded in ROT13 becomes "Uryyb Jbeyq" — H→U, e→r, l→y, l→y, o→b, space stays, W→J, o→b, r→e, l→y, d→q. The space is preserved, uppercase/lowercase mapping is maintained separately (uppercase stays uppercase, lowercase stays lowercase). In ROT47: "Hello World" becomes "%6==@ (@C=5" — the letters shift differently since ROT47 uses a different mapping that includes all printable ASCII. The space (ASCII 32) is actually outside the ROT47 range (33–126), so it is preserved unchanged. Notice that ROT47 output is less recognizable as English-derived text since digits and punctuation are also transformed. Some fun facts: "Uryyb Jbeyq" (ROT13 of "Hello World") is famous enough that it appears in discussions of ROT13 frequently. The sentence "Gur dhvpx oebja sbk whzcf bire gur ynml qbt" is "The quick brown fox jumps over the lazy dog" — the famous pangram that contains every letter of the alphabet — encoded in ROT13. And its ROT13 output "The quick brown fox jumps over the lazy dog" encodes back to "Gur dhvpx oebja sbk whzcf bire gur ynml qbt", demonstrating the self-inverse property.`,
+    answer: `"Hello World" encoded in ROT13 becomes "Uryyb Jbeyq" — H?U, e?r, l?y, l?y, o?b, space stays, W?J, o?b, r?e, l?y, d?q. The space is preserved, uppercase/lowercase mapping is maintained separately (uppercase stays uppercase, lowercase stays lowercase). In ROT47: "Hello World" becomes "%6==@ (@C=5" — the letters shift differently since ROT47 uses a different mapping that includes all printable ASCII. The space (ASCII 32) is actually outside the ROT47 range (33–126), so it is preserved unchanged. Notice that ROT47 output is less recognizable as English-derived text since digits and punctuation are also transformed. Some fun facts: "Uryyb Jbeyq" (ROT13 of "Hello World") is famous enough that it appears in discussions of ROT13 frequently. The sentence "Gur dhvpx oebja sbk whzcf bire gur ynml qbt" is "The quick brown fox jumps over the lazy dog" — the famous pangram that contains every letter of the alphabet — encoded in ROT13. And its ROT13 output "The quick brown fox jumps over the lazy dog" encodes back to "Gur dhvpx oebja sbk whzcf bire gur ynml qbt", demonstrating the self-inverse property.`,
   },
   {
     category: 'Practical',
@@ -118,7 +118,7 @@ const faqs: FaqItem[] = [
   {
     category: 'Technical',
     question: 'How does ROT13 relate to other Caesar ciphers and substitution ciphers?',
-    answer: `ROT13 is a specific instance of the Caesar cipher — the oldest known substitution cipher, used by Julius Caesar with a rotation of 3 (ROT3). A Caesar cipher shifts every letter by a fixed number of positions in the alphabet. ROT1 shifts by 1 (A→B, B→C...), ROT3 is the classical Caesar cipher, ROT13 shifts by 13. What makes ROT13 special among all Caesar ciphers: because the English alphabet has 26 letters and 13 is exactly half, ROT13 is its own inverse — the same operation encodes and decodes. No other rotation shares this self-inverse property (except ROT0, which changes nothing). Brute-forcing Caesar ciphers is trivial — there are only 25 non-trivial rotations to try. Frequency analysis makes it even faster for longer text: map the most common ciphertext letter to E (the most frequent English letter) and verify the implied shift. A general substitution cipher — where each letter is replaced by an arbitrary other letter, not necessarily a rotation — has 26! ≈ 4×10²⁶ possible keys. But frequency analysis still breaks it given sufficient ciphertext. ROT13 is used precisely because it offers no real security — it is intentional, light obfuscation for content warnings (spoilers, adult content), not encryption.`,
+    answer: `ROT13 is a specific instance of the Caesar cipher — the oldest known substitution cipher, used by Julius Caesar with a rotation of 3 (ROT3). A Caesar cipher shifts every letter by a fixed number of positions in the alphabet. ROT1 shifts by 1 (A?B, B?C...), ROT3 is the classical Caesar cipher, ROT13 shifts by 13. What makes ROT13 special among all Caesar ciphers: because the English alphabet has 26 letters and 13 is exactly half, ROT13 is its own inverse — the same operation encodes and decodes. No other rotation shares this self-inverse property (except ROT0, which changes nothing). Brute-forcing Caesar ciphers is trivial — there are only 25 non-trivial rotations to try. Frequency analysis makes it even faster for longer text: map the most common ciphertext letter to E (the most frequent English letter) and verify the implied shift. A general substitution cipher — where each letter is replaced by an arbitrary other letter, not necessarily a rotation — has 26! ˜ 4×10²6 possible keys. But frequency analysis still breaks it given sufficient ciphertext. ROT13 is used precisely because it offers no real security — it is intentional, light obfuscation for content warnings (spoilers, adult content), not encryption.`,
   },
   {
     category: 'Use Cases',
@@ -128,7 +128,7 @@ const faqs: FaqItem[] = [
   {
     category: 'Technical',
     question: 'What is the ROT13 equivalent for numbers and special characters — ROT5, ROT18, ROT47?',
-    answer: `Standard ROT13 rotates only the 26 Latin alphabet letters (A-Z, a-z). Numbers, spaces, punctuation, and all other characters pass through unchanged. ROT5: rotates only digits by 5 positions — 0→5, 1→6, 2→7, 3→8, 4→9, 5→0, 6→1, 7→2, 8→3, 9→4. Like ROT13, it is self-inverse because 10 ÷ 2 = 5. ROT18 (also called ROT13/ROT5): applies ROT13 to letters and ROT5 to digits simultaneously, leaving punctuation and spaces unchanged. Self-inverse. ROT47: shifts all 94 printable ASCII characters (from ! at code 33 to ~ at code 126) by 47 positions. Formula: ((charCode - 33 + 47) % 94) + 33. Unlike ROT13 and ROT5, ROT47 encodes letters, digits, punctuation, and symbols. Self-inverse because 47 × 2 = 94 (the size of the printable ASCII range). ROT47 in tr: tr '!-~' 'P-~!-O'. Our ROT13 tool encodes letters only (standard ROT13). For ROT47, use the command-line tr syntax or a dedicated ROT47 tool. ROT47 is more thorough obfuscation since it scrambles all printable characters including URLs, email addresses, and code syntax — useful when you want to obscure content that mixes letters, numbers, and punctuation.`,
+    answer: `Standard ROT13 rotates only the 26 Latin alphabet letters (A-Z, a-z). Numbers, spaces, punctuation, and all other characters pass through unchanged. ROT5: rotates only digits by 5 positions — 0?5, 1?6, 2?7, 3?8, 4?9, 5?0, 6?1, 7?2, 8?3, 9?4. Like ROT13, it is self-inverse because 10 ÷ 2 = 5. ROT18 (also called ROT13/ROT5): applies ROT13 to letters and ROT5 to digits simultaneously, leaving punctuation and spaces unchanged. Self-inverse. ROT47: shifts all 94 printable ASCII characters (from ! at code 33 to ~ at code 126) by 47 positions. Formula: ((charCode - 33 + 47) % 94) + 33. Unlike ROT13 and ROT5, ROT47 encodes letters, digits, punctuation, and symbols. Self-inverse because 47 × 2 = 94 (the size of the printable ASCII range). ROT47 in tr: tr '!-~' 'P-~!-O'. Our ROT13 tool encodes letters only (standard ROT13). For ROT47, use the command-line tr syntax or a dedicated ROT47 tool. ROT47 is more thorough obfuscation since it scrambles all printable characters including URLs, email addresses, and code syntax — useful when you want to obscure content that mixes letters, numbers, and punctuation.`,
   },
   {
     category: 'Technical',
@@ -205,7 +205,7 @@ const writeUp = (
 
     <h2>Fun with ROT13: Notable Examples</h2>
     <p>
-      Several ROT13 facts that delight programmers and internet culture enthusiasts: The sentence "Gur dhvpx oebja sbk whzcf bire gur ynml qbt" encodes "The quick brown fox jumps over the lazy dog" — the famous English pangram. "Uryyb Jbeyq" decodes to "Hello World." Some words are their own ROT13 — called "ROT13 fixed points" — though for complete words this is rare. True ROT13 word pairs (where ROT13 produces another valid English word) include: "abjurer" ↔ "nowhere", "chevy" ↔ "puryl", "terra" ↔ "green." The unix fortune command had ROT13 as a built-in option for filtering potentially offensive fortunes — demonstrating the cultural depth of ROT13 in Unix tradition.
+      Several ROT13 facts that delight programmers and internet culture enthusiasts: The sentence "Gur dhvpx oebja sbk whzcf bire gur ynml qbt" encodes "The quick brown fox jumps over the lazy dog" — the famous English pangram. "Uryyb Jbeyq" decodes to "Hello World." Some words are their own ROT13 — called "ROT13 fixed points" — though for complete words this is rare. True ROT13 word pairs (where ROT13 produces another valid English word) include: "abjurer" ? "nowhere", "chevy" ? "puryl", "terra" ? "green." The unix fortune command had ROT13 as a built-in option for filtering potentially offensive fortunes — demonstrating the cultural depth of ROT13 in Unix tradition.
     </p>
 
     <h2>ROT13 in Online Communities and Forum Culture</h2>
@@ -253,7 +253,7 @@ const writeUp = (
       Zero-width characters: inserting invisible Unicode characters (U+200B zero-width space, U+200C zero-width non-joiner) into text creates copies that look identical visually but differ at the character level. Used for digital watermarking — each copy of a document has a unique pattern of zero-width characters identifying the recipient. Completely invisible to readers, unlike ROT13 which is visibly scrambled.
     </p>
     <p>
-      Homoglyph substitution: replacing Latin characters with visually identical characters from other Unicode blocks (Cyrillic 'а' replacing Latin 'a', for example). Used for domain squatting (punycode attacks) and bypassing content filters. Visually identical to readers but detectable by character-level analysis.
+      Homoglyph substitution: replacing Latin characters with visually identical characters from other Unicode blocks (Cyrillic '?' replacing Latin 'a', for example). Used for domain squatting (punycode attacks) and bypassing content filters. Visually identical to readers but detectable by character-level analysis.
     </p>
     <p>
       ROT13's unique position: it is the only text transformation that is simultaneously obvious to technical readers (clearly encoded), reversible with a single shared tool, tradition-sanctioned by internet culture, and carries no negative connotations. It is the socially acceptable face of text obfuscation — used by convention, not deception.
@@ -267,7 +267,7 @@ const writeUp = (
       Concept 1 — Encryption and decryption: ROT13 demonstrates that encryption is a reversible transformation and decryption is the reverse process. Students immediately understand that the ciphertext "Uryyb" is not the original data, and that the key (13) plus the algorithm (Caesar shift) together produce the decryption.
     </p>
     <p>
-      Concept 2 — Key space and brute force: a Caesar cipher has 26 possible keys (ROT0 through ROT25). Brute force means trying all 26. Students can manually brute-force a short ROT13 ciphertext by trying each shift. This demonstrates why key space matters — modern AES has 2¹²⁸ possible keys, making brute force computationally impossible.
+      Concept 2 — Key space and brute force: a Caesar cipher has 26 possible keys (ROT0 through ROT25). Brute force means trying all 26. Students can manually brute-force a short ROT13 ciphertext by trying each shift. This demonstrates why key space matters — modern AES has 2¹²8 possible keys, making brute force computationally impossible.
     </p>
     <p>
       Concept 3 — Frequency analysis: take a paragraph-length ROT13 text, count the frequency of each character, and compare against known English letter frequencies (E, T, A, O, I, N, S, H, R, D). The most frequent ciphertext letter should map to E, revealing the rotation. This demonstrates that linguistic patterns survive simple substitution — a key weakness that modern ciphers address through diffusion and confusion.
@@ -338,13 +338,13 @@ const writeUp = (
       Browser bookmark with auto-focus: bookmark our ROT13 tool and add it to your browser's bookmark bar for one-click access. The text input auto-focuses on page load, so you can immediately start typing or paste with Ctrl+V after clicking the bookmark. Total time from intent to result: 2-3 seconds.
     </p>
     <p>
-      Custom keyboard shortcuts: on macOS, you can create a system-wide text substitution that encodes ROT13 on a trigger. In System Settings → Keyboard → Text Replacements, add "rot13:" as a trigger and the ROT13 encoding of a common phrase as a replacement. For JavaScript developers, a bookmarklet provides ROT13 inline: create a bookmark with URL <code>javascript:void(prompt('ROT13:',prompt('Enter text:').replace(/[a-zA-Z]/g,c=&gt;String.fromCharCode((c&lt;='Z'?90:122)&gt;=(c=c.charCodeAt(0)+13)?c:c-26))))</code>.
+      Custom keyboard shortcuts: on macOS, you can create a system-wide text substitution that encodes ROT13 on a trigger. In System Settings ? Keyboard ? Text Replacements, add "rot13:" as a trigger and the ROT13 encoding of a common phrase as a replacement. For JavaScript developers, a bookmarklet provides ROT13 inline: create a bookmark with URL <code>javascript:void(prompt('ROT13:',prompt('Enter text:').replace(/[a-zA-Z]/g,c=&gt;String.fromCharCode((c&lt;='Z'?90:122)&gt;=(c=c.charCodeAt(0)+13)?c:c-26))))</code>.
     </p>
     <p>
-      Terminal alias for power users: add to your .bashrc or .zshrc: <code>alias rot13="tr 'A-Za-z' 'N-ZA-Mn-za-m'"</code>. Then use: <code>echo "Hello World" | rot13</code> → "Uryyb Jbeyq". Or read from clipboard on macOS: <code>pbpaste | rot13 | pbcopy</code> (read clipboard, ROT13, write clipboard). This workflow enables ROT13 without opening a browser tab, ideal for terminal-centric developers.
+      Terminal alias for power users: add to your .bashrc or .zshrc: <code>alias rot13="tr 'A-Za-z' 'N-ZA-Mn-za-m'"</code>. Then use: <code>echo "Hello World" | rot13</code> ? "Uryyb Jbeyq". Or read from clipboard on macOS: <code>pbpaste | rot13 | pbcopy</code> (read clipboard, ROT13, write clipboard). This workflow enables ROT13 without opening a browser tab, ideal for terminal-centric developers.
     </p>
     <p>
-      VS Code extension: the "ROT13" extension for VS Code adds a command palette entry (Ctrl+Shift+P → "Encode/Decode ROT13") that encodes or decodes selected text in-place. Ideal for developers who frequently work with ROT13 in test fixtures or code comments.
+      VS Code extension: the "ROT13" extension for VS Code adds a command palette entry (Ctrl+Shift+P ? "Encode/Decode ROT13") that encodes or decodes selected text in-place. Ideal for developers who frequently work with ROT13 in test fixtures or code comments.
     </p>
     <p>
       Integration into writing workflows: authors and content creators who use ROT13 for workshop spoiler management can add a ROT13 keyboard shortcut to their writing tool. In Scrivener, custom macros can be created. In Ulysses or iA Writer, the terminal alias approach (clipboard-based) is most practical. In Google Docs, a Google Apps Script can be added to the document with a menu item for ROT13 encoding of selected text.
@@ -406,10 +406,10 @@ const writeUp = (
       The complete ROT13 substitution mapping for quick reference. Each letter maps to the letter 13 positions ahead in the alphabet. Because of the self-inverse property, the mapping is bidirectional — the same table encodes and decodes:
     </p>
     <p>
-      Uppercase: A↔N, B↔O, C↔P, D↔Q, E↔R, F↔S, G↔T, H↔U, I↔V, J↔W, K↔X, L↔Y, M↔Z. Lowercase: a↔n, b↔o, c↔p, d↔q, e↔r, f↔s, g↔t, h↔u, i↔v, j↔w, k↔x, l↔y, m↔z.
+      Uppercase: A?N, B?O, C?P, D?Q, E?R, F?S, G?T, H?U, I?V, J?W, K?X, L?Y, M?Z. Lowercase: a?n, b?o, c?p, d?q, e?r, f?s, g?t, h?u, i?v, j?w, k?x, l?y, m?z.
     </p>
     <p>
-      Reading the table: to encode "Hello", find H→U, e→r, l→y, l→y, o→b → "Uryyb". To decode "Uryyb", apply the same table: U→H, r→e, y→l, y→l, b→o → "Hello". The identical forward and reverse operation is what makes ROT13 its own inverse. All numbers, spaces, punctuation, and characters outside A-Z and a-z remain unchanged through ROT13 encoding. Our online tool applies this mapping instantly to any length of text you paste into the input field.
+      Reading the table: to encode "Hello", find H?U, e?r, l?y, l?y, o?b ? "Uryyb". To decode "Uryyb", apply the same table: U?H, r?e, y?l, y?l, b?o ? "Hello". The identical forward and reverse operation is what makes ROT13 its own inverse. All numbers, spaces, punctuation, and characters outside A-Z and a-z remain unchanged through ROT13 encoding. Our online tool applies this mapping instantly to any length of text you paste into the input field.
     </p>
   </section>
 );

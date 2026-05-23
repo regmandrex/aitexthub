@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import HumanizerUpsellCard from '../HumanizerUpsellCard';
 import { marked } from 'marked';
 
 export function MarkdownToHtmlTool() {
@@ -43,6 +44,7 @@ export function MarkdownToHtmlTool() {
           }
         </div>
       )}
+      {output && <HumanizerUpsellCard />}
     </div>
   );
 }

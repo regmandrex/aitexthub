@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import HumanizerUpsellCard from '../HumanizerUpsellCard';
 
 export function BoxShadowGeneratorTool() {
   const [x, setX] = useState(0);

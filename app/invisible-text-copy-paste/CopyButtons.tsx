@@ -9,7 +9,7 @@ export const characters = [
   { name: 'Word Joiner', unicode: 'U+2060', char: '\u2060', description: 'Invisible character that prevents line breaks at its position.', uses: 'Formatting control, invisible filler' },
   { name: 'Non-Breaking Space', unicode: 'U+00A0', char: '\u00A0', description: 'Looks like a regular space but is a distinct Unicode character.', uses: 'Blank messages, invisible names, form fields' },
   { name: 'Soft Hyphen', unicode: 'U+00AD', char: '\u00AD', description: 'Invisible hyphenation hint. Produces no visible output in most apps.', uses: 'Invisible text in messages and usernames' },
-  { name: 'Invisible Separator', unicode: 'U+2063', char: '\u2063', description: 'Invisible separator character — zero visible output.', uses: 'Blank text, invisible characters in forms' },
+  { name: 'Invisible Separator', unicode: 'U+2063', char: '\u2063', description: 'Invisible separator character â€” zero visible output.', uses: 'Blank text, invisible characters in forms' },
   { name: 'Function Application', unicode: 'U+2061', char: '\u2061', description: 'Mathematical invisible operator. Completely invisible in plain text.', uses: 'Invisible filler in text fields' },
 ];
 
@@ -25,7 +25,7 @@ function CopyButton({ char, label }: { char: string; label: string }) {
       onClick={handleCopy}
       className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${copied ? 'bg-green-500 text-white' : 'bg-blue-600 hover:bg-blue-700 text-white'}`}
     >
-      {copied ? '✓ Copied!' : label}
+      {copied ? 'âœ“ Copied!' : label}
     </button>
   );
 }
@@ -55,7 +55,7 @@ function BulkCopyBox() {
         onClick={handleCopy}
         className={`w-full py-3 rounded-lg font-medium transition-colors ${copied ? 'bg-green-500 text-white' : 'bg-blue-600 hover:bg-blue-700 text-white'}`}
       >
-        {copied ? `✓ Copied ${count} invisible characters!` : `Copy ${count} Invisible Characters`}
+        {copied ? `âœ“ Copied ${count} invisible characters!` : `Copy ${count} Invisible Characters`}
       </button>
     </div>
   );

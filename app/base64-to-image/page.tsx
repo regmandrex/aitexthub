@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next';
+import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { JsonLd } from '@/components/JsonLd';
 import FAQSection from '@/components/FAQSection';
@@ -12,7 +12,7 @@ import { getToolBySlug } from '@/lib/tools/registry';
 import { siteUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 
-export const revalidate = 604800;
+export const revalidate = 2592000;
 const toolSlug = 'base64-to-image';
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -103,7 +103,7 @@ const faqs: FaqItem[] = [
   {
     category: 'Privacy',
     question: 'Is my base64 image data private when using this tool?',
-    answer: `Yes, your base64 image data is completely private. Our tool decodes base64 entirely in your browser using JavaScript — no data is uploaded to our servers. The base64 string you paste, the decoded image, and any metadata about the image all remain on your local device and disappear when you close or reload the tab. This privacy guarantee is important if you are working with base64-encoded images that contain sensitive content — medical images, private photos, confidential diagrams, or proprietary product designs. Because decoding happens locally, there is no risk of the image being intercepted in transit, stored on a third-party server, or processed by analytics systems. You can verify this claim using your browser's developer tools: open the Network tab (F12 → Network) and paste a base64 string — you will see no network requests triggered by the decoding operation.`,
+    answer: `Yes, your base64 image data is completely private. Our tool decodes base64 entirely in your browser using JavaScript — no data is uploaded to our servers. The base64 string you paste, the decoded image, and any metadata about the image all remain on your local device and disappear when you close or reload the tab. This privacy guarantee is important if you are working with base64-encoded images that contain sensitive content — medical images, private photos, confidential diagrams, or proprietary product designs. Because decoding happens locally, there is no risk of the image being intercepted in transit, stored on a third-party server, or processed by analytics systems. You can verify this claim using your browser's developer tools: open the Network tab (F12 ? Network) and paste a base64 string — you will see no network requests triggered by the decoding operation.`,
   },
   {
     category: 'Advanced',
@@ -255,7 +255,7 @@ const writeUp = (
       Base64 encoding is elegantly simple in concept but has real efficiency implications for image transmission and storage. Understanding the mathematics helps you make informed decisions about when to use base64 and when to choose alternatives.
     </p>
     <p>
-      <strong>The 33% size overhead explained</strong>: base64 encodes every 3 bytes of input as 4 characters of output. Three bytes = 24 bits. Four base64 characters (6 bits each) = 24 bits. So the ratio is 4/3 ≈ 1.333, meaning every byte of original image data requires 1.333 bytes of base64 representation. A 300KB JPEG becomes 400KB of base64. A 1MB PNG becomes 1.33MB of base64. This overhead is constant regardless of image content — it is a property of the encoding scheme, not the image. When images are transmitted over HTTP with gzip compression enabled, text-based base64 compresses well because of its limited character set repetition, often recovering 20-30% of the base64 overhead. However, images themselves are already compressed (PNG uses DEFLATE, JPEG uses entropy coding), so gzip of base64-encoded image data provides less benefit than gzip of unrelated text content.
+      <strong>The 33% size overhead explained</strong>: base64 encodes every 3 bytes of input as 4 characters of output. Three bytes = 24 bits. Four base64 characters (6 bits each) = 24 bits. So the ratio is 4/3 ˜ 1.333, meaning every byte of original image data requires 1.333 bytes of base64 representation. A 300KB JPEG becomes 400KB of base64. A 1MB PNG becomes 1.33MB of base64. This overhead is constant regardless of image content — it is a property of the encoding scheme, not the image. When images are transmitted over HTTP with gzip compression enabled, text-based base64 compresses well because of its limited character set repetition, often recovering 20-30% of the base64 overhead. However, images themselves are already compressed (PNG uses DEFLATE, JPEG uses entropy coding), so gzip of base64-encoded image data provides less benefit than gzip of unrelated text content.
     </p>
     <p>
       <strong>Padding and alignment</strong>: when the image binary data length is not divisible by 3, base64 padding (= characters) is added to align the output to a multiple of 4 characters. If image data has length 3N, no padding needed. If 3N+1, two = characters are added. If 3N+2, one = character is added. Padding characters never exceed 2 (==) at the end of a base64 string. Encountering more than 2 padding characters indicates an error in the base64 string. Missing padding (length not divisible by 4) requires adding = characters before decoding — our tool handles this automatically.
@@ -309,7 +309,7 @@ const writeUp = (
       <strong>Data URL format</strong>: <code>data:[MIME type];base64,[base64 string]</code>. Example: <code>data:image/png;base64,iVBORw0KGgo=</code>.
     </p>
     <p>
-      <strong>MIME types for common image formats</strong>: PNG → <code>image/png</code>. JPEG → <code>image/jpeg</code>. GIF → <code>image/gif</code>. WebP → <code>image/webp</code>. SVG → <code>image/svg+xml</code>. BMP → <code>image/bmp</code>. ICO → <code>image/x-icon</code>.
+      <strong>MIME types for common image formats</strong>: PNG ? <code>image/png</code>. JPEG ? <code>image/jpeg</code>. GIF ? <code>image/gif</code>. WebP ? <code>image/webp</code>. SVG ? <code>image/svg+xml</code>. BMP ? <code>image/bmp</code>. ICO ? <code>image/x-icon</code>.
     </p>
     <p>
       <strong>Encode image to base64</strong> — Python: <code>import base64; base64.b64encode(open('img.png','rb').read()).decode()</code>. Node.js: <code>fs.readFileSync('img.png').toString('base64')</code>. Browser: <code>const reader = new FileReader(); reader.readAsDataURL(file); reader.onload = e =&gt; console.log(e.target.result)</code>.
@@ -330,7 +330,7 @@ const writeUp = (
       <strong>Check base64 validity</strong>: valid base64 characters are A-Z, a-z, 0-9, +, /, =. URL-safe base64 also uses - and _. Any other character indicates invalid or corrupt base64. String length should be divisible by 4 (after removing whitespace).
     </p>
     <p>
-      <strong>Base64 size calculator</strong>: base64 output length = ⌈original bytes ÷ 3⌉ × 4. For a 150KB (153,600 byte) image: ⌈153,600 ÷ 3⌉ × 4 = 51,200 × 4 = 204,800 characters (200KB base64 string).
+      <strong>Base64 size calculator</strong>: base64 output length = ?original bytes ÷ 3? × 4. For a 150KB (153,600 byte) image: ?153,600 ÷ 3? × 4 = 51,200 × 4 = 204,800 characters (200KB base64 string).
     </p>
     <p>
       <strong>Common base64 prefixes by format</strong>: PNG starts with <code>iVBORw0KGgo</code>. JPEG starts with <code>/9j/</code>. GIF starts with <code>R0lGOD</code>. WebP starts with <code>UklGR</code>. PDF starts with <code>JVBERi0</code>. These prefixes allow format identification from the base64 string without decoding the full content — useful for quick validation that the base64 actually represents an image.
@@ -373,7 +373,7 @@ const writeUp = (
       <strong>Programming language libraries</strong>: Python's <code>base64</code> module, Node.js Buffer, Java's <code>java.util.Base64</code>, PHP's <code>base64_decode()</code>, C#'s <code>Convert.FromBase64String()</code> — all provide reliable, performant base64 decoding integrated into application code. Libraries are the right choice when base64 decoding is part of an application's functionality, batch processing pipeline, or automated test suite. They offer the most control: format validation, error handling, integration with image processing libraries, and performance optimization.
     </p>
     <p>
-      <strong>When to use each tool</strong>: debugging a single API response → use our online decoder for speed. Extracting all images from a database export → use command-line scripting. Building a web application that displays user-uploaded images as base64 → use a programming library. Verifying that your encoding logic produces valid images → use our decoder as a spot-check alongside automated tests. The tools complement each other: interactive debugging with our tool, automated processing with code.
+      <strong>When to use each tool</strong>: debugging a single API response ? use our online decoder for speed. Extracting all images from a database export ? use command-line scripting. Building a web application that displays user-uploaded images as base64 ? use a programming library. Verifying that your encoding logic produces valid images ? use our decoder as a spot-check alongside automated tests. The tools complement each other: interactive debugging with our tool, automated processing with code.
     </p>
     <p>
       Ultimately, the goal is always the same: convert an opaque base64 string into a viewable image as efficiently as possible. Whether you are a developer debugging an AI image generation API, a data analyst inspecting database records, an email developer troubleshooting a newsletter template, or a student learning about encoding — our free online base64 to image decoder provides the fastest path from encoded string to visible image, with complete privacy and zero installation required.

@@ -1,4 +1,4 @@
-﻿import Link from 'next/link';
+import Link from 'next/link';
 import { buildArticleMeta } from '@/lib/seo-meta';
 import { JsonLd } from '@/components/JsonLd';
 import { blogPostingSchema } from '@/lib/schema/blog';
@@ -11,7 +11,7 @@ const headline = 'ChatGPT Text to WordPress: The Cleanest Copy-Paste Workflow (S
 const description =
   'A reliable workflow to move ChatGPT text into WordPress without broken blocks, invisible Unicode, spacing issues, or Core Web Vitals regressions.';
 
-export const revalidate = 604800;
+export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({

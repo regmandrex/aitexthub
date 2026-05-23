@@ -1,11 +1,12 @@
 'use client';
 
 import { GenericTextProcessorTool } from './GenericTextProcessorTool';
+import { callAiTool } from '@/lib/tools/aiToolApi';
 
 export function SpeciesNameGeneratorTool() {
   return (
     <GenericTextProcessorTool
-      processText={(text) => (text.trim() ? `Species name ideas based on: "${text.trim().slice(0, 50)}..." — Connect a generator to create scientific-style binomial names (e.g. Genus species).` : '')}
+      processText={(text) => callAiTool('species_name_generator', text)}
       inputLabel="Keywords or description"
       outputLabel="Species names"
       inputPlaceholder="e.g. dragon, blue, fire..."

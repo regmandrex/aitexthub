@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import ToolTextArea from './ToolTextArea';
+import HumanizerUpsellCard from '../HumanizerUpsellCard';
 
 function textToHtml(text: string, opts: { wrapP: boolean; br: boolean; escape: boolean; wrapper: boolean; nbsp: boolean; links: boolean }): string {
   let out = text;
@@ -82,6 +83,7 @@ export function TextToHtmlTool() {
           <div className="prose prose-sm max-w-none" dangerouslySetInnerHTML={{ __html: output }} />
         </div>
       )}
+      {output && <HumanizerUpsellCard />}
     </div>
   );
 }

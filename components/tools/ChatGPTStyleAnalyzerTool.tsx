@@ -1,27 +1,17 @@
 "use client";
-
 import { GenericTextProcessorTool } from './GenericTextProcessorTool';
+import { callAiTool } from '@/lib/tools/aiToolApi';
 
 export function ChatGPTStyleAnalyzerTool() {
-  const processText = (text: string): string => {
-    if (!text.trim()) {
-      return '';
-    }
-    
-    const words = text.trim().split(/\s+/).length;
-    const sentences = text.split(/[.!?]+/).filter(s => s.trim().length > 0).length;
-    const avgWordsPerSentence = sentences > 0 ? (words / sentences).toFixed(1) : '0';
-    
-    return `Text Analysis:\n\n• Length: ${text.length} characters\n• Words: ${words}\n• Sentences: ${sentences}\n• Average words per sentence: ${avgWordsPerSentence}\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\nNote: This tool is currently in development. Style analysis results will appear here once API integration is complete.`;
-  };
-
   return (
     <GenericTextProcessorTool
-      processText={processText}
+      toolType="analyzer"
+      processText={(text) => callAiTool('style_analyzer', text)}
       inputLabel="Text to Analyze"
       outputLabel="Style Analysis"
       inputPlaceholder="Paste text to analyze writing style..."
       outputPlaceholder="Style analysis will appear here..."
+      processButtonLabel="Analyze Style"
     />
   );
 }

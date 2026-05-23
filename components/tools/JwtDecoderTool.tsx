@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import HumanizerUpsellCard from '../HumanizerUpsellCard';
 
 function base64UrlDecode(str: string) {
   const base64 = str.replace(/-/g, '+').replace(/_/g, '/');

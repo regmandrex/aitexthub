@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from 'react';
+import HumanizerUpsellCard from '../HumanizerUpsellCard';
 
 const COMMON_PX = [4,6,8,10,12,14,16,18,20,24,28,32,36,40,48,56,64,72,80,96,112,128];
 

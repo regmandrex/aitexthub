@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import ToolTextArea from './ToolTextArea';
+import HumanizerUpsellCard from '../HumanizerUpsellCard';
 import { decodeIdn } from '@/lib/encoding';
 
 export function IdnDecodeTool() {
@@ -98,6 +99,7 @@ export function IdnDecodeTool() {
         The decoder converts only the hostname portion and keeps any URL path or query intact.
       </p>
       <p className="text-xs text-slate-500">Works only on text you provide. No data is stored.</p>
+      {output && <HumanizerUpsellCard />}
     </div>
   );
 }

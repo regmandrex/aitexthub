@@ -1,11 +1,11 @@
-﻿import type { FaqItem } from '@/components/faqData';
+import type { FaqItem } from '@/components/faqData';
 import LineSpacingPage from '@/components/tools/LineSpacingPage';
 import { buildMeta } from '@/lib/seo-meta';
 
 const modelName = 'ChatGPT';
 const modelSlug = 'chatgpt';
 
-export const revalidate = 604800;
+export const revalidate = 2592000;
 
 const faqs: FaqItem[] = [
   {

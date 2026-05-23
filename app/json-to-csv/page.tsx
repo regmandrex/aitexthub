@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next';
+import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { JsonLd } from '@/components/JsonLd';
 import FAQSection from '@/components/FAQSection';
@@ -12,7 +12,7 @@ import { getToolBySlug } from '@/lib/tools/registry';
 import { siteUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 
-export const revalidate = 604800;
+export const revalidate = 2592000;
 const toolSlug = 'json-to-csv';
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -103,7 +103,7 @@ const faqs: FaqItem[] = [
   {
     category: 'Advanced',
     question: 'How do I convert CSV back to JSON?',
-    answer: `If you need to convert CSV back to JSON, our sister tool (CSV to JSON converter) handles this in the opposite direction. Paste your CSV data, specify whether it has a header row, choose the delimiter, and optionally enable type inference to convert numeric strings and booleans to their native JSON types. The output is a JSON array of objects where each row becomes an object with the header values as keys. CSV-to-JSON conversion is useful when you have edited data in a spreadsheet and need to feed it back into a JSON-consuming API or application. Note that any hierarchy information that was flattened during JSON-to-CSV conversion cannot be automatically reconstructed during CSV-to-JSON — the nested structure must be rebuilt manually or programmatically if needed. The round-trip JSON → CSV → JSON is lossless only for flat (non-nested) JSON structures.`,
+    answer: `If you need to convert CSV back to JSON, our sister tool (CSV to JSON converter) handles this in the opposite direction. Paste your CSV data, specify whether it has a header row, choose the delimiter, and optionally enable type inference to convert numeric strings and booleans to their native JSON types. The output is a JSON array of objects where each row becomes an object with the header values as keys. CSV-to-JSON conversion is useful when you have edited data in a spreadsheet and need to feed it back into a JSON-consuming API or application. Note that any hierarchy information that was flattened during JSON-to-CSV conversion cannot be automatically reconstructed during CSV-to-JSON — the nested structure must be rebuilt manually or programmatically if needed. The round-trip JSON ? CSV ? JSON is lossless only for flat (non-nested) JSON structures.`,
   },
   {
     category: 'Advanced',
@@ -233,13 +233,13 @@ const writeUp = (
       Method 1 — Copy-paste: convert JSON to CSV in our tool, copy the CSV output, open Google Sheets, click an empty cell, and paste (Ctrl+V). Google Sheets automatically parses comma-delimited content when pasted, distributing values into columns correctly. This works well for standard comma-delimited CSVs with no special characters in values. If values contain commas, Sheets may split them incorrectly — use the File Import method instead.
     </p>
     <p>
-      Method 2 — File import: save the CSV output as a .csv file, then go to File → Import → Upload in Google Sheets. Choose separator type "Comma" and whether to replace the current sheet or insert a new one. This method handles quoted fields with embedded commas correctly and is the most reliable for complex CSV. It also correctly detects and handles UTF-8 encoding including international characters.
+      Method 2 — File import: save the CSV output as a .csv file, then go to File ? Import ? Upload in Google Sheets. Choose separator type "Comma" and whether to replace the current sheet or insert a new one. This method handles quoted fields with embedded commas correctly and is the most reliable for complex CSV. It also correctly detects and handles UTF-8 encoding including international characters.
     </p>
     <p>
       Method 3 — IMPORTDATA formula: if your JSON source is accessible via URL that returns CSV, use =IMPORTDATA("https://your-api.com/data.csv") to pull the CSV directly into Sheets. This auto-refreshes periodically. Not applicable for JSON-to-CSV conversion since the JSON source needs to be pre-converted, but useful if you have a server-side endpoint that performs the conversion.
     </p>
     <p>
-      Data validation after import: verify row and column counts match expectations, check that numeric columns contain numbers (not text formatted as numbers — indicated by left-alignment in Sheets), and verify date columns are recognized as dates (Sheets-formatted dates show right-aligned; text dates show left-aligned). Use Format → Number → Date to reformat date columns if they imported as strings.
+      Data validation after import: verify row and column counts match expectations, check that numeric columns contain numbers (not text formatted as numbers — indicated by left-alignment in Sheets), and verify date columns are recognized as dates (Sheets-formatted dates show right-aligned; text dates show left-aligned). Use Format ? Number ? Date to reformat date columns if they imported as strings.
     </p>
 
     <h2>JSON to CSV for Machine Learning Datasets and Model Training</h2>
@@ -343,7 +343,7 @@ const writeUp = (
       Trailing commas: JavaScript objects and arrays allow trailing commas (<code>[1, 2, 3,]</code>), but standard JSON does not. Many developers accidentally include trailing commas after the last item in a JSON array or the last property in a JSON object. Fix: remove the trailing comma after the last item. In VS Code, the "JSON with Comments" mode highlights trailing commas; extensions like Prettier auto-fix them.
     </p>
     <p>
-      Unquoted keys: JavaScript object literals allow unquoted keys (<code>&#123;name: "Alice"&#125;</code>), but JSON requires all keys to be double-quoted strings (<code>&#123;"name": "Alice"&#125;</code>). This commonly occurs when developers copy JavaScript object literals (from code) into a JSON converter instead of JSON-serialized output. Fix: add double quotes around all keys. A global find-and-replace using the pattern <code>(\w+):</code> → <code>"$1":</code> handles simple cases, though regex-based fixes may not handle all edge cases.
+      Unquoted keys: JavaScript object literals allow unquoted keys (<code>&#123;name: "Alice"&#125;</code>), but JSON requires all keys to be double-quoted strings (<code>&#123;"name": "Alice"&#125;</code>). This commonly occurs when developers copy JavaScript object literals (from code) into a JSON converter instead of JSON-serialized output. Fix: add double quotes around all keys. A global find-and-replace using the pattern <code>(\w+):</code> ? <code>"$1":</code> handles simple cases, though regex-based fixes may not handle all edge cases.
     </p>
     <p>
       Single quotes: JSON requires double quotes for strings — single quotes are not valid JSON. <code>&#123;'name': 'Alice'&#125;</code> is JavaScript object syntax, not JSON. Fix: replace all single quotes used as string delimiters with double quotes. Be careful not to replace apostrophes within string values (e.g., <code>"don't"</code>).
@@ -366,7 +366,7 @@ const writeUp = (
       WooCommerce REST API to CSV: WooCommerce returns product data with similar nested structures. The CSV export for WooCommerce requires specific columns: ID, Type, SKU, Name, Published, Price, Sale Price, Stock, Categories, Tags, Images. After JSON-to-CSV conversion, map your JSON fields to these column names and ensure categories are pipe-separated (Clothing|T-Shirts) rather than in separate columns.
     </p>
     <p>
-      Price list generation: product JSON from an ERP or inventory system often needs to become a PDF price list for sales teams. The typical workflow: JSON → CSV → Excel → formatted price list PDF. Our converter handles the first step; Excel's formatting and PDF export handles the final steps. Sorting by category and filtering by active products in Excel before printing keeps the price list relevant and organized.
+      Price list generation: product JSON from an ERP or inventory system often needs to become a PDF price list for sales teams. The typical workflow: JSON ? CSV ? Excel ? formatted price list PDF. Our converter handles the first step; Excel's formatting and PDF export handles the final steps. Sorting by category and filtering by active products in Excel before printing keeps the price list relevant and organized.
     </p>
     <p>
       Competitor price monitoring: price monitoring tools scrape competitor sites and return price data as JSON. Converting this to CSV and importing into Excel enables price comparison analysis, margin calculations, and repricing decision support. The JSON typically contains product name, URL, price, and availability — all flatten cleanly to CSV columns for spreadsheet analysis.

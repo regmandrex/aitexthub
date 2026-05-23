@@ -1,10 +1,10 @@
-﻿import { JsonLd } from '@/components/JsonLd';
+import { JsonLd } from '@/components/JsonLd';
 import AdSenseSlot from '@/components/ads/AdSenseSlot';
 import BelowToolAd from '@/components/ads/BelowToolAd';
 import { siteUrl } from '@/lib/seo/url';
 import { SymbolGrid } from './SymbolGrid';
 
-export const revalidate = 604800;
+export const revalidate = 2592000;
 
 const faqs = [
   { question: 'How do I type an em dash?', answer: 'The easiest way to type an em dash is to copy it from this page using the Copy button next to the em dash character (—). Alternatively: on Mac, press Option+Shift+- (minus). On Windows, hold Alt and type 0151 on the numeric keypad (Alt+0151). In Microsoft Word, type two hyphens between words and Word will auto-convert to an em dash. In Google Docs, type -- between words and it auto-converts. For HTML, use the entity &mdash; or the Unicode &#8212;.' },
@@ -14,7 +14,7 @@ const faqs = [
   { question: 'How do I type an en dash?', answer: 'To type an en dash, copy it from this page using the Copy button next to the En Dash character (–). On Mac, press Option+- (minus). On Windows, hold Alt and type 0150 on the numeric keypad (Alt+0150). In HTML, use &ndash; or &#8211;. In Microsoft Word, type a space, two hyphens, and a space between words — Word auto-converts to an en dash. The en dash is less commonly available on standard keyboards than the hyphen, making copy-paste the most reliable method for most users.' },
   { question: 'What is the ellipsis symbol and how do I copy it?', answer: 'The ellipsis symbol (…) is a single Unicode character (U+2026) that represents an omission or trailing thought — it looks identical to three periods but is one character instead of three. Using the single ellipsis character is typographically correct and ensures consistent spacing in typeset documents. To copy the ellipsis symbol, click the Copy button next to Ellipsis on this page. On Mac, press Option+; (semicolon). In HTML, use &hellip; or &#8230;.' },
   { question: 'Why use the em dash character instead of two hyphens?', answer: 'Using the proper em dash character (—) instead of two hyphens (--) is the typographically correct approach for professional writing. Two hyphens is a typewriter-era substitute that persists in digital text. The em dash character (1) renders correctly in all fonts, (2) is recognized as a proper punctuation mark by screen readers and accessibility tools, (3) does not get confused with hyphenation algorithms, (4) is correct in HTML and publishing platforms, and (5) is what professional publishers, editors, and style guides require. Copy the em dash from this page for immediate use.' },
-  { question: 'What is the blank space symbol (U+2423)?', answer: 'The blank space symbol (␣ or U+2423) is a visible representation of a space character — it looks like an underscore with an open box shape. It is used in typography, documentation, and technical writing to visibly indicate where a space should be or to represent the space key. Unlike an actual space, the blank space symbol has a visible glyph. It is used in programming language documentation, keyboard layout diagrams, and technical manuals to show space characters that would otherwise be invisible.' },
+  { question: 'What is the blank space symbol (U+2423)?', answer: 'The blank space symbol (? or U+2423) is a visible representation of a space character — it looks like an underscore with an open box shape. It is used in typography, documentation, and technical writing to visibly indicate where a space should be or to represent the space key. Unlike an actual space, the blank space symbol has a visible glyph. It is used in programming language documentation, keyboard layout diagrams, and technical manuals to show space characters that would otherwise be invisible.' },
   { question: 'How do I use an em dash in HTML?', answer: 'To use an em dash in HTML, you have three options: (1) Use the HTML entity &mdash; — the most readable in source code and guaranteed to render correctly. (2) Use the numeric entity &#8212; or &#x2014; — works the same as &mdash;. (3) Use the Unicode character directly (—) — works in UTF-8 encoded HTML documents, which is the standard for modern web pages. All three methods produce the same em dash character. Copy the em dash from this page and paste it directly into your HTML for the simplest approach.' },
   { question: 'What is the difference between em dash and hyphen in writing?', answer: 'A hyphen (-) connects compound words (well-known, copy-paste) and indicates word breaks at line ends. It has no spaces around it. An em dash (—) indicates a strong pause, parenthetical, or interruption in a sentence. Style varies: American style uses no spaces around the em dash (like—this), while British style uses spaces around it (like — this). Hyphens and em dashes are never interchangeable — using a hyphen where an em dash belongs (or vice versa) is a typographic error that editors and publishers will flag.' },
   { question: 'How do I copy special punctuation on a Chromebook?', answer: 'On a Chromebook, the easiest way to copy special punctuation like em dashes, en dashes, and ellipses is to use this page — click the Copy button next to the character you need, then paste with Ctrl+V. Alternatively, Chromebook supports Unicode character entry: press Ctrl+Shift+U, type the Unicode code point (2014 for em dash), and press Enter. This inserts the character directly without using the clipboard.' },
@@ -119,7 +119,7 @@ const article = (
 
     <h2>Blank Space Symbol — What It Is and When to Use It</h2>
     <p>
-      The <strong>blank space symbol</strong> (␣, Unicode U+2423) is a visible character that represents the concept of a blank space. Unlike an actual space character — which is invisible — the <strong>blank space symbol</strong> has a visible glyph that looks like an open rectangle or underlined box. It is used in:
+      The <strong>blank space symbol</strong> (?, Unicode U+2423) is a visible character that represents the concept of a blank space. Unlike an actual space character — which is invisible — the <strong>blank space symbol</strong> has a visible glyph that looks like an open rectangle or underlined box. It is used in:
     </p>
     <ul>
       <li>Typography and design documentation to show where a space should appear</li>
@@ -208,7 +208,7 @@ const article = (
       <li>En dashes (–) in ranges instead of hyphens (-)</li>
     </ul>
     <p>
-      For publishing to the web, word processors, and most content systems, these typographic characters are correct and desirable. But for technical use cases — code, CSV data, JSON, command-line input, some CMS platforms — these characters need to be converted to their plain ASCII equivalents. The <a href="/format-remover" className="text-blue-600 hover:underline">Format Remover</a> handles this conversion automatically: em dash → hyphen, curly quotes → straight quotes, ellipsis → three periods, en dash → hyphen. One click cleans all typographic characters from any text.
+      For publishing to the web, word processors, and most content systems, these typographic characters are correct and desirable. But for technical use cases — code, CSV data, JSON, command-line input, some CMS platforms — these characters need to be converted to their plain ASCII equivalents. The <a href="/format-remover" className="text-blue-600 hover:underline">Format Remover</a> handles this conversion automatically: em dash ? hyphen, curly quotes ? straight quotes, ellipsis ? three periods, en dash ? hyphen. One click cleans all typographic characters from any text.
     </p>
 
     <h2>Free Em Dash Copy and Paste — No Account, No Limits</h2>
@@ -233,7 +233,7 @@ export default function EmDashCopyPastePage() {
           <h1 className="text-xl font-semibold text-slate-900 sm:text-2xl md:text-3xl">Em Dash Copy and Paste</h1>
           <p className="max-w-2xl mx-auto text-xs text-slate-700 sm:text-sm md:text-[15px]">Copy em dash, en dash, ellipsis, and special punctuation symbols instantly. One-click copy for every dash, dot, and typographic symbol.</p>
           <div className="flex items-center justify-center gap-1 text-sm text-slate-500">
-            <span className="text-yellow-500">★★★★★</span>
+            <span className="text-yellow-500">?????</span>
             <span>4.9</span>
             <span>·</span>
             <span>Free</span>

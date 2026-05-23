@@ -1,4 +1,4 @@
-﻿import Link from 'next/link';
+import Link from 'next/link';
 import { buildArticleMeta } from '@/lib/seo-meta';
 import { JsonLd } from '@/components/JsonLd';
 import { blogPostingSchema } from '@/lib/schema/blog';
@@ -11,7 +11,7 @@ const headline = 'The Science of Invisible Spaces in AI Text (Why They Exist, Ho
 const description =
   'Learn what invisible Unicode spaces are, why AI text contains them, how they impact SEO, accessibility, and Core Web Vitals, and how to remove them safely.';
 
-export const revalidate = 604800;
+export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({

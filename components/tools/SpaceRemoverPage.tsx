@@ -11,6 +11,7 @@ import { siteUrl } from '@/lib/seo/url';
 import { RelatedTools } from '../tool/RelatedTools';
 import AdSenseSlot from '../ads/AdSenseSlot';
 import BelowToolAd from '../ads/BelowToolAd';
+import ProFunnelBanner from '../ProFunnelBanner';
 
 type Props = {
   modelName: string;
@@ -59,6 +60,10 @@ export default function SpaceRemoverPage({ modelName, modelSlug, faqItems, conte
             </div>
           </div>
         </section>
+
+        <div className="mt-4 -mx-4 md:mx-0">
+          <ProFunnelBanner />
+        </div>
 
         <section className="relative w-full mt-6">
           <div className="w-full max-w-none rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6">

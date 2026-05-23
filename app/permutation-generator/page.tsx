@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next';
+import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { JsonLd } from '@/components/JsonLd';
 import FAQSection from '@/components/FAQSection';
@@ -11,7 +11,7 @@ import { buildToolMeta } from '@/lib/seo-meta';
 import { siteUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
-export const revalidate = 604800;
+export const revalidate = 2592000;
 
 const toolSlug = 'permutation-generator';
 
@@ -118,7 +118,7 @@ export default async function PermutationGeneratorPage() {
     { category: 'General', question: 'What is a permutation generator?', answer: 'A permutation generator lists all possible orderings of a set of items. Order matters—so ABC and BAC count as different permutations. This tool can generate full permutations (every item used once) or partial permutations (a subset in each arrangement).' },
     { category: 'Usage', question: 'How do I use the permutation generator?', answer: 'Enter your items (e.g., letters, numbers, or words) separated by line or comma. Choose full permutations for all orderings, or partial permutations and set how many items per result. Click generate to get the list. Processing runs in your browser.' },
     { category: 'Technical', question: 'Why does the tool slow down or stop for large sets?', answer: 'The number of permutations grows factorially (e.g., 10 items = 3,628,800 full permutations). Very large sets can take a long time or hit browser limits. Use smaller sets or partial permutations with a limited size for best results.' },
-    { category: 'General', question: 'What is the difference between permutations and combinations?', answer: 'In permutations, order matters (ABC ≠ BAC). In combinations, order does not matter—only which items are chosen. This tool generates permutations. For combinations (where order does not matter), use a combination generator instead.' },
+    { category: 'General', question: 'What is the difference between permutations and combinations?', answer: 'In permutations, order matters (ABC ? BAC). In combinations, order does not matter—only which items are chosen. This tool generates permutations. For combinations (where order does not matter), use a combination generator instead.' },
     { category: 'Use cases', question: 'What can I use permutations for?', answer: 'Common uses include exploring password or PIN orderings, anagram-style arrangements, scheduling orders, teaching combinatorics, and any task where the sequence of items matters.' },
   ];
 

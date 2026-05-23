@@ -1,18 +1,17 @@
 'use client';
-
 import { GenericTextProcessorTool } from './GenericTextProcessorTool';
+import { callAiTool } from '@/lib/tools/aiToolApi';
 
 export function MiddleEnglishTranslatorTool() {
   return (
     <GenericTextProcessorTool
-      processText={(text) => (text.trim() ? `Middle English style — Convert modern text to Middle English (Chaucer-style). "${text.trim().slice(0, 50)}${text.trim().length > 50 ? '...' : ''}"` : '')}
+      toolType="translator"
+      processText={(text) => callAiTool('middle_english_translator', text)}
       inputLabel="Modern English"
-      outputLabel="Middle English style"
-      inputPlaceholder="Enter text for Middle English converter..."
+      outputLabel="Middle English"
+      inputPlaceholder="Enter text to translate to Middle English..."
       outputPlaceholder="Middle English translation will appear here..."
-      processButtonLabel="Convert to Middle English"
-      copyButtonLabel="Copy"
-      clearButtonLabel="Clear"
+      processButtonLabel="Translate to Middle English"
     />
   );
 }

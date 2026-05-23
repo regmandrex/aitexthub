@@ -1,11 +1,11 @@
-﻿import type { Metadata } from 'next';
+import type { Metadata } from 'next';
 import { JsonLd } from '@/components/JsonLd';
 import AdSenseSlot from '@/components/ads/AdSenseSlot';
 import BelowToolAd from '@/components/ads/BelowToolAd';
 import { siteUrl } from '@/lib/seo/url';
 import { InvisibleCharGrid } from '../invisible-text-copy-paste/CopyButtons';
 
-export const revalidate = 604800;
+export const revalidate = 2592000;
 
 const faqs = [
   { question: 'What is an invisible symbol?', answer: 'An invisible symbol is a Unicode character that has no visible glyph — it exists in text data as a real character but produces no visible output on screen. Common invisible symbols include zero-width space (U+200B), Hangul filler (U+3164), non-breaking space (U+00A0), word joiner (U+2060), byte-order mark (U+FEFF), and function application (U+2061). These invisible symbols are used to create blank usernames, empty-looking messages, invisible display names in games, and blank bios on social media. Click any Copy button on this page to copy an invisible symbol to your clipboard.' },

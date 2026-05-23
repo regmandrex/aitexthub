@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from 'react';
 import ToolTextArea from './ToolTextArea';
+import HumanizerUpsellCard from '../HumanizerUpsellCard';
 import { decodeMorseToText, encodeTextToMorse, isValidMorseInput } from '@/lib/morse';
 
 export function MorseCodeTranslatorTool() {

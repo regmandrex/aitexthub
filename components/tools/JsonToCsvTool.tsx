@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import ToolTextArea from './ToolTextArea';
+import HumanizerUpsellCard from '../HumanizerUpsellCard';
 
 function flattenObject(obj: Record<string, unknown>, prefix = ''): Record<string, string> {
   const result: Record<string, string> = {};
@@ -119,6 +120,7 @@ export function JsonToCsvTool() {
           Download .csv
         </button>
       </div>
+      {output && <HumanizerUpsellCard />}
     </div>
   );
 }

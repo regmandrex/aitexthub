@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import ToolTextArea from './ToolTextArea';
+import HumanizerUpsellCard from '../HumanizerUpsellCard';
 
 export function RemoveDuplicateLinesTool() {
   const [input, setInput] = useState('');
@@ -121,6 +122,7 @@ export function RemoveDuplicateLinesTool() {
           Clear
         </button>
       </div>
+      {output && <HumanizerUpsellCard />}
     </div>
   );
 }

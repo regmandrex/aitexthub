@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import HumanizerUpsellCard from '../HumanizerUpsellCard';
 
 export function HtmlTableGeneratorTool() {
   const [rows, setRows] = useState(3);

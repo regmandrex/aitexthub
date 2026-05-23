@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import ToolTextArea from './ToolTextArea';
+import HumanizerUpsellCard from '../HumanizerUpsellCard';
 
 function parseCsv(csv: string, delim: string, hasHeader: boolean, inferTypes: boolean): unknown[] {
   const lines = csv.trim().split('\n').map(l => l.replace(/\r$/, ''));
@@ -112,6 +113,7 @@ export function CsvToJsonTool() {
           Download .json
         </button>
       </div>
+      {output && <HumanizerUpsellCard />}
     </div>
   );
 }

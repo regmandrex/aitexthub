@@ -1,4 +1,4 @@
-﻿import Link from 'next/link';
+import Link from 'next/link';
 import { buildArticleMeta } from '@/lib/seo-meta';
 import { JsonLd } from '@/components/JsonLd';
 import { blogPostingSchema } from '@/lib/schema/blog';
@@ -13,7 +13,7 @@ const headline =
 const description =
   'Learn simple methods to remove extra spaces, fix paragraph gaps, and clean up Word documents using built-in tools and shortcuts.';
 
-export const revalidate = 604800;
+export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({
@@ -118,7 +118,7 @@ export default function HowToQuicklyFixUnwantedSpacesInWordDocumentsPage() {
           and in the &quot;Spacing&quot; section set &quot;Before&quot; and
           &quot;After&quot; to values you want (e.g. 0 pt or 6 pt). Click
           &quot;Set as Default&quot; if you want this for all new paragraphs.
-          For documents that mix styles, use &quot;Format → Paragraph&quot; on
+          For documents that mix styles, use &quot;Format ? Paragraph&quot; on
           the style in the Styles pane so the change applies everywhere that
           style is used.
           To remove extra blank lines (empty paragraphs), use Find and Replace:
@@ -176,7 +176,7 @@ export default function HowToQuicklyFixUnwantedSpacesInWordDocumentsPage() {
           unit, or to keep two words on the same line). They look like normal
           spaces but don&apos;t break. If they appear in the wrong places (e.g.
           after copy-paste), Find and Replace can fix them: in Find what enter
-          the non-breaking space (Insert → Symbol → Special Characters, or
+          the non-breaking space (Insert ? Symbol ? Special Characters, or
           copy one from the document), and in Replace with enter a normal space.
           Replace All. Alternatively, clean the source text with a{' '}
           <Link href="/space-remover">space remover</Link> before pasting so you

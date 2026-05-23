@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from 'react';
+import HumanizerUpsellCard from '../HumanizerUpsellCard';
 
 async function hashText(text: string, algo: string): Promise<string> {
   const buf = new TextEncoder().encode(text);

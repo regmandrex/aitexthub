@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import ToolTextArea from './ToolTextArea';
+import HumanizerUpsellCard from '../HumanizerUpsellCard';
 
 const DASH_REGEX = /\s*[\u2013\u2014\u2015]\s*/g;
 
@@ -107,6 +108,7 @@ export function EmDashRemoverTool() {
           {LABELS.clearButton}
         </button>
       </div>
+      {output && <HumanizerUpsellCard />}
     </div>
   );
 }

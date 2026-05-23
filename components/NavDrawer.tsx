@@ -118,8 +118,9 @@ export default function NavDrawer({ open, onClose }: NavDrawerProps) {
 
       <aside
         className={`fixed right-0 top-0 z-[70] flex h-full w-[88vw] max-w-md flex-col bg-white shadow-2xl transition-transform ${
-          open ? 'translate-x-0' : 'translate-x-full'
+          open ? 'translate-x-0' : 'translate-x-full pointer-events-none'
         }`}
+        style={{ visibility: open ? 'visible' : 'hidden' }}
         role="dialog"
         aria-label="Navigation"
         aria-hidden={!open}
@@ -127,7 +128,6 @@ export default function NavDrawer({ open, onClose }: NavDrawerProps) {
         <div className="flex items-start justify-between border-b border-slate-200 px-5 py-4">
           <div>
             <h2 className="text-lg font-semibold text-slate-900">Navigation</h2>
-            <p className="mt-0.5 text-xs text-slate-500">{totalCount} tools total</p>
           </div>
           <button
             type="button"
@@ -163,7 +163,7 @@ export default function NavDrawer({ open, onClose }: NavDrawerProps) {
                   aria-expanded={isOpen}
                 >
                   <span>
-                    {group.label} <span className="text-slate-400">({group.tools.length})</span>
+                    {group.label}
                   </span>
                   <svg
                     className={`h-4 w-4 text-slate-400 transition-transform ${isOpen ? 'rotate-180' : ''}`}
@@ -193,7 +193,7 @@ export default function NavDrawer({ open, onClose }: NavDrawerProps) {
                         onClick={onClose}
                         className="block rounded-lg px-6 py-2 text-xs font-semibold text-brand-600 hover:bg-slate-50 hover:text-brand-700"
                       >
-                        View all {group.tools.length} →
+                        View all →
                       </Link>
                     ) : null}
                   </div>

@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import ToolTextArea from './ToolTextArea';
+import HumanizerUpsellCard from '../HumanizerUpsellCard';
 
 const LABELS = {
   inputLabel: 'Input text',
@@ -150,6 +151,7 @@ export function FindReplaceTool() {
           {LABELS.clearButton}
         </button>
       </div>
+      {output && <HumanizerUpsellCard />}
     </div>
   );
 }

@@ -1,4 +1,4 @@
-﻿import Link from 'next/link';
+import Link from 'next/link';
 import { buildArticleMeta } from '@/lib/seo-meta';
 import { JsonLd } from '@/components/JsonLd';
 import { blogPostingSchema } from '@/lib/schema/blog';
@@ -11,7 +11,7 @@ const headline = 'How to Use AI for Your Resume Without Getting Flagged (2026 Gu
 const description =
   'Learn the smart workflow for using AI to write resumes in 2026. Remove watermarks, optimize for ATS systems, avoid AI detection, and produce applications that genuinely represent you.';
 
-export const revalidate = 604800;
+export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({
@@ -138,7 +138,7 @@ export default function HowToUseAIForResumePage() {
         <h2 className="text-2xl font-semibold text-slate-900">What to personalise in every AI-assisted application</h2>
         <div className="grid gap-4 md:grid-cols-2">
           {[
-            { item: 'Specific numbers and outcomes', detail: '"Managed a team" → "Managed a team of 8 across three time zones, delivering the project 2 weeks ahead of schedule."' },
+            { item: 'Specific numbers and outcomes', detail: '"Managed a team" ? "Managed a team of 8 across three time zones, delivering the project 2 weeks ahead of schedule."' },
             { item: 'Company-specific opening paragraph', detail: 'Every cover letter opening must reference something specific about the company — a product, a recent announcement, a stated value. AI cannot generate this without real context.' },
             { item: 'Technology and tool names', detail: "Replace 'proficient in data tools' with the actual tools: Looker, dbt, BigQuery, Snowflake. Specificity is what gets resumes through keyword filtering." },
             { item: 'The reason you want this role', detail: "AI writes 'I am excited about this opportunity' for every application. Write one sentence that is actually true for this specific job — even if the reason is mundane." },

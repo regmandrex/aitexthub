@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next';
+import type { Metadata } from 'next';
 import React from 'react';
 import { notFound } from 'next/navigation';
 import FAQSection from '@/components/FAQSection';
@@ -14,7 +14,7 @@ import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
 import { spaceRemoverFaqs } from '@/lib/tools/spaceRemoverFaqs';
 
-export const revalidate = 604800;
+export const revalidate = 2592000;
 
 const toolSlug = 'space-remover';
 

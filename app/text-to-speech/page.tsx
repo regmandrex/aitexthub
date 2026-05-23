@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next';
+import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { JsonLd } from '@/components/JsonLd';
 import FAQSection from '@/components/FAQSection';
@@ -12,7 +12,7 @@ import { getToolBySlug } from '@/lib/tools/registry';
 import { siteUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 
-export const revalidate = 604800;
+export const revalidate = 2592000;
 const toolSlug = 'text-to-speech';
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -306,10 +306,10 @@ const writeUp = (
       <strong>Browser extensions</strong>: Read Aloud (available for Chrome, Firefox, Edge) is a popular browser extension that adds TTS to any webpage. It highlights each word as it is spoken, supports dozens of languages, and includes speed control. Speechify's browser extension offers higher-quality neural voices and imports content from PDFs and Google Docs. Natural Reader's extension provides similar functionality. These extensions extend TTS to all web content without copy-pasting — useful for reading news articles, documentation, and blog posts hands-free.
     </p>
     <p>
-      <strong>Mobile TTS apps</strong>: iOS's built-in accessibility features (Settings → Accessibility → Spoken Content) enable text-to-speech throughout the OS — any text you can select can be spoken. Android's TalkBack and Select to Speak (Settings → Accessibility) provide similar system-wide TTS. Third-party apps like Voice Dream Reader (iOS), Moon+ Reader Pro (Android), and Speechify (iOS/Android) offer enhanced voice quality and document import capabilities.
+      <strong>Mobile TTS apps</strong>: iOS's built-in accessibility features (Settings ? Accessibility ? Spoken Content) enable text-to-speech throughout the OS — any text you can select can be spoken. Android's TalkBack and Select to Speak (Settings ? Accessibility) provide similar system-wide TTS. Third-party apps like Voice Dream Reader (iOS), Moon+ Reader Pro (Android), and Speechify (iOS/Android) offer enhanced voice quality and document import capabilities.
     </p>
     <p>
-      <strong>Microsoft Office and Google Workspace</strong>: Microsoft Word's Read Aloud feature (Review → Read Aloud) reads documents using OS voices. OneNote has a built-in read aloud option. Google Docs can use the screen reader with ChromeVox or through the browser's built-in TTS. Google Chrome has a Read Aloud extension that works across all websites and Google Docs. For productivity workflows where you work primarily in office suites, these built-in integrations may be more convenient than a standalone web tool.
+      <strong>Microsoft Office and Google Workspace</strong>: Microsoft Word's Read Aloud feature (Review ? Read Aloud) reads documents using OS voices. OneNote has a built-in read aloud option. Google Docs can use the screen reader with ChromeVox or through the browser's built-in TTS. Google Chrome has a Read Aloud extension that works across all websites and Google Docs. For productivity workflows where you work primarily in office suites, these built-in integrations may be more convenient than a standalone web tool.
     </p>
     <p>
       <strong>Our standalone tool's advantages</strong>: despite these integrations, our dedicated TTS tool has specific advantages. It works with any text you can paste — from any source. The explicit rate and pitch controls give you fine-grained control that browser extensions sometimes lack. The focused interface without browser chrome or page content distractions is cleaner for dedicated listening sessions. And the complete privacy guarantee — all processing locally in your browser — is critical for sensitive content that you would not want processed by browser extension servers or cloud voice APIs.

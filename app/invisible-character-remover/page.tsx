@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next';
+import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { JsonLd } from '@/components/JsonLd';
 import FAQSection from '@/components/FAQSection';
@@ -13,7 +13,7 @@ import { siteUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
 
-export const revalidate = 604800;
+export const revalidate = 2592000;
 
 const toolSlug = 'invisible-character-remover';
 
@@ -87,7 +87,7 @@ const faqs: FaqItem[] = [
   {
     category: 'Privacy',
     question: 'Is my text uploaded when I use this invisible character remover?',
-    answer: 'No. This invisible character remover processes all text locally in your browser using JavaScript. Your text never leaves your device, is never transmitted to any server, and is never stored or logged anywhere. This makes it safe for confidential business documents, legal drafts, healthcare records, academic submissions, client deliverables, source code, and any other sensitive content. You can verify this by opening your browser network inspector (F12 → Network) while using the tool — you will see no outbound requests when you clean text.',
+    answer: 'No. This invisible character remover processes all text locally in your browser using JavaScript. Your text never leaves your device, is never transmitted to any server, and is never stored or logged anywhere. This makes it safe for confidential business documents, legal drafts, healthcare records, academic submissions, client deliverables, source code, and any other sensitive content. You can verify this by opening your browser network inspector (F12 ? Network) while using the tool — you will see no outbound requests when you clean text.',
   },
   {
     category: 'Compatibility',
@@ -334,7 +334,7 @@ export default async function InvisibleCharacterRemoverPage() {
           <h1 className="text-xl font-semibold text-slate-900 sm:text-2xl md:text-3xl">{title}</h1>
           <p className="max-w-2xl mx-auto text-xs text-slate-700 sm:text-sm md:text-[15px]">{description}</p>
           <div className="flex items-center justify-center gap-1 text-sm text-slate-500">
-            <span className="text-yellow-500">★★★★★</span>
+            <span className="text-yellow-500">?????</span>
             <span>4.9</span>
             <span>·</span>
             <span>Free</span>

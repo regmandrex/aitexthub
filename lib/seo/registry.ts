@@ -2616,6 +2616,13 @@ export const toolPages: ToolPage[] = [
     category: 'generator',
   },
   {
+    slug: 'korean-name-generator-online',
+    title: 'Korean Name Generator',
+    description: 'Generate authentic Korean names with Hangul, romanization, and meanings. Choose male, female, modern, traditional, or K-pop idol style names free online.',
+    seoTitle: 'Korean Name Generator Online - Korean Names With Meaning & Hangul',
+    category: 'generator',
+  },
+  {
     slug: 'gorilla-tag-name-generator',
     title: 'Gorilla Tag Name Generator',
     description: 'Generate Gorilla Tag VR usernames and in-game names for your monkey avatar.',

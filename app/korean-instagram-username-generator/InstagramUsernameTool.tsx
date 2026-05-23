@@ -5,11 +5,11 @@ import { useState } from 'react';
 type Mood = 'aesthetic' | 'short' | 'english' | 'couple' | 'cute';
 
 const MOOD_LABELS: Record<Mood, string> = {
-  aesthetic: '감성',
-  short: '짧은',
-  english: '영어 닉',
-  couple: '커플',
-  cute: '귀여운',
+  aesthetic: 'ê°ì„±',
+  short: 'ì§§ì€',
+  english: 'ì˜ì–´ ë‹‰',
+  couple: 'ì»¤í”Œ',
+  cute: 'ê·€ì—¬ìš´',
 };
 
 const POOLS: Record<Mood, { prefix: string[]; root: string[]; suffix: string[] }> = {
@@ -88,19 +88,19 @@ export function InstagramUsernameTool() {
   return (
     <div className="space-y-4">
       <div>
-        <label className="block text-sm font-medium text-slate-800 mb-1">이름 또는 키워드 (영문/숫자)</label>
+        <label className="block text-sm font-medium text-slate-800 mb-1">ì´ë¦„ ë˜ëŠ” í‚¤ì›Œë“œ (ì˜ë¬¸/ìˆ«ìž)</label>
         <input
           type="text"
           value={name}
           onChange={(e) => setName(e.target.value)}
-          placeholder="예) minsoo, jiwoo, sora"
+          placeholder="ì˜ˆ) minsoo, jiwoo, sora"
           maxLength={20}
           className="w-full rounded-lg border border-slate-300 p-3 text-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
         />
       </div>
 
       <div>
-        <label className="block text-sm font-medium text-slate-800 mb-2">아이디 분위기</label>
+        <label className="block text-sm font-medium text-slate-800 mb-2">ì•„ì´ë”” ë¶„ìœ„ê¸°</label>
         <div className="flex flex-wrap gap-2">
           {(Object.keys(MOOD_LABELS) as Mood[]).map((m) => (
             <button
@@ -124,7 +124,7 @@ export function InstagramUsernameTool() {
         onClick={handleGenerate}
         className="px-4 py-2 bg-blue-600 text-white rounded-lg text-sm font-medium hover:bg-blue-700 transition"
       >
-        {results.length > 0 ? '다른 아이디 보기' : '인스타 아이디 추천받기'}
+        {results.length > 0 ? 'ë‹¤ë¥¸ ì•„ì´ë”” ë³´ê¸°' : 'ì¸ìŠ¤íƒ€ ì•„ì´ë”” ì¶”ì²œë°›ê¸°'}
       </button>
 
       {results.length > 0 && (
@@ -136,7 +136,7 @@ export function InstagramUsernameTool() {
               onClick={() => handleCopy(id)}
               className="px-3 py-2 bg-white border border-slate-300 rounded-lg text-sm hover:bg-slate-50 transition text-left font-mono"
             >
-              {copied === id ? '복사됨!' : `@${id}`}
+              {copied === id ? 'ë³µì‚¬ë¨!' : `@${id}`}
             </button>
           ))}
         </div>

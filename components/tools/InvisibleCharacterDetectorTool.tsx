@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import ToolTextArea from './ToolTextArea';
+import HumanizerUpsellCard from '../HumanizerUpsellCard';
 
 const INVISIBLE_CHARACTERS = [
   { label: 'Zero-width space', char: '\u200B', token: '[ZWSP]' },
@@ -124,6 +125,7 @@ export function InvisibleCharacterDetectorTool() {
           </div>
         </div>
       ) : null}
+      {output && <HumanizerUpsellCard />}
     </div>
   );
 }

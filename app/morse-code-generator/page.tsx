@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next';
+import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { JsonLd } from '@/components/JsonLd';
 import FAQSection from '@/components/FAQSection';
@@ -12,7 +12,7 @@ import { getToolBySlug } from '@/lib/tools/registry';
 import { siteUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 
-export const revalidate = 604800;
+export const revalidate = 2592000;
 
 const toolSlug = 'morse-code-generator';
 
@@ -302,7 +302,7 @@ const writeUp = (
       </p>
       <ul className="list-inside list-disc space-y-1 text-slate-700">
         <li>
-          <strong>MorseCode.World:</strong> text ↔ Morse, audio playback, flashing light simulation, no login required.
+          <strong>MorseCode.World:</strong> text ? Morse, audio playback, flashing light simulation, no login required.
         </li>
         <li>
           <strong>Dcode.fr:</strong> reverse translation plus a suite of cipher tools for cryptography fans.

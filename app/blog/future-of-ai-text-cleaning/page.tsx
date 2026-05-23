@@ -1,4 +1,4 @@
-﻿import Link from 'next/link';
+import Link from 'next/link';
 import { buildArticleMeta } from '@/lib/seo-meta';
 import { JsonLd } from '@/components/JsonLd';
 import { blogPostingSchema } from '@/lib/schema/blog';
@@ -11,7 +11,7 @@ const headline = "Future of AI Text Cleaning (What's Coming Next for SEO, Publis
 const description =
   'How AI text cleaning evolves from a copy-paste fix into infrastructure: Unicode normalization, performance-aware cleaning, and content QA pipelines.';
 
-export const revalidate = 604800;
+export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({
@@ -178,7 +178,7 @@ export default function FutureOfAITextCleaningPage() {
               <strong>Make cleaning default.</strong> Do not clean “sometimes.” Clean always.
             </li>
             <li>
-              <strong>Standardize the workflow.</strong> AI → Clean → Format → Publish → Verify.
+              <strong>Standardize the workflow.</strong> AI ? Clean ? Format ? Publish ? Verify.
             </li>
             <li>
               <strong>Build internal links around pillars.</strong> Connect performance, watermark, WordPress, email, and dev workflows.

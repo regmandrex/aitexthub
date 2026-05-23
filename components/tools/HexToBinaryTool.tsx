@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from 'react';
 import ToolTextArea from './ToolTextArea';
+import HumanizerUpsellCard from '../HumanizerUpsellCard';
 import { hexToBinary, validateHexInput } from '@/lib/hex';
 
 export function HexToBinaryTool() {
