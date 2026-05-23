@@ -6,8 +6,8 @@ import { useSearchParams } from 'next/navigation';
 import NavDrawer from './NavDrawer';
 import AccountDrawer from './AccountDrawer';
 import HeaderUserMenu from './HeaderUserMenu';
-
-const DEMO_EMAIL = 'regmandrex@gmail.com';
+import { useSession } from '@/lib/auth-client';
+import PricingModal from './PricingModal';
 
 function DemoModeReader({ onChange }: { onChange: (mode: 'out' | 'free' | 'pro') => void }) {
   const params = useSearchParams();
@@ -23,9 +23,12 @@ function DemoModeReader({ onChange }: { onChange: (mode: 'out' | 'free' | 'pro')
 export default function Header() {
   const [navOpen, setNavOpen] = useState(false);
   const [accountOpen, setAccountOpen] = useState(false);
+  const [pricingOpen, setPricingOpen] = useState(false);
   const [demoMode, setDemoMode] = useState<'out' | 'free' | 'pro'>('out');
+  const { data: session } = useSession();
 
-  const isLoggedIn = demoMode !== 'out';
+  const isLoggedIn = session?.user != null || demoMode !== 'out';
+  const userEmail = session?.user?.email ?? 'regmandrex@gmail.com';
   const plan: 'free' | 'pro' = demoMode === 'pro' ? 'pro' : 'free';
 
   return (
@@ -46,9 +49,10 @@ export default function Header() {
             {isLoggedIn ? (
               <>
                 <HeaderUserMenu
-                  email={DEMO_EMAIL}
+                  email={userEmail}
                   plan={plan}
                   onOpenAccount={() => setAccountOpen(true)}
+                  onUpgrade={() => setPricingOpen(true)}
                 />
                 <Link
                   href="/account"
@@ -61,7 +65,7 @@ export default function Header() {
               <>
                 <Link
                   href="/login"
-                  className="hidden text-sm font-medium text-slate-700 hover:text-slate-900 md:inline-flex md:px-3 md:py-2"
+                  className="text-sm font-medium text-slate-700 hover:text-slate-900 px-3 py-2"
                 >
                   Log in
                 </Link>
@@ -77,7 +81,7 @@ export default function Header() {
             <Link
               href="/ai-tools"
               aria-label="Search all tools"
-              className="inline-flex items-center justify-center rounded-lg p-2 text-slate-600 hover:bg-slate-100"
+              className="inline-flex items-center justify-center rounded-full p-2 text-slate-500 transition-colors hover:text-slate-900"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -94,7 +98,7 @@ export default function Header() {
               type="button"
               onClick={() => setNavOpen(true)}
               aria-label="Open navigation"
-              className="inline-flex items-center justify-center rounded-lg p-2 text-slate-600 hover:bg-slate-100"
+              className="inline-flex items-center justify-center rounded-full p-2 text-slate-500 transition-colors hover:text-slate-900"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -111,11 +115,12 @@ export default function Header() {
         </div>
       </header>
 
+      {pricingOpen && <PricingModal onClose={() => setPricingOpen(false)} />}
       <NavDrawer open={navOpen} onClose={() => setNavOpen(false)} />
       <AccountDrawer
         open={accountOpen}
         onClose={() => setAccountOpen(false)}
-        email={DEMO_EMAIL}
+        email={userEmail}
         plan={plan}
         wordsUsed={0}
         wordsLimit={plan === 'pro' ? 'unlimited' : 0}
