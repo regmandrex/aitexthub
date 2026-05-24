@@ -55,7 +55,7 @@ const EXCEPTIONS = [
 
 export default function RefundPolicyPage() {
   return (
-    <div className="bg-white">
+    <div className="bg-white overflow-x-hidden">
       {/* HERO */}
       <section className="relative overflow-hidden border-b border-slate-200 bg-gradient-to-b from-violet-50 via-white to-white">
         <div className="pointer-events-none absolute -top-32 left-1/2 h-80 w-[640px] -translate-x-1/2 rounded-full bg-violet-200/40 blur-3xl" />
