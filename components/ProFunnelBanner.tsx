@@ -26,7 +26,7 @@ export default function ProFunnelBanner() {
           fixed ? 'translate-y-0' : '-translate-y-full'
         }`}
       >
-        <div className="mx-auto flex max-w-6xl items-center justify-center gap-4 px-4 py-3 md:px-6">
+        <div className="mx-auto flex max-w-6xl flex-col items-center gap-1.5 px-4 py-2.5 text-center md:flex-row md:justify-center md:gap-4 md:px-6">
           <p className="text-sm font-semibold text-white">
             Humanize your AI text to pass{' '}
             <strong className="font-bold text-yellow-400">99% of detectors.</strong>
@@ -40,16 +40,16 @@ export default function ProFunnelBanner() {
         </div>
       </div>
 
-      {/* Inline banner — spaced out, justify-between */}
+      {/* Inline banner — stacks on mobile, side-by-side on desktop */}
       <div ref={sentinelRef} className="w-full bg-black text-white">
-        <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3.5 md:px-6">
+        <div className="mx-auto flex max-w-6xl flex-col items-center gap-2 px-4 py-3.5 text-center md:flex-row md:justify-between md:gap-4 md:px-6 md:text-left">
           <p className="text-sm font-semibold text-white">
             Humanize your ChatGPT/AI text to pass{' '}
             <strong className="font-bold text-yellow-400">99% of detectors.</strong>
           </p>
           <Link
             href="/pro"
-            className="shrink-0 rounded-lg bg-white px-5 py-2 text-sm font-bold text-black transition hover:bg-slate-100"
+            className="shrink-0 rounded-lg bg-white px-6 py-2.5 text-sm font-bold text-black transition hover:bg-slate-100"
           >
             TRY NOW
           </Link>
