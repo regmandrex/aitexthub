@@ -19,7 +19,7 @@ const PLANS: Plan[] = [
   {
     id: 'weekly',
     name: 'Weekly',
-    badge: null,
+    badge: 'TRY IT OUT',
     price: '$3.99',
     originalPrice: '$7',
     period: 'per week',
@@ -141,8 +141,13 @@ export default function PricingModal({ onClose }: { onClose: () => void }) {
                   <div>
                     <div className="flex items-center gap-2">
                       <span className="text-sm font-bold text-slate-900">{plan.name}</span>
-                      {plan.badge && (
+                      {plan.badge && plan.id === 'annual' && (
                         <span className="rounded-full bg-gradient-to-r from-amber-400 to-yellow-300 px-1.5 py-0.5 text-[9px] font-black uppercase tracking-wider text-amber-900">
+                          {plan.badge}
+                        </span>
+                      )}
+                      {plan.badge && plan.id === 'weekly' && (
+                        <span className="rounded-full bg-violet-100 px-1.5 py-0.5 text-[9px] font-black uppercase tracking-wider text-violet-700">
                           {plan.badge}
                         </span>
                       )}
