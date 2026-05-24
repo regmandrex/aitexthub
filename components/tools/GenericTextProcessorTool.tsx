@@ -30,14 +30,37 @@ const PROGRESS_LABEL_BY_TYPE: Record<ToolType, string> = {
 
 type UpsellConfig = { headline: string; subline: string; cta: string; };
 
-const UPSELL_BY_TYPE: Record<ToolType, UpsellConfig> = {
-  humanizer: { headline: 'Unlock the full humanized text', subline: 'Sign in to bypass 99% of AI detectors — Turnitin, GPTZero, Originality, Copyleaks.', cta: 'Sign in to Unlock →' },
-  detector: { headline: 'Your text looks AI-generated', subline: 'Sign in to run it through our humanizer and pass 99% of detectors.', cta: 'Sign in to Humanize →' },
-  checker: { headline: 'Want a perfect score?', subline: 'Sign in to humanize your text and remove AI patterns before submission.', cta: 'Sign in to Continue →' },
-  rewriter: { headline: 'Sounds AI-generated?', subline: 'Sign in to humanize your rewritten text and pass every detector.', cta: 'Sign in to Unlock →' },
-  translator: { headline: 'Need your text undetectable too?', subline: 'Sign in to humanize translated content and pass 99% of AI detectors.', cta: 'Sign in to Continue →' },
-  generator: { headline: 'Want unlimited generations?', subline: 'Sign in for unlimited uses and access to all premium tools.', cta: 'Sign in to Unlock →' },
-  analyzer: { headline: 'Sounds AI-generated?', subline: 'Sign in to humanize your content and pass every AI detector.', cta: 'Sign in to Continue →' },
+type UpsellSet = { loggedOut: UpsellConfig; free: UpsellConfig; };
+
+const UPSELL_BY_TYPE: Record<ToolType, UpsellSet> = {
+  humanizer: {
+    loggedOut: { headline: 'Processing complete!', subline: 'Sign in to keep humanizing and pass', cta: 'Sign in to Continue' },
+    free: { headline: 'You\'ve hit your free limit!', subline: 'Upgrade to Pro for unlimited humanizing and pass', cta: 'Upgrade to Pro' },
+  },
+  detector: {
+    loggedOut: { headline: 'Detection complete!', subline: 'Sign in to keep scanning your text against', cta: 'Sign in to Continue' },
+    free: { headline: 'You\'ve hit your free limit!', subline: 'Upgrade for unlimited detection scans against', cta: 'Upgrade to Pro' },
+  },
+  checker: {
+    loggedOut: { headline: 'Check complete!', subline: 'Sign in to keep checking your work against', cta: 'Sign in to Continue' },
+    free: { headline: 'You\'ve hit your free limit!', subline: 'Upgrade for unlimited checks against', cta: 'Upgrade to Pro' },
+  },
+  rewriter: {
+    loggedOut: { headline: 'Rewrite complete!', subline: 'Sign in to keep rewriting and pass', cta: 'Sign in to Continue' },
+    free: { headline: 'You\'ve hit your free limit!', subline: 'Upgrade for unlimited rewrites that pass', cta: 'Upgrade to Pro' },
+  },
+  translator: {
+    loggedOut: { headline: 'Translation complete!', subline: 'Sign in to keep translating and access', cta: 'Sign in to Continue' },
+    free: { headline: 'You\'ve hit your free limit!', subline: 'Upgrade for unlimited translations and access to', cta: 'Upgrade to Pro' },
+  },
+  generator: {
+    loggedOut: { headline: 'Generation complete!', subline: 'Sign in to keep generating and unlock', cta: 'Sign in to Continue' },
+    free: { headline: 'You\'ve hit your free limit!', subline: 'Upgrade for unlimited generations and access to', cta: 'Upgrade to Pro' },
+  },
+  analyzer: {
+    loggedOut: { headline: 'Analysis complete!', subline: 'Sign in to keep analyzing and access', cta: 'Sign in to Continue' },
+    free: { headline: 'You\'ve hit your free limit!', subline: 'Upgrade for unlimited analysis and access to', cta: 'Upgrade to Pro' },
+  },
 };
 
 const DETECTORS = ['TURNITIN', 'GPTZERO', 'ORIGINALITY.AI', 'COPYLEAKS'];
@@ -75,10 +98,12 @@ export function GenericTextProcessorTool({
   const [showPaywall, setShowPaywall] = useState(false);
   const [stepIndex, setStepIndex] = useState(0);
   const [progress, setProgress] = useState(0);
+  const [useCount, setUseCount] = useState(0);
 
   const steps = STEPS_BY_TYPE[toolType];
   const progressLabel = PROGRESS_LABEL_BY_TYPE[toolType];
-  const upsell = UPSELL_BY_TYPE[toolType];
+  const upsellSet = UPSELL_BY_TYPE[toolType];
+  const upsell = isLoggedIn ? upsellSet.free : upsellSet.loggedOut;
   const loginUrl = `/login?redirect=${encodeURIComponent(pathname)}`;
 
   const handleProcess = async () => {
@@ -89,6 +114,10 @@ export function GenericTextProcessorTool({
     setStepIndex(0);
     setProgress(0);
 
+    const currentUse = useCount + 1;
+    setUseCount(currentUse);
+    const shouldGate = currentUse > 1;
+
     // Run animation regardless of auth state
     let step = 0;
     const totalSteps = steps.length - 1;
@@ -98,8 +127,9 @@ export function GenericTextProcessorTool({
       setProgress(Math.round((step / totalSteps) * 90));
     }, 600);
 
-    // If not logged in — fake animation only, no API call
-    if (!isLoggedIn) {
+    // First use: always free — process and show result
+    // Second use+: gate if not logged in or on free plan
+    if (shouldGate && !isLoggedIn) {
       await new Promise(r => setTimeout(r, steps.length * 600 + 200));
       clearInterval(stepInterval);
       setStepIndex(steps.length);
@@ -109,14 +139,16 @@ export function GenericTextProcessorTool({
       return;
     }
 
-    // Logged in — real API call
+    // Process text (first use always, or logged-in users)
     try {
       const processed = await processText(input);
       clearInterval(stepInterval);
       setStepIndex(steps.length);
       setProgress(100);
       setFullOutput(processed);
-      setShowPaywall(true);
+      if (shouldGate && isLoggedIn) {
+        setShowPaywall(true);
+      }
     } catch (err) {
       clearInterval(stepInterval);
       setFullOutput(`Error: ${err instanceof Error ? err.message : 'Something went wrong. Please try again.'}`);
@@ -137,7 +169,7 @@ export function GenericTextProcessorTool({
 
   return (
     <div className="space-y-4">
-      <div className={`grid gap-4 ${showPaywall ? 'md:grid-cols-3' : 'md:grid-cols-2'}`}>
+      <div className="grid gap-4 md:grid-cols-2">
         {/* Input */}
         <div>
           <ToolTextArea label={inputLabel} value={input} onChange={setInput} placeholder={inputPlaceholder} rows={12} />
@@ -189,51 +221,55 @@ export function GenericTextProcessorTool({
             </div>
           )}
 
-          {/* Blurred output */}
-          {!isProcessing && (
-            <div className="relative flex-1">
-              <div className={showPaywall ? 'select-none blur-sm pointer-events-none' : ''}>
-                <ToolTextArea label="" value={fullOutput} onChange={() => {}} placeholder={outputPlaceholder} rows={12} readOnly />
+          {/* Upsell card above blurred output */}
+          {!isProcessing && showPaywall && (
+            <div className="mb-2 rounded-2xl bg-slate-900 text-white shadow-xl">
+              <div className="p-5 md:p-6">
+                <div className="flex items-start gap-3">
+                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-brand-600 text-yellow-300 shadow-sm">
+                    <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
+                    </svg>
+                  </span>
+                  <div className="flex-1 min-w-0">
+                    <p className="text-sm font-bold tracking-tight text-white md:text-base">{upsell.headline}</p>
+                    <p className="mt-0.5 text-sm text-slate-300 leading-snug">
+                      {upsell.subline}{' '}
+                      <span className="font-semibold text-yellow-400">all 60+ tools.</span>
+                    </p>
+                  </div>
+                </div>
+
+                <div className="mt-4 flex flex-wrap gap-2">
+                  {DETECTORS.map((d) => (
+                    <span key={d} className="rounded-full border border-slate-700 bg-slate-800 px-3 py-0.5 text-[10px] font-bold uppercase tracking-widest text-slate-300">{d}</span>
+                  ))}
+                </div>
+
+                <Link
+                  href={isLoggedIn ? '/pro' : loginUrl}
+                  className="mt-4 flex w-full items-center justify-center gap-2 rounded-xl bg-brand-600 px-4 py-3 text-sm font-bold text-white shadow-sm transition hover:bg-brand-700 active:scale-[0.98]"
+                >
+                  {upsell.cta}
+                  <svg className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
+                </Link>
+
+                <p className="mt-2 text-center text-[10px] uppercase tracking-widest text-slate-500">
+                  {isLoggedIn ? 'From $3.99/week · Cancel anytime' : 'Free to sign up · No credit card'}
+                </p>
               </div>
             </div>
           )}
 
-          {showPaywall && !isProcessing && (
-            <div className="mt-1 flex items-center justify-between text-[11px] text-slate-400 uppercase tracking-widest">
-              <span>Preview generated</span>
-              <span className="font-bold text-orange-500">Locked</span>
+          {/* Blurred output below upsell */}
+          {!isProcessing && (
+            <div className={showPaywall ? 'select-none blur-[3px] pointer-events-none' : ''}>
+              <ToolTextArea label="" value={fullOutput} onChange={() => {}} placeholder={outputPlaceholder} rows={12} readOnly />
             </div>
           )}
         </div>
-
-        {/* Upsell card — beside output */}
-        {showPaywall && !isProcessing && (
-          <div className="flex flex-col justify-center">
-            <div className="rounded-2xl bg-slate-900 text-white p-5">
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-brand-600 text-yellow-300 mb-3">
-                <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
-                </svg>
-              </div>
-              <p className="text-sm font-bold text-white leading-snug">{upsell.headline}</p>
-              <p className="mt-1.5 text-xs text-slate-300 leading-relaxed">{upsell.subline}</p>
-              <div className="mt-3 flex flex-wrap gap-1.5">
-                {DETECTORS.map((d) => (
-                  <span key={d} className="rounded border border-slate-700 px-2 py-0.5 text-[9px] font-bold uppercase tracking-widest text-slate-400">{d}</span>
-                ))}
-              </div>
-              <Link
-                href={isLoggedIn ? '/pro' : loginUrl}
-                className="mt-4 flex w-full items-center justify-center gap-1.5 rounded-xl bg-white px-4 py-3 text-sm font-bold text-slate-900 shadow transition hover:bg-slate-100 active:scale-[0.98]"
-              >
-                {isLoggedIn ? 'Go Pro to Unlock →' : upsell.cta}
-              </Link>
-              <p className="mt-2 text-center text-[10px] uppercase tracking-widest text-slate-500">
-                {isLoggedIn ? 'From $5/month · Cancel anytime' : 'Free to sign up · No credit card'}
-              </p>
-            </div>
-          </div>
-        )}
       </div>
 
       {/* Action buttons */}
