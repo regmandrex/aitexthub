@@ -93,7 +93,7 @@ export default async function TermsOfServicePage() {
 
           <div className="rounded-xl border border-slate-200 bg-white p-4 mb-4">
             <h3 className="text-sm font-bold text-slate-900">4.2 Billing and Auto-Renewal</h3>
-            <p className="mt-1 text-sm text-slate-700">All payments are processed by our merchant of record, LemonSqueezy, who handles tax compliance globally. By subscribing, you authorize recurring charges at the start of each billing cycle (weekly, monthly, or annually depending on your plan). Subscriptions auto-renew at the end of each period unless you cancel before the renewal date.</p>
+            <p className="mt-1 text-sm text-slate-700">All payments are processed by our merchant of record, who handles tax compliance globally. By subscribing, you authorize recurring charges at the start of each billing cycle (weekly, monthly, or annually depending on your plan). Subscriptions auto-renew at the end of each period unless you cancel before the renewal date.</p>
           </div>
 
           <div className="rounded-xl border border-slate-200 bg-white p-4 mb-4">
