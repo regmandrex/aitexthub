@@ -1,3 +1,0 @@
-'use client';
-
-export { authClient, signIn, signUp, signOut, useSession } from '@/lib/auth-client';

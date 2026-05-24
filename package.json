@@ -18,7 +18,6 @@
     "check-words": "node scripts/audit-tool-pages.mjs"
   },
   "dependencies": {
-    "@neondatabase/auth": "^0.4.1-beta",
     "@neondatabase/serverless": "^1.1.0",
     "@types/bcryptjs": "^2.4.6",
     "@types/pg": "^8.20.0",
