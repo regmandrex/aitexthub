@@ -4,7 +4,7 @@
 const nextConfig = {
   experimental: {
     inlineCss: true,
-    cpus: 1,
+    cpus: 4,
   },
   images: {
     deviceSizes: [640, 828, 1080, 1200],

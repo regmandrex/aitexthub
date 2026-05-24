@@ -106,7 +106,7 @@ const PRERENDER_SLUGS = new Set([
 ]);
 
 export async function generateStaticParams() {
-  return PRIORITY_SLUGS.map((slug) => ({ slug }));
+  return getAllTools().map((tool) => ({ slug: tool.slug }));
 }
 
 // Still allow dynamic params for any slugs not covered by getAllTools
