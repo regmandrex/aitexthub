@@ -251,6 +251,8 @@ ${text}`,
 
   species_name_generator: (text) =>
     `Generate 10 creative scientific-style species names based on these keywords or description: "${text.trim()}". For each name provide: 1. The binomial name (Genus species in italics format), 2. What kind of creature it is, 3. A brief 1-sentence description of what makes it unique. Make the names sound authentically Latin/Greek scientific. Return as a numbered list.`,
+
+  themed_name_generator: (text) => text,
 };
 
 export async function POST(req: NextRequest) {
