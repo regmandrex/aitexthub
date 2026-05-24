@@ -106,9 +106,7 @@ const PRERENDER_SLUGS = new Set([
 ]);
 
 export async function generateStaticParams() {
-  // Pre-render every registered tool at build time to eliminate ISR origin transfer costs.
-  // This trades build time for zero on-demand CPU and origin transfer on serving.
-  return getAllTools().map((tool) => ({ slug: tool.slug }));
+  return PRIORITY_SLUGS.map((slug) => ({ slug }));
 }
 
 // Still allow dynamic params for any slugs not covered by getAllTools
