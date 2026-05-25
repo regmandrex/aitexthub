@@ -17,6 +17,14 @@ function verifySignature(rawBody: string, signature: string | null): boolean {
   return crypto.timingSafeEqual(Buffer.from(hmac), Buffer.from(signature));
 }
 
+function extractPlan(variantName: string): string {
+  const name = variantName.toLowerCase();
+  if (name.includes('annual') || name.includes('year')) return 'annual';
+  if (name.includes('month')) return 'monthly';
+  if (name.includes('week')) return 'weekly';
+  return name || 'weekly';
+}
+
 export async function POST(req: NextRequest) {
   const rawBody = await req.text();
   const signature = req.headers.get('x-signature');
@@ -25,12 +33,24 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: 'Invalid signature' }, { status: 401 });
   }
 
-  const event = JSON.parse(rawBody);
+  let event: any;
+  try {
+    event = JSON.parse(rawBody);
+  } catch {
+    return NextResponse.json({ error: 'Invalid JSON' }, { status: 400 });
+  }
+
   const eventName = event.meta?.event_name;
-  const customerEmail = event.data?.attributes?.user_email;
+  const attrs = event.data?.attributes ?? {};
+  const customerEmail = attrs.user_email;
   const subscriptionId = String(event.data?.id ?? '');
-  const customerId = String(event.data?.attributes?.customer_id ?? '');
-  const variantName = (event.data?.attributes?.variant_name ?? '').toLowerCase();
+  const customerId = String(attrs.customer_id ?? '');
+  const variantName = attrs.variant_name ?? '';
+  const plan = extractPlan(variantName);
+  const wordsLimit = PLAN_QUOTAS[plan] ?? null;
+  const endsAt = attrs.ends_at ?? attrs.renews_at ?? null;
+
+  console.log(`[webhook] ${eventName} for ${customerEmail ?? 'unknown'} (plan: ${plan})`);
 
   if (!customerEmail) {
     return NextResponse.json({ error: 'No customer email' }, { status: 400 });
@@ -47,54 +67,95 @@ export async function POST(req: NextRequest) {
   }
 
   const userId = userResult.rows[0].id;
-  const plan = variantName.includes('annual') ? 'annual'
-    : variantName.includes('month') ? 'monthly'
-    : variantName.includes('week') ? 'weekly'
-    : variantName;
 
-  const wordsLimit = PLAN_QUOTAS[plan] ?? null;
-
-  if (eventName === 'subscription_created' || eventName === 'subscription_resumed') {
-    const endsAt = event.data?.attributes?.ends_at ?? event.data?.attributes?.renews_at;
-
+  const upsertPro = async (isPro: boolean) => {
     await pool.query(
       `INSERT INTO public.user_subscriptions (user_id, is_pro, plan, lemon_squeezy_subscription_id, lemon_squeezy_customer_id, pro_expires_at, words_used, words_limit, billing_period_start)
-       VALUES ($1, true, $2, $3, $4, $5, 0, $6, now())
+       VALUES ($1, $2, $3, $4, $5, $6, 0, $7, now())
        ON CONFLICT (user_id) DO UPDATE SET
-         is_pro = true,
-         plan = $2,
-         lemon_squeezy_subscription_id = $3,
-         lemon_squeezy_customer_id = $4,
-         pro_expires_at = $5,
+         is_pro = $2,
+         plan = $3,
+         lemon_squeezy_subscription_id = $4,
+         lemon_squeezy_customer_id = $5,
+         pro_expires_at = $6,
          words_used = 0,
-         words_limit = $6,
+         words_limit = $7,
          billing_period_start = now(),
          updated_at = now()`,
-      [userId, plan, subscriptionId, customerId, endsAt, wordsLimit],
+      [userId, isPro, plan, subscriptionId, customerId, endsAt, wordsLimit],
     );
-  } else if (eventName === 'subscription_updated') {
-    const endsAt = event.data?.attributes?.ends_at ?? event.data?.attributes?.renews_at;
+  };
 
+  const updatePro = async (fields: string, values: any[]) => {
     await pool.query(
-      `UPDATE public.user_subscriptions
-       SET plan = $1, pro_expires_at = $2, words_limit = $3, updated_at = now()
-       WHERE user_id = $4`,
-      [plan, endsAt, wordsLimit, userId],
+      `UPDATE public.user_subscriptions SET ${fields}, updated_at = now() WHERE user_id = $${values.length + 1}`,
+      [...values, userId],
     );
-  } else if (eventName === 'subscription_cancelled' || eventName === 'subscription_expired') {
-    await pool.query(
-      `UPDATE public.user_subscriptions
-       SET is_pro = false, updated_at = now()
-       WHERE user_id = $1`,
-      [userId],
-    );
-  } else if (eventName === 'subscription_payment_success') {
-    await pool.query(
-      `UPDATE public.user_subscriptions
-       SET words_used = 0, billing_period_start = now(), updated_at = now()
-       WHERE user_id = $1`,
-      [userId],
-    );
+  };
+
+  switch (eventName) {
+    // User just subscribed — activate Pro, reset quota
+    case 'subscription_created':
+      await upsertPro(true);
+      break;
+
+    // Subscription details changed (plan upgrade/downgrade, billing date change)
+    case 'subscription_updated':
+      await updatePro('plan = $1, pro_expires_at = $2, words_limit = $3', [plan, endsAt, wordsLimit]);
+      break;
+
+    // User explicitly changed plan tier
+    case 'subscription_plan_changed':
+      await updatePro('plan = $1, words_limit = $2, words_used = 0, billing_period_start = now()', [plan, wordsLimit]);
+      break;
+
+    // User cancelled — keep access until period ends but mark for expiry
+    case 'subscription_cancelled':
+      await updatePro('pro_expires_at = $1', [endsAt]);
+      break;
+
+    // Subscription reached end of cancelled period — revoke access
+    case 'subscription_expired':
+      await updatePro('is_pro = $1', [false]);
+      break;
+
+    // User paused their subscription — suspend Pro access
+    case 'subscription_paused':
+      await updatePro('is_pro = $1', [false]);
+      break;
+
+    // User unpaused — restore Pro access
+    case 'subscription_unpaused':
+      await upsertPro(true);
+      break;
+
+    // User resumed a cancelled subscription before it expired
+    case 'subscription_resumed':
+      await upsertPro(true);
+      break;
+
+    // Recurring payment succeeded — reset word quota for new billing period
+    case 'subscription_payment_success':
+      await updatePro('words_used = $1, billing_period_start = now()', [0]);
+      break;
+
+    // Payment failed — flag but don't immediately revoke (LS retries automatically)
+    case 'subscription_payment_failed':
+      console.warn(`[webhook] Payment failed for ${customerEmail} — LemonSqueezy will retry`);
+      break;
+
+    // Payment recovered after a failure — ensure Pro is active
+    case 'subscription_payment_recovered':
+      await updatePro('is_pro = $1, words_used = 0, billing_period_start = now()', [true]);
+      break;
+
+    // Payment refunded — revoke Pro access
+    case 'subscription_payment_refunded':
+      await updatePro('is_pro = $1', [false]);
+      break;
+
+    default:
+      console.log(`[webhook] Unhandled event: ${eventName}`);
   }
 
   return NextResponse.json({ ok: true });
