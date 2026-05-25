@@ -34,7 +34,7 @@ function SignupForm() {
         }
         return;
       }
-      setVerifyEmail(true);
+      router.push(redirect);
     } catch {
       setError('Could not create account. Please try again.');
     } finally {

@@ -26,7 +26,7 @@ export const auth = betterAuth({
   ],
   emailAndPassword: {
     enabled: true,
-    requireEmailVerification: true,
+    requireEmailVerification: false,
     sendResetPassword: async ({ user, url }) => {
       await resend.emails.send({
         from: 'GPT Cleanup Tools <noreply@gptcleanuptools.com>',
