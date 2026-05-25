@@ -31,6 +31,7 @@ const PLANS: Plan[] = [
       'Bypass every detector',
       'Priority processing',
     ],
+    checkoutUrl: 'https://mygptcleanup.lemonsqueezy.com/checkout/buy/6b8d8276-b346-4f10-9ce2-4f4ef82fc61f',
   },
   {
     id: 'monthly',
@@ -47,6 +48,7 @@ const PLANS: Plan[] = [
       'Bypass every detector',
       'Cancel anytime',
     ],
+    checkoutUrl: 'https://mygptcleanup.lemonsqueezy.com/checkout/buy/5e3c7ed7-983b-4959-a5fe-0bfc5bd912ff',
   },
   {
     id: 'annual',
@@ -63,6 +65,7 @@ const PLANS: Plan[] = [
       'Bypass every detector',
       'Priority email support',
     ],
+    checkoutUrl: 'https://mygptcleanup.lemonsqueezy.com/checkout/buy/a5c55b31-3169-48e2-9c10-02d69829d876',
   },
 ];
 
