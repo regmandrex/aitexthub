@@ -28,7 +28,7 @@ export default function Header() {
   const { data: session } = useSession();
 
   const isLoggedIn = session?.user != null || demoMode !== 'out';
-  const userEmail = session?.user?.email ?? 'regmandrex@gmail.com';
+  const userEmail = session?.user?.email ?? 'user@example.com';
   const plan: 'free' | 'pro' = demoMode === 'pro' ? 'pro' : 'free';
 
   return (
