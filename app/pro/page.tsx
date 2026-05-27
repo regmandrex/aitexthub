@@ -54,7 +54,7 @@ const PLANS: Plan[] = [
       'Bypass every detector',
       '7-day access · Cancel anytime',
     ],
-    checkoutUrl: 'https://mygptcleanup.lemonsqueezy.com/checkout/buy/6b8d8276-b346-4f10-9ce2-4f4ef82fc61f',
+    checkoutUrl: 'https://mygptcleanup.lemonsqueezy.com/checkout/buy/4668229c-1a12-4017-9445-a208a32d3083',
   },
   {
     id: 'monthly',
@@ -70,7 +70,7 @@ const PLANS: Plan[] = [
       'Bypass every detector',
       'Cancel anytime',
     ],
-    checkoutUrl: 'https://mygptcleanup.lemonsqueezy.com/checkout/buy/5e3c7ed7-983b-4959-a5fe-0bfc5bd912ff',
+    checkoutUrl: 'https://mygptcleanup.lemonsqueezy.com/checkout/buy/2b8c8163-2571-454e-b255-947a91388cf6',
   },
   {
     id: 'annual',
@@ -89,7 +89,7 @@ const PLANS: Plan[] = [
       'Bypass every detector',
       'Priority email support',
     ],
-    checkoutUrl: 'https://mygptcleanup.lemonsqueezy.com/checkout/buy/a5c55b31-3169-48e2-9c10-02d69829d876',
+    checkoutUrl: 'https://mygptcleanup.lemonsqueezy.com/checkout/buy/0342ed42-ec81-483f-99a3-0803863e9ef5',
   },
 ];
 
@@ -269,7 +269,7 @@ export default function ProLandingPage() {
 
                 <a
                   href={plan.checkoutUrl ?? '#pricing'}
-                  className={`mt-6 block w-full rounded-full px-4 py-3 text-center text-sm font-bold transition ${
+                  className={`lemonsqueezy-button mt-6 block w-full rounded-full px-4 py-3 text-center text-sm font-bold transition ${
                     plan.highlight
                       ? 'bg-gradient-to-r from-violet-600 to-purple-700 text-white shadow-md shadow-violet-200 hover:shadow-lg'
                       : 'border border-slate-300 bg-white text-slate-900 hover:bg-slate-50'
