@@ -32,7 +32,7 @@ export default function ProFunnelBanner() {
             <strong className="font-bold text-yellow-400">99% of detectors.</strong>
           </p>
           <Link
-            href="/pro"
+            href="/ai-humanizer-pro"
             className="shrink-0 rounded-lg bg-white px-4 py-1.5 text-sm font-bold text-black transition hover:bg-slate-100"
           >
             TRY FREE
@@ -48,7 +48,7 @@ export default function ProFunnelBanner() {
             <strong className="font-bold text-yellow-400">99% of detectors.</strong>
           </p>
           <Link
-            href="/pro"
+            href="/ai-humanizer-pro"
             className="shrink-0 rounded-lg bg-white px-6 py-2.5 text-sm font-bold text-black transition hover:bg-slate-100"
           >
             TRY NOW
