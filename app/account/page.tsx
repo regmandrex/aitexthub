@@ -25,8 +25,8 @@ export default function AccountPage() {
 
   const user = session.user;
   const plan = 'free' as 'free' | 'pro';
-  const wordsUsed = 0;
-  const wordsLimit = 0;
+  const wordsUsed = 0 as number;
+  const wordsLimit = 0 as number;
   const initial = (user.name?.[0] ?? user.email?.[0] ?? '?').toUpperCase();
 
   return (
