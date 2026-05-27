@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import { useSession } from '@/lib/auth-client';
+import AuthModal from '@/components/AuthModal';
 
 const DETECTORS = ['TURNITIN', 'GPTZERO', 'ORIGINALITY.AI', 'COPYLEAKS'];
 
@@ -72,6 +73,7 @@ export function ThemedNameGeneratorTool({ generatorKey, resultLabel = 'Generated
   const [isGenerating, setIsGenerating] = useState(false);
   const [showPaywall, setShowPaywall] = useState(false);
   const [useCount, setUseCount] = useState(0);
+  const [authOpen, setAuthOpen] = useState(false);
   const [error, setError] = useState('');
 
   const loginUrl = `/login?redirect=${encodeURIComponent(pathname)}`;
@@ -82,7 +84,7 @@ export function ThemedNameGeneratorTool({ generatorKey, resultLabel = 'Generated
     setError('');
 
     if (currentUse > 1 && !isLoggedIn) {
-      setShowPaywall(true);
+      setAuthOpen(true);
       return;
     }
 
@@ -137,6 +139,7 @@ export function ThemedNameGeneratorTool({ generatorKey, resultLabel = 'Generated
     : { headline: 'Generation complete!', subline: 'Sign in to keep generating and unlock', cta: 'Sign in to Continue' };
 
   return (
+    <>
     <div className="space-y-6">
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         <div>
@@ -206,15 +209,16 @@ export function ThemedNameGeneratorTool({ generatorKey, resultLabel = 'Generated
                 <span key={d} className="rounded-full border border-slate-700 bg-slate-800 px-3 py-0.5 text-[10px] font-bold uppercase tracking-widest text-slate-300">{d}</span>
               ))}
             </div>
-            <Link
-              href={isLoggedIn ? '/pro' : loginUrl}
+            <button
+              type="button"
+              onClick={() => isLoggedIn ? window.location.href = '/pro' : setAuthOpen(true)}
               className="mt-4 flex w-full items-center justify-center gap-2 rounded-xl bg-brand-600 px-4 py-3 text-sm font-bold text-white shadow-sm transition hover:bg-brand-700 active:scale-[0.98]"
             >
               {upsell.cta}
               <svg className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
               </svg>
-            </Link>
+            </button>
             <p className="mt-2 text-center text-[10px] uppercase tracking-widest text-slate-500">
               {isLoggedIn ? 'From $3.99/week · Cancel anytime' : 'Free to sign up · No credit card'}
             </p>
@@ -236,5 +240,7 @@ export function ThemedNameGeneratorTool({ generatorKey, resultLabel = 'Generated
         </div>
       )}
     </div>
+    {authOpen && <AuthModal onClose={() => setAuthOpen(false)} onSuccess={() => { setAuthOpen(false); setShowPaywall(false); setUseCount(0); window.location.reload(); }} />}
+    </>
   );
 }

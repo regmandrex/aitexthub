@@ -5,6 +5,7 @@ import { usePathname } from 'next/navigation';
 import Link from 'next/link';
 import ToolTextArea from './ToolTextArea';
 import { useSession } from '@/lib/auth-client';
+import AuthModal from '@/components/AuthModal';
 
 export type ToolType = 'humanizer' | 'detector' | 'checker' | 'rewriter' | 'translator' | 'generator' | 'analyzer';
 
@@ -99,6 +100,7 @@ export function GenericTextProcessorTool({
   const [stepIndex, setStepIndex] = useState(0);
   const [progress, setProgress] = useState(0);
   const [useCount, setUseCount] = useState(0);
+  const [authOpen, setAuthOpen] = useState(false);
 
   const steps = STEPS_BY_TYPE[toolType];
   const progressLabel = PROGRESS_LABEL_BY_TYPE[toolType];
@@ -168,6 +170,8 @@ export function GenericTextProcessorTool({
   const handleCopy = () => navigator.clipboard.writeText(fullOutput);
 
   return (
+    <>
+    {authOpen && <AuthModal onClose={() => setAuthOpen(false)} onSuccess={() => { setAuthOpen(false); setShowPaywall(false); setUseCount(0); window.location.reload(); }} />}
     <div className="space-y-4">
       <div className="grid gap-4 md:grid-cols-2">
         {/* Input */}
@@ -246,15 +250,16 @@ export function GenericTextProcessorTool({
                   ))}
                 </div>
 
-                <Link
-                  href={isLoggedIn ? '/pro' : loginUrl}
+                <button
+                  type="button"
+                  onClick={() => isLoggedIn ? window.location.href = '/pro' : setAuthOpen(true)}
                   className="mt-4 flex w-full items-center justify-center gap-2 rounded-xl bg-brand-600 px-4 py-3 text-sm font-bold text-white shadow-sm transition hover:bg-brand-700 active:scale-[0.98]"
                 >
                   {upsell.cta}
                   <svg className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
                   </svg>
-                </Link>
+                </button>
 
                 <p className="mt-2 text-center text-[10px] uppercase tracking-widest text-slate-500">
                   {isLoggedIn ? 'From $3.99/week · Cancel anytime' : 'Free to sign up · No credit card'}
@@ -303,5 +308,6 @@ export function GenericTextProcessorTool({
         </button>
       </div>
     </div>
+    </>
   );
 }
