@@ -61,13 +61,13 @@ export default function CookiePolicyPage() {
       <ul>
         <li>
           Google Privacy &amp; Terms:{' '}
-          <a href="https://policies.google.com/privacy" rel="noreferrer" target="_blank">
+          <a href="https://policies.google.com/privacy" rel="nofollow noreferrer" target="_blank">
             https://policies.google.com/privacy
           </a>
         </li>
         <li>
           Google Analytics Data Practices:{' '}
-          <a href="https://support.google.com/analytics/answer/6004245" rel="noreferrer" target="_blank">
+          <a href="https://support.google.com/analytics/answer/6004245" rel="nofollow noreferrer" target="_blank">
             https://support.google.com/analytics/answer/6004245
           </a>
         </li>

@@ -182,7 +182,7 @@ export default async function PrivacyPolicyPage() {
           </div>
 
           <p className="mt-3 text-sm text-slate-700">Pro subscribers do not see advertisements, so AdSense cookies are not set for Pro users.</p>
-          <p className="mt-2 text-sm text-slate-700">You can opt out of personalized advertising via <a href="https://www.google.com/settings/ads" target="_blank" rel="noreferrer" className="font-semibold text-violet-700 hover:underline">Google Ads Settings</a> or the <a href="https://www.networkadvertising.org/choices" target="_blank" rel="noreferrer" className="font-semibold text-violet-700 hover:underline">NAI opt-out page</a>. Disabling cookies will not affect your ability to use GPTCleanup tools.</p>
+          <p className="mt-2 text-sm text-slate-700">You can opt out of personalized advertising via <a href="https://www.google.com/settings/ads" target="_blank" rel="nofollow noreferrer" className="font-semibold text-violet-700 hover:underline">Google Ads Settings</a> or the <a href="https://www.networkadvertising.org/choices" target="_blank" rel="nofollow noreferrer" className="font-semibold text-violet-700 hover:underline">NAI opt-out page</a>. Disabling cookies will not affect your ability to use GPTCleanup tools.</p>
         </section>
 
         {/* 6. Advertising */}
