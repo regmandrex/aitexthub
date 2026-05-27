@@ -161,7 +161,13 @@ export default function AccountPage() {
         <div className="mt-8 text-center">
           <button
             type="button"
-            onClick={() => { signOut(); router.push('/'); }}
+            onClick={async () => {
+              const btn = document.getElementById('signout-btn');
+              if (btn) btn.textContent = 'Signing out...';
+              await signOut();
+              setTimeout(() => router.push('/'), 800);
+            }}
+            id="signout-btn"
             className="text-sm font-semibold text-red-600 transition hover:text-red-700"
           >
             Sign out

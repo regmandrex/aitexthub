@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from 'react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import { signOut } from '@/lib/auth-client';
 
 type HeaderUserMenuProps = {
@@ -23,7 +24,9 @@ function truncate(email: string, max = 16) {
 
 export default function HeaderUserMenu({ email, plan, onOpenAccount, onUpgrade }: HeaderUserMenuProps) {
   const [open, setOpen] = useState(false);
+  const [signingOut, setSigningOut] = useState(false);
   const wrapperRef = useRef<HTMLDivElement | null>(null);
+  const router = useRouter();
 
   useEffect(() => {
     function handleClick(e: MouseEvent) {
@@ -130,15 +133,27 @@ export default function HeaderUserMenu({ email, plan, onOpenAccount, onUpgrade }
           <div className="border-t border-slate-100 p-1.5">
             <button
               type="button"
-              onClick={() => { setOpen(false); signOut(); }}
-              className="flex w-full items-center gap-3 rounded-xl px-3 py-2.5 text-sm text-slate-500 transition hover:bg-red-50 hover:text-red-600"
+              disabled={signingOut}
+              onClick={async () => {
+                setSigningOut(true);
+                setOpen(false);
+                await signOut();
+                setTimeout(() => router.push('/'), 800);
+              }}
+              className="flex w-full items-center gap-3 rounded-xl px-3 py-2.5 text-sm text-slate-500 transition hover:bg-red-50 hover:text-red-600 disabled:opacity-60"
             >
               <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-slate-100 text-slate-400">
-                <svg className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
-                </svg>
+                {signingOut ? (
+                  <svg className="h-4 w-4 animate-spin" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                  </svg>
+                ) : (
+                  <svg className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1" />
+                  </svg>
+                )}
               </span>
-              <span className="font-medium">Sign out</span>
+              <span className="font-medium">{signingOut ? 'Signing out...' : 'Sign out'}</span>
             </button>
           </div>
         </div>
