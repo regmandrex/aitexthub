@@ -5,6 +5,8 @@ import Link from 'next/link';
 import { useSession } from '@/lib/auth-client';
 import PricingModal from '@/components/PricingModal';
 import AuthModal from '@/components/AuthModal';
+import HeaderUserMenu from '@/components/HeaderUserMenu';
+import { useRouter } from 'next/navigation';
 
 const DETECTORS = ['Turnitin', 'GPTZero', 'Originality.ai', 'Copyleaks', 'Winston AI', 'Sapling'];
 
@@ -26,6 +28,7 @@ const STEPS = [
 export default function AIHumanizerProPage() {
   const { data: session } = useSession();
   const isLoggedIn = !!session?.user;
+  const router = useRouter();
 
   const [input, setInput] = useState('');
   const [output, setOutput] = useState('');
@@ -131,9 +134,12 @@ export default function AIHumanizerProPage() {
                 ))}
               </div>
               {isLoggedIn ? (
-                <Link href="/account" className="rounded-full bg-slate-900 px-3 py-1.5 text-xs font-bold text-white">
-                  Account
-                </Link>
+                <HeaderUserMenu
+                  email={session?.user?.email ?? ''}
+                  plan="free"
+                  onOpenAccount={() => router.push('/account')}
+                  onUpgrade={() => setPricingOpen(true)}
+                />
               ) : (
                 <div className="flex items-center gap-2">
                   <button type="button" onClick={() => setAuthOpen(true)} className="px-3 py-1.5 text-xs font-semibold text-slate-700 hover:text-slate-900">
