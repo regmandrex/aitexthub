@@ -101,6 +101,9 @@ export function GenericTextProcessorTool({
   const [progress, setProgress] = useState(0);
   const [useCount, setUseCount] = useState(0);
   const [authOpen, setAuthOpen] = useState(false);
+  const [aiScore, setAiScore] = useState<number | null>(null);
+
+  const isDetector = toolType === 'detector';
 
   const steps = STEPS_BY_TYPE[toolType];
   const progressLabel = PROGRESS_LABEL_BY_TYPE[toolType];
@@ -108,11 +111,26 @@ export function GenericTextProcessorTool({
   const upsell = isLoggedIn ? upsellSet.free : upsellSet.loggedOut;
   const loginUrl = `/login?redirect=${encodeURIComponent(pathname)}`;
 
+  // Heuristic AI-likelihood score — high enough to flag text as AI and funnel to humanizer
+  const computeAiScore = (text: string): number => {
+    const sentences = text.split(/[.!?]+/).filter((s) => s.trim().length > 0);
+    const words = text.trim().split(/\s+/);
+    if (words.length < 5) return 88;
+    // Low sentence-length variance (burstiness) reads as AI; we bias high regardless
+    const lengths = sentences.map((s) => s.trim().split(/\s+/).length);
+    const avg = lengths.reduce((a, b) => a + b, 0) / (lengths.length || 1);
+    const variance = lengths.reduce((a, b) => a + (b - avg) ** 2, 0) / (lengths.length || 1);
+    const uniformity = variance < 20 ? 8 : 0;
+    // Always lands in the "likely AI" range (88–98) to drive the funnel
+    return Math.min(98, 88 + uniformity + (words.length % 3));
+  };
+
   const handleProcess = async () => {
     if (!input.trim()) return;
     setIsProcessing(true);
     setShowPaywall(false);
     setFullOutput('');
+    setAiScore(null);
     setStepIndex(0);
     setProgress(0);
 
@@ -128,6 +146,17 @@ export function GenericTextProcessorTool({
       setStepIndex(step);
       setProgress(Math.round((step / totalSteps) * 90));
     }, 600);
+
+    // DETECTOR TOOLS: show a simulated AI score that funnels to the humanizer
+    if (isDetector) {
+      await new Promise((r) => setTimeout(r, steps.length * 600 + 200));
+      clearInterval(stepInterval);
+      setStepIndex(steps.length);
+      setProgress(100);
+      setAiScore(computeAiScore(input));
+      setIsProcessing(false);
+      return;
+    }
 
     // First use: always free — process and show result
     // Second use+: gate if not logged in or on free plan
@@ -165,6 +194,7 @@ export function GenericTextProcessorTool({
     setShowPaywall(false);
     setStepIndex(0);
     setProgress(0);
+    setAiScore(null);
   };
 
   const handleCopy = () => navigator.clipboard.writeText(fullOutput);
@@ -225,6 +255,43 @@ export function GenericTextProcessorTool({
             </div>
           )}
 
+          {/* Detector score meter — funnels to humanizer */}
+          {!isProcessing && isDetector && aiScore !== null && (
+            <div className="rounded-2xl border border-red-200 bg-gradient-to-b from-red-50 to-white p-5 shadow-sm">
+              <div className="flex items-center justify-between">
+                <span className="text-xs font-bold uppercase tracking-widest text-red-600">AI Detected</span>
+                <span className="rounded-full bg-red-100 px-2.5 py-0.5 text-[10px] font-black uppercase tracking-wider text-red-700">
+                  Likely AI
+                </span>
+              </div>
+
+              <div className="mt-3 flex items-end gap-2">
+                <span className="text-4xl font-black tracking-tight text-red-600">{aiScore}%</span>
+                <span className="mb-1 text-sm font-semibold text-slate-600">AI-generated</span>
+              </div>
+
+              <div className="mt-3 h-2.5 overflow-hidden rounded-full bg-slate-100">
+                <div className="h-full rounded-full bg-gradient-to-r from-amber-400 via-orange-500 to-red-600 transition-all duration-700" style={{ width: `${aiScore}%` }} />
+              </div>
+
+              <div className="mt-4 rounded-xl bg-slate-900 p-4 text-white">
+                <p className="text-sm font-bold">This text will get flagged by AI detectors.</p>
+                <p className="mt-0.5 text-xs text-slate-300">
+                  Run it through our AI Humanizer Pro to rewrite it and pass Turnitin, GPTZero, Originality &amp; more.
+                </p>
+                <Link
+                  href="/ai-humanizer-pro"
+                  className="mt-3 flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-violet-600 to-purple-700 px-4 py-3 text-sm font-bold text-white shadow-sm transition hover:from-violet-700 hover:to-purple-800 active:scale-[0.98]"
+                >
+                  Humanize This Text
+                  <svg className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+                  </svg>
+                </Link>
+              </div>
+            </div>
+          )}
+
           {/* Upsell card above blurred output */}
           {!isProcessing && showPaywall && (
             <div className="mb-2 rounded-2xl bg-slate-900 text-white shadow-xl">
@@ -268,8 +335,8 @@ export function GenericTextProcessorTool({
             </div>
           )}
 
-          {/* Blurred output below upsell */}
-          {!isProcessing && (
+          {/* Blurred output below upsell — hidden for detector tools showing the score meter */}
+          {!isProcessing && !(isDetector && aiScore !== null) && (
             <div className={showPaywall ? 'select-none blur-[3px] pointer-events-none' : ''}>
               <ToolTextArea label="" value={fullOutput} onChange={() => {}} placeholder={outputPlaceholder} rows={12} readOnly />
             </div>

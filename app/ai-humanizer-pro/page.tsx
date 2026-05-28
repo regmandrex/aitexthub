@@ -29,6 +29,15 @@ export default function AIHumanizerProPage() {
   const { data: session } = useSession();
   const isLoggedIn = !!session?.user;
   const router = useRouter();
+  const [isPro, setIsPro] = useState(false);
+
+  useEffect(() => {
+    if (!isLoggedIn) { setIsPro(false); return; }
+    fetch('/api/subscription')
+      .then((r) => r.json())
+      .then((d) => setIsPro(!!d.isPro))
+      .catch(() => setIsPro(false));
+  }, [isLoggedIn]);
 
   const [input, setInput] = useState('');
   const [output, setOutput] = useState('');
@@ -68,6 +77,12 @@ export default function AIHumanizerProPage() {
     if (!isLoggedIn) {
       setAuthMode('signup');
       setAuthOpen(true);
+      return;
+    }
+
+    // Logged in but must be on a paid plan — this is an API-powered premium tool
+    if (!isPro) {
+      setPricingOpen(true);
       return;
     }
 
@@ -138,7 +153,7 @@ export default function AIHumanizerProPage() {
               {isLoggedIn ? (
                 <HeaderUserMenu
                   email={session?.user?.email ?? ''}
-                  plan="free"
+                  plan={isPro ? 'pro' : 'free'}
                   onOpenAccount={() => router.push('/account')}
                   onUpgrade={() => setPricingOpen(true)}
                   signOutRedirect={null}
