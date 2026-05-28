@@ -36,6 +36,7 @@ export default function AIHumanizerProPage() {
   const [isProcessing, setIsProcessing] = useState(false);
   const [pricingOpen, setPricingOpen] = useState(false);
   const [authOpen, setAuthOpen] = useState(false);
+  const [authMode, setAuthMode] = useState<'login' | 'signup'>('login');
   const [stepIndex, setStepIndex] = useState(0);
   const [progress, setProgress] = useState(0);
   const [history, setHistory] = useState<Array<{ input: string; output: string; time: string }>>([]);
@@ -65,6 +66,7 @@ export default function AIHumanizerProPage() {
     if (!input.trim()) return;
 
     if (!isLoggedIn) {
+      setAuthMode('signup');
       setAuthOpen(true);
       return;
     }
@@ -143,12 +145,12 @@ export default function AIHumanizerProPage() {
                 />
               ) : (
                 <div className="flex items-center gap-2">
-                  <button type="button" onClick={() => setAuthOpen(true)} className="px-3 py-1.5 text-xs font-semibold text-slate-700 hover:text-slate-900">
+                  <button type="button" onClick={() => { setAuthMode('login'); setAuthOpen(true); }} className="px-3 py-1.5 text-xs font-semibold text-slate-700 hover:text-slate-900">
                     Log in
                   </button>
                   <button
                     type="button"
-                    onClick={() => setAuthOpen(true)}
+                    onClick={() => { setAuthMode('signup'); setAuthOpen(true); }}
                     className="rounded-full bg-gradient-to-r from-violet-600 to-purple-700 px-4 py-1.5 text-xs font-bold text-white shadow-sm"
                   >
                     Get Started
@@ -160,12 +162,12 @@ export default function AIHumanizerProPage() {
         </div>
 
         {/* Hero strip */}
-        <div className="shrink-0 bg-gradient-to-r from-slate-950 via-slate-900 to-violet-950 px-4 py-4 text-center md:py-6">
-          <h1 className="text-xl font-black tracking-tight text-white sm:text-2xl md:text-3xl">
+        <div className="shrink-0 bg-gradient-to-r from-slate-950 via-slate-900 to-violet-950 px-4 py-6 text-center md:py-8">
+          <h1 className="text-3xl font-black tracking-tight text-white sm:text-4xl md:text-5xl">
             Make AI Text{' '}
             <span className="bg-gradient-to-r from-violet-400 to-purple-300 bg-clip-text text-transparent">Sound Human.</span>
           </h1>
-          <p className="mt-1 text-[11px] text-slate-400 md:text-xs">
+          <p className="mt-2 text-xs text-slate-400 md:text-sm">
             Rewrite AI content to pass every detector — Turnitin, GPTZero, Originality & more.
           </p>
         </div>
@@ -362,7 +364,7 @@ export default function AIHumanizerProPage() {
         </div>
       </div>
 
-      {authOpen && <AuthModal onClose={() => setAuthOpen(false)} onSuccess={() => { setAuthOpen(false); window.location.reload(); }} />}
+      {authOpen && <AuthModal initialMode={authMode} onClose={() => setAuthOpen(false)} onSuccess={() => { setAuthOpen(false); window.location.reload(); }} />}
       {pricingOpen && <PricingModal onClose={() => setPricingOpen(false)} />}
     </>
   );

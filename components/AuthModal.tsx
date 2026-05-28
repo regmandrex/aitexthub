@@ -6,10 +6,11 @@ import { signIn, signUp } from '@/lib/auth-client';
 type AuthModalProps = {
   onClose: () => void;
   onSuccess: () => void;
+  initialMode?: 'login' | 'signup';
 };
 
-export default function AuthModal({ onClose, onSuccess }: AuthModalProps) {
-  const [isLogin, setIsLogin] = useState(true);
+export default function AuthModal({ onClose, onSuccess, initialMode = 'login' }: AuthModalProps) {
+  const [isLogin, setIsLogin] = useState(initialMode === 'login');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
