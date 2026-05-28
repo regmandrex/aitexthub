@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { useRouter } from 'next/navigation';
 import { useSession, signOut } from '@/lib/auth-client';
@@ -8,12 +8,13 @@ import { useSession, signOut } from '@/lib/auth-client';
 export default function AccountPage() {
   const { data: session, isPending } = useSession();
   const router = useRouter();
+  const [signingOut, setSigningOut] = useState(false);
 
   useEffect(() => {
-    if (!isPending && !session?.user) {
+    if (!isPending && !session?.user && !signingOut) {
       router.push('/login?redirect=/account');
     }
-  }, [isPending, session, router]);
+  }, [isPending, session, router, signingOut]);
 
   if (isPending || !session?.user) {
     return (
@@ -161,16 +162,15 @@ export default function AccountPage() {
         <div className="mt-8 text-center">
           <button
             type="button"
+            disabled={signingOut}
             onClick={async () => {
-              const btn = document.getElementById('signout-btn');
-              if (btn) btn.textContent = 'Signing out...';
+              setSigningOut(true);
               await signOut();
               setTimeout(() => router.push('/'), 800);
             }}
-            id="signout-btn"
-            className="text-sm font-semibold text-red-600 transition hover:text-red-700"
+            className="text-sm font-semibold text-red-600 transition hover:text-red-700 disabled:opacity-60"
           >
-            Sign out
+            {signingOut ? 'Signing out...' : 'Sign out'}
           </button>
         </div>
 
