@@ -139,6 +139,7 @@ export default function AIHumanizerProPage() {
                   plan="free"
                   onOpenAccount={() => router.push('/account')}
                   onUpgrade={() => setPricingOpen(true)}
+                  signOutRedirect={null}
                 />
               ) : (
                 <div className="flex items-center gap-2">

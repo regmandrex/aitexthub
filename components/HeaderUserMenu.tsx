@@ -10,6 +10,8 @@ type HeaderUserMenuProps = {
   plan: 'free' | 'pro';
   onOpenAccount: () => void;
   onUpgrade?: () => void;
+  /** Where to go after sign out. Pass null to stay on the current page (reload). Defaults to homepage. */
+  signOutRedirect?: string | null;
 };
 
 function initialOf(email: string) {
@@ -22,7 +24,7 @@ function truncate(email: string, max = 16) {
   return email.slice(0, max - 1) + '…';
 }
 
-export default function HeaderUserMenu({ email, plan, onOpenAccount, onUpgrade }: HeaderUserMenuProps) {
+export default function HeaderUserMenu({ email, plan, onOpenAccount, onUpgrade, signOutRedirect = '/' }: HeaderUserMenuProps) {
   const [open, setOpen] = useState(false);
   const [signingOut, setSigningOut] = useState(false);
   const wrapperRef = useRef<HTMLDivElement | null>(null);
@@ -138,7 +140,13 @@ export default function HeaderUserMenu({ email, plan, onOpenAccount, onUpgrade }
                 setSigningOut(true);
                 setOpen(false);
                 await signOut();
-                setTimeout(() => router.push('/'), 800);
+                setTimeout(() => {
+                  if (signOutRedirect === null) {
+                    window.location.reload();
+                  } else {
+                    router.push(signOutRedirect);
+                  }
+                }, 800);
               }}
               className="flex w-full items-center gap-3 rounded-xl px-3 py-2.5 text-sm text-slate-500 transition hover:bg-red-50 hover:text-red-600 disabled:opacity-60"
             >
