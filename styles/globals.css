@@ -40,8 +40,21 @@ p {
 }
 
 textarea,
-input {
+input,
+select {
   @apply border border-slate-200 rounded-lg bg-white text-slate-900;
+}
+
+/* Prevent iOS Safari from auto-zooming (and triggering horizontal drift)
+   when focusing a field: any control under 16px makes mobile Safari zoom in.
+   !important is required to override per-component Tailwind sizes like
+   text-[15px]/text-sm that otherwise win on specificity. */
+@media (max-width: 767px) {
+  textarea,
+  input:not([type='checkbox']):not([type='radio']),
+  select {
+    font-size: 16px !important;
+  }
 }
 
 .prose a {
