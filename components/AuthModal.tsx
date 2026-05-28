@@ -153,6 +153,14 @@ export default function AuthModal({ onClose, onSuccess, initialMode = 'login' }:
               {isLogin ? 'Sign up' : 'Log in'}
             </button>
           </p>
+
+          {!isLogin && (
+            <p className="mt-3 text-center text-[11px] leading-relaxed text-slate-400">
+              By creating an account, you agree to our{' '}
+              <a href="/terms-of-service" target="_blank" rel="noreferrer" className="underline hover:text-slate-600">Terms of Service</a> and{' '}
+              <a href="/privacy-policy" target="_blank" rel="noreferrer" className="underline hover:text-slate-600">Privacy Policy</a>.
+            </p>
+          )}
         </div>
       </div>
     </div>
