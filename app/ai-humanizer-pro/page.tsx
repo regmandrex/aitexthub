@@ -159,29 +159,29 @@ export default function AIHumanizerProPage() {
         </div>
 
         {/* Hero strip */}
-        <div className="shrink-0 bg-gradient-to-r from-slate-950 via-slate-900 to-violet-950 px-4 py-6 text-center">
-          <h1 className="text-2xl font-black tracking-tight text-white md:text-3xl">
+        <div className="shrink-0 bg-gradient-to-r from-slate-950 via-slate-900 to-violet-950 px-4 py-4 text-center md:py-6">
+          <h1 className="text-xl font-black tracking-tight text-white sm:text-2xl md:text-3xl">
             Make AI Text{' '}
             <span className="bg-gradient-to-r from-violet-400 to-purple-300 bg-clip-text text-transparent">Sound Human.</span>
           </h1>
-          <p className="mt-1 text-xs text-slate-400">
+          <p className="mt-1 text-[11px] text-slate-400 md:text-xs">
             Rewrite AI content to pass every detector — Turnitin, GPTZero, Originality & more.
           </p>
         </div>
 
         {/* Main tool area */}
-        <div className="flex-1 bg-slate-50 px-4 py-6">
+        <div className="flex-1 bg-slate-50 px-3 py-4 md:px-4 md:py-6">
           <div className="mx-auto max-w-5xl">
 
             {/* Mode selector + EST time */}
-            <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
-              <div className="inline-flex rounded-lg border border-slate-200 bg-white p-0.5 shadow-sm">
+            <div className="mb-4 flex flex-wrap items-center justify-between gap-2">
+              <div className="inline-flex flex-1 rounded-lg border border-slate-200 bg-white p-0.5 shadow-sm sm:flex-none">
                 {MODES.map((m) => (
                   <button
                     key={m.id}
                     type="button"
                     onClick={() => setMode(m.id as typeof mode)}
-                    className={`rounded-md px-4 py-1.5 text-[11px] font-bold uppercase tracking-wider transition ${
+                    className={`flex-1 rounded-md px-3 py-1.5 text-[10px] font-bold uppercase tracking-wider transition sm:flex-none sm:px-4 sm:text-[11px] ${
                       mode === m.id
                         ? 'bg-slate-900 text-white shadow-sm'
                         : 'text-slate-500 hover:text-slate-900'
@@ -208,8 +208,7 @@ export default function AIHumanizerProPage() {
                   value={input}
                   onChange={(e) => setInput(e.target.value)}
                   placeholder="Paste your AI-generated text here..."
-                  className="flex-1 resize-none border-0 bg-transparent px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none"
-                  style={{ minHeight: 280 }}
+                  className="flex-1 resize-none border-0 bg-transparent px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:outline-none min-h-[180px] md:min-h-[280px]"
                 />
               </div>
 
@@ -230,7 +229,7 @@ export default function AIHumanizerProPage() {
                   </button>
                 </div>
 
-                <div className="flex-1 px-4 py-3" style={{ minHeight: 280 }}>
+                <div className="flex-1 px-4 py-3 min-h-[180px] md:min-h-[280px]">
                   {isProcessing ? (
                     <div className="space-y-3">
                       <ul className="space-y-2">
@@ -270,12 +269,12 @@ export default function AIHumanizerProPage() {
             </div>
 
             {/* CTA bar */}
-            <div className="mt-4 flex flex-wrap items-center justify-between gap-3">
+            <div className="mt-4 flex flex-col-reverse items-stretch gap-3 sm:flex-row sm:items-center sm:justify-between">
               <div className="flex items-center gap-2">
                 <button
                   type="button"
                   onClick={() => setShowHistory(!showHistory)}
-                  className="inline-flex items-center gap-1.5 rounded-lg border border-slate-200 bg-white px-4 py-2.5 text-xs font-bold uppercase tracking-wider text-slate-600 transition hover:bg-slate-50"
+                  className="inline-flex flex-1 items-center justify-center gap-1.5 rounded-lg border border-slate-200 bg-white px-4 py-2.5 text-xs font-bold uppercase tracking-wider text-slate-600 transition hover:bg-slate-50 sm:flex-none"
                 >
                   <svg className="h-3.5 w-3.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -286,7 +285,7 @@ export default function AIHumanizerProPage() {
                   type="button"
                   onClick={() => { setInput(''); setOutput(''); }}
                   disabled={!input && !output}
-                  className="rounded-lg border border-slate-200 bg-white px-4 py-2.5 text-xs font-bold uppercase tracking-wider text-slate-600 transition hover:bg-slate-50 disabled:opacity-40"
+                  className="flex-1 rounded-lg border border-slate-200 bg-white px-4 py-2.5 text-xs font-bold uppercase tracking-wider text-slate-600 transition hover:bg-slate-50 disabled:opacity-40 sm:flex-none"
                 >
                   Clear
                 </button>
@@ -296,7 +295,7 @@ export default function AIHumanizerProPage() {
                 type="button"
                 onClick={handleHumanize}
                 disabled={!input.trim() || isProcessing}
-                className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-violet-600 to-purple-700 px-8 py-3 text-sm font-bold text-white shadow-lg shadow-violet-200 transition hover:shadow-xl active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-50"
+                className="inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-violet-600 to-purple-700 px-8 py-3.5 text-sm font-bold text-white shadow-lg shadow-violet-200 transition hover:shadow-xl active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-50 sm:py-3"
               >
                 {isProcessing ? (
                   <>
