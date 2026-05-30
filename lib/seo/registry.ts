@@ -2912,9 +2912,9 @@ export const toolPages: ToolPage[] = [
   },
   {
     slug: 'xml-formatter',
-    title: 'XML Formatter Online',
-    description: 'Format and indent XML documents online. Beautify minified XML with proper indentation and syntax for free.',
-    seoTitle: 'XML Formatter Online Free – Beautify & Indent XML Documents',
+    title: 'XML Formatter',
+    description: 'Format, beautify, minify, and validate XML online. Pretty-print XML with proper indentation, collapse to single line, or check well-formedness — fast, free, and private.',
+    seoTitle: 'XML Formatter Online Free – Beautify, Minify & Validate XML',
     category: 'developer-tool',
   },
   {
