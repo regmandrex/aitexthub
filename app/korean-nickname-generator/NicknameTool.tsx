@@ -54,7 +54,7 @@ function normalizeName(value: string) {
 function normalizeFeatures(value: string) {
   const trimmed = value.trim();
   if (!trimmed) return [];
-  const segments = trimmed.split(/[,/|Â·â€¢\n\r]+/).map((segment) => segment.trim()).filter(Boolean);
+  const segments = trimmed.split(/[,/|·•\n\r]+/).map((segment) => segment.trim()).filter(Boolean);
   const tokens = new Set<string>();
   segments.forEach((segment) => {
     tokens.add(segment);
@@ -234,7 +234,7 @@ function generateNicknames({
 
   if (style === 'emotional') {
     patterns.push(() => `${pick(rng, nouns)} ${hasName ? namePieces.short : pick(rng, nouns)}`);
-    patterns.push(() => `${pick(rng, nouns)}ì˜ ${hasName ? namePieces.short : pick(rng, nouns)}`);
+    patterns.push(() => `${pick(rng, nouns)}의 ${hasName ? namePieces.short : pick(rng, nouns)}`);
   }
 
   if (style === 'short') {
@@ -292,7 +292,7 @@ export function NicknameTool() {
 
   const handleGenerate = (nextRoll?: number) => {
     if (!name.trim() && !features.trim()) {
-      setError('ì´ë¦„ ë˜ëŠ” íŠ¹ì§• ì¤‘ í•˜ë‚˜ë¥¼ ìž…ë ¥í•´ ì£¼ì„¸ìš”.');
+      setError('이름 또는 특징 중 하나를 입력해 주세요.');
       return;
     }
     const resolvedRoll = nextRoll ?? roll + 1;
@@ -332,27 +332,27 @@ export function NicknameTool() {
       <div className="grid gap-4 md:grid-cols-2">
         <div className="space-y-2">
           <label className="text-sm font-medium text-slate-700" htmlFor="nickname-name">
-            ì´ë¦„
+            이름
           </label>
           <input
             id="nickname-name"
             type="text"
             value={name}
             onChange={(event) => setName(event.target.value)}
-            placeholder="ì˜ˆ: ê¹€í•œë‚˜"
+            placeholder="예: 김한나"
             className="w-full rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm shadow-sm focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100"
           />
         </div>
 
         <div className="space-y-2 md:col-span-1">
           <label className="text-sm font-medium text-slate-700" htmlFor="nickname-features">
-            íŠ¹ì§•
+            특징
           </label>
           <textarea
             id="nickname-features"
             value={features}
             onChange={(event) => setFeatures(event.target.value)}
-            placeholder="ì˜ˆ: ê·€ì—¬ì›€, í™œë°œí•¨, ê²Œìž„ ì¢‹ì•„í•¨"
+            placeholder="예: 귀여움, 활발함, 게임 좋아함"
             rows={3}
             className="w-full rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm shadow-sm focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100"
           />
@@ -361,10 +361,10 @@ export function NicknameTool() {
 
       <div className="space-y-2">
         <div className="flex flex-wrap items-center justify-between gap-2">
-          <label className="text-sm font-medium text-slate-700">ìŠ¤íƒ€ì¼</label>
+          <label className="text-sm font-medium text-slate-700">스타일</label>
           <span className="text-xs text-slate-500">{activeStyle?.hint}</span>
         </div>
-        <div className="flex flex-wrap gap-2" role="tablist" aria-label="ë³„ëª… ìŠ¤íƒ€ì¼ ì„ íƒ">
+        <div className="flex flex-wrap gap-2" role="tablist" aria-label="별명 스타일 선택">
           {STYLE_OPTIONS.map((option) => (
             <button
               key={option.key}
@@ -390,7 +390,7 @@ export function NicknameTool() {
           onClick={() => handleGenerate()}
           className="inline-flex items-center justify-center rounded-lg bg-brand-700 px-4 py-2 text-sm font-semibold text-white shadow hover:bg-brand-800"
         >
-          ë³„ëª… ìƒì„±í•˜ê¸°
+          별명 생성하기
         </button>
         {results.length > 0 ? (
           <button
@@ -398,17 +398,17 @@ export function NicknameTool() {
             onClick={() => handleGenerate(roll + 1)}
             className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
           >
-            ë‹¤ì‹œ ìƒì„±
+            다시 생성
           </button>
         ) : null}
-        <span className="text-xs text-slate-500">â˜… ë²„íŠ¼ìœ¼ë¡œ ì¦ê²¨ì°¾ê¸°(ë¡œì»¬ ì €ìž¥)</span>
+        <span className="text-xs text-slate-500">★ 버튼으로 즐겨찾기(로컬 저장)</span>
       </div>
 
       {error ? <p className="text-sm text-rose-600">{error}</p> : null}
 
       <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
         <div className="flex items-center justify-between gap-2">
-          <h3 className="text-sm font-semibold text-slate-900">ì¶”ì²œ ê²°ê³¼</h3>
+          <h3 className="text-sm font-semibold text-slate-900">추천 결과</h3>
           <span className="rounded-full bg-white px-2 py-1 text-xs text-slate-600">
             {results.length}/{MAX_RESULTS}
           </span>
@@ -416,7 +416,7 @@ export function NicknameTool() {
 
         {results.length === 0 ? (
           <p className="mt-3 text-sm text-slate-600">
-            ì´ë¦„ì´ë‚˜ íŠ¹ì§•ì„ ìž…ë ¥í•˜ê³  ë²„íŠ¼ì„ ëˆ„ë¥´ë©´ 20ê°œì˜ ë³„ëª… ì¶”ì²œì´ ìƒì„±ë©ë‹ˆë‹¤.
+            이름이나 특징을 입력하고 버튼을 누르면 20개의 별명 추천이 생성됩니다.
           </p>
         ) : (
           <div className="mt-3 space-y-2">
@@ -436,16 +436,16 @@ export function NicknameTool() {
                         : 'border-slate-200 bg-white text-slate-600'
                     }`}
                     aria-pressed={favoriteSet.has(item)}
-                    aria-label="ì¦ê²¨ì°¾ê¸° í† ê¸€"
+                    aria-label="즐겨찾기 토글"
                   >
-                    {favoriteSet.has(item) ? 'â˜… ì¦ê²¨ì°¾ê¸°' : 'â˜† ì¦ê²¨ì°¾ê¸°'}
+                    {favoriteSet.has(item) ? '★ 즐겨찾기' : '☆ 즐겨찾기'}
                   </button>
                   <button
                     type="button"
                     onClick={() => handleCopy(item)}
                     className="rounded-lg border border-slate-200 bg-white px-2.5 py-1 text-xs font-semibold text-slate-700 hover:bg-slate-50"
                   >
-                    {copiedValue === item ? 'ë³µì‚¬ë¨' : 'ë³µì‚¬'}
+                    {copiedValue === item ? '복사됨' : '복사'}
                   </button>
                 </div>
               </div>
@@ -457,8 +457,8 @@ export function NicknameTool() {
       {favorites.length > 0 ? (
         <div className="rounded-2xl border border-slate-200 bg-white p-4">
           <div className="flex flex-wrap items-center justify-between gap-2">
-            <h4 className="text-sm font-semibold text-slate-900">ì¦ê²¨ì°¾ê¸°</h4>
-            <span className="text-xs text-slate-500">ì´ ë¸Œë¼ìš°ì €ì—ë§Œ ì €ìž¥ë©ë‹ˆë‹¤.</span>
+            <h4 className="text-sm font-semibold text-slate-900">즐겨찾기</h4>
+            <span className="text-xs text-slate-500">이 브라우저에만 저장됩니다.</span>
           </div>
           <div className="mt-3 space-y-2">
             {favorites.map((item) => (
@@ -470,14 +470,14 @@ export function NicknameTool() {
                     onClick={() => handleCopy(item)}
                     className="rounded-lg border border-slate-200 bg-white px-2.5 py-1 text-xs font-semibold text-slate-700 hover:bg-slate-50"
                   >
-                    {copiedValue === item ? 'ë³µì‚¬ë¨' : 'ë³µì‚¬'}
+                    {copiedValue === item ? '복사됨' : '복사'}
                   </button>
                   <button
                     type="button"
                     onClick={() => removeFavorite(item)}
                     className="rounded-lg border border-slate-200 bg-white px-2.5 py-1 text-xs font-semibold text-slate-600 hover:bg-slate-50"
                   >
-                    ì‚­ì œ
+                    삭제
                   </button>
                 </div>
               </div>
