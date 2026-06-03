@@ -76,10 +76,6 @@ export default function PricingModal({ onClose }: { onClose: () => void }) {
     const handler = (e: KeyboardEvent) => { if (e.key === 'Escape') onClose(); };
     document.addEventListener('keydown', handler);
     document.body.style.overflow = 'hidden';
-    // Re-initialize lemon.js so the overlay intercepts checkout links rendered in this modal
-    if (typeof window !== 'undefined' && typeof (window as any).createLemonSqueezy === 'function') {
-      (window as any).createLemonSqueezy();
-    }
     return () => {
       document.removeEventListener('keydown', handler);
       document.body.style.overflow = '';
@@ -87,17 +83,6 @@ export default function PricingModal({ onClose }: { onClose: () => void }) {
   }, [onClose]);
 
   const activePlan = PLANS.find((p) => p.id === selected) ?? PLANS[2];
-
-  const handleCheckout = (e: React.MouseEvent) => {
-    const url = activePlan.checkoutUrl;
-    if (!url) return;
-    const LS = (window as any).LemonSqueezy;
-    if (LS?.Url?.Open) {
-      e.preventDefault();
-      LS.Url.Open(url);
-    }
-    // else: fall through to the <a href> redirect
-  };
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center overflow-y-auto p-4">
@@ -211,8 +196,7 @@ export default function PricingModal({ onClose }: { onClose: () => void }) {
         <div className="px-5 pb-5">
           <a
             href={activePlan.checkoutUrl ?? '/pro#pricing'}
-            onClick={handleCheckout}
-            className="lemonsqueezy-button block w-full rounded-xl bg-gradient-to-r from-violet-600 to-purple-700 py-3.5 text-center text-sm font-bold text-white shadow-lg shadow-violet-200 transition-all hover:from-violet-700 hover:to-purple-800 hover:shadow-xl"
+            className="block w-full rounded-xl bg-gradient-to-r from-violet-600 to-purple-700 py-3.5 text-center text-sm font-bold text-white shadow-lg shadow-violet-200 transition-all hover:from-violet-700 hover:to-purple-800 hover:shadow-xl"
           >
             Continue with {activePlan.name} →
           </a>
