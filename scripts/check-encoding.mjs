@@ -27,7 +27,7 @@ const QMARK = /\?\?\?\?/;
 // Lines that legitimately document mojibake (so we don't flag our own docs).
 const ALLOW_LINE = /shows as|garbled characters|mojibake|example of corrupt/i;
 // Files where '?' / invisible chars are real content.
-const ALLOW_FILE = /invisible|zero-width|unicode-text|csv-to-json|check-encoding/;
+const ALLOW_FILE = /invisible|zero-width|unicode-text|csv-to-json/;
 
 function listFiles(args) {
   if (args.length) return args.filter((f) => EXTS.test(f));
@@ -39,6 +39,8 @@ const files = listFiles(process.argv.slice(2));
 const problems = [];
 
 for (const file of files) {
+  // Skip this script itself — it contains example mojibake strings in its docs.
+  if (file.endsWith('check-encoding.mjs')) continue;
   try {
     if (!statSync(file).isFile()) continue;
   } catch {
