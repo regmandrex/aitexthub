@@ -8,7 +8,7 @@ function WriteUp() {
         <h2>Bcrypt Generator: Free Online Password Hashing Tool for Secure Development and Testing</h2>
         <p>
           Bcrypt is the gold standard of password hashing algorithms for web applications. Designed in
-          1999 by Niels Provos and David MaziÃ¨res, bcrypt has remained one of the most trusted password
+          1999 by Niels Provos and David Mazières, bcrypt has remained one of the most trusted password
           hashing functions in existence "” surviving decades of cryptanalytic scrutiny while MD5, SHA-1,
           and even SHA-256 (when used directly for passwords) have been rendered dangerously inadequate.
           Our free online bcrypt generator lets you hash passwords and verify bcrypt hashes instantly

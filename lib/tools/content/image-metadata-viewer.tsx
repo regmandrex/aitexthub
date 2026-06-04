@@ -53,7 +53,7 @@ export const imageMetadataViewerContent: ToolContent = {
         <ul>
           <li><strong>PixelXDimension / PixelYDimension</strong>: image width and height in pixels</li>
           <li><strong>XResolution / YResolution</strong>: pixel density (dpi or ppi), e.g., 72 PPI for screen, 300 DPI for print</li>
-          <li><strong>Orientation</strong>: rotation applied by the camera (1=normal, 3=180Â°, 6=90Â° CW, 8=90Â° CCW)</li>
+          <li><strong>Orientation</strong>: rotation applied by the camera (1=normal, 3=180°, 6=90° CW, 8=90° CCW)</li>
           <li><strong>ColorSpace</strong>: sRGB, Adobe RGB, or uncalibrated</li>
           <li><strong>BitsPerSample</strong>: bit depth per channel (8, 16, etc.)</li>
           <li><strong>Compression</strong>: compression type (JPEG, uncompressed)</li>
@@ -80,8 +80,8 @@ export const imageMetadataViewerContent: ToolContent = {
         <p>
           Most social networks (Facebook, Instagram, Twitter/X) automatically strip GPS metadata from
           uploaded images, but not all services do. Before sharing images publicly, verify GPS data is
-          removed using a metadata viewer or stripped using a metadata removal tool. On iOS: Settings â†’
-          Privacy â†’ Location Services â†’ Camera â†’ "Never" prevents GPS embedding. On Android, camera
+          removed using a metadata viewer or stripped using a metadata removal tool. On iOS: Settings →
+          Privacy → Location Services → Camera → "Never" prevents GPS embedding. On Android, camera
           settings include a "Location tags" or "Save location" toggle.
         </p>
 
@@ -96,7 +96,7 @@ export const imageMetadataViewerContent: ToolContent = {
           <li><strong>Headline</strong>: short title for the image</li>
           <li><strong>Keywords</strong>: searchable keyword tags (comma-separated list)</li>
           <li><strong>Creator/Byline</strong>: photographer's name</li>
-          <li><strong>Copyright Notice</strong>: copyright string (e.g., "Â© 2025 Jane Smith")</li>
+          <li><strong>Copyright Notice</strong>: copyright string (e.g., "© 2025 Jane Smith")</li>
           <li><strong>Credit Line</strong>: how the image should be credited when published</li>
           <li><strong>Source</strong>: originating organization or news agency</li>
           <li><strong>City / State / Country</strong>: location where the image was captured</li>
@@ -194,7 +194,7 @@ export const imageMetadataViewerContent: ToolContent = {
           <li><strong>Squoosh / TinyPNG</strong>: most image optimization services strip metadata by default.</li>
           <li><strong>ffmpeg</strong>: <code>ffmpeg -i input.jpg -map_metadata -1 output.jpg</code></li>
           <li><strong>iOS / macOS</strong>: Finder's "Get Info" shows basic metadata; Photos app has limited metadata editing. Use Preview for basic EXIF editing.</li>
-          <li><strong>Windows</strong>: right-click â†’ Properties â†’ Details tab â†’ "Remove Properties and Personal Information".</li>
+          <li><strong>Windows</strong>: right-click → Properties → Details tab → "Remove Properties and Personal Information".</li>
         </ul>
         <p>
           Note that stripping metadata completely is different from retaining only certain fields.
@@ -266,13 +266,13 @@ export const imageMetadataViewerContent: ToolContent = {
       category: 'EXIF',
       question: 'What does the Orientation EXIF tag do?',
       answer:
-        'The Orientation tag records the camera rotation at capture time (1=normal, 3=180Â°, 6=90Â° CW, 8=90Â° CCW). This allows image viewers to display the image correctly without physically rotating the pixels "” the file stores the original captured orientation and the software applies rotation on display. When images are opened in software that ignores Orientation, photos taken in portrait mode may appear rotated.',
+        'The Orientation tag records the camera rotation at capture time (1=normal, 3=180°, 6=90° CW, 8=90° CCW). This allows image viewers to display the image correctly without physically rotating the pixels "” the file stores the original captured orientation and the software applies rotation on display. When images are opened in software that ignores Orientation, photos taken in portrait mode may appear rotated.',
     },
     {
       category: 'GPS',
       question: 'Do photos taken on my phone contain my location?',
       answer:
-        'Yes, if location permissions are granted to the camera app. Smartphones embed GPS latitude, longitude, altitude, and timestamp in EXIF data by default when location access is enabled. This means any photo you share may contain the exact coordinates of where you were when you took it "” a significant privacy risk. To disable: on iOS, Settings â†’ Privacy â†’ Location Services â†’ Camera â†’ Never. On Android, open the camera app and disable "Save location" in settings.',
+        'Yes, if location permissions are granted to the camera app. Smartphones embed GPS latitude, longitude, altitude, and timestamp in EXIF data by default when location access is enabled. This means any photo you share may contain the exact coordinates of where you were when you took it "” a significant privacy risk. To disable: on iOS, Settings → Privacy → Location Services → Camera → Never. On Android, open the camera app and disable "Save location" in settings.',
     },
     {
       category: 'GPS',
@@ -284,7 +284,7 @@ export const imageMetadataViewerContent: ToolContent = {
       category: 'Privacy',
       question: 'How do I remove GPS and other metadata from photos?',
       answer:
-        'ExifTool command line: exiftool -GPS*= photo.jpg (removes only GPS) or exiftool -all= photo.jpg (removes all). Windows: right-click â†’ Properties â†’ Details â†’ "Remove Properties and Personal Information". macOS: Preview or specialized tools. Online: many image optimization services strip metadata by default. Note: some metadata like color profiles (ICC) should be kept to prevent color shifts.',
+        'ExifTool command line: exiftool -GPS*= photo.jpg (removes only GPS) or exiftool -all= photo.jpg (removes all). Windows: right-click → Properties → Details → "Remove Properties and Personal Information". macOS: Preview or specialized tools. Online: many image optimization services strip metadata by default. Note: some metadata like color profiles (ICC) should be kept to prevent color shifts.',
     },
     {
       category: 'IPTC',
@@ -326,7 +326,7 @@ export const imageMetadataViewerContent: ToolContent = {
       category: 'Forensics',
       question: 'What is a JPEG thumbnail inconsistency and why does it matter forensically?',
       answer:
-        'JPEG files contain a small embedded thumbnail (typically 160Ã—120 pixels) in addition to the main image. This thumbnail is generated by the camera when the photo is taken. If someone replaces the main image data while keeping the original file header, the thumbnail may show the original image while the main image shows different content. This inconsistency is a strong indicator of image manipulation and is a standard check in digital forensics.',
+        'JPEG files contain a small embedded thumbnail (typically 160×120 pixels) in addition to the main image. This thumbnail is generated by the camera when the photo is taken. If someone replaces the main image data while keeping the original file header, the thumbnail may show the original image while the main image shows different content. This inconsistency is a strong indicator of image manipulation and is a standard check in digital forensics.',
     },
     {
       category: 'Tools',
@@ -350,7 +350,7 @@ export const imageMetadataViewerContent: ToolContent = {
       category: 'Photography',
       question: 'How do I add copyright metadata to all my photos?',
       answer:
-        'In Lightroom: Library module â†’ metadata presets â†’ create a preset with Copyright Notice and Creator fields â†’ apply to all images. In Photoshop: File â†’ File Info â†’ metadata panel. With ExifTool: exiftool -copyright="Â© 2025 Your Name" -artist="Your Name" *.jpg. In Capture One: metadata panel or batch apply from metadata template. For new captures, set copyright in your camera&#39;s firmware if supported (most DSLRs and mirrorless cameras support this).',
+        'In Lightroom: Library module → metadata presets → create a preset with Copyright Notice and Creator fields → apply to all images. In Photoshop: File → File Info → metadata panel. With ExifTool: exiftool -copyright="© 2025 Your Name" -artist="Your Name" *.jpg. In Capture One: metadata panel or batch apply from metadata template. For new captures, set copyright in your camera&#39;s firmware if supported (most DSLRs and mirrorless cameras support this).',
     },
     {
       category: 'Photography',

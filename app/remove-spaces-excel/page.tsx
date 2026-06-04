@@ -283,7 +283,7 @@ export default async function RemoveSpacesExcelPage() {
           <h1 className="text-xl font-semibold text-slate-900 sm:text-2xl md:text-3xl">Remove Spaces in Excel</h1>
           <p className="max-w-2xl mx-auto text-xs text-slate-700 sm:text-sm md:text-[15px]">Strip leading, trailing, double, and invisible spaces from Excel cells. Every method — TRIM, SUBSTITUTE, Find &amp; Replace, Power Query — explained with step-by-step examples.</p>
           <div className="flex items-center justify-center gap-1 text-sm text-slate-500">
-            <span className="text-yellow-500">?????</span>
+            <span className="text-yellow-500">★★★★★</span>
             <span>4.9</span>
             <span>·</span>
             <span>Free Guide</span>

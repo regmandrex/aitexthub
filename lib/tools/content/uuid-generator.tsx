@@ -41,11 +41,11 @@ function WriteUp() {
           A typical UUID looks like: <code>550e8400-e29b-41d4-a716-446655440000</code>
         </p>
         <p>
-          The total UUID space is 2^128 "” approximately 340 undecillion (3.4 Ã— 10^38) unique values.
+          The total UUID space is 2^128 "” approximately 340 undecillion (3.4 × 10^38) unique values.
           This number is so large that generating UUIDs at any realistic rate produces a collision
           probability that is negligible for any practical purpose. The birthday problem analysis shows
           that to reach even a 50% collision probability for v4 UUIDs, you would need to generate
-          approximately 2.71 Ã— 10^18 values "” more than two and a half quintillion identifiers.
+          approximately 2.71 × 10^18 values "” more than two and a half quintillion identifiers.
         </p>
         <p>
           The UUID specification has been a cornerstone of distributed systems since the late 1990s, with
@@ -516,10 +516,10 @@ function WriteUp() {
           collision is approximately:
         </p>
         <p>
-          <code>P â‰ˆ 1 - e^(-nÂ²/2N)</code>
+          <code>P ≈ 1 - e^(-n²/2N)</code>
         </p>
         <p>
-          For UUID v4, N = 2^122 â‰ˆ 5.3 Ã— 10^36. For a 50% collision probability: n â‰ˆ 2.71 Ã— 10^18.
+          For UUID v4, N = 2^122 ≈ 5.3 × 10^36. For a 50% collision probability: n ≈ 2.71 × 10^18.
           At one billion UUIDs generated per second, reaching that number would take approximately 85 years
           of continuous generation. Real applications generate far fewer UUIDs "” a busy API handling
           10,000 requests per second generates fewer than 32 billion UUIDs per year, not even close to
@@ -544,7 +544,7 @@ const faqs: FaqItem[] = [
     category: 'General',
     question: 'What is a UUID and why is it called "universally unique"?',
     answer:
-      'A UUID (Universally Unique Identifier) is a 128-bit number with 2^128 possible values "” about 340 undecillion. The "universally unique" claim comes from the collision probability: generating 2.71 Ã— 10^18 random v4 UUIDs gives only a 50% chance of any collision. For practical volumes, collisions are essentially impossible.',
+      'A UUID (Universally Unique Identifier) is a 128-bit number with 2^128 possible values "” about 340 undecillion. The "universally unique" claim comes from the collision probability: generating 2.71 × 10^18 random v4 UUIDs gives only a 50% chance of any collision. For practical volumes, collisions are essentially impossible.',
   },
   {
     category: 'General',

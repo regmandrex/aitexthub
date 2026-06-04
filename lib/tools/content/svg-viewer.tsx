@@ -9,7 +9,7 @@ export const svgViewerContent: ToolContent = {
           SVG (Scalable Vector Graphics) files are XML-based text files that describe two-dimensional
           graphics using geometric shapes, paths, text, and styling. Unlike raster images (JPEG, PNG,
           WebP), SVGs contain mathematical descriptions of shapes that render perfectly at any size "”
-          from a 16Ã—16 favicon to a 4K billboard, the same SVG file produces crisp, artifact-free output.
+          from a 16×16 favicon to a 4K billboard, the same SVG file produces crisp, artifact-free output.
           Our SVG Viewer renders SVG markup in real time, displays the source code with syntax highlighting,
           and provides detailed information about the SVG's structure, dimensions, and element tree.
         </p>
@@ -84,10 +84,10 @@ export const svgViewerContent: ToolContent = {
           <li><strong>L x,y</strong>: line to</li>
           <li><strong>H x</strong>: horizontal line to</li>
           <li><strong>V y</strong>: vertical line to</li>
-          <li><strong>C x1,y1 x2,y2 x,y</strong>: cubic BÃ©zier curve</li>
-          <li><strong>S x2,y2 x,y</strong>: smooth cubic BÃ©zier (inferred first control point)</li>
-          <li><strong>Q x1,y1 x,y</strong>: quadratic BÃ©zier curve</li>
-          <li><strong>T x,y</strong>: smooth quadratic BÃ©zier</li>
+          <li><strong>C x1,y1 x2,y2 x,y</strong>: cubic Bézier curve</li>
+          <li><strong>S x2,y2 x,y</strong>: smooth cubic Bézier (inferred first control point)</li>
+          <li><strong>Q x1,y1 x,y</strong>: quadratic Bézier curve</li>
+          <li><strong>T x,y</strong>: smooth quadratic Bézier</li>
           <li><strong>A rx,ry x-rotation large-arc-flag sweep-flag x,y</strong>: elliptical arc</li>
           <li><strong>Z</strong>: close path (draw line back to start of current subpath)</li>
         </ul>
@@ -321,7 +321,7 @@ export const svgViewerContent: ToolContent = {
       category: 'Paths',
       question: 'How do SVG path commands work?',
       answer:
-        'Path commands in the d attribute draw the shape: M (move to, starts a new subpath), L (line to), H (horizontal line), V (vertical line), C (cubic BÃ©zier curve), S (smooth cubic BÃ©zier), Q (quadratic BÃ©zier), T (smooth quadratic BÃ©zier), A (elliptical arc), Z (close path). Uppercase commands use absolute coordinates; lowercase use relative coordinates. Relative commands produce more compact path data since coordinate values are smaller.',
+        'Path commands in the d attribute draw the shape: M (move to, starts a new subpath), L (line to), H (horizontal line), V (vertical line), C (cubic Bézier curve), S (smooth cubic Bézier), Q (quadratic Bézier), T (smooth quadratic Bézier), A (elliptical arc), Z (close path). Uppercase commands use absolute coordinates; lowercase use relative coordinates. Relative commands produce more compact path data since coordinate values are smaller.',
     },
     {
       category: 'Styling',

@@ -21,7 +21,7 @@ export async function generateMetadata(): Promise<Metadata> {
   
   const title = "Zero Width Space Remover";
   const description = "Remove zero-width spaces, invisible Unicode characters, and hidden copy-paste characters from text instantly.";
-  const seoTitle = "Zero Width Space Remover â€” Remove Invisible Unicode & Hidden Characters Free";
+  const seoTitle = "Zero Width Space Remover — Remove Invisible Unicode & Hidden Characters Free";
   
   return buildToolMeta({
     title,
@@ -184,12 +184,12 @@ You can also standardize workflows so content passes through a plain text editor
     question: 'How do I remove zero-width space from text copied from ChatGPT or AI tools?',
     answer: `When you copy text from ChatGPT or other AI interfaces, the clipboard sometimes includes zero-width spaces (U+200B), word joiners (U+2060), or non-breaking spaces (U+00A0) that were inserted by the AI interface's rendering layer. These characters are invisible but cause problems when the text is pasted into code editors, spreadsheets, CMS platforms, or databases.
 
-To remove them, paste the copied AI text into this Zero-Width Space Remover, click clean, and copy the result. The tool strips all targeted invisible characters in one pass and reports how many were removed. This is a reliable pre-processing step for AI-generated content before it enters a production system. The remover does not interact with the AI model or any external service â€” it only processes the text you paste.`,
+To remove them, paste the copied AI text into this Zero-Width Space Remover, click clean, and copy the result. The tool strips all targeted invisible characters in one pass and reports how many were removed. This is a reliable pre-processing step for AI-generated content before it enters a production system. The remover does not interact with the AI model or any external service — it only processes the text you paste.`,
   },
   {
     category: 'Technical',
     question: 'What is the zero-width space Unicode character and what does U+200B mean?',
-    answer: `U+200B is the Unicode code point for the zero-width space character, officially named "ZERO WIDTH SPACE" in the Unicode standard. The U+ prefix is the standard notation for Unicode code points, and 200B is the hexadecimal value. Zero-width space has no visible width and no height â€” when inserted into text it occupies a position in the string but renders as nothing on screen.
+    answer: `U+200B is the Unicode code point for the zero-width space character, officially named "ZERO WIDTH SPACE" in the Unicode standard. The U+ prefix is the standard notation for Unicode code points, and 200B is the hexadecimal value. Zero-width space has no visible width and no height — when inserted into text it occupies a position in the string but renders as nothing on screen.
 
 It was originally introduced to provide a line-break opportunity in text written in languages that do not use spaces between words, such as Thai, Khmer, and CJK scripts. In those languages, a zero-width space signals to the text renderer that a line break is allowed at that position. Outside of those intentional uses, U+200B most commonly appears as an accidental artifact in copied text, and removing it with this tool restores the plain text string.`,
   },
@@ -198,7 +198,7 @@ It was originally introduced to provide a line-break opportunity in text written
     question: 'How do I remove invisible characters from text online for free?',
     answer: `This tool removes invisible characters from text online for free with no account or download required. Paste your text into the input field, click the clean button, and all zero-width spaces, word joiners, non-breaking spaces, directionality marks, and other targeted invisible Unicode characters are removed. The result is displayed immediately and can be copied with one click.
 
-The tool runs entirely in your browser â€” nothing is uploaded to a server. It is free to use with no usage limits. For a broader removal that also strips soft hyphens, byte-order marks, and other invisible characters beyond the zero-width set, the Invisible Character Remover on this site covers a wider range. This zero-width space remover is focused specifically on the zero-width and directionality character family.`,
+The tool runs entirely in your browser — nothing is uploaded to a server. It is free to use with no usage limits. For a broader removal that also strips soft hyphens, byte-order marks, and other invisible characters beyond the zero-width set, the Invisible Character Remover on this site covers a wider range. This zero-width space remover is focused specifically on the zero-width and directionality character family.`,
   },
   {
     category: 'Technical',
@@ -219,7 +219,7 @@ It also helps to document when the cleanup is applied. If some team members clea
 const writeUp = (
   <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
     <div className="prose prose-slate max-w-none">
-      <h2>Zero-Width Space Remover â€” Remove Invisible Unicode Characters from Text</h2>
+      <h2>Zero-Width Space Remover — Remove Invisible Unicode Characters from Text</h2>
       <h2>Introduction</h2>
       <p>
         Invisible characters are one of the most frustrating causes of text errors. You paste a string into a form, and it fails validation. You
@@ -668,8 +668,8 @@ const writeUp = (
         process.
       </p>
 
-      <h2>Copy and Paste Invisible Space â€” Remove Zero Width Invisible Copy Paste Characters</h2>
-      <p>A <strong>copy and paste invisible space</strong> is a zero-width space (U+200B) or similar invisible Unicode character that gets copied along with visible text and then pasted into a new destination, where it continues to be invisible but causes the same problems it did in the source. <strong>Copy and paste invisible space</strong> characters are common in text copied from AI tools, websites, and PDFs â€” they travel silently through clipboard operations because they are part of the plain text data, not the rich formatting layer that paste-as-plain-text strips. This zero-width space remover eliminates every <strong>copy and paste invisible space</strong> character from pasted text, ensuring your clipboard content is free of hidden zero-width characters before it reaches its destination.</p>
+      <h2>Copy and Paste Invisible Space — Remove Zero Width Invisible Copy Paste Characters</h2>
+      <p>A <strong>copy and paste invisible space</strong> is a zero-width space (U+200B) or similar invisible Unicode character that gets copied along with visible text and then pasted into a new destination, where it continues to be invisible but causes the same problems it did in the source. <strong>Copy and paste invisible space</strong> characters are common in text copied from AI tools, websites, and PDFs — they travel silently through clipboard operations because they are part of the plain text data, not the rich formatting layer that paste-as-plain-text strips. This zero-width space remover eliminates every <strong>copy and paste invisible space</strong> character from pasted text, ensuring your clipboard content is free of hidden zero-width characters before it reaches its destination.</p>
     </div>
   </section>
 );

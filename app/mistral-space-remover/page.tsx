@@ -24,7 +24,7 @@ const faqs: FaqItem[] = [
     category: 'General',
     question: '3. Does Mistral Space Remover connect to or interact with Mistral AI systems?',
     answer:
-      'No. The tool does not connect to, query, control, or interact with any Mistral AI systems. It processes text locally within the toolâ€™s formatting logic.',
+      'No. The tool does not connect to, query, control, or interact with any Mistral AI systems. It processes text locally within the tool’s formatting logic.',
   },
   {
     category: 'General',
@@ -112,7 +112,7 @@ const faqs: FaqItem[] = [
   },
   {
     category: 'General',
-    question: '18. Does Mistral Space Remover guarantee â€œundetectableâ€ AI text?',
+    question: '18. Does Mistral Space Remover guarantee “undetectable” AI text?',
     answer:
       'No. The tool makes no claims about detectability. Its sole purpose is formatting cleanup and whitespace normalization.',
   },

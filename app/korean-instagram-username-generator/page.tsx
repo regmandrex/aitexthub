@@ -32,7 +32,7 @@ function buildFaqJsonLd() {
   return {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
-    name: `${title} â€“ ìžì£¼ ë¬»ëŠ” ì§ˆë¬¸`,
+    name: `${title} – 자주 묻는 질문`,
     mainEntity: faqItems.map((item) => ({
       '@type': 'Question',
       name: item.question,
@@ -66,9 +66,9 @@ export default function KoreanInstagramUsernamePage() {
       <div className="mx-auto w-full max-w-3xl px-4 py-5 min-h-screen sm:py-8 md:py-10">
         <section className="space-y-2 text-center md:space-y-3">
           <h1 className="text-2xl font-semibold text-slate-900 sm:text-3xl md:text-4xl">ì¸ìŠ¤íƒ€ ì•„ì´ë”” ì¶”ì²œ</h1>
-          <p className="text-xs text-slate-700 sm:text-sm md:text-base">ê°ì„±Â·ì§§ì€Â·ì˜ì–´ ë‹‰Â·ì»¤í”ŒÂ·ê·€ì—¬ìš´ ì¸ìŠ¤íƒ€ ì•„ì´ë””ë¥¼ ë¬´ë£Œë¡œ ì¶”ì²œí•´ ë“œë¦½ë‹ˆë‹¤.</p>
+          <p className="text-xs text-slate-700 sm:text-sm md:text-base">감성·짧은·영어 닉·커플·귀여운 인스타 아이디를 무료로 추천해 드립니다.</p>
           <div className="flex items-center justify-center gap-1 text-sm text-slate-500">
-            <span className="text-yellow-500">â˜…â˜…â˜…â˜…â˜…</span><span>4.9</span><span>Â·</span><span>ë¬´ë£Œ</span>
+            <span className="text-yellow-500">★★★★★</span><span>4.9</span><span>·</span><span>무료</span>
           </div>
         </section>
 
@@ -112,11 +112,11 @@ export default function KoreanInstagramUsernamePage() {
           <div className="space-y-4">
             <h2 className="text-2xl font-semibold text-slate-900">ì¢‹ì€ ì¸ìŠ¤íƒ€ ì•„ì´ë””ë¥¼ ë§Œë“œëŠ” 5ê°€ì§€ ê¸°ì¤€</h2>
             <ol className="list-decimal space-y-3 pl-5">
-              <li><strong className="text-slate-900">ì§§ê³  ë°œìŒí•˜ê¸° ì‰¬ìš¸ ê²ƒ</strong> â€” ê¸¸ì´ê°€ ë„ˆë¬´ ê¸¸ê±°ë‚˜ ë°œìŒì´ ì–´ë ¤ìš´ ì•„ì´ë””ëŠ” ì¹œêµ¬ê°€ ê²€ìƒ‰í•˜ê¸°ë„ ì–´ë µê³  ê¸°ì–µí•˜ê¸°ë„ íž˜ë“­ë‹ˆë‹¤. ê°€ëŠ¥í•˜ë©´ 15ìž ì´ë‚´ê°€ ì¢‹ìŠµë‹ˆë‹¤.</li>
-              <li><strong className="text-slate-900">ê³„ì • ì½˜ì…‰íŠ¸ì™€ ì¼ì¹˜í•  ê²ƒ</strong> â€” ê°ì„± ì‚¬ì§„ ê³„ì •ì—ëŠ” ê°ì„± ëª¨ë“œ, ë¹„ì¦ˆë‹ˆìŠ¤ ê³„ì •ì—ëŠ” ì˜ì–´ ë‹‰ ëª¨ë“œ, ë°˜ë ¤ë™ë¬¼ ê³„ì •ì—ëŠ” ê·€ì—¬ìš´ ëª¨ë“œì²˜ëŸ¼ ì½˜ì…‰íŠ¸ì™€ ë¶„ìœ„ê¸°ë¥¼ ë§žì¶”ì„¸ìš”.</li>
-              <li><strong className="text-slate-900">íŠ¹ìˆ˜ë¬¸ìž ì‚¬ìš©ì„ ìµœì†Œí™”í•  ê²ƒ</strong> â€” ë§ˆì¹¨í‘œì™€ ì–¸ë”ìŠ¤ì½”ì–´ê°€ ë„ˆë¬´ ë§Žìœ¼ë©´ ê°€ë…ì„±ì´ ë–¨ì–´ì§‘ë‹ˆë‹¤. 1~2ê°œ ì •ë„ê°€ ê°€ìž¥ ê¹”ë”í•©ë‹ˆë‹¤.</li>
-              <li><strong className="text-slate-900">ê²€ìƒ‰ ê°€ëŠ¥ì„±ì„ ê³ ë ¤í•  ê²ƒ</strong> â€” ì¹œêµ¬ê°€ ë³¸ëª…ìœ¼ë¡œ ê²€ìƒ‰í–ˆì„ ë•Œ ì°¾ì„ ìˆ˜ ìžˆë„ë¡, ë³¸ëª… ì˜ë¬¸ í‘œê¸° ì¼ë¶€ë¥¼ ì•„ì´ë””ì— í¬í•¨í•˜ëŠ” ê²ƒì´ ì¢‹ìŠµë‹ˆë‹¤.</li>
-              <li><strong className="text-slate-900">ì˜¤ëž˜ ì¨ë„ ì§ˆë¦¬ì§€ ì•Šì„ ê²ƒ</strong> â€” ì¼ì‹œì ì¸ ìœ í–‰ì–´ë‚˜ ë„ˆë¬´ ìžê·¹ì ì¸ ë‹¨ì–´ëŠ” 6ê°œì›”ë§Œ ì§€ë‚˜ë„ ì–´ìƒ‰í•´ì§‘ë‹ˆë‹¤. ê¸´ ì‹œê°„ ì‚¬ìš©í•´ë„ ìžì—°ìŠ¤ëŸ¬ìš´ ë‹¨ì–´ë¥¼ ì„ íƒí•˜ì„¸ìš”.</li>
+              <li><strong className="text-slate-900">짧고 발음하기 쉬울 것</strong> — 길이가 너무 길거나 발음이 어려운 아이디는 친구가 검색하기도 어렵고 기억하기도 힘듭니다. 가능하면 15자 이내가 좋습니다.</li>
+              <li><strong className="text-slate-900">계정 콘셉트와 일치할 것</strong> — 감성 사진 계정에는 감성 모드, 비즈니스 계정에는 영어 닉 모드, 반려동물 계정에는 귀여운 모드처럼 콘셉트와 분위기를 맞추세요.</li>
+              <li><strong className="text-slate-900">특수문자 사용을 최소화할 것</strong> — 마침표와 언더스코어가 너무 많으면 가독성이 떨어집니다. 1~2개 정도가 가장 깔끔합니다.</li>
+              <li><strong className="text-slate-900">검색 가능성을 고려할 것</strong> — 친구가 본명으로 검색했을 때 찾을 수 있도록, 본명 영문 표기 일부를 아이디에 포함하는 것이 좋습니다.</li>
+              <li><strong className="text-slate-900">오래 써도 질리지 않을 것</strong> — 일시적인 유행어나 너무 자극적인 단어는 6개월만 지나도 어색해집니다. 긴 시간 사용해도 자연스러운 단어를 선택하세요.</li>
             </ol>
           </div>
 

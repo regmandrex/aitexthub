@@ -40,7 +40,7 @@ function WriteUp() {
         <p>
           Romance blurbs follow different rules from thriller blurbs. Fantasy blurbs for epic secondary-world stories use different language from contemporary fantasy. Cozy mystery blurbs have a warm, wry tone that would feel wrong in a dark psychological suspense novel. AI models without genre-specific fine-tuning produce blurbs in a vague middle register that fits no genre particularly well.
         </p>
-        <h3>ClichÃ©d Openers</h3>
+        <h3>Clichéd Openers</h3>
         <p>
           "In a world where..." or "When [name] discovers..." are the blurb equivalent of "It was a dark and stormy night." They signal to an agent or experienced reader that the author doesn't know the current market. AI tools frequently default to these openers because they appear commonly in training data.
         </p>
@@ -177,7 +177,7 @@ function WriteUp() {
 
         <h2>Common Blurb Writing Mistakes the Generator Helps Avoid</h2>
         <p>
-          Among the most common blurb mistakes the generator actively counters: starting with a rhetorical question directed at the reader ("Have you ever wondered what it would be like to...?"), using the word "journey" as a substitute for describing the actual story, beginning with the protagonist's name and nothing else ("Sarah Mitchell is a woman who..."), spoiling the climax or ending, including more than two character names in a blurb under 250 words (readers can't track more than two), and using genre clichÃ©s that appear in thousands of other blurbs without differentiating the book.
+          Among the most common blurb mistakes the generator actively counters: starting with a rhetorical question directed at the reader ("Have you ever wondered what it would be like to...?"), using the word "journey" as a substitute for describing the actual story, beginning with the protagonist's name and nothing else ("Sarah Mitchell is a woman who..."), spoiling the climax or ending, including more than two character names in a blurb under 250 words (readers can't track more than two), and using genre clichés that appear in thousands of other blurbs without differentiating the book.
         </p>
 
         <h2>Using Generated Blurbs in Your Author Brand</h2>

@@ -8,7 +8,7 @@ export const faviconGeneratorContent: ToolContent = {
         <p>
           A favicon "” short for "favorite icon" "” is the small image that appears in browser tabs, bookmark
           lists, address bars, and increasingly in mobile home screens, app launchers, and operating system
-          UI. What started as a single 16Ã—16 pixel ICO file has evolved into a complex ecosystem of sizes,
+          UI. What started as a single 16×16 pixel ICO file has evolved into a complex ecosystem of sizes,
           formats, and manifest declarations that span desktop browsers, iOS, Android, Windows, and macOS.
           Our Favicon Generator handles this complexity for you, creating a complete icon set and the
           necessary HTML declarations from a single source image.
@@ -22,12 +22,12 @@ export const faviconGeneratorContent: ToolContent = {
           for a complete, professional favicon implementation.
         </p>
 
-        <h2>The History of Favicons: From 16Ã—16 ICO to PWA Manifests</h2>
+        <h2>The History of Favicons: From 16×16 ICO to PWA Manifests</h2>
         <p>
           The favicon was introduced by Internet Explorer 5 in 1999. The original mechanism was simple:
           place a file named <code>favicon.ico</code> in the root of your web server and the browser would
           automatically request it. The ICO format was chosen because it could contain multiple image sizes
-          in a single file "” originally just 16Ã—16 pixels at 256 colors.
+          in a single file "” originally just 16×16 pixels at 256 colors.
         </p>
         <p>
           The W3C standardized the favicon in HTML 4.01 via the <code>{'<link rel="shortcut icon">'}</code>
@@ -37,10 +37,10 @@ export const faviconGeneratorContent: ToolContent = {
         </p>
         <p>
           As retina displays became common starting with the iPhone 4 in 2010 and MacBook Pros in 2012,
-          the 16Ã—16 favicon became visibly blurry on high-DPI screens. Developers began providing larger
-          sizes "” 32Ã—32, 48Ã—48 "” via the <code>sizes</code> attribute on the link element. Apple
+          the 16×16 favicon became visibly blurry on high-DPI screens. Developers began providing larger
+          sizes "” 32×32, 48×48 "” via the <code>sizes</code> attribute on the link element. Apple
           simultaneously introduced the "Apple Touch Icon" for websites added to the iOS home screen,
-          requiring 57Ã—57, then 60Ã—60, 72Ã—72, 76Ã—76, 120Ã—120, 152Ã—152, and eventually 180Ã—180 pixel
+          requiring 57×57, then 60×60, 72×72, 76×76, 120×120, 152×152, and eventually 180×180 pixel
           versions in PNG format. Android Chrome followed with its own requirements via the Web App Manifest.
           Windows 8 and 10 added tile icons. The result: a modern complete favicon set easily requires
           10-15 separate image files.
@@ -52,7 +52,7 @@ export const faviconGeneratorContent: ToolContent = {
         </p>
         <ul>
           <li>
-            <strong>favicon.ico</strong>: A multi-size ICO container typically including 16Ã—16 and 32Ã—32
+            <strong>favicon.ico</strong>: A multi-size ICO container typically including 16×16 and 32×32
             images. This is the universal fallback read by all browsers, even without a{' '}
             <code>{'<link>'}</code> element. Place it at the root of your domain.
           </li>
@@ -65,7 +65,7 @@ export const faviconGeneratorContent: ToolContent = {
             Windows. Chrome's new tab page uses this size.
           </li>
           <li>
-            <strong>apple-touch-icon.png</strong>: 180Ã—180 PNG used by iOS when the user adds the site to
+            <strong>apple-touch-icon.png</strong>: 180×180 PNG used by iOS when the user adds the site to
             their home screen. Without this file, iOS uses a screenshot of the page. The icon should have
             a white or colored background "” iOS does not apply a background automatically.
           </li>
@@ -75,7 +75,7 @@ export const faviconGeneratorContent: ToolContent = {
           </li>
           <li>
             <strong>android-chrome-512x512.png</strong>: Used in the Android app drawer and splash screens
-            for PWAs. Referenced in the Web App Manifest. Google requires a 512Ã—512 icon for PWA
+            for PWAs. Referenced in the Web App Manifest. Google requires a 512×512 icon for PWA
             installability.
           </li>
           <li>
@@ -141,7 +141,7 @@ export const faviconGeneratorContent: ToolContent = {
         <h2>Favicon Design Best Practices</h2>
         <h3>Simplicity Above All Else</h3>
         <p>
-          At 16Ã—16 pixels, a favicon has only 256 pixels to work with. Complex logos, thin lines, and
+          At 16×16 pixels, a favicon has only 256 pixels to work with. Complex logos, thin lines, and
           fine details become unrecognizable at this scale. The most effective favicons use:
         </p>
         <ul>
@@ -153,9 +153,9 @@ export const faviconGeneratorContent: ToolContent = {
         </ul>
         <h3>Design for the Smallest Size First</h3>
         <p>
-          The 16Ã—16 favicon is the hardest design constraint. Start there "” if it's recognizable at 16Ã—16,
-          it will look great at 32Ã—32, 192Ã—192, and beyond. If you start at 512Ã—512 and scale down, fine
-          details will turn into an unrecognizable blur. Consider pixel art techniques for the 16Ã—16 version:
+          The 16×16 favicon is the hardest design constraint. Start there "” if it's recognizable at 16×16,
+          it will look great at 32×32, 192×192, and beyond. If you start at 512×512 and scale down, fine
+          details will turn into an unrecognizable blur. Consider pixel art techniques for the 16×16 version:
           deliberate pixel placement on whole-pixel boundaries eliminates anti-aliasing blur.
         </p>
         <h3>Background Color and Transparency</h3>
@@ -206,7 +206,7 @@ export const faviconGeneratorContent: ToolContent = {
           A simple trick for quick, unique favicons: use an emoji as an SVG favicon. This requires no
           image file at all:
         </p>
-        <pre><code>{"<link rel=\"icon\" href=\"data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>ðŸš€</text></svg>\">"}</code></pre>
+        <pre><code>{"<link rel=\"icon\" href=\"data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>\">"}</code></pre>
         <p>
           This technique works in modern browsers and renders the emoji at whatever resolution the browser
           needs. It is not suitable for professional branded products but is useful for development tools,
@@ -239,8 +239,8 @@ export const faviconGeneratorContent: ToolContent = {
           PWAs have stricter icon requirements than standard websites:
         </p>
         <ul>
-          <li>A 192Ã—192 icon is required for Android home screen installation.</li>
-          <li>A 512Ã—512 icon is required for the PWA splash screen and the Chrome app store.</li>
+          <li>A 192×192 icon is required for Android home screen installation.</li>
+          <li>A 512×512 icon is required for the PWA splash screen and the Chrome app store.</li>
           <li>Icons should be defined in the Web App Manifest's <code>icons</code> array.</li>
           <li>
             For maskable icons (icons that can be safely cropped to different shapes by Android), the
@@ -311,9 +311,9 @@ export const faviconGeneratorContent: ToolContent = {
 
         <h2>How to Use This Favicon Generator</h2>
         <p>
-          Upload your source image "” ideally a high-resolution PNG (512Ã—512 or larger) or an SVG for
-          maximum quality. The generator produces all required sizes and formats: favicon.ico (16Ã—16 and
-          32Ã—32 embedded), PNG files at every standard size, and the <code>site.webmanifest</code> JSON
+          Upload your source image "” ideally a high-resolution PNG (512×512 or larger) or an SVG for
+          maximum quality. The generator produces all required sizes and formats: favicon.ico (16×16 and
+          32×32 embedded), PNG files at every standard size, and the <code>site.webmanifest</code> JSON
           file. Copy the generated HTML snippet directly into your page's <code>{'<head>'}</code> section.
           The tool also provides a preview of how your favicon will appear at each size so you can verify
           legibility before downloading.
@@ -332,7 +332,7 @@ export const faviconGeneratorContent: ToolContent = {
       category: 'Basics',
       question: 'What is the minimum favicon setup for a modern website?',
       answer:
-        'The practical minimum is: (1) favicon.ico at your domain root as a universal fallback; (2) a 32Ã—32 PNG for modern browsers; (3) a 180Ã—180 apple-touch-icon.png for iOS; (4) a site.webmanifest with 192Ã—192 and 512Ã—512 icons for Android/PWA. Most visitors will be covered by this set. The ICO file alone is technically sufficient but will appear blurry on retina displays.',
+        'The practical minimum is: (1) favicon.ico at your domain root as a universal fallback; (2) a 32×32 PNG for modern browsers; (3) a 180×180 apple-touch-icon.png for iOS; (4) a site.webmanifest with 192×192 and 512×512 icons for Android/PWA. Most visitors will be covered by this set. The ICO file alone is technically sufficient but will appear blurry on retina displays.',
     },
     {
       category: 'Formats',
@@ -344,19 +344,19 @@ export const faviconGeneratorContent: ToolContent = {
       category: 'Formats',
       question: 'What is an ICO file and can it contain multiple sizes?',
       answer:
-        'An ICO file is a container format that can embed multiple images at different sizes and color depths in a single file. A typical favicon.ico contains 16Ã—16 and 32Ã—32 images. Some implementations also include 48Ã—48 and 64Ã—64. The browser chooses the most appropriate size from the container. ICO files can contain PNG-compressed images as of Windows Vista, which improves quality and reduces file size.',
+        'An ICO file is a container format that can embed multiple images at different sizes and color depths in a single file. A typical favicon.ico contains 16×16 and 32×32 images. Some implementations also include 48×48 and 64×64. The browser chooses the most appropriate size from the container. ICO files can contain PNG-compressed images as of Windows Vista, which improves quality and reduces file size.',
     },
     {
       category: 'Apple',
       question: 'What is the Apple Touch Icon and what size should it be?',
       answer:
-        'The Apple Touch Icon is used by iOS Safari when a user adds your site to their home screen. The recommended size is 180Ã—180 pixels PNG "” this is the largest size required and iOS will scale it down for older devices. Name it apple-touch-icon.png and reference it with <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">. The icon should have a solid background color since iOS does not apply one automatically.',
+        'The Apple Touch Icon is used by iOS Safari when a user adds your site to their home screen. The recommended size is 180×180 pixels PNG "” this is the largest size required and iOS will scale it down for older devices. Name it apple-touch-icon.png and reference it with <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">. The icon should have a solid background color since iOS does not apply one automatically.',
     },
     {
       category: 'Android',
       question: 'What favicon sizes does Android Chrome require?',
       answer:
-        'Android Chrome uses the icons defined in your Web App Manifest. The required sizes are 192Ã—192 (for home screen addition) and 512Ã—512 (for the PWA splash screen and Chrome installability requirements). Define these in site.webmanifest under the "icons" key with their paths, sizes, and type fields. Without these, Android may fall back to a screenshot of your page.',
+        'Android Chrome uses the icons defined in your Web App Manifest. The required sizes are 192×192 (for home screen addition) and 512×512 (for the PWA splash screen and Chrome installability requirements). Define these in site.webmanifest under the "icons" key with their paths, sizes, and type fields. Without these, Android may fall back to a screenshot of your page.',
     },
     {
       category: 'Manifest',
@@ -374,7 +374,7 @@ export const faviconGeneratorContent: ToolContent = {
       category: 'Design',
       question: 'How do I design a good favicon?',
       answer:
-        'Design for the smallest size first "” 16Ã—16 pixels. At this scale, only simple shapes and letter marks are recognizable; complex logos become blurry. Use high contrast, bold strokes, and maximum 2-3 colors. Avoid thin lines and fine details. A single initial letter, a simple icon from your logo, or a geometric shape works best. Test your design at 16Ã—16 before finalizing.',
+        'Design for the smallest size first "” 16×16 pixels. At this scale, only simple shapes and letter marks are recognizable; complex logos become blurry. Use high contrast, bold strokes, and maximum 2-3 colors. Avoid thin lines and fine details. A single initial letter, a simple icon from your logo, or a geometric shape works best. Test your design at 16×16 before finalizing.',
     },
     {
       category: 'Design',
@@ -416,13 +416,13 @@ export const faviconGeneratorContent: ToolContent = {
       category: 'SEO',
       question: 'Does having a favicon affect Google search rankings?',
       answer:
-        'Google displays favicons in search results (the small icon next to the URL in mobile and desktop search). A missing or low-quality favicon results in Google showing a generic globe icon, which reduces click-through rates. Google requires the favicon to be accessible to its crawler and at least 48Ã—48 pixels (it displays at 16Ã—16 in results). While favicon presence is not a direct ranking signal, click-through rate is, and recognizable icons improve CTR.',
+        'Google displays favicons in search results (the small icon next to the URL in mobile and desktop search). A missing or low-quality favicon results in Google showing a generic globe icon, which reduces click-through rates. Google requires the favicon to be accessible to its crawler and at least 48×48 pixels (it displays at 16×16 in results). While favicon presence is not a direct ranking signal, click-through rate is, and recognizable icons improve CTR.',
     },
     {
       category: 'SEO',
       question: 'What favicon requirements does Google have for showing it in search results?',
       answer:
-        'Google&#39;s requirements: the favicon URL must be accessible to Googlebot (not blocked by robots.txt); the image must be at least 48Ã—48 pixels; the favicon must be a square image; it should represent your brand (Google will not show favicons it considers misleading). If Google cannot find your favicon or it doesn&#39;t meet requirements, a generic globe icon appears. Verify your favicon in Google Search Console under URL Inspection.',
+        'Google&#39;s requirements: the favicon URL must be accessible to Googlebot (not blocked by robots.txt); the image must be at least 48×48 pixels; the favicon must be a square image; it should represent your brand (Google will not show favicons it considers misleading). If Google cannot find your favicon or it doesn&#39;t meet requirements, a generic globe icon appears. Verify your favicon in Google Search Console under URL Inspection.',
     },
     {
       category: 'Next.js',
@@ -434,7 +434,7 @@ export const faviconGeneratorContent: ToolContent = {
       category: 'Tools',
       question: 'What source image should I use with a favicon generator?',
       answer:
-        'Use a high-resolution square PNG (minimum 512Ã—512 pixels, ideally 1024Ã—1024) or an SVG for the cleanest results. The source should be your logo mark or icon "” not the full horizontal logo with a text wordmark. The image should have either a transparent background (if the icon will stand alone) or the background color you want for touch icons. Avoid very thin strokes or fine details that will disappear at small sizes.',
+        'Use a high-resolution square PNG (minimum 512×512 pixels, ideally 1024×1024) or an SVG for the cleanest results. The source should be your logo mark or icon "” not the full horizontal logo with a text wordmark. The image should have either a transparent background (if the icon will stand alone) or the background color you want for touch icons. Avoid very thin strokes or fine details that will disappear at small sizes.',
     },
     {
       category: 'Windows',
@@ -452,7 +452,7 @@ export const faviconGeneratorContent: ToolContent = {
       category: 'Emoji',
       question: 'Can I use an emoji as a favicon?',
       answer:
-        'Yes, using a data URI SVG: <link rel="icon" href="data:image/svg+xml,<svg xmlns=&#39;http://www.w3.org/2000/svg&#39; viewBox=&#39;0 0 100 100&#39;><text y=&#39;.9em&#39; font-size=&#39;90&#39;>ðŸŽ¨</text></svg>">. This works in modern browsers without any image file. The emoji renders at the browser&#39;s native size and quality. It is suitable for development tools, internal apps, and personal projects but not for professional branded sites where a custom icon is expected.',
+        'Yes, using a data URI SVG: <link rel="icon" href="data:image/svg+xml,<svg xmlns=&#39;http://www.w3.org/2000/svg&#39; viewBox=&#39;0 0 100 100&#39;><text y=&#39;.9em&#39; font-size=&#39;90&#39;>🎨</text></svg>">. This works in modern browsers without any image file. The emoji renders at the browser&#39;s native size and quality. It is suitable for development tools, internal apps, and personal projects but not for professional branded sites where a custom icon is expected.',
     },
     {
       category: 'Animation',

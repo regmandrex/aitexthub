@@ -31,7 +31,7 @@ const faqs: FaqItem[] = [
   {
     category: 'General',
     question: 'Why can Claude-generated text show spacing or formatting irregularities?',
-    answer: 'Formatting issues can result from markdown rendering, structured responses, code block formatting, or how Claudeâ€™s output is displayed and copied from chat interfaces into other platforms. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity. Combine the result with your own judgment and any institutional or organizational policies that apply.',
+    answer: 'Formatting issues can result from markdown rendering, structured responses, code block formatting, or how Claude’s output is displayed and copied from chat interfaces into other platforms. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity. Combine the result with your own judgment and any institutional or organizational policies that apply.',
   },
   {
     category: 'General',

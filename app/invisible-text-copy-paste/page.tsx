@@ -251,7 +251,7 @@ export default function InvisibleTextCopyPastePage() {
           <h1 className="text-xl font-semibold text-slate-900 sm:text-2xl md:text-3xl">Blank Space Copy and Paste — Invisible Text Generator</h1>
           <p className="max-w-2xl mx-auto text-xs text-slate-700 sm:text-sm md:text-[15px]">Copy blank space characters, invisible text, and empty Unicode — zero-width space, Hangul filler, non-breaking space — one click. Free for names, messages, bios, and gaming.</p>
           <div className="flex items-center justify-center gap-1 text-sm text-slate-500">
-            <span className="text-yellow-500">?????</span>
+            <span className="text-yellow-500">★★★★★</span>
             <span>4.9</span>
             <span>·</span>
             <span>Free</span>

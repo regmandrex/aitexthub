@@ -73,7 +73,7 @@ function WriteUp() {
           Stop words are common words with little semantic value for SEO: &quot;a&quot;, &quot;an&quot;, &quot;the&quot;, &quot;and&quot;, &quot;or&quot;, &quot;but&quot;, &quot;in&quot;, &quot;on&quot;, &quot;at&quot;, &quot;to&quot;, &quot;for&quot;, &quot;of&quot;, &quot;with&quot;, &quot;by&quot;, &quot;from&quot;, &quot;is&quot;, &quot;are&quot;, &quot;was&quot;, &quot;were&quot;.
         </p>
         <p>
-          &quot;The Best Guide to JavaScript Frameworks in 2024&quot; â†’ with stop word removal â†’ <code>best-guide-javascript-frameworks-2024</code>. Shorter, still descriptive, and emphasizes the meaningful keywords. Most CMS systems (WordPress, Ghost, Strapi) offer stop word removal as a slug generation option.
+          &quot;The Best Guide to JavaScript Frameworks in 2024&quot; → with stop word removal → <code>best-guide-javascript-frameworks-2024</code>. Shorter, still descriptive, and emphasizes the meaningful keywords. Most CMS systems (WordPress, Ghost, Strapi) offer stop word removal as a slug generation option.
         </p>
         <p>
           Stop word removal is generally recommended for blog post slugs but should be used with judgment "” sometimes the stop word is semantically important (&quot;is-this-a-bug&quot; vs &quot;this-bug&quot;) or omitting it changes the meaning.
@@ -100,13 +100,13 @@ function WriteUp() {
           Transliteration converts non-Latin characters to their closest Latin equivalents:
         </p>
         <ul>
-          <li>Accented Latin: Ã© â†’ e, Ã¼ â†’ u, Ã± â†’ n, Ã§ â†’ c, Ã¸ â†’ o, Ã¥ â†’ a</li>
-          <li>German: Ã¤ â†’ ae, Ã¶ â†’ oe, Ã¼ â†’ ue, ÃŸ â†’ ss</li>
-          <li>Cyrillic: ÐŸÑ€Ð¸Ð²ÐµÑ‚ â†’ privet</li>
-          <li>Greek: Î•Î»Î»Î¬Î´Î± â†’ Ellada</li>
-          <li>Chinese: ä½ å¥½ â†’ ni hao</li>
-          <li>Japanese: ã“ã‚“ã«ã¡ã¯ â†’ konnichiwa (hiragana romanization)</li>
-          <li>Arabic: Ù…Ø±Ø­Ø¨Ø§ â†’ mrhba (transliterated, as Arabic has no vowel letters in most positions)</li>
+          <li>Accented Latin: é → e, ü → u, ñ → n, ç → c, ø → o, å → a</li>
+          <li>German: ä → ae, ö → oe, ü → ue, ß → ss</li>
+          <li>Cyrillic: ÐŸÑ€Ð¸Ð²ÐµÑ‚ → privet</li>
+          <li>Greek: Î•Î»Î»Î¬Î´Î± → Ellada</li>
+          <li>Chinese: ä½ å¥½ → ni hao</li>
+          <li>Japanese: ã“ã‚“ã«ã¡ã¯ → konnichiwa (hiragana romanization)</li>
+          <li>Arabic: Ù…Ø±Ø­Ø¨Ø§ → mrhba (transliterated, as Arabic has no vowel letters in most positions)</li>
         </ul>
         <p>
           Our generator uses the Unicode Consortium&apos;s CLDR (Common Locale Data Repository) transliteration rules for maximum accuracy across languages. For Chinese and Japanese, we use standard Pinyin and Hepburn romanization respectively.
@@ -149,12 +149,12 @@ function WriteUp() {
 
         <h3>Rails</h3>
         <p>
-          Rails provides <code>ActiveSupport::Inflector.parameterize()</code>: <code>&quot;Hello World!&quot;.parameterize</code> â†’ <code>&quot;hello-world&quot;</code>. The popular <code>friendly_id</code> gem adds slug generation with history (preserving old slugs as redirects), scoping, and UUID fallbacks for Rails models.
+          Rails provides <code>ActiveSupport::Inflector.parameterize()</code>: <code>&quot;Hello World!&quot;.parameterize</code> → <code>&quot;hello-world&quot;</code>. The popular <code>friendly_id</code> gem adds slug generation with history (preserving old slugs as redirects), scoping, and UUID fallbacks for Rails models.
         </p>
 
         <h3>Node.js / JavaScript</h3>
         <p>
-          The <code>slugify</code> npm package: <code>slugify(&apos;Hello World!&apos;, &#123; lower: true, strict: true &#125;)</code> â†’ <code>&apos;hello-world&apos;</code>. Supports locale-aware transliteration, custom character maps, and stop word removal with additional configuration. The <code>@sindresorhus/slugify</code> package is a modern alternative with full Unicode support and sensible defaults.
+          The <code>slugify</code> npm package: <code>slugify(&apos;Hello World!&apos;, &#123; lower: true, strict: true &#125;)</code> → <code>&apos;hello-world&apos;</code>. Supports locale-aware transliteration, custom character maps, and stop word removal with additional configuration. The <code>@sindresorhus/slugify</code> package is a modern alternative with full Unicode support and sensible defaults.
         </p>
 
         <h2>Programmatic Slug Generation Code Examples</h2>
@@ -170,7 +170,7 @@ function WriteUp() {
     .replace(/[\\u0300-\\u036f]/g, '') // Remove diacritics
     .replace(/[^a-z0-9\\s-]/g, '')     // Remove special chars
     .trim()
-    .replace(/[\\s_]+/g, '-')          // Spaces/underscores â†’ hyphens
+    .replace(/[\\s_]+/g, '-')          // Spaces/underscores → hyphens
     .replace(/-+/g, '-');              // Collapse multiple hyphens
 }`}</pre>
 
@@ -181,22 +181,22 @@ function WriteUp() {
         <pre>{`pip install python-slugify
 from slugify import slugify
 
-slug = slugify("Hello World! CafÃ© au lait", allow_unicode=False)
-# â†’ "hello-world-cafe-au-lait"
+slug = slugify("Hello World! Café au lait", allow_unicode=False)
+# → "hello-world-cafe-au-lait"
 
 # With custom separator
 slug = slugify("My Article Title", separator="_")
-# â†’ "my_article_title"
+# → "my_article_title"
 `}</pre>
 
         <h3>PHP (Laravel)</h3>
         <p>
-          <code>Str::slug(&apos;Hello World! CafÃ©&apos;, &apos;-&apos;)</code> â†’ <code>&apos;hello-world-cafe&apos;</code>. Built on iconv and transliteration support in PHP. WordPress also provides <code>sanitize_title(&apos;Hello World!&apos;)</code> which handles transliteration for the configured locale.
+          <code>Str::slug(&apos;Hello World! Café&apos;, &apos;-&apos;)</code> → <code>&apos;hello-world-cafe&apos;</code>. Built on iconv and transliteration support in PHP. WordPress also provides <code>sanitize_title(&apos;Hello World!&apos;)</code> which handles transliteration for the configured locale.
         </p>
 
         <h3>Go</h3>
         <p>
-          The <code>github.com/gosimple/slug</code> package: <code>slug.Make(&quot;Hello World!&quot;)</code> â†’ <code>&quot;hello-world&quot;</code>. Supports over 40 languages&apos; transliteration through a comprehensive character map. Ideal for Go-based static site generators and web services.
+          The <code>github.com/gosimple/slug</code> package: <code>slug.Make(&quot;Hello World!&quot;)</code> → <code>&quot;hello-world&quot;</code>. Supports over 40 languages&apos; transliteration through a comprehensive character map. Ideal for Go-based static site generators and web services.
         </p>
 
         <h2>Slug Best Practices for SEO</h2>
@@ -255,10 +255,10 @@ slug = slugify("My Article Title", separator="_")
           Sites targeting multiple languages and locales face unique slug challenges. Two approaches are common:
         </p>
         <p>
-          <strong>Transliterated slugs</strong>: All slugs are in ASCII regardless of the page language. A French page titled &quot;Meilleurs Restaurants Ã  Paris&quot; gets slug <code>meilleurs-restaurants-a-paris</code>. This approach maximizes URL portability and avoids percent-encoding issues, but loses the SEO benefit of having the keyword in the native script for searches conducted in that language.
+          <strong>Transliterated slugs</strong>: All slugs are in ASCII regardless of the page language. A French page titled &quot;Meilleurs Restaurants à Paris&quot; gets slug <code>meilleurs-restaurants-a-paris</code>. This approach maximizes URL portability and avoids percent-encoding issues, but loses the SEO benefit of having the keyword in the native script for searches conducted in that language.
         </p>
         <p>
-          <strong>Unicode slugs</strong>: Slugs use the native script. The French page becomes <code>/meilleurs-restaurants-Ã -paris</code> (with the accented character preserved). Modern browsers display these correctly, and they provide strong SEO signals for searches in that language. The downside: when copied and pasted in older software or some email clients, these URLs may percent-encode the non-ASCII characters.
+          <strong>Unicode slugs</strong>: Slugs use the native script. The French page becomes <code>/meilleurs-restaurants-à-paris</code> (with the accented character preserved). Modern browsers display these correctly, and they provide strong SEO signals for searches in that language. The downside: when copied and pasted in older software or some email clients, these URLs may percent-encode the non-ASCII characters.
         </p>
         <p>
           Most modern international SEO practitioners recommend Unicode slugs for non-Latin-script languages (Chinese, Japanese, Korean, Arabic, Hebrew, Thai) and transliterated slugs for Latin-script languages with accented characters (French, German, Spanish). Google supports both approaches, but Unicode slugs in native script tend to perform better for searches in those languages.
@@ -269,7 +269,7 @@ slug = slugify("My Article Title", separator="_")
           A slug generator and a URL encoder serve different purposes and should not be confused. A <strong>slug generator</strong> produces clean, human-readable URL segments by removing or replacing characters that are not URL-friendly. The process is lossy "” information (special characters, accents, capitalization) is deliberately discarded to create a clean result.
         </p>
         <p>
-          A <strong>URL encoder</strong> (percent-encoder) converts any character to its percent-encoded equivalent, preserving all information: &quot;Hello World!&quot; â†’ <code>Hello%20World%21</code>. URL encoding is necessary for embedding arbitrary data in URLs (query parameters, path segments with special characters), but the result is not human-readable and is inappropriate as a page slug.
+          A <strong>URL encoder</strong> (percent-encoder) converts any character to its percent-encoded equivalent, preserving all information: &quot;Hello World!&quot; → <code>Hello%20World%21</code>. URL encoding is necessary for embedding arbitrary data in URLs (query parameters, path segments with special characters), but the result is not human-readable and is inappropriate as a page slug.
         </p>
         <p>
           Use slug generation for creating page URLs. Use URL encoding when passing data as URL parameters or when a URL must preserve all characters exactly.
@@ -301,7 +301,7 @@ const faqs: FaqItem[] = [
     category: 'General',
     question: 'What characters are allowed in URL slugs?',
     answer:
-      'URL slugs should contain only: lowercase letters (a-z), numbers (0-9), and hyphens (-). All other characters should be removed or replaced. Spaces become hyphens. Accented characters (Ã©, Ã¼, Ã±) should be transliterated to their ASCII equivalents (e, u, n). Special characters (!, ?, &) are removed entirely.',
+      'URL slugs should contain only: lowercase letters (a-z), numbers (0-9), and hyphens (-). All other characters should be removed or replaced. Spaces become hyphens. Accented characters (é, ü, ñ) should be transliterated to their ASCII equivalents (e, u, n). Special characters (!, ?, &) are removed entirely.',
   },
   {
     category: 'General',
@@ -331,7 +331,7 @@ const faqs: FaqItem[] = [
     category: 'Best Practices',
     question: 'Should I remove stop words from slugs?',
     answer:
-      'Generally yes for blog posts and SEO content. "The Best Guide to JavaScript Frameworks in 2024" â†’ "best-guide-javascript-frameworks-2024" is shorter and emphasizes keywords. However, use judgment "” sometimes stop words are semantically significant or removing them changes the meaning.',
+      'Generally yes for blog posts and SEO content. "The Best Guide to JavaScript Frameworks in 2024" → "best-guide-javascript-frameworks-2024" is shorter and emphasizes keywords. However, use judgment "” sometimes stop words are semantically significant or removing them changes the meaning.',
   },
   {
     category: 'Best Practices',
@@ -367,25 +367,25 @@ const faqs: FaqItem[] = [
     category: 'Unicode',
     question: 'How are accented characters handled in slugs?',
     answer:
-      'Accented characters are transliterated to their closest ASCII equivalents: Ã© â†’ e, Ã¼ â†’ u, Ã± â†’ n, Ã¸ â†’ o, Ã§ â†’ c, ÃŸ â†’ ss. "CafÃ© au lait" becomes "cafe-au-lait". Our generator handles transliteration for Latin-script languages (French, German, Spanish, Portuguese, Scandinavian) automatically.',
+      'Accented characters are transliterated to their closest ASCII equivalents: é → e, ü → u, ñ → n, ø → o, ç → c, ß → ss. "Café au lait" becomes "cafe-au-lait". Our generator handles transliteration for Latin-script languages (French, German, Spanish, Portuguese, Scandinavian) automatically.',
   },
   {
     category: 'Unicode',
     question: 'Can slugs contain non-Latin characters (Chinese, Arabic, Cyrillic)?',
     answer:
-      'Technically yes "” modern browsers and servers support Unicode URLs. However, when copied or shared, these are percent-encoded (%E4%BD%A0%E5%A5%BD), which is ugly and fragile. Best practice is to transliterate: ä½ å¥½ â†’ ni-hao, ÐŸÑ€Ð¸Ð²ÐµÑ‚ â†’ privet. Our generator performs transliteration for common scripts.',
+      'Technically yes "” modern browsers and servers support Unicode URLs. However, when copied or shared, these are percent-encoded (%E4%BD%A0%E5%A5%BD), which is ugly and fragile. Best practice is to transliterate: ä½ å¥½ → ni-hao, ÐŸÑ€Ð¸Ð²ÐµÑ‚ → privet. Our generator performs transliteration for common scripts.',
   },
   {
     category: 'Technical',
     question: 'How do I generate slugs in JavaScript?',
     answer:
-      'Using the slugify npm package: import slugify from "slugify"; slugify("Hello World!", {lower: true, strict: true}) â†’ "hello-world". Without library: text.toLowerCase().normalize("NFD").replace(/[\\u0300-\\u036f]/g, "").replace(/[^a-z0-9\\s]/g, "").trim().replace(/\\s+/g, "-").',
+      'Using the slugify npm package: import slugify from "slugify"; slugify("Hello World!", {lower: true, strict: true}) → "hello-world". Without library: text.toLowerCase().normalize("NFD").replace(/[\\u0300-\\u036f]/g, "").replace(/[^a-z0-9\\s]/g, "").trim().replace(/\\s+/g, "-").',
   },
   {
     category: 'Technical',
     question: 'How do I generate slugs in Python?',
     answer:
-      'Using python-slugify: pip install python-slugify; from slugify import slugify; slugify("Hello World! CafÃ©") â†’ "hello-world-cafe". For simple ASCII cases: import re, unicodedata; unicodedata.normalize("NFKD", text).encode("ascii", "ignore").decode().lower() then replace non-alphanumeric with hyphens.',
+      'Using python-slugify: pip install python-slugify; from slugify import slugify; slugify("Hello World! Café") → "hello-world-cafe". For simple ASCII cases: import re, unicodedata; unicodedata.normalize("NFKD", text).encode("ascii", "ignore").decode().lower() then replace non-alphanumeric with hyphens.',
   },
   {
     category: 'Technical',
@@ -397,7 +397,7 @@ const faqs: FaqItem[] = [
     category: 'Technical',
     question: 'How does Rails generate slugs?',
     answer:
-      '"Hello World!".parameterize â†’ "hello-world" using ActiveSupport&#39;s parameterize method. The friendly_id gem adds slug history (preserving old slugs as redirects), scoping (unique per category), and finders (User.friendly.find("john-doe")). Widely used in Rails apps needing SEO-friendly URLs.',
+      '"Hello World!".parameterize → "hello-world" using ActiveSupport&#39;s parameterize method. The friendly_id gem adds slug history (preserving old slugs as redirects), scoping (unique per category), and finders (User.friendly.find("john-doe")). Widely used in Rails apps needing SEO-friendly URLs.',
   },
   {
     category: 'CMS',

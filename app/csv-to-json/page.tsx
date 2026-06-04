@@ -285,7 +285,7 @@ const writeUp = (
       Error: columns shifted starting from row N. Symptom: rows after a certain point have values in the wrong properties. Cause: a cell in the CSV contains an unquoted comma, splitting that cell across two columns and shifting all subsequent columns. Fix: open the CSV in a text editor and find the row where the shift starts, then identify the cell with an unquoted comma and add quotation marks around it.
     </p>
     <p>
-      Error: garbled characters (é shows as Ã©). Symptom: accented or special characters appear as garbled multi-character sequences. Cause: the CSV is Windows-1252 encoded but was interpreted as UTF-8 (or vice versa). Fix: re-save the CSV as UTF-8 in Notepad (Windows) using Save As ? Encoding: UTF-8, or in Excel using Save As ? CSV UTF-8.
+      Error: garbled characters (é shows as Ã©). Symptom: accented or special characters appear as garbled multi-character sequences. Cause: the CSV is Windows-1252 encoded but was interpreted as UTF-8 (or vice versa). Fix: re-save the CSV as UTF-8 in Notepad (Windows) using Save As → Encoding: UTF-8, or in Excel using Save As → CSV UTF-8.
     </p>
     <p>
       Error: first property name has extra characters. Symptom: the first JSON key looks like <code>&#xFEFF;id</code> with a strange prefix. Cause: the CSV has a UTF-8 BOM (Byte Order Mark) — a hidden three-byte sequence at the start of the file that Excel adds to UTF-8 CSVs. Fix: use a BOM-stripped UTF-8 export, or strip the BOM with a text editor (VS Code can show and remove the BOM via the encoding selector in the bottom status bar).

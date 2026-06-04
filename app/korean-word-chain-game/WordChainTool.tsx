@@ -96,7 +96,7 @@ export function WordChainTool() {
 
     const compLast = pick.slice(-1);
     if (HANBANG.includes(compLast)) {
-      // computer can still play but user must respond â€” keep going
+      // computer can still play but user must respond — keep going
     }
 
     setHistory(next);

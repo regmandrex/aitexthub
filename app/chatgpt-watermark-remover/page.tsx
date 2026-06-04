@@ -196,7 +196,7 @@ export default function ChatGPTWatermarkCleanerPage() {
             Docs, and SEO-friendly publishing.
           </p>
           <div className="flex items-center justify-center gap-1 text-sm text-slate-500">
-            <span className="text-yellow-500">?????</span>
+            <span className="text-yellow-500">★★★★★</span>
             <span>4.9</span>
             <span>·</span>
             <span>Free</span>

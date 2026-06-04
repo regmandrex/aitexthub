@@ -71,7 +71,7 @@ export const imageCompareContent: ToolContent = {
           differences. A pixel in image A with RGB(200, 100, 50) compared to the same position in image B
           with RGB(210, 95, 55) has differences of 10, -5, and 5. The total difference can be expressed
           as the Euclidean distance in RGB color space:{' '}
-          <code>{'sqrt(10Â² + 5Â² + 5Â²) â‰ˆ 12.2'}</code>. This raw distance is easy to compute but does not
+          <code>{'sqrt(10² + 5² + 5²) ≈ 12.2'}</code>. This raw distance is easy to compute but does not
           match human perception "” humans are more sensitive to green channel changes than red or blue.
         </p>
         <h3>Perceptual Difference (SSIM)</h3>

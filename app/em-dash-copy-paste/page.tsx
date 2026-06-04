@@ -233,7 +233,7 @@ export default function EmDashCopyPastePage() {
           <h1 className="text-xl font-semibold text-slate-900 sm:text-2xl md:text-3xl">Em Dash Copy and Paste</h1>
           <p className="max-w-2xl mx-auto text-xs text-slate-700 sm:text-sm md:text-[15px]">Copy em dash, en dash, ellipsis, and special punctuation symbols instantly. One-click copy for every dash, dot, and typographic symbol.</p>
           <div className="flex items-center justify-center gap-1 text-sm text-slate-500">
-            <span className="text-yellow-500">?????</span>
+            <span className="text-yellow-500">★★★★★</span>
             <span>4.9</span>
             <span>·</span>
             <span>Free</span>
