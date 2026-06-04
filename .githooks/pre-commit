@@ -1,0 +1,19 @@
+#!/bin/sh
+# Pre-commit guard against text corruption (mojibake / lost non-ASCII chars).
+# Scans only the staged text files so it stays fast.
+#
+# Enable once per clone with:
+#   git config core.hooksPath .githooks
+
+staged=$(git diff --cached --name-only --diff-filter=ACM \
+  | grep -E '\.(ts|tsx|js|jsx|mjs|json|css|md|mdx|html|txt|xml)$')
+
+[ -z "$staged" ] && exit 0
+
+# shellcheck disable=SC2086
+node scripts/check-encoding.mjs $staged || {
+  echo ""
+  echo "Commit blocked: encoding check failed. Fix the files above (re-save as UTF-8)"
+  echo "or, to bypass intentionally, run: git commit --no-verify"
+  exit 1
+}

@@ -15,7 +15,9 @@
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
     "audit-tools": "node scripts/audit-tool-pages.mjs",
-    "check-words": "node scripts/audit-tool-pages.mjs"
+    "check-words": "node scripts/audit-tool-pages.mjs",
+    "check-encoding": "node scripts/check-encoding.mjs",
+    "prebuild": "node scripts/check-encoding.mjs"
   },
   "dependencies": {
     "@neondatabase/serverless": "^1.1.0",
