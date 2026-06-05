@@ -13,8 +13,14 @@ const PLAN_QUOTAS: Record<string, number | null> = {
 function verifySignature(rawBody: string, signature: string | null): boolean {
   const secret = process.env.LEMONSQUEEZY_WEBHOOK_SECRET;
   if (!secret || !signature) return false;
-  const hmac = crypto.createHmac('sha256', secret).update(rawBody).digest('hex');
-  return crypto.timingSafeEqual(Buffer.from(hmac), Buffer.from(signature));
+  const expected = Buffer.from(
+    crypto.createHmac('sha256', secret).update(rawBody).digest('hex'),
+  );
+  const received = Buffer.from(signature);
+  // timingSafeEqual throws if lengths differ, so guard first (a length
+  // mismatch is itself a failed signature — return false, don't crash).
+  if (expected.length !== received.length) return false;
+  return crypto.timingSafeEqual(expected, received);
 }
 
 function extractPlan(variantName: string): string {
