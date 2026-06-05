@@ -9,9 +9,11 @@ type MetaInput = {
   description: string;
   urlPath: string;
   canonicalTo?: string;
+  /** Open Graph locale, e.g. 'ko_KR' for Korean-language pages. Defaults to 'en_US'. */
+  locale?: string;
 };
 
-export function buildMeta({ title, description, urlPath, canonicalTo }: MetaInput): Metadata {
+export function buildMeta({ title, description, urlPath, canonicalTo, locale = 'en_US' }: MetaInput): Metadata {
   const basePath = urlPath.startsWith('/') ? urlPath : `/${urlPath}`;
   const currentUrl = `${BASE_URL}${basePath === '/' ? '' : basePath}`;
   const canonicalUrl = canonicalTo 
@@ -30,6 +32,7 @@ export function buildMeta({ title, description, urlPath, canonicalTo }: MetaInpu
       url: currentUrl,
       siteName: 'GPTCLEANUP AI',
       type: 'website',
+      locale,
       images: [{ url: OG_IMAGE, alt: 'GPT CLEAN UP Tools' }],
     },
     twitter: {

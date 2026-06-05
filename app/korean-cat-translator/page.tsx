@@ -20,6 +20,7 @@ export async function generateMetadata(): Promise<Metadata> {
     title,
     description,
     urlPath: '/korean-cat-translator',
+    locale: 'ko_KR',
   });
 }
 

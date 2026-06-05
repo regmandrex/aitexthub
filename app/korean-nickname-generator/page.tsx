@@ -21,6 +21,7 @@ export async function generateMetadata(): Promise<Metadata> {
     title,
     description,
     urlPath: '/korean-nickname-generator',
+    locale: 'ko_KR',
   });
 }
 

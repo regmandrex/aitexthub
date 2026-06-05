@@ -8,6 +8,17 @@ import { getToolBySlug } from '@/lib/tools/registry';
 
 const SITE = 'https://gptcleanuptools.com';
 
+// Pages whose visible content is written in Korean → <html lang="ko">.
+const KOREAN_LANG_SLUGS = new Set([
+  'korean-nickname-generator',
+  'korean-cat-translator',
+  'korean-word-chain-game',
+  'korean-nickname-maker',
+  'korean-dialect-translator',
+  'korean-acrostic-poem-generator',
+  'korean-instagram-username-generator',
+]);
+
 function abs(p: string) {
   if (p === '/' || p === '') return SITE;
   const path = p.startsWith('/') ? p : `/${p}`;
@@ -17,12 +28,12 @@ function abs(p: string) {
 export function BreadcrumbJsonLdAndLang() {
   const pathname = usePathname() || '/';
 
-  // Sync document lang for korean-nickname-generator (e.g. for screen readers)
+  // Sync document lang for Korean-language pages (SEO + screen readers).
+  // Only pages whose visible UI is in Korean — pages that are English *about*
+  // Korea (korean-name-generator-online/-male) intentionally stay 'en'.
   useEffect(() => {
-    const lang =
-      pathname === '/korean-nickname-generator' || pathname.startsWith('/korean-nickname-generator/')
-        ? 'ko'
-        : 'en';
+    const slug = pathname.replace(/^\//, '').split('/')[0] || '';
+    const lang = KOREAN_LANG_SLUGS.has(slug) ? 'ko' : 'en';
     if (typeof document !== 'undefined' && document.documentElement.getAttribute('lang') !== lang) {
       document.documentElement.setAttribute('lang', lang);
     }

@@ -16,7 +16,7 @@ const description =
 export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
-  return buildMeta({ title, description, urlPath: '/korean-dialect-translator' });
+  return buildMeta({ title, description, urlPath: '/korean-dialect-translator', locale: 'ko_KR' });
 }
 
 function RailAd({ side }: { side: 'left' | 'right' }) {
