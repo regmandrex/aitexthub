@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import crypto from 'crypto';
 import { Pool } from 'pg';
+import { sendWelcomeEmail } from '@/lib/emails/welcome';
 
 const pool = new Pool({ connectionString: process.env.DATABASE_URL });
 
@@ -74,6 +75,7 @@ export async function POST(req: NextRequest) {
   const eventName = event.meta?.event_name;
   const attrs = event.data?.attributes ?? {};
   const customerEmail = attrs.user_email;
+  const customerName = attrs.user_name ?? '';
   const subscriptionId = String(event.data?.id ?? '');
   const customerId = String(attrs.customer_id ?? '');
   const variantName = attrs.variant_name ?? '';
@@ -131,9 +133,10 @@ export async function POST(req: NextRequest) {
   };
 
   switch (eventName) {
-    // User just subscribed — activate Pro, reset quota
+    // User just subscribed — activate Pro, reset quota, welcome them
     case 'subscription_created':
       await upsertPro(true);
+      await sendWelcomeEmail(customerEmail, customerName, plan);
       break;
 
     // Subscription details changed (plan upgrade/downgrade, billing date change)
@@ -161,14 +164,16 @@ export async function POST(req: NextRequest) {
       await updatePro('is_pro = $1', [false]);
       break;
 
-    // User unpaused — restore Pro access
+    // User unpaused — restore Pro access, welcome them back
     case 'subscription_unpaused':
       await upsertPro(true);
+      await sendWelcomeEmail(customerEmail, customerName, plan);
       break;
 
-    // User resumed a cancelled subscription before it expired
+    // User resumed a cancelled subscription before it expired — welcome them back
     case 'subscription_resumed':
       await upsertPro(true);
+      await sendWelcomeEmail(customerEmail, customerName, plan);
       break;
 
     // Recurring payment succeeded — reset word quota for new billing period
