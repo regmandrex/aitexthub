@@ -99,7 +99,7 @@ export default function CookiePolicyPage() {
       <h2>6. Contact Us</h2>
       <p>For questions about this Cookie Policy, contact us at:</p>
       <p>
-        <a href="mailto:support@gpthelpertools.com">support@gpthelpertools.com</a>
+        <a href="mailto:support@gptcleanuptools.com">support@gptcleanuptools.com</a>
       </p>
     </article>
   );

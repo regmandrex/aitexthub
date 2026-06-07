@@ -31,6 +31,9 @@ export const auth = betterAuth({
       await resend.emails.send({
         from: 'GPT Cleanup Tools <noreply@gptcleanuptools.com>',
         to: user.email,
+        // Sent from an unmonitored noreply address, but route any replies to
+        // support so users who hit "reply" still reach a real inbox.
+        replyTo: 'support@gptcleanuptools.com',
         subject: 'Reset your password',
         html: `<p>Click <a href="${url}">here</a> to reset your password. This link expires in 1 hour.</p>`,
       });
@@ -41,6 +44,8 @@ export const auth = betterAuth({
       await resend.emails.send({
         from: 'GPT Cleanup Tools <noreply@gptcleanuptools.com>',
         to: user.email,
+        // Replies to this noreply address are routed to support.
+        replyTo: 'support@gptcleanuptools.com',
         subject: 'Verify your email — GPT Cleanup Tools',
         html: `
           <div style="font-family:sans-serif;max-width:480px;margin:0 auto">

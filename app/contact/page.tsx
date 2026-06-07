@@ -25,8 +25,8 @@ export default async function ContactPage() {
           <h2 className="text-2xl font-semibold text-slate-900">How to Reach Us</h2>
           <div className="mt-5 rounded-2xl border border-slate-100 bg-slate-50 p-6 text-lg font-semibold text-slate-900">
             <p>Email:</p>
-            <a href="mailto:support@gpthelpertools.com" className="text-brand-700 hover:underline">
-              support@gpthelpertools.com
+            <a href="mailto:support@gptcleanuptools.com" className="text-brand-700 hover:underline">
+              support@gptcleanuptools.com
             </a>
           </div>
         </section>

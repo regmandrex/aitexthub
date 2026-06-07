@@ -289,7 +289,7 @@ export default async function PrivacyPolicyPage() {
             <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-violet-600 to-purple-700 text-sm font-black text-white shadow-sm">10</span>
             <h2 className="text-lg font-bold text-slate-900">Children&apos;s Privacy</h2>
           </div>
-          <p className="text-sm text-slate-700">GPTCleanup is not designed for children under 13. We do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal data, contact us at <a href="mailto:support@gpthelpertools.com" className="font-semibold text-violet-700 hover:underline">support@gpthelpertools.com</a> and we will delete it promptly.</p>
+          <p className="text-sm text-slate-700">GPTCleanup is not designed for children under 13. We do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal data, contact us at <a href="mailto:support@gptcleanuptools.com" className="font-semibold text-violet-700 hover:underline">support@gptcleanuptools.com</a> and we will delete it promptly.</p>
         </section>
 
         {/* 11. Your Rights */}
@@ -318,7 +318,7 @@ export default async function PrivacyPolicyPage() {
               </li>
             ))}
           </ul>
-          <p className="mt-3 text-sm text-slate-700">To exercise any of these rights, contact us at <a href="mailto:support@gpthelpertools.com" className="font-semibold text-violet-700 hover:underline">support@gpthelpertools.com</a>. We will respond within 30 days. You can delete your account at any time from your Account Settings — this removes your data from our database immediately.</p>
+          <p className="mt-3 text-sm text-slate-700">To exercise any of these rights, contact us at <a href="mailto:support@gptcleanuptools.com" className="font-semibold text-violet-700 hover:underline">support@gptcleanuptools.com</a>. We will respond within 30 days. You can delete your account at any time from your Account Settings — this removes your data from our database immediately.</p>
         </section>
 
         {/* 12. Updates */}
@@ -335,13 +335,13 @@ export default async function PrivacyPolicyPage() {
           <h2 className="text-xl font-bold md:text-2xl">Privacy questions?</h2>
           <p className="mt-2 text-sm text-violet-100">We respond to privacy inquiries within 30 days.</p>
           <Link
-            href="mailto:support@gpthelpertools.com"
+            href="mailto:support@gptcleanuptools.com"
             className="mt-5 inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-bold text-violet-700 shadow-lg transition hover:bg-violet-50"
           >
             <svg className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
             </svg>
-            support@gpthelpertools.com
+            support@gptcleanuptools.com
           </Link>
         </section>
 

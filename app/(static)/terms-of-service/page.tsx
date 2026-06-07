@@ -232,7 +232,7 @@ export default async function TermsOfServicePage() {
             <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-violet-600 to-purple-700 text-sm font-black text-white shadow-sm">13</span>
             <h2 className="text-lg font-bold text-slate-900">Chargebacks and Payment Disputes</h2>
           </div>
-          <p className="text-sm text-slate-700">Filing a fraudulent chargeback or payment dispute without first contacting us at <a href="mailto:support@gpthelpertools.com" className="font-semibold text-violet-700 hover:underline">support@gpthelpertools.com</a> is a violation of these Terms. If you initiate a fraudulent chargeback:</p>
+          <p className="text-sm text-slate-700">Filing a fraudulent chargeback or payment dispute without first contacting us at <a href="mailto:support@gptcleanuptools.com" className="font-semibold text-violet-700 hover:underline">support@gptcleanuptools.com</a> is a violation of these Terms. If you initiate a fraudulent chargeback:</p>
           <ul className="mt-3 space-y-1.5 text-sm text-slate-700">
             <li className="flex items-start gap-2"><span className="text-slate-400">-</span> Your account will be immediately terminated</li>
             <li className="flex items-start gap-2"><span className="text-slate-400">-</span> You may be banned from future use of the Service</li>
@@ -291,13 +291,13 @@ export default async function TermsOfServicePage() {
           <h2 className="text-xl font-bold md:text-2xl">Questions about these Terms?</h2>
           <p className="mt-2 text-sm text-violet-100">We respond to inquiries within 3-5 business days.</p>
           <Link
-            href="mailto:support@gpthelpertools.com"
+            href="mailto:support@gptcleanuptools.com"
             className="mt-5 inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-bold text-violet-700 shadow-lg transition hover:bg-violet-50"
           >
             <svg className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
             </svg>
-            support@gpthelpertools.com
+            support@gptcleanuptools.com
           </Link>
         </section>
 
