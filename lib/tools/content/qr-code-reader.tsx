@@ -233,7 +233,7 @@ const faqs: FaqItem[] = [
     category: 'Troubleshooting and Comparison',
     question: 'What should I do if the QR code will not decode?',
     answer:
-      'Most decode failures come from image quality rather than the tool. Try these fixes in order. First, make sure the QR code is not cropped "” it needs the three square position-detection patterns in the corners intact. Second, increase the image resolution; very small QR images (under 100Ã—100 pixels) sometimes fail. Third, check contrast "” if the QR is faint or the dark and light modules are too similar, bump the contrast in any image editor. Fourth, try a different image format; a poorly compressed JPEG can blur the modules, so re-export as PNG if possible. Fifth, make sure the image is not rotated into an unrecognizable orientation "” most QR readers auto-rotate, but extreme skew can confuse them.',
+      'Most decode failures come from image quality rather than the tool. Try these fixes in order. First, make sure the QR code is not cropped "” it needs the three square position-detection patterns in the corners intact. Second, increase the image resolution; very small QR images (under 100×100 pixels) sometimes fail. Third, check contrast "” if the QR is faint or the dark and light modules are too similar, bump the contrast in any image editor. Fourth, try a different image format; a poorly compressed JPEG can blur the modules, so re-export as PNG if possible. Fifth, make sure the image is not rotated into an unrecognizable orientation "” most QR readers auto-rotate, but extreme skew can confuse them.',
   },
   {
     category: 'Compatibility and Formats',
@@ -245,7 +245,7 @@ const faqs: FaqItem[] = [
     category: 'Technical',
     question: 'What is the maximum amount of text a QR code can hold, and can this reader handle the largest codes?',
     answer:
-      'A QR code version 40 (the largest standard) holds up to 7,089 numeric digits, 4,296 alphanumeric characters, or 2,953 bytes of data. This reader handles every standard QR version from 1 to 40. Very large QR codes tend to have more modules (up to 177Ã—177 for version 40), which means they need a higher-resolution image to decode cleanly. If you try to decode a large QR from a tiny image, the reader may fail because the modules are smaller than individual pixels; re-capture at higher resolution and it will decode.',
+      'A QR code version 40 (the largest standard) holds up to 7,089 numeric digits, 4,296 alphanumeric characters, or 2,953 bytes of data. This reader handles every standard QR version from 1 to 40. Very large QR codes tend to have more modules (up to 177×177 for version 40), which means they need a higher-resolution image to decode cleanly. If you try to decode a large QR from a tiny image, the reader may fail because the modules are smaller than individual pixels; re-capture at higher resolution and it will decode.',
   },
   {
     category: 'Advanced Workflow',

@@ -216,7 +216,7 @@ export const svgOptimizerContent: ToolContent = {
       category: 'Basics',
       question: 'Why are SVG files exported from design tools so large?',
       answer:
-        'Design tools embed extensive metadata in SVG exports: editor-specific namespace declarations (Illustrator&#39;s ai: and i: namespaces), XMP metadata with creation dates and software versions, layer names as title elements, redundant group wrappers mirroring the layer structure, unused color definitions, verbose floating-point coordinates, and explicit attributes that simply repeat the SVG default values. A simple icon might have 5Ã— more metadata than actual path data.',
+        'Design tools embed extensive metadata in SVG exports: editor-specific namespace declarations (Illustrator&#39;s ai: and i: namespaces), XMP metadata with creation dates and software versions, layer names as title elements, redundant group wrappers mirroring the layer structure, unused color definitions, verbose floating-point coordinates, and explicit attributes that simply repeat the SVG default values. A simple icon might have 5× more metadata than actual path data.',
     },
     {
       category: 'Basics',

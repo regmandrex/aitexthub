@@ -450,7 +450,7 @@ const faqs: FaqItem[] = [
     category: 'Statistics',
     question: 'How is "similarity percentage" calculated?',
     answer:
-      'Similarity is typically calculated as: (2 Ã— number of matching characters) / (total characters in both texts). A 100% similarity means identical texts. 0% means completely different. Our tool shows lines added, lines removed, and character-level change statistics alongside this overall similarity measure.',
+      'Similarity is typically calculated as: (2 × number of matching characters) / (total characters in both texts). A 100% similarity means identical texts. 0% means completely different. Our tool shows lines added, lines removed, and character-level change statistics alongside this overall similarity measure.',
   },
   {
     category: 'Performance',

@@ -342,7 +342,7 @@ function WriteUp() {
         <p>
           Makes the pattern match regardless of letter case. <code>/hello/i</code> matches "Hello",
           "HELLO", "hElLo". With the <code>u</code> flag for Unicode, case folding follows the Unicode
-          standard including characters like ÃŸ (matches SS in German).
+          standard including characters like ß (matches SS in German).
         </p>
 
         <h3>Global (g)</h3>

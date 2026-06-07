@@ -102,11 +102,11 @@ function WriteUp() {
         <ul>
           <li>Accented Latin: é → e, ü → u, ñ → n, ç → c, ø → o, å → a</li>
           <li>German: ä → ae, ö → oe, ü → ue, ß → ss</li>
-          <li>Cyrillic: ÐŸÑ€Ð¸Ð²ÐµÑ‚ → privet</li>
+          <li>Cyrillic: Привет → privet</li>
           <li>Greek: Î•Î»Î»Î¬Î´Î± → Ellada</li>
-          <li>Chinese: ä½ å¥½ → ni hao</li>
-          <li>Japanese: ã“ã‚“ã«ã¡ã¯ → konnichiwa (hiragana romanization)</li>
-          <li>Arabic: Ù…Ø±Ø­Ø¨Ø§ → mrhba (transliterated, as Arabic has no vowel letters in most positions)</li>
+          <li>Chinese: 你好 → ni hao</li>
+          <li>Japanese: こんにちは → konnichiwa (hiragana romanization)</li>
+          <li>Arabic: مرحبا → mrhba (transliterated, as Arabic has no vowel letters in most positions)</li>
         </ul>
         <p>
           Our generator uses the Unicode Consortium&apos;s CLDR (Common Locale Data Repository) transliteration rules for maximum accuracy across languages. For Chinese and Japanese, we use standard Pinyin and Hepburn romanization respectively.
@@ -373,7 +373,7 @@ const faqs: FaqItem[] = [
     category: 'Unicode',
     question: 'Can slugs contain non-Latin characters (Chinese, Arabic, Cyrillic)?',
     answer:
-      'Technically yes "” modern browsers and servers support Unicode URLs. However, when copied or shared, these are percent-encoded (%E4%BD%A0%E5%A5%BD), which is ugly and fragile. Best practice is to transliterate: ä½ å¥½ → ni-hao, ÐŸÑ€Ð¸Ð²ÐµÑ‚ → privet. Our generator performs transliteration for common scripts.',
+      'Technically yes "” modern browsers and servers support Unicode URLs. However, when copied or shared, these are percent-encoded (%E4%BD%A0%E5%A5%BD), which is ugly and fragile. Best practice is to transliterate: 你好 → ni-hao, Привет → privet. Our generator performs transliteration for common scripts.',
   },
   {
     category: 'Technical',

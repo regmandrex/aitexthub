@@ -3,16 +3,16 @@
 import { useState } from 'react';
 
 const WORDS = [
-  'ì‚¬ê³¼', 'ê³¼ì¼', 'ì¼ê¸°', 'ê¸°ì°¨', 'ì°¨í‘œ', 'í‘œì§€', 'ì§€ë„', 'ë„ì„œê´€', 'ê´€ì‹¬', 'ì‹¬ìž¥',
-  'ìž¥ë¯¸', 'ë¯¸ìˆ ', 'ìˆ ì§‘', 'ì§‘ì•ˆ', 'ì•ˆê²½', 'ê²½ì°°', 'ì°°ë–¡', 'ë–¡êµ­', 'êµ­ìˆ˜', 'ìˆ˜ë°•',
-  'ë°•ë¬¼ê´€', 'ê´€ìž¥', 'ìž¥êµ°', 'êµ°ëŒ€', 'ëŒ€í•™', 'í•™êµ', 'êµì‹¤', 'ì‹¤ë‚´', 'ë‚´ì¼', 'ì¼ìš”ì¼',
-  'ì±…ìƒ', 'ìƒìž', 'ìžì „ê±°', 'ê±°ë¦¬', 'ë¦¬ë³¸', 'ë³¸ì§ˆ', 'ì§ˆë¬¸', 'ë¬¸ì œ', 'ì œëª©', 'ëª©ì†Œë¦¬',
-  'ì†Œë¦¬', 'ë¦¬ë“¬', 'ë“¬ë¿', 'ë¿Œë¦¬', 'ë¦¬ë”', 'ë”ìœ„', 'ìœ„ì¹˜', 'ì¹˜ì•„', 'ì•„ì¹¨', 'ì¹¨ëŒ€',
-  'ëŒ€ë¬¸', 'ë¬¸ì–´', 'ì–´ë¨¸ë‹ˆ', 'ë‹ˆì€', 'ì€í–‰', 'í–‰ë³µ', 'ë³µê¶Œ', 'ê¶Œë ¥', 'ë ¥ì‚¬',
-  'ë°”ë‹¤', 'ë‹¤ë¦¬', 'ë¦¬ì–´ì¹´', 'ì¹´íŽ˜', 'íŽ˜ì¸íŠ¸', 'íŠ¸ëŸ­', 'ëŸ­ë¹„', 'ë¹„í–‰ê¸°', 'ê¸°ë¦„', 'ë¦„ë‹¬',
-  'ë‚˜ë¬´', 'ë¬´ì§€ê°œ', 'ê°œë¯¸', 'ë¯¸ëž˜', 'ëž˜í¼', 'í¼ì¦', 'ì¦ê±°ì›€', 'ì›€ì§ìž„', 'ìž„ê¸ˆ', 'ê¸ˆìš”ì¼',
-  'í•˜ëŠ˜', 'ëŠ˜ë³´', 'ë³´ë¼', 'ë¼ë©´', 'ë©´ë„', 'ë„ì‹œ', 'ì‹œê°„', 'ê°„ì‹', 'ì‹ë‹¹', 'ë‹¹ê·¼',
-  'ê·¼ìœ¡', 'ìœ¡ì§€', 'ì§€êµ¬', 'êµ¬ë¦„', 'ë¦„', 'ë¦„ë©ì´',
+  '사과', '과일', '일기', '기차', '차표', '표지', '지도', '도서관', '관심', '심장',
+  '장미', '미술', '술집', '집안', '안경', '경찰', '찰떡', '떡국', '국수', '수박',
+  '박물관', '관장', '장군', '군대', '대학', '학교', '교실', '실내', '내일', '일요일',
+  '책상', '상자', '자전거', '거리', '리본', '본질', '질문', '문제', '제목', '목소리',
+  '소리', '리듬', '듬뿍', '뿌리', '리더', '더위', '위치', '치아', '아침', '침대',
+  '대문', '문어', '어머니', '니은', '은행', '행복', '복권', '권력', '력사',
+  '바다', '다리', '리어카', '카페', '페인트', '트럭', '럭비', '비행기', '기름', '름달',
+  '나무', '무지개', '개미', '미래', '래퍼', '퍼즐', '즐거움', '움직임', '임금', '금요일',
+  '하늘', '늘보', '보라', '라면', '면도', '도시', '시간', '간식', '식당', '당근',
+  '근육', '육지', '지구', '구름', '름', '름덩이',
 ];
 
 const WORD_SET = new Set(WORDS);
@@ -25,7 +25,7 @@ WORDS.forEach((w) => {
 
 type Turn = { player: 'user' | 'computer'; word: string; status: 'ok' | 'error'; message?: string };
 
-const HANBANG = ['ëŠ ', 'ìŠ­', 'ë¯', 'í¼', 'ì¨'];
+const HANBANG = ['늠', '슭', '믐', '큼', '쁨'];
 
 export function WordChainTool() {
   const [history, setHistory] = useState<Turn[]>([]);
@@ -50,19 +50,19 @@ export function WordChainTool() {
     const word = input.trim();
     if (!word) return;
     if (word.length < 2) {
-      setError('ë‘ ê¸€ìž ì´ìƒì˜ ë‹¨ì–´ë¥¼ ìž…ë ¥í•´ ì£¼ì„¸ìš”.');
+      setError('두 글자 이상의 단어를 입력해 주세요.');
       return;
     }
     if (used.has(word)) {
-      setError('ì´ë¯¸ ì‚¬ìš©í•œ ë‹¨ì–´ìž…ë‹ˆë‹¤.');
+      setError('이미 사용한 단어입니다.');
       return;
     }
     if (requiredFirst && word.charAt(0) !== requiredFirst) {
-      setError(`"${requiredFirst}"ìœ¼ë¡œ ì‹œìž‘í•˜ëŠ” ë‹¨ì–´ë¥¼ ìž…ë ¥í•´ ì£¼ì„¸ìš”.`);
+      setError(`"${requiredFirst}"으로 시작하는 단어를 입력해 주세요.`);
       return;
     }
     if (!WORD_SET.has(word)) {
-      setError('ì‚¬ì „ì— ì—†ëŠ” ë‹¨ì–´ìž…ë‹ˆë‹¤. ë‹¤ë¥¸ ë‹¨ì–´ë¥¼ ì‹œë„í•´ ì£¼ì„¸ìš”.');
+      setError('사전에 없는 단어입니다. 다른 단어를 시도해 주세요.');
       return;
     }
 
@@ -73,7 +73,7 @@ export function WordChainTool() {
 
     const lastChar = word.slice(-1);
     if (HANBANG.includes(lastChar)) {
-      next.push({ player: 'computer', word: '(í•œë°©ë‹¨ì–´!)', status: 'error', message: `"${lastChar}"ìœ¼ë¡œ ì‹œìž‘í•˜ëŠ” ë‹¨ì–´ê°€ ì—†ì–´ìš”. ì‚¬ìš©ìž ìŠ¹ë¦¬!` });
+      next.push({ player: 'computer', word: '(한방단어!)', status: 'error', message: `"${lastChar}"으로 시작하는 단어가 없어요. 사용자 승리!` });
       setHistory(next);
       setUsed(newUsed);
       setInput('');
@@ -83,7 +83,7 @@ export function WordChainTool() {
 
     const candidates = (WORDS_BY_FIRST[lastChar] || []).filter((w) => !newUsed.has(w));
     if (candidates.length === 0) {
-      next.push({ player: 'computer', word: '(ì»´í“¨í„° íŒ¨ë°°)', status: 'error', message: 'ì»´í“¨í„°ê°€ ë‹¨ì–´ë¥¼ ìƒê°í•´ë‚´ì§€ ëª»í–ˆì–´ìš”. ì‚¬ìš©ìž ìŠ¹ë¦¬!' });
+      next.push({ player: 'computer', word: '(컴퓨터 패배)', status: 'error', message: '컴퓨터가 단어를 생각해내지 못했어요. 사용자 승리!' });
       setHistory(next);
       setUsed(newUsed);
       setInput('');
@@ -108,12 +108,12 @@ export function WordChainTool() {
     <div className="space-y-4">
       <div className="rounded-lg border border-slate-300 bg-slate-50 p-3 min-h-[200px] max-h-[300px] overflow-y-auto">
         {history.length === 0 ? (
-          <p className="text-sm text-slate-500">ì•„ëž˜ì— ì²« ë‹¨ì–´ë¥¼ ìž…ë ¥í•´ ëë§ìž‡ê¸°ë¥¼ ì‹œìž‘í•´ ë³´ì„¸ìš”. (ì˜ˆ: ì‚¬ê³¼, ë°”ë‹¤, ë‚˜ë¬´)</p>
+          <p className="text-sm text-slate-500">아래에 첫 단어를 입력해 끝말잇기를 시작해 보세요. (예: 사과, 바다, 나무)</p>
         ) : (
           <div className="space-y-1">
             {history.map((turn, idx) => (
               <div key={idx} className={`text-sm ${turn.player === 'user' ? 'text-blue-700' : 'text-slate-700'}`}>
-                <span className="font-medium">{turn.player === 'user' ? 'ë‚˜' : 'ì»´í“¨í„°'}:</span> {turn.word}
+                <span className="font-medium">{turn.player === 'user' ? '나' : '컴퓨터'}:</span> {turn.word}
                 {turn.message && <span className="ml-2 text-red-600 text-xs">{turn.message}</span>}
               </div>
             ))}
@@ -123,7 +123,7 @@ export function WordChainTool() {
 
       {requiredFirst && !gameOver && (
         <p className="text-sm text-slate-700">
-          ë‹¤ìŒ ë‹¨ì–´ëŠ” <strong className="text-blue-600">"{requiredFirst}"</strong>ìœ¼ë¡œ ì‹œìž‘í•´ì•¼ í•©ë‹ˆë‹¤.
+          다음 단어는 <strong className="text-blue-600">"{requiredFirst}"</strong>으로 시작해야 합니다.
         </p>
       )}
 
@@ -136,7 +136,7 @@ export function WordChainTool() {
             value={input}
             onChange={(e) => setInput(e.target.value)}
             onKeyDown={(e) => e.key === 'Enter' && submit()}
-            placeholder="ë‹¨ì–´ë¥¼ ìž…ë ¥í•˜ì„¸ìš”"
+            placeholder="단어를 입력하세요"
             maxLength={20}
             className="flex-1 min-w-[160px] rounded-lg border border-slate-300 p-2 text-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
           />
@@ -145,14 +145,14 @@ export function WordChainTool() {
             onClick={submit}
             className="px-4 py-2 bg-blue-600 text-white rounded-lg text-sm font-medium hover:bg-blue-700 transition"
           >
-            ì œì¶œ
+            제출
           </button>
           <button
             type="button"
             onClick={reset}
             className="px-4 py-2 bg-white text-slate-700 border border-slate-300 rounded-lg text-sm font-medium hover:bg-slate-50 transition"
           >
-            ìƒˆ ê²Œìž„
+            새 게임
           </button>
         </div>
       ) : (
@@ -161,7 +161,7 @@ export function WordChainTool() {
           onClick={reset}
           className="px-4 py-2 bg-blue-600 text-white rounded-lg text-sm font-medium hover:bg-blue-700 transition"
         >
-          ë‹¤ì‹œ ì‹œìž‘
+          다시 시작
         </button>
       )}
     </div>

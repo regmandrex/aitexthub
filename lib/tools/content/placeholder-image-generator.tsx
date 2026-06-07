@@ -43,21 +43,21 @@ export const placeholderImageGeneratorContent: ToolContent = {
           Standard dimensions used in web design correspond to common UI patterns:
         </p>
         <ul>
-          <li><strong>16Ã—16</strong>: favicon, small icon</li>
-          <li><strong>32Ã—32</strong>: standard icon</li>
-          <li><strong>48Ã—48</strong>: medium icon, avatar in list view</li>
-          <li><strong>64Ã—64</strong>: small avatar</li>
-          <li><strong>100Ã—100</strong>: small profile photo</li>
-          <li><strong>150Ã—150</strong>: thumbnail, product card image</li>
-          <li><strong>200Ã—200</strong>: square thumbnail</li>
-          <li><strong>300Ã—200</strong>: horizontal card image, blog post thumbnail</li>
-          <li><strong>400Ã—300</strong>: standard article image</li>
-          <li><strong>600Ã—400</strong>: featured image</li>
-          <li><strong>800Ã—600</strong>: large content image, 4:3 ratio</li>
-          <li><strong>1200Ã—630</strong>: Open Graph image (og:image), Facebook share preview</li>
-          <li><strong>1280Ã—720</strong>: 720p HD, hero image, banner</li>
-          <li><strong>1920Ã—1080</strong>: 1080p Full HD, full-width hero banner</li>
-          <li><strong>2560Ã—1440</strong>: 2K/1440p, large background image</li>
+          <li><strong>16×16</strong>: favicon, small icon</li>
+          <li><strong>32×32</strong>: standard icon</li>
+          <li><strong>48×48</strong>: medium icon, avatar in list view</li>
+          <li><strong>64×64</strong>: small avatar</li>
+          <li><strong>100×100</strong>: small profile photo</li>
+          <li><strong>150×150</strong>: thumbnail, product card image</li>
+          <li><strong>200×200</strong>: square thumbnail</li>
+          <li><strong>300×200</strong>: horizontal card image, blog post thumbnail</li>
+          <li><strong>400×300</strong>: standard article image</li>
+          <li><strong>600×400</strong>: featured image</li>
+          <li><strong>800×600</strong>: large content image, 4:3 ratio</li>
+          <li><strong>1200×630</strong>: Open Graph image (og:image), Facebook share preview</li>
+          <li><strong>1280×720</strong>: 720p HD, hero image, banner</li>
+          <li><strong>1920×1080</strong>: 1080p Full HD, full-width hero banner</li>
+          <li><strong>2560×1440</strong>: 2K/1440p, large background image</li>
         </ul>
         <p>
           Aspect ratios matter as much as dimensions. Common aspect ratios in web design:
@@ -83,14 +83,14 @@ export const placeholderImageGeneratorContent: ToolContent = {
           An SVG data URI can be embedded directly in CSS as a background image, creating a
           self-contained placeholder with custom colors and text:
         </p>
-        <pre><code>{'background-image: url(&#39;data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="300" height="200"%3E%3Crect width="100%25" height="100%25" fill="%23e5e7eb"/%3E%3Ctext x="50%25" y="50%25" text-anchor="middle" dominant-baseline="middle" fill="%23888" font-family="sans-serif" font-size="14"%3E300Ã—200%3C/text%3E%3C/svg%3E&#39;);'}</code></pre>
+        <pre><code>{'background-image: url(&#39;data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="300" height="200"%3E%3Crect width="100%25" height="100%25" fill="%23e5e7eb"/%3E%3Ctext x="50%25" y="50%25" text-anchor="middle" dominant-baseline="middle" fill="%23888" font-family="sans-serif" font-size="14"%3E300×200%3C/text%3E%3C/svg%3E&#39;);'}</code></pre>
 
         <h2>Generating Placeholder Images with SVG</h2>
         <p>
           SVG is the ideal format for placeholder images because it is infinitely scalable, tiny in file
           size, and can be generated on the fly with arbitrary dimensions. A complete SVG placeholder:
         </p>
-        <pre><code>{'<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300">\n  <rect width="100%" height="100%" fill="#e5e7eb"/>\n  <!-- Cross pattern for visual interest -->\n  <line x1="0" y1="0" x2="400" y2="300" stroke="#d1d5db" stroke-width="1"/>\n  <line x1="400" y1="0" x2="0" y2="300" stroke="#d1d5db" stroke-width="1"/>\n  <rect x="1" y="1" width="398" height="298" fill="none" stroke="#d1d5db" stroke-width="1"/>\n  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"\n    fill="#6b7280" font-family="sans-serif" font-size="16" font-weight="500">\n    400Ã—300\n  </text>\n</svg>'}</code></pre>
+        <pre><code>{'<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300">\n  <rect width="100%" height="100%" fill="#e5e7eb"/>\n  <!-- Cross pattern for visual interest -->\n  <line x1="0" y1="0" x2="400" y2="300" stroke="#d1d5db" stroke-width="1"/>\n  <line x1="400" y1="0" x2="0" y2="300" stroke="#d1d5db" stroke-width="1"/>\n  <rect x="1" y="1" width="398" height="298" fill="none" stroke="#d1d5db" stroke-width="1"/>\n  <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle"\n    fill="#6b7280" font-family="sans-serif" font-size="16" font-weight="500">\n    400×300\n  </text>\n</svg>'}</code></pre>
         <p>
           SVG placeholders can include diagonal lines (the classic "X" pattern from design wireframes),
           a camera icon, custom text, or any other visual cue. The SVG can be inlined directly in HTML
@@ -113,7 +113,7 @@ export const placeholderImageGeneratorContent: ToolContent = {
           For projects that cannot depend on external services (air-gapped environments, CI testing,
           offline development), the HTML Canvas API can generate placeholder images in-browser:
         </p>
-        <pre><code>{"function generatePlaceholder(width, height, bg = '#e5e7eb', fg = '#6b7280') {\n  const canvas = document.createElement('canvas');\n  canvas.width = width;\n  canvas.height = height;\n  const ctx = canvas.getContext('2d');\n  ctx.fillStyle = bg;\n  ctx.fillRect(0, 0, width, height);\n  ctx.strokeStyle = fg;\n  ctx.lineWidth = 1;\n  ctx.beginPath();\n  ctx.moveTo(0, 0);\n  ctx.lineTo(width, height);\n  ctx.moveTo(width, 0);\n  ctx.lineTo(0, height);\n  ctx.stroke();\n  ctx.fillStyle = fg;\n  ctx.textAlign = 'center';\n  ctx.textBaseline = 'middle';\n  ctx.font = `${Math.min(width, height) * 0.1}px sans-serif`;\n  ctx.fillText(`${width}Ã—${height}`, width / 2, height / 2);\n  return canvas.toDataURL();\n}"}</code></pre>
+        <pre><code>{"function generatePlaceholder(width, height, bg = '#e5e7eb', fg = '#6b7280') {\n  const canvas = document.createElement('canvas');\n  canvas.width = width;\n  canvas.height = height;\n  const ctx = canvas.getContext('2d');\n  ctx.fillStyle = bg;\n  ctx.fillRect(0, 0, width, height);\n  ctx.strokeStyle = fg;\n  ctx.lineWidth = 1;\n  ctx.beginPath();\n  ctx.moveTo(0, 0);\n  ctx.lineTo(width, height);\n  ctx.moveTo(width, 0);\n  ctx.lineTo(0, height);\n  ctx.stroke();\n  ctx.fillStyle = fg;\n  ctx.textAlign = 'center';\n  ctx.textBaseline = 'middle';\n  ctx.font = `${Math.min(width, height) * 0.1}px sans-serif`;\n  ctx.fillText(`${width}×${height}`, width / 2, height / 2);\n  return canvas.toDataURL();\n}"}</code></pre>
 
         <h2>Placeholder Images in Design Tools</h2>
         <h3>Figma</h3>
@@ -138,7 +138,7 @@ export const placeholderImageGeneratorContent: ToolContent = {
 
         <h2>Placeholder Images in JavaScript Frameworks</h2>
         <h3>React</h3>
-        <pre><code>{"// Simple SVG placeholder component\nfunction Placeholder({ width, height, text, bg = '#e5e7eb', fg = '#9ca3af' }) {\n  return (\n    <svg\n      width={width}\n      height={height}\n      xmlns=\"http://www.w3.org/2000/svg\"\n      viewBox={`0 0 ${width} ${height}`}\n    >\n      <rect width=\"100%\" height=\"100%\" fill={bg} />\n      <text\n        x=\"50%\"\n        y=\"50%\"\n        textAnchor=\"middle\"\n        dominantBaseline=\"middle\"\n        fill={fg}\n        fontSize={Math.min(width, height) * 0.1}\n        fontFamily=\"sans-serif\"\n      >\n        {text || `${width}Ã—${height}`}\n      </text>\n    </svg>\n  );\n}"}</code></pre>
+        <pre><code>{"// Simple SVG placeholder component\nfunction Placeholder({ width, height, text, bg = '#e5e7eb', fg = '#9ca3af' }) {\n  return (\n    <svg\n      width={width}\n      height={height}\n      xmlns=\"http://www.w3.org/2000/svg\"\n      viewBox={`0 0 ${width} ${height}`}\n    >\n      <rect width=\"100%\" height=\"100%\" fill={bg} />\n      <text\n        x=\"50%\"\n        y=\"50%\"\n        textAnchor=\"middle\"\n        dominantBaseline=\"middle\"\n        fill={fg}\n        fontSize={Math.min(width, height) * 0.1}\n        fontFamily=\"sans-serif\"\n      >\n        {text || `${width}×${height}`}\n      </text>\n    </svg>\n  );\n}"}</code></pre>
         <h3>Next.js Image Component</h3>
         <p>
           Next.js's <code>{'<Image>'}</code> component supports a <code>placeholder</code> prop:
@@ -151,7 +151,7 @@ export const placeholderImageGeneratorContent: ToolContent = {
         <pre><code>{'import Image from "next/image";\n\n<Image\n  src="/product.jpg"\n  width={400}\n  height={300}\n  placeholder="blur"\n  alt="Product photo"\n/>'}</code></pre>
         <h3>Lazy Loading and Low-Quality Image Placeholders (LQIP)</h3>
         <p>
-          The Low-Quality Image Placeholder pattern uses a tiny, heavily compressed (10Ã—10 pixels or
+          The Low-Quality Image Placeholder pattern uses a tiny, heavily compressed (10×10 pixels or
           smaller) version of the actual image as a placeholder that is immediately available, then
           progressively replaces it with the full-resolution image as it loads. The placeholder is
           often encoded as a base64 data URI and inlined directly in the HTML, eliminating an extra
@@ -248,13 +248,13 @@ export const placeholderImageGeneratorContent: ToolContent = {
       category: 'Dimensions',
       question: 'What dimensions should I use for an Open Graph image placeholder?',
       answer:
-        '1200Ã—630 pixels is the standard size for Open Graph (og:image) images. This ratio (roughly 1.91:1) is used by Facebook, LinkedIn, Twitter/X, and most social platforms for link preview images. The content should be kept within the central 1080Ã—566 area to account for different cropping behaviors across platforms. Minimum size accepted by most platforms is 600Ã—315.',
+        '1200×630 pixels is the standard size for Open Graph (og:image) images. This ratio (roughly 1.91:1) is used by Facebook, LinkedIn, Twitter/X, and most social platforms for link preview images. The content should be kept within the central 1080×566 area to account for different cropping behaviors across platforms. Minimum size accepted by most platforms is 600×315.',
     },
     {
       category: 'Dimensions',
       question: 'What is the standard size for a website hero image placeholder?',
       answer:
-        'Common hero image sizes: 1920Ã—1080 (Full HD, most common for desktop), 1440Ã—810 (common for many modern sites), 1280Ã—720 (720p, minimum for modern sites), and 2560Ã—1440 (2K for retina/HiDPI). For responsive designs, the hero section&#39;s intrinsic aspect ratio matters more than exact pixel dimensions. A 16:9 aspect ratio (1920Ã—1080) works well for most landscape hero designs.',
+        'Common hero image sizes: 1920×1080 (Full HD, most common for desktop), 1440×810 (common for many modern sites), 1280×720 (720p, minimum for modern sites), and 2560×1440 (2K for retina/HiDPI). For responsive designs, the hero section&#39;s intrinsic aspect ratio matters more than exact pixel dimensions. A 16:9 aspect ratio (1920×1080) works well for most landscape hero designs.',
     },
     {
       category: 'CSS',
@@ -302,7 +302,7 @@ export const placeholderImageGeneratorContent: ToolContent = {
       category: 'URL API',
       question: 'How does the via.placeholder.com URL API work?',
       answer:
-        'The URL format is: https://via.placeholder.com/WIDTHxHEIGHT/BGCOLOR/TEXTCOLOR?text=Custom+Text. Examples: /300x200 returns a 300Ã—200 gray rectangle with "300x200" text; /300x200/ff0000/ffffff returns a red background with white text; /300 returns a 300Ã—300 square; /300x200.png forces PNG format. The service is free but has rate limits and may have occasional downtime "” use for development only, not production.',
+        'The URL format is: https://via.placeholder.com/WIDTHxHEIGHT/BGCOLOR/TEXTCOLOR?text=Custom+Text. Examples: /300x200 returns a 300×200 gray rectangle with "300x200" text; /300x200/ff0000/ffffff returns a red background with white text; /300 returns a 300×300 square; /300x200.png forces PNG format. The service is free but has rate limits and may have occasional downtime "” use for development only, not production.',
     },
     {
       category: 'Responsive',

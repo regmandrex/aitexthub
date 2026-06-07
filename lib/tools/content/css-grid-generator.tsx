@@ -438,7 +438,7 @@ export const cssGridGeneratorContent: ToolContent = {
       category: 'Gaps',
       question: 'How does gap work in CSS Grid?',
       answer:
-        'gap (shorthand for row-gap and column-gap) adds gutters between grid tracks "” both row and column tracks. It does not add space at the outer edges of the grid container. The fr unit respects gaps in its calculations. gap: 20px on a grid with repeat(3, 1fr) columns divides the space minus 2 Ã— 20px (the two gaps) among three equal columns.',
+        'gap (shorthand for row-gap and column-gap) adds gutters between grid tracks "” both row and column tracks. It does not add space at the outer edges of the grid container. The fr unit respects gaps in its calculations. gap: 20px on a grid with repeat(3, 1fr) columns divides the space minus 2 × 20px (the two gaps) among three equal columns.',
     },
     {
       category: 'Frameworks',
