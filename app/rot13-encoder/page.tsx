@@ -23,7 +23,7 @@ const faqs: FaqItem[] = [
   {
     category: 'Basics',
     question: 'What is ROT13 and how does it work?',
-    answer: `ROT13 (Rotate by 13) is a simple letter substitution cipher that replaces each letter with the letter 13 positions ahead of it in the alphabet. Since the English alphabet has 26 letters, shifting by 13 positions is self-inverse — applying ROT13 twice returns the original text. A becomes N, B becomes O, C becomes P, and so on through Z becoming M. Lowercase letters are handled separately (a?n, b?o, etc.), and non-letter characters (numbers, punctuation, spaces) are left unchanged. ROT13 is used for light text obfuscation — hiding spoilers, puzzle answers, and mildly inappropriate content in online communities — rather than security, since anyone who knows the encoding can instantly decode it. Our tool applies ROT13 (and the related ROT47 variant) to any text you enter, with output updating in real time.`,
+    answer: `ROT13 (Rotate by 13) is a simple letter substitution cipher that replaces each letter with the letter 13 positions ahead of it in the alphabet. Since the English alphabet has 26 letters, shifting by 13 positions is self-inverse — applying ROT13 twice returns the original text. A becomes N, B becomes O, C becomes P, and so on through Z becoming M. Lowercase letters are handled separately (a?n, b?o, etc.), and non-letter characters (numbers, punctuation, spaces) are left unchanged. ROT13 is used for light text obfuscation — hiding spoilers, puzzle answers, and mildly inappropriate content in online communities — rather than security, since anyone who knows the encoding can instantly decode it. Our ROT13 encoder applies ROT13 (and the related ROT47 variant) to any text you enter, with output updating in real time.`,
   },
   {
     category: 'Basics',
@@ -33,7 +33,7 @@ const faqs: FaqItem[] = [
   {
     category: 'Basics',
     question: 'What is ROT47 and how is it different from ROT13?',
-    answer: `ROT47 extends the ROT13 concept to all printable ASCII characters rather than just letters. While ROT13 shifts only the 26 letters (A-Z and a-z) by 13 positions, ROT47 shifts all 94 printable ASCII characters (codes 33–126, which includes letters, digits, and punctuation) by 47 positions. Since 94 ÷ 2 = 47, this is also self-inverse — applying ROT47 twice returns the original text. For example, '!' (ASCII 33) becomes 'P' (ASCII 80), digits are transformed (0 becomes _), and letters are shifted differently than in ROT13. ROT47 is useful when you want to obfuscate text that contains digits and special characters as well as letters — a ROT13-encoded message still shows its digits and punctuation in plain form. The trade-off: ROT47 output looks more scrambled and less recognizable than ROT13, since even digits and symbols are changed. Our tool offers both ROT13 and ROT47 modes with real-time conversion and a "Swap" button to use the output as new input for decoding.`,
+    answer: `ROT47 extends the ROT13 concept to all printable ASCII characters rather than just letters. While ROT13 shifts only the 26 letters (A-Z and a-z) by 13 positions, ROT47 shifts all 94 printable ASCII characters (codes 33–126, which includes letters, digits, and punctuation) by 47 positions. Since 94 ÷ 2 = 47, this is also self-inverse — applying ROT47 twice returns the original text. For example, '!' (ASCII 33) becomes 'P' (ASCII 80), digits are transformed (0 becomes _), and letters are shifted differently than in ROT13. ROT47 is useful when you want to obfuscate text that contains digits and special characters as well as letters — a ROT13-encoded message still shows its digits and punctuation in plain form. The trade-off: ROT47 output looks more scrambled and less recognizable than ROT13, since even digits and symbols are changed. Our ROT13 encoder offers both ROT13 and ROT47 modes with real-time conversion and a "Swap" button to use the output as new input for decoding.`,
   },
   {
     category: 'Usage',
@@ -43,7 +43,7 @@ const faqs: FaqItem[] = [
   {
     category: 'Usage',
     question: 'How do I use ROT13 to hide spoilers on Reddit and other forums?',
-    answer: `ROT13 has a long history on Reddit, Usenet, and online forums as a spoiler encoding convention. When you want to share information that others might not want to see unexpectedly (movie plot points, book endings, puzzle solutions, game secrets), you encode it in ROT13. Readers who want to see the spoiler decode it; those who do not want to see it scroll past. The convention works because ROT13 is widely known in internet culture — anyone curious enough to decode a spoiler knows how. On Reddit, the native spoiler tag (>!text!<) is now preferred, but ROT13 is still used in many communities, particularly on older-style forums, Usenet groups, and communities with a culture of ROT13 spoilers. To use: type your spoiler text in our tool, copy the ROT13 output, and post it. Add a note saying "ROT13:" before the encoded text so readers know what encoding to apply. To decode a ROT13 spoiler you encounter: paste it into our tool and read the output.`,
+    answer: `ROT13 has a long history on Reddit, Usenet, and online forums as a spoiler encoding convention. When you want to share information that others might not want to see unexpectedly (movie plot points, book endings, puzzle solutions, game secrets), you encode it in ROT13. Readers who want to see the spoiler decode it; those who do not want to see it scroll past. The convention works because ROT13 is widely known in internet culture — anyone curious enough to decode a spoiler knows how. On Reddit, the native spoiler tag (>!text!<) is now preferred, but ROT13 is still used in many communities, particularly on older-style forums, Usenet groups, and communities with a culture of ROT13 spoilers. To use: type your spoiler text in our ROT13 encoder, copy the ROT13 output, and post it. Add a note saying "ROT13:" before the encoded text so readers know what encoding to apply. To decode a ROT13 spoiler you encounter: paste it into our ROT13 encoder and read the output.`,
   },
   {
     category: 'History',
@@ -68,7 +68,7 @@ const faqs: FaqItem[] = [
   {
     category: 'Use Cases',
     question: 'Is ROT13 used in cybersecurity CTF challenges?',
-    answer: `Yes, ROT13 is a very common encoding in beginner-level CTF (Capture the Flag) challenges. CTF competitions present participants with encoded or encrypted data and ask them to recover the original plaintext (the "flag"). ROT13 appears as: a direct encoding where the flag is ROT13 encoded and must be decoded, a first step in a multi-stage challenge (decode ROT13 to get another encoded string, then decode that), a hint or clue encoded in ROT13 rather than the flag itself, and an obfuscation layer in challenge source code. Recognizing ROT13 output is a skill: the encoding maintains the letter frequency of English but shifts all letters, and experienced CTF players can often spot it visually (common words like "gur" for "the", "n" for "a", "vf" for "is"). For CTF participants: when you see text that looks like garbled English with preserved word structure, try ROT13 first — it is one of the most commonly used encodings in beginner challenges. Our tool handles ROT13 and ROT47 decoding instantly. CyberChef (the Swiss Army knife for CTF encoding tasks) also has ROT13 in its extensive recipe library.`,
+    answer: `Yes, ROT13 is a very common encoding in beginner-level CTF (Capture the Flag) challenges. CTF competitions present participants with encoded or encrypted data and ask them to recover the original plaintext (the "flag"). ROT13 appears as: a direct encoding where the flag is ROT13 encoded and must be decoded, a first step in a multi-stage challenge (decode ROT13 to get another encoded string, then decode that), a hint or clue encoded in ROT13 rather than the flag itself, and an obfuscation layer in challenge source code. Recognizing ROT13 output is a skill: the encoding maintains the letter frequency of English but shifts all letters, and experienced CTF players can often spot it visually (common words like "gur" for "the", "n" for "a", "vf" for "is"). For CTF participants: when you see text that looks like garbled English with preserved word structure, try ROT13 first — it is one of the most commonly used encodings in beginner challenges. Our ROT13 encoder handles ROT13 and ROT47 decoding instantly. CyberChef (the Swiss Army knife for CTF encoding tasks) also has ROT13 in its extensive recipe library.`,
   },
   {
     category: 'Educational',
@@ -147,17 +147,17 @@ const writeUp = (
       Our free online ROT13 encoder handles both ROT13 and the extended ROT47 (which covers all printable ASCII characters, not just letters). Type or paste any text and the encoded version appears instantly. The Swap button lets you use the output as new input for chaining or decoding. ROT13 is not security — it is a light obfuscation convention widely used in internet communities for hiding spoilers, puzzle solutions, and opt-in content.
     </p>
 
-    <h2>ROT13 History: From Usenet to Modern Communities</h2>
+    <h2>ROT13 Encoder History: From Usenet to Modern Communities</h2>
     <p>
-      ROT13 emerged in the early 1980s on Usenet — the distributed discussion network that was the internet's primary social platform before the web. Usenet groups covered every topic from technical discussions to entertainment, and participants needed a simple way to mark content that some readers would want to avoid: plot spoilers, puzzle solutions, crude jokes, or information that could ruin surprises. ROT13 became the standard convention.
+      The modern ROT13 encoder is a direct descendant of a convention that emerged in the early 1980s on Usenet — the distributed discussion network that was the internet's primary social platform before the web. Usenet groups covered every topic from technical discussions to entertainment, and participants needed a simple way to mark content that some readers would want to avoid: plot spoilers, puzzle solutions, crude jokes, or information that could ruin surprises. ROT13 became the standard convention.
     </p>
     <p>
       The choice of 13 as the shift value was no accident. A shift of 13 in a 26-character alphabet makes encoding and decoding the same operation — you only needed one implementation, one command, one mental algorithm. On text-based Usenet systems, this was practically convenient. The convention spread, became cultural, and persists today on Reddit, Discord, and forums that carry the internet cultural traditions of the Usenet era.
     </p>
 
-    <h2>ROT13 vs ROT47: When to Use Each</h2>
+    <h2>ROT13 Encoder vs ROT47: When to Use Each</h2>
     <p>
-      ROT13 transforms only letters (A–Z and a–z), leaving digits, spaces, and punctuation unchanged. This means a ROT13-encoded message like "Gur sbyybj-hc vf ng 9:30 PM, ebbz 101" still reveals that it contains a time (9:30 PM) and a room number (101) to a reader who does not decode it. Only the letters are hidden. ROT47 extends the transformation to all 94 printable ASCII characters (!, ", #... through ~), including digits and punctuation. The same message in ROT47 would hide the time and room number too.
+      A ROT13 encoder transforms only letters (A–Z and a–z), leaving digits, spaces, and punctuation unchanged. This means a ROT13-encoded message like "Gur sbyybj-hc vf ng 9:30 PM, ebbz 101" still reveals that it contains a time (9:30 PM) and a room number (101) to a reader who does not decode it. Only the letters are hidden. ROT47 extends the transformation to all 94 printable ASCII characters (!, ", #... through ~), including digits and punctuation. The same message in ROT47 would hide the time and room number too.
     </p>
     <p>
       For pure text spoilers where only the words matter, ROT13 is sufficient and more recognizable. For content where numeric or symbolic information should also be obfuscated, ROT47 is more thorough. Note that space (ASCII 32) is outside ROT47's range and is preserved unchanged — word boundaries remain visible in ROT47 output even when the letters and digits are scrambled.
@@ -165,13 +165,13 @@ const writeUp = (
 
     <h2>The Mathematics of Self-Inverse Ciphers</h2>
     <p>
-      The self-inverse property of ROT13 comes from modular arithmetic. The English alphabet has 26 letters, indexed 0–25. ROT13 adds 13 to each index modulo 26. Applying ROT13 twice adds 13 twice: (index + 13 + 13) mod 26 = (index + 26) mod 26 = index mod 26 = index. The number 26 mod 26 = 0, so adding 26 is the same as adding nothing — the original index is recovered.
+      The self-inverse property that makes a ROT13 encoder so elegant comes from modular arithmetic. The English alphabet has 26 letters, indexed 0–25. ROT13 adds 13 to each index modulo 26. Applying ROT13 twice adds 13 twice: (index + 13 + 13) mod 26 = (index + 26) mod 26 = index mod 26 = index. The number 26 mod 26 = 0, so adding 26 is the same as adding nothing — the original index is recovered.
     </p>
     <p>
-      ROT47 works by the same logic with a 94-character range and shift of 47. Since 47 × 2 = 94 and 94 mod 94 = 0, applying ROT47 twice returns to the original. The only general shift values with this property are 0 (trivial — no change) and half the range size. ROT13 (half of 26) and ROT47 (half of 94) are special because of this arithmetic. A Caesar cipher with any other shift requires different operations for encoding and decoding.
+      A ROT47 encoder works by the same logic as a ROT13 encoder, but with a 94-character range and shift of 47. Since 47 × 2 = 94 and 94 mod 94 = 0, applying ROT47 twice returns to the original. The only general shift values with this property are 0 (trivial — no change) and half the range size. ROT13 (half of 26) and ROT47 (half of 94) are special because of this arithmetic. A Caesar cipher with any other shift requires different operations for encoding and decoding.
     </p>
 
-    <h2>ROT13 in Cybersecurity and CTF Challenges</h2>
+    <h2>ROT13 Encoder Use in Cybersecurity and CTF Challenges</h2>
     <p>
       ROT13 is a classic beginner challenge type in CTF (Capture the Flag) competitions. Participants receive encoded text and must identify and reverse the encoding to find the flag. ROT13 recognition comes with experience — the letter frequency and word structure of English are preserved (only shifted), so experienced players often recognize ROT13 output on sight. Common tells: the word "gur" (= "the"), single-letter words "n" (= "a") or "V" (= "I").
     </p>
@@ -179,7 +179,7 @@ const writeUp = (
       For CTF beginners: when you see scrambled text that looks like it might be English with all letters systematically replaced, try ROT13 first before more complex analysis. After ROT13, try base64 decoding, then hex decoding, then more exotic encodings. ROT13 appears in beginner CTF categories like "cryptography easy" and "miscellaneous" — it is a gateway challenge to more complex substitution and transposition ciphers.
     </p>
 
-    <h2>Implementing ROT13 in Code</h2>
+    <h2>Implementing a ROT13 Encoder in Code</h2>
     <p>
       ROT13 is a standard programming exercise that appears in coding courses and interview preparation. The algorithm: for each character, check if it is a letter. If it is in the first half (A–M or a–m), add 13 to shift it forward. If in the second half (N–Z or n–z), subtract 13 (equivalently, add 13 and take mod 26). Non-letters pass through unchanged.
     </p>
@@ -222,7 +222,7 @@ const writeUp = (
       4chan and imageboards have a long history of ROT13 for hiding offensive or shocking content behind a decode step. The extra friction — needing to copy text and run it through a decoder — ensures only actively interested readers see the content, creating a form of opt-in that the platforms otherwise do not support.
     </p>
 
-    <h2>Implementing ROT13 in Popular Programming Languages</h2>
+    <h2>Implementing a ROT13 Encoder in Popular Programming Languages</h2>
     <p>
       ROT13 is a standard implementation exercise that appears in beginner and intermediate programming curricula. Each language has idiomatic approaches, and comparing them illustrates the language's string-handling philosophy.
     </p>
@@ -259,7 +259,7 @@ const writeUp = (
       ROT13's unique position: it is the only text transformation that is simultaneously obvious to technical readers (clearly encoded), reversible with a single shared tool, tradition-sanctioned by internet culture, and carries no negative connotations. It is the socially acceptable face of text obfuscation — used by convention, not deception.
     </p>
 
-    <h2>Using ROT13 for Educational Cryptography Demonstrations</h2>
+    <h2>Using a ROT13 Encoder for Educational Cryptography Demonstrations</h2>
     <p>
       ROT13 is an ideal teaching tool for introducing cryptography concepts to beginners because its simplicity makes abstract concepts tangible. Starting with ROT13 and building toward modern cryptography creates a natural learning progression.
     </p>
@@ -279,7 +279,7 @@ const writeUp = (
       Our ROT13 tool is suitable for classroom demonstrations: students paste text, see the output, recognize the scrambled pattern, and paste the output back to verify the self-inverse property. This hands-on experience makes cryptographic fundamentals memorable and intuitive.
     </p>
 
-    <h2>ROT13 Encoding in File Formats and Data Systems</h2>
+    <h2>ROT13 Encoder Use in File Formats and Data Systems</h2>
     <p>
       Beyond text and online communication, ROT13 has appeared in specific technical contexts as a light obfuscation layer within file formats and data systems.
     </p>
@@ -293,7 +293,7 @@ const writeUp = (
       Test data and fixtures: developers sometimes ROT13-encode personal or sensitive-looking data in test fixtures and seed files to prevent dummy data from looking like real data in version-controlled repositories. A seed file might contain ROT13-encoded fake email addresses ("grfg@rknzcyr.pbz" for "test@example.com") to make it clear the values are obfuscated and should not be used as real emails.
     </p>
     <p>
-      Database stored procedures: a few legacy database systems have ROT13 implemented as a stored function for use in generating obfuscated output in reports — obscuring sensitive column values in read-only reports accessible to staff who should not see raw sensitive data but need to see that data exists. Our encoder and decoder handles any text you need to work with in these contexts.
+      Database stored procedures: a few legacy database systems have ROT13 implemented as a stored function for use in generating obfuscated output in reports — obscuring sensitive column values in read-only reports accessible to staff who should not see raw sensitive data but need to see that data exists. Our ROT13 encoder and decoder handles any text you need to work with in these contexts.
     </p>
 
     <h2>ROT13 Frequency Analysis: Why It Fails Against Cryptanalysis</h2>
@@ -313,9 +313,9 @@ const writeUp = (
       What modern ciphers do differently: AES uses multiple rounds of substitution, permutation, and mixing operations specifically designed to destroy statistical patterns in the plaintext. After AES encryption, ciphertext characters appear with equal frequency regardless of the plaintext's language or patterns — a property called "confusion and diffusion" (Claude Shannon's terms). ROT13 has confusion (substitution) but zero diffusion — patterns in the plaintext are fully preserved in the ciphertext.
     </p>
 
-    <h2>ROT13 and Content Moderation: Practical Social Media Uses</h2>
+    <h2>ROT13 Encoder Use for Content Moderation: Practical Social Media Cases</h2>
     <p>
-      Content moderation on social platforms and community forums has adopted ROT13 and similar techniques to allow communities to discuss sensitive, controversial, or disturbing content while respecting members who wish to avoid exposure. Understanding these use cases helps community managers and content creators use our tool effectively.
+      Content moderation on social platforms and community forums has adopted ROT13 and similar techniques to allow communities to discuss sensitive, controversial, or disturbing content while respecting members who wish to avoid exposure. Understanding these use cases helps community managers and content creators use our ROT13 encoder effectively.
     </p>
     <p>
       Spoiler management in entertainment communities: r/gameofthrones during its original run, film subreddits during opening weekends, and book club forums regularly used ROT13 for plot discussions. The convention: post your discussion point, then encode the specific spoiler detail in ROT13. Readers who want to engage with the spoiler copy-decode it; others skip the ROT13 block. This allowed vibrant discussion threads without forcing all readers to encounter unwanted spoilers.
@@ -324,13 +324,13 @@ const writeUp = (
       Trigger warning content: communities discussing trauma, mental health, abuse, or disturbing historical events sometimes use ROT13 to hide the most graphic descriptions while allowing the discussion to proceed. The ROT13 encoding acts as an explicit trigger warning — readers must actively choose to decode, signaling awareness of the content type.
     </p>
     <p>
-      Puzzle and alternate reality game (ARG) communities: ARG designers frequently embed ROT13 clues in forums, websites, and social media posts as puzzle elements. The ROT13 text is left visible, and players who recognize the pattern decode it as part of the game. Reddit's /r/SolveCult, /r/oddities, and various ARG subreddits frequently discuss ROT13 as a puzzle layer. Our encoder/decoder is the standard tool for checking potential ROT13 clues in these communities.
+      Puzzle and alternate reality game (ARG) communities: ARG designers frequently embed ROT13 clues in forums, websites, and social media posts as puzzle elements. The ROT13 text is left visible, and players who recognize the pattern decode it as part of the game. Reddit's /r/SolveCult, /r/oddities, and various ARG subreddits frequently discuss ROT13 as a puzzle layer. Our ROT13 encoder/decoder is the standard tool for checking potential ROT13 clues in these communities.
     </p>
     <p>
       Discord and Slack communities: many Discord servers use ROT13 bots (simple bots that respond to !rot13 text commands) to enable community members to encode and decode text within chat. Slack does not have a built-in ROT13 command, so Slack community managers point members to web tools like ours for occasional spoiler encoding. The friction of using an external tool versus a bot command slightly reduces ROT13 usage in Slack communities versus Discord.
     </p>
 
-    <h2>Optimizing Your ROT13 Workflow for Repeated Use</h2>
+    <h2>Optimizing Your ROT13 Encoder Workflow for Repeated Use</h2>
     <p>
       For users who encode and decode ROT13 frequently — community moderators, ARG players, developers testing obfuscation code — an optimized workflow saves significant time compared to repeated copy-paste to a web tool.
     </p>
@@ -372,19 +372,19 @@ const writeUp = (
       Our ROT13 tool handles the encoding and decoding automatically, but understanding the nuances of the encoding ensures you get accurate results for edge cases and unusual inputs.
     </p>
     <p>
-      Character handling: our tool applies ROT13 to English alphabet characters (A-Z, a-z) only. All other characters — numbers, spaces, punctuation, emoji, accented characters, CJK characters — pass through unchanged. This is the standard ROT13 behavior as defined by convention. If you want to encode numbers, switch to ROT47 (available via the command line: tr '!-~' 'P-~!-O').
+      Character handling: our ROT13 encoder applies ROT13 to English alphabet characters (A-Z, a-z) only. All other characters — numbers, spaces, punctuation, emoji, accented characters, CJK characters — pass through unchanged. This is the standard ROT13 behavior as defined by convention. If you want to encode numbers, switch to ROT47 (available via the command line: tr '!-~' 'P-~!-O').
     </p>
     <p>
       Newline and whitespace preservation: line breaks, tabs, and multiple spaces in your input are preserved exactly in the output. This is important for encoding multi-paragraph text — each paragraph's structure is maintained. If you are encoding a poem or a numbered list, the line structure survives intact.
     </p>
     <p>
-      Large text encoding: there is no practical size limit on text you can encode or decode with our tool. The encoding operates character by character in linear time, so very long texts (thousands of words) encode in milliseconds. For extremely large inputs (hundreds of thousands of characters), the paste and render steps may take a second, but the encoding itself is instant.
+      Large text encoding: there is no practical size limit on text you can encode or decode with our ROT13 encoder. The encoding operates character by character in linear time, so very long texts (thousands of words) encode in milliseconds. For extremely large inputs (hundreds of thousands of characters), the paste and render steps may take a second, but the encoding itself is instant.
     </p>
     <p>
       Verification: because ROT13 is self-inverse, the simplest way to verify correct encoding is to encode the output again — if you get back the original text, the encoding was correct. Paste your ROT13 output back into the input field, encode again, and compare with your original text. Any discrepancy indicates a problem with the input (perhaps a copy-paste that truncated text, or a character encoding issue in the pasted text).
     </p>
 
-    <h2>ROT13 vs Base64 vs URL Encoding: Choosing the Right Text Transformation</h2>
+    <h2>ROT13 Encoder vs Base64 vs URL Encoding: Choosing the Right Transformation</h2>
     <p>
       ROT13, base64, and URL encoding (percent-encoding) are all text transformations used to represent text in a different form. Each serves a different purpose, and choosing incorrectly creates compatibility problems or unnecessary complexity.
     </p>
@@ -398,7 +398,7 @@ const writeUp = (
       URL encoding (percent-encoding): encodes special characters in URLs so they can be safely included in HTTP requests. Spaces become %20, ampersands become %26, equals signs become %3D. Best for: encoding query string parameters, encoding file names in URLs, form submission data. Use when: you are constructing URLs or HTTP requests and need to include arbitrary text in a URL component. Not for: general text obfuscation or binary data transport.
     </p>
     <p>
-      Summary decision guide: for human text that needs opt-in viewing in an online community — ROT13. For binary or arbitrary data that needs to travel through text-only systems — base64. For text that needs to be safely embedded in a URL — URL encoding. Our tool handles ROT13; use our base64 encoder for base64 needs and our URL encoder for percent-encoding.
+      Summary decision guide: for human text that needs opt-in viewing in an online community — ROT13. For binary or arbitrary data that needs to travel through text-only systems — base64. For text that needs to be safely embedded in a URL — URL encoding. Our ROT13 encoder handles ROT13; use our base64 encoder for base64 needs and our URL encoder for percent-encoding.
     </p>
 
     <h2>Quick Reference: ROT13 Alphabet Substitution Table</h2>

@@ -23,7 +23,7 @@ const faqs: FaqItem[] = [
   {
     category: 'Basics',
     question: 'What is an ASCII converter and what does it do?',
-    answer: `An ASCII converter is a tool that translates between human-readable text and ASCII (American Standard Code for Information Interchange) numeric codes. Every character in the ASCII standard — letters, digits, punctuation, and control characters — has a unique numeric code from 0 to 127. Our tool converts in both directions: Text to ASCII (each character becomes its numeric code in decimal, hexadecimal, binary, or octal format) and ASCII to Text (a sequence of numeric codes becomes readable characters). This is useful for programming tasks, data encoding, debugging character encoding issues, educational study of how computers store text, and creating obfuscated text representations. For example, the letter "A" is ASCII code 65 in decimal, 41 in hexadecimal, 01000001 in binary, and 101 in octal. Enter any text to instantly see all its ASCII codes.`,
+    answer: `An ASCII converter is a tool that translates between human-readable text and ASCII (American Standard Code for Information Interchange) numeric codes. Every character in the ASCII standard — letters, digits, punctuation, and control characters — has a unique numeric code from 0 to 127. Our ASCII converter converts in both directions: Text to ASCII (each character becomes its numeric code in decimal, hexadecimal, binary, or octal format) and ASCII to Text (a sequence of numeric codes becomes readable characters). This is useful for programming tasks, data encoding, debugging character encoding issues, educational study of how computers store text, and creating obfuscated text representations. For example, the letter "A" is ASCII code 65 in decimal, 41 in hexadecimal, 01000001 in binary, and 101 in octal. Enter any text to instantly see all its ASCII codes.`,
   },
   {
     category: 'Basics',
@@ -38,17 +38,17 @@ const faqs: FaqItem[] = [
   {
     category: 'Usage',
     question: 'How do I convert text to ASCII codes?',
-    answer: `To convert text to ASCII codes using our tool: select the "Text ? ASCII" tab, type or paste your text into the input area, and select your desired output format (decimal, hexadecimal, binary, or octal) and separator (space, comma, or newline). The conversion appears instantly as you type. For example, entering "Hello" with decimal format and space separator gives "72 101 108 108 111." With hex format: "48 65 6C 6C 6F." With binary format: "01001000 01100101 01101100 01101100 01101111." Each number corresponds to one character's ASCII code. The output can be copied to your clipboard with the Copy button. This is useful for programming exercises, encoding text data, creating hex dumps, binary representations for educational purposes, or any task that requires knowing the numeric values of characters.`,
+    answer: `To convert text to ASCII codes using our ASCII converter: select the "Text ? ASCII" tab, type or paste your text into the input area, and select your desired output format (decimal, hexadecimal, binary, or octal) and separator (space, comma, or newline). The conversion appears instantly as you type. For example, entering "Hello" with decimal format and space separator gives "72 101 108 108 111." With hex format: "48 65 6C 6C 6F." With binary format: "01001000 01100101 01101100 01101100 01101111." Each number corresponds to one character's ASCII code. The output can be copied to your clipboard with the Copy button. This is useful for programming exercises, encoding text data, creating hex dumps, binary representations for educational purposes, or any task that requires knowing the numeric values of characters.`,
   },
   {
     category: 'Usage',
     question: 'How do I convert ASCII codes back to text?',
-    answer: `To convert ASCII codes back to readable text: select the "ASCII ? Text" tab, enter your ASCII codes (as decimal, hex, binary, or octal numbers) separated by spaces, commas, or newlines, and the tool decodes them to text instantly. The tool automatically detects the number base: decimal (default), hexadecimal (values prefixed with 0x or containing A-F), binary (8-bit groups of 0s and 1s), or octal. For example: entering "72 101 108 108 111" decodes to "Hello." Entering "48 65 6C 6C 6F" (hex) also decodes to "Hello." Entering "01001000 01100101 01101100 01101100 01101111" (binary) also gives "Hello." This is useful for decoding encoded text data, CTF (Capture the Flag) challenges, debugging network packets or binary files, and understanding what a sequence of numeric codes represents.`,
+    answer: `To convert ASCII codes back to readable text: select the "ASCII ? Text" tab, enter your ASCII codes (as decimal, hex, binary, or octal numbers) separated by spaces, commas, or newlines, and the ASCII converter decodes them to text instantly. The tool automatically detects the number base: decimal (default), hexadecimal (values prefixed with 0x or containing A-F), binary (8-bit groups of 0s and 1s), or octal. For example: entering "72 101 108 108 111" decodes to "Hello." Entering "48 65 6C 6C 6F" (hex) also decodes to "Hello." Entering "01001000 01100101 01101100 01101100 01101111" (binary) also gives "Hello." This is useful for decoding encoded text data, CTF (Capture the Flag) challenges, debugging network packets or binary files, and understanding what a sequence of numeric codes represents.`,
   },
   {
     category: 'Usage',
     question: 'How do I convert a letter or number to its ASCII code value?',
-    answer: `To find the ASCII code of any single character, simply type that character into the Text to ASCII tab of our converter. For quick reference: uppercase A–Z have ASCII codes 65–90. Lowercase a–z have codes 97–122. Digits 0–9 have codes 48–57. Space is code 32. Common punctuation: exclamation mark (!) is 33, double quote is 34, hash (#) is 35, ampersand (&) is 38, at sign (@) is 64, open bracket ([) is 91, backslash is 92, caret (^) is 94, underscore (_) is 95, backtick is 96. The difference between uppercase and lowercase ASCII values is always 32 — adding 32 to an uppercase letter converts to lowercase; subtracting 32 converts lowercase to uppercase. This is why bitwise OR with 0x20 converts to lowercase and AND with 0xDF converts to uppercase in low-level programming. The 32-unit offset also corresponds to the space character (32), making case conversion elegant in binary arithmetic.`,
+    answer: `To find the ASCII code of any single character, simply type that character into the Text to ASCII tab of our ASCII converter. For quick reference: uppercase A–Z have ASCII codes 65–90. Lowercase a–z have codes 97–122. Digits 0–9 have codes 48–57. Space is code 32. Common punctuation: exclamation mark (!) is 33, double quote is 34, hash (#) is 35, ampersand (&) is 38, at sign (@) is 64, open bracket ([) is 91, backslash is 92, caret (^) is 94, underscore (_) is 95, backtick is 96. The difference between uppercase and lowercase ASCII values is always 32 — adding 32 to an uppercase letter converts to lowercase; subtracting 32 converts lowercase to uppercase. This is why bitwise OR with 0x20 converts to lowercase and AND with 0xDF converts to uppercase in low-level programming. The 32-unit offset also corresponds to the space character (32), making case conversion elegant in binary arithmetic.`,
   },
   {
     category: 'Technical',
@@ -58,7 +58,7 @@ const faqs: FaqItem[] = [
   {
     category: 'Technical',
     question: 'What is Extended ASCII and how does it differ from standard ASCII?',
-    answer: `Standard ASCII uses 7 bits and covers 128 characters (codes 0–127). Extended ASCII uses 8 bits and covers 256 characters (0–255), where codes 128–255 are used for additional characters beyond the original ASCII set. The problem: there is no single "Extended ASCII" standard — different systems use different character mappings for the upper 128 codes. Common extended ASCII encodings include: ISO 8859-1 (Latin-1), which adds accented Western European characters (é, ñ, ü, etc.); Windows-1252 (a superset of Latin-1 with additional characters); CP437, the original IBM PC character set with box-drawing characters and special symbols. When someone says "ASCII code" for a character above 127, they usually mean one of these extended encodings. Our tool handles the standard 128-character ASCII table and notes that codes above 127 require specifying the encoding. Modern systems prefer Unicode/UTF-8, which provides a single universal standard for all characters.`,
+    answer: `Standard ASCII uses 7 bits and covers 128 characters (codes 0–127). Extended ASCII uses 8 bits and covers 256 characters (0–255), where codes 128–255 are used for additional characters beyond the original ASCII set. The problem: there is no single "Extended ASCII" standard — different systems use different character mappings for the upper 128 codes. Common extended ASCII encodings include: ISO 8859-1 (Latin-1), which adds accented Western European characters (é, ñ, ü, etc.); Windows-1252 (a superset of Latin-1 with additional characters); CP437, the original IBM PC character set with box-drawing characters and special symbols. When someone says "ASCII code" for a character above 127, they usually mean one of these extended encodings. Our ASCII converter handles the standard 128-character ASCII table and notes that codes above 127 require specifying the encoding. Modern systems prefer Unicode/UTF-8, which provides a single universal standard for all characters.`,
   },
   {
     category: 'Technical',
@@ -68,22 +68,22 @@ const faqs: FaqItem[] = [
   {
     category: 'Technical',
     question: 'What is the difference between decimal, hexadecimal, and binary ASCII representations?',
-    answer: `All three are different ways to write the same number — the ASCII code value — in different number bases. Decimal (base 10) is the familiar everyday number system using digits 0–9. The letter "A" is 65 in decimal. Hexadecimal (base 16) uses digits 0–9 and letters A–F. It is compact (two hex digits represent one byte, since 16² = 256 covers the full byte range) and widely used in programming, memory dumps, and color codes. "A" is 41 in hex (4 × 16 + 1 = 65). Binary (base 2) uses only 0s and 1s, directly representing the bit pattern stored in computer memory. "A" is 01000001 in binary (0 × 128 + 1 × 64 + 0 × 32 + 0 × 16 + 0 × 8 + 0 × 4 + 0 × 2 + 1 × 1 = 65). Octal (base 8) uses digits 0–7 and was historically used in older computing systems; "A" is 101 in octal. Hex and binary are most commonly needed for programming tasks; our tool converts to all four formats simultaneously.`,
+    answer: `All three are different ways to write the same number — the ASCII code value — in different number bases. Decimal (base 10) is the familiar everyday number system using digits 0–9. The letter "A" is 65 in decimal. Hexadecimal (base 16) uses digits 0–9 and letters A–F. It is compact (two hex digits represent one byte, since 16² = 256 covers the full byte range) and widely used in programming, memory dumps, and color codes. "A" is 41 in hex (4 × 16 + 1 = 65). Binary (base 2) uses only 0s and 1s, directly representing the bit pattern stored in computer memory. "A" is 01000001 in binary (0 × 128 + 1 × 64 + 0 × 32 + 0 × 16 + 0 × 8 + 0 × 4 + 0 × 2 + 1 × 1 = 65). Octal (base 8) uses digits 0–7 and was historically used in older computing systems; "A" is 101 in octal. Hex and binary are most commonly needed for programming tasks; our ASCII converter converts to all four formats simultaneously.`,
   },
   {
     category: 'Use Cases',
     question: 'When would a programmer need to use an ASCII converter?',
-    answer: `Programmers encounter ASCII conversion needs frequently. Debugging encoding issues: when a string displays incorrectly, checking the ASCII codes of each character identifies invisible or unexpected characters (like a zero-width space, non-breaking space, or a stray carriage return). Understanding escape sequences: converting characters like tab (\t, ASCII 9), newline (\n, ASCII 10), and null (\0, ASCII 0) helps when working with C strings or binary protocols. Bitwise operations: case conversion (XOR with 32 toggles case), character validation (is it a digit? 48 = code = 57), and character arithmetic (letters A–Z map to 0–25 by subtracting 65) all rely on knowing ASCII values. Network protocol development: many protocols (HTTP headers, SMTP, DNS) are ASCII-based. Creating test data: generating specific byte sequences for testing parsers or encoding schemes. CTF challenges: many beginner CTF problems involve decoding ASCII or shifting character codes. Our converter handles all these use cases instantly.`,
+    answer: `Programmers encounter ASCII conversion needs frequently. Debugging encoding issues: when a string displays incorrectly, checking the ASCII codes of each character identifies invisible or unexpected characters (like a zero-width space, non-breaking space, or a stray carriage return). Understanding escape sequences: converting characters like tab (\t, ASCII 9), newline (\n, ASCII 10), and null (\0, ASCII 0) helps when working with C strings or binary protocols. Bitwise operations: case conversion (XOR with 32 toggles case), character validation (is it a digit? 48 = code = 57), and character arithmetic (letters A–Z map to 0–25 by subtracting 65) all rely on knowing ASCII values. Network protocol development: many protocols (HTTP headers, SMTP, DNS) are ASCII-based. Creating test data: generating specific byte sequences for testing parsers or encoding schemes. CTF challenges: many beginner CTF problems involve decoding ASCII or shifting character codes. Our ASCII converter handles all these use cases instantly.`,
   },
   {
     category: 'Use Cases',
     question: 'How is ASCII used in cybersecurity and CTF challenges?',
-    answer: `ASCII encoding and decoding appear constantly in cybersecurity work and CTF (Capture the Flag) competitions. CTF challenges frequently encode messages as ASCII decimal sequences ("72 101 108 108 111" ? "Hello"), hexadecimal dumps (seen in memory forensics and binary analysis), or binary sequences (educational challenges). Learning to quickly convert between these representations is a fundamental CTF skill. In penetration testing, understanding ASCII is essential for: SQL injection payloads (CHAR(65) in SQL = 'A', used to bypass string filters), XSS payloads (using decimal character references like &#65; = 'A' to bypass filters), buffer overflow analysis (identifying null terminators, newlines in shellcode), and analyzing network packet captures where protocol headers are ASCII-encoded. Our converter accelerates this work by handling conversions in seconds rather than manually looking up tables. Many CTF beginners start with their first ASCII decode challenge — if 72,73 decoded to "HI," you are on the right track.`,
+    answer: `ASCII encoding and decoding appear constantly in cybersecurity work and CTF (Capture the Flag) competitions. CTF challenges frequently encode messages as ASCII decimal sequences ("72 101 108 108 111" ? "Hello"), hexadecimal dumps (seen in memory forensics and binary analysis), or binary sequences (educational challenges). Learning to quickly convert between these representations is a fundamental CTF skill. In penetration testing, understanding ASCII is essential for: SQL injection payloads (CHAR(65) in SQL = 'A', used to bypass string filters), XSS payloads (using decimal character references like &#65; = 'A' to bypass filters), buffer overflow analysis (identifying null terminators, newlines in shellcode), and analyzing network packet captures where protocol headers are ASCII-encoded. Our ASCII converter accelerates this work by handling conversions in seconds rather than manually looking up tables. Many CTF beginners start with their first ASCII decode challenge — if 72,73 decoded to "HI," you are on the right track.`,
   },
   {
     category: 'Use Cases',
     question: 'How can I use the ASCII converter for learning and education?',
-    answer: `The ASCII converter is an excellent educational tool for anyone learning about how computers store and process text. At the most fundamental level, it demonstrates that computers store all text as numbers — the letter "A" is just the number 65, and the computer displays it as "A" based on a character encoding lookup table. This understanding is foundational for computer science students. For data structures and algorithms courses, ASCII values enable character arithmetic: sorting characters, converting between cases, generating hash values. For networking courses, understanding ASCII is essential for reading protocol specifications that define message formats. For security courses, understanding ASCII is prerequisite knowledge for encoding attacks. For hardware and embedded systems courses, ASCII control characters explain how UART serial communication works. Our tool lets students instantly verify their understanding — if you calculate that 'a' - 'A' = 32, you can verify it by converting both and checking the decimal values.`,
+    answer: `The ASCII converter is an excellent educational tool for anyone learning about how computers store and process text. At the most fundamental level, it demonstrates that computers store all text as numbers — the letter "A" is just the number 65, and the computer displays it as "A" based on a character encoding lookup table. This understanding is foundational for computer science students. For data structures and algorithms courses, ASCII values enable character arithmetic: sorting characters, converting between cases, generating hash values. For networking courses, understanding ASCII is essential for reading protocol specifications that define message formats. For security courses, understanding ASCII is prerequisite knowledge for encoding attacks. For hardware and embedded systems courses, ASCII control characters explain how UART serial communication works. Our ASCII converter lets students instantly verify their understanding — if you calculate that 'a' - 'A' = 32, you can verify it by converting both and checking the decimal values.`,
   },
   {
     category: 'Reference',
@@ -118,7 +118,7 @@ const faqs: FaqItem[] = [
   {
     category: 'Advanced',
     question: 'How do I convert binary data or file contents to ASCII hex dump?',
-    answer: `A hex dump shows the binary content of a file as hexadecimal ASCII codes, one byte per hex pair, grouped into rows. This is useful for inspecting binary file formats, identifying file magic numbers (JPEG files start with FF D8 FF; PNG starts with 89 50 4E 47; PDF starts with 25 50 44 46 which is %PDF in ASCII), debugging binary protocols, and analyzing unknown data. To create a hex dump on the command line: Linux/Mac: xxd filename | head. Windows: format-hex filename (PowerShell). In Python: with open('file','rb') as f: print(f.read(64).hex()). Our ASCII converter handles text-to-hex conversion for typed text. For binary file hex dumps, command-line tools are more appropriate. The reverse (reading a hex dump and converting it back) uses the ASCII ? Text tab: paste hex values and the tool decodes them character by character. This is commonly needed when copying hex output from debugging tools and wanting to see the original text.`,
+    answer: `A hex dump shows the binary content of a file as hexadecimal ASCII codes, one byte per hex pair, grouped into rows. This is useful for inspecting binary file formats, identifying file magic numbers (JPEG files start with FF D8 FF; PNG starts with 89 50 4E 47; PDF starts with 25 50 44 46 which is %PDF in ASCII), debugging binary protocols, and analyzing unknown data. To create a hex dump on the command line: Linux/Mac: xxd filename | head. Windows: format-hex filename (PowerShell). In Python: with open('file','rb') as f: print(f.read(64).hex()). Our ASCII converter handles text-to-hex conversion for typed text. For binary file hex dumps, command-line tools are more appropriate. The reverse (reading a hex dump and converting it back) uses the ASCII ? Text tab: paste hex values and the ASCII converter decodes them character by character. This is commonly needed when copying hex output from debugging tools and wanting to see the original text.`,
   },
   {
     category: 'Advanced',
@@ -147,7 +147,7 @@ const writeUp = (
       This capability is essential in programming, cybersecurity, data encoding, and computer science education. Understanding that "Hello" is "72 101 108 108 111" in ASCII decimal, or "48 65 6C 6C 6F" in hex, is not just academic — it underlies string manipulation in every programming language, URL encoding, HTML character entities, cryptography, and network protocol design.
     </p>
 
-    <h2>How to Convert Text to ASCII Codes</h2>
+    <h2>How to Use an ASCII Converter to Convert Text to ASCII Codes</h2>
     <p>
       To convert text to ASCII: select the "Text ? ASCII" tab, enter your text in the input field, choose your output format (decimal, hexadecimal, binary, or octal), choose a separator (space, comma, or newline), and the codes appear instantly. The tool updates in real time as you type, so you can see character codes appear for each keystroke.
     </p>
@@ -155,7 +155,7 @@ const writeUp = (
       Decimal format shows familiar numbers (A=65, B=66). Hexadecimal format shows two-character hex codes (A=41, B=42) — the same values you see in hex editors and color codes. Binary shows 8-bit representations (A=01000001) — the actual bit patterns stored in memory. Octal (A=101) is less common but appears in Unix file permissions and older computing contexts. All four formats represent the same underlying values in different number bases.
     </p>
 
-    <h2>How to Convert ASCII Codes to Text</h2>
+    <h2>How to Use an ASCII Converter to Convert ASCII Codes to Text</h2>
     <p>
       Decoding ASCII is equally simple: select the "ASCII ? Text" tab, enter your numeric codes separated by spaces or commas, and the text appears. The tool auto-detects the number base from the input: decimal numbers are taken at face value, hexadecimal values are identified by A-F characters or 0x prefix, binary values are recognized as 8-bit groups of 0s and 1s, and octal values fall between binary and hex in their character set.
     </p>
@@ -171,7 +171,7 @@ const writeUp = (
       The sequential layout of letters and digits is intentional. Uppercase letters form a continuous block from 65 to 90; lowercase from 97 to 122. The 32-unit gap between cases means adding or subtracting 32 converts between upper and lowercase — a fundamental trick in character manipulation. Digits 48–57 mean subtracting 48 from a digit character gives its numeric value — the basis of ASCII-to-integer parsing in every programming language.
     </p>
 
-    <h2>ASCII in Programming: Practical Applications</h2>
+    <h2>ASCII Converter Use in Programming: Practical Applications</h2>
     <p>
       Programmers use ASCII values constantly. Character validation is the most common: is this character a letter? (65–90 or 97–122). Is it a digit? (48–57). Is it printable? (32–126). These range checks are ubiquitous in input validation, parsers, and tokenizers. Character arithmetic enables elegant algorithms: convert letters to array indices by subtracting 'A' (65), enabling frequency analysis, Caesar cipher encryption, and Huffman encoding.
     </p>
@@ -179,7 +179,7 @@ const writeUp = (
       In C and C++, characters and integers are interchangeable — you can do arithmetic directly on char values. In Java and JavaScript, charCodeAt() and String.fromCharCode() convert between characters and their numeric codes. Python's ord() and chr() serve the same purpose. Understanding that these functions use ASCII/Unicode code points, not arbitrary values, makes string manipulation predictable and programmable.
     </p>
 
-    <h2>ASCII in Cybersecurity and Encoding Attacks</h2>
+    <h2>ASCII Converter Use in Cybersecurity and Encoding Attacks</h2>
     <p>
       ASCII knowledge is prerequisite for many security concepts. SQL injection payloads use ASCII codes to bypass string filters: CHAR(65) in SQL is equivalent to 'A', allowing string construction without quote characters. Cross-site scripting (XSS) uses HTML entities (&#65; = 'A') to represent characters in ways that bypass naive string filters while still rendering in browsers. URL encoding (%41 = 'A') similarly encodes characters to bypass URL-based security checks.
     </p>
@@ -216,7 +216,7 @@ const writeUp = (
       The ASCII converter serves as an excellent teaching tool for fundamental computer science concepts. It makes concrete the abstract idea that "computers store everything as numbers" — paste any text and immediately see the numbers. It demonstrates number base conversions in a meaningful context — the same value shown in decimal, hex, binary, and octal simultaneously. It reveals why string operations cost what they do — each character is one byte (for ASCII), so a string's length in characters equals its length in bytes, and operations on strings scale linearly.
     </p>
     <p>
-      For educators: use the converter to demonstrate how case-insensitive comparison works (if the codes differ by exactly 32, the characters are the same letter in different cases). Show how string sorting works (it is alphabetical because A=65, B=66, etc., so ASCII comparison is alphabetical comparison for letters). Demonstrate how simple ciphers work by shifting ASCII values. These concrete examples make abstract CS concepts tangible and memorable.
+      For educators: use the ASCII converter to demonstrate how case-insensitive comparison works (if the codes differ by exactly 32, the characters are the same letter in different cases). Show how string sorting works (it is alphabetical because A=65, B=66, etc., so ASCII comparison is alphabetical comparison for letters). Demonstrate how simple ciphers work by shifting ASCII values. These concrete examples make abstract CS concepts tangible and memorable.
     </p>
 
     <h2>ASCII in Network Protocols and Data Transmission</h2>
@@ -239,7 +239,7 @@ const writeUp = (
       <strong>Serial communication (UART)</strong>: UART (Universal Asynchronous Receiver/Transmitter) serial communication in embedded systems transmits one byte at a time. When serial terminals communicate, each keystroke sends its ASCII code as a byte. The Arduino's Serial.print() converts a string to its ASCII byte sequence before transmission. Embedded developers reading serial monitor output are reading raw ASCII byte streams displayed as characters. Understanding ASCII codes is fundamental for serial protocol debugging and custom protocol design.
     </p>
 
-    <h2>Implementing ASCII Conversion in Different Programming Languages</h2>
+    <h2>Implementing an ASCII Converter in Different Programming Languages</h2>
     <p>
       Every programming language provides built-in functions for ASCII/character code conversion. Knowing the idiom for each language streamlines development.
     </p>
@@ -259,7 +259,7 @@ const writeUp = (
       <strong>Go ASCII conversion</strong>: Go's <code>rune</code> type holds a Unicode code point. <code>rune('A')</code> is 65. String-to-rune conversion: <code>[]rune("Hello")</code> gives a slice of code points. For byte-level access: <code>[]byte("Hello")</code> gives UTF-8 bytes. The <code>fmt.Sprintf("%d", 'A')</code> prints 65; <code>fmt.Sprintf("%x", 'A')</code> prints "41". Go's for-range on strings iterates over Unicode code points (runes), while for-range with index gives byte positions — an important distinction for non-ASCII strings.
     </p>
 
-    <h2>ASCII Encoding in File Formats and Data Standards</h2>
+    <h2>ASCII Converter Use in File Formats and Data Standards</h2>
     <p>
       ASCII encoding appears throughout the file format landscape, not just in plain text files. Understanding which parts of common file formats are ASCII-encoded helps when debugging, inspecting, or manually crafting files.
     </p>
@@ -387,7 +387,7 @@ const writeUp = (
       <strong>ASCII ranges in custom character classes</strong>: regular expressions allow range notation in character classes: [A-Z] is equivalent to codes 65–90, [a-z] to 97–122, [0-9] to 48–57, [A-Fa-f0-9] is the hex digit pattern. These work because the ASCII codes for letters and digits are consecutive ranges. The pattern [!-/] matches characters with codes 33–47 (!, ", #, $, %, &amp;, ', (, ), *, +, ,, -, ., /). Understanding ASCII codes makes these range patterns precise and predictable — you can construct exactly the set of characters you want by selecting the appropriate code ranges.
     </p>
 
-    <h2>ASCII Conversion in Data Science and Text Preprocessing</h2>
+    <h2>ASCII Converter Use in Data Science and Text Preprocessing</h2>
     <p>
       Data scientists and machine learning engineers work with text data that must be preprocessed before feeding into models. ASCII knowledge informs several important preprocessing steps.
     </p>

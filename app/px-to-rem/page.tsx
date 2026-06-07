@@ -23,12 +23,12 @@ const faqs: FaqItem[] = [
   {
     category: 'Basics',
     question: 'What is px to rem conversion and why does it matter for CSS?',
-    answer: `PX to REM conversion translates pixel values (px) into REM units, which are relative to the root element's font size. 1rem equals the font size set on the HTML element — by default 16px in all major browsers. So 16px = 1rem, 32px = 2rem, 8px = 0.5rem, and 24px = 1.5rem. This conversion matters because REM units scale with the user's browser font size preference, while pixels are fixed. If a user increases their browser's base font size from 16px to 20px (for accessibility), all REM-sized elements scale proportionally — text becomes larger, spacing increases, components resize — maintaining the visual design while respecting the user's needs. Pixel sizes ignore this preference entirely. Using REMs for typography and spacing produces more accessible, flexible CSS that respects user preferences and adapts to different device contexts. Our tool provides instant PX?REM conversion with a configurable base font size.`,
+    answer: `PX to REM conversion translates pixel values (px) into REM units, which are relative to the root element's font size. 1rem equals the font size set on the HTML element — by default 16px in all major browsers. So 16px = 1rem, 32px = 2rem, 8px = 0.5rem, and 24px = 1.5rem. This conversion matters because REM units scale with the user's browser font size preference, while pixels are fixed. If a user increases their browser's base font size from 16px to 20px (for accessibility), all REM-sized elements scale proportionally — text becomes larger, spacing increases, components resize — maintaining the visual design while respecting the user's needs. Pixel sizes ignore this preference entirely. Using REMs for typography and spacing produces more accessible, flexible CSS that respects user preferences and adapts to different device contexts. Our px to rem converter provides instant PX?REM conversion with a configurable base font size.`,
   },
   {
     category: 'Basics',
     question: 'What is the formula to convert px to rem?',
-    answer: `The formula is simple: rem = px ÷ base_font_size. With the default browser base font size of 16px: 16px ÷ 16 = 1rem, 24px ÷ 16 = 1.5rem, 32px ÷ 16 = 2rem, 12px ÷ 16 = 0.75rem, 10px ÷ 16 = 0.625rem. To convert rem to px: px = rem × base_font_size. So 1.5rem × 16 = 24px, 0.875rem × 16 = 14px. If your root font size is set to something other than 16px (for example, many design systems set it to 10px to make mental math easier: 1rem = 10px, so 16px = 1.6rem), adjust the base accordingly. Our tool has a configurable base font size for this reason — if your project uses html { font-size: 62.5%; } (which sets the base to 10px), change the base to 10 and all calculations update automatically. Memorize the most common conversions: 16=1rem, 14=0.875rem, 20=1.25rem, 24=1.5rem, 32=2rem, 48=3rem, 64=4rem.`,
+    answer: `The formula is simple: rem = px ÷ base_font_size. With the default browser base font size of 16px: 16px ÷ 16 = 1rem, 24px ÷ 16 = 1.5rem, 32px ÷ 16 = 2rem, 12px ÷ 16 = 0.75rem, 10px ÷ 16 = 0.625rem. To convert rem to px: px = rem × base_font_size. So 1.5rem × 16 = 24px, 0.875rem × 16 = 14px. If your root font size is set to something other than 16px (for example, many design systems set it to 10px to make mental math easier: 1rem = 10px, so 16px = 1.6rem), adjust the base accordingly. Our px to rem converter has a configurable base font size for this reason — if your project uses html { font-size: 62.5%; } (which sets the base to 10px), change the base to 10 and all calculations update automatically. Memorize the most common conversions: 16=1rem, 14=0.875rem, 20=1.25rem, 24=1.5rem, 32=2rem, 48=3rem, 64=4rem.`,
   },
   {
     category: 'Basics',
@@ -48,7 +48,7 @@ const faqs: FaqItem[] = [
   {
     category: 'Usage',
     question: 'How do I convert my entire CSS file from px to rem?',
-    answer: `Converting an existing CSS codebase from px to rem can be done manually using our bulk converter or automated with build tools. Manual approach: collect all unique pixel values used for font sizes and spacing from your CSS, paste them into the bulk converter, and use the results to replace values in your CSS. Keep px for borders, box shadows, and 1px details. Automated approach: use PostCSS with the postcss-pxtorem plugin. Install with npm install postcss postcss-pxtorem --save-dev, then configure: require('postcss-pxtorem')({ rootValue: 16, propList: ['font-size', 'padding', 'margin', 'width', 'height'] }). This automatically converts specified CSS properties during the build process. The Sass/SCSS approach: define a function function rem($px) { @return math.div($px, 16) * 1rem; } and use rem(16px) instead of 16px throughout your Sass files. This keeps pixel values readable in source and converts to rem in output. Our converter is best for understanding what specific values equate to before deciding your conversion strategy.`,
+    answer: `Converting an existing CSS codebase from px to rem can be done manually using our bulk converter or automated with build tools. Manual approach: collect all unique pixel values used for font sizes and spacing from your CSS, paste them into the bulk converter, and use the results to replace values in your CSS. Keep px for borders, box shadows, and 1px details. Automated approach: use PostCSS with the postcss-pxtorem plugin. Install with npm install postcss postcss-pxtorem --save-dev, then configure: require('postcss-pxtorem')({ rootValue: 16, propList: ['font-size', 'padding', 'margin', 'width', 'height'] }). This automatically converts specified CSS properties during the build process. The Sass/SCSS approach: define a function function rem($px) { @return math.div($px, 16) * 1rem; } and use rem(16px) instead of 16px throughout your Sass files. This keeps pixel values readable in source and converts to rem in output. Our px to rem converter is best for understanding what specific values equate to before deciding your conversion strategy.`,
   },
   {
     category: 'Technical',
@@ -58,7 +58,7 @@ const faqs: FaqItem[] = [
   {
     category: 'Technical',
     question: 'What is the 62.5% base font size trick?',
-    answer: `The 62.5% base font size trick is a popular approach that makes rem mental math easy: setting html { font-size: 62.5%; } makes 1rem = 10px (since 62.5% of 16px = 10px). With 10px base, the math becomes trivial: 16px = 1.6rem, 24px = 2.4rem, 12px = 1.2rem, 14px = 1.4rem. Proponents argue this reduces mental calculation when writing CSS. However, there are drawbacks: (1) You must remember to reset body { font-size: 1.6rem; } (or 1.4rem, etc.) to restore readable body text, since all elements would inherit the 10px root without this reset. (2) Any third-party components or libraries that assume a 16px root will be affected. (3) Some developers find it confusing because the actual pixel-to-rem ratio differs from browsers' defaults. Our tool supports any base font size — if your project uses 62.5%, set the base to 10 and all conversions calculate correctly. Set base to 16 for default-browser-behavior projects.`,
+    answer: `The 62.5% base font size trick is a popular approach that makes rem mental math easy: setting html { font-size: 62.5%; } makes 1rem = 10px (since 62.5% of 16px = 10px). With 10px base, the math becomes trivial: 16px = 1.6rem, 24px = 2.4rem, 12px = 1.2rem, 14px = 1.4rem. Proponents argue this reduces mental calculation when writing CSS. However, there are drawbacks: (1) You must remember to reset body { font-size: 1.6rem; } (or 1.4rem, etc.) to restore readable body text, since all elements would inherit the 10px root without this reset. (2) Any third-party components or libraries that assume a 16px root will be affected. (3) Some developers find it confusing because the actual pixel-to-rem ratio differs from browsers' defaults. Our px to rem converter supports any base font size — if your project uses 62.5%, set the base to 10 and all conversions calculate correctly. Set base to 16 for default-browser-behavior projects.`,
   },
   {
     category: 'Technical',
@@ -133,7 +133,7 @@ const faqs: FaqItem[] = [
   {
     category: 'Use Cases',
     question: 'How does px to rem conversion work in Tailwind CSS and Bootstrap?',
-    answer: `Both Tailwind CSS and Bootstrap use rem natively for all their spacing, typography, and component sizing — so understanding px-to-rem conversion directly informs how you configure and extend these frameworks. Tailwind CSS: the default spacing scale uses 0.25rem increments. spacing-1 = 0.25rem (4px), spacing-2 = 0.5rem (8px), spacing-4 = 1rem (16px), spacing-8 = 2rem (32px), spacing-16 = 4rem (64px). Font sizes: text-sm = 0.875rem (14px), text-base = 1rem (16px), text-lg = 1.125rem (18px), text-xl = 1.25rem (20px), text-2xl = 1.5rem (24px), text-4xl = 2.25rem (36px). To add custom values in tailwind.config.js: extend: { spacing: { '18': '4.5rem' } } — always express in rem. Bootstrap 5: uses rem for all component sizing. The base font size is 1rem (16px). Spacers use 0.25rem increments via the $spacer CSS custom property. The grid breakpoints use em (not rem): sm: 36em, md: 48em, lg: 62em, xl: 75em, xxl: 87.5em. Bootstrap's Sass variables accept rem values: $font-size-base: 1rem, $h1-font-size: 2.5rem. Our converter helps you translate design token px values to the rem equivalents needed in Tailwind's config or Bootstrap's Sass variable overrides.`,
+    answer: `Both Tailwind CSS and Bootstrap use rem natively for all their spacing, typography, and component sizing — so understanding px-to-rem conversion directly informs how you configure and extend these frameworks. Tailwind CSS: the default spacing scale uses 0.25rem increments. spacing-1 = 0.25rem (4px), spacing-2 = 0.5rem (8px), spacing-4 = 1rem (16px), spacing-8 = 2rem (32px), spacing-16 = 4rem (64px). Font sizes: text-sm = 0.875rem (14px), text-base = 1rem (16px), text-lg = 1.125rem (18px), text-xl = 1.25rem (20px), text-2xl = 1.5rem (24px), text-4xl = 2.25rem (36px). To add custom values in tailwind.config.js: extend: { spacing: { '18': '4.5rem' } } — always express in rem. Bootstrap 5: uses rem for all component sizing. The base font size is 1rem (16px). Spacers use 0.25rem increments via the $spacer CSS custom property. The grid breakpoints use em (not rem): sm: 36em, md: 48em, lg: 62em, xl: 75em, xxl: 87.5em. Bootstrap's Sass variables accept rem values: $font-size-base: 1rem, $h1-font-size: 2.5rem. Our px to rem converter helps you translate design token px values to the rem equivalents needed in Tailwind's config or Bootstrap's Sass variable overrides.`,
   },
 ];
 
@@ -147,7 +147,7 @@ const writeUp = (
       REM (Root EM) is a CSS unit that represents multiples of the root element's font size — the font size set on the html element. By default, browsers set this to 16px. So 1rem = 16px, 1.5rem = 24px, 0.875rem = 14px. The critical advantage of rem over pixels: rem scales with the user's browser font size preference, making rem-based designs accessible and responsive to user needs.
     </p>
 
-    <h2>Why Rem Units Matter for Accessibility</h2>
+    <h2>Why a PX to REM Converter Matters for Accessibility</h2>
     <p>
       WCAG (Web Content Accessibility Guidelines) Success Criterion 1.4.4 requires that text can be resized up to 200% without loss of content or functionality. When font sizes are specified in rem, they automatically scale when users increase their browser's base font size in accessibility settings. When font sizes are specified in px, they are fixed — the user's accessibility preference is ignored.
     </p>
@@ -157,18 +157,18 @@ const writeUp = (
 
     <h2>The Math Behind PX to REM Conversion</h2>
     <p>
-      The formula is division: rem = px ÷ base_font_size. With a 16px base: 24px ÷ 16 = 1.5rem. For rem to px: px = rem × base_font_size. 1.5rem × 16 = 24px. These simple formulas make the converter trivial to implement mentally for common values once you memorize the base conversion (1rem = 16px at default base). The challenge is that design tools like Figma always work in pixels, while CSS best practices require rem — the converter bridges this workflow gap.
+      The formula is division: rem = px ÷ base_font_size. With a 16px base: 24px ÷ 16 = 1.5rem. For rem to px: px = rem × base_font_size. 1.5rem × 16 = 24px. These simple formulas make the px to rem converter trivial to implement mentally for common values once you memorize the base conversion (1rem = 16px at default base). The challenge is that design tools like Figma always work in pixels, while CSS best practices require rem — the px to rem converter bridges this workflow gap.
     </p>
     <p>
       The most common values to memorize: 8px = 0.5rem, 12px = 0.75rem, 14px = 0.875rem, 16px = 1rem, 18px = 1.125rem, 20px = 1.25rem, 24px = 1.5rem, 32px = 2rem. These cover most of a typical design's typography and spacing scale. Our reference table shows these and more, eliminating the need for mental calculation during CSS development.
     </p>
 
-    <h2>Setting Up Your Base Font Size</h2>
+    <h2>Setting Up Your Base Font Size for the PX to REM Converter</h2>
     <p>
       The base font size determines the px-to-rem conversion ratio for your specific project. Most projects use the browser's default 16px base — achieved by either not setting a font size on html, or setting html &#123; font-size: 100%; &#125;. Both approaches inherit the user's browser preference, which is 16px by default but can be changed by the user.
     </p>
     <p>
-      The popular 62.5% trick (html &#123; font-size: 62.5%; &#125;) sets the base to 10px, making conversions simpler: 16px = 1.6rem, 24px = 2.4rem. If your project uses this, set the base to 10 in our converter. The trade-off: you must set a body font size to compensate (body &#123; font-size: 1.6rem; &#125;) and third-party components may be affected by the non-standard root size.
+      The popular 62.5% trick (html &#123; font-size: 62.5%; &#125;) sets the base to 10px, making conversions simpler: 16px = 1.6rem, 24px = 2.4rem. If your project uses this, set the base to 10 in our px to rem converter. The trade-off: you must set a body font size to compensate (body &#123; font-size: 1.6rem; &#125;) and third-party components may be affected by the non-standard root size.
     </p>
 
     <h2>REM vs EM vs PX: Choosing the Right Unit</h2>
@@ -187,20 +187,20 @@ const writeUp = (
       For larger codebases, automate the migration with PostCSS and the postcss-pxtorem plugin. Configure it to convert only specified CSS properties (font-size, padding, margin) and exclude others (border, box-shadow). This produces a converted stylesheet automatically. Alternatively, add a Sass rem() function and progressively replace px values with rem() calls as you edit each component.
     </p>
 
-    <h2>REM in Design Systems and CSS Frameworks</h2>
+    <h2>PX to REM Converter Use in Design Systems and CSS Frameworks</h2>
     <p>
       All major CSS frameworks use rem as their standard unit. Tailwind CSS's default spacing scale (p-1, m-2, gap-4) uses rem values at a 16px base. Bootstrap 5 uses rem throughout its component styles. Material Design's typography scale specifies values in rem. Understanding px-to-rem conversion is essential for working with these frameworks — when you see that Tailwind's text-xl is 1.25rem, knowing that equals 20px helps you match it to design specs.
     </p>
     <p>
-      Design tokens (defined in tools like Style Dictionary) often bridge the gap: designers define values in px, token transforms convert them to rem for CSS output, and rem values are what developers implement. Our converter supports this workflow by providing the accurate rem equivalent of any design-specified pixel value.
+      Design tokens (defined in tools like Style Dictionary) often bridge the gap: designers define values in px, token transforms convert them to rem for CSS output, and rem values are what developers implement. Our px to rem converter supports this workflow by providing the accurate rem equivalent of any design-specified pixel value.
     </p>
 
-    <h2>Responsive Typography with REM</h2>
+    <h2>Responsive Typography with a PX to REM Converter</h2>
     <p>
       REM enables powerful responsive typography patterns. The simplest: adjust the root font size at breakpoints. html &#123; font-size: 14px; &#125; at mobile, 16px at tablet, 18px at desktop — all rem-defined elements scale proportionally. One root change scales everything. More sophisticated: use CSS clamp() for fluid scaling without breakpoints: html &#123; font-size: clamp(14px, 1.5vw + 10px, 18px); &#125;. This smoothly scales the root (and therefore all rem values) between viewport sizes.
     </p>
     <p>
-      CSS viewport units combined with rem unlock fluid type: font-size: clamp(1rem, 2.5vw, 1.5rem) sets a minimum of 1rem, scales with the viewport, and caps at 1.5rem. This creates typography that is readable on all screen sizes without media query breakpoints. Our converter helps you understand what minimum and maximum px values your clamp() ranges represent.
+      CSS viewport units combined with rem unlock fluid type: font-size: clamp(1rem, 2.5vw, 1.5rem) sets a minimum of 1rem, scales with the viewport, and caps at 1.5rem. This creates typography that is readable on all screen sizes without media query breakpoints. Our px to rem converter helps you understand what minimum and maximum px values your clamp() ranges represent.
     </p>
 
     <h2>Using the Bulk Converter for Design Implementation</h2>
@@ -208,7 +208,7 @@ const writeUp = (
       When implementing a design from Figma or Sketch, you typically encounter a list of pixel values for font sizes and spacing. Instead of converting each individually, use the bulk converter: list all pixel values on separate lines, set the base to match your project, and copy the complete table of rem equivalents. This takes seconds rather than minutes of manual calculation.
     </p>
     <p>
-      The reference table provided by the tool covers the most commonly used values in design (4px through 128px) at three typical base font sizes (14px, 16px, 18px), providing a permanent reference during development. Bookmark this page for quick access during CSS implementation.
+      The reference table provided by the px to rem converter covers the most commonly used values in design (4px through 128px) at three typical base font sizes (14px, 16px, 18px), providing a permanent reference during development. Bookmark this page for quick access during CSS implementation.
     </p>
 
     <h2>Why Rem Is the Gold Standard for Accessible Web Typography</h2>
@@ -219,10 +219,10 @@ const writeUp = (
       WCAG 2.1 Success Criterion 1.4.4 (Resize Text, Level AA) requires that text can be resized up to 200% without loss of content or functionality. Browser zoom achieves this for both px and rem text. But Success Criterion 1.4.12 (Text Spacing, Level AA) requires that your layout does not break when line height, letter spacing, and word spacing are changed. Rem-based layouts are more resilient to these spacing adjustments because they scale with the base font size rather than overriding it with fixed pixel values.
     </p>
     <p>
-      The practical impact of using px for font sizes: test your site by going to browser Settings ? Appearance ? Font Size and setting it to "Very Large" or "Largest." If your text does not grow, you are using px for font sizes and failing accessibility users. Replace those px values with rem — our converter makes this a straightforward calculation. This single change can meaningfully improve usability for millions of users with visual impairments, cognitive disabilities, or simply aging eyesight.
+      The practical impact of using px for font sizes: test your site by going to browser Settings ? Appearance ? Font Size and setting it to "Very Large" or "Largest." If your text does not grow, you are using px for font sizes and failing accessibility users. Replace those px values with rem — our px to rem converter makes this a straightforward calculation. This single change can meaningfully improve usability for millions of users with visual impairments, cognitive disabilities, or simply aging eyesight.
     </p>
 
-    <h2>Rem Units in CSS Custom Properties and Design Tokens</h2>
+    <h2>PX to REM Converter Use in CSS Custom Properties and Design Tokens</h2>
     <p>
       Modern design systems use CSS custom properties (CSS variables) as design tokens — centralized, reusable values for spacing, typography, and color. Expressing these tokens in rem rather than px makes the entire design system accessible-by-default and provides a single point of control for global scaling.
     </p>
@@ -275,7 +275,7 @@ const writeUp = (
       The problem with rem in media queries: in some browsers (Safari historically, some older browsers), the rem unit in media queries is calculated based on the initial font size of the document (16px) rather than the current root font size. If you use the 62.5% trick (<code>html &#123; font-size: 62.5%; &#125;</code>), rem-based media queries may not scale as expected because 1rem would still equal 16px in the media query context, not 10px. Em units in media queries consistently use the browser's default font size (16px) — they are not affected by CSS overrides to the html font-size.
     </p>
     <p>
-      Practical breakpoints in em: the most common breakpoints converted to em (assuming 16px base): 320px = 20em (small mobile), 480px = 30em (large mobile), 640px = 40em (landscape mobile), 768px = 48em (tablet), 1024px = 64em (small desktop), 1280px = 80em (desktop), 1440px = 90em (large desktop), 1920px = 120em (wide screen). Our converter calculates these for any px value — just enter your breakpoint px and read the em equivalent (same math as rem when the base is 16px).
+      Practical breakpoints in em: the most common breakpoints converted to em (assuming 16px base): 320px = 20em (small mobile), 480px = 30em (large mobile), 640px = 40em (landscape mobile), 768px = 48em (tablet), 1024px = 64em (small desktop), 1280px = 80em (desktop), 1440px = 90em (large desktop), 1920px = 120em (wide screen). Our px to rem converter calculates these for any px value — just enter your breakpoint px and read the em equivalent (same math as rem when the base is 16px).
     </p>
     <p>
       Em-based media queries also respond to user font-size preferences. If a user sets their browser font to 24px (1.5× the default), a 48em breakpoint triggers at 24px × 48 = 1152px instead of 768px. This means the layout switches to a wider-screen layout later than it would for the average user — which often works in favor of accessibility since larger text needs more horizontal space to avoid wrapping. This behavior is generally considered a feature, not a bug, for accessible design.
@@ -365,7 +365,7 @@ const writeUp = (
       Scenario 4 — Responsive icon sizing: icons that should scale with text use em (relative to parent font size) rather than rem. An icon inside a button with <code>font-size: 1.25rem</code> uses <code>width: 1em; height: 1em;</code> to match the button text size automatically. Use rem only for icons that should have an absolute size regardless of surrounding text.
     </p>
     <p>
-      Scenario 5 — Print stylesheets: for print CSS, rem units behave relative to the browser's default font size setting for printing (typically 12pt or 16px). This is usually the desired behavior for accessible print output. Our converter works for print CSS rem values using the same 16px base — 12px print body text = 0.75rem, and it will scale if the user changes their print font size setting.
+      Scenario 5 — Print stylesheets: for print CSS, rem units behave relative to the browser's default font size setting for printing (typically 12pt or 16px). This is usually the desired behavior for accessible print output. Our px to rem converter works for print CSS rem values using the same 16px base — 12px print body text = 0.75rem, and it will scale if the user changes their print font size setting.
     </p>
 
     <h2>The 62.5% Root Font Size Trick: Pros, Cons, and Modern Alternatives</h2>
@@ -382,12 +382,12 @@ const writeUp = (
       Modern alternative — CSS calc() for mental-math-friendly rem: instead of changing the root font size, use a CSS custom property for your base and calculate rem values with calc(): <code>:root &#123; --base: 16; &#125; font-size: calc(24 / var(--base) * 1rem)</code>. Or simply use our px-to-rem converter, which makes the calculation instant — eliminating the mental math problem that the 62.5% trick was solving. The converter approach preserves the full browser font-size scaling behavior without the 62.5% trick's complications.
     </p>
     <p>
-      When the 62.5% trick is still acceptable: for existing legacy codebases that already use it, migration cost outweighs the benefit. For personal projects where the only developer understands the convention. For projects that will never need to support browser font-size customization (embedded kiosks, specific enterprise tools). For all new projects starting from scratch, use 100% browser default base and our converter for instant rem calculation — it achieves the same developer convenience without the accessibility trade-offs.
+      When the 62.5% trick is still acceptable: for existing legacy codebases that already use it, migration cost outweighs the benefit. For personal projects where the only developer understands the convention. For projects that will never need to support browser font-size customization (embedded kiosks, specific enterprise tools). For all new projects starting from scratch, use 100% browser default base and our px to rem converter for instant rem calculation — it achieves the same developer convenience without the accessibility trade-offs.
     </p>
 
     <h2>Integrating PX to REM Conversion into Your Development Workflow</h2>
     <p>
-      The most efficient workflow for px-to-rem conversion depends on your tooling. For developers using Figma with a developer handoff plugin: many Figma plugins (Figma to Code, Anima) can export CSS with rem units rather than px, bypassing manual conversion entirely. Configure the plugin's base font size to match your project and copy rem values directly from the export.
+      The most efficient workflow for px-to-rem conversion depends on your px to rem convertering. For developers using Figma with a developer handoff plugin: many Figma plugins (Figma to Code, Anima) can export CSS with rem units rather than px, bypassing manual conversion entirely. Configure the plugin's base font size to match your project and copy rem values directly from the export.
     </p>
     <p>
       For developers working from design specs in PDF or image form: keep our px-to-rem converter open in a browser tab. As you read pixel values from the spec, type them in and copy the rem equivalent. The bulk input mode is ideal when you need to convert an entire spacing or font scale at once — paste all values, get all rem equivalents in one step.

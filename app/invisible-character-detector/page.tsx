@@ -50,31 +50,31 @@ Hidden characters are not inherently bad. Some are used for language support or 
   },
   {
     category: 'Technical',
-    question: 'Which invisible characters does the tool detect?',
+    question: 'Which invisible characters does the invisible character detector detect?',
     answer: `The tool detects a curated list of common invisible or spacing related Unicode characters. These include zero width space (U+200B), zero width non joiner (U+200C), zero width joiner (U+200D), word joiner (U+2060), byte order mark (U+FEFF), non breaking space (U+00A0), soft hyphen (U+00AD), narrow no break space (U+202F), thin space (U+2009), hair space (U+200A), en space (U+2002), em space (U+2003), left to right mark (U+200E), right to left mark (U+200F), and ideographic space (U+3000). Each type is counted and marked with a token so you can identify it in context.
 
-This list covers the characters most likely to appear in copied web text, documents, and AI interface outputs. It is not an exhaustive Unicode scanner, but it focuses on the characters that cause the most practical issues in everyday workflows. If your text includes rare control characters outside this list, the tool may not flag them. For most cleanup tasks, the built in set is enough to reveal the hidden formatting that causes trouble.`,
+This list covers the characters most likely to appear in copied web text, documents, and AI interface outputs. It is not an exhaustive Unicode scanner, but it focuses on the characters that cause the most practical issues in everyday workflows. If your text includes rare control characters outside this list, the invisible character detector may not flag them. For most cleanup tasks, the built in set is enough to reveal the hidden formatting that causes trouble.`,
   },
   {
     category: 'Technical',
     question: 'How does the Invisible Character Detector work internally?',
-    answer: `At a high level, the tool scans your input string for each supported invisible character. When it finds one, it replaces the character with a visible token like [ZWSP] or [NBSP] in the preview output. It also counts each occurrence and shows a report with totals by character type. The process is deterministic and runs entirely in your browser.
+    answer: `At a high level, the invisible character detector scans your input string for each supported invisible character. When it finds one, it replaces the character with a visible token like [ZWSP] or [NBSP] in the preview output. It also counts each occurrence and shows a report with totals by character type. The process is deterministic and runs entirely in your browser.
 
-The tool does not interpret meaning, and it does not alter the order of the visible text. It simply inserts markers where hidden characters exist. This makes the output easy to review and lets you pinpoint the exact location of each hidden character. Because the tool does not rely on external services, the same input always produces the same output, which is important for repeatable cleanup workflows and audits.`,
+The tool does not interpret meaning, and it does not alter the order of the visible text. It simply inserts markers where hidden characters exist. This makes the output easy to review and lets you pinpoint the exact location of each hidden character. Because the invisible character detector does not rely on external services, the same input always produces the same output, which is important for repeatable cleanup workflows and audits.`,
   },
   {
     category: 'Usage',
-    question: 'Does the tool remove hidden characters or only detect them?',
-    answer: `The Invisible Character Detector only detects and marks hidden characters. It does not remove them automatically. The output preview shows the markers so you can see where the characters appear, and the report shows how many were found. This design keeps the tool focused on diagnosis rather than deletion.
+    question: 'Does the invisible character detector remove hidden characters or only detect them?',
+    answer: `The Invisible Character Detector only detects and marks hidden characters. It does not remove them automatically. The output preview shows the markers so you can see where the characters appear, and the report shows how many were found. This design keeps the invisible character detector focused on diagnosis rather than deletion.
 
-If you want to remove the characters, you can copy the output into a separate cleanup tool that strips the markers or remove the hidden characters directly. In this tool, the original input remains unchanged. This is useful because you can inspect the text and decide which characters should be removed. Some invisible characters are intentional, such as non breaking spaces in addresses or zero width joiners in certain languages. Detection first lets you make that decision with context.`,
+If you want to remove the characters, you can copy the output into a separate cleanup tool that strips the markers or remove the hidden characters directly. In this invisible character detector, the original input remains unchanged. This is useful because you can inspect the text and decide which characters should be removed. Some invisible characters are intentional, such as non breaking spaces in addresses or zero width joiners in certain languages. Detection first lets you make that decision with context.`,
   },
   {
     category: 'ChatGPT',
-    question: 'Does the detector find ChatGPT hidden characters?',
+    question: 'Does the invisible character detector find ChatGPT hidden characters?',
     answer: `Yes. When you copy text from ChatGPT or other AI chat interfaces, the output sometimes contains hidden Unicode characters such as zero width spaces, non breaking spaces, or directional marks. These characters are not visible in the interface, but they travel with the copied text and can cause issues in downstream systems such as CMS editors, spreadsheets, or code files.
 
-The Invisible Character Detector will flag these characters just like any others. Paste the copied AI text into the tool, run the scan, and check the report. If hidden characters are present, the preview will mark them with readable tokens like [ZWSP] or [NBSP] so you can see exactly where they appear. After detection you can use a cleanup tool to remove them, producing plain text that behaves consistently regardless of where it is pasted. The detector does not interact with ChatGPT or any AI service; it simply reads the raw characters in the text you provide.`,
+The Invisible Character Detector will flag these characters just like any others. Paste the copied AI text into the invisible character detector, run the scan, and check the report. If hidden characters are present, the preview will mark them with readable tokens like [ZWSP] or [NBSP] so you can see exactly where they appear. After detection you can use a cleanup tool to remove them, producing plain text that behaves consistently regardless of where it is pasted. The detector does not interact with ChatGPT or any AI service; it simply reads the raw characters in the text you provide.`,
   },
   {
     category: 'ChatGPT',
@@ -93,7 +93,7 @@ These characters affect how text is processed without being visible to the reade
   {
     category: 'Technical',
     question: 'How do I view non-printable characters in my text?',
-    answer: `The simplest way to view non-printable characters is to paste your text into a dedicated Unicode viewer or invisible character detector like this tool. The tool replaces each non-printable character with a readable label so you can see its position in the text. The report also lists counts by character type, which gives you an overview before you decide how to clean the text.
+    answer: `The simplest way to view non-printable characters is to paste your text into a dedicated Unicode viewer or invisible character detector like this invisible character detector. The tool replaces each non-printable character with a readable label so you can see its position in the text. The report also lists counts by character type, which gives you an overview before you decide how to clean the text.
 
 For code editors, most modern editors have settings or plugins that reveal non-printing characters. Visual Studio Code has the option to render control characters. Vim uses the list mode with the listchars setting to show tabs, trailing spaces, and other non-printable markers. Notepad++ can display all characters under the View menu. For spreadsheet or database work, a dedicated online tool like this detector is often the fastest option because it does not require installing software or changing editor settings.`,
   },
@@ -134,10 +134,10 @@ They can also appear when text is converted between formats, such as from PDF to
   },
   {
     category: 'Formatting',
-    question: 'How does the tool handle line breaks and visible spaces?',
+    question: 'How does the invisible character detector handle line breaks and visible spaces?',
     answer: `The tool preserves line breaks and visible spacing exactly as provided in the input. It does not collapse spaces or modify paragraph structure. The only change is the replacement of invisible characters with visible tokens. This makes it easier to compare the input and output side by side without losing the original formatting.
 
-If your text already contains line breaks or multiple spaces, those remain intact in the preview. This is important because line breaks and spacing can interact with hidden characters. For example, a non breaking space may appear near a line break and cause unexpected wrapping. By preserving the structure, the tool lets you see the hidden characters in their true context. If you need to normalize spacing afterward, you can use a separate cleanup tool.`,
+If your text already contains line breaks or multiple spaces, those remain intact in the preview. This is important because line breaks and spacing can interact with hidden characters. For example, a non breaking space may appear near a line break and cause unexpected wrapping. By preserving the structure, the invisible character detector lets you see the hidden characters in their true context. If you need to normalize spacing afterward, you can use a separate cleanup tool.`,
   },
   {
     category: 'Usage',
@@ -148,10 +148,10 @@ The count is also useful for verification. If you expect hidden characters but s
   },
   {
     category: 'Limits',
-    question: 'Does the tool detect every possible hidden Unicode character?',
-    answer: `No. The tool targets the most common invisible and spacing related characters that cause practical issues in everyday text. Unicode includes many control and formatting characters, and not all of them are included in the detector. This is a deliberate tradeoff to keep the tool focused and easy to interpret.
+    question: 'Does the invisible character detector detect every possible hidden Unicode character?',
+    answer: `No. The tool targets the most common invisible and spacing related characters that cause practical issues in everyday text. Unicode includes many control and formatting characters, and not all of them are included in the invisible character detector. This is a deliberate tradeoff to keep the invisible character detector focused and easy to interpret.
 
-If you are working with specialized scripts, encoded data, or complex bidirectional text, there may be characters outside the list that the tool does not mark. In those cases, a specialized Unicode inspector or hex viewer may be necessary. For most workflows, the built in set is enough to surface the invisible characters that break search matches, introduce odd spacing, or appear after copy and paste. If you suspect a rare character, you can try isolating the text or using a more advanced diagnostic tool.`,
+If you are working with specialized scripts, encoded data, or complex bidirectional text, there may be characters outside the list that the invisible character detector does not mark. In those cases, a specialized Unicode inspector or hex viewer may be necessary. For most workflows, the built in set is enough to surface the invisible characters that break search matches, introduce odd spacing, or appear after copy and paste. If you suspect a rare character, you can try isolating the text or using a more advanced diagnostic tool.`,
   },
   {
     category: 'Technical',
@@ -165,26 +165,26 @@ In plain text workflows, both can cause problems. A zero width space can break s
     question: 'Can it find hidden characters inside code or URLs?',
     answer: `Yes, it can detect supported invisible characters wherever they appear, including inside code snippets or URLs. For example, a zero width space inserted into a URL can break a link even though it looks correct. The tool will mark that hidden character so you can see the problem and remove it.
 
-However, the tool does not parse code or validate URLs. It treats the input as plain text and applies the same detection rules everywhere. That means it will not interpret context or tell you whether a character is safe to remove in a given programming language. If you are cleaning code, use caution and review the output before applying changes. The detector is a diagnostic step that helps you see hidden characters but does not enforce language specific rules.`,
+However, the invisible character detector does not parse code or validate URLs. It treats the input as plain text and applies the same detection rules everywhere. That means it will not interpret context or tell you whether a character is safe to remove in a given programming language. If you are cleaning code, use caution and review the output before applying changes. The detector is a diagnostic step that helps you see hidden characters but does not enforce language specific rules.`,
   },
   {
     category: 'Technical',
     question: 'Why might the output look different between two similar inputs?',
     answer: `Two inputs can look identical but contain different Unicode characters. For example, a visible space in one line might be a normal space, while in another it could be a non breaking space. The detector will mark the hidden character in one line and not in the other. This can make the output appear different even though the visible text was the same.
 
-Hidden characters can also be introduced by different sources. Text copied from a PDF may include soft hyphens or narrow no break spaces, while text copied from a web page might include zero width spaces. Because the tool is deterministic, the differences reflect the input, not random behavior. If you are comparing outputs, make sure the inputs are truly identical at the character level. The detector helps reveal those subtle differences so you can normalize them.`,
+Hidden characters can also be introduced by different sources. Text copied from a PDF may include soft hyphens or narrow no break spaces, while text copied from a web page might include zero width spaces. Because the invisible character detector is deterministic, the differences reflect the input, not random behavior. If you are comparing outputs, make sure the inputs are truly identical at the character level. The detector helps reveal those subtle differences so you can normalize them.`,
   },
   {
     category: 'Workflow',
     question: 'What is the best way to clean text after detection?',
-    answer: `After you identify hidden characters, you can decide whether to remove or replace them. A common workflow is to use the detector first, review the markers, and then run a dedicated remover tool to strip unwanted characters. For example, you might remove zero width spaces and soft hyphens but keep non breaking spaces that preserve layout in addresses.
+    answer: `After you identify hidden characters, you can decide whether to remove or replace them. A common workflow is to use the invisible character detector first, review the markers, and then run a dedicated remover tool to strip unwanted characters. For example, you might remove zero width spaces and soft hyphens but keep non breaking spaces that preserve layout in addresses.
 
 If the hidden characters appear in a few specific places, you can also edit the text manually using the preview tokens as a guide. The key is to decide which characters are harmful in your context. The detector provides visibility, but it does not force a cleanup. In most cases, a follow up tool or manual edit is the safest approach because it lets you preserve characters that are required for language or formatting while removing those that cause issues.`,
   },
   {
     category: 'Privacy',
     question: 'How does the Invisible Character Detector handle privacy?',
-    answer: `The tool runs locally in your browser and does not send your text to external services. It does not connect to AI models or third party APIs. The input and output remain in your session, and the tool does not store text after you leave the page. This makes it suitable for everyday cleanup tasks where privacy is important.
+    answer: `The tool runs locally in your browser and does not send your text to external services. It does not connect to AI models or third party APIs. The input and output remain in your session, and the invisible character detector does not store text after you leave the page. This makes it suitable for everyday cleanup tasks where privacy is important.
 
 Even with local processing, you should follow your organization policies for confidential data. If you are handling sensitive information, consider whether a browser based tool fits your requirements. The detector is designed to be lightweight and transparent, with no hidden storage or tracking. You control what you paste, what you copy, and what you save, which keeps the workflow secure and predictable.`,
   },
@@ -193,32 +193,32 @@ Even with local processing, you should follow your organization policies for con
     question: 'Which browsers are supported, and can results differ?',
     answer: `The detector runs in modern browsers that support standard JavaScript and Unicode handling. It works in Chrome, Edge, Firefox, and Safari. Because the detection is based on explicit character matching, results are consistent across browsers for the same input. The output depends on the characters in the text, not on the browser itself.
 
-If you notice differences, they usually come from how the text was copied. For example, copying from a PDF in one browser might include different characters than copying from the same PDF in another. The detector will show whatever characters were actually captured. For consistent results, use the same source and browser when processing large batches of text. Testing a small sample first is a good way to confirm that the detector behaves as expected for your input.`,
+If you notice differences, they usually come from how the text was copied. For example, copying from a PDF in one browser might include different characters than copying from the same PDF in another. The detector will show whatever characters were actually captured. For consistent results, use the same source and browser when processing large batches of text. Testing a small sample first is a good way to confirm that the invisible character detector behaves as expected for your input.`,
   },
   {
     category: 'Professional',
     question: 'How do professionals use the Invisible Character Detector?',
-    answer: `Editors and content teams use the tool to troubleshoot formatting issues before publishing. Hidden characters can create inconsistent spacing or break search matches in a CMS. By detecting them early, teams can clean the text and avoid display problems. Developers use the tool to diagnose issues in logs, configuration snippets, or code comments where hidden characters break parsing or comparisons.
+    answer: `Editors and content teams use the invisible character detector to troubleshoot formatting issues before publishing. Hidden characters can create inconsistent spacing or break search matches in a CMS. By detecting them early, teams can clean the text and avoid display problems. Developers use the invisible character detector to diagnose issues in logs, configuration snippets, or code comments where hidden characters break parsing or comparisons.
 
-Support teams and analysts also benefit. When text is copied from customer tickets or external documents, hidden characters can disrupt templates or reporting. The detector helps identify those issues quickly. Legal and compliance teams may use it to ensure that policy text or regulated content does not contain hidden characters that could be interpreted inconsistently by different systems. Across these roles, the detector is a diagnostic step that improves reliability without altering the content itself.`,
+Support teams and analysts also benefit. When text is copied from customer tickets or external documents, hidden characters can disrupt templates or reporting. The detector helps identify those issues quickly. Legal and compliance teams may use it to ensure that policy text or regulated content does not contain hidden characters that could be interpreted inconsistently by different systems. Across these roles, the invisible character detector is a diagnostic step that improves reliability without altering the content itself.`,
   },
   {
     category: 'Academic',
-    question: 'Is the tool useful for students and researchers?',
+    question: 'Is the invisible character detector useful for students and researchers?',
     answer: `Yes. Students often copy text from web sources, PDFs, or course materials into essays or notes. Hidden characters can cause odd spacing or make text difficult to search. The detector helps identify those characters so the text can be cleaned before submission. Researchers benefit when building datasets from multiple sources, since hidden characters can create inconsistent tokens that affect analysis.
 
-The tool does not change the content, which is important for academic integrity. It only highlights hidden characters so you can decide whether to remove them. This makes it safe for preparing quotes, citations, or study notes. If you work with multilingual data or right to left scripts, the detector can also reveal directional marks that influence display. It is a useful diagnostic step in academic workflows that depend on clean, consistent text.`,
+The tool does not change the content, which is important for academic integrity. It only highlights hidden characters so you can decide whether to remove them. This makes it safe for preparing quotes, citations, or study notes. If you work with multilingual data or right to left scripts, the invisible character detector can also reveal directional marks that influence display. It is a useful diagnostic step in academic workflows that depend on clean, consistent text.`,
   },
   {
     category: 'SEO',
     question: 'Do invisible characters affect SEO or publishing quality?',
     answer: `Hidden characters do not directly affect search rankings, but they can affect publishing quality and readability. For example, a zero width space can break a keyword match in internal search or analytics. Non breaking spaces can cause unexpected layout issues in headings or metadata fields. These problems can indirectly affect user experience, which matters for engagement and trust.
 
-The detector helps you identify and remove those hidden characters before publishing. This results in cleaner copy for meta titles, descriptions, and on page content. It does not optimize content or add keywords, but it reduces formatting errors that can make text look unprofessional. For SEO workflows, the tool is best used as a quality control step after copy is finalized but before it is pushed to a CMS or site.`,
+The detector helps you identify and remove those hidden characters before publishing. This results in cleaner copy for meta titles, descriptions, and on page content. It does not optimize content or add keywords, but it reduces formatting errors that can make text look unprofessional. For SEO workflows, the invisible character detector is best used as a quality control step after copy is finalized but before it is pushed to a CMS or site.`,
   },
   {
     category: 'Accessibility',
-    question: 'How does the detector support accessibility and usability?',
+    question: 'How does the invisible character detector support accessibility and usability?',
     answer: `Hidden characters can confuse screen readers or change how text is segmented. For example, a zero width space can split a word into two tokens that are read separately. A directional mark can alter the reading order. These issues can make text harder to understand for users who rely on assistive technology. The detector helps you find these characters so you can decide whether to remove them.
 
 By cleaning hidden characters, you make text more predictable and easier to read. This supports accessibility and usability reviews because it reduces the chance of unexpected behavior in assistive tools. The detector does not change visible text, but it exposes issues that might not be obvious in a visual review. It is a useful step when preparing content for broad audiences or when testing text in screen reader environments.`,
@@ -228,7 +228,7 @@ By cleaning hidden characters, you make text more predictable and easier to read
     question: 'Can invisible characters be used for invisible names in Fortnite or other games?',
     answer: `Yes. Certain zero width and invisible Unicode characters can produce invisible or blank display names in games like Fortnite, PUBG, and others that do not properly filter all Unicode codepoints. A common character used for this purpose is the Hangul filler (U+3164) or a sequence of zero width spaces. These characters render as a blank in the game UI, creating the appearance of an invisible nickname.
 
-This tool can detect those characters in text you paste. If you have an invisible character string and want to see which Unicode codepoints it contains, paste it into the detector and run the scan. The report will show the character types present. Keep in mind that game developers regularly patch name filters, so what works today may be blocked in a future update. The detector itself is a diagnostic utility for any text and is not limited to gaming use cases.`,
+This invisible character detector can detect those characters in text you paste. If you have an invisible character string and want to see which Unicode codepoints it contains, paste it into the invisible character detector and run the scan. The report will show the character types present. Keep in mind that game developers regularly patch name filters, so what works today may be blocked in a future update. The detector itself is a diagnostic utility for any text and is not limited to gaming use cases.`,
   },
   {
     category: 'Gaming',
@@ -247,14 +247,14 @@ Zero width joiners (U+200D) and zero width non joiners (U+200C) are essential in
   {
     category: 'Multilingual',
     question: 'How do I check for invisible characters in French, Spanish, or Portuguese text?',
-    answer: `The same detector works for text in any language, including French (caractères invisible), Spanish (carácter invisible), and Portuguese (caracteres invisiveis). Invisible and hidden Unicode characters are language independent because they exist at the byte level, not the linguistic level. When you paste French, Spanish, or Portuguese text into the detector, it scans for the same set of zero width spaces, non breaking spaces, soft hyphens, directional marks, and other supported characters.
+    answer: `The same detector works for text in any language, including French (caractères invisible), Spanish (carácter invisible), and Portuguese (caracteres invisiveis). Invisible and hidden Unicode characters are language independent because they exist at the byte level, not the linguistic level. When you paste French, Spanish, or Portuguese text into the invisible character detector, it scans for the same set of zero width spaces, non breaking spaces, soft hyphens, directional marks, and other supported characters.
 
 Some invisible character patterns are common in multilingual publishing. For example, non breaking spaces are frequently used in French typography before punctuation marks like question marks, exclamation marks, colons, and semicolons. These are typographically correct in French but can appear odd or cause issues in systems that treat them as plain spaces. The detector will flag them so you can see where they appear and decide whether to preserve or normalize them for your workflow.`,
   },
   {
     category: 'Limits',
-    question: 'When should I not use the detector?',
-    answer: `You should avoid using the tool as a replacement for a full Unicode or security audit. It is a focused detector for common invisible characters, not a comprehensive scanner for all control characters or encoding issues. If your use case requires deep inspection of encoding, you may need a specialized tool.
+    question: 'When should I not use the invisible character detector?',
+    answer: `You should avoid using the invisible character detector as a replacement for a full Unicode or security audit. It is a focused detector for common invisible characters, not a comprehensive scanner for all control characters or encoding issues. If your use case requires deep inspection of encoding, you may need a specialized tool.
 
 You should also avoid removing characters without understanding their purpose. Some hidden characters are necessary for certain languages or layout rules. For example, zero width joiners are used in scripts that require specific glyph shaping. The detector can reveal those characters, but it cannot tell you whether they are required. Use it for diagnosis, then decide on removal based on context. If you need automated removal across large datasets, pair it with a dedicated remover tool and review samples first.`,
   },
@@ -263,7 +263,7 @@ You should also avoid removing characters without understanding their purpose. S
     question: 'What is a blank space copy and paste character?',
     answer: `A blank space copy and paste character is an invisible Unicode character that you can copy to your clipboard and paste anywhere — producing what looks like empty space or a blank text. The most commonly used ones are: zero width space (U+200B), Hangul filler (U+3164), ideographic space (U+3000), and non-breaking space (U+00A0). Each produces a different visual result depending on the platform, font, and rendering engine.
 
-People use blank space characters in social media usernames, game names, messaging apps, and form fields where a truly empty input is not allowed. Pasting a blank character lets you submit a field that appears empty but technically contains text. This detector can identify which blank space characters are present in any text you paste. Paste the string into the tool and the report will show you exactly which codepoints are there and how many of each.`,
+People use blank space characters in social media usernames, game names, messaging apps, and form fields where a truly empty input is not allowed. Pasting a blank character lets you submit a field that appears empty but technically contains text. This detector can identify which blank space characters are present in any text you paste. Paste the string into the invisible character detector and the report will show you exactly which codepoints are there and how many of each.`,
   },
   {
     category: 'Copy Paste',
@@ -291,7 +291,7 @@ For Instagram bios, a common approach is to paste a line containing only non-bre
     question: 'What is the object replacement character and how do I copy it?',
     answer: `The object replacement character (U+FFFC) is a Unicode codepoint used as a placeholder in rich text to represent an embedded object such as an image, a table, or another non-text element. When rich text is converted to plain text, the embedded object is lost but the U+FFFC placeholder may remain as an invisible character in the output.
 
-The object replacement character is not commonly used intentionally in plain text. It typically appears as a leftover artifact when text is extracted from rich documents or exported from word processors. If you paste text that came from a rich text source and the detector flags U+FFFC, you can safely remove it in a plain text context since the original embedded object is not recoverable anyway. The detector will label it clearly in the preview so you can see exactly where it appears.`,
+The object replacement character is not commonly used intentionally in plain text. It typically appears as a leftover artifact when text is extracted from rich documents or exported from word processors. If you paste text that came from a rich text source and the invisible character detector flags U+FFFC, you can safely remove it in a plain text context since the original embedded object is not recoverable anyway. The detector will label it clearly in the preview so you can see exactly where it appears.`,
   },
   {
     category: 'Technical',
@@ -305,7 +305,7 @@ Unlike zero width space (U+200B), which has no width, U+3164 actually occupies s
     question: 'What does "invisable character" mean — is it the same as invisible character?',
     answer: `Yes, "invisable character" is a common misspelling of "invisible character." Both terms refer to the same thing: Unicode codepoints that have no visible glyph or that render as blank space. If you searched for invisable character and landed here, you are in the right place. The detector finds and labels all major invisible Unicode characters regardless of how you spell the search term.
 
-Common misspellings in this area include: invisable character, invisiable character, invisble character, and invis char. All of these refer to Unicode characters like zero width space (U+200B), Hangul filler (U+3164), non-breaking space (U+00A0), and similar codepoints. Paste any text containing these characters into the detector and the scan will identify them precisely.`,
+Common misspellings in this area include: invisable character, invisiable character, invisble character, and invis char. All of these refer to Unicode characters like zero width space (U+200B), Hangul filler (U+3164), non-breaking space (U+00A0), and similar codepoints. Paste any text containing these characters into the invisible character detector and the scan will identify them precisely.`,
   },
   {
     category: 'Technical',
@@ -317,16 +317,16 @@ Nonbreaking spaces also behave differently in string comparisons. A nonbreaking 
   {
     category: 'Technical',
     question: 'How do I use this as a character reader to identify unknown characters?',
-    answer: `The detector works as a character reader for invisible and non-printing Unicode characters. If you have text that contains a character you cannot identify — something that appears blank, produces unexpected behavior, or causes string mismatches — paste the text into the tool and run the scan. The preview will label any detected invisible characters with their Unicode name tokens, and the report will list counts by type.
+    answer: `The detector works as a character reader for invisible and non-printing Unicode characters. If you have text that contains a character you cannot identify — something that appears blank, produces unexpected behavior, or causes string mismatches — paste the text into the invisible character detector and run the scan. The preview will label any detected invisible characters with their Unicode name tokens, and the report will list counts by type.
 
-For visible but unfamiliar characters, this tool will not help since it only targets invisible and non-printing codepoints. For those, a general Unicode character inspector or a hex viewer that shows codepoints for every character would be more appropriate. But for the specific case of identifying hidden characters that cause formatting issues, broken searches, or invisible spacing in pasted text, this tool gives you a fast and readable diagnosis without needing to know Unicode tables.`,
+For visible but unfamiliar characters, this invisible character detector will not help since it only targets invisible and non-printing codepoints. For those, a general Unicode character inspector or a hex viewer that shows codepoints for every character would be more appropriate. But for the specific case of identifying hidden characters that cause formatting issues, broken searches, or invisible spacing in pasted text, this invisible character detector gives you a fast and readable diagnosis without needing to know Unicode tables.`,
   },
   {
     category: 'Technical',
-    question: 'What is an ASCII checker and can this tool check ASCII hidden characters?',
+    question: 'What is an ASCII checker and can this invisible character detector check ASCII hidden characters?',
     answer: `An ASCII checker typically verifies whether text contains only standard ASCII characters (codepoints U+0000 to U+007F). Within the ASCII range, there are several non-printing control characters that can cause issues: carriage return (U+000D), form feed (U+000C), vertical tab (U+000B), null character (U+0000), and others. These are sometimes called ASCII hidden characters because they are present in the byte stream but not visible in normal display.
 
-This invisible character detector covers the most commonly problematic invisible characters, including those in the ASCII range like carriage return. If you need to verify whether text is entirely within the ASCII range and flag any character outside it, a dedicated ASCII checker or hex viewer would be more thorough. For the specific invisible characters that most often cause practical issues in copy-pasted text and web content, this tool provides fast identification and a readable labeled output.`,
+This invisible character detector covers the most commonly problematic invisible characters, including those in the ASCII range like carriage return. If you need to verify whether text is entirely within the ASCII range and flag any character outside it, a dedicated ASCII checker or hex viewer would be more thorough. For the specific invisible characters that most often cause practical issues in copy-pasted text and web content, this invisible character detector provides fast identification and a readable labeled output.`,
   },
   {
     category: 'Responsible Use',
@@ -394,7 +394,7 @@ const writeUp = (
       <p>
         The detector is deliberately transparent. It does not attempt to guess why a character is present, and it does not apply any cleanup by
         default. This is important because some invisible characters are legitimate, such as directionality marks in mixed language text or
-        non breaking spaces in addresses. By showing markers and counts rather than changing the text, the tool gives you full control. You can
+        non breaking spaces in addresses. By showing markers and counts rather than changing the text, the invisible character detector gives you full control. You can
         decide which characters are safe to remove and which should remain. This keeps the process reliable and reduces the risk of breaking text
         that depends on special Unicode formatting.
       </p>
@@ -403,18 +403,18 @@ const writeUp = (
       <p>
         A Unicode viewer is a tool that lets you examine the actual codepoints and properties of each character in a string. The Invisible
         Character Detector acts as a focused Unicode character inspector for the subset of codepoints that are most problematic in practice:
-        invisible, zero width, and non-printing characters. When you paste text into the tool, the detector reads each character and identifies
+        invisible, zero width, and non-printing characters. When you paste text into the invisible character detector, the invisible character detector reads each character and identifies
         those that are not visually represented in normal rendering.
       </p>
       <p>
-        For each detected character, the tool shows a readable token label that identifies the Unicode name. This is different from a full hex
+        For each detected character, the invisible character detector shows a readable token label that identifies the Unicode name. This is different from a full hex
         viewer or a raw codepoint dump. The goal is to make the detection output readable for non-technical users while still being precise
         enough for developers. If you need to see the exact U+ code for each character, a dedicated Unicode analyzer or hex editor will give you
         that level of detail, but for most text cleanup tasks the token labels are sufficient.
       </p>
       <p>
         The most useful feature of a character inspector for hidden characters is contextual display. Knowing that a zero width space exists
-        somewhere in a document is less useful than knowing it appears between specific words. This tool provides both: the count report gives
+        somewhere in a document is less useful than knowing it appears between specific words. This invisible character detector provides both: the count report gives
         the overview, and the preview output shows the marker in its exact position within the surrounding text. This contextual visibility is
         the core value of a Unicode character viewer compared to a simple codepoint listing.
       </p>
@@ -440,13 +440,13 @@ const writeUp = (
         visible hyphen in certain rendering environments.
       </p>
       <p>
-        The process for detecting ChatGPT hidden characters is straightforward. Copy the AI output as usual, paste it into the detector tool,
+        The process for detecting ChatGPT hidden characters is straightforward. Copy the AI output as usual, paste it into the invisible character detector tool,
         and run the scan. The preview will mark any invisible characters with readable tokens, and the report will list counts by type. This
         tells you whether the pasted text contains hidden characters and exactly where they appear. From there you can use a cleanup tool to
         remove them, producing plain text that is safe to use in any downstream system.
       </p>
       <p>
-        Some users refer to AI unicode detectors when they want to check AI output for hidden formatting. This tool serves that purpose. It does
+        Some users refer to AI unicode detectors when they want to check AI output for hidden formatting. This invisible character detector serves that purpose. It does
         not analyze the origin of the text and cannot determine whether characters were added by an AI system or a different source. It only
         reads the characters that are present in whatever text you paste. This makes it equally useful for inspecting text from any AI tool,
         not just ChatGPT. The detection logic is the same regardless of where the text came from.
@@ -479,7 +479,7 @@ const writeUp = (
         representation of non-printing characters defined by listchars. In Notepad++, the View menu includes an option to show all characters.
         In Word, the Show/Hide paragraph marks button reveals formatting marks including non-breaking spaces. These editor-based approaches
         work well for files you have open, but for quick inspection of pasted text from any source, an online non-printing character viewer
-        like this tool offers a faster path that requires no editor setup.
+        like this invisible character detector offers a faster path that requires no editor setup.
       </p>
 
       <h2>Zero-Width Characters: Copy, Paste, and Remove</h2>
@@ -549,7 +549,7 @@ const writeUp = (
       </p>
       <p>
         The invisible character detector is useful for inspecting these strings. If you have an invisible character string and want to know
-        which Unicode codepoints it contains, paste it into the tool and run the scan. The report will identify each character type. This is
+        which Unicode codepoints it contains, paste it into the invisible character detector and run the scan. The report will identify each character type. This is
         helpful if you are a developer testing platform input sanitization, a moderator investigating unusual display names, or just curious
         about what codepoints are in a particular invisible character sequence you found online.
       </p>
@@ -644,8 +644,8 @@ const writeUp = (
       <h2>Character Reader — Identifying Unknown Hidden Characters</h2>
       <p>
         When you encounter text that behaves strangely — a name that appears blank, a string that fails a match, a field that seems empty but
-        is not — you need a character reader to inspect what is actually inside. This tool acts as a character reader for invisible Unicode
-        characters. Paste any text and the detector scans for all supported non-printing codepoints, labeling each one with its Unicode name.
+        is not — you need a character reader to inspect what is actually inside. This invisible character detector acts as a character reader for invisible Unicode
+        characters. Paste any text and the invisible character detector scans for all supported non-printing codepoints, labeling each one with its Unicode name.
       </p>
       <p>
         The "what is this character" question is one of the most common reasons people reach for a character inspector. If you copied text that
@@ -653,9 +653,9 @@ const writeUp = (
         Space or Hangul Filler) and the count. This is faster than looking up Unicode tables manually or using a hex editor.
       </p>
       <p>
-        For visible but unfamiliar characters, a general Unicode codepoint lookup or a hex viewer would be more appropriate since this tool
+        For visible but unfamiliar characters, a general Unicode codepoint lookup or a hex viewer would be more appropriate since this invisible character detector
         focuses only on the invisible subset. But for any character that is causing hidden formatting issues, blank displays, or string
-        mismatches, the detector provides a readable, labeled output that tells you exactly what is present and where.
+        mismatches, the invisible character detector provides a readable, labeled output that tells you exactly what is present and where.
       </p>
 
       <h2>Why This Tool Matters</h2>
@@ -668,7 +668,7 @@ const writeUp = (
       <p>
         The detector matters because it provides that visibility without altering the text. It is a diagnostic step that lets you see what is
         really in the string. This is especially useful when multiple systems are involved. A text block might look fine in one editor but
-        behave differently in another. By revealing hidden characters, the tool helps you make the text consistent across systems.
+        behave differently in another. By revealing hidden characters, the invisible character detector helps you make the text consistent across systems.
       </p>
       <p>
         It also supports quality control. Teams that publish content or build datasets need reliable text. Hidden characters can create subtle
@@ -684,7 +684,7 @@ const writeUp = (
       </p>
       <h3>2) Detection</h3>
       <p>
-        When you run the detector, it scans for a defined set of invisible Unicode characters. These include zero width characters, non breaking
+        When you run the invisible character detector, it scans for a defined set of invisible Unicode characters. These include zero width characters, non breaking
         spaces, soft hyphens, directional marks, and byte order marks. The scan is literal and deterministic, so every supported character is identified.
       </p>
       <h3>3) Marker output</h3>
@@ -799,7 +799,7 @@ const writeUp = (
         option for many everyday cleanup tasks.
       </p>
       <p>
-        Because the tool does not retain a history, you remain in control of retention. If you need to keep the cleaned output or a marked
+        Because the invisible character detector does not retain a history, you remain in control of retention. If you need to keep the cleaned output or a marked
         version for documentation, you should copy it into your own secure storage. The detector does not create accounts or require sign in,
         which reduces exposure and keeps the workflow simple.
       </p>
@@ -815,7 +815,7 @@ const writeUp = (
       </p>
       <h3>Developers and technical teams</h3>
       <p>
-        Developers use the tool to diagnose issues in logs, configuration snippets, or documentation where hidden characters can break parsing or
+        Developers use the invisible character detector to diagnose issues in logs, configuration snippets, or documentation where hidden characters can break parsing or
         version comparisons. Detecting a BOM at the start of a config file or a CRLF in a shell script can prevent hours of debugging.
       </p>
       <h3>Analysts and data teams</h3>
@@ -847,7 +847,7 @@ const writeUp = (
         descriptions, and navigation labels where small formatting errors are highly visible.
       </p>
       <p>
-        From an SEO perspective, the tool does not improve rankings directly, but it helps maintain clean text that is easier to index and
+        From an SEO perspective, the invisible character detector does not improve rankings directly, but it helps maintain clean text that is easier to index and
         analyze. Consistent text also improves user trust and readability. The detector is best used as a quality check after copy is finalized
         and before it is pushed to a CMS or site.
       </p>
@@ -877,7 +877,7 @@ const writeUp = (
       </p>
       <p>
         An online tool also makes collaboration easier. You can copy the marked output and share it with a teammate to show exactly where hidden
-        characters appear. This is clearer than describing the issue in words. Because the tool does not change the original input, it acts as a
+        characters appear. This is clearer than describing the issue in words. Because the invisible character detector does not change the original input, it acts as a
         diagnostic layer that can be applied repeatedly without risk.
       </p>
 
@@ -891,13 +891,13 @@ const writeUp = (
           Some scripts rely on zero width joiners for correct rendering. Removing them without context can break text.
         </li>
         <li>
-          Text copied from PDFs may include unusual spacing characters that are not in the detector list.
+          Text copied from PDFs may include unusual spacing characters that are not in the invisible character detector list.
         </li>
         <li>
           The tool does not recognize every Unicode control character, only the most common ones.
         </li>
         <li>
-          If the input contains encoded sequences rather than actual characters, the tool will not decode them.
+          If the input contains encoded sequences rather than actual characters, the invisible character detector will not decode them.
         </li>
         <li>
           The preview output adds markers, so it is not intended to be the final cleaned text.
@@ -960,10 +960,10 @@ const writeUp = (
         browser and does not change the text itself, which makes it a safe diagnostic step.
       </p>
       <p>
-        Use this tool when text behaves strangely, fails searches, or shows inconsistent spacing. It is also useful for preparing content for
+        Use this invisible character detector when text behaves strangely, fails searches, or shows inconsistent spacing. It is also useful for preparing content for
         publishing, data analysis, or compliance review. It helps when inspecting text copied from AI tools like ChatGPT, when checking for
         hidden byte order marks in data files, when investigating non-printable characters in code or configuration, and when verifying that
-        multilingual text does not contain unwanted directional marks. By making hidden characters visible, the detector helps you clean text
+        multilingual text does not contain unwanted directional marks. By making hidden characters visible, the invisible character detector helps you clean text
         with confidence and maintain consistency across platforms.
       </p>
     </div>
