@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
+import { trackEvent } from '@/lib/analytics';
 
 export default function ProFunnelBanner() {
   const sentinelRef = useRef<HTMLDivElement>(null);
@@ -33,6 +34,7 @@ export default function ProFunnelBanner() {
           </p>
           <Link
             href="/ai-humanizer-pro"
+            onClick={() => trackEvent('cta_clicked', { location: 'funnel_banner_fixed' })}
             className="shrink-0 rounded-lg bg-white px-4 py-1.5 text-sm font-bold text-black transition hover:bg-slate-100"
           >
             TRY FREE
@@ -49,6 +51,7 @@ export default function ProFunnelBanner() {
           </p>
           <Link
             href="/ai-humanizer-pro"
+            onClick={() => trackEvent('cta_clicked', { location: 'funnel_banner_inline' })}
             className="shrink-0 rounded-lg bg-white px-6 py-2.5 text-sm font-bold text-black transition hover:bg-slate-100"
           >
             TRY NOW

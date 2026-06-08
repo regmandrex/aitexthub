@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { trackEvent } from '@/lib/analytics';
 
 type Plan = {
   id: 'weekly' | 'monthly' | 'annual';
@@ -73,6 +74,7 @@ export default function PricingModal({ onClose }: { onClose: () => void }) {
   const [selected, setSelected] = useState<Plan['id']>('annual');
 
   useEffect(() => {
+    trackEvent('pricing_viewed');
     const handler = (e: KeyboardEvent) => { if (e.key === 'Escape') onClose(); };
     document.addEventListener('keydown', handler);
     document.body.style.overflow = 'hidden';
@@ -196,6 +198,7 @@ export default function PricingModal({ onClose }: { onClose: () => void }) {
         <div className="px-5 pb-5">
           <a
             href={activePlan.checkoutUrl ?? '/pro#pricing'}
+            onClick={() => trackEvent('checkout_started', { plan: activePlan.id })}
             className="block w-full rounded-xl bg-gradient-to-r from-violet-600 to-purple-700 py-3.5 text-center text-sm font-bold text-white shadow-lg shadow-violet-200 transition-all hover:from-violet-700 hover:to-purple-800 hover:shadow-xl"
           >
             Continue with {activePlan.name} →

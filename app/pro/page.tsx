@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { buildMeta } from '@/lib/seo-meta';
+import CheckoutButton from '@/components/CheckoutButton';
 
 const title = 'GPTCleanup Pro — Undetectable AI for Real Work';
 const description =
@@ -267,8 +268,9 @@ export default function ProLandingPage() {
                   ))}
                 </ul>
 
-                <a
+                <CheckoutButton
                   href={plan.checkoutUrl ?? '#pricing'}
+                  planId={plan.id}
                   className={`mt-6 block w-full rounded-full px-4 py-3 text-center text-sm font-bold transition ${
                     plan.highlight
                       ? 'bg-gradient-to-r from-violet-600 to-purple-700 text-white shadow-md shadow-violet-200 hover:shadow-lg'
@@ -276,7 +278,7 @@ export default function ProLandingPage() {
                   }`}
                 >
                   {plan.cta} →
-                </a>
+                </CheckoutButton>
               </div>
             ))}
           </div>
