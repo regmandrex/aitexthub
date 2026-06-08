@@ -8,6 +8,8 @@ import NavDrawer from './NavDrawer';
 import AccountDrawer from './AccountDrawer';
 import HeaderUserMenu from './HeaderUserMenu';
 import { useSession } from '@/lib/auth-client';
+import { useSubscription } from '@/hooks/useSubscription';
+import { trackEvent } from '@/lib/analytics';
 import PricingModal from './PricingModal';
 
 function DemoModeReader({ onChange }: { onChange: (mode: 'out' | 'free' | 'pro') => void }) {
@@ -27,10 +29,19 @@ export default function Header() {
   const [pricingOpen, setPricingOpen] = useState(false);
   const [demoMode, setDemoMode] = useState<'out' | 'free' | 'pro'>('out');
   const { data: session } = useSession();
+  const subscription = useSubscription();
 
   const isLoggedIn = session?.user != null || demoMode !== 'out';
   const userEmail = session?.user?.email ?? 'user@example.com';
-  const plan: 'free' | 'pro' = demoMode === 'pro' ? 'pro' : 'free';
+  // Plan reflects the real subscription so a paying user actually sees "Pro";
+  // ?demo=pro still forces Pro for testing.
+  const isPro = demoMode === 'pro' || subscription?.isPro === true;
+  const plan: 'free' | 'pro' = isPro ? 'pro' : 'free';
+  const wordsUsed = subscription?.wordsUsed ?? 0;
+  const wordsLimit: number | 'unlimited' =
+    subscription?.wordsLimit === null && isPro
+      ? 'unlimited'
+      : subscription?.wordsLimit ?? 0;
 
   return (
     <>
@@ -61,7 +72,10 @@ export default function Header() {
                   email={userEmail}
                   plan={plan}
                   onOpenAccount={() => setAccountOpen(true)}
-                  onUpgrade={() => setPricingOpen(true)}
+                  onUpgrade={() => {
+                    trackEvent('cta_clicked', { location: 'header_upgrade' });
+                    setPricingOpen(true);
+                  }}
                 />
                 <Link
                   href="/account"
@@ -80,6 +94,7 @@ export default function Header() {
                 </Link>
                 <Link
                   href="/signup"
+                  onClick={() => trackEvent('cta_clicked', { location: 'header_get_started' })}
                   className="hidden rounded-full bg-brand-600 px-4 py-2 text-sm font-medium text-white shadow-sm transition hover:bg-brand-700 md:inline-flex"
                 >
                   Get Started
@@ -131,8 +146,8 @@ export default function Header() {
         onClose={() => setAccountOpen(false)}
         email={userEmail}
         plan={plan}
-        wordsUsed={0}
-        wordsLimit={plan === 'pro' ? 'unlimited' : 0}
+        wordsUsed={wordsUsed}
+        wordsLimit={wordsLimit}
       />
     </>
   );
