@@ -91,13 +91,15 @@ export default function BelowToolAd() {
   }, []);
 
   return (
-    <div className="mt-6 flex justify-center">
+    <div className="mt-6 w-full">
       <ins
         ref={slotRef}
         className="adsbygoogle"
-        style={{ display: 'inline-block', width: 300, height: 250 }}
+        style={{ display: 'block' }}
         data-ad-client={AD_CLIENT}
         data-ad-slot={BELOW_TOOL_SLOT}
+        data-ad-format="auto"
+        data-full-width-responsive="true"
       />
     </div>
   );
