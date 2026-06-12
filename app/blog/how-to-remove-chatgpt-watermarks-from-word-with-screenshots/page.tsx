@@ -11,7 +11,6 @@ const headline = 'How to Remove ChatGPT Watermarks from Word Documents (Step-by-
 const description =
   'Step-by-step guide to removing ChatGPT watermarks from Word documents: specific characters to find and replace, tool workflow, and verification steps.';
 
-export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({ title, description, urlPath });

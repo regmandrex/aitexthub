@@ -113,7 +113,6 @@ export async function generateStaticParams() {
 export const dynamicParams = true;
 
 // Cache at edge for 7 days — content changes only on deploy, not daily
-export const revalidate = 2592000;
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;

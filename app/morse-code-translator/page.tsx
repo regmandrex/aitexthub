@@ -13,7 +13,6 @@ import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
 import { MORSE_TABLE } from '@/lib/morse';
 
-export const revalidate = 2592000;
 
 const toolSlug = 'morse-code-translator';
 

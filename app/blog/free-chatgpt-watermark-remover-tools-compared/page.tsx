@@ -11,7 +11,6 @@ const headline = 'Free ChatGPT Watermark Remover Tools Compared (2026 Edition)';
 const description =
   'A comparison of free ChatGPT watermark remover tools: what to look for, how different approaches work, and why browser-based tools are best for privacy.';
 
-export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({ title, description, urlPath });

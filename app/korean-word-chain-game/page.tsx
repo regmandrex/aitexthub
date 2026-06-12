@@ -13,7 +13,6 @@ const title = '끝말잇기 | 컴퓨터와 한국어 끝말잇기 게임 (무료
 const description =
   '컴퓨터와 즐기는 무료 끝말잇기 게임입니다. 한국어 단어 사전 기반으로 두음법칙과 한방단어 규칙을 적용해 친구·가족과 함께 즐길 수 있는 끝말잇기 도구입니다.';
 
-export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildMeta({ title, description, urlPath: '/korean-word-chain-game', locale: 'ko_KR' });

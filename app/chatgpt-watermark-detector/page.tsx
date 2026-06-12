@@ -9,7 +9,6 @@ const modelSlug = 'chatgpt';
 const faqIntro =
   'This FAQ explains how the ChatGPT Watermark Detector on gptcleanuptools.com works, what it analyzes, and how its results should be interpreted. The tool performs independent, text-only analysis and does not connect to or interact with ChatGPT or OpenAI systems.';
 
-export const revalidate = 2592000;
 
 const faqs: FaqItem[] = [
   {

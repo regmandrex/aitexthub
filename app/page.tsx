@@ -29,7 +29,6 @@ export async function generateMetadata() {
 }
 
 // Cache at edge for 24h to reduce Fast Origin Transfer
-export const revalidate = 2592000;
 
 const newFaqItems = [
   {

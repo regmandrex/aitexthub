@@ -11,7 +11,6 @@ const headline = 'AI Content Cleaning vs Traditional Text Sanitization for SEO (
 const description =
   'Traditional sanitization removes unsafe HTML. AI content cleaning removes invisible Unicode, normalizes whitespace, reduces DOM bloat, and improves Core Web Vitals for SEO.';
 
-export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({

@@ -11,7 +11,6 @@ const headline = 'Are AI Watermarks Ethical? The Privacy Debate Around Hidden Te
 const description =
   'AI watermarks raise legitimate questions about privacy, consent, and surveillance. This guide presents both sides and offers a practical framework for thinking about the debate.';
 
-export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({ title, description, urlPath });

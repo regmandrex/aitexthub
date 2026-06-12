@@ -1,7 +1,6 @@
 import { buildMeta } from '@/lib/seo-meta';
 import type { Metadata } from 'next';
 
-export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildMeta({

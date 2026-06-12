@@ -11,7 +11,6 @@ const headline = 'How to Clean ChatGPT Text on Android';
 const description =
   'A mobile-first workflow to clean ChatGPT text on Android using AI space removal, invisible character detection, and safe copy-paste into apps.';
 
-export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({

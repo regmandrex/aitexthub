@@ -11,7 +11,6 @@ const headline = 'Why AI Watermarks Matter (and How to Clean ChatGPT Text Safely
 const description =
   'Separate AI watermark myths from real technical risks: invisible Unicode, structural inefficiency, and performance issues—and how to clean safely without rewriting.';
 
-export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({

@@ -11,7 +11,6 @@ const headline = 'AI Text Watermarks Explained: What They Are and How to Remove 
 const description =
   'A technical explanation of AI text watermarks: the types that exist, how each is detected, and the complete workflow for removing them from any text.';
 
-export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({ title, description, urlPath });

@@ -11,7 +11,6 @@ const headline = 'How to Make ChatGPT Text Look Human (Cleaning vs Rewriting, Wh
 const description =
   'Learn how to make ChatGPT text read naturally without harming SEO: clean invisible Unicode first, then apply light rewriting for rhythm, clarity, and trust.';
 
-export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({

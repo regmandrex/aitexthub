@@ -11,7 +11,6 @@ const headline = 'Comprehensive Guide to Cleaning AI Text Before Publishing';
 const description =
   'A complete 2026 workflow to sanitize AI text: remove invisible Unicode, normalize whitespace, rebuild structure, and publish SEO-safe content.';
 
-export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({

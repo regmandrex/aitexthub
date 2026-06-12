@@ -11,7 +11,6 @@ const headline = 'The Truth About ChatGPT Watermarks: Myths vs Reality (2026 Edi
 const description =
   'Separating ChatGPT watermark myths from reality: what OpenAI actually does, what detectors can find, and what the invisible characters in AI text actually are.';
 
-export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({ title, description, urlPath });

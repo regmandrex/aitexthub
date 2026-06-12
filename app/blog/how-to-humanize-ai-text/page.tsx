@@ -11,7 +11,6 @@ const headline = 'How to Humanize AI Text: The Complete Guide (2026)';
 const description =
   'Learn how to humanize AI text effectively. Complete guide covering cleaning invisible Unicode first, then applying targeted rewriting techniques that improve naturalness without harming SEO.';
 
-export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({

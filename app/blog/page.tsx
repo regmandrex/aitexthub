@@ -3,7 +3,6 @@ import AdSenseSlot from '../../components/ads/AdSenseSlot';
 import { buildMeta } from '@/lib/seo-meta';
 import { blogPosts } from '@/lib/blog-posts';
 
-export const revalidate = 2592000;
 
 export async function generateMetadata() {
   return buildMeta({

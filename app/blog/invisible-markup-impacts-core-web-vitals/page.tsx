@@ -11,7 +11,6 @@ const headline = 'How Invisible Markup Impacts Core Web Vitals (And How to Fix I
 const description =
   'Invisible Unicode and malformed whitespace can inflate DOM complexity, cause layout shifts, and degrade LCP/CLS/INP. Learn how to detect and fix it.';
 
-export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({

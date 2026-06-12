@@ -13,7 +13,6 @@ const headline =
 const description =
   'Master Excel data cleaning with TRIM, SUBSTITUTE, and filtering techniques to eliminate unwanted spaces and improve accuracy.';
 
-export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({

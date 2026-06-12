@@ -11,7 +11,6 @@ const headline = 'AI Text Remover: Faster and Smarter Way to Clean Your Text';
 const description =
   "Explore how AI-powered text cleaning works and why it's faster than manual editing for large documents and code.";
 
-export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({

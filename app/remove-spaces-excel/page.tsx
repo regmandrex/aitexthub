@@ -6,7 +6,6 @@ import ToolWorkbench from '@/components/ToolWorkbench';
 import { RelatedTools } from '@/components/tool/RelatedTools';
 import { siteUrl } from '@/lib/seo/url';
 
-export const revalidate = 2592000;
 
 const faqs = [
   { question: 'How do I remove spaces in Excel?', answer: 'The most common way to remove spaces in Excel is to use the TRIM function. In an empty cell next to your data, type =TRIM(A1) (replacing A1 with the cell containing your text). Press Enter. TRIM removes all leading spaces, trailing spaces, and reduces multiple spaces between words to a single space. To apply to all rows, drag the formula down the column. Then copy the formula results, paste as values (Paste Special > Values), and delete the original column. This gives you clean data with all extra spaces removed.' },

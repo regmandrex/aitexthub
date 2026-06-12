@@ -4,7 +4,6 @@ import BelowToolAd from '@/components/ads/BelowToolAd';
 import { siteUrl } from '@/lib/seo/url';
 import { SymbolGrid } from './SymbolGrid';
 
-export const revalidate = 2592000;
 
 const faqs = [
   { question: 'How do I type an em dash?', answer: 'The easiest way to type an em dash is to copy it from this page using the Copy button next to the em dash character (—). Alternatively: on Mac, press Option+Shift+- (minus). On Windows, hold Alt and type 0151 on the numeric keypad (Alt+0151). In Microsoft Word, type two hyphens between words and Word will auto-convert to an em dash. In Google Docs, type -- between words and it auto-converts. For HTML, use the entity &mdash; or the Unicode &#8212;.' },

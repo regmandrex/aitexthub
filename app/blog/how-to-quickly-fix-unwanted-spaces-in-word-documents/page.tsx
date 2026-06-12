@@ -13,7 +13,6 @@ const headline =
 const description =
   'Learn simple methods to remove extra spaces, fix paragraph gaps, and clean up Word documents using built-in tools and shortcuts.';
 
-export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({

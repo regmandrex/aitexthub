@@ -11,7 +11,6 @@ const headline = 'Ultimate Workflow: Detect, Clean, and Format ChatGPT Text (Fro
 const description =
   'A 5-stage, repeatable workflow to detect hidden Unicode, clean AI text correctly, apply platform-native formatting, and publish SEO-safe content.';
 
-export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({

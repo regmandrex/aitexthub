@@ -11,7 +11,6 @@ const headline = 'AI Content Detection: The Complete Guide for 2026';
 const description =
   'Master AI content detection in 2026. Learn how AI detectors work, why they make mistakes, what signals they scan for, and practical strategies to ensure your content meets authenticity standards.';
 
-export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({

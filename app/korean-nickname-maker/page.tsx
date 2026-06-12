@@ -13,7 +13,6 @@ const title = '별명 짓기 | 친구·커플·반려동물 별명 추천기 (�
 const description =
   '친구, 커플, 반려동물, 회사 동료에게 어울리는 별명을 추천해 주는 무료 별명 짓기 도구입니다. 이름과 특징을 입력하면 상황에 맞는 별명 후보를 한 번에 만들어 드립니다.';
 
-export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildMeta({ title, description, urlPath: '/korean-nickname-maker', locale: 'ko_KR' });

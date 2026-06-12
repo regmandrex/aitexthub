@@ -11,7 +11,6 @@ const headline = 'Removing Spaces vs. Manual Editing: Which is Better?';
 const description =
   'Compare automated space removal tools with manual editing to find the most efficient approach for your workflow.';
 
-export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({

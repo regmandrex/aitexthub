@@ -11,7 +11,6 @@ const headline = "Detecting and Removing Hidden AI Watermarks in Text (What's Re
 const description =
   'What "hidden AI watermarks" actually are: invisible Unicode artifacts vs pattern signals, plus how to detect and clean them without rewriting or harming SEO.';
 
-export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({

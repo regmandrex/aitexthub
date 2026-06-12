@@ -5,7 +5,6 @@ import BelowToolAd from '@/components/ads/BelowToolAd';
 import { siteUrl } from '@/lib/seo/url';
 import { InvisibleCharGrid } from '../invisible-text-copy-paste/CopyButtons';
 
-export const revalidate = 2592000;
 
 const faqs = [
   { question: 'What is an invisible letter?', answer: 'An invisible letter is a Unicode character that has no visible glyph — it exists in the text data as a real character but renders as nothing on screen. The most common invisible letters are zero-width space (U+200B), Hangul filler (U+3164), non-breaking space (U+00A0), word joiner (U+2060), zero-width non-joiner (U+200C), and zero-width joiner (U+200D). These characters are used to create blank usernames, empty-looking messages, invisible display names in games, and blank social media bios. Click any Copy button on this page to copy an invisible letter to your clipboard instantly.' },

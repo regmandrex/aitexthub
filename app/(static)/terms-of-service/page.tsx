@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import { buildMeta } from '@/lib/seo-meta';
 
-export const revalidate = 2592000;
 
 export async function generateMetadata() {
   return buildMeta({

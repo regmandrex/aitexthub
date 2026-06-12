@@ -14,7 +14,6 @@ import { getToolBySlug } from '@/lib/tools/registry';
 
 
 
-export const revalidate = 2592000;
 
 const toolSlug = 'chatgpt-readability-checker';
 

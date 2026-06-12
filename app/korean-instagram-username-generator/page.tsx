@@ -13,7 +13,6 @@ const title = '인스타 아이디 추천 | 감성 아이디 생성기 (무료)'
 const description =
   '감성 아이디, 짧은 아이디, 영어 닉, 커플 아이디까지 자동으로 추천해 주는 무료 인스타 아이디 생성기입니다. 키워드와 분위기를 입력하면 인스타그램에 바로 쓸 수 있는 아이디를 만들어 드립니다.';
 
-export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildMeta({ title, description, urlPath: '/korean-instagram-username-generator', locale: 'ko_KR' });

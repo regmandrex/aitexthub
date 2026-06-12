@@ -11,7 +11,6 @@ const headline = 'How to Delete White Space: Frequently Asked Questions';
 const description =
   'Answers to common questions about removing white space, cleaning text, and using online space remover tools.';
 
-export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({

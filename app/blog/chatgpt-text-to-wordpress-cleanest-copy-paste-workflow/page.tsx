@@ -11,7 +11,6 @@ const headline = 'ChatGPT Text to WordPress: The Cleanest Copy-Paste Workflow (S
 const description =
   'A reliable workflow to move ChatGPT text into WordPress without broken blocks, invisible Unicode, spacing issues, or Core Web Vitals regressions.';
 
-export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({

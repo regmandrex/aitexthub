@@ -11,7 +11,6 @@ const headline = 'How to Effectively Remove Spaces from Text: Expert Tips';
 const description =
   'Professional advice from content creators and developers on optimizing your text cleaning workflow.';
 
-export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({

@@ -11,7 +11,6 @@ const headline = 'Step-by-Step Guide to Remove Spaces from Your Text (Easy Instr
 const description =
   'Easy-to-follow instructions for cleaning text using online tools. Includes tips for large documents and code files.';
 
-export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({

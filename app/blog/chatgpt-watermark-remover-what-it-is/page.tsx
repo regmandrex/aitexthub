@@ -11,7 +11,6 @@ const headline = 'ChatGPT Watermark Remover: What It Is and How It Works';
 const description =
   'A ChatGPT watermark remover strips invisible Unicode characters and normalizes AI text artifacts. Here is what it removes, how it works, and when to use it.';
 
-export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({ title, description, urlPath });

@@ -13,7 +13,6 @@ const title = '삼행시 짓기 | 이름 삼행시 자동 생성기 (무료)';
 const description =
   '이름이나 단어를 입력하면 각 글자로 시작하는 삼행시를 자동으로 만들어 주는 무료 삼행시 생성기입니다. 친구 이름 삼행시, 사행시, 오행시까지 생일·회식·SNS용으로 바로 활용할 수 있습니다.';
 
-export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildMeta({ title, description, urlPath: '/korean-acrostic-poem-generator', locale: 'ko_KR' });

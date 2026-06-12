@@ -11,7 +11,6 @@ const headline = 'How to Check If a Text Has a ChatGPT Watermark (Complete Guide
 const description =
   'Five methods to check text for ChatGPT watermarks: from dedicated tools to manual inspection. Learn what each result means and what to do about it.';
 
-export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({ title, description, urlPath });

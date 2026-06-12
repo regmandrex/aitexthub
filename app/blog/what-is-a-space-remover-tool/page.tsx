@@ -11,7 +11,6 @@ const headline = 'What is a Space Remover Tool? (How It Works & Why You Need It)
 const description =
   "Discover how space remover tools work, why they're essential for writers and developers, and how they improve text quality instantly.";
 
-export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({

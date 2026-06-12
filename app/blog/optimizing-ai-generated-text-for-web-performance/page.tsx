@@ -11,7 +11,6 @@ const headline = 'Optimizing AI-Generated Text for Web Performance (Speed, Stabi
 const description =
   'Learn why AI-generated text can hurt performance, how it affects LCP/CLS/INP, and how to clean and structure text for faster rendering and SEO.';
 
-export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({

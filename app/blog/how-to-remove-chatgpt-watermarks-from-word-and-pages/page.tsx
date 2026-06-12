@@ -11,7 +11,6 @@ const headline = 'How to Remove ChatGPT Watermarks from Word and Pages Documents
 const description =
   'Word and Pages documents are particularly susceptible to ChatGPT watermark artifacts. This guide covers the step-by-step workflow to clean AI artifacts from both applications.';
 
-export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({ title, description, urlPath });

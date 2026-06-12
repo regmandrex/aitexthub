@@ -11,7 +11,6 @@ const headline = 'The Hidden Risks of Copying ChatGPT Text into Word or Google D
 const description =
   'Copying ChatGPT text into Word or Google Docs introduces invisible characters, formatting corruption, and Unicode artifacts. Here is what happens and how to prevent it.';
 
-export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({ title, description, urlPath });

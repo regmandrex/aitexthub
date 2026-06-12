@@ -11,7 +11,6 @@ const headline = 'ChatGPT Watermark Remover on Mobile: What Actually Matters';
 const description =
   'What people really mean by ChatGPT watermarks, what you can safely clean on mobile, and how to use AI watermark remover tools without breaking policies.';
 
-export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({

@@ -11,7 +11,6 @@ const headline = 'ChatGPT Text Cleaner for iPhone: Ready-to-Publish Workflow';
 const description =
   'Step-by-step workflow to clean ChatGPT text on iPhone, remove invisible noise, and paste into Notes, Mail, or CMS without layout bugs.';
 
-export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({

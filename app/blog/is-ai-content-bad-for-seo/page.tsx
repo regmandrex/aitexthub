@@ -11,7 +11,6 @@ const headline = 'Is AI Content Bad For SEO? What Google Actually Says (And What
 const description =
   'Google does not penalize AI content automatically. What actually matters is E-E-A-T, hidden character artifacts, and whether the content genuinely helps readers.';
 
-export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({ title, description, urlPath });

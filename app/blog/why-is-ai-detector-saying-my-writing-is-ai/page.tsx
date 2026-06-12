@@ -11,7 +11,6 @@ const headline = 'Why Is the AI Detector Saying My Writing Is AI? The Complete G
 const description =
   'AI detectors flag human writing for predictable reasons: formal style, invisible characters, non-native English, and consistent structure. Here&apos;s how to fix each one.';
 
-export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({ title, description, urlPath });

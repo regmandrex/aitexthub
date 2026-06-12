@@ -11,7 +11,6 @@ const headline = 'How to See ChatGPT Watermarks: A Complete Detection Guide';
 const description =
   'ChatGPT watermarks are invisible to the naked eye but detectable with the right tools. This guide covers every method for finding them, from manual to fully automated.';
 
-export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({ title, description, urlPath });

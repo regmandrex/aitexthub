@@ -5,7 +5,6 @@ import BelowToolAd from '@/components/ads/BelowToolAd';
 import { siteUrl } from '@/lib/seo/url';
 import { InvisibleCharGrid } from './CopyButtons';
 
-export const revalidate = 2592000;
 
 const faqs = [
   { question: 'What is blank space copy and paste?', answer: 'Blank space copy and paste means copying an invisible or blank-appearing Unicode character to your clipboard and pasting it into a text field to create the visual effect of empty or blank content. The most common characters used are zero-width space (U+200B), Hangul filler (U+3164), non-breaking space (U+00A0), and word joiner (U+2060). Each looks blank when pasted but is present as real character data, which satisfies input validation requirements that reject truly empty fields.' },

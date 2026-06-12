@@ -11,7 +11,6 @@ const headline = 'Why ChatGPT Text Looks Messy (and How to Fix It Permanently)';
 const description =
   'Learn why ChatGPT text breaks spacing, lists, and headings after copy-paste, and follow a clean workflow that fixes it for good.';
 
-export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({

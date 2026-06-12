@@ -11,7 +11,6 @@ const headline = 'How to Remove ChatGPT Watermarks and Hidden Characters (Comple
 const description =
   'Learn how to detect and remove invisible Unicode and formatting artifacts in ChatGPT output, plus how to reduce AI fingerprints safely.';
 
-export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({

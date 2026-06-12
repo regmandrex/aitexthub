@@ -11,7 +11,6 @@ const headline = 'Where to Check AI Writing: The Best Tools and Methods for 2026
 const description =
   'Discover the best tools and methods to check AI-generated writing in 2026, from pattern-based detectors like GPTZero to invisible watermark scanners. Honest comparison with limitations clearly stated.';
 
-export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({

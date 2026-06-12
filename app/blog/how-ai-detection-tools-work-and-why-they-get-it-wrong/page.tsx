@@ -11,7 +11,6 @@ const headline = 'How AI Detection Tools Work (And Why They Often Get It Wrong)'
 const description =
   'AI detection tools use perplexity, burstiness, and classifiers to identify AI text. This guide explains their methodology, failure modes, and what you should actually trust.';
 
-export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({ title, description, urlPath });

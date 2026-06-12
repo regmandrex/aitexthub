@@ -12,7 +12,6 @@ import { getToolBySlug } from '@/lib/tools/registry';
 import { siteUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 
-export const revalidate = 2592000;
 const toolSlug = 'rot13-encoder';
 
 export async function generateMetadata(): Promise<Metadata> {

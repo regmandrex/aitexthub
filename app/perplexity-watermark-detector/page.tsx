@@ -7,7 +7,6 @@ const modelSlug = 'perplexity';
 const faqIntro =
   'This FAQ explains how the Perplexity AI Watermark Detector works, what kinds of text characteristics it inspects, and how its findings should be interpreted. The detector operates independently as a text-only analysis tool and does not interact with Perplexity AI systems.';
 
-export const revalidate = 2592000;
 
 const faqs: FaqItem[] = [
   {

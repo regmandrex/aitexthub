@@ -13,7 +13,6 @@ const title = '고양이 번역기 | 냥냥체 변환기 (무료)';
 const description =
   '한국어 문장을 고양이 말투(냥냥체)로 바꿔주는 무료 고양이 번역기입니다. 사람 말을 고양이 언어처럼 변환하고, 냥냥이 말투로 메시지·인스타 캡션·카톡을 꾸며 보세요.';
 
-export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildMeta({

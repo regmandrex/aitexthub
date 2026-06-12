@@ -11,7 +11,6 @@ const headline = 'Invisible Watermarks in ChatGPT Text: How They Work and How To
 const description =
   'Zero-width characters and other invisible Unicode exist in ChatGPT text. Here is what they are, why they appear, and how to find and remove them.';
 
-export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({ title, description, urlPath });

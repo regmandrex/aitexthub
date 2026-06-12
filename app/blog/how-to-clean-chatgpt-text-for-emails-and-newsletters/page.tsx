@@ -11,7 +11,6 @@ const headline = 'How to Clean ChatGPT Text for Emails and Newsletters (Delivera
 const description =
   'A practical workflow to remove invisible Unicode, normalize whitespace, and prevent broken rendering and spam triggers when using AI text in email tools.';
 
-export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({

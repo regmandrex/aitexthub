@@ -7,7 +7,6 @@ const modelSlug = 'gemini';
 const faqIntro =
   'This FAQ explains the purpose, scope, and limitations of the Gemini (Google) Watermark Detector on gptcleanuptools.com. The tool is designed for educational, editorial, and analytical use, helping users understand text-level signals and anomalies that may appear in AI-assisted writing. It does not connect to Gemini or any Google systems and does not provide authoritative judgments about authorship.';
 
-export const revalidate = 2592000;
 
 const faqs: FaqItem[] = [
   {

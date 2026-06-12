@@ -11,7 +11,6 @@ const headline = 'How to Use AI for Your Resume Without Getting Flagged (2026 Gu
 const description =
   'Learn the smart workflow for using AI to write resumes in 2026. Remove watermarks, optimize for ATS systems, avoid AI detection, and produce applications that genuinely represent you.';
 
-export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({

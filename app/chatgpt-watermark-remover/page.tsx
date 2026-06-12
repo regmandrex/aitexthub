@@ -22,7 +22,6 @@ function RailAd({ side }: { side: 'left' | 'right' }) {
   );
 }
 
-export const revalidate = 2592000;
 
 const faqs: FaqItem[] = [
   {

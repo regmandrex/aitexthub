@@ -11,7 +11,6 @@ const headline = "Future of AI Text Cleaning (What's Coming Next for SEO, Publis
 const description =
   'How AI text cleaning evolves from a copy-paste fix into infrastructure: Unicode normalization, performance-aware cleaning, and content QA pipelines.';
 
-export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({

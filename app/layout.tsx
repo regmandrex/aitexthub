@@ -86,9 +86,6 @@ type RootLayoutProps = {
   children: ReactNode;
 };
 
-// Cache at edge for 24h to reduce Fast Origin Transfer (layout is now static)
-export const revalidate = 86400;
-
 const SITE_SCHEMA = webSiteSchema();
 const NAV_SCHEMA = siteNavigationSchema();
 

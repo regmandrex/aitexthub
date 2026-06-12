@@ -5,7 +5,6 @@ import { buildMeta } from '@/lib/seo-meta';
 const modelName = 'ChatGPT';
 const modelSlug = 'chatgpt';
 
-export const revalidate = 2592000;
 
 const faqs: FaqItem[] = [
   {

@@ -11,7 +11,6 @@ const headline = 'Fix ChatGPT Formatting: Headings, Lists, Spacing & Layout Issu
 const description =
   'Fix broken headings, lists, spacing, and layout issues after copying ChatGPT text into WordPress, email editors, CMSs, and docs.';
 
-export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({

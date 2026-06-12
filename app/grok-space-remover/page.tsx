@@ -5,7 +5,6 @@ import { buildMeta } from '@/lib/seo-meta';
 const modelName = 'Grok';
 const modelSlug = 'grok';
 
-export const revalidate = 2592000;
 
 const faqs: FaqItem[] = [
   {

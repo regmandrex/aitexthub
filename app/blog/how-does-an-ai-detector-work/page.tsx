@@ -11,7 +11,6 @@ const headline = 'How Does an AI Detector Work? The Complete Guide';
 const description =
   'AI detectors use perplexity, burstiness, and Unicode scanning to classify text. This guide explains exactly how they work, where they fail, and what that means for your writing.';
 
-export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({ title, description, urlPath });

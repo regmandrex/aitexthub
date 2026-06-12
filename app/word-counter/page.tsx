@@ -11,7 +11,6 @@ import { buildToolMeta } from '@/lib/seo-meta';
 import { siteUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
-export const revalidate = 2592000;
 
 const toolSlug = 'word-counter';
 

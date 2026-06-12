@@ -22,7 +22,6 @@ function RailAd({ side }: { side: 'left' | 'right' }) {
   );
 }
 
-export const revalidate = 2592000;
 
 export async function generateMetadata() {
   const title = 'Perplexity Watermark Cleaner';

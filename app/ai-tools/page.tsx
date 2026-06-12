@@ -3,7 +3,6 @@ import { getAllTools } from '@/lib/tools/registry';
 import { buildMeta } from '@/lib/seo-meta';
 import SearchableToolsList from '@/components/SearchableToolsList';
 
-export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildMeta({

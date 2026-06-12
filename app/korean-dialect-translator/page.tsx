@@ -13,7 +13,6 @@ const title = '사투리 번역기 | 경상도·전라도·제주도 변환 (무
 const description =
   '표준어를 경상도, 전라도, 충청도, 제주도 사투리로 바꿔주는 무료 사투리 번역기입니다. 드라마 대사, 캐릭터 설정, SNS 재미용으로 한국어 문장을 지역별 사투리로 변환해 드립니다.';
 
-export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildMeta({ title, description, urlPath: '/korean-dialect-translator', locale: 'ko_KR' });

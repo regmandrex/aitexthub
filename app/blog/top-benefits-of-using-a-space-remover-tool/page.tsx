@@ -11,7 +11,6 @@ const headline = 'Top Benefits of Using a Space Remover Tool (Save Time & Improv
 const description =
   "Learn how space remover tools save time, prevent errors, and improve document quality for professionals and students.";
 
-export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({

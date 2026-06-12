@@ -11,7 +11,6 @@ const headline = 'Best ChatGPT Cleanup Tools for Cleaner, Faster Publishing';
 const description =
   'Compare real ChatGPT cleanup tools, what they must remove under the hood, and how to choose a stack that protects SEO, UX, and performance.';
 
-export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({

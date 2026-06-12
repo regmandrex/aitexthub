@@ -11,7 +11,6 @@ const headline = 'Invisible Characters in ChatGPT Text: Why They Exist and How t
 const description =
   'A technical deep dive into every type of invisible character found in ChatGPT text: what each one is, why AI produces it, what it does, and how to remove it completely.';
 
-export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({ title, description, urlPath });

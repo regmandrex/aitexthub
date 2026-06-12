@@ -11,7 +11,6 @@ const headline = 'Does ChatGPT Leave a Digital Footprint? Metadata, Watermarks &
 const description =
   'ChatGPT does not embed hidden metadata in exported text, but it does leave detectable Unicode artifacts. Here is what is actually traceable and what is not.';
 
-export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({ title, description, urlPath });

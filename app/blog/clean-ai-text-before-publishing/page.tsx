@@ -11,7 +11,6 @@ const headline = 'Clean AI Text Before Publishing: A Complete Pre-Publish Checkl
 const description =
   'A practical pre-publish framework to remove invisible Unicode, normalize whitespace, optimize structure, and publish AI text safely across CMS, email, docs, and landing pages.';
 
-export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({

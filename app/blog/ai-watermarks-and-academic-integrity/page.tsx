@@ -11,7 +11,6 @@ const headline = 'AI Watermarks and Academic Integrity: What Students Should Kno
 const description =
   'AI watermarks and detection tools affect academic submissions in ways students do not expect. Here is what is actually detected, what causes false positives, and what to do.';
 
-export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({ title, description, urlPath });

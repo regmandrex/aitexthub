@@ -12,7 +12,6 @@ const headline =
 const description =
   'Step-by-step guide to cleaning text online using space remover tools. Perfect for documents, coding, and content creation.';
 
-export const revalidate = 2592000;
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildArticleMeta({

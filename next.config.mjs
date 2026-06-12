@@ -36,6 +36,36 @@ const nextConfig = {
         permanent: false,
       },
       {
+        source: '/index',
+        destination: '/',
+        permanent: true,
+      },
+      // Legacy model watermark remover slugs -> watermark cleaner slugs
+      ...[
+        'claude',
+        'mistral',
+        'deepseek',
+        'grok',
+        'gemini',
+        'perplexity',
+        'llama',
+      ].map((model) => ({
+        source: `/${model}-watermark-remover`,
+        destination: `/${model}-watermark-cleaner`,
+        permanent: true,
+      })),
+      // Strip legacy locale prefixes (site is English-only at root paths)
+      {
+        source: '/:locale(es|fr|ko|zh-cn|en)/:path*',
+        destination: '/:path*',
+        permanent: true,
+      },
+      {
+        source: '/:locale(es|fr|ko|zh-cn|en)',
+        destination: '/',
+        permanent: true,
+      },
+      {
         source: '/all-tools',
         destination: '/ai-tools',
         permanent: true,

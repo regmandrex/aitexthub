@@ -14,7 +14,6 @@ import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
 import { spaceRemoverFaqs } from '@/lib/tools/spaceRemoverFaqs';
 
-export const revalidate = 2592000;
 
 const toolSlug = 'space-remover';
 
