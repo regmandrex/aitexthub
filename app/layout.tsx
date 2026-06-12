@@ -70,7 +70,7 @@ export async function generateMetadata(): Promise<Metadata> {
       type: 'website',
     },
     twitter: {
-      card: 'summary',
+      card: 'summary_large_image',
       title: 'GPT Clean Up Tools - Free AI Text Cleanup Utilities',
       description: 'Free AI text cleanup tools - remove hidden Unicode, fix spacing, clean ChatGPT output, and normalize text for publishing.',
     },

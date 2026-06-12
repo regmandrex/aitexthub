@@ -76,21 +76,20 @@ export const blogPosts: Array<{
   { slug: 'chatgpt-formatting-fixer-for-word-and-docs', title: 'ChatGPT Formatting Fixer for Word and Docs', description: 'Why ChatGPT formatting breaks in documents and the clean workflow to keep spacing, headings, bullets, and PDF export stable.', date: 'Jan 2026' },
 ];
 
-/** Slugs for sitemap (blog/ + slug). */
-export function getBlogSitemapSlugs(): string[] {
-  return ['blog', ...blogPosts.map((p) => `blog/${p.slug}`)];
-}
-
 const MONTH_NAMES: Record<string, number> = {
   Jan: 0, Feb: 1, Mar: 2, Apr: 3, May: 4, Jun: 5,
   Jul: 6, Aug: 7, Sep: 8, Oct: 9, Nov: 10, Dec: 11,
 };
 
-/** Convert "Feb 2026" / "Jan 2026" to RFC 822 pubDate for RSS. */
-export function blogDateToRfc822(dateStr: string): string {
+/** Convert "Feb 2026" / "Jan 2026" to a UTC Date (first of the month). */
+export function blogDateToDate(dateStr: string): Date {
   const [monthName, yearStr] = dateStr.trim().split(/\s+/);
   const year = parseInt(yearStr || '2026', 10);
   const month = MONTH_NAMES[monthName?.slice(0, 3) ?? ''] ?? 0;
-  const d = new Date(Date.UTC(year, month, 1, 0, 0, 0));
-  return d.toUTCString();
+  return new Date(Date.UTC(year, month, 1, 0, 0, 0));
+}
+
+/** Convert "Feb 2026" / "Jan 2026" to RFC 822 pubDate for RSS. */
+export function blogDateToRfc822(dateStr: string): string {
+  return blogDateToDate(dateStr).toUTCString();
 }

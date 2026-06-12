@@ -25,7 +25,7 @@ export function buildMeta({ title, description, urlPath }: MetaInput): Metadata 
       type: 'website',
     },
     twitter: {
-      card: 'summary',
+      card: 'summary_large_image',
       title,
       description,
     },

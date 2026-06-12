@@ -2,7 +2,6 @@ import type { Metadata } from 'next';
 import { getToolPageBySlug } from '@/lib/seo/registry';
 
 const BASE_URL = 'https://gptcleanuptools.com';
-const OG_IMAGE = `${BASE_URL}/brand/gpt-clean-up-tools.png`;
 
 type MetaInput = {
   title: string;
@@ -33,13 +32,12 @@ export function buildMeta({ title, description, urlPath, canonicalTo, locale = '
       siteName: 'GPTCLEANUP AI',
       type: 'website',
       locale,
-      images: [{ url: OG_IMAGE, alt: 'GPT CLEAN UP Tools' }],
+      // og:image comes from app/opengraph-image.tsx (file convention, 1200x630)
     },
     twitter: {
-      card: 'summary',
+      card: 'summary_large_image',
       title,
       description,
-      images: [OG_IMAGE],
     },
   };
 }

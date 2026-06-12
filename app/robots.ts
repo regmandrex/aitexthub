@@ -5,8 +5,8 @@ export default function robots(): MetadataRoute.Robots {
     rules: {
       userAgent: '*',
       allow: '/',
+      disallow: ['/api/', '/account', '/auth-error', '/login', '/signup'],
     },
     sitemap: 'https://gptcleanuptools.com/sitemap.xml',
   };
 }
-
