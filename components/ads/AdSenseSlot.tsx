@@ -122,7 +122,7 @@ export default function AdSenseSlot({ className, style }: AdSenseSlotProps) {
   const classes = [isReady ? 'adsbygoogle' : null, className].filter(Boolean).join(' ');
 
   return (
-    <div className={['min-h-[100px]', className].filter(Boolean).join(' ')} style={style}>
+    <div className={['min-h-[280px]', className].filter(Boolean).join(' ')} style={style}>
       <ins
         ref={slotRef}
         className={classes}

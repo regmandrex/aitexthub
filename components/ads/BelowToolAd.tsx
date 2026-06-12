@@ -91,7 +91,7 @@ export default function BelowToolAd() {
   }, []);
 
   return (
-    <div className="mt-6 w-full">
+    <div className="mt-6 w-full min-h-[280px]">
       <ins
         ref={slotRef}
         className="adsbygoogle"
