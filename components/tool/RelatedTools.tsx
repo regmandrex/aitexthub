@@ -54,14 +54,18 @@ export function RelatedTools({
   const modeTools = rotateModeTools(modeToolsRaw, currentSlug, (t) => t.slug);
 
   const limitedModelTools = modelTools.slice(0, maxItems);
-  
+
   // Only show mode tools if there are no model tools, or if mode tools are significantly different
-  // This prevents showing redundant "Other Text Cleaner Tools" when "Other ChatGPT Tools" is already shown
-  const shouldShowModeTools = 
-    showModeTools && 
-    currentTool.mode !== 'watermark-cleaner' &&
-    limitedModelTools.length === 0; // Only show mode tools if no model tools exist
-  
+  // This prevents showing redundant "Other Text Cleaner Tools" when "Other ChatGPT Tools" is already shown.
+  // Exception: watermark-cleaner pages without a model family (e.g. image/video product
+  // watermark removers) would otherwise show zero links and become orphaned, which hurts
+  // internal linking / crawl signals — so fall back to mode siblings for them too.
+  const wouldBeOrphan = limitedModelTools.length === 0;
+  const shouldShowModeTools =
+    showModeTools &&
+    wouldBeOrphan &&
+    (currentTool.mode !== 'watermark-cleaner' || modeToolsRaw.length > 0);
+
   // Show more generator tools when in generator mode so name generators and others all get visibility
   const modeMax = currentTool.mode === 'generator' ? Math.max(maxItems, 12) : maxItems;
   const limitedModeTools = shouldShowModeTools ? modeTools.slice(0, modeMax) : [];
