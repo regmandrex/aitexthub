@@ -15,7 +15,7 @@ export default function HumanizerUpsellCard({ variant = 'cleanup', compact = fal
   const [visible, setVisible] = useState(false);
   useEffect(() => { const t = setTimeout(() => setVisible(true), 80); return () => clearTimeout(t); }, []);
 
-  const headline = variant === 'cleanup' ? 'Processing complete!' : 'Watermark stripped!';
+  const headline = variant === 'cleanup' ? 'Processing complete!' : 'Metadata removed!';
   const subline =
     variant === 'cleanup'
       ? 'Next step: Humanize this text to pass'

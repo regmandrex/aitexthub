@@ -67,6 +67,7 @@ import {
   GenericWatermarkTool,
   RankTrackerTool,
 } from '@/components/tools/GenericToolFamilyPanels';
+import { ImageWatermarkCleanerTool } from '@/components/tools/ImageWatermarkCleanerTool';
 // ChatGPT tools
 import { ChatGPTDetectorTool } from '@/components/tools/ChatGPTDetectorTool';
 import { ChatGPTHumanizerTool } from '@/components/tools/ChatGPTHumanizerTool';
@@ -272,11 +273,11 @@ export async function ToolPageRenderer({ slug }: ToolPageRendererProps) {
         />
       )
     ) : tool.ui.kind === 'watermark-remover' ? (
-      <GenericWatermarkTool
-        mode="remove"
-        media={slug.includes('video') ? 'video' : 'image'}
-        modelName={tool.model}
-      />
+      slug.includes('video') ? (
+        <GenericWatermarkTool mode="remove" media="video" modelName={tool.model} />
+      ) : (
+        <ImageWatermarkCleanerTool modelName={tool.model} />
+      )
     ) : undefined;
 
   return (
