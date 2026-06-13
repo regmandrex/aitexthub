@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import { JsonLd } from '@/components/JsonLd';
 import AdSenseSlot from '@/components/ads/AdSenseSlot';
 import BelowToolAd from '@/components/ads/BelowToolAd';
@@ -219,10 +220,10 @@ const article = (
 
     <h2>How to Detect and Remove Invisible Characters</h2>
     <p>
-      Invisible characters are useful for the purposes described above, but they can cause problems in professional contexts — string matching failures, hidden data in published content, word count inflation, and unexpected behavior in code editors and databases. If you receive text that may contain invisible characters, use the <a href="/invisible-character-detector" className="text-blue-600 hover:underline">Invisible Character Detector</a> to identify exactly which invisible characters are present and where.
+      Invisible characters are useful for the purposes described above, but they can cause problems in professional contexts — string matching failures, hidden data in published content, word count inflation, and unexpected behavior in code editors and databases. If you receive text that may contain invisible characters, use the <Link href="/invisible-character-detector" className="text-blue-600 hover:underline">Invisible Character Detector</Link> to identify exactly which invisible characters are present and where.
     </p>
     <p>
-      To remove invisible characters entirely, use the <a href="/invisible-character-remover" className="text-blue-600 hover:underline">Invisible Character Remover</a>. It scans every Unicode code point in your text and strips all invisible characters — zero-width spaces, word joiners, non-breaking spaces, Hangul fillers, soft hyphens, byte-order marks — in a single pass. It also reports a count of what was removed.
+      To remove invisible characters entirely, use the <Link href="/invisible-character-remover" className="text-blue-600 hover:underline">Invisible Character Remover</Link>. It scans every Unicode code point in your text and strips all invisible characters — zero-width spaces, word joiners, non-breaking spaces, Hangul fillers, soft hyphens, byte-order marks — in a single pass. It also reports a count of what was removed.
     </p>
     <p>
       The relationship between this page and the remover is complementary: this page is for intentionally creating invisible text, the remover is for cleaning invisible text from content where it is unwanted. Both tools are free with no account required.

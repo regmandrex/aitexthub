@@ -1,13 +1,13 @@
 'use client';
-import { useState, useEffect } from 'react';
+import { useSyncExternalStore } from 'react';
 import { useAdBlockDetector } from '@/hooks/useAdBlockDetector';
+
+const emptySubscribe = () => () => {};
 
 export default function AdBlockNotice() {
   const { adBlocked, checking } = useAdBlockDetector();
-  const [mounted, setMounted] = useState(false);
-
-  // Only render after mount to avoid SSR hydration mismatch
-  useEffect(() => { setMounted(true); }, []);
+  // false during SSR/hydration, true after mount — avoids hydration mismatch
+  const mounted = useSyncExternalStore(emptySubscribe, () => true, () => false);
 
   if (!mounted || checking || !adBlocked) return null;
 

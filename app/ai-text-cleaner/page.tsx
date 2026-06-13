@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { JsonLd } from '@/components/JsonLd';
 import FAQSection from '@/components/FAQSection';
@@ -346,7 +347,7 @@ const article = (
       <p><strong>Remove AI markers from text</strong> is the core operation this tool performs. AI markers are the invisible Unicode characters — zero-width spaces, word joiners, directional marks, byte-order marks — that AI models insert as part of their text generation process. To <strong>remove AI markers from text</strong>, you do not need to know which specific characters are present or where they are located. This tool scans the entire text, identifies every AI marker by Unicode category, and removes it. The remove AI markers from text operation runs automatically every time you click Clean Text.</p>
 
       <h2>Looking to Clean AI Text from Any Model?</h2>
-      <p>If you use multiple AI tools and want a single destination for all of them, the dedicated <a href="/clean-ai" className="text-blue-600 hover:underline font-medium">Clean AI Text tool</a> covers every model — ChatGPT, Claude, Gemini, DeepSeek, Grok, Llama, Mistral, and any future release — with the same one-click process. It targets the same full range of invisible Unicode characters, with a writeup specifically focused on the <a href="/clean-ai" className="text-blue-600 hover:underline font-medium">clean AI</a> workflow for users who move between models regularly.</p>
+      <p>If you use multiple AI tools and want a single destination for all of them, the dedicated <Link href="/clean-ai" className="text-blue-600 hover:underline font-medium">Clean AI Text tool</Link> covers every model — ChatGPT, Claude, Gemini, DeepSeek, Grok, Llama, Mistral, and any future release — with the same one-click process. It targets the same full range of invisible Unicode characters, with a writeup specifically focused on the <Link href="/clean-ai" className="text-blue-600 hover:underline font-medium">clean AI</Link> workflow for users who move between models regularly.</p>
 
       <h2>AI Scrubber: Scrub AI Text Clean in One Click</h2>
       <p>An <strong>AI scrubber</strong> removes the invisible artifacts, formatting noise, and hidden Unicode characters that AI models embed in their generated text. This AI text cleaner functions as a full <strong>AI scrubber</strong> — paste your AI output, click Clean Text, and every hidden character is scrubbed from the text in under a second. A free <strong>AI scrubber</strong> that runs in your browser with no account or upload required, it handles output from every major AI model: ChatGPT, Claude, Gemini, DeepSeek, Grok, Llama, Mistral, and Perplexity. Use this <strong>ai scrubber free</strong> tool as your standard first step before pasting any AI-generated content into a CMS, document, email, or data system.</p>

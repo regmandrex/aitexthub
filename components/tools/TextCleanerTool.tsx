@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { useState } from 'react';
 import HumanizerUpsellCard from '../HumanizerUpsellCard';
@@ -32,20 +32,57 @@ const defaultOptions: Options = {
   removeZeroWidth: true,
 };
 
+type CleanStats = {
+  hiddenRemoved: number;
+  nbspConverted: number;
+  blankLinesRemoved: number;
+  spaceRunsCollapsed: number;
+  totalChars: number;
+  totalLines: number;
+};
+
 export function TextCleanerTool() {
   const [input, setInput] = useState('');
   const [output, setOutput] = useState('');
+  const [stats, setStats] = useState<CleanStats | null>(null);
   const [options, setOptions] = useState<Options>(defaultOptions);
 
   const toggle = (key: keyof Options) => setOptions((prev) => ({ ...prev, [key]: !prev[key] }));
 
   const handleClean = () => {
     let text = input;
-    if (options.removeZeroWidth) text = stripZeroWidth(text);
-    if (options.unicodeNormalize) text = normalizeUnicode(text);
-    if (options.removeBlankLines) text = text.split(/\n+/).filter((line) => line.trim() !== '').join('\n');
-    if (options.normalizeWhitespace) text = text.replace(/[ \t]+/g, ' ');
+    let hiddenRemoved = 0;
+    let nbspConverted = 0;
+    let blankLinesRemoved = 0;
+    let spaceRunsCollapsed = 0;
+
+    if (options.removeZeroWidth) {
+      hiddenRemoved = (text.match(/[\u200B-\u200D\uFEFF\u2060]/g) || []).length;
+      text = stripZeroWidth(text);
+    }
+    if (options.unicodeNormalize) {
+      // NFKC folds NBSP (and narrow NBSP) into regular spaces
+      nbspConverted = (text.match(/[\u00A0\u202F]/g) || []).length;
+      text = normalizeUnicode(text);
+    }
+    if (options.removeBlankLines) {
+      const before = text.split('\n').length;
+      text = text.split(/\n+/).filter((line) => line.trim() !== '').join('\n');
+      blankLinesRemoved = before - text.split('\n').length;
+    }
+    if (options.normalizeWhitespace) {
+      spaceRunsCollapsed = (text.match(/[ \t]{2,}/g) || []).length;
+      text = text.replace(/[ \t]+/g, ' ');
+    }
     setOutput(text);
+    setStats({
+      hiddenRemoved,
+      nbspConverted,
+      blankLinesRemoved,
+      spaceRunsCollapsed,
+      totalChars: text.length,
+      totalLines: text === '' ? 0 : text.split('\n').length,
+    });
   };
 
   return (
@@ -93,6 +130,7 @@ export function TextCleanerTool() {
           onClick={() => {
             setInput('');
             setOutput('');
+            setStats(null);
             setOptions(defaultOptions);
           }}
           className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
@@ -107,6 +145,26 @@ export function TextCleanerTool() {
           Copy output
         </button>
       </div>
+
+      {stats && (
+        <div className="flex flex-wrap gap-2">
+          {([
+            [stats.hiddenRemoved, 'Hidden removed'],
+            [stats.nbspConverted, 'NBSP converted'],
+            [stats.blankLinesRemoved, 'Blank lines removed'],
+            [stats.spaceRunsCollapsed, 'Space runs collapsed'],
+            [stats.totalChars, 'Total chars'],
+            [stats.totalLines, 'Total lines'],
+          ] as Array<[number, string]>).map(([value, label]) => (
+            <span
+              key={label}
+              className="inline-flex items-center gap-1 rounded-full border border-slate-200 bg-white px-3 py-1 text-xs text-slate-700 shadow-sm"
+            >
+              <span className="font-semibold text-slate-900">{value}</span> {label}
+            </span>
+          ))}
+        </div>
+      )}
 
       <label className="block space-y-2">
         <span className="text-sm font-semibold text-slate-900">Output</span>

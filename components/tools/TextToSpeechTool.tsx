@@ -1,8 +1,10 @@
 "use client";
 
-import { useState, useEffect, useRef, useCallback } from 'react';
+import { useState, useEffect, useRef, useCallback, useSyncExternalStore } from 'react';
 import ToolTextArea from './ToolTextArea';
 import HumanizerUpsellCard from '../HumanizerUpsellCard';
+
+const emptySubscribe = () => () => {};
 
 export function TextToSpeechTool() {
   const [text, setText] = useState('');
@@ -11,7 +13,12 @@ export function TextToSpeechTool() {
   const [rate, setRate] = useState(1);
   const [pitch, setPitch] = useState(1);
   const [volume, setVolume] = useState(1);
-  const [isSupported, setIsSupported] = useState(true);
+  // true during SSR (assume supported), real browser capability after hydration
+  const isSupported = useSyncExternalStore(
+    emptySubscribe,
+    () => typeof window.speechSynthesis !== 'undefined',
+    () => true,
+  );
   const [isSpeaking, setIsSpeaking] = useState(false);
   const [isPaused, setIsPaused] = useState(false);
   const utteranceRef = useRef<SpeechSynthesisUtterance | null>(null);
@@ -40,14 +47,12 @@ export function TextToSpeechTool() {
   }, [selectedVoice]);
 
   useEffect(() => {
-    if (typeof window === 'undefined') return;
-    if (!window.speechSynthesis) {
-      setIsSupported(false);
-      return;
-    }
-    loadVoices();
+    if (typeof window === 'undefined' || !window.speechSynthesis) return;
+    let active = true;
+    queueMicrotask(() => { if (active) loadVoices(); });
     window.speechSynthesis.onvoiceschanged = loadVoices;
     return () => {
+      active = false;
       window.speechSynthesis.onvoiceschanged = null;
     };
   }, [loadVoices]);

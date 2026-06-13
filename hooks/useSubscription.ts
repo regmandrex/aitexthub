@@ -38,10 +38,8 @@ export function useSubscription(): Subscription | undefined {
   const [sub, setSub] = useState<Subscription | undefined>(cached ?? undefined);
 
   useEffect(() => {
-    if (cached) {
-      setSub(cached);
-      return;
-    }
+    // fetchSubscription resolves from the module cache when available, so the
+    // setState always happens in a microtask, never synchronously in the effect.
     let active = true;
     fetchSubscription().then((data) => {
       if (active) setSub(data);

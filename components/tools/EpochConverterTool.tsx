@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef } from 'react';
+import { useState, useSyncExternalStore } from 'react';
 
 function detectAndConvert(raw: string): { seconds: number; ms: number } | null {
   const n = Number(raw.trim());
@@ -47,6 +47,11 @@ function Row({ label, value }: { label: string; value: string }) {
   );
 }
 
+function subscribeToSecondTick(onTick: () => void) {
+  const id = setInterval(onTick, 1000);
+  return () => clearInterval(id);
+}
+
 export function EpochConverterTool() {
   const [tab, setTab] = useState<'toDate' | 'toEpoch'>('toDate');
   const [tsInput, setTsInput] = useState('');
@@ -54,13 +59,13 @@ export function EpochConverterTool() {
   const [tsError, setTsError] = useState('');
   const [dtInput, setDtInput] = useState('');
   const [dtResult, setDtResult] = useState<Record<string, string> | null>(null);
-  const [nowTs, setNowTs] = useState(Math.floor(Date.now() / 1000));
-  const timer = useRef<ReturnType<typeof setInterval> | null>(null);
-
-  useEffect(() => {
-    timer.current = setInterval(() => setNowTs(Math.floor(Date.now() / 1000)), 1000);
-    return () => { if (timer.current) clearInterval(timer.current); };
-  }, []);
+  // Live clock via external store: avoids baking a build-time timestamp into
+  // the static HTML (hydration mismatch) and re-renders once per second.
+  const nowTs = useSyncExternalStore(
+    subscribeToSecondTick,
+    () => Math.floor(Date.now() / 1000),
+    () => 0,
+  );
 
   const convertTs = () => {
     const parsed = detectAndConvert(tsInput);

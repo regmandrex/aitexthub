@@ -264,7 +264,7 @@ function WriteUp() {
           <code>const match = '2024-03-15'.match(/(\d&#123;4&#125;)-(\d&#123;2&#125;)-(\d&#123;2&#125;)/);</code>
         </p>
         <p>
-          <code>// match[1] = '2024', match[2] = '03', match[3] = '15'</code>
+          <code>{"// match[1] = '2024', match[2] = '03', match[3] = '15'"}</code>
         </p>
         <p>
           Capturing groups also create backreference targets: <code>\1</code> later in the pattern matches

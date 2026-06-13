@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { JsonLd } from '@/components/JsonLd';
 import AdSenseSlot from '@/components/ads/AdSenseSlot';
 import BelowToolAd from '@/components/ads/BelowToolAd';
@@ -127,7 +128,7 @@ const article = (
       <li>Keyboard layout diagrams showing the space bar position</li>
     </ul>
     <p>
-      The <strong>blank space symbol</strong> is not a space substitute for general use — if you need actual invisible blank space for usernames or messages, use the invisible characters on the <a href="/invisible-text-copy-paste" className="text-blue-600 hover:underline">Invisible Text Copy and Paste</a> page. The <strong>blank space symbol</strong> is a visible indicator of space, not an invisible space itself.
+      The <strong>blank space symbol</strong> is not a space substitute for general use — if you need actual invisible blank space for usernames or messages, use the invisible characters on the <Link href="/invisible-text-copy-paste" className="text-blue-600 hover:underline">Invisible Text Copy and Paste</Link> page. The <strong>blank space symbol</strong> is a visible indicator of space, not an invisible space itself.
     </p>
 
     <h2>Em Dash in Different Style Guides</h2>
@@ -193,7 +194,7 @@ const article = (
       <li>Sometimes problematic in code, CSV files, and systems expecting ASCII text</li>
     </ul>
     <p>
-      Copy the correct curly quote characters from this page for manual use. If you have AI-generated text with curly quotes that you need to convert to straight quotes for technical use, the <a href="/format-remover" className="text-blue-600 hover:underline">Format Remover</a> converts all curly quotes to straight quotes automatically.
+      Copy the correct curly quote characters from this page for manual use. If you have AI-generated text with curly quotes that you need to convert to straight quotes for technical use, the <Link href="/format-remover" className="text-blue-600 hover:underline">Format Remover</Link> converts all curly quotes to straight quotes automatically.
     </p>
 
     <h2>Why AI Text Contains Em Dashes and How to Remove Them</h2>
@@ -207,7 +208,7 @@ const article = (
       <li>En dashes (–) in ranges instead of hyphens (-)</li>
     </ul>
     <p>
-      For publishing to the web, word processors, and most content systems, these typographic characters are correct and desirable. But for technical use cases — code, CSV data, JSON, command-line input, some CMS platforms — these characters need to be converted to their plain ASCII equivalents. The <a href="/format-remover" className="text-blue-600 hover:underline">Format Remover</a> handles this conversion automatically: em dash ? hyphen, curly quotes ? straight quotes, ellipsis ? three periods, en dash ? hyphen. One click cleans all typographic characters from any text.
+      For publishing to the web, word processors, and most content systems, these typographic characters are correct and desirable. But for technical use cases — code, CSV data, JSON, command-line input, some CMS platforms — these characters need to be converted to their plain ASCII equivalents. The <Link href="/format-remover" className="text-blue-600 hover:underline">Format Remover</Link> handles this conversion automatically: em dash ? hyphen, curly quotes ? straight quotes, ellipsis ? three periods, en dash ? hyphen. One click cleans all typographic characters from any text.
     </p>
 
     <h2>Free Em Dash Copy and Paste — No Account, No Limits</h2>

@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import FAQSection from "../../components/FAQSection";
 import FaqJsonLd from "../../components/FaqJsonLd";
 import type { FaqItem } from "../../components/faqData";
@@ -470,7 +471,7 @@ export default async function GrokWatermarkCleanerPage() {
           </p>
           <p>
             Not sure if your Grok text has watermarks? Run it through the{' '}
-            <a href="/grok-watermark-detector" className="text-brand-700 underline">Grok Watermark Detector</a>
+            <Link href="/grok-watermark-detector" className="text-brand-700 underline">Grok Watermark Detector</Link>
             {' '}first before cleaning.
           </p>
         </section>

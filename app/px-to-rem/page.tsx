@@ -260,7 +260,7 @@ const writeUp = (
       Phase 3 — Convert using our bulk converter. Paste all your unique px values, get rem equivalents, replace throughout your CSS. Use find-and-replace carefully: replacing "24px" with "1.5rem" everywhere could affect borders and shadows. Work column by column: replace all font-size px values first, then all margin/padding values.
     </p>
     <p>
-      Phase 4 — Automated conversion with PostCSS. The postcss-pxtorem plugin converts px to rem at build time: <code>// postcss.config.js &#123; plugins: &#123; 'postcss-pxtorem': &#123; rootValue: 16, propList: ['font-size', 'margin', 'padding', 'line-height'] &#125; &#125; &#125;</code>. The propList controls which CSS properties are converted — exclude borders, outlines, and box-shadow pixel values.
+      Phase 4 — Automated conversion with PostCSS. The postcss-pxtorem plugin converts px to rem at build time: <code>{"// postcss.config.js { plugins: { 'postcss-pxtorem': { rootValue: 16, propList: ['font-size', 'margin', 'padding', 'line-height'] } } }"}</code>. The propList controls which CSS properties are converted — exclude borders, outlines, and box-shadow pixel values.
     </p>
     <p>
       Phase 5 — Testing. Test at 100%, 125%, 150%, and 200% browser zoom. Test with browser font size set to 20px and 24px. Verify all text, spacing, and layout elements scale correctly. Check that 1px borders, box shadows, and outlines are not scaled (they should remain pixel-precise at all zoom levels).
