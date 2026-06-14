@@ -8,6 +8,7 @@ import { BreadcrumbJsonLdAndLang } from '../components/BreadcrumbJsonLdAndLang';
 import StickyFooterAd from '../components/ads/StickyFooterAd';
 import AdBlockNotice from '../components/ads/AdBlockNotice';
 import AdSenseRouteRefresh from '../components/ads/AdSenseRouteRefresh';
+import EzoicRouteAds from '../components/ads/EzoicRouteAds';
 import DeferredThirdPartyScripts from '../components/DeferredThirdPartyScripts';
 import { webSiteSchema, siteNavigationSchema } from '../lib/schema/site';
 import '../styles/globals.css';
@@ -116,6 +117,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <body className={`${inter.variable} bg-slate-50 text-slate-900 antialiased pb-[80px] md:pb-[120px] lg:pb-[140px]`}>
         <DeferredThirdPartyScripts />
         <AdSenseRouteRefresh />
+        <EzoicRouteAds />
         <JsonLd data={SITE_SCHEMA} />
         <JsonLd data={NAV_SCHEMA} />
         <BreadcrumbJsonLdAndLang />
