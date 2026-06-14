@@ -103,7 +103,11 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <script data-cfasync="false" src="https://cmp.gatekeeperconsent.com/min.js" />
         {/* eslint-disable-next-line @next/next/no-sync-scripts */}
         <script data-cfasync="false" src="https://the.gatekeeperconsent.com/cmp.min.js" />
-        <script async src="https://www.ezojs.com/ezoic/sa.min.js" />
+        {/* Loaded synchronously (no async) so it executes AFTER the CMP privacy
+            scripts above — Ezoic's debugger flags cmp.min.js loading after
+            sa.min.js when sa.min.js is async and wins the race. */}
+        {/* eslint-disable-next-line @next/next/no-sync-scripts */}
+        <script src="https://www.ezojs.com/ezoic/sa.min.js" />
         <script
           dangerouslySetInnerHTML={{
             __html:
