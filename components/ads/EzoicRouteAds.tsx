@@ -15,9 +15,9 @@ type Ezstandalone = {
  * root layout <head>) defines window.ezstandalone; queueing work on
  * ezstandalone.cmd runs it once the script is ready, so no manual polling.
  *
- * showAds() with no arguments displays every placeholder present on the page.
- * We don't hardcode placement IDs — those come from the Ezoic dashboard once
- * placements are created, at which point we can pass explicit IDs here.
+ * Activates placement 100 (the EzoicPlaceholder rendered in ToolPageShell).
+ * Passing the id explicitly is harmless if the placeholder is absent on a
+ * given route; add more ids here as placements are created in the dashboard.
  *
  * Ezoic's standalone API isn't SPA-aware, so on client-side route changes we
  * destroy existing placeholders before re-showing for the new page.
@@ -37,7 +37,7 @@ export default function EzoicRouteAds() {
         } catch {
           // first load has nothing to destroy
         }
-        ez.showAds?.();
+        ez.showAds?.(100);
       });
     }, 300);
 
