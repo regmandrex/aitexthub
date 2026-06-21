@@ -8,7 +8,6 @@ import { BreadcrumbJsonLdAndLang } from '../components/BreadcrumbJsonLdAndLang';
 import StickyFooterAd from '../components/ads/StickyFooterAd';
 import AdBlockNotice from '../components/ads/AdBlockNotice';
 import AdSenseRouteRefresh from '../components/ads/AdSenseRouteRefresh';
-import EzoicRouteAds from '../components/ads/EzoicRouteAds';
 import DeferredThirdPartyScripts from '../components/DeferredThirdPartyScripts';
 import { webSiteSchema, siteNavigationSchema } from '../lib/schema/site';
 import '../styles/globals.css';
@@ -94,28 +93,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" dir="ltr">
       <head>
-        {/* Ezoic integration — must load as high as possible in <head>, privacy
-            scripts before the header script, no defer/conditional loading.
-            Ezoic requires these CMP scripts to load synchronously, which is
-            intentionally at odds with Next's no-sync-scripts rule.
-            See https://docs.ezoic.com/docs/ezoicads/integration/ */}
-        {/* eslint-disable-next-line @next/next/no-sync-scripts */}
-        <script data-cfasync="false" src="https://cmp.gatekeeperconsent.com/min.js" />
-        {/* eslint-disable-next-line @next/next/no-sync-scripts */}
-        <script data-cfasync="false" src="https://the.gatekeeperconsent.com/cmp.min.js" />
-        {/* Loaded synchronously (no async) so it executes AFTER the CMP privacy
-            scripts above — Ezoic's debugger flags cmp.min.js loading after
-            sa.min.js when sa.min.js is async and wins the race. */}
-        {/* eslint-disable-next-line @next/next/no-sync-scripts */}
-        <script src="https://www.ezojs.com/ezoic/sa.min.js" />
-        <script
-          dangerouslySetInnerHTML={{
-            __html:
-              'window.ezstandalone = window.ezstandalone || {}; ezstandalone.cmd = ezstandalone.cmd || [];',
-          }}
-        />
-        {/* eslint-disable-next-line @next/next/no-sync-scripts */}
-        <script src="https://ezoicanalytics.com/analytics.js" />
         <link rel="preconnect" href="https://pagead2.googlesyndication.com" />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="alternate" type="application/rss+xml" title="GPTCLEANUP AI Blog & Tools RSS Feed" href="https://gptcleanuptools.com/rss.xml" />
@@ -123,7 +100,6 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <body className={`${inter.variable} bg-slate-50 text-slate-900 antialiased pb-[80px] md:pb-[120px] lg:pb-[140px]`}>
         <DeferredThirdPartyScripts />
         <AdSenseRouteRefresh />
-        <EzoicRouteAds />
         <JsonLd data={SITE_SCHEMA} />
         <JsonLd data={NAV_SCHEMA} />
         <BreadcrumbJsonLdAndLang />

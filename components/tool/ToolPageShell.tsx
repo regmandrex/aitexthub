@@ -1,7 +1,6 @@
 import { ReactNode } from 'react';
 import AdSenseSlot from '../ads/AdSenseSlot';
 import BelowToolAd from '../ads/BelowToolAd';
-import EzoicPlaceholder from '../ads/EzoicPlaceholder';
 import { Breadcrumbs } from '../Breadcrumbs';
 import ProFunnelBanner from '../ProFunnelBanner';
 
@@ -66,9 +65,6 @@ export function ToolPageShell({ tool, ui, related, children }: ToolPageShellProp
         </section>
 
         <BelowToolAd />
-
-        {/* Ezoic placement 100 — activated via ezstandalone.showAds() in EzoicRouteAds. */}
-        <EzoicPlaceholder id={100} />
 
         {related}
 
