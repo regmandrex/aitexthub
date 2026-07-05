@@ -28,170 +28,85 @@ function createWriteUp() {
   return (
     <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
-        <h2>Boxer Name Generator – Fighter Nickname Ideas</h2>
-        <h2>Introduction</h2>
+        <h2>Boxer Name Generator – Fighter Names &amp; Ring Nicknames</h2>
         <p>
-          This guide explains how to use a Boxer name generator to create fighter nicknames for Boxer and other games and fiction. The tool runs in your browser and produces unique, memorable name ideas at the click of a button. It is designed for players who want Boxer name ideas quickly without sign-up or download. The generator does not store data and runs entirely in your browser. You get 1–24 names per run and can run it as often as you like. Always check your game or story for availability before committing to a name.
+          Boxing is the sport of the great nickname. &quot;Iron&quot; Mike Tyson, &quot;Sugar&quot; Ray Robinson, Muhammad Ali &quot;The Greatest,&quot; Manny &quot;Pac-Man&quot; Pacquiao, &quot;Prince&quot; Naseem Hamed — in the fight game, the nickname is half the legend, doing as much work as the record. This boxer name generator builds fighter names and ring nicknames in that tradition, mixing hard-hitting nouns, metals, animals, and hometown-hero framing so you can find a name that sounds like it belongs on a fight poster. It runs entirely in your browser, needs no sign-up, and gives you 1–24 names per run.
         </p>
         <p>
-          People search for Boxer name ideas and character name generators when setting up a new profile, an esports handle, or a stream name. This Boxer name generator serves that intent with one free, browser-based tool. Whether you need a single standout character name or a shortlist of options, the generator gives you a pool of ideas. Names must be unique on each service, so verifying availability on Boxer or your chosen platform is an essential step after generating ideas.
-        </p>
-
-        <h2>What Is a Boxer Name Generator?</h2>
-        <p>
-          A Boxer name generator is an online tool that creates fighter nicknames suitable for Boxer and other games and fiction. You get unique name ideas at the click of a button. The generator combines curated boxer-style words and elements at random so each run produces new combinations. The output is for inspiration only; you must check your platform for availability. This free Boxer name generator runs in your browser with no sign-up and does not send generated names to any server.
-        </p>
-        <p>
-          The output is plain text, one name per line. You can copy the full list and paste it into a notes app, then check your game or story for availability and pick one. Many users run the Boxer name generator multiple times to build a shortlist before deciding. Because names are created locally, your choices stay private and nothing is stored on our servers.
-        </p>
-        <p>
-          Boxer name generators are useful when you are tired of reusing the same username or when you want a fresh character name that fits your style. The tool does not guarantee that a name is available; it only suggests combinations. Always confirm availability on your game or story before you commit to a new username.
+          Whether you are creating a fighter for a boxing video game&apos;s career mode, a sports novel or screenplay, a tabletop or role-play character, or just a hard-hitting handle for yourself, the generator gives you a fast pool of ideas to build a fighter around. The guide below breaks down how real boxing names and nicknames are built — the fighter&apos;s name, the ring moniker, and the fighting identity behind it — so the name you pick actually reads like a boxer, not a random word pair.
         </p>
 
-        <h2>Why This Boxer Name Generator Matters</h2>
+        <h2>How a Boxing Name Is Built</h2>
         <p>
-          Choosing a memorable Boxer name or character name can be time-consuming. A Boxer name generator speeds up brainstorming. Instead of staring at a blank field, you get options in seconds. You can run it on a phone or desktop, copy the names you like, and then check availability on your game or story. The tool is free and does not require an account, so there is no friction to trying many ideas.
+          Boxing names have two layers, and the best fighters nail both. Understanding the structure helps you turn a generated idea into a complete fighter:
         </p>
-        <p>
-          The generator also keeps your ideas private. Names are created in your browser and are not sent to our servers. You can use it in a private or incognito window if you prefer. Because generation is local, there is no risk of your shortlist being stored or logged. That matters when you are testing ideas before you settle on a final Boxer name or character name.
-        </p>
-        <p>
-          A good Boxer name generator also standardizes the workflow: set how many names you want, click generate, copy the list, and check availability. You get a consistent way to explore username ideas without writing scripts or visiting multiple sites. The output is easy to paste into notes or a document so you can track which names you have already checked on Boxer or other platforms.
-        </p>
+        <ul>
+          <li><strong>The fighter&apos;s name.</strong> The name on the record and the fight poster — sometimes a real-sounding name, sometimes stylized. It should look good in lights and be easy for a ring announcer to call.</li>
+          <li><strong>The ring nickname.</strong> The moniker that captures the fighter&apos;s style or spirit: &quot;Iron,&quot; &quot;The Hitman,&quot; &quot;Sugar,&quot; &quot;The Golden Boy.&quot; This is where the identity lives, and it is what commentators and fans repeat.</li>
+          <li><strong>The fighting identity.</strong> The character the name signals — knockout puncher, slick defensive genius, come-forward brawler, hometown hero. A name like &quot;Hurricane&quot; promises a very different fight than &quot;The Professor.&quot;</li>
+        </ul>
 
-        <h2>How the Boxer Name Generator Works (Step by Step)</h2>
+        <h2>Where Boxing Nicknames Come From</h2>
         <p>
-          When you open the page, you choose how many names you want per run (1–24). Clicking &quot;Generate names&quot; triggers the tool to randomly combine curated boxer-style elements in your browser. Each run is independent; no names or settings are sent to a server. The result is a list of Boxer name ideas, one per line. You can copy the full list with one click and paste it into a notes app. To get more ideas, run the generator again. The tool does not check Boxer or any platform for availability—you must do that yourself.
+          Ring nicknames tend to draw from a handful of well-worn wells, and knowing them helps you spot the strongest generated options:
         </p>
+        <ul>
+          <li><strong>Power and metal.</strong> &quot;Iron,&quot; &quot;Steel,&quot; &quot;Hammer,&quot; &quot;The Bomber&quot; — names that promise a knockout and sound heavy when announced.</li>
+          <li><strong>Animals.</strong> &quot;The Bull,&quot; &quot;Cobra,&quot; &quot;The Lion&quot; — animal nicknames map a fighting style to an instantly readable image.</li>
+          <li><strong>Speed and sweetness.</strong> &quot;Sugar,&quot; &quot;Lightning,&quot; &quot;The Flash&quot; — for slick, fast, skillful fighters rather than sluggers.</li>
+          <li><strong>Hometown and heritage.</strong> &quot;The Pride of&quot; a city, or a nod to a fighter&apos;s roots — framing that turns a boxer into a people&apos;s champion.</li>
+          <li><strong>Menace and mystique.</strong> &quot;The Executioner,&quot; &quot;Nightmare,&quot; &quot;The Destroyer&quot; — intimidation built right into the name.</li>
+        </ul>
+
+        <h2>Names by Fighting Style</h2>
         <p>
-          The underlying word lists are designed to sound like gaming fighter nicknames: bold, memorable, and easy to type. The generator shuffles and combines these elements so that each run produces different combinations. That randomness helps you discover names you might not have thought of on your own. Because everything runs in the browser, the Boxer name generator works offline once the page is loaded and does not depend on a backend service.
+          The kind of fighter you are shaping should steer which generated names you keep:
         </p>
+        <ul>
+          <li><strong>Knockout puncher.</strong> Heavy, explosive names — &quot;Dynamite,&quot; &quot;The Hammer,&quot; &quot;Concrete&quot; — that sell one-punch power.</li>
+          <li><strong>Slick boxer / defensive genius.</strong> Smooth, clever names — &quot;Sugar,&quot; &quot;The Magician,&quot; &quot;Silk&quot; — that suggest skill over force.</li>
+          <li><strong>Swarmer / pressure fighter.</strong> Relentless, forward-driving names — &quot;The Bull,&quot; &quot;Hurricane,&quot; &quot;Machine&quot; — that match a come-forward style.</li>
+          <li><strong>Counter-puncher / technician.</strong> Cooler, cerebral names — &quot;The Professor,&quot; &quot;The Surgeon&quot; — that signal precision.</li>
+          <li><strong>Showman.</strong> Flashy, self-promoting names built around gold, glory, and swagger.</li>
+        </ul>
+
+        <h2>Nicknames Across the Weight Classes</h2>
         <p>
-          There are no hidden steps. You set the count, click generate, and receive a list. Copying is one click; pasting into your own document keeps your shortlist in one place. Running the Boxer name generator multiple times is the intended workflow when you want a large pool of character name ideas before checking availability.
+          Weight class subtly shapes what a nickname should evoke. Heavyweight names lean on raw power and destruction — the division of one-punch knockouts wants names like &quot;Iron,&quot; &quot;The Beast,&quot; or &quot;Bronze Bomber.&quot; The lighter divisions, where speed and volume rule, suit quicker, sharper monikers — &quot;Lightning,&quot; &quot;Sugar,&quot; &quot;The Flash.&quot; Middleweight and welterweight, boxing&apos;s glamour divisions, balance both, which is why they produce some of the sport&apos;s most iconic all-rounder nicknames. When you generate a batch, keep the names whose weight and energy match the division your fighter competes in.
         </p>
 
         <h2>How to Use This Boxer Name Generator</h2>
-        <p>Follow these steps to get Boxer name ideas:</p>
         <ol className="list-decimal pl-6 space-y-2">
-          <li>Set how many names you want per run (1–24).</li>
-          <li>Click &quot;Generate names&quot; to get a new list of character name ideas.</li>
-          <li>Use the Copy button to copy all names to your clipboard.</li>
-          <li>Paste into a notes app or document, then check your game or story for availability and pick one.</li>
-          <li>Run again for more options; no account or download is required.</li>
+          <li>Choose how many fighter names you want per run (1–24).</li>
+          <li>Click <strong>Generate names</strong> to get a fresh batch of boxing-style names and nicknames.</li>
+          <li>Sort the list by fighting style and weight class — which sound like knockout artists, which like slick technicians.</li>
+          <li>Use the Copy button to save your shortlist, then pair a favorite name with a ring nickname to complete the fighter.</li>
+          <li>Run again for more options — there is no limit, no account, and no download.</li>
         </ol>
+
+        <h2>Building the Full Fighter Around the Name</h2>
         <p>
-          The Boxer name generator runs in your browser; your settings and generated names are not sent to any server. You can run it as often as you like. Building a shortlist of five to ten options before checking availability on Boxer is a good habit, since popular usernames are often taken. Have backups ready so that if your first choice is unavailable, you can try the next name on your list.
+          A ring name is the anchor, but a memorable boxer needs the rest of the package. Once you have a name you like, decide the fighting identity it implies, then add the details that make it stick: a signature style, a home city and walkout, a record and a rival, and a story arc — the undefeated prospect, the comeback veteran, the underdog challenger. &quot;The Golden Boy&quot; suggests a marketable prospect; &quot;The Executioner&quot; suggests a feared knockout artist. Let the generated name and nickname point the way, and the fighter will feel like someone with a real career behind them.
         </p>
 
-        <h2>Boxer and Gamer Naming Style</h2>
+        <h2>Naming Fictional Fighters for Games and Stories</h2>
         <p>
-          Boxer names and character names often use bold, memorable word combinations: action words, nicknames, or creative spellings. This Boxer name generator uses curated boxer-style elements and combines them at random so you get new combinations that fit that style. The output is for inspiration only; the tool does not check Boxer or any platform for availability. You can use the names as-is or tweak spelling and punctuation to make them your own.
-        </p>
-        <p>
-          Different games and communities favor different styles. Some players prefer short, punchy character names; others like longer usernames. Running the generator multiple times gives you a mix of lengths and styles. Skim the list, mark the ones you like, and then verify each one on your game or story. The Boxer name generator is a starting point—your final choice should fit your personality and the rules of your platform.
+          Boxing fiction lives and dies on believable fighters, and a name is the first thing that sells one. For a career-mode created boxer, pick a name that fits the archetype you are building and that a commentator could plausibly hype. For a novel, film, or comic, use the nickname to telegraph the character&apos;s arc — a cocky &quot;Golden Boy&quot; who must be humbled, a battered &quot;Old Warrior&quot; on one last run. Generate a full division of fighters at once and give each a distinct nickname, and you have a believable field of contenders for your protagonist to climb through.
         </p>
 
-        <h2>When to Use a Boxer Name Generator</h2>
+        <h2>Tips for a Boxing Name That Lands</h2>
         <p>
-          Use this Boxer name generator when you need Boxer or boxer-style username ideas quickly. Common use cases include creating a new Boxer account or updating your profile name, choosing an in-game name for esports or casual play, and picking a stream or social handle. The same tool works for other platforms—Discord, Xbox, PlayStation, or social profiles—as inspiration. Names must be unique on each platform, so always check availability before committing.
-        </p>
-        <p>
-          Another good time to use a Boxer name generator is when you are rebranding. If you have used the same character name for years and want a fresh identity, generating a batch of ideas helps you explore options without pressure. Run the tool several times, paste results into one document, and remove duplicates. Then check Boxer and any other platforms you use to see which names are still available. Having a shortlist saves time compared to checking one idea at a time.
+          Say it out loud in a ring announcer&apos;s voice — a great boxing name sounds good drawn out over a microphone before the opening bell. Keep the nickname short and punchy; the best ones are one or two words fans can chant. Make sure it fits the fighter you actually want: a menacing nickname on a friendly, technical boxer confuses the story unless the contrast is deliberate. And steer clear of names too close to a real legend unless you are intentionally writing a tribute, since &quot;Iron Mike&quot; or &quot;The Greatest&quot; are indelibly tied to their owners.
         </p>
 
-        <h2>Use Cases in Detail: Profiles, Esports, and Streams</h2>
+        <h2>Common Mistakes to Avoid</h2>
         <p>
-          Players use the Boxer name generator when creating a new Boxer account or refreshing their profile name. Esports and streamers use it for in-game names or stream handles. The same tool works for other platforms—Discord, Xbox, PlayStation, or social—as inspiration; you must check each platform for availability. Run the generator multiple times to build a shortlist, then check which names are free on your platform. The Boxer name generator does not reserve or validate names; it only suggests combinations.
-        </p>
-        <p>
-          Content creators often need a consistent handle across Steam, streaming, and social media. Generating a batch of character name ideas lets you test different options before you commit. Copy the names you like into a single list, then check availability on each service. If one name is taken on Boxer but free elsewhere, you can still use it on the platforms where it is available, or use the generator again to find alternatives that work everywhere.
+          A few missteps can flatten an otherwise strong fighter name. The first is a nickname that fights the style — calling a defensive counter-puncher &quot;The Destroyer&quot; sets the wrong expectation. The second is over-length; stacking too many words buries the memorable core that fans actually shout. The third is copying a legend so closely the name reads as imitation rather than homage. The fourth is a name that is hard for a commentator to say quickly under the noise of a crowd. When you review a generated batch, keep the names that are punchy, style-appropriate, distinctive, and easy to announce.
         </p>
 
-        <h2>Tips for Choosing a Boxer Username</h2>
+        <h2>Privacy</h2>
         <p>
-          Pick a name that is easy to remember and type. Short character names are easier to say in voice chat and less likely to be mistyped. Run the Boxer name generator multiple times to get a shortlist, then check your game or story for availability. Have a few backups in case your first choice is taken. Avoid names that might be mistaken for someone else or that break platform rules. The generator gives you ideas only; the final choice is yours.
-        </p>
-        <p>
-          Consider how the name will look in different contexts: in-game, on a stream overlay, or in a friend list. Some combinations look great in one font but odd in another. If you plan to use the same handle across multiple games and platforms, check availability everywhere before you invest in branding. The Boxer name generator is a free way to explore options without committing until you have confirmed that your chosen Boxer name or character name is available.
-        </p>
-
-        <h2>Running the Boxer Name Generator in Batches</h2>
-        <p>
-          When you need many username ideas, run the Boxer name generator multiple times. Each run gives up to 24 names. Paste each run into the same document and remove duplicates if any appear. Check availability on your platform for each name you like. There is no daily or total limit; you can run the generator as often as you want. Batching is useful when you are setting up several accounts, testing ideas for a team, or simply want a large pool of character name options before making a decision.
-        </p>
-        <p>
-          Keeping a single document with all your generated Boxer name ideas makes it easy to track which names you have already checked. Mark names as &quot;taken&quot; or &quot;available&quot; as you go. That way you avoid re-checking the same name on Boxer or another platform. The Boxer name generator does not remember previous runs, so your document is your only record of the ideas you have collected.
-        </p>
-
-        <h2>Privacy and Local Processing</h2>
-        <p>
-          This Boxer name generator runs entirely in your browser. When you set the number of names and click generate, the names are created locally on your device. Your choices and the generated names are not sent to our servers. We do not store your inputs or the generated list. No account or login is required. That means your shortlist of character name ideas stays on your machine unless you choose to copy it somewhere else.
-        </p>
-        <p>
-          Because generation is local, the tool is suitable for use in private or incognito windows. If you close the tab, the generated list is gone unless you have copied it. There is no server-side log of what names you generated or how many times you ran the Boxer name generator. This privacy model is intentional: username brainstorming is personal, and the tool is designed so that you control where your ideas go.
-        </p>
-
-        <h2>Copying and Exporting Names</h2>
-        <p>
-          Use the Copy button to copy all generated Boxer name ideas to your clipboard (one per line). Paste into a notes app or document. Check your game or story for availability before committing to a name. The names are plain text, so they work in any editor or form. If you paste into a spreadsheet, each line can go in its own cell for easy tracking. The Boxer name generator does not export to a file; copying and pasting is the intended way to save your shortlist.
-        </p>
-
-        <h2>Limits and Batch Size</h2>
-        <p>
-          You can request 1–24 names per run with this Boxer name generator. There is no daily or total limit. Run the generator again for more options. No download or account is required. If you need more than 24 names in one go, run the tool multiple times and paste the results into one document. Removing duplicates is up to you; the generator does not track previous output.
-        </p>
-
-        <h2>No Download or Account Required</h2>
-        <p>
-          This Boxer name generator runs entirely in your browser. You do not need to download software or create an account. Open the page, set how many names you want, and click generate. The tool is free and works on desktop, tablet, and phone. That makes it easy to use when you are away from your main device or when you want to quickly generate character name ideas without installing anything.
-        </p>
-
-        <h2>Who Uses a Boxer Name Generator?</h2>
-        <p>
-          Players use the Boxer name generator when creating or updating a Boxer profile, or when they want a new character name for other platforms. Esports and streamers use it for in-game names or stream handles. The same tool works for Discord, Xbox, PlayStation, or social profiles—always check availability on each platform. Educators and workshop leaders sometimes use it to demonstrate username creation or digital identity in a classroom setting. No account or download is required on our site.
-        </p>
-        <p>
-          Anyone who needs a steady supply of username ideas can benefit. Whether you are a casual gamer, a competitive player, or a content creator, the Boxer name generator provides a fast way to explore options. The key is to treat the output as inspiration and always verify availability on Boxer and any other platform where you plan to use the name.
-        </p>
-
-        <h2>Getting the Most Out of the Boxer Name Generator</h2>
-        <p>
-          Run the generator several times and paste all results into one document. Skim for names that fit your style and check your platform for availability. Shortlist five to ten options so you have backups if your first choice is taken. The Boxer name generator does not check Boxer or any platform; you must do that yourself. When you have a shortlist, check availability one by one. Usernames are often taken on popular services, so having several options saves time.
-        </p>
-        <p>
-          Another tip is to try different batch sizes. Sometimes generating 24 names at once gives you a good mix; other times you may prefer smaller runs so you can review each set before generating more. The tool is flexible. Use it whenever you need new Boxer name ideas or character name inspiration. Bookmarking the page makes it easy to return when you are ready to refresh your profile or create a new account.
-        </p>
-
-        <h2>Typical Workflow for the Boxer Name Generator</h2>
-        <p>
-          A typical workflow is: open the page, set the number of names (e.g. 12 or 24), click generate, then copy the list. Paste into a notes app. Check your game or story for availability for each name you like. If your first choice is taken, try the next. Run the Boxer name generator again for more options. The whole process takes a few minutes. No account or download is required. Bookmark the page for quick access when you need new username ideas. The tool is free and runs in your browser with no sign-up.
-        </p>
-
-        <h2>What This Tool Does NOT Do</h2>
-        <ul>
-          <li>It does not check Boxer or any platform for username availability.</li>
-          <li>It does not reserve or hold names for you.</li>
-          <li>It does not store your generated list or your settings.</li>
-          <li>It does not connect to Steam, Discord, or any external gaming service.</li>
-        </ul>
-        <p>
-          This Boxer name generator produces name ideas only. It does not validate availability, create accounts, or manage your profile. You must check Boxer or your chosen platform yourself and follow that platform&apos;s rules when creating or changing your username. The tool is a brainstorming aid, not a replacement for checking availability.
-        </p>
-
-        <h2>Privacy and Security Notes</h2>
-        <p>
-          The Boxer name generator runs entirely in your browser. It does not send data to a server and does not store generated values. This is helpful for quick brainstorming and offline use. If you refresh the page, the last generated list is cleared. Copy any names you want to keep before closing or refreshing.
-        </p>
-        <p>
-          For account security, never share your Boxer password or other credentials. The generator only suggests usernames; it does not handle login or account creation. When you check availability on Boxer or another platform, use the official site or app and ensure you are on a secure connection. The Boxer name generator is a standalone tool and does not integrate with any login system.
-        </p>
-
-        <h2>Final Summary and When to Use This Tool</h2>
-        <p>
-          The Boxer name generator provides a fast way to create username and character name ideas for Boxer and other games and fiction. Set the number of names (1–24) and run as often as you like. Copy results and check your platform for availability. The tool runs locally in your browser with no sign-up. Keep a shortlist of options in case your first choice is taken. No download or account is required. The generator is free and works on any device.
-        </p>
-        <p>
-          Use this Boxer name generator when you need Boxer name ideas, character name inspiration, or a quick way to explore options before checking availability. It is best for brainstorming, rebranding, and building a shortlist. Always verify availability on Boxer or your chosen platform before committing to a name. The tool is a practical free resource for gaming fighter nicknames.
+          This boxer name generator runs entirely in your browser. When you set a count and generate, the fighter names are created locally on your device — nothing is uploaded, logged, or stored on our servers. Close the tab and the list is gone unless you copied it, so your character ideas stay yours.
         </p>
       </div>
     </section>
@@ -199,30 +114,29 @@ function createWriteUp() {
 }
 
 const pageFaqs: FaqItem[] = [
-  { category: 'General', question: 'What is a Boxer name generator?', answer: 'A Boxer name generator is an online tool that creates fighter nicknames for Boxer and other games and fiction. You get unique Boxer name ideas at the click of a button. The generator combines curated boxer-style words at random in your browser so each run produces new combinations. This free Boxer name generator runs locally with no sign-up and does not send generated names to any server. Always check your game or story for availability before committing to a name.' },
-  { category: 'Usage', question: 'How do I use the Boxer name generator?', answer: 'Set how many names you want per run (1–24), click "Generate names" to get a new list of character name ideas, then use the Copy button to copy all names to your clipboard. Paste into a notes app and check your game or story for availability. Run again for more options; no sign-up is required. The Boxer name generator runs in your browser so your settings and generated names are not sent to any server. Building a shortlist of five to ten options before checking availability is a good habit.' },
-  { category: 'General', question: 'Is the Boxer name generator free?', answer: 'Yes. This Boxer name generator is free to use in your browser. You can generate Boxer name ideas as often as you like without creating an account or paying. The tool runs locally on your device and does not require a download. There is no daily or total limit on how many times you can run the generator.' },
-  { category: 'Use cases', question: 'Can I use the names for Steam?', answer: 'Yes. The Boxer name generator produces username ideas that you can use on Steam. Names must be unique on the platform, so always check Steam\'s availability before committing. Run the generator multiple times to build a shortlist of character name ideas, then check which names are available on Steam. The tool does not reserve or validate names; it only suggests combinations for you to verify on the platform.' },
-  { category: 'Privacy', question: 'Is my data sent to a server when I use the Boxer name generator?', answer: 'No. This Boxer name generator runs in your browser. When you set the number of names and click generate, the names are created locally on your device. Your choices and the generated Boxer name ideas are not sent to our servers. We do not store your inputs or the generated list. Generation is fully local and private.' },
-  { category: 'Compatibility', question: 'Does the Boxer name generator work on mobile?', answer: 'Yes. The Boxer name generator runs in a web browser and works on desktop, tablet, and phone. You do not need to install an app. Open the page, choose how many names you want, then generate. On a phone you can generate a short list and copy it into notes or check availability on Steam\'s app. The tool is responsive and works on any device with a modern browser.' },
-  { category: 'Limits', question: 'How many names can I generate with the Boxer name generator?', answer: 'You can request 1–24 names per run with this Boxer name generator. If you need more than 24 character name ideas, run the generator again; each run produces a new random set. There is no daily or total limit. Paste multiple runs into one document and remove duplicates if needed. The batch size is designed to keep the list manageable while giving you enough Boxer name options to shortlist.' },
-  { category: 'Usage', question: 'Can I copy the names from the Boxer name generator?', answer: 'Yes. Use the Copy button on this Boxer name generator to copy all generated names to your clipboard. Paste into a notes app or document. The names are plain text, one per line, so they work in any editor or form. Check your game or story for availability before choosing a name. Copying is the intended way to save your shortlist of character name ideas.' },
-  { category: 'General', question: 'Do I need an account to use the Boxer name generator?', answer: 'No. This Boxer name generator works without sign-up or login. The tool runs entirely in your browser. You do not need to create an account on our site to use it. Open the page, set how many Boxer name ideas you want, click generate, and copy the results. No email, password, or registration is required.' },
-  { category: 'Use cases', question: 'Can I use the Boxer name generator for other platforms?', answer: 'Yes. The names work as ideas for any gaming or social platform—Discord, Xbox, PlayStation, or others. The Boxer name generator is built for Steam-style character names but the output can inspire usernames elsewhere. Check each platform\'s availability; names must be unique on each service. The generator does not check availability for you, so always verify on the platform where you plan to use the name.' },
-  { category: 'Privacy', question: 'Do you store the names I generate with the Boxer name generator?', answer: 'No. Generation happens in your browser. We do not receive or store the Boxer name ideas or your settings. The Boxer name generator runs locally on your device. You can use the tool in a private or incognito window if you prefer. If you refresh the page, the last generated list is cleared unless you have already copied it.' },
-  { category: 'Limits', question: 'Can I get more than 24 names from the Boxer name generator?', answer: 'Each run of this Boxer name generator gives up to 24 names. To get more character name ideas, run the generator again; each run produces a new random set. You can paste multiple runs into one document and then remove duplicates. There is no daily or total limit. Batching runs is the intended workflow when you need a large pool of Boxer name options.' },
-  { category: 'General', question: 'Why "Steam" specifically in a Boxer name generator?', answer: 'Boxer is a major gaming platform, and people often search for Boxer name ideas and character name generators. The Boxer name generator serves that intent and produces names that fit Boxer and similar gaming environments. The same ideas work for other platforms—Discord, Xbox, PlayStation—as inspiration. Use the names as character names wherever you need a unique username; always check availability on the platform you choose.' },
-  { category: 'Use cases', question: 'Can I use the Boxer name generator for esports?', answer: 'Yes. Use the Boxer name generator as inspiration for in-game names or stream handles. Run it multiple times to get a shortlist of character name ideas, then check availability on your platform. The tool is free and runs in your browser with no sign-up. Many esports and streamers use Boxer name generators to brainstorm handles before verifying availability on Steam, Twitch, or other services.' },
-  { category: 'Technical', question: 'How are the names generated in the Boxer name generator?', answer: 'This Boxer name generator uses curated boxer-style words and elements. When you click generate, the tool randomly combines these in your browser so each run is different. No names or settings are sent to a server. The result is for inspiration only; we do not check Boxer or any platform for availability. The word lists are designed to sound like gaming fighter nicknames—bold, memorable, and easy to type.' },
-  { category: 'General', question: 'Are the names from the Boxer name generator unique?', answer: 'The names are randomly combined from our word list, so each run can produce new combinations. We do not check Boxer or any platform for availability. You must check yourself whether a Boxer name or character name is available before using it on your profile. The generator helps you discover ideas; uniqueness on a given platform depends on that platform\'s current registrations.' },
-  { category: 'Use cases', question: 'Can teachers use the Boxer name generator?', answer: 'Yes. Teachers can use this Boxer name generator for creative or tech-related activities—for example when students are learning about usernames, digital identity, or online profiles. Emphasize that the tool is for inspiration and that names must be checked for availability on any platform. The Boxer name generator is free and runs in the browser with no sign-up, so it is easy to use in a classroom or workshop setting.' },
-  { category: 'General', question: 'How do I cite the Boxer name generator?', answer: 'For academic or formal use you can cite this Boxer name generator as a source of inspiration for fighter nicknames. The generated names are algorithm-produced; you can use them freely. A brief acknowledgment is optional. We do not require attribution. The tool is a free, browser-based utility for Boxer name ideas and character name brainstorming.' },
-  { category: 'Use cases', question: 'Can I use the Boxer name generator for a new Boxer account?', answer: 'Yes. When creating a new Boxer account you need a unique username. Run this Boxer name generator to get character name ideas, copy the list, then check Boxer for availability. Pick a name that is available and that you like. The tool runs in your browser with no sign-up. Building a shortlist of five to ten options before you start the sign-up process saves time, since many Boxer names are already taken.' },
-  { category: 'General', question: 'Do the names from the Boxer name generator work for streaming?', answer: 'Yes. The Boxer name generator produces username ideas that can work for streaming platforms, in-game names, or social handles. Use the names as inspiration and check your platform for availability. Run the generator multiple times to build a shortlist of options. Many streamers use Boxer name generators to brainstorm stream handles before checking availability on Twitch, YouTube, or other services.' },
-  { category: 'Best practices', question: 'What is the best workflow for the Boxer name generator?', answer: 'Open the page, set the number of names (e.g. 12 or 24), click generate, then copy the list. Paste into a notes app. Check your game or story for availability for each name you like. If your first choice is taken, try the next. Run the Boxer name generator again for more options. Keep a shortlist of five to ten character name ideas so you have backups. The tool is free and runs in your browser with no sign-up.' },
-  { category: 'Best practices', question: 'Should I run the Boxer name generator multiple times?', answer: 'Yes. Running the Boxer name generator multiple times is the intended workflow when you want a large pool of Boxer name ideas. Paste each run into one document and remove duplicates if any appear. Then check availability on your game or story for each name you like. Having a shortlist saves time compared to checking one idea at a time. There is no daily or total limit on how many times you can run the generator.' },
-  { category: 'Troubleshooting', question: 'Why is my first choice from the Boxer name generator taken?', answer: 'Popular fighter nicknames are often already in use on Boxer and other platforms. The Boxer name generator does not check availability; it only suggests combinations. Always have a shortlist of five to ten options so you have backups. Run the generator again for more Boxer name ideas and check availability on your platform before committing. This is normal when using any name generator for games and fiction.' },
-  { category: 'Troubleshooting', question: 'Can I use the Boxer name generator offline?', answer: 'Yes. Once the page is loaded, the Boxer name generator runs entirely in your browser and does not require a network connection to generate names. You can generate character name ideas offline. Copying and pasting also works offline. You will need a connection only to open the page initially and to check availability on Boxer or another platform.' },
+  { category: 'General', question: 'What is a boxer name generator?', answer: 'A boxer name generator is a free browser tool that creates fighter names and ring nicknames for boxing characters. It combines hard-hitting nouns, metals, animals, and hometown-hero framing at random so each run produces new ideas — the kind of name and moniker you would see on a fight poster. It is built for career-mode fighters in boxing games, sports fiction, and role-play. It runs locally in your browser with no sign-up and gives you 1–24 names per run.' },
+  { category: 'Usage', question: 'How do I use the boxer name generator?', answer: 'Choose how many fighter names you want (1–24), click Generate names, and review the batch. Sort the results by fighting style and weight class — which sound like knockout artists, which like slick technicians — then copy your shortlist. Pair a favorite name with a ring nickname like "Iron" or "The Hitman" to complete the fighter. Run again for more; there is no sign-up and no limit.' },
+  { category: 'General', question: 'Is the boxer name generator free?', answer: 'Yes. It is completely free to use in your browser with no account, no download, and no limit on how many fighter names you generate. Use it as often as you like while building a boxer for a game, a story, or a role-play.' },
+  { category: 'Naming', question: 'What makes a good boxing nickname?', answer: 'A great boxing nickname is short, punchy, and captures the fighter\'s style — "Iron" for a knockout puncher, "Sugar" for a slick technician, "The Bull" for a pressure fighter. It should sound good drawn out by a ring announcer and be easy for fans to chant. The best ones do as much work as the fighter\'s record, telling you who the boxer is before the first bell.' },
+  { category: 'Naming', question: 'What is the difference between a fighter\'s name and a ring nickname?', answer: 'The fighter\'s name is what appears on the record and the poster; the ring nickname is the moniker that captures their style or spirit — "Iron" Mike, "The Greatest," "The Golden Boy." The nickname is what commentators and fans repeat. A good generated result gives you the fighter\'s name; you add the nickname to complete the identity.' },
+  { category: 'Naming', question: 'Where do boxing nicknames come from?', answer: 'Ring nicknames usually draw from a few wells: power and metal ("Iron," "Hammer"), animals ("The Bull," "Cobra"), speed and sweetness ("Sugar," "Lightning"), hometown and heritage ("The Pride of" a city), and menace ("The Executioner," "Nightmare"). Knowing these sources helps you spot the strongest generated options and match one to your fighter\'s image.' },
+  { category: 'Naming', question: 'How do I match a nickname to fighting style?', answer: 'Let the style steer the name. Knockout punchers suit explosive names (Dynamite, The Hammer); slick defensive boxers suit smooth names (Sugar, The Magician); pressure fighters suit relentless names (The Bull, Hurricane); technicians suit cerebral names (The Professor, The Surgeon); and showmen suit flashy, gold-and-glory names. Generate a batch and filter for the ones that sell your fighter\'s style.' },
+  { category: 'Naming', question: 'Does weight class affect the nickname?', answer: 'It does. Heavyweight names lean on raw power and destruction (Iron, The Beast, Bronze Bomber); lighter divisions, ruled by speed and volume, suit quicker names (Lightning, Sugar, The Flash); and the glamour divisions in the middle balance both. Keep the generated names whose weight and energy match the division your fighter competes in.' },
+  { category: 'Use cases', question: 'Can I use these names for a boxing video game career mode?', answer: 'Yes. The generated fighter names work well for created boxers in career or franchise modes. Generate a batch, pick a name that fits the archetype and division you plan to build, and add a ring nickname a commentator could hype. Because the names are original combinations, they suit a created fighter rather than duplicating a real champion.' },
+  { category: 'Use cases', question: 'Can I use the generator for a boxing novel or screenplay?', answer: 'Yes. Writers use it to name original fighters for novels, films, and comics. Use the nickname to telegraph the character\'s arc — a cocky "Golden Boy" who gets humbled, a battered "Old Warrior" on one last run. Generate a whole division of contenders at once, give each a distinct nickname, and you have a believable field for your protagonist to climb.' },
+  { category: 'Naming', question: 'How do I build a full fighter around the name?', answer: 'Start with the name and nickname, decide the fighting identity they imply, then add a signature style, a home city and walkout, a record and a rival, and a story arc — undefeated prospect, comeback veteran, underdog challenger. The name is the anchor; those details make the fighter feel like someone with a real career.' },
+  { category: 'Naming', question: 'Should my boxer nickname copy a real legend?', answer: 'Avoid nicknames too close to a real legend unless you are intentionally writing a tribute. "Iron Mike" and "The Greatest" are indelibly tied to their owners, so a near-copy reads as imitation for an original fighter. Use the generator to find something with the same energy — power, speed, menace — without borrowing a famous boxer\'s identity.' },
+  { category: 'Technical', question: 'How are the fighter names generated?', answer: 'The generator draws on curated word lists of boxing-style nouns, adjectives, metals, and animals, then combines them at random in your browser so each run is different. It is designed to produce names and nicknames that sound like they belong on a fight poster. Nothing is sent to a server; generation happens entirely on your device.' },
+  { category: 'Usage', question: 'How many fighter names can I generate at once?', answer: 'You can request 1–24 fighter names per run. For a full division, run it several times and paste the results into one document, then sort them by weight class and style. There is no daily or total limit on how many times you can generate.' },
+  { category: 'Usage', question: 'Can I copy the names I like?', answer: 'Yes. Use the Copy button to copy the whole batch to your clipboard as plain text, one name per line. Paste it into your notes, a character sheet, or your story draft. Copying is the intended way to save a shortlist while you decide which fighter name and nickname to commit to.' },
+  { category: 'General', question: 'Do I need an account to use the boxer name generator?', answer: 'No. There is no sign-up or login. Open the page, choose how many fighter names you want, generate, and copy the results. No email, password, or registration is required.' },
+  { category: 'Privacy', question: 'Is my data stored when I use the generator?', answer: 'No. The generator runs entirely in your browser. The fighter names are created locally on your device and are never uploaded, logged, or stored on our servers. If you refresh or close the tab, the list is cleared unless you copied it, so your character ideas stay private.' },
+  { category: 'Compatibility', question: 'Does the boxer name generator work on mobile?', answer: 'Yes. It runs in any modern browser and works on phones, tablets, and desktop with no app to install. Generate fighter names on your phone while watching a fight or building a character on the go, and copy your favorites into notes.' },
+  { category: 'Best practices', question: 'What is the best way to test a boxing name?', answer: 'Say it out loud in a ring announcer\'s voice — a great boxing name sounds good drawn out over a microphone before the opening bell. Then check the nickname is short, chantable, and matches the style you want. If a menacing nickname lands on a friendly technical boxer, keep it only if that contrast is the point.' },
+  { category: 'Naming', question: 'How do I name a fighter for an underdog story?', answer: 'Underdog fighters often carry humble, gritty, or hometown-hero nicknames rather than flashy ones — a name that sounds like a working fighter who earned every round. Generate a batch and keep the grounded, blue-collar names; save the "Golden Boy" flash for the favored rival your underdog has to beat.' },
+  { category: 'Use cases', question: 'Can I use this for MMA or other combat sports characters?', answer: 'Yes. While the generator is tuned for boxing, the fighter names and nicknames work for MMA, kickboxing, and other combat-sport characters too — the naming instincts (power, animal, speed, menace) carry across. Generate a batch and pick a name whose energy fits the fighter you are creating.' },
+  { category: 'Troubleshooting', question: 'The names feel too similar — how do I get more variety?', answer: 'Run the generator several more times; each run pulls a new random mix. Combine batches, then deliberately sort for different flavors — a power name, a speed name, an animal name — so your shortlist spans styles rather than one tone. Adding your own tweak to a generated name also broadens the range.' },
+  { category: 'Troubleshooting', question: 'Can I use the boxer name generator offline?', answer: 'Yes. Once the page has loaded, generating and copying fighter names works without a network connection, because everything runs in your browser. You only need a connection to open the page initially.' },
 ];
 
 export default async function BoxerNameGeneratorPage() {

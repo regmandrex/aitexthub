@@ -28,170 +28,102 @@ function createWriteUp() {
   return (
     <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
-        <h2>Wrestling Name Generator – Wrestler Name Ideas</h2>
-        <h2>Introduction</h2>
+        <h2>Wrestling Name Generator – Ring Names, Gimmicks &amp; Personas</h2>
         <p>
-          This guide explains how to use a Wrestling name generator to create wrestler names for Wrestling and other games and creative projects. The tool runs in your browser and produces unique, memorable name ideas at the click of a button. It is designed for players who want Wrestling name ideas quickly without sign-up or download. The generator does not store data and runs entirely in your browser. You get 1–24 names per run and can run it as often as you like. Always check your game or story for availability before committing to a name.
+          A great wrestling name does more than sound cool — it tells the crowd who you are before you say a word. &quot;Stone Cold&quot; Steve Austin, The Undertaker, Macho Man Randy Savage, Becky Lynch &quot;The Man&quot;: each name carries a gimmick, an attitude, and a promise about what happens when the bell rings. This wrestling name generator builds ring names in that tradition, mixing tough nouns, action words, and larger-than-life adjectives so you can find a persona that fits your character. It runs entirely in your browser, needs no sign-up, and gives you 1–24 names per run.
         </p>
         <p>
-          People search for Wrestling name ideas and character name generators when setting up a new profile, an esports handle, or a stream name. This Wrestling name generator serves that intent with one free, browser-based tool. Whether you need a single standout character name or a shortlist of options, the generator gives you a pool of ideas. Names must be unique on each service, so verifying availability on Wrestling or your chosen platform is an essential step after generating ideas.
-        </p>
-
-        <h2>What Is a Wrestling Name Generator?</h2>
-        <p>
-          A Wrestling name generator is an online tool that creates wrestler names suitable for Wrestling and other games and creative projects. You get unique name ideas at the click of a button. The generator combines curated wrestling-style words and elements at random so each run produces new combinations. The output is for inspiration only; you must check your platform for availability. This free Wrestling name generator runs in your browser with no sign-up and does not send generated names to any server.
-        </p>
-        <p>
-          The output is plain text, one name per line. You can copy the full list and paste it into a notes app, then check your game or story for availability and pick one. Many users run the Wrestling name generator multiple times to build a shortlist before deciding. Because names are created locally, your choices stay private and nothing is stored on our servers.
-        </p>
-        <p>
-          Wrestling name generators are useful when you are tired of reusing the same username or when you want a fresh character name that fits your style. The tool does not guarantee that a name is available; it only suggests combinations. Always confirm availability on your game or story before you commit to a new username.
+          Whether you are creating a wrestler for a backyard federation, a video-game universe mode, a fan-fiction storyline, or a tabletop role-play, the generator gives you a fast pool of ring-name ideas to build a character around. Below, the guide explains how real wrestling names are constructed — the ring name, the nickname, and the gimmick — so the name you pick actually works as a persona, not just a random pair of words.
         </p>
 
-        <h2>Why This Wrestling Name Generator Matters</h2>
+        <h2>How a Wrestling Ring Name Is Built</h2>
         <p>
-          Choosing a memorable Wrestling name or character name can be time-consuming. A Wrestling name generator speeds up brainstorming. Instead of staring at a blank field, you get options in seconds. You can run it on a phone or desktop, copy the names you like, and then check availability on your game or story. The tool is free and does not require an account, so there is no friction to trying many ideas.
+          Pro wrestling names follow patterns you can lean on. Understanding them helps you turn a generated idea into a complete character:
         </p>
+        <ul>
+          <li><strong>The ring name.</strong> The core identity — sometimes a stylized real name (Randy Orton), sometimes pure invention (Bray Wyatt, Rhea Ripley). It should be easy to chant and look good on a title graphic.</li>
+          <li><strong>The nickname or epithet.</strong> The tag that sums up the gimmick: &quot;The Viper,&quot; &quot;The Rated-R Superstar,&quot; &quot;The Beast Incarnate.&quot; This is where attitude lives, and it is often the part the crowd actually shouts.</li>
+          <li><strong>The gimmick.</strong> The character concept the name signals — monster heel, high-flying underdog, arrogant technician, wildcard brawler. A name like &quot;Deacon Dread&quot; promises a very different match than &quot;Flashy Frankie Gold.&quot;</li>
+        </ul>
+
+        <h2>Heels, Faces, and Naming for Alignment</h2>
         <p>
-          The generator also keeps your ideas private. Names are created in your browser and are not sent to our servers. You can use it in a private or incognito window if you prefer. Because generation is local, there is no risk of your shortlist being stored or logged. That matters when you are testing ideas before you settle on a final Wrestling name or character name.
-        </p>
-        <p>
-          A good Wrestling name generator also standardizes the workflow: set how many names you want, click generate, copy the list, and check availability. You get a consistent way to explore username ideas without writing scripts or visiting multiple sites. The output is easy to paste into notes or a document so you can track which names you have already checked on Wrestling or other platforms.
+          Wrestling divides characters into faces (heroes) and heels (villains), and a name can lean either way. Menacing, harsh-sounding names — hard consonants, words like Dread, Havoc, Venom, Reaper — read as heel and invite boos. Bright, heroic, momentum-driven names — Blaze, Ace, Bolt, Maverick — read as face and cue cheers. Pick a batch, then sort the results by which side of the alignment they suggest; the same generator can seed both a monster villain and a fan-favorite babyface.
         </p>
 
-        <h2>How the Wrestling Name Generator Works (Step by Step)</h2>
+        <h2>Names by Wrestling Style</h2>
         <p>
-          When you open the page, you choose how many names you want per run (1–24). Clicking &quot;Generate names&quot; triggers the tool to randomly combine curated wrestling-style elements in your browser. Each run is independent; no names or settings are sent to a server. The result is a list of Wrestling name ideas, one per line. You can copy the full list with one click and paste it into a notes app. To get more ideas, run the generator again. The tool does not check Wrestling or any platform for availability—you must do that yourself.
+          The kind of wrestler you are shaping should steer which generated names you keep:
         </p>
-        <p>
-          The underlying word lists are designed to sound like gaming wrestler names: bold, memorable, and easy to type. The generator shuffles and combines these elements so that each run produces different combinations. That randomness helps you discover names you might not have thought of on your own. Because everything runs in the browser, the Wrestling name generator works offline once the page is loaded and does not depend on a backend service.
-        </p>
-        <p>
-          There are no hidden steps. You set the count, click generate, and receive a list. Copying is one click; pasting into your own document keeps your shortlist in one place. Running the Wrestling name generator multiple times is the intended workflow when you want a large pool of character name ideas before checking availability.
-        </p>
+        <ul>
+          <li><strong>Powerhouse / monster.</strong> Heavy, physical names — &quot;Titan,&quot; &quot;Crusher,&quot; &quot;The Mountain&quot; — that sell size and dominance.</li>
+          <li><strong>High-flyer / cruiserweight.</strong> Quick, aerial-sounding names — &quot;Sky,&quot; &quot;Falcon,&quot; &quot;Volt&quot; — that match a fast, acrobatic style.</li>
+          <li><strong>Technical wrestler.</strong> Cooler, more precise names that suggest skill and control rather than brute force.</li>
+          <li><strong>Brawler / hardcore.</strong> Rough, dangerous names with an unhinged edge that fit a no-rules, weapons-allowed character.</li>
+          <li><strong>Charismatic showman.</strong> Flashy, self-promoting names — gold, glitz, and swagger built right in.</li>
+        </ul>
 
         <h2>How to Use This Wrestling Name Generator</h2>
-        <p>Follow these steps to get Wrestling name ideas:</p>
         <ol className="list-decimal pl-6 space-y-2">
-          <li>Set how many names you want per run (1–24).</li>
-          <li>Click &quot;Generate names&quot; to get a new list of character name ideas.</li>
-          <li>Use the Copy button to copy all names to your clipboard.</li>
-          <li>Paste into a notes app or document, then check your game or story for availability and pick one.</li>
-          <li>Run again for more options; no account or download is required.</li>
+          <li>Choose how many ring names you want per run (1–24).</li>
+          <li>Click <strong>Generate names</strong> to get a fresh batch of wrestling-style names.</li>
+          <li>Sort the list by gimmick — which sound like heels, which like faces, which fit your wrestler&apos;s style.</li>
+          <li>Use the Copy button to save your shortlist, then pair a favorite ring name with a nickname to complete the persona.</li>
+          <li>Run again for more options — there is no limit, no account, and no download.</li>
         </ol>
+
+        <h2>Building the Full Persona Around the Name</h2>
         <p>
-          The Wrestling name generator runs in your browser; your settings and generated names are not sent to any server. You can run it as often as you like. Building a shortlist of five to ten options before checking availability on Wrestling is a good habit, since popular usernames are often taken. Have backups ready so that if your first choice is unavailable, you can try the next name on your list.
+          A ring name is the anchor, but a memorable wrestler needs the rest of the package. Once you have a name you like, decide the gimmick it implies, then add the details that make it stick: an entrance-worthy nickname, a catchphrase, a signature look, and a finishing move whose name echoes the character. &quot;The Viper&quot; has the RKO; &quot;The Deadman&quot; has the Tombstone. Let the generated name suggest the finisher and the theme, and the character will feel whole rather than assembled from parts.
         </p>
 
-        <h2>Wrestling and Gamer Naming Style</h2>
+        <h2>Tips for a Ring Name That Lands</h2>
         <p>
-          Wrestling names and character names often use bold, memorable word combinations: action words, nicknames, or creative spellings. This Wrestling name generator uses curated wrestling-style elements and combines them at random so you get new combinations that fit that style. The output is for inspiration only; the tool does not check Wrestling or any platform for availability. You can use the names as-is or tweak spelling and punctuation to make them your own.
-        </p>
-        <p>
-          Different games and communities favor different styles. Some players prefer short, punchy character names; others like longer usernames. Running the generator multiple times gives you a mix of lengths and styles. Skim the list, mark the ones you like, and then verify each one on your game or story. The Wrestling name generator is a starting point—your final choice should fit your personality and the rules of your platform.
+          Say it out loud as if an announcer is introducing you — a great wrestling name sounds good bellowed across an arena. Keep it chantable: crowds latch onto short, rhythmic names (&quot;E-C-Dub,&quot; &quot;Y2J,&quot; &quot;Rock&quot;). Make sure it fits the gimmick you actually want to play; a fearsome name on a comedic character can work as deliberate irony, but only if that contrast is the point. And avoid names too close to a famous wrestler unless you are intentionally writing a tribute or parody.
         </p>
 
-        <h2>When to Use a Wrestling Name Generator</h2>
+        <h2>How Ring Names Have Changed Across Wrestling Eras</h2>
         <p>
-          Use this Wrestling name generator when you need Wrestling or wrestling-style username ideas quickly. Common use cases include creating a new Wrestling account or updating your profile name, choosing an in-game name for esports or casual play, and picking a stream or social handle. The same tool works for other platforms—Discord, Xbox, PlayStation, or social profiles—as inspiration. Names must be unique on each platform, so always check availability before committing.
+          Naming conventions in pro wrestling have shifted with the business, and knowing the eras helps you pick a name that fits the tone you want. In the territory and golden age, names leaned on strongman and carnival roots — larger-than-life descriptors, animal comparisons, and regional-hero framing like &quot;The American Dream.&quot; Wrestlers were often billed as giants, monsters, or noble champions, and the names matched that broad, theatrical register.
         </p>
         <p>
-          Another good time to use a Wrestling name generator is when you are rebranding. If you have used the same character name for years and want a fresh identity, generating a batch of ideas helps you explore options without pressure. Run the tool several times, paste results into one document, and remove duplicates. Then check Wrestling and any other platforms you use to see which names are still available. Having a shortlist saves time compared to checking one idea at a time.
-        </p>
-
-        <h2>Use Cases in Detail: Profiles, Esports, and Streams</h2>
-        <p>
-          Players use the Wrestling name generator when creating a new Wrestling account or refreshing their profile name. Esports and streamers use it for in-game names or stream handles. The same tool works for other platforms—Discord, Xbox, PlayStation, or social—as inspiration; you must check each platform for availability. Run the generator multiple times to build a shortlist, then check which names are free on your platform. The Wrestling name generator does not reserve or validate names; it only suggests combinations.
+          The Attitude Era of the late 1990s pushed names in an edgier, more attitude-driven direction. Nicknames became sharper and more personal — &quot;Stone Cold,&quot; &quot;The Rock,&quot; &quot;Degeneration&quot; — reflecting antihero characters who blurred the old face-and-heel line. Catchphrases fused with names so tightly that the epithet often eclipsed the given name entirely.
         </p>
         <p>
-          Content creators often need a consistent handle across Steam, streaming, and social media. Generating a batch of character name ideas lets you test different options before you commit. Copy the names you like into a single list, then check availability on each service. If one name is taken on Wrestling but free elsewhere, you can still use it on the platforms where it is available, or use the generator again to find alternatives that work everywhere.
+          The modern era mixes registers freely. Some stars use stylized real names to feel authentic and relatable; others build fully invented personas with mythic or horror overtones. Independent and international scenes add even more variety, borrowing from lucha libre&apos;s masked-hero tradition, Japanese strong-style seriousness, and British technical heritage. When you generate names, decide which era&apos;s flavor you are chasing and keep the ones that match it — a territory-era giant reads very differently from a modern stylized antihero.
         </p>
 
-        <h2>Tips for Choosing a Wrestling Username</h2>
+        <h2>Naming Women&apos;s Division and Modern Characters</h2>
         <p>
-          Pick a name that is easy to remember and type. Short character names are easier to say in voice chat and less likely to be mistyped. Run the Wrestling name generator multiple times to get a shortlist, then check your game or story for availability. Have a few backups in case your first choice is taken. Avoid names that might be mistaken for someone else or that break platform rules. The generator gives you ideas only; the final choice is yours.
-        </p>
-        <p>
-          Consider how the name will look in different contexts: in-game, on a stream overlay, or in a friend list. Some combinations look great in one font but odd in another. If you plan to use the same handle across multiple games and platforms, check availability everywhere before you invest in branding. The Wrestling name generator is a free way to explore options without committing until you have confirmed that your chosen Wrestling name or character name is available.
+          Women&apos;s wrestling names span the same range as men&apos;s, from fierce and dominant to charismatic and heroic. Characters like &quot;The Man,&quot; &quot;The Queen,&quot; and &quot;Mami&quot; show how a single powerful epithet can define a persona and get an entire arena chanting. When building a women&apos;s division character, treat the nickname as the centerpiece: a strong, ownable tag — one word or a short phrase the crowd can shout back — often does more work than the given name. Generate a batch, then look for names and epithets that project confidence, edge, or star power, and pair them the same way you would for any wrestler.
         </p>
 
-        <h2>Running the Wrestling Name Generator in Batches</h2>
+        <h2>Naming Factions, Stables, and Tag Teams</h2>
         <p>
-          When you need many username ideas, run the Wrestling name generator multiple times. Each run gives up to 24 names. Paste each run into the same document and remove duplicates if any appear. Check availability on your platform for each name you like. There is no daily or total limit; you can run the generator as often as you want. Batching is useful when you are setting up several accounts, testing ideas for a team, or simply want a large pool of character name options before making a decision.
-        </p>
-        <p>
-          Keeping a single document with all your generated Wrestling name ideas makes it easy to track which names you have already checked. Mark names as &quot;taken&quot; or &quot;available&quot; as you go. That way you avoid re-checking the same name on Wrestling or another platform. The Wrestling name generator does not remember previous runs, so your document is your only record of the ideas you have collected.
+          Some of wrestling&apos;s most memorable names belong to groups rather than individuals. Factions and stables — The Four Horsemen, D-Generation X, The Shield, The Bloodline — use collective names that signal a shared identity and a common threat. When naming a group, you have a few reliable patterns: a collective noun with menace (a &quot;Brood,&quot; a &quot;Syndicate,&quot; a &quot;Dynasty&quot;), a shared surname or family framing, or a unifying concept every member embodies. Generate individual ring names first, spot two or three that share a theme, then build the group name around what they have in common. A stable name should feel bigger than any one member while still telling the crowd exactly what the group stands for.
         </p>
 
-        <h2>Privacy and Local Processing</h2>
+        <h2>How a Name Evolves With a Heel or Face Turn</h2>
         <p>
-          This Wrestling name generator runs entirely in your browser. When you set the number of names and click generate, the names are created locally on your device. Your choices and the generated names are not sent to our servers. We do not store your inputs or the generated list. No account or login is required. That means your shortlist of character name ideas stays on your machine unless you choose to copy it somewhere else.
-        </p>
-        <p>
-          Because generation is local, the tool is suitable for use in private or incognito windows. If you close the tab, the generated list is gone unless you have copied it. There is no server-side log of what names you generated or how many times you ran the Wrestling name generator. This privacy model is intentional: username brainstorming is personal, and the tool is designed so that you control where your ideas go.
+          Wrestling characters are not static, and a great storyline often hinges on a heel or face turn — a villain becoming a hero, or vice versa. Names can evolve to signal that shift. A wrestler might keep the core ring name but swap the nickname: the same person can go from a beloved &quot;Ace&quot; to a bitter &quot;Fallen Ace&quot; after turning heel. Others drop a nickname entirely, or add a darker one, to mark a character&apos;s transformation. When you are planning a long story, generate a couple of names or epithets that could plausibly belong to the same character in different moral phases — it gives you a built-in visual and verbal cue for the turn when it comes.
         </p>
 
-        <h2>Copying and Exporting Names</h2>
+        <h2>Worked Examples: From Generated Name to Full Character</h2>
         <p>
-          Use the Copy button to copy all generated Wrestling name ideas to your clipboard (one per line). Paste into a notes app or document. Check your game or story for availability before committing to a name. The names are plain text, so they work in any editor or form. If you paste into a spreadsheet, each line can go in its own cell for easy tracking. The Wrestling name generator does not export to a file; copying and pasting is the intended way to save your shortlist.
+          To see how a single generated name becomes a complete persona, walk through a few examples. Suppose the generator gives you &quot;Dread.&quot; That harsh, one-word name reads as a monster heel; add the nickname &quot;The Nightmare,&quot; a slow menacing entrance, a mask or face paint, and a finisher called &quot;Lights Out,&quot; and you have a fully realized villain. Now take &quot;Bolt.&quot; Bright and fast, it suits a high-flying face; pair it with &quot;The Human Lightning,&quot; an energetic entrance, and an aerial finisher named &quot;Thunderstrike,&quot; and the character sells itself before the first move.
+        </p>
+        <p>
+          A name like &quot;Sterling Gold&quot; suggests an arrogant, flashy showman — give him the epithet &quot;The Million-Dollar Smile,&quot; gaudy ring gear, and a smug catchphrase, and the gimmick writes itself. The point of these examples is the method: the generated name plants the seed, and the gimmick, nickname, look, and finisher grow from it in a consistent direction. Run the generator, pick a name whose tone is clear, then let every other choice reinforce it.
         </p>
 
-        <h2>Limits and Batch Size</h2>
+        <h2>Common Mistakes to Avoid</h2>
         <p>
-          You can request 1–24 names per run with this Wrestling name generator. There is no daily or total limit. Run the generator again for more options. No download or account is required. If you need more than 24 names in one go, run the tool multiple times and paste the results into one document. Removing duplicates is up to you; the generator does not track previous output.
+          A few missteps can undercut an otherwise good ring name. The first is choosing a name that is hard to chant or pronounce — if the crowd cannot easily shout it, it will never catch on, no matter how clever it looks written down. The second is a name that fights the gimmick: a soft, gentle name on a monster heel confuses the audience unless the contrast is deliberate. The third is over-length; stacking too many words (&quot;The Unstoppable Crimson War-Machine of Doom&quot;) buries the memorable core. The fourth is accidental similarity to an existing star, which reads as imitation. And finally, avoid names so generic they could belong to anyone — the whole point of a ring name is to signal a specific character. When you review a generated batch, filter against these traps and keep the names that are chantable, gimmick-aligned, concise, distinctive, and specific.
         </p>
 
-        <h2>No Download or Account Required</h2>
+        <h2>Privacy</h2>
         <p>
-          This Wrestling name generator runs entirely in your browser. You do not need to download software or create an account. Open the page, set how many names you want, and click generate. The tool is free and works on desktop, tablet, and phone. That makes it easy to use when you are away from your main device or when you want to quickly generate character name ideas without installing anything.
-        </p>
-
-        <h2>Who Uses a Wrestling Name Generator?</h2>
-        <p>
-          Players use the Wrestling name generator when creating or updating a Wrestling profile, or when they want a new character name for other platforms. Esports and streamers use it for in-game names or stream handles. The same tool works for Discord, Xbox, PlayStation, or social profiles—always check availability on each platform. Educators and workshop leaders sometimes use it to demonstrate username creation or digital identity in a classroom setting. No account or download is required on our site.
-        </p>
-        <p>
-          Anyone who needs a steady supply of username ideas can benefit. Whether you are a casual gamer, a competitive player, or a content creator, the Wrestling name generator provides a fast way to explore options. The key is to treat the output as inspiration and always verify availability on Wrestling and any other platform where you plan to use the name.
-        </p>
-
-        <h2>Getting the Most Out of the Wrestling Name Generator</h2>
-        <p>
-          Run the generator several times and paste all results into one document. Skim for names that fit your style and check your platform for availability. Shortlist five to ten options so you have backups if your first choice is taken. The Wrestling name generator does not check Wrestling or any platform; you must do that yourself. When you have a shortlist, check availability one by one. Usernames are often taken on popular services, so having several options saves time.
-        </p>
-        <p>
-          Another tip is to try different batch sizes. Sometimes generating 24 names at once gives you a good mix; other times you may prefer smaller runs so you can review each set before generating more. The tool is flexible. Use it whenever you need new Wrestling name ideas or character name inspiration. Bookmarking the page makes it easy to return when you are ready to refresh your profile or create a new account.
-        </p>
-
-        <h2>Typical Workflow for the Wrestling Name Generator</h2>
-        <p>
-          A typical workflow is: open the page, set the number of names (e.g. 12 or 24), click generate, then copy the list. Paste into a notes app. Check your game or story for availability for each name you like. If your first choice is taken, try the next. Run the Wrestling name generator again for more options. The whole process takes a few minutes. No account or download is required. Bookmark the page for quick access when you need new username ideas. The tool is free and runs in your browser with no sign-up.
-        </p>
-
-        <h2>What This Tool Does NOT Do</h2>
-        <ul>
-          <li>It does not check Wrestling or any platform for username availability.</li>
-          <li>It does not reserve or hold names for you.</li>
-          <li>It does not store your generated list or your settings.</li>
-          <li>It does not connect to Steam, Discord, or any external gaming service.</li>
-        </ul>
-        <p>
-          This Wrestling name generator produces name ideas only. It does not validate availability, create accounts, or manage your profile. You must check Wrestling or your chosen platform yourself and follow that platform&apos;s rules when creating or changing your username. The tool is a brainstorming aid, not a replacement for checking availability.
-        </p>
-
-        <h2>Privacy and Security Notes</h2>
-        <p>
-          The Wrestling name generator runs entirely in your browser. It does not send data to a server and does not store generated values. This is helpful for quick brainstorming and offline use. If you refresh the page, the last generated list is cleared. Copy any names you want to keep before closing or refreshing.
-        </p>
-        <p>
-          For account security, never share your Wrestling password or other credentials. The generator only suggests usernames; it does not handle login or account creation. When you check availability on Wrestling or another platform, use the official site or app and ensure you are on a secure connection. The Wrestling name generator is a standalone tool and does not integrate with any login system.
-        </p>
-
-        <h2>Final Summary and When to Use This Tool</h2>
-        <p>
-          The Wrestling name generator provides a fast way to create username and character name ideas for Wrestling and other games and creative projects. Set the number of names (1–24) and run as often as you like. Copy results and check your platform for availability. The tool runs locally in your browser with no sign-up. Keep a shortlist of options in case your first choice is taken. No download or account is required. The generator is free and works on any device.
-        </p>
-        <p>
-          Use this Wrestling name generator when you need Wrestling name ideas, character name inspiration, or a quick way to explore options before checking availability. It is best for brainstorming, rebranding, and building a shortlist. Always verify availability on Wrestling or your chosen platform before committing to a name. The tool is a practical free resource for gaming wrestler names.
+          This wrestling name generator runs entirely in your browser. When you set a count and generate, the ring names are created locally on your device — nothing is uploaded, logged, or stored on our servers. Close the tab and the list is gone unless you copied it, so your character ideas stay yours.
         </p>
       </div>
     </section>
@@ -199,30 +131,30 @@ function createWriteUp() {
 }
 
 const pageFaqs: FaqItem[] = [
-  { category: 'General', question: 'What is a Wrestling name generator?', answer: 'A Wrestling name generator is an online tool that creates wrestler names for Wrestling and other games and creative projects. You get unique Wrestling name ideas at the click of a button. The generator combines curated wrestling-style words at random in your browser so each run produces new combinations. This free Wrestling name generator runs locally with no sign-up and does not send generated names to any server. Always check your game or story for availability before committing to a name.' },
-  { category: 'Usage', question: 'How do I use the Wrestling name generator?', answer: 'Set how many names you want per run (1–24), click "Generate names" to get a new list of character name ideas, then use the Copy button to copy all names to your clipboard. Paste into a notes app and check your game or story for availability. Run again for more options; no sign-up is required. The Wrestling name generator runs in your browser so your settings and generated names are not sent to any server. Building a shortlist of five to ten options before checking availability is a good habit.' },
-  { category: 'General', question: 'Is the Wrestling name generator free?', answer: 'Yes. This Wrestling name generator is free to use in your browser. You can generate Wrestling name ideas as often as you like without creating an account or paying. The tool runs locally on your device and does not require a download. There is no daily or total limit on how many times you can run the generator.' },
-  { category: 'Use cases', question: 'Can I use the names for Steam?', answer: 'Yes. The Wrestling name generator produces username ideas that you can use on Steam. Names must be unique on the platform, so always check Steam\'s availability before committing. Run the generator multiple times to build a shortlist of character name ideas, then check which names are available on Steam. The tool does not reserve or validate names; it only suggests combinations for you to verify on the platform.' },
-  { category: 'Privacy', question: 'Is my data sent to a server when I use the Wrestling name generator?', answer: 'No. This Wrestling name generator runs in your browser. When you set the number of names and click generate, the names are created locally on your device. Your choices and the generated Wrestling name ideas are not sent to our servers. We do not store your inputs or the generated list. Generation is fully local and private.' },
-  { category: 'Compatibility', question: 'Does the Wrestling name generator work on mobile?', answer: 'Yes. The Wrestling name generator runs in a web browser and works on desktop, tablet, and phone. You do not need to install an app. Open the page, choose how many names you want, then generate. On a phone you can generate a short list and copy it into notes or check availability on Steam\'s app. The tool is responsive and works on any device with a modern browser.' },
-  { category: 'Limits', question: 'How many names can I generate with the Wrestling name generator?', answer: 'You can request 1–24 names per run with this Wrestling name generator. If you need more than 24 character name ideas, run the generator again; each run produces a new random set. There is no daily or total limit. Paste multiple runs into one document and remove duplicates if needed. The batch size is designed to keep the list manageable while giving you enough Wrestling name options to shortlist.' },
-  { category: 'Usage', question: 'Can I copy the names from the Wrestling name generator?', answer: 'Yes. Use the Copy button on this Wrestling name generator to copy all generated names to your clipboard. Paste into a notes app or document. The names are plain text, one per line, so they work in any editor or form. Check your game or story for availability before choosing a name. Copying is the intended way to save your shortlist of character name ideas.' },
-  { category: 'General', question: 'Do I need an account to use the Wrestling name generator?', answer: 'No. This Wrestling name generator works without sign-up or login. The tool runs entirely in your browser. You do not need to create an account on our site to use it. Open the page, set how many Wrestling name ideas you want, click generate, and copy the results. No email, password, or registration is required.' },
-  { category: 'Use cases', question: 'Can I use the Wrestling name generator for other platforms?', answer: 'Yes. The names work as ideas for any gaming or social platform—Discord, Xbox, PlayStation, or others. The Wrestling name generator is built for Steam-style character names but the output can inspire usernames elsewhere. Check each platform\'s availability; names must be unique on each service. The generator does not check availability for you, so always verify on the platform where you plan to use the name.' },
-  { category: 'Privacy', question: 'Do you store the names I generate with the Wrestling name generator?', answer: 'No. Generation happens in your browser. We do not receive or store the Wrestling name ideas or your settings. The Wrestling name generator runs locally on your device. You can use the tool in a private or incognito window if you prefer. If you refresh the page, the last generated list is cleared unless you have already copied it.' },
-  { category: 'Limits', question: 'Can I get more than 24 names from the Wrestling name generator?', answer: 'Each run of this Wrestling name generator gives up to 24 names. To get more character name ideas, run the generator again; each run produces a new random set. You can paste multiple runs into one document and then remove duplicates. There is no daily or total limit. Batching runs is the intended workflow when you need a large pool of Wrestling name options.' },
-  { category: 'General', question: 'Why "Steam" specifically in a Wrestling name generator?', answer: 'Wrestling is a major gaming platform, and people often search for Wrestling name ideas and character name generators. The Wrestling name generator serves that intent and produces names that fit Wrestling and similar gaming environments. The same ideas work for other platforms—Discord, Xbox, PlayStation—as inspiration. Use the names as character names wherever you need a unique username; always check availability on the platform you choose.' },
-  { category: 'Use cases', question: 'Can I use the Wrestling name generator for esports?', answer: 'Yes. Use the Wrestling name generator as inspiration for in-game names or stream handles. Run it multiple times to get a shortlist of character name ideas, then check availability on your platform. The tool is free and runs in your browser with no sign-up. Many esports and streamers use Wrestling name generators to brainstorm handles before verifying availability on Steam, Twitch, or other services.' },
-  { category: 'Technical', question: 'How are the names generated in the Wrestling name generator?', answer: 'This Wrestling name generator uses curated wrestling-style words and elements. When you click generate, the tool randomly combines these in your browser so each run is different. No names or settings are sent to a server. The result is for inspiration only; we do not check Wrestling or any platform for availability. The word lists are designed to sound like gaming wrestler names—bold, memorable, and easy to type.' },
-  { category: 'General', question: 'Are the names from the Wrestling name generator unique?', answer: 'The names are randomly combined from our word list, so each run can produce new combinations. We do not check Wrestling or any platform for availability. You must check yourself whether a Wrestling name or character name is available before using it on your profile. The generator helps you discover ideas; uniqueness on a given platform depends on that platform\'s current registrations.' },
-  { category: 'Use cases', question: 'Can teachers use the Wrestling name generator?', answer: 'Yes. Teachers can use this Wrestling name generator for creative or tech-related activities—for example when students are learning about usernames, digital identity, or online profiles. Emphasize that the tool is for inspiration and that names must be checked for availability on any platform. The Wrestling name generator is free and runs in the browser with no sign-up, so it is easy to use in a classroom or workshop setting.' },
-  { category: 'General', question: 'How do I cite the Wrestling name generator?', answer: 'For academic or formal use you can cite this Wrestling name generator as a source of inspiration for wrestler names. The generated names are algorithm-produced; you can use them freely. A brief acknowledgment is optional. We do not require attribution. The tool is a free, browser-based utility for Wrestling name ideas and character name brainstorming.' },
-  { category: 'Use cases', question: 'Can I use the Wrestling name generator for a new Wrestling account?', answer: 'Yes. When creating a new Wrestling account you need a unique username. Run this Wrestling name generator to get character name ideas, copy the list, then check Wrestling for availability. Pick a name that is available and that you like. The tool runs in your browser with no sign-up. Building a shortlist of five to ten options before you start the sign-up process saves time, since many Wrestling names are already taken.' },
-  { category: 'General', question: 'Do the names from the Wrestling name generator work for streaming?', answer: 'Yes. The Wrestling name generator produces username ideas that can work for streaming platforms, in-game names, or social handles. Use the names as inspiration and check your platform for availability. Run the generator multiple times to build a shortlist of options. Many streamers use Wrestling name generators to brainstorm stream handles before checking availability on Twitch, YouTube, or other services.' },
-  { category: 'Best practices', question: 'What is the best workflow for the Wrestling name generator?', answer: 'Open the page, set the number of names (e.g. 12 or 24), click generate, then copy the list. Paste into a notes app. Check your game or story for availability for each name you like. If your first choice is taken, try the next. Run the Wrestling name generator again for more options. Keep a shortlist of five to ten character name ideas so you have backups. The tool is free and runs in your browser with no sign-up.' },
-  { category: 'Best practices', question: 'Should I run the Wrestling name generator multiple times?', answer: 'Yes. Running the Wrestling name generator multiple times is the intended workflow when you want a large pool of Wrestling name ideas. Paste each run into one document and remove duplicates if any appear. Then check availability on your game or story for each name you like. Having a shortlist saves time compared to checking one idea at a time. There is no daily or total limit on how many times you can run the generator.' },
-  { category: 'Troubleshooting', question: 'Why is my first choice from the Wrestling name generator taken?', answer: 'Popular wrestler names are often already in use on Wrestling and other platforms. The Wrestling name generator does not check availability; it only suggests combinations. Always have a shortlist of five to ten options so you have backups. Run the generator again for more Wrestling name ideas and check availability on your platform before committing. This is normal when using any name generator for games and creative projects.' },
-  { category: 'Troubleshooting', question: 'Can I use the Wrestling name generator offline?', answer: 'Yes. Once the page is loaded, the Wrestling name generator runs entirely in your browser and does not require a network connection to generate names. You can generate character name ideas offline. Copying and pasting also works offline. You will need a connection only to open the page initially and to check availability on Wrestling or another platform.' },
+  { category: 'General', question: 'What is a wrestling name generator?', answer: 'A wrestling name generator is a free browser tool that creates ring names and personas for pro-wrestling characters. It combines tough nouns, action words, and larger-than-life adjectives at random so each run produces new ring-name ideas — the kind you would pair with a gimmick and a nickname. It is built for creating wrestlers for backyard feds, video-game universe modes, fan fiction, and role-play. It runs locally in your browser with no sign-up and gives you 1–24 names per run.' },
+  { category: 'Usage', question: 'How do I use the wrestling name generator?', answer: 'Choose how many ring names you want (1–24), click Generate names, and review the batch. Sort the results by gimmick — which sound like villains (heels), which like heroes (faces), which fit your wrestler\'s style — then copy your shortlist. Pair a favorite ring name with a nickname or epithet to complete the persona. Run again for more; there is no sign-up and no limit.' },
+  { category: 'General', question: 'Is the wrestling name generator free?', answer: 'Yes. It is completely free to use in your browser with no account, no download, and no limit on how many ring names you generate. Use it as often as you like while building a wrestler for a game, a story, or a backyard federation.' },
+  { category: 'Naming', question: 'What makes a good wrestling ring name?', answer: 'A strong ring name is easy to chant, sounds good shouted by an announcer, and signals the gimmick. Crowds latch onto short, rhythmic names (Rock, Y2J, E-C-Dub). It should fit the character you want to play — menacing for a heel, heroic for a face — and look good on a title graphic. Pair the core name with a nickname like "The Viper" or "The Beast Incarnate" and you have a complete persona.' },
+  { category: 'Naming', question: 'What is the difference between a ring name, a nickname, and a gimmick?', answer: 'The ring name is the core identity (Randy Orton, Rhea Ripley). The nickname or epithet is the tag that sums up the character ("The Viper," "The Rated-R Superstar") and is often what the crowd chants. The gimmick is the character concept the name signals — monster heel, high-flying underdog, arrogant technician. A good generated name gives you the ring name; you add the nickname and gimmick to finish the persona.' },
+  { category: 'Naming', question: 'How do I make a heel (villain) versus a face (hero) name?', answer: 'Heel names use harsh, menacing sounds and words like Dread, Havoc, Venom, or Reaper to invite boos. Face names are brighter and momentum-driven — Blaze, Ace, Bolt, Maverick — to cue cheers. Generate a batch and sort it: the same run can seed both a monster villain and a fan-favorite babyface depending on which names you keep.' },
+  { category: 'Naming', question: 'How do I match a name to my wrestling style?', answer: 'Let the style steer which names you keep. Powerhouses suit heavy names (Titan, Crusher, The Mountain); high-flyers suit quick aerial names (Sky, Falcon, Volt); technical wrestlers suit cooler, precise names; brawlers suit rough, dangerous ones; and charismatic showmen suit flashy, gold-and-glitz names. Generate a batch, then filter for the ones that sell your character\'s style.' },
+  { category: 'Naming', question: 'How do I name a finishing move to match?', answer: 'A finisher name should echo the character. "The Viper" has the RKO; "The Deadman" has the Tombstone. Once you pick a ring name and gimmick, let them suggest the finisher — a monster heel might have a "Guillotine" or "Reaper Bomb," a high-flyer a "Skyfall." Naming the finisher to fit the persona makes the whole character feel intentional rather than assembled from parts.' },
+  { category: 'Use cases', question: 'Can I use these names for a WWE 2K or wrestling video game?', answer: 'Yes. The generated ring names work well for created wrestlers in WWE 2K, universe modes, and other wrestling games. Generate a batch, pick a name that fits the moveset and gimmick you plan to build, and add a nickname for the entrance. Because the names are original combinations, they suit an original character rather than duplicating a real roster wrestler.' },
+  { category: 'Use cases', question: 'Can I use the generator for fan fiction or a wrestling story?', answer: 'Yes. Writers use it to name original wrestlers for fan fiction, promos, and storyline drafts. A ring name that signals the gimmick lets readers picture the character instantly. Generate a batch, assign heel and face names to your roster, and give each one a nickname and finisher so the characters read as a believable locker room.' },
+  { category: 'Use cases', question: 'Is this good for a backyard or indie wrestling persona?', answer: 'Yes. If you are building a persona for backyard wrestling or an indie character, a memorable ring name is the foundation. Pick a name you can perform under, make sure it is chantable, and build a gimmick, look, and catchphrase around it. The generator gives you the raw ring-name ideas to choose from.' },
+  { category: 'Naming', question: 'How do I create a tag-team name from these?', answer: 'Generate individual ring names, then look for two that share a theme — a color, a threat, an attitude — and build a team identity around it. Tag teams often use a shared surname, a collective noun (The Brood, The Shield), or a paired concept. Two generated names with a common thread can become the seed for a unit name.' },
+  { category: 'Naming', question: 'Should my ring name copy a famous wrestler?', answer: 'Avoid names too close to a famous wrestler unless you are intentionally writing a tribute or parody. Real ring names are trademarked, and a near-copy reads as derivative for an original character. Use the generator to find something that has the same energy — menacing, heroic, flashy — without borrowing an established star\'s identity.' },
+  { category: 'Technical', question: 'How are the ring names generated?', answer: 'The generator draws on curated word lists of wrestling-style nouns, adjectives, and action words, then combines them at random in your browser so each run is different. It is designed to produce names that sound like ring names — bold, chantable, and gimmick-ready. Nothing is sent to a server; generation happens entirely on your device.' },
+  { category: 'Usage', question: 'How many ring names can I generate at once?', answer: 'You can request 1–24 ring names per run. For a full roster, run it several times and paste the results into one document, then sort them into heels, faces, and tag-team candidates. There is no daily or total limit on how many times you can generate.' },
+  { category: 'Usage', question: 'Can I copy the names I like?', answer: 'Yes. Use the Copy button to copy the whole batch to your clipboard as plain text, one name per line. Paste it into your notes, a character sheet, or your story draft. Copying is the intended way to save a shortlist while you decide which ring name and gimmick to commit to.' },
+  { category: 'General', question: 'Do I need an account to use the wrestling name generator?', answer: 'No. There is no sign-up or login. Open the page, choose how many ring names you want, generate, and copy the results. No email, password, or registration is required.' },
+  { category: 'Privacy', question: 'Is my data stored when I use the generator?', answer: 'No. The generator runs entirely in your browser. The ring names are created locally on your device and are never uploaded, logged, or stored on our servers. If you refresh or close the tab, the list is cleared unless you copied it, so your character ideas stay private.' },
+  { category: 'Compatibility', question: 'Does the wrestling name generator work on mobile?', answer: 'Yes. It runs in any modern browser and works on phones, tablets, and desktop with no app to install. Generate ring names on your phone while watching a match or building a character on the go, and copy your favorites into notes.' },
+  { category: 'Naming', question: 'How do I build a full persona around the name?', answer: 'Start with the ring name, decide the gimmick it implies, then add an entrance-worthy nickname, a catchphrase, a signature look, and a finisher whose name fits. A ring name is the anchor; the nickname, gimmick, and finisher turn it into a character the crowd remembers.' },
+  { category: 'Best practices', question: 'What is the best way to test a ring name?', answer: 'Say it out loud as if a ring announcer is introducing you across an arena — great wrestling names sound good bellowed, not just read. Then check it is chantable and that it matches the gimmick you want. If a fearsome name lands on a comedic character, keep it only if that irony is the point.' },
+  { category: 'Use cases', question: 'Can I use this for a role-playing game character?', answer: 'Yes. Beyond pro wrestling, these bold, persona-driven names suit gladiators, arena fighters, and larger-than-life RPG or tabletop characters. Generate a batch and pick a name whose attitude fits the fighter you are creating.' },
+  { category: 'Troubleshooting', question: 'The names feel too similar — how do I get more variety?', answer: 'Run the generator several more times; each run pulls a new random mix. Combine batches, then deliberately sort for different flavors — a monster name, a flashy name, a technical name — so your shortlist covers a range of gimmicks rather than one tone. Mixing your own tweaks into a generated name also adds variety.' },
+  { category: 'Troubleshooting', question: 'Can I use the wrestling name generator offline?', answer: 'Yes. Once the page has loaded, generating and copying ring names works without a network connection, because everything runs in your browser. You only need a connection to open the page initially.' },
 ];
 
 export default async function WrestlingNameGeneratorPage() {
