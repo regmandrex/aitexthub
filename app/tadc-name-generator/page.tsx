@@ -18,8 +18,8 @@ const toolSlug = 'tadc-name-generator';
 export async function generateMetadata(): Promise<Metadata> {
   return buildToolMeta({
     title: 'TADC Name Generator',
-    description: 'Free tadc name generator for character names. Create The Amazing Digital Circus-style name ideas in your browser with no sign-up.',
-    seoTitle: 'TADC Name Generator – Digital Circus Name Ideas',
+    description: 'Free TADC name generator for The Amazing Digital Circus OCs. Spin up whimsical, glitchy, circus-themed avatar names for Pomni-style jesters, rag dolls, ribbons, and more — in your browser, no sign-up.',
+    seoTitle: 'TADC Name Generator – Digital Circus OC Names',
     urlPath: `/${toolSlug}`,
   });
 }
@@ -28,170 +28,86 @@ function createWriteUp() {
   return (
     <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
-        <h2>TADC Name Generator – Digital Circus Name Ideas</h2>
-        <h2>Introduction</h2>
+        <h2>TADC Name Generator – Digital Circus OC Names</h2>
         <p>
-          This guide explains how to use a TADC name generator to create character names for TADC and other fan fiction. The tool runs in your browser and produces unique, memorable name ideas at the click of a button. It is designed for players who want TADC name ideas quickly without sign-up or download. The generator does not store data and runs entirely in your browser. You get 1–24 names per run and can run it as often as you like. Always check your game or story for availability before committing to a name.
+          This TADC name generator builds names the way The Amazing Digital Circus builds its cast: whimsical, slightly off-kilter words that sound like circus acts, broken toys, and glitching code all at once. Whether you are designing an original character (OC) to drop into the digital circus, writing a fan fiction set in Caine&apos;s endless tent, or sketching an avatar for a role-play server, the tool produces names that fit the show&apos;s playful, anxious, candy-colored world. It runs in your browser, stores nothing, and you can spin up as many batches as you like with no sign-up.
         </p>
         <p>
-          People search for TADC name ideas and character name generators when setting up a new profile, an esports handle, or a stream name. This TADC name generator serves that intent with one free, browser-based tool. Whether you need a single standout character name or a shortlist of options, the generator gives you a pool of ideas. Names must be unique on each service, so verifying availability on TADC or your chosen platform is an essential step after generating ideas.
-        </p>
-
-        <h2>What Is a TADC Name Generator?</h2>
-        <p>
-          A TADC name generator is an online tool that creates character names suitable for TADC and other fan fiction. You get unique name ideas at the click of a button. The generator combines curated The Amazing Digital Circus-style words and elements at random so each run produces new combinations. The output is for inspiration only; you must check your platform for availability. This free TADC name generator runs in your browser with no sign-up and does not send generated names to any server.
-        </p>
-        <p>
-          The output is plain text, one name per line. You can copy the full list and paste it into a notes app, then check your game or story for availability and pick one. Many users run the TADC name generator multiple times to build a shortlist before deciding. Because names are created locally, your choices stay private and nothing is stored on our servers.
-        </p>
-        <p>
-          TADC name generators are useful when you are tired of reusing the same username or when you want a fresh character name that fits your style. The tool does not guarantee that a name is available; it only suggests combinations. Always confirm availability on your game or story before you commit to a new username.
+          TADC names are not random syllables. The canon cast — Pomni, Caine, Ragatha, Jax, Gangle, Zooble, Kinger, Bubble — follows a loose but recognizable logic: short, bouncy, faintly nonsensical words that hint at what a character is made of or how they behave. This page breaks down that logic so the names you keep actually feel like they belong beside the existing avatars, and so an OC you create reads as a real resident of the circus rather than a stranger who wandered in.
         </p>
 
-        <h2>Why This TADC Name Generator Matters</h2>
+        <h2>How The Amazing Digital Circus Names Work</h2>
         <p>
-          Choosing a memorable TADC name or character name can be time-consuming. A TADC name generator speeds up brainstorming. Instead of staring at a blank field, you get options in seconds. You can run it on a phone or desktop, copy the names you like, and then check availability on your game or story. The tool is free and does not require an account, so there is no friction to trying many ideas.
+          Glitch Productions named the main cast with a consistent instinct: take an everyday concept — a jester, a rag doll, a chess piece — and warp it into something cute, uneasy, and easy to say. Understanding that instinct lets you generate names that sound native to the show:
         </p>
+        <ul>
+          <li><strong>Short and bouncy.</strong> &quot;Pomni,&quot; &quot;Jax,&quot; &quot;Zooble,&quot; &quot;Gangle&quot; — one or two syllables, springy on the tongue. The circus rewards names you could shout across a ring.</li>
+          <li><strong>Made-up but evocative.</strong> Most names are not real words. &quot;Ragatha&quot; suggests &quot;rag&quot; for a rag doll; &quot;Gangle&quot; suggests dangling ribbons; &quot;Zooble&quot; sounds like a jumble of mismatched parts. The name nods at the design without spelling it out.</li>
+          <li><strong>Theme-coded.</strong> Kinger is a chess king; Bubble is literally a floating bubble; Caine, the ringmaster, carries a hint of &quot;cane&quot; and command. A good TADC name telegraphs the avatar&apos;s shape or role.</li>
+          <li><strong>A little glitchy.</strong> Because everyone is trapped inside a digital world, names that sound mildly corrupted, pixelated, or like a software error feel right at home next to the canon cast.</li>
+        </ul>
+
+        <h2>Naming by Avatar Theme</h2>
         <p>
-          The generator also keeps your ideas private. Names are created in your browser and are not sent to our servers. You can use it in a private or incognito window if you prefer. Because generation is local, there is no risk of your shortlist being stored or logged. That matters when you are testing ideas before you settle on a final TADC name or character name.
+          TADC avatars are wild and varied, but most fall into a handful of visual themes. Matching a name&apos;s sound to your avatar&apos;s theme is the fastest way to make an OC feel canon:
         </p>
+        <ul>
+          <li><strong>Circus and performance.</strong> Jesters, ringmasters, acrobats, and clowns. Names with a peppy, big-top ring — think the energy of &quot;Pomni&quot; or &quot;Caine&quot; — suit a character built around an act.</li>
+          <li><strong>Toy and craft.</strong> Rag dolls, plush creatures, marionettes, and ribbon-and-mask figures like Ragatha and Gangle. Soft, fabric-y, slightly clumsy-sounding names fit here.</li>
+          <li><strong>Glitch and digital.</strong> Pixelated, static-flecked, error-coded avatars. Names that stutter, repeat a sound, or feel like corrupted text lean into the &quot;trapped in code&quot; premise.</li>
+          <li><strong>Abstract shapes.</strong> Assorted-parts characters like Zooble, or geometric and object-based designs. Names that sound like a jumble or a single odd object work best.</li>
+        </ul>
         <p>
-          A good TADC name generator also standardizes the workflow: set how many names you want, click generate, copy the list, and check availability. You get a consistent way to explore username ideas without writing scripts or visiting multiple sites. The output is easy to paste into notes or a document so you can track which names you have already checked on TADC or other platforms.
+          Pick your avatar&apos;s theme first, then generate a batch and keep the names whose sound matches it. A glitch-themed OC and a soft toy-themed OC should not share the same naming flavor, even though both belong to the same circus.
         </p>
 
-        <h2>How the TADC Name Generator Works (Step by Step)</h2>
+        <h2>Designing a TADC OC Avatar</h2>
         <p>
-          When you open the page, you choose how many names you want per run (1–24). Clicking &quot;Generate names&quot; triggers the tool to randomly combine curated The Amazing Digital Circus-style elements in your browser. Each run is independent; no names or settings are sent to a server. The result is a list of TADC name ideas, one per line. You can copy the full list with one click and paste it into a notes app. To get more ideas, run the generator again. The tool does not check TADC or any platform for availability—you must do that yourself.
+          In the show, every human who enters the circus is reshaped into a wacky avatar the moment they arrive — and the name usually grows out of the design. So the strongest workflow is to sketch the avatar concept first, then name it. Ask yourself: what is my OC made of? A bundle of balloons, a cracked porcelain doll, a walking deck of cards, a half-rendered glitch? The answer points straight at a sound. A balloon avatar wants a light, airy name; a cracked-doll avatar wants something fragile and clinking.
         </p>
         <p>
-          The underlying word lists are designed to sound like gaming character names: bold, memorable, and easy to type. The generator shuffles and combines these elements so that each run produces different combinations. That randomness helps you discover names you might not have thought of on your own. Because everything runs in the browser, the TADC name generator works offline once the page is loaded and does not depend on a backend service.
+          Then add a personality hook, the way Pomni&apos;s anxiety and Jax&apos;s mischief define them far more than their looks. Is your OC a nervous newcomer like Pomni, a chaotic prankster like Jax, a steady caretaker like Ragatha, or an unsettling wildcard? Generate a batch and read each name out loud as if Caine were announcing it to the ring — the one that makes you grin or wince in the right way is the one that fits the character you have in your head.
+        </p>
+
+        <h2>Matching the Name to Your Avatar Concept</h2>
+        <p>
+          A great TADC OC name does three jobs at once: it hints at what the avatar is made of, it carries a hint of personality, and it sits comfortably in a line-up beside Pomni, Jax, and Gangle without stealing their spotlight. Generate a list, then test each candidate against your concept art or written description. If the name and the design point at the same idea — a ribbon character with a danglingly soft name, a glitch character with a stuttering one — you have a match.
         </p>
         <p>
-          There are no hidden steps. You set the count, click generate, and receive a list. Copying is one click; pasting into your own document keeps your shortlist in one place. Running the TADC name generator multiple times is the intended workflow when you want a large pool of character name ideas before checking availability.
+          If nothing lands perfectly, mix and match. Take the bouncy front half of one generated name and the softer tail of another, the same way &quot;Ragatha&quot; fuses &quot;rag&quot; with a gentle ending. The generator gives you raw material; the final name is yours to tune until it sounds exactly like a resident of Caine&apos;s circus.
         </p>
 
         <h2>How to Use This TADC Name Generator</h2>
-        <p>Follow these steps to get TADC name ideas:</p>
         <ol className="list-decimal pl-6 space-y-2">
           <li>Set how many names you want per run (1–24).</li>
-          <li>Click &quot;Generate names&quot; to get a new list of character name ideas.</li>
-          <li>Use the Copy button to copy all names to your clipboard.</li>
-          <li>Paste into a notes app or document, then check your game or story for availability and pick one.</li>
-          <li>Run again for more options; no account or download is required.</li>
+          <li>Click <strong>Generate names</strong> to get a fresh batch of digital-circus-style names.</li>
+          <li>Skim for names that match your avatar&apos;s theme — circus, toy, glitch, or abstract — then use the Copy button to save the whole list.</li>
+          <li>Paste into your OC notes, character sheet, or fic outline and shortlist your favorites.</li>
+          <li>Run again for more options — there is no limit, no account, and no download.</li>
         </ol>
         <p>
-          The TADC name generator runs in your browser; your settings and generated names are not sent to any server. You can run it as often as you like. Building a shortlist of five to ten options before checking availability on TADC is a good habit, since popular usernames are often taken. Have backups ready so that if your first choice is unavailable, you can try the next name on your list.
+          Everything happens in your browser. Your settings and the names you create are never sent to a server, so your OC ideas stay private until you decide to post the art or the fic.
         </p>
 
-        <h2>TADC and Gamer Naming Style</h2>
+        <h2>Tips for Picking a TADC OC Name</h2>
         <p>
-          TADC names and character names often use bold, memorable word combinations: action words, nicknames, or creative spellings. This TADC name generator uses curated The Amazing Digital Circus-style elements and combines them at random so you get new combinations that fit that style. The output is for inspiration only; the tool does not check TADC or any platform for availability. You can use the names as-is or tweak spelling and punctuation to make them your own.
+          Say the name out loud — TADC names are made to be cheered or yelped in an episode, so anything that trips the tongue will trip your readers and roleplay partners too. Keep names short; the canon cast rarely runs past two syllables, and a punchy name is easier to remember in a group RP. Lean into a little nonsense: a name that is almost a real word but bent slightly off (the way &quot;Gangle&quot; bends &quot;dangle&quot;) feels far more in-genre than something that reads like a normal human name.
         </p>
         <p>
-          Different games and communities favor different styles. Some players prefer short, punchy character names; others like longer usernames. Running the generator multiple times gives you a mix of lengths and styles. Skim the list, mark the ones you like, and then verify each one on your game or story. The TADC name generator is a starting point—your final choice should fit your personality and the rules of your platform.
-        </p>
-
-        <h2>When to Use a TADC Name Generator</h2>
-        <p>
-          Use this TADC name generator when you need TADC or The Amazing Digital Circus-style username ideas quickly. Common use cases include creating a new TADC account or updating your profile name, choosing an in-game name for esports or casual play, and picking a stream or social handle. The same tool works for other platforms—Discord, Xbox, PlayStation, or social profiles—as inspiration. Names must be unique on each platform, so always check availability before committing.
-        </p>
-        <p>
-          Another good time to use a TADC name generator is when you are rebranding. If you have used the same character name for years and want a fresh identity, generating a batch of ideas helps you explore options without pressure. Run the tool several times, paste results into one document, and remove duplicates. Then check TADC and any other platforms you use to see which names are still available. Having a shortlist saves time compared to checking one idea at a time.
+          Avoid accidentally reusing a canon name — you do not want an OC literally called Pomni or Jax — but echoing the rhythm of a canon name is fair game and instantly grounds the character. If you are naming a whole friend group of OCs, generate a batch and pick names that contrast in theme and sound: one soft and toy-like, one sharp and glitchy, one bouncy and circus-bright. That mix is exactly what makes the canon ensemble feel like a real, mismatched cast trapped together.
         </p>
 
-        <h2>Use Cases in Detail: Profiles, Esports, and Streams</h2>
-        <p>
-          Players use the TADC name generator when creating a new TADC account or refreshing their profile name. Esports and streamers use it for in-game names or stream handles. The same tool works for other platforms—Discord, Xbox, PlayStation, or social—as inspiration; you must check each platform for availability. Run the generator multiple times to build a shortlist, then check which names are free on your platform. The TADC name generator does not reserve or validate names; it only suggests combinations.
-        </p>
-        <p>
-          Content creators often need a consistent handle across Steam, streaming, and social media. Generating a batch of character name ideas lets you test different options before you commit. Copy the names you like into a single list, then check availability on each service. If one name is taken on TADC but free elsewhere, you can still use it on the platforms where it is available, or use the generator again to find alternatives that work everywhere.
-        </p>
-
-        <h2>Tips for Choosing a TADC Username</h2>
-        <p>
-          Pick a name that is easy to remember and type. Short character names are easier to say in voice chat and less likely to be mistyped. Run the TADC name generator multiple times to get a shortlist, then check your game or story for availability. Have a few backups in case your first choice is taken. Avoid names that might be mistaken for someone else or that break platform rules. The generator gives you ideas only; the final choice is yours.
-        </p>
-        <p>
-          Consider how the name will look in different contexts: in-game, on a stream overlay, or in a friend list. Some combinations look great in one font but odd in another. If you plan to use the same handle across multiple games and platforms, check availability everywhere before you invest in branding. The TADC name generator is a free way to explore options without committing until you have confirmed that your chosen TADC name or character name is available.
-        </p>
-
-        <h2>Running the TADC Name Generator in Batches</h2>
-        <p>
-          When you need many username ideas, run the TADC name generator multiple times. Each run gives up to 24 names. Paste each run into the same document and remove duplicates if any appear. Check availability on your platform for each name you like. There is no daily or total limit; you can run the generator as often as you want. Batching is useful when you are setting up several accounts, testing ideas for a team, or simply want a large pool of character name options before making a decision.
-        </p>
-        <p>
-          Keeping a single document with all your generated TADC name ideas makes it easy to track which names you have already checked. Mark names as &quot;taken&quot; or &quot;available&quot; as you go. That way you avoid re-checking the same name on TADC or another platform. The TADC name generator does not remember previous runs, so your document is your only record of the ideas you have collected.
-        </p>
-
-        <h2>Privacy and Local Processing</h2>
-        <p>
-          This TADC name generator runs entirely in your browser. When you set the number of names and click generate, the names are created locally on your device. Your choices and the generated names are not sent to our servers. We do not store your inputs or the generated list. No account or login is required. That means your shortlist of character name ideas stays on your machine unless you choose to copy it somewhere else.
-        </p>
-        <p>
-          Because generation is local, the tool is suitable for use in private or incognito windows. If you close the tab, the generated list is gone unless you have copied it. There is no server-side log of what names you generated or how many times you ran the TADC name generator. This privacy model is intentional: username brainstorming is personal, and the tool is designed so that you control where your ideas go.
-        </p>
-
-        <h2>Copying and Exporting Names</h2>
-        <p>
-          Use the Copy button to copy all generated TADC name ideas to your clipboard (one per line). Paste into a notes app or document. Check your game or story for availability before committing to a name. The names are plain text, so they work in any editor or form. If you paste into a spreadsheet, each line can go in its own cell for easy tracking. The TADC name generator does not export to a file; copying and pasting is the intended way to save your shortlist.
-        </p>
-
-        <h2>Limits and Batch Size</h2>
-        <p>
-          You can request 1–24 names per run with this TADC name generator. There is no daily or total limit. Run the generator again for more options. No download or account is required. If you need more than 24 names in one go, run the tool multiple times and paste the results into one document. Removing duplicates is up to you; the generator does not track previous output.
-        </p>
-
-        <h2>No Download or Account Required</h2>
-        <p>
-          This TADC name generator runs entirely in your browser. You do not need to download software or create an account. Open the page, set how many names you want, and click generate. The tool is free and works on desktop, tablet, and phone. That makes it easy to use when you are away from your main device or when you want to quickly generate character name ideas without installing anything.
-        </p>
-
-        <h2>Who Uses a TADC Name Generator?</h2>
-        <p>
-          Players use the TADC name generator when creating or updating a TADC profile, or when they want a new character name for other platforms. Esports and streamers use it for in-game names or stream handles. The same tool works for Discord, Xbox, PlayStation, or social profiles—always check availability on each platform. Educators and workshop leaders sometimes use it to demonstrate username creation or digital identity in a classroom setting. No account or download is required on our site.
-        </p>
-        <p>
-          Anyone who needs a steady supply of username ideas can benefit. Whether you are a casual gamer, a competitive player, or a content creator, the TADC name generator provides a fast way to explore options. The key is to treat the output as inspiration and always verify availability on TADC and any other platform where you plan to use the name.
-        </p>
-
-        <h2>Getting the Most Out of the TADC Name Generator</h2>
-        <p>
-          Run the generator several times and paste all results into one document. Skim for names that fit your style and check your platform for availability. Shortlist five to ten options so you have backups if your first choice is taken. The TADC name generator does not check TADC or any platform; you must do that yourself. When you have a shortlist, check availability one by one. Usernames are often taken on popular services, so having several options saves time.
-        </p>
-        <p>
-          Another tip is to try different batch sizes. Sometimes generating 24 names at once gives you a good mix; other times you may prefer smaller runs so you can review each set before generating more. The tool is flexible. Use it whenever you need new TADC name ideas or character name inspiration. Bookmarking the page makes it easy to return when you are ready to refresh your profile or create a new account.
-        </p>
-
-        <h2>Typical Workflow for the TADC Name Generator</h2>
-        <p>
-          A typical workflow is: open the page, set the number of names (e.g. 12 or 24), click generate, then copy the list. Paste into a notes app. Check your game or story for availability for each name you like. If your first choice is taken, try the next. Run the TADC name generator again for more options. The whole process takes a few minutes. No account or download is required. Bookmark the page for quick access when you need new username ideas. The tool is free and runs in your browser with no sign-up.
-        </p>
-
-        <h2>What This Tool Does NOT Do</h2>
+        <h2>What This Tool Does and Does Not Do</h2>
         <ul>
-          <li>It does not check TADC or any platform for username availability.</li>
-          <li>It does not reserve or hold names for you.</li>
-          <li>It does not store your generated list or your settings.</li>
-          <li>It does not connect to Steam, Discord, or any external gaming service.</li>
+          <li>It generates The Amazing Digital Circus-style names for OCs, fan fiction, and role-play avatars.</li>
+          <li>It does not reproduce the official cast as a database — output is original material for your own creative use.</li>
+          <li>It does not store your generated list or settings; everything runs locally in your browser.</li>
+          <li>It does not design the avatar for you — pair a name with your own concept art or description to bring the OC to life.</li>
         </ul>
-        <p>
-          This TADC name generator produces name ideas only. It does not validate availability, create accounts, or manage your profile. You must check TADC or your chosen platform yourself and follow that platform&apos;s rules when creating or changing your username. The tool is a brainstorming aid, not a replacement for checking availability.
-        </p>
 
-        <h2>Privacy and Security Notes</h2>
+        <h2>Final Notes</h2>
         <p>
-          The TADC name generator runs entirely in your browser. It does not send data to a server and does not store generated values. This is helpful for quick brainstorming and offline use. If you refresh the page, the last generated list is cleared. Copy any names you want to keep before closing or refreshing.
-        </p>
-        <p>
-          For account security, never share your TADC password or other credentials. The generator only suggests usernames; it does not handle login or account creation. When you check availability on TADC or another platform, use the official site or app and ensure you are on a secure connection. The TADC name generator is a standalone tool and does not integrate with any login system.
-        </p>
-
-        <h2>Final Summary and When to Use This Tool</h2>
-        <p>
-          The TADC name generator provides a fast way to create username and character name ideas for TADC and other fan fiction. Set the number of names (1–24) and run as often as you like. Copy results and check your platform for availability. The tool runs locally in your browser with no sign-up. Keep a shortlist of options in case your first choice is taken. No download or account is required. The generator is free and works on any device.
-        </p>
-        <p>
-          Use this TADC name generator when you need TADC name ideas, character name inspiration, or a quick way to explore options before checking availability. It is best for brainstorming, rebranding, and building a shortlist. Always verify availability on TADC or your chosen platform before committing to a name. The tool is a practical free resource for gaming character names.
+          The Amazing Digital Circus exploded into one of the most OC-heavy fandoms online, with artists, fic writers, and role-players constantly inventing new avatars to drop into Caine&apos;s tent. This TADC name generator gives you a fast pool of names grounded in the show&apos;s real naming feel: short, bouncy, faintly glitchy, and theme-coded to circus, toy, and digital ideas. Generate a batch, lean on the avatar-theme notes above, and you will end up with names that sound like they were always meant for a resident of the digital circus.
         </p>
       </div>
     </section>

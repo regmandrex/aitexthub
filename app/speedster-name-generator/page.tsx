@@ -18,8 +18,8 @@ const toolSlug = 'speedster-name-generator';
 export async function generateMetadata(): Promise<Metadata> {
   return buildToolMeta({
     title: 'Speedster Name Generator',
-    description: 'Free speedster name generator for speedster names. Create speedster-style name ideas in your browser with no sign-up.',
-    seoTitle: 'Speedster Name Generator – Speedster Name Ideas',
+    description: 'Free speedster name generator for super-fast hero and villain aliases. Build Flash-style names with lightning, speed, and motion motifs for OCs, comics, and fanfic — in your browser, no sign-up.',
+    seoTitle: 'Speedster Name Generator – Super-Speed Hero & Villain Aliases',
     urlPath: `/${toolSlug}`,
   });
 }
@@ -28,170 +28,107 @@ function createWriteUp() {
   return (
     <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
-        <h2>Speedster Name Generator – Speedster Name Ideas</h2>
-        <h2>Introduction</h2>
+        <h2>Speedster Name Generator – Super-Speed Hero &amp; Villain Aliases</h2>
         <p>
-          This guide explains how to use a Speedster name generator to create speedster names for Speedster and other fiction and creative projects. The tool runs in your browser and produces unique, memorable name ideas at the click of a button. It is designed for players who want Speedster name ideas quickly without sign-up or download. The generator does not store data and runs entirely in your browser. You get 1–24 names per run and can run it as often as you like. Always check your game or story for availability before committing to a name.
+          This speedster name generator builds the kind of alias a super-fast hero or villain would wear on the cover of a comic: a punchy, one- or two-word codename that evokes blistering speed, crackling lightning, and pure motion. Think of how the genre&apos;s icons are named — the Flash, Quicksilver, Kid Flash, Impulse, Reverse-Flash, Zoom, Godspeed. Every one of those names tells you in a syllable or two that this character outruns sound, blurs past the eye, and trails lightning behind them. Whether you are creating a speedster OC for a comic, a fanfic set in the Speed Force, a tabletop hero, or a role-play character, this tool produces ready-to-use codenames in your browser. There is no sign-up, nothing is stored, and you can generate as many batches as you like.
         </p>
         <p>
-          People search for Speedster name ideas and character name generators when setting up a new profile, an esports handle, or a stream name. This Speedster name generator serves that intent with one free, browser-based tool. Whether you need a single standout character name or a shortlist of options, the generator gives you a pool of ideas. Names must be unique on each service, so verifying availability on Speedster or your chosen platform is an essential step after generating ideas.
-        </p>
-
-        <h2>What Is a Speedster Name Generator?</h2>
-        <p>
-          A Speedster name generator is an online tool that creates speedster names suitable for Speedster and other fiction and creative projects. You get unique name ideas at the click of a button. The generator combines curated speedster-style words and elements at random so each run produces new combinations. The output is for inspiration only; you must check your platform for availability. This free Speedster name generator runs in your browser with no sign-up and does not send generated names to any server.
-        </p>
-        <p>
-          The output is plain text, one name per line. You can copy the full list and paste it into a notes app, then check your game or story for availability and pick one. Many users run the Speedster name generator multiple times to build a shortlist before deciding. Because names are created locally, your choices stay private and nothing is stored on our servers.
-        </p>
-        <p>
-          Speedster name generators are useful when you are tired of reusing the same username or when you want a fresh character name that fits your style. The tool does not guarantee that a name is available; it only suggests combinations. Always confirm availability on your game or story before you commit to a new username.
+          Speedster names are not random word salad. They lean hard on a small, instantly readable vocabulary of speed and energy: words like Flash, Dash, Bolt, Zoom, Streak, Velocity, Surge, Blur, Rush, and Quicksilver. The best ones land in a single beat, the way a runner crosses a finish line. This page walks through that naming logic — the speed-and-lightning theme, the split between a hero&apos;s public alias and their civilian name, how to darken a name for a villain, and how to build a fast-sounding word from scratch — so the codename you pick actually feels like it belongs in the genre rather than next to it.
         </p>
 
-        <h2>Why This Speedster Name Generator Matters</h2>
+        <h2>How Speedster Codenames Are Built</h2>
         <p>
-          Choosing a memorable Speedster name or character name can be time-consuming. A Speedster name generator speeds up brainstorming. Instead of staring at a blank field, you get options in seconds. You can run it on a phone or desktop, copy the names you like, and then check availability on your game or story. The tool is free and does not require an account, so there is no friction to trying many ideas.
+          Across decades of comics, super-speed characters get named from a tight thematic palette. Understanding that palette lets you generate aliases that read as genuinely fast rather than just &quot;cool word plus hero&quot;:
         </p>
-        <p>
-          The generator also keeps your ideas private. Names are created in your browser and are not sent to our servers. You can use it in a private or incognito window if you prefer. Because generation is local, there is no risk of your shortlist being stored or logged. That matters when you are testing ideas before you settle on a final Speedster name or character name.
-        </p>
-        <p>
-          A good Speedster name generator also standardizes the workflow: set how many names you want, click generate, copy the list, and check availability. You get a consistent way to explore username ideas without writing scripts or visiting multiple sites. The output is easy to paste into notes or a document so you can track which names you have already checked on Speedster or other platforms.
-        </p>
-
-        <h2>How the Speedster Name Generator Works (Step by Step)</h2>
-        <p>
-          When you open the page, you choose how many names you want per run (1–24). Clicking &quot;Generate names&quot; triggers the tool to randomly combine curated speedster-style elements in your browser. Each run is independent; no names or settings are sent to a server. The result is a list of Speedster name ideas, one per line. You can copy the full list with one click and paste it into a notes app. To get more ideas, run the generator again. The tool does not check Speedster or any platform for availability—you must do that yourself.
-        </p>
-        <p>
-          The underlying word lists are designed to sound like gaming speedster names: bold, memorable, and easy to type. The generator shuffles and combines these elements so that each run produces different combinations. That randomness helps you discover names you might not have thought of on your own. Because everything runs in the browser, the Speedster name generator works offline once the page is loaded and does not depend on a backend service.
-        </p>
-        <p>
-          There are no hidden steps. You set the count, click generate, and receive a list. Copying is one click; pasting into your own document keeps your shortlist in one place. Running the Speedster name generator multiple times is the intended workflow when you want a large pool of character name ideas before checking availability.
-        </p>
-
-        <h2>How to Use This Speedster Name Generator</h2>
-        <p>Follow these steps to get Speedster name ideas:</p>
-        <ol className="list-decimal pl-6 space-y-2">
-          <li>Set how many names you want per run (1–24).</li>
-          <li>Click &quot;Generate names&quot; to get a new list of character name ideas.</li>
-          <li>Use the Copy button to copy all names to your clipboard.</li>
-          <li>Paste into a notes app or document, then check your game or story for availability and pick one.</li>
-          <li>Run again for more options; no account or download is required.</li>
-        </ol>
-        <p>
-          The Speedster name generator runs in your browser; your settings and generated names are not sent to any server. You can run it as often as you like. Building a shortlist of five to ten options before checking availability on Speedster is a good habit, since popular usernames are often taken. Have backups ready so that if your first choice is unavailable, you can try the next name on your list.
-        </p>
-
-        <h2>Speedster and Gamer Naming Style</h2>
-        <p>
-          Speedster names and character names often use bold, memorable word combinations: action words, nicknames, or creative spellings. This Speedster name generator uses curated speedster-style elements and combines them at random so you get new combinations that fit that style. The output is for inspiration only; the tool does not check Speedster or any platform for availability. You can use the names as-is or tweak spelling and punctuation to make them your own.
-        </p>
-        <p>
-          Different games and communities favor different styles. Some players prefer short, punchy character names; others like longer usernames. Running the generator multiple times gives you a mix of lengths and styles. Skim the list, mark the ones you like, and then verify each one on your game or story. The Speedster name generator is a starting point—your final choice should fit your personality and the rules of your platform.
-        </p>
-
-        <h2>When to Use a Speedster Name Generator</h2>
-        <p>
-          Use this Speedster name generator when you need Speedster or speedster-style username ideas quickly. Common use cases include creating a new Speedster account or updating your profile name, choosing an in-game name for esports or casual play, and picking a stream or social handle. The same tool works for other platforms—Discord, Xbox, PlayStation, or social profiles—as inspiration. Names must be unique on each platform, so always check availability before committing.
-        </p>
-        <p>
-          Another good time to use a Speedster name generator is when you are rebranding. If you have used the same character name for years and want a fresh identity, generating a batch of ideas helps you explore options without pressure. Run the tool several times, paste results into one document, and remove duplicates. Then check Speedster and any other platforms you use to see which names are still available. Having a shortlist saves time compared to checking one idea at a time.
-        </p>
-
-        <h2>Use Cases in Detail: Profiles, Esports, and Streams</h2>
-        <p>
-          Players use the Speedster name generator when creating a new Speedster account or refreshing their profile name. Esports and streamers use it for in-game names or stream handles. The same tool works for other platforms—Discord, Xbox, PlayStation, or social—as inspiration; you must check each platform for availability. Run the generator multiple times to build a shortlist, then check which names are free on your platform. The Speedster name generator does not reserve or validate names; it only suggests combinations.
-        </p>
-        <p>
-          Content creators often need a consistent handle across Steam, streaming, and social media. Generating a batch of character name ideas lets you test different options before you commit. Copy the names you like into a single list, then check availability on each service. If one name is taken on Speedster but free elsewhere, you can still use it on the platforms where it is available, or use the generator again to find alternatives that work everywhere.
-        </p>
-
-        <h2>Tips for Choosing a Speedster Username</h2>
-        <p>
-          Pick a name that is easy to remember and type. Short character names are easier to say in voice chat and less likely to be mistyped. Run the Speedster name generator multiple times to get a shortlist, then check your game or story for availability. Have a few backups in case your first choice is taken. Avoid names that might be mistaken for someone else or that break platform rules. The generator gives you ideas only; the final choice is yours.
-        </p>
-        <p>
-          Consider how the name will look in different contexts: in-game, on a stream overlay, or in a friend list. Some combinations look great in one font but odd in another. If you plan to use the same handle across multiple games and platforms, check availability everywhere before you invest in branding. The Speedster name generator is a free way to explore options without committing until you have confirmed that your chosen Speedster name or character name is available.
-        </p>
-
-        <h2>Running the Speedster Name Generator in Batches</h2>
-        <p>
-          When you need many username ideas, run the Speedster name generator multiple times. Each run gives up to 24 names. Paste each run into the same document and remove duplicates if any appear. Check availability on your platform for each name you like. There is no daily or total limit; you can run the generator as often as you want. Batching is useful when you are setting up several accounts, testing ideas for a team, or simply want a large pool of character name options before making a decision.
-        </p>
-        <p>
-          Keeping a single document with all your generated Speedster name ideas makes it easy to track which names you have already checked. Mark names as &quot;taken&quot; or &quot;available&quot; as you go. That way you avoid re-checking the same name on Speedster or another platform. The Speedster name generator does not remember previous runs, so your document is your only record of the ideas you have collected.
-        </p>
-
-        <h2>Privacy and Local Processing</h2>
-        <p>
-          This Speedster name generator runs entirely in your browser. When you set the number of names and click generate, the names are created locally on your device. Your choices and the generated names are not sent to our servers. We do not store your inputs or the generated list. No account or login is required. That means your shortlist of character name ideas stays on your machine unless you choose to copy it somewhere else.
-        </p>
-        <p>
-          Because generation is local, the tool is suitable for use in private or incognito windows. If you close the tab, the generated list is gone unless you have copied it. There is no server-side log of what names you generated or how many times you ran the Speedster name generator. This privacy model is intentional: username brainstorming is personal, and the tool is designed so that you control where your ideas go.
-        </p>
-
-        <h2>Copying and Exporting Names</h2>
-        <p>
-          Use the Copy button to copy all generated Speedster name ideas to your clipboard (one per line). Paste into a notes app or document. Check your game or story for availability before committing to a name. The names are plain text, so they work in any editor or form. If you paste into a spreadsheet, each line can go in its own cell for easy tracking. The Speedster name generator does not export to a file; copying and pasting is the intended way to save your shortlist.
-        </p>
-
-        <h2>Limits and Batch Size</h2>
-        <p>
-          You can request 1–24 names per run with this Speedster name generator. There is no daily or total limit. Run the generator again for more options. No download or account is required. If you need more than 24 names in one go, run the tool multiple times and paste the results into one document. Removing duplicates is up to you; the generator does not track previous output.
-        </p>
-
-        <h2>No Download or Account Required</h2>
-        <p>
-          This Speedster name generator runs entirely in your browser. You do not need to download software or create an account. Open the page, set how many names you want, and click generate. The tool is free and works on desktop, tablet, and phone. That makes it easy to use when you are away from your main device or when you want to quickly generate character name ideas without installing anything.
-        </p>
-
-        <h2>Who Uses a Speedster Name Generator?</h2>
-        <p>
-          Players use the Speedster name generator when creating or updating a Speedster profile, or when they want a new character name for other platforms. Esports and streamers use it for in-game names or stream handles. The same tool works for Discord, Xbox, PlayStation, or social profiles—always check availability on each platform. Educators and workshop leaders sometimes use it to demonstrate username creation or digital identity in a classroom setting. No account or download is required on our site.
-        </p>
-        <p>
-          Anyone who needs a steady supply of username ideas can benefit. Whether you are a casual gamer, a competitive player, or a content creator, the Speedster name generator provides a fast way to explore options. The key is to treat the output as inspiration and always verify availability on Speedster and any other platform where you plan to use the name.
-        </p>
-
-        <h2>Getting the Most Out of the Speedster Name Generator</h2>
-        <p>
-          Run the generator several times and paste all results into one document. Skim for names that fit your style and check your platform for availability. Shortlist five to ten options so you have backups if your first choice is taken. The Speedster name generator does not check Speedster or any platform; you must do that yourself. When you have a shortlist, check availability one by one. Usernames are often taken on popular services, so having several options saves time.
-        </p>
-        <p>
-          Another tip is to try different batch sizes. Sometimes generating 24 names at once gives you a good mix; other times you may prefer smaller runs so you can review each set before generating more. The tool is flexible. Use it whenever you need new Speedster name ideas or character name inspiration. Bookmarking the page makes it easy to return when you are ready to refresh your profile or create a new account.
-        </p>
-
-        <h2>Typical Workflow for the Speedster Name Generator</h2>
-        <p>
-          A typical workflow is: open the page, set the number of names (e.g. 12 or 24), click generate, then copy the list. Paste into a notes app. Check your game or story for availability for each name you like. If your first choice is taken, try the next. Run the Speedster name generator again for more options. The whole process takes a few minutes. No account or download is required. Bookmark the page for quick access when you need new username ideas. The tool is free and runs in your browser with no sign-up.
-        </p>
-
-        <h2>What This Tool Does NOT Do</h2>
         <ul>
-          <li>It does not check Speedster or any platform for username availability.</li>
-          <li>It does not reserve or hold names for you.</li>
-          <li>It does not store your generated list or your settings.</li>
-          <li>It does not connect to Steam, Discord, or any external gaming service.</li>
+          <li><strong>Speed words at the core.</strong> Flash, Dash, Bolt, Zoom, Streak, Rush, Blur, Sprint, Velocity, Quicksilver. These are the load-bearing nouns of the genre — a name built on one of them is halfway to sounding like a speedster already.</li>
+          <li><strong>Lightning and electric motifs.</strong> Speed at superhuman levels reads visually as lightning, so names borrow that imagery: Bolt, Spark, Volt, Surge, Arc, Storm, Static, Thunder. The Flash&apos;s lightning-bolt chest emblem is no accident.</li>
+          <li><strong>Motion and momentum.</strong> Words that imply unstoppable forward movement — Rush, Momentum, Kinetic, Slipstream, Tempo, Wake — push the name toward speed without leaning on the word &quot;fast.&quot;</li>
+          <li><strong>Short and punchy beats out long and ornate.</strong> The strongest speedster names are one or two syllables you can shout. Compare the crisp snap of Zoom or Dash to a clunky four-word title; speed names want to be said quickly, almost as fast as the character moves.</li>
+        </ul>
+
+        <h2>The Speed Force and Legacy Naming</h2>
+        <p>
+          A defining feature of the genre is the idea of a shared source of super-speed — the Speed Force — that connects a whole lineage of fast characters. That single concept shapes how speedsters get named, because new heroes often inherit, riff on, or react against an established name:
+        </p>
+        <ul>
+          <li><strong>Legacy and the &quot;Flash family.&quot;</strong> When one hero passes the mantle to the next, the name carries forward — Flash, Kid Flash, Impulse, the larger Flash family. If your OC is a successor or sidekick, building their alias as a variation on a mentor&apos;s name (a &quot;Kid&quot; prefix, a related speed word, a junior twist) instantly signals that bloodline.</li>
+          <li><strong>Source-tied names.</strong> Characters whose powers come from a cosmic speed-energy can take names that nod to that origin — anything evoking force, current, or an endless wellspring of motion reads as &quot;plugged into the source.&quot;</li>
+          <li><strong>Names that imply velocity has a cost.</strong> Part of Speed Force lore is the danger of running too fast and being pulled into it. Aliases that hint at the edge of control — Overdrive, Redshift, Terminal Velocity — work for characters who flirt with that limit.</li>
         </ul>
         <p>
-          This Speedster name generator produces name ideas only. It does not validate availability, create accounts, or manage your profile. You must check Speedster or your chosen platform yourself and follow that platform&apos;s rules when creating or changing your username. The tool is a brainstorming aid, not a replacement for checking availability.
+          If you are writing inside a Speed Force-style setting, decide first whether your character is the original, a legacy successor, or a rival drawing on the same power. That choice tells you whether to generate a fresh standalone name or a name that echoes an existing one.</p>
+
+        <h2>Hero Alias vs. Civilian Name</h2>
+        <p>
+          Almost every speedster has two names, and they do different jobs. The civilian name is ordinary and human — Barry Allen, Wally West, Pietro Maximoff — grounding the character before they ever move at super-speed. The alias is the loud, thematic codename — the Flash, Quicksilver — that the public knows. A complete speedster OC usually needs both.
+        </p>
+        <p>
+          This generator focuses on the alias, the part that has to sound fast. The trick for the civilian name is the opposite: keep it unremarkable, even a little plain, so the gap between &quot;mild-mannered person&quot; and &quot;streak of lightning&quot; lands the way the genre intends. A useful pattern is the alliterative civilian name (Barry Allen, Wally West, Peter Parker in the wider superhero tradition) — a soft, real-sounding name whose initials chime, paired with a hard-hitting speed alias. Generate your codename here, then choose a deliberately grounded civilian identity to sit underneath it.
         </p>
 
-        <h2>Privacy and Security Notes</h2>
+        <h2>Naming a Speedster OC for Comics, Fanfic, and RP</h2>
         <p>
-          The Speedster name generator runs entirely in your browser. It does not send data to a server and does not store generated values. This is helpful for quick brainstorming and offline use. If you refresh the page, the last generated list is cleared. Copy any names you want to keep before closing or refreshing.
+          For an original character, the alias is the first thing readers judge, and a strong speedster name does three things at once: it announces super-speed in a syllable, it carries a lightning or motion image, and it fits the tone of the character (bright hero or shadowed rival). Generate a batch, then test each name with one question: could a narrator yell &quot;Go,&quot; followed by this name, as the character blurs out of frame? If it sounds good shouted at a sprint, it is in the right register.
         </p>
         <p>
-          For account security, never share your Speedster password or other credentials. The generator only suggests usernames; it does not handle login or account creation. When you check availability on Speedster or another platform, use the official site or app and ensure you are on a secure connection. The Speedster name generator is a standalone tool and does not integrate with any login system.
+          For fanfic and role-play set in an established speedster universe, you also have to make sure the name does not collide with canon. Borrowing the theme is fine and expected; reusing an exact existing alias is not. A good approach is to take a speed or lightning root the genre loves and twist it into something new — a fresh spin on Bolt, Dash, or Surge that no canon character already owns. For tabletop and D&D-style hero games, the same logic applies: a speedster build wants a name that telegraphs the gimmick the instant it hits the table, so other players immediately picture a character who acts twice before anyone else moves.
         </p>
 
-        <h2>Final Summary and When to Use This Tool</h2>
+        <h2>Villain Speedster Names: Going Darker</h2>
         <p>
-          The Speedster name generator provides a fast way to create username and character name ideas for Speedster and other fiction and creative projects. Set the number of names (1–24) and run as often as you like. Copy results and check your platform for availability. The tool runs locally in your browser with no sign-up. Keep a shortlist of options in case your first choice is taken. No download or account is required. The generator is free and works on any device.
+          The genre&apos;s most memorable speedsters are often the villains, and their names are built on a darker version of the same palette. Where heroes get bright, forward words (Flash, Dash, Impulse), villain speedsters get names that twist speed into menace — Zoom, Reverse-Flash, Savitar, Godspeed. Notice the tactics:
+        </p>
+        <ul>
+          <li><strong>Inversion.</strong> &quot;Reverse-Flash&quot; literally negates the hero — a mirror-image alias is a classic way to name an evil counterpart to your protagonist. If your hero is Bolt, your villain might be Backlash or Anti-Surge.</li>
+          <li><strong>Hard, hissing sounds.</strong> Zoom, Savitar, Shade — sharp consonants and ominous vowels make a speed name feel threatening rather than heroic.</li>
+          <li><strong>Grandiose or godlike titles.</strong> Godspeed, the Rival, the Black Flash — villain speedsters often claim a name that asserts dominance over speed itself, suggesting they are the fastest and they know it.</li>
+        </ul>
+        <p>
+          When generating a villain alias, lean toward the darker, sharper results in your batch and away from the bright, friendly ones. A name like Zoom works precisely because it sounds fast and faintly wrong at the same time.</p>
+
+        <h2>Building a Fast-Sounding Word From Scratch</h2>
+        <p>
+          If you want something more original than a stock speed word, you can construct an alias that simply sounds quick. A few techniques the genre relies on:
+        </p>
+        <ul>
+          <li><strong>Front-load a hard consonant.</strong> B, D, K, T, and Z sounds snap — Bolt, Dash, Kinetic, Zoom. A name that starts with one feels like it launches off the line.</li>
+          <li><strong>Keep vowels short.</strong> Short, clipped vowels read faster than long drawn-out ones. &quot;Dash&quot; outruns &quot;Daaron&quot; on the page.</li>
+          <li><strong>Fuse two speed ideas.</strong> Combine a motion root with an energy root — Voltdash, Sparkstreak, Quickbolt — to coin something new that still scans as a speedster. Use the generator to spark these mash-ups, then sand them down to the cleanest version.</li>
+          <li><strong>End on momentum.</strong> Suffixes like -dash, -bolt, -surge, or -streak let you bolt a speed punch onto almost any front half and keep the whole thing reading fast.</li>
+        </ul>
+
+        <h2>How to Use This Speedster Name Generator</h2>
+        <ol className="list-decimal pl-6 space-y-2">
+          <li>Set how many aliases you want per run (1–24).</li>
+          <li>Click <strong>Generate names</strong> to get a fresh batch of speedster-style codenames.</li>
+          <li>Skim for names that match your character — bright for a hero, sharper for a villain — then use the Copy button to save the whole list.</li>
+          <li>Paste into your story notes or character sheet and shortlist your favorites.</li>
+          <li>Run again for more options — there is no limit, no account, and no download.</li>
+        </ol>
+        <p>
+          Generation happens entirely in your browser. Your settings and the aliases you create are never sent to a server, so your character ideas stay private until you choose to share them.
+        </p>
+
+        <h2>Tips for Picking the Right Speedster Name</h2>
+        <p>
+          Say the alias out loud and imagine it on a comic cover or shouted across a battlefield. Speedster names are meant to be exclaimed, so a name that drags or trips the tongue undercuts the very speed it is supposed to convey. Favor one or two syllables; the icons of the genre — Flash, Zoom, Dash — earn their staying power partly by being short enough to fit a chest emblem. Match the name&apos;s tone to the character&apos;s morality: a bright, forward word for a hero, a hard or inverted one for a villain. And keep one image at the center — speed, lightning, or motion — rather than cramming all three into a single overstuffed title.
         </p>
         <p>
-          Use this Speedster name generator when you need Speedster name ideas, character name inspiration, or a quick way to explore options before checking availability. It is best for brainstorming, rebranding, and building a shortlist. Always verify availability on Speedster or your chosen platform before committing to a name. The tool is a practical free resource for gaming speedster names.
+          If you are naming a pair of rivals (a hero and their evil-speedster counterpart, the way the genre loves to mirror them), generate a batch and pick two names that echo each other — one bright, one dark, sharing a sound or a root. That mirroring is exactly what makes the Flash-and-Reverse-Flash dynamic read as a true nemesis pairing rather than two unrelated characters who happen to run fast.
+        </p>
+
+        <h2>What This Tool Does and Does Not Do</h2>
+        <ul>
+          <li>It generates speedster-style hero and villain aliases for comics, fanfic, role-play, and tabletop characters.</li>
+          <li>It does not reproduce official codenames as a database — output is for original creative use, not duplicating existing characters.</li>
+          <li>It does not store your generated list or settings; everything runs locally in your browser.</li>
+          <li>It does not check whether a name is already used in a published comic or by another player — verify that yourself if your project requires originality.</li>
+        </ul>
+
+        <h2>Final Notes</h2>
+        <p>
+          Super-speed is one of the most beloved powers in comics, and its heroes and villains live or die by a good alias — fic writers, comic creators, tabletop players, and role-players all need codenames that sound like they outrun lightning. This speedster name generator gives you that pool instantly, grounded in the genre&apos;s real naming logic: speed words at the core, lightning and motion motifs, short punchy beats, and the bright-hero versus dark-villain split. Generate a batch, lean on the legacy, alias, and villain notes above, and you will end up with a codename that feels like it was always meant to trail a streak of lightning.
         </p>
       </div>
     </section>

@@ -18,8 +18,8 @@ const toolSlug = 'httyd-name-generator';
 export async function generateMetadata(): Promise<Metadata> {
   return buildToolMeta({
     title: 'HTTYD Name Generator',
-    description: 'Free httyd name generator for dragon and character names. Create How to Train Your Dragon-style name ideas in your browser with no sign-up.',
-    seoTitle: 'HTTYD Name Generator – Dragon & Character Names',
+    description: 'Free How to Train Your Dragon name generator for Viking and dragon names. Build rugged Norse-style Viking names and trait-based dragon names for fanfic, art, and RP — in your browser, no sign-up.',
+    seoTitle: 'HTTYD Name Generator – Viking & Dragon Names',
     urlPath: `/${toolSlug}`,
   });
 }
@@ -28,170 +28,98 @@ function createWriteUp() {
   return (
     <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
-        <h2>HTTYD Name Generator – Dragon & Character Names</h2>
-        <h2>Introduction</h2>
+        <h2>HTTYD Name Generator – Viking &amp; Dragon Names</h2>
         <p>
-          This guide explains how to use a HTTYD name generator to create dragon and character names for HTTYD and other fiction and games. The tool runs in your browser and produces unique, memorable name ideas at the click of a button. It is designed for players who want HTTYD name ideas quickly without sign-up or download. The generator does not store data and runs entirely in your browser. You get 1–24 names per run and can run it as often as you like. Always check your game or story for availability before committing to a name.
+          HTTYD stands for How to Train Your Dragon, the world of Berk where blunt-talking Vikings live alongside the dragons they once fought. This generator builds names for both halves of that world: rugged, Norse-flavored Viking names in the spirit of Hiccup, Astrid, and Stoick the Vast, and descriptive, trait-based dragon names like Toothless, Stormfly, and Hookfang. Whether you are writing fanfic, designing an original character (OC) for art or role-play, or naming a dragon to match a sketch, the tool produces ready-to-use names right in your browser. There is no sign-up, nothing is stored, and you can generate as many batches as you like.
         </p>
         <p>
-          People search for HTTYD name ideas and character name generators when setting up a new profile, an esports handle, or a stream name. This HTTYD name generator serves that intent with one free, browser-based tool. Whether you need a single standout character name or a shortlist of options, the generator gives you a pool of ideas. Names must be unique on each service, so verifying availability on HTTYD or your chosen platform is an essential step after generating ideas.
-        </p>
-
-        <h2>What Is a HTTYD Name Generator?</h2>
-        <p>
-          A HTTYD name generator is an online tool that creates dragon and character names suitable for HTTYD and other fiction and games. You get unique name ideas at the click of a button. The generator combines curated How to Train Your Dragon-style words and elements at random so each run produces new combinations. The output is for inspiration only; you must check your platform for availability. This free HTTYD name generator runs in your browser with no sign-up and does not send generated names to any server.
-        </p>
-        <p>
-          The output is plain text, one name per line. You can copy the full list and paste it into a notes app, then check your game or story for availability and pick one. Many users run the HTTYD name generator multiple times to build a shortlist before deciding. Because names are created locally, your choices stay private and nothing is stored on our servers.
-        </p>
-        <p>
-          HTTYD name generators are useful when you are tired of reusing the same username or when you want a fresh character name that fits your style. The tool does not guarantee that a name is available; it only suggests combinations. Always confirm availability on your game or story before you commit to a new username.
+          The naming in How to Train Your Dragon is not random — it follows two very clear, very different logics. Viking names are heavy with Old Norse roots and a streak of blunt, sometimes unflattering humor (the chief&apos;s heir is literally named &quot;Hiccup&quot;). Dragon names are almost always descriptive, pointing straight at what the beast looks like or does — Toothless has retractable teeth, Hookfang has curling tusks, Stormfly is a fast flyer. This page explains both conventions so the names you pick actually feel like they belong on Berk, and so an OC Viking or OC dragon slots believably into the world.
         </p>
 
-        <h2>Why This HTTYD Name Generator Matters</h2>
+        <h2>How Viking Names Work in How to Train Your Dragon</h2>
         <p>
-          Choosing a memorable HTTYD name or character name can be time-consuming. A HTTYD name generator speeds up brainstorming. Instead of staring at a blank field, you get options in seconds. You can run it on a phone or desktop, copy the names you like, and then check availability on your game or story. The tool is free and does not require an account, so there is no friction to trying many ideas.
+          The human cast of Berk is named in a recognizable Norse register, but with the franchise&apos;s own comedic twist. Understanding the pattern lets you generate names that sound native to the Hairy Hooligan Tribe rather than thrown together:
         </p>
+        <ul>
+          <li><strong>Old Norse roots.</strong> Astrid, Stoick, Valka, Gobber, and Eret carry the hard, consonant-heavy sound of Scandinavian names. Strong vowels and clusters like &quot;st,&quot; &quot;gr,&quot; and &quot;th&quot; read instantly as Viking.</li>
+          <li><strong>Blunt, descriptive epithets.</strong> Vikings in HTTYD earn titles that say exactly what they are: Stoick the Vast, Hiccup the Useful, Snotlout. A by-name often describes a body, a deed, or a flaw with zero flattery.</li>
+          <li><strong>Comedic, even insulting given names.</strong> &quot;Hiccup&quot; and &quot;Snotlout&quot; are not heroic — the joke is that Viking parents named runts and troublemakers to scare off gnomes and trolls. Slightly silly names are very in-genre.</li>
+          <li><strong>Compound and twin names.</strong> Fishlegs, Tuffnut, and Ruffnut show how two plain words jam together into one rugged handle, and how sibling pairs rhyme or mirror each other (Tuff/Ruff).</li>
+        </ul>
+
+        <h2>How Dragon Names Work in How to Train Your Dragon</h2>
         <p>
-          The generator also keeps your ideas private. Names are created in your browser and are not sent to our servers. You can use it in a private or incognito window if you prefer. Because generation is local, there is no risk of your shortlist being stored or logged. That matters when you are testing ideas before you settle on a final HTTYD name or character name.
+          Dragon names follow a completely different rule from Viking names: they are descriptions, not heritage. A rider looks at the creature and names the most obvious trait, ability, or quirk:
         </p>
+        <ul>
+          <li><strong>Appearance-based.</strong> Toothless (his teeth retract), Hookfang (curved tusks), Meatlug (a stout, lumpy Gronckle), Skullcrusher — the name is a snapshot of the dragon&apos;s body.</li>
+          <li><strong>Ability-based.</strong> Stormfly flies fast and fires spine shots; Cloudjumper soars through cloud cover; Barf and Belch, the two-headed Zippleback, are named for the gas one head sprays and the spark the other ignites.</li>
+          <li><strong>Compound trait words.</strong> Most dragon names mash two concrete words — Cloud + jumper, Storm + fly, Skull + crusher — which is exactly the pattern that reads as &quot;a Berk dragon&quot; rather than a generic fantasy beast.</li>
+          <li><strong>Affectionate or comedic.</strong> A bond-name can be soft or funny even for a fearsome dragon — Meatlug and Toothless are both terrifying species named with obvious warmth.</li>
+        </ul>
+
+        <h2>Naming by Dragon Species and Class</h2>
         <p>
-          A good HTTYD name generator also standardizes the workflow: set how many names you want, click generate, copy the list, and check availability. You get a consistent way to explore username ideas without writing scripts or visiting multiple sites. The output is easy to paste into notes or a document so you can track which names you have already checked on HTTYD or other platforms.
+          How to Train Your Dragon sorts dragons into species, each with a distinct look and temperament, and matching a name to a species makes an OC dragon instantly more believable:
+        </p>
+        <ul>
+          <li><strong>Night Fury.</strong> Toothless&apos;s species — sleek, black, stealthy, with plasma blasts. Names should feel fast and shadowy.</li>
+          <li><strong>Deadly Nadder.</strong> Stormfly&apos;s species — colorful, spiny, vain, with spine-shot tails. Bright, sharp-edged names fit.</li>
+          <li><strong>Monstrous Nightmare.</strong> Hookfang&apos;s species — large, hot-headed, sets itself on fire. Aggressive, fiery names suit it.</li>
+          <li><strong>Gronckle.</strong> Meatlug&apos;s species — round, slow, lava-spitting, surprisingly sweet. Lumpy, blunt, affectionate names work well.</li>
+          <li><strong>Hideous Zippleback.</strong> Barf and Belch&apos;s species — two-headed, one head gas and one spark. These almost always get paired names that work as a duo.</li>
+        </ul>
+        <p>
+          Pick a species first, then generate a batch and keep the names whose sound matches its class and temperament. A stealthy Night Fury and a hot-headed Monstrous Nightmare should not share the same kind of name, even though both are &quot;HTTYD-style.&quot;
         </p>
 
-        <h2>How the HTTYD Name Generator Works (Step by Step)</h2>
+        <h2>Building an Original Character (OC) Viking</h2>
         <p>
-          When you open the page, you choose how many names you want per run (1–24). Clicking &quot;Generate names&quot; triggers the tool to randomly combine curated How to Train Your Dragon-style elements in your browser. Each run is independent; no names or settings are sent to a server. The result is a list of HTTYD name ideas, one per line. You can copy the full list with one click and paste it into a notes app. To get more ideas, run the generator again. The tool does not check HTTYD or any platform for availability—you must do that yourself.
+          For fanfic, art, and role-play, an OC Viking&apos;s name is the first thing the audience judges. A strong Berk Viking name does two jobs at once: it sounds Old Norse, and it carries a blunt descriptive edge that fits the tribe&apos;s sense of humor. Generate a batch, then ask of each name: could this be shouted across the Great Hall next to Stoick and Gobber without sounding out of place? If yes, it is in the right register.
         </p>
         <p>
-          The underlying word lists are designed to sound like gaming dragon and character names: bold, memorable, and easy to type. The generator shuffles and combines these elements so that each run produces different combinations. That randomness helps you discover names you might not have thought of on your own. Because everything runs in the browser, the HTTYD name generator works offline once the page is loaded and does not depend on a backend service.
+          A common approach is to pair a rugged given name with an earned epithet — &quot;Bjorn the Stubborn,&quot; &quot;Sigrid the Loud,&quot; &quot;Halvard the Half-Bearded.&quot; The epithet is where you lean into Viking humor: name a flaw, a body quirk, or a famous blunder, not just a triumph. If your OC is meant to be a comic foil like Snotlout or Fishlegs, a slightly undignified name does more characterization than a paragraph of description.
+        </p>
+
+        <h2>Building an Original Character (OC) Dragon</h2>
+        <p>
+          Naming an OC dragon runs the opposite way from naming a Viking: start from the design, not the heritage. Decide the species and the single most striking trait — a frilled crest, a split tail, a habit of humming — and let the name describe it. That is how every canon dragon name was built, and it is why &quot;Frostquill&quot; or &quot;Emberhide&quot; reads instantly as a Berk dragon while a borrowed elf-name does not.
         </p>
         <p>
-          There are no hidden steps. You set the count, click generate, and receive a list. Copying is one click; pasting into your own document keeps your shortlist in one place. Running the HTTYD name generator multiple times is the intended workflow when you want a large pool of character name ideas before checking availability.
+          If your OC dragon is bonded to a rider, consider how that rider would name it. A gruff warrior might pick something blunt and martial (Skullcrusher); a gentler rider might land on something warm and a little silly (Meatlug). The name should reflect both the dragon&apos;s body and the personality of the person who chose it — that two-way fit is what makes a bond-name feel earned rather than slapped on.
         </p>
 
         <h2>How to Use This HTTYD Name Generator</h2>
-        <p>Follow these steps to get HTTYD name ideas:</p>
         <ol className="list-decimal pl-6 space-y-2">
           <li>Set how many names you want per run (1–24).</li>
-          <li>Click &quot;Generate names&quot; to get a new list of character name ideas.</li>
-          <li>Use the Copy button to copy all names to your clipboard.</li>
-          <li>Paste into a notes app or document, then check your game or story for availability and pick one.</li>
-          <li>Run again for more options; no account or download is required.</li>
+          <li>Click <strong>Generate names</strong> to get a fresh batch of Berk-style Viking and dragon names.</li>
+          <li>Skim for names that fit your chosen Viking tribe role or dragon species, then use the Copy button to save the whole list.</li>
+          <li>Paste into your story notes, art caption, or character sheet and shortlist your favorites.</li>
+          <li>Run again for more options — there is no limit, no account, and no download.</li>
         </ol>
         <p>
-          The HTTYD name generator runs in your browser; your settings and generated names are not sent to any server. You can run it as often as you like. Building a shortlist of five to ten options before checking availability on HTTYD is a good habit, since popular usernames are often taken. Have backups ready so that if your first choice is unavailable, you can try the next name on your list.
+          Generation happens entirely in your browser. Your settings and the names you create are never sent to a server, so your OC Vikings and OC dragons stay private until you choose to share them.
         </p>
 
-        <h2>HTTYD and Gamer Naming Style</h2>
+        <h2>Tips for Picking the Right Name</h2>
         <p>
-          HTTYD names and character names often use bold, memorable word combinations: action words, nicknames, or creative spellings. This HTTYD name generator uses curated How to Train Your Dragon-style elements and combines them at random so you get new combinations that fit that style. The output is for inspiration only; the tool does not check HTTYD or any platform for availability. You can use the names as-is or tweak spelling and punctuation to make them your own.
+          Say the name out loud — Berk names are meant to be bellowed across a windy cliff, so a name that mumbles will not carry. For Vikings, keep the hard Norse consonants and let an epithet do the comedy; for dragons, make sure the name still describes the creature even out of context. Avoid accidentally reusing a canon full name (you do not want an OC literally called Hiccup or a dragon called Toothless), but echoing the structure — a blunt compound, a descriptive by-name — is exactly how you stay on-theme.
         </p>
         <p>
-          Different games and communities favor different styles. Some players prefer short, punchy character names; others like longer usernames. Running the generator multiple times gives you a mix of lengths and styles. Skim the list, mark the ones you like, and then verify each one on your game or story. The HTTYD name generator is a starting point—your final choice should fit your personality and the rules of your platform.
-        </p>
-
-        <h2>When to Use a HTTYD Name Generator</h2>
-        <p>
-          Use this HTTYD name generator when you need HTTYD or How to Train Your Dragon-style username ideas quickly. Common use cases include creating a new HTTYD account or updating your profile name, choosing an in-game name for esports or casual play, and picking a stream or social handle. The same tool works for other platforms—Discord, Xbox, PlayStation, or social profiles—as inspiration. Names must be unique on each platform, so always check availability before committing.
-        </p>
-        <p>
-          Another good time to use a HTTYD name generator is when you are rebranding. If you have used the same character name for years and want a fresh identity, generating a batch of ideas helps you explore options without pressure. Run the tool several times, paste results into one document, and remove duplicates. Then check HTTYD and any other platforms you use to see which names are still available. Having a shortlist saves time compared to checking one idea at a time.
+          If you are naming a rider-and-dragon pair, generate two batches and pick names that play off each other the way Hiccup and Toothless or Astrid and Stormfly do — a slightly self-deprecating Viking with a fierce, descriptive dragon makes the bond read as a real relationship rather than two unrelated names sitting side by side.
         </p>
 
-        <h2>Use Cases in Detail: Profiles, Esports, and Streams</h2>
-        <p>
-          Players use the HTTYD name generator when creating a new HTTYD account or refreshing their profile name. Esports and streamers use it for in-game names or stream handles. The same tool works for other platforms—Discord, Xbox, PlayStation, or social—as inspiration; you must check each platform for availability. Run the generator multiple times to build a shortlist, then check which names are free on your platform. The HTTYD name generator does not reserve or validate names; it only suggests combinations.
-        </p>
-        <p>
-          Content creators often need a consistent handle across Steam, streaming, and social media. Generating a batch of character name ideas lets you test different options before you commit. Copy the names you like into a single list, then check availability on each service. If one name is taken on HTTYD but free elsewhere, you can still use it on the platforms where it is available, or use the generator again to find alternatives that work everywhere.
-        </p>
-
-        <h2>Tips for Choosing a HTTYD Username</h2>
-        <p>
-          Pick a name that is easy to remember and type. Short character names are easier to say in voice chat and less likely to be mistyped. Run the HTTYD name generator multiple times to get a shortlist, then check your game or story for availability. Have a few backups in case your first choice is taken. Avoid names that might be mistaken for someone else or that break platform rules. The generator gives you ideas only; the final choice is yours.
-        </p>
-        <p>
-          Consider how the name will look in different contexts: in-game, on a stream overlay, or in a friend list. Some combinations look great in one font but odd in another. If you plan to use the same handle across multiple games and platforms, check availability everywhere before you invest in branding. The HTTYD name generator is a free way to explore options without committing until you have confirmed that your chosen HTTYD name or character name is available.
-        </p>
-
-        <h2>Running the HTTYD Name Generator in Batches</h2>
-        <p>
-          When you need many username ideas, run the HTTYD name generator multiple times. Each run gives up to 24 names. Paste each run into the same document and remove duplicates if any appear. Check availability on your platform for each name you like. There is no daily or total limit; you can run the generator as often as you want. Batching is useful when you are setting up several accounts, testing ideas for a team, or simply want a large pool of character name options before making a decision.
-        </p>
-        <p>
-          Keeping a single document with all your generated HTTYD name ideas makes it easy to track which names you have already checked. Mark names as &quot;taken&quot; or &quot;available&quot; as you go. That way you avoid re-checking the same name on HTTYD or another platform. The HTTYD name generator does not remember previous runs, so your document is your only record of the ideas you have collected.
-        </p>
-
-        <h2>Privacy and Local Processing</h2>
-        <p>
-          This HTTYD name generator runs entirely in your browser. When you set the number of names and click generate, the names are created locally on your device. Your choices and the generated names are not sent to our servers. We do not store your inputs or the generated list. No account or login is required. That means your shortlist of character name ideas stays on your machine unless you choose to copy it somewhere else.
-        </p>
-        <p>
-          Because generation is local, the tool is suitable for use in private or incognito windows. If you close the tab, the generated list is gone unless you have copied it. There is no server-side log of what names you generated or how many times you ran the HTTYD name generator. This privacy model is intentional: username brainstorming is personal, and the tool is designed so that you control where your ideas go.
-        </p>
-
-        <h2>Copying and Exporting Names</h2>
-        <p>
-          Use the Copy button to copy all generated HTTYD name ideas to your clipboard (one per line). Paste into a notes app or document. Check your game or story for availability before committing to a name. The names are plain text, so they work in any editor or form. If you paste into a spreadsheet, each line can go in its own cell for easy tracking. The HTTYD name generator does not export to a file; copying and pasting is the intended way to save your shortlist.
-        </p>
-
-        <h2>Limits and Batch Size</h2>
-        <p>
-          You can request 1–24 names per run with this HTTYD name generator. There is no daily or total limit. Run the generator again for more options. No download or account is required. If you need more than 24 names in one go, run the tool multiple times and paste the results into one document. Removing duplicates is up to you; the generator does not track previous output.
-        </p>
-
-        <h2>No Download or Account Required</h2>
-        <p>
-          This HTTYD name generator runs entirely in your browser. You do not need to download software or create an account. Open the page, set how many names you want, and click generate. The tool is free and works on desktop, tablet, and phone. That makes it easy to use when you are away from your main device or when you want to quickly generate character name ideas without installing anything.
-        </p>
-
-        <h2>Who Uses a HTTYD Name Generator?</h2>
-        <p>
-          Players use the HTTYD name generator when creating or updating a HTTYD profile, or when they want a new character name for other platforms. Esports and streamers use it for in-game names or stream handles. The same tool works for Discord, Xbox, PlayStation, or social profiles—always check availability on each platform. Educators and workshop leaders sometimes use it to demonstrate username creation or digital identity in a classroom setting. No account or download is required on our site.
-        </p>
-        <p>
-          Anyone who needs a steady supply of username ideas can benefit. Whether you are a casual gamer, a competitive player, or a content creator, the HTTYD name generator provides a fast way to explore options. The key is to treat the output as inspiration and always verify availability on HTTYD and any other platform where you plan to use the name.
-        </p>
-
-        <h2>Getting the Most Out of the HTTYD Name Generator</h2>
-        <p>
-          Run the generator several times and paste all results into one document. Skim for names that fit your style and check your platform for availability. Shortlist five to ten options so you have backups if your first choice is taken. The HTTYD name generator does not check HTTYD or any platform; you must do that yourself. When you have a shortlist, check availability one by one. Usernames are often taken on popular services, so having several options saves time.
-        </p>
-        <p>
-          Another tip is to try different batch sizes. Sometimes generating 24 names at once gives you a good mix; other times you may prefer smaller runs so you can review each set before generating more. The tool is flexible. Use it whenever you need new HTTYD name ideas or character name inspiration. Bookmarking the page makes it easy to return when you are ready to refresh your profile or create a new account.
-        </p>
-
-        <h2>Typical Workflow for the HTTYD Name Generator</h2>
-        <p>
-          A typical workflow is: open the page, set the number of names (e.g. 12 or 24), click generate, then copy the list. Paste into a notes app. Check your game or story for availability for each name you like. If your first choice is taken, try the next. Run the HTTYD name generator again for more options. The whole process takes a few minutes. No account or download is required. Bookmark the page for quick access when you need new username ideas. The tool is free and runs in your browser with no sign-up.
-        </p>
-
-        <h2>What This Tool Does NOT Do</h2>
+        <h2>What This Tool Does and Does Not Do</h2>
         <ul>
-          <li>It does not check HTTYD or any platform for username availability.</li>
-          <li>It does not reserve or hold names for you.</li>
-          <li>It does not store your generated list or your settings.</li>
-          <li>It does not connect to Steam, Discord, or any external gaming service.</li>
+          <li>It generates How to Train Your Dragon-style Viking names and dragon names for fanfic, art, and role-play.</li>
+          <li>It does not reproduce the official Berk cast as a lookup database — output is for original creative use.</li>
+          <li>It does not store your generated list or settings; everything runs locally in your browser.</li>
+          <li>It does not check name availability on any game, forum, or social platform — verify that yourself if you plan to reuse a name as a handle.</li>
         </ul>
-        <p>
-          This HTTYD name generator produces name ideas only. It does not validate availability, create accounts, or manage your profile. You must check HTTYD or your chosen platform yourself and follow that platform&apos;s rules when creating or changing your username. The tool is a brainstorming aid, not a replacement for checking availability.
-        </p>
 
-        <h2>Privacy and Security Notes</h2>
+        <h2>Final Notes</h2>
         <p>
-          The HTTYD name generator runs entirely in your browser. It does not send data to a server and does not store generated values. This is helpful for quick brainstorming and offline use. If you refresh the page, the last generated list is cleared. Copy any names you want to keep before closing or refreshing.
-        </p>
-        <p>
-          For account security, never share your HTTYD password or other credentials. The generator only suggests usernames; it does not handle login or account creation. When you check availability on HTTYD or another platform, use the official site or app and ensure you are on a secure connection. The HTTYD name generator is a standalone tool and does not integrate with any login system.
-        </p>
-
-        <h2>Final Summary and When to Use This Tool</h2>
-        <p>
-          The HTTYD name generator provides a fast way to create username and character name ideas for HTTYD and other fiction and games. Set the number of names (1–24) and run as often as you like. Copy results and check your platform for availability. The tool runs locally in your browser with no sign-up. Keep a shortlist of options in case your first choice is taken. No download or account is required. The generator is free and works on any device.
-        </p>
-        <p>
-          Use this HTTYD name generator when you need HTTYD name ideas, character name inspiration, or a quick way to explore options before checking availability. It is best for brainstorming, rebranding, and building a shortlist. Always verify availability on HTTYD or your chosen platform before committing to a name. The tool is a practical free resource for gaming dragon and character names.
+          How to Train Your Dragon is one of the most-drawn and most-written dragon fandoms online — fic writers, artists sketching OC dragons, and role-players on Berk-themed servers all need names that fit. This HTTYD name generator gives you that pool instantly, grounded in the franchise&apos;s real naming logic: Old Norse roots and blunt humor for Vikings, concrete trait-based compounds for dragons, and species-matched sound for both. Generate a batch, lean on the Viking and dragon notes above, and you will end up with names that feel like they were always part of Berk.
         </p>
       </div>
     </section>

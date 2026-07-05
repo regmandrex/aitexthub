@@ -18,8 +18,8 @@ const toolSlug = 'magical-girl-name-generator';
 export async function generateMetadata(): Promise<Metadata> {
   return buildToolMeta({
     title: 'Magical Girl Name Generator',
-    description: 'Free magical girl name generator for character and transformation names. Create magical girl-style name ideas in your browser with no sign-up.',
-    seoTitle: 'Magical Girl Name Generator – Character Name Ideas',
+    description: 'Free magical girl name generator for mahou shoujo OCs — civilian given names plus Sailor-style and Cure-style transformation names themed on stars, moons, flowers, gems, and light. In your browser, no sign-up.',
+    seoTitle: 'Magical Girl Name Generator – Civilian & Transformation Names',
     urlPath: `/${toolSlug}`,
   });
 }
@@ -28,170 +28,121 @@ function createWriteUp() {
   return (
     <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
-        <h2>Magical Girl Name Generator – Character Name Ideas</h2>
-        <h2>Introduction</h2>
+        <h2>Magical Girl Name Generator – Civilian &amp; Transformation Names</h2>
         <p>
-          This guide explains how to use a Magical Girl name generator to create character and transformation names for Magical Girl and other fiction and creative projects. The tool runs in your browser and produces unique, memorable name ideas at the click of a button. It is designed for players who want Magical Girl name ideas quickly without sign-up or download. The generator does not store data and runs entirely in your browser. You get 1–24 names per run and can run it as often as you like. Always check your game or story for availability before committing to a name.
+          This magical girl name generator builds names the way the mahou shoujo genre does: a soft, ordinary civilian given name for the girl&apos;s everyday life, plus a sparkling transformation name she calls out when she powers up. Think Tsukino Usagi who becomes Sailor Moon, or Yagami Hikari who fights as Cure Heart. Whether you are designing an original character (OC) for fan art, writing a Pretty Cure-style fanfic, or building a roleplay account, the tool produces ready-to-use names themed on stars, moons, flowers, gems, light, hearts, and dreams. It runs entirely in your browser, stores nothing, and you can generate as many batches as you like.
         </p>
         <p>
-          People search for Magical Girl name ideas and character name generators when setting up a new profile, an esports handle, or a stream name. This Magical Girl name generator serves that intent with one free, browser-based tool. Whether you need a single standout character name or a shortlist of options, the generator gives you a pool of ideas. Names must be unique on each service, so verifying availability on Magical Girl or your chosen platform is an essential step after generating ideas.
-        </p>
-
-        <h2>What Is a Magical Girl Name Generator?</h2>
-        <p>
-          A Magical Girl name generator is an online tool that creates character and transformation names suitable for Magical Girl and other fiction and creative projects. You get unique name ideas at the click of a button. The generator combines curated magical girl-style words and elements at random so each run produces new combinations. The output is for inspiration only; you must check your platform for availability. This free Magical Girl name generator runs in your browser with no sign-up and does not send generated names to any server.
-        </p>
-        <p>
-          The output is plain text, one name per line. You can copy the full list and paste it into a notes app, then check your game or story for availability and pick one. Many users run the Magical Girl name generator multiple times to build a shortlist before deciding. Because names are created locally, your choices stay private and nothing is stored on our servers.
-        </p>
-        <p>
-          Magical Girl name generators are useful when you are tired of reusing the same username or when you want a fresh character name that fits your style. The tool does not guarantee that a name is available; it only suggests combinations. Always confirm availability on your game or story before you commit to a new username.
+          Magical girl names are not random. The genre has its own grammar — a deliberately cute or elegant Japanese-inspired given name paired with a hero alias built from a celestial body, a virtue, or an element. This page walks through those conventions — the Sailor-X pattern from Sailor Moon, the Cure-X pattern from Pretty Cure, theming by element and color, and how to name a whole team — so the names you keep actually feel like they belong in a transformation sequence rather than a username list.
         </p>
 
-        <h2>Why This Magical Girl Name Generator Matters</h2>
+        <h2>Civilian Name vs Magical Name</h2>
         <p>
-          Choosing a memorable Magical Girl name or character name can be time-consuming. A Magical Girl name generator speeds up brainstorming. Instead of staring at a blank field, you get options in seconds. You can run it on a phone or desktop, copy the names you like, and then check availability on your game or story. The tool is free and does not require an account, so there is no friction to trying many ideas.
+          The defining convention of the genre is the dual identity. Almost every magical girl carries two names, and the contrast between them is the whole point. The civilian name is who she is at school — gentle, everyday, often a little clumsy and ordinary. The magical name is who she becomes mid-transformation — radiant, declarative, and themed. When you generate a magical girl OC, you are really generating a pair.
         </p>
+        <ul>
+          <li><strong>The civilian given name</strong> is soft and human: Usagi (rabbit), Sakura (cherry blossom), Madoka (circle/harmony), Hikari (light), Nagisa, Honoka, Kobato. These read as real Japanese girls&apos; names — cute, warm, and grounded.</li>
+          <li><strong>The magical name</strong> is the alias she shouts: Sailor Moon, Cure Black, Princess Tutu. It is built from a theme word and usually a fixed prefix, and it is meant to be spoken aloud as a battle cry.</li>
+          <li><strong>The bridge between them</strong> is often a hidden clue. Usagi (&quot;rabbit&quot; — the rabbit said to live on the moon) becomes Sailor Moon; Hikari (&quot;light&quot;) becomes Cure Heart. A good OC pair hides a similar wink.</li>
+        </ul>
         <p>
-          The generator also keeps your ideas private. Names are created in your browser and are not sent to our servers. You can use it in a private or incognito window if you prefer. Because generation is local, there is no risk of your shortlist being stored or logged. That matters when you are testing ideas before you settle on a final Magical Girl name or character name.
-        </p>
-        <p>
-          A good Magical Girl name generator also standardizes the workflow: set how many names you want, click generate, copy the list, and check availability. You get a consistent way to explore username ideas without writing scripts or visiting multiple sites. The output is easy to paste into notes or a document so you can track which names you have already checked on Magical Girl or other platforms.
+          When you use the generator, treat one result as the school name and another, themed result as the transformation name — or pick a civilian name first and theme the alias around its hidden meaning.
         </p>
 
-        <h2>How the Magical Girl Name Generator Works (Step by Step)</h2>
+        <h2>The Sailor-X Pattern (Sailor Moon Style)</h2>
         <p>
-          When you open the page, you choose how many names you want per run (1–24). Clicking &quot;Generate names&quot; triggers the tool to randomly combine curated magical girl-style elements in your browser. Each run is independent; no names or settings are sent to a server. The result is a list of Magical Girl name ideas, one per line. You can copy the full list with one click and paste it into a notes app. To get more ideas, run the generator again. The tool does not check Magical Girl or any platform for availability—you must do that yourself.
+          Sailor Moon codified one of the most recognizable naming formulas in anime: the prefix &quot;Sailor&quot; followed by a celestial body. Sailor Moon, Sailor Mercury, Sailor Venus, Sailor Mars, Sailor Jupiter, Sailor Saturn, Sailor Pluto — each Guardian is named for a planet or moon, and that celestial assignment dictates her color, her element, and her personality.
+        </p>
+        <ul>
+          <li><strong>Pick a celestial body, get a whole character.</strong> Mars carries fire and red; Mercury carries water, ice, and blue intelligence; Venus carries love and orange; Jupiter carries lightning and green strength.</li>
+          <li><strong>The civilian name echoes the planet.</strong> Sailor Mars is Hino Rei (&quot;hi&quot; hints at fire); Sailor Mercury is Mizuno Ami (&quot;mizu&quot; means water). The surname often carries the elemental clue.</li>
+          <li><strong>For an OC,</strong> claim an unused celestial body — a comet, a constellation, an asteroid, a star like Sirius or Vega — so your Sailor-style guardian does not clash with the canon Senshi.</li>
+        </ul>
+        <p>
+          Generate a batch of celestial- and light-themed names, pick the body that matches the element you want, then build a matching civilian surname that hints at it. That two-layer link is what makes a Sailor-style OC feel canon.
+        </p>
+
+        <h2>The Cure-X Pattern (Pretty Cure Style)</h2>
+        <p>
+          Pretty Cure (PreCure) runs on a different but equally rigid formula: the prefix &quot;Cure&quot; followed by a virtue, an abstract noun, or a single evocative word. Cure Black, Cure White, Cure Bloom, Cure Dream, Cure Peach, Cure Heart, Cure Happy, Cure Star, Cure Sword. Where Sailor names point at the sky, Cure names point at a feeling or ideal.
+        </p>
+        <ul>
+          <li><strong>Theme on a virtue or concept:</strong> Heart, Dream, Happy, Peace, Honey, Fortune, Lovely, Sword, March, Rosetta. The word should sound like a wish or a value she embodies.</li>
+          <li><strong>The civilian name carries the theme too.</strong> Cure Heart is Aida Mana; Cure Black is Misumi Nagisa. The hero word frequently maps onto her personality — the cheerful one becomes Cure Happy, the regal one becomes Cure Sword.</li>
+          <li><strong>One word, spoken proudly.</strong> Cure names work because they are short and declarative. Avoid multi-word aliases here — &quot;Cure&quot; plus a single strong noun is the genre rule.</li>
+        </ul>
+        <p>
+          If you are building a Pretty Cure-style OC, generate virtue- and color-themed words, pick one that matches your character&apos;s heart, and attach &quot;Cure&quot; in front of it. Then choose a soft civilian given name that fits the same emotion.
+        </p>
+
+        <h2>Theming by Element, Celestial, Flower, and Gem</h2>
+        <p>
+          Beyond the two big franchises, magical girl names draw from a shared palette of motifs. Cardcaptor Sakura leans on flowers and the seasons; Madoka Magica leans on light, hope, and circles; Princess Tutu leans on ballet and swans. Whatever your story, picking a theme first keeps a name coherent.
+        </p>
+        <ul>
+          <li><strong>Celestial:</strong> moon, star, comet, aurora, galaxy, twilight, dawn, eclipse, nova. The default register of the genre and the safest place to start.</li>
+          <li><strong>Flowers:</strong> sakura (cherry blossom), lily, rose, lotus, camellia, wisteria, hanabi. Soft, feminine, and very common in civilian given names.</li>
+          <li><strong>Gems and colors:</strong> ruby, sapphire, opal, pearl, crystal, amethyst — and the color words crimson, azure, rose, ivory that often double as a Cure suffix.</li>
+          <li><strong>Light and heart:</strong> light, shine, lumiere, radiance, hope, love, dream, heart, wish. These power-words give a name its emotional charge.</li>
+          <li><strong>Element and power:</strong> moonlight, starfire, frost, blossom, prism, sparkle. Pair the element to the transformation phrase she shouts.</li>
+        </ul>
+        <p>
+          Lock in one theme — say, celestial — and keep only the generated names that fit it. A flower-themed Cure beside a celestial-themed Sailor in the same scene reads as deliberate worldbuilding rather than a grab-bag.
+        </p>
+
+        <h2>Naming a Magical Girl OC</h2>
+        <p>
+          A strong magical girl OC name does three jobs: it gives her a believable, gentle civilian identity, it gives her a themed transformation alias, and it ties the two together with a hidden link. Generate a batch, then ask of each pair: could she introduce herself with the civilian name in homeroom, and shout the magical name in a henshin sequence without it sounding silly? If both pass, you have a keeper.
         </p>
         <p>
-          The underlying word lists are designed to sound like gaming character and transformation names: bold, memorable, and easy to type. The generator shuffles and combines these elements so that each run produces different combinations. That randomness helps you discover names you might not have thought of on your own. Because everything runs in the browser, the Magical Girl name generator works offline once the page is loaded and does not depend on a backend service.
+          A reliable method is to start from the meaning. Decide her element — light, ice, love, hope — then pick a civilian given name whose Japanese meaning hints at it (Hikari for light, Yuki for snow, Ai for love), and build the alias on the same idea. The clumsy-but-kind heroine, the cool rival, the mysterious senior — each archetype suggests a register, from bouncy and bright to elegant and restrained. Let the sound of the name match the personality.
         </p>
         <p>
-          There are no hidden steps. You set the count, click generate, and receive a list. Copying is one click; pasting into your own document keeps your shortlist in one place. Running the Magical Girl name generator multiple times is the intended workflow when you want a large pool of character name ideas before checking availability.
+          The mascot and the wand matter too. Many magical girls receive their alias from a talking companion — Luna naming Usagi as Sailor Moon, the fairies christening each Cure — so if your worldbuilding includes a mascot, you can frame the transformation name as something it grants rather than something she chooses. The same goes for her weapon or item: a star-themed guardian wields a star rod, a heart-themed Cure carries a heart-shaped locket. Keeping the alias, the mascot&apos;s catchphrase, and the item on one motif makes the whole package feel designed rather than assembled, which is the difference between an OC that reads as canon and one that reads as a placeholder.
+        </p>
+
+        <h2>Naming a Magical Girl Team</h2>
+        <p>
+          Magical girls almost always fight in groups, and the genre loves a shared naming theme across the squad. The Sailor Senshi share &quot;Sailor&quot; plus the planets; the first Pretty Cure duo are Cure Black and Cure White; Madoka&apos;s cast is bound by a single contract and motif. A team name set should feel like a matched collection, not five unrelated picks.
+        </p>
+        <p>
+          Pick a unifying frame first, then vary within it. A celestial team can be Moon, Star, Comet, Aurora, and Eclipse. A color team can be Cure Red, Cure Blue, Cure Yellow, and so on, each girl assigned a hue and a matching personality. A flower team can be Lily, Rose, Camellia, and Wisteria. Generate a larger batch, sort the results by theme, then deal one motif to each member so the group shares a visual and verbal identity — exactly how ensemble magical girl shows signal that these girls belong together.
+        </p>
+        <p>
+          The standard ensemble has roles as well as themes, and the names should reflect both. The leader usually takes the headline motif — the moon, the heart, the brightest light — and a warm, approachable civilian name; the rival or second-in-command gets a cooler, sharper alias (Mercury, Sword, Eclipse) and a more reserved given name; the gentle support member leans on soft flower or pastel-color words; the powerhouse takes bold element words like thunder, flame, or storm. Assign the motif to the personality, not at random, and the roster will feel like a real team where you can guess each girl&apos;s character from her name alone. When a latecomer joins mid-story — the lone wolf who fights solo before joining, like Sailor Uranus and Neptune or Cure Moonlight — give her a name that stands slightly apart from the others&apos; shared frame to signal that she arrived from outside the group.
         </p>
 
         <h2>How to Use This Magical Girl Name Generator</h2>
-        <p>Follow these steps to get Magical Girl name ideas:</p>
         <ol className="list-decimal pl-6 space-y-2">
           <li>Set how many names you want per run (1–24).</li>
-          <li>Click &quot;Generate names&quot; to get a new list of character name ideas.</li>
-          <li>Use the Copy button to copy all names to your clipboard.</li>
-          <li>Paste into a notes app or document, then check your game or story for availability and pick one.</li>
-          <li>Run again for more options; no account or download is required.</li>
+          <li>Click <strong>Generate names</strong> to get a fresh batch of magical girl-style names.</li>
+          <li>Skim for a soft civilian given name and a themed alias, then use the Copy button to save the whole list.</li>
+          <li>Paste into your character sheet or fanfic notes and pair a civilian name with a transformation name.</li>
+          <li>Run again for more — there is no limit, no account, and no download.</li>
         </ol>
         <p>
-          The Magical Girl name generator runs in your browser; your settings and generated names are not sent to any server. You can run it as often as you like. Building a shortlist of five to ten options before checking availability on Magical Girl is a good habit, since popular usernames are often taken. Have backups ready so that if your first choice is unavailable, you can try the next name on your list.
+          Generation happens entirely in your browser. Your settings and the names you create are never sent to a server, so your OC ideas and team rosters stay private until you choose to share them in art, fic, or roleplay.
         </p>
 
-        <h2>Magical Girl and Gamer Naming Style</h2>
+        <h2>Tips for Picking the Right Magical Girl Name</h2>
         <p>
-          Magical Girl names and character names often use bold, memorable word combinations: action words, nicknames, or creative spellings. This Magical Girl name generator uses curated magical girl-style elements and combines them at random so you get new combinations that fit that style. The output is for inspiration only; the tool does not check Magical Girl or any platform for availability. You can use the names as-is or tweak spelling and punctuation to make them your own.
+          Say the transformation name out loud — it has to work as a spoken battle cry, so anything that trips the tongue will trip the moment she powers up. Keep the civilian name gentle and ordinary so the contrast with the radiant alias lands; the gap between &quot;Usagi&quot; and &quot;Sailor Moon&quot; is what makes the reveal satisfying. Borrowing a genre prefix (Sailor-, Cure-, Princess-) instantly signals which tradition your OC belongs to, but pair it with a fresh theme word so you are not duplicating a canon heroine.
         </p>
         <p>
-          Different games and communities favor different styles. Some players prefer short, punchy character names; others like longer usernames. Running the generator multiple times gives you a mix of lengths and styles. Skim the list, mark the ones you like, and then verify each one on your game or story. The Magical Girl name generator is a starting point—your final choice should fit your personality and the rules of your platform.
-        </p>
-
-        <h2>When to Use a Magical Girl Name Generator</h2>
-        <p>
-          Use this Magical Girl name generator when you need Magical Girl or magical girl-style username ideas quickly. Common use cases include creating a new Magical Girl account or updating your profile name, choosing an in-game name for esports or casual play, and picking a stream or social handle. The same tool works for other platforms—Discord, Xbox, PlayStation, or social profiles—as inspiration. Names must be unique on each platform, so always check availability before committing.
-        </p>
-        <p>
-          Another good time to use a Magical Girl name generator is when you are rebranding. If you have used the same character name for years and want a fresh identity, generating a batch of ideas helps you explore options without pressure. Run the tool several times, paste results into one document, and remove duplicates. Then check Magical Girl and any other platforms you use to see which names are still available. Having a shortlist saves time compared to checking one idea at a time.
+          If you are naming a duo or a full team, generate a batch and pick names that share a frame but contrast in tone — one bright and bouncy, one cool and elegant, one mysterious — so the group sounds like distinct girls rather than one idea repeated. That blend of shared theme and contrasting personality is exactly what makes ensembles like the Sailor Senshi or a Pretty Cure team feel alive.
         </p>
 
-        <h2>Use Cases in Detail: Profiles, Esports, and Streams</h2>
-        <p>
-          Players use the Magical Girl name generator when creating a new Magical Girl account or refreshing their profile name. Esports and streamers use it for in-game names or stream handles. The same tool works for other platforms—Discord, Xbox, PlayStation, or social—as inspiration; you must check each platform for availability. Run the generator multiple times to build a shortlist, then check which names are free on your platform. The Magical Girl name generator does not reserve or validate names; it only suggests combinations.
-        </p>
-        <p>
-          Content creators often need a consistent handle across Steam, streaming, and social media. Generating a batch of character name ideas lets you test different options before you commit. Copy the names you like into a single list, then check availability on each service. If one name is taken on Magical Girl but free elsewhere, you can still use it on the platforms where it is available, or use the generator again to find alternatives that work everywhere.
-        </p>
-
-        <h2>Tips for Choosing a Magical Girl Username</h2>
-        <p>
-          Pick a name that is easy to remember and type. Short character names are easier to say in voice chat and less likely to be mistyped. Run the Magical Girl name generator multiple times to get a shortlist, then check your game or story for availability. Have a few backups in case your first choice is taken. Avoid names that might be mistaken for someone else or that break platform rules. The generator gives you ideas only; the final choice is yours.
-        </p>
-        <p>
-          Consider how the name will look in different contexts: in-game, on a stream overlay, or in a friend list. Some combinations look great in one font but odd in another. If you plan to use the same handle across multiple games and platforms, check availability everywhere before you invest in branding. The Magical Girl name generator is a free way to explore options without committing until you have confirmed that your chosen Magical Girl name or character name is available.
-        </p>
-
-        <h2>Running the Magical Girl Name Generator in Batches</h2>
-        <p>
-          When you need many username ideas, run the Magical Girl name generator multiple times. Each run gives up to 24 names. Paste each run into the same document and remove duplicates if any appear. Check availability on your platform for each name you like. There is no daily or total limit; you can run the generator as often as you want. Batching is useful when you are setting up several accounts, testing ideas for a team, or simply want a large pool of character name options before making a decision.
-        </p>
-        <p>
-          Keeping a single document with all your generated Magical Girl name ideas makes it easy to track which names you have already checked. Mark names as &quot;taken&quot; or &quot;available&quot; as you go. That way you avoid re-checking the same name on Magical Girl or another platform. The Magical Girl name generator does not remember previous runs, so your document is your only record of the ideas you have collected.
-        </p>
-
-        <h2>Privacy and Local Processing</h2>
-        <p>
-          This Magical Girl name generator runs entirely in your browser. When you set the number of names and click generate, the names are created locally on your device. Your choices and the generated names are not sent to our servers. We do not store your inputs or the generated list. No account or login is required. That means your shortlist of character name ideas stays on your machine unless you choose to copy it somewhere else.
-        </p>
-        <p>
-          Because generation is local, the tool is suitable for use in private or incognito windows. If you close the tab, the generated list is gone unless you have copied it. There is no server-side log of what names you generated or how many times you ran the Magical Girl name generator. This privacy model is intentional: username brainstorming is personal, and the tool is designed so that you control where your ideas go.
-        </p>
-
-        <h2>Copying and Exporting Names</h2>
-        <p>
-          Use the Copy button to copy all generated Magical Girl name ideas to your clipboard (one per line). Paste into a notes app or document. Check your game or story for availability before committing to a name. The names are plain text, so they work in any editor or form. If you paste into a spreadsheet, each line can go in its own cell for easy tracking. The Magical Girl name generator does not export to a file; copying and pasting is the intended way to save your shortlist.
-        </p>
-
-        <h2>Limits and Batch Size</h2>
-        <p>
-          You can request 1–24 names per run with this Magical Girl name generator. There is no daily or total limit. Run the generator again for more options. No download or account is required. If you need more than 24 names in one go, run the tool multiple times and paste the results into one document. Removing duplicates is up to you; the generator does not track previous output.
-        </p>
-
-        <h2>No Download or Account Required</h2>
-        <p>
-          This Magical Girl name generator runs entirely in your browser. You do not need to download software or create an account. Open the page, set how many names you want, and click generate. The tool is free and works on desktop, tablet, and phone. That makes it easy to use when you are away from your main device or when you want to quickly generate character name ideas without installing anything.
-        </p>
-
-        <h2>Who Uses a Magical Girl Name Generator?</h2>
-        <p>
-          Players use the Magical Girl name generator when creating or updating a Magical Girl profile, or when they want a new character name for other platforms. Esports and streamers use it for in-game names or stream handles. The same tool works for Discord, Xbox, PlayStation, or social profiles—always check availability on each platform. Educators and workshop leaders sometimes use it to demonstrate username creation or digital identity in a classroom setting. No account or download is required on our site.
-        </p>
-        <p>
-          Anyone who needs a steady supply of username ideas can benefit. Whether you are a casual gamer, a competitive player, or a content creator, the Magical Girl name generator provides a fast way to explore options. The key is to treat the output as inspiration and always verify availability on Magical Girl and any other platform where you plan to use the name.
-        </p>
-
-        <h2>Getting the Most Out of the Magical Girl Name Generator</h2>
-        <p>
-          Run the generator several times and paste all results into one document. Skim for names that fit your style and check your platform for availability. Shortlist five to ten options so you have backups if your first choice is taken. The Magical Girl name generator does not check Magical Girl or any platform; you must do that yourself. When you have a shortlist, check availability one by one. Usernames are often taken on popular services, so having several options saves time.
-        </p>
-        <p>
-          Another tip is to try different batch sizes. Sometimes generating 24 names at once gives you a good mix; other times you may prefer smaller runs so you can review each set before generating more. The tool is flexible. Use it whenever you need new Magical Girl name ideas or character name inspiration. Bookmarking the page makes it easy to return when you are ready to refresh your profile or create a new account.
-        </p>
-
-        <h2>Typical Workflow for the Magical Girl Name Generator</h2>
-        <p>
-          A typical workflow is: open the page, set the number of names (e.g. 12 or 24), click generate, then copy the list. Paste into a notes app. Check your game or story for availability for each name you like. If your first choice is taken, try the next. Run the Magical Girl name generator again for more options. The whole process takes a few minutes. No account or download is required. Bookmark the page for quick access when you need new username ideas. The tool is free and runs in your browser with no sign-up.
-        </p>
-
-        <h2>What This Tool Does NOT Do</h2>
+        <h2>What This Tool Does and Does Not Do</h2>
         <ul>
-          <li>It does not check Magical Girl or any platform for username availability.</li>
-          <li>It does not reserve or hold names for you.</li>
-          <li>It does not store your generated list or your settings.</li>
-          <li>It does not connect to Steam, Discord, or any external gaming service.</li>
+          <li>It generates magical girl-style civilian given names and Sailor- and Cure-style transformation names for OCs, fan art, fanfic, and roleplay.</li>
+          <li>It does not reproduce official characters as a database — output is original, themed material for your own creative use.</li>
+          <li>It does not store your generated list or settings; everything runs locally in your browser.</li>
+          <li>It does not check whether a name is taken on any roleplay site, art platform, or social network — verify that yourself if you plan to use it as a handle.</li>
         </ul>
-        <p>
-          This Magical Girl name generator produces name ideas only. It does not validate availability, create accounts, or manage your profile. You must check Magical Girl or your chosen platform yourself and follow that platform&apos;s rules when creating or changing your username. The tool is a brainstorming aid, not a replacement for checking availability.
-        </p>
 
-        <h2>Privacy and Security Notes</h2>
+        <h2>Final Notes</h2>
         <p>
-          The Magical Girl name generator runs entirely in your browser. It does not send data to a server and does not store generated values. This is helpful for quick brainstorming and offline use. If you refresh the page, the last generated list is cleared. Copy any names you want to keep before closing or refreshing.
-        </p>
-        <p>
-          For account security, never share your Magical Girl password or other credentials. The generator only suggests usernames; it does not handle login or account creation. When you check availability on Magical Girl or another platform, use the official site or app and ensure you are on a secure connection. The Magical Girl name generator is a standalone tool and does not integrate with any login system.
-        </p>
-
-        <h2>Final Summary and When to Use This Tool</h2>
-        <p>
-          The Magical Girl name generator provides a fast way to create username and character name ideas for Magical Girl and other fiction and creative projects. Set the number of names (1–24) and run as often as you like. Copy results and check your platform for availability. The tool runs locally in your browser with no sign-up. Keep a shortlist of options in case your first choice is taken. No download or account is required. The generator is free and works on any device.
-        </p>
-        <p>
-          Use this Magical Girl name generator when you need Magical Girl name ideas, character name inspiration, or a quick way to explore options before checking availability. It is best for brainstorming, rebranding, and building a shortlist. Always verify availability on Magical Girl or your chosen platform before committing to a name. The tool is a practical free resource for gaming character and transformation names.
+          Mahou shoujo is one of the most beloved and most-OC&apos;d genres in fandom — Sailor Moon, Cardcaptor Sakura, Pretty Cure, Madoka Magica, and Princess Tutu have all inspired countless original guardians. This magical girl name generator gives you that pool instantly, grounded in the genre&apos;s real logic: a soft civilian given name, a themed transformation alias built on the Sailor-X or Cure-X pattern, motifs drawn from stars, flowers, gems, light, and hearts, and a shared theme for teams. Generate a batch, lean on the conventions above, and you will end up with magical girl names that feel ready for a henshin sequence.
         </p>
       </div>
     </section>
@@ -199,30 +150,30 @@ function createWriteUp() {
 }
 
 const pageFaqs: FaqItem[] = [
-  { category: 'General', question: 'What is a Magical Girl name generator?', answer: 'A Magical Girl name generator is an online tool that creates character and transformation names for Magical Girl and other fiction and creative projects. You get unique Magical Girl name ideas at the click of a button. The generator combines curated magical girl-style words at random in your browser so each run produces new combinations. This free Magical Girl name generator runs locally with no sign-up and does not send generated names to any server. Always check your game or story for availability before committing to a name.' },
-  { category: 'Usage', question: 'How do I use the Magical Girl name generator?', answer: 'Set how many names you want per run (1–24), click "Generate names" to get a new list of character name ideas, then use the Copy button to copy all names to your clipboard. Paste into a notes app and check your game or story for availability. Run again for more options; no sign-up is required. The Magical Girl name generator runs in your browser so your settings and generated names are not sent to any server. Building a shortlist of five to ten options before checking availability is a good habit.' },
-  { category: 'General', question: 'Is the Magical Girl name generator free?', answer: 'Yes. This Magical Girl name generator is free to use in your browser. You can generate Magical Girl name ideas as often as you like without creating an account or paying. The tool runs locally on your device and does not require a download. There is no daily or total limit on how many times you can run the generator.' },
-  { category: 'Use cases', question: 'Can I use the names for Steam?', answer: 'Yes. The Magical Girl name generator produces username ideas that you can use on Steam. Names must be unique on the platform, so always check Steam\'s availability before committing. Run the generator multiple times to build a shortlist of character name ideas, then check which names are available on Steam. The tool does not reserve or validate names; it only suggests combinations for you to verify on the platform.' },
-  { category: 'Privacy', question: 'Is my data sent to a server when I use the Magical Girl name generator?', answer: 'No. This Magical Girl name generator runs in your browser. When you set the number of names and click generate, the names are created locally on your device. Your choices and the generated Magical Girl name ideas are not sent to our servers. We do not store your inputs or the generated list. Generation is fully local and private.' },
-  { category: 'Compatibility', question: 'Does the Magical Girl name generator work on mobile?', answer: 'Yes. The Magical Girl name generator runs in a web browser and works on desktop, tablet, and phone. You do not need to install an app. Open the page, choose how many names you want, then generate. On a phone you can generate a short list and copy it into notes or check availability on Steam\'s app. The tool is responsive and works on any device with a modern browser.' },
-  { category: 'Limits', question: 'How many names can I generate with the Magical Girl name generator?', answer: 'You can request 1–24 names per run with this Magical Girl name generator. If you need more than 24 character name ideas, run the generator again; each run produces a new random set. There is no daily or total limit. Paste multiple runs into one document and remove duplicates if needed. The batch size is designed to keep the list manageable while giving you enough Magical Girl name options to shortlist.' },
-  { category: 'Usage', question: 'Can I copy the names from the Magical Girl name generator?', answer: 'Yes. Use the Copy button on this Magical Girl name generator to copy all generated names to your clipboard. Paste into a notes app or document. The names are plain text, one per line, so they work in any editor or form. Check your game or story for availability before choosing a name. Copying is the intended way to save your shortlist of character name ideas.' },
-  { category: 'General', question: 'Do I need an account to use the Magical Girl name generator?', answer: 'No. This Magical Girl name generator works without sign-up or login. The tool runs entirely in your browser. You do not need to create an account on our site to use it. Open the page, set how many Magical Girl name ideas you want, click generate, and copy the results. No email, password, or registration is required.' },
-  { category: 'Use cases', question: 'Can I use the Magical Girl name generator for other platforms?', answer: 'Yes. The names work as ideas for any gaming or social platform—Discord, Xbox, PlayStation, or others. The Magical Girl name generator is built for Steam-style character names but the output can inspire usernames elsewhere. Check each platform\'s availability; names must be unique on each service. The generator does not check availability for you, so always verify on the platform where you plan to use the name.' },
-  { category: 'Privacy', question: 'Do you store the names I generate with the Magical Girl name generator?', answer: 'No. Generation happens in your browser. We do not receive or store the Magical Girl name ideas or your settings. The Magical Girl name generator runs locally on your device. You can use the tool in a private or incognito window if you prefer. If you refresh the page, the last generated list is cleared unless you have already copied it.' },
-  { category: 'Limits', question: 'Can I get more than 24 names from the Magical Girl name generator?', answer: 'Each run of this Magical Girl name generator gives up to 24 names. To get more character name ideas, run the generator again; each run produces a new random set. You can paste multiple runs into one document and then remove duplicates. There is no daily or total limit. Batching runs is the intended workflow when you need a large pool of Magical Girl name options.' },
-  { category: 'General', question: 'Why "Steam" specifically in a Magical Girl name generator?', answer: 'Magical Girl is a major gaming platform, and people often search for Magical Girl name ideas and character name generators. The Magical Girl name generator serves that intent and produces names that fit Magical Girl and similar gaming environments. The same ideas work for other platforms—Discord, Xbox, PlayStation—as inspiration. Use the names as character names wherever you need a unique username; always check availability on the platform you choose.' },
-  { category: 'Use cases', question: 'Can I use the Magical Girl name generator for esports?', answer: 'Yes. Use the Magical Girl name generator as inspiration for in-game names or stream handles. Run it multiple times to get a shortlist of character name ideas, then check availability on your platform. The tool is free and runs in your browser with no sign-up. Many esports and streamers use Magical Girl name generators to brainstorm handles before verifying availability on Steam, Twitch, or other services.' },
-  { category: 'Technical', question: 'How are the names generated in the Magical Girl name generator?', answer: 'This Magical Girl name generator uses curated magical girl-style words and elements. When you click generate, the tool randomly combines these in your browser so each run is different. No names or settings are sent to a server. The result is for inspiration only; we do not check Magical Girl or any platform for availability. The word lists are designed to sound like gaming character and transformation names—bold, memorable, and easy to type.' },
-  { category: 'General', question: 'Are the names from the Magical Girl name generator unique?', answer: 'The names are randomly combined from our word list, so each run can produce new combinations. We do not check Magical Girl or any platform for availability. You must check yourself whether a Magical Girl name or character name is available before using it on your profile. The generator helps you discover ideas; uniqueness on a given platform depends on that platform\'s current registrations.' },
-  { category: 'Use cases', question: 'Can teachers use the Magical Girl name generator?', answer: 'Yes. Teachers can use this Magical Girl name generator for creative or tech-related activities—for example when students are learning about usernames, digital identity, or online profiles. Emphasize that the tool is for inspiration and that names must be checked for availability on any platform. The Magical Girl name generator is free and runs in the browser with no sign-up, so it is easy to use in a classroom or workshop setting.' },
-  { category: 'General', question: 'How do I cite the Magical Girl name generator?', answer: 'For academic or formal use you can cite this Magical Girl name generator as a source of inspiration for character and transformation names. The generated names are algorithm-produced; you can use them freely. A brief acknowledgment is optional. We do not require attribution. The tool is a free, browser-based utility for Magical Girl name ideas and character name brainstorming.' },
-  { category: 'Use cases', question: 'Can I use the Magical Girl name generator for a new Magical Girl account?', answer: 'Yes. When creating a new Magical Girl account you need a unique username. Run this Magical Girl name generator to get character name ideas, copy the list, then check Magical Girl for availability. Pick a name that is available and that you like. The tool runs in your browser with no sign-up. Building a shortlist of five to ten options before you start the sign-up process saves time, since many Magical Girl names are already taken.' },
-  { category: 'General', question: 'Do the names from the Magical Girl name generator work for streaming?', answer: 'Yes. The Magical Girl name generator produces username ideas that can work for streaming platforms, in-game names, or social handles. Use the names as inspiration and check your platform for availability. Run the generator multiple times to build a shortlist of options. Many streamers use Magical Girl name generators to brainstorm stream handles before checking availability on Twitch, YouTube, or other services.' },
-  { category: 'Best practices', question: 'What is the best workflow for the Magical Girl name generator?', answer: 'Open the page, set the number of names (e.g. 12 or 24), click generate, then copy the list. Paste into a notes app. Check your game or story for availability for each name you like. If your first choice is taken, try the next. Run the Magical Girl name generator again for more options. Keep a shortlist of five to ten character name ideas so you have backups. The tool is free and runs in your browser with no sign-up.' },
-  { category: 'Best practices', question: 'Should I run the Magical Girl name generator multiple times?', answer: 'Yes. Running the Magical Girl name generator multiple times is the intended workflow when you want a large pool of Magical Girl name ideas. Paste each run into one document and remove duplicates if any appear. Then check availability on your game or story for each name you like. Having a shortlist saves time compared to checking one idea at a time. There is no daily or total limit on how many times you can run the generator.' },
-  { category: 'Troubleshooting', question: 'Why is my first choice from the Magical Girl name generator taken?', answer: 'Popular character and transformation names are often already in use on Magical Girl and other platforms. The Magical Girl name generator does not check availability; it only suggests combinations. Always have a shortlist of five to ten options so you have backups. Run the generator again for more Magical Girl name ideas and check availability on your platform before committing. This is normal when using any name generator for fiction and creative projects.' },
-  { category: 'Troubleshooting', question: 'Can I use the Magical Girl name generator offline?', answer: 'Yes. Once the page is loaded, the Magical Girl name generator runs entirely in your browser and does not require a network connection to generate names. You can generate character name ideas offline. Copying and pasting also works offline. You will need a connection only to open the page initially and to check availability on Magical Girl or another platform.' },
+  { category: 'General', question: 'What is a magical girl name generator?', answer: 'A magical girl name generator creates names in the mahou shoujo tradition — a soft civilian given name for the heroine\'s everyday life plus a themed transformation name she calls out when she powers up, like Usagi who becomes Sailor Moon. It combines genre motifs (stars, moons, flowers, gems, light, hearts, dreams) at random in your browser so each run gives fresh OC ideas. It runs locally with no sign-up and stores nothing.' },
+  { category: 'Naming style', question: 'What is the difference between a civilian name and a magical name?', answer: 'The civilian name is the girl\'s ordinary school name — gentle and human, like Usagi, Sakura, Madoka, or Hikari. The magical name is the alias she shouts mid-transformation — radiant and themed, like Sailor Moon, Cure Heart, or Princess Tutu. Every magical girl OC really needs both, and the contrast between the plain civilian name and the sparkling hero name is what makes the reveal land.' },
+  { category: 'Naming style', question: 'What is the Sailor-X naming pattern?', answer: 'Sailor Moon codified it: the prefix "Sailor" plus a celestial body — Sailor Moon, Mercury, Venus, Mars, Jupiter, Saturn, Pluto. The chosen planet or moon sets the guardian\'s color, element, and personality, and her civilian surname often hints at it (Sailor Mars is Hino Rei, where "hi" suggests fire). For an OC, claim an unused body like a comet, constellation, or star so you do not clash with the canon Senshi.' },
+  { category: 'Naming style', question: 'What is the Cure-X naming pattern?', answer: 'Pretty Cure uses the prefix "Cure" plus a virtue or single evocative word — Cure Black, White, Bloom, Dream, Peach, Heart, Happy, Star, Sword. Where Sailor names point at the sky, Cure names point at a feeling or ideal the heroine embodies. Keep it short and declarative — "Cure" plus one strong noun — and let her civilian name and personality match the chosen virtue.' },
+  { category: 'OC', question: 'How do I name a magical girl OC?', answer: 'Generate a pair: a soft civilian given name she could use in homeroom, and a themed alias she shouts in a henshin sequence. Start from her element — light, ice, love, hope — pick a civilian given name whose meaning hints at it (Hikari for light, Yuki for snow, Ai for love), then build the transformation name on the same idea using the Sailor-X or Cure-X pattern. The hidden link between the two names is what sells the character.' },
+  { category: 'OC', question: 'Should my magical girl have a hidden meaning in her name?', answer: 'It is a hallmark of the genre. Usagi means "rabbit," the rabbit said to live on the moon — so she becomes Sailor Moon. Mizuno Ami carries "mizu" (water) and becomes Sailor Mercury. A good OC pair hides a similar wink: choose a civilian name whose Japanese meaning quietly foreshadows her power or her transformation theme.' },
+  { category: 'Themes', question: 'What themes work best for magical girl names?', answer: 'The genre draws from a shared palette: celestial (moon, star, comet, aurora, eclipse), flowers (sakura, lily, rose, lotus, camellia), gems and colors (ruby, sapphire, crystal, crimson, azure), and light/heart power-words (light, shine, hope, love, dream, heart). Lock in one theme and keep only names that fit it, so your character reads as deliberate worldbuilding rather than a grab-bag.' },
+  { category: 'Themes', question: 'How do celestial themes shape a magical girl name?', answer: 'Celestial bodies are the default register of the genre, thanks to Sailor Moon. Each body carries baggage: the moon means light and dreams, Mars means fire and red, Mercury means water and ice, Venus means love, Jupiter means lightning. Pick the body whose element matches your character, and the color and personality follow almost automatically.' },
+  { category: 'Themes', question: 'Can I use flowers or gems for a magical girl name?', answer: 'Absolutely. Cardcaptor Sakura is built on flowers and the seasons, and flower words like sakura, lily, rose, camellia, and wisteria make especially good soft civilian given names. Gems and colors — ruby, sapphire, opal, crimson, azure — work well as Cure-style suffixes or as the theme for a single guardian. Generate a flower- or gem-themed batch and pair it with a matching alias.' },
+  { category: 'Teams', question: 'How do I name a whole team of magical girls?', answer: 'Magical girls fight in groups with a shared theme: the Sailor Senshi share "Sailor" plus the planets; the first Pretty Cure are Cure Black and Cure White. Pick a unifying frame first, then vary within it — a celestial team could be Moon, Star, Comet, Aurora, and Eclipse; a color team could be Cure Red, Blue, and Yellow. Generate a larger batch, sort by theme, and deal one motif to each member.' },
+  { category: 'Teams', question: 'How many magical girls should be in a team?', answer: 'The genre ranges from duos (the original Pretty Cure pair) to five-girl teams (the inner Sailor Senshi) and larger ensembles. A common shape is a leader plus four members, each assigned a color, an element, and a contrasting personality — the bright one, the cool rival, the gentle one, the mysterious senior. Generate enough themed names to assign one clear motif and tone to every member.' },
+  { category: 'Naming style', question: 'What is a transformation phrase and do I need one?', answer: 'It is the line she shouts to henshin, like "Moon Prism Power, Make Up!" or "Pretty Cure, Dual Aurora Wave!" It usually weaves her theme word into a short, rhythmic command. While the generator focuses on names, a good transformation phrase reuses your character\'s element or alias word so the call-out and the hero name reinforce each other.' },
+  { category: 'OC', question: 'Can I borrow a genre prefix like Sailor or Cure for my OC?', answer: 'Yes — using "Sailor," "Cure," or "Princess" instantly signals which tradition your OC belongs to. Just pair the prefix with a fresh theme word so you are not duplicating a canon heroine. Take an unused celestial body for a Sailor-style guardian or an unused virtue for a Cure-style one, then give her an original civilian name to match.' },
+  { category: 'Usage', question: 'How do I use this magical girl name generator?', answer: 'Set how many names you want (1–24), click Generate names, then skim for a soft civilian given name and a themed alias. Use the Copy button to save the whole list, paste it into your character sheet or fanfic notes, and pair a civilian name with a transformation name. Run again for more — there is no limit, account, or download.' },
+  { category: 'Usage', question: 'How do I pair a civilian name with a transformation name?', answer: 'Treat one gentle, ordinary result as her school name and a separate themed result as her alias — or pick the civilian name first and theme the transformation name around its hidden meaning. Aim for a clear contrast: an everyday civilian name beside a radiant Sailor- or Cure-style hero name. That gap is the whole appeal of the dual identity.' },
+  { category: 'Usage', question: 'Can I edit the generated magical girl names?', answer: 'Of course. The output is a starting point. Swap the civilian given name from one result onto the transformation theme of another, change a Cure suffix, or adjust a celestial body to fit the element you want. Many creators generate a batch, take the alias from one result and the civilian name from another, and combine them into the final dual-identity pair.' },
+  { category: 'Use cases', question: 'Can I use these names for fan fiction?', answer: 'Yes — fanfic is a primary use. The names follow mahou shoujo conventions, so your OCs sit believably beside canon heroines from Sailor Moon, Pretty Cure, or Madoka Magica. Use the theming notes to match a name to your character\'s element, give her a civilian and a magical identity, and slot her into a team with a shared motif.' },
+  { category: 'Use cases', question: 'Can I use these names for art and OC design?', answer: 'Yes. Magical girl OC artists need names that match the costume palette and theme. Pick a celestial, flower, or gem motif that fits your color scheme, generate matching names, and choose a civilian name plus an alias that read together. The theme word can guide her outfit accents — a star girl gets stars, a rose girl gets roses.' },
+  { category: 'Use cases', question: 'Can I use these names for roleplay accounts?', answer: 'Yes. Magical girl roleplay communities on Discord, Tumblr, and forums expect names that fit the genre. Generate a civilian and a transformation name, match them to your character\'s element and theme, and you will fit the setting. If the community requires unique names, check the existing roster before claiming one, since this tool does not check availability.' },
+  { category: 'Technical', question: 'How are the magical girl names generated?', answer: 'The generator combines curated genre elements — soft Japanese-inspired given names, celestial and flower and gem motifs, virtue words, and the Sailor- and Cure-style alias patterns — and shuffles them at random in your browser. Each run produces a new set of civilian and transformation name ideas. Nothing is sent to a server; generation is entirely local.' },
+  { category: 'Technical', question: 'Are these real characters from the anime?', answer: 'No. The generator creates original, genre-flavored names for your own use rather than reproducing canon heroines as a lookup database. That is intentional — you want fresh names for OCs, not duplicates of Usagi or Madoka you cannot use as your own. Borrowing a pattern like Sailor-X or Cure-X is fine; copying a complete canon name is not.' },
+  { category: 'Privacy', question: 'Is my data sent to a server?', answer: 'No. Everything runs in your browser. When you click generate, the magical girl names are created on your device. Your settings and the generated list are never sent to our servers and nothing is stored. You can brainstorm OC names in a private window and your ideas stay yours until you choose to share them.' },
+  { category: 'Limits', question: 'How many magical girl names can I generate at once?', answer: 'You can request 1–24 names per run. For more, just run it again — each run produces a fresh random set of civilian and transformation ideas, with no daily or total limit. Paste several runs into one document when you are building a whole team and want a large pool to assign motifs from.' },
+  { category: 'Compatibility', question: 'Does the magical girl name generator work on mobile?', answer: 'Yes. It runs in any modern browser on desktop, tablet, or phone with no app install. Generate a batch of magical girl names on your phone, copy them into your notes, and pair civilian and transformation names wherever you are sketching OCs or writing fanfic.' },
 ];
 
 export default async function MagicalGirlNameGeneratorPage() {
@@ -240,7 +191,7 @@ export default async function MagicalGirlNameGeneratorPage() {
         {createWriteUp()}
         <div className="mt-10 space-y-3">
           <h2 className="text-2xl font-semibold text-slate-900">Frequently Asked Questions</h2>
-          <p className="text-slate-700">Common questions about the Magical Girl name generator.</p>
+          <p className="text-slate-700">Common questions about civilian names, transformation names, and theming for the magical girl name generator.</p>
         </div>
         <FAQSection items={pageFaqs} />
         <FaqJsonLd faqs={pageFaqs} />

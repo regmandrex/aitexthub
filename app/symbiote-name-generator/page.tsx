@@ -18,8 +18,8 @@ const toolSlug = 'symbiote-name-generator';
 export async function generateMetadata(): Promise<Metadata> {
   return buildToolMeta({
     title: 'Symbiote Name Generator',
-    description: 'Free symbiote name generator for symbiote names. Create Venom-style name ideas in your browser with no sign-up.',
-    seoTitle: 'Symbiote Name Generator – Venom-Style Names',
+    description: 'Free symbiote name generator for OC symbiotes, Venom-style alien names, and Klyntar spawn. Menacing single-word names built from violence, sound, and predation — in your browser, no sign-up.',
+    seoTitle: 'Symbiote Name Generator – Venom & Carnage-Style OC Names',
     urlPath: `/${toolSlug}`,
   });
 }
@@ -28,170 +28,94 @@ function createWriteUp() {
   return (
     <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
-        <h2>Symbiote Name Generator – Venom-Style Names</h2>
-        <h2>Introduction</h2>
+        <h2>Symbiote Name Generator – Venom &amp; Carnage-Style OC Names</h2>
         <p>
-          This guide explains how to use a Symbiote name generator to create symbiote names for Symbiote and other fiction and creative projects. The tool runs in your browser and produces unique, memorable name ideas at the click of a button. It is designed for players who want Symbiote name ideas quickly without sign-up or download. The generator does not store data and runs entirely in your browser. You get 1–24 names per run and can run it as often as you like. Always check your game or story for availability before committing to a name.
+          This symbiote name generator builds names the way Marvel does for the Klyntar: short, menacing, single words that hit like a threat. Venom. Carnage. Riot. Scream. Lasher. Phage. Agony. Toxin. These are not gentle handles — they are sounds an alien predator would answer to. Whether you are designing an original character (OC) symbiote for fan art, writing fanfiction set in the symbiote mythos, or building a character for a role-play server, this tool gives you a pool of names that feel like they crawled out of the same primordial mass as Eddie Brock&apos;s other half. It runs entirely in your browser, stores nothing, and you can generate as many batches as you like with no sign-up.
         </p>
         <p>
-          People search for Symbiote name ideas and character name generators when setting up a new profile, an esports handle, or a stream name. This Symbiote name generator serves that intent with one free, browser-based tool. Whether you need a single standout character name or a shortlist of options, the generator gives you a pool of ideas. Names must be unique on each service, so verifying availability on Symbiote or your chosen platform is an essential step after generating ideas.
-        </p>
-
-        <h2>What Is a Symbiote Name Generator?</h2>
-        <p>
-          A Symbiote name generator is an online tool that creates symbiote names suitable for Symbiote and other fiction and creative projects. You get unique name ideas at the click of a button. The generator combines curated Venom-style words and elements at random so each run produces new combinations. The output is for inspiration only; you must check your platform for availability. This free Symbiote name generator runs in your browser with no sign-up and does not send generated names to any server.
-        </p>
-        <p>
-          The output is plain text, one name per line. You can copy the full list and paste it into a notes app, then check your game or story for availability and pick one. Many users run the Symbiote name generator multiple times to build a shortlist before deciding. Because names are created locally, your choices stay private and nothing is stored on our servers.
-        </p>
-        <p>
-          Symbiote name generators are useful when you are tired of reusing the same username or when you want a fresh character name that fits your style. The tool does not guarantee that a name is available; it only suggests combinations. Always confirm availability on your game or story before you commit to a new username.
+          Symbiote names are not random — they follow a tight, recognizable convention. Almost every named symbiote in the comics is a single, hard-sounding word that evokes violence, sound, predation, or dread. This page explains that convention so the name you pick for an OC symbiote actually reads as canon, sits believably beside Venom and Carnage, and tells a reader something about your creature before they even see it.
         </p>
 
-        <h2>Why This Symbiote Name Generator Matters</h2>
+        <h2>How Symbiote Names Work in Marvel</h2>
         <p>
-          Choosing a memorable Symbiote name or character name can be time-consuming. A Symbiote name generator speeds up brainstorming. Instead of staring at a blank field, you get options in seconds. You can run it on a phone or desktop, copy the names you like, and then check availability on your game or story. The tool is free and does not require an account, so there is no friction to trying many ideas.
+          When the first Klyntar spawn were introduced in the Maximum Carnage and Planet of the Symbiotes era, Marvel established a naming pattern that has held ever since. Understanding it is the difference between a name that sounds like a real symbiote and one that sounds like a generic monster:
         </p>
+        <ul>
+          <li><strong>One word, not two.</strong> Venom, Carnage, Riot, Phage, Lasher, Agony, Scream. Symbiote names are almost never compound phrases — a single blunt word carries the whole threat. The generator anchors on this single-word convention.</li>
+          <li><strong>It is an abstract noun, not a name.</strong> Unlike a human, a symbiote is usually named for a concept: violence (Carnage), poison (Toxin), sound (Scream), or an emotion (Agony). The word <em>is</em> the creature&apos;s nature.</li>
+          <li><strong>Hard consonants and short vowels.</strong> The most iconic names end on a sharp sound — the &quot;-age&quot; of Carnage, the hiss of Scream, the snap of Riot. Names that bite read as more dangerous.</li>
+          <li><strong>Lineage shows in tone.</strong> Carnage is Venom&apos;s spawn and its name escalates the cruelty. The five spawn from Life Foundation — Riot, Phage, Lasher, Agony, Scream — share a family of harsh, visceral words. A name can signal whose offspring your OC is.</li>
+        </ul>
+
+        <h2>Naming Themes: Violence, Sound, Predation, Darkness</h2>
         <p>
-          The generator also keeps your ideas private. Names are created in your browser and are not sent to our servers. You can use it in a private or incognito window if you prefer. Because generation is local, there is no risk of your shortlist being stored or logged. That matters when you are testing ideas before you settle on a final Symbiote name or character name.
+          Pick a theme first, then generate and keep the names that match it. Symbiote naming clusters around a handful of moods, and choosing one up front makes your OC coherent:
         </p>
+        <ul>
+          <li><strong>Violence and slaughter.</strong> The Carnage lineage — words for bloodshed, ruin, and destruction. Best for a feral, kill-driven symbiote with no interest in a stable host.</li>
+          <li><strong>Sound and shriek.</strong> Scream is the touchstone here; symbiotes are famously vulnerable to sonics, so a sound-themed name is both ironic and fitting. Think shrieks, echoes, and noise.</li>
+          <li><strong>Poison and predation.</strong> Toxin and Anti-Venom live here — names of venom, contagion, and the hunt. Good for a symbiote defined by what it does to a host or a target.</li>
+          <li><strong>Darkness and dread.</strong> This is the Knull register — the King in Black, god of the symbiotes, draws on the void, the abyss, and primordial night. Use it for an ancient or godlike OC tied to the dragon Grendel or the living abyss.</li>
+        </ul>
         <p>
-          A good Symbiote name generator also standardizes the workflow: set how many names you want, click generate, copy the list, and check availability. You get a consistent way to explore username ideas without writing scripts or visiting multiple sites. The output is easy to paste into notes or a document so you can track which names you have already checked on Symbiote or other platforms.
+          A name from one cluster reads very differently from another even though both are &quot;symbiote-style.&quot; A sound-themed symbiote and a darkness-themed one suggest different origins, different hosts, and different stories.
         </p>
 
-        <h2>How the Symbiote Name Generator Works (Step by Step)</h2>
+        <h2>Building an OC Symbiote</h2>
         <p>
-          When you open the page, you choose how many names you want per run (1–24). Clicking &quot;Generate names&quot; triggers the tool to randomly combine curated Venom-style elements in your browser. Each run is independent; no names or settings are sent to a server. The result is a list of Symbiote name ideas, one per line. You can copy the full list with one click and paste it into a notes app. To get more ideas, run the generator again. The tool does not check Symbiote or any platform for availability—you must do that yourself.
+          For fan art, fanfiction, and role-play, the symbiote&apos;s name is the first thing an audience judges. A strong OC symbiote name does three jobs at once: it states the creature&apos;s nature in one word, it fits the menacing single-word convention, and it hints at lineage or theme so the symbiote slots into the existing mythos. Generate a batch, then ask of each option: could this name appear in a panel next to Venom and Carnage without looking out of place? If yes, it is in the right register.
         </p>
         <p>
-          The underlying word lists are designed to sound like gaming symbiote names: bold, memorable, and easy to type. The generator shuffles and combines these elements so that each run produces different combinations. That randomness helps you discover names you might not have thought of on your own. Because everything runs in the browser, the Symbiote name generator works offline once the page is loaded and does not depend on a backend service.
+          A common approach is to decide your symbiote&apos;s defining trait before you name it. Is it a sound-based predator, a poison spreader, a berserker spawn of Venom, or something dredged up from Knull&apos;s abyss? Let that trait choose the theme, then let the generator surface the exact word. Many creators also tie an OC to a known lineage — a sibling of the Life Foundation five, or a fresh spawn that broke off from Venom — and pick a name that rhymes tonally with that family.
+        </p>
+
+        <h2>The Host and Symbiote Dynamic</h2>
+        <p>
+          A symbiote is only half the character. The other half is the host it bonds to — Eddie Brock for Venom, Cletus Kasady for Carnage, Patricia Robertson for Scream. When a host and symbiote bond, the merged being often takes the symbiote&apos;s name: the human becomes &quot;Venom,&quot; the &quot;we&quot; that the symbiote speaks in. This means your OC name has to work on two levels — as the alien&apos;s name and as the identity the bonded pair shares.
         </p>
         <p>
-          There are no hidden steps. You set the count, click generate, and receive a list. Copying is one click; pasting into your own document keeps your shortlist in one place. Running the Symbiote name generator multiple times is the intended workflow when you want a large pool of character name ideas before checking availability.
+          Think about the contrast between host and symbiote when you name. A meek host bonded to a symbiote called something brutal creates tension; a violent host paired with an equally savage name doubles down. The name you generate is not just the creature&apos;s label — it is the persona the host steps into every time the symbiote takes over. Choose a word that you would want a character to growl in the third-person plural.
         </p>
 
         <h2>How to Use This Symbiote Name Generator</h2>
-        <p>Follow these steps to get Symbiote name ideas:</p>
         <ol className="list-decimal pl-6 space-y-2">
           <li>Set how many names you want per run (1–24).</li>
-          <li>Click &quot;Generate names&quot; to get a new list of character name ideas.</li>
-          <li>Use the Copy button to copy all names to your clipboard.</li>
-          <li>Paste into a notes app or document, then check your game or story for availability and pick one.</li>
-          <li>Run again for more options; no account or download is required.</li>
+          <li>Click <strong>Generate names</strong> to get a fresh batch of single-word, symbiote-style names.</li>
+          <li>Skim for names that match your chosen theme — violence, sound, predation, or darkness — then use the Copy button to save the whole list.</li>
+          <li>Paste into your character notes or art reference and shortlist your favorites for your OC.</li>
+          <li>Run again for more options — there is no limit, no account, and no download.</li>
         </ol>
         <p>
-          The Symbiote name generator runs in your browser; your settings and generated names are not sent to any server. You can run it as often as you like. Building a shortlist of five to ten options before checking availability on Symbiote is a good habit, since popular usernames are often taken. Have backups ready so that if your first choice is unavailable, you can try the next name on your list.
+          Generation happens entirely in your browser. Your settings and the names you create are never sent to a server, so your OC symbiote concept stays private until you choose to share it in a comic, a fic, or a thread.
         </p>
 
-        <h2>Symbiote and Gamer Naming Style</h2>
+        <h2>Tips for Picking the Right Symbiote Name</h2>
         <p>
-          Symbiote names and character names often use bold, memorable word combinations: action words, nicknames, or creative spellings. This Symbiote name generator uses curated Venom-style elements and combines them at random so you get new combinations that fit that style. The output is for inspiration only; the tool does not check Symbiote or any platform for availability. You can use the names as-is or tweak spelling and punctuation to make them your own.
+          Say the name out loud — symbiotes speak, and their names are meant to be spat, hissed, or growled. If a name does not sound dangerous when you say it, it will not read as dangerous on the page. Keep it to a single word for canon flavor; the moment you reach for two words you drift away from the Klyntar convention and toward a generic monster name. Avoid copying a canon symbiote outright — you do not want an OC literally called Venom or Carnage — but borrowing the <em>shape</em> of those names (one harsh, abstract noun) is exactly how you fit in.
         </p>
         <p>
-          Different games and communities favor different styles. Some players prefer short, punchy character names; others like longer usernames. Running the generator multiple times gives you a mix of lengths and styles. Skim the list, mark the ones you like, and then verify each one on your game or story. The Symbiote name generator is a starting point—your final choice should fit your personality and the rules of your platform.
-        </p>
-
-        <h2>When to Use a Symbiote Name Generator</h2>
-        <p>
-          Use this Symbiote name generator when you need Symbiote or Venom-style username ideas quickly. Common use cases include creating a new Symbiote account or updating your profile name, choosing an in-game name for esports or casual play, and picking a stream or social handle. The same tool works for other platforms—Discord, Xbox, PlayStation, or social profiles—as inspiration. Names must be unique on each platform, so always check availability before committing.
-        </p>
-        <p>
-          Another good time to use a Symbiote name generator is when you are rebranding. If you have used the same character name for years and want a fresh identity, generating a batch of ideas helps you explore options without pressure. Run the tool several times, paste results into one document, and remove duplicates. Then check Symbiote and any other platforms you use to see which names are still available. Having a shortlist saves time compared to checking one idea at a time.
+          If you are naming a brood — several spawn from one parent symbiote — generate a batch and pick words that share a tonal family, the way Riot, Phage, Lasher, Agony, and Scream do. Pick names of similar length and harshness so the group reads as siblings rather than unrelated creatures. That cohesion is what made the Life Foundation five feel like a single terrifying litter.
         </p>
 
-        <h2>Use Cases in Detail: Profiles, Esports, and Streams</h2>
+        <h2>Symbiotes, Klyntar, and the King in Black</h2>
         <p>
-          Players use the Symbiote name generator when creating a new Symbiote account or refreshing their profile name. Esports and streamers use it for in-game names or stream handles. The same tool works for other platforms—Discord, Xbox, PlayStation, or social—as inspiration; you must check each platform for availability. Run the generator multiple times to build a shortlist, then check which names are free on your platform. The Symbiote name generator does not reserve or validate names; it only suggests combinations.
+          The lore behind the names deepens your options. The symbiotes are properly called the Klyntar — a race that descended into violence after being created by the dark god Knull, who forged them from the living abyss. Knull, the King in Black, sits at the top of the mythos as the source of every symbiote, wielding a sword of living darkness and the dragon Grendel. Names that lean into void, abyss, and primordial dread tie an OC to this divine, ancient end of the spectrum, while names of pure aggression place it among the feral, host-hungry spawn.
         </p>
         <p>
-          Content creators often need a consistent handle across Steam, streaming, and social media. Generating a batch of character name ideas lets you test different options before you commit. Copy the names you like into a single list, then check availability on each service. If one name is taken on Symbiote but free elsewhere, you can still use it on the platforms where it is available, or use the generator again to find alternatives that work everywhere.
-        </p>
-
-        <h2>Tips for Choosing a Symbiote Username</h2>
-        <p>
-          Pick a name that is easy to remember and type. Short character names are easier to say in voice chat and less likely to be mistyped. Run the Symbiote name generator multiple times to get a shortlist, then check your game or story for availability. Have a few backups in case your first choice is taken. Avoid names that might be mistaken for someone else or that break platform rules. The generator gives you ideas only; the final choice is yours.
-        </p>
-        <p>
-          Consider how the name will look in different contexts: in-game, on a stream overlay, or in a friend list. Some combinations look great in one font but odd in another. If you plan to use the same handle across multiple games and platforms, check availability everywhere before you invest in branding. The Symbiote name generator is a free way to explore options without committing until you have confirmed that your chosen Symbiote name or character name is available.
+          Knowing where on this spectrum your OC sits — a noble, redeemed Klyntar like Venom became, a pure predator like Carnage, or a fragment of Knull&apos;s godhood — tells you which kind of name to keep from each batch. The generator gives you the words; the lore tells you which ones belong to your creature.
         </p>
 
-        <h2>Running the Symbiote Name Generator in Batches</h2>
-        <p>
-          When you need many username ideas, run the Symbiote name generator multiple times. Each run gives up to 24 names. Paste each run into the same document and remove duplicates if any appear. Check availability on your platform for each name you like. There is no daily or total limit; you can run the generator as often as you want. Batching is useful when you are setting up several accounts, testing ideas for a team, or simply want a large pool of character name options before making a decision.
-        </p>
-        <p>
-          Keeping a single document with all your generated Symbiote name ideas makes it easy to track which names you have already checked. Mark names as &quot;taken&quot; or &quot;available&quot; as you go. That way you avoid re-checking the same name on Symbiote or another platform. The Symbiote name generator does not remember previous runs, so your document is your only record of the ideas you have collected.
-        </p>
-
-        <h2>Privacy and Local Processing</h2>
-        <p>
-          This Symbiote name generator runs entirely in your browser. When you set the number of names and click generate, the names are created locally on your device. Your choices and the generated names are not sent to our servers. We do not store your inputs or the generated list. No account or login is required. That means your shortlist of character name ideas stays on your machine unless you choose to copy it somewhere else.
-        </p>
-        <p>
-          Because generation is local, the tool is suitable for use in private or incognito windows. If you close the tab, the generated list is gone unless you have copied it. There is no server-side log of what names you generated or how many times you ran the Symbiote name generator. This privacy model is intentional: username brainstorming is personal, and the tool is designed so that you control where your ideas go.
-        </p>
-
-        <h2>Copying and Exporting Names</h2>
-        <p>
-          Use the Copy button to copy all generated Symbiote name ideas to your clipboard (one per line). Paste into a notes app or document. Check your game or story for availability before committing to a name. The names are plain text, so they work in any editor or form. If you paste into a spreadsheet, each line can go in its own cell for easy tracking. The Symbiote name generator does not export to a file; copying and pasting is the intended way to save your shortlist.
-        </p>
-
-        <h2>Limits and Batch Size</h2>
-        <p>
-          You can request 1–24 names per run with this Symbiote name generator. There is no daily or total limit. Run the generator again for more options. No download or account is required. If you need more than 24 names in one go, run the tool multiple times and paste the results into one document. Removing duplicates is up to you; the generator does not track previous output.
-        </p>
-
-        <h2>No Download or Account Required</h2>
-        <p>
-          This Symbiote name generator runs entirely in your browser. You do not need to download software or create an account. Open the page, set how many names you want, and click generate. The tool is free and works on desktop, tablet, and phone. That makes it easy to use when you are away from your main device or when you want to quickly generate character name ideas without installing anything.
-        </p>
-
-        <h2>Who Uses a Symbiote Name Generator?</h2>
-        <p>
-          Players use the Symbiote name generator when creating or updating a Symbiote profile, or when they want a new character name for other platforms. Esports and streamers use it for in-game names or stream handles. The same tool works for Discord, Xbox, PlayStation, or social profiles—always check availability on each platform. Educators and workshop leaders sometimes use it to demonstrate username creation or digital identity in a classroom setting. No account or download is required on our site.
-        </p>
-        <p>
-          Anyone who needs a steady supply of username ideas can benefit. Whether you are a casual gamer, a competitive player, or a content creator, the Symbiote name generator provides a fast way to explore options. The key is to treat the output as inspiration and always verify availability on Symbiote and any other platform where you plan to use the name.
-        </p>
-
-        <h2>Getting the Most Out of the Symbiote Name Generator</h2>
-        <p>
-          Run the generator several times and paste all results into one document. Skim for names that fit your style and check your platform for availability. Shortlist five to ten options so you have backups if your first choice is taken. The Symbiote name generator does not check Symbiote or any platform; you must do that yourself. When you have a shortlist, check availability one by one. Usernames are often taken on popular services, so having several options saves time.
-        </p>
-        <p>
-          Another tip is to try different batch sizes. Sometimes generating 24 names at once gives you a good mix; other times you may prefer smaller runs so you can review each set before generating more. The tool is flexible. Use it whenever you need new Symbiote name ideas or character name inspiration. Bookmarking the page makes it easy to return when you are ready to refresh your profile or create a new account.
-        </p>
-
-        <h2>Typical Workflow for the Symbiote Name Generator</h2>
-        <p>
-          A typical workflow is: open the page, set the number of names (e.g. 12 or 24), click generate, then copy the list. Paste into a notes app. Check your game or story for availability for each name you like. If your first choice is taken, try the next. Run the Symbiote name generator again for more options. The whole process takes a few minutes. No account or download is required. Bookmark the page for quick access when you need new username ideas. The tool is free and runs in your browser with no sign-up.
-        </p>
-
-        <h2>What This Tool Does NOT Do</h2>
+        <h2>What This Tool Does and Does Not Do</h2>
         <ul>
-          <li>It does not check Symbiote or any platform for username availability.</li>
-          <li>It does not reserve or hold names for you.</li>
-          <li>It does not store your generated list or your settings.</li>
-          <li>It does not connect to Steam, Discord, or any external gaming service.</li>
+          <li>It generates menacing, single-word, symbiote-style names for OC symbiotes in fan art, fanfiction, and role-play.</li>
+          <li>It does not reproduce Marvel&apos;s official symbiote roster as a database — output is for original creative use.</li>
+          <li>It does not store your generated list or settings; everything runs locally in your browser.</li>
+          <li>It does not check whether a name is used by an existing character or handle — if you plan to use a name publicly, verify that yourself.</li>
         </ul>
-        <p>
-          This Symbiote name generator produces name ideas only. It does not validate availability, create accounts, or manage your profile. You must check Symbiote or your chosen platform yourself and follow that platform&apos;s rules when creating or changing your username. The tool is a brainstorming aid, not a replacement for checking availability.
-        </p>
 
-        <h2>Privacy and Security Notes</h2>
+        <h2>Final Notes</h2>
         <p>
-          The Symbiote name generator runs entirely in your browser. It does not send data to a server and does not store generated values. This is helpful for quick brainstorming and offline use. If you refresh the page, the last generated list is cleared. Copy any names you want to keep before closing or refreshing.
-        </p>
-        <p>
-          For account security, never share your Symbiote password or other credentials. The generator only suggests usernames; it does not handle login or account creation. When you check availability on Symbiote or another platform, use the official site or app and ensure you are on a secure connection. The Symbiote name generator is a standalone tool and does not integrate with any login system.
-        </p>
-
-        <h2>Final Summary and When to Use This Tool</h2>
-        <p>
-          The Symbiote name generator provides a fast way to create username and character name ideas for Symbiote and other fiction and creative projects. Set the number of names (1–24) and run as often as you like. Copy results and check your platform for availability. The tool runs locally in your browser with no sign-up. Keep a shortlist of options in case your first choice is taken. No download or account is required. The generator is free and works on any device.
-        </p>
-        <p>
-          Use this Symbiote name generator when you need Symbiote name ideas, character name inspiration, or a quick way to explore options before checking availability. It is best for brainstorming, rebranding, and building a shortlist. Always verify availability on Symbiote or your chosen platform before committing to a name. The tool is a practical free resource for gaming symbiote names.
+          The symbiote corner of Marvel is one of the most-drawn and most-written fandoms online — artists designing OC symbiotes, fic writers exploring the host bond, and role-players claiming their own piece of the Klyntar all need names that fit. This symbiote name generator gives you that pool instantly, grounded in the real naming logic: single harsh words, abstract nouns of violence and dread, lineage-coded tone, and the predatory edge that runs from Venom to Carnage to Knull himself. Generate a batch, lean on the theme and lore notes above, and you will end up with a name that sounds like it was always part of the symbiote mythos.
         </p>
       </div>
     </section>

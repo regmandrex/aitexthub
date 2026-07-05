@@ -18,7 +18,7 @@ const toolSlug = 'fakemon-name-generator';
 export async function generateMetadata(): Promise<Metadata> {
   return buildToolMeta({
     title: 'Fakemon Name Generator',
-    description: 'Free fakemon name generator for creature names. Create Pokémon-style name ideas in your browser with no sign-up.',
+    description: 'Free Fakemon name generator for fan-made Pokémon. Build portmanteau creature names by type and element, plus matching evolution lines — for fan games, ROM hacks, and fan art. In your browser, no sign-up.',
     seoTitle: 'Fakemon Name Generator – Fan-Made Pokémon Names',
     urlPath: `/${toolSlug}`,
   });
@@ -29,169 +29,94 @@ function createWriteUp() {
     <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
         <h2>Fakemon Name Generator – Fan-Made Pokémon Names</h2>
-        <h2>Introduction</h2>
         <p>
-          This guide explains how to use a Fakemon name generator to create creature names for Fakemon and other fan projects. The tool runs in your browser and produces unique, memorable name ideas at the click of a button. It is designed for players who want Fakemon name ideas quickly without sign-up or download. The generator does not store data and runs entirely in your browser. You get 1–24 names per run and can run it as often as you like. Always check your game or story for availability before committing to a name.
+          This Fakemon name generator builds names for fan-made Pokémon the same way the real games do: by fusing two short words into a single punchy portmanteau. &quot;Fakemon&quot; is the community term for original creatures designed by fans for ROM hacks, fan games, fan art, and homemade regions. If you are spriting a new starter line, drafting a Pokédex for your own region, or just sketching creature concepts, the tool gives you a pool of Pokémon-style names in seconds — in your browser, with no sign-up and nothing stored.
         </p>
         <p>
-          People search for Fakemon name ideas and character name generators when setting up a new profile, an esports handle, or a stream name. This Fakemon name generator serves that intent with one free, browser-based tool. Whether you need a single standout character name or a shortlist of options, the generator gives you a pool of ideas. Names must be unique on each service, so verifying availability on Fakemon or your chosen platform is an essential step after generating ideas.
-        </p>
-
-        <h2>What Is a Fakemon Name Generator?</h2>
-        <p>
-          A Fakemon name generator is an online tool that creates creature names suitable for Fakemon and other fan projects. You get unique name ideas at the click of a button. The generator combines curated Pokémon-style words and elements at random so each run produces new combinations. The output is for inspiration only; you must check your platform for availability. This free Fakemon name generator runs in your browser with no sign-up and does not send generated names to any server.
-        </p>
-        <p>
-          The output is plain text, one name per line. You can copy the full list and paste it into a notes app, then check your game or story for availability and pick one. Many users run the Fakemon name generator multiple times to build a shortlist before deciding. Because names are created locally, your choices stay private and nothing is stored on our servers.
-        </p>
-        <p>
-          Fakemon name generators are useful when you are tired of reusing the same username or when you want a fresh character name that fits your style. The tool does not guarantee that a name is available; it only suggests combinations. Always confirm availability on your game or story before you commit to a new username.
+          Real Pokémon names are never random. Charizard is char + lizard, Bulbasaur is bulb + dinosaur, Squirtle is squirt + turtle. Almost every official name welds together a creature&apos;s element or type, its animal or plant base, and a defining trait, then trims the result until it is short enough to fit in a name box. This page explains those conventions so the names you keep actually sound canon — and so a Fakemon you design slots believably into a type chart, an evolution line, and a regional dex.
         </p>
 
-        <h2>Why This Fakemon Name Generator Matters</h2>
+        <h2>How Pokémon Names Are Built (The Portmanteau Rule)</h2>
         <p>
-          Choosing a memorable Fakemon name or character name can be time-consuming. A Fakemon name generator speeds up brainstorming. Instead of staring at a blank field, you get options in seconds. You can run it on a phone or desktop, copy the names you like, and then check availability on your game or story. The tool is free and does not require an account, so there is no friction to trying many ideas.
+          The single most important pattern in Pokémon naming is the portmanteau: two meaningful word fragments crushed into one. Understanding the formula lets the generator produce names that read as official rather than thrown together:
         </p>
+        <ul>
+          <li><strong>Base + trait.</strong> Charizard = <em>char</em> (burn) + <em>lizard</em>. The animal base tells you what it is; the prefix tells you what it does. This is the backbone of most Fakemon names.</li>
+          <li><strong>Element + animal.</strong> Squirtle = <em>squirt</em> (water) + <em>turtle</em>. Lead with the type cue, finish with the creature, and the name explains itself at a glance.</li>
+          <li><strong>Plant + form.</strong> Bulbasaur = <em>bulb</em> + <em>dinosaur</em>; Oddish = <em>odd</em> + <em>radish</em>. Grass-type Fakemon lean heavily on seeds, roots, flowers, and saur/dino endings.</li>
+          <li><strong>Trim for length.</strong> Official names almost never run long. Designers drop syllables (lizard becomes <em>-zard</em>, dinosaur becomes <em>-saur</em>) so the final name stays short, punchy, and easy to say aloud — the same constraint the original name box imposed.</li>
+        </ul>
         <p>
-          The generator also keeps your ideas private. Names are created in your browser and are not sent to our servers. You can use it in a private or incognito window if you prefer. Because generation is local, there is no risk of your shortlist being stored or logged. That matters when you are testing ideas before you settle on a final Fakemon name or character name.
-        </p>
-        <p>
-          A good Fakemon name generator also standardizes the workflow: set how many names you want, click generate, copy the list, and check availability. You get a consistent way to explore username ideas without writing scripts or visiting multiple sites. The output is easy to paste into notes or a document so you can track which names you have already checked on Fakemon or other platforms.
+          When you skim the generated list, test each candidate against this rule: can you point to the two pieces it fuses? If a name reads as one clean word but you can still hear the element and the animal inside it, it is in the right register for a Fakemon.
         </p>
 
-        <h2>How the Fakemon Name Generator Works (Step by Step)</h2>
+        <h2>Naming Fakemon by Type</h2>
         <p>
-          When you open the page, you choose how many names you want per run (1–24). Clicking &quot;Generate names&quot; triggers the tool to randomly combine curated Pokémon-style elements in your browser. Each run is independent; no names or settings are sent to a server. The result is a list of Fakemon name ideas, one per line. You can copy the full list with one click and paste it into a notes app. To get more ideas, run the generator again. The tool does not check Fakemon or any platform for availability—you must do that yourself.
+          Type is the strongest single signal in a Pokémon name, and matching the sound of a name to its element makes a Fakemon instantly readable. Each type has its own vocabulary of fragments:
+        </p>
+        <ul>
+          <li><strong>Fire.</strong> char, pyro, ember, blaze, magma, cinder, scorch — Charmander, Magmar, Litten. Hard, hot syllables.</li>
+          <li><strong>Water.</strong> squirt, aqua, hydro, marsh, tide, splash — Squirtle, Marshtomp, Wishiwashi. Soft, flowing sounds and sea-animal bases.</li>
+          <li><strong>Grass.</strong> bulb, leaf, petal, vine, root, bloom, fungus — Bulbasaur, Bellsprout, Foongus. Plant words plus -saur or -ish endings.</li>
+          <li><strong>Electric.</strong> volt, spark, jolt, watt, zap, chu — Voltorb, Jolteon, Pikachu. Sharp, snappy syllables.</li>
+          <li><strong>Rock / Ground.</strong> geo, rock, gravel, dune, terra — Geodude, Onix, Sandshrew. Heavy, blunt-sounding bases.</li>
+        </ul>
+        <p>
+          Decide your Fakemon&apos;s type first, then generate a batch and keep the names whose sound matches that element. A Fire starter named with a soft, watery syllable fights its own typing; a name that leads with a hot fragment does the work of the type chart before anyone reads the stats.
+        </p>
+
+        <h2>Naming a Full Evolution Line</h2>
+        <p>
+          Real Pokémon evolve in threes, and the names usually escalate so each stage sounds grander than the last. Charmander, Charmeleon, Charizard keep the shared &quot;char&quot; root while the suffix grows more imposing. Bulbasaur, Ivysaur, Venusaur escalate the plant theme from a sprouting bulb to a full bloom. Strong Fakemon line naming follows the same logic:
+        </p>
+        <ul>
+          <li><strong>Keep a shared root.</strong> Pick a fragment — the element or animal base — and carry it through all three stages so they read as one family (the &quot;char&quot; in every Charmander-line name).</li>
+          <li><strong>Escalate the suffix.</strong> Let the base form sound small and cute, the middle form sound stronger, and the final form sound mythic or grand. The ending does the growing-up.</li>
+          <li><strong>Swap the theme word for a bigger one.</strong> Bulbasaur to Venusaur trades a humble bulb for Venus the flytrap and the planet. Pick a grander reference for the final stage while keeping the same syllable shape.</li>
+        </ul>
+        <p>
+          A practical trick with this generator: produce a batch, pick one name you love for the base form, then generate again and look for two more that share its root sound or its theme. Stitch them into a three-stage line so the family is obviously related when read aloud on a dex page.
+        </p>
+
+        <h2>Designing for Fan Games, ROM Hacks, and Fan Art</h2>
+        <p>
+          Most people naming Fakemon are building something: a Pokémon Essentials fan game, a GBA ROM hack, a fakedex art project, or a homemade region for a comic. The name has to do real work — it has to fit a name box, pair with a sprite, and sit on a list next to canon-style entries without feeling out of place. Generate a batch, then ask of each name: does it look right under a sprite and read cleanly in a battle message like &quot;Wild ____ appeared!&quot;? If it does, it is ready for your dex.
         </p>
         <p>
-          The underlying word lists are designed to sound like gaming creature names: bold, memorable, and easy to type. The generator shuffles and combines these elements so that each run produces different combinations. That randomness helps you discover names you might not have thought of on your own. Because everything runs in the browser, the Fakemon name generator works offline once the page is loaded and does not depend on a backend service.
-        </p>
-        <p>
-          There are no hidden steps. You set the count, click generate, and receive a list. Copying is one click; pasting into your own document keeps your shortlist in one place. Running the Fakemon name generator multiple times is the intended workflow when you want a large pool of character name ideas before checking availability.
+          For a fakedex, consistency across the whole set matters as much as any single name. Lock in a naming style early — how aggressively you trim syllables, whether you favor cute or imposing endings, how literal your portmanteaus are — and apply it across every entry so the region feels designed by one hand. The generator is most useful here as a brainstorming partner: it floods you with raw fusions, and your job is to filter for the ones that match your region&apos;s tone.
         </p>
 
         <h2>How to Use This Fakemon Name Generator</h2>
-        <p>Follow these steps to get Fakemon name ideas:</p>
         <ol className="list-decimal pl-6 space-y-2">
           <li>Set how many names you want per run (1–24).</li>
-          <li>Click &quot;Generate names&quot; to get a new list of character name ideas.</li>
-          <li>Use the Copy button to copy all names to your clipboard.</li>
-          <li>Paste into a notes app or document, then check your game or story for availability and pick one.</li>
-          <li>Run again for more options; no account or download is required.</li>
+          <li>Click <strong>Generate names</strong> to get a fresh batch of Pokémon-style portmanteau names.</li>
+          <li>Skim for names that match your Fakemon&apos;s type and base creature, then use the Copy button to save the whole list.</li>
+          <li>Paste into your fakedex notes or sprite project and shortlist your favorites.</li>
+          <li>Run again to gather evolution-line partners or more options — there is no limit, no account, and no download.</li>
         </ol>
         <p>
-          The Fakemon name generator runs in your browser; your settings and generated names are not sent to any server. You can run it as often as you like. Building a shortlist of five to ten options before checking availability on Fakemon is a good habit, since popular usernames are often taken. Have backups ready so that if your first choice is unavailable, you can try the next name on your list.
+          Generation happens entirely in your browser. Your settings and the names you create are never sent to a server, so your unreleased region and creature concepts stay private until you choose to share them.
         </p>
 
-        <h2>Fakemon and Gamer Naming Style</h2>
+        <h2>Tips for Picking the Right Fakemon Name</h2>
         <p>
-          Fakemon names and character names often use bold, memorable word combinations: action words, nicknames, or creative spellings. This Fakemon name generator uses curated Pokémon-style elements and combines them at random so you get new combinations that fit that style. The output is for inspiration only; the tool does not check Fakemon or any platform for availability. You can use the names as-is or tweak spelling and punctuation to make them your own.
+          Say the name out loud — Pokémon names are built to be spoken in the anime and read in battle text, so a fusion that trips the tongue will trip your players too. Keep it short; if a generated name runs past three or four syllables, trim it the way real designers do (drop the tail of the animal word into a -saur, -zard, or -eon ending). Make sure the two source words are still faintly audible: a good Fakemon name hides its seam but never erases it.
         </p>
         <p>
-          Different games and communities favor different styles. Some players prefer short, punchy character names; others like longer usernames. Running the generator multiple times gives you a mix of lengths and styles. Skim the list, mark the ones you like, and then verify each one on your game or story. The Fakemon name generator is a starting point—your final choice should fit your personality and the rules of your platform.
-        </p>
-
-        <h2>When to Use a Fakemon Name Generator</h2>
-        <p>
-          Use this Fakemon name generator when you need Fakemon or Pokémon-style username ideas quickly. Common use cases include creating a new Fakemon account or updating your profile name, choosing an in-game name for esports or casual play, and picking a stream or social handle. The same tool works for other platforms—Discord, Xbox, PlayStation, or social profiles—as inspiration. Names must be unique on each platform, so always check availability before committing.
-        </p>
-        <p>
-          Another good time to use a Fakemon name generator is when you are rebranding. If you have used the same character name for years and want a fresh identity, generating a batch of ideas helps you explore options without pressure. Run the tool several times, paste results into one document, and remove duplicates. Then check Fakemon and any other platforms you use to see which names are still available. Having a shortlist saves time compared to checking one idea at a time.
+          If you are naming a starter trio (the standard Grass / Fire / Water choice), generate a batch and pick three names that share a syllable shape but clearly diverge on type — one leafy, one fiery, one watery — so the trio reads as a matched set the way Bulbasaur, Charmander, and Squirtle do. That parallel structure is exactly what makes a starter line feel official rather than improvised.
         </p>
 
-        <h2>Use Cases in Detail: Profiles, Esports, and Streams</h2>
-        <p>
-          Players use the Fakemon name generator when creating a new Fakemon account or refreshing their profile name. Esports and streamers use it for in-game names or stream handles. The same tool works for other platforms—Discord, Xbox, PlayStation, or social—as inspiration; you must check each platform for availability. Run the generator multiple times to build a shortlist, then check which names are free on your platform. The Fakemon name generator does not reserve or validate names; it only suggests combinations.
-        </p>
-        <p>
-          Content creators often need a consistent handle across Steam, streaming, and social media. Generating a batch of character name ideas lets you test different options before you commit. Copy the names you like into a single list, then check availability on each service. If one name is taken on Fakemon but free elsewhere, you can still use it on the platforms where it is available, or use the generator again to find alternatives that work everywhere.
-        </p>
-
-        <h2>Tips for Choosing a Fakemon Username</h2>
-        <p>
-          Pick a name that is easy to remember and type. Short character names are easier to say in voice chat and less likely to be mistyped. Run the Fakemon name generator multiple times to get a shortlist, then check your game or story for availability. Have a few backups in case your first choice is taken. Avoid names that might be mistaken for someone else or that break platform rules. The generator gives you ideas only; the final choice is yours.
-        </p>
-        <p>
-          Consider how the name will look in different contexts: in-game, on a stream overlay, or in a friend list. Some combinations look great in one font but odd in another. If you plan to use the same handle across multiple games and platforms, check availability everywhere before you invest in branding. The Fakemon name generator is a free way to explore options without committing until you have confirmed that your chosen Fakemon name or character name is available.
-        </p>
-
-        <h2>Running the Fakemon Name Generator in Batches</h2>
-        <p>
-          When you need many username ideas, run the Fakemon name generator multiple times. Each run gives up to 24 names. Paste each run into the same document and remove duplicates if any appear. Check availability on your platform for each name you like. There is no daily or total limit; you can run the generator as often as you want. Batching is useful when you are setting up several accounts, testing ideas for a team, or simply want a large pool of character name options before making a decision.
-        </p>
-        <p>
-          Keeping a single document with all your generated Fakemon name ideas makes it easy to track which names you have already checked. Mark names as &quot;taken&quot; or &quot;available&quot; as you go. That way you avoid re-checking the same name on Fakemon or another platform. The Fakemon name generator does not remember previous runs, so your document is your only record of the ideas you have collected.
-        </p>
-
-        <h2>Privacy and Local Processing</h2>
-        <p>
-          This Fakemon name generator runs entirely in your browser. When you set the number of names and click generate, the names are created locally on your device. Your choices and the generated names are not sent to our servers. We do not store your inputs or the generated list. No account or login is required. That means your shortlist of character name ideas stays on your machine unless you choose to copy it somewhere else.
-        </p>
-        <p>
-          Because generation is local, the tool is suitable for use in private or incognito windows. If you close the tab, the generated list is gone unless you have copied it. There is no server-side log of what names you generated or how many times you ran the Fakemon name generator. This privacy model is intentional: username brainstorming is personal, and the tool is designed so that you control where your ideas go.
-        </p>
-
-        <h2>Copying and Exporting Names</h2>
-        <p>
-          Use the Copy button to copy all generated Fakemon name ideas to your clipboard (one per line). Paste into a notes app or document. Check your game or story for availability before committing to a name. The names are plain text, so they work in any editor or form. If you paste into a spreadsheet, each line can go in its own cell for easy tracking. The Fakemon name generator does not export to a file; copying and pasting is the intended way to save your shortlist.
-        </p>
-
-        <h2>Limits and Batch Size</h2>
-        <p>
-          You can request 1–24 names per run with this Fakemon name generator. There is no daily or total limit. Run the generator again for more options. No download or account is required. If you need more than 24 names in one go, run the tool multiple times and paste the results into one document. Removing duplicates is up to you; the generator does not track previous output.
-        </p>
-
-        <h2>No Download or Account Required</h2>
-        <p>
-          This Fakemon name generator runs entirely in your browser. You do not need to download software or create an account. Open the page, set how many names you want, and click generate. The tool is free and works on desktop, tablet, and phone. That makes it easy to use when you are away from your main device or when you want to quickly generate character name ideas without installing anything.
-        </p>
-
-        <h2>Who Uses a Fakemon Name Generator?</h2>
-        <p>
-          Players use the Fakemon name generator when creating or updating a Fakemon profile, or when they want a new character name for other platforms. Esports and streamers use it for in-game names or stream handles. The same tool works for Discord, Xbox, PlayStation, or social profiles—always check availability on each platform. Educators and workshop leaders sometimes use it to demonstrate username creation or digital identity in a classroom setting. No account or download is required on our site.
-        </p>
-        <p>
-          Anyone who needs a steady supply of username ideas can benefit. Whether you are a casual gamer, a competitive player, or a content creator, the Fakemon name generator provides a fast way to explore options. The key is to treat the output as inspiration and always verify availability on Fakemon and any other platform where you plan to use the name.
-        </p>
-
-        <h2>Getting the Most Out of the Fakemon Name Generator</h2>
-        <p>
-          Run the generator several times and paste all results into one document. Skim for names that fit your style and check your platform for availability. Shortlist five to ten options so you have backups if your first choice is taken. The Fakemon name generator does not check Fakemon or any platform; you must do that yourself. When you have a shortlist, check availability one by one. Usernames are often taken on popular services, so having several options saves time.
-        </p>
-        <p>
-          Another tip is to try different batch sizes. Sometimes generating 24 names at once gives you a good mix; other times you may prefer smaller runs so you can review each set before generating more. The tool is flexible. Use it whenever you need new Fakemon name ideas or character name inspiration. Bookmarking the page makes it easy to return when you are ready to refresh your profile or create a new account.
-        </p>
-
-        <h2>Typical Workflow for the Fakemon Name Generator</h2>
-        <p>
-          A typical workflow is: open the page, set the number of names (e.g. 12 or 24), click generate, then copy the list. Paste into a notes app. Check your game or story for availability for each name you like. If your first choice is taken, try the next. Run the Fakemon name generator again for more options. The whole process takes a few minutes. No account or download is required. Bookmark the page for quick access when you need new username ideas. The tool is free and runs in your browser with no sign-up.
-        </p>
-
-        <h2>What This Tool Does NOT Do</h2>
+        <h2>What This Tool Does and Does Not Do</h2>
         <ul>
-          <li>It does not check Fakemon or any platform for username availability.</li>
-          <li>It does not reserve or hold names for you.</li>
-          <li>It does not store your generated list or your settings.</li>
-          <li>It does not connect to Steam, Discord, or any external gaming service.</li>
+          <li>It generates Pokémon-style portmanteau names for original Fakemon, evolution lines, and fakedex projects.</li>
+          <li>It does not reproduce official Pokémon names as a database — output is for original creative use in your own fan work.</li>
+          <li>It does not store your generated list or settings; everything runs locally in your browser.</li>
+          <li>It does not assign types, stats, or sprites — it gives you the name; the design work is yours.</li>
         </ul>
-        <p>
-          This Fakemon name generator produces name ideas only. It does not validate availability, create accounts, or manage your profile. You must check Fakemon or your chosen platform yourself and follow that platform&apos;s rules when creating or changing your username. The tool is a brainstorming aid, not a replacement for checking availability.
-        </p>
 
-        <h2>Privacy and Security Notes</h2>
+        <h2>Final Notes</h2>
         <p>
-          The Fakemon name generator runs entirely in your browser. It does not send data to a server and does not store generated values. This is helpful for quick brainstorming and offline use. If you refresh the page, the last generated list is cleared. Copy any names you want to keep before closing or refreshing.
-        </p>
-        <p>
-          For account security, never share your Fakemon password or other credentials. The generator only suggests usernames; it does not handle login or account creation. When you check availability on Fakemon or another platform, use the official site or app and ensure you are on a secure connection. The Fakemon name generator is a standalone tool and does not integrate with any login system.
-        </p>
-
-        <h2>Final Summary and When to Use This Tool</h2>
-        <p>
-          The Fakemon name generator provides a fast way to create username and character name ideas for Fakemon and other fan projects. Set the number of names (1–24) and run as often as you like. Copy results and check your platform for availability. The tool runs locally in your browser with no sign-up. Keep a shortlist of options in case your first choice is taken. No download or account is required. The generator is free and works on any device.
-        </p>
-        <p>
-          Use this Fakemon name generator when you need Fakemon name ideas, character name inspiration, or a quick way to explore options before checking availability. It is best for brainstorming, rebranding, and building a shortlist. Always verify availability on Fakemon or your chosen platform before committing to a name. The tool is a practical free resource for gaming creature names.
+          Fakemon design is one of the most active corners of the Pokémon fandom — ROM hackers, Essentials developers, spriters, and fan artists all need names that sound like they came straight out of a Game Freak meeting. This Fakemon name generator gives you that pool instantly, grounded in the franchise&apos;s real naming logic: portmanteau construction, type-coded fragments, escalating evolution-line suffixes, and short, speakable results. Generate a batch, lean on the type and evolution notes above, and you will end up with creature names that feel like they always belonged in a Pokédex.
         </p>
       </div>
     </section>
@@ -199,30 +124,29 @@ function createWriteUp() {
 }
 
 const pageFaqs: FaqItem[] = [
-  { category: 'General', question: 'What is a Fakemon name generator?', answer: 'A Fakemon name generator is an online tool that creates creature names for Fakemon and other fan projects. You get unique Fakemon name ideas at the click of a button. The generator combines curated Pokémon-style words at random in your browser so each run produces new combinations. This free Fakemon name generator runs locally with no sign-up and does not send generated names to any server. Always check your game or story for availability before committing to a name.' },
-  { category: 'Usage', question: 'How do I use the Fakemon name generator?', answer: 'Set how many names you want per run (1–24), click "Generate names" to get a new list of character name ideas, then use the Copy button to copy all names to your clipboard. Paste into a notes app and check your game or story for availability. Run again for more options; no sign-up is required. The Fakemon name generator runs in your browser so your settings and generated names are not sent to any server. Building a shortlist of five to ten options before checking availability is a good habit.' },
-  { category: 'General', question: 'Is the Fakemon name generator free?', answer: 'Yes. This Fakemon name generator is free to use in your browser. You can generate Fakemon name ideas as often as you like without creating an account or paying. The tool runs locally on your device and does not require a download. There is no daily or total limit on how many times you can run the generator.' },
-  { category: 'Use cases', question: 'Can I use the names for Steam?', answer: 'Yes. The Fakemon name generator produces username ideas that you can use on Steam. Names must be unique on the platform, so always check Steam\'s availability before committing. Run the generator multiple times to build a shortlist of character name ideas, then check which names are available on Steam. The tool does not reserve or validate names; it only suggests combinations for you to verify on the platform.' },
-  { category: 'Privacy', question: 'Is my data sent to a server when I use the Fakemon name generator?', answer: 'No. This Fakemon name generator runs in your browser. When you set the number of names and click generate, the names are created locally on your device. Your choices and the generated Fakemon name ideas are not sent to our servers. We do not store your inputs or the generated list. Generation is fully local and private.' },
-  { category: 'Compatibility', question: 'Does the Fakemon name generator work on mobile?', answer: 'Yes. The Fakemon name generator runs in a web browser and works on desktop, tablet, and phone. You do not need to install an app. Open the page, choose how many names you want, then generate. On a phone you can generate a short list and copy it into notes or check availability on Steam\'s app. The tool is responsive and works on any device with a modern browser.' },
-  { category: 'Limits', question: 'How many names can I generate with the Fakemon name generator?', answer: 'You can request 1–24 names per run with this Fakemon name generator. If you need more than 24 character name ideas, run the generator again; each run produces a new random set. There is no daily or total limit. Paste multiple runs into one document and remove duplicates if needed. The batch size is designed to keep the list manageable while giving you enough Fakemon name options to shortlist.' },
-  { category: 'Usage', question: 'Can I copy the names from the Fakemon name generator?', answer: 'Yes. Use the Copy button on this Fakemon name generator to copy all generated names to your clipboard. Paste into a notes app or document. The names are plain text, one per line, so they work in any editor or form. Check your game or story for availability before choosing a name. Copying is the intended way to save your shortlist of character name ideas.' },
-  { category: 'General', question: 'Do I need an account to use the Fakemon name generator?', answer: 'No. This Fakemon name generator works without sign-up or login. The tool runs entirely in your browser. You do not need to create an account on our site to use it. Open the page, set how many Fakemon name ideas you want, click generate, and copy the results. No email, password, or registration is required.' },
-  { category: 'Use cases', question: 'Can I use the Fakemon name generator for other platforms?', answer: 'Yes. The names work as ideas for any gaming or social platform—Discord, Xbox, PlayStation, or others. The Fakemon name generator is built for Steam-style character names but the output can inspire usernames elsewhere. Check each platform\'s availability; names must be unique on each service. The generator does not check availability for you, so always verify on the platform where you plan to use the name.' },
-  { category: 'Privacy', question: 'Do you store the names I generate with the Fakemon name generator?', answer: 'No. Generation happens in your browser. We do not receive or store the Fakemon name ideas or your settings. The Fakemon name generator runs locally on your device. You can use the tool in a private or incognito window if you prefer. If you refresh the page, the last generated list is cleared unless you have already copied it.' },
-  { category: 'Limits', question: 'Can I get more than 24 names from the Fakemon name generator?', answer: 'Each run of this Fakemon name generator gives up to 24 names. To get more character name ideas, run the generator again; each run produces a new random set. You can paste multiple runs into one document and then remove duplicates. There is no daily or total limit. Batching runs is the intended workflow when you need a large pool of Fakemon name options.' },
-  { category: 'General', question: 'Why "Steam" specifically in a Fakemon name generator?', answer: 'Fakemon is a major gaming platform, and people often search for Fakemon name ideas and character name generators. The Fakemon name generator serves that intent and produces names that fit Fakemon and similar gaming environments. The same ideas work for other platforms—Discord, Xbox, PlayStation—as inspiration. Use the names as character names wherever you need a unique username; always check availability on the platform you choose.' },
-  { category: 'Use cases', question: 'Can I use the Fakemon name generator for esports?', answer: 'Yes. Use the Fakemon name generator as inspiration for in-game names or stream handles. Run it multiple times to get a shortlist of character name ideas, then check availability on your platform. The tool is free and runs in your browser with no sign-up. Many esports and streamers use Fakemon name generators to brainstorm handles before verifying availability on Steam, Twitch, or other services.' },
-  { category: 'Technical', question: 'How are the names generated in the Fakemon name generator?', answer: 'This Fakemon name generator uses curated Pokémon-style words and elements. When you click generate, the tool randomly combines these in your browser so each run is different. No names or settings are sent to a server. The result is for inspiration only; we do not check Fakemon or any platform for availability. The word lists are designed to sound like gaming creature names—bold, memorable, and easy to type.' },
-  { category: 'General', question: 'Are the names from the Fakemon name generator unique?', answer: 'The names are randomly combined from our word list, so each run can produce new combinations. We do not check Fakemon or any platform for availability. You must check yourself whether a Fakemon name or character name is available before using it on your profile. The generator helps you discover ideas; uniqueness on a given platform depends on that platform\'s current registrations.' },
-  { category: 'Use cases', question: 'Can teachers use the Fakemon name generator?', answer: 'Yes. Teachers can use this Fakemon name generator for creative or tech-related activities—for example when students are learning about usernames, digital identity, or online profiles. Emphasize that the tool is for inspiration and that names must be checked for availability on any platform. The Fakemon name generator is free and runs in the browser with no sign-up, so it is easy to use in a classroom or workshop setting.' },
-  { category: 'General', question: 'How do I cite the Fakemon name generator?', answer: 'For academic or formal use you can cite this Fakemon name generator as a source of inspiration for creature names. The generated names are algorithm-produced; you can use them freely. A brief acknowledgment is optional. We do not require attribution. The tool is a free, browser-based utility for Fakemon name ideas and character name brainstorming.' },
-  { category: 'Use cases', question: 'Can I use the Fakemon name generator for a new Fakemon account?', answer: 'Yes. When creating a new Fakemon account you need a unique username. Run this Fakemon name generator to get character name ideas, copy the list, then check Fakemon for availability. Pick a name that is available and that you like. The tool runs in your browser with no sign-up. Building a shortlist of five to ten options before you start the sign-up process saves time, since many Fakemon names are already taken.' },
-  { category: 'General', question: 'Do the names from the Fakemon name generator work for streaming?', answer: 'Yes. The Fakemon name generator produces username ideas that can work for streaming platforms, in-game names, or social handles. Use the names as inspiration and check your platform for availability. Run the generator multiple times to build a shortlist of options. Many streamers use Fakemon name generators to brainstorm stream handles before checking availability on Twitch, YouTube, or other services.' },
-  { category: 'Best practices', question: 'What is the best workflow for the Fakemon name generator?', answer: 'Open the page, set the number of names (e.g. 12 or 24), click generate, then copy the list. Paste into a notes app. Check your game or story for availability for each name you like. If your first choice is taken, try the next. Run the Fakemon name generator again for more options. Keep a shortlist of five to ten character name ideas so you have backups. The tool is free and runs in your browser with no sign-up.' },
-  { category: 'Best practices', question: 'Should I run the Fakemon name generator multiple times?', answer: 'Yes. Running the Fakemon name generator multiple times is the intended workflow when you want a large pool of Fakemon name ideas. Paste each run into one document and remove duplicates if any appear. Then check availability on your game or story for each name you like. Having a shortlist saves time compared to checking one idea at a time. There is no daily or total limit on how many times you can run the generator.' },
-  { category: 'Troubleshooting', question: 'Why is my first choice from the Fakemon name generator taken?', answer: 'Popular creature names are often already in use on Fakemon and other platforms. The Fakemon name generator does not check availability; it only suggests combinations. Always have a shortlist of five to ten options so you have backups. Run the generator again for more Fakemon name ideas and check availability on your platform before committing. This is normal when using any name generator for fan projects.' },
-  { category: 'Troubleshooting', question: 'Can I use the Fakemon name generator offline?', answer: 'Yes. Once the page is loaded, the Fakemon name generator runs entirely in your browser and does not require a network connection to generate names. You can generate character name ideas offline. Copying and pasting also works offline. You will need a connection only to open the page initially and to check availability on Fakemon or another platform.' },
+  { category: 'General', question: 'What is a Fakemon name generator?', answer: 'A Fakemon name generator is a browser tool that creates Pokémon-style names for fan-made creatures. "Fakemon" are original Pokémon designed by fans for ROM hacks, fan games, fakedexes, and fan art. The generator builds names the way the real games do — fusing two short words into a portmanteau like Charizard (char + lizard) or Squirtle (squirt + turtle) — so the results sound canon. It runs locally with no sign-up and stores nothing.' },
+  { category: 'Naming style', question: 'How are real Pokémon names made?', answer: 'Almost every Pokémon name is a portmanteau: two meaningful word fragments fused into one. Charizard is char (burn) plus lizard; Bulbasaur is bulb plus dinosaur; Oddish is odd plus radish. The pattern usually combines an element or type cue, an animal or plant base, and a trait, then trims syllables so the name stays short and speakable. The generator follows this same construction to produce Fakemon names that read as official.' },
+  { category: 'Naming style', question: 'What makes a Fakemon name sound canon instead of random?', answer: 'You should be able to point to the two pieces it fuses, while it still reads as one clean word. Charmander hides "char" and "salamander" inside a single name; a good Fakemon name does the same — the seam is hidden but never erased. Keep it short (three to four syllables max), lead with a type-appropriate fragment, and trim the animal word into an ending like -saur, -zard, or -eon. If the element and the creature are both faintly audible, it is in the right register.' },
+  { category: 'Types', question: 'How do I name a Fakemon by its type?', answer: 'Each type has its own vocabulary of fragments. Fire uses char, pyro, ember, blaze, magma; Water uses aqua, hydro, tide, splash, marsh; Grass uses bulb, leaf, petal, vine, root plus -saur or -ish endings; Electric uses volt, spark, jolt, zap, chu; Rock and Ground use geo, gravel, dune, terra. Decide your Fakemon\'s type first, generate a batch, and keep the names whose sound matches that element so the name does the work of the type chart at a glance.' },
+  { category: 'Types', question: 'Which type fragment should I lead with?', answer: 'Lead with the cue that best signals the typing, usually the element. Squirtle leads with "squirt" for Water; Charmander leads with "char" for Fire. If your creature\'s identity is more about the animal than the element (like a clearly turtle-shaped Water type), you can lead with the animal and tuck the element into a prefix instead. Generate a batch both ways and keep whichever reads cleaner under a sprite.' },
+  { category: 'Evolution lines', question: 'How do I name a full evolution line?', answer: 'Keep a shared root across all stages and escalate the suffix so each form sounds grander. Charmander, Charmeleon, Charizard all keep "char" while the ending grows more imposing. Bulbasaur to Venusaur swaps a humble bulb for a grander flower while holding the -saur shape. With this generator, pick a base-form name you love, then generate again and look for two more that share its root sound or theme to build a matched three-stage family.' },
+  { category: 'Evolution lines', question: 'Should the final evolution have a grander name?', answer: 'Yes. Real Pokémon lines escalate: the base form sounds small or cute, the middle form sounds stronger, and the final form sounds mythic. Venusaur references both Venus flytraps and the planet; Charizard adds a dragon-scale "-zard." When you reach the final stage, swap the theme word for a bigger reference while keeping the same syllable shape so the family still reads as one line on a dex page.' },
+  { category: 'Use cases', question: 'Can I use these names in a Pokémon fan game?', answer: 'Yes — fan games are a primary use. Whether you build in Pokémon Essentials, RPG Maker, or another engine, the generator gives you portmanteau names that fit a name box and sit naturally beside canon-style dex entries. Generate a batch, filter for names that match each creature\'s type and base, and paste your shortlist into your fakedex notes. The names are original combinations meant for your own creative work.' },
+  { category: 'Use cases', question: 'Can I use these names for a ROM hack?', answer: 'Yes. ROM hacks (GBA, NDS, and others) often have tight name-length limits, so the generator\'s short, trimmed portmanteaus fit well. Generate names, keep the ones that stay under your hack\'s character limit, and check that each reads cleanly in a battle message like "Wild ____ appeared!" The tool gives you the name; you handle the sprite, stats, and insertion into your hack.' },
+  { category: 'Use cases', question: 'Can I use these names for fan art and fakedex projects?', answer: 'Absolutely. Spriters, illustrators, and fakedex creators use Fakemon names to label their original designs. For a full fakedex, lock in a consistent naming style early — how hard you trim syllables, whether you favor cute or imposing endings — and apply it across every entry so the region feels designed by one hand. The generator floods you with raw fusions; your job is to filter for the ones that match your project\'s tone.' },
+  { category: 'Naming style', question: 'How do I name a starter trio?', answer: 'Generate a batch and pick three names that share a syllable shape but clearly diverge on type — one leafy, one fiery, one watery — the way Bulbasaur, Charmander, and Squirtle do. That parallel structure is what makes a starter line feel official rather than improvised. Run the generator a few times, set the three candidates side by side, and adjust endings so the trio reads as a matched set.' },
+  { category: 'Naming style', question: 'How long should a Fakemon name be?', answer: 'Short. Official names almost never exceed three or four syllables because they have to fit a name box and be said aloud in the anime and in battle text. If a generated fusion runs long, trim it the way real designers do: drop the tail of the animal word into an ending like -saur, -zard, -eon, or -ish. A name you can say in one breath is far more usable than a clever but unwieldy one.' },
+  { category: 'Usage', question: 'How do I use this Fakemon name generator?', answer: 'Set how many names you want (1–24), click Generate names, then skim for fusions that match your Fakemon\'s type and base creature. Use the Copy button to save the whole list, paste it into your fakedex or sprite notes, and shortlist your favorites. Run again to gather evolution-line partners or more options — there is no limit, account, or download.' },
+  { category: 'Usage', question: 'Can I edit the generated names?', answer: 'Yes, and you should. The output is a starting point. Tweak the spelling, trim a syllable, or take the element fragment from one result and the animal base from another and fuse them yourself. Many designers generate a batch, pull two pieces they like from different names, and combine them into the final Fakemon name. The generator gives you raw material; the polish is yours.' },
+  { category: 'Technical', question: 'How are the names generated?', answer: 'The generator combines curated Pokémon-style fragments — element cues (char, aqua, volt), animal and plant bases (lizard, turtle, bulb), and trimmed endings (-saur, -zard, -eon) — and fuses them at random in your browser. Each run produces a new set of portmanteaus. Nothing is sent to a server; generation is entirely local, so the process mirrors how a designer brainstorms name fusions, just faster.' },
+  { category: 'Technical', question: 'Are these real Pokémon names?', answer: 'No. The generator creates original, Pokémon-style fusions for your own Fakemon rather than reproducing the official Pokédex as a lookup database. That is intentional — you want fresh names for original creatures you can actually use, not duplicates of canon Pokémon. The fragments are inspired by the franchise\'s naming logic, but the combinations are yours to claim.' },
+  { category: 'Best practices', question: 'How do I make a generated name sound more like a real Pokémon?', answer: 'Say it out loud — Pokémon names are built to be spoken, so a fusion that trips the tongue will trip your players. Anchor it to a clear type fragment, keep it under four syllables, and make sure both source words are still faintly audible so the portmanteau has a hidden seam rather than a random blend. Pairing it with an evolution line that shares its root also pushes a plain name firmly into canon territory.' },
+  { category: 'Troubleshooting', question: 'The names do not feel Pokémon enough — what should I do?', answer: 'Generate a larger batch and filter hard. Keep only fusions where you can identify both source words, and discard anything that reads as one shapeless word. Pair a clear type fragment with a recognizable animal or plant base — that combination is what gives canon names their feel. Trimming the ending into a -saur or -zard shape, or building the name into a three-stage line, also makes a plain result land as a real Pokémon name.' },
+  { category: 'Privacy', question: 'Is my data sent to a server?', answer: 'No. Everything runs in your browser. When you click generate, the Fakemon names are created on your device. Your settings and the generated list are never sent to our servers and nothing is stored. You can use the tool in a private window, so your unreleased region, starter line, or creature concepts stay yours until you choose to share them.' },
+  { category: 'Limits', question: 'How many Fakemon names can I generate at once?', answer: 'You can request 1–24 names per run. For more, just run it again — each run produces a fresh random set of portmanteaus and there is no daily or total limit. Paste several runs into one document if you want a large pool to shortlist from, which is handy when you are naming an entire regional fakedex rather than a single creature.' },
+  { category: 'Compatibility', question: 'Does it work on mobile?', answer: 'Yes. The generator runs in any modern browser on desktop, tablet, or phone with no app install. Sketching Fakemon concepts on a tablet? Generate a batch right beside your art app, copy the names into your notes, and shortlist them wherever you are designing your region.' },
+  { category: 'General', question: 'Is the Fakemon name generator free?', answer: 'Yes, it is completely free with no account, sign-up, or download. Generate as many Pokémon-style creature names as you like, as often as you like — whether you are naming one Fakemon or a full regional dex of a hundred-plus original creatures.' },
+  { category: 'Use cases', question: 'Can I use a Fakemon name commercially?', answer: 'The names this tool produces are original combinations you are free to use in your own fan projects — fan games, ROM hacks, and fan art are non-commercial by nature, since Pokémon itself is owned by Nintendo, Game Freak, and The Pokémon Company. The generator does not check trademarks. If you ever build something original and commercial, choose names that do not echo official Pokémon and run your own trademark check before publishing.' },
 ];
 
 export default async function FakemonNameGeneratorPage() {

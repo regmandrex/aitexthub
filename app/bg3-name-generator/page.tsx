@@ -18,8 +18,8 @@ const toolSlug = 'bg3-name-generator';
 export async function generateMetadata(): Promise<Metadata> {
   return buildToolMeta({
     title: 'BG3 Name Generator',
-    description: 'Free bg3 name generator for character names. Create Baldur\'s Gate 3-style name ideas in your browser with no sign-up.',
-    seoTitle: 'BG3 Name Generator – Baldur\'s Gate 3 Name Ideas',
+    description: 'Free Baldur’s Gate 3 name generator for your Tav and custom characters. Race-fitting D&D names for elves, tieflings, dwarves, githyanki, and more — in your browser, no sign-up.',
+    seoTitle: 'BG3 Name Generator – Baldur’s Gate 3 Tav & D&D Names',
     urlPath: `/${toolSlug}`,
   });
 }
@@ -28,170 +28,74 @@ function createWriteUp() {
   return (
     <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
-        <h2>BG3 Name Generator – Baldur's Gate 3 Name Ideas</h2>
-        <h2>Introduction</h2>
+        <h2>BG3 Name Generator – Baldur&apos;s Gate 3 Tav &amp; D&amp;D Names</h2>
         <p>
-          This guide explains how to use a BG3 name generator to create character names for BG3 and other games and fiction. The tool runs in your browser and produces unique, memorable name ideas at the click of a button. It is designed for players who want BG3 name ideas quickly without sign-up or download. The generator does not store data and runs entirely in your browser. You get 1–24 names per run and can run it as often as you like. Always check your game or story for availability before committing to a name.
+          This BG3 name generator builds names for your custom character — your &quot;Tav&quot; — and for any companion, hireling, or origin character you create in Baldur&apos;s Gate 3. Because BG3 runs on Dungeons &amp; Dragons 5e and the Forgotten Realms setting, names are not generic fantasy filler: each playable race has its own naming traditions, from the flowing names of elves to the harsh, guttural names of githyanki. The generator leans into those conventions so the name you pick fits both your race and the world of Faerûn. It runs in your browser with no sign-up and stores nothing.
         </p>
         <p>
-          People search for BG3 name ideas and character name generators when setting up a new profile, an esports handle, or a stream name. This BG3 name generator serves that intent with one free, browser-based tool. Whether you need a single standout character name or a shortlist of options, the generator gives you a pool of ideas. Names must be unique on each service, so verifying availability on BG3 or your chosen platform is an essential step after generating ideas.
-        </p>
-
-        <h2>What Is a BG3 Name Generator?</h2>
-        <p>
-          A BG3 name generator is an online tool that creates character names suitable for BG3 and other games and fiction. You get unique name ideas at the click of a button. The generator combines curated Baldur's Gate 3-style words and elements at random so each run produces new combinations. The output is for inspiration only; you must check your platform for availability. This free BG3 name generator runs in your browser with no sign-up and does not send generated names to any server.
-        </p>
-        <p>
-          The output is plain text, one name per line. You can copy the full list and paste it into a notes app, then check your game or story for availability and pick one. Many users run the BG3 name generator multiple times to build a shortlist before deciding. Because names are created locally, your choices stay private and nothing is stored on our servers.
-        </p>
-        <p>
-          BG3 name generators are useful when you are tired of reusing the same username or when you want a fresh character name that fits your style. The tool does not guarantee that a name is available; it only suggests combinations. Always confirm availability on your game or story before you commit to a new username.
+          A name in BG3 sticks with you through a 100-hour campaign, voiced by companions and narrated by the Dream Visitor, so it is worth getting right. This page walks through D&amp;D naming by race so the name you generate sounds like it belongs to a Sword Coast adventurer rather than a placeholder.
         </p>
 
-        <h2>Why This BG3 Name Generator Matters</h2>
+        <h2>D&amp;D Naming by Race</h2>
         <p>
-          Choosing a memorable BG3 name or character name can be time-consuming. A BG3 name generator speeds up brainstorming. Instead of staring at a blank field, you get options in seconds. You can run it on a phone or desktop, copy the names you like, and then check availability on your game or story. The tool is free and does not require an account, so there is no friction to trying many ideas.
+          Baldur&apos;s Gate 3 lets you play a wide roster of races, each with distinct naming traditions drawn from D&amp;D lore. Matching the name to the race is the single biggest thing that makes a Tav feel real:
+        </p>
+        <ul>
+          <li><strong>Elves &amp; half-elves.</strong> Flowing, melodic names with soft consonants — graceful, vowel-rich sounds. High elves and wood elves both favor lyrical names.</li>
+          <li><strong>Tieflings.</strong> Often a &quot;virtue name&quot; (a word or concept) alongside an Infernal-flavored name, reflecting their fiendish heritage and the names they choose for themselves.</li>
+          <li><strong>Dwarves.</strong> Hard, strong names with clan associations — sturdy consonants and a sense of stone and lineage.</li>
+          <li><strong>Githyanki.</strong> Harsh, alien, guttural names with apostrophes and hard sounds (like Lae&apos;zel) — distinctly non-human.</li>
+          <li><strong>Humans.</strong> The widest range, drawing on the many cultures of the Sword Coast and beyond.</li>
+          <li><strong>Halflings &amp; gnomes.</strong> Warmer, homier, often slightly whimsical names that suit their communities.</li>
+          <li><strong>Dragonborn &amp; half-orcs.</strong> Strong, clan- or deed-rooted names with weight and presence.</li>
+        </ul>
+
+        <h2>Naming Your Tav</h2>
+        <p>
+          &quot;Tav&quot; is the community nickname for a custom (non-origin) BG3 protagonist — named after the default character. When you build your own hero instead of playing an origin like Astarion or Shadowheart, you choose everything, including the name companions will use for the rest of the game. Generate a batch filtered to your race, then read each one as if Shadowheart were saying it across a campfire; the names that sound natural in that context are the ones to keep.
         </p>
         <p>
-          The generator also keeps your ideas private. Names are created in your browser and are not sent to our servers. You can use it in a private or incognito window if you prefer. Because generation is local, there is no risk of your shortlist being stored or logged. That matters when you are testing ideas before you settle on a final BG3 name or character name.
-        </p>
-        <p>
-          A good BG3 name generator also standardizes the workflow: set how many names you want, click generate, copy the list, and check availability. You get a consistent way to explore username ideas without writing scripts or visiting multiple sites. The output is easy to paste into notes or a document so you can track which names you have already checked on BG3 or other platforms.
+          Consider your class and background too. A noble Paladin might carry a more formal, lineage-heavy name; a wild Druid something earthier; a roguish Urchin something short and street-worn. D&amp;D characters are defined as much by background as by stats, and a name that nods to that background makes the character feel authored rather than rolled.
         </p>
 
-        <h2>How the BG3 Name Generator Works (Step by Step)</h2>
+        <h2>Origin vs. Custom Characters</h2>
         <p>
-          When you open the page, you choose how many names you want per run (1–24). Clicking &quot;Generate names&quot; triggers the tool to randomly combine curated Baldur's Gate 3-style elements in your browser. Each run is independent; no names or settings are sent to a server. The result is a list of BG3 name ideas, one per line. You can copy the full list with one click and paste it into a notes app. To get more ideas, run the generator again. The tool does not check BG3 or any platform for availability—you must do that yourself.
+          BG3&apos;s origin characters — Astarion, Gale, Lae&apos;zel, Shadowheart, Wyll, Karlach, and the Dark Urge — come pre-named, and those names are a masterclass in race-fitting naming. Lae&apos;zel is unmistakably githyanki; Astarion has the smooth elegance of a high-elf vampire; Karlach is strong and direct, fitting her tiefling barbarian energy. If you are creating a custom character or a multiplayer party, use these as a tuning fork: generate names and compare them to the canon companions of the same race to check that yours sits in the same register.
         </p>
+
+        <h2>Naming for Multiplayer and Custom Campaigns</h2>
         <p>
-          The underlying word lists are designed to sound like gaming character names: bold, memorable, and easy to type. The generator shuffles and combines these elements so that each run produces different combinations. That randomness helps you discover names you might not have thought of on your own. Because everything runs in the browser, the BG3 name generator works offline once the page is loaded and does not depend on a backend service.
-        </p>
-        <p>
-          There are no hidden steps. You set the count, click generate, and receive a list. Copying is one click; pasting into your own document keeps your shortlist in one place. Running the BG3 name generator multiple times is the intended workflow when you want a large pool of character name ideas before checking availability.
+          BG3 supports multiplayer parties of custom characters, and many groups want a cohesive set of names rather than a clash of styles. Generate a batch for each player&apos;s race and pick names that feel like they could adventure together — varied but tonally consistent. The same approach works if you are porting your BG3 Tav into a tabletop D&amp;D campaign: the names are setting-accurate for the Forgotten Realms, so they travel cleanly from the video game to the tabletop.
         </p>
 
         <h2>How to Use This BG3 Name Generator</h2>
-        <p>Follow these steps to get BG3 name ideas:</p>
         <ol className="list-decimal pl-6 space-y-2">
           <li>Set how many names you want per run (1–24).</li>
-          <li>Click &quot;Generate names&quot; to get a new list of character name ideas.</li>
-          <li>Use the Copy button to copy all names to your clipboard.</li>
-          <li>Paste into a notes app or document, then check your game or story for availability and pick one.</li>
-          <li>Run again for more options; no account or download is required.</li>
+          <li>Click <strong>Generate names</strong> to get a batch of D&amp;D-style names.</li>
+          <li>Keep the names that fit your chosen race and class, using the race notes above as a guide.</li>
+          <li>Copy the list into your notes and shortlist your favorites for character creation.</li>
+          <li>Run again for more — no limit, no account, no download.</li>
         </ol>
         <p>
-          The BG3 name generator runs in your browser; your settings and generated names are not sent to any server. You can run it as often as you like. Building a shortlist of five to ten options before checking availability on BG3 is a good habit, since popular usernames are often taken. Have backups ready so that if your first choice is unavailable, you can try the next name on your list.
+          Generation happens entirely in your browser. Your settings and the names you create are never sent to a server, so your character ideas stay private until you choose to use them.
         </p>
 
-        <h2>BG3 and Gamer Naming Style</h2>
+        <h2>Tips for a Race-Fitting Name</h2>
         <p>
-          BG3 names and character names often use bold, memorable word combinations: action words, nicknames, or creative spellings. This BG3 name generator uses curated Baldur's Gate 3-style elements and combines them at random so you get new combinations that fit that style. The output is for inspiration only; the tool does not check BG3 or any platform for availability. You can use the names as-is or tweak spelling and punctuation to make them your own.
-        </p>
-        <p>
-          Different games and communities favor different styles. Some players prefer short, punchy character names; others like longer usernames. Running the generator multiple times gives you a mix of lengths and styles. Skim the list, mark the ones you like, and then verify each one on your game or story. The BG3 name generator is a starting point—your final choice should fit your personality and the rules of your platform.
+          Decide your race first, then filter hard for sound: elven names should flow, dwarven names should feel like stone, githyanki names should sound alien. Say the name out loud — it will be spoken constantly in cutscenes, so a name that is awkward to pronounce will grate over a long campaign. Avoid borrowing a canon companion&apos;s exact name, but echoing the style of a same-race companion is a reliable shortcut. If a generated name is close, tweak the spelling or add an apostrophe (for githyanki) to push it fully into the right tradition.
         </p>
 
-        <h2>When to Use a BG3 Name Generator</h2>
-        <p>
-          Use this BG3 name generator when you need BG3 or Baldur's Gate 3-style username ideas quickly. Common use cases include creating a new BG3 account or updating your profile name, choosing an in-game name for esports or casual play, and picking a stream or social handle. The same tool works for other platforms—Discord, Xbox, PlayStation, or social profiles—as inspiration. Names must be unique on each platform, so always check availability before committing.
-        </p>
-        <p>
-          Another good time to use a BG3 name generator is when you are rebranding. If you have used the same character name for years and want a fresh identity, generating a batch of ideas helps you explore options without pressure. Run the tool several times, paste results into one document, and remove duplicates. Then check BG3 and any other platforms you use to see which names are still available. Having a shortlist saves time compared to checking one idea at a time.
-        </p>
-
-        <h2>Use Cases in Detail: Profiles, Esports, and Streams</h2>
-        <p>
-          Players use the BG3 name generator when creating a new BG3 account or refreshing their profile name. Esports and streamers use it for in-game names or stream handles. The same tool works for other platforms—Discord, Xbox, PlayStation, or social—as inspiration; you must check each platform for availability. Run the generator multiple times to build a shortlist, then check which names are free on your platform. The BG3 name generator does not reserve or validate names; it only suggests combinations.
-        </p>
-        <p>
-          Content creators often need a consistent handle across Steam, streaming, and social media. Generating a batch of character name ideas lets you test different options before you commit. Copy the names you like into a single list, then check availability on each service. If one name is taken on BG3 but free elsewhere, you can still use it on the platforms where it is available, or use the generator again to find alternatives that work everywhere.
-        </p>
-
-        <h2>Tips for Choosing a BG3 Username</h2>
-        <p>
-          Pick a name that is easy to remember and type. Short character names are easier to say in voice chat and less likely to be mistyped. Run the BG3 name generator multiple times to get a shortlist, then check your game or story for availability. Have a few backups in case your first choice is taken. Avoid names that might be mistaken for someone else or that break platform rules. The generator gives you ideas only; the final choice is yours.
-        </p>
-        <p>
-          Consider how the name will look in different contexts: in-game, on a stream overlay, or in a friend list. Some combinations look great in one font but odd in another. If you plan to use the same handle across multiple games and platforms, check availability everywhere before you invest in branding. The BG3 name generator is a free way to explore options without committing until you have confirmed that your chosen BG3 name or character name is available.
-        </p>
-
-        <h2>Running the BG3 Name Generator in Batches</h2>
-        <p>
-          When you need many username ideas, run the BG3 name generator multiple times. Each run gives up to 24 names. Paste each run into the same document and remove duplicates if any appear. Check availability on your platform for each name you like. There is no daily or total limit; you can run the generator as often as you want. Batching is useful when you are setting up several accounts, testing ideas for a team, or simply want a large pool of character name options before making a decision.
-        </p>
-        <p>
-          Keeping a single document with all your generated BG3 name ideas makes it easy to track which names you have already checked. Mark names as &quot;taken&quot; or &quot;available&quot; as you go. That way you avoid re-checking the same name on BG3 or another platform. The BG3 name generator does not remember previous runs, so your document is your only record of the ideas you have collected.
-        </p>
-
-        <h2>Privacy and Local Processing</h2>
-        <p>
-          This BG3 name generator runs entirely in your browser. When you set the number of names and click generate, the names are created locally on your device. Your choices and the generated names are not sent to our servers. We do not store your inputs or the generated list. No account or login is required. That means your shortlist of character name ideas stays on your machine unless you choose to copy it somewhere else.
-        </p>
-        <p>
-          Because generation is local, the tool is suitable for use in private or incognito windows. If you close the tab, the generated list is gone unless you have copied it. There is no server-side log of what names you generated or how many times you ran the BG3 name generator. This privacy model is intentional: username brainstorming is personal, and the tool is designed so that you control where your ideas go.
-        </p>
-
-        <h2>Copying and Exporting Names</h2>
-        <p>
-          Use the Copy button to copy all generated BG3 name ideas to your clipboard (one per line). Paste into a notes app or document. Check your game or story for availability before committing to a name. The names are plain text, so they work in any editor or form. If you paste into a spreadsheet, each line can go in its own cell for easy tracking. The BG3 name generator does not export to a file; copying and pasting is the intended way to save your shortlist.
-        </p>
-
-        <h2>Limits and Batch Size</h2>
-        <p>
-          You can request 1–24 names per run with this BG3 name generator. There is no daily or total limit. Run the generator again for more options. No download or account is required. If you need more than 24 names in one go, run the tool multiple times and paste the results into one document. Removing duplicates is up to you; the generator does not track previous output.
-        </p>
-
-        <h2>No Download or Account Required</h2>
-        <p>
-          This BG3 name generator runs entirely in your browser. You do not need to download software or create an account. Open the page, set how many names you want, and click generate. The tool is free and works on desktop, tablet, and phone. That makes it easy to use when you are away from your main device or when you want to quickly generate character name ideas without installing anything.
-        </p>
-
-        <h2>Who Uses a BG3 Name Generator?</h2>
-        <p>
-          Players use the BG3 name generator when creating or updating a BG3 profile, or when they want a new character name for other platforms. Esports and streamers use it for in-game names or stream handles. The same tool works for Discord, Xbox, PlayStation, or social profiles—always check availability on each platform. Educators and workshop leaders sometimes use it to demonstrate username creation or digital identity in a classroom setting. No account or download is required on our site.
-        </p>
-        <p>
-          Anyone who needs a steady supply of username ideas can benefit. Whether you are a casual gamer, a competitive player, or a content creator, the BG3 name generator provides a fast way to explore options. The key is to treat the output as inspiration and always verify availability on BG3 and any other platform where you plan to use the name.
-        </p>
-
-        <h2>Getting the Most Out of the BG3 Name Generator</h2>
-        <p>
-          Run the generator several times and paste all results into one document. Skim for names that fit your style and check your platform for availability. Shortlist five to ten options so you have backups if your first choice is taken. The BG3 name generator does not check BG3 or any platform; you must do that yourself. When you have a shortlist, check availability one by one. Usernames are often taken on popular services, so having several options saves time.
-        </p>
-        <p>
-          Another tip is to try different batch sizes. Sometimes generating 24 names at once gives you a good mix; other times you may prefer smaller runs so you can review each set before generating more. The tool is flexible. Use it whenever you need new BG3 name ideas or character name inspiration. Bookmarking the page makes it easy to return when you are ready to refresh your profile or create a new account.
-        </p>
-
-        <h2>Typical Workflow for the BG3 Name Generator</h2>
-        <p>
-          A typical workflow is: open the page, set the number of names (e.g. 12 or 24), click generate, then copy the list. Paste into a notes app. Check your game or story for availability for each name you like. If your first choice is taken, try the next. Run the BG3 name generator again for more options. The whole process takes a few minutes. No account or download is required. Bookmark the page for quick access when you need new username ideas. The tool is free and runs in your browser with no sign-up.
-        </p>
-
-        <h2>What This Tool Does NOT Do</h2>
+        <h2>What This Tool Does and Does Not Do</h2>
         <ul>
-          <li>It does not check BG3 or any platform for username availability.</li>
-          <li>It does not reserve or hold names for you.</li>
-          <li>It does not store your generated list or your settings.</li>
-          <li>It does not connect to Steam, Discord, or any external gaming service.</li>
+          <li>It generates Baldur&apos;s Gate 3 and D&amp;D-style names for your Tav, companions, and custom characters.</li>
+          <li>It does not reproduce official companion names as a list — output is original for your own use.</li>
+          <li>It does not store your generated names or settings; generation is fully local.</li>
+          <li>It does not interact with your save file or the game — it only suggests names to type into character creation.</li>
         </ul>
-        <p>
-          This BG3 name generator produces name ideas only. It does not validate availability, create accounts, or manage your profile. You must check BG3 or your chosen platform yourself and follow that platform&apos;s rules when creating or changing your username. The tool is a brainstorming aid, not a replacement for checking availability.
-        </p>
 
-        <h2>Privacy and Security Notes</h2>
+        <h2>Final Notes</h2>
         <p>
-          The BG3 name generator runs entirely in your browser. It does not send data to a server and does not store generated values. This is helpful for quick brainstorming and offline use. If you refresh the page, the last generated list is cleared. Copy any names you want to keep before closing or refreshing.
-        </p>
-        <p>
-          For account security, never share your BG3 password or other credentials. The generator only suggests usernames; it does not handle login or account creation. When you check availability on BG3 or another platform, use the official site or app and ensure you are on a secure connection. The BG3 name generator is a standalone tool and does not integrate with any login system.
-        </p>
-
-        <h2>Final Summary and When to Use This Tool</h2>
-        <p>
-          The BG3 name generator provides a fast way to create username and character name ideas for BG3 and other games and fiction. Set the number of names (1–24) and run as often as you like. Copy results and check your platform for availability. The tool runs locally in your browser with no sign-up. Keep a shortlist of options in case your first choice is taken. No download or account is required. The generator is free and works on any device.
-        </p>
-        <p>
-          Use this BG3 name generator when you need BG3 name ideas, character name inspiration, or a quick way to explore options before checking availability. It is best for brainstorming, rebranding, and building a shortlist. Always verify availability on BG3 or your chosen platform before committing to a name. The tool is a practical free resource for gaming character names.
+          Baldur&apos;s Gate 3 is one of the most character-creation-driven games ever made, and naming your Tav is part of the fun. This generator gives you a pool of names grounded in real D&amp;D and Forgotten Realms naming traditions — race-by-race, from lilting elven names to harsh githyanki ones. Pick your race, generate a batch, lean on the notes above, and you will end up with a name that fits both your character and the Sword Coast they are about to save (or doom).
         </p>
       </div>
     </section>
@@ -199,30 +103,29 @@ function createWriteUp() {
 }
 
 const pageFaqs: FaqItem[] = [
-  { category: 'General', question: 'What is a BG3 name generator?', answer: 'A BG3 name generator is an online tool that creates character names for BG3 and other games and fiction. You get unique BG3 name ideas at the click of a button. The generator combines curated Baldur\'s Gate 3-style words at random in your browser so each run produces new combinations. This free BG3 name generator runs locally with no sign-up and does not send generated names to any server. Always check your game or story for availability before committing to a name.' },
-  { category: 'Usage', question: 'How do I use the BG3 name generator?', answer: 'Set how many names you want per run (1–24), click "Generate names" to get a new list of character name ideas, then use the Copy button to copy all names to your clipboard. Paste into a notes app and check your game or story for availability. Run again for more options; no sign-up is required. The BG3 name generator runs in your browser so your settings and generated names are not sent to any server. Building a shortlist of five to ten options before checking availability is a good habit.' },
-  { category: 'General', question: 'Is the BG3 name generator free?', answer: 'Yes. This BG3 name generator is free to use in your browser. You can generate BG3 name ideas as often as you like without creating an account or paying. The tool runs locally on your device and does not require a download. There is no daily or total limit on how many times you can run the generator.' },
-  { category: 'Use cases', question: 'Can I use the names for Steam?', answer: 'Yes. The BG3 name generator produces username ideas that you can use on Steam. Names must be unique on the platform, so always check Steam\'s availability before committing. Run the generator multiple times to build a shortlist of character name ideas, then check which names are available on Steam. The tool does not reserve or validate names; it only suggests combinations for you to verify on the platform.' },
-  { category: 'Privacy', question: 'Is my data sent to a server when I use the BG3 name generator?', answer: 'No. This BG3 name generator runs in your browser. When you set the number of names and click generate, the names are created locally on your device. Your choices and the generated BG3 name ideas are not sent to our servers. We do not store your inputs or the generated list. Generation is fully local and private.' },
-  { category: 'Compatibility', question: 'Does the BG3 name generator work on mobile?', answer: 'Yes. The BG3 name generator runs in a web browser and works on desktop, tablet, and phone. You do not need to install an app. Open the page, choose how many names you want, then generate. On a phone you can generate a short list and copy it into notes or check availability on Steam\'s app. The tool is responsive and works on any device with a modern browser.' },
-  { category: 'Limits', question: 'How many names can I generate with the BG3 name generator?', answer: 'You can request 1–24 names per run with this BG3 name generator. If you need more than 24 character name ideas, run the generator again; each run produces a new random set. There is no daily or total limit. Paste multiple runs into one document and remove duplicates if needed. The batch size is designed to keep the list manageable while giving you enough BG3 name options to shortlist.' },
-  { category: 'Usage', question: 'Can I copy the names from the BG3 name generator?', answer: 'Yes. Use the Copy button on this BG3 name generator to copy all generated names to your clipboard. Paste into a notes app or document. The names are plain text, one per line, so they work in any editor or form. Check your game or story for availability before choosing a name. Copying is the intended way to save your shortlist of character name ideas.' },
-  { category: 'General', question: 'Do I need an account to use the BG3 name generator?', answer: 'No. This BG3 name generator works without sign-up or login. The tool runs entirely in your browser. You do not need to create an account on our site to use it. Open the page, set how many BG3 name ideas you want, click generate, and copy the results. No email, password, or registration is required.' },
-  { category: 'Use cases', question: 'Can I use the BG3 name generator for other platforms?', answer: 'Yes. The names work as ideas for any gaming or social platform—Discord, Xbox, PlayStation, or others. The BG3 name generator is built for Steam-style character names but the output can inspire usernames elsewhere. Check each platform\'s availability; names must be unique on each service. The generator does not check availability for you, so always verify on the platform where you plan to use the name.' },
-  { category: 'Privacy', question: 'Do you store the names I generate with the BG3 name generator?', answer: 'No. Generation happens in your browser. We do not receive or store the BG3 name ideas or your settings. The BG3 name generator runs locally on your device. You can use the tool in a private or incognito window if you prefer. If you refresh the page, the last generated list is cleared unless you have already copied it.' },
-  { category: 'Limits', question: 'Can I get more than 24 names from the BG3 name generator?', answer: 'Each run of this BG3 name generator gives up to 24 names. To get more character name ideas, run the generator again; each run produces a new random set. You can paste multiple runs into one document and then remove duplicates. There is no daily or total limit. Batching runs is the intended workflow when you need a large pool of BG3 name options.' },
-  { category: 'General', question: 'Why "Steam" specifically in a BG3 name generator?', answer: 'BG3 is a major gaming platform, and people often search for BG3 name ideas and character name generators. The BG3 name generator serves that intent and produces names that fit BG3 and similar gaming environments. The same ideas work for other platforms—Discord, Xbox, PlayStation—as inspiration. Use the names as character names wherever you need a unique username; always check availability on the platform you choose.' },
-  { category: 'Use cases', question: 'Can I use the BG3 name generator for esports?', answer: 'Yes. Use the BG3 name generator as inspiration for in-game names or stream handles. Run it multiple times to get a shortlist of character name ideas, then check availability on your platform. The tool is free and runs in your browser with no sign-up. Many esports and streamers use BG3 name generators to brainstorm handles before verifying availability on Steam, Twitch, or other services.' },
-  { category: 'Technical', question: 'How are the names generated in the BG3 name generator?', answer: 'This BG3 name generator uses curated Baldur\'s Gate 3-style words and elements. When you click generate, the tool randomly combines these in your browser so each run is different. No names or settings are sent to a server. The result is for inspiration only; we do not check BG3 or any platform for availability. The word lists are designed to sound like gaming character names—bold, memorable, and easy to type.' },
-  { category: 'General', question: 'Are the names from the BG3 name generator unique?', answer: 'The names are randomly combined from our word list, so each run can produce new combinations. We do not check BG3 or any platform for availability. You must check yourself whether a BG3 name or character name is available before using it on your profile. The generator helps you discover ideas; uniqueness on a given platform depends on that platform\'s current registrations.' },
-  { category: 'Use cases', question: 'Can teachers use the BG3 name generator?', answer: 'Yes. Teachers can use this BG3 name generator for creative or tech-related activities—for example when students are learning about usernames, digital identity, or online profiles. Emphasize that the tool is for inspiration and that names must be checked for availability on any platform. The BG3 name generator is free and runs in the browser with no sign-up, so it is easy to use in a classroom or workshop setting.' },
-  { category: 'General', question: 'How do I cite the BG3 name generator?', answer: 'For academic or formal use you can cite this BG3 name generator as a source of inspiration for character names. The generated names are algorithm-produced; you can use them freely. A brief acknowledgment is optional. We do not require attribution. The tool is a free, browser-based utility for BG3 name ideas and character name brainstorming.' },
-  { category: 'Use cases', question: 'Can I use the BG3 name generator for a new BG3 account?', answer: 'Yes. When creating a new BG3 account you need a unique username. Run this BG3 name generator to get character name ideas, copy the list, then check BG3 for availability. Pick a name that is available and that you like. The tool runs in your browser with no sign-up. Building a shortlist of five to ten options before you start the sign-up process saves time, since many BG3 names are already taken.' },
-  { category: 'General', question: 'Do the names from the BG3 name generator work for streaming?', answer: 'Yes. The BG3 name generator produces username ideas that can work for streaming platforms, in-game names, or social handles. Use the names as inspiration and check your platform for availability. Run the generator multiple times to build a shortlist of options. Many streamers use BG3 name generators to brainstorm stream handles before checking availability on Twitch, YouTube, or other services.' },
-  { category: 'Best practices', question: 'What is the best workflow for the BG3 name generator?', answer: 'Open the page, set the number of names (e.g. 12 or 24), click generate, then copy the list. Paste into a notes app. Check your game or story for availability for each name you like. If your first choice is taken, try the next. Run the BG3 name generator again for more options. Keep a shortlist of five to ten character name ideas so you have backups. The tool is free and runs in your browser with no sign-up.' },
-  { category: 'Best practices', question: 'Should I run the BG3 name generator multiple times?', answer: 'Yes. Running the BG3 name generator multiple times is the intended workflow when you want a large pool of BG3 name ideas. Paste each run into one document and remove duplicates if any appear. Then check availability on your game or story for each name you like. Having a shortlist saves time compared to checking one idea at a time. There is no daily or total limit on how many times you can run the generator.' },
-  { category: 'Troubleshooting', question: 'Why is my first choice from the BG3 name generator taken?', answer: 'Popular character names are often already in use on BG3 and other platforms. The BG3 name generator does not check availability; it only suggests combinations. Always have a shortlist of five to ten options so you have backups. Run the generator again for more BG3 name ideas and check availability on your platform before committing. This is normal when using any name generator for games and fiction.' },
-  { category: 'Troubleshooting', question: 'Can I use the BG3 name generator offline?', answer: 'Yes. Once the page is loaded, the BG3 name generator runs entirely in your browser and does not require a network connection to generate names. You can generate character name ideas offline. Copying and pasting also works offline. You will need a connection only to open the page initially and to check availability on BG3 or another platform.' },
+  { category: 'General', question: 'What is a BG3 name generator?', answer: 'It is a browser tool that creates names for Baldur’s Gate 3 characters — your custom "Tav," companions, and hirelings — in the style of D&D and the Forgotten Realms. Because each playable race has its own naming tradition, the generator produces race-fitting names rather than generic fantasy filler. It runs locally with no sign-up and stores nothing.' },
+  { category: 'Tav', question: 'What is a "Tav" in BG3?', answer: '"Tav" is the community nickname for a custom (non-origin) Baldur’s Gate 3 protagonist, taken from the default character. When you build your own hero rather than playing an origin like Astarion or Shadowheart, you choose the name companions will use for the entire campaign — so it is worth picking one that fits your race and class.' },
+  { category: 'Races', question: 'How do names differ by race in BG3?', answer: 'Elves and half-elves favor flowing, melodic names; tieflings often use a virtue name plus Infernal flavor; dwarves use hard, clan-rooted names; githyanki use harsh, alien names with apostrophes (like Lae’zel); humans span many cultures; halflings and gnomes lean warm and homey; dragonborn and half-orcs use strong, deed-rooted names. Matching the name to the race is what makes a Tav feel real.' },
+  { category: 'Races', question: 'How do I name an elf or half-elf?', answer: 'Elven names are flowing and melodic with soft consonants and rich vowels. Generate a batch, keep the lyrical-sounding ones, and read them aloud — if it sounds graceful and a little otherworldly, it fits. Half-elves can lean either toward their elven or human heritage depending on the character you want.' },
+  { category: 'Races', question: 'How do I name a tiefling?', answer: 'Tieflings in D&D often carry a "virtue name" — a word or concept they choose for themselves — alongside an Infernal-flavored name reflecting their fiendish heritage. The generator can give you a base; pair it with a virtue concept (like Hope, Ire, or Sorrow) for an authentically tiefling result. Karlach is a good canon reference for tone.' },
+  { category: 'Races', question: 'How do I name a githyanki?', answer: 'Githyanki names are harsh, alien, and guttural, frequently with apostrophes and hard consonants — Lae’zel is the canonical example. Filter your batch for the most non-human-sounding results, and add an apostrophe if needed to push a name fully into the githyanki tradition.' },
+  { category: 'Origins', question: 'Can I use these for origin or companion characters?', answer: 'The origin characters (Astarion, Gale, Lae’zel, Shadowheart, Wyll, Karlach, the Dark Urge) come pre-named, but you can use this generator when creating your own companion-style NPCs, hirelings, or alternate party members. Compare your generated names to the canon companion of the same race to check the register.' },
+  { category: 'Class', question: 'Should the name match my class or background?', answer: 'It helps. A noble Paladin suits a formal, lineage-heavy name; a Druid something earthier; an Urchin rogue something short and street-worn. D&D characters are defined by background as much as stats, so a name that nods to yours makes the character feel authored rather than randomly rolled.' },
+  { category: 'Use cases', question: 'Can I use these names in tabletop D&D?', answer: 'Yes. Because BG3 uses D&D 5e and the Forgotten Realms, the names are setting-accurate and travel cleanly to tabletop campaigns. If you are porting your Tav into a home game, the generated name will fit right in alongside other Sword Coast characters.' },
+  { category: 'Use cases', question: 'Can I use this for multiplayer parties?', answer: 'Yes. For a multiplayer party of custom characters, generate a batch for each player’s race and pick names that feel like they could adventure together — varied but tonally consistent. This avoids a clash of naming styles across the party.' },
+  { category: 'Usage', question: 'How do I use this generator?', answer: 'Set how many names you want (1–24), click Generate names, then keep the ones that fit your chosen race and class using the race notes above. Copy the list into your notes, shortlist your favorites, and type your pick into BG3 character creation. Run again for more — no limit, account, or download.' },
+  { category: 'Usage', question: 'Can I edit the generated names?', answer: 'Yes. The output is a starting point. Tweak the spelling, add an apostrophe for a githyanki feel, soften consonants for an elf, or combine parts of two results. Many players generate a batch and then refine a favorite until it is exactly right.' },
+  { category: 'Naming style', question: 'My name does not sound race-appropriate — what do I do?', answer: 'Decide your race first, then filter the batch hard for sound: elven names should flow, dwarven names should feel like stone, githyanki names should sound alien. If a result is close, adjust the spelling toward that tradition. Comparing against a same-race canon companion is a reliable check.' },
+  { category: 'Naming style', question: 'Should I worry about how the name is pronounced?', answer: 'Yes. The name is spoken constantly in BG3 cutscenes by companions and the narrator, so a name that is awkward to say will grate over a long campaign. Read each candidate aloud before committing and favor ones that roll off the tongue.' },
+  { category: 'Technical', question: 'How are the names generated?', answer: 'The generator combines curated name elements built around D&D and Forgotten Realms race conventions and shuffles them at random in your browser. Each run produces a new set. Nothing is sent to a server; generation is entirely local.' },
+  { category: 'Technical', question: 'Are these real characters from BG3?', answer: 'No. The generator creates original, D&D-style names for your own use rather than reproducing the official companions. That is intentional — you want a fresh name for your Tav, not a duplicate of Astarion or Shadowheart that you cannot make your own.' },
+  { category: 'Privacy', question: 'Is my data sent to a server?', answer: 'No. Everything runs in your browser. When you click generate, names are created on your device. Your settings and generated names are never sent to our servers and nothing is stored. You can use the tool in a private window and your character ideas stay yours.' },
+  { category: 'Limits', question: 'How many names can I generate at once?', answer: 'You can request 1–24 names per run. For more, run it again — each run produces a fresh random set with no daily or total limit. Paste multiple runs into one document if you want a large pool to choose from for your party.' },
+  { category: 'Compatibility', question: 'Does it work on mobile?', answer: 'Yes. The generator runs in any modern browser on desktop, tablet, or phone with no app install. Generate a batch on your phone while planning your character, copy it into notes, and shortlist names before you sit down to play.' },
+  { category: 'General', question: 'Is the BG3 name generator free?', answer: 'Yes, completely free with no account, sign-up, or download. Generate as many Tav and companion names as you like, as often as you like.' },
+  { category: 'Best practices', question: 'How do I make a name feel truly BG3?', answer: 'Anchor it to your race’s naming tradition, nod to your class or background, and read it aloud to be sure it is comfortable to say. Comparing your candidate to the canon companion of the same race is the fastest way to confirm it sits in the right register.' },
+  { category: 'Best practices', question: 'Does the name need to match my appearance?', answer: 'Not strictly, but a name that fits your race and the vibe of your character build deepens immersion. A grim, scarred warrior with a soft lyrical name can feel mismatched — though deliberate contrast can also be a strong roleplay choice if that is your intent.' },
+  { category: 'Troubleshooting', question: 'The names feel too generic — what should I do?', answer: 'Generate a larger batch and filter ruthlessly for race-specific sound, discarding anything that could belong to any fantasy character. Then refine your favorite’s spelling toward its tradition. The more you lean into a single race’s conventions, the less generic the result feels.' },
 ];
 
 export default async function Bg3NameGeneratorPage() {
@@ -248,4 +151,3 @@ export default async function Bg3NameGeneratorPage() {
     </>
   );
 }
-

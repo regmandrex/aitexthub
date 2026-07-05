@@ -18,8 +18,8 @@ const toolSlug = 'army-name-generator';
 export async function generateMetadata(): Promise<Metadata> {
   return buildToolMeta({
     title: 'Army Name Generator',
-    description: 'Free army name generator for squad and unit names. Create military-style name ideas in your browser with no sign-up.',
-    seoTitle: 'Army Name Generator – Squad & Military Name Ideas',
+    description: 'Free army name generator for fictional armies, legions, regiments, and factions. Build martial names like the Iron Vanguard or the Crimson Legion for worldbuilding, wargames, and D&D — in your browser, no sign-up.',
+    seoTitle: 'Army Name Generator – Legions, Regiments & Faction Names',
     urlPath: `/${toolSlug}`,
   });
 }
@@ -28,170 +28,111 @@ function createWriteUp() {
   return (
     <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
-        <h2>Army Name Generator – Squad & Military Name Ideas</h2>
-        <h2>Introduction</h2>
+        <h2>Army Name Generator – Legions, Regiments &amp; Faction Names</h2>
         <p>
-          This guide explains how to use a Army name generator to create squad and unit names for Army and other games and fiction. The tool runs in your browser and produces unique, memorable name ideas at the click of a button. It is designed for players who want Army name ideas quickly without sign-up or download. The generator does not store data and runs entirely in your browser. You get 1–24 names per run and can run it as often as you like. Always check your game or story for availability before committing to a name.
+          This army name generator builds names for fictional fighting forces — a legion, a regiment, a mercenary company, a knightly order, or an entire faction&apos;s standing army. It is meant for the force itself, the banner that thousands march under, rather than the name of one soldier (though the same logic helps you coin a unit callsign or a squad nickname). Whether you are drafting a Warhammer-style army list, naming the antagonist faction in a fantasy novel, or stamping a banner on a kingdom in your D&amp;D campaign, the tool produces evocative martial names in your browser. There is no sign-up, nothing is stored, and you can generate as many batches as you like.
         </p>
         <p>
-          People search for Army name ideas and character name generators when setting up a new profile, an esports handle, or a stream name. This Army name generator serves that intent with one free, browser-based tool. Whether you need a single standout character name or a shortlist of options, the generator gives you a pool of ideas. Names must be unique on each service, so verifying availability on Army or your chosen platform is an essential step after generating ideas.
-        </p>
-
-        <h2>What Is a Army Name Generator?</h2>
-        <p>
-          A Army name generator is an online tool that creates squad and unit names suitable for Army and other games and fiction. You get unique name ideas at the click of a button. The generator combines curated military-style words and elements at random so each run produces new combinations. The output is for inspiration only; you must check your platform for availability. This free Army name generator runs in your browser with no sign-up and does not send generated names to any server.
-        </p>
-        <p>
-          The output is plain text, one name per line. You can copy the full list and paste it into a notes app, then check your game or story for availability and pick one. Many users run the Army name generator multiple times to build a shortlist before deciding. Because names are created locally, your choices stay private and nothing is stored on our servers.
-        </p>
-        <p>
-          Army name generators are useful when you are tired of reusing the same username or when you want a fresh character name that fits your style. The tool does not guarantee that a name is available; it only suggests combinations. Always confirm availability on your game or story before you commit to a new username.
+          Army names are not arbitrary. Real and fictional forces are named the same handful of ways: after the nation or banner they serve, after a defining trait or ideology, after their commander, or after the region they hold. &quot;The Imperial Legion,&quot; &quot;the Iron Brigade,&quot; &quot;the Crimson Vanguard,&quot; &quot;Hannibal&apos;s host&quot; — each follows a clear pattern. This page breaks those patterns down so the names you keep sound like they belong on a war banner, not on a list of random words.
         </p>
 
-        <h2>Why This Army Name Generator Matters</h2>
+        <h2>How Real and Fictional Armies Are Named</h2>
         <p>
-          Choosing a memorable Army name or character name can be time-consuming. A Army name generator speeds up brainstorming. Instead of staring at a blank field, you get options in seconds. You can run it on a phone or desktop, copy the names you like, and then check availability on your game or story. The tool is free and does not require an account, so there is no friction to trying many ideas.
+          Across history and fiction, army names cluster into a few naming conventions. Understanding them lets you generate a batch and immediately recognize which results carry weight:
         </p>
-        <p>
-          The generator also keeps your ideas private. Names are created in your browser and are not sent to our servers. You can use it in a private or incognito window if you prefer. Because generation is local, there is no risk of your shortlist being stored or logged. That matters when you are testing ideas before you settle on a final Army name or character name.
-        </p>
-        <p>
-          A good Army name generator also standardizes the workflow: set how many names you want, click generate, copy the list, and check availability. You get a consistent way to explore username ideas without writing scripts or visiting multiple sites. The output is easy to paste into notes or a document so you can track which names you have already checked on Army or other platforms.
-        </p>
-
-        <h2>How the Army Name Generator Works (Step by Step)</h2>
-        <p>
-          When you open the page, you choose how many names you want per run (1–24). Clicking &quot;Generate names&quot; triggers the tool to randomly combine curated military-style elements in your browser. Each run is independent; no names or settings are sent to a server. The result is a list of Army name ideas, one per line. You can copy the full list with one click and paste it into a notes app. To get more ideas, run the generator again. The tool does not check Army or any platform for availability—you must do that yourself.
-        </p>
-        <p>
-          The underlying word lists are designed to sound like gaming squad and unit names: bold, memorable, and easy to type. The generator shuffles and combines these elements so that each run produces different combinations. That randomness helps you discover names you might not have thought of on your own. Because everything runs in the browser, the Army name generator works offline once the page is loaded and does not depend on a backend service.
-        </p>
-        <p>
-          There are no hidden steps. You set the count, click generate, and receive a list. Copying is one click; pasting into your own document keeps your shortlist in one place. Running the Army name generator multiple times is the intended workflow when you want a large pool of character name ideas before checking availability.
-        </p>
-
-        <h2>How to Use This Army Name Generator</h2>
-        <p>Follow these steps to get Army name ideas:</p>
-        <ol className="list-decimal pl-6 space-y-2">
-          <li>Set how many names you want per run (1–24).</li>
-          <li>Click &quot;Generate names&quot; to get a new list of character name ideas.</li>
-          <li>Use the Copy button to copy all names to your clipboard.</li>
-          <li>Paste into a notes app or document, then check your game or story for availability and pick one.</li>
-          <li>Run again for more options; no account or download is required.</li>
-        </ol>
-        <p>
-          The Army name generator runs in your browser; your settings and generated names are not sent to any server. You can run it as often as you like. Building a shortlist of five to ten options before checking availability on Army is a good habit, since popular usernames are often taken. Have backups ready so that if your first choice is unavailable, you can try the next name on your list.
-        </p>
-
-        <h2>Army and Gamer Naming Style</h2>
-        <p>
-          Army names and character names often use bold, memorable word combinations: action words, nicknames, or creative spellings. This Army name generator uses curated military-style elements and combines them at random so you get new combinations that fit that style. The output is for inspiration only; the tool does not check Army or any platform for availability. You can use the names as-is or tweak spelling and punctuation to make them your own.
-        </p>
-        <p>
-          Different games and communities favor different styles. Some players prefer short, punchy character names; others like longer usernames. Running the generator multiple times gives you a mix of lengths and styles. Skim the list, mark the ones you like, and then verify each one on your game or story. The Army name generator is a starting point—your final choice should fit your personality and the rules of your platform.
-        </p>
-
-        <h2>When to Use a Army Name Generator</h2>
-        <p>
-          Use this Army name generator when you need Army or military-style username ideas quickly. Common use cases include creating a new Army account or updating your profile name, choosing an in-game name for esports or casual play, and picking a stream or social handle. The same tool works for other platforms—Discord, Xbox, PlayStation, or social profiles—as inspiration. Names must be unique on each platform, so always check availability before committing.
-        </p>
-        <p>
-          Another good time to use a Army name generator is when you are rebranding. If you have used the same character name for years and want a fresh identity, generating a batch of ideas helps you explore options without pressure. Run the tool several times, paste results into one document, and remove duplicates. Then check Army and any other platforms you use to see which names are still available. Having a shortlist saves time compared to checking one idea at a time.
-        </p>
-
-        <h2>Use Cases in Detail: Profiles, Esports, and Streams</h2>
-        <p>
-          Players use the Army name generator when creating a new Army account or refreshing their profile name. Esports and streamers use it for in-game names or stream handles. The same tool works for other platforms—Discord, Xbox, PlayStation, or social—as inspiration; you must check each platform for availability. Run the generator multiple times to build a shortlist, then check which names are free on your platform. The Army name generator does not reserve or validate names; it only suggests combinations.
-        </p>
-        <p>
-          Content creators often need a consistent handle across Steam, streaming, and social media. Generating a batch of character name ideas lets you test different options before you commit. Copy the names you like into a single list, then check availability on each service. If one name is taken on Army but free elsewhere, you can still use it on the platforms where it is available, or use the generator again to find alternatives that work everywhere.
-        </p>
-
-        <h2>Tips for Choosing a Army Username</h2>
-        <p>
-          Pick a name that is easy to remember and type. Short character names are easier to say in voice chat and less likely to be mistyped. Run the Army name generator multiple times to get a shortlist, then check your game or story for availability. Have a few backups in case your first choice is taken. Avoid names that might be mistaken for someone else or that break platform rules. The generator gives you ideas only; the final choice is yours.
-        </p>
-        <p>
-          Consider how the name will look in different contexts: in-game, on a stream overlay, or in a friend list. Some combinations look great in one font but odd in another. If you plan to use the same handle across multiple games and platforms, check availability everywhere before you invest in branding. The Army name generator is a free way to explore options without committing until you have confirmed that your chosen Army name or character name is available.
-        </p>
-
-        <h2>Running the Army Name Generator in Batches</h2>
-        <p>
-          When you need many username ideas, run the Army name generator multiple times. Each run gives up to 24 names. Paste each run into the same document and remove duplicates if any appear. Check availability on your platform for each name you like. There is no daily or total limit; you can run the generator as often as you want. Batching is useful when you are setting up several accounts, testing ideas for a team, or simply want a large pool of character name options before making a decision.
-        </p>
-        <p>
-          Keeping a single document with all your generated Army name ideas makes it easy to track which names you have already checked. Mark names as &quot;taken&quot; or &quot;available&quot; as you go. That way you avoid re-checking the same name on Army or another platform. The Army name generator does not remember previous runs, so your document is your only record of the ideas you have collected.
-        </p>
-
-        <h2>Privacy and Local Processing</h2>
-        <p>
-          This Army name generator runs entirely in your browser. When you set the number of names and click generate, the names are created locally on your device. Your choices and the generated names are not sent to our servers. We do not store your inputs or the generated list. No account or login is required. That means your shortlist of character name ideas stays on your machine unless you choose to copy it somewhere else.
-        </p>
-        <p>
-          Because generation is local, the tool is suitable for use in private or incognito windows. If you close the tab, the generated list is gone unless you have copied it. There is no server-side log of what names you generated or how many times you ran the Army name generator. This privacy model is intentional: username brainstorming is personal, and the tool is designed so that you control where your ideas go.
-        </p>
-
-        <h2>Copying and Exporting Names</h2>
-        <p>
-          Use the Copy button to copy all generated Army name ideas to your clipboard (one per line). Paste into a notes app or document. Check your game or story for availability before committing to a name. The names are plain text, so they work in any editor or form. If you paste into a spreadsheet, each line can go in its own cell for easy tracking. The Army name generator does not export to a file; copying and pasting is the intended way to save your shortlist.
-        </p>
-
-        <h2>Limits and Batch Size</h2>
-        <p>
-          You can request 1–24 names per run with this Army name generator. There is no daily or total limit. Run the generator again for more options. No download or account is required. If you need more than 24 names in one go, run the tool multiple times and paste the results into one document. Removing duplicates is up to you; the generator does not track previous output.
-        </p>
-
-        <h2>No Download or Account Required</h2>
-        <p>
-          This Army name generator runs entirely in your browser. You do not need to download software or create an account. Open the page, set how many names you want, and click generate. The tool is free and works on desktop, tablet, and phone. That makes it easy to use when you are away from your main device or when you want to quickly generate character name ideas without installing anything.
-        </p>
-
-        <h2>Who Uses a Army Name Generator?</h2>
-        <p>
-          Players use the Army name generator when creating or updating a Army profile, or when they want a new character name for other platforms. Esports and streamers use it for in-game names or stream handles. The same tool works for Discord, Xbox, PlayStation, or social profiles—always check availability on each platform. Educators and workshop leaders sometimes use it to demonstrate username creation or digital identity in a classroom setting. No account or download is required on our site.
-        </p>
-        <p>
-          Anyone who needs a steady supply of username ideas can benefit. Whether you are a casual gamer, a competitive player, or a content creator, the Army name generator provides a fast way to explore options. The key is to treat the output as inspiration and always verify availability on Army and any other platform where you plan to use the name.
-        </p>
-
-        <h2>Getting the Most Out of the Army Name Generator</h2>
-        <p>
-          Run the generator several times and paste all results into one document. Skim for names that fit your style and check your platform for availability. Shortlist five to ten options so you have backups if your first choice is taken. The Army name generator does not check Army or any platform; you must do that yourself. When you have a shortlist, check availability one by one. Usernames are often taken on popular services, so having several options saves time.
-        </p>
-        <p>
-          Another tip is to try different batch sizes. Sometimes generating 24 names at once gives you a good mix; other times you may prefer smaller runs so you can review each set before generating more. The tool is flexible. Use it whenever you need new Army name ideas or character name inspiration. Bookmarking the page makes it easy to return when you are ready to refresh your profile or create a new account.
-        </p>
-
-        <h2>Typical Workflow for the Army Name Generator</h2>
-        <p>
-          A typical workflow is: open the page, set the number of names (e.g. 12 or 24), click generate, then copy the list. Paste into a notes app. Check your game or story for availability for each name you like. If your first choice is taken, try the next. Run the Army name generator again for more options. The whole process takes a few minutes. No account or download is required. Bookmark the page for quick access when you need new username ideas. The tool is free and runs in your browser with no sign-up.
-        </p>
-
-        <h2>What This Tool Does NOT Do</h2>
         <ul>
-          <li>It does not check Army or any platform for username availability.</li>
-          <li>It does not reserve or hold names for you.</li>
-          <li>It does not store your generated list or your settings.</li>
-          <li>It does not connect to Steam, Discord, or any external gaming service.</li>
+          <li><strong>By nation or banner.</strong> The force takes the name of the realm or ruler it serves: the Imperial Legion, the Grand Army of the Republic, the King&apos;s Own. This says &quot;we fight for that throne&quot; before anything else.</li>
+          <li><strong>By trait or ideology.</strong> A defining quality becomes the name: the Iron Brigade (endurance), the Immortals (Persia&apos;s unkillable elite), the Crimson Vanguard (blood and forward fury), the Silent Order. Adjectives like iron, crimson, ashen, eternal, and grim do heavy lifting here.</li>
+          <li><strong>By leader.</strong> The commander&apos;s name fronts the unit: the Black Company under their captain, Sharpe&apos;s Chosen Men, the Ten Thousand who followed Xenophon. Personal loyalty is the brand.</li>
+          <li><strong>By region or origin.</strong> Where they were raised: the Northmen, the Dornish Spears, the Highland Watch. Geography signals fighting style and temperament.</li>
         </ul>
         <p>
-          This Army name generator produces name ideas only. It does not validate availability, create accounts, or manage your profile. You must check Army or your chosen platform yourself and follow that platform&apos;s rules when creating or changing your username. The tool is a brainstorming aid, not a replacement for checking availability.
-        </p>
+          The most memorable names often stack two of these — &quot;the Iron Legion of Karthos&quot; pairs a trait with a place. The generator leans on these layers so you get names with the same texture.</p>
 
-        <h2>Privacy and Security Notes</h2>
+        <h2>The Anatomy of an Army Name: Epithet + Unit Noun</h2>
         <p>
-          The Army name generator runs entirely in your browser. It does not send data to a server and does not store generated values. This is helpful for quick brainstorming and offline use. If you refresh the page, the last generated list is cleared. Copy any names you want to keep before closing or refreshing.
+          Most strong army names reduce to a simple formula: an evocative <strong>epithet</strong> plus a <strong>unit noun</strong>. The epithet sets the mood; the unit noun sets the scale and the era. &quot;Crimson&quot; + &quot;Vanguard.&quot; &quot;Iron&quot; + &quot;Legion.&quot; &quot;Ashen&quot; + &quot;Host.&quot; Swap either half and the whole feel shifts.
         </p>
         <p>
-          For account security, never share your Army password or other credentials. The generator only suggests usernames; it does not handle login or account creation. When you check availability on Army or another platform, use the official site or app and ensure you are on a secure connection. The Army name generator is a standalone tool and does not integrate with any login system.
+          The unit noun is where your martial vocabulary matters most, because each word carries a built-in scale and flavor:
         </p>
+        <ul>
+          <li><strong>Legion, Host, Horde</strong> — huge, sweeping, often ancient or overwhelming. A host is a poetic word for a whole army; a horde implies numbers over discipline.</li>
+          <li><strong>Brigade, Regiment, Division, Corps</strong> — formal, modern, organized; they imply a real chain of command.</li>
+          <li><strong>Vanguard, Phalanx, Spear, Shieldwall</strong> — front-line, tactical, close-combat energy.</li>
+          <li><strong>Order, Guard, Watch, Sentinels</strong> — sworn, defensive, ceremonial; good for elite or oath-bound units.</li>
+          <li><strong>Company, Band, Free Company, Warband</strong> — smaller, mercenary, or irregular; perfect for sellswords and raiders.</li>
+        </ul>
 
-        <h2>Final Summary and When to Use This Tool</h2>
+        <h2>Military Unit Hierarchy and Scale</h2>
         <p>
-          The Army name generator provides a fast way to create username and character name ideas for Army and other games and fiction. Set the number of names (1–24) and run as often as you like. Copy results and check your platform for availability. The tool runs locally in your browser with no sign-up. Keep a shortlist of options in case your first choice is taken. No download or account is required. The generator is free and works on any device.
+          Picking the right unit noun is easier when you know roughly what each tier means. A modern army nests like this, largest to smallest: <strong>army &gt; corps &gt; division &gt; brigade &gt; regiment &gt; battalion &gt; company &gt; platoon &gt; squad</strong>. An army is tens of thousands; a regiment is a few thousand; a company is a hundred or so; a squad is a handful.
         </p>
         <p>
-          Use this Army name generator when you need Army name ideas, character name inspiration, or a quick way to explore options before checking availability. It is best for brainstorming, rebranding, and building a shortlist. Always verify availability on Army or your chosen platform before committing to a name. The tool is a practical free resource for gaming squad and unit names.
+          You do not need to be a historian to use this, but matching the noun to the scale keeps a name believable. If your story features a thousand armored knights sworn to one cause, &quot;the Ashen Order&quot; or &quot;the Iron Brigade&quot; fits; calling a dozen raiders &quot;the Grand Legion&quot; reads as a joke (which may be exactly what you want for a ragtag band with delusions of grandeur). Generate a batch, decide how big the force is, and keep the names whose unit noun matches that size.</p>
+
+        <h2>Fantasy Army Names</h2>
+        <p>
+          Fantasy forces lean on banners, oaths, beasts, and the elements. Think the Iron Throne&apos;s armies, the Knights of the Old Code, the Dragonsworn, the Wardens of the North. The vocabulary skews toward steel, blood, shadow, dawn, dusk, frost, and flame, paired with nouns like Legion, Order, Host, Guard, and Banner. Heraldic colors (crimson, sable, argent) and beasts (wyrm, raven, lion, wolf) anchor a fantasy army to a sigil. A force called &quot;the Sable Ravens&quot; or &quot;the Dawnbreak Host&quot; instantly implies a coat of arms and a sworn cause.
+        </p>
+        <p>
+          Fantasy names also love the definite article and a possessive backstory: &quot;the Order of the Broken Spear,&quot; &quot;the Last Legion,&quot; &quot;Aldric&apos;s Chosen.&quot; If you are running a D&amp;D campaign or writing a novel, generate a batch, then attach a one-line origin — who founded it, what oath they swore — and the name does the rest of the worldbuilding for you.</p>
+
+        <h2>Sci-Fi Army Names</h2>
+        <p>
+          Science-fiction forces trade banners for designations, sectors, and grim ideology. The flavor here is colder and more bureaucratic: the 501st Legion, Sector Command, the Terran Vanguard, the Void Wardens, Strike Force Hammerfall. Numbers and codes (the 7th Fleet, Battalion Zero) feel native to sci-fi because real modern militaries use them. Mix that with menace — Reaper, Specter, Ironclad, Nova, Eclipse — and you get the register of a galactic war machine.
+        </p>
+        <p>
+          A useful trick: keep the unit noun modern (corps, division, fleet, strike force) but make the epithet alien or cosmic (Void, Nova, Singularity, Eclipse). &quot;The Void Vanguard&quot; or &quot;the Nova Legion&quot; reads as far-future without abandoning military structure. For a more authoritarian faction, lean on words like Dominion, Imperium, Ascendancy, and Directorate.</p>
+
+        <h2>Historical and Modern Military Names</h2>
+        <p>
+          Grounded, real-world-flavored forces draw on the conventions of actual armies: numbered units, place names, and earned nicknames. Real regiments carry both a formal designation and a battle-won epithet — the &quot;Old Guard,&quot; the &quot;Devil Dogs,&quot; the &quot;Screaming Eagles,&quot; the &quot;Desert Rats.&quot; That two-layer naming (an official number plus a fierce nickname) is a strong pattern to imitate: pair &quot;the 9th Regiment&quot; with &quot;the Ironsides,&quot; and you have a unit that feels real on the page.
+        </p>
+        <p>
+          For historical fantasy or alternate history, look at how older forces were named: the Praetorian Guard, the Varangian Guard, the Grande Armée, the Light Brigade. Latinate and martial roots (legio, cohort, praetorian, sentinel) lend instant antiquity. Generate a batch, then sand off anything too modern or too whimsical for the era you are writing.</p>
+
+        <h2>Use Cases: Worldbuilding, Wargames, and Campaigns</h2>
+        <p>
+          A good army name does a lot of narrative work at once, which is why so many creators reach for one:
+        </p>
+        <ul>
+          <li><strong>Worldbuilding and fantasy novels.</strong> Each faction needs a standing force with a name readers remember. Contrast helps — the disciplined &quot;Iron Legion&quot; versus the savage &quot;Bloodfang Horde&quot; tells you who is who before a battle starts.</li>
+          <li><strong>Tabletop wargames.</strong> Warhammer-style and other miniature games practically demand a custom army name and color scheme. A named force makes a painted collection feel like yours.</li>
+          <li><strong>Strategy games.</strong> Naming your faction, legion, or expeditionary force adds flavor to a campaign or multiplayer match.</li>
+          <li><strong>D&amp;D and TTRPG campaigns.</strong> The mercenary company the party joins, the empire&apos;s army they fight, the knightly order they aspire to — all land harder with a real name.</li>
+          <li><strong>Clans and guild armies.</strong> Online clans and guilds borrow the same martial register to name their roster of fighters.</li>
+        </ul>
+
+        <h2>How to Use This Army Name Generator</h2>
+        <ol className="list-decimal pl-6 space-y-2">
+          <li>Set how many names you want per run (1–24).</li>
+          <li>Click <strong>Generate names</strong> to get a fresh batch of legion, regiment, and faction names.</li>
+          <li>Decide your force&apos;s scale and era, then keep the names whose unit noun and tone match (a Host for an ancient horde, a Corps for a modern army).</li>
+          <li>Use the Copy button to save the list into your campaign notes, army roster, or manuscript.</li>
+          <li>Run again for more options — there is no limit, no account, and no download.</li>
+        </ol>
+        <p>
+          Generation happens entirely in your browser. Your settings and the names you create are never sent to a server, so your factions and battle plans stay private until you choose to share them.</p>
+
+        <h2>Tips for Picking the Right Army Name</h2>
+        <p>
+          Say the name like a battle cry — army names get shouted across a field, chanted by troops, and printed on a banner, so a name that mumbles will not stick. Match the unit noun to the scale (do not call a warband a Grand Legion unless the irony is the point), and match the epithet to the faction&apos;s identity: an honorable order earns words like Dawn, Oath, and Silver; a brutal horde earns Ash, Blood, and Ruin. If you are naming several rival forces, generate one big batch and deliberately pick contrasting registers so each army sounds like a distinct culture rather than a reskin of the last.
+        </p>
+        <p>
+          When in doubt, anchor the name to something concrete in your world — a founding leader, a famous battle, a sigil animal, a home region. &quot;The Vanguard&quot; is fine; &quot;the Crimson Vanguard of Therin&quot; is memorable. That extra layer of place or person is exactly what separates a generic label from a name your audience will repeat.</p>
+
+        <h2>What This Tool Does and Does Not Do</h2>
+        <ul>
+          <li>It generates names for fictional armies, legions, regiments, orders, and factions for worldbuilding, wargames, and campaigns.</li>
+          <li>It focuses on the name of the force as a whole, not on individual soldier names — though results work well as unit callsigns too.</li>
+          <li>It does not reproduce real-world military units as a database — output is for original creative use.</li>
+          <li>It does not store your generated list or settings; everything runs locally in your browser.</li>
+        </ul>
+
+        <h2>Final Notes</h2>
+        <p>
+          From the Imperial Legion to the Crimson Vanguard, the best army names follow a logic anyone can wield: name the force by its banner, its trait, its leader, or its home, then pair an evocative epithet with a unit noun that fits the scale and era. This army name generator gives you that pool instantly, drawing on real martial vocabulary — legion, host, brigade, vanguard, order, guard — so the names feel earned rather than invented on the spot. Generate a batch, lean on the fantasy, sci-fi, and historical notes above, and you will end up with a banner worth marching under.
         </p>
       </div>
     </section>
@@ -199,30 +140,30 @@ function createWriteUp() {
 }
 
 const pageFaqs: FaqItem[] = [
-  { category: 'General', question: 'What is a Army name generator?', answer: 'A Army name generator is an online tool that creates squad and unit names for Army and other games and fiction. You get unique Army name ideas at the click of a button. The generator combines curated military-style words at random in your browser so each run produces new combinations. This free Army name generator runs locally with no sign-up and does not send generated names to any server. Always check your game or story for availability before committing to a name.' },
-  { category: 'Usage', question: 'How do I use the Army name generator?', answer: 'Set how many names you want per run (1–24), click "Generate names" to get a new list of character name ideas, then use the Copy button to copy all names to your clipboard. Paste into a notes app and check your game or story for availability. Run again for more options; no sign-up is required. The Army name generator runs in your browser so your settings and generated names are not sent to any server. Building a shortlist of five to ten options before checking availability is a good habit.' },
-  { category: 'General', question: 'Is the Army name generator free?', answer: 'Yes. This Army name generator is free to use in your browser. You can generate Army name ideas as often as you like without creating an account or paying. The tool runs locally on your device and does not require a download. There is no daily or total limit on how many times you can run the generator.' },
-  { category: 'Use cases', question: 'Can I use the names for Steam?', answer: 'Yes. The Army name generator produces username ideas that you can use on Steam. Names must be unique on the platform, so always check Steam\'s availability before committing. Run the generator multiple times to build a shortlist of character name ideas, then check which names are available on Steam. The tool does not reserve or validate names; it only suggests combinations for you to verify on the platform.' },
-  { category: 'Privacy', question: 'Is my data sent to a server when I use the Army name generator?', answer: 'No. This Army name generator runs in your browser. When you set the number of names and click generate, the names are created locally on your device. Your choices and the generated Army name ideas are not sent to our servers. We do not store your inputs or the generated list. Generation is fully local and private.' },
-  { category: 'Compatibility', question: 'Does the Army name generator work on mobile?', answer: 'Yes. The Army name generator runs in a web browser and works on desktop, tablet, and phone. You do not need to install an app. Open the page, choose how many names you want, then generate. On a phone you can generate a short list and copy it into notes or check availability on Steam\'s app. The tool is responsive and works on any device with a modern browser.' },
-  { category: 'Limits', question: 'How many names can I generate with the Army name generator?', answer: 'You can request 1–24 names per run with this Army name generator. If you need more than 24 character name ideas, run the generator again; each run produces a new random set. There is no daily or total limit. Paste multiple runs into one document and remove duplicates if needed. The batch size is designed to keep the list manageable while giving you enough Army name options to shortlist.' },
-  { category: 'Usage', question: 'Can I copy the names from the Army name generator?', answer: 'Yes. Use the Copy button on this Army name generator to copy all generated names to your clipboard. Paste into a notes app or document. The names are plain text, one per line, so they work in any editor or form. Check your game or story for availability before choosing a name. Copying is the intended way to save your shortlist of character name ideas.' },
-  { category: 'General', question: 'Do I need an account to use the Army name generator?', answer: 'No. This Army name generator works without sign-up or login. The tool runs entirely in your browser. You do not need to create an account on our site to use it. Open the page, set how many Army name ideas you want, click generate, and copy the results. No email, password, or registration is required.' },
-  { category: 'Use cases', question: 'Can I use the Army name generator for other platforms?', answer: 'Yes. The names work as ideas for any gaming or social platform—Discord, Xbox, PlayStation, or others. The Army name generator is built for Steam-style character names but the output can inspire usernames elsewhere. Check each platform\'s availability; names must be unique on each service. The generator does not check availability for you, so always verify on the platform where you plan to use the name.' },
-  { category: 'Privacy', question: 'Do you store the names I generate with the Army name generator?', answer: 'No. Generation happens in your browser. We do not receive or store the Army name ideas or your settings. The Army name generator runs locally on your device. You can use the tool in a private or incognito window if you prefer. If you refresh the page, the last generated list is cleared unless you have already copied it.' },
-  { category: 'Limits', question: 'Can I get more than 24 names from the Army name generator?', answer: 'Each run of this Army name generator gives up to 24 names. To get more character name ideas, run the generator again; each run produces a new random set. You can paste multiple runs into one document and then remove duplicates. There is no daily or total limit. Batching runs is the intended workflow when you need a large pool of Army name options.' },
-  { category: 'General', question: 'Why "Steam" specifically in a Army name generator?', answer: 'Army is a major gaming platform, and people often search for Army name ideas and character name generators. The Army name generator serves that intent and produces names that fit Army and similar gaming environments. The same ideas work for other platforms—Discord, Xbox, PlayStation—as inspiration. Use the names as character names wherever you need a unique username; always check availability on the platform you choose.' },
-  { category: 'Use cases', question: 'Can I use the Army name generator for esports?', answer: 'Yes. Use the Army name generator as inspiration for in-game names or stream handles. Run it multiple times to get a shortlist of character name ideas, then check availability on your platform. The tool is free and runs in your browser with no sign-up. Many esports and streamers use Army name generators to brainstorm handles before verifying availability on Steam, Twitch, or other services.' },
-  { category: 'Technical', question: 'How are the names generated in the Army name generator?', answer: 'This Army name generator uses curated military-style words and elements. When you click generate, the tool randomly combines these in your browser so each run is different. No names or settings are sent to a server. The result is for inspiration only; we do not check Army or any platform for availability. The word lists are designed to sound like gaming squad and unit names—bold, memorable, and easy to type.' },
-  { category: 'General', question: 'Are the names from the Army name generator unique?', answer: 'The names are randomly combined from our word list, so each run can produce new combinations. We do not check Army or any platform for availability. You must check yourself whether a Army name or character name is available before using it on your profile. The generator helps you discover ideas; uniqueness on a given platform depends on that platform\'s current registrations.' },
-  { category: 'Use cases', question: 'Can teachers use the Army name generator?', answer: 'Yes. Teachers can use this Army name generator for creative or tech-related activities—for example when students are learning about usernames, digital identity, or online profiles. Emphasize that the tool is for inspiration and that names must be checked for availability on any platform. The Army name generator is free and runs in the browser with no sign-up, so it is easy to use in a classroom or workshop setting.' },
-  { category: 'General', question: 'How do I cite the Army name generator?', answer: 'For academic or formal use you can cite this Army name generator as a source of inspiration for squad and unit names. The generated names are algorithm-produced; you can use them freely. A brief acknowledgment is optional. We do not require attribution. The tool is a free, browser-based utility for Army name ideas and character name brainstorming.' },
-  { category: 'Use cases', question: 'Can I use the Army name generator for a new Army account?', answer: 'Yes. When creating a new Army account you need a unique username. Run this Army name generator to get character name ideas, copy the list, then check Army for availability. Pick a name that is available and that you like. The tool runs in your browser with no sign-up. Building a shortlist of five to ten options before you start the sign-up process saves time, since many Army names are already taken.' },
-  { category: 'General', question: 'Do the names from the Army name generator work for streaming?', answer: 'Yes. The Army name generator produces username ideas that can work for streaming platforms, in-game names, or social handles. Use the names as inspiration and check your platform for availability. Run the generator multiple times to build a shortlist of options. Many streamers use Army name generators to brainstorm stream handles before checking availability on Twitch, YouTube, or other services.' },
-  { category: 'Best practices', question: 'What is the best workflow for the Army name generator?', answer: 'Open the page, set the number of names (e.g. 12 or 24), click generate, then copy the list. Paste into a notes app. Check your game or story for availability for each name you like. If your first choice is taken, try the next. Run the Army name generator again for more options. Keep a shortlist of five to ten character name ideas so you have backups. The tool is free and runs in your browser with no sign-up.' },
-  { category: 'Best practices', question: 'Should I run the Army name generator multiple times?', answer: 'Yes. Running the Army name generator multiple times is the intended workflow when you want a large pool of Army name ideas. Paste each run into one document and remove duplicates if any appear. Then check availability on your game or story for each name you like. Having a shortlist saves time compared to checking one idea at a time. There is no daily or total limit on how many times you can run the generator.' },
-  { category: 'Troubleshooting', question: 'Why is my first choice from the Army name generator taken?', answer: 'Popular squad and unit names are often already in use on Army and other platforms. The Army name generator does not check availability; it only suggests combinations. Always have a shortlist of five to ten options so you have backups. Run the generator again for more Army name ideas and check availability on your platform before committing. This is normal when using any name generator for games and fiction.' },
-  { category: 'Troubleshooting', question: 'Can I use the Army name generator offline?', answer: 'Yes. Once the page is loaded, the Army name generator runs entirely in your browser and does not require a network connection to generate names. You can generate character name ideas offline. Copying and pasting also works offline. You will need a connection only to open the page initially and to check availability on Army or another platform.' },
+  { category: 'General', question: 'What is an army name generator?', answer: 'An army name generator is a browser tool that creates names for fictional fighting forces — legions, regiments, orders, mercenary companies, and entire factions. It pairs evocative martial epithets (Iron, Crimson, Ashen, Eternal) with unit nouns (Legion, Host, Brigade, Vanguard, Order) so the results sound like a real war banner. It is built for naming the force itself, not individual soldiers, and it runs locally with no sign-up while storing nothing.' },
+  { category: 'Naming style', question: 'How are real and fictional armies named?', answer: 'Armies are usually named one of four ways: by the nation or banner they serve (the Imperial Legion), by a defining trait or ideology (the Iron Brigade, the Crimson Vanguard), by their leader (the Black Company, the Ten Thousand), or by their home region (the Northmen, the Highland Watch). The strongest names often stack two of these, like the Iron Legion of Karthos, which pairs a trait with a place.' },
+  { category: 'Naming style', question: 'What is the formula for a good army name?', answer: 'Most strong army names reduce to an epithet plus a unit noun: Crimson + Vanguard, Iron + Legion, Ashen + Host. The epithet sets the mood and the unit noun sets the scale and era. Swap either half and the whole feel shifts. Adding a third layer — a place or founder, as in "the Crimson Vanguard of Therin" — turns a generic label into a memorable name.' },
+  { category: 'Naming style', question: 'What martial words make good unit nouns?', answer: 'Each unit noun carries a built-in scale and flavor. Legion, Host, and Horde feel huge and ancient. Brigade, Regiment, Division, and Corps feel modern and organized. Vanguard, Phalanx, and Shieldwall feel front-line and tactical. Order, Guard, Watch, and Sentinels feel sworn and elite. Company, Band, and Free Company feel small, mercenary, or irregular.' },
+  { category: 'Naming style', question: 'What is the difference between a host, a legion, and a horde?', answer: 'A host is a poetic, sweeping word for an entire army and reads as old or epic. A legion implies a large, disciplined, often imperial formation with Roman roots. A horde implies overwhelming numbers but loose discipline — good for raiders, nomads, or monstrous armies. Choosing among them instantly signals whether your force is orderly or chaotic.' },
+  { category: 'Structure', question: 'How does military unit hierarchy affect naming?', answer: 'Modern forces nest from largest to smallest: army > corps > division > brigade > regiment > battalion > company > platoon > squad. An army is tens of thousands, a regiment a few thousand, a company about a hundred, a squad a handful. Matching your unit noun to the actual size keeps a name believable — call a dozen raiders a Grand Legion only if the irony is the point.' },
+  { category: 'Fantasy', question: 'How do I name a fantasy army?', answer: 'Fantasy forces lean on banners, oaths, beasts, and the elements. Pair vocabulary like steel, blood, shadow, dawn, frost, and flame with nouns like Legion, Order, Host, and Guard. Heraldic colors (crimson, sable, argent) and sigil animals (wyrm, raven, lion, wolf) anchor a force to a coat of arms — "the Sable Ravens" or "the Dawnbreak Host" imply a sworn cause at a glance.' },
+  { category: 'Sci-fi', question: 'How do I name a sci-fi army or faction?', answer: 'Science-fiction forces trade banners for designations and grim ideology. Use numbered codes (the 501st Legion, Strike Force Hammerfall, the 7th Fleet) alongside cold epithets like Void, Nova, Reaper, Specter, and Eclipse. A useful trick is to keep the unit noun modern (corps, division, fleet, strike force) while the epithet stays cosmic — "the Void Vanguard" reads far-future without losing military structure.' },
+  { category: 'Historical', question: 'How do I name a historical or modern-style army?', answer: 'Grounded forces use numbered units, place names, and earned nicknames. Real regiments carry both a formal designation and a battle-won epithet — the Old Guard, the Devil Dogs, the Desert Rats. Imitate that two-layer pattern: pair "the 9th Regiment" with "the Ironsides." For antiquity, lean on Latinate roots like legio, cohort, praetorian, and sentinel.' },
+  { category: 'Use cases', question: 'Can I use this for worldbuilding and novels?', answer: 'Yes — naming the standing forces of each faction is core worldbuilding. Contrast helps readers keep factions straight: the disciplined Iron Legion versus the savage Bloodfang Horde tells you who is who before a battle starts. Generate a batch, attach a one-line origin (founder, oath, home region), and the name carries the rest of the worldbuilding for you.' },
+  { category: 'Use cases', question: 'Can I use this for Warhammer-style wargames?', answer: 'Yes. Miniature wargames practically demand a custom army name to go with a paint scheme. A named force — the Crimson Vanguard, the Ashen Order — makes a painted collection feel like yours rather than a generic faction. Generate names, pick one whose tone matches your color scheme, and use it across your army list and battle reports.' },
+  { category: 'Use cases', question: 'Can I use this for a D&D or tabletop campaign?', answer: 'Yes. The mercenary company the party joins, the empire whose army they fight, the knightly order they aspire to — all land harder with a real name. Generate a batch, decide the force\'s scale and alignment, then keep the names whose epithet matches: an honorable order earns words like Dawn and Oath, a brutal warband earns Ash and Ruin.' },
+  { category: 'Use cases', question: 'Can I use this to name a clan or guild army?', answer: 'Yes. Online clans and guilds borrow the same martial register to brand their roster of fighters. A name like "the Iron Vanguard" or "the Eclipse Legion" gives a guild a banner and a battle cry. Generate several options and pick one that is easy to shout in voice chat and looks good on a tag or emblem.' },
+  { category: 'Naming style', question: 'What epithets work best for an army name?', answer: 'The epithet should match the faction\'s identity. Iron, steel, and ironclad signal endurance. Crimson, blood, and scarlet signal ferocity. Ashen, grim, and ruin signal grimness or loss. Dawn, silver, and eternal signal honor or hope. Void, nova, and eclipse signal sci-fi menace. Pick the adjective that captures what the force stands for, then pair it with a fitting unit noun.' },
+  { category: 'Best practices', question: 'How do I make several armies sound distinct?', answer: 'Generate one large batch, then deliberately pick contrasting registers so each force reads as a different culture. Give one a disciplined, Latinate name (the Praetorian Order), another a savage one (the Bloodfang Horde), and a third a regional one (the Northwatch). Varying the unit noun, the epithet flavor, and the scale keeps rival armies from sounding like reskins of each other.' },
+  { category: 'Best practices', question: 'How do I make an army name more memorable?', answer: 'Say it like a battle cry — army names get shouted, chanted, and printed on banners, so a name that mumbles will not stick. Then anchor it to something concrete: a founding leader, a famous battle, a sigil animal, or a home region. "The Vanguard" is fine; "the Crimson Vanguard of Therin" is memorable. That extra layer of place or person is what audiences repeat.' },
+  { category: 'Usage', question: 'How do I use this army name generator?', answer: 'Set how many names you want (1–24) and click Generate names. Decide your force\'s scale and era, then keep the results whose unit noun and tone fit — a Host for an ancient horde, a Corps for a modern army. Use the Copy button to save the list into your campaign notes, army roster, or manuscript, and run again for more. There is no limit, account, or download.' },
+  { category: 'Usage', question: 'Can I edit or combine the generated names?', answer: 'Absolutely. The output is a starting point. Take the epithet from one result and the unit noun from another, swap in your world\'s place name, or add a founder\'s name out front. Many writers generate a batch, mix and match the halves, and then attach a region or sigil to land on the final banner.' },
+  { category: 'Structure', question: 'Should an army name be singular or plural?', answer: 'Both work and they read differently. Singular formations (the Iron Legion, the Crimson Order) feel like one unified body with a chain of command. Plural names (the Sable Ravens, the Northmen, the Immortals) feel like a body of individuals or a famous group of warriors. Match the form to whether you want to emphasize the institution or the people in it.' },
+  { category: 'Technical', question: 'How are the army names generated?', answer: 'The generator combines curated martial vocabulary — epithets like Iron, Crimson, and Ashen with unit nouns like Legion, Host, Brigade, Vanguard, and Order — and shuffles them at random in your browser. Each run produces a fresh set of legion, regiment, and faction names. Nothing is sent to a server; generation is entirely local.' },
+  { category: 'Privacy', question: 'Is my data sent to a server?', answer: 'No. Everything runs in your browser. When you click generate, the army names are created on your device. Your settings and the generated list are never sent to our servers and nothing is stored. You can brainstorm faction names in a private window and your worldbuilding stays yours until you choose to share it.' },
+  { category: 'Limits', question: 'How many army names can I generate at once?', answer: 'You can request 1–24 names per run. For more, just run it again — each run produces a fresh random set of force names and there is no daily or total limit. Paste several runs into one document if you want a large pool of legion, regiment, and faction names to shortlist from for your world.' },
+  { category: 'Compatibility', question: 'Does it work on mobile?', answer: 'Yes. The army name generator runs in any modern browser on desktop, tablet, or phone with no app install. Generate a batch of faction names on your phone during a session, copy them into your campaign notes, and shortlist banners wherever you are planning your world or your wargame.' },
+  { category: 'General', question: 'Is the army name generator free?', answer: 'Yes, it is completely free with no account, sign-up, or download. Generate as many legion, regiment, order, and faction names as you like, as often as you like, for worldbuilding, wargames, novels, and campaigns.' },
 ];
 
 export default async function ArmyNameGeneratorPage() {

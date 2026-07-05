@@ -18,8 +18,8 @@ const toolSlug = 'transformers-name-generator';
 
 export async function generateMetadata(): Promise<Metadata> {
   const title = 'Transformers Name Generator';
-  const description = 'Generate Transformers-style character names and title maker names for fan fiction, games, and creative writing.';
-  const seoTitle = 'Transformers Name Generator - Character & Title Maker';
+  const description = 'Free Transformers name generator for Autobot, Decepticon, and Beast Wars OCs. Build Cybertronian names tied to an alt-mode or trait, with Prime titles and -tron suffixes — in your browser, no sign-up.';
+  const seoTitle = 'Transformers Name Generator – Autobot, Decepticon & Cybertronian OC Names';
   return buildToolMeta({ title, description, seoTitle, urlPath: `/${toolSlug}` });
 }
 
@@ -27,120 +27,124 @@ function createWriteUp() {
   return (
     <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
-        <p className="text-slate-700 font-medium">
-          A Transformers name generator is a free online tool that creates character names and title-style names inspired by the Transformers franchise. Get 1–24 names per run, with an option to include epic title-style phrases (e.g., &quot;Dark of the Moon&quot;). No sign-up; runs in your browser.
+        <h2>Transformers Name Generator – Autobot, Decepticon &amp; Cybertronian OC Names</h2>
+        <p>
+          This Transformers name generator builds Cybertronian names the way the franchise does: a single bold noun or compound that telegraphs what a bot turns into or what it does. Optimus Prime leads, Megatron conquers, Soundwave listens, Starscream schemes, Bumblebee scouts, Shockwave calculates, Ironhide endures. Every name is a job description in disguise. Whether you are designing an Autobot for a fan comic, a Decepticon flier for a role-play server, or a Beast Wars-era predator with an animal alt-mode, the tool produces ready-to-use names in your browser. There is no sign-up, nothing is stored, and you can spin up as many batches as a war for Cybertron demands.
+        </p>
+        <p>
+          Transformer names are not random. They follow a tight logic: the sound should match the alt-mode and the temperament. A heavy ground-pounder reads with hard, blunt syllables; a jet reads with a hiss and a streak of menace; a Prime reads with weight and a title. This page explains those conventions so the names you keep actually sound Cybertronian — and so an OC you create can stand on a battlefield beside canon characters without sounding out of place.
         </p>
 
-        <h2>What Is a Transformers Name Generator?</h2>
-        <p>A Transformers name generator is an online tool that creates character names and title-style names inspired by the Transformers franchise—the robots, factions, and epic story titles that fans know from film, TV, comics, and games. Fans use it for fan fiction, roleplay, tabletop and video games, and creative writing. Whether you need a robot-style character name (like Bumblebee, Starscream, or Ironhide) or a title maker–style name (e.g., &quot;Dark of the Moon,&quot; &quot;Rise of the Fallen&quot;), a Transformers name generator can produce a list of ideas quickly. The tool combines prefixes, suffixes, and title phrases so you get both classic character-style names and epic title-style names in one place. People search for &quot;transformer name generator,&quot; &quot;name generator transformers,&quot; or &quot;transformers title maker&quot; and mean the same kind of tool: one that outputs names that fit the franchise style for creative use.</p>
-        <p>Writers, GMs, and content creators use a Transformers name generator when they need many names at once or want to explore options without inventing every name by hand. The generator runs in your browser with no sign-up.</p>
+        <h2>How Cybertronian Names Are Built</h2>
+        <p>
+          From the 1984 cartoon onward, the writers named bots after function, alt-mode, and attitude. Learn the pattern and your generated names stop sounding made-up and start sounding canon:
+        </p>
+        <ul>
+          <li><strong>Name as function.</strong> Soundwave is a spy who records and replays; Shockwave is a cold logician; Wheeljack is an inventor on wheels; Ratchet is a medic. The name announces the role before the bot transforms.</li>
+          <li><strong>Name as alt-mode.</strong> Bumblebee is small and yellow like the VW Beetle he becomes; Optimus Prime is a long-haul truck; Starscream and Skywarp are jets; Ravage is a panther. Tie the name to what the bot turns into and it instantly reads right.</li>
+          <li><strong>Compound nouns.</strong> Iron + hide, Sound + wave, Star + scream, Shock + wave, Wind + charger, Thunder + cracker. Two strong words slammed together is the single most reliable Transformers naming move.</li>
+          <li><strong>Trait words.</strong> Ravage, Rampage, Mixmaster, Brawl, Onslaught — verbs and aggressive nouns work especially well for Decepticons, whose names tend to threaten rather than describe.</li>
+        </ul>
+
+        <h2>Autobot Names vs Decepticon Names</h2>
+        <p>
+          The faction split is the most important naming decision you make. An Autobot and a Decepticon should sound different even before you read their bios, because the franchise codes heroism and villainy into the syllables:
+        </p>
+        <ul>
+          <li><strong>Autobots</strong> lean on ground vehicles, protection, and dependability. Their names sound sturdy and earnest: Ironhide, Trailbreaker, Hound, Jazz, Prowl, Bumblebee, Wheeljack, Hot Rod. Car and truck alt-modes dominate, and the tone is rugged or heroic rather than cruel.</li>
+          <li><strong>Decepticons</strong> lean on jets, weapons, and predators. Their names hiss, threaten, or boast: Megatron, Starscream, Skywarp, Thundercracker, Shockwave, Soundwave, Blitzwing, Devastator. Aircraft and gun alt-modes dominate, and the tone is menacing or arrogant.</li>
+          <li><strong>The sound test.</strong> Say the name aloud. If it sounds like something you would trust to pull you out of a wreck, it is an Autobot. If it sounds like something diving out of the sun with cannons live, it is a Decepticon. Generate a batch and sort each result into a faction by ear.</li>
+        </ul>
+        <p>
+          When you build an original character, pick the faction first, then keep only the names whose sound fits. A noble Autobot named like a jet-fighter or a Decepticon named like a kindly medic will read as a mistake — unless the mismatch is the point of your story.
+        </p>
+
+        <h2>The &quot;Prime&quot; Title and Rank Names</h2>
+        <p>
+          &quot;Prime&quot; is not a surname — it is a rank, carried by the bearer of the Matrix of Leadership: Optimus Prime, Sentinel Prime, Rodimus Prime, Nova Prime. Treat it like a crown, not a family name. If your OC is a faction leader or a chosen successor, appending &quot;Prime&quot; signals that weight instantly; if they are a rank-and-file soldier, leave it off so the title keeps its meaning. The Decepticon mirror is the self-anointed title — Megatron eventually becomes Galvatron, and lieutenants jockey for command rather than inherit it. Use rank words (Magnus, as in Ultra Magnus; Maximus; Prime) sparingly and only when the character has earned the gravity they carry.
+        </p>
+
+        <h2>Suffixes: -tron, -us, and the Cybertronian Sound</h2>
+        <p>
+          A handful of endings instantly read as &quot;robot from Cybertron.&quot; The most famous is <strong>-tron</strong> (Megatron, Galvatron, Cybertron itself, Metroplex-adjacent coinages), which lends a mechanical, imposing finish — strong for leaders and heavy units. The <strong>-us</strong> ending (Optimus, Nemesis Prime, Tarantulas) carries a faux-Latin, almost classical authority that suits Primes and ancient bots. Other reliable Cybertronian sounds include hard one-syllable verbs (Blast, Crash, Smash, Ravage), weather and energy words (Thunder, Storm, Blitz, Surge, Energon-rooted coinages), and metal or machine words (Iron, Steel, Gear, Cog, Forge). The generator mixes these so each run yields names that sit in the franchise&apos;s sound-world rather than drifting into generic sci-fi.
+        </p>
+
+        <h2>Beast Wars: Naming Animal Alt-Modes</h2>
+        <p>
+          Beast Wars swapped vehicles for organic alt-modes, and the naming shifted with it. Maximals and Predacons are named for the animals they become, usually as a compound or a punning twist: Cheetor (cheetah), Rattrap (rat), Rhinox (rhino), Tigatron (tiger + -tron), Dinobot (dinosaur), Terrorsaur, Tarantulas, Waspinator, Blackarachnia. If your OC has a beast mode, name it for the creature and bend the spelling toward Cybertron — add a -tron, a -saur, or an -inator, or fuse the animal with a trait (Razorbeak, Stinglash, Manterror). This keeps a Beast Wars character distinct from a vehicle-based Generation 1 bot while still sounding unmistakably Transformers. Maximals descend from Autobots and lean heroic; Predacons descend from Decepticons and lean predatory — the faction tone-coding survives the jump to animals.
+        </p>
+
+        <h2>Building an Original Transformer (OC)</h2>
+        <p>
+          For fan fiction, comics, and role-play, the name is the first thing readers judge. A strong Transformers OC name does three jobs at once: it declares a faction (Autobot or Decepticon, Maximal or Predacon), it hints at the alt-mode or signature ability, and it carries the right tone for the bot&apos;s personality. Generate a batch, then ask of each name: could it appear in a roll-call beside Optimus, Megatron, or Dinobot without anyone blinking? If yes, it is in the right register.
+        </p>
+        <p>
+          A common approach is to lock the alt-mode first — say, a search-and-rescue helicopter or an armored excavator — and let the name grow from it (Skylift, Quarrybreaker). Then layer in a trait word for color: a reckless flier might become Recklash, a stoic guardian might become Stonewatch. If your OC is meant to join a combiner team (like the Constructicons forming Devastator), keep the component names thematically linked so they read as a set.
+        </p>
 
         <h2>How to Use This Transformers Name Generator</h2>
-        <p>Follow these steps to get names:</p>
         <ol className="list-decimal pl-6 space-y-2">
           <li>Set how many names you want per run (1–24).</li>
-          <li>Choose whether to include title-style names: turn &quot;Include title-style names&quot; on for a mix of character names and epic title phrases, or off for character names only.</li>
-          <li>Click &quot;Generate names&quot; to get a new list.</li>
-          <li>Use the Copy button to copy all names to your clipboard, then paste into your story, game doc, or spreadsheet.</li>
-          <li>Run the generator again for more options; no account or login required.</li>
+          <li>Click <strong>Generate names</strong> to get a fresh batch of Cybertronian-style names.</li>
+          <li>Skim for names that fit your chosen faction and alt-mode, then use the Copy button to save the whole list.</li>
+          <li>Paste into your story notes, character sheet, or comic bible and shortlist your favorites.</li>
+          <li>Run again for more options — there is no limit, no account, and no download.</li>
         </ol>
-        <p>The tool runs entirely in your browser, so your settings and generated names are not sent to any server.</p>
+        <p>
+          Generation happens entirely in your browser. Your settings and the names you create are never sent to a server, so your OC roster stays private until you choose to share it.
+        </p>
 
-        <h2>Transformers Character Names vs Title Maker Names</h2>
-        <p>Character names in the franchise often sound bold and mechanical: single-word or compound names (Megatron, Ironhide, Bumblebee, Starscream). Title-style names are phrases that sound like movie or episode titles (e.g., &quot;Dark of the Moon,&quot; &quot;Rise of the Fallen&quot;) and are used for stories, episodes, or creative projects. This generator supports both. Turn on &quot;Include title-style names&quot; to get a mix of character names and title-style phrases; turn it off for character-style names only. That way you can use one tool whether you search for &quot;transformer name generator,&quot; &quot;name generator transformers,&quot; or &quot;transformers dark of the moon title maker.&quot;</p>
+        <h2>Tips for Picking the Right Name</h2>
+        <p>
+          Say the name out loud and listen for the faction. Autobot names should land sturdy and trustworthy; Decepticon names should land sharp and threatening. Match the name to the alt-mode — a tank should not be called Skydart, and a jet should not be called Bulldozer, unless you want the irony. Avoid accidentally reusing a canon full name (you do not want an OC literally called Optimus Prime), but borrowing the franchise&apos;s building blocks — a -tron suffix, an Iron- or Star- prefix, a weather word — is exactly how the real names were made, so lean into them.
+        </p>
+        <p>
+          If you are naming a whole squad, generate a batch and pick names that contrast within a shared theme — the way the Aerialbots all evoke flight (Silverbolt, Air Raid, Skydive, Slingshot, Fireflight) while each one is distinct. That shared-theme-with-variation is exactly what makes a combiner team or a strike force feel like a unit rather than a pile of unrelated bots.
+        </p>
 
-        <h2>When to Use a Transformers Name Generator</h2>
-        <p>Use this Transformers name generator when you need franchise-style names quickly and in bulk. Key use cases:</p>
-        <ul className="list-disc pl-6 space-y-1">
-          <li>Fan fiction: name OCs, factions, or locations in Transformers-inspired worlds</li>
-          <li>Tabletop and video games: name NPCs, factions, or missions</li>
-          <li>Roleplay and LARP: character names and story titles</li>
-          <li>Creative writing: robot or sci-fi character names in original settings</li>
-          <li>YouTube and social content: titles, character lists, or project names</li>
+        <h2>What This Tool Does and Does Not Do</h2>
+        <ul>
+          <li>It generates Transformers-style Autobot, Decepticon, and Beast Wars names for OCs, fan fiction, comics, and role-play.</li>
+          <li>It does not reproduce the official cast as a lookup database — output is original, Cybertronian-flavored material for your own use.</li>
+          <li>It does not store your generated roster or settings; everything runs locally in your browser.</li>
+          <li>It does not check whether a name is taken on any game, forum, or social platform — verify that yourself if you plan to use a name as a handle.</li>
         </ul>
-        <p>It is ideal when you need many names at once or want to explore different styles without inventing every name by hand.</p>
 
-        <h2>Transformers Naming Style: Prefixes, Suffixes, and Title Phrases</h2>
-        <p>Franchise character names often use strong syllables, mechanical or martial imagery (iron, star, prime, strike), and memorable rhythm. Title-style names often use patterns like &quot;[Something] of the [Moon/Cybertron/Fallen]&quot; or &quot;Rise of the [X].&quot; This Transformers name generator uses curated lists of prefixes, suffixes, and title phrases and combines them at random so you get new combinations that fit the style. The result is for creative use only; it is not official and does not replace your own creativity. For formal or commercial use avoid implying endorsement by the franchise.</p>
-
-        <h2>Privacy and Local Processing</h2>
-        <p>This Transformers name generator runs in your browser. When you set the number of names and the title-style option and click generate, the names are created locally on your device. Your choices and the generated names are not sent to our servers. You can use it in a private or incognito window if you prefer. No account or login is required. We do not store your inputs or the generated name list.</p>
-
-        <h2>Transformers Name Generator for Fan Fiction and Worldbuilding</h2>
-        <p>Writers building Transformers-inspired or robot-themed worlds often need many character and faction names. Run the generator multiple times with title-style names on or off to build a roster. Keep a naming document so you do not reuse the same name for two characters and so faction names stay consistent. For mixed-genre projects you can pair this tool with other naming tools for different cultures or creature names; when you paste names from the web into a manuscript or spreadsheet, a plain-text tool can keep formatting clean.</p>
-
-        <h2>Copying and Exporting Names</h2>
-        <p>After you generate a list, use the Copy button to copy all names to your clipboard in a simple text format, one per line. Paste into Word, Google Docs, a spreadsheet, or a notes app. If you build a long list across multiple runs, paste each run into the same document and sort or deduplicate as needed. If you notice extra spaces or line breaks after pasting—for example if you combined text from a webpage—run the pasted text through a plain-text tool so formatting stays clean.</p>
-
-        <h2>Mobile and Cross-Device Use</h2>
-        <p>The Transformers name generator runs in a web browser, so it works on desktop, tablet, and phone. You do not need to install an app. Open the page, choose your settings, and generate. On a phone you can generate a short list and copy it into notes or email. Each run is independent; we do not save your history or preferences.</p>
-
-        <h2>Character Names Only vs Mix With Title-Style Names</h2>
-        <p>If you want only character-style names (e.g., Ironstrike, Stormblade), turn off &quot;Include title-style names.&quot; If you want a mix of character names and epic title phrases (e.g., &quot;Strike of Cybertron,&quot; &quot;Dark of the Moon&quot;), turn that option on. One tool covers both &quot;transformer name generator&quot; and &quot;transformers title maker&quot; search intents.</p>
-
-        <h2>Combining the Transformers Name Generator With Other Tools</h2>
-        <p>Your project may need more than one naming style. A game might use this generator for robot or faction names and another naming tool for human or other factions. A novel might mix Transformers-style names for one culture and a different naming style for another. Use each tool for its strength; when you assemble lists from multiple sources, keep a single naming document and clean pasted text (e.g. with a plain-text step) so formatting stays consistent.</p>
-
-        <h2>Why Use a Generator Instead of Picking Names Manually?</h2>
-        <p>Manually inventing dozens of franchise-style names can be time-consuming. A Transformers name generator produces many options in seconds. You can run it repeatedly, then pick the names that best fit your characters or project. For one-off names you might still brainstorm by hand; for bulk naming—a cast of characters, a list for a game, or title ideas—the generator saves time and sparks ideas.</p>
-
-        <h2>Tool Methodology and Limitations</h2>
-        <h3>How the Transformers name generator works</h3>
-        <p>The tool uses curated lists of prefixes, suffixes, and title phrases inspired by the franchise style. When you click generate, it randomly combines these in your browser so each run is different. No names or settings are sent to a server. The output is for creative use only and is not official franchise content.</p>
-        <h3>Accuracy and use-case disclaimer</h3>
-        <p>Generated names are for inspiration and creative use only. The tool does not check against official character or title lists. Some combinations may resemble existing names; many are new. Do not use the tool for official or commercial work in a way that implies franchise endorsement.</p>
-
-        <h2>Terminology: Transformer Name Generator vs Title Maker</h2>
-        <p>People sometimes search for &quot;transformer name generator,&quot; &quot;name generator transformers,&quot; or &quot;transformers title maker.&quot; This table clarifies:</p>
-        <div className="overflow-x-auto my-4">
-          <table className="min-w-full border border-slate-300 text-sm">
-            <thead>
-              <tr className="bg-slate-100">
-                <th className="border border-slate-300 px-3 py-2 text-left">Term</th>
-                <th className="border border-slate-300 px-3 py-2 text-left">Meaning</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr><td className="border border-slate-300 px-3 py-2">Transformers name generator</td><td className="border border-slate-300 px-3 py-2">Tool for character-style and/or title-style names inspired by the franchise.</td></tr>
-              <tr><td className="border border-slate-300 px-3 py-2">Transformer name generator</td><td className="border border-slate-300 px-3 py-2">Same as above; alternate phrasing.</td></tr>
-              <tr><td className="border border-slate-300 px-3 py-2">Transformers title maker</td><td className="border border-slate-300 px-3 py-2">Tool for epic title-style phrases (e.g., &quot;Dark of the Moon&quot;). This generator can do both when you enable title-style names.</td></tr>
-            </tbody>
-          </table>
-        </div>
-        <p>This page serves all these intents with one tool.</p>
-
-        <h2>Summary: Getting the Most From the Transformers Name Generator</h2>
-        <p>Use this Transformers name generator to create franchise-style character names and optional title-style phrases for fan fiction, games, roleplay, and creative writing. Set the number of names (1–24), choose whether to include title-style names, and run as often as you like. Copy results into your document or notes. The tool runs locally in your browser with no sign-up. For more naming and text tools, see our <Link href="/">homepage</Link>.</p>
+        <h2>Final Notes</h2>
+        <p>
+          Transformers is one of the most-named fandoms online — fan-comic artists, fic writers, stop-motion builders, and players of titles like War for Cybertron, Fall of Cybertron, and Transformers: Devastation all need names that fit. This Transformers name generator gives you that pool instantly, grounded in the franchise&apos;s real naming logic: function-as-name, alt-mode coding, the Autobot/Decepticon sound split, the Prime title, the -tron and -us suffixes, and the Beast Wars animal twist. Generate a batch, lean on the faction and alt-mode notes above, and you will end up with Cybertronian names that feel like they rolled off the assembly lines of Iacon — or out of the smelting pits of Kaon. For more naming and text tools, see our <Link href="/">homepage</Link>.
+        </p>
       </div>
     </section>
   );
 }
 
 const pageFaqs: FaqItem[] = [
-  { category: 'General', question: 'What is a Transformers name generator?', answer: 'A Transformers name generator is an online tool that creates character names and title-style names inspired by the Transformers franchise—the robots, factions, and epic story titles from film, TV, comics, and games. You get robot-style character names (e.g., Bumblebee, Starscream, Ironhide) and optional title-style phrases (e.g., "Dark of the Moon," "Rise of the Fallen") for fan fiction, roleplay, games, and creative writing. The tool combines prefixes, suffixes, and title phrases so you get both classic character-style names and epic title-style names in one place. People search for "transformer name generator," "name generator transformers," or "transformers title maker" and mean this type of tool. This free generator runs in your browser with no sign-up. For other fandom names try our Naruto name generator, Fallout name generator, or anime names generator; for mythology-style names the god and goddess name generator and ancient Greek name generator offer different flavors.' },
-  { category: 'Usage', question: 'How do I use the Transformers name generator?', answer: 'To use this Transformers name generator, set how many names you want per run (1–24). Then choose whether to include title-style names: turn "Include title-style names" on for a mix of character names and epic title phrases, or off for character names only. Click "Generate names" to get a new list. Use the Copy button to copy all names to your clipboard, then paste into your story, game doc, or spreadsheet. Run the generator again for more options; no account or login is required. The tool runs entirely in your browser, so your settings and generated names are not sent to any server.' },
-  { category: 'General', question: 'What is a transformers title maker?', answer: 'A "title maker" in this context means a tool that produces names or phrases that sound like story or episode titles—e.g., "Dark of the Moon," "Rise of the Fallen," "Strike of Cybertron." Fans use these for fan fiction titles, episode names, or project names. This Transformers name generator can produce both character-style names and title-style names in one tool. When you turn on "Include title-style names," you get a mix of character names (e.g., Ironstrike, Stormblade) and epic title phrases. So "Transformers name generator" and "Transformers title maker" are both covered on this page.' },
-  { category: 'General', question: 'Is the Transformers name generator free?', answer: 'Yes. This Transformers name generator is free to use in your browser. You can generate names as often as you like without creating an account or paying. The tool runs locally on your device, so there are no subscription fees or usage limits. Many transformer name generator and title maker tools online are free; this one is designed to work without sign-up and to process names in the browser for privacy.' },
-  { category: 'Use cases', question: 'Can I use the names for fan fiction?', answer: 'Yes. The Transformers name generator is designed for fan fiction, roleplay, and creative projects. The names are inspired by the franchise style—bold, mechanical, memorable—and you can use them as a starting point for OCs, factions, or locations. Run the generator multiple times to build a roster and keep a naming document so you do not reuse the same name for two characters. For mixed-genre stories you can pair this tool with other naming tools for different cultures or creature names. Avoid implying official franchise endorsement in commercial or published work.' },
-  { category: 'Technical', question: 'What are "title-style" names?', answer: 'Title-style names are phrases that sound like movie or episode titles—e.g., "Optimus of the Moon," "Strike of Cybertron," "Dark of the Moon." They use patterns such as "[Something] of the [Moon/Cybertron/Fallen]" or "Rise of the [X]." The option "Include title-style names" in this Transformers name generator adds these to the list alongside character-style names. Turn it on for a mix; turn it off to get only character-style names (e.g., Ironhide, Starscream-style). That way one tool serves both "transformer name generator" and "transformers title maker" search intents.' },
-  { category: 'Privacy', question: 'Is my data sent to a server?', answer: 'No. This Transformers name generator is designed to run in your browser. When you set the number of names and the title-style option and click generate, the names are created locally on your device. Your choices and the generated names are not sent to our servers. You can use the tool in a private or incognito window if you prefer. We do not store your inputs or the generated name list.' },
-  { category: 'Compatibility', question: 'Does it work on mobile?', answer: 'Yes. The Transformers name generator runs in a web browser, so it works on desktop, tablet, and phone. You do not need to install an app. Open the page on your device, choose how many names and whether to include title-style names, then generate. On a phone you can generate a short list and copy it into notes or email. The tool is responsive so buttons and controls work on small screens. Each run is independent; we do not save your history or preferences across devices.' },
-  { category: 'Limits', question: 'How many names can I generate?', answer: 'You can request 1–24 names per run with this Transformers name generator. If you need more than 24, run the generator again; each run produces a new random set. There is no daily or total limit—the tool runs in your browser and does not track usage. For very long lists (e.g., dozens of characters or title ideas) run the generator in batches and paste results into one document. You can then sort or deduplicate as needed.' },
-  { category: 'General', question: 'Are these official Transformers names?', answer: 'This Transformers name generator uses styles inspired by the franchise. The combinations are produced by an algorithm from curated prefixes, suffixes, and title phrases. Some names may resemble existing characters or titles; many are new combinations for creative use. The tool is not affiliated with the franchise and does not use official character or title lists. Use the output for fan fiction, roleplay, and creative projects only. For commercial or published work avoid implying endorsement by the franchise.' },
-  { category: 'Use cases', question: 'Can I use the names in a game?', answer: 'Yes. You can use names from this Transformers name generator in tabletop games, video games, and other creative or personal projects. The names are generated for general use and fit robot or sci-fi factions and characters. For commercial use avoid implying official partnership with the franchise; the tool is for inspiration only.' },
-  { category: 'General', question: 'What is the difference between "transformer name generator" and "name generator transformers"?', answer: 'Both phrases refer to the same type of tool: one that generates Transformers-style names (character names and/or title-style phrases). "Transformer name generator" and "name generator transformers" are just different word orders; search engines and users often use either. This page serves both intents with one generator. You get character-style names and, if you turn on "Include title-style names," epic title-style phrases as well. So whether you search for "transformer name generator," "name generator transformers," or "transformers title maker," this tool covers it.' },
-  { category: 'Usage', question: 'Can I copy the names to a document?', answer: 'Yes. Use the Copy button on this Transformers name generator to copy all generated names to your clipboard. Paste the result into Microsoft Word, Google Docs, a spreadsheet, or a notes app. The names are in a simple text format, one per line. If you build a long list across multiple runs, paste each run into the same document and then sort or deduplicate as needed. If you notice extra spaces or line breaks after pasting—for example if you combined text from a webpage—run the pasted text through a plain-text tool so the list stays tidy.' },
-  { category: 'General', question: 'Do I need an account?', answer: 'No. This Transformers name generator works without sign-up or login. Open the page and start generating. The tool runs entirely in your browser, so we do not need to store your email or any account data. You can use it in a private or incognito window if you prefer.' },
-  { category: 'Use cases', question: 'Can I use it for tabletop RPGs?', answer: 'Yes. GMs and players use this Transformers name generator for robot or sci-fi character names, faction names, and mission or story titles. Run the generator several times with title-style names on or off to build a roster. Keep a spreadsheet or document of names you have already used to avoid duplicates.' },
-  { category: 'General', question: 'What other name generators do you have?', answer: 'We have name generators for Naruto, Fallout, Elden Ring, anime, god and goddess, ancient Greek, species, tribe, island, and others. See our homepage for more tools.' },
-  { category: 'Privacy', question: 'Do you store the names I generate?', answer: 'No. Generation happens in your browser. We do not receive or store the names or your settings (number of names, title-style on/off). The Transformers name generator runs locally on your device, so there is no server-side log of what you generated. You can use the tool in a private or incognito window if you want to leave no trace on your device.' },
-  { category: 'Limits', question: 'Can I get more than 24 names?', answer: 'Each run of this Transformers name generator gives up to 24 names. To get more, run the generator again; each run produces a new random set. You can paste multiple runs into one document and then remove duplicates or trim the list as needed. There is no daily or total limit—the tool runs in your browser and does not track usage. For very large lists (e.g., many characters or title ideas) run the generator in batches and keep a master naming document.' },
-  { category: 'General', question: 'Why do some names sound like movie titles?', answer: 'The "Include title-style names" option adds phrases that sound like story or movie titles—e.g., "of Cybertron," "Dark of the Moon," "Rise of the Fallen." That matches searches like "transformers dark of the moon title maker" and "transformers title maker." When the option is on you get a mix of character-style names and these epic title phrases. When it is off you get only character-style names (e.g., Ironstrike, Stormblade). One tool serves both needs.' },
-  { category: 'Use cases', question: 'Can I use the names for YouTube or social media?', answer: 'Yes, for creative content. You can use names from this Transformers name generator for video titles, character lists, or project names on YouTube or social media. Avoid implying official partnership or endorsement by the franchise. The names are for fun and inspiration.' },
-  { category: 'General', question: 'Is the Transformers name generator the same as a title maker?', answer: 'On this page the same tool does both: it can generate character-style names and title-style names. So "Transformers name generator" and "Transformers title maker" are both covered here. Turn on "Include title-style names" for a mix of character names and epic title phrases (e.g., "Dark of the Moon"); turn it off for character names only. That way one tool serves users who search for a transformer name generator and users who search for a transformers title maker.' },
-  { category: 'General', question: 'How do I get character names only?', answer: 'Turn off "Include title-style names" to get only character-style names (e.g., Ironstrike, Stormblade, Bumblebee-style). When that option is off the generator outputs only character-style names and no epic title phrases. Turn "Include title-style names" on when you want a mix of character names and title-style phrases (e.g., "Strike of Cybertron," "Dark of the Moon"). So one tool covers both "transformer name generator" and "transformers title maker" use cases.' },
-  { category: 'General', question: 'Can I combine this with other generators?', answer: 'Yes. Use this Transformers name generator for robot or sci-fi names and other naming tools on our site for different characters or factions. When you assemble lists from multiple tools keep a single naming document and clean pasted text (e.g. with a plain-text step) so formatting stays consistent. See our homepage for more naming tools.' },
-  { category: 'Technical', question: 'How does the Transformers name generator create names?', answer: 'This Transformers name generator uses curated lists of prefixes, suffixes, and title phrases inspired by the franchise style—bold, mechanical, memorable. When you click generate, the tool randomly combines these elements in your browser (with a seeded random process so each run is different) to produce character-style names and, when you enable it, title-style phrases. No names or settings are sent to a server. The result is a list of new combinations that fit the Transformers vibe for creative use. The tool is not affiliated with the franchise and does not use official character or title lists.' },
+  { category: 'General', question: 'What is a Transformers name generator?', answer: 'A Transformers name generator is a browser tool that creates Cybertronian-style names in the spirit of the franchise — bold nouns and compounds that reflect a bot\'s alt-mode or trait, the way Optimus Prime, Megatron, Soundwave, and Bumblebee do. It follows the real naming logic (function-as-name, alt-mode coding, the Autobot/Decepticon sound split, -tron and -us suffixes) so the results fit OCs, fan fiction, comics, and role-play. It runs locally with no sign-up and stores nothing.' },
+  { category: 'Naming style', question: 'How are real Transformers names structured?', answer: 'Most are a single strong noun or a compound of two words that announce what the bot does or what it turns into. Iron + hide, Sound + wave, Star + scream, Shock + wave. The name doubles as a job title: Soundwave records and replays, Wheeljack invents, Ratchet repairs. Tie the sound to the alt-mode and the temperament and you have a name that reads canon rather than random.' },
+  { category: 'Naming style', question: 'Do Transformers names mean something?', answer: 'Almost always. The writers named bots after function, alt-mode, and attitude. Bumblebee is small and yellow like his Beetle alt-mode; Starscream is a screaming jet; Ravage is a panther that ravages; Shockwave is a cold, calculating energy weapon. Picking a name whose meaning matches your OC\'s vehicle mode and personality is what makes it feel Cybertronian.' },
+  { category: 'Factions', question: 'What is the difference between Autobot and Decepticon names?', answer: 'Autobot names lean on ground vehicles, protection, and dependability — Ironhide, Prowl, Hound, Jazz, Wheeljack — and sound sturdy or heroic. Decepticon names lean on jets, weapons, and predators — Megatron, Starscream, Skywarp, Blitzwing, Devastator — and sound menacing or boastful. Pick the faction first, say each generated name aloud, and keep only the ones whose tone matches.' },
+  { category: 'Factions', question: 'How do I make a name sound like an Autobot?', answer: 'Anchor it to a ground vehicle or a protective trait and keep the tone earnest and rugged. Use car, truck, and rescue alt-modes and words like iron, trail, guard, bolt, and prowl. Names like Trailbreaker, Stonewatch, or Skylift read heroic. Avoid jet-and-cannon menace unless your Autobot is a former Decepticon or a deliberate outlier.' },
+  { category: 'Factions', question: 'How do I make a name sound like a Decepticon?', answer: 'Reach for jets, weapons, and predators, and let the name threaten. Aggressive verbs and nouns work well — Ravage, Rampage, Onslaught, Blitzwing — as do hiss-heavy syllables and a -tron suffix for leaders (Megatron, Galvatron). A Decepticon name should sound like something diving out of the sun with weapons live, not something you would trust to fix you.' },
+  { category: 'Titles', question: 'What does the "Prime" title mean and when should I use it?', answer: 'Prime is a rank, not a surname — it marks the bearer of the Matrix of Leadership (Optimus Prime, Sentinel Prime, Rodimus Prime). Treat it like a crown. Give your OC the Prime title only if they lead a faction or are a chosen successor; on a rank-and-file soldier it dilutes the meaning. The same restraint applies to rank words like Magnus (Ultra Magnus) and Maximus.' },
+  { category: 'Naming style', question: 'What do the -tron and -us suffixes do?', answer: 'They instantly signal "robot from Cybertron." The -tron ending (Megatron, Galvatron, Cybertron) is mechanical and imposing, great for leaders and heavy units. The -us ending (Optimus, Tarantulas) carries a faux-Latin, classical authority that suits Primes and ancient bots. The generator mixes these endings with metal, weather, and energy words so each run lands inside the franchise\'s sound-world.' },
+  { category: 'Beast Wars', question: 'How do I name a Beast Wars character with an animal alt-mode?', answer: 'Name it for the creature and bend the spelling toward Cybertron: add a -tron (Tigatron), a -saur (Dinobot, Terrorsaur), or an -inator (Waspinator), or fuse the animal with a trait (Razorbeak, Stinglash). Maximals descend from Autobots and lean heroic; Predacons descend from Decepticons and lean predatory, so the faction tone-coding carries over from vehicles to animals.' },
+  { category: 'OC', question: 'How do I name an original Transformer (OC)?', answer: 'A strong OC name does three things: declares a faction, hints at the alt-mode or signature ability, and matches the bot\'s personality in tone. Lock the alt-mode first — a rescue helicopter, an armored excavator — then grow the name from it (Skylift, Quarrybreaker) and add a trait word for color. Test it by asking whether it could appear in a roll-call beside Optimus or Megatron without anyone blinking.' },
+  { category: 'OC', question: 'Can I borrow canon naming elements for my OC?', answer: 'Yes — borrowing the building blocks is exactly how the real names were made. A -tron suffix, an Iron- or Star- prefix, a weather word, or an animal-plus-saur fusion all ground an OC instantly. Just avoid reusing a complete canon name (do not call your OC literally Optimus Prime); combine the franchise\'s parts into something new instead.' },
+  { category: 'OC', question: 'How do I name a combiner team or squad?', answer: 'Generate a batch and pick names that share a theme but stay distinct — the way the Aerialbots all evoke flight (Silverbolt, Air Raid, Skydive, Slingshot, Fireflight) yet each reads as its own bot. Keep the component names linked (the Constructicons all sound like construction equipment before they form Devastator) so the team feels like a unit rather than unrelated bots.' },
+  { category: 'Usage', question: 'How do I use this Transformers name generator?', answer: 'Set how many names you want (1–24), click Generate names, then skim for names that fit your chosen faction and alt-mode. Use the Copy button to save the whole list, paste it into your story notes, character sheet, or comic bible, and shortlist your favorites. Run again for more — there is no limit, account, or download.' },
+  { category: 'Usage', question: 'Can I edit the generated names?', answer: 'Absolutely. The output is a starting point. Swap a prefix from one result onto a suffix from another, add a -tron to push a name toward a Decepticon leader, or trim a compound down to a single punchy word. Many builders take the front half of one result and the back half of another and fuse them into the final bot name.' },
+  { category: 'Use cases', question: 'Can I use these names for fan fiction and comics?', answer: 'Yes — original fan fiction and fan comics are the primary use. The names follow the franchise\'s conventions so your OCs stand believably beside canon characters. Use the faction and alt-mode notes to match a name to your bot\'s vehicle mode, allegiance, and personality before you write them into a scene.' },
+  { category: 'Use cases', question: 'Can I use these names for role-play servers?', answer: 'Yes. Transformers role-play communities on Discord and forums expect names that fit Cybertron. Generate Autobot or Decepticon names depending on your character\'s allegiance, pick one whose tone matches their alt-mode, and you will slot into the setting. If the server requires unique names, check the roster before claiming one.' },
+  { category: 'Use cases', question: 'Can I use these for Transformers games like War for Cybertron?', answer: 'Yes. Players of War for Cybertron, Fall of Cybertron, Transformers: Devastation, and similar titles use generators to name custom bots and online handles. Generate a batch, pick a name in the right faction register, then confirm availability in the game if it requires a unique display name.' },
+  { category: 'Use cases', question: 'Can I use a generated name as a username?', answer: 'Yes, Cybertronian names make strong gaming and social handles. Note that this tool does not check whether a name is taken — handles must be unique on each platform — so verify availability on the specific game, forum, or social network before you commit to a bot name.' },
+  { category: 'Technical', question: 'How are the names generated?', answer: 'The generator combines curated name elements built around Transformers conventions — alt-mode words, trait words, faction-flavored sounds, and -tron and -us suffixes — and shuffles them at random in your browser. Each run produces a new set. Nothing is sent to a server; generation is entirely local to your device.' },
+  { category: 'Technical', question: 'Are these the real characters from the cartoons?', answer: 'No. The generator creates original, Transformers-style names for your own use rather than reproducing the official cast as a lookup database. That is the point — you want fresh Cybertronian names for OCs and handles, not duplicates of canon bots like Optimus or Megatron that you cannot claim as your own.' },
+  { category: 'Privacy', question: 'Is my data sent to a server?', answer: 'No. Everything runs in your browser. When you click generate, the Cybertronian names are created on your device. Your settings and the generated roster are never sent to our servers and nothing is stored. You can use the tool in a private window and your OC ideas stay yours until you choose to share them.' },
+  { category: 'Limits', question: 'How many names can I generate at once?', answer: 'You can request 1–24 names per run. Need a full army for the war over Cybertron? Just run it again — each run produces a fresh random set and there is no daily or total limit. Paste several runs into one document if you want a large pool of Autobot and Decepticon names to shortlist from.' },
+  { category: 'Compatibility', question: 'Does it work on mobile?', answer: 'Yes. The generator runs in any modern browser on desktop, tablet, or phone with no app install. Generate a batch of bot names on your phone, copy it into your notes, and shortlist faction names wherever you are writing your fic or building your comic roster.' },
+  { category: 'General', question: 'Is the Transformers name generator free?', answer: 'Yes, it is completely free with no account, sign-up, or download. Generate as many Autobot, Decepticon, and Beast Wars names as you like, as often as you like — the tool runs locally in your browser, so there are no usage fees or limits.' },
+  { category: 'Best practices', question: 'How do I make a generated name sound more canon?', answer: 'Say it out loud and listen for the faction — Autobot names land sturdy and trustworthy, Decepticon names land sharp and menacing. Match the name to the alt-mode (a tank should not be called Skydart), anchor it with a real Cybertronian element like a -tron suffix or an Iron- prefix, and reserve the Prime title for a genuine leader. Those moves push a plain name firmly into the franchise.' },
 ];
 
 export default async function TransformersNameGeneratorPage() {
@@ -160,7 +164,7 @@ export default async function TransformersNameGeneratorPage() {
         {createWriteUp()}
         <div className="mt-10 space-y-3">
           <h2 className="text-2xl font-semibold text-slate-900">Frequently Asked Questions</h2>
-          <p className="text-slate-700">Common questions about the Transformers name generator and title maker.</p>
+          <p className="text-slate-700">Common questions about the Transformers name generator for Autobot, Decepticon, and Cybertronian OC names.</p>
         </div>
         <FAQSection items={pageFaqs} />
         <FaqJsonLd faqs={pageFaqs} />

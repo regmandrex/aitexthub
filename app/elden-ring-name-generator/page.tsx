@@ -18,8 +18,8 @@ const toolSlug = 'elden-ring-name-generator';
 export async function generateMetadata(): Promise<Metadata> {
   return buildToolMeta({
     title: 'Elden Ring Name Generator',
-    description: 'Free Elden Ring and Souls-style name generator for character names. Create dark fantasy name ideas in your browser with no sign-up.',
-    seoTitle: 'Elden Ring Name Generator – Souls-Style Character Name Ideas',
+    description: 'Free Elden Ring name generator for Tarnished characters, builds, and Souls-style RP names. Archaic, grim, lore-fitting names for the Lands Between — in your browser, no sign-up.',
+    seoTitle: 'Elden Ring Name Generator – Tarnished & Souls-Style Names',
     urlPath: `/${toolSlug}`,
   });
 }
@@ -28,170 +28,78 @@ function createWriteUp() {
   return (
     <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
-        <h2>Elden Ring Name Generator – character names</h2>
-        <h2>Introduction</h2>
+        <h2>Elden Ring Name Generator – Tarnished &amp; Souls-Style Names</h2>
         <p>
-          This guide explains how to use a Elden Ring name generator to create character names for Elden Ring and other games, roleplay, and creative writing. The tool runs in your browser and produces unique, memorable name ideas at the click of a button. It is designed for players who want Elden Ring name ideas quickly without sign-up or download. The generator does not store data and runs entirely in your browser. You get 1–24 names per run and can run it as often as you like. Always check your game or story for availability before committing to a name.
+          This Elden Ring name generator creates names that fit the grim, archaic tone of the Lands Between — names for your Tarnished, for a build you are sharing, for a co-op summon sign, or for a tabletop or play-by-post character set in FromSoftware&apos;s world. The Souls and Elden Ring naming style is very specific: weathered, half-Old-English, often a single evocative word or a name plus a title. The generator leans into that register so the names sound like they belong on a gravestone in Limgrave rather than on a modern leaderboard. It runs in your browser with no sign-up and stores nothing.
         </p>
         <p>
-          People search for Elden Ring name ideas and character name generators when setting up a new profile, an esports handle, or a stream name. This Elden Ring name generator serves that intent with one free, browser-based tool. Whether you need a single standout character name or a shortlist of options, the generator gives you a pool of ideas. Names must be unique on each service, so verifying availability on Elden Ring or your chosen platform is an essential step after generating ideas.
-        </p>
-
-        <h2>What Is a Elden Ring Name Generator?</h2>
-        <p>
-          A Elden Ring name generator is an online tool that creates character names suitable for Elden Ring and other games, roleplay, and creative writing. You get unique name ideas at the click of a button. The generator combines curated Elden Ring and Souls-style words and elements at random so each run produces new combinations. The output is for inspiration only; you must check your platform for availability. This free Elden Ring name generator runs in your browser with no sign-up and does not send generated names to any server.
-        </p>
-        <p>
-          The output is plain text, one name per line. You can copy the full list and paste it into a notes app, then check your game or story for availability and pick one. Many users run the Elden Ring name generator multiple times to build a shortlist before deciding. Because names are created locally, your choices stay private and nothing is stored on our servers.
-        </p>
-        <p>
-          Elden Ring name generators are useful when you are tired of reusing the same username or when you want a fresh character name that fits your style. The tool does not guarantee that a name is available; it only suggests combinations. Always confirm availability on your game or story before you commit to a new username.
+          FromSoftware names carry weight because they sound old and earned. Malenia, Blade of Miquella. Radahn, Starscourge. Godfrey, the First Elden Lord. The pattern is name-plus-epithet, with the epithet doing the storytelling. This page explains that convention so the name you pick reads as canon — and so a Tarnished you roll feels like it could share a loading screen with the demigods.
         </p>
 
-        <h2>Why This Elden Ring Name Generator Matters</h2>
+        <h2>The Elden Ring &amp; Souls Naming Style</h2>
         <p>
-          Choosing a memorable Elden Ring name or character name can be time-consuming. A Elden Ring name generator speeds up brainstorming. Instead of staring at a blank field, you get options in seconds. You can run it on a phone or desktop, copy the names you like, and then check availability on your game or story. The tool is free and does not require an account, so there is no friction to trying many ideas.
+          Across Demon&apos;s Souls, Dark Souls, Bloodborne, Sekiro, and Elden Ring, FromSoftware uses a consistent naming aesthetic. Knowing its building blocks lets you generate names that feel native rather than modern:
+        </p>
+        <ul>
+          <li><strong>Archaic and weathered.</strong> Names lean on Old English, Latin, and Norse roots — Godrick, Morgott, Rykard, Mohg. Hard consonants and old spellings (-ric, -wyn, -gar, -eth) read as ancient.</li>
+          <li><strong>Name plus epithet.</strong> The title carries the lore: &quot;the Grafted,&quot; &quot;the Omen King,&quot; &quot;Lord of Blasphemy,&quot; &quot;Blade of Miquella.&quot; Half a character&apos;s identity lives in their epithet.</li>
+          <li><strong>Single evocative words.</strong> Many characters go by one stark name — Ranni, Melina, Gideon, Blaidd. A single well-chosen word can be more in-genre than a full name.</li>
+          <li><strong>Grim, never cute.</strong> The tone is mournful and decayed. Soft, modern, or whimsical names break the spell; the Lands Between is a dying world and the names reflect it.</li>
+        </ul>
+
+        <h2>Naming Your Tarnished</h2>
+        <p>
+          The Tarnished — your character — is a name you live with across a long, hard playthrough, and many players want one that fits the world rather than the default. A strong Tarnished name is short, speakable, and slightly archaic: something a Finger Maiden might intone or that would sit comfortably on a summon sign. Generate a batch, then read each one as if Melina were addressing you by it; the ones that sound like a half-forgotten lord or a wandering knight are the keepers.
         </p>
         <p>
-          The generator also keeps your ideas private. Names are created in your browser and are not sent to our servers. You can use it in a private or incognito window if you prefer. Because generation is local, there is no risk of your shortlist being stored or logged. That matters when you are testing ideas before you settle on a final Elden Ring name or character name.
-        </p>
-        <p>
-          A good Elden Ring name generator also standardizes the workflow: set how many names you want, click generate, copy the list, and check availability. You get a consistent way to explore username ideas without writing scripts or visiting multiple sites. The output is easy to paste into notes or a document so you can track which names you have already checked on Elden Ring or other platforms.
+          If you are role-playing a build, the name can hint at the playstyle. A faith-based incantation build might carry a clerical, Latinate name; a bleed build something sharper and crueler; a mage a colder, more distant one. This is the same logic FromSoftware uses, where a character&apos;s name and epithet telegraph what they are before you fight them.
         </p>
 
-        <h2>How the Elden Ring Name Generator Works (Step by Step)</h2>
+        <h2>Building an Epithet</h2>
         <p>
-          When you open the page, you choose how many names you want per run (1–24). Clicking &quot;Generate names&quot; triggers the tool to randomly combine curated Elden Ring and Souls-style elements in your browser. Each run is independent; no names or settings are sent to a server. The result is a list of Elden Ring name ideas, one per line. You can copy the full list with one click and paste it into a notes app. To get more ideas, run the generator again. The tool does not check Elden Ring or any platform for availability—you must do that yourself.
+          The epithet is where Elden Ring naming truly comes alive. &quot;Starscourge Radahn&quot; tells you he holds back the stars; &quot;Maliketh, the Black Blade&quot; names a weapon and a duty. For your own character, generate a base name and then attach a title built from a deed, a weapon, or a curse: &quot;the Ashen,&quot; &quot;Bearer of the Frenzied Flame,&quot; &quot;Knight of the Fallen Rune,&quot; &quot;the Twice-Born.&quot; This two-part structure — name plus title — is the single most recognizable feature of FromSoftware naming, and it instantly elevates a plain name into something that sounds lore-accurate.
         </p>
+
+        <h2>Names by Region and Faction</h2>
         <p>
-          The underlying word lists are designed to sound like gaming character names: bold, memorable, and easy to type. The generator shuffles and combines these elements so that each run produces different combinations. That randomness helps you discover names you might not have thought of on your own. Because everything runs in the browser, the Elden Ring name generator works offline once the page is loaded and does not depend on a backend service.
+          The Lands Between has distinct cultures, and matching a name to a region or faction deepens an RP character:
         </p>
-        <p>
-          There are no hidden steps. You set the count, click generate, and receive a list. Copying is one click; pasting into your own document keeps your shortlist in one place. Running the Elden Ring name generator multiple times is the intended workflow when you want a large pool of character name ideas before checking availability.
-        </p>
+        <ul>
+          <li><strong>Leyndell and the Golden Order.</strong> Formal, regal, Latinate names — knights and clergy of the capital.</li>
+          <li><strong>Caelid and the Scarlet Rot.</strong> Harsher, more decayed names fitting a blighted, war-torn land.</li>
+          <li><strong>Liurnia and the Academy of Raya Lucaria.</strong> Cold, scholarly, glintstone-sorcerer names.</li>
+          <li><strong>The Badlands and the Crucible Knights.</strong> Old, primal names from before the Golden Order.</li>
+          <li><strong>Mohgwyn and the Blood cults.</strong> Sanguine, sacrificial, cruel-sounding names.</li>
+        </ul>
 
         <h2>How to Use This Elden Ring Name Generator</h2>
-        <p>Follow these steps to get Elden Ring name ideas:</p>
         <ol className="list-decimal pl-6 space-y-2">
           <li>Set how many names you want per run (1–24).</li>
-          <li>Click &quot;Generate names&quot; to get a new list of character name ideas.</li>
-          <li>Use the Copy button to copy all names to your clipboard.</li>
-          <li>Paste into a notes app or document, then check your game or story for availability and pick one.</li>
-          <li>Run again for more options; no account or download is required.</li>
+          <li>Click <strong>Generate names</strong> to get a batch of Souls-style names.</li>
+          <li>Read them aloud and keep the ones that sound archaic and weathered.</li>
+          <li>Copy the list into your notes, then pair a favorite with an epithet built from a deed or weapon.</li>
+          <li>Run again for more — no limit, no account, no download.</li>
         </ol>
         <p>
-          The Elden Ring name generator runs in your browser; your settings and generated names are not sent to any server. You can run it as often as you like. Building a shortlist of five to ten options before checking availability on Elden Ring is a good habit, since popular usernames are often taken. Have backups ready so that if your first choice is unavailable, you can try the next name on your list.
+          Everything runs locally in your browser. Your settings and generated names are never sent to a server, so your character ideas stay private.
         </p>
 
-        <h2>Elden Ring and Gamer Naming Style</h2>
+        <h2>Tips for a Lore-Accurate Name</h2>
         <p>
-          Elden Ring names and character names often use bold, memorable word combinations: action words, nicknames, or creative spellings. This Elden Ring name generator uses curated Elden Ring and Souls-style elements and combines them at random so you get new combinations that fit that style. The output is for inspiration only; the tool does not check Elden Ring or any platform for availability. You can use the names as-is or tweak spelling and punctuation to make them your own.
-        </p>
-        <p>
-          Different games and communities favor different styles. Some players prefer short, punchy character names; others like longer usernames. Running the generator multiple times gives you a mix of lengths and styles. Skim the list, mark the ones you like, and then verify each one on your game or story. The Elden Ring name generator is a starting point—your final choice should fit your personality and the rules of your platform.
+          Favor old spellings and hard endings (-ric, -gar, -wyn, -eth, -mund). Keep it short — most memorable FromSoftware names are one or two syllables you can say in a single breath. Avoid anything that sounds modern, branded, or cheerful; the moment a name feels like a gamertag, it leaves the world. If a generated name is close but too soft, swap a vowel or harden a consonant until it sounds like it was carved in stone. And when in doubt, add an epithet — a plain name carrying a grim title almost always reads as canon.
         </p>
 
-        <h2>When to Use a Elden Ring Name Generator</h2>
-        <p>
-          Use this Elden Ring name generator when you need Elden Ring or Elden Ring and Souls-style username ideas quickly. Common use cases include creating a new Elden Ring account or updating your profile name, choosing an in-game name for esports or casual play, and picking a stream or social handle. The same tool works for other platforms—Discord, Xbox, PlayStation, or social profiles—as inspiration. Names must be unique on each platform, so always check availability before committing.
-        </p>
-        <p>
-          Another good time to use a Elden Ring name generator is when you are rebranding. If you have used the same character name for years and want a fresh identity, generating a batch of ideas helps you explore options without pressure. Run the tool several times, paste results into one document, and remove duplicates. Then check Elden Ring and any other platforms you use to see which names are still available. Having a shortlist saves time compared to checking one idea at a time.
-        </p>
-
-        <h2>Use Cases in Detail: Profiles, Esports, and Streams</h2>
-        <p>
-          Players use the Elden Ring name generator when creating a new Elden Ring account or refreshing their profile name. Esports and streamers use it for in-game names or stream handles. The same tool works for other platforms—Discord, Xbox, PlayStation, or social—as inspiration; you must check each platform for availability. Run the generator multiple times to build a shortlist, then check which names are free on your platform. The Elden Ring name generator does not reserve or validate names; it only suggests combinations.
-        </p>
-        <p>
-          Content creators often need a consistent handle across Steam, streaming, and social media. Generating a batch of character name ideas lets you test different options before you commit. Copy the names you like into a single list, then check availability on each service. If one name is taken on Elden Ring but free elsewhere, you can still use it on the platforms where it is available, or use the generator again to find alternatives that work everywhere.
-        </p>
-
-        <h2>Tips for Choosing a Elden Ring Username</h2>
-        <p>
-          Pick a name that is easy to remember and type. Short character names are easier to say in voice chat and less likely to be mistyped. Run the Elden Ring name generator multiple times to get a shortlist, then check your game or story for availability. Have a few backups in case your first choice is taken. Avoid names that might be mistaken for someone else or that break platform rules. The generator gives you ideas only; the final choice is yours.
-        </p>
-        <p>
-          Consider how the name will look in different contexts: in-game, on a stream overlay, or in a friend list. Some combinations look great in one font but odd in another. If you plan to use the same handle across multiple games and platforms, check availability everywhere before you invest in branding. The Elden Ring name generator is a free way to explore options without committing until you have confirmed that your chosen Elden Ring name or character name is available.
-        </p>
-
-        <h2>Running the Elden Ring Name Generator in Batches</h2>
-        <p>
-          When you need many username ideas, run the Elden Ring name generator multiple times. Each run gives up to 24 names. Paste each run into the same document and remove duplicates if any appear. Check availability on your platform for each name you like. There is no daily or total limit; you can run the generator as often as you want. Batching is useful when you are setting up several accounts, testing ideas for a team, or simply want a large pool of character name options before making a decision.
-        </p>
-        <p>
-          Keeping a single document with all your generated Elden Ring name ideas makes it easy to track which names you have already checked. Mark names as &quot;taken&quot; or &quot;available&quot; as you go. That way you avoid re-checking the same name on Elden Ring or another platform. The Elden Ring name generator does not remember previous runs, so your document is your only record of the ideas you have collected.
-        </p>
-
-        <h2>Privacy and Local Processing</h2>
-        <p>
-          This Elden Ring name generator runs entirely in your browser. When you set the number of names and click generate, the names are created locally on your device. Your choices and the generated names are not sent to our servers. We do not store your inputs or the generated list. No account or login is required. That means your shortlist of character name ideas stays on your machine unless you choose to copy it somewhere else.
-        </p>
-        <p>
-          Because generation is local, the tool is suitable for use in private or incognito windows. If you close the tab, the generated list is gone unless you have copied it. There is no server-side log of what names you generated or how many times you ran the Elden Ring name generator. This privacy model is intentional: username brainstorming is personal, and the tool is designed so that you control where your ideas go.
-        </p>
-
-        <h2>Copying and Exporting Names</h2>
-        <p>
-          Use the Copy button to copy all generated Elden Ring name ideas to your clipboard (one per line). Paste into a notes app or document. Check your game or story for availability before committing to a name. The names are plain text, so they work in any editor or form. If you paste into a spreadsheet, each line can go in its own cell for easy tracking. The Elden Ring name generator does not export to a file; copying and pasting is the intended way to save your shortlist.
-        </p>
-
-        <h2>Limits and Batch Size</h2>
-        <p>
-          You can request 1–24 names per run with this Elden Ring name generator. There is no daily or total limit. Run the generator again for more options. No download or account is required. If you need more than 24 names in one go, run the tool multiple times and paste the results into one document. Removing duplicates is up to you; the generator does not track previous output.
-        </p>
-
-        <h2>No Download or Account Required</h2>
-        <p>
-          This Elden Ring name generator runs entirely in your browser. You do not need to download software or create an account. Open the page, set how many names you want, and click generate. The tool is free and works on desktop, tablet, and phone. That makes it easy to use when you are away from your main device or when you want to quickly generate character name ideas without installing anything.
-        </p>
-
-        <h2>Who Uses a Elden Ring Name Generator?</h2>
-        <p>
-          Players use the Elden Ring name generator when creating or updating a Elden Ring profile, or when they want a new character name for other platforms. Esports and streamers use it for in-game names or stream handles. The same tool works for Discord, Xbox, PlayStation, or social profiles—always check availability on each platform. Educators and workshop leaders sometimes use it to demonstrate username creation or digital identity in a classroom setting. No account or download is required on our site.
-        </p>
-        <p>
-          Anyone who needs a steady supply of username ideas can benefit. Whether you are a casual gamer, a competitive player, or a content creator, the Elden Ring name generator provides a fast way to explore options. The key is to treat the output as inspiration and always verify availability on Elden Ring and any other platform where you plan to use the name.
-        </p>
-
-        <h2>Getting the Most Out of the Elden Ring Name Generator</h2>
-        <p>
-          Run the generator several times and paste all results into one document. Skim for names that fit your style and check your platform for availability. Shortlist five to ten options so you have backups if your first choice is taken. The Elden Ring name generator does not check Elden Ring or any platform; you must do that yourself. When you have a shortlist, check availability one by one. Usernames are often taken on popular services, so having several options saves time.
-        </p>
-        <p>
-          Another tip is to try different batch sizes. Sometimes generating 24 names at once gives you a good mix; other times you may prefer smaller runs so you can review each set before generating more. The tool is flexible. Use it whenever you need new Elden Ring name ideas or character name inspiration. Bookmarking the page makes it easy to return when you are ready to refresh your profile or create a new account.
-        </p>
-
-        <h2>Typical Workflow for the Elden Ring Name Generator</h2>
-        <p>
-          A typical workflow is: open the page, set the number of names (e.g. 12 or 24), click generate, then copy the list. Paste into a notes app. Check your game or story for availability for each name you like. If your first choice is taken, try the next. Run the Elden Ring name generator again for more options. The whole process takes a few minutes. No account or download is required. Bookmark the page for quick access when you need new username ideas. The tool is free and runs in your browser with no sign-up.
-        </p>
-
-        <h2>What This Tool Does NOT Do</h2>
+        <h2>What This Tool Does and Does Not Do</h2>
         <ul>
-          <li>It does not check Elden Ring or any platform for username availability.</li>
-          <li>It does not reserve or hold names for you.</li>
-          <li>It does not store your generated list or your settings.</li>
-          <li>It does not connect to Steam, Discord, or any external gaming service.</li>
+          <li>It generates Elden Ring and Souls-style names for your Tarnished, builds, and RP characters.</li>
+          <li>It does not reproduce the official cast as a lookup list — output is original for your own use.</li>
+          <li>It does not store your generated names or settings; generation is fully local.</li>
+          <li>It does not check name availability in-game or on summon signs — verify that yourself if needed.</li>
         </ul>
-        <p>
-          This Elden Ring name generator produces name ideas only. It does not validate availability, create accounts, or manage your profile. You must check Elden Ring or your chosen platform yourself and follow that platform&apos;s rules when creating or changing your username. The tool is a brainstorming aid, not a replacement for checking availability.
-        </p>
 
-        <h2>Privacy and Security Notes</h2>
+        <h2>Final Notes</h2>
         <p>
-          The Elden Ring name generator runs entirely in your browser. It does not send data to a server and does not store generated values. This is helpful for quick brainstorming and offline use. If you refresh the page, the last generated list is cleared. Copy any names you want to keep before closing or refreshing.
-        </p>
-        <p>
-          For account security, never share your Elden Ring password or other credentials. The generator only suggests usernames; it does not handle login or account creation. When you check availability on Elden Ring or another platform, use the official site or app and ensure you are on a secure connection. The Elden Ring name generator is a standalone tool and does not integrate with any login system.
-        </p>
-
-        <h2>Final Summary and When to Use This Tool</h2>
-        <p>
-          The Elden Ring name generator provides a fast way to create username and character name ideas for Elden Ring and other games, roleplay, and creative writing. Set the number of names (1–24) and run as often as you like. Copy results and check your platform for availability. The tool runs locally in your browser with no sign-up. Keep a shortlist of options in case your first choice is taken. No download or account is required. The generator is free and works on any device.
-        </p>
-        <p>
-          Use this Elden Ring name generator when you need Elden Ring name ideas, character name inspiration, or a quick way to explore options before checking availability. It is best for brainstorming, rebranding, and building a shortlist. Always verify availability on Elden Ring or your chosen platform before committing to a name. The tool is a practical free resource for gaming character names.
+          Elden Ring is one of the most-named games of its generation — players name Tarnished characters, share builds, write play-by-post RP, and run Souls-inspired tabletop campaigns, all needing names that fit the tone. This generator gives you that pool instantly, grounded in FromSoftware&apos;s real naming logic: archaic roots, name-plus-epithet structure, single evocative words, and a grim, mournful register. Generate a batch, lean on the region and epithet notes above, and you will end up with names that sound like they were always part of the Lands Between.
         </p>
       </div>
     </section>
@@ -199,30 +107,29 @@ function createWriteUp() {
 }
 
 const pageFaqs: FaqItem[] = [
-  { category: 'General', question: 'What is a Elden Ring name generator?', answer: 'A Elden Ring name generator is an online tool that creates character names for Elden Ring and other games, roleplay, and creative writing. You get unique Elden Ring name ideas at the click of a button. The generator combines curated Elden Ring and Souls-style words at random in your browser so each run produces new combinations. This free Elden Ring name generator runs locally with no sign-up and does not send generated names to any server. Always check your game or story for availability before committing to a name.' },
-  { category: 'Usage', question: 'How do I use the Elden Ring name generator?', answer: 'Set how many names you want per run (1–24), click "Generate names" to get a new list of character name ideas, then use the Copy button to copy all names to your clipboard. Paste into a notes app and check your game or story for availability. Run again for more options; no sign-up is required. The Elden Ring name generator runs in your browser so your settings and generated names are not sent to any server. Building a shortlist of five to ten options before checking availability is a good habit.' },
-  { category: 'General', question: 'Is the Elden Ring name generator free?', answer: 'Yes. This Elden Ring name generator is free to use in your browser. You can generate Elden Ring name ideas as often as you like without creating an account or paying. The tool runs locally on your device and does not require a download. There is no daily or total limit on how many times you can run the generator.' },
-  { category: 'Use cases', question: 'Can I use the names for Steam?', answer: 'Yes. The Elden Ring name generator produces username ideas that you can use on Steam. Names must be unique on the platform, so always check Steam\'s availability before committing. Run the generator multiple times to build a shortlist of character name ideas, then check which names are available on Steam. The tool does not reserve or validate names; it only suggests combinations for you to verify on the platform.' },
-  { category: 'Privacy', question: 'Is my data sent to a server when I use the Elden Ring name generator?', answer: 'No. This Elden Ring name generator runs in your browser. When you set the number of names and click generate, the names are created locally on your device. Your choices and the generated Elden Ring name ideas are not sent to our servers. We do not store your inputs or the generated list. Generation is fully local and private.' },
-  { category: 'Compatibility', question: 'Does the Elden Ring name generator work on mobile?', answer: 'Yes. The Elden Ring name generator runs in a web browser and works on desktop, tablet, and phone. You do not need to install an app. Open the page, choose how many names you want, then generate. On a phone you can generate a short list and copy it into notes or check availability on Steam\'s app. The tool is responsive and works on any device with a modern browser.' },
-  { category: 'Limits', question: 'How many names can I generate with the Elden Ring name generator?', answer: 'You can request 1–24 names per run with this Elden Ring name generator. If you need more than 24 character name ideas, run the generator again; each run produces a new random set. There is no daily or total limit. Paste multiple runs into one document and remove duplicates if needed. The batch size is designed to keep the list manageable while giving you enough Elden Ring name options to shortlist.' },
-  { category: 'Usage', question: 'Can I copy the names from the Elden Ring name generator?', answer: 'Yes. Use the Copy button on this Elden Ring name generator to copy all generated names to your clipboard. Paste into a notes app or document. The names are plain text, one per line, so they work in any editor or form. Check your game or story for availability before choosing a name. Copying is the intended way to save your shortlist of character name ideas.' },
-  { category: 'General', question: 'Do I need an account to use the Elden Ring name generator?', answer: 'No. This Elden Ring name generator works without sign-up or login. The tool runs entirely in your browser. You do not need to create an account on our site to use it. Open the page, set how many Elden Ring name ideas you want, click generate, and copy the results. No email, password, or registration is required.' },
-  { category: 'Use cases', question: 'Can I use the Elden Ring name generator for other platforms?', answer: 'Yes. The names work as ideas for any gaming or social platform—Discord, Xbox, PlayStation, or others. The Elden Ring name generator is built for Steam-style character names but the output can inspire usernames elsewhere. Check each platform\'s availability; names must be unique on each service. The generator does not check availability for you, so always verify on the platform where you plan to use the name.' },
-  { category: 'Privacy', question: 'Do you store the names I generate with the Elden Ring name generator?', answer: 'No. Generation happens in your browser. We do not receive or store the Elden Ring name ideas or your settings. The Elden Ring name generator runs locally on your device. You can use the tool in a private or incognito window if you prefer. If you refresh the page, the last generated list is cleared unless you have already copied it.' },
-  { category: 'Limits', question: 'Can I get more than 24 names from the Elden Ring name generator?', answer: 'Each run of this Elden Ring name generator gives up to 24 names. To get more character name ideas, run the generator again; each run produces a new random set. You can paste multiple runs into one document and then remove duplicates. There is no daily or total limit. Batching runs is the intended workflow when you need a large pool of Elden Ring name options.' },
-  { category: 'General', question: 'Why "Steam" specifically in a Elden Ring name generator?', answer: 'Elden Ring is a major gaming platform, and people often search for Elden Ring name ideas and character name generators. The Elden Ring name generator serves that intent and produces names that fit Elden Ring and similar gaming environments. The same ideas work for other platforms—Discord, Xbox, PlayStation—as inspiration. Use the names as character names wherever you need a unique username; always check availability on the platform you choose.' },
-  { category: 'Use cases', question: 'Can I use the Elden Ring name generator for esports?', answer: 'Yes. Use the Elden Ring name generator as inspiration for in-game names or stream handles. Run it multiple times to get a shortlist of character name ideas, then check availability on your platform. The tool is free and runs in your browser with no sign-up. Many esports and streamers use Elden Ring name generators to brainstorm handles before verifying availability on Steam, Twitch, or other services.' },
-  { category: 'Technical', question: 'How are the names generated in the Elden Ring name generator?', answer: 'This Elden Ring name generator uses curated Elden Ring and Souls-style words and elements. When you click generate, the tool randomly combines these in your browser so each run is different. No names or settings are sent to a server. The result is for inspiration only; we do not check Elden Ring or any platform for availability. The word lists are designed to sound like gaming character names—bold, memorable, and easy to type.' },
-  { category: 'General', question: 'Are the names from the Elden Ring name generator unique?', answer: 'The names are randomly combined from our word list, so each run can produce new combinations. We do not check Elden Ring or any platform for availability. You must check yourself whether a Elden Ring name or character name is available before using it on your profile. The generator helps you discover ideas; uniqueness on a given platform depends on that platform\'s current registrations.' },
-  { category: 'Use cases', question: 'Can teachers use the Elden Ring name generator?', answer: 'Yes. Teachers can use this Elden Ring name generator for creative or tech-related activities—for example when students are learning about usernames, digital identity, or online profiles. Emphasize that the tool is for inspiration and that names must be checked for availability on any platform. The Elden Ring name generator is free and runs in the browser with no sign-up, so it is easy to use in a classroom or workshop setting.' },
-  { category: 'General', question: 'How do I cite the Elden Ring name generator?', answer: 'For academic or formal use you can cite this Elden Ring name generator as a source of inspiration for character names. The generated names are algorithm-produced; you can use them freely. A brief acknowledgment is optional. We do not require attribution. The tool is a free, browser-based utility for Elden Ring name ideas and character name brainstorming.' },
-  { category: 'Use cases', question: 'Can I use the Elden Ring name generator for a new Elden Ring account?', answer: 'Yes. When creating a new Elden Ring account you need a unique username. Run this Elden Ring name generator to get character name ideas, copy the list, then check Elden Ring for availability. Pick a name that is available and that you like. The tool runs in your browser with no sign-up. Building a shortlist of five to ten options before you start the sign-up process saves time, since many Elden Ring names are already taken.' },
-  { category: 'General', question: 'Do the names from the Elden Ring name generator work for streaming?', answer: 'Yes. The Elden Ring name generator produces username ideas that can work for streaming platforms, in-game names, or social handles. Use the names as inspiration and check your platform for availability. Run the generator multiple times to build a shortlist of options. Many streamers use Elden Ring name generators to brainstorm stream handles before checking availability on Twitch, YouTube, or other services.' },
-  { category: 'Best practices', question: 'What is the best workflow for the Elden Ring name generator?', answer: 'Open the page, set the number of names (e.g. 12 or 24), click generate, then copy the list. Paste into a notes app. Check your game or story for availability for each name you like. If your first choice is taken, try the next. Run the Elden Ring name generator again for more options. Keep a shortlist of five to ten character name ideas so you have backups. The tool is free and runs in your browser with no sign-up.' },
-  { category: 'Best practices', question: 'Should I run the Elden Ring name generator multiple times?', answer: 'Yes. Running the Elden Ring name generator multiple times is the intended workflow when you want a large pool of Elden Ring name ideas. Paste each run into one document and remove duplicates if any appear. Then check availability on your game or story for each name you like. Having a shortlist saves time compared to checking one idea at a time. There is no daily or total limit on how many times you can run the generator.' },
-  { category: 'Troubleshooting', question: 'Why is my first choice from the Elden Ring name generator taken?', answer: 'Popular character names are often already in use on Elden Ring and other platforms. The Elden Ring name generator does not check availability; it only suggests combinations. Always have a shortlist of five to ten options so you have backups. Run the generator again for more Elden Ring name ideas and check availability on your platform before committing. This is normal when using any name generator for games, roleplay, and creative writing.' },
-  { category: 'Troubleshooting', question: 'Can I use the Elden Ring name generator offline?', answer: 'Yes. Once the page is loaded, the Elden Ring name generator runs entirely in your browser and does not require a network connection to generate names. You can generate character name ideas offline. Copying and pasting also works offline. You will need a connection only to open the page initially and to check availability on Elden Ring or another platform.' },
+  { category: 'General', question: 'What is an Elden Ring name generator?', answer: 'It is a browser tool that creates names in the style of Elden Ring and the wider Souls series — archaic, grim, name-plus-epithet names for your Tarnished, your builds, or role-play characters set in the Lands Between. It follows FromSoftware\'s naming conventions so the names feel canon. It runs locally with no sign-up and stores nothing.' },
+  { category: 'Naming style', question: 'What makes a name sound like Elden Ring?', answer: 'Archaic roots (Old English, Latin, Norse), hard endings like -ric, -gar, -wyn, and -eth, and a grim, weathered tone. Names are often short single words (Ranni, Blaidd, Gideon) or a name paired with a lore-heavy epithet (Starscourge Radahn, Maliketh the Black Blade). Soft or modern-sounding names break the register.' },
+  { category: 'Naming style', question: 'What is the name-plus-epithet pattern?', answer: 'Most major Elden Ring characters carry a title that tells their story: "Godfrey, the First Elden Lord," "Mohg, Lord of Blood," "Malenia, Blade of Miquella." The epithet does the lore work. For your own character, attach a title built from a deed, weapon, or curse — "the Ashen," "Bearer of the Frenzied Flame" — to make a plain name sound canon.' },
+  { category: 'Tarnished', question: 'How should I name my Tarnished?', answer: 'Pick something short, speakable, and slightly archaic — a name a Finger Maiden could intone or that would sit on a summon sign. Generate a batch and read each aloud as if Melina were addressing you; keep the ones that sound like a half-forgotten lord or wandering knight. You can also tie the name to your build\'s playstyle.' },
+  { category: 'Tarnished', question: 'Can the name hint at my build?', answer: 'Yes, and that is very in-genre. A faith incantation build suits a clerical, Latinate name; a bleed build something sharper and crueler; a sorcerer a colder, more distant one. FromSoftware names telegraph what a character is before you meet them, so naming a build to match its identity fits the world.' },
+  { category: 'Lore', question: 'How do names differ by region in the Lands Between?', answer: 'Leyndell and the Golden Order use formal, regal, Latinate names. Caelid (Scarlet Rot) names are harsher and more decayed. Liurnia and Raya Lucaria lean cold and scholarly. The Badlands and Crucible Knights use old, primal names from before the Golden Order, and the Blood cults use sanguine, cruel-sounding names. Match the region to deepen an RP character.' },
+  { category: 'Lore', question: 'Does this style work for other Souls games?', answer: 'Yes. The naming aesthetic is consistent across Demon\'s Souls, Dark Souls, Bloodborne, Sekiro, and Elden Ring — archaic, weathered, name-plus-epithet. Names generated here fit a Dark Souls undead, a Bloodborne hunter, or a Souls-inspired tabletop campaign just as well as a Tarnished.' },
+  { category: 'Use cases', question: 'Can I use these names for role-play?', answer: 'Yes — play-by-post, Discord RP, and tabletop campaigns set in the Lands Between all need lore-fitting names. Generate a batch, pick one that matches your character\'s region and faction, and add an epithet that reflects their deeds. The result sits naturally alongside canon characters.' },
+  { category: 'Use cases', question: 'Can I use these for a summon sign or co-op name?', answer: 'Yes. Many players want their Tarnished name to set a tone when their summon sign appears in another world. A short, grim, archaic name reads better on a sign than a modern handle. Note that in-game character names must follow the game\'s rules and this tool does not check what is already in use.' },
+  { category: 'Use cases', question: 'Can I use a generated name as a gamertag or username?', answer: 'You can, though the Souls register skews atmospheric rather than punchy. The names work as handles for Souls communities and Discord servers. This tool does not check whether a name is taken, so verify availability on the platform before claiming it.' },
+  { category: 'Usage', question: 'How do I use this generator?', answer: 'Set how many names you want (1–24), click Generate names, and read the batch aloud. Keep the ones that sound archaic and weathered, copy the list into your notes, and pair a favorite with an epithet. Run again for more — there is no limit, account, or download.' },
+  { category: 'Usage', question: 'Can I edit the generated names?', answer: 'Yes, and it is encouraged. If a name is close but too soft, swap a vowel or harden a consonant until it sounds carved in stone. You can also mix a surname-style root from one result with a given name from another, then attach your own epithet for the final name.' },
+  { category: 'Naming style', question: 'Why do my generated names sound too modern?', answer: 'Modern-sounding output usually means the vowels are too soft or the name is too long. Favor short names with hard endings (-ric, -gar, -eth) and old spellings. Adding a grim epithet also instantly pulls a plain name into the FromSoftware register.' },
+  { category: 'Naming style', question: 'How long should an Elden Ring name be?', answer: 'Short. Most memorable FromSoftware names are one or two syllables you can say in a single breath — Ranni, Mohg, Godrick, Melina. Length comes from the epithet, not the name itself. If the name alone is a mouthful, trim it and let the title carry the weight.' },
+  { category: 'Technical', question: 'How are the names generated?', answer: 'The generator combines curated name elements built around Souls-style conventions — archaic roots, hard consonants, old endings — and shuffles them at random in your browser. Each run produces a new set. Nothing is sent to a server; generation is entirely local.' },
+  { category: 'Technical', question: 'Are these real characters from Elden Ring?', answer: 'No. The generator creates original, Souls-style names for your own use rather than reproducing the official cast. That is intentional — you want fresh names for your Tarnished and RP characters, not duplicates of canon demigods you cannot make your own.' },
+  { category: 'Privacy', question: 'Is my data sent to a server?', answer: 'No. Everything runs in your browser. When you click generate, names are created on your device. Your settings and generated names are never sent to our servers and nothing is stored. You can use the tool in a private window and your character ideas stay yours.' },
+  { category: 'Limits', question: 'How many names can I generate at once?', answer: 'You can request 1–24 names per run. For more, run it again — each run produces a fresh random set with no daily or total limit. Paste multiple runs into one document if you want a large pool to choose from.' },
+  { category: 'Compatibility', question: 'Does it work on mobile?', answer: 'Yes. The generator runs in any modern browser on desktop, tablet, or phone with no app install. Generate a batch on your phone, copy it into notes, and shortlist names wherever you are playing or writing.' },
+  { category: 'General', question: 'Is the Elden Ring name generator free?', answer: 'Yes, completely free with no account, sign-up, or download. Generate as many Tarnished, build, and RP names as you like, as often as you like.' },
+  { category: 'Best practices', question: 'How do I make a name feel truly lore-accurate?', answer: 'Anchor it to a region or faction from the notes above, keep it short and archaic, and attach an epithet built from a deed or weapon. Read it aloud — if it sounds like it belongs on a gravestone in Limgrave or in a Finger Maiden\'s address, it is in the right register.' },
+  { category: 'Best practices', question: 'Should I add a title to every name?', answer: 'Not always, but it helps. Single evocative names (Ranni, Blaidd) work on their own, while plainer names benefit hugely from an epithet. If a generated name feels flat, a grim title almost always rescues it and makes it sound canon.' },
+  { category: 'Troubleshooting', question: 'The names do not feel grim enough — what should I do?', answer: 'Generate a larger batch and filter hard: keep only names with hard consonants and archaic endings, discard anything soft or cheerful. Then pair your favorite with a mournful or cruel epithet. The combination of a weathered name and a lore-heavy title is what gives FromSoftware names their dark weight.' },
 ];
 
 export default async function EldenRingNameGeneratorPage() {
@@ -248,4 +155,3 @@ export default async function EldenRingNameGeneratorPage() {
     </>
   );
 }
-

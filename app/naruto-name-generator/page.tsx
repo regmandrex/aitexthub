@@ -18,8 +18,8 @@ const toolSlug = 'naruto-name-generator';
 export async function generateMetadata(): Promise<Metadata> {
   return buildToolMeta({
     title: 'Naruto Name Generator',
-    description: 'Free naruto name generator for ninja and character names. Create Naruto-style name ideas in your browser with no sign-up.',
-    seoTitle: 'Naruto Name Generator – Ninja & Character Names',
+    description: 'Free Naruto name generator for shinobi, OC, and clan names. Build ninja names with clan surnames, given names, and Hidden Village ties — in your browser, no sign-up.',
+    seoTitle: 'Naruto Name Generator – Shinobi, Clan & OC Names',
     urlPath: `/${toolSlug}`,
   });
 }
@@ -28,170 +28,84 @@ function createWriteUp() {
   return (
     <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
-        <h2>Naruto Name Generator – Ninja & Character Names</h2>
-        <h2>Introduction</h2>
+        <h2>Naruto Name Generator – Shinobi, Clan &amp; OC Names</h2>
         <p>
-          This guide explains how to use a Naruto name generator to create ninja and character names for Naruto and other fan fiction and creative writing. The tool runs in your browser and produces unique, memorable name ideas at the click of a button. It is designed for players who want Naruto name ideas quickly without sign-up or download. The generator does not store data and runs entirely in your browser. You get 1–24 names per run and can run it as often as you like. Always check your game or story for availability before committing to a name.
+          This Naruto name generator builds shinobi names the way the series itself does: a clan surname, a given name, and a sense of which Hidden Village a character belongs to. Whether you are writing a fan fiction set in Konohagakure, designing an original character (OC) for a role-play server, or just want a handle that sounds like it belongs in the Naruto universe, the tool produces ready-to-use ninja names in your browser. There is no sign-up, nothing is stored, and you can generate as many batches as you like.
         </p>
         <p>
-          People search for Naruto name ideas and character name generators when setting up a new profile, an esports handle, or a stream name. This Naruto name generator serves that intent with one free, browser-based tool. Whether you need a single standout character name or a shortlist of options, the generator gives you a pool of ideas. Names must be unique on each service, so verifying availability on Naruto or your chosen platform is an essential step after generating ideas.
-        </p>
-
-        <h2>What Is a Naruto Name Generator?</h2>
-        <p>
-          A Naruto name generator is an online tool that creates ninja and character names suitable for Naruto and other fan fiction and creative writing. You get unique name ideas at the click of a button. The generator combines curated Naruto-style words and elements at random so each run produces new combinations. The output is for inspiration only; you must check your platform for availability. This free Naruto name generator runs in your browser with no sign-up and does not send generated names to any server.
-        </p>
-        <p>
-          The output is plain text, one name per line. You can copy the full list and paste it into a notes app, then check your game or story for availability and pick one. Many users run the Naruto name generator multiple times to build a shortlist before deciding. Because names are created locally, your choices stay private and nothing is stored on our servers.
-        </p>
-        <p>
-          Naruto name generators are useful when you are tired of reusing the same username or when you want a fresh character name that fits your style. The tool does not guarantee that a name is available; it only suggests combinations. Always confirm availability on your game or story before you commit to a new username.
+          Naruto names are not random syllables. They follow Japanese naming order (surname first, given name second), draw on nature and food motifs, and often hint at a character&apos;s clan, element, or fighting style. This page explains those conventions so the names you pick actually feel canon — and so an OC you create can slot believably into a village, a team of three, or a clan with a kekkei genkai.
         </p>
 
-        <h2>Why This Naruto Name Generator Matters</h2>
+        <h2>How Naruto Character Names Are Built</h2>
         <p>
-          Choosing a memorable Naruto name or character name can be time-consuming. A Naruto name generator speeds up brainstorming. Instead of staring at a blank field, you get options in seconds. You can run it on a phone or desktop, copy the names you like, and then check availability on your game or story. The tool is free and does not require an account, so there is no friction to trying many ideas.
+          Kishimoto built the cast from real Japanese words, food puns, and folklore. Understanding the pattern lets you generate names that sound native to the world rather than thrown together:
         </p>
+        <ul>
+          <li><strong>Surname first.</strong> Uzumaki Naruto, Uchiha Sasuke, Hyuga Hinata — the family name leads. Clan surnames carry the most identity, so the generator treats the surname as the anchor.</li>
+          <li><strong>Food and plant puns.</strong> &quot;Naruto&quot; is the fish-cake swirl in ramen; &quot;Sasuke&quot; and &quot;Sakura&quot; (cherry blossom) follow plant and folklore roots. Soft, edible-sounding given names are very in-genre.</li>
+          <li><strong>Clan = theme.</strong> Uchiha (fan/fire), Hyuga (sun), Nara (deer/shadow), Akimichi (food/expansion), Aburame (insects). A surname signals a kekkei genkai or jutsu specialty before you read a single line.</li>
+          <li><strong>Nature-nature naming.</strong> Many names lean on fire, water, wind, lightning, and earth — the five chakra natures — which is why elemental words make strong given names for an OC.</li>
+        </ul>
+
+        <h2>Names by Hidden Village</h2>
         <p>
-          The generator also keeps your ideas private. Names are created in your browser and are not sent to our servers. You can use it in a private or incognito window if you prefer. Because generation is local, there is no risk of your shortlist being stored or logged. That matters when you are testing ideas before you settle on a final Naruto name or character name.
+          Each of the great shinobi villages has its own flavor, and matching a name to a village makes an OC instantly more believable:
         </p>
+        <ul>
+          <li><strong>Konohagakure (Hidden Leaf).</strong> Home of the Uchiha, Hyuga, Nara, Akimichi, and Uzumaki. Warm, plant-and-food-rooted names fit here.</li>
+          <li><strong>Sunagakure (Hidden Sand).</strong> Gaara, Temari, Kankuro — harder consonants and desert/wind motifs.</li>
+          <li><strong>Kirigakure (Hidden Mist).</strong> The Seven Swordsmen, Haku, Zabuza — cold, water-edged names with a sharper edge.</li>
+          <li><strong>Kumogakure (Hidden Cloud).</strong> Killer B, the Raikage — lightning and storm associations.</li>
+          <li><strong>Iwagakure (Hidden Stone).</strong> Earth-natured, grounded, blunt-sounding names.</li>
+        </ul>
         <p>
-          A good Naruto name generator also standardizes the workflow: set how many names you want, click generate, copy the list, and check availability. You get a consistent way to explore username ideas without writing scripts or visiting multiple sites. The output is easy to paste into notes or a document so you can track which names you have already checked on Naruto or other platforms.
+          Pick a village first, then generate a batch and keep the names whose sound matches its element. A Hidden Mist OC named for water and a Hidden Sand OC named for wind read very differently even when both are &quot;Naruto-style.&quot;
         </p>
 
-        <h2>How the Naruto Name Generator Works (Step by Step)</h2>
+        <h2>Building an Original Character (OC)</h2>
         <p>
-          When you open the page, you choose how many names you want per run (1–24). Clicking &quot;Generate names&quot; triggers the tool to randomly combine curated Naruto-style elements in your browser. Each run is independent; no names or settings are sent to a server. The result is a list of Naruto name ideas, one per line. You can copy the full list with one click and paste it into a notes app. To get more ideas, run the generator again. The tool does not check Naruto or any platform for availability—you must do that yourself.
+          For fan fiction and role-play, a name is the first thing readers judge. A strong Naruto OC name does three jobs at once: it places the character in a village, it hints at their clan or element, and it follows the surname-first order so it sits naturally beside canon characters. Generate a batch, then ask of each name: Does it sound like it could appear on a team roster next to Kakashi&apos;s squad? If yes, it is in the right register.
         </p>
         <p>
-          The underlying word lists are designed to sound like gaming ninja and character names: bold, memorable, and easy to type. The generator shuffles and combines these elements so that each run produces different combinations. That randomness helps you discover names you might not have thought of on your own. Because everything runs in the browser, the Naruto name generator works offline once the page is loaded and does not depend on a backend service.
+          A common approach is to pick a canon clan to tie your OC to — say, a minor Hyuga branch member or a stray Uzumaki who survived the clan&apos;s fall — and let the surname do the heavy lifting while the generated given name keeps it fresh. If your OC is clanless (an orphan of the village, like Naruto himself early on), a standalone given name plus a self-chosen nickname can work just as well.
         </p>
+
+        <h2>Jutsu, Nicknames, and Epithets</h2>
         <p>
-          There are no hidden steps. You set the count, click generate, and receive a list. Copying is one click; pasting into your own document keeps your shortlist in one place. Running the Naruto name generator multiple times is the intended workflow when you want a large pool of character name ideas before checking availability.
+          Beyond birth names, Naruto leans heavily on epithets — titles earned in battle. Jiraiya is the Toad Sage; Tsunade is the Slug Princess; Minato is the Yellow Flash; Itachi carries the weight of the Uchiha massacre. If you are naming an OC, consider generating a base name and then adding an epithet that reflects their signature jutsu or chakra nature: &quot;the Crimson Blade,&quot; &quot;the Silent Mist,&quot; &quot;the Lightning Fang.&quot; This two-layer naming (real name + battle title) is one of the most recognizable patterns in the series.
         </p>
 
         <h2>How to Use This Naruto Name Generator</h2>
-        <p>Follow these steps to get Naruto name ideas:</p>
         <ol className="list-decimal pl-6 space-y-2">
           <li>Set how many names you want per run (1–24).</li>
-          <li>Click &quot;Generate names&quot; to get a new list of character name ideas.</li>
-          <li>Use the Copy button to copy all names to your clipboard.</li>
-          <li>Paste into a notes app or document, then check your game or story for availability and pick one.</li>
-          <li>Run again for more options; no account or download is required.</li>
+          <li>Click <strong>Generate names</strong> to get a fresh batch of shinobi-style names.</li>
+          <li>Skim for names that fit your chosen village or clan, then use the Copy button to save the whole list.</li>
+          <li>Paste into your story notes or character sheet and shortlist your favorites.</li>
+          <li>Run again for more options — there is no limit, no account, and no download.</li>
         </ol>
         <p>
-          The Naruto name generator runs in your browser; your settings and generated names are not sent to any server. You can run it as often as you like. Building a shortlist of five to ten options before checking availability on Naruto is a good habit, since popular usernames are often taken. Have backups ready so that if your first choice is unavailable, you can try the next name on your list.
+          Generation happens entirely in your browser. Your settings and the names you create are never sent to a server, so your OC ideas stay private until you choose to share them.
         </p>
 
-        <h2>Naruto and Gamer Naming Style</h2>
+        <h2>Tips for Picking the Right Name</h2>
         <p>
-          Naruto names and character names often use bold, memorable word combinations: action words, nicknames, or creative spellings. This Naruto name generator uses curated Naruto-style elements and combines them at random so you get new combinations that fit that style. The output is for inspiration only; the tool does not check Naruto or any platform for availability. You can use the names as-is or tweak spelling and punctuation to make them your own.
+          Say the name out loud — Naruto names are meant to be spoken in dub and sub alike, so a name that trips the tongue will trip your readers too. Keep the surname-first order if you want canon flavor, or flip it to given-name-first if your fic uses Western order for accessibility; just be consistent across your cast. Avoid accidentally reusing a canon full name (you do not want an OC literally called Uchiha Sasuke), but borrowing a canon surname for a new branch member is fair game and instantly grounds the character.
         </p>
         <p>
-          Different games and communities favor different styles. Some players prefer short, punchy character names; others like longer usernames. Running the generator multiple times gives you a mix of lengths and styles. Skim the list, mark the ones you like, and then verify each one on your game or story. The Naruto name generator is a starting point—your final choice should fit your personality and the rules of your platform.
-        </p>
-
-        <h2>When to Use a Naruto Name Generator</h2>
-        <p>
-          Use this Naruto name generator when you need Naruto or Naruto-style username ideas quickly. Common use cases include creating a new Naruto account or updating your profile name, choosing an in-game name for esports or casual play, and picking a stream or social handle. The same tool works for other platforms—Discord, Xbox, PlayStation, or social profiles—as inspiration. Names must be unique on each platform, so always check availability before committing.
-        </p>
-        <p>
-          Another good time to use a Naruto name generator is when you are rebranding. If you have used the same character name for years and want a fresh identity, generating a batch of ideas helps you explore options without pressure. Run the tool several times, paste results into one document, and remove duplicates. Then check Naruto and any other platforms you use to see which names are still available. Having a shortlist saves time compared to checking one idea at a time.
+          If you are naming a full team of three (the standard genin squad), generate a batch and pick names that contrast — one soft and plant-rooted, one hard and elemental, one neutral — so the trio sounds like distinct people rather than variations on one theme. That contrast is exactly what makes Team 7 (Naruto, Sasuke, Sakura) work on the page.
         </p>
 
-        <h2>Use Cases in Detail: Profiles, Esports, and Streams</h2>
-        <p>
-          Players use the Naruto name generator when creating a new Naruto account or refreshing their profile name. Esports and streamers use it for in-game names or stream handles. The same tool works for other platforms—Discord, Xbox, PlayStation, or social—as inspiration; you must check each platform for availability. Run the generator multiple times to build a shortlist, then check which names are free on your platform. The Naruto name generator does not reserve or validate names; it only suggests combinations.
-        </p>
-        <p>
-          Content creators often need a consistent handle across Steam, streaming, and social media. Generating a batch of character name ideas lets you test different options before you commit. Copy the names you like into a single list, then check availability on each service. If one name is taken on Naruto but free elsewhere, you can still use it on the platforms where it is available, or use the generator again to find alternatives that work everywhere.
-        </p>
-
-        <h2>Tips for Choosing a Naruto Username</h2>
-        <p>
-          Pick a name that is easy to remember and type. Short character names are easier to say in voice chat and less likely to be mistyped. Run the Naruto name generator multiple times to get a shortlist, then check your game or story for availability. Have a few backups in case your first choice is taken. Avoid names that might be mistaken for someone else or that break platform rules. The generator gives you ideas only; the final choice is yours.
-        </p>
-        <p>
-          Consider how the name will look in different contexts: in-game, on a stream overlay, or in a friend list. Some combinations look great in one font but odd in another. If you plan to use the same handle across multiple games and platforms, check availability everywhere before you invest in branding. The Naruto name generator is a free way to explore options without committing until you have confirmed that your chosen Naruto name or character name is available.
-        </p>
-
-        <h2>Running the Naruto Name Generator in Batches</h2>
-        <p>
-          When you need many username ideas, run the Naruto name generator multiple times. Each run gives up to 24 names. Paste each run into the same document and remove duplicates if any appear. Check availability on your platform for each name you like. There is no daily or total limit; you can run the generator as often as you want. Batching is useful when you are setting up several accounts, testing ideas for a team, or simply want a large pool of character name options before making a decision.
-        </p>
-        <p>
-          Keeping a single document with all your generated Naruto name ideas makes it easy to track which names you have already checked. Mark names as &quot;taken&quot; or &quot;available&quot; as you go. That way you avoid re-checking the same name on Naruto or another platform. The Naruto name generator does not remember previous runs, so your document is your only record of the ideas you have collected.
-        </p>
-
-        <h2>Privacy and Local Processing</h2>
-        <p>
-          This Naruto name generator runs entirely in your browser. When you set the number of names and click generate, the names are created locally on your device. Your choices and the generated names are not sent to our servers. We do not store your inputs or the generated list. No account or login is required. That means your shortlist of character name ideas stays on your machine unless you choose to copy it somewhere else.
-        </p>
-        <p>
-          Because generation is local, the tool is suitable for use in private or incognito windows. If you close the tab, the generated list is gone unless you have copied it. There is no server-side log of what names you generated or how many times you ran the Naruto name generator. This privacy model is intentional: username brainstorming is personal, and the tool is designed so that you control where your ideas go.
-        </p>
-
-        <h2>Copying and Exporting Names</h2>
-        <p>
-          Use the Copy button to copy all generated Naruto name ideas to your clipboard (one per line). Paste into a notes app or document. Check your game or story for availability before committing to a name. The names are plain text, so they work in any editor or form. If you paste into a spreadsheet, each line can go in its own cell for easy tracking. The Naruto name generator does not export to a file; copying and pasting is the intended way to save your shortlist.
-        </p>
-
-        <h2>Limits and Batch Size</h2>
-        <p>
-          You can request 1–24 names per run with this Naruto name generator. There is no daily or total limit. Run the generator again for more options. No download or account is required. If you need more than 24 names in one go, run the tool multiple times and paste the results into one document. Removing duplicates is up to you; the generator does not track previous output.
-        </p>
-
-        <h2>No Download or Account Required</h2>
-        <p>
-          This Naruto name generator runs entirely in your browser. You do not need to download software or create an account. Open the page, set how many names you want, and click generate. The tool is free and works on desktop, tablet, and phone. That makes it easy to use when you are away from your main device or when you want to quickly generate character name ideas without installing anything.
-        </p>
-
-        <h2>Who Uses a Naruto Name Generator?</h2>
-        <p>
-          Players use the Naruto name generator when creating or updating a Naruto profile, or when they want a new character name for other platforms. Esports and streamers use it for in-game names or stream handles. The same tool works for Discord, Xbox, PlayStation, or social profiles—always check availability on each platform. Educators and workshop leaders sometimes use it to demonstrate username creation or digital identity in a classroom setting. No account or download is required on our site.
-        </p>
-        <p>
-          Anyone who needs a steady supply of username ideas can benefit. Whether you are a casual gamer, a competitive player, or a content creator, the Naruto name generator provides a fast way to explore options. The key is to treat the output as inspiration and always verify availability on Naruto and any other platform where you plan to use the name.
-        </p>
-
-        <h2>Getting the Most Out of the Naruto Name Generator</h2>
-        <p>
-          Run the generator several times and paste all results into one document. Skim for names that fit your style and check your platform for availability. Shortlist five to ten options so you have backups if your first choice is taken. The Naruto name generator does not check Naruto or any platform; you must do that yourself. When you have a shortlist, check availability one by one. Usernames are often taken on popular services, so having several options saves time.
-        </p>
-        <p>
-          Another tip is to try different batch sizes. Sometimes generating 24 names at once gives you a good mix; other times you may prefer smaller runs so you can review each set before generating more. The tool is flexible. Use it whenever you need new Naruto name ideas or character name inspiration. Bookmarking the page makes it easy to return when you are ready to refresh your profile or create a new account.
-        </p>
-
-        <h2>Typical Workflow for the Naruto Name Generator</h2>
-        <p>
-          A typical workflow is: open the page, set the number of names (e.g. 12 or 24), click generate, then copy the list. Paste into a notes app. Check your game or story for availability for each name you like. If your first choice is taken, try the next. Run the Naruto name generator again for more options. The whole process takes a few minutes. No account or download is required. Bookmark the page for quick access when you need new username ideas. The tool is free and runs in your browser with no sign-up.
-        </p>
-
-        <h2>What This Tool Does NOT Do</h2>
+        <h2>What This Tool Does and Does Not Do</h2>
         <ul>
-          <li>It does not check Naruto or any platform for username availability.</li>
-          <li>It does not reserve or hold names for you.</li>
-          <li>It does not store your generated list or your settings.</li>
-          <li>It does not connect to Steam, Discord, or any external gaming service.</li>
+          <li>It generates Naruto-style shinobi, clan, and OC names for fan fiction, role-play, and handles.</li>
+          <li>It does not reproduce official character names as a database — output is for original creative use.</li>
+          <li>It does not store your generated list or settings; everything runs locally in your browser.</li>
+          <li>It does not check name availability on any game, forum, or social platform — verify that yourself if you plan to use a name as a username.</li>
         </ul>
-        <p>
-          This Naruto name generator produces name ideas only. It does not validate availability, create accounts, or manage your profile. You must check Naruto or your chosen platform yourself and follow that platform&apos;s rules when creating or changing your username. The tool is a brainstorming aid, not a replacement for checking availability.
-        </p>
 
-        <h2>Privacy and Security Notes</h2>
+        <h2>Final Notes</h2>
         <p>
-          The Naruto name generator runs entirely in your browser. It does not send data to a server and does not store generated values. This is helpful for quick brainstorming and offline use. If you refresh the page, the last generated list is cleared. Copy any names you want to keep before closing or refreshing.
-        </p>
-        <p>
-          For account security, never share your Naruto password or other credentials. The generator only suggests usernames; it does not handle login or account creation. When you check availability on Naruto or another platform, use the official site or app and ensure you are on a secure connection. The Naruto name generator is a standalone tool and does not integrate with any login system.
-        </p>
-
-        <h2>Final Summary and When to Use This Tool</h2>
-        <p>
-          The Naruto name generator provides a fast way to create username and character name ideas for Naruto and other fan fiction and creative writing. Set the number of names (1–24) and run as often as you like. Copy results and check your platform for availability. The tool runs locally in your browser with no sign-up. Keep a shortlist of options in case your first choice is taken. No download or account is required. The generator is free and works on any device.
-        </p>
-        <p>
-          Use this Naruto name generator when you need Naruto name ideas, character name inspiration, or a quick way to explore options before checking availability. It is best for brainstorming, rebranding, and building a shortlist. Always verify availability on Naruto or your chosen platform before committing to a name. The tool is a practical free resource for gaming ninja and character names.
+          Naruto is one of the most-named fandoms online — fic writers, AMV makers, role-players, and players of titles like Shinobi Striker and the Ultimate Ninja Storm series all need names that fit. This Naruto name generator gives you that pool instantly, grounded in the franchise&apos;s real naming logic: surname-first order, clan-coded surnames, village-flavored sounds, and elemental given names. Generate a batch, lean on the clan and village notes above, and you will end up with shinobi names that feel like they were always part of the world.
         </p>
       </div>
     </section>
@@ -199,30 +113,30 @@ function createWriteUp() {
 }
 
 const pageFaqs: FaqItem[] = [
-  { category: 'General', question: 'What is a Naruto name generator?', answer: 'A Naruto name generator is an online tool that creates ninja and character names for Naruto and other fan fiction and creative writing. You get unique Naruto name ideas at the click of a button. The generator combines curated Naruto-style words at random in your browser so each run produces new combinations. This free Naruto name generator runs locally with no sign-up and does not send generated names to any server. Always check your game or story for availability before committing to a name.' },
-  { category: 'Usage', question: 'How do I use the Naruto name generator?', answer: 'Set how many names you want per run (1–24), click "Generate names" to get a new list of character name ideas, then use the Copy button to copy all names to your clipboard. Paste into a notes app and check your game or story for availability. Run again for more options; no sign-up is required. The Naruto name generator runs in your browser so your settings and generated names are not sent to any server. Building a shortlist of five to ten options before checking availability is a good habit.' },
-  { category: 'General', question: 'Is the Naruto name generator free?', answer: 'Yes. This Naruto name generator is free to use in your browser. You can generate Naruto name ideas as often as you like without creating an account or paying. The tool runs locally on your device and does not require a download. There is no daily or total limit on how many times you can run the generator.' },
-  { category: 'Use cases', question: 'Can I use the names for Steam?', answer: 'Yes. The Naruto name generator produces username ideas that you can use on Steam. Names must be unique on the platform, so always check Steam\'s availability before committing. Run the generator multiple times to build a shortlist of character name ideas, then check which names are available on Steam. The tool does not reserve or validate names; it only suggests combinations for you to verify on the platform.' },
-  { category: 'Privacy', question: 'Is my data sent to a server when I use the Naruto name generator?', answer: 'No. This Naruto name generator runs in your browser. When you set the number of names and click generate, the names are created locally on your device. Your choices and the generated Naruto name ideas are not sent to our servers. We do not store your inputs or the generated list. Generation is fully local and private.' },
-  { category: 'Compatibility', question: 'Does the Naruto name generator work on mobile?', answer: 'Yes. The Naruto name generator runs in a web browser and works on desktop, tablet, and phone. You do not need to install an app. Open the page, choose how many names you want, then generate. On a phone you can generate a short list and copy it into notes or check availability on Steam\'s app. The tool is responsive and works on any device with a modern browser.' },
-  { category: 'Limits', question: 'How many names can I generate with the Naruto name generator?', answer: 'You can request 1–24 names per run with this Naruto name generator. If you need more than 24 character name ideas, run the generator again; each run produces a new random set. There is no daily or total limit. Paste multiple runs into one document and remove duplicates if needed. The batch size is designed to keep the list manageable while giving you enough Naruto name options to shortlist.' },
-  { category: 'Usage', question: 'Can I copy the names from the Naruto name generator?', answer: 'Yes. Use the Copy button on this Naruto name generator to copy all generated names to your clipboard. Paste into a notes app or document. The names are plain text, one per line, so they work in any editor or form. Check your game or story for availability before choosing a name. Copying is the intended way to save your shortlist of character name ideas.' },
-  { category: 'General', question: 'Do I need an account to use the Naruto name generator?', answer: 'No. This Naruto name generator works without sign-up or login. The tool runs entirely in your browser. You do not need to create an account on our site to use it. Open the page, set how many Naruto name ideas you want, click generate, and copy the results. No email, password, or registration is required.' },
-  { category: 'Use cases', question: 'Can I use the Naruto name generator for other platforms?', answer: 'Yes. The names work as ideas for any gaming or social platform—Discord, Xbox, PlayStation, or others. The Naruto name generator is built for Steam-style character names but the output can inspire usernames elsewhere. Check each platform\'s availability; names must be unique on each service. The generator does not check availability for you, so always verify on the platform where you plan to use the name.' },
-  { category: 'Privacy', question: 'Do you store the names I generate with the Naruto name generator?', answer: 'No. Generation happens in your browser. We do not receive or store the Naruto name ideas or your settings. The Naruto name generator runs locally on your device. You can use the tool in a private or incognito window if you prefer. If you refresh the page, the last generated list is cleared unless you have already copied it.' },
-  { category: 'Limits', question: 'Can I get more than 24 names from the Naruto name generator?', answer: 'Each run of this Naruto name generator gives up to 24 names. To get more character name ideas, run the generator again; each run produces a new random set. You can paste multiple runs into one document and then remove duplicates. There is no daily or total limit. Batching runs is the intended workflow when you need a large pool of Naruto name options.' },
-  { category: 'General', question: 'Why "Steam" specifically in a Naruto name generator?', answer: 'Naruto is a major gaming platform, and people often search for Naruto name ideas and character name generators. The Naruto name generator serves that intent and produces names that fit Naruto and similar gaming environments. The same ideas work for other platforms—Discord, Xbox, PlayStation—as inspiration. Use the names as character names wherever you need a unique username; always check availability on the platform you choose.' },
-  { category: 'Use cases', question: 'Can I use the Naruto name generator for esports?', answer: 'Yes. Use the Naruto name generator as inspiration for in-game names or stream handles. Run it multiple times to get a shortlist of character name ideas, then check availability on your platform. The tool is free and runs in your browser with no sign-up. Many esports and streamers use Naruto name generators to brainstorm handles before verifying availability on Steam, Twitch, or other services.' },
-  { category: 'Technical', question: 'How are the names generated in the Naruto name generator?', answer: 'This Naruto name generator uses curated Naruto-style words and elements. When you click generate, the tool randomly combines these in your browser so each run is different. No names or settings are sent to a server. The result is for inspiration only; we do not check Naruto or any platform for availability. The word lists are designed to sound like gaming ninja and character names—bold, memorable, and easy to type.' },
-  { category: 'General', question: 'Are the names from the Naruto name generator unique?', answer: 'The names are randomly combined from our word list, so each run can produce new combinations. We do not check Naruto or any platform for availability. You must check yourself whether a Naruto name or character name is available before using it on your profile. The generator helps you discover ideas; uniqueness on a given platform depends on that platform\'s current registrations.' },
-  { category: 'Use cases', question: 'Can teachers use the Naruto name generator?', answer: 'Yes. Teachers can use this Naruto name generator for creative or tech-related activities—for example when students are learning about usernames, digital identity, or online profiles. Emphasize that the tool is for inspiration and that names must be checked for availability on any platform. The Naruto name generator is free and runs in the browser with no sign-up, so it is easy to use in a classroom or workshop setting.' },
-  { category: 'General', question: 'How do I cite the Naruto name generator?', answer: 'For academic or formal use you can cite this Naruto name generator as a source of inspiration for ninja and character names. The generated names are algorithm-produced; you can use them freely. A brief acknowledgment is optional. We do not require attribution. The tool is a free, browser-based utility for Naruto name ideas and character name brainstorming.' },
-  { category: 'Use cases', question: 'Can I use the Naruto name generator for a new Naruto account?', answer: 'Yes. When creating a new Naruto account you need a unique username. Run this Naruto name generator to get character name ideas, copy the list, then check Naruto for availability. Pick a name that is available and that you like. The tool runs in your browser with no sign-up. Building a shortlist of five to ten options before you start the sign-up process saves time, since many Naruto names are already taken.' },
-  { category: 'General', question: 'Do the names from the Naruto name generator work for streaming?', answer: 'Yes. The Naruto name generator produces username ideas that can work for streaming platforms, in-game names, or social handles. Use the names as inspiration and check your platform for availability. Run the generator multiple times to build a shortlist of options. Many streamers use Naruto name generators to brainstorm stream handles before checking availability on Twitch, YouTube, or other services.' },
-  { category: 'Best practices', question: 'What is the best workflow for the Naruto name generator?', answer: 'Open the page, set the number of names (e.g. 12 or 24), click generate, then copy the list. Paste into a notes app. Check your game or story for availability for each name you like. If your first choice is taken, try the next. Run the Naruto name generator again for more options. Keep a shortlist of five to ten character name ideas so you have backups. The tool is free and runs in your browser with no sign-up.' },
-  { category: 'Best practices', question: 'Should I run the Naruto name generator multiple times?', answer: 'Yes. Running the Naruto name generator multiple times is the intended workflow when you want a large pool of Naruto name ideas. Paste each run into one document and remove duplicates if any appear. Then check availability on your game or story for each name you like. Having a shortlist saves time compared to checking one idea at a time. There is no daily or total limit on how many times you can run the generator.' },
-  { category: 'Troubleshooting', question: 'Why is my first choice from the Naruto name generator taken?', answer: 'Popular ninja and character names are often already in use on Naruto and other platforms. The Naruto name generator does not check availability; it only suggests combinations. Always have a shortlist of five to ten options so you have backups. Run the generator again for more Naruto name ideas and check availability on your platform before committing. This is normal when using any name generator for fan fiction and creative writing.' },
-  { category: 'Troubleshooting', question: 'Can I use the Naruto name generator offline?', answer: 'Yes. Once the page is loaded, the Naruto name generator runs entirely in your browser and does not require a network connection to generate names. You can generate character name ideas offline. Copying and pasting also works offline. You will need a connection only to open the page initially and to check availability on Naruto or another platform.' },
+  { category: 'General', question: 'What is a Naruto name generator?', answer: 'A Naruto name generator is a browser tool that creates shinobi-style names in the style of the Naruto series — clan surnames, given names, and village-flavored sounds. It follows the franchise\'s naming logic (surname first, food and nature motifs, clan-coded surnames) so the names fit fan fiction, original characters, role-play, and handles. It runs locally with no sign-up and stores nothing.' },
+  { category: 'Naming style', question: 'How are real Naruto names structured?', answer: 'Naruto uses Japanese naming order: the surname comes first, then the given name (Uzumaki Naruto, Uchiha Sasuke, Hyuga Hinata). Surnames are clan-coded and hint at a kekkei genkai or jutsu specialty, while given names often come from food, plants, or folklore. "Naruto" itself is the swirl of fish cake in ramen, and "Sakura" means cherry blossom.' },
+  { category: 'Naming style', question: 'Do Naruto names mean something?', answer: 'Very often, yes. Kishimoto built names from real Japanese words and puns. Clan names signal a theme — Uchiha is fan/fire, Nara is deer/shadow, Aburame is insects, Akimichi is food. Given names lean on the five chakra natures (fire, water, wind, lightning, earth) and on nature imagery. Choosing a name with fitting meaning makes an OC feel canon.' },
+  { category: 'OC', question: 'How do I name a Naruto OC (original character)?', answer: 'A strong Naruto OC name does three things: places the character in a village, hints at their clan or element, and keeps surname-first order so it sits naturally beside canon characters. Tie your OC to a clan and let the surname do the heavy lifting, or make them clanless with a standalone given name plus a self-chosen nickname like Naruto had early on.' },
+  { category: 'OC', question: 'Can I give my OC a canon clan surname?', answer: 'Yes — borrowing a canon surname for a new branch member is a common and effective way to ground an OC. A minor Hyuga branch member or a surviving Uzumaki instantly reads as part of the world. Just avoid reusing a complete canon name (do not name an OC literally Uchiha Sasuke); pair the canon surname with a fresh given name.' },
+  { category: 'Villages', question: 'How do names differ by Hidden Village?', answer: 'Each village has a flavor. Konohagakure (Leaf) names are warm and plant- or food-rooted. Sunagakure (Sand) uses harder consonants and wind motifs. Kirigakure (Mist) leans cold and water-edged. Kumogakure (Cloud) carries lightning associations, and Iwagakure (Stone) sounds grounded and blunt. Pick a village first, then keep the generated names whose sound matches its element.' },
+  { category: 'Villages', question: 'Which village should my character be from?', answer: 'Choose the village that fits your story and your character\'s element. If your OC uses water jutsu, Kirigakure (Hidden Mist) fits; wind users suit Sunagakure (Hidden Sand); lightning users suit Kumogakure (Hidden Cloud). Konohagakure (Hidden Leaf) is the default home of most major clans, so it is the safest pick for a fic set in the main canon.' },
+  { category: 'Naming style', question: 'What are epithets and battle titles in Naruto?', answer: 'Beyond birth names, characters earn epithets from their deeds: Jiraiya is the Toad Sage, Tsunade the Slug Princess, Minato the Yellow Flash. For an OC, generate a base name then add a title reflecting their signature jutsu or chakra nature — "the Crimson Blade," "the Silent Mist," "the Lightning Fang." This real-name-plus-title pattern is one of the most recognizable in the series.' },
+  { category: 'OC', question: 'How do I name a full genin team of three?', answer: 'Generate a batch and pick three names that contrast: one soft and plant-rooted, one hard and elemental, one neutral. That contrast is what makes Team 7 (Naruto, Sasuke, Sakura) sound like three distinct people rather than variations on a theme. Aim for variety in length and sound across the squad.' },
+  { category: 'Usage', question: 'How do I use this Naruto name generator?', answer: 'Set how many names you want (1–24), click Generate names, then skim for names that fit your chosen clan or village. Use the Copy button to save the whole list, paste it into your story notes or character sheet, and shortlist your favorites. Run again for more — there is no limit, account, or download.' },
+  { category: 'Usage', question: 'Should I keep surname-first order?', answer: 'Keep surname-first (Uzumaki Naruto) for canon flavor. Some fics flip to given-name-first for Western readers — that is fine too, as long as you are consistent across your whole cast. Mixing orders within one story confuses readers, so decide early and stick with it.' },
+  { category: 'Usage', question: 'Can I edit the generated names?', answer: 'Absolutely. The output is a starting point. Tweak spelling, swap a surname onto a given name you like, or add an epithet. Many writers generate a batch, take the surname from one result and the given name from another, and combine them into the final character name.' },
+  { category: 'Use cases', question: 'Can I use these names for fan fiction?', answer: 'Yes — fan fiction is the primary use. The names follow the series\' naming conventions so your OCs sit believably alongside canon characters. Use the clan and village notes to match a name to your character\'s background, element, and the squad they belong to.' },
+  { category: 'Use cases', question: 'Can I use these names for role-play servers?', answer: 'Yes. Naruto role-play communities on Discord and forums expect names that fit the world. Generate shinobi-style names, pick one that matches your character\'s village and clan, and you will fit the setting. If the server requires unique names, check the member roster before claiming one.' },
+  { category: 'Use cases', question: 'Can I use these for Naruto games like Shinobi Striker or Ultimate Ninja Storm?', answer: 'Yes. Players of Shinobi Striker, the Ultimate Ninja Storm series, and other Naruto games use generators to name custom characters and online handles. Generate a batch, pick a name in the right register, then check availability in the game if it requires unique display names.' },
+  { category: 'Use cases', question: 'Can I use a generated name as a username?', answer: 'Yes, the names work as gaming or social handles. Just note this tool does not check whether a name is taken — usernames must be unique on each platform, so verify availability on the specific game, forum, or social network before committing.' },
+  { category: 'Technical', question: 'How are the names generated?', answer: 'The generator combines curated name elements built around Naruto\'s conventions — clan-style surnames, food and nature given names, and village-flavored sounds — and shuffles them at random in your browser. Each run produces a new set. Nothing is sent to a server; generation is entirely local.' },
+  { category: 'Technical', question: 'Are these real characters from the anime?', answer: 'No. The generator creates original, Naruto-style names for your own use rather than reproducing the official cast as a lookup database. That is intentional — you want fresh names for OCs and handles, not duplicates of canon characters you cannot use as your own.' },
+  { category: 'Privacy', question: 'Is my data sent to a server?', answer: 'No. Everything runs in your browser. When you click generate, names are created on your device. Your settings and the generated names are never sent to our servers and nothing is stored. You can use the tool in a private window and your OC ideas stay yours.' },
+  { category: 'Limits', question: 'How many names can I generate at once?', answer: 'You can request 1–24 names per run. For more, just run it again — each run produces a fresh random set and there is no daily or total limit. Paste multiple runs into one document if you want a large pool to shortlist from.' },
+  { category: 'Compatibility', question: 'Does it work on mobile?', answer: 'Yes. The generator runs in any modern browser on desktop, tablet, or phone with no app install. Generate a batch on your phone, copy it into your notes, and shortlist names wherever you are writing or playing.' },
+  { category: 'General', question: 'Is the Naruto name generator free?', answer: 'Yes, it is completely free with no account, sign-up, or download. Generate as many shinobi, clan, and OC names as you like, as often as you like.' },
+  { category: 'Best practices', question: 'How do I make a generated name sound more canon?', answer: 'Say it out loud — Naruto names are meant to be spoken, so a name that trips the tongue will trip your readers. Anchor it to a clan or village from the notes above, keep surname-first order, and consider adding a meaning-based given name (a chakra nature or nature word) so the name carries the same kind of weight canon names do.' },
+  { category: 'Troubleshooting', question: 'The names do not feel Naruto enough — what should I do?', answer: 'Generate a larger batch and filter hard: keep only the names whose sound matches a specific village element, and discard anything generic. Pair a strong clan-style surname with a softer, nature-rooted given name — that contrast is what gives canon names their feel. Adding a battle epithet also pushes a plain name firmly into the world.' },
 ];
 
 export default async function NarutoNameGeneratorPage() {

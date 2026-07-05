@@ -18,8 +18,8 @@ const toolSlug = 'steam-name-generator';
 export async function generateMetadata(): Promise<Metadata> {
   return buildToolMeta({
     title: 'Steam Name Generator',
-    description: 'Free Steam name generator for gaming usernames and gamer tags. Create unique Steam username ideas in your browser with no sign-up. Check availability on Steam and other platforms.',
-    seoTitle: 'Steam Name Generator – Free Gaming Usernames & Gamer Tag Ideas',
+    description: 'Free Steam name generator for profile names and gamer tags. Get clean, sweaty, funny, and unicode-styled Steam name ideas in your browser — no sign-up. Steam display names are free to change and do not have to be unique.',
+    seoTitle: 'Steam Name Generator – Clean, Sweaty, Funny & Unicode Names',
     urlPath: `/${toolSlug}`,
   });
 }
@@ -28,170 +28,115 @@ function createWriteUp() {
   return (
     <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
-        <h2>Steam Name Generator – Gaming Usernames and Gamer Tags</h2>
-        <h2>Introduction</h2>
+        <h2>Steam Name Generator – Clean, Sweaty, Funny &amp; Unicode Names</h2>
         <p>
-          This guide explains how to use a Steam name generator to create usernames and gamer tags for Steam and other gaming platforms. The tool runs in your browser and produces unique, memorable name ideas at the click of a button. It is designed for players who want Steam username ideas quickly without sign-up or download. The generator does not store data and runs entirely in your browser. You get 1–24 names per run and can run it as often as you like. Always check Steam or your platform for availability before committing to a name.
+          This Steam name generator builds profile names for Valve&apos;s PC gaming platform the way real players actually use them: a display name you can swap out whenever you want, in almost any style you can imagine. Steam is unusual among gaming services because your profile name does <strong>not</strong> have to be unique. Behind the scenes you are identified by a permanent, numeric SteamID, so the name everyone sees on your profile, in chat, and on the friends list is purely cosmetic. That means you can run this generator, pick literally anything that fits within the length limit, and set it as your name without ever hitting a &quot;that name is taken&quot; wall. No sign-up, nothing stored, and you can generate as many batches as you like in your browser.
         </p>
         <p>
-          People search for Steam username ideas and gamer tag generators when setting up a new profile, an esports handle, or a stream name. This Steam name generator serves that intent with one free, browser-based tool. Whether you need a single standout gamer tag or a shortlist of options, the generator gives you a pool of ideas. Names must be unique on each service, so verifying availability on Steam or your chosen platform is an essential step after generating ideas.
-        </p>
-
-        <h2>What Is a Steam Name Generator?</h2>
-        <p>
-          A Steam name generator is an online tool that creates usernames and gamer tags suitable for Steam and other gaming platforms. You get unique name ideas at the click of a button. The generator combines curated gamer-style words and elements at random so each run produces new combinations. The output is for inspiration only; you must check your platform for availability. This free Steam name generator runs in your browser with no sign-up and does not send generated names to any server.
-        </p>
-        <p>
-          The output is plain text, one name per line. You can copy the full list and paste it into a notes app, then check Steam or your platform for availability and pick one. Many users run the Steam name generator multiple times to build a shortlist before deciding. Because names are created locally, your choices stay private and nothing is stored on our servers.
-        </p>
-        <p>
-          Steam name generators are useful when you are tired of reusing the same username or when you want a fresh gamer tag that fits your style. The tool does not guarantee that a name is available; it only suggests combinations. Always confirm availability on Steam or your platform before you commit to a new username.
+          Because Steam names are free to change and not locked to uniqueness, the culture around them is wildly creative. You will see razor-clean one-word handles next to deliberately try-hard &quot;sweaty&quot; CS names, absurd meme names that exist purely to make the lobby laugh, and aesthetic profiles dressed up in unicode symbols and fancy text. This page walks through each of those styles, the practical limits Steam imposes, and how to land on a name that reads well on a friends list and in the killfeed of CS2, Dota 2, and the rest of your library.
         </p>
 
-        <h2>Why This Steam Name Generator Matters</h2>
+        <h2>Steam Display Name vs. Vanity (Custom) URL</h2>
         <p>
-          Choosing a memorable Steam username or gamer tag can be time-consuming. A Steam name generator speeds up brainstorming. Instead of staring at a blank field, you get options in seconds. You can run it on a phone or desktop, copy the names you like, and then check availability on Steam or your platform. The tool is free and does not require an account, so there is no friction to trying many ideas.
+          The single most important thing to understand is that Steam gives you two different identifiers, and they behave nothing alike:
         </p>
+        <ul>
+          <li><strong>Profile name (display name / nickname).</strong> This is the cosmetic name shown on your profile, in friend chat, in games, and on the community. It does not have to be unique, it can contain spaces, emoji, and unicode, and you can change it as often as you like for free.</li>
+          <li><strong>Custom URL (vanity URL).</strong> This is the human-readable web address for your profile, like <code>steamcommunity.com/id/yourname</code>. This one <strong>is</strong> unique across all of Steam, can only use letters, numbers, hyphens, and underscores, and once taken by someone else it is gone. You set it once under Edit Profile and it sticks until you change it.</li>
+          <li><strong>SteamID.</strong> The permanent numeric identifier (e.g. a SteamID64 like 7656119…) that Steam actually uses to track your account, inventory, and friends. Nobody picks this; it is assigned and never changes.</li>
+        </ul>
         <p>
-          The generator also keeps your ideas private. Names are created in your browser and are not sent to our servers. You can use it in a private or incognito window if you prefer. Because generation is local, there is no risk of your shortlist being stored or logged. That matters when you are testing ideas before you settle on a final Steam username or gamer tag.
-        </p>
-        <p>
-          A good Steam name generator also standardizes the workflow: set how many names you want, click generate, copy the list, and check availability. You get a consistent way to explore username ideas without writing scripts or visiting multiple sites. The output is easy to paste into notes or a document so you can track which names you have already checked on Steam or other platforms.
+          The names this generator produces are made for the <em>profile name</em> slot, where you have near-total freedom. If you also want a matching vanity URL, take a name you like, strip the spaces and symbols, and check whether the lowercase letters-and-numbers version is still free in your profile settings — because unlike the display name, the URL really can be claimed by someone else first.
         </p>
 
-        <h2>How the Steam Name Generator Works (Step by Step)</h2>
+        <h2>Why You Can Use Almost Any Name on Steam</h2>
         <p>
-          When you open the page, you choose how many names you want per run (1–24). Clicking &quot;Generate names&quot; triggers the tool to randomly combine curated gamer-style elements in your browser. Each run is independent; no names or settings are sent to a server. The result is a list of Steam username ideas, one per line. You can copy the full list with one click and paste it into a notes app. To get more ideas, run the generator again. The tool does not check Steam or any platform for availability—you must do that yourself.
+          On most platforms a username is your login and must be globally unique, which is why every good handle feels taken. Steam works differently. You log in with a separate account name (or email) and are identified by SteamID, so your visible profile name is decoupled from all of that. Three people in the same CS2 lobby can all be called &quot;nageehoona&quot; and Steam does not care — the game distinguishes them by SteamID under the hood. That freedom is exactly why Steam culture leans so hard into jokes, references, and copy-pasted aesthetic text: there is no scarcity tax on creativity.
         </p>
         <p>
-          The underlying word lists are designed to sound like gaming usernames and gamer tags: bold, memorable, and easy to type. The generator shuffles and combines these elements so that each run produces different combinations. That randomness helps you discover names you might not have thought of on your own. Because everything runs in the browser, the Steam name generator works offline once the page is loaded and does not depend on a backend service.
+          The practical upshot for you is simple. Generate a batch, fall in love with one, and set it. You will not be forced to bolt on random numbers (xX_name_Xx style) just to dodge a collision, the way you would when registering a unique handle elsewhere. If you want numbers or symbols, it is purely a style choice.
+        </p>
+
+        <h2>Profile Name Length and Character Limits</h2>
+        <p>
+          Steam profile names cap out at roughly 32 characters, which is generous enough for a full phrase but short enough that very long meme sentences get cut off. A few things worth knowing before you commit a generated name:
+        </p>
+        <ul>
+          <li><strong>~32 character ceiling.</strong> Keep meme or unicode-heavy names under the limit, since decorative symbols eat into the count just like letters do.</li>
+          <li><strong>Leading and trailing spaces get trimmed.</strong> Tricks that rely on invisible padding are unreliable; some symbol-spacing characters work, plain spaces at the ends do not.</li>
+          <li><strong>Unicode is allowed but renders differently everywhere.</strong> A name full of fancy glyphs can look perfect on the desktop client and turn into boxes or question marks inside a game&apos;s scoreboard.</li>
+          <li><strong>Unlimited free changes.</strong> Steam does not charge for nickname changes and does not rate-limit them in any meaningful way for normal use, so you can experiment freely.</li>
+        </ul>
+
+        <h2>Name Styles: Clean, Sweaty, Funny, Aesthetic-Unicode</h2>
+        <p>
+          Steam handles cluster into a handful of recognizable styles. Knowing which one you are going for makes it easy to filter a generated batch:
+        </p>
+        <ul>
+          <li><strong>Clean.</strong> A single tidy word or short pairing — readable, lowercase, no clutter. These age well, look professional on a friends list, and are the safest pick if you also want a matching vanity URL. Think calm and minimal rather than loud.</li>
+          <li><strong>Sweaty / tryhard.</strong> The competitive CS and ranked-grinder aesthetic: sharp, aggressive, often with stylized letters, doubled consonants, or a clan-style tag. These signal &quot;I take my aim seriously&quot; in CS2, Valorant-adjacent lobbies, and Dota 2 ranked. Short and punchy beats long here.</li>
+          <li><strong>Funny / meme.</strong> The names that exist to make the lobby laugh — wordplay, absurd phrases, references, and the classic Steam tradition of a name that is a setup for a killfeed joke. Steam&apos;s no-uniqueness rule is what lets these flourish.</li>
+          <li><strong>Aesthetic / unicode.</strong> Fancy-text and symbol-wrapped names using decorative unicode, small-caps glyphs, or bracket flourishes. These look striking on a profile page but should be tested in-game, where many fonts strip them back to plain or unreadable characters.</li>
+        </ul>
+
+        <h2>Sweaty CS and Competitive Names</h2>
+        <p>
+          The &quot;sweaty&quot; name is its own micro-genre, born largely from Counter-Strike and other competitive shooters. The goal is to look like someone who grinds: a tight, hard-edged handle that reads instantly in the killfeed and intimidates a little. The conventions are recognizable — clipped words, stylized or doubled letters, occasionally a short uppercase clan prefix, and a deliberate avoidance of anything cute. When you generate a batch and want this energy, keep the names that are short, say cleanly over voice comms, and would not look out of place above a clutch round. Long names get truncated in the scoreboard, so sweaty handles trend short on purpose.
         </p>
         <p>
-          There are no hidden steps. You set the count, click generate, and receive a list. Copying is one click; pasting into your own document keeps your shortlist in one place. Running the Steam name generator multiple times is the intended workflow when you want a large pool of gamer tag ideas before checking availability.
+          If you run with a duo or a stack, sweaty names sometimes share a common tag or theme so the team reads as a unit on the scoreboard. That is the one place a clan-style prefix genuinely earns its keep on Steam — not for organization membership, but for visual cohesion in a competitive lobby.
+        </p>
+
+        <h2>Funny and Meme Steam Names</h2>
+        <p>
+          Funny names are arguably the heart of Steam name culture, and they exist precisely because of the no-uniqueness rule. When a name does not have to be globally unique, you are free to use the exact joke you want instead of the closest unclaimed approximation. Classic patterns include the killfeed gag (a name written so the in-game &quot;X killed Y&quot; line becomes a sentence), the self-deprecating handle, the fake-official sounding name, and the wall of references only your friends will get. Generate a large batch for this style and filter hard — comedy is subjective, so keep the two or three that actually made you smirk and discard the rest. Because changes are free, a meme name is low-commitment: wear it for a weekend, then swap back to your clean handle.
+        </p>
+
+        <h2>Aesthetic and Unicode / Symbol Names</h2>
+        <p>
+          Aesthetic Steam names lean on unicode: fancy fonts, small-caps, fullwidth characters, and decorative symbols or brackets framing a word. They can make a profile page look polished and distinctive. The crucial caveat is rendering. Steam&apos;s own client handles most unicode well, but the moment your name appears inside a game — the CS2 scoreboard, a Dota 2 chat line, or a server&apos;s console — the font may not support those glyphs and will fall back to boxes, question marks, or stripped plain text. Treat heavy unicode as a profile-page flourish rather than an in-game identity, and always alt-tab into an actual match to see how the name reads before you settle on it. A good compromise is a clean readable core word with a light symbol on each side, so it degrades gracefully when the fancy characters do not render.
+        </p>
+        <p>
+          It is worth understanding why this happens. Unicode &quot;fancy text&quot; is not a font in the normal sense — the small-caps, script, and fullwidth letters are actually separate code points that happen to look like styled versions of the alphabet. The Steam client ships with fonts that cover a huge range of those code points, which is why your name looks crisp on your profile and in the friends list. In-game text renderers, by contrast, are tuned for performance and often bundle a narrow font that only covers basic Latin characters. When they meet a code point they do not have a glyph for, they substitute the fallback box. The same name can therefore look flawless in three places and broken in a fourth, which is exactly why testing inside the specific games you play matters more than testing on the Steam profile page.
+        </p>
+
+        <h2>Friends-List Readability and Cross-Game Use</h2>
+        <p>
+          A name does not live in isolation — it shows up on your friends&apos; lists, in their invite popups, and over voice and text chat. If your friends cannot tell who you are at a glance, or cannot type your name to @-mention you, an over-styled handle costs you more than it gains. The friendliest names are pronounceable and at least partly typeable in plain characters. This matters across your whole library: the same display name follows you into CS2, Dota 2, Team Fortress 2, and every other title you launch through Steam, so pick something that reads well in a fast-moving scoreboard and a quiet co-op lobby alike. If you bounce between sweaty competitive sessions and chill games with friends, many players keep one solid, readable name year-round and reserve meme or unicode experiments for short stints.
+        </p>
+        <p>
+          There is a social dimension to this that pure aesthetics miss. On Steam your name is also how people find and remember you. A friend trying to add you, a group looking to fill a five-stack, or someone tagging you in a chat all need to be able to read and ideally type your name. A wall of identical-looking unicode squares, or a name that is three emoji deep, makes you effectively anonymous in the very moments where being recognizable is valuable. The strongest Steam names thread the needle: distinctive enough to stand out in a busy lobby, but plain enough that a teammate can call it out over voice in the middle of a round without stumbling. When you skim a generated batch, picture the name being shouted across a clutch situation — if it survives that test, it will survive everywhere else on the platform too.
         </p>
 
         <h2>How to Use This Steam Name Generator</h2>
-        <p>Follow these steps to get Steam username ideas:</p>
         <ol className="list-decimal pl-6 space-y-2">
+          <li>Decide roughly which style you want — clean, sweaty, funny, or aesthetic-unicode — so you know what to keep.</li>
           <li>Set how many names you want per run (1–24).</li>
-          <li>Click &quot;Generate names&quot; to get a new list of gamer tag ideas.</li>
-          <li>Use the Copy button to copy all names to your clipboard.</li>
-          <li>Paste into a notes app or document, then check Steam or your platform for availability and pick one.</li>
-          <li>Run again for more options; no account or download is required.</li>
+          <li>Click <strong>Generate names</strong> for a fresh batch of Steam-style handles.</li>
+          <li>Skim for ones that fit your style and stay under the ~32 character limit, then use the Copy button to save the list.</li>
+          <li>Paste a favorite into Steam under Edit Profile to set your display name — no need to check availability, since profile names are not unique.</li>
+          <li>If you want a matching vanity URL, test the letters-and-numbers version in your profile settings, because that one <em>can</em> be taken.</li>
         </ol>
         <p>
-          The Steam name generator runs in your browser; your settings and generated names are not sent to any server. You can run it as often as you like. Building a shortlist of five to ten options before checking availability on Steam is a good habit, since popular usernames are often taken. Have backups ready so that if your first choice is unavailable, you can try the next name on your list.
+          Everything runs locally in your browser. Your settings and the names you generate are never sent to a server, so your handle ideas stay private until you choose to set one.
         </p>
 
-        <h2>Steam and Gamer Naming Style</h2>
+        <h2>Tips for Picking the Right Steam Name</h2>
         <p>
-          Steam usernames and gamer tags often use bold, memorable word combinations: action words, nicknames, or creative spellings. This Steam name generator uses curated gamer-style elements and combines them at random so you get new combinations that fit that style. The output is for inspiration only; the tool does not check Steam or any platform for availability. You can use the names as-is or tweak spelling and punctuation to make them your own.
-        </p>
-        <p>
-          Different games and communities favor different styles. Some players prefer short, punchy gamer tags; others like longer usernames. Running the generator multiple times gives you a mix of lengths and styles. Skim the list, mark the ones you like, and then verify each one on Steam or your platform. The Steam name generator is a starting point—your final choice should fit your personality and the rules of your platform.
+          Say it out loud and imagine a teammate calling it over comms — if it is a mouthful, a shorter version will serve you better in voice chat. Check how it looks truncated, since the scoreboard and friends list both cut long names. If you went heavy on unicode, load into an actual match and confirm the glyphs render before committing; what looks great on your profile page can collapse into boxes in-game. And remember that nickname changes are unlimited and free on Steam, so you are never stuck — treat your first pick as a draft you can refine, and keep a couple of backups from the same batch in case you outgrow it.
         </p>
 
-        <h2>When to Use a Steam Name Generator</h2>
-        <p>
-          Use this Steam name generator when you need Steam or gamer-style username ideas quickly. Common use cases include creating a new Steam account or updating your profile name, choosing an in-game name for esports or casual play, and picking a stream or social handle. The same tool works for other platforms—Discord, Xbox, PlayStation, or social profiles—as inspiration. Names must be unique on each platform, so always check availability before committing.
-        </p>
-        <p>
-          Another good time to use a Steam name generator is when you are rebranding. If you have used the same gamer tag for years and want a fresh identity, generating a batch of ideas helps you explore options without pressure. Run the tool several times, paste results into one document, and remove duplicates. Then check Steam and any other platforms you use to see which names are still available. Having a shortlist saves time compared to checking one idea at a time.
-        </p>
-
-        <h2>Use Cases in Detail: Profiles, Esports, and Streams</h2>
-        <p>
-          Players use the Steam name generator when creating a new Steam account or refreshing their profile name. Esports and streamers use it for in-game names or stream handles. The same tool works for other platforms—Discord, Xbox, PlayStation, or social—as inspiration; you must check each platform for availability. Run the generator multiple times to build a shortlist, then check which names are free on your platform. The Steam name generator does not reserve or validate names; it only suggests combinations.
-        </p>
-        <p>
-          Content creators often need a consistent handle across Steam, streaming, and social media. Generating a batch of gamer tag ideas lets you test different options before you commit. Copy the names you like into a single list, then check availability on each service. If one name is taken on Steam but free elsewhere, you can still use it on the platforms where it is available, or use the generator again to find alternatives that work everywhere.
-        </p>
-
-        <h2>Tips for Choosing a Steam Username</h2>
-        <p>
-          Pick a name that is easy to remember and type. Short gamer tags are easier to say in voice chat and less likely to be mistyped. Run the Steam name generator multiple times to get a shortlist, then check Steam or your platform for availability. Have a few backups in case your first choice is taken. Avoid names that might be mistaken for someone else or that break platform rules. The generator gives you ideas only; the final choice is yours.
-        </p>
-        <p>
-          Consider how the name will look in different contexts: in-game, on a stream overlay, or in a friend list. Some combinations look great in one font but odd in another. If you plan to use the same handle across multiple games and platforms, check availability everywhere before you invest in branding. The Steam name generator is a free way to explore options without committing until you have confirmed that your chosen Steam username or gamer tag is available.
-        </p>
-
-        <h2>Running the Steam Name Generator in Batches</h2>
-        <p>
-          When you need many username ideas, run the Steam name generator multiple times. Each run gives up to 24 names. Paste each run into the same document and remove duplicates if any appear. Check availability on your platform for each name you like. There is no daily or total limit; you can run the generator as often as you want. Batching is useful when you are setting up several accounts, testing ideas for a team, or simply want a large pool of gamer tag options before making a decision.
-        </p>
-        <p>
-          Keeping a single document with all your generated Steam username ideas makes it easy to track which names you have already checked. Mark names as &quot;taken&quot; or &quot;available&quot; as you go. That way you avoid re-checking the same name on Steam or another platform. The Steam name generator does not remember previous runs, so your document is your only record of the ideas you have collected.
-        </p>
-
-        <h2>Privacy and Local Processing</h2>
-        <p>
-          This Steam name generator runs entirely in your browser. When you set the number of names and click generate, the names are created locally on your device. Your choices and the generated names are not sent to our servers. We do not store your inputs or the generated list. No account or login is required. That means your shortlist of gamer tag ideas stays on your machine unless you choose to copy it somewhere else.
-        </p>
-        <p>
-          Because generation is local, the tool is suitable for use in private or incognito windows. If you close the tab, the generated list is gone unless you have copied it. There is no server-side log of what names you generated or how many times you ran the Steam name generator. This privacy model is intentional: username brainstorming is personal, and the tool is designed so that you control where your ideas go.
-        </p>
-
-        <h2>Copying and Exporting Names</h2>
-        <p>
-          Use the Copy button to copy all generated Steam username ideas to your clipboard (one per line). Paste into a notes app or document. Check Steam or your platform for availability before committing to a name. The names are plain text, so they work in any editor or form. If you paste into a spreadsheet, each line can go in its own cell for easy tracking. The Steam name generator does not export to a file; copying and pasting is the intended way to save your shortlist.
-        </p>
-
-        <h2>Limits and Batch Size</h2>
-        <p>
-          You can request 1–24 names per run with this Steam name generator. There is no daily or total limit. Run the generator again for more options. No download or account is required. If you need more than 24 names in one go, run the tool multiple times and paste the results into one document. Removing duplicates is up to you; the generator does not track previous output.
-        </p>
-
-        <h2>No Download or Account Required</h2>
-        <p>
-          This Steam name generator runs entirely in your browser. You do not need to download software or create an account. Open the page, set how many names you want, and click generate. The tool is free and works on desktop, tablet, and phone. That makes it easy to use when you are away from your main device or when you want to quickly generate gamer tag ideas without installing anything.
-        </p>
-
-        <h2>Who Uses a Steam Name Generator?</h2>
-        <p>
-          Players use the Steam name generator when creating or updating a Steam profile, or when they want a new gamer tag for other platforms. Esports and streamers use it for in-game names or stream handles. The same tool works for Discord, Xbox, PlayStation, or social profiles—always check availability on each platform. Educators and workshop leaders sometimes use it to demonstrate username creation or digital identity in a classroom setting. No account or download is required on our site.
-        </p>
-        <p>
-          Anyone who needs a steady supply of username ideas can benefit. Whether you are a casual gamer, a competitive player, or a content creator, the Steam name generator provides a fast way to explore options. The key is to treat the output as inspiration and always verify availability on Steam and any other platform where you plan to use the name.
-        </p>
-
-        <h2>Getting the Most Out of the Steam Name Generator</h2>
-        <p>
-          Run the generator several times and paste all results into one document. Skim for names that fit your style and check your platform for availability. Shortlist five to ten options so you have backups if your first choice is taken. The Steam name generator does not check Steam or any platform; you must do that yourself. When you have a shortlist, check availability one by one. Usernames are often taken on popular services, so having several options saves time.
-        </p>
-        <p>
-          Another tip is to try different batch sizes. Sometimes generating 24 names at once gives you a good mix; other times you may prefer smaller runs so you can review each set before generating more. The tool is flexible. Use it whenever you need new Steam username ideas or gamer tag inspiration. Bookmarking the page makes it easy to return when you are ready to refresh your profile or create a new account.
-        </p>
-
-        <h2>Typical Workflow for the Steam Name Generator</h2>
-        <p>
-          A typical workflow is: open the page, set the number of names (e.g. 12 or 24), click generate, then copy the list. Paste into a notes app. Check Steam or your platform for availability for each name you like. If your first choice is taken, try the next. Run the Steam name generator again for more options. The whole process takes a few minutes. No account or download is required. Bookmark the page for quick access when you need new username ideas. The tool is free and runs in your browser with no sign-up.
-        </p>
-
-        <h2>What This Tool Does NOT Do</h2>
+        <h2>What This Tool Does and Does Not Do</h2>
         <ul>
-          <li>It does not check Steam or any platform for username availability.</li>
-          <li>It does not reserve or hold names for you.</li>
-          <li>It does not store your generated list or your settings.</li>
-          <li>It does not connect to Steam, Discord, or any external gaming service.</li>
+          <li>It generates Steam-style profile names across clean, sweaty, funny, and aesthetic-unicode styles for your display name.</li>
+          <li>It does not set your name for you or connect to your Steam account — you copy a name and paste it into Edit Profile yourself.</li>
+          <li>It does not check vanity-URL availability; profile names need no check, but the unique custom URL does, and you verify that in Steam.</li>
+          <li>It does not store your generated list or settings; everything runs locally in your browser and is gone when you close the tab unless you copy it.</li>
         </ul>
-        <p>
-          This Steam name generator produces name ideas only. It does not validate availability, create accounts, or manage your profile. You must check Steam or your chosen platform yourself and follow that platform&apos;s rules when creating or changing your username. The tool is a brainstorming aid, not a replacement for checking availability.
-        </p>
 
-        <h2>Privacy and Security Notes</h2>
+        <h2>Final Notes</h2>
         <p>
-          The Steam name generator runs entirely in your browser. It does not send data to a server and does not store generated values. This is helpful for quick brainstorming and offline use. If you refresh the page, the last generated list is cleared. Copy any names you want to keep before closing or refreshing.
-        </p>
-        <p>
-          For account security, never share your Steam password or other credentials. The generator only suggests usernames; it does not handle login or account creation. When you check availability on Steam or another platform, use the official site or app and ensure you are on a secure connection. The Steam name generator is a standalone tool and does not integrate with any login system.
-        </p>
-
-        <h2>Final Summary and When to Use This Tool</h2>
-        <p>
-          The Steam name generator provides a fast way to create username and gamer tag ideas for Steam and other gaming platforms. Set the number of names (1–24) and run as often as you like. Copy results and check your platform for availability. The tool runs locally in your browser with no sign-up. Keep a shortlist of options in case your first choice is taken. No download or account is required. The generator is free and works on any device.
-        </p>
-        <p>
-          Use this Steam name generator when you need Steam username ideas, gamer tag inspiration, or a quick way to explore options before checking availability. It is best for brainstorming, rebranding, and building a shortlist. Always verify availability on Steam or your chosen platform before committing to a name. The tool is a practical free resource for gaming usernames and gamer tags.
+          Steam is one of the few platforms where naming is genuinely playful, because the system that matters (SteamID) is invisible and the name you wear is free, changeable, and unconstrained by uniqueness. That is why one player&apos;s profile can read like a pro&apos;s clean tag while the next is an elaborate killfeed joke and the one after that is wrapped in fancy unicode. This generator gives you a fast pool of ideas across all those styles. Pick a lane, generate a batch, keep what reads well on a friends list and in your favorite games, and set it knowing you can always change it again tomorrow.
         </p>
       </div>
     </section>
@@ -199,30 +144,29 @@ function createWriteUp() {
 }
 
 const pageFaqs: FaqItem[] = [
-  { category: 'General', question: 'What is a Steam name generator?', answer: 'A Steam name generator is an online tool that creates usernames and gamer tags for Steam and other gaming platforms. You get unique Steam username ideas at the click of a button. The generator combines curated gamer-style words at random in your browser so each run produces new combinations. This free Steam name generator runs locally with no sign-up and does not send generated names to any server. Always check Steam or your platform for availability before committing to a name.' },
-  { category: 'Usage', question: 'How do I use the Steam name generator?', answer: 'Set how many names you want per run (1–24), click "Generate names" to get a new list of gamer tag ideas, then use the Copy button to copy all names to your clipboard. Paste into a notes app and check Steam or your platform for availability. Run again for more options; no sign-up is required. The Steam name generator runs in your browser so your settings and generated names are not sent to any server. Building a shortlist of five to ten options before checking availability is a good habit.' },
-  { category: 'General', question: 'Is the Steam name generator free?', answer: 'Yes. This Steam name generator is free to use in your browser. You can generate Steam username ideas as often as you like without creating an account or paying. The tool runs locally on your device and does not require a download. There is no daily or total limit on how many times you can run the generator.' },
-  { category: 'Use cases', question: 'Can I use the names for Steam?', answer: 'Yes. The Steam name generator produces username ideas that you can use on Steam. Names must be unique on the platform, so always check Steam\'s availability before committing. Run the generator multiple times to build a shortlist of gamer tag ideas, then check which names are available on Steam. The tool does not reserve or validate names; it only suggests combinations for you to verify on the platform.' },
-  { category: 'Privacy', question: 'Is my data sent to a server when I use the Steam name generator?', answer: 'No. This Steam name generator runs in your browser. When you set the number of names and click generate, the names are created locally on your device. Your choices and the generated Steam username ideas are not sent to our servers. We do not store your inputs or the generated list. Generation is fully local and private.' },
-  { category: 'Compatibility', question: 'Does the Steam name generator work on mobile?', answer: 'Yes. The Steam name generator runs in a web browser and works on desktop, tablet, and phone. You do not need to install an app. Open the page, choose how many names you want, then generate. On a phone you can generate a short list and copy it into notes or check availability on Steam\'s app. The tool is responsive and works on any device with a modern browser.' },
-  { category: 'Limits', question: 'How many names can I generate with the Steam name generator?', answer: 'You can request 1–24 names per run with this Steam name generator. If you need more than 24 gamer tag ideas, run the generator again; each run produces a new random set. There is no daily or total limit. Paste multiple runs into one document and remove duplicates if needed. The batch size is designed to keep the list manageable while giving you enough Steam username options to shortlist.' },
-  { category: 'Usage', question: 'Can I copy the names from the Steam name generator?', answer: 'Yes. Use the Copy button on this Steam name generator to copy all generated names to your clipboard. Paste into a notes app or document. The names are plain text, one per line, so they work in any editor or form. Check Steam or your platform for availability before choosing a name. Copying is the intended way to save your shortlist of gamer tag ideas.' },
-  { category: 'General', question: 'Do I need an account to use the Steam name generator?', answer: 'No. This Steam name generator works without sign-up or login. The tool runs entirely in your browser. You do not need to create an account on our site to use it. Open the page, set how many Steam username ideas you want, click generate, and copy the results. No email, password, or registration is required.' },
-  { category: 'Use cases', question: 'Can I use the Steam name generator for other platforms?', answer: 'Yes. The names work as ideas for any gaming or social platform—Discord, Xbox, PlayStation, or others. The Steam name generator is built for Steam-style gamer tags but the output can inspire usernames elsewhere. Check each platform\'s availability; names must be unique on each service. The generator does not check availability for you, so always verify on the platform where you plan to use the name.' },
-  { category: 'Privacy', question: 'Do you store the names I generate with the Steam name generator?', answer: 'No. Generation happens in your browser. We do not receive or store the Steam username ideas or your settings. The Steam name generator runs locally on your device. You can use the tool in a private or incognito window if you prefer. If you refresh the page, the last generated list is cleared unless you have already copied it.' },
-  { category: 'Limits', question: 'Can I get more than 24 names from the Steam name generator?', answer: 'Each run of this Steam name generator gives up to 24 names. To get more gamer tag ideas, run the generator again; each run produces a new random set. You can paste multiple runs into one document and then remove duplicates. There is no daily or total limit. Batching runs is the intended workflow when you need a large pool of Steam username options.' },
-  { category: 'General', question: 'Why "Steam" specifically in a Steam name generator?', answer: 'Steam is a major gaming platform, and people often search for Steam username ideas and gamer tag generators. The Steam name generator serves that intent and produces names that fit Steam and similar gaming environments. The same ideas work for other platforms—Discord, Xbox, PlayStation—as inspiration. Use the names as gamer tags wherever you need a unique username; always check availability on the platform you choose.' },
-  { category: 'Use cases', question: 'Can I use the Steam name generator for esports?', answer: 'Yes. Use the Steam name generator as inspiration for in-game names or stream handles. Run it multiple times to get a shortlist of gamer tag ideas, then check availability on your platform. The tool is free and runs in your browser with no sign-up. Many esports and streamers use Steam name generators to brainstorm handles before verifying availability on Steam, Twitch, or other services.' },
-  { category: 'Technical', question: 'How are the names generated in the Steam name generator?', answer: 'This Steam name generator uses curated gamer-style words and elements. When you click generate, the tool randomly combines these in your browser so each run is different. No names or settings are sent to a server. The result is for inspiration only; we do not check Steam or any platform for availability. The word lists are designed to sound like gaming usernames and gamer tags—bold, memorable, and easy to type.' },
-  { category: 'General', question: 'Are the names from the Steam name generator unique?', answer: 'The names are randomly combined from our word list, so each run can produce new combinations. We do not check Steam or any platform for availability. You must check yourself whether a Steam username or gamer tag is available before using it on your profile. The generator helps you discover ideas; uniqueness on a given platform depends on that platform\'s current registrations.' },
-  { category: 'Use cases', question: 'Can teachers use the Steam name generator?', answer: 'Yes. Teachers can use this Steam name generator for creative or tech-related activities—for example when students are learning about usernames, digital identity, or online profiles. Emphasize that the tool is for inspiration and that names must be checked for availability on any platform. The Steam name generator is free and runs in the browser with no sign-up, so it is easy to use in a classroom or workshop setting.' },
-  { category: 'General', question: 'How do I cite the Steam name generator?', answer: 'For academic or formal use you can cite this Steam name generator as a source of inspiration for usernames and gamer tags. The generated names are algorithm-produced; you can use them freely. A brief acknowledgment is optional. We do not require attribution. The tool is a free, browser-based utility for Steam username ideas and gamer tag brainstorming.' },
-  { category: 'Use cases', question: 'Can I use the Steam name generator for a new Steam account?', answer: 'Yes. When creating a new Steam account you need a unique username. Run this Steam name generator to get gamer tag ideas, copy the list, then check Steam for availability. Pick a name that is available and that you like. The tool runs in your browser with no sign-up. Building a shortlist of five to ten options before you start the sign-up process saves time, since many Steam usernames are already taken.' },
-  { category: 'General', question: 'Do the names from the Steam name generator work for streaming?', answer: 'Yes. The Steam name generator produces username ideas that can work for streaming platforms, in-game names, or social handles. Use the names as inspiration and check your platform for availability. Run the generator multiple times to build a shortlist of options. Many streamers use Steam name generators to brainstorm stream handles before checking availability on Twitch, YouTube, or other services.' },
-  { category: 'Best practices', question: 'What is the best workflow for the Steam name generator?', answer: 'Open the page, set the number of names (e.g. 12 or 24), click generate, then copy the list. Paste into a notes app. Check Steam or your platform for availability for each name you like. If your first choice is taken, try the next. Run the Steam name generator again for more options. Keep a shortlist of five to ten gamer tag ideas so you have backups. The tool is free and runs in your browser with no sign-up.' },
-  { category: 'Best practices', question: 'Should I run the Steam name generator multiple times?', answer: 'Yes. Running the Steam name generator multiple times is the intended workflow when you want a large pool of Steam username ideas. Paste each run into one document and remove duplicates if any appear. Then check availability on Steam or your platform for each name you like. Having a shortlist saves time compared to checking one idea at a time. There is no daily or total limit on how many times you can run the generator.' },
-  { category: 'Troubleshooting', question: 'Why is my first choice from the Steam name generator taken?', answer: 'Popular usernames and gamer tags are often already in use on Steam and other platforms. The Steam name generator does not check availability; it only suggests combinations. Always have a shortlist of five to ten options so you have backups. Run the generator again for more Steam username ideas and check availability on your platform before committing. This is normal when using any name generator for gaming platforms.' },
-  { category: 'Troubleshooting', question: 'Can I use the Steam name generator offline?', answer: 'Yes. Once the page is loaded, the Steam name generator runs entirely in your browser and does not require a network connection to generate names. You can generate gamer tag ideas offline. Copying and pasting also works offline. You will need a connection only to open the page initially and to check availability on Steam or another platform.' },
+  { category: 'General', question: 'What is a Steam name generator?', answer: 'A Steam name generator is a browser tool that creates profile-name ideas for Valve\'s PC gaming platform across the styles players actually use: clean, sweaty/tryhard, funny/meme, and aesthetic-unicode. It shuffles curated, Steam-flavored elements locally so each run is fresh. Because Steam display names are not unique and are free to change, you can take any result and set it as your name without hitting a "taken" message. It runs with no sign-up and stores nothing.' },
+  { category: 'Steam basics', question: 'Do Steam profile names have to be unique?', answer: 'No, and that is the defining quirk of Steam. Your display name is cosmetic — Steam identifies your account by a permanent numeric SteamID, not by your visible name. Three players in the same lobby can all share the exact same profile name and the game still tells them apart by SteamID. That is why this generator never needs an availability check for the display name: pick whatever you like and set it.' },
+  { category: 'Steam basics', question: 'What is the difference between my Steam name and my vanity URL?', answer: 'Your profile name (display name) is the cosmetic, changeable, non-unique name shown in chat, games, and your profile. Your custom URL — the vanity URL like steamcommunity.com/id/yourname — is a single unique web address that can only use letters, numbers, hyphens, and underscores, and can be claimed by someone else first. The names here are for the display-name slot; if you want a matching URL, test its plain letters-and-numbers form in Edit Profile.' },
+  { category: 'Steam basics', question: 'What is a SteamID and why does it matter for naming?', answer: 'A SteamID is the permanent numeric identifier (such as a SteamID64 starting 7656119...) that Steam assigns your account and never changes. Because it, not your name, is what tracks your friends, inventory, and stats, your visible name is decoupled from your identity. That is precisely what lets you use almost any name, change it endlessly, and share a name with other players without conflict.' },
+  { category: 'Changing names', question: 'How often can I change my Steam name, and does it cost anything?', answer: 'Nickname changes on Steam are unlimited and completely free. There is no per-change fee and no meaningful rate limit for normal use, so you can swap a clean handle for a meme name on the weekend and switch back Monday. You change it under Edit Profile in the Steam client or website; the new name appears everywhere instantly. This is why most players treat a generated name as a draft they can refine anytime.' },
+  { category: 'Limits', question: 'What is the character limit for a Steam profile name?', answer: 'Steam profile names cap at roughly 32 characters. Decorative unicode and symbols count toward that limit just like letters, so heavily styled names hit the ceiling faster than plain ones. Leading and trailing plain spaces get trimmed, so padding tricks are unreliable. Keep generated meme or aesthetic names under the limit so they are not cut off in your profile or the in-game scoreboard.' },
+  { category: 'Styles', question: 'What name styles can this Steam generator produce?', answer: 'It covers the four recognizable Steam styles: clean (tidy, readable, ages well and pairs with a vanity URL), sweaty/tryhard (short, hard-edged competitive handles for CS2 and ranked Dota 2), funny/meme (wordplay, references, and killfeed gags), and aesthetic-unicode (fancy text and symbol-wrapped names). Decide which lane you want before generating so you know which results to keep from a batch.' },
+  { category: 'Styles', question: 'What makes a Steam name "sweaty"?', answer: 'A sweaty or tryhard name is the competitive-shooter aesthetic born from Counter-Strike: short, sharp, hard-edged, often with stylized or doubled letters and sometimes a brief uppercase tag. It signals that you grind your aim. Sweaty names trend short on purpose because long names get truncated in the CS2 scoreboard, and they should say cleanly over voice comms. Generate a batch and keep the punchy, intimidating ones.' },
+  { category: 'Styles', question: 'Why are funny and meme Steam names so common?', answer: 'Because Steam names do not have to be unique, you can use the exact joke you want instead of the nearest unclaimed version. That freedom fuels the meme culture: killfeed gags (names written so "X killed Y" becomes a sentence), self-deprecating handles, and reference-stuffed names. Since changes are free, a meme name is low-commitment — wear it for a session and swap back. Generate a large batch and keep only the few that actually make you laugh.' },
+  { category: 'Styles', question: 'Can I use unicode symbols and fancy text in my Steam name?', answer: 'Yes. Steam allows unicode, so fancy fonts, small-caps glyphs, and decorative symbols or brackets all work in your display name. The catch is rendering: the Steam client shows them well, but inside a game like CS2 or Dota 2 the font may not support those glyphs and will fall back to boxes or plain text. Test any unicode name in an actual match, and consider a readable core word with light symbols so it degrades gracefully.' },
+  { category: 'Usage', question: 'How do I set a generated name as my Steam display name?', answer: 'Copy a name you like, open Steam, go to your profile and click Edit Profile, and paste it into the Profile Name field, then save. No availability check is needed for the display name since it is not unique. The change shows up immediately in chat, your friends list, and every game you launch. If you want a matching vanity URL, set that separately in the same Edit Profile area.' },
+  { category: 'Usage', question: 'Does this tool change my Steam name for me?', answer: 'No. The generator only produces name ideas in your browser; it never connects to or signs into your Steam account. You copy a name and paste it into Edit Profile yourself. Keeping it disconnected is deliberate — you should never enter your Steam credentials into a name tool. Setting the name takes a few seconds inside the official Steam client or website.' },
+  { category: 'Games', question: 'Will my generated name work in CS2, Dota 2, and other games?', answer: 'Yes — your Steam display name is the same name you carry into every title launched through Steam, including CS2, Dota 2, and Team Fortress 2. Pick something readable in a fast scoreboard and over voice. The one thing to watch is unicode: a fancy name that looks great on your profile may render as boxes inside a particular game, so test heavy styling in an actual match.' },
+  { category: 'Best practices', question: 'How do I keep my name readable on the friends list?', answer: 'Your name appears on friends\' lists, in invite popups, and in chat, so over-styling costs you. The friendliest names are pronounceable and at least partly typeable in plain characters so friends can @-mention you. If you bounce between sweaty competitive sessions and chill co-op, many players keep one solid readable name year-round and reserve meme or unicode experiments for short stints.' },
+  { category: 'Vanity URL', question: 'Why was my Steam name available but my custom URL was taken?', answer: 'Because they follow opposite rules. The display name is non-unique, so it is always "available." The vanity URL is globally unique across all of Steam and uses only letters, numbers, hyphens, and underscores, so a popular word may already be claimed by someone else. If the plain version of your favorite name is gone as a URL, you can still use it as your display name, or add a hyphen or word to the URL.' },
+  { category: 'Vanity URL', question: 'How do I get a matching vanity URL for my name?', answer: 'Take a generated name, strip spaces and symbols, and lowercase it into a letters-and-numbers form. Open Edit Profile in Steam, go to the custom URL field, and enter it — Steam will tell you if it is free. Clean, short names make the best URLs because they survive that stripping intact; meme and unicode-heavy names usually do not translate well into a URL. This is the only part of Steam naming where you truly need an availability check.' },
+  { category: 'Privacy', question: 'Does this Steam name generator send my data to a server?', answer: 'No. Every name is built in your browser when you click generate; nothing about your style choices or the generated list is transmitted to us or stored. It works in a private window and has no login. Because the tool never touches your Steam account, there is also no path for it to expose anything about your profile — it simply hands you text to copy.' },
+  { category: 'General', question: 'Is the Steam name generator free?', answer: 'Yes, completely free with no account, payment, or download. Generate as many clean, sweaty, funny, or unicode Steam names as you like, as often as you like. This pairs nicely with Steam itself, where nickname changes are also free and unlimited — so the whole process of brainstorming and setting a new name costs you nothing but a minute.' },
+  { category: 'Compatibility', question: 'Does it work on mobile?', answer: 'Yes. The generator runs in any modern mobile browser with no app install, so you can brainstorm Steam names on your phone and copy a favorite into your notes. To actually set the name you would use the Steam mobile app or the website\'s Edit Profile, but the idea-generating part works anywhere you have a browser.' },
+  { category: 'Limits', question: 'How many names can I generate at once?', answer: 'You can request 1–24 names per run, and there is no daily or total cap — run it again for a fresh batch. Generating a larger batch is especially useful for the funny and unicode styles, where you want to skim many options and keep only the few standouts. Paste several runs into one note if you want a big pool to shortlist from.' },
+  { category: 'Technical', question: 'How are the names generated?', answer: 'The tool combines curated, Steam-flavored elements tuned to the four styles — clean words, hard-edged sweaty fragments, meme-friendly phrases, and unicode-ready cores — and shuffles them randomly in your browser. Each run yields a new set, and nothing is sent to a server. The output is inspiration: a starting pool you trim and tweak to taste rather than a fixed list.' },
+  { category: 'Usage', question: 'Can I edit the names this generator produces?', answer: 'Absolutely — treat output as a draft. Adjust spelling, add or remove a symbol, swap a word from one result into another, or wrap a clean handle in light unicode. Because Steam allows unlimited free name changes, you can even set a rough idea, see how it looks in-game, and refine it later. Many players keep a couple of backups from the same batch in case they outgrow their first pick.' },
+  { category: 'Troubleshooting', question: 'My fancy unicode name shows as boxes in-game — what happened?', answer: 'The game\'s font does not support those unicode glyphs, so it falls back to boxes, question marks, or stripped characters even though the name looks fine on your Steam profile. The fix is to test names in an actual match before committing, and to favor a readable plain-text core with only light symbols on the sides. That way the name still reads even when the decorative characters do not render.' },
 ];
 
 export default async function SteamNameGeneratorPage() {
@@ -240,7 +184,7 @@ export default async function SteamNameGeneratorPage() {
         {createWriteUp()}
         <div className="mt-10 space-y-3">
           <h2 className="text-2xl font-semibold text-slate-900">Frequently Asked Questions</h2>
-          <p className="text-slate-700">Common questions about the Steam name generator.</p>
+          <p className="text-slate-700">Common questions about the Steam profile name generator — display names, vanity URLs, and styles.</p>
         </div>
         <FAQSection items={pageFaqs} />
         <FaqJsonLd faqs={pageFaqs} />

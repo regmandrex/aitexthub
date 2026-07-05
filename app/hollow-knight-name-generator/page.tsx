@@ -18,8 +18,8 @@ const toolSlug = 'hollow-knight-name-generator';
 export async function generateMetadata(): Promise<Metadata> {
   return buildToolMeta({
     title: 'Hollow Knight Name Generator',
-    description: 'Free hollow knight name generator for character and creature names. Create Hollow Knight-style name ideas in your browser with no sign-up.',
-    seoTitle: 'Hollow Knight Name Generator – Character & Creature Name Ideas',
+    description: 'Free Hollow Knight name generator for bug characters, vessels, and OCs set in Hallownest. Soft, melancholy, insect-inspired names in the Team Cherry style — in your browser, no sign-up.',
+    seoTitle: 'Hollow Knight Name Generator – Hallownest Bug & OC Names',
     urlPath: `/${toolSlug}`,
   });
 }
@@ -28,170 +28,78 @@ function createWriteUp() {
   return (
     <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
-        <h2>Hollow Knight Name Generator – Character & Creature Name Ideas</h2>
-        <h2>Introduction</h2>
+        <h2>Hollow Knight Name Generator – Hallownest Bug &amp; OC Names</h2>
         <p>
-          This guide explains how to use a Hollow Knight name generator to create character and creature names for Hollow Knight and other games and fiction. The tool runs in your browser and produces unique, memorable name ideas at the click of a button. It is designed for players who want Hollow Knight name ideas quickly without sign-up or download. The generator does not store data and runs entirely in your browser. You get 1–24 names per run and can run it as often as you like. Always check your game or story for availability before committing to a name.
+          This Hollow Knight name generator creates names that fit the quiet, melancholy world of Hallownest — names for an original bug character, a vessel, or a knight you are writing into Team Cherry&apos;s ruined kingdom. Hollow Knight&apos;s naming style is gentle and a little sad: soft sounds, insect roots, and an old-fairy-tale weight that suits a dead kingdom of bugs. The generator leans into that register so the name you pick sounds like it belongs on a bench in Dirtmouth rather than in a loud modern game. It runs in your browser with no sign-up and stores nothing.
         </p>
         <p>
-          People search for Hollow Knight name ideas and character name generators when setting up a new profile, an esports handle, or a stream name. This Hollow Knight name generator serves that intent with one free, browser-based tool. Whether you need a single standout character name or a shortlist of options, the generator gives you a pool of ideas. Names must be unique on each service, so verifying availability on Hollow Knight or your chosen platform is an essential step after generating ideas.
-        </p>
-
-        <h2>What Is a Hollow Knight Name Generator?</h2>
-        <p>
-          A Hollow Knight name generator is an online tool that creates character and creature names suitable for Hollow Knight and other games and fiction. You get unique name ideas at the click of a button. The generator combines curated Hollow Knight-style words and elements at random so each run produces new combinations. The output is for inspiration only; you must check your platform for availability. This free Hollow Knight name generator runs in your browser with no sign-up and does not send generated names to any server.
-        </p>
-        <p>
-          The output is plain text, one name per line. You can copy the full list and paste it into a notes app, then check your game or story for availability and pick one. Many users run the Hollow Knight name generator multiple times to build a shortlist before deciding. Because names are created locally, your choices stay private and nothing is stored on our servers.
-        </p>
-        <p>
-          Hollow Knight name generators are useful when you are tired of reusing the same username or when you want a fresh character name that fits your style. The tool does not guarantee that a name is available; it only suggests combinations. Always confirm availability on your game or story before you commit to a new username.
+          Team Cherry&apos;s names are part of why Hallownest feels so alive in its quietness. Hornet, Quirrel, Cornifer, Myla, Zote — soft, slightly archaic, often insect-derived, each one carrying a small mournful charm. This page breaks down that style so an OC you name feels like it was always wandering the kingdom&apos;s ruins.
         </p>
 
-        <h2>Why This Hollow Knight Name Generator Matters</h2>
+        <h2>The Hollow Knight Naming Style</h2>
         <p>
-          Choosing a memorable Hollow Knight name or character name can be time-consuming. A Hollow Knight name generator speeds up brainstorming. Instead of staring at a blank field, you get options in seconds. You can run it on a phone or desktop, copy the names you like, and then check availability on your game or story. The tool is free and does not require an account, so there is no friction to trying many ideas.
+          Hollow Knight&apos;s names share a consistent, recognizable feel. Knowing its building blocks lets you generate names that sit naturally in Hallownest:
+        </p>
+        <ul>
+          <li><strong>Soft and gentle.</strong> Names lean on soft consonants and quiet sounds — nothing harsh or aggressive. Even the warriors have a melancholy softness (Hornet, Ze&apos;mer).</li>
+          <li><strong>Insect and nature roots.</strong> Many names derive from bugs, plants, and natural words, fitting a kingdom of insects (Cornifer, Quirrel, the Mantis tribe).</li>
+          <li><strong>Old fairy-tale weight.</strong> The tone is archaic and storybook — names feel pulled from an old, sad legend rather than a modern roster.</li>
+          <li><strong>Short and mournful.</strong> Most names are one or two syllables with a wistful quality. The kingdom is dead, and the names carry that quiet grief.</li>
+        </ul>
+
+        <h2>Naming a Vessel or Knight</h2>
+        <p>
+          The player character — the Knight — is a vessel, one of the silent, hollow beings born of the Abyss. Many vessels go unnamed, which makes naming an OC vessel a meaningful choice: a soft, simple, almost ceremonial name fits a being meant to be empty. If you are writing or drawing an OC vessel, generate a batch and look for the quietest, gentlest results — names that sound like they belong to something solemn and a little tragic.
         </p>
         <p>
-          The generator also keeps your ideas private. Names are created in your browser and are not sent to our servers. You can use it in a private or incognito window if you prefer. Because generation is local, there is no risk of your shortlist being stored or logged. That matters when you are testing ideas before you settle on a final Hollow Knight name or character name.
-        </p>
-        <p>
-          A good Hollow Knight name generator also standardizes the workflow: set how many names you want, click generate, copy the list, and check availability. You get a consistent way to explore username ideas without writing scripts or visiting multiple sites. The output is easy to paste into notes or a document so you can track which names you have already checked on Hollow Knight or other platforms.
+          For a named bug character — a wanderer, a scholar, a warrior — you have more room. A scholar like Quirrel carries a soft, curious name; a warrior like Hornet has a sharper but still gentle one; a humble villager like Myla has something plain and sweet. Match the sound of the name to the character&apos;s role and it will slot believably into Hallownest&apos;s cast.
         </p>
 
-        <h2>How the Hollow Knight Name Generator Works (Step by Step)</h2>
+        <h2>Names by Region and Tribe</h2>
         <p>
-          When you open the page, you choose how many names you want per run (1–24). Clicking &quot;Generate names&quot; triggers the tool to randomly combine curated Hollow Knight-style elements in your browser. Each run is independent; no names or settings are sent to a server. The result is a list of Hollow Knight name ideas, one per line. You can copy the full list with one click and paste it into a notes app. To get more ideas, run the generator again. The tool does not check Hollow Knight or any platform for availability—you must do that yourself.
+          Hallownest has distinct regions and bug tribes, and matching a name to one deepens an OC:
         </p>
+        <ul>
+          <li><strong>Dirtmouth and the surface.</strong> Plain, wistful names for the last few survivors clinging to the kingdom&apos;s edge.</li>
+          <li><strong>The Mantis Village.</strong> Sharper, more formal names for the proud, disciplined Mantis tribe.</li>
+          <li><strong>Deepnest.</strong> Stranger, darker, more unsettling names for the spider-kin of the deep.</li>
+          <li><strong>The City of Tears.</strong> More refined, sorrowful names for the once-great capital and its ghosts.</li>
+          <li><strong>The Hive.</strong> Warm, buzzing, bee-derived names for the bees of the Hive.</li>
+        </ul>
+
+        <h2>Building an OC for Hallownest</h2>
         <p>
-          The underlying word lists are designed to sound like gaming character and creature names: bold, memorable, and easy to type. The generator shuffles and combines these elements so that each run produces different combinations. That randomness helps you discover names you might not have thought of on your own. Because everything runs in the browser, the Hollow Knight name generator works offline once the page is loaded and does not depend on a backend service.
-        </p>
-        <p>
-          There are no hidden steps. You set the count, click generate, and receive a list. Copying is one click; pasting into your own document keeps your shortlist in one place. Running the Hollow Knight name generator multiple times is the intended workflow when you want a large pool of character name ideas before checking availability.
+          Fan artists and writers love creating original bugs for Hollow Knight, and the name is the foundation. A strong Hallownest OC name does two things: it sounds soft and archaic in the Team Cherry register, and it hints at the bug the character is — a moth, a beetle, a spider, a snail. Generate a batch, then read each name imagining it spoken quietly on a lonely bench; the ones that carry that gentle, wistful weight are the keepers. You can also derive a name directly from the insect your OC is based on, which is exactly how many canon names were built.
         </p>
 
         <h2>How to Use This Hollow Knight Name Generator</h2>
-        <p>Follow these steps to get Hollow Knight name ideas:</p>
         <ol className="list-decimal pl-6 space-y-2">
           <li>Set how many names you want per run (1–24).</li>
-          <li>Click &quot;Generate names&quot; to get a new list of character name ideas.</li>
-          <li>Use the Copy button to copy all names to your clipboard.</li>
-          <li>Paste into a notes app or document, then check your game or story for availability and pick one.</li>
-          <li>Run again for more options; no account or download is required.</li>
+          <li>Click <strong>Generate names</strong> to get a batch of Hallownest-style names.</li>
+          <li>Read them softly and keep the ones that feel gentle and a little mournful.</li>
+          <li>Copy the list into your notes and shortlist names that match your OC&apos;s bug and region.</li>
+          <li>Run again for more — no limit, no account, no download.</li>
         </ol>
         <p>
-          The Hollow Knight name generator runs in your browser; your settings and generated names are not sent to any server. You can run it as often as you like. Building a shortlist of five to ten options before checking availability on Hollow Knight is a good habit, since popular usernames are often taken. Have backups ready so that if your first choice is unavailable, you can try the next name on your list.
+          Everything runs locally in your browser. Your settings and generated names are never sent to a server, so your character ideas stay private.
         </p>
 
-        <h2>Hollow Knight and Gamer Naming Style</h2>
+        <h2>Tips for a Hallownest-Fitting Name</h2>
         <p>
-          Hollow Knight names and character names often use bold, memorable word combinations: action words, nicknames, or creative spellings. This Hollow Knight name generator uses curated Hollow Knight-style elements and combines them at random so you get new combinations that fit that style. The output is for inspiration only; the tool does not check Hollow Knight or any platform for availability. You can use the names as-is or tweak spelling and punctuation to make them your own.
-        </p>
-        <p>
-          Different games and communities favor different styles. Some players prefer short, punchy character names; others like longer usernames. Running the generator multiple times gives you a mix of lengths and styles. Skim the list, mark the ones you like, and then verify each one on your game or story. The Hollow Knight name generator is a starting point—your final choice should fit your personality and the rules of your platform.
+          Favor soft consonants and short, wistful sounds — Hollow Knight names whisper rather than shout. Derive from an insect or natural word when you can; it is the most authentic route to the Team Cherry feel. Keep it archaic and a little sad, as though it came from an old legend about a fallen kingdom. If a generated name is close but too modern or harsh, soften a consonant or trim a syllable until it sounds like it belongs to a quiet, hollow thing wandering the ruins.
         </p>
 
-        <h2>When to Use a Hollow Knight Name Generator</h2>
-        <p>
-          Use this Hollow Knight name generator when you need Hollow Knight or Hollow Knight-style username ideas quickly. Common use cases include creating a new Hollow Knight account or updating your profile name, choosing an in-game name for esports or casual play, and picking a stream or social handle. The same tool works for other platforms—Discord, Xbox, PlayStation, or social profiles—as inspiration. Names must be unique on each platform, so always check availability before committing.
-        </p>
-        <p>
-          Another good time to use a Hollow Knight name generator is when you are rebranding. If you have used the same character name for years and want a fresh identity, generating a batch of ideas helps you explore options without pressure. Run the tool several times, paste results into one document, and remove duplicates. Then check Hollow Knight and any other platforms you use to see which names are still available. Having a shortlist saves time compared to checking one idea at a time.
-        </p>
-
-        <h2>Use Cases in Detail: Profiles, Esports, and Streams</h2>
-        <p>
-          Players use the Hollow Knight name generator when creating a new Hollow Knight account or refreshing their profile name. Esports and streamers use it for in-game names or stream handles. The same tool works for other platforms—Discord, Xbox, PlayStation, or social—as inspiration; you must check each platform for availability. Run the generator multiple times to build a shortlist, then check which names are free on your platform. The Hollow Knight name generator does not reserve or validate names; it only suggests combinations.
-        </p>
-        <p>
-          Content creators often need a consistent handle across Steam, streaming, and social media. Generating a batch of character name ideas lets you test different options before you commit. Copy the names you like into a single list, then check availability on each service. If one name is taken on Hollow Knight but free elsewhere, you can still use it on the platforms where it is available, or use the generator again to find alternatives that work everywhere.
-        </p>
-
-        <h2>Tips for Choosing a Hollow Knight Username</h2>
-        <p>
-          Pick a name that is easy to remember and type. Short character names are easier to say in voice chat and less likely to be mistyped. Run the Hollow Knight name generator multiple times to get a shortlist, then check your game or story for availability. Have a few backups in case your first choice is taken. Avoid names that might be mistaken for someone else or that break platform rules. The generator gives you ideas only; the final choice is yours.
-        </p>
-        <p>
-          Consider how the name will look in different contexts: in-game, on a stream overlay, or in a friend list. Some combinations look great in one font but odd in another. If you plan to use the same handle across multiple games and platforms, check availability everywhere before you invest in branding. The Hollow Knight name generator is a free way to explore options without committing until you have confirmed that your chosen Hollow Knight name or character name is available.
-        </p>
-
-        <h2>Running the Hollow Knight Name Generator in Batches</h2>
-        <p>
-          When you need many username ideas, run the Hollow Knight name generator multiple times. Each run gives up to 24 names. Paste each run into the same document and remove duplicates if any appear. Check availability on your platform for each name you like. There is no daily or total limit; you can run the generator as often as you want. Batching is useful when you are setting up several accounts, testing ideas for a team, or simply want a large pool of character name options before making a decision.
-        </p>
-        <p>
-          Keeping a single document with all your generated Hollow Knight name ideas makes it easy to track which names you have already checked. Mark names as &quot;taken&quot; or &quot;available&quot; as you go. That way you avoid re-checking the same name on Hollow Knight or another platform. The Hollow Knight name generator does not remember previous runs, so your document is your only record of the ideas you have collected.
-        </p>
-
-        <h2>Privacy and Local Processing</h2>
-        <p>
-          This Hollow Knight name generator runs entirely in your browser. When you set the number of names and click generate, the names are created locally on your device. Your choices and the generated names are not sent to our servers. We do not store your inputs or the generated list. No account or login is required. That means your shortlist of character name ideas stays on your machine unless you choose to copy it somewhere else.
-        </p>
-        <p>
-          Because generation is local, the tool is suitable for use in private or incognito windows. If you close the tab, the generated list is gone unless you have copied it. There is no server-side log of what names you generated or how many times you ran the Hollow Knight name generator. This privacy model is intentional: username brainstorming is personal, and the tool is designed so that you control where your ideas go.
-        </p>
-
-        <h2>Copying and Exporting Names</h2>
-        <p>
-          Use the Copy button to copy all generated Hollow Knight name ideas to your clipboard (one per line). Paste into a notes app or document. Check your game or story for availability before committing to a name. The names are plain text, so they work in any editor or form. If you paste into a spreadsheet, each line can go in its own cell for easy tracking. The Hollow Knight name generator does not export to a file; copying and pasting is the intended way to save your shortlist.
-        </p>
-
-        <h2>Limits and Batch Size</h2>
-        <p>
-          You can request 1–24 names per run with this Hollow Knight name generator. There is no daily or total limit. Run the generator again for more options. No download or account is required. If you need more than 24 names in one go, run the tool multiple times and paste the results into one document. Removing duplicates is up to you; the generator does not track previous output.
-        </p>
-
-        <h2>No Download or Account Required</h2>
-        <p>
-          This Hollow Knight name generator runs entirely in your browser. You do not need to download software or create an account. Open the page, set how many names you want, and click generate. The tool is free and works on desktop, tablet, and phone. That makes it easy to use when you are away from your main device or when you want to quickly generate character name ideas without installing anything.
-        </p>
-
-        <h2>Who Uses a Hollow Knight Name Generator?</h2>
-        <p>
-          Players use the Hollow Knight name generator when creating or updating a Hollow Knight profile, or when they want a new character name for other platforms. Esports and streamers use it for in-game names or stream handles. The same tool works for Discord, Xbox, PlayStation, or social profiles—always check availability on each platform. Educators and workshop leaders sometimes use it to demonstrate username creation or digital identity in a classroom setting. No account or download is required on our site.
-        </p>
-        <p>
-          Anyone who needs a steady supply of username ideas can benefit. Whether you are a casual gamer, a competitive player, or a content creator, the Hollow Knight name generator provides a fast way to explore options. The key is to treat the output as inspiration and always verify availability on Hollow Knight and any other platform where you plan to use the name.
-        </p>
-
-        <h2>Getting the Most Out of the Hollow Knight Name Generator</h2>
-        <p>
-          Run the generator several times and paste all results into one document. Skim for names that fit your style and check your platform for availability. Shortlist five to ten options so you have backups if your first choice is taken. The Hollow Knight name generator does not check Hollow Knight or any platform; you must do that yourself. When you have a shortlist, check availability one by one. Usernames are often taken on popular services, so having several options saves time.
-        </p>
-        <p>
-          Another tip is to try different batch sizes. Sometimes generating 24 names at once gives you a good mix; other times you may prefer smaller runs so you can review each set before generating more. The tool is flexible. Use it whenever you need new Hollow Knight name ideas or character name inspiration. Bookmarking the page makes it easy to return when you are ready to refresh your profile or create a new account.
-        </p>
-
-        <h2>Typical Workflow for the Hollow Knight Name Generator</h2>
-        <p>
-          A typical workflow is: open the page, set the number of names (e.g. 12 or 24), click generate, then copy the list. Paste into a notes app. Check your game or story for availability for each name you like. If your first choice is taken, try the next. Run the Hollow Knight name generator again for more options. The whole process takes a few minutes. No account or download is required. Bookmark the page for quick access when you need new username ideas. The tool is free and runs in your browser with no sign-up.
-        </p>
-
-        <h2>What This Tool Does NOT Do</h2>
+        <h2>What This Tool Does and Does Not Do</h2>
         <ul>
-          <li>It does not check Hollow Knight or any platform for username availability.</li>
-          <li>It does not reserve or hold names for you.</li>
-          <li>It does not store your generated list or your settings.</li>
-          <li>It does not connect to Steam, Discord, or any external gaming service.</li>
+          <li>It generates Hollow Knight-style names for OC bugs, vessels, and knights set in Hallownest.</li>
+          <li>It does not reproduce the official cast as a list — output is original for your own use.</li>
+          <li>It does not store your generated names or settings; generation is fully local.</li>
+          <li>It does not connect to the game — it only suggests names for your art, writing, or RP.</li>
         </ul>
-        <p>
-          This Hollow Knight name generator produces name ideas only. It does not validate availability, create accounts, or manage your profile. You must check Hollow Knight or your chosen platform yourself and follow that platform&apos;s rules when creating or changing your username. The tool is a brainstorming aid, not a replacement for checking availability.
-        </p>
 
-        <h2>Privacy and Security Notes</h2>
+        <h2>Final Notes</h2>
         <p>
-          The Hollow Knight name generator runs entirely in your browser. It does not send data to a server and does not store generated values. This is helpful for quick brainstorming and offline use. If you refresh the page, the last generated list is cleared. Copy any names you want to keep before closing or refreshing.
-        </p>
-        <p>
-          For account security, never share your Hollow Knight password or other credentials. The generator only suggests usernames; it does not handle login or account creation. When you check availability on Hollow Knight or another platform, use the official site or app and ensure you are on a secure connection. The Hollow Knight name generator is a standalone tool and does not integrate with any login system.
-        </p>
-
-        <h2>Final Summary and When to Use This Tool</h2>
-        <p>
-          The Hollow Knight name generator provides a fast way to create username and character name ideas for Hollow Knight and other games and fiction. Set the number of names (1–24) and run as often as you like. Copy results and check your platform for availability. The tool runs locally in your browser with no sign-up. Keep a shortlist of options in case your first choice is taken. No download or account is required. The generator is free and works on any device.
-        </p>
-        <p>
-          Use this Hollow Knight name generator when you need Hollow Knight name ideas, character name inspiration, or a quick way to explore options before checking availability. It is best for brainstorming, rebranding, and building a shortlist. Always verify availability on Hollow Knight or your chosen platform before committing to a name. The tool is a practical free resource for gaming character and creature names.
+          Hollow Knight earns its quiet beauty partly through its names — soft, insect-rooted, and heavy with old grief. This generator gives you a pool grounded in that style, sorted by region and tribe, so an OC you create feels like it was always part of Hallownest&apos;s fading story. Pick the bug your character is, generate a batch, lean on the notes above, and you will end up with a name that whispers of a kingdom that was once great and is now still.
         </p>
       </div>
     </section>
@@ -199,30 +107,29 @@ function createWriteUp() {
 }
 
 const pageFaqs: FaqItem[] = [
-  { category: 'General', question: 'What is a Hollow Knight name generator?', answer: 'A Hollow Knight name generator is an online tool that creates character and creature names for Hollow Knight and other games and fiction. You get unique Hollow Knight name ideas at the click of a button. The generator combines curated Hollow Knight-style words at random in your browser so each run produces new combinations. This free Hollow Knight name generator runs locally with no sign-up and does not send generated names to any server. Always check your game or story for availability before committing to a name.' },
-  { category: 'Usage', question: 'How do I use the Hollow Knight name generator?', answer: 'Set how many names you want per run (1–24), click "Generate names" to get a new list of character name ideas, then use the Copy button to copy all names to your clipboard. Paste into a notes app and check your game or story for availability. Run again for more options; no sign-up is required. The Hollow Knight name generator runs in your browser so your settings and generated names are not sent to any server. Building a shortlist of five to ten options before checking availability is a good habit.' },
-  { category: 'General', question: 'Is the Hollow Knight name generator free?', answer: 'Yes. This Hollow Knight name generator is free to use in your browser. You can generate Hollow Knight name ideas as often as you like without creating an account or paying. The tool runs locally on your device and does not require a download. There is no daily or total limit on how many times you can run the generator.' },
-  { category: 'Use cases', question: 'Can I use the names for Steam?', answer: 'Yes. The Hollow Knight name generator produces username ideas that you can use on Steam. Names must be unique on the platform, so always check Steam\'s availability before committing. Run the generator multiple times to build a shortlist of character name ideas, then check which names are available on Steam. The tool does not reserve or validate names; it only suggests combinations for you to verify on the platform.' },
-  { category: 'Privacy', question: 'Is my data sent to a server when I use the Hollow Knight name generator?', answer: 'No. This Hollow Knight name generator runs in your browser. When you set the number of names and click generate, the names are created locally on your device. Your choices and the generated Hollow Knight name ideas are not sent to our servers. We do not store your inputs or the generated list. Generation is fully local and private.' },
-  { category: 'Compatibility', question: 'Does the Hollow Knight name generator work on mobile?', answer: 'Yes. The Hollow Knight name generator runs in a web browser and works on desktop, tablet, and phone. You do not need to install an app. Open the page, choose how many names you want, then generate. On a phone you can generate a short list and copy it into notes or check availability on Steam\'s app. The tool is responsive and works on any device with a modern browser.' },
-  { category: 'Limits', question: 'How many names can I generate with the Hollow Knight name generator?', answer: 'You can request 1–24 names per run with this Hollow Knight name generator. If you need more than 24 character name ideas, run the generator again; each run produces a new random set. There is no daily or total limit. Paste multiple runs into one document and remove duplicates if needed. The batch size is designed to keep the list manageable while giving you enough Hollow Knight name options to shortlist.' },
-  { category: 'Usage', question: 'Can I copy the names from the Hollow Knight name generator?', answer: 'Yes. Use the Copy button on this Hollow Knight name generator to copy all generated names to your clipboard. Paste into a notes app or document. The names are plain text, one per line, so they work in any editor or form. Check your game or story for availability before choosing a name. Copying is the intended way to save your shortlist of character name ideas.' },
-  { category: 'General', question: 'Do I need an account to use the Hollow Knight name generator?', answer: 'No. This Hollow Knight name generator works without sign-up or login. The tool runs entirely in your browser. You do not need to create an account on our site to use it. Open the page, set how many Hollow Knight name ideas you want, click generate, and copy the results. No email, password, or registration is required.' },
-  { category: 'Use cases', question: 'Can I use the Hollow Knight name generator for other platforms?', answer: 'Yes. The names work as ideas for any gaming or social platform—Discord, Xbox, PlayStation, or others. The Hollow Knight name generator is built for Steam-style character names but the output can inspire usernames elsewhere. Check each platform\'s availability; names must be unique on each service. The generator does not check availability for you, so always verify on the platform where you plan to use the name.' },
-  { category: 'Privacy', question: 'Do you store the names I generate with the Hollow Knight name generator?', answer: 'No. Generation happens in your browser. We do not receive or store the Hollow Knight name ideas or your settings. The Hollow Knight name generator runs locally on your device. You can use the tool in a private or incognito window if you prefer. If you refresh the page, the last generated list is cleared unless you have already copied it.' },
-  { category: 'Limits', question: 'Can I get more than 24 names from the Hollow Knight name generator?', answer: 'Each run of this Hollow Knight name generator gives up to 24 names. To get more character name ideas, run the generator again; each run produces a new random set. You can paste multiple runs into one document and then remove duplicates. There is no daily or total limit. Batching runs is the intended workflow when you need a large pool of Hollow Knight name options.' },
-  { category: 'General', question: 'Why "Steam" specifically in a Hollow Knight name generator?', answer: 'Hollow Knight is a major gaming platform, and people often search for Hollow Knight name ideas and character name generators. The Hollow Knight name generator serves that intent and produces names that fit Hollow Knight and similar gaming environments. The same ideas work for other platforms—Discord, Xbox, PlayStation—as inspiration. Use the names as character names wherever you need a unique username; always check availability on the platform you choose.' },
-  { category: 'Use cases', question: 'Can I use the Hollow Knight name generator for esports?', answer: 'Yes. Use the Hollow Knight name generator as inspiration for in-game names or stream handles. Run it multiple times to get a shortlist of character name ideas, then check availability on your platform. The tool is free and runs in your browser with no sign-up. Many esports and streamers use Hollow Knight name generators to brainstorm handles before verifying availability on Steam, Twitch, or other services.' },
-  { category: 'Technical', question: 'How are the names generated in the Hollow Knight name generator?', answer: 'This Hollow Knight name generator uses curated Hollow Knight-style words and elements. When you click generate, the tool randomly combines these in your browser so each run is different. No names or settings are sent to a server. The result is for inspiration only; we do not check Hollow Knight or any platform for availability. The word lists are designed to sound like gaming character and creature names—bold, memorable, and easy to type.' },
-  { category: 'General', question: 'Are the names from the Hollow Knight name generator unique?', answer: 'The names are randomly combined from our word list, so each run can produce new combinations. We do not check Hollow Knight or any platform for availability. You must check yourself whether a Hollow Knight name or character name is available before using it on your profile. The generator helps you discover ideas; uniqueness on a given platform depends on that platform\'s current registrations.' },
-  { category: 'Use cases', question: 'Can teachers use the Hollow Knight name generator?', answer: 'Yes. Teachers can use this Hollow Knight name generator for creative or tech-related activities—for example when students are learning about usernames, digital identity, or online profiles. Emphasize that the tool is for inspiration and that names must be checked for availability on any platform. The Hollow Knight name generator is free and runs in the browser with no sign-up, so it is easy to use in a classroom or workshop setting.' },
-  { category: 'General', question: 'How do I cite the Hollow Knight name generator?', answer: 'For academic or formal use you can cite this Hollow Knight name generator as a source of inspiration for character and creature names. The generated names are algorithm-produced; you can use them freely. A brief acknowledgment is optional. We do not require attribution. The tool is a free, browser-based utility for Hollow Knight name ideas and character name brainstorming.' },
-  { category: 'Use cases', question: 'Can I use the Hollow Knight name generator for a new Hollow Knight account?', answer: 'Yes. When creating a new Hollow Knight account you need a unique username. Run this Hollow Knight name generator to get character name ideas, copy the list, then check Hollow Knight for availability. Pick a name that is available and that you like. The tool runs in your browser with no sign-up. Building a shortlist of five to ten options before you start the sign-up process saves time, since many Hollow Knight names are already taken.' },
-  { category: 'General', question: 'Do the names from the Hollow Knight name generator work for streaming?', answer: 'Yes. The Hollow Knight name generator produces username ideas that can work for streaming platforms, in-game names, or social handles. Use the names as inspiration and check your platform for availability. Run the generator multiple times to build a shortlist of options. Many streamers use Hollow Knight name generators to brainstorm stream handles before checking availability on Twitch, YouTube, or other services.' },
-  { category: 'Best practices', question: 'What is the best workflow for the Hollow Knight name generator?', answer: 'Open the page, set the number of names (e.g. 12 or 24), click generate, then copy the list. Paste into a notes app. Check your game or story for availability for each name you like. If your first choice is taken, try the next. Run the Hollow Knight name generator again for more options. Keep a shortlist of five to ten character name ideas so you have backups. The tool is free and runs in your browser with no sign-up.' },
-  { category: 'Best practices', question: 'Should I run the Hollow Knight name generator multiple times?', answer: 'Yes. Running the Hollow Knight name generator multiple times is the intended workflow when you want a large pool of Hollow Knight name ideas. Paste each run into one document and remove duplicates if any appear. Then check availability on your game or story for each name you like. Having a shortlist saves time compared to checking one idea at a time. There is no daily or total limit on how many times you can run the generator.' },
-  { category: 'Troubleshooting', question: 'Why is my first choice from the Hollow Knight name generator taken?', answer: 'Popular character and creature names are often already in use on Hollow Knight and other platforms. The Hollow Knight name generator does not check availability; it only suggests combinations. Always have a shortlist of five to ten options so you have backups. Run the generator again for more Hollow Knight name ideas and check availability on your platform before committing. This is normal when using any name generator for games and fiction.' },
-  { category: 'Troubleshooting', question: 'Can I use the Hollow Knight name generator offline?', answer: 'Yes. Once the page is loaded, the Hollow Knight name generator runs entirely in your browser and does not require a network connection to generate names. You can generate character name ideas offline. Copying and pasting also works offline. You will need a connection only to open the page initially and to check availability on Hollow Knight or another platform.' },
+  { category: 'General', question: 'What is a Hollow Knight name generator?', answer: 'It is a browser tool that creates names in the style of Hollow Knight — soft, melancholy, insect-rooted names for OC bugs, vessels, and knights set in Hallownest. It follows Team Cherry’s naming conventions so the names feel canon. It runs locally with no sign-up and stores nothing.' },
+  { category: 'Naming style', question: 'What makes a name sound like Hollow Knight?', answer: 'Soft consonants, short wistful sounds, insect and nature roots, and an old fairy-tale weight. Names like Hornet, Quirrel, Cornifer, and Myla are gentle and a little sad, pulled from an old legend rather than a modern roster. A name that whispers rather than shouts fits Hallownest.' },
+  { category: 'Naming style', question: 'Why do Hollow Knight names sound melancholy?', answer: 'Hallownest is a dead kingdom, and its names carry that quiet grief. Team Cherry chose soft, archaic, mournful sounds to match a world of ruins and faded glory. Even the warriors have a wistful softness, which is why a gentle, sad name feels more in-genre than an aggressive one.' },
+  { category: 'Vessels', question: 'How do I name a vessel OC?', answer: 'Vessels are silent, hollow beings born of the Abyss, and many go unnamed — so naming an OC vessel is a meaningful choice. A soft, simple, almost ceremonial name fits a being meant to be empty. Generate a batch and pick the quietest, gentlest result for a solemn, tragic feel.' },
+  { category: 'Characters', question: 'How do I name a bug character?', answer: 'Match the name’s sound to the character’s role: a scholar like Quirrel has a soft, curious name; a warrior like Hornet has a sharper but still gentle one; a humble villager like Myla has something plain and sweet. Generate a batch and keep the names whose tone fits your character.' },
+  { category: 'Lore', question: 'How do names differ by region in Hallownest?', answer: 'Dirtmouth survivors have plain, wistful names; the Mantis Village uses sharper, formal names; Deepnest names are stranger and darker; the City of Tears has refined, sorrowful names; and the Hive uses warm, bee-derived names. Matching a name to its region deepens an OC.' },
+  { category: 'OC', question: 'How do I build a Hollow Knight OC name?', answer: 'A strong Hallownest OC name sounds soft and archaic in the Team Cherry register and hints at the bug the character is — a moth, beetle, spider, or snail. Deriving the name from your OC’s insect is exactly how many canon names were built, so it is the most authentic route.' },
+  { category: 'OC', question: 'Should the name match the type of bug?', answer: 'Yes — that is core to the Hollow Knight style. Cornifer (a snail cartographer), the Mantis tribe, the bees of the Hive: many names derive from the insect itself. Decide what bug your OC is, then generate or adjust toward a name rooted in that creature for the most canon feel.' },
+  { category: 'Use cases', question: 'Can I use these names for fan art?', answer: 'Yes — Hollow Knight has a huge OC fan-art community, and the name is the foundation of a new bug character. Generate a batch, pick one that fits your OC’s bug and region, and it will sit naturally alongside the canon cast in your art.' },
+  { category: 'Use cases', question: 'Can I use these for fan fiction or RP?', answer: 'Absolutely. Writing or role-playing in Hallownest needs names that match its quiet, mournful tone. Generate a batch, match it to your character’s tribe and role, and the name will fit the world’s melancholy register.' },
+  { category: 'Usage', question: 'How do I use this generator?', answer: 'Set how many names you want (1–24), click Generate names, and read them softly. Keep the ones that feel gentle and a little mournful, copy the list into your notes, and shortlist names that match your OC’s bug and region. Run again for more — no limit, account, or download.' },
+  { category: 'Usage', question: 'Can I edit the generated names?', answer: 'Yes. The output is a starting point. Soften a consonant, trim a syllable, or steer the name toward the insect your OC is based on. Many creators generate a batch and then refine a favorite until it carries the right wistful weight.' },
+  { category: 'Naming style', question: 'My name sounds too modern or harsh — what do I do?', answer: 'Soften the consonants and shorten the name. Hollow Knight names are quiet and archaic, so anything loud, aggressive, or modern breaks the spell. Steering toward an insect root and a melancholy sound almost always pulls a name back into the Team Cherry register.' },
+  { category: 'Naming style', question: 'How long should a Hollow Knight name be?', answer: 'Short — most canon names are one or two syllables (Hornet, Myla, Zote, Quirrel). Length is not the goal; a quiet, wistful sound is. If a generated name is a mouthful, trim it down until it feels like something whispered on a lonely bench.' },
+  { category: 'Technical', question: 'How are the names generated?', answer: 'The generator combines curated Hollow Knight-style elements — soft sounds, insect and nature roots, archaic endings — and shuffles them at random in your browser. Each run produces a new set. Nothing is sent to a server; generation is entirely local.' },
+  { category: 'Technical', question: 'Are these real characters from Hollow Knight?', answer: 'No. The generator creates original, Hallownest-style names for your own use rather than reproducing the official cast. That is intentional — you want a fresh name for your OC, not a duplicate of Hornet or Quirrel that you cannot make your own.' },
+  { category: 'Privacy', question: 'Is my data sent to a server?', answer: 'No. Everything runs in your browser. When you click generate, names are created on your device. Your settings and generated names are never sent to our servers and nothing is stored. You can use the tool in a private window and your character ideas stay yours.' },
+  { category: 'Limits', question: 'How many names can I generate at once?', answer: 'You can request 1–24 names per run. For more, run it again — each run produces a fresh random set with no daily or total limit. Paste multiple runs into one document if you want a large pool to choose from for your OCs.' },
+  { category: 'Compatibility', question: 'Does it work on mobile?', answer: 'Yes. The generator runs in any modern browser on desktop, tablet, or phone with no app install. Generate a batch on your phone while sketching or planning an OC, copy it into notes, and shortlist names wherever you are.' },
+  { category: 'General', question: 'Is the Hollow Knight name generator free?', answer: 'Yes, completely free with no account, sign-up, or download. Generate as many bug, vessel, and OC names as you like, as often as you like.' },
+  { category: 'Best practices', question: 'How do I make a name feel truly Hallownest?', answer: 'Keep it soft, short, and archaic, root it in an insect or natural word, and read it quietly as though spoken on a lonely bench. Matching the name to your OC’s bug and region is the fastest way to confirm it sits in the Team Cherry register.' },
+  { category: 'Best practices', question: 'Should the name be sad or gentle?', answer: 'Both, ideally. Hollow Knight’s tone is quiet grief, so the most fitting names are gentle with a wistful, mournful edge. Even names for warriors keep that softness. If a name feels too cheerful or too brutal, nudge it toward the kingdom’s quiet melancholy.' },
+  { category: 'Troubleshooting', question: 'The names feel too generic — what should I do?', answer: 'Generate a larger batch and filter for the soft, insect-rooted results, discarding anything that could belong to any fantasy game. Then steer your favorite toward the specific bug your OC is. The more you lean into Hallownest’s gentle, insect-derived style, the less generic the result feels.' },
 ];
 
 export default async function HollowKnightNameGeneratorPage() {
@@ -248,4 +155,3 @@ export default async function HollowKnightNameGeneratorPage() {
     </>
   );
 }
-

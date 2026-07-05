@@ -18,8 +18,8 @@ const toolSlug = 'mlp-name-generator';
 export async function generateMetadata(): Promise<Metadata> {
   return buildToolMeta({
     title: 'MLP Name Generator',
-    description: 'Free mlp name generator for pony character names. Create My Little Pony-style name ideas in your browser with no sign-up.',
-    seoTitle: 'MLP Name Generator – Pony Name Ideas',
+    description: 'Free My Little Pony name generator for ponysonas and OCs. Two-word descriptive pony names for earth ponies, pegasi, unicorns, and alicorns — in your browser, no sign-up.',
+    seoTitle: 'MLP Name Generator – My Little Pony Ponysona & OC Names',
     urlPath: `/${toolSlug}`,
   });
 }
@@ -28,170 +28,75 @@ function createWriteUp() {
   return (
     <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
-        <h2>MLP Name Generator – Pony Name Ideas</h2>
-        <h2>Introduction</h2>
+        <h2>MLP Name Generator – My Little Pony Ponysona &amp; OC Names</h2>
         <p>
-          This guide explains how to use a MLP name generator to create pony character names for MLP and other fan fiction and creative projects. The tool runs in your browser and produces unique, memorable name ideas at the click of a button. It is designed for players who want MLP name ideas quickly without sign-up or download. The generator does not store data and runs entirely in your browser. You get 1–24 names per run and can run it as often as you like. Always check your game or story for availability before committing to a name.
+          This MLP name generator creates My Little Pony names for your ponysona, an OC, or a character you are writing into Equestria. The Friendship Is Magic naming style is one of the most recognizable in any show: almost every pony has a two-word descriptive name that captures a trait, a talent, or a vibe — Twilight Sparkle, Rainbow Dash, Pinkie Pie, Fluttershy. The generator builds names in that exact pattern so your OC fits right in with the Mane Six and the wider cast. It runs in your browser with no sign-up and stores nothing.
         </p>
         <p>
-          People search for MLP name ideas and character name generators when setting up a new profile, an esports handle, or a stream name. This MLP name generator serves that intent with one free, browser-based tool. Whether you need a single standout character name or a shortlist of options, the generator gives you a pool of ideas. Names must be unique on each service, so verifying availability on MLP or your chosen platform is an essential step after generating ideas.
-        </p>
-
-        <h2>What Is a MLP Name Generator?</h2>
-        <p>
-          A MLP name generator is an online tool that creates pony character names suitable for MLP and other fan fiction and creative projects. You get unique name ideas at the click of a button. The generator combines curated My Little Pony-style words and elements at random so each run produces new combinations. The output is for inspiration only; you must check your platform for availability. This free MLP name generator runs in your browser with no sign-up and does not send generated names to any server.
-        </p>
-        <p>
-          The output is plain text, one name per line. You can copy the full list and paste it into a notes app, then check your game or story for availability and pick one. Many users run the MLP name generator multiple times to build a shortlist before deciding. Because names are created locally, your choices stay private and nothing is stored on our servers.
-        </p>
-        <p>
-          MLP name generators are useful when you are tired of reusing the same username or when you want a fresh character name that fits your style. The tool does not guarantee that a name is available; it only suggests combinations. Always confirm availability on your game or story before you commit to a new username.
+          A pony name in MLP is more than a label — it usually telegraphs the character&apos;s personality and often connects to their cutie mark and special talent. This page explains how that naming logic works so the name you generate feels like a real Equestrian, not a placeholder.
         </p>
 
-        <h2>Why This MLP Name Generator Matters</h2>
+        <h2>How MLP Pony Names Work</h2>
         <p>
-          Choosing a memorable MLP name or character name can be time-consuming. A MLP name generator speeds up brainstorming. Instead of staring at a blank field, you get options in seconds. You can run it on a phone or desktop, copy the names you like, and then check availability on your game or story. The tool is free and does not require an account, so there is no friction to trying many ideas.
+          The Friendship Is Magic naming convention has a clear, learnable structure:
         </p>
+        <ul>
+          <li><strong>Two descriptive words.</strong> Most names pair an adjective or noun with another word to paint a quick picture — Rainbow Dash, Apple Bloom, Cloud Chaser. The combination is the name.</li>
+          <li><strong>Talent-coded.</strong> A pony&apos;s name often hints at their special talent and cutie mark. Twilight Sparkle is magical; Applejack works the orchard; Pinkie Pie throws parties.</li>
+          <li><strong>Soft, friendly, whimsical.</strong> The tone is warm and gentle — nothing harsh. Names sound pleasant to say and a little sweet.</li>
+          <li><strong>Often alliterative.</strong> Many names share a sound or letter (Pinkie Pie, Fluttershy) for an extra musical quality.</li>
+        </ul>
+
+        <h2>Names by Pony Type</h2>
         <p>
-          The generator also keeps your ideas private. Names are created in your browser and are not sent to our servers. You can use it in a private or incognito window if you prefer. Because generation is local, there is no risk of your shortlist being stored or logged. That matters when you are testing ideas before you settle on a final MLP name or character name.
+          Equestria has distinct pony races, and matching a name to your OC&apos;s type makes it more believable:
         </p>
+        <ul>
+          <li><strong>Earth ponies.</strong> Grounded names tied to nature, farming, food, or hard work — think apples, soil, harvest, and craft.</li>
+          <li><strong>Pegasi.</strong> Sky-themed names built around clouds, weather, wind, speed, and flight.</li>
+          <li><strong>Unicorns.</strong> Names leaning on magic, light, gems, stars, and elegance.</li>
+          <li><strong>Alicorns.</strong> Grand, regal names fitting the rare winged-unicorn princesses (Celestia, Luna, Cadance).</li>
+          <li><strong>Crystal ponies, kirin, and more.</strong> The expanded universe supports shimmering, gem-toned, or exotic names for less common types.</li>
+        </ul>
+
+        <h2>Building a Ponysona</h2>
         <p>
-          A good MLP name generator also standardizes the workflow: set how many names you want, click generate, copy the list, and check availability. You get a consistent way to explore username ideas without writing scripts or visiting multiple sites. The output is easy to paste into notes or a document so you can track which names you have already checked on MLP or other platforms.
+          A &quot;ponysona&quot; is an MLP fan&apos;s personal pony self — an OC that represents you in Equestria. Because the name is so closely tied to personality and talent, building a ponysona name is partly self-portrait: pick the two words that capture what you love or what you are good at. Generate a batch in your pony type&apos;s lane, then look for the pair that feels like you. Many fans also design the cutie mark to match the name, so a name that suggests a clear talent gives you a head start on the whole character.
         </p>
 
-        <h2>How the MLP Name Generator Works (Step by Step)</h2>
+        <h2>Names, Cutie Marks, and Talent</h2>
         <p>
-          When you open the page, you choose how many names you want per run (1–24). Clicking &quot;Generate names&quot; triggers the tool to randomly combine curated My Little Pony-style elements in your browser. Each run is independent; no names or settings are sent to a server. The result is a list of MLP name ideas, one per line. You can copy the full list with one click and paste it into a notes app. To get more ideas, run the generator again. The tool does not check MLP or any platform for availability—you must do that yourself.
-        </p>
-        <p>
-          The underlying word lists are designed to sound like gaming pony character names: bold, memorable, and easy to type. The generator shuffles and combines these elements so that each run produces different combinations. That randomness helps you discover names you might not have thought of on your own. Because everything runs in the browser, the MLP name generator works offline once the page is loaded and does not depend on a backend service.
-        </p>
-        <p>
-          There are no hidden steps. You set the count, click generate, and receive a list. Copying is one click; pasting into your own document keeps your shortlist in one place. Running the MLP name generator multiple times is the intended workflow when you want a large pool of character name ideas before checking availability.
+          In MLP, name, cutie mark, and special talent form a tight little package. Applejack&apos;s name, apple cutie mark, and farming talent all reinforce each other; Rarity&apos;s name, gem cutie mark, and fashion-design talent do the same. When you generate a name, think about the cutie mark and talent it implies — a name like &quot;Star Weaver&quot; suggests a magical, celestial talent and a starry mark, while &quot;Clover Field&quot; suggests an earth pony with a connection to growing things. Letting the name lead the design keeps your OC coherent.
         </p>
 
         <h2>How to Use This MLP Name Generator</h2>
-        <p>Follow these steps to get MLP name ideas:</p>
         <ol className="list-decimal pl-6 space-y-2">
           <li>Set how many names you want per run (1–24).</li>
-          <li>Click &quot;Generate names&quot; to get a new list of character name ideas.</li>
-          <li>Use the Copy button to copy all names to your clipboard.</li>
-          <li>Paste into a notes app or document, then check your game or story for availability and pick one.</li>
-          <li>Run again for more options; no account or download is required.</li>
+          <li>Click <strong>Generate names</strong> to get a batch of two-word pony names.</li>
+          <li>Keep the ones that fit your pony type and the personality or talent you want.</li>
+          <li>Copy the list into your notes and shortlist names that could anchor a cutie mark.</li>
+          <li>Run again for more — no limit, no account, no download.</li>
         </ol>
         <p>
-          The MLP name generator runs in your browser; your settings and generated names are not sent to any server. You can run it as often as you like. Building a shortlist of five to ten options before checking availability on MLP is a good habit, since popular usernames are often taken. Have backups ready so that if your first choice is unavailable, you can try the next name on your list.
+          Everything runs locally in your browser. Your settings and generated names are never sent to a server, so your OC ideas stay private.
         </p>
 
-        <h2>MLP and Gamer Naming Style</h2>
+        <h2>Tips for a Great Pony Name</h2>
         <p>
-          MLP names and character names often use bold, memorable word combinations: action words, nicknames, or creative spellings. This MLP name generator uses curated My Little Pony-style elements and combines them at random so you get new combinations that fit that style. The output is for inspiration only; the tool does not check MLP or any platform for availability. You can use the names as-is or tweak spelling and punctuation to make them your own.
-        </p>
-        <p>
-          Different games and communities favor different styles. Some players prefer short, punchy character names; others like longer usernames. Running the generator multiple times gives you a mix of lengths and styles. Skim the list, mark the ones you like, and then verify each one on your game or story. The MLP name generator is a starting point—your final choice should fit your personality and the rules of your platform.
+          Stick to the two-word pattern — it is the single thing that makes a name read as MLP. Match the words to your pony type (sky words for pegasi, magic words for unicorns, nature words for earth ponies) so the name signals the race at a glance. Aim for a name that hints at a talent, since that connects to the cutie mark and gives your OC depth. A touch of alliteration adds the show&apos;s musical charm. And say it out loud — pony names are meant to be sweet and easy to say, so a name that sounds warm and friendly is on target.
         </p>
 
-        <h2>When to Use a MLP Name Generator</h2>
-        <p>
-          Use this MLP name generator when you need MLP or My Little Pony-style username ideas quickly. Common use cases include creating a new MLP account or updating your profile name, choosing an in-game name for esports or casual play, and picking a stream or social handle. The same tool works for other platforms—Discord, Xbox, PlayStation, or social profiles—as inspiration. Names must be unique on each platform, so always check availability before committing.
-        </p>
-        <p>
-          Another good time to use a MLP name generator is when you are rebranding. If you have used the same character name for years and want a fresh identity, generating a batch of ideas helps you explore options without pressure. Run the tool several times, paste results into one document, and remove duplicates. Then check MLP and any other platforms you use to see which names are still available. Having a shortlist saves time compared to checking one idea at a time.
-        </p>
-
-        <h2>Use Cases in Detail: Profiles, Esports, and Streams</h2>
-        <p>
-          Players use the MLP name generator when creating a new MLP account or refreshing their profile name. Esports and streamers use it for in-game names or stream handles. The same tool works for other platforms—Discord, Xbox, PlayStation, or social—as inspiration; you must check each platform for availability. Run the generator multiple times to build a shortlist, then check which names are free on your platform. The MLP name generator does not reserve or validate names; it only suggests combinations.
-        </p>
-        <p>
-          Content creators often need a consistent handle across Steam, streaming, and social media. Generating a batch of character name ideas lets you test different options before you commit. Copy the names you like into a single list, then check availability on each service. If one name is taken on MLP but free elsewhere, you can still use it on the platforms where it is available, or use the generator again to find alternatives that work everywhere.
-        </p>
-
-        <h2>Tips for Choosing a MLP Username</h2>
-        <p>
-          Pick a name that is easy to remember and type. Short character names are easier to say in voice chat and less likely to be mistyped. Run the MLP name generator multiple times to get a shortlist, then check your game or story for availability. Have a few backups in case your first choice is taken. Avoid names that might be mistaken for someone else or that break platform rules. The generator gives you ideas only; the final choice is yours.
-        </p>
-        <p>
-          Consider how the name will look in different contexts: in-game, on a stream overlay, or in a friend list. Some combinations look great in one font but odd in another. If you plan to use the same handle across multiple games and platforms, check availability everywhere before you invest in branding. The MLP name generator is a free way to explore options without committing until you have confirmed that your chosen MLP name or character name is available.
-        </p>
-
-        <h2>Running the MLP Name Generator in Batches</h2>
-        <p>
-          When you need many username ideas, run the MLP name generator multiple times. Each run gives up to 24 names. Paste each run into the same document and remove duplicates if any appear. Check availability on your platform for each name you like. There is no daily or total limit; you can run the generator as often as you want. Batching is useful when you are setting up several accounts, testing ideas for a team, or simply want a large pool of character name options before making a decision.
-        </p>
-        <p>
-          Keeping a single document with all your generated MLP name ideas makes it easy to track which names you have already checked. Mark names as &quot;taken&quot; or &quot;available&quot; as you go. That way you avoid re-checking the same name on MLP or another platform. The MLP name generator does not remember previous runs, so your document is your only record of the ideas you have collected.
-        </p>
-
-        <h2>Privacy and Local Processing</h2>
-        <p>
-          This MLP name generator runs entirely in your browser. When you set the number of names and click generate, the names are created locally on your device. Your choices and the generated names are not sent to our servers. We do not store your inputs or the generated list. No account or login is required. That means your shortlist of character name ideas stays on your machine unless you choose to copy it somewhere else.
-        </p>
-        <p>
-          Because generation is local, the tool is suitable for use in private or incognito windows. If you close the tab, the generated list is gone unless you have copied it. There is no server-side log of what names you generated or how many times you ran the MLP name generator. This privacy model is intentional: username brainstorming is personal, and the tool is designed so that you control where your ideas go.
-        </p>
-
-        <h2>Copying and Exporting Names</h2>
-        <p>
-          Use the Copy button to copy all generated MLP name ideas to your clipboard (one per line). Paste into a notes app or document. Check your game or story for availability before committing to a name. The names are plain text, so they work in any editor or form. If you paste into a spreadsheet, each line can go in its own cell for easy tracking. The MLP name generator does not export to a file; copying and pasting is the intended way to save your shortlist.
-        </p>
-
-        <h2>Limits and Batch Size</h2>
-        <p>
-          You can request 1–24 names per run with this MLP name generator. There is no daily or total limit. Run the generator again for more options. No download or account is required. If you need more than 24 names in one go, run the tool multiple times and paste the results into one document. Removing duplicates is up to you; the generator does not track previous output.
-        </p>
-
-        <h2>No Download or Account Required</h2>
-        <p>
-          This MLP name generator runs entirely in your browser. You do not need to download software or create an account. Open the page, set how many names you want, and click generate. The tool is free and works on desktop, tablet, and phone. That makes it easy to use when you are away from your main device or when you want to quickly generate character name ideas without installing anything.
-        </p>
-
-        <h2>Who Uses a MLP Name Generator?</h2>
-        <p>
-          Players use the MLP name generator when creating or updating a MLP profile, or when they want a new character name for other platforms. Esports and streamers use it for in-game names or stream handles. The same tool works for Discord, Xbox, PlayStation, or social profiles—always check availability on each platform. Educators and workshop leaders sometimes use it to demonstrate username creation or digital identity in a classroom setting. No account or download is required on our site.
-        </p>
-        <p>
-          Anyone who needs a steady supply of username ideas can benefit. Whether you are a casual gamer, a competitive player, or a content creator, the MLP name generator provides a fast way to explore options. The key is to treat the output as inspiration and always verify availability on MLP and any other platform where you plan to use the name.
-        </p>
-
-        <h2>Getting the Most Out of the MLP Name Generator</h2>
-        <p>
-          Run the generator several times and paste all results into one document. Skim for names that fit your style and check your platform for availability. Shortlist five to ten options so you have backups if your first choice is taken. The MLP name generator does not check MLP or any platform; you must do that yourself. When you have a shortlist, check availability one by one. Usernames are often taken on popular services, so having several options saves time.
-        </p>
-        <p>
-          Another tip is to try different batch sizes. Sometimes generating 24 names at once gives you a good mix; other times you may prefer smaller runs so you can review each set before generating more. The tool is flexible. Use it whenever you need new MLP name ideas or character name inspiration. Bookmarking the page makes it easy to return when you are ready to refresh your profile or create a new account.
-        </p>
-
-        <h2>Typical Workflow for the MLP Name Generator</h2>
-        <p>
-          A typical workflow is: open the page, set the number of names (e.g. 12 or 24), click generate, then copy the list. Paste into a notes app. Check your game or story for availability for each name you like. If your first choice is taken, try the next. Run the MLP name generator again for more options. The whole process takes a few minutes. No account or download is required. Bookmark the page for quick access when you need new username ideas. The tool is free and runs in your browser with no sign-up.
-        </p>
-
-        <h2>What This Tool Does NOT Do</h2>
+        <h2>What This Tool Does and Does Not Do</h2>
         <ul>
-          <li>It does not check MLP or any platform for username availability.</li>
-          <li>It does not reserve or hold names for you.</li>
-          <li>It does not store your generated list or your settings.</li>
-          <li>It does not connect to Steam, Discord, or any external gaming service.</li>
+          <li>It generates My Little Pony-style two-word names for ponysonas, OCs, and Equestrian characters.</li>
+          <li>It does not reproduce official characters as a list — output is original for your own use.</li>
+          <li>It does not store your generated names or settings; generation is fully local.</li>
+          <li>It does not design cutie marks — it suggests names you can build a cutie mark around.</li>
         </ul>
-        <p>
-          This MLP name generator produces name ideas only. It does not validate availability, create accounts, or manage your profile. You must check MLP or your chosen platform yourself and follow that platform&apos;s rules when creating or changing your username. The tool is a brainstorming aid, not a replacement for checking availability.
-        </p>
 
-        <h2>Privacy and Security Notes</h2>
+        <h2>Final Notes</h2>
         <p>
-          The MLP name generator runs entirely in your browser. It does not send data to a server and does not store generated values. This is helpful for quick brainstorming and offline use. If you refresh the page, the last generated list is cleared. Copy any names you want to keep before closing or refreshing.
-        </p>
-        <p>
-          For account security, never share your MLP password or other credentials. The generator only suggests usernames; it does not handle login or account creation. When you check availability on MLP or another platform, use the official site or app and ensure you are on a secure connection. The MLP name generator is a standalone tool and does not integrate with any login system.
-        </p>
-
-        <h2>Final Summary and When to Use This Tool</h2>
-        <p>
-          The MLP name generator provides a fast way to create username and character name ideas for MLP and other fan fiction and creative projects. Set the number of names (1–24) and run as often as you like. Copy results and check your platform for availability. The tool runs locally in your browser with no sign-up. Keep a shortlist of options in case your first choice is taken. No download or account is required. The generator is free and works on any device.
-        </p>
-        <p>
-          Use this MLP name generator when you need MLP name ideas, character name inspiration, or a quick way to explore options before checking availability. It is best for brainstorming, rebranding, and building a shortlist. Always verify availability on MLP or your chosen platform before committing to a name. The tool is a practical free resource for gaming pony character names.
+          My Little Pony names are tiny character sketches — two words that capture a personality, a talent, and a place in Equestria. This generator gives you a pool built in that exact convention, sorted by pony type, so your ponysona or OC fits right in beside Twilight Sparkle and Rainbow Dash. Pick your pony type, generate a batch, find the pair that feels like you (or your character), and you will have a name ready to anchor a cutie mark and a whole story.
         </p>
       </div>
     </section>
@@ -199,30 +104,30 @@ function createWriteUp() {
 }
 
 const pageFaqs: FaqItem[] = [
-  { category: 'General', question: 'What is a MLP name generator?', answer: 'A MLP name generator is an online tool that creates pony character names for MLP and other fan fiction and creative projects. You get unique MLP name ideas at the click of a button. The generator combines curated My Little Pony-style words at random in your browser so each run produces new combinations. This free MLP name generator runs locally with no sign-up and does not send generated names to any server. Always check your game or story for availability before committing to a name.' },
-  { category: 'Usage', question: 'How do I use the MLP name generator?', answer: 'Set how many names you want per run (1–24), click "Generate names" to get a new list of character name ideas, then use the Copy button to copy all names to your clipboard. Paste into a notes app and check your game or story for availability. Run again for more options; no sign-up is required. The MLP name generator runs in your browser so your settings and generated names are not sent to any server. Building a shortlist of five to ten options before checking availability is a good habit.' },
-  { category: 'General', question: 'Is the MLP name generator free?', answer: 'Yes. This MLP name generator is free to use in your browser. You can generate MLP name ideas as often as you like without creating an account or paying. The tool runs locally on your device and does not require a download. There is no daily or total limit on how many times you can run the generator.' },
-  { category: 'Use cases', question: 'Can I use the names for Steam?', answer: 'Yes. The MLP name generator produces username ideas that you can use on Steam. Names must be unique on the platform, so always check Steam\'s availability before committing. Run the generator multiple times to build a shortlist of character name ideas, then check which names are available on Steam. The tool does not reserve or validate names; it only suggests combinations for you to verify on the platform.' },
-  { category: 'Privacy', question: 'Is my data sent to a server when I use the MLP name generator?', answer: 'No. This MLP name generator runs in your browser. When you set the number of names and click generate, the names are created locally on your device. Your choices and the generated MLP name ideas are not sent to our servers. We do not store your inputs or the generated list. Generation is fully local and private.' },
-  { category: 'Compatibility', question: 'Does the MLP name generator work on mobile?', answer: 'Yes. The MLP name generator runs in a web browser and works on desktop, tablet, and phone. You do not need to install an app. Open the page, choose how many names you want, then generate. On a phone you can generate a short list and copy it into notes or check availability on Steam\'s app. The tool is responsive and works on any device with a modern browser.' },
-  { category: 'Limits', question: 'How many names can I generate with the MLP name generator?', answer: 'You can request 1–24 names per run with this MLP name generator. If you need more than 24 character name ideas, run the generator again; each run produces a new random set. There is no daily or total limit. Paste multiple runs into one document and remove duplicates if needed. The batch size is designed to keep the list manageable while giving you enough MLP name options to shortlist.' },
-  { category: 'Usage', question: 'Can I copy the names from the MLP name generator?', answer: 'Yes. Use the Copy button on this MLP name generator to copy all generated names to your clipboard. Paste into a notes app or document. The names are plain text, one per line, so they work in any editor or form. Check your game or story for availability before choosing a name. Copying is the intended way to save your shortlist of character name ideas.' },
-  { category: 'General', question: 'Do I need an account to use the MLP name generator?', answer: 'No. This MLP name generator works without sign-up or login. The tool runs entirely in your browser. You do not need to create an account on our site to use it. Open the page, set how many MLP name ideas you want, click generate, and copy the results. No email, password, or registration is required.' },
-  { category: 'Use cases', question: 'Can I use the MLP name generator for other platforms?', answer: 'Yes. The names work as ideas for any gaming or social platform—Discord, Xbox, PlayStation, or others. The MLP name generator is built for Steam-style character names but the output can inspire usernames elsewhere. Check each platform\'s availability; names must be unique on each service. The generator does not check availability for you, so always verify on the platform where you plan to use the name.' },
-  { category: 'Privacy', question: 'Do you store the names I generate with the MLP name generator?', answer: 'No. Generation happens in your browser. We do not receive or store the MLP name ideas or your settings. The MLP name generator runs locally on your device. You can use the tool in a private or incognito window if you prefer. If you refresh the page, the last generated list is cleared unless you have already copied it.' },
-  { category: 'Limits', question: 'Can I get more than 24 names from the MLP name generator?', answer: 'Each run of this MLP name generator gives up to 24 names. To get more character name ideas, run the generator again; each run produces a new random set. You can paste multiple runs into one document and then remove duplicates. There is no daily or total limit. Batching runs is the intended workflow when you need a large pool of MLP name options.' },
-  { category: 'General', question: 'Why "Steam" specifically in a MLP name generator?', answer: 'MLP is a major gaming platform, and people often search for MLP name ideas and character name generators. The MLP name generator serves that intent and produces names that fit MLP and similar gaming environments. The same ideas work for other platforms—Discord, Xbox, PlayStation—as inspiration. Use the names as character names wherever you need a unique username; always check availability on the platform you choose.' },
-  { category: 'Use cases', question: 'Can I use the MLP name generator for esports?', answer: 'Yes. Use the MLP name generator as inspiration for in-game names or stream handles. Run it multiple times to get a shortlist of character name ideas, then check availability on your platform. The tool is free and runs in your browser with no sign-up. Many esports and streamers use MLP name generators to brainstorm handles before verifying availability on Steam, Twitch, or other services.' },
-  { category: 'Technical', question: 'How are the names generated in the MLP name generator?', answer: 'This MLP name generator uses curated My Little Pony-style words and elements. When you click generate, the tool randomly combines these in your browser so each run is different. No names or settings are sent to a server. The result is for inspiration only; we do not check MLP or any platform for availability. The word lists are designed to sound like gaming pony character names—bold, memorable, and easy to type.' },
-  { category: 'General', question: 'Are the names from the MLP name generator unique?', answer: 'The names are randomly combined from our word list, so each run can produce new combinations. We do not check MLP or any platform for availability. You must check yourself whether a MLP name or character name is available before using it on your profile. The generator helps you discover ideas; uniqueness on a given platform depends on that platform\'s current registrations.' },
-  { category: 'Use cases', question: 'Can teachers use the MLP name generator?', answer: 'Yes. Teachers can use this MLP name generator for creative or tech-related activities—for example when students are learning about usernames, digital identity, or online profiles. Emphasize that the tool is for inspiration and that names must be checked for availability on any platform. The MLP name generator is free and runs in the browser with no sign-up, so it is easy to use in a classroom or workshop setting.' },
-  { category: 'General', question: 'How do I cite the MLP name generator?', answer: 'For academic or formal use you can cite this MLP name generator as a source of inspiration for pony character names. The generated names are algorithm-produced; you can use them freely. A brief acknowledgment is optional. We do not require attribution. The tool is a free, browser-based utility for MLP name ideas and character name brainstorming.' },
-  { category: 'Use cases', question: 'Can I use the MLP name generator for a new MLP account?', answer: 'Yes. When creating a new MLP account you need a unique username. Run this MLP name generator to get character name ideas, copy the list, then check MLP for availability. Pick a name that is available and that you like. The tool runs in your browser with no sign-up. Building a shortlist of five to ten options before you start the sign-up process saves time, since many MLP names are already taken.' },
-  { category: 'General', question: 'Do the names from the MLP name generator work for streaming?', answer: 'Yes. The MLP name generator produces username ideas that can work for streaming platforms, in-game names, or social handles. Use the names as inspiration and check your platform for availability. Run the generator multiple times to build a shortlist of options. Many streamers use MLP name generators to brainstorm stream handles before checking availability on Twitch, YouTube, or other services.' },
-  { category: 'Best practices', question: 'What is the best workflow for the MLP name generator?', answer: 'Open the page, set the number of names (e.g. 12 or 24), click generate, then copy the list. Paste into a notes app. Check your game or story for availability for each name you like. If your first choice is taken, try the next. Run the MLP name generator again for more options. Keep a shortlist of five to ten character name ideas so you have backups. The tool is free and runs in your browser with no sign-up.' },
-  { category: 'Best practices', question: 'Should I run the MLP name generator multiple times?', answer: 'Yes. Running the MLP name generator multiple times is the intended workflow when you want a large pool of MLP name ideas. Paste each run into one document and remove duplicates if any appear. Then check availability on your game or story for each name you like. Having a shortlist saves time compared to checking one idea at a time. There is no daily or total limit on how many times you can run the generator.' },
-  { category: 'Troubleshooting', question: 'Why is my first choice from the MLP name generator taken?', answer: 'Popular pony character names are often already in use on MLP and other platforms. The MLP name generator does not check availability; it only suggests combinations. Always have a shortlist of five to ten options so you have backups. Run the generator again for more MLP name ideas and check availability on your platform before committing. This is normal when using any name generator for fan fiction and creative projects.' },
-  { category: 'Troubleshooting', question: 'Can I use the MLP name generator offline?', answer: 'Yes. Once the page is loaded, the MLP name generator runs entirely in your browser and does not require a network connection to generate names. You can generate character name ideas offline. Copying and pasting also works offline. You will need a connection only to open the page initially and to check availability on MLP or another platform.' },
+  { category: 'General', question: 'What is an MLP name generator?', answer: 'It is a browser tool that creates My Little Pony names for ponysonas and OCs in the Friendship Is Magic style — two-word descriptive names that capture a trait or talent, like Twilight Sparkle or Rainbow Dash. It builds names sorted by pony type so your OC fits Equestria. It runs locally with no sign-up and stores nothing.' },
+  { category: 'Naming style', question: 'How do My Little Pony names work?', answer: 'Almost every pony has a two-word descriptive name that paints a quick picture and usually hints at their special talent and cutie mark — Rainbow Dash, Apple Bloom, Pinkie Pie. The tone is soft, friendly, and often alliterative. The combination of the two words is the name, and it telegraphs the character’s personality.' },
+  { category: 'Naming style', question: 'Why are MLP names two words?', answer: 'The two-word pattern is the core of the Friendship Is Magic naming convention — it lets a name describe a trait or talent in a compact, memorable way. Sticking to two descriptive words is the single biggest thing that makes a name read as authentically MLP rather than generic.' },
+  { category: 'Pony types', question: 'How do names differ by pony type?', answer: 'Earth ponies get grounded names tied to nature, farming, and food; pegasi get sky-themed names around clouds, weather, and flight; unicorns get magic-, gem-, and star-themed names; and alicorns get grand, regal names like Celestia or Luna. Matching the name to your pony’s race makes it instantly believable.' },
+  { category: 'Pony types', question: 'How do I name a pegasus?', answer: 'Pegasus names are sky-themed — built around clouds, weather, wind, speed, and flight (Rainbow Dash, Cloud Chaser, Derpy’s flight antics). Generate a batch and keep the airy, fast-sounding two-word pairs for a name that signals a flier at a glance.' },
+  { category: 'Pony types', question: 'How do I name a unicorn?', answer: 'Unicorn names lean on magic, light, gems, stars, and elegance (Twilight Sparkle, Rarity, Starlight Glimmer). Generate a batch and look for the sparkly, magical, refined pairs. A name suggesting a magical talent also helps you design a matching cutie mark.' },
+  { category: 'Pony types', question: 'How do I name an earth pony?', answer: 'Earth pony names are grounded in nature, farming, food, craft, and hard work (Applejack, Big Macintosh). Generate a batch and keep the warm, down-to-earth pairs. A name tied to growing things or a trade fits the earth pony identity perfectly.' },
+  { category: 'Pony types', question: 'How do I name an alicorn?', answer: 'Alicorns are the rare winged unicorns, usually princesses, so their names are grand and regal — Celestia, Luna, Cadance. Generate a batch and choose a name with a stately, celestial, or royal quality to fit an alicorn’s elevated status.' },
+  { category: 'Ponysona', question: 'What is a ponysona?', answer: 'A ponysona is an MLP fan’s personal pony self — an OC that represents you in Equestria. Because pony names are tied to personality and talent, building a ponysona name is partly self-portrait: pick two words that capture what you love or what you are good at, then design a matching cutie mark.' },
+  { category: 'Ponysona', question: 'How do I make a ponysona name about me?', answer: 'Choose your pony type, then generate a batch and look for the two-word pair that reflects your real interests or talents. A baker might lean toward food words, an artist toward color or craft words. The closer the name maps to you, the more personal your ponysona feels.' },
+  { category: 'Cutie marks', question: 'How does the name connect to a cutie mark?', answer: 'In MLP, name, cutie mark, and special talent reinforce each other — Applejack’s name, apple mark, and farming talent all align. A name like "Star Weaver" suggests a celestial talent and a starry mark; "Clover Field" suggests an earth pony who grows things. Letting the name lead keeps your OC coherent.' },
+  { category: 'Usage', question: 'How do I use this generator?', answer: 'Set how many names you want (1–24), click Generate names, and keep the two-word pairs that fit your pony type and desired personality or talent. Copy the list into your notes and shortlist names that could anchor a cutie mark. Run again for more — no limit, account, or download.' },
+  { category: 'Usage', question: 'Can I edit the generated names?', answer: 'Yes. The output is a starting point. Swap one of the two words to better match your pony type or talent, or combine words from different results. Many fans generate a batch and then refine a favorite until it captures exactly the trait they want.' },
+  { category: 'Use cases', question: 'Can I use these names for fan art?', answer: 'Yes — MLP has a huge OC and ponysona fan-art community, and the name is the foundation of a new character. Generate a batch, pick a two-word name that fits your pony’s type and talent, and build the cutie mark and design around it.' },
+  { category: 'Use cases', question: 'Can I use these for fan fiction or RP?', answer: 'Absolutely. Writing or role-playing in Equestria needs names that match the show’s warm, descriptive style. Generate a batch, match it to your character’s pony type and personality, and the name will sit naturally beside the canon cast.' },
+  { category: 'Technical', question: 'How are the names generated?', answer: 'The generator combines curated MLP-style word pairs — nature, sky, magic, and talent words — in the show’s two-word pattern and shuffles them at random in your browser. Each run produces a new set. Nothing is sent to a server; generation is entirely local.' },
+  { category: 'Technical', question: 'Are these real characters from MLP?', answer: 'No. The generator creates original, pony-style names for your own use rather than reproducing the official cast. That is intentional — you want a fresh name for your ponysona or OC, not a duplicate of Twilight Sparkle that you cannot make your own.' },
+  { category: 'Privacy', question: 'Is my data sent to a server?', answer: 'No. Everything runs in your browser. When you click generate, names are created on your device. Your settings and generated names are never sent to our servers and nothing is stored. You can use the tool in a private window and your OC ideas stay yours.' },
+  { category: 'Limits', question: 'How many names can I generate at once?', answer: 'You can request 1–24 names per run. For more, run it again — each run produces a fresh random set with no daily or total limit. Paste multiple runs into one document if you want a large pool to choose from for your ponysonas and OCs.' },
+  { category: 'Compatibility', question: 'Does it work on mobile?', answer: 'Yes. The generator runs in any modern browser on desktop, tablet, or phone with no app install. Generate a batch on your phone while sketching a pony, copy it into notes, and shortlist names wherever you are.' },
+  { category: 'General', question: 'Is the MLP name generator free?', answer: 'Yes, completely free with no account, sign-up, or download. Generate as many ponysona and OC names as you like, as often as you like.' },
+  { category: 'Best practices', question: 'How do I make a name feel truly MLP?', answer: 'Stick to the two-word pattern, match the words to your pony type, and aim for a name that hints at a talent so it connects to a cutie mark. A touch of alliteration adds the show’s musical charm, and saying it aloud confirms it sounds warm and friendly.' },
+  { category: 'Best practices', question: 'Should the name hint at a talent?', answer: 'Yes — it is one of the most authentic touches. In MLP, a pony’s name, cutie mark, and special talent all align, so a name that suggests a clear talent gives your OC depth and a head start on the cutie mark. A name that means something will always feel more in-genre than a random pair.' },
+  { category: 'Troubleshooting', question: 'The names feel too generic — what should I do?', answer: 'Generate a larger batch and filter for the pairs that clearly match your pony type and a specific talent, discarding anything vague. Then refine a favorite so both words point at the same trait. The tighter the two words connect to a personality and cutie mark, the more authentically MLP the name feels.' },
 ];
 
 export default async function MlpNameGeneratorPage() {
@@ -248,4 +153,3 @@ export default async function MlpNameGeneratorPage() {
     </>
   );
 }
-

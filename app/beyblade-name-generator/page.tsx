@@ -18,8 +18,8 @@ const toolSlug = 'beyblade-name-generator';
 export async function generateMetadata(): Promise<Metadata> {
   return buildToolMeta({
     title: 'Beyblade Name Generator',
-    description: 'Free beyblade name generator for names for tops and characters. Create Beyblade-style name ideas in your browser with no sign-up.',
-    seoTitle: 'Beyblade Name Generator – Name Ideas for Tops & Characters',
+    description: 'Free Beyblade name generator for custom Beys and OC characters. Build beast-spirit names by type — Attack, Defense, Stamina, Balance — plus special-move names, in your browser with no sign-up.',
+    seoTitle: 'Beyblade Name Generator – Custom Bey, Beast & OC Names',
     urlPath: `/${toolSlug}`,
   });
 }
@@ -28,170 +28,91 @@ function createWriteUp() {
   return (
     <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
-        <h2>Beyblade Name Generator – Name Ideas for Tops & Characters</h2>
-        <h2>Introduction</h2>
+        <h2>Beyblade Name Generator – Custom Bey, Beast &amp; OC Names</h2>
         <p>
-          This guide explains how to use a Beyblade name generator to create names for tops and characters for Beyblade and other fiction and games. The tool runs in your browser and produces unique, memorable name ideas at the click of a button. It is designed for players who want Beyblade name ideas quickly without sign-up or download. The generator does not store data and runs entirely in your browser. You get 1–24 names per run and can run it as often as you like. Always check your game or story for availability before committing to a name.
+          This Beyblade name generator builds names the way the franchise itself does: a beast or concept fused with an attribute, so the finished name sounds like a spinning top with a spirit locked inside it. Dragoon, Dranzer, Draciel, Pegasus, L-Drago, Valtryek, Spryzen, Achilles — every iconic Bey is a creature, a mythic figure, or a force of nature wearing a sharpened name. Whether you are designing an original Bey (OC) for a fan series, sketching fan art, or naming the tops in your own backyard tournament, this tool gives you ready-to-use, in-universe names in your browser. There is no sign-up, nothing is stored, and you can spin up as many batches as you like.
         </p>
         <p>
-          People search for Beyblade name ideas and character name generators when setting up a new profile, an esports handle, or a stream name. This Beyblade name generator serves that intent with one free, browser-based tool. Whether you need a single standout character name or a shortlist of options, the generator gives you a pool of ideas. Names must be unique on each service, so verifying availability on Beyblade or your chosen platform is an essential step after generating ideas.
-        </p>
-
-        <h2>What Is a Beyblade Name Generator?</h2>
-        <p>
-          A Beyblade name generator is an online tool that creates names for tops and characters suitable for Beyblade and other fiction and games. You get unique name ideas at the click of a button. The generator combines curated Beyblade-style words and elements at random so each run produces new combinations. The output is for inspiration only; you must check your platform for availability. This free Beyblade name generator runs in your browser with no sign-up and does not send generated names to any server.
-        </p>
-        <p>
-          The output is plain text, one name per line. You can copy the full list and paste it into a notes app, then check your game or story for availability and pick one. Many users run the Beyblade name generator multiple times to build a shortlist before deciding. Because names are created locally, your choices stay private and nothing is stored on our servers.
-        </p>
-        <p>
-          Beyblade name generators are useful when you are tired of reusing the same username or when you want a fresh character name that fits your style. The tool does not guarantee that a name is available; it only suggests combinations. Always confirm availability on your game or story before you commit to a new username.
+          Beyblade names are not random syllables. They follow a tight logic: a beast-spirit or mythological root, a hard consonant edge, and a hint of the Bey&apos;s battle type — Attack, Defense, Stamina, or Balance. This page walks through those conventions so the names you keep actually feel canon, and so an OC Bey you create can slot believably beside Storm Pegasus, Earth Eagle, or Victory Valtryek in a roster, a fan-comic, or a homemade beystadium league.
         </p>
 
-        <h2>Why This Beyblade Name Generator Matters</h2>
+        <h2>How Beyblade Names Are Built</h2>
         <p>
-          Choosing a memorable Beyblade name or character name can be time-consuming. A Beyblade name generator speeds up brainstorming. Instead of staring at a blank field, you get options in seconds. You can run it on a phone or desktop, copy the names you like, and then check availability on your game or story. The tool is free and does not require an account, so there is no friction to trying many ideas.
+          From the original Bakuten Shoot era through Metal Saga and the Burst series, the naming formula has stayed remarkably consistent. Understanding it lets you generate names that sound native to the world rather than thrown together:
         </p>
+        <ul>
+          <li><strong>Beast or beast-spirit first.</strong> The classic &quot;bit-beast&quot; concept — Dragoon (a dragon), Dranzer (a phoenix), Draciel (a turtle), Driger (a tiger) — anchors a Bey to a sacred animal. The creature carries the identity, so the generator treats the beast root as the spine of the name.</li>
+          <li><strong>Mythology in the Burst era.</strong> Modern Beys lean on mythic figures and constellations: Valtryek (from Valkyrie), Spryzen (Spriggan), Achilles, Fafnir, Longinus, Roktavor. A name that nods to Norse, Greek, or world myth instantly reads as Burst-generation.</li>
+          <li><strong>Attribute fusion.</strong> Names often blend two roots — a beast plus a quality (Storm Pegasus, Rock Leone, Earth Eagle, Flame Sagittario). The element or adjective signals the Bey&apos;s personality before it ever touches the stadium.</li>
+          <li><strong>Hard, sharp phonetics.</strong> The franchise favors zr, dr, kr, and -us / -on / -yn endings (Spryzen, Valtryek, Kerbeus, Roktavor). Those edges make a name sound fast and metallic, which is why softer words rarely survive as Bey names.</li>
+        </ul>
+
+        <h2>Names by Battle Type</h2>
         <p>
-          The generator also keeps your ideas private. Names are created in your browser and are not sent to our servers. You can use it in a private or incognito window if you prefer. Because generation is local, there is no risk of your shortlist being stored or logged. That matters when you are testing ideas before you settle on a final Beyblade name or character name.
+          Every Bey belongs to one of four combat types, and matching a name to a type makes a custom Bey instantly more believable. The sound of the name should echo what the top does in the stadium:
         </p>
+        <ul>
+          <li><strong>Attack.</strong> Aggressive, lunging Beys built to slam opponents out of the ring — Storm Pegasus, Lightning L-Drago, Victory Valtryek. Names lean on speed and predators: storm, lightning, blades, raptors, and big cats.</li>
+          <li><strong>Defense.</strong> Heavy, immovable Beys that absorb hits — Earth Eagle, Rock Leone, Kerbeus, Bahamut. Names lean on stone, fortresses, guardians, and armored beasts.</li>
+          <li><strong>Stamina.</strong> Patient Beys that out-spin the opponent — Flame Libra, Fafnir, Wyvron. Names lean on endurance, hovering creatures, serpents, and the long, steady burn.</li>
+          <li><strong>Balance.</strong> All-rounders that adapt — Spryzen, Cosmic Pegasus, Spriggan Requiem. Names blend traits from the other three, often pairing a cosmic or hybrid root with a versatile beast.</li>
+        </ul>
         <p>
-          A good Beyblade name generator also standardizes the workflow: set how many names you want, click generate, copy the list, and check availability. You get a consistent way to explore username ideas without writing scripts or visiting multiple sites. The output is easy to paste into notes or a document so you can track which names you have already checked on Beyblade or other platforms.
+          Pick a type first, then generate a batch and keep the names whose sound matches it. A Defense Bey named for stone and a Stamina Bey named for a coiling serpent read very differently, even when both follow the same beast-plus-attribute formula.
         </p>
 
-        <h2>How the Beyblade Name Generator Works (Step by Step)</h2>
+        <h2>The Bit-Beast and Beast-Spirit Convention</h2>
         <p>
-          When you open the page, you choose how many names you want per run (1–24). Clicking &quot;Generate names&quot; triggers the tool to randomly combine curated Beyblade-style elements in your browser. Each run is independent; no names or settings are sent to a server. The result is a list of Beyblade name ideas, one per line. You can copy the full list with one click and paste it into a notes app. To get more ideas, run the generator again. The tool does not check Beyblade or any platform for availability—you must do that yourself.
+          The heart of Beyblade naming is the idea that a top is not just plastic and metal — it houses a beast. In the original series these were &quot;bit-beasts&quot;: Dragoon the wind dragon, Dranzer the fire phoenix, Driger the lightning tiger, Draciel the water turtle. The four blended an animal with one of the classical elements, which is why a strong OC name often does the same. When you generate a batch, ask of each result: what creature lives inside this Bey, and what element does it command? If the name suggests both, it is doing the job a real bit-beast name does.
         </p>
         <p>
-          The underlying word lists are designed to sound like gaming names for tops and characters: bold, memorable, and easy to type. The generator shuffles and combines these elements so that each run produces different combinations. That randomness helps you discover names you might not have thought of on your own. Because everything runs in the browser, the Beyblade name generator works offline once the page is loaded and does not depend on a backend service.
+          The convention survived into later eras under different labels — Metal Saga tied Beys to constellations and zodiac beasts (Leone the lion, Sagittario the archer), while Burst leans on mythological beings as spirit-avatars. Whatever the era, the throughline is the same: a Bey is a vessel for a legendary creature, and the name should make that creature audible the moment someone says it out loud.
+        </p>
+
+        <h2>Designing an Original Bey (OC)</h2>
+        <p>
+          For a fan series, fan-comic, or fan-art Bey, the name is the first thing the audience judges. A strong OC Bey name does three jobs at once: it names a beast or mythic figure, it carries a type-appropriate edge, and it sits naturally beside canon Beys in a roster. Generate a batch, then test each name: could it appear on a tournament bracket next to Spryzen and Valtryek without looking out of place? If yes, it is in the right register.
         </p>
         <p>
-          There are no hidden steps. You set the count, click generate, and receive a list. Copying is one click; pasting into your own document keeps your shortlist in one place. Running the Beyblade name generator multiple times is the intended workflow when you want a large pool of character name ideas before checking availability.
+          A common approach is to pick a mythological beast that has not been used yet — a basilisk, a manticore, a thunderbird, a kraken — and fuse it with an attribute that signals your Bey&apos;s type. Then layer in the franchise&apos;s naming system if your series uses one: the Burst games stack a beast-name with a layer, disc, and driver (for example &quot;Galaxy Zeus 4Glaive&quot;), so an OC built that way feels mechanically authentic. If you want a simpler classic-era feel, a two-word combo like &quot;Tempest Wyvron&quot; or &quot;Obsidian Kerbeus&quot; is plenty.
+        </p>
+
+        <h2>Special Moves and Battle Cries</h2>
+        <p>
+          Beyblade is famous for its named finishing moves, shouted at the moment of impact. Tyson&apos;s Dragoon unleashes the Galaxy Storm and Victory Tornado; Kai&apos;s Dranzer calls the Flame Saber and Blazing Gig; Burst-era Beys trigger Requiem and avatar-bursting special moves. If you are designing an OC Bey, give it a signature move that matches its beast and type: a Defense Bey might guard with an &quot;Iron Bastion,&quot; a Stamina Bey might outlast the field with &quot;Eternal Spiral,&quot; an Attack Bey might finish with &quot;Meteor Fang.&quot; This two-layer naming — the Bey&apos;s name plus its special-move name — is one of the most recognizable patterns in the franchise, and it gives fan-fiction and fan-art battles their dramatic punch.
         </p>
 
         <h2>How to Use This Beyblade Name Generator</h2>
-        <p>Follow these steps to get Beyblade name ideas:</p>
         <ol className="list-decimal pl-6 space-y-2">
           <li>Set how many names you want per run (1–24).</li>
-          <li>Click &quot;Generate names&quot; to get a new list of character name ideas.</li>
-          <li>Use the Copy button to copy all names to your clipboard.</li>
-          <li>Paste into a notes app or document, then check your game or story for availability and pick one.</li>
-          <li>Run again for more options; no account or download is required.</li>
+          <li>Click <strong>Generate names</strong> to get a fresh batch of Beyblade-style names.</li>
+          <li>Skim for names that fit your chosen battle type or beast theme, then use the Copy button to save the whole list.</li>
+          <li>Paste into your design notes or fan-series bible and shortlist your favorites.</li>
+          <li>Run again for more options — there is no limit, no account, and no download.</li>
         </ol>
         <p>
-          The Beyblade name generator runs in your browser; your settings and generated names are not sent to any server. You can run it as often as you like. Building a shortlist of five to ten options before checking availability on Beyblade is a good habit, since popular usernames are often taken. Have backups ready so that if your first choice is unavailable, you can try the next name on your list.
+          Generation happens entirely in your browser. Your settings and the names you create are never sent to a server, so your OC Bey ideas stay private until you choose to reveal them in your series or art.
         </p>
 
-        <h2>Beyblade and Gamer Naming Style</h2>
+        <h2>Tips for Picking the Right Bey Name</h2>
         <p>
-          Beyblade names and character names often use bold, memorable word combinations: action words, nicknames, or creative spellings. This Beyblade name generator uses curated Beyblade-style elements and combines them at random so you get new combinations that fit that style. The output is for inspiration only; the tool does not check Beyblade or any platform for availability. You can use the names as-is or tweak spelling and punctuation to make them your own.
+          Say the name out loud — Beyblade names are meant to be shouted at the launch (&quot;3, 2, 1, Let it rip!&quot;), so a name that stumbles in the mouth will stumble in a battle scene too. Keep a hard consonant or a sharp ending if you want that metallic, fast feel. Make sure the beast and the type agree: a name that sounds heavy and armored should not be powering an Attack Bey built for speed. And avoid accidentally reusing a canon Bey name exactly — borrowing a fresh beast (a wyvern, a chimera) and fusing it your own way is far stronger than recycling Pegasus or L-Drago.
         </p>
         <p>
-          Different games and communities favor different styles. Some players prefer short, punchy character names; others like longer usernames. Running the generator multiple times gives you a mix of lengths and styles. Skim the list, mark the ones you like, and then verify each one on your game or story. The Beyblade name generator is a starting point—your final choice should fit your personality and the rules of your platform.
-        </p>
-
-        <h2>When to Use a Beyblade Name Generator</h2>
-        <p>
-          Use this Beyblade name generator when you need Beyblade or Beyblade-style username ideas quickly. Common use cases include creating a new Beyblade account or updating your profile name, choosing an in-game name for esports or casual play, and picking a stream or social handle. The same tool works for other platforms—Discord, Xbox, PlayStation, or social profiles—as inspiration. Names must be unique on each platform, so always check availability before committing.
-        </p>
-        <p>
-          Another good time to use a Beyblade name generator is when you are rebranding. If you have used the same character name for years and want a fresh identity, generating a batch of ideas helps you explore options without pressure. Run the tool several times, paste results into one document, and remove duplicates. Then check Beyblade and any other platforms you use to see which names are still available. Having a shortlist saves time compared to checking one idea at a time.
+          If you are naming a whole team or rival roster, generate a batch and pick names that contrast across the four types — one fierce Attack name, one stony Defense name, one enduring Stamina name, one adaptable Balance name. That spread is exactly what makes a cast of Beys feel like distinct competitors rather than variations on one theme, the way Gingka&apos;s Pegasus, Kyoya&apos;s Leone, and Ryuga&apos;s L-Drago each sound like their own beast.
         </p>
 
-        <h2>Use Cases in Detail: Profiles, Esports, and Streams</h2>
-        <p>
-          Players use the Beyblade name generator when creating a new Beyblade account or refreshing their profile name. Esports and streamers use it for in-game names or stream handles. The same tool works for other platforms—Discord, Xbox, PlayStation, or social—as inspiration; you must check each platform for availability. Run the generator multiple times to build a shortlist, then check which names are free on your platform. The Beyblade name generator does not reserve or validate names; it only suggests combinations.
-        </p>
-        <p>
-          Content creators often need a consistent handle across Steam, streaming, and social media. Generating a batch of character name ideas lets you test different options before you commit. Copy the names you like into a single list, then check availability on each service. If one name is taken on Beyblade but free elsewhere, you can still use it on the platforms where it is available, or use the generator again to find alternatives that work everywhere.
-        </p>
-
-        <h2>Tips for Choosing a Beyblade Username</h2>
-        <p>
-          Pick a name that is easy to remember and type. Short character names are easier to say in voice chat and less likely to be mistyped. Run the Beyblade name generator multiple times to get a shortlist, then check your game or story for availability. Have a few backups in case your first choice is taken. Avoid names that might be mistaken for someone else or that break platform rules. The generator gives you ideas only; the final choice is yours.
-        </p>
-        <p>
-          Consider how the name will look in different contexts: in-game, on a stream overlay, or in a friend list. Some combinations look great in one font but odd in another. If you plan to use the same handle across multiple games and platforms, check availability everywhere before you invest in branding. The Beyblade name generator is a free way to explore options without committing until you have confirmed that your chosen Beyblade name or character name is available.
-        </p>
-
-        <h2>Running the Beyblade Name Generator in Batches</h2>
-        <p>
-          When you need many username ideas, run the Beyblade name generator multiple times. Each run gives up to 24 names. Paste each run into the same document and remove duplicates if any appear. Check availability on your platform for each name you like. There is no daily or total limit; you can run the generator as often as you want. Batching is useful when you are setting up several accounts, testing ideas for a team, or simply want a large pool of character name options before making a decision.
-        </p>
-        <p>
-          Keeping a single document with all your generated Beyblade name ideas makes it easy to track which names you have already checked. Mark names as &quot;taken&quot; or &quot;available&quot; as you go. That way you avoid re-checking the same name on Beyblade or another platform. The Beyblade name generator does not remember previous runs, so your document is your only record of the ideas you have collected.
-        </p>
-
-        <h2>Privacy and Local Processing</h2>
-        <p>
-          This Beyblade name generator runs entirely in your browser. When you set the number of names and click generate, the names are created locally on your device. Your choices and the generated names are not sent to our servers. We do not store your inputs or the generated list. No account or login is required. That means your shortlist of character name ideas stays on your machine unless you choose to copy it somewhere else.
-        </p>
-        <p>
-          Because generation is local, the tool is suitable for use in private or incognito windows. If you close the tab, the generated list is gone unless you have copied it. There is no server-side log of what names you generated or how many times you ran the Beyblade name generator. This privacy model is intentional: username brainstorming is personal, and the tool is designed so that you control where your ideas go.
-        </p>
-
-        <h2>Copying and Exporting Names</h2>
-        <p>
-          Use the Copy button to copy all generated Beyblade name ideas to your clipboard (one per line). Paste into a notes app or document. Check your game or story for availability before committing to a name. The names are plain text, so they work in any editor or form. If you paste into a spreadsheet, each line can go in its own cell for easy tracking. The Beyblade name generator does not export to a file; copying and pasting is the intended way to save your shortlist.
-        </p>
-
-        <h2>Limits and Batch Size</h2>
-        <p>
-          You can request 1–24 names per run with this Beyblade name generator. There is no daily or total limit. Run the generator again for more options. No download or account is required. If you need more than 24 names in one go, run the tool multiple times and paste the results into one document. Removing duplicates is up to you; the generator does not track previous output.
-        </p>
-
-        <h2>No Download or Account Required</h2>
-        <p>
-          This Beyblade name generator runs entirely in your browser. You do not need to download software or create an account. Open the page, set how many names you want, and click generate. The tool is free and works on desktop, tablet, and phone. That makes it easy to use when you are away from your main device or when you want to quickly generate character name ideas without installing anything.
-        </p>
-
-        <h2>Who Uses a Beyblade Name Generator?</h2>
-        <p>
-          Players use the Beyblade name generator when creating or updating a Beyblade profile, or when they want a new character name for other platforms. Esports and streamers use it for in-game names or stream handles. The same tool works for Discord, Xbox, PlayStation, or social profiles—always check availability on each platform. Educators and workshop leaders sometimes use it to demonstrate username creation or digital identity in a classroom setting. No account or download is required on our site.
-        </p>
-        <p>
-          Anyone who needs a steady supply of username ideas can benefit. Whether you are a casual gamer, a competitive player, or a content creator, the Beyblade name generator provides a fast way to explore options. The key is to treat the output as inspiration and always verify availability on Beyblade and any other platform where you plan to use the name.
-        </p>
-
-        <h2>Getting the Most Out of the Beyblade Name Generator</h2>
-        <p>
-          Run the generator several times and paste all results into one document. Skim for names that fit your style and check your platform for availability. Shortlist five to ten options so you have backups if your first choice is taken. The Beyblade name generator does not check Beyblade or any platform; you must do that yourself. When you have a shortlist, check availability one by one. Usernames are often taken on popular services, so having several options saves time.
-        </p>
-        <p>
-          Another tip is to try different batch sizes. Sometimes generating 24 names at once gives you a good mix; other times you may prefer smaller runs so you can review each set before generating more. The tool is flexible. Use it whenever you need new Beyblade name ideas or character name inspiration. Bookmarking the page makes it easy to return when you are ready to refresh your profile or create a new account.
-        </p>
-
-        <h2>Typical Workflow for the Beyblade Name Generator</h2>
-        <p>
-          A typical workflow is: open the page, set the number of names (e.g. 12 or 24), click generate, then copy the list. Paste into a notes app. Check your game or story for availability for each name you like. If your first choice is taken, try the next. Run the Beyblade name generator again for more options. The whole process takes a few minutes. No account or download is required. Bookmark the page for quick access when you need new username ideas. The tool is free and runs in your browser with no sign-up.
-        </p>
-
-        <h2>What This Tool Does NOT Do</h2>
+        <h2>What This Tool Does and Does Not Do</h2>
         <ul>
-          <li>It does not check Beyblade or any platform for username availability.</li>
-          <li>It does not reserve or hold names for you.</li>
-          <li>It does not store your generated list or your settings.</li>
-          <li>It does not connect to Steam, Discord, or any external gaming service.</li>
+          <li>It generates Beyblade-style names — beast-spirit roots, mythic figures, and type-themed attributes — for custom Beys, OCs, fan series, and fan art.</li>
+          <li>It does not reproduce official Bey names as a database; output is original combinations for your own creative use.</li>
+          <li>It does not store your generated list or settings; everything runs locally in your browser.</li>
+          <li>It does not check whether a name has been used by Takara Tomy or Hasbro — if you plan to publish a series commercially, verify originality yourself.</li>
         </ul>
-        <p>
-          This Beyblade name generator produces name ideas only. It does not validate availability, create accounts, or manage your profile. You must check Beyblade or your chosen platform yourself and follow that platform&apos;s rules when creating or changing your username. The tool is a brainstorming aid, not a replacement for checking availability.
-        </p>
 
-        <h2>Privacy and Security Notes</h2>
+        <h2>Final Notes</h2>
         <p>
-          The Beyblade name generator runs entirely in your browser. It does not send data to a server and does not store generated values. This is helpful for quick brainstorming and offline use. If you refresh the page, the last generated list is cleared. Copy any names you want to keep before closing or refreshing.
-        </p>
-        <p>
-          For account security, never share your Beyblade password or other credentials. The generator only suggests usernames; it does not handle login or account creation. When you check availability on Beyblade or another platform, use the official site or app and ensure you are on a secure connection. The Beyblade name generator is a standalone tool and does not integrate with any login system.
-        </p>
-
-        <h2>Final Summary and When to Use This Tool</h2>
-        <p>
-          The Beyblade name generator provides a fast way to create username and character name ideas for Beyblade and other fiction and games. Set the number of names (1–24) and run as often as you like. Copy results and check your platform for availability. The tool runs locally in your browser with no sign-up. Keep a shortlist of options in case your first choice is taken. No download or account is required. The generator is free and works on any device.
-        </p>
-        <p>
-          Use this Beyblade name generator when you need Beyblade name ideas, character name inspiration, or a quick way to explore options before checking availability. It is best for brainstorming, rebranding, and building a shortlist. Always verify availability on Beyblade or your chosen platform before committing to a name. The tool is a practical free resource for gaming names for tops and characters.
+          Beyblade is one of the most design-driven fandoms out there — fans build OC Beys, draw beast avatars, write tournament arcs, and even 3D-print custom layers, and every one of those needs a name that fits the world. This Beyblade name generator gives you that pool instantly, grounded in the franchise&apos;s real naming logic: a beast or mythic figure at the core, a sharp metallic edge, and a sound that matches the Attack, Defense, Stamina, or Balance role the Bey is built to play. Generate a batch, lean on the type and beast notes above, pair it with a special move, and you will end up with Bey names that sound like they were always ready to rip.
         </p>
       </div>
     </section>
@@ -199,30 +120,29 @@ function createWriteUp() {
 }
 
 const pageFaqs: FaqItem[] = [
-  { category: 'General', question: 'What is a Beyblade name generator?', answer: 'A Beyblade name generator is an online tool that creates names for tops and characters for Beyblade and other fiction and games. You get unique Beyblade name ideas at the click of a button. The generator combines curated Beyblade-style words at random in your browser so each run produces new combinations. This free Beyblade name generator runs locally with no sign-up and does not send generated names to any server. Always check your game or story for availability before committing to a name.' },
-  { category: 'Usage', question: 'How do I use the Beyblade name generator?', answer: 'Set how many names you want per run (1–24), click "Generate names" to get a new list of character name ideas, then use the Copy button to copy all names to your clipboard. Paste into a notes app and check your game or story for availability. Run again for more options; no sign-up is required. The Beyblade name generator runs in your browser so your settings and generated names are not sent to any server. Building a shortlist of five to ten options before checking availability is a good habit.' },
-  { category: 'General', question: 'Is the Beyblade name generator free?', answer: 'Yes. This Beyblade name generator is free to use in your browser. You can generate Beyblade name ideas as often as you like without creating an account or paying. The tool runs locally on your device and does not require a download. There is no daily or total limit on how many times you can run the generator.' },
-  { category: 'Use cases', question: 'Can I use the names for Steam?', answer: 'Yes. The Beyblade name generator produces username ideas that you can use on Steam. Names must be unique on the platform, so always check Steam\'s availability before committing. Run the generator multiple times to build a shortlist of character name ideas, then check which names are available on Steam. The tool does not reserve or validate names; it only suggests combinations for you to verify on the platform.' },
-  { category: 'Privacy', question: 'Is my data sent to a server when I use the Beyblade name generator?', answer: 'No. This Beyblade name generator runs in your browser. When you set the number of names and click generate, the names are created locally on your device. Your choices and the generated Beyblade name ideas are not sent to our servers. We do not store your inputs or the generated list. Generation is fully local and private.' },
-  { category: 'Compatibility', question: 'Does the Beyblade name generator work on mobile?', answer: 'Yes. The Beyblade name generator runs in a web browser and works on desktop, tablet, and phone. You do not need to install an app. Open the page, choose how many names you want, then generate. On a phone you can generate a short list and copy it into notes or check availability on Steam\'s app. The tool is responsive and works on any device with a modern browser.' },
-  { category: 'Limits', question: 'How many names can I generate with the Beyblade name generator?', answer: 'You can request 1–24 names per run with this Beyblade name generator. If you need more than 24 character name ideas, run the generator again; each run produces a new random set. There is no daily or total limit. Paste multiple runs into one document and remove duplicates if needed. The batch size is designed to keep the list manageable while giving you enough Beyblade name options to shortlist.' },
-  { category: 'Usage', question: 'Can I copy the names from the Beyblade name generator?', answer: 'Yes. Use the Copy button on this Beyblade name generator to copy all generated names to your clipboard. Paste into a notes app or document. The names are plain text, one per line, so they work in any editor or form. Check your game or story for availability before choosing a name. Copying is the intended way to save your shortlist of character name ideas.' },
-  { category: 'General', question: 'Do I need an account to use the Beyblade name generator?', answer: 'No. This Beyblade name generator works without sign-up or login. The tool runs entirely in your browser. You do not need to create an account on our site to use it. Open the page, set how many Beyblade name ideas you want, click generate, and copy the results. No email, password, or registration is required.' },
-  { category: 'Use cases', question: 'Can I use the Beyblade name generator for other platforms?', answer: 'Yes. The names work as ideas for any gaming or social platform—Discord, Xbox, PlayStation, or others. The Beyblade name generator is built for Steam-style character names but the output can inspire usernames elsewhere. Check each platform\'s availability; names must be unique on each service. The generator does not check availability for you, so always verify on the platform where you plan to use the name.' },
-  { category: 'Privacy', question: 'Do you store the names I generate with the Beyblade name generator?', answer: 'No. Generation happens in your browser. We do not receive or store the Beyblade name ideas or your settings. The Beyblade name generator runs locally on your device. You can use the tool in a private or incognito window if you prefer. If you refresh the page, the last generated list is cleared unless you have already copied it.' },
-  { category: 'Limits', question: 'Can I get more than 24 names from the Beyblade name generator?', answer: 'Each run of this Beyblade name generator gives up to 24 names. To get more character name ideas, run the generator again; each run produces a new random set. You can paste multiple runs into one document and then remove duplicates. There is no daily or total limit. Batching runs is the intended workflow when you need a large pool of Beyblade name options.' },
-  { category: 'General', question: 'Why "Steam" specifically in a Beyblade name generator?', answer: 'Beyblade is a major gaming platform, and people often search for Beyblade name ideas and character name generators. The Beyblade name generator serves that intent and produces names that fit Beyblade and similar gaming environments. The same ideas work for other platforms—Discord, Xbox, PlayStation—as inspiration. Use the names as character names wherever you need a unique username; always check availability on the platform you choose.' },
-  { category: 'Use cases', question: 'Can I use the Beyblade name generator for esports?', answer: 'Yes. Use the Beyblade name generator as inspiration for in-game names or stream handles. Run it multiple times to get a shortlist of character name ideas, then check availability on your platform. The tool is free and runs in your browser with no sign-up. Many esports and streamers use Beyblade name generators to brainstorm handles before verifying availability on Steam, Twitch, or other services.' },
-  { category: 'Technical', question: 'How are the names generated in the Beyblade name generator?', answer: 'This Beyblade name generator uses curated Beyblade-style words and elements. When you click generate, the tool randomly combines these in your browser so each run is different. No names or settings are sent to a server. The result is for inspiration only; we do not check Beyblade or any platform for availability. The word lists are designed to sound like gaming names for tops and characters—bold, memorable, and easy to type.' },
-  { category: 'General', question: 'Are the names from the Beyblade name generator unique?', answer: 'The names are randomly combined from our word list, so each run can produce new combinations. We do not check Beyblade or any platform for availability. You must check yourself whether a Beyblade name or character name is available before using it on your profile. The generator helps you discover ideas; uniqueness on a given platform depends on that platform\'s current registrations.' },
-  { category: 'Use cases', question: 'Can teachers use the Beyblade name generator?', answer: 'Yes. Teachers can use this Beyblade name generator for creative or tech-related activities—for example when students are learning about usernames, digital identity, or online profiles. Emphasize that the tool is for inspiration and that names must be checked for availability on any platform. The Beyblade name generator is free and runs in the browser with no sign-up, so it is easy to use in a classroom or workshop setting.' },
-  { category: 'General', question: 'How do I cite the Beyblade name generator?', answer: 'For academic or formal use you can cite this Beyblade name generator as a source of inspiration for names for tops and characters. The generated names are algorithm-produced; you can use them freely. A brief acknowledgment is optional. We do not require attribution. The tool is a free, browser-based utility for Beyblade name ideas and character name brainstorming.' },
-  { category: 'Use cases', question: 'Can I use the Beyblade name generator for a new Beyblade account?', answer: 'Yes. When creating a new Beyblade account you need a unique username. Run this Beyblade name generator to get character name ideas, copy the list, then check Beyblade for availability. Pick a name that is available and that you like. The tool runs in your browser with no sign-up. Building a shortlist of five to ten options before you start the sign-up process saves time, since many Beyblade names are already taken.' },
-  { category: 'General', question: 'Do the names from the Beyblade name generator work for streaming?', answer: 'Yes. The Beyblade name generator produces username ideas that can work for streaming platforms, in-game names, or social handles. Use the names as inspiration and check your platform for availability. Run the generator multiple times to build a shortlist of options. Many streamers use Beyblade name generators to brainstorm stream handles before checking availability on Twitch, YouTube, or other services.' },
-  { category: 'Best practices', question: 'What is the best workflow for the Beyblade name generator?', answer: 'Open the page, set the number of names (e.g. 12 or 24), click generate, then copy the list. Paste into a notes app. Check your game or story for availability for each name you like. If your first choice is taken, try the next. Run the Beyblade name generator again for more options. Keep a shortlist of five to ten character name ideas so you have backups. The tool is free and runs in your browser with no sign-up.' },
-  { category: 'Best practices', question: 'Should I run the Beyblade name generator multiple times?', answer: 'Yes. Running the Beyblade name generator multiple times is the intended workflow when you want a large pool of Beyblade name ideas. Paste each run into one document and remove duplicates if any appear. Then check availability on your game or story for each name you like. Having a shortlist saves time compared to checking one idea at a time. There is no daily or total limit on how many times you can run the generator.' },
-  { category: 'Troubleshooting', question: 'Why is my first choice from the Beyblade name generator taken?', answer: 'Popular names for tops and characters are often already in use on Beyblade and other platforms. The Beyblade name generator does not check availability; it only suggests combinations. Always have a shortlist of five to ten options so you have backups. Run the generator again for more Beyblade name ideas and check availability on your platform before committing. This is normal when using any name generator for fiction and games.' },
-  { category: 'Troubleshooting', question: 'Can I use the Beyblade name generator offline?', answer: 'Yes. Once the page is loaded, the Beyblade name generator runs entirely in your browser and does not require a network connection to generate names. You can generate character name ideas offline. Copying and pasting also works offline. You will need a connection only to open the page initially and to check availability on Beyblade or another platform.' },
+  { category: 'General', question: 'What is a Beyblade name generator?', answer: 'A Beyblade name generator is a browser tool that creates names in the style of the franchise — a beast or mythic figure fused with an attribute, like Storm Pegasus, Valtryek, or Spryzen. It follows Beyblade naming logic (a bit-beast or legendary creature at the core, a sharp metallic ending, and a hint of battle type) so the names fit custom Beys, OCs, fan series, and fan art. It runs locally with no sign-up and stores nothing.' },
+  { category: 'Naming style', question: 'How are real Beyblade names structured?', answer: 'Most Bey names pair a beast or mythic root with an attribute. The original series used bit-beasts — Dragoon (dragon), Dranzer (phoenix), Driger (tiger), Draciel (turtle) — each blended with an element. The Burst era leans on mythology: Valtryek from Valkyrie, Spryzen from Spriggan, plus Achilles, Fafnir, and Longinus. The franchise also favors hard, fast phonetics with zr, dr, and -us or -on endings.' },
+  { category: 'Naming style', question: 'What are bit-beasts and why do they shape Bey names?', answer: 'A bit-beast is the spirit creature said to live inside a Beyblade in the original series — a wind dragon, a fire phoenix, a lightning tiger, a water turtle. Because the Bey is a vessel for that beast, the name is built to make the creature audible. That is why a strong custom name names both an animal or mythic figure and, often, an element it commands. Later eras kept the convention through constellation beasts and mythological avatars.' },
+  { category: 'Battle type', question: 'How do names differ by battle type?', answer: 'Each Bey is Attack, Defense, Stamina, or Balance, and the sound should echo the role. Attack names lean on speed and predators (Storm Pegasus, Lightning L-Drago). Defense names lean on stone and guardians (Earth Eagle, Rock Leone, Kerbeus). Stamina names lean on endurance and serpents (Fafnir, Wyvron). Balance names blend traits, often with a cosmic or hybrid root (Spryzen, Cosmic Pegasus). Pick a type first, then keep the names that match it.' },
+  { category: 'Battle type', question: 'What type should my custom Bey be?', answer: 'Choose the type that fits how your Bey fights. If it lunges in to knock opponents out of the ring, make it Attack and give it a fast, predatory name. If it absorbs hits and holds the center, make it Defense and name it for stone or an armored beast. If it outlasts the field, make it Stamina with a coiling, enduring name. If it adapts, make it Balance and blend roots. Balance is the safest default for a flexible OC.' },
+  { category: 'OC', question: 'How do I design and name an original Bey (OC)?', answer: 'A strong OC Bey name does three things: names a beast or mythic figure, carries a type-appropriate edge, and sits naturally beside canon Beys on a roster. Pick a mythological creature that has not been used — a basilisk, manticore, thunderbird, or kraken — fuse it with an attribute that signals your type, then test it: could it appear on a bracket next to Spryzen and Valtryek without looking out of place? If yes, it works.' },
+  { category: 'OC', question: 'Can I build a name in the Burst layer-disc-driver format?', answer: 'Yes, and it makes an OC feel mechanically authentic. Burst Beys stack a beast-name with a layer, disc, and driver — for example Galaxy Zeus 4Glaive. Take a generated beast-plus-attribute name as the layer name, then add a disc number and a driver word of your own. If you prefer the simpler classic feel, a two-word combo like Tempest Wyvron or Obsidian Kerbeus is plenty on its own.' },
+  { category: 'Naming style', question: 'How do special moves and battle cries fit in?', answer: 'Beyblade is famous for named finishing moves shouted at impact — Dragoon\'s Galaxy Storm, Dranzer\'s Flame Saber, and Burst-era Requiem moves. For an OC, give it a signature move that matches its beast and type: an Iron Bastion for Defense, an Eternal Spiral for Stamina, a Meteor Fang for Attack. This two-layer naming, the Bey name plus its move name, is one of the most recognizable patterns in the franchise.' },
+  { category: 'OC', question: 'How do I name a full team or rival roster of Beys?', answer: 'Generate a batch and pick names that contrast across the four types: one fierce Attack name, one stony Defense name, one enduring Stamina name, one adaptable Balance name. That spread makes a cast feel like distinct competitors rather than variations on a theme — the way Gingka\'s Pegasus, Kyoya\'s Leone, and Ryuga\'s L-Drago each sound like their own beast.' },
+  { category: 'Usage', question: 'How do I use this Beyblade name generator?', answer: 'Set how many names you want (1–24), click Generate names, then skim for names that fit your chosen battle type or beast theme. Use the Copy button to save the whole list, paste it into your design notes or fan-series bible, and shortlist your favorites. Run again for more — there is no limit, account, or download.' },
+  { category: 'Usage', question: 'Can I edit or combine the generated names?', answer: 'Absolutely. The output is a starting point. Swap the beast root from one result onto the attribute from another, sharpen an ending to -us or -on, or fuse two names into a hybrid Balance Bey. Many designers generate a batch, take the creature word from one name and the element word from another, and combine them into the final Bey.' },
+  { category: 'Use cases', question: 'Can I use these names for a fan series or fan fiction?', answer: 'Yes — fan series and fan fiction are a primary use. The names follow the franchise\'s naming conventions so your OC Beys sit believably beside canon ones. Use the beast and type notes to match each name to its bit-beast and combat role, and pair it with a special move so battle scenes have the same dramatic punch the show does.' },
+  { category: 'Use cases', question: 'Can I use these names for fan art or 3D-printed custom Beys?', answer: 'Yes. Fan artists and makers who design original beast avatars or 3D-print custom layers need names that fit the world. Generate a batch, choose one whose beast suits your design, and let the type guide the visual — armored and heavy for Defense, sleek and bladed for Attack. The names are yours to use for non-commercial fan creations.' },
+  { category: 'Naming style', question: 'Why do so many Bey names use mythological figures?', answer: 'The Burst era especially treats Beys as vessels for legendary beings, so names draw on Norse, Greek, and world myth — Valkyrie, Spriggan, Achilles, Fafnir, Longinus, Roktavor. A mythic root gives a Bey instant gravity and a built-in personality. When you want a name to read as Burst-generation, reaching for an unused mythological creature is the most reliable way to get there.' },
+  { category: 'Technical', question: 'How are the names generated?', answer: 'The generator combines curated elements built around Beyblade\'s conventions — beast and bit-beast roots, mythological figures, elemental attributes, and the franchise\'s sharp phonetic endings — and shuffles them at random in your browser. Each run produces a new set. Nothing is sent to a server; generation is entirely local, so you can keep designing OC Beys offline once the page has loaded.' },
+  { category: 'General', question: 'Are these real Beys from the anime or toy line?', answer: 'No. The generator creates original, Beyblade-style names for your own use rather than reproducing the official Bey lineup as a lookup database. That is intentional — you want fresh names for custom Beys and OCs, not duplicates of Dragoon or Valtryek that you cannot claim as your own design.' },
+  { category: 'Privacy', question: 'Are my generated Bey names sent to a server?', answer: 'No. Everything runs in your browser. When you click generate, names are created on your device. Your settings and the generated names are never sent to our servers and nothing is stored. You can brainstorm your OC Beys in a private window and your design ideas stay yours until you reveal them in your series or art.' },
+  { category: 'Limits', question: 'How many Bey names can I generate at once?', answer: 'You can request 1–24 names per run. For more, just run it again — each run produces a fresh random set and there is no daily or total limit. Paste several runs into one document if you want a large pool to shortlist from when naming a whole roster of Beys.' },
+  { category: 'Compatibility', question: 'Does it work on mobile?', answer: 'Yes. The generator runs in any modern browser on desktop, tablet, or phone with no app install. Generate a batch of Bey names on your phone at a tournament or while sketching, copy it into your notes, and shortlist favorites wherever you are designing.' },
+  { category: 'General', question: 'Is the Beyblade name generator free?', answer: 'Yes, it is completely free with no account, sign-up, or download. Generate as many custom Bey, beast, and OC names as you like, as often as you like, whether you are building one Bey or a full tournament roster.' },
+  { category: 'Best practices', question: 'How do I make a generated name sound more canon?', answer: 'Say it out loud as if you were shouting it at the launch — Beyblade names are meant to be called out, so a name that stumbles in the mouth will stumble in a battle scene. Keep a hard consonant or a sharp ending for that metallic feel, make sure the beast and the battle type agree, and consider pairing the name with a special move so it carries the same two-layer weight canon Beys do.' },
+  { category: 'Best practices', question: 'How do I avoid reusing an existing Bey name?', answer: 'Borrow a fresh beast rather than a famous one. Pegasus, L-Drago, and Valtryek are taken, but wyverns, chimeras, basilisks, and thunderbirds are wide open. Fuse an unused creature with your own attribute and ending, then double-check it does not match an official release. Building from a less common myth or animal is both safer and more distinctive than recycling a canon root.' },
+  { category: 'Troubleshooting', question: 'The names do not feel Beyblade enough — what should I do?', answer: 'Generate a larger batch and filter hard: keep only names with a clear beast or mythic root and a sharp, metallic ending, and discard anything soft or generic. Fuse a strong creature word with a type-appropriate attribute (storm, rock, flame, cosmic), and add a special-move name. That combination is what gives canon Beys their feel and will push a plain result firmly into the world.' },
 ];
 
 export default async function BeybladeNameGeneratorPage() {
