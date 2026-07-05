@@ -12,35 +12,6 @@ type AdSenseSlotProps = {
 const AD_CLIENT = 'ca-pub-8764610479002120';
 const AD_SLOT = '3825906278';
 
-/** Defer ad init until after LCP window so main content can win LCP. */
-function afterLCPWindow(cb: () => void) {
-  if (typeof requestIdleCallback !== 'undefined') {
-    requestIdleCallback(cb, { timeout: 1800 });
-  } else {
-    setTimeout(cb, 1500);
-  }
-}
-
-/** Wait for AdSense script then run callback (poll up to 8s). */
-function waitForAdsByGoogle(cb: () => void) {
-  if (typeof window === 'undefined') return;
-  const win = window as Window & { adsbygoogle?: unknown };
-  if (win.adsbygoogle) {
-    cb();
-    return;
-  }
-  let attempts = 0;
-  const t = setInterval(() => {
-    attempts++;
-    if (win.adsbygoogle) {
-      clearInterval(t);
-      cb();
-      return;
-    }
-    if (attempts >= 53) clearInterval(t);
-  }, 150);
-}
-
 function resetAdSenseElement(element: HTMLElement) {
   element.removeAttribute('data-adsbygoogle-status');
   element.removeAttribute('data-ad-status');
@@ -103,26 +74,22 @@ export default function AdSenseSlot({ className, style }: AdSenseSlotProps) {
       return;
     }
 
-    afterLCPWindow(() => {
-      if (!slotRef.current?.isConnected || hasPushedRef.current) return;
-      waitForAdsByGoogle(() => {
-        if (!slotRef.current?.isConnected || hasPushedRef.current) return;
-        try {
-          resetAdSenseElement(slotRef.current);
-          const win = window as Window & { adsbygoogle?: Array<unknown> };
-          (win.adsbygoogle = win.adsbygoogle || []).push({});
-          hasPushedRef.current = true;
-        } catch {
-          // ignore
-        }
-      });
-    });
+    // Push immediately once the slot is ready — no LCP-window defer or poll wait,
+    // so ads fill as fast as possible (maximize fill/impressions).
+    try {
+      resetAdSenseElement(element);
+      const win = window as Window & { adsbygoogle?: Array<unknown> };
+      (win.adsbygoogle = win.adsbygoogle || []).push({});
+      hasPushedRef.current = true;
+    } catch {
+      // ignore
+    }
   }, [isReady, pathname]);
 
   const classes = [isReady ? 'adsbygoogle' : null, className].filter(Boolean).join(' ');
 
   return (
-    <div className={['min-h-[280px]', className].filter(Boolean).join(' ')} style={style}>
+    <div className={className} style={style}>
       <ins
         ref={slotRef}
         className={classes}
