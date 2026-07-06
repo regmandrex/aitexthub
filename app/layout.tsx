@@ -6,6 +6,7 @@ import Header from '../components/Header';
 import { JsonLd } from '../components/JsonLd';
 import { BreadcrumbJsonLdAndLang } from '../components/BreadcrumbJsonLdAndLang';
 import StickyFooterAd from '../components/ads/StickyFooterAd';
+import TopBannerAd from '../components/ads/TopBannerAd';
 import AdBlockNotice from '../components/ads/AdBlockNotice';
 import AdSenseRouteRefresh from '../components/ads/AdSenseRouteRefresh';
 import DeferredThirdPartyScripts from '../components/DeferredThirdPartyScripts';
@@ -104,6 +105,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <JsonLd data={NAV_SCHEMA} />
         <BreadcrumbJsonLdAndLang />
         <Header />
+        <TopBannerAd />
         <main className="min-h-screen">{children}</main>
         <Footer />
         <StickyFooterAd />
