@@ -29,169 +29,63 @@ function createWriteUp() {
     <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
         <h2>Bracket Name Generator – Tournament Team Names</h2>
-        <h2>Introduction</h2>
         <p>
-          This guide explains how to use a Bracket name generator to create team names for Bracket and other tournaments and events. The tool runs in your browser and produces unique, memorable name ideas at the click of a button. It is designed for players who want Bracket name ideas quickly without sign-up or download. The generator does not store data and runs entirely in your browser. You get 1–24 names per run and can run it as often as you like. Always check your game or story for availability before committing to a name.
+          A tournament bracket is the diagram that maps every matchup from the first round to the final, and the fun of running or entering one lives partly in the names. Whether you are filling out a March Madness pool, seeding a fantasy draft, running an office &quot;best of&quot; bracket, or organizing a gaming or sports tournament, a sharp team or entry name is what makes your slot stand out on the bracket sheet. This bracket name generator builds bold, punny, and memorable names in your browser — no sign-up, 1–24 names per run — so you can name your team, your bracket, or every seed in a challenge.
         </p>
         <p>
-          People search for Bracket name ideas and character name generators when setting up a new profile, an esports handle, or a stream name. This Bracket name generator serves that intent with one free, browser-based tool. Whether you need a single standout character name or a shortlist of options, the generator gives you a pool of ideas. Names must be unique on each service, so verifying availability on Bracket or your chosen platform is an essential step after generating ideas.
-        </p>
-
-        <h2>What Is a Bracket Name Generator?</h2>
-        <p>
-          A Bracket name generator is an online tool that creates team names suitable for Bracket and other tournaments and events. You get unique name ideas at the click of a button. The generator combines curated bold and memorable words and elements at random so each run produces new combinations. The output is for inspiration only; you must check your platform for availability. This free Bracket name generator runs in your browser with no sign-up and does not send generated names to any server.
-        </p>
-        <p>
-          The output is plain text, one name per line. You can copy the full list and paste it into a notes app, then check your game or story for availability and pick one. Many users run the Bracket name generator multiple times to build a shortlist before deciding. Because names are created locally, your choices stay private and nothing is stored on our servers.
-        </p>
-        <p>
-          Bracket name generators are useful when you are tired of reusing the same username or when you want a fresh character name that fits your style. The tool does not guarantee that a name is available; it only suggests combinations. Always confirm availability on your game or story before you commit to a new username.
+          Bracket naming has its own flavor. It rewards puns, alliteration, local references, and a little trash talk, because a bracket is a public, competitive space where dozens of names sit side by side and the funniest or fiercest ones get remembered. The guide below walks through the different naming jobs a bracket creates — your own entry, the whole bracket or pool, and the individual seeds in a challenge — so the names you pick land at the top of the standings for personality, not just placement.
         </p>
 
-        <h2>Why This Bracket Name Generator Matters</h2>
+        <h2>What Makes a Great Bracket Name</h2>
         <p>
-          Choosing a memorable Bracket name or character name can be time-consuming. A Bracket name generator speeds up brainstorming. Instead of staring at a blank field, you get options in seconds. You can run it on a phone or desktop, copy the names you like, and then check availability on your game or story. The tool is free and does not require an account, so there is no friction to trying many ideas.
+          On a crowded bracket sheet, a name has one job: get noticed and get a reaction. The strongest bracket names share a few traits:
         </p>
+        <ul>
+          <li><strong>A pun or wordplay.</strong> Bracket culture runs on puns — a clever play on a player&apos;s name, a team, or a current event is the classic move that earns a laugh from everyone else in the pool.</li>
+          <li><strong>Confidence or trash talk.</strong> A name that projects swagger (&quot;Bracket Buster,&quot; &quot;Cinderella Story&quot;) fits the competitive energy and backs up your picks.</li>
+          <li><strong>Brevity.</strong> Bracket columns are narrow, so a short, punchy name reads better than a long one that gets truncated on the sheet or app.</li>
+        </ul>
+
+        <h2>Naming Your Bracket Entry or Team</h2>
         <p>
-          The generator also keeps your ideas private. Names are created in your browser and are not sent to our servers. You can use it in a private or incognito window if you prefer. Because generation is local, there is no risk of your shortlist being stored or logged. That matters when you are testing ideas before you settle on a final Bracket name or character name.
-        </p>
-        <p>
-          A good Bracket name generator also standardizes the workflow: set how many names you want, click generate, copy the list, and check availability. You get a consistent way to explore username ideas without writing scripts or visiting multiple sites. The output is easy to paste into notes or a document so you can track which names you have already checked on Bracket or other platforms.
+          The most common naming task is your own entry — the name that sits next to your picks in a pool. This is your chance to show personality and stake a claim. Timely pop-culture puns, jokes about a star player or a favorite team, and boastful predictions all thrive here because everyone in the pool sees them and the funniest names become a talking point. If you are naming an actual team competing in the bracket rather than a pick&apos;em entry, lean a little harder into identity — something that sounds like a squad you would rally behind — while keeping the pun-friendly, competitive tone that fits a tournament setting.
         </p>
 
-        <h2>How the Bracket Name Generator Works (Step by Step)</h2>
+        <h2>Naming the Whole Bracket or Pool</h2>
         <p>
-          When you open the page, you choose how many names you want per run (1–24). Clicking &quot;Generate names&quot; triggers the tool to randomly combine curated bold and memorable elements in your browser. Each run is independent; no names or settings are sent to a server. The result is a list of Bracket name ideas, one per line. You can copy the full list with one click and paste it into a notes app. To get more ideas, run the generator again. The tool does not check Bracket or any platform for availability—you must do that yourself.
+          If you are the organizer, you also get to name the bracket itself — the pool, the league, or the annual event. A bracket name works like an event brand: it should capture what the competition is about and be catchy enough that people want to join and reference it year after year. Office pools, friend-group leagues, and recurring &quot;bracket of everything&quot; challenges all benefit from a name with a hook, often built on the theme (the category being ranked), the group, or a running inside joke. A memorable pool name makes the whole thing feel like a real institution rather than a one-off spreadsheet.
         </p>
+
+        <h2>Bracket Challenges: Naming the Seeds</h2>
         <p>
-          The underlying word lists are designed to sound like gaming team names: bold, memorable, and easy to type. The generator shuffles and combines these elements so that each run produces different combinations. That randomness helps you discover names you might not have thought of on your own. Because everything runs in the browser, the Bracket name generator works offline once the page is loaded and does not depend on a backend service.
+          A hugely popular format is the &quot;bracket challenge,&quot; where instead of teams you seed a field of things — favorite snacks, movies, songs, memes, coworkers&apos; lunch orders — and vote them down round by round to a champion. Here the names are the entries themselves, and the humor comes from the matchups: a No. 1 seed facing a scrappy underdog, two beloved options forced to knock each other out. When you build a challenge like this, generate a pool of candidate names or use the tool to spark categories, then arrange them into a seeded bracket so the early rounds tease the collisions everyone will argue about.
         </p>
+
+        <h2>Seeding, Matchups, and Bracket Structure</h2>
         <p>
-          There are no hidden steps. You set the count, click generate, and receive a list. Copying is one click; pasting into your own document keeps your shortlist in one place. Running the Bracket name generator multiple times is the intended workflow when you want a large pool of character name ideas before checking availability.
+          Understanding a little bracket structure helps your names hit harder. Entries are usually <strong>seeded</strong> — ranked so the strongest is No. 1 and the weakest is at the bottom — and the bracket pairs high seeds against low seeds so the marquee clashes land in later rounds. That structure creates the drama bracket names play off: the top-seed favorite with a boastful name, the low-seed underdog whose &quot;Cinderella&quot; name becomes a fan favorite if it survives, and the &quot;play-in&quot; long shots at the very edge. When you name entries, think about where they sit: a cocky name suits a top seed, while a self-deprecating or scrappy name is gold for an underdog nobody expected to advance.
         </p>
 
         <h2>How to Use This Bracket Name Generator</h2>
-        <p>Follow these steps to get Bracket name ideas:</p>
         <ol className="list-decimal pl-6 space-y-2">
-          <li>Set how many names you want per run (1–24).</li>
-          <li>Click &quot;Generate names&quot; to get a new list of character name ideas.</li>
-          <li>Use the Copy button to copy all names to your clipboard.</li>
-          <li>Paste into a notes app or document, then check your game or story for availability and pick one.</li>
-          <li>Run again for more options; no account or download is required.</li>
+          <li>Decide what you are naming — your own entry, the whole pool, or the seeds in a challenge.</li>
+          <li>Set how many names you want per run (1–24) and click <strong>Generate names</strong>.</li>
+          <li>Skim for the puns and punchy options that fit your bracket&apos;s tone, and check they are short enough for the sheet or app.</li>
+          <li>Use the Copy button to save your shortlist, then drop your favorite into your bracket or pool.</li>
+          <li>Run again for more options — there is no limit, no account, and no download.</li>
         </ol>
         <p>
-          The Bracket name generator runs in your browser; your settings and generated names are not sent to any server. You can run it as often as you like. Building a shortlist of five to ten options before checking availability on Bracket is a good habit, since popular usernames are often taken. Have backups ready so that if your first choice is unavailable, you can try the next name on your list.
+          Generation happens entirely in your browser. Your settings and the names you create are never sent to a server, so your entry name or your challenge lineup stays private until you post it.
         </p>
 
-        <h2>Bracket and Gamer Naming Style</h2>
+        <h2>Tips and Common Mistakes</h2>
         <p>
-          Bracket names and character names often use bold, memorable word combinations: action words, nicknames, or creative spellings. This Bracket name generator uses curated bold and memorable elements and combines them at random so you get new combinations that fit that style. The output is for inspiration only; the tool does not check Bracket or any platform for availability. You can use the names as-is or tweak spelling and punctuation to make them your own.
-        </p>
-        <p>
-          Different games and communities favor different styles. Some players prefer short, punchy character names; others like longer usernames. Running the generator multiple times gives you a mix of lengths and styles. Skim the list, mark the ones you like, and then verify each one on your game or story. The Bracket name generator is a starting point—your final choice should fit your personality and the rules of your platform.
+          The most common miss is a name that is too long — bracket apps and printed sheets truncate, so a clever line nobody can read fully lands flat. Keep it short. A second is leaning on a pun so obscure or dated that the pool does not get it; the best bracket humor is timely and shared, referencing this year&apos;s players, memes, or the group&apos;s own inside jokes. A third, for organizers, is a bland pool or challenge name that gives the event no identity — a good name is what turns a one-time spreadsheet into a tradition people come back for. Generate a batch, keep the sharp and short options, and read them the way they will appear on the bracket.
         </p>
 
-        <h2>When to Use a Bracket Name Generator</h2>
+        <h2>Privacy</h2>
         <p>
-          Use this Bracket name generator when you need Bracket or bold and memorable username ideas quickly. Common use cases include creating a new Bracket account or updating your profile name, choosing an in-game name for esports or casual play, and picking a stream or social handle. The same tool works for other platforms—Discord, Xbox, PlayStation, or social profiles—as inspiration. Names must be unique on each platform, so always check availability before committing.
-        </p>
-        <p>
-          Another good time to use a Bracket name generator is when you are rebranding. If you have used the same character name for years and want a fresh identity, generating a batch of ideas helps you explore options without pressure. Run the tool several times, paste results into one document, and remove duplicates. Then check Bracket and any other platforms you use to see which names are still available. Having a shortlist saves time compared to checking one idea at a time.
-        </p>
-
-        <h2>Use Cases in Detail: Profiles, Esports, and Streams</h2>
-        <p>
-          Players use the Bracket name generator when creating a new Bracket account or refreshing their profile name. Esports and streamers use it for in-game names or stream handles. The same tool works for other platforms—Discord, Xbox, PlayStation, or social—as inspiration; you must check each platform for availability. Run the generator multiple times to build a shortlist, then check which names are free on your platform. The Bracket name generator does not reserve or validate names; it only suggests combinations.
-        </p>
-        <p>
-          Content creators often need a consistent handle across Steam, streaming, and social media. Generating a batch of character name ideas lets you test different options before you commit. Copy the names you like into a single list, then check availability on each service. If one name is taken on Bracket but free elsewhere, you can still use it on the platforms where it is available, or use the generator again to find alternatives that work everywhere.
-        </p>
-
-        <h2>Tips for Choosing a Bracket Username</h2>
-        <p>
-          Pick a name that is easy to remember and type. Short character names are easier to say in voice chat and less likely to be mistyped. Run the Bracket name generator multiple times to get a shortlist, then check your game or story for availability. Have a few backups in case your first choice is taken. Avoid names that might be mistaken for someone else or that break platform rules. The generator gives you ideas only; the final choice is yours.
-        </p>
-        <p>
-          Consider how the name will look in different contexts: in-game, on a stream overlay, or in a friend list. Some combinations look great in one font but odd in another. If you plan to use the same handle across multiple games and platforms, check availability everywhere before you invest in branding. The Bracket name generator is a free way to explore options without committing until you have confirmed that your chosen Bracket name or character name is available.
-        </p>
-
-        <h2>Running the Bracket Name Generator in Batches</h2>
-        <p>
-          When you need many username ideas, run the Bracket name generator multiple times. Each run gives up to 24 names. Paste each run into the same document and remove duplicates if any appear. Check availability on your platform for each name you like. There is no daily or total limit; you can run the generator as often as you want. Batching is useful when you are setting up several accounts, testing ideas for a team, or simply want a large pool of character name options before making a decision.
-        </p>
-        <p>
-          Keeping a single document with all your generated Bracket name ideas makes it easy to track which names you have already checked. Mark names as &quot;taken&quot; or &quot;available&quot; as you go. That way you avoid re-checking the same name on Bracket or another platform. The Bracket name generator does not remember previous runs, so your document is your only record of the ideas you have collected.
-        </p>
-
-        <h2>Privacy and Local Processing</h2>
-        <p>
-          This Bracket name generator runs entirely in your browser. When you set the number of names and click generate, the names are created locally on your device. Your choices and the generated names are not sent to our servers. We do not store your inputs or the generated list. No account or login is required. That means your shortlist of character name ideas stays on your machine unless you choose to copy it somewhere else.
-        </p>
-        <p>
-          Because generation is local, the tool is suitable for use in private or incognito windows. If you close the tab, the generated list is gone unless you have copied it. There is no server-side log of what names you generated or how many times you ran the Bracket name generator. This privacy model is intentional: username brainstorming is personal, and the tool is designed so that you control where your ideas go.
-        </p>
-
-        <h2>Copying and Exporting Names</h2>
-        <p>
-          Use the Copy button to copy all generated Bracket name ideas to your clipboard (one per line). Paste into a notes app or document. Check your game or story for availability before committing to a name. The names are plain text, so they work in any editor or form. If you paste into a spreadsheet, each line can go in its own cell for easy tracking. The Bracket name generator does not export to a file; copying and pasting is the intended way to save your shortlist.
-        </p>
-
-        <h2>Limits and Batch Size</h2>
-        <p>
-          You can request 1–24 names per run with this Bracket name generator. There is no daily or total limit. Run the generator again for more options. No download or account is required. If you need more than 24 names in one go, run the tool multiple times and paste the results into one document. Removing duplicates is up to you; the generator does not track previous output.
-        </p>
-
-        <h2>No Download or Account Required</h2>
-        <p>
-          This Bracket name generator runs entirely in your browser. You do not need to download software or create an account. Open the page, set how many names you want, and click generate. The tool is free and works on desktop, tablet, and phone. That makes it easy to use when you are away from your main device or when you want to quickly generate character name ideas without installing anything.
-        </p>
-
-        <h2>Who Uses a Bracket Name Generator?</h2>
-        <p>
-          Players use the Bracket name generator when creating or updating a Bracket profile, or when they want a new character name for other platforms. Esports and streamers use it for in-game names or stream handles. The same tool works for Discord, Xbox, PlayStation, or social profiles—always check availability on each platform. Educators and workshop leaders sometimes use it to demonstrate username creation or digital identity in a classroom setting. No account or download is required on our site.
-        </p>
-        <p>
-          Anyone who needs a steady supply of username ideas can benefit. Whether you are a casual gamer, a competitive player, or a content creator, the Bracket name generator provides a fast way to explore options. The key is to treat the output as inspiration and always verify availability on Bracket and any other platform where you plan to use the name.
-        </p>
-
-        <h2>Getting the Most Out of the Bracket Name Generator</h2>
-        <p>
-          Run the generator several times and paste all results into one document. Skim for names that fit your style and check your platform for availability. Shortlist five to ten options so you have backups if your first choice is taken. The Bracket name generator does not check Bracket or any platform; you must do that yourself. When you have a shortlist, check availability one by one. Usernames are often taken on popular services, so having several options saves time.
-        </p>
-        <p>
-          Another tip is to try different batch sizes. Sometimes generating 24 names at once gives you a good mix; other times you may prefer smaller runs so you can review each set before generating more. The tool is flexible. Use it whenever you need new Bracket name ideas or character name inspiration. Bookmarking the page makes it easy to return when you are ready to refresh your profile or create a new account.
-        </p>
-
-        <h2>Typical Workflow for the Bracket Name Generator</h2>
-        <p>
-          A typical workflow is: open the page, set the number of names (e.g. 12 or 24), click generate, then copy the list. Paste into a notes app. Check your game or story for availability for each name you like. If your first choice is taken, try the next. Run the Bracket name generator again for more options. The whole process takes a few minutes. No account or download is required. Bookmark the page for quick access when you need new username ideas. The tool is free and runs in your browser with no sign-up.
-        </p>
-
-        <h2>What This Tool Does NOT Do</h2>
-        <ul>
-          <li>It does not check Bracket or any platform for username availability.</li>
-          <li>It does not reserve or hold names for you.</li>
-          <li>It does not store your generated list or your settings.</li>
-          <li>It does not connect to Steam, Discord, or any external gaming service.</li>
-        </ul>
-        <p>
-          This Bracket name generator produces name ideas only. It does not validate availability, create accounts, or manage your profile. You must check Bracket or your chosen platform yourself and follow that platform&apos;s rules when creating or changing your username. The tool is a brainstorming aid, not a replacement for checking availability.
-        </p>
-
-        <h2>Privacy and Security Notes</h2>
-        <p>
-          The Bracket name generator runs entirely in your browser. It does not send data to a server and does not store generated values. This is helpful for quick brainstorming and offline use. If you refresh the page, the last generated list is cleared. Copy any names you want to keep before closing or refreshing.
-        </p>
-        <p>
-          For account security, never share your Bracket password or other credentials. The generator only suggests usernames; it does not handle login or account creation. When you check availability on Bracket or another platform, use the official site or app and ensure you are on a secure connection. The Bracket name generator is a standalone tool and does not integrate with any login system.
-        </p>
-
-        <h2>Final Summary and When to Use This Tool</h2>
-        <p>
-          The Bracket name generator provides a fast way to create username and character name ideas for Bracket and other tournaments and events. Set the number of names (1–24) and run as often as you like. Copy results and check your platform for availability. The tool runs locally in your browser with no sign-up. Keep a shortlist of options in case your first choice is taken. No download or account is required. The generator is free and works on any device.
-        </p>
-        <p>
-          Use this Bracket name generator when you need Bracket name ideas, character name inspiration, or a quick way to explore options before checking availability. It is best for brainstorming, rebranding, and building a shortlist. Always verify availability on Bracket or your chosen platform before committing to a name. The tool is a practical free resource for gaming team names.
+          This bracket name generator runs entirely in your browser. When you set a count and generate, the names are created locally on your device — nothing is uploaded, logged, or stored on our servers. Close the tab and the list is gone unless you copied it, so your bracket ideas stay yours until you enter them.
         </p>
       </div>
     </section>

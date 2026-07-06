@@ -29,169 +29,61 @@ function createWriteUp() {
     <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
         <h2>Silly Name Generator – Funny Name Ideas</h2>
-        <h2>Introduction</h2>
         <p>
-          This guide explains how to use a Silly name generator to create silly and funny names for Silly and other games and creative projects. The tool runs in your browser and produces unique, memorable name ideas at the click of a button. It is designed for players who want Silly name ideas quickly without sign-up or download. The generator does not store data and runs entirely in your browser. You get 1–24 names per run and can run it as often as you like. Always check your game or story for availability before committing to a name.
+          A silly name earns its laugh through sound and surprise. Whether it is an absurd pun, an unexpected mash-up, or a name that says exactly the wrong thing, a good silly name is instantly quotable — the kind you drop into a group chat or slap on a fantasy football team and watch it land. This silly name generator builds funny names from wordplay, puns, and absurd combinations, so you always have a fresh joke ready. It runs in your browser, needs no sign-up, and gives you 1–24 names per run with a copy button.
         </p>
         <p>
-          People search for Silly name ideas and character name generators when setting up a new profile, an esports handle, or a stream name. This Silly name generator serves that intent with one free, browser-based tool. Whether you need a single standout character name or a shortlist of options, the generator gives you a pool of ideas. Names must be unique on each service, so verifying availability on Silly or your chosen platform is an essential step after generating ideas.
-        </p>
-
-        <h2>What Is a Silly Name Generator?</h2>
-        <p>
-          A Silly name generator is an online tool that creates silly and funny names suitable for Silly and other games and creative projects. You get unique name ideas at the click of a button. The generator combines curated silly words and elements at random so each run produces new combinations. The output is for inspiration only; you must check your platform for availability. This free Silly name generator runs in your browser with no sign-up and does not send generated names to any server.
-        </p>
-        <p>
-          The output is plain text, one name per line. You can copy the full list and paste it into a notes app, then check your game or story for availability and pick one. Many users run the Silly name generator multiple times to build a shortlist before deciding. Because names are created locally, your choices stay private and nothing is stored on our servers.
-        </p>
-        <p>
-          Silly name generators are useful when you are tired of reusing the same username or when you want a fresh character name that fits your style. The tool does not guarantee that a name is available; it only suggests combinations. Always confirm availability on your game or story before you commit to a new username.
+          The guide below covers what actually makes a name funny — the comedy mechanics behind puns, incongruity, and rhythm — plus the best places to deploy a silly name, from group chats and gamertags to fantasy sports and comic characters, and how to make one land instead of falling flat.
         </p>
 
-        <h2>Why This Silly Name Generator Matters</h2>
+        <h2>What Makes a Name Funny</h2>
         <p>
-          Choosing a memorable Silly name or character name can be time-consuming. A Silly name generator speeds up brainstorming. Instead of staring at a blank field, you get options in seconds. You can run it on a phone or desktop, copy the names you like, and then check availability on your game or story. The tool is free and does not require an account, so there is no friction to trying many ideas.
+          Silly names run on a few reliable comedy mechanics. Knowing them helps you spot the winners in a batch:
         </p>
+        <ul>
+          <li><strong>Puns and wordplay.</strong> A name that hides a familiar phrase or a clever double meaning rewards the reader for &quot;getting it&quot; — the little click of recognition is the joke.</li>
+          <li><strong>Incongruity.</strong> Pairing two things that do not belong together — a grand title on something trivial, a fearsome word next to a cute one — creates the mismatch that comedy thrives on.</li>
+          <li><strong>Sound and rhythm.</strong> Alliteration, rhyme, and funny-sounding syllables (anything with a hard &quot;k&quot; or a bouncy repetition) are inherently ticklish to say aloud.</li>
+          <li><strong>Absurd specificity.</strong> An oddly precise or overly serious detail makes a name funnier than a vaguely goofy one — the commitment sells it.</li>
+        </ul>
+
+        <h2>Silly Names for Group Chats and Nicknames</h2>
         <p>
-          The generator also keeps your ideas private. Names are created in your browser and are not sent to our servers. You can use it in a private or incognito window if you prefer. Because generation is local, there is no risk of your shortlist being stored or logged. That matters when you are testing ideas before you settle on a final Silly name or character name.
-        </p>
-        <p>
-          A good Silly name generator also standardizes the workflow: set how many names you want, click generate, copy the list, and check availability. You get a consistent way to explore username ideas without writing scripts or visiting multiple sites. The output is easy to paste into notes or a document so you can track which names you have already checked on Silly or other platforms.
+          Group chats live on inside jokes, and a silly name is the fastest way to plant one. Renaming the chat itself, or giving each other absurd nicknames, sets a playful tone that outlasts any single joke. The best group-chat names are short, easy to type, and a little chaotic — something everyone will keep referencing. Generate a batch, read the top few aloud to the group, and keep whichever one makes people react. If nobody groans or laughs, it is not the one.
         </p>
 
-        <h2>How the Silly Name Generator Works (Step by Step)</h2>
+        <h2>Funny Gamertags and Usernames</h2>
         <p>
-          When you open the page, you choose how many names you want per run (1–24). Clicking &quot;Generate names&quot; triggers the tool to randomly combine curated silly elements in your browser. Each run is independent; no names or settings are sent to a server. The result is a list of Silly name ideas, one per line. You can copy the full list with one click and paste it into a notes app. To get more ideas, run the generator again. The tool does not check Silly or any platform for availability—you must do that yourself.
+          A silly gamertag or username turns every scoreboard, kill-feed, and lobby into a small joke — there is a long tradition of players picking names engineered to look funny when the game announces them. The trick is a name that reads well in context: something that becomes funnier when it appears next to game text or a &quot;defeated by&quot; line. Keep it easy to spell so people can find you, and check the platform&apos;s rules, since some filter or block certain words. Generate a big batch and shortlist the ones that would make you laugh mid-match.
         </p>
+
+        <h2>Fantasy Football and Team Names</h2>
         <p>
-          The underlying word lists are designed to sound like gaming silly and funny names: bold, memorable, and easy to type. The generator shuffles and combines these elements so that each run produces different combinations. That randomness helps you discover names you might not have thought of on your own. Because everything runs in the browser, the Silly name generator works offline once the page is loaded and does not depend on a backend service.
+          Fantasy football, office pools, trivia teams, and pub quizzes practically demand a funny name — it is half the fun of joining. A strong team name often plays on a player&apos;s name, a current event, or a groan-worthy pun, and it sits at the top of the standings all season, so it needs staying power. Generate a batch, look for the puns and absurd combos with legs, and pick the one your league will still be quoting in week twelve.
         </p>
+
+        <h2>Silly Names for Comic Characters</h2>
         <p>
-          There are no hidden steps. You set the count, click generate, and receive a list. Copying is one click; pasting into your own document keeps your shortlist in one place. Running the Silly name generator multiple times is the intended workflow when you want a large pool of character name ideas before checking availability.
+          In comedy writing, cartoons, sketches, and lighthearted tabletop campaigns, a character&apos;s name can carry the joke before they even speak. A well-chosen silly name signals &quot;do not take this one too seriously&quot; and primes the audience to laugh. For a whole cast of comic characters, generate a batch and give related characters names in the same absurd key so the ensemble feels intentional. Match the level of silliness to the tone: a gentle pun for a warm comedy, an all-out absurd mash-up for broad slapstick.
         </p>
 
         <h2>How to Use This Silly Name Generator</h2>
-        <p>Follow these steps to get Silly name ideas:</p>
         <ol className="list-decimal pl-6 space-y-2">
-          <li>Set how many names you want per run (1–24).</li>
-          <li>Click &quot;Generate names&quot; to get a new list of character name ideas.</li>
-          <li>Use the Copy button to copy all names to your clipboard.</li>
-          <li>Paste into a notes app or document, then check your game or story for availability and pick one.</li>
-          <li>Run again for more options; no account or download is required.</li>
+          <li>Decide where the name is going — group chat, gamertag, fantasy team, or comic character — so you can judge what will land.</li>
+          <li>Set how many names you want per run (1–24) and click <strong>Generate names</strong> for a fresh batch of silly, punny, absurd names.</li>
+          <li>Read the top candidates out loud; the ones that make you laugh or groan are the keepers. Use the Copy button to save the list.</li>
+          <li>Paste into your chat, roster, or notes and shortlist the funniest few.</li>
+          <li>Run again for more options — there is no limit, no account, and no download.</li>
         </ol>
+
+        <h2>Tips and Common Mistakes</h2>
         <p>
-          The Silly name generator runs in your browser; your settings and generated names are not sent to any server. You can run it as often as you like. Building a shortlist of five to ten options before checking availability on Silly is a good habit, since popular usernames are often taken. Have backups ready so that if your first choice is unavailable, you can try the next name on your list.
+          Say every candidate aloud — comedy lives in the sound, and a name that looks funny on screen can fall flat when spoken, or the reverse. Do not overthink it; the first name that makes you laugh usually beats the one you talk yourself into. The most common mistake is trying too hard, stacking three jokes into one name until it stops being readable — a single clean pun or one sharp mismatch beats a cluttered one. Keep it easy to spell if others need to find or type it, and match the silliness to the setting so the joke fits the room.
         </p>
 
-        <h2>Silly and Gamer Naming Style</h2>
+        <h2>Privacy</h2>
         <p>
-          Silly names and character names often use bold, memorable word combinations: action words, nicknames, or creative spellings. This Silly name generator uses curated silly elements and combines them at random so you get new combinations that fit that style. The output is for inspiration only; the tool does not check Silly or any platform for availability. You can use the names as-is or tweak spelling and punctuation to make them your own.
-        </p>
-        <p>
-          Different games and communities favor different styles. Some players prefer short, punchy character names; others like longer usernames. Running the generator multiple times gives you a mix of lengths and styles. Skim the list, mark the ones you like, and then verify each one on your game or story. The Silly name generator is a starting point—your final choice should fit your personality and the rules of your platform.
-        </p>
-
-        <h2>When to Use a Silly Name Generator</h2>
-        <p>
-          Use this Silly name generator when you need Silly or silly username ideas quickly. Common use cases include creating a new Silly account or updating your profile name, choosing an in-game name for esports or casual play, and picking a stream or social handle. The same tool works for other platforms—Discord, Xbox, PlayStation, or social profiles—as inspiration. Names must be unique on each platform, so always check availability before committing.
-        </p>
-        <p>
-          Another good time to use a Silly name generator is when you are rebranding. If you have used the same character name for years and want a fresh identity, generating a batch of ideas helps you explore options without pressure. Run the tool several times, paste results into one document, and remove duplicates. Then check Silly and any other platforms you use to see which names are still available. Having a shortlist saves time compared to checking one idea at a time.
-        </p>
-
-        <h2>Use Cases in Detail: Profiles, Esports, and Streams</h2>
-        <p>
-          Players use the Silly name generator when creating a new Silly account or refreshing their profile name. Esports and streamers use it for in-game names or stream handles. The same tool works for other platforms—Discord, Xbox, PlayStation, or social—as inspiration; you must check each platform for availability. Run the generator multiple times to build a shortlist, then check which names are free on your platform. The Silly name generator does not reserve or validate names; it only suggests combinations.
-        </p>
-        <p>
-          Content creators often need a consistent handle across Steam, streaming, and social media. Generating a batch of character name ideas lets you test different options before you commit. Copy the names you like into a single list, then check availability on each service. If one name is taken on Silly but free elsewhere, you can still use it on the platforms where it is available, or use the generator again to find alternatives that work everywhere.
-        </p>
-
-        <h2>Tips for Choosing a Silly Username</h2>
-        <p>
-          Pick a name that is easy to remember and type. Short character names are easier to say in voice chat and less likely to be mistyped. Run the Silly name generator multiple times to get a shortlist, then check your game or story for availability. Have a few backups in case your first choice is taken. Avoid names that might be mistaken for someone else or that break platform rules. The generator gives you ideas only; the final choice is yours.
-        </p>
-        <p>
-          Consider how the name will look in different contexts: in-game, on a stream overlay, or in a friend list. Some combinations look great in one font but odd in another. If you plan to use the same handle across multiple games and platforms, check availability everywhere before you invest in branding. The Silly name generator is a free way to explore options without committing until you have confirmed that your chosen Silly name or character name is available.
-        </p>
-
-        <h2>Running the Silly Name Generator in Batches</h2>
-        <p>
-          When you need many username ideas, run the Silly name generator multiple times. Each run gives up to 24 names. Paste each run into the same document and remove duplicates if any appear. Check availability on your platform for each name you like. There is no daily or total limit; you can run the generator as often as you want. Batching is useful when you are setting up several accounts, testing ideas for a team, or simply want a large pool of character name options before making a decision.
-        </p>
-        <p>
-          Keeping a single document with all your generated Silly name ideas makes it easy to track which names you have already checked. Mark names as &quot;taken&quot; or &quot;available&quot; as you go. That way you avoid re-checking the same name on Silly or another platform. The Silly name generator does not remember previous runs, so your document is your only record of the ideas you have collected.
-        </p>
-
-        <h2>Privacy and Local Processing</h2>
-        <p>
-          This Silly name generator runs entirely in your browser. When you set the number of names and click generate, the names are created locally on your device. Your choices and the generated names are not sent to our servers. We do not store your inputs or the generated list. No account or login is required. That means your shortlist of character name ideas stays on your machine unless you choose to copy it somewhere else.
-        </p>
-        <p>
-          Because generation is local, the tool is suitable for use in private or incognito windows. If you close the tab, the generated list is gone unless you have copied it. There is no server-side log of what names you generated or how many times you ran the Silly name generator. This privacy model is intentional: username brainstorming is personal, and the tool is designed so that you control where your ideas go.
-        </p>
-
-        <h2>Copying and Exporting Names</h2>
-        <p>
-          Use the Copy button to copy all generated Silly name ideas to your clipboard (one per line). Paste into a notes app or document. Check your game or story for availability before committing to a name. The names are plain text, so they work in any editor or form. If you paste into a spreadsheet, each line can go in its own cell for easy tracking. The Silly name generator does not export to a file; copying and pasting is the intended way to save your shortlist.
-        </p>
-
-        <h2>Limits and Batch Size</h2>
-        <p>
-          You can request 1–24 names per run with this Silly name generator. There is no daily or total limit. Run the generator again for more options. No download or account is required. If you need more than 24 names in one go, run the tool multiple times and paste the results into one document. Removing duplicates is up to you; the generator does not track previous output.
-        </p>
-
-        <h2>No Download or Account Required</h2>
-        <p>
-          This Silly name generator runs entirely in your browser. You do not need to download software or create an account. Open the page, set how many names you want, and click generate. The tool is free and works on desktop, tablet, and phone. That makes it easy to use when you are away from your main device or when you want to quickly generate character name ideas without installing anything.
-        </p>
-
-        <h2>Who Uses a Silly Name Generator?</h2>
-        <p>
-          Players use the Silly name generator when creating or updating a Silly profile, or when they want a new character name for other platforms. Esports and streamers use it for in-game names or stream handles. The same tool works for Discord, Xbox, PlayStation, or social profiles—always check availability on each platform. Educators and workshop leaders sometimes use it to demonstrate username creation or digital identity in a classroom setting. No account or download is required on our site.
-        </p>
-        <p>
-          Anyone who needs a steady supply of username ideas can benefit. Whether you are a casual gamer, a competitive player, or a content creator, the Silly name generator provides a fast way to explore options. The key is to treat the output as inspiration and always verify availability on Silly and any other platform where you plan to use the name.
-        </p>
-
-        <h2>Getting the Most Out of the Silly Name Generator</h2>
-        <p>
-          Run the generator several times and paste all results into one document. Skim for names that fit your style and check your platform for availability. Shortlist five to ten options so you have backups if your first choice is taken. The Silly name generator does not check Silly or any platform; you must do that yourself. When you have a shortlist, check availability one by one. Usernames are often taken on popular services, so having several options saves time.
-        </p>
-        <p>
-          Another tip is to try different batch sizes. Sometimes generating 24 names at once gives you a good mix; other times you may prefer smaller runs so you can review each set before generating more. The tool is flexible. Use it whenever you need new Silly name ideas or character name inspiration. Bookmarking the page makes it easy to return when you are ready to refresh your profile or create a new account.
-        </p>
-
-        <h2>Typical Workflow for the Silly Name Generator</h2>
-        <p>
-          A typical workflow is: open the page, set the number of names (e.g. 12 or 24), click generate, then copy the list. Paste into a notes app. Check your game or story for availability for each name you like. If your first choice is taken, try the next. Run the Silly name generator again for more options. The whole process takes a few minutes. No account or download is required. Bookmark the page for quick access when you need new username ideas. The tool is free and runs in your browser with no sign-up.
-        </p>
-
-        <h2>What This Tool Does NOT Do</h2>
-        <ul>
-          <li>It does not check Silly or any platform for username availability.</li>
-          <li>It does not reserve or hold names for you.</li>
-          <li>It does not store your generated list or your settings.</li>
-          <li>It does not connect to Steam, Discord, or any external gaming service.</li>
-        </ul>
-        <p>
-          This Silly name generator produces name ideas only. It does not validate availability, create accounts, or manage your profile. You must check Silly or your chosen platform yourself and follow that platform&apos;s rules when creating or changing your username. The tool is a brainstorming aid, not a replacement for checking availability.
-        </p>
-
-        <h2>Privacy and Security Notes</h2>
-        <p>
-          The Silly name generator runs entirely in your browser. It does not send data to a server and does not store generated values. This is helpful for quick brainstorming and offline use. If you refresh the page, the last generated list is cleared. Copy any names you want to keep before closing or refreshing.
-        </p>
-        <p>
-          For account security, never share your Silly password or other credentials. The generator only suggests usernames; it does not handle login or account creation. When you check availability on Silly or another platform, use the official site or app and ensure you are on a secure connection. The Silly name generator is a standalone tool and does not integrate with any login system.
-        </p>
-
-        <h2>Final Summary and When to Use This Tool</h2>
-        <p>
-          The Silly name generator provides a fast way to create username and character name ideas for Silly and other games and creative projects. Set the number of names (1–24) and run as often as you like. Copy results and check your platform for availability. The tool runs locally in your browser with no sign-up. Keep a shortlist of options in case your first choice is taken. No download or account is required. The generator is free and works on any device.
-        </p>
-        <p>
-          Use this Silly name generator when you need Silly name ideas, character name inspiration, or a quick way to explore options before checking availability. It is best for brainstorming, rebranding, and building a shortlist. Always verify availability on Silly or your chosen platform before committing to a name. The tool is a practical free resource for gaming silly and funny names.
+          This silly name generator runs entirely in your browser. When you set a count and generate, the funny names are created locally on your device — nothing is uploaded, logged, or stored on our servers. Close the tab and the list is gone unless you copied it, so your best jokes stay yours until you share them.
         </p>
       </div>
     </section>

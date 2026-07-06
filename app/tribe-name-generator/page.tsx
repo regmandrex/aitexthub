@@ -28,170 +28,83 @@ function createWriteUp() {
   return (
     <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
-        <h2>Tribe Name Generator – Tribe & Clan Names</h2>
-        <h2>Introduction</h2>
+        <h2>Tribe Name Generator – Tribe &amp; Clan Names</h2>
         <p>
-          This guide explains how to use a Tribe name generator to create tribe and clan names for Tribe and other games and fiction. The tool runs in your browser and produces unique, memorable name ideas at the click of a button. It is designed for players who want Tribe name ideas quickly without sign-up or download. The generator does not store data and runs entirely in your browser. You get 1–24 names per run and can run it as often as you like. Always check your game or story for availability before committing to a name.
+          A tribe name is the banner a whole people rally under. It has to sound older than any one member, carry a hint of the land they come from, and stay easy to shout across a battlefield or a campfire. This tribe name generator builds tribe and clan names in that spirit — drawing on nature, ancestor, totem, and territory motifs — so you land on something that reads like a genuine people rather than a random pair of words. It runs entirely in your browser, needs no sign-up, and gives you 1–24 names per run with a one-click copy button.
         </p>
         <p>
-          People search for Tribe name ideas and character name generators when setting up a new profile, an esports handle, or a stream name. This Tribe name generator serves that intent with one free, browser-based tool. Whether you need a single standout character name or a shortlist of options, the generator gives you a pool of ideas. Names must be unique on each service, so verifying availability on Tribe or your chosen platform is an essential step after generating ideas.
-        </p>
-
-        <h2>What Is a Tribe Name Generator?</h2>
-        <p>
-          A Tribe name generator is an online tool that creates tribe and clan names suitable for Tribe and other games and fiction. You get unique name ideas at the click of a button. The generator combines curated tribe-style words and elements at random so each run produces new combinations. The output is for inspiration only; you must check your platform for availability. This free Tribe name generator runs in your browser with no sign-up and does not send generated names to any server.
-        </p>
-        <p>
-          The output is plain text, one name per line. You can copy the full list and paste it into a notes app, then check your game or story for availability and pick one. Many users run the Tribe name generator multiple times to build a shortlist before deciding. Because names are created locally, your choices stay private and nothing is stored on our servers.
-        </p>
-        <p>
-          Tribe name generators are useful when you are tired of reusing the same username or when you want a fresh character name that fits your style. The tool does not guarantee that a name is available; it only suggests combinations. Always confirm availability on your game or story before you commit to a new username.
+          Whether you are naming a tribe in a survival game like ARK, founding a clan for tribal role-play, inventing a people for a fantasy world, or building a Discord guild, the guide below explains the real patterns behind tribal names — how actual tribes are named, how fantasy and historical naming differ, and how clan structure shapes what a name should say. Learn the conventions, and the name you pick will feel earned.
         </p>
 
-        <h2>Why This Tribe Name Generator Matters</h2>
+        <h2>How Real Tribes Are Named</h2>
         <p>
-          Choosing a memorable Tribe name or character name can be time-consuming. A Tribe name generator speeds up brainstorming. Instead of staring at a blank field, you get options in seconds. You can run it on a phone or desktop, copy the names you like, and then check availability on your game or story. The tool is free and does not require an account, so there is no friction to trying many ideas.
+          Across cultures, tribal names are rarely arbitrary. They cluster into a handful of recognizable sources, and understanding them is the fastest way to make an invented name feel authentic:
+        </p>
+        <ul>
+          <li><strong>Nature and landscape.</strong> Many peoples take their name from the terrain they live in or the animals around them — the river folk, the people of the tall grass, the mountain dwellers. Wolf, raven, bear, ash, stone, and river recur worldwide because a tribe&apos;s environment defines it.</li>
+          <li><strong>Ancestor or founder.</strong> A tribe is often &quot;the children of&quot; or &quot;the house of&quot; a founding figure. This gives a lineage feel — the sons of a legendary chief, the blood of an old hero.</li>
+          <li><strong>Totem animal or spirit.</strong> A sacred animal or guardian spirit becomes the group&apos;s emblem and its name at once: the Eagle clan, the Serpent people, those who follow the Great Elk.</li>
+          <li><strong>Territory or direction.</strong> Names anchored to a place or a compass point — the northern people, those of the high hollow, the coast dwellers — read as claims on the land.</li>
+          <li><strong>The endonym twist.</strong> Many real tribal names simply mean &quot;the people&quot; or &quot;the true humans&quot; in their own language. A tribe often names itself from the inside, not the way outsiders label it.</li>
+        </ul>
+
+        <h2>Naming Themes: Nature, Blood, Totem, and Land</h2>
+        <p>
+          When you review a generated batch, sort the names by their underlying theme. A nature theme (Ashfen, Stormridge, Frostwood) feels primal and grounded. A blood or ancestor theme (Kinborn, the Halvar line) feels dynastic. A totem theme (Ravenkind, the Elk-Sworn) feels spiritual. A territory theme (Highhollow, Coastwatch) feels defensive and rooted. Picking one dominant theme and letting the name lean into it is what keeps a tribe coherent instead of scattered.
         </p>
         <p>
-          The generator also keeps your ideas private. Names are created in your browser and are not sent to our servers. You can use it in a private or incognito window if you prefer. Because generation is local, there is no risk of your shortlist being stored or logged. That matters when you are testing ideas before you settle on a final Tribe name or character name.
-        </p>
-        <p>
-          A good Tribe name generator also standardizes the workflow: set how many names you want, click generate, copy the list, and check availability. You get a consistent way to explore username ideas without writing scripts or visiting multiple sites. The output is easy to paste into notes or a document so you can track which names you have already checked on Tribe or other platforms.
+          The sound of the name should match its theme. Hard consonants and short vowels — Grak, Thorn, Bask — suit a warlike raiding tribe. Flowing, open sounds — Aelora, Suminae, Willowmere — suit a peaceful, nomadic, or spiritual people. Read each candidate aloud and keep the ones whose rhythm matches the personality you have in mind.
         </p>
 
-        <h2>How the Tribe Name Generator Works (Step by Step)</h2>
+        <h2>Fantasy Tribes vs. Historical Tribes</h2>
         <p>
-          When you open the page, you choose how many names you want per run (1–24). Clicking &quot;Generate names&quot; triggers the tool to randomly combine curated tribe-style elements in your browser. Each run is independent; no names or settings are sent to a server. The result is a list of Tribe name ideas, one per line. You can copy the full list with one click and paste it into a notes app. To get more ideas, run the generator again. The tool does not check Tribe or any platform for availability—you must do that yourself.
+          The two big use cases pull the naming in different directions. A historical or grounded tribe wants names that could plausibly be a real people: earthy, descriptive, tied to terrain and kinship, without obvious magic. Think of names that could sit beside real-world peoples on a map without looking invented.
         </p>
         <p>
-          The underlying word lists are designed to sound like gaming tribe and clan names: bold, memorable, and easy to type. The generator shuffles and combines these elements so that each run produces different combinations. That randomness helps you discover names you might not have thought of on your own. Because everything runs in the browser, the Tribe name generator works offline once the page is loaded and does not depend on a backend service.
+          A fantasy tribe can reach further — invoking elements, celestial bodies, or the supernatural. Frostmane, the Emberborn, the Moon-Sworn, and Duskfang all read as fantasy because they promise something beyond the ordinary. If your world has magic, tie the name to it: a tribe that reveres the moon, walks with spirits, or was born of fire tells the reader its whole cosmology in one word. Decide which register you want before you generate, then keep only the names that stay inside it.
+        </p>
+
+        <h2>Clan Structure and What the Name Should Signal</h2>
+        <p>
+          Tribes and clans are not the same size, and the name can hint at the scale. A tribe is usually a larger people made of several clans or families; a clan is a tighter kin-group inside it. If you are naming the whole tribe, favor a broad, land- or ancestor-based name that many families could belong to. If you are naming a single clan within it, a narrower totem or trait name works — the Ironhand clan, the Ash-Wolves — because it distinguishes them from their cousins.
         </p>
         <p>
-          There are no hidden steps. You set the count, click generate, and receive a list. Copying is one click; pasting into your own document keeps your shortlist in one place. Running the Tribe name generator multiple times is the intended workflow when you want a large pool of character name ideas before checking availability.
+          A well-built name also implies a structure. &quot;The Stonewatch&quot; suggests guardians and a stronghold; &quot;the Free Reavers&quot; suggests raiders with loose leadership; &quot;the Elk-Sworn&quot; suggests an oath-bound order with a shaman or spirit-guide. Let the name you pick imply the ranks, roles, and customs of the people who carry it.
+        </p>
+
+        <h2>Naming Your Tribe in Survival Games (ARK and Beyond)</h2>
+        <p>
+          In tribe-based survival games like ARK, the name is your group&apos;s public identity in the server&apos;s tribe log, on structures, and in every raid report. It should read as a threat or a reputation at a glance. A PvP raiding tribe wants something intimidating and blunt — Bloodfang, the Wasteland Reavers — that looks strong when it shows up in an enemy&apos;s notifications. A builder, breeder, or PvE tribe can lean on dynasty or nature themes that signal permanence rather than aggression.
+        </p>
+        <p>
+          Generate a batch, keep the names that would look strong in a tribe log, and check whether your specific game or server blocks duplicate tribe names before you commit. Many do, so a shortlist of backups saves you from scrambling at the creation screen.
+        </p>
+
+        <h2>Naming Tribes for Worldbuilding and Fiction</h2>
+        <p>
+          In a story or a tabletop campaign, a tribe&apos;s name does a lot of characterization for free. Tie it to the environment and culture: a desert people, a forest-dwelling clan, and a mountain warrior tribe should all sound different because their worlds are different. When you have rival tribes, deliberately give them contrasting names and sounds — a harsh, consonant-heavy warrior tribe against a flowing, mystic one — so readers or players can feel the tension between factions at a glance and never confuse them.
+        </p>
+        <p>
+          For a large world, give related tribes a shared naming logic — a recurring root, a common suffix, a regional flavor — so they read as branches of one culture, while enemies from a different region sound audibly foreign. That contrast is how invented peoples come alive on the page.
         </p>
 
         <h2>How to Use This Tribe Name Generator</h2>
-        <p>Follow these steps to get Tribe name ideas:</p>
         <ol className="list-decimal pl-6 space-y-2">
-          <li>Set how many names you want per run (1–24).</li>
-          <li>Click &quot;Generate names&quot; to get a new list of character name ideas.</li>
-          <li>Use the Copy button to copy all names to your clipboard.</li>
-          <li>Paste into a notes app or document, then check your game or story for availability and pick one.</li>
-          <li>Run again for more options; no account or download is required.</li>
+          <li>Decide your tribe&apos;s theme and tone first — fierce raiders, forest nomads, mountain guardians, or spirit-worshippers.</li>
+          <li>Set how many names you want per run (1–24) and click <strong>Generate names</strong> for a fresh batch of tribe and clan names.</li>
+          <li>Skim for the ones that stay on your chosen theme and read as a strong banner, then use the Copy button to save the whole list.</li>
+          <li>Paste into your notes, worldbuilding doc, or your game&apos;s tribe-creation screen and shortlist five to ten favorites.</li>
+          <li>Run again for more options — there is no limit, no account, and no download.</li>
         </ol>
+
+        <h2>Tips and Common Mistakes</h2>
         <p>
-          The Tribe name generator runs in your browser; your settings and generated names are not sent to any server. You can run it as often as you like. Building a shortlist of five to ten options before checking availability on Tribe is a good habit, since popular usernames are often taken. Have backups ready so that if your first choice is unavailable, you can try the next name on your list.
+          Keep a tribe name easy to say and spell, because it gets shouted in voice chat and typed at a creation screen. Match the tone to the group — a menacing name on a casual friend tribe only lands if the joke is intentional. Avoid copying a famous tribe or clan from a well-known game or franchise; it reads as unoriginal and may be blocked as a duplicate. The most common mistake is mixing themes at random so the name says nothing coherent — pick one dominant motif and let the whole name serve it.
         </p>
 
-        <h2>Tribe and Gamer Naming Style</h2>
+        <h2>Privacy</h2>
         <p>
-          Tribe names and character names often use bold, memorable word combinations: action words, nicknames, or creative spellings. This Tribe name generator uses curated tribe-style elements and combines them at random so you get new combinations that fit that style. The output is for inspiration only; the tool does not check Tribe or any platform for availability. You can use the names as-is or tweak spelling and punctuation to make them your own.
-        </p>
-        <p>
-          Different games and communities favor different styles. Some players prefer short, punchy character names; others like longer usernames. Running the generator multiple times gives you a mix of lengths and styles. Skim the list, mark the ones you like, and then verify each one on your game or story. The Tribe name generator is a starting point—your final choice should fit your personality and the rules of your platform.
-        </p>
-
-        <h2>When to Use a Tribe Name Generator</h2>
-        <p>
-          Use this Tribe name generator when you need Tribe or tribe-style username ideas quickly. Common use cases include creating a new Tribe account or updating your profile name, choosing an in-game name for esports or casual play, and picking a stream or social handle. The same tool works for other platforms—Discord, Xbox, PlayStation, or social profiles—as inspiration. Names must be unique on each platform, so always check availability before committing.
-        </p>
-        <p>
-          Another good time to use a Tribe name generator is when you are rebranding. If you have used the same character name for years and want a fresh identity, generating a batch of ideas helps you explore options without pressure. Run the tool several times, paste results into one document, and remove duplicates. Then check Tribe and any other platforms you use to see which names are still available. Having a shortlist saves time compared to checking one idea at a time.
-        </p>
-
-        <h2>Use Cases in Detail: Profiles, Esports, and Streams</h2>
-        <p>
-          Players use the Tribe name generator when creating a new Tribe account or refreshing their profile name. Esports and streamers use it for in-game names or stream handles. The same tool works for other platforms—Discord, Xbox, PlayStation, or social—as inspiration; you must check each platform for availability. Run the generator multiple times to build a shortlist, then check which names are free on your platform. The Tribe name generator does not reserve or validate names; it only suggests combinations.
-        </p>
-        <p>
-          Content creators often need a consistent handle across Steam, streaming, and social media. Generating a batch of character name ideas lets you test different options before you commit. Copy the names you like into a single list, then check availability on each service. If one name is taken on Tribe but free elsewhere, you can still use it on the platforms where it is available, or use the generator again to find alternatives that work everywhere.
-        </p>
-
-        <h2>Tips for Choosing a Tribe Username</h2>
-        <p>
-          Pick a name that is easy to remember and type. Short character names are easier to say in voice chat and less likely to be mistyped. Run the Tribe name generator multiple times to get a shortlist, then check your game or story for availability. Have a few backups in case your first choice is taken. Avoid names that might be mistaken for someone else or that break platform rules. The generator gives you ideas only; the final choice is yours.
-        </p>
-        <p>
-          Consider how the name will look in different contexts: in-game, on a stream overlay, or in a friend list. Some combinations look great in one font but odd in another. If you plan to use the same handle across multiple games and platforms, check availability everywhere before you invest in branding. The Tribe name generator is a free way to explore options without committing until you have confirmed that your chosen Tribe name or character name is available.
-        </p>
-
-        <h2>Running the Tribe Name Generator in Batches</h2>
-        <p>
-          When you need many username ideas, run the Tribe name generator multiple times. Each run gives up to 24 names. Paste each run into the same document and remove duplicates if any appear. Check availability on your platform for each name you like. There is no daily or total limit; you can run the generator as often as you want. Batching is useful when you are setting up several accounts, testing ideas for a team, or simply want a large pool of character name options before making a decision.
-        </p>
-        <p>
-          Keeping a single document with all your generated Tribe name ideas makes it easy to track which names you have already checked. Mark names as &quot;taken&quot; or &quot;available&quot; as you go. That way you avoid re-checking the same name on Tribe or another platform. The Tribe name generator does not remember previous runs, so your document is your only record of the ideas you have collected.
-        </p>
-
-        <h2>Privacy and Local Processing</h2>
-        <p>
-          This Tribe name generator runs entirely in your browser. When you set the number of names and click generate, the names are created locally on your device. Your choices and the generated names are not sent to our servers. We do not store your inputs or the generated list. No account or login is required. That means your shortlist of character name ideas stays on your machine unless you choose to copy it somewhere else.
-        </p>
-        <p>
-          Because generation is local, the tool is suitable for use in private or incognito windows. If you close the tab, the generated list is gone unless you have copied it. There is no server-side log of what names you generated or how many times you ran the Tribe name generator. This privacy model is intentional: username brainstorming is personal, and the tool is designed so that you control where your ideas go.
-        </p>
-
-        <h2>Copying and Exporting Names</h2>
-        <p>
-          Use the Copy button to copy all generated Tribe name ideas to your clipboard (one per line). Paste into a notes app or document. Check your game or story for availability before committing to a name. The names are plain text, so they work in any editor or form. If you paste into a spreadsheet, each line can go in its own cell for easy tracking. The Tribe name generator does not export to a file; copying and pasting is the intended way to save your shortlist.
-        </p>
-
-        <h2>Limits and Batch Size</h2>
-        <p>
-          You can request 1–24 names per run with this Tribe name generator. There is no daily or total limit. Run the generator again for more options. No download or account is required. If you need more than 24 names in one go, run the tool multiple times and paste the results into one document. Removing duplicates is up to you; the generator does not track previous output.
-        </p>
-
-        <h2>No Download or Account Required</h2>
-        <p>
-          This Tribe name generator runs entirely in your browser. You do not need to download software or create an account. Open the page, set how many names you want, and click generate. The tool is free and works on desktop, tablet, and phone. That makes it easy to use when you are away from your main device or when you want to quickly generate character name ideas without installing anything.
-        </p>
-
-        <h2>Who Uses a Tribe Name Generator?</h2>
-        <p>
-          Players use the Tribe name generator when creating or updating a Tribe profile, or when they want a new character name for other platforms. Esports and streamers use it for in-game names or stream handles. The same tool works for Discord, Xbox, PlayStation, or social profiles—always check availability on each platform. Educators and workshop leaders sometimes use it to demonstrate username creation or digital identity in a classroom setting. No account or download is required on our site.
-        </p>
-        <p>
-          Anyone who needs a steady supply of username ideas can benefit. Whether you are a casual gamer, a competitive player, or a content creator, the Tribe name generator provides a fast way to explore options. The key is to treat the output as inspiration and always verify availability on Tribe and any other platform where you plan to use the name.
-        </p>
-
-        <h2>Getting the Most Out of the Tribe Name Generator</h2>
-        <p>
-          Run the generator several times and paste all results into one document. Skim for names that fit your style and check your platform for availability. Shortlist five to ten options so you have backups if your first choice is taken. The Tribe name generator does not check Tribe or any platform; you must do that yourself. When you have a shortlist, check availability one by one. Usernames are often taken on popular services, so having several options saves time.
-        </p>
-        <p>
-          Another tip is to try different batch sizes. Sometimes generating 24 names at once gives you a good mix; other times you may prefer smaller runs so you can review each set before generating more. The tool is flexible. Use it whenever you need new Tribe name ideas or character name inspiration. Bookmarking the page makes it easy to return when you are ready to refresh your profile or create a new account.
-        </p>
-
-        <h2>Typical Workflow for the Tribe Name Generator</h2>
-        <p>
-          A typical workflow is: open the page, set the number of names (e.g. 12 or 24), click generate, then copy the list. Paste into a notes app. Check your game or story for availability for each name you like. If your first choice is taken, try the next. Run the Tribe name generator again for more options. The whole process takes a few minutes. No account or download is required. Bookmark the page for quick access when you need new username ideas. The tool is free and runs in your browser with no sign-up.
-        </p>
-
-        <h2>What This Tool Does NOT Do</h2>
-        <ul>
-          <li>It does not check Tribe or any platform for username availability.</li>
-          <li>It does not reserve or hold names for you.</li>
-          <li>It does not store your generated list or your settings.</li>
-          <li>It does not connect to Steam, Discord, or any external gaming service.</li>
-        </ul>
-        <p>
-          This Tribe name generator produces name ideas only. It does not validate availability, create accounts, or manage your profile. You must check Tribe or your chosen platform yourself and follow that platform&apos;s rules when creating or changing your username. The tool is a brainstorming aid, not a replacement for checking availability.
-        </p>
-
-        <h2>Privacy and Security Notes</h2>
-        <p>
-          The Tribe name generator runs entirely in your browser. It does not send data to a server and does not store generated values. This is helpful for quick brainstorming and offline use. If you refresh the page, the last generated list is cleared. Copy any names you want to keep before closing or refreshing.
-        </p>
-        <p>
-          For account security, never share your Tribe password or other credentials. The generator only suggests usernames; it does not handle login or account creation. When you check availability on Tribe or another platform, use the official site or app and ensure you are on a secure connection. The Tribe name generator is a standalone tool and does not integrate with any login system.
-        </p>
-
-        <h2>Final Summary and When to Use This Tool</h2>
-        <p>
-          The Tribe name generator provides a fast way to create username and character name ideas for Tribe and other games and fiction. Set the number of names (1–24) and run as often as you like. Copy results and check your platform for availability. The tool runs locally in your browser with no sign-up. Keep a shortlist of options in case your first choice is taken. No download or account is required. The generator is free and works on any device.
-        </p>
-        <p>
-          Use this Tribe name generator when you need Tribe name ideas, character name inspiration, or a quick way to explore options before checking availability. It is best for brainstorming, rebranding, and building a shortlist. Always verify availability on Tribe or your chosen platform before committing to a name. The tool is a practical free resource for gaming tribe and clan names.
+          This tribe name generator runs entirely in your browser. When you set a count and generate, the tribe and clan names are created locally on your device — nothing is uploaded, logged, or stored on our servers. Close the tab and the list is gone unless you copied it, so your tribe ideas stay yours.
         </p>
       </div>
     </section>

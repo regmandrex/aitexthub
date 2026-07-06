@@ -28,170 +28,80 @@ function createWriteUp() {
   return (
     <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
-        <h2>Coven Name Generator – Witch & Coven Name Ideas</h2>
-        <h2>Introduction</h2>
+        <h2>Coven Name Generator – Witch &amp; Coven Name Ideas</h2>
         <p>
-          This guide explains how to use a Coven name generator to create coven and witch names for Coven and other fiction and creative projects. The tool runs in your browser and produces unique, memorable name ideas at the click of a button. It is designed for players who want Coven name ideas quickly without sign-up or download. The generator does not store data and runs entirely in your browser. You get 1–24 names per run and can run it as often as you like. Always check your game or story for availability before committing to a name.
+          A coven name is an incantation in miniature. Before a single witch is described, the name of her circle — the Nightshade Coven, the Order of the Waning Moon, the Ashen Sisterhood — sets the mood: ancient, dark, nature-bound, or whimsical. This coven name generator builds those names by weaving lunar, occult, nature, and shadow motifs together with group words, so writers, role-players, and game designers can name a witch circle that feels like a genuine order rather than a random pair of words. It runs in your browser, needs no sign-up, and gives you 1–24 names per run with a copy button.
+        </p>
+        <p>
+          The guide below covers what actually makes a coven name work: the recurring themes witches&apos; names draw on, the difference between dark and whimsical covens, the Wiccan and pagan flavor behind the real tradition, the fandom conventions from shows like American Horror Story: Coven and Charmed, and how to name a circle for stories, role-play, and games.
         </p>
         <p>
           People search for Coven name ideas and character name generators when setting up a new profile, an esports handle, or a stream name. This Coven name generator serves that intent with one free, browser-based tool. Whether you need a single standout character name or a shortlist of options, the generator gives you a pool of ideas. Names must be unique on each service, so verifying availability on Coven or your chosen platform is an essential step after generating ideas.
         </p>
 
-        <h2>What Is a Coven Name Generator?</h2>
+        <h2>What Makes a Coven Name Work</h2>
         <p>
-          A Coven name generator is an online tool that creates coven and witch names suitable for Coven and other fiction and creative projects. You get unique name ideas at the click of a button. The generator combines curated witch-style words and elements at random so each run produces new combinations. The output is for inspiration only; you must check your platform for availability. This free Coven name generator runs in your browser with no sign-up and does not send generated names to any server.
+          A coven name has to conjure atmosphere in a handful of words. The strongest names pair an evocative mood word — moon, shadow, thorn, ash, hollow, raven — with a group noun that names the gathering: Coven, Circle, Order, Sisterhood, Sabbath, Cabal, or Rite. &quot;The Nightshade Circle&quot; and &quot;the Order of the Ashen Veil&quot; both work because the mood word does the imagery and the group noun does the structure.
         </p>
         <p>
-          The output is plain text, one name per line. You can copy the full list and paste it into a notes app, then check your game or story for availability and pick one. Many users run the Coven name generator multiple times to build a shortlist before deciding. Because names are created locally, your choices stay private and nothing is stored on our servers.
-        </p>
-        <p>
-          Coven name generators are useful when you are tired of reusing the same username or when you want a fresh character name that fits your style. The tool does not guarantee that a name is available; it only suggests combinations. Always confirm availability on your game or story before you commit to a new username.
+          Say a generated name aloud and picture the witches who belong to it. If it sets an instant mood — dread, mystery, quiet power, or mischief — it will carry on the page. A name that says nothing about the coven&apos;s nature is a wasted opportunity, because the name is often the first characterization your audience gets.
         </p>
 
-        <h2>Why This Coven Name Generator Matters</h2>
+        <h2>The Themes Behind Coven Names</h2>
         <p>
-          Choosing a memorable Coven name or character name can be time-consuming. A Coven name generator speeds up brainstorming. Instead of staring at a blank field, you get options in seconds. You can run it on a phone or desktop, copy the names you like, and then check availability on your game or story. The tool is free and does not require an account, so there is no friction to trying many ideas.
+          Coven names draw power from a handful of recurring themes. Picking one dominant theme keeps the name coherent rather than scattered:
+        </p>
+        <ul>
+          <li><strong>Lunar and celestial.</strong> Moon, Crescent, Eclipse, Waning, Starless — the moon is the classic witch symbol, tied to cycles, tides, and old rites.</li>
+          <li><strong>Nature and the wild.</strong> Thornwood, Nightshade, Willow, Bramble, Hemlock — plants (especially poisonous or hedge-witch herbs) and wild places ground a coven in the earth.</li>
+          <li><strong>Darkness and shadow.</strong> Umbra, Hollow, Ravenmark, Duskfall, Ebon — for covens that lean sinister or secretive.</li>
+          <li><strong>The ancient and occult.</strong> Sabbath, Rite, Elder, Veil, Sigil, Grimoire — words that promise old knowledge and hidden practice.</li>
+          <li><strong>Elemental and seasonal.</strong> Ember, Frost, Tempest, Samhain, Solstice — tying the coven to a season or element gives it a whole flavor at once.</li>
+        </ul>
+
+        <h2>Dark Covens vs. Whimsical Covens</h2>
+        <p>
+          Not every coven is sinister. The generator produces names across a spectrum, and choosing the right end matters. A dark coven — a blood-magic cabal, a cursed order — wants hard, shadowed words: the Ravenmark Cabal, the Order of the Withered Hand. A whimsical or cozy coven — a hedge-witch circle, a kitchen-magic sisterhood — wants softer, greener imagery: the Willowbrook Circle, the Honeythorn Coven.
         </p>
         <p>
-          The generator also keeps your ideas private. Names are created in your browser and are not sent to our servers. You can use it in a private or incognito window if you prefer. Because generation is local, there is no risk of your shortlist being stored or logged. That matters when you are testing ideas before you settle on a final Coven name or character name.
-        </p>
-        <p>
-          A good Coven name generator also standardizes the workflow: set how many names you want, click generate, copy the list, and check availability. You get a consistent way to explore username ideas without writing scripts or visiting multiple sites. The output is easy to paste into notes or a document so you can track which names you have already checked on Coven or other platforms.
+          Match the name to the tone of your story or role-play. A gentle circle of village witches sounds wrong under a menacing name, and a fearsome cabal loses its edge under a cozy one. Sort a generated batch by mood and keep the names whose weight matches the coven you actually have in mind.
         </p>
 
-        <h2>How the Coven Name Generator Works (Step by Step)</h2>
+        <h2>Wiccan and Pagan Flavor</h2>
         <p>
-          When you open the page, you choose how many names you want per run (1–24). Clicking &quot;Generate names&quot; triggers the tool to randomly combine curated witch-style elements in your browser. Each run is independent; no names or settings are sent to a server. The result is a list of Coven name ideas, one per line. You can copy the full list with one click and paste it into a notes app. To get more ideas, run the generator again. The tool does not check Coven or any platform for availability—you must do that yourself.
+          Real modern witchcraft — Wicca and broader neo-paganism — gives coven naming a grounded vocabulary you can borrow for authenticity. Actual covens often name themselves after a sabbat (the eight seasonal festivals like Samhain, Beltane, and Yule), a goddess or deity, a local landmark or grove, or a tradition (Gardnerian, Alexandrian, hereditary). Words like &quot;circle,&quot; &quot;grove,&quot; and &quot;hearth&quot; recur because they describe how practitioners actually gather. Drawing on this register — a lunar phase, a sacred herb, a seasonal rite — makes a fictional coven feel researched rather than invented on the spot.
+        </p>
+
+        <h2>Fandom Conventions: AHS Coven, Charmed, and More</h2>
+        <p>
+          Popular witch fiction sets expectations worth knowing. American Horror Story: Coven centers on a hidden academy and speaks of the Supreme, Salem descendants, and secret lineages, favoring a gothic Southern-American register. Charmed built its world around the &quot;Power of Three&quot; and the Halliwell line, leaning on family and destiny rather than a formal coven name. The Craft, Sabrina, and The Witcher each carry their own flavor. If you are writing in or near a fandom, echoing its naming logic — an academy, a bloodline, a sisterhood of three — helps your coven slot into reader expectations, while a distinct name keeps it your own.
+        </p>
+
+        <h2>Naming a Coven for Stories, Role-Play, and Games</h2>
+        <p>
+          In fiction, a coven name does a lot of worldbuilding for free — it tells the reader the group&apos;s age, ethos, and reputation before any scene. For tabletop and video-game campaigns, a coven is a memorable faction or antagonist, so give it a name that a party will remember and fear or seek out. In role-play communities and Discord servers, a shared coven name gives members something to belong to, complete with a sigil, a color, and titles.
         </p>
         <p>
-          The underlying word lists are designed to sound like gaming coven and witch names: bold, memorable, and easy to type. The generator shuffles and combines these elements so that each run produces different combinations. That randomness helps you discover names you might not have thought of on your own. Because everything runs in the browser, the Coven name generator works offline once the page is loaded and does not depend on a backend service.
-        </p>
-        <p>
-          There are no hidden steps. You set the count, click generate, and receive a list. Copying is one click; pasting into your own document keeps your shortlist in one place. Running the Coven name generator multiple times is the intended workflow when you want a large pool of character name ideas before checking availability.
+          If your world has rival covens, deliberately give them contrasting names and themes — a lunar sisterhood against a blood cabal, a green hedge-circle against an ashen order — so your audience can feel the tension between them at a glance and never confuse the two.
         </p>
 
         <h2>How to Use This Coven Name Generator</h2>
-        <p>Follow these steps to get Coven name ideas:</p>
         <ol className="list-decimal pl-6 space-y-2">
-          <li>Set how many names you want per run (1–24).</li>
-          <li>Click &quot;Generate names&quot; to get a new list of character name ideas.</li>
-          <li>Use the Copy button to copy all names to your clipboard.</li>
-          <li>Paste into a notes app or document, then check your game or story for availability and pick one.</li>
-          <li>Run again for more options; no account or download is required.</li>
+          <li>Decide your coven&apos;s tone and theme first — dark cabal, cozy hedge-circle, lunar sisterhood, or ancient order.</li>
+          <li>Set how many names you want per run (1–24) and click <strong>Generate names</strong> for a fresh batch of coven and witch names.</li>
+          <li>Say each candidate aloud, picture the witches it names, and keep the ones that set the right mood; use the Copy button to save the list.</li>
+          <li>Paste into your story notes, campaign doc, or server and shortlist five to ten favorites.</li>
+          <li>Run again for more options — there is no limit, no account, and no download.</li>
         </ol>
+
+        <h2>Tips and Common Mistakes</h2>
         <p>
-          The Coven name generator runs in your browser; your settings and generated names are not sent to any server. You can run it as often as you like. Building a shortlist of five to ten options before checking availability on Coven is a good habit, since popular usernames are often taken. Have backups ready so that if your first choice is unavailable, you can try the next name on your list.
+          The most common mistake is mismatching mood — a menacing name on a gentle circle, or the reverse. Another is stacking too many mood words so the name becomes a soup of imagery; one strong mood word plus one group noun usually reads best. Avoid copying a famous coven name from a well-known show outright if you want originality, and instead echo its structure. Keep the names that are pronounceable, atmospheric, and true to the coven&apos;s actual nature.
         </p>
 
-        <h2>Coven and Gamer Naming Style</h2>
+        <h2>Privacy</h2>
         <p>
-          Coven names and character names often use bold, memorable word combinations: action words, nicknames, or creative spellings. This Coven name generator uses curated witch-style elements and combines them at random so you get new combinations that fit that style. The output is for inspiration only; the tool does not check Coven or any platform for availability. You can use the names as-is or tweak spelling and punctuation to make them your own.
-        </p>
-        <p>
-          Different games and communities favor different styles. Some players prefer short, punchy character names; others like longer usernames. Running the generator multiple times gives you a mix of lengths and styles. Skim the list, mark the ones you like, and then verify each one on your game or story. The Coven name generator is a starting point—your final choice should fit your personality and the rules of your platform.
-        </p>
-
-        <h2>When to Use a Coven Name Generator</h2>
-        <p>
-          Use this Coven name generator when you need Coven or witch-style username ideas quickly. Common use cases include creating a new Coven account or updating your profile name, choosing an in-game name for esports or casual play, and picking a stream or social handle. The same tool works for other platforms—Discord, Xbox, PlayStation, or social profiles—as inspiration. Names must be unique on each platform, so always check availability before committing.
-        </p>
-        <p>
-          Another good time to use a Coven name generator is when you are rebranding. If you have used the same character name for years and want a fresh identity, generating a batch of ideas helps you explore options without pressure. Run the tool several times, paste results into one document, and remove duplicates. Then check Coven and any other platforms you use to see which names are still available. Having a shortlist saves time compared to checking one idea at a time.
-        </p>
-
-        <h2>Use Cases in Detail: Profiles, Esports, and Streams</h2>
-        <p>
-          Players use the Coven name generator when creating a new Coven account or refreshing their profile name. Esports and streamers use it for in-game names or stream handles. The same tool works for other platforms—Discord, Xbox, PlayStation, or social—as inspiration; you must check each platform for availability. Run the generator multiple times to build a shortlist, then check which names are free on your platform. The Coven name generator does not reserve or validate names; it only suggests combinations.
-        </p>
-        <p>
-          Content creators often need a consistent handle across Steam, streaming, and social media. Generating a batch of character name ideas lets you test different options before you commit. Copy the names you like into a single list, then check availability on each service. If one name is taken on Coven but free elsewhere, you can still use it on the platforms where it is available, or use the generator again to find alternatives that work everywhere.
-        </p>
-
-        <h2>Tips for Choosing a Coven Username</h2>
-        <p>
-          Pick a name that is easy to remember and type. Short character names are easier to say in voice chat and less likely to be mistyped. Run the Coven name generator multiple times to get a shortlist, then check your game or story for availability. Have a few backups in case your first choice is taken. Avoid names that might be mistaken for someone else or that break platform rules. The generator gives you ideas only; the final choice is yours.
-        </p>
-        <p>
-          Consider how the name will look in different contexts: in-game, on a stream overlay, or in a friend list. Some combinations look great in one font but odd in another. If you plan to use the same handle across multiple games and platforms, check availability everywhere before you invest in branding. The Coven name generator is a free way to explore options without committing until you have confirmed that your chosen Coven name or character name is available.
-        </p>
-
-        <h2>Running the Coven Name Generator in Batches</h2>
-        <p>
-          When you need many username ideas, run the Coven name generator multiple times. Each run gives up to 24 names. Paste each run into the same document and remove duplicates if any appear. Check availability on your platform for each name you like. There is no daily or total limit; you can run the generator as often as you want. Batching is useful when you are setting up several accounts, testing ideas for a team, or simply want a large pool of character name options before making a decision.
-        </p>
-        <p>
-          Keeping a single document with all your generated Coven name ideas makes it easy to track which names you have already checked. Mark names as &quot;taken&quot; or &quot;available&quot; as you go. That way you avoid re-checking the same name on Coven or another platform. The Coven name generator does not remember previous runs, so your document is your only record of the ideas you have collected.
-        </p>
-
-        <h2>Privacy and Local Processing</h2>
-        <p>
-          This Coven name generator runs entirely in your browser. When you set the number of names and click generate, the names are created locally on your device. Your choices and the generated names are not sent to our servers. We do not store your inputs or the generated list. No account or login is required. That means your shortlist of character name ideas stays on your machine unless you choose to copy it somewhere else.
-        </p>
-        <p>
-          Because generation is local, the tool is suitable for use in private or incognito windows. If you close the tab, the generated list is gone unless you have copied it. There is no server-side log of what names you generated or how many times you ran the Coven name generator. This privacy model is intentional: username brainstorming is personal, and the tool is designed so that you control where your ideas go.
-        </p>
-
-        <h2>Copying and Exporting Names</h2>
-        <p>
-          Use the Copy button to copy all generated Coven name ideas to your clipboard (one per line). Paste into a notes app or document. Check your game or story for availability before committing to a name. The names are plain text, so they work in any editor or form. If you paste into a spreadsheet, each line can go in its own cell for easy tracking. The Coven name generator does not export to a file; copying and pasting is the intended way to save your shortlist.
-        </p>
-
-        <h2>Limits and Batch Size</h2>
-        <p>
-          You can request 1–24 names per run with this Coven name generator. There is no daily or total limit. Run the generator again for more options. No download or account is required. If you need more than 24 names in one go, run the tool multiple times and paste the results into one document. Removing duplicates is up to you; the generator does not track previous output.
-        </p>
-
-        <h2>No Download or Account Required</h2>
-        <p>
-          This Coven name generator runs entirely in your browser. You do not need to download software or create an account. Open the page, set how many names you want, and click generate. The tool is free and works on desktop, tablet, and phone. That makes it easy to use when you are away from your main device or when you want to quickly generate character name ideas without installing anything.
-        </p>
-
-        <h2>Who Uses a Coven Name Generator?</h2>
-        <p>
-          Players use the Coven name generator when creating or updating a Coven profile, or when they want a new character name for other platforms. Esports and streamers use it for in-game names or stream handles. The same tool works for Discord, Xbox, PlayStation, or social profiles—always check availability on each platform. Educators and workshop leaders sometimes use it to demonstrate username creation or digital identity in a classroom setting. No account or download is required on our site.
-        </p>
-        <p>
-          Anyone who needs a steady supply of username ideas can benefit. Whether you are a casual gamer, a competitive player, or a content creator, the Coven name generator provides a fast way to explore options. The key is to treat the output as inspiration and always verify availability on Coven and any other platform where you plan to use the name.
-        </p>
-
-        <h2>Getting the Most Out of the Coven Name Generator</h2>
-        <p>
-          Run the generator several times and paste all results into one document. Skim for names that fit your style and check your platform for availability. Shortlist five to ten options so you have backups if your first choice is taken. The Coven name generator does not check Coven or any platform; you must do that yourself. When you have a shortlist, check availability one by one. Usernames are often taken on popular services, so having several options saves time.
-        </p>
-        <p>
-          Another tip is to try different batch sizes. Sometimes generating 24 names at once gives you a good mix; other times you may prefer smaller runs so you can review each set before generating more. The tool is flexible. Use it whenever you need new Coven name ideas or character name inspiration. Bookmarking the page makes it easy to return when you are ready to refresh your profile or create a new account.
-        </p>
-
-        <h2>Typical Workflow for the Coven Name Generator</h2>
-        <p>
-          A typical workflow is: open the page, set the number of names (e.g. 12 or 24), click generate, then copy the list. Paste into a notes app. Check your game or story for availability for each name you like. If your first choice is taken, try the next. Run the Coven name generator again for more options. The whole process takes a few minutes. No account or download is required. Bookmark the page for quick access when you need new username ideas. The tool is free and runs in your browser with no sign-up.
-        </p>
-
-        <h2>What This Tool Does NOT Do</h2>
-        <ul>
-          <li>It does not check Coven or any platform for username availability.</li>
-          <li>It does not reserve or hold names for you.</li>
-          <li>It does not store your generated list or your settings.</li>
-          <li>It does not connect to Steam, Discord, or any external gaming service.</li>
-        </ul>
-        <p>
-          This Coven name generator produces name ideas only. It does not validate availability, create accounts, or manage your profile. You must check Coven or your chosen platform yourself and follow that platform&apos;s rules when creating or changing your username. The tool is a brainstorming aid, not a replacement for checking availability.
-        </p>
-
-        <h2>Privacy and Security Notes</h2>
-        <p>
-          The Coven name generator runs entirely in your browser. It does not send data to a server and does not store generated values. This is helpful for quick brainstorming and offline use. If you refresh the page, the last generated list is cleared. Copy any names you want to keep before closing or refreshing.
-        </p>
-        <p>
-          For account security, never share your Coven password or other credentials. The generator only suggests usernames; it does not handle login or account creation. When you check availability on Coven or another platform, use the official site or app and ensure you are on a secure connection. The Coven name generator is a standalone tool and does not integrate with any login system.
-        </p>
-
-        <h2>Final Summary and When to Use This Tool</h2>
-        <p>
-          The Coven name generator provides a fast way to create username and character name ideas for Coven and other fiction and creative projects. Set the number of names (1–24) and run as often as you like. Copy results and check your platform for availability. The tool runs locally in your browser with no sign-up. Keep a shortlist of options in case your first choice is taken. No download or account is required. The generator is free and works on any device.
-        </p>
-        <p>
-          Use this Coven name generator when you need Coven name ideas, character name inspiration, or a quick way to explore options before checking availability. It is best for brainstorming, rebranding, and building a shortlist. Always verify availability on Coven or your chosen platform before committing to a name. The tool is a practical free resource for gaming coven and witch names.
+          This coven name generator runs entirely in your browser. When you set a count and generate, the coven and witch names are created locally on your device — nothing is uploaded, logged, or stored on our servers. Close the tab and the list is gone unless you copied it, so your coven ideas stay yours.
         </p>
       </div>
     </section>

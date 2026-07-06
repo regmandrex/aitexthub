@@ -28,170 +28,65 @@ function createWriteUp() {
   return (
     <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
-        <h2>Shopify Store Name Generator – store names</h2>
-        <h2>Introduction</h2>
+        <h2>Shopify Store Name Generator – Ecommerce Brand Names</h2>
         <p>
-          This guide explains how to use a Shopify store name generator to create store names for Shopify and other Shopify and e-commerce. The tool runs in your browser and produces unique, memorable name ideas at the click of a button. It is designed for players who want Shopify name ideas quickly without sign-up or download. The generator does not store data and runs entirely in your browser. You get 1–24 names per run and can run it as often as you like. Always check Shopify or your platform for availability before committing to a name.
+          Your store name is your brand. Before a customer sees a single product, the name shapes what they expect — whether your shop feels premium or playful, niche or general, trustworthy or forgettable. It becomes your domain, your logo, your social handles, and the word customers type when they come back. This Shopify store name generator builds brandable, memorable ecommerce names in your browser — no sign-up, 1–24 ideas per run — so you can move fast from a blank field to a shortlist worth checking for a matching .com and trademark.
         </p>
         <p>
-          People search for Shopify name ideas and character name generators when setting up a new profile, an esports handle, or a stream name. This Shopify store name generator serves that intent with one free, browser-based tool. Whether you need a single standout character name or a shortlist of options, the generator gives you a pool of ideas. Names must be unique on each service, so verifying availability on Shopify or your chosen platform is an essential step after generating ideas.
-        </p>
-
-        <h2>What Is a Shopify Store Name Generator?</h2>
-        <p>
-          A Shopify store name generator is an online tool that creates store names suitable for Shopify and other Shopify and e-commerce. You get unique name ideas at the click of a button. The generator combines curated brandable and memorable words and elements at random so each run produces new combinations. The output is for inspiration only; you must check your platform for availability. This free Shopify store name generator runs in your browser with no sign-up and does not send generated names to any server.
-        </p>
-        <p>
-          The output is plain text, one name per line. You can copy the full list and paste it into a notes app, then check Shopify or your platform for availability and pick one. Many users run the Shopify store name generator multiple times to build a shortlist before deciding. Because names are created locally, your choices stay private and nothing is stored on our servers.
-        </p>
-        <p>
-          Shopify store name generators are useful when you are tired of reusing the same username or when you want a fresh character name that fits your style. The tool does not guarantee that a name is available; it only suggests combinations. Always confirm availability on Shopify or your platform before you commit to a new username.
+          Naming an online store is a branding decision with real stakes, not a throwaway username. The best names are easy to say, easy to spell, available as a domain, clear about (or at least compatible with) what you sell, and legally clear to use. The guide below walks through each of those factors so the name you choose is one you can build a business on rather than one you have to abandon after your first sales.
         </p>
 
-        <h2>Why This Shopify Store Name Generator Matters</h2>
+        <h2>What Makes a Strong Store Name</h2>
         <p>
-          Choosing a memorable Shopify name or character name can be time-consuming. A Shopify store name generator speeds up brainstorming. Instead of staring at a blank field, you get options in seconds. You can run it on a phone or desktop, copy the names you like, and then check availability on Shopify or your platform. The tool is free and does not require an account, so there is no friction to trying many ideas.
+          A good ecommerce brand name balances several qualities at once. Keeping these in mind turns a generated idea into a real candidate:
         </p>
+        <ul>
+          <li><strong>Memorable and easy to spell.</strong> Customers who hear your name should be able to type it correctly on the first try — clever misspellings and hard-to-say words cost you traffic.</li>
+          <li><strong>Brandable.</strong> Short, distinctive, and pleasant to say, with room to grow beyond one product category.</li>
+          <li><strong>Available.</strong> A matching domain (ideally .com), free social handles, and no conflicting trademark — a name you cannot own is not really available.</li>
+          <li><strong>Relevant.</strong> It fits your niche or evokes the right feeling, without boxing you in so tightly you cannot expand later.</li>
+        </ul>
+
+        <h2>Types of Store Names</h2>
         <p>
-          The generator also keeps your ideas private. Names are created in your browser and are not sent to our servers. You can use it in a private or incognito window if you prefer. Because generation is local, there is no risk of your shortlist being stored or logged. That matters when you are testing ideas before you settle on a final Shopify name or character name.
-        </p>
-        <p>
-          A good Shopify store name generator also standardizes the workflow: set how many names you want, click generate, copy the list, and check availability. You get a consistent way to explore username ideas without writing scripts or visiting multiple sites. The output is easy to paste into notes or a document so you can track which names you have already checked on Shopify or other platforms.
+          Ecommerce names generally fall into a few families, and knowing them helps you decide the direction to steer the generator. <strong>Descriptive</strong> names say what you sell (&quot;Modern Rug Co.&quot;) and are clear but harder to make unique. <strong>Evocative or suggestive</strong> names hint at a feeling or benefit (&quot;Bloom,&quot; &quot;Everlane&quot;-style) and balance meaning with brandability. <strong>Invented or abstract</strong> names are made-up words (&quot;Zappos,&quot; &quot;Glossier&quot;) that are highly ownable and trademarkable but need marketing to build meaning. <strong>Founder or personal</strong> names lend authenticity to a personal brand. Generate a batch, then sort the results into these buckets and decide which fits your ambitions — a descriptive name is fine for a focused niche shop, while an invented name gives a scaling brand the most room and legal protection.
         </p>
 
-        <h2>How the Shopify Store Name Generator Works (Step by Step)</h2>
+        <h2>The Domain and Handle Problem</h2>
         <p>
-          When you open the page, you choose how many names you want per run (1–24). Clicking &quot;Generate names&quot; triggers the tool to randomly combine curated brandable and memorable elements in your browser. Each run is independent; no names or settings are sent to a server. The result is a list of Shopify name ideas, one per line. You can copy the full list with one click and paste it into a notes app. To get more ideas, run the generator again. The tool does not check Shopify or any platform for availability—you must do that yourself.
+          The single biggest constraint in modern store naming is domain availability. Most short, obvious .com domains were registered long ago, so a name you love is often already owned. This is exactly why invented words and unexpected two-word combinations have taken over ecommerce naming — they are the names still available as a clean .com. When you review generated ideas, treat the domain check as a hard gate: a great name with no available domain (and no acceptable close variant) is not usable. Aim for a matching .com if you can, since customers default to typing it, and check that the equivalent social handles are open too so your brand stays consistent across Instagram, TikTok, and the rest.
         </p>
+
+        <h2>Naming for Your Niche</h2>
         <p>
-          The underlying word lists are designed to sound like gaming store names: bold, memorable, and easy to type. The generator shuffles and combines these elements so that each run produces different combinations. That randomness helps you discover names you might not have thought of on your own. Because everything runs in the browser, the Shopify store name generator works offline once the page is loaded and does not depend on a backend service.
+          A store name should fit the products and the audience it serves. A luxury skincare line, a rugged outdoor-gear shop, and a whimsical children&apos;s toy store each call for a different tone in the name — the words, the rhythm, and the feeling should match what a customer in that niche expects. A useful trick is to leave a little room for growth: a name tied too literally to one product (&quot;The Yoga Mat Store&quot;) can hold you back if you later add apparel or accessories, whereas a slightly broader evocative name grows with the catalog. Decide who your customer is, then keep the generated names whose tone would earn their trust.
         </p>
+
+        <h2>Trademark and Legal Caution</h2>
         <p>
-          There are no hidden steps. You set the count, click generate, and receive a list. Copying is one click; pasting into your own document keeps your shortlist in one place. Running the Shopify store name generator multiple times is the intended workflow when you want a large pool of character name ideas before checking availability.
+          Because a store name is a business asset, it carries legal weight a gamer tag never does. Before you commit, it is worth checking that your chosen name is not already trademarked in your product category, since building a brand on a name someone else owns can force a costly rebrand or a legal dispute down the line. Search the trademark database in your country, look for existing businesses using the same or a confusingly similar name in your space, and favor distinctive or invented names, which are both easier to trademark yourself and less likely to collide with an established mark. This tool suggests creative ideas only — it does not check trademarks or availability, so that due diligence is on you before you launch.
         </p>
 
         <h2>How to Use This Shopify Store Name Generator</h2>
-        <p>Follow these steps to get Shopify name ideas:</p>
         <ol className="list-decimal pl-6 space-y-2">
-          <li>Set how many names you want per run (1–24).</li>
-          <li>Click &quot;Generate names&quot; to get a new list of character name ideas.</li>
-          <li>Use the Copy button to copy all names to your clipboard.</li>
-          <li>Paste into a notes app or document, then check Shopify or your platform for availability and pick one.</li>
-          <li>Run again for more options; no account or download is required.</li>
+          <li>Set how many store name ideas you want per run (1–24).</li>
+          <li>Click <strong>Generate names</strong> to get a fresh batch of brandable ecommerce names.</li>
+          <li>Keep the memorable, easy-to-spell options that fit your niche and tone, and sort them by name type (descriptive, evocative, or invented).</li>
+          <li>Use the Copy button to save your shortlist, then check each favorite for an available .com domain, open social handles, and trademark conflicts.</li>
+          <li>Run again for more options — there is no limit, no account, and no download.</li>
         </ol>
         <p>
-          The Shopify store name generator runs in your browser; your settings and generated names are not sent to any server. You can run it as often as you like. Building a shortlist of five to ten options before checking availability on Shopify is a good habit, since popular usernames are often taken. Have backups ready so that if your first choice is unavailable, you can try the next name on your list.
+          Generation happens entirely in your browser. Your settings and the names you create are never sent to a server, so your unlaunched brand ideas stay private until you register the domain.
         </p>
 
-        <h2>Shopify and Gamer Naming Style</h2>
+        <h2>Tips and Common Mistakes</h2>
         <p>
-          Shopify names and character names often use bold, memorable word combinations: action words, nicknames, or creative spellings. This Shopify store name generator uses curated brandable and memorable elements and combines them at random so you get new combinations that fit that style. The output is for inspiration only; the tool does not check Shopify or any platform for availability. You can use the names as-is or tweak spelling and punctuation to make them your own.
-        </p>
-        <p>
-          Different games and communities favor different styles. Some players prefer short, punchy character names; others like longer usernames. Running the generator multiple times gives you a mix of lengths and styles. Skim the list, mark the ones you like, and then verify each one on Shopify or your platform. The Shopify store name generator is a starting point—your final choice should fit your personality and the rules of your platform.
+          The most expensive mistake is falling in love with a name before checking that you can actually own it — always verify the domain, the handles, and the trademark before you build a logo or print packaging. A second is choosing a name that is hard to spell or say; if you cannot tell a friend your store name and have them find it, neither can your customers. A third is boxing yourself in with a name so narrow it cannot cover your next product line, or so generic it disappears among competitors. Generate a broad batch, shortlist the names that are brandable and niche-appropriate, and let the domain and trademark checks make the final cut — the goal is a name you can own, grow, and defend, not just one that sounds nice today.
         </p>
 
-        <h2>When to Use a Shopify Store Name Generator</h2>
+        <h2>Privacy</h2>
         <p>
-          Use this Shopify store name generator when you need Shopify or brandable and memorable username ideas quickly. Common use cases include creating a new Shopify account or updating your profile name, choosing an in-game name for esports or casual play, and picking a stream or social handle. The same tool works for other platforms—Discord, Xbox, PlayStation, or social profiles—as inspiration. Names must be unique on each platform, so always check availability before committing.
-        </p>
-        <p>
-          Another good time to use a Shopify store name generator is when you are rebranding. If you have used the same character name for years and want a fresh identity, generating a batch of ideas helps you explore options without pressure. Run the tool several times, paste results into one document, and remove duplicates. Then check Shopify and any other platforms you use to see which names are still available. Having a shortlist saves time compared to checking one idea at a time.
-        </p>
-
-        <h2>Use Cases in Detail: Profiles, Esports, and Streams</h2>
-        <p>
-          Players use the Shopify store name generator when creating a new Shopify account or refreshing their profile name. Esports and streamers use it for in-game names or stream handles. The same tool works for other platforms—Discord, Xbox, PlayStation, or social—as inspiration; you must check each platform for availability. Run the generator multiple times to build a shortlist, then check which names are free on your platform. The Shopify store name generator does not reserve or validate names; it only suggests combinations.
-        </p>
-        <p>
-          Content creators often need a consistent handle across Steam, streaming, and social media. Generating a batch of character name ideas lets you test different options before you commit. Copy the names you like into a single list, then check availability on each service. If one name is taken on Shopify but free elsewhere, you can still use it on the platforms where it is available, or use the generator again to find alternatives that work everywhere.
-        </p>
-
-        <h2>Tips for Choosing a Shopify Username</h2>
-        <p>
-          Pick a name that is easy to remember and type. Short character names are easier to say in voice chat and less likely to be mistyped. Run the Shopify store name generator multiple times to get a shortlist, then check Shopify or your platform for availability. Have a few backups in case your first choice is taken. Avoid names that might be mistaken for someone else or that break platform rules. The generator gives you ideas only; the final choice is yours.
-        </p>
-        <p>
-          Consider how the name will look in different contexts: in-game, on a stream overlay, or in a friend list. Some combinations look great in one font but odd in another. If you plan to use the same handle across multiple games and platforms, check availability everywhere before you invest in branding. The Shopify store name generator is a free way to explore options without committing until you have confirmed that your chosen Shopify name or character name is available.
-        </p>
-
-        <h2>Running the Shopify Store Name Generator in Batches</h2>
-        <p>
-          When you need many username ideas, run the Shopify store name generator multiple times. Each run gives up to 24 names. Paste each run into the same document and remove duplicates if any appear. Check availability on your platform for each name you like. There is no daily or total limit; you can run the generator as often as you want. Batching is useful when you are setting up several accounts, testing ideas for a team, or simply want a large pool of character name options before making a decision.
-        </p>
-        <p>
-          Keeping a single document with all your generated Shopify name ideas makes it easy to track which names you have already checked. Mark names as &quot;taken&quot; or &quot;available&quot; as you go. That way you avoid re-checking the same name on Shopify or another platform. The Shopify store name generator does not remember previous runs, so your document is your only record of the ideas you have collected.
-        </p>
-
-        <h2>Privacy and Local Processing</h2>
-        <p>
-          This Shopify store name generator runs entirely in your browser. When you set the number of names and click generate, the names are created locally on your device. Your choices and the generated names are not sent to our servers. We do not store your inputs or the generated list. No account or login is required. That means your shortlist of character name ideas stays on your machine unless you choose to copy it somewhere else.
-        </p>
-        <p>
-          Because generation is local, the tool is suitable for use in private or incognito windows. If you close the tab, the generated list is gone unless you have copied it. There is no server-side log of what names you generated or how many times you ran the Shopify store name generator. This privacy model is intentional: username brainstorming is personal, and the tool is designed so that you control where your ideas go.
-        </p>
-
-        <h2>Copying and Exporting Names</h2>
-        <p>
-          Use the Copy button to copy all generated Shopify name ideas to your clipboard (one per line). Paste into a notes app or document. Check Shopify or your platform for availability before committing to a name. The names are plain text, so they work in any editor or form. If you paste into a spreadsheet, each line can go in its own cell for easy tracking. The Shopify store name generator does not export to a file; copying and pasting is the intended way to save your shortlist.
-        </p>
-
-        <h2>Limits and Batch Size</h2>
-        <p>
-          You can request 1–24 names per run with this Shopify store name generator. There is no daily or total limit. Run the generator again for more options. No download or account is required. If you need more than 24 names in one go, run the tool multiple times and paste the results into one document. Removing duplicates is up to you; the generator does not track previous output.
-        </p>
-
-        <h2>No Download or Account Required</h2>
-        <p>
-          This Shopify store name generator runs entirely in your browser. You do not need to download software or create an account. Open the page, set how many names you want, and click generate. The tool is free and works on desktop, tablet, and phone. That makes it easy to use when you are away from your main device or when you want to quickly generate character name ideas without installing anything.
-        </p>
-
-        <h2>Who Uses a Shopify Store Name Generator?</h2>
-        <p>
-          Players use the Shopify store name generator when creating or updating a Shopify profile, or when they want a new character name for other platforms. Esports and streamers use it for in-game names or stream handles. The same tool works for Discord, Xbox, PlayStation, or social profiles—always check availability on each platform. Educators and workshop leaders sometimes use it to demonstrate username creation or digital identity in a classroom setting. No account or download is required on our site.
-        </p>
-        <p>
-          Anyone who needs a steady supply of username ideas can benefit. Whether you are a casual gamer, a competitive player, or a content creator, the Shopify store name generator provides a fast way to explore options. The key is to treat the output as inspiration and always verify availability on Shopify and any other platform where you plan to use the name.
-        </p>
-
-        <h2>Getting the Most Out of the Shopify Store Name Generator</h2>
-        <p>
-          Run the generator several times and paste all results into one document. Skim for names that fit your style and check your platform for availability. Shortlist five to ten options so you have backups if your first choice is taken. The Shopify store name generator does not check Shopify or any platform; you must do that yourself. When you have a shortlist, check availability one by one. Usernames are often taken on popular services, so having several options saves time.
-        </p>
-        <p>
-          Another tip is to try different batch sizes. Sometimes generating 24 names at once gives you a good mix; other times you may prefer smaller runs so you can review each set before generating more. The tool is flexible. Use it whenever you need new Shopify name ideas or character name inspiration. Bookmarking the page makes it easy to return when you are ready to refresh your profile or create a new account.
-        </p>
-
-        <h2>Typical Workflow for the Shopify Store Name Generator</h2>
-        <p>
-          A typical workflow is: open the page, set the number of names (e.g. 12 or 24), click generate, then copy the list. Paste into a notes app. Check Shopify or your platform for availability for each name you like. If your first choice is taken, try the next. Run the Shopify store name generator again for more options. The whole process takes a few minutes. No account or download is required. Bookmark the page for quick access when you need new username ideas. The tool is free and runs in your browser with no sign-up.
-        </p>
-
-        <h2>What This Tool Does NOT Do</h2>
-        <ul>
-          <li>It does not check Shopify or any platform for username availability.</li>
-          <li>It does not reserve or hold names for you.</li>
-          <li>It does not store your generated list or your settings.</li>
-          <li>It does not connect to Steam, Discord, or any external gaming service.</li>
-        </ul>
-        <p>
-          This Shopify store name generator produces name ideas only. It does not validate availability, create accounts, or manage your profile. You must check Shopify or your chosen platform yourself and follow that platform&apos;s rules when creating or changing your username. The tool is a brainstorming aid, not a replacement for checking availability.
-        </p>
-
-        <h2>Privacy and Security Notes</h2>
-        <p>
-          The Shopify store name generator runs entirely in your browser. It does not send data to a server and does not store generated values. This is helpful for quick brainstorming and offline use. If you refresh the page, the last generated list is cleared. Copy any names you want to keep before closing or refreshing.
-        </p>
-        <p>
-          For account security, never share your Shopify password or other credentials. The generator only suggests usernames; it does not handle login or account creation. When you check availability on Shopify or another platform, use the official site or app and ensure you are on a secure connection. The Shopify store name generator is a standalone tool and does not integrate with any login system.
-        </p>
-
-        <h2>Final Summary and When to Use This Tool</h2>
-        <p>
-          The Shopify store name generator provides a fast way to create username and character name ideas for Shopify and other Shopify and e-commerce. Set the number of names (1–24) and run as often as you like. Copy results and check your platform for availability. The tool runs locally in your browser with no sign-up. Keep a shortlist of options in case your first choice is taken. No download or account is required. The generator is free and works on any device.
-        </p>
-        <p>
-          Use this Shopify store name generator when you need Shopify name ideas, character name inspiration, or a quick way to explore options before checking availability. It is best for brainstorming, rebranding, and building a shortlist. Always verify availability on Shopify or your chosen platform before committing to a name. The tool is a practical free resource for gaming store names.
+          This Shopify store name generator runs entirely in your browser. When you set a count and generate, the names are created locally on your device — nothing is uploaded, logged, or stored on our servers, and the tool has no connection to Shopify itself. Close the tab and the list is gone unless you copied it, so your brand ideas stay yours until you launch.
         </p>
       </div>
     </section>

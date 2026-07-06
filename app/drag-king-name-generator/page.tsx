@@ -29,169 +29,71 @@ function createWriteUp() {
     <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
         <h2>Drag King Name Generator – Stage Name Ideas</h2>
-        <h2>Introduction</h2>
         <p>
-          This guide explains how to use a Drag King name generator to create stage names for Drag King and other performers. The tool runs in your browser and produces unique, memorable name ideas at the click of a button. It is designed for players who want Drag King name ideas quickly without sign-up or download. The generator does not store data and runs entirely in your browser. You get 1–24 names per run and can run it as often as you like. Always check your game or story for availability before committing to a name.
+          A drag king is a performer — most often a woman or a non-binary artist — who builds a masculine or androgynous stage persona and performs it: lip-syncing, dancing, comedy, live singing, or theatrical numbers. The stage name is the cornerstone of that persona. It is the first thing an emcee announces, the name on the flyer, and the handle the audience chants for an encore. This drag king name generator produces stage-name ideas in that spirit — masculine puns, suave gentleman combos, rugged archetypes, and macho personas played for camp — right in your browser, with no sign-up. You get 1–24 names per run and can generate as many batches as you like.
         </p>
         <p>
-          People search for Drag King name ideas and character name generators when setting up a new profile, an esports handle, or a stream name. This Drag King name generator serves that intent with one free, browser-based tool. Whether you need a single standout character name or a shortlist of options, the generator gives you a pool of ideas. Names must be unique on each service, so verifying availability on Drag King or your chosen platform is an essential step after generating ideas.
-        </p>
-
-        <h2>What Is a Drag King Name Generator?</h2>
-        <p>
-          A Drag King name generator is an online tool that creates stage names suitable for Drag King and other performers. You get unique name ideas at the click of a button. The generator combines curated bold and memorable words and elements at random so each run produces new combinations. The output is for inspiration only; you must check your platform for availability. This free Drag King name generator runs in your browser with no sign-up and does not send generated names to any server.
-        </p>
-        <p>
-          The output is plain text, one name per line. You can copy the full list and paste it into a notes app, then check your game or story for availability and pick one. Many users run the Drag King name generator multiple times to build a shortlist before deciding. Because names are created locally, your choices stay private and nothing is stored on our servers.
-        </p>
-        <p>
-          Drag King name generators are useful when you are tired of reusing the same username or when you want a fresh character name that fits your style. The tool does not guarantee that a name is available; it only suggests combinations. Always confirm availability on your game or story before you commit to a new username.
+          Drag king naming is its own craft with recognizable conventions, and it is not the same as the flamboyant wordplay of drag queens. Where queen names lean glamorous and larger-than-life, king names lean into masculinity as performance — sometimes smooth and seductive, sometimes gruff and gritty, and very often winking at male tropes with a pun. This guide walks through the styles that define a strong king name so the option you pick sets up your character before you even step into the light.
         </p>
 
-        <h2>Why This Drag King Name Generator Matters</h2>
+        <h2>What Makes a Great Drag King Name</h2>
         <p>
-          Choosing a memorable Drag King name or character name can be time-consuming. A Drag King name generator speeds up brainstorming. Instead of staring at a blank field, you get options in seconds. You can run it on a phone or desktop, copy the names you like, and then check availability on your game or story. The tool is free and does not require an account, so there is no friction to trying many ideas.
+          A drag king name is doing character work the moment it is spoken. The strongest ones share a few qualities:
         </p>
+        <ul>
+          <li><strong>A clear masculine or gender-playful hook.</strong> The name should read as a man&apos;s name or a deliberate riff on masculinity — a rugged noun, a classic guy&apos;s first name, or a pun on male stereotypes.</li>
+          <li><strong>A persona baked in.</strong> &quot;Spikey Van Dykey&quot; promises comedy; a name like &quot;Rico Suave-style&quot; crooner promises a lounge act. The name hints at the attitude, genre, and energy of the number.</li>
+          <li><strong>Announce-ability.</strong> A king name has to sound good shouted by a host at the top of a set and again as the crowd cheers at the end. Short, punchy, and easy to say beats long and clever.</li>
+        </ul>
+
+        <h2>Masculine Puns and Double Entendres</h2>
         <p>
-          The generator also keeps your ideas private. Names are created in your browser and are not sent to our servers. You can use it in a private or incognito window if you prefer. Because generation is local, there is no risk of your shortlist being stored or logged. That matters when you are testing ideas before you settle on a final Drag King name or character name.
-        </p>
-        <p>
-          A good Drag King name generator also standardizes the workflow: set how many names you want, click generate, copy the list, and check availability. You get a consistent way to explore username ideas without writing scripts or visiting multiple sites. The output is easy to paste into notes or a document so you can track which names you have already checked on Drag King or other platforms.
+          Wordplay is the signature move of drag naming, and kings put their own spin on it. A king pun usually riffs on masculine tropes, male celebrities, manly professions, or cheeky innuendo — the kind of name that earns a laugh before the music even starts. Think along the lines of a swaggering &quot;Justin Case,&quot; a smooth &quot;Hugh Jass&quot; energy, or a play on a famous leading man&apos;s name with a masculine twist. The joke signals right away that the act has a sense of humor, which is why so many comedic kings anchor their whole persona to a pun. When a generated option sparks a pun, bend the spelling or swap a syllable to sharpen the punchline — the tool gives you the seed, and you land the joke.
         </p>
 
-        <h2>How the Drag King Name Generator Works (Step by Step)</h2>
+        <h2>The Suave Gentleman Style</h2>
         <p>
-          When you open the page, you choose how many names you want per run (1–24). Clicking &quot;Generate names&quot; triggers the tool to randomly combine curated bold and memorable elements in your browser. Each run is independent; no names or settings are sent to a server. The result is a list of Drag King name ideas, one per line. You can copy the full list with one click and paste it into a notes app. To get more ideas, run the generator again. The tool does not check Drag King or any platform for availability—you must do that yourself.
+          Not every king is a comedian. A huge branch of drag king naming is the suave gentleman: a sharp first name paired with a bold or evocative surname, evoking a lounge crooner, a matinee idol, a slick con man, or an old-Hollywood heartthrob. Names in this family roll off the tongue and carry swagger — a smooth first name plus a surname with a little glamour or danger to it. This style suits kings whose numbers are seductive, romantic, or theatrical rather than played purely for laughs. If you want this feel, watch your generated batch for first-and-last-name combos, and feel free to mix a first name from one result with a surname from another to build the exact gentleman you want to perform.
+        </p>
+
+        <h2>Rugged Archetypes: Cowboys, Rockers, and Tough Guys</h2>
+        <p>
+          A third major style leans on masculine archetypes drawn straight from pop culture: the cowboy, the biker, the rockstar, the soldier, the greaser, the strongman. Names here favor hard consonants, bold nouns, and gritty imagery so the persona reads instantly the moment you are announced. This is the style to reach for when your king performs to rock, country, or hip-hop, wears leather or denim, and trades on raw masculine energy rather than a pun or a wink. Keep the grittier, more consonant-heavy options from your batch and refine one to match the costume and music your act is built around.
+        </p>
+
+        <h2>Camp and Exaggerated Macho Personas</h2>
+        <p>
+          Drag is performance, and many kings play masculinity as deliberate, over-the-top camp — the exaggerated alpha, the parody of toxic bravado, the absurdly self-serious action hero. The name is where this exaggeration begins: something bombastic, chest-thumping, or ridiculously macho that tips the audience off that the whole act is a knowing send-up of male posturing. This is one of the sharpest tools in drag king comedy, because the gap between the grandiose name and the wink behind it is the joke. If your act satirizes masculinity, favor the biggest, most swaggering options in your batch and lean all the way in.
+        </p>
+
+        <h2>Choosing a Name That Fits Your Persona</h2>
+        <p>
+          The single most important rule is to start from the persona, not the word list. Decide who your king is first — a smooth lounge singer, a leather-clad rocker, a comedic pun machine, a satirical alpha — and then keep only the generated names that serve that character. A suave crooner and a rowdy biker should not share the same kind of name, even though both are &quot;drag king names.&quot; Read each candidate the way an emcee would announce it, and ask whether it sets up the number you actually perform. The name should do a beat of characterization before you move a muscle on stage.
         </p>
         <p>
-          The underlying word lists are designed to sound like gaming stage names: bold, memorable, and easy to type. The generator shuffles and combines these elements so that each run produces different combinations. That randomness helps you discover names you might not have thought of on your own. Because everything runs in the browser, the Drag King name generator works offline once the page is loaded and does not depend on a backend service.
-        </p>
-        <p>
-          There are no hidden steps. You set the count, click generate, and receive a list. Copying is one click; pasting into your own document keeps your shortlist in one place. Running the Drag King name generator multiple times is the intended workflow when you want a large pool of character name ideas before checking availability.
+          Many kings also anchor their name to something personal — a riff on their real name, a hometown, a favorite music genre, or an inside joke — because a name with a story behind it feels authentic and is easy to talk about in interviews. Use the generator to spark ideas, then bend a promising result toward that personal hook.
         </p>
 
         <h2>How to Use This Drag King Name Generator</h2>
-        <p>Follow these steps to get Drag King name ideas:</p>
         <ol className="list-decimal pl-6 space-y-2">
-          <li>Set how many names you want per run (1–24).</li>
-          <li>Click &quot;Generate names&quot; to get a new list of character name ideas.</li>
-          <li>Use the Copy button to copy all names to your clipboard.</li>
-          <li>Paste into a notes app or document, then check your game or story for availability and pick one.</li>
-          <li>Run again for more options; no account or download is required.</li>
+          <li>Set how many king names you want per run (1–24).</li>
+          <li>Click <strong>Generate names</strong> to get a fresh batch of drag king stage names.</li>
+          <li>Sort the list by style — which read as puns, which as suave gentlemen, which as rugged archetypes — and keep the ones that match your persona.</li>
+          <li>Use the Copy button to save your shortlist, then read each favorite aloud in an announcer&apos;s voice.</li>
+          <li>Run again for more options — there is no limit, no account, and no download.</li>
         </ol>
         <p>
-          The Drag King name generator runs in your browser; your settings and generated names are not sent to any server. You can run it as often as you like. Building a shortlist of five to ten options before checking availability on Drag King is a good habit, since popular usernames are often taken. Have backups ready so that if your first choice is unavailable, you can try the next name on your list.
+          Generation happens entirely in your browser. Your settings and the names you create are never sent to a server, which matters when you are workshopping a new drag identity you are not ready to reveal yet — your ideas stay private until you choose to share them.
         </p>
 
-        <h2>Drag King and Gamer Naming Style</h2>
+        <h2>Tips and Common Mistakes</h2>
         <p>
-          Drag King names and character names often use bold, memorable word combinations: action words, nicknames, or creative spellings. This Drag King name generator uses curated bold and memorable elements and combines them at random so you get new combinations that fit that style. The output is for inspiration only; the tool does not check Drag King or any platform for availability. You can use the names as-is or tweak spelling and punctuation to make them your own.
-        </p>
-        <p>
-          Different games and communities favor different styles. Some players prefer short, punchy character names; others like longer usernames. Running the generator multiple times gives you a mix of lengths and styles. Skim the list, mark the ones you like, and then verify each one on your game or story. The Drag King name generator is a starting point—your final choice should fit your personality and the rules of your platform.
+          The most common misstep is a name that fights the act — a goofy pun on a serious, seductive number, or a bland name on a huge camp character. The name and the performance should agree. A second mistake is choosing something too long or hard to shout, since a host has to announce it cleanly and a crowd has to chant it. A third is unknowingly copying an established king in your local scene, which causes real confusion at gigs, so it is worth searching your city&apos;s drag community and social platforms before you debut a name. Favor names that are punchy, persona-appropriate, and distinctive to you, and keep a shortlist so you have backups if your first choice is already claimed.
         </p>
 
-        <h2>When to Use a Drag King Name Generator</h2>
+        <h2>Privacy</h2>
         <p>
-          Use this Drag King name generator when you need Drag King or bold and memorable username ideas quickly. Common use cases include creating a new Drag King account or updating your profile name, choosing an in-game name for esports or casual play, and picking a stream or social handle. The same tool works for other platforms—Discord, Xbox, PlayStation, or social profiles—as inspiration. Names must be unique on each platform, so always check availability before committing.
-        </p>
-        <p>
-          Another good time to use a Drag King name generator is when you are rebranding. If you have used the same character name for years and want a fresh identity, generating a batch of ideas helps you explore options without pressure. Run the tool several times, paste results into one document, and remove duplicates. Then check Drag King and any other platforms you use to see which names are still available. Having a shortlist saves time compared to checking one idea at a time.
-        </p>
-
-        <h2>Use Cases in Detail: Profiles, Esports, and Streams</h2>
-        <p>
-          Players use the Drag King name generator when creating a new Drag King account or refreshing their profile name. Esports and streamers use it for in-game names or stream handles. The same tool works for other platforms—Discord, Xbox, PlayStation, or social—as inspiration; you must check each platform for availability. Run the generator multiple times to build a shortlist, then check which names are free on your platform. The Drag King name generator does not reserve or validate names; it only suggests combinations.
-        </p>
-        <p>
-          Content creators often need a consistent handle across Steam, streaming, and social media. Generating a batch of character name ideas lets you test different options before you commit. Copy the names you like into a single list, then check availability on each service. If one name is taken on Drag King but free elsewhere, you can still use it on the platforms where it is available, or use the generator again to find alternatives that work everywhere.
-        </p>
-
-        <h2>Tips for Choosing a Drag King Username</h2>
-        <p>
-          Pick a name that is easy to remember and type. Short character names are easier to say in voice chat and less likely to be mistyped. Run the Drag King name generator multiple times to get a shortlist, then check your game or story for availability. Have a few backups in case your first choice is taken. Avoid names that might be mistaken for someone else or that break platform rules. The generator gives you ideas only; the final choice is yours.
-        </p>
-        <p>
-          Consider how the name will look in different contexts: in-game, on a stream overlay, or in a friend list. Some combinations look great in one font but odd in another. If you plan to use the same handle across multiple games and platforms, check availability everywhere before you invest in branding. The Drag King name generator is a free way to explore options without committing until you have confirmed that your chosen Drag King name or character name is available.
-        </p>
-
-        <h2>Running the Drag King Name Generator in Batches</h2>
-        <p>
-          When you need many username ideas, run the Drag King name generator multiple times. Each run gives up to 24 names. Paste each run into the same document and remove duplicates if any appear. Check availability on your platform for each name you like. There is no daily or total limit; you can run the generator as often as you want. Batching is useful when you are setting up several accounts, testing ideas for a team, or simply want a large pool of character name options before making a decision.
-        </p>
-        <p>
-          Keeping a single document with all your generated Drag King name ideas makes it easy to track which names you have already checked. Mark names as &quot;taken&quot; or &quot;available&quot; as you go. That way you avoid re-checking the same name on Drag King or another platform. The Drag King name generator does not remember previous runs, so your document is your only record of the ideas you have collected.
-        </p>
-
-        <h2>Privacy and Local Processing</h2>
-        <p>
-          This Drag King name generator runs entirely in your browser. When you set the number of names and click generate, the names are created locally on your device. Your choices and the generated names are not sent to our servers. We do not store your inputs or the generated list. No account or login is required. That means your shortlist of character name ideas stays on your machine unless you choose to copy it somewhere else.
-        </p>
-        <p>
-          Because generation is local, the tool is suitable for use in private or incognito windows. If you close the tab, the generated list is gone unless you have copied it. There is no server-side log of what names you generated or how many times you ran the Drag King name generator. This privacy model is intentional: username brainstorming is personal, and the tool is designed so that you control where your ideas go.
-        </p>
-
-        <h2>Copying and Exporting Names</h2>
-        <p>
-          Use the Copy button to copy all generated Drag King name ideas to your clipboard (one per line). Paste into a notes app or document. Check your game or story for availability before committing to a name. The names are plain text, so they work in any editor or form. If you paste into a spreadsheet, each line can go in its own cell for easy tracking. The Drag King name generator does not export to a file; copying and pasting is the intended way to save your shortlist.
-        </p>
-
-        <h2>Limits and Batch Size</h2>
-        <p>
-          You can request 1–24 names per run with this Drag King name generator. There is no daily or total limit. Run the generator again for more options. No download or account is required. If you need more than 24 names in one go, run the tool multiple times and paste the results into one document. Removing duplicates is up to you; the generator does not track previous output.
-        </p>
-
-        <h2>No Download or Account Required</h2>
-        <p>
-          This Drag King name generator runs entirely in your browser. You do not need to download software or create an account. Open the page, set how many names you want, and click generate. The tool is free and works on desktop, tablet, and phone. That makes it easy to use when you are away from your main device or when you want to quickly generate character name ideas without installing anything.
-        </p>
-
-        <h2>Who Uses a Drag King Name Generator?</h2>
-        <p>
-          Players use the Drag King name generator when creating or updating a Drag King profile, or when they want a new character name for other platforms. Esports and streamers use it for in-game names or stream handles. The same tool works for Discord, Xbox, PlayStation, or social profiles—always check availability on each platform. Educators and workshop leaders sometimes use it to demonstrate username creation or digital identity in a classroom setting. No account or download is required on our site.
-        </p>
-        <p>
-          Anyone who needs a steady supply of username ideas can benefit. Whether you are a casual gamer, a competitive player, or a content creator, the Drag King name generator provides a fast way to explore options. The key is to treat the output as inspiration and always verify availability on Drag King and any other platform where you plan to use the name.
-        </p>
-
-        <h2>Getting the Most Out of the Drag King Name Generator</h2>
-        <p>
-          Run the generator several times and paste all results into one document. Skim for names that fit your style and check your platform for availability. Shortlist five to ten options so you have backups if your first choice is taken. The Drag King name generator does not check Drag King or any platform; you must do that yourself. When you have a shortlist, check availability one by one. Usernames are often taken on popular services, so having several options saves time.
-        </p>
-        <p>
-          Another tip is to try different batch sizes. Sometimes generating 24 names at once gives you a good mix; other times you may prefer smaller runs so you can review each set before generating more. The tool is flexible. Use it whenever you need new Drag King name ideas or character name inspiration. Bookmarking the page makes it easy to return when you are ready to refresh your profile or create a new account.
-        </p>
-
-        <h2>Typical Workflow for the Drag King Name Generator</h2>
-        <p>
-          A typical workflow is: open the page, set the number of names (e.g. 12 or 24), click generate, then copy the list. Paste into a notes app. Check your game or story for availability for each name you like. If your first choice is taken, try the next. Run the Drag King name generator again for more options. The whole process takes a few minutes. No account or download is required. Bookmark the page for quick access when you need new username ideas. The tool is free and runs in your browser with no sign-up.
-        </p>
-
-        <h2>What This Tool Does NOT Do</h2>
-        <ul>
-          <li>It does not check Drag King or any platform for username availability.</li>
-          <li>It does not reserve or hold names for you.</li>
-          <li>It does not store your generated list or your settings.</li>
-          <li>It does not connect to Steam, Discord, or any external gaming service.</li>
-        </ul>
-        <p>
-          This Drag King name generator produces name ideas only. It does not validate availability, create accounts, or manage your profile. You must check Drag King or your chosen platform yourself and follow that platform&apos;s rules when creating or changing your username. The tool is a brainstorming aid, not a replacement for checking availability.
-        </p>
-
-        <h2>Privacy and Security Notes</h2>
-        <p>
-          The Drag King name generator runs entirely in your browser. It does not send data to a server and does not store generated values. This is helpful for quick brainstorming and offline use. If you refresh the page, the last generated list is cleared. Copy any names you want to keep before closing or refreshing.
-        </p>
-        <p>
-          For account security, never share your Drag King password or other credentials. The generator only suggests usernames; it does not handle login or account creation. When you check availability on Drag King or another platform, use the official site or app and ensure you are on a secure connection. The Drag King name generator is a standalone tool and does not integrate with any login system.
-        </p>
-
-        <h2>Final Summary and When to Use This Tool</h2>
-        <p>
-          The Drag King name generator provides a fast way to create username and character name ideas for Drag King and other performers. Set the number of names (1–24) and run as often as you like. Copy results and check your platform for availability. The tool runs locally in your browser with no sign-up. Keep a shortlist of options in case your first choice is taken. No download or account is required. The generator is free and works on any device.
-        </p>
-        <p>
-          Use this Drag King name generator when you need Drag King name ideas, character name inspiration, or a quick way to explore options before checking availability. It is best for brainstorming, rebranding, and building a shortlist. Always verify availability on Drag King or your chosen platform before committing to a name. The tool is a practical free resource for gaming stage names.
+          This drag king name generator runs entirely in your browser. When you set a count and generate, the names are created locally on your device — nothing is uploaded, logged, or stored on our servers. Close the tab and the list is gone unless you copied it, so your persona ideas stay yours while you decide.
         </p>
       </div>
     </section>

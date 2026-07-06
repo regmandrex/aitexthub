@@ -29,169 +29,66 @@ function createWriteUp() {
     <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
         <h2>Hillbilly Name Generator – Country Name Ideas</h2>
-        <h2>Introduction</h2>
         <p>
-          This guide explains how to use a Hillbilly name generator to create country-style names for Hillbilly and other fiction and humor. The tool runs in your browser and produces unique, memorable name ideas at the click of a button. It is designed for players who want Hillbilly name ideas quickly without sign-up or download. The generator does not store data and runs entirely in your browser. You get 1–24 names per run and can run it as often as you like. Always check your game or story for availability before committing to a name.
+          A good hillbilly name lands like a punchline. Cletus, Billy-Bob, Bobby-Sue, Earl, Daisy-Mae — these rustic, down-home Appalachian and country names carry an instant comic warmth, the sound of a porch swing and a screen door slamming. This hillbilly name generator builds names in that tradition — double first names, twangy nicknames, and folksy surnames — for comedy writers, character creators, and anyone who needs a good-natured country name for a joke, a sketch, or a role-play. It runs in your browser, needs no sign-up, and gives you 1–24 names per run with a copy button.
         </p>
         <p>
-          People search for Hillbilly name ideas and character name generators when setting up a new profile, an esports handle, or a stream name. This Hillbilly name generator serves that intent with one free, browser-based tool. Whether you need a single standout character name or a shortlist of options, the generator gives you a pool of ideas. Names must be unique on each service, so verifying availability on Hillbilly or your chosen platform is an essential step after generating ideas.
-        </p>
-
-        <h2>What Is a Hillbilly Name Generator?</h2>
-        <p>
-          A Hillbilly name generator is an online tool that creates country-style names suitable for Hillbilly and other fiction and humor. You get unique name ideas at the click of a button. The generator combines curated country-style words and elements at random so each run produces new combinations. The output is for inspiration only; you must check your platform for availability. This free Hillbilly name generator runs in your browser with no sign-up and does not send generated names to any server.
-        </p>
-        <p>
-          The output is plain text, one name per line. You can copy the full list and paste it into a notes app, then check your game or story for availability and pick one. Many users run the Hillbilly name generator multiple times to build a shortlist before deciding. Because names are created locally, your choices stay private and nothing is stored on our servers.
-        </p>
-        <p>
-          Hillbilly name generators are useful when you are tired of reusing the same username or when you want a fresh character name that fits your style. The tool does not guarantee that a name is available; it only suggests combinations. Always confirm availability on your game or story before you commit to a new username.
+          The guide below covers what actually makes a hillbilly name funny and believable: the hyphenated double-name pattern, the classic first names and nicknames, the folksy surnames, and how to use these names for humor and characters without tipping into mean-spirited caricature.
         </p>
 
-        <h2>Why This Hillbilly Name Generator Matters</h2>
+        <h2>The Double-Name Pattern</h2>
         <p>
-          Choosing a memorable Hillbilly name or character name can be time-consuming. A Hillbilly name generator speeds up brainstorming. Instead of staring at a blank field, you get options in seconds. You can run it on a phone or desktop, copy the names you like, and then check availability on your game or story. The tool is free and does not require an account, so there is no friction to trying many ideas.
-        </p>
-        <p>
-          The generator also keeps your ideas private. Names are created in your browser and are not sent to our servers. You can use it in a private or incognito window if you prefer. Because generation is local, there is no risk of your shortlist being stored or logged. That matters when you are testing ideas before you settle on a final Hillbilly name or character name.
-        </p>
-        <p>
-          A good Hillbilly name generator also standardizes the workflow: set how many names you want, click generate, copy the list, and check availability. You get a consistent way to explore username ideas without writing scripts or visiting multiple sites. The output is easy to paste into notes or a document so you can track which names you have already checked on Hillbilly or other platforms.
+          The single most recognizable feature of a hillbilly name is the hyphenated double first name — Billy-Bob, Bobby-Sue, Daisy-Mae, Jim-Bob, Ellie-May, Peggy-Sue. Rooted in real Southern and Appalachian naming, where two given names (or a name plus a family name) are used together every day, the pattern reads as warm, rural, and unmistakably country. The comedy comes from the rhythm: two short, homey names snapped together with a hyphen. When you generate a batch, the double names are usually the ones that land hardest, because that mash-up is the genre&apos;s signature.
         </p>
 
-        <h2>How the Hillbilly Name Generator Works (Step by Step)</h2>
+        <h2>Classic First Names and Nicknames</h2>
         <p>
-          When you open the page, you choose how many names you want per run (1–24). Clicking &quot;Generate names&quot; triggers the tool to randomly combine curated country-style elements in your browser. Each run is independent; no names or settings are sent to a server. The result is a list of Hillbilly name ideas, one per line. You can copy the full list with one click and paste it into a notes app. To get more ideas, run the generator again. The tool does not check Hillbilly or any platform for availability—you must do that yourself.
+          Hillbilly humor leans on a well-worn cast of first names and nicknames that instantly signal the type. Understanding the pool helps you pick the funniest fit:
         </p>
+        <ul>
+          <li><strong>Classic men&apos;s names.</strong> Cletus, Earl, Billy, Bubba, Jed, Roscoe, Gus, Delbert, Merle — plain, old-fashioned, and a little worn-in.</li>
+          <li><strong>Classic women&apos;s names.</strong> Daisy, Ellie, Peggy, Loretta, Wanda, Darlene, Bonnie, Sue — country-radio warmth with a wink.</li>
+          <li><strong>Nicknames and diminutives.</strong> Bubba, Junior, Skeeter, Cooter, Bo, Duke — earned handles that replace the given name entirely.</li>
+          <li><strong>The &quot;-y&quot; ending.</strong> Billy, Bobby, Jimmy, Tammy — soft, familiar endings that keep the whole name sounding neighborly.</li>
+        </ul>
+
+        <h2>Folksy Surnames</h2>
         <p>
-          The underlying word lists are designed to sound like gaming country-style names: bold, memorable, and easy to type. The generator shuffles and combines these elements so that each run produces different combinations. That randomness helps you discover names you might not have thought of on your own. Because everything runs in the browser, the Hillbilly name generator works offline once the page is loaded and does not depend on a backend service.
+          The last name seals the persona. Hillbilly surnames tend toward plain Anglo-Scots-Irish family names common in Appalachia — Hicks, Tucker, McCoy, Hatfield, Boggs, Skaggs, Puckett, Dubois — or occupational and descriptive names with a rural ring. The McCoy and Hatfield surnames in particular carry the famous feud folklore that shorthands the whole backwoods archetype. Pair a homey double first name with a plain family surname (&quot;Bobby-Sue Tucker,&quot; &quot;Earl Puckett&quot;) and you have a full, believable country name in three words.
         </p>
+
+        <h2>Using Hillbilly Names for Comedy</h2>
         <p>
-          There are no hidden steps. You set the count, click generate, and receive a list. Copying is one click; pasting into your own document keeps your shortlist in one place. Running the Hillbilly name generator multiple times is the intended workflow when you want a large pool of character name ideas before checking availability.
+          These names shine in humor: sitcom and cartoon characters, comedy sketches, group-chat aliases, fantasy football team owners, party games, and April Fools&apos; personas. A name like Cletus Boggs or Daisy-Mae Hicks does a joke&apos;s worth of characterization before the character says a word. For a bit that needs a whole family, generate a batch and give siblings rhyming or paired double names (Billy-Bob and Bobby-Sue) to sell the down-home clan in one stroke. The over-the-top ones are often the funniest, so do not be shy about the most cartoonish results.
+        </p>
+
+        <h2>Naming Country Characters for Fiction</h2>
+        <p>
+          Beyond pure comedy, these names work for genuine rural and Southern characters in fiction — as long as you pick with a light touch. A well-chosen country name grounds a character in a place and background instantly. For a warm, sympathetic character, favor the softer classics (Loretta, Earl, Ellie) over the most cartoonish handles. For broad comedy, lean into the exaggerated ones. The generator gives you the full range, so match the name&apos;s silliness to how seriously you want the character taken.
+        </p>
+
+        <h2>Keeping It Good-Natured, Not Mean</h2>
+        <p>
+          &quot;Hillbilly&quot; humor works best when it is affectionate rather than a put-down of real people and places. The archetype has deep roots in real Appalachian culture, so aim the comedy at a fictional, over-the-top character — the sound and the double-name gag — rather than at a stereotype meant to belittle. Used with warmth, these names read as playful and fond; used as an insult, they fall flat. Pick names that make people smile with the character, not sneer at a region.
         </p>
 
         <h2>How to Use This Hillbilly Name Generator</h2>
-        <p>Follow these steps to get Hillbilly name ideas:</p>
         <ol className="list-decimal pl-6 space-y-2">
-          <li>Set how many names you want per run (1–24).</li>
-          <li>Click &quot;Generate names&quot; to get a new list of character name ideas.</li>
-          <li>Use the Copy button to copy all names to your clipboard.</li>
-          <li>Paste into a notes app or document, then check your game or story for availability and pick one.</li>
-          <li>Run again for more options; no account or download is required.</li>
+          <li>Decide the tone first — broad cartoon comedy, a warm country character, or a whole backwoods family.</li>
+          <li>Set how many names you want per run (1–24) and click <strong>Generate names</strong> for a fresh batch of hillbilly and country names.</li>
+          <li>Skim for the double names and nicknames that land the hardest, then use the Copy button to save the list.</li>
+          <li>Paste into your script, notes, or group chat and pair first names with folksy surnames for full names.</li>
+          <li>Run again for more options — there is no limit, no account, and no download.</li>
         </ol>
+
+        <h2>Tips and Common Mistakes</h2>
         <p>
-          The Hillbilly name generator runs in your browser; your settings and generated names are not sent to any server. You can run it as often as you like. Building a shortlist of five to ten options before checking availability on Hillbilly is a good habit, since popular usernames are often taken. Have backups ready so that if your first choice is unavailable, you can try the next name on your list.
+          Say the name out loud — hillbilly names are built on rhythm, and a good double name has a snappy, two-beat bounce. For a family or duo, use rhyming or paired names to sell the connection. The main mistake is aiming the joke at real people instead of a fictional character, which turns warm comedy into a cheap shot. The second is playing it too safe; the genre rewards the over-the-top, so keep the boldest results. And a plain surname usually beats an elaborate one, since the humor lives in the first name.
         </p>
 
-        <h2>Hillbilly and Gamer Naming Style</h2>
+        <h2>Privacy</h2>
         <p>
-          Hillbilly names and character names often use bold, memorable word combinations: action words, nicknames, or creative spellings. This Hillbilly name generator uses curated country-style elements and combines them at random so you get new combinations that fit that style. The output is for inspiration only; the tool does not check Hillbilly or any platform for availability. You can use the names as-is or tweak spelling and punctuation to make them your own.
-        </p>
-        <p>
-          Different games and communities favor different styles. Some players prefer short, punchy character names; others like longer usernames. Running the generator multiple times gives you a mix of lengths and styles. Skim the list, mark the ones you like, and then verify each one on your game or story. The Hillbilly name generator is a starting point—your final choice should fit your personality and the rules of your platform.
-        </p>
-
-        <h2>When to Use a Hillbilly Name Generator</h2>
-        <p>
-          Use this Hillbilly name generator when you need Hillbilly or country-style username ideas quickly. Common use cases include creating a new Hillbilly account or updating your profile name, choosing an in-game name for esports or casual play, and picking a stream or social handle. The same tool works for other platforms—Discord, Xbox, PlayStation, or social profiles—as inspiration. Names must be unique on each platform, so always check availability before committing.
-        </p>
-        <p>
-          Another good time to use a Hillbilly name generator is when you are rebranding. If you have used the same character name for years and want a fresh identity, generating a batch of ideas helps you explore options without pressure. Run the tool several times, paste results into one document, and remove duplicates. Then check Hillbilly and any other platforms you use to see which names are still available. Having a shortlist saves time compared to checking one idea at a time.
-        </p>
-
-        <h2>Use Cases in Detail: Profiles, Esports, and Streams</h2>
-        <p>
-          Players use the Hillbilly name generator when creating a new Hillbilly account or refreshing their profile name. Esports and streamers use it for in-game names or stream handles. The same tool works for other platforms—Discord, Xbox, PlayStation, or social—as inspiration; you must check each platform for availability. Run the generator multiple times to build a shortlist, then check which names are free on your platform. The Hillbilly name generator does not reserve or validate names; it only suggests combinations.
-        </p>
-        <p>
-          Content creators often need a consistent handle across Steam, streaming, and social media. Generating a batch of character name ideas lets you test different options before you commit. Copy the names you like into a single list, then check availability on each service. If one name is taken on Hillbilly but free elsewhere, you can still use it on the platforms where it is available, or use the generator again to find alternatives that work everywhere.
-        </p>
-
-        <h2>Tips for Choosing a Hillbilly Username</h2>
-        <p>
-          Pick a name that is easy to remember and type. Short character names are easier to say in voice chat and less likely to be mistyped. Run the Hillbilly name generator multiple times to get a shortlist, then check your game or story for availability. Have a few backups in case your first choice is taken. Avoid names that might be mistaken for someone else or that break platform rules. The generator gives you ideas only; the final choice is yours.
-        </p>
-        <p>
-          Consider how the name will look in different contexts: in-game, on a stream overlay, or in a friend list. Some combinations look great in one font but odd in another. If you plan to use the same handle across multiple games and platforms, check availability everywhere before you invest in branding. The Hillbilly name generator is a free way to explore options without committing until you have confirmed that your chosen Hillbilly name or character name is available.
-        </p>
-
-        <h2>Running the Hillbilly Name Generator in Batches</h2>
-        <p>
-          When you need many username ideas, run the Hillbilly name generator multiple times. Each run gives up to 24 names. Paste each run into the same document and remove duplicates if any appear. Check availability on your platform for each name you like. There is no daily or total limit; you can run the generator as often as you want. Batching is useful when you are setting up several accounts, testing ideas for a team, or simply want a large pool of character name options before making a decision.
-        </p>
-        <p>
-          Keeping a single document with all your generated Hillbilly name ideas makes it easy to track which names you have already checked. Mark names as &quot;taken&quot; or &quot;available&quot; as you go. That way you avoid re-checking the same name on Hillbilly or another platform. The Hillbilly name generator does not remember previous runs, so your document is your only record of the ideas you have collected.
-        </p>
-
-        <h2>Privacy and Local Processing</h2>
-        <p>
-          This Hillbilly name generator runs entirely in your browser. When you set the number of names and click generate, the names are created locally on your device. Your choices and the generated names are not sent to our servers. We do not store your inputs or the generated list. No account or login is required. That means your shortlist of character name ideas stays on your machine unless you choose to copy it somewhere else.
-        </p>
-        <p>
-          Because generation is local, the tool is suitable for use in private or incognito windows. If you close the tab, the generated list is gone unless you have copied it. There is no server-side log of what names you generated or how many times you ran the Hillbilly name generator. This privacy model is intentional: username brainstorming is personal, and the tool is designed so that you control where your ideas go.
-        </p>
-
-        <h2>Copying and Exporting Names</h2>
-        <p>
-          Use the Copy button to copy all generated Hillbilly name ideas to your clipboard (one per line). Paste into a notes app or document. Check your game or story for availability before committing to a name. The names are plain text, so they work in any editor or form. If you paste into a spreadsheet, each line can go in its own cell for easy tracking. The Hillbilly name generator does not export to a file; copying and pasting is the intended way to save your shortlist.
-        </p>
-
-        <h2>Limits and Batch Size</h2>
-        <p>
-          You can request 1–24 names per run with this Hillbilly name generator. There is no daily or total limit. Run the generator again for more options. No download or account is required. If you need more than 24 names in one go, run the tool multiple times and paste the results into one document. Removing duplicates is up to you; the generator does not track previous output.
-        </p>
-
-        <h2>No Download or Account Required</h2>
-        <p>
-          This Hillbilly name generator runs entirely in your browser. You do not need to download software or create an account. Open the page, set how many names you want, and click generate. The tool is free and works on desktop, tablet, and phone. That makes it easy to use when you are away from your main device or when you want to quickly generate character name ideas without installing anything.
-        </p>
-
-        <h2>Who Uses a Hillbilly Name Generator?</h2>
-        <p>
-          Players use the Hillbilly name generator when creating or updating a Hillbilly profile, or when they want a new character name for other platforms. Esports and streamers use it for in-game names or stream handles. The same tool works for Discord, Xbox, PlayStation, or social profiles—always check availability on each platform. Educators and workshop leaders sometimes use it to demonstrate username creation or digital identity in a classroom setting. No account or download is required on our site.
-        </p>
-        <p>
-          Anyone who needs a steady supply of username ideas can benefit. Whether you are a casual gamer, a competitive player, or a content creator, the Hillbilly name generator provides a fast way to explore options. The key is to treat the output as inspiration and always verify availability on Hillbilly and any other platform where you plan to use the name.
-        </p>
-
-        <h2>Getting the Most Out of the Hillbilly Name Generator</h2>
-        <p>
-          Run the generator several times and paste all results into one document. Skim for names that fit your style and check your platform for availability. Shortlist five to ten options so you have backups if your first choice is taken. The Hillbilly name generator does not check Hillbilly or any platform; you must do that yourself. When you have a shortlist, check availability one by one. Usernames are often taken on popular services, so having several options saves time.
-        </p>
-        <p>
-          Another tip is to try different batch sizes. Sometimes generating 24 names at once gives you a good mix; other times you may prefer smaller runs so you can review each set before generating more. The tool is flexible. Use it whenever you need new Hillbilly name ideas or character name inspiration. Bookmarking the page makes it easy to return when you are ready to refresh your profile or create a new account.
-        </p>
-
-        <h2>Typical Workflow for the Hillbilly Name Generator</h2>
-        <p>
-          A typical workflow is: open the page, set the number of names (e.g. 12 or 24), click generate, then copy the list. Paste into a notes app. Check your game or story for availability for each name you like. If your first choice is taken, try the next. Run the Hillbilly name generator again for more options. The whole process takes a few minutes. No account or download is required. Bookmark the page for quick access when you need new username ideas. The tool is free and runs in your browser with no sign-up.
-        </p>
-
-        <h2>What This Tool Does NOT Do</h2>
-        <ul>
-          <li>It does not check Hillbilly or any platform for username availability.</li>
-          <li>It does not reserve or hold names for you.</li>
-          <li>It does not store your generated list or your settings.</li>
-          <li>It does not connect to Steam, Discord, or any external gaming service.</li>
-        </ul>
-        <p>
-          This Hillbilly name generator produces name ideas only. It does not validate availability, create accounts, or manage your profile. You must check Hillbilly or your chosen platform yourself and follow that platform&apos;s rules when creating or changing your username. The tool is a brainstorming aid, not a replacement for checking availability.
-        </p>
-
-        <h2>Privacy and Security Notes</h2>
-        <p>
-          The Hillbilly name generator runs entirely in your browser. It does not send data to a server and does not store generated values. This is helpful for quick brainstorming and offline use. If you refresh the page, the last generated list is cleared. Copy any names you want to keep before closing or refreshing.
-        </p>
-        <p>
-          For account security, never share your Hillbilly password or other credentials. The generator only suggests usernames; it does not handle login or account creation. When you check availability on Hillbilly or another platform, use the official site or app and ensure you are on a secure connection. The Hillbilly name generator is a standalone tool and does not integrate with any login system.
-        </p>
-
-        <h2>Final Summary and When to Use This Tool</h2>
-        <p>
-          The Hillbilly name generator provides a fast way to create username and character name ideas for Hillbilly and other fiction and humor. Set the number of names (1–24) and run as often as you like. Copy results and check your platform for availability. The tool runs locally in your browser with no sign-up. Keep a shortlist of options in case your first choice is taken. No download or account is required. The generator is free and works on any device.
-        </p>
-        <p>
-          Use this Hillbilly name generator when you need Hillbilly name ideas, character name inspiration, or a quick way to explore options before checking availability. It is best for brainstorming, rebranding, and building a shortlist. Always verify availability on Hillbilly or your chosen platform before committing to a name. The tool is a practical free resource for gaming country-style names.
+          This hillbilly name generator runs entirely in your browser. When you set a count and generate, the country-style names are created locally on your device — nothing is uploaded, logged, or stored on our servers. Close the tab and the list is gone unless you copied it, so your character ideas stay yours.
         </p>
       </div>
     </section>

@@ -29,169 +29,69 @@ function createWriteUp() {
     <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
         <h2>Genderbend Name Generator – Alternate Name Ideas</h2>
-        <h2>Introduction</h2>
         <p>
-          This guide explains how to use a Genderbend name generator to create alternate name ideas for Genderbend and other fiction and creative projects. The tool runs in your browser and produces unique, memorable name ideas at the click of a button. It is designed for players who want Genderbend name ideas quickly without sign-up or download. The generator does not store data and runs entirely in your browser. You get 1–24 names per run and can run it as often as you like. Always check your game or story for availability before committing to a name.
+          Genderbending — the fandom concept often tagged &quot;Rule 63,&quot; the tongue-in-cheek internet rule that every character has an opposite-gender counterpart — is the practice of reimagining a character as another gender. A huge part of that reimagining is the name. When you flip a character from masculine to feminine or vice versa, you usually want a new name that feels like the same person: the counterpart&apos;s name, not a random substitute. This genderbend name generator produces those alternate names — masculine and feminine forms that echo the sound, rhythm, and etymology of an original — right in your browser, with no sign-up. You get 1–24 names per run for fan characters, original characters (OCs), fanfiction, and cosplay.
         </p>
         <p>
-          People search for Genderbend name ideas and character name generators when setting up a new profile, an esports handle, or a stream name. This Genderbend name generator serves that intent with one free, browser-based tool. Whether you need a single standout character name or a shortlist of options, the generator gives you a pool of ideas. Names must be unique on each service, so verifying availability on Genderbend or your chosen platform is an essential step after generating ideas.
-        </p>
-
-        <h2>What Is a Genderbend Name Generator?</h2>
-        <p>
-          A Genderbend name generator is an online tool that creates alternate name ideas suitable for Genderbend and other fiction and creative projects. You get unique name ideas at the click of a button. The generator combines curated flexible words and elements at random so each run produces new combinations. The output is for inspiration only; you must check your platform for availability. This free Genderbend name generator runs in your browser with no sign-up and does not send generated names to any server.
-        </p>
-        <p>
-          The output is plain text, one name per line. You can copy the full list and paste it into a notes app, then check your game or story for availability and pick one. Many users run the Genderbend name generator multiple times to build a shortlist before deciding. Because names are created locally, your choices stay private and nothing is stored on our servers.
-        </p>
-        <p>
-          Genderbend name generators are useful when you are tired of reusing the same username or when you want a fresh character name that fits your style. The tool does not guarantee that a name is available; it only suggests combinations. Always confirm availability on your game or story before you commit to a new username.
+          Good genderbend naming is not just swapping to any name of the other gender. It is finding the version that a reader would recognize as &quot;the same character, but gender-flipped.&quot; That means matching etymological roots, shared nicknames, sound, and initials. The guide below explains the techniques writers and artists actually use so the counterpart name you pick lands as an obvious twin rather than a stranger.
         </p>
 
-        <h2>Why This Genderbend Name Generator Matters</h2>
+        <h2>What Genderbending a Name Really Means</h2>
         <p>
-          Choosing a memorable Genderbend name or character name can be time-consuming. A Genderbend name generator speeds up brainstorming. Instead of staring at a blank field, you get options in seconds. You can run it on a phone or desktop, copy the names you like, and then check availability on your game or story. The tool is free and does not require an account, so there is no friction to trying many ideas.
-        </p>
-        <p>
-          The generator also keeps your ideas private. Names are created in your browser and are not sent to our servers. You can use it in a private or incognito window if you prefer. Because generation is local, there is no risk of your shortlist being stored or logged. That matters when you are testing ideas before you settle on a final Genderbend name or character name.
-        </p>
-        <p>
-          A good Genderbend name generator also standardizes the workflow: set how many names you want, click generate, copy the list, and check availability. You get a consistent way to explore username ideas without writing scripts or visiting multiple sites. The output is easy to paste into notes or a document so you can track which names you have already checked on Genderbend or other platforms.
+          A genderbent name is the opposite-gender counterpart of a character&apos;s name — ideally one that keeps enough of the original that the connection is instant. When done well, the audience sees the new name and immediately maps it back: Alexander becomes Alexandra, Daniel becomes Danielle, Victoria becomes Victor. The goal is recognizability. A random name of the other gender technically genderbends the character, but it throws away the free storytelling that a matched counterpart gives you — the wink of familiarity that makes fans smile. This generator is tuned to produce that recognizable, matched feel rather than unrelated substitutes.
         </p>
 
-        <h2>How the Genderbend Name Generator Works (Step by Step)</h2>
+        <h2>Matching by Etymology and Root</h2>
         <p>
-          When you open the page, you choose how many names you want per run (1–24). Clicking &quot;Generate names&quot; triggers the tool to randomly combine curated flexible elements in your browser. Each run is independent; no names or settings are sent to a server. The result is a list of Genderbend name ideas, one per line. You can copy the full list with one click and paste it into a notes app. To get more ideas, run the generator again. The tool does not check Genderbend or any platform for availability—you must do that yourself.
+          The cleanest genderbends share a root. Many names come in built-in masculine and feminine pairs because they descend from the same origin: Julius and Julia, Christian and Christine, Paul and Paula, Joseph and Josephine, Gabriel and Gabriella, Nicholas and Nicole. When a character&apos;s name has an established counterpart like these, that counterpart is almost always the strongest choice — it is the version speakers already recognize as the same name in another gender. Start by asking whether the original name has a natural etymological partner, and reach for invented forms only when it does not.
         </p>
+
+        <h2>Matching by Sound and Rhythm</h2>
         <p>
-          The underlying word lists are designed to sound like gaming alternate name ideas: bold, memorable, and easy to type. The generator shuffles and combines these elements so that each run produces different combinations. That randomness helps you discover names you might not have thought of on your own. Because everything runs in the browser, the Genderbend name generator works offline once the page is loaded and does not depend on a backend service.
+          Not every name has a tidy counterpart, so the next technique is matching sound. Keep the same number of syllables, the same stress pattern, and as many shared consonants and vowels as you can, then shift the ending toward the target gender. In English, feminine forms often lean on endings like -a, -ella, -ette, -ine, or -lyn, while masculine forms lean on harder consonant endings or drop a soft final vowel. The aim is a name that rhymes with or rhythmically echoes the original, so it feels like a sibling even when the roots differ. Reading the pair aloud back to back is the quickest test of whether the echo works.
         </p>
+
+        <h2>Keeping the Nickname and Initials</h2>
         <p>
-          There are no hidden steps. You set the count, click generate, and receive a list. Copying is one click; pasting into your own document keeps your shortlist in one place. Running the Genderbend name generator multiple times is the intended workflow when you want a large pool of character name ideas before checking availability.
+          A powerful trick is to preserve what stays constant between genders. Many nicknames are already unisex, so choosing a counterpart that shortens to the same nickname keeps the character grounded — Samuel and Samantha both go by Sam; Alexander and Alexandra both go by Alex; Charles and Charlotte both go by Charlie. Sharing an initial does similar work, which matters when a character&apos;s monogram, signature, or a plot point hangs on a specific letter. When you scan a batch of generated options, favor the ones that keep the original&apos;s nickname or first initial — those genderbends feel the most seamless.
         </p>
+
+        <h2>Genderbending Beyond the Binary</h2>
+        <p>
+          Not every genderbend is a straight masculine-to-feminine flip. Some creators reimagine a character as non-binary or androgynous, and here the naming goal shifts toward unisex names or gender-neutral forms — think Alex, Sam, Jordan, Riley, Rowan, or a shortened form that reads either way. The same principles apply: keep the sound and the connection to the original, but steer toward names without a strong gender signal. Generate a batch and keep the options that feel balanced rather than pulled firmly to one side.
+        </p>
+
+        <h2>Using Genderbent Names in Fandom</h2>
+        <p>
+          Genderbending shows up across creative work, and the name does different jobs depending on the context:
+        </p>
+        <ul>
+          <li><strong>Fanfiction.</strong> A genderbent name signals the AU (alternate universe) premise in the first line and lets readers track the flipped character without confusion.</li>
+          <li><strong>Cosplay.</strong> Genderbent or &quot;crossplay&quot; costumes often come with a counterpart name for the character card, badge, or con introduction.</li>
+          <li><strong>Original characters.</strong> Writers use genderbend logic to create a sibling, a twin, or a mirror-universe version of an existing OC.</li>
+          <li><strong>Roleplay.</strong> On forums and servers, a recognizable counterpart name keeps a gender-swapped character legible to everyone at the table.</li>
+        </ul>
 
         <h2>How to Use This Genderbend Name Generator</h2>
-        <p>Follow these steps to get Genderbend name ideas:</p>
         <ol className="list-decimal pl-6 space-y-2">
-          <li>Set how many names you want per run (1–24).</li>
-          <li>Click &quot;Generate names&quot; to get a new list of character name ideas.</li>
-          <li>Use the Copy button to copy all names to your clipboard.</li>
-          <li>Paste into a notes app or document, then check your game or story for availability and pick one.</li>
-          <li>Run again for more options; no account or download is required.</li>
+          <li>Decide the direction you want — masculine to feminine, feminine to masculine, or toward a neutral form.</li>
+          <li>Set how many alternate names you want per run (1–24) and click <strong>Generate names</strong>.</li>
+          <li>Compare each result to your original: does it share a root, a nickname, an initial, or the same rhythm?</li>
+          <li>Use the Copy button to save your shortlist, then read the original and the counterpart aloud back to back.</li>
+          <li>Run again for more options — there is no limit, no account, and no download.</li>
         </ol>
         <p>
-          The Genderbend name generator runs in your browser; your settings and generated names are not sent to any server. You can run it as often as you like. Building a shortlist of five to ten options before checking availability on Genderbend is a good habit, since popular usernames are often taken. Have backups ready so that if your first choice is unavailable, you can try the next name on your list.
+          Generation happens entirely in your browser. Your settings and the names you create are never sent to a server, so your OCs and unpublished AU ideas stay private until you choose to share them.
         </p>
 
-        <h2>Genderbend and Gamer Naming Style</h2>
+        <h2>Tips and Common Mistakes</h2>
         <p>
-          Genderbend names and character names often use bold, memorable word combinations: action words, nicknames, or creative spellings. This Genderbend name generator uses curated flexible elements and combines them at random so you get new combinations that fit that style. The output is for inspiration only; the tool does not check Genderbend or any platform for availability. You can use the names as-is or tweak spelling and punctuation to make them your own.
-        </p>
-        <p>
-          Different games and communities favor different styles. Some players prefer short, punchy character names; others like longer usernames. Running the generator multiple times gives you a mix of lengths and styles. Skim the list, mark the ones you like, and then verify each one on your game or story. The Genderbend name generator is a starting point—your final choice should fit your personality and the rules of your platform.
+          The most common mistake is genderbending to a name that is simply unrelated — technically the other gender, but with no link to the original, which severs the recognition that makes a genderbend satisfying. Reach for a shared root, nickname, or sound instead. A second mistake is ignoring the source&apos;s cultural or linguistic background: a Japanese, Norse, or Latinate name reads best when its counterpart stays in the same tradition rather than jumping to an unrelated one. A third is over-forcing an ending — not every name needs an -a tacked on; sometimes the natural counterpart looks quite different. Generate several options, keep the ones that feel like an obvious twin, and let the pair pass the read-aloud test.
         </p>
 
-        <h2>When to Use a Genderbend Name Generator</h2>
+        <h2>Privacy</h2>
         <p>
-          Use this Genderbend name generator when you need Genderbend or flexible username ideas quickly. Common use cases include creating a new Genderbend account or updating your profile name, choosing an in-game name for esports or casual play, and picking a stream or social handle. The same tool works for other platforms—Discord, Xbox, PlayStation, or social profiles—as inspiration. Names must be unique on each platform, so always check availability before committing.
-        </p>
-        <p>
-          Another good time to use a Genderbend name generator is when you are rebranding. If you have used the same character name for years and want a fresh identity, generating a batch of ideas helps you explore options without pressure. Run the tool several times, paste results into one document, and remove duplicates. Then check Genderbend and any other platforms you use to see which names are still available. Having a shortlist saves time compared to checking one idea at a time.
-        </p>
-
-        <h2>Use Cases in Detail: Profiles, Esports, and Streams</h2>
-        <p>
-          Players use the Genderbend name generator when creating a new Genderbend account or refreshing their profile name. Esports and streamers use it for in-game names or stream handles. The same tool works for other platforms—Discord, Xbox, PlayStation, or social—as inspiration; you must check each platform for availability. Run the generator multiple times to build a shortlist, then check which names are free on your platform. The Genderbend name generator does not reserve or validate names; it only suggests combinations.
-        </p>
-        <p>
-          Content creators often need a consistent handle across Steam, streaming, and social media. Generating a batch of character name ideas lets you test different options before you commit. Copy the names you like into a single list, then check availability on each service. If one name is taken on Genderbend but free elsewhere, you can still use it on the platforms where it is available, or use the generator again to find alternatives that work everywhere.
-        </p>
-
-        <h2>Tips for Choosing a Genderbend Username</h2>
-        <p>
-          Pick a name that is easy to remember and type. Short character names are easier to say in voice chat and less likely to be mistyped. Run the Genderbend name generator multiple times to get a shortlist, then check your game or story for availability. Have a few backups in case your first choice is taken. Avoid names that might be mistaken for someone else or that break platform rules. The generator gives you ideas only; the final choice is yours.
-        </p>
-        <p>
-          Consider how the name will look in different contexts: in-game, on a stream overlay, or in a friend list. Some combinations look great in one font but odd in another. If you plan to use the same handle across multiple games and platforms, check availability everywhere before you invest in branding. The Genderbend name generator is a free way to explore options without committing until you have confirmed that your chosen Genderbend name or character name is available.
-        </p>
-
-        <h2>Running the Genderbend Name Generator in Batches</h2>
-        <p>
-          When you need many username ideas, run the Genderbend name generator multiple times. Each run gives up to 24 names. Paste each run into the same document and remove duplicates if any appear. Check availability on your platform for each name you like. There is no daily or total limit; you can run the generator as often as you want. Batching is useful when you are setting up several accounts, testing ideas for a team, or simply want a large pool of character name options before making a decision.
-        </p>
-        <p>
-          Keeping a single document with all your generated Genderbend name ideas makes it easy to track which names you have already checked. Mark names as &quot;taken&quot; or &quot;available&quot; as you go. That way you avoid re-checking the same name on Genderbend or another platform. The Genderbend name generator does not remember previous runs, so your document is your only record of the ideas you have collected.
-        </p>
-
-        <h2>Privacy and Local Processing</h2>
-        <p>
-          This Genderbend name generator runs entirely in your browser. When you set the number of names and click generate, the names are created locally on your device. Your choices and the generated names are not sent to our servers. We do not store your inputs or the generated list. No account or login is required. That means your shortlist of character name ideas stays on your machine unless you choose to copy it somewhere else.
-        </p>
-        <p>
-          Because generation is local, the tool is suitable for use in private or incognito windows. If you close the tab, the generated list is gone unless you have copied it. There is no server-side log of what names you generated or how many times you ran the Genderbend name generator. This privacy model is intentional: username brainstorming is personal, and the tool is designed so that you control where your ideas go.
-        </p>
-
-        <h2>Copying and Exporting Names</h2>
-        <p>
-          Use the Copy button to copy all generated Genderbend name ideas to your clipboard (one per line). Paste into a notes app or document. Check your game or story for availability before committing to a name. The names are plain text, so they work in any editor or form. If you paste into a spreadsheet, each line can go in its own cell for easy tracking. The Genderbend name generator does not export to a file; copying and pasting is the intended way to save your shortlist.
-        </p>
-
-        <h2>Limits and Batch Size</h2>
-        <p>
-          You can request 1–24 names per run with this Genderbend name generator. There is no daily or total limit. Run the generator again for more options. No download or account is required. If you need more than 24 names in one go, run the tool multiple times and paste the results into one document. Removing duplicates is up to you; the generator does not track previous output.
-        </p>
-
-        <h2>No Download or Account Required</h2>
-        <p>
-          This Genderbend name generator runs entirely in your browser. You do not need to download software or create an account. Open the page, set how many names you want, and click generate. The tool is free and works on desktop, tablet, and phone. That makes it easy to use when you are away from your main device or when you want to quickly generate character name ideas without installing anything.
-        </p>
-
-        <h2>Who Uses a Genderbend Name Generator?</h2>
-        <p>
-          Players use the Genderbend name generator when creating or updating a Genderbend profile, or when they want a new character name for other platforms. Esports and streamers use it for in-game names or stream handles. The same tool works for Discord, Xbox, PlayStation, or social profiles—always check availability on each platform. Educators and workshop leaders sometimes use it to demonstrate username creation or digital identity in a classroom setting. No account or download is required on our site.
-        </p>
-        <p>
-          Anyone who needs a steady supply of username ideas can benefit. Whether you are a casual gamer, a competitive player, or a content creator, the Genderbend name generator provides a fast way to explore options. The key is to treat the output as inspiration and always verify availability on Genderbend and any other platform where you plan to use the name.
-        </p>
-
-        <h2>Getting the Most Out of the Genderbend Name Generator</h2>
-        <p>
-          Run the generator several times and paste all results into one document. Skim for names that fit your style and check your platform for availability. Shortlist five to ten options so you have backups if your first choice is taken. The Genderbend name generator does not check Genderbend or any platform; you must do that yourself. When you have a shortlist, check availability one by one. Usernames are often taken on popular services, so having several options saves time.
-        </p>
-        <p>
-          Another tip is to try different batch sizes. Sometimes generating 24 names at once gives you a good mix; other times you may prefer smaller runs so you can review each set before generating more. The tool is flexible. Use it whenever you need new Genderbend name ideas or character name inspiration. Bookmarking the page makes it easy to return when you are ready to refresh your profile or create a new account.
-        </p>
-
-        <h2>Typical Workflow for the Genderbend Name Generator</h2>
-        <p>
-          A typical workflow is: open the page, set the number of names (e.g. 12 or 24), click generate, then copy the list. Paste into a notes app. Check your game or story for availability for each name you like. If your first choice is taken, try the next. Run the Genderbend name generator again for more options. The whole process takes a few minutes. No account or download is required. Bookmark the page for quick access when you need new username ideas. The tool is free and runs in your browser with no sign-up.
-        </p>
-
-        <h2>What This Tool Does NOT Do</h2>
-        <ul>
-          <li>It does not check Genderbend or any platform for username availability.</li>
-          <li>It does not reserve or hold names for you.</li>
-          <li>It does not store your generated list or your settings.</li>
-          <li>It does not connect to Steam, Discord, or any external gaming service.</li>
-        </ul>
-        <p>
-          This Genderbend name generator produces name ideas only. It does not validate availability, create accounts, or manage your profile. You must check Genderbend or your chosen platform yourself and follow that platform&apos;s rules when creating or changing your username. The tool is a brainstorming aid, not a replacement for checking availability.
-        </p>
-
-        <h2>Privacy and Security Notes</h2>
-        <p>
-          The Genderbend name generator runs entirely in your browser. It does not send data to a server and does not store generated values. This is helpful for quick brainstorming and offline use. If you refresh the page, the last generated list is cleared. Copy any names you want to keep before closing or refreshing.
-        </p>
-        <p>
-          For account security, never share your Genderbend password or other credentials. The generator only suggests usernames; it does not handle login or account creation. When you check availability on Genderbend or another platform, use the official site or app and ensure you are on a secure connection. The Genderbend name generator is a standalone tool and does not integrate with any login system.
-        </p>
-
-        <h2>Final Summary and When to Use This Tool</h2>
-        <p>
-          The Genderbend name generator provides a fast way to create username and character name ideas for Genderbend and other fiction and creative projects. Set the number of names (1–24) and run as often as you like. Copy results and check your platform for availability. The tool runs locally in your browser with no sign-up. Keep a shortlist of options in case your first choice is taken. No download or account is required. The generator is free and works on any device.
-        </p>
-        <p>
-          Use this Genderbend name generator when you need Genderbend name ideas, character name inspiration, or a quick way to explore options before checking availability. It is best for brainstorming, rebranding, and building a shortlist. Always verify availability on Genderbend or your chosen platform before committing to a name. The tool is a practical free resource for gaming alternate name ideas.
+          This genderbend name generator runs entirely in your browser. When you set a count and generate, the names are created locally on your device — nothing is uploaded, logged, or stored on our servers. Close the tab and the list is gone unless you copied it, so your character ideas stay yours while you build them.
         </p>
       </div>
     </section>

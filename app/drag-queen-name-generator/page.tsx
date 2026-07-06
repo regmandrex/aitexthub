@@ -29,169 +29,68 @@ function createWriteUp() {
     <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
         <h2>Drag Queen Name Generator – Stage Name Ideas</h2>
-        <h2>Introduction</h2>
         <p>
-          This guide explains how to use a Drag Queen name generator to create stage names for Drag Queen and other performers. The tool runs in your browser and produces unique, memorable name ideas at the click of a button. It is designed for players who want Drag Queen name ideas quickly without sign-up or download. The generator does not store data and runs entirely in your browser. You get 1–24 names per run and can run it as often as you like. Always check your game or story for availability before committing to a name.
+          A drag queen name is a performance in a single line. Before a queen strikes a pose or lip-syncs a note, the name on the flyer has already told the room whether to expect glamour, comedy, camp, or something spooky. This drag queen name generator builds stage names in that tradition — pop-culture puns, alliterative showgirl names, glamorous fantasy handles, and cheeky double entendres — right in your browser. There is no sign-up, nothing is stored, and you get 1–24 names per run so you can brainstorm a big pool and narrow down to the persona you want to perform.
         </p>
         <p>
-          People search for Drag Queen name ideas and character name generators when setting up a new profile, an esports handle, or a stream name. This Drag Queen name generator serves that intent with one free, browser-based tool. Whether you need a single standout character name or a shortlist of options, the generator gives you a pool of ideas. Names must be unique on each service, so verifying availability on Drag Queen or your chosen platform is an essential step after generating ideas.
-        </p>
-
-        <h2>What Is a Drag Queen Name Generator?</h2>
-        <p>
-          A Drag Queen name generator is an online tool that creates stage names suitable for Drag Queen and other performers. You get unique name ideas at the click of a button. The generator combines curated glamorous words and elements at random so each run produces new combinations. The output is for inspiration only; you must check your platform for availability. This free Drag Queen name generator runs in your browser with no sign-up and does not send generated names to any server.
-        </p>
-        <p>
-          The output is plain text, one name per line. You can copy the full list and paste it into a notes app, then check your game or story for availability and pick one. Many users run the Drag Queen name generator multiple times to build a shortlist before deciding. Because names are created locally, your choices stay private and nothing is stored on our servers.
-        </p>
-        <p>
-          Drag Queen name generators are useful when you are tired of reusing the same username or when you want a fresh character name that fits your style. The tool does not guarantee that a name is available; it only suggests combinations. Always confirm availability on your game or story before you commit to a new username.
+          Drag queen naming is one of the most creative traditions in performance, and it follows real patterns. Some names are pure glamour, some are jokes you groan-laugh at, some are family names passed down within a drag house, and some are deliberately grotesque for a spooky or horror act. The guide below walks through those conventions so the name you pick reads like a real queen&apos;s — one that could headline a show — rather than a random pair of pretty words.
         </p>
 
-        <h2>Why This Drag Queen Name Generator Matters</h2>
+        <h2>What Makes a Great Drag Queen Name</h2>
         <p>
-          Choosing a memorable Drag Queen name or character name can be time-consuming. A Drag Queen name generator speeds up brainstorming. Instead of staring at a blank field, you get options in seconds. You can run it on a phone or desktop, copy the names you like, and then check availability on your game or story. The tool is free and does not require an account, so there is no friction to trying many ideas.
+          The strongest drag queen names do several jobs at once. Learning what separates a memorable name from a forgettable one helps you turn a generated idea into a headliner:
         </p>
+        <ul>
+          <li><strong>Instant persona.</strong> The name should tell the audience who this queen is — a glamorous diva, a comedy queen, a spooky ghoul, a filthy provocateur — in the two seconds it takes to read it.</li>
+          <li><strong>A sonic hook.</strong> Alliteration (&quot;Bianca, Bianca&quot;), rhyme, or a satisfying rhythm makes a name stick and makes it fun for a host to announce.</li>
+          <li><strong>A layer of wit.</strong> The best names reward a second look — a pun, a double meaning, or a clever twist on something familiar that earns a laugh once it clicks.</li>
+        </ul>
+
+        <h2>The Pop-Culture Pun</h2>
         <p>
-          The generator also keeps your ideas private. Names are created in your browser and are not sent to our servers. You can use it in a private or incognito window if you prefer. Because generation is local, there is no risk of your shortlist being stored or logged. That matters when you are testing ideas before you settle on a final Drag Queen name or character name.
-        </p>
-        <p>
-          A good Drag Queen name generator also standardizes the workflow: set how many names you want, click generate, copy the list, and check availability. You get a consistent way to explore username ideas without writing scripts or visiting multiple sites. The output is easy to paste into notes or a document so you can track which names you have already checked on Drag Queen or other platforms.
+          The single most iconic drag queen naming device is the pun on a celebrity or a well-known phrase. A queen takes a famous name and warps it into something funny, fabulous, or filthy — the humor comes from the collision between the glamorous reference and the twist. This is the tradition behind countless legendary drag names, and it works because the audience gets the reference instantly and then does a double take at the spin. If a generated option lands near a recognizable name or phrase, lean into it: bend the spelling, swap a word, or push the innuendo until the joke snaps into place. The pun is often the whole personality of the act.
         </p>
 
-        <h2>How the Drag Queen Name Generator Works (Step by Step)</h2>
+        <h2>Glamour Names Versus Comedy Names</h2>
         <p>
-          When you open the page, you choose how many names you want per run (1–24). Clicking &quot;Generate names&quot; triggers the tool to randomly combine curated glamorous elements in your browser. Each run is independent; no names or settings are sent to a server. The result is a list of Drag Queen name ideas, one per line. You can copy the full list with one click and paste it into a notes app. To get more ideas, run the generator again. The tool does not check Drag Queen or any platform for availability—you must do that yourself.
+          There is a real split in drag naming between glamour and comedy, and it maps onto the kind of queen you want to be. A glamour or &quot;fishy&quot; queen — polished, high-fashion, pageant-ready — wants a name that sounds like a supermodel or an old-Hollywood star: elegant, feminine, and aspirational, heavy on beautiful first names and luxurious surnames. A comedy queen wants a name that gets a laugh before she opens her mouth: a groan-worthy pun, an absurd combination, or a deliberately unglamorous word smashed against a fancy one. Decide which lane your act lives in, then keep the generated names that serve it — a pageant name and a comedy name should not look alike, even though both are &quot;drag queen names.&quot;
         </p>
+
+        <h2>Spooky, Gothic, and Horror Personas</h2>
         <p>
-          The underlying word lists are designed to sound like gaming stage names: bold, memorable, and easy to type. The generator shuffles and combines these elements so that each run produces different combinations. That randomness helps you discover names you might not have thought of on your own. Because everything runs in the browser, the Drag Queen name generator works offline once the page is loaded and does not depend on a backend service.
+          A whole corner of drag builds names around the macabre — the horror queen, the gothic vampire, the monster, the witch. Names here reach for the dark and theatrical: references to death, decay, and the supernatural, often twisted into a pun the same way glamour queens twist celebrity names. This style suits performers whose numbers are theatrical, unsettling, or Halloween-flavored year round, and it thrives on the contrast between something ghoulish and something feminine or glamorous. If your persona is a creature of the night, favor the darker, more gothic options in your batch and let the name promise a scare.
         </p>
+
+        <h2>Alliteration, Rhythm, and Sound</h2>
         <p>
-          There are no hidden steps. You set the count, click generate, and receive a list. Copying is one click; pasting into your own document keeps your shortlist in one place. Running the Drag Queen name generator multiple times is the intended workflow when you want a large pool of character name ideas before checking availability.
+          Beyond meaning, drag names live on sound. Alliteration is everywhere in drag because a matching first-name and surname initial is catchy, easy to chant, and fun to say with a flourish. Rhyme, repetition, and a strong rhythm do the same work. When you review a generated batch, say each name out loud in an announcer&apos;s voice and notice which ones have a musical bounce — those are the names a host will love to introduce and a crowd will remember. You can also mix a first name from one result with a surname from another to build alliteration or rhythm the generator did not produce on its own.
+        </p>
+
+        <h2>Drag Family and House Names</h2>
+        <p>
+          In many scenes, a queen&apos;s surname signals belonging. Drag houses and drag families — mentored groups descended from a &quot;drag mother&quot; — often share a surname that a new queen adopts when she joins, the way a family name is passed down. If you are part of, or building, a drag family, a shared surname ties your members together and reads instantly as a lineage to anyone who knows the scene. When you generate names, you can hold a chosen family surname constant and use the generator only for first-name ideas that pair well with it.
         </p>
 
         <h2>How to Use This Drag Queen Name Generator</h2>
-        <p>Follow these steps to get Drag Queen name ideas:</p>
         <ol className="list-decimal pl-6 space-y-2">
-          <li>Set how many names you want per run (1–24).</li>
-          <li>Click &quot;Generate names&quot; to get a new list of character name ideas.</li>
-          <li>Use the Copy button to copy all names to your clipboard.</li>
-          <li>Paste into a notes app or document, then check your game or story for availability and pick one.</li>
-          <li>Run again for more options; no account or download is required.</li>
+          <li>Set how many queen names you want per run (1–24).</li>
+          <li>Click <strong>Generate names</strong> to get a fresh batch of drag queen stage names.</li>
+          <li>Sort the list by style — which read as glamour, which as comedy puns, which as spooky — and keep the ones that match your persona.</li>
+          <li>Use the Copy button to save your shortlist, then read each favorite aloud as a host would announce it.</li>
+          <li>Run again for more options — there is no limit, no account, and no download.</li>
         </ol>
         <p>
-          The Drag Queen name generator runs in your browser; your settings and generated names are not sent to any server. You can run it as often as you like. Building a shortlist of five to ten options before checking availability on Drag Queen is a good habit, since popular usernames are often taken. Have backups ready so that if your first choice is unavailable, you can try the next name on your list.
+          Generation happens entirely in your browser. Your settings and the names you create are never sent to a server, which matters when you are workshopping a drag identity you are not ready to reveal — your ideas stay private until you choose to share them.
         </p>
 
-        <h2>Drag Queen and Gamer Naming Style</h2>
+        <h2>Tips and Common Mistakes</h2>
         <p>
-          Drag Queen names and character names often use bold, memorable word combinations: action words, nicknames, or creative spellings. This Drag Queen name generator uses curated glamorous elements and combines them at random so you get new combinations that fit that style. The output is for inspiration only; the tool does not check Drag Queen or any platform for availability. You can use the names as-is or tweak spelling and punctuation to make them your own.
-        </p>
-        <p>
-          Different games and communities favor different styles. Some players prefer short, punchy character names; others like longer usernames. Running the generator multiple times gives you a mix of lengths and styles. Skim the list, mark the ones you like, and then verify each one on your game or story. The Drag Queen name generator is a starting point—your final choice should fit your personality and the rules of your platform.
+          The most common mistake is a name that fights the act — a filthy pun on a serious pageant queen, or a bland, pretty name on a big comedy character. The name and the performance should agree. Another is a name too long or hard to say, since a host has to announce it cleanly and a crowd has to chant it, so favor names that are punchy and rhythmic. A third is accidentally taking a name an established queen already performs under — drag is a tight community and a duplicate causes confusion and can read as disrespectful, so search your local scene and social platforms before you debut. Keep a shortlist so you have backups if your first choice is claimed.
         </p>
 
-        <h2>When to Use a Drag Queen Name Generator</h2>
+        <h2>Privacy</h2>
         <p>
-          Use this Drag Queen name generator when you need Drag Queen or glamorous username ideas quickly. Common use cases include creating a new Drag Queen account or updating your profile name, choosing an in-game name for esports or casual play, and picking a stream or social handle. The same tool works for other platforms—Discord, Xbox, PlayStation, or social profiles—as inspiration. Names must be unique on each platform, so always check availability before committing.
-        </p>
-        <p>
-          Another good time to use a Drag Queen name generator is when you are rebranding. If you have used the same character name for years and want a fresh identity, generating a batch of ideas helps you explore options without pressure. Run the tool several times, paste results into one document, and remove duplicates. Then check Drag Queen and any other platforms you use to see which names are still available. Having a shortlist saves time compared to checking one idea at a time.
-        </p>
-
-        <h2>Use Cases in Detail: Profiles, Esports, and Streams</h2>
-        <p>
-          Players use the Drag Queen name generator when creating a new Drag Queen account or refreshing their profile name. Esports and streamers use it for in-game names or stream handles. The same tool works for other platforms—Discord, Xbox, PlayStation, or social—as inspiration; you must check each platform for availability. Run the generator multiple times to build a shortlist, then check which names are free on your platform. The Drag Queen name generator does not reserve or validate names; it only suggests combinations.
-        </p>
-        <p>
-          Content creators often need a consistent handle across Steam, streaming, and social media. Generating a batch of character name ideas lets you test different options before you commit. Copy the names you like into a single list, then check availability on each service. If one name is taken on Drag Queen but free elsewhere, you can still use it on the platforms where it is available, or use the generator again to find alternatives that work everywhere.
-        </p>
-
-        <h2>Tips for Choosing a Drag Queen Username</h2>
-        <p>
-          Pick a name that is easy to remember and type. Short character names are easier to say in voice chat and less likely to be mistyped. Run the Drag Queen name generator multiple times to get a shortlist, then check your game or story for availability. Have a few backups in case your first choice is taken. Avoid names that might be mistaken for someone else or that break platform rules. The generator gives you ideas only; the final choice is yours.
-        </p>
-        <p>
-          Consider how the name will look in different contexts: in-game, on a stream overlay, or in a friend list. Some combinations look great in one font but odd in another. If you plan to use the same handle across multiple games and platforms, check availability everywhere before you invest in branding. The Drag Queen name generator is a free way to explore options without committing until you have confirmed that your chosen Drag Queen name or character name is available.
-        </p>
-
-        <h2>Running the Drag Queen Name Generator in Batches</h2>
-        <p>
-          When you need many username ideas, run the Drag Queen name generator multiple times. Each run gives up to 24 names. Paste each run into the same document and remove duplicates if any appear. Check availability on your platform for each name you like. There is no daily or total limit; you can run the generator as often as you want. Batching is useful when you are setting up several accounts, testing ideas for a team, or simply want a large pool of character name options before making a decision.
-        </p>
-        <p>
-          Keeping a single document with all your generated Drag Queen name ideas makes it easy to track which names you have already checked. Mark names as &quot;taken&quot; or &quot;available&quot; as you go. That way you avoid re-checking the same name on Drag Queen or another platform. The Drag Queen name generator does not remember previous runs, so your document is your only record of the ideas you have collected.
-        </p>
-
-        <h2>Privacy and Local Processing</h2>
-        <p>
-          This Drag Queen name generator runs entirely in your browser. When you set the number of names and click generate, the names are created locally on your device. Your choices and the generated names are not sent to our servers. We do not store your inputs or the generated list. No account or login is required. That means your shortlist of character name ideas stays on your machine unless you choose to copy it somewhere else.
-        </p>
-        <p>
-          Because generation is local, the tool is suitable for use in private or incognito windows. If you close the tab, the generated list is gone unless you have copied it. There is no server-side log of what names you generated or how many times you ran the Drag Queen name generator. This privacy model is intentional: username brainstorming is personal, and the tool is designed so that you control where your ideas go.
-        </p>
-
-        <h2>Copying and Exporting Names</h2>
-        <p>
-          Use the Copy button to copy all generated Drag Queen name ideas to your clipboard (one per line). Paste into a notes app or document. Check your game or story for availability before committing to a name. The names are plain text, so they work in any editor or form. If you paste into a spreadsheet, each line can go in its own cell for easy tracking. The Drag Queen name generator does not export to a file; copying and pasting is the intended way to save your shortlist.
-        </p>
-
-        <h2>Limits and Batch Size</h2>
-        <p>
-          You can request 1–24 names per run with this Drag Queen name generator. There is no daily or total limit. Run the generator again for more options. No download or account is required. If you need more than 24 names in one go, run the tool multiple times and paste the results into one document. Removing duplicates is up to you; the generator does not track previous output.
-        </p>
-
-        <h2>No Download or Account Required</h2>
-        <p>
-          This Drag Queen name generator runs entirely in your browser. You do not need to download software or create an account. Open the page, set how many names you want, and click generate. The tool is free and works on desktop, tablet, and phone. That makes it easy to use when you are away from your main device or when you want to quickly generate character name ideas without installing anything.
-        </p>
-
-        <h2>Who Uses a Drag Queen Name Generator?</h2>
-        <p>
-          Players use the Drag Queen name generator when creating or updating a Drag Queen profile, or when they want a new character name for other platforms. Esports and streamers use it for in-game names or stream handles. The same tool works for Discord, Xbox, PlayStation, or social profiles—always check availability on each platform. Educators and workshop leaders sometimes use it to demonstrate username creation or digital identity in a classroom setting. No account or download is required on our site.
-        </p>
-        <p>
-          Anyone who needs a steady supply of username ideas can benefit. Whether you are a casual gamer, a competitive player, or a content creator, the Drag Queen name generator provides a fast way to explore options. The key is to treat the output as inspiration and always verify availability on Drag Queen and any other platform where you plan to use the name.
-        </p>
-
-        <h2>Getting the Most Out of the Drag Queen Name Generator</h2>
-        <p>
-          Run the generator several times and paste all results into one document. Skim for names that fit your style and check your platform for availability. Shortlist five to ten options so you have backups if your first choice is taken. The Drag Queen name generator does not check Drag Queen or any platform; you must do that yourself. When you have a shortlist, check availability one by one. Usernames are often taken on popular services, so having several options saves time.
-        </p>
-        <p>
-          Another tip is to try different batch sizes. Sometimes generating 24 names at once gives you a good mix; other times you may prefer smaller runs so you can review each set before generating more. The tool is flexible. Use it whenever you need new Drag Queen name ideas or character name inspiration. Bookmarking the page makes it easy to return when you are ready to refresh your profile or create a new account.
-        </p>
-
-        <h2>Typical Workflow for the Drag Queen Name Generator</h2>
-        <p>
-          A typical workflow is: open the page, set the number of names (e.g. 12 or 24), click generate, then copy the list. Paste into a notes app. Check your game or story for availability for each name you like. If your first choice is taken, try the next. Run the Drag Queen name generator again for more options. The whole process takes a few minutes. No account or download is required. Bookmark the page for quick access when you need new username ideas. The tool is free and runs in your browser with no sign-up.
-        </p>
-
-        <h2>What This Tool Does NOT Do</h2>
-        <ul>
-          <li>It does not check Drag Queen or any platform for username availability.</li>
-          <li>It does not reserve or hold names for you.</li>
-          <li>It does not store your generated list or your settings.</li>
-          <li>It does not connect to Steam, Discord, or any external gaming service.</li>
-        </ul>
-        <p>
-          This Drag Queen name generator produces name ideas only. It does not validate availability, create accounts, or manage your profile. You must check Drag Queen or your chosen platform yourself and follow that platform&apos;s rules when creating or changing your username. The tool is a brainstorming aid, not a replacement for checking availability.
-        </p>
-
-        <h2>Privacy and Security Notes</h2>
-        <p>
-          The Drag Queen name generator runs entirely in your browser. It does not send data to a server and does not store generated values. This is helpful for quick brainstorming and offline use. If you refresh the page, the last generated list is cleared. Copy any names you want to keep before closing or refreshing.
-        </p>
-        <p>
-          For account security, never share your Drag Queen password or other credentials. The generator only suggests usernames; it does not handle login or account creation. When you check availability on Drag Queen or another platform, use the official site or app and ensure you are on a secure connection. The Drag Queen name generator is a standalone tool and does not integrate with any login system.
-        </p>
-
-        <h2>Final Summary and When to Use This Tool</h2>
-        <p>
-          The Drag Queen name generator provides a fast way to create username and character name ideas for Drag Queen and other performers. Set the number of names (1–24) and run as often as you like. Copy results and check your platform for availability. The tool runs locally in your browser with no sign-up. Keep a shortlist of options in case your first choice is taken. No download or account is required. The generator is free and works on any device.
-        </p>
-        <p>
-          Use this Drag Queen name generator when you need Drag Queen name ideas, character name inspiration, or a quick way to explore options before checking availability. It is best for brainstorming, rebranding, and building a shortlist. Always verify availability on Drag Queen or your chosen platform before committing to a name. The tool is a practical free resource for gaming stage names.
+          This drag queen name generator runs entirely in your browser. When you set a count and generate, the names are created locally on your device — nothing is uploaded, logged, or stored on our servers. Close the tab and the list is gone unless you copied it, so your persona ideas stay yours while you decide.
         </p>
       </div>
     </section>
