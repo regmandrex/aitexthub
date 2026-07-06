@@ -28,170 +28,79 @@ function createWriteUp() {
   return (
     <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
-        <h2>Ancient Greek Name Generator – Greek Names for Characters & Mythology</h2>
-        <h2>Introduction</h2>
+        <h2>Ancient Greek Name Generator – Greek Names for Characters &amp; Mythology</h2>
         <p>
-          This guide explains how to use a Ancient Greek name generator to create character names for Ancient Greek and other fiction and mythology. The tool runs in your browser and produces unique, memorable name ideas at the click of a button. It is designed for players who want Ancient Greek name ideas quickly without sign-up or download. The generator does not store data and runs entirely in your browser. You get 1–24 names per run and can run it as often as you like. Always check your game or story for availability before committing to a name.
+          Ancient Greek names were not decorative labels — they were tiny sentences. Nearly every classical Greek name is built from real word-roots that mean something: Nikolaos joins <em>nike</em> (victory) and <em>laos</em> (people) to mean &quot;victory of the people&quot;; Sophia means &quot;wisdom&quot;; Alexandros means &quot;defender of men.&quot; This generator builds names in that authentic style, using genuine Greek roots, the correct gendered endings, and the naming conventions of the classical world, so your names read like they belong in Athens or Sparta rather than a generic fantasy setting. It is built for historical fiction, mythology retellings, D&amp;D campaigns set in Greek-flavored worlds, and anyone who wants a name with real meaning behind it.
         </p>
         <p>
-          People search for Ancient Greek name ideas and character name generators when setting up a new profile, an esports handle, or a stream name. This Ancient Greek name generator serves that intent with one free, browser-based tool. Whether you need a single standout character name or a shortlist of options, the generator gives you a pool of ideas. Names must be unique on each service, so verifying availability on Ancient Greek or your chosen platform is an essential step after generating ideas.
-        </p>
-
-        <h2>What Is a Ancient Greek Name Generator?</h2>
-        <p>
-          A Ancient Greek name generator is an online tool that creates character names suitable for Ancient Greek and other fiction and mythology. You get unique name ideas at the click of a button. The generator combines curated Greek-style words and elements at random so each run produces new combinations. The output is for inspiration only; you must check your platform for availability. This free Ancient Greek name generator runs in your browser with no sign-up and does not send generated names to any server.
-        </p>
-        <p>
-          The output is plain text, one name per line. You can copy the full list and paste it into a notes app, then check your game or story for availability and pick one. Many users run the Ancient Greek name generator multiple times to build a shortlist before deciding. Because names are created locally, your choices stay private and nothing is stored on our servers.
-        </p>
-        <p>
-          Ancient Greek name generators are useful when you are tired of reusing the same username or when you want a fresh character name that fits your style. The tool does not guarantee that a name is available; it only suggests combinations. Always confirm availability on your game or story before you commit to a new username.
+          Because the names follow the actual patterns of Ancient Greek — gendered suffixes, theophoric elements honoring the gods, meaningful compound roots — you can pick one knowing it would have sounded natural on a citizen of a Greek polis. This page explains how those conventions work so you can choose a name that fits your character&apos;s gender, era, and role, and understand the meaning you are giving them.
         </p>
 
-        <h2>Why This Ancient Greek Name Generator Matters</h2>
+        <h2>How Ancient Greek Names Are Built</h2>
         <p>
-          Choosing a memorable Ancient Greek name or character name can be time-consuming. A Ancient Greek name generator speeds up brainstorming. Instead of staring at a blank field, you get options in seconds. You can run it on a phone or desktop, copy the names you like, and then check availability on your game or story. The tool is free and does not require an account, so there is no friction to trying many ideas.
+          The classical Greek naming system is remarkably consistent, and knowing its logic lets you pick names that feel authentic rather than invented:
         </p>
+        <ul>
+          <li><strong>Meaningful compound roots.</strong> Most names combine two elements with a clear sense — <em>nike</em> (victory), <em>laos</em> (people), <em>kleos</em> (glory), <em>kratos</em> (power), <em>philos</em> (loving), <em>hippos</em> (horse). Nikolaos, Kleisthenes, and Philippos (&quot;lover of horses&quot;) all follow this pattern.</li>
+          <li><strong>Gendered endings.</strong> Male names typically end in <strong>-os</strong>, <strong>-es</strong>, or <strong>-on</strong> (Nikolaos, Sokrates, Jason). Female names usually end in <strong>-a</strong> or <strong>-e</strong> (Sophia, Helena, Penelope, Aphrodite).</li>
+          <li><strong>Single given names, not surnames.</strong> Classical Greeks generally had one personal name, distinguished by a patronymic and their deme or city rather than a family surname.</li>
+          <li><strong>A recognizable sound.</strong> Clusters like <em>th</em>, <em>ph</em>, <em>kl</em>, and <em>chr</em>, and vowel-rich endings, give Greek names their characteristic music.</li>
+        </ul>
+
+        <h2>Male, Female, and the Gendered Endings</h2>
         <p>
-          The generator also keeps your ideas private. Names are created in your browser and are not sent to our servers. You can use it in a private or incognito window if you prefer. Because generation is local, there is no risk of your shortlist being stored or logged. That matters when you are testing ideas before you settle on a final Ancient Greek name or character name.
-        </p>
-        <p>
-          A good Ancient Greek name generator also standardizes the workflow: set how many names you want, click generate, copy the list, and check availability. You get a consistent way to explore username ideas without writing scripts or visiting multiple sites. The output is easy to paste into notes or a document so you can track which names you have already checked on Ancient Greek or other platforms.
+          The single fastest way to make a Greek name read correctly is to match the ending to the gender. Male names lean on <strong>-os</strong> (Nikolaos, Demetrios), <strong>-es</strong> (Sokrates, Aristoteles, Herakles), and <strong>-on</strong> (Jason, Solon, Platon). Female names lean on <strong>-a</strong> (Sophia, Chloe becomes Chloa in older forms, Kassandra) and <strong>-e</strong> (Penelope, Aphrodite, Persephone, Arete). The same root can often be genderized by swapping the ending — Nikolaos and Nikolaia both carry &quot;victory,&quot; one masculine, one feminine. When you generate a batch, sort the results by their endings to slot each name to the right character.
         </p>
 
-        <h2>How the Ancient Greek Name Generator Works (Step by Step)</h2>
+        <h2>Theophoric Names: Honoring the Gods</h2>
         <p>
-          When you open the page, you choose how many names you want per run (1–24). Clicking &quot;Generate names&quot; triggers the tool to randomly combine curated Greek-style elements in your browser. Each run is independent; no names or settings are sent to a server. The result is a list of Ancient Greek name ideas, one per line. You can copy the full list with one click and paste it into a notes app. To get more ideas, run the generator again. The tool does not check Ancient Greek or any platform for availability—you must do that yourself.
+          A huge share of Greek names are <em>theophoric</em> — built to honor a deity by embedding the god&apos;s name or an attribute. This was a genuine act of devotion, and it makes a name feel deeply rooted in the ancient world:
         </p>
+        <ul>
+          <li><strong>Apollo:</strong> Apollodoros (&quot;gift of Apollo&quot;), Apollonios.</li>
+          <li><strong>Dionysos:</strong> Dionysios, Dionysia.</li>
+          <li><strong>Demeter:</strong> Demetrios, Demetria (&quot;devoted to Demeter&quot;).</li>
+          <li><strong>Athena / Zeus / Hera:</strong> Athenodoros, Diodoros (&quot;gift of Zeus,&quot; from <em>Dios</em>), Herodotos.</li>
+        </ul>
         <p>
-          The underlying word lists are designed to sound like gaming character names: bold, memorable, and easy to type. The generator shuffles and combines these elements so that each run produces different combinations. That randomness helps you discover names you might not have thought of on your own. Because everything runs in the browser, the Ancient Greek name generator works offline once the page is loaded and does not depend on a backend service.
+          If your character is a priest, an oracle&apos;s servant, or simply born to a pious family, a theophoric name signals that instantly. Pick the god who suits their story and choose a name that carries that deity&apos;s root.
         </p>
+
+        <h2>Patronymics and Identifying a Citizen</h2>
         <p>
-          There are no hidden steps. You set the count, click generate, and receive a list. Copying is one click; pasting into your own document keeps your shortlist in one place. Running the Ancient Greek name generator multiple times is the intended workflow when you want a large pool of character name ideas before checking availability.
+          Because Greeks used a single given name, they distinguished people by a <strong>patronymic</strong> — &quot;son of&quot; or &quot;daughter of&quot; the father. In Greek this is formed with the genitive, but in English historical fiction it usually reads as &quot;Perikles, son of Xanthippos&quot; or &quot;Perikles Xanthippou.&quot; A citizen was often further identified by their <em>deme</em> (local district) or city — &quot;Demosthenes of Paiania.&quot; If you want a full, formal identity for a character, pair a generated given name with a father&apos;s name and a place: given name, patronymic, origin. That three-part identity is how a real Athenian would be named in an official record.
+        </p>
+
+        <h2>Famous Names as a Register Guide</h2>
+        <p>
+          Historical and mythological names are the best gauge of whether a name sounds right. Philosophers (Sokrates, Platon, Aristoteles), statesmen (Perikles, Themistokles, Solon), and generals (Leonidas, Alexandros) show the male register; mythic and historical women (Penelope, Kassandra, Aspasia, Hypatia, Sappho) show the female one. You should not reuse a famous full name for an original character — a hero literally called Leonidas or Helen invites unwanted comparison — but echoing the structure and roots is exactly how you stay authentic. Generate a batch and test each name by asking whether it could sit in a list beside these without standing out as modern or invented.
+        </p>
+
+        <h2>How to Name a Character for Fiction or D&amp;D</h2>
+        <p>
+          Start from the character&apos;s gender and role, then let the meaning do the work. A warrior might carry a name rooted in <em>nike</em>, <em>kratos</em>, or <em>machos</em> (battle); a scholar in <em>sophia</em> (wisdom) or <em>logos</em>; a devout character in a theophoric name. Generate a batch, filter by the correct gendered ending, and read the meanings — pick a name whose sense reinforces who the character is. For a Greek-flavored D&amp;D setting, this gives NPCs and player characters names that feel cohesive and lived-in, as if they share one culture rather than being drawn from a grab bag.
         </p>
 
         <h2>How to Use This Ancient Greek Name Generator</h2>
-        <p>Follow these steps to get Ancient Greek name ideas:</p>
         <ol className="list-decimal pl-6 space-y-2">
           <li>Set how many names you want per run (1–24).</li>
-          <li>Click &quot;Generate names&quot; to get a new list of character name ideas.</li>
-          <li>Use the Copy button to copy all names to your clipboard.</li>
-          <li>Paste into a notes app or document, then check your game or story for availability and pick one.</li>
-          <li>Run again for more options; no account or download is required.</li>
+          <li>Click <strong>Generate names</strong> to get a fresh batch of authentic-style Greek names.</li>
+          <li>Sort the results by their endings to match male (-os, -es, -on) or female (-a, -e) characters.</li>
+          <li>Use the Copy button to save your shortlist, then pair a favorite with a patronymic and city if you want a full formal name.</li>
+          <li>Run again as often as you like — there is no account, no download, and no limit on runs.</li>
         </ol>
         <p>
-          The Ancient Greek name generator runs in your browser; your settings and generated names are not sent to any server. You can run it as often as you like. Building a shortlist of five to ten options before checking availability on Ancient Greek is a good habit, since popular usernames are often taken. Have backups ready so that if your first choice is unavailable, you can try the next name on your list.
+          Generation happens entirely in your browser. Your settings and the names you create are never sent to a server, so your characters and story notes stay private until you choose to share them.
         </p>
 
-        <h2>Ancient Greek and Gamer Naming Style</h2>
+        <h2>Common Mistakes to Avoid</h2>
         <p>
-          Ancient Greek names and character names often use bold, memorable word combinations: action words, nicknames, or creative spellings. This Ancient Greek name generator uses curated Greek-style elements and combines them at random so you get new combinations that fit that style. The output is for inspiration only; the tool does not check Ancient Greek or any platform for availability. You can use the names as-is or tweak spelling and punctuation to make them your own.
-        </p>
-        <p>
-          Different games and communities favor different styles. Some players prefer short, punchy character names; others like longer usernames. Running the generator multiple times gives you a mix of lengths and styles. Skim the list, mark the ones you like, and then verify each one on your game or story. The Ancient Greek name generator is a starting point—your final choice should fit your personality and the rules of your platform.
+          The most common slip is mismatching the gendered ending — giving a male character a name ending in -a, or a female character one ending in -os, which reads wrong immediately to anyone familiar with the language. Avoid grafting Latin or Roman endings (-us, -ius) onto Greek roots; those belong to Rome, not Athens, and mixing them breaks the illusion. Steer clear of famous canon names for major original characters. And do not over-modernize the spelling into unrecognizable forms — the classic <em>k</em>, <em>ph</em>, and <em>-os</em> spellings are what carry the ancient flavor.
         </p>
 
-        <h2>When to Use a Ancient Greek Name Generator</h2>
+        <h2>Using These Names in Your Work</h2>
         <p>
-          Use this Ancient Greek name generator when you need Ancient Greek or Greek-style username ideas quickly. Common use cases include creating a new Ancient Greek account or updating your profile name, choosing an in-game name for esports or casual play, and picking a stream or social handle. The same tool works for other platforms—Discord, Xbox, PlayStation, or social profiles—as inspiration. Names must be unique on each platform, so always check availability before committing.
-        </p>
-        <p>
-          Another good time to use a Ancient Greek name generator is when you are rebranding. If you have used the same character name for years and want a fresh identity, generating a batch of ideas helps you explore options without pressure. Run the tool several times, paste results into one document, and remove duplicates. Then check Ancient Greek and any other platforms you use to see which names are still available. Having a shortlist saves time compared to checking one idea at a time.
-        </p>
-
-        <h2>Use Cases in Detail: Profiles, Esports, and Streams</h2>
-        <p>
-          Players use the Ancient Greek name generator when creating a new Ancient Greek account or refreshing their profile name. Esports and streamers use it for in-game names or stream handles. The same tool works for other platforms—Discord, Xbox, PlayStation, or social—as inspiration; you must check each platform for availability. Run the generator multiple times to build a shortlist, then check which names are free on your platform. The Ancient Greek name generator does not reserve or validate names; it only suggests combinations.
-        </p>
-        <p>
-          Content creators often need a consistent handle across Steam, streaming, and social media. Generating a batch of character name ideas lets you test different options before you commit. Copy the names you like into a single list, then check availability on each service. If one name is taken on Ancient Greek but free elsewhere, you can still use it on the platforms where it is available, or use the generator again to find alternatives that work everywhere.
-        </p>
-
-        <h2>Tips for Choosing a Ancient Greek Username</h2>
-        <p>
-          Pick a name that is easy to remember and type. Short character names are easier to say in voice chat and less likely to be mistyped. Run the Ancient Greek name generator multiple times to get a shortlist, then check your game or story for availability. Have a few backups in case your first choice is taken. Avoid names that might be mistaken for someone else or that break platform rules. The generator gives you ideas only; the final choice is yours.
-        </p>
-        <p>
-          Consider how the name will look in different contexts: in-game, on a stream overlay, or in a friend list. Some combinations look great in one font but odd in another. If you plan to use the same handle across multiple games and platforms, check availability everywhere before you invest in branding. The Ancient Greek name generator is a free way to explore options without committing until you have confirmed that your chosen Ancient Greek name or character name is available.
-        </p>
-
-        <h2>Running the Ancient Greek Name Generator in Batches</h2>
-        <p>
-          When you need many username ideas, run the Ancient Greek name generator multiple times. Each run gives up to 24 names. Paste each run into the same document and remove duplicates if any appear. Check availability on your platform for each name you like. There is no daily or total limit; you can run the generator as often as you want. Batching is useful when you are setting up several accounts, testing ideas for a team, or simply want a large pool of character name options before making a decision.
-        </p>
-        <p>
-          Keeping a single document with all your generated Ancient Greek name ideas makes it easy to track which names you have already checked. Mark names as &quot;taken&quot; or &quot;available&quot; as you go. That way you avoid re-checking the same name on Ancient Greek or another platform. The Ancient Greek name generator does not remember previous runs, so your document is your only record of the ideas you have collected.
-        </p>
-
-        <h2>Privacy and Local Processing</h2>
-        <p>
-          This Ancient Greek name generator runs entirely in your browser. When you set the number of names and click generate, the names are created locally on your device. Your choices and the generated names are not sent to our servers. We do not store your inputs or the generated list. No account or login is required. That means your shortlist of character name ideas stays on your machine unless you choose to copy it somewhere else.
-        </p>
-        <p>
-          Because generation is local, the tool is suitable for use in private or incognito windows. If you close the tab, the generated list is gone unless you have copied it. There is no server-side log of what names you generated or how many times you ran the Ancient Greek name generator. This privacy model is intentional: username brainstorming is personal, and the tool is designed so that you control where your ideas go.
-        </p>
-
-        <h2>Copying and Exporting Names</h2>
-        <p>
-          Use the Copy button to copy all generated Ancient Greek name ideas to your clipboard (one per line). Paste into a notes app or document. Check your game or story for availability before committing to a name. The names are plain text, so they work in any editor or form. If you paste into a spreadsheet, each line can go in its own cell for easy tracking. The Ancient Greek name generator does not export to a file; copying and pasting is the intended way to save your shortlist.
-        </p>
-
-        <h2>Limits and Batch Size</h2>
-        <p>
-          You can request 1–24 names per run with this Ancient Greek name generator. There is no daily or total limit. Run the generator again for more options. No download or account is required. If you need more than 24 names in one go, run the tool multiple times and paste the results into one document. Removing duplicates is up to you; the generator does not track previous output.
-        </p>
-
-        <h2>No Download or Account Required</h2>
-        <p>
-          This Ancient Greek name generator runs entirely in your browser. You do not need to download software or create an account. Open the page, set how many names you want, and click generate. The tool is free and works on desktop, tablet, and phone. That makes it easy to use when you are away from your main device or when you want to quickly generate character name ideas without installing anything.
-        </p>
-
-        <h2>Who Uses a Ancient Greek Name Generator?</h2>
-        <p>
-          Players use the Ancient Greek name generator when creating or updating a Ancient Greek profile, or when they want a new character name for other platforms. Esports and streamers use it for in-game names or stream handles. The same tool works for Discord, Xbox, PlayStation, or social profiles—always check availability on each platform. Educators and workshop leaders sometimes use it to demonstrate username creation or digital identity in a classroom setting. No account or download is required on our site.
-        </p>
-        <p>
-          Anyone who needs a steady supply of username ideas can benefit. Whether you are a casual gamer, a competitive player, or a content creator, the Ancient Greek name generator provides a fast way to explore options. The key is to treat the output as inspiration and always verify availability on Ancient Greek and any other platform where you plan to use the name.
-        </p>
-
-        <h2>Getting the Most Out of the Ancient Greek Name Generator</h2>
-        <p>
-          Run the generator several times and paste all results into one document. Skim for names that fit your style and check your platform for availability. Shortlist five to ten options so you have backups if your first choice is taken. The Ancient Greek name generator does not check Ancient Greek or any platform; you must do that yourself. When you have a shortlist, check availability one by one. Usernames are often taken on popular services, so having several options saves time.
-        </p>
-        <p>
-          Another tip is to try different batch sizes. Sometimes generating 24 names at once gives you a good mix; other times you may prefer smaller runs so you can review each set before generating more. The tool is flexible. Use it whenever you need new Ancient Greek name ideas or character name inspiration. Bookmarking the page makes it easy to return when you are ready to refresh your profile or create a new account.
-        </p>
-
-        <h2>Typical Workflow for the Ancient Greek Name Generator</h2>
-        <p>
-          A typical workflow is: open the page, set the number of names (e.g. 12 or 24), click generate, then copy the list. Paste into a notes app. Check your game or story for availability for each name you like. If your first choice is taken, try the next. Run the Ancient Greek name generator again for more options. The whole process takes a few minutes. No account or download is required. Bookmark the page for quick access when you need new username ideas. The tool is free and runs in your browser with no sign-up.
-        </p>
-
-        <h2>What This Tool Does NOT Do</h2>
-        <ul>
-          <li>It does not check Ancient Greek or any platform for username availability.</li>
-          <li>It does not reserve or hold names for you.</li>
-          <li>It does not store your generated list or your settings.</li>
-          <li>It does not connect to Steam, Discord, or any external gaming service.</li>
-        </ul>
-        <p>
-          This Ancient Greek name generator produces name ideas only. It does not validate availability, create accounts, or manage your profile. You must check Ancient Greek or your chosen platform yourself and follow that platform&apos;s rules when creating or changing your username. The tool is a brainstorming aid, not a replacement for checking availability.
-        </p>
-
-        <h2>Privacy and Security Notes</h2>
-        <p>
-          The Ancient Greek name generator runs entirely in your browser. It does not send data to a server and does not store generated values. This is helpful for quick brainstorming and offline use. If you refresh the page, the last generated list is cleared. Copy any names you want to keep before closing or refreshing.
-        </p>
-        <p>
-          For account security, never share your Ancient Greek password or other credentials. The generator only suggests usernames; it does not handle login or account creation. When you check availability on Ancient Greek or another platform, use the official site or app and ensure you are on a secure connection. The Ancient Greek name generator is a standalone tool and does not integrate with any login system.
-        </p>
-
-        <h2>Final Summary and When to Use This Tool</h2>
-        <p>
-          The Ancient Greek name generator provides a fast way to create username and character name ideas for Ancient Greek and other fiction and mythology. Set the number of names (1–24) and run as often as you like. Copy results and check your platform for availability. The tool runs locally in your browser with no sign-up. Keep a shortlist of options in case your first choice is taken. No download or account is required. The generator is free and works on any device.
-        </p>
-        <p>
-          Use this Ancient Greek name generator when you need Ancient Greek name ideas, character name inspiration, or a quick way to explore options before checking availability. It is best for brainstorming, rebranding, and building a shortlist. Always verify availability on Ancient Greek or your chosen platform before committing to a name. The tool is a practical free resource for gaming character names.
+          These are original, authentic-style combinations built from real Greek roots, not a lookup of specific historical people, which makes them ideal for historical fiction, mythology retellings, tabletop campaigns, and worldbuilding. Because each name carries genuine meaning, you can weave that sense into your character — a name meaning &quot;glory&quot; or &quot;gift of Apollo&quot; becomes a small piece of characterization. Generate a batch, choose names whose gender and meaning fit, and build your Greek world on a foundation of names that would have sounded real to the people who lived in it.
         </p>
       </div>
     </section>

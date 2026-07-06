@@ -29,64 +29,78 @@ function createWriteUp() {
   return (
     <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
-        <h2>God & Goddess Name Generator - Deity Names With Meaning</h2>
-        <h2>Introduction</h2>
-        <p>This guide explains how to use a god and goddess name generator to create deity-style names for fiction, games, and storytelling. The tool runs in your browser and lets you choose culture (Greek, Norse, Egyptian, Roman, or any) and type (gods only, goddesses only, or both). You get 1–24 names per run with optional meanings. The generator does not store data and runs entirely in your browser. No sign-up is required.</p>
-        <p>People search for god goddess name generator or deity names with meaning; this page serves those intents with one free generator. For other character names try our <Link href="/ancient-greek-name-generator">ancient Greek name generator</Link> or <Link href="/royal-surname-generator">royal surname generator</Link>. For cleaning pasted text use a plain-text tool. More on our <Link href="/">homepage</Link>.</p>
-        <h2>What Is a God and Goddess Name Generator?</h2>
-        <p>A god and goddess name generator creates deity-style names inspired by mythologies (Greek, Norse, Egyptian, Roman). You choose culture and whether you want gods, goddesses, or both, and get names with optional meanings at the click of a button. The tool uses curated name elements and meanings so each run produces new combinations. The output is for creative use only. This free tool runs in your browser with no sign-up.</p>
-        <p>The output can include the name, culture, type (god or goddess), and an optional meaning. You can copy the list and paste it into a notes app, then pick the names that fit your story or game.</p>
-        <h2>Why This God and Goddess Name Generator Matters</h2>
-        <p>Choosing believable deity names for fiction or games can be time-consuming. A god goddess name generator speeds up brainstorming. You get options in seconds and can filter by culture and type. The tool is free and does not require an account. Names are created in your browser and are not sent to our servers.</p>
+        <h2>God &amp; Goddess Name Generator - Deity Names With Meaning</h2>
+        <p>
+          A god&apos;s name is the seed of a whole pantheon. Zeus, Odin, Ra, and Isis each carry a domain, a temperament, and a place in a divine hierarchy that a single word evokes instantly. This god and goddess name generator builds deity names in that tradition, drawing on the naming patterns of real mythologies so you can populate a pantheon for fiction, tabletop RPGs, and worldbuilding. You can pick a <strong>culture</strong> (Greek, Norse, Egyptian, Roman, or Any), a <strong>type</strong> (gods only, goddesses only, or both), and optionally <strong>include a meaning</strong> so each name arrives with a domain attached. It runs in your browser, needs no sign-up, and gives you 1–24 names per run.
+        </p>
+        <p>
+          Divine names are not interchangeable across cultures — a Norse god and an Egyptian goddess sound nothing alike, and that difference is the whole point. The guide below explains how theonyms (god-names) actually work in each of the four supported pantheons, how epithets and domains shape a deity&apos;s identity, and how to use the culture and type options to build a coherent pantheon rather than a random pile of names.
+        </p>
+
+        <h2>How Divine Names Work: Theonyms, Domains, and Epithets</h2>
+        <p>
+          A <strong>theonym</strong> is simply the name of a god, and across mythologies these names cluster around a few devices. Many are tied to a <strong>domain</strong> — the sphere the deity rules, such as war, the sea, love, harvest, or the dawn — so a name and a role travel together (this is what the &quot;Include meaning&quot; option surfaces). Gods also collect <strong>epithets</strong>: descriptive by-names that name an aspect or deed. Zeus is &quot;Zeus the Thunderer,&quot; Athena is &quot;Grey-eyed Athena,&quot; Apollo is &quot;Far-shooting.&quot; When you name a deity for fiction, pairing a core name with a domain and an epithet gives it the same layered identity real gods have.
+        </p>
+
+        <h2>Greek Deity Names</h2>
+        <p>
+          Greek theonyms tend to be melodic and vowel-rich, often ending in -os or -on for gods (Kronos, Helios) and -a, -e, or -is for goddesses (Athena, Persephone, Artemis). Many encode a domain or trait in an ancient root. The Greek pantheon is highly organized — Olympians, Titans, primordial deities — so a Greek-flavored name should feel like it belongs to that structured family. For human-style Greek names to sit alongside your gods, pair this tool with our <Link href="/ancient-greek-name-generator">ancient Greek name generator</Link>.
+        </p>
+
+        <h2>Norse Deity Names</h2>
+        <p>
+          Norse names are harder and more consonant-heavy, thick with the sounds of Old Norse — Odin, Thor, Freyr, Freyja, Heimdall, Tyr. Many derive from words for natural and martial forces (thunder, frost, war, fate), matching the grim, weather-beaten character of the mythology. Choose &quot;Norse&quot; when you want deities that sound rugged and elemental, and lean on domains like storm, battle, the sea, and the underworld to place each god in the pantheon.
+        </p>
+
+        <h2>Egyptian Deity Names</h2>
+        <p>
+          Egyptian theonyms are short, weighty, and often built on hard or breathy sounds — Ra, Isis, Osiris, Anubis, Horus, Bastet, Set. Many gods are tied to cosmic forces (the sun, the sky, the afterlife) or take animal aspects, so their names feel ancient and ceremonial. Egyptian names read as formal and monumental, well suited to a pantheon centered on the sun, death, and cosmic order.
+        </p>
+
+        <h2>Roman Deity Names</h2>
+        <p>
+          Roman gods parallel the Greek pantheon but carry their own Latinate names — Jupiter, Juno, Mars, Venus, Neptune, Minerva. The sounds are firmer and more institutional than the Greek, reflecting Rome&apos;s civic, state-religion character. Choose &quot;Roman&quot; when you want authority and gravitas, and note that many Roman gods share domains with Greek counterparts (Mars/Ares, Venus/Aphrodite), so you can mirror an existing structure with a different tonal register.
+        </p>
+
+        <h2>Using the Culture and Type Options</h2>
+        <p>
+          The tool&apos;s options let you tune the output to your world:
+        </p>
+        <ul>
+          <li><strong>Culture</strong> — pick Greek, Norse, Egyptian, or Roman for a single, coherent mythology, or &quot;Any culture&quot; for a mixed or invented pantheon that borrows from several.</li>
+          <li><strong>Type</strong> — choose &quot;Gods only,&quot; &quot;Goddesses only,&quot; or &quot;Gods and goddesses&quot; depending on whether you need one type or a balanced roster.</li>
+          <li><strong>Include meaning</strong> — turn this on to attach a short domain to each name (e.g. sky, war, love, harvest) so you can match a deity to its role at a glance.</li>
+        </ul>
+        <p>
+          Run once per culture to keep pantheons distinct, or use &quot;Any culture&quot; when you want a syncretic feel. For noble mortal surnames to rule under your gods, our <Link href="/royal-surname-generator">royal surname generator</Link> pairs well with this one.
+        </p>
+
+        <h2>Building a Coherent Pantheon</h2>
+        <p>
+          A believable pantheon is a system, not a list. Assign each deity a distinct domain so they do not overlap — one god of war, one of the sea, one of the harvest — and give them relationships: siblings, rivals, a ruling sky-father, a queen of the underworld. Enable meanings and generate within a single culture so the names share a sound family, then map the domains onto roles. The result reads like a real mythology, where each god fills a niche and the whole set feels internally consistent.
+        </p>
+
         <h2>How to Use This God and Goddess Name Generator</h2>
-        <p>Follow these steps: choose a culture (Greek, Norse, Egyptian, Roman, or Any); choose type (Gods only, Goddesses only, or Gods and goddesses); set how many names you want (1–24); optionally check &quot;Include meaning&quot;; click &quot;Generate names&quot; to get a new list; use the Copy button to copy all names to your clipboard; paste into your notes and pick one; run again for more options. No account required. The tool runs in your browser; your settings and generated names are not sent to any server.</p>
-        <h2>When to Use a God and Goddess Name Generator</h2>
-        <p>Use this generator when you need deity name ideas quickly. Key use cases: fantasy and myth-inspired fiction; tabletop RPGs and games; storytelling and worldbuilding; creative writing. The output is for inspiration only; names are inspired by mythology but are for creative use.</p>
-        <h2>Use Cases in Detail</h2>
-        <p>Writers use the god goddess name generator for mythological or fantasy characters. Game masters use it for deity NPCs or pantheons. Run the generator multiple times to build a shortlist. You can mix cultures by choosing &quot;Any culture&quot; or run once per culture. For other naming styles try our ancient Greek or royal surname generator; see our <Link href="/">homepage</Link> for the full list.</p>
-        <h2>Deity Naming Style and Cultures</h2>
-        <p>The generator offers Greek, Norse, Egyptian, and Roman deity names. Each culture uses curated name elements inspired by those mythologies. You can request gods only, goddesses only, or both. Optional meanings (e.g. &quot;sky or thunder&quot;, &quot;love and beauty&quot;) help you match names to character roles. The output is for creative use only.</p>
-        <h2>How the God and Goddess Name Generator Works (Step by Step)</h2>
-        <p>When you open the page, you choose culture, type, number of names (1–24), and whether to include meanings. Clicking &quot;Generate names&quot; triggers the tool to randomly pick from curated name and meaning lists in your browser. Each run is independent; no names or settings are sent to a server. You can copy the full list and paste it into your document. To get more ideas, run the generator again.</p>
-        <h2>Privacy and Local Processing</h2>
-        <p>This god and goddess name generator runs entirely in your browser. Names and meanings are created locally; your choices and generated list are not sent to our servers. No account or login is required. We do not store your inputs or the generated list.</p>
-        <h2>Copying and Exporting Names</h2>
-        <p>Use the Copy button to copy all generated names (and meanings, if enabled) to your clipboard. Paste into a notes app or document. If you notice extra spaces or line breaks after pasting, run the text through a plain-text tool.</p>
-        <h2>Running the Generator in Batches</h2>
-        <p>When you need many deity names, run the generator multiple times. Each run gives up to 24 names. Paste each run into the same document and remove duplicates if needed. There is no daily or total limit.</p>
-        <h2>Limits and Batch Size</h2>
-        <p>You can request 1–24 names per run. There is no daily or total limit. Run the generator again for more options. No download or account is required.</p>
-        <h2>No Download or Account Required</h2>
-        <p>This god and goddess name generator runs entirely in your browser. You do not need to download software or create an account. Open the page, set your options, and click generate. The tool is free and works on desktop, tablet, and phone.</p>
-        <h2>Who Uses a God and Goddess Name Generator?</h2>
-        <p>Writers use it for fantasy and myth-inspired fiction. Tabletop GMs use it for deity NPCs and pantheons. The same tool works for storytelling and worldbuilding. No account or download is required on our site.</p>
-        <h2>Getting the Most Out of the God and Goddess Name Generator</h2>
-        <p>Run the generator several times and paste all results into one document. Use &quot;Any culture&quot; for variety or pick one culture per run to build a pantheon. Turn &quot;Include meaning&quot; on to match names to character roles. For other naming tools try our ancient Greek or royal surname generator; see our homepage for the full list.</p>
-        <h2>Tool Methodology and Limitations</h2>
-        <p>The tool uses curated name and meaning elements inspired by Greek, Norse, Egyptian, and Roman mythologies. When you click generate, it randomly combines these in your browser so each run is different. No names or settings are sent to a server. The output is for creative use only; it is not a scholarly or exhaustive source.</p>
-        <h2>Combining With Other Generators</h2>
-        <p>Use this generator for deity names and our ancient Greek name generator for human-style Greek names or our royal surname generator for noble surnames. When assembling lists from multiple tools, keep one document and use a plain-text tool when pasting from the web. See our <Link href="/">homepage</Link> for more tools.</p>
-        <h2>Typical Workflow</h2>
-        <p>A typical workflow is: open the page, choose culture and type, set the number of names (e.g. 12 or 24), optionally enable meanings, click generate, then copy the list. Paste into your notes and pick the names that fit your characters. Run the generator again for more options. No account or download is required.</p>
-        <h2>Quick Reference: God and Goddess Name Generator at a Glance</h2>
-        <p>The god and goddess name generator produces 1–24 names per run, with no daily limit. You can choose Greek, Norse, Egyptian, Roman, or any culture, and gods only, goddesses only, or both. Optional meanings help you match names to roles. The tool runs in your browser with no sign-up; names are created locally and are not sent to our servers. Use the Copy button to copy all names. For other naming tools see our homepage.</p>
-        <p>You can run the generator as often as you like. Each run is independent and produces a new random set. There is no account, no download, and no daily cap. Bookmark the page for quick access.</p>
-        <h2>Choosing Culture and Type</h2>
-        <p>Use Greek, Norse, Egyptian, or Roman for a single-mythology feel, or &quot;Any culture&quot; for a mixed pantheon. Use &quot;Gods only&quot; or &quot;Goddesses only&quot; when you need one type, or &quot;Gods and goddesses&quot; for both. The &quot;Include meaning&quot; option adds short meanings (e.g. sky, war, love) so you can pick names that fit character roles.</p>
-        <h2>Batch Generation and Building a Shortlist</h2>
-        <p>Run the god goddess name generator multiple times with 12 or 24 names per run. Copy each batch into a single document and skim for names that fit your story or game. The generator has no daily limit. For other naming styles try our ancient Greek or royal surname generator; see our homepage for more tools.</p>
-        <h2>Formatting and Pasting Generated Names</h2>
-        <p>The god and goddess name generator outputs one name per line (with optional culture, type, and meaning). When you paste into a notes app or document, the formatting is preserved. If you see extra spaces or line breaks after pasting from the web, run the text through a plain-text tool. Our site has other tools; see the homepage for links.</p>
-        <h2>Tips for Deity Names in Fiction and Games</h2>
-        <p>Use meanings to align names with character roles (e.g. a god of war, a goddess of harvest). Run the generator once per culture to build a pantheon, or use &quot;Any culture&quot; for variety. The free god and goddess name generator requires no account and does not store or send your data. Names are created in your browser only. For other naming tools see our homepage.</p>
-        <h2>Why Use a God and Goddess Name Generator?</h2>
-        <p>Coming up with deity names for multiple characters or a full pantheon can be time-consuming. This god goddess name generator produces deity-style names with optional meanings in seconds. Run it as often as you like and copy the results into your notes. The tool is free and runs in your browser with no sign-up. For other naming tools see our <Link href="/">homepage</Link> for the full list.</p>
-        <p>You get up to 24 names per run with no daily limit. Names are created locally and are not sent to our servers. Use the Copy button to copy all names at once. No download or account is required.</p>
-        <h2>Summary</h2>
-        <p>Use this god and goddess name generator to create deity names for fiction, games, and storytelling. Choose culture (Greek, Norse, Egyptian, Roman, or any) and type (gods, goddesses, or both), set the number of names (1–24), and optionally include meanings. Copy results into your notes. The tool runs locally in your browser with no sign-up. For other naming tools—ancient Greek, royal surname, and more—see our <Link href="/">homepage</Link>. For cleaning pasted text use a plain-text tool.</p>
-        <p>The free god and goddess name generator requires no account and does not store or send your data. Names are created in your browser only. Run it in batches to build a pantheon or shortlist. No download is required and the tool works on all devices. Bookmark the page for quick access when you need deity names with meaning.</p>
-        <p>Each run produces up to 24 names with no daily limit. Pair with our ancient Greek or royal surname generator for other naming styles. There is no account, no download, and no daily cap. Use the Copy button to grab all names at once. Names are created in your browser and are not sent to our servers. Run the god and goddess name generator as often as you like to build a pantheon. For other naming tools see our homepage for the full list. No sign-up or download is required. The tool is free and there is no daily cap. Bookmark the page when you need deity names for fiction, games, or storytelling.</p>
-        <p>Greek, Norse, Egyptian, and Roman options let you match names to your world. Enable &quot;Include meaning&quot; to see short meanings (e.g. sky, war, love) and pick names that fit character roles. The generator is free and runs entirely in your browser with no account.</p>
+        <ol className="list-decimal pl-6 space-y-2">
+          <li>Choose a culture (Greek, Norse, Egyptian, Roman, or Any) and a type (gods, goddesses, or both).</li>
+          <li>Set how many names you want per run (1–24), and optionally check <strong>Include meaning</strong>.</li>
+          <li>Click <strong>Generate names</strong> to get a fresh batch of deity names with their domains.</li>
+          <li>Use the Copy button to save your shortlist, then assign each name a role, an epithet, and a place in the pantheon.</li>
+          <li>Run again — once per culture for distinct pantheons — with no limit, no account, and no download.</li>
+        </ol>
+        <p>
+          Generation happens entirely in your browser. Your settings and the names you create are never sent to a server, so your worldbuilding stays private until you choose to share it.
+        </p>
+
+        <h2>Common Mistakes to Avoid</h2>
+        <p>
+          A few missteps break the illusion of a real pantheon. The first is mixing culture-sounds unintentionally — a Norse-sounding name beside a Greek one reads as a mismatch unless your world is deliberately syncretic (use a single culture per pantheon to avoid it). The second is copying a famous deity name outright (Zeus, Thor, Ra) unless you intend the reference. The third is stacking overlapping domains, giving three gods the same portfolio. The fourth is ignoring meaning — a name is far stronger when it maps to a clear domain. Keep the names that are tonally consistent, distinct, and matched to a role. These are creative combinations inspired by mythology, not a scholarly register, so verify against references if you need strict accuracy.
+        </p>
+
+        <h2>Privacy</h2>
+        <p>
+          This god and goddess name generator runs entirely in your browser. When you set your options and generate, the names and meanings are created locally on your device — nothing is uploaded, logged, or stored on our servers. Close the tab and the list is gone unless you copied it. For more naming tools, see our <Link href="/">homepage</Link>.
+        </p>
       </div>
     </section>
   );

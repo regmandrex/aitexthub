@@ -29,169 +29,77 @@ function createWriteUp() {
     <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
         <h2>Amusement Park Name Generator – Theme Park Name Ideas</h2>
-        <h2>Introduction</h2>
         <p>
-          This guide explains how to use a Amusement Park name generator to create theme park names for Amusement Park and other creative projects. The tool runs in your browser and produces unique, memorable name ideas at the click of a button. It is designed for players who want Amusement Park name ideas quickly without sign-up or download. The generator does not store data and runs entirely in your browser. You get 1–24 names per run and can run it as often as you like. Always check your game or story for availability before committing to a name.
+          A theme park&apos;s name is its first ride — it sets the mood before a single guest passes the gate. Great park names promise something: adventure (Adventureland), wonder (Wonderland), thrill (Six Flags), or a whole imagined world (Disneyland, Universal). This generator builds names in that spirit: evocative, brandable, and fun, whether you are naming a whole fictional park, brainstorming a real business, or christening the sprawling resort you just built in Planet Coaster or RollerCoaster Tycoon. It also helps with the layer beneath the park name — the individual lands, coasters, and attractions that give a park its texture.
         </p>
         <p>
-          People search for Amusement Park name ideas and character name generators when setting up a new profile, an esports handle, or a stream name. This Amusement Park name generator serves that intent with one free, browser-based tool. Whether you need a single standout character name or a shortlist of options, the generator gives you a pool of ideas. Names must be unique on each service, so verifying availability on Amusement Park or your chosen platform is an essential step after generating ideas.
-        </p>
-
-        <h2>What Is a Amusement Park Name Generator?</h2>
-        <p>
-          A Amusement Park name generator is an online tool that creates theme park names suitable for Amusement Park and other creative projects. You get unique name ideas at the click of a button. The generator combines curated amusement park-style words and elements at random so each run produces new combinations. The output is for inspiration only; you must check your platform for availability. This free Amusement Park name generator runs in your browser with no sign-up and does not send generated names to any server.
-        </p>
-        <p>
-          The output is plain text, one name per line. You can copy the full list and paste it into a notes app, then check your game or story for availability and pick one. Many users run the Amusement Park name generator multiple times to build a shortlist before deciding. Because names are created locally, your choices stay private and nothing is stored on our servers.
-        </p>
-        <p>
-          Amusement Park name generators are useful when you are tired of reusing the same username or when you want a fresh character name that fits your style. The tool does not guarantee that a name is available; it only suggests combinations. Always confirm availability on your game or story before you commit to a new username.
+          Park naming has its own logic, different from naming a person or a place. It blends aspiration, a sense of destination, and a hook that looks good on a sign and a season pass. This page breaks down the patterns behind memorable park names, the different scales you need to name (the park, its themed lands, its rides), and how to pick a name that fits the experience you are building.
         </p>
 
-        <h2>Why This Amusement Park Name Generator Matters</h2>
+        <h2>What Makes a Great Theme Park Name</h2>
         <p>
-          Choosing a memorable Amusement Park name or character name can be time-consuming. A Amusement Park name generator speeds up brainstorming. Instead of staring at a blank field, you get options in seconds. You can run it on a phone or desktop, copy the names you like, and then check availability on your game or story. The tool is free and does not require an account, so there is no friction to trying many ideas.
+          The strongest amusement park names tend to share a few ingredients. Knowing them helps you spot the keepers in a generated batch:
         </p>
+        <ul>
+          <li><strong>A promise of experience.</strong> Words like Adventure, Wonder, Fantasy, Thrill, Magic, and Discovery tell guests what they will feel. Adventureland and Fantasyland work because they name an emotion.</li>
+          <li><strong>A sense of destination.</strong> Suffixes like -land, -world, Kingdom, Park, Gardens, Bay, and Pier turn a name into a place you travel to (Disneyland, SeaWorld, Busch Gardens, Kings Island).</li>
+          <li><strong>Brandable and sign-ready.</strong> Short, punchy, and easy to say — a name has to fit on a marquee, a ticket, and a hashtag.</li>
+          <li><strong>An evocative modifier.</strong> A color, place, or theme word (Silver, Cedar, Ocean, Enchanted, Frontier) that gives the park a specific flavor rather than a generic one.</li>
+        </ul>
+
+        <h2>Naming the Park vs. Naming the Lands</h2>
         <p>
-          The generator also keeps your ideas private. Names are created in your browser and are not sent to our servers. You can use it in a private or incognito window if you prefer. Because generation is local, there is no risk of your shortlist being stored or logged. That matters when you are testing ideas before you settle on a final Amusement Park name or character name.
-        </p>
-        <p>
-          A good Amusement Park name generator also standardizes the workflow: set how many names you want, click generate, copy the list, and check availability. You get a consistent way to explore username ideas without writing scripts or visiting multiple sites. The output is easy to paste into notes or a document so you can track which names you have already checked on Amusement Park or other platforms.
+          A full park is named at several scales, and the tone should nest inside itself. The park name is the broad brand — grand and welcoming. Inside it sit <strong>themed lands</strong>, each with its own name and mood: Frontierland, Tomorrowland, Adventure Isle, Enchanted Forest, Boardwalk. A land name is more specific than the park and sets the theme for the rides within it. Getting this hierarchy right is what makes a park feel designed rather than assembled: guests should be able to tell they have crossed from one land into another just from the naming. When you name a park, sketch two or three land names underneath it to check the whole thing hangs together.
         </p>
 
-        <h2>How the Amusement Park Name Generator Works (Step by Step)</h2>
+        <h2>Naming Rides and Roller Coasters</h2>
         <p>
-          When you open the page, you choose how many names you want per run (1–24). Clicking &quot;Generate names&quot; triggers the tool to randomly combine curated amusement park-style elements in your browser. Each run is independent; no names or settings are sent to a server. The result is a list of Amusement Park name ideas, one per line. You can copy the full list with one click and paste it into a notes app. To get more ideas, run the generator again. The tool does not check Amusement Park or any platform for availability—you must do that yourself.
+          Individual attractions follow their own naming style, and a great coaster name is half the ride&apos;s marketing:
         </p>
+        <ul>
+          <li><strong>Thrill coasters</strong> want speed and danger words — Nitro, Velocity, Kingda Ka, Goliath, Leviathan, The Beast. Hard consonants and superlatives sell the drop.</li>
+          <li><strong>Story rides</strong> want narrative — Pirates of the Caribbean, Haunted Mansion, Expedition Everest. The name hints at the journey.</li>
+          <li><strong>Family rides</strong> want charm and whimsy — Grand Carousel, River Rapids, Dumbo, Teacups. Softer, playful words fit.</li>
+          <li><strong>Water rides</strong> want splash and flow — Tidal Wave, Splash Mountain, Rapids Run.</li>
+        </ul>
         <p>
-          The underlying word lists are designed to sound like gaming theme park names: bold, memorable, and easy to type. The generator shuffles and combines these elements so that each run produces different combinations. That randomness helps you discover names you might not have thought of on your own. Because everything runs in the browser, the Amusement Park name generator works offline once the page is loaded and does not depend on a backend service.
+          Match the ride name to its intensity. A gentle family attraction called &quot;Skullcrusher&quot; confuses guests as much as a 200-foot hypercoaster called &quot;Gentle Meadows.&quot; The name is a signpost for who the ride is for.</p>
+
+        <h2>Names for Fiction and Stories</h2>
+        <p>
+          If you are writing a park into a story — a nostalgic summer, a horror set in an abandoned park, a satire of corporate fun — the name does heavy lifting on tone. A cheerful, over-bright name (Happy Valley, Sunnyland Gardens) turns sinister when the setting is decaying or haunted; the contrast is the point. A grand, faded name (Empire Amusements, The Wonderpalace) suggests former glory. Generate a batch and pick the name whose surface cheer or grandeur plays against, or reinforces, the mood of your scene.
         </p>
+
+        <h2>Names for a Real Business</h2>
         <p>
-          There are no hidden steps. You set the count, click generate, and receive a list. Copying is one click; pasting into your own document keeps your shortlist in one place. Running the Amusement Park name generator multiple times is the intended workflow when you want a large pool of character name ideas before checking availability.
+          Naming an actual park, family entertainment center, or fair is partly creative and partly practical. Beyond sounding fun, a real business name needs to be memorable, easy to spell, and available as a domain and trademark, and it should not clash with an existing major park. Local flavor helps a regional park stand out — a place name, a landmark, or a founding family name roots it in its community (Kennywood, Cedar Point, Dollywood). Generate a batch of ideas, then run your shortlist through availability and trademark checks before committing.
+        </p>
+
+        <h2>Games: Planet Coaster and RollerCoaster Tycoon</h2>
+        <p>
+          Park-building games are one of the biggest reasons people look for park names, because a sandbox park deserves a name as ambitious as the coasters in it. For a themed build — a pirate cove, a sci-fi station, a horror carnival — pick a park name that announces the theme, then name your lands and standout coasters to match so screenshots and shares read as one cohesive world. Generate a batch, keep the name that fits your build&apos;s aesthetic, and reuse the land- and ride-naming tips above to fill in the rest of the map.
         </p>
 
         <h2>How to Use This Amusement Park Name Generator</h2>
-        <p>Follow these steps to get Amusement Park name ideas:</p>
         <ol className="list-decimal pl-6 space-y-2">
           <li>Set how many names you want per run (1–24).</li>
-          <li>Click &quot;Generate names&quot; to get a new list of character name ideas.</li>
-          <li>Use the Copy button to copy all names to your clipboard.</li>
-          <li>Paste into a notes app or document, then check your game or story for availability and pick one.</li>
-          <li>Run again for more options; no account or download is required.</li>
+          <li>Click <strong>Generate names</strong> to get a fresh batch of theme park and attraction name ideas.</li>
+          <li>Skim for names whose mood fits your park — grand, whimsical, thrilling, or eerie.</li>
+          <li>Use the Copy button to save your shortlist, then sketch a few land or ride names underneath your favorite to test the fit.</li>
+          <li>Run again as often as you like — there is no account, no download, and no limit on runs.</li>
         </ol>
         <p>
-          The Amusement Park name generator runs in your browser; your settings and generated names are not sent to any server. You can run it as often as you like. Building a shortlist of five to ten options before checking availability on Amusement Park is a good habit, since popular usernames are often taken. Have backups ready so that if your first choice is unavailable, you can try the next name on your list.
+          Generation happens entirely in your browser. Your settings and the names you create are never sent to a server, so your park concepts and business ideas stay private until you choose to share them.
         </p>
 
-        <h2>Amusement Park and Gamer Naming Style</h2>
+        <h2>Common Mistakes to Avoid</h2>
         <p>
-          Amusement Park names and character names often use bold, memorable word combinations: action words, nicknames, or creative spellings. This Amusement Park name generator uses curated amusement park-style elements and combines them at random so you get new combinations that fit that style. The output is for inspiration only; the tool does not check Amusement Park or any platform for availability. You can use the names as-is or tweak spelling and punctuation to make them your own.
-        </p>
-        <p>
-          Different games and communities favor different styles. Some players prefer short, punchy character names; others like longer usernames. Running the generator multiple times gives you a mix of lengths and styles. Skim the list, mark the ones you like, and then verify each one on your game or story. The Amusement Park name generator is a starting point—your final choice should fit your personality and the rules of your platform.
+          The most common miss is a name that is generic or forgettable — &quot;Fun Park&quot; or &quot;City Amusements&quot; promises nothing and sticks with no one. Avoid names so close to Disney, Universal, or Six Flags that they read as knockoffs, especially for a real business where trademark matters. Watch the scale: do not give a small local park a name so grand it overpromises, or a sprawling resort a name so plain it undersells. And say it out loud — a park name lives on signs, ads, and word of mouth, so if it is hard to say, it is hard to remember.
         </p>
 
-        <h2>When to Use a Amusement Park Name Generator</h2>
+        <h2>Building a Park Identity</h2>
         <p>
-          Use this Amusement Park name generator when you need Amusement Park or amusement park-style username ideas quickly. Common use cases include creating a new Amusement Park account or updating your profile name, choosing an in-game name for esports or casual play, and picking a stream or social handle. The same tool works for other platforms—Discord, Xbox, PlayStation, or social profiles—as inspiration. Names must be unique on each platform, so always check availability before committing.
-        </p>
-        <p>
-          Another good time to use a Amusement Park name generator is when you are rebranding. If you have used the same character name for years and want a fresh identity, generating a batch of ideas helps you explore options without pressure. Run the tool several times, paste results into one document, and remove duplicates. Then check Amusement Park and any other platforms you use to see which names are still available. Having a shortlist saves time compared to checking one idea at a time.
-        </p>
-
-        <h2>Use Cases in Detail: Profiles, Esports, and Streams</h2>
-        <p>
-          Players use the Amusement Park name generator when creating a new Amusement Park account or refreshing their profile name. Esports and streamers use it for in-game names or stream handles. The same tool works for other platforms—Discord, Xbox, PlayStation, or social—as inspiration; you must check each platform for availability. Run the generator multiple times to build a shortlist, then check which names are free on your platform. The Amusement Park name generator does not reserve or validate names; it only suggests combinations.
-        </p>
-        <p>
-          Content creators often need a consistent handle across Steam, streaming, and social media. Generating a batch of character name ideas lets you test different options before you commit. Copy the names you like into a single list, then check availability on each service. If one name is taken on Amusement Park but free elsewhere, you can still use it on the platforms where it is available, or use the generator again to find alternatives that work everywhere.
-        </p>
-
-        <h2>Tips for Choosing a Amusement Park Username</h2>
-        <p>
-          Pick a name that is easy to remember and type. Short character names are easier to say in voice chat and less likely to be mistyped. Run the Amusement Park name generator multiple times to get a shortlist, then check your game or story for availability. Have a few backups in case your first choice is taken. Avoid names that might be mistaken for someone else or that break platform rules. The generator gives you ideas only; the final choice is yours.
-        </p>
-        <p>
-          Consider how the name will look in different contexts: in-game, on a stream overlay, or in a friend list. Some combinations look great in one font but odd in another. If you plan to use the same handle across multiple games and platforms, check availability everywhere before you invest in branding. The Amusement Park name generator is a free way to explore options without committing until you have confirmed that your chosen Amusement Park name or character name is available.
-        </p>
-
-        <h2>Running the Amusement Park Name Generator in Batches</h2>
-        <p>
-          When you need many username ideas, run the Amusement Park name generator multiple times. Each run gives up to 24 names. Paste each run into the same document and remove duplicates if any appear. Check availability on your platform for each name you like. There is no daily or total limit; you can run the generator as often as you want. Batching is useful when you are setting up several accounts, testing ideas for a team, or simply want a large pool of character name options before making a decision.
-        </p>
-        <p>
-          Keeping a single document with all your generated Amusement Park name ideas makes it easy to track which names you have already checked. Mark names as &quot;taken&quot; or &quot;available&quot; as you go. That way you avoid re-checking the same name on Amusement Park or another platform. The Amusement Park name generator does not remember previous runs, so your document is your only record of the ideas you have collected.
-        </p>
-
-        <h2>Privacy and Local Processing</h2>
-        <p>
-          This Amusement Park name generator runs entirely in your browser. When you set the number of names and click generate, the names are created locally on your device. Your choices and the generated names are not sent to our servers. We do not store your inputs or the generated list. No account or login is required. That means your shortlist of character name ideas stays on your machine unless you choose to copy it somewhere else.
-        </p>
-        <p>
-          Because generation is local, the tool is suitable for use in private or incognito windows. If you close the tab, the generated list is gone unless you have copied it. There is no server-side log of what names you generated or how many times you ran the Amusement Park name generator. This privacy model is intentional: username brainstorming is personal, and the tool is designed so that you control where your ideas go.
-        </p>
-
-        <h2>Copying and Exporting Names</h2>
-        <p>
-          Use the Copy button to copy all generated Amusement Park name ideas to your clipboard (one per line). Paste into a notes app or document. Check your game or story for availability before committing to a name. The names are plain text, so they work in any editor or form. If you paste into a spreadsheet, each line can go in its own cell for easy tracking. The Amusement Park name generator does not export to a file; copying and pasting is the intended way to save your shortlist.
-        </p>
-
-        <h2>Limits and Batch Size</h2>
-        <p>
-          You can request 1–24 names per run with this Amusement Park name generator. There is no daily or total limit. Run the generator again for more options. No download or account is required. If you need more than 24 names in one go, run the tool multiple times and paste the results into one document. Removing duplicates is up to you; the generator does not track previous output.
-        </p>
-
-        <h2>No Download or Account Required</h2>
-        <p>
-          This Amusement Park name generator runs entirely in your browser. You do not need to download software or create an account. Open the page, set how many names you want, and click generate. The tool is free and works on desktop, tablet, and phone. That makes it easy to use when you are away from your main device or when you want to quickly generate character name ideas without installing anything.
-        </p>
-
-        <h2>Who Uses a Amusement Park Name Generator?</h2>
-        <p>
-          Players use the Amusement Park name generator when creating or updating a Amusement Park profile, or when they want a new character name for other platforms. Esports and streamers use it for in-game names or stream handles. The same tool works for Discord, Xbox, PlayStation, or social profiles—always check availability on each platform. Educators and workshop leaders sometimes use it to demonstrate username creation or digital identity in a classroom setting. No account or download is required on our site.
-        </p>
-        <p>
-          Anyone who needs a steady supply of username ideas can benefit. Whether you are a casual gamer, a competitive player, or a content creator, the Amusement Park name generator provides a fast way to explore options. The key is to treat the output as inspiration and always verify availability on Amusement Park and any other platform where you plan to use the name.
-        </p>
-
-        <h2>Getting the Most Out of the Amusement Park Name Generator</h2>
-        <p>
-          Run the generator several times and paste all results into one document. Skim for names that fit your style and check your platform for availability. Shortlist five to ten options so you have backups if your first choice is taken. The Amusement Park name generator does not check Amusement Park or any platform; you must do that yourself. When you have a shortlist, check availability one by one. Usernames are often taken on popular services, so having several options saves time.
-        </p>
-        <p>
-          Another tip is to try different batch sizes. Sometimes generating 24 names at once gives you a good mix; other times you may prefer smaller runs so you can review each set before generating more. The tool is flexible. Use it whenever you need new Amusement Park name ideas or character name inspiration. Bookmarking the page makes it easy to return when you are ready to refresh your profile or create a new account.
-        </p>
-
-        <h2>Typical Workflow for the Amusement Park Name Generator</h2>
-        <p>
-          A typical workflow is: open the page, set the number of names (e.g. 12 or 24), click generate, then copy the list. Paste into a notes app. Check your game or story for availability for each name you like. If your first choice is taken, try the next. Run the Amusement Park name generator again for more options. The whole process takes a few minutes. No account or download is required. Bookmark the page for quick access when you need new username ideas. The tool is free and runs in your browser with no sign-up.
-        </p>
-
-        <h2>What This Tool Does NOT Do</h2>
-        <ul>
-          <li>It does not check Amusement Park or any platform for username availability.</li>
-          <li>It does not reserve or hold names for you.</li>
-          <li>It does not store your generated list or your settings.</li>
-          <li>It does not connect to Steam, Discord, or any external gaming service.</li>
-        </ul>
-        <p>
-          This Amusement Park name generator produces name ideas only. It does not validate availability, create accounts, or manage your profile. You must check Amusement Park or your chosen platform yourself and follow that platform&apos;s rules when creating or changing your username. The tool is a brainstorming aid, not a replacement for checking availability.
-        </p>
-
-        <h2>Privacy and Security Notes</h2>
-        <p>
-          The Amusement Park name generator runs entirely in your browser. It does not send data to a server and does not store generated values. This is helpful for quick brainstorming and offline use. If you refresh the page, the last generated list is cleared. Copy any names you want to keep before closing or refreshing.
-        </p>
-        <p>
-          For account security, never share your Amusement Park password or other credentials. The generator only suggests usernames; it does not handle login or account creation. When you check availability on Amusement Park or another platform, use the official site or app and ensure you are on a secure connection. The Amusement Park name generator is a standalone tool and does not integrate with any login system.
-        </p>
-
-        <h2>Final Summary and When to Use This Tool</h2>
-        <p>
-          The Amusement Park name generator provides a fast way to create username and character name ideas for Amusement Park and other creative projects. Set the number of names (1–24) and run as often as you like. Copy results and check your platform for availability. The tool runs locally in your browser with no sign-up. Keep a shortlist of options in case your first choice is taken. No download or account is required. The generator is free and works on any device.
-        </p>
-        <p>
-          Use this Amusement Park name generator when you need Amusement Park name ideas, character name inspiration, or a quick way to explore options before checking availability. It is best for brainstorming, rebranding, and building a shortlist. Always verify availability on Amusement Park or your chosen platform before committing to a name. The tool is a practical free resource for gaming theme park names.
+          The best park names are the start of a whole identity, not the end. Once you have a name you love, the lands, rides, mascots, and even snack stands can echo its theme, and that consistency is what turns a collection of attractions into a place guests remember. Generate a batch, pick the name that opens up the most creative directions, and let it set the tone for everything inside the gate — whether that gate is real, fictional, or rendered in your favorite park-building game.
         </p>
       </div>
     </section>

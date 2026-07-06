@@ -28,170 +28,79 @@ function createWriteUp() {
   return (
     <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
-        <h2>40K Planet Name Generator – Warhammer Planet & World Names</h2>
-        <h2>Introduction</h2>
+        <h2>40K Planet Name Generator – Warhammer Planet &amp; World Names</h2>
         <p>
-          This guide explains how to use a 40K Planet name generator to create planet and world names for 40K Planet and other fiction and games. The tool runs in your browser and produces unique, memorable name ideas at the click of a button. It is designed for players who want 40K Planet name ideas quickly without sign-up or download. The generator does not store data and runs entirely in your browser. You get 1–24 names per run and can run it as often as you like. Always check your game or story for availability before committing to a name.
+          In Warhammer 40,000, a planet is never just a rock in space — it is a cog in a galaxy-spanning theocratic empire, and its name carries the weight of ten thousand years of grim history. This generator builds world names in the authentic register of the 41st Millennium: gothic, Latinate, and heavy with dread, in the tradition of Cadia, Armageddon, Macragge, Vigilus, and Krieg. Whether you are homebrewing a sector for a Crusade campaign, writing fan fiction, or naming the death world your regiment was raised on, the tool gives you names that sound like they were stamped into an Administratum ledger centuries ago.
         </p>
         <p>
-          People search for 40K Planet name ideas and character name generators when setting up a new profile, an esports handle, or a stream name. This 40K Planet name generator serves that intent with one free, browser-based tool. Whether you need a single standout character name or a shortlist of options, the generator gives you a pool of ideas. Names must be unique on each service, so verifying availability on 40K Planet or your chosen platform is an essential step after generating ideas.
-        </p>
-
-        <h2>What Is a 40K Planet Name Generator?</h2>
-        <p>
-          A 40K Planet name generator is an online tool that creates planet and world names suitable for 40K Planet and other fiction and games. You get unique name ideas at the click of a button. The generator combines curated Warhammer 40K-style words and elements at random so each run produces new combinations. The output is for inspiration only; you must check your platform for availability. This free 40K Planet name generator runs in your browser with no sign-up and does not send generated names to any server.
-        </p>
-        <p>
-          The output is plain text, one name per line. You can copy the full list and paste it into a notes app, then check your game or story for availability and pick one. Many users run the 40K Planet name generator multiple times to build a shortlist before deciding. Because names are created locally, your choices stay private and nothing is stored on our servers.
-        </p>
-        <p>
-          40K Planet name generators are useful when you are tired of reusing the same username or when you want a fresh character name that fits your style. The tool does not guarantee that a name is available; it only suggests combinations. Always confirm availability on your game or story before you commit to a new username.
+          The 40K naming style is not generic sci-fi. It is deliberately archaic and religious, borrowing from Latin, medieval Europe, and the grinding bureaucracy of the Imperium of Man. Names evoke faith, war, decay, and endless toil. This page explains the conventions that make an Imperial world name feel real — the Latinate roots, the ominous suffixes, the numeral designations — and how to match a name to a world&apos;s classification so your Cadia-analogue reads like a fortress and your shrine world reads like a place of pilgrimage.
         </p>
 
-        <h2>Why This 40K Planet Name Generator Matters</h2>
+        <h2>What Makes a Name Sound Like a 40K World</h2>
         <p>
-          Choosing a memorable 40K Planet name or character name can be time-consuming. A 40K Planet name generator speeds up brainstorming. Instead of staring at a blank field, you get options in seconds. You can run it on a phone or desktop, copy the names you like, and then check availability on your game or story. The tool is free and does not require an account, so there is no friction to trying many ideas.
+          The Imperium is a gothic dystopia, and its planet names reflect that in a handful of consistent ways. Learn these and even a randomly generated result will feel canon:
         </p>
+        <ul>
+          <li><strong>Latinate and pseudo-Latin roots.</strong> Sanctus (holy), Mortis (death), Ferrus (iron), Bellum (war), Ignis (fire), Tempestus (storm), Vigil (watch), Rex (king). Real Warhammer worlds like Sanctus Reach and Mortis lean on exactly this vocabulary.</li>
+          <li><strong>Harsh, consonant-heavy sounds.</strong> Krieg, Cadia, Vraks, Vostroya, Tallarn. Blunt, guttural names read as war-scarred and old.</li>
+          <li><strong>Grand or ominous suffixes.</strong> Endings in -us, -a, -ia, -is, -or, and -ax carry an imperial, Latin cadence — Macragge, Armageddon, Vigilus.</li>
+          <li><strong>Numeral and rank designations.</strong> Cadia III, Vostroya IX, Sanctus Prime, Baal Secundus. Roman numerals and words like Prime, Secundus, and Majoris evoke the Administratum cataloguing a billion worlds.</li>
+        </ul>
+
+        <h2>Naming by World Classification</h2>
         <p>
-          The generator also keeps your ideas private. Names are created in your browser and are not sent to our servers. You can use it in a private or incognito window if you prefer. Because generation is local, there is no risk of your shortlist being stored or logged. That matters when you are testing ideas before you settle on a final 40K Planet name or character name.
+          The Imperium sorts planets by function, and the classification should shape the name&apos;s tone. A well-chosen name previews what kind of world a reader or player is looking at before you describe it:
         </p>
+        <ul>
+          <li><strong>Hive world.</strong> Overcrowded, industrial mega-cities stacked into the sky (Necromunda, Armageddon). Names sound heavy, grimy, and vast.</li>
+          <li><strong>Forge world.</strong> Domain of the Adeptus Mechanicus, cloaked in smog and machinery (Mars, Metalica, Graia). Lean on iron and machine roots — Ferrus, Mechanicus, -tek.</li>
+          <li><strong>Death world.</strong> Lethal jungles, predators, or toxic climates (Catachan, Fenris). Hostile, primal names fit — Mortis, Bellum, a hard single syllable.</li>
+          <li><strong>Shrine world.</strong> Sacred sites of pilgrimage and relics (Ophelia VII, Sanctus Reach). Holy, Latinate names — Sanctus, Ecclesia, Benedictus.</li>
+          <li><strong>Agri-world.</strong> Vast farm planets feeding the Imperium. Names can be plainer, older, almost pastoral, before the grimdark twist.</li>
+          <li><strong>Fortress world.</strong> Bastions built to hold a border, like Cadia. Names sound martial and immovable — Vigilus, Bastion, Vraks.</li>
+          <li><strong>Feral world.</strong> Pre-industrial societies that furnish savage recruits (Fenris again, or Nocturne). Names feel tribal, harsh, and ancient.</li>
+        </ul>
+
+        <h2>Latin and Gothic Roots to Build On</h2>
         <p>
-          A good 40K Planet name generator also standardizes the workflow: set how many names you want, click generate, copy the list, and check availability. You get a consistent way to explore username ideas without writing scripts or visiting multiple sites. The output is easy to paste into notes or a document so you can track which names you have already checked on 40K Planet or other platforms.
+          If you want to hand-craft or refine a name rather than take a random one whole, keep a small palette of loaded roots. Dark, martial, and religious words all sit comfortably in the Imperium&apos;s tone of grim faith and unending war. Sanctus and Ecclesia give a shrine world its holiness; Mortis, Bellum, and Ferrum give a war world its scars; Tempestus and Ignis suggest a hostile climate. A two-part name like Mortis Ferrum instantly reads as an iron-grey world that has bled for centuries — the roots do your world-building before you write a single line of lore.
         </p>
 
-        <h2>How the 40K Planet Name Generator Works (Step by Step)</h2>
+        <h2>Using Numerals and Designations</h2>
         <p>
-          When you open the page, you choose how many names you want per run (1–24). Clicking &quot;Generate names&quot; triggers the tool to randomly combine curated Warhammer 40K-style elements in your browser. Each run is independent; no names or settings are sent to a server. The result is a list of 40K Planet name ideas, one per line. You can copy the full list with one click and paste it into a notes app. To get more ideas, run the generator again. The tool does not check 40K Planet or any platform for availability—you must do that yourself.
+          Attaching a designation is one of the fastest ways to push a plain name firmly into 40K territory. A world named simply &quot;Vostroya&quot; is fine, but &quot;Vostroya IX&quot; implies it is the ninth catalogued body in its system, one entry among the Imperium&apos;s uncountable registry. Use <strong>Prime</strong>, <strong>Secundus</strong>, or <strong>Tertius</strong> for a world&apos;s rank in a system, and Roman numerals (Cadia III, Baal Secundus) when a planet orbits alongside siblings. Add these to worlds that sit within a named system or carry strategic weight; leave standalone names bare so they can carry on their own.
         </p>
+
+        <h2>Naming a Whole System or Sector</h2>
         <p>
-          The underlying word lists are designed to sound like gaming planet and world names: bold, memorable, and easy to type. The generator shuffles and combines these elements so that each run produces different combinations. That randomness helps you discover names you might not have thought of on your own. Because everything runs in the browser, the 40K Planet name generator works offline once the page is loaded and does not depend on a backend service.
+          For homebrew campaigns you often need not one world but a cluster of them, and consistency is what makes a sector feel like a real region of the galaxy rather than scattered rocks. Pick a convention and hold to it: numbered worlds around a central name (Cadia I through Cadia VII), a shared Latin root family, or a common suffix style. Generate a batch, choose your lead world, then run again for its neighbors and keep the ones whose tone matches. A unified scheme lets a reader feel the borders of your subsector even before you map it.
         </p>
+
+        <h2>How to Name a Planet for a Campaign or Story</h2>
         <p>
-          There are no hidden steps. You set the count, click generate, and receive a list. Copying is one click; pasting into your own document keeps your shortlist in one place. Running the 40K Planet name generator multiple times is the intended workflow when you want a large pool of character name ideas before checking availability.
+          Start from the world&apos;s role, not the name. Decide whether it is a fortress, a shrine, a hive, or a death world, because the classification sets the tone. Then generate a batch and sort the results by feel — the darkest, most guttural names go to death and fortress worlds; the holiest Latinate ones go to shrine worlds; the iron-heavy ones go to forge worlds. Add a designation if the planet sits in a larger system. A name chosen this way arrives pre-loaded with implied history, which is exactly what a grimdark setting wants.
         </p>
 
         <h2>How to Use This 40K Planet Name Generator</h2>
-        <p>Follow these steps to get 40K Planet name ideas:</p>
         <ol className="list-decimal pl-6 space-y-2">
-          <li>Set how many names you want per run (1–24).</li>
-          <li>Click &quot;Generate names&quot; to get a new list of character name ideas.</li>
-          <li>Use the Copy button to copy all names to your clipboard.</li>
-          <li>Paste into a notes app or document, then check your game or story for availability and pick one.</li>
-          <li>Run again for more options; no account or download is required.</li>
+          <li>Set how many world names you want per run (1–24).</li>
+          <li>Click <strong>Generate names</strong> to get a fresh batch of grimdark, Imperial-style planet names.</li>
+          <li>Skim for names whose tone matches your world&apos;s classification — martial, holy, industrial, or hostile.</li>
+          <li>Use the Copy button to save your shortlist, then add designations like Prime or a numeral to fine-tune.</li>
+          <li>Run again as often as you like — there is no account, no download, and no limit on runs.</li>
         </ol>
         <p>
-          The 40K Planet name generator runs in your browser; your settings and generated names are not sent to any server. You can run it as often as you like. Building a shortlist of five to ten options before checking availability on 40K Planet is a good habit, since popular usernames are often taken. Have backups ready so that if your first choice is unavailable, you can try the next name on your list.
+          Generation happens entirely in your browser. Your settings and the names you create are never sent to a server, so your unrevealed worlds and campaign plans stay private until you choose to share them.
         </p>
 
-        <h2>40K Planet and Gamer Naming Style</h2>
+        <h2>Common Mistakes to Avoid</h2>
         <p>
-          40K Planet names and character names often use bold, memorable word combinations: action words, nicknames, or creative spellings. This 40K Planet name generator uses curated Warhammer 40K-style elements and combines them at random so you get new combinations that fit that style. The output is for inspiration only; the tool does not check 40K Planet or any platform for availability. You can use the names as-is or tweak spelling and punctuation to make them your own.
-        </p>
-        <p>
-          Different games and communities favor different styles. Some players prefer short, punchy character names; others like longer usernames. Running the generator multiple times gives you a mix of lengths and styles. Skim the list, mark the ones you like, and then verify each one on your game or story. The 40K Planet name generator is a starting point—your final choice should fit your personality and the rules of your platform.
+          The biggest error is a name that sounds too soft or too modern for the setting — a bright, clean, cheerful name shatters the grimdark tone instantly. Avoid overusing a single suffix, or every world in your sector blurs into &quot;-us, -us, -us.&quot; Watch out for accidentally reusing a famous canon world like Cadia, Terra, or Macragge unless you mean the reference. And keep pronunciations manageable at the table; a name no one can say out loud will never stick in a campaign.
         </p>
 
-        <h2>When to Use a 40K Planet Name Generator</h2>
+        <h2>Fan Fiction, Homebrew, and Tabletop Use</h2>
         <p>
-          Use this 40K Planet name generator when you need 40K Planet or Warhammer 40K-style username ideas quickly. Common use cases include creating a new 40K Planet account or updating your profile name, choosing an in-game name for esports or casual play, and picking a stream or social handle. The same tool works for other platforms—Discord, Xbox, PlayStation, or social profiles—as inspiration. Names must be unique on each platform, so always check availability before committing.
-        </p>
-        <p>
-          Another good time to use a 40K Planet name generator is when you are rebranding. If you have used the same character name for years and want a fresh identity, generating a batch of ideas helps you explore options without pressure. Run the tool several times, paste results into one document, and remove duplicates. Then check 40K Planet and any other platforms you use to see which names are still available. Having a shortlist saves time compared to checking one idea at a time.
-        </p>
-
-        <h2>Use Cases in Detail: Profiles, Esports, and Streams</h2>
-        <p>
-          Players use the 40K Planet name generator when creating a new 40K Planet account or refreshing their profile name. Esports and streamers use it for in-game names or stream handles. The same tool works for other platforms—Discord, Xbox, PlayStation, or social—as inspiration; you must check each platform for availability. Run the generator multiple times to build a shortlist, then check which names are free on your platform. The 40K Planet name generator does not reserve or validate names; it only suggests combinations.
-        </p>
-        <p>
-          Content creators often need a consistent handle across Steam, streaming, and social media. Generating a batch of character name ideas lets you test different options before you commit. Copy the names you like into a single list, then check availability on each service. If one name is taken on 40K Planet but free elsewhere, you can still use it on the platforms where it is available, or use the generator again to find alternatives that work everywhere.
-        </p>
-
-        <h2>Tips for Choosing a 40K Planet Username</h2>
-        <p>
-          Pick a name that is easy to remember and type. Short character names are easier to say in voice chat and less likely to be mistyped. Run the 40K Planet name generator multiple times to get a shortlist, then check your game or story for availability. Have a few backups in case your first choice is taken. Avoid names that might be mistaken for someone else or that break platform rules. The generator gives you ideas only; the final choice is yours.
-        </p>
-        <p>
-          Consider how the name will look in different contexts: in-game, on a stream overlay, or in a friend list. Some combinations look great in one font but odd in another. If you plan to use the same handle across multiple games and platforms, check availability everywhere before you invest in branding. The 40K Planet name generator is a free way to explore options without committing until you have confirmed that your chosen 40K Planet name or character name is available.
-        </p>
-
-        <h2>Running the 40K Planet Name Generator in Batches</h2>
-        <p>
-          When you need many username ideas, run the 40K Planet name generator multiple times. Each run gives up to 24 names. Paste each run into the same document and remove duplicates if any appear. Check availability on your platform for each name you like. There is no daily or total limit; you can run the generator as often as you want. Batching is useful when you are setting up several accounts, testing ideas for a team, or simply want a large pool of character name options before making a decision.
-        </p>
-        <p>
-          Keeping a single document with all your generated 40K Planet name ideas makes it easy to track which names you have already checked. Mark names as &quot;taken&quot; or &quot;available&quot; as you go. That way you avoid re-checking the same name on 40K Planet or another platform. The 40K Planet name generator does not remember previous runs, so your document is your only record of the ideas you have collected.
-        </p>
-
-        <h2>Privacy and Local Processing</h2>
-        <p>
-          This 40K Planet name generator runs entirely in your browser. When you set the number of names and click generate, the names are created locally on your device. Your choices and the generated names are not sent to our servers. We do not store your inputs or the generated list. No account or login is required. That means your shortlist of character name ideas stays on your machine unless you choose to copy it somewhere else.
-        </p>
-        <p>
-          Because generation is local, the tool is suitable for use in private or incognito windows. If you close the tab, the generated list is gone unless you have copied it. There is no server-side log of what names you generated or how many times you ran the 40K Planet name generator. This privacy model is intentional: username brainstorming is personal, and the tool is designed so that you control where your ideas go.
-        </p>
-
-        <h2>Copying and Exporting Names</h2>
-        <p>
-          Use the Copy button to copy all generated 40K Planet name ideas to your clipboard (one per line). Paste into a notes app or document. Check your game or story for availability before committing to a name. The names are plain text, so they work in any editor or form. If you paste into a spreadsheet, each line can go in its own cell for easy tracking. The 40K Planet name generator does not export to a file; copying and pasting is the intended way to save your shortlist.
-        </p>
-
-        <h2>Limits and Batch Size</h2>
-        <p>
-          You can request 1–24 names per run with this 40K Planet name generator. There is no daily or total limit. Run the generator again for more options. No download or account is required. If you need more than 24 names in one go, run the tool multiple times and paste the results into one document. Removing duplicates is up to you; the generator does not track previous output.
-        </p>
-
-        <h2>No Download or Account Required</h2>
-        <p>
-          This 40K Planet name generator runs entirely in your browser. You do not need to download software or create an account. Open the page, set how many names you want, and click generate. The tool is free and works on desktop, tablet, and phone. That makes it easy to use when you are away from your main device or when you want to quickly generate character name ideas without installing anything.
-        </p>
-
-        <h2>Who Uses a 40K Planet Name Generator?</h2>
-        <p>
-          Players use the 40K Planet name generator when creating or updating a 40K Planet profile, or when they want a new character name for other platforms. Esports and streamers use it for in-game names or stream handles. The same tool works for Discord, Xbox, PlayStation, or social profiles—always check availability on each platform. Educators and workshop leaders sometimes use it to demonstrate username creation or digital identity in a classroom setting. No account or download is required on our site.
-        </p>
-        <p>
-          Anyone who needs a steady supply of username ideas can benefit. Whether you are a casual gamer, a competitive player, or a content creator, the 40K Planet name generator provides a fast way to explore options. The key is to treat the output as inspiration and always verify availability on 40K Planet and any other platform where you plan to use the name.
-        </p>
-
-        <h2>Getting the Most Out of the 40K Planet Name Generator</h2>
-        <p>
-          Run the generator several times and paste all results into one document. Skim for names that fit your style and check your platform for availability. Shortlist five to ten options so you have backups if your first choice is taken. The 40K Planet name generator does not check 40K Planet or any platform; you must do that yourself. When you have a shortlist, check availability one by one. Usernames are often taken on popular services, so having several options saves time.
-        </p>
-        <p>
-          Another tip is to try different batch sizes. Sometimes generating 24 names at once gives you a good mix; other times you may prefer smaller runs so you can review each set before generating more. The tool is flexible. Use it whenever you need new 40K Planet name ideas or character name inspiration. Bookmarking the page makes it easy to return when you are ready to refresh your profile or create a new account.
-        </p>
-
-        <h2>Typical Workflow for the 40K Planet Name Generator</h2>
-        <p>
-          A typical workflow is: open the page, set the number of names (e.g. 12 or 24), click generate, then copy the list. Paste into a notes app. Check your game or story for availability for each name you like. If your first choice is taken, try the next. Run the 40K Planet name generator again for more options. The whole process takes a few minutes. No account or download is required. Bookmark the page for quick access when you need new username ideas. The tool is free and runs in your browser with no sign-up.
-        </p>
-
-        <h2>What This Tool Does NOT Do</h2>
-        <ul>
-          <li>It does not check 40K Planet or any platform for username availability.</li>
-          <li>It does not reserve or hold names for you.</li>
-          <li>It does not store your generated list or your settings.</li>
-          <li>It does not connect to Steam, Discord, or any external gaming service.</li>
-        </ul>
-        <p>
-          This 40K Planet name generator produces name ideas only. It does not validate availability, create accounts, or manage your profile. You must check 40K Planet or your chosen platform yourself and follow that platform&apos;s rules when creating or changing your username. The tool is a brainstorming aid, not a replacement for checking availability.
-        </p>
-
-        <h2>Privacy and Security Notes</h2>
-        <p>
-          The 40K Planet name generator runs entirely in your browser. It does not send data to a server and does not store generated values. This is helpful for quick brainstorming and offline use. If you refresh the page, the last generated list is cleared. Copy any names you want to keep before closing or refreshing.
-        </p>
-        <p>
-          For account security, never share your 40K Planet password or other credentials. The generator only suggests usernames; it does not handle login or account creation. When you check availability on 40K Planet or another platform, use the official site or app and ensure you are on a secure connection. The 40K Planet name generator is a standalone tool and does not integrate with any login system.
-        </p>
-
-        <h2>Final Summary and When to Use This Tool</h2>
-        <p>
-          The 40K Planet name generator provides a fast way to create username and character name ideas for 40K Planet and other fiction and games. Set the number of names (1–24) and run as often as you like. Copy results and check your platform for availability. The tool runs locally in your browser with no sign-up. Keep a shortlist of options in case your first choice is taken. No download or account is required. The generator is free and works on any device.
-        </p>
-        <p>
-          Use this 40K Planet name generator when you need 40K Planet name ideas, character name inspiration, or a quick way to explore options before checking availability. It is best for brainstorming, rebranding, and building a shortlist. Always verify availability on 40K Planet or your chosen platform before committing to a name. The tool is a practical free resource for gaming planet and world names.
+          These are original, 40K-inspired combinations, not names lifted from any official Games Workshop source, which makes them ideal for personal campaigns, homebrew regiments, and non-commercial fan fiction. A Crusade fought over a named world — the siege of a fortress planet, a pilgrimage to reclaim a lost shrine world — gains real weight when the planet has an evocative Imperial name. Generate a batch, assign names to your invented worlds, and build each planet&apos;s history around the tone its name implies. The names are yours to adapt; treat them as raw material, not fixed canon, and tweak spelling and designations freely.
         </p>
       </div>
     </section>

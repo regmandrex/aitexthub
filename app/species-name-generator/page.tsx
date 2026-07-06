@@ -53,176 +53,92 @@ function createWriteUp() {
   return (
     <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
-        <h2>Species Name Generator - Scientific and Fantasy Species Names</h2>
-
-        <h2>Introduction</h2>
+        <h2>Species Name Generator - Scientific &amp; Fantasy Species Names</h2>
         <p>
-          This guide explains how scientific-style species names work, how to use a species name generator, and how to get the best results for fantasy, sci-fi, and worldbuilding. The species name generator on this site creates binomial-style names for creatures, plants, and fictional organisms. You enter keywords or a short description (e.g., &quot;fire dragon,&quot; &quot;blue mushroom&quot;) and get a list of plausible-sounding names. It runs in your browser with no sign-up required and is designed for quick naming for games, stories, and bestiaries. It does not store your keywords when running locally and is for creative use only—not for real taxonomy.
+          Every creature and plant in a well-built world deserves a name that sounds like it belongs to a real taxonomy. &quot;Draco ignis&quot; or &quot;Lupus glacialis&quot; reads instantly as a species the way &quot;Tyrannosaurus rex&quot; and &quot;Canis lupus&quot; do — two Latin- or Greek-flavored words that quietly describe the organism. This species name generator builds those binomial-style names for fictional creatures, plants, fungi, and alien life. You enter a keyword or short description (&quot;fire dragon,&quot; &quot;glowing mushroom,&quot; &quot;ice wolf&quot;), and it produces names in that scientific register — plus a fantasy mode for looser, evocative creature names. It runs in your browser, needs no sign-up, and is for creative use only, not real taxonomy.
+        </p>
+        <p>
+          Good species naming is not random word-mashing — it follows the logic of real biology. The guide below explains how binomial nomenclature actually works, the Latin and Greek roots that carry meaning, how the scientific and fantasy modes differ, and how to name a whole believable bestiary rather than a pile of one-off creatures.
         </p>
 
-        <h2>What Is Binomial Nomenclature?</h2>
+        <h2>How Binomial Nomenclature Works</h2>
         <p>
-          Binomial nomenclature is the system of giving each species a two-part name: Genus (capitalized) and species (lowercase). Examples include Homo sapiens, Canis lupus, and Tyrannosaurus rex. Names often come from Latin or Greek and describe a trait, place, or person. Real taxonomy is governed by formal rules and publication; a species name generator mimics the style so your fictional species sound credible and consistent without replacing real scientific naming.
+          Binomial nomenclature is the two-part naming system every real species uses: a <strong>Genus</strong> (capitalized) followed by a <strong>species</strong> epithet (lowercase), as in <em>Homo sapiens</em>, <em>Panthera leo</em>, or <em>Tyrannosaurus rex</em>. The genus groups related organisms; the species epithet distinguishes one from its cousins, usually by naming a trait, a habitat, a place, or a person. The whole name is conventionally italicized. Copying this structure is what makes a fictional name feel scientifically real — a genus that sounds like a family (Draco, the dragons) plus an epithet that pins down the individual (ignis, of fire).
         </p>
         <p>
-          The format is portable and recognizable. Readers and players instantly understand that &quot;Draco ignis&quot; or &quot;Lupus glacialis&quot; are species-style names. You can use the output as-is or tweak spelling and order to fit your world. Mixing roots deliberately (e.g., Latin genus with a Greek-style species) can give your world a consistent feel. The tool does not guarantee that a name has never been used in real taxonomy; it creates plausible-sounding names for creative use only.
-        </p>
-        <p>
-          Learning a few common roots helps you customize results. Examples: draco (dragon), lupus (wolf), aqua (water), ignis (fire), magnus (large), ferox (fierce). The generator draws on similar roots so your names feel grounded in real naming conventions.
+          The genus is a noun; the species epithet is typically an adjective that must grammatically agree with it, or a noun in the genitive (&quot;of&quot; something). You do not need to get the Latin grammar perfect for fiction, but keeping the two-word, Genus-then-epithet shape is what sells the illusion.
         </p>
 
-        <h2>Why This Tool Matters</h2>
+        <h2>Latin and Greek Roots That Carry Meaning</h2>
         <p>
-          Inventing dozens of plausible binomial-style names by hand is time-consuming and can lead to inconsistent style. A species name generator gives you a starting list quickly. You then edit for your setting: swap genus and species, change a letter, or combine elements from different results. That hybrid approach keeps names unique and on-theme while saving time. It is especially useful when you want names that sound like real taxonomy without using real species.
+          Real scientific names lean on Latin and Greek roots because they are historically standard and internationally recognizable. Learning a handful lets you decode and customize any generated name:
         </p>
-        <p>
-          Tabletop RPGs, video games, and bestiary apps often need many creature and plant names. Entering a theme (e.g., &quot;undead,&quot; &quot;forest,&quot; &quot;mechanical&quot;) and getting a list speeds up worldbuilding. GMs can run the tool with different keywords and pick names that fit the tone of the campaign. Writers can use it for minor species or as a starting point for major ones. The tool supports both quick naming and deeper customization.
-        </p>
-        <p>
-          The tool also standardizes format. You get consistent Genus species styling, so your bestiary or world document looks coherent. That consistency helps readers and players suspend disbelief and makes your world feel more polished.
-        </p>
-
-        <h2>How the Generator Works (Step by Step)</h2>
-        <p>
-          You open the tool and enter keywords or a short description. Examples: &quot;ice wolf,&quot; &quot;poisonous plant,&quot; &quot;flying reptile,&quot; &quot;alien predator.&quot; The generator uses those terms to influence the output, drawing on Latin- and Greek-style roots and patterns. You click Generate and receive a list of binomial-style names. Each name has two parts: Genus (capitalized) and species (lowercase). You pick one, combine elements from several, or run again for more options.
-        </p>
-        <p>
-          The process runs in your browser when the tool is designed for local processing. Your keywords are not sent to a server in that case. There are no accounts or sign-up steps. You can run the tool multiple times with the same or different keywords to build a long list, then copy the names into a document or spreadsheet for your bestiary or world.
-        </p>
-        <p>
-          Because the output is algorithm-based, results can vary between runs. If you need a name that fits a specific trait, include that trait in your keywords. You can also refine names manually: change spelling, swap genus and species, or add a third epithet for subspecies in your fiction.
-        </p>
-
-        <h2>How Keywords Map to Output Style</h2>
-        <p>
-          The keywords you enter steer the style of the names. &quot;Dragon&quot; or &quot;draconic&quot; tends to produce names with dragon-related roots. &quot;Alien&quot; or &quot;extraterrestrial&quot; pushes the output toward sci-fi, otherworldly sounds. &quot;Forest,&quot; &quot;marine,&quot; or &quot;nocturnal&quot; can yield names that feel habitat- or behavior-based. You can combine keywords for more specific results—e.g., &quot;fire dragon&quot; or &quot;ice creature.&quot;
-        </p>
-        <table>
-          <thead>
-            <tr>
-              <th>Keyword type</th>
-              <th>Example keywords</th>
-              <th>Typical use</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Fantasy creatures</td>
-              <td>dragon, elf, magical beast, forest dweller</td>
-              <td>Epic fantasy, tabletop RPGs</td>
-            </tr>
-            <tr>
-              <td>Sci-fi / alien</td>
-              <td>alien, extraterrestrial, otherworldly</td>
-              <td>Sci-fi races, alien fauna</td>
-            </tr>
-            <tr>
-              <td>Habitat or trait</td>
-              <td>marine, nocturnal, predatory, ice, fire</td>
-              <td>Realistic-style fictional fauna</td>
-            </tr>
-            <tr>
-              <td>Plants / fungi</td>
-              <td>mushroom, thorny, glowing, carnivorous plant</td>
-              <td>Fantasy flora, bestiary plants</td>
-            </tr>
-          </tbody>
-        </table>
-        <p>
-          There are no strict rules. Experiment with different terms and run the tool several times to see what fits your world. Keep a naming document and stick to one style (e.g., all Latin-like) so your bestiary feels coherent.
-        </p>
-
-        <h2>When to Use a Species Name Generator</h2>
-        <p>
-          Use it for fantasy and sci-fi writing, tabletop and video games, worldbuilding, bestiaries, and creature design. It is ideal when you need many plausible-sounding names quickly—for one-off encounters, NPC fauna, or a full supplement. Whether you need names for dragons, alien races, or forest creatures, the same tool works with different keywords. Generated names are not real scientific names and should not be used for real species or in formal taxonomy.
-        </p>
-        <p>
-          For minor or background species, a single run may be enough. For major species—central to your story or game—use the tool for inspiration and then refine until the name is memorable and fits your world&apos;s tone. Teachers and students sometimes use it to learn about binomial nomenclature and naming conventions; use the output for creative exercises only, not as real taxonomy in formal assignments.
-        </p>
-
-        <h2>Tips for Good Species Names</h2>
         <ul>
-          <li>Keep names pronounceable and consistent in style across your world.</li>
-          <li>Avoid names too similar to real species unless that is intentional.</li>
-          <li>Use the tool as a starting point and refine for your setting.</li>
-          <li>Combine genus from one result with species from another for uniqueness.</li>
+          <li><strong>Creatures:</strong> draco (dragon), lupus (wolf), serpens (snake), ursus (bear), aquila (eagle), felis (cat).</li>
+          <li><strong>Elements &amp; traits:</strong> ignis (fire), glacies / glacialis (ice), aqua (water), umbra (shadow), lux (light), venenum (venom).</li>
+          <li><strong>Descriptors:</strong> magnus (large), minimus (tiny), ferox (fierce), horridus (bristly/dreadful), niger (black), aureus (golden).</li>
+          <li><strong>Habitat:</strong> sylvaticus (of the forest), marinus (of the sea), montanus (of mountains), nocturnus (of the night).</li>
         </ul>
         <p>
-          If your world uses Latin-like names, stick to that. Mixing roots can work if done deliberately. Before you publish or use a name, do a quick check and tweak if needed (e.g., change one letter or swap genus and species) to make it unique and to avoid accidental overlap with real taxonomy.
+          Combine a creature-genus with a trait-epithet — <em>Lupus glacialis</em> (ice wolf), <em>Draco venenum</em> (venom dragon), <em>Serpens nocturnus</em> (night serpent) — and the name both sounds authentic and tells a reader what the organism is.
         </p>
 
-        <h2>Limitations and Avoiding Real or Offensive Names</h2>
+        <h2>Scientific Mode vs. Fantasy Mode</h2>
         <p>
-          Generated names are random or algorithm-based and are not checked against real taxonomy. They may occasionally resemble real species names by chance. If you spot a match, change the spelling or swap genus and species to avoid confusion. Do not use generated names for real organisms or in formal taxonomy. Avoid names that could be read as offensive or that copy real cultural terms without context. Use the tool for fictional, respectful use only.
+          The generator supports two registers so you can match the tone of your world:
         </p>
-        <p>
-          The tool does not guarantee uniqueness across runs. If you need many unique names, run it multiple times and mix or edit results. Keep a master list so you can avoid duplicates and stay consistent across your world or game.
-        </p>
-
-        <h2>Bestiaries and Game Design</h2>
-        <p>
-          Tabletop RPGs and video games often use homebrew creatures that need names. The tool can supply names for one-off encounters or for a whole supplement. GMs can run it with theme keywords (e.g., &quot;shadow,&quot; &quot;crystal,&quot; &quot;mechanical&quot;) and pick names that fit the tone. Players who create custom species or pets can use it for backstory and flavor. Keep a naming document and note which keywords produced which batch so you can keep style consistent. When you export or share your list, ensure the text is clean so co-authors or designers get a consistent, editable list.
-        </p>
-
-        <h2>Exporting and Formatting Your List</h2>
-        <p>
-          When you have a list of species names from the tool, you may want to export it to a spreadsheet, document, or game design file. Copy the names and paste them into your target format. If the list has extra line breaks or spaces, normalize the text before or after pasting so your naming document stays tidy. Keeping a master list in a single place helps you avoid duplicates and stay consistent when you add new entries later. If you paste from a webpage or another document, run the text through a strip-HTML tool first so you have plain text only.
-        </p>
-
-        <h2>Common Use Cases</h2>
-        <p>
-          The most common use is worldbuilding: naming creatures and plants for fantasy or sci-fi settings. Authors use it for minor species or as a starting point for major ones. Tabletop GMs use it for bestiaries and one-off encounters. Video game designers use it for creature lists and bestiary apps. Educators use it to illustrate binomial nomenclature in a fun way. In all cases, the output is for creative use only—not for real taxonomy or formal science.
-        </p>
-        <p>
-          Another use is building a full bestiary. Run the tool multiple times with different keywords—e.g., one batch for &quot;forest&quot; creatures, another for &quot;alien&quot; fauna, another for &quot;dragon&quot;—and combine the results into a single document. Remove or adjust any names that are too similar to real species or that do not fit your tone.
-        </p>
-
-        <h2>Use Cases by Role</h2>
-        <h3>Writers and authors</h3>
-        <p>
-          Fantasy and sci-fi authors use the tool to name creatures, plants, and alien life. Use it for minor species that do not need a long backstory, or as a starting point for important species that you then refine. Pair the tool with a style guide: e.g., all names use Latin roots, or all have a certain syllable count. Run it multiple times to get a long list, then pick and edit the best fits for your world.
-        </p>
-        <h3>Game masters and game designers</h3>
-        <p>
-          GMs use it for homebrew creatures, bestiaries, and campaign flavor. Run the tool with theme keywords and pick names that fit the tone of your game. Video game designers can use it for creature lists and bestiary apps. Keep a master list and stick to one naming style so your world feels coherent.
-        </p>
-        <h3>Educators and students</h3>
-        <p>
-          Teachers and students use the tool to learn about binomial nomenclature and how scientific-style names are built. Run it with a theme (e.g., &quot;marine animal,&quot; &quot;desert plant&quot;) and have students identify possible Latin or Greek roots in the results. Do not use generated names in formal science assignments as if they were real taxonomy; use them for creative and educational exercises only.
-        </p>
-
-        <h2>Common Mistakes and Troubleshooting</h2>
-        <p>
-          A frequent mistake is using vague keywords. Single words like &quot;creature&quot; can produce generic names. Use clear, descriptive terms like &quot;fire dragon&quot; or &quot;ice wolf&quot; for more on-theme results. Another mistake is forgetting to check for real-species overlap. If a name looks familiar, search it and tweak the spelling or order before publishing.
-        </p>
-        <p>
-          If you need many unique names and see repeats, run the tool more times and combine genus from one result with species from another. Change a letter or add an epithet to make names distinct. When pasting lists into a document, normalize spacing and line breaks so your master list stays tidy and sortable.
-        </p>
-
-        <h2>What This Tool Does NOT Do</h2>
         <ul>
-          <li>It does not check names against real taxonomy or guarantee they are unused.</li>
-          <li>It does not produce scientifically valid names for real organisms.</li>
-          <li>It does not replace formal taxonomic rules or publication for real species.</li>
-          <li>It does not store your keywords when running locally; check the tool for details.</li>
+          <li><strong>Scientific mode</strong> produces strict binomial names — Genus species, Latin/Greek roots, capitalization and lowercase intact — ideal for hard sci-fi, naturalistic fantasy, and bestiaries that mimic a field guide.</li>
+          <li><strong>Fantasy mode</strong> produces looser, more evocative creature and race names that prioritize sound and flavor over taxonomic form — better for high-fantasy species, monster names, and alien races that need to feel mythic rather than catalogued.</li>
         </ul>
         <p>
-          The species name generator is for fictional, creative use only. It produces plausible-sounding binomial-style names. It does not manage taxonomy, publish names, or verify accuracy against real species. For real organisms, follow formal naming procedures and scientific standards.
+          Pick scientific when you want the veneer of biology and fantasy when you want atmosphere. Many worlds use both: a formal binomial for the bestiary entry, and a common fantasy name that characters actually say aloud.
         </p>
 
-        <h2>Responsible Use and Compliance</h2>
+        <h2>How Keywords Steer the Output</h2>
         <p>
-          Use the tool for fiction, games, and worldbuilding. Do not present generated names as real scientific names in non-fiction, educational materials that teach formal taxonomy, or any context where accuracy for real species is required. If you use output in a published book or game, ensure names are unique and do not inadvertently match real, protected, or trademarked terms. Avoid names that could be read as offensive or that appropriate real cultural terms without context.
+          The keyword you enter maps onto the roots and sounds the tool reaches for. Descriptive, specific input produces on-theme names, while vague input drifts generic. A few patterns:
+        </p>
+        <ul>
+          <li><strong>Fantasy creatures</strong> — dragon, draconic, magical beast, forest dweller — for epic fantasy and tabletop bestiaries.</li>
+          <li><strong>Sci-fi / alien</strong> — alien, extraterrestrial, otherworldly — for alien fauna and non-human races.</li>
+          <li><strong>Habitat or trait</strong> — marine, nocturnal, predatory, ice, fire — for realistic-feeling fictional fauna.</li>
+          <li><strong>Plants &amp; fungi</strong> — mushroom, thorny, glowing, carnivorous plant — for fantasy flora.</li>
+        </ul>
+        <p>
+          Combining terms sharpens the result: &quot;fire dragon&quot; or &quot;aquatic predator&quot; yields more targeted names than a single vague word like &quot;creature.&quot;
         </p>
 
-        <h2>Privacy and Local Processing</h2>
+        <h2>Naming Fantasy Species and Races</h2>
         <p>
-          Many species name generators run in the browser and do not send your keywords to a server. This tool is designed to process locally when possible. No sign-up is required. That helps with privacy when you are generating names for unpublished projects or sensitive worldbuilding. Check the tool description for exact data handling.
+          Not every fictional organism wants a Latin binomial. For a playable race, a monster, or a sentient species, a fantasy-mode name usually serves better — something pronounceable and evocative that a character could actually shout in the middle of a fight. The trick is internal consistency: give a species&apos; name a sound family (soft and flowing for graceful fey creatures, hard and guttural for brutish monsters) so the name signals what the creature is. You can still borrow a real-taxonomy feel by giving the race a formal binomial in your worldbuilding notes while using the common name in the story.
         </p>
 
-        <h2>Final Summary and When to Use This Tool</h2>
+        <h2>Building a Coherent Bestiary</h2>
         <p>
-          The species name generator creates scientific-style names for fictional creatures and plants. You enter keywords, run the tool, and get binomial-style names for your worldbuilding, games, and stories. Use it for fantasy species, alien races, dragons, and fauna; refine the results to match your world&apos;s tone and pronunciation. Keep naming consistent and do not use output for real taxonomy. It is a practical species name generator for quick, repeatable naming today.
+          A believable bestiary reads like it was catalogued by one naturalist, not assembled at random. Pick a naming style and hold to it — all Latin-flavored, all Greek-flavored, or a deliberate blend — so entries feel related. Group related creatures under a shared genus (three dragon species all in genus Draco, distinguished by epithet) to imply an evolutionary family. Keep a master list so you never reuse a name or drift in style, and note which keyword produced which batch so you can extend the world later without breaking consistency.
+        </p>
+
+        <h2>How to Use This Species Name Generator</h2>
+        <ol className="list-decimal pl-6 space-y-2">
+          <li>Enter a keyword or short description (e.g. &quot;fire dragon,&quot; &quot;glowing fungus,&quot; &quot;alien predator&quot;).</li>
+          <li>Choose scientific mode for strict binomial names or fantasy mode for looser creature names.</li>
+          <li>Click <strong>Generate</strong> to get a batch of Genus species (or fantasy) names.</li>
+          <li>Use the Copy button to save your shortlist, then refine — swap a genus from one result with an epithet from another, or add a third word for a subspecies.</li>
+          <li>Run again with the same or new keywords — there is no limit, no account, and no download.</li>
+        </ol>
+        <p>
+          Generation happens entirely in your browser. Your keywords and the names you create are never sent to a server, so your unpublished worldbuilding stays private until you choose to share it.
+        </p>
+
+        <h2>Common Mistakes to Avoid</h2>
+        <p>
+          A few missteps undercut an otherwise credible name. The first is vague keywords — &quot;creature&quot; produces generic output, so use specific descriptors. The second is inconsistent style, mixing strict Latin binomials with loose invented names in the same bestiary without intent. The third is accidental overlap with a real species — the tool is not checked against real taxonomy, so if a name looks familiar, search it and tweak a letter or swap the two words before publishing. The fourth is treating the output as real science: these are plausible-sounding fictional names only, never valid taxonomy for real organisms. Keep the names that are pronounceable, consistent in style, and distinct.
+        </p>
+
+        <h2>Privacy</h2>
+        <p>
+          This species name generator runs entirely in your browser. When you enter a keyword and generate, the names are created locally on your device — nothing is uploaded, logged, or stored on our servers. The output is for fiction, games, and worldbuilding, not for real taxonomy or formal science. Close the tab and the list is gone unless you copied it.
         </p>
       </div>
     </section>

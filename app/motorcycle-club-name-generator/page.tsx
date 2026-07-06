@@ -28,170 +28,65 @@ function createWriteUp() {
   return (
     <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
-        <h2>Motorcycle Club Name Generator – MC & Biker Names</h2>
-        <h2>Introduction</h2>
+        <h2>Motorcycle Club Name Generator – MC &amp; Biker Names</h2>
         <p>
-          This guide explains how to use a Motorcycle Club name generator to create club and biker names for Motorcycle Club and other fiction and creative projects. The tool runs in your browser and produces unique, memorable name ideas at the click of a button. It is designed for players who want Motorcycle Club name ideas quickly without sign-up or download. The generator does not store data and runs entirely in your browser. You get 1–24 names per run and can run it as often as you like. Always check your game or story for availability before committing to a name.
+          A motorcycle club&apos;s name is its identity stitched onto a leather cut. From the Hells Angels and the Outlaws to fictional clubs like the Sons of Anarchy&apos;s SAMCRO, MC names carry a specific weight: territory, brotherhood, defiance, and often a deliberate edge of menace. This generator builds names in that world — the intimidating one-percenter style, the riding-club style, and everything between — for fiction writers, game designers, and real riding groups looking for a name that means something. It leans on the genuine conventions of biker culture, from the &quot;MC&quot; suffix to chapter and territory naming, so the results read like a real patch rather than a costume.
         </p>
         <p>
-          People search for Motorcycle Club name ideas and character name generators when setting up a new profile, an esports handle, or a stream name. This Motorcycle Club name generator serves that intent with one free, browser-based tool. Whether you need a single standout character name or a shortlist of options, the generator gives you a pool of ideas. Names must be unique on each service, so verifying availability on Motorcycle Club or your chosen platform is an essential step after generating ideas.
-        </p>
-
-        <h2>What Is a Motorcycle Club Name Generator?</h2>
-        <p>
-          A Motorcycle Club name generator is an online tool that creates club and biker names suitable for Motorcycle Club and other fiction and creative projects. You get unique name ideas at the click of a button. The generator combines curated biker-style words and elements at random so each run produces new combinations. The output is for inspiration only; you must check your platform for availability. This free Motorcycle Club name generator runs in your browser with no sign-up and does not send generated names to any server.
-        </p>
-        <p>
-          The output is plain text, one name per line. You can copy the full list and paste it into a notes app, then check your game or story for availability and pick one. Many users run the Motorcycle Club name generator multiple times to build a shortlist before deciding. Because names are created locally, your choices stay private and nothing is stored on our servers.
-        </p>
-        <p>
-          Motorcycle Club name generators are useful when you are tired of reusing the same username or when you want a fresh character name that fits your style. The tool does not guarantee that a name is available; it only suggests combinations. Always confirm availability on your game or story before you commit to a new username.
+          Biker club naming is a culture with its own rules. There is a difference between an outlaw club that projects danger and a family riding club that projects the open road, and the name is where that difference lives. This page walks through the conventions — the suffixes, the tone, the territory and chapter structure, the imagery on the colors — so you can name a club that fits the story you are telling or the group you are riding with.
         </p>
 
-        <h2>Why This Motorcycle Club Name Generator Matters</h2>
+        <h2>How Motorcycle Club Names Work</h2>
         <p>
-          Choosing a memorable Motorcycle Club name or character name can be time-consuming. A Motorcycle Club name generator speeds up brainstorming. Instead of staring at a blank field, you get options in seconds. You can run it on a phone or desktop, copy the names you like, and then check availability on your game or story. The tool is free and does not require an account, so there is no friction to trying many ideas.
+          Real MC names follow patterns that anyone in the culture recognizes instantly. Understanding them keeps a generated name from ringing false:
         </p>
+        <ul>
+          <li><strong>The &quot;MC&quot; suffix.</strong> Most clubs append <strong>MC</strong> (Motorcycle Club) to their name — the Hells Angels MC, the Bandidos MC. It is the single clearest marker that a name belongs to a bike club.</li>
+          <li><strong>An evocative core name.</strong> The heart of the name is usually a noun or noun phrase with attitude — Angels, Outlaws, Bandidos, Mongols, Pagans, Vagos. It suggests the club&apos;s character in a word or two.</li>
+          <li><strong>Dark, defiant, or free imagery.</strong> Death, fire, wolves, ghosts, saints, and sinners for the outlaw end; eagles, road, iron, and freedom for the riding-club end.</li>
+          <li><strong>Territory and place.</strong> Many clubs root themselves in a city, state, or region, tying the name to home turf.</li>
+        </ul>
+
+        <h2>Outlaw Tone vs. Riding-Club Tone</h2>
         <p>
-          The generator also keeps your ideas private. Names are created in your browser and are not sent to our servers. You can use it in a private or incognito window if you prefer. Because generation is local, there is no risk of your shortlist being stored or logged. That matters when you are testing ideas before you settle on a final Motorcycle Club name or character name.
-        </p>
-        <p>
-          A good Motorcycle Club name generator also standardizes the workflow: set how many names you want, click generate, copy the list, and check availability. You get a consistent way to explore username ideas without writing scripts or visiting multiple sites. The output is easy to paste into notes or a document so you can track which names you have already checked on Motorcycle Club or other platforms.
+          The most important choice is tone, because it changes everything about the name. An <strong>outlaw / one-percenter</strong> club projects danger and defiance — the &quot;1%&quot; itself refers to the idea that 99% of riders are law-abiding and the rest are not. These names lean menacing: Reapers, Iron Serpents, Hells Reborn, Dead Saints. A <strong>riding club</strong> or family club projects camaraderie and the open road, and its name is warmer and prouder: Iron Eagles, Freedom Riders, Highway Saints, Steel Horsemen. Decide which world your club lives in before you pick, because a wholesome charity ride named &quot;Skull Reapers MC&quot; sends the wrong message, and a hardened outlaw crew named &quot;Sunshine Riders&quot; sends an even worse one.
         </p>
 
-        <h2>How the Motorcycle Club Name Generator Works (Step by Step)</h2>
+        <h2>Territory, Chapters, and Structure</h2>
         <p>
-          When you open the page, you choose how many names you want per run (1–24). Clicking &quot;Generate names&quot; triggers the tool to randomly combine curated biker-style elements in your browser. Each run is independent; no names or settings are sent to a server. The result is a list of Motorcycle Club name ideas, one per line. You can copy the full list with one click and paste it into a notes app. To get more ideas, run the generator again. The tool does not check Motorcycle Club or any platform for availability—you must do that yourself.
+          Established clubs are not single units — they are networks of <strong>chapters</strong> spread across territories, and the naming reflects that. A club has a <em>mother chapter</em> (the founding one) and named regional chapters: &quot;Hells Angels, Oakland&quot; or &quot;Bandidos, El Paso Chapter.&quot; For fiction or a large fictional club, name the club once, then name its chapters by city or region to convey reach and history. The territory a club claims is central to its identity and its conflicts, so pairing the club name with a place — and having rival clubs claim adjoining turf — gives a story its engine. When you generate a club name, consider generating a couple of chapter cities alongside it to flesh out the organization.
         </p>
+
+        <h2>Patches, Colors, and What the Name Implies</h2>
         <p>
-          The underlying word lists are designed to sound like gaming club and biker names: bold, memorable, and easy to type. The generator shuffles and combines these elements so that each run produces different combinations. That randomness helps you discover names you might not have thought of on your own. Because everything runs in the browser, the Motorcycle Club name generator works offline once the page is loaded and does not depend on a backend service.
+          A club&apos;s name and its <strong>colors</strong> (the patches on the cut) are inseparable, and a strong name suggests its own imagery. The three-piece patch — top rocker (club name), center logo, bottom rocker (territory) — means the name has to work as the top line of a design. Names built on a clear image (Reapers, Iron Serpents, Ravens) translate straight into a center patch; abstract names are harder to visualize on a cut. If you are designing a fictional club fully, pick a name whose central noun gives you an obvious emblem — a skull, a serpent, an eagle, a flaming wheel — so the name and the colors reinforce each other.
         </p>
+
+        <h2>Naming a Club for Fiction and Games</h2>
         <p>
-          There are no hidden steps. You set the count, click generate, and receive a list. Copying is one click; pasting into your own document keeps your shortlist in one place. Running the Motorcycle Club name generator multiple times is the intended workflow when you want a large pool of character name ideas before checking availability.
+          For a Sons of Anarchy-style story or a game faction, the club name is a character in its own right. It should telegraph the club&apos;s role — antagonist, antihero crew, or honorable riders — and hint at its history. Generate a batch, and read each name as if it were shouted across a bar or printed on a cut: does it sound like a group you would fear, respect, or ride with? For a game, a memorable, punchy name that fits on a UI banner and reads at a glance works best. Keep the ones that carry both attitude and clarity, and pair the winner with a territory and a chapter or two to make the club feel like it existed before the story started.
         </p>
 
         <h2>How to Use This Motorcycle Club Name Generator</h2>
-        <p>Follow these steps to get Motorcycle Club name ideas:</p>
         <ol className="list-decimal pl-6 space-y-2">
           <li>Set how many names you want per run (1–24).</li>
-          <li>Click &quot;Generate names&quot; to get a new list of character name ideas.</li>
-          <li>Use the Copy button to copy all names to your clipboard.</li>
-          <li>Paste into a notes app or document, then check your game or story for availability and pick one.</li>
-          <li>Run again for more options; no account or download is required.</li>
+          <li>Click <strong>Generate names</strong> to get a fresh batch of MC and biker club names.</li>
+          <li>Decide your tone first — outlaw menace or riding-club pride — and keep the names that match.</li>
+          <li>Use the Copy button to save your shortlist, then pair a favorite with a territory or chapter city to flesh it out.</li>
+          <li>Run again as often as you like — there is no account, no download, and no limit on runs.</li>
         </ol>
         <p>
-          The Motorcycle Club name generator runs in your browser; your settings and generated names are not sent to any server. You can run it as often as you like. Building a shortlist of five to ten options before checking availability on Motorcycle Club is a good habit, since popular usernames are often taken. Have backups ready so that if your first choice is unavailable, you can try the next name on your list.
+          Generation happens entirely in your browser. Your settings and the names you create are never sent to a server, so your club concepts and story notes stay private until you choose to share them.
         </p>
 
-        <h2>Motorcycle Club and Gamer Naming Style</h2>
+        <h2>Common Mistakes to Avoid</h2>
         <p>
-          Motorcycle Club names and character names often use bold, memorable word combinations: action words, nicknames, or creative spellings. This Motorcycle Club name generator uses curated biker-style elements and combines them at random so you get new combinations that fit that style. The output is for inspiration only; the tool does not check Motorcycle Club or any platform for availability. You can use the names as-is or tweak spelling and punctuation to make them your own.
-        </p>
-        <p>
-          Different games and communities favor different styles. Some players prefer short, punchy character names; others like longer usernames. Running the generator multiple times gives you a mix of lengths and styles. Skim the list, mark the ones you like, and then verify each one on your game or story. The Motorcycle Club name generator is a starting point—your final choice should fit your personality and the rules of your platform.
+          The biggest error is tone mismatch — pairing menacing outlaw imagery with a friendly group, or vice versa. For real riding groups, avoid names that copy an existing established club (the Hells Angels and others actively protect their names and colors); overlap can cause genuine trouble, not just confusion. Do not overload a name with too many hard words at once (&quot;Death Skull Reaper Demons MC&quot; collapses under its own weight); one strong central image beats four. And make sure it works as a top rocker — a name that is too long will not fit a patch or read on the road.
         </p>
 
-        <h2>When to Use a Motorcycle Club Name Generator</h2>
+        <h2>Building the Whole Club</h2>
         <p>
-          Use this Motorcycle Club name generator when you need Motorcycle Club or biker-style username ideas quickly. Common use cases include creating a new Motorcycle Club account or updating your profile name, choosing an in-game name for esports or casual play, and picking a stream or social handle. The same tool works for other platforms—Discord, Xbox, PlayStation, or social profiles—as inspiration. Names must be unique on each platform, so always check availability before committing.
-        </p>
-        <p>
-          Another good time to use a Motorcycle Club name generator is when you are rebranding. If you have used the same character name for years and want a fresh identity, generating a batch of ideas helps you explore options without pressure. Run the tool several times, paste results into one document, and remove duplicates. Then check Motorcycle Club and any other platforms you use to see which names are still available. Having a shortlist saves time compared to checking one idea at a time.
-        </p>
-
-        <h2>Use Cases in Detail: Profiles, Esports, and Streams</h2>
-        <p>
-          Players use the Motorcycle Club name generator when creating a new Motorcycle Club account or refreshing their profile name. Esports and streamers use it for in-game names or stream handles. The same tool works for other platforms—Discord, Xbox, PlayStation, or social—as inspiration; you must check each platform for availability. Run the generator multiple times to build a shortlist, then check which names are free on your platform. The Motorcycle Club name generator does not reserve or validate names; it only suggests combinations.
-        </p>
-        <p>
-          Content creators often need a consistent handle across Steam, streaming, and social media. Generating a batch of character name ideas lets you test different options before you commit. Copy the names you like into a single list, then check availability on each service. If one name is taken on Motorcycle Club but free elsewhere, you can still use it on the platforms where it is available, or use the generator again to find alternatives that work everywhere.
-        </p>
-
-        <h2>Tips for Choosing a Motorcycle Club Username</h2>
-        <p>
-          Pick a name that is easy to remember and type. Short character names are easier to say in voice chat and less likely to be mistyped. Run the Motorcycle Club name generator multiple times to get a shortlist, then check your game or story for availability. Have a few backups in case your first choice is taken. Avoid names that might be mistaken for someone else or that break platform rules. The generator gives you ideas only; the final choice is yours.
-        </p>
-        <p>
-          Consider how the name will look in different contexts: in-game, on a stream overlay, or in a friend list. Some combinations look great in one font but odd in another. If you plan to use the same handle across multiple games and platforms, check availability everywhere before you invest in branding. The Motorcycle Club name generator is a free way to explore options without committing until you have confirmed that your chosen Motorcycle Club name or character name is available.
-        </p>
-
-        <h2>Running the Motorcycle Club Name Generator in Batches</h2>
-        <p>
-          When you need many username ideas, run the Motorcycle Club name generator multiple times. Each run gives up to 24 names. Paste each run into the same document and remove duplicates if any appear. Check availability on your platform for each name you like. There is no daily or total limit; you can run the generator as often as you want. Batching is useful when you are setting up several accounts, testing ideas for a team, or simply want a large pool of character name options before making a decision.
-        </p>
-        <p>
-          Keeping a single document with all your generated Motorcycle Club name ideas makes it easy to track which names you have already checked. Mark names as &quot;taken&quot; or &quot;available&quot; as you go. That way you avoid re-checking the same name on Motorcycle Club or another platform. The Motorcycle Club name generator does not remember previous runs, so your document is your only record of the ideas you have collected.
-        </p>
-
-        <h2>Privacy and Local Processing</h2>
-        <p>
-          This Motorcycle Club name generator runs entirely in your browser. When you set the number of names and click generate, the names are created locally on your device. Your choices and the generated names are not sent to our servers. We do not store your inputs or the generated list. No account or login is required. That means your shortlist of character name ideas stays on your machine unless you choose to copy it somewhere else.
-        </p>
-        <p>
-          Because generation is local, the tool is suitable for use in private or incognito windows. If you close the tab, the generated list is gone unless you have copied it. There is no server-side log of what names you generated or how many times you ran the Motorcycle Club name generator. This privacy model is intentional: username brainstorming is personal, and the tool is designed so that you control where your ideas go.
-        </p>
-
-        <h2>Copying and Exporting Names</h2>
-        <p>
-          Use the Copy button to copy all generated Motorcycle Club name ideas to your clipboard (one per line). Paste into a notes app or document. Check your game or story for availability before committing to a name. The names are plain text, so they work in any editor or form. If you paste into a spreadsheet, each line can go in its own cell for easy tracking. The Motorcycle Club name generator does not export to a file; copying and pasting is the intended way to save your shortlist.
-        </p>
-
-        <h2>Limits and Batch Size</h2>
-        <p>
-          You can request 1–24 names per run with this Motorcycle Club name generator. There is no daily or total limit. Run the generator again for more options. No download or account is required. If you need more than 24 names in one go, run the tool multiple times and paste the results into one document. Removing duplicates is up to you; the generator does not track previous output.
-        </p>
-
-        <h2>No Download or Account Required</h2>
-        <p>
-          This Motorcycle Club name generator runs entirely in your browser. You do not need to download software or create an account. Open the page, set how many names you want, and click generate. The tool is free and works on desktop, tablet, and phone. That makes it easy to use when you are away from your main device or when you want to quickly generate character name ideas without installing anything.
-        </p>
-
-        <h2>Who Uses a Motorcycle Club Name Generator?</h2>
-        <p>
-          Players use the Motorcycle Club name generator when creating or updating a Motorcycle Club profile, or when they want a new character name for other platforms. Esports and streamers use it for in-game names or stream handles. The same tool works for Discord, Xbox, PlayStation, or social profiles—always check availability on each platform. Educators and workshop leaders sometimes use it to demonstrate username creation or digital identity in a classroom setting. No account or download is required on our site.
-        </p>
-        <p>
-          Anyone who needs a steady supply of username ideas can benefit. Whether you are a casual gamer, a competitive player, or a content creator, the Motorcycle Club name generator provides a fast way to explore options. The key is to treat the output as inspiration and always verify availability on Motorcycle Club and any other platform where you plan to use the name.
-        </p>
-
-        <h2>Getting the Most Out of the Motorcycle Club Name Generator</h2>
-        <p>
-          Run the generator several times and paste all results into one document. Skim for names that fit your style and check your platform for availability. Shortlist five to ten options so you have backups if your first choice is taken. The Motorcycle Club name generator does not check Motorcycle Club or any platform; you must do that yourself. When you have a shortlist, check availability one by one. Usernames are often taken on popular services, so having several options saves time.
-        </p>
-        <p>
-          Another tip is to try different batch sizes. Sometimes generating 24 names at once gives you a good mix; other times you may prefer smaller runs so you can review each set before generating more. The tool is flexible. Use it whenever you need new Motorcycle Club name ideas or character name inspiration. Bookmarking the page makes it easy to return when you are ready to refresh your profile or create a new account.
-        </p>
-
-        <h2>Typical Workflow for the Motorcycle Club Name Generator</h2>
-        <p>
-          A typical workflow is: open the page, set the number of names (e.g. 12 or 24), click generate, then copy the list. Paste into a notes app. Check your game or story for availability for each name you like. If your first choice is taken, try the next. Run the Motorcycle Club name generator again for more options. The whole process takes a few minutes. No account or download is required. Bookmark the page for quick access when you need new username ideas. The tool is free and runs in your browser with no sign-up.
-        </p>
-
-        <h2>What This Tool Does NOT Do</h2>
-        <ul>
-          <li>It does not check Motorcycle Club or any platform for username availability.</li>
-          <li>It does not reserve or hold names for you.</li>
-          <li>It does not store your generated list or your settings.</li>
-          <li>It does not connect to Steam, Discord, or any external gaming service.</li>
-        </ul>
-        <p>
-          This Motorcycle Club name generator produces name ideas only. It does not validate availability, create accounts, or manage your profile. You must check Motorcycle Club or your chosen platform yourself and follow that platform&apos;s rules when creating or changing your username. The tool is a brainstorming aid, not a replacement for checking availability.
-        </p>
-
-        <h2>Privacy and Security Notes</h2>
-        <p>
-          The Motorcycle Club name generator runs entirely in your browser. It does not send data to a server and does not store generated values. This is helpful for quick brainstorming and offline use. If you refresh the page, the last generated list is cleared. Copy any names you want to keep before closing or refreshing.
-        </p>
-        <p>
-          For account security, never share your Motorcycle Club password or other credentials. The generator only suggests usernames; it does not handle login or account creation. When you check availability on Motorcycle Club or another platform, use the official site or app and ensure you are on a secure connection. The Motorcycle Club name generator is a standalone tool and does not integrate with any login system.
-        </p>
-
-        <h2>Final Summary and When to Use This Tool</h2>
-        <p>
-          The Motorcycle Club name generator provides a fast way to create username and character name ideas for Motorcycle Club and other fiction and creative projects. Set the number of names (1–24) and run as often as you like. Copy results and check your platform for availability. The tool runs locally in your browser with no sign-up. Keep a shortlist of options in case your first choice is taken. No download or account is required. The generator is free and works on any device.
-        </p>
-        <p>
-          Use this Motorcycle Club name generator when you need Motorcycle Club name ideas, character name inspiration, or a quick way to explore options before checking availability. It is best for brainstorming, rebranding, and building a shortlist. Always verify availability on Motorcycle Club or your chosen platform before committing to a name. The tool is a practical free resource for gaming club and biker names.
+          A club name is the first thread; the full identity is woven from territory, chapters, colors, and a code the members live by. Once you have a name you love, let it drive the rest — the emblem it suggests, the turf it claims, the rivals it makes. Generate a batch, choose the name that carries the most story, and build outward from it, whether the club is riding through a novel, a game, or the real open road.
         </p>
       </div>
     </section>
