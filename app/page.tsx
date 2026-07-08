@@ -22,7 +22,7 @@ const HomePageArticle = dynamic(() => import('../components/HomePageArticle'), {
 
 export async function generateMetadata() {
   return buildMeta({
-    title: 'ChatGPT Text Cleaner - Remove Hidden Characters & Fix AI Spacing | GPTCLEANUP AI',
+    title: 'ChatGPT Text Cleaner - Watermark Remover & Detector | GPTCLEANUP AI',
     description: 'Clean and normalize AI output: remove hidden Unicode (ZWSP, NBSP, BOM), fix spacing, and keep paragraphs intact for Word, Docs, and SEO-friendly publishing.',
     urlPath: '/',
   });
