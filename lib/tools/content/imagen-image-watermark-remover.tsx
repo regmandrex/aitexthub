@@ -31,7 +31,7 @@ function WriteUp() {
         <p>Many SaaS products and creative tools are built on the Imagen API, providing Imagen-powered image generation within their own product experiences. Images delivered through these third-party integrations may or may not preserve watermarks depending on how the integration is implemented. This tool handles Imagen images regardless of whether they came directly from Google's API or through a third-party integration that preserved the watermarks.</p>
 
         <h2>How to Use the Imagen Image Watermark Remover</h2>
-        <p>Upload your Imagen image using the drag-and-drop area, file browser button, or clipboard paste (Ctrl+V). Select your removal options "” Full Removal (all metadata) or Selective Removal (preserve technical EXIF like resolution and color space), and optionally enable SynthID signal attenuation. Click Process and download the cleaned file. All processing runs locally in your browser without transmitting images to any server. The process takes under five seconds for most images.</p>
+        <p>Upload your Imagen image using the file browser below. Optionally set a corner crop to remove visible overlays and choose PNG or JPEG output. Click <strong>Clean image</strong> and download the cleaned result. All processing runs locally in your browser without any server upload.</p>
 
         <h2>Limitations</h2>
         <p>SynthID attenuation reduces signal strength by 65-85% in our testing but does not guarantee complete elimination. A highly sensitive SynthID detector may still register a reduced-confidence positive on attenuated images. Metadata removal is complete and reliable. For the best attenuation results, use original PNG files from the Imagen API rather than JPEG conversions.</p>

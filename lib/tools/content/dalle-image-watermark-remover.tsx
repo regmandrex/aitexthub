@@ -56,7 +56,7 @@ function WriteUp() {
         <p>Select your removal scope: Full Removal (all metadata including EXIF) or Selective Removal (preserve technical EXIF fields like resolution and color space). If you also want to address pixel-level signals, toggle the Pixel-Level Attenuation option. Most users select Full Removal for the cleanest output.</p>
 
         <h3>Step 3: Process and Download</h3>
-        <p>Click Process. The cleaned image is ready in under two seconds. Download it using the Download button. The output filename appends "-clean" to the original filename for easy identification. Verify the result by uploading to the DALL-E watermark detector on this site "” it should return no metadata-based signals.</p>
+        <p>Click <strong>Clean image</strong>. The cleaned image is ready in under two seconds. Download it using the Download button. The output filename appends "-clean" to the original filename for easy identification. Verify the result by uploading to the DALL-E watermark detector on this site "” it should return no metadata-based signals.</p>
 
         <h2>What This Tool Cannot Do</h2>
         <p>Transparency about limitations prevents misuse and sets correct expectations.</p>
