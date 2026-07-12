@@ -100,8 +100,34 @@ export async function POST(req: NextRequest) {
   );
 
   if (userResult.rows.length === 0) {
-    console.error(`[webhook] No user found for email: ${customerEmail}`);
-    return NextResponse.json({ error: 'User not found' }, { status: 404 });
+    // Checkout can complete before the account exists (guest checkout, or the
+    // webhook racing signup). Never discard a paid entitlement: park it by
+    // email and let getUserPlan() claim it on the user's first status check.
+    const revokeEvents = new Set([
+      'subscription_expired',
+      'subscription_paused',
+      'subscription_payment_refunded',
+    ]);
+    const isPro = !revokeEvents.has(eventName);
+    await pool.query(
+      `INSERT INTO public.pending_subscriptions
+         (email, is_pro, plan, lemon_squeezy_subscription_id, lemon_squeezy_customer_id, lemon_squeezy_variant_id, pro_expires_at, words_limit, updated_at)
+       VALUES (LOWER($1), $2, $3, $4, $5, $6, $7, $8, now())
+       ON CONFLICT (email) DO UPDATE SET
+         is_pro = $2,
+         plan = $3,
+         lemon_squeezy_subscription_id = $4,
+         lemon_squeezy_customer_id = $5,
+         lemon_squeezy_variant_id = $6,
+         pro_expires_at = $7,
+         words_limit = $8,
+         updated_at = now()`,
+      [customerEmail, isPro, plan, subscriptionId, customerId, variantId, endsAt, wordsLimit],
+    );
+    console.warn(
+      `[webhook] No user yet for ${customerEmail} (${eventName}) — entitlement parked for reconcile on first login`,
+    );
+    return NextResponse.json({ ok: true, parked: true });
   }
 
   const userId = userResult.rows[0].id;
