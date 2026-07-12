@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from 'react';
 import { trackEvent } from '@/lib/analytics';
+import { useSession } from '@/lib/auth-client';
+import { withCheckoutEmail } from '@/lib/checkout';
 
 type Plan = {
   id: 'weekly' | 'monthly' | 'annual';
@@ -72,6 +74,7 @@ const PLANS: Plan[] = [
 
 export default function PricingModal({ onClose }: { onClose: () => void }) {
   const [selected, setSelected] = useState<Plan['id']>('annual');
+  const { data: session } = useSession();
 
   useEffect(() => {
     trackEvent('pricing_viewed');
@@ -197,7 +200,7 @@ export default function PricingModal({ onClose }: { onClose: () => void }) {
         {/* CTA */}
         <div className="px-5 pb-5">
           <a
-            href={activePlan.checkoutUrl ?? '/pro#pricing'}
+            href={activePlan.checkoutUrl ? withCheckoutEmail(activePlan.checkoutUrl, session?.user?.email) : '/pro#pricing'}
             onClick={() => trackEvent('checkout_started', { plan: activePlan.id })}
             className="block w-full rounded-xl bg-gradient-to-r from-violet-600 to-purple-700 py-3.5 text-center text-sm font-bold text-white shadow-lg shadow-violet-200 transition-all hover:from-violet-700 hover:to-purple-800 hover:shadow-xl"
           >

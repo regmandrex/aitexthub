@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import crypto from 'crypto';
 import { Pool } from 'pg';
 import { sendWelcomeEmail } from '@/lib/emails/welcome';
+import { sendActivateProEmail } from '@/lib/emails/activate';
 
 const pool = new Pool({ connectionString: process.env.DATABASE_URL });
 
@@ -109,7 +110,10 @@ export async function POST(req: NextRequest) {
       'subscription_payment_refunded',
     ]);
     const isPro = !revokeEvents.has(eventName);
-    await pool.query(
+    // (xmax = 0) is true only when the upsert inserted a new row — i.e. the
+    // first time we park this email. Used to send the activation email once,
+    // not on every subsequent renewal webhook.
+    const parkResult = await pool.query(
       `INSERT INTO public.pending_subscriptions
          (email, is_pro, plan, lemon_squeezy_subscription_id, lemon_squeezy_customer_id, lemon_squeezy_variant_id, pro_expires_at, words_limit, updated_at)
        VALUES (LOWER($1), $2, $3, $4, $5, $6, $7, $8, now())
@@ -121,12 +125,17 @@ export async function POST(req: NextRequest) {
          lemon_squeezy_variant_id = $6,
          pro_expires_at = $7,
          words_limit = $8,
-         updated_at = now()`,
+         updated_at = now()
+       RETURNING (xmax = 0) AS inserted`,
       [customerEmail, isPro, plan, subscriptionId, customerId, variantId, endsAt, wordsLimit],
     );
     console.warn(
       `[webhook] No user yet for ${customerEmail} (${eventName}) — entitlement parked for reconcile on first login`,
     );
+    // Tell the buyer to create their account so the paid plan activates.
+    if (isPro && parkResult.rows[0]?.inserted) {
+      await sendActivateProEmail(customerEmail, plan);
+    }
     return NextResponse.json({ ok: true, parked: true });
   }
 

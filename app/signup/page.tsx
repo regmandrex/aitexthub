@@ -10,7 +10,9 @@ function SignupForm() {
   const searchParams = useSearchParams();
   const redirect = searchParams.get('redirect') ?? '/';
 
-  const [email, setEmail] = useState('');
+  // Prefilled by the Pro-activation email so the account matches the paid
+  // subscription email exactly (see lib/emails/activate.ts).
+  const [email, setEmail] = useState(searchParams.get('email') ?? '');
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
   const [verifyEmail, setVerifyEmail] = useState(false);
