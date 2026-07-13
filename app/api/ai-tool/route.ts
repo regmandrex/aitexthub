@@ -1,7 +1,14 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { headers } from 'next/headers';
+import { auth } from '@/lib/auth';
+import { getUserPlan, incrementWordsUsed } from '@/lib/subscription';
 
 const OPENROUTER_API = 'https://openrouter.ai/api/v1/chat/completions';
 const MODEL = process.env.OPENROUTER_MODEL ?? 'openrouter/auto';
+
+// Matches the advertised free tier on /pro ("500 words per run").
+// Pro users are metered against their plan's words_limit instead.
+const FREE_WORDS_PER_RUN = 500;
 
 const PROMPTS: Record<string, (text: string) => string> = {
   humanizer: (text) =>
@@ -268,6 +275,38 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ error: `Unknown tool: ${tool}` }, { status: 400 });
     }
 
+    // ── Quota enforcement ────────────────────────────────────────────────
+    // Pro: metered against the plan's words_limit (null = unlimited).
+    // Free / signed-out: capped per run, matching the advertised free tier.
+    const wordCount = text.trim().split(/\s+/).length;
+    const session = await auth.api.getSession({ headers: await headers() });
+    const userId = session?.user?.id ?? null;
+    let isPro = false;
+
+    if (userId) {
+      const plan = await getUserPlan(userId);
+      isPro = plan.isPro;
+      if (isPro && plan.wordsLimit !== null && plan.wordsUsed + wordCount > plan.wordsLimit) {
+        return NextResponse.json(
+          {
+            error: `This request (${wordCount.toLocaleString()} words) would exceed your plan's remaining quota (${Math.max(0, plan.wordsLimit - plan.wordsUsed).toLocaleString()} of ${plan.wordsLimit.toLocaleString()} words left). Your quota resets at renewal.`,
+            quotaExceeded: true,
+          },
+          { status: 403 },
+        );
+      }
+    }
+
+    if (!isPro && wordCount > FREE_WORDS_PER_RUN) {
+      return NextResponse.json(
+        {
+          error: `Free tools are limited to ${FREE_WORDS_PER_RUN} words per run (you sent ${wordCount.toLocaleString()}). Upgrade to Pro for 50,000+ words.`,
+          upgradeRequired: true,
+        },
+        { status: 403 },
+      );
+    }
+
     const apiKey = process.env.OPENROUTER_API_KEY;
     if (!apiKey || apiKey === 'your-openrouter-key-here') {
       return NextResponse.json({ error: 'API key not configured.' }, { status: 500 });
@@ -296,6 +335,11 @@ export async function POST(req: NextRequest) {
 
     const data = await res.json();
     const output = data.choices?.[0]?.message?.content ?? '';
+
+    // Record usage only after a successful run so failures never burn quota.
+    if (userId && isPro) {
+      await incrementWordsUsed(userId, wordCount);
+    }
 
     return NextResponse.json({ output });
   } catch (err) {
