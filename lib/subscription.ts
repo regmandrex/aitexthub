@@ -1,4 +1,5 @@
 import { Pool } from 'pg';
+import { sendWelcomeEmail } from '@/lib/emails/welcome';
 
 const pool = new Pool({ connectionString: process.env.DATABASE_URL });
 
@@ -48,7 +49,8 @@ async function claimPendingSubscription(userId: string): Promise<UserPlan | null
   const { rows } = await pool.query(
     `SELECT p.email, p.is_pro, p.plan, p.lemon_squeezy_subscription_id,
             p.lemon_squeezy_customer_id, p.lemon_squeezy_variant_id,
-            p.pro_expires_at, p.words_limit
+            p.pro_expires_at, p.words_limit,
+            u.name AS user_name
      FROM public.pending_subscriptions p
      JOIN public."user" u ON LOWER(u.email) = p.email
      WHERE u.id = $1
@@ -76,6 +78,12 @@ async function claimPendingSubscription(userId: string): Promise<UserPlan | null
   );
   await pool.query(`DELETE FROM public.pending_subscriptions WHERE email = $1`, [p.email]);
   console.log(`[subscription] Claimed parked entitlement for user ${userId} (${p.plan})`);
+
+  // Their paid plan just connected — welcome them automatically, same as any
+  // direct subscriber. Fire-and-forget: sendWelcomeEmail never throws.
+  if (p.is_pro) {
+    void sendWelcomeEmail(p.email, p.user_name ?? '', p.plan);
+  }
 
   // Row now exists either way (insert or concurrent write) — recursion terminates.
   return getUserPlan(userId);
