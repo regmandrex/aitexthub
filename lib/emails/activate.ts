@@ -11,8 +11,15 @@ const PLAN_LABELS: Record<string, string> = {
   annual: 'Annual',
 };
 
+const PLAN_QUOTA_TEXT: Record<string, string> = {
+  weekly: '50,000 words / week',
+  monthly: '300,000 words / month',
+  annual: 'Unlimited words',
+};
+
 export function activateProHtml(email: string, plan: string): string {
   const planLabel = PLAN_LABELS[plan] ?? 'Pro';
+  const quota = PLAN_QUOTA_TEXT[plan] ?? 'All Pro tools & higher limits';
   const signupUrl = `https://gptcleanuptools.com/signup?email=${encodeURIComponent(email)}`;
 
   return `
@@ -31,6 +38,11 @@ export function activateProHtml(email: string, plan: string): string {
           To activate it, create your account using <strong>this exact email address</strong>
           (<strong>${email}</strong>). Your Pro plan links up automatically the moment you sign in.
         </p>
+
+        <div style="margin:20px 0;border:1px solid #e2e8f0;border-radius:12px;padding:16px 18px;background:#faf5ff">
+          <p style="margin:0;color:#7c3aed;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.5px">Your plan</p>
+          <p style="margin:6px 0 0;color:#1e293b;font-size:18px;font-weight:700">${planLabel} — ${quota}</p>
+        </div>
 
         <div style="margin:20px 0;border:1px solid #fde68a;border-radius:12px;padding:14px 16px;background:#fffbeb">
           <p style="margin:0;color:#92400e;font-size:13px;line-height:1.6">
