@@ -329,7 +329,7 @@ export function GenericTextProcessorTool({
                 </button>
 
                 <p className="mt-2 text-center text-[10px] uppercase tracking-widest text-slate-500">
-                  {isLoggedIn ? 'From $3.99/week · Cancel anytime' : 'Free to sign up · No credit card'}
+                  {isLoggedIn ? 'From $4.99/week · Cancel anytime' : 'Free to sign up · No credit card'}
                 </p>
               </div>
             </div>

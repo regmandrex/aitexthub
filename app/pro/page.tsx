@@ -5,7 +5,7 @@ import CheckoutButton from '@/components/CheckoutButton';
 
 const title = 'GPTCleanup Pro — Undetectable AI for Real Work';
 const description =
-  'Pro plan for GPTCleanup Tools: humanize AI text to pass 99% of detectors, remove ads, unlock bulk image processing, raise input limits, and access premium tools. From $3.99/week.';
+  'Pro plan for GPTCleanup Tools: humanize AI text to pass 99% of detectors, remove ads, unlock bulk image processing, raise input limits, and access premium tools. From $4.99/week.';
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildMeta({ title, description, urlPath: '/pro' });
@@ -45,8 +45,8 @@ const PLANS: Plan[] = [
   {
     id: 'weekly',
     name: 'Weekly',
-    price: '$3.99',
-    originalPrice: '$7',
+    price: '$4.99',
+    originalPrice: '$9',
     period: 'per week',
     cta: 'Get Weekly Pass',
     features: [
@@ -60,10 +60,10 @@ const PLANS: Plan[] = [
   {
     id: 'monthly',
     name: 'Monthly',
-    price: '$17.99',
-    originalPrice: '$25',
+    price: '$19.99',
+    originalPrice: '$29',
     period: 'per month',
-    saveText: 'Save 28%',
+    saveText: 'Save 31%',
     cta: 'Get Pro Monthly',
     features: [
       '300,000 words / month',
@@ -76,12 +76,12 @@ const PLANS: Plan[] = [
   {
     id: 'annual',
     name: 'Annual',
-    price: '$10.25',
-    originalPrice: '$16.67',
+    price: '$12.99',
+    originalPrice: '$19',
     period: 'per month',
-    subPeriod: 'billed $122.99 yearly',
+    subPeriod: 'billed $155.99 yearly',
     badge: 'BEST VALUE',
-    saveText: 'Save 39%',
+    saveText: 'Save 35%',
     cta: 'Get Pro Annual',
     highlight: true,
     features: [

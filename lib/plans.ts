@@ -12,9 +12,9 @@ export type PlanConfig = {
 };
 
 export const PLANS: Record<PlanId, PlanConfig> = {
-  weekly: { wordsLimit: 50000, videosLimit: 5 },
-  monthly: { wordsLimit: 300000, videosLimit: 30 },
-  annual: { wordsLimit: null, videosLimit: 200 },
+  weekly: { wordsLimit: 50000, videosLimit: 4 },
+  monthly: { wordsLimit: 300000, videosLimit: 15 },
+  annual: { wordsLimit: null, videosLimit: 95 },
 };
 
 // Fail safe to the most restrictive plan for an unrecognized tier — never
