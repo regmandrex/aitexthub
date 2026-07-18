@@ -62,8 +62,8 @@ async function claimPendingSubscription(userId: string): Promise<UserPlan | null
   const p = rows[0];
   await pool.query(
     `INSERT INTO public.user_subscriptions
-       (user_id, is_pro, plan, lemon_squeezy_subscription_id, lemon_squeezy_customer_id, lemon_squeezy_variant_id, pro_expires_at, words_used, words_limit, billing_period_start)
-     VALUES ($1, $2, $3, $4, $5, $6, $7, 0, $8, now())
+       (user_id, is_pro, plan, lemon_squeezy_subscription_id, lemon_squeezy_customer_id, lemon_squeezy_variant_id, pro_expires_at, words_used, words_limit, videos_used, videos_limit, billing_period_start)
+     VALUES ($1, $2, $3, $4, $5, $6, $7, 0, $8, 0, $9, now())
      ON CONFLICT (user_id) DO NOTHING`,
     [
       userId,
@@ -74,6 +74,7 @@ async function claimPendingSubscription(userId: string): Promise<UserPlan | null
       p.lemon_squeezy_variant_id,
       p.pro_expires_at,
       p.words_limit,
+      p.videos_limit ?? null,
     ],
   );
   await pool.query(`DELETE FROM public.pending_subscriptions WHERE email = $1`, [p.email]);
@@ -112,6 +113,66 @@ export async function incrementWordsUsed(userId: string, words: number): Promise
     wordsUsed: plan.wordsUsed + words,
     wordsLimit: plan.wordsLimit,
   };
+}
+
+export type VideoQuota = {
+  isPro: boolean;
+  videosUsed: number;
+  videosLimit: number | null;
+};
+
+/** Current video-inpaint usage for a user (no reservation). */
+export async function getVideoQuota(userId: string): Promise<VideoQuota> {
+  const plan = await getUserPlan(userId);
+  const result = await pool.query(
+    `SELECT videos_used, videos_limit FROM public.user_subscriptions WHERE user_id = $1 LIMIT 1`,
+    [userId],
+  );
+  const row = result.rows[0];
+  return {
+    isPro: plan.isPro,
+    videosUsed: row?.videos_used ?? 0,
+    videosLimit: row?.videos_limit ?? null,
+  };
+}
+
+/**
+ * Atomically reserve one video-inpaint job: increments videos_used only if the
+ * user is Pro and under their limit. Returns whether the reservation succeeded.
+ * Doing the check + increment in a single UPDATE prevents two concurrent jobs
+ * from both passing a stale limit check. Call releaseVideo() to refund on failure.
+ */
+export async function reserveVideo(
+  userId: string,
+): Promise<{ allowed: boolean; videosUsed: number; videosLimit: number | null }> {
+  const plan = await getUserPlan(userId);
+  if (!plan.isPro) {
+    return { allowed: false, videosUsed: 0, videosLimit: null };
+  }
+  const { rows } = await pool.query(
+    `UPDATE public.user_subscriptions
+       SET videos_used = videos_used + 1, updated_at = now()
+     WHERE user_id = $1
+       AND is_pro = true
+       AND (videos_limit IS NULL OR videos_used < videos_limit)
+     RETURNING videos_used, videos_limit`,
+    [userId],
+  );
+  if (rows.length === 0) {
+    const q = await getVideoQuota(userId);
+    return { allowed: false, videosUsed: q.videosUsed, videosLimit: q.videosLimit };
+  }
+  return { allowed: true, videosUsed: rows[0].videos_used, videosLimit: rows[0].videos_limit };
+}
+
+/** Refund a reserved video job (e.g. the inpaint failed before producing output). */
+export async function releaseVideo(userId: string): Promise<void> {
+  await pool.query(
+    `UPDATE public.user_subscriptions
+       SET videos_used = GREATEST(0, videos_used - 1), updated_at = now()
+     WHERE user_id = $1`,
+    [userId],
+  );
 }
 
 export async function resetWordsUsed(userId: string): Promise<void> {

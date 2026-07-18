@@ -64,9 +64,10 @@ import { RobotsTxtGeneratorTool } from '@/components/tools/RobotsTxtGeneratorToo
 import { CronGeneratorTool } from '@/components/tools/CronGeneratorTool';
 import {
   GenericAiTextTool,
-  GenericWatermarkTool,
   RankTrackerTool,
 } from '@/components/tools/GenericToolFamilyPanels';
+import VideoWatermarkTool from '@/components/tools/VideoWatermarkTool';
+import VideoInpaintTool from '@/components/tools/VideoInpaintTool';
 import { ImageWatermarkCleanerTool } from '@/components/tools/ImageWatermarkCleanerTool';
 import { ImageWatermarkDetectorTool } from '@/components/tools/ImageWatermarkDetectorTool';
 // ChatGPT tools
@@ -275,14 +276,14 @@ export async function ToolPageRenderer({ slug }: ToolPageRendererProps) {
       )
     ) : tool.ui.kind === 'watermark-remover' ? (
       slug.includes('video') ? (
-        <GenericWatermarkTool mode="remove" media="video" modelName={tool.model} />
+        <VideoInpaintTool modelName={tool.model} />
       ) : (
         <ImageWatermarkCleanerTool modelName={tool.model} />
       )
     ) : tool.ui.kind === 'watermark-detector' && slug.includes('image') ? (
       <ImageWatermarkDetectorTool modelName={tool.model} />
     ) : tool.ui.kind === 'watermark-detector' && slug.includes('video') ? (
-      <GenericWatermarkTool mode="detect" media="video" modelName={tool.model} />
+      <VideoWatermarkTool mode="detect" modelName={tool.model} />
     ) : undefined;
 
   return (
