@@ -6,7 +6,10 @@ export function webSiteSchema() {
   return {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    name: 'GPT CLEAN UP Tools',
+    // Google derives the search-result site name primarily from this and the
+    // homepage title. Lead with the descriptive brand we want shown.
+    name: 'ChatGPT Text Cleaner',
+    alternateName: ['GPTCLEANUP AI', 'GPT Clean Up Tools', 'AI Text Cleaner'],
     url: siteUrl,
   };
 }
