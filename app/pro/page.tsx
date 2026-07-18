@@ -5,7 +5,7 @@ import CheckoutButton from '@/components/CheckoutButton';
 
 const title = 'GPTCleanup Pro — Undetectable AI for Real Work';
 const description =
-  'Pro plan for GPTCleanup Tools: humanize AI text to pass 99% of detectors, remove ads, unlock bulk image processing, raise input limits, and access premium tools. From $4.99/week.';
+  'Pro plan for GPTCleanup Tools: LLM-powered AI humanizer, higher word limits, AI video watermark removal, no ads, and all 60+ premium tools. From $4.99/week.';
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildMeta({ title, description, urlPath: '/pro' });
@@ -14,15 +14,12 @@ export async function generateMetadata(): Promise<Metadata> {
 const DETECTORS = ['Turnitin', 'GPTZero', 'Originality.ai', 'Copyleaks', 'Winston AI', 'Sapling'];
 
 const COMPARISON: Array<{ feature: string; free: string; pro: string }> = [
-  { feature: 'Text cleaner & space remover', free: '5,000 chars per run', pro: 'Unlimited' },
-  { feature: 'AI Humanizer', free: 'Rule-based (basic)', pro: 'LLM-powered (Claude + GPT-4)' },
-  { feature: 'Humanizer quota', free: '500 words per run', pro: '50k / 300k / Unlimited' },
-  { feature: 'AI detectors bypassed', free: 'Limited', pro: '99% — Turnitin, GPTZero, Originality, Copyleaks' },
-  { feature: 'Image watermark remover', free: '1 image at a time', pro: 'Bulk (up to 100 images)' },
-  { feature: 'Video watermark remover', free: '60 seconds max', pro: 'Up to 30 minutes' },
+  { feature: 'AI Humanizer & rewriting tools', free: 'Rule-based (basic)', pro: 'LLM-powered' },
+  { feature: 'Words per run', free: '500 words', pro: '50k / 300k / Unlimited' },
+  { feature: 'AI detector checks', free: 'Limited', pro: 'Turnitin, GPTZero, Originality, Copyleaks & more' },
+  { feature: 'Image watermark / metadata remover', free: '✓', pro: '✓' },
+  { feature: 'AI video watermark removal', free: '—', pro: '4 / 15 / 95 videos per period' },
   { feature: 'Ads', free: 'Yes', pro: 'None' },
-  { feature: 'API access', free: 'No', pro: '1,000 requests/day' },
-  { feature: 'Priority processing', free: 'No', pro: 'Yes' },
   { feature: 'Email support', free: 'Community', pro: 'Direct support' },
 ];
 
@@ -97,11 +94,11 @@ const PLANS: Plan[] = [
 const FAQS: Array<{ q: string; a: string }> = [
   {
     q: 'What does Pro actually unlock?',
-    a: 'Pro removes ads sitewide, raises input limits across every tool (5,000 chars → unlimited on text tools, 1 → 100 images on watermark tools, 60s → 30min on video tools), unlocks the LLM-powered AI Humanizer that uses Claude and GPT-4 to genuinely rewrite content, and gives you API access for automation.',
+    a: 'Pro removes ads sitewide, raises your per-run limit from 500 words to your plan\'s full quota (50,000 / 300,000 / unlimited), unlocks the LLM-powered AI Humanizer that genuinely rewrites content instead of applying basic rules, and unlocks AI video watermark removal (4 / 15 / 95 videos per billing period depending on plan).',
   },
   {
     q: 'How is the Pro Humanizer different from the free one?',
-    a: 'The free humanizer applies rule-based transforms — useful for basic cleanup but detectable by modern AI checkers. The Pro humanizer routes your text through Claude and GPT-4 with carefully tuned prompts, producing genuinely human-feeling output that consistently passes Turnitin, GPTZero, Originality.ai, and Copyleaks at 99%+ rates in our testing.',
+    a: 'The free humanizer applies rule-based transforms — useful for basic cleanup but detectable by modern AI checkers. The Pro humanizer routes your text through a large language model with carefully tuned prompts, producing genuinely human-feeling output that performs far better against detectors like Turnitin, GPTZero, Originality.ai, and Copyleaks. No tool can guarantee a specific pass rate, since detectors change constantly.',
   },
     {
     q: 'Is there a free trial?',
@@ -146,8 +143,8 @@ export default function ProLandingPage() {
             </span>
           </h1>
           <p className="mx-auto mt-4 max-w-2xl text-base text-slate-600 md:text-lg">
-            Rewrite ChatGPT, Claude, and Gemini output with LLM-powered humanization that passes{' '}
-            <span className="font-semibold text-slate-900">99% of AI detectors</span> — plus bulk processing, no ads, and unlimited input across all 60+ tools.
+            Rewrite ChatGPT, Claude, and Gemini output with{' '}
+            <span className="font-semibold text-slate-900">LLM-powered humanization</span> built to beat modern AI detectors — plus higher word limits, AI video watermark removal, no ads, and all 60+ tools.
           </p>
 
           <div className="mt-6 flex flex-wrap justify-center gap-2">
