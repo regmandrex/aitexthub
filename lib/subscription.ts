@@ -49,7 +49,7 @@ async function claimPendingSubscription(userId: string): Promise<UserPlan | null
   const { rows } = await pool.query(
     `SELECT p.email, p.is_pro, p.plan, p.lemon_squeezy_subscription_id,
             p.lemon_squeezy_customer_id, p.lemon_squeezy_variant_id,
-            p.pro_expires_at, p.words_limit,
+            p.pro_expires_at, p.words_limit, p.videos_limit, p.images_limit,
             u.name AS user_name
      FROM public.pending_subscriptions p
      JOIN public."user" u ON LOWER(u.email) = p.email
@@ -62,8 +62,8 @@ async function claimPendingSubscription(userId: string): Promise<UserPlan | null
   const p = rows[0];
   await pool.query(
     `INSERT INTO public.user_subscriptions
-       (user_id, is_pro, plan, lemon_squeezy_subscription_id, lemon_squeezy_customer_id, lemon_squeezy_variant_id, pro_expires_at, words_used, words_limit, videos_used, videos_limit, billing_period_start)
-     VALUES ($1, $2, $3, $4, $5, $6, $7, 0, $8, 0, $9, now())
+       (user_id, is_pro, plan, lemon_squeezy_subscription_id, lemon_squeezy_customer_id, lemon_squeezy_variant_id, pro_expires_at, words_used, words_limit, videos_used, videos_limit, images_used, images_limit, billing_period_start)
+     VALUES ($1, $2, $3, $4, $5, $6, $7, 0, $8, 0, $9, 0, $10, now())
      ON CONFLICT (user_id) DO NOTHING`,
     [
       userId,
@@ -75,6 +75,7 @@ async function claimPendingSubscription(userId: string): Promise<UserPlan | null
       p.pro_expires_at,
       p.words_limit,
       p.videos_limit ?? null,
+      p.images_limit ?? null,
     ],
   );
   await pool.query(`DELETE FROM public.pending_subscriptions WHERE email = $1`, [p.email]);
@@ -170,6 +171,47 @@ export async function releaseVideo(userId: string): Promise<void> {
   await pool.query(
     `UPDATE public.user_subscriptions
        SET videos_used = GREATEST(0, videos_used - 1), updated_at = now()
+     WHERE user_id = $1`,
+    [userId],
+  );
+}
+
+/** Atomically reserve one AI image inpaint job (Pro + under limit). Mirrors reserveVideo. */
+export async function reserveImage(
+  userId: string,
+): Promise<{ allowed: boolean; imagesUsed: number; imagesLimit: number | null }> {
+  const plan = await getUserPlan(userId);
+  if (!plan.isPro) {
+    return { allowed: false, imagesUsed: 0, imagesLimit: null };
+  }
+  const { rows } = await pool.query(
+    `UPDATE public.user_subscriptions
+       SET images_used = images_used + 1, updated_at = now()
+     WHERE user_id = $1
+       AND is_pro = true
+       AND (images_limit IS NULL OR images_used < images_limit)
+     RETURNING images_used, images_limit`,
+    [userId],
+  );
+  if (rows.length === 0) {
+    const q = await pool.query(
+      `SELECT images_used, images_limit FROM public.user_subscriptions WHERE user_id = $1 LIMIT 1`,
+      [userId],
+    );
+    return {
+      allowed: false,
+      imagesUsed: q.rows[0]?.images_used ?? 0,
+      imagesLimit: q.rows[0]?.images_limit ?? null,
+    };
+  }
+  return { allowed: true, imagesUsed: rows[0].images_used, imagesLimit: rows[0].images_limit };
+}
+
+/** Refund a reserved image job. */
+export async function releaseImage(userId: string): Promise<void> {
+  await pool.query(
+    `UPDATE public.user_subscriptions
+       SET images_used = GREATEST(0, images_used - 1), updated_at = now()
      WHERE user_id = $1`,
     [userId],
   );

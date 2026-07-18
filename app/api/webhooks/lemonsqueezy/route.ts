@@ -3,7 +3,7 @@ import crypto from 'crypto';
 import { Pool } from 'pg';
 import { sendWelcomeEmail } from '@/lib/emails/welcome';
 import { sendActivateProEmail } from '@/lib/emails/activate';
-import { planWordsLimit, planVideosLimit } from '@/lib/plans';
+import { planWordsLimit, planVideosLimit, planImagesLimit } from '@/lib/plans';
 
 const pool = new Pool({ connectionString: process.env.DATABASE_URL });
 
@@ -81,6 +81,7 @@ export async function POST(req: NextRequest) {
   // fail safe to the weekly limits — never silently unlimited. See lib/plans.
   const wordsLimit = planWordsLimit(plan);
   const videosLimit = planVideosLimit(plan);
+  const imagesLimit = planImagesLimit(plan);
   const endsAt = attrs.ends_at ?? attrs.renews_at ?? null;
 
   console.log(`[webhook] ${eventName} for ${customerEmail ?? 'unknown'} (plan: ${plan})`);
@@ -109,8 +110,8 @@ export async function POST(req: NextRequest) {
     // not on every subsequent renewal webhook.
     const parkResult = await pool.query(
       `INSERT INTO public.pending_subscriptions
-         (email, is_pro, plan, lemon_squeezy_subscription_id, lemon_squeezy_customer_id, lemon_squeezy_variant_id, pro_expires_at, words_limit, videos_limit, updated_at)
-       VALUES (LOWER($1), $2, $3, $4, $5, $6, $7, $8, $9, now())
+         (email, is_pro, plan, lemon_squeezy_subscription_id, lemon_squeezy_customer_id, lemon_squeezy_variant_id, pro_expires_at, words_limit, videos_limit, images_limit, updated_at)
+       VALUES (LOWER($1), $2, $3, $4, $5, $6, $7, $8, $9, $10, now())
        ON CONFLICT (email) DO UPDATE SET
          is_pro = $2,
          plan = $3,
@@ -120,9 +121,10 @@ export async function POST(req: NextRequest) {
          pro_expires_at = $7,
          words_limit = $8,
          videos_limit = $9,
+         images_limit = $10,
          updated_at = now()
        RETURNING (xmax = 0) AS inserted`,
-      [customerEmail, isPro, plan, subscriptionId, customerId, variantId, endsAt, wordsLimit, videosLimit],
+      [customerEmail, isPro, plan, subscriptionId, customerId, variantId, endsAt, wordsLimit, videosLimit, imagesLimit],
     );
     console.warn(
       `[webhook] No user yet for ${customerEmail} (${eventName}) — entitlement parked for reconcile on first login`,
@@ -138,8 +140,8 @@ export async function POST(req: NextRequest) {
 
   const upsertPro = async (isPro: boolean) => {
     await pool.query(
-      `INSERT INTO public.user_subscriptions (user_id, is_pro, plan, lemon_squeezy_subscription_id, lemon_squeezy_customer_id, lemon_squeezy_variant_id, pro_expires_at, words_used, words_limit, videos_used, videos_limit, billing_period_start)
-       VALUES ($1, $2, $3, $4, $5, $6, $7, 0, $8, 0, $9, now())
+      `INSERT INTO public.user_subscriptions (user_id, is_pro, plan, lemon_squeezy_subscription_id, lemon_squeezy_customer_id, lemon_squeezy_variant_id, pro_expires_at, words_used, words_limit, videos_used, videos_limit, images_used, images_limit, billing_period_start)
+       VALUES ($1, $2, $3, $4, $5, $6, $7, 0, $8, 0, $9, 0, $10, now())
        ON CONFLICT (user_id) DO UPDATE SET
          is_pro = $2,
          plan = $3,
@@ -151,9 +153,11 @@ export async function POST(req: NextRequest) {
          words_limit = $8,
          videos_used = 0,
          videos_limit = $9,
+         images_used = 0,
+         images_limit = $10,
          billing_period_start = now(),
          updated_at = now()`,
-      [userId, isPro, plan, subscriptionId, customerId, variantId, endsAt, wordsLimit, videosLimit],
+      [userId, isPro, plan, subscriptionId, customerId, variantId, endsAt, wordsLimit, videosLimit, imagesLimit],
     );
   };
 
@@ -173,12 +177,12 @@ export async function POST(req: NextRequest) {
 
     // Subscription details changed (plan upgrade/downgrade, billing date change)
     case 'subscription_updated':
-      await updatePro('plan = $1, pro_expires_at = $2, words_limit = $3, videos_limit = $4', [plan, endsAt, wordsLimit, videosLimit]);
+      await updatePro('plan = $1, pro_expires_at = $2, words_limit = $3, videos_limit = $4, images_limit = $5', [plan, endsAt, wordsLimit, videosLimit, imagesLimit]);
       break;
 
     // User explicitly changed plan tier
     case 'subscription_plan_changed':
-      await updatePro('plan = $1, words_limit = $2, words_used = 0, videos_limit = $3, videos_used = 0, billing_period_start = now()', [plan, wordsLimit, videosLimit]);
+      await updatePro('plan = $1, words_limit = $2, words_used = 0, videos_limit = $3, videos_used = 0, images_limit = $4, images_used = 0, billing_period_start = now()', [plan, wordsLimit, videosLimit, imagesLimit]);
       break;
 
     // User cancelled — keep access until period ends but mark for expiry
@@ -210,7 +214,7 @@ export async function POST(req: NextRequest) {
 
     // Recurring payment succeeded — reset word + video quotas for new period
     case 'subscription_payment_success':
-      await updatePro('words_used = 0, videos_used = 0, billing_period_start = now()', []);
+      await updatePro('words_used = 0, videos_used = 0, images_used = 0, billing_period_start = now()', []);
       break;
 
     // Payment failed — flag but don't immediately revoke (LS retries automatically)
@@ -220,7 +224,7 @@ export async function POST(req: NextRequest) {
 
     // Payment recovered after a failure — ensure Pro is active
     case 'subscription_payment_recovered':
-      await updatePro('is_pro = $1, words_used = 0, videos_used = 0, billing_period_start = now()', [true]);
+      await updatePro('is_pro = $1, words_used = 0, videos_used = 0, images_used = 0, billing_period_start = now()', [true]);
       break;
 
     // Payment refunded — revoke Pro access

@@ -68,7 +68,7 @@ import {
 } from '@/components/tools/GenericToolFamilyPanels';
 import VideoWatermarkTool from '@/components/tools/VideoWatermarkTool';
 import VideoInpaintTool from '@/components/tools/VideoInpaintTool';
-import { ImageWatermarkCleanerTool } from '@/components/tools/ImageWatermarkCleanerTool';
+import ImageWatermarkRemoverPanel from '@/components/tools/ImageWatermarkRemoverPanel';
 import { ImageWatermarkDetectorTool } from '@/components/tools/ImageWatermarkDetectorTool';
 // ChatGPT tools
 import { ChatGPTDetectorTool } from '@/components/tools/ChatGPTDetectorTool';
@@ -278,7 +278,7 @@ export async function ToolPageRenderer({ slug }: ToolPageRendererProps) {
       slug.includes('video') ? (
         <VideoInpaintTool modelName={tool.model} />
       ) : (
-        <ImageWatermarkCleanerTool modelName={tool.model} />
+        <ImageWatermarkRemoverPanel modelName={tool.model} />
       )
     ) : tool.ui.kind === 'watermark-detector' && slug.includes('image') ? (
       <ImageWatermarkDetectorTool modelName={tool.model} />
