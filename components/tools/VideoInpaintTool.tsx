@@ -8,7 +8,7 @@ type Phase = 'idle' | 'ready' | 'uploading' | 'processing' | 'done' | 'error';
 
 type VideoInpaintToolProps = { modelName?: string };
 
-export default function VideoInpaintTool({ modelName }: VideoInpaintToolProps) {
+export default function VideoInpaintTool(_props: VideoInpaintToolProps) {
   const [file, setFile] = useState<File | null>(null);
   const [phase, setPhase] = useState<Phase>('idle');
   const [message, setMessage] = useState('');
@@ -19,7 +19,6 @@ export default function VideoInpaintTool({ modelName }: VideoInpaintToolProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const dims = useRef({ w: 0, h: 0 }); // native video dimensions
   const drawing = useRef<{ startX: number; startY: number } | null>(null);
-  const model = modelName ?? 'AI';
 
   const reset = () => {
     setFile(null);
@@ -182,10 +181,6 @@ export default function VideoInpaintTool({ modelName }: VideoInpaintToolProps) {
           disabled={busy}
           className="block w-full text-sm text-slate-700 file:mr-4 file:rounded-lg file:border-0 file:bg-brand-700 file:px-4 file:py-2 file:text-sm file:font-semibold file:text-white hover:file:bg-brand-800 disabled:opacity-50"
         />
-        <p className="text-sm text-slate-600">
-          Erases the visible {model} watermark from the video frames using AI inpainting.
-          Draw a box over the watermark, then run removal. Pro feature.
-        </p>
       </div>
 
       {phase !== 'idle' ? (
@@ -232,11 +227,6 @@ export default function VideoInpaintTool({ modelName }: VideoInpaintToolProps) {
           Clear
         </button>
       </div>
-
-      <p className="text-xs text-slate-500">
-        Videos are processed on a secure GPU and deleted after processing. Best results come from
-        watermarks in a fixed position over a relatively static background.
-      </p>
 
       {phase === 'done' ? <HumanizerUpsellCard variant="watermark" /> : null}
     </div>
