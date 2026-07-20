@@ -15,9 +15,9 @@ export type PlanConfig = {
 };
 
 export const PLANS: Record<PlanId, PlanConfig> = {
-  weekly: { wordsLimit: 50000, videosLimit: 4, imagesLimit: 50 },
-  monthly: { wordsLimit: 300000, videosLimit: 15, imagesLimit: 300 },
-  annual: { wordsLimit: null, videosLimit: 95, imagesLimit: null },
+  weekly: { wordsLimit: 50000, videosLimit: 4, imagesLimit: 15 },
+  monthly: { wordsLimit: 300000, videosLimit: 15, imagesLimit: 35 },
+  annual: { wordsLimit: null, videosLimit: 95, imagesLimit: 100 },
 };
 
 // Fail safe to the most restrictive plan for an unrecognized tier — never
