@@ -33,26 +33,47 @@ export default function VideoInpaintTool(_props: VideoInpaintToolProps) {
     reset();
     if (!f) return;
     setFile(f);
+    setPhase('ready');
+    setMessage('Loading video…');
+
     const url = URL.createObjectURL(f);
     const v = videoRef.current!;
-    v.src = url;
-    v.onloadeddata = () => {
-      v.currentTime = 0.1; // nudge past frame 0
-    };
-    v.onseeked = () => {
+
+    // Paint the first frame onto the canvas so the user can draw a mask box.
+    const paintFrame = () => {
+      if (!v.videoWidth) return false;
       dims.current = { w: v.videoWidth, h: v.videoHeight };
-      const c = canvasRef.current!;
+      const c = canvasRef.current;
+      if (!c) return false;
       // Fit canvas to a max display width while preserving aspect ratio.
       const maxW = 640;
       const scale = Math.min(1, maxW / v.videoWidth);
       c.width = Math.round(v.videoWidth * scale);
       c.height = Math.round(v.videoHeight * scale);
-      const ctx = c.getContext('2d')!;
-      ctx.drawImage(v, 0, 0, c.width, c.height);
-      setPhase('ready');
+      c.getContext('2d')!.drawImage(v, 0, 0, c.width, c.height);
       setMessage('Drag a box over the watermark you want removed.');
-      v.onseeked = null;
+      return true;
     };
+
+    v.onloadeddata = () => {
+      // Try immediately, then nudge past frame 0 in case frame 0 is blank.
+      if (!paintFrame()) return;
+      try {
+        v.currentTime = Math.min(0.1, (v.duration || 1) / 2);
+      } catch {
+        /* seeking unsupported — the frame we already painted is fine */
+      }
+    };
+    v.onseeked = () => paintFrame();
+    v.onerror = () => {
+      setPhase('error');
+      setMessage(
+        'Could not read this video. Try an MP4 (H.264) file — some formats cannot be previewed in the browser.',
+      );
+    };
+
+    v.src = url;
+    v.load();
   };
 
   const redraw = useCallback((b: Box | null) => {
@@ -170,7 +191,7 @@ export default function VideoInpaintTool(_props: VideoInpaintToolProps) {
 
   return (
     <div className="space-y-4">
-      <video ref={videoRef} className="hidden" muted playsInline crossOrigin="anonymous" />
+      <video ref={videoRef} className="hidden" muted playsInline preload="auto" />
 
       <div className="rounded-xl border border-slate-200 bg-slate-50 p-4 space-y-3">
         <label className="block text-sm font-semibold text-slate-800">Upload video</label>
@@ -207,7 +228,7 @@ export default function VideoInpaintTool(_props: VideoInpaintToolProps) {
           disabled={busy || phase === 'idle' || !box}
           className="inline-flex items-center justify-center rounded-lg bg-brand-700 px-4 py-2 text-sm font-semibold text-white shadow hover:bg-brand-800 disabled:cursor-not-allowed disabled:opacity-50"
         >
-          {busy ? 'Working…' : 'Remove watermark'}
+          {busy ? 'Working…' : !box && phase !== 'idle' ? 'Draw a box first' : 'Remove watermark'}
         </button>
         {resultUrl ? (
           <a
