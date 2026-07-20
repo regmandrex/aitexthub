@@ -1,4 +1,5 @@
 import { Resend } from 'resend';
+import { planVideosLimit, planImagesLimit, planWordsLimit } from '@/lib/plans';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -19,10 +20,31 @@ const PLAN_QUOTA_TEXT: Record<string, string> = {
   annual: 'Unlimited words',
 };
 
+/**
+ * Plan benefits, led by the AI watermark features (the things competitors
+ * don't offer) rather than word counts. Sourced from lib/plans.ts so the
+ * numbers can never drift from what's actually enforced.
+ */
+export function planBenefits(plan: string): string[] {
+  const videos = planVideosLimit(plan);
+  const images = planImagesLimit(plan);
+  const words = planWordsLimit(plan);
+  return [
+    `<strong style="color:#1e293b">AI video watermark removal — ${videos ?? 'unlimited'} videos</strong>`,
+    `<strong style="color:#1e293b">AI image watermark erase — ${images ?? 'unlimited'} images</strong>`,
+    words === null
+      ? 'Unlimited words — no monthly cap'
+      : `${words.toLocaleString()} words for humanizing & rewriting`,
+    'Bypass Turnitin, GPTZero, Originality &amp; more',
+    'No ads, across the whole site',
+  ];
+}
+
 export function welcomeHtml(name: string, plan: string): string {
   const planLabel = PLAN_LABELS[plan] ?? 'Pro';
   const quota = PLAN_QUOTA_TEXT[plan] ?? 'More words & all Pro tools';
   const greeting = name && name.trim() ? name.trim().split(' ')[0] : 'there';
+  const benefits = planBenefits(plan);
 
   return `
   <div style="margin:0;padding:0;background:#f1f5f9">
@@ -50,9 +72,8 @@ export function welcomeHtml(name: string, plan: string): string {
 
         <p style="margin:0 0 12px;color:#1e293b;font-size:15px;font-weight:700">What you can do right now:</p>
         <ul style="margin:0 0 22px;padding-left:18px;color:#475569;font-size:14px;line-height:1.8">
-          <li>Bypass every major AI detector</li>
-          <li>Clean watermarks &amp; invisible characters in one click</li>
-          <li>Access all 60+ Pro tools with priority processing</li>
+          ${benefits.map((b) => `<li>${b}</li>`).join('\n          ')}
+          <li>All 60+ Pro tools unlocked</li>
         </ul>
 
         <!-- CTA -->

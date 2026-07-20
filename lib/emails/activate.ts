@@ -1,4 +1,5 @@
 import { Resend } from 'resend';
+import { planBenefits } from '@/lib/emails/welcome';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -42,6 +43,9 @@ export function activateProHtml(email: string, plan: string): string {
         <div style="margin:20px 0;border:1px solid #e2e8f0;border-radius:12px;padding:16px 18px;background:#faf5ff">
           <p style="margin:0;color:#7c3aed;font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.5px">Your plan</p>
           <p style="margin:6px 0 0;color:#1e293b;font-size:18px;font-weight:700">${planLabel} — ${quota}</p>
+          <ul style="margin:12px 0 0;padding-left:18px;color:#475569;font-size:14px;line-height:1.7">
+            ${planBenefits(plan).map((b) => `<li>${b}</li>`).join('\n            ')}
+          </ul>
         </div>
 
         <div style="margin:20px 0;border:1px solid #fde68a;border-radius:12px;padding:14px 16px;background:#fffbeb">
