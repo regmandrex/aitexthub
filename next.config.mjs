@@ -35,17 +35,6 @@ const nextConfig = {
         destination: '/auth-error',
         permanent: false,
       },
-      // Ezoic ads.txt manager (shared account ID 19390). Serves Ezoic's
-      // authorized-sellers list, including the existing AdSense line.
-      // The former static public/ads.txt was removed so this redirect wins.
-      // https://docs.ezoic.com/docs/ezoicads/adstxt/
-      {
-        source: '/ads.txt',
-        destination: 'https://srv.adstxtmanager.com/19390/gptcleanuptools.com',
-        // Ezoic's docs specify a 301; Next emits 308 for `permanent: true`, so
-        // pin the exact status code instead.
-        statusCode: 301,
-      },
       {
         source: '/index',
         destination: '/',
