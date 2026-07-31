@@ -46,8 +46,9 @@ export default function BelowToolAd() {
     };
   }, []);
 
+  // min-h reserves real ad height to prevent mobile CLS; push above stays immediate.
   return (
-    <div className="mt-6 w-full">
+    <div className="mt-6 w-full min-h-[280px]">
       <ins
         ref={slotRef}
         className="adsbygoogle"

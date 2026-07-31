@@ -89,7 +89,10 @@ export default function AdSenseSlot({ className, style }: AdSenseSlotProps) {
   const classes = [isReady ? 'adsbygoogle' : null, className].filter(Boolean).join(' ');
 
   return (
-    <div className={className} style={style}>
+    // min-h reserves the ~250-300px a responsive ad actually renders at, so late
+    // injection does not shift content below it (mobile CLS). This is layout only —
+    // the push above still fires immediately, so ad fill is unaffected.
+    <div className={['min-h-[280px]', className].filter(Boolean).join(' ')} style={style}>
       <ins
         ref={slotRef}
         className={classes}
