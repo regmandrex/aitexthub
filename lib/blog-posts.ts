@@ -7,6 +7,7 @@ export const blogPosts: Array<{
   description: string;
   date: string;
 }> = [
+  { slug: 'clean-my-computer-with-chatgpt', title: 'How to Clean My Computer With ChatGPT: A Practical Walkthrough', description: 'Use ChatGPT to diagnose a slow PC, clear junk files, triage startup programs, and free disk space safely — including what it gets wrong.', date: 'Aug 2026' },
   { slug: 'does-chatgpt-watermark-text', title: "Does ChatGPT Watermark Text? Here's What Actually Happens in 2026", description: "Does ChatGPT watermark text? Evidence shows AI-generated text carries hidden signals. Learn what's really embedded and how to detect and remove it.", date: 'Mar 2026' },
   { slug: 'how-to-humanize-ai-text', title: 'How to Humanize AI Text: The Complete Guide (2026)', description: 'Learn how to humanize AI text effectively. Clean invisible Unicode first, then apply targeted rewriting for natural flow without harming SEO.', date: 'Mar 2026' },
   { slug: 'ai-content-detection-complete-guide', title: 'AI Content Detection: The Complete Guide for 2026', description: 'Master AI content detection. Learn how detectors work, why they make mistakes, and practical strategies to ensure your content meets authenticity standards.', date: 'Mar 2026' },
