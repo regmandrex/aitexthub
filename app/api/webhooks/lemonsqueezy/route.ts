@@ -11,7 +11,7 @@ const pool = new Pool({ connectionString: process.env.DATABASE_URL });
 // the name can't tell our three plans apart. Map on the stable numeric
 // variant_id instead — this is the single source of truth for plan tier.
 const VARIANT_PLANS: Record<string, string> = {
-  '1093614': 'weekly',
+  '1713009': 'weekly',
   '1713010': 'monthly',
   '1713012': 'annual',
 };
