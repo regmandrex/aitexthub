@@ -5,7 +5,7 @@ import CheckoutButton from '@/components/CheckoutButton';
 
 const title = 'GPTCleanup Pro — Undetectable AI for Real Work';
 const description =
-  'Pro plan for GPTCleanup Tools: LLM-powered AI humanizer, higher word limits, AI video watermark removal, no ads, and all 60+ premium tools. From $4.99/week.';
+  'Pro plan for GPTCleanup Tools: LLM-powered AI humanizer, higher word limits, AI video watermark removal, no ads, and all 60+ premium tools. From $3.99/week.';
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildMeta({ title, description, urlPath: '/pro' });
@@ -43,8 +43,8 @@ const PLANS: Plan[] = [
   {
     id: 'weekly',
     name: 'Weekly',
-    price: '$4.99',
-    originalPrice: '$9',
+    price: '$3.99',
+    originalPrice: '$7',
     period: 'per week',
     cta: 'Get Weekly Pass',
     features: [
@@ -58,10 +58,10 @@ const PLANS: Plan[] = [
   {
     id: 'monthly',
     name: 'Monthly',
-    price: '$19.99',
-    originalPrice: '$29',
+    price: '$17.99',
+    originalPrice: '$25',
     period: 'per month',
-    saveText: 'Save 31%',
+    saveText: 'Save 28%',
     cta: 'Get Pro Monthly',
     features: [
       'AI video watermark removal — 15 videos',
@@ -75,11 +75,11 @@ const PLANS: Plan[] = [
     id: 'annual',
     name: 'Annual',
     price: '$8.33',
-    originalPrice: '$19.99',
+    originalPrice: '$17.99',
     period: 'per month',
     subPeriod: 'billed $99.99 yearly',
     badge: 'BEST VALUE',
-    saveText: 'Save 58%',
+    saveText: 'Save 54%',
     cta: 'Get Pro Annual',
     highlight: true,
     features: [
