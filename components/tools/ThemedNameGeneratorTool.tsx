@@ -240,7 +240,7 @@ export function ThemedNameGeneratorTool({ generatorKey, resultLabel = 'Generated
         </div>
       )}
     </div>
-    {authOpen && <AuthModal onClose={() => setAuthOpen(false)} onSuccess={() => { setAuthOpen(false); setShowPaywall(false); setUseCount(0); window.location.reload(); }} />}
+    {authOpen && <AuthModal purpose="unlimited generations" onClose={() => setAuthOpen(false)} onSuccess={() => { setAuthOpen(false); setShowPaywall(false); setUseCount(0); window.location.reload(); }} />}
     </>
   );
 }

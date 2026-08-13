@@ -2,6 +2,8 @@
 
 import { useRef, useState } from 'react';
 import HumanizerUpsellCard from '../HumanizerUpsellCard';
+import AuthModal from '../AuthModal';
+import PricingModal from '../PricingModal';
 
 type Box = { x: number; y: number; w: number; h: number };
 type Phase = 'idle' | 'ready' | 'working' | 'done' | 'error';
@@ -12,6 +14,8 @@ export default function ImageInpaintTool(_props: { modelName?: string }) {
   const [message, setMessage] = useState('');
   const [resultUrl, setResultUrl] = useState<string | null>(null);
   const [box, setBox] = useState<Box | null>(null);
+  const [showAuth, setShowAuth] = useState(false);
+  const [showPricing, setShowPricing] = useState(false);
 
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const imgRef = useRef<HTMLImageElement | null>(null);
@@ -117,6 +121,25 @@ export default function ImageInpaintTool(_props: { modelName?: string }) {
       const res = await fetch('/api/inpaint-image', { method: 'POST', body: fd });
       const data = await res.json();
       if (!res.ok) {
+        // The API flags auth failures separately: open the sign-in modal
+        // instead of printing "please sign in" as an inline error the user
+        // can't act on. The upload and box selection survive, so onSuccess
+        // can retry the removal directly.
+        if (data.needsAuth) {
+          setPhase('ready');
+          setMessage('');
+          setShowAuth(true);
+          return;
+        }
+        // Removal is Pro-gated, so a fresh signup still lands here. Show the
+        // plans rather than a dead-end error — the upload and box survive, so
+        // they can complete checkout and click Remove again.
+        if (data.upgradeRequired) {
+          setPhase('ready');
+          setMessage('');
+          setShowPricing(true);
+          return;
+        }
         setPhase('error');
         setMessage(data.error ?? 'Could not remove the watermark.');
         return;
@@ -198,6 +221,20 @@ export default function ImageInpaintTool(_props: { modelName?: string }) {
       ) : null}
 
       {phase === 'done' ? <HumanizerUpsellCard variant="watermark" /> : null}
+
+      {showAuth ? (
+        <AuthModal
+          initialMode="signup"
+          purpose="AI watermark removal"
+          onClose={() => setShowAuth(false)}
+          onSuccess={() => {
+            setShowAuth(false);
+            void run();
+          }}
+        />
+      ) : null}
+
+      {showPricing ? <PricingModal onClose={() => setShowPricing(false)} /> : null}
     </div>
   );
 }

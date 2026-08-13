@@ -7,9 +7,13 @@ type AuthModalProps = {
   onClose: () => void;
   onSuccess: () => void;
   initialMode?: 'login' | 'signup';
+  /** What the user was trying to do, e.g. 'AI watermark removal'. Names that
+   *  action in the subtitle so the modal matches the page it opened from
+   *  instead of always advertising the humanizer. */
+  purpose?: string;
 };
 
-export default function AuthModal({ onClose, onSuccess, initialMode = 'login' }: AuthModalProps) {
+export default function AuthModal({ onClose, onSuccess, initialMode = 'login', purpose }: AuthModalProps) {
   const [isLogin, setIsLogin] = useState(initialMode === 'login');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -72,7 +76,13 @@ export default function AuthModal({ onClose, onSuccess, initialMode = 'login' }:
             {isLogin ? 'Welcome back.' : 'Create your account.'}
           </h2>
           <p className="mt-0.5 text-sm text-slate-400">
-            {isLogin ? 'Sign in to continue humanizing.' : 'Quick signup to unlock AI humanization.'}
+            {purpose
+              ? isLogin
+                ? `Sign in to continue with ${purpose}.`
+                : `Create an account to use ${purpose}.`
+              : isLogin
+                ? 'Sign in to continue humanizing.'
+                : 'Quick signup to unlock AI humanization.'}
           </p>
         </div>
 
