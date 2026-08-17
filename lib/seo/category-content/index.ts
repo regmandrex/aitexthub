@@ -13,6 +13,8 @@ const LOADERS: Record<string, () => Promise<{ default: CategoryContent }>> = {
   'developer-tools': () => import('./developer-tools'),
   'ai-cleanup-tools': () => import('./ai-cleanup-tools'),
   'ai-humanizer-tools': () => import('./ai-humanizer-tools'),
+  'academic-tools': () => import('./academic-tools'),
+  'writing-tools': () => import('./writing-tools'),
 };
 
 export async function getCategoryContent(slug: string): Promise<CategoryContent | null> {
