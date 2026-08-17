@@ -1,6 +1,7 @@
 import { MetadataRoute } from 'next';
 import { siteUrl } from '../lib/seo/url';
 import { toolPages, categoryPages, staticPages } from '../lib/seo/registry';
+import { TOOL_CATEGORIES, CATEGORY_COUNTS } from '../lib/seo/categories';
 import { blogPosts, blogDateToDate } from '../lib/blog-posts';
 
 // lastModified is only set where we have a real date (blog posts). Reporting
@@ -29,6 +30,18 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: page.slug ? `${siteUrl}/${page.slug}` : siteUrl,
       changeFrequency: 'monthly',
       priority: 0.4,
+    });
+  });
+
+  // Category hub pages under /ai-tools/. Higher priority than legacy
+  // categoryPages since these are real long-form landing pages.
+  // Categories with no registered tools are skipped: submitting an empty
+  // listing page reads as thin content regardless of its word count.
+  TOOL_CATEGORIES.filter((category) => (CATEGORY_COUNTS[category.key] ?? 0) > 0).forEach((category) => {
+    urls.push({
+      url: `${siteUrl}/ai-tools/${category.slug}`,
+      changeFrequency: 'monthly',
+      priority: 0.7,
     });
   });
 
