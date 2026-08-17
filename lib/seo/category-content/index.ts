@@ -23,6 +23,7 @@ const LOADERS: Record<string, () => Promise<{ default: CategoryContent }>> = {
   'seo-content-tools': () => import('./seo-content-tools'),
   'encoding-tools': () => import('./encoding-tools'),
   'translator-tools': () => import('./translator-tools'),
+  'ai-rank-tracking-tools': () => import('./ai-rank-tracking-tools'),
 };
 
 export async function getCategoryContent(slug: string): Promise<CategoryContent | null> {
