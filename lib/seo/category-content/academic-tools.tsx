@@ -7,7 +7,7 @@ function Intro() {
     <>
       <p>
         <strong>AI academic tools</strong> help students, researchers, and academic writers check,
-        strengthen, and refine scholarly work. This category collects 54 tools covering essay checking,
+        strengthen, and refine scholarly work. This category covers essay checking,
         thesis validation, research paper review, assignment compliance, essay rewriting, and academic
         humanizing, with dedicated versions for output from{' '}
         <Link href="/chatgpt-essay-checker">ChatGPT</Link>,{' '}
@@ -445,7 +445,7 @@ const faqs: FaqItem[] = [
     category: 'General',
     question: 'Are these academic tools free?',
     answer:
-      'Yes. All 54 tools in this category are free with no account required and no usage limits.',
+      'Yes. Every tool in this category is free with no account required and no usage limits.',
   },
   {
     category: 'General',

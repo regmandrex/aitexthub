@@ -7,7 +7,7 @@ function Intro() {
     <>
       <p>
         <strong>AI detection tools</strong> estimate whether a piece of text was written by a language
-        model. This category collects 17 detectors: model-specific versions for{' '}
+        model. This category collects detectors for the major models and languages, including{' '}
         <Link href="/gpt-5-detector">GPT-5</Link>,{' '}
         <Link href="/gpt-5-pro-detector">GPT-5 Pro</Link>,{' '}
         <Link href="/gpt-5.1-detector">GPT-5.1</Link>,{' '}
@@ -421,7 +421,7 @@ const faqs: FaqItem[] = [
     category: 'General',
     question: 'Are these detection tools free?',
     answer:
-      'Yes. All 17 tools in this category are free with no account required and no usage limits.',
+      'Yes. Every tool in this category is free with no account required and no usage limits.',
   },
   {
     category: 'Technical',

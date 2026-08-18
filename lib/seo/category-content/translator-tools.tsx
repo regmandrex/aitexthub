@@ -7,8 +7,9 @@ function Intro() {
     <>
       <p>
         <strong>Translator tools</strong> in this category convert English into stylized, historical,
-        fictional, and novelty forms. This is not language translation in the conventional sense. These 13
-        tools transform register, period, and style rather than moving text between natural languages.
+        fictional, and novelty forms. This is not language translation in the conventional sense. The
+        tools here transform register, period, and style rather than moving text between natural
+        languages.
       </p>
       <p>
         They fall into groups. Historical English converters produce{' '}
@@ -33,7 +34,7 @@ function Intro() {
       </p>
       <p>
         Most of these run entirely in your browser, applying rule-based substitution and pattern matching
-        rather than sending text anywhere. They are built for creative writing, games, roleplay, and
+        rather than sending text anywhere. They are built purely for creative writing, games, roleplay, and
         entertainment. The sections below cover what distinguishes each period of English, how dialect and
         register work in fiction, how these converters operate internally and where they predictably fail,
         and how to use stylized language without exhausting your readers.
@@ -393,7 +394,7 @@ const faqs: FaqItem[] = [
     category: 'General',
     question: 'Are these translator tools free?',
     answer:
-      'Yes. All 13 tools in this category are free with no account required and no usage limits. Most run entirely in your browser using rule-based substitution.',
+      'Yes. Every tool in this category is free with no account required and no usage limits. Most run entirely in your browser using rule-based substitution.',
   },
   {
     category: 'General',

@@ -162,7 +162,7 @@ export default function SearchableToolsList({ tools }: SearchableToolsListProps)
                 >
                   {items.length === 1
                     ? 'View the tool'
-                    : `View all ${items.length} ${meta?.ctaNoun ?? title.toLowerCase()}`}
+                    : `View all ${meta?.ctaNoun ?? title.toLowerCase()}`}
                   <span aria-hidden>&rarr;</span>
                 </Link>
               ) : null}

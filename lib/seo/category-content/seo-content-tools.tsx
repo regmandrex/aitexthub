@@ -7,7 +7,7 @@ function Intro() {
     <>
       <p>
         <strong>SEO content tools</strong> check and improve the writing that has to perform in search
-        results. This category collects 18 tools covering two functions across nine models: the{' '}
+        results. This category covers two distinct functions across all nine major models: the{' '}
         <Link href="/ai-blog-post-validator">AI blog post validator</Link>, which audits articles against
         the criteria search engines and readers actually reward, and the{' '}
         <Link href="/ai-product-description-improver">AI product description improver</Link>, which
@@ -412,7 +412,7 @@ const faqs: FaqItem[] = [
     category: 'General',
     question: 'Are these SEO tools free?',
     answer:
-      'Yes. All 18 tools in this category are free with no account required and no usage limits.',
+      'Yes. Every tool in this category is free with no account required and no usage limits.',
   },
   {
     category: 'General',

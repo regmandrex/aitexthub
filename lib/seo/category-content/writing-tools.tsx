@@ -7,7 +7,7 @@ function Intro() {
     <>
       <p>
         <strong>AI writing tools</strong> analyze and improve the mechanics of prose: grammar,
-        readability, tone, style consistency, and voice. This category collects 45 tools covering five
+        readability, tone, style consistency, and voice. This category collects tools covering five
         core functions across nine models, including{' '}
         <Link href="/ai-grammar-checker">grammar checking</Link>,{' '}
         <Link href="/ai-readability-checker">readability scoring</Link>,{' '}
@@ -439,7 +439,7 @@ const faqs: FaqItem[] = [
     category: 'General',
     question: 'Are these writing tools free?',
     answer:
-      'Yes. All 45 tools in this category are free with no account required and no usage limits.',
+      'Yes. Every tool in this category is free with no account required and no usage limits.',
   },
   {
     category: 'General',

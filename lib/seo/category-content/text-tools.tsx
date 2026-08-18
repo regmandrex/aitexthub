@@ -7,7 +7,7 @@ function Intro() {
     <>
       <p>
         <strong>Text tools</strong> handle the small, constant jobs that come up whenever you move writing
-        between applications. This category collects 26 utilities for changing case, removing duplicate
+        between applications. This category collects utilities for changing case, removing duplicate
         lines, stripping HTML, counting words, fixing whitespace, finding and replacing, and detecting the
         invisible characters that cause text to behave strangely for no visible reason.
       </p>
@@ -416,7 +416,7 @@ const faqs: FaqItem[] = [
     category: 'General',
     question: 'Are these text tools free?',
     answer:
-      'Yes. All 26 tools in this category are free with no account required and no usage limits. They run in your browser, so you can process as much text as your device handles.',
+      'Yes. Every tool in this category is free with no account required and no usage limits. They run in your browser, so you can process as much text as your device handles.',
   },
   {
     category: 'Privacy and Security',

@@ -7,7 +7,7 @@ function Intro() {
     <>
       <p>
         <strong>AI rank tracking tools</strong> measure how often your brand appears in the answers AI
-        assistants give. This category collects 5 trackers: the general{' '}
+        assistants give. This category collects trackers for the major assistants, including the general{' '}
         <Link href="/ai-rank-tracker">AI rank tracker</Link> plus dedicated versions for{' '}
         <Link href="/chatgpt-rank-tracker">ChatGPT</Link>,{' '}
         <Link href="/claude-rank-tracker">Claude</Link>,{' '}
@@ -421,7 +421,7 @@ const faqs: FaqItem[] = [
     category: 'General',
     question: 'Are these rank tracking tools free?',
     answer:
-      'Yes. All 5 tools in this category are free with no account required and no usage limits.',
+      'Yes. Every tool in this category is free with no account required and no usage limits.',
   },
   {
     category: 'General',

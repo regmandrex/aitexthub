@@ -7,7 +7,7 @@ function Intro() {
     <>
       <p>
         <strong>Encoding and decoding tools</strong> convert text between representations so it survives
-        transport through systems that would otherwise corrupt it. This category collects 14 tools
+        transport through systems that would otherwise corrupt it. This category collects a full set of tools
         covering <Link href="/base64-encode">Base64</Link>,{' '}
         <Link href="/url-encode">URL encoding</Link>,{' '}
         <Link href="/text-to-html-entities">HTML entities</Link>,{' '}
@@ -396,7 +396,7 @@ const faqs: FaqItem[] = [
     category: 'General',
     question: 'Are these encoding tools free?',
     answer:
-      'Yes. All 14 tools in this category are free with no account required and no usage limits.',
+      'Yes. Every tool in this category is free with no account required and no usage limits.',
   },
   {
     category: 'Privacy and Security',

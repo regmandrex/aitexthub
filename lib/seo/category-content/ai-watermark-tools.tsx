@@ -7,7 +7,7 @@ function Intro() {
     <>
       <p>
         <strong>AI watermark tools</strong> detect and remove the watermarks embedded in images and video
-        produced by generative models. This category collects 25 tools covering the major image
+        produced by generative models. This category collects a full set of tools covering the major image
         generators, including{' '}
         <Link href="/dalle-image-watermark-detector">DALL-E</Link>,{' '}
         <Link href="/midjourney-image-watermark-remover">Midjourney</Link>,{' '}
@@ -424,7 +424,7 @@ const faqs: FaqItem[] = [
     category: 'General',
     question: 'Are these watermark tools free?',
     answer:
-      'Yes. All 25 tools in this category are free with no account required and no usage limits.',
+      'Yes. Every tool in this category is free with no account required and no usage limits.',
   },
   {
     category: 'General',

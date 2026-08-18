@@ -19,7 +19,7 @@ function Intro() {
         name it, and they describe the result as generic, corporate, or hollow.
       </p>
       <p>
-        This category collects 47 <strong>AI humanizer</strong> tools covering blogs and articles, email
+        This category collects <strong>AI humanizer</strong> tools covering blogs and articles, email
         and outreach, social media, creative and fiction writing, and twelve languages including{' '}
         <Link href="/spanish-ai-humanizer">Spanish</Link>,{' '}
         <Link href="/french-ai-humanizer">French</Link>,{' '}
@@ -407,7 +407,7 @@ function Body() {
 
       <h2>Choosing the Right Humanizer for Your Content</h2>
       <p>
-        With 47 tools in this category, the choice comes down to matching the tool to your destination
+        With this many tools to choose from, the choice comes down to matching the tool to your destination
         and its expected register. Format matters more than model here, because the conventions of a
         Reddit post and a book chapter differ far more than the output of two language models does.
       </p>
@@ -473,7 +473,7 @@ const faqs: FaqItem[] = [
     category: 'General',
     question: 'Are these AI humanizer tools free?',
     answer:
-      'Yes. All 47 humanizer tools in this category are free to use with no account required and no usage limits.',
+      'Yes. Every humanizer tool in this category is free to use with no account required and no usage limits.',
   },
   {
     category: 'General',

@@ -7,7 +7,7 @@ function Intro() {
     <>
       <p>
         <strong>AI professional tools</strong> refine the writing your career depends on: resumes, cover
-        letters, LinkedIn profiles, business email, and press releases. This category collects 45 tools
+        letters, LinkedIn profiles, business email, and press releases. This category collects tools
         covering five core functions across nine models, including the{' '}
         <Link href="/ai-resume-humanizer">AI resume humanizer</Link>,{' '}
         <Link href="/ai-cover-letter-humanizer">cover letter humanizer</Link>,{' '}
@@ -412,7 +412,7 @@ const faqs: FaqItem[] = [
     category: 'General',
     question: 'Are these professional tools free?',
     answer:
-      'Yes. All 45 tools in this category are free with no account required and no usage limits.',
+      'Yes. Every tool in this category is free with no account required and no usage limits.',
   },
   {
     category: 'General',

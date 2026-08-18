@@ -7,7 +7,7 @@ function Intro() {
     <>
       <p>
         <strong>Generator tools</strong> produce content rather than transforming text you already have.
-        This category collects 91 generators spanning four distinct groups: SEO metadata generators for
+        This category collects generators spanning four distinct groups: SEO metadata generators for
         titles, descriptions and alt text; name generators for games, fiction and branding; combinatorics
         tools for permutations and combinations; and a set of Korean-language generators for nicknames,
         usernames and acrostic poems.
@@ -419,7 +419,7 @@ const faqs: FaqItem[] = [
     category: 'General',
     question: 'Are these generator tools free?',
     answer:
-      'Yes. All 91 tools in this category are free with no account required and no usage limits. Most run entirely in your browser, so you can generate as many options as you want.',
+      'Yes. Every tool in this category is free with no account required and no usage limits. Most run entirely in your browser, so you can generate as many options as you want.',
   },
   {
     category: 'General',

@@ -17,7 +17,7 @@ function Intro() {
         The reason is that AI output is rarely plain text. It carries invisible Unicode characters,
         zero-width spaces, non-breaking spaces, byte order marks, smart quotes, em dashes, leftover
         Markdown syntax, and irregular whitespace patterns that no visual inspection reveals. This
-        category collects 111 <strong>AI text cleaner</strong> tools that strip those artifacts and
+        category collects <strong>AI text cleaner</strong> tools that strip those artifacts and
         return clean, portable, editor-safe plain text.
       </p>
       <p>
@@ -442,7 +442,7 @@ const faqs: FaqItem[] = [
     category: 'General',
     question: 'Are these AI cleanup tools free?',
     answer:
-      'Yes. All 111 tools in this category are free with no account, no signup, and no usage limits. There is no trial period and no length cap on the text you can clean.',
+      'Yes. Every tool in this category is free with no account, no signup, and no usage limits. There is no trial period and no length cap on the text you can clean.',
   },
   {
     category: 'Technical',

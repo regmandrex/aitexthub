@@ -107,9 +107,6 @@ export default async function CategoryPage({ params }: PageProps) {
             {category.heading}
           </h1>
           <p className="text-sm text-slate-700 md:text-[15px]">{category.description}</p>
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] text-slate-500">
-            {tools.length} {tools.length === 1 ? 'tool' : 'tools'} in this category
-          </p>
         </section>
 
         {content ? (
@@ -149,7 +146,7 @@ export default async function CategoryPage({ params }: PageProps) {
           <FAQSection
             items={content.faqs}
             title={`${category.title}: Frequently Asked Questions`}
-            intro={`Common questions about the ${tools.length} tools in this category, how they work, and when to reach for each one.`}
+            intro={`Common questions about these tools, how they work, and when to reach for each one.`}
           />
         ) : null}
 
@@ -162,13 +159,8 @@ export default async function CategoryPage({ params }: PageProps) {
                 href={`/ai-tools/${other.slug}`}
                 className="group block rounded-xl border border-slate-200 bg-white p-4 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
               >
-                <span className="flex items-baseline justify-between gap-2">
-                  <span className="text-sm font-semibold text-slate-900 group-hover:text-brand-700">
-                    {other.title}
-                  </span>
-                  <span className="shrink-0 text-xs text-slate-500">
-                    {CATEGORY_COUNTS[other.key] ?? 0}
-                  </span>
+                <span className="block text-sm font-semibold text-slate-900 group-hover:text-brand-700">
+                  {other.title}
                 </span>
                 <span className="mt-1 block text-xs text-slate-600">{other.description}</span>
               </Link>

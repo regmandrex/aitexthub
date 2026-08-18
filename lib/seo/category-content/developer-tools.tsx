@@ -13,7 +13,7 @@ function Intro() {
         you were doing, and the interruption costs more than the task itself.
       </p>
       <p>
-        This category collects 52 of those utilities in one place. Every one of them runs entirely in
+        This category collects those utilities in one place. Every one of them runs entirely in
         your browser using client-side JavaScript. Nothing you paste is uploaded, logged, stored, or
         transmitted to a server. That distinction matters more than it might sound. A large share of the
         developer utilities indexed on the web today are thin wrappers around a server-side API, which
@@ -480,7 +480,7 @@ const faqs: FaqItem[] = [
     category: 'General',
     question: 'Do I need to create an account to use them?',
     answer:
-      'No. All 52 developer tools work immediately without registration. Because the processing happens in your browser rather than on a server, there is no account system for the tools to hook into in the first place.',
+      'No. Every developer tool here works immediately without registration. Because the processing happens in your browser rather than on a server, there is no account system for the tools to hook into in the first place.',
   },
   {
     category: 'General',
