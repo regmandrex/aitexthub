@@ -244,6 +244,9 @@ ${text}`,
   navajo_translator: (text) =>
     `Translate the following text into the Navajo language (Dine Bizaad). Provide an accurate translation using proper Navajo vocabulary and grammar. Return only the Navajo translation - no commentary.\n\n${text}`,
 
+  navajo_to_english_translator: (text) =>
+    `Translate the following Navajo (Dine Bizaad) text into English. Preserve the meaning as closely as possible, including the aspectual and modal nuance that Navajo verbs carry. If a word or phrase is ambiguous, unrecognized, or appears misspelled, give your best reading and note the uncertainty briefly in parentheses. Return only the English translation - no commentary.\n\n${text}`,
+
   cartinese_translator: (text) =>
     `Translate the following text into "Cartinese" - the mumble rap style associated with Playboi Carti, featuring heavy use of "la la la", "ra ra ra", baby voice phonetics, and melodic mumble patterns. Make it sound like Carti lyrics. Return only the translation - no commentary.\n\n${text}`,
 

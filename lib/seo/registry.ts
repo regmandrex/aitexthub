@@ -2742,6 +2742,13 @@ export const toolPages: ToolPage[] = [
     category: 'translator',
   },
   {
+    slug: 'navajo-to-english-translator',
+    title: 'Navajo to English Translator',
+    description: 'Navajo to English translator online. Convert Navajo (Diné bizaad) text into English for reading, study, and respectful use—free in your browser.',
+    seoTitle: 'Navajo to English Translator - Translate Diné Bizaad to English',
+    category: 'translator',
+  },
+  {
     slug: 'invisible-text-copy-paste',
     title: 'Invisible Text Copy and Paste',
     description: 'Copy invisible text characters — zero-width spaces, blank spaces, and invisible Unicode — with one click. Free invisible text generator for any platform.',
