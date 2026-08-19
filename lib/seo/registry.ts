@@ -290,6 +290,14 @@ export const toolPages: ToolPage[] = [
     category: 'generator',
   },
   {
+    slug: 'korean-rhyme-finder',
+    title: '라임 검색기',
+    description:
+      '입력한 단어와 라임이 맞는 한국어 단어를 찾아 주는 무료 라임 검색기입니다. 완전 라임, 모음 라임, 받침 라임 세 가지 방식으로 랩 가사, 시, 노래 가사에 어울리는 운을 바로 찾을 수 있습니다.',
+    seoTitle: '라임 검색기 | 라임 맞추는 사이트 (무료)',
+    category: 'generator',
+  },
+  {
     slug: 'korean-question-generator',
     title: '질문 생성기',
     description:
