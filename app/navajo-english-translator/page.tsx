@@ -12,7 +12,7 @@ import { siteUrl } from '@/lib/seo/url';
 import { webPageSchema } from '@/lib/schema/webpage';
 import { getToolBySlug } from '@/lib/tools/registry';
 
-const toolSlug = 'navajo-to-english-translator';
+const toolSlug = 'navajo-english-translator';
 
 export async function generateMetadata(): Promise<Metadata> {
   const title = 'Navajo to English Translator';
@@ -26,23 +26,25 @@ function createWriteUp() {
   return (
     <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
-        <h2>Navajo to English Translator: Translate Diné Bizaad Online</h2>
+        <h2>Navajo to English Translator: Free Online Diné Bizaad Translation</h2>
         <p>
           A <strong>Navajo to English translator</strong> converts text written in Navajo (Diné bizaad)
-          into English so you can read and understand it. This is the reverse direction of our{' '}
+          into English so you can read and understand it. Paste the Navajo text into the box, click
+          translate, and read the English result. It is free, works entirely online with no download or
+          account, and runs on desktop and mobile.
+        </p>
+        <p>
+          This is the reverse direction of our{' '}
           <a href="/navajo-translator">English to Navajo translator</a>, and it answers a different need:
           you already have Navajo text in front of you and you want to know what it says. That happens
-          with recordings and transcripts, archival documents, signage, song lyrics, social media posts,
-          family papers, and coursework in a Navajo language class.
+          with family letters, archival documents, museum labels, road signage, song lyrics, social media
+          posts, broadcast transcripts, and coursework in a Navajo language class.
         </p>
         <p>
-          Paste the Navajo text into the box, click translate, and read the English result. The tool is
-          free, requires no account, and works on desktop and mobile.
-        </p>
-        <p>
-          Treat the output as a reading aid. Navajo is a grammatically complex language and automatic
-          translation into English loses nuance in predictable ways, which the sections below describe
-          honestly so you know how much weight to put on any given result.
+          Treat the output as a reading aid rather than a finished translation. Navajo is grammatically
+          complex and automatic translation into English loses meaning in specific, predictable ways. The
+          sections below explain exactly where and why, so you can judge any given result instead of
+          trusting it blindly.
         </p>
 
         <h2>What Is Navajo (Diné bizaad)?</h2>
@@ -53,163 +55,431 @@ function createWriteUp() {
           across the Navajo Nation in Arizona, New Mexico, and Utah.
         </p>
         <p>
-          It is a living language with active revitalization work behind it: immersion schools,
-          university programs, published dictionaries, broadcast media, and community teaching. When you
-          translate Navajo into English you are reading the work of a living language community, and that
-          framing matters for how the output should be used.
+          It is a living language with active revitalization behind it: immersion schools, university
+          programs, published dictionaries, radio and television broadcasting, and community teaching.
+          When you translate Navajo into English you are reading the work of a living language community,
+          and that framing matters for how the output should be used.
+        </p>
+
+        <h2>Common Navajo Words and Phrases Translated to English</h2>
+        <p>
+          Learners usually start with short greetings and everyday expressions. These are the phrases
+          most often entered into a Navajo to English translator, and recognizing them helps you judge
+          whether the tool is behaving sensibly on your longer text.
+        </p>
+        <p>
+          <strong>Yá&apos;át&apos;ééh</strong> is the standard greeting, usually rendered as hello and
+          literally closer to it is good. <strong>Ahéhee&apos;</strong> means thank you.{' '}
+          <strong>Hágoónee&apos;</strong> is a farewell. <strong>Diné</strong> means the people and is
+          the name the Navajo use for themselves, while <strong>Diné bizaad</strong> means the language
+          of the people. <strong>Shí éí</strong> introduces a self-identification, roughly as for me or I
+          am. <strong>Haash yinilyé</strong> asks what your name is, and{' '}
+          <strong>shízhi&apos; éí</strong> begins the answer.
+        </p>
+        <p>
+          <strong>Hózhó</strong> is the hardest of these to translate. It covers beauty, balance,
+          harmony, and right order together, and no single English word carries all of it. That example
+          illustrates the general problem: a word can be culturally central and still have no English
+          equivalent, so any translation is a compromise. When you see a one-word English rendering of a
+          concept like hózhó, treat it as a pointer rather than a definition.
         </p>
 
         <h2>Why Navajo to English Translation Is Difficult</h2>
         <p>
-          Understanding why automatic translation struggles here helps you judge the output rather than
-          trusting it blindly. The difficulty is structural, not a matter of insufficient data alone.
+          Every Navajo to English translator faces the same structural obstacles, and they are not simply a
+          matter of insufficient training data. Understanding them tells you which parts of a translation
+          to distrust.
         </p>
         <p>
-          <strong>Navajo is verb-centred.</strong> A great deal of meaning that English distributes
-          across several words is carried inside a single Navajo verb. A verb can encode who acts, who or
-          what is affected, the shape or physical class of the object involved, direction, repetition,
-          and whether the action is beginning, ongoing, or completed. One Navajo word can require a full
-          English clause to render, and the mapping is rarely one to one.
+          <strong>Navajo is verb-centred.</strong> Meaning that English spreads across several words is
+          carried inside a single Navajo verb. One verb can encode who acts, who or what is affected, the
+          physical class of the object involved, direction, repetition, and whether the action is
+          beginning, ongoing, or completed. A single Navajo word can require a full English clause, and
+          the mapping is rarely one to one.
         </p>
         <p>
           <strong>Classificatory verb stems carry information English has no slot for.</strong> Navajo
           selects a different verb stem depending on whether the thing being handled is round and solid,
-          long and rigid, flexible, granular, contained in something, or animate. English uses the same
-          verb for all of these. Translating into English therefore discards a distinction the original
-          made explicitly, and translating back cannot recover it.
+          long and rigid, flexible, granular, contained, or animate. English uses one verb for all of
+          them. Translation into English therefore discards a distinction the original made explicitly,
+          and translating back cannot recover it.
         </p>
         <p>
           <strong>Tone is phonemic.</strong> High and low tone distinguish words that are otherwise
-          identical, and tone is written with diacritics. Text that has lost its diacritics, which
-          happens constantly in casual typing, on older systems, and in transcription, is genuinely
-          ambiguous. The translator has to guess, and it will sometimes guess wrong.
+          identical, and tone is written with diacritics. Text that has lost its diacritics is genuinely
+          ambiguous, so the translator has to guess and will sometimes guess wrong.
         </p>
         <p>
-          <strong>Aspect is grammatically obligatory.</strong> Navajo verbs mark aspect in ways English
-          handles loosely with auxiliaries and adverbs. Rendering it in natural English usually means
-          choosing one reading and dropping the others.
+          <strong>Aspect is obligatory.</strong> Navajo verbs mark aspect where English handles it loosely
+          with auxiliaries and adverbs. Rendering it naturally in English usually means choosing one
+          reading and dropping the others.
+        </p>
+        <p>
+          <strong>Fourth person creates English ambiguity.</strong> Navajo distinguishes more grammatical
+          persons than English, including a fourth person for a second distinct third-party referent. A
+          Navajo sentence that keeps two third parties clearly separate becomes ambiguous in English
+          unless the translator inserts names or clarifying phrases.
+        </p>
+        <p>
+          <strong>Word order follows an animacy hierarchy.</strong> Navajo ranks nouns by animacy, and
+          that ranking governs both word order and the choice between certain verb prefixes. English word
+          order carries no equivalent information, so this layer disappears entirely.
+        </p>
+        <p>
+          <strong>Evidentiality is often dropped.</strong> Navajo can mark how the speaker knows
+          something, distinguishing direct observation from hearsay. English expresses this only
+          optionally, with phrases like apparently or I heard that, so automatic translation frequently
+          loses it.
         </p>
 
         <h2>How to Use the Navajo to English Translator</h2>
         <p>
           Paste or type your Navajo text into the input box and click Translate to English. The result
-          appears in the output box ready to copy.
+          appears ready to copy. Four habits materially improve what any Navajo to English translator
+          gives you back.
         </p>
         <p>
-          <strong>Keep the diacritics.</strong> This is the single most important thing you can do for
-          accuracy. Navajo uses acute accents for high tone, ogoneks for nasalized vowels, and doubled
-          vowels for length. Stripping them creates ambiguity that no translator can resolve reliably. If
-          you are copying from a source that displays them, make sure they survive the paste.
+          <strong>Keep the diacritics.</strong> This matters more than anything else. Navajo uses acute
+          accents for high tone, ogoneks for nasalized vowels, and doubled vowels for length. Stripping
+          them creates ambiguity no translator can resolve. If you are copying from a source that shows
+          them, confirm they survived the paste rather than assuming.
         </p>
         <p>
           <strong>Work in shorter passages.</strong> Sentence-level or short-paragraph chunks produce
-          better results than long blocks, and they make it easier to spot where a translation has gone
-          astray.
+          better results than long blocks, and they make it far easier to spot where a translation went
+          astray. Long blocks hide errors inside fluent-sounding output.
         </p>
         <p>
-          <strong>Check the text before translating.</strong> If the Navajo came from OCR, an automatic
-          transcript, or a scan of a handwritten document, verify it first. Errors in the input compound
-          in the output, and a mistranscribed character in a tonal language can change the word entirely.
-        </p>
-
-        <h2>When to Use a Navajo to English Translator</h2>
-        <p>
-          <strong>Language study.</strong> If you are learning Diné bizaad, translating passages into
-          English and checking your own understanding against the result is a useful practice exercise,
-          particularly when you also have an instructor or a dictionary to consult.
+          <strong>Fix the input before translating.</strong> Text copied from a PDF or scan often breaks
+          sentences mid-word across lines, sometimes with inserted hyphens. Rejoin these, because a split
+          word is an unrecognizable word. Strip headers, footers, page numbers, and footnote markers so
+          the tool sees only continuous prose.
         </p>
         <p>
-          <strong>Reading archival and family documents.</strong> Letters, notes, recordings, and papers
-          in Navajo often sit unread in family collections. A translator gives you a first pass at what a
-          document is about, which is enough to decide whether it warrants professional attention.
-        </p>
-        <p>
-          <strong>Understanding media and signage.</strong> Navajo appears in broadcasting, public
-          signage, museum exhibits, and increasingly online. A quick reading helps you follow content
-          that would otherwise be closed to you.
-        </p>
-        <p>
-          <strong>Research triage.</strong> Researchers working with Navajo-language material can use
-          translation to identify which documents in a large collection are relevant before committing to
-          professional translation of the ones that matter.
+          <strong>Clean invisible characters.</strong> Copied text frequently carries zero-width and
+          non-breaking spaces that you cannot see but that change the tokens the translator receives. Our{' '}
+          <a href="/invisible-character-remover">invisible character remover</a> strips them without
+          touching the words.
         </p>
 
-        <h2>Accuracy and Limitations</h2>
+        <h2>Navajo to English Translator Input: Recordings, Scans, and OCR</h2>
         <p>
-          Automatic Navajo to English translation is genuinely limited, and being specific about how is
-          more useful than a general disclaimer.
+          Much Navajo text reaches you through transcription or optical character recognition, and both
+          introduce errors that damage translation before it begins.
         </p>
         <p>
-          <strong>Training data is scarce.</strong> Navajo has far less digitized parallel text than
-          major world languages. Machine translation quality tracks data volume closely, so Navajo output
-          is weaker than what you would expect from Spanish or French.
-        </p>
-        <p>
-          <strong>Grammatical nuance is lost by design.</strong> As described above, information carried
-          in verb morphology often has nowhere to go in an English sentence. The English will read
-          fluently while quietly omitting distinctions the Navajo made.
-        </p>
-        <p>
-          <strong>Fluent output can be wrong.</strong> This is the most important caution. The
-          translation will read as confident, natural English whether or not it accurately reflects the
-          source. Fluency is not evidence of accuracy, and there is no visible signal separating a good
-          translation from a plausible guess.
-        </p>
-        <p>
-          <strong>Ceremonial, traditional, and specialized language will not translate well.</strong>{' '}
-          Ceremonial and traditional material carries meaning bound to context and community knowledge.
-          Some of it is not appropriate for general circulation at all. Do not run material of that kind
-          through an automatic tool and treat the result as a rendering of what it means.
-        </p>
-        <p>
-          For anything consequential, legal, medical, official, published, or historically significant,
-          use a certified human translator. The Navajo Nation and accredited language programs are the
-          authority here.
-        </p>
-
-        <h2>Reading Translations Critically</h2>
-        <p>A few habits make the output substantially more useful.</p>
-        <p>
-          <strong>Translate in both directions.</strong> Run the English result back through the{' '}
-          <a href="/navajo-translator">English to Navajo translator</a> and compare it to your original.
-          Large divergence signals that something was lost or misread. Close agreement is weak evidence
-          of accuracy but better than nothing.
-        </p>
-        <p>
-          <strong>Look up key words yourself.</strong> Published Navajo dictionaries are excellent.
-          Checking the two or three words the meaning turns on is often enough to confirm or overturn a
-          reading.
-        </p>
-        <p>
-          <strong>Test with material you already understand.</strong> Running a passage whose meaning you
-          know reveals how the tool handles that kind of text and calibrates your trust in it.
-        </p>
-        <p>
-          <strong>Watch for hedged or bracketed output.</strong> Where the tool notes uncertainty, take
-          the note seriously. Those are the places most likely to be wrong.
-        </p>
-
-        <h2>Working With Text From Recordings and Scans</h2>
-        <p>
-          Much Navajo text arrives through transcription or OCR, and both introduce errors that damage
-          translation before it starts.
-        </p>
-        <p>
-          <strong>OCR frequently mishandles diacritics.</strong> Optical character recognition trained
-          mainly on English routinely drops acute accents and ogoneks or misreads them as noise. Since
-          those marks are phonemic in Navajo, the resulting text is materially different from what was
-          written. Proofread OCR output against the image before translating.
+          <strong>OCR mishandles diacritics routinely.</strong> Character recognition trained mainly on
+          English drops acute accents and ogoneks or reads them as noise. Since those marks are phonemic,
+          the resulting text is materially different from what was written. Proofread OCR output against
+          the original image before translating, paying particular attention to accent marks.
         </p>
         <p>
           <strong>Automatic speech transcription is unreliable for Navajo.</strong> Speech recognition
           depends on training data in the target language, which is limited. Transcripts produced by
-          general-purpose tools should be verified by someone who reads the language.
+          general-purpose tools contain errors that a translator will faithfully carry through. Have
+          someone who reads the language verify a transcript before relying on a translation of it.
         </p>
         <p>
-          <strong>Clean the text first.</strong> Scanned and copied text often carries invisible
-          characters, irregular spacing, and line breaks mid-sentence that confuse translation. Our{' '}
-          <a href="/ai-tools/ai-cleanup-tools">text cleanup tools</a> remove those artifacts without
-          touching the words.
+          <strong>Historical documents use older spelling conventions.</strong> Handwriting and print
+          predating the modern standardized orthography may spell words differently, and diacritics are
+          frequently absent from historical material altogether. Type what you see as accurately as you
+          can and expect reduced reliability.
+        </p>
+
+        <h2>Navajo to English Translator Accuracy and Limitations</h2>
+        <p>
+          Being specific about failure modes is more useful than a general disclaimer, so here is what to
+          expect from a Navajo to English translator.
+        </p>
+        <p>
+          <strong>Training data is scarce.</strong> Navajo has far less digitized parallel text than major
+          world languages, and machine translation quality tracks data volume closely. Output is weaker
+          than what you would expect from Spanish or French.
+        </p>
+        <p>
+          <strong>Grammatical nuance is lost by design.</strong> Information carried in verb morphology
+          often has nowhere to go in an English sentence. The English reads fluently while quietly
+          omitting distinctions the Navajo made explicit.
+        </p>
+        <p>
+          <strong>Fluent output can be wrong.</strong> This is the most important caution on the page.
+          The translation reads as confident, natural English whether or not it reflects the source
+          accurately. Fluency is not evidence of accuracy, and nothing visible separates a solid
+          translation from a plausible guess.
+        </p>
+        <p>
+          <strong>Idioms translate literally.</strong> Fixed expressions whose meaning is not the sum of
+          their parts are among the hardest cases for machine translation, and Navajo has many.
+        </p>
+        <p>
+          <strong>Proper names get mangled.</strong> Place names and personal names often carry
+          descriptive meaning in Navajo, so a translator may render the meaning instead of recognizing a
+          name.
+        </p>
+        <p>
+          <strong>Register is flattened.</strong> Formal, ceremonial, and casual Navajo differ, and
+          English output tends toward a neutral middle regardless of the source.
+        </p>
+        <p>
+          <strong>Ceremonial and traditional material should not go through this tool at all.</strong> It
+          carries meaning bound to context and community knowledge, and some of it is not appropriate for
+          general circulation. Do not treat an automatic rendering of such material as what it means.
+        </p>
+        <p>
+          For anything consequential, legal, medical, official, published, or historically significant,
+          use a certified human translator. The Navajo Nation and accredited language programs are the
+          authority.
+        </p>
+
+        <h2>How Navajo Machine Translation Compares to Other Languages</h2>
+        <p>
+          If you have used machine translation for Spanish, French, or German, calibrate your expectations
+          downward before using a Navajo to English translator, and understand why.
+        </p>
+        <p>
+          Machine translation quality depends on parallel text, meaning documents that exist in both
+          languages and can be aligned. European languages have decades of bilingual government
+          proceedings, translated literature, subtitles, and web content. Navajo has a fraction of that,
+          and much of what exists is not digitized or not freely available.
+        </p>
+        <p>
+          Structural distance compounds it. Spanish and English share vocabulary roots and broadly similar
+          sentence structure, so a fairly mechanical mapping produces usable results. Navajo belongs to a
+          different family with grammar organized on different principles, and there is no shortcut
+          mapping to fall back on.
+        </p>
+        <p>
+          The practical consequence: for Spanish you might trust the output and spot-check it. For Navajo
+          you should verify anything that matters.
+        </p>
+
+        <h2>Worked Examples: What Gets Lost Between Navajo and English</h2>
+        <p>
+          The abstract points above are easier to judge against concrete cases. These show the gap between
+          what a Navajo to English translator returns and what the original actually encodes.
+        </p>
+        <p>
+          <strong>Handling verbs and object shape.</strong> Navajo has distinct verbs for giving
+          depending on what is given. Handing someone a ball, a stick, a blanket, and a cup of water each
+          require a different verb stem, because the stems encode round-solid, long-rigid, flexible, and
+          contained-liquid respectively. All four translate into English as give me that. A Navajo to
+          English translation of any one of them collapses into the same English sentence, and the
+          information about what kind of object is involved vanishes. If your source text depended on
+          that distinction, the English will not carry it.
+        </p>
+        <p>
+          <strong>Aspect changing the meaning.</strong> A verb marked as momentaneous describes an action
+          completed at a point, while the same root marked as continuative describes it as ongoing, and
+          iterative marks it as habitually repeated. English renders all three with variations on he
+          walks, he is walking, and he walks regularly, but automatic translation frequently picks the
+          simple present regardless. When a translation reads as a plain statement of fact, check whether
+          the original was actually describing something habitual or in progress.
+        </p>
+        <p>
+          <strong>Subject and object marked inside the verb.</strong> Because person marking is prefixed
+          onto the verb rather than expressed with separate pronouns, a complete Navajo sentence can be a
+          single word. English needs a subject noun or pronoun, so the translator has to supply one. Where
+          the Navajo was unambiguous about who acts on whom, the English version may introduce ambiguity
+          that was not in the original, particularly when two third parties are involved.
+        </p>
+        <p>
+          <strong>Place names carrying description.</strong> Many Navajo place names describe the place.
+          A name meaning something like the meadow between the rocks may be translated descriptively
+          rather than recognized as a proper noun. If a translation contains an oddly poetic phrase where
+          you expected a location, that is usually what happened.
+        </p>
+
+        <h2>Common Mistakes When Translating Navajo to English</h2>
+        <p>
+          Most poor results from a Navajo to English translator trace back to a handful of avoidable errors
+          on the input side rather than to the tool itself.
+        </p>
+        <p>
+          <strong>Typing without diacritics because they are inconvenient.</strong> This is the single
+          most common cause of bad output. Without tone marks and nasal hooks, distinct words become
+          identical strings and the translator picks whichever is more frequent in its training data. If
+          you cannot type the marks directly, copy them from a dictionary entry or use a Navajo keyboard
+          layout rather than omitting them.
+        </p>
+        <p>
+          <strong>Substituting similar-looking characters.</strong> Using a plain apostrophe where the
+          text needs a glottal stop character, or an ordinary o where the text needs one with an ogonek,
+          produces a word the translator does not recognize. These substitutions are invisible at a
+          glance, which is what makes them persistent.
+        </p>
+        <p>
+          <strong>Translating a fragment without context.</strong> Feeding in a single clause pulled from
+          the middle of a paragraph strips the surrounding information the translator would otherwise use
+          to resolve ambiguity. Include the sentences on either side, then read only the part you needed.
+        </p>
+        <p>
+          <strong>Assuming word-for-word correspondence.</strong> Because one Navajo word can carry a full
+          English clause, a five-word Navajo sentence may correctly become a twenty-word English one.
+          Treating a length mismatch as evidence of error leads people to reject good translations and
+          retry until they get a shorter, worse one.
+        </p>
+        <p>
+          <strong>Running an entire document at once.</strong> Quality degrades over long inputs, and
+          errors in the middle are easy to miss when you are reading for general sense. Process in
+          sections and read each one deliberately.
+        </p>
+        <p>
+          <strong>Trusting the first result without any check.</strong> Given that fluency and accuracy
+          are unrelated here, a single unverified pass is the weakest possible use of the tool. At minimum,
+          look up the words the meaning depends on.
+        </p>
+
+        <h2>Typing Navajo Characters for Accurate English Translation</h2>
+        <p>
+          Since diacritics determine whether the translator sees the right word, being able to enter them
+          is a practical prerequisite rather than a refinement. Navajo needs four things standard English
+          keyboards do not provide.
+        </p>
+        <p>
+          <strong>Acute accents</strong> mark high tone and appear on all four vowels. <strong>Ogoneks</strong>,
+          the small hook below a vowel, mark nasalization. <strong>Doubled vowels</strong> mark length and
+          are simply typed twice. And the <strong>glottal stop</strong> is written with a specific
+          character that is not the same as a typewriter apostrophe, though the two look similar enough
+          that they are constantly confused.
+        </p>
+        <p>
+          Vowels can carry both a tone mark and an ogonek at once, which is where most input difficulty
+          arises. A long nasalized high-tone vowel needs the doubling, the hook, and the accent together.
+        </p>
+        <p>
+          There are three practical approaches. Installing a Navajo keyboard layout is the best option if
+          you work with the language regularly, since it makes every character directly typeable. Copying
+          characters from a dictionary entry or an existing document works well for occasional use.
+          Character-map utilities built into Windows and macOS let you insert any character without
+          installing anything, which is slower but requires no setup.
+        </p>
+        <p>
+          What does not work is approximating. Typing an unaccented vowel because the accented one is
+          awkward changes the word, and typing a plain apostrophe for a glottal stop produces a string the
+          translator may not recognize. If you are unsure whether your text has the right characters,
+          compare it against a dictionary entry for one or two words before translating the whole passage.
+        </p>
+        <p>
+          One further caution about copying: some applications silently convert straight apostrophes into
+          curly typographic ones, which introduces exactly the substitution problem described above. If a
+          passage that previously translated correctly stops working after a round trip through a word
+          processor, this is the likely cause. Our{' '}
+          <a href="/ai-tools/ai-cleanup-tools">text cleanup tools</a> can normalize punctuation back to
+          plain characters before you translate.
+        </p>
+
+        <h2>Checking Whether a Navajo to English Translation Is Right</h2>
+        <p>
+          Since you cannot judge accuracy from fluency, check the output of a Navajo to English translator
+          against something external. Three methods work well.
+        </p>
+        <p>
+          <strong>Translate in both directions.</strong> Run the English result back through the{' '}
+          <a href="/navajo-translator">English to Navajo translator</a> and compare against your original
+          Navajo. Large divergence signals something was lost or misread. Close agreement is weak evidence
+          of accuracy, but better than none.
+        </p>
+        <p>
+          <strong>Look up the pivotal words.</strong> Published Navajo dictionaries are excellent and far
+          more reliable than any automatic tool for individual words. Checking the two or three words the
+          meaning turns on is usually enough to confirm or overturn a reading.
+        </p>
+        <p>
+          <strong>Test on material you already understand.</strong> Running a passage whose meaning you
+          know reveals how the tool handles that kind of text and calibrates how much to trust it
+          elsewhere.
+        </p>
+
+        <h2>Translate Navajo to English for School and Coursework</h2>
+        <p>
+          Students in Navajo language courses use a Navajo to English translator constantly, and there is a
+          productive way and an unproductive way to do it.
+        </p>
+        <p>
+          The productive method: translate the passage yourself first, then run it through the tool, then
+          investigate every place your version and the tool disagree. Those disagreements mark exactly
+          where your understanding is incomplete, which makes them the most valuable part of the exercise.
+          Looking up the disputed words afterwards turns a five-minute task into real learning.
+        </p>
+        <p>
+          The unproductive method is pasting the assignment and submitting the output. Beyond the academic
+          integrity question, which your institution governs, it teaches you nothing and produces English
+          a Navajo speaker can often identify as machine-generated. If your course prohibits translation
+          tools, that rule applies regardless of what any tool can do.
+        </p>
+        <p>
+          Teachers can use the translator differently: showing a class where an automatic translation goes
+          wrong, and asking why, teaches more about Navajo grammar than a correct translation would.
+        </p>
+
+        <h2>Navajo to English Translation for Genealogy and Family Documents</h2>
+        <p>
+          Family historians are among the heaviest users of a Navajo to English translator. They regularly
+          encounter Navajo text they cannot read: letters between relatives,
+          annotations on photographs, notes in family Bibles, allotment and census records, and
+          transcripts of recorded interviews with elders.
+        </p>
+        <p>
+          A translation gives you a first reading, and that first reading usually answers the immediate
+          question, which is whether a document is significant enough to warrant professional translation.
+          A grocery list and a land dispute look identical until someone reads them.
+        </p>
+        <p>
+          Researchers working with larger Navajo-language collections can use translation the same way,
+          as triage to identify which documents merit certified translation. Do not cite automatic
+          translations as authoritative renderings in published work.
+        </p>
+        <p>
+          When you do work through a family or archival collection, keep a record of what you translated
+          and how. Note the original Navajo alongside the English, flag any passage where the translation
+          seemed uncertain, and record which words you verified in a dictionary. That record is what lets
+          a certified translator pick up the work efficiently later, and it prevents a provisional reading
+          from hardening into accepted family history simply because nobody wrote down that it was
+          provisional.
+        </p>
+
+        <h2>Reading Navajo Media, Signage, and Social Media</h2>
+        <p>
+          Navajo appears in more public contexts than many people expect. KTNN and other stations
+          broadcast in the language. Road signage, tribal government notices, health campaigns, and museum
+          exhibits across the Navajo Nation carry Navajo text. Social media accounts post in Diné bizaad
+          daily, and revitalization work has produced a growing body of online content.
+        </p>
+        <p>
+          Public signage and broadcast material is intended for a general audience, so reading it with a
+          translator is straightforward. Social media warrants more thought: a public post is public, but
+          content shared inside a community space carries a different expectation, and translating it to
+          circulate elsewhere is not the same act as translating it to understand it.
+        </p>
+
+        <h2>Translator, Dictionary, or Grammar Reference?</h2>
+        <p>
+          People searching for Navajo to English help are sometimes looking for a different kind of tool,
+          and the distinction is worth making clear.
+        </p>
+        <p>
+          A <strong>translator</strong> takes a sentence or passage and produces equivalent text in
+          another language, handling grammar and context. That is what this page does, and it is the right
+          tool when you have connected prose.
+        </p>
+        <p>
+          A <strong>dictionary</strong> gives the meaning of individual words with grammatical information
+          and example usage. Published Navajo dictionaries are considerably more reliable than any
+          automatic translator for single words, and they explain nuance a translator cannot. If your
+          question is what does this one word mean, use a dictionary.
+        </p>
+        <p>
+          A <strong>grammar reference</strong> explains how the verb system, aspect, and classificatory
+          stems actually work. For sustained study you want all three, and no automatic tool replaces the
+          dictionary and the grammar.
+        </p>
+        <p>
+          A workable division of labour looks like this. Use the translator first to get the general
+          sense of a passage and identify which parts you do not understand. Take the specific words those
+          parts turn on to a dictionary, which will give you the stem, the relevant prefixes, and usually
+          an example sentence. Then consult a grammar reference for whatever the dictionary entry assumed
+          you already knew about the verb form. Working in that order means you spend dictionary time only
+          where it pays off, rather than looking up every word in a passage you could mostly read.
         </p>
 
         <h2>Respectful Use of Diné Bizaad</h2>
@@ -219,326 +489,37 @@ function createWriteUp() {
           boarding schools within living memory, and revitalization today is deliberate community work.
         </p>
         <p>
-          A few principles follow. Material shared within a community is not automatically yours to
-          translate and circulate more widely. Ceremonial and traditional knowledge in particular carries
-          protocols about who may access it. If you are publishing anything involving Navajo text,
-          involve Navajo speakers rather than relying on automatic output. And credit the language
-          community whose work makes any of this possible.
+          Several principles follow. Material shared within a community is not automatically yours to
+          translate and circulate more widely. Ceremonial and traditional knowledge carries protocols
+          about who may access it. If you are publishing anything involving Navajo text, involve Navajo
+          speakers rather than relying on automatic output. Credit the language community whose work makes
+          any of this possible.
         </p>
         <p>
-          Using a translator to read something addressed to you, to study the language, or to understand
-          public material is ordinary and fine. Extracting and republishing community material because a
-          tool made it legible is a different act.
+          Reading something addressed to you, studying the language, or understanding public material is
+          ordinary and fine. Extracting and republishing community material because a tool made it legible
+          is a different act.
         </p>
 
         <h2>Privacy</h2>
         <p>
           Text you enter is processed to produce the translation and is not retained after your session,
-          sold, or used for training. If you are working with family documents, unpublished research, or
-          culturally sensitive material, that matters. For purely local text processing with no
+          sold, or used for training. That matters if you are working with family documents, unpublished
+          research, or culturally sensitive material. For purely local text processing with no
           transmission at all, the client-side tools in our{' '}
           <a href="/ai-tools/text-tools">text tools</a> category run entirely in your browser.
         </p>
 
-        <h2>Related Translation and Text Tools</h2>
-        <p>
-          The companion tool in the other direction is our{' '}
-          <a href="/navajo-translator">English to Navajo translator</a>. Both sit in the{' '}
-          <a href="/ai-tools/translator-tools">translator tools</a> category, which also covers
-          historical English registers including <a href="/old-english-translator">Old English</a>,{' '}
-          <a href="/middle-english-translator">Middle English</a>, and{' '}
-          <a href="/shakespearean-translator">Shakespearean</a> style. Those are stylistic converters
-          rather than translators between natural languages, a distinction worth keeping clear.
-        </p>
-        <p>
-          For preparing text before translation, the{' '}
-          <a href="/ai-tools/ai-cleanup-tools">AI cleanup tools</a> remove invisible characters and
-          normalize spacing, and the <a href="/ai-tools/text-tools">text tools</a> handle case
-          conversion, duplicate removal, and formatting. Browse the full{' '}
-          <a href="/ai-tools">tool directory</a> for everything else.
-        </p>
-
-        <h2>Navajo to English Translator: Free Online Diné Bizaad Translation</h2>
-        <p>
-          This <strong>free Navajo to English translator</strong> works entirely online with no
-          download, no installation, and no account. Open the page, paste your Navajo text, and read the
-          English result. Whether you need to translate Navajo to English for a class assignment, a
-          family letter, a museum label, or a song lyric, the workflow is the same: paste, translate,
-          copy.
-        </p>
-        <p>
-          People search for this tool in many ways: Navajo to English translator, translate Navajo to
-          English, Diné bizaad to English, Navajo language translator, Navajo English dictionary online,
-          and Navajo translation free. They all describe the same need, which is reading Navajo text when
-          you do not speak the language fluently.
-        </p>
-        <p>
-          The tool pairs naturally with our{' '}
-          <a href="/navajo-translator">English to Navajo translator</a>. Use that one when you want to
-          produce Navajo, and this one when you want to read it. Between them you can move in both
-          directions, which is useful for language learners checking their own work.
-        </p>
-
-        <h2>Common Navajo Words and Phrases Translated to English</h2>
-        <p>
-          Learners often start by translating short greetings and everyday expressions from Navajo into
-          English. These are the phrases most frequently entered into a Navajo to English translator, and
-          recognizing them helps you gauge whether the tool is behaving sensibly on your longer text.
-        </p>
-        <p>
-          <strong>Yá&apos;át&apos;ééh</strong> is the standard greeting, usually rendered as hello, and
-          literally closer to it is good. <strong>Ahéhee&apos;</strong> means thank you.{' '}
-          <strong>Hágoónee&apos;</strong> is a farewell, roughly goodbye or see you later.{' '}
-          <strong>Diné</strong> means the people and is the name the Navajo use for themselves, while{' '}
-          <strong>Diné bizaad</strong> means the language of the people, that is, Navajo.{' '}
-          <strong>Hózhó</strong> is one of the hardest words to translate into English, covering beauty,
-          balance, harmony, and order together, and no single English word carries all of it.
-        </p>
-        <p>
-          That last example illustrates the general problem with Navajo to English translation. A word
-          can be culturally central and still have no English equivalent, so any translation is a
-          compromise. When you see a one-word English rendering of a concept like hózhó, treat it as a
-          pointer rather than a definition.
-        </p>
-
-        <h2>Translate Navajo to English for School and Coursework</h2>
-        <p>
-          Students in Navajo language courses use a Navajo to English translator constantly, and there is
-          a productive way and an unproductive way to do it.
-        </p>
-        <p>
-          The productive method is to translate the passage yourself first, then run it through the tool,
-          then investigate every place your version and the tool disagree. Those disagreement points are
-          exactly where your understanding is incomplete, so they are the most valuable part of the
-          exercise. Looking up the disputed words in a published Navajo dictionary afterwards turns a
-          five-minute task into genuine learning.
-        </p>
-        <p>
-          The unproductive method is to paste the assignment, copy the output, and submit it. Beyond the
-          academic integrity question, which your instructor and institution govern, it also teaches you
-          nothing and produces English that a Navajo speaker can often tell came from a machine. If your
-          course prohibits translation tools, that rule applies regardless of what any tool can do.
-        </p>
-        <p>
-          Teachers can use the translator for a different purpose: generating discussion material.
-          Showing a class where an automatic Navajo to English translation goes wrong, and asking why,
-          teaches more about Navajo grammar than a correct translation would.
-        </p>
-
-        <h2>Navajo to English Translation for Genealogy and Family History</h2>
-        <p>
-          Family historians frequently encounter Navajo text they cannot read: letters between relatives,
-          annotations on photographs, notes in family Bibles, allotment and census records, and
-          transcripts of recorded interviews with elders.
-        </p>
-        <p>
-          A Navajo to English translator gives you a first reading of these materials. That first reading
-          is usually enough to answer the immediate question, which is whether a document is significant
-          enough to warrant professional translation. A grocery list and a land dispute look identical
-          until someone reads them.
-        </p>
-        <p>
-          Handle these documents carefully. Older handwriting may use spelling conventions that predate
-          the modern standardized orthography, and diacritics are frequently absent from historical
-          material. Type what you see as accurately as you can, including any accent marks, and be aware
-          that missing tone marks make the translation less reliable. For anything that turns out to
-          matter legally or historically, engage a certified translator.
-        </p>
-
-        <h2>Reading Navajo Media, Signage, and Social Media</h2>
-        <p>
-          Navajo appears in more public contexts than many people expect. KTNN and other stations
-          broadcast in the language. Road signage, tribal government notices, health campaigns, and
-          museum exhibits across the Navajo Nation carry Navajo text. Social media accounts post in Diné
-          bizaad daily, and language revitalization efforts have produced a growing body of online
-          content.
-        </p>
-        <p>
-          Using a Navajo to English translator on this material lets you follow content that would
-          otherwise be closed to you. Public signage and broadcast material is intended for a general
-          audience, so reading it with a translator is straightforward and unproblematic.
-        </p>
-        <p>
-          Social media requires a little more thought. A public post is public, but content shared inside
-          a community space carries a different expectation, and translating it to circulate elsewhere is
-          not the same act as translating it to understand it. The distinction is about what you do with
-          the translation rather than whether you make one.
-        </p>
-
-        <h2>Navajo Grammar Features That Affect English Translation</h2>
-        <p>
-          Beyond the verb complexity described earlier, several features of Navajo grammar shape what a
-          Navajo to English translation can and cannot convey.
-        </p>
-        <p>
-          <strong>Fourth person and obviation.</strong> Navajo distinguishes more grammatical persons
-          than English does, including a fourth person used for a second distinct third-party referent.
-          English has only he, she, it, and they, so a Navajo sentence that keeps two third parties
-          clearly separate becomes ambiguous in English translation unless the translator adds names or
-          clarifying phrases.
-        </p>
-        <p>
-          <strong>The animacy hierarchy.</strong> Navajo word order is governed partly by a ranking of
-          nouns by animacy, and the choice between certain verb prefixes depends on which participant
-          ranks higher. English word order carries no such information, so this grammatical layer simply
-          disappears in translation.
-        </p>
-        <p>
-          <strong>Evidentiality and reported speech.</strong> Navajo has ways of marking how the speaker
-          knows something, distinguishing direct observation from hearsay. English expresses this
-          optionally with phrases like apparently or I heard that, so an automatic translation often
-          drops the distinction entirely.
-        </p>
-        <p>
-          <strong>Postpositions rather than prepositions.</strong> Navajo places relational markers after
-          the noun, and many of them attach to the noun as part of the word. This means spatial and
-          relational meaning that English carries in separate small words is bound up inside Navajo words,
-          which is another reason the word counts of a Navajo original and its English translation differ
-          so much.
-        </p>
-
-        <h2>How Navajo to English Machine Translation Compares to Other Languages</h2>
-        <p>
-          If you have used machine translation for Spanish, French, or German and expect similar quality
-          from Navajo, calibrate your expectations downward, and understanding why helps you use the
-          output sensibly.
-        </p>
-        <p>
-          Machine translation quality depends heavily on the volume of parallel text available, meaning
-          documents that exist in both languages and can be aligned. European languages have decades of
-          bilingual government proceedings, translated literature, subtitles, and web content. Navajo has
-          a fraction of that, and much of what exists is not digitized or not freely available.
-        </p>
-        <p>
-          The structural distance matters too. Spanish and English share vocabulary roots and broadly
-          similar sentence structure, so a fairly mechanical mapping produces usable results. Navajo
-          belongs to an entirely different language family with a grammar organized on different
-          principles, so there is no shortcut mapping to fall back on.
-        </p>
-        <p>
-          The practical consequence is that a Navajo to English translation should be treated as a strong
-          hint about meaning rather than a reliable rendering. For Spanish you might trust the output and
-          spot-check it. For Navajo you should verify anything that matters.
-        </p>
-
-        <h2>Preparing Navajo Text for Better Translation Results</h2>
-        <p>
-          The quality of a Navajo to English translation depends heavily on the quality of what you put
-          in, and a few minutes of preparation measurably improves the result.
-        </p>
-        <p>
-          <strong>Restore missing diacritics where you can.</strong> If you know the words, add the acute
-          accents and ogoneks. If you are copying from a printed source that shows them, verify they
-          survived the paste rather than assuming.
-        </p>
-        <p>
-          <strong>Fix broken line wrapping.</strong> Text copied from a PDF or a scan often breaks
-          sentences across lines mid-word, sometimes with hyphens inserted. Rejoin these before
-          translating, because a split word is an unrecognizable word.
-        </p>
-        <p>
-          <strong>Remove page furniture.</strong> Headers, footers, page numbers, and footnote markers
-          that came along with a copy-paste confuse the translation. Strip them out so the tool sees only
-          continuous prose.
-        </p>
-        <p>
-          <strong>Separate distinct passages.</strong> If your text contains several unrelated
-          paragraphs, translate them one at a time. Context helps within a passage and hurts across
-          unrelated ones.
-        </p>
-        <p>
-          <strong>Clean invisible characters.</strong> Copied text frequently carries zero-width spaces
-          and non-breaking spaces that are invisible to you but alter the tokens the translator sees. Our{' '}
-          <a href="/invisible-character-remover">invisible character remover</a> strips these without
-          touching the words.
-        </p>
-
-        <h2>Frequently Confused: Translator, Dictionary, and Transliteration</h2>
-        <p>
-          People searching for Navajo to English help are sometimes looking for a different kind of tool
-          than a translator, and the distinction is worth making clear.
-        </p>
-        <p>
-          A <strong>translator</strong> takes a sentence or passage and produces equivalent text in
-          another language, handling grammar and context. That is what this page does.
-        </p>
-        <p>
-          A <strong>dictionary</strong> gives the meaning of individual words along with grammatical
-          information and example usage. Published Navajo dictionaries are far more reliable than any
-          automatic translator for single words, and they explain nuance a translator cannot. If your
-          question is what does this one word mean, a dictionary is the better tool.
-        </p>
-        <p>
-          A <strong>transliteration tool</strong> converts between writing systems without changing the
-          language. This is not relevant for Navajo, which is written in a Latin-based alphabet, but
-          people sometimes search for it by analogy with languages that use other scripts.
-        </p>
-        <p>
-          For serious study you want all three: a translator for passages, a dictionary for words, and a
-          grammar reference for structure. No automatic tool replaces the dictionary and grammar.
-        </p>
-
-        <h2>Navajo Code Talkers and the Language in History</h2>
-        <p>
-          Many people first encounter Navajo through the story of the Code Talkers, and it is worth
-          understanding what that history does and does not tell you about translating the language.
-        </p>
-        <p>
-          During the Second World War, Navajo speakers developed and used an unbroken code based on their
-          language for United States Marine Corps communications in the Pacific. Its security rested
-          partly on the language having no written form in wide circulation and very few non-Navajo
-          speakers, and partly on a deliberately constructed vocabulary layered on top of ordinary
-          Navajo, so even a fluent speaker who did not know the code could not read the messages.
-        </p>
-        <p>
-          The relevant point for a translator is that the difficulty which made the code secure is the
-          same difficulty that makes automatic translation hard today. A language with complex morphology,
-          limited written corpus, and no close relatives resists both codebreaking and machine
-          translation for overlapping reasons.
-        </p>
-        <p>
-          There is a sharper irony worth naming. The same government that relied on Navajo for military
-          communication had, in the preceding decades, run boarding schools where children were punished
-          for speaking it. That history is part of why revitalization work matters now, and part of why
-          respectful use of translation tools is not merely a courtesy.
-        </p>
-
-        <h2>Limitations You Should Expect From Any Navajo Translator</h2>
-        <p>
-          Setting expectations accurately makes the tool more useful, so here is a direct summary of what
-          will go wrong.
-        </p>
-        <p>
-          <strong>Idioms will translate literally.</strong> Fixed expressions whose meaning is not the sum
-          of their words are among the hardest things for machine translation, and Navajo has many.
-        </p>
-        <p>
-          <strong>Proper names may be mangled.</strong> Place names and personal names often carry
-          descriptive meaning in Navajo, and a translator may render the meaning rather than recognizing
-          it as a name.
-        </p>
-        <p>
-          <strong>Long sentences degrade.</strong> The more clauses a Navajo sentence contains, the more
-          opportunities there are for the translation to lose track of which participant is doing what.
-        </p>
-        <p>
-          <strong>Register is usually flattened.</strong> Formal, ceremonial, and casual Navajo differ,
-          and English output tends toward a neutral middle regardless of the source register.
-        </p>
-        <p>
-          <strong>Confidence is not calibrated.</strong> The output reads with equal fluency whether the
-          translation is solid or a guess. This bears repeating because it is the failure mode most likely
-          to mislead you.
-        </p>
-
         <h2>Summary</h2>
         <p>
-          This Navajo to English translator converts Diné bizaad text into English for reading and study.
-          It is free, needs no account, and runs in your browser. Keep diacritics intact, work in short
-          passages, verify OCR and transcripts before translating, and read the output critically,
-          remembering that fluent English is not evidence of an accurate translation. For official,
-          legal, published, or culturally significant material, use a certified human translator and
-          consult resources from the Navajo Nation.
+          This Navajo to English translator converts Diné bizaad text into English for reading and study,
+          free and with no account. Keep diacritics intact, work in short passages, verify OCR and
+          transcripts before translating, and check important results against a dictionary or by
+          translating back through the{' '}
+          <a href="/navajo-translator">English to Navajo translator</a>. Above all, remember that fluent
+          English output is not evidence of an accurate translation. For official, legal, published, or
+          culturally significant material, use a certified human translator and consult resources from the
+          Navajo Nation.
         </p>
       </div>
     </section>
