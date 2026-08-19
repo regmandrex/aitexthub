@@ -41,7 +41,7 @@ function createWriteUp() {
           posts, broadcast transcripts, and coursework in a Navajo language class.
         </p>
         <p>
-          Treat the output as a reading aid rather than a finished translation. Navajo is grammatically
+          Treat the output of any Navajo translator as a reading aid rather than a finished translation. Navajo is grammatically
           complex and automatic translation into English loses meaning in specific, predictable ways. The
           sections below explain exactly where and why, so you can judge any given result instead of
           trusting it blindly.
@@ -55,17 +55,18 @@ function createWriteUp() {
           across the Navajo Nation in Arizona, New Mexico, and Utah.
         </p>
         <p>
-          It is a living language with active revitalization behind it: immersion schools, university
+          Before reaching for any Navajo translator, it helps to know what you are working with. Navajo is
+          a living language with active revitalization behind it: immersion schools, university
           programs, published dictionaries, radio and television broadcasting, and community teaching.
           When you translate Navajo into English you are reading the work of a living language community,
           and that framing matters for how the output should be used.
         </p>
 
-        <h2>Common Navajo Words and Phrases Translated to English</h2>
+        <h2>Common Navajo Words and Phrases a Navajo Translator Converts to English</h2>
         <p>
-          Learners usually start with short greetings and everyday expressions. These are the phrases
-          most often entered into a Navajo to English translator, and recognizing them helps you judge
-          whether the tool is behaving sensibly on your longer text.
+          Learners usually start with short greetings and everyday expressions. These are the phrases most
+          commonly typed into a Navajo translator, and recognizing them helps you judge whether the tool is
+          behaving sensibly on your longer text.
         </p>
         <p>
           <strong>Yá&apos;át&apos;ééh</strong> is the standard greeting, usually rendered as hello and
@@ -86,7 +87,7 @@ function createWriteUp() {
 
         <h2>Why Navajo to English Translation Is Difficult</h2>
         <p>
-          Every Navajo to English translator faces the same structural obstacles, and they are not simply a
+          Every Navajo translator faces the same structural obstacles, and they are not simply a
           matter of insufficient training data. Understanding them tells you which parts of a translation
           to distrust.
         </p>
@@ -135,14 +136,13 @@ function createWriteUp() {
         <h2>How to Use the Navajo to English Translator</h2>
         <p>
           Paste or type your Navajo text into the input box and click Translate to English. The result
-          appears ready to copy. Four habits materially improve what any Navajo to English translator
-          gives you back.
+          appears ready to copy. Four habits materially improve what any Navajo translator gives you back.
         </p>
         <p>
           <strong>Keep the diacritics.</strong> This matters more than anything else. Navajo uses acute
           accents for high tone, ogoneks for nasalized vowels, and doubled vowels for length. Stripping
           them creates ambiguity no translator can resolve. If you are copying from a source that shows
-          them, confirm they survived the paste rather than assuming.
+          them, confirm they survived the paste before handing the text to a Navajo translator.
         </p>
         <p>
           <strong>Work in shorter passages.</strong> Sentence-level or short-paragraph chunks produce
@@ -162,10 +162,10 @@ function createWriteUp() {
           touching the words.
         </p>
 
-        <h2>Navajo to English Translator Input: Recordings, Scans, and OCR</h2>
+        <h2>Navajo Translator Input: Recordings, Scans, and OCR</h2>
         <p>
           Much Navajo text reaches you through transcription or optical character recognition, and both
-          introduce errors that damage translation before it begins.
+          introduce errors that damage what a Navajo translator can do before it begins.
         </p>
         <p>
           <strong>OCR mishandles diacritics routinely.</strong> Character recognition trained mainly on
@@ -186,7 +186,7 @@ function createWriteUp() {
           can and expect reduced reliability.
         </p>
 
-        <h2>Navajo to English Translator Accuracy and Limitations</h2>
+        <h2>Navajo Translator Accuracy and Limitations</h2>
         <p>
           Being specific about failure modes is more useful than a general disclaimer, so here is what to
           expect from a Navajo to English translator.
@@ -231,13 +231,13 @@ function createWriteUp() {
           authority.
         </p>
 
-        <h2>How Navajo Machine Translation Compares to Other Languages</h2>
+        <h2>How a Navajo Translator Compares to Other Language Tools</h2>
         <p>
           If you have used machine translation for Spanish, French, or German, calibrate your expectations
           downward before using a Navajo to English translator, and understand why.
         </p>
         <p>
-          Machine translation quality depends on parallel text, meaning documents that exist in both
+          The quality any Navajo translator can reach depends on parallel text, meaning documents that exist in both
           languages and can be aligned. European languages have decades of bilingual government
           proceedings, translated literature, subtitles, and web content. Navajo has a fraction of that,
           and much of what exists is not digitized or not freely available.
@@ -253,7 +253,7 @@ function createWriteUp() {
           you should verify anything that matters.
         </p>
 
-        <h2>Worked Examples: What Gets Lost Between Navajo and English</h2>
+        <h2>Worked Examples: What a Navajo Translator Loses in English</h2>
         <p>
           The abstract points above are easier to judge against concrete cases. These show the gap between
           what a Navajo to English translator returns and what the original actually encodes.
@@ -289,10 +289,10 @@ function createWriteUp() {
           you expected a location, that is usually what happened.
         </p>
 
-        <h2>Common Mistakes When Translating Navajo to English</h2>
+        <h2>Common Mistakes When Using a Navajo Translator</h2>
         <p>
-          Most poor results from a Navajo to English translator trace back to a handful of avoidable errors
-          on the input side rather than to the tool itself.
+          Most poor results from a Navajo translator trace back to a handful of avoidable errors on the
+          input side rather than to the tool itself.
         </p>
         <p>
           <strong>Typing without diacritics because they are inconvenient.</strong> This is the single
@@ -329,9 +329,9 @@ function createWriteUp() {
           look up the words the meaning depends on.
         </p>
 
-        <h2>Typing Navajo Characters for Accurate English Translation</h2>
+        <h2>Typing Navajo Characters So a Navajo Translator Reads Them</h2>
         <p>
-          Since diacritics determine whether the translator sees the right word, being able to enter them
+          Since diacritics determine whether a Navajo translator sees the right word, being able to enter them
           is a practical prerequisite rather than a refinement. Navajo needs four things standard English
           keyboards do not provide.
         </p>
@@ -392,8 +392,8 @@ function createWriteUp() {
 
         <h2>Translate Navajo to English for School and Coursework</h2>
         <p>
-          Students in Navajo language courses use a Navajo to English translator constantly, and there is a
-          productive way and an unproductive way to do it.
+          Students in Navajo language courses use a Navajo translator constantly, and there is a productive
+          way and an unproductive way to do it.
         </p>
         <p>
           The productive method: translate the passage yourself first, then run it through the tool, then
@@ -408,19 +408,19 @@ function createWriteUp() {
           tools, that rule applies regardless of what any tool can do.
         </p>
         <p>
-          Teachers can use the translator differently: showing a class where an automatic translation goes
+          Teachers can use a Navajo translator differently: showing a class where an automatic translation goes
           wrong, and asking why, teaches more about Navajo grammar than a correct translation would.
         </p>
 
         <h2>Navajo to English Translation for Genealogy and Family Documents</h2>
         <p>
-          Family historians are among the heaviest users of a Navajo to English translator. They regularly
+          Family historians are among the heaviest users of a Navajo translator. They regularly
           encounter Navajo text they cannot read: letters between relatives,
           annotations on photographs, notes in family Bibles, allotment and census records, and
           transcripts of recorded interviews with elders.
         </p>
         <p>
-          A translation gives you a first reading, and that first reading usually answers the immediate
+          A Navajo translator gives you a first reading, and that first reading usually answers the immediate
           question, which is whether a document is significant enough to warrant professional translation.
           A grocery list and a land dispute look identical until someone reads them.
         </p>
@@ -438,27 +438,27 @@ function createWriteUp() {
           provisional.
         </p>
 
-        <h2>Reading Navajo Media, Signage, and Social Media</h2>
+        <h2>Using a Navajo Translator on Media, Signage, and Social Media</h2>
         <p>
-          Navajo appears in more public contexts than many people expect. KTNN and other stations
+          A Navajo translator opens up more public material than many people expect. KTNN and other stations
           broadcast in the language. Road signage, tribal government notices, health campaigns, and museum
           exhibits across the Navajo Nation carry Navajo text. Social media accounts post in Diné bizaad
           daily, and revitalization work has produced a growing body of online content.
         </p>
         <p>
           Public signage and broadcast material is intended for a general audience, so reading it with a
-          translator is straightforward. Social media warrants more thought: a public post is public, but
+          Navajo translator is straightforward. Social media warrants more thought: a public post is public, but
           content shared inside a community space carries a different expectation, and translating it to
           circulate elsewhere is not the same act as translating it to understand it.
         </p>
 
-        <h2>Translator, Dictionary, or Grammar Reference?</h2>
+        <h2>Navajo Translator, Dictionary, or Grammar Reference?</h2>
         <p>
           People searching for Navajo to English help are sometimes looking for a different kind of tool,
           and the distinction is worth making clear.
         </p>
         <p>
-          A <strong>translator</strong> takes a sentence or passage and produces equivalent text in
+          A <strong>Navajo translator</strong> takes a sentence or passage and produces equivalent text in
           another language, handling grammar and context. That is what this page does, and it is the right
           tool when you have connected prose.
         </p>
@@ -474,7 +474,7 @@ function createWriteUp() {
           dictionary and the grammar.
         </p>
         <p>
-          A workable division of labour looks like this. Use the translator first to get the general
+          A workable division of labour looks like this. Use a Navajo translator first to get the general
           sense of a passage and identify which parts you do not understand. Take the specific words those
           parts turn on to a dictionary, which will give you the stem, the relevant prefixes, and usually
           an example sentence. Then consult a grammar reference for whatever the dictionary entry assumed
@@ -482,9 +482,10 @@ function createWriteUp() {
           where it pays off, rather than looking up every word in a passage you could mostly read.
         </p>
 
-        <h2>Respectful Use of Diné Bizaad</h2>
+        <h2>Respectful Use of a Navajo Translator and Diné Bizaad</h2>
         <p>
-          Translating a language is not a neutral technical act, particularly for Indigenous languages
+          Running text through a Navajo translator is not a neutral technical act, particularly for
+          Indigenous languages
           with a history of suppression. Navajo speakers were punished for using their language in
           boarding schools within living memory, and revitalization today is deliberate community work.
         </p>
@@ -503,7 +504,8 @@ function createWriteUp() {
 
         <h2>Privacy</h2>
         <p>
-          Text you enter is processed to produce the translation and is not retained after your session,
+          Text you enter into this Navajo translator is processed to produce the translation and is not
+          retained after your session,
           sold, or used for training. That matters if you are working with family documents, unpublished
           research, or culturally sensitive material. For purely local text processing with no
           transmission at all, the client-side tools in our{' '}
