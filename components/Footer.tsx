@@ -3,7 +3,7 @@
  */
 'use client';
 
-import { useEffect, useMemo, useState } from 'react';
+import { useMemo } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { getAllTools, getToolBySlug } from '@/lib/tools/registry';
@@ -97,14 +97,6 @@ function buildRelatedLinks(pathname: string, sourceTools: ToolLink[]): ToolLink[
 export default function Footer() {
   const pathname = usePathname();
 
-  // The footer lives in the root layout, which Next prerenders once and reuses
-  // across routes. usePathname() therefore can differ between the served HTML
-  // and the first client render, and these links are derived from it - so
-  // rendering them before hydration produces a mismatch. Render them only
-  // after mount, when the pathname is authoritative.
-  const [mounted, setMounted] = useState(false);
-  useEffect(() => setMounted(true), []);
-
   const allTools: ToolLink[] = useMemo(
     () =>
       getAllTools().map((tool) => ({
@@ -128,7 +120,7 @@ export default function Footer() {
   return (
     <footer className="mt-10 border-t border-slate-200 bg-slate-50">
       <div className="mx-auto max-w-6xl px-4 py-4 text-sm text-slate-800">
-        {mounted && relatedLinks.length > 0 ? (
+        {relatedLinks.length > 0 ? (
           <div className="flex flex-wrap items-center gap-2 bg-white px-4 py-3 text-xs text-slate-700">
             <span className="font-semibold text-slate-800">Discover More:</span>
             {relatedLinks.map((link, idx) => (
