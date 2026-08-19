@@ -290,6 +290,14 @@ export const toolPages: ToolPage[] = [
     category: 'generator',
   },
   {
+    slug: 'korean-team-name-generator',
+    title: '팀 이름 추천',
+    description:
+      '동호회, 스포츠 팀, 회사 프로젝트, 스터디 모임에 어울리는 팀 이름을 자동으로 만들어 주는 무료 팀명 생성기입니다. 멋있는·귀여운·재미있는·스포츠·회사·스터디 여섯 가지 스타일로 팀명 후보를 한 번에 받아볼 수 있습니다.',
+    seoTitle: '팀 이름 추천 | 팀명 생성기 (무료)',
+    category: 'generator',
+  },
+  {
     slug: 'korean-rhyme-finder',
     title: '라임 검색기',
     description:
