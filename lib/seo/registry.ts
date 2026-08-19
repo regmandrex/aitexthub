@@ -290,6 +290,14 @@ export const toolPages: ToolPage[] = [
     category: 'generator',
   },
   {
+    slug: 'korean-question-generator',
+    title: '질문 생성기',
+    description:
+      '친구, 연인, 술자리, 모임에서 바로 쓸 수 있는 대화 질문을 무작위로 뽑아 주는 무료 질문 생성기입니다. 아이스브레이킹 질문부터 밸런스 게임, MBTI 성향 질문까지 원하는 개수만큼 즉시 만들어 사용할 수 있습니다.',
+    seoTitle: '질문 생성기 | 친구·연인·술자리 질문 하기 (무료)',
+    category: 'generator',
+  },
+  {
     slug: 'korean-cat-translator',
     title: '고양이 번역기',
     description:
@@ -2742,7 +2750,7 @@ export const toolPages: ToolPage[] = [
     category: 'translator',
   },
   {
-    slug: 'navajo-to-english-translator',
+    slug: 'navajo-english-translator',
     title: 'Navajo to English Translator',
     description: 'Navajo to English translator online. Convert Navajo (Diné bizaad) text into English for reading, study, and respectful use—free in your browser.',
     seoTitle: 'Navajo to English Translator - Translate Diné Bizaad to English',

@@ -17,6 +17,7 @@ const KOREAN_LANG_SLUGS = new Set([
   'korean-dialect-translator',
   'korean-acrostic-poem-generator',
   'korean-instagram-username-generator',
+  'korean-question-generator',
 ]);
 
 function abs(p: string) {

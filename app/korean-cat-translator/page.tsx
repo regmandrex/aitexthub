@@ -76,7 +76,7 @@ export default function KoreanCatTranslatorPage() {
             한국어 문장을 냥냥체로 바꿔주는 무료 고양이 말투 변환기입니다.
           </p>
           <div className="flex items-center justify-center gap-1 text-sm text-slate-500">
-            <span className="text-yellow-500">â˜…â˜…â˜…â˜…â˜…</span>
+            <span className="text-yellow-500">★★★★★</span>
             <span>4.9</span>
             <span>·</span>
             <span>무료</span>
