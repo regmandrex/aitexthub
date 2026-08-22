@@ -74,13 +74,9 @@ export default function AIHumanizerProPage() {
   const handleHumanize = async () => {
     if (!input.trim()) return;
 
-    if (!isLoggedIn) {
-      setAuthMode('signup');
-      setAuthOpen(true);
-      return;
-    }
-
-    // Logged in but must be on a paid plan — this is an API-powered premium tool
+    // Premium API-powered tool: anyone without an active plan sees pricing first.
+    // Logged-out visitors create their account through checkout, so the signup
+    // modal never blocks the offer.
     if (!isPro) {
       setPricingOpen(true);
       return;
