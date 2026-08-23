@@ -9,7 +9,7 @@
     "Edge >= 111"
   ],
   "scripts": {
-    "dev": "cross-env NODE_OPTIONS=--max-old-space-size=8192 next dev --turbo",
+    "dev": "cross-env NODE_OPTIONS=--max-old-space-size=6144 next dev --turbo",
     "build": "cross-env NODE_OPTIONS=--max-old-space-size=16384 next build --webpack",
     "start": "next start",
     "lint": "eslint .",
