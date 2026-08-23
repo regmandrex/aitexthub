@@ -42,7 +42,10 @@ export default function OpengraphImage() {
               fontWeight: 700,
             }}
           >
-            ✦
+            {/* Plain ASCII only: Satori tries to fetch a Google Font for any
+                glyph outside its bundled set, and a decorative mark like U+2726
+                fails that lookup with a 400 and renders as tofu. */}
+            G
           </div>
           <div style={{ fontSize: '32px', fontWeight: 700, letterSpacing: '2px' }}>
             GPTCLEANUP AI
@@ -52,7 +55,7 @@ export default function OpengraphImage() {
           GPT Clean Up Tools
         </div>
         <div style={{ fontSize: '32px', color: '#cbd5e1', lineHeight: 1.4, maxWidth: '900px' }}>
-          Free AI text cleanup tools — remove hidden Unicode, fix spacing, and
+          Free AI text cleanup tools: remove hidden Unicode, fix spacing, and
           clean ChatGPT output for publishing.
         </div>
         <div style={{ fontSize: '26px', color: '#38bdf8', marginTop: '48px' }}>
