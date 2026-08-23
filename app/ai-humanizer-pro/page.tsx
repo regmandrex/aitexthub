@@ -16,6 +16,10 @@ const MODES = [
   { id: 'intense', label: 'Intense', time: '~60s' },
 ] as const;
 
+// Placeholder line widths (in %) for the blurred, unpurchased result. The text
+// itself is never real output -- nothing is sent to the API for free visitors.
+const TEASE_LINES = [96, 88, 92, 74, 90, 45];
+
 const STEPS = [
   'Analyzing text patterns',
   'Mapping AI fingerprints',
@@ -50,9 +54,14 @@ export default function AIHumanizerProPage() {
   const [progress, setProgress] = useState(0);
   const [history, setHistory] = useState<Array<{ input: string; output: string; time: string }>>([]);
   const [showHistory, setShowHistory] = useState(false);
+  const [lockedTease, setLockedTease] = useState(false);
 
   const wordCount = input.trim() ? input.trim().split(/\s+/).length : 0;
   const selectedMode = MODES.find((m) => m.id === mode) ?? MODES[1];
+
+  // True once a non-Pro visitor has "run" the tool: the panel shows blurred
+  // placeholder lines and an unlock CTA instead of any real text.
+  const isLocked = lockedTease && !isPro;
 
   useEffect(() => {
     document.documentElement.style.overflow = 'hidden';
@@ -74,11 +83,30 @@ export default function AIHumanizerProPage() {
   const handleHumanize = async () => {
     if (!input.trim()) return;
 
-    // Premium API-powered tool: anyone without an active plan sees pricing first.
-    // Logged-out visitors create their account through checkout, so the signup
-    // modal never blocks the offer.
+    // Non-Pro visitors never hit the API. We run the same progress animation,
+    // then reveal a blurred placeholder shaped like a real result and open the
+    // pricing modal -- no tokens are spent on visitors who have not paid.
     if (!isPro) {
-      setPricingOpen(true);
+      setIsProcessing(true);
+      setOutput('');
+      setLockedTease(false);
+      setStepIndex(0);
+      setProgress(0);
+
+      let teaseStep = 0;
+      const teaseTimer = setInterval(() => {
+        teaseStep += 1;
+        setStepIndex(Math.min(teaseStep, STEPS.length - 1));
+        setProgress(Math.round((teaseStep / (STEPS.length - 1)) * 100));
+        if (teaseStep >= STEPS.length - 1) {
+          clearInterval(teaseTimer);
+          setStepIndex(STEPS.length);
+          setProgress(100);
+          setIsProcessing(false);
+          setLockedTease(true);
+          setPricingOpen(true);
+        }
+      }, 450);
       return;
     }
 
@@ -230,17 +258,30 @@ export default function AIHumanizerProPage() {
               <div className="flex flex-col border-t border-slate-200 bg-slate-50/80 md:border-l md:border-t-0">
                 <div className="flex items-center justify-between border-b border-slate-200 px-4 py-2.5">
                   <span className="text-[11px] font-bold uppercase tracking-widest text-slate-500">Output</span>
-                  <button
-                    type="button"
-                    onClick={handleCopy}
-                    disabled={!output}
-                    className="flex items-center gap-1 text-[11px] font-bold uppercase tracking-widest text-slate-400 transition hover:text-slate-900 disabled:opacity-40"
-                  >
-                    <svg className="h-3 w-3" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                    </svg>
-                    Copy
-                  </button>
+                  {isLocked ? (
+                    <button
+                      type="button"
+                      onClick={() => setPricingOpen(true)}
+                      className="flex items-center gap-1 text-[11px] font-bold uppercase tracking-widest text-violet-600 transition hover:text-violet-800"
+                    >
+                      <svg className="h-3 w-3" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                      </svg>
+                      Unlock
+                    </button>
+                  ) : (
+                    <button
+                      type="button"
+                      onClick={handleCopy}
+                      disabled={!output}
+                      className="flex items-center gap-1 text-[11px] font-bold uppercase tracking-widest text-slate-400 transition hover:text-slate-900 disabled:opacity-40"
+                    >
+                      <svg className="h-3 w-3" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                      </svg>
+                      Copy
+                    </button>
+                  )}
                 </div>
 
                 <div className="flex-1 px-4 py-3 min-h-[180px] md:min-h-[280px]">
@@ -273,6 +314,32 @@ export default function AIHumanizerProPage() {
                         Humanizing... {progress}%
                       </p>
                     </div>
+                  ) : isLocked ? (
+                    <div className="relative">
+                      <div aria-hidden="true" className="select-none space-y-2.5 blur-[5px]">
+                        {TEASE_LINES.map((w, i) => (
+                          <div
+                            key={i}
+                            className="h-3 rounded bg-slate-300"
+                            style={{ width: `${w}%` }}
+                          />
+                        ))}
+                      </div>
+                      <p className="sr-only">Humanized result hidden. Upgrade to Pro to view it.</p>
+                      <div className="mt-4 rounded-xl border border-violet-200 bg-white/90 p-4 text-center shadow-sm">
+                        <p className="text-sm font-bold text-slate-900">Your humanized text is ready</p>
+                        <p className="mt-1 text-xs text-slate-500">
+                          Upgrade to Pro to reveal the full rewrite, copy it, and run up to 50,000 words.
+                        </p>
+                        <button
+                          type="button"
+                          onClick={() => setPricingOpen(true)}
+                          className="mt-3 w-full rounded-lg bg-gradient-to-r from-violet-600 to-purple-600 px-4 py-2.5 text-xs font-bold uppercase tracking-wider text-white transition hover:opacity-90"
+                        >
+                          Unlock full result
+                        </button>
+                      </div>
+                    </div>
                   ) : output ? (
                     <p className="whitespace-pre-wrap text-sm leading-relaxed text-slate-900">{output}</p>
                   ) : (
@@ -297,8 +364,8 @@ export default function AIHumanizerProPage() {
                 </button>
                 <button
                   type="button"
-                  onClick={() => { setInput(''); setOutput(''); }}
-                  disabled={!input && !output}
+                  onClick={() => { setInput(''); setOutput(''); setLockedTease(false); }}
+                  disabled={!input && !output && !lockedTease}
                   className="flex-1 rounded-lg border border-slate-200 bg-white px-4 py-2.5 text-xs font-bold uppercase tracking-wider text-slate-600 transition hover:bg-slate-50 disabled:opacity-40 sm:flex-none"
                 >
                   Clear
