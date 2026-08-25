@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { useEffect } from 'react';
 import PricingModal from '@/components/PricingModal';
+import AuthModal from '@/components/AuthModal';
 import { useSession } from '@/lib/auth-client';
 
 type OcSheet = {
@@ -62,6 +63,8 @@ export function TadcOcMakerTool() {
   const [error, setError] = useState('');
   const [isPro, setIsPro] = useState(false);
   const [pricingOpen, setPricingOpen] = useState(false);
+  const [authOpen, setAuthOpen] = useState(false);
+  const [freeConceptUsed, setFreeConceptUsed] = useState(false);
   const [imageLoading, setImageLoading] = useState<number | null>(null);
 
   useEffect(() => {
@@ -84,13 +87,17 @@ export function TadcOcMakerTool() {
   };
 
   const generate = async () => {
+    const imagePrompt = `Original fan-made digital circus character, not a canon character: ${concept || 'an unexpected circus object or creature'}. ${role} performer, ${avatar} avatar, ${style}, ${age}, ${bodyType} body, ${hair}, ${eyes}, ${outfit}, ${material}, ${palette}, ${accessory}, ${personality} personality. Create a clean ${aspectRatio} character reference sheet with one full-body front view, one side or back view, and three clear expression panels. Strong readable silhouette, polished colorful 3D cartoon render, plain studio background, consistent character design, no text, no logos.`;
     if (!isPro) {
-      setPricingOpen(true);
+      if (!freeConceptUsed) {
+        setFreeConceptUsed(true);
+        setSheets([{ name: concept.trim() || `${role} OC`, role, avatar, appearance: `${style}, ${bodyType} body, ${material}, ${palette}, ${outfit}, ${accessory}.`, personality, imagePrompt }]);
+      } else if (session?.user) setPricingOpen(true);
+      else setAuthOpen(true);
       return;
     }
     setIsGenerating(true);
     setError('');
-    const imagePrompt = `Original fan-made digital circus character, not a canon character: ${concept || 'an unexpected circus object or creature'}. ${role} performer, ${avatar} avatar, ${style}, ${age}, ${bodyType} body, ${hair}, ${eyes}, ${outfit}, ${material}, ${palette}, ${accessory}, ${personality} personality. Create a clean ${aspectRatio} character reference sheet with one full-body front view, one side or back view, and three clear expression panels. Strong readable silhouette, polished colorful 3D cartoon render, plain studio background, consistent character design, no text, no logos.`;
     try {
       const nextSheets: OcSheet[] = [{
         name: concept.trim() || `${role} OC`,
@@ -123,6 +130,7 @@ export function TadcOcMakerTool() {
   const generateImage = async (index: number) => {
     const sheet = sheets[index];
     if (!sheet) return;
+    if (!isPro) { if (session?.user) setPricingOpen(true); else setAuthOpen(true); return; }
     setImageLoading(index);
     setError('');
     try {
@@ -166,7 +174,7 @@ export function TadcOcMakerTool() {
         </div>
 
         <div className="flex flex-wrap gap-3">
-          <button type="button" onClick={generate} disabled={isGenerating} aria-busy={isGenerating || imageLoading === 0} className="inline-flex items-center gap-2 rounded-lg bg-brand-700 px-5 py-2.5 text-sm font-semibold text-white shadow hover:bg-brand-800 disabled:cursor-not-allowed disabled:opacity-50">{isGenerating || imageLoading === 0 ? 'Creating your TADC OC...' : 'Make my TADC OC'}</button>
+          <button type="button" onClick={generate} disabled={isGenerating} aria-busy={isGenerating || imageLoading === 0} className="inline-flex items-center gap-2 rounded-lg bg-brand-700 px-5 py-2.5 text-sm font-semibold text-white shadow hover:bg-brand-800 disabled:cursor-not-allowed disabled:opacity-50">{isGenerating || imageLoading === 0 ? 'Creating your TADC OC...' : freeConceptUsed && !isPro ? 'Unlock image generation' : 'Make my TADC OC'}</button>
           <button type="button" onClick={copySheets} disabled={!sheets.length} className="rounded-lg border border-slate-200 bg-white px-4 py-2.5 text-sm font-semibold text-slate-700 hover:bg-slate-50 disabled:cursor-not-allowed disabled:opacity-50">Copy character sheet</button>
           <button type="button" onClick={() => setSheets([])} disabled={!sheets.length} className="rounded-lg border border-slate-200 bg-white px-4 py-2.5 text-sm font-semibold text-slate-700 hover:bg-slate-50 disabled:cursor-not-allowed disabled:opacity-50">Clear</button>
         </div>
@@ -174,6 +182,7 @@ export function TadcOcMakerTool() {
         {error && <div className="rounded-lg bg-red-50 px-4 py-3 text-sm text-red-700">{error}</div>}
         {sheets.length > 0 && <div className="max-w-2xl">{sheets.map((sheet, index) => <article key={`${sheet.name}-${index}`} className="rounded-xl border border-slate-200 bg-slate-50 p-4"><div className="mb-3 flex items-start justify-between gap-3"><span className="flex h-8 w-8 items-center justify-center rounded-full bg-brand-100 text-sm font-bold text-brand-800">{index + 1}</span><span className="text-xs font-semibold uppercase tracking-wide text-slate-500">Your TADC OC</span></div>{sheet.image && <img src={sheet.image} alt={`${sheet.name} TADC OC concept`} className="mb-4 aspect-square w-full rounded-lg border border-slate-200 object-cover" />}{!sheet.image && <button type="button" onClick={() => generateImage(index)} disabled={imageLoading !== null} className="mb-4 w-full rounded-lg border border-brand-200 bg-white px-3 py-2 text-sm font-semibold text-brand-800 hover:bg-brand-50 disabled:cursor-not-allowed disabled:opacity-50">{imageLoading === index ? 'Generating image...' : 'Generate image'}</button>}<h3 className="text-lg font-semibold text-slate-900">{sheet.name}</h3><dl className="mt-3 space-y-2 text-sm text-slate-700"><div><dt className="font-semibold text-slate-900">Role</dt><dd>{sheet.role}</dd></div><div><dt className="font-semibold text-slate-900">Avatar</dt><dd>{sheet.avatar}</dd></div><div><dt className="font-semibold text-slate-900">Appearance</dt><dd>{sheet.appearance}</dd></div><div><dt className="font-semibold text-slate-900">Personality</dt><dd>{sheet.personality}</dd></div></dl></article>)}</div>}
       </div>
+      {authOpen && <AuthModal purpose="unlock image generation" onClose={() => setAuthOpen(false)} onSuccess={() => { setAuthOpen(false); setPricingOpen(true); }} />}
       {pricingOpen && <PricingModal product="tadc" onClose={() => setPricingOpen(false)} />}
     </>
   );
