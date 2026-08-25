@@ -123,6 +123,8 @@ const GENERATOR_SLUGS = new Set([
   'crew-name-generator',
   'tadc-name-generator',
   'tadc-oc-maker',
+  'dandys-world-oc-maker',
+  'mha-oc-maker',
   'httyd-name-generator',
   'drag-king-name-generator',
   'yautja-name-generator',
@@ -344,8 +346,6 @@ export function getRelatedTools(currentTool: Tool, limit: number = 8): Tool[] {
   
   return related.slice(0, limit);
 }
-
-
 
 
 

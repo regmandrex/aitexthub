@@ -77,10 +77,12 @@ export default function PricingModal({
   product = 'humanizer',
 }: {
   onClose: () => void;
-  product?: 'humanizer' | 'tadc';
+  product?: 'humanizer' | 'tadc' | 'dandys-world' | 'mha';
 }) {
   const [selected, setSelected] = useState<Plan['id']>('annual');
   const { data: session } = useSession();
+  const isOcProduct = product !== 'humanizer';
+  const ocProductName = product === 'dandys-world' ? "Dandy's World OC" : product === 'mha' ? 'MHA OC' : 'TADC OC';
 
   useEffect(() => {
     trackEvent('pricing_viewed');
@@ -120,10 +122,10 @@ export default function PricingModal({
             </svg>
           </div>
           <h2 className="mt-4 text-xl font-bold tracking-tight text-slate-900">
-            {product === 'tadc' ? <>Unlock TADC OC <span className="text-violet-700">Pro</span></> : <>Upgrade to <span className="text-violet-700">Pro</span></>}
+            {isOcProduct ? <>Unlock {ocProductName} <span className="text-violet-700">Pro</span></> : <>Upgrade to <span className="text-violet-700">Pro</span></>}
           </h2>
           <p className="mt-1 text-sm text-slate-500">
-            {product === 'tadc' ? 'Create original TADC character images with your Pro plan.' : 'Bypass every AI detector. Unlimited everything.'}
+            {isOcProduct ? `Create original ${ocProductName} character images with your Pro plan.` : 'Bypass every AI detector. Unlimited everything.'}
           </p>
         </div>
 
@@ -167,8 +169,8 @@ export default function PricingModal({
                       )}
                     </div>
                     <p className={`mt-0.5 text-[11px] font-semibold ${isSelected ? 'text-violet-700' : 'text-slate-700'}`}>
-                      {product === 'tadc'
-                        ? `${plan.id === 'weekly' ? '15' : plan.id === 'monthly' ? '35' : '100'} TADC OC images`
+                      {isOcProduct
+                        ? `${plan.id === 'weekly' ? '15' : plan.id === 'monthly' ? '35' : '100'} ${ocProductName} images`
                         : plan.quota}
                     </p>
                     <p className="text-[10px] text-slate-400">{plan.period}</p>
@@ -194,9 +196,9 @@ export default function PricingModal({
         {/* Features */}
         <div className="mt-5 border-t border-slate-100 px-6 py-4">
           <ul className="grid grid-cols-2 gap-x-3 gap-y-2">
-            {(product === 'tadc'
+            {(isOcProduct
               ? [
-                  `${activePlan.id === 'weekly' ? '15' : activePlan.id === 'monthly' ? '35' : '100'} TADC OC image generations`,
+                  `${activePlan.id === 'weekly' ? '15' : activePlan.id === 'monthly' ? '35' : '100'} ${ocProductName} image generations`,
                   'Original character reference sheets',
                   'No image generation prompt shown',
                   'Commercial use with Pro access',

@@ -73,7 +73,7 @@ export function TadcOcMakerTool() {
   }, [session?.user]);
 
   const requestImage = async (prompt: string): Promise<string> => {
-    const response = await fetch('/api/tadc-oc-image', {
+    const response = await fetch('/api/oc-image', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ prompt: prompt.replace(/\s+/g, ' ').trim().slice(0, 11000) }),
