@@ -72,7 +72,13 @@ const PLANS: Plan[] = [
   },
 ];
 
-export default function PricingModal({ onClose }: { onClose: () => void }) {
+export default function PricingModal({
+  onClose,
+  product = 'humanizer',
+}: {
+  onClose: () => void;
+  product?: 'humanizer' | 'tadc';
+}) {
   const [selected, setSelected] = useState<Plan['id']>('annual');
   const { data: session } = useSession();
 
@@ -114,10 +120,10 @@ export default function PricingModal({ onClose }: { onClose: () => void }) {
             </svg>
           </div>
           <h2 className="mt-4 text-xl font-bold tracking-tight text-slate-900">
-            Upgrade to <span className="text-violet-700">Pro</span>
+            {product === 'tadc' ? <>Unlock TADC OC <span className="text-violet-700">Pro</span></> : <>Upgrade to <span className="text-violet-700">Pro</span></>}
           </h2>
           <p className="mt-1 text-sm text-slate-500">
-            Bypass every AI detector. Unlimited everything.
+            {product === 'tadc' ? 'Create original TADC character images with your Pro plan.' : 'Bypass every AI detector. Unlimited everything.'}
           </p>
         </div>
 
@@ -161,7 +167,9 @@ export default function PricingModal({ onClose }: { onClose: () => void }) {
                       )}
                     </div>
                     <p className={`mt-0.5 text-[11px] font-semibold ${isSelected ? 'text-violet-700' : 'text-slate-700'}`}>
-                      {plan.quota}
+                      {product === 'tadc'
+                        ? `${plan.id === 'weekly' ? '15' : plan.id === 'monthly' ? '35' : '100'} TADC OC images`
+                        : plan.quota}
                     </p>
                     <p className="text-[10px] text-slate-400">{plan.period}</p>
                   </div>
@@ -186,7 +194,14 @@ export default function PricingModal({ onClose }: { onClose: () => void }) {
         {/* Features */}
         <div className="mt-5 border-t border-slate-100 px-6 py-4">
           <ul className="grid grid-cols-2 gap-x-3 gap-y-2">
-            {activePlan.features.map((f) => (
+            {(product === 'tadc'
+              ? [
+                  `${activePlan.id === 'weekly' ? '15' : activePlan.id === 'monthly' ? '35' : '100'} TADC OC image generations`,
+                  'Original character reference sheets',
+                  'No image generation prompt shown',
+                  'Commercial use with Pro access',
+                ]
+              : activePlan.features).map((f) => (
               <li key={f} className="flex items-start gap-1.5 text-xs text-slate-700">
                 <svg className="mt-0.5 h-3.5 w-3.5 shrink-0 text-violet-600" fill="none" stroke="currentColor" strokeWidth="3" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
