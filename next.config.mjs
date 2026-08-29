@@ -26,6 +26,20 @@ const nextConfig = {
           { key: 'Cache-Control', value: 'public, max-age=2592000, stale-while-revalidate=86400' },
         ],
       },
+      {
+        // API routes must never be edge-cached
+        source: '/api/:path*',
+        headers: [
+          { key: 'Cache-Control', value: 'no-store' },
+        ],
+      },
+      {
+        // Cache HTML pages at the edge for 30 days (excludes /api and /_next)
+        source: '/((?!api|_next).*)',
+        headers: [
+          { key: 'Cache-Control', value: 'public, s-maxage=2592000, stale-while-revalidate=86400' },
+        ],
+      },
     ];
   },
   async redirects() {

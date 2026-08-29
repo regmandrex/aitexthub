@@ -7,20 +7,22 @@ import { blogPosts, blogDateToDate } from '../lib/blog-posts';
 // lastModified is only set where we have a real date (blog posts). Reporting
 // `new Date()` on every URL tells Google everything changed on every crawl,
 // which trains it to ignore our lastmod entirely.
+export const revalidate = 2592000;
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const urls: MetadataRoute.Sitemap = [];
 
   // Homepage — highest priority
   urls.push({
     url: siteUrl,
-    changeFrequency: 'weekly',
+    changeFrequency: 'monthly',
     priority: 1.0,
   });
 
   toolPages.filter((page) => page.slug !== '').forEach((page) => {
     urls.push({
       url: `${siteUrl}/${page.slug}`,
-      changeFrequency: 'weekly',
+      changeFrequency: 'monthly',
       priority: 0.8,
     });
   });

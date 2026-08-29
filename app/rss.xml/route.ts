@@ -17,6 +17,8 @@ function toolUrl(slug: string): string {
   return `${SITE_URL}/${slug}`;
 }
 
+export const revalidate = 2592000;
+
 export function GET() {
   const lastBuild = new Date().toUTCString();
 
@@ -71,7 +73,7 @@ export function GET() {
   return new Response(rss, {
     headers: {
       'Content-Type': 'application/rss+xml; charset=utf-8',
-      'Cache-Control': 'public, max-age=3600, s-maxage=86400, stale-while-revalidate=86400',
+      'Cache-Control': 'public, max-age=3600, s-maxage=2592000, stale-while-revalidate=86400',
     },
   });
 }

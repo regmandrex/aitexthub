@@ -9,7 +9,7 @@ type PageProps = {
 };
 
 // Only pre-generate tools with full UI components at build time.
-// All other tools are served on-demand via ISR (dynamicParams = true + revalidate = 86400).
+// All other tools are served on-demand via ISR (dynamicParams = true + revalidate = 2592000).
 // This keeps build memory usage manageable.
 const PRERENDER_SLUGS = new Set([
   'qr-code-reader',
@@ -106,13 +106,16 @@ const PRERENDER_SLUGS = new Set([
 ]);
 
 export async function generateStaticParams() {
-  return getAllTools().map((tool) => ({ slug: tool.slug }));
+  return getAllTools()
+    .filter((tool) => PRERENDER_SLUGS.has(tool.slug))
+    .map((tool) => ({ slug: tool.slug }));
 }
 
 // Still allow dynamic params for any slugs not covered by getAllTools
 export const dynamicParams = true;
 
-// Cache at edge for 7 days — content changes only on deploy, not daily
+// Cache at edge for 30 days — content changes only on deploy, not daily
+export const revalidate = 2592000;
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { slug } = await params;

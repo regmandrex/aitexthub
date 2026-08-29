@@ -83,6 +83,9 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
+// Content changes only on deploy — cache at the edge for 30 days to reduce ISR reads.
+export const revalidate = 2592000;
+
 type RootLayoutProps = {
   children: ReactNode;
 };

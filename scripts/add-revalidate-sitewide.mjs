@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Add revalidate = 86400 to all app page.tsx files that don't have it.
+ * Add revalidate = 2592000 to all app page.tsx files that don't have it.
  * Run from project root: node scripts/add-revalidate-sitewide.mjs
  */
 import fs from 'fs';
@@ -11,7 +11,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, '..');
 const appDir = path.join(root, 'app');
 
-const REVALIDATE_LINE = "export const revalidate = 86400;\n";
+const REVALIDATE_LINE = "export const revalidate = 2592000;\n";
 
 function walk(dir, files = []) {
   const entries = fs.readdirSync(dir, { withFileTypes: true });
