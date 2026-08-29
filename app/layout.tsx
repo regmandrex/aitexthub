@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from 'next';
 import { ReactNode } from 'react';
 import dynamic from 'next/dynamic';
+import Script from 'next/script';
 import { Inter } from 'next/font/google';
 import Header from '../components/Header';
 import { JsonLd } from '../components/JsonLd';
@@ -8,6 +9,7 @@ import { BreadcrumbJsonLdAndLang } from '../components/BreadcrumbJsonLdAndLang';
 import StickyFooterAd from '../components/ads/StickyFooterAd';
 import AdBlockNotice from '../components/ads/AdBlockNotice';
 import DeferredThirdPartyScripts from '../components/DeferredThirdPartyScripts';
+import GoogleAds from '../components/GoogleAds';
 import { webSiteSchema, siteNavigationSchema, organizationSchema } from '../lib/schema/site';
 import '../styles/globals.css';
 
@@ -98,6 +100,12 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <link rel="alternate" type="application/rss+xml" title="GPTCLEANUP AI Blog & Tools RSS Feed" href="https://gptcleanuptools.com/rss.xml" />
       </head>
       <body className={`${inter.variable} bg-slate-50 text-slate-900 antialiased pb-[80px] md:pb-[120px] lg:pb-[140px]`}>
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8764610479002120"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
         <DeferredThirdPartyScripts />
         <JsonLd data={ORG_SCHEMA} />
         <JsonLd data={SITE_SCHEMA} />
@@ -107,6 +115,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <main className="min-h-screen">{children}</main>
         <Footer />
         <StickyFooterAd />
+        <GoogleAds />
         <AdBlockNotice />
       </body>
     </html>

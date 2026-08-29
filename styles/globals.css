@@ -64,3 +64,48 @@ select {
 .ad-slot {
   @apply my-6 flex items-center justify-center;
 }
+
+.ad-overlay {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0);
+  border: 0px solid #000;
+  padding: 0px;
+  box-shadow: 0px 0px 0px rgba(0,0,0,0);
+  text-align: center;
+}
+
+.ad-overlay1 {
+  position: fixed;
+  top: 65%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0);
+  border: 0px solid #000;
+  padding: 0px;
+  box-shadow: 0px 0px 0px rgba(0,0,0,0);
+  text-align: center;
+}
+
+.ad-overlay2 {
+  position: fixed;
+  top: 30%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 0);
+  border: 0px solid #000;
+  padding: 00px;
+  box-shadow: 0px 0px 0px rgba(0,0,0,0);
+  text-align: center;
+}
+
+.ad-overlay > div,
+.ad-overlay1 > div,
+.ad-overlay2 > div {
+  height: auto !important;
+}
