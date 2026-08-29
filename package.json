@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "dev": "cross-env NODE_OPTIONS=--max-old-space-size=6144 next dev --turbo",
-    "build": "cross-env NODE_OPTIONS=--max-old-space-size=16384 next build --webpack",
+    "build": "cross-env NODE_OPTIONS=--max-old-space-size=16384 next build --turbopack",
     "start": "next start",
     "lint": "eslint .",
     "typecheck": "tsc --noEmit",
