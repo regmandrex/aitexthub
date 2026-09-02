@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { JsonLd } from '@/components/JsonLd';
 import FAQSection from '@/components/FAQSection';
@@ -35,7 +36,7 @@ function createWriteUp() {
         </p>
         <p>
           This is the reverse direction of our{' '}
-          <a href="/navajo-translator">English to Navajo translator</a>, and it answers a different need:
+          <Link href="/navajo-translator">English to Navajo translator</Link>, and it answers a different need:
           you already have Navajo text in front of you and you want to know what it says. That happens
           with family letters, archival documents, museum labels, road signage, song lyrics, social media
           posts, broadcast transcripts, and coursework in a Navajo language class.
@@ -158,7 +159,7 @@ function createWriteUp() {
         <p>
           <strong>Clean invisible characters.</strong> Copied text frequently carries zero-width and
           non-breaking spaces that you cannot see but that change the tokens the translator receives. Our{' '}
-          <a href="/invisible-character-remover">invisible character remover</a> strips them without
+          <Link href="/invisible-character-remover">invisible character remover</Link> strips them without
           touching the words.
         </p>
 
@@ -364,7 +365,7 @@ function createWriteUp() {
           curly typographic ones, which introduces exactly the substitution problem described above. If a
           passage that previously translated correctly stops working after a round trip through a word
           processor, this is the likely cause. Our{' '}
-          <a href="/ai-tools/ai-cleanup-tools">text cleanup tools</a> can normalize punctuation back to
+          <Link href="/ai-tools/ai-cleanup-tools">text cleanup tools</Link> can normalize punctuation back to
           plain characters before you translate.
         </p>
 
@@ -375,7 +376,7 @@ function createWriteUp() {
         </p>
         <p>
           <strong>Translate in both directions.</strong> Run the English result back through the{' '}
-          <a href="/navajo-translator">English to Navajo translator</a> and compare against your original
+          <Link href="/navajo-translator">English to Navajo translator</Link> and compare against your original
           Navajo. Large divergence signals something was lost or misread. Close agreement is weak evidence
           of accuracy, but better than none.
         </p>
@@ -509,7 +510,7 @@ function createWriteUp() {
           sold, or used for training. That matters if you are working with family documents, unpublished
           research, or culturally sensitive material. For purely local text processing with no
           transmission at all, the client-side tools in our{' '}
-          <a href="/ai-tools/text-tools">text tools</a> category run entirely in your browser.
+          <Link href="/ai-tools/text-tools">text tools</Link> category run entirely in your browser.
         </p>
 
         <h2>Summary</h2>
@@ -518,7 +519,7 @@ function createWriteUp() {
           free and with no account. Keep diacritics intact, work in short passages, verify OCR and
           transcripts before translating, and check important results against a dictionary or by
           translating back through the{' '}
-          <a href="/navajo-translator">English to Navajo translator</a>. Above all, remember that fluent
+          <Link href="/navajo-translator">English to Navajo translator</Link>. Above all, remember that fluent
           English output is not evidence of an accurate translation. For official, legal, published, or
           culturally significant material, use a certified human translator and consult resources from the
           Navajo Nation.
