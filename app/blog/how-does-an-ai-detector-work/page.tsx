@@ -6,7 +6,7 @@ import AdSenseSlot from '../../../components/ads/AdSenseSlot';
 import type { Metadata } from 'next';
 
 const urlPath = '/blog/how-does-an-ai-detector-work';
-const title = 'How Does an AI Detector Work? The Complete Guide | GPTCLEANUP AI';
+const title = 'How Does an AI Detector Work? The Complete Guide | AI Text Cleanup Tools';
 const headline = 'How Does an AI Detector Work? The Complete Guide';
 const description =
   'AI detectors use perplexity, burstiness, and Unicode scanning to classify text. This guide explains exactly how they work, where they fail, and what that means for your writing.';
@@ -292,7 +292,7 @@ export default function HowDoesAnAiDetectorWorkPage() {
         <p className="text-slate-700">
           For purely AI-generated text, scores vary depending on the model, the prompt, and the temperature setting. Text generated
           at lower temperatures (more deterministic) scores higher for AI. Text generated at higher temperatures (more random)
-          scores lower. The <Link href="/">GPT Cleanup Tools</Link> suite can help normalize AI text and remove artifact characters
+          scores lower. The <Link href="/">AI Text Cleanup Tools</Link> suite can help normalize AI text and remove artifact characters
           before you check detection scores.
         </p>
       </section>

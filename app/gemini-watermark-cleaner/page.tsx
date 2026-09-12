@@ -10,17 +10,10 @@ import { RelatedTools } from '../../components/tool/RelatedTools';
 import AdSenseSlot from '../../components/ads/AdSenseSlot';
 import BelowToolAd from '../../components/ads/BelowToolAd';
 
-function RailAd({ side }: { side: 'left' | 'right' }) {
-  const sideClass = side === 'left' ? 'left-4' : 'right-4';
-
-  return (
-    <div className={`hidden lg:block fixed top-[220px] ${sideClass} z-20`}>
-      <div className="w-[180px] min-h-[260px]">
-        <AdSenseSlot className="w-full" />
-      </div>
-    </div>
-  );
+function RailAd(_props: { side: 'left' | 'right' }) {
+  return null;
 }
+
 
 
 export async function generateMetadata() {
@@ -34,7 +27,7 @@ export async function generateMetadata() {
   });
 }
 
-const faqIntro = `Welcome to the comprehensive FAQ section for the Gemini Watermark Cleaner, developed and hosted by GPTCleanUpTools.com
+const faqIntro = `Welcome to the comprehensive FAQ section for the Gemini Watermark Cleaner, developed and hosted by AI Text Cleanup Tools
 . This section is designed to provide clear, accurate, and policy-safe answers about Google Gemini watermarking, AI-generated text cleanup, and the legitimate uses of text normalization tools. Our goal is to promote responsible AI usage, clarify misconceptions, and ensure compliance with ethical and platform standards.`;
 
 const faqs: FaqItem[] = [
@@ -166,9 +159,9 @@ const faqs: FaqItem[] = [
   },
   {
     category: 'Gemini Watermark Cleaner FAQs',
-    question: 'What’s the role of GPTCleanUpTools.com in responsible AI practices?',
+    question: 'What’s the role of AI Text Cleanup Tools in responsible AI practices?',
     answer:
-      'GPTCleanUpTools.com provides tools that enable users to handle AI-generated content more effectively and responsibly. The platform focuses on technical quality, transparency, and compliance, offering utilities like the Gemini Watermark Cleaner to support professional use cases. It does not offer tools designed to bypass detection or conceal AI authorship, and all offerings are developed with adherence to ethical standards and platform guidelines.',
+      'AI Text Cleanup Tools provides tools that enable users to handle AI-generated content more effectively and responsibly. The platform focuses on technical quality, transparency, and compliance, offering utilities like the Gemini Watermark Cleaner to support professional use cases. It does not offer tools designed to bypass detection or conceal AI authorship, and all offerings are developed with adherence to ethical standards and platform guidelines.',
   },
   {
     category: 'Gemini Watermark Cleaner FAQs',
@@ -267,7 +260,7 @@ export default async function GeminiWatermarkCleanerPage() {
             The problem? Most tools don’t actually remove Gemini text watermarks. They shuffle words around, swap synonyms, and call it a day. Detection systems aren’t fooled that easily. Gemini embeds linguistic fingerprints at a structural level—sentence rhythm, probability distributions, predictability curves. To clean that, you need something smarter.
           </p>
           <p>
-            That’s where dedicated tools like GPTCleanUpTools.com come into play. This guide focuses entirely on text-based Gemini watermark cleaning, how it works, why it’s difficult, and how to do it properly without destroying meaning, tone, or SEO value.
+            That’s where dedicated tools like AI Text Cleanup Tools come into play. This guide focuses entirely on text-based Gemini watermark cleaning, how it works, why it’s difficult, and how to do it properly without destroying meaning, tone, or SEO value.
           </p>
 
           <h3 className="text-xl font-semibold text-slate-900">What Is a Gemini Text Watermark?</h3>
@@ -360,10 +353,10 @@ export default async function GeminiWatermarkCleanerPage() {
             That’s why content still gets flagged. It’s like changing clothes but keeping the same walk, voice, and posture. Detectors recognize the behavior, not the outfit.
           </p>
 
-          <h3 className="text-xl font-semibold text-slate-900">GPTCleanUpTools.com: A Purpose-Built Gemini Text Watermark Cleaner</h3>
-          <p>GPTCleanUpTools.com is specifically designed to clean AI-generated text—including Gemini output—at a structural level. It’s not a generic rewriter. It’s a text normalization and humanization tool.</p>
+          <h3 className="text-xl font-semibold text-slate-900">AI Text Cleanup Tools: A Purpose-Built Gemini Text Watermark Cleaner</h3>
+          <p>AI Text Cleanup Tools is specifically designed to clean AI-generated text—including Gemini output—at a structural level. It’s not a generic rewriter. It’s a text normalization and humanization tool.</p>
 
-          <h4 className="text-lg font-semibold text-slate-900">Core Features of GPTCleanUpTools.com</h4>
+          <h4 className="text-lg font-semibold text-slate-900">Core Features of AI Text Cleanup Tools</h4>
           <ul className="list-disc list-inside space-y-1 text-slate-700">
             <li>Gemini-specific text cleaning</li>
             <li>AI-detection reduction focus</li>
@@ -373,9 +366,9 @@ export default async function GeminiWatermarkCleanerPage() {
           </ul>
 
           <h4 className="text-lg font-semibold text-slate-900">How It Differs from Generic AI Rewriters</h4>
-          <p>Generic tools aim for speed. GPTCleanUpTools.com aims for authenticity. It understands how detectors work and rewrites content in a way that detectors—and readers—interpret as human.</p>
+          <p>Generic tools aim for speed. AI Text Cleanup Tools aims for authenticity. It understands how detectors work and rewrites content in a way that detectors—and readers—interpret as human.</p>
 
-          <h3 className="text-xl font-semibold text-slate-900">Step-by-Step: Cleaning Gemini Text Watermarks Using GPTCleanUpTools.com</h3>
+          <h3 className="text-xl font-semibold text-slate-900">Step-by-Step: Cleaning Gemini Text Watermarks Using AI Text Cleanup Tools</h3>
           <ol className="list-decimal list-inside space-y-2 text-slate-700">
             <li>Paste Gemini-generated text</li>
             <li>Select humanization intensity</li>
@@ -405,12 +398,12 @@ export default async function GeminiWatermarkCleanerPage() {
 
           <h3 className="text-xl font-semibold text-slate-900">Future of AI Text Watermarking and Detection</h3>
           <p>
-            As detection improves, watermark cleaners must evolve. Expect deeper linguistic analysis, smarter humanization, and context-aware rewriting. Tools like GPTCleanUpTools.com are already moving in that direction.
+            As detection improves, watermark cleaners must evolve. Expect deeper linguistic analysis, smarter humanization, and context-aware rewriting. Tools like AI Text Cleanup Tools are already moving in that direction.
           </p>
 
           <h3 className="text-xl font-semibold text-slate-900">Conclusion</h3>
           <p>
-            Gemini text watermarks aren’t visible, but they’re powerful. Removing them properly requires more than paraphrasing—it requires understanding how language behaves when humans write it. A dedicated Gemini watermark cleaner for text, especially one like GPTCleanUpTools.com, makes that possible without sacrificing meaning, tone, or SEO performance.
+            Gemini text watermarks aren’t visible, but they’re powerful. Removing them properly requires more than paraphrasing—it requires understanding how language behaves when humans write it. A dedicated Gemini watermark cleaner for text, especially one like AI Text Cleanup Tools, makes that possible without sacrificing meaning, tone, or SEO performance.
           </p>
           <p>Clean text isn’t about hiding AI use. It’s about making content usable, readable, and real.</p>
         </section>

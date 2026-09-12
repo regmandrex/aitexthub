@@ -6,7 +6,7 @@ import AdSenseSlot from '../../../components/ads/AdSenseSlot';
 import type { Metadata } from 'next';
 
 const urlPath = '/blog/can-recruiters-tell-if-you-used-chatgpt';
-const title = 'Can Recruiters Tell If You Used ChatGPT? What Job Seekers Need to Know | GPTCLEANUP AI';
+const title = 'Can Recruiters Tell If You Used ChatGPT? What Job Seekers Need to Know | AI Text Cleanup Tools';
 const headline = 'Can Recruiters Tell If You Used ChatGPT? What Job Seekers Need to Know in 2026';
 const description =
   'Learn how recruiters detect ChatGPT-written resumes and cover letters. Understand detection methods, invisible watermarks, and how to use AI tools responsibly in your job search.';

@@ -228,7 +228,7 @@ const writeUp = (
         changing its appearance.
       </p>
       <p>
-        The Zero-Width Space Remover on gptcleanuptools.com is built to solve this specific problem. It removes a set of invisible Unicode
+        The Zero-Width Space Remover on AI Text Cleanup Tools is built to solve this specific problem. It removes a set of invisible Unicode
         characters that commonly appear in copied text, including zero width space, joiners, and directionality marks. The tool works only on the
         text you provide and produces deterministic output. It does not generate content, rewrite text, or connect to external services. It simply
         cleans the text so that it behaves as it looks.
@@ -649,7 +649,7 @@ const writeUp = (
 
       <h2>Final Summary and When to Use This Tool</h2>
       <p>
-        Zero-Width Space Remover on gptcleanuptools.com provides a fast way to remove invisible characters that can break matching, validation,
+        Zero-Width Space Remover on AI Text Cleanup Tools provides a fast way to remove invisible characters that can break matching, validation,
         and search. It targets a set of common zero-width and directionality characters and removes them deterministically. The output looks the
         same as the input but behaves correctly across systems.
       </p>

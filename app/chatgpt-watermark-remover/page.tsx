@@ -10,17 +10,10 @@ import { RelatedTools } from "../../components/tool/RelatedTools";
 import AdSenseSlot from "../../components/ads/AdSenseSlot";
 import BelowToolAd from "../../components/ads/BelowToolAd";
 
-function RailAd({ side }: { side: 'left' | 'right' }) {
-  const sideClass = side === 'left' ? 'left-4' : 'right-4';
-
-  return (
-    <div className={`hidden lg:block fixed top-[220px] ${sideClass} z-20`}>
-      <div className="w-[180px] min-h-[260px]">
-        <AdSenseSlot className="w-full" />
-      </div>
-    </div>
-  );
+function RailAd(_props: { side: 'left' | 'right' }) {
+  return null;
 }
+
 
 
 const faqs: FaqItem[] = [
@@ -36,13 +29,13 @@ const faqs: FaqItem[] = [
   },
   {
     category: 'General',
-    question: 'What does the ChatGPT Watermark Remover on GPT Clean Up Tools do?',
+    question: 'What does the ChatGPT Watermark Remover on AI Text Cleanup Tools do?',
     answer: `It performs ChatGPT text cleanup by removing invisible characters, normalizing spacing, and fixing copy artifacts so the text behaves like plain, predictable content. The tool is part of a tool hub and is not an AI model provider. It does not generate text or access ChatGPT, and it only works on the text you paste. The goal is clean ChatGPT output that is ready for editing and publishing.`,
   },
   {
     category: 'General',
-    question: 'Is GPT Clean Up Tools affiliated with OpenAI or ChatGPT?',
-    answer: `No. GPT Clean Up Tools is an independent tool hub. It is not affiliated with OpenAI, does not represent ChatGPT, and does not connect to OpenAI systems. The ChatGPT Watermark Remover is simply a formatting utility that operates on user provided text.`,
+    question: 'Is AI Text Cleanup Tools affiliated with OpenAI or ChatGPT?',
+    answer: `No. AI Text Cleanup Tools is an independent tool hub. It is not affiliated with OpenAI, does not represent ChatGPT, and does not connect to OpenAI systems. The ChatGPT Watermark Remover is simply a formatting utility that operates on user provided text.`,
   },
   {
     category: 'Watermarking',
@@ -147,7 +140,7 @@ const faqs: FaqItem[] = [
   {
     category: 'Detection',
     question: 'Does ChatGPT Watermark Remover work against Turnitin, GPTZero, Originality.ai, and Copyleaks?',
-    answer: `ChatGPT Watermark Remover targets the formatting layer that detection platforms like Turnitin, GPTZero, Originality.ai, Copyleaks, Winston AI, and Sapling can incorporate as one of their surface signals, but it does not modify the underlying language patterns those tools score against. Hidden Unicode characters, zero width spaces, and unusual spacing runs are easy fingerprints for any classifier to flag because they survive copy and paste from a chat interface. Removing them with this tool eliminates one technical detection vector and produces clean text that behaves predictably in editors, forms, and CMS templates. However, the deeper layer these detectors evaluate is statistical: token level perplexity, burstiness, sentence length variance, and vocabulary distribution. Formatting cleanup does not change any of that, so a draft can still be flagged as AI generated even after every invisible character is stripped. If your goal is to address the statistical layer that Turnitin, GPTZero, and Originality.ai weight most heavily, you would need to rewrite the text with the GPTCleanup Pro humanizer, which targets perplexity and burstiness directly. Treat this remover as the first step in a clean text workflow, not as a detection bypass.`,
+    answer: `ChatGPT Watermark Remover targets the formatting layer that detection platforms like Turnitin, GPTZero, Originality.ai, Copyleaks, Winston AI, and Sapling can incorporate as one of their surface signals, but it does not modify the underlying language patterns those tools score against. Hidden Unicode characters, zero width spaces, and unusual spacing runs are easy fingerprints for any classifier to flag because they survive copy and paste from a chat interface. Removing them with this tool eliminates one technical detection vector and produces clean text that behaves predictably in editors, forms, and CMS templates. However, the deeper layer these detectors evaluate is statistical: token level perplexity, burstiness, sentence length variance, and vocabulary distribution. Formatting cleanup does not change any of that, so a draft can still be flagged as AI generated even after every invisible character is stripped. If your goal is to address the statistical layer that Turnitin, GPTZero, and Originality.ai weight most heavily, you would need to rewrite the text with the AI Text Cleanup Tools Pro humanizer, which targets perplexity and burstiness directly. Treat this remover as the first step in a clean text workflow, not as a detection bypass.`,
   },
   {
     category: 'Security',
@@ -242,7 +235,7 @@ export default function ChatGPTWatermarkCleanerPage() {
             mechanical fixes. Clean text also improves collaboration because diff tools and editors see consistent content.
           </p>
           <p className="text-slate-700">
-            GPT Clean Up Tools is a tool hub, not an AI model provider. The ChatGPT Watermark Remover is not ChatGPT, is not affiliated with
+            AI Text Cleanup Tools is a tool hub, not an AI model provider. The ChatGPT Watermark Remover is not ChatGPT, is not affiliated with
             OpenAI, and does not connect to OpenAI systems. It only processes the text you paste into the page and it does not generate new
             content. The tool focuses on ChatGPT text normalization, Unicode cleanup, and formatting consistency. That is a transparent,
             compliance friendly role that supports editing without promising anything it cannot deliver.
@@ -667,7 +660,7 @@ export default function ChatGPTWatermarkCleanerPage() {
 
           <h2 className="text-2xl font-semibold text-slate-900">Conclusion: Clean ChatGPT Output with Transparency</h2>
           <p className="text-slate-700">
-            A ChatGPT watermark remover is most useful when it stays honest about its role. The GPT Clean Up Tools version focuses on ChatGPT
+            A ChatGPT watermark remover is most useful when it stays honest about its role. The AI Text Cleanup Tools version focuses on ChatGPT
             text normalization, Unicode cleanup, and formatting consistency so your text is ready for real world editing and publishing. It is not
             affiliated with OpenAI and does not connect to ChatGPT, which keeps the process transparent.
           </p>

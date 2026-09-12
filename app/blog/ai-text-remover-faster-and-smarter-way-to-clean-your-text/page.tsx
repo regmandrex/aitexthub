@@ -6,7 +6,7 @@ import AdSenseSlot from '../../../components/ads/AdSenseSlot';
 import type { Metadata } from 'next';
 
 const urlPath = '/blog/ai-text-remover-faster-and-smarter-way-to-clean-your-text';
-const title = 'AI Text Remover: Faster and Smarter Way to Clean Your Text | GPTCLEANUP AI';
+const title = 'AI Text Remover: Faster and Smarter Way to Clean Your Text | AI Text Cleanup Tools';
 const headline = 'AI Text Remover: Faster and Smarter Way to Clean Your Text';
 const description =
   "Explore how AI-powered text cleaning works and why it's faster than manual editing for large documents and code.";

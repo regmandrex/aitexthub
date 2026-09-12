@@ -6,10 +6,10 @@ import AdSenseSlot from '../../../components/ads/AdSenseSlot';
 import type { Metadata } from 'next';
 
 const urlPath = '/blog/best-chatgpt-cleanup-tools';
-const title = 'Best ChatGPT Cleanup Tools (2026 Guide) | GPTCLEANUP AI';
-const headline = 'Best ChatGPT Cleanup Tools for Cleaner, Faster Publishing';
+const title = 'Best AI Text Cleanup Tools (2026 Guide) | AI Text Cleanup Tools';
+const headline = 'Best AI Text Cleanup Tools for Cleaner, Faster Publishing';
 const description =
-  'Compare real ChatGPT cleanup tools, what they must remove under the hood, and how to choose a stack that protects SEO, UX, and performance.';
+  'Compare real AI text cleanup tools, what they must remove under the hood, and how to choose a stack that protects SEO, UX, and performance.';
 
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -20,7 +20,7 @@ export async function generateMetadata(): Promise<Metadata> {
   });
 }
 
-export default function BestChatGPTCleanupToolsPage() {
+export default function BestAITextCleanupToolsPage() {
   return (
     <article className="prose max-w-none prose-slate">
       <JsonLd data={blogPostingSchema({ headline, description, urlPath })} />
@@ -44,7 +44,7 @@ export default function BestChatGPTCleanupToolsPage() {
       </div>
 
       <section className="mt-10 space-y-4">
-        <h2 className="text-2xl font-semibold text-slate-900">What a real ChatGPT cleanup tool must handle</h2>
+        <h2 className="text-2xl font-semibold text-slate-900">What a real ChatAI text cleanup tool must handle</h2>
         <p className="text-slate-700">
           Most “cleanup” tools are actually paraphrasers or grammar assistants. Those are useful, but they do not fix the technical problems that
           make ChatGPT text behave badly in editors and CMSs. A true cleanup tool operates at the character and structure layer:
@@ -69,7 +69,7 @@ export default function BestChatGPTCleanupToolsPage() {
             <p className="font-semibold text-slate-900">1. ChatGPT Text Cleaner (hub homepage)</p>
             <p className="mt-2">
               The homepage tool at{' '}
-              <Link href="/">GPT Clean Up Tools</Link> focuses on normalizing whitespace, line breaks, and structural noise in one pass. Paste your
+              <Link href="/">AI Text Cleanup Tools</Link> focuses on normalizing whitespace, line breaks, and structural noise in one pass. Paste your
               raw ChatGPT output, clean it, and then move into your CMS with a stable baseline.
             </p>
           </div>

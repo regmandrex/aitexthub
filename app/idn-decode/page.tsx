@@ -197,7 +197,7 @@ const writeUp = (
         and validate them with confidence.
       </p>
       <p>
-        The IDN Decode tool on gptcleanuptools.com restores readability without changing the underlying host. It works in your browser and does
+        The IDN Decode tool on AI Text Cleanup Tools restores readability without changing the underlying host. It works in your browser and does
         not store any data. Paste a Punycode domain or full URL, and the tool decodes the hostname while leaving the rest of the URL intact. This
         is useful for audits, support tickets, analytics reports, and any workflow where you need to see the real Unicode domain.
       </p>

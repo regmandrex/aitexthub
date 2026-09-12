@@ -5,7 +5,7 @@ import { buildMeta } from '@/lib/seo-meta';
 export async function generateMetadata() {
   return buildMeta({
     title: 'Refund Policy',
-    description: 'Refund policy for GPTCLEANUP AI Pro subscriptions. All sales are final except in limited cases such as duplicate or incorrect charges.',
+    description: 'Refund policy for AI Text Cleanup Tools Pro subscriptions. All sales are final except in limited cases such as duplicate or incorrect charges.',
     urlPath: '/refund-policy',
   });
 }
@@ -67,7 +67,7 @@ export default function RefundPolicyPage() {
             <span className="bg-gradient-to-r from-violet-600 to-purple-700 bg-clip-text text-transparent">Policy</span>
           </h1>
           <p className="mx-auto mt-3 max-w-xl text-sm text-slate-600 md:text-base">
-            This policy applies to all GPTCleanup Pro subscriptions and one-time purchases.
+            This policy applies to all AI Text Cleanup Tools Pro subscriptions and one-time purchases.
           </p>
           <p className="mt-2 text-xs text-slate-500">Effective May 22, 2026</p>
         </div>
@@ -86,7 +86,7 @@ export default function RefundPolicyPage() {
             <div>
               <h2 className="text-base font-bold text-slate-900">All sales are final</h2>
               <p className="mt-1 text-sm text-slate-600">
-                By purchasing a subscription to GPTCleanup, you acknowledge and agree that{' '}
+                By purchasing a subscription to AI Text Cleanup Tools, you acknowledge and agree that{' '}
                 <strong className="text-slate-900">all purchases are final and non-refundable</strong>, except as explicitly stated below.
               </p>
             </div>
@@ -96,7 +96,7 @@ export default function RefundPolicyPage() {
         {/* Why */}
         <section className="mt-10">
           <h2 className="text-xl font-bold tracking-tight text-slate-900 md:text-2xl">Why we have a strict refund policy</h2>
-          <p className="mt-2 text-sm text-slate-600">GPTCleanup provides AI-powered text rewriting and processing services. Due to the nature of the service:</p>
+          <p className="mt-2 text-sm text-slate-600">AI Text Cleanup Tools provides AI-powered text rewriting and processing services. Due to the nature of the service:</p>
           <ul className="mt-4 space-y-2.5">
             {[
               'Once you access and use the service, the value has been delivered.',
@@ -192,8 +192,8 @@ export default function RefundPolicyPage() {
                 body: (
                   <>
                     Send a message to{' '}
-                    <a href="mailto:support@gptcleanuptools.com" className="font-semibold text-violet-700 underline-offset-2 hover:underline">
-                      support@gptcleanuptools.com
+                    <a href="mailto:support@aitextcleanuptools.com" className="font-semibold text-violet-700 underline-offset-2 hover:underline">
+                      support@aitextcleanuptools.com
                     </a>{' '}
                     with the subject line <code className="rounded bg-slate-100 px-1.5 py-0.5 text-xs">Refund Request – [Your Email]</code>.
                   </>
@@ -296,13 +296,13 @@ export default function RefundPolicyPage() {
           <h2 className="text-xl font-bold md:text-2xl">Questions about a charge?</h2>
           <p className="mt-2 text-sm text-violet-100">We respond to billing inquiries within 3–5 business days.</p>
           <Link
-            href="mailto:support@gptcleanuptools.com"
+            href="mailto:support@aitextcleanuptools.com"
             className="mt-5 inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-bold text-violet-700 shadow-lg transition hover:bg-violet-50"
           >
             <svg className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
             </svg>
-            support@gptcleanuptools.com
+            support@aitextcleanuptools.com
           </Link>
         </section>
       </div>

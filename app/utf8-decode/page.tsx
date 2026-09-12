@@ -190,7 +190,7 @@ const writeUp = (
         characters so you can understand and verify the content. This tool is a fast way to interpret hex byte sequences without writing code.
       </p>
       <p>
-        The UTF-8 Decode tool on gptcleanuptools.com takes hex bytes and converts them to text using strict UTF-8 rules. It works entirely in your
+        The UTF-8 Decode tool on AI Text Cleanup Tools takes hex bytes and converts them to text using strict UTF-8 rules. It works entirely in your
         browser, which means your data stays local. The decoder is designed for accuracy and error visibility, so you can identify malformed
         sequences quickly. Use it for debugging, documentation, and verification workflows.
       </p>

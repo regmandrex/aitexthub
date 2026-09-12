@@ -6,7 +6,7 @@ import AdSenseSlot from '../../../components/ads/AdSenseSlot';
 import type { Metadata } from 'next';
 
 const urlPath = '/blog/chatgpt-text-cleaner-iphone';
-const title = 'ChatGPT Text Cleaner for iPhone (Ready-to-Publish Workflow) | GPTCLEANUP AI';
+const title = 'ChatGPT Text Cleaner for iPhone (Ready-to-Publish Workflow) | AI Text Cleanup Tools';
 const headline = 'ChatGPT Text Cleaner for iPhone: Ready-to-Publish Workflow';
 const description =
   'Step-by-step workflow to clean ChatGPT text on iPhone, remove invisible noise, and paste into Notes, Mail, or CMS without layout bugs.';
@@ -31,7 +31,7 @@ export default function ChatGPTTextCleanerIphonePage() {
 
       <div className="rounded-[28px] border border-slate-200 bg-white/70 p-6 shadow-xl shadow-slate-900/5 backdrop-blur-lg">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">
-          iPhone-friendly ChatGPT cleanup
+          iPhone-friendly ChatAI text cleanup
         </p>
         <h1 className="mt-3 text-3xl font-semibold text-slate-900">{headline}</h1>
         <p className="mt-2 text-slate-600">
@@ -63,7 +63,7 @@ export default function ChatGPTTextCleanerIphonePage() {
           <li>Generate your draft in the ChatGPT app or Safari on iPhone.</li>
           <li>Copy the full answer.</li>
           <li>
-            Open Safari, go to <Link href="/">GPT Clean Up Tools</Link>, and paste into the{' '}
+            Open Safari, go to <Link href="/">AI Text Cleanup Tools</Link>, and paste into the{' '}
             <Link href="/">ChatGPT Text Cleaner</Link>.
           </li>
           <li>Tap to run cleanup and check that paragraphs and lists look normal in the preview.</li>

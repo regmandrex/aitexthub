@@ -6,7 +6,7 @@ import AdSenseSlot from '../../../components/ads/AdSenseSlot';
 import type { Metadata } from 'next';
 
 const urlPath = '/blog/optimizing-ai-generated-text-for-web-performance';
-const title = 'Optimizing AI-Generated Text for Web Performance (Speed, Stability & SEO) | GPTCLEANUP AI';
+const title = 'Optimizing AI-Generated Text for Web Performance (Speed, Stability & SEO) | AI Text Cleanup Tools';
 const headline = 'Optimizing AI-Generated Text for Web Performance (Speed, Stability & SEO at Scale)';
 const description =
   'Learn why AI-generated text can hurt performance, how it affects LCP/CLS/INP, and how to clean and structure text for faster rendering and SEO.';

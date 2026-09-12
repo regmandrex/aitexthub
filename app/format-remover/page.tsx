@@ -16,16 +16,10 @@ import { getToolBySlug } from '@/lib/tools/registry';
 
 const toolSlug = 'format-remover';
 
-function RailAd({ side }: { side: 'left' | 'right' }) {
-  const sideClass = side === 'left' ? 'left-4' : 'right-4';
-  return (
-    <div className={`hidden lg:block fixed top-[220px] ${sideClass} z-20`}>
-      <div className="w-[180px] min-h-[260px]">
-        <AdSenseSlot className="w-full" />
-      </div>
-    </div>
-  );
+function RailAd(_props: { side: 'left' | 'right' }) {
+  return null;
 }
+
 
 const faqs: FaqItem[] = [
   {
@@ -106,7 +100,7 @@ const faqs: FaqItem[] = [
   {
     category: 'Comparison',
     question: 'Is this different from an HTML stripper?',
-    answer: 'An HTML stripper removes HTML tags from web-sourced text — it converts text with HTML markup into readable plain text by removing tags like <p>, <strong>, <em>, and <a href>. A format remover handles text-level formatting artifacts that remain after HTML tags have already been stripped or that were never in HTML format to begin with — markdown syntax, curly quotes, invisible Unicode, em dashes. If you are starting with raw HTML content, you might want to use an HTML stripper first and then a format remover. GPTCLEANUP AI has a dedicated Strip HTML tool for the HTML stripping step.',
+    answer: 'An HTML stripper removes HTML tags from web-sourced text — it converts text with HTML markup into readable plain text by removing tags like <p>, <strong>, <em>, and <a href>. A format remover handles text-level formatting artifacts that remain after HTML tags have already been stripped or that were never in HTML format to begin with — markdown syntax, curly quotes, invisible Unicode, em dashes. If you are starting with raw HTML content, you might want to use an HTML stripper first and then a format remover. AI Text Cleanup Tools has a dedicated Strip HTML tool for the HTML stripping step.',
   },
   {
     category: 'Use Cases',
@@ -116,7 +110,7 @@ const faqs: FaqItem[] = [
   {
     category: 'Use Cases',
     question: 'Should copywriters use a format remover before delivering to clients?',
-    answer: 'Yes. Copywriters who deliver AI-assisted content should run it through a format remover — or formatting remover — as a standard quality step. Clients who receive formatted AI copy may encounter markdown symbols displaying as literal asterisks when they paste into their systems. To remove formatting before delivery, paste the draft into the GPTCLEANUP AI format remover above and clean it in one click. Curly quotes can cause errors if the client\'s system processes the text programmatically. Delivering format-clean content demonstrates professionalism and prevents client-side issues that reflect poorly on the copywriter.',
+    answer: 'Yes. Copywriters who deliver AI-assisted content should run it through a format remover — or formatting remover — as a standard quality step. Clients who receive formatted AI copy may encounter markdown symbols displaying as literal asterisks when they paste into their systems. To remove formatting before delivery, paste the draft into the AI Text Cleanup Tools format remover above and clean it in one click. Curly quotes can cause errors if the client\'s system processes the text programmatically. Delivering format-clean content demonstrates professionalism and prevents client-side issues that reflect poorly on the copywriter.',
   },
   {
     category: 'Use Cases',
@@ -234,7 +228,7 @@ const article = (
   <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10"><div className="prose prose-slate max-w-none">
     <h2>Format Remover — Strip Text Formatting Online in One Click</h2>
     <p>A <strong>format remover</strong> solves the fundamental problem of formatted text in the wrong place. When you copy content from ChatGPT, Claude, Gemini, Microsoft Word, a website, or any rich text source, formatting travels with the visible words. Markdown syntax, typographic punctuation, invisible Unicode characters, and irregular spacing all come along whether you want them or not. In a different editor, these formatting artifacts show up as literal symbols, break syntax in code and data files, cause layout problems in published pages, and produce rendering inconsistencies in email clients.</p>
-    <p>GPTCLEANUP AI is a free <strong>text format remover</strong> and <strong>formatting remover</strong> that handles every layer of formatting in a single click — markdown, curly quotes, em dashes, invisible Unicode, excess spacing. No account, no upload, no limit. Paste your text, click Clean Text, and copy plain, unformatted output that works in any application. Use it to <strong>remove formatting</strong> from AI output, Word documents, PDFs, websites, and any other source.</p>
+    <p>AI Text Cleanup Tools is a free <strong>text format remover</strong> and <strong>formatting remover</strong> that handles every layer of formatting in a single click — markdown, curly quotes, em dashes, invisible Unicode, excess spacing. No account, no upload, no limit. Paste your text, click Clean Text, and copy plain, unformatted output that works in any application. Use it to <strong>remove formatting</strong> from AI output, Word documents, PDFs, websites, and any other source.</p>
 
     <h2>What a Format Remover Does</h2>
     <p>The job of a format remover is to strip every formatting layer from text while preserving the underlying words. This is distinct from both a reformatter (which changes formatting to a different style) and a text editor (which allows you to apply new formatting). A format remover returns text to a neutral, unformatted state — clean of all artifacts from the source document — so you can apply formatting from scratch in your target application.</p>
@@ -285,7 +279,7 @@ const article = (
     <h2>Format Remover in Content Production Workflows</h2>
     <p>For teams and organizations producing AI-assisted content at scale, a format remover step should be explicitly included in the content production workflow. The format remover belongs at the point where AI output transitions to human editing — after generation and before review.</p>
     <p>When editors receive format-removed AI drafts, they work on clean text from the start. They do not have to manually strip markdown asterisks, do not inherit curly quotes that cause problems downstream, and do not carry invisible characters into the CMS. Every subsequent step in the workflow benefits from this clean starting point. The format remover prevents formatting issues from accumulating through the pipeline and ensures that published content has clean, standard text in its HTML source.</p>
-    <p>For solo content creators and freelancers, the format remover is a quick habit: generate in the AI tool, paste into GPTCLEANUP AI, click Clean Text, copy the clean result, paste into the CMS or document editor. This habit takes 10 seconds and prevents formatting problems that would otherwise take much longer to diagnose and fix after publishing.</p>
+    <p>For solo content creators and freelancers, the format remover is a quick habit: generate in the AI tool, paste into AI Text Cleanup Tools, click Clean Text, copy the clean result, paste into the CMS or document editor. This habit takes 10 seconds and prevents formatting problems that would otherwise take much longer to diagnose and fix after publishing.</p>
     <p>For development teams using AI tools for documentation and code comments, the format remover should be part of the pre-commit routine. AI-generated documentation with markdown formatting that is not intended for a markdown renderer, or with curly quotes in code comments, needs format removal before the content enters the codebase.</p>
 
     <h2>Format Remover for Different Industries and Use Cases</h2>
@@ -315,7 +309,7 @@ const article = (
     <p>A <strong>formatting cleaner</strong> addresses the full spectrum of formatting artifacts — both visible and invisible. The visible layer includes markdown syntax, curly quotes, em dashes, and ellipsis characters. The invisible layer includes zero-width spaces, byte-order marks, non-breaking spaces, and directional marks. This tool is a complete <strong>formatting cleaner</strong> that handles both layers simultaneously. It also functions as a <strong>metadata clearer</strong> — removing the hidden Unicode metadata that word processors and AI models embed in text alongside visible characters. For a complete <strong>metadata removal tool</strong> workflow: paste text from any source, click Clean Text, and receive output free of all formatting metadata, font metadata, and invisible Unicode metadata. To <strong>remove AI from word document</strong> content — stripping the AI-introduced formatting artifacts before importing into Word or exporting from it — this formatting cleaner handles the full cleaning operation in one pass.</p>
 
     <h2>Free Format Remover — No Account, No Limits</h2>
-    <p>GPTCLEANUP AI is a free <strong>format remover</strong> and <strong>text format remover</strong> with no account required, no character limits, and no subscription. All processing happens in your browser — your text is never uploaded, stored, or logged. The format remover handles text from any source: AI models, word processors, websites, PDFs, email clients. It removes markdown formatting, converts curly quotes to straight quotes, normalizes em dashes, removes invisible Unicode characters, collapses excess blank lines, and normalizes spacing — all in one click. Paste your text, click Clean Text, and copy clean, plain, format-free output ready for any application.</p>
+    <p>AI Text Cleanup Tools is a free <strong>format remover</strong> and <strong>text format remover</strong> with no account required, no character limits, and no subscription. All processing happens in your browser — your text is never uploaded, stored, or logged. The format remover handles text from any source: AI models, word processors, websites, PDFs, email clients. It removes markdown formatting, converts curly quotes to straight quotes, normalizes em dashes, removes invisible Unicode characters, collapses excess blank lines, and normalizes spacing — all in one click. Paste your text, click Clean Text, and copy clean, plain, format-free output ready for any application.</p>
   </div>
   </section>
 );

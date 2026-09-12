@@ -6,7 +6,7 @@ import { JsonLd } from '@/components/JsonLd';
 import { breadcrumbListSchema } from '@/lib/schema/breadcrumb';
 import { getToolBySlug } from '@/lib/tools/registry';
 
-const SITE = 'https://gptcleanuptools.com';
+const SITE = 'https://aitextcleanuptools.com';
 
 // Pages whose visible content is written in Korean → <html lang="ko">.
 const KOREAN_LANG_SLUGS = new Set([

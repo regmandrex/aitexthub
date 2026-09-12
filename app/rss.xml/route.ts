@@ -1,7 +1,7 @@
 import { blogPosts, blogDateToRfc822 } from '@/lib/blog-posts';
 import { toolPages, staticPages } from '@/lib/seo/registry';
 
-const SITE_URL = 'https://gptcleanuptools.com';
+const SITE_URL = 'https://aitextcleanuptools.com';
 
 function escapeXml(text: string): string {
   return text
@@ -58,7 +58,7 @@ export function GET() {
   const rss = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>GPTCLEANUP AI - Blog &amp; Tools</title>
+    <title>AI Text Cleanup Tools - Blog &amp; Tools</title>
     <link>${SITE_URL}</link>
     <description>Free AI text cleanup tools and guides: ChatGPT Text Cleaner, Space Remover, formatting fixes, and practical guides for cleaning AI output for documents and SEO.</description>
     <language>en</language>

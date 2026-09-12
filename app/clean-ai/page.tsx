@@ -16,16 +16,10 @@ import { getToolBySlug } from '@/lib/tools/registry';
 
 const toolSlug = 'clean-ai';
 
-function RailAd({ side }: { side: 'left' | 'right' }) {
-  const sideClass = side === 'left' ? 'left-4' : 'right-4';
-  return (
-    <div className={`hidden lg:block fixed top-[220px] ${sideClass} z-20`}>
-      <div className="w-[180px] min-h-[260px]">
-        <AdSenseSlot className="w-full" />
-      </div>
-    </div>
-  );
+function RailAd(_props: { side: 'left' | 'right' }) {
+  return null;
 }
+
 
 const faqs: FaqItem[] = [
   {
@@ -161,7 +155,7 @@ const faqs: FaqItem[] = [
   {
     category: 'AI Detection',
     question: 'Does cleaning AI text help against Turnitin, GPTZero, Originality.ai, and Copyleaks?',
-    answer: 'Cleaning AI text addresses the formatting layer that detection platforms like Turnitin, GPTZero, Originality.ai, Copyleaks, Winston AI, and Sapling can include as one of their surface signals, but it does not modify the underlying language patterns those tools score against. Hidden Unicode characters, zero-width spaces, and unusual spacing runs are easy fingerprints for any classifier to flag because they survive copy and paste from AI chat interfaces, and removing them eliminates one technical detection vector. However, the deeper layer these detectors evaluate is statistical: token-level perplexity, burstiness, sentence length variance, and vocabulary distribution. The clean AI step does not change any of that, so a draft can still be flagged as AI-generated even after every invisible character is stripped. A clean AI pass is a sensible first step for hygiene reasons alone, and it reduces one fingerprint Turnitin, GPTZero, and Copyleaks can use. To address the statistical layer that Originality.ai, Winston AI, and Sapling weight most heavily, you would need to rewrite the text with the GPTCleanup Pro humanizer, which targets perplexity and burstiness directly rather than just the formatting residue.',
+    answer: 'Cleaning AI text addresses the formatting layer that detection platforms like Turnitin, GPTZero, Originality.ai, Copyleaks, Winston AI, and Sapling can include as one of their surface signals, but it does not modify the underlying language patterns those tools score against. Hidden Unicode characters, zero-width spaces, and unusual spacing runs are easy fingerprints for any classifier to flag because they survive copy and paste from AI chat interfaces, and removing them eliminates one technical detection vector. However, the deeper layer these detectors evaluate is statistical: token-level perplexity, burstiness, sentence length variance, and vocabulary distribution. The clean AI step does not change any of that, so a draft can still be flagged as AI-generated even after every invisible character is stripped. A clean AI pass is a sensible first step for hygiene reasons alone, and it reduces one fingerprint Turnitin, GPTZero, and Copyleaks can use. To address the statistical layer that Originality.ai, Winston AI, and Sapling weight most heavily, you would need to rewrite the text with the AI Text Cleanup Tools Pro humanizer, which targets perplexity and burstiness directly rather than just the formatting residue.',
   },
   {
     category: 'Advanced',
@@ -174,7 +168,7 @@ const article = (
   <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10"><div className="prose prose-slate max-w-none">
     <h2>Clean AI Text — Remove Hidden Characters from AI Output in One Click</h2>
     <p>Every time you generate text with an AI model and copy it somewhere, hidden characters travel with the visible words. To <strong>clean AI</strong> text means to remove all of those hidden Unicode characters — zero-width spaces, byte-order marks, non-breaking spaces, soft hyphens, directional marks — so the text is technically clean and behaves predictably in every application. Without a tool to <strong>clean AI</strong> output, those invisible characters accumulate in your documents, CMS platforms, email campaigns, and code files, causing formatting problems that are difficult to diagnose because the text looks completely normal on screen.</p>
-    <p>GPTCLEANUP AI is a free tool to <strong>clean AI</strong> text from any model in one click. Paste your AI-generated output, click Clean Text, and copy the cleaned result. No account, no upload, no limit. Use it to <strong>clean AI</strong> text from ChatGPT, Claude, Gemini, DeepSeek, Grok, Llama, Mistral, Perplexity, Copilot, or any other model — the same invisible characters appear across every AI platform and the same clean AI process removes them all.</p>
+    <p>AI Text Cleanup Tools is a free tool to <strong>clean AI</strong> text from any model in one click. Paste your AI-generated output, click Clean Text, and copy the cleaned result. No account, no upload, no limit. Use it to <strong>clean AI</strong> text from ChatGPT, Claude, Gemini, DeepSeek, Grok, Llama, Mistral, Perplexity, Copilot, or any other model — the same invisible characters appear across every AI platform and the same clean AI process removes them all.</p>
 
     <h2>Why Every AI User Needs to Clean AI Output</h2>
     <p>The case for cleaning AI text is straightforward: every AI model produces invisible characters as a byproduct of how it generates and renders text. These characters are not visible when you read the AI response. They look like nothing on screen. But they are present in the underlying character data, and they cause specific, predictable problems in every downstream application where AI text is used — and they are also one of the surface fingerprints that AI detection platforms like <strong>Turnitin</strong>, <strong>GPTZero</strong>, <strong>Originality.ai</strong>, <strong>Copyleaks</strong>, <strong>Winston AI</strong>, and <strong>Sapling</strong> can scan for alongside their statistical models when flagging content as AI-generated.</p>
@@ -231,7 +225,7 @@ const article = (
     <p>Building the <strong>clean AI</strong> habit now — making it a reflexive, automatic first step for every piece of AI output — is the approach that prevents invisible character problems at scale. The tool is free, takes seconds, and processes text with complete privacy. Whether you generate a few AI responses per day or thousands per month, clean AI text is the standard that protects every downstream application from invisible character artifacts.</p>
 
     <h2>Free Clean AI Tool — No Account, No Limits, Complete Privacy</h2>
-    <p>GPTCLEANUP AI is a free <strong>clean AI</strong> tool with no account required, no character limits, and no subscription. All clean AI processing happens in your browser — your text is never uploaded, stored, or logged. The tool works on text from every AI model and every source. It removes every category of invisible Unicode character, converts typographic special characters to ASCII equivalents, strips markdown formatting symbols, normalizes spacing, and collapses excess blank lines — all in one click. Paste your AI-generated text, click Clean Text, and copy the output. The entire clean AI process takes under ten seconds and produces text that is genuinely clean at every character level. Make this clean AI tool the first step of every AI text workflow and eliminate invisible character problems from your professional work permanently.</p>
+    <p>AI Text Cleanup Tools is a free <strong>clean AI</strong> tool with no account required, no character limits, and no subscription. All clean AI processing happens in your browser — your text is never uploaded, stored, or logged. The tool works on text from every AI model and every source. It removes every category of invisible Unicode character, converts typographic special characters to ASCII equivalents, strips markdown formatting symbols, normalizes spacing, and collapses excess blank lines — all in one click. Paste your AI-generated text, click Clean Text, and copy the output. The entire clean AI process takes under ten seconds and produces text that is genuinely clean at every character level. Make this clean AI tool the first step of every AI text workflow and eliminate invisible character problems from your professional work permanently.</p>
   </div>
   </section>
 );

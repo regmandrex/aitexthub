@@ -11,17 +11,10 @@ import { RelatedTools } from "../../components/tool/RelatedTools";
 import AdSenseSlot from "../../components/ads/AdSenseSlot";
 import BelowToolAd from "../../components/ads/BelowToolAd";
 
-function RailAd({ side }: { side: 'left' | 'right' }) {
-  const sideClass = side === 'left' ? 'left-4' : 'right-4';
-
-  return (
-    <div className={`hidden lg:block fixed top-[220px] ${sideClass} z-20`}>
-      <div className="w-[180px] min-h-[260px]">
-        <AdSenseSlot className="w-full" />
-      </div>
-    </div>
-  );
+function RailAd(_props: { side: 'left' | 'right' }) {
+  return null;
 }
+
 
 
 const faqs: FaqItem[] = [
@@ -280,7 +273,7 @@ export default async function GrokWatermarkCleanerPage() {
           <p>
             This is where the need for a Grok watermark cleaner for text comes in. Writers don’t want to erase ideas or opinions. They want to
             reshape AI-assisted drafts into something that feels genuinely human, performs well in SEO, and doesn’t trigger unnecessary detection
-            flags. Tools like GPTCleanUpTools.com are built specifically for this purpose—cleaning Grok text at the structural level, not just
+            flags. Tools like AI Text Cleanup Tools are built specifically for this purpose—cleaning Grok text at the structural level, not just
             swapping words.
           </p>
 
@@ -383,9 +376,9 @@ export default async function GrokWatermarkCleanerPage() {
             AI detectors don’t care about synonyms. They care about patterns. Without restructuring, Grok’s watermark survives.
           </p>
 
-          <h3 className="text-xl font-semibold text-slate-900">GPTCleanUpTools.com as a Grok Watermark Cleaner</h3>
+          <h3 className="text-xl font-semibold text-slate-900">AI Text Cleanup Tools as a Grok Watermark Cleaner</h3>
           <p>
-            GPTCleanUpTools.com is designed to clean AI-generated text—including Grok output—by targeting detection-level linguistic signals, not
+            AI Text Cleanup Tools is designed to clean AI-generated text—including Grok output—by targeting detection-level linguistic signals, not
             just surface wording.
           </p>
 
@@ -399,14 +392,14 @@ export default async function GrokWatermarkCleanerPage() {
           </ul>
           <p>The tool balances confidence with realism.</p>
 
-          <h3 className="text-xl font-semibold text-slate-900">Why GPTCleanUpTools.com Outperforms Generic Rewriters</h3>
+          <h3 className="text-xl font-semibold text-slate-900">Why AI Text Cleanup Tools Outperforms Generic Rewriters</h3>
           <p>Generic tools rewrite sentences.</p>
-          <p>GPTCleanUpTools.com rewrites language behavior.</p>
+          <p>AI Text Cleanup Tools rewrites language behavior.</p>
           <p>That’s why cleaned Grok text reads like a human opinion—not an AI monologue.</p>
 
-          <h3 className="text-xl font-semibold text-slate-900">Step-by-Step: Cleaning Grok Text Using GPTCleanUpTools.com</h3>
+          <h3 className="text-xl font-semibold text-slate-900">Step-by-Step: Cleaning Grok Text Using AI Text Cleanup Tools</h3>
           <ol className="list-decimal list-inside space-y-2 text-slate-700">
-            <li>Paste Grok-generated text into GPTCleanUpTools.com</li>
+            <li>Paste Grok-generated text into AI Text Cleanup Tools</li>
             <li>Choose the desired humanization level</li>
             <li>Run the cleanup process</li>
             <li>Review tone, pacing, and flow</li>
@@ -457,13 +450,13 @@ export default async function GrokWatermarkCleanerPage() {
             <li>Harder to detect visually</li>
           </ul>
           <p>
-            At the same time, tools like GPTCleanUpTools.com will continue evolving to ensure AI-assisted writing remains usable and human-aligned.
+            At the same time, tools like AI Text Cleanup Tools will continue evolving to ensure AI-assisted writing remains usable and human-aligned.
           </p>
 
           <h3 className="text-xl font-semibold text-slate-900">Conclusion</h3>
           <p>
             Grok text watermarks aren’t visible, but they’re powerful. Removing them properly requires more than paraphrasing—it requires
-            restructuring language at a human level. A dedicated Grok watermark cleaner for text, such as GPTCleanUpTools.com, allows writers to
+            restructuring language at a human level. A dedicated Grok watermark cleaner for text, such as AI Text Cleanup Tools, allows writers to
             transform AI-assisted drafts into content that reads naturally, performs well in SEO, and fits real-world writing expectations.
           </p>
           <p>

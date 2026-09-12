@@ -5,7 +5,7 @@ import { buildMeta } from '@/lib/seo-meta';
 export async function generateMetadata() {
   return buildMeta({
     title: 'Terms of Service',
-    description: 'Terms of Service for GPTCleanup AI tools, Pro subscriptions, and paid plans. Covers acceptable use, billing, cancellation, liability, and more.',
+    description: 'Terms of Service for AI Text Cleanup Tools tools, Pro subscriptions, and paid plans. Covers acceptable use, billing, cancellation, liability, and more.',
     urlPath: '/terms-of-service',
   });
 }
@@ -25,7 +25,7 @@ export default async function TermsOfServicePage() {
             <span className="bg-gradient-to-r from-violet-600 to-purple-700 bg-clip-text text-transparent">Service</span>
           </h1>
           <p className="mx-auto mt-3 max-w-xl text-sm text-slate-600 md:text-base">
-            These terms govern your use of GPTCleanup, including free tools, Pro subscriptions, and all paid plans.
+            These terms govern your use of AI Text Cleanup Tools, including free tools, Pro subscriptions, and all paid plans.
           </p>
           <p className="mt-2 text-xs text-slate-500">Last updated: May 24, 2026</p>
         </div>
@@ -39,7 +39,7 @@ export default async function TermsOfServicePage() {
             <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-violet-600 to-purple-700 text-sm font-black text-white shadow-sm">1</span>
             <h2 className="text-lg font-bold text-slate-900">Acceptance of Terms</h2>
           </div>
-          <p className="text-sm text-slate-700">By accessing or using GPTCleanup (&quot;the Service&quot;), you agree to be bound by these Terms of Service (&quot;Terms&quot;). If you do not agree, do not use the Service. These Terms apply to all visitors, users, and subscribers — including users of free tools and holders of paid Pro plans.</p>
+          <p className="text-sm text-slate-700">By accessing or using AI Text Cleanup Tools (&quot;the Service&quot;), you agree to be bound by these Terms of Service (&quot;Terms&quot;). If you do not agree, do not use the Service. These Terms apply to all visitors, users, and subscribers — including users of free tools and holders of paid Pro plans.</p>
         </section>
 
         {/* 2. Description */}
@@ -48,7 +48,7 @@ export default async function TermsOfServicePage() {
             <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-violet-600 to-purple-700 text-sm font-black text-white shadow-sm">2</span>
             <h2 className="text-lg font-bold text-slate-900">Description of Service</h2>
           </div>
-          <p className="text-sm text-slate-700">GPTCleanup provides browser-based text-processing and AI-related tools for personal and lawful use. The Service includes free tools available without an account and paid Pro features available through a subscription. We may change, suspend, or discontinue any part of the Service at any time. We will make reasonable efforts to notify active subscribers before removing paid features.</p>
+          <p className="text-sm text-slate-700">AI Text Cleanup Tools provides browser-based text-processing and AI-related tools for personal and lawful use. The Service includes free tools available without an account and paid Pro features available through a subscription. We may change, suspend, or discontinue any part of the Service at any time. We will make reasonable efforts to notify active subscribers before removing paid features.</p>
         </section>
 
         {/* 3. Account Registration */}
@@ -87,7 +87,7 @@ export default async function TermsOfServicePage() {
 
           <div className="rounded-xl border border-violet-200 bg-violet-50/40 p-4 mb-4">
             <h3 className="text-sm font-bold text-slate-900">4.1 Subscription Plans</h3>
-            <p className="mt-1 text-sm text-slate-700">GPTCleanup Pro is offered as a paid subscription with multiple plan options (Weekly, Monthly, and Annual). Current pricing, features, and usage quotas for each plan are displayed on the <Link href="/pro" className="font-semibold text-violet-700 hover:underline">Pro page</Link>. We reserve the right to modify pricing at any time; changes will not affect the current billing period of active subscriptions.</p>
+            <p className="mt-1 text-sm text-slate-700">AI Text Cleanup Tools Pro is offered as a paid subscription with multiple plan options (Weekly, Monthly, and Annual). Current pricing, features, and usage quotas for each plan are displayed on the <Link href="/pro" className="font-semibold text-violet-700 hover:underline">Pro page</Link>. We reserve the right to modify pricing at any time; changes will not affect the current billing period of active subscriptions.</p>
           </div>
 
           <div className="rounded-xl border border-slate-200 bg-white p-4 mb-4">
@@ -167,7 +167,7 @@ export default async function TermsOfServicePage() {
                 </svg>
               </span>
               <div className="text-sm text-slate-700 space-y-2">
-                <p><strong className="text-slate-900">GPTCleanup does not guarantee that processed text will pass any specific AI detection tool</strong>, including but not limited to Turnitin, GPTZero, Originality.ai, Copyleaks, Winston AI, Sapling, ZeroGPT, or Content at Scale.</p>
+                <p><strong className="text-slate-900">AI Text Cleanup Tools does not guarantee that processed text will pass any specific AI detection tool</strong>, including but not limited to Turnitin, GPTZero, Originality.ai, Copyleaks, Winston AI, Sapling, ZeroGPT, or Content at Scale.</p>
                 <p>AI detection algorithms are maintained by third parties, change frequently, and use a combination of signals — some of which are beyond the scope of any text-processing tool. Our tools remove technical artifacts (hidden Unicode characters, HTML attributes, formatting markers). They do not alter the statistical writing patterns that some detectors also analyze.</p>
                 <p>You are solely responsible for how you use the output of the Service. We are not liable for any academic, professional, legal, or other consequences arising from your use of cleaned or humanized text. We encourage users to follow their institution&apos;s or employer&apos;s policies regarding AI-assisted content.</p>
               </div>
@@ -181,7 +181,7 @@ export default async function TermsOfServicePage() {
             <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-violet-600 to-purple-700 text-sm font-black text-white shadow-sm">9</span>
             <h2 className="text-lg font-bold text-slate-900">Intellectual Property</h2>
           </div>
-          <p className="text-sm text-slate-700">All design, code, features, branding, and tools provided through GPTCleanup are protected by copyright and other intellectual property laws. You may not reproduce, resell, reverse-engineer, or redistribute any part of the Service without our prior written permission.</p>
+          <p className="text-sm text-slate-700">All design, code, features, branding, and tools provided through AI Text Cleanup Tools are protected by copyright and other intellectual property laws. You may not reproduce, resell, reverse-engineer, or redistribute any part of the Service without our prior written permission.</p>
         </section>
 
         {/* 10. Disclaimer of Warranties */}
@@ -199,7 +199,7 @@ export default async function TermsOfServicePage() {
             <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-violet-600 to-purple-700 text-sm font-black text-white shadow-sm">11</span>
             <h2 className="text-lg font-bold text-slate-900">Limitation of Liability</h2>
           </div>
-          <p className="text-sm text-slate-700">To the fullest extent permitted by law, GPTCleanup and its operators shall not be liable for:</p>
+          <p className="text-sm text-slate-700">To the fullest extent permitted by law, AI Text Cleanup Tools and its operators shall not be liable for:</p>
           <ul className="mt-3 space-y-2 text-sm text-slate-700">
             <li className="flex items-start gap-2"><span className="text-slate-400">-</span> Indirect, incidental, special, or consequential damages</li>
             <li className="flex items-start gap-2"><span className="text-slate-400">-</span> Loss of data, profits, or business opportunities</li>
@@ -216,7 +216,7 @@ export default async function TermsOfServicePage() {
             <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-violet-600 to-purple-700 text-sm font-black text-white shadow-sm">12</span>
             <h2 className="text-lg font-bold text-slate-900">Indemnification</h2>
           </div>
-          <p className="text-sm text-slate-700">You agree to indemnify and hold harmless GPTCleanup, its owners, developers, and affiliates from any claims, damages, losses, or expenses (including legal fees) arising from:</p>
+          <p className="text-sm text-slate-700">You agree to indemnify and hold harmless AI Text Cleanup Tools, its owners, developers, and affiliates from any claims, damages, losses, or expenses (including legal fees) arising from:</p>
           <ul className="mt-3 space-y-1.5 text-sm text-slate-700">
             <li className="flex items-start gap-2"><span className="text-slate-400">-</span> Your misuse of the Service</li>
             <li className="flex items-start gap-2"><span className="text-slate-400">-</span> Your violation of these Terms</li>
@@ -231,7 +231,7 @@ export default async function TermsOfServicePage() {
             <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-violet-600 to-purple-700 text-sm font-black text-white shadow-sm">13</span>
             <h2 className="text-lg font-bold text-slate-900">Chargebacks and Payment Disputes</h2>
           </div>
-          <p className="text-sm text-slate-700">Filing a fraudulent chargeback or payment dispute without first contacting us at <a href="mailto:support@gptcleanuptools.com" className="font-semibold text-violet-700 hover:underline">support@gptcleanuptools.com</a> is a violation of these Terms. If you initiate a fraudulent chargeback:</p>
+          <p className="text-sm text-slate-700">Filing a fraudulent chargeback or payment dispute without first contacting us at <a href="mailto:support@aitextcleanuptools.com" className="font-semibold text-violet-700 hover:underline">support@aitextcleanuptools.com</a> is a violation of these Terms. If you initiate a fraudulent chargeback:</p>
           <ul className="mt-3 space-y-1.5 text-sm text-slate-700">
             <li className="flex items-start gap-2"><span className="text-slate-400">-</span> Your account will be immediately terminated</li>
             <li className="flex items-start gap-2"><span className="text-slate-400">-</span> You may be banned from future use of the Service</li>
@@ -290,13 +290,13 @@ export default async function TermsOfServicePage() {
           <h2 className="text-xl font-bold md:text-2xl">Questions about these Terms?</h2>
           <p className="mt-2 text-sm text-violet-100">We respond to inquiries within 3-5 business days.</p>
           <Link
-            href="mailto:support@gptcleanuptools.com"
+            href="mailto:support@aitextcleanuptools.com"
             className="mt-5 inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-bold text-violet-700 shadow-lg transition hover:bg-violet-50"
           >
             <svg className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
             </svg>
-            support@gptcleanuptools.com
+            support@aitextcleanuptools.com
           </Link>
         </section>
 

@@ -16,22 +16,16 @@ import { getToolBySlug } from '@/lib/tools/registry';
 
 const toolSlug = 'character-remover';
 
-function RailAd({ side }: { side: 'left' | 'right' }) {
-  const sideClass = side === 'left' ? 'left-4' : 'right-4';
-  return (
-    <div className={`hidden lg:block fixed top-[220px] ${sideClass} z-20`}>
-      <div className="w-[180px] min-h-[260px]">
-        <AdSenseSlot className="w-full" />
-      </div>
-    </div>
-  );
+function RailAd(_props: { side: 'left' | 'right' }) {
+  return null;
 }
+
 
 const faqs: FaqItem[] = [
   {
     category: 'General',
     question: 'What is a character remover?',
-    answer: 'A character remover is a tool that identifies and deletes unwanted characters from text — including invisible Unicode code points, markdown formatting symbols, typographic punctuation like curly quotes and em dashes, and other characters that do not belong in plain text. Character removers are essential for anyone who regularly copies text from AI models, word processors, PDFs, or websites and needs clean, standardized output in a different application. GPTCLEANUP AI is a free character remover that handles all categories of unwanted characters in a single pass, with no account, no upload, and no character limits.',
+    answer: 'A character remover is a tool that identifies and deletes unwanted characters from text — including invisible Unicode code points, markdown formatting symbols, typographic punctuation like curly quotes and em dashes, and other characters that do not belong in plain text. Character removers are essential for anyone who regularly copies text from AI models, word processors, PDFs, or websites and needs clean, standardized output in a different application. AI Text Cleanup Tools is a free character remover that handles all categories of unwanted characters in a single pass, with no account, no upload, and no character limits.',
   },
   {
     category: 'General',
@@ -96,7 +90,7 @@ const faqs: FaqItem[] = [
   {
     category: 'Comparison',
     question: 'How is a character remover different from a text cleaner?',
-    answer: 'A character remover focuses specifically on removing unwanted characters — invisible Unicode, markdown symbols, and typographic special characters. A text cleaner performs a broader set of operations that includes character removal plus formatting normalization (collapsing blank lines, normalizing spacing, fixing line endings). If you specifically want to remove unwanted characters from text without other modifications, use this character remover. If you want comprehensive text cleanup including spacing normalization and paragraph structure fixes, use the main GPTCLEANUP AI text cleaner. Both are free and available on this site.',
+    answer: 'A character remover focuses specifically on removing unwanted characters — invisible Unicode, markdown symbols, and typographic special characters. A text cleaner performs a broader set of operations that includes character removal plus formatting normalization (collapsing blank lines, normalizing spacing, fixing line endings). If you specifically want to remove unwanted characters from text without other modifications, use this character remover. If you want comprehensive text cleanup including spacing normalization and paragraph structure fixes, use the main AI Text Cleanup Tools text cleaner. Both are free and available on this site.',
   },
   {
     category: 'Comparison',
@@ -169,7 +163,7 @@ const article = (
   <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10"><div className="prose prose-slate max-w-none">
     <h2>Character Remover — Remove Unwanted Characters from Text Online</h2>
     <p>A <strong>character remover</strong> is a tool that takes raw text from any source and strips out the characters that do not belong — invisible Unicode artifacts, markdown formatting symbols, non-standard punctuation, and other unwanted code points — while preserving every visible word and sentence. Whether you are cleaning AI-generated content before publishing, preparing copy-pasted text for a new editor, or sanitizing data for a spreadsheet or database, a character remover gives you clean, consistent output in seconds.</p>
-    <p>GPTCLEANUP AI is a free <strong>character remover</strong> with no account, no upload, and no character limits. Paste your text, click Clean Text, and copy the clean result. The tool handles all categories of unwanted characters in a single pass — invisible Unicode, markdown syntax, curly quotes, em dashes, and spacing artifacts from AI tools, word processors, PDFs, and websites.</p>
+    <p>AI Text Cleanup Tools is a free <strong>character remover</strong> with no account, no upload, and no character limits. Paste your text, click Clean Text, and copy the clean result. The tool handles all categories of unwanted characters in a single pass — invisible Unicode, markdown syntax, curly quotes, em dashes, and spacing artifacts from AI tools, word processors, PDFs, and websites.</p>
 
     <h2>Categories of Characters That Need Removing</h2>
     <p>Understanding what types of unwanted characters appear in text helps you know why a character remover is necessary and when to use it.</p>
@@ -229,7 +223,7 @@ const article = (
     <p>One of the most frustrating aspects of invisible character problems is that they are genuinely invisible. Unlike a typo or a formatting error, an invisible character gives you no visual signal that it is there. The text looks completely correct when you read it. The problem only surfaces when the text enters a system that processes or compares characters at the byte level — a word count tool, a string comparison, a JSON parser, a code interpreter.</p>
     <p>Even experienced developers who are aware of the invisible character issue cannot reliably detect zero-width spaces by reading code. The character occupies a character position but has no visual width in any standard font. In a code editor with syntax highlighting, a variable name containing a zero-width space looks identical to the same variable name without one. Only a hex editor or a character inspector reveals the difference — and most people do not routinely check their text in a hex editor.</p>
     <p>This is why a character remover is not just a convenience tool but a practical necessity for anyone who regularly works with text from AI tools, word processors, or copy-paste workflows. You cannot reliably detect invisible characters by inspection, no matter how carefully you read. You can only remove them with a tool specifically designed to find them.</p>
-    <p>GPTCLEANUP AI's character remover shows you a count of removed characters after cleaning. This count is often the first concrete evidence users have that invisible characters were present in their text. Seeing "18 invisible characters removed" from a passage you have read multiple times and considered clean is a clarifying moment — it explains word count discrepancies, string matching failures, and other problems that had no apparent cause.</p>
+    <p>AI Text Cleanup Tools's character remover shows you a count of removed characters after cleaning. This count is often the first concrete evidence users have that invisible characters were present in their text. Seeing "18 invisible characters removed" from a passage you have read multiple times and considered clean is a clarifying moment — it explains word count discrepancies, string matching failures, and other problems that had no apparent cause.</p>
 
     <h2>Character Remover for SEO Content</h2>
     <p>SEO professionals who use AI tools to generate content at scale should include character removal as a standard quality step before publishing. When AI-generated content is published without character removal, invisible Unicode characters become part of the page HTML that search engines index. Zero-width spaces inside keyword phrases mean those phrases do not exactly match search queries at the character level. Non-breaking spaces in heading text prevent correct word wrapping in mobile views, which can affect Core Web Vitals scores — a Google ranking factor. Curly quotes in meta titles and descriptions can render inconsistently in search result snippets across browser and OS combinations, affecting click-through rates.</p>
@@ -249,7 +243,7 @@ const article = (
     <p>When you remove special characters, the output is text that works reliably in every destination: document editors that would otherwise miscount words, code editors that would fail on Unicode control characters, databases that would reject rows with invisible character contamination, and publishing platforms that would render hidden characters as layout artifacts. Remove special characters once, at the source, and the clean text works everywhere.</p>
 
     <h2>Free Character Remover — No Account, No Limits</h2>
-    <p>GPTCLEANUP AI is a free <strong>character remover</strong> with no account required, no character limits, and no subscription. All processing happens in your browser using JavaScript — your text is never uploaded to any server, never logged, and never stored. You can use it for as much text as you need, as often as you need, for any content including confidential business documents, legal drafts, healthcare records, client deliverables, and source code. The character remover handles all categories of unwanted characters — invisible Unicode, markdown, typographic special characters — in a single pass. Paste your text, click Clean Text, and copy the clean result in seconds.</p>
+    <p>AI Text Cleanup Tools is a free <strong>character remover</strong> with no account required, no character limits, and no subscription. All processing happens in your browser using JavaScript — your text is never uploaded to any server, never logged, and never stored. You can use it for as much text as you need, as often as you need, for any content including confidential business documents, legal drafts, healthcare records, client deliverables, and source code. The character remover handles all categories of unwanted characters — invisible Unicode, markdown, typographic special characters — in a single pass. Paste your text, click Clean Text, and copy the clean result in seconds.</p>
   </div>
   </section>
 );

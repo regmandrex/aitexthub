@@ -198,7 +198,7 @@ const writeUp = (
       <h2>Introduction</h2>
       <p>
         This guide explains how hex to binary conversion works, why grouping matters, and how to use the converter for real technical workflows.
-        The tool on gptcleanuptools.com focuses on accurate, deterministic conversion from hex to binary while keeping formatting flexible.
+        The tool on AI Text Cleanup Tools focuses on accurate, deterministic conversion from hex to binary while keeping formatting flexible.
         Whether you are analyzing packets, debugging a mask, or learning base conversions, this page provides clear explanations, examples, and
         best practices. The converter runs locally in your browser and does not store any text. It is a straightforward hex to binary converter
         for developers, students, and analysts who need accurate bit-level output.

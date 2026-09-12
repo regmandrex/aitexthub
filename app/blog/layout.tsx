@@ -6,7 +6,7 @@ import { buildMeta } from '@/lib/seo-meta';
 import RailAd from '../../components/ads/RailAd';
 
 export const metadata: Metadata = buildMeta({
-  title: 'GPTCLEANUP AI Blog - Fix Messy AI Text & Formatting',
+  title: 'AI Text Cleanup Tools Blog - Fix Messy AI Text & Formatting',
   description: 'Guides on cleaning up AI output, fixing formatting issues, and preparing ChatGPT or Gemini text for documents.',
   urlPath: '/blog',
 });
@@ -18,7 +18,7 @@ export default function BlogLayout({ children }: { children: ReactNode }) {
       <Container className="space-y-6">
         <div className="space-y-2">
           <div className="flex flex-wrap items-center justify-between gap-2">
-            <h1 className="text-3xl font-semibold text-slate-900">GPTCLEANUP AI Blog</h1>
+            <h1 className="text-3xl font-semibold text-slate-900">AI Text Cleanup Tools Blog</h1>
             <Link
               href="/rss.xml"
               className="text-sm font-medium text-slate-600 hover:text-brand-600"

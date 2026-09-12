@@ -171,7 +171,7 @@ const writeUp = (
         restores the original characters so you can work with plain text again.
       </p>
       <p>
-        The HTML Entities to Text Converter on gptcleanuptools.com decodes entities quickly and accurately in your browser. Paste your content and
+        The HTML Entities to Text Converter on AI Text Cleanup Tools decodes entities quickly and accurately in your browser. Paste your content and
         get clean, readable text instantly. The tool is designed for editors, developers, and anyone who needs to clean up HTML escaped content
         without writing code. It is fast, private, and straightforward.
       </p>

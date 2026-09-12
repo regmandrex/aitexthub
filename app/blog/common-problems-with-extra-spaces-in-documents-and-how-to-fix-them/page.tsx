@@ -6,7 +6,7 @@ import AdSenseSlot from '../../../components/ads/AdSenseSlot';
 import type { Metadata } from 'next';
 
 const urlPath = '/blog/common-problems-with-extra-spaces-in-documents-and-how-to-fix-them';
-const title = 'Common Problems with Extra Spaces in Documents (and How to Fix Them) | GPTCLEANUP AI';
+const title = 'Common Problems with Extra Spaces in Documents (and How to Fix Them) | AI Text Cleanup Tools';
 const headline = 'Common Problems with Extra Spaces in Documents (and How to Fix Them)';
 const description =
   'Real-world examples of spacing issues and practical solutions for writers, students, and professionals.';

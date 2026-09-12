@@ -17,17 +17,10 @@ import { getToolBySlug } from '@/lib/tools/registry';
 
 const toolSlug = 'ai-text-cleaner';
 
-function RailAd({ side }: { side: 'left' | 'right' }) {
-  const sideClass = side === 'left' ? 'left-4' : 'right-4';
-
-  return (
-    <div className={`hidden lg:block fixed top-[220px] ${sideClass} z-20`}>
-      <div className="w-[180px] min-h-[260px]">
-        <AdSenseSlot className="w-full" />
-      </div>
-    </div>
-  );
+function RailAd(_props: { side: 'left' | 'right' }) {
+  return null;
 }
+
 
 const faqs: FaqItem[] = [
   {
@@ -108,7 +101,7 @@ const faqs: FaqItem[] = [
   {
     category: 'AI Detection',
     question: 'Does the AI Text Cleaner work against GPTZero, Originality.ai, and Copyleaks together?',
-    answer: 'The AI Text Cleaner targets the formatting layer that detection platforms like Turnitin, GPTZero, Originality.ai, Copyleaks, Winston AI, and Sapling can include as one of their surface signals, but it does not modify the underlying language patterns those tools score against. Hidden Unicode characters, zero-width spaces, and unusual spacing runs are easy fingerprints for any classifier to flag because they survive copy and paste from AI chat interfaces, and removing them eliminates one technical detection vector. However, the deeper layer these detectors evaluate is statistical: token-level perplexity, burstiness, sentence length variance, and vocabulary distribution. Cleaning formatting does not change any of that, so a draft can still be flagged as AI-generated even after every invisible character is stripped. A clean text pass is a sensible first step for hygiene reasons alone, and it reduces one fingerprint GPTZero, Originality.ai, and Copyleaks can use. To address the statistical layer that Turnitin, Winston AI, and Sapling weight most heavily, you would need to rewrite the text with the GPTCleanup Pro humanizer, which targets perplexity and burstiness directly rather than just the formatting residue.'
+    answer: 'The AI Text Cleaner targets the formatting layer that detection platforms like Turnitin, GPTZero, Originality.ai, Copyleaks, Winston AI, and Sapling can include as one of their surface signals, but it does not modify the underlying language patterns those tools score against. Hidden Unicode characters, zero-width spaces, and unusual spacing runs are easy fingerprints for any classifier to flag because they survive copy and paste from AI chat interfaces, and removing them eliminates one technical detection vector. However, the deeper layer these detectors evaluate is statistical: token-level perplexity, burstiness, sentence length variance, and vocabulary distribution. Cleaning formatting does not change any of that, so a draft can still be flagged as AI-generated even after every invisible character is stripped. A clean text pass is a sensible first step for hygiene reasons alone, and it reduces one fingerprint GPTZero, Originality.ai, and Copyleaks can use. To address the statistical layer that Turnitin, Winston AI, and Sapling weight most heavily, you would need to rewrite the text with the AI Text Cleanup Tools Pro humanizer, which targets perplexity and burstiness directly rather than just the formatting residue.'
   },
   {
     category: 'SEO',

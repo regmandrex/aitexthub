@@ -270,7 +270,7 @@ export default async function RemoveSpacesExcelPage() {
     headline: 'Remove Spaces in Excel — Complete Guide',
     description,
     url,
-    author: { '@type': 'Organization', name: 'GPTCLEANUP AI' },
+    author: { '@type': 'Organization', name: 'AI Text Cleanup Tools' },
   };
 
   return (

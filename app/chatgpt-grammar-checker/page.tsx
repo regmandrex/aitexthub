@@ -21,142 +21,142 @@ const faqs: FaqItem[] = [
   {
     category: 'ChatGPT Grammar Checker FAQs',
     question: 'What is the ChatGPT Grammar Checker?',
-    answer: 'The ChatGPT Grammar Checker is a free tool that identifies and helps correct grammatical errors in your writing. It catches issues like subject-verb agreement, tense consistency, punctuation, and sentence structure problems. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity. Combine the result with your own judgment and any institutional or organizational policies that apply.'
+    answer: 'The ChatGPT Grammar Checker is a free tool that identifies and helps correct grammatical errors in your writing. It catches issues like subject-verb agreement, tense consistency, punctuation, and sentence structure problems. That keeps the result useful as a practical pre-check instead of a final judgment. Read the result together with your own review and any rules from your school, client, publication, or workplace.'
   },
   {
     category: 'ChatGPT Grammar Checker FAQs',
     question: 'What types of errors does the grammar checker find?',
-    answer: 'The tool identifies various errors: subject-verb agreement, verb tense issues, punctuation mistakes, article usage, pronoun errors, sentence fragments, run-on sentences, comma splices, and other common grammatical problems. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity. Combine the result with your own judgment and any institutional or organizational policies that apply.'
+    answer: 'The tool identifies various errors: subject-verb agreement, verb tense issues, punctuation mistakes, article usage, pronoun errors, sentence fragments, run-on sentences, comma splices, and other common grammatical problems. That keeps the result useful as a practical pre-check instead of a final judgment. Read the result together with your own review and any rules from your school, client, publication, or workplace.'
   },
   {
     category: 'ChatGPT Grammar Checker FAQs',
     question: 'Is the grammar checker free?',
-    answer: 'Yes, this ChatGPT Grammar Checker on GPT Clean Up Tools is completely free with no registration required. You can check grammar without usage limits or subscription fees. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity. Combine the result with your own judgment and any institutional or organizational policies that apply.'
+    answer: 'Yes, this ChatGPT Grammar Checker on AI Text Cleanup Tools is completely free with no registration required. You can check grammar without usage limits or subscription fees. That keeps the result useful as a practical pre-check instead of a final judgment. Read the result together with your own review and any rules from your school, client, publication, or workplace.'
   },
   {
     category: 'ChatGPT Grammar Checker FAQs',
     question: 'Is my text stored when using this tool?',
-    answer: 'No. The grammar checker processes text locally in your browser without storing or transmitting content. Your text remains private throughout the checking process. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity. Combine the result with your own judgment and any institutional or organizational policies that apply.'
+    answer: 'No. The grammar checker processes text locally in your browser without storing or transmitting content. Your text remains private throughout the checking process. That keeps the result useful as a practical pre-check instead of a final judgment. Read the result together with your own review and any rules from your school, client, publication, or workplace.'
   },
   {
     category: 'ChatGPT Grammar Checker FAQs',
     question: 'How accurate is the grammar checker?',
-    answer: 'The tool catches most common grammatical errors but may miss some issues or occasionally flag acceptable constructions. Always use your judgment when accepting or rejecting suggestions. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity. Combine the result with your own judgment and any institutional or organizational policies that apply.'
+    answer: 'The tool catches most common grammatical errors but may miss some issues or occasionally flag acceptable constructions. Always use your judgment when accepting or rejecting suggestions. That keeps the result useful as a practical pre-check instead of a final judgment. Read the result together with your own review and any rules from your school, client, publication, or workplace.'
   },
   {
     category: 'ChatGPT Grammar Checker FAQs',
     question: 'Can the grammar checker help with spelling?',
-    answer: 'The tool focuses on grammatical issues rather than spelling. For spelling errors, consider using dedicated spell-check tools or your word processor\'s built-in spelling features. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity. Combine the result with your own judgment and any institutional or organizational policies that apply.'
+    answer: 'The tool focuses on grammatical issues rather than spelling. For spelling errors, consider using dedicated spell-check tools or your word processor\'s built-in spelling features. That keeps the result useful as a practical pre-check instead of a final judgment. Read the result together with your own review and any rules from your school, client, publication, or workplace.'
   },
   {
     category: 'ChatGPT Grammar Checker FAQs',
     question: 'Does the grammar checker work with all English dialects?',
-    answer: 'The tool primarily follows standard American English conventions but understands common British English variations. Regional or informal variations may be flagged as errors. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity. Combine the result with your own judgment and any institutional or organizational policies that apply.'
+    answer: 'The tool primarily follows standard American English conventions but understands common British English variations. Regional or informal variations may be flagged as errors. That keeps the result useful as a practical pre-check instead of a final judgment. Read the result together with your own review and any rules from your school, client, publication, or workplace.'
   },
   {
     category: 'ChatGPT Grammar Checker FAQs',
     question: 'Can I check long documents?',
-    answer: 'Yes, the tool can handle substantial text. For very long documents, consider checking in sections for more focused review. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity. Combine the result with your own judgment and any institutional or organizational policies that apply.'
+    answer: 'Yes, the tool can handle substantial text. For very long documents, consider checking in sections for more focused review. That keeps the result useful as a practical pre-check instead of a final judgment. Read the result together with your own review and any rules from your school, client, publication, or workplace.'
   },
   {
     category: 'ChatGPT Grammar Checker FAQs',
     question: 'Does the grammar checker explain why something is wrong?',
-    answer: 'The tool provides suggestions for corrections. Understanding why helps you learn to avoid similar errors. Over time, grammar checking can improve your writing skills. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity. Combine the result with your own judgment and any institutional or organizational policies that apply.'
+    answer: 'The tool provides suggestions for corrections. Understanding why helps you learn to avoid similar errors. Over time, grammar checking can improve your writing skills. That keeps the result useful as a practical pre-check instead of a final judgment. Read the result together with your own review and any rules from your school, client, publication, or workplace.'
   },
   {
     category: 'ChatGPT Grammar Checker FAQs',
     question: 'How is this different from other grammar checkers?',
-    answer: 'This grammar checker uses AI to understand context and meaning, not just rules. It can catch errors that rule-based checkers miss and better handle complex sentences. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity. Combine the result with your own judgment and any institutional or organizational policies that apply.'
+    answer: 'This grammar checker uses AI to understand context and meaning, not just rules. It can catch errors that rule-based checkers miss and better handle complex sentences. That keeps the result useful as a practical pre-check instead of a final judgment. Read the result together with your own review and any rules from your school, client, publication, or workplace.'
   },
   {
     category: 'ChatGPT Grammar Checker FAQs',
     question: 'Should I accept all suggestions?',
-    answer: 'Not necessarily. Use your judgment. Sometimes intentional stylistic choices may be flagged. Consider whether suggestions improve your writing for your specific purpose. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity. Combine the result with your own judgment and any institutional or organizational policies that apply.'
+    answer: 'Not necessarily. Use your judgment. Sometimes intentional stylistic choices may be flagged. Consider whether suggestions improve your writing for your specific purpose. That keeps the result useful as a practical pre-check instead of a final judgment. Read the result together with your own review and any rules from your school, client, publication, or workplace.'
   },
   {
     category: 'ChatGPT Grammar Checker FAQs',
     question: 'Can grammar checking help with academic writing?',
-    answer: 'Yes, clear grammar is essential for academic communication. The tool helps ensure your ideas are expressed correctly and professionally. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity. Combine the result with your own judgment and any institutional or organizational policies that apply.'
+    answer: 'Yes, clear grammar is essential for academic communication. The tool helps ensure your ideas are expressed correctly and professionally. That keeps the result useful as a practical pre-check instead of a final judgment. Read the result together with your own review and any rules from your school, client, publication, or workplace.'
   },
   {
     category: 'ChatGPT Grammar Checker FAQs',
     question: 'Does the grammar checker work with non-English text?',
-    answer: 'The tool is optimized for English text. Other languages may produce unreliable results. Use English-specific grammar checking for English content. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity. Combine the result with your own judgment and any institutional or organizational policies that apply.'
+    answer: 'The tool is optimized for English text. Other languages may produce unreliable results. Use English-specific grammar checking for English content. That keeps the result useful as a practical pre-check instead of a final judgment. Read the result together with your own review and any rules from your school, client, publication, or workplace.'
   },
   {
     category: 'ChatGPT Grammar Checker FAQs',
     question: 'Can grammar checking help ESL writers?',
-    answer: 'Yes, grammar checking helps non-native speakers identify and learn from common errors. The tool explains corrections, supporting language development. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity. Combine the result with your own judgment and any institutional or organizational policies that apply.'
+    answer: 'Yes, grammar checking helps non-native speakers identify and learn from common errors. The tool explains corrections, supporting language development. That keeps the result useful as a practical pre-check instead of a final judgment. Read the result together with your own review and any rules from your school, client, publication, or workplace.'
   },
   {
     category: 'ChatGPT Grammar Checker FAQs',
     question: 'How often should I check grammar?',
-    answer: 'Check grammar as part of your editing process, typically after completing a draft. Frequent checking during writing can interrupt flow. Final checks before submission are important. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity. Combine the result with your own judgment and any institutional or organizational policies that apply.'
+    answer: 'Check grammar as part of your editing process, typically after completing a draft. Frequent checking during writing can interrupt flow. Final checks before submission are important. That keeps the result useful as a practical pre-check instead of a final judgment. Read the result together with your own review and any rules from your school, client, publication, or workplace.'
   },
   {
     category: 'ChatGPT Grammar Checker FAQs',
     question: 'Does the grammar checker handle informal writing?',
-    answer: 'The tool may flag informal constructions that are acceptable in casual contexts. Consider your audience when deciding whether to accept corrections. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity. Combine the result with your own judgment and any institutional or organizational policies that apply.'
+    answer: 'The tool may flag informal constructions that are acceptable in casual contexts. Consider your audience when deciding whether to accept corrections. That keeps the result useful as a practical pre-check instead of a final judgment. Read the result together with your own review and any rules from your school, client, publication, or workplace.'
   },
   {
     category: 'ChatGPT Grammar Checker FAQs',
     question: 'Can I use this for professional writing?',
-    answer: 'Yes, professional communication benefits from correct grammar. The tool helps ensure emails, reports, and documents are grammatically polished. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity. Combine the result with your own judgment and any institutional or organizational policies that apply.'
+    answer: 'Yes, professional communication benefits from correct grammar. The tool helps ensure emails, reports, and documents are grammatically polished. That keeps the result useful as a practical pre-check instead of a final judgment. Read the result together with your own review and any rules from your school, client, publication, or workplace.'
   },
   {
     category: 'ChatGPT Grammar Checker FAQs',
     question: 'Does grammar checking affect writing style?',
-    answer: 'Grammar checking focuses on correctness, not style. Your voice and style remain; errors are corrected. Style-related suggestions may be offered separately. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity. Combine the result with your own judgment and any institutional or organizational policies that apply.'
+    answer: 'Grammar checking focuses on correctness, not style. Your voice and style remain; errors are corrected. Style-related suggestions may be offered separately. That keeps the result useful as a practical pre-check instead of a final judgment. Read the result together with your own review and any rules from your school, client, publication, or workplace.'
   },
   {
     category: 'ChatGPT Grammar Checker FAQs',
     question: 'What about punctuation?',
-    answer: 'The tool checks punctuation including comma usage, apostrophes, semicolons, and quotation marks. Punctuation errors can significantly affect clarity. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity. Combine the result with your own judgment and any institutional or organizational policies that apply.'
+    answer: 'The tool checks punctuation including comma usage, apostrophes, semicolons, and quotation marks. Punctuation errors can significantly affect clarity. That keeps the result useful as a practical pre-check instead of a final judgment. Read the result together with your own review and any rules from your school, client, publication, or workplace.'
   },
   {
     category: 'ChatGPT Grammar Checker FAQs',
     question: 'Can grammar checking improve AI-generated text?',
-    answer: 'AI-generated text usually has good grammar, but occasional errors occur. Grammar checking ensures AI-assisted content is polished and professional. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity. Combine the result with your own judgment and any institutional or organizational policies that apply.'
+    answer: 'AI-generated text usually has good grammar, but occasional errors occur. Grammar checking ensures AI-assisted content is polished and professional. That keeps the result useful as a practical pre-check instead of a final judgment. Read the result together with your own review and any rules from your school, client, publication, or workplace.'
   },
   {
     category: 'ChatGPT Grammar Checker FAQs',
     question: 'Does the tool handle complex sentences well?',
-    answer: 'The AI-powered checker understands complex sentence structures and context, catching errors in sophisticated writing that simpler checkers might miss. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity. Combine the result with your own judgment and any institutional or organizational policies that apply.'
+    answer: 'The AI-powered checker understands complex sentence structures and context, catching errors in sophisticated writing that simpler checkers might miss. That keeps the result useful as a practical pre-check instead of a final judgment. Read the result together with your own review and any rules from your school, client, publication, or workplace.'
   },
   {
     category: 'ChatGPT Grammar Checker FAQs',
     question: 'Is grammar checking enough for good writing?',
-    answer: 'Grammar is necessary but not sufficient. Good writing also requires clear ideas, logical organization, appropriate style, and engaged voice. Grammar is the foundation. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity. Combine the result with your own judgment and any institutional or organizational policies that apply.'
+    answer: 'Grammar is necessary but not sufficient. Good writing also requires clear ideas, logical organization, appropriate style, and engaged voice. Grammar is the foundation. That keeps the result useful as a practical pre-check instead of a final judgment. Read the result together with your own review and any rules from your school, client, publication, or workplace.'
   },
   {
     category: 'ChatGPT Grammar Checker FAQs',
     question: 'Can I learn grammar from using this tool?',
-    answer: 'Yes, seeing corrections and understanding why they are suggested helps develop grammatical intuition over time. Pay attention to patterns in your errors. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity. Combine the result with your own judgment and any institutional or organizational policies that apply.'
+    answer: 'Yes, seeing corrections and understanding why they are suggested helps develop grammatical intuition over time. Pay attention to patterns in your errors. That keeps the result useful as a practical pre-check instead of a final judgment. Read the result together with your own review and any rules from your school, client, publication, or workplace.'
   },
   {
     category: 'ChatGPT Grammar Checker FAQs',
     question: 'What about sentence fragments?',
-    answer: 'The tool identifies sentence fragments—incomplete sentences lacking subject or verb. Sometimes fragments are intentional for effect; use judgment about corrections. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity. Combine the result with your own judgment and any institutional or organizational policies that apply.'
+    answer: 'The tool identifies sentence fragments—incomplete sentences lacking subject or verb. Sometimes fragments are intentional for effect; use judgment about corrections. That keeps the result useful as a practical pre-check instead of a final judgment. Read the result together with your own review and any rules from your school, client, publication, or workplace.'
   },
   {
     category: 'ChatGPT Grammar Checker FAQs',
     question: 'Does the grammar checker work on mobile?',
-    answer: 'Yes, the tool works on mobile browsers. Copy and paste text to check grammar on any device with web access. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity. Combine the result with your own judgment and any institutional or organizational policies that apply.'
+    answer: 'Yes, the tool works on mobile browsers. Copy and paste text to check grammar on any device with web access. That keeps the result useful as a practical pre-check instead of a final judgment. Read the result together with your own review and any rules from your school, client, publication, or workplace.'
   },
   {
     category: 'ChatGPT Grammar Checker FAQs',
     question: 'How do I use the grammar checker effectively?',
-    answer: 'Paste your text, review suggestions carefully, accept corrections that improve your writing, and reject suggestions that conflict with your intentions. Always do a final read-through. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity. Combine the result with your own judgment and any institutional or organizational policies that apply.'
+    answer: 'Paste your text, review suggestions carefully, accept corrections that improve your writing, and reject suggestions that conflict with your intentions. Always do a final read-through. That keeps the result useful as a practical pre-check instead of a final judgment. Read the result together with your own review and any rules from your school, client, publication, or workplace.'
   },
   {
     category: 'ChatGPT Grammar Checker FAQs',
     question: 'Can the tool check grammar in specific fields?',
-    answer: 'The tool handles general English well. Specialized fields with unique terminology may require domain-specific review alongside general grammar checking. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity. Combine the result with your own judgment and any institutional or organizational policies that apply.'
+    answer: 'The tool handles general English well. Specialized fields with unique terminology may require domain-specific review alongside general grammar checking. That keeps the result useful as a practical pre-check instead of a final judgment. Read the result together with your own review and any rules from your school, client, publication, or workplace.'
   },
   {
     category: 'ChatGPT Grammar Checker FAQs',
     question: 'What common errors does the tool catch most reliably?',
-    answer: 'The tool reliably catches subject-verb agreement, tense consistency, common comma errors, and article usage. These frequent errors are well-handled by the AI. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity. Combine the result with your own judgment and any institutional or organizational policies that apply.'
+    answer: 'The tool reliably catches subject-verb agreement, tense consistency, common comma errors, and article usage. These frequent errors are well-handled by the AI. That keeps the result useful as a practical pre-check instead of a final judgment. Read the result together with your own review and any rules from your school, client, publication, or workplace.'
   }
 ];
 
@@ -171,7 +171,7 @@ const writeUp = (
         Unlike simple rule-based checkers, the ChatGPT Grammar Checker uses AI to understand context and meaning. It catches errors that pattern-matching alone would miss and handles complex sentences that confuse simpler tools. The result is more accurate, helpful grammar assistance.
       </p>
       <p>
-        GPT Clean Up Tools provides this grammar checker as a free resource for students, professionals, writers, and anyone seeking to improve their written communication. The tool processes text locally in your browser, ensuring your content remains private throughout the checking process.
+        AI Text Cleanup Tools provides this grammar checker as a free resource for students, professionals, writers, and anyone seeking to improve their written communication. The tool processes text locally in your browser, ensuring your content remains private throughout the checking process.
       </p>
 
       <h2>Why Grammar Matters</h2>
@@ -385,26 +385,26 @@ const writeUp = (
       </p>
     
 
-        <h2>Understanding ChatGPT Grammar Checker and AI Content in 2024</h2>
-        <p>As AI-generated text becomes more common across education, publishing, and business, tools like the ChatGPT Grammar Checker play an important role in helping users understand and work with that content. Whether you are an educator checking assignments, an editor screening submissions, or a professional verifying authenticity, having a clear picture of how the ChatGPT Grammar Checker works and when to use it supports better decisions and more transparent communication.</p>
-        <p>This section adds context on why these tools exist, how they fit into broader workflows, and how to interpret and act on their results. The goal is to give you enough background to use the ChatGPT Grammar Checker confidently while respecting its limits and combining it with your own judgment and any institutional or organizational policies that apply.</p>
+        <h2>How ChatGPT Grammar Checker Fits Into AI Writing Workflows in 2026</h2>
+        <p>As AI-assisted writing becomes routine in schools, publishing teams, and business workflows, the ChatGPT Grammar Checker gives users a practical way to review text before they rely on it. Whether you are reviewing coursework, editing submissions, or checking professional drafts, understanding what the ChatGPT Grammar Checker can and cannot tell you makes the review process clearer and more consistent.</p>
+        <p>The sections below explain why tools like this exist, where they belong in a broader review process, and how to respond to the results without treating them as an automatic verdict. The goal is to help you use the ChatGPT Grammar Checker with more confidence while still respecting policy requirements, context, and human judgment.</p>
 
         <h3>Why AI Content Tools Matter Now</h3>
         <p>Large language models can produce fluent, coherent text that is hard to distinguish from human writing at a glance. That has raised legitimate concerns about academic integrity, editorial standards, and the need for disclosure. At the same time, AI can support writing, research, and communication when used transparently. The ChatGPT Grammar Checker is one of many resources that help users navigate this landscape by providing an indication of whether text may be AI-generated or how it might be improved, depending on the tool type.</p>
-        <p>Using the ChatGPT Grammar Checker does not replace human judgment or official processes. It gives you an extra signal so you can decide where to look more closely, what to discuss with students or authors, and how to align with your organization&apos;s policies. For high-stakes decisions, always follow approved tools and procedures.</p>
+        <p>The ChatGPT Grammar Checker should support human review, not replace it or override an official process. It adds one signal that can help you decide which passages need closer reading, discussion, revision, or escalation under your own policy. For high-stakes decisions, use the approved tools, documentation standards, and review steps required by your institution or organization.</p>
 
         <h3>How the ChatGPT Grammar Checker Fits Into Your Workflow</h3>
-        <p>Integrating the ChatGPT Grammar Checker into your routine works best when you treat it as a screening or support step rather than a final verdict. For educators, that might mean running detection or analysis on drafts before grading, or using the tool to start conversations with students about AI use and citation. For editors and publishers, it can mean a quick check before sending work to external verification services or to inform author discussions. For professionals and businesses, it can support internal reviews when authenticity and human authorship matter.</p>
-        <p>Set clear expectations with your team or students about how you use the ChatGPT Grammar Checker and what follow-up steps you take when results suggest further review. Consistency and transparency help build trust and make the tool more useful over time.</p>
+        <p>The ChatGPT Grammar Checker works best as a screening step, not as the final word. For educators, that might mean running detection or analysis on drafts before grading, or using the tool to start conversations with students about AI use and citation. For editors and publishers, it can mean a quick check before sending work to external verification services or to inform author discussions. For professionals and businesses, it can support internal reviews when authenticity and human authorship matter.</p>
+        <p>If other people are affected by the result, explain how you use the ChatGPT Grammar Checker and what happens when a page or passage needs a closer look. A consistent, transparent process makes the tool more useful and reduces confusion around borderline results.</p>
 
         <h2>Tips for Consistent Use of the ChatGPT Grammar Checker</h2>
-        <p>To get the most from the ChatGPT Grammar Checker, use sufficient input length when the tool supports it, prefer complete paragraphs or sections over single sentences, and run checks in a consistent way so you can compare results across documents or over time. Keep in mind that no automated tool is perfect; use the output as one input among others, and combine it with your own reading, context, and any guidelines from your institution or employer.</p>
+        <p>For better results with the ChatGPT Grammar Checker, use full paragraphs or complete sections, avoid tiny fragments, and run checks in a repeatable way so different drafts can be compared fairly. No automated tool is perfect, so read the output as a signal to investigate rather than a standalone conclusion.</p>
 
         <h3>Input Quality and Length</h3>
-        <p>Many AI content tools perform better with longer, coherent text. If the ChatGPT Grammar Checker recommends a minimum word count or suggests using full paragraphs, follow that guidance. Shorter or fragmented input may produce less reliable or stable results. When possible, submit text that reflects how the content would actually be used or assessed.</p>
+        <p>Most AI-content review tools behave more reliably when the input is long enough and written as a coherent passage. If the ChatGPT Grammar Checker recommends a minimum word count or suggests using full paragraphs, follow that guidance. Very short snippets and disconnected fragments can produce unstable results. When possible, submit text that reflects how the content would actually be used or assessed.</p>
 
         <h3>Next Steps After You Get Results</h3>
-        <p>Results from the ChatGPT Grammar Checker are typically probabilistic or indicative, not definitive. Avoid using a single score or label to accuse or penalize. Instead, use the result to decide where to look more closely, what to discuss with the author, or whether to run additional checks. Document how you use the tool and what policies you follow so that your process is clear and fair.</p>
+        <p>Results from the ChatGPT Grammar Checker are indicators, not proof. Do not use a single score or label by itself to accuse, punish, or make a final decision. Use the result to decide what to reread, what to ask the author, or whether another approved check is needed. Document how you use the tool and what policies you follow so that your process is clear and fair.</p>
 
         <h2>Data and Security When Using the ChatGPT Grammar Checker</h2>
         <p>This ChatGPT Grammar Checker is designed to process text locally in your browser where possible, so your content is not sent to our servers or stored by us. That is important for confidential drafts, student work, and any sensitive or proprietary content. Always check the tool&apos;s description and your organization&apos;s policies to confirm how data is handled and whether the tool is approved for your use case.</p>

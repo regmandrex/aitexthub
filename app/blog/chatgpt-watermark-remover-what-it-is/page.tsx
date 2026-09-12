@@ -6,7 +6,7 @@ import AdSenseSlot from '../../../components/ads/AdSenseSlot';
 import type { Metadata } from 'next';
 
 const urlPath = '/blog/chatgpt-watermark-remover-what-it-is';
-const title = 'ChatGPT Watermark Remover: What It Is and How It Works | GPTCLEANUP AI';
+const title = 'ChatGPT Watermark Remover: What It Is and How It Works | AI Text Cleanup Tools';
 const headline = 'ChatGPT Watermark Remover: What It Is and How It Works';
 const description =
   'A ChatGPT watermark remover strips invisible Unicode characters and normalizes AI text artifacts. Here is what it removes, how it works, and when to use it.';
@@ -84,7 +84,7 @@ export default function ChatGptWatermarkRemoverWhatItIsPage() {
           removal is only part of the solution &mdash; and only addresses one specific detection signal (Unicode artifacts).
           For statistical pattern reduction, you need content editing or an AI humanizer. The{' '}
           <Link href="/chatgpt-watermark-remover">ChatGPT Watermark Remover</Link> handles the Unicode layer; the{' '}
-          <Link href="/">GPT Cleanup Tools</Link> suite covers more.
+          <Link href="/">AI Text Cleanup Tools</Link> suite covers more.
         </p>
       </section>
 
@@ -235,7 +235,7 @@ export default function ChatGptWatermarkRemoverWhatItIsPage() {
           edit the content to add sentence variety, replace AI-typical vocabulary, and add personal perspective.
         </p>
         <p className="text-slate-700">
-          The <Link href="/">GPT Cleanup Tools</Link> suite and the <Link href="/chatgpt-watermark-detector">ChatGPT Watermark Detector</Link> are
+          The <Link href="/">AI Text Cleanup Tools</Link> suite and the <Link href="/chatgpt-watermark-detector">ChatGPT Watermark Detector</Link> are
           designed to work together: detect what is present, then remove what needs to be removed.
         </p>
       </section>
@@ -280,7 +280,7 @@ export default function ChatGptWatermarkRemoverWhatItIsPage() {
         <p>
           Start with the <Link href="/chatgpt-watermark-detector">ChatGPT Watermark Detector</Link> to see if removal is
           needed, then use the <Link href="/chatgpt-watermark-remover">ChatGPT Watermark Remover</Link> to clean. The{' '}
-          <Link href="/">GPT Cleanup Tools</Link> main suite handles invisible characters as part of a broader cleanup
+          <Link href="/">AI Text Cleanup Tools</Link> main suite handles invisible characters as part of a broader cleanup
           workflow that also addresses formatting and visible text artifacts.
         </p>
       </div>

@@ -198,7 +198,7 @@ const writeUp = (
       <h2>Introduction</h2>
       <p>
         This guide explains how random hex values are created, how length affects strength, and how to choose the right output for your
-        workflow. The random hex number generator on gptcleanuptools.com uses crypto.getRandomValues in modern browsers, giving you high quality
+        workflow. The random hex number generator on AI Text Cleanup Tools uses crypto.getRandomValues in modern browsers, giving you high quality
         randomness without a server round trip. It is designed for practical tasks like creating IDs, color codes, salts, and tokens for
         development and testing. It does not store data and runs entirely in your browser. It is a fast, browser-based tool for quick output.
       </p>

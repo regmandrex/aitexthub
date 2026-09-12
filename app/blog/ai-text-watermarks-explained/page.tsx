@@ -6,7 +6,7 @@ import AdSenseSlot from '../../../components/ads/AdSenseSlot';
 import type { Metadata } from 'next';
 
 const urlPath = '/blog/ai-text-watermarks-explained';
-const title = 'AI Text Watermarks Explained: What They Are and How to Remove Them | GPTCLEANUP AI';
+const title = 'AI Text Watermarks Explained: What They Are and How to Remove Them | AI Text Cleanup Tools';
 const headline = 'AI Text Watermarks Explained: What They Are and How to Remove Them';
 const description =
   'A technical explanation of AI text watermarks: the types that exist, how each is detected, and the complete workflow for removing them from any text.';
@@ -251,7 +251,7 @@ export default function AiTextWatermarksExplainedPage() {
         <p>
           The <Link href="/chatgpt-watermark-remover">ChatGPT Watermark Remover</Link> handles the Unicode cleanup in one
           step. For detection and verification, the <Link href="/chatgpt-watermark-detector">ChatGPT Watermark Detector</Link> shows
-          you what is present before and after cleaning. The <Link href="/">GPT Cleanup Tools</Link> suite covers all
+          you what is present before and after cleaning. The <Link href="/">AI Text Cleanup Tools</Link> suite covers all
           artifact types in a single workflow.
         </p>
       </div>

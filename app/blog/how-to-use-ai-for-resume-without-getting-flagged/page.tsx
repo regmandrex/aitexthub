@@ -6,7 +6,7 @@ import AdSenseSlot from '../../../components/ads/AdSenseSlot';
 import type { Metadata } from 'next';
 
 const urlPath = '/blog/how-to-use-ai-for-resume-without-getting-flagged';
-const title = 'How to Use AI for Your Resume Without Getting Flagged (2026 Guide) | GPTCLEANUP AI';
+const title = 'How to Use AI for Your Resume Without Getting Flagged (2026 Guide) | AI Text Cleanup Tools';
 const headline = 'How to Use AI for Your Resume Without Getting Flagged (2026 Guide)';
 const description =
   'Learn the smart workflow for using AI to write resumes in 2026. Remove watermarks, optimize for ATS systems, avoid AI detection, and produce applications that genuinely represent you.';

@@ -16,8 +16,8 @@ import { Resend } from 'resend';
 import { Pool } from 'pg';
 import { junePromoSubject, junePromoHtml } from '../lib/emails/june-promo.ts';
 
-const FROM = 'GPT Cleanup Tools <noreply@gptcleanuptools.com>';
-const UNSUB = 'https://gptcleanuptools.com/unsubscribe';
+const FROM = 'AI Text Cleanup Tools <noreply@aitextcleanuptools.com>';
+const UNSUB = 'https://aitextcleanuptools.com/unsubscribe';
 
 // 23 recipients (throwaways dosbee.com / 4nly.com / slyclick.blog excluded).
 // All currently 'new' audience (no active Pro subscription).

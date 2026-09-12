@@ -1,4 +1,4 @@
-const siteUrl = 'https://gptcleanuptools.com';
+const siteUrl = 'https://aitextcleanuptools.com';
 
 export { siteUrl };
 

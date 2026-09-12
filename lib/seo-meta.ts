@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { getToolPageBySlug } from '@/lib/seo/registry';
 
-const BASE_URL = 'https://gptcleanuptools.com';
+const BASE_URL = 'https://aitextcleanuptools.com';
 
 type MetaInput = {
   title: string;
@@ -15,8 +15,8 @@ type MetaInput = {
 export function buildMeta({ title, description, urlPath, canonicalTo, locale = 'en_US' }: MetaInput): Metadata {
   const basePath = urlPath.startsWith('/') ? urlPath : `/${urlPath}`;
   const currentUrl = `${BASE_URL}${basePath === '/' ? '' : basePath}`;
-  const canonicalUrl = canonicalTo 
-    ? `${BASE_URL}${canonicalTo.startsWith('/') ? canonicalTo : `/${canonicalTo}`}` 
+  const canonicalUrl = canonicalTo
+    ? `${BASE_URL}${canonicalTo.startsWith('/') ? canonicalTo : `/${canonicalTo}`}`
     : currentUrl;
 
   return {
@@ -29,7 +29,7 @@ export function buildMeta({ title, description, urlPath, canonicalTo, locale = '
       title,
       description,
       url: currentUrl,
-      siteName: 'GPTCLEANUP AI',
+      siteName: 'AI Text Cleanup Tools',
       type: 'website',
       locale,
       // og:image comes from app/opengraph-image.tsx (file convention, 1200x630)
@@ -73,6 +73,7 @@ export function buildToolMeta(slugOrInput: string | ToolMetaInput): Metadata {
       seoTitle: page.seoTitle,
     });
   }
+
   const { title, description, urlPath, seoTitle, canonicalTo } = slugOrInput;
   const trimmedDescription = description.replace(/\.$/, '').trim();
   const fullTitle = seoTitle ?? (trimmedDescription ? `${title} - ${trimmedDescription}` : title);

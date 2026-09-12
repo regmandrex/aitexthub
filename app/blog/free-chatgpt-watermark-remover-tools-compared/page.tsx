@@ -6,7 +6,7 @@ import AdSenseSlot from '../../../components/ads/AdSenseSlot';
 import type { Metadata } from 'next';
 
 const urlPath = '/blog/free-chatgpt-watermark-remover-tools-compared';
-const title = 'Free ChatGPT Watermark Remover Tools Compared (2026 Edition) | GPTCLEANUP AI';
+const title = 'Free ChatGPT Watermark Remover Tools Compared (2026 Edition) | AI Text Cleanup Tools';
 const headline = 'Free ChatGPT Watermark Remover Tools Compared (2026 Edition)';
 const description =
   'A comparison of free ChatGPT watermark remover tools: what to look for, how different approaches work, and why browser-based tools are best for privacy.';
@@ -199,7 +199,7 @@ export default function FreeChatGptWatermarkRemoverToolsComparedPage() {
       </section>
 
       <section className="mt-10 space-y-4">
-        <h2 className="text-2xl font-semibold text-slate-900">The GPT Cleanup Tools Approach</h2>
+        <h2 className="text-2xl font-semibold text-slate-900">The AI Text Cleanup Tools Approach</h2>
         <p className="text-slate-700">
           The tools on this site are designed around three principles: browser-local processing (your text never leaves
           your device), comprehensive coverage (all major invisible character types), and transparency (you see exactly
@@ -222,7 +222,7 @@ export default function FreeChatGptWatermarkRemoverToolsComparedPage() {
             </p>
           </div>
           <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
-            <p className="font-semibold text-slate-900"><Link href="/">GPT Cleanup Tools (main)</Link></p>
+            <p className="font-semibold text-slate-900"><Link href="/">AI Text Cleanup Tools (main)</Link></p>
             <p className="mt-2">
               The comprehensive text cleaner: handles invisible characters, extra whitespace, em dash normalization,
               smart quote standardization, and other common AI text artifacts in one pass.
@@ -259,7 +259,7 @@ export default function FreeChatGptWatermarkRemoverToolsComparedPage() {
             </li>
             <li>
               <strong>Check full text quality:</strong> For a comprehensive cleanup that also addresses formatting and visible
-              artifacts, run through the <Link href="/">GPT Cleanup Tools</Link> main cleaner.
+              artifacts, run through the <Link href="/">AI Text Cleanup Tools</Link> main cleaner.
             </li>
           </ol>
         </div>
@@ -273,7 +273,7 @@ export default function FreeChatGptWatermarkRemoverToolsComparedPage() {
         <p className="font-semibold">Start with the detector, then clean and verify.</p>
         <p>
           Use the <Link href="/chatgpt-watermark-remover">ChatGPT Watermark Remover</Link> for targeted artifact removal,
-          the <Link href="/">GPT Cleanup Tools</Link> main cleaner for comprehensive formatting cleanup, and the{' '}
+          the <Link href="/">AI Text Cleanup Tools</Link> main cleaner for comprehensive formatting cleanup, and the{' '}
           <Link href="/invisible-character-detector">Invisible Character Detector</Link> to verify your results. All
           processing happens in your browser &mdash; your text never leaves your device.
         </p>

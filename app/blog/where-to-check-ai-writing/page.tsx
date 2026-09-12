@@ -6,7 +6,7 @@ import AdSenseSlot from '../../../components/ads/AdSenseSlot';
 import type { Metadata } from 'next';
 
 const urlPath = '/blog/where-to-check-ai-writing';
-const title = 'Where to Check AI Writing: The Best Tools and Methods for 2026 | GPTCLEANUP AI';
+const title = 'Where to Check AI Writing: The Best Tools and Methods for 2026 | AI Text Cleanup Tools';
 const headline = 'Where to Check AI Writing: The Best Tools and Methods for 2026';
 const description =
   'Discover the best tools and methods to check AI-generated writing in 2026, from pattern-based detectors like GPTZero to invisible watermark scanners. Honest comparison with limitations clearly stated.';

@@ -243,7 +243,7 @@ export async function generateMetadata(): Promise<Metadata> {
       title: 'Invisible Symbol Copy and Paste — Blank Symbol Generator',
       description: 'Copy invisible symbols instantly — zero-width space, Hangul filler, non-breaking space. Free for blank Discord names, Fortnite, Instagram bios, and WhatsApp.',
       url: `${siteUrl}/invisible-symbol`,
-      siteName: 'GPTCLEANUP AI',
+      siteName: 'AI Text Cleanup Tools',
       type: 'website',
     },
   };

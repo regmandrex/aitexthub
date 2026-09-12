@@ -11,7 +11,6 @@ import { siteUrl } from '@/lib/seo/url';
 import { RelatedTools } from '../tool/RelatedTools';
 import AdSenseSlot from '../ads/AdSenseSlot';
 import BelowToolAd from '../ads/BelowToolAd';
-import ProFunnelBanner from '../ProFunnelBanner';
 
 type Props = {
   modelName: string;
@@ -21,17 +20,10 @@ type Props = {
   faqIntro?: string;
 };
 
-function RailAd({ side }: { side: 'left' | 'right' }) {
-  const sideClass = side === 'left' ? 'left-4' : 'right-4';
-
-  return (
-    <div className={`hidden lg:block fixed top-[220px] ${sideClass} z-20`}>
-      <div className="w-[180px] min-h-[260px]">
-        <AdSenseSlot className="w-full" />
-      </div>
-    </div>
-  );
+function RailAd(_props: { side: 'left' | 'right' }) {
+  return null;
 }
+
 
 export default function WatermarkDetectorPage({ modelName, modelSlug, faqItems, content, faqIntro }: Props) {
   const url = `${siteUrl}/${modelSlug}-watermark-detector`;
@@ -61,10 +53,6 @@ export default function WatermarkDetectorPage({ modelName, modelSlug, faqItems, 
             </div>
           </div>
         </section>
-
-        <div className="mt-4 -mx-4 md:mx-0">
-          <ProFunnelBanner />
-        </div>
 
         <section className="relative w-full mt-4 md:mt-6">
           <div className="w-full max-w-none rounded-xl border border-slate-200 bg-white p-3 shadow-sm md:rounded-2xl md:p-6">

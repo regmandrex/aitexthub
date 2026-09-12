@@ -5,7 +5,7 @@ import { buildMeta } from '@/lib/seo-meta';
 const modelName = 'DeepSeek';
 const modelSlug = 'deepseek';
 const faqIntro =
-  'This FAQ explains how the DeepSeek AI Watermark Detector on gptcleanuptools.com operates, what kinds of text characteristics it inspects, and how its findings should be interpreted. The detector functions as an independent, text-only analysis tool and does not connect to or interact with DeepSeek AI systems.';
+  'This FAQ explains how the DeepSeek AI Watermark Detector on AI Text Cleanup Tools operates, what kinds of text characteristics it inspects, and how its findings should be interpreted. The detector functions as an independent, text-only analysis tool and does not connect to or interact with DeepSeek AI systems.';
 
 
 const faqs: FaqItem[] = [

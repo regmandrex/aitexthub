@@ -6,7 +6,7 @@ import AdSenseSlot from '../../../components/ads/AdSenseSlot';
 import type { Metadata } from 'next';
 
 const urlPath = '/blog/ai-content-cleaning-vs-traditional-text-sanitization-for-seo';
-const title = 'AI Content Cleaning vs Traditional Text Sanitization for SEO (What Works in 2026) | GPTCLEANUP AI';
+const title = 'AI Content Cleaning vs Traditional Text Sanitization for SEO (What Works in 2026) | AI Text Cleanup Tools';
 const headline = 'AI Content Cleaning vs Traditional Text Sanitization for SEO (What Actually Works in 2026)';
 const description =
   'Traditional sanitization removes unsafe HTML. AI content cleaning removes invisible Unicode, normalizes whitespace, reduces DOM bloat, and improves Core Web Vitals for SEO.';

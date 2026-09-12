@@ -21,7 +21,7 @@ type BlogPostingInput = {
 
 const publisher = {
   '@type': 'Organization',
-  name: 'GPT CLEAN UP',
+  name: 'AI Text Cleanup Tools',
   url: siteUrl,
 } as const;
 

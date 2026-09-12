@@ -16,16 +16,10 @@ import { getToolBySlug } from '@/lib/tools/registry';
 
 const toolSlug = 'paragraph-space-remover';
 
-function RailAd({ side }: { side: 'left' | 'right' }) {
-  const sideClass = side === 'left' ? 'left-4' : 'right-4';
-  return (
-    <div className={`hidden lg:block fixed top-[220px] ${sideClass} z-20`}>
-      <div className="w-[180px] min-h-[260px]">
-        <AdSenseSlot className="w-full" />
-      </div>
-    </div>
-  );
+function RailAd(_props: { side: 'left' | 'right' }) {
+  return null;
 }
+
 
 const faqs: FaqItem[] = [
   {
@@ -154,7 +148,7 @@ const article = (
   <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10"><div className="prose prose-slate max-w-none">
     <h2>Paragraph Space Remover — Fix Extra Space Between Paragraphs Online Free</h2>
     <p>A <strong>paragraph space remover</strong> solves one of the most common formatting problems that content creators, writers, and developers face when working with AI-generated content, PDF exports, and copy-pasted text: excessive blank lines between paragraphs. When you paste text from ChatGPT, Claude, Google Docs, or a PDF, the paragraph spacing from the source document often translates into two, three, or more blank lines between every paragraph in the pasted result. A <strong>paragraph space remover</strong> collapses all of that excessive spacing to a clean, consistent single blank line between paragraphs while preserving your document structure.</p>
-    <p>GPTCLEANUP AI is a free <strong>paragraph space remover</strong> that runs in your browser with no account required. Paste your text with uneven paragraph spacing, click Clean Text, and copy the clean, evenly-spaced result in seconds. Use it to remove space between paragraphs from AI output, Word documents, PDF exports, Google Docs copies, and any other source with excessive paragraph spacing.</p>
+    <p>AI Text Cleanup Tools is a free <strong>paragraph space remover</strong> that runs in your browser with no account required. Paste your text with uneven paragraph spacing, click Clean Text, and copy the clean, evenly-spaced result in seconds. Use it to remove space between paragraphs from AI output, Word documents, PDF exports, Google Docs copies, and any other source with excessive paragraph spacing.</p>
 
     <h2>Why Extra Space Between Paragraphs Appears</h2>
     <p>The extra space between paragraphs that requires a paragraph space remover comes from several sources, and understanding them helps you know when to use the tool.</p>
@@ -224,7 +218,7 @@ const article = (
     <p>If your paragraphs are merging together after using the tool, the source text may have used blank lines as paragraph separators and single line breaks within what should be separate paragraphs. The paragraph space remover preserves single blank lines — so if your paragraphs were separated by single blank lines originally, they remain separated. If the source had no blank lines at all between paragraphs (using indentation or other visual cues instead), adding blank line paragraph separation may require manual editing after the spacing normalization pass.</p>
 
     <h2>Free Paragraph Space Remover — No Account, No Limits</h2>
-    <p>GPTCLEANUP AI is a free <strong>paragraph space remover</strong> with no account required, no character limits, and no subscription. All processing happens in your browser — your text is never uploaded, stored, or logged. Whether you are fixing paragraph spacing in a single-paragraph AI response or a 10,000-word document, the tool handles it instantly and completely free. Paste your text, click Clean Text, copy the clean result with normalized paragraph spacing. Bookmark this page as your standard first step for any text with excessive blank lines between paragraphs.</p>
+    <p>AI Text Cleanup Tools is a free <strong>paragraph space remover</strong> with no account required, no character limits, and no subscription. All processing happens in your browser — your text is never uploaded, stored, or logged. Whether you are fixing paragraph spacing in a single-paragraph AI response or a 10,000-word document, the tool handles it instantly and completely free. Paste your text, click Clean Text, copy the clean result with normalized paragraph spacing. Bookmark this page as your standard first step for any text with excessive blank lines between paragraphs.</p>
   </div>
   </section>
 );

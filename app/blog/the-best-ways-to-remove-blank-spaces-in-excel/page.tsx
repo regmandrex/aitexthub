@@ -7,7 +7,7 @@ import type { Metadata } from 'next';
 
 const urlPath = '/blog/the-best-ways-to-remove-blank-spaces-in-excel';
 const title =
-  'The Best Ways to Remove Blank Spaces in Excel | GPTCLEANUP AI';
+  'The Best Ways to Remove Blank Spaces in Excel | AI Text Cleanup Tools';
 const headline =
   'The Best Ways to Remove Blank Spaces in Excel (TRIM, SUBSTITUTE & Filtering)';
 const description =

@@ -6,8 +6,6 @@ import { Inter } from 'next/font/google';
 import Header from '../components/Header';
 import { JsonLd } from '../components/JsonLd';
 import { BreadcrumbJsonLdAndLang } from '../components/BreadcrumbJsonLdAndLang';
-import StickyFooterAd from '../components/ads/StickyFooterAd';
-import AdBlockNotice from '../components/ads/AdBlockNotice';
 import DeferredThirdPartyScripts from '../components/DeferredThirdPartyScripts';
 import GoogleAds from '../components/GoogleAds';
 import { webSiteSchema, siteNavigationSchema, organizationSchema } from '../lib/schema/site';
@@ -25,10 +23,10 @@ const inter = Inter({
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
-    metadataBase: new URL('https://gptcleanuptools.com'),
+    metadataBase: new URL('https://aitextcleanuptools.com'),
     title: {
-      default: 'GPT Clean Up Tools - Free AI Text Cleanup Utilities',
-      template: '%s | GPTCLEANUP AI',
+      default: 'AI Text Cleanup Tools - Free AI Text Utilities',
+      template: '%s | AI Text Cleanup Tools',
     },
     description: 'Free AI text cleanup tools - remove hidden Unicode, fix spacing, clean ChatGPT output, and normalize text for publishing.',
     keywords: [
@@ -39,14 +37,14 @@ export async function generateMetadata(): Promise<Metadata> {
       'clean chatgpt text',
       'chat gpt cleaner',
       'chatgpt clean',
-      'gpt clean up',
+      'AI text clean up',
       'gpt cleaner',
-      'gpt cleanup',
+      'AI text cleanup',
       'gpt text cleaner',
       'clean gpt',
       'gpt space remover',
       'gpt clean',
-      'gptcleanup',
+      'AI Text Cleaner',
       'remove gpt spaces',
       'remove chatgpt formatting',
       'chatgpt format remover',
@@ -64,15 +62,15 @@ export async function generateMetadata(): Promise<Metadata> {
       'get rid of ai spacing',
     ],
     openGraph: {
-      title: 'GPT Clean Up Tools - Free AI Text Cleanup Utilities',
+      title: 'AI Text Cleanup Tools - Free AI Text Utilities',
       description: 'Free AI text cleanup tools - remove hidden Unicode, fix spacing, clean ChatGPT output, and normalize text for publishing.',
-      url: 'https://gptcleanuptools.com',
-      siteName: 'GPTCLEANUP AI',
+      url: 'https://aitextcleanuptools.com',
+      siteName: 'AI Text Cleanup Tools',
       type: 'website',
     },
     twitter: {
       card: 'summary_large_image',
-      title: 'GPT Clean Up Tools - Free AI Text Cleanup Utilities',
+      title: 'AI Text Cleanup Tools - Free AI Text Utilities',
       description: 'Free AI text cleanup tools - remove hidden Unicode, fix spacing, clean ChatGPT output, and normalize text for publishing.',
     },
   };
@@ -100,9 +98,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <head>
         <link rel="preconnect" href="https://pagead2.googlesyndication.com" />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
-        <link rel="alternate" type="application/rss+xml" title="GPTCLEANUP AI Blog & Tools RSS Feed" href="https://gptcleanuptools.com/rss.xml" />
+        <link rel="alternate" type="application/rss+xml" title="AI Text Cleanup Tools Blog & Tools RSS Feed" href="https://aitextcleanuptools.com/rss.xml" />
       </head>
-      <body className={`${inter.variable} bg-slate-50 text-slate-900 antialiased pb-[80px] md:pb-[120px] lg:pb-[140px]`}>
+      <body className={`${inter.variable} bg-slate-50 text-slate-900 antialiased`}>
         <Script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8764610479002120"
@@ -117,9 +115,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <Header />
         <main className="min-h-screen">{children}</main>
         <Footer />
-        <StickyFooterAd />
         <GoogleAds />
-        <AdBlockNotice />
       </body>
     </html>
   );

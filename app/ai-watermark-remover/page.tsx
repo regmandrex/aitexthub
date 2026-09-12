@@ -10,17 +10,10 @@ import { RelatedTools } from '../../components/tool/RelatedTools';
 import AdSenseSlot from '../../components/ads/AdSenseSlot';
 import BelowToolAd from '../../components/ads/BelowToolAd';
 
-function RailAd({ side }: { side: 'left' | 'right' }) {
-  const sideClass = side === 'left' ? 'left-4' : 'right-4';
-
-  return (
-    <div className={`hidden lg:block fixed top-[220px] ${sideClass} z-20`}>
-      <div className="w-[180px] min-h-[260px]">
-        <AdSenseSlot className="w-full" />
-      </div>
-    </div>
-  );
+function RailAd(_props: { side: 'left' | 'right' }) {
+  return null;
 }
+
 
 
 const faqs: FaqItem[] = [
@@ -34,7 +27,7 @@ const faqs: FaqItem[] = [
     category: 'AI Watermark Remover FAQs',
     question: 'Is AI Watermark Remover affiliated with OpenAI or any model provider?',
     answer:
-      'No. GPT Clean Up Tools is a tool hub and does not provide AI models. AI Watermark Remover is not affiliated with OpenAI, ChatGPT, Gemini, Claude, or any other provider. It operates independently as a text cleanup utility and only processes text that you provide.',
+      'No. AI Text Cleanup Tools is a tool hub and does not provide AI models. AI Watermark Remover is not affiliated with OpenAI, ChatGPT, Gemini, Claude, or any other provider. It operates independently as a text cleanup utility and only processes text that you provide.',
   },
   {
     category: 'AI Watermark Remover FAQs',
@@ -154,7 +147,7 @@ const faqs: FaqItem[] = [
     category: 'AI Watermark Remover FAQs',
     question: 'Is AI Watermark Remover free to use, and do I need an account?',
     answer:
-      'Yes. The tool is available for free on gptcleanuptools.com and does not require an account. You can use it directly in your browser without registration.',
+      'Yes. The tool is available for free on AI Text Cleanup Tools and does not require an account. You can use it directly in your browser without registration.',
   },
   {
     category: 'AI Watermark Remover FAQs',
@@ -172,7 +165,7 @@ const faqs: FaqItem[] = [
     category: 'AI Watermark Remover FAQs',
     question: 'Will AI Watermark Remover help my text pass Turnitin, GPTZero, or Originality.ai?',
     answer:
-      'AI Watermark Remover targets the formatting layer that detection platforms like Turnitin, GPTZero, Originality.ai, Copyleaks, Winston AI, and Sapling can use as a surface signal, but it does not modify the underlying language patterns those tools score against. Hidden Unicode characters, zero-width spaces, and unusual spacing runs are easy fingerprints for any classifier to flag because they survive copy and paste from AI chat interfaces. Removing them with this tool eliminates one technical detection vector and produces text that behaves predictably in editors, forms, and CMS templates. However, the deeper layer these detectors evaluate is statistical: token-level perplexity, burstiness, sentence length variance, and vocabulary distribution. Formatting cleanup does not change any of that, so a draft can still be flagged as AI-generated even after every invisible character is stripped. If your goal is to address the statistical layer that Turnitin, GPTZero, and Originality.ai weight most heavily, you would need to rewrite the text with the GPTCleanup Pro humanizer, which targets perplexity and burstiness directly. Treat this remover as the first step in a clean text workflow, not as a detection bypass.',
+      'AI Watermark Remover targets the formatting layer that detection platforms like Turnitin, GPTZero, Originality.ai, Copyleaks, Winston AI, and Sapling can use as a surface signal, but it does not modify the underlying language patterns those tools score against. Hidden Unicode characters, zero-width spaces, and unusual spacing runs are easy fingerprints for any classifier to flag because they survive copy and paste from AI chat interfaces. Removing them with this tool eliminates one technical detection vector and produces text that behaves predictably in editors, forms, and CMS templates. However, the deeper layer these detectors evaluate is statistical: token-level perplexity, burstiness, sentence length variance, and vocabulary distribution. Formatting cleanup does not change any of that, so a draft can still be flagged as AI-generated even after every invisible character is stripped. If your goal is to address the statistical layer that Turnitin, GPTZero, and Originality.ai weight most heavily, you would need to rewrite the text with the AI Text Cleanup Tools Pro humanizer, which targets perplexity and burstiness directly. Treat this remover as the first step in a clean text workflow, not as a detection bypass.',
   },
   {
     category: 'AI Watermark Remover FAQs',
@@ -188,7 +181,7 @@ const article = (
       <h2>AI Watermark Remover: Formatting Cleanup for Clear, Responsible Text</h2>
       <p>
         The phrase AI watermark remover is used by many people who want their text to look clean and predictable after copying it from AI tools
-        or other sources. On gptcleanuptools.com, this tool focuses on formatting cleanup and Unicode normalization, not on detection bypass or
+        or other sources. On AI Text Cleanup Tools, this tool focuses on formatting cleanup and Unicode normalization, not on detection bypass or
         authorship claims. It removes hidden characters, stabilizes spacing, and keeps paragraphs intact so the text is easier to edit and
         publish.
       </p>

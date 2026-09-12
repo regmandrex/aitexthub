@@ -31,7 +31,7 @@ function UnsubscribeInner() {
       {status === 'working' && <p className="mt-4 text-slate-600">Updating your preferences…</p>}
       {status === 'done' && (
         <p className="mt-4 text-slate-700">
-          You&rsquo;ve been unsubscribed from GPT Cleanup Tools promotional emails
+          You&rsquo;ve been unsubscribed from AI Text Cleanup Tools promotional emails
           {email ? <> (<strong>{email}</strong>)</> : null}. You&rsquo;ll still receive
           essential account emails like password resets.
         </p>
@@ -39,8 +39,8 @@ function UnsubscribeInner() {
       {status === 'error' && (
         <p className="mt-4 text-slate-700">
           We couldn&rsquo;t process that automatically. Please email{' '}
-          <a className="text-brand-700 underline" href="mailto:support@gptcleanuptools.com">
-            support@gptcleanuptools.com
+          <a className="text-brand-700 underline" href="mailto:support@aitextcleanuptools.com">
+            support@aitextcleanuptools.com
           </a>{' '}
           and we&rsquo;ll remove you right away.
         </p>

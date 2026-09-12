@@ -6,7 +6,7 @@ import AdSenseSlot from '../../../components/ads/AdSenseSlot';
 import type { Metadata } from 'next';
 
 const urlPath = '/blog/best-tools-to-clean-chatgpt-text-before-publishing';
-const title = 'Best Tools to Clean ChatGPT Text Before Publishing (SEO & Performance) | GPTCLEANUP AI';
+const title = 'Best Tools to Clean ChatGPT Text Before Publishing (SEO & Performance) | AI Text Cleanup Tools';
 const headline = 'Best Tools to Clean ChatGPT Text Before Publishing (Accuracy, SEO & Performance Compared)';
 const description =
   'What matters in an AI text cleaner: invisible Unicode removal, whitespace normalization, CMS-friendly output, and performance-aware structure.';

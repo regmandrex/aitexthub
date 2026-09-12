@@ -7,7 +7,7 @@ import type { Metadata } from 'next';
 
 const urlPath = '/blog/how-to-quickly-fix-unwanted-spaces-in-word-documents';
 const title =
-  'How to Quickly Fix Unwanted Spaces in Word Documents | GPTCLEANUP AI';
+  'How to Quickly Fix Unwanted Spaces in Word Documents | AI Text Cleanup Tools';
 const headline =
   'How to Quickly Fix Unwanted Spaces in Word Documents (Built-in Tools & Shortcuts)';
 const description =

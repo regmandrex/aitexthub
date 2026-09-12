@@ -3,8 +3,8 @@ import { buildMeta } from '@/lib/seo-meta';
 
 export async function generateMetadata() {
   return buildMeta({
-    title: 'Contact Us - GPT Clean Up Tools',
-    description: 'Get in touch with GPT Clean Up Tools. We\'re here to help with questions, feedback, or support.',
+    title: 'Contact Us - AI Text Cleanup Tools',
+    description: 'Get in touch with AI Text Cleanup Tools. We\'re here to help with questions, feedback, or support.',
     urlPath: '/contact',
   });
 }
@@ -24,8 +24,8 @@ export default async function ContactPage() {
           <h2 className="text-2xl font-semibold text-slate-900">How to Reach Us</h2>
           <div className="mt-5 rounded-2xl border border-slate-100 bg-slate-50 p-6 text-lg font-semibold text-slate-900">
             <p>Email:</p>
-            <a href="mailto:support@gptcleanuptools.com" className="text-brand-700 hover:underline">
-              support@gptcleanuptools.com
+            <a href="mailto:support@aitextcleanuptools.com" className="text-brand-700 hover:underline">
+              support@aitextcleanuptools.com
             </a>
           </div>
         </section>

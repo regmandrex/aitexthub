@@ -6,7 +6,7 @@ import AdSenseSlot from '../../../components/ads/AdSenseSlot';
 import type { Metadata } from 'next';
 
 const urlPath = '/blog/does-chatgpt-watermark-text';
-const title = 'Does ChatGPT Watermark Text? Here\'s What Actually Happens in 2026 | GPTCLEANUP AI';
+const title = 'Does ChatGPT Watermark Text? Here\'s What Actually Happens in 2026 | AI Text Cleanup Tools';
 const headline = 'Does ChatGPT Watermark Text? Here\'s What Actually Happens in 2026';
 const description =
   'Does ChatGPT watermark text? Evidence shows AI-generated text carries hidden signals despite denials. Learn what\'s really embedded and how to detect and remove it.';

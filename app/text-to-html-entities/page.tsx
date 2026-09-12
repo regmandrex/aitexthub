@@ -196,7 +196,7 @@ const writeUp = (
         text instead of markup. When you encode text into HTML entities, you preserve the content while preventing it from being parsed as HTML.
       </p>
       <p>
-        The Text to HTML Entities Converter on gptcleanuptools.com does that conversion instantly. It works entirely in your browser, with no data
+        The Text to HTML Entities Converter on AI Text Cleanup Tools does that conversion instantly. It works entirely in your browser, with no data
         storage or server calls. Use it to prepare text for templates, CMS fields, email HTML, and any place where raw text must be embedded in
         markup safely. The tool keeps output consistent and easy to copy.
       </p>

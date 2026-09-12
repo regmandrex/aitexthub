@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 
-const BASE_URL = 'https://gptcleanuptools.com';
+const BASE_URL = 'https://aitextcleanuptools.com';
 
 type MetaInput = {
   title: string;
@@ -21,7 +21,7 @@ export function buildMeta({ title, description, urlPath }: MetaInput): Metadata 
       title,
       description,
       url,
-      siteName: 'GPTCLEANUP AI',
+      siteName: 'AI Text Cleanup Tools',
       type: 'website',
     },
     twitter: {

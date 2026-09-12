@@ -6,7 +6,7 @@ import AdSenseSlot from '../../../components/ads/AdSenseSlot';
 import type { Metadata } from 'next';
 
 const urlPath = '/blog/how-to-humanize-ai-text';
-const title = 'How to Humanize AI Text: The Complete Guide to Making AI Content Read Naturally | GPTCLEANUP AI';
+const title = 'How to Humanize AI Text: The Complete Guide to Making AI Content Read Naturally | AI Text Cleanup Tools';
 const headline = 'How to Humanize AI Text: The Complete Guide (2026)';
 const description =
   'Learn how to humanize AI text effectively. Complete guide covering cleaning invisible Unicode first, then applying targeted rewriting techniques that improve naturalness without harming SEO.';

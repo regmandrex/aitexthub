@@ -10,17 +10,10 @@ import { RelatedTools } from '../../components/tool/RelatedTools';
 import AdSenseSlot from '../../components/ads/AdSenseSlot';
 import BelowToolAd from '../../components/ads/BelowToolAd';
 
-function RailAd({ side }: { side: 'left' | 'right' }) {
-  const sideClass = side === 'left' ? 'left-4' : 'right-4';
-
-  return (
-    <div className={`hidden lg:block fixed top-[220px] ${sideClass} z-20`}>
-      <div className="w-[180px] min-h-[260px]">
-        <AdSenseSlot className="w-full" />
-      </div>
-    </div>
-  );
+function RailAd(_props: { side: 'left' | 'right' }) {
+  return null;
 }
+
 
 
 export async function generateMetadata() {
@@ -302,7 +295,7 @@ export default async function LLAMAWatermarkCleanerPage() {
           <p>
             This is why demand for a LLaMA (Meta AI) watermark cleaner for text has grown rapidly. Writers don't want to erase ideas-they want to
             refine AI-assisted drafts into something that reads naturally, performs well in search engines, and aligns with real human writing
-            patterns. Tools like GPTCleanUpTools.com exist specifically to solve this problem at a structural level.
+            patterns. Tools like AI Text Cleanup Tools exist specifically to solve this problem at a structural level.
           </p>
 
           <h3 className="text-xl font-semibold text-slate-900">What Is a LLaMA Text Watermark?</h3>
@@ -393,9 +386,9 @@ export default async function LLAMAWatermarkCleanerPage() {
           </ul>
           <p>They change words, not behavior. AI detectors don't care about synonyms-they analyze structure. Without restructuring, the watermark survives.</p>
 
-          <h3 className="text-xl font-semibold text-slate-900">GPTCleanUpTools.com as a LLaMA Watermark Cleaner</h3>
+          <h3 className="text-xl font-semibold text-slate-900">AI Text Cleanup Tools as a LLaMA Watermark Cleaner</h3>
           <p>
-            GPTCleanUpTools.com is built specifically to clean AI-generated text-including LLaMA (Meta AI) output-by targeting detection-level
+            AI Text Cleanup Tools is built specifically to clean AI-generated text-including LLaMA (Meta AI) output-by targeting detection-level
             language patterns.
           </p>
           <h4 className="text-lg font-semibold text-slate-900">Key Features Designed for LLaMA Output</h4>
@@ -407,11 +400,11 @@ export default async function LLAMAWatermarkCleanerPage() {
             <li>Natural paragraph variation</li>
           </ul>
           <p>The goal is realism, not robotic rewriting.</p>
-          <h4 className="text-lg font-semibold text-slate-900">How GPTCleanUpTools.com Differs from Generic Rewriters</h4>
-          <p>Generic tools rewrite sentences. GPTCleanUpTools.com rewrites how the text behaves linguistically.</p>
+          <h4 className="text-lg font-semibold text-slate-900">How AI Text Cleanup Tools Differs from Generic Rewriters</h4>
+          <p>Generic tools rewrite sentences. AI Text Cleanup Tools rewrites how the text behaves linguistically.</p>
           <p>That distinction is why detection scores drop and readability improves.</p>
 
-          <h3 className="text-xl font-semibold text-slate-900">Step-by-Step: Cleaning LLaMA Text Using GPTCleanUpTools.com</h3>
+          <h3 className="text-xl font-semibold text-slate-900">Step-by-Step: Cleaning LLaMA Text Using AI Text Cleanup Tools</h3>
           <ol className="list-decimal list-inside space-y-1 text-slate-700">
             <li>Paste LLaMA-generated text into the tool</li>
             <li>Select humanization intensity</li>
@@ -462,13 +455,13 @@ export default async function LLAMAWatermarkCleanerPage() {
             <li>Harder to detect visually</li>
           </ul>
           <p>
-            At the same time, tools like GPTCleanUpTools.com will continue evolving to maintain balance between usability and responsibility.
+            At the same time, tools like AI Text Cleanup Tools will continue evolving to maintain balance between usability and responsibility.
           </p>
 
           <h3 className="text-xl font-semibold text-slate-900">Conclusion</h3>
           <p>
             LLaMA (Meta AI) text watermarks are invisible but powerful. Removing them properly requires more than rewording-it requires
-            restructuring language at a human level. A dedicated LLaMA watermark cleaner for text, such as GPTCleanUpTools.com, allows writers to
+            restructuring language at a human level. A dedicated LLaMA watermark cleaner for text, such as AI Text Cleanup Tools, allows writers to
             transform AI-assisted drafts into content that reads naturally, performs well in SEO, and aligns with real-world writing expectations.
           </p>
           <p>Clean text isn't about hiding AI. It's about making AI-assisted writing usable, readable, and human.</p>
@@ -477,7 +470,7 @@ export default async function LLAMAWatermarkCleanerPage() {
         <div className="mt-10 space-y-3">
           <h2 className="text-2xl font-semibold text-slate-900">LLAMA Watermark Cleaner - Frequently Asked Questions</h2>
           <p className="text-slate-700">
-            Welcome to the comprehensive FAQ section for the LLAMA Watermark Cleaner, developed and hosted by GPTCleanUpTools.com. This section is
+            Welcome to the comprehensive FAQ section for the LLAMA Watermark Cleaner, developed and hosted by AI Text Cleanup Tools. This section is
             designed to provide clear, accurate, and policy-safe answers about LLAMA watermarking, AI-generated text cleanup, and the
             legitimate uses of text normalization tools.
           </p>

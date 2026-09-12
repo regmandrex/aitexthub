@@ -10,17 +10,10 @@ import { RelatedTools } from '../../components/tool/RelatedTools';
 import AdSenseSlot from '../../components/ads/AdSenseSlot';
 import BelowToolAd from '../../components/ads/BelowToolAd';
 
-function RailAd({ side }: { side: 'left' | 'right' }) {
-  const sideClass = side === 'left' ? 'left-4' : 'right-4';
-
-  return (
-    <div className={`hidden lg:block fixed top-[220px] ${sideClass} z-20`}>
-      <div className="w-[180px] min-h-[260px]">
-        <AdSenseSlot className="w-full" />
-      </div>
-    </div>
-  );
+function RailAd(_props: { side: 'left' | 'right' }) {
+  return null;
 }
+
 
 
 export async function generateMetadata() {
@@ -204,7 +197,7 @@ const faqs: FaqItem[] = [
     category: "Usage & Publishing",
     question: "Will Claude Watermark Cleaner help my text pass Turnitin, GPTZero, or Originality.ai?",
     answer:
-      "Claude Watermark Cleaner addresses the formatting layer that detection platforms like Turnitin, GPTZero, Originality.ai, Copyleaks, Winston AI, and Sapling can include as one of their surface signals, but it does not modify the deeper statistical patterns those classifiers score against. Hidden Unicode characters, zero-width spaces, and unusual spacing runs are easy fingerprints for any detector to flag because they survive copy and paste from a chat interface, and removing them eliminates one technical detection vector. However, Turnitin, GPTZero, and Originality.ai primarily weight token-level perplexity, burstiness, sentence length variance, and vocabulary distribution, none of which change when you normalize formatting. A draft can still be flagged as AI-generated even after every invisible character is stripped, especially since Claude output tends to be unusually consistent across the exact axes these tools measure. If your goal is to address the statistical layer that Turnitin, GPTZero, Copyleaks, and Winston AI weight most heavily, you would need to rewrite the text with the GPTCleanup Pro humanizer, which targets perplexity and burstiness directly. Treat this cleaner as the first step in a clean text workflow, not as a detection bypass.",
+      "Claude Watermark Cleaner addresses the formatting layer that detection platforms like Turnitin, GPTZero, Originality.ai, Copyleaks, Winston AI, and Sapling can include as one of their surface signals, but it does not modify the deeper statistical patterns those classifiers score against. Hidden Unicode characters, zero-width spaces, and unusual spacing runs are easy fingerprints for any detector to flag because they survive copy and paste from a chat interface, and removing them eliminates one technical detection vector. However, Turnitin, GPTZero, and Originality.ai primarily weight token-level perplexity, burstiness, sentence length variance, and vocabulary distribution, none of which change when you normalize formatting. A draft can still be flagged as AI-generated even after every invisible character is stripped, especially since Claude output tends to be unusually consistent across the exact axes these tools measure. If your goal is to address the statistical layer that Turnitin, GPTZero, Copyleaks, and Winston AI weight most heavily, you would need to rewrite the text with the AI Text Cleanup Tools Pro humanizer, which targets perplexity and burstiness directly. Treat this cleaner as the first step in a clean text workflow, not as a detection bypass.",
   },
   {
     category: "Usage & Publishing",
@@ -281,7 +274,7 @@ export default async function ClaudeWatermarkCleanerPage() {
           <p>
             Claude doesn't use visible watermarks. There's no label, no disclaimer, no tag. Instead, the watermark lives inside sentence structure,
             pacing, predictability, and probability distributions. This is why basic rewriting tools fail and why purpose-built solutions like
-            GPTCleanUpTools.com are increasingly necessary.
+            AI Text Cleanup Tools are increasingly necessary.
           </p>
           <p>
             This guide focuses entirely on text-based Claude watermark cleaning, how it works, why it's difficult, and how to do it responsibly
@@ -390,9 +383,9 @@ export default async function ClaudeWatermarkCleanerPage() {
             behavior.
           </p>
 
-          <h3 className="text-xl font-semibold text-slate-900">GPTCleanUpTools.com as a Claude Watermark Cleaner</h3>
+          <h3 className="text-xl font-semibold text-slate-900">AI Text Cleanup Tools as a Claude Watermark Cleaner</h3>
           <p>
-            GPTCleanUpTools.com is designed specifically to clean AI-generated text-including Claude output-by targeting detection-level patterns,
+            AI Text Cleanup Tools is designed specifically to clean AI-generated text-including Claude output-by targeting detection-level patterns,
             not surface wording.
           </p>
           <h4 className="text-lg font-semibold text-slate-900">Key Features for Claude Text Cleanup</h4>
@@ -404,11 +397,11 @@ export default async function ClaudeWatermarkCleanerPage() {
             <li>Natural paragraph restructuring</li>
           </ul>
           <p>The tool focuses on realism, not speed.</p>
-          <h4 className="text-lg font-semibold text-slate-900">Why GPTCleanUpTools.com Works Better Than Paraphrasers</h4>
-          <p>Paraphrasers rewrite sentences. GPTCleanUpTools.com rewrites how the text behaves.</p>
+          <h4 className="text-lg font-semibold text-slate-900">Why AI Text Cleanup Tools Works Better Than Paraphrasers</h4>
+          <p>Paraphrasers rewrite sentences. AI Text Cleanup Tools rewrites how the text behaves.</p>
           <p>That's the difference between still getting flagged and passing as genuinely human-written.</p>
 
-          <h3 className="text-xl font-semibold text-slate-900">Step-by-Step: Cleaning Claude Text Using GPTCleanUpTools.com</h3>
+          <h3 className="text-xl font-semibold text-slate-900">Step-by-Step: Cleaning Claude Text Using AI Text Cleanup Tools</h3>
           <ol className="list-decimal list-inside space-y-1 text-slate-700">
             <li>Paste Claude-generated text</li>
             <li>Choose desired humanization level</li>
@@ -459,14 +452,14 @@ export default async function ClaudeWatermarkCleanerPage() {
             <li>Harder to detect visually</li>
           </ul>
           <p>
-            At the same time, cleanup tools will grow more context-aware and linguistically intelligent. Tools like GPTCleanUpTools.com are already
+            At the same time, cleanup tools will grow more context-aware and linguistically intelligent. Tools like AI Text Cleanup Tools are already
             aligned with that future.
           </p>
 
           <h3 className="text-xl font-semibold text-slate-900">Conclusion</h3>
           <p>
             Claude text watermarks aren't visible, but they're powerful. Removing them properly requires more than rewording-it requires
-            restructuring language at a human level. A dedicated Claude watermark cleaner for text, especially one like GPTCleanUpTools.com, allows
+            restructuring language at a human level. A dedicated Claude watermark cleaner for text, especially one like AI Text Cleanup Tools, allows
             writers to use AI responsibly while producing content that feels real, readable, and usable in the modern digital landscape.
           </p>
         </section>
@@ -474,7 +467,7 @@ export default async function ClaudeWatermarkCleanerPage() {
         <div className="mt-10 space-y-3">
           <h2 className="text-2xl font-semibold text-slate-900">Claude Watermark Cleaner - Frequently Asked Questions</h2>
           <p className="text-slate-700">
-            Welcome to the comprehensive FAQ section for the Claude Watermark Cleaner, developed and hosted by GPTCleanUpTools.com. This section is
+            Welcome to the comprehensive FAQ section for the Claude Watermark Cleaner, developed and hosted by AI Text Cleanup Tools. This section is
             designed to provide clear, accurate, and policy-safe answers about Claude watermarking, AI-generated text cleanup, and the
             legitimate uses of text normalization tools.
           </p>

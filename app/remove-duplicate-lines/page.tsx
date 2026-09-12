@@ -195,7 +195,7 @@ const writeUp = (
       <h2>Remove Duplicate Lines in Text - Free Online Cleaner Tool</h2>
       <p>
         This guide explains how the Remove Duplicate Lines tool works, why line de-duplication matters in real workflows, and how to use the
-        output responsibly. The tool on gptcleanuptools.com processes only the text you provide. It does not generate content, rewrite sentences,
+        output responsibly. The tool on AI Text Cleanup Tools processes only the text you provide. It does not generate content, rewrite sentences,
         or connect to AI models. It simply removes repeated lines based on deterministic rules so the output is clean and predictable.
       </p>
 
@@ -636,7 +636,7 @@ const writeUp = (
 
       <h2>Final Summary and When to Use This Tool</h2>
       <p>
-        Remove Duplicate Lines on gptcleanuptools.com provides a fast way to de-duplicate lists and line based text. It keeps the first
+        Remove Duplicate Lines on AI Text Cleanup Tools provides a fast way to de-duplicate lists and line based text. It keeps the first
         occurrence of each unique line, preserves order, and offers options for trimming, case sensitivity, and empty line removal. The tool runs
         locally in your browser and does not modify meaning.
       </p>

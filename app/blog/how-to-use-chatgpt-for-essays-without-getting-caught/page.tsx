@@ -6,7 +6,7 @@ import AdSenseSlot from '../../../components/ads/AdSenseSlot';
 import type { Metadata } from 'next';
 
 const urlPath = '/blog/how-to-use-chatgpt-for-essays-without-getting-caught';
-const title = 'How To Use ChatGPT for Essays Without Getting Caught (2026 Guide) | GPTCLEANUP AI';
+const title = 'How To Use ChatGPT for Essays Without Getting Caught (2026 Guide) | AI Text Cleanup Tools';
 const headline = 'How To Use ChatGPT for Essays Without Getting Caught (2026 Guide)';
 const description =
   'A practical guide to using ChatGPT ethically in essay writing, understanding how detectors work, and ensuring your final submission is clean and genuinely yours.';

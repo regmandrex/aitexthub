@@ -1,5 +1,5 @@
 /**
- * Next.js configuration for GPT CLEAN UP.
+ * Next.js configuration for AI Text Cleanup Tools.
  */
 const nextConfig = {
   experimental: {
@@ -83,6 +83,11 @@ const nextConfig = {
       {
         source: '/all-tools',
         destination: '/ai-tools',
+        permanent: true,
+      },
+      {
+        source: '/blog/gpt-cleanup-vs-manual-editing',
+        destination: '/blog/ai-text-cleanup-vs-manual-editing',
         permanent: true,
       },
       {

@@ -240,12 +240,6 @@ const article = (
 export default function InvisibleTextCopyPastePage() {
   return (
     <div className="relative bg-[#f7f9ff]">
-      <div className="hidden lg:block fixed top-[220px] right-4 z-20">
-        <div className="w-[180px] min-h-[260px]">
-          <AdSenseSlot className="w-full" />
-        </div>
-      </div>
-
       <div className="mx-auto w-full max-w-4xl px-4 py-5 min-h-screen sm:py-8 md:py-10">
         <section className="space-y-2 text-center md:space-y-3">
           <h1 className="text-xl font-semibold text-slate-900 sm:text-2xl md:text-3xl">Blank Space Copy and Paste — Invisible Text Generator</h1>
@@ -313,9 +307,8 @@ export async function generateMetadata(): Promise<Metadata> {
       title: 'Blank Space Copy and Paste — Invisible Text Generator',
       description: 'Copy blank space and invisible text characters instantly — zero-width space, Hangul filler, non-breaking space. Free for Discord names, WhatsApp, Instagram, Fortnite.',
       url: `${siteUrl}/invisible-text-copy-paste`,
-      siteName: 'GPTCLEANUP AI',
+      siteName: 'AI Text Cleanup Tools',
       type: 'website',
     },
   };
 }
-

@@ -6,7 +6,7 @@ import AdSenseSlot from '../../../components/ads/AdSenseSlot';
 import type { Metadata } from 'next';
 
 const urlPath = '/blog/why-ai-watermarks-matter-and-how-to-clean-chatgpt-text-safely';
-const title = 'Why AI Watermarks Matter (and How to Clean ChatGPT Text Safely) | GPTCLEANUP AI';
+const title = 'Why AI Watermarks Matter (and How to Clean ChatGPT Text Safely) | AI Text Cleanup Tools';
 const headline = 'Why AI Watermarks Matter (and How to Clean ChatGPT Text Safely Without Hurting SEO)';
 const description =
   'Separate AI watermark myths from real technical risks: invisible Unicode, structural inefficiency, and performance issues—and how to clean safely without rewriting.';
@@ -208,7 +208,7 @@ export default function WhyAiWatermarksMatterPage() {
           After cleaning, you may improve tone, add expertise, insert examples, and adjust flow. That is editorial work, not watermark removal.
         </p>
         <p className="text-slate-700">
-          Related: <Link href="/blog/gpt-cleanup-vs-manual-editing">GPT Cleanup vs Manual Editing</Link>.
+          Related: <Link href="/blog/ai-text-cleanup-vs-manual-editing">AI Text Cleanup Tools vs Manual Editing</Link>.
         </p>
       </section>
 

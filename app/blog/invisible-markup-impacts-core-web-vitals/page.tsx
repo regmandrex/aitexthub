@@ -6,7 +6,7 @@ import AdSenseSlot from '../../../components/ads/AdSenseSlot';
 import type { Metadata } from 'next';
 
 const urlPath = '/blog/invisible-markup-impacts-core-web-vitals';
-const title = 'How Invisible Markup Impacts Core Web Vitals (And How to Fix It) | GPTCLEANUP AI';
+const title = 'How Invisible Markup Impacts Core Web Vitals (And How to Fix It) | AI Text Cleanup Tools';
 const headline = 'How Invisible Markup Impacts Core Web Vitals (And How to Fix It)';
 const description =
   'Invisible Unicode and malformed whitespace can inflate DOM complexity, cause layout shifts, and degrade LCP/CLS/INP. Learn how to detect and fix it.';

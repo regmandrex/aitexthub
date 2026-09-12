@@ -6,7 +6,7 @@ import AdSenseSlot from '../../../components/ads/AdSenseSlot';
 import type { Metadata } from 'next';
 
 const urlPath = '/blog/how-to-remove-chatgpt-watermarks-from-word-and-pages';
-const title = 'How to Remove ChatGPT Watermarks from Word and Pages Documents | GPTCLEANUP AI';
+const title = 'How to Remove ChatGPT Watermarks from Word and Pages Documents | AI Text Cleanup Tools';
 const headline = 'How to Remove ChatGPT Watermarks from Word and Pages Documents';
 const description =
   'Word and Pages documents are particularly susceptible to ChatGPT watermark artifacts. This guide covers the step-by-step workflow to clean AI artifacts from both applications.';
@@ -102,7 +102,7 @@ export default function HowToRemoveChatGptWatermarksFromWordAndPagesPage() {
           in a browser-based text cleaner before pasting &mdash; prevents the problem entirely.
         </p>
         <p className="text-slate-700">
-          This is the core philosophy behind the <Link href="/">GPT Cleanup Tools</Link> workflow: paste into the cleaner
+          This is the core philosophy behind the <Link href="/">AI Text Cleanup Tools</Link> workflow: paste into the cleaner
           first, get clean text back, then paste that into your document. The cleaner runs in your browser, processes the
           raw Unicode string, removes invisible characters, and gives you text that will paste cleanly into any application.
         </p>
@@ -110,7 +110,7 @@ export default function HowToRemoveChatGptWatermarksFromWordAndPagesPage() {
           <p className="font-semibold text-slate-900">Proactive workflow (before pasting)</p>
           <ol className="mt-2 list-decimal space-y-2 pl-5">
             <li>Copy text from ChatGPT.</li>
-            <li>Open <Link href="/">GPT Cleanup Tools</Link> in your browser.</li>
+            <li>Open <Link href="/">AI Text Cleanup Tools</Link> in your browser.</li>
             <li>Paste into the text cleaner input.</li>
             <li>Click clean to remove invisible characters and normalize formatting.</li>
             <li>Copy the clean output.</li>
@@ -137,7 +137,7 @@ export default function HowToRemoveChatGptWatermarksFromWordAndPagesPage() {
               <strong>Copy to clipboard.</strong> Ctrl+C / Cmd+C. This copies the text including any embedded characters.
             </li>
             <li>
-              <strong>Open GPT Cleanup Tools.</strong> Go to <Link href="/">gptcleanuptools.com</Link> in your browser.
+              <strong>Open AI Text Cleanup Tools.</strong> Go to <Link href="/">AI Text Cleanup Tools</Link> in your browser.
             </li>
             <li>
               <strong>Paste and clean.</strong> Paste the copied text into the cleaner and run the cleanup. This strips
@@ -208,7 +208,7 @@ export default function HowToRemoveChatGptWatermarksFromWordAndPagesPage() {
           <ol className="mt-2 list-decimal space-y-2 pl-5">
             <li>Export the Pages document as Plain Text (File &gt; Export To &gt; Plain Text).</li>
             <li>Open the exported .txt file and copy all content.</li>
-            <li>Paste into <Link href="/">GPT Cleanup Tools</Link> and clean.</li>
+            <li>Paste into <Link href="/">AI Text Cleanup Tools</Link> and clean.</li>
             <li>Copy the clean output.</li>
             <li>Create a new Pages document and paste as plain text.</li>
             <li>Reapply formatting using Pages&apos; native tools.</li>
@@ -237,7 +237,7 @@ export default function HowToRemoveChatGptWatermarksFromWordAndPagesPage() {
       <div className="mt-8 rounded-2xl border border-brand-100 bg-brand-50 p-4 text-sm text-brand-800">
         <p className="font-semibold">Clean before you paste &mdash; it is always faster than cleaning after.</p>
         <p>
-          Use the <Link href="/">GPT Cleanup Tools</Link> as your first step any time you copy from ChatGPT. For documents
+          Use the <Link href="/">AI Text Cleanup Tools</Link> as your first step any time you copy from ChatGPT. For documents
           that already have artifacts, the extraction-clean-repaste workflow works reliably. Target em dashes specifically
           with the <Link href="/em-dash-remover">Em Dash Remover</Link> if your document is going into environments that
           do not handle Unicode punctuation well.

@@ -199,7 +199,7 @@ const writeUp = (
       <h2>Introduction</h2>
       <p>
         This guide explains how Morse code works, how to encode and decode it reliably, and how to use spacing conventions to avoid ambiguity.
-        The Morse Code Translator on gptcleanuptools.com supports text to Morse and Morse to text translation. It handles letters, numbers, and
+        The Morse Code Translator on AI Text Cleanup Tools supports text to Morse and Morse to text translation. It handles letters, numbers, and
         common punctuation while keeping the output easy to copy and reuse. The tool runs in your browser and does not store your input.
       </p>
 

@@ -2,8 +2,8 @@ import { MetadataRoute } from 'next';
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'GPT Clean Up Tools',
-    short_name: 'GPTCleanup',
+    name: 'AI Text Cleanup Tools',
+    short_name: 'AI Cleanup Tools',
     description:
       'Free AI text cleanup tools - remove hidden Unicode, fix spacing, clean ChatGPT output, and normalize text for publishing.',
     start_url: '/',

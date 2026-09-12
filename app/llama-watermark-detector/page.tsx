@@ -5,7 +5,7 @@ import { buildMeta } from '@/lib/seo-meta';
 const modelName = 'LLAMA (Meta AI)';
 const modelSlug = 'llama';
 const faqIntro =
-  'This FAQ explains how the LLaMA (Meta AI) Watermark Detector on gptcleanuptools.com works, what kinds of text characteristics it inspects, and how to interpret results responsibly. The tool performs independent, text-only analysis and does not connect to or interact with Meta or LLaMA systems.';
+  'This FAQ explains how the LLaMA (Meta AI) Watermark Detector on AI Text Cleanup Tools works, what kinds of text characteristics it inspects, and how to interpret results responsibly. The tool performs independent, text-only analysis and does not connect to or interact with Meta or LLaMA systems.';
 
 
 const faqs: FaqItem[] = [

@@ -6,7 +6,7 @@ import AdSenseSlot from '../../../components/ads/AdSenseSlot';
 import type { Metadata } from 'next';
 
 const urlPath = '/blog/chatgpt-watermark-remover-mobile';
-const title = 'ChatGPT Watermark Remover on Mobile: What Actually Matters | GPTCLEANUP AI';
+const title = 'ChatGPT Watermark Remover on Mobile: What Actually Matters | AI Text Cleanup Tools';
 const headline = 'ChatGPT Watermark Remover on Mobile: What Actually Matters';
 const description =
   'What people really mean by ChatGPT watermarks, what you can safely clean on mobile, and how to use AI watermark remover tools without breaking policies.';

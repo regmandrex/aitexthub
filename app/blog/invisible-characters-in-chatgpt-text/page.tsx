@@ -6,7 +6,7 @@ import AdSenseSlot from '../../../components/ads/AdSenseSlot';
 import type { Metadata } from 'next';
 
 const urlPath = '/blog/invisible-characters-in-chatgpt-text';
-const title = 'Invisible Characters in ChatGPT Text: Why They Exist and How to Clean Them | GPTCLEANUP AI';
+const title = 'Invisible Characters in ChatGPT Text: Why They Exist and How to Clean Them | AI Text Cleanup Tools';
 const headline = 'Invisible Characters in ChatGPT Text: Why They Exist and How to Clean Them';
 const description =
   'A technical deep dive into every type of invisible character found in ChatGPT text: what each one is, why AI produces it, what it does, and how to remove it completely.';
@@ -259,7 +259,7 @@ export default function InvisibleCharactersInChatGptTextPage() {
               see what types of invisible characters are present and how many of each.
             </li>
             <li>
-              <strong>Remove comprehensively:</strong> Use the <Link href="/">GPT Cleanup Tools</Link> main cleaner or the
+              <strong>Remove comprehensively:</strong> Use the <Link href="/">AI Text Cleanup Tools</Link> main cleaner or the
               ChatGPT Watermark Remover for a complete pass targeting all invisible character types.
             </li>
             <li>
@@ -289,7 +289,7 @@ export default function InvisibleCharactersInChatGptTextPage() {
         <p className="text-slate-700">
           Cleaning invisible characters before any AI content goes into production is not paranoia &mdash; it is
           professional quality control. The <Link href="/invisible-character-detector">Invisible Character Detector</Link> makes
-          this check fast and complete, and the <Link href="/">GPT Cleanup Tools</Link> suite makes removal equally simple.
+          this check fast and complete, and the <Link href="/">AI Text Cleanup Tools</Link> suite makes removal equally simple.
         </p>
       </section>
 
@@ -298,7 +298,7 @@ export default function InvisibleCharactersInChatGptTextPage() {
         <p>
           Use the <Link href="/invisible-character-detector">Invisible Character Detector</Link> to see exactly what is in
           your text. For zero-width spaces specifically, the <Link href="/zero-width-space-remover">Zero-Width Space Remover</Link> is
-          the fastest tool. For all invisible character types at once, the <Link href="/">GPT Cleanup Tools</Link> main cleaner
+          the fastest tool. For all invisible character types at once, the <Link href="/">AI Text Cleanup Tools</Link> main cleaner
           handles everything in one pass.
         </p>
       </div>

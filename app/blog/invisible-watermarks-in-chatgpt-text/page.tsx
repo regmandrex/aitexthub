@@ -6,7 +6,7 @@ import AdSenseSlot from '../../../components/ads/AdSenseSlot';
 import type { Metadata } from 'next';
 
 const urlPath = '/blog/invisible-watermarks-in-chatgpt-text';
-const title = 'Invisible Watermarks in ChatGPT Text: How They Work and How To Find Them | GPTCLEANUP AI';
+const title = 'Invisible Watermarks in ChatGPT Text: How They Work and How To Find Them | AI Text Cleanup Tools';
 const headline = 'Invisible Watermarks in ChatGPT Text: How They Work and How To Find Them';
 const description =
   'Zero-width characters and other invisible Unicode exist in ChatGPT text. Here is what they are, why they appear, and how to find and remove them.';

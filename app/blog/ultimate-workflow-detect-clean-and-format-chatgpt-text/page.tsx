@@ -6,7 +6,7 @@ import AdSenseSlot from '../../../components/ads/AdSenseSlot';
 import type { Metadata } from 'next';
 
 const urlPath = '/blog/ultimate-workflow-detect-clean-and-format-chatgpt-text';
-const title = 'Ultimate Workflow: Detect, Clean, and Format ChatGPT Text (Draft to Publish-Ready) | GPTCLEANUP AI';
+const title = 'Ultimate Workflow: Detect, Clean, and Format ChatGPT Text (Draft to Publish-Ready) | AI Text Cleanup Tools';
 const headline = 'Ultimate Workflow: Detect, Clean, and Format ChatGPT Text (From Draft to Publish-Ready)';
 const description =
   'A 5-stage, repeatable workflow to detect hidden Unicode, clean AI text correctly, apply platform-native formatting, and publish SEO-safe content.';

@@ -6,7 +6,7 @@ import AdSenseSlot from '../../../components/ads/AdSenseSlot';
 import type { Metadata } from 'next';
 
 const urlPath = '/blog/is-ai-content-bad-for-seo';
-const title = 'Is AI Content Bad For SEO? What Google Actually Says (And What Nobody Tells You) | GPTCLEANUP AI';
+const title = 'Is AI Content Bad For SEO? What Google Actually Says (And What Nobody Tells You) | AI Text Cleanup Tools';
 const headline = 'Is AI Content Bad For SEO? What Google Actually Says (And What Nobody Tells You)';
 const description =
   'Google does not penalize AI content automatically. What actually matters is E-E-A-T, hidden character artifacts, and whether the content genuinely helps readers.';
@@ -327,7 +327,7 @@ export default function IsAiContentBadForSeoPage() {
           are present, and maintaining a consistent publishing strategy rooted in genuine reader value.
         </p>
         <p className="text-slate-700">
-          Start by cleaning your AI content properly. The <Link href="/">GPT Cleanup Tools</Link> suite handles invisible character
+          Start by cleaning your AI content properly. The <Link href="/">AI Text Cleanup Tools</Link> suite handles invisible character
           removal, text normalization, and formatting cleanup &mdash; the technical foundation of publishable AI content.
         </p>
       </section>
@@ -369,7 +369,7 @@ export default function IsAiContentBadForSeoPage() {
       <div className="mt-8 rounded-2xl border border-brand-100 bg-brand-50 p-4 text-sm text-brand-800">
         <p className="font-semibold">Start with clean text before you think about rankings.</p>
         <p>
-          Use the <Link href="/">GPT Cleanup Tools</Link> to strip invisible characters and normalize your AI content,
+          Use the <Link href="/">AI Text Cleanup Tools</Link> to strip invisible characters and normalize your AI content,
           then run it through the <Link href="/invisible-character-detector">Invisible Character Detector</Link> to confirm
           your text is clean before it goes live. Technical cleanliness is the foundation of SEO-safe AI content.
         </p>

@@ -218,7 +218,7 @@ export default function NavDrawer({ open, onClose }: NavDrawerProps) {
           >
             Already have an account? Log in
           </Link>
-          <p className="pt-2 text-center text-xs text-slate-400">GPT Cleanup Tools — Free AI Text Tools</p>
+          <p className="pt-2 text-center text-xs text-slate-400">AI Text Cleaner — Free AI Text Tools</p>
         </div>
       </aside>
     </>

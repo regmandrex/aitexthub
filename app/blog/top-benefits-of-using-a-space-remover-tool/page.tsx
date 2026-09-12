@@ -6,7 +6,7 @@ import AdSenseSlot from '../../../components/ads/AdSenseSlot';
 import type { Metadata } from 'next';
 
 const urlPath = '/blog/top-benefits-of-using-a-space-remover-tool';
-const title = 'Top Benefits of Using a Space Remover Tool | GPTCLEANUP AI';
+const title = 'Top Benefits of Using a Space Remover Tool | AI Text Cleanup Tools';
 const headline = 'Top Benefits of Using a Space Remover Tool (Save Time & Improve Quality)';
 const description =
   "Learn how space remover tools save time, prevent errors, and improve document quality for professionals and students.";

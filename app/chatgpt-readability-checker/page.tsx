@@ -21,142 +21,142 @@ const faqs: FaqItem[] = [
   {
     category: 'ChatGPT Readability Checker FAQs',
     question: 'What is the ChatGPT Readability Checker?',
-    answer: 'The ChatGPT Readability Checker is a free tool that analyzes how easy your text is to read. It evaluates sentence complexity, word difficulty, and overall accessibility, providing metrics and suggestions for improvement. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity. Combine the result with your own judgment and any institutional or organizational policies that apply.'
+    answer: 'The ChatGPT Readability Checker is a free tool that analyzes how easy your text is to read. It evaluates sentence complexity, word difficulty, and overall accessibility, providing metrics and suggestions for improvement. That keeps the result useful as a practical pre-check instead of a final judgment. Read the result together with your own review and any rules from your school, client, publication, or workplace.'
   },
   {
     category: 'ChatGPT Readability Checker FAQs',
     question: 'What readability metrics does the tool use?',
-    answer: 'The tool may use metrics like Flesch-Kincaid Grade Level, Flesch Reading Ease, and other established formulas. These calculate readability based on sentence length, word length, and syllable counts. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity. Combine the result with your own judgment and any institutional or organizational policies that apply.'
+    answer: 'The tool may use metrics like Flesch-Kincaid Grade Level, Flesch Reading Ease, and other established formulas. These calculate readability based on sentence length, word length, and syllable counts. That keeps the result useful as a practical pre-check instead of a final judgment. Read the result together with your own review and any rules from your school, client, publication, or workplace.'
   },
   {
     category: 'ChatGPT Readability Checker FAQs',
     question: 'Is the readability checker free?',
-    answer: 'Yes, this ChatGPT Readability Checker on GPT Clean Up Tools is completely free with no registration required. You can check readability without usage limits or subscription fees. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity. Combine the result with your own judgment and any institutional or organizational policies that apply.'
+    answer: 'Yes, this ChatGPT Readability Checker on AI Text Cleanup Tools is completely free with no registration required. You can check readability without usage limits or subscription fees. That keeps the result useful as a practical pre-check instead of a final judgment. Read the result together with your own review and any rules from your school, client, publication, or workplace.'
   },
   {
     category: 'ChatGPT Readability Checker FAQs',
     question: 'Is my text stored when using this tool?',
-    answer: 'No. The readability checker processes text locally in your browser without storing or transmitting content. Your text remains private throughout the analysis. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity. Combine the result with your own judgment and any institutional or organizational policies that apply.'
+    answer: 'No. The readability checker processes text locally in your browser without storing or transmitting content. Your text remains private throughout the analysis. That keeps the result useful as a practical pre-check instead of a final judgment. Read the result together with your own review and any rules from your school, client, publication, or workplace.'
   },
   {
     category: 'ChatGPT Readability Checker FAQs',
     question: 'What is a good readability score?',
-    answer: 'Target scores depend on your audience. General web content typically aims for 6th-8th grade level. Technical content for experts can be higher. The key is matching complexity to your audience\'s capabilities. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity. Combine the result with your own judgment and any institutional or organizational policies that apply.'
+    answer: 'Target scores depend on your audience. General web content typically aims for 6th-8th grade level. Technical content for experts can be higher. The key is matching complexity to your audience\'s capabilities. That keeps the result useful as a practical pre-check instead of a final judgment. Read the result together with your own review and any rules from your school, client, publication, or workplace.'
   },
   {
     category: 'ChatGPT Readability Checker FAQs',
     question: 'Why does readability matter?',
-    answer: 'Readable content reaches more people, communicates more effectively, and keeps readers engaged. Difficult text loses readers and fails to communicate, regardless of content quality. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity. Combine the result with your own judgment and any institutional or organizational policies that apply.'
+    answer: 'Readable content reaches more people, communicates more effectively, and keeps readers engaged. Difficult text loses readers and fails to communicate, regardless of content quality. That keeps the result useful as a practical pre-check instead of a final judgment. Read the result together with your own review and any rules from your school, client, publication, or workplace.'
   },
   {
     category: 'ChatGPT Readability Checker FAQs',
     question: 'How can I improve readability?',
-    answer: 'Use shorter sentences, simpler words, active voice, and clear structure. Break up long paragraphs. Avoid jargon unless your audience expects it. The tool provides specific suggestions. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity. Combine the result with your own judgment and any institutional or organizational policies that apply.'
+    answer: 'Use shorter sentences, simpler words, active voice, and clear structure. Break up long paragraphs. Avoid jargon unless your audience expects it. The tool provides specific suggestions. That keeps the result useful as a practical pre-check instead of a final judgment. Read the result together with your own review and any rules from your school, client, publication, or workplace.'
   },
   {
     category: 'ChatGPT Readability Checker FAQs',
     question: 'Does low readability mean bad writing?',
-    answer: 'Not necessarily. Technical content for experts may appropriately have lower readability scores. What matters is whether complexity matches audience capability and content needs. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity. Combine the result with your own judgment and any institutional or organizational policies that apply.'
+    answer: 'Not necessarily. Technical content for experts may appropriately have lower readability scores. What matters is whether complexity matches audience capability and content needs. That keeps the result useful as a practical pre-check instead of a final judgment. Read the result together with your own review and any rules from your school, client, publication, or workplace.'
   },
   {
     category: 'ChatGPT Readability Checker FAQs',
     question: 'Can readability be too simple?',
-    answer: 'For some audiences, overly simple writing may seem condescending or lack necessary precision. Match complexity to audience expectations and content requirements. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity. Combine the result with your own judgment and any institutional or organizational policies that apply.'
+    answer: 'For some audiences, overly simple writing may seem condescending or lack necessary precision. Match complexity to audience expectations and content requirements. That keeps the result useful as a practical pre-check instead of a final judgment. Read the result together with your own review and any rules from your school, client, publication, or workplace.'
   },
   {
     category: 'ChatGPT Readability Checker FAQs',
     question: 'Does the tool work with non-English text?',
-    answer: 'Readability metrics are calibrated for English. Other languages may produce unreliable results. Use English-specific analysis for English content. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity. Combine the result with your own judgment and any institutional or organizational policies that apply.'
+    answer: 'Readability metrics are calibrated for English. Other languages may produce unreliable results. Use English-specific analysis for English content. That keeps the result useful as a practical pre-check instead of a final judgment. Read the result together with your own review and any rules from your school, client, publication, or workplace.'
   },
   {
     category: 'ChatGPT Readability Checker FAQs',
     question: 'How does sentence length affect readability?',
-    answer: 'Longer sentences are generally harder to read. They require more working memory to process. Shorter sentences improve comprehension, especially for complex topics. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity. Combine the result with your own judgment and any institutional or organizational policies that apply.'
+    answer: 'Longer sentences are generally harder to read. They require more working memory to process. Shorter sentences improve comprehension, especially for complex topics. That keeps the result useful as a practical pre-check instead of a final judgment. Read the result together with your own review and any rules from your school, client, publication, or workplace.'
   },
   {
     category: 'ChatGPT Readability Checker FAQs',
     question: 'How does word choice affect readability?',
-    answer: 'Simpler, more common words improve readability. Multi-syllable and uncommon words require more processing effort. Technical terms should be used only when necessary for precision. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity. Combine the result with your own judgment and any institutional or organizational policies that apply.'
+    answer: 'Simpler, more common words improve readability. Multi-syllable and uncommon words require more processing effort. Technical terms should be used only when necessary for precision. That keeps the result useful as a practical pre-check instead of a final judgment. Read the result together with your own review and any rules from your school, client, publication, or workplace.'
   },
   {
     category: 'ChatGPT Readability Checker FAQs',
     question: 'Should I aim for the lowest possible score?',
-    answer: 'Not always. Aim for appropriate readability for your audience. Oversimplification can lose nuance or seem unprofessional for expert audiences. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity. Combine the result with your own judgment and any institutional or organizational policies that apply.'
+    answer: 'Not always. Aim for appropriate readability for your audience. Oversimplification can lose nuance or seem unprofessional for expert audiences. That keeps the result useful as a practical pre-check instead of a final judgment. Read the result together with your own review and any rules from your school, client, publication, or workplace.'
   },
   {
     category: 'ChatGPT Readability Checker FAQs',
     question: 'How is readability different from grammar?',
-    answer: 'Grammar concerns correctness—following language rules. Readability concerns accessibility—how easily readers comprehend. Text can be grammatically perfect but hard to read. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity. Combine the result with your own judgment and any institutional or organizational policies that apply.'
+    answer: 'Grammar concerns correctness—following language rules. Readability concerns accessibility—how easily readers comprehend. Text can be grammatically perfect but hard to read. That keeps the result useful as a practical pre-check instead of a final judgment. Read the result together with your own review and any rules from your school, client, publication, or workplace.'
   },
   {
     category: 'ChatGPT Readability Checker FAQs',
     question: 'Can AI-generated content have readability issues?',
-    answer: 'Yes, AI content may be overly complex or use unnecessary jargon. Checking readability helps ensure AI-assisted content is accessible to your intended audience. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity. Combine the result with your own judgment and any institutional or organizational policies that apply.'
+    answer: 'Yes, AI content may be overly complex or use unnecessary jargon. Checking readability helps ensure AI-assisted content is accessible to your intended audience. That keeps the result useful as a practical pre-check instead of a final judgment. Read the result together with your own review and any rules from your school, client, publication, or workplace.'
   },
   {
     category: 'ChatGPT Readability Checker FAQs',
     question: 'How do readability formulas work?',
-    answer: 'Most formulas calculate based on measurable factors: average sentence length, average word length or syllable count, and vocabulary frequency. These correlate with reading difficulty. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity. Combine the result with your own judgment and any institutional or organizational policies that apply.'
+    answer: 'Most formulas calculate based on measurable factors: average sentence length, average word length or syllable count, and vocabulary frequency. These correlate with reading difficulty. That keeps the result useful as a practical pre-check instead of a final judgment. Read the result together with your own review and any rules from your school, client, publication, or workplace.'
   },
   {
     category: 'ChatGPT Readability Checker FAQs',
     question: 'What is Flesch Reading Ease?',
-    answer: 'Flesch Reading Ease scores range 0-100, with higher being easier. Scores 60-70 are considered standard. Below 30 is very difficult; above 90 is very easy. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity. Combine the result with your own judgment and any institutional or organizational policies that apply.'
+    answer: 'Flesch Reading Ease scores range 0-100, with higher being easier. Scores 60-70 are considered standard. Below 30 is very difficult; above 90 is very easy. That keeps the result useful as a practical pre-check instead of a final judgment. Read the result together with your own review and any rules from your school, client, publication, or workplace.'
   },
   {
     category: 'ChatGPT Readability Checker FAQs',
     question: 'What is Flesch-Kincaid Grade Level?',
-    answer: 'This metric indicates the US school grade level needed to understand text. A score of 8.0 means 8th grade level. Most general content should be 6-8. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity. Combine the result with your own judgment and any institutional or organizational policies that apply.'
+    answer: 'This metric indicates the US school grade level needed to understand text. A score of 8.0 means 8th grade level. Most general content should be 6-8. That keeps the result useful as a practical pre-check instead of a final judgment. Read the result together with your own review and any rules from your school, client, publication, or workplace.'
   },
   {
     category: 'ChatGPT Readability Checker FAQs',
     question: 'How accurate are readability formulas?',
-    answer: 'Formulas provide useful approximations but have limitations. They measure surface features, not concept complexity or organization. Use them as guides, not absolutes. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity. Combine the result with your own judgment and any institutional or organizational policies that apply.'
+    answer: 'Formulas provide useful approximations but have limitations. They measure surface features, not concept complexity or organization. Use them as guides, not absolutes. That keeps the result useful as a practical pre-check instead of a final judgment. Read the result together with your own review and any rules from your school, client, publication, or workplace.'
   },
   {
     category: 'ChatGPT Readability Checker FAQs',
     question: 'Does readability affect SEO?',
-    answer: 'Indirectly yes. Readable content engages users longer, reduces bounce rates, and earns more shares—all positive SEO signals. Search engines value user experience. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity. Combine the result with your own judgment and any institutional or organizational policies that apply.'
+    answer: 'Indirectly yes. Readable content engages users longer, reduces bounce rates, and earns more shares—all positive SEO signals. Search engines value user experience. That keeps the result useful as a practical pre-check instead of a final judgment. Read the result together with your own review and any rules from your school, client, publication, or workplace.'
   },
   {
     category: 'ChatGPT Readability Checker FAQs',
     question: 'What audiences need high readability?',
-    answer: 'General public content, consumer communications, health information, legal notices for consumers, and educational materials for beginners all benefit from high readability. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity. Combine the result with your own judgment and any institutional or organizational policies that apply.'
+    answer: 'General public content, consumer communications, health information, legal notices for consumers, and educational materials for beginners all benefit from high readability. That keeps the result useful as a practical pre-check instead of a final judgment. Read the result together with your own review and any rules from your school, client, publication, or workplace.'
   },
   {
     category: 'ChatGPT Readability Checker FAQs',
     question: 'When is lower readability acceptable?',
-    answer: 'Academic papers, technical documentation, legal contracts, and specialist communications may appropriately have lower readability when precision requires complexity. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity. Combine the result with your own judgment and any institutional or organizational policies that apply.'
+    answer: 'Academic papers, technical documentation, legal contracts, and specialist communications may appropriately have lower readability when precision requires complexity. That keeps the result useful as a practical pre-check instead of a final judgment. Read the result together with your own review and any rules from your school, client, publication, or workplace.'
   },
   {
     category: 'ChatGPT Readability Checker FAQs',
     question: 'Can I check readability of specific sections?',
-    answer: 'Yes, you can analyze specific sections separately. Different parts of a document may have different readability needs—executive summaries should be more accessible than technical appendices. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity. Combine the result with your own judgment and any institutional or organizational policies that apply.'
+    answer: 'Yes, you can analyze specific sections separately. Different parts of a document may have different readability needs—executive summaries should be more accessible than technical appendices. That keeps the result useful as a practical pre-check instead of a final judgment. Read the result together with your own review and any rules from your school, client, publication, or workplace.'
   },
   {
     category: 'ChatGPT Readability Checker FAQs',
     question: 'How do I balance readability and precision?',
-    answer: 'Define necessary technical terms, break complex ideas into steps, use examples to illustrate, and structure logically. Precision and accessibility can coexist with care. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity. Combine the result with your own judgment and any institutional or organizational policies that apply.'
+    answer: 'Define necessary technical terms, break complex ideas into steps, use examples to illustrate, and structure logically. Precision and accessibility can coexist with care. That keeps the result useful as a practical pre-check instead of a final judgment. Read the result together with your own review and any rules from your school, client, publication, or workplace.'
   },
   {
     category: 'ChatGPT Readability Checker FAQs',
     question: 'Does passive voice affect readability?',
-    answer: 'Passive voice often increases sentence length and complexity. Active voice is generally more direct and readable. However, passive has appropriate uses in certain contexts. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity. Combine the result with your own judgment and any institutional or organizational policies that apply.'
+    answer: 'Passive voice often increases sentence length and complexity. Active voice is generally more direct and readable. However, passive has appropriate uses in certain contexts. That keeps the result useful as a practical pre-check instead of a final judgment. Read the result together with your own review and any rules from your school, client, publication, or workplace.'
   },
   {
     category: 'ChatGPT Readability Checker FAQs',
     question: 'How long should sentences be?',
-    answer: 'For general readability, aim for 15-20 words average. Vary lengths for rhythm—some shorter, some longer. Avoid consistently long sentences. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity. Combine the result with your own judgment and any institutional or organizational policies that apply.'
+    answer: 'For general readability, aim for 15-20 words average. Vary lengths for rhythm—some shorter, some longer. Avoid consistently long sentences. That keeps the result useful as a practical pre-check instead of a final judgment. Read the result together with your own review and any rules from your school, client, publication, or workplace.'
   },
   {
     category: 'ChatGPT Readability Checker FAQs',
     question: 'Does formatting affect readability?',
-    answer: 'Yes, though formulas do not measure it. Headers, bullet points, short paragraphs, and white space improve reading experience independently of text complexity. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity. Combine the result with your own judgment and any institutional or organizational policies that apply.'
+    answer: 'Yes, though formulas do not measure it. Headers, bullet points, short paragraphs, and white space improve reading experience independently of text complexity. That keeps the result useful as a practical pre-check instead of a final judgment. Read the result together with your own review and any rules from your school, client, publication, or workplace.'
   },
   {
     category: 'ChatGPT Readability Checker FAQs',
     question: 'Can I improve readability without dumbing down content?',
-    answer: 'Yes. Clear organization, shorter sentences, defined terms, and concrete examples improve accessibility without sacrificing substance or precision. This helps ensure you use the tool effectively and supports informed decisions about content quality and authenticity. Combine the result with your own judgment and any institutional or organizational policies that apply. Combine the result with your own judgment and any institutional or organizational policies that apply.'
+    answer: 'Yes. Clear organization, shorter sentences, defined terms, and concrete examples improve accessibility without sacrificing substance or precision. That keeps the result useful as a practical pre-check instead of a final judgment. Read the result together with your own review and any rules from your school, client, publication, or workplace. If the result matters, save your notes and follow the approved review process.'
   }
 ];
 
@@ -171,7 +171,7 @@ const writeUp = (
         Readability metrics provide objective measures of text complexity based on sentence length, word difficulty, and other factors. The ChatGPT Readability Checker uses established formulas along with AI analysis to provide comprehensive readability assessment and improvement suggestions.
       </p>
       <p>
-        GPT Clean Up Tools provides this readability checker as a free resource for writers, marketers, educators, and anyone seeking to communicate more effectively. The tool processes text locally in your browser, ensuring your content remains private throughout the analysis.
+        AI Text Cleanup Tools provides this readability checker as a free resource for writers, marketers, educators, and anyone seeking to communicate more effectively. The tool processes text locally in your browser, ensuring your content remains private throughout the analysis.
       </p>
 
       <h2>Understanding Readability</h2>
@@ -389,26 +389,26 @@ const writeUp = (
       </p>
     
 
-        <h2>Understanding ChatGPT Readability Checker and AI Content in 2024</h2>
-        <p>As AI-generated text becomes more common across education, publishing, and business, tools like the ChatGPT Readability Checker play an important role in helping users understand and work with that content. Whether you are an educator checking assignments, an editor screening submissions, or a professional verifying authenticity, having a clear picture of how the ChatGPT Readability Checker works and when to use it supports better decisions and more transparent communication.</p>
-        <p>This section adds context on why these tools exist, how they fit into broader workflows, and how to interpret and act on their results. The goal is to give you enough background to use the ChatGPT Readability Checker confidently while respecting its limits and combining it with your own judgment and any institutional or organizational policies that apply.</p>
+        <h2>How ChatGPT Readability Checker Fits Into AI Writing Workflows in 2026</h2>
+        <p>As AI-assisted writing becomes routine in schools, publishing teams, and business workflows, the ChatGPT Readability Checker gives users a practical way to review text before they rely on it. Whether you are reviewing coursework, editing submissions, or checking professional drafts, understanding what the ChatGPT Readability Checker can and cannot tell you makes the review process clearer and more consistent.</p>
+        <p>The sections below explain why tools like this exist, where they belong in a broader review process, and how to respond to the results without treating them as an automatic verdict. The goal is to help you use the ChatGPT Readability Checker with more confidence while still respecting policy requirements, context, and human judgment.</p>
 
         <h3>Why AI Content Tools Matter Now</h3>
         <p>Large language models can produce fluent, coherent text that is hard to distinguish from human writing at a glance. That has raised legitimate concerns about academic integrity, editorial standards, and the need for disclosure. At the same time, AI can support writing, research, and communication when used transparently. The ChatGPT Readability Checker is one of many resources that help users navigate this landscape by providing an indication of whether text may be AI-generated or how it might be improved, depending on the tool type.</p>
-        <p>Using the ChatGPT Readability Checker does not replace human judgment or official processes. It gives you an extra signal so you can decide where to look more closely, what to discuss with students or authors, and how to align with your organization&apos;s policies. For high-stakes decisions, always follow approved tools and procedures.</p>
+        <p>The ChatGPT Readability Checker should support human review, not replace it or override an official process. It adds one signal that can help you decide which passages need closer reading, discussion, revision, or escalation under your own policy. For high-stakes decisions, use the approved tools, documentation standards, and review steps required by your institution or organization.</p>
 
         <h3>How the ChatGPT Readability Checker Fits Into Your Workflow</h3>
-        <p>Integrating the ChatGPT Readability Checker into your routine works best when you treat it as a screening or support step rather than a final verdict. For educators, that might mean running detection or analysis on drafts before grading, or using the tool to start conversations with students about AI use and citation. For editors and publishers, it can mean a quick check before sending work to external verification services or to inform author discussions. For professionals and businesses, it can support internal reviews when authenticity and human authorship matter.</p>
-        <p>Set clear expectations with your team or students about how you use the ChatGPT Readability Checker and what follow-up steps you take when results suggest further review. Consistency and transparency help build trust and make the tool more useful over time.</p>
+        <p>The ChatGPT Readability Checker works best as a screening step, not as the final word. For educators, that might mean running detection or analysis on drafts before grading, or using the tool to start conversations with students about AI use and citation. For editors and publishers, it can mean a quick check before sending work to external verification services or to inform author discussions. For professionals and businesses, it can support internal reviews when authenticity and human authorship matter.</p>
+        <p>If other people are affected by the result, explain how you use the ChatGPT Readability Checker and what happens when a page or passage needs a closer look. A consistent, transparent process makes the tool more useful and reduces confusion around borderline results.</p>
 
         <h2>Tips for Consistent Use of the ChatGPT Readability Checker</h2>
-        <p>To get the most from the ChatGPT Readability Checker, use sufficient input length when the tool supports it, prefer complete paragraphs or sections over single sentences, and run checks in a consistent way so you can compare results across documents or over time. Keep in mind that no automated tool is perfect; use the output as one input among others, and combine it with your own reading, context, and any guidelines from your institution or employer.</p>
+        <p>For better results with the ChatGPT Readability Checker, use full paragraphs or complete sections, avoid tiny fragments, and run checks in a repeatable way so different drafts can be compared fairly. No automated tool is perfect, so read the output as a signal to investigate rather than a standalone conclusion.</p>
 
         <h3>Input Quality and Length</h3>
-        <p>Many AI content tools perform better with longer, coherent text. If the ChatGPT Readability Checker recommends a minimum word count or suggests using full paragraphs, follow that guidance. Shorter or fragmented input may produce less reliable or stable results. When possible, submit text that reflects how the content would actually be used or assessed.</p>
+        <p>Most AI-content review tools behave more reliably when the input is long enough and written as a coherent passage. If the ChatGPT Readability Checker recommends a minimum word count or suggests using full paragraphs, follow that guidance. Very short snippets and disconnected fragments can produce unstable results. When possible, submit text that reflects how the content would actually be used or assessed.</p>
 
         <h3>Next Steps After You Get Results</h3>
-        <p>Results from the ChatGPT Readability Checker are typically probabilistic or indicative, not definitive. Avoid using a single score or label to accuse or penalize. Instead, use the result to decide where to look more closely, what to discuss with the author, or whether to run additional checks. Document how you use the tool and what policies you follow so that your process is clear and fair.</p>
+        <p>Results from the ChatGPT Readability Checker are indicators, not proof. Do not use a single score or label by itself to accuse, punish, or make a final decision. Use the result to decide what to reread, what to ask the author, or whether another approved check is needed. Document how you use the tool and what policies you follow so that your process is clear and fair.</p>
 
         <h2>Data and Security When Using the ChatGPT Readability Checker</h2>
         <p>This ChatGPT Readability Checker is designed to process text locally in your browser where possible, so your content is not sent to our servers or stored by us. That is important for confidential drafts, student work, and any sensitive or proprietary content. Always check the tool&apos;s description and your organization&apos;s policies to confirm how data is handled and whether the tool is approved for your use case.</p>

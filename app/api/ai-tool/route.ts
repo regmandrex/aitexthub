@@ -322,8 +322,8 @@ export async function POST(req: NextRequest) {
       headers: {
         'Authorization': `Bearer ${apiKey}`,
         'Content-Type': 'application/json',
-        'HTTP-Referer': process.env.NEXT_PUBLIC_SITE_URL ?? 'https://gptcleanuptools.com',
-        'X-Title': 'GPT Cleanup Tools',
+        'HTTP-Referer': process.env.NEXT_PUBLIC_SITE_URL ?? 'https://aitextcleanuptools.com',
+        'X-Title': 'AI Text Cleanup Tools',
       },
       body: JSON.stringify({
         model: MODEL,

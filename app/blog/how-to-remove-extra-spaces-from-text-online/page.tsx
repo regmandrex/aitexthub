@@ -6,7 +6,7 @@ import AdSenseSlot from '../../../components/ads/AdSenseSlot';
 import type { Metadata } from 'next';
 
 const urlPath = '/blog/how-to-remove-extra-spaces-from-text-online';
-const title = 'How to Remove Extra Spaces from Text Online | GPTCLEANUP AI';
+const title = 'How to Remove Extra Spaces from Text Online | AI Text Cleanup Tools';
 const headline =
   'How to Remove Extra Spaces from Text Online (Step-by-Step Guide)';
 const description =

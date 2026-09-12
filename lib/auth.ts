@@ -21,19 +21,19 @@ export const auth = betterAuth({
   },
   trustedOrigins: [
     'http://localhost:3000',
-    'https://gptcleanuptools.com',
-    'https://www.gptcleanuptools.com',
+    'https://aitextcleanuptools.com',
+    'https://www.aitextcleanuptools.com',
   ],
   emailAndPassword: {
     enabled: true,
     requireEmailVerification: false,
     sendResetPassword: async ({ user, url }) => {
       await resend.emails.send({
-        from: 'GPT Cleanup Tools <noreply@gptcleanuptools.com>',
+        from: 'AI Text Cleanup Tools <noreply@aitextcleanuptools.com>',
         to: user.email,
         // Sent from an unmonitored noreply address, but route any replies to
         // support so users who hit "reply" still reach a real inbox.
-        replyTo: 'support@gptcleanuptools.com',
+        replyTo: 'support@aitextcleanuptools.com',
         subject: 'Reset your password',
         html: `<p>Click <a href="${url}">here</a> to reset your password. This link expires in 1 hour.</p>`,
       });
@@ -42,11 +42,11 @@ export const auth = betterAuth({
   emailVerification: {
     sendVerificationEmail: async ({ user, url }) => {
       await resend.emails.send({
-        from: 'GPT Cleanup Tools <noreply@gptcleanuptools.com>',
+        from: 'AI Text Cleanup Tools <noreply@aitextcleanuptools.com>',
         to: user.email,
         // Replies to this noreply address are routed to support.
-        replyTo: 'support@gptcleanuptools.com',
-        subject: 'Verify your email — GPT Cleanup Tools',
+        replyTo: 'support@aitextcleanuptools.com',
+        subject: 'Verify your email — AI Text Cleanup Tools',
         html: `
           <div style="font-family:sans-serif;max-width:480px;margin:0 auto">
             <h2 style="color:#1e293b">Verify your email</h2>

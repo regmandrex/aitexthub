@@ -6,7 +6,7 @@ import AdSenseSlot from '../../../components/ads/AdSenseSlot';
 import type { Metadata } from 'next';
 
 const urlPath = '/blog/ai-watermarks-and-academic-integrity';
-const title = 'AI Watermarks and Academic Integrity: What Students Should Know | GPTCLEANUP AI';
+const title = 'AI Watermarks and Academic Integrity: What Students Should Know | AI Text Cleanup Tools';
 const headline = 'AI Watermarks and Academic Integrity: What Students Should Know';
 const description =
   'AI watermarks and detection tools affect academic submissions in ways students do not expect. Here is what is actually detected, what causes false positives, and what to do.';

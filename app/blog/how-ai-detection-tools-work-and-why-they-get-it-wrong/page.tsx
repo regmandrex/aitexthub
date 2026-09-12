@@ -6,7 +6,7 @@ import AdSenseSlot from '../../../components/ads/AdSenseSlot';
 import type { Metadata } from 'next';
 
 const urlPath = '/blog/how-ai-detection-tools-work-and-why-they-get-it-wrong';
-const title = 'How AI Detection Tools Work (And Why They Often Get It Wrong) | GPTCLEANUP AI';
+const title = 'How AI Detection Tools Work (And Why They Often Get It Wrong) | AI Text Cleanup Tools';
 const headline = 'How AI Detection Tools Work (And Why They Often Get It Wrong)';
 const description =
   'AI detection tools use perplexity, burstiness, and classifiers to identify AI text. This guide explains their methodology, failure modes, and what you should actually trust.';

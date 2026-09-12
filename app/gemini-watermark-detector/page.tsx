@@ -5,7 +5,7 @@ import { buildMeta } from '@/lib/seo-meta';
 const modelName = 'Gemini';
 const modelSlug = 'gemini';
 const faqIntro =
-  'This FAQ explains the purpose, scope, and limitations of the Gemini (Google) Watermark Detector on gptcleanuptools.com. The tool is designed for educational, editorial, and analytical use, helping users understand text-level signals and anomalies that may appear in AI-assisted writing. It does not connect to Gemini or any Google systems and does not provide authoritative judgments about authorship.';
+  'This FAQ explains the purpose, scope, and limitations of the Gemini (Google) Watermark Detector on AI Text Cleanup Tools. The tool is designed for educational, editorial, and analytical use, helping users understand text-level signals and anomalies that may appear in AI-assisted writing. It does not connect to Gemini or any Google systems and does not provide authoritative judgments about authorship.';
 
 
 const faqs: FaqItem[] = [
@@ -19,7 +19,7 @@ const faqs: FaqItem[] = [
     category: 'Gemini (Google) Watermark Detector FAQs',
     question: 'Is this tool affiliated with Google or Gemini?',
     answer:
-      'No. This tool is not affiliated with, endorsed by, or connected to Google or Gemini. gptcleanuptools.com is a tool hub, not an AI model provider.',
+      'No. This tool is not affiliated with, endorsed by, or connected to Google or Gemini. AI Text Cleanup Tools is a tool hub, not an AI model provider.',
   },
   {
     category: 'Gemini (Google) Watermark Detector FAQs',

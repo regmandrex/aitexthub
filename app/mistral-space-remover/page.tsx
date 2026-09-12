@@ -11,7 +11,7 @@ const faqs: FaqItem[] = [
     category: 'General',
     question: '1. What is Mistral Space Remover?',
     answer:
-      'Mistral Space Remover is a web-based text cleanup utility on gptcleanuptools.com designed to normalize spacing and formatting in text. It focuses on removing extra or irregular spaces, fixing line breaks, correcting indentation, and normalizing invisible Unicode whitespace characters in user-provided text.',
+      'Mistral Space Remover is a web-based text cleanup utility on AI Text Cleanup Tools designed to normalize spacing and formatting in text. It focuses on removing extra or irregular spaces, fixing line breaks, correcting indentation, and normalizing invisible Unicode whitespace characters in user-provided text.',
   },
   {
     category: 'General',
@@ -119,7 +119,7 @@ const faqs: FaqItem[] = [
     category: 'General',
     question: '19. Is Mistral Space Remover affiliated with or endorsed by Mistral?',
     answer:
-      'No. It is an independent utility hosted on gptcleanuptools.com and does not claim affiliation, endorsement, or partnership with Mistral.',
+      'No. It is an independent utility hosted on AI Text Cleanup Tools and does not claim affiliation, endorsement, or partnership with Mistral.',
   },
   {
     category: 'General',
@@ -153,9 +153,9 @@ const faqs: FaqItem[] = [
   },
   {
     category: 'General',
-    question: '25. Where does Mistral Space Remover fit within gptcleanuptools.com?',
+    question: '25. Where does Mistral Space Remover fit within AI Text Cleanup Tools?',
     answer:
-      'It is one of several standalone text utilities offered on gptcleanuptools.com, each focused on responsible, transparent text cleanup and formatting normalization.',
+      'It is one of several standalone text utilities offered on AI Text Cleanup Tools, each focused on responsible, transparent text cleanup and formatting normalization.',
   },
 ];
 

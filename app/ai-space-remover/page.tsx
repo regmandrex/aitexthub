@@ -23,7 +23,7 @@ const faqs: FaqItem[] = [
     category: 'AI Space Remover FAQs',
     question: 'Does this tool connect to ChatGPT, OpenAI, Gemini, or Claude?',
     answer:
-      'No. GPT Clean Up Tools is a tool hub and does not connect to any AI model provider. AI Space Remover does not access ChatGPT, OpenAI, Gemini, Claude, or any other external system. It operates only on the text you paste into the interface and performs local formatting cleanup.',
+      'No. AI Text Cleanup Tools is a tool hub and does not connect to any AI model provider. AI Space Remover does not access ChatGPT, OpenAI, Gemini, Claude, or any other external system. It operates only on the text you paste into the interface and performs local formatting cleanup.',
   },
   {
     category: 'AI Space Remover FAQs',
@@ -125,7 +125,7 @@ const faqs: FaqItem[] = [
     category: 'AI Space Remover FAQs',
     question: 'Is AI Space Remover free to use, and do I need an account?',
     answer:
-      'Yes. The tool is available for free on gptcleanuptools.com and does not require account registration. You can use it directly in your browser, paste your text, and clean spacing without setup or login.',
+      'Yes. The tool is available for free on AI Text Cleanup Tools and does not require account registration. You can use it directly in your browser, paste your text, and clean spacing without setup or login.',
   },
   {
     category: 'AI Space Remover FAQs',
@@ -170,7 +170,7 @@ const writeUp = (
         and they slow down editing.
       </p>
       <p>
-        The tool is part of the GPT Clean Up Tools hub, which focuses on text hygiene rather than text generation. AI Space Remover does not
+        The tool is part of the AI Text Cleanup Tools hub, which focuses on text hygiene rather than text generation. AI Space Remover does not
         create content or rewrite your words. It only cleans spacing and invisible whitespace so that the text remains consistent across systems.
         This makes it a safe, transparent utility for writers, editors, students, and teams who need clean output without altering meaning.
       </p>

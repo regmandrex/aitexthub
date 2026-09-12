@@ -17,17 +17,10 @@ import { getToolBySlug } from '@/lib/tools/registry';
 
 const toolSlug = 'chatgpt-text-cleaner';
 
-function RailAd({ side }: { side: 'left' | 'right' }) {
-  const sideClass = side === 'left' ? 'left-4' : 'right-4';
-
-  return (
-    <div className={`hidden lg:block fixed top-[220px] ${sideClass} z-20`}>
-      <div className="w-[180px] min-h-[260px]">
-        <AdSenseSlot className="w-full" />
-      </div>
-    </div>
-  );
+function RailAd(_props: { side: 'left' | 'right' }) {
+  return null;
 }
+
 
 const faqs: FaqItem[] = [
   {
@@ -113,7 +106,7 @@ const faqs: FaqItem[] = [
   {
     category: 'AI Detection',
     question: 'Does this cleaner help against Originality.ai, Copyleaks, Winston AI, and Sapling?',
-    answer: 'The ChatGPT Text Cleaner targets the formatting layer that detection platforms like Turnitin, GPTZero, Originality.ai, Copyleaks, Winston AI, and Sapling can include as one of their surface signals, but it does not modify the underlying language patterns those tools score against. Hidden Unicode characters, zero-width spaces, and unusual spacing runs are easy fingerprints for any classifier to flag because they survive copy and paste from the ChatGPT interface, and removing them eliminates one technical detection vector. However, the deeper layer these detectors evaluate is statistical: token-level perplexity, burstiness, sentence length variance, and vocabulary distribution. Cleaning formatting does not change any of that, so a draft can still be flagged as AI-generated even after every invisible character is stripped. A clean text pass is a sensible first step for hygiene reasons alone, and it reduces one fingerprint Originality.ai, Copyleaks, and Winston AI can use. To address the statistical layer that Turnitin, GPTZero, and Sapling weight most heavily, you would need to rewrite the text with the GPTCleanup Pro humanizer, which targets perplexity and burstiness directly rather than just the formatting residue.'
+    answer: 'The ChatGPT Text Cleaner targets the formatting layer that detection platforms like Turnitin, GPTZero, Originality.ai, Copyleaks, Winston AI, and Sapling can include as one of their surface signals, but it does not modify the underlying language patterns those tools score against. Hidden Unicode characters, zero-width spaces, and unusual spacing runs are easy fingerprints for any classifier to flag because they survive copy and paste from the ChatGPT interface, and removing them eliminates one technical detection vector. However, the deeper layer these detectors evaluate is statistical: token-level perplexity, burstiness, sentence length variance, and vocabulary distribution. Cleaning formatting does not change any of that, so a draft can still be flagged as AI-generated even after every invisible character is stripped. A clean text pass is a sensible first step for hygiene reasons alone, and it reduces one fingerprint Originality.ai, Copyleaks, and Winston AI can use. To address the statistical layer that Turnitin, GPTZero, and Sapling weight most heavily, you would need to rewrite the text with the AI Text Cleanup Tools Pro humanizer, which targets perplexity and burstiness directly rather than just the formatting residue.'
   },
   {
     category: 'SEO',
@@ -162,8 +155,8 @@ const faqs: FaqItem[] = [
   },
   {
     category: 'General',
-    question: 'What is a GPT cleanup tool and how does this compare?',
-    answer: 'A GPT cleanup tool removes the hidden characters, invisible Unicode artifacts, and formatting noise that GPT-generated text carries when you copy it out of ChatGPT. This ChatGPT text cleaner is a dedicated GPT cleanup tool that runs entirely in your browser—no uploads, no account, no cost. Unlike generic text cleaners, it specifically targets the Unicode code points that OpenAI models embed in their output: zero-width spaces, byte-order marks, soft hyphens, non-breaking spaces, and directional marks. A proper GPT cleanup means your text is ready for documents, CMS platforms, email clients, and publishing tools without any post-paste formatting surprises.'
+    question: 'What is a ChatGPT text cleanup tool and how does this compare?',
+    answer: 'A ChatGPT text cleanup tool removes the hidden characters, invisible Unicode artifacts, and formatting noise that GPT-generated text carries when you copy it out of ChatGPT. This ChatGPT text cleaner is a dedicated ChatGPT text cleanup tool that runs entirely in your browser—no uploads, no account, no cost. Unlike generic text cleaners, it specifically targets the Unicode code points that OpenAI models embed in their output: zero-width spaces, byte-order marks, soft hyphens, non-breaking spaces, and directional marks. A proper ChatGPT text cleanup means your text is ready for documents, CMS platforms, email clients, and publishing tools without any post-paste formatting surprises.'
   },
   {
     category: 'General',
@@ -177,8 +170,8 @@ const faqs: FaqItem[] = [
   },
   {
     category: 'Comparison',
-    question: 'How does this tool differ from gptcleanup.com and similar GPT cleanup sites?',
-    answer: 'This GPT cleanup tool processes your text entirely in the browser with no server upload, no account creation, and no usage limits. GPT cleanup tools generally vary in which characters they target and whether they process data locally or send it to a server. This tool removes the full range of hidden Unicode characters found in ChatGPT output—not just zero-width spaces but also byte-order marks, soft hyphens, non-breaking spaces, word joiners, and directional marks—while also normalizing curly quotes, em dashes, and markdown formatting. All GPT cleanup happens client-side, making it safe for confidential content.'
+    question: 'How does this tool differ from similar ChatGPT text cleanup sites?',
+    answer: 'This ChatGPT text cleanup tool processes your text entirely in the browser with no server upload, no account creation, and no usage limits. Similar cleanup sites vary in which characters they target and whether they process data locally or send it to a server. This tool removes the full range of hidden Unicode characters found in ChatGPT output—not just zero-width spaces but also byte-order marks, soft hyphens, non-breaking spaces, word joiners, and directional marks—while also normalizing curly quotes, em dashes, and markdown formatting. All ChatGPT text cleanup happens client-side, making it safe for confidential content.'
   },
   {
     category: 'Technical',
@@ -353,10 +346,10 @@ const article = (
       <p>Users asking <strong>how to remove hidden code from ChatGPT</strong> are encountering invisible Unicode characters embedded in ChatGPT output — characters that behave like hidden code because they are not visible but affect behavior in editors, code files, and web platforms. To <strong>remove hidden code from ChatGPT</strong>: paste your ChatGPT output into this cleaner and click Clean Text. The tool strips every invisible Unicode character — zero-width spaces, byte-order marks, non-breaking spaces, and all other hidden code points — leaving text that contains only visible characters. This <strong>ChatGPT unicode remover</strong> targets every Unicode category that ChatGPT embeds: zero-width (U+200B, U+200C, U+200D, U+FEFF), directional (U+200E, U+200F, U+202A–U+202E), and formatting marks (U+00AD, U+2060). As a complete <strong>ChatGPT unicode remover</strong>, one click clears them all.</p>
       <p>The phrase <strong>content removed ChatGPT</strong> sometimes describes situations where invisible characters cause content to appear missing or truncated in other applications after pasting. When invisible characters cause <strong>content removed ChatGPT</strong> behavior — text appearing to vanish or display incorrectly — cleaning the text with this tool resolves the issue by removing the hidden code points responsible. The answer to <strong>how to remove hidden code from ChatGPT</strong> is this tool: browser-local, instant, free, and complete.</p>
 
-      <h2>GPT Cleanup: Why Every ChatGPT User Needs a Dedicated GPT Cleaner</h2>
-      <p>The term <strong>GPT cleanup</strong> refers specifically to the process of removing the invisible artifacts, formatting noise, and hidden Unicode characters that accumulate in text generated by GPT models. Unlike generic text cleaning, GPT cleanup targets a specific set of Unicode code points that OpenAI's models are known to embed—characters that a standard "paste as plain text" operation does not remove because they are not formatting markers in the traditional sense. They are invisible characters that ride alongside your visible text.</p>
+      <h2>AI Text Cleanup Tools: Why Every ChatGPT User Needs a Dedicated AI Text Cleaner</h2>
+      <p>The term <strong>ChatGPT text cleanup</strong> refers specifically to the process of removing the invisible artifacts, formatting noise, and hidden Unicode characters that accumulate in text generated by GPT models. Unlike generic text cleaning, ChatGPT text cleanup targets a specific set of Unicode code points that OpenAI's models are known to embed—characters that a standard "paste as plain text" operation does not remove because they are not formatting markers in the traditional sense. They are invisible characters that ride alongside your visible text.</p>
       <p>A dedicated <strong>GPT cleaner</strong> like this tool knows exactly which characters to target: zero-width spaces (U+200B), byte-order marks (U+FEFF), soft hyphens (U+00AD), non-breaking spaces (U+00A0), word joiners (U+2060), and directional formatting marks (U+200E, U+200F). Generic cleanup tools often miss one or more of these, leaving invisible artifacts behind. This GPT cleaner removes all of them in a single pass, then normalizes curly quotes, em dashes, and markdown symbols as a second pass. The result is text that is genuinely clean—not just visually identical to clean text, but character-for-character identical.</p>
-      <p>For anyone who uses ChatGPT regularly—whether for personal writing, professional content creation, or business communications—building a GPT cleanup step into your workflow is the single most effective way to prevent formatting issues. The <strong>clean GPT text</strong> you get from this tool pastes into any application exactly as intended, with no invisible stowaways causing problems downstream.</p>
+      <p>For anyone who uses ChatGPT regularly—whether for personal writing, professional content creation, or business communications—building a ChatGPT text cleanup step into your workflow is the single most effective way to prevent formatting issues. The <strong>clean GPT text</strong> you get from this tool pastes into any application exactly as intended, with no invisible stowaways causing problems downstream.</p>
     </div>
   </section>
 );
@@ -429,4 +422,3 @@ export default async function ChatGPTTextCleanerPage() {
     </div>
   );
 }
-

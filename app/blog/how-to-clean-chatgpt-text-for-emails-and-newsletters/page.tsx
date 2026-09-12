@@ -6,7 +6,7 @@ import AdSenseSlot from '../../../components/ads/AdSenseSlot';
 import type { Metadata } from 'next';
 
 const urlPath = '/blog/how-to-clean-chatgpt-text-for-emails-and-newsletters';
-const title = 'How to Clean ChatGPT Text for Emails and Newsletters | GPTCLEANUP AI';
+const title = 'How to Clean ChatGPT Text for Emails and Newsletters | AI Text Cleanup Tools';
 const headline = 'How to Clean ChatGPT Text for Emails and Newsletters (Deliverability, Formatting & Trust)';
 const description =
   'A practical workflow to remove invisible Unicode, normalize whitespace, and prevent broken rendering and spam triggers when using AI text in email tools.';

@@ -6,7 +6,7 @@ import AdSenseSlot from '../../../components/ads/AdSenseSlot';
 import type { Metadata } from 'next';
 
 const urlPath = '/blog/chatgpt-formatting-fixer-for-word-and-docs';
-const title = 'ChatGPT Formatting Fixer for Word and Docs (Clean Documents Every Time) | GPTCLEANUP AI';
+const title = 'ChatGPT Formatting Fixer for Word and Docs (Clean Documents Every Time) | AI Text Cleanup Tools';
 const headline = 'ChatGPT Formatting Fixer for Word and Docs (How to Get Clean, Professional Documents Every Time)';
 const description =
   'Stop broken spacing, headings, bullets, and PDF export issues: clean invisible Unicode, normalize whitespace, then apply Word/Docs styles natively.';

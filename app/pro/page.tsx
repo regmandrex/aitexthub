@@ -1,11 +1,10 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { buildMeta } from '@/lib/seo-meta';
-import CheckoutButton from '@/components/CheckoutButton';
 
-const title = 'GPTCleanup Pro — Undetectable AI for Real Work';
+const title = 'AI Text Cleanup Tools Pro — Undetectable AI for Real Work';
 const description =
-  'Pro plan for GPTCleanup Tools: LLM-powered AI humanizer, higher word limits, AI video watermark removal, no ads, and all 60+ premium tools. From $3.99/week.';
+  'Pro plan for AI Text Cleanup Tools: LLM-powered AI humanizer, higher word limits, AI video watermark removal, no ads, and all 60+ premium tools.';
 
 export async function generateMetadata(): Promise<Metadata> {
   return buildMeta({ title, description, urlPath: '/pro' });
@@ -36,7 +35,6 @@ type Plan = {
   cta: string;
   features: string[];
   highlight?: boolean;
-  checkoutUrl?: string;
 };
 
 const PLANS: Plan[] = [
@@ -46,14 +44,13 @@ const PLANS: Plan[] = [
     price: '$3.99',
     originalPrice: '$7',
     period: 'per week',
-    cta: 'Get Weekly Pass',
+    cta: 'Contact us',
     features: [
       'AI video watermark removal — 4 videos',
       'AI image watermark erase — 15 images',
       '50,000 words / week',
-      'Bypass every detector · Cancel anytime',
+      'Bypass every detector',
     ],
-    checkoutUrl: 'https://mygptcleanup.lemonsqueezy.com/checkout/buy/4668229c-1a12-4017-9445-a208a32d3083',
   },
   {
     id: 'monthly',
@@ -62,14 +59,13 @@ const PLANS: Plan[] = [
     originalPrice: '$25',
     period: 'per month',
     saveText: 'Save 28%',
-    cta: 'Get Pro Monthly',
+    cta: 'Contact us',
     features: [
       'AI video watermark removal — 15 videos',
       'AI image watermark erase — 35 images',
       '300,000 words / month',
-      'Bypass every detector · Cancel anytime',
+      'Bypass every detector',
     ],
-    checkoutUrl: 'https://mygptcleanup.lemonsqueezy.com/checkout/buy/2b8c8163-2571-454e-b255-947a91388cf6',
   },
   {
     id: 'annual',
@@ -80,7 +76,7 @@ const PLANS: Plan[] = [
     subPeriod: 'billed $99.99 yearly',
     badge: 'BEST VALUE',
     saveText: 'Save 54%',
-    cta: 'Get Pro Annual',
+    cta: 'Contact us',
     highlight: true,
     features: [
       'AI video watermark removal — 95 videos',
@@ -88,7 +84,6 @@ const PLANS: Plan[] = [
       'Unlimited words — no monthly cap',
       'Bypass every detector · Priority support',
     ],
-    checkoutUrl: 'https://mygptcleanup.lemonsqueezy.com/checkout/buy/0342ed42-ec81-483f-99a3-0803863e9ef5',
   },
 ];
 
@@ -103,19 +98,19 @@ const FAQS: Array<{ q: string; a: string }> = [
   },
     {
     q: 'Is there a free trial?',
-    a: 'You can use the free tier of every tool with no signup. Pro itself does not include a free trial period — all paid plans are final sale. We recommend trying the free tier first to see if our tools fit your workflow before upgrading.',
+    a: 'You can use the free tier of every tool with no signup. Pro access is currently handled manually, so contact us if you want to discuss access for your workflow.',
   },
   {
     q: 'Can I cancel anytime?',
-    a: 'Yes. Monthly and annual plans cancel from your account dashboard with one click. Cancellation stops the next renewal — you keep access for the rest of the billing period you already paid for.',
+    a: 'There is no self-serve checkout active right now. If you have an existing Pro arrangement, contact support and we will handle account changes manually.',
   },
   {
     q: 'What payment methods do you accept?',
-    a: 'All major credit and debit cards (Visa, Mastercard, Amex), Apple Pay, Google Pay, and PayPal. Payments are processed securely by our merchant of record, who handles tax compliance globally.',
+    a: 'Self-serve payment is not currently available. Contact us if you need Pro access.',
   },
   {
     q: 'Do you offer refunds?',
-    a: 'All sales are final. Refunds are only granted for billing errors such as duplicate charges or incorrect billing amounts. See our Refund Policy for details. You can cancel anytime — cancellation stops future charges, but does not refund the current billing period.',
+    a: 'Refunds only apply to existing paid arrangements. Contact support if you believe there was a billing error.',
   },
   {
     q: 'Will Pro work for my use case?',
@@ -135,7 +130,7 @@ export default function ProLandingPage() {
         <div className="pointer-events-none absolute -top-32 left-1/2 h-96 w-[700px] -translate-x-1/2 rounded-full bg-violet-200/40 blur-3xl" />
         <div className="relative mx-auto max-w-5xl px-4 py-14 text-center md:py-20">
           <p className="mb-4 inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-violet-600 to-purple-700 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-white shadow-sm shadow-violet-200">
-            <span className="text-amber-300">✦</span> GPTCleanup Pro
+            <span className="text-amber-300">✦</span> AI Text Cleanup Tools Pro
           </p>
           <h1 className="text-3xl font-bold tracking-tight text-slate-900 md:text-5xl">
             Undetectable AI.{' '}
@@ -216,7 +211,7 @@ export default function ProLandingPage() {
             Simple pricing.
           </h2>
           <p className="mx-auto mt-2 max-w-xl text-center text-slate-600">
-            Pick the plan that fits how you work. Every plan includes every Pro feature.
+            Pro checkout is currently offline. Contact us if you need access.
           </p>
 
           <div className="mt-10 grid gap-5 md:grid-cols-3">
@@ -266,32 +261,24 @@ export default function ProLandingPage() {
                   ))}
                 </ul>
 
-                <CheckoutButton
-                  href={plan.checkoutUrl ?? '#pricing'}
-                  planId={plan.id}
+                <Link
+                  href="/contact"
                   className={`mt-6 block w-full rounded-full px-4 py-3 text-center text-sm font-bold transition ${
                     plan.highlight
                       ? 'bg-gradient-to-r from-violet-600 to-purple-700 text-white shadow-md shadow-violet-200 hover:shadow-lg'
                       : 'border border-slate-300 bg-white text-slate-900 hover:bg-slate-50'
                   }`}
                 >
-                  {plan.cta} →
-                </CheckoutButton>
+                  {plan.cta}
+                </Link>
               </div>
             ))}
           </div>
 
           <div className="mt-8 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 text-xs text-slate-500">
-            <span className="flex items-center gap-1.5">
-              <svg className="h-3.5 w-3.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-              </svg>
-              Secure checkout
-            </span>
+            <span>Manual Pro access only</span>
             <span className="hidden sm:inline">·</span>
-            <span>Cancel anytime</span>
-            <span className="hidden sm:inline">·</span>
-            <span>All sales final</span>
+            <span>No self-serve payment</span>
           </div>
         </div>
       </section>
@@ -332,12 +319,12 @@ export default function ProLandingPage() {
         <div className="pointer-events-none absolute -bottom-20 -left-20 h-72 w-72 rounded-full bg-amber-400/10 blur-3xl" />
         <div className="relative mx-auto max-w-3xl px-4 py-14 text-center md:py-20">
           <h2 className="text-2xl font-bold md:text-3xl">Ready to ship work that passes detectors?</h2>
-          <p className="mt-3 text-violet-100">Pick a plan and unlock the full toolkit in 30 seconds.</p>
+          <p className="mt-3 text-violet-100">Contact us to discuss Pro access for your workflow.</p>
           <Link
-            href="#pricing"
+            href="/contact"
             className="mt-6 inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-bold text-violet-700 shadow-lg transition hover:bg-violet-50"
           >
-            Go Pro →
+            Contact us
           </Link>
         </div>
       </section>

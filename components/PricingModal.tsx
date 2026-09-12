@@ -2,8 +2,6 @@
 
 import { useEffect, useState } from 'react';
 import { trackEvent } from '@/lib/analytics';
-import { useSession } from '@/lib/auth-client';
-import { withCheckoutEmail } from '@/lib/checkout';
 
 type Plan = {
   id: 'weekly' | 'monthly' | 'annual';
@@ -15,7 +13,6 @@ type Plan = {
   quota: string;
   saveText: string | null;
   features: string[];
-  checkoutUrl?: string;
 };
 
 const PLANS: Plan[] = [
@@ -34,7 +31,6 @@ const PLANS: Plan[] = [
       '50,000 words / week',
       'Bypass every detector',
     ],
-    checkoutUrl: 'https://mygptcleanup.lemonsqueezy.com/checkout/buy/4668229c-1a12-4017-9445-a208a32d3083',
   },
   {
     id: 'monthly',
@@ -51,7 +47,6 @@ const PLANS: Plan[] = [
       '300,000 words / month',
       'Bypass every detector',
     ],
-    checkoutUrl: 'https://mygptcleanup.lemonsqueezy.com/checkout/buy/2b8c8163-2571-454e-b255-947a91388cf6',
   },
   {
     id: 'annual',
@@ -68,7 +63,6 @@ const PLANS: Plan[] = [
       'Unlimited words — no cap',
       'Bypass every detector',
     ],
-    checkoutUrl: 'https://mygptcleanup.lemonsqueezy.com/checkout/buy/0342ed42-ec81-483f-99a3-0803863e9ef5',
   },
 ];
 
@@ -80,7 +74,6 @@ export default function PricingModal({
   product?: 'humanizer' | 'tadc' | 'dandys-world' | 'mha';
 }) {
   const [selected, setSelected] = useState<Plan['id']>('annual');
-  const { data: session } = useSession();
   const isOcProduct = product !== 'humanizer';
   const ocProductName = product === 'dandys-world' ? "Dandy's World OC" : product === 'mha' ? 'MHA OC' : 'TADC OC';
 
@@ -217,24 +210,17 @@ export default function PricingModal({
         {/* CTA */}
         <div className="px-5 pb-5">
           <a
-            href={activePlan.checkoutUrl ? withCheckoutEmail(activePlan.checkoutUrl, session?.user?.email) : '/pro#pricing'}
-            onClick={() => trackEvent('checkout_started', { plan: activePlan.id })}
+            href="/contact"
+            onClick={() => trackEvent('cta_clicked', { plan: activePlan.id, location: 'pricing_modal' })}
             className="block w-full rounded-xl bg-gradient-to-r from-violet-600 to-purple-700 py-3.5 text-center text-sm font-bold text-white shadow-lg shadow-violet-200 transition-all hover:from-violet-700 hover:to-purple-800 hover:shadow-xl"
           >
-            Continue with {activePlan.name} →
+            Contact us about {activePlan.name}
           </a>
 
           <div className="mt-3 flex items-center justify-center gap-4 text-[10px] text-slate-400">
-            <span className="flex items-center gap-1">
-              <svg className="h-3 w-3" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-              </svg>
-              Secure checkout
-            </span>
+            <span>Manual Pro access only</span>
             <span>·</span>
-            <span>Cancel anytime</span>
-            <span>·</span>
-            <span>Cancel anytime</span>
+            <span>No self-serve payment</span>
           </div>
         </div>
       </div>

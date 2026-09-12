@@ -5,7 +5,7 @@ import type { Metadata } from 'next';
 export async function generateMetadata(): Promise<Metadata> {
   return buildMeta({
     title: 'Cookie Policy - Privacy & Tracking',
-    description: 'Cookie Policy for GPTCLEANUP AI tools.',
+    description: 'Cookie Policy for AI Text Cleanup Tools tools.',
     urlPath: '/cookie-policy',
   });
 }
@@ -23,7 +23,7 @@ export default function CookiePolicyPage() {
       </p>
 
       <h2>2. How We Use Cookies</h2>
-      <p>GPT CLEAN UP uses cookies to ensure our tools and website work smoothly and securely. We use the following types of cookies:</p>
+      <p>AI Text Cleanup Tools uses cookies to ensure our tools and website work smoothly and securely. We use the following types of cookies:</p>
 
       <h3>Essential Cookies</h3>
       <p>
@@ -41,7 +41,7 @@ export default function CookiePolicyPage() {
       <p>This helps us improve user experience.</p>
 
       <h3>Advertising Cookies</h3>
-      <p>GPT CLEAN UP displays ads to support our free service. Advertising partners (such as Google AdSense) may use cookies to:</p>
+      <p>AI Text Cleanup Tools displays ads to support our free service. Advertising partners (such as Google AdSense) may use cookies to:</p>
       <ul>
         <li>deliver relevant ads</li>
         <li>limit how often you see an ad</li>
@@ -93,12 +93,12 @@ export default function CookiePolicyPage() {
         We may update this Cookie Policy when laws, services, or technologies change. Updated versions will be posted here with a revised
         &quot;Last Updated&quot; date.
       </p>
-      <p>Continued use of GPT CLEAN UP after updates means you accept the changes.</p>
+      <p>Continued use of AI Text Cleanup Tools after updates means you accept the changes.</p>
 
       <h2>6. Contact Us</h2>
       <p>For questions about this Cookie Policy, contact us at:</p>
       <p>
-        <a href="mailto:support@gptcleanuptools.com">support@gptcleanuptools.com</a>
+        <a href="mailto:support@aitextcleanuptools.com">support@aitextcleanuptools.com</a>
       </p>
     </article>
   );

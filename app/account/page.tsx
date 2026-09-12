@@ -178,7 +178,7 @@ export default function AccountPage() {
         <div className="mt-4 text-center">
           <p className="text-[11px] text-slate-400">
             Want to delete your account? Contact{' '}
-            <a href="mailto:support@gptcleanuptools.com" className="underline hover:text-slate-600">support@gptcleanuptools.com</a>
+            <a href="mailto:support@aitextcleanuptools.com" className="underline hover:text-slate-600">support@aitextcleanuptools.com</a>
           </p>
         </div>
 

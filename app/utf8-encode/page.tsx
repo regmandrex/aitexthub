@@ -197,7 +197,7 @@ const writeUp = (
         inspect it with confidence.
       </p>
       <p>
-        The UTF-8 Encode tool on gptcleanuptools.com turns text into hex byte values. It runs locally in your browser and does not store any data.
+        The UTF-8 Encode tool on AI Text Cleanup Tools turns text into hex byte values. It runs locally in your browser and does not store any data.
         This makes it useful for debugging, documentation, and technical workflows where you need a precise byte representation. It is also a
         great learning tool for understanding how Unicode characters map to bytes.
       </p>

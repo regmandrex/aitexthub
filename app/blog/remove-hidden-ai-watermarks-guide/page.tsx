@@ -6,7 +6,7 @@ import AdSenseSlot from '../../../components/ads/AdSenseSlot';
 import type { Metadata } from 'next';
 
 const urlPath = '/blog/remove-hidden-ai-watermarks-guide';
-const title = 'Remove Hidden AI Watermarks (Step-by-Step Guide) | GPTCLEANUP AI';
+const title = 'Remove Hidden AI Watermarks (Step-by-Step Guide) | AI Text Cleanup Tools';
 const headline = 'Remove Hidden AI Watermarks: A Practical, Step-by-Step Guide (What to Remove, What to Ignore, and What Actually Matters)';
 const description =
   'A practical guide to removing real hidden AI text artifacts (invisible Unicode, mixed whitespace, formatting remnants) without rewriting or harming SEO.';

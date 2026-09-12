@@ -6,7 +6,7 @@ import AdSenseSlot from '../../../components/ads/AdSenseSlot';
 import type { Metadata } from 'next';
 
 const urlPath = '/blog/are-ai-watermarks-ethical';
-const title = 'Are AI Watermarks Ethical? The Privacy Debate Around Hidden Text Markers | GPTCLEANUP AI';
+const title = 'Are AI Watermarks Ethical? The Privacy Debate Around Hidden Text Markers | AI Text Cleanup Tools';
 const headline = 'Are AI Watermarks Ethical? The Privacy Debate Around Hidden Text Markers';
 const description =
   'AI watermarks raise legitimate questions about privacy, consent, and surveillance. This guide presents both sides and offers a practical framework for thinking about the debate.';
@@ -265,7 +265,7 @@ export default function AreAiWatermarksEthicalPage() {
           removing watermarks from your own legitimate use of AI tools for your own private purposes.
         </p>
         <p className="text-slate-700">
-          The <Link href="/">GPT Cleanup Tools</Link> suite addresses the currently practical type: removing invisible
+          The <Link href="/">AI Text Cleanup Tools</Link> suite addresses the currently practical type: removing invisible
           Unicode characters and other artifacts that travel with AI text. This is technical maintenance, not evasion.
         </p>
       </section>
@@ -276,7 +276,7 @@ export default function AreAiWatermarksEthicalPage() {
           Use the <Link href="/chatgpt-watermark-detector">ChatGPT Watermark Detector</Link> to see what invisible markers
           are present in your text, and the <Link href="/invisible-character-detector">Invisible Character Detector</Link> for
           detailed Unicode analysis. Knowing what is in your text &mdash; and having the choice to clean it &mdash; is a form
-          of user transparency that the <Link href="/">GPT Cleanup Tools</Link> suite provides.
+          of user transparency that the <Link href="/">AI Text Cleanup Tools</Link> suite provides.
         </p>
       </div>
     </article>

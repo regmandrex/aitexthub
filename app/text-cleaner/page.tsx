@@ -16,16 +16,10 @@ import { getToolBySlug } from '@/lib/tools/registry';
 
 const toolSlug = 'text-cleaner';
 
-function RailAd({ side }: { side: 'left' | 'right' }) {
-  const sideClass = side === 'left' ? 'left-4' : 'right-4';
-  return (
-    <div className={`hidden lg:block fixed top-[220px] ${sideClass} z-20`}>
-      <div className="w-[180px] min-h-[260px]">
-        <AdSenseSlot className="w-full" />
-      </div>
-    </div>
-  );
+function RailAd(_props: { side: 'left' | 'right' }) {
+  return null;
 }
+
 
 const faqs: FaqItem[] = [
   {
@@ -91,7 +85,7 @@ const faqs: FaqItem[] = [
   {
     category: 'Detection',
     question: 'Does this text cleaner work against Turnitin, GPTZero, Originality.ai, and Copyleaks?',
-    answer: 'The text cleaner targets the formatting layer that detection platforms like Turnitin, GPTZero, Originality.ai, Copyleaks, Winston AI, and Sapling can include as one of their surface signals, but it does not modify the underlying language patterns those tools score against. Hidden Unicode characters, zero-width spaces, and unusual spacing runs are easy fingerprints for any classifier to flag because they survive copy and paste from AI chat interfaces, and removing them addresses one technical detection vector. However, the deeper layer these detectors evaluate is statistical: token-level perplexity, burstiness, sentence length variance, and vocabulary distribution. Cleaning formatting does not change any of that, so a draft can still be flagged as AI-generated even after every invisible character is stripped. A clean text cleaner pass is a sensible first step for hygiene reasons alone, and it reduces one fingerprint Turnitin, GPTZero, and Copyleaks can use. To address the statistical layer that platforms like Originality.ai, Winston AI, and Sapling weight most heavily, you would need to rewrite the text with the GPTCleanup Pro humanizer, which targets perplexity and burstiness directly rather than just the formatting residue.',
+    answer: 'The text cleaner targets the formatting layer that detection platforms like Turnitin, GPTZero, Originality.ai, Copyleaks, Winston AI, and Sapling can include as one of their surface signals, but it does not modify the underlying language patterns those tools score against. Hidden Unicode characters, zero-width spaces, and unusual spacing runs are easy fingerprints for any classifier to flag because they survive copy and paste from AI chat interfaces, and removing them addresses one technical detection vector. However, the deeper layer these detectors evaluate is statistical: token-level perplexity, burstiness, sentence length variance, and vocabulary distribution. Cleaning formatting does not change any of that, so a draft can still be flagged as AI-generated even after every invisible character is stripped. A clean text cleaner pass is a sensible first step for hygiene reasons alone, and it reduces one fingerprint Turnitin, GPTZero, and Copyleaks can use. To address the statistical layer that platforms like Originality.ai, Winston AI, and Sapling weight most heavily, you would need to rewrite the text with the AI Text Cleanup Tools Pro humanizer, which targets perplexity and burstiness directly rather than just the formatting residue.',
   },
   {
     category: 'Compatibility',
@@ -190,7 +184,7 @@ const article = (
   <div className="prose prose-slate max-w-none text-sm prose-headings:font-semibold prose-headings:text-slate-900 prose-p:text-slate-700 prose-li:text-slate-700">
     <h2>Text Cleaner — Clean Text Online Free in One Click</h2>
     <p>A <strong>text cleaner</strong> removes the invisible and unwanted characters that accumulate in text during copy-paste operations from AI tools, word processors, websites, and PDFs. Every time you copy text from one application and paste it into another, formatting artifacts follow — zero-width spaces, non-breaking spaces, markdown symbols, curly quotes, em dashes — and cause problems ranging from cosmetic inconsistencies to outright errors in code and data systems. A <strong>text cleaner online</strong> strips all of these in one click and returns plain, neutral text that behaves consistently in any destination.</p>
-    <p>GPTCLEANUP AI is a free <strong>text cleaner</strong> — also known as a <strong>textcleaner</strong> — that requires no account, no upload, and no subscription. Paste your text, click Clean Text, and copy the clean result in seconds. It works on text from any source: AI models, word processors, PDFs, websites, email clients, and spreadsheets.</p>
+    <p>AI Text Cleanup Tools is a free <strong>text cleaner</strong> — also known as a <strong>textcleaner</strong> — that requires no account, no upload, and no subscription. Paste your text, click Clean Text, and copy the clean result in seconds. It works on text from any source: AI models, word processors, PDFs, websites, email clients, and spreadsheets.</p>
 
     <h2>What a Text Cleaner Does</h2>
     <p>A text cleaner operates on three layers of unwanted content that accumulate in text during generation and copy operations.</p>
@@ -288,7 +282,7 @@ const article = (
     <p>A <strong>textcleaner</strong> — sometimes written as one word — is exactly what this tool is: a single-function utility that takes raw text from any source and returns clean, standardized text. As a complete <strong>textcleaner</strong> and <strong>text cleaning</strong> solution, it handles the full spectrum of text contamination: invisible Unicode characters, markdown formatting symbols, typographic substitutions (curly quotes, em dashes, ellipsis), spacing irregularities, and line ending inconsistencies. The <strong>text cleaning</strong> operation runs in a single click — no configuration, no option selection, no multiple passes. Paste your text, click Clean Text, copy the clean result. That is the complete <strong>textcleaner</strong> workflow.</p>
 
     <h2>Free Text Cleaner with No Limits</h2>
-    <p>GPTCLEANUP AI is a <strong>text cleaner free</strong> to use with no account, no character limit, and no subscription. There is no premium tier — every feature is available to everyone at no cost. This includes invisible character removal, markdown stripping, curly quote normalization, em dash normalization, spacing normalization, and line ending normalization. The tool runs locally in your browser, processing text on your device without transmitting it to any server. This makes it safe for confidential content of any kind. Whether you clean one paragraph or a hundred-page document, the text cleaner handles it instantly and completely free. Bookmark this page and use it as your standard first step for any text that needs to move from an AI tool, word processor, or web source into a clean, reliable destination.</p>
+    <p>AI Text Cleanup Tools is a <strong>text cleaner free</strong> to use with no account, no character limit, and no subscription. There is no premium tier — every feature is available to everyone at no cost. This includes invisible character removal, markdown stripping, curly quote normalization, em dash normalization, spacing normalization, and line ending normalization. The tool runs locally in your browser, processing text on your device without transmitting it to any server. This makes it safe for confidential content of any kind. Whether you clean one paragraph or a hundred-page document, the text cleaner handles it instantly and completely free. Bookmark this page and use it as your standard first step for any text that needs to move from an AI tool, word processor, or web source into a clean, reliable destination.</p>
   </div>
   </section>
 );

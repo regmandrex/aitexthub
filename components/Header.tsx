@@ -1,7 +1,6 @@
 'use client';
 
 import Link from 'next/link';
-import Image from 'next/image';
 import { Suspense, useEffect, useState } from 'react';
 import { useSearchParams } from 'next/navigation';
 import NavDrawer from './NavDrawer';
@@ -52,16 +51,13 @@ export default function Header() {
         <div className="relative mx-auto flex max-w-6xl items-center justify-between px-4 py-3 md:px-6">
           <Link
             href="/"
-            aria-label="GPTCLEANUP AI"
+            aria-label="AI Text Cleanup Tools"
             className="flex items-center hover:opacity-90"
           >
-            <Image
-              src="/brand/gpt clean up logo homepage.png"
-              alt="GPTCLEANUP AI"
-              width={220}
-              height={104}
-              priority
-              className="h-16 w-auto md:h-[72px]"
+            <img
+              src="/brand/ai-text-cleanup-tools-generated.png"
+              alt="AI Text Cleanup Tools"
+              className="h-14 w-auto max-w-[220px] object-contain md:h-16"
             />
           </Link>
 

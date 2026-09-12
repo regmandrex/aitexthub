@@ -6,7 +6,7 @@ import AdSenseSlot from '../../../components/ads/AdSenseSlot';
 import type { Metadata } from 'next';
 
 const urlPath = '/blog/what-is-a-space-remover-tool';
-const title = 'What is a Space Remover Tool? | GPTCLEANUP AI';
+const title = 'What is a Space Remover Tool? | AI Text Cleanup Tools';
 const headline = 'What is a Space Remover Tool? (How It Works & Why You Need It)';
 const description =
   "Discover how space remover tools work, why they're essential for writers and developers, and how they improve text quality instantly.";

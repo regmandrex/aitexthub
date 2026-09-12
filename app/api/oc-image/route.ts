@@ -38,8 +38,8 @@ export async function POST(req: NextRequest) {
       headers: {
         Authorization: `Bearer ${apiKey}`,
         'Content-Type': 'application/json',
-        'HTTP-Referer': process.env.NEXT_PUBLIC_SITE_URL ?? 'https://gptcleanuptools.com',
-        'X-Title': `GPT Cleanup Tools - ${body.tool || 'OC Maker'}`,
+        'HTTP-Referer': process.env.NEXT_PUBLIC_SITE_URL ?? 'https://aitextcleanuptools.com',
+        'X-Title': `AI Text Cleanup Tools - ${body.tool || 'OC Maker'}`,
       },
       body: JSON.stringify({ model: IMAGE_MODEL, prompt, n: 1, size: '1024x1024', quality: 'medium', output_format: 'png' }),
     });

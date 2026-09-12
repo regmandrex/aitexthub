@@ -6,7 +6,7 @@ import AdSenseSlot from '../../../components/ads/AdSenseSlot';
 import type { Metadata } from 'next';
 
 const urlPath = '/blog/how-to-remove-chatgpt-watermarks-from-word-with-screenshots';
-const title = 'How to Remove ChatGPT Watermarks from Word Documents (Step-by-Step) | GPTCLEANUP AI';
+const title = 'How to Remove ChatGPT Watermarks from Word Documents (Step-by-Step) | AI Text Cleanup Tools';
 const headline = 'How to Remove ChatGPT Watermarks from Word Documents (Step-by-Step)';
 const description =
   'Step-by-step guide to removing ChatGPT watermarks from Word documents: specific characters to find and replace, tool workflow, and verification steps.';
@@ -98,7 +98,7 @@ export default function HowToRemoveChatGptWatermarksFromWordWithScreenshotsPage(
               <strong>Copy to clipboard.</strong> Ctrl+C / Cmd+C. This copies all text including any embedded invisible characters.
             </li>
             <li>
-              <strong>Go to <Link href="/">GPT Cleanup Tools</Link>.</strong> Open the main text cleaner in your browser.
+              <strong>Go to <Link href="/">AI Text Cleanup Tools</Link>.</strong> Open the main text cleaner in your browser.
             </li>
             <li>
               <strong>Paste into the input field.</strong> Ctrl+V / Cmd+V. The text appears in the cleaner.
@@ -213,7 +213,7 @@ export default function HowToRemoveChatGptWatermarksFromWordWithScreenshotsPage(
           <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
             <p className="font-semibold text-slate-900">Prevention: Always clean before pasting</p>
             <p className="mt-2">
-              Make it a habit to route all ChatGPT text through the <Link href="/">GPT Cleanup Tools</Link> before
+              Make it a habit to route all ChatGPT text through the <Link href="/">AI Text Cleanup Tools</Link> before
               pasting it anywhere. This adds 30 seconds to your workflow and permanently prevents the problem.
             </p>
           </div>
@@ -230,7 +230,7 @@ export default function HowToRemoveChatGptWatermarksFromWordWithScreenshotsPage(
       <div className="mt-8 rounded-2xl border border-brand-100 bg-brand-50 p-4 text-sm text-brand-800">
         <p className="font-semibold">The browser tool method is faster than in-Word Find and Replace for most users.</p>
         <p>
-          Use the <Link href="/">GPT Cleanup Tools</Link> main cleaner to handle everything at once. For targeted zero-width
+          Use the <Link href="/">AI Text Cleanup Tools</Link> main cleaner to handle everything at once. For targeted zero-width
           space removal, the <Link href="/zero-width-space-remover">Zero-Width Space Remover</Link> is the fastest option.
           For em dash normalization, the <Link href="/em-dash-remover">Em Dash Remover</Link> handles that specifically.
           Verify your work with the Invisible Character Detector.

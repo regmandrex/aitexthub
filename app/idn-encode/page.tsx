@@ -203,7 +203,7 @@ const writeUp = (
         Punycode, an encoding that converts Unicode labels into ASCII so they can travel safely through DNS and legacy software.
       </p>
       <p>
-        The IDN Encode tool on gptcleanuptools.com converts a Unicode hostname into its ASCII Punycode equivalent. It runs entirely in the
+        The IDN Encode tool on AI Text Cleanup Tools converts a Unicode hostname into its ASCII Punycode equivalent. It runs entirely in the
         browser, so your input never leaves your device. Use it when you need to register a domain, configure certificates, store hostnames in
         systems that require ASCII, or debug how a Unicode domain is represented. The tool focuses on accuracy and readability so you can trust
         the output in production workflows.

@@ -6,7 +6,7 @@ import AdSenseSlot from '../../../components/ads/AdSenseSlot';
 import type { Metadata } from 'next';
 
 const urlPath = '/blog/how-to-delete-white-space-frequently-asked-questions';
-const title = 'How to Delete White Space: Frequently Asked Questions | GPTCLEANUP AI';
+const title = 'How to Delete White Space: Frequently Asked Questions | AI Text Cleanup Tools';
 const headline = 'How to Delete White Space: Frequently Asked Questions';
 const description =
   'Answers to common questions about removing white space, cleaning text, and using online space remover tools.';

@@ -6,7 +6,7 @@ import AdSenseSlot from '../../../components/ads/AdSenseSlot';
 import type { Metadata } from 'next';
 
 const urlPath = '/blog/comprehensive-guide-to-cleaning-ai-text-before-publishing';
-const title = 'Comprehensive Guide to Cleaning AI Text Before Publishing | GPTCLEANUP AI';
+const title = 'Comprehensive Guide to Cleaning AI Text Before Publishing | AI Text Cleanup Tools';
 const headline = 'Comprehensive Guide to Cleaning AI Text Before Publishing';
 const description =
   'A complete 2026 workflow to sanitize AI text: remove invisible Unicode, normalize whitespace, rebuild structure, and publish SEO-safe content.';

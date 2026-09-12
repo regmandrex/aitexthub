@@ -214,7 +214,7 @@ const writeUp = (
       <h2>Introduction</h2>
       <p>
         Strip HTML is a practical text utility that removes HTML tags from text and returns clean, readable content. The Strip HTML tool on
-        gptcleanuptools.com is designed for people who need plain text without markup, scripts, or styling mixed into the copy. It is an online
+        AI Text Cleanup Tools is designed for people who need plain text without markup, scripts, or styling mixed into the copy. It is an online
         Strip HTML tool that runs in the browser and performs deterministic text processing on the exact input you provide. If you are looking for
         a free Strip HTML option that focuses on clarity and predictability, this tool is built for that use case.
       </p>
@@ -461,7 +461,7 @@ const writeUp = (
 
       <h2>Privacy and Security</h2>
       <p>
-        The Strip HTML tool on gptcleanuptools.com is designed to process text in the browser. It does not require you to upload files or connect to
+        The Strip HTML tool on AI Text Cleanup Tools is designed to process text in the browser. It does not require you to upload files or connect to
         external services. Your text is processed only when you run the tool, and the output is displayed directly in your session. The tool does
         not store your input or output, and it does not need to track your content to perform its function. This model supports privacy and keeps
         sensitive text out of third-party systems.

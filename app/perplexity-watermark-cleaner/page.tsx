@@ -10,17 +10,10 @@ import { RelatedTools } from '../../components/tool/RelatedTools';
 import AdSenseSlot from '../../components/ads/AdSenseSlot';
 import BelowToolAd from '../../components/ads/BelowToolAd';
 
-function RailAd({ side }: { side: 'left' | 'right' }) {
-  const sideClass = side === 'left' ? 'left-4' : 'right-4';
-
-  return (
-    <div className={`hidden lg:block fixed top-[220px] ${sideClass} z-20`}>
-      <div className="w-[180px] min-h-[260px]">
-        <AdSenseSlot className="w-full" />
-      </div>
-    </div>
-  );
+function RailAd(_props: { side: 'left' | 'right' }) {
+  return null;
 }
+
 
 
 export async function generateMetadata() {
@@ -504,7 +497,7 @@ export default async function PerplexityWatermarkCleanerPage() {
         <div className="mt-10 space-y-3">
           <h2 className="text-2xl font-semibold text-slate-900">Perplexity Watermark Cleaner - Frequently Asked Questions</h2>
           <p className="text-slate-700">
-            Welcome to the comprehensive FAQ section for the Perplexity Watermark Cleaner, developed and hosted by GPTCleanUpTools.com. This section is
+            Welcome to the comprehensive FAQ section for the Perplexity Watermark Cleaner, developed and hosted by AI Text Cleanup Tools. This section is
             designed to provide clear, accurate, and policy-safe answers about Perplexity watermarking, AI-generated text cleanup, and the
             legitimate uses of text normalization tools.
           </p>

@@ -38,6 +38,6 @@ export default function robots(): MetadataRoute.Robots {
         disallow: '/',
       },
     ],
-    sitemap: 'https://gptcleanuptools.com/sitemap.xml',
+    sitemap: 'https://aitextcleanuptools.com/sitemap.xml',
   };
 }

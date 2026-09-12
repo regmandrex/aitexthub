@@ -59,7 +59,7 @@ export default async function CategoryPage({ params }: PageProps) {
     '@type': 'CollectionPage',
     name: category.title,
     description: category.metaDescription,
-    url: `https://gptcleanuptools.com/ai-tools/${category.slug}`,
+    url: `https://aitextcleanuptools.com/ai-tools/${category.slug}`,
     mainEntity: {
       '@type': 'ItemList',
       numberOfItems: tools.length,
@@ -67,7 +67,7 @@ export default async function CategoryPage({ params }: PageProps) {
         '@type': 'ListItem',
         position: i + 1,
         name: tool.title,
-        url: `https://gptcleanuptools.com/${tool.slug}`,
+        url: `https://aitextcleanuptools.com/${tool.slug}`,
       })),
     },
   };
@@ -76,13 +76,13 @@ export default async function CategoryPage({ params }: PageProps) {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://gptcleanuptools.com' },
-      { '@type': 'ListItem', position: 2, name: 'All Tools', item: 'https://gptcleanuptools.com/ai-tools' },
+      { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://aitextcleanuptools.com' },
+      { '@type': 'ListItem', position: 2, name: 'All Tools', item: 'https://aitextcleanuptools.com/ai-tools' },
       {
         '@type': 'ListItem',
         position: 3,
         name: category.title,
-        item: `https://gptcleanuptools.com/ai-tools/${category.slug}`,
+        item: `https://aitextcleanuptools.com/ai-tools/${category.slug}`,
       },
     ],
   };

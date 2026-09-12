@@ -5,7 +5,7 @@ import type { Metadata } from 'next';
 export async function generateMetadata(): Promise<Metadata> {
   return buildMeta({
     title: 'Disclaimer - Text Tools Terms',
-    description: 'Disclaimer for GPTCLEANUP AI tools.',
+    description: 'Disclaimer for AI Text Cleanup Tools tools.',
     urlPath: '/disclaimer',
   });
 }
@@ -18,7 +18,7 @@ export default function DisclaimerPage() {
 
       <h2>1. General Information</h2>
       <p>
-        The content, tools, and resources provided on GPT CLEAN UP (&quot;we,&quot; &quot;our,&quot; &quot;us&quot;) are intended for general
+        The content, tools, and resources provided on AI Text Cleanup Tools (&quot;we,&quot; &quot;our,&quot; &quot;us&quot;) are intended for general
         informational and educational purposes only. Nothing on this website should be interpreted as professional, legal, academic,
         technical, or financial advice.
       </p>
@@ -35,7 +35,7 @@ export default function DisclaimerPage() {
       <p>The tools are provided strictly on an &quot;as-is&quot; and &quot;as-available&quot; basis.</p>
 
       <h2>3. No Professional or Academic Guarantees</h2>
-      <p>GPT CLEAN UP does not provide:</p>
+      <p>AI Text Cleanup Tools does not provide:</p>
       <ul>
         <li>legal advice</li>
         <li>academic validation</li>
@@ -51,7 +51,7 @@ export default function DisclaimerPage() {
 
       <h2>4. No Affiliation With Third-Party Brands</h2>
       <p>
-        GPT CLEAN UP is not affiliated with, endorsed by, or in partnership with any AI model, company, detector, or platform referenced on
+        AI Text Cleanup Tools is not affiliated with, endorsed by, or in partnership with any AI model, company, detector, or platform referenced on
         this website.
       </p>
       <p>Any brand names, model names, trademarks, or references are used strictly for descriptive, educational, or comparative purposes.</p>
@@ -76,7 +76,7 @@ export default function DisclaimerPage() {
       <p>Affiliate partnerships never influence our reviews, comparisons, or editorial decisions.</p>
 
       <h2>7. Limitation of Liability</h2>
-      <p>To the fullest extent permitted by law, GPT CLEAN UP shall not be liable for:</p>
+      <p>To the fullest extent permitted by law, AI Text Cleanup Tools shall not be liable for:</p>
       <ul>
         <li>errors or omissions in content</li>
         <li>tool malfunctions</li>
@@ -96,7 +96,7 @@ export default function DisclaimerPage() {
       <h2>9. Contact Us</h2>
       <p>If you have any concerns regarding this Disclaimer, contact us at:</p>
       <p>
-        <a href="mailto:support@gptcleanuptools.com">support@gptcleanuptools.com</a>
+        <a href="mailto:support@aitextcleanuptools.com">support@aitextcleanuptools.com</a>
       </p>
       <p>We respond as quickly as possible.</p>
     </article>

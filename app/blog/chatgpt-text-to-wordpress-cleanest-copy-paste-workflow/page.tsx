@@ -6,7 +6,7 @@ import AdSenseSlot from '../../../components/ads/AdSenseSlot';
 import type { Metadata } from 'next';
 
 const urlPath = '/blog/chatgpt-text-to-wordpress-cleanest-copy-paste-workflow';
-const title = 'ChatGPT Text to WordPress: Cleanest Copy-Paste Workflow (SEO-Safe & Performance-Optimized) | GPTCLEANUP AI';
+const title = 'ChatGPT Text to WordPress: Cleanest Copy-Paste Workflow (SEO-Safe & Performance-Optimized) | AI Text Cleanup Tools';
 const headline = 'ChatGPT Text to WordPress: The Cleanest Copy-Paste Workflow (SEO-Safe & Performance-Optimized)';
 const description =
   'A reliable workflow to move ChatGPT text into WordPress without broken blocks, invisible Unicode, spacing issues, or Core Web Vitals regressions.';

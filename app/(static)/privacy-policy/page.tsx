@@ -5,7 +5,7 @@ import { buildMeta } from '@/lib/seo-meta';
 export async function generateMetadata() {
   return buildMeta({
     title: 'Privacy Policy - Data Protection',
-    description: 'Privacy policy for GPTCleanup AI. Covers data collection, account information, payment processing, cookies, and your rights.',
+    description: 'Privacy policy for AI Text Cleanup Tools. Covers data collection, account information, payment processing, cookies, and your rights.',
     urlPath: '/privacy-policy',
   });
 }
@@ -39,7 +39,7 @@ export default async function PrivacyPolicyPage() {
             <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-violet-600 to-purple-700 text-sm font-black text-white shadow-sm">1</span>
             <h2 className="text-lg font-bold text-slate-900">Introduction</h2>
           </div>
-          <p className="text-sm text-slate-700">Welcome to GPTCleanup (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;). Your privacy is a core design principle of our platform. This Privacy Policy explains what information we collect, why we collect it, how we use it, and how we protect it when you use our website, free tools, and paid Pro services.</p>
+          <p className="text-sm text-slate-700">Welcome to AI Text Cleanup Tools (&quot;we,&quot; &quot;our,&quot; or &quot;us&quot;). Your privacy is a core design principle of our platform. This Privacy Policy explains what information we collect, why we collect it, how we use it, and how we protect it when you use our website, free tools, and paid Pro services.</p>
           <p className="mt-2 text-sm text-slate-700">Our philosophy is simple: we collect the minimum data necessary to operate the Service. Free tools process text entirely in your browser — your content never touches our servers. Pro tools that require server-side processing transmit your text only for the duration of the request and do not retain it afterward.</p>
         </section>
 
@@ -96,7 +96,7 @@ export default async function PrivacyPolicyPage() {
             <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-violet-600 to-purple-700 text-sm font-black text-white shadow-sm">3</span>
             <h2 className="text-lg font-bold text-slate-900">Information We Do Not Collect</h2>
           </div>
-          <p className="text-sm text-slate-700 mb-3">To be clear, GPTCleanup does <strong>not</strong> collect:</p>
+          <p className="text-sm text-slate-700 mb-3">To be clear, AI Text Cleanup Tools does <strong>not</strong> collect:</p>
           <div className="grid gap-2 md:grid-cols-2">
             {[
               'Text you paste into free tools (processed in your browser only)',
@@ -159,7 +159,7 @@ export default async function PrivacyPolicyPage() {
             <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-violet-600 to-purple-700 text-sm font-black text-white shadow-sm">5</span>
             <h2 className="text-lg font-bold text-slate-900">Cookies</h2>
           </div>
-          <p className="text-sm text-slate-700 mb-3">GPTCleanup uses the following types of cookies:</p>
+          <p className="text-sm text-slate-700 mb-3">AI Text Cleanup Tools uses the following types of cookies:</p>
 
           <div className="overflow-hidden rounded-xl border border-slate-200">
             <div className="grid grid-cols-3 border-b border-slate-200 bg-slate-50 text-xs font-semibold uppercase tracking-wider text-slate-600">
@@ -181,7 +181,7 @@ export default async function PrivacyPolicyPage() {
           </div>
 
           <p className="mt-3 text-sm text-slate-700">Pro subscribers do not see advertisements, so AdSense cookies are not set for Pro users.</p>
-          <p className="mt-2 text-sm text-slate-700">You can opt out of personalized advertising via <a href="https://www.google.com/settings/ads" target="_blank" rel="nofollow noreferrer" className="font-semibold text-violet-700 hover:underline">Google Ads Settings</a> or the <a href="https://www.networkadvertising.org/choices" target="_blank" rel="nofollow noreferrer" className="font-semibold text-violet-700 hover:underline">NAI opt-out page</a>. Disabling cookies will not affect your ability to use GPTCleanup tools.</p>
+          <p className="mt-2 text-sm text-slate-700">You can opt out of personalized advertising via <a href="https://www.google.com/settings/ads" target="_blank" rel="nofollow noreferrer" className="font-semibold text-violet-700 hover:underline">Google Ads Settings</a> or the <a href="https://www.networkadvertising.org/choices" target="_blank" rel="nofollow noreferrer" className="font-semibold text-violet-700 hover:underline">NAI opt-out page</a>. Disabling cookies will not affect your ability to use AI Text Cleanup Tools.</p>
         </section>
 
         {/* 6. Advertising */}
@@ -190,7 +190,7 @@ export default async function PrivacyPolicyPage() {
             <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-violet-600 to-purple-700 text-sm font-black text-white shadow-sm">6</span>
             <h2 className="text-lg font-bold text-slate-900">Advertising</h2>
           </div>
-          <p className="text-sm text-slate-700">The free tier of GPTCleanup is supported by third-party advertising through Google AdSense. Advertisers and ad networks may use cookies or device identifiers to serve relevant ads. Google and its partners may use the DoubleClick cookie to deliver personalized or non-personalized ads based on your browsing activity.</p>
+          <p className="text-sm text-slate-700">The free tier of AI Text Cleanup Tools is supported by third-party advertising through Google AdSense. Advertisers and ad networks may use cookies or device identifiers to serve relevant ads. Google and its partners may use the DoubleClick cookie to deliver personalized or non-personalized ads based on your browsing activity.</p>
           <p className="mt-2 text-sm text-slate-700"><strong>Your text content is never shared with advertisers.</strong> We deliberately separate ad delivery from tool functionality. Ads do not have access to any text you paste into our tools or any content you process through the Service.</p>
         </section>
 
@@ -200,12 +200,12 @@ export default async function PrivacyPolicyPage() {
             <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-violet-600 to-purple-700 text-sm font-black text-white shadow-sm">7</span>
             <h2 className="text-lg font-bold text-slate-900">Third-Party Services</h2>
           </div>
-          <p className="text-sm text-slate-700 mb-3">GPTCleanup integrates with the following third-party services, each governed by their own privacy policies:</p>
+          <p className="text-sm text-slate-700 mb-3">AI Text Cleanup Tools integrates with the following third-party services, each governed by their own privacy policies:</p>
           <div className="space-y-2">
             {[
               { name: 'Payment processor', role: 'Handles payment collection, tax compliance, and billing for Pro subscriptions' },
               { name: 'Google OAuth', role: 'Optional sign-in method — we receive your name and email from Google' },
-              { name: 'Email provider', role: 'Sends transactional emails (verification, password reset) from noreply@gptcleanuptools.com' },
+              { name: 'Email provider', role: 'Sends transactional emails (verification, password reset) from noreply@aitextcleanuptools.com' },
               { name: 'AI providers', role: 'AI text processing for the Pro humanizer — text is sent via API and not retained after processing' },
               { name: 'Google AdSense', role: 'Ad delivery on free tier pages' },
               { name: 'Google Analytics', role: 'Aggregated, non-personal site usage statistics' },
@@ -288,7 +288,7 @@ export default async function PrivacyPolicyPage() {
             <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-violet-600 to-purple-700 text-sm font-black text-white shadow-sm">10</span>
             <h2 className="text-lg font-bold text-slate-900">Children&apos;s Privacy</h2>
           </div>
-          <p className="text-sm text-slate-700">GPTCleanup is not designed for children under 13. We do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal data, contact us at <a href="mailto:support@gptcleanuptools.com" className="font-semibold text-violet-700 hover:underline">support@gptcleanuptools.com</a> and we will delete it promptly.</p>
+          <p className="text-sm text-slate-700">AI Text Cleanup Tools is not designed for children under 13. We do not knowingly collect personal information from children under 13. If you believe a child has provided us with personal data, contact us at <a href="mailto:support@aitextcleanuptools.com" className="font-semibold text-violet-700 hover:underline">support@aitextcleanuptools.com</a> and we will delete it promptly.</p>
         </section>
 
         {/* 11. Your Rights */}
@@ -317,7 +317,7 @@ export default async function PrivacyPolicyPage() {
               </li>
             ))}
           </ul>
-          <p className="mt-3 text-sm text-slate-700">To exercise any of these rights, contact us at <a href="mailto:support@gptcleanuptools.com" className="font-semibold text-violet-700 hover:underline">support@gptcleanuptools.com</a>. We will respond within 30 days. You can delete your account at any time from your Account Settings — this removes your data from our database immediately.</p>
+          <p className="mt-3 text-sm text-slate-700">To exercise any of these rights, contact us at <a href="mailto:support@aitextcleanuptools.com" className="font-semibold text-violet-700 hover:underline">support@aitextcleanuptools.com</a>. We will respond within 30 days. You can delete your account at any time from your Account Settings — this removes your data from our database immediately.</p>
         </section>
 
         {/* 12. Updates */}
@@ -334,13 +334,13 @@ export default async function PrivacyPolicyPage() {
           <h2 className="text-xl font-bold md:text-2xl">Privacy questions?</h2>
           <p className="mt-2 text-sm text-violet-100">We respond to privacy inquiries within 30 days.</p>
           <Link
-            href="mailto:support@gptcleanuptools.com"
+            href="mailto:support@aitextcleanuptools.com"
             className="mt-5 inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-bold text-violet-700 shadow-lg transition hover:bg-violet-50"
           >
             <svg className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
             </svg>
-            support@gptcleanuptools.com
+            support@aitextcleanuptools.com
           </Link>
         </section>
 

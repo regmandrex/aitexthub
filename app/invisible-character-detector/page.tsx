@@ -342,7 +342,7 @@ const writeUp = (
       <h2>Invisible Character Detector — Find, View, and Remove Hidden Unicode Characters</h2>
       <p>
         This guide explains what an Invisible Character Detector does, why hidden Unicode characters cause real problems, and how to use the
-        output to clean text without changing its meaning. The tool on gptcleanuptools.com is a deterministic text utility. It works only on the
+        output to clean text without changing its meaning. The tool on AI Text Cleanup Tools is a deterministic text utility. It works only on the
         text you provide, runs in the browser, and does not connect to AI models or external services. Its purpose is to reveal hidden characters
         so you can see them, report them, and decide how to handle them. Whether you are a developer debugging a string comparison, a content
         editor cleaning pasted copy, or a researcher normalizing a dataset, a reliable invisible character viewer is an essential diagnostic step.
@@ -386,7 +386,7 @@ const writeUp = (
         repeatable cleanup workflows, especially when you need to audit or document changes.
       </p>
       <p>
-        The tool on gptcleanuptools.com is browser based and processes text locally. It does not store your input and does not send it to external
+        The tool on AI Text Cleanup Tools is browser based and processes text locally. It does not store your input and does not send it to external
         services. It is a focused utility for visibility, not a text transformation engine. If you need to remove the characters, you can use a
         separate cleanup tool after you have identified them.
       </p>
@@ -954,7 +954,7 @@ const writeUp = (
 
       <h2>Final Summary and When to Use This Tool</h2>
       <p>
-        The Invisible Character Detector on gptcleanuptools.com reveals hidden Unicode characters that cause formatting issues in plain text.
+        The Invisible Character Detector on AI Text Cleanup Tools reveals hidden Unicode characters that cause formatting issues in plain text.
         It marks those characters with visible tokens and provides a report so you can understand what is present. The tool works locally in your
         browser and does not change the text itself, which makes it a safe diagnostic step.
       </p>

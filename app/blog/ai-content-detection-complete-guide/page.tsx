@@ -6,7 +6,7 @@ import AdSenseSlot from '../../../components/ads/AdSenseSlot';
 import type { Metadata } from 'next';
 
 const urlPath = '/blog/ai-content-detection-complete-guide';
-const title = 'AI Content Detection: The Complete Guide for 2026 | GPTCLEANUP AI';
+const title = 'AI Content Detection: The Complete Guide for 2026 | AI Text Cleanup Tools';
 const headline = 'AI Content Detection: The Complete Guide for 2026';
 const description =
   'Master AI content detection in 2026. Learn how AI detectors work, why they make mistakes, what signals they scan for, and practical strategies to ensure your content meets authenticity standards.';

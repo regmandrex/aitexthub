@@ -16,22 +16,16 @@ import { getToolBySlug } from '@/lib/tools/registry';
 
 const toolSlug = 'clean-paste';
 
-function RailAd({ side }: { side: 'left' | 'right' }) {
-  const sideClass = side === 'left' ? 'left-4' : 'right-4';
-  return (
-    <div className={`hidden lg:block fixed top-[220px] ${sideClass} z-20`}>
-      <div className="w-[180px] min-h-[260px]">
-        <AdSenseSlot className="w-full" />
-      </div>
-    </div>
-  );
+function RailAd(_props: { side: 'left' | 'right' }) {
+  return null;
 }
+
 
 const faqs: FaqItem[] = [
   {
     category: 'General',
     question: 'What is clean paste?',
-    answer: 'Clean paste is the practice of cleaning text before pasting it into your target application, so that hidden characters, formatting artifacts, and spacing irregularities do not enter your document, CMS, or data system. Instead of pasting directly from an AI tool or web source into your editor, you first paste into a text cleaner like GPTCLEANUP AI, run the cleaning process, then copy and paste the clean result into your final destination. This two-step approach ensures every paste is a clean paste — containing only visible, standard characters with no invisible Unicode artifacts, no leftover markdown, and no irregular spacing.',
+    answer: 'Clean paste is the practice of cleaning text before pasting it into your target application, so that hidden characters, formatting artifacts, and spacing irregularities do not enter your document, CMS, or data system. Instead of pasting directly from an AI tool or web source into your editor, you first paste into a text cleaner like AI Text Cleanup Tools, run the cleaning process, then copy and paste the clean result into your final destination. This two-step approach ensures every paste is a clean paste — containing only visible, standard characters with no invisible Unicode artifacts, no leftover markdown, and no irregular spacing.',
   },
   {
     category: 'General',
@@ -131,12 +125,12 @@ const faqs: FaqItem[] = [
   {
     category: 'Comparison',
     question: 'How is clean paste different from cleanpaste.site?',
-    answer: 'Both GPTCLEANUP AI\'s clean paste tool and cleanpaste.site address the same problem — removing formatting artifacts from pasted text. GPTCLEANUP AI is a comprehensive AI text cleaning platform with dedicated tools for invisible character removal, space normalization, watermark detection, and more, all free and browser-local. The clean paste tool here handles the full range of invisible Unicode characters, markdown, curly quotes, and spacing normalization in one step. No account, no upload, no character limits.',
+    answer: 'Both AI Text Cleanup Tools\'s clean paste tool and cleanpaste.site address the same problem — removing formatting artifacts from pasted text. AI Text Cleanup Tools is a comprehensive AI text cleaning platform with dedicated tools for invisible character removal, space normalization, watermark detection, and more, all free and browser-local. The clean paste tool here handles the full range of invisible Unicode characters, markdown, curly quotes, and spacing normalization in one step. No account, no upload, no character limits.',
   },
   {
     category: 'Comparison',
     question: 'What is cleanpaste and why do people search for it?',
-    answer: '"Cleanpaste" is a compound keyword that refers to the practice of cleaning text before pasting it — also spelled "clean paste" as two words. People search for cleanpaste tools because they have experienced the problems that uncleaned text causes: asterisks appearing in published content, word count discrepancies, layout breaks, syntax errors in code. The cleanpaste workflow — clean first, then paste into your final destination — is the reliable prevention for all of these issues. GPTCLEANUP AI is a free cleanpaste tool that handles all sources of text contamination in one step.',
+    answer: '"Cleanpaste" is a compound keyword that refers to the practice of cleaning text before pasting it — also spelled "clean paste" as two words. People search for cleanpaste tools because they have experienced the problems that uncleaned text causes: asterisks appearing in published content, word count discrepancies, layout breaks, syntax errors in code. The cleanpaste workflow — clean first, then paste into your final destination — is the reliable prevention for all of these issues. AI Text Cleanup Tools is a free cleanpaste tool that handles all sources of text contamination in one step.',
   },
   {
     category: 'Advanced',
@@ -171,7 +165,7 @@ const faqs: FaqItem[] = [
   {
     category: 'General',
     question: 'What is a clean paste site and what should I look for?',
-    answer: 'A clean paste site is a web tool that removes formatting artifacts and invisible characters from text before you paste it into another application. The best clean paste site removes both rich formatting (markdown, curly quotes, em dashes) and invisible Unicode characters (zero-width spaces, byte-order marks, non-breaking spaces) — not just one layer. GPTCLEANUP AI is a free clean paste site that handles both layers with no account, no upload limit, and browser-local processing for privacy. Bookmark it as your default cleanpaste site for all AI and word processor content.',
+    answer: 'A clean paste site is a web tool that removes formatting artifacts and invisible characters from text before you paste it into another application. The best clean paste site removes both rich formatting (markdown, curly quotes, em dashes) and invisible Unicode characters (zero-width spaces, byte-order marks, non-breaking spaces) — not just one layer. AI Text Cleanup Tools is a free clean paste site that handles both layers with no account, no upload limit, and browser-local processing for privacy. Bookmark it as your default cleanpaste site for all AI and word processor content.',
   },
   {
     category: 'General',
@@ -184,7 +178,7 @@ const article = (
   <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10"><div className="prose prose-slate max-w-none">
     <h2>Clean Paste — Paste Clean Text Every Time</h2>
     <p><strong>Clean paste</strong> is the practice of cleaning text before pasting it into your target application. The standard copy-paste operation does not filter the text you copy — everything travels: the visible words, the invisible Unicode characters, the markdown syntax, the curly quotes, the non-breaking spaces. A <strong>clean paste</strong> workflow inserts one step between copying from the source and pasting into the destination: running the text through a cleaner that removes all of the artifacts that should not be there.</p>
-    <p>GPTCLEANUP AI provides a free <strong>cleanpaste</strong> tool — also known as a clean paste tool — that handles all categories of text contamination in a single click. Paste your text from any source, click Clean Text, and copy the clean result ready for your final destination.</p>
+    <p>AI Text Cleanup Tools provides a free <strong>cleanpaste</strong> tool — also known as a clean paste tool — that handles all categories of text contamination in a single click. Paste your text from any source, click Clean Text, and copy the clean result ready for your final destination.</p>
 
     <h2>The Problem With Direct Paste</h2>
     <p>The problem with pasting directly from an AI tool, word processor, website, or PDF into your final destination is that text from these sources carries invisible characters and formatting artifacts that are not visible on screen but cause real problems in the destination application.</p>
@@ -195,7 +189,7 @@ const article = (
     <p>The clean paste workflow is simple and takes only a few seconds more than a standard paste:</p>
     <ol>
       <li><strong>Copy</strong> your text from the source (AI tool, website, Word document, PDF, email).</li>
-      <li><strong>Paste</strong> into the GPTCLEANUP AI clean paste tool above.</li>
+      <li><strong>Paste</strong> into the AI Text Cleanup Tools clean paste tool above.</li>
       <li><strong>Click</strong> Clean Text to remove all invisible characters, markdown, typographic artifacts, and spacing irregularities.</li>
       <li><strong>Review</strong> the output and the count of removed characters.</li>
       <li><strong>Copy</strong> the clean result from the output area.</li>
@@ -228,21 +222,21 @@ const article = (
     <p>There are also indirect SEO benefits to clean paste. Clean HTML source is easier for search engine crawlers to parse correctly. Meta titles and meta descriptions that contain invisible characters may be truncated or displayed differently in search result snippets. Schema markup (JSON-LD) that contains curly quotes instead of straight quotes can fail to parse, causing your structured data to be ignored. Running all content and metadata through clean paste before publishing ensures your technical SEO layer is clean from the start.</p>
 
     <h2>Clean Paste vs Cleanpaste.site and Other Tools</h2>
-    <p>Several tools exist to address the clean paste problem. Cleanpaste.site is a well-known dedicated clean paste tool. GPTCLEANUP AI provides the same core clean paste functionality as part of a broader AI text cleaning platform, with additional tools for invisible character detection, space removal, watermark cleaning, and more.</p>
-    <p>The key advantages of using GPTCLEANUP AI as your cleanpaste tool: it handles the full range of invisible Unicode characters including the complete set of directional marks, word joiners, and invisible separators; it strips markdown formatting in addition to invisible character removal; it converts typographic special characters including curly quotes and em dashes; and it normalizes spacing and line endings. All processing happens locally in your browser with no server upload. There are no character limits, no account requirements, and no usage tracking of any kind.</p>
+    <p>Several tools exist to address the clean paste problem. Cleanpaste.site is a well-known dedicated clean paste tool. AI Text Cleanup Tools provides the same core clean paste functionality as part of a broader AI text cleaning platform, with additional tools for invisible character detection, space removal, watermark cleaning, and more.</p>
+    <p>The key advantages of using AI Text Cleanup Tools as your cleanpaste tool: it handles the full range of invisible Unicode characters including the complete set of directional marks, word joiners, and invisible separators; it strips markdown formatting in addition to invisible character removal; it converts typographic special characters including curly quotes and em dashes; and it normalizes spacing and line endings. All processing happens locally in your browser with no server upload. There are no character limits, no account requirements, and no usage tracking of any kind.</p>
     <p>Whether you search for "clean paste," "cleanpaste," "paste clean," or "clean text before pasting," this tool provides the same reliable result: text that is completely free of invisible characters, formatting artifacts, and typographic special characters, ready to paste cleanly into any application.</p>
 
     <h2>How Invisible Characters Accumulate Over Multiple Copy-Paste Operations</h2>
     <p>One of the least understood aspects of invisible character contamination is that it accumulates over time. A piece of text that passes through multiple copy-paste operations can collect invisible characters from each source it touches.</p>
     <p>Consider a typical content workflow: an editor generates a draft in ChatGPT (picks up zero-width spaces), copies it to Google Docs for review (picks up non-breaking spaces from Docs formatting), a colleague copies sections to add comments in Word (picks up Word's non-breaking spaces), the revised text is emailed back (picks up email client formatting characters), and finally pasted into a CMS. By the time this text reaches the CMS, it may contain invisible characters from four different sources, each adding its own characteristic artifacts.</p>
-    <p>The clean paste tool at GPTCLEANUP AI handles accumulated invisible characters from all sources simultaneously. It does not matter whether the zero-width space came from ChatGPT, the non-breaking space from Word, and the directional mark from a website — the cleaner removes all of them in one pass. Making clean paste the final step before any text enters its destination breaks the accumulation cycle and ensures the destination receives genuinely clean text regardless of how many sources the text passed through.</p>
+    <p>The clean paste tool at AI Text Cleanup Tools handles accumulated invisible characters from all sources simultaneously. It does not matter whether the zero-width space came from ChatGPT, the non-breaking space from Word, and the directional mark from a website — the cleaner removes all of them in one pass. Making clean paste the final step before any text enters its destination breaks the accumulation cycle and ensures the destination receives genuinely clean text regardless of how many sources the text passed through.</p>
 
     <h2>Clean Paste for Regulated and Sensitive Industries</h2>
     <p>In regulated industries — healthcare, legal, financial services — the clean paste process has additional importance beyond formatting aesthetics.</p>
     <p><strong>Healthcare</strong>: Clinical documentation systems and electronic health records have strict requirements for text formatting and character encoding. Invisible characters in patient notes, clinical summaries, or medication instructions can cause display anomalies in different system views, interfere with automated text processing for billing and coding, and create inconsistencies in audit trails. Clean paste ensures clinical text is technically clean before it enters any healthcare system.</p>
     <p><strong>Legal</strong>: Legal documents are scrutinized for exact character content. A contract clause with an invisible character in a key term could theoretically display differently in different PDF viewers or display systems. Legal drafting software may count characters or words for fee calculation purposes, and invisible characters can inflate those counts. Clean paste before any text enters a legal document management system is the professionally correct approach.</p>
     <p><strong>Financial Services</strong>: Financial reports, prospectuses, and regulatory filings are subject to strict formatting requirements. Invisible characters in numerical values, entity names, or reference codes can cause parsing failures in automated processing systems. Clean paste for any AI-assisted financial document drafting ensures the text layer of these documents is technically clean.</p>
-    <p>For all of these industries, GPTCLEANUP AI's browser-local processing model is essential — the text is cleaned on the device without any server transmission, satisfying even the strictest data handling policies.</p>
+    <p>For all of these industries, AI Text Cleanup Tools's browser-local processing model is essential — the text is cleaned on the device without any server transmission, satisfying even the strictest data handling policies.</p>
 
     <h2>The Hidden Cost of Not Using Clean Paste</h2>
     <p>Most users who skip clean paste do not realize the cost — because invisible character problems are invisible. They do not produce obvious error messages. They produce subtle, hard-to-diagnose symptoms that waste time across the entire content workflow.</p>
@@ -253,9 +247,9 @@ const article = (
     <p>Clean paste prevents all of these scenarios. The ten seconds it takes to clean text before pasting is an investment that pays back in saved time and avoided problems across every downstream use of the text.</p>
 
     <h2>Building Clean Paste Into Your Team Workflow</h2>
-    <p>For individuals, clean paste is a personal habit — remember to clean before pasting, and develop the muscle memory of: copy, open GPTCLEANUP AI, paste, clean, copy, paste to destination. For teams, clean paste should be a written policy in the content workflow documentation.</p>
-    <p>A simple team clean paste policy might read: "All text copied from external sources (AI tools, websites, client documents, email) must be run through GPTCLEANUP AI before pasting into the CMS, email platform, or code repository. This step takes approximately 10 seconds and prevents invisible character issues in published content." Including this as a step in your content checklist, editorial style guide, or onboarding documentation ensures the practice is followed consistently across the team.</p>
-    <p>For development teams, clean paste for AI code can be enforced more formally with a pre-commit hook that checks for common invisible character patterns in changed files and warns the committer if they are found. This catches cases where a developer forgets the manual clean paste step. GPTCLEANUP AI's browser-based approach is complementary to automated tools — use both for comprehensive coverage.</p>
+    <p>For individuals, clean paste is a personal habit — remember to clean before pasting, and develop the muscle memory of: copy, open AI Text Cleanup Tools, paste, clean, copy, paste to destination. For teams, clean paste should be a written policy in the content workflow documentation.</p>
+    <p>A simple team clean paste policy might read: "All text copied from external sources (AI tools, websites, client documents, email) must be run through AI Text Cleanup Tools before pasting into the CMS, email platform, or code repository. This step takes approximately 10 seconds and prevents invisible character issues in published content." Including this as a step in your content checklist, editorial style guide, or onboarding documentation ensures the practice is followed consistently across the team.</p>
+    <p>For development teams, clean paste for AI code can be enforced more formally with a pre-commit hook that checks for common invisible character patterns in changed files and warns the committer if they are found. This catches cases where a developer forgets the manual clean paste step. AI Text Cleanup Tools's browser-based approach is complementary to automated tools — use both for comprehensive coverage.</p>
 
     <h2>Clean Copy and Paste: How to Paste Text Without Formatting Artifacts</h2>
     <p>A <strong>clean copy and paste</strong> operation transfers only the visible words from source to destination — none of the invisible Unicode, none of the markdown symbols, none of the typographic special characters that standard copy-paste includes. To perform a <strong>clean copy and paste</strong>, the process is: copy from your source, run through this clean paste tool, then paste the cleaned result into your destination. This three-step <strong>clean copy and paste</strong> workflow takes under 10 seconds and guarantees that what arrives in your destination is only what you can see — no hidden stowaways.</p>
@@ -279,11 +273,11 @@ const article = (
     <p>A <strong>copy paste clean</strong> workflow using this tool goes further. Instead of just stripping the rich formatting layer, it cleans the plain text data itself — removing every invisible Unicode character that the paste-as-plain-text shortcut misses. The process is: copy your text, paste into this clean paste tool, click Clean Text, and then paste the result into your destination. This <strong>copy paste clean</strong> sequence ensures your final destination receives text that is clean at every level — no rich formatting artifacts and no invisible Unicode artifacts. For most professional use cases, the copy paste clean approach is more thorough than paste as plain text alone.</p>
 
     <h2>Clean Paste Site: The Best Cleanpaste Site for AI and Rich Text</h2>
-    <p>A <strong>clean paste site</strong> is a web tool dedicated to removing formatting, invisible characters, and text artifacts before you paste content into another application. GPTCLEANUP AI is a full-featured <strong>clean paste site</strong> — paste your text, click Clean Text, and get output that is safe to paste anywhere. As a <strong>cleanpaste site</strong>, it covers every source of paste contamination: AI-generated text with invisible Unicode, word processor text with typographic substitutions, website content with hidden HTML entities, and email content with rich formatting remnants.</p>
+    <p>A <strong>clean paste site</strong> is a web tool dedicated to removing formatting, invisible characters, and text artifacts before you paste content into another application. AI Text Cleanup Tools is a full-featured <strong>clean paste site</strong> — paste your text, click Clean Text, and get output that is safe to paste anywhere. As a <strong>cleanpaste site</strong>, it covers every source of paste contamination: AI-generated text with invisible Unicode, word processor text with typographic substitutions, website content with hidden HTML entities, and email content with rich formatting remnants.</p>
     <p>What makes this the most useful <strong>cleanpaste site</strong> for AI workflows is that it targets the specific invisible characters that AI models embed — zero-width spaces, byte-order marks, non-breaking spaces, directional marks — not just the rich formatting layer that a paste-as-plain-text shortcut removes. Every <strong>clean paste site</strong> removes visible formatting; this one goes deeper to remove the invisible layer that standard paste tools miss entirely. <strong>Clear space copy paste</strong> issues — where copy-pasted text has irregular spacing from non-breaking spaces and zero-width space artifacts — are fully resolved: every non-standard space character is normalized to a standard single space, so your <strong>clear space copy paste</strong> result has perfectly consistent spacing throughout.</p>
 
     <h2>Free Cleanpaste Tool — No Account, No Limits</h2>
-    <p>GPTCLEANUP AI is a free <strong>cleanpaste</strong> tool with no account required, no character limits, and no subscription. All processing happens in your browser — your text is never uploaded, logged, or stored. The clean paste tool works on text from every source: AI models (ChatGPT, Claude, Gemini, DeepSeek, Grok, Llama, Mistral, Perplexity), word processors (Microsoft Word, Google Docs), websites, PDFs, and email clients. It removes every category of text contamination — invisible Unicode, markdown, typographic special characters, spacing irregularities — in a single pass. Make clean paste part of every text workflow and eliminate hidden character problems from your content pipeline permanently. The tool is always available at this URL, always free, and always processes text with complete privacy protection.</p>
+    <p>AI Text Cleanup Tools is a free <strong>cleanpaste</strong> tool with no account required, no character limits, and no subscription. All processing happens in your browser — your text is never uploaded, logged, or stored. The clean paste tool works on text from every source: AI models (ChatGPT, Claude, Gemini, DeepSeek, Grok, Llama, Mistral, Perplexity), word processors (Microsoft Word, Google Docs), websites, PDFs, and email clients. It removes every category of text contamination — invisible Unicode, markdown, typographic special characters, spacing irregularities — in a single pass. Make clean paste part of every text workflow and eliminate hidden character problems from your content pipeline permanently. The tool is always available at this URL, always free, and always processes text with complete privacy protection.</p>
     <p>Whether you use it for a single blog post or as part of a high-volume content production pipeline, the clean paste tool delivers the same result every time: text that is technically clean, safe to publish, and ready for any downstream application. Paste clean, publish confidently. Bookmark this page to make clean paste the default first step in every text workflow — the difference between content that causes problems and content that just works.</p>
   </div>
   </section>

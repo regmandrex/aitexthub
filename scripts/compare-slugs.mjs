@@ -6,7 +6,7 @@ const registryPath = resolve('lib/seo/registry.ts');
 const registryContent = readFileSync(registryPath, 'utf8');
 const localSlugs = new Set([...registryContent.matchAll(/slug:\s*'([^']+)'/g)].map(m => m[1]));
 
-// Live site slugs from gptcleanup.com/ai-tools
+// Live site slugs from older cleanup sites/ai-tools
 const liveSlugs = new Set([
 'ai-space-remover','ai-watermark-detector','ai-watermark-remover','ai-academic-humanizer',
 'ai-alt-text-generator','ai-assignment-checker','ai-blog-post-validator','ai-copyleaks-checker',

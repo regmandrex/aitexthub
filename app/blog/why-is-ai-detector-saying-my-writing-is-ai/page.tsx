@@ -6,7 +6,7 @@ import AdSenseSlot from '../../../components/ads/AdSenseSlot';
 import type { Metadata } from 'next';
 
 const urlPath = '/blog/why-is-ai-detector-saying-my-writing-is-ai';
-const title = 'Why Is the AI Detector Saying My Writing Is AI? The Complete Guide | GPTCLEANUP AI';
+const title = 'Why Is the AI Detector Saying My Writing Is AI? The Complete Guide | AI Text Cleanup Tools';
 const headline = 'Why Is the AI Detector Saying My Writing Is AI? The Complete Guide';
 const description =
   'AI detectors flag human writing for predictable reasons: formal style, invisible characters, non-native English, and consistent structure. Here&apos;s how to fix each one.';

@@ -234,7 +234,7 @@ export async function generateMetadata(): Promise<Metadata> {
       title: 'Invisible Letter Copy and Paste — Blank Letter Generator',
       description: 'Copy invisible letters instantly — zero-width space, Hangul filler, non-breaking space. Free for blank Discord names, Fortnite, Instagram bios, and WhatsApp.',
       url: `${siteUrl}/invisible-letter`,
-      siteName: 'GPTCLEANUP AI',
+      siteName: 'AI Text Cleanup Tools',
       type: 'website',
     },
   };

@@ -11,7 +11,7 @@ const faqs: FaqItem[] = [
     category: 'General',
     question: 'What is LLaMA (Meta AI) Space Remover?',
     answer:
-      'LLaMA (Meta AI) Space Remover is a standalone text-cleanup utility on gptcleanuptools.com designed to normalize spacing and formatting issues in text that has already been generated or written by users. It focuses on whitespace cleanup, paragraph consistency, and removal of irregular or invisible spacing characters.',
+      'LLaMA (Meta AI) Space Remover is a standalone text-cleanup utility on AI Text Cleanup Tools designed to normalize spacing and formatting issues in text that has already been generated or written by users. It focuses on whitespace cleanup, paragraph consistency, and removal of irregular or invisible spacing characters.',
   },
   {
     category: 'General',

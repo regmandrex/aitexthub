@@ -6,7 +6,7 @@ import AdSenseSlot from '../../../components/ads/AdSenseSlot';
 import type { Metadata } from 'next';
 
 const urlPath = '/blog/future-of-ai-text-cleaning';
-const title = "Future of AI Text Cleaning (What's Next for SEO & Publishing) | GPTCLEANUP AI";
+const title = "Future of AI Text Cleaning (What's Next for SEO & Publishing) | AI Text Cleanup Tools";
 const headline = "Future of AI Text Cleaning (What's Coming Next for SEO, Publishing, and Detection)";
 const description =
   'How AI text cleaning evolves from a copy-paste fix into infrastructure: Unicode normalization, performance-aware cleaning, and content QA pipelines.';

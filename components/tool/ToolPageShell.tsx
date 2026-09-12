@@ -1,8 +1,6 @@
 import { ReactNode } from 'react';
-import AdSenseSlot from '../ads/AdSenseSlot';
 import BelowToolAd from '../ads/BelowToolAd';
 import { Breadcrumbs } from '../Breadcrumbs';
-import ProFunnelBanner from '../ProFunnelBanner';
 
 type Tool = {
   slug: string;
@@ -23,23 +21,9 @@ const toolBreadcrumbItems = (tool: Tool) => [
   { label: tool.title, href: tool.slug === '' ? '/' : `/${tool.slug}` },
 ];
 
-function RailAd({ side }: { side: 'left' | 'right' }) {
-  const sideClass = side === 'left' ? 'left-4' : 'right-4';
-
-  return (
-    <div className={`hidden lg:block fixed top-[220px] ${sideClass} z-20`}>
-      <div className="w-[180px] min-h-[260px]">
-        <AdSenseSlot className="w-full" />
-      </div>
-    </div>
-  );
-}
-
 export function ToolPageShell({ tool, ui, related, children }: ToolPageShellProps) {
   return (
     <div className="relative bg-[#f7f9ff]">
-      <RailAd side="right" />
-
       <div className="mx-auto w-full max-w-4xl px-4 py-10 min-h-screen">
         <Breadcrumbs items={toolBreadcrumbItems(tool)} className="mb-4" />
 
@@ -53,10 +37,6 @@ export function ToolPageShell({ tool, ui, related, children }: ToolPageShellProp
             <span>Free</span>
           </div>
         </section>
-
-        <div className="mt-4 -mx-4 md:mx-0">
-          <ProFunnelBanner />
-        </div>
 
         <section className="relative w-full mt-6">
           <div className="w-full max-w-none rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6">
@@ -73,8 +53,6 @@ export function ToolPageShell({ tool, ui, related, children }: ToolPageShellProp
     </div>
   );
 }
-
-
 
 
 

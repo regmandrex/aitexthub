@@ -1,10 +1,8 @@
 /**
  * June price-lock promo email (marketing).
  *
- * Honest framing: list prices have already been raised; the current checkout
- * price is effectively ~30% below the new price until the promo ends after
- * June, at which point it rises to the new list price. So "lock in 30% off"
- * is truthful — the advertised price equals what the user is charged.
+ * Legacy marketing email template. Pro checkout is no longer self-serve, so all
+ * calls to action point back to the Pro page instead of a payment provider.
  *
  * MARKETING email — must include an unsubscribe link and sender identity to
  * comply with CAN-SPAM/GDPR and to protect transactional deliverability. The
@@ -12,12 +10,6 @@
  * one-click unsubscribe URL. Send from a MARKETING sender/subdomain, not the
  * transactional support@ address used for verification/reset.
  */
-
-const CHECKOUT = {
-  weekly: 'https://mygptcleanup.lemonsqueezy.com/checkout/buy/4668229c-1a12-4017-9445-a208a32d3083',
-  monthly: 'https://mygptcleanup.lemonsqueezy.com/checkout/buy/2b8c8163-2571-454e-b255-947a91388cf6',
-  annual: 'https://mygptcleanup.lemonsqueezy.com/checkout/buy/0342ed42-ec81-483f-99a3-0803863e9ef5',
-} as const;
 
 export type PromoAudience = 'returning' | 'new';
 
@@ -32,8 +24,8 @@ export function junePromoHtml(name: string, audience: PromoAudience): string {
   const isReturning = audience === 'returning';
 
   const intro = isReturning
-    ? `Thank you for being a GPTCleanup Pro member — it genuinely means a lot. 💜 As a thank-you, we want you to keep the lowest rate before our prices rise.`
-    : `Thanks for joining GPTCleanup — you've cleaned up some text with us, and we think you'll love what Pro unlocks. 💜`;
+    ? `Thank you for being an AI Text Cleanup Tools Pro member — it genuinely means a lot. 💜 As a thank-you, we want you to keep the lowest rate before our prices rise.`
+    : `Thanks for joining AI Text Cleanup Tools — you've cleaned up some text with us, and we think you'll love what Pro unlocks. 💜`;
 
   return `
   <div style="margin:0;padding:24px 12px;background:#f1f5f9">
@@ -41,7 +33,7 @@ export function junePromoHtml(name: string, audience: PromoAudience): string {
 
       <!-- Hero -->
       <div style="background:linear-gradient(135deg,#7c3aed 0%,#6d28d9 50%,#4f46e5 100%);padding:40px 28px;text-align:center">
-        <p style="margin:0;color:#ddd6fe;font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase">GPTCleanup Pro</p>
+        <p style="margin:0;color:#ddd6fe;font-size:12px;font-weight:700;letter-spacing:2px;text-transform:uppercase">AI Text Cleanup Tools Pro</p>
         <h1 style="margin:10px 0 0;color:#ffffff;font-size:30px;font-weight:800;line-height:1.2">
           Hi ${greeting}, lock in your June rate 🔒
         </h1>
@@ -50,7 +42,7 @@ export function junePromoHtml(name: string, audience: PromoAudience): string {
           <strong style="color:#fde047">about 30% less</strong> than the new price — for as long as you stay subscribed.
         </p>
         <div style="margin:24px 0 4px">
-          <a href="https://gptcleanuptools.com/pro#pricing"
+          <a href="https://aitextcleanuptools.com/pro#pricing"
              style="display:inline-block;padding:15px 38px;background:#fde047;color:#1e1b4b;border-radius:9999px;text-decoration:none;font-weight:800;font-size:16px">
             See all plans →
           </a>
@@ -87,7 +79,7 @@ export function junePromoHtml(name: string, audience: PromoAudience): string {
                 <p style="margin:0;color:#64748b;font-size:12px;font-weight:700">WEEKLY</p>
                 <p style="margin:6px 0 0;color:#1e293b;font-size:20px;font-weight:800">$3.99</p>
                 <p style="margin:2px 0 10px;color:#94a3b8;font-size:11px">per week</p>
-                <a href="${CHECKOUT.weekly}" style="display:inline-block;padding:9px 16px;background:#7c3aed;color:#fff;border-radius:9999px;text-decoration:none;font-weight:700;font-size:13px">Get Weekly</a>
+                <a href="https://aitextcleanuptools.com/pro#pricing" style="display:inline-block;padding:9px 16px;background:#7c3aed;color:#fff;border-radius:9999px;text-decoration:none;font-weight:700;font-size:13px">View Weekly</a>
               </div>
             </td>
             <td style="padding:6px">
@@ -95,7 +87,7 @@ export function junePromoHtml(name: string, audience: PromoAudience): string {
                 <p style="margin:0;color:#64748b;font-size:12px;font-weight:700">MONTHLY</p>
                 <p style="margin:6px 0 0;color:#1e293b;font-size:20px;font-weight:800">$17.99</p>
                 <p style="margin:2px 0 10px;color:#94a3b8;font-size:11px">per month</p>
-                <a href="${CHECKOUT.monthly}" style="display:inline-block;padding:9px 16px;background:#7c3aed;color:#fff;border-radius:9999px;text-decoration:none;font-weight:700;font-size:13px">Get Monthly</a>
+                <a href="https://aitextcleanuptools.com/pro#pricing" style="display:inline-block;padding:9px 16px;background:#7c3aed;color:#fff;border-radius:9999px;text-decoration:none;font-weight:700;font-size:13px">View Monthly</a>
               </div>
             </td>
             <td style="padding:6px">
@@ -103,7 +95,7 @@ export function junePromoHtml(name: string, audience: PromoAudience): string {
                 <p style="margin:0;color:#6d28d9;font-size:12px;font-weight:800">ANNUAL · BEST VALUE</p>
                 <p style="margin:6px 0 0;color:#1e293b;font-size:20px;font-weight:800">$10.25</p>
                 <p style="margin:2px 0 10px;color:#94a3b8;font-size:11px">per month · billed $122.99/yr</p>
-                <a href="${CHECKOUT.annual}" style="display:inline-block;padding:9px 16px;background:#6d28d9;color:#fff;border-radius:9999px;text-decoration:none;font-weight:800;font-size:13px">Get Annual</a>
+                <a href="https://aitextcleanuptools.com/pro#pricing" style="display:inline-block;padding:9px 16px;background:#6d28d9;color:#fff;border-radius:9999px;text-decoration:none;font-weight:800;font-size:13px">View Annual</a>
               </div>
             </td>
           </tr>
@@ -117,8 +109,8 @@ export function junePromoHtml(name: string, audience: PromoAudience): string {
       <!-- Footer (required for marketing email) -->
       <div style="background:#1e293b;padding:24px 28px;text-align:center">
         <p style="margin:0;color:#94a3b8;font-size:12px;line-height:1.7">
-          GPTCleanup Tools · <a href="https://gptcleanuptools.com" style="color:#c4b5fd;text-decoration:none">gptcleanuptools.com</a><br/>
-          You're receiving this because you created a GPTCleanup account.<br/>
+          AI Text Cleanup Tools · <a href="https://aitextcleanuptools.com" style="color:#c4b5fd;text-decoration:none">AI Text Cleanup Tools</a><br/>
+          You're receiving this because you created an AI Text Cleanup Tools account.<br/>
           <a href="{{unsubscribe}}" style="color:#94a3b8;text-decoration:underline">Unsubscribe</a> from promotional emails at any time.
         </p>
       </div>

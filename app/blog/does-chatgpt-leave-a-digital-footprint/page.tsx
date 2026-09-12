@@ -6,7 +6,7 @@ import AdSenseSlot from '../../../components/ads/AdSenseSlot';
 import type { Metadata } from 'next';
 
 const urlPath = '/blog/does-chatgpt-leave-a-digital-footprint';
-const title = 'Does ChatGPT Leave a Digital Footprint? Metadata, Watermarks & What You Need to Know | GPTCLEANUP AI';
+const title = 'Does ChatGPT Leave a Digital Footprint? Metadata, Watermarks & What You Need to Know | AI Text Cleanup Tools';
 const headline = 'Does ChatGPT Leave a Digital Footprint? Metadata, Watermarks & What You Need to Know';
 const description =
   'ChatGPT does not embed hidden metadata in exported text, but it does leave detectable Unicode artifacts. Here is what is actually traceable and what is not.';
@@ -239,7 +239,7 @@ export default function DoesChatGptLeaveADigitalFootprintPage() {
           <p className="font-semibold text-slate-900">Cleaning workflow</p>
           <ol className="mt-2 list-decimal space-y-2 pl-5">
             <li>
-              Use the <Link href="/">GPT Cleanup Tools</Link> text cleaner to normalize your text and remove common
+              Use the <Link href="/">AI Text Cleanup Tools</Link> text cleaner to normalize your text and remove common
               Unicode artifacts in one pass.
             </li>
             <li>
@@ -261,7 +261,7 @@ export default function DoesChatGptLeaveADigitalFootprintPage() {
         <p className="font-semibold">The invisible layer is the one most people miss.</p>
         <p>
           Use the <Link href="/chatgpt-watermark-detector">ChatGPT Watermark Detector</Link> to check for Unicode artifacts
-          in your text, and the <Link href="/">GPT Cleanup Tools</Link> to remove them. For a full character-level breakdown,
+          in your text, and the <Link href="/">AI Text Cleanup Tools</Link> to remove them. For a full character-level breakdown,
           the <Link href="/invisible-character-detector">Invisible Character Detector</Link> shows you exactly what is hiding
           in your text.
         </p>

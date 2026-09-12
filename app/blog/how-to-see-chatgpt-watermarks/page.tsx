@@ -6,7 +6,7 @@ import AdSenseSlot from '../../../components/ads/AdSenseSlot';
 import type { Metadata } from 'next';
 
 const urlPath = '/blog/how-to-see-chatgpt-watermarks';
-const title = 'How to See ChatGPT Watermarks: A Complete Detection Guide | GPTCLEANUP AI';
+const title = 'How to See ChatGPT Watermarks: A Complete Detection Guide | AI Text Cleanup Tools';
 const headline = 'How to See ChatGPT Watermarks: A Complete Detection Guide';
 const description =
   'ChatGPT watermarks are invisible to the naked eye but detectable with the right tools. This guide covers every method for finding them, from manual to fully automated.';
@@ -213,7 +213,7 @@ def scan_text(text):
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">What to Do After You Find Them</h2>
         <p className="text-slate-700">
-          Once you have identified invisible characters, the next step is removal. The <Link href="/">GPT Cleanup Tools</Link> suite
+          Once you have identified invisible characters, the next step is removal. The <Link href="/">AI Text Cleanup Tools</Link> suite
           handles this in one step: paste the text, click clean, and the tool removes all detected invisible characters
           while preserving everything visible.
         </p>
@@ -228,7 +228,7 @@ def scan_text(text):
         <p className="font-semibold">Seeing is the first step; removing is the second.</p>
         <p>
           Use the <Link href="/chatgpt-watermark-detector">ChatGPT Watermark Detector</Link> to see what is in your text,
-          and the <Link href="/">GPT Cleanup Tools</Link> main cleaner to remove everything found. The{' '}
+          and the <Link href="/">AI Text Cleanup Tools</Link> main cleaner to remove everything found. The{' '}
           <Link href="/invisible-character-detector">Invisible Character Detector</Link> gives you the full technical
           breakdown if you need character-level detail.
         </p>

@@ -6,7 +6,7 @@ import AdSenseSlot from '../../../components/ads/AdSenseSlot';
 import type { Metadata } from 'next';
 
 const urlPath = '/blog/how-to-effectively-remove-spaces-from-text-expert-tips';
-const title = 'How to Effectively Remove Spaces from Text: Expert Tips | GPTCLEANUP AI';
+const title = 'How to Effectively Remove Spaces from Text: Expert Tips | AI Text Cleanup Tools';
 const headline = 'How to Effectively Remove Spaces from Text: Expert Tips';
 const description =
   'Professional advice from content creators and developers on optimizing your text cleaning workflow.';

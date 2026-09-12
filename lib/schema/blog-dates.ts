@@ -41,7 +41,7 @@ export const BLOG_PUBLISHED: Record<string, string> = {
   'fix-chatgpt-formatting': '2026-01-15',
   'free-chatgpt-watermark-remover-tools-compared': '2026-03-23',
   'future-of-ai-text-cleaning': '2026-01-15',
-  'gpt-cleanup-vs-manual-editing': '2026-01-15',
+  'ai-text-cleanup-vs-manual-editing': '2026-01-15',
   'how-ai-detection-tools-work-and-why-they-get-it-wrong': '2026-03-23',
   'how-does-an-ai-detector-work': '2026-03-23',
   'how-to-check-if-text-has-chatgpt-watermark': '2026-03-23',

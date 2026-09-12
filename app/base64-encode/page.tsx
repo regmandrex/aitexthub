@@ -171,7 +171,7 @@ const writeUp = (
         predictable representation that survives JSON, XML, CSV, and other formats.
       </p>
       <p>
-        The Base64 Encode tool on gptcleanuptools.com is designed for fast, accurate conversion. Paste text, choose your output options, and copy
+        The Base64 Encode tool on AI Text Cleanup Tools is designed for fast, accurate conversion. Paste text, choose your output options, and copy
         the encoded result. Everything runs locally in your browser, so no data is sent to a server. This is ideal for developers, analysts, and
         content teams who need a reliable Base64 encoder for everyday tasks.
       </p>

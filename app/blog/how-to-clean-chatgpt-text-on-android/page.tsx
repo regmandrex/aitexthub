@@ -6,7 +6,7 @@ import AdSenseSlot from '../../../components/ads/AdSenseSlot';
 import type { Metadata } from 'next';
 
 const urlPath = '/blog/how-to-clean-chatgpt-text-on-android';
-const title = 'How to Clean ChatGPT Text on Android (Mobile Workflow) | GPTCLEANUP AI';
+const title = 'How to Clean ChatGPT Text on Android (Mobile Workflow) | AI Text Cleanup Tools';
 const headline = 'How to Clean ChatGPT Text on Android';
 const description =
   'A mobile-first workflow to clean ChatGPT text on Android using AI space removal, invisible character detection, and safe copy-paste into apps.';
@@ -65,7 +65,7 @@ export default function HowToCleanChatGPTTextOnAndroidPage() {
           <li>Generate your draft in the ChatGPT app or browser on Android.</li>
           <li>Copy the full answer.</li>
           <li>
-            Open your browser and visit <Link href="/">GPT Clean Up Tools</Link>.
+            Open your browser and visit <Link href="/">AI Text Cleanup Tools</Link>.
           </li>
           <li>
             Paste into the <Link href="/">ChatGPT Text Cleaner</Link> and run a full cleanup to normalize line breaks and remove obvious noise.

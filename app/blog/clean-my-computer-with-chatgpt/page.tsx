@@ -9,7 +9,7 @@ import AdSenseSlot from '../../../components/ads/AdSenseSlot';
 import type { Metadata } from 'next';
 
 const urlPath = '/blog/clean-my-computer-with-chatgpt';
-const title = 'How to Clean My Computer With ChatGPT (2026 Guide) | GPTCLEANUP AI';
+const title = 'How to Clean My Computer With ChatGPT (2026 Guide) | AI Text Cleanup Tools';
 const headline = 'How to Clean My Computer With ChatGPT: A Practical Walkthrough';
 const description =
   'Use ChatGPT to diagnose a slow PC, clear junk files, triage startup programs, and free disk space safely — including the commands it gets wrong and what never to run.';
@@ -559,7 +559,7 @@ export default function CleanMyComputerWithChatGPTPage() {
       </section>
 
       <section className="mt-10 space-y-4">
-        <h2 className="text-2xl font-semibold text-slate-900">A different kind of ChatGPT cleanup</h2>
+        <h2 className="text-2xl font-semibold text-slate-900">A different kind of ChatAI text cleanup</h2>
         <p className="text-slate-700">
           One thing worth separating, because the phrasing overlaps: cleaning your computer is a different problem from cleaning
           the text ChatGPT produces. Output copied out of ChatGPT carries invisible Unicode — zero-width spaces, non-breaking

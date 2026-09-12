@@ -46,7 +46,7 @@ function createWriteUp(t: (key: string) => string) {
     <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
         <h2>{"Convert Text to Uppercase, Lowercase, Title Case & More - Online Case Converter Tool"}</h2>
-        <p>{"This guide explains how the Case Converter tool works, why consistent capitalization matters, and when an online case converter is the right choice for cleanup. It is written for people who need reliable text case conversion without rewriting content. The tool on gptcleanuptools.com processes only the text you provide and returns predictable results, making it useful for editing, analysis, and everyday formatting tasks."}</p>
+        <p>{"This guide explains how the Case Converter tool works, why consistent capitalization matters, and when an online case converter is the right choice for cleanup. It is written for people who need reliable text case conversion without rewriting content. The tool on AI Text Cleanup Tools processes only the text you provide and returns predictable results, making it useful for editing, analysis, and everyday formatting tasks."}</p>
 
         <h2>{"Introduction"}</h2>
         <p>{"Case formatting problems are common. A report might arrive in all caps, a list might mix upper and lower case, or a batch of headings might be inconsistent after copy and paste. Inconsistent capitalization makes text harder to read and harder to reuse. It also creates friction in workflows that depend on clean, uniform formatting, such as publishing, documentation, and data review."}</p>
@@ -204,7 +204,7 @@ function createWriteUp(t: (key: string) => string) {
         <p>{"If you are working with sensitive or licensed content, ensure you have the right to process it. The tool is designed for cleanup and readability, not for altering authorship or bypassing any detection systems."}</p>
 
         <h2>{"Final Summary and When to Use This Tool"}</h2>
-        <p>{"The Case Converter on gptcleanuptools.com is a practical way to standardize capitalization without changing the words themselves. It supports uppercase, lowercase, title case, sentence case, and toggle case, and it works entirely on the text you provide. Because it is deterministic and local to your browser, the results are consistent and the process is private."}</p>
+        <p>{"The Case Converter on AI Text Cleanup Tools is a practical way to standardize capitalization without changing the words themselves. It supports uppercase, lowercase, title case, sentence case, and toggle case, and it works entirely on the text you provide. Because it is deterministic and local to your browser, the results are consistent and the process is private."}</p>
         <p>{"The tool is also easy to integrate into checklists and review flows. You can convert a draft, review the result for proper nouns and acronyms, and then publish with confidence that the formatting is consistent. This makes it a reliable final step in workflows that value clarity and repeatability. It is a fast, low-risk formatting step."}</p>
         <p>{"Use this tool when your content is correct but the formatting is inconsistent. It is ideal for headings, lists, notes, and metadata that need a uniform style. It is not meant for rewriting or grammar fixes, so treat it as a clean formatting step in your workflow. When the goal is clarity and consistency, a free case converter is the most direct solution."}</p>
     </div>

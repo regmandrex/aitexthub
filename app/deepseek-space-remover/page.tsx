@@ -11,7 +11,7 @@ const faqs: FaqItem[] = [
     category: 'General',
     question: 'What is DeepSeek Space Remover designed to do?',
     answer:
-      'DeepSeek Space Remover is a standalone text-cleanup utility on gptcleanuptools.com that focuses on correcting spacing and formatting issues in text that users have already generated, including text originally produced by DeepSeek or other AI systems.',
+      'DeepSeek Space Remover is a standalone text-cleanup utility on AI Text Cleanup Tools that focuses on correcting spacing and formatting issues in text that users have already generated, including text originally produced by DeepSeek or other AI systems.',
   },
   {
     category: 'General',

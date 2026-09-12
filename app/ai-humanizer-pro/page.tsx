@@ -164,7 +164,7 @@ export default function AIHumanizerProPage() {
         <div className="shrink-0 border-b border-slate-200 bg-white px-4 py-3">
           <div className="mx-auto flex max-w-6xl items-center justify-between">
             <Link href="/" className="flex items-center gap-2 text-lg font-semibold tracking-tight text-slate-900 hover:text-slate-700">
-              GPTCLEANUP <span className="font-normal text-slate-500">AI</span>
+              AI Text Cleanup Tools <span className="font-normal text-slate-500">AI</span>
             </Link>
             <div className="flex items-center gap-3">
               <div className="hidden items-center gap-1.5 sm:flex">
@@ -435,7 +435,7 @@ export default function AIHumanizerProPage() {
 
         {/* Minimal bottom bar */}
         <div className="shrink-0 border-t border-slate-200 bg-white px-4 py-2.5 text-center text-[10px] text-slate-400">
-          &copy; {new Date().getFullYear()} GPTCleanup AI ·{' '}
+          &copy; {new Date().getFullYear()} AI Text Cleanup Tools ·{' '}
           <Link href="/terms-of-service" className="hover:underline">Terms</Link> ·{' '}
           <Link href="/privacy-policy" className="hover:underline">Privacy</Link> ·{' '}
           <Link href="/refund-policy" className="hover:underline">Refund Policy</Link>

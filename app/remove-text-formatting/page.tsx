@@ -16,16 +16,10 @@ import { getToolBySlug } from '@/lib/tools/registry';
 
 const toolSlug = 'remove-text-formatting';
 
-function RailAd({ side }: { side: 'left' | 'right' }) {
-  const sideClass = side === 'left' ? 'left-4' : 'right-4';
-  return (
-    <div className={`hidden lg:block fixed top-[220px] ${sideClass} z-20`}>
-      <div className="w-[180px] min-h-[260px]">
-        <AdSenseSlot className="w-full" />
-      </div>
-    </div>
-  );
+function RailAd(_props: { side: 'left' | 'right' }) {
+  return null;
 }
+
 
 const faqs: FaqItem[] = [
   {
@@ -159,7 +153,7 @@ const article = (
   <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10"><div className="prose prose-slate max-w-none">
     <h2>Remove Text Formatting — Strip Formatting from Any Text Online Free</h2>
     <p>Every time you copy text from an AI tool, word processor, website, or PDF, formatting travels with the visible words. <strong>Remove text formatting</strong> is the process of stripping those formatting layers — markdown syntax, typographic special characters, and invisible Unicode characters — so the text arrives clean and neutral in your destination application. Without a dedicated tool to <strong>remove text formatting</strong>, you are left with literal asterisks in your CMS, broken syntax in your code files, layout issues in your published pages, and invisible characters causing unpredictable behavior wherever the text lands.</p>
-    <p>GPTCLEANUP AI is a free <strong>remove text formatting</strong> tool that strips every formatting layer in a single click. Paste your text from any source, click Clean Text, and copy the clean, formatting-free result. No account, no upload, no limit. Use it to <strong>remove text formatting</strong> from AI output, Word documents, Google Docs, websites, emails, and any other formatted source.</p>
+    <p>AI Text Cleanup Tools is a free <strong>remove text formatting</strong> tool that strips every formatting layer in a single click. Paste your text from any source, click Clean Text, and copy the clean, formatting-free result. No account, no upload, no limit. Use it to <strong>remove text formatting</strong> from AI output, Word documents, Google Docs, websites, emails, and any other formatted source.</p>
 
     <h2>Why Text Formatting Is a Problem</h2>
     <p>Text formatting becomes a problem when text moves between applications that handle formatting differently. Formatting that renders correctly in one context causes visible problems — or silent data corruption — in another.</p>
@@ -240,7 +234,7 @@ const article = (
     <p>Invisible characters in heading tags affect how search engines read the heading text. Curly quotes in meta descriptions can produce unexpected display in search result snippets. Invisible characters in keyword phrases mean the phrase does not exactly match the search query that would otherwise trigger your page. For every piece of AI-generated content that will be published online, run it through this remove text formatting tool before the content enters your CMS. The few seconds it takes prevents a category of technical SEO issues that are difficult to diagnose after publication.</p>
 
     <h2>Free Remove Text Formatting Tool — No Account, No Limits</h2>
-    <p>GPTCLEANUP AI provides a free <strong>remove text formatting</strong> tool with no account required, no character limits, and no subscription. All remove text formatting processing happens in your browser — your text is never uploaded, stored, or logged. The tool handles text from any source: AI models, word processors, websites, PDFs, email clients. It removes markdown formatting, converts curly quotes and em dashes, removes invisible Unicode characters, and normalizes spacing — all in one click. Whether you use it for a single paragraph or an entire article, the remove text formatting tool delivers the same thorough, consistent result every time. Paste your text, click Clean Text, copy the clean result, and your text is formatting-free and ready for any destination.</p>
+    <p>AI Text Cleanup Tools provides a free <strong>remove text formatting</strong> tool with no account required, no character limits, and no subscription. All remove text formatting processing happens in your browser — your text is never uploaded, stored, or logged. The tool handles text from any source: AI models, word processors, websites, PDFs, email clients. It removes markdown formatting, converts curly quotes and em dashes, removes invisible Unicode characters, and normalizes spacing — all in one click. Whether you use it for a single paragraph or an entire article, the remove text formatting tool delivers the same thorough, consistent result every time. Paste your text, click Clean Text, copy the clean result, and your text is formatting-free and ready for any destination.</p>
   </div>
   </section>
 );

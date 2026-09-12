@@ -6,7 +6,7 @@ import AdSenseSlot from '../../../components/ads/AdSenseSlot';
 import type { Metadata } from 'next';
 
 const urlPath = '/blog/what-are-gpt-watermarks';
-const title = "What Are GPT Watermarks and Why They're Hidden in AI Texts | GPTCLEANUP AI";
+const title = "What Are GPT Watermarks and Why They're Hidden in AI Texts | AI Text Cleanup Tools";
 const headline = "What Are GPT Watermarks and Why They're Hidden in AI Texts";
 const description =
   'GPT watermarks are patterns embedded in or left behind by AI-generated text. This guide explains the definition, technical types, why they exist, and how to detect them.';
@@ -208,7 +208,7 @@ export default function WhatAreGptWatermarksPage() {
         <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
           <ul className="list-disc space-y-2 pl-5">
             <li>
-              <strong>Statistical AI patterns:</strong> Use the <Link href="/">GPT Cleanup Tools</Link> suite or any
+              <strong>Statistical AI patterns:</strong> Use the <Link href="/">AI Text Cleanup Tools</Link> suite or any
               dedicated AI detector. Results are probabilistic, not definitive.
             </li>
             <li>
@@ -228,7 +228,7 @@ export default function WhatAreGptWatermarksPage() {
         <p className="font-semibold">Check for the watermarks that actually exist today.</p>
         <p>
           Use the <Link href="/chatgpt-watermark-detector">ChatGPT Watermark Detector</Link> to scan for Unicode artifacts
-          and statistical AI patterns. The <Link href="/">GPT Cleanup Tools</Link> homepage gives you a full cleanup workflow.
+          and statistical AI patterns. The <Link href="/">AI Text Cleanup Tools</Link> homepage gives you a full cleanup workflow.
           For detailed Unicode inspection, the <Link href="/invisible-character-detector">Invisible Character Detector</Link> shows
           you the precise character-level picture.
         </p>

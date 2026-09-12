@@ -3,10 +3,10 @@ import { planVideosLimit, planImagesLimit, planWordsLimit } from '@/lib/plans';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-// Personal, replyable support address (verified on the gptcleanuptools.com
+// Personal, replyable support address (verified on the AI Text Cleanup Tools
 // domain in Resend). Reply-To matches so customer replies reach support.
-const FROM = 'GPT Cleanup Tools <support@gptcleanuptools.com>';
-const REPLY_TO = 'support@gptcleanuptools.com';
+const FROM = 'AI Text Cleanup Tools <support@aitextcleanuptools.com>';
+const REPLY_TO = 'support@aitextcleanuptools.com';
 
 const PLAN_LABELS: Record<string, string> = {
   weekly: 'Weekly',
@@ -52,7 +52,7 @@ export function welcomeHtml(name: string, plan: string): string {
 
       <!-- Header / brand banner -->
       <div style="background:linear-gradient(135deg,#7c3aed,#6d28d9);border-radius:16px 16px 0 0;padding:32px 28px;text-align:center">
-        <p style="margin:0;color:#ede9fe;font-size:13px;font-weight:700;letter-spacing:1px;text-transform:uppercase">GPT Cleanup Tools</p>
+        <p style="margin:0;color:#ede9fe;font-size:13px;font-weight:700;letter-spacing:1px;text-transform:uppercase">AI Text Cleanup Tools</p>
         <h1 style="margin:8px 0 0;color:#ffffff;font-size:26px;font-weight:800">Welcome to Pro! 🎉</h1>
       </div>
 
@@ -78,7 +78,7 @@ export function welcomeHtml(name: string, plan: string): string {
 
         <!-- CTA -->
         <div style="text-align:center;margin:24px 0 8px">
-          <a href="https://gptcleanuptools.com/ai-tools"
+          <a href="https://aitextcleanuptools.com/ai-tools"
              style="display:inline-block;padding:13px 30px;background:linear-gradient(135deg,#7c3aed,#6d28d9);color:#ffffff;border-radius:9999px;text-decoration:none;font-weight:700;font-size:15px">
             Start using Pro →
           </a>
@@ -90,16 +90,15 @@ export function welcomeHtml(name: string, plan: string): string {
       </div>
 
       <p style="text-align:center;margin:18px 0 0;color:#94a3b8;font-size:12px">
-        GPT Cleanup Tools · <a href="https://gptcleanuptools.com" style="color:#94a3b8">gptcleanuptools.com</a>
+        AI Text Cleanup Tools · <a href="https://aitextcleanuptools.com" style="color:#94a3b8">AI Text Cleanup Tools</a>
       </p>
     </div>
   </div>`;
 }
 
 /**
- * Send the "welcome to Pro" email via Resend. Fires on new subscriptions and on
- * resume/unpause (re-subscribers) — NOT on weekly renewals. Never throws: a
- * failed welcome email must not 500 the webhook and trigger a LemonSqueezy retry.
+ * Send the "welcome to Pro" email via Resend. Used for manual Pro access.
+ * Never throws because account changes should not fail because of email.
  */
 export async function sendWelcomeEmail(email: string, name: string, plan: string): Promise<void> {
   if (!process.env.RESEND_API_KEY) {
@@ -111,7 +110,7 @@ export async function sendWelcomeEmail(email: string, name: string, plan: string
       from: FROM,
       to: email,
       replyTo: REPLY_TO,
-      subject: 'Welcome to GPT Cleanup Tools Pro 🎉',
+      subject: 'Welcome to AI Text Cleanup Tools Pro 🎉',
       html: welcomeHtml(name, plan),
     });
     if (error) {

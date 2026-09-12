@@ -171,7 +171,7 @@ const writeUp = (
         essential step when troubleshooting links or verifying parameter values.
       </p>
       <p>
-        The URL Decode tool on gptcleanuptools.com makes decoding fast and reliable. Paste an encoded URL or value, choose the correct mode, and
+        The URL Decode tool on AI Text Cleanup Tools makes decoding fast and reliable. Paste an encoded URL or value, choose the correct mode, and
         get readable output instantly. Everything runs in your browser with no uploads. This is ideal for developers, marketers, and analysts who
         need to inspect encoded data without writing scripts.
       </p>

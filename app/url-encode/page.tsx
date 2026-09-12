@@ -171,7 +171,7 @@ const writeUp = (
         it contains spaces or an ampersand. Encoding is the standard way to preserve meaning while making the text safe for transport.
       </p>
       <p>
-        The URL Encode tool on gptcleanuptools.com converts your text into percent encoded form. It works directly in your browser, requires no
+        The URL Encode tool on AI Text Cleanup Tools converts your text into percent encoded form. It works directly in your browser, requires no
         uploads, and outputs a predictable, standards based result. Use it when you build query parameters, copy links between tools, or debug a
         request that fails because special characters were not encoded. It is a fast, deterministic utility designed for practical web work.
       </p>

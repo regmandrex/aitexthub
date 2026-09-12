@@ -6,7 +6,7 @@ import AdSenseSlot from '../../../components/ads/AdSenseSlot';
 import type { Metadata } from 'next';
 
 const urlPath = '/blog/how-to-check-if-text-has-chatgpt-watermark';
-const title = 'How to Check If a Text Has a ChatGPT Watermark (Complete Guide) | GPTCLEANUP AI';
+const title = 'How to Check If a Text Has a ChatGPT Watermark (Complete Guide) | AI Text Cleanup Tools';
 const headline = 'How to Check If a Text Has a ChatGPT Watermark (Complete Guide)';
 const description =
   'Five methods to check text for ChatGPT watermarks: from dedicated tools to manual inspection. Learn what each result means and what to do about it.';
@@ -240,7 +240,7 @@ export default function HowToCheckIfTextHasChatGptWatermarkPage() {
           <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
             <p className="font-semibold text-slate-900">Found invisible characters</p>
             <p className="mt-2">
-              Remove them with the ChatGPT Watermark Remover or the GPT Cleanup Tools main cleaner. Re-verify after
+              Remove them with the ChatGPT Watermark Remover or the AI Text Cleanup Tools main cleaner. Re-verify after
               removal. This has no effect on the visible text.
             </p>
           </div>

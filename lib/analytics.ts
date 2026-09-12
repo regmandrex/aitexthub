@@ -2,10 +2,8 @@
 // Plausible if present. Safe to call anywhere on the client — no-ops on the
 // server or if neither analytics script has loaded.
 //
-// Funnel for measuring subscription conversion (e.g. before/after removing the
-// anchor ad that was covering the header CTA):
-//   cta_clicked  ->  pricing_viewed  ->  checkout_started  ->  (purchase via webhook)
-type FunnelEvent = 'cta_clicked' | 'pricing_viewed' | 'checkout_started';
+// Lightweight product funnel tracking for upgrade interest.
+type FunnelEvent = 'cta_clicked' | 'pricing_viewed';
 
 type EventProps = Record<string, string | number | boolean | undefined>;
 

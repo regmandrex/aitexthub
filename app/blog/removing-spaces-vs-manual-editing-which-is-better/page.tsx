@@ -6,7 +6,7 @@ import AdSenseSlot from '../../../components/ads/AdSenseSlot';
 import type { Metadata } from 'next';
 
 const urlPath = '/blog/removing-spaces-vs-manual-editing-which-is-better';
-const title = 'Removing Spaces vs. Manual Editing: Which is Better? | GPTCLEANUP AI';
+const title = 'Removing Spaces vs. Manual Editing: Which is Better? | AI Text Cleanup Tools';
 const headline = 'Removing Spaces vs. Manual Editing: Which is Better?';
 const description =
   'Compare automated space removal tools with manual editing to find the most efficient approach for your workflow.';

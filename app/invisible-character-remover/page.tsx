@@ -16,16 +16,10 @@ import { getToolBySlug } from '@/lib/tools/registry';
 
 const toolSlug = 'invisible-character-remover';
 
-function RailAd({ side }: { side: 'left' | 'right' }) {
-  const sideClass = side === 'left' ? 'left-4' : 'right-4';
-  return (
-    <div className={`hidden lg:block fixed top-[220px] ${sideClass} z-20`}>
-      <div className="w-[180px] min-h-[260px]">
-        <AdSenseSlot className="w-full" />
-      </div>
-    </div>
-  );
+function RailAd(_props: { side: 'left' | 'right' }) {
+  return null;
 }
+
 
 const faqs: FaqItem[] = [
   {
@@ -106,7 +100,7 @@ const faqs: FaqItem[] = [
   {
     category: 'Comparison',
     question: 'How is this different from a regular text cleaner?',
-    answer: 'A regular text cleaner performs a broader set of operations: it removes invisible characters, strips markdown formatting, converts curly quotes to straight quotes, normalizes spacing, and collapses blank lines. An invisible character remover specifically focuses on finding and removing Unicode code points with no visible representation — zero-width spaces, byte-order marks, soft hyphens, non-breaking spaces, and directional marks. If you want only invisible character removal without any other modifications to your text, use this dedicated invisible character remover. If you want comprehensive cleanup including formatting normalization, use the main GPTCLEANUP AI text cleaner on the homepage.',
+    answer: 'A regular text cleaner performs a broader set of operations: it removes invisible characters, strips markdown formatting, converts curly quotes to straight quotes, normalizes spacing, and collapses blank lines. An invisible character remover specifically focuses on finding and removing Unicode code points with no visible representation — zero-width spaces, byte-order marks, soft hyphens, non-breaking spaces, and directional marks. If you want only invisible character removal without any other modifications to your text, use this dedicated invisible character remover. If you want comprehensive cleanup including formatting normalization, use the main AI Text Cleanup Tools text cleaner on the homepage.',
   },
   {
     category: 'Use Cases',

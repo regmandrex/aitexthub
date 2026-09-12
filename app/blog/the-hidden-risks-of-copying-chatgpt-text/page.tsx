@@ -6,7 +6,7 @@ import AdSenseSlot from '../../../components/ads/AdSenseSlot';
 import type { Metadata } from 'next';
 
 const urlPath = '/blog/the-hidden-risks-of-copying-chatgpt-text';
-const title = 'The Hidden Risks of Copying ChatGPT Text into Word or Google Docs | GPTCLEANUP AI';
+const title = 'The Hidden Risks of Copying ChatGPT Text into Word or Google Docs | AI Text Cleanup Tools';
 const headline = 'The Hidden Risks of Copying ChatGPT Text into Word or Google Docs';
 const description =
   'Copying ChatGPT text into Word or Google Docs introduces invisible characters, formatting corruption, and Unicode artifacts. Here is what happens and how to prevent it.';
@@ -198,7 +198,7 @@ export default function TheHiddenRisksOfCopyingChatGptTextPage() {
         <p className="text-slate-700">
           For academic submissions, professional publishing contexts, or any situation where AI detection is a concern,
           cleaning invisible characters from your document is not optional &mdash; it is essential. Use the{' '}
-          <Link href="/">GPT Cleanup Tools</Link> before any final version of a document that has ChatGPT content in its history.
+          <Link href="/">AI Text Cleanup Tools</Link> before any final version of a document that has ChatGPT content in its history.
         </p>
       </section>
 
@@ -216,7 +216,7 @@ export default function TheHiddenRisksOfCopyingChatGptTextPage() {
         </p>
         <p className="text-slate-700">
           The solution is to clean at the source &mdash; before the content enters your document management system,
-          not after it has propagated. The <Link href="/">GPT Cleanup Tools</Link> text cleaner is designed to be the
+          not after it has propagated. The <Link href="/">AI Text Cleanup Tools</Link> text cleaner is designed to be the
           first step in any ChatGPT content workflow, not an afterthought.
         </p>
       </section>
@@ -233,7 +233,7 @@ export default function TheHiddenRisksOfCopyingChatGptTextPage() {
               <strong>Copy from ChatGPT.</strong> Use the copy button or Ctrl+C / Cmd+C as normal.
             </li>
             <li>
-              <strong>Paste into GPT Cleanup Tools first.</strong> Paste into the <Link href="/">GPT Cleanup Tools</Link> text
+              <strong>Paste into AI Text Cleanup Tools first.</strong> Paste into the <Link href="/">AI Text Cleanup Tools</Link> text
               cleaner before any final destination. This strips invisible characters, normalizes punctuation, and
               produces clean text.
             </li>
@@ -261,7 +261,7 @@ export default function TheHiddenRisksOfCopyingChatGptTextPage() {
       <div className="mt-8 rounded-2xl border border-brand-100 bg-brand-50 p-4 text-sm text-brand-800">
         <p className="font-semibold">Clean before you paste, not after you publish.</p>
         <p>
-          The <Link href="/">GPT Cleanup Tools</Link> should be your first stop after copying from ChatGPT. Run the
+          The <Link href="/">AI Text Cleanup Tools</Link> should be your first stop after copying from ChatGPT. Run the
           text through the cleaner, verify with the <Link href="/invisible-character-detector">Invisible Character Detector</Link>,
           and handle em dash issues with the <Link href="/em-dash-remover">Em Dash Remover</Link> for documents going
           into code or plain text environments.

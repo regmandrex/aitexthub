@@ -1,0 +1,17 @@
+<svg width="286" height="72" viewBox="0 0 286 72" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">AI Text Cleanup Tools</title>
+  <desc id="desc">A document and AI cleanup icon beside the AI Text Cleanup Tools wordmark.</desc>
+  <rect width="286" height="72" rx="14" fill="white"/>
+  <g transform="translate(12 10)">
+    <rect x="9" y="3" width="35" height="46" rx="8" fill="#ECFDF5" stroke="#134E4A" stroke-width="2.5"/>
+    <path d="M18 17H34" stroke="#64748B" stroke-width="3" stroke-linecap="round"/>
+    <path d="M18 26H38" stroke="#0F766E" stroke-width="3" stroke-linecap="round"/>
+    <path d="M18 35H31" stroke="#64748B" stroke-width="3" stroke-linecap="round"/>
+    <path d="M3 19C7.5 19 10 16.5 10 12C10 16.5 12.5 19 17 19C12.5 19 10 21.5 10 26C10 21.5 7.5 19 3 19Z" fill="#14B8A6"/>
+    <path d="M36 42C39.8 42 42 39.8 42 36C42 39.8 44.2 42 48 42C44.2 42 42 44.2 42 48C42 44.2 39.8 42 36 42Z" fill="#0F766E"/>
+    <path d="M11 52L21 41" stroke="#134E4A" stroke-width="5" stroke-linecap="round"/>
+    <path d="M17 57L28 46" stroke="#134E4A" stroke-width="5" stroke-linecap="round"/>
+  </g>
+  <text x="72" y="30" fill="#0F172A" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="800" letter-spacing="0">AI Text</text>
+  <text x="72" y="52" fill="#134E4A" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="800" letter-spacing="0">Cleanup Tools</text>
+</svg>

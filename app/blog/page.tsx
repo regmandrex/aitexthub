@@ -6,7 +6,7 @@ import { blogPosts } from '@/lib/blog-posts';
 
 export async function generateMetadata() {
   return buildMeta({
-    title: 'AI Text Cleaning Blog - GPT CLEAN UP Guides & Tips',
+    title: 'AI Text Cleaning Blog - AI Text Cleanup Tools Guides & Tips',
     description: 'Practical guides for cleaning up AI output, fixing formatting issues, and preparing ChatGPT or Gemini text for documents.',
     urlPath: '/blog',
   });

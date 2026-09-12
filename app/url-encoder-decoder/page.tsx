@@ -213,7 +213,7 @@ const writeUp = (
         A simple encode or decode step helps prevent these silent failures.
       </p>
       <p>
-        gptcleanuptools.com is a tool hub, and this URL Encoder / Decoder is a deterministic text utility. It works only on the text you provide
+        AI Text Cleanup Tools is a tool hub, and this URL Encoder / Decoder is a deterministic text utility. It works only on the text you provide
         and does not connect to external services. It does not generate content or rewrite text. It simply encodes or decodes URLs in a
         predictable way, which makes it a reliable choice when you need an online URL encoder or a free URL decoder for quick cleanup.
       </p>
@@ -607,7 +607,7 @@ const writeUp = (
 
       <h2>Final Summary and When to Use This Tool</h2>
       <p>
-        The URL Encoder / Decoder on gptcleanuptools.com provides a fast way to convert text into a URL safe format and back again. It supports
+        The URL Encoder / Decoder on AI Text Cleanup Tools provides a fast way to convert text into a URL safe format and back again. It supports
         both component and full URL modes, uses standard encoding rules, and produces deterministic output. It is ideal for preparing query
         parameters, debugging links, and reviewing encoded URLs.
       </p>

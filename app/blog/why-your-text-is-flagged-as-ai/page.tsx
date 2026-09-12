@@ -6,7 +6,7 @@ import AdSenseSlot from '../../../components/ads/AdSenseSlot';
 import type { Metadata } from 'next';
 
 const urlPath = '/blog/why-your-text-is-flagged-as-ai';
-const title = 'Why Your Text Is Flagged as AI (and How to Fix It) | GPTCLEANUP AI';
+const title = 'Why Your Text Is Flagged as AI (and How to Fix It) | AI Text Cleanup Tools';
 const headline = 'Why Your Text Is Flagged as AI (and How to Fix It)';
 const description =
   'Text gets flagged as AI due to structural patterns, Unicode artifacts, and sentence uniformity. This guide covers each cause and its specific fix.';
@@ -148,7 +148,7 @@ export default function WhyYourTextIsFlaggedAsAiPage() {
             <p className="font-semibold text-slate-900">How to remove them</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Use the <Link href="/invisible-character-detector">Invisible Character Detector</Link> to find all hidden chars</li>
-              <li>Run through the <Link href="/">GPT Cleanup Tools</Link> text cleaner</li>
+              <li>Run through the <Link href="/">AI Text Cleanup Tools</Link> text cleaner</li>
               <li>Paste into a plain text editor (Notepad, TextEdit in plain text mode) as an intermediate step</li>
               <li>Re-run detector after cleaning to confirm removal</li>
             </ul>
@@ -267,7 +267,7 @@ export default function WhyYourTextIsFlaggedAsAiPage() {
         <p className="font-semibold">Fix the technical issues first, then the stylistic ones.</p>
         <p>
           Start with the <Link href="/invisible-character-detector">Invisible Character Detector</Link> to rule out hidden character
-          artifacts, then use the <Link href="/">GPT Cleanup Tools</Link> for full text normalization. Once your text is technically
+          artifacts, then use the <Link href="/">AI Text Cleanup Tools</Link> for full text normalization. Once your text is technically
           clean, use the <Link href="/ai-humanizer">AI Humanizer</Link> to address style and structure patterns that are still
           triggering false flags.
         </p>

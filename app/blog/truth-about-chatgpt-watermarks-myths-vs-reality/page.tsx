@@ -6,7 +6,7 @@ import AdSenseSlot from '../../../components/ads/AdSenseSlot';
 import type { Metadata } from 'next';
 
 const urlPath = '/blog/truth-about-chatgpt-watermarks-myths-vs-reality';
-const title = 'The Truth About ChatGPT Watermarks: Myths vs Reality (2026 Edition) | GPTCLEANUP AI';
+const title = 'The Truth About ChatGPT Watermarks: Myths vs Reality (2026 Edition) | AI Text Cleanup Tools';
 const headline = 'The Truth About ChatGPT Watermarks: Myths vs Reality (2026 Edition)';
 const description =
   'Separating ChatGPT watermark myths from reality: what OpenAI actually does, what detectors can find, and what the invisible characters in AI text actually are.';
@@ -221,7 +221,7 @@ export default function TruthAboutChatGptWatermarksMythsVsRealityPage() {
         <p>
           The <Link href="/chatgpt-watermark-detector">ChatGPT Watermark Detector</Link> shows you the real invisible
           characters present in your text. The <Link href="/invisible-character-detector">Invisible Character Detector</Link> gives
-          you the technical detail. The <Link href="/">GPT Cleanup Tools</Link> suite handles removal. These address
+          you the technical detail. The <Link href="/">AI Text Cleanup Tools</Link> suite handles removal. These address
           the real things &mdash; not the myths.
         </p>
       </div>
