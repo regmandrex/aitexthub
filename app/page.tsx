@@ -216,7 +216,7 @@ const newFaqItems = [
 export default async function HomePage() {
 
   return (
-    <div className="relative bg-[#f7f9ff]">
+    <div className="relative bg-[#faf8f2]">
       <JsonLd
         data={webPageSchema({
           name: 'AI Text Cleaner',
@@ -226,21 +226,29 @@ export default async function HomePage() {
       />
       <RailAd side="right" />
 
-      <div className="mx-auto w-full max-w-4xl px-4 py-5 min-h-screen sm:py-8 md:py-10">
-        <section className="space-y-2 text-center md:space-y-3">
-          <h1 className="text-xl font-semibold text-slate-900 sm:text-2xl md:text-3xl">AI Text Cleaner</h1>
-          <p className="max-w-2xl mx-auto text-xs text-slate-700 sm:text-sm md:text-[15px]">
+      <div className="mx-auto w-full max-w-6xl px-4 py-8 min-h-screen sm:py-10 md:px-6 md:py-12">
+        <section className="mx-auto max-w-3xl space-y-4 text-center">
+          <div className="inline-flex items-center rounded-full border border-teal-200 bg-white px-4 py-1.5 text-xs font-bold uppercase tracking-[0.18em] text-teal-800 shadow-sm">
+            Free browser-based text cleaner
+          </div>
+          <h1 className="text-4xl font-black tracking-tight text-slate-950 sm:text-5xl md:text-6xl">AI Text Cleaner</h1>
+          <p className="mx-auto max-w-2xl text-base text-slate-700 sm:text-lg">
             Clean and normalize AI output: remove hidden Unicode (ZWSP, NBSP, BOM), fix spacing, and keep paragraphs intact for Word, Docs, and SEO-friendly publishing.
           </p>
+          <div className="flex flex-wrap items-center justify-center gap-2 text-xs font-semibold text-slate-600">
+            {['No upload required', 'No sign-up', 'Works with ChatGPT, Claude, Gemini'].map((item) => (
+              <span key={item} className="rounded-full border border-stone-200 bg-white px-3 py-1 shadow-sm">{item}</span>
+            ))}
+          </div>
         </section>
 
-        <section className="relative w-full mt-4 md:mt-6">
-          <div className="w-full max-w-none rounded-xl border border-slate-200 bg-white p-3 shadow-sm md:rounded-2xl md:p-6">
+        <section className="relative mt-8 w-full md:mt-10">
+          <div className="w-full rounded-[28px] border border-stone-200 bg-white p-4 shadow-[0_24px_80px_rgba(15,23,42,0.08)] md:p-6">
             <ToolWorkbench
               processor="chatgptTextCleaner"
               primaryLabel="Clean Text"
-              inputLabel="Paste your messy AI text"
-              outputLabel="Clean result"
+              inputLabel="Input Text"
+              outputLabel="Cleaned Text"
               inputPlaceholder="Paste text from ChatGPT, Gemini, Claude..."
               outputPlaceholder="Your cleaned text will appear here."
             />
@@ -248,10 +256,12 @@ export default async function HomePage() {
         </section>
 
         <BelowToolAd />
-        <RelatedTools currentSlug="" />
+        <div className="mt-8">
+          <RelatedTools currentSlug="" />
+        </div>
 
         {/* Core Tools — categorized grid */}
-        <section className="mt-8 space-y-8">
+        <section className="mt-10 space-y-8">
 
           {/* Category 1 — AI Text Cleaners */}
           <div>

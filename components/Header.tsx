@@ -47,7 +47,7 @@ export default function Header() {
       <Suspense fallback={null}>
         <DemoModeReader onChange={setDemoMode} />
       </Suspense>
-      <header className="relative z-40 border-b border-slate-200 bg-white/80 backdrop-blur">
+      <header className="relative z-40 border-b border-stone-200 bg-[#faf8f2]/90 backdrop-blur">
         <div className="relative mx-auto flex max-w-6xl items-center justify-between px-4 py-3 md:px-6">
           <Link
             href="/"
@@ -57,7 +57,7 @@ export default function Header() {
             <img
               src="/brand/ai-text-cleanup-tools-logo.svg"
               alt="AI Text Cleanup Tools"
-              className="h-12 w-auto max-w-[220px] object-contain md:h-14"
+              className="h-10 w-auto max-w-[220px] object-contain md:h-12"
             />
           </Link>
 
@@ -84,14 +84,14 @@ export default function Header() {
               <>
                 <Link
                   href="/login"
-                  className="text-sm font-medium text-slate-700 hover:text-slate-900 px-3 py-2"
+                  className="px-3 py-2 text-sm font-medium text-slate-700 hover:text-slate-950"
                 >
                   Log in
                 </Link>
                 <Link
                   href="/signup"
                   onClick={() => trackEvent('cta_clicked', { location: 'header_get_started' })}
-                  className="hidden rounded-full bg-brand-600 px-4 py-2 text-sm font-medium text-white shadow-sm transition hover:bg-brand-700 md:inline-flex"
+                  className="hidden rounded-full bg-slate-950 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-teal-800 md:inline-flex"
                 >
                   Get Started
                 </Link>

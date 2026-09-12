@@ -27,9 +27,9 @@ export default function ToolTextarea({
   };
 
   return (
-    <div className="flex flex-col gap-2">
+    <div className="flex min-h-0 flex-col gap-2">
       <div className="flex items-center justify-between gap-3">
-        <label className="text-sm font-semibold text-slate-800">{label}</label>
+        <label className="text-sm font-semibold text-slate-900">{label}</label>
         {labelSecondary}
       </div>
       {beforeTextarea}
@@ -38,7 +38,7 @@ export default function ToolTextarea({
         onChange={handleChange}
         rows={rows}
         placeholder={placeholder}
-        className="w-full rounded-xl border border-slate-200 bg-white px-3 py-3 text-[15px] leading-relaxed text-slate-800 shadow-sm placeholder:text-slate-400 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100 md:text-base"
+        className="min-h-[280px] w-full resize-y rounded-2xl border border-slate-200 bg-[#fffdf8] px-4 py-4 text-[15px] leading-relaxed text-slate-900 shadow-inner shadow-slate-100 placeholder:text-slate-400 focus:border-teal-500 focus:outline-none focus:ring-4 focus:ring-teal-100 md:min-h-[340px] md:text-base"
       />
     </div>
   );

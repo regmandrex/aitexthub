@@ -53,9 +53,19 @@ export default function ToolWorkbench({
     setOutput('');
   };
 
+  const cleanupRules = [
+    'Hidden Unicode',
+    'Non-breaking spaces',
+    'Smart quotes',
+    'Markdown leftovers',
+    'Trailing whitespace',
+    'Paragraph spacing',
+  ];
+
   return (
-    <div className="space-y-4">
-      <div className="grid gap-4 md:grid-cols-2">
+    <div className="space-y-5">
+      <div className="grid gap-5 lg:grid-cols-[minmax(0,1fr)_260px]">
+        <div className="grid gap-5 md:grid-cols-2">
         <div className="flex flex-col gap-3">
           <ToolTextarea
             label={inputLabel ?? 'Input text'}
@@ -65,8 +75,8 @@ export default function ToolWorkbench({
             rows={12}
             labelSecondary={
               <div className="flex items-center gap-2 text-xs font-semibold text-slate-600">
-                <span className="rounded-full bg-slate-100 px-3 py-1">{stats.words} words</span>
-                <span className="rounded-full bg-slate-100 px-3 py-1">{stats.hidden} hidden</span>
+                <span className="rounded-full border border-slate-200 bg-white px-3 py-1">{stats.words} words</span>
+                <span className="rounded-full border border-teal-100 bg-teal-50 px-3 py-1 text-teal-700">{stats.hidden} hidden</span>
               </div>
             }
           />
@@ -74,14 +84,14 @@ export default function ToolWorkbench({
             <button
               type="button"
               onClick={handleProcess}
-              className="inline-flex items-center rounded-lg bg-brand-600 px-4 py-2 text-sm font-semibold text-white shadow hover:bg-brand-700"
+              className="inline-flex items-center justify-center rounded-xl bg-slate-950 px-5 py-3 text-sm font-bold text-white shadow-sm transition hover:bg-teal-800"
             >
               {primaryLabel}
             </button>
             <button
               type="button"
               onClick={handleClear}
-              className="inline-flex items-center rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
+              className="inline-flex items-center justify-center rounded-xl border border-slate-200 bg-white px-5 py-3 text-sm font-semibold text-slate-700 transition hover:border-slate-300 hover:bg-slate-50"
             >
               Clear
             </button>
@@ -96,6 +106,24 @@ export default function ToolWorkbench({
           labelSecondary={<CopyButton text={output} label="Copy" />}
           beforeTextarea={output ? <HumanizerUpsellCard compact /> : null}
         />
+        </div>
+        <aside className="rounded-2xl border border-slate-200 bg-[#f8faf7] p-4 shadow-sm">
+          <p className="text-sm font-bold text-slate-950">Cleaning options</p>
+          <p className="mt-1 text-xs leading-relaxed text-slate-600">
+            The default cleaner applies the common fixes people need after copying text from AI tools.
+          </p>
+          <div className="mt-4 space-y-2">
+            {cleanupRules.map((rule) => (
+              <div key={rule} className="flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm font-medium text-slate-700">
+                <span className="flex h-5 w-5 items-center justify-center rounded-full bg-teal-100 text-xs font-black text-teal-700">✓</span>
+                <span>{rule}</span>
+              </div>
+            ))}
+          </div>
+          <div className="mt-4 rounded-xl border border-teal-100 bg-white p-3 text-xs leading-relaxed text-slate-600">
+            Your text is processed in the browser. Review the cleaned result before publishing or submitting.
+          </div>
+        </aside>
       </div>
     </div>
   );
