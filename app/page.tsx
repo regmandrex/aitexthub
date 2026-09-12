@@ -227,23 +227,18 @@ export default async function HomePage() {
       <RailAd side="right" />
 
       <div className="mx-auto w-full max-w-6xl px-4 py-8 min-h-screen sm:py-10 md:px-6 md:py-12">
-        <section className="mx-auto max-w-3xl space-y-4 text-center">
-          <div className="inline-flex items-center rounded-full border border-teal-200 bg-white px-4 py-1.5 text-xs font-bold uppercase tracking-[0.18em] text-teal-800 shadow-sm">
-            Free browser-based text cleaner
-          </div>
-          <h1 className="text-4xl font-black tracking-tight text-slate-950 sm:text-5xl md:text-6xl">AI Text Cleaner</h1>
-          <p className="mx-auto max-w-2xl text-base text-slate-700 sm:text-lg">
-            Clean and normalize AI output: remove hidden Unicode (ZWSP, NBSP, BOM), fix spacing, and keep paragraphs intact for Word, Docs, and SEO-friendly publishing.
+        <section className="mx-auto max-w-3xl space-y-3 text-center">
+          <h1 className="text-4xl font-extrabold tracking-tight text-slate-950 sm:text-5xl">AI Text Cleaner</h1>
+          <h2 className="text-xl font-bold tracking-tight text-slate-900 sm:text-2xl">
+            Clean and Standardize AI Text Instantly
+          </h2>
+          <p className="mx-auto max-w-2xl text-sm leading-6 text-slate-600 sm:text-base">
+            Remove invisible characters, odd spacing, and formatting artifacts from ChatGPT, Claude, Gemini, and other AI outputs.
           </p>
-          <div className="flex flex-wrap items-center justify-center gap-2 text-xs font-semibold text-slate-600">
-            {['No upload required', 'No sign-up', 'Works with ChatGPT, Claude, Gemini'].map((item) => (
-              <span key={item} className="rounded-full border border-stone-200 bg-white px-3 py-1 shadow-sm">{item}</span>
-            ))}
-          </div>
         </section>
 
-        <section className="relative mt-8 w-full md:mt-10">
-          <div className="w-full rounded-[28px] border border-stone-200 bg-white p-4 shadow-[0_24px_80px_rgba(15,23,42,0.08)] md:p-6">
+        <section className="relative mt-8 w-full">
+          <div className="w-full rounded-2xl border border-stone-200 bg-white p-4 shadow-sm md:p-6">
             <ToolWorkbench
               processor="chatgptTextCleaner"
               primaryLabel="Clean Text"

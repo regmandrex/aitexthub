@@ -38,7 +38,7 @@ export default function ToolTextarea({
         onChange={handleChange}
         rows={rows}
         placeholder={placeholder}
-        className="min-h-[280px] w-full resize-y rounded-2xl border border-slate-200 bg-[#fffdf8] px-4 py-4 text-[15px] leading-relaxed text-slate-900 shadow-inner shadow-slate-100 placeholder:text-slate-400 focus:border-teal-500 focus:outline-none focus:ring-4 focus:ring-teal-100 md:min-h-[340px] md:text-base"
+        className="min-h-[300px] w-full resize-y rounded-xl border border-slate-200 bg-white px-4 py-4 text-[15px] leading-relaxed text-slate-900 placeholder:text-slate-400 focus:border-teal-500 focus:outline-none focus:ring-2 focus:ring-teal-100 md:min-h-[360px] md:text-base"
       />
     </div>
   );
