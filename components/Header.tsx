@@ -55,9 +55,9 @@ export default function Header() {
             className="flex items-center hover:opacity-90"
           >
             <img
-              src="/brand/ai-text-cleanup-tools-generated.png"
+              src="/brand/ai-text-cleanup-tools-logo.svg"
               alt="AI Text Cleanup Tools"
-              className="h-14 w-auto max-w-[220px] object-contain md:h-16"
+              className="h-12 w-auto max-w-[220px] object-contain md:h-14"
             />
           </Link>
 
