@@ -23,7 +23,7 @@ export default function HowToRemoveChatGptWatermarksFromWordAndPagesPage() {
       <div className="ad-slot"><AdSenseSlot className="w-full" /></div>
 
       {/* Hero card */}
-      <div className="rounded-[28px] border border-slate-200 bg-white/70 p-6 shadow-xl shadow-slate-900/5 backdrop-blur-lg">
+      <div className="rounded-[28px] border-3 border-black bg-white/70 p-6 shadow-neo-lg shadow-slate-900/5 backdrop-blur-lg">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Word &amp; Pages Cleanup</p>
         <h1 className="mt-3 text-3xl font-semibold text-slate-900">How to Remove ChatGPT Watermarks from Word and Pages Documents</h1>
         <p className="mt-2 text-slate-600">
@@ -37,7 +37,7 @@ export default function HowToRemoveChatGptWatermarksFromWordAndPagesPage() {
             { title: 'Why Pages is different', detail: 'Apple Pages handles Unicode differently from Word' },
             { title: 'The clean workflow', detail: 'External clean first, then paste into document' },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-100 bg-slate-50 p-4 text-xs text-slate-700">
+            <div key={item.title} className="rounded-2xl border-2 border-black bg-slate-50 p-4 text-xs text-slate-700">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.detail}</p>
             </div>
@@ -70,7 +70,7 @@ export default function HowToRemoveChatGptWatermarksFromWordAndPagesPage() {
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">What Artifacts Word and Pages Retain</h2>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Microsoft Word retains</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Zero-width spaces (U+200B) within text runs</li>
@@ -81,7 +81,7 @@ export default function HowToRemoveChatGptWatermarksFromWordAndPagesPage() {
               <li>Non-breaking spaces (U+00A0)</li>
             </ul>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Apple Pages retains</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>All invisible Unicode characters from clipboard</li>
@@ -106,7 +106,7 @@ export default function HowToRemoveChatGptWatermarksFromWordAndPagesPage() {
           first, get clean text back, then paste that into your document. The cleaner runs in your browser, processes the
           raw Unicode string, removes invisible characters, and gives you text that will paste cleanly into any application.
         </p>
-        <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+        <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
           <p className="font-semibold text-slate-900">Proactive workflow (before pasting)</p>
           <ol className="mt-2 list-decimal space-y-2 pl-5">
             <li>Copy text from ChatGPT.</li>
@@ -127,7 +127,7 @@ export default function HowToRemoveChatGptWatermarksFromWordAndPagesPage() {
           If you have already pasted ChatGPT content into a Word document and need to clean it retrospectively,
           here is the workflow:
         </p>
-        <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+        <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
           <p className="font-semibold text-slate-900">Retrospective Word document cleaning</p>
           <ol className="mt-2 list-decimal space-y-2 pl-5">
             <li>
@@ -172,7 +172,7 @@ export default function HowToRemoveChatGptWatermarksFromWordAndPagesPage() {
           For targeted removal of specific invisible characters in Word, the Find and Replace function can be used with
           special character codes. This is more surgical than the full extract-and-clean approach.
         </p>
-        <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+        <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
           <p className="font-semibold text-slate-900">Word Find and Replace for specific Unicode</p>
           <ol className="mt-2 list-decimal space-y-2 pl-5">
             <li>Open Find and Replace: Ctrl+H / Cmd+H.</li>
@@ -203,7 +203,7 @@ export default function HowToRemoveChatGptWatermarksFromWordAndPagesPage() {
           Apple Pages does not have the same wildcard Find and Replace capabilities as Word. The most reliable approach
           for Pages documents is the extract-clean-repaste method.
         </p>
-        <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+        <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
           <p className="font-semibold text-slate-900">Apple Pages cleaning workflow</p>
           <ol className="mt-2 list-decimal space-y-2 pl-5">
             <li>Export the Pages document as Plain Text (File &gt; Export To &gt; Plain Text).</li>

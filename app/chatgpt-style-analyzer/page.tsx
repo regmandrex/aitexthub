@@ -48,7 +48,7 @@ const faqs: FaqItem[] = [
 ];
 
 const writeUp = (
-  <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+  <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
     <div className="prose prose-slate max-w-none">
       <h2>ChatGPT Style Analyzer: Understand and Improve Your Writing Style</h2>
       <p>The ChatGPT Style Analyzer is a free online tool that examines your writing style—the distinctive patterns, choices, and approaches that characterize how you express ideas. Style is what makes your writing uniquely yours and determines how effectively it communicates with readers.</p>

@@ -49,7 +49,7 @@ const faqs: FaqItem[] = [
 ];
 
 const writeUp = (
-  <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+  <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
     <div className="prose prose-slate max-w-none">
       <h2>ChatGPT Blog Post Validator: Optimize Your Content Before Publishing</h2>
       <p>The ChatGPT Blog Post Validator is a free online tool that evaluates blog posts for SEO optimization, readability, structure, engagement factors, and overall quality. Before hitting publish, use this tool to ensure your content meets standards that help it succeed with both readers and search engines.</p>

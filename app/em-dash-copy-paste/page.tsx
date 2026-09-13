@@ -38,7 +38,7 @@ const faqs = [
 ];
 
 const article = (
-  <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10"><div className="prose prose-slate max-w-none">
+  <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10"><div className="prose prose-slate max-w-none">
     <h2>Em Dash Copy and Paste — The Complete Guide to Dashes and Special Symbols</h2>
     <p>
       The <strong>em dash</strong> (—) is one of the most useful and most misunderstood punctuation marks in the English language. Named for its width — approximately equal to the width of the letter M in a given typeface — the <strong>em dash</strong> is used to create a strong pause in a sentence, set off a parenthetical remark, or indicate an interruption in dialogue. Despite its usefulness, the <strong>em dash</strong> is absent from standard keyboard layouts, which is why <strong>em dash copy and paste</strong> is such a common need for writers, editors, students, and content creators.
@@ -247,7 +247,7 @@ export default function EmDashCopyPastePage() {
         </div>
         <div className="mt-6 space-y-4">
           {faqs.map((faq, i) => (
-            <div key={i} className="rounded-lg border border-slate-200 bg-white p-4">
+            <div key={i} className="rounded-lg border-3 border-black bg-white p-4">
               <h3 className="text-sm font-semibold text-slate-900 mb-2">{faq.question}</h3>
               <p className="text-sm text-slate-700">{faq.answer}</p>
             </div>

@@ -98,21 +98,21 @@ export function InvisibleCharacterDetectorTool() {
         <button
           type="button"
           onClick={handleCopy}
-          className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
+          className="inline-flex items-center justify-center rounded-lg border-3 border-black bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
         >
           Copy
         </button>
         <button
           type="button"
           onClick={handleClear}
-          className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
+          className="inline-flex items-center justify-center rounded-lg border-3 border-black bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
         >
           Clear
         </button>
       </div>
 
       {report ? (
-        <div className="rounded-xl border border-slate-200 bg-slate-50 p-4 text-sm text-slate-800">
+        <div className="rounded-xl border-3 border-black bg-slate-50 p-4 text-sm text-slate-800">
           <h3 className="text-base font-semibold text-slate-900">Detected characters</h3>
           <p className="mt-1 text-xs text-slate-600">Total invisible characters: {report.total}</p>
           <div className="mt-3 grid gap-2 sm:grid-cols-2">

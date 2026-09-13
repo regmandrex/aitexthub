@@ -23,7 +23,7 @@ export default function AreAiWatermarksEthicalPage() {
       <div className="ad-slot"><AdSenseSlot className="w-full" /></div>
 
       {/* Hero card */}
-      <div className="rounded-[28px] border border-slate-200 bg-white/70 p-6 shadow-xl shadow-slate-900/5 backdrop-blur-lg">
+      <div className="rounded-[28px] border-3 border-black bg-white/70 p-6 shadow-neo-lg shadow-slate-900/5 backdrop-blur-lg">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Ethics &amp; Privacy</p>
         <h1 className="mt-3 text-3xl font-semibold text-slate-900">Are AI Watermarks Ethical?</h1>
         <p className="mt-2 text-slate-600">
@@ -38,7 +38,7 @@ export default function AreAiWatermarksEthicalPage() {
             { title: 'Anti-watermark arguments', detail: 'Privacy, covert tracking, autonomy concerns' },
             { title: 'The middle ground', detail: 'Consent, disclosure, proportionality' },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-100 bg-slate-50 p-4 text-xs text-slate-700">
+            <div key={item.title} className="rounded-2xl border-2 border-black bg-slate-50 p-4 text-xs text-slate-700">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.detail}</p>
             </div>
@@ -68,7 +68,7 @@ export default function AreAiWatermarksEthicalPage() {
           and deserve serious consideration.
         </p>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Misinformation prevention</p>
             <p className="mt-2">
               AI systems are capable of generating convincing fake news articles, fabricated quotes, and false
@@ -76,7 +76,7 @@ export default function AreAiWatermarksEthicalPage() {
               could flag or contextualize it for readers before it spreads. This is a genuine public benefit.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Academic integrity</p>
             <p className="mt-2">
               Universities struggle with AI-assisted academic fraud. Reliable watermarking would give institutions
@@ -84,7 +84,7 @@ export default function AreAiWatermarksEthicalPage() {
               that produce significant false positives and false negatives.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Democratic transparency</p>
             <p className="mt-2">
               Political messaging, legal filings, and public communications benefit from disclosed authorship.
@@ -92,7 +92,7 @@ export default function AreAiWatermarksEthicalPage() {
               democratic discourse. Watermarking enables provenance transparency.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Regulatory compliance</p>
             <p className="mt-2">
               Multiple jurisdictions are developing requirements that AI-generated content be disclosed. Watermarking
@@ -110,7 +110,7 @@ export default function AreAiWatermarksEthicalPage() {
           covert surveillance.
         </p>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Covert tracking without consent</p>
             <p className="mt-2">
               If AI systems embed hidden markers in text without users&apos; knowledge, this constitutes a form of
@@ -119,7 +119,7 @@ export default function AreAiWatermarksEthicalPage() {
               now require disclosed consent for.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Chilling effects on legitimate use</p>
             <p className="mt-2">
               If AI text can be identified by employers, educational institutions, governments, or other parties,
@@ -128,7 +128,7 @@ export default function AreAiWatermarksEthicalPage() {
               genuine chilling effect on beneficial technology use.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Discriminatory enforcement</p>
             <p className="mt-2">
               Even well-intentioned AI disclosure policies tend to be enforced unevenly. Those with resources
@@ -136,7 +136,7 @@ export default function AreAiWatermarksEthicalPage() {
               on AI for genuine accessibility needs face disproportionate scrutiny.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Power asymmetry</p>
             <p className="mt-2">
               Cryptographic watermarks can only be decoded by the key holder &mdash; the AI company. This creates
@@ -177,7 +177,7 @@ export default function AreAiWatermarksEthicalPage() {
           vary significantly in how they handle the disclosure vs. privacy tension.
         </p>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">European Union AI Act</p>
             <p className="mt-2">
               Requires that AI-generated content be &quot;marked in a machine-readable format and detectable as
@@ -186,7 +186,7 @@ export default function AreAiWatermarksEthicalPage() {
               hidden watermarks.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">US Executive Order on AI (2023)</p>
             <p className="mt-2">
               Directed the National Institute of Standards and Technology to develop guidance on AI content authentication.
@@ -194,7 +194,7 @@ export default function AreAiWatermarksEthicalPage() {
               watermarking approaches.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">China AI regulations</p>
             <p className="mt-2">
               Among the strictest globally: require that AI-generated content be clearly labeled and that providers
@@ -202,7 +202,7 @@ export default function AreAiWatermarksEthicalPage() {
               contexts. More prescriptive than Western approaches.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Voluntary industry standards</p>
             <p className="mt-2">
               The Coalition for Content Provenance and Authenticity (C2PA) has developed technical standards for
@@ -219,7 +219,7 @@ export default function AreAiWatermarksEthicalPage() {
           Given the competing values at play, here is a framework for thinking about when AI watermarking is ethically
           justified and when it is not:
         </p>
-        <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+        <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
           <p className="font-semibold text-slate-900">Ethical conditions for AI watermarking</p>
           <ul className="mt-2 list-disc space-y-2 pl-5">
             <li>

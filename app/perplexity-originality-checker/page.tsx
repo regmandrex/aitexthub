@@ -17,7 +17,7 @@ const toolSlug = 'perplexity-originality-checker';
 
 function createWriteUp() {
   return (
-    <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+    <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
         <h2>Perplexity Originality Checker: Verify AI Content Originality</h2>
         <p>A Perplexity Originality checker helps you assess the originality and authenticity of text generated with Perplexity or similar AI tools. This free tool gives you an estimate of how your content may be perceived by originality and AI-detection systems, so you can revise before submission and meet academic or professional standards.</p>

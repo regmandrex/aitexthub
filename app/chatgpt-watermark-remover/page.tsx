@@ -196,7 +196,7 @@ export default function ChatGPTWatermarkCleanerPage() {
         </section>
 
         <section className="relative w-full mt-4 md:mt-6">
-          <div className="w-full max-w-none rounded-xl border border-slate-200 bg-white p-3 shadow-sm md:rounded-2xl md:p-6">
+          <div className="w-full max-w-none rounded-xl border-3 border-black bg-white p-3 shadow-neo-sm md:rounded-2xl md:p-6">
             <ToolWorkbench
               processor="chatgptTextCleaner"
               primaryLabel="Clean Text"
@@ -212,7 +212,7 @@ export default function ChatGPTWatermarkCleanerPage() {
 
         <RelatedTools currentSlug="chatgpt-watermark-remover" />
 
-        <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 space-y-6 mt-10">
+        <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 space-y-6 mt-10">
           <h2 className="text-2xl font-semibold text-slate-900">ChatGPT Watermark Remover: Clean, Reliable Text for Real Workflows</h2>
           <p className="text-slate-700">
             People searching for a ChatGPT watermark remover usually want a practical way to clean up AI generated text before it goes into a
@@ -504,37 +504,37 @@ export default function ChatGPTWatermarkCleanerPage() {
             are no ambiguous claims.
           </p>
           <div className="overflow-x-auto">
-            <table className="w-full border border-slate-200 text-left text-sm text-slate-700">
+            <table className="w-full border-3 border-black text-left text-sm text-slate-700">
               <thead className="bg-slate-50 text-slate-900">
                 <tr>
-                  <th className="border border-slate-200 px-3 py-2">Can Do</th>
-                  <th className="border border-slate-200 px-3 py-2">Cannot Do</th>
+                  <th className="border-3 border-black px-3 py-2">Can Do</th>
+                  <th className="border-3 border-black px-3 py-2">Cannot Do</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td className="border border-slate-200 px-3 py-2">Remove invisible Unicode characters and normalize spacing.</td>
-                  <td className="border border-slate-200 px-3 py-2">Remove statistical AI watermarks or model level signals.</td>
+                  <td className="border-3 border-black px-3 py-2">Remove invisible Unicode characters and normalize spacing.</td>
+                  <td className="border-3 border-black px-3 py-2">Remove statistical AI watermarks or model level signals.</td>
                 </tr>
                 <tr>
-                  <td className="border border-slate-200 px-3 py-2">Clean formatting artifacts from copied ChatGPT output.</td>
-                  <td className="border border-slate-200 px-3 py-2">Make AI text undetectable or guarantee human likeness.</td>
+                  <td className="border-3 border-black px-3 py-2">Clean formatting artifacts from copied ChatGPT output.</td>
+                  <td className="border-3 border-black px-3 py-2">Make AI text undetectable or guarantee human likeness.</td>
                 </tr>
                 <tr>
-                  <td className="border border-slate-200 px-3 py-2">Standardize punctuation for plain text compatibility.</td>
-                  <td className="border border-slate-200 px-3 py-2">Access, control, or modify OpenAI systems.</td>
+                  <td className="border-3 border-black px-3 py-2">Standardize punctuation for plain text compatibility.</td>
+                  <td className="border-3 border-black px-3 py-2">Access, control, or modify OpenAI systems.</td>
                 </tr>
                 <tr>
-                  <td className="border border-slate-200 px-3 py-2">Improve readability and editorial consistency.</td>
-                  <td className="border border-slate-200 px-3 py-2">Rewrite, paraphrase, or change meaning.</td>
+                  <td className="border-3 border-black px-3 py-2">Improve readability and editorial consistency.</td>
+                  <td className="border-3 border-black px-3 py-2">Rewrite, paraphrase, or change meaning.</td>
                 </tr>
                 <tr>
-                  <td className="border border-slate-200 px-3 py-2">Detect and remove common formatting irregularities.</td>
-                  <td className="border border-slate-200 px-3 py-2">Provide policy circumvention or detection bypass.</td>
+                  <td className="border-3 border-black px-3 py-2">Detect and remove common formatting irregularities.</td>
+                  <td className="border-3 border-black px-3 py-2">Provide policy circumvention or detection bypass.</td>
                 </tr>
                 <tr>
-                  <td className="border border-slate-200 px-3 py-2">Provide clean ChatGPT output for editing and publishing.</td>
-                  <td className="border border-slate-200 px-3 py-2">Guarantee compatibility with every platform or style guide.</td>
+                  <td className="border-3 border-black px-3 py-2">Provide clean ChatGPT output for editing and publishing.</td>
+                  <td className="border-3 border-black px-3 py-2">Guarantee compatibility with every platform or style guide.</td>
                 </tr>
               </tbody>
             </table>

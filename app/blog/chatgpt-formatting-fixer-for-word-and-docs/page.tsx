@@ -29,7 +29,7 @@ export default function ChatGPTFormattingFixerForWordAndDocsPage() {
         <AdSenseSlot className="w-full" />
       </div>
 
-      <div className="rounded-[28px] border border-slate-200 bg-white/70 p-6 shadow-xl shadow-slate-900/5 backdrop-blur-lg">
+      <div className="rounded-[28px] border-3 border-black bg-white/70 p-6 shadow-neo-lg shadow-slate-900/5 backdrop-blur-lg">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Word &amp; Docs workflow</p>
         <h1 className="mt-3 text-3xl font-semibold text-slate-900">ChatGPT Formatting Fixer for Word and Docs</h1>
         <p className="mt-2 text-slate-600">
@@ -43,7 +43,7 @@ export default function ChatGPTFormattingFixerForWordAndDocsPage() {
             { title: 'Lists & headings', detail: 'Stop bullets resetting and styles collapsing' },
             { title: 'PDF stability', detail: 'Prevent layout shifts during export' },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-100 bg-slate-50 p-4 text-xs text-slate-700">
+            <div key={item.title} className="rounded-2xl border-2 border-black bg-slate-50 p-4 text-xs text-slate-700">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.detail}</p>
             </div>
@@ -57,7 +57,7 @@ export default function ChatGPTFormattingFixerForWordAndDocsPage() {
           ChatGPT has become one of the fastest ways to draft documents—essays, reports, proposals, letters, contracts, meeting notes, resumes, and
           more. But almost everyone who uses ChatGPT in Microsoft Word, Google Docs, or other document editors runs into the same problem:
         </p>
-        <p className="rounded-2xl border border-slate-200 bg-white/60 p-4 text-sm text-slate-800 shadow-sm">
+        <p className="rounded-2xl border-3 border-black bg-white/60 p-4 text-sm text-slate-800 shadow-neo-sm">
           &quot;Why does ChatGPT text look broken or messy in my document?&quot;
         </p>
         <p className="text-slate-700">You paste the text, and suddenly:</p>
@@ -103,7 +103,7 @@ export default function ChatGPTFormattingFixerForWordAndDocsPage() {
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">Invisible characters: the silent formatting killers</h2>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">What they do in documents</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Change how Word calculates line height</li>
@@ -114,7 +114,7 @@ export default function ChatGPTFormattingFixerForWordAndDocsPage() {
             </ul>
             <p className="mt-3">Because they&apos;re invisible, users assume Word is buggy. It isn&apos;t—it&apos;s doing what the text tells it to do.</p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Common invisible characters</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Non-breaking spaces (prevent wrapping)</li>
@@ -200,7 +200,7 @@ export default function ChatGPTFormattingFixerForWordAndDocsPage() {
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">Step 6: apply styles natively</h2>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Word tips</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Use styles (Heading 1/2/3) instead of manual font sizing.</li>
@@ -208,7 +208,7 @@ export default function ChatGPTFormattingFixerForWordAndDocsPage() {
               <li>Justification bugs usually indicate non-breaking spaces.</li>
             </ul>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Google Docs tips</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Paste as plain text after cleaning (avoid &quot;paste with formatting&quot;).</li>

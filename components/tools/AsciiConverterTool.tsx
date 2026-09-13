@@ -63,14 +63,14 @@ export function AsciiConverterTool() {
           <div className="flex items-center gap-2">
             <label className="font-medium text-slate-700">Output format:</label>
             <select value={format} onChange={e => setFormat(e.target.value)}
-              className="rounded-lg border border-slate-200 px-2 py-1 focus:outline-none">
+              className="rounded-lg border-3 border-black px-2 py-1 focus:outline-none">
               {Object.keys(BASES).map(b => <option key={b}>{b}</option>)}
             </select>
           </div>
           <div className="flex items-center gap-2">
             <label className="font-medium text-slate-700">Separator:</label>
             <select value={separator} onChange={e => setSeparator(e.target.value)}
-              className="rounded-lg border border-slate-200 px-2 py-1 focus:outline-none">
+              className="rounded-lg border-3 border-black px-2 py-1 focus:outline-none">
               {Object.keys(SEPARATORS).map(s => <option key={s}>{s}</option>)}
             </select>
           </div>
@@ -81,7 +81,7 @@ export function AsciiConverterTool() {
         <div className="flex items-center gap-2 text-sm">
           <label className="font-medium text-slate-700">Input format:</label>
           <select value={inputFormat} onChange={e => setInputFormat(e.target.value)}
-            className="rounded-lg border border-slate-200 px-2 py-1 focus:outline-none">
+            className="rounded-lg border-3 border-black px-2 py-1 focus:outline-none">
             {Object.keys(BASES).map(b => <option key={b}>{b}</option>)}
           </select>
         </div>
@@ -101,7 +101,7 @@ export function AsciiConverterTool() {
         <button onClick={tab === 'toAscii' ? convertToAscii : convertToText}
           className="px-4 py-2 text-sm font-medium rounded-xl bg-blue-600 text-white hover:bg-blue-700">Convert</button>
         <button onClick={copy} disabled={!output}
-          className="px-4 py-2 text-sm font-medium rounded-xl border border-slate-200 bg-white hover:bg-slate-50 disabled:opacity-40">
+          className="px-4 py-2 text-sm font-medium rounded-xl border-3 border-black bg-white hover:bg-slate-50 disabled:opacity-40">
           {copied ? 'Copied!' : 'Copy Output'}
         </button>
       </div>

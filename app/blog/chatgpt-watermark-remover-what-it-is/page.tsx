@@ -23,7 +23,7 @@ export default function ChatGptWatermarkRemoverWhatItIsPage() {
       <div className="ad-slot"><AdSenseSlot className="w-full" /></div>
 
       {/* Hero card */}
-      <div className="rounded-[28px] border border-slate-200 bg-white/70 p-6 shadow-xl shadow-slate-900/5 backdrop-blur-lg">
+      <div className="rounded-[28px] border-3 border-black bg-white/70 p-6 shadow-neo-lg shadow-slate-900/5 backdrop-blur-lg">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Tool Explained</p>
         <h1 className="mt-3 text-3xl font-semibold text-slate-900">ChatGPT Watermark Remover: What It Is and How It Works</h1>
         <p className="mt-2 text-slate-600">
@@ -38,7 +38,7 @@ export default function ChatGptWatermarkRemoverWhatItIsPage() {
             { title: 'What it preserves', detail: 'All visible text, meaning, and structure' },
             { title: 'How it works', detail: 'Browser-local Unicode string scanning and filtering' },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-100 bg-slate-50 p-4 text-xs text-slate-700">
+            <div key={item.title} className="rounded-2xl border-2 border-black bg-slate-50 p-4 text-xs text-slate-700">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.detail}</p>
             </div>
@@ -58,7 +58,7 @@ export default function ChatGptWatermarkRemoverWhatItIsPage() {
           not rewrite your text, change your word choices, or modify anything that is visible to a reader.
         </p>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">What a watermark remover IS</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>A Unicode character scanner and filter</li>
@@ -68,7 +68,7 @@ export default function ChatGptWatermarkRemoverWhatItIsPage() {
               <li>A privacy-safe browser-local text processor</li>
             </ul>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">What a watermark remover IS NOT</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>An AI content rewriter or humanizer</li>
@@ -94,7 +94,7 @@ export default function ChatGptWatermarkRemoverWhatItIsPage() {
           A comprehensive ChatGPT watermark remover targets the following character types:
         </p>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Zero-Width Space (U+200B)</p>
             <p className="mt-2">
               The most common artifact in ChatGPT text. Appears at token boundaries in the generated output.
@@ -102,7 +102,7 @@ export default function ChatGptWatermarkRemoverWhatItIsPage() {
               AI detection Unicode scanning.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Zero-Width Non-Joiner (U+200C)</p>
             <p className="mt-2">
               Appears in AI text generated from prompts involving multiple languages or scripts. Prevents ligature
@@ -110,7 +110,7 @@ export default function ChatGptWatermarkRemoverWhatItIsPage() {
               on multilingual corpora.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Zero-Width Joiner (U+200D)</p>
             <p className="mt-2">
               Appears around emoji sequences and some Arabic/Indic script combinations. Less common in purely
@@ -118,14 +118,14 @@ export default function ChatGptWatermarkRemoverWhatItIsPage() {
               prompts.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Soft Hyphen (U+00AD)</p>
             <p className="mt-2">
               Invisible in most rendering contexts. Acts as a line-break hint in some renderers. Found in AI text
               around technical compound words. Can cause unexpected behavior in word processors and PDF generators.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Byte-Order Mark (U+FEFF)</p>
             <p className="mt-2">
               Appears at the beginning of text from some AI output pipelines. Functions as a zero-width no-break
@@ -133,7 +133,7 @@ export default function ChatGptWatermarkRemoverWhatItIsPage() {
               expect it.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Other control characters</p>
             <p className="mt-2">
               Left-to-right mark (U+200E), right-to-left mark (U+200F), word joiner (U+2060), and other Unicode
@@ -151,7 +151,7 @@ export default function ChatGptWatermarkRemoverWhatItIsPage() {
           The removal process is technically simple, which is why it can run entirely in your browser without any
           server involvement. Here is what happens when you paste text and click &quot;remove&quot;:
         </p>
-        <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+        <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
           <ol className="list-decimal space-y-2 pl-5">
             <li>
               <strong>Text parsing:</strong> The tool reads the pasted string as a sequence of Unicode code points,
@@ -183,7 +183,7 @@ export default function ChatGptWatermarkRemoverWhatItIsPage() {
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">When to Use a ChatGPT Watermark Remover</h2>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Before publishing content</p>
             <p className="mt-2">
               Any AI-generated content that will be published to a website, blog, or CMS should be cleaned of
@@ -191,7 +191,7 @@ export default function ChatGptWatermarkRemoverWhatItIsPage() {
               rendering issues, and make your content look lower quality to tools that analyze it.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Before academic submission</p>
             <p className="mt-2">
               Any document being submitted academically should be cleaned, especially if AI tools were used at
@@ -199,7 +199,7 @@ export default function ChatGptWatermarkRemoverWhatItIsPage() {
               even when the submitted text is entirely your own writing.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Before entering databases or APIs</p>
             <p className="mt-2">
               Text that will be stored in databases or processed by APIs should be cleaned. Invisible characters
@@ -207,7 +207,7 @@ export default function ChatGptWatermarkRemoverWhatItIsPage() {
               pipelines that do not handle all Unicode gracefully.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Before sending professional communications</p>
             <p className="mt-2">
               Emails, proposals, reports, and contracts with invisible characters may behave unexpectedly when
@@ -243,28 +243,28 @@ export default function ChatGptWatermarkRemoverWhatItIsPage() {
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">Frequently Asked Questions</h2>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Does removal change my visible text?</p>
             <p className="mt-2">
               No. Removing invisible Unicode characters has no effect on any visible content. Your words, sentences,
               paragraphs, and formatting remain identical. Only the invisible characters are removed.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Is it safe for confidential documents?</p>
             <p className="mt-2">
               Yes, if you use a browser-local tool. The <Link href="/chatgpt-watermark-remover">ChatGPT Watermark Remover</Link> on
               this site processes text entirely in your browser &mdash; nothing is sent to any server.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Does it work on text from other AI models?</p>
             <p className="mt-2">
               Yes. The invisible Unicode characters that appear in ChatGPT text also appear in text from Claude,
               Gemini, Grok, and other AI models. The removal process works on any Unicode text regardless of source.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">How do I know if my text has any?</p>
             <p className="mt-2">
               Use the <Link href="/chatgpt-watermark-detector">ChatGPT Watermark Detector</Link> first to check whether

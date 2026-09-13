@@ -28,7 +28,7 @@ export default function HowToCleanChatGPTTextPage() {
         <AdSenseSlot className="w-full" />
       </div>
 
-      <div className="rounded-[28px] border border-slate-200 bg-white/70 p-6 shadow-xl shadow-slate-900/5 backdrop-blur-lg">
+      <div className="rounded-[28px] border-3 border-black bg-white/70 p-6 shadow-neo-lg shadow-slate-900/5 backdrop-blur-lg">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Publishing-ready AI text</p>
         <h1 className="mt-3 text-3xl font-semibold text-slate-900">How to Clean ChatGPT Text</h1>
         <p className="mt-2 text-slate-600">
@@ -42,7 +42,7 @@ export default function HowToCleanChatGPTTextPage() {
             { title: 'Performance', detail: 'Less DOM noise, fewer layout glitches, faster rendering' },
             { title: 'Consistency', detail: 'Predictable headings, bullets, spacing across editors' },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-100 bg-slate-50 p-4 text-xs text-slate-700">
+            <div key={item.title} className="rounded-2xl border-2 border-black bg-slate-50 p-4 text-xs text-slate-700">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.detail}</p>
             </div>
@@ -90,7 +90,7 @@ export default function HowToCleanChatGPTTextPage() {
               body: 'Extra markup and unstable structure can add DOM complexity and contribute to layout shifts on mobile.',
             },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-200 bg-white/60 p-4 text-sm text-slate-700 shadow-sm">
+            <div key={item.title} className="rounded-2xl border-3 border-black bg-white/60 p-4 text-sm text-slate-700 shadow-neo-sm">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.body}</p>
             </div>
@@ -101,7 +101,7 @@ export default function HowToCleanChatGPTTextPage() {
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">Common problems hiding in raw ChatGPT text</h2>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Invisible Unicode</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Zero-width space (ZWSP) and zero-width non-joiner</li>
@@ -113,7 +113,7 @@ export default function HowToCleanChatGPTTextPage() {
               Use the <Link href="/invisible-character-detector">Invisible Character Detector</Link> to confirm what is actually in your text.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Formatting and structure issues</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Broken lists or inconsistent bullet symbols</li>
@@ -130,7 +130,7 @@ export default function HowToCleanChatGPTTextPage() {
 
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">Step-by-step: how to clean ChatGPT text properly</h2>
-        <div className="rounded-2xl border border-brand-100 bg-brand-50 p-5 text-sm text-brand-900 shadow-sm">
+        <div className="rounded-2xl border border-brand-100 bg-brand-50 p-5 text-sm text-brand-900 shadow-neo-sm">
           <p className="font-semibold text-brand-800">Fast, safe pipeline</p>
           <ol className="mt-2 list-decimal space-y-2 pl-5 text-slate-800">
             <li>
@@ -175,7 +175,7 @@ export default function HowToCleanChatGPTTextPage() {
               body: 'Hidden Unicode can break JSON/YAML and linters. Clean before pasting into README files, configs, and comments.',
             },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-200 bg-white/70 p-4 text-sm text-slate-700 shadow-sm">
+            <div key={item.title} className="rounded-2xl border-3 border-black bg-white/70 p-4 text-sm text-slate-700 shadow-neo-sm">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.body}</p>
             </div>
@@ -186,7 +186,7 @@ export default function HowToCleanChatGPTTextPage() {
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">Manual vs automated cleaning</h2>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/70 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/70 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Manual cleaning</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Works for one-off quick fixes</li>
@@ -194,7 +194,7 @@ export default function HowToCleanChatGPTTextPage() {
               <li>Time-consuming at scale</li>
             </ul>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/70 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/70 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Automated cleaning</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Detects and removes hidden Unicode reliably</li>
@@ -238,7 +238,7 @@ export default function HowToCleanChatGPTTextPage() {
               a: 'If you publish regularly or care about SEO and professionalism, yes. A consistent pipeline prevents recurring issues.',
             },
           ].map((item) => (
-            <div key={item.q} className="rounded-2xl border border-slate-200 bg-white/60 p-4 text-sm text-slate-700 shadow-sm">
+            <div key={item.q} className="rounded-2xl border-3 border-black bg-white/60 p-4 text-sm text-slate-700 shadow-neo-sm">
               <p className="font-semibold text-slate-900">{item.q}</p>
               <p className="mt-1">{item.a}</p>
             </div>

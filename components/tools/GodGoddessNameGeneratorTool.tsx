@@ -64,7 +64,7 @@ export function GodGoddessNameGeneratorTool() {
             id="culture"
             value={culture}
             onChange={(e) => setCulture(e.target.value as Culture)}
-            className="w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-slate-900 focus:border-brand-600 focus:outline-none focus:ring-1 focus:ring-brand-600"
+            className="w-full rounded-lg border-2 border-black bg-white px-3 py-2 text-slate-900 focus:border-brand-600 focus:outline-none focus:ring-1 focus:ring-brand-600"
             aria-label="Choose mythology or culture"
           >
             {CULTURES.map((c) => (
@@ -82,7 +82,7 @@ export function GodGoddessNameGeneratorTool() {
             id="deityType"
             value={deityType}
             onChange={(e) => setDeityType(e.target.value as DeityType)}
-            className="w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-slate-900 focus:border-brand-600 focus:outline-none focus:ring-1 focus:ring-brand-600"
+            className="w-full rounded-lg border-2 border-black bg-white px-3 py-2 text-slate-900 focus:border-brand-600 focus:outline-none focus:ring-1 focus:ring-brand-600"
             aria-label="Gods, goddesses, or both"
           >
             {DEITY_TYPES.map((t) => (
@@ -103,7 +103,7 @@ export function GodGoddessNameGeneratorTool() {
             max={MAX_COUNT}
             value={count}
             onChange={(e) => setCount(Math.min(MAX_COUNT, Math.max(MIN_COUNT, Number(e.target.value) || MIN_COUNT)))}
-            className="w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-slate-900 focus:border-brand-600 focus:outline-none focus:ring-1 focus:ring-brand-600"
+            className="w-full rounded-lg border-2 border-black bg-white px-3 py-2 text-slate-900 focus:border-brand-600 focus:outline-none focus:ring-1 focus:ring-brand-600"
             aria-label="Number of names to generate"
           />
         </div>
@@ -113,7 +113,7 @@ export function GodGoddessNameGeneratorTool() {
               type="checkbox"
               checked={includeMeaning}
               onChange={(e) => setIncludeMeaning(e.target.checked)}
-              className="h-4 w-4 rounded border-slate-300 text-brand-600 focus:ring-brand-600"
+              className="h-4 w-4 rounded border-black text-brand-600 focus:ring-brand-600"
               aria-label="Include meaning with each name"
             />
             <span className="text-sm font-medium text-slate-700">Include meaning</span>
@@ -143,7 +143,7 @@ export function GodGoddessNameGeneratorTool() {
           type="button"
           onClick={handleCopy}
           disabled={results.length === 0}
-          className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50 disabled:cursor-not-allowed disabled:opacity-50"
+          className="inline-flex items-center justify-center rounded-lg border-3 border-black bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50 disabled:cursor-not-allowed disabled:opacity-50"
         >
           Copy
         </button>
@@ -151,7 +151,7 @@ export function GodGoddessNameGeneratorTool() {
           type="button"
           onClick={handleClear}
           disabled={results.length === 0}
-          className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50 disabled:cursor-not-allowed disabled:opacity-50"
+          className="inline-flex items-center justify-center rounded-lg border-3 border-black bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50 disabled:cursor-not-allowed disabled:opacity-50"
         >
           Clear
         </button>
@@ -160,7 +160,7 @@ export function GodGoddessNameGeneratorTool() {
       {results.length > 0 && (
         <div>
           <label className="mb-1 block text-sm font-medium text-slate-700">Generated deity names</label>
-          <div className="rounded-lg border border-slate-200 bg-slate-50 p-4">
+          <div className="rounded-lg border-3 border-black bg-slate-50 p-4">
             <ul className="space-y-2 text-slate-800">
               {results.map((r, i) => (
                 <li key={`${r.name}-${i}`}>

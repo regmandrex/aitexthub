@@ -2,7 +2,7 @@ import type { ToolContent } from './index';
 import type { FaqItem } from '@/components/faqData';
 
 const WriteUp = () => (
-  <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+  <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
     <div className="prose prose-slate max-w-none">
       <h2>Box Shadow Generator: The Complete Guide to CSS box-shadow, Elevation Design, and Shadow Systems</h2>
       <p>
@@ -108,12 +108,12 @@ box-shadow:
         Tailwind provides a practical shadow utility scale:
       </p>
       <ul>
-        <li><code>shadow-sm</code>: <code>0 1px 2px 0 rgb(0 0 0 / 0.05)</code></li>
+        <li><code>shadow-neo-sm</code>: <code>0 1px 2px 0 rgb(0 0 0 / 0.05)</code></li>
         <li><code>shadow</code>: <code>0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1)</code></li>
-        <li><code>shadow-md</code>: <code>0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)</code></li>
-        <li><code>shadow-lg</code>: <code>0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)</code></li>
-        <li><code>shadow-xl</code>: <code>0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)</code></li>
-        <li><code>shadow-2xl</code>: <code>0 25px 50px -12px rgb(0 0 0 / 0.25)</code></li>
+        <li><code>shadow-neo</code>: <code>0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)</code></li>
+        <li><code>shadow-neo-lg</code>: <code>0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)</code></li>
+        <li><code>shadow-neo-lg</code>: <code>0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)</code></li>
+        <li><code>shadow-neo-lg</code>: <code>0 25px 50px -12px rgb(0 0 0 / 0.25)</code></li>
         <li><code>shadow-inner</code>: <code>inset 0 2px 4px 0 rgb(0 0 0 / 0.05)</code></li>
         <li><code>shadow-none</code>: Removes shadow</li>
       </ul>
@@ -292,20 +292,20 @@ header {
 
       <h2>CSS Custom Properties for Shadow Systems</h2>
       <pre><code>{`:root {
-  --shadow-sm:    0 1px 3px rgba(0,0,0,0.08),
+  --shadow-neo-sm:    0 1px 3px rgba(0,0,0,0.08),
                   0 1px 2px rgba(0,0,0,0.04);
-  --shadow-md:    0 4px 8px rgba(0,0,0,0.08),
+  --shadow-neo:    0 4px 8px rgba(0,0,0,0.08),
                   0 2px 4px rgba(0,0,0,0.04);
-  --shadow-lg:    0 16px 32px rgba(0,0,0,0.10),
+  --shadow-neo-lg:    0 16px 32px rgba(0,0,0,0.10),
                   0 4px 8px rgba(0,0,0,0.06);
-  --shadow-xl:    0 32px 64px rgba(0,0,0,0.12),
+  --shadow-neo-lg:    0 32px 64px rgba(0,0,0,0.12),
                   0 8px 16px rgba(0,0,0,0.08);
   --shadow-focus: 0 0 0 3px rgba(59,130,246,0.4);
   --shadow-inset: inset 0 2px 4px rgba(0,0,0,0.08);
 }
 
-.card   { box-shadow: var(--shadow-md); }
-.modal  { box-shadow: var(--shadow-xl); }
+.card   { box-shadow: var(--shadow-neo); }
+.modal  { box-shadow: var(--shadow-neo-lg); }
 :focus  { box-shadow: var(--shadow-focus); }`}</code></pre>
 
       <h2>box-shadow vs. filter: drop-shadow()</h2>
@@ -365,7 +365,7 @@ const faqs: FaqItem[] = [
   {
     category: 'Tailwind',
     question: 'What are the Tailwind CSS shadow utility classes?',
-    answer: 'Tailwind\'s scale: shadow-sm (subtle), shadow (default), shadow-md (medium), shadow-lg (large), shadow-xl (extra large), shadow-2xl (very dramatic), shadow-inner (inset), shadow-none. Tailwind v3+ supports colored shadows: shadow-blue-500/50 tints the shadow with a color at opacity. Add shadow on specific sides with shadow-t, shadow-r, shadow-b, shadow-l in Tailwind v4.',
+    answer: 'Tailwind\'s scale: shadow-neo-sm (subtle), shadow (default), shadow-neo (medium), shadow-neo-lg (large), shadow-neo-lg (extra large), shadow-neo-lg (very dramatic), shadow-inner (inset), shadow-none. Tailwind v3+ supports colored shadows: shadow-blue-500/50 tints the shadow with a color at opacity. Add shadow on specific sides with shadow-t, shadow-r, shadow-b, shadow-l in Tailwind v4.',
   },
   {
     category: 'Techniques',
@@ -425,7 +425,7 @@ const faqs: FaqItem[] = [
   {
     category: 'CSS Variables',
     question: 'How do I create a shadow system with CSS custom properties?',
-    answer: 'Define semantic shadow tokens: `:root { --shadow-sm: 0 1px 3px rgba(0,0,0,0.08); --shadow-md: 0 4px 12px rgba(0,0,0,0.1); --shadow-lg: 0 16px 32px rgba(0,0,0,0.12); --shadow-focus: 0 0 0 3px rgba(59,130,246,0.4); }`. Apply: `.card { box-shadow: var(--shadow-md); }`. Enables theme-wide shadow changes, dark mode overrides within :root, and design token architecture alignment.',
+    answer: 'Define semantic shadow tokens: `:root { --shadow-neo-sm: 0 1px 3px rgba(0,0,0,0.08); --shadow-neo: 0 4px 12px rgba(0,0,0,0.1); --shadow-neo-lg: 0 16px 32px rgba(0,0,0,0.12); --shadow-focus: 0 0 0 3px rgba(59,130,246,0.4); }`. Apply: `.card { box-shadow: var(--shadow-neo); }`. Enables theme-wide shadow changes, dark mode overrides within :root, and design token architecture alignment.',
   },
   {
     category: 'Techniques',

@@ -94,7 +94,7 @@ export default function PricingModal({
     <div className="fixed inset-0 z-50 flex items-center justify-center overflow-y-auto p-4">
       <div className="fixed inset-0 bg-slate-950/80 backdrop-blur-sm" onClick={onClose} />
 
-      <div className="relative my-auto w-full max-w-md overflow-hidden rounded-2xl bg-white shadow-2xl">
+      <div className="relative my-auto w-full max-w-md overflow-hidden rounded-2xl border-3 border-black bg-white shadow-neo-lg">
 
         {/* Close */}
         <button
@@ -109,7 +109,7 @@ export default function PricingModal({
 
         {/* Header */}
         <div className="px-6 pt-7 pb-5 text-center">
-          <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-violet-500 to-purple-700 shadow-md shadow-purple-200">
+          <div className="mx-auto flex h-12 w-12 items-center justify-center rounded-2xl bg-gradient-to-br from-violet-500 to-purple-700 shadow-neo shadow-purple-200">
             <svg className="h-6 w-6 text-white" fill="currentColor" viewBox="0 0 24 24">
               <path d="M13 2L3 14h7l-1 8 10-12h-7l1-8z" />
             </svg>
@@ -131,17 +131,17 @@ export default function PricingModal({
                 key={plan.id}
                 type="button"
                 onClick={() => setSelected(plan.id)}
-                className={`group relative flex w-full items-center justify-between rounded-xl border-2 px-4 py-3 text-left transition-all ${
+                className={`group relative flex w-full items-center justify-between rounded-xl border-3 px-4 py-3 text-left transition-all ${
                   isSelected
-                    ? 'border-violet-600 bg-violet-50/60 shadow-sm'
-                    : 'border-slate-200 bg-white hover:border-slate-300'
+                    ? 'border-black bg-violet-50/60 shadow-neo-sm'
+                    : 'border-black bg-white hover:bg-slate-50'
                 }`}
               >
                 {/* Radio */}
                 <div className="flex items-center gap-3">
                   <span
                     className={`flex h-5 w-5 shrink-0 items-center justify-center rounded-full border-2 transition ${
-                      isSelected ? 'border-violet-600 bg-violet-600' : 'border-slate-300 bg-white'
+                      isSelected ? 'border-violet-600 bg-violet-600' : 'border-black bg-white'
                     }`}
                   >
                     {isSelected && <span className="h-2 w-2 rounded-full bg-white" />}
@@ -187,7 +187,7 @@ export default function PricingModal({
         </div>
 
         {/* Features */}
-        <div className="mt-5 border-t border-slate-100 px-6 py-4">
+        <div className="mt-5 border-t-2 border-black px-6 py-4">
           <ul className="grid grid-cols-2 gap-x-3 gap-y-2">
             {(isOcProduct
               ? [
@@ -212,7 +212,7 @@ export default function PricingModal({
           <a
             href="/contact"
             onClick={() => trackEvent('cta_clicked', { plan: activePlan.id, location: 'pricing_modal' })}
-            className="block w-full rounded-xl bg-gradient-to-r from-violet-600 to-purple-700 py-3.5 text-center text-sm font-bold text-white shadow-lg shadow-violet-200 transition-all hover:from-violet-700 hover:to-purple-800 hover:shadow-xl"
+            className="block w-full rounded-xl border-3 border-black bg-gradient-to-r from-violet-600 to-purple-700 py-3.5 text-center text-sm font-bold text-white shadow-neo transition-transform hover:translate-y-0.5 hover:shadow-neo-sm active:translate-y-1 active:shadow-none"
           >
             Contact us about {activePlan.name}
           </a>

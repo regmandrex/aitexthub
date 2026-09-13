@@ -38,7 +38,7 @@ const faqs = [
 ];
 
 const article = (
-  <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10"><div className="prose prose-slate max-w-none">
+  <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10"><div className="prose prose-slate max-w-none">
     <h2>Remove Spaces in Excel — The Complete Guide</h2>
     <p>
       <strong>Remove spaces in Excel</strong> is one of the most common data cleaning tasks in any spreadsheet workflow. Whether you are dealing with leading spaces before text, trailing spaces after values, double spaces between words, or invisible non-breaking spaces from web-copied data, extra spaces in Excel cells cause real problems: VLOOKUP returns errors, SUM returns zero for number cells, and data that looks identical fails every comparison. This guide covers every method to <strong>remove spaces in Excel</strong> — from the TRIM function for quick fixes to Power Query for automated recurring imports.
@@ -290,7 +290,7 @@ export default async function RemoveSpacesExcelPage() {
           </div>
         </section>
 
-        <section className="mt-6 w-full rounded-xl border border-blue-100 bg-blue-50 p-4 shadow-sm md:rounded-2xl md:p-6">
+        <section className="mt-6 w-full rounded-xl border border-blue-100 bg-blue-50 p-4 shadow-neo-sm md:rounded-2xl md:p-6">
           <h2 className="text-base font-semibold text-slate-800 mb-2">Quick Reference: Excel Space Removal Formulas</h2>
           <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
             {[
@@ -301,7 +301,7 @@ export default async function RemoveSpacesExcelPage() {
               { formula: '=VALUE(TRIM(A1))', use: 'Remove spaces and convert text to number' },
               { formula: 'Ctrl+H ? space ? empty', use: 'Find & Replace all spaces (no formula)' },
             ].map((item) => (
-              <div key={item.formula} className="rounded-lg border border-slate-100 bg-white p-3">
+              <div key={item.formula} className="rounded-lg border-2 border-black bg-white p-3">
                 <p className="text-xs font-mono font-semibold text-blue-700 mb-1">{item.formula}</p>
                 <p className="text-xs text-slate-600">{item.use}</p>
               </div>
@@ -310,7 +310,7 @@ export default async function RemoveSpacesExcelPage() {
         </section>
 
         <section className="relative w-full mt-6">
-          <div className="w-full max-w-none rounded-xl border border-slate-200 bg-white p-3 shadow-sm md:rounded-2xl md:p-6">
+          <div className="w-full max-w-none rounded-xl border-3 border-black bg-white p-3 shadow-neo-sm md:rounded-2xl md:p-6">
             <p className="text-xs text-slate-500 mb-3">Paste text to clean before copying into Excel — strips invisible characters, non-breaking spaces, and formatting artifacts</p>
             <ToolWorkbench
               processor="chatgptTextCleaner"
@@ -335,7 +335,7 @@ export default async function RemoveSpacesExcelPage() {
 
         <div className="mt-6 space-y-4">
           {faqs.map((faq, i) => (
-            <div key={i} className="rounded-xl border border-slate-200 bg-white p-4 shadow-sm">
+            <div key={i} className="rounded-xl border-3 border-black bg-white p-4 shadow-neo-sm">
               <h3 className="text-sm font-semibold text-slate-800 mb-2">{faq.question}</h3>
               <p className="text-sm text-slate-600">{faq.answer}</p>
             </div>

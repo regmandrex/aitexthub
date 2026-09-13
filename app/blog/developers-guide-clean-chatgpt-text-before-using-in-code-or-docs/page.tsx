@@ -28,7 +28,7 @@ export default function DevelopersGuideCleanChatGPTTextPage() {
         <AdSenseSlot className="w-full" />
       </div>
 
-      <div className="rounded-[28px] border border-slate-200 bg-white/70 p-6 shadow-xl shadow-slate-900/5 backdrop-blur-lg">
+      <div className="rounded-[28px] border-3 border-black bg-white/70 p-6 shadow-neo-lg shadow-slate-900/5 backdrop-blur-lg">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Treat AI text like external input</p>
         <h1 className="mt-3 text-3xl font-semibold text-slate-900">Developer’s Guide: Clean ChatGPT Text for Code and Docs</h1>
         <p className="mt-2 text-slate-600">
@@ -42,7 +42,7 @@ export default function DevelopersGuideCleanChatGPTTextPage() {
             { title: 'Fix Unicode', detail: 'Remove ZWSP/NBSP and normalize quotes' },
             { title: 'Keep docs stable', detail: 'Stop Markdown/MDX rendering glitches' },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-100 bg-slate-50 p-4 text-xs text-slate-700">
+            <div key={item.title} className="rounded-2xl border-2 border-black bg-slate-50 p-4 text-xs text-slate-700">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.detail}</p>
             </div>
@@ -67,7 +67,7 @@ export default function DevelopersGuideCleanChatGPTTextPage() {
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">Common problems ChatGPT text causes in dev environments</h2>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">1. Invisible Unicode in code blocks</p>
             <p className="mt-2">ChatGPT output may contain ZWSP, NBSP, directional markers, or Unicode quotes. In code, these can:</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
@@ -76,7 +76,7 @@ export default function DevelopersGuideCleanChatGPTTextPage() {
               <li>Create bugs that are hard to detect</li>
             </ul>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">2. Broken Markdown/MDX rendering</p>
             <p className="mt-2">Hidden characters and inconsistent whitespace can make:</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
@@ -86,7 +86,7 @@ export default function DevelopersGuideCleanChatGPTTextPage() {
               <li>Inline code render oddly</li>
             </ul>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">3. YAML/JSON/config failures</p>
             <p className="mt-2">Strict formats are sensitive to NBSP, Unicode quotes, and soft hyphens. Results include:</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
@@ -95,7 +95,7 @@ export default function DevelopersGuideCleanChatGPTTextPage() {
               <li>Runtime crashes</li>
             </ul>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">4. Copy-paste bugs in editors</p>
             <p className="mt-2">
               Pasting into VS Code, JetBrains IDEs, Vim, or Notion-to-repo workflows preserves invisible characters and spreads them silently
@@ -123,7 +123,7 @@ export default function DevelopersGuideCleanChatGPTTextPage() {
 
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">Correct workflow: using ChatGPT text safely</h2>
-        <div className="rounded-2xl border border-brand-100 bg-brand-50 p-5 text-sm text-brand-900 shadow-sm">
+        <div className="rounded-2xl border border-brand-100 bg-brand-50 p-5 text-sm text-brand-900 shadow-neo-sm">
           <p className="font-semibold text-brand-800">Safe dev workflow</p>
           <ol className="mt-2 list-decimal space-y-2 pl-5 text-slate-800">
             <li>
@@ -152,21 +152,21 @@ export default function DevelopersGuideCleanChatGPTTextPage() {
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">Using ChatGPT text in specific developer contexts</h2>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">README files</p>
             <p className="mt-2">Clean text, rebuild Markdown, and test rendering locally to catch broken headings, lists, and code blocks.</p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">API documentation</p>
             <p className="mt-2">Clean before adding examples to OpenAPI docs, MDX files, or generated docs to avoid corrupted tables and snippets.</p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Code comments</p>
             <p className="mt-2">
               Some tooling parses comments and generates docs. Unicode issues can leak into output. Clean before pasting comments.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Config files (YAML/JSON/ENV)</p>
             <p className="mt-2">
               High risk. Never paste directly. Clean first and retype critical values to avoid invisible Unicode breaking strict parsers.
@@ -204,7 +204,7 @@ export default function DevelopersGuideCleanChatGPTTextPage() {
             { q: 'Will my IDE highlight them?', a: 'Usually not. You need character-level detection or cleaning tools.' },
             { q: 'Is cleaning overkill for comments?', a: 'No. Comments are parsed by linters and doc generators too.' },
           ].map((item) => (
-            <div key={item.q} className="rounded-2xl border border-slate-200 bg-white/60 p-4 text-sm text-slate-700 shadow-sm">
+            <div key={item.q} className="rounded-2xl border-3 border-black bg-white/60 p-4 text-sm text-slate-700 shadow-neo-sm">
               <p className="font-semibold text-slate-900">{item.q}</p>
               <p className="mt-1">{item.a}</p>
             </div>

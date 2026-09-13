@@ -97,7 +97,7 @@ export function TeamNameGeneratorTool() {
   }
 
   return (
-    <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm sm:p-6">
+    <div className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm sm:p-6">
       <label htmlFor="team-keyword" className="text-sm font-medium text-slate-900">
         키워드 (선택)
       </label>
@@ -107,7 +107,7 @@ export function TeamNameGeneratorTool() {
         value={keyword}
         onChange={(e) => setKeyword(e.target.value)}
         placeholder="예: 축구, 개발, 영어"
-        className="mt-2 w-full rounded-lg border border-slate-300 px-4 py-2.5 text-base outline-none focus:border-indigo-500"
+        className="mt-2 w-full rounded-lg border-2 border-black px-4 py-2.5 text-base outline-none focus:border-indigo-500"
       />
       <p className="mt-1 text-xs text-slate-500">
         입력하면 키워드를 살린 이름이 함께 만들어집니다. 비워 두어도 됩니다.
@@ -130,7 +130,7 @@ export function TeamNameGeneratorTool() {
             className={
               style === s.key
                 ? 'rounded-full border px-3 py-1.5 text-sm transition border-indigo-500 bg-indigo-500 text-white'
-                : 'rounded-full border px-3 py-1.5 text-sm transition border-slate-300 bg-white text-slate-700 hover:border-indigo-300'
+                : 'rounded-full border px-3 py-1.5 text-sm transition border-black bg-white text-slate-700 hover:border-indigo-300'
             }
           >
             {s.label}
@@ -146,7 +146,7 @@ export function TeamNameGeneratorTool() {
           id="team-count"
           value={count}
           onChange={(e) => setCount(Number(e.target.value))}
-          className="rounded-lg border border-slate-300 px-3 py-1.5 text-sm"
+          className="rounded-lg border-2 border-black px-3 py-1.5 text-sm"
         >
           {[5, 10, 20, 30].map((n) => (
             <option key={n} value={n}>
@@ -167,7 +167,7 @@ export function TeamNameGeneratorTool() {
           <button
             type="button"
             onClick={copyAll}
-            className="rounded-lg border border-slate-300 px-4 py-2 text-sm text-slate-700 hover:border-indigo-300"
+            className="rounded-lg border-2 border-black px-4 py-2 text-sm text-slate-700 hover:border-indigo-300"
           >
             {copied ? '복사됨!' : '전체 복사'}
           </button>
@@ -184,7 +184,7 @@ export function TeamNameGeneratorTool() {
             {results.map((n, i) => (
               <div
                 key={n}
-                className="flex items-center gap-3 rounded-xl border border-slate-200 bg-slate-50 px-4 py-2.5 text-sm text-slate-800"
+                className="flex items-center gap-3 rounded-xl border-3 border-black bg-slate-50 px-4 py-2.5 text-sm text-slate-800"
               >
                 <span className="text-xs font-semibold text-indigo-600">{i + 1}</span>
                 <span className="font-medium">{n}</span>

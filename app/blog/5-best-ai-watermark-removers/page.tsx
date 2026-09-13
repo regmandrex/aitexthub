@@ -23,7 +23,7 @@ export default function FiveBestAiWatermarkRemoversPage() {
       <div className="ad-slot"><AdSenseSlot className="w-full" /></div>
 
       {/* Hero card */}
-      <div className="rounded-[28px] border border-slate-200 bg-white/70 p-6 shadow-xl shadow-slate-900/5 backdrop-blur-lg">
+      <div className="rounded-[28px] border-3 border-black bg-white/70 p-6 shadow-neo-lg shadow-slate-900/5 backdrop-blur-lg">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Expert Comparison 2026</p>
         <h1 className="mt-3 text-3xl font-semibold text-slate-900">5 Best AI Text Watermark Removers in 2026</h1>
         <p className="mt-2 text-slate-600">
@@ -37,7 +37,7 @@ export default function FiveBestAiWatermarkRemoversPage() {
             { title: 'Comprehensive coverage', detail: 'Must handle all major invisible character types' },
             { title: 'Verifiable results', detail: 'Good tools show you what was found and removed' },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-100 bg-slate-50 p-4 text-xs text-slate-700">
+            <div key={item.title} className="rounded-2xl border-2 border-black bg-slate-50 p-4 text-xs text-slate-700">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.detail}</p>
             </div>
@@ -51,28 +51,28 @@ export default function FiveBestAiWatermarkRemoversPage() {
           This comparison evaluates AI text watermark removers across five criteria that matter most for real-world use:
         </p>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">1. Privacy: Where does your text go?</p>
             <p className="mt-2">
               The most important criterion. Tools that process text server-side can potentially log, store, or analyze
               your content. Browser-local tools never transmit your text. For confidential content, this is non-negotiable.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">2. Coverage: Which characters does it remove?</p>
             <p className="mt-2">
               A comprehensive tool should handle at minimum: U+200B (ZWS), U+200C (ZWNJ), U+200D (ZWJ), U+00AD (soft
               hyphen), and U+FEFF (BOM). Tools that only target one character type give incomplete results.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">3. Transparency: Does it show what was found?</p>
             <p className="mt-2">
               Good tools show you what was found and removed, not just a cleaned output. This is important for verifying
               that the cleaning was complete and for understanding what was in your text.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">4. Non-destructive: Does it preserve visible content?</p>
             <p className="mt-2">
               The tool should only remove invisible characters and should not alter any visible text. Tools that &quot;clean&quot;
@@ -90,7 +90,7 @@ export default function FiveBestAiWatermarkRemoversPage() {
           what was found and removed.
         </p>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Strengths</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>100% browser-local processing &mdash; text never leaves device</li>
@@ -100,7 +100,7 @@ export default function FiveBestAiWatermarkRemoversPage() {
               <li>Integrated with broader AI Text Cleanup Tools suite</li>
             </ul>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Limitations</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Does not address statistical AI patterns (perplexity/burstiness)</li>
@@ -109,7 +109,7 @@ export default function FiveBestAiWatermarkRemoversPage() {
             </ul>
           </div>
         </div>
-        <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4 text-sm text-slate-700 shadow-sm">
+        <div className="rounded-2xl border-3 border-black bg-slate-50 p-4 text-sm text-slate-700 shadow-neo-sm">
           <p><strong>Best for:</strong> Any user who needs reliable, private, comprehensive invisible character removal. Ideal starting point for all AI text cleanup workflows.</p>
         </div>
       </section>
@@ -124,7 +124,7 @@ export default function FiveBestAiWatermarkRemoversPage() {
           every invisible character found is listed with its code point, position, and name.
         </p>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Strengths</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Most detailed Unicode reporting of any tool tested</li>
@@ -134,7 +134,7 @@ export default function FiveBestAiWatermarkRemoversPage() {
               <li>Perfect for verification after removal</li>
             </ul>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Limitations</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Detection/analysis focus &mdash; pair with remover for cleanup</li>
@@ -142,7 +142,7 @@ export default function FiveBestAiWatermarkRemoversPage() {
             </ul>
           </div>
         </div>
-        <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4 text-sm text-slate-700 shadow-sm">
+        <div className="rounded-2xl border-3 border-black bg-slate-50 p-4 text-sm text-slate-700 shadow-neo-sm">
           <p><strong>Best for:</strong> Users who want to understand exactly what is in their text, technical users building cleaning pipelines, and verification after any removal pass.</p>
         </div>
       </section>
@@ -155,7 +155,7 @@ export default function FiveBestAiWatermarkRemoversPage() {
           artifact present, this dedicated tool provides the fastest targeted removal.
         </p>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Strengths</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Fastest tool for zero-width space removal specifically</li>
@@ -164,7 +164,7 @@ export default function FiveBestAiWatermarkRemoversPage() {
               <li>Useful when you know U+200B is your only issue</li>
             </ul>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Limitations</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Targets only zero-width spaces, not the full range</li>
@@ -172,7 +172,7 @@ export default function FiveBestAiWatermarkRemoversPage() {
             </ul>
           </div>
         </div>
-        <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4 text-sm text-slate-700 shadow-sm">
+        <div className="rounded-2xl border-3 border-black bg-slate-50 p-4 text-sm text-slate-700 shadow-neo-sm">
           <p><strong>Best for:</strong> Quick targeted removal when zero-width spaces are known to be present. Use after a full detection pass has confirmed U+200B is the main issue.</p>
         </div>
       </section>
@@ -185,7 +185,7 @@ export default function FiveBestAiWatermarkRemoversPage() {
           other common AI text artifacts.
         </p>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Strengths</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Most comprehensive single-pass cleanup available</li>
@@ -195,7 +195,7 @@ export default function FiveBestAiWatermarkRemoversPage() {
               <li>Best tool for content going into CMSs, email, or Word</li>
             </ul>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Limitations</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>More changes than strictly invisible character removal</li>
@@ -204,7 +204,7 @@ export default function FiveBestAiWatermarkRemoversPage() {
             </ul>
           </div>
         </div>
-        <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4 text-sm text-slate-700 shadow-sm">
+        <div className="rounded-2xl border-3 border-black bg-slate-50 p-4 text-sm text-slate-700 shadow-neo-sm">
           <p><strong>Best for:</strong> Users who want a complete cleanup in one pass, especially for content going into publishing workflows, CMSs, or professional documents.</p>
         </div>
       </section>
@@ -216,7 +216,7 @@ export default function FiveBestAiWatermarkRemoversPage() {
           option for removing specific invisible characters from any text.
         </p>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Strengths</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>No third-party tools required</li>
@@ -225,7 +225,7 @@ export default function FiveBestAiWatermarkRemoversPage() {
               <li>Fully auditable &mdash; you can see exactly what the regex matches</li>
             </ul>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Limitations</p>
             <ul className="mt-2 list-restrict space-y-1 pl-5">
               <li>Requires knowing which Unicode code points to target</li>
@@ -234,7 +234,7 @@ export default function FiveBestAiWatermarkRemoversPage() {
             </ul>
           </div>
         </div>
-        <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4 text-sm text-slate-700 shadow-sm">
+        <div className="rounded-2xl border-3 border-black bg-slate-50 p-4 text-sm text-slate-700 shadow-neo-sm">
           <p><strong>Regex pattern for VS Code:</strong> <code>[\u200B\u200C\u200D\u00AD\uFEFF]</code> in Find field (with regex mode enabled), empty Replace field.</p>
           <p className="mt-1"><strong>Best for:</strong> Developers integrating cleanup into their toolchain, bulk processing, and users who want complete control.</p>
         </div>
@@ -273,7 +273,7 @@ export default function FiveBestAiWatermarkRemoversPage() {
               best: 'Complete publishing cleanup',
             },
           ].map((tool) => (
-            <div key={tool.name} className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+            <div key={tool.name} className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
               <p className="font-semibold text-slate-900">{tool.name}</p>
               <ul className="mt-2 space-y-1 text-xs">
                 <li><span className="font-medium">Privacy:</span> {tool.privacy}</li>

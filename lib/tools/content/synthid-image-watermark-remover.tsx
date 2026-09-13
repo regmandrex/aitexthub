@@ -3,7 +3,7 @@ import type { ToolContent } from './index';
 
 function WriteUp() {
   return (
-    <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+    <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
         <h2>SynthID Image Watermark Remover: Remove Google SynthID AI Watermarks from Images Free</h2>
         <p>The SynthID Image Watermark Remover is a free online tool that strips and attenuates SynthID watermarks from AI-generated images. SynthID is Google DeepMind's imperceptible watermarking technology used across Google's image generation products "” including Gemini, Imagen, and Google AI Studio. Unlike metadata-based watermarks that are stored separately from the image data, SynthID embeds an invisible signal directly into the pixel values of the image itself, making it one of the most durable AI watermarking systems available. This tool applies targeted signal attenuation alongside full metadata removal to give you the cleanest possible output.</p>

@@ -50,7 +50,7 @@ const faqs: FaqItem[] = [
 ];
 
 const writeUp = (
-  <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+  <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
     <div className="prose prose-slate max-w-none">
       <h2>ChatGPT Title Tag Generator: Create SEO-Optimized Page Titles</h2>
       <p>The ChatGPT Title Tag Generator is a free online tool that creates compelling, SEO-optimized title tags for your web pages. Title tags are one of the most important on-page SEO elements—they appear as clickable headlines in search results and significantly impact both rankings and click-through rates.</p>

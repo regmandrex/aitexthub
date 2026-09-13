@@ -29,7 +29,7 @@ export default function WhyChatGPTTextLooksMessyPage() {
         <AdSenseSlot className="w-full" />
       </div>
 
-      <div className="rounded-[28px] border border-slate-200 bg-white/70 p-6 shadow-xl shadow-slate-900/5 backdrop-blur-lg">
+      <div className="rounded-[28px] border-3 border-black bg-white/70 p-6 shadow-neo-lg shadow-slate-900/5 backdrop-blur-lg">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Clean once, use everywhere</p>
         <h1 className="mt-3 text-3xl font-semibold text-slate-900">Why ChatGPT Text Looks Messy</h1>
         <p className="mt-2 text-slate-600">
@@ -43,7 +43,7 @@ export default function WhyChatGPTTextLooksMessyPage() {
             { title: 'Broken structure', detail: 'Lists reset, headings collapse' },
             { title: 'Permanent fix', detail: 'Clean Unicode, then format natively' },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-100 bg-slate-50 p-4 text-xs text-slate-700">
+            <div key={item.title} className="rounded-2xl border-2 border-black bg-slate-50 p-4 text-xs text-slate-700">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.detail}</p>
             </div>
@@ -82,7 +82,7 @@ export default function WhyChatGPTTextLooksMessyPage() {
             'Formatting that changes after publishing',
             'Text behaving differently on desktop vs mobile',
           ].map((point) => (
-            <p key={point} className="rounded-2xl border border-slate-200 bg-white/60 p-4 text-sm text-slate-700 shadow-sm">
+            <p key={point} className="rounded-2xl border-3 border-black bg-white/60 p-4 text-sm text-slate-700 shadow-neo-sm">
               {point}
             </p>
           ))}
@@ -112,7 +112,7 @@ export default function WhyChatGPTTextLooksMessyPage() {
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">Invisible characters: the main culprit</h2>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">What they are</p>
             <p className="mt-2">Invisible characters are Unicode characters that exist in the text but are not visible to the human eye.</p>
             <p className="mt-3">Common examples include:</p>
@@ -124,7 +124,7 @@ export default function WhyChatGPTTextLooksMessyPage() {
               <li>Unicode punctuation variants</li>
             </ul>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Why they break formatting</p>
             <p className="mt-2">Different platforms interpret Unicode differently:</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
@@ -160,19 +160,19 @@ export default function WhyChatGPTTextLooksMessyPage() {
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">Why spacing, lists, and headings break</h2>
         <div className="grid gap-4 md:grid-cols-3">
-          <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Messy spacing</p>
             <p className="mt-2">
               Soft line breaks and mixed whitespace can create inconsistent paragraph spacing across editors and devices.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Broken lists</p>
             <p className="mt-2">
               Lists are sensitive. A single invisible character can break indentation, restart numbering, or collapse nested items.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Heading chaos</p>
             <p className="mt-2">
               Markdown-style headings and hidden breaks can turn headings into bold paragraphs, create multiple H1s, or collapse sections.

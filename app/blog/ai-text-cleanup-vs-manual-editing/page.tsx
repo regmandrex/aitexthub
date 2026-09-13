@@ -28,7 +28,7 @@ export default function AITextCleanupVsManualEditingPage() {
         <AdSenseSlot className="w-full" />
       </div>
 
-      <div className="rounded-[28px] border border-slate-200 bg-white/70 p-6 shadow-xl shadow-slate-900/5 backdrop-blur-lg">
+      <div className="rounded-[28px] border-3 border-black bg-white/70 p-6 shadow-neo-lg shadow-slate-900/5 backdrop-blur-lg">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Clean first, then refine</p>
         <h1 className="mt-3 text-3xl font-semibold text-slate-900">AI Text Cleanup Tools vs Manual Editing</h1>
         <p className="mt-2 text-slate-600">
@@ -72,7 +72,7 @@ export default function AITextCleanupVsManualEditingPage() {
 
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">AI text cleanup vs manual editing: core differences</h2>
-        <div className="rounded-2xl border border-slate-200 bg-white/70 p-5 text-sm text-slate-700 shadow-sm">
+        <div className="rounded-2xl border-3 border-black bg-white/70 p-5 text-sm text-slate-700 shadow-neo-sm">
           <table>
             <thead>
               <tr>
@@ -145,7 +145,7 @@ export default function AITextCleanupVsManualEditingPage() {
               body: 'At volume, cost and time grow linearly, inconsistencies multiply, and technical debt accumulates.',
             },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-200 bg-white/60 p-4 text-sm text-slate-700 shadow-sm">
+            <div key={item.title} className="rounded-2xl border-3 border-black bg-white/60 p-4 text-sm text-slate-700 shadow-neo-sm">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.body}</p>
             </div>
@@ -166,7 +166,7 @@ export default function AITextCleanupVsManualEditingPage() {
         <p className="text-slate-700">
           The most effective strategy is AI text cleanup plus manual editing, in the correct order.
         </p>
-        <div className="rounded-2xl border border-brand-100 bg-brand-50 p-5 text-sm text-brand-900 shadow-sm">
+        <div className="rounded-2xl border border-brand-100 bg-brand-50 p-5 text-sm text-brand-900 shadow-neo-sm">
           <p className="font-semibold text-brand-800">Correct sequence</p>
           <ol className="mt-2 list-decimal space-y-2 pl-5 text-slate-800">
             <li>
@@ -186,7 +186,7 @@ export default function AITextCleanupVsManualEditingPage() {
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">SEO impact in 2026</h2>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/70 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/70 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">SEO benefits of AI text cleanup</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Crawlability and parsing stability</li>
@@ -195,7 +195,7 @@ export default function AITextCleanupVsManualEditingPage() {
               <li>Fewer layout and formatting regressions</li>
             </ul>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/70 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/70 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">SEO benefits of manual editing</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>More helpful content and expertise</li>
@@ -212,14 +212,14 @@ export default function AITextCleanupVsManualEditingPage() {
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">When each approach might be acceptable</h2>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Manual editing only</p>
             <p className="mt-2">
               Potentially acceptable when volume is extremely low, pages are short, and performance requirements are minimal. Even then, invisible
               Unicode risks remain.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">AI text cleanup only</p>
             <p className="mt-2">
               Often acceptable for internal docs, utility content, or non-editorial pages. For public-facing SEO content, editing is still
@@ -231,7 +231,7 @@ export default function AITextCleanupVsManualEditingPage() {
 
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">Best-practice workflow (final recommendation)</h2>
-        <div className="rounded-2xl border border-slate-200 bg-white/70 p-6 text-sm text-slate-700 shadow-sm">
+        <div className="rounded-2xl border-3 border-black bg-white/70 p-6 text-sm text-slate-700 shadow-neo-sm">
           <ol className="list-decimal space-y-2 pl-5">
             <li>Generate AI content</li>
             <li>Run AI text cleanup (technical hygiene)</li>
@@ -255,7 +255,7 @@ export default function AITextCleanupVsManualEditingPage() {
             { q: 'Is this overkill for small sites?', a: 'No. Small sites are often more vulnerable to performance issues.' },
             { q: 'Is this future-proof?', a: 'Yes. Clean text and good editing stay valuable across platforms and algorithms.' },
           ].map((item) => (
-            <div key={item.q} className="rounded-2xl border border-slate-200 bg-white/60 p-4 text-sm text-slate-700 shadow-sm">
+            <div key={item.q} className="rounded-2xl border-3 border-black bg-white/60 p-4 text-sm text-slate-700 shadow-neo-sm">
               <p className="font-semibold text-slate-900">{item.q}</p>
               <p className="mt-1">{item.a}</p>
             </div>

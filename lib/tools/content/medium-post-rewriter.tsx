@@ -3,7 +3,7 @@ import type { ToolContent } from './index';
 
 function WriteUp() {
   return (
-    <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+    <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
         <h2>Medium Post Rewriter: Rewrite Medium Posts for Better Readability and Engagement Free Online</h2>
         <p>The Medium Post Rewriter is a free online tool that rewrites and humanizes AI-generated medium post content to sound natural, authentic, and indistinguishable from human writing. AI-generated medium post often sounds robotic, overly formal, and predictable "” this tool transforms that output into genuinely engaging writing that resonates with your audience.</p>

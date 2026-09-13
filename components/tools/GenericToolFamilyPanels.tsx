@@ -77,7 +77,7 @@ export function RankTrackerTool({ modelName }: RankTrackerToolProps) {
                 value={brand}
                 onChange={(event) => setBrand(event.target.value)}
                 placeholder={`${modelLabel(modelName)} project`}
-                className="w-full rounded-xl border border-slate-200 bg-white px-3 py-3 text-sm text-slate-800 shadow-sm outline-none transition focus:border-brand-300 focus:ring-2 focus:ring-brand-100"
+                className="w-full rounded-xl border-3 border-black bg-white px-3 py-3 text-sm text-slate-800 shadow-neo-sm outline-none transition focus:border-brand-300 focus:ring-2 focus:ring-brand-100"
               />
             </div>
             <div className="space-y-2">
@@ -86,7 +86,7 @@ export function RankTrackerTool({ modelName }: RankTrackerToolProps) {
                 value={domain}
                 onChange={(event) => setDomain(event.target.value)}
                 placeholder="example.com"
-                className="w-full rounded-xl border border-slate-200 bg-white px-3 py-3 text-sm text-slate-800 shadow-sm outline-none transition focus:border-brand-300 focus:ring-2 focus:ring-brand-100"
+                className="w-full rounded-xl border-3 border-black bg-white px-3 py-3 text-sm text-slate-800 shadow-neo-sm outline-none transition focus:border-brand-300 focus:ring-2 focus:ring-brand-100"
               />
             </div>
           </div>
@@ -137,7 +137,7 @@ export function RankTrackerTool({ modelName }: RankTrackerToolProps) {
             setCompetitors('');
             setBrief('');
           }}
-          className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
+          className="inline-flex items-center justify-center rounded-lg border-3 border-black bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
         >
           Clear
         </button>
@@ -203,7 +203,7 @@ export function GenericAiTextTool({
           readOnly
         />
       </div>
-      <div className="rounded-xl border border-slate-200 bg-slate-50 px-3 py-2 text-xs text-slate-600">
+      <div className="rounded-xl border-3 border-black bg-slate-50 px-3 py-2 text-xs text-slate-600">
         Input: {input.length} chars / {inputWords} words · Output: {output.length} chars / {outputWords} words
       </div>
       <div className="flex flex-wrap gap-3">
@@ -221,7 +221,7 @@ export function GenericAiTextTool({
             setOutput('');
             setShowUpsell(false);
           }}
-          className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
+          className="inline-flex items-center justify-center rounded-lg border-3 border-black bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
         >
           Clear
         </button>
@@ -262,7 +262,7 @@ export function GenericWatermarkTool({ mode, media, modelName }: GenericWatermar
   return (
     <div className="space-y-4">
       <div className="grid gap-4 md:grid-cols-[1.1fr,0.9fr]">
-        <div className="space-y-3 rounded-xl border border-slate-200 bg-slate-50 p-4">
+        <div className="space-y-3 rounded-xl border-3 border-black bg-slate-50 p-4">
           <label className="text-sm font-semibold text-slate-800">Upload {media}</label>
           <input
             type="file"
@@ -300,7 +300,7 @@ export function GenericWatermarkTool({ mode, media, modelName }: GenericWatermar
             setReport('');
             setShowUpsell(false);
           }}
-          className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
+          className="inline-flex items-center justify-center rounded-lg border-3 border-black bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
         >
           Clear
         </button>

@@ -29,7 +29,7 @@ export default function HowToHumanizeAITextPage() {
         <AdSenseSlot className="w-full" />
       </div>
 
-      <div className="rounded-[28px] border border-slate-200 bg-white/70 p-6 shadow-xl shadow-slate-900/5 backdrop-blur-lg">
+      <div className="rounded-[28px] border-3 border-black bg-white/70 p-6 shadow-neo-lg shadow-slate-900/5 backdrop-blur-lg">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Clean first, refine second</p>
         <h1 className="mt-3 text-3xl font-semibold text-slate-900">How to Humanize AI Text</h1>
         <p className="mt-2 text-slate-600">
@@ -43,7 +43,7 @@ export default function HowToHumanizeAITextPage() {
             { title: 'Step 2: Restructure', detail: 'Break predictable patterns and vary rhythm' },
             { title: 'Step 3: Refine', detail: 'Add voice, specificity, and genuine insight' },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-100 bg-slate-50 p-4 text-xs text-slate-700">
+            <div key={item.title} className="rounded-2xl border-2 border-black bg-slate-50 p-4 text-xs text-slate-700">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.detail}</p>
             </div>
@@ -58,7 +58,7 @@ export default function HowToHumanizeAITextPage() {
           distinction is the first step to doing it correctly.
         </p>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">What it should mean</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Making text read naturally and conversationally</li>
@@ -68,7 +68,7 @@ export default function HowToHumanizeAITextPage() {
               <li>Aligning tone and voice with your brand or personal style</li>
             </ul>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">What it should not mean</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Tricking AI detectors into giving a false result</li>
@@ -99,7 +99,7 @@ export default function HowToHumanizeAITextPage() {
             { name: 'Vague generalism', desc: "AI text tends to stay at the level of general statements because it doesn't have real experience. Human writing anchors in specifics, examples, and personal observation." },
             { name: 'Hidden Unicode artifacts', desc: 'Zero-width spaces, non-breaking spaces, and Unicode punctuation variants are embedded in AI output and can cause technical and detection issues.' },
           ].map((item) => (
-            <div key={item.name} className="rounded-2xl border border-slate-200 bg-white/60 p-4 text-sm text-slate-700 shadow-sm">
+            <div key={item.name} className="rounded-2xl border-3 border-black bg-white/60 p-4 text-sm text-slate-700 shadow-neo-sm">
               <p className="font-semibold text-slate-900">{item.name}</p>
               <p className="mt-1">{item.desc}</p>
             </div>
@@ -144,7 +144,7 @@ export default function HowToHumanizeAITextPage() {
           This does not require rewriting everything — it requires strategic disruption of the most obvious patterns.
         </p>
         <div className="space-y-4">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Vary sentence length deliberately</p>
             <p className="mt-2">
               Look for runs of similarly-sized sentences and break the rhythm. Insert a short, direct sentence after a long explanatory one.
@@ -152,7 +152,7 @@ export default function HowToHumanizeAITextPage() {
               person is actually thinking as they write.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Remove AI filler phrases</p>
             <p className="mt-2">
               Do a targeted search for common AI transitions: &quot;It is worth noting that&quot;, &quot;In conclusion&quot;,
@@ -160,7 +160,7 @@ export default function HowToHumanizeAITextPage() {
               direct statements or remove them entirely. These phrases add no value and are strong AI signals.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Break the list addiction</p>
             <p className="mt-2">
               AI defaults to bullet points for almost everything. Human writing uses lists selectively, for genuinely enumerable items.
@@ -188,7 +188,7 @@ export default function HowToHumanizeAITextPage() {
             { name: 'Current context', desc: "AI training data has a cutoff. Add anything time-sensitive, recent, or locally relevant that the AI couldn't know — industry news, your own results, recent changes." },
             { name: 'Conversational moments', desc: 'Include the kind of asides and acknowledgements that humans naturally include: anticipating an objection, admitting a limitation, noting an exception.' },
           ].map((item) => (
-            <div key={item.name} className="rounded-2xl border border-slate-200 bg-white/60 p-4 text-sm text-slate-700 shadow-sm">
+            <div key={item.name} className="rounded-2xl border-3 border-black bg-white/60 p-4 text-sm text-slate-700 shadow-neo-sm">
               <p className="font-semibold text-slate-900">{item.name}</p>
               <p className="mt-1">{item.desc}</p>
             </div>
@@ -252,7 +252,7 @@ export default function HowToHumanizeAITextPage() {
             { name: 'Removing too much', desc: 'Aggressive rewriting can damage clarity and SEO intent. The goal is to make AI text better, not to erase it entirely.' },
             { name: 'Not reviewing outputs', desc: 'Any automated humanizing tool can introduce factual errors, awkward phrasing, or tonal inconsistencies. Human review is always necessary.' },
           ].map((item) => (
-            <div key={item.name} className="rounded-2xl border border-slate-200 bg-white/60 p-4 text-sm text-slate-700 shadow-sm">
+            <div key={item.name} className="rounded-2xl border-3 border-black bg-white/60 p-4 text-sm text-slate-700 shadow-neo-sm">
               <p className="font-semibold text-slate-900">{item.name}</p>
               <p className="mt-1">{item.desc}</p>
             </div>
@@ -270,7 +270,7 @@ export default function HowToHumanizeAITextPage() {
             { context: 'Social media content', approach: 'AI social content is usually too long and formal. Cut aggressively, use your actual voice, and add current, specific context that makes the post feel timely.' },
             { context: 'Professional documents', approach: 'Focus on precision and accuracy over flow. Replace vague generalisations with specific data and verified claims. Review every factual statement.' },
           ].map((item) => (
-            <div key={item.context} className="rounded-2xl border border-slate-200 bg-white/60 p-4 text-sm text-slate-700 shadow-sm">
+            <div key={item.context} className="rounded-2xl border-3 border-black bg-white/60 p-4 text-sm text-slate-700 shadow-neo-sm">
               <p className="font-semibold text-slate-900">{item.context}</p>
               <p className="mt-1">{item.approach}</p>
             </div>

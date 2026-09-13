@@ -29,7 +29,7 @@ export default function ChatGPTTextCleanerIphonePage() {
         <AdSenseSlot className="w-full" />
       </div>
 
-      <div className="rounded-[28px] border border-slate-200 bg-white/70 p-6 shadow-xl shadow-slate-900/5 backdrop-blur-lg">
+      <div className="rounded-[28px] border-3 border-black bg-white/70 p-6 shadow-neo-lg shadow-slate-900/5 backdrop-blur-lg">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">
           iPhone-friendly ChatAI text cleanup
         </p>
@@ -108,29 +108,29 @@ export default function ChatGPTTextCleanerIphonePage() {
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">Common iPhone paste problems (and fixes)</h2>
         <div className="overflow-x-auto">
-          <table className="w-full border border-slate-200 text-left text-sm text-slate-700">
+          <table className="w-full border-3 border-black text-left text-sm text-slate-700">
             <thead className="bg-slate-50 text-slate-900">
               <tr>
-                <th className="border border-slate-200 px-3 py-2">Problem</th>
-                <th className="border border-slate-200 px-3 py-2">What it looks like</th>
-                <th className="border border-slate-200 px-3 py-2">Fix</th>
+                <th className="border-3 border-black px-3 py-2">Problem</th>
+                <th className="border-3 border-black px-3 py-2">What it looks like</th>
+                <th className="border-3 border-black px-3 py-2">Fix</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td className="border border-slate-200 px-3 py-2">Soft wraps become hard breaks</td>
-                <td className="border border-slate-200 px-3 py-2">Every sentence starts on a new line</td>
-                <td className="border border-slate-200 px-3 py-2">Clean once, then paste again</td>
+                <td className="border-3 border-black px-3 py-2">Soft wraps become hard breaks</td>
+                <td className="border-3 border-black px-3 py-2">Every sentence starts on a new line</td>
+                <td className="border-3 border-black px-3 py-2">Clean once, then paste again</td>
               </tr>
               <tr>
-                <td className="border border-slate-200 px-3 py-2">Weird spacing in bullets</td>
-                <td className="border border-slate-200 px-3 py-2">Bullets drift left/right</td>
-                <td className="border border-slate-200 px-3 py-2">Use a whitespace pass, then rebuild bullets in the editor</td>
+                <td className="border-3 border-black px-3 py-2">Weird spacing in bullets</td>
+                <td className="border-3 border-black px-3 py-2">Bullets drift left/right</td>
+                <td className="border-3 border-black px-3 py-2">Use a whitespace pass, then rebuild bullets in the editor</td>
               </tr>
               <tr>
-                <td className="border border-slate-200 px-3 py-2">Hidden characters</td>
-                <td className="border border-slate-200 px-3 py-2">Search/replace misses words, odd wrapping</td>
-                <td className="border border-slate-200 px-3 py-2">Run a detector scan for invisible Unicode</td>
+                <td className="border-3 border-black px-3 py-2">Hidden characters</td>
+                <td className="border-3 border-black px-3 py-2">Search/replace misses words, odd wrapping</td>
+                <td className="border-3 border-black px-3 py-2">Run a detector scan for invisible Unicode</td>
               </tr>
             </tbody>
           </table>
@@ -140,15 +140,15 @@ export default function ChatGPTTextCleanerIphonePage() {
       <section className="mt-10 space-y-3">
         <h2 className="text-2xl font-semibold text-slate-900">FAQ</h2>
         <div className="space-y-3">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-4 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-4 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Does cleaning change my wording?</p>
             <p className="mt-1">No. The goal is to keep meaning intact and fix formatting artifacts from copy-paste.</p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-4 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-4 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Should I clean before or after I add headings and links?</p>
             <p className="mt-1">Clean first. Then add headings, links, and styling in your destination editor so it stays stable.</p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-4 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-4 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">What if my text includes code blocks?</p>
             <p className="mt-1">
               Be careful—some formats depend on spacing. Clean the surrounding prose and review code blocks after pasting.

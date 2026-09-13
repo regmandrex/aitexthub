@@ -49,7 +49,7 @@ const faqs: FaqItem[] = [
 ];
 
 const writeUp = (
-  <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+  <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
     <div className="prose prose-slate max-w-none">
       <h2>ChatGPT Product Description Improver: Create Compelling E-Commerce Copy</h2>
       <p>The ChatGPT Product Description Improver is a free online tool that enhances product descriptions for e-commerce platforms, making them more compelling, SEO-friendly, and conversion-focused. Effective product descriptions are crucial for online sales—they must inform, persuade, and convert visitors into customers.</p>

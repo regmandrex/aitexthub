@@ -46,7 +46,7 @@ function SignupForm() {
 
   if (verifyEmail) {
     return (
-      <div className="w-full rounded-2xl border border-slate-200 bg-white p-8 shadow-sm text-center">
+      <div className="w-full rounded-2xl border-3 border-black bg-white p-8 shadow-neo-sm text-center">
         <div className="mx-auto mb-4 flex h-12 w-12 items-center justify-center rounded-full bg-brand-100">
           <svg className="h-6 w-6 text-brand-600" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -60,7 +60,7 @@ function SignupForm() {
   }
 
   return (
-    <div className="w-full rounded-2xl border border-slate-200 bg-white p-6 shadow-sm md:p-8">
+    <div className="w-full rounded-2xl border-3 border-black bg-white p-6 shadow-neo-sm md:p-8">
       <h1 className="text-2xl font-semibold tracking-tight text-slate-900">Create your account</h1>
       <p className="mt-1 text-sm text-slate-600">Free forever. Upgrade to Pro any time.</p>
 
@@ -71,7 +71,7 @@ function SignupForm() {
       <button
         type="button"
         onClick={() => signIn.social({ provider: 'google', callbackURL: redirect })}
-        className="mt-6 flex w-full items-center justify-center gap-2 rounded-full border border-slate-300 bg-white px-4 py-2.5 text-sm font-medium text-slate-700 transition hover:bg-slate-50"
+        className="mt-6 flex w-full items-center justify-center gap-2 rounded-full border-2 border-black bg-white px-4 py-2.5 text-sm font-medium text-slate-700 transition hover:bg-slate-50"
       >
         <svg className="h-4 w-4" viewBox="0 0 48 48" aria-hidden="true">
           <path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3c-1.6 4.7-6 8-11.3 8-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.1 7.9 3l5.7-5.7C34 6.1 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20c11 0 19.7-8 19.7-20 0-1.3-.1-2.3-.4-3.5z" />
@@ -96,7 +96,7 @@ function SignupForm() {
             value={email}
             onChange={e => setEmail(e.target.value)}
             placeholder="you@example.com"
-            className="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 text-sm shadow-sm focus:border-brand-500 focus:outline-none focus:ring-1 focus:ring-brand-500"
+            className="mt-1 w-full rounded-lg border-2 border-black px-3 py-2 text-sm shadow-neo-sm focus:border-brand-500 focus:outline-none focus:ring-1 focus:ring-brand-500"
           />
         </div>
         <div>
@@ -110,7 +110,7 @@ function SignupForm() {
               value={password}
               onChange={e => setPassword(e.target.value)}
               placeholder="At least 8 characters"
-              className="w-full rounded-lg border border-slate-300 px-3 py-2 pr-10 text-sm shadow-sm focus:border-brand-500 focus:outline-none focus:ring-1 focus:ring-brand-500"
+              className="w-full rounded-lg border-2 border-black px-3 py-2 pr-10 text-sm shadow-neo-sm focus:border-brand-500 focus:outline-none focus:ring-1 focus:ring-brand-500"
             />
             <button type="button" onClick={() => setShowPassword(v => !v)} className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600">
               {showPassword ? (
@@ -124,7 +124,7 @@ function SignupForm() {
         <button
           type="submit"
           disabled={loading}
-          className="w-full rounded-full bg-brand-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-brand-700 disabled:cursor-not-allowed disabled:opacity-60"
+          className="w-full rounded-full bg-brand-600 px-4 py-2.5 text-sm font-semibold text-white shadow-neo-sm transition hover:bg-brand-700 disabled:cursor-not-allowed disabled:opacity-60"
         >
           {loading ? 'Creating account...' : 'Create account'}
         </button>
@@ -144,7 +144,7 @@ export default function SignupPage() {
   return (
     <div className="min-h-[calc(100vh-200px)] bg-slate-50">
       <div className="mx-auto flex max-w-md flex-col items-center px-4 py-12 md:py-20">
-        <Suspense fallback={<div className="w-full rounded-2xl border border-slate-200 bg-white p-8 shadow-sm" />}>
+        <Suspense fallback={<div className="w-full rounded-2xl border-3 border-black bg-white p-8 shadow-neo-sm" />}>
           <SignupForm />
         </Suspense>
 

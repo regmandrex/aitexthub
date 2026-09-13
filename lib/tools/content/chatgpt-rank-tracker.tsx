@@ -2,7 +2,7 @@
 import type { ToolContent } from '@/lib/tools/content/types';
 
 const WriteUp = () => (
-  <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10"><div className="prose prose-slate max-w-none">
+  <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10"><div className="prose prose-slate max-w-none">
     <h2 className="text-2xl font-bold text-slate-900 mb-4">ChatGPT Rank Tracker: Monitor Your Brand Visibility in ChatGPT Answers</h2>
     <p className="text-slate-700 mb-4">Every day, millions of people ask ChatGPT questions that used to go to Google. "What&#39;s the best project management software?" "Which CRM should a small business use?" "What are the top email marketing platforms in 2025?" When ChatGPT answers these questions, it mentions specific brands, products, and services — and if your brand is not one of them, you are invisible to a massive and rapidly growing audience. A ChatGPT rank tracker tells you exactly where your brand stands in AI-generated answers, so you can stop guessing and start optimizing with data.</p>
 

@@ -13,16 +13,16 @@ export default async function ContactPage() {
   return (
     <div className="bg-[#f7f9ff]">
       <div className="mx-auto max-w-3xl px-4 py-16 space-y-8 min-h-screen">
-        <section className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm">
+        <section className="rounded-2xl border-3 border-black bg-white p-8 shadow-neo-sm">
           <h1 className="text-3xl font-semibold text-slate-900">Contact Us</h1>
           <p className="mt-3 text-slate-600">
             Have a question, feedback, or need support? We'd love to hear from you.
           </p>
         </section>
 
-        <section className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+        <section className="rounded-2xl border-3 border-black bg-white p-6 shadow-neo-sm">
           <h2 className="text-2xl font-semibold text-slate-900">How to Reach Us</h2>
-          <div className="mt-5 rounded-2xl border border-slate-100 bg-slate-50 p-6 text-lg font-semibold text-slate-900">
+          <div className="mt-5 rounded-2xl border-2 border-black bg-slate-50 p-6 text-lg font-semibold text-slate-900">
             <p>Email:</p>
             <a href="mailto:support@aitextcleanuptools.com" className="text-brand-700 hover:underline">
               support@aitextcleanuptools.com

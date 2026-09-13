@@ -23,7 +23,7 @@ export default function DoesChatGptLeaveADigitalFootprintPage() {
       <div className="ad-slot"><AdSenseSlot className="w-full" /></div>
 
       {/* Hero card */}
-      <div className="rounded-[28px] border border-slate-200 bg-white/70 p-6 shadow-xl shadow-slate-900/5 backdrop-blur-lg">
+      <div className="rounded-[28px] border-3 border-black bg-white/70 p-6 shadow-neo-lg shadow-slate-900/5 backdrop-blur-lg">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Privacy &amp; Traceability</p>
         <h1 className="mt-3 text-3xl font-semibold text-slate-900">Does ChatGPT Leave a Digital Footprint?</h1>
         <p className="mt-2 text-slate-600">
@@ -38,7 +38,7 @@ export default function DoesChatGptLeaveADigitalFootprintPage() {
             { title: 'File metadata', detail: 'Exported documents carry no AI-specific metadata' },
             { title: 'Unicode fingerprint', detail: 'Invisible chars in text can signal AI origin' },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-100 bg-slate-50 p-4 text-xs text-slate-700">
+            <div key={item.title} className="rounded-2xl border-2 border-black bg-slate-50 p-4 text-xs text-slate-700">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.detail}</p>
             </div>
@@ -79,7 +79,7 @@ export default function DoesChatGptLeaveADigitalFootprintPage() {
           metadata &mdash; but they reflect the account that created the file, not the AI that generated the content.
         </p>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">What file metadata does contain</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Author name (from your software account)</li>
@@ -89,7 +89,7 @@ export default function DoesChatGptLeaveADigitalFootprintPage() {
               <li>Previous versions and revision history</li>
             </ul>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">What file metadata does NOT contain</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Any indication that AI was used</li>
@@ -121,28 +121,28 @@ export default function DoesChatGptLeaveADigitalFootprintPage() {
           detectable, and their presence is statistically more common in AI-generated text than in human-typed text.
         </p>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Zero-width space (U+200B)</p>
             <p className="mt-2">
               Appears at word or token boundaries in AI output. Completely invisible in browsers and word processors.
               Has no effect on rendered text but is detectable by tools that scan raw Unicode.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Zero-width non-joiner (U+200C)</p>
             <p className="mt-2">
               Originally designed to prevent ligatures in certain scripts. Appears in AI output as a byproduct of
               tokenization in multilingual models. Invisible in standard rendering.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Soft hyphen (U+00AD)</p>
             <p className="mt-2">
               A hyphenation hint that is invisible in normal rendering. Sometimes appears in AI output around hyphenated
               words or technical terms. Can cause unexpected line-break behavior.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Byte-order mark (U+FEFF)</p>
             <p className="mt-2">
               A Unicode encoding hint that sometimes appears at the start of AI text output or between sections.
@@ -166,7 +166,7 @@ export default function DoesChatGptLeaveADigitalFootprintPage() {
           Let&apos;s be specific about what can and cannot actually be detected when someone receives ChatGPT-generated
           text without knowing its origin.
         </p>
-        <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+        <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
           <p className="font-semibold text-slate-900">What can be detected</p>
           <ul className="mt-2 list-disc space-y-2 pl-5">
             <li>
@@ -187,7 +187,7 @@ export default function DoesChatGptLeaveADigitalFootprintPage() {
             </li>
           </ul>
         </div>
-        <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm mt-4">
+        <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm mt-4">
           <p className="font-semibold text-slate-900">What cannot be detected</p>
           <ul className="mt-2 list-disc space-y-2 pl-5">
             <li>
@@ -235,7 +235,7 @@ export default function DoesChatGptLeaveADigitalFootprintPage() {
           the invisible Unicode characters and the statistical patterns. The file metadata layer is entirely in your control
           and not attributable to ChatGPT anyway.
         </p>
-        <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+        <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
           <p className="font-semibold text-slate-900">Cleaning workflow</p>
           <ol className="mt-2 list-decimal space-y-2 pl-5">
             <li>

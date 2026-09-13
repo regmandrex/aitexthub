@@ -191,7 +191,7 @@ export async function generateMetadata() {
 
 export default function GeminiWatermarkDetectorPage() {
   const writeUp = (
-    <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 space-y-4 mt-10">
+    <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 space-y-4 mt-10">
       <h2 className="text-2xl font-semibold text-slate-900">Gemini Watermark Detector - Google&apos;s Answer to AI Content Transparency</h2>
 
       <h3 className="text-xl font-semibold text-slate-900">Introduction</h3>
@@ -402,7 +402,7 @@ export default function GeminiWatermarkDetectorPage() {
       <h3 className="text-xl font-semibold text-slate-900">Gemini vs Other Watermark Detection Systems</h3>
       <p>How does Gemini&apos;s watermarking stack up against systems from OpenAI, Anthropic, Mistral, and Meta?</p>
       <div className="overflow-x-auto">
-        <table className="min-w-full border border-slate-200 text-sm text-slate-700">
+        <table className="min-w-full border-3 border-black text-sm text-slate-700">
           <thead className="bg-slate-50 text-slate-700">
             <tr>
               <th className="px-3 py-2 text-left font-semibold">Feature</th>
@@ -413,42 +413,42 @@ export default function GeminiWatermarkDetectorPage() {
             </tr>
           </thead>
           <tbody>
-            <tr className="border-t border-slate-200">
+            <tr className="border-t-3 border-black">
               <td className="px-3 py-2">Multimodal Watermarking</td>
               <td className="px-3 py-2">Yes (text and image)</td>
               <td className="px-3 py-2">No (text only)</td>
               <td className="px-3 py-2">No (text only)</td>
               <td className="px-3 py-2">Unknown</td>
             </tr>
-            <tr className="border-t border-slate-200">
+            <tr className="border-t-3 border-black">
               <td className="px-3 py-2">Public Access</td>
               <td className="px-3 py-2">Not yet available</td>
               <td className="px-3 py-2">No public API</td>
               <td className="px-3 py-2">Partial via GitHub</td>
               <td className="px-3 py-2">Closed model</td>
             </tr>
-            <tr className="border-t border-slate-200">
+            <tr className="border-t-3 border-black">
               <td className="px-3 py-2">Detection Accuracy</td>
               <td className="px-3 py-2">5/5</td>
               <td className="px-3 py-2">4/5</td>
               <td className="px-3 py-2">4/5</td>
               <td className="px-3 py-2">3/5</td>
             </tr>
-            <tr className="border-t border-slate-200">
+            <tr className="border-t-3 border-black">
               <td className="px-3 py-2">Editable Content Tolerance</td>
               <td className="px-3 py-2">High resilience</td>
               <td className="px-3 py-2">Moderate</td>
               <td className="px-3 py-2">Moderate</td>
               <td className="px-3 py-2">Unknown</td>
             </tr>
-            <tr className="border-t border-slate-200">
+            <tr className="border-t-3 border-black">
               <td className="px-3 py-2">Multilingual Support</td>
               <td className="px-3 py-2">Excellent</td>
               <td className="px-3 py-2">Good</td>
               <td className="px-3 py-2">English-dominant</td>
               <td className="px-3 py-2">Decent</td>
             </tr>
-            <tr className="border-t border-slate-200">
+            <tr className="border-t-3 border-black">
               <td className="px-3 py-2">Integration Ecosystem</td>
               <td className="px-3 py-2">Google Docs, Gmail, Drive</td>
               <td className="px-3 py-2">API-only</td>

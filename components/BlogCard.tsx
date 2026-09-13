@@ -11,7 +11,7 @@ export default function BlogCard({ title, description, href, date }: BlogCardPro
   return (
     <Link
       href={href}
-      className="group block rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition hover:-translate-y-1 hover:shadow-md"
+      className="group block rounded-2xl border-3 border-black bg-white p-5 shadow-neo-sm transition hover:-translate-y-1 hover:shadow-neo"
     >
       <div className="flex items-center justify-between gap-3">
         <h3 className="text-lg font-semibold text-slate-900 group-hover:text-brand-700">{title}</h3>

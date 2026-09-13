@@ -7,8 +7,6 @@ import { buildMeta } from '@/lib/seo-meta';
 import { JsonLd } from '../components/JsonLd';
 import { webPageSchema } from '../lib/schema/webpage';
 import { siteUrl } from '@/lib/seo/url';
-import BelowToolAd from '../components/ads/BelowToolAd';
-import RailAd from '../components/ads/RailAd';
 
 const RelatedTools = dynamic(
   () => import('../components/tool/RelatedTools').then((m) => m.RelatedTools),
@@ -21,7 +19,7 @@ const HomePageArticle = dynamic(() => import('../components/HomePageArticle'), {
 
 export async function generateMetadata() {
   return buildMeta({
-    title: 'AI Text Cleaner - Clean AI Text Online',
+    title: 'AI Text Cleanup Tools - AI Text Cleaner',
     description: 'Clean and normalize AI output: remove hidden Unicode (ZWSP, NBSP, BOM), fix spacing, and keep paragraphs intact for Word, Docs, and SEO-friendly publishing.',
     urlPath: '/',
   });
@@ -216,7 +214,7 @@ const newFaqItems = [
 export default async function HomePage() {
 
   return (
-    <div className="relative bg-[#faf8f2]">
+    <div className="relative bg-white">
       <JsonLd
         data={webPageSchema({
           name: 'AI Text Cleaner',
@@ -224,12 +222,13 @@ export default async function HomePage() {
           description: 'Clean and normalize AI output: remove hidden Unicode (ZWSP, NBSP, BOM), fix spacing, and keep paragraphs intact for Word, Docs, and SEO-friendly publishing.',
         })}
       />
-      <RailAd side="right" />
-
-      <div className="mx-auto w-full max-w-6xl px-4 py-8 min-h-screen sm:py-10 md:px-6 md:py-12">
-        <section className="mx-auto max-w-3xl space-y-3 text-center">
-          <h1 className="text-4xl font-extrabold tracking-tight text-slate-950 sm:text-5xl">AI Text Cleaner</h1>
-          <h2 className="text-xl font-bold tracking-tight text-slate-900 sm:text-2xl">
+      <div className="mx-auto w-full max-w-6xl px-4 py-10 min-h-screen sm:py-14 md:px-6">
+        <section className="mx-auto max-w-3xl space-y-4 text-center">
+          <p className="mx-auto inline-flex rounded-full border-3 border-black bg-teal-50 px-4 py-1.5 text-xs font-bold uppercase tracking-[0.18em] text-teal-800 shadow-neo-sm">
+            Free browser-based cleaner
+          </p>
+          <h1 className="text-4xl font-black tracking-tight text-slate-950 sm:text-6xl">AI Text Cleaner</h1>
+          <h2 className="text-xl font-extrabold tracking-tight text-slate-900 sm:text-2xl">
             Clean and Standardize AI Text Instantly
           </h2>
           <p className="mx-auto max-w-2xl text-sm leading-6 text-slate-600 sm:text-base">
@@ -237,8 +236,8 @@ export default async function HomePage() {
           </p>
         </section>
 
-        <section className="relative mt-8 w-full">
-          <div className="w-full rounded-2xl border border-stone-200 bg-white p-4 shadow-sm md:p-6">
+        <section className="relative mt-10 w-full">
+          <div className="w-full rounded-[28px] border-3 border-black bg-white p-4 shadow-neo-lg md:p-6">
             <ToolWorkbench
               processor="chatgptTextCleaner"
               primaryLabel="Clean Text"
@@ -250,17 +249,16 @@ export default async function HomePage() {
           </div>
         </section>
 
-        <BelowToolAd />
         <div className="mt-8">
           <RelatedTools currentSlug="" />
         </div>
 
         {/* Core Tools — categorized grid */}
-        <section className="mt-10 space-y-8">
+        <section className="mt-14 space-y-8 border-t-3 border-black pt-10">
 
           {/* Category 1 — AI Text Cleaners */}
           <div>
-            <h2 className="text-base font-semibold text-slate-700 uppercase tracking-wide mb-3">AI Text Cleaners</h2>
+            <h2 className="mb-3 text-xs font-black uppercase tracking-[0.18em] text-slate-500">AI Text Cleaners</h2>
             <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
               {[
                 { slug: 'chatgpt-text-cleaner', title: 'ChatGPT Text Cleaner', desc: 'Quickly remove hidden Unicode characters and formatting artifacts from ChatGPT output.' },
@@ -268,7 +266,7 @@ export default async function HomePage() {
                 { slug: 'clean-ai', title: 'Clean AI Text', desc: 'Quickly strip all invisible Unicode and artifacts from any AI-generated text in one click.' },
                 { slug: 'text-cleaner', title: 'Text Cleaner', desc: 'Quickly clean text from any source — AI tools, PDFs, Word, or websites.' },
               ].map(({ slug, title, desc }) => (
-                <Link key={slug} href={`/${slug}`} className="flex items-start gap-3 rounded-xl border border-slate-200 bg-white p-3 shadow-sm hover:border-blue-300 hover:shadow-md transition-all">
+                <Link key={slug} href={`/${slug}`} className="group flex items-start gap-3 rounded-2xl border-3 border-black bg-white p-3 transition hover:-translate-y-0.5 hover:border-teal-300 hover:shadow-neo-sm">
                   <div className="shrink-0 w-9 h-9 rounded-lg bg-blue-50 flex items-center justify-center">
                     <svg className="w-5 h-5 text-blue-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z" />
@@ -285,14 +283,14 @@ export default async function HomePage() {
 
           {/* Category 2 — Format & Paste */}
           <div>
-            <h2 className="text-base font-semibold text-slate-700 uppercase tracking-wide mb-3">Format &amp; Paste Tools</h2>
+            <h2 className="mb-3 text-xs font-black uppercase tracking-[0.18em] text-slate-500">Format &amp; Paste Tools</h2>
             <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
               {[
                 { slug: 'clean-paste', title: 'Clean Paste', desc: 'Quickly remove formatting artifacts and invisible characters before pasting text anywhere.' },
                 { slug: 'format-remover', title: 'Format Remover', desc: 'Quickly strip markdown, curly quotes, em dashes, and all formatting from any text.' },
                 { slug: 'remove-text-formatting', title: 'Remove Text Formatting', desc: 'Quickly remove all text formatting from AI output, Word documents, and pasted content.' },
               ].map(({ slug, title, desc }) => (
-                <Link key={slug} href={`/${slug}`} className="flex items-start gap-3 rounded-xl border border-slate-200 bg-white p-3 shadow-sm hover:border-blue-300 hover:shadow-md transition-all">
+                <Link key={slug} href={`/${slug}`} className="group flex items-start gap-3 rounded-2xl border-3 border-black bg-white p-3 transition hover:-translate-y-0.5 hover:border-teal-300 hover:shadow-neo-sm">
                   <div className="shrink-0 w-9 h-9 rounded-lg bg-violet-50 flex items-center justify-center">
                     <svg className="w-5 h-5 text-violet-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25m5.231 13.481L15 17.25m-4.5-15H5.625c-.621 0-1.125.504-1.125 1.125v16.5c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9zm3.75 11.625a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z" />
@@ -309,7 +307,7 @@ export default async function HomePage() {
 
           {/* Category 3 — Space & Whitespace */}
           <div>
-            <h2 className="text-base font-semibold text-slate-700 uppercase tracking-wide mb-3">Space &amp; Whitespace Tools</h2>
+            <h2 className="mb-3 text-xs font-black uppercase tracking-[0.18em] text-slate-500">Space &amp; Whitespace Tools</h2>
             <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
               {[
                 { slug: 'space-remover', title: 'Space Remover', desc: 'Quickly remove extra spaces and normalize whitespace throughout any text.' },
@@ -319,7 +317,7 @@ export default async function HomePage() {
                 { slug: 'zero-width-space-remover', title: 'Zero Width Space Remover', desc: 'Quickly strip zero-width spaces (U+200B) embedded in AI text.' },
                 { slug: 'remove-whitespace', title: 'Remove Whitespace', desc: 'Quickly remove all whitespace characters from text in one click.' },
               ].map(({ slug, title, desc }) => (
-                <Link key={slug} href={`/${slug}`} className="flex items-start gap-3 rounded-xl border border-slate-200 bg-white p-3 shadow-sm hover:border-blue-300 hover:shadow-md transition-all">
+                <Link key={slug} href={`/${slug}`} className="group flex items-start gap-3 rounded-2xl border-3 border-black bg-white p-3 transition hover:-translate-y-0.5 hover:border-teal-300 hover:shadow-neo-sm">
                   <div className="shrink-0 w-9 h-9 rounded-lg bg-sky-50 flex items-center justify-center">
                     <svg className="w-5 h-5 text-sky-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" />
@@ -336,7 +334,7 @@ export default async function HomePage() {
 
           {/* Category 4 — Watermark & Hidden Character Tools */}
           <div>
-            <h2 className="text-base font-semibold text-slate-700 uppercase tracking-wide mb-3">Watermark &amp; Hidden Character Tools</h2>
+            <h2 className="mb-3 text-xs font-black uppercase tracking-[0.18em] text-slate-500">Watermark &amp; Hidden Character Tools</h2>
             <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
               {[
                 { slug: 'chatgpt-watermark-remover', title: 'ChatGPT Watermark Remover', desc: 'Quickly remove ChatGPT watermark characters and invisible markers from text.' },
@@ -348,7 +346,7 @@ export default async function HomePage() {
                 { slug: 'ai-watermark-detector', title: 'AI Watermark Detector', desc: 'Quickly detect AI watermark signals and hidden markers across any AI-generated text.' },
                 { slug: 'claude-watermark-cleaner', title: 'Claude Watermark Cleaner', desc: 'Quickly clean invisible watermark characters from Claude AI output.' },
               ].map(({ slug, title, desc }) => (
-                <Link key={slug} href={`/${slug}`} className="flex items-start gap-3 rounded-xl border border-slate-200 bg-white p-3 shadow-sm hover:border-blue-300 hover:shadow-md transition-all">
+                <Link key={slug} href={`/${slug}`} className="group flex items-start gap-3 rounded-2xl border-3 border-black bg-white p-3 transition hover:-translate-y-0.5 hover:border-teal-300 hover:shadow-neo-sm">
                   <div className="shrink-0 w-9 h-9 rounded-lg bg-emerald-50 flex items-center justify-center">
                     <svg className="w-5 h-5 text-emerald-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.8}>
                       <path strokeLinecap="round" strokeLinejoin="round" d="M3.98 8.223A10.477 10.477 0 001.934 12C3.226 16.338 7.244 19.5 12 19.5c.993 0 1.953-.138 2.863-.395M6.228 6.228A10.45 10.45 0 0112 4.5c4.756 0 8.773 3.162 10.065 7.498a10.523 10.523 0 01-4.293 5.774M6.228 6.228L3 3m3.228 3.228l3.65 3.65m7.894 7.894L21 21m-3.228-3.228l-3.65-3.65m0 0a3 3 0 10-4.243-4.243m4.242 4.242L9.88 9.88" />
@@ -364,8 +362,8 @@ export default async function HomePage() {
           </div>
 
           <div className="text-center pt-2">
-            <Link href="/ai-tools" className="inline-flex items-center gap-1 text-sm font-medium text-blue-600 hover:underline">
-              See all free AI tools ?
+            <Link href="/ai-tools" className="inline-flex items-center gap-2 rounded-full border border-teal-200 bg-white px-4 py-2 text-sm font-semibold text-teal-800 shadow-neo-sm transition hover:border-teal-300 hover:bg-teal-50">
+              View all AI text tools
             </Link>
           </div>
 
@@ -375,47 +373,48 @@ export default async function HomePage() {
 
         <FAQSection items={faqItems} />
 
-        <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6">
-          <h2 className="text-xl font-semibold text-slate-900">Learn more</h2>
-          <p className="mt-2 text-sm text-slate-700">
-            Read our guides on keeping AI text tidy:{' '}
-            <Link href="/blog/why-chatgpt-text-looks-messy-and-how-to-fix-it" className="font-semibold">
+        <section className="rounded-[28px] border-3 border-black bg-white p-5 shadow-neo md:p-7">
+          <h2 className="text-xl font-bold text-slate-950">Learn more</h2>
+          <p className="mt-2 text-sm leading-6 text-slate-700">
+            Use the cleaner first, then read the guides that explain why copied AI text behaves strangely:{' '}
+            <Link href="/blog/why-chatgpt-text-looks-messy-and-how-to-fix-it" className="font-semibold text-teal-700 hover:underline">
               Why ChatGPT text looks messy
             </Link>{' '}
             and{' '}
-            <Link href="/blog/chatgpt-formatting-fixer-for-word-and-docs" className="font-semibold">
+            <Link href="/blog/chatgpt-formatting-fixer-for-word-and-docs" className="font-semibold text-teal-700 hover:underline">
               ChatGPT formatting fixer for Word & Docs
             </Link>
-            . Also try the{' '}
-            <Link href="/grok-watermark-detector" className="font-semibold">
+            . If you need a focused inspection tool after cleanup, the{' '}
+            <Link href="/grok-watermark-detector" className="font-semibold text-teal-700 hover:underline">
               Grok Watermark Detector
-            </Link>
-            .
+            </Link>{' '}
+            helps review hidden signals and formatting residue before a final edit.
           </p>
         </section>
 
         {/* DETECTORS — How AI Detection Works */}
-        <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 space-y-3 mt-6">
-          <h2 className="text-xl font-semibold text-slate-900">How AI Detection Tools Work — Turnitin, GPTZero, Originality.ai, Copyleaks, Winston AI & Sapling</h2>
-          <p className="text-sm text-slate-700">AI detection tools analyze text for technical and statistical patterns that distinguish AI-generated content from human writing. The six most widely used detectors today are <strong>Turnitin</strong>, <strong>GPTZero</strong>, <strong>Originality.ai</strong>, <strong>Copyleaks</strong>, <strong>Winston AI</strong>, and <strong>Sapling</strong>. Each one uses a different combination of signals to score how likely a passage was written by a language model like ChatGPT, Claude, Gemini, or Grok.</p>
-          <p className="text-sm text-slate-700"><strong>Turnitin</strong> is the standard in higher education. Its AI detection module — released as a layer on top of the long-standing plagiarism checker — scores submissions on perplexity (how predictable each next word is) and burstiness (how much sentence length varies). On top of those statistical signals, Turnitin flags content for invisible Unicode markers and HTML attributes that AI interfaces leave behind when text is copied out. <strong>GPTZero</strong> is the most popular consumer-facing detector, used by teachers, journalists, and HR teams. It returns a probability that a passage is AI-generated, plus sentence-level highlights showing which lines look most machine-written. <strong>Originality.ai</strong> targets the SEO and publishing market — it scans content for AI authorship and recycled phrasing simultaneously, with a paid API for bulk scanning. <strong>Copyleaks</strong> combines AI detection with plagiarism and source-tracking, popular with enterprise legal and compliance teams. <strong>Winston AI</strong> focuses on long-form content and claims industry-leading accuracy on Claude and Gemini output. <strong>Sapling</strong> is geared toward customer support and B2B writing teams and offers a Chrome extension that scores text inline.</p>
-          <p className="text-sm text-slate-700">The technical signals all six detectors look for fall into four categories:</p>
+        <section className="mt-6 space-y-3 rounded-[28px] border-3 border-black bg-white p-5 shadow-neo md:p-7">
+          <h2 className="text-xl font-bold text-slate-950">How AI Detection Tools Work — Turnitin, GPTZero, Originality.ai, Copyleaks, Winston AI & Sapling</h2>
+          <p className="text-sm leading-6 text-slate-700">AI detection tools do not all work the same way, but most of them look for a mix of technical residue and writing-pattern signals. The tools people ask about most often are <strong>Turnitin</strong>, <strong>GPTZero</strong>, <strong>Originality.ai</strong>, <strong>Copyleaks</strong>, <strong>Winston AI</strong>, and <strong>Sapling</strong>. Each detector weighs its signals differently when estimating whether a passage may have come from ChatGPT, Claude, Gemini, Grok, or another language model.</p>
+          <p className="text-sm leading-6 text-slate-700"><strong>Turnitin</strong> is widely used in higher education, where its AI detection layer sits beside the long-running plagiarism workflow. It evaluates predictability, burstiness, and other language patterns, but copied formatting can also affect how text is interpreted. <strong>GPTZero</strong> is a common public-facing checker used by teachers, journalists, and hiring teams; it returns probability-style results and often highlights suspicious sentences. <strong>Originality.ai</strong> is built for SEO and publishing teams, combining AI authorship checks with source and originality review. <strong>Copyleaks</strong> is popular in enterprise, legal, HR, and compliance contexts because it combines AI detection with plagiarism and source matching. <strong>Winston AI</strong> focuses on longer editorial content and is often discussed around Claude and Gemini output. <strong>Sapling</strong> serves business writing and support teams through inline detection and browser-based scoring.</p>
+          <p className="text-sm leading-6 text-slate-700">The technical and statistical signals these detectors review usually fall into four broad categories:</p>
           <ul className="list-disc pl-6 space-y-1.5 text-sm text-slate-700">
             <li><strong>Hidden Unicode characters</strong> — zero-width spaces (U+200B), byte-order marks (U+FEFF), non-breaking spaces (U+00A0), and soft hyphens (U+00AD) that AI interfaces insert during text generation and copy. These survive plain-text paste and are one of the strongest fingerprints detectors rely on.</li>
             <li><strong>HTML attributes</strong> — invisible markers like <code className="rounded bg-slate-100 px-1 text-xs">data-sourcepos</code> and other proprietary tokens that ChatGPT and similar tools embed when you copy formatted output.</li>
             <li><strong>Statistical patterns</strong> — perplexity, burstiness, and vocabulary distribution that look different between human and AI prose. AI text tends to be more predictable word-by-word and more uniform sentence-by-sentence.</li>
             <li><strong>Metadata fingerprints</strong> — encoding hints, formatting quirks, and watermark signals that some labs (most notably OpenAI's research efforts) have proposed for AI provenance tracking.</li>
           </ul>
-          <p className="text-sm text-slate-700">AI Text Cleanup Tools eliminates categories one and two — the technical fingerprints — in a single click. Cleaning your text strips every hidden Unicode character, removes the HTML attributes that detectors signature-match, and normalizes formatting that triggers metadata heuristics. This handles the strongest signals that <strong>Turnitin</strong>, <strong>GPTZero</strong>, <strong>Originality.ai</strong>, <strong>Copyleaks</strong>, <strong>Winston AI</strong>, and <strong>Sapling</strong> rely on. For the statistical category, no automated tool can fully disguise AI writing style — that is why the AI Text Cleanup Tools Pro humanizer routes your text through Claude and GPT-4 with carefully tuned prompts to disrupt perplexity and burstiness patterns. Used together, cleaning and humanizing address every technical and statistical signal the major detectors check for.</p>
+          <p className="text-sm leading-6 text-slate-700">AI Text Cleanup Tools focuses on the technical layer: hidden Unicode, copy-paste artifacts, formatting residue, and HTML-like remnants that can make otherwise normal text harder to trust or process. Cleaning your text removes the invisible characters, standardizes spacing, and normalizes formatting that can trigger technical heuristics in <strong>Turnitin</strong>, <strong>GPTZero</strong>, <strong>Originality.ai</strong>, <strong>Copyleaks</strong>, <strong>Winston AI</strong>, and <strong>Sapling</strong>. Statistical signals are different: perplexity, burstiness, voice, and sentence rhythm depend on how the writing itself is composed. That is why cleaned text still needs real editing, examples, citations, and human review. Cleanup improves the technical foundation; it should not be treated as a promise of a specific detector result.</p>
+          <p className="text-sm leading-6 text-slate-700">This is especially important when text has passed through more than one tool. A student might draft in ChatGPT, revise in Claude, paste into Google Docs, then submit through a portal that uses <strong>Turnitin</strong>. A publisher might generate an outline in Gemini, edit in Notion, move the article into WordPress, and review it with Originality.ai. Every copy step can add its own spacing, encoding, or formatting layer. Cleaning before the final review gives the detector, editor, CMS, and human reader a cleaner version of the same text instead of a draft packed with avoidable technical noise.</p>
         </section>
 
         {/* USE CASES */}
-        <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 space-y-4 mt-6">
-          <h2 className="text-xl font-semibold text-slate-900">Who Uses AI Text Cleanup Tools</h2>
-          <p className="text-sm text-slate-700">AI Text Cleanup Tools is built for anyone whose work touches AI-generated content. The three biggest user groups are students, working professionals, and content creators — each with a different relationship to AI detection, but the same need for clean, publish-ready output.</p>
+        <section className="mt-6 space-y-4 rounded-[28px] border-3 border-black bg-white p-5 shadow-neo md:p-7">
+          <h2 className="text-xl font-bold text-slate-950">Who Uses AI Text Cleanup Tools</h2>
+          <p className="text-sm leading-6 text-slate-700">AI Text Cleanup Tools is useful anywhere AI-generated content moves from a chat window into a real workflow. Students, working professionals, marketers, content creators, editors, and technical teams all face the same basic problem: copied AI text can carry invisible characters and formatting residue even when the visible draft looks polished. The tool is not only for people trying to repair broken text after the fact; it also works as a routine pre-paste step before a draft enters school systems, client files, publishing pipelines, customer support tools, or technical documentation.</p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-2">
-            <div className="rounded-xl border border-slate-200 bg-slate-50/60 p-4">
+            <div className="rounded-2xl border-3 border-black bg-slate-50/70 p-4">
               <div className="flex items-center gap-2 mb-2">
                 <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-violet-100 text-violet-700">
                   <svg className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M12 14l9-5-9-5-9 5 9 5z" /><path strokeLinecap="round" strokeLinejoin="round" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" /></svg>
@@ -423,14 +422,14 @@ export default async function HomePage() {
                 <h3 className="text-sm font-bold text-slate-900">For Students</h3>
               </div>
               <ul className="space-y-1.5 text-xs text-slate-700">
-                <li>• Use ChatGPT, Claude, and Gemini for research without triggering <strong>Turnitin</strong> or <strong>GPTZero</strong></li>
-                <li>• Clean AI-assisted drafts before final submission</li>
-                <li>• Remove invisible markers from translations and summaries</li>
-                <li>• Avoid academic penalties while still using AI to learn</li>
+                <li>• Clean ChatGPT, Claude, and Gemini notes before reviewing them against <strong>Turnitin</strong> or <strong>GPTZero</strong> policies</li>
+                <li>• Remove formatting residue from AI-assisted drafts before final submission</li>
+                <li>• Strip invisible markers from summaries, translations, and study outlines</li>
+                <li>• Keep academic workflows cleaner while still following disclosure rules</li>
               </ul>
             </div>
 
-            <div className="rounded-xl border border-slate-200 bg-slate-50/60 p-4">
+            <div className="rounded-2xl border-3 border-black bg-slate-50/70 p-4">
               <div className="flex items-center gap-2 mb-2">
                 <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-sky-100 text-sky-700">
                   <svg className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
@@ -438,14 +437,14 @@ export default async function HomePage() {
                 <h3 className="text-sm font-bold text-slate-900">For Professionals</h3>
               </div>
               <ul className="space-y-1.5 text-xs text-slate-700">
-                <li>• Ensure client-facing content reads as professionally human-written</li>
-                <li>• Stay compliant with workplace AI policies</li>
-                <li>• Clean AI drafts before customer or executive review</li>
-                <li>• Pass <strong>Copyleaks</strong> and <strong>Sapling</strong> checks used by enterprise compliance</li>
+                <li>• Prepare client-facing content so it reads cleanly and consistently</li>
+                <li>• Support workplace AI policies with a repeatable cleanup step</li>
+                <li>• Remove copy-paste artifacts before customer, legal, or executive review</li>
+                <li>• Reduce technical issues before <strong>Copyleaks</strong> and <strong>Sapling</strong> checks used in enterprise workflows</li>
               </ul>
             </div>
 
-            <div className="rounded-xl border border-slate-200 bg-slate-50/60 p-4">
+            <div className="rounded-2xl border-3 border-black bg-slate-50/70 p-4">
               <div className="flex items-center gap-2 mb-2">
                 <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-emerald-100 text-emerald-700">
                   <svg className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" /></svg>
@@ -453,45 +452,45 @@ export default async function HomePage() {
                 <h3 className="text-sm font-bold text-slate-900">For Content Creators</h3>
               </div>
               <ul className="space-y-1.5 text-xs text-slate-700">
-                <li>• Publish AI-assisted blog posts that pass <strong>Originality.ai</strong></li>
-                <li>• Beat <strong>Winston AI</strong> checks used by editorial teams</li>
-                <li>• Maintain SEO ranking by removing hidden Unicode that breaks keyword parsing</li>
-                <li>• Bulk-clean drafts before publishing to WordPress, Webflow, or Shopify</li>
+                <li>• Clean AI-assisted blog posts before review in <strong>Originality.ai</strong></li>
+                <li>• Prepare long-form drafts for editorial workflows that may involve <strong>Winston AI</strong></li>
+                <li>• Protect SEO formatting by removing hidden Unicode that can interfere with keyword parsing</li>
+                <li>• Bulk-clean drafts before publishing to WordPress, Webflow, Shopify, or newsletter tools</li>
               </ul>
             </div>
           </div>
         </section>
 
         {/* SECTION 1 — Free Text Cleaner */}
-        <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 space-y-3 mt-6">
-          <h2 className="text-xl font-semibold text-slate-900">Free Text Cleaner — Clean Text Online in One Click</h2>
-          <p className="text-sm text-slate-700">A <strong>text cleaner</strong> is a tool that takes raw, messy text and strips out everything that should not be there — invisible Unicode characters, irregular spacing, leftover markdown symbols, and formatting artifacts that follow text when you copy and paste from AI tools, PDFs, rich editors, and websites. The result is plain, consistent text that behaves predictably in any application you paste it into, from Google Docs and Microsoft Word to WordPress, Notion, email clients, and code editors.</p>
-          <p className="text-sm text-slate-700">AI Text Cleanup Tools is a <strong>text cleaner free</strong> to use with no account, no sign-up, and no usage limits. You paste your text into the tool above, click Clean Text, and copy the result in seconds. Whether you call it a <strong>textcleaner</strong>, a text sanitizer, a formatting fixer, or a copy-paste cleaner, the job is the same: remove the junk and keep the words. Our <strong>clean text online</strong> tool handles output from ChatGPT, Claude, Gemini, Copilot, Grok, DeepSeek, Perplexity, Llama, Mistral, and any other AI model or text source.</p>
-          <p className="text-sm text-slate-700">The need for a text cleaner has grown dramatically as AI-assisted writing has become standard practice. Every time you copy text from an AI model and paste it into a document, email, or CMS, invisible characters travel with the visible words. These include zero-width spaces (U+200B), which are the most commonly embedded by AI models. Zero-width spaces have no visual representation but occupy space in the underlying character data, affecting word counts, text selection behavior, and how some editors calculate line wrapping. Byte-order marks (U+FEFF) are designed to appear only at the very beginning of text files, but AI models sometimes insert them mid-text where they cause rendering artifacts. Non-breaking spaces (U+00A0) look identical to regular spaces on screen but prevent line breaks and cause text overflow in narrow containers.</p>
-          <p className="text-sm text-slate-700">Beyond invisible characters, a good <strong>text cleaner free</strong> tool also handles the visible formatting that AI models apply. When ChatGPT generates a blog post, it typically wraps headings in hash marks, bolds key phrases with asterisks, and italicizes terms with underscores — all standard markdown syntax. If you paste this into an editor that does not render markdown, you see the asterisks and hash marks as literal characters in your published content. The text cleaner strips them while keeping the underlying words intact. It also converts curly (smart) quotes to straight quotes — critical for developers, data analysts, and anyone working with text in code, CSV, JSON, or HTML, where curly quotes cause syntax errors.</p>
-          <p className="text-sm text-slate-700">Unlike the "paste as plain text" shortcut (Ctrl+Shift+V) that most people use, this <strong>text cleaner free</strong> tool specifically targets invisible Unicode control characters that survive plain-text paste operations. Those characters are valid plain text — pasting as plain text only strips rich formatting like fonts, colors, and bold attributes, not the underlying Unicode artifacts. The only way to reliably <strong>clean text online</strong> and remove invisible characters is to use a dedicated tool that explicitly targets those Unicode code points.</p>
-          <p className="text-sm text-slate-700">The AI Text Cleanup Tools text cleaner runs entirely in your browser using JavaScript. Your text is processed locally on your device and never transmitted to any server. This makes it safe for confidential business documents, legal drafts, healthcare records, student work, and any sensitive content you would not want to upload to a third-party service. There are no character limits — paste a 10,000-word document and the cleaner processes it in milliseconds. There is no account, no subscription, no premium tier, and no data collection of any kind. The <strong>textcleaner</strong> is completely free, completely private, and works on any modern browser on any device including phones, tablets, and desktops. <Link href="/" className="font-semibold underline">Try the free text cleaner now</Link> and see how many hidden characters are lurking in your AI-generated content.</p>
+        <section className="mt-6 space-y-3 rounded-[28px] border-3 border-black bg-white p-5 shadow-neo md:p-7">
+          <h2 className="text-xl font-bold text-slate-950">Free Text Cleaner — Clean Text Online in One Click</h2>
+          <p className="text-sm leading-6 text-slate-700">A <strong>text cleaner</strong> is a utility for turning raw, messy copied text into clean text that behaves correctly after paste. It removes the material that should not travel with the words: invisible Unicode characters, inconsistent spacing, leftover markdown symbols, smart punctuation, and formatting artifacts picked up from AI tools, PDFs, rich text editors, web pages, and documents. The result is plain, predictable text you can paste into Google Docs, Microsoft Word, WordPress, Notion, email clients, CMS fields, spreadsheets, and code editors without fighting the same formatting problem twice.</p>
+          <p className="text-sm leading-6 text-slate-700">AI Text Cleanup Tools is a <strong>text cleaner free</strong> to use with no account gate, no sign-up wall, and no daily usage limit. Paste text into the cleaner above, click Clean Text, and copy the cleaned result. Whether someone searches for a <strong>textcleaner</strong>, a text sanitizer, a formatting fixer, a paste cleanup tool, or a copy-paste cleaner, the work is the same: remove the junk while keeping the actual words intact. This <strong>clean text online</strong> tool supports output from ChatGPT, Claude, Gemini, Copilot, Grok, DeepSeek, Perplexity, Llama, Mistral, and text copied from nearly any other source. It is also a practical <strong>text cleaner free</strong> option for quick edits where downloading an extension or installing a desktop utility would slow the work down.</p>
+          <p className="text-sm leading-6 text-slate-700">The reason a text cleaner matters is simple: AI-assisted writing has made copy-paste problems more common. When you copy from an AI model and paste into a document, email, CMS, form, or editor, invisible characters can move with the visible text. Zero-width spaces (U+200B) are especially common; they do not appear on screen, but they still occupy a place in the underlying character data and can affect word counts, selection behavior, and line wrapping. Byte-order marks (U+FEFF) belong at the beginning of encoded text files, yet copied AI text can contain them in the middle of a paragraph. Non-breaking spaces (U+00A0) look like regular spaces but prevent natural wrapping and can create overflow in narrow layouts.</p>
+          <p className="text-sm leading-6 text-slate-700">A useful <strong>text cleaner free</strong> tool also deals with visible formatting. ChatGPT and other models often structure generated drafts with markdown: hash marks for headings, asterisks for bold text, underscores for emphasis, and backticks for code. In an editor that does not render markdown, those symbols remain as literal clutter. The text cleaner removes the formatting markers while preserving the underlying words. It also converts curly smart quotes to straight quotes, which is important for developers, analysts, and anyone pasting into code, CSV, JSON, HTML, or structured content fields where smart punctuation can break parsing.</p>
+          <p className="text-sm leading-6 text-slate-700">This is different from the usual paste-as-plain-text shortcut. Ctrl+Shift+V can remove rich formatting such as fonts, colors, and bold attributes, but it does not reliably remove invisible Unicode because those characters are part of the plain-text data itself. To truly <strong>clean text online</strong>, you need a dedicated text cleaner that looks for the exact Unicode code points that cause problems and removes them intentionally.</p>
+          <p className="text-sm leading-6 text-slate-700">The AI Text Cleanup Tools text cleaner runs in your browser with JavaScript. Your pasted text is processed locally on your own device rather than uploaded to a server just to remove spacing or invisible characters. That makes it suitable for business drafts, legal notes, healthcare text, school work, client documents, and sensitive copy you would rather not send through another service. There is no practical character limit for ordinary documents; a long draft can be cleaned in seconds. There is no account, subscription, premium gate, or data collection requirement. The <strong>textcleaner</strong> stays free, private, and usable from modern browsers on phones, tablets, laptops, and desktops. <Link href="/" className="font-semibold text-teal-700 underline">Try the free text cleaner now</Link> and check how much hidden formatting is inside your AI-generated content.</p>
         </section>
 
         {/* SECTION 2 — Remove Text Formatting */}
-        <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 space-y-3 mt-6">
-          <h2 className="text-xl font-semibold text-slate-900">Remove Text Formatting — Format Remover for Any Content</h2>
-          <p className="text-sm text-slate-700">When you copy text from a website, a PDF, a Word document, or an AI chat interface and paste it into another editor, the original formatting almost always comes with it. Bold tags, italic markers, heading syntax, bullet-point symbols, em dashes, curly quotes, and extra line breaks all survive the paste and create inconsistency in your document. A <strong>format remover</strong> solves this by stripping those formatting layers and returning clean, neutral text that behaves consistently no matter where you paste it.</p>
-          <p className="text-sm text-slate-700">AI Text Cleanup Tools lets you <strong>remove text formatting</strong> instantly. It acts as a comprehensive <strong>text format remover</strong> that handles every category of formatting artifact in one step. Markdown formatting is the most common source of visible artifacts in AI-generated content. When ChatGPT, Claude, Gemini, or any other AI model generates text, it uses markdown syntax to structure the output: double asterisks for bold, single asterisks or underscores for italic, hash marks for headings at different levels, backticks for inline code, and triple backticks for code blocks. If you paste this text into WordPress, Gmail, a corporate intranet, a Shopify product description field, or any other editor that treats asterisks as literal characters rather than markdown syntax, your published content will contain visible asterisks, hash marks, and backticks. The <strong>format remover</strong> strips all of these markdown syntax characters while preserving the words they were formatting.</p>
-          <p className="text-sm text-slate-700">Curly quotes are the next most common formatting issue. Word processors and AI tools automatically substitute typographic quotation marks — the curved "smart" quotes that lean left and right — in place of the straight ASCII apostrophe and quote characters. Curly quotes look more professional in finished typography and print design. However, in technical contexts they cause serious problems: JSON parsers reject them as invalid string delimiters, Python and JavaScript throw syntax errors when curly quotes appear inside string literals, HTML attribute values break when curly quotes are used instead of straight quotes, and CSV files misalign when curly quotes are interpreted as part of field values rather than field delimiters. The <strong>text format remover</strong> converts all curly single and double quotes to their straight equivalents as a standard part of the cleaning process.</p>
-          <p className="text-sm text-slate-700">Em dashes and en dashes are another category of formatting that causes problems in certain contexts. AI models and word processors substitute the typographic em dash (—) for two hyphens (--) and the en dash (–) for the simple hyphen (-). In a finished document, em dashes look correct and professional. In code, command-line arguments, and data files, an em dash instead of a hyphen causes failures that can be difficult to diagnose because the characters look nearly identical on screen. The <strong>text format remover</strong> normalizes dashes to their plain-text equivalents.</p>
-          <p className="text-sm text-slate-700">Invisible formatting is equally important to address. Non-breaking spaces (U+00A0) look identical to regular spaces on screen but behave completely differently: they prevent line breaks at that position, causing text to overflow its container on mobile devices and in narrow columns. Zero-width spaces (U+200B) occupy no visible space but affect word boundary detection and word counts. These invisible characters are technically formatting artifacts — they were inserted by an editor or AI model to control how text flows — and a proper <strong>format remover</strong> targets them along with visible formatting characters.</p>
-          <p className="text-sm text-slate-700">To <strong>clear text formatting</strong> on AI Text Cleanup Tools, paste your content into the tool above and click Clean Text. The tool handles all of the above in one pass: strips markdown, converts curly quotes, normalizes dashes, removes invisible Unicode, collapses excessive blank lines, and normalizes spacing. The output is clean, plain text with no formatting artifacts from any source. This is especially useful for content teams that pull text from multiple sources — AI drafts, client briefings, legacy Word documents, scraped web content — and need everything to match the same formatting baseline before it enters their CMS. No extensions, no downloads, no subscriptions — just a fast, free <strong>text format remover</strong> that works in any modern browser with full privacy protection.</p>
+        <section className="mt-6 space-y-3 rounded-[28px] border-3 border-black bg-white p-5 shadow-neo md:p-7">
+          <h2 className="text-xl font-bold text-slate-950">Remove Text Formatting — Format Remover for Any Content</h2>
+          <p className="text-sm leading-6 text-slate-700">When text moves from a website, PDF, Word document, AI chat interface, or rich editor into another tool, the formatting often travels with it. Bold markers, italic syntax, heading characters, list symbols, em dashes, curly quotes, extra line breaks, and hidden spacing can all survive the paste. A <strong>format remover</strong> gives you a neutral version of the same content so it behaves consistently wherever it goes next.</p>
+          <p className="text-sm leading-6 text-slate-700">AI Text Cleanup Tools helps you <strong>remove text formatting</strong> without rebuilding the draft by hand. It works as a practical <strong>text format remover</strong> for the visible and invisible artifacts that appear in copied content. Markdown is one of the biggest sources of visible clutter in AI-generated text. ChatGPT, Claude, Gemini, and similar tools use markdown syntax for structure: double asterisks for bold text, single asterisks or underscores for italics, hash marks for headings, backticks for inline code, and fenced backticks for code blocks. If the destination editor treats those characters literally, the published result contains unwanted symbols. The <strong>format remover</strong> strips those markers while preserving the words they were meant to style.</p>
+          <p className="text-sm leading-6 text-slate-700">Curly quotes are another common formatting problem. Word processors and AI tools often replace straight ASCII quotes with typographic smart quotes. They can look polished in finished typography, but they cause problems in technical contexts: JSON parsers reject them, Python and JavaScript can throw syntax errors, HTML attributes can break, and CSV files can misread field boundaries. A reliable <strong>text format remover</strong> converts curly single and double quotes back to straight quotes as part of the cleanup process.</p>
+          <p className="text-sm leading-6 text-slate-700">Dashes create a similar issue. AI models and word processors frequently substitute em dashes and en dashes where plain hyphens or ordinary spacing would be safer. In prose, those typographic marks may look fine. In code, command-line flags, structured data, and content systems, they can cause failures that are hard to diagnose because the characters look similar. The <strong>text format remover</strong> normalizes dashes so copied text is easier to reuse in technical and publishing workflows.</p>
+          <p className="text-sm leading-6 text-slate-700">Invisible formatting matters just as much as visible formatting. Non-breaking spaces (U+00A0) look like normal spaces but prevent line breaks, which can create overflow in mobile layouts and narrow columns. Zero-width spaces (U+200B) cannot be seen, yet they can affect word boundary detection, search, and word counts. These invisible characters are formatting artifacts too, inserted by editors or AI interfaces to control display. A complete <strong>format remover</strong> has to address both the visible markers and the hidden characters.</p>
+          <p className="text-sm leading-6 text-slate-700">To <strong>clear text formatting</strong> with AI Text Cleanup Tools, paste your content into the cleaner and click Clean Text. The workflow strips markdown, converts curly quotes, normalizes dashes, removes invisible Unicode, collapses excessive blank lines, and standardizes spacing. The result is clean plain text without style residue from the source. That helps content teams combine AI drafts, client notes, Word documents, PDF extracts, and scraped web text into one consistent baseline before the copy enters a CMS. No extensions, downloads, subscriptions, or complicated settings are required: just a fast, free <strong>text format remover</strong> that works in the browser with privacy-conscious processing.</p>
         </section>
 
         {/* SECTION 3 — Hidden Character Remover */}
-        <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 space-y-3 mt-6">
-          <h2 className="text-xl font-semibold text-slate-900">Hidden Character Remover — Remove Invisible Unicode Characters Online</h2>
-          <p className="text-sm text-slate-700">Hidden characters are Unicode code points that take up space in the underlying text data but produce no visible output on screen. They are completely invisible to anyone reading the text — you cannot see them, cannot select them individually in most editors, and cannot detect them by inspection. They only reveal themselves when you paste text into a different application and encounter unexpected behavior: extra whitespace in published pages, broken word counts in document editors, syntax errors in code editors, or layout glitches in email clients. AI models like ChatGPT, Claude, Gemini, DeepSeek, and Grok embed these characters in their output during text generation — they are an artifact of the tokenization and rendering pipeline that all large language models use.</p>
-          <p className="text-sm text-slate-700">The most common hidden characters in AI-generated text include zero-width spaces (U+200B), which are the most frequently embedded. In their intended use, zero-width spaces indicate potential word boundaries in languages that do not use spaces between words, such as Thai and Khmer. In English AI output, they appear scattered throughout text where they serve no purpose. Zero-width non-joiners (U+200C) are designed to prevent certain character combinations from forming ligatures in scripts like Arabic and Persian; in AI output they appear in English text where they have no intended function. Byte-order marks (U+FEFF) are designed to appear at the very start of a text file to signal the encoding format to the reading application; AI interfaces sometimes insert them mid-text where they produce rendering artifacts. Non-breaking spaces (U+00A0) are legitimate characters used in proper typesetting — they prevent line breaks between words that should stay together, like "100 km" or "Mr. Smith" — but when AI models insert them randomly throughout text they prevent natural line wrapping and cause overflow in narrow containers. Soft hyphens (U+00AD) indicate optional hyphenation points where a word can be broken if a line break is needed; when AI models insert them at arbitrary positions they can cause unexpected hyphens to appear when text is reflowed at a different width.</p>
-          <p className="text-sm text-slate-700">An <strong>invisible character remover</strong> specifically targets these Unicode code points and deletes them without touching any visible text. This is the only reliable approach because standard "remove hidden characters" methods like pasting into Notepad or using Ctrl+Shift+V for plain-text paste do not work. These characters are valid Unicode plain text — they survive any operation that preserves the plain-text character data, which includes every standard paste shortcut. The only way to <strong>remove hidden characters online</strong> is to use a tool that explicitly identifies and removes specific Unicode code points.</p>
-          <p className="text-sm text-slate-700">AI Text Cleanup Tools is a free <strong>hidden character remover</strong> that scans every character in your text, identifies each invisible Unicode code point, removes it, and displays a count of how many hidden characters were found and removed. This count is useful confirmation — it shows you that the invisible characters were actually present even though you could not see them. The tool targets zero-width spaces, zero-width non-joiners, zero-width joiners, byte-order marks, soft hyphens, non-breaking spaces, word joiners, left-to-right marks, right-to-left marks, invisible separators, and other Unicode control characters that appear in AI output and copied text.</p>
-          <p className="text-sm text-slate-700">If you need to <strong>remove Unicode characters</strong> from AI-generated content, web-scraped text, documents exported from rich editors, or any other source that may contain invisible artifacts, the tool above handles it in one step. The <strong>hidden character remover</strong> processes text of any length in milliseconds and runs entirely in your browser with no server upload. This makes it safe for confidential content — legal documents, healthcare records, financial reports, client deliverables, academic work — where uploading text to a third-party server would be inappropriate or prohibited. There is no account required, no character limit, and no cost. Paste your text, click Clean Text, and the output is free of every invisible Unicode artifact, ready to paste into any application without hidden character problems downstream.</p>
+        <section className="mt-6 space-y-3 rounded-[28px] border-3 border-black bg-white p-5 shadow-neo md:p-7">
+          <h2 className="text-xl font-bold text-slate-950">Hidden Character Remover — Remove Invisible Unicode Characters Online</h2>
+          <p className="text-sm leading-6 text-slate-700">Hidden characters are Unicode code points that exist inside the text data even though they do not create visible marks on screen. You usually cannot see them, highlight them, or identify them by reading the paragraph. They show up only when copied text behaves strangely somewhere else: published pages gain extra whitespace, document word counts look wrong, code editors throw unexplained errors, email layouts shift, or CMS blocks break. AI models such as ChatGPT, Claude, Gemini, DeepSeek, and Grok can leave these characters behind during generation, rendering, and copy-paste, which is why a dedicated hidden character remover is useful.</p>
+          <p className="text-sm leading-6 text-slate-700">The most common hidden characters in AI-generated text include zero-width spaces (U+200B). In some languages, zero-width spaces have legitimate uses for word boundaries; in English AI output, they often appear where they serve no purpose. Zero-width non-joiners (U+200C) and zero-width joiners (U+200D) are useful in certain scripts, but they can become noise inside English drafts. Byte-order marks (U+FEFF) are intended to signal encoding at the start of a file, yet copied AI text may contain them inside a paragraph. Non-breaking spaces (U+00A0) are valid in typography because they keep words together, but random non-breaking spaces can prevent natural wrapping and cause overflow. Soft hyphens (U+00AD) can create unexpected hyphenation when text reflows at a different width.</p>
+          <p className="text-sm leading-6 text-slate-700">An <strong>invisible character remover</strong> works by targeting those exact Unicode code points and deleting them without changing the visible wording. This is more reliable than common workarounds such as pasting into Notepad, using plain-text paste, or manually retyping a paragraph. Hidden characters are still plain text, so they can survive any operation that keeps the text data intact. To consistently <strong>remove hidden characters online</strong>, you need a tool that explicitly detects and removes those characters rather than hoping a different editor strips them away.</p>
+          <p className="text-sm leading-6 text-slate-700">AI Text Cleanup Tools is a free <strong>hidden character remover</strong> that scans the text you paste, identifies invisible Unicode characters, removes them, and reports how many hidden characters were found. That count matters because it confirms the issue existed even when the text looked normal. The cleaner targets zero-width spaces, zero-width non-joiners, zero-width joiners, byte-order marks, soft hyphens, non-breaking spaces, word joiners, left-to-right marks, right-to-left marks, invisible separators, and other Unicode control characters found in AI output and copied content.</p>
+          <p className="text-sm leading-6 text-slate-700">If you need to <strong>remove Unicode characters</strong> from AI-generated content, scraped text, PDF extracts, Word exports, CMS drafts, or documents copied from rich editors, the cleaner handles the process in one pass. The <strong>hidden character remover</strong> runs in the browser, works quickly on long text, and does not require uploading a file to another server. That is useful for confidential business copy, legal drafts, healthcare notes, financial reports, client material, and academic work where privacy matters. Paste your text, click Clean Text, and the result is free of invisible Unicode artifacts so it can move into the next application without hidden character problems downstream.</p>
         </section>
 
         {/* SECTION 4 — Expanded FAQ */}

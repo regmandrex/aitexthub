@@ -234,7 +234,7 @@ export default async function DeepSeekWatermarkCleanerPage() {
         </section>
 
         <section className="relative w-full mt-4 md:mt-6">
-          <div className="w-full max-w-none rounded-xl border border-slate-200 bg-white p-3 shadow-sm md:rounded-2xl md:p-6">
+          <div className="w-full max-w-none rounded-xl border-3 border-black bg-white p-3 shadow-neo-sm md:rounded-2xl md:p-6">
             <ToolWorkbench
               processor="chatgptTextCleaner"
               primaryLabel={'Clean'}
@@ -250,7 +250,7 @@ export default async function DeepSeekWatermarkCleanerPage() {
 
         <RelatedTools currentSlug="deepseek-watermark-cleaner" />
 
-        <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 space-y-4 mt-10">
+        <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 space-y-4 mt-10">
           <h2 className="text-2xl font-semibold text-slate-900">
             DeepSeek Watermark Cleaner (Text): How to Detect and Remove Hidden AI Watermarks in Text
           </h2>
@@ -442,39 +442,39 @@ export default async function DeepSeekWatermarkCleanerPage() {
           <h3 className="text-xl font-semibold text-slate-900">Online Tools to Clean Watermarks</h3>
           <p>Some web-based tools claim to clean watermarks. Here's a breakdown:</p>
           <div className="overflow-x-auto">
-            <table className="w-full text-left text-sm text-slate-700 border border-slate-200">
+            <table className="w-full text-left text-sm text-slate-700 border-3 border-black">
               <thead className="bg-slate-50 text-slate-800">
                 <tr>
-                  <th className="border border-slate-200 px-3 py-2 font-semibold">Tool</th>
-                  <th className="border border-slate-200 px-3 py-2 font-semibold">Pros</th>
-                  <th className="border border-slate-200 px-3 py-2 font-semibold">Cons</th>
+                  <th className="border-3 border-black px-3 py-2 font-semibold">Tool</th>
+                  <th className="border-3 border-black px-3 py-2 font-semibold">Pros</th>
+                  <th className="border-3 border-black px-3 py-2 font-semibold">Cons</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td className="border border-slate-200 px-3 py-2">Undetectable.AI</td>
-                  <td className="border border-slate-200 px-3 py-2">High bypass rate, readable</td>
-                  <td className="border border-slate-200 px-3 py-2">Expensive</td>
+                  <td className="border-3 border-black px-3 py-2">Undetectable.AI</td>
+                  <td className="border-3 border-black px-3 py-2">High bypass rate, readable</td>
+                  <td className="border-3 border-black px-3 py-2">Expensive</td>
                 </tr>
                 <tr>
-                  <td className="border border-slate-200 px-3 py-2">Paraphraser.io</td>
-                  <td className="border border-slate-200 px-3 py-2">Free, decent quality</td>
-                  <td className="border border-slate-200 px-3 py-2">Still detectable</td>
+                  <td className="border-3 border-black px-3 py-2">Paraphraser.io</td>
+                  <td className="border-3 border-black px-3 py-2">Free, decent quality</td>
+                  <td className="border-3 border-black px-3 py-2">Still detectable</td>
                 </tr>
                 <tr>
-                  <td className="border border-slate-200 px-3 py-2">Quillbot</td>
-                  <td className="border border-slate-200 px-3 py-2">Fast, fluent</td>
-                  <td className="border border-slate-200 px-3 py-2">Premium needed for full effect</td>
+                  <td className="border-3 border-black px-3 py-2">Quillbot</td>
+                  <td className="border-3 border-black px-3 py-2">Fast, fluent</td>
+                  <td className="border-3 border-black px-3 py-2">Premium needed for full effect</td>
                 </tr>
                 <tr>
-                  <td className="border border-slate-200 px-3 py-2">HIX AI</td>
-                  <td className="border border-slate-200 px-3 py-2">All-in-one, clean UI</td>
-                  <td className="border border-slate-200 px-3 py-2">Subscription</td>
+                  <td className="border-3 border-black px-3 py-2">HIX AI</td>
+                  <td className="border-3 border-black px-3 py-2">All-in-one, clean UI</td>
+                  <td className="border-3 border-black px-3 py-2">Subscription</td>
                 </tr>
                 <tr>
-                  <td className="border border-slate-200 px-3 py-2">AISEO</td>
-                  <td className="border border-slate-200 px-3 py-2">AI detection score built-in</td>
-                  <td className="border border-slate-200 px-3 py-2">Slower</td>
+                  <td className="border-3 border-black px-3 py-2">AISEO</td>
+                  <td className="border-3 border-black px-3 py-2">AI detection score built-in</td>
+                  <td className="border-3 border-black px-3 py-2">Slower</td>
                 </tr>
               </tbody>
             </table>

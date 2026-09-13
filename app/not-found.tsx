@@ -14,7 +14,7 @@ export default async function NotFound() {
     <section className="relative overflow-hidden bg-[#f7f9ff]">
       <div className="pointer-events-none absolute -top-32 left-1/2 h-64 w-[520px] -translate-x-1/2 rounded-full bg-[radial-gradient(circle_at_top,_#e0e7ff,_transparent_70%)] opacity-90" />
       <div className="pointer-events-none absolute -bottom-24 right-[-60px] h-56 w-56 rounded-full bg-brand-100 blur-3xl opacity-80" />
-      <div className="pointer-events-none absolute bottom-20 left-[-40px] hidden h-40 w-40 rounded-3xl border border-white/60 bg-white/60 shadow-sm md:block" />
+      <div className="pointer-events-none absolute bottom-20 left-[-40px] hidden h-40 w-40 rounded-3xl border border-white/60 bg-white/60 shadow-neo-sm md:block" />
 
       <div className="mx-auto w-full max-w-5xl px-4 py-16 md:py-20">
         <div className="grid gap-10 md:grid-cols-[1.05fr_0.95fr] md:items-center">
@@ -39,7 +39,7 @@ export default async function NotFound() {
               </Link>
               <Link
                 href="/ai-tools"
-                className="inline-flex items-center rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 shadow-sm hover:border-slate-300 hover:text-slate-900"
+                className="inline-flex items-center rounded-lg border-3 border-black bg-white px-4 py-2 text-sm font-semibold text-slate-700 shadow-neo-sm hover:border-black hover:text-slate-900"
               >
                 Browse All Tools
               </Link>
@@ -53,7 +53,7 @@ export default async function NotFound() {
           </div>
 
           <div className="relative">
-            <div className="rounded-3xl border border-slate-200 bg-white/90 p-6 shadow-sm backdrop-blur">
+            <div className="rounded-3xl border-3 border-black bg-white/90 p-6 shadow-neo-sm backdrop-blur">
               <div className="flex items-center justify-between text-xs uppercase tracking-[0.2em] text-slate-400">
                 <span>Error Log</span>
                 <span>404</span>
@@ -68,7 +68,7 @@ export default async function NotFound() {
                 Page not found. The requested resource could not be located.
               </div>
             </div>
-            <div className="absolute -right-4 -bottom-6 hidden rounded-2xl border border-slate-200 bg-white px-4 py-3 shadow-sm md:block">
+            <div className="absolute -right-4 -bottom-6 hidden rounded-2xl border-3 border-black bg-white px-4 py-3 shadow-neo-sm md:block">
               <span className="text-5xl font-semibold text-brand-600">404</span>
             </div>
           </div>

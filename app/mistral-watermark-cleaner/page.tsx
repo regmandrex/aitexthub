@@ -237,7 +237,7 @@ export default async function MistralWatermarkCleanerPage() {
         </section>
 
         <section className="relative w-full mt-4 md:mt-6">
-          <div className="w-full max-w-none rounded-xl border border-slate-200 bg-white p-3 shadow-sm md:rounded-2xl md:p-6">
+          <div className="w-full max-w-none rounded-xl border-3 border-black bg-white p-3 shadow-neo-sm md:rounded-2xl md:p-6">
             <ToolWorkbench
               processor="chatgptTextCleaner"
               primaryLabel={'Clean'}
@@ -253,7 +253,7 @@ export default async function MistralWatermarkCleanerPage() {
 
         <RelatedTools currentSlug="mistral-watermark-cleaner" />
 
-        <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 space-y-4 mt-10">
+        <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 space-y-4 mt-10">
           <h2 className="text-2xl font-semibold text-slate-900">Mistral Watermark Cleaner - How to Remove Watermarks from Mistral AI Models</h2>
 
           <h3 className="text-xl font-semibold text-slate-900">Introduction</h3>
@@ -470,39 +470,39 @@ export default async function MistralWatermarkCleanerPage() {
           <h3 className="text-xl font-semibold text-slate-900">Case Study: Comparing Original vs Cleaned Outputs</h3>
           <p>Let us compare:</p>
           <div className="overflow-x-auto">
-            <table className="w-full text-left text-sm text-slate-700 border border-slate-200">
+            <table className="w-full text-left text-sm text-slate-700 border-3 border-black">
               <thead className="bg-slate-50 text-slate-800">
                 <tr>
-                  <th className="border border-slate-200 px-3 py-2 font-semibold">Aspect</th>
-                  <th className="border border-slate-200 px-3 py-2 font-semibold">Original Output (Watermarked)</th>
-                  <th className="border border-slate-200 px-3 py-2 font-semibold">Cleaned Output</th>
+                  <th className="border-3 border-black px-3 py-2 font-semibold">Aspect</th>
+                  <th className="border-3 border-black px-3 py-2 font-semibold">Original Output (Watermarked)</th>
+                  <th className="border-3 border-black px-3 py-2 font-semibold">Cleaned Output</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td className="border border-slate-200 px-3 py-2">Clarity</td>
-                  <td className="border border-slate-200 px-3 py-2">High</td>
-                  <td className="border border-slate-200 px-3 py-2">Medium-High</td>
+                  <td className="border-3 border-black px-3 py-2">Clarity</td>
+                  <td className="border-3 border-black px-3 py-2">High</td>
+                  <td className="border-3 border-black px-3 py-2">Medium-High</td>
                 </tr>
                 <tr>
-                  <td className="border border-slate-200 px-3 py-2">Coherence</td>
-                  <td className="border border-slate-200 px-3 py-2">High</td>
-                  <td className="border border-slate-200 px-3 py-2">Slightly reduced</td>
+                  <td className="border-3 border-black px-3 py-2">Coherence</td>
+                  <td className="border-3 border-black px-3 py-2">High</td>
+                  <td className="border-3 border-black px-3 py-2">Slightly reduced</td>
                 </tr>
                 <tr>
-                  <td className="border border-slate-200 px-3 py-2">Watermark presence</td>
-                  <td className="border border-slate-200 px-3 py-2">Strong (detected)</td>
-                  <td className="border border-slate-200 px-3 py-2">Weak (undetected)</td>
+                  <td className="border-3 border-black px-3 py-2">Watermark presence</td>
+                  <td className="border-3 border-black px-3 py-2">Strong (detected)</td>
+                  <td className="border-3 border-black px-3 py-2">Weak (undetected)</td>
                 </tr>
                 <tr>
-                  <td className="border border-slate-200 px-3 py-2">Detectability</td>
-                  <td className="border border-slate-200 px-3 py-2">Easy</td>
-                  <td className="border border-slate-200 px-3 py-2">Hard</td>
+                  <td className="border-3 border-black px-3 py-2">Detectability</td>
+                  <td className="border-3 border-black px-3 py-2">Easy</td>
+                  <td className="border-3 border-black px-3 py-2">Hard</td>
                 </tr>
                 <tr>
-                  <td className="border border-slate-200 px-3 py-2">Use safety</td>
-                  <td className="border border-slate-200 px-3 py-2">Risky</td>
-                  <td className="border border-slate-200 px-3 py-2">Safer (if paraphrased well)</td>
+                  <td className="border-3 border-black px-3 py-2">Use safety</td>
+                  <td className="border-3 border-black px-3 py-2">Risky</td>
+                  <td className="border-3 border-black px-3 py-2">Safer (if paraphrased well)</td>
                 </tr>
               </tbody>
             </table>

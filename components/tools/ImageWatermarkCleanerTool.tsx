@@ -123,7 +123,7 @@ export function ImageWatermarkCleanerTool({ modelName }: ImageWatermarkCleanerTo
   return (
     <div className="space-y-4">
       <div className="grid gap-4 md:grid-cols-[1fr,1fr]">
-        <div className="space-y-3 rounded-xl border border-slate-200 bg-slate-50 p-4">
+        <div className="space-y-3 rounded-xl border-3 border-black bg-slate-50 p-4">
           <label className="block text-sm font-semibold text-slate-800">Upload image</label>
           <input
             type="file"
@@ -138,7 +138,7 @@ export function ImageWatermarkCleanerTool({ modelName }: ImageWatermarkCleanerTo
           </p>
 
           {loaded ? (
-            <div className="space-y-3 border-t border-slate-200 pt-3">
+            <div className="space-y-3 border-t-3 border-black pt-3">
               <p className="text-xs text-slate-500">
                 {loaded.file.name} — {loaded.width}×{loaded.height}px, {formatBytes(loaded.file.size)}
               </p>
@@ -168,7 +168,7 @@ export function ImageWatermarkCleanerTool({ modelName }: ImageWatermarkCleanerTo
                 <select
                   value={format}
                   onChange={(e) => setFormat(e.target.value as 'image/png' | 'image/jpeg')}
-                  className="rounded border border-slate-300 px-2 py-1 text-xs"
+                  className="rounded border-2 border-black px-2 py-1 text-xs"
                 >
                   <option value="image/png">PNG (lossless)</option>
                   <option value="image/jpeg">JPEG (smaller)</option>
@@ -178,11 +178,11 @@ export function ImageWatermarkCleanerTool({ modelName }: ImageWatermarkCleanerTo
           ) : null}
         </div>
 
-        <div className="flex flex-col items-center justify-center gap-3 rounded-xl border border-slate-200 bg-white p-4">
+        <div className="flex flex-col items-center justify-center gap-3 rounded-xl border-3 border-black bg-white p-4">
           {result ? (
             <>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={result.url} alt="Cleaned output preview" className="max-h-64 w-auto rounded border border-slate-200" />
+              <img src={result.url} alt="Cleaned output preview" className="max-h-64 w-auto rounded border-3 border-black" />
               <p className="text-xs text-slate-500">Cleaned — {formatBytes(result.size)}, metadata removed</p>
               <a
                 href={result.url}
@@ -194,7 +194,7 @@ export function ImageWatermarkCleanerTool({ modelName }: ImageWatermarkCleanerTo
             </>
           ) : loaded ? (
             // eslint-disable-next-line @next/next/no-img-element
-            <img src={loaded.url} alt="Source preview" className="max-h-64 w-auto rounded border border-slate-200 opacity-80" />
+            <img src={loaded.url} alt="Source preview" className="max-h-64 w-auto rounded border-3 border-black opacity-80" />
           ) : (
             <p className="text-center text-sm text-slate-400">Cleaned image preview will appear here.</p>
           )}
@@ -215,7 +215,7 @@ export function ImageWatermarkCleanerTool({ modelName }: ImageWatermarkCleanerTo
         <button
           type="button"
           onClick={reset}
-          className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
+          className="inline-flex items-center justify-center rounded-lg border-3 border-black bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
         >
           Clear
         </button>

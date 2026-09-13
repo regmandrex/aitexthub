@@ -181,7 +181,7 @@ export function CombinationGeneratorTool() {
             onChange={(e) => setInput(e.target.value)}
             placeholder="Enter items, one per line..."
             rows={10}
-            className="w-full rounded-xl border border-slate-200 bg-white px-3 py-3 text-sm text-slate-800 shadow-sm outline-none transition focus:border-brand-300 focus:ring-2 focus:ring-brand-100"
+            className="w-full rounded-xl border-3 border-black bg-white px-3 py-3 text-sm text-slate-800 shadow-neo-sm outline-none transition focus:border-brand-300 focus:ring-2 focus:ring-brand-100"
           />
           {errors.input ? <p className="text-xs font-semibold text-rose-600">{errors.input}</p> : null}
         </div>
@@ -197,7 +197,7 @@ export function CombinationGeneratorTool() {
               max={20}
               value={size}
               onChange={(e) => setSize(e.target.value)}
-              className="w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm text-slate-700 shadow-sm focus:border-brand-300 focus:outline-none focus:ring-2 focus:ring-brand-100"
+              className="w-full rounded-lg border-3 border-black bg-white px-3 py-2 text-sm text-slate-700 shadow-neo-sm focus:border-brand-300 focus:outline-none focus:ring-2 focus:ring-brand-100"
             />
             <p className="text-xs text-slate-500">{LABELS.combinationSizeHint}</p>
             {errors.size ? <p className="text-xs font-semibold text-rose-600">{errors.size}</p> : null}
@@ -212,7 +212,7 @@ export function CombinationGeneratorTool() {
               value={prefix}
               onChange={(e) => setPrefix(e.target.value)}
               placeholder={LABELS.prefixPlaceholder}
-              className="w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm text-slate-700 shadow-sm focus:border-brand-300 focus:outline-none focus:ring-2 focus:ring-brand-100"
+              className="w-full rounded-lg border-3 border-black bg-white px-3 py-2 text-sm text-slate-700 shadow-neo-sm focus:border-brand-300 focus:outline-none focus:ring-2 focus:ring-brand-100"
             />
             <p className="text-xs text-slate-500">{LABELS.prefixHint}</p>
           </div>
@@ -226,7 +226,7 @@ export function CombinationGeneratorTool() {
               value={suffix}
               onChange={(e) => setSuffix(e.target.value)}
               placeholder={LABELS.suffixPlaceholder}
-              className="w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm text-slate-700 shadow-sm focus:border-brand-300 focus:outline-none focus:ring-2 focus:ring-brand-100"
+              className="w-full rounded-lg border-3 border-black bg-white px-3 py-2 text-sm text-slate-700 shadow-neo-sm focus:border-brand-300 focus:outline-none focus:ring-2 focus:ring-brand-100"
             />
             <p className="text-xs text-slate-500">{"Add text after each combination. Use \\x for newline."}</p>
           </div>
@@ -240,7 +240,7 @@ export function CombinationGeneratorTool() {
               value={delimiter}
               onChange={(e) => setDelimiter(e.target.value)}
               placeholder={LABELS.delimiterPlaceholder}
-              className="w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm text-slate-700 shadow-sm focus:border-brand-300 focus:outline-none focus:ring-2 focus:ring-brand-100"
+              className="w-full rounded-lg border-3 border-black bg-white px-3 py-2 text-sm text-slate-700 shadow-neo-sm focus:border-brand-300 focus:outline-none focus:ring-2 focus:ring-brand-100"
             />
             <p className="text-xs text-slate-500">{"Separator between items in each combination. Use \\x for newline."}</p>
           </div>
@@ -254,11 +254,11 @@ export function CombinationGeneratorTool() {
               value={joinSets}
               onChange={(e) => setJoinSets(e.target.value)}
               placeholder={"\\x"}
-              className="w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm text-slate-700 shadow-sm focus:border-brand-300 focus:outline-none focus:ring-2 focus:ring-brand-100"
+              className="w-full rounded-lg border-3 border-black bg-white px-3 py-2 text-sm text-slate-700 shadow-neo-sm focus:border-brand-300 focus:outline-none focus:ring-2 focus:ring-brand-100"
             />
             <p className="text-xs text-slate-500">{LABELS.joinSetsHint}</p>
           </div>
-          <div className="rounded-xl border border-slate-200 bg-slate-50 p-4">
+          <div className="rounded-xl border-3 border-black bg-slate-50 p-4">
             <h3 className="text-sm font-semibold text-slate-800">{LABELS.infoTitle}</h3>
             <p className="mt-2 text-xs text-slate-600">
               {"Items"}: {items.length}
@@ -283,14 +283,14 @@ export function CombinationGeneratorTool() {
         <button
           type="button"
           onClick={handleSample}
-          className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
+          className="inline-flex items-center justify-center rounded-lg border-3 border-black bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
         >
           {LABELS.loadSampleButton}
         </button>
         <button
           type="button"
           onClick={handleClear}
-          className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
+          className="inline-flex items-center justify-center rounded-lg border-3 border-black bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
         >
           {"Clear"}
         </button>
@@ -319,12 +319,12 @@ export function CombinationGeneratorTool() {
               </button>
             </div>
           </div>
-          <div className="max-h-96 overflow-y-auto rounded-xl border border-slate-200 bg-white p-4">
+          <div className="max-h-96 overflow-y-auto rounded-xl border-3 border-black bg-white p-4">
             <div className="space-y-1">
               {results.map((result, idx) => (
                 <div
                   key={idx}
-                  className="flex items-center justify-between rounded-lg border border-slate-100 bg-slate-50 px-3 py-2 text-sm text-slate-700 hover:bg-slate-100"
+                  className="flex items-center justify-between rounded-lg border-2 border-black bg-slate-50 px-3 py-2 text-sm text-slate-700 hover:bg-slate-100"
                 >
                   <span>{result}</span>
                   <button

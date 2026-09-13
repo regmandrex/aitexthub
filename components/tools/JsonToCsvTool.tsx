@@ -90,7 +90,7 @@ export function JsonToCsvTool() {
         <div className="flex items-center gap-2">
           <label className="font-medium text-slate-700">Delimiter:</label>
           <select value={delim} onChange={e => setDelim(e.target.value)}
-            className="rounded-lg border border-slate-200 px-2 py-1 text-sm text-slate-800 focus:outline-none">
+            className="rounded-lg border-3 border-black px-2 py-1 text-sm text-slate-800 focus:outline-none">
             {Object.keys(DELIMITERS).map(d => <option key={d}>{d}</option>)}
           </select>
         </div>
@@ -113,10 +113,10 @@ export function JsonToCsvTool() {
 
       <div className="flex gap-2 flex-wrap">
         <button onClick={convert} className="px-4 py-2 text-sm font-medium rounded-xl bg-blue-600 text-white hover:bg-blue-700">Convert to CSV</button>
-        <button onClick={copyOutput} disabled={!output} className="px-4 py-2 text-sm font-medium rounded-xl border border-slate-200 bg-white hover:bg-slate-50 disabled:opacity-40">
+        <button onClick={copyOutput} disabled={!output} className="px-4 py-2 text-sm font-medium rounded-xl border-3 border-black bg-white hover:bg-slate-50 disabled:opacity-40">
           {copied ? 'Copied!' : 'Copy CSV'}
         </button>
-        <button onClick={downloadCsv} disabled={!output} className="px-4 py-2 text-sm font-medium rounded-xl border border-slate-200 bg-white hover:bg-slate-50 disabled:opacity-40">
+        <button onClick={downloadCsv} disabled={!output} className="px-4 py-2 text-sm font-medium rounded-xl border-3 border-black bg-white hover:bg-slate-50 disabled:opacity-40">
           Download .csv
         </button>
       </div>

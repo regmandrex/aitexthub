@@ -23,7 +23,7 @@ export default function HowToSeeChatGptWatermarksPage() {
       <div className="ad-slot"><AdSenseSlot className="w-full" /></div>
 
       {/* Hero card */}
-      <div className="rounded-[28px] border border-slate-200 bg-white/70 p-6 shadow-xl shadow-slate-900/5 backdrop-blur-lg">
+      <div className="rounded-[28px] border-3 border-black bg-white/70 p-6 shadow-neo-lg shadow-slate-900/5 backdrop-blur-lg">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Detection Guide</p>
         <h1 className="mt-3 text-3xl font-semibold text-slate-900">How to See ChatGPT Watermarks</h1>
         <p className="mt-2 text-slate-600">
@@ -38,7 +38,7 @@ export default function HowToSeeChatGptWatermarksPage() {
             { title: 'Manual methods', detail: 'Text editor tricks and developer tools' },
             { title: 'What to look for', detail: 'Specific characters and patterns to identify' },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-100 bg-slate-50 p-4 text-xs text-slate-700">
+            <div key={item.title} className="rounded-2xl border-2 border-black bg-slate-50 p-4 text-xs text-slate-700">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.detail}</p>
             </div>
@@ -71,7 +71,7 @@ export default function HowToSeeChatGptWatermarksPage() {
           accept pasted text, scan the raw Unicode string, and visually highlight or list any invisible characters they find.
         </p>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900"><Link href="/chatgpt-watermark-detector">ChatGPT Watermark Detector</Link></p>
             <p className="mt-2">
               Specifically designed to find the patterns associated with ChatGPT output: invisible characters, Unicode
@@ -80,7 +80,7 @@ export default function HowToSeeChatGptWatermarksPage() {
             </p>
             <p className="mt-2"><strong>Time:</strong> 10&ndash;30 seconds per document</p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900"><Link href="/invisible-character-detector">Invisible Character Detector</Link></p>
             <p className="mt-2">
               Provides a more detailed Unicode-level report. Shows every invisible character found: its exact Unicode
@@ -102,7 +102,7 @@ export default function HowToSeeChatGptWatermarksPage() {
           Modern code editors can be configured to show invisible characters, which makes them useful for manual detection.
           This method requires some technical familiarity but gives you direct visual insight into the text.
         </p>
-        <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+        <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
           <p className="font-semibold text-slate-900">VS Code method</p>
           <ol className="mt-2 list-decimal space-y-2 pl-5">
             <li>Open VS Code and paste your text into a new file.</li>
@@ -115,7 +115,7 @@ export default function HowToSeeChatGptWatermarksPage() {
             <li>VS Code will highlight matches in the document, showing you exactly where invisible characters appear.</li>
           </ol>
         </div>
-        <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm mt-4">
+        <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm mt-4">
           <p className="font-semibold text-slate-900">Notepad++ method</p>
           <ol className="mt-2 list-decimal space-y-2 pl-5">
             <li>Paste your text into Notepad++.</li>
@@ -136,7 +136,7 @@ export default function HowToSeeChatGptWatermarksPage() {
           If you have text on a web page (including ChatGPT&apos;s own interface) and want to examine it for invisible
           characters, browser developer tools provide direct access to the underlying Unicode.
         </p>
-        <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+        <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
           <p className="font-semibold text-slate-900">Chrome / Edge developer tools method</p>
           <ol className="mt-2 list-decimal space-y-2 pl-5">
             <li>Right-click on the text element you want to inspect and choose &quot;Inspect.&quot;</li>
@@ -160,7 +160,7 @@ export default function HowToSeeChatGptWatermarksPage() {
           For users processing large amounts of text programmatically, a simple Python script can scan for invisible
           characters across multiple files or large documents.
         </p>
-        <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+        <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
           <p className="font-semibold text-slate-900">Simple Python detector</p>
           <pre className="mt-2 overflow-x-auto rounded bg-slate-900 p-3 text-xs text-green-300">
 {`invisible_chars = {
@@ -191,7 +191,7 @@ def scan_text(text):
           When you use a detection tool, here is what you will typically see reported:
         </p>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">In online detection tools</p>
             <p className="mt-2">
               The tool will typically highlight the position in the text where each invisible character was found,
@@ -199,7 +199,7 @@ def scan_text(text):
               visible text will appear normally &mdash; the invisible character is just marked at its location.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">In code editors</p>
             <p className="mt-2">
               Search results will show highlighted positions in the text, usually as a small selection marker at

@@ -28,7 +28,7 @@ export default function UltimateWorkflowDetectCleanFormatChatGPTTextPage() {
         <AdSenseSlot className="w-full" />
       </div>
 
-      <div className="rounded-[28px] border border-slate-200 bg-white/70 p-6 shadow-xl shadow-slate-900/5 backdrop-blur-lg">
+      <div className="rounded-[28px] border-3 border-black bg-white/70 p-6 shadow-neo-lg shadow-slate-900/5 backdrop-blur-lg">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">From draft to publish-ready</p>
         <h1 className="mt-3 text-3xl font-semibold text-slate-900">Ultimate Workflow: Detect, Clean, and Format ChatGPT Text</h1>
         <p className="mt-2 text-slate-600">
@@ -43,7 +43,7 @@ export default function UltimateWorkflowDetectCleanFormatChatGPTTextPage() {
             { title: 'Clean', detail: 'Normalize text before it hits your CMS' },
             { title: 'Format', detail: 'Apply platform-native structure safely' },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-100 bg-slate-50 p-4 text-xs text-slate-700">
+            <div key={item.title} className="rounded-2xl border-2 border-black bg-slate-50 p-4 text-xs text-slate-700">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.detail}</p>
             </div>
@@ -80,7 +80,7 @@ export default function UltimateWorkflowDetectCleanFormatChatGPTTextPage() {
           WordPress” or output HTML. You want raw, readable text, not pre-styled output.
         </p>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/70 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/70 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Best practices</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Generate for clarity and completeness</li>
@@ -88,7 +88,7 @@ export default function UltimateWorkflowDetectCleanFormatChatGPTTextPage() {
               <li>Keep formatting simple</li>
             </ul>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/70 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/70 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Avoid</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>HTML output</li>
@@ -121,7 +121,7 @@ export default function UltimateWorkflowDetectCleanFormatChatGPTTextPage() {
           Cleaning is where most workflows fail, either by skipping it or doing it superficially. Cleaning is not spell-checking or rewriting.
           Cleaning is technical hygiene: removing invisible Unicode, normalizing whitespace, and standardizing encoding.
         </p>
-        <div className="rounded-2xl border border-brand-100 bg-brand-50 p-5 text-sm text-brand-900 shadow-sm">
+        <div className="rounded-2xl border border-brand-100 bg-brand-50 p-5 text-sm text-brand-900 shadow-neo-sm">
           <p className="font-semibold text-brand-800">Correct cleaning order</p>
           <ol className="mt-2 list-decimal space-y-1 pl-5 text-slate-800">
             <li>Strip all formatting</li>
@@ -144,7 +144,7 @@ export default function UltimateWorkflowDetectCleanFormatChatGPTTextPage() {
           lists manually, insert links intentionally, and avoid pasted styling.
         </p>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/70 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/70 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Formatting principles</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Use native headings, lists, and blocks</li>
@@ -153,7 +153,7 @@ export default function UltimateWorkflowDetectCleanFormatChatGPTTextPage() {
               <li>Avoid nested formatting unless necessary</li>
             </ul>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/70 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/70 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">SEO-safe structure</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>One H1 per page</li>
@@ -188,7 +188,7 @@ export default function UltimateWorkflowDetectCleanFormatChatGPTTextPage() {
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">Workflow comparison: ad-hoc vs structured</h2>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/70 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/70 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Ad-hoc workflow (common)</p>
             <ol className="mt-2 list-decimal space-y-1 pl-5">
               <li>Generate</li>
@@ -198,7 +198,7 @@ export default function UltimateWorkflowDetectCleanFormatChatGPTTextPage() {
             </ol>
             <p className="mt-3 text-slate-600">Result: broken formatting, performance regressions, and SEO instability.</p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/70 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/70 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Structured workflow (recommended)</p>
             <ol className="mt-2 list-decimal space-y-1 pl-5">
               <li>Generate</li>
@@ -247,7 +247,7 @@ export default function UltimateWorkflowDetectCleanFormatChatGPTTextPage() {
             { q: 'Is this workflow only for WordPress?', a: 'No. It works for any CMS, email tool, or documentation platform.' },
             { q: 'Will this improve SEO directly?', a: 'It improves performance and UX, which directly support SEO.' },
           ].map((item) => (
-            <div key={item.q} className="rounded-2xl border border-slate-200 bg-white/60 p-4 text-sm text-slate-700 shadow-sm">
+            <div key={item.q} className="rounded-2xl border-3 border-black bg-white/60 p-4 text-sm text-slate-700 shadow-neo-sm">
               <p className="font-semibold text-slate-900">{item.q}</p>
               <p className="mt-1">{item.a}</p>
             </div>

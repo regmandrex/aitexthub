@@ -151,7 +151,7 @@ export default function VideoWatermarkTool({ mode, modelName }: VideoWatermarkTo
   return (
     <div className="space-y-4">
       <div className="grid gap-4 md:grid-cols-[1.1fr,0.9fr]">
-        <div className="space-y-3 rounded-xl border border-slate-200 bg-slate-50 p-4">
+        <div className="space-y-3 rounded-xl border-3 border-black bg-slate-50 p-4">
           <label className="text-sm font-semibold text-slate-800">Upload video</label>
           <input
             ref={inputRef}
@@ -200,7 +200,7 @@ export default function VideoWatermarkTool({ mode, modelName }: VideoWatermarkTo
         <button
           type="button"
           onClick={reset}
-          className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
+          className="inline-flex items-center justify-center rounded-lg border-3 border-black bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
         >
           Clear
         </button>

@@ -23,7 +23,7 @@ export default function AiWatermarksAndAcademicIntegrityPage() {
       <div className="ad-slot"><AdSenseSlot className="w-full" /></div>
 
       {/* Hero card */}
-      <div className="rounded-[28px] border border-slate-200 bg-white/70 p-6 shadow-xl shadow-slate-900/5 backdrop-blur-lg">
+      <div className="rounded-[28px] border-3 border-black bg-white/70 p-6 shadow-neo-lg shadow-slate-900/5 backdrop-blur-lg">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Students &amp; Academic Integrity</p>
         <h1 className="mt-3 text-3xl font-semibold text-slate-900">AI Watermarks and Academic Integrity</h1>
         <p className="mt-2 text-slate-600">
@@ -38,7 +38,7 @@ export default function AiWatermarksAndAcademicIntegrityPage() {
             { title: 'False positives', detail: 'Non-native speakers and formal writers are over-flagged' },
             { title: 'Invisible characters', detail: 'Copy-paste artifacts can trigger detection tools' },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-100 bg-slate-50 p-4 text-xs text-slate-700">
+            <div key={item.title} className="rounded-2xl border-2 border-black bg-slate-50 p-4 text-xs text-slate-700">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.detail}</p>
             </div>
@@ -72,21 +72,21 @@ export default function AiWatermarksAndAcademicIntegrityPage() {
           There are actually three distinct things the phrase might refer to:
         </p>
         <div className="grid gap-4 md:grid-cols-3">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Statistical signatures</p>
             <p className="mt-2">
               The low-perplexity, low-burstiness patterns that AI text tends to have. These are what most detectors
               actually measure. Not a deliberate watermark &mdash; a natural property of language model output.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Invisible Unicode characters</p>
             <p className="mt-2">
               Zero-width spaces, byte-order marks, and other invisible characters that sometimes appear in AI-generated
               text. These are artifacts, not deliberate marks, but they can trigger detection systems.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Cryptographic watermarks</p>
             <p className="mt-2">
               A proposed but not currently deployed system where AI models embed a verifiable secret signal during
@@ -108,7 +108,7 @@ export default function AiWatermarksAndAcademicIntegrityPage() {
           have examined the accuracy of popular AI detectors and found consistent patterns of incorrect classification.
         </p>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Non-native English speakers</p>
             <p className="mt-2">
               Studies by researchers at Stanford, the University of Pennsylvania, and elsewhere have shown that non-native
@@ -116,7 +116,7 @@ export default function AiWatermarksAndAcademicIntegrityPage() {
               false positive rates for some populations. This represents a significant equity issue in academic contexts.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Formal academic writing</p>
             <p className="mt-2">
               Students who write in the formal, structured style expected by many academic disciplines &mdash; particularly
@@ -124,7 +124,7 @@ export default function AiWatermarksAndAcademicIntegrityPage() {
               Following academic writing conventions can itself trigger detection.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Historical texts</p>
             <p className="mt-2">
               Researchers have fed historical human-written texts into AI detectors and found high AI-probability scores.
@@ -132,7 +132,7 @@ export default function AiWatermarksAndAcademicIntegrityPage() {
               reveals the fundamental limitation of the statistical approach.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Edited AI drafts</p>
             <p className="mt-2">
               When students use AI as a starting point and then significantly rewrite, the resulting text often scores
@@ -172,7 +172,7 @@ export default function AiWatermarksAndAcademicIntegrityPage() {
           submitted text. This can happen even when a student writes all their own content, if they have done any of the
           following:
         </p>
-        <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+        <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
           <ul className="mt-2 list-disc space-y-2 pl-5">
             <li>
               <strong>Copied a source quote from a website</strong> that had invisible formatting characters embedded
@@ -212,7 +212,7 @@ export default function AiWatermarksAndAcademicIntegrityPage() {
           from clearly dishonest to clearly acceptable.
         </p>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Generally accepted AI uses</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Grammar and spell checking</li>
@@ -222,7 +222,7 @@ export default function AiWatermarksAndAcademicIntegrityPage() {
               <li>Getting feedback on argument structure</li>
             </ul>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Commonly prohibited AI uses</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Submitting AI-generated text as your own writing</li>
@@ -246,7 +246,7 @@ export default function AiWatermarksAndAcademicIntegrityPage() {
           If you receive a notification that your work has been flagged by an AI detector and you believe it is a false
           positive, here are the steps to take:
         </p>
-        <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+        <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
           <ol className="list-decimal space-y-2 pl-5">
             <li>
               <strong>Do not panic.</strong> A detection flag is not a finding of academic misconduct. Most institutions

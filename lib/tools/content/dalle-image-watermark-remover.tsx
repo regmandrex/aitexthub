@@ -3,7 +3,7 @@ import type { ToolContent } from './index';
 
 function WriteUp() {
   return (
-    <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+    <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
         <h2>DALL-E Image Watermark Remover: Strip AI Metadata from DALL-E Images Online Free</h2>
         <p>The DALL-E Image Watermark Remover is a free browser-based tool that removes the C2PA provenance metadata, XMP attribution fields, IPTC records, and optional pixel-level watermark signals embedded by OpenAI in DALL-E 3 and DALL-E 4 images. Every image produced through ChatGPT's image feature or the DALL-E API carries multiple layers of machine-readable watermarks. This tool strips those layers, returning a clean image file with identical visual content and no AI provenance metadata.</p>

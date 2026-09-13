@@ -48,7 +48,7 @@ const faqs: FaqItem[] = [
 ];
 
 const writeUp = (
-  <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+  <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
     <div className="prose prose-slate max-w-none">
       <h2>ChatGPT Tone Analyzer: Understand the Emotional Impact of Your Writing</h2>
       <p>The ChatGPT Tone Analyzer is a free online tool that identifies the emotional tone and attitude conveyed in your writing. Tone shapes how readers perceive your message—the same information delivered with different tones creates vastly different impacts. This tool helps you ensure your writing strikes the right emotional note for your audience and purpose.</p>

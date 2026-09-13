@@ -49,7 +49,7 @@ const faqs: FaqItem[] = [
 ];
 
 const writeUp = (
-  <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+  <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
     <div className="prose prose-slate max-w-none">
       <h2>ChatGPT Alt Text Generator: Create Accessible Image Descriptions</h2>
       <p>The ChatGPT Alt Text Generator is a free online tool that creates descriptive, SEO-friendly alt text for images. Alt text (alternative text) is crucial for web accessibility, helping screen readers describe images to visually impaired users while also improving SEO by helping search engines understand image content.</p>

@@ -132,7 +132,7 @@ export function IpSubnetCalculatorTool() {
             onChange={(e) => setIpInput(e.target.value)}
             onKeyDown={handleKeyDown}
             placeholder="192.168.1.0"
-            className="w-full rounded-xl border border-slate-200 bg-white px-3 py-2.5 text-sm text-slate-800 shadow-sm outline-none transition focus:border-brand-300 focus:ring-2 focus:ring-brand-100"
+            className="w-full rounded-xl border-3 border-black bg-white px-3 py-2.5 text-sm text-slate-800 shadow-neo-sm outline-none transition focus:border-brand-300 focus:ring-2 focus:ring-brand-100"
           />
         </div>
         <div className="space-y-1 w-36">
@@ -140,7 +140,7 @@ export function IpSubnetCalculatorTool() {
           <select
             value={cidr}
             onChange={(e) => setCidr(Number(e.target.value))}
-            className="w-full rounded-xl border border-slate-200 bg-white px-3 py-2.5 text-sm text-slate-800 shadow-sm outline-none transition focus:border-brand-300 focus:ring-2 focus:ring-brand-100"
+            className="w-full rounded-xl border-3 border-black bg-white px-3 py-2.5 text-sm text-slate-800 shadow-neo-sm outline-none transition focus:border-brand-300 focus:ring-2 focus:ring-brand-100"
           >
             {Array.from({ length: 33 }, (_, i) => (
               <option key={i} value={i}>/{i}</option>
@@ -180,13 +180,13 @@ export function IpSubnetCalculatorTool() {
             ].map(({ label, value }) => (
               <div
                 key={label}
-                className="flex justify-between gap-3 rounded-xl border border-slate-200 bg-slate-50 px-4 py-3"
+                className="flex justify-between gap-3 rounded-xl border-3 border-black bg-slate-50 px-4 py-3"
               >
                 <span className="text-sm font-medium text-slate-600">{label}</span>
                 <span className="text-sm font-semibold text-slate-900 font-mono">{value}</span>
               </div>
             ))}
-            <div className="sm:col-span-2 rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 space-y-1">
+            <div className="sm:col-span-2 rounded-xl border-3 border-black bg-slate-50 px-4 py-3 space-y-1">
               <span className="text-sm font-medium text-slate-600">Binary Subnet Mask</span>
               <p className="text-sm font-semibold text-slate-900 font-mono break-all">{result.binarySubnetMask}</p>
             </div>
@@ -197,7 +197,7 @@ export function IpSubnetCalculatorTool() {
       {/* CIDR Reference Table */}
       <div className="space-y-2">
         <h3 className="text-base font-semibold text-slate-800">CIDR Reference Table (/8 – /32)</h3>
-        <div className="overflow-x-auto rounded-xl border border-slate-200">
+        <div className="overflow-x-auto rounded-xl border-3 border-black">
           <table className="w-full text-sm">
             <thead>
               <tr className="bg-slate-100 text-slate-700">

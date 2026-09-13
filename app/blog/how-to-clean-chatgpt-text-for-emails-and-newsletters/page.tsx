@@ -28,7 +28,7 @@ export default function CleanChatGPTTextForEmailsAndNewslettersPage() {
         <AdSenseSlot className="w-full" />
       </div>
 
-      <div className="rounded-[28px] border border-slate-200 bg-white/70 p-6 shadow-xl shadow-slate-900/5 backdrop-blur-lg">
+      <div className="rounded-[28px] border-3 border-black bg-white/70 p-6 shadow-neo-lg shadow-slate-900/5 backdrop-blur-lg">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Email-safe AI output</p>
         <h1 className="mt-3 text-3xl font-semibold text-slate-900">How to Clean ChatGPT Text for Emails and Newsletters</h1>
         <p className="mt-2 text-slate-600">
@@ -42,7 +42,7 @@ export default function CleanChatGPTTextForEmailsAndNewslettersPage() {
             { title: 'Rendering', detail: 'Prevent broken spacing and line wrapping' },
             { title: 'Trust', detail: 'Clean layout improves engagement and clicks' },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-100 bg-slate-50 p-4 text-xs text-slate-700">
+            <div key={item.title} className="rounded-2xl border-2 border-black bg-slate-50 p-4 text-xs text-slate-700">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.detail}</p>
             </div>
@@ -80,7 +80,7 @@ export default function CleanChatGPTTextForEmailsAndNewslettersPage() {
               body: 'Many email editors do not support nesting well. Invisible characters inside list items can cause collapsed or malformed lists.',
             },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-200 bg-white/60 p-4 text-sm text-slate-700 shadow-sm">
+            <div key={item.title} className="rounded-2xl border-3 border-black bg-white/60 p-4 text-sm text-slate-700 shadow-neo-sm">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.body}</p>
             </div>
@@ -101,7 +101,7 @@ export default function CleanChatGPTTextForEmailsAndNewslettersPage() {
 
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">Step-by-step: how to clean ChatGPT text for emails</h2>
-        <div className="rounded-2xl border border-brand-100 bg-brand-50 p-5 text-sm text-brand-900 shadow-sm">
+        <div className="rounded-2xl border border-brand-100 bg-brand-50 p-5 text-sm text-brand-900 shadow-neo-sm">
           <p className="font-semibold text-brand-800">Email-safe workflow</p>
           <ol className="mt-2 list-decimal space-y-2 pl-5 text-slate-800">
             <li>
@@ -130,19 +130,19 @@ export default function CleanChatGPTTextForEmailsAndNewslettersPage() {
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">Email-specific formatting best practices</h2>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Keep structure simple</p>
             <p className="mt-2">Emails render best with short paragraphs, minimal headings, flat lists, and limited emphasis.</p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Avoid Unicode punctuation</p>
             <p className="mt-2">Replace curly quotes with straight quotes and long dashes with simple hyphens to improve compatibility.</p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Avoid excessive emojis</p>
             <p className="mt-2">Too many emojis can trigger spam filters and create inconsistent layout. Use sparingly.</p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Always test on mobile</p>
             <p className="mt-2">Mobile clients are more sensitive to wrapping issues and spacing anomalies. Preview before sending.</p>
           </div>
@@ -152,11 +152,11 @@ export default function CleanChatGPTTextForEmailsAndNewslettersPage() {
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">Newsletters vs marketing emails</h2>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/70 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/70 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Editorial newsletters</p>
             <p className="mt-2">Prioritize readability and consistent spacing. Clean text improves flow, engagement, and retention.</p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/70 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/70 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Marketing emails</p>
             <p className="mt-2">
               Pay extra attention to spam-sensitive characters, CTA visibility, and mobile rendering. Cleaning reduces click friction and layout
@@ -210,7 +210,7 @@ export default function CleanChatGPTTextForEmailsAndNewslettersPage() {
             { q: 'Should I avoid AI for emails?', a: 'No. Just clean the output and rebuild formatting intentionally.' },
             { q: 'Do all email clients behave the same?', a: 'No. Outlook is especially unforgiving, and mobile clients have different quirks.' },
           ].map((item) => (
-            <div key={item.q} className="rounded-2xl border border-slate-200 bg-white/60 p-4 text-sm text-slate-700 shadow-sm">
+            <div key={item.q} className="rounded-2xl border-3 border-black bg-white/60 p-4 text-sm text-slate-700 shadow-neo-sm">
               <p className="font-semibold text-slate-900">{item.q}</p>
               <p className="mt-1">{item.a}</p>
             </div>

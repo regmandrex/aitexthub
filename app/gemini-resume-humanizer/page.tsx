@@ -17,7 +17,7 @@ const toolSlug = 'gemini-resume-humanizer';
 
 function createWriteUp() {
   return (
-    <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+    <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
         <h2>Gemini Resume Humanizer: Humanize Resume Content for ATS and Recruiters</h2>
         <p>A Gemini Resume Humanizer is a free online tool that humanizes Gemini-generated resume content so it sounds more natural and performs better with recruiters and ATS (applicant tracking systems). It helps you refine bullet points, summaries, and descriptions so your resume reads authentically and highlights your real experience.</p>

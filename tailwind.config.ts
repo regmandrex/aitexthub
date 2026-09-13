@@ -19,7 +19,20 @@ const config: Config = {
         },
       },
       fontFamily: {
-        sans: ['var(--font-inter)', 'system-ui', 'sans-serif'],
+        sans: ['var(--font-outfit)', 'system-ui', 'sans-serif'],
+      },
+      borderWidth: {
+        3: '3px',
+      },
+      boxShadow: {
+        // Neubrutalist hard-edged offset shadows (no blur) — pair with border-3
+        // border-black and an active/hover translate to fake a "pressed" button.
+        neo: '4px 4px 0 0 #000',
+        'neo-sm': '2px 2px 0 0 #000',
+        'neo-lg': '6px 6px 0 0 #000',
+        // Same treatment for elements on dark surfaces, where a black shadow would vanish.
+        'neo-invert': '4px 4px 0 0 #fff',
+        'neo-invert-sm': '2px 2px 0 0 #fff',
       },
     },
   },

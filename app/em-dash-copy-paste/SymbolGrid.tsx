@@ -38,11 +38,11 @@ function CopyButton({ char, label }: { char: string; label: string }) {
 
 export function SymbolGrid() {
   return (
-    <section className="mt-6 w-full rounded-xl border border-slate-200 bg-white p-4 shadow-sm md:rounded-2xl md:p-6">
+    <section className="mt-6 w-full rounded-xl border-3 border-black bg-white p-4 shadow-neo-sm md:rounded-2xl md:p-6">
       <h2 className="text-base font-semibold text-slate-800 mb-4">Click to Copy — Dashes, Dots & Symbols</h2>
       <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
         {symbols.map((s, i) => (
-          <div key={i} className="flex flex-col gap-2 rounded-lg border border-slate-100 bg-slate-50 p-3">
+          <div key={i} className="flex flex-col gap-2 rounded-lg border-2 border-black bg-slate-50 p-3">
             <div className="flex items-start justify-between gap-2">
               <div className="flex items-center gap-3">
                 <span className="text-2xl font-serif text-slate-900 min-w-[2rem] text-center">{s.char}</span>

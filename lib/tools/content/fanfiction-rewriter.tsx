@@ -4,7 +4,7 @@ import type { ToolContent } from './index';
 
 function WriteUp() {
   return (
-    <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+    <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
         <h2 className="text-2xl font-bold text-slate-900 mb-4">Fanfiction Rewriter: Make AI-Generated Fanfic Sound Human, Pass Detection, and Nail Fandom Voice</h2>
         <p className="text-slate-700 mb-4">The Fanfiction Rewriter is a free online tool that rewrites AI-generated fanfiction to sound authentic, emotionally resonant, and genuinely human. If you have drafted fanfiction with ChatGPT, Claude, Gemini, or any other large language model and the output reads as flat, overly formal, or robotically structured, this tool transforms that draft into writing that fits the AO3 and Wattpad communities you write for. No account required, no word limits on processing, and completely free.</p>

@@ -46,7 +46,7 @@ const faqs: FaqItem[] = [
 ];
 
 const writeUp = (
-  <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+  <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
     <div className="prose prose-slate max-w-none">
       <h2>ChatGPT Cover Letter Humanizer: Create Authentic Job Applications</h2>
       <p>The ChatGPT Cover Letter Humanizer is a free online tool that transforms AI-generated cover letters into more natural, authentic-sounding documents. While AI can help draft cover letters efficiently, the output often sounds generic or robotic. This tool introduces the natural variation and personal voice that makes cover letters feel genuine and compelling.</p>

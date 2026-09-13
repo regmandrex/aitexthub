@@ -79,9 +79,9 @@ export default function ToolWorkbench({
   ];
 
   return (
-    <div className="space-y-5">
-      <div className="grid gap-5 xl:grid-cols-[minmax(0,1fr)_260px_minmax(0,1fr)]">
-        <div className="flex flex-col gap-3">
+    <div className="space-y-6">
+      <div className="grid gap-5 lg:grid-cols-[minmax(0,1fr)_280px]">
+        <div className="flex flex-col gap-4">
           <ToolTextarea
             label={inputLabel ?? 'Input text'}
             placeholder={inputPlaceholder ?? 'Paste or type text here…'}
@@ -90,31 +90,31 @@ export default function ToolWorkbench({
             rows={12}
             labelSecondary={
               <div className="flex items-center gap-2 text-xs font-semibold text-slate-600">
-                <span className="rounded-full border border-slate-200 bg-white px-3 py-1">{stats.words} words</span>
-                <span className="rounded-full border border-teal-100 bg-teal-50 px-3 py-1 text-teal-700">{stats.hidden} hidden</span>
+                <span className="rounded-full border-2 border-black bg-white px-3 py-1">{stats.words} words</span>
+                <span className="rounded-full border-2 border-black bg-teal-50 px-3 py-1 text-teal-700">{stats.hidden} hidden</span>
               </div>
             }
           />
-          <div className="flex flex-wrap items-center gap-3">
+          <div className="flex flex-wrap items-center gap-3 border-t-2 border-black pt-4">
             <button
               type="button"
               onClick={handleProcess}
-              className="inline-flex items-center justify-center rounded-lg bg-teal-700 px-5 py-2.5 text-sm font-bold text-white shadow-sm transition hover:bg-teal-800"
+              className="inline-flex items-center justify-center rounded-full border-3 border-black bg-teal-700 px-6 py-3 text-sm font-black text-white shadow-neo transition-transform hover:translate-y-0.5 hover:shadow-neo-sm active:translate-y-1 active:shadow-none"
             >
               {primaryLabel}
             </button>
             <button
               type="button"
               onClick={handleClear}
-              className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-5 py-2.5 text-sm font-semibold text-slate-700 transition hover:border-slate-300 hover:bg-slate-50"
+              className="inline-flex items-center justify-center rounded-full border-3 border-black bg-white px-5 py-3 text-sm font-bold text-slate-700 shadow-neo-sm transition-transform hover:translate-y-0.5 hover:shadow-none active:translate-y-0.5"
             >
               Clear
             </button>
           </div>
         </div>
-        <aside className="rounded-xl border border-slate-200 bg-slate-50/80 p-4">
+        <aside className="rounded-2xl border-3 border-black bg-slate-50/70 p-4 shadow-neo-sm">
           <div className="flex items-center justify-between gap-3">
-            <h3 className="text-sm font-bold text-slate-950">Cleaning Options</h3>
+            <h3 className="text-sm font-black text-slate-950">Cleaning Options</h3>
             <button
               type="button"
               onClick={() =>
@@ -130,25 +130,30 @@ export default function ToolWorkbench({
                   unicode: true,
                 })
               }
-              className="text-xs font-semibold text-teal-700 hover:text-teal-900"
+              className="text-xs font-bold text-teal-700 hover:text-teal-900"
             >
               Reset All
             </button>
           </div>
-          <div className="mt-4 space-y-3">
+          <p className="mt-2 text-xs leading-5 text-slate-500">
+            Toggle each cleanup rule before you run the cleaner.
+          </p>
+          <div className="mt-4 space-y-2.5">
             {cleanupRules.map(([key, label]) => (
-              <label key={key} className="flex cursor-pointer items-center gap-3 text-sm font-medium text-slate-700">
+              <label key={key} className="flex cursor-pointer items-center gap-3 rounded-xl border border-transparent bg-white/70 px-3 py-2 text-sm font-semibold text-slate-700 transition hover:border-teal-100 hover:bg-white">
                 <input
                   type="checkbox"
                   checked={enabledRules[key]}
                   onChange={(event) => setEnabledRules((current) => ({ ...current, [key]: event.target.checked }))}
-                  className="h-4 w-4 rounded border-slate-300 text-teal-700 focus:ring-teal-600"
+                  className="h-4 w-4 rounded border-2 border-black text-teal-700 accent-teal-700 focus:ring-teal-600"
                 />
                 <span>{label}</span>
               </label>
             ))}
           </div>
         </aside>
+      </div>
+      <div className="border-t-2 border-black pt-5">
         <ToolTextarea
           label={outputLabel ?? 'Output'}
           placeholder={outputPlaceholder ?? 'Cleaned text appears here.'}

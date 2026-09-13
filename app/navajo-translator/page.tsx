@@ -25,7 +25,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
 function createWriteUp() {
   return (
-    <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+    <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
         <h2>Navajo Translator: English to Navajo Translation Online</h2>
         <p>A Navajo translator is an online tool that helps convert English text to Navajo (Diné bizaad)—the language of the Navajo people and one of the most widely spoken Indigenous languages in North America. Whether you are learning Navajo, preparing respectful materials, or exploring the language for educational purposes, an English to Navajo translator lets you type or paste your text and get a version that supports learning and respectful use.</p>

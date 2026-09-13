@@ -28,7 +28,7 @@ export default function FixChatGPTFormattingPage() {
         <AdSenseSlot className="w-full" />
       </div>
 
-      <div className="rounded-[28px] border border-slate-200 bg-white/70 p-6 shadow-xl shadow-slate-900/5 backdrop-blur-lg">
+      <div className="rounded-[28px] border-3 border-black bg-white/70 p-6 shadow-neo-lg shadow-slate-900/5 backdrop-blur-lg">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Clean formatting, stable layouts</p>
         <h1 className="mt-3 text-3xl font-semibold text-slate-900">Fix ChatGPT Formatting</h1>
         <p className="mt-2 text-slate-600">
@@ -42,7 +42,7 @@ export default function FixChatGPTFormattingPage() {
             { title: 'Lists', detail: 'Prevent broken bullets and random renumbering' },
             { title: 'Spacing', detail: 'Normalize line breaks and remove hidden Unicode' },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-100 bg-slate-50 p-4 text-xs text-slate-700">
+            <div key={item.title} className="rounded-2xl border-2 border-black bg-slate-50 p-4 text-xs text-slate-700">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.detail}</p>
             </div>
@@ -61,7 +61,7 @@ export default function FixChatGPTFormattingPage() {
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">The most common ChatGPT formatting problems</h2>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">1. Broken headings</p>
             <p className="mt-2">Symptoms:</p>
             <ul className="list-disc pl-5">
@@ -72,7 +72,7 @@ export default function FixChatGPTFormattingPage() {
             </ul>
             <p className="mt-3">Common causes: markdown artifacts, hidden Unicode, and improper paste mode.</p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">2. Lists that break or merge</p>
             <p className="mt-2">Symptoms:</p>
             <ul className="list-disc pl-5">
@@ -83,7 +83,7 @@ export default function FixChatGPTFormattingPage() {
             </ul>
             <p className="mt-3">Common causes: NBSP, mixed list syntax, and invisible line breaks.</p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">3. Inconsistent paragraph spacing</p>
             <p className="mt-2">Symptoms:</p>
             <ul className="list-disc pl-5">
@@ -93,7 +93,7 @@ export default function FixChatGPTFormattingPage() {
             </ul>
             <p className="mt-3">Common causes: soft line breaks, zero-width characters, and mixed encoding styles.</p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">4. Layout shifts on mobile</p>
             <p className="mt-2">Symptoms:</p>
             <ul className="list-disc pl-5">
@@ -116,7 +116,7 @@ export default function FixChatGPTFormattingPage() {
 
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">Step-by-step: how to fix ChatGPT formatting properly</h2>
-        <div className="rounded-2xl border border-brand-100 bg-brand-50 p-5 text-sm text-brand-900 shadow-sm">
+        <div className="rounded-2xl border border-brand-100 bg-brand-50 p-5 text-sm text-brand-900 shadow-neo-sm">
           <p className="font-semibold text-brand-800">Clean formatting workflow</p>
           <ol className="mt-2 list-decimal space-y-2 pl-5 text-slate-800">
             <li>
@@ -151,7 +151,7 @@ export default function FixChatGPTFormattingPage() {
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">Fixing ChatGPT formatting in WordPress</h2>
         <p className="text-slate-700">WordPress is especially sensitive to hidden Unicode and pasted structure.</p>
-        <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+        <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
           <p className="font-semibold text-slate-900">Best workflow for WordPress</p>
           <ol className="mt-2 list-decimal space-y-1 pl-5">
             <li>Clean text externally.</li>
@@ -184,7 +184,7 @@ export default function FixChatGPTFormattingPage() {
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">Manual fixing vs automated formatting cleanup</h2>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/70 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/70 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Manual fixing</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Full control</li>
@@ -193,7 +193,7 @@ export default function FixChatGPTFormattingPage() {
               <li>Often misses invisible Unicode</li>
             </ul>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/70 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/70 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Automated cleaning</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Removes invisible characters reliably</li>
@@ -227,7 +227,7 @@ export default function FixChatGPTFormattingPage() {
             { q: 'Does cleaning remove content meaning?', a: 'No. Cleaning preserves meaning while improving structure and compatibility.' },
             { q: 'Should formatting be fixed every time?', a: 'If content is public-facing, yes. A repeatable workflow prevents recurring issues.' },
           ].map((item) => (
-            <div key={item.q} className="rounded-2xl border border-slate-200 bg-white/60 p-4 text-sm text-slate-700 shadow-sm">
+            <div key={item.q} className="rounded-2xl border-3 border-black bg-white/60 p-4 text-sm text-slate-700 shadow-neo-sm">
               <p className="font-semibold text-slate-900">{item.q}</p>
               <p className="mt-1">{item.a}</p>
             </div>

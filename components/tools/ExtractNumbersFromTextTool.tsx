@@ -49,7 +49,7 @@ export function ExtractNumbersFromTextTool() {
         />
       </div>
 
-      <div className="rounded-xl border border-slate-200 bg-slate-50 p-4">
+      <div className="rounded-xl border-3 border-black bg-slate-50 p-4">
         <h3 className="text-sm font-semibold text-slate-800">Extraction options</h3>
         <div className="mt-3 space-y-3">
           <label className="flex items-center gap-3 text-sm text-slate-700">
@@ -57,7 +57,7 @@ export function ExtractNumbersFromTextTool() {
               type="checkbox"
               checked={keepOrder}
               onChange={(event) => setKeepOrder(event.target.checked)}
-              className="h-4 w-4 rounded border-slate-300 text-brand-600 focus:ring-brand-500"
+              className="h-4 w-4 rounded border-black text-brand-600 focus:ring-brand-500"
             />
             Keep original order
           </label>
@@ -66,7 +66,7 @@ export function ExtractNumbersFromTextTool() {
               type="checkbox"
               checked={uniqueOnly}
               onChange={(event) => setUniqueOnly(event.target.checked)}
-              className="h-4 w-4 rounded border-slate-300 text-brand-600 focus:ring-brand-500"
+              className="h-4 w-4 rounded border-black text-brand-600 focus:ring-brand-500"
             />
             Unique numbers only
           </label>
@@ -80,7 +80,7 @@ export function ExtractNumbersFromTextTool() {
                   value="comma"
                   checked={delimiter === 'comma'}
                   onChange={() => setDelimiter('comma')}
-                  className="h-4 w-4 border-slate-300 text-brand-600 focus:ring-brand-500"
+                  className="h-4 w-4 border-black text-brand-600 focus:ring-brand-500"
                 />
                 Comma
               </label>
@@ -91,7 +91,7 @@ export function ExtractNumbersFromTextTool() {
                   value="space"
                   checked={delimiter === 'space'}
                   onChange={() => setDelimiter('space')}
-                  className="h-4 w-4 border-slate-300 text-brand-600 focus:ring-brand-500"
+                  className="h-4 w-4 border-black text-brand-600 focus:ring-brand-500"
                 />
                 Space
               </label>
@@ -102,7 +102,7 @@ export function ExtractNumbersFromTextTool() {
                   value="newline"
                   checked={delimiter === 'newline'}
                   onChange={() => setDelimiter('newline')}
-                  className="h-4 w-4 border-slate-300 text-brand-600 focus:ring-brand-500"
+                  className="h-4 w-4 border-black text-brand-600 focus:ring-brand-500"
                 />
                 Newline
               </label>
@@ -123,14 +123,14 @@ export function ExtractNumbersFromTextTool() {
         <button
           type="button"
           onClick={handleClear}
-          className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
+          className="inline-flex items-center justify-center rounded-lg border-3 border-black bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
         >
           Clear
         </button>
         <button
           type="button"
           onClick={handleSample}
-          className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
+          className="inline-flex items-center justify-center rounded-lg border-3 border-black bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
         >
           Load example
         </button>

@@ -203,7 +203,7 @@ const faqs: FaqItem[] = [
 ];
 
 const writeUp = (
-  <section className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm md:p-10 space-y-6">
+  <section className="rounded-2xl border-3 border-black bg-white p-8 shadow-neo-sm md:p-10 space-y-6">
     <div className="space-y-3">
       <h2 className="text-2xl font-semibold text-slate-900">Morse Code Generator: A Complete Guide to Understanding, Using, and Creating Morse Code</h2>
       <p className="text-slate-700">

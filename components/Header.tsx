@@ -47,17 +47,17 @@ export default function Header() {
       <Suspense fallback={null}>
         <DemoModeReader onChange={setDemoMode} />
       </Suspense>
-      <header className="relative z-40 border-b border-stone-200 bg-[#faf8f2]/90 backdrop-blur">
-        <div className="relative mx-auto flex max-w-6xl items-center justify-between px-4 py-3 md:px-6">
+      <header className="sticky top-0 z-40 border-b-3 border-black bg-white/95 backdrop-blur">
+        <div className="relative mx-auto flex max-w-6xl items-center justify-between px-4 py-4 md:px-6">
           <Link
             href="/"
             aria-label="AI Text Cleanup Tools"
             className="flex items-center hover:opacity-90"
           >
             <img
-              src="/brand/ai-text-cleanup-tools-generated.png"
+              src="/brand/ai-text-cleanup-tools-wordmark.png"
               alt="AI Text Cleanup Tools"
-              className="h-12 w-auto max-w-[240px] rounded-xl object-contain [filter:brightness(1.35)_contrast(1.12)] md:h-14 md:max-w-[280px]"
+              className="h-10 w-auto max-w-[220px] object-contain md:h-12 md:max-w-[260px]"
             />
           </Link>
 
@@ -75,7 +75,7 @@ export default function Header() {
                 />
                 <Link
                   href="/account"
-                  className="hidden rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-sm font-medium text-slate-700 hover:bg-slate-50 md:inline-flex"
+                  className="hidden items-center rounded-lg border-3 border-black bg-white px-3 py-1.5 text-sm font-bold text-slate-900 shadow-neo-sm transition-transform hover:translate-y-0.5 hover:shadow-none md:inline-flex"
                 >
                   Dashboard
                 </Link>
@@ -91,7 +91,7 @@ export default function Header() {
                 <Link
                   href="/signup"
                   onClick={() => trackEvent('cta_clicked', { location: 'header_get_started' })}
-                  className="hidden rounded-full bg-slate-950 px-4 py-2 text-sm font-semibold text-white shadow-sm transition hover:bg-teal-800 md:inline-flex"
+                  className="hidden items-center rounded-lg border-3 border-black bg-teal-700 px-4 py-2 text-sm font-bold text-white shadow-neo-sm transition-transform hover:translate-y-0.5 hover:shadow-none active:translate-y-1 md:inline-flex"
                 >
                   Get Started
                 </Link>

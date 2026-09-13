@@ -161,7 +161,7 @@ export default function AIHumanizerProPage() {
       {/* Full-screen overlay to cover footer */}
       <div className="fixed inset-0 z-50 flex flex-col bg-white overflow-y-auto">
         {/* Minimal top bar */}
-        <div className="shrink-0 border-b border-slate-200 bg-white px-4 py-3">
+        <div className="shrink-0 border-b-3 border-black bg-white px-4 py-3">
           <div className="mx-auto flex max-w-6xl items-center justify-between">
             <Link href="/" className="flex items-center gap-2 text-lg font-semibold tracking-tight text-slate-900 hover:text-slate-700">
               AI Text Cleanup Tools <span className="font-normal text-slate-500">AI</span>
@@ -169,7 +169,7 @@ export default function AIHumanizerProPage() {
             <div className="flex items-center gap-3">
               <div className="hidden items-center gap-1.5 sm:flex">
                 {DETECTORS.slice(0, 4).map((d) => (
-                  <span key={d} className="rounded-full border border-slate-200 px-2 py-0.5 text-[9px] font-bold uppercase tracking-widest text-slate-500">
+                  <span key={d} className="rounded-full border-3 border-black px-2 py-0.5 text-[9px] font-bold uppercase tracking-widest text-slate-500">
                     {d}
                   </span>
                 ))}
@@ -190,7 +190,7 @@ export default function AIHumanizerProPage() {
                   <button
                     type="button"
                     onClick={() => { setAuthMode('signup'); setAuthOpen(true); }}
-                    className="rounded-full bg-gradient-to-r from-violet-600 to-purple-700 px-4 py-1.5 text-xs font-bold text-white shadow-sm"
+                    className="rounded-full bg-gradient-to-r from-violet-600 to-purple-700 px-4 py-1.5 text-xs font-bold text-white shadow-neo-sm"
                   >
                     Get Started
                   </button>
@@ -217,7 +217,7 @@ export default function AIHumanizerProPage() {
 
             {/* Mode selector + EST time */}
             <div className="mb-4 flex flex-wrap items-center justify-between gap-2">
-              <div className="inline-flex flex-1 rounded-lg border border-slate-200 bg-white p-0.5 shadow-sm sm:flex-none">
+              <div className="inline-flex flex-1 rounded-lg border-3 border-black bg-white p-0.5 shadow-neo-sm sm:flex-none">
                 {MODES.map((m) => (
                   <button
                     key={m.id}
@@ -225,7 +225,7 @@ export default function AIHumanizerProPage() {
                     onClick={() => setMode(m.id as typeof mode)}
                     className={`flex-1 rounded-md px-3 py-1.5 text-[10px] font-bold uppercase tracking-wider transition sm:flex-none sm:px-4 sm:text-[11px] ${
                       mode === m.id
-                        ? 'bg-slate-900 text-white shadow-sm'
+                        ? 'bg-slate-900 text-white shadow-neo-sm'
                         : 'text-slate-500 hover:text-slate-900'
                     }`}
                   >
@@ -239,10 +239,10 @@ export default function AIHumanizerProPage() {
             </div>
 
             {/* Panels */}
-            <div className="grid gap-0 overflow-hidden rounded-2xl border border-slate-200 shadow-sm md:grid-cols-2">
+            <div className="grid gap-0 overflow-hidden rounded-2xl border-3 border-black shadow-neo-sm md:grid-cols-2">
               {/* Input */}
               <div className="flex flex-col bg-white">
-                <div className="flex items-center justify-between border-b border-slate-200 px-4 py-2.5">
+                <div className="flex items-center justify-between border-b-3 border-black px-4 py-2.5">
                   <span className="text-[11px] font-bold uppercase tracking-widest text-slate-500">Input</span>
                   <span className="text-[11px] font-bold tabular-nums text-slate-400">{wordCount} words</span>
                 </div>
@@ -255,8 +255,8 @@ export default function AIHumanizerProPage() {
               </div>
 
               {/* Output */}
-              <div className="flex flex-col border-t border-slate-200 bg-slate-50/80 md:border-l md:border-t-0">
-                <div className="flex items-center justify-between border-b border-slate-200 px-4 py-2.5">
+              <div className="flex flex-col border-t-3 border-black bg-slate-50/80 md:border-l md:border-t-0">
+                <div className="flex items-center justify-between border-b-3 border-black px-4 py-2.5">
                   <span className="text-[11px] font-bold uppercase tracking-widest text-slate-500">Output</span>
                   {isLocked ? (
                     <button
@@ -301,7 +301,7 @@ export default function AIHumanizerProPage() {
                                 <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-violet-400" />
                               </span>
                             ) : (
-                              <span className="h-4 w-4 shrink-0 rounded-full border border-slate-200" />
+                              <span className="h-4 w-4 shrink-0 rounded-full border-3 border-black" />
                             )}
                             <span className={i <= stepIndex ? 'text-slate-800' : 'text-slate-400'}>{s}</span>
                           </li>
@@ -326,7 +326,7 @@ export default function AIHumanizerProPage() {
                         ))}
                       </div>
                       <p className="sr-only">Humanized result hidden. Upgrade to Pro to view it.</p>
-                      <div className="mt-4 rounded-xl border border-violet-200 bg-white/90 p-4 text-center shadow-sm">
+                      <div className="mt-4 rounded-xl border border-violet-200 bg-white/90 p-4 text-center shadow-neo-sm">
                         <p className="text-sm font-bold text-slate-900">Your humanized text is ready</p>
                         <p className="mt-1 text-xs text-slate-500">
                           Upgrade to Pro to reveal the full rewrite, copy it, and run up to 50,000 words.
@@ -355,7 +355,7 @@ export default function AIHumanizerProPage() {
                 <button
                   type="button"
                   onClick={() => setShowHistory(!showHistory)}
-                  className="inline-flex flex-1 items-center justify-center gap-1.5 rounded-lg border border-slate-200 bg-white px-4 py-2.5 text-xs font-bold uppercase tracking-wider text-slate-600 transition hover:bg-slate-50 sm:flex-none"
+                  className="inline-flex flex-1 items-center justify-center gap-1.5 rounded-lg border-3 border-black bg-white px-4 py-2.5 text-xs font-bold uppercase tracking-wider text-slate-600 transition hover:bg-slate-50 sm:flex-none"
                 >
                   <svg className="h-3.5 w-3.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -366,7 +366,7 @@ export default function AIHumanizerProPage() {
                   type="button"
                   onClick={() => { setInput(''); setOutput(''); setLockedTease(false); }}
                   disabled={!input && !output && !lockedTease}
-                  className="flex-1 rounded-lg border border-slate-200 bg-white px-4 py-2.5 text-xs font-bold uppercase tracking-wider text-slate-600 transition hover:bg-slate-50 disabled:opacity-40 sm:flex-none"
+                  className="flex-1 rounded-lg border-3 border-black bg-white px-4 py-2.5 text-xs font-bold uppercase tracking-wider text-slate-600 transition hover:bg-slate-50 disabled:opacity-40 sm:flex-none"
                 >
                   Clear
                 </button>
@@ -376,7 +376,7 @@ export default function AIHumanizerProPage() {
                 type="button"
                 onClick={handleHumanize}
                 disabled={!input.trim() || isProcessing}
-                className="inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-violet-600 to-purple-700 px-8 py-3.5 text-sm font-bold text-white shadow-lg shadow-violet-200 transition hover:shadow-xl active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-50 sm:py-3"
+                className="inline-flex items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-violet-600 to-purple-700 px-8 py-3.5 text-sm font-bold text-white shadow-neo-lg shadow-violet-200 transition hover:shadow-neo-lg active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-50 sm:py-3"
               >
                 {isProcessing ? (
                   <>
@@ -396,8 +396,8 @@ export default function AIHumanizerProPage() {
 
             {/* History panel */}
             {showHistory && (
-              <div className="mt-4 rounded-xl border border-slate-200 bg-white shadow-sm">
-                <div className="flex items-center justify-between border-b border-slate-100 px-4 py-2.5">
+              <div className="mt-4 rounded-xl border-3 border-black bg-white shadow-neo-sm">
+                <div className="flex items-center justify-between border-b-2 border-black px-4 py-2.5">
                   <span className="text-[11px] font-bold uppercase tracking-widest text-slate-500">History</span>
                   <span className="text-[10px] text-slate-400">{history.length} items (this session)</span>
                 </div>
@@ -434,7 +434,7 @@ export default function AIHumanizerProPage() {
         </div>
 
         {/* Minimal bottom bar */}
-        <div className="shrink-0 border-t border-slate-200 bg-white px-4 py-2.5 text-center text-[10px] text-slate-400">
+        <div className="shrink-0 border-t-3 border-black bg-white px-4 py-2.5 text-center text-[10px] text-slate-400">
           &copy; {new Date().getFullYear()} AI Text Cleanup Tools ·{' '}
           <Link href="/terms-of-service" className="hover:underline">Terms</Link> ·{' '}
           <Link href="/privacy-policy" className="hover:underline">Privacy</Link> ·{' '}

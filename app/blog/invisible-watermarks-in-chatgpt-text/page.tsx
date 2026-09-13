@@ -23,7 +23,7 @@ export default function InvisibleWatermarksInChatGptTextPage() {
       <div className="ad-slot"><AdSenseSlot className="w-full" /></div>
 
       {/* Hero card */}
-      <div className="rounded-[28px] border border-slate-200 bg-white/70 p-6 shadow-xl shadow-slate-900/5 backdrop-blur-lg">
+      <div className="rounded-[28px] border-3 border-black bg-white/70 p-6 shadow-neo-lg shadow-slate-900/5 backdrop-blur-lg">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Invisible Characters &amp; Watermarks</p>
         <h1 className="mt-3 text-3xl font-semibold text-slate-900">Invisible Watermarks in ChatGPT Text</h1>
         <p className="mt-2 text-slate-600">
@@ -37,7 +37,7 @@ export default function InvisibleWatermarksInChatGptTextPage() {
             { title: 'Byte-order marks', detail: 'U+FEFF: encoding artifacts from AI output pipelines' },
             { title: 'Soft hyphens', detail: 'U+00AD: invisible line-break hints in AI text' },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-100 bg-slate-50 p-4 text-xs text-slate-700">
+            <div key={item.title} className="rounded-2xl border-2 border-black bg-slate-50 p-4 text-xs text-slate-700">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.detail}</p>
             </div>
@@ -57,7 +57,7 @@ export default function InvisibleWatermarksInChatGptTextPage() {
           The most common zero-width characters you will encounter in AI-generated text are:
         </p>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">U+200B &mdash; Zero-Width Space</p>
             <p className="mt-2">
               A space character with zero width. In typography, it is used to mark potential line-break points in text
@@ -65,7 +65,7 @@ export default function InvisibleWatermarksInChatGptTextPage() {
               byproduct of how the model processes token boundaries.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">U+200C &mdash; Zero-Width Non-Joiner</p>
             <p className="mt-2">
               Prevents adjacent characters from joining into a ligature. Used in Farsi, Arabic, and other scripts.
@@ -73,7 +73,7 @@ export default function InvisibleWatermarksInChatGptTextPage() {
               multiple scripts and sometimes leaves these characters in outputs.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">U+200D &mdash; Zero-Width Joiner</p>
             <p className="mt-2">
               The opposite of the non-joiner: forces adjacent characters to join. Used in emoji sequences (e.g., family
@@ -81,7 +81,7 @@ export default function InvisibleWatermarksInChatGptTextPage() {
               outputs.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">U+FEFF &mdash; Byte Order Mark</p>
             <p className="mt-2">
               Originally used to indicate byte order in Unicode-encoded files. Also called &quot;zero-width no-break
@@ -111,7 +111,7 @@ export default function InvisibleWatermarksInChatGptTextPage() {
           training. This is not a deliberate design choice by OpenAI &mdash; it is an emergent property of training on
           real-world text.
         </p>
-        <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+        <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
           <p className="font-semibold text-slate-900">Additional sources of invisible characters in AI text</p>
           <ul className="mt-2 list-disc space-y-2 pl-5">
             <li>
@@ -164,7 +164,7 @@ export default function InvisibleWatermarksInChatGptTextPage() {
           text. There are several approaches, ranging from manual to fully automated.
         </p>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Method 1: Online detection tools</p>
             <p className="mt-2">
               The <Link href="/invisible-character-detector">Invisible Character Detector</Link> scans your pasted text
@@ -172,7 +172,7 @@ export default function InvisibleWatermarksInChatGptTextPage() {
               code point, and offers to remove them. This is the fastest and most reliable method.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Method 2: ChatGPT watermark detector</p>
             <p className="mt-2">
               The <Link href="/chatgpt-watermark-detector">ChatGPT Watermark Detector</Link> specifically scans for
@@ -180,7 +180,7 @@ export default function InvisibleWatermarksInChatGptTextPage() {
               overall assessment of whether your text has AI artifacts.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Method 3: Text editor search</p>
             <p className="mt-2">
               Some text editors (VS Code, Sublime Text, Notepad++) can display or search for specific Unicode characters
@@ -188,7 +188,7 @@ export default function InvisibleWatermarksInChatGptTextPage() {
               This is effective but requires knowing which characters to search for.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Method 4: Hexadecimal inspection</p>
             <p className="mt-2">
               For technical users, opening a file in a hex editor will show all bytes including invisible characters.
@@ -204,7 +204,7 @@ export default function InvisibleWatermarksInChatGptTextPage() {
         <p className="text-slate-700">
           Once you have identified invisible characters in your text, removing them is straightforward with the right tools.
         </p>
-        <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+        <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
           <p className="font-semibold text-slate-900">Removal workflow</p>
           <ol className="mt-2 list-decimal space-y-2 pl-5">
             <li>
@@ -234,7 +234,7 @@ export default function InvisibleWatermarksInChatGptTextPage() {
           Beyond detection concerns, invisible characters in published content cause several practical problems:
         </p>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Search engine keyword parsing</p>
             <p className="mt-2">
               A zero-width space inserted within a keyword splits it into two tokens. Search engines that tokenize
@@ -242,14 +242,14 @@ export default function InvisibleWatermarksInChatGptTextPage() {
               effectively disappears from Google&apos;s index of your page.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Unexpected copy-paste behavior</p>
             <p className="mt-2">
               When readers copy your content, invisible characters copy with it. If they paste into a form, database,
               or code environment, these characters can cause validation errors, search failures, or corrupted records.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Word processor rendering issues</p>
             <p className="mt-2">
               Zero-width characters can cause unexpected line breaks, prevent spell-check from recognizing words,
@@ -257,7 +257,7 @@ export default function InvisibleWatermarksInChatGptTextPage() {
               inconsistently across different applications.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">AI detection scoring</p>
             <p className="mt-2">
               Tools that scan Unicode profiles will find these characters and include them in their AI probability

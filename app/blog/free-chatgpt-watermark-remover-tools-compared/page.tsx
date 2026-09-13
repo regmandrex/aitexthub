@@ -23,7 +23,7 @@ export default function FreeChatGptWatermarkRemoverToolsComparedPage() {
       <div className="ad-slot"><AdSenseSlot className="w-full" /></div>
 
       {/* Hero card */}
-      <div className="rounded-[28px] border border-slate-200 bg-white/70 p-6 shadow-xl shadow-slate-900/5 backdrop-blur-lg">
+      <div className="rounded-[28px] border-3 border-black bg-white/70 p-6 shadow-neo-lg shadow-slate-900/5 backdrop-blur-lg">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Tool Comparison 2026</p>
         <h1 className="mt-3 text-3xl font-semibold text-slate-900">Free ChatGPT Watermark Remover Tools Compared</h1>
         <p className="mt-2 text-slate-600">
@@ -37,7 +37,7 @@ export default function FreeChatGptWatermarkRemoverToolsComparedPage() {
             { title: 'Approach comparison', detail: 'Browser-based vs. server-based vs. API tools' },
             { title: 'Privacy considerations', detail: 'Where your text goes when you paste it' },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-100 bg-slate-50 p-4 text-xs text-slate-700">
+            <div key={item.title} className="rounded-2xl border-2 border-black bg-slate-50 p-4 text-xs text-slate-700">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.detail}</p>
             </div>
@@ -72,7 +72,7 @@ export default function FreeChatGptWatermarkRemoverToolsComparedPage() {
           content into a watermark remover, does it stay in your browser or does it travel to a server?
         </p>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Browser-based processing (Privacy-safe)</p>
             <p className="mt-2">
               The tool runs entirely in JavaScript in your browser. Your text is never transmitted to any server.
@@ -81,7 +81,7 @@ export default function FreeChatGptWatermarkRemoverToolsComparedPage() {
             </p>
             <p className="mt-3 font-medium text-green-700">Best for: sensitive documents, confidential content, any content you do not want to share</p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Server-based processing (Privacy risk)</p>
             <p className="mt-2">
               Your text is sent to the tool&apos;s server, processed there, and returned to you. The server operator
@@ -105,7 +105,7 @@ export default function FreeChatGptWatermarkRemoverToolsComparedPage() {
           trade-offs.
         </p>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Approach 1: Pure Unicode removers</p>
             <p className="mt-2">
               These tools focus exclusively on invisible Unicode characters. They scan the raw string, identify
@@ -118,7 +118,7 @@ export default function FreeChatGptWatermarkRemoverToolsComparedPage() {
               <li>Best for: Technical users who want targeted cleaning</li>
             </ul>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Approach 2: Comprehensive text cleaners</p>
             <p className="mt-2">
               These tools handle multiple types of artifacts: invisible characters, extra whitespace, em dash
@@ -131,7 +131,7 @@ export default function FreeChatGptWatermarkRemoverToolsComparedPage() {
               <li>Best for: General content cleanup workflows</li>
             </ul>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Approach 3: AI humanizers</p>
             <p className="mt-2">
               These tools use their own AI to rewrite your AI-generated text in a more human-like style. They
@@ -144,7 +144,7 @@ export default function FreeChatGptWatermarkRemoverToolsComparedPage() {
               <li>Best for: Content where AI detection score reduction is the priority</li>
             </ul>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Approach 4: Find-and-replace utilities</p>
             <p className="mt-2">
               Simple regex-based tools that search for specific Unicode values and replace them with nothing.
@@ -167,7 +167,7 @@ export default function FreeChatGptWatermarkRemoverToolsComparedPage() {
         <p className="text-slate-700">
           When evaluating any watermark remover tool, use this checklist to assess whether it is worth your trust.
         </p>
-        <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+        <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
           <ul className="list-disc space-y-2 pl-5">
             <li>
               <strong>Browser-local processing:</strong> Confirm that your text is not transmitted to any server.
@@ -206,7 +206,7 @@ export default function FreeChatGptWatermarkRemoverToolsComparedPage() {
           what is found and removed).
         </p>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900"><Link href="/chatgpt-watermark-remover">ChatGPT Watermark Remover</Link></p>
             <p className="mt-2">
               Removes all invisible Unicode characters from AI-generated text. Processes entirely in browser.
@@ -214,21 +214,21 @@ export default function FreeChatGptWatermarkRemoverToolsComparedPage() {
               common AI text artifacts.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900"><Link href="/invisible-character-detector">Invisible Character Detector</Link></p>
             <p className="mt-2">
               Scans text and shows a detailed breakdown of every invisible character found: its Unicode code point,
               position in the text, and type. Use this before and after removing to verify the cleaning was complete.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900"><Link href="/">AI Text Cleanup Tools (main)</Link></p>
             <p className="mt-2">
               The comprehensive text cleaner: handles invisible characters, extra whitespace, em dash normalization,
               smart quote standardization, and other common AI text artifacts in one pass.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900"><Link href="/chatgpt-watermark-detector">ChatGPT Watermark Detector</Link></p>
             <p className="mt-2">
               Analyzes text for AI watermark indicators and invisible characters. Shows what is found before you
@@ -243,7 +243,7 @@ export default function FreeChatGptWatermarkRemoverToolsComparedPage() {
         <p className="text-slate-700">
           For most users cleaning ChatGPT text, this is the most efficient workflow:
         </p>
-        <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+        <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
           <ol className="list-decimal space-y-2 pl-5">
             <li>
               <strong>Detect first:</strong> Paste your text into the <Link href="/chatgpt-watermark-detector">ChatGPT Watermark Detector</Link> to

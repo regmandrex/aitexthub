@@ -127,7 +127,7 @@ export function TextToSpeechTool() {
       <div className="space-y-1">
         <label className="text-sm font-semibold text-slate-800">Voice</label>
         <select
-          className="w-full rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm text-slate-800 shadow-sm outline-none focus:border-brand-300 focus:ring-2 focus:ring-brand-100"
+          className="w-full rounded-xl border-3 border-black bg-white px-3 py-2 text-sm text-slate-800 shadow-neo-sm outline-none focus:border-brand-300 focus:ring-2 focus:ring-brand-100"
           value={selectedVoice}
           onChange={(e) => setSelectedVoice(e.target.value)}
         >
@@ -219,7 +219,7 @@ export function TextToSpeechTool() {
           type="button"
           onClick={handlePause}
           disabled={!isSpeaking || isPaused}
-          className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50 disabled:opacity-40 disabled:cursor-not-allowed"
+          className="inline-flex items-center justify-center rounded-lg border-3 border-black bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50 disabled:opacity-40 disabled:cursor-not-allowed"
         >
           Pause
         </button>
@@ -227,7 +227,7 @@ export function TextToSpeechTool() {
           type="button"
           onClick={handleResume}
           disabled={!isPaused}
-          className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50 disabled:opacity-40 disabled:cursor-not-allowed"
+          className="inline-flex items-center justify-center rounded-lg border-3 border-black bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50 disabled:opacity-40 disabled:cursor-not-allowed"
         >
           Resume
         </button>
@@ -235,7 +235,7 @@ export function TextToSpeechTool() {
           type="button"
           onClick={handleStop}
           disabled={!isSpeaking && !isPaused}
-          className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50 disabled:opacity-40 disabled:cursor-not-allowed"
+          className="inline-flex items-center justify-center rounded-lg border-3 border-black bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50 disabled:opacity-40 disabled:cursor-not-allowed"
         >
           Stop
         </button>

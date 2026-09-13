@@ -47,7 +47,7 @@ const faqs: FaqItem[] = [
 ];
 
 const writeUp = (
-  <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+  <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
     <div className="prose prose-slate max-w-none">
       <h2>ChatGPT Email Humanizer: Make Your Emails Sound More Human</h2>
       <p>The ChatGPT Email Humanizer is a free online tool that transforms AI-generated emails into more natural, human-sounding messages. AI-assisted email writing can be efficient, but the output often sounds robotic or generic. This tool introduces the natural variation and personal voice that makes emails feel authentic and engaging.</p>

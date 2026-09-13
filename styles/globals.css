@@ -6,9 +6,14 @@
   color-scheme: light;
 }
 
-html,
+html {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
 body {
   overflow-x: hidden;
+  overflow-y: visible;
 }
 
 /* Prevent AdSense from causing layout shifts - maintain stable container heights */

@@ -54,17 +54,17 @@ export function CssGridGeneratorTool() {
       <div className="grid grid-cols-2 gap-3">
         <div>
           <label className="block text-xs font-medium text-slate-600 mb-1">grid-template-columns</label>
-          <input type="text" value={colTemplate} onChange={e => setColTemplate(e.target.value)} className="w-full rounded-lg border border-slate-200 px-3 py-2 text-sm font-mono focus:outline-none focus:ring-2 focus:ring-blue-500" />
+          <input type="text" value={colTemplate} onChange={e => setColTemplate(e.target.value)} className="w-full rounded-lg border-3 border-black px-3 py-2 text-sm font-mono focus:outline-none focus:ring-2 focus:ring-blue-500" />
         </div>
         <div>
           <label className="block text-xs font-medium text-slate-600 mb-1">grid-template-rows</label>
-          <input type="text" value={rowTemplate} onChange={e => setRowTemplate(e.target.value)} className="w-full rounded-lg border border-slate-200 px-3 py-2 text-sm font-mono focus:outline-none focus:ring-2 focus:ring-blue-500" />
+          <input type="text" value={rowTemplate} onChange={e => setRowTemplate(e.target.value)} className="w-full rounded-lg border-3 border-black px-3 py-2 text-sm font-mono focus:outline-none focus:ring-2 focus:ring-blue-500" />
         </div>
       </div>
 
       <div>
         <label className="block text-sm font-medium text-slate-700 mb-2">Preview</label>
-        <div className="rounded-lg border border-slate-200 bg-slate-100 p-4">
+        <div className="rounded-lg border-3 border-black bg-slate-100 p-4">
           <div style={{ display: 'grid', gridTemplateColumns: colTemplate, gridTemplateRows: rowTemplate, columnGap: `${colGap}px`, rowGap: `${rowGap}px` }}>
             {Array.from({ length: cols * rows }, (_, i) => (
               <div key={i} className="bg-blue-500 text-white rounded text-xs font-medium flex items-center justify-center" style={{ height: 48 }}>{i + 1}</div>
@@ -78,7 +78,7 @@ export function CssGridGeneratorTool() {
           <label className="text-sm font-medium text-slate-700">CSS</label>
           <button onClick={copy} className={`px-3 py-1 rounded text-xs font-medium transition-colors ${copied ? 'bg-green-500 text-white' : 'bg-blue-600 hover:bg-blue-700 text-white'}`}>{copied ? '✓ Copied!' : 'Copy'}</button>
         </div>
-        <pre className="rounded-lg border border-slate-200 bg-slate-50 px-3 py-2 text-xs font-mono">{css}</pre>
+        <pre className="rounded-lg border-3 border-black bg-slate-50 px-3 py-2 text-xs font-mono">{css}</pre>
       </div>
     </div>
   );

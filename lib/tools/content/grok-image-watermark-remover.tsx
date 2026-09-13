@@ -3,7 +3,7 @@ import type { ToolContent } from './index';
 
 function WriteUp() {
   return (
-    <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+    <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
         <h2 className="text-2xl font-bold text-slate-900 mb-4">Grok Image Watermark Remover: Strip xAI Aurora AI Watermarks from Images Free Online</h2>
         <p className="text-slate-700 mb-4">The Grok Image Watermark Remover is a free, browser-based tool that strips and removes the AI watermarks, provenance metadata, and embedded identification signals that Grok — xAI&apos;s Aurora-powered image generation system — embeds in every image it produces. Grok embeds watermarks at multiple layers: cryptographically signed C2PA provenance manifests, XMP and IPTC metadata fields identifying xAI as the generating organization, and in many cases imperceptible pixel-level signals woven directly into the image data. This tool addresses all of those layers, giving you a metadata-clean file with fully preserved visual quality.</p>

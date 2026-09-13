@@ -233,7 +233,7 @@ export default function CleanMyComputerWithChatGPTPage() {
         <AdSenseSlot className="w-full" />
       </div>
 
-      <div className="rounded-[28px] border border-slate-200 bg-white/70 p-6 shadow-xl shadow-slate-900/5 backdrop-blur-lg">
+      <div className="rounded-[28px] border-3 border-black bg-white/70 p-6 shadow-neo-lg shadow-slate-900/5 backdrop-blur-lg">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">
           PC maintenance with an AI assistant
         </p>
@@ -253,14 +253,14 @@ export default function CleanMyComputerWithChatGPTPage() {
           is true of the chat window in your browser and false of the tools most people now reach for.
         </p>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/70 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/70 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Advisory mode — ChatGPT in a browser</p>
             <p className="mt-2">
               No file access. You describe symptoms, paste output, and run every command yourself. Best for understanding what a
               process or folder is, interpreting Task Manager, and deciding what is safe to remove.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/70 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/70 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Agentic mode — Codex, Claude Code, Cursor</p>
             <p className="mt-2">
               Runs locally with real terminal and file access. It can scan directories, report sizes, and execute cleanup commands
@@ -341,7 +341,7 @@ export default function CleanMyComputerWithChatGPTPage() {
           they give the model something it cannot observe on its own, and ask for a diagnosis rather than a listicle.
         </p>
 
-        <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+        <div className="rounded-2xl border-3 border-black bg-slate-50 p-5">
           <p className="text-xs font-semibold uppercase tracking-wider text-slate-500">Advisory — diagnose a slow machine</p>
           <p className="mt-2 font-mono text-sm text-slate-800">
             I&rsquo;m on [Windows 11 23H2]. Task Manager at idle shows memory [85%], CPU [4%], disk [3%]. I have [8GB] RAM and
@@ -350,7 +350,7 @@ export default function CleanMyComputerWithChatGPTPage() {
           </p>
         </div>
 
-        <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+        <div className="rounded-2xl border-3 border-black bg-slate-50 p-5">
           <p className="text-xs font-semibold uppercase tracking-wider text-slate-500">Advisory — identify startup entries</p>
           <p className="mt-2 font-mono text-sm text-slate-800">
             Here are my Task Manager startup entries with their impact ratings: [paste list]. For each, tell me whether it&rsquo;s a
@@ -359,7 +359,7 @@ export default function CleanMyComputerWithChatGPTPage() {
           </p>
         </div>
 
-        <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+        <div className="rounded-2xl border-3 border-black bg-slate-50 p-5">
           <p className="text-xs font-semibold uppercase tracking-wider text-slate-500">Agentic — find what is eating the disk</p>
           <p className="mt-2 font-mono text-sm text-slate-800">
             Scan my system drive and list the 20 largest directories with their sizes. For each, tell me what created it and
@@ -367,7 +367,7 @@ export default function CleanMyComputerWithChatGPTPage() {
           </p>
         </div>
 
-        <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5">
+        <div className="rounded-2xl border-3 border-black bg-slate-50 p-5">
           <p className="text-xs font-semibold uppercase tracking-wider text-slate-500">Agentic — execute cleanup with a dry run</p>
           <p className="mt-2 font-mono text-sm text-slate-800">
             Based on that scan, write a cleanup script targeting only the items we agreed on. Include a dry-run mode that prints

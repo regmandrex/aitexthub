@@ -56,10 +56,10 @@ export default function RefundPolicyPage() {
   return (
     <div className="bg-white overflow-x-hidden">
       {/* HERO */}
-      <section className="relative overflow-hidden border-b border-slate-200 bg-gradient-to-b from-violet-50 via-white to-white">
+      <section className="relative overflow-hidden border-b-3 border-black bg-gradient-to-b from-violet-50 via-white to-white">
         <div className="pointer-events-none absolute -top-32 left-1/2 h-80 w-[640px] -translate-x-1/2 rounded-full bg-violet-200/40 blur-3xl" />
         <div className="relative mx-auto max-w-3xl px-4 py-12 text-center md:py-16">
-          <span className="inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-violet-600 to-purple-700 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-white shadow-sm shadow-violet-200">
+          <span className="inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-violet-600 to-purple-700 px-3 py-1 text-[11px] font-semibold uppercase tracking-wider text-white shadow-neo-sm shadow-violet-200">
             Legal
           </span>
           <h1 className="mt-4 text-3xl font-bold tracking-tight text-slate-900 md:text-5xl">
@@ -75,10 +75,10 @@ export default function RefundPolicyPage() {
 
       <div className="mx-auto max-w-3xl px-4 py-12 md:py-16">
         {/* Banner */}
-        <div className="relative overflow-hidden rounded-2xl border border-violet-200 bg-gradient-to-br from-violet-50 via-white to-purple-50 p-6 shadow-sm">
+        <div className="relative overflow-hidden rounded-2xl border border-violet-200 bg-gradient-to-br from-violet-50 via-white to-purple-50 p-6 shadow-neo-sm">
           <div className="pointer-events-none absolute -right-10 -top-10 h-32 w-32 rounded-full bg-violet-200/40 blur-2xl" />
           <div className="relative flex items-start gap-4">
-            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-violet-600 to-purple-700 text-white shadow-md shadow-violet-200">
+            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-violet-600 to-purple-700 text-white shadow-neo shadow-violet-200">
               <svg className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
@@ -130,7 +130,7 @@ export default function RefundPolicyPage() {
             {NO_REFUND.map((item) => (
               <div
                 key={item.title}
-                className="rounded-xl border border-slate-200 bg-white p-4 transition hover:border-rose-200 hover:shadow-sm"
+                className="rounded-xl border-3 border-black bg-white p-4 transition hover:border-rose-200 hover:shadow-neo-sm"
               >
                 <div className="flex items-start gap-2.5">
                   <span className="mt-0.5 flex h-4 w-4 shrink-0 items-center justify-center rounded-full bg-rose-100 text-rose-600">
@@ -217,8 +217,8 @@ export default function RefundPolicyPage() {
                 body: <>We aim to respond within <strong className="text-slate-900">3–5 business days</strong>. Approved refunds process in 5–10 business days, and may take an additional 5–10 business days to appear on your statement depending on your bank.</>,
               },
             ].map((s) => (
-              <li key={s.step} className="flex gap-4 rounded-xl border border-slate-200 bg-white p-4">
-                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-violet-600 to-purple-700 text-sm font-black text-white shadow-sm">
+              <li key={s.step} className="flex gap-4 rounded-xl border-3 border-black bg-white p-4">
+                <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-violet-600 to-purple-700 text-sm font-black text-white shadow-neo-sm">
                   {s.step}
                 </span>
                 <div className="flex-1">
@@ -236,7 +236,7 @@ export default function RefundPolicyPage() {
           <p className="mt-2 text-sm text-slate-600">Two different actions with two very different outcomes:</p>
 
           <div className="mt-5 grid gap-4 md:grid-cols-2">
-            <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+            <div className="rounded-2xl border-3 border-black bg-white p-5 shadow-neo-sm">
               <div className="flex items-center gap-2">
                 <span className="rounded-full bg-violet-100 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-violet-700">
                   Cancellation
@@ -249,7 +249,7 @@ export default function RefundPolicyPage() {
                 <li className="flex items-start gap-2"><span className="text-slate-300">×</span> No refund for remaining time</li>
               </ul>
             </div>
-            <div className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+            <div className="rounded-2xl border-3 border-black bg-white p-5 shadow-neo-sm">
               <div className="flex items-center gap-2">
                 <span className="rounded-full bg-rose-100 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-rose-700">
                   Refund
@@ -292,12 +292,12 @@ export default function RefundPolicyPage() {
         </section>
 
         {/* Contact CTA */}
-        <section className="mt-12 overflow-hidden rounded-2xl bg-gradient-to-br from-violet-700 via-purple-700 to-indigo-800 p-8 text-center text-white shadow-xl shadow-violet-200">
+        <section className="mt-12 overflow-hidden rounded-2xl bg-gradient-to-br from-violet-700 via-purple-700 to-indigo-800 p-8 text-center text-white shadow-neo-lg shadow-violet-200">
           <h2 className="text-xl font-bold md:text-2xl">Questions about a charge?</h2>
           <p className="mt-2 text-sm text-violet-100">We respond to billing inquiries within 3–5 business days.</p>
           <Link
             href="mailto:support@aitextcleanuptools.com"
-            className="mt-5 inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-bold text-violet-700 shadow-lg transition hover:bg-violet-50"
+            className="mt-5 inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-bold text-violet-700 shadow-neo-lg transition hover:bg-violet-50"
           >
             <svg className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />

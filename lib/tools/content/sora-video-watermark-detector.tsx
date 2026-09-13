@@ -3,7 +3,7 @@ import type { ToolContent } from './index';
 
 function WriteUp() {
   return (
-    <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+    <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
         <h2>Sora Video Watermark Detector: Detect OpenAI Sora AI Watermarks from Videos Free Online</h2>
         <p>The Sora Video Watermark Detector is a free online tool that detects and analyzes the AI watermarks, provenance metadata, and embedded identification signals that OpenAI Sora embeds in generated videos. OpenAI Sora embeds both metadata-based watermarks (C2PA manifests, XMP fields) and in some implementations imperceptible pixel-level signals, to identify AI-generated videos for content authenticity and regulatory compliance purposes. This tool analyzes those layers and provides a detailed report on what AI provenance signals are embedded in your file.</p>

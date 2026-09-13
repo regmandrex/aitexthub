@@ -52,7 +52,7 @@ const pageFaqs: FaqItem[] = [
 ];
 
 function createWriteUp() {
-  return <section className="mt-10 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6"><div className="prose prose-slate max-w-none">
+  return <section className="mt-10 rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6"><div className="prose prose-slate max-w-none">
     <h2>Dandy's World OC Maker - Create an Original Toon</h2>
     <p>This Dandy's World OC maker helps you turn a loose idea into an original Toon character concept. Choose what kind of character it is, what role it plays, how its body is shaped, what it is made from, and what personality comes through in its expressions. The tool then creates one reference-style image so you have something concrete to refine.</p>
     <p>Use it for Dandy's World OC ideas, fan art planning, role-play profiles, character sheets, short stories, and design exercises. The result is fan-made inspiration. It is not an official character and should not be presented as official artwork or approval.</p>

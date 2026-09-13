@@ -47,7 +47,7 @@ export function Base64ToImageTool() {
           onChange={e => setInput(e.target.value)}
           placeholder={'Paste Base64 string or data URL here...\nExample: data:image/png;base64,iVBORw0KGgo...'}
           rows={6}
-          className="w-full rounded-xl border border-slate-200 bg-white px-3 py-3 text-xs font-mono text-slate-800 shadow-sm outline-none focus:border-blue-300 focus:ring-2 focus:ring-blue-100"
+          className="w-full rounded-xl border-3 border-black bg-white px-3 py-3 text-xs font-mono text-slate-800 shadow-neo-sm outline-none focus:border-blue-300 focus:ring-2 focus:ring-blue-100"
         />
       </div>
 
@@ -56,12 +56,12 @@ export function Base64ToImageTool() {
           Decode & Preview
         </button>
         <button onClick={() => { setInput(''); setImgSrc(''); setInfo(null); setError(''); }}
-          className="px-4 py-2 text-sm font-medium rounded-xl border border-slate-200 bg-white hover:bg-slate-50">
+          className="px-4 py-2 text-sm font-medium rounded-xl border-3 border-black bg-white hover:bg-slate-50">
           Clear
         </button>
         {input && (
           <button onClick={() => { navigator.clipboard.writeText(input); setCopied(true); setTimeout(() => setCopied(false), 1500); }}
-            className="px-4 py-2 text-sm font-medium rounded-xl border border-slate-200 bg-white hover:bg-slate-50">
+            className="px-4 py-2 text-sm font-medium rounded-xl border-3 border-black bg-white hover:bg-slate-50">
             {copied ? 'Copied!' : 'Copy Input'}
           </button>
         )}
@@ -70,14 +70,14 @@ export function Base64ToImageTool() {
       {error && <p className="text-sm text-red-600 bg-red-50 rounded-lg px-3 py-2">{error}</p>}
 
       {imgSrc && (
-        <div className="rounded-xl border border-slate-200 bg-white p-4 space-y-3">
+        <div className="rounded-xl border-3 border-black bg-white p-4 space-y-3">
           {info && (
             <div className="flex gap-4 text-sm text-slate-600">
               <span>Format: <strong className="text-slate-900">{info.format}</strong></span>
               <span>Size: <strong className="text-slate-900">~{info.sizeKb} KB</strong></span>
             </div>
           )}
-          <img src={imgSrc} alt="Decoded" className="max-w-full rounded-lg border border-slate-100 max-h-96 object-contain" />
+          <img src={imgSrc} alt="Decoded" className="max-w-full rounded-lg border-2 border-black max-h-96 object-contain" />
           <button onClick={download}
             className="px-4 py-2 text-sm font-medium rounded-xl bg-green-600 text-white hover:bg-green-700">
             Download Image

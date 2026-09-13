@@ -79,7 +79,7 @@ export function CsvToJsonTool() {
         <div className="flex items-center gap-2">
           <label className="font-medium text-slate-700">Delimiter:</label>
           <select value={delim} onChange={e => setDelim(e.target.value)}
-            className="rounded-lg border border-slate-200 px-2 py-1 focus:outline-none">
+            className="rounded-lg border-3 border-black px-2 py-1 focus:outline-none">
             {Object.keys(DELIM_MAP).map(d => <option key={d}>{d}</option>)}
           </select>
         </div>
@@ -105,11 +105,11 @@ export function CsvToJsonTool() {
       <div className="flex gap-2 flex-wrap">
         <button onClick={convert} className="px-4 py-2 text-sm font-medium rounded-xl bg-blue-600 text-white hover:bg-blue-700">Convert to JSON</button>
         <button onClick={() => { navigator.clipboard.writeText(output); setCopied(true); setTimeout(() => setCopied(false), 1500); }} disabled={!output}
-          className="px-4 py-2 text-sm font-medium rounded-xl border border-slate-200 bg-white hover:bg-slate-50 disabled:opacity-40">
+          className="px-4 py-2 text-sm font-medium rounded-xl border-3 border-black bg-white hover:bg-slate-50 disabled:opacity-40">
           {copied ? 'Copied!' : 'Copy JSON'}
         </button>
         <button onClick={download} disabled={!output}
-          className="px-4 py-2 text-sm font-medium rounded-xl border border-slate-200 bg-white hover:bg-slate-50 disabled:opacity-40">
+          className="px-4 py-2 text-sm font-medium rounded-xl border-3 border-black bg-white hover:bg-slate-50 disabled:opacity-40">
           Download .json
         </button>
       </div>

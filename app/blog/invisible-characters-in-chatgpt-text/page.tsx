@@ -23,7 +23,7 @@ export default function InvisibleCharactersInChatGptTextPage() {
       <div className="ad-slot"><AdSenseSlot className="w-full" /></div>
 
       {/* Hero card */}
-      <div className="rounded-[28px] border border-slate-200 bg-white/70 p-6 shadow-xl shadow-slate-900/5 backdrop-blur-lg">
+      <div className="rounded-[28px] border-3 border-black bg-white/70 p-6 shadow-neo-lg shadow-slate-900/5 backdrop-blur-lg">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Technical Deep Dive</p>
         <h1 className="mt-3 text-3xl font-semibold text-slate-900">Invisible Characters in ChatGPT Text</h1>
         <p className="mt-2 text-slate-600">
@@ -37,7 +37,7 @@ export default function InvisibleCharactersInChatGptTextPage() {
             { title: 'Why AI produces them', detail: 'The technical mechanism behind each character' },
             { title: 'Complete removal', detail: 'The right tool and workflow for each type' },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-100 bg-slate-50 p-4 text-xs text-slate-700">
+            <div key={item.title} className="rounded-2xl border-2 border-black bg-slate-50 p-4 text-xs text-slate-700">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.detail}</p>
             </div>
@@ -73,7 +73,7 @@ export default function InvisibleCharactersInChatGptTextPage() {
           and its official name is &quot;ZERO WIDTH SPACE.&quot;
         </p>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">What it is</p>
             <p className="mt-2">
               A space character with zero width. In typography, it marks a potential line-break opportunity in
@@ -81,7 +81,7 @@ export default function InvisibleCharactersInChatGptTextPage() {
               or compound words in languages that do not use spaces between words.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Why AI produces it</p>
             <p className="mt-2">
               The zero-width space appears extensively in web-scraped training data &mdash; from web frameworks
@@ -89,7 +89,7 @@ export default function InvisibleCharactersInChatGptTextPage() {
               international content. The model reproduces it at similar token boundaries in its output.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">What it does in practice</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Causes word to be split at the invisible position in spell check</li>
@@ -99,7 +99,7 @@ export default function InvisibleCharactersInChatGptTextPage() {
               <li>Detected by AI watermark detection tools</li>
             </ul>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">How to remove it</p>
             <p className="mt-2">
               Use the <Link href="/zero-width-space-remover">Zero-Width Space Remover</Link> for targeted removal,
@@ -117,7 +117,7 @@ export default function InvisibleCharactersInChatGptTextPage() {
           from forming a ligature. Its presence in English AI text is entirely an artifact of multilingual training.
         </p>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Legitimate use vs. AI artifact</p>
             <p className="mt-2">
               ZWNJ has real purposes in Farsi, Arabic, Hindi, Bengali, and other scripts. In purely English text,
@@ -125,7 +125,7 @@ export default function InvisibleCharactersInChatGptTextPage() {
               output indicates the model&apos;s tokenizer encountered it in multilingual training data.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Where it appears in AI text</p>
             <p className="mt-2">
               ZWNJ typically appears in AI text around technical content (code identifiers, URLs), in responses
@@ -161,7 +161,7 @@ export default function InvisibleCharactersInChatGptTextPage() {
           enough to accommodate the whole word.
         </p>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Where it appears in AI text</p>
             <p className="mt-2">
               Soft hyphens appear in AI text around compound words, technical terms, and hyphenated words. The
@@ -169,7 +169,7 @@ export default function InvisibleCharactersInChatGptTextPage() {
               professionally typeset books, academic publications) that used soft hyphens for line-break control.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Why it is problematic</p>
             <p className="mt-2">
               In web publishing, soft hyphens can cause unexpected hyphenation in narrow containers. In word
@@ -193,7 +193,7 @@ export default function InvisibleCharactersInChatGptTextPage() {
           processing errors in text parsers, CSV imports, and other systems that do not expect non-printing characters
           at the start of input.
         </p>
-        <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+        <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
           <p className="font-semibold text-slate-900">Why BOM in UTF-8 is a problem</p>
           <ul className="mt-2 list-disc space-y-1 pl-5">
             <li>PHP scripts may output a BOM before any HTML, causing &quot;headers already sent&quot; errors</li>
@@ -228,7 +228,7 @@ export default function InvisibleCharactersInChatGptTextPage() {
           Beyond the major types above, AI text occasionally contains other Unicode format characters:
         </p>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Left-to-Right Mark (U+200E)</p>
             <p className="mt-2">
               Invisible character that forces left-to-right text direction. Appears in AI text when the output
@@ -236,7 +236,7 @@ export default function InvisibleCharactersInChatGptTextPage() {
               removed from purely LTR English content.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Word Joiner (U+2060)</p>
             <p className="mt-2">
               Similar to a non-breaking space but with zero width. Prevents line breaks without creating any
@@ -252,7 +252,7 @@ export default function InvisibleCharactersInChatGptTextPage() {
         <p className="text-slate-700">
           For complete invisible character removal from ChatGPT text, use this workflow:
         </p>
-        <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+        <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
           <ol className="list-decimal space-y-2 pl-5">
             <li>
               <strong>Scan first:</strong> Paste your text into the <Link href="/invisible-character-detector">Invisible Character Detector</Link> to

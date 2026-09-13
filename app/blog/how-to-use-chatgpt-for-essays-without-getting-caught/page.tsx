@@ -23,7 +23,7 @@ export default function HowToUseChatGptForEssaysPage() {
       <div className="ad-slot"><AdSenseSlot className="w-full" /></div>
 
       {/* Hero card */}
-      <div className="rounded-[28px] border border-slate-200 bg-white/70 p-6 shadow-xl shadow-slate-900/5 backdrop-blur-lg">
+      <div className="rounded-[28px] border-3 border-black bg-white/70 p-6 shadow-neo-lg shadow-slate-900/5 backdrop-blur-lg">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Essays &amp; AI Tools</p>
         <h1 className="mt-3 text-3xl font-semibold text-slate-900">How To Use ChatGPT for Essays Without Getting Caught</h1>
         <p className="mt-2 text-slate-600">
@@ -38,7 +38,7 @@ export default function HowToUseChatGptForEssaysPage() {
             { title: 'How detection works', detail: 'Understand what detectors actually measure' },
             { title: 'Clean submission', detail: 'Remove artifacts before you submit anything' },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-100 bg-slate-50 p-4 text-xs text-slate-700">
+            <div key={item.title} className="rounded-2xl border-2 border-black bg-slate-50 p-4 text-xs text-slate-700">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.detail}</p>
             </div>
@@ -72,7 +72,7 @@ export default function HowToUseChatGptForEssaysPage() {
           actually look at. Most AI detectors measure two primary signals:
         </p>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Perplexity (word predictability)</p>
             <p className="mt-2">
               How predictable is each word choice given the surrounding context? AI models make very predictable
@@ -80,7 +80,7 @@ export default function HowToUseChatGptForEssaysPage() {
               Low perplexity = AI-like. High perplexity = human-like.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Burstiness (sentence variation)</p>
             <p className="mt-2">
               How much does your sentence length and structure vary? Human writing has wide variation &mdash; short
@@ -105,7 +105,7 @@ export default function HowToUseChatGptForEssaysPage() {
           explicitly encouraged.
         </p>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Research orientation</p>
             <p className="mt-2">
               Ask ChatGPT to explain a concept, give you background on a topic, or summarize different positions in a
@@ -113,7 +113,7 @@ export default function HowToUseChatGptForEssaysPage() {
               &mdash; AI frequently makes factual errors.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Outline development</p>
             <p className="mt-2">
               Give ChatGPT your thesis and ask it to suggest an outline structure. Review the structure, modify it to
@@ -121,7 +121,7 @@ export default function HowToUseChatGptForEssaysPage() {
               remains yours; the structural scaffolding was AI-assisted.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Grammar and clarity</p>
             <p className="mt-2">
               Paste your own writing and ask ChatGPT to identify grammar errors or unclear sentences. Review its
@@ -129,7 +129,7 @@ export default function HowToUseChatGptForEssaysPage() {
               asking a friend to proofread.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Counterargument generation</p>
             <p className="mt-2">
               Ask ChatGPT to argue against your thesis. Use the strongest counterarguments to test and strengthen
@@ -137,7 +137,7 @@ export default function HowToUseChatGptForEssaysPage() {
               is entirely your intellectual work.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Citation formatting</p>
             <p className="mt-2">
               Ask ChatGPT to format citations you have already gathered into MLA, APA, or Chicago style. Always
@@ -145,7 +145,7 @@ export default function HowToUseChatGptForEssaysPage() {
               is not an integrity concern.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Writing coach feedback</p>
             <p className="mt-2">
               Show ChatGPT your draft and ask what is unclear or where the argument weakens. Use this feedback to
@@ -164,7 +164,7 @@ export default function HowToUseChatGptForEssaysPage() {
           If you have used AI tools in any part of your research or writing process, there is a specific workflow that
           ensures your submitted work is clean, technically compliant, and genuinely representative of your thinking.
         </p>
-        <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+        <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
           <p className="font-semibold text-slate-900">Pre-submission cleaning workflow</p>
           <ol className="mt-2 list-decimal space-y-2 pl-5">
             <li>
@@ -207,7 +207,7 @@ export default function HowToUseChatGptForEssaysPage() {
           does not.
         </p>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">What actually helps</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Significantly varying sentence lengths</li>
@@ -218,7 +218,7 @@ export default function HowToUseChatGptForEssaysPage() {
               <li>Restructuring paragraphs to break uniform patterns</li>
             </ul>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">What does not work or backfires</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Simply asking AI to &quot;write like a human&quot;</li>

@@ -30,7 +30,7 @@ export default function HowToRemoveExtraSpacesFromTextOnlinePage() {
         <AdSenseSlot className="w-full" />
       </div>
 
-      <div className="rounded-[28px] border border-slate-200 bg-white/70 p-6 shadow-xl shadow-slate-900/5 backdrop-blur-lg">
+      <div className="rounded-[28px] border-3 border-black bg-white/70 p-6 shadow-neo-lg shadow-slate-900/5 backdrop-blur-lg">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">
           Tutorial
         </p>
@@ -49,7 +49,7 @@ export default function HowToRemoveExtraSpacesFromTextOnlinePage() {
           ].map((item) => (
             <div
               key={item.title}
-              className="rounded-2xl border border-slate-100 bg-slate-50 p-4 text-xs text-slate-700"
+              className="rounded-2xl border-2 border-black bg-slate-50 p-4 text-xs text-slate-700"
             >
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.detail}</p>

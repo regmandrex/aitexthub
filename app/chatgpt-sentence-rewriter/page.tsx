@@ -44,7 +44,7 @@ const faqKeys = [
 ];
 function createWriteUp() {
   return (
-    <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+    <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
         <h2>ChatGPT Sentence Rewriter: Improve Sentence Structure and Clarity</h2>
         <p>A ChatGPT Sentence Rewriter is a free online tool that rewrites sentences from ChatGPT output to improve clarity, flow, and style. It helps you fix awkward phrasing, vary sentence length, and strengthen structure—one sentence at a time—so your writing reads more naturally and professionally.</p>

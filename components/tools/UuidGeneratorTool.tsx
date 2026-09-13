@@ -36,7 +36,7 @@ export function UuidGeneratorTool() {
           max={100}
           value={count}
           onChange={e => setCount(Math.min(100, Math.max(1, Number(e.target.value))))}
-          className="w-24 rounded-lg border border-slate-200 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-24 rounded-lg border-3 border-black px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
         <button
           onClick={generate}
@@ -46,7 +46,7 @@ export function UuidGeneratorTool() {
         </button>
         <button
           onClick={copyAll}
-          className={`px-5 py-2 rounded-lg text-sm font-medium transition-colors ${copied ? 'bg-green-500 text-white' : 'border border-slate-200 hover:bg-slate-50 text-slate-700'}`}
+          className={`px-5 py-2 rounded-lg text-sm font-medium transition-colors ${copied ? 'bg-green-500 text-white' : 'border-3 border-black hover:bg-slate-50 text-slate-700'}`}
         >
           {copied ? '✓ Copied!' : 'Copy all'}
         </button>
@@ -54,10 +54,10 @@ export function UuidGeneratorTool() {
       <div className="space-y-1">
         {uuids.map((uuid, i) => (
           <div key={i} className="flex items-center gap-2">
-            <code className="flex-1 rounded-lg border border-slate-200 bg-slate-50 px-3 py-2 text-sm font-mono">{uuid}</code>
+            <code className="flex-1 rounded-lg border-3 border-black bg-slate-50 px-3 py-2 text-sm font-mono">{uuid}</code>
             <button
               onClick={() => navigator.clipboard.writeText(uuid)}
-              className="px-3 py-2 rounded-lg border border-slate-200 hover:bg-slate-50 text-slate-600 text-xs transition-colors"
+              className="px-3 py-2 rounded-lg border-3 border-black hover:bg-slate-50 text-slate-600 text-xs transition-colors"
             >
               Copy
             </button>

@@ -42,7 +42,7 @@ export function ImageCompareTool() {
         <div className="space-y-3">
           <label className="block text-sm font-medium text-slate-700">Slide to compare</label>
           <input type="range" min={0} max={100} value={slider} onChange={e => setSlider(Number(e.target.value))} className="w-full" />
-          <div className="relative rounded-lg overflow-hidden border border-slate-200" style={{ aspectRatio: '16/9' }}>
+          <div className="relative rounded-lg overflow-hidden border-3 border-black" style={{ aspectRatio: '16/9' }}>
             <img src={right} alt="B" className="absolute inset-0 w-full h-full object-contain bg-slate-100" />
             <div className="absolute inset-0 overflow-hidden" style={{ width: `${slider}%` }}>
               <img src={left} alt="A" className="absolute inset-0 w-full h-full object-contain bg-slate-50" style={{ minWidth: `${100 * 100 / slider}%` }} />

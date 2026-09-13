@@ -14,12 +14,12 @@ export default function ImageWatermarkRemoverPanel({ modelName }: { modelName?: 
 
   return (
     <div className="space-y-4">
-      <div className="inline-flex rounded-lg border border-slate-200 bg-slate-100 p-1">
+      <div className="inline-flex rounded-lg border-3 border-black bg-slate-100 p-1">
         <button
           type="button"
           onClick={() => setMode('free')}
           className={`rounded-md px-4 py-1.5 text-sm font-semibold transition ${
-            mode === 'free' ? 'bg-white text-slate-900 shadow-sm' : 'text-slate-600 hover:text-slate-900'
+            mode === 'free' ? 'bg-white text-slate-900 shadow-neo-sm' : 'text-slate-600 hover:text-slate-900'
           }`}
         >
           Metadata &amp; crop
@@ -28,7 +28,7 @@ export default function ImageWatermarkRemoverPanel({ modelName }: { modelName?: 
           type="button"
           onClick={() => setMode('ai')}
           className={`rounded-md px-4 py-1.5 text-sm font-semibold transition ${
-            mode === 'ai' ? 'bg-white text-slate-900 shadow-sm' : 'text-slate-600 hover:text-slate-900'
+            mode === 'ai' ? 'bg-white text-slate-900 shadow-neo-sm' : 'text-slate-600 hover:text-slate-900'
           }`}
         >
           AI erase

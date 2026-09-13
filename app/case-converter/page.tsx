@@ -43,7 +43,7 @@ const faqKeys = [
 // Helper function to create writeUp content using translations
 function createWriteUp(t: (key: string) => string) {
   return (
-    <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+    <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
         <h2>{"Convert Text to Uppercase, Lowercase, Title Case & More - Online Case Converter Tool"}</h2>
         <p>{"This guide explains how the Case Converter tool works, why consistent capitalization matters, and when an online case converter is the right choice for cleanup. It is written for people who need reliable text case conversion without rewriting content. The tool on AI Text Cleanup Tools processes only the text you provide and returns predictable results, making it useful for editing, analysis, and everyday formatting tasks."}</p>

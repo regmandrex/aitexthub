@@ -23,11 +23,11 @@ export default function HumanizerUpsellCard({ variant = 'cleanup', compact = fal
 
   return (
     <div
-      className={`${compact ? 'mt-2' : 'mt-6'} rounded-2xl bg-slate-900 text-white shadow-xl transition-all duration-500 ease-out ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
+      className={`${compact ? 'mt-2' : 'mt-6'} rounded-2xl border-3 border-white bg-slate-900 text-white shadow-neo-invert transition-all duration-500 ease-out ${visible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-3'}`}
     >
       <div className="p-5 md:p-6">
         <div className="flex items-start gap-3">
-          <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-brand-600 text-yellow-300 shadow-sm">
+          <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl border-2 border-white/80 bg-brand-600 text-yellow-300">
             <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
               <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
             </svg>
@@ -45,7 +45,7 @@ export default function HumanizerUpsellCard({ variant = 'cleanup', compact = fal
           {DETECTORS.map((d) => (
             <span
               key={d}
-              className="rounded-full border border-slate-700 bg-slate-800 px-3 py-0.5 text-[10px] font-bold uppercase tracking-widest text-slate-300"
+              className="rounded-full border-2 border-slate-600 bg-slate-800 px-3 py-0.5 text-[10px] font-bold uppercase tracking-widest text-slate-300"
             >
               {d}
             </span>
@@ -54,7 +54,7 @@ export default function HumanizerUpsellCard({ variant = 'cleanup', compact = fal
 
         <Link
           href="/pro"
-          className="mt-4 flex w-full items-center justify-center gap-2 rounded-xl bg-brand-600 px-4 py-3 text-sm font-bold text-white shadow-sm transition hover:bg-brand-700 active:scale-[0.98]"
+          className="mt-4 flex w-full items-center justify-center gap-2 rounded-xl border-3 border-white bg-brand-600 px-4 py-3 text-sm font-bold text-white shadow-neo-invert-sm transition-transform hover:translate-y-0.5 hover:shadow-none active:translate-y-0.5"
         >
           Humanize Now
           <svg className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">

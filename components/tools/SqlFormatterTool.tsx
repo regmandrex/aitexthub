@@ -30,7 +30,7 @@ export function SqlFormatterTool() {
     <div className="space-y-4">
       <div className="flex items-center gap-3">
         <label className="text-sm font-medium text-slate-700">Dialect</label>
-        <select value={dialect} onChange={e => setDialect(e.target.value as typeof dialect)} className="rounded-lg border border-slate-200 px-3 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+        <select value={dialect} onChange={e => setDialect(e.target.value as typeof dialect)} className="rounded-lg border-3 border-black px-3 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
           <option value="sql">Standard SQL</option>
           <option value="mysql">MySQL</option>
           <option value="postgresql">PostgreSQL</option>
@@ -39,7 +39,7 @@ export function SqlFormatterTool() {
       </div>
       <div>
         <label className="block text-sm font-medium text-slate-700 mb-1">SQL input</label>
-        <textarea value={input} onChange={e => setInput(e.target.value)} rows={8} placeholder="SELECT * FROM users WHERE id = 1;" className="w-full rounded-lg border border-slate-200 px-3 py-2 text-sm font-mono resize-none focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        <textarea value={input} onChange={e => setInput(e.target.value)} rows={8} placeholder="SELECT * FROM users WHERE id = 1;" className="w-full rounded-lg border-3 border-black px-3 py-2 text-sm font-mono resize-none focus:outline-none focus:ring-2 focus:ring-blue-500" />
       </div>
       <button onClick={formatSql} className="px-5 py-2 rounded-lg bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium transition-colors">Format SQL</button>
       {error && <p className="text-sm text-red-600">{error}</p>}
@@ -49,7 +49,7 @@ export function SqlFormatterTool() {
             <label className="text-sm font-medium text-slate-700">Formatted SQL</label>
             <button onClick={copy} className={`px-3 py-1 rounded text-xs font-medium transition-colors ${copied ? 'bg-green-500 text-white' : 'bg-blue-600 hover:bg-blue-700 text-white'}`}>{copied ? '✓ Copied!' : 'Copy'}</button>
           </div>
-          <textarea readOnly value={output} rows={8} className="w-full rounded-lg border border-slate-200 bg-slate-50 px-3 py-2 text-sm font-mono resize-none" />
+          <textarea readOnly value={output} rows={8} className="w-full rounded-lg border-3 border-black bg-slate-50 px-3 py-2 text-sm font-mono resize-none" />
         </div>
       )}
       {output && <HumanizerUpsellCard />}

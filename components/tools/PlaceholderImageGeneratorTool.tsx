@@ -38,48 +38,48 @@ export function PlaceholderImageGeneratorTool() {
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
         <div>
           <label className="block text-xs font-medium text-slate-600 mb-1">Width (px)</label>
-          <input type="number" min={1} max={2000} value={width} onChange={e => setWidth(Number(e.target.value))} className="w-full rounded-lg border border-slate-200 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500" />
+          <input type="number" min={1} max={2000} value={width} onChange={e => setWidth(Number(e.target.value))} className="w-full rounded-lg border-3 border-black px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500" />
         </div>
         <div>
           <label className="block text-xs font-medium text-slate-600 mb-1">Height (px)</label>
-          <input type="number" min={1} max={2000} value={height} onChange={e => setHeight(Number(e.target.value))} className="w-full rounded-lg border border-slate-200 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500" />
+          <input type="number" min={1} max={2000} value={height} onChange={e => setHeight(Number(e.target.value))} className="w-full rounded-lg border-3 border-black px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500" />
         </div>
         <div>
           <label className="block text-xs font-medium text-slate-600 mb-1">Background</label>
           <div className="flex gap-1">
-            <input type="color" value={bg} onChange={e => setBg(e.target.value)} className="w-10 h-[38px] rounded cursor-pointer border border-slate-200" />
-            <input type="text" value={bg} onChange={e => setBg(e.target.value)} className="flex-1 rounded-lg border border-slate-200 px-2 py-2 text-xs font-mono focus:outline-none" />
+            <input type="color" value={bg} onChange={e => setBg(e.target.value)} className="w-10 h-[38px] rounded cursor-pointer border-3 border-black" />
+            <input type="text" value={bg} onChange={e => setBg(e.target.value)} className="flex-1 rounded-lg border-3 border-black px-2 py-2 text-xs font-mono focus:outline-none" />
           </div>
         </div>
         <div>
           <label className="block text-xs font-medium text-slate-600 mb-1">Text color</label>
           <div className="flex gap-1">
-            <input type="color" value={fg} onChange={e => setFg(e.target.value)} className="w-10 h-[38px] rounded cursor-pointer border border-slate-200" />
-            <input type="text" value={fg} onChange={e => setFg(e.target.value)} className="flex-1 rounded-lg border border-slate-200 px-2 py-2 text-xs font-mono focus:outline-none" />
+            <input type="color" value={fg} onChange={e => setFg(e.target.value)} className="w-10 h-[38px] rounded cursor-pointer border-3 border-black" />
+            <input type="text" value={fg} onChange={e => setFg(e.target.value)} className="flex-1 rounded-lg border-3 border-black px-2 py-2 text-xs font-mono focus:outline-none" />
           </div>
         </div>
       </div>
 
       <div>
         <label className="block text-xs font-medium text-slate-600 mb-1">Custom text (optional)</label>
-        <input type="text" value={text} onChange={e => setText(e.target.value)} placeholder={`${width}×${height}`} className="w-full rounded-lg border border-slate-200 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        <input type="text" value={text} onChange={e => setText(e.target.value)} placeholder={`${width}×${height}`} className="w-full rounded-lg border-3 border-black px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500" />
       </div>
 
       <div className="flex gap-2 flex-wrap">
         {presets.map(p => (
-          <button key={p.label} onClick={() => { setWidth(p.w); setHeight(p.h); }} className="px-3 py-1.5 rounded border border-slate-200 text-xs text-slate-700 hover:bg-slate-50 transition-colors">{p.label} {p.w}×{p.h}</button>
+          <button key={p.label} onClick={() => { setWidth(p.w); setHeight(p.h); }} className="px-3 py-1.5 rounded border-3 border-black text-xs text-slate-700 hover:bg-slate-50 transition-colors">{p.label} {p.w}×{p.h}</button>
         ))}
       </div>
 
       <div className="space-y-3">
-        <div className="rounded-lg border border-slate-200 bg-slate-100 p-4 flex items-center justify-center" style={{ minHeight: '120px' }}>
+        <div className="rounded-lg border-3 border-black bg-slate-100 p-4 flex items-center justify-center" style={{ minHeight: '120px' }}>
           <img src={dataUrl} alt={label} style={{ maxWidth: '100%', maxHeight: '200px', width: width > 600 ? '100%' : width }} />
         </div>
 
         <div className="flex gap-2">
           <a href={dataUrl} download={`placeholder-${width}x${height}.svg`} className="px-4 py-2 rounded-lg bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium transition-colors">Download SVG</a>
-          <button onClick={() => copy(dataUrl, 'dataurl')} className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${copied === 'dataurl' ? 'bg-green-500 text-white' : 'border border-slate-200 hover:bg-slate-50 text-slate-700'}`}>{copied === 'dataurl' ? '✓ Copied!' : 'Copy data URL'}</button>
-          <button onClick={() => copy(htmlTag, 'html')} className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${copied === 'html' ? 'bg-green-500 text-white' : 'border border-slate-200 hover:bg-slate-50 text-slate-700'}`}>{copied === 'html' ? '✓ Copied!' : 'Copy HTML'}</button>
+          <button onClick={() => copy(dataUrl, 'dataurl')} className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${copied === 'dataurl' ? 'bg-green-500 text-white' : 'border-3 border-black hover:bg-slate-50 text-slate-700'}`}>{copied === 'dataurl' ? '✓ Copied!' : 'Copy data URL'}</button>
+          <button onClick={() => copy(htmlTag, 'html')} className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors ${copied === 'html' ? 'bg-green-500 text-white' : 'border-3 border-black hover:bg-slate-50 text-slate-700'}`}>{copied === 'html' ? '✓ Copied!' : 'Copy HTML'}</button>
         </div>
       </div>
     </div>

@@ -12,6 +12,19 @@ const nextConfig = {
     minimumCacheTTL: 2592000,
   },
   async headers() {
+    if (process.env.NODE_ENV !== 'production') {
+      return [
+        {
+          // Keep API responses uncached in development, but let Next manage
+          // its own dev assets so client and server bundles stay in sync.
+          source: '/api/:path*',
+          headers: [
+            { key: 'Cache-Control', value: 'no-store' },
+          ],
+        },
+      ];
+    }
+
     return [
       {
         // Cache static assets (JS/CSS chunks) for 1 year — they have hashed filenames

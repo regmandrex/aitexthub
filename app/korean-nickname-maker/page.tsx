@@ -67,7 +67,7 @@ export default function KoreanNicknameMakerPage() {
           </div>
         </section>
 
-        <section className="mt-4 rounded-xl border border-slate-200 bg-white p-3 shadow-sm md:mt-6 md:rounded-2xl md:p-6">
+        <section className="mt-4 rounded-xl border-3 border-black bg-white p-3 shadow-neo-sm md:mt-6 md:rounded-2xl md:p-6">
           <NicknameMakerTool />
         </section>
 

@@ -50,7 +50,7 @@ export function UrlShortenerTool() {
           onChange={(e) => setUrl(e.target.value)}
           onKeyDown={(e) => e.key === 'Enter' && handleShorten()}
           placeholder="https://example.com/very/long/url..."
-          className="w-full rounded-md border border-gray-300 px-3 py-2 text-sm shadow-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+          className="w-full rounded-md border-2 border-black px-3 py-2 text-sm shadow-neo-sm focus:outline-none focus:ring-1 focus:ring-blue-500"
         />
       </div>
 
@@ -73,7 +73,7 @@ export function UrlShortenerTool() {
             <input
               readOnly
               value={shortUrl}
-              className="flex-1 rounded-md border border-gray-300 bg-gray-50 px-3 py-2 text-sm"
+              className="flex-1 rounded-md border-2 border-black bg-gray-50 px-3 py-2 text-sm"
             />
             <button
               onClick={handleCopy}

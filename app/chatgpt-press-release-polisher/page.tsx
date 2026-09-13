@@ -46,7 +46,7 @@ const faqs: FaqItem[] = [
 ];
 
 const writeUp = (
-  <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+  <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
     <div className="prose prose-slate max-w-none">
       <h2>ChatGPT Press Release Polisher: Create Professional Media Communications</h2>
       <p>The ChatGPT Press Release Polisher is a free online tool that refines press releases for clarity, professionalism, and media appeal. Press releases are official statements issued to news media, and their quality directly affects whether journalists pick them up and how your news is covered.</p>

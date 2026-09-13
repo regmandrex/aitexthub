@@ -156,7 +156,7 @@ export function ThemedNameGeneratorTool({ generatorKey, resultLabel = 'Generated
             max={24}
             value={count}
             onChange={(e) => setCount(Math.min(24, Math.max(1, Number(e.target.value) || 1)))}
-            className="w-full rounded-lg border border-slate-300 bg-white px-3 py-2 text-slate-900 focus:border-brand-600 focus:outline-none focus:ring-1 focus:ring-brand-600"
+            className="w-full rounded-lg border-2 border-black bg-white px-3 py-2 text-slate-900 focus:border-brand-600 focus:outline-none focus:ring-1 focus:ring-brand-600"
           />
         </div>
       </div>
@@ -177,10 +177,10 @@ export function ThemedNameGeneratorTool({ generatorKey, resultLabel = 'Generated
             </>
           ) : 'Generate names'}
         </button>
-        <button type="button" onClick={handleCopy} disabled={results.length === 0} className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50 disabled:cursor-not-allowed disabled:opacity-50">
+        <button type="button" onClick={handleCopy} disabled={results.length === 0} className="inline-flex items-center justify-center rounded-lg border-3 border-black bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50 disabled:cursor-not-allowed disabled:opacity-50">
           Copy
         </button>
-        <button type="button" onClick={() => { setResults([]); setShowPaywall(false); }} disabled={results.length === 0} className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50 disabled:cursor-not-allowed disabled:opacity-50">
+        <button type="button" onClick={() => { setResults([]); setShowPaywall(false); }} disabled={results.length === 0} className="inline-flex items-center justify-center rounded-lg border-3 border-black bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50 disabled:cursor-not-allowed disabled:opacity-50">
           Clear
         </button>
       </div>
@@ -191,10 +191,10 @@ export function ThemedNameGeneratorTool({ generatorKey, resultLabel = 'Generated
 
       {/* Upsell card */}
       {showPaywall && !isGenerating && (
-        <div className="rounded-2xl bg-slate-900 text-white shadow-xl">
+        <div className="rounded-2xl bg-slate-900 text-white shadow-neo-lg">
           <div className="p-5 md:p-6">
             <div className="flex items-start gap-3">
-              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-brand-600 text-yellow-300 shadow-sm">
+              <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-brand-600 text-yellow-300 shadow-neo-sm">
                 <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
                 </svg>
@@ -215,7 +215,7 @@ export function ThemedNameGeneratorTool({ generatorKey, resultLabel = 'Generated
             <button
               type="button"
               onClick={() => isLoggedIn ? window.location.href = '/pro' : setAuthOpen(true)}
-              className="mt-4 flex w-full items-center justify-center gap-2 rounded-xl bg-brand-600 px-4 py-3 text-sm font-bold text-white shadow-sm transition hover:bg-brand-700 active:scale-[0.98]"
+              className="mt-4 flex w-full items-center justify-center gap-2 rounded-xl bg-brand-600 px-4 py-3 text-sm font-bold text-white shadow-neo-sm transition hover:bg-brand-700 active:scale-[0.98]"
             >
               {upsell.cta}
               <svg className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
@@ -233,7 +233,7 @@ export function ThemedNameGeneratorTool({ generatorKey, resultLabel = 'Generated
       {results.length > 0 && (
         <div>
           <label className="mb-1 block text-sm font-medium text-slate-700">{resultLabel}</label>
-          <div className={`rounded-lg border border-slate-200 bg-slate-50 p-4 ${showPaywall ? 'blur-[3px] select-none pointer-events-none' : ''}`}>
+          <div className={`rounded-lg border-3 border-black bg-slate-50 p-4 ${showPaywall ? 'blur-[3px] select-none pointer-events-none' : ''}`}>
             <ul className="space-y-2 text-slate-800">
               {results.map((name, i) => (
                 <li key={`${name}-${i}`} className="font-medium">{name}</li>

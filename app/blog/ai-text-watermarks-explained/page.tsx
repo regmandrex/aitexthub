@@ -23,7 +23,7 @@ export default function AiTextWatermarksExplainedPage() {
       <div className="ad-slot"><AdSenseSlot className="w-full" /></div>
 
       {/* Hero card */}
-      <div className="rounded-[28px] border border-slate-200 bg-white/70 p-6 shadow-xl shadow-slate-900/5 backdrop-blur-lg">
+      <div className="rounded-[28px] border-3 border-black bg-white/70 p-6 shadow-neo-lg shadow-slate-900/5 backdrop-blur-lg">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Technical Guide</p>
         <h1 className="mt-3 text-3xl font-semibold text-slate-900">AI Text Watermarks Explained</h1>
         <p className="mt-2 text-slate-600">
@@ -38,7 +38,7 @@ export default function AiTextWatermarksExplainedPage() {
             { title: 'How detection works', detail: 'Probabilistic and deterministic detection methods' },
             { title: 'Removal workflow', detail: 'Step-by-step process to clean each type' },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-100 bg-slate-50 p-4 text-xs text-slate-700">
+            <div key={item.title} className="rounded-2xl border-2 border-black bg-slate-50 p-4 text-xs text-slate-700">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.detail}</p>
             </div>
@@ -54,7 +54,7 @@ export default function AiTextWatermarksExplainedPage() {
           is present.
         </p>
         <div className="grid gap-4 md:grid-cols-3">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Type A: Unicode character artifacts</p>
             <p className="mt-2">
               Invisible characters (zero-width spaces, BOM, soft hyphens) present in AI output as byproducts of the
@@ -62,7 +62,7 @@ export default function AiTextWatermarksExplainedPage() {
               Removable without affecting visible content.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Type B: Statistical patterns</p>
             <p className="mt-2">
               Low perplexity, low burstiness, characteristic vocabulary, and structural uniformity that naturally
@@ -70,7 +70,7 @@ export default function AiTextWatermarksExplainedPage() {
               Cannot be fully &quot;removed&quot; without rewriting the text.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Type C: Cryptographic watermarks</p>
             <p className="mt-2">
               Secret key-based bias in token selection during generation. <strong>Not currently deployed</strong> in any
@@ -88,7 +88,7 @@ export default function AiTextWatermarksExplainedPage() {
           but invisible to the naked eye.
         </p>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">U+200B Zero-Width Space</p>
             <p className="mt-2">
               Appears at potential line-break positions and at token boundaries in AI output. Most common invisible
@@ -96,7 +96,7 @@ export default function AiTextWatermarksExplainedPage() {
             </p>
             <p className="mt-2 font-medium text-slate-800">Detection: Exact. Removal: Complete.</p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">U+200C Zero-Width Non-Joiner</p>
             <p className="mt-2">
               Appears in multilingual outputs, particularly those involving Arabic, Farsi, or Hindi script. Also
@@ -104,7 +104,7 @@ export default function AiTextWatermarksExplainedPage() {
             </p>
             <p className="mt-2 font-medium text-slate-800">Detection: Exact. Removal: Complete.</p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">U+00AD Soft Hyphen</p>
             <p className="mt-2">
               Invisible in most contexts (appears only as a hyphen at line-break points in some renderers). Found
@@ -113,7 +113,7 @@ export default function AiTextWatermarksExplainedPage() {
             </p>
             <p className="mt-2 font-medium text-slate-800">Detection: Exact. Removal: Complete.</p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">U+FEFF Byte-Order Mark</p>
             <p className="mt-2">
               Appears at the beginning of text or between sections in some AI output pipelines. Acts as a
@@ -132,7 +132,7 @@ export default function AiTextWatermarksExplainedPage() {
           content and structure, not discrete characters that can be removed. Detection is probabilistic; modification
           involves editing.
         </p>
-        <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+        <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
           <p className="font-semibold text-slate-900">Perplexity: the primary detection signal</p>
           <p className="mt-2">
             Perplexity measures how surprised a language model is by each word in the text. AI text has low perplexity
@@ -141,7 +141,7 @@ export default function AiTextWatermarksExplainedPage() {
             or restructuring sentences to produce less expected word orders.
           </p>
         </div>
-        <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm mt-4">
+        <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm mt-4">
           <p className="font-semibold text-slate-900">Burstiness: the secondary detection signal</p>
           <p className="mt-2">
             Burstiness measures the variance in sentence length and structural complexity. AI text clusters in a narrow
@@ -160,7 +160,7 @@ export default function AiTextWatermarksExplainedPage() {
           choose the right one for your use case.
         </p>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Perplexity-based detectors</p>
             <p className="mt-2">
               Run your text through a reference language model and calculate average perplexity. Low perplexity
@@ -168,7 +168,7 @@ export default function AiTextWatermarksExplainedPage() {
               signal. Results are probabilistic percentages.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Classifier-based detectors</p>
             <p className="mt-2">
               Neural network classifiers trained on large datasets of known AI and human text. Learn nuanced
@@ -176,7 +176,7 @@ export default function AiTextWatermarksExplainedPage() {
               are percentages indicating what proportion of sentences are classified as AI.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Unicode scanners</p>
             <p className="mt-2">
               Scan raw text for specific Unicode code points associated with AI output. The{' '}
@@ -185,7 +185,7 @@ export default function AiTextWatermarksExplainedPage() {
               Results are exact: character found or not found.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Ensemble methods</p>
             <p className="mt-2">
               Combine multiple signals &mdash; perplexity, burstiness, classifier scores, Unicode scanning &mdash;
@@ -202,7 +202,7 @@ export default function AiTextWatermarksExplainedPage() {
           Removing AI text watermarks requires addressing each type separately. Here is the complete workflow in order
           of priority.
         </p>
-        <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+        <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
           <p className="font-semibold text-slate-900">Step 1: Remove Unicode artifacts (Type A)</p>
           <ol className="mt-2 list-decimal space-y-1 pl-5">
             <li>Paste your text into the <Link href="/chatgpt-watermark-remover">ChatGPT Watermark Remover</Link>.</li>
@@ -211,7 +211,7 @@ export default function AiTextWatermarksExplainedPage() {
             <li>Verify with the <Link href="/invisible-character-detector">Invisible Character Detector</Link>.</li>
           </ol>
         </div>
-        <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm mt-4">
+        <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm mt-4">
           <p className="font-semibold text-slate-900">Step 2: Reduce statistical patterns (Type B)</p>
           <ol className="mt-2 list-decimal space-y-1 pl-5">
             <li>Vary sentence lengths: add short sentences (&lt;10 words) and some longer ones (&gt;30 words).</li>
@@ -221,7 +221,7 @@ export default function AiTextWatermarksExplainedPage() {
             <li>Use contractions and informal language where appropriate.</li>
           </ol>
         </div>
-        <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm mt-4">
+        <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm mt-4">
           <p className="font-semibold text-slate-900">Step 3: Verify the results</p>
           <ol className="mt-2 list-decimal space-y-1 pl-5">
             <li>Re-run the <Link href="/invisible-character-detector">Invisible Character Detector</Link> to confirm Unicode is clean.</li>

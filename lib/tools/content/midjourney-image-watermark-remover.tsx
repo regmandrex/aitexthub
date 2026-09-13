@@ -3,7 +3,7 @@ import type { ToolContent } from './index';
 
 function WriteUp() {
   return (
-    <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+    <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
         <h2>Midjourney Image Watermark Remover: Remove Midjourney Watermarks Free Online</h2>
         <p>The Midjourney Image Watermark Remover is a free online tool that removes Midjourney branding overlays, visible watermarks, and embedded metadata from AI-generated images. Midjourney applies watermarks differently from other AI image generators "” on free plans, images have visible logo watermarks in the lower right corner; on paid plans, visible watermarks are removed but some metadata and subtle fingerprinting may remain. This tool handles both cases: removing visible watermark regions through inpainting-based reconstruction and stripping any embedded metadata. All processing happens entirely in your browser without any server upload, making it private, fast, and unlimited.</p>

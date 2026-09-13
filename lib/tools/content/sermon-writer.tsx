@@ -3,7 +3,7 @@ import type { ToolContent } from './index';
 
 function WriteUp() {
   return (
-    <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+    <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
         <h2>Sermon Writer: Write Compelling Sermons with AI Assistance Free Online</h2>
         <p>The Sermon Writer is a free online tool that generates original sermon writer content to sound authentic, engaging, and naturally written. Instead of producing generic AI output, this tool creates sermon writer content that reflects the specific conventions, emotional tone, and stylistic expectations of the format.</p>

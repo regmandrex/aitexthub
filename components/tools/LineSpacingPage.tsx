@@ -55,7 +55,7 @@ export default function LineSpacingPage({ modelName, modelSlug, faqItems, conten
         </section>
 
         <section className="relative w-full mt-6">
-          <div className="w-full max-w-none rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6">
+          <div className="w-full max-w-none rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6">
             <LineSpacingTool modelName={modelName} />
           </div>
         </section>
@@ -68,7 +68,7 @@ export default function LineSpacingPage({ modelName, modelSlug, faqItems, conten
           normalizedContent
         ) : (
           <section className="space-y-6 mt-10">
-            <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 space-y-4">
+            <div className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 space-y-4">
               <h2 className="text-xl font-semibold text-slate-900">How it works</h2>
               <ul className="list-disc list-inside space-y-1 text-slate-700">
                 <li>Choose single, 1.5, double, or custom line spacing.</li>
@@ -76,7 +76,7 @@ export default function LineSpacingPage({ modelName, modelSlug, faqItems, conten
                 <li>Use for readability and formatting in docs or CMS.</li>
               </ul>
             </div>
-            <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 space-y-4">
+            <div className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 space-y-4">
               <h2 className="text-xl font-semibold text-slate-900">What it can / can&apos;t do</h2>
               <ul className="list-disc list-inside space-y-1 text-slate-700">
                 <li>Can normalize line spacing for cleaner layout.</li>

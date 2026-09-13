@@ -3,7 +3,7 @@ import type { ToolContent } from './index';
 
 function WriteUp() {
   return (
-    <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+    <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
         <h2>QR Code Reader: Free Online QR Scanner to Decode QR Codes from Image</h2>
         <p>The QR Code Reader is a free online QR scanner that decodes QR codes from any image you upload, paste, or drop into your browser. Unlike mobile QR code scanners that require a camera, this web-based QR reader works on any device with a browser "” desktop, laptop, tablet, or phone "” and processes the image entirely on your device. No server upload, no account, no installation, and no daily limit on how many QR codes you can decode.</p>

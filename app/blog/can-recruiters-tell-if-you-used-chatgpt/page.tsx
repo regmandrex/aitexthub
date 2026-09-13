@@ -29,7 +29,7 @@ export default function CanRecruitersDetectChatGPTPage() {
         <AdSenseSlot className="w-full" />
       </div>
 
-      <div className="rounded-[28px] border border-slate-200 bg-white/70 p-6 shadow-xl shadow-slate-900/5 backdrop-blur-lg">
+      <div className="rounded-[28px] border-3 border-black bg-white/70 p-6 shadow-neo-lg shadow-slate-900/5 backdrop-blur-lg">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">What hiring teams actually check</p>
         <h1 className="mt-3 text-3xl font-semibold text-slate-900">Can Recruiters Tell If You Used ChatGPT?</h1>
         <p className="mt-2 text-slate-600">
@@ -43,7 +43,7 @@ export default function CanRecruitersDetectChatGPTPage() {
             { title: 'What actually gets flagged', detail: 'AI patterns and invisible characters' },
             { title: 'The right approach', detail: 'Using AI properly for job applications' },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-100 bg-slate-50 p-4 text-xs text-slate-700">
+            <div key={item.title} className="rounded-2xl border-2 border-black bg-slate-50 p-4 text-xs text-slate-700">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.detail}</p>
             </div>
@@ -69,7 +69,7 @@ export default function CanRecruitersDetectChatGPTPage() {
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">How recruiters detect AI-written applications</h2>
         <div className="space-y-4">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Pattern recognition from experience</p>
             <p className="mt-2">
               Recruiters who read hundreds of applications per week develop a strong intuition for AI-generated text. The tell-tale signs
@@ -78,7 +78,7 @@ export default function CanRecruitersDetectChatGPTPage() {
               applied to a person, not a person describing their actual work.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">AI detection software in ATS platforms</p>
             <p className="mt-2">
               Some Applicant Tracking Systems (ATS) are beginning to integrate AI content detection. Tools like Workday and Greenhouse
@@ -87,7 +87,7 @@ export default function CanRecruitersDetectChatGPTPage() {
               larger organisations.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Interview follow-up</p>
             <p className="mt-2">
               The most common way AI-written applications are &quot;detected&quot; is not at the screening stage — it is at the interview.
@@ -110,7 +110,7 @@ export default function CanRecruitersDetectChatGPTPage() {
             { signal: 'Missing invisible characters', detail: 'Technical note: raw ChatGPT output contains zero-width spaces and Unicode artifacts. Sophisticated ATS scanning can detect these at the character level.' },
             { signal: 'No specific numbers or context', detail: '"Improved team performance" instead of "Reduced onboarding time from 6 weeks to 3 by rewriting the internal training wiki."' },
           ].map((item) => (
-            <div key={item.signal} className="rounded-2xl border border-slate-200 bg-white/60 p-4 text-sm text-slate-700 shadow-sm">
+            <div key={item.signal} className="rounded-2xl border-3 border-black bg-white/60 p-4 text-sm text-slate-700 shadow-neo-sm">
               <p className="font-semibold text-slate-900">{item.signal}</p>
               <p className="mt-1">{item.detail}</p>
             </div>
@@ -153,7 +153,7 @@ export default function CanRecruitersDetectChatGPTPage() {
             { step: '4. Humanize and personalise', detail: 'Review every sentence. Add back anything specific to you — a project name, a team size, a technology you used. Remove or replace any phrase that sounds like it could have come from any other candidate.' },
             { step: '5. Read it aloud', detail: "If you can't say it naturally in an interview, rewrite it. Your cover letter should sound like how you'd actually speak about your work, not a formal document written by a corporate communications team." },
           ].map((item) => (
-            <div key={item.step} className="rounded-2xl border border-slate-200 bg-white/60 p-4 text-sm text-slate-700 shadow-sm">
+            <div key={item.step} className="rounded-2xl border-3 border-black bg-white/60 p-4 text-sm text-slate-700 shadow-neo-sm">
               <p className="font-semibold text-slate-900">{item.step}</p>
               <p className="mt-1">{item.detail}</p>
             </div>

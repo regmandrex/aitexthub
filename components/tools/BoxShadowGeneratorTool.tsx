@@ -41,8 +41,8 @@ export function BoxShadowGeneratorTool() {
       <div className="flex items-center gap-4 flex-wrap">
         <div className="flex items-center gap-2">
           <label className="text-sm font-medium text-slate-700">Color</label>
-          <input type="color" value={color.slice(0, 7)} onChange={e => setColor(e.target.value + color.slice(7))} className="w-10 h-8 rounded cursor-pointer border border-slate-200" />
-          <input type="text" value={color} onChange={e => setColor(e.target.value)} className="w-28 rounded border border-slate-200 px-2 py-1 text-xs font-mono focus:outline-none focus:ring-1 focus:ring-blue-500" />
+          <input type="color" value={color.slice(0, 7)} onChange={e => setColor(e.target.value + color.slice(7))} className="w-10 h-8 rounded cursor-pointer border-3 border-black" />
+          <input type="text" value={color} onChange={e => setColor(e.target.value)} className="w-28 rounded border-3 border-black px-2 py-1 text-xs font-mono focus:outline-none focus:ring-1 focus:ring-blue-500" />
         </div>
         <label className="flex items-center gap-2 text-sm text-slate-700 cursor-pointer">
           <input type="checkbox" checked={inset} onChange={e => setInset(e.target.checked)} className="rounded" />
@@ -55,7 +55,7 @@ export function BoxShadowGeneratorTool() {
         <div className="space-y-2 flex-1">
           <label className="block text-sm font-medium text-slate-700">CSS</label>
           <div className="flex items-center gap-2">
-            <code className="flex-1 rounded border border-slate-200 bg-slate-50 px-3 py-2 text-xs font-mono break-all">{css}</code>
+            <code className="flex-1 rounded border-3 border-black bg-slate-50 px-3 py-2 text-xs font-mono break-all">{css}</code>
             <button onClick={copy} className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors whitespace-nowrap ${copied ? 'bg-green-500 text-white' : 'bg-blue-600 hover:bg-blue-700 text-white'}`}>{copied ? '✓ Copied!' : 'Copy'}</button>
           </div>
         </div>

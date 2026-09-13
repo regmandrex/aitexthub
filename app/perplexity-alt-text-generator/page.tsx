@@ -17,7 +17,7 @@ const toolSlug = 'perplexity-alt-text-generator';
 
 function createWriteUp() {
   return (
-    <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+    <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
         <h2>Perplexity Alt Text Generator: Create Accessible Image Alt Text</h2>
         <p>A Perplexity Alt Text Generator is a free online tool that generates accessible alt text for images from Perplexity descriptions. Alt text helps screen readers and search engines understand images; it is essential for accessibility and can support SEO. This tool helps you create concise, accurate descriptions that work for all users.</p>

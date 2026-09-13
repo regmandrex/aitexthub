@@ -40,11 +40,11 @@ export function BcryptGeneratorTool() {
       <div className="space-y-3">
         <div>
           <label className="block text-sm font-medium text-slate-700 mb-1">Password to hash</label>
-          <input type="text" value={password} onChange={e => setPassword(e.target.value)} placeholder="Enter password..." className="w-full rounded-lg border border-slate-200 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500" />
+          <input type="text" value={password} onChange={e => setPassword(e.target.value)} placeholder="Enter password..." className="w-full rounded-lg border-3 border-black px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500" />
         </div>
         <div className="flex items-center gap-3">
           <label className="text-sm font-medium text-slate-700">Cost factor (rounds)</label>
-          <select value={rounds} onChange={e => setRounds(Number(e.target.value))} className="rounded-lg border border-slate-200 px-3 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
+          <select value={rounds} onChange={e => setRounds(Number(e.target.value))} className="rounded-lg border-3 border-black px-3 py-1.5 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500">
             {[8, 9, 10, 11, 12].map(r => <option key={r} value={r}>{r} {r === 10 ? '(default)' : r >= 12 ? '(slow)' : ''}</option>)}
           </select>
         </div>
@@ -57,17 +57,17 @@ export function BcryptGeneratorTool() {
         <div className="space-y-2">
           <label className="block text-sm font-medium text-slate-700">Bcrypt hash</label>
           <div className="flex items-start gap-2">
-            <code className="flex-1 rounded-lg border border-slate-200 bg-slate-50 px-3 py-2 text-xs font-mono break-all">{hash}</code>
+            <code className="flex-1 rounded-lg border-3 border-black bg-slate-50 px-3 py-2 text-xs font-mono break-all">{hash}</code>
             <button onClick={copy} className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors whitespace-nowrap ${copied ? 'bg-green-500 text-white' : 'bg-blue-600 hover:bg-blue-700 text-white'}`}>{copied ? '✓ Copied!' : 'Copy'}</button>
           </div>
         </div>
       )}
 
       {hash && (
-        <div className="space-y-2 border-t border-slate-200 pt-4">
+        <div className="space-y-2 border-t-3 border-black pt-4">
           <label className="block text-sm font-medium text-slate-700">Verify password</label>
           <div className="flex gap-2">
-            <input type="text" value={verifyInput} onChange={e => { setVerifyInput(e.target.value); setVerifyResult(null); }} placeholder="Enter password to verify..." className="flex-1 rounded-lg border border-slate-200 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500" />
+            <input type="text" value={verifyInput} onChange={e => { setVerifyInput(e.target.value); setVerifyResult(null); }} placeholder="Enter password to verify..." className="flex-1 rounded-lg border-3 border-black px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500" />
             <button onClick={verify} className="px-4 py-2 rounded-lg bg-slate-700 hover:bg-slate-800 text-white text-sm font-medium transition-colors">Verify</button>
           </div>
           {verifyResult !== null && (

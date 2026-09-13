@@ -39,7 +39,7 @@ export function ToolPageShell({ tool, ui, related, children }: ToolPageShellProp
         </section>
 
         <section className="relative w-full mt-6">
-          <div className="w-full max-w-none rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6">
+          <div className="w-full max-w-none rounded-2xl border-3 border-black bg-white p-4 shadow-neo-lg md:p-6">
             {ui}
           </div>
         </section>

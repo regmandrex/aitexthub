@@ -146,7 +146,7 @@ export function RhymeFinderTool() {
   }
 
   return (
-    <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm sm:p-6">
+    <div className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm sm:p-6">
       <label htmlFor="rhyme-input" className="text-sm font-medium text-slate-900">
         라임을 찾을 단어를 입력하세요
       </label>
@@ -159,7 +159,7 @@ export function RhymeFinderTool() {
           setSearched(false);
         }}
         placeholder="예: 사랑"
-        className="mt-2 w-full rounded-lg border border-slate-300 px-4 py-2.5 text-base outline-none focus:border-indigo-500"
+        className="mt-2 w-full rounded-lg border-2 border-black px-4 py-2.5 text-base outline-none focus:border-indigo-500"
       />
 
       <div className="mt-4 space-y-1">
@@ -179,7 +179,7 @@ export function RhymeFinderTool() {
             className={
               mode === m.key
                 ? 'rounded-full border px-3 py-1.5 text-sm transition border-indigo-500 bg-indigo-500 text-white'
-                : 'rounded-full border px-3 py-1.5 text-sm transition border-slate-300 bg-white text-slate-700 hover:border-indigo-300'
+                : 'rounded-full border px-3 py-1.5 text-sm transition border-black bg-white text-slate-700 hover:border-indigo-300'
             }
           >
             {m.label}
@@ -200,7 +200,7 @@ export function RhymeFinderTool() {
           <button
             type="button"
             onClick={copyAll}
-            className="rounded-lg border border-slate-300 px-4 py-2 text-sm text-slate-700 hover:border-indigo-300"
+            className="rounded-lg border-2 border-black px-4 py-2 text-sm text-slate-700 hover:border-indigo-300"
           >
             {copied ? '복사됨!' : '전체 복사'}
           </button>
@@ -234,7 +234,7 @@ export function RhymeFinderTool() {
                 className={
                   r.score >= 3
                     ? 'rounded-lg border border-indigo-300 bg-indigo-50 px-3 py-1.5 text-sm font-medium text-indigo-900'
-                    : 'rounded-lg border border-slate-200 bg-slate-50 px-3 py-1.5 text-sm text-slate-700'
+                    : 'rounded-lg border-3 border-black bg-slate-50 px-3 py-1.5 text-sm text-slate-700'
                 }
               >
                 {r.word}

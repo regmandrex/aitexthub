@@ -48,13 +48,13 @@ export function CronGeneratorTool() {
       <div>
         <label className="block text-sm font-medium text-slate-700 mb-1">Cron expression</label>
         <div className="flex gap-2">
-          <input type="text" value={cron} onChange={e => setCron(e.target.value)} className="flex-1 rounded-lg border border-slate-200 px-3 py-2 text-sm font-mono focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="* * * * *" />
+          <input type="text" value={cron} onChange={e => setCron(e.target.value)} className="flex-1 rounded-lg border-3 border-black px-3 py-2 text-sm font-mono focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="* * * * *" />
           <button onClick={copy} className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors whitespace-nowrap ${copied ? 'bg-green-500 text-white' : 'bg-blue-600 hover:bg-blue-700 text-white'}`}>{copied ? '✓ Copied!' : 'Copy'}</button>
         </div>
         <p className="mt-2 text-xs text-slate-500 font-mono">minute · hour · day-of-month · month · day-of-week</p>
       </div>
 
-      <div className="rounded-lg bg-slate-50 border border-slate-200 px-4 py-3">
+      <div className="rounded-lg bg-slate-50 border-3 border-black px-4 py-3">
         <p className="text-sm text-slate-700"><span className="font-medium">Meaning: </span>{describe(cron)}</p>
       </div>
 
@@ -62,7 +62,7 @@ export function CronGeneratorTool() {
         <label className="block text-sm font-medium text-slate-700 mb-2">Common presets</label>
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
           {presets.map(p => (
-            <button key={p.cron} onClick={() => setCron(p.cron)} className={`text-left px-3 py-2 rounded-lg border text-sm transition-colors ${cron === p.cron ? 'border-blue-500 bg-blue-50 text-blue-800' : 'border-slate-200 hover:bg-slate-50 text-slate-700'}`}>
+            <button key={p.cron} onClick={() => setCron(p.cron)} className={`text-left px-3 py-2 rounded-lg border text-sm transition-colors ${cron === p.cron ? 'border-blue-500 bg-blue-50 text-blue-800' : 'border-black hover:bg-slate-50 text-slate-700'}`}>
               <span className="font-mono text-xs text-slate-500 block">{p.cron}</span>
               {p.label}
             </button>

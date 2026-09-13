@@ -48,7 +48,7 @@ function BulkCopyBox() {
           max={1000}
           value={count}
           onChange={e => setCount(Math.max(1, Math.min(1000, Number(e.target.value))))}
-          className="w-20 border border-slate-300 rounded px-2 py-1 text-sm"
+          className="w-20 border-2 border-black rounded px-2 py-1 text-sm"
         />
       </div>
       <button
@@ -63,11 +63,11 @@ function BulkCopyBox() {
 
 export function InvisibleCharGrid() {
   return (
-    <section className="mt-6 w-full rounded-xl border border-slate-200 bg-white p-4 shadow-sm md:rounded-2xl md:p-6">
+    <section className="mt-6 w-full rounded-xl border-3 border-black bg-white p-4 shadow-neo-sm md:rounded-2xl md:p-6">
       <h2 className="text-base font-semibold text-slate-800 mb-4">Click to Copy Invisible Characters</h2>
       <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
         {characters.map((c) => (
-          <div key={c.unicode} className="flex flex-col gap-2 rounded-lg border border-slate-100 bg-slate-50 p-3">
+          <div key={c.unicode} className="flex flex-col gap-2 rounded-lg border-2 border-black bg-slate-50 p-3">
             <div className="flex items-start justify-between gap-2">
               <div>
                 <p className="text-sm font-semibold text-slate-800">{c.name}</p>

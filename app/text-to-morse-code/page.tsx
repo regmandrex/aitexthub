@@ -198,7 +198,7 @@ const faqs: FaqItem[] = [
 ];
 
 const writeUp = (
-  <section className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm md:p-10 space-y-6 mt-10">
+  <section className="rounded-2xl border-3 border-black bg-white p-8 shadow-neo-sm md:p-10 space-y-6 mt-10">
     <div className="prose prose-slate max-w-none">
       <h2 className="text-2xl font-semibold text-slate-900">Text to Morse Code Converter: Complete Guide to Encoding Text into Morse Code</h2>
       
@@ -261,141 +261,141 @@ const writeUp = (
         This table shows the standard ITU Morse code for all supported characters. Use it to verify conversions or learn the patterns manually.
       </p>
       <div className="overflow-x-auto my-4">
-        <table className="min-w-full border border-slate-300">
+        <table className="min-w-full border-2 border-black">
           <thead className="bg-slate-100">
             <tr>
-              <th className="border border-slate-300 px-4 py-2 text-left">Character</th>
-              <th className="border border-slate-300 px-4 py-2 text-left">Morse Code</th>
-              <th className="border border-slate-300 px-4 py-2 text-left">Character</th>
-              <th className="border border-slate-300 px-4 py-2 text-left">Morse Code</th>
+              <th className="border-2 border-black px-4 py-2 text-left">Character</th>
+              <th className="border-2 border-black px-4 py-2 text-left">Morse Code</th>
+              <th className="border-2 border-black px-4 py-2 text-left">Character</th>
+              <th className="border-2 border-black px-4 py-2 text-left">Morse Code</th>
             </tr>
           </thead>
           <tbody className="text-sm">
             <tr>
-              <td className="border border-slate-300 px-4 py-2">A</td>
-              <td className="border border-slate-300 px-4 py-2 font-mono">.-</td>
-              <td className="border border-slate-300 px-4 py-2">N</td>
-              <td className="border border-slate-300 px-4 py-2 font-mono">-.</td>
+              <td className="border-2 border-black px-4 py-2">A</td>
+              <td className="border-2 border-black px-4 py-2 font-mono">.-</td>
+              <td className="border-2 border-black px-4 py-2">N</td>
+              <td className="border-2 border-black px-4 py-2 font-mono">-.</td>
             </tr>
             <tr>
-              <td className="border border-slate-300 px-4 py-2">B</td>
-              <td className="border border-slate-300 px-4 py-2 font-mono">-...</td>
-              <td className="border border-slate-300 px-4 py-2">O</td>
-              <td className="border border-slate-300 px-4 py-2 font-mono">---</td>
+              <td className="border-2 border-black px-4 py-2">B</td>
+              <td className="border-2 border-black px-4 py-2 font-mono">-...</td>
+              <td className="border-2 border-black px-4 py-2">O</td>
+              <td className="border-2 border-black px-4 py-2 font-mono">---</td>
             </tr>
             <tr>
-              <td className="border border-slate-300 px-4 py-2">C</td>
-              <td className="border border-slate-300 px-4 py-2 font-mono">-.-.</td>
-              <td className="border border-slate-300 px-4 py-2">P</td>
-              <td className="border border-slate-300 px-4 py-2 font-mono">.--.</td>
+              <td className="border-2 border-black px-4 py-2">C</td>
+              <td className="border-2 border-black px-4 py-2 font-mono">-.-.</td>
+              <td className="border-2 border-black px-4 py-2">P</td>
+              <td className="border-2 border-black px-4 py-2 font-mono">.--.</td>
             </tr>
             <tr>
-              <td className="border border-slate-300 px-4 py-2">D</td>
-              <td className="border border-slate-300 px-4 py-2 font-mono">-..</td>
-              <td className="border border-slate-300 px-4 py-2">Q</td>
-              <td className="border border-slate-300 px-4 py-2 font-mono">--.-</td>
+              <td className="border-2 border-black px-4 py-2">D</td>
+              <td className="border-2 border-black px-4 py-2 font-mono">-..</td>
+              <td className="border-2 border-black px-4 py-2">Q</td>
+              <td className="border-2 border-black px-4 py-2 font-mono">--.-</td>
             </tr>
             <tr>
-              <td className="border border-slate-300 px-4 py-2">E</td>
-              <td className="border border-slate-300 px-4 py-2 font-mono">.</td>
-              <td className="border border-slate-300 px-4 py-2">R</td>
-              <td className="border border-slate-300 px-4 py-2 font-mono">.-.</td>
+              <td className="border-2 border-black px-4 py-2">E</td>
+              <td className="border-2 border-black px-4 py-2 font-mono">.</td>
+              <td className="border-2 border-black px-4 py-2">R</td>
+              <td className="border-2 border-black px-4 py-2 font-mono">.-.</td>
             </tr>
             <tr>
-              <td className="border border-slate-300 px-4 py-2">F</td>
-              <td className="border border-slate-300 px-4 py-2 font-mono">..-.</td>
-              <td className="border border-slate-300 px-4 py-2">S</td>
-              <td className="border border-slate-300 px-4 py-2 font-mono">...</td>
+              <td className="border-2 border-black px-4 py-2">F</td>
+              <td className="border-2 border-black px-4 py-2 font-mono">..-.</td>
+              <td className="border-2 border-black px-4 py-2">S</td>
+              <td className="border-2 border-black px-4 py-2 font-mono">...</td>
             </tr>
             <tr>
-              <td className="border border-slate-300 px-4 py-2">G</td>
-              <td className="border border-slate-300 px-4 py-2 font-mono">--.</td>
-              <td className="border border-slate-300 px-4 py-2">T</td>
-              <td className="border border-slate-300 px-4 py-2 font-mono">-</td>
+              <td className="border-2 border-black px-4 py-2">G</td>
+              <td className="border-2 border-black px-4 py-2 font-mono">--.</td>
+              <td className="border-2 border-black px-4 py-2">T</td>
+              <td className="border-2 border-black px-4 py-2 font-mono">-</td>
             </tr>
             <tr>
-              <td className="border border-slate-300 px-4 py-2">H</td>
-              <td className="border border-slate-300 px-4 py-2 font-mono">....</td>
-              <td className="border border-slate-300 px-4 py-2">U</td>
-              <td className="border border-slate-300 px-4 py-2 font-mono">..-</td>
+              <td className="border-2 border-black px-4 py-2">H</td>
+              <td className="border-2 border-black px-4 py-2 font-mono">....</td>
+              <td className="border-2 border-black px-4 py-2">U</td>
+              <td className="border-2 border-black px-4 py-2 font-mono">..-</td>
             </tr>
             <tr>
-              <td className="border border-slate-300 px-4 py-2">I</td>
-              <td className="border border-slate-300 px-4 py-2 font-mono">..</td>
-              <td className="border border-slate-300 px-4 py-2">V</td>
-              <td className="border border-slate-300 px-4 py-2 font-mono">...-</td>
+              <td className="border-2 border-black px-4 py-2">I</td>
+              <td className="border-2 border-black px-4 py-2 font-mono">..</td>
+              <td className="border-2 border-black px-4 py-2">V</td>
+              <td className="border-2 border-black px-4 py-2 font-mono">...-</td>
             </tr>
             <tr>
-              <td className="border border-slate-300 px-4 py-2">J</td>
-              <td className="border border-slate-300 px-4 py-2 font-mono">.---</td>
-              <td className="border border-slate-300 px-4 py-2">W</td>
-              <td className="border border-slate-300 px-4 py-2 font-mono">.--</td>
+              <td className="border-2 border-black px-4 py-2">J</td>
+              <td className="border-2 border-black px-4 py-2 font-mono">.---</td>
+              <td className="border-2 border-black px-4 py-2">W</td>
+              <td className="border-2 border-black px-4 py-2 font-mono">.--</td>
             </tr>
             <tr>
-              <td className="border border-slate-300 px-4 py-2">K</td>
-              <td className="border border-slate-300 px-4 py-2 font-mono">-.-</td>
-              <td className="border border-slate-300 px-4 py-2">X</td>
-              <td className="border border-slate-300 px-4 py-2 font-mono">-..-</td>
+              <td className="border-2 border-black px-4 py-2">K</td>
+              <td className="border-2 border-black px-4 py-2 font-mono">-.-</td>
+              <td className="border-2 border-black px-4 py-2">X</td>
+              <td className="border-2 border-black px-4 py-2 font-mono">-..-</td>
             </tr>
             <tr>
-              <td className="border border-slate-300 px-4 py-2">L</td>
-              <td className="border border-slate-300 px-4 py-2 font-mono">.-..</td>
-              <td className="border border-slate-300 px-4 py-2">Y</td>
-              <td className="border border-slate-300 px-4 py-2 font-mono">-.--</td>
+              <td className="border-2 border-black px-4 py-2">L</td>
+              <td className="border-2 border-black px-4 py-2 font-mono">.-..</td>
+              <td className="border-2 border-black px-4 py-2">Y</td>
+              <td className="border-2 border-black px-4 py-2 font-mono">-.--</td>
             </tr>
             <tr>
-              <td className="border border-slate-300 px-4 py-2">M</td>
-              <td className="border border-slate-300 px-4 py-2 font-mono">--</td>
-              <td className="border border-slate-300 px-4 py-2">Z</td>
-              <td className="border border-slate-300 px-4 py-2 font-mono">--..</td>
+              <td className="border-2 border-black px-4 py-2">M</td>
+              <td className="border-2 border-black px-4 py-2 font-mono">--</td>
+              <td className="border-2 border-black px-4 py-2">Z</td>
+              <td className="border-2 border-black px-4 py-2 font-mono">--..</td>
             </tr>
             <tr>
-              <td className="border border-slate-300 px-4 py-2">0</td>
-              <td className="border border-slate-300 px-4 py-2 font-mono">-----</td>
-              <td className="border border-slate-300 px-4 py-2">5</td>
-              <td className="border border-slate-300 px-4 py-2 font-mono">.....</td>
+              <td className="border-2 border-black px-4 py-2">0</td>
+              <td className="border-2 border-black px-4 py-2 font-mono">-----</td>
+              <td className="border-2 border-black px-4 py-2">5</td>
+              <td className="border-2 border-black px-4 py-2 font-mono">.....</td>
             </tr>
             <tr>
-              <td className="border border-slate-300 px-4 py-2">1</td>
-              <td className="border border-slate-300 px-4 py-2 font-mono">.----</td>
-              <td className="border border-slate-300 px-4 py-2">6</td>
-              <td className="border border-slate-300 px-4 py-2 font-mono">-....</td>
+              <td className="border-2 border-black px-4 py-2">1</td>
+              <td className="border-2 border-black px-4 py-2 font-mono">.----</td>
+              <td className="border-2 border-black px-4 py-2">6</td>
+              <td className="border-2 border-black px-4 py-2 font-mono">-....</td>
             </tr>
             <tr>
-              <td className="border border-slate-300 px-4 py-2">2</td>
-              <td className="border border-slate-300 px-4 py-2 font-mono">..---</td>
-              <td className="border border-slate-300 px-4 py-2">7</td>
-              <td className="border border-slate-300 px-4 py-2 font-mono">--...</td>
+              <td className="border-2 border-black px-4 py-2">2</td>
+              <td className="border-2 border-black px-4 py-2 font-mono">..---</td>
+              <td className="border-2 border-black px-4 py-2">7</td>
+              <td className="border-2 border-black px-4 py-2 font-mono">--...</td>
             </tr>
             <tr>
-              <td className="border border-slate-300 px-4 py-2">3</td>
-              <td className="border border-slate-300 px-4 py-2 font-mono">...--</td>
-              <td className="border border-slate-300 px-4 py-2">8</td>
-              <td className="border border-slate-300 px-4 py-2 font-mono">---..</td>
+              <td className="border-2 border-black px-4 py-2">3</td>
+              <td className="border-2 border-black px-4 py-2 font-mono">...--</td>
+              <td className="border-2 border-black px-4 py-2">8</td>
+              <td className="border-2 border-black px-4 py-2 font-mono">---..</td>
             </tr>
             <tr>
-              <td className="border border-slate-300 px-4 py-2">4</td>
-              <td className="border border-slate-300 px-4 py-2 font-mono">....-</td>
-              <td className="border border-slate-300 px-4 py-2">9</td>
-              <td className="border border-slate-300 px-4 py-2 font-mono">----.</td>
+              <td className="border-2 border-black px-4 py-2">4</td>
+              <td className="border-2 border-black px-4 py-2 font-mono">....-</td>
+              <td className="border-2 border-black px-4 py-2">9</td>
+              <td className="border-2 border-black px-4 py-2 font-mono">----.</td>
             </tr>
             <tr>
-              <td className="border border-slate-300 px-4 py-2">.</td>
-              <td className="border border-slate-300 px-4 py-2 font-mono">.-.-.-</td>
-              <td className="border border-slate-300 px-4 py-2">?</td>
-              <td className="border border-slate-300 px-4 py-2 font-mono">..--..</td>
+              <td className="border-2 border-black px-4 py-2">.</td>
+              <td className="border-2 border-black px-4 py-2 font-mono">.-.-.-</td>
+              <td className="border-2 border-black px-4 py-2">?</td>
+              <td className="border-2 border-black px-4 py-2 font-mono">..--..</td>
             </tr>
             <tr>
-              <td className="border border-slate-300 px-4 py-2">,</td>
-              <td className="border border-slate-300 px-4 py-2 font-mono">--..--</td>
-              <td className="border border-slate-300 px-4 py-2">!</td>
-              <td className="border border-slate-300 px-4 py-2 font-mono">-.-.--</td>
+              <td className="border-2 border-black px-4 py-2">,</td>
+              <td className="border-2 border-black px-4 py-2 font-mono">--..--</td>
+              <td className="border-2 border-black px-4 py-2">!</td>
+              <td className="border-2 border-black px-4 py-2 font-mono">-.-.--</td>
             </tr>
             <tr>
-              <td className="border border-slate-300 px-4 py-2">/</td>
-              <td className="border border-slate-300 px-4 py-2 font-mono">-..-.</td>
-              <td className="border border-slate-300 px-4 py-2">@</td>
-              <td className="border border-slate-300 px-4 py-2 font-mono">.--.-.</td>
+              <td className="border-2 border-black px-4 py-2">/</td>
+              <td className="border-2 border-black px-4 py-2 font-mono">-..-.</td>
+              <td className="border-2 border-black px-4 py-2">@</td>
+              <td className="border-2 border-black px-4 py-2 font-mono">.--.-.</td>
             </tr>
           </tbody>
         </table>

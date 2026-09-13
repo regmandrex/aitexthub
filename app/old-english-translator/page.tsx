@@ -24,7 +24,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
 function createWriteUp() {
   return (
-    <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+    <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
         <h2>Old English Translator: Translate to Anglo Saxon Online</h2>
         <p>An Old English translator is an online tool that converts modern English into Old English (Anglo-Saxon)—the language of Beowulf, Anglo-Saxon England, and the period before the Norman Conquest. Whether you want to translate to Anglo Saxon for a history class, creative writing, or to explore the earliest form of English, an Old English translator lets you type or paste your text and get a version that echoes the vocabulary and structure of Anglo-Saxon.</p>

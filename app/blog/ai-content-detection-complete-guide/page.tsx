@@ -29,7 +29,7 @@ export default function AIContentDetectionCompleteGuidePage() {
         <AdSenseSlot className="w-full" />
       </div>
 
-      <div className="rounded-[28px] border border-slate-200 bg-white/70 p-6 shadow-xl shadow-slate-900/5 backdrop-blur-lg">
+      <div className="rounded-[28px] border-3 border-black bg-white/70 p-6 shadow-neo-lg shadow-slate-900/5 backdrop-blur-lg">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">How detection works and what to do about it</p>
         <h1 className="mt-3 text-3xl font-semibold text-slate-900">AI Content Detection: The Complete Guide</h1>
         <p className="mt-2 text-slate-600">
@@ -43,7 +43,7 @@ export default function AIContentDetectionCompleteGuidePage() {
             { title: 'Why they fail', detail: 'False positives, false negatives, and edge cases' },
             { title: 'What you can do', detail: 'Clean, edit, and publish with confidence' },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-100 bg-slate-50 p-4 text-xs text-slate-700">
+            <div key={item.title} className="rounded-2xl border-2 border-black bg-slate-50 p-4 text-xs text-slate-700">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.detail}</p>
             </div>
@@ -73,7 +73,7 @@ export default function AIContentDetectionCompleteGuidePage() {
           and classifier models trained on known AI and human text.
         </p>
         <div className="space-y-4">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Perplexity analysis</p>
             <p className="mt-2">
               Perplexity measures how &quot;surprising&quot; each word choice is relative to what a language model would predict. AI-generated
@@ -82,7 +82,7 @@ export default function AIContentDetectionCompleteGuidePage() {
               low-perplexity passages as potentially AI-generated.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Burstiness analysis</p>
             <p className="mt-2">
               Burstiness measures variation in sentence complexity over time. Human writing tends to have high burstiness — complex sentences
@@ -90,7 +90,7 @@ export default function AIContentDetectionCompleteGuidePage() {
               complexity level throughout. Detectors combine perplexity and burstiness scores for more reliable classification.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Unicode and character-level scanning</p>
             <p className="mt-2">
               Some detectors scan for the presence of zero-width spaces, non-breaking spaces, Unicode punctuation variants, and other
@@ -98,7 +98,7 @@ export default function AIContentDetectionCompleteGuidePage() {
               and generate text. Their presence provides an additional detection signal independent of writing quality.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Classifier models</p>
             <p className="mt-2">
               Tools like GPTZero, Copyleaks, and Turnitin train machine learning classifiers on large datasets of known human and AI text.
@@ -121,7 +121,7 @@ export default function AIContentDetectionCompleteGuidePage() {
             { name: 'Winston AI', desc: 'Focused on readability and human score alongside AI detection. Used in agency workflows where content quality verification is needed alongside AI screening.' },
             { name: 'Sapling AI Detector', desc: 'Free tool with API access. Often used for quick screening. Less reliable on edited or humanized text but provides a useful initial signal.' },
           ].map((item) => (
-            <div key={item.name} className="rounded-2xl border border-slate-200 bg-white/60 p-4 text-sm text-slate-700 shadow-sm">
+            <div key={item.name} className="rounded-2xl border-3 border-black bg-white/60 p-4 text-sm text-slate-700 shadow-neo-sm">
               <p className="font-semibold text-slate-900">{item.name}</p>
               <p className="mt-1">{item.desc}</p>
             </div>
@@ -141,7 +141,7 @@ export default function AIContentDetectionCompleteGuidePage() {
           detected.
         </p>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">False positives (human text flagged as AI)</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Academic writing, which is deliberately formal and structured</li>
@@ -151,7 +151,7 @@ export default function AIContentDetectionCompleteGuidePage() {
               <li>Writing that has been heavily edited for clarity and consistency</li>
             </ul>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">False negatives (AI text not detected)</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>AI text that has been heavily edited by a human</li>
@@ -179,7 +179,7 @@ export default function AIContentDetectionCompleteGuidePage() {
             { trigger: 'Overused connector phrases', detail: '"Furthermore", "In conclusion", "It is important to note" — these occur far more frequently in AI text than in human writing.' },
             { trigger: 'Lack of specific examples', detail: 'AI generates generalisations. Human writing anchors points in specific, verifiable, or personal examples.' },
           ].map((item) => (
-            <div key={item.trigger} className="rounded-2xl border border-slate-200 bg-white/60 p-4 text-sm text-slate-700 shadow-sm">
+            <div key={item.trigger} className="rounded-2xl border-3 border-black bg-white/60 p-4 text-sm text-slate-700 shadow-neo-sm">
               <p className="font-semibold text-slate-900">{item.trigger}</p>
               <p className="mt-1">{item.detail}</p>
             </div>

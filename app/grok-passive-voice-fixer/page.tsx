@@ -17,7 +17,7 @@ const toolSlug = 'grok-passive-voice-fixer';
 
 function createWriteUp() {
   return (
-    <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+    <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
         <h2>Grok Passive Voice Fixer: Convert Passive to Active Voice</h2>
         <p>A Grok Passive Voice Fixer is a free online tool that converts passive voice to active voice in Grok-generated content. It helps you make writing more direct, engaging, and clear—especially in academic, professional, and marketing copy where active voice is often preferred.</p>

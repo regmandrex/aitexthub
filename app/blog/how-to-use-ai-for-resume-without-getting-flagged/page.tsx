@@ -29,7 +29,7 @@ export default function HowToUseAIForResumePage() {
         <AdSenseSlot className="w-full" />
       </div>
 
-      <div className="rounded-[28px] border border-slate-200 bg-white/70 p-6 shadow-xl shadow-slate-900/5 backdrop-blur-lg">
+      <div className="rounded-[28px] border-3 border-black bg-white/70 p-6 shadow-neo-lg shadow-slate-900/5 backdrop-blur-lg">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Smart AI use for job seekers</p>
         <h1 className="mt-3 text-3xl font-semibold text-slate-900">How to Use AI for Your Resume Without Getting Flagged</h1>
         <p className="mt-2 text-slate-600">
@@ -43,7 +43,7 @@ export default function HowToUseAIForResumePage() {
             { title: 'Detection avoidance', detail: 'Personalise and humanize output' },
             { title: 'Interview readiness', detail: 'Content you can actually discuss' },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-100 bg-slate-50 p-4 text-xs text-slate-700">
+            <div key={item.title} className="rounded-2xl border-2 border-black bg-slate-50 p-4 text-xs text-slate-700">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.detail}</p>
             </div>
@@ -58,7 +58,7 @@ export default function HowToUseAIForResumePage() {
           you address them properly rather than just hoping for the best.
         </p>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Technical flagging</p>
             <p className="mt-2">
               Raw ChatGPT output contains invisible Unicode characters — zero-width spaces, non-breaking spaces, and variant punctuation —
@@ -66,7 +66,7 @@ export default function HowToUseAIForResumePage() {
               into Word, Google Docs, or a PDF template. They are present even in well-written AI output and need to be actively removed.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Qualitative flagging</p>
             <p className="mt-2">
               Experienced recruiters and hiring managers recognize AI-generated resumes by their content, not their characters. Generic
@@ -89,7 +89,7 @@ export default function HowToUseAIForResumePage() {
             { step: 'Step 5: Write your cover letter separately', detail: 'Cover letters are where generic AI output is most obvious. Write the structure and key points yourself, then use AI to improve the language. The opening paragraph especially must be specific to the role and company — AI cannot do this without real context from you.' },
             { step: 'Step 6: Test in ATS format before submitting', detail: 'Many companies use ATS platforms that parse resume text. Export your final resume to plain text and check that all formatting, names, dates, and bullet points survive. Hidden characters can break parsing.' },
           ].map((item) => (
-            <div key={item.step} className="rounded-2xl border border-slate-200 bg-white/60 p-4 text-sm text-slate-700 shadow-sm">
+            <div key={item.step} className="rounded-2xl border-3 border-black bg-white/60 p-4 text-sm text-slate-700 shadow-neo-sm">
               <p className="font-semibold text-slate-900">{item.step}</p>
               <p className="mt-1">{item.detail}</p>
             </div>
@@ -142,7 +142,7 @@ export default function HowToUseAIForResumePage() {
             { item: 'Technology and tool names', detail: "Replace 'proficient in data tools' with the actual tools: Looker, dbt, BigQuery, Snowflake. Specificity is what gets resumes through keyword filtering." },
             { item: 'The reason you want this role', detail: "AI writes 'I am excited about this opportunity' for every application. Write one sentence that is actually true for this specific job — even if the reason is mundane." },
           ].map((item) => (
-            <div key={item.item} className="rounded-2xl border border-slate-200 bg-white/60 p-4 text-sm text-slate-700 shadow-sm">
+            <div key={item.item} className="rounded-2xl border-3 border-black bg-white/60 p-4 text-sm text-slate-700 shadow-neo-sm">
               <p className="font-semibold text-slate-900">{item.item}</p>
               <p className="mt-1">{item.detail}</p>
             </div>
@@ -159,7 +159,7 @@ export default function HowToUseAIForResumePage() {
             { q: 'Should I disclose that I used AI?', a: "There is no standard expectation of disclosure for job applications. Using AI to draft or improve your resume is comparable to using a writing service or having someone proofread. What matters is that the content is accurate and represents you." },
             { q: 'What if I am not a strong writer?', a: 'AI is particularly useful in this case — for grammar, structure, and phrasing. The key is still providing the raw material: your actual achievements, skills, and experience. AI can improve how it is expressed; it cannot invent it.' },
           ].map((item) => (
-            <div key={item.q} className="rounded-2xl border border-slate-200 bg-white/60 p-4 text-sm text-slate-700 shadow-sm">
+            <div key={item.q} className="rounded-2xl border-3 border-black bg-white/60 p-4 text-sm text-slate-700 shadow-neo-sm">
               <p className="font-semibold text-slate-900">{item.q}</p>
               <p className="mt-1">{item.a}</p>
             </div>

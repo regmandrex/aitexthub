@@ -340,7 +340,7 @@ export function NicknameTool() {
             value={name}
             onChange={(event) => setName(event.target.value)}
             placeholder="예: 김한나"
-            className="w-full rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm shadow-sm focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100"
+            className="w-full rounded-xl border-3 border-black bg-white px-3 py-2 text-sm shadow-neo-sm focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100"
           />
         </div>
 
@@ -354,7 +354,7 @@ export function NicknameTool() {
             onChange={(event) => setFeatures(event.target.value)}
             placeholder="예: 귀여움, 활발함, 게임 좋아함"
             rows={3}
-            className="w-full rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm shadow-sm focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100"
+            className="w-full rounded-xl border-3 border-black bg-white px-3 py-2 text-sm shadow-neo-sm focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-100"
           />
         </div>
       </div>
@@ -375,7 +375,7 @@ export function NicknameTool() {
               className={`rounded-full border px-3 py-1.5 text-xs font-semibold transition ${
                 style === option.key
                   ? 'border-brand-600 bg-brand-600 text-white'
-                  : 'border-slate-200 bg-white text-slate-700 hover:border-brand-200'
+                  : 'border-black bg-white text-slate-700 hover:border-brand-200'
               }`}
             >
               {option.label}
@@ -396,7 +396,7 @@ export function NicknameTool() {
           <button
             type="button"
             onClick={() => handleGenerate(roll + 1)}
-            className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
+            className="inline-flex items-center justify-center rounded-lg border-3 border-black bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
           >
             다시 생성
           </button>
@@ -406,7 +406,7 @@ export function NicknameTool() {
 
       {error ? <p className="text-sm text-rose-600">{error}</p> : null}
 
-      <div className="rounded-2xl border border-slate-200 bg-slate-50 p-4">
+      <div className="rounded-2xl border-3 border-black bg-slate-50 p-4">
         <div className="flex items-center justify-between gap-2">
           <h3 className="text-sm font-semibold text-slate-900">추천 결과</h3>
           <span className="rounded-full bg-white px-2 py-1 text-xs text-slate-600">
@@ -423,7 +423,7 @@ export function NicknameTool() {
             {results.map((item) => (
               <div
                 key={item}
-                className="flex flex-wrap items-center justify-between gap-2 rounded-xl border border-slate-200 bg-white px-3 py-2"
+                className="flex flex-wrap items-center justify-between gap-2 rounded-xl border-3 border-black bg-white px-3 py-2"
               >
                 <span className="text-sm font-medium text-slate-900">{item}</span>
                 <div className="flex items-center gap-2">
@@ -433,7 +433,7 @@ export function NicknameTool() {
                     className={`rounded-lg border px-2.5 py-1 text-xs font-semibold ${
                       favoriteSet.has(item)
                         ? 'border-yellow-400 bg-yellow-100 text-yellow-700'
-                        : 'border-slate-200 bg-white text-slate-600'
+                        : 'border-black bg-white text-slate-600'
                     }`}
                     aria-pressed={favoriteSet.has(item)}
                     aria-label="즐겨찾기 토글"
@@ -443,7 +443,7 @@ export function NicknameTool() {
                   <button
                     type="button"
                     onClick={() => handleCopy(item)}
-                    className="rounded-lg border border-slate-200 bg-white px-2.5 py-1 text-xs font-semibold text-slate-700 hover:bg-slate-50"
+                    className="rounded-lg border-3 border-black bg-white px-2.5 py-1 text-xs font-semibold text-slate-700 hover:bg-slate-50"
                   >
                     {copiedValue === item ? '복사됨' : '복사'}
                   </button>
@@ -455,27 +455,27 @@ export function NicknameTool() {
       </div>
 
       {favorites.length > 0 ? (
-        <div className="rounded-2xl border border-slate-200 bg-white p-4">
+        <div className="rounded-2xl border-3 border-black bg-white p-4">
           <div className="flex flex-wrap items-center justify-between gap-2">
             <h4 className="text-sm font-semibold text-slate-900">즐겨찾기</h4>
             <span className="text-xs text-slate-500">이 브라우저에만 저장됩니다.</span>
           </div>
           <div className="mt-3 space-y-2">
             {favorites.map((item) => (
-              <div key={item} className="flex flex-wrap items-center justify-between gap-2 rounded-lg border border-slate-200 px-3 py-2">
+              <div key={item} className="flex flex-wrap items-center justify-between gap-2 rounded-lg border-3 border-black px-3 py-2">
                 <span className="text-sm text-slate-800">{item}</span>
                 <div className="flex items-center gap-2">
                   <button
                     type="button"
                     onClick={() => handleCopy(item)}
-                    className="rounded-lg border border-slate-200 bg-white px-2.5 py-1 text-xs font-semibold text-slate-700 hover:bg-slate-50"
+                    className="rounded-lg border-3 border-black bg-white px-2.5 py-1 text-xs font-semibold text-slate-700 hover:bg-slate-50"
                   >
                     {copiedValue === item ? '복사됨' : '복사'}
                   </button>
                   <button
                     type="button"
                     onClick={() => removeFavorite(item)}
-                    className="rounded-lg border border-slate-200 bg-white px-2.5 py-1 text-xs font-semibold text-slate-600 hover:bg-slate-50"
+                    className="rounded-lg border-3 border-black bg-white px-2.5 py-1 text-xs font-semibold text-slate-600 hover:bg-slate-50"
                   >
                     삭제
                   </button>

@@ -145,7 +145,7 @@ const faqs: FaqItem[] = [
 ];
 
 const article = (
-  <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10"><div className="prose prose-slate max-w-none">
+  <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10"><div className="prose prose-slate max-w-none">
     <h2>Paragraph Space Remover — Fix Extra Space Between Paragraphs Online Free</h2>
     <p>A <strong>paragraph space remover</strong> solves one of the most common formatting problems that content creators, writers, and developers face when working with AI-generated content, PDF exports, and copy-pasted text: excessive blank lines between paragraphs. When you paste text from ChatGPT, Claude, Google Docs, or a PDF, the paragraph spacing from the source document often translates into two, three, or more blank lines between every paragraph in the pasted result. A <strong>paragraph space remover</strong> collapses all of that excessive spacing to a clean, consistent single blank line between paragraphs while preserving your document structure.</p>
     <p>AI Text Cleanup Tools is a free <strong>paragraph space remover</strong> that runs in your browser with no account required. Paste your text with uneven paragraph spacing, click Clean Text, and copy the clean, evenly-spaced result in seconds. Use it to remove space between paragraphs from AI output, Word documents, PDF exports, Google Docs copies, and any other source with excessive paragraph spacing.</p>
@@ -272,7 +272,7 @@ export default async function ParagraphSpaceRemoverPage() {
         </section>
 
         <section className="relative w-full mt-4 md:mt-6">
-          <div className="w-full max-w-none rounded-xl border border-slate-200 bg-white p-3 shadow-sm md:rounded-2xl md:p-6">
+          <div className="w-full max-w-none rounded-xl border-3 border-black bg-white p-3 shadow-neo-sm md:rounded-2xl md:p-6">
             <ToolWorkbench
               processor="chatgptTextCleaner"
               primaryLabel="Remove Paragraph Spacing"

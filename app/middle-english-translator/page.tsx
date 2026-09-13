@@ -24,7 +24,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
 function createWriteUp() {
   return (
-    <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+    <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
         <h2>Middle English Translator: Middle English Converter Online</h2>
         <p>A Middle English translator is an online tool that converts modern English into Middle English—the language of Geoffrey Chaucer, medieval manuscripts, and the period from roughly the 11th to the 15th century. Whether you need a Middle English converter for a literature class, historical fiction, or to explore how English looked before the Great Vowel Shift, a Middle English translator lets you type or paste your text and get a version that echoes Chaucer-style vocabulary and spelling.</p>

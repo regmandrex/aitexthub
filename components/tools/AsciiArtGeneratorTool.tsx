@@ -50,7 +50,7 @@ export function AsciiArtGeneratorTool() {
             onChange={e => setInput(e.target.value)}
             onKeyDown={e => e.key === 'Enter' && generate()}
             placeholder="Hello World"
-            className="w-full rounded-lg border border-slate-200 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="w-full rounded-lg border-3 border-black px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
         </div>
         <div>
@@ -58,7 +58,7 @@ export function AsciiArtGeneratorTool() {
           <select
             value={font}
             onChange={e => setFont(e.target.value)}
-            className="rounded-lg border border-slate-200 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
+            className="rounded-lg border-3 border-black px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"
           >
             {fonts.map(f => <option key={f} value={f}>{f}</option>)}
           </select>
@@ -83,7 +83,7 @@ export function AsciiArtGeneratorTool() {
               {copied ? '✓ Copied!' : 'Copy'}
             </button>
           </div>
-          <pre className="w-full rounded-lg border border-slate-200 bg-slate-50 px-3 py-2 text-xs font-mono overflow-x-auto whitespace-pre">{output}</pre>
+          <pre className="w-full rounded-lg border-3 border-black bg-slate-50 px-3 py-2 text-xs font-mono overflow-x-auto whitespace-pre">{output}</pre>
         </div>
       )}
       {output && <HumanizerUpsellCard />}

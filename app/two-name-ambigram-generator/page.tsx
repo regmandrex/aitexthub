@@ -25,7 +25,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
 function createWriteUp() {
   return (
-    <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+    <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
         <h2>Two Name Ambigram Generator: Ambigram Tattoo Creator</h2>
         <p>An ambigram tattoo generator (or two-name ambigram generator) is an online tool that helps you create ambigrams that read as one name when viewed normally and as another name when rotated (usually 180 degrees) or viewed from a different angle. Ambigrams are popular for tattoos, logos, and gifts—for example, a couple's two names in one design, or a name that reads the same upside down. You enter two names (or one name for a self-reading ambigram), and the tool suggests or generates a design concept, or connects you to ambigram design options.</p>

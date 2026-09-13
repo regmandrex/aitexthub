@@ -69,7 +69,7 @@ export function AcrosticPoemTool() {
           onChange={(e) => setInput(e.target.value)}
           placeholder="예) 김민수, 사랑, 행복"
           maxLength={20}
-          className="w-full rounded-lg border border-slate-300 p-3 text-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+          className="w-full rounded-lg border-2 border-black p-3 text-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
         />
       </div>
 
@@ -84,14 +84,14 @@ export function AcrosticPoemTool() {
         <button
           type="button"
           onClick={handleClear}
-          className="px-4 py-2 bg-white text-slate-700 border border-slate-300 rounded-lg text-sm font-medium hover:bg-slate-50 transition"
+          className="px-4 py-2 bg-white text-slate-700 border-2 border-black rounded-lg text-sm font-medium hover:bg-slate-50 transition"
         >
           지우기
         </button>
       </div>
 
       {lines.length > 0 && (
-        <div className="rounded-lg border border-slate-300 bg-slate-50 p-4 space-y-2">
+        <div className="rounded-lg border-2 border-black bg-slate-50 p-4 space-y-2">
           {lines.map((line, idx) => {
             const firstChar = line.charAt(0);
             const rest = line.slice(1);
@@ -105,7 +105,7 @@ export function AcrosticPoemTool() {
           <button
             type="button"
             onClick={handleCopy}
-            className="mt-2 px-3 py-1.5 bg-white text-slate-700 border border-slate-300 rounded-lg text-sm font-medium hover:bg-slate-50 transition"
+            className="mt-2 px-3 py-1.5 bg-white text-slate-700 border-2 border-black rounded-lg text-sm font-medium hover:bg-slate-50 transition"
           >
             {copied ? '복사됨!' : '결과 복사'}
           </button>

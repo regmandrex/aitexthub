@@ -23,7 +23,7 @@ export default function WhyIsAiDetectorSayingMyWritingIsAiPage() {
       <div className="ad-slot"><AdSenseSlot className="w-full" /></div>
 
       {/* Hero card */}
-      <div className="rounded-[28px] border border-slate-200 bg-white/70 p-6 shadow-xl shadow-slate-900/5 backdrop-blur-lg">
+      <div className="rounded-[28px] border-3 border-black bg-white/70 p-6 shadow-neo-lg shadow-slate-900/5 backdrop-blur-lg">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">False Positives Explained</p>
         <h1 className="mt-3 text-3xl font-semibold text-slate-900">Why Is the AI Detector Saying My Writing Is AI?</h1>
         <p className="mt-2 text-slate-600">
@@ -37,7 +37,7 @@ export default function WhyIsAiDetectorSayingMyWritingIsAiPage() {
             { title: 'Non-native English', detail: 'Careful grammar creates false AI signals' },
             { title: 'Invisible characters', detail: 'Hidden Unicode from copy-paste can trigger detectors' },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-100 bg-slate-50 p-4 text-xs text-slate-700">
+            <div key={item.title} className="rounded-2xl border-2 border-black bg-slate-50 p-4 text-xs text-slate-700">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.detail}</p>
             </div>
@@ -83,7 +83,7 @@ export default function WhyIsAiDetectorSayingMyWritingIsAiPage() {
           cannot distinguish between &quot;human writing that follows conventions carefully&quot; and &quot;AI text that follows
           conventions because it was trained to.&quot;
         </p>
-        <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+        <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
           <p className="font-semibold text-slate-900">Signs your style is triggering false positives</p>
           <ul className="mt-2 list-disc space-y-1 pl-5">
             <li>You consistently write in complex, multi-clause sentences</li>
@@ -118,7 +118,7 @@ export default function WhyIsAiDetectorSayingMyWritingIsAiPage() {
           native English writing patterns, and they systematically misidentify careful non-native writing as artificial. If
           you&apos;re a non-native speaker and you&apos;re being flagged, the problem is with the tool, not your writing.
         </p>
-        <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+        <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
           <p className="font-semibold text-slate-900">Practical steps for non-native speakers being falsely flagged</p>
           <ul className="mt-2 list-disc space-y-2 pl-5">
             <li>Use the <Link href="/ai-humanizer">AI Humanizer</Link> to add natural variation to your text</li>
@@ -165,7 +165,7 @@ export default function WhyIsAiDetectorSayingMyWritingIsAiPage() {
           naturally use these phrases in your own writing, you may inadvertently trigger the classifier.
         </p>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">AI-associated phrase patterns</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>&quot;It is important to note that...&quot;</li>
@@ -176,7 +176,7 @@ export default function WhyIsAiDetectorSayingMyWritingIsAiPage() {
               <li>&quot;With that in mind, let us explore...&quot;</li>
             </ul>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">More natural alternatives</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Simply make the claim directly</li>
@@ -207,7 +207,7 @@ export default function WhyIsAiDetectorSayingMyWritingIsAiPage() {
 
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">Step-by-Step: How to Fix a False Positive</h2>
-        <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+        <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
           <p className="font-semibold text-slate-900">Systematic approach to reducing false positive scores</p>
           <ol className="mt-2 list-decimal space-y-2 pl-5">
             <li>
@@ -249,7 +249,7 @@ export default function WhyIsAiDetectorSayingMyWritingIsAiPage() {
           you can take. AI detector results are not definitive proof of AI use &mdash; they are probabilistic estimates with
           documented false positive rates that are well above zero.
         </p>
-        <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+        <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
           <p className="font-semibold text-slate-900">Building your case</p>
           <ul className="mt-2 list-disc space-y-2 pl-5">
             <li>Save all intermediate drafts in version-controlled documents (Google Docs history is useful here)</li>

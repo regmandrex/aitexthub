@@ -49,7 +49,7 @@ export function JwtDecoderTool() {
           onChange={e => setInput(e.target.value)}
           rows={4}
           placeholder="Paste your JWT token here..."
-          className="w-full rounded-lg border border-slate-200 px-3 py-2 text-sm font-mono resize-none focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full rounded-lg border-3 border-black px-3 py-2 text-sm font-mono resize-none focus:outline-none focus:ring-2 focus:ring-blue-500"
         />
       </div>
       <button
@@ -63,11 +63,11 @@ export function JwtDecoderTool() {
         <div className="space-y-3">
           <div>
             <label className="block text-sm font-medium text-slate-700 mb-1">Header</label>
-            <pre className="w-full rounded-lg border border-slate-200 bg-slate-50 px-3 py-2 text-xs font-mono overflow-x-auto">{fmt(header)}</pre>
+            <pre className="w-full rounded-lg border-3 border-black bg-slate-50 px-3 py-2 text-xs font-mono overflow-x-auto">{fmt(header)}</pre>
           </div>
           <div>
             <label className="block text-sm font-medium text-slate-700 mb-1">Payload</label>
-            <pre className="w-full rounded-lg border border-slate-200 bg-slate-50 px-3 py-2 text-xs font-mono overflow-x-auto">{fmt(payload!)}</pre>
+            <pre className="w-full rounded-lg border-3 border-black bg-slate-50 px-3 py-2 text-xs font-mono overflow-x-auto">{fmt(payload!)}</pre>
           </div>
           <p className="text-xs text-slate-500">Signature is not verified — this tool only decodes the token.</p>
         </div>

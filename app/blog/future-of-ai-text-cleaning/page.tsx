@@ -28,7 +28,7 @@ export default function FutureOfAITextCleaningPage() {
         <AdSenseSlot className="w-full" />
       </div>
 
-      <div className="rounded-[28px] border border-slate-200 bg-white/70 p-6 shadow-xl shadow-slate-900/5 backdrop-blur-lg">
+      <div className="rounded-[28px] border-3 border-black bg-white/70 p-6 shadow-neo-lg shadow-slate-900/5 backdrop-blur-lg">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Next-gen publishing hygiene</p>
         <h1 className="mt-3 text-3xl font-semibold text-slate-900">Future of AI Text Cleaning</h1>
         <p className="mt-2 text-slate-600">
@@ -42,7 +42,7 @@ export default function FutureOfAITextCleaningPage() {
             { title: 'Unicode', detail: 'Normalization rules become standard' },
             { title: 'QA', detail: 'Cleaning merges into content quality gates' },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-100 bg-slate-50 p-4 text-xs text-slate-700">
+            <div key={item.title} className="rounded-2xl border-2 border-black bg-slate-50 p-4 text-xs text-slate-700">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.detail}</p>
             </div>
@@ -71,7 +71,7 @@ export default function FutureOfAITextCleaningPage() {
               body: 'Unstable layout, heavy DOM, poor mobile interaction, and confusing formatting quietly cap rankings even without “AI penalties.”',
             },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-200 bg-white/60 p-4 text-sm text-slate-700 shadow-sm">
+            <div key={item.title} className="rounded-2xl border-3 border-black bg-white/60 p-4 text-sm text-slate-700 shadow-neo-sm">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.body}</p>
             </div>
@@ -171,7 +171,7 @@ export default function FutureOfAITextCleaningPage() {
 
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">How to prepare: practical roadmap</h2>
-        <div className="rounded-2xl border border-brand-100 bg-brand-50 p-5 text-sm text-brand-900 shadow-sm">
+        <div className="rounded-2xl border border-brand-100 bg-brand-50 p-5 text-sm text-brand-900 shadow-neo-sm">
           <ol className="list-decimal space-y-2 pl-5 text-slate-800">
             <li>
               <strong>Make cleaning default.</strong> Do not clean “sometimes.” Clean always.
@@ -217,7 +217,7 @@ export default function FutureOfAITextCleaningPage() {
               a: 'Yes, especially with multilingual output and heavy copy-paste workflows.',
             },
           ].map((item) => (
-            <div key={item.q} className="rounded-2xl border border-slate-200 bg-white/60 p-4 text-sm text-slate-700 shadow-sm">
+            <div key={item.q} className="rounded-2xl border-3 border-black bg-white/60 p-4 text-sm text-slate-700 shadow-neo-sm">
               <p className="font-semibold text-slate-900">{item.q}</p>
               <p className="mt-1">{item.a}</p>
             </div>

@@ -161,7 +161,7 @@ const faqs: FaqItem[] = [
 ];
 
 const writeUp = (
-  <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+  <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
     <div className="prose prose-slate max-w-none">
       <h2>ChatGPT Essay Rewriter: Improve Essay Quality and Academic Tone</h2>
       <p>A ChatGPT Essay Rewriter is a free online tool that rewrites ChatGPT-generated essays to improve quality, structure, and academic tone. It helps you strengthen arguments, improve flow, and align content with the expectations of teachers and institutions—while keeping your ideas and voice at the center.</p>

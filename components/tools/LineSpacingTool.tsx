@@ -53,7 +53,7 @@ export function LineSpacingTool(_: LineSpacingToolProps) {
         />
       </div>
 
-      <div className="rounded-lg border border-slate-200 bg-slate-50 p-4 space-y-4">
+      <div className="rounded-lg border-3 border-black bg-slate-50 p-4 space-y-4">
         <div className="space-y-2">
           <label className="text-sm font-semibold text-slate-900">Line Spacing</label>
           <div className="flex flex-wrap gap-3">
@@ -113,7 +113,7 @@ export function LineSpacingTool(_: LineSpacingToolProps) {
               max="10"
               value={customSpacing}
               onChange={(e) => setCustomSpacing(parseInt(e.target.value) || 1)}
-              className="w-32 rounded-lg border border-slate-300 px-3 py-2 text-sm text-slate-900 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-200"
+              className="w-32 rounded-lg border-2 border-black px-3 py-2 text-sm text-slate-900 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-200"
             />
             <p className="text-xs text-slate-600">Number of line breaks between paragraphs (1-10)</p>
           </div>
@@ -131,14 +131,14 @@ export function LineSpacingTool(_: LineSpacingToolProps) {
         <button
           type="button"
           onClick={handleCopy}
-          className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
+          className="inline-flex items-center justify-center rounded-lg border-3 border-black bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
         >
           Copy
         </button>
         <button
           type="button"
           onClick={handleClear}
-          className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
+          className="inline-flex items-center justify-center rounded-lg border-3 border-black bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
         >
           Clear
         </button>

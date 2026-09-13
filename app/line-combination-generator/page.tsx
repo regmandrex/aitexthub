@@ -50,7 +50,7 @@ const faqKeys = [
 
 function createWriteUp() {
   return (
-    <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+    <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
         <h2>Line Combination Generator: Combine Lines From Text</h2>
         <p>A line combination generator is a free online tool that takes a list of lines (one item per line) and produces all possible combinations of a chosen size—for example, every pair of lines, every set of three lines, or any subset size you specify. In standard combinations, order does not matter: the same set of lines in any order counts as one combination. That makes a line combination generator ideal for content mixes, headline testing, A/B copy variants, tag or category pairs, recipe or ingredient combinations, and teaching combinatorics with real text.</p>

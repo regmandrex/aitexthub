@@ -32,7 +32,7 @@ export default function FAQSection({ items, title, intro, showCategories = true 
   }));
 
   return (
-    <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6">
+    <div className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo md:p-6">
       <h2 className="text-xl font-semibold text-slate-900">{resolvedTitle}</h2>
       {intro ? <p className="mt-2 text-sm text-slate-700 whitespace-pre-line">{intro}</p> : null}
       <div className="mt-4 space-y-3">
@@ -48,7 +48,7 @@ export default function FAQSection({ items, title, intro, showCategories = true 
           return (
             <div key={`${faq.question}-${idx}`}>
               {categoryHeading}
-              <details className="group rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 transition hover:border-brand-200">
+              <details className="group rounded-xl border-2 border-black bg-slate-50 px-4 py-3 transition">
                 <summary className="cursor-pointer list-none text-sm font-semibold text-slate-800">
                   <span className="mr-2 text-brand-700">{idx + 1}.</span>
                   <span className="group-open:text-brand-700">{faq.question}</span>

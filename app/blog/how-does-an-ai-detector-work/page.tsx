@@ -23,7 +23,7 @@ export default function HowDoesAnAiDetectorWorkPage() {
       <div className="ad-slot"><AdSenseSlot className="w-full" /></div>
 
       {/* Hero card */}
-      <div className="rounded-[28px] border border-slate-200 bg-white/70 p-6 shadow-xl shadow-slate-900/5 backdrop-blur-lg">
+      <div className="rounded-[28px] border-3 border-black bg-white/70 p-6 shadow-neo-lg shadow-slate-900/5 backdrop-blur-lg">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">AI Detection Explained</p>
         <h1 className="mt-3 text-3xl font-semibold text-slate-900">How Does an AI Detector Work?</h1>
         <p className="mt-2 text-slate-600">
@@ -37,7 +37,7 @@ export default function HowDoesAnAiDetectorWorkPage() {
             { title: 'Burstiness', detail: 'Measures variation in sentence length and complexity' },
             { title: 'Unicode scanning', detail: 'Detects hidden characters and invisible markers' },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-100 bg-slate-50 p-4 text-xs text-slate-700">
+            <div key={item.title} className="rounded-2xl border-2 border-black bg-slate-50 p-4 text-xs text-slate-700">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.detail}</p>
             </div>
@@ -78,7 +78,7 @@ export default function HowDoesAnAiDetectorWorkPage() {
           the fundamental signal most AI detectors use. The detector runs the text through a reference language model, calculates
           the perplexity score at each token position, and uses the resulting distribution to classify the text.
         </p>
-        <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+        <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
           <p className="font-semibold text-slate-900">How perplexity scoring works in practice</p>
           <ol className="mt-2 list-decimal space-y-2 pl-5">
             <li>The detector feeds your text token-by-token into a reference language model.</li>
@@ -108,7 +108,7 @@ export default function HowDoesAnAiDetectorWorkPage() {
           characterize human writing. This structural uniformity is detectable statistically.
         </p>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Human writing burstiness</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Wide range of sentence lengths (5 to 40+ words)</li>
@@ -118,7 +118,7 @@ export default function HowDoesAnAiDetectorWorkPage() {
               <li>Occasional run-ons or mid-thought pivots</li>
             </ul>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">AI writing burstiness</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Narrow sentence length range (15&ndash;25 words typical)</li>
@@ -145,7 +145,7 @@ export default function HowDoesAnAiDetectorWorkPage() {
           content. These include:
         </p>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Zero-width characters</p>
             <p className="mt-2">
               U+200B (zero-width space), U+200C (zero-width non-joiner), U+200D (zero-width joiner). These are invisible in
@@ -153,21 +153,21 @@ export default function HowDoesAnAiDetectorWorkPage() {
               anomaly.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Non-standard punctuation</p>
             <p className="mt-2">
               AI models often produce Unicode em dashes (U+2014), en dashes (U+2013), curly quotes, and other typographic
               characters that differ from the ASCII equivalents a human might type on a standard keyboard.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Byte-order marks</p>
             <p className="mt-2">
               Some AI output pipelines insert byte-order marks (U+FEFF) at the beginning of text or between sections. These
               are invisible and harmless in most rendering contexts but detectable in raw text analysis.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Soft hyphens and formatting characters</p>
             <p className="mt-2">
               Soft hyphens (U+00AD) and other formatting-related control characters sometimes appear in AI output as artifacts
@@ -211,7 +211,7 @@ export default function HowDoesAnAiDetectorWorkPage() {
           incorrectly flagged as AI. Understanding the failure modes is critical before relying on any detector output.
         </p>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Non-native English speakers</p>
             <p className="mt-2">
               Research published in 2023 and 2024 showed that text written by non-native English speakers is flagged as AI
@@ -219,21 +219,21 @@ export default function HowDoesAnAiDetectorWorkPage() {
               casual native writing &mdash; the same statistical profile as AI text.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Formal academic writing</p>
             <p className="mt-2">
               Academic prose, legal writing, and technical documentation follow very predictable conventions. Their sentence
               structures, vocabulary, and argument patterns create low-perplexity text that detectors misclassify as AI.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Model updates outpace detectors</p>
             <p className="mt-2">
               Each new AI model generation produces text with different statistical signatures. Detectors trained on GPT-3
               output may miss GPT-4 text, and vice versa. The arms race between generation and detection is ongoing.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Paraphrasing and editing</p>
             <p className="mt-2">
               Any editing of AI text &mdash; rephrasing sentences, changing word choices, restructuring paragraphs &mdash;
@@ -250,7 +250,7 @@ export default function HowDoesAnAiDetectorWorkPage() {
           It is equally important to understand the hard limits of what current AI detectors cannot do. These boundaries define
           how much weight you should give to any detector output.
         </p>
-        <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+        <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
           <ul className="list-disc space-y-2 pl-5">
             <li>
               <strong>Detectors cannot tell you which AI model wrote the text.</strong> They can only estimate whether AI was

@@ -95,7 +95,7 @@ export function InstagramUsernameTool() {
           onChange={(e) => setName(e.target.value)}
           placeholder="예) minsoo, jiwoo, sora"
           maxLength={20}
-          className="w-full rounded-lg border border-slate-300 p-3 text-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+          className="w-full rounded-lg border-2 border-black p-3 text-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
         />
       </div>
 
@@ -110,7 +110,7 @@ export function InstagramUsernameTool() {
               className={`px-3 py-1.5 text-sm rounded-lg border transition ${
                 mood === m
                   ? 'bg-blue-600 text-white border-blue-600'
-                  : 'bg-white text-slate-700 border-slate-300 hover:bg-slate-50'
+                  : 'bg-white text-slate-700 border-black hover:bg-slate-50'
               }`}
             >
               {MOOD_LABELS[m]}
@@ -134,7 +134,7 @@ export function InstagramUsernameTool() {
               key={`${id}-${idx}`}
               type="button"
               onClick={() => handleCopy(id)}
-              className="px-3 py-2 bg-white border border-slate-300 rounded-lg text-sm hover:bg-slate-50 transition text-left font-mono"
+              className="px-3 py-2 bg-white border-2 border-black rounded-lg text-sm hover:bg-slate-50 transition text-left font-mono"
             >
               {copied === id ? '복사됨!' : `@${id}`}
             </button>

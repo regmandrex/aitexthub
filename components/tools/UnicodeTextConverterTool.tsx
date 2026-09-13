@@ -39,12 +39,12 @@ function StyleCard({ name, preview, onCopy }: { name: string; preview: string; o
   const [copied, setCopied] = useState(false);
   const copy = () => { onCopy(); setCopied(true); setTimeout(() => setCopied(false), 1500); };
   return (
-    <div className="rounded-xl border border-slate-200 bg-slate-50 p-3 flex items-center justify-between gap-2">
+    <div className="rounded-xl border-3 border-black bg-slate-50 p-3 flex items-center justify-between gap-2">
       <div>
         <p className="text-xs text-slate-500 mb-0.5">{name}</p>
         <p className="text-sm text-slate-800 break-all">{preview || <span className="text-slate-300">Preview...</span>}</p>
       </div>
-      <button onClick={copy} className="text-xs px-2 py-1 rounded-lg border border-slate-300 bg-white hover:bg-slate-100 text-slate-600 shrink-0">
+      <button onClick={copy} className="text-xs px-2 py-1 rounded-lg border-2 border-black bg-white hover:bg-slate-100 text-slate-600 shrink-0">
         {copied ? '✓' : 'Copy'}
       </button>
     </div>
@@ -63,7 +63,7 @@ export function UnicodeTextConverterTool() {
           onChange={e => setInput(e.target.value)}
           placeholder="Type text here to see all Unicode styles..."
           rows={3}
-          className="w-full rounded-xl border border-slate-200 bg-white px-3 py-3 text-sm text-slate-800 shadow-sm outline-none focus:border-blue-300 focus:ring-2 focus:ring-blue-100"
+          className="w-full rounded-xl border-3 border-black bg-white px-3 py-3 text-sm text-slate-800 shadow-neo-sm outline-none focus:border-blue-300 focus:ring-2 focus:ring-blue-100"
         />
       </div>
       <p className="text-xs text-slate-500">Click Copy on any style to copy that version to your clipboard.</p>

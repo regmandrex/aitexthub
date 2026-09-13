@@ -146,7 +146,7 @@ export function XmlFormatterTool() {
   const statusColor =
     status?.type === 'ok' ? 'text-emerald-700 bg-emerald-50 border-emerald-200' :
     status?.type === 'error' ? 'text-red-700 bg-red-50 border-red-200' :
-    'text-slate-600 bg-slate-50 border-slate-200';
+    'text-slate-600 bg-slate-50 border-black';
 
   return (
     <div className="space-y-4">
@@ -154,21 +154,21 @@ export function XmlFormatterTool() {
         <button
           type="button"
           onClick={() => run('format')}
-          className={`px-4 py-2 text-sm font-medium rounded-xl transition ${mode === 'format' ? 'bg-blue-600 text-white hover:bg-blue-700' : 'border border-slate-200 bg-white text-slate-700 hover:bg-slate-50'}`}
+          className={`px-4 py-2 text-sm font-medium rounded-xl transition ${mode === 'format' ? 'bg-blue-600 text-white hover:bg-blue-700' : 'border-3 border-black bg-white text-slate-700 hover:bg-slate-50'}`}
         >
           Format / Beautify
         </button>
         <button
           type="button"
           onClick={() => run('minify')}
-          className={`px-4 py-2 text-sm font-medium rounded-xl transition ${mode === 'minify' ? 'bg-blue-600 text-white hover:bg-blue-700' : 'border border-slate-200 bg-white text-slate-700 hover:bg-slate-50'}`}
+          className={`px-4 py-2 text-sm font-medium rounded-xl transition ${mode === 'minify' ? 'bg-blue-600 text-white hover:bg-blue-700' : 'border-3 border-black bg-white text-slate-700 hover:bg-slate-50'}`}
         >
           Minify
         </button>
         <button
           type="button"
           onClick={() => run('validate')}
-          className={`px-4 py-2 text-sm font-medium rounded-xl transition ${mode === 'validate' ? 'bg-blue-600 text-white hover:bg-blue-700' : 'border border-slate-200 bg-white text-slate-700 hover:bg-slate-50'}`}
+          className={`px-4 py-2 text-sm font-medium rounded-xl transition ${mode === 'validate' ? 'bg-blue-600 text-white hover:bg-blue-700' : 'border-3 border-black bg-white text-slate-700 hover:bg-slate-50'}`}
         >
           Validate
         </button>
@@ -178,7 +178,7 @@ export function XmlFormatterTool() {
           <select
             value={indent}
             onChange={(e) => setIndent(Number(e.target.value))}
-            className="px-2 py-1 text-sm rounded-lg border border-slate-200 bg-white"
+            className="px-2 py-1 text-sm rounded-lg border-3 border-black bg-white"
           >
             <option value={2}>2 spaces</option>
             <option value={4}>4 spaces</option>
@@ -186,14 +186,14 @@ export function XmlFormatterTool() {
           <button
             type="button"
             onClick={handleSample}
-            className="px-3 py-1.5 text-xs rounded-lg border border-slate-200 bg-slate-50 hover:bg-slate-100 text-slate-600"
+            className="px-3 py-1.5 text-xs rounded-lg border-3 border-black bg-slate-50 hover:bg-slate-100 text-slate-600"
           >
             Sample
           </button>
           <button
             type="button"
             onClick={handleClear}
-            className="px-3 py-1.5 text-xs rounded-lg border border-slate-200 bg-slate-50 hover:bg-slate-100 text-slate-600"
+            className="px-3 py-1.5 text-xs rounded-lg border-3 border-black bg-slate-50 hover:bg-slate-100 text-slate-600"
           >
             Clear
           </button>
@@ -208,7 +208,7 @@ export function XmlFormatterTool() {
             onChange={(e) => setInput(e.target.value)}
             placeholder='<?xml version="1.0"?><root><child>value</child></root>'
             rows={14}
-            className="w-full rounded-xl border border-slate-200 bg-white px-3 py-3 text-sm font-mono text-slate-900 shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-100"
+            className="w-full rounded-xl border-3 border-black bg-white px-3 py-3 text-sm font-mono text-slate-900 shadow-neo-sm focus:outline-none focus:ring-2 focus:ring-blue-100"
           />
         </div>
 
@@ -219,7 +219,7 @@ export function XmlFormatterTool() {
               <button
                 type="button"
                 onClick={handleCopy}
-                className="text-xs px-2 py-0.5 rounded border border-slate-200 bg-slate-50 hover:bg-slate-100 text-slate-600"
+                className="text-xs px-2 py-0.5 rounded border-3 border-black bg-slate-50 hover:bg-slate-100 text-slate-600"
               >
                 {copied ? 'Copied!' : 'Copy'}
               </button>
@@ -230,7 +230,7 @@ export function XmlFormatterTool() {
             readOnly
             placeholder="Result appears here..."
             rows={14}
-            className="w-full rounded-xl border border-slate-200 bg-slate-50 px-3 py-3 text-sm font-mono text-slate-900 shadow-sm focus:outline-none"
+            className="w-full rounded-xl border-3 border-black bg-slate-50 px-3 py-3 text-sm font-mono text-slate-900 shadow-neo-sm focus:outline-none"
           />
         </div>
       </div>

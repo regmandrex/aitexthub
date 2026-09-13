@@ -117,7 +117,7 @@ export default function NavDrawer({ open, onClose }: NavDrawerProps) {
       />
 
       <aside
-        className={`fixed right-0 top-0 z-[70] flex h-full w-[88vw] max-w-md flex-col bg-white shadow-2xl transition-transform ${
+        className={`fixed right-0 top-0 z-[70] flex h-full w-[88vw] max-w-md flex-col border-l-3 border-black bg-white shadow-neo-lg transition-transform ${
           open ? 'translate-x-0' : 'translate-x-full pointer-events-none'
         }`}
         style={{ visibility: open ? 'visible' : 'hidden' }}
@@ -125,7 +125,7 @@ export default function NavDrawer({ open, onClose }: NavDrawerProps) {
         aria-label="Navigation"
         aria-hidden={!open}
       >
-        <div className="flex items-start justify-between border-b border-slate-200 px-5 py-4">
+        <div className="flex items-start justify-between border-b-3 border-black px-5 py-4">
           <div>
             <h2 className="text-lg font-semibold text-slate-900">Navigation</h2>
           </div>
@@ -155,7 +155,7 @@ export default function NavDrawer({ open, onClose }: NavDrawerProps) {
           {groups.map((group) => {
             const isOpen = expanded.has(group.key);
             return (
-              <div key={group.key} className="border-b border-slate-100 last:border-b-0">
+              <div key={group.key} className="border-b-2 border-black last:border-b-0">
                 <button
                   type="button"
                   onClick={() => toggleGroup(group.key)}
@@ -203,18 +203,18 @@ export default function NavDrawer({ open, onClose }: NavDrawerProps) {
           })}
         </nav>
 
-        <div className="border-t border-slate-200 px-5 py-4 space-y-2">
+        <div className="border-t-3 border-black px-5 py-4 space-y-2">
           <Link
             href="/signup"
             onClick={onClose}
-            className="flex w-full items-center justify-center gap-2 rounded-full bg-brand-600 px-4 py-2.5 text-sm font-semibold text-white shadow-sm transition hover:bg-brand-700"
+            className="flex w-full items-center justify-center gap-2 rounded-full border-3 border-black bg-brand-600 px-4 py-2.5 text-sm font-semibold text-white shadow-neo-sm transition-transform hover:translate-y-0.5 hover:shadow-none active:translate-y-0.5"
           >
             <span className="text-yellow-300">✦</span> Get Started
           </Link>
           <Link
             href="/login"
             onClick={onClose}
-            className="block rounded-full border border-slate-200 bg-white px-4 py-2 text-center text-sm text-slate-600 transition hover:bg-slate-50"
+            className="block rounded-full border-2 border-black bg-white px-4 py-2 text-center text-sm text-slate-600 transition hover:bg-slate-50"
           >
             Already have an account? Log in
           </Link>

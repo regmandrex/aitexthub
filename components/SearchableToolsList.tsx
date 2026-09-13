@@ -75,7 +75,7 @@ export default function SearchableToolsList({ tools }: SearchableToolsListProps)
             placeholder="Search tools..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className={`w-full pl-10 py-3 rounded-xl border border-slate-200 bg-white shadow-sm focus:outline-none focus:ring-2 focus:ring-brand-500 focus:border-transparent text-sm md:text-base text-slate-900 placeholder-slate-400 ${
+            className={`w-full pl-10 py-3 rounded-xl border-3 border-black bg-white shadow-neo-sm focus:outline-none focus:ring-2 focus:ring-brand-500 text-sm md:text-base text-slate-900 placeholder-slate-400 ${
               searchQuery ? 'pr-10' : 'pr-4'
             }`}
           />

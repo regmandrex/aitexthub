@@ -44,7 +44,7 @@ export default function HeaderUserMenu({ email, plan, onOpenAccount, onUpgrade, 
       <button
         type="button"
         onClick={() => setOpen((v) => !v)}
-        className="flex items-center gap-2 rounded-xl border border-slate-200 bg-white px-2.5 py-1.5 shadow-sm transition hover:border-slate-300 hover:shadow"
+        className="flex items-center gap-2 rounded-xl border-2 border-black bg-white px-2.5 py-1.5 shadow-neo-sm transition-transform hover:translate-y-0.5 hover:shadow-none"
         aria-haspopup="menu"
         aria-expanded={open}
       >
@@ -64,7 +64,7 @@ export default function HeaderUserMenu({ email, plan, onOpenAccount, onUpgrade, 
       </button>
 
       {open ? (
-        <div className="absolute right-0 top-full mt-2 w-68 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-xl ring-1 ring-black/5">
+        <div className="absolute right-0 top-full mt-2 w-68 overflow-hidden rounded-2xl border-3 border-black bg-white shadow-neo">
 
           {/* Profile header */}
           <div className="relative overflow-hidden bg-gradient-to-br from-brand-700 via-purple-700 to-indigo-800 px-4 py-4">
@@ -119,7 +119,7 @@ export default function HeaderUserMenu({ email, plan, onOpenAccount, onUpgrade, 
                 onClick={() => { setOpen(false); onUpgrade?.(); }}
                 className="flex w-full items-center gap-3 rounded-xl bg-gradient-to-r from-amber-50 to-yellow-50 px-3 py-2.5 text-sm transition hover:from-amber-100 hover:to-yellow-100"
               >
-                <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-gradient-to-br from-amber-400 to-yellow-400 text-white shadow-sm">
+                <span className="flex h-7 w-7 items-center justify-center rounded-lg bg-gradient-to-br from-amber-400 to-yellow-400 text-white shadow-neo-sm">
                   <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M5 16L3 5l5.5 5L12 4l3.5 6L21 5l-2 11H5zm0 2h14v2H5v-2z" />
                   </svg>
@@ -132,7 +132,7 @@ export default function HeaderUserMenu({ email, plan, onOpenAccount, onUpgrade, 
             ) : null}
           </div>
 
-          <div className="border-t border-slate-100 p-1.5">
+          <div className="border-t-2 border-black p-1.5">
             <button
               type="button"
               disabled={signingOut}

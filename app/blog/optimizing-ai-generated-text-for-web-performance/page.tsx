@@ -28,7 +28,7 @@ export default function OptimizingAITextForPerformancePage() {
         <AdSenseSlot className="w-full" />
       </div>
 
-      <div className="rounded-[28px] border border-slate-200 bg-white/70 p-6 shadow-xl shadow-slate-900/5 backdrop-blur-lg">
+      <div className="rounded-[28px] border-3 border-black bg-white/70 p-6 shadow-neo-lg shadow-slate-900/5 backdrop-blur-lg">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Text is a performance asset</p>
         <h1 className="mt-3 text-3xl font-semibold text-slate-900">Optimizing AI-Generated Text for Web Performance</h1>
         <p className="mt-2 text-slate-600">
@@ -42,7 +42,7 @@ export default function OptimizingAITextForPerformancePage() {
             { title: 'Stability', detail: 'Fewer reflows and less text-induced CLS' },
             { title: 'SEO', detail: 'Predictable structure improves parsing and UX' },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-100 bg-slate-50 p-4 text-xs text-slate-700">
+            <div key={item.title} className="rounded-2xl border-2 border-black bg-slate-50 p-4 text-xs text-slate-700">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.detail}</p>
             </div>
@@ -76,7 +76,7 @@ export default function OptimizingAITextForPerformancePage() {
               body: 'Generated externally and pasted into a CMS, invisible characters and formatting artifacts persist unless explicitly removed.',
             },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-200 bg-white/60 p-4 text-sm text-slate-700 shadow-sm">
+            <div key={item.title} className="rounded-2xl border-3 border-black bg-white/60 p-4 text-sm text-slate-700 shadow-neo-sm">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.body}</p>
             </div>
@@ -87,21 +87,21 @@ export default function OptimizingAITextForPerformancePage() {
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">How AI-generated text affects Core Web Vitals</h2>
         <div className="grid gap-4 md:grid-cols-3">
-          <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">1. Largest Contentful Paint (LCP)</p>
             <p className="mt-2">
               AI articles are often the largest visible element. Dirty text can delay layout calculation, increase render time for large blocks,
               and slow font metric resolution. Small inefficiencies can add hundreds of milliseconds on mobile.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">2. Cumulative Layout Shift (CLS)</p>
             <p className="mt-2">
               NBSP, soft hyphens, and inconsistent line-break behavior cause reflow after initial paint, leading to layout shifts without images
               (one of the hardest CLS issues to debug).
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">3. Interaction to Next Paint (INP)</p>
             <p className="mt-2">
               Large, dirty text blocks increase DOM node count and make layout recalculation more expensive. Scrolling becomes less responsive and
@@ -141,7 +141,7 @@ export default function OptimizingAITextForPerformancePage() {
 
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">Optimizing AI-generated text: the correct approach</h2>
-        <div className="rounded-2xl border border-brand-100 bg-brand-50 p-5 text-sm text-brand-900 shadow-sm">
+        <div className="rounded-2xl border border-brand-100 bg-brand-50 p-5 text-sm text-brand-900 shadow-neo-sm">
           <p className="font-semibold text-brand-800">Performance-first text workflow</p>
           <ol className="mt-2 list-decimal space-y-2 pl-5 text-slate-800">
             <li>
@@ -237,7 +237,7 @@ export default function OptimizingAITextForPerformancePage() {
             { q: 'Can plugins automate this?', a: 'Most plugins do not operate at character-level precision, so they miss hidden Unicode.' },
             { q: 'Is text optimization future-proof?', a: 'Yes. Clean text benefits all browsers and devices long-term.' },
           ].map((item) => (
-            <div key={item.q} className="rounded-2xl border border-slate-200 bg-white/60 p-4 text-sm text-slate-700 shadow-sm">
+            <div key={item.q} className="rounded-2xl border-3 border-black bg-white/60 p-4 text-sm text-slate-700 shadow-neo-sm">
               <p className="font-semibold text-slate-900">{item.q}</p>
               <p className="mt-1">{item.a}</p>
             </div>

@@ -23,7 +23,7 @@ export default function TheHiddenRisksOfCopyingChatGptTextPage() {
       <div className="ad-slot"><AdSenseSlot className="w-full" /></div>
 
       {/* Hero card */}
-      <div className="rounded-[28px] border border-slate-200 bg-white/70 p-6 shadow-xl shadow-slate-900/5 backdrop-blur-lg">
+      <div className="rounded-[28px] border-3 border-black bg-white/70 p-6 shadow-neo-lg shadow-slate-900/5 backdrop-blur-lg">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Copy-Paste Risks</p>
         <h1 className="mt-3 text-3xl font-semibold text-slate-900">The Hidden Risks of Copying ChatGPT Text into Word or Google Docs</h1>
         <p className="mt-2 text-slate-600">
@@ -38,7 +38,7 @@ export default function TheHiddenRisksOfCopyingChatGptTextPage() {
             { title: 'Formatting corruption', detail: 'Em dashes, quotes, and spacing behave unexpectedly' },
             { title: 'Propagation risk', detail: 'Artifacts spread to every document you paste into' },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-100 bg-slate-50 p-4 text-xs text-slate-700">
+            <div key={item.title} className="rounded-2xl border-2 border-black bg-slate-50 p-4 text-xs text-slate-700">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.detail}</p>
             </div>
@@ -73,7 +73,7 @@ export default function TheHiddenRisksOfCopyingChatGptTextPage() {
           formatting tools do not highlight them.
         </p>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">What they do in Word</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Cause word count inconsistencies</li>
@@ -83,7 +83,7 @@ export default function TheHiddenRisksOfCopyingChatGptTextPage() {
               <li>Create invisible cursor positions that confuse keyboard navigation</li>
             </ul>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">What they do in Google Docs</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Persist through share and export operations</li>
@@ -109,7 +109,7 @@ export default function TheHiddenRisksOfCopyingChatGptTextPage() {
           typographically correct. But it creates specific problems in certain workflows.
         </p>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Em dashes in Word</p>
             <p className="mt-2">
               Word has its own em dash autocorrect behavior. When you paste text with Unicode em dashes and then
@@ -117,7 +117,7 @@ export default function TheHiddenRisksOfCopyingChatGptTextPage() {
               em dashes differently at line-break points, which can cause unexpected layout behavior.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Smart quotes in email clients</p>
             <p className="mt-2">
               Curly quotes from ChatGPT look correct in Word and Google Docs but can render incorrectly in some
@@ -125,7 +125,7 @@ export default function TheHiddenRisksOfCopyingChatGptTextPage() {
               characters in environments that do not support Unicode properly.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Code environments</p>
             <p className="mt-2">
               If you copy ChatGPT code or command examples, curly quotes are disastrous. Code that includes curly
@@ -133,7 +133,7 @@ export default function TheHiddenRisksOfCopyingChatGptTextPage() {
               frustration for developers using ChatGPT for code snippets.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">CMS and HTML contexts</p>
             <p className="mt-2">
               Pasting text with Unicode curly quotes and em dashes into WordPress, Squarespace, or other CMSs
@@ -164,7 +164,7 @@ export default function TheHiddenRisksOfCopyingChatGptTextPage() {
           to some elements and leaving others as raw symbols. The result is unpredictable and often requires manual
           cleanup.
         </p>
-        <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+        <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
           <p className="font-semibold text-slate-900">Common markdown contamination scenarios</p>
           <ul className="mt-2 list-disc space-y-2 pl-5">
             <li>
@@ -226,7 +226,7 @@ export default function TheHiddenRisksOfCopyingChatGptTextPage() {
         <p className="text-slate-700">
           Here is the workflow that eliminates all of these risks before they become problems.
         </p>
-        <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+        <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
           <p className="font-semibold text-slate-900">Safe ChatGPT text workflow</p>
           <ol className="mt-2 list-decimal space-y-2 pl-5">
             <li>

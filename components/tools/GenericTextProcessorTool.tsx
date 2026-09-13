@@ -215,7 +215,7 @@ export function GenericTextProcessorTool({
 
           {/* Processing animation */}
           {isProcessing && (
-            <div className="flex flex-col gap-3 rounded-lg border border-slate-200 bg-white px-5 py-5 min-h-[200px]">
+            <div className="flex flex-col gap-3 rounded-lg border-3 border-black bg-white px-5 py-5 min-h-[200px]">
               <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-widest text-slate-500">
                 <svg className="h-3.5 w-3.5 animate-spin" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
@@ -236,7 +236,7 @@ export function GenericTextProcessorTool({
                         <span className="h-1.5 w-1.5 rounded-sm bg-slate-400" />
                       </span>
                     ) : (
-                      <span className="h-4 w-4 shrink-0 rounded border border-slate-200 bg-white" />
+                      <span className="h-4 w-4 shrink-0 rounded border-3 border-black bg-white" />
                     )}
                     <span className={i <= stepIndex ? 'text-slate-800' : 'text-slate-400'}>{step}</span>
                   </li>
@@ -257,7 +257,7 @@ export function GenericTextProcessorTool({
 
           {/* Detector score meter — funnels to humanizer */}
           {!isProcessing && isDetector && aiScore !== null && (
-            <div className="rounded-2xl border border-red-200 bg-gradient-to-b from-red-50 to-white p-5 shadow-sm">
+            <div className="rounded-2xl border border-red-200 bg-gradient-to-b from-red-50 to-white p-5 shadow-neo-sm">
               <div className="flex items-center justify-between">
                 <span className="text-xs font-bold uppercase tracking-widest text-red-600">AI Detected</span>
                 <span className="rounded-full bg-red-100 px-2.5 py-0.5 text-[10px] font-black uppercase tracking-wider text-red-700">
@@ -281,7 +281,7 @@ export function GenericTextProcessorTool({
                 </p>
                 <Link
                   href="/ai-humanizer-pro"
-                  className="mt-3 flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-violet-600 to-purple-700 px-4 py-3 text-sm font-bold text-white shadow-sm transition hover:from-violet-700 hover:to-purple-800 active:scale-[0.98]"
+                  className="mt-3 flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-violet-600 to-purple-700 px-4 py-3 text-sm font-bold text-white shadow-neo-sm transition hover:from-violet-700 hover:to-purple-800 active:scale-[0.98]"
                 >
                   Humanize This Text
                   <svg className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
@@ -294,10 +294,10 @@ export function GenericTextProcessorTool({
 
           {/* Upsell card above blurred output */}
           {!isProcessing && showPaywall && (
-            <div className="mb-2 rounded-2xl bg-slate-900 text-white shadow-xl">
+            <div className="mb-2 rounded-2xl bg-slate-900 text-white shadow-neo-lg">
               <div className="p-5 md:p-6">
                 <div className="flex items-start gap-3">
-                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-brand-600 text-yellow-300 shadow-sm">
+                  <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-brand-600 text-yellow-300 shadow-neo-sm">
                     <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z" />
                     </svg>
@@ -320,7 +320,7 @@ export function GenericTextProcessorTool({
                 <button
                   type="button"
                   onClick={() => isLoggedIn ? window.location.href = '/pro' : setAuthOpen(true)}
-                  className="mt-4 flex w-full items-center justify-center gap-2 rounded-xl bg-brand-600 px-4 py-3 text-sm font-bold text-white shadow-sm transition hover:bg-brand-700 active:scale-[0.98]"
+                  className="mt-4 flex w-full items-center justify-center gap-2 rounded-xl bg-brand-600 px-4 py-3 text-sm font-bold text-white shadow-neo-sm transition hover:bg-brand-700 active:scale-[0.98]"
                 >
                   {upsell.cta}
                   <svg className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24">
@@ -361,7 +361,7 @@ export function GenericTextProcessorTool({
           type="button"
           onClick={handleCopy}
           disabled={!fullOutput || isProcessing || showPaywall}
-          className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50 disabled:opacity-50 disabled:cursor-not-allowed"
+          className="inline-flex items-center justify-center rounded-lg border-3 border-black bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50 disabled:opacity-50 disabled:cursor-not-allowed"
         >
           {copyButtonLabel}
         </button>
@@ -369,7 +369,7 @@ export function GenericTextProcessorTool({
           type="button"
           onClick={handleClear}
           disabled={isProcessing}
-          className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50 disabled:opacity-50 disabled:cursor-not-allowed"
+          className="inline-flex items-center justify-center rounded-lg border-3 border-black bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50 disabled:opacity-50 disabled:cursor-not-allowed"
         >
           {clearButtonLabel}
         </button>

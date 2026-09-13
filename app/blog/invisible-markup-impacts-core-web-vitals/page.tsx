@@ -28,7 +28,7 @@ export default function InvisibleMarkupCoreWebVitalsPage() {
         <AdSenseSlot className="w-full" />
       </div>
 
-      <div className="rounded-[28px] border border-slate-200 bg-white/70 p-6 shadow-xl shadow-slate-900/5 backdrop-blur-lg">
+      <div className="rounded-[28px] border-3 border-black bg-white/70 p-6 shadow-neo-lg shadow-slate-900/5 backdrop-blur-lg">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Performance starts in the text layer</p>
         <h1 className="mt-3 text-3xl font-semibold text-slate-900">How Invisible Markup Impacts Core Web Vitals</h1>
         <p className="mt-2 text-slate-600">
@@ -42,7 +42,7 @@ export default function InvisibleMarkupCoreWebVitalsPage() {
             { title: 'CLS', detail: 'Unexpected wraps and block boundaries create jumps' },
             { title: 'INP', detail: 'DOM bloat increases recalculation cost on scroll' },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-100 bg-slate-50 p-4 text-xs text-slate-700">
+            <div key={item.title} className="rounded-2xl border-2 border-black bg-slate-50 p-4 text-xs text-slate-700">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.detail}</p>
             </div>
@@ -85,7 +85,7 @@ export default function InvisibleMarkupCoreWebVitalsPage() {
               body: 'Direct paste from AI tools preserves invisible characters and can trigger auto-formatting bugs and layout instability.',
             },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-200 bg-white/60 p-4 text-sm text-slate-700 shadow-sm">
+            <div key={item.title} className="rounded-2xl border-3 border-black bg-white/60 p-4 text-sm text-slate-700 shadow-neo-sm">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.body}</p>
             </div>
@@ -96,14 +96,14 @@ export default function InvisibleMarkupCoreWebVitalsPage() {
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">How invisible markup affects Core Web Vitals</h2>
         <div className="grid gap-4 md:grid-cols-3">
-          <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">1. Largest Contentful Paint (LCP)</p>
             <p className="mt-2">Invisible characters can increase text node complexity and delay layout and paint for large blocks of content.</p>
             <p className="mt-3 text-slate-600">
               Real-world impact: long AI-generated articles can add noticeable LCP delay on mobile, even with optimized images and fast hosting.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">2. Cumulative Layout Shift (CLS)</p>
             <p className="mt-2">
               Hidden Unicode can change width calculations, alter wrapping, break heading/list boundaries, and trigger reflows that make content
@@ -111,7 +111,7 @@ export default function InvisibleMarkupCoreWebVitalsPage() {
             </p>
             <p className="mt-3 text-slate-600">Text-induced CLS is often harder to diagnose than image-based CLS, but it is just as harmful.</p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">3. Interaction to Next Paint (INP)</p>
             <p className="mt-2">
               Dirty text can inflate DOM node count and increase layout recalculation cost during scrolling and interaction, causing jank on
@@ -168,7 +168,7 @@ export default function InvisibleMarkupCoreWebVitalsPage() {
 
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">How to fix invisible markup (safely and permanently)</h2>
-        <div className="rounded-2xl border border-brand-100 bg-brand-50 p-5 text-sm text-brand-900 shadow-sm">
+        <div className="rounded-2xl border border-brand-100 bg-brand-50 p-5 text-sm text-brand-900 shadow-neo-sm">
           <p className="font-semibold text-brand-800">High-ROI cleanup plan</p>
           <ol className="mt-2 list-decimal space-y-2 pl-5 text-slate-800">
             <li>
@@ -195,7 +195,7 @@ export default function InvisibleMarkupCoreWebVitalsPage() {
 
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">Invisible markup vs other optimizations</h2>
-        <div className="rounded-2xl border border-slate-200 bg-white/70 p-5 text-sm text-slate-700 shadow-sm">
+        <div className="rounded-2xl border-3 border-black bg-white/70 p-5 text-sm text-slate-700 shadow-neo-sm">
           <table>
             <thead>
               <tr>
@@ -254,7 +254,7 @@ export default function InvisibleMarkupCoreWebVitalsPage() {
             { q: 'Should I clean old posts?', a: 'Start with high-impact pages first: long-form posts and URLs with traffic or ranking potential.' },
             { q: 'Does Google penalize invisible markup?', a: 'Not directly, but it penalizes poor experience, which invisible markup can cause.' },
           ].map((item) => (
-            <div key={item.q} className="rounded-2xl border border-slate-200 bg-white/60 p-4 text-sm text-slate-700 shadow-sm">
+            <div key={item.q} className="rounded-2xl border-3 border-black bg-white/60 p-4 text-sm text-slate-700 shadow-neo-sm">
               <p className="font-semibold text-slate-900">{item.q}</p>
               <p className="mt-1">{item.a}</p>
             </div>

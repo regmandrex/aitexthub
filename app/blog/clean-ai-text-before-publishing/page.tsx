@@ -28,7 +28,7 @@ export default function CleanAiTextBeforePublishingPage() {
         <AdSenseSlot className="w-full" />
       </div>
 
-      <div className="rounded-[28px] border border-slate-200 bg-white/70 p-6 shadow-xl shadow-slate-900/5 backdrop-blur-lg">
+      <div className="rounded-[28px] border-3 border-black bg-white/70 p-6 shadow-neo-lg shadow-slate-900/5 backdrop-blur-lg">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Pre-publish quality control</p>
         <h1 className="mt-3 text-3xl font-semibold text-slate-900">Clean AI Text Before Publishing</h1>
         <p className="mt-2 text-slate-600">
@@ -42,7 +42,7 @@ export default function CleanAiTextBeforePublishingPage() {
             { title: 'Performance', detail: 'Fewer layout shifts and better CWV' },
             { title: 'Trust', detail: 'Professional formatting across platforms' },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-100 bg-slate-50 p-4 text-xs text-slate-700">
+            <div key={item.title} className="rounded-2xl border-2 border-black bg-slate-50 p-4 text-xs text-slate-700">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.detail}</p>
             </div>
@@ -89,7 +89,7 @@ export default function CleanAiTextBeforePublishingPage() {
               body: 'Readers notice awkward spacing and unstable formatting. Messy text reduces trust even when users cannot explain why.',
             },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-200 bg-white/60 p-4 text-sm text-slate-700 shadow-sm">
+            <div key={item.title} className="rounded-2xl border-3 border-black bg-white/60 p-4 text-sm text-slate-700 shadow-neo-sm">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.body}</p>
             </div>
@@ -114,7 +114,7 @@ export default function CleanAiTextBeforePublishingPage() {
 
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">Step-by-step: how to clean AI text before publishing</h2>
-        <div className="rounded-2xl border border-brand-100 bg-brand-50 p-5 text-sm text-brand-900 shadow-sm">
+        <div className="rounded-2xl border border-brand-100 bg-brand-50 p-5 text-sm text-brand-900 shadow-neo-sm">
           <p className="font-semibold text-brand-800">Practical checklist workflow</p>
           <ol className="mt-2 list-decimal space-y-2 pl-5 text-slate-800">
             <li>
@@ -151,7 +151,7 @@ export default function CleanAiTextBeforePublishingPage() {
 
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">Clean AI text vs editing AI text (important distinction)</h2>
-        <div className="rounded-2xl border border-slate-200 bg-white/70 p-5 text-sm text-slate-700 shadow-sm">
+        <div className="rounded-2xl border-3 border-black bg-white/70 p-5 text-sm text-slate-700 shadow-neo-sm">
           <table>
             <thead>
               <tr>
@@ -199,7 +199,7 @@ export default function CleanAiTextBeforePublishingPage() {
               body: 'Watch for CLS, reduce structural clutter, and ensure mobile stability.',
             },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-200 bg-white/60 p-4 text-sm text-slate-700 shadow-sm">
+            <div key={item.title} className="rounded-2xl border-3 border-black bg-white/60 p-4 text-sm text-slate-700 shadow-neo-sm">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.body}</p>
             </div>
@@ -247,7 +247,7 @@ export default function CleanAiTextBeforePublishingPage() {
             { q: 'Is cleaning the same as rewriting?', a: 'No. Cleaning preserves meaning; rewriting changes wording or tone.' },
             { q: 'Does cleaning help rankings?', a: 'Indirectly, yes—through performance and UX improvements.' },
           ].map((item) => (
-            <div key={item.q} className="rounded-2xl border border-slate-200 bg-white/60 p-4 text-sm text-slate-700 shadow-sm">
+            <div key={item.q} className="rounded-2xl border-3 border-black bg-white/60 p-4 text-sm text-slate-700 shadow-neo-sm">
               <p className="font-semibold text-slate-900">{item.q}</p>
               <p className="mt-1">{item.a}</p>
             </div>

@@ -35,7 +35,7 @@ export function organizationSchema() {
     url: siteUrl,
     logo: {
       '@type': 'ImageObject',
-      url: `${siteUrl}/brand/ai-text-cleanup-tools-generated.png`,
+      url: `${siteUrl}/brand/ai-text-cleanup-tools-wordmark.png`,
       width: 2048,
       height: 768,
     },

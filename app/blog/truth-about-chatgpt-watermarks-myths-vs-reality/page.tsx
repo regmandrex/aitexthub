@@ -23,7 +23,7 @@ export default function TruthAboutChatGptWatermarksMythsVsRealityPage() {
       <div className="ad-slot"><AdSenseSlot className="w-full" /></div>
 
       {/* Hero card */}
-      <div className="rounded-[28px] border border-slate-200 bg-white/70 p-6 shadow-xl shadow-slate-900/5 backdrop-blur-lg">
+      <div className="rounded-[28px] border-3 border-black bg-white/70 p-6 shadow-neo-lg shadow-slate-900/5 backdrop-blur-lg">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Myths vs Reality 2026</p>
         <h1 className="mt-3 text-3xl font-semibold text-slate-900">The Truth About ChatGPT Watermarks</h1>
         <p className="mt-2 text-slate-600">
@@ -37,7 +37,7 @@ export default function TruthAboutChatGptWatermarksMythsVsRealityPage() {
             { title: 'What is actually true', detail: 'The verified reality of AI text artifacts' },
             { title: 'Practical takeaways', detail: 'What this means for your use of AI text' },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-100 bg-slate-50 p-4 text-xs text-slate-700">
+            <div key={item.title} className="rounded-2xl border-2 border-black bg-slate-50 p-4 text-xs text-slate-700">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.detail}</p>
             </div>
@@ -183,7 +183,7 @@ export default function TruthAboutChatGptWatermarksMythsVsRealityPage() {
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">What Is Actually True About ChatGPT Text</h2>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Verified fact: Invisible Unicode characters exist</p>
             <p className="mt-2">
               ChatGPT text consistently contains invisible Unicode characters including zero-width spaces, soft
@@ -191,7 +191,7 @@ export default function TruthAboutChatGptWatermarksMythsVsRealityPage() {
               implications for how the text behaves in downstream applications.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Verified fact: Statistical patterns are present</p>
             <p className="mt-2">
               AI text has statistically lower perplexity and lower burstiness than typical human writing. These
@@ -199,14 +199,14 @@ export default function TruthAboutChatGptWatermarksMythsVsRealityPage() {
               but they are real signals.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Verified fact: OpenAI logs conversations</p>
             <p className="mt-2">
               OpenAI stores conversation data by default. This is server-side logging, not embedded in the text.
               It is documented in their privacy policy and can be opted out of via account settings.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Verified fact: Detectors are imperfect</p>
             <p className="mt-2">
               All current AI detection tools have significant false positive and false negative rates. No tool

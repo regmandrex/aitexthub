@@ -17,7 +17,7 @@ const toolSlug = 'ai-academic-humanizer';
 
 function createWriteUp() {
   return (
-    <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+    <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
         <h2>AI Academic Humanizer: Make Any Model&apos;s Draft Read Like You Wrote It</h2>
         <p>This AI Academic Humanizer is a free, browser-based tool that rewrites academic text from any large language model — ChatGPT, Claude, Gemini, DeepSeek, Grok, Llama, Mistral, Perplexity — so it reads like human writing instead of a generated draft. It works on the habits every model shares, then lets you finish with your own voice. Your thesis, evidence, and citations are preserved; you remain responsible for originality and for disclosing AI use where your institution requires it.</p>

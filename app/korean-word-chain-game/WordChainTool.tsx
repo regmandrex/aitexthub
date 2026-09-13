@@ -106,7 +106,7 @@ export function WordChainTool() {
 
   return (
     <div className="space-y-4">
-      <div className="rounded-lg border border-slate-300 bg-slate-50 p-3 min-h-[200px] max-h-[300px] overflow-y-auto">
+      <div className="rounded-lg border-2 border-black bg-slate-50 p-3 min-h-[200px] max-h-[300px] overflow-y-auto">
         {history.length === 0 ? (
           <p className="text-sm text-slate-500">아래에 첫 단어를 입력해 끝말잇기를 시작해 보세요. (예: 사과, 바다, 나무)</p>
         ) : (
@@ -138,7 +138,7 @@ export function WordChainTool() {
             onKeyDown={(e) => e.key === 'Enter' && submit()}
             placeholder="단어를 입력하세요"
             maxLength={20}
-            className="flex-1 min-w-[160px] rounded-lg border border-slate-300 p-2 text-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+            className="flex-1 min-w-[160px] rounded-lg border-2 border-black p-2 text-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
           />
           <button
             type="button"
@@ -150,7 +150,7 @@ export function WordChainTool() {
           <button
             type="button"
             onClick={reset}
-            className="px-4 py-2 bg-white text-slate-700 border border-slate-300 rounded-lg text-sm font-medium hover:bg-slate-50 transition"
+            className="px-4 py-2 bg-white text-slate-700 border-2 border-black rounded-lg text-sm font-medium hover:bg-slate-50 transition"
           >
             새 게임
           </button>

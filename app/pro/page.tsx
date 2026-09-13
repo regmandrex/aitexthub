@@ -126,10 +126,10 @@ export default function ProLandingPage() {
   return (
     <div className="bg-white overflow-x-hidden">
       {/* HERO */}
-      <section className="relative overflow-hidden border-b border-slate-200 bg-gradient-to-b from-violet-50 via-white to-white">
+      <section className="relative overflow-hidden border-b-3 border-black bg-gradient-to-b from-violet-50 via-white to-white">
         <div className="pointer-events-none absolute -top-32 left-1/2 h-96 w-[700px] -translate-x-1/2 rounded-full bg-violet-200/40 blur-3xl" />
         <div className="relative mx-auto max-w-5xl px-4 py-14 text-center md:py-20">
-          <p className="mb-4 inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-violet-600 to-purple-700 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-white shadow-sm shadow-violet-200">
+          <p className="mb-4 inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-violet-600 to-purple-700 px-3 py-1 text-xs font-semibold uppercase tracking-wider text-white shadow-neo-sm shadow-violet-200">
             <span className="text-amber-300">✦</span> AI Text Cleanup Tools Pro
           </p>
           <h1 className="text-3xl font-bold tracking-tight text-slate-900 md:text-5xl">
@@ -147,7 +147,7 @@ export default function ProLandingPage() {
             {DETECTORS.map((d) => (
               <span
                 key={d}
-                className="rounded-full border border-slate-300 bg-white px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wider text-slate-600 shadow-sm"
+                className="rounded-full border-2 border-black bg-white px-2.5 py-1 text-[11px] font-semibold uppercase tracking-wider text-slate-600 shadow-neo-sm"
               >
                 {d}
               </span>
@@ -157,13 +157,13 @@ export default function ProLandingPage() {
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             <Link
               href="#pricing"
-              className="rounded-full bg-gradient-to-r from-violet-600 to-purple-700 px-6 py-3 text-sm font-semibold text-white shadow-md shadow-violet-200 transition hover:shadow-lg hover:shadow-violet-300"
+              className="rounded-full bg-gradient-to-r from-violet-600 to-purple-700 px-6 py-3 text-sm font-semibold text-white shadow-neo shadow-violet-200 transition hover:shadow-neo-lg hover:shadow-violet-300"
             >
               See Pricing
             </Link>
             <Link
               href="/ai-humanizer"
-              className="rounded-full border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-900 transition hover:bg-slate-50"
+              className="rounded-full border-2 border-black bg-white px-6 py-3 text-sm font-semibold text-slate-900 transition hover:bg-slate-50"
             >
               Try free first
             </Link>
@@ -173,29 +173,29 @@ export default function ProLandingPage() {
       </section>
 
       {/* COMPARISON */}
-      <section className="border-b border-slate-200 bg-white">
+      <section className="border-b-3 border-black bg-white">
         <div className="mx-auto max-w-5xl px-4 py-12 md:py-16">
           <h2 className="text-center text-2xl font-bold tracking-tight text-slate-900 md:text-3xl">Free vs Pro</h2>
           <p className="mx-auto mt-2 max-w-xl text-center text-slate-600">
             Every tool stays free with generous limits. Pro removes the ceiling.
           </p>
 
-          <div className="mt-8 overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
-            <div className="grid grid-cols-3 border-b border-slate-200 bg-slate-50 text-xs font-semibold uppercase tracking-wider text-slate-600">
+          <div className="mt-8 overflow-hidden rounded-2xl border-3 border-black bg-white shadow-neo-sm">
+            <div className="grid grid-cols-3 border-b-3 border-black bg-slate-50 text-xs font-semibold uppercase tracking-wider text-slate-600">
               <div className="px-4 py-3 md:px-6">Feature</div>
-              <div className="border-l border-slate-200 px-4 py-3 md:px-6">Free</div>
-              <div className="border-l border-slate-200 bg-gradient-to-r from-violet-700 to-purple-700 px-4 py-3 text-white md:px-6">
+              <div className="border-l-3 border-black px-4 py-3 md:px-6">Free</div>
+              <div className="border-l-3 border-black bg-gradient-to-r from-violet-700 to-purple-700 px-4 py-3 text-white md:px-6">
                 Pro
               </div>
             </div>
             {COMPARISON.map((row, i) => (
               <div
                 key={row.feature}
-                className={`grid grid-cols-3 text-sm ${i === COMPARISON.length - 1 ? '' : 'border-b border-slate-200'}`}
+                className={`grid grid-cols-3 text-sm ${i === COMPARISON.length - 1 ? '' : 'border-b-3 border-black'}`}
               >
                 <div className="px-4 py-3 font-medium text-slate-900 md:px-6">{row.feature}</div>
-                <div className="border-l border-slate-200 px-4 py-3 text-slate-600 md:px-6">{row.free}</div>
-                <div className="border-l border-slate-200 bg-violet-50/40 px-4 py-3 font-medium text-slate-900 md:px-6">
+                <div className="border-l-3 border-black px-4 py-3 text-slate-600 md:px-6">{row.free}</div>
+                <div className="border-l-3 border-black bg-violet-50/40 px-4 py-3 font-medium text-slate-900 md:px-6">
                   {row.pro}
                 </div>
               </div>
@@ -205,7 +205,7 @@ export default function ProLandingPage() {
       </section>
 
       {/* PRICING */}
-      <section id="pricing" className="relative border-b border-slate-200 bg-slate-50">
+      <section id="pricing" className="relative border-b-3 border-black bg-slate-50">
         <div className="mx-auto max-w-5xl px-4 py-12 md:py-16">
           <h2 className="text-center text-2xl font-bold tracking-tight text-slate-900 md:text-3xl">
             Simple pricing.
@@ -220,12 +220,12 @@ export default function ProLandingPage() {
                 key={plan.id}
                 className={`relative flex flex-col overflow-hidden rounded-2xl border bg-white p-6 transition-all duration-200 ${
                   plan.highlight
-                    ? 'border-violet-500 shadow-xl shadow-violet-200 md:scale-[1.03]'
-                    : 'border-slate-200 shadow-sm hover:-translate-y-0.5 hover:shadow-md'
+                    ? 'border-violet-500 shadow-neo-lg shadow-violet-200 md:scale-[1.03]'
+                    : 'border-black shadow-neo-sm hover:-translate-y-0.5 hover:shadow-neo'
                 }`}
               >
                 {plan.badge && (
-                  <span className="absolute right-4 top-4 rounded-full bg-gradient-to-r from-amber-400 to-yellow-300 px-2.5 py-1 text-[10px] font-black uppercase tracking-wider text-amber-900 shadow-sm">
+                  <span className="absolute right-4 top-4 rounded-full bg-gradient-to-r from-amber-400 to-yellow-300 px-2.5 py-1 text-[10px] font-black uppercase tracking-wider text-amber-900 shadow-neo-sm">
                     {plan.badge}
                   </span>
                 )}
@@ -265,8 +265,8 @@ export default function ProLandingPage() {
                   href="/contact"
                   className={`mt-6 block w-full rounded-full px-4 py-3 text-center text-sm font-bold transition ${
                     plan.highlight
-                      ? 'bg-gradient-to-r from-violet-600 to-purple-700 text-white shadow-md shadow-violet-200 hover:shadow-lg'
-                      : 'border border-slate-300 bg-white text-slate-900 hover:bg-slate-50'
+                      ? 'bg-gradient-to-r from-violet-600 to-purple-700 text-white shadow-neo shadow-violet-200 hover:shadow-neo-lg'
+                      : 'border-2 border-black bg-white text-slate-900 hover:bg-slate-50'
                   }`}
                 >
                   {plan.cta}
@@ -284,7 +284,7 @@ export default function ProLandingPage() {
       </section>
 
       {/* FAQ */}
-      <section className="border-b border-slate-200 bg-white">
+      <section className="border-b-3 border-black bg-white">
         <div className="mx-auto max-w-3xl px-4 py-12 md:py-16">
           <h2 className="text-center text-2xl font-bold tracking-tight text-slate-900 md:text-3xl">
             Pro questions, answered.
@@ -293,7 +293,7 @@ export default function ProLandingPage() {
             {FAQS.map((faq, i) => (
               <details
                 key={i}
-                className="group rounded-xl border border-slate-200 bg-white px-4 py-3 transition open:border-violet-200 open:bg-violet-50/30 hover:border-slate-300"
+                className="group rounded-xl border-3 border-black bg-white px-4 py-3 transition open:border-violet-200 open:bg-violet-50/30 hover:border-black"
               >
                 <summary className="flex cursor-pointer list-none items-center justify-between gap-3 text-sm font-semibold text-slate-900">
                   <span className="flex items-start gap-2">
@@ -322,7 +322,7 @@ export default function ProLandingPage() {
           <p className="mt-3 text-violet-100">Contact us to discuss Pro access for your workflow.</p>
           <Link
             href="/contact"
-            className="mt-6 inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-bold text-violet-700 shadow-lg transition hover:bg-violet-50"
+            className="mt-6 inline-flex items-center gap-2 rounded-full bg-white px-6 py-3 text-sm font-bold text-violet-700 shadow-neo-lg transition hover:bg-violet-50"
           >
             Contact us
           </Link>

@@ -24,7 +24,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
 function createWriteUp() {
   return (
-    <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+    <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
         <h2>Shakespearean Translator: Translate Into Shakespearean English</h2>
         <p>A Shakespearean translator is an online tool that converts modern English into Shakespearean-style English—thee, thou, hath, dost, and the phrasing associated with William Shakespeare and Early Modern English. Whether you want to add a theatrical flair to a message, create period-accurate dialogue for a play or story, or simply have fun with "translate into Shakespearean" style text, a Shakespearean translator lets you type or paste your text and get a version that echoes the language of the Bard.</p>

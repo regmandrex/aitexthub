@@ -110,7 +110,7 @@ export default async function CategoryPage({ params }: PageProps) {
         </section>
 
         {content ? (
-          <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6">
+          <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6">
             <div className="prose prose-slate max-w-none prose-headings:scroll-mt-24">
               {content.intro}
             </div>
@@ -135,7 +135,7 @@ export default async function CategoryPage({ params }: PageProps) {
         </section>
 
         {content ? (
-          <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6">
+          <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6">
             <div className="prose prose-slate max-w-none prose-headings:scroll-mt-24">
               {content.body}
             </div>
@@ -157,7 +157,7 @@ export default async function CategoryPage({ params }: PageProps) {
               <Link
                 key={other.slug}
                 href={`/ai-tools/${other.slug}`}
-                className="group block rounded-xl border border-slate-200 bg-white p-4 shadow-sm transition hover:-translate-y-0.5 hover:shadow-md"
+                className="group block rounded-xl border-3 border-black bg-white p-4 shadow-neo-sm transition hover:-translate-y-0.5 hover:shadow-neo"
               >
                 <span className="block text-sm font-semibold text-slate-900 group-hover:text-brand-700">
                   {other.title}

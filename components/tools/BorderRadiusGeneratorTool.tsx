@@ -60,7 +60,7 @@ export function BorderRadiusGeneratorTool() {
         <div className="space-y-2 flex-1">
           <label className="block text-sm font-medium text-slate-700">CSS</label>
           <div className="flex items-center gap-2">
-            <code className="flex-1 rounded border border-slate-200 bg-slate-50 px-3 py-2 text-sm font-mono">{css}</code>
+            <code className="flex-1 rounded border-3 border-black bg-slate-50 px-3 py-2 text-sm font-mono">{css}</code>
             <button onClick={copy} className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors whitespace-nowrap ${copied ? 'bg-green-500 text-white' : 'bg-blue-600 hover:bg-blue-700 text-white'}`}>{copied ? '✓ Copied!' : 'Copy'}</button>
           </div>
         </div>

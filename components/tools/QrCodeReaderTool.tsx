@@ -69,7 +69,7 @@ export function QrCodeReaderTool() {
         onDrop={handleDrop}
         onClick={() => fileInputRef.current?.click()}
         className={`border-2 border-dashed rounded-lg p-10 text-center cursor-pointer transition-colors ${
-          isDragging ? 'border-blue-500 bg-blue-50' : 'border-slate-300 hover:border-blue-400 hover:bg-slate-50'
+          isDragging ? 'border-blue-500 bg-blue-50' : 'border-black hover:border-blue-400 hover:bg-slate-50'
         }`}
       >
         <svg className="mx-auto mb-3 w-10 h-10 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -101,7 +101,7 @@ export function QrCodeReaderTool() {
               readOnly
               value={result}
               rows={4}
-              className="w-full rounded-lg border border-slate-200 bg-slate-50 px-3 py-2 text-sm text-slate-800 resize-none"
+              className="w-full rounded-lg border-3 border-black bg-slate-50 px-3 py-2 text-sm text-slate-800 resize-none"
             />
           </div>
           <div className="flex gap-2">
@@ -123,7 +123,7 @@ export function QrCodeReaderTool() {
             ) : null}
             <button
               onClick={handleClear}
-              className="px-4 py-2 rounded-lg border border-slate-200 hover:bg-slate-50 text-slate-700 text-sm font-medium transition-colors"
+              className="px-4 py-2 rounded-lg border-3 border-black hover:bg-slate-50 text-slate-700 text-sm font-medium transition-colors"
             >
               Clear
             </button>

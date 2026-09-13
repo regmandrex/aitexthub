@@ -49,7 +49,7 @@ const faqs: FaqItem[] = [
 ];
 
 const writeUp = (
-  <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+  <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
     <div className="prose prose-slate max-w-none">
       <h2>ChatGPT Research Paper Checker: Evaluate Your Academic Research</h2>
       <p>The ChatGPT Research Paper Checker is a free online tool that evaluates research papers for structure, methodology description, literature review quality, argument coherence, and academic writing standards. Research papers have specific requirements beyond general essays, and this tool helps you meet those standards.</p>

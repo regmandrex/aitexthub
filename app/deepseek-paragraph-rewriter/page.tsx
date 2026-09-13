@@ -17,7 +17,7 @@ const toolSlug = 'deepseek-paragraph-rewriter';
 
 function createWriteUp() {
   return (
-    <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+    <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
         <h2>DeepSeek Paragraph Rewriter: Enhance Paragraph Structure and Flow</h2>
         <p>A DeepSeek Paragraph Rewriter is a free online tool that rewrites full paragraphs from DeepSeek output to improve flow, coherence, and readability. It helps you strengthen topic sentences, improve transitions, and create better structure so each paragraph supports your argument or narrative clearly.</p>

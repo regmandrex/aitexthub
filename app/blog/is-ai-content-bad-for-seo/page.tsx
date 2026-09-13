@@ -23,7 +23,7 @@ export default function IsAiContentBadForSeoPage() {
       <div className="ad-slot"><AdSenseSlot className="w-full" /></div>
 
       {/* Hero card */}
-      <div className="rounded-[28px] border border-slate-200 bg-white/70 p-6 shadow-xl shadow-slate-900/5 backdrop-blur-lg">
+      <div className="rounded-[28px] border-3 border-black bg-white/70 p-6 shadow-neo-lg shadow-slate-900/5 backdrop-blur-lg">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">SEO &amp; AI Content</p>
         <h1 className="mt-3 text-3xl font-semibold text-slate-900">Is AI Content Bad For SEO?</h1>
         <p className="mt-2 text-slate-600">
@@ -37,7 +37,7 @@ export default function IsAiContentBadForSeoPage() {
             { title: 'E-E-A-T signals', detail: 'Experience, expertise, authoritativeness, trustworthiness' },
             { title: 'Hidden character risks', detail: 'Invisible Unicode artifacts can hurt technical SEO' },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-100 bg-slate-50 p-4 text-xs text-slate-700">
+            <div key={item.title} className="rounded-2xl border-2 border-black bg-slate-50 p-4 text-xs text-slate-700">
               <p className="font-semibold text-slate-900" dangerouslySetInnerHTML={{ __html: item.title }} />
               <p className="mt-1">{item.detail}</p>
             </div>
@@ -74,7 +74,7 @@ export default function IsAiContentBadForSeoPage() {
           AI, but because it lacks the signals that E-E-A-T looks for.
         </p>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Experience</p>
             <p className="mt-2">
               Has the author actually used the product, visited the place, or undergone the process? AI cannot provide this signal
@@ -82,7 +82,7 @@ export default function IsAiContentBadForSeoPage() {
               evidence.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Expertise</p>
             <p className="mt-2">
               Does the content reflect deep domain knowledge? AI can synthesize surface-level information well, but often misses
@@ -90,7 +90,7 @@ export default function IsAiContentBadForSeoPage() {
               expert review is essential.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Authoritativeness</p>
             <p className="mt-2">
               Is the site known as a credible source in its field? AI content published on a brand-new domain with no backlinks, no
@@ -98,7 +98,7 @@ export default function IsAiContentBadForSeoPage() {
               publishing over time.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Trustworthiness</p>
             <p className="mt-2">
               Does the site demonstrate transparency? Named authors, clear editorial policies, cited sources, and accurate factual
@@ -125,28 +125,28 @@ export default function IsAiContentBadForSeoPage() {
           source code and can cause several problems:
         </p>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Page bloat</p>
             <p className="mt-2">
               Invisible characters add bytes to your HTML without adding value. On a large site publishing hundreds of AI-assisted
               articles, this can meaningfully increase page weight and slow load times &mdash; a direct Core Web Vitals signal.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Tokenization breaks</p>
             <p className="mt-2">
               Search engines tokenize text to understand meaning. A zero-width space inserted mid-word can split a keyword into
               two unrecognized tokens, effectively hiding it from the search engine&apos;s understanding of your content.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Structured data errors</p>
             <p className="mt-2">
               If invisible characters appear inside JSON-LD schema markup, they can corrupt the structured data. Google&apos;s Rich
               Results Test will flag these as errors, and you lose rich snippet eligibility.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Copy-paste propagation</p>
             <p className="mt-2">
               When readers copy your content, invisible characters travel with it. If your content gets cited or shared with
@@ -168,7 +168,7 @@ export default function IsAiContentBadForSeoPage() {
           Understanding what Google does penalize &mdash; as opposed to what it ignores &mdash; helps clarify the real risk landscape
           for AI content. These are the actual triggers:
         </p>
-        <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+        <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
           <p className="font-semibold text-slate-900">Genuine penalty triggers for AI content</p>
           <ul className="mt-2 list-disc space-y-2 pl-5">
             <li>
@@ -219,7 +219,7 @@ export default function IsAiContentBadForSeoPage() {
           they have poor user engagement signals. AI accelerates the production of this type of content, but the content itself
           is the problem.
         </p>
-        <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+        <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
           <p className="font-semibold text-slate-900">How to use AI content safely within HCU guidelines</p>
           <ol className="mt-2 list-decimal space-y-2 pl-5">
             <li>Use AI as a research accelerator and draft generator, not as a final publisher.</li>
@@ -256,7 +256,7 @@ export default function IsAiContentBadForSeoPage() {
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">Practical SEO Checklist for AI Content</h2>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Before writing</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Define the target audience and their actual information need</li>
@@ -265,7 +265,7 @@ export default function IsAiContentBadForSeoPage() {
               <li>Choose keywords based on intent, not just volume</li>
             </ul>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">While using AI</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Prompt for drafts, not finished articles</li>
@@ -274,7 +274,7 @@ export default function IsAiContentBadForSeoPage() {
               <li>Request citations and verify every factual claim</li>
             </ul>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">After generating</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Remove invisible Unicode characters before publishing</li>
@@ -283,7 +283,7 @@ export default function IsAiContentBadForSeoPage() {
               <li>Verify all links, statistics, and named entities</li>
             </ul>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Before publishing</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Scan for invisible characters with a dedicated tool</li>
@@ -335,28 +335,28 @@ export default function IsAiContentBadForSeoPage() {
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">Common Myths About AI Content and SEO</h2>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Myth: Google can detect AI writing</p>
             <p className="mt-2">
               Reality: Google has not confirmed using AI detection as a ranking signal. It measures quality signals that are
               often correlated with poor AI content, but those signals apply equally to poor human content.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Myth: All AI content is penalized</p>
             <p className="mt-2">
               Reality: Google explicitly states the method of production is irrelevant. Penalized content is content made
               to manipulate search rather than to help readers &mdash; regardless of who or what wrote it.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Myth: Publishing AI content at volume is safe</p>
             <p className="mt-2">
               Reality: The HCU&apos;s site-wide signal means a large volume of thin AI content can drag down your whole
               domain, even if individual pages would otherwise be fine. Quality must scale with volume.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Myth: Invisible characters do not affect SEO</p>
             <p className="mt-2">
               Reality: Zero-width spaces and other Unicode artifacts can corrupt keyword tokenization, inflate page weight,

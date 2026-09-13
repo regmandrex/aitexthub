@@ -24,7 +24,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
 function createWriteUp() {
   return (
-    <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+    <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
         <h2>What Is a Medieval Translator?</h2>
         <p>A medieval translator is an online tool that converts modern English into the style of medieval or Middle English—the language of Geoffrey Chaucer, court documents, and the period from roughly the eleventh to the fifteenth century. Writers, educators, and hobbyists use it to translate to medieval for historical fiction, classroom projects, themed events, or role-play. You type or paste your text, run it through the tool, and receive a version that echoes period vocabulary and spelling without requiring fluency in Middle English.</p>

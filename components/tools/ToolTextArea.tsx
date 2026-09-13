@@ -19,7 +19,7 @@ export default function ToolTextArea({ label, value, onChange, helperText, befor
       </div>
       {beforeTextarea}
       <textarea
-        className="w-full rounded-xl border border-slate-200 bg-white px-3 py-3 text-[15px] leading-relaxed text-slate-800 shadow-sm outline-none transition placeholder:text-slate-400 focus:border-brand-300 focus:ring-2 focus:ring-brand-100 md:text-base"
+        className="w-full rounded-xl border-3 border-black bg-white px-3 py-3 text-[15px] leading-relaxed text-slate-800 shadow-neo-sm outline-none transition placeholder:text-slate-400 focus:border-brand-300 focus:ring-2 focus:ring-brand-100 md:text-base"
         value={value}
         onChange={(e) => onChange(e.target.value)}
         rows={rest.rows ?? 12}

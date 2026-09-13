@@ -29,7 +29,7 @@ export default function WhereToCheckAIWritingPage() {
         <AdSenseSlot className="w-full" />
       </div>
 
-      <div className="rounded-[28px] border border-slate-200 bg-white/70 p-6 shadow-xl shadow-slate-900/5 backdrop-blur-lg">
+      <div className="rounded-[28px] border-3 border-black bg-white/70 p-6 shadow-neo-lg shadow-slate-900/5 backdrop-blur-lg">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Honest tool comparison for 2026</p>
         <h1 className="mt-3 text-3xl font-semibold text-slate-900">Where to Check AI Writing</h1>
         <p className="mt-2 text-slate-600">
@@ -43,7 +43,7 @@ export default function WhereToCheckAIWritingPage() {
             { title: 'Unicode scanners', detail: 'Character-level artifact detection' },
             { title: 'Classifier tools', detail: 'Trained model-based AI identification' },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-100 bg-slate-50 p-4 text-xs text-slate-700">
+            <div key={item.title} className="rounded-2xl border-2 border-black bg-slate-50 p-4 text-xs text-slate-700">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.detail}</p>
             </div>
@@ -72,7 +72,7 @@ export default function WhereToCheckAIWritingPage() {
           The most widely used AI writing checkers rely on statistical language analysis, primarily perplexity and burstiness scoring.
         </p>
         <div className="space-y-4">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">GPTZero</p>
             <p className="mt-2">
               GPTZero uses perplexity (how predictable word choices are) and burstiness (variation in sentence complexity) to classify
@@ -81,7 +81,7 @@ export default function WhereToCheckAIWritingPage() {
               speakers are disproportionately flagged.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Turnitin AI Detection</p>
             <p className="mt-2">
               Integrated into the Turnitin submission platform, widely used in higher education. Uses a proprietary language model
@@ -89,7 +89,7 @@ export default function WhereToCheckAIWritingPage() {
               Turnitin itself states that the AI detection score should not be used as the sole basis for academic misconduct decisions.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Sapling AI Detector</p>
             <p className="mt-2">
               Free to use with an API available for integration. Provides a percentage likelihood score. Best for quick screening
@@ -133,7 +133,7 @@ export default function WhereToCheckAIWritingPage() {
             { name: 'Winston AI', desc: 'Provides a "human score" alongside AI detection. Good for content agencies that need readability and quality assessment combined with AI screening.' },
             { name: 'Content at Scale AI Detector', desc: 'Free tool. Provides a detailed breakdown of AI vs human probability by paragraph. Useful for content teams screening AI-assisted drafts.' },
           ].map((item) => (
-            <div key={item.name} className="rounded-2xl border border-slate-200 bg-white/60 p-4 text-sm text-slate-700 shadow-sm">
+            <div key={item.name} className="rounded-2xl border-3 border-black bg-white/60 p-4 text-sm text-slate-700 shadow-neo-sm">
               <p className="font-semibold text-slate-900">{item.name}</p>
               <p className="mt-1">{item.desc}</p>
             </div>
@@ -154,7 +154,7 @@ export default function WhereToCheckAIWritingPage() {
             { principle: 'Account for text type', detail: 'Academic, technical, and legal writing naturally scores higher for AI probability due to its formal structure. Calibrate your expectations accordingly.' },
             { principle: 'Document your process', detail: 'If you are making decisions based on detection results, document how the tool was used, what threshold was applied, and what other evidence was considered.' },
           ].map((item) => (
-            <div key={item.principle} className="rounded-2xl border border-slate-200 bg-white/60 p-4 text-sm text-slate-700 shadow-sm">
+            <div key={item.principle} className="rounded-2xl border-3 border-black bg-white/60 p-4 text-sm text-slate-700 shadow-neo-sm">
               <p className="font-semibold text-slate-900">{item.principle}</p>
               <p className="mt-1">{item.detail}</p>
             </div>
@@ -214,7 +214,7 @@ export default function WhereToCheckAIWritingPage() {
             { q: 'Can AI-generated text be edited to pass detection?', a: 'Heavy editing reduces detection probability. But the goal should be genuine quality improvement, not evasion. Detection tools will continue to improve.' },
             { q: 'How accurate are AI writing detectors?', a: 'Accuracy varies by tool and text type. Published studies show false positive rates between 2% and 15% and false negative rates that depend heavily on how much the text has been edited.' },
           ].map((item) => (
-            <div key={item.q} className="rounded-2xl border border-slate-200 bg-white/60 p-4 text-sm text-slate-700 shadow-sm">
+            <div key={item.q} className="rounded-2xl border-3 border-black bg-white/60 p-4 text-sm text-slate-700 shadow-neo-sm">
               <p className="font-semibold text-slate-900">{item.q}</p>
               <p className="mt-1">{item.a}</p>
             </div>

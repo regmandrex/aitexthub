@@ -29,7 +29,7 @@ export default function DoesChatGPTWatermarkTextPage() {
         <AdSenseSlot className="w-full" />
       </div>
 
-      <div className="rounded-[28px] border border-slate-200 bg-white/70 p-6 shadow-xl shadow-slate-900/5 backdrop-blur-lg">
+      <div className="rounded-[28px] border-3 border-black bg-white/70 p-6 shadow-neo-lg shadow-slate-900/5 backdrop-blur-lg">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">What the evidence actually shows</p>
         <h1 className="mt-3 text-3xl font-semibold text-slate-900">Does ChatGPT Watermark Text?</h1>
         <p className="mt-2 text-slate-600">
@@ -43,7 +43,7 @@ export default function DoesChatGPTWatermarkTextPage() {
             { title: "OpenAI's position", detail: 'Cryptographic watermarks are planned, not yet confirmed' },
             { title: 'What you can do', detail: 'Detect and remove hidden signals before publishing' },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-100 bg-slate-50 p-4 text-xs text-slate-700">
+            <div key={item.title} className="rounded-2xl border-2 border-black bg-slate-50 p-4 text-xs text-slate-700">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.detail}</p>
             </div>
@@ -77,7 +77,7 @@ export default function DoesChatGPTWatermarkTextPage() {
           concepts:
         </p>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Cryptographic watermarking</p>
             <p className="mt-2">
               A deliberate, statistically encoded signal embedded during the text generation process itself. Researchers at Google, OpenAI, and
@@ -85,7 +85,7 @@ export default function DoesChatGPTWatermarkTextPage() {
               the original model. This is mathematically robust and difficult to remove by paraphrasing.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Hidden Unicode artifacts</p>
             <p className="mt-2">
               Invisible or non-standard characters that appear in AI output as a side effect of how language models process and generate text.
@@ -143,7 +143,7 @@ export default function DoesChatGPTWatermarkTextPage() {
             { name: 'Soft hyphens (U+00AD)', desc: 'Hidden hyphenation hints that are invisible unless a line break occurs at that point. Common in AI-generated long-form text.' },
             { name: 'Unicode punctuation variants', desc: 'Em dashes (U+2014), curly quotes (U+201C/U+201D), and ellipsis characters (U+2026) instead of standard ASCII equivalents.' },
           ].map((item) => (
-            <div key={item.name} className="rounded-2xl border border-slate-200 bg-white/60 p-4 text-sm text-slate-700 shadow-sm">
+            <div key={item.name} className="rounded-2xl border-3 border-black bg-white/60 p-4 text-sm text-slate-700 shadow-neo-sm">
               <p className="font-semibold text-slate-900">{item.name}</p>
               <p className="mt-1">{item.desc}</p>
             </div>
@@ -198,21 +198,21 @@ export default function DoesChatGPTWatermarkTextPage() {
           anyone publishing AI-assisted content:
         </p>
         <div className="grid gap-4 md:grid-cols-3">
-          <div className="rounded-2xl border border-slate-100 bg-slate-50 p-4 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-2 border-black bg-slate-50 p-4 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Publishing and CMS issues</p>
             <p className="mt-1">
               WordPress, Webflow, and other CMSs misparse hidden characters, causing broken blocks, extra spacing, and layout shifts after
               publishing.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-100 bg-slate-50 p-4 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-2 border-black bg-slate-50 p-4 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Email deliverability</p>
             <p className="mt-1">
               Non-standard Unicode characters in subject lines and body text can trigger spam filters or cause rendering differences across
               email clients.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-100 bg-slate-50 p-4 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-2 border-black bg-slate-50 p-4 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">AI detector false positives</p>
             <p className="mt-1">
               AI detection tools scan for exactly these patterns. Even human-edited content may get flagged if it retains the underlying Unicode
@@ -320,7 +320,7 @@ export default function DoesChatGPTWatermarkTextPage() {
               a: "Cleaning formatting artifacts and invisible characters is not prohibited. OpenAI's usage policy addresses content use, not technical text processing.",
             },
           ].map((item) => (
-            <div key={item.q} className="rounded-2xl border border-slate-200 bg-white/60 p-4 text-sm text-slate-700 shadow-sm">
+            <div key={item.q} className="rounded-2xl border-3 border-black bg-white/60 p-4 text-sm text-slate-700 shadow-neo-sm">
               <p className="font-semibold text-slate-900">{item.q}</p>
               <p className="mt-1">{item.a}</p>
             </div>

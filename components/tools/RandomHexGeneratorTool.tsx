@@ -90,7 +90,7 @@ export function RandomHexGeneratorTool() {
             max={256}
             value={length}
             onChange={(event) => setLength(event.target.value)}
-            className="w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm text-slate-700 shadow-sm focus:border-brand-300 focus:outline-none focus:ring-2 focus:ring-brand-100"
+            className="w-full rounded-lg border-3 border-black bg-white px-3 py-2 text-sm text-slate-700 shadow-neo-sm focus:border-brand-300 focus:outline-none focus:ring-2 focus:ring-brand-100"
           />
           <p className="text-xs text-slate-500">Common lengths: 8, 16, 32, 64.</p>
           {errors.length ? <p className="text-xs font-semibold text-rose-600">{errors.length}</p> : null}
@@ -106,14 +106,14 @@ export function RandomHexGeneratorTool() {
             max={50}
             value={count}
             onChange={(event) => setCount(event.target.value)}
-            className="w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm text-slate-700 shadow-sm focus:border-brand-300 focus:outline-none focus:ring-2 focus:ring-brand-100"
+            className="w-full rounded-lg border-3 border-black bg-white px-3 py-2 text-sm text-slate-700 shadow-neo-sm focus:border-brand-300 focus:outline-none focus:ring-2 focus:ring-brand-100"
           />
           <p className="text-xs text-slate-500">Generate 1 to 50 values per batch.</p>
           {errors.count ? <p className="text-xs font-semibold text-rose-600">{errors.count}</p> : null}
         </div>
       </div>
 
-      <div className="rounded-xl border border-slate-200 bg-slate-50 p-4">
+      <div className="rounded-xl border-3 border-black bg-slate-50 p-4">
         <h3 className="text-sm font-semibold text-slate-800">Output options</h3>
         <div className="mt-3 grid gap-3 text-sm text-slate-700 md:grid-cols-3">
           <label className="flex items-center gap-2">
@@ -138,7 +138,7 @@ export function RandomHexGeneratorTool() {
         <button
           type="button"
           onClick={handleCopyAll}
-          className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
+          className="inline-flex items-center justify-center rounded-lg border-3 border-black bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
           disabled={!results.length}
         >
           Copy all
@@ -146,14 +146,14 @@ export function RandomHexGeneratorTool() {
         <button
           type="button"
           onClick={handleClear}
-          className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
+          className="inline-flex items-center justify-center rounded-lg border-3 border-black bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
         >
           Clear
         </button>
         <button
           type="button"
           onClick={handleSample}
-          className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
+          className="inline-flex items-center justify-center rounded-lg border-3 border-black bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
         >
           Load sample
         </button>
@@ -168,13 +168,13 @@ export function RandomHexGeneratorTool() {
             {results.map((value, index) => (
               <div
                 key={`${value}-${index}`}
-                className="flex flex-wrap items-center justify-between gap-2 rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm text-slate-700"
+                className="flex flex-wrap items-center justify-between gap-2 rounded-lg border-3 border-black bg-white px-3 py-2 text-sm text-slate-700"
               >
                 <span className="font-mono text-slate-900">{value}</span>
                 <button
                   type="button"
                   onClick={() => handleCopy(value)}
-                  className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-3 py-1.5 text-xs font-semibold text-slate-700 hover:bg-slate-50"
+                  className="inline-flex items-center justify-center rounded-lg border-3 border-black bg-white px-3 py-1.5 text-xs font-semibold text-slate-700 hover:bg-slate-50"
                 >
                   Copy
                 </button>

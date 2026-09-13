@@ -48,7 +48,7 @@ const faqs: FaqItem[] = [
 ];
 
 const writeUp = (
-  <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+  <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
     <div className="prose prose-slate max-w-none">
       <h2>ChatGPT Passive Voice Fixer: Transform Your Writing with Active Voice</h2>
       <p>The ChatGPT Passive Voice Fixer is a free online tool that identifies passive voice constructions in your writing and suggests active voice alternatives. While passive voice has legitimate uses, excessive passive voice makes writing indirect, wordy, and less engaging. This tool helps you create stronger, more direct prose.</p>

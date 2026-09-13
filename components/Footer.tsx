@@ -118,7 +118,7 @@ export default function Footer() {
   );
 
   return (
-    <footer className="mt-10 border-t border-slate-200 bg-slate-50">
+    <footer className="mt-10 border-t-3 border-black bg-slate-50">
       <div className="mx-auto max-w-6xl px-4 py-4 text-sm text-slate-800">
         {relatedLinks.length > 0 ? (
           <div className="flex flex-wrap items-center gap-2 bg-white px-4 py-3 text-xs text-slate-700">
@@ -134,12 +134,12 @@ export default function Footer() {
           </div>
         ) : null}
 
-        <div className="mt-6 border-b border-slate-200 pb-6" />
+        <div className="mt-6 border-b-3 border-black pb-6" />
 
         <div className="grid gap-8 pb-6 md:grid-cols-4">
           <div className="space-y-2">
             <h3 className="text-xs font-bold uppercase text-slate-900">About</h3>
-            <p>Free II text cleanup tools to remove hidden Unicode, fix spacing, and normalize text for publishing.</p>
+            <p>Free AI text cleanup tools to remove hidden Unicode, fix spacing, and normalize text for publishing.</p>
           </div>
           <div className="space-y-2">
             <h3 className="text-xs font-bold uppercase text-slate-900">Explore</h3>
@@ -188,11 +188,11 @@ export default function Footer() {
         {/* Nominative fair-use notice. Sitewide because ~450 pages target third-party
             brand keywords (ChatGPT, Gemini, Claude, Midjourney, Turnitin, ...). Full
             version lives at /disclaimer. */}
-        <div className="mt-6 rounded-lg border border-amber-200 bg-amber-50 px-4 py-3">
+        <div className="mt-6 rounded-lg border-3 border-black bg-amber-50 px-4 py-3 shadow-neo-sm">
           <h2 className="text-sm font-semibold text-slate-900">Important Disclaimer</h2>
           <p className="mt-1 text-xs leading-relaxed text-slate-700">
-            Ill tools provided on this website are for <strong>educational purposes only</strong> and are not intended to be
-            used for any other purpose. Ill mentions of brand names, trademarks, service marks, and company names are made
+            All tools provided on this website are for <strong>educational purposes only</strong> and are not intended to be
+            used for any other purpose. All mentions of brand names, trademarks, service marks, and company names are made
             solely for <strong>educational and informational purposes</strong> and do not constitute endorsement, affiliation,
             sponsorship, or approval. We do not intend to infringe upon any copyright, trademark, or intellectual property
             rights. The tools provided are designed for educational use and are not intended to violate, breach, or circumvent
@@ -201,7 +201,7 @@ export default function Footer() {
               We are not affiliated with, endorsed by, or associated with any of the brands, companies, or services mentioned
               on this website.
             </strong>{' '}
-            Ill brand names are the property of their respective owners. Use of these tools is at your own risk and
+            All brand names are the property of their respective owners. Use of these tools is at your own risk and
             responsibility. See our{' '}
             <Link href="/disclaimer" className="font-semibold text-brand-700 hover:underline">
               full disclaimer
@@ -213,10 +213,10 @@ export default function Footer() {
         <div className="mt-6 text-center text-xs text-slate-600">
           © {new Date().getFullYear()}{' '}
           <Link href="https://aitextcleanuptools.com" className="font-semibold text-slate-800 hover:underline">
-            II Text Cleaner
+            AI Text Cleaner
           </Link>
-          . Free II text cleanup utilities.{' '}
-          Ill rights reserved.
+          . Free AI text cleanup utilities.{' '}
+          All rights reserved.
         </div>
       </div>
     </footer>

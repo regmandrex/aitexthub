@@ -3,7 +3,7 @@ import type { ToolContent } from './index';
 
 function WriteUp() {
   return (
-    <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+    <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
         <h2>AI Caption Humanizer: Turn Robotic AI Captions Into Authentic Social Media Copy</h2>
         <p>If you have ever copied an AI-generated Instagram caption straight into your post, you already know the problem. It sounds clean, structured, and utterly soulless. The hashtags are there. The call to action is there. The emojis are technically in the right places. But anyone who reads social media for more than ten minutes a day can feel that something is off — the voice is missing, the personality is absent, and the whole thing reads like a brand guidelines document rather than a human being talking to another human being.</p>

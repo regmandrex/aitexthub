@@ -31,7 +31,7 @@ function CopyBtn({ value }: { value: string }) {
   const [copied, setCopied] = useState(false);
   return (
     <button onClick={() => { navigator.clipboard.writeText(value); setCopied(true); setTimeout(() => setCopied(false), 1500); }}
-      className="text-xs px-2 py-0.5 rounded border border-slate-200 bg-slate-50 hover:bg-slate-100 text-slate-600 shrink-0">
+      className="text-xs px-2 py-0.5 rounded border-3 border-black bg-slate-50 hover:bg-slate-100 text-slate-600 shrink-0">
       {copied ? 'Copied!' : 'Copy'}
     </button>
   );
@@ -39,7 +39,7 @@ function CopyBtn({ value }: { value: string }) {
 
 function Row({ label, value }: { label: string; value: string }) {
   return (
-    <div className="flex items-center gap-3 py-2 border-b border-slate-100 last:border-0">
+    <div className="flex items-center gap-3 py-2 border-b-2 border-black last:border-0">
       <span className="text-xs font-medium text-slate-500 w-40 shrink-0">{label}</span>
       <span className="text-sm text-slate-800 font-mono flex-1 truncate">{value}</span>
       <CopyBtn value={value} />
@@ -121,15 +121,15 @@ export function EpochConverterTool() {
           <div className="flex gap-2">
             <input value={tsInput} onChange={e => setTsInput(e.target.value)} onKeyDown={e => e.key === 'Enter' && convertTs()}
               placeholder="Unix timestamp (e.g. 1713456000 or 1713456000000)"
-              className="flex-1 rounded-xl border border-slate-200 px-3 py-2 text-sm font-mono focus:outline-none focus:ring-2 focus:ring-blue-100" />
+              className="flex-1 rounded-xl border-3 border-black px-3 py-2 text-sm font-mono focus:outline-none focus:ring-2 focus:ring-blue-100" />
             <button onClick={() => { setTsInput(String(nowTs)); setTsError(''); setTsResult(null); }}
-              className="px-3 py-2 text-xs rounded-xl border border-slate-200 bg-slate-50 hover:bg-slate-100 text-slate-600 whitespace-nowrap">Now</button>
+              className="px-3 py-2 text-xs rounded-xl border-3 border-black bg-slate-50 hover:bg-slate-100 text-slate-600 whitespace-nowrap">Now</button>
             <button onClick={convertTs}
               className="px-4 py-2 text-sm font-medium rounded-xl bg-blue-600 text-white hover:bg-blue-700">Convert</button>
           </div>
           {tsError && <p className="text-sm text-red-600 bg-red-50 rounded-lg px-3 py-2">{tsError}</p>}
           {tsResult && (
-            <div className="rounded-xl border border-slate-200 bg-white p-4">
+            <div className="rounded-xl border-3 border-black bg-white p-4">
               {Object.entries(tsResult).map(([l, v]) => <Row key={l} label={l} value={v} />)}
             </div>
           )}
@@ -140,12 +140,12 @@ export function EpochConverterTool() {
         <div className="space-y-3">
           <div className="flex gap-2">
             <input type="datetime-local" value={dtInput} onChange={e => setDtInput(e.target.value)}
-              className="flex-1 rounded-xl border border-slate-200 px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-100" />
+              className="flex-1 rounded-xl border-3 border-black px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-100" />
             <button onClick={convertDt}
               className="px-4 py-2 text-sm font-medium rounded-xl bg-blue-600 text-white hover:bg-blue-700">Convert</button>
           </div>
           {dtResult && (
-            <div className="rounded-xl border border-slate-200 bg-white p-4">
+            <div className="rounded-xl border-3 border-black bg-white p-4">
               {Object.entries(dtResult).map(([l, v]) => <Row key={l} label={l} value={v} />)}
             </div>
           )}

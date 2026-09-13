@@ -80,7 +80,7 @@ export function NicknameMakerTool() {
           onChange={(e) => setName(e.target.value)}
           placeholder="예) 민수, 지은이, 우리 강아지"
           maxLength={20}
-          className="w-full rounded-lg border border-slate-300 p-3 text-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+          className="w-full rounded-lg border-2 border-black p-3 text-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
         />
       </div>
 
@@ -95,7 +95,7 @@ export function NicknameMakerTool() {
               className={`px-3 py-1.5 text-sm rounded-lg border transition ${
                 target === t
                   ? 'bg-blue-600 text-white border-blue-600'
-                  : 'bg-white text-slate-700 border-slate-300 hover:bg-slate-50'
+                  : 'bg-white text-slate-700 border-black hover:bg-slate-50'
               }`}
             >
               {TARGET_LABELS[t]}
@@ -119,7 +119,7 @@ export function NicknameMakerTool() {
               key={`${nickname}-${idx}`}
               type="button"
               onClick={() => handleCopy(nickname)}
-              className="px-3 py-2 bg-white border border-slate-300 rounded-lg text-sm hover:bg-slate-50 transition text-left"
+              className="px-3 py-2 bg-white border-2 border-black rounded-lg text-sm hover:bg-slate-50 transition text-left"
             >
               {copied === nickname ? '복사됨!' : nickname}
             </button>

@@ -17,7 +17,7 @@ const toolSlug = 'ai-grammar-checker';
 
 function createWriteUp() {
   return (
-    <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+    <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
         <h2>AI Grammar Checker: Fix Grammar in AI-Generated Text</h2>
         <p>A AI Grammar Checker is a free online tool that checks and corrects grammar, punctuation, and style in AI-generated text. It helps you catch errors, improve clarity, and polish writing before submission—whether for essays, emails, or professional content.</p>

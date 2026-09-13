@@ -28,7 +28,7 @@ export default function DetectingAndRemovingHiddenAIWatermarksInTextPage() {
         <AdSenseSlot className="w-full" />
       </div>
 
-      <div className="rounded-[28px] border border-slate-200 bg-white/70 p-6 shadow-xl shadow-slate-900/5 backdrop-blur-lg">
+      <div className="rounded-[28px] border-3 border-black bg-white/70 p-6 shadow-neo-lg shadow-slate-900/5 backdrop-blur-lg">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Separate myths from fixable artifacts</p>
         <h1 className="mt-3 text-3xl font-semibold text-slate-900">Detecting and Removing Hidden AI Watermarks in Text</h1>
         <p className="mt-2 text-slate-600">
@@ -43,7 +43,7 @@ export default function DetectingAndRemovingHiddenAIWatermarksInTextPage() {
             { title: 'Not literal IDs', detail: 'Patterns are not embedded tracking markers' },
             { title: 'Fix safely', detail: 'Clean + normalize + format natively' },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-100 bg-slate-50 p-4 text-xs text-slate-700">
+            <div key={item.title} className="rounded-2xl border-2 border-black bg-slate-50 p-4 text-xs text-slate-700">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.detail}</p>
             </div>
@@ -57,7 +57,7 @@ export default function DetectingAndRemovingHiddenAIWatermarksInTextPage() {
           The phrase “hidden AI watermark” is used to describe two very different things that are often confused.
         </p>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">1. Technical artifacts (real and fixable)</p>
             <p className="mt-2">These exist at the character and encoding level and can affect SEO, performance, formatting, and CMS behavior.</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
@@ -69,7 +69,7 @@ export default function DetectingAndRemovingHiddenAIWatermarksInTextPage() {
               <li>Encoding inconsistencies</li>
             </ul>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">2. Statistical or pattern-based signals (not literal watermarks)</p>
             <p className="mt-2">
               These are writing patterns such as uniform sentence length, repetitive transitions, and overly regular structure. They are not
@@ -98,14 +98,14 @@ export default function DetectingAndRemovingHiddenAIWatermarksInTextPage() {
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">Why the confusion exists</h2>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Research on AI watermarking</p>
             <p className="mt-2">
               There is academic research into statistical watermarking, but it is experimental and is not embedded as hidden characters in normal
               ChatGPT output. That research is often misrepresented in marketing claims.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">AI detection tools fuel fear</p>
             <p className="mt-2">
               Many AI detectors flag patterns, not watermarks. Scores can change and tools disagree. Detection is not the same as embedded signals,
@@ -134,7 +134,7 @@ export default function DetectingAndRemovingHiddenAIWatermarksInTextPage() {
           Visual clues (weird spacing, inconsistent line breaks, odd paste behavior) can help, but most invisible characters cannot be seen.
           Reliable detection requires Unicode-aware scanning and code-point inspection.
         </p>
-        <div className="rounded-2xl border border-brand-100 bg-brand-50 p-5 text-sm text-brand-900 shadow-sm">
+        <div className="rounded-2xl border border-brand-100 bg-brand-50 p-5 text-sm text-brand-900 shadow-neo-sm">
           <p className="font-semibold text-brand-800">Tools to use</p>
           <ul className="mt-2 list-disc space-y-1 pl-5 text-slate-800">
             <li>
@@ -152,7 +152,7 @@ export default function DetectingAndRemovingHiddenAIWatermarksInTextPage() {
 
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">How to remove hidden AI artifacts safely</h2>
-        <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6 text-sm text-slate-700 shadow-sm">
+        <div className="rounded-2xl border-3 border-black bg-slate-50 p-6 text-sm text-slate-700 shadow-neo-sm">
           <ol className="list-decimal space-y-2 pl-5">
             <li>
               <strong>Strip all formatting.</strong> Reduce content to plain text and avoid CMS visual editors during cleanup.
@@ -226,7 +226,7 @@ export default function DetectingAndRemovingHiddenAIWatermarksInTextPage() {
             { q: 'Do I need to rewrite to “pass detection”?', a: 'No. Detector scores are not ranking systems.' },
             { q: 'Is this only relevant for SEO?', a: 'No. It also affects performance, UX, and accessibility.' },
           ].map((item) => (
-            <div key={item.q} className="rounded-2xl border border-slate-200 bg-white/60 p-4 text-sm text-slate-700 shadow-sm">
+            <div key={item.q} className="rounded-2xl border-3 border-black bg-white/60 p-4 text-sm text-slate-700 shadow-neo-sm">
               <p className="font-semibold text-slate-900">{item.q}</p>
               <p className="mt-1">{item.a}</p>
             </div>

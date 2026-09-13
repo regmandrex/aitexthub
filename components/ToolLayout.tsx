@@ -25,7 +25,7 @@ export default function ToolLayout({ title, subtitle, children, badge, faqItems 
         </div>
       </section>
 
-      <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6">
+      <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6">
         {children}
       </section>
 

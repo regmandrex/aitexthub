@@ -19,7 +19,7 @@ export default function AccountPage() {
   if (isPending || !session?.user) {
     return (
       <div className="min-h-[60vh] flex items-center justify-center">
-        <div className="h-8 w-8 animate-spin rounded-full border-2 border-slate-300 border-t-violet-600" />
+        <div className="h-8 w-8 animate-spin rounded-full border-2 border-black border-t-violet-600" />
       </div>
     );
   }
@@ -35,7 +35,7 @@ export default function AccountPage() {
       <div className="mx-auto max-w-2xl px-4 py-10 md:py-14">
 
         {/* Profile card */}
-        <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm">
+        <div className="overflow-hidden rounded-2xl border-3 border-black bg-white shadow-neo-sm">
           <div className="bg-gradient-to-r from-violet-600 to-purple-700 px-6 py-8">
             <div className="flex items-center gap-4">
               <div className="flex h-14 w-14 items-center justify-center rounded-full bg-white/20 text-2xl font-bold text-white">
@@ -68,7 +68,7 @@ export default function AccountPage() {
               {plan === 'free' && (
                 <Link
                   href="/pro"
-                  className="rounded-full bg-gradient-to-r from-violet-600 to-purple-700 px-5 py-2.5 text-sm font-bold text-white shadow-md shadow-violet-200 transition hover:shadow-lg"
+                  className="rounded-full bg-gradient-to-r from-violet-600 to-purple-700 px-5 py-2.5 text-sm font-bold text-white shadow-neo shadow-violet-200 transition hover:shadow-neo-lg"
                 >
                   Upgrade to Pro
                 </Link>
@@ -78,7 +78,7 @@ export default function AccountPage() {
         </div>
 
         {/* Usage card */}
-        <div className="mt-5 rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
+        <div className="mt-5 rounded-2xl border-3 border-black bg-white p-6 shadow-neo-sm">
           <div className="flex items-center justify-between">
             <p className="text-xs font-bold uppercase tracking-wider text-slate-500">Humanizer Usage</p>
             <p className="text-xs font-bold text-slate-900">
@@ -108,7 +108,7 @@ export default function AccountPage() {
 
           <Link
             href="/pro"
-            className="flex w-full items-center justify-between rounded-xl border border-slate-200 bg-white px-5 py-3.5 text-sm font-medium text-slate-700 transition hover:border-violet-200 hover:bg-violet-50/30"
+            className="flex w-full items-center justify-between rounded-xl border-3 border-black bg-white px-5 py-3.5 text-sm font-medium text-slate-700 transition hover:border-violet-200 hover:bg-violet-50/30"
           >
             <span className="flex items-center gap-3">
               <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-violet-100">
@@ -125,7 +125,7 @@ export default function AccountPage() {
 
           <Link
             href="/contact"
-            className="flex w-full items-center justify-between rounded-xl border border-slate-200 bg-white px-5 py-3.5 text-sm font-medium text-slate-700 transition hover:border-slate-300 hover:bg-slate-50"
+            className="flex w-full items-center justify-between rounded-xl border-3 border-black bg-white px-5 py-3.5 text-sm font-medium text-slate-700 transition hover:border-black hover:bg-slate-50"
           >
             <span className="flex items-center gap-3">
               <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-sky-100">
@@ -142,7 +142,7 @@ export default function AccountPage() {
 
           <Link
             href="/refund-policy"
-            className="flex w-full items-center justify-between rounded-xl border border-slate-200 bg-white px-5 py-3.5 text-sm font-medium text-slate-700 transition hover:border-slate-300 hover:bg-slate-50"
+            className="flex w-full items-center justify-between rounded-xl border-3 border-black bg-white px-5 py-3.5 text-sm font-medium text-slate-700 transition hover:border-black hover:bg-slate-50"
           >
             <span className="flex items-center gap-3">
               <span className="flex h-8 w-8 items-center justify-center rounded-lg bg-amber-100">

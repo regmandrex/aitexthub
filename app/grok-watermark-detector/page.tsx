@@ -173,7 +173,7 @@ export async function generateMetadata() {
 
 export default function GrokWatermarkDetectorPage() {
   const writeUp = (
-    <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 space-y-4 mt-10">
+    <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 space-y-4 mt-10">
       <h2 className="text-2xl font-semibold text-slate-900">Grok Watermark Detector - Unmasking AI Content with Precision</h2>
 
       <h3 className="text-xl font-semibold text-slate-900">Introduction</h3>
@@ -405,7 +405,7 @@ export default function GrokWatermarkDetectorPage() {
 
       <h3 className="text-xl font-semibold text-slate-900">Comparison: Grok Watermark Detector vs Others</h3>
       <div className="overflow-x-auto">
-        <table className="min-w-full border border-slate-200 text-sm text-slate-700">
+        <table className="min-w-full border-3 border-black text-sm text-slate-700">
           <thead className="bg-slate-50 text-slate-700">
             <tr>
               <th className="px-3 py-2 text-left font-semibold">Feature</th>
@@ -416,42 +416,42 @@ export default function GrokWatermarkDetectorPage() {
             </tr>
           </thead>
           <tbody>
-            <tr className="border-t border-slate-200">
+            <tr className="border-t-3 border-black">
               <td className="px-3 py-2">Publicly Available</td>
               <td className="px-3 py-2">No</td>
               <td className="px-3 py-2">No (internal only)</td>
               <td className="px-3 py-2">Yes (partial)</td>
               <td className="px-3 py-2">No</td>
             </tr>
-            <tr className="border-t border-slate-200">
+            <tr className="border-t-3 border-black">
               <td className="px-3 py-2">Invisible Watermarking</td>
               <td className="px-3 py-2">Yes (assumed)</td>
               <td className="px-3 py-2">Yes (tested)</td>
               <td className="px-3 py-2">Yes</td>
               <td className="px-3 py-2">Unknown</td>
             </tr>
-            <tr className="border-t border-slate-200">
+            <tr className="border-t-3 border-black">
               <td className="px-3 py-2">API Integration</td>
               <td className="px-3 py-2">Not yet</td>
               <td className="px-3 py-2">Not public</td>
               <td className="px-3 py-2">Community APIs</td>
               <td className="px-3 py-2">No</td>
             </tr>
-            <tr className="border-t border-slate-200">
+            <tr className="border-t-3 border-black">
               <td className="px-3 py-2">Accuracy</td>
               <td className="px-3 py-2">4/5</td>
               <td className="px-3 py-2">4/5</td>
               <td className="px-3 py-2">5/5</td>
               <td className="px-3 py-2">3/5</td>
             </tr>
-            <tr className="border-t border-slate-200">
+            <tr className="border-t-3 border-black">
               <td className="px-3 py-2">Transparency</td>
               <td className="px-3 py-2">Closed</td>
               <td className="px-3 py-2">Partially disclosed</td>
               <td className="px-3 py-2">Open-source friendly</td>
               <td className="px-3 py-2">Closed</td>
             </tr>
-            <tr className="border-t border-slate-200">
+            <tr className="border-t-3 border-black">
               <td className="px-3 py-2">Multilingual Support</td>
               <td className="px-3 py-2">Likely limited</td>
               <td className="px-3 py-2">In progress</td>

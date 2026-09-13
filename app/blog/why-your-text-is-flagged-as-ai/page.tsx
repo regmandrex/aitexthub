@@ -23,7 +23,7 @@ export default function WhyYourTextIsFlaggedAsAiPage() {
       <div className="ad-slot"><AdSenseSlot className="w-full" /></div>
 
       {/* Hero card */}
-      <div className="rounded-[28px] border border-slate-200 bg-white/70 p-6 shadow-xl shadow-slate-900/5 backdrop-blur-lg">
+      <div className="rounded-[28px] border-3 border-black bg-white/70 p-6 shadow-neo-lg shadow-slate-900/5 backdrop-blur-lg">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Detection &amp; Fixes</p>
         <h1 className="mt-3 text-3xl font-semibold text-slate-900">Why Your Text Is Flagged as AI</h1>
         <p className="mt-2 text-slate-600">
@@ -37,7 +37,7 @@ export default function WhyYourTextIsFlaggedAsAiPage() {
             { title: 'Unicode artifacts', detail: 'Hidden characters from AI output or copy-paste' },
             { title: 'Sentence uniformity', detail: 'Consistent length and complexity distribution' },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-100 bg-slate-50 p-4 text-xs text-slate-700">
+            <div key={item.title} className="rounded-2xl border-2 border-black bg-slate-50 p-4 text-xs text-slate-700">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.detail}</p>
             </div>
@@ -78,7 +78,7 @@ export default function WhyYourTextIsFlaggedAsAiPage() {
           uniform.
         </p>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">How to diagnose</p>
             <p className="mt-2">
               Copy your text into a word processor and look at each sentence. Count the words. If the spread is less than
@@ -86,7 +86,7 @@ export default function WhyYourTextIsFlaggedAsAiPage() {
               is too low.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">How to fix</p>
             <p className="mt-2">
               Deliberately add some very short sentences (3&ndash;8 words) for emphasis. Let a few longer sentences run
@@ -109,7 +109,7 @@ export default function WhyYourTextIsFlaggedAsAiPage() {
           When every paragraph in your text has the same structure and similar word count, detectors register this as
           AI-like. The fix is structural variety at the paragraph level, not just the sentence level.
         </p>
-        <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+        <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
           <p className="font-semibold text-slate-900">Paragraph variety techniques</p>
           <ul className="mt-2 list-disc space-y-2 pl-5">
             <li>Add a one-sentence transitional paragraph between major sections</li>
@@ -134,7 +134,7 @@ export default function WhyYourTextIsFlaggedAsAiPage() {
           word processors, but detectors that scan Unicode profiles will find them.
         </p>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Where invisible characters come from</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Copied directly from AI chatbot outputs</li>
@@ -144,7 +144,7 @@ export default function WhyYourTextIsFlaggedAsAiPage() {
               <li>Left behind when editing AI-generated drafts</li>
             </ul>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">How to remove them</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Use the <Link href="/invisible-character-detector">Invisible Character Detector</Link> to find all hidden chars</li>
@@ -166,7 +166,7 @@ export default function WhyYourTextIsFlaggedAsAiPage() {
           have learned to detect these vocabulary signatures.
         </p>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Overused AI words and phrases</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>delve, dive deep, delve into</li>
@@ -178,7 +178,7 @@ export default function WhyYourTextIsFlaggedAsAiPage() {
               <li>in today&apos;s world, in today&apos;s rapidly evolving</li>
             </ul>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">How to replace them</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Use simpler synonyms: &quot;explore&quot; instead of &quot;delve into&quot;</li>
@@ -228,7 +228,7 @@ export default function WhyYourTextIsFlaggedAsAiPage() {
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">The Complete Fix Checklist</h2>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Technical fixes</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Scan and remove invisible Unicode characters</li>
@@ -236,7 +236,7 @@ export default function WhyYourTextIsFlaggedAsAiPage() {
               <li>Pass through a plain text normalizer before final editing</li>
             </ul>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Structural fixes</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Add short sentences for variety</li>
@@ -244,7 +244,7 @@ export default function WhyYourTextIsFlaggedAsAiPage() {
               <li>Use different types of opening sentences across paragraphs</li>
             </ul>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Vocabulary fixes</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Remove AI-associated phrases and replace with direct language</li>
@@ -252,7 +252,7 @@ export default function WhyYourTextIsFlaggedAsAiPage() {
               <li>Replace vague superlatives with specific observations</li>
             </ul>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Content fixes</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Add at least one specific personal example</li>

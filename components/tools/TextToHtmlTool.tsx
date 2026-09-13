@@ -68,17 +68,17 @@ export function TextToHtmlTool() {
       <div className="flex gap-2 flex-wrap">
         <button onClick={convert} className="px-4 py-2 text-sm font-medium rounded-xl bg-blue-600 text-white hover:bg-blue-700">Convert to HTML</button>
         <button onClick={() => { navigator.clipboard.writeText(output); setCopied(true); setTimeout(() => setCopied(false), 1500); }} disabled={!output}
-          className="px-4 py-2 text-sm font-medium rounded-xl border border-slate-200 bg-white hover:bg-slate-50 disabled:opacity-40">
+          className="px-4 py-2 text-sm font-medium rounded-xl border-3 border-black bg-white hover:bg-slate-50 disabled:opacity-40">
           {copied ? 'Copied!' : 'Copy HTML'}
         </button>
         <button onClick={() => setShowPreview(!showPreview)} disabled={!output}
-          className="px-4 py-2 text-sm font-medium rounded-xl border border-slate-200 bg-white hover:bg-slate-50 disabled:opacity-40">
+          className="px-4 py-2 text-sm font-medium rounded-xl border-3 border-black bg-white hover:bg-slate-50 disabled:opacity-40">
           {showPreview ? 'Hide Preview' : 'Preview HTML'}
         </button>
       </div>
 
       {showPreview && output && (
-        <div className="rounded-xl border border-slate-200 bg-white p-4">
+        <div className="rounded-xl border-3 border-black bg-white p-4">
           <p className="text-xs text-slate-500 mb-2">HTML Preview:</p>
           <div className="prose prose-sm max-w-none" dangerouslySetInnerHTML={{ __html: output }} />
         </div>

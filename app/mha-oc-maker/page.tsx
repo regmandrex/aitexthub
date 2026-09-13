@@ -50,7 +50,7 @@ const pageFaqs: FaqItem[] = [
 ];
 
 function createWriteUp() {
-  return <section className="mt-10 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6"><div className="prose prose-slate max-w-none">
+  return <section className="mt-10 rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6"><div className="prose prose-slate max-w-none">
     <h2>MHA OC Maker - Create an Original My Hero Academia Character</h2>
     <p>This MHA OC maker helps you turn a superpower idea into a more complete My Hero Academia-inspired character. Instead of stopping at an ability name, build the Quirk around a role, combat or rescue style, costume function, support item, personality, and limitation. The result is one visual reference image and a compact character direction you can continue developing.</p>
     <p>Use this MHA OC generator for fan art, character sheets, role-play, fan fiction, training scenarios, and hero costume planning. It creates fan-made inspiration and is not an official My Hero Academia character creator or licensed tool.</p>

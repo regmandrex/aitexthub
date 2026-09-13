@@ -198,7 +198,7 @@ const faqs: FaqItem[] = [
 ];
 
 const writeUp = (
-  <section className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm md:p-10 space-y-6 mt-10">
+  <section className="rounded-2xl border-3 border-black bg-white p-8 shadow-neo-sm md:p-10 space-y-6 mt-10">
     <div className="prose prose-slate max-w-none">
       <h2 className="text-2xl font-semibold text-slate-900">Text to HEX Converter: Complete Guide to Hexadecimal Text Encoding</h2>
       
@@ -261,39 +261,39 @@ const writeUp = (
         Understanding byte-level representation helps interpret hex output:
       </p>
       <div className="overflow-x-auto my-4">
-        <table className="min-w-full border border-slate-300">
+        <table className="min-w-full border-2 border-black">
           <thead className="bg-slate-100">
             <tr>
-              <th className="border border-slate-300 px-4 py-2 text-left">Character</th>
-              <th className="border border-slate-300 px-4 py-2 text-left">Unicode Code Point</th>
-              <th className="border border-slate-300 px-4 py-2 text-left">UTF-8 Bytes</th>
-              <th className="border border-slate-300 px-4 py-2 text-left">Hex Output</th>
+              <th className="border-2 border-black px-4 py-2 text-left">Character</th>
+              <th className="border-2 border-black px-4 py-2 text-left">Unicode Code Point</th>
+              <th className="border-2 border-black px-4 py-2 text-left">UTF-8 Bytes</th>
+              <th className="border-2 border-black px-4 py-2 text-left">Hex Output</th>
             </tr>
           </thead>
           <tbody className="text-sm">
             <tr>
-              <td className="border border-slate-300 px-4 py-2 font-mono">A</td>
-              <td className="border border-slate-300 px-4 py-2">65 (0x41)</td>
-              <td className="border border-slate-300 px-4 py-2">1 byte: 0x41</td>
-              <td className="border border-slate-300 px-4 py-2 font-mono">41</td>
+              <td className="border-2 border-black px-4 py-2 font-mono">A</td>
+              <td className="border-2 border-black px-4 py-2">65 (0x41)</td>
+              <td className="border-2 border-black px-4 py-2">1 byte: 0x41</td>
+              <td className="border-2 border-black px-4 py-2 font-mono">41</td>
             </tr>
             <tr>
-              <td className="border border-slate-300 px-4 py-2 font-mono">é</td>
-              <td className="border border-slate-300 px-4 py-2">233 (0xE9)</td>
-              <td className="border border-slate-300 px-4 py-2">2 bytes: 0xC3 0xA9</td>
-              <td className="border border-slate-300 px-4 py-2 font-mono">C3 A9</td>
+              <td className="border-2 border-black px-4 py-2 font-mono">é</td>
+              <td className="border-2 border-black px-4 py-2">233 (0xE9)</td>
+              <td className="border-2 border-black px-4 py-2">2 bytes: 0xC3 0xA9</td>
+              <td className="border-2 border-black px-4 py-2 font-mono">C3 A9</td>
             </tr>
             <tr>
-              <td className="border border-slate-300 px-4 py-2 font-mono">??</td>
-              <td className="border border-slate-300 px-4 py-2">128640 (0x1F680)</td>
-              <td className="border border-slate-300 px-4 py-2">4 bytes: 0xF0 0x9F 0x98 0x80</td>
-              <td className="border border-slate-300 px-4 py-2 font-mono">F0 9F 98 80</td>
+              <td className="border-2 border-black px-4 py-2 font-mono">??</td>
+              <td className="border-2 border-black px-4 py-2">128640 (0x1F680)</td>
+              <td className="border-2 border-black px-4 py-2">4 bytes: 0xF0 0x9F 0x98 0x80</td>
+              <td className="border-2 border-black px-4 py-2 font-mono">F0 9F 98 80</td>
             </tr>
             <tr>
-              <td className="border border-slate-300 px-4 py-2 font-mono">Hello</td>
-              <td className="border border-slate-300 px-4 py-2">Multiple</td>
-              <td className="border border-slate-300 px-4 py-2">5 bytes</td>
-              <td className="border border-slate-300 px-4 py-2 font-mono">48 65 6C 6C 6F</td>
+              <td className="border-2 border-black px-4 py-2 font-mono">Hello</td>
+              <td className="border-2 border-black px-4 py-2">Multiple</td>
+              <td className="border-2 border-black px-4 py-2">5 bytes</td>
+              <td className="border-2 border-black px-4 py-2 font-mono">48 65 6C 6C 6F</td>
             </tr>
           </tbody>
         </table>

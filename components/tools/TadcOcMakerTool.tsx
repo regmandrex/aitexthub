@@ -29,7 +29,7 @@ const eyeOptions = ['Button eyes', 'Dot-pattern eyes', 'Large expressive eyes', 
 const outfitOptions = ['Circus costume', 'Vintage stagewear', 'Toy uniform', 'Patchwork outfit', 'Simple performer outfit', 'Surprise me'];
 const accessoryOptions = ['Wind-up key', 'Oversized prop', 'Ribbons and bells', 'Tiny top hat', 'Floating digital icons', 'Surprise me'];
 
-const fieldClass = 'mt-1 w-full rounded-lg border border-slate-300 bg-white px-3 py-2.5 text-sm text-slate-900 focus:border-brand-600 focus:outline-none focus:ring-1 focus:ring-brand-600';
+const fieldClass = 'mt-1 w-full rounded-lg border-2 border-black bg-white px-3 py-2.5 text-sm text-slate-900 focus:border-brand-600 focus:outline-none focus:ring-1 focus:ring-brand-600';
 
 function OptionField({ label, value, options, onChange }: { label: string; value: string; options: string[]; onChange: (value: string) => void }) {
   return (
@@ -146,9 +146,9 @@ export function TadcOcMakerTool() {
   return (
     <>
       <div className="space-y-6">
-        <div className="flex items-center justify-between border-b border-slate-200 pb-3">
+        <div className="flex items-center justify-between border-b-3 border-black pb-3">
           <div><p className="text-xs font-semibold uppercase tracking-[0.16em] text-slate-500">Character Appearance</p><p className="mt-1 text-sm text-slate-600">Build the look of your original Digital Circus character.</p></div>
-          <button type="button" onClick={() => setConcept('A strange performer built from a wind-up toy, a broken carnival ticket, and one impossible prop.')} className="rounded-lg border border-slate-200 bg-white px-3 py-2 text-xs font-semibold text-slate-700 hover:bg-slate-50">Inspire me</button>
+          <button type="button" onClick={() => setConcept('A strange performer built from a wind-up toy, a broken carnival ticket, and one impossible prop.')} className="rounded-lg border-3 border-black bg-white px-3 py-2 text-xs font-semibold text-slate-700 hover:bg-slate-50">Inspire me</button>
         </div>
 
         <label className="block text-sm font-medium text-slate-700">Character concept <span className="font-normal text-slate-500">(optional)</span><input value={concept} onChange={(event) => setConcept(event.target.value)} placeholder="A wind-up toy fox with a broken carnival ticket" className={fieldClass} maxLength={180} /></label>
@@ -168,19 +168,19 @@ export function TadcOcMakerTool() {
           <OptionField label="Personality" value={personality} options={personalities} onChange={setPersonality} />
         </div>
 
-        <div className="grid gap-4 border-t border-slate-200 pt-5 sm:grid-cols-2">
+        <div className="grid gap-4 border-t-3 border-black pt-5 sm:grid-cols-2">
           <OptionField label="Image ratio" value={aspectRatio} options={['1:1', '4:3', '3:4', '16:9']} onChange={setAspectRatio} />
           <label className="text-sm font-medium text-slate-700">Image quality<select className={fieldClass} defaultValue="1K"><option>1K</option><option>2K</option></select></label>
         </div>
 
         <div className="flex flex-wrap gap-3">
           <button type="button" onClick={generate} disabled={isGenerating} aria-busy={isGenerating || imageLoading === 0} className="inline-flex items-center gap-2 rounded-lg bg-brand-700 px-5 py-2.5 text-sm font-semibold text-white shadow hover:bg-brand-800 disabled:cursor-not-allowed disabled:opacity-50">{isGenerating || imageLoading === 0 ? 'Creating your TADC OC...' : freeConceptUsed && !isPro ? 'Unlock image generation' : 'Make my TADC OC'}</button>
-          <button type="button" onClick={copySheets} disabled={!sheets.length} className="rounded-lg border border-slate-200 bg-white px-4 py-2.5 text-sm font-semibold text-slate-700 hover:bg-slate-50 disabled:cursor-not-allowed disabled:opacity-50">Copy character sheet</button>
-          <button type="button" onClick={() => setSheets([])} disabled={!sheets.length} className="rounded-lg border border-slate-200 bg-white px-4 py-2.5 text-sm font-semibold text-slate-700 hover:bg-slate-50 disabled:cursor-not-allowed disabled:opacity-50">Clear</button>
+          <button type="button" onClick={copySheets} disabled={!sheets.length} className="rounded-lg border-3 border-black bg-white px-4 py-2.5 text-sm font-semibold text-slate-700 hover:bg-slate-50 disabled:cursor-not-allowed disabled:opacity-50">Copy character sheet</button>
+          <button type="button" onClick={() => setSheets([])} disabled={!sheets.length} className="rounded-lg border-3 border-black bg-white px-4 py-2.5 text-sm font-semibold text-slate-700 hover:bg-slate-50 disabled:cursor-not-allowed disabled:opacity-50">Clear</button>
         </div>
 
         {error && <div className="rounded-lg bg-red-50 px-4 py-3 text-sm text-red-700">{error}</div>}
-        {sheets.length > 0 && <div className="max-w-2xl">{sheets.map((sheet, index) => <article key={`${sheet.name}-${index}`} className="rounded-xl border border-slate-200 bg-slate-50 p-4"><div className="mb-3 flex items-start justify-between gap-3"><span className="flex h-8 w-8 items-center justify-center rounded-full bg-brand-100 text-sm font-bold text-brand-800">{index + 1}</span><span className="text-xs font-semibold uppercase tracking-wide text-slate-500">Your TADC OC</span></div>{sheet.image && <img src={sheet.image} alt={`${sheet.name} TADC OC concept`} className="mb-4 aspect-square w-full rounded-lg border border-slate-200 object-cover" />}{!sheet.image && <button type="button" onClick={() => generateImage(index)} disabled={imageLoading !== null} className="mb-4 w-full rounded-lg border border-brand-200 bg-white px-3 py-2 text-sm font-semibold text-brand-800 hover:bg-brand-50 disabled:cursor-not-allowed disabled:opacity-50">{imageLoading === index ? 'Generating image...' : 'Generate image'}</button>}<h3 className="text-lg font-semibold text-slate-900">{sheet.name}</h3><dl className="mt-3 space-y-2 text-sm text-slate-700"><div><dt className="font-semibold text-slate-900">Role</dt><dd>{sheet.role}</dd></div><div><dt className="font-semibold text-slate-900">Avatar</dt><dd>{sheet.avatar}</dd></div><div><dt className="font-semibold text-slate-900">Appearance</dt><dd>{sheet.appearance}</dd></div><div><dt className="font-semibold text-slate-900">Personality</dt><dd>{sheet.personality}</dd></div></dl></article>)}</div>}
+        {sheets.length > 0 && <div className="max-w-2xl">{sheets.map((sheet, index) => <article key={`${sheet.name}-${index}`} className="rounded-xl border-3 border-black bg-slate-50 p-4"><div className="mb-3 flex items-start justify-between gap-3"><span className="flex h-8 w-8 items-center justify-center rounded-full bg-brand-100 text-sm font-bold text-brand-800">{index + 1}</span><span className="text-xs font-semibold uppercase tracking-wide text-slate-500">Your TADC OC</span></div>{sheet.image && <img src={sheet.image} alt={`${sheet.name} TADC OC concept`} className="mb-4 aspect-square w-full rounded-lg border-3 border-black object-cover" />}{!sheet.image && <button type="button" onClick={() => generateImage(index)} disabled={imageLoading !== null} className="mb-4 w-full rounded-lg border border-brand-200 bg-white px-3 py-2 text-sm font-semibold text-brand-800 hover:bg-brand-50 disabled:cursor-not-allowed disabled:opacity-50">{imageLoading === index ? 'Generating image...' : 'Generate image'}</button>}<h3 className="text-lg font-semibold text-slate-900">{sheet.name}</h3><dl className="mt-3 space-y-2 text-sm text-slate-700"><div><dt className="font-semibold text-slate-900">Role</dt><dd>{sheet.role}</dd></div><div><dt className="font-semibold text-slate-900">Avatar</dt><dd>{sheet.avatar}</dd></div><div><dt className="font-semibold text-slate-900">Appearance</dt><dd>{sheet.appearance}</dd></div><div><dt className="font-semibold text-slate-900">Personality</dt><dd>{sheet.personality}</dd></div></dl></article>)}</div>}
       </div>
       {authOpen && <AuthModal purpose="unlock image generation" onClose={() => setAuthOpen(false)} onSuccess={() => { setAuthOpen(false); setPricingOpen(true); }} />}
       {pricingOpen && <PricingModal product="tadc" onClose={() => setPricingOpen(false)} />}

@@ -160,7 +160,7 @@ const faqs: FaqItem[] = [
 ];
 
 const article = (
-  <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10"><div className="prose prose-slate max-w-none">
+  <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10"><div className="prose prose-slate max-w-none">
     <h2>Character Remover — Remove Unwanted Characters from Text Online</h2>
     <p>A <strong>character remover</strong> is a tool that takes raw text from any source and strips out the characters that do not belong — invisible Unicode artifacts, markdown formatting symbols, non-standard punctuation, and other unwanted code points — while preserving every visible word and sentence. Whether you are cleaning AI-generated content before publishing, preparing copy-pasted text for a new editor, or sanitizing data for a spreadsheet or database, a character remover gives you clean, consistent output in seconds.</p>
     <p>AI Text Cleanup Tools is a free <strong>character remover</strong> with no account, no upload, and no character limits. Paste your text, click Clean Text, and copy the clean result. The tool handles all categories of unwanted characters in a single pass — invisible Unicode, markdown syntax, curly quotes, em dashes, and spacing artifacts from AI tools, word processors, PDFs, and websites.</p>
@@ -297,7 +297,7 @@ export default async function CharacterRemoverPage() {
         </section>
 
         <section className="relative w-full mt-4 md:mt-6">
-          <div className="w-full max-w-none rounded-xl border border-slate-200 bg-white p-3 shadow-sm md:rounded-2xl md:p-6">
+          <div className="w-full max-w-none rounded-xl border-3 border-black bg-white p-3 shadow-neo-sm md:rounded-2xl md:p-6">
             <ToolWorkbench
               processor="chatgptTextCleaner"
               primaryLabel="Remove Characters"

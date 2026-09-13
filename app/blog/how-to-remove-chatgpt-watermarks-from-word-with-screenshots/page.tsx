@@ -23,7 +23,7 @@ export default function HowToRemoveChatGptWatermarksFromWordWithScreenshotsPage(
       <div className="ad-slot"><AdSenseSlot className="w-full" /></div>
 
       {/* Hero card */}
-      <div className="rounded-[28px] border border-slate-200 bg-white/70 p-6 shadow-xl shadow-slate-900/5 backdrop-blur-lg">
+      <div className="rounded-[28px] border-3 border-black bg-white/70 p-6 shadow-neo-lg shadow-slate-900/5 backdrop-blur-lg">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Step-by-Step Guide</p>
         <h1 className="mt-3 text-3xl font-semibold text-slate-900">How to Remove ChatGPT Watermarks from Word Documents</h1>
         <p className="mt-2 text-slate-600">
@@ -37,7 +37,7 @@ export default function HowToRemoveChatGptWatermarksFromWordWithScreenshotsPage(
             { title: 'Step 2', detail: 'Remove using Word or external tool' },
             { title: 'Step 3', detail: 'Verify and handle remaining artifacts' },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-100 bg-slate-50 p-4 text-xs text-slate-700">
+            <div key={item.title} className="rounded-2xl border-2 border-black bg-slate-50 p-4 text-xs text-slate-700">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.detail}</p>
             </div>
@@ -58,7 +58,7 @@ export default function HowToRemoveChatGptWatermarksFromWordWithScreenshotsPage(
           to AI detection signals.
         </p>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Invisible characters to remove</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>U+200B &mdash; Zero-Width Space</li>
@@ -69,7 +69,7 @@ export default function HowToRemoveChatGptWatermarksFromWordWithScreenshotsPage(
               <li>U+00A0 &mdash; Non-Breaking Space (optional)</li>
             </ul>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Visible artifacts to normalize</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>U+2014 &mdash; Em Dash (&#x2014;)</li>
@@ -88,7 +88,7 @@ export default function HowToRemoveChatGptWatermarksFromWordWithScreenshotsPage(
           This method handles all character types in one pass. It is faster than the in-Word approach and more comprehensive.
           The only downside is that you need to reapply formatting afterward if you use the full extract-and-clean route.
         </p>
-        <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+        <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
           <p className="font-semibold text-slate-900">Browser tool workflow</p>
           <ol className="mt-2 list-decimal space-y-3 pl-5">
             <li>
@@ -132,7 +132,7 @@ export default function HowToRemoveChatGptWatermarksFromWordWithScreenshotsPage(
           with special character codes is the approach. This preserves all formatting but requires running a separate
           pass for each character type.
         </p>
-        <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+        <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
           <p className="font-semibold text-slate-900">Word Find and Replace &mdash; step by step</p>
           <ol className="mt-2 list-decimal space-y-2 pl-5">
             <li><strong>Open Find and Replace:</strong> Press Ctrl+H (Windows) or Cmd+H (Mac).</li>
@@ -148,7 +148,7 @@ export default function HowToRemoveChatGptWatermarksFromWordWithScreenshotsPage(
             <li><strong>Repeat for each character type.</strong></li>
           </ol>
         </div>
-        <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm mt-4">
+        <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm mt-4">
           <p className="font-semibold text-slate-900">Em dash handling in Word</p>
           <p className="mt-2">
             For em dashes, decide whether you want to replace them. If your document is staying in Word or going to PDF,
@@ -186,7 +186,7 @@ export default function HowToRemoveChatGptWatermarksFromWordWithScreenshotsPage(
           characters may survive the cleaning process, particularly if they are in locations that were not fully selected
           (footnotes, headers, footers, text boxes).
         </p>
-        <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+        <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
           <p className="font-semibold text-slate-900">Verification steps</p>
           <ol className="mt-2 list-decimal space-y-2 pl-5">
             <li>Select all body text in the document (Ctrl+A / Cmd+A covers main body).</li>
@@ -210,14 +210,14 @@ export default function HowToRemoveChatGptWatermarksFromWordWithScreenshotsPage(
           Once your document is clean, here is how to keep it clean when adding more ChatGPT content in the future.
         </p>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Prevention: Always clean before pasting</p>
             <p className="mt-2">
               Make it a habit to route all ChatGPT text through the <Link href="/">AI Text Cleanup Tools</Link> before
               pasting it anywhere. This adds 30 seconds to your workflow and permanently prevents the problem.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Prevention: Use Paste Special</p>
             <p className="mt-2">
               When pasting into Word, use Paste Special &gt; Unformatted Text instead of regular paste. This strips

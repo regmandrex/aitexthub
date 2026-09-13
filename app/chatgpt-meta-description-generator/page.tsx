@@ -50,7 +50,7 @@ const faqs: FaqItem[] = [
 ];
 
 const writeUp = (
-  <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+  <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
     <div className="prose prose-slate max-w-none">
       <h2>ChatGPT Meta Description Generator: Create SEO-Optimized Search Snippets</h2>
       <p>The ChatGPT Meta Description Generator is a free online tool that creates compelling, SEO-optimized meta descriptions for your web pages. Meta descriptions appear in search engine results below your page title, providing a brief summary that influences whether users click through to your site.</p>

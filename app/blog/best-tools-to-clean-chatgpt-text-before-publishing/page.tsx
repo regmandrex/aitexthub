@@ -28,7 +28,7 @@ export default function BestToolsToCleanChatGPTTextBeforePublishingPage() {
         <AdSenseSlot className="w-full" />
       </div>
 
-      <div className="rounded-[28px] border border-slate-200 bg-white/70 p-6 shadow-xl shadow-slate-900/5 backdrop-blur-lg">
+      <div className="rounded-[28px] border-3 border-black bg-white/70 p-6 shadow-neo-lg shadow-slate-900/5 backdrop-blur-lg">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Compare cleaners the right way</p>
         <h1 className="mt-3 text-3xl font-semibold text-slate-900">Best Tools to Clean ChatGPT Text Before Publishing</h1>
         <p className="mt-2 text-slate-600">
@@ -42,7 +42,7 @@ export default function BestToolsToCleanChatGPTTextBeforePublishingPage() {
             { title: 'CMS', detail: 'Paste cleanly without broken blocks' },
             { title: 'Performance', detail: 'Avoid DOM inflation and layout shifts' },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-100 bg-slate-50 p-4 text-xs text-slate-700">
+            <div key={item.title} className="rounded-2xl border-2 border-black bg-slate-50 p-4 text-xs text-slate-700">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.detail}</p>
             </div>
@@ -79,28 +79,28 @@ export default function BestToolsToCleanChatGPTTextBeforePublishingPage() {
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">Common tool categories (and their limits)</h2>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">1. Grammar and writing assistants</p>
             <p className="mt-2">
               Good for spelling, grammar, clarity, and tone. Bad at invisible Unicode removal, whitespace normalization, DOM efficiency, and CMS
               formatting bugs. These are editors, not cleaners.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">2. Paraphrasing and rewriting tools</p>
             <p className="mt-2">
               Good for changing phrasing and reducing obvious AI patterns. Often preserve invisible characters, can distort meaning, and can harm
               keywords and intent. Rewriting does not equal cleaning.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">3. Code or HTML sanitizers</p>
             <p className="mt-2">
               Good for stripping unsafe HTML and scripts. They usually ignore invisible Unicode and do not optimize structure or performance.
               They solve security, not AI text hygiene.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">4. Plain text editors (partial solution)</p>
             <p className="mt-2">
               Good for stripping visible formatting. They cannot reliably detect invisible characters or normalize Unicode. Useful as a first step,
@@ -144,7 +144,7 @@ export default function BestToolsToCleanChatGPTTextBeforePublishingPage() {
               body: 'Advanced tools consider DOM efficiency, layout stability, and CWV impact, not just aesthetics.',
             },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-200 bg-slate-50 p-4 text-sm text-slate-700 shadow-sm">
+            <div key={item.title} className="rounded-2xl border-3 border-black bg-slate-50 p-4 text-sm text-slate-700 shadow-neo-sm">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.body}</p>
             </div>
@@ -164,7 +164,7 @@ export default function BestToolsToCleanChatGPTTextBeforePublishingPage() {
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">AI text cleaning tools vs manual cleaning</h2>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/70 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/70 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Manual cleaning</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Full control</li>
@@ -173,7 +173,7 @@ export default function BestToolsToCleanChatGPTTextBeforePublishingPage() {
               <li>Not scalable</li>
             </ul>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/70 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/70 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Automated AI cleaning tools</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Character-level accuracy</li>
@@ -195,7 +195,7 @@ export default function BestToolsToCleanChatGPTTextBeforePublishingPage() {
             { title: 'Developers and technical writers', body: 'Prevent parsing and linting errors and keep markdown stable.' },
             { title: 'Email marketers', body: 'Prevent rendering issues and avoid spam-triggering artifacts in fragile clients.' },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-200 bg-white/60 p-4 text-sm text-slate-700 shadow-sm">
+            <div key={item.title} className="rounded-2xl border-3 border-black bg-white/60 p-4 text-sm text-slate-700 shadow-neo-sm">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.body}</p>
             </div>
@@ -227,7 +227,7 @@ export default function BestToolsToCleanChatGPTTextBeforePublishingPage() {
 
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">The ideal AI text cleaning stack</h2>
-        <div className="rounded-2xl border border-brand-100 bg-brand-50 p-5 text-sm text-brand-900 shadow-sm">
+        <div className="rounded-2xl border border-brand-100 bg-brand-50 p-5 text-sm text-brand-900 shadow-neo-sm">
           <p className="font-semibold text-brand-800">Recommended stack</p>
           <ul className="mt-2 list-disc space-y-1 pl-5 text-slate-800">
             <li>
@@ -256,7 +256,7 @@ export default function BestToolsToCleanChatGPTTextBeforePublishingPage() {
             { q: 'Is AI text cleaning ethical?', a: 'Yes. You are improving quality, stability, and performance for content you generated or own.' },
             { q: 'Will Google penalize cleaned AI text?', a: 'No. Clean text improves experience and clarity.' },
           ].map((item) => (
-            <div key={item.q} className="rounded-2xl border border-slate-200 bg-white/60 p-4 text-sm text-slate-700 shadow-sm">
+            <div key={item.q} className="rounded-2xl border-3 border-black bg-white/60 p-4 text-sm text-slate-700 shadow-neo-sm">
               <p className="font-semibold text-slate-900">{item.q}</p>
               <p className="mt-1">{item.a}</p>
             </div>

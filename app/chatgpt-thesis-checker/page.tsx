@@ -48,7 +48,7 @@ const faqs: FaqItem[] = [
 ];
 
 const writeUp = (
-  <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+  <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
     <div className="prose prose-slate max-w-none">
       <h2>ChatGPT Thesis Checker: Strengthen Your Essay's Foundation</h2>
       <p>The ChatGPT Thesis Checker is a free online tool that evaluates thesis statements for clarity, specificity, arguability, and effectiveness. Your thesis statement is the foundation of your essay—a weak thesis undermines everything built upon it. This tool helps you craft thesis statements that guide strong, focused essays.</p>

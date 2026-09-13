@@ -163,7 +163,7 @@ export function QuestionGeneratorTool() {
   }
 
   return (
-    <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm sm:p-6">
+    <div className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm sm:p-6">
       <div className="space-y-1">
         <span className="text-sm font-medium text-slate-900">질문 종류를 골라주세요</span>
         <p className="text-xs text-slate-500">{active.hint}</p>
@@ -179,7 +179,7 @@ export function QuestionGeneratorTool() {
             className={
               category === c.key
                 ? 'rounded-full border px-3 py-1.5 text-sm transition border-indigo-500 bg-indigo-500 text-white'
-                : 'rounded-full border px-3 py-1.5 text-sm transition border-slate-300 bg-white text-slate-700 hover:border-indigo-300'
+                : 'rounded-full border px-3 py-1.5 text-sm transition border-black bg-white text-slate-700 hover:border-indigo-300'
             }
           >
             {c.label}
@@ -195,7 +195,7 @@ export function QuestionGeneratorTool() {
           id="q-count"
           value={count}
           onChange={(e) => setCount(Number(e.target.value))}
-          className="rounded-lg border border-slate-300 px-3 py-1.5 text-sm"
+          className="rounded-lg border-2 border-black px-3 py-1.5 text-sm"
         >
           {[3, 5, 10, 15].map((n) => (
             <option key={n} value={n}>
@@ -216,7 +216,7 @@ export function QuestionGeneratorTool() {
           <button
             type="button"
             onClick={copyAll}
-            className="rounded-lg border border-slate-300 px-4 py-2 text-sm text-slate-700 hover:border-indigo-300"
+            className="rounded-lg border-2 border-black px-4 py-2 text-sm text-slate-700 hover:border-indigo-300"
           >
             {copied ? '복사됨!' : '전체 복사'}
           </button>
@@ -233,7 +233,7 @@ export function QuestionGeneratorTool() {
             {results.map((q, i) => (
               <li
                 key={q + '-' + i}
-                className="flex gap-3 rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm text-slate-800"
+                className="flex gap-3 rounded-xl border-3 border-black bg-slate-50 px-4 py-3 text-sm text-slate-800"
               >
                 <span className="font-semibold text-indigo-600">{i + 1}</span>
                 <span>{q}</span>

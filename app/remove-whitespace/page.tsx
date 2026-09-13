@@ -50,7 +50,7 @@ const faqKeys = [
 
 function createWriteUp() {
   return (
-    <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+    <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
         <h2>Remove Whitespace Online: Clean Extra Spaces, Tabs & Line Breaks</h2>
         <p>Extra spaces, tabs, and stray line breaks in text cause real problems: broken imports, duplicate database records, messy formatting, and code that fails validation. A remove whitespace tool lets you normalize or strip whitespace in seconds so your text is consistent and ready for publishing, coding, or data processing. Whether you need to trim leading and trailing spaces, collapse multiple spaces into one, or remove all whitespace characters including tabs and line breaks, this free remove whitespace online tool runs in your browser and keeps your content private.</p>

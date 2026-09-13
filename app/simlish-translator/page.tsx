@@ -24,7 +24,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
 function createWriteUp() {
   return (
-    <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+    <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
         <h2>Simlish Translator: English to Simlish Converter</h2>
         <p>A Simlish translator is an online tool that converts English or other text into Simlish—the fictional language used in The Sims series. Simlish is not a full language with fixed grammar and vocabulary; it is a "simulated" language made of sounds and phrases that suggest speech without real meaning. Fans use Simlish translators to create fun captions, role-play, or content inspired by The Sims. You type your text, run the tool, and get a Simlish-style version that echoes the mood or length of your input.</p>

@@ -31,7 +31,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
 function createWriteUp() {
   return (
-    <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+    <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
         <h2>Word Descrambler: Unscramble Letters Into Words Instantly</h2>
         <p>A word descrambler (often called a descrambler or letter unscrambler) is an online tool that turns jumbled letters into real words in seconds. Whether you have a handful of tiles from a word game or a scrambled word from a puzzle, a letter unscrambler finds every valid word that can be made from those letters. No more staring at "ETILSB" or "RTAEC" wondering what words are hiding there—you type the letters, click descramble, and get a list of words sorted by length and sometimes by score so you can pick the best play for Scrabble, Words with Friends, or any word game.</p>

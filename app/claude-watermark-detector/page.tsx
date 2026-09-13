@@ -148,7 +148,7 @@ const faqs: FaqItem[] = [
 ];
 
 const writeUp = (
-  <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 space-y-4 mt-10">
+  <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 space-y-4 mt-10">
     <h2 className="text-2xl font-semibold text-slate-900">Claude Watermark Detector: Unveiling the Future of AI Content Authenticity</h2>
 
     <h3 className="text-xl font-semibold text-slate-900">Introduction</h3>
@@ -280,7 +280,7 @@ const writeUp = (
     <h3 className="text-xl font-semibold text-slate-900">Claude vs. Other AI Detection Tools</h3>
     <p>Let&apos;s compare Claude&apos;s watermark detector with other popular tools:</p>
     <div className="overflow-x-auto">
-      <table className="min-w-full border border-slate-200 text-sm text-slate-700">
+      <table className="min-w-full border-3 border-black text-sm text-slate-700">
         <thead className="bg-slate-50 text-slate-700">
           <tr>
             <th className="px-3 py-2 text-left font-semibold">Tool</th>
@@ -290,25 +290,25 @@ const writeUp = (
           </tr>
         </thead>
         <tbody>
-          <tr className="border-t border-slate-200">
+          <tr className="border-t-3 border-black">
             <td className="px-3 py-2">Claude Watermark Detector</td>
             <td className="px-3 py-2">Claude-specific detection</td>
             <td className="px-3 py-2">High accuracy, deep token pattern recognition</td>
             <td className="px-3 py-2">Only works on Claude content</td>
           </tr>
-          <tr className="border-t border-slate-200">
+          <tr className="border-t-3 border-black">
             <td className="px-3 py-2">GPTZero</td>
             <td className="px-3 py-2">General AI detection</td>
             <td className="px-3 py-2">Simplicity, sentence complexity analysis</td>
             <td className="px-3 py-2">Prone to false positives</td>
           </tr>
-          <tr className="border-t border-slate-200">
+          <tr className="border-t-3 border-black">
             <td className="px-3 py-2">Originality.ai</td>
             <td className="px-3 py-2">Content originality and AI use</td>
             <td className="px-3 py-2">Team collaboration, browser plugin</td>
             <td className="px-3 py-2">Not model-specific</td>
           </tr>
-          <tr className="border-t border-slate-200">
+          <tr className="border-t-3 border-black">
             <td className="px-3 py-2">Turnitin AI Detector</td>
             <td className="px-3 py-2">Academic use</td>
             <td className="px-3 py-2">Integrated in LMS, plagiarism + AI</td>

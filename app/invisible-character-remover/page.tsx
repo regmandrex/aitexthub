@@ -195,7 +195,7 @@ const faqs: FaqItem[] = [
 ];
 
 const article = (
-  <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10"><div className="prose prose-slate max-w-none">
+  <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10"><div className="prose prose-slate max-w-none">
     <h2>Invisible Character Remover — Find and Remove Hidden Unicode Instantly</h2>
     <p>An <strong>invisible character remover</strong> solves one of the most persistent and frustrating problems in modern text workflows: characters that are present in your data but cannot be seen. When you copy text from an AI model like ChatGPT, Claude, Gemini, or DeepSeek, the visible words are not the only thing that travels to your clipboard. Dozens of invisible Unicode characters come along — zero-width spaces, byte-order marks, soft hyphens, non-breaking spaces, and directional formatting marks — all of which are completely invisible on screen but cause real problems when your text is pasted into another application.</p>
     <p>This free <strong>invisible character remover</strong> scans every character in your text, identifies every hidden Unicode code point, removes them all in a single pass, and shows you how many were found. No account required, no uploads, no character limit. Paste your text, click Clean Text, and copy the clean result in seconds.</p>
@@ -335,7 +335,7 @@ export default async function InvisibleCharacterRemoverPage() {
         </section>
 
         <section className="relative w-full mt-4 md:mt-6">
-          <div className="w-full max-w-none rounded-xl border border-slate-200 bg-white p-3 shadow-sm md:rounded-2xl md:p-6">
+          <div className="w-full max-w-none rounded-xl border-3 border-black bg-white p-3 shadow-neo-sm md:rounded-2xl md:p-6">
             <ToolWorkbench
               processor="chatgptTextCleaner"
               primaryLabel="Remove Invisible Characters"

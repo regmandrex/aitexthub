@@ -1,8 +1,7 @@
 import type { Metadata, Viewport } from 'next';
 import { ReactNode } from 'react';
 import dynamic from 'next/dynamic';
-import Script from 'next/script';
-import { Inter } from 'next/font/google';
+import { Outfit } from 'next/font/google';
 import Header from '../components/Header';
 import { JsonLd } from '../components/JsonLd';
 import { BreadcrumbJsonLdAndLang } from '../components/BreadcrumbJsonLdAndLang';
@@ -13,12 +12,12 @@ import '../styles/globals.css';
 
 const Footer = dynamic(() => import('../components/Footer'), { ssr: true });
 
-const inter = Inter({
+const outfit = Outfit({
   subsets: ['latin'],
   display: 'swap',
   adjustFontFallback: true,
   preload: true,
-  variable: '--font-inter',
+  variable: '--font-outfit',
 });
 
 export async function generateMetadata(): Promise<Metadata> {
@@ -73,6 +72,14 @@ export async function generateMetadata(): Promise<Metadata> {
       title: 'AI Text Cleanup Tools - Free AI Text Utilities',
       description: 'Free AI text cleanup tools - remove hidden Unicode, fix spacing, clean ChatGPT output, and normalize text for publishing.',
     },
+    icons: {
+      icon: [
+        { url: '/favicon.ico', sizes: '32x32' },
+        { url: '/icon.svg', type: 'image/svg+xml' },
+        { url: '/icon.png', sizes: '512x512', type: 'image/png' },
+      ],
+      apple: [{ url: '/icon.png', sizes: '512x512', type: 'image/png' }],
+    },
   };
 }
 
@@ -96,17 +103,11 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" dir="ltr">
       <head>
-        <link rel="preconnect" href="https://pagead2.googlesyndication.com" />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="alternate" type="application/rss+xml" title="AI Text Cleanup Tools Blog & Tools RSS Feed" href="https://aitextcleanuptools.com/rss.xml" />
       </head>
-      <body className={`${inter.variable} bg-slate-50 text-slate-900 antialiased`}>
-        <Script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8764610479002120"
-          crossOrigin="anonymous"
-          strategy="afterInteractive"
-        />
+      <body className={`${outfit.variable} bg-slate-50 text-slate-900 antialiased`}>
+        {/* AdSense script disabled site-wide for now — see components/ads/* and GoogleAds.tsx. */}
         <DeferredThirdPartyScripts />
         <JsonLd data={ORG_SCHEMA} />
         <JsonLd data={SITE_SCHEMA} />

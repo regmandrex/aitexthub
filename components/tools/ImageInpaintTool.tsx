@@ -157,7 +157,7 @@ export default function ImageInpaintTool(_props: { modelName?: string }) {
 
   return (
     <div className="space-y-4">
-      <div className="rounded-xl border border-slate-200 bg-slate-50 p-4 space-y-3">
+      <div className="rounded-xl border-3 border-black bg-slate-50 p-4 space-y-3">
         <label className="block text-sm font-semibold text-slate-800">Upload image</label>
         <input
           ref={inputRef}
@@ -176,7 +176,7 @@ export default function ImageInpaintTool(_props: { modelName?: string }) {
             onPointerDown={onDown}
             onPointerMove={onMove}
             onPointerUp={onUp}
-            className="max-w-full cursor-crosshair rounded-lg border border-slate-300 touch-none"
+            className="max-w-full cursor-crosshair rounded-lg border-2 border-black touch-none"
           />
           {message ? (
             <p className={`text-sm ${phase === 'error' ? 'text-rose-600' : 'text-slate-600'}`}>{message}</p>
@@ -206,7 +206,7 @@ export default function ImageInpaintTool(_props: { modelName?: string }) {
           type="button"
           onClick={reset}
           disabled={busy}
-          className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50 disabled:opacity-50"
+          className="inline-flex items-center justify-center rounded-lg border-3 border-black bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50 disabled:opacity-50"
         >
           Clear
         </button>
@@ -216,7 +216,7 @@ export default function ImageInpaintTool(_props: { modelName?: string }) {
         <div className="space-y-2">
           <p className="text-sm font-semibold text-slate-800">Result</p>
           {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img src={resultUrl} alt="Cleaned result" className="max-w-full rounded-lg border border-slate-300" />
+          <img src={resultUrl} alt="Cleaned result" className="max-w-full rounded-lg border-2 border-black" />
         </div>
       ) : null}
 

@@ -50,7 +50,7 @@ export default function AccountDrawer({
       />
 
       <aside
-        className={`fixed right-0 top-0 z-[70] flex h-full w-[88vw] max-w-md flex-col bg-white shadow-2xl transition-transform ${
+        className={`fixed right-0 top-0 z-[70] flex h-full w-[88vw] max-w-md flex-col border-l-3 border-black bg-white shadow-neo-lg transition-transform ${
           open ? 'translate-x-0' : 'translate-x-full pointer-events-none'
         }`}
         style={{ visibility: open ? 'visible' : 'hidden' }}
@@ -91,7 +91,7 @@ export default function AccountDrawer({
 
         <div className="flex-1 overflow-y-auto px-5 py-5">
           {/* Current Status card */}
-          <div className="rounded-xl border border-slate-200 bg-slate-50 p-4">
+          <div className="rounded-xl border-3 border-black bg-slate-50 p-4 shadow-neo-sm">
             <p className="text-xs font-bold uppercase tracking-wider text-slate-500">Current Status</p>
             <div className="mt-2 flex items-start justify-between gap-3">
               <div>
@@ -106,7 +106,7 @@ export default function AccountDrawer({
                 <Link
                   href="/pro"
                   onClick={onClose}
-                  className="shrink-0 rounded-lg bg-brand-600 px-4 py-2 text-sm font-semibold text-white shadow-sm hover:bg-brand-700"
+                  className="shrink-0 rounded-lg border-3 border-black bg-brand-600 px-4 py-2 text-sm font-semibold text-white shadow-neo-sm transition-transform hover:translate-y-0.5 hover:shadow-none"
                 >
                   Upgrade
                 </Link>
@@ -139,7 +139,7 @@ export default function AccountDrawer({
             <button
               type="button"
               disabled
-              className="flex w-full items-center justify-between rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm font-medium text-slate-700 transition hover:bg-slate-50 disabled:cursor-not-allowed disabled:opacity-60"
+              className="flex w-full items-center justify-between rounded-lg border-2 border-black bg-white px-4 py-3 text-sm font-medium text-slate-700 transition hover:bg-slate-50 disabled:cursor-not-allowed disabled:opacity-60"
               title="Coming with checkout"
             >
               <span>Manage Subscription</span>
@@ -150,7 +150,7 @@ export default function AccountDrawer({
             <Link
               href="/account"
               onClick={onClose}
-              className="flex w-full items-center gap-2 rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm font-medium text-slate-700 transition hover:bg-slate-50"
+              className="flex w-full items-center gap-2 rounded-lg border-2 border-black bg-white px-4 py-3 text-sm font-medium text-slate-700 transition hover:bg-slate-50"
             >
               <svg className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
@@ -160,7 +160,7 @@ export default function AccountDrawer({
             <Link
               href="/contact"
               onClick={onClose}
-              className="flex w-full items-center gap-2 rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm font-medium text-slate-700 transition hover:bg-slate-50"
+              className="flex w-full items-center gap-2 rounded-lg border-2 border-black bg-white px-4 py-3 text-sm font-medium text-slate-700 transition hover:bg-slate-50"
             >
               <svg className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />

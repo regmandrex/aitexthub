@@ -2,7 +2,7 @@ import React from 'react';
 import type { ToolContent } from '@/lib/tools/content/types';
 
 const WriteUp = () => (
-  <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+  <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
     <div className="prose prose-slate max-w-none">
       <h2 className="text-2xl font-bold text-slate-900 mb-4">Cold Email Humanizer: Make AI Cold Emails Sound Personal, Persuasive, and Reply-Worthy</h2>
       <p className="text-slate-700 mb-4">The Cold Email Humanizer is a free online tool that rewrites AI-generated cold email drafts to sound natural, personal, and authentically human. Cold emailing is one of the highest-leverage outreach channels available to salespeople, founders, recruiters, and freelancers — but AI-generated cold emails are systematically destroying reply rates for anyone who uses them without humanization. This tool fixes that problem by transforming the stiff, robotic, over-formal output that ChatGPT and other AI tools produce into cold email copy that actually gets opened, read, and replied to.</p>

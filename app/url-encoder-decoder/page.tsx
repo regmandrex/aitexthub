@@ -190,7 +190,7 @@ A common workflow is to decode the URL, edit the readable version, and then enco
 ];
 
 const writeUp = (
-  <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+  <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
     <div className="prose prose-slate max-w-none">
             <h2>Free URL Encoder and Decoder Tool - Convert Any Text for the Web</h2>
       <h2>Introduction</h2>

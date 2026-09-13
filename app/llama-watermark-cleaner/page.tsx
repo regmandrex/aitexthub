@@ -260,7 +260,7 @@ export default async function LLAMAWatermarkCleanerPage() {
         </section>
 
         <section className="relative w-full mt-4 md:mt-6">
-          <div className="w-full max-w-none rounded-xl border border-slate-200 bg-white p-3 shadow-sm md:rounded-2xl md:p-6">
+          <div className="w-full max-w-none rounded-xl border-3 border-black bg-white p-3 shadow-neo-sm md:rounded-2xl md:p-6">
             <ToolWorkbench
               processor="chatgptTextCleaner"
               primaryLabel={'Clean'}
@@ -276,7 +276,7 @@ export default async function LLAMAWatermarkCleanerPage() {
 
         <RelatedTools currentSlug="llama-watermark-cleaner" />
 
-        <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 space-y-4 mt-10">
+        <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 space-y-4 mt-10">
           <h2 className="text-2xl font-semibold text-slate-900">
             LLaMA (Meta AI) Watermark Cleaner for Text: Complete Guide to Removing Linguistic AI Signatures
           </h2>

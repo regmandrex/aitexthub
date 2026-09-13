@@ -1,15 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
-  <rect width="512" height="512" fill="#ffffff" />
-  <text
-    x="50%"
-    y="50%"
-    text-anchor="middle"
-    dominant-baseline="middle"
-    font-family="Inter, system-ui, sans-serif"
-    font-size="220"
-    font-weight="400"
-    fill="#000000"
-  >
-    <tspan fill="#dc2626" font-weight="500" font-size="260">G</tspan>PT
-  </text>
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">AI favicon</title>
+  <desc id="desc">A simple AI monogram for AI Text Cleanup Tools.</desc>
+  <rect width="512" height="512" rx="120" fill="#0f766e"/>
+  <circle cx="256" cy="256" r="184" fill="#ecfdf5"/>
+  <circle cx="256" cy="256" r="152" fill="#ccfbf1"/>
+  <text x="256" y="309" fill="#134e4a" font-family="Arial, Helvetica, sans-serif" font-size="164" font-weight="900" letter-spacing="-8" text-anchor="middle">AI</text>
 </svg>

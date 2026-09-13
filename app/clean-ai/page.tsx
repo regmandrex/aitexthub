@@ -165,7 +165,7 @@ const faqs: FaqItem[] = [
 ];
 
 const article = (
-  <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10"><div className="prose prose-slate max-w-none">
+  <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10"><div className="prose prose-slate max-w-none">
     <h2>Clean AI Text — Remove Hidden Characters from AI Output in One Click</h2>
     <p>Every time you generate text with an AI model and copy it somewhere, hidden characters travel with the visible words. To <strong>clean AI</strong> text means to remove all of those hidden Unicode characters — zero-width spaces, byte-order marks, non-breaking spaces, soft hyphens, directional marks — so the text is technically clean and behaves predictably in every application. Without a tool to <strong>clean AI</strong> output, those invisible characters accumulate in your documents, CMS platforms, email campaigns, and code files, causing formatting problems that are difficult to diagnose because the text looks completely normal on screen.</p>
     <p>AI Text Cleanup Tools is a free tool to <strong>clean AI</strong> text from any model in one click. Paste your AI-generated output, click Clean Text, and copy the cleaned result. No account, no upload, no limit. Use it to <strong>clean AI</strong> text from ChatGPT, Claude, Gemini, DeepSeek, Grok, Llama, Mistral, Perplexity, Copilot, or any other model — the same invisible characters appear across every AI platform and the same clean AI process removes them all.</p>
@@ -279,7 +279,7 @@ export default async function CleanAIPage() {
         </section>
 
         <section className="relative w-full mt-4 md:mt-6">
-          <div className="w-full max-w-none rounded-xl border border-slate-200 bg-white p-3 shadow-sm md:rounded-2xl md:p-6">
+          <div className="w-full max-w-none rounded-xl border-3 border-black bg-white p-3 shadow-neo-sm md:rounded-2xl md:p-6">
             <ToolWorkbench
               processor="chatgptTextCleaner"
               primaryLabel="Clean AI Text"

@@ -37,13 +37,13 @@ export function StringLengthCalculatorTool() {
           onChange={e => setInput(e.target.value)}
           placeholder="Paste or type your text here..."
           rows={8}
-          className="w-full rounded-xl border border-slate-200 bg-white px-3 py-3 text-sm text-slate-800 shadow-sm outline-none focus:border-blue-300 focus:ring-2 focus:ring-blue-100"
+          className="w-full rounded-xl border-3 border-black bg-white px-3 py-3 text-sm text-slate-800 shadow-neo-sm outline-none focus:border-blue-300 focus:ring-2 focus:ring-blue-100"
         />
       </div>
 
       <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
         {stats.map(({ label, value }) => (
-          <div key={label} className="rounded-xl border border-slate-200 bg-white px-4 py-3 text-center">
+          <div key={label} className="rounded-xl border-3 border-black bg-white px-4 py-3 text-center">
             <p className="text-2xl font-bold text-blue-700">{value.toLocaleString()}</p>
             <p className="text-xs text-slate-500 mt-0.5">{label}</p>
           </div>
@@ -51,11 +51,11 @@ export function StringLengthCalculatorTool() {
       </div>
 
       {topChars.length > 0 && (
-        <div className="rounded-xl border border-slate-200 bg-white p-4">
+        <div className="rounded-xl border-3 border-black bg-white p-4">
           <p className="text-sm font-medium text-slate-700 mb-3">Top 10 Characters</p>
           <div className="flex flex-wrap gap-2">
             {topChars.map(([c, n]) => (
-              <span key={c} className="inline-flex items-center gap-1.5 rounded-lg bg-slate-50 border border-slate-200 px-2 py-1 text-sm">
+              <span key={c} className="inline-flex items-center gap-1.5 rounded-lg bg-slate-50 border-3 border-black px-2 py-1 text-sm">
                 <span className="font-mono font-semibold text-slate-800">{c === ' ' ? '·' : c === '\n' ? '↵' : c}</span>
                 <span className="text-slate-500">{n}×</span>
               </span>

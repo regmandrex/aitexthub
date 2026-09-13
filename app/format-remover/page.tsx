@@ -225,7 +225,7 @@ const faqs: FaqItem[] = [
 ];
 
 const article = (
-  <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10"><div className="prose prose-slate max-w-none">
+  <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10"><div className="prose prose-slate max-w-none">
     <h2>Format Remover — Strip Text Formatting Online in One Click</h2>
     <p>A <strong>format remover</strong> solves the fundamental problem of formatted text in the wrong place. When you copy content from ChatGPT, Claude, Gemini, Microsoft Word, a website, or any rich text source, formatting travels with the visible words. Markdown syntax, typographic punctuation, invisible Unicode characters, and irregular spacing all come along whether you want them or not. In a different editor, these formatting artifacts show up as literal symbols, break syntax in code and data files, cause layout problems in published pages, and produce rendering inconsistencies in email clients.</p>
     <p>AI Text Cleanup Tools is a free <strong>text format remover</strong> and <strong>formatting remover</strong> that handles every layer of formatting in a single click — markdown, curly quotes, em dashes, invisible Unicode, excess spacing. No account, no upload, no limit. Paste your text, click Clean Text, and copy plain, unformatted output that works in any application. Use it to <strong>remove formatting</strong> from AI output, Word documents, PDFs, websites, and any other source.</p>
@@ -363,7 +363,7 @@ export default async function FormatRemoverPage() {
         </section>
 
         <section className="relative w-full mt-4 md:mt-6">
-          <div className="w-full max-w-none rounded-xl border border-slate-200 bg-white p-3 shadow-sm md:rounded-2xl md:p-6">
+          <div className="w-full max-w-none rounded-xl border-3 border-black bg-white p-3 shadow-neo-sm md:rounded-2xl md:p-6">
             <ToolWorkbench
               processor="chatgptTextCleaner"
               primaryLabel="Remove Formatting"

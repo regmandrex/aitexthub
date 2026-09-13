@@ -33,7 +33,7 @@ const faqs = [
 ];
 
 const article = (
-  <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10"><div className="prose prose-slate max-w-none">
+  <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10"><div className="prose prose-slate max-w-none">
     <h2>Invisible Symbol Copy and Paste — Complete Guide</h2>
     <p>
       An <strong>invisible symbol</strong> is a Unicode character with no visible glyph. It exists in the text stream as a real character — stored, counted, and transmitted like any other — but the font renderer has nothing to draw, so nothing appears on screen. When you copy an invisible symbol and paste it into a username, message, or bio, the field looks completely blank while containing valid character data.
@@ -201,7 +201,7 @@ export default function InvisibleSymbolPage() {
           <h2 className="text-xl font-semibold text-slate-900 mb-4">Frequently Asked Questions</h2>
           <div className="space-y-4">
             {faqs.map((faq, i) => (
-              <div key={i} className="bg-white rounded-lg border border-slate-200 p-4">
+              <div key={i} className="bg-white rounded-lg border-3 border-black p-4">
                 <h3 className="font-semibold text-slate-900 text-sm mb-2">{faq.question}</h3>
                 <p className="text-slate-700 text-sm">{faq.answer}</p>
               </div>

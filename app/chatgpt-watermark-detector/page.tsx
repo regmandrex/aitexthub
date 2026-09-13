@@ -145,7 +145,7 @@ const faqs: FaqItem[] = [
 ];
 
 const writeUp = (
-  <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 space-y-4 mt-10">
+  <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 space-y-4 mt-10">
     <h2 className="text-2xl font-semibold text-slate-900">
       ChatGPT Watermark Detector: Tracing the Invisible Signatures in AI-Generated Content
     </h2>
@@ -266,7 +266,7 @@ const writeUp = (
     <h3 className="text-xl font-semibold text-slate-900">Popular Tools for Detecting ChatGPT Content</h3>
     <p>Here are some tools used to detect ChatGPT-generated content:</p>
     <div className="overflow-x-auto">
-      <table className="min-w-full border border-slate-200 text-sm text-slate-700">
+      <table className="min-w-full border-3 border-black text-sm text-slate-700">
         <thead className="bg-slate-50 text-slate-700">
           <tr>
             <th className="px-3 py-2 text-left font-semibold">Tool</th>
@@ -276,31 +276,31 @@ const writeUp = (
           </tr>
         </thead>
         <tbody>
-          <tr className="border-t border-slate-200">
+          <tr className="border-t-3 border-black">
             <td className="px-3 py-2">GPTZero</td>
             <td className="px-3 py-2">Academic-focused AI detector</td>
             <td className="px-3 py-2">Moderate</td>
             <td className="px-3 py-2">Focuses on perplexity and burstiness</td>
           </tr>
-          <tr className="border-t border-slate-200">
+          <tr className="border-t-3 border-black">
             <td className="px-3 py-2">Originality.ai</td>
             <td className="px-3 py-2">Paid AI content checker</td>
             <td className="px-3 py-2">High</td>
             <td className="px-3 py-2">Designed for agencies, includes plagiarism check</td>
           </tr>
-          <tr className="border-t border-slate-200">
+          <tr className="border-t-3 border-black">
             <td className="px-3 py-2">AI Text Classifier</td>
             <td className="px-3 py-2">OpenAI&apos;s official tool (now deprecated)</td>
             <td className="px-3 py-2">Low</td>
             <td className="px-3 py-2">Was experimental and unreliable</td>
           </tr>
-          <tr className="border-t border-slate-200">
+          <tr className="border-t-3 border-black">
             <td className="px-3 py-2">Writer.com AI Detector</td>
             <td className="px-3 py-2">Content-focused detector</td>
             <td className="px-3 py-2">Medium</td>
             <td className="px-3 py-2">Good for marketing teams</td>
           </tr>
-          <tr className="border-t border-slate-200">
+          <tr className="border-t-3 border-black">
             <td className="px-3 py-2">HuggingFace Open Tools</td>
             <td className="px-3 py-2">Open-source AI models</td>
             <td className="px-3 py-2">Varies</td>
@@ -321,7 +321,7 @@ const writeUp = (
     </p>
     <p>Here is how they compare:</p>
     <div className="overflow-x-auto">
-      <table className="min-w-full border border-slate-200 text-sm text-slate-700">
+      <table className="min-w-full border-3 border-black text-sm text-slate-700">
         <thead className="bg-slate-50 text-slate-700">
           <tr>
             <th className="px-3 py-2 text-left font-semibold">Feature</th>
@@ -330,27 +330,27 @@ const writeUp = (
           </tr>
         </thead>
         <tbody>
-          <tr className="border-t border-slate-200">
+          <tr className="border-t-3 border-black">
             <td className="px-3 py-2">Accuracy</td>
             <td className="px-3 py-2">Higher (for ChatGPT)</td>
             <td className="px-3 py-2">Varies by model</td>
           </tr>
-          <tr className="border-t border-slate-200">
+          <tr className="border-t-3 border-black">
             <td className="px-3 py-2">Speed</td>
             <td className="px-3 py-2">Fast</td>
             <td className="px-3 py-2">Fast</td>
           </tr>
-          <tr className="border-t border-slate-200">
+          <tr className="border-t-3 border-black">
             <td className="px-3 py-2">Scope</td>
             <td className="px-3 py-2">GPT-specific</td>
             <td className="px-3 py-2">Multi-model</td>
           </tr>
-          <tr className="border-t border-slate-200">
+          <tr className="border-t-3 border-black">
             <td className="px-3 py-2">False Positives</td>
             <td className="px-3 py-2">Fewer</td>
             <td className="px-3 py-2">More likely</td>
           </tr>
-          <tr className="border-t border-slate-200">
+          <tr className="border-t-3 border-black">
             <td className="px-3 py-2">Best Use</td>
             <td className="px-3 py-2">Education, content auditing</td>
             <td className="px-3 py-2">Broad analysis</td>

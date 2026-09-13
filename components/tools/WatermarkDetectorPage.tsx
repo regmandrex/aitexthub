@@ -55,7 +55,7 @@ export default function WatermarkDetectorPage({ modelName, modelSlug, faqItems, 
         </section>
 
         <section className="relative w-full mt-4 md:mt-6">
-          <div className="w-full max-w-none rounded-xl border border-slate-200 bg-white p-3 shadow-sm md:rounded-2xl md:p-6">
+          <div className="w-full max-w-none rounded-xl border-3 border-black bg-white p-3 shadow-neo-sm md:rounded-2xl md:p-6">
             <WatermarkDetectorTool modelName={modelName} />
           </div>
         </section>
@@ -68,7 +68,7 @@ export default function WatermarkDetectorPage({ modelName, modelSlug, faqItems, 
           content
         ) : (
           <section className="space-y-6 mt-10">
-            <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 space-y-4">
+            <div className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 space-y-4">
               <h2 className="text-xl font-semibold text-slate-900">How it works</h2>
               <ul className="list-disc list-inside space-y-1 text-slate-700">
                 <li>Scans for hidden Unicode (e.g. zero-width spaces, non-breaking spaces).</li>
@@ -76,7 +76,7 @@ export default function WatermarkDetectorPage({ modelName, modelSlug, faqItems, 
                 <li>Reports structural patterns; does not determine authorship.</li>
               </ul>
             </div>
-            <div className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 space-y-4">
+            <div className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 space-y-4">
               <h2 className="text-xl font-semibold text-slate-900">What it can / can&apos;t do</h2>
               <ul className="list-disc list-inside space-y-1 text-slate-700">
                 <li>Can highlight formatting artifacts and hidden characters.</li>

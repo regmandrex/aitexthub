@@ -17,7 +17,7 @@ const toolSlug = 'perplexity-academic-humanizer';
 
 function createWriteUp() {
   return (
-    <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+    <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
         <h2>Perplexity Academic Humanizer: Rewrite Perplexity&apos;s Prose So It Reads Like You</h2>
         <p>This Perplexity Academic Humanizer is a free, browser-based tool that rewrites text drafted by Perplexity AI so it reads like a person wrote it. Perplexity is a search-grounded answer engine, so its output has a distinctive shape — summarized-from-sources, citation-marked, encyclopedic — and this tool reshapes that into flowing academic prose while keeping your thesis, evidence, and references intact. You remain responsible for originality and for disclosing AI use where your institution requires it.</p>

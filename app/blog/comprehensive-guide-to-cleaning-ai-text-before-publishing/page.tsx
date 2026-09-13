@@ -28,7 +28,7 @@ export default function ComprehensiveGuideCleaningAITextPage() {
         <AdSenseSlot className="w-full" />
       </div>
 
-      <div className="rounded-[28px] border border-slate-200 bg-white/70 p-6 shadow-xl shadow-slate-900/5 backdrop-blur-lg">
+      <div className="rounded-[28px] border-3 border-black bg-white/70 p-6 shadow-neo-lg shadow-slate-900/5 backdrop-blur-lg">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Publish clean AI content</p>
         <h1 className="mt-3 text-3xl font-semibold text-slate-900">Comprehensive Guide to Cleaning AI Text Before Publishing</h1>
         <p className="mt-2 text-slate-600">
@@ -42,7 +42,7 @@ export default function ComprehensiveGuideCleaningAITextPage() {
             { title: 'Platform-ready', detail: 'Stable blocks, headings, and lists across editors' },
             { title: 'Performance', detail: 'Less DOM noise and fewer layout surprises on mobile' },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-100 bg-slate-50 p-4 text-xs text-slate-700">
+            <div key={item.title} className="rounded-2xl border-2 border-black bg-slate-50 p-4 text-xs text-slate-700">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.detail}</p>
             </div>
@@ -83,7 +83,7 @@ export default function ComprehensiveGuideCleaningAITextPage() {
               body: 'WordPress, email tools, CMS editors, and dev environments can break in different ways when hidden Unicode slips through.',
             },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-200 bg-white/60 p-4 text-sm text-slate-700 shadow-sm">
+            <div key={item.title} className="rounded-2xl border-3 border-black bg-white/60 p-4 text-sm text-slate-700 shadow-neo-sm">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.body}</p>
             </div>
@@ -94,7 +94,7 @@ export default function ComprehensiveGuideCleaningAITextPage() {
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">Common issues found in AI-generated text</h2>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Invisible characters (the biggest problem)</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Zero-width spaces</li>
@@ -108,7 +108,7 @@ export default function ComprehensiveGuideCleaningAITextPage() {
               <Link href="/zero-width-space-remover">Zero-Width Space Remover</Link>.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Formatting and structure problems</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Inconsistent heading levels</li>
@@ -126,7 +126,7 @@ export default function ComprehensiveGuideCleaningAITextPage() {
 
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">The full AI text cleaning workflow (step by step)</h2>
-        <div className="rounded-2xl border border-brand-100 bg-brand-50 p-5 text-sm text-brand-900 shadow-sm">
+        <div className="rounded-2xl border border-brand-100 bg-brand-50 p-5 text-sm text-brand-900 shadow-neo-sm">
           <p className="font-semibold text-brand-800">Reliable publishing pipeline</p>
           <ol className="mt-2 list-decimal space-y-2 pl-5 text-slate-800">
             <li>
@@ -158,7 +158,7 @@ export default function ComprehensiveGuideCleaningAITextPage() {
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">Cleaning AI text for different publishing contexts</h2>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/70 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/70 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">SEO content</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Cleaner text improves keyword accuracy and internal linking.</li>
@@ -166,7 +166,7 @@ export default function ComprehensiveGuideCleaningAITextPage() {
               <li>Improved readability supports engagement metrics.</li>
             </ul>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/70 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/70 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">WordPress</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Clean externally, then paste into Code/HTML view.</li>
@@ -174,7 +174,7 @@ export default function ComprehensiveGuideCleaningAITextPage() {
               <li>This avoids broken blocks and layout shifts.</li>
             </ul>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/70 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/70 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Email marketing</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Dirty text can trigger spam filters and break responsive layouts.</li>
@@ -182,7 +182,7 @@ export default function ComprehensiveGuideCleaningAITextPage() {
               <li>Always remove hidden Unicode before pasting.</li>
             </ul>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/70 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/70 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Developers and documentation</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Hidden Unicode can break Markdown rendering.</li>
@@ -196,7 +196,7 @@ export default function ComprehensiveGuideCleaningAITextPage() {
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">Manual vs automated AI text cleaning</h2>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/70 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/70 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Manual cleaning</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Gives full control</li>
@@ -205,7 +205,7 @@ export default function ComprehensiveGuideCleaningAITextPage() {
               <li>Not scalable for regular publishing</li>
             </ul>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/70 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/70 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Automated cleaning</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Detects invisible characters reliably</li>
@@ -258,7 +258,7 @@ export default function ComprehensiveGuideCleaningAITextPage() {
               a: 'If the content is public-facing or performance-sensitive, yes. A consistent pipeline prevents recurring issues.',
             },
           ].map((item) => (
-            <div key={item.q} className="rounded-2xl border border-slate-200 bg-white/60 p-4 text-sm text-slate-700 shadow-sm">
+            <div key={item.q} className="rounded-2xl border-3 border-black bg-white/60 p-4 text-sm text-slate-700 shadow-neo-sm">
               <p className="font-semibold text-slate-900">{item.q}</p>
               <p className="mt-1">{item.a}</p>
             </div>

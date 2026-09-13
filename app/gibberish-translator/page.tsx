@@ -24,7 +24,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
 function createWriteUp() {
   return (
-    <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+    <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
         <h2>Gibberish Translator: Encode and Decode Gibberish</h2>
         <p>A Gibberish translator is an online tool that encodes English (or other text) into Gibberish—a playful "language" where syllables or sounds are inserted so words sound like nonsense but can be decoded back. Kids and groups often use Gibberish as a secret code or game. You type your message, encode it to Gibberish, and share it; someone else can decode it back to readable text with the same tool or rules. Some tools also decode Gibberish back to English.</p>

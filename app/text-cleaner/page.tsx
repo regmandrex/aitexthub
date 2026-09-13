@@ -180,7 +180,7 @@ const faqs: FaqItem[] = [
 ];
 
 const article = (
-  <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+  <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
   <div className="prose prose-slate max-w-none text-sm prose-headings:font-semibold prose-headings:text-slate-900 prose-p:text-slate-700 prose-li:text-slate-700">
     <h2>Text Cleaner — Clean Text Online Free in One Click</h2>
     <p>A <strong>text cleaner</strong> removes the invisible and unwanted characters that accumulate in text during copy-paste operations from AI tools, word processors, websites, and PDFs. Every time you copy text from one application and paste it into another, formatting artifacts follow — zero-width spaces, non-breaking spaces, markdown symbols, curly quotes, em dashes — and cause problems ranging from cosmetic inconsistencies to outright errors in code and data systems. A <strong>text cleaner online</strong> strips all of these in one click and returns plain, neutral text that behaves consistently in any destination.</p>
@@ -336,7 +336,7 @@ export default async function TextCleanerPage() {
         </section>
 
         <section className="relative w-full mt-4 md:mt-6">
-          <div className="w-full max-w-none rounded-xl border border-slate-200 bg-white p-3 shadow-sm md:rounded-2xl md:p-6">
+          <div className="w-full max-w-none rounded-xl border-3 border-black bg-white p-3 shadow-neo-sm md:rounded-2xl md:p-6">
             <ToolWorkbench
               processor="chatgptTextCleaner"
               primaryLabel="Clean Text"

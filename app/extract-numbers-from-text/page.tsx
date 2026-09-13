@@ -198,7 +198,7 @@ const faqs: FaqItem[] = [
 ];
 
 const writeUp = (
-  <section className="rounded-2xl border border-slate-200 bg-white p-8 shadow-sm md:p-10 space-y-6 mt-10">
+  <section className="rounded-2xl border-3 border-black bg-white p-8 shadow-neo-sm md:p-10 space-y-6 mt-10">
     <div className="prose prose-slate max-w-none">
       <h2 className="text-2xl font-semibold text-slate-900">Extract Numbers From Text: Complete Guide to Number Extraction</h2>
       

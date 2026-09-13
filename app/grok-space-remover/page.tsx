@@ -172,7 +172,7 @@ const faqs: FaqItem[] = [
 ];
 
 const writeUp = (
-  <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 space-y-4 mt-10">
+  <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 space-y-4 mt-10">
     <h2 className="text-2xl font-semibold text-slate-900">Grok Space Remover: Clean Text Faster, Smarter, and Without Effort</h2>
 
     <h3 className="text-xl font-semibold text-slate-900">Introduction to Grok Space Remover</h3>

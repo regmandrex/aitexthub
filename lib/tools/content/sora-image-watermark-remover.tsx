@@ -3,7 +3,7 @@ import type { ToolContent } from './index';
 
 function WriteUp() {
   return (
-    <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+    <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
         <h2>Sora Image Watermark Remover: Strip OpenAI Sora C2PA Metadata and Provenance Signals</h2>
         <p>The Sora Image Watermark Remover is a free, browser-based tool that removes C2PA provenance manifests, XMP attribution fields, IPTC records, and any additional metadata signals embedded by OpenAI in images and frames exported from the Sora video generation platform. Every still image extracted from a Sora video "” as well as any image generated as part of Sora's storyboarding workflow "” carries machine-readable watermarks that identify OpenAI as the originating system. This tool strips those markers, returning a clean image file with identical visual content and no AI provenance metadata.</p>

@@ -185,7 +185,7 @@ export async function generateMetadata() {
 
 export default function DeepseekWatermarkDetectorPage() {
   const writeUp = (
-    <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 space-y-4 mt-10">
+    <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 space-y-4 mt-10">
       <h2 className="text-2xl font-semibold text-slate-900">DeepSeek Watermark Detector: What It Is, How It Works, and How to Use It</h2>
       <p>
         Let&apos;s set the scene. You have got a chunk of text - maybe a student essay, a blog draft, a support ticket reply, or a &quot;totally

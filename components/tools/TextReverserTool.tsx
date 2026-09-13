@@ -34,7 +34,7 @@ export function TextReverserTool() {
       </div>
 
       <button onClick={() => { navigator.clipboard.writeText(output); setCopied(true); setTimeout(() => setCopied(false), 1500); }} disabled={!output}
-        className="px-4 py-2 text-sm font-medium rounded-xl border border-slate-200 bg-white hover:bg-slate-50 disabled:opacity-40">
+        className="px-4 py-2 text-sm font-medium rounded-xl border-3 border-black bg-white hover:bg-slate-50 disabled:opacity-40">
         {copied ? 'Copied!' : 'Copy Output'}
       </button>
     </div>

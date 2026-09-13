@@ -28,7 +28,7 @@ export default function RemoveChatGPTWatermarksAndHiddenCharactersPage() {
         <AdSenseSlot className="w-full" />
       </div>
 
-      <div className="rounded-[28px] border border-slate-200 bg-white/70 p-6 shadow-xl shadow-slate-900/5 backdrop-blur-lg">
+      <div className="rounded-[28px] border-3 border-black bg-white/70 p-6 shadow-neo-lg shadow-slate-900/5 backdrop-blur-lg">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Clean hidden AI artifacts</p>
         <h1 className="mt-3 text-3xl font-semibold text-slate-900">How to Remove ChatGPT Watermarks and Hidden Characters</h1>
         <p className="mt-2 text-slate-600">
@@ -42,7 +42,7 @@ export default function RemoveChatGPTWatermarksAndHiddenCharactersPage() {
             { title: 'Remove', detail: 'Normalize and replace unsafe characters safely' },
             { title: 'Publish', detail: 'Rebuild structure cleanly for SEO and UX' },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-100 bg-slate-50 p-4 text-xs text-slate-700">
+            <div key={item.title} className="rounded-2xl border-2 border-black bg-slate-50 p-4 text-xs text-slate-700">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.detail}</p>
             </div>
@@ -74,7 +74,7 @@ export default function RemoveChatGPTWatermarksAndHiddenCharactersPage() {
           copy text across rich editors, when markdown is flattened, or when Unicode spacing and punctuation variants slip in.
         </p>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Common hidden characters</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Zero-width space (ZWSP)</li>
@@ -85,7 +85,7 @@ export default function RemoveChatGPTWatermarksAndHiddenCharactersPage() {
               <li>Unicode punctuation variants</li>
             </ul>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Why they matter</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Break layouts and introduce phantom spacing</li>
@@ -125,7 +125,7 @@ export default function RemoveChatGPTWatermarksAndHiddenCharactersPage() {
               body: 'WordPress blocks, email clients, CMS editors, and markdown parsers can behave unpredictably with hidden characters.',
             },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-200 bg-white/60 p-4 text-sm text-slate-700 shadow-sm">
+            <div key={item.title} className="rounded-2xl border-3 border-black bg-white/60 p-4 text-sm text-slate-700 shadow-neo-sm">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.body}</p>
             </div>
@@ -139,7 +139,7 @@ export default function RemoveChatGPTWatermarksAndHiddenCharactersPage() {
           Visual symptoms (weird spacing, broken paste behavior, layout shifts) can hint at hidden Unicode, but reliable detection requires
           scanning characters and inspecting their code points.
         </p>
-        <div className="rounded-2xl border border-brand-100 bg-brand-50 p-5 text-sm text-brand-900 shadow-sm">
+        <div className="rounded-2xl border border-brand-100 bg-brand-50 p-5 text-sm text-brand-900 shadow-neo-sm">
           <p className="font-semibold text-brand-800">Recommended tools</p>
           <ul className="mt-2 list-disc space-y-1 pl-5 text-slate-800">
             <li>
@@ -157,7 +157,7 @@ export default function RemoveChatGPTWatermarksAndHiddenCharactersPage() {
 
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">Step-by-step: how to remove ChatGPT watermarks and hidden characters</h2>
-        <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6 text-sm text-slate-700 shadow-sm">
+        <div className="rounded-2xl border-3 border-black bg-slate-50 p-6 text-sm text-slate-700 shadow-neo-sm">
           <ol className="list-decimal space-y-2 pl-5">
             <li>
               <strong>Export text to a neutral environment.</strong> Avoid cleaning inside WordPress visual editors, Google Docs, or email tools.
@@ -198,7 +198,7 @@ export default function RemoveChatGPTWatermarksAndHiddenCharactersPage() {
               body: 'Hidden Unicode can break Markdown, YAML/JSON, and linting. Clean text before committing to repos or CI pipelines.',
             },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-200 bg-white/70 p-4 text-sm text-slate-700 shadow-sm">
+            <div key={item.title} className="rounded-2xl border-3 border-black bg-white/70 p-4 text-sm text-slate-700 shadow-neo-sm">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.body}</p>
             </div>
@@ -209,7 +209,7 @@ export default function RemoveChatGPTWatermarksAndHiddenCharactersPage() {
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">Manual vs automated removal</h2>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/70 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/70 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Manual removal (high risk)</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Misses invisible characters easily</li>
@@ -217,7 +217,7 @@ export default function RemoveChatGPTWatermarksAndHiddenCharactersPage() {
               <li>Error-prone and time-consuming</li>
             </ul>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/70 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/70 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Automated removal (best practice)</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Detects invisible Unicode reliably</li>
@@ -272,7 +272,7 @@ export default function RemoveChatGPTWatermarksAndHiddenCharactersPage() {
               a: 'Yes. Proper cleaning preserves meaning while replacing unsafe characters and normalizing whitespace.',
             },
           ].map((item) => (
-            <div key={item.q} className="rounded-2xl border border-slate-200 bg-white/60 p-4 text-sm text-slate-700 shadow-sm">
+            <div key={item.q} className="rounded-2xl border-3 border-black bg-white/60 p-4 text-sm text-slate-700 shadow-neo-sm">
               <p className="font-semibold text-slate-900">{item.q}</p>
               <p className="mt-1">{item.a}</p>
             </div>

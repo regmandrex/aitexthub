@@ -150,7 +150,7 @@ const faqs: FaqItem[] = [
 ];
 
 const article = (
-  <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10"><div className="prose prose-slate max-w-none">
+  <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10"><div className="prose prose-slate max-w-none">
     <h2>Remove Text Formatting — Strip Formatting from Any Text Online Free</h2>
     <p>Every time you copy text from an AI tool, word processor, website, or PDF, formatting travels with the visible words. <strong>Remove text formatting</strong> is the process of stripping those formatting layers — markdown syntax, typographic special characters, and invisible Unicode characters — so the text arrives clean and neutral in your destination application. Without a dedicated tool to <strong>remove text formatting</strong>, you are left with literal asterisks in your CMS, broken syntax in your code files, layout issues in your published pages, and invisible characters causing unpredictable behavior wherever the text lands.</p>
     <p>AI Text Cleanup Tools is a free <strong>remove text formatting</strong> tool that strips every formatting layer in a single click. Paste your text from any source, click Clean Text, and copy the clean, formatting-free result. No account, no upload, no limit. Use it to <strong>remove text formatting</strong> from AI output, Word documents, Google Docs, websites, emails, and any other formatted source.</p>
@@ -288,7 +288,7 @@ export default async function RemoveTextFormattingPage() {
         </section>
 
         <section className="relative w-full mt-4 md:mt-6">
-          <div className="w-full max-w-none rounded-xl border border-slate-200 bg-white p-3 shadow-sm md:rounded-2xl md:p-6">
+          <div className="w-full max-w-none rounded-xl border-3 border-black bg-white p-3 shadow-neo-sm md:rounded-2xl md:p-6">
             <ToolWorkbench
               processor="chatgptTextCleaner"
               primaryLabel="Remove Formatting"

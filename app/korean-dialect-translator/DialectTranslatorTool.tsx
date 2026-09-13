@@ -144,7 +144,7 @@ export function DialectTranslatorTool() {
           value={input}
           onChange={(e) => setInput(e.target.value)}
           placeholder="예) 안녕하세요. 오늘 뭐 해요?"
-          className="w-full min-h-[120px] rounded-lg border border-slate-300 p-3 text-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
+          className="w-full min-h-[120px] rounded-lg border-2 border-black p-3 text-sm focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500"
         />
       </div>
 
@@ -159,7 +159,7 @@ export function DialectTranslatorTool() {
               className={`px-3 py-1.5 text-sm rounded-lg border transition ${
                 region === r
                   ? 'bg-blue-600 text-white border-blue-600'
-                  : 'bg-white text-slate-700 border-slate-300 hover:bg-slate-50'
+                  : 'bg-white text-slate-700 border-black hover:bg-slate-50'
               }`}
             >
               {REGION_LABELS[r]}
@@ -179,7 +179,7 @@ export function DialectTranslatorTool() {
         <button
           type="button"
           onClick={handleClear}
-          className="px-4 py-2 bg-white text-slate-700 border border-slate-300 rounded-lg text-sm font-medium hover:bg-slate-50 transition"
+          className="px-4 py-2 bg-white text-slate-700 border-2 border-black rounded-lg text-sm font-medium hover:bg-slate-50 transition"
         >
           지우기
         </button>
@@ -191,13 +191,13 @@ export function DialectTranslatorTool() {
           value={output}
           readOnly
           placeholder="번역된 사투리 결과가 여기에 표시됩니다..."
-          className="w-full min-h-[120px] rounded-lg border border-slate-300 bg-slate-50 p-3 text-sm"
+          className="w-full min-h-[120px] rounded-lg border-2 border-black bg-slate-50 p-3 text-sm"
         />
         <button
           type="button"
           onClick={handleCopy}
           disabled={!output}
-          className="mt-2 px-3 py-1.5 bg-white text-slate-700 border border-slate-300 rounded-lg text-sm font-medium hover:bg-slate-50 transition disabled:opacity-50 disabled:cursor-not-allowed"
+          className="mt-2 px-3 py-1.5 bg-white text-slate-700 border-2 border-black rounded-lg text-sm font-medium hover:bg-slate-50 transition disabled:opacity-50 disabled:cursor-not-allowed"
         >
           {copied ? '복사됨!' : '결과 복사'}
         </button>

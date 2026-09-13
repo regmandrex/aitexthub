@@ -28,7 +28,7 @@ export default function MakeChatGPTTextLookHumanPage() {
         <AdSenseSlot className="w-full" />
       </div>
 
-      <div className="rounded-[28px] border border-slate-200 bg-white/70 p-6 shadow-xl shadow-slate-900/5 backdrop-blur-lg">
+      <div className="rounded-[28px] border-3 border-black bg-white/70 p-6 shadow-neo-lg shadow-slate-900/5 backdrop-blur-lg">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Clean first, refine second</p>
         <h1 className="mt-3 text-3xl font-semibold text-slate-900">How to Make ChatGPT Text Look Human</h1>
         <p className="mt-2 text-slate-600">
@@ -42,7 +42,7 @@ export default function MakeChatGPTTextLookHumanPage() {
             { title: 'Rewriting', detail: 'Reduce robotic rhythm and filler' },
             { title: 'SEO', detail: 'Preserve intent and keep UX stable' },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-100 bg-slate-50 p-4 text-xs text-slate-700">
+            <div key={item.title} className="rounded-2xl border-2 border-black bg-slate-50 p-4 text-xs text-slate-700">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.detail}</p>
             </div>
@@ -62,7 +62,7 @@ export default function MakeChatGPTTextLookHumanPage() {
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">The two real problems with raw ChatGPT text</h2>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">1) Technical issues (not visible, but felt)</p>
             <p className="mt-2">Invisible Unicode characters, broken spacing, awkward wrapping, and formatting instability can create:</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
@@ -72,7 +72,7 @@ export default function MakeChatGPTTextLookHumanPage() {
             </ul>
             <p className="mt-3">This is solved by cleaning, not rewriting.</p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">2) Stylistic patterns (visible and noticeable)</p>
             <p className="mt-2">ChatGPT often uses uniform sentence length, predictable transitions, symmetrical paragraphs, and generic phrasing.</p>
             <p className="mt-3">This is solved by light rewriting, not aggressive paraphrasing.</p>
@@ -111,7 +111,7 @@ export default function MakeChatGPTTextLookHumanPage() {
         <h2 className="text-2xl font-semibold text-slate-900">Step 3: the right way to rewrite ChatGPT text</h2>
         <p className="text-slate-700">Rewriting should be minimal and intentional, not destructive.</p>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">What to rewrite (high impact)</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Openings and closings</li>
@@ -127,7 +127,7 @@ export default function MakeChatGPTTextLookHumanPage() {
               <li>This article will explore</li>
             </ul>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">What not to rewrite</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Technical explanations that require precision</li>
@@ -142,7 +142,7 @@ export default function MakeChatGPTTextLookHumanPage() {
 
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">Cleaning vs rewriting: clear separation of roles</h2>
-        <div className="rounded-2xl border border-slate-200 bg-white/70 p-5 text-sm text-slate-700 shadow-sm">
+        <div className="rounded-2xl border-3 border-black bg-white/70 p-5 text-sm text-slate-700 shadow-neo-sm">
           <table>
             <thead>
               <tr>
@@ -199,7 +199,7 @@ export default function MakeChatGPTTextLookHumanPage() {
               body: 'One or two lines of judgment, nuance, or experience increases perceived humanity without adding stories everywhere.',
             },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-200 bg-white/60 p-4 text-sm text-slate-700 shadow-sm">
+            <div key={item.title} className="rounded-2xl border-3 border-black bg-white/60 p-4 text-sm text-slate-700 shadow-neo-sm">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.body}</p>
             </div>
@@ -221,7 +221,7 @@ export default function MakeChatGPTTextLookHumanPage() {
 
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">The ideal humanization workflow</h2>
-        <div className="rounded-2xl border border-brand-100 bg-brand-50 p-5 text-sm text-brand-900 shadow-sm">
+        <div className="rounded-2xl border border-brand-100 bg-brand-50 p-5 text-sm text-brand-900 shadow-neo-sm">
           <ol className="list-decimal space-y-2 pl-5 text-slate-800">
             <li>Generate AI content</li>
             <li>Clean invisible characters and spacing</li>
@@ -239,7 +239,7 @@ export default function MakeChatGPTTextLookHumanPage() {
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">When to rewrite more (and when not to)</h2>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Rewrite more when</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>It represents a personal brand</li>
@@ -248,7 +248,7 @@ export default function MakeChatGPTTextLookHumanPage() {
               <li>It still feels generic after cleaning</li>
             </ul>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Avoid heavy rewriting when</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Content is technical or instructional</li>
@@ -283,7 +283,7 @@ export default function MakeChatGPTTextLookHumanPage() {
             { q: 'Can human-looking AI text still rank?', a: 'Yes. Rankings depend on usefulness, structure, and experience.' },
             { q: 'Is rewriting risky for SEO?', a: 'Only if you change intent or keywords unnecessarily.' },
           ].map((item) => (
-            <div key={item.q} className="rounded-2xl border border-slate-200 bg-white/60 p-4 text-sm text-slate-700 shadow-sm">
+            <div key={item.q} className="rounded-2xl border-3 border-black bg-white/60 p-4 text-sm text-slate-700 shadow-neo-sm">
               <p className="font-semibold text-slate-900">{item.q}</p>
               <p className="mt-1">{item.a}</p>
             </div>

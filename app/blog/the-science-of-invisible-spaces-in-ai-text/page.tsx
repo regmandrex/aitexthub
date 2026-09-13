@@ -28,7 +28,7 @@ export default function ScienceInvisibleSpacesPage() {
         <AdSenseSlot className="w-full" />
       </div>
 
-      <div className="rounded-[28px] border border-slate-200 bg-white/70 p-6 shadow-xl shadow-slate-900/5 backdrop-blur-lg">
+      <div className="rounded-[28px] border-3 border-black bg-white/70 p-6 shadow-neo-lg shadow-slate-900/5 backdrop-blur-lg">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Invisible Unicode, real consequences</p>
         <h1 className="mt-3 text-3xl font-semibold text-slate-900">The Science of Invisible Spaces in AI Text</h1>
         <p className="mt-2 text-slate-600">
@@ -42,7 +42,7 @@ export default function ScienceInvisibleSpacesPage() {
             { title: 'SEO', detail: 'Invisible Unicode can disrupt parsing and anchors' },
             { title: 'Editors', detail: 'Hidden spaces break CMS blocks and layouts' },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-100 bg-slate-50 p-4 text-xs text-slate-700">
+            <div key={item.title} className="rounded-2xl border-2 border-black bg-slate-50 p-4 text-xs text-slate-700">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.detail}</p>
             </div>
@@ -62,7 +62,7 @@ export default function ScienceInvisibleSpacesPage() {
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">Common types of invisible spaces found in AI text</h2>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">1. Non-breaking space (NBSP)</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Prevents line breaks</li>
@@ -72,7 +72,7 @@ export default function ScienceInvisibleSpacesPage() {
             </ul>
             <p className="mt-3">NBSP looks like a normal space but behaves very differently.</p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">2. Zero-width space (ZWSP)</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Takes no visible space</li>
@@ -82,7 +82,7 @@ export default function ScienceInvisibleSpacesPage() {
             </ul>
             <p className="mt-3">ZWSP is one of the most harmful invisible characters in web publishing.</p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">3. Zero-width non-joiner (ZWNJ)</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Affects how characters connect</li>
@@ -91,7 +91,7 @@ export default function ScienceInvisibleSpacesPage() {
               <li>Breaks keyword parsing</li>
             </ul>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">4. Soft hyphen</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Appears only when text wraps</li>
@@ -100,7 +100,7 @@ export default function ScienceInvisibleSpacesPage() {
               <li>Often invisible until responsive layouts activate</li>
             </ul>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm md:col-span-2">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm md:col-span-2">
             <p className="font-semibold text-slate-900">5. Directional markers (LTR/RTL)</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Control text direction</li>
@@ -138,7 +138,7 @@ export default function ScienceInvisibleSpacesPage() {
               body: 'Copying between AI tools and editors can preserve invisible spaces. Once introduced, they replicate silently.',
             },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-200 bg-white/60 p-4 text-sm text-slate-700 shadow-sm">
+            <div key={item.title} className="rounded-2xl border-3 border-black bg-white/60 p-4 text-sm text-slate-700 shadow-neo-sm">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.body}</p>
             </div>
@@ -157,19 +157,19 @@ export default function ScienceInvisibleSpacesPage() {
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">Invisible spaces and Core Web Vitals</h2>
         <div className="grid gap-4 md:grid-cols-3">
-          <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">LCP</p>
             <p className="mt-2">
               Invisible spaces increase text layout complexity, which can delay rendering for large text blocks on content-heavy pages.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">CLS</p>
             <p className="mt-2">
               Hidden whitespace changes wrapping and can cause reflows after font load, triggering late layout shifts that are hard to diagnose.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">INP</p>
             <p className="mt-2">
               Dirty text inflates DOM complexity and slows layout recalculation during scroll and interaction, especially on mobile.
@@ -231,7 +231,7 @@ export default function ScienceInvisibleSpacesPage() {
 
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">The correct way to remove invisible spaces</h2>
-        <div className="rounded-2xl border border-brand-100 bg-brand-50 p-5 text-sm text-brand-900 shadow-sm">
+        <div className="rounded-2xl border border-brand-100 bg-brand-50 p-5 text-sm text-brand-900 shadow-neo-sm">
           <p className="font-semibold text-brand-800">Safe removal steps</p>
           <ol className="mt-2 list-decimal space-y-2 pl-5 text-slate-800">
             <li>
@@ -289,7 +289,7 @@ export default function ScienceInvisibleSpacesPage() {
             { q: 'Should I clean old content?', a: 'Start with high-traffic and long-form pages first.' },
             { q: 'Does Google detect invisible spaces?', a: 'Google detects their effects (UX and parsing), not a “penalty” for the characters themselves.' },
           ].map((item) => (
-            <div key={item.q} className="rounded-2xl border border-slate-200 bg-white/60 p-4 text-sm text-slate-700 shadow-sm">
+            <div key={item.q} className="rounded-2xl border-3 border-black bg-white/60 p-4 text-sm text-slate-700 shadow-neo-sm">
               <p className="font-semibold text-slate-900">{item.q}</p>
               <p className="mt-1">{item.a}</p>
             </div>

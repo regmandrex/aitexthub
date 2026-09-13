@@ -40,7 +40,7 @@ const faqs = [
 ];
 
 const article = (
-  <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10"><div className="prose prose-slate max-w-none">
+  <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10"><div className="prose prose-slate max-w-none">
     <h2>Blank Space Copy and Paste — Complete Guide to Invisible Text Characters</h2>
     <p>
       <strong>Blank space copy and paste</strong> refers to copying an invisible Unicode character to your clipboard and pasting it anywhere you need blank or empty-looking text. The copied character is real data — it exists in the text stream — but renders as nothing on screen. This means a username field filled with blank space characters appears empty while technically containing valid characters. A message containing only blank space characters looks blank but sends successfully. This is the foundation of all <strong>invisible text copy and paste</strong> use cases across gaming, social media, and messaging apps.
@@ -265,7 +265,7 @@ export default function InvisibleTextCopyPastePage() {
         </div>
         <div className="mt-6 space-y-4">
           {faqs.map((faq, i) => (
-            <div key={i} className="rounded-lg border border-slate-200 bg-white p-4">
+            <div key={i} className="rounded-lg border-3 border-black bg-white p-4">
               <h3 className="text-sm font-semibold text-slate-900 mb-2">{faq.question}</h3>
               <p className="text-sm text-slate-700">{faq.answer}</p>
             </div>

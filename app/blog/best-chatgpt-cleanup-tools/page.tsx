@@ -29,7 +29,7 @@ export default function BestAITextCleanupToolsPage() {
         <AdSenseSlot className="w-full" />
       </div>
 
-      <div className="rounded-[28px] border border-slate-200 bg-white/70 p-6 shadow-xl shadow-slate-900/5 backdrop-blur-lg">
+      <div className="rounded-[28px] border-3 border-black bg-white/70 p-6 shadow-neo-lg shadow-slate-900/5 backdrop-blur-lg">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">
           Clean ChatGPT text the right way
         </p>
@@ -65,7 +65,7 @@ export default function BestAITextCleanupToolsPage() {
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">The core tools in your cleanup stack</h2>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/70 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/70 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">1. ChatGPT Text Cleaner (hub homepage)</p>
             <p className="mt-2">
               The homepage tool at{' '}
@@ -73,21 +73,21 @@ export default function BestAITextCleanupToolsPage() {
               raw ChatGPT output, clean it, and then move into your CMS with a stable baseline.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/70 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/70 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">2. ChatGPT Space Remover</p>
             <p className="mt-2">
               Use <Link href="/chatgpt-space-remover">ChatGPT Space Remover</Link> when spacing itself is broken—multiple spaces, ragged
               paragraphs, and copy-paste artifacts from PDFs or chat windows. It leaves wording untouched and focuses on making text predictable.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/70 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/70 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">3. Invisible Character Detector</p>
             <p className="mt-2">
               After cleaning, run the <Link href="/invisible-character-detector">Invisible Character Detector</Link> on critical pages or templates.
               It highlights hidden Unicode that can still break search, layout, or analytics.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/70 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/70 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">4. ChatGPT Watermark Remover (formatting only)</p>
             <p className="mt-2">
               When you care about AI “watermarks” in the practical sense—strange spacing, invisible junk, inconsistent breaks—use the{' '}

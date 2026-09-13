@@ -175,7 +175,7 @@ const faqs: FaqItem[] = [
 ];
 
 const article = (
-  <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10"><div className="prose prose-slate max-w-none">
+  <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10"><div className="prose prose-slate max-w-none">
     <h2>Clean Paste — Paste Clean Text Every Time</h2>
     <p><strong>Clean paste</strong> is the practice of cleaning text before pasting it into your target application. The standard copy-paste operation does not filter the text you copy — everything travels: the visible words, the invisible Unicode characters, the markdown syntax, the curly quotes, the non-breaking spaces. A <strong>clean paste</strong> workflow inserts one step between copying from the source and pasting into the destination: running the text through a cleaner that removes all of the artifacts that should not be there.</p>
     <p>AI Text Cleanup Tools provides a free <strong>cleanpaste</strong> tool — also known as a clean paste tool — that handles all categories of text contamination in a single click. Paste your text from any source, click Clean Text, and copy the clean result ready for your final destination.</p>
@@ -332,7 +332,7 @@ export default async function CleanPastePage() {
         </section>
 
         <section className="relative w-full mt-4 md:mt-6">
-          <div className="w-full max-w-none rounded-xl border border-slate-200 bg-white p-3 shadow-sm md:rounded-2xl md:p-6">
+          <div className="w-full max-w-none rounded-xl border-3 border-black bg-white p-3 shadow-neo-sm md:rounded-2xl md:p-6">
             <ToolWorkbench
               processor="chatgptTextCleaner"
               primaryLabel="Clean Text"

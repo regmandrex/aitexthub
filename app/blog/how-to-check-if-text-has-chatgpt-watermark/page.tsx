@@ -23,7 +23,7 @@ export default function HowToCheckIfTextHasChatGptWatermarkPage() {
       <div className="ad-slot"><AdSenseSlot className="w-full" /></div>
 
       {/* Hero card */}
-      <div className="rounded-[28px] border border-slate-200 bg-white/70 p-6 shadow-xl shadow-slate-900/5 backdrop-blur-lg">
+      <div className="rounded-[28px] border-3 border-black bg-white/70 p-6 shadow-neo-lg shadow-slate-900/5 backdrop-blur-lg">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Complete Checking Guide</p>
         <h1 className="mt-3 text-3xl font-semibold text-slate-900">How to Check If a Text Has a ChatGPT Watermark</h1>
         <p className="mt-2 text-slate-600">
@@ -37,7 +37,7 @@ export default function HowToCheckIfTextHasChatGptWatermarkPage() {
             { title: 'What results mean', detail: 'Interpreting detection output accurately' },
             { title: 'Next steps', detail: 'What to do based on what you find' },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-100 bg-slate-50 p-4 text-xs text-slate-700">
+            <div key={item.title} className="rounded-2xl border-2 border-black bg-slate-50 p-4 text-xs text-slate-700">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.detail}</p>
             </div>
@@ -52,7 +52,7 @@ export default function HowToCheckIfTextHasChatGptWatermarkPage() {
           are two types of markers that can be found in AI-generated text:
         </p>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Type 1: Invisible Unicode characters</p>
             <p className="mt-2">
               Zero-width spaces (U+200B), byte-order marks (U+FEFF), zero-width non-joiners (U+200C), and similar
@@ -60,7 +60,7 @@ export default function HowToCheckIfTextHasChatGptWatermarkPage() {
               &mdash; either present or not.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Type 2: Statistical AI patterns</p>
             <p className="mt-2">
               Low perplexity (predictable word choices), low burstiness (uniform sentence length), and characteristic
@@ -81,7 +81,7 @@ export default function HowToCheckIfTextHasChatGptWatermarkPage() {
           <Link href="/chatgpt-watermark-detector">ChatGPT Watermark Detector</Link> combines invisible character scanning
           with statistical pattern analysis to give you a complete picture.
         </p>
-        <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+        <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
           <p className="font-semibold text-slate-900">How to use it</p>
           <ol className="mt-2 list-decimal space-y-2 pl-5">
             <li>Go to the <Link href="/chatgpt-watermark-detector">ChatGPT Watermark Detector</Link> page.</li>
@@ -105,7 +105,7 @@ export default function HowToCheckIfTextHasChatGptWatermarkPage() {
           <Link href="/invisible-character-detector">Invisible Character Detector</Link> provides character-level reporting.
         </p>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">What this method shows</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Each invisible character&apos;s Unicode code point</li>
@@ -115,7 +115,7 @@ export default function HowToCheckIfTextHasChatGptWatermarkPage() {
               <li>Total count of each type found</li>
             </ul>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">When to use this method</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>When you need to verify a specific character type is present or absent</li>
@@ -149,7 +149,7 @@ export default function HowToCheckIfTextHasChatGptWatermarkPage() {
           For users with technical backgrounds or those who need to verify results independently, manual inspection using
           a code editor is a reliable approach.
         </p>
-        <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+        <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
           <p className="font-semibold text-slate-900">VS Code regex search method</p>
           <ol className="mt-2 list-decimal space-y-2 pl-5">
             <li>Paste the text into a new VS Code file.</li>
@@ -180,7 +180,7 @@ export default function HowToCheckIfTextHasChatGptWatermarkPage() {
           a reference language model, calculate how predictable each word choice is, and produce a probability estimate
           that the text was AI-generated.
         </p>
-        <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+        <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
           <p className="font-semibold text-slate-900">Interpreting statistical AI detector results</p>
           <ul className="mt-2 list-disc space-y-2 pl-5">
             <li>
@@ -209,7 +209,7 @@ export default function HowToCheckIfTextHasChatGptWatermarkPage() {
           For the most thorough check, combine multiple methods. Here is the workflow that covers all bases:
         </p>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Quick check (2 minutes)</p>
             <ol className="mt-2 list-decimal space-y-1 pl-5">
               <li>Paste into <Link href="/chatgpt-watermark-detector">ChatGPT Watermark Detector</Link></li>
@@ -218,7 +218,7 @@ export default function HowToCheckIfTextHasChatGptWatermarkPage() {
               <li>Done</li>
             </ol>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Thorough check (10 minutes)</p>
             <ol className="mt-2 list-decimal space-y-1 pl-5">
               <li>Run ChatGPT Watermark Detector</li>
@@ -237,21 +237,21 @@ export default function HowToCheckIfTextHasChatGptWatermarkPage() {
           Once you have checked your text, the appropriate next step depends on what you found and why you are checking.
         </p>
         <div className="grid gap-4 md:grid-cols-3">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Found invisible characters</p>
             <p className="mt-2">
               Remove them with the ChatGPT Watermark Remover or the AI Text Cleanup Tools main cleaner. Re-verify after
               removal. This has no effect on the visible text.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">High AI pattern score</p>
             <p className="mt-2">
               Edit the text to add stylistic variety: vary sentence lengths, replace AI-typical vocabulary, add
               personal observations. The invisible character removal alone will not significantly change this score.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Nothing found / low AI score</p>
             <p className="mt-2">
               Your text is clean of detectable watermarks. For academic contexts, keep documentation of your

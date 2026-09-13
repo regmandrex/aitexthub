@@ -28,7 +28,7 @@ export default function WhyAiWatermarksMatterPage() {
         <AdSenseSlot className="w-full" />
       </div>
 
-      <div className="rounded-[28px] border border-slate-200 bg-white/70 p-6 shadow-xl shadow-slate-900/5 backdrop-blur-lg">
+      <div className="rounded-[28px] border-3 border-black bg-white/70 p-6 shadow-neo-lg shadow-slate-900/5 backdrop-blur-lg">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Myths vs real risks</p>
         <h1 className="mt-3 text-3xl font-semibold text-slate-900">Why AI Watermarks Matter</h1>
         <p className="mt-2 text-slate-600">
@@ -42,7 +42,7 @@ export default function WhyAiWatermarksMatterPage() {
             { title: 'UX', detail: 'Stable layouts and readable structure' },
             { title: 'Safety', detail: 'Clean without rewriting or intent drift' },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-100 bg-slate-50 p-4 text-xs text-slate-700">
+            <div key={item.title} className="rounded-2xl border-2 border-black bg-slate-50 p-4 text-xs text-slate-700">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.detail}</p>
             </div>
@@ -67,7 +67,7 @@ export default function WhyAiWatermarksMatterPage() {
               body: 'Public detectors disagree, fluctuate, and measure patterns. They are not ranking systems.',
             },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-200 bg-white/60 p-4 text-sm text-slate-700 shadow-sm">
+            <div key={item.title} className="rounded-2xl border-3 border-black bg-white/60 p-4 text-sm text-slate-700 shadow-neo-sm">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.body}</p>
             </div>
@@ -85,7 +85,7 @@ export default function WhyAiWatermarksMatterPage() {
           text.
         </p>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">1. Invisible technical artifacts (the real risk)</p>
             <p className="mt-2">
               Zero-width spaces, non-breaking spaces, soft hyphens, directional markers, and Unicode punctuation variants are invisible, survive
@@ -95,7 +95,7 @@ export default function WhyAiWatermarksMatterPage() {
               Detect them with the <Link href="/invisible-character-detector">Invisible Character Detector</Link>.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">2. Structural and stylistic patterns</p>
             <p className="mt-2">
               Uniform sentence length, repetitive transitions, predictable rhythm, and over-structured sections are patterns, not literal
@@ -122,7 +122,7 @@ export default function WhyAiWatermarksMatterPage() {
               body: 'Awkward spacing, unstable layouts, and generic flow reduce engagement and increase bounce rate.',
             },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-200 bg-white/60 p-4 text-sm text-slate-700 shadow-sm">
+            <div key={item.title} className="rounded-2xl border-3 border-black bg-white/60 p-4 text-sm text-slate-700 shadow-neo-sm">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.body}</p>
             </div>
@@ -140,7 +140,7 @@ export default function WhyAiWatermarksMatterPage() {
 
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">How to clean ChatGPT text safely (SEO-safe method)</h2>
-        <div className="rounded-2xl border border-brand-100 bg-brand-50 p-5 text-sm text-brand-900 shadow-sm">
+        <div className="rounded-2xl border border-brand-100 bg-brand-50 p-5 text-sm text-brand-900 shadow-neo-sm">
           <p className="font-semibold text-brand-800">Safe cleaning steps</p>
           <ol className="mt-2 list-decimal space-y-2 pl-5 text-slate-800">
             <li>
@@ -168,7 +168,7 @@ export default function WhyAiWatermarksMatterPage() {
 
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">Safe cleaning vs dangerous “watermark removal”</h2>
-        <div className="rounded-2xl border border-slate-200 bg-white/70 p-5 text-sm text-slate-700 shadow-sm">
+        <div className="rounded-2xl border-3 border-black bg-white/70 p-5 text-sm text-slate-700 shadow-neo-sm">
           <table>
             <thead>
               <tr>
@@ -233,7 +233,7 @@ export default function WhyAiWatermarksMatterPage() {
             { q: 'Should I rewrite to “hide AI”?', a: 'No. Focus on quality, structure, and performance instead.' },
             { q: 'Is this future-proof?', a: 'Yes. Clean content benefits all platforms, devices, and workflows.' },
           ].map((item) => (
-            <div key={item.q} className="rounded-2xl border border-slate-200 bg-white/60 p-4 text-sm text-slate-700 shadow-sm">
+            <div key={item.q} className="rounded-2xl border-3 border-black bg-white/60 p-4 text-sm text-slate-700 shadow-neo-sm">
               <p className="font-semibold text-slate-900">{item.q}</p>
               <p className="mt-1">{item.a}</p>
             </div>

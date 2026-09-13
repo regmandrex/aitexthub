@@ -23,7 +23,7 @@ export default function WhatAreGptWatermarksPage() {
       <div className="ad-slot"><AdSenseSlot className="w-full" /></div>
 
       {/* Hero card */}
-      <div className="rounded-[28px] border border-slate-200 bg-white/70 p-6 shadow-xl shadow-slate-900/5 backdrop-blur-lg">
+      <div className="rounded-[28px] border-3 border-black bg-white/70 p-6 shadow-neo-lg shadow-slate-900/5 backdrop-blur-lg">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">GPT Watermarks Explained</p>
         <h1 className="mt-3 text-3xl font-semibold text-slate-900">What Are GPT Watermarks?</h1>
         <p className="mt-2 text-slate-600">
@@ -38,7 +38,7 @@ export default function WhatAreGptWatermarksPage() {
             { title: 'Statistical watermarks', detail: 'Perplexity and burstiness patterns in AI text' },
             { title: 'Unicode artifacts', detail: 'Invisible characters left by the generation process' },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-100 bg-slate-50 p-4 text-xs text-slate-700">
+            <div key={item.title} className="rounded-2xl border-2 border-black bg-slate-50 p-4 text-xs text-slate-700">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.detail}</p>
             </div>
@@ -79,7 +79,7 @@ export default function WhatAreGptWatermarksPage() {
           a watermark that is nearly impossible to remove without significantly degrading the text, because removing the
           watermark requires knowing which tokens were biased and substituting alternatives systematically.
         </p>
-        <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+        <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
           <p className="font-semibold text-slate-900">Properties of cryptographic watermarks</p>
           <ul className="mt-2 list-disc space-y-2 pl-5">
             <li><strong>Detectable only with the key:</strong> Without the secret key, the watermark is invisible to statistical analysis.</li>
@@ -108,7 +108,7 @@ export default function WhatAreGptWatermarksPage() {
           The resulting signature is &quot;watermark-like&quot; in that it identifies AI origin, but it is not deliberate.
         </p>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">What statistical watermarks look like</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Sentences of similar length throughout the text</li>
@@ -118,7 +118,7 @@ export default function WhatAreGptWatermarksPage() {
               <li>Characteristic vocabulary like &quot;delve,&quot; &quot;underscore,&quot; &quot;nuanced&quot;</li>
             </ul>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">How detectors read them</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Perplexity scoring against a reference language model</li>
@@ -167,28 +167,28 @@ export default function WhatAreGptWatermarksPage() {
           from preventing academic fraud to limiting deepfake misuse to enabling copyright attribution.
         </p>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Policy and regulatory pressure</p>
             <p className="mt-2">
               The EU AI Act and similar regulations require transparency about AI-generated content. Reliable watermarking
               would enable automated compliance checking without requiring manual disclosure for every piece of content.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Misinformation and fraud prevention</p>
             <p className="mt-2">
               Watermarking AI content would make it harder to pass off AI-generated articles, emails, or documents as
               genuinely human-authored. This is relevant for news, legal documents, and academic submissions.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Copyright and licensing</p>
             <p className="mt-2">
               If AI text can be reliably attributed to a specific model, copyright and licensing questions around AI
               output become clearer. This is relevant to debates about who owns AI-generated content.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Safety and accountability</p>
             <p className="mt-2">
               For high-stakes content (medical advice, legal analysis, safety instructions), knowing whether a text
@@ -205,7 +205,7 @@ export default function WhatAreGptWatermarksPage() {
           patterns, and accidental Unicode artifacts &mdash; detection tools focus on the latter two. Here is what
           you can reliably detect with available tools:
         </p>
-        <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+        <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
           <ul className="list-disc space-y-2 pl-5">
             <li>
               <strong>Statistical AI patterns:</strong> Use the <Link href="/">AI Text Cleanup Tools</Link> suite or any

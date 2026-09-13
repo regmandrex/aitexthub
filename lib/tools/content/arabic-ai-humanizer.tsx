@@ -2,7 +2,7 @@
 import type { ToolContent } from '@/lib/tools/content/types';
 
 const WriteUp = () => (
-  <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10"><div className="prose prose-slate max-w-none">
+  <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10"><div className="prose prose-slate max-w-none">
     <h2 className="text-2xl font-bold text-slate-900 mb-4">Arabic AI Text Humanizer: Transform AI-Generated Arabic Into Natural Human Writing</h2>
     <p className="text-slate-700 mb-4">Arabic AI-generated text presents a unique challenge: AI models overwhelmingly default to Modern Standard Arabic (MSA / الفصحى), producing text that is grammatically correct and formally appropriate but entirely wrong in register for most real-world Arabic communication contexts. Arabic has a rich diglossia — the coexistence of a formal written standard and diverse regional colloquial varieties — and AI text lands squarely in the formal register even when informal, colloquial, or mixed communication is what&#39;s needed. This Arabic AI humanizer bridges that gap, transforming AI-generated Arabic into authentic, contextually appropriate text for any Arabic communication context.</p>
 

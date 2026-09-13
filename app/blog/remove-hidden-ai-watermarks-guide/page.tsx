@@ -28,7 +28,7 @@ export default function RemoveHiddenAiWatermarksGuidePage() {
         <AdSenseSlot className="w-full" />
       </div>
 
-      <div className="rounded-[28px] border border-slate-200 bg-white/70 p-6 shadow-xl shadow-slate-900/5 backdrop-blur-lg">
+      <div className="rounded-[28px] border-3 border-black bg-white/70 p-6 shadow-neo-lg shadow-slate-900/5 backdrop-blur-lg">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Clean artifacts, keep meaning</p>
         <h1 className="mt-3 text-3xl font-semibold text-slate-900">Remove Hidden AI Watermarks</h1>
         <p className="mt-2 text-slate-600">
@@ -42,7 +42,7 @@ export default function RemoveHiddenAiWatermarksGuidePage() {
             { title: 'Ignore', detail: 'Myths about tracking IDs and secret metadata' },
             { title: 'Publish', detail: 'Stable formatting and better CWV signals' },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-100 bg-slate-50 p-4 text-xs text-slate-700">
+            <div key={item.title} className="rounded-2xl border-2 border-black bg-slate-50 p-4 text-xs text-slate-700">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.detail}</p>
             </div>
@@ -71,7 +71,7 @@ export default function RemoveHiddenAiWatermarksGuidePage() {
               body: 'No hidden author IDs, no secret tracking strings, and no embedded account identifiers in plain ChatGPT text.',
             },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-200 bg-white/60 p-4 text-sm text-slate-700 shadow-sm">
+            <div key={item.title} className="rounded-2xl border-3 border-black bg-white/60 p-4 text-sm text-slate-700 shadow-neo-sm">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.body}</p>
             </div>
@@ -82,7 +82,7 @@ export default function RemoveHiddenAiWatermarksGuidePage() {
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">What you should actually remove (and why)</h2>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Invisible Unicode characters (highest priority)</p>
             <p className="mt-2">These are the real &quot;hidden&quot; elements most people run into. They can:</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
@@ -96,7 +96,7 @@ export default function RemoveHiddenAiWatermarksGuidePage() {
               Detect them with the <Link href="/invisible-character-detector">Invisible Character Detector</Link>.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Non-standard whitespace and formatting artifacts</p>
             <p className="mt-2">AI text often mixes normal spaces with NBSP and other separators, plus remnants like:</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
@@ -126,7 +126,7 @@ export default function RemoveHiddenAiWatermarksGuidePage() {
 
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">Step-by-step: how to remove hidden AI artifacts safely</h2>
-        <div className="rounded-2xl border border-brand-100 bg-brand-50 p-5 text-sm text-brand-900 shadow-sm">
+        <div className="rounded-2xl border border-brand-100 bg-brand-50 p-5 text-sm text-brand-900 shadow-neo-sm">
           <p className="font-semibold text-brand-800">Practical workflow</p>
           <ol className="mt-2 list-decimal space-y-2 pl-5 text-slate-800">
             <li>
@@ -217,7 +217,7 @@ export default function RemoveHiddenAiWatermarksGuidePage() {
             { q: 'Do I need to clean short AI text?', a: 'Long-form benefits most, but short text can still contain invisible characters.' },
             { q: 'Is this only for WordPress?', a: 'No. It applies to email, docs, CMSs, and code environments too.' },
           ].map((item) => (
-            <div key={item.q} className="rounded-2xl border border-slate-200 bg-white/60 p-4 text-sm text-slate-700 shadow-sm">
+            <div key={item.q} className="rounded-2xl border-3 border-black bg-white/60 p-4 text-sm text-slate-700 shadow-neo-sm">
               <p className="font-semibold text-slate-900">{item.q}</p>
               <p className="mt-1">{item.a}</p>
             </div>

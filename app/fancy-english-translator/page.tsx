@@ -24,7 +24,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
 function createWriteUp() {
   return (
-    <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+    <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
         <h2>Fancy English Translator: Turn Text Into Stylish, Elegant English</h2>
         <p>A fancy English translator is an online tool that converts ordinary text into stylized, decorative, or ornate English. Whether you want elegant wording for an invitation, a social media bio that stands out, or fancy Unicode characters and script-style fonts for a username or caption, a fancy text generator gives you multiple styles in one place. You type or paste your text, choose a style (e.g., cursive, bold, script, or “fancy” vocabulary), and get back a version that looks and often reads more formal or decorative.</p>

@@ -17,7 +17,7 @@ const toolSlug = 'deepseek-academic-humanizer';
 
 function createWriteUp() {
   return (
-    <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+    <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
         <h2>DeepSeek Academic Humanizer: Rewrite DeepSeek&apos;s Prose So It Reads Like You</h2>
         <p>This DeepSeek Academic Humanizer is a free, browser-based tool that rewrites text drafted by DeepSeek so it reads like a person wrote it. It targets the habits DeepSeek brings to academic writing — its reasoning-heavy explanations, its occasional translated-sounding phrasing, and its dense technical register — and reshapes them into natural English prose, while keeping your thesis, evidence, and citations intact. You remain responsible for originality and for disclosing AI use where your institution requires it.</p>

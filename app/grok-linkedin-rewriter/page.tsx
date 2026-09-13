@@ -17,7 +17,7 @@ const toolSlug = 'grok-linkedin-rewriter';
 
 function createWriteUp() {
   return (
-    <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+    <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
         <h2>Grok LinkedIn Rewriter: Rewrite Content for LinkedIn Engagement</h2>
         <p>A Grok LinkedIn Rewriter is a free online tool that rewrites Grok content for LinkedIn to improve engagement and authenticity. LinkedIn audiences expect professional yet conversational tone; a rewriter helps you adapt AI-generated posts, articles, or profile text so it fits the platform and sounds like you.</p>

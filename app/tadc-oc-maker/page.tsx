@@ -59,7 +59,7 @@ const pageFaqs: FaqItem[] = [
 
 function createWriteUp() {
   return (
-    <section className="mt-10 rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6">
+    <section className="mt-10 rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6">
       <div className="prose prose-slate max-w-none">
         <h2>TADC OC Maker - Create Your Digital Circus Character</h2>
         <p>This TADC OC maker helps you turn a loose idea into one original character image for a surreal digital circus setting. Choose a role, avatar shape, toy-like material, color palette, and personality, then generate a reference-style result built around those choices.</p>

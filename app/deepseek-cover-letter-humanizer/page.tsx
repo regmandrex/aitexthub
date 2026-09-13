@@ -17,7 +17,7 @@ const toolSlug = 'deepseek-cover-letter-humanizer';
 
 function createWriteUp() {
   return (
-    <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+    <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
         <h2>DeepSeek Cover Letter Humanizer: Humanize Cover Letters for Authenticity</h2>
         <p>A DeepSeek Cover Letter Humanizer is a free online tool that humanizes DeepSeek-generated cover letters so they sound more authentic and personal. Cover letters need to reflect your voice and fit the role; a humanizer helps you polish AI-drafted letters so they feel genuine and compelling to hiring managers.</p>

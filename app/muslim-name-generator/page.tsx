@@ -25,7 +25,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
 function createWriteUp() {
   return (
-    <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+    <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
         <p className="text-slate-700 font-medium">
           A Muslim name generator is a free online tool that creates Islamic and Arabic-style names for characters, babies, and creative projects. Choose male, female, or both; get 1–24 names per run with optional meanings. No sign-up; runs in your browser.
@@ -103,17 +103,17 @@ function createWriteUp() {
         <h2>Arabic Names vs Islamic Names: What Does This Generator Cover?</h2>
         <p>People sometimes search for an &quot;Arabic name generator&quot; or &quot;Islamic name generator&quot; and mean slightly different things. This table clarifies how they relate:</p>
         <div className="overflow-x-auto my-4">
-          <table className="min-w-full border border-slate-300 text-sm">
+          <table className="min-w-full border-2 border-black text-sm">
             <thead>
               <tr className="bg-slate-100">
-                <th className="border border-slate-300 px-3 py-2 text-left">Term</th>
-                <th className="border border-slate-300 px-3 py-2 text-left">Meaning</th>
+                <th className="border-2 border-black px-3 py-2 text-left">Term</th>
+                <th className="border-2 border-black px-3 py-2 text-left">Meaning</th>
               </tr>
             </thead>
             <tbody>
-              <tr><td className="border border-slate-300 px-3 py-2">Muslim name generator</td><td className="border border-slate-300 px-3 py-2">Tool for names associated with Islamic and Arabic naming; often covers both male and female with optional meanings.</td></tr>
-              <tr><td className="border border-slate-300 px-3 py-2">Islamic name generator</td><td className="border border-slate-300 px-3 py-2">Same as above; names linked to Muslim tradition (Arabic, Persian, Turkish, Urdu, etc.).</td></tr>
-              <tr><td className="border border-slate-300 px-3 py-2">Arabic name generator</td><td className="border border-slate-300 px-3 py-2">Names from Arabic-speaking contexts; may be used by Muslims and non-Muslims. This tool covers that overlap.</td></tr>
+              <tr><td className="border-2 border-black px-3 py-2">Muslim name generator</td><td className="border-2 border-black px-3 py-2">Tool for names associated with Islamic and Arabic naming; often covers both male and female with optional meanings.</td></tr>
+              <tr><td className="border-2 border-black px-3 py-2">Islamic name generator</td><td className="border-2 border-black px-3 py-2">Same as above; names linked to Muslim tradition (Arabic, Persian, Turkish, Urdu, etc.).</td></tr>
+              <tr><td className="border-2 border-black px-3 py-2">Arabic name generator</td><td className="border-2 border-black px-3 py-2">Names from Arabic-speaking contexts; may be used by Muslims and non-Muslims. This tool covers that overlap.</td></tr>
             </tbody>
           </table>
         </div>

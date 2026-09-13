@@ -90,7 +90,7 @@ export function ImageWatermarkDetectorTool({ modelName }: ImageWatermarkDetector
   return (
     <div className="space-y-4">
       <div className="grid gap-4 md:grid-cols-[1fr,1fr]">
-        <div className="space-y-3 rounded-xl border border-slate-200 bg-slate-50 p-4">
+        <div className="space-y-3 rounded-xl border-3 border-black bg-slate-50 p-4">
           <label className="block text-sm font-semibold text-slate-800">Upload image</label>
           <input
             type="file"

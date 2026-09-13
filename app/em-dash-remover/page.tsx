@@ -60,7 +60,7 @@ const faqKeys = [
 
 function createWriteUp() {
   return (
-    <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+    <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
         <h2>Em Dash Remover Online: Replace or Remove Em Dashes and En Dashes</h2>
         <p>When you copy text from Microsoft Word, PDFs, or websites into plain text fields, URLs, code, or content management systems, em dashes (—) and en dashes (–) often cause problems. They can break links, fail validation, or display incorrectly in systems that expect standard hyphens or ASCII characters. An em dash remover lets you find every em dash and en dash in your text and replace them with a hyphen, comma, space, or remove them entirely—so your content is consistent and compatible everywhere you paste it.</p>

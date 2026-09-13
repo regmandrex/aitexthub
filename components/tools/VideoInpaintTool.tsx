@@ -216,7 +216,7 @@ export default function VideoInpaintTool(_props: VideoInpaintToolProps) {
     <div className="space-y-4">
       <video ref={videoRef} className="hidden" muted playsInline preload="auto" />
 
-      <div className="rounded-xl border border-slate-200 bg-slate-50 p-4 space-y-3">
+      <div className="rounded-xl border-3 border-black bg-slate-50 p-4 space-y-3">
         <label className="block text-sm font-semibold text-slate-800">Upload video</label>
         <input
           type="file"
@@ -234,7 +234,7 @@ export default function VideoInpaintTool(_props: VideoInpaintToolProps) {
             onPointerDown={onDown}
             onPointerMove={onMove}
             onPointerUp={onUp}
-            className="max-w-full cursor-crosshair rounded-lg border border-slate-300 touch-none"
+            className="max-w-full cursor-crosshair rounded-lg border-2 border-black touch-none"
           />
           {message ? (
             <p className={`text-sm ${phase === 'error' ? 'text-rose-600' : 'text-slate-600'}`}>
@@ -266,7 +266,7 @@ export default function VideoInpaintTool(_props: VideoInpaintToolProps) {
           type="button"
           onClick={reset}
           disabled={busy}
-          className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50 disabled:opacity-50"
+          className="inline-flex items-center justify-center rounded-lg border-3 border-black bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50 disabled:opacity-50"
         >
           Clear
         </button>

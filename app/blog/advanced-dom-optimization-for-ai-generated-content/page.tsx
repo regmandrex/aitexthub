@@ -28,7 +28,7 @@ export default function AdvancedDomOptimizationAiContentPage() {
         <AdSenseSlot className="w-full" />
       </div>
 
-      <div className="rounded-[28px] border border-slate-200 bg-white/70 p-6 shadow-xl shadow-slate-900/5 backdrop-blur-lg">
+      <div className="rounded-[28px] border-3 border-black bg-white/70 p-6 shadow-neo-lg shadow-slate-900/5 backdrop-blur-lg">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Efficient DOM, faster pages</p>
         <h1 className="mt-3 text-3xl font-semibold text-slate-900">Advanced DOM Optimization for AI-Generated Content</h1>
         <p className="mt-2 text-slate-600">
@@ -42,7 +42,7 @@ export default function AdvancedDomOptimizationAiContentPage() {
             { title: 'Stabilize', detail: 'Lower reflows and text-driven CLS' },
             { title: 'Scale', detail: 'Prevent DOM debt across pages' },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-100 bg-slate-50 p-4 text-xs text-slate-700">
+            <div key={item.title} className="rounded-2xl border-2 border-black bg-slate-50 p-4 text-xs text-slate-700">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.detail}</p>
             </div>
@@ -76,7 +76,7 @@ export default function AdvancedDomOptimizationAiContentPage() {
               body: 'Editors like Gutenberg wrap content in nested containers. Dirty AI text inside blocks can inflate DOM depth dramatically.',
             },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-200 bg-white/60 p-4 text-sm text-slate-700 shadow-sm">
+            <div key={item.title} className="rounded-2xl border-3 border-black bg-white/60 p-4 text-sm text-slate-700 shadow-neo-sm">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.body}</p>
             </div>
@@ -87,15 +87,15 @@ export default function AdvancedDomOptimizationAiContentPage() {
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">Why DOM size affects Core Web Vitals</h2>
         <div className="grid gap-4 md:grid-cols-3">
-          <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">LCP</p>
             <p className="mt-2">Large DOMs slow layout computation and delay rendering of large text blocks, turning content into an LCP bottleneck.</p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">CLS</p>
             <p className="mt-2">More complexity increases reflow probability and rewrapping, leading to subtle, persistent layout shifts.</p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">INP</p>
             <p className="mt-2">A large DOM increases style recalculation cost and slows scrolling and clicking, especially on mobile devices.</p>
           </div>
@@ -116,14 +116,14 @@ export default function AdvancedDomOptimizationAiContentPage() {
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">Advanced DOM optimization for AI content (the right way)</h2>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/70 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/70 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Principle 1: Treat text as structural code</p>
             <p className="mt-2">
               Text is not just content. It is layout data. Every character affects width calculations, wrapping, and reflow behavior. Dirty text
               creates unpredictable DOM behavior.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/70 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/70 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Principle 2: Reduce nodes at the source</p>
             <p className="mt-2">
               The cheapest DOM node is the one you never create. Clean text before publishing, avoid unnecessary segmentation, and prevent hidden
@@ -135,7 +135,7 @@ export default function AdvancedDomOptimizationAiContentPage() {
 
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">Step-by-step: optimizing the DOM for AI-generated content</h2>
-        <div className="rounded-2xl border border-brand-100 bg-brand-50 p-5 text-sm text-brand-900 shadow-sm">
+        <div className="rounded-2xl border border-brand-100 bg-brand-50 p-5 text-sm text-brand-900 shadow-neo-sm">
           <p className="font-semibold text-brand-800">High-impact DOM cleanup steps</p>
           <ol className="mt-2 list-decimal space-y-2 pl-5 text-slate-800">
             <li>
@@ -222,7 +222,7 @@ export default function AdvancedDomOptimizationAiContentPage() {
             { q: 'Should I shorten AI content to reduce DOM?', a: 'No. Optimize structure and cleanliness, not length.' },
             { q: 'Is this future-proof?', a: 'Yes. DOM efficiency benefits all browsers and devices long-term.' },
           ].map((item) => (
-            <div key={item.q} className="rounded-2xl border border-slate-200 bg-white/60 p-4 text-sm text-slate-700 shadow-sm">
+            <div key={item.q} className="rounded-2xl border-3 border-black bg-white/60 p-4 text-sm text-slate-700 shadow-neo-sm">
               <p className="font-semibold text-slate-900">{item.q}</p>
               <p className="mt-1">{item.a}</p>
             </div>

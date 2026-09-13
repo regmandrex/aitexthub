@@ -90,7 +90,7 @@ export function TextCleanerTool() {
       <label className="block space-y-2">
         <span className="text-sm font-semibold text-slate-900">Input text</span>
         <textarea
-          className="w-full rounded-lg border border-slate-200 px-3 py-2 text-sm shadow-sm focus:border-brand-600 focus:outline-none focus:ring-2 focus:ring-brand-100"
+          className="w-full rounded-lg border-3 border-black px-3 py-2 text-sm shadow-neo-sm focus:border-brand-600 focus:outline-none focus:ring-2 focus:ring-brand-100"
           rows={8}
           value={input}
           onChange={(e) => setInput(e.target.value)}
@@ -133,14 +133,14 @@ export function TextCleanerTool() {
             setStats(null);
             setOptions(defaultOptions);
           }}
-          className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
+          className="inline-flex items-center justify-center rounded-lg border-3 border-black bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
         >
           Clear
         </button>
         <button
           type="button"
           onClick={() => navigator.clipboard.writeText(output)}
-          className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
+          className="inline-flex items-center justify-center rounded-lg border-3 border-black bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
         >
           Copy output
         </button>
@@ -158,7 +158,7 @@ export function TextCleanerTool() {
           ] as Array<[number, string]>).map(([value, label]) => (
             <span
               key={label}
-              className="inline-flex items-center gap-1 rounded-full border border-slate-200 bg-white px-3 py-1 text-xs text-slate-700 shadow-sm"
+              className="inline-flex items-center gap-1 rounded-full border-3 border-black bg-white px-3 py-1 text-xs text-slate-700 shadow-neo-sm"
             >
               <span className="font-semibold text-slate-900">{value}</span> {label}
             </span>
@@ -169,7 +169,7 @@ export function TextCleanerTool() {
       <label className="block space-y-2">
         <span className="text-sm font-semibold text-slate-900">Output</span>
         <textarea
-          className="w-full rounded-lg border border-slate-200 bg-slate-50 px-3 py-2 text-sm shadow-sm focus:outline-none"
+          className="w-full rounded-lg border-3 border-black bg-slate-50 px-3 py-2 text-sm shadow-neo-sm focus:outline-none"
           rows={8}
           value={output}
           readOnly

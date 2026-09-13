@@ -23,7 +23,7 @@ export default function HowAiDetectionToolsWorkAndWhyTheyGetItWrongPage() {
       <div className="ad-slot"><AdSenseSlot className="w-full" /></div>
 
       {/* Hero card */}
-      <div className="rounded-[28px] border border-slate-200 bg-white/70 p-6 shadow-xl shadow-slate-900/5 backdrop-blur-lg">
+      <div className="rounded-[28px] border-3 border-black bg-white/70 p-6 shadow-neo-lg shadow-slate-900/5 backdrop-blur-lg">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Detection Methodology</p>
         <h1 className="mt-3 text-3xl font-semibold text-slate-900">How AI Detection Tools Work (And Why They Often Get It Wrong)</h1>
         <p className="mt-2 text-slate-600">
@@ -38,7 +38,7 @@ export default function HowAiDetectionToolsWorkAndWhyTheyGetItWrongPage() {
             { title: 'Failure modes', detail: 'False positives, model drift, short text issues' },
             { title: 'What to trust', detail: 'Calibrated expectations for detection results' },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-100 bg-slate-50 p-4 text-xs text-slate-700">
+            <div key={item.title} className="rounded-2xl border-2 border-black bg-slate-50 p-4 text-xs text-slate-700">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.detail}</p>
             </div>
@@ -73,7 +73,7 @@ export default function HowAiDetectionToolsWorkAndWhyTheyGetItWrongPage() {
           frequently surprised by word choices = human-like. The score is averaged across the text and mapped to a
           detection probability.
         </p>
-        <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+        <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
           <p className="font-semibold text-slate-900">Why perplexity is necessary but not sufficient</p>
           <ul className="mt-2 list-disc space-y-2 pl-5">
             <li>It captures the fundamental statistical difference between AI and human text</li>
@@ -106,7 +106,7 @@ export default function HowAiDetectionToolsWorkAndWhyTheyGetItWrongPage() {
           and text known to be AI-generated. They learn patterns beyond simple statistical measures:
         </p>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">What classifiers learn</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Characteristic vocabulary patterns per model family</li>
@@ -116,7 +116,7 @@ export default function HowAiDetectionToolsWorkAndWhyTheyGetItWrongPage() {
               <li>Hedging and qualifier usage patterns</li>
             </ul>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Classifier limitations</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
               <li>Training data reflects specific AI models and time periods</li>
@@ -151,7 +151,7 @@ export default function HowAiDetectionToolsWorkAndWhyTheyGetItWrongPage() {
           detection result in proper context.
         </p>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">False positive: non-native speakers</p>
             <p className="mt-2">
               Non-native English speakers writing carefully produce low-perplexity, low-burstiness text &mdash; the
@@ -159,7 +159,7 @@ export default function HowAiDetectionToolsWorkAndWhyTheyGetItWrongPage() {
               speaker populations. This is the most serious equity issue in AI detection.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">False positive: formal academic writing</p>
             <p className="mt-2">
               Academic prose follows highly predictable conventions. STEM writing, legal analysis, and technical
@@ -167,7 +167,7 @@ export default function HowAiDetectionToolsWorkAndWhyTheyGetItWrongPage() {
               patterns by design.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">False negative: edited AI text</p>
             <p className="mt-2">
               Any significant editing of AI text increases perplexity and burstiness, pushing the score toward human.
@@ -175,7 +175,7 @@ export default function HowAiDetectionToolsWorkAndWhyTheyGetItWrongPage() {
               involved in its creation.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Model drift</p>
             <p className="mt-2">
               Detectors trained on older AI models may not accurately detect newer ones. GPT-4 produces statistically
@@ -183,7 +183,7 @@ export default function HowAiDetectionToolsWorkAndWhyTheyGetItWrongPage() {
               Detectors require ongoing retraining to maintain accuracy.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Short text unreliability</p>
             <p className="mt-2">
               Perplexity and burstiness calculations require statistical samples. Short texts (under 250 words) do not
@@ -191,7 +191,7 @@ export default function HowAiDetectionToolsWorkAndWhyTheyGetItWrongPage() {
               though they may still return confident-looking scores.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Domain specificity</p>
             <p className="mt-2">
               Detectors calibrated on general text may perform differently on specialized domain content. Technical
@@ -208,7 +208,7 @@ export default function HowAiDetectionToolsWorkAndWhyTheyGetItWrongPage() {
           AI detection companies publish accuracy statistics for their products, but these statistics require careful
           interpretation. Here is how to read them critically.
         </p>
-        <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+        <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
           <ul className="list-disc space-y-2 pl-5">
             <li>
               <strong>&quot;98% accuracy on our test set&quot;</strong> means accuracy on the specific dataset the company
@@ -238,21 +238,21 @@ export default function HowAiDetectionToolsWorkAndWhyTheyGetItWrongPage() {
           Given these limitations, here is a practical framework for how much weight to give AI detection results:
         </p>
         <div className="grid gap-4 md:grid-cols-3">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">High confidence situations</p>
             <p className="mt-2">
               Unedited AI output on a general topic, scored at 90%+ by multiple independent detectors, with invisible
               Unicode characters present. This combination is highly indicative of AI origin.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Low confidence situations</p>
             <p className="mt-2">
               Any individual detector score for a single document. A 75% AI score from one tool on formal academic
               text could easily be a false positive. No single score should be treated as conclusive.
             </p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Cannot be determined</p>
             <p className="mt-2">
               Whether the author &quot;cheated&quot; by using AI. Detection tools can score patterns; they cannot

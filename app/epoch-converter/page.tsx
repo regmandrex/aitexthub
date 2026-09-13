@@ -45,7 +45,7 @@ const faqs: FaqItem[] = [
 ];
 
 const writeUp = (
-  <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+  <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
     <div className="prose prose-slate max-w-none text-sm">
       <h2>Epoch Converter – Unix Timestamp to Date &amp; Time Online</h2>
       <p>This free online epoch converter translates Unix timestamps into human-readable dates and converts dates back to Unix timestamps instantly. Whether you need to decode a 10-digit seconds-based timestamp or a 13-digit milliseconds timestamp, this tool handles both automatically. Paste any Unix epoch time and get the local date/time, UTC date, ISO 8601 string, relative time, day of week, and day of year — all in one click.</p>

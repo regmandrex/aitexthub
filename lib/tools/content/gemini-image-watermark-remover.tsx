@@ -3,7 +3,7 @@ import type { ToolContent } from './index';
 
 function WriteUp() {
   return (
-    <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+    <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
         <h2>Gemini Image Watermark Remover: Remove Google SynthID Watermarks from Gemini Images Free</h2>
         <p>The Gemini Image Watermark Remover is a free online tool that strips the SynthID watermarks, C2PA provenance metadata, and embedded AI identification signals that Google embeds in images generated through Google Gemini. Google's image generation capabilities "” available through Gemini Advanced, Google AI Studio, and the Imagen API "” embed multiple layers of machine-readable watermarks designed to persist even after post-processing. This tool removes those watermark layers from your images while preserving the full visual quality of the original.</p>

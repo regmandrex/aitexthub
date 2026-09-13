@@ -60,7 +60,7 @@ const faqKeys = [
 
 function createWriteUp() {
   return (
-    <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+    <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
         <h2>Remove Line Breaks Online: Merge Lines Into One Paragraph</h2>
         <p>If you have ever copied text from a PDF, email, or spreadsheet and pasted it somewhere else only to see every line on its own row, you already know why a line break remover is essential. Unwanted newlines and line breaks make content harder to read, break form validation, and can cause issues in code, databases, and content management systems. A dedicated remove line breaks tool lets you join lines into clean paragraphs or single lines in seconds—without manually deleting each break.</p>

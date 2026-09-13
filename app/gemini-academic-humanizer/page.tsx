@@ -17,7 +17,7 @@ const toolSlug = 'gemini-academic-humanizer';
 
 function createWriteUp() {
   return (
-    <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+    <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
         <h2>Gemini Academic Humanizer: Rewrite Gemini&apos;s Prose So It Reads Like You</h2>
         <p>This Gemini Academic Humanizer is a free, browser-based tool that rewrites text drafted by Google&apos;s Gemini so it reads like a person wrote it. It targets the particular habits Gemini brings to academic writing — its love of bullet points, its citation-flavored phrasing, its brisk topic-summary rhythm — and reshapes them into natural prose, while keeping your thesis, evidence, and references intact. You remain responsible for originality and for disclosing AI use where your institution requires it.</p>

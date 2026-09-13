@@ -225,7 +225,7 @@ export default async function PerplexityWatermarkCleanerPage() {
         </section>
 
         <section className="relative w-full mt-4 md:mt-6">
-          <div className="w-full max-w-none rounded-xl border border-slate-200 bg-white p-3 shadow-sm md:rounded-2xl md:p-6">
+          <div className="w-full max-w-none rounded-xl border-3 border-black bg-white p-3 shadow-neo-sm md:rounded-2xl md:p-6">
             <ToolWorkbench
               processor="chatgptTextCleaner"
               primaryLabel={'Clean'}
@@ -241,7 +241,7 @@ export default async function PerplexityWatermarkCleanerPage() {
 
         <RelatedTools currentSlug="perplexity-watermark-cleaner" />
 
-        <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 space-y-4 mt-10">
+        <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 space-y-4 mt-10">
           <h2 className="text-2xl font-semibold text-slate-900">
             Perplexity Watermark Cleaner - How to Remove Watermarks from Perplexity AI Outputs
           </h2>
@@ -443,39 +443,39 @@ export default async function PerplexityWatermarkCleanerPage() {
 
           <h3 className="text-xl font-semibold text-slate-900">Case Study: Cleaned vs Original Output Comparison</h3>
           <div className="overflow-x-auto">
-            <table className="w-full text-left text-sm text-slate-700 border border-slate-200">
+            <table className="w-full text-left text-sm text-slate-700 border-3 border-black">
               <thead className="bg-slate-50 text-slate-800">
                 <tr>
-                  <th className="border border-slate-200 px-3 py-2 font-semibold">Category</th>
-                  <th className="border border-slate-200 px-3 py-2 font-semibold">Original (Perplexity)</th>
-                  <th className="border border-slate-200 px-3 py-2 font-semibold">Cleaned Output</th>
+                  <th className="border-3 border-black px-3 py-2 font-semibold">Category</th>
+                  <th className="border-3 border-black px-3 py-2 font-semibold">Original (Perplexity)</th>
+                  <th className="border-3 border-black px-3 py-2 font-semibold">Cleaned Output</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td className="border border-slate-200 px-3 py-2">Readability</td>
-                  <td className="border border-slate-200 px-3 py-2">9/10</td>
-                  <td className="border border-slate-200 px-3 py-2">8/10</td>
+                  <td className="border-3 border-black px-3 py-2">Readability</td>
+                  <td className="border-3 border-black px-3 py-2">9/10</td>
+                  <td className="border-3 border-black px-3 py-2">8/10</td>
                 </tr>
                 <tr>
-                  <td className="border border-slate-200 px-3 py-2">Watermark Detected</td>
-                  <td className="border border-slate-200 px-3 py-2">Yes</td>
-                  <td className="border border-slate-200 px-3 py-2">No</td>
+                  <td className="border-3 border-black px-3 py-2">Watermark Detected</td>
+                  <td className="border-3 border-black px-3 py-2">Yes</td>
+                  <td className="border-3 border-black px-3 py-2">No</td>
                 </tr>
                 <tr>
-                  <td className="border border-slate-200 px-3 py-2">Style</td>
-                  <td className="border border-slate-200 px-3 py-2">Formal AI tone</td>
-                  <td className="border border-slate-200 px-3 py-2">Human-like</td>
+                  <td className="border-3 border-black px-3 py-2">Style</td>
+                  <td className="border-3 border-black px-3 py-2">Formal AI tone</td>
+                  <td className="border-3 border-black px-3 py-2">Human-like</td>
                 </tr>
                 <tr>
-                  <td className="border border-slate-200 px-3 py-2">Accuracy</td>
-                  <td className="border border-slate-200 px-3 py-2">100%</td>
-                  <td className="border border-slate-200 px-3 py-2">98%</td>
+                  <td className="border-3 border-black px-3 py-2">Accuracy</td>
+                  <td className="border-3 border-black px-3 py-2">100%</td>
+                  <td className="border-3 border-black px-3 py-2">98%</td>
                 </tr>
                 <tr>
-                  <td className="border border-slate-200 px-3 py-2">Detection Score</td>
-                  <td className="border border-slate-200 px-3 py-2">0.95 (AI)</td>
-                  <td className="border border-slate-200 px-3 py-2">0.21 (human)</td>
+                  <td className="border-3 border-black px-3 py-2">Detection Score</td>
+                  <td className="border-3 border-black px-3 py-2">0.95 (AI)</td>
+                  <td className="border-3 border-black px-3 py-2">0.21 (human)</td>
                 </tr>
               </tbody>
             </table>

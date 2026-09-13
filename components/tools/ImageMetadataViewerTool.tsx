@@ -36,7 +36,7 @@ export function ImageMetadataViewerTool() {
         onDragLeave={() => setIsDragging(false)}
         onDrop={e => { e.preventDefault(); setIsDragging(false); const f = e.dataTransfer.files?.[0]; if (f) processFile(f); }}
         onClick={() => fileInputRef.current?.click()}
-        className={`border-2 border-dashed rounded-lg p-8 text-center cursor-pointer transition-colors ${isDragging ? 'border-blue-500 bg-blue-50' : 'border-slate-300 hover:border-blue-400 hover:bg-slate-50'}`}
+        className={`border-2 border-dashed rounded-lg p-8 text-center cursor-pointer transition-colors ${isDragging ? 'border-blue-500 bg-blue-50' : 'border-black hover:border-blue-400 hover:bg-slate-50'}`}
       >
         <p className="text-sm font-medium text-slate-700">Drop an image here or click to upload</p>
         <p className="text-xs text-slate-400 mt-1">PNG, JPG, TIFF, HEIC supported</p>
@@ -44,12 +44,12 @@ export function ImageMetadataViewerTool() {
       </div>
 
       {basic && (
-        <div className="rounded-lg border border-slate-200 overflow-hidden">
-          <div className="bg-slate-50 border-b border-slate-200 px-3 py-2 text-xs font-medium text-slate-600">File info</div>
+        <div className="rounded-lg border-3 border-black overflow-hidden">
+          <div className="bg-slate-50 border-b-3 border-black px-3 py-2 text-xs font-medium text-slate-600">File info</div>
           <table className="w-full text-sm">
             <tbody>
               {[['File name', basic.name], ['File size', basic.size], ['Type', basic.type], ['Dimensions', basic.width ? `${basic.width} × ${basic.height} px` : '—']].map(([k, v]) => (
-                <tr key={k} className="border-b border-slate-100 last:border-0">
+                <tr key={k} className="border-b-2 border-black last:border-0">
                   <td className="px-3 py-2 text-slate-500 font-medium w-1/3">{k}</td>
                   <td className="px-3 py-2 text-slate-800 font-mono text-xs">{v}</td>
                 </tr>
@@ -60,14 +60,14 @@ export function ImageMetadataViewerTool() {
       )}
 
       {meta && (
-        <div className="rounded-lg border border-slate-200 overflow-hidden">
-          <div className="bg-slate-50 border-b border-slate-200 px-3 py-2 text-xs font-medium text-slate-600">EXIF / metadata ({exifEntries.length} fields)</div>
+        <div className="rounded-lg border-3 border-black overflow-hidden">
+          <div className="bg-slate-50 border-b-3 border-black px-3 py-2 text-xs font-medium text-slate-600">EXIF / metadata ({exifEntries.length} fields)</div>
           {exifEntries.length === 0
             ? <p className="px-3 py-3 text-sm text-slate-500">No EXIF metadata found in this image.</p>
             : <table className="w-full text-sm">
                 <tbody>
                   {exifEntries.map(([k, v]) => (
-                    <tr key={k} className="border-b border-slate-100 last:border-0">
+                    <tr key={k} className="border-b-2 border-black last:border-0">
                       <td className="px-3 py-2 text-slate-500 font-medium w-2/5">{k}</td>
                       <td className="px-3 py-2 text-slate-800 font-mono text-xs break-all">{String(v)}</td>
                     </tr>

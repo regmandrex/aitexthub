@@ -17,7 +17,7 @@ const toolSlug = 'llama-thesis-checker';
 
 function createWriteUp() {
   return (
-    <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+    <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
         <h2>LLaMA (Meta AI) Thesis Checker: Verify Thesis Statements and Arguments</h2>
         <p>A LLaMA (Meta AI) Thesis Checker is a free online tool that checks thesis statements and arguments in LLaMA (Meta AI)-generated academic content. It helps you verify that your central claim is clear, arguable, and well-supported—so your essay or paper has a strong foundation.</p>

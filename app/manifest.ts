@@ -8,8 +8,8 @@ export default function manifest(): MetadataRoute.Manifest {
       'Free AI text cleanup tools - remove hidden Unicode, fix spacing, clean ChatGPT output, and normalize text for publishing.',
     start_url: '/',
     display: 'standalone',
-    background_color: '#f8fafc',
-    theme_color: '#0f172a',
+    background_color: '#faf8f2',
+    theme_color: '#0f766e',
     icons: [
       {
         src: '/icon.png',

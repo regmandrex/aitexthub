@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export function SpaceRemoverWriteUp() {
   return (
-    <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+    <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
       <h2 className="text-2xl font-semibold text-slate-900">
         Space Remover Online – Remove Extra Spaces &amp; Normalize Whitespace
       </h2>
@@ -181,20 +181,20 @@ export function SpaceRemoverWriteUp() {
         With a space remover online tool: you paste your content, select formatting options, click once, and you&apos;re done. The difference isn&apos;t just speed—it&apos; reliability. Automated whitespace normalization detects patterns that the human eye can&apos;t easily spot. Invisible Unicode spaces? Removed. Multiple line breaks? Fixed. Tabs vs. spaces? Standardized.
       </p>
       <div className="overflow-x-auto my-4">
-        <table className="min-w-full border border-slate-200 text-sm">
+        <table className="min-w-full border-3 border-black text-sm">
           <thead>
             <tr className="bg-slate-50">
-              <th className="border border-slate-200 px-3 py-2 text-left font-semibold">Feature</th>
-              <th className="border border-slate-200 px-3 py-2 text-left font-semibold">Manual Editing</th>
-              <th className="border border-slate-200 px-3 py-2 text-left font-semibold">Space Remover Online</th>
+              <th className="border-3 border-black px-3 py-2 text-left font-semibold">Feature</th>
+              <th className="border-3 border-black px-3 py-2 text-left font-semibold">Manual Editing</th>
+              <th className="border-3 border-black px-3 py-2 text-left font-semibold">Space Remover Online</th>
             </tr>
           </thead>
           <tbody>
-            <tr><td className="border border-slate-200 px-3 py-2">Speed</td><td className="border border-slate-200 px-3 py-2">Slow</td><td className="border border-slate-200 px-3 py-2">Instant</td></tr>
-            <tr><td className="border border-slate-200 px-3 py-2">Accuracy</td><td className="border border-slate-200 px-3 py-2">Inconsistent</td><td className="border border-slate-200 px-3 py-2">High precision</td></tr>
-            <tr><td className="border border-slate-200 px-3 py-2">Handles Large Files</td><td className="border border-slate-200 px-3 py-2">Difficult</td><td className="border border-slate-200 px-3 py-2">Easy</td></tr>
-            <tr><td className="border border-slate-200 px-3 py-2">Detects Hidden Spaces</td><td className="border border-slate-200 px-3 py-2">Rarely</td><td className="border border-slate-200 px-3 py-2">Yes</td></tr>
-            <tr><td className="border border-slate-200 px-3 py-2">Reduces Human Error</td><td className="border border-slate-200 px-3 py-2">No</td><td className="border border-slate-200 px-3 py-2">Yes</td></tr>
+            <tr><td className="border-3 border-black px-3 py-2">Speed</td><td className="border-3 border-black px-3 py-2">Slow</td><td className="border-3 border-black px-3 py-2">Instant</td></tr>
+            <tr><td className="border-3 border-black px-3 py-2">Accuracy</td><td className="border-3 border-black px-3 py-2">Inconsistent</td><td className="border-3 border-black px-3 py-2">High precision</td></tr>
+            <tr><td className="border-3 border-black px-3 py-2">Handles Large Files</td><td className="border-3 border-black px-3 py-2">Difficult</td><td className="border-3 border-black px-3 py-2">Easy</td></tr>
+            <tr><td className="border-3 border-black px-3 py-2">Detects Hidden Spaces</td><td className="border-3 border-black px-3 py-2">Rarely</td><td className="border-3 border-black px-3 py-2">Yes</td></tr>
+            <tr><td className="border-3 border-black px-3 py-2">Reduces Human Error</td><td className="border-3 border-black px-3 py-2">No</td><td className="border-3 border-black px-3 py-2">Yes</td></tr>
           </tbody>
         </table>
       </div>

@@ -50,7 +50,7 @@ const faqKeys = [
 
 function createWriteUp() {
   return (
-    <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+    <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
         <h2>Combination Generator: All Possible Combinations Tool</h2>
         <p>A combination generator is a free online tool that lists every possible combination from a set of items—letters, numbers, words, or any list you provide. In combinations, order does not matter: {`{A, B}`} and {`{B, A}`} count as the same combination. That makes a combination generator ideal for lottery-style picks, sampling, team formation, password ideas, teaching combinatorics, and any task where you need "choose k from n" without caring about the order of selection.</p>

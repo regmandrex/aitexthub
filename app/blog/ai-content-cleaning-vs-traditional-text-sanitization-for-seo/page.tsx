@@ -28,7 +28,7 @@ export default function AiCleaningVsSanitizationSeoPage() {
         <AdSenseSlot className="w-full" />
       </div>
 
-      <div className="rounded-[28px] border border-slate-200 bg-white/70 p-6 shadow-xl shadow-slate-900/5 backdrop-blur-lg">
+      <div className="rounded-[28px] border-3 border-black bg-white/70 p-6 shadow-neo-lg shadow-slate-900/5 backdrop-blur-lg">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">SEO in the AI era</p>
         <h1 className="mt-3 text-3xl font-semibold text-slate-900">AI Content Cleaning vs Traditional Text Sanitization for SEO</h1>
         <p className="mt-2 text-slate-600">
@@ -43,7 +43,7 @@ export default function AiCleaningVsSanitizationSeoPage() {
             { title: 'Clean', detail: 'Unicode normalization and structure' },
             { title: 'Rank', detail: 'Better CWV and crawlability signals' },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-100 bg-slate-50 p-4 text-xs text-slate-700">
+            <div key={item.title} className="rounded-2xl border-2 border-black bg-slate-50 p-4 text-xs text-slate-700">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.detail}</p>
             </div>
@@ -101,7 +101,7 @@ export default function AiCleaningVsSanitizationSeoPage() {
               body: 'Sanitizers do not measure layout cost, CWV impact, or DOM bloat. They assume text is cheap. In 2026, it is not.',
             },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-200 bg-white/60 p-4 text-sm text-slate-700 shadow-sm">
+            <div key={item.title} className="rounded-2xl border-3 border-black bg-white/60 p-4 text-sm text-slate-700 shadow-neo-sm">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.body}</p>
             </div>
@@ -127,7 +127,7 @@ export default function AiCleaningVsSanitizationSeoPage() {
 
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">Core differences: AI cleaning vs traditional sanitization</h2>
-        <div className="rounded-2xl border border-slate-200 bg-white/70 p-5 text-sm text-slate-700 shadow-sm">
+        <div className="rounded-2xl border-3 border-black bg-white/70 p-5 text-sm text-slate-700 shadow-neo-sm">
           <table>
             <thead>
               <tr>
@@ -197,7 +197,7 @@ export default function AiCleaningVsSanitizationSeoPage() {
               body: 'Unstable layouts and poor readability increase bounce rate and reduce engagement, which increasingly influences SEO.',
             },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-200 bg-white/60 p-4 text-sm text-slate-700 shadow-sm">
+            <div key={item.title} className="rounded-2xl border-3 border-black bg-white/60 p-4 text-sm text-slate-700 shadow-neo-sm">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.body}</p>
             </div>
@@ -210,7 +210,7 @@ export default function AiCleaningVsSanitizationSeoPage() {
 
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">How AI content cleaning works in practice</h2>
-        <div className="rounded-2xl border border-brand-100 bg-brand-50 p-5 text-sm text-brand-900 shadow-sm">
+        <div className="rounded-2xl border border-brand-100 bg-brand-50 p-5 text-sm text-brand-900 shadow-neo-sm">
           <p className="font-semibold text-brand-800">Practical workflow</p>
           <ol className="mt-2 list-decimal space-y-2 pl-5 text-slate-800">
             <li>
@@ -276,7 +276,7 @@ export default function AiCleaningVsSanitizationSeoPage() {
             { q: 'Will cleaning affect rankings negatively?', a: 'No. It improves clarity, performance, and UX signals.' },
             { q: 'Is this only for large sites?', a: 'No. Small sites benefit too, especially on mobile.' },
           ].map((item) => (
-            <div key={item.q} className="rounded-2xl border border-slate-200 bg-white/60 p-4 text-sm text-slate-700 shadow-sm">
+            <div key={item.q} className="rounded-2xl border-3 border-black bg-white/60 p-4 text-sm text-slate-700 shadow-neo-sm">
               <p className="font-semibold text-slate-900">{item.q}</p>
               <p className="mt-1">{item.a}</p>
             </div>

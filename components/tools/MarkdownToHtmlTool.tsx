@@ -26,7 +26,7 @@ export function MarkdownToHtmlTool() {
     <div className="space-y-4">
       <div>
         <label className="block text-sm font-medium text-slate-700 mb-1">Markdown input</label>
-        <textarea value={input} onChange={e => setInput(e.target.value)} rows={8} placeholder="# Heading&#10;&#10;**Bold text** and *italic text*&#10;&#10;- List item" className="w-full rounded-lg border border-slate-200 px-3 py-2 text-sm font-mono resize-none focus:outline-none focus:ring-2 focus:ring-blue-500" />
+        <textarea value={input} onChange={e => setInput(e.target.value)} rows={8} placeholder="# Heading&#10;&#10;**Bold text** and *italic text*&#10;&#10;- List item" className="w-full rounded-lg border-3 border-black px-3 py-2 text-sm font-mono resize-none focus:outline-none focus:ring-2 focus:ring-blue-500" />
       </div>
       <button onClick={convert} className="px-5 py-2 rounded-lg bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium transition-colors">Convert to HTML</button>
       {output && (
@@ -39,8 +39,8 @@ export function MarkdownToHtmlTool() {
             <button onClick={copy} className={`px-3 py-1 rounded text-xs font-medium transition-colors ${copied ? 'bg-green-500 text-white' : 'bg-blue-600 hover:bg-blue-700 text-white'}`}>{copied ? '✓ Copied!' : 'Copy HTML'}</button>
           </div>
           {preview
-            ? <div className="rounded-lg border border-slate-200 bg-white px-4 py-3 prose prose-sm max-w-none" dangerouslySetInnerHTML={{ __html: output }} />
-            : <textarea readOnly value={output} rows={8} className="w-full rounded-lg border border-slate-200 bg-slate-50 px-3 py-2 text-sm font-mono resize-none" />
+            ? <div className="rounded-lg border-3 border-black bg-white px-4 py-3 prose prose-sm max-w-none" dangerouslySetInnerHTML={{ __html: output }} />
+            : <textarea readOnly value={output} rows={8} className="w-full rounded-lg border-3 border-black bg-slate-50 px-3 py-2 text-sm font-mono resize-none" />
           }
         </div>
       )}

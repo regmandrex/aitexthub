@@ -28,7 +28,7 @@ export default function ChatGPTTextToWordPressWorkflowPage() {
         <AdSenseSlot className="w-full" />
       </div>
 
-      <div className="rounded-[28px] border border-slate-200 bg-white/70 p-6 shadow-xl shadow-slate-900/5 backdrop-blur-lg">
+      <div className="rounded-[28px] border-3 border-black bg-white/70 p-6 shadow-neo-lg shadow-slate-900/5 backdrop-blur-lg">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">WordPress-ready AI publishing</p>
         <h1 className="mt-3 text-3xl font-semibold text-slate-900">ChatGPT Text to WordPress</h1>
         <p className="mt-2 text-slate-600">
@@ -43,7 +43,7 @@ export default function ChatGPTTextToWordPressWorkflowPage() {
             { title: 'SEO-safe', detail: 'Cleaner parsing, headings, and internal links' },
             { title: 'Faster pages', detail: 'Predictable DOM for better Core Web Vitals' },
           ].map((item) => (
-            <div key={item.title} className="rounded-2xl border border-slate-100 bg-slate-50 p-4 text-xs text-slate-700">
+            <div key={item.title} className="rounded-2xl border-2 border-black bg-slate-50 p-4 text-xs text-slate-700">
               <p className="font-semibold text-slate-900">{item.title}</p>
               <p className="mt-1">{item.detail}</p>
             </div>
@@ -73,7 +73,7 @@ export default function ChatGPTTextToWordPressWorkflowPage() {
           ChatGPT output can include markdown-style artifacts, non-standard Unicode spaces, soft line breaks, and invisible zero-width
           characters. WordPress handles these inconsistently across themes, plugins, and devices.
         </p>
-        <div className="rounded-2xl border border-slate-200 bg-slate-50 p-5 text-sm text-slate-700 shadow-sm">
+        <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
           <p className="font-semibold text-slate-900">The golden rule</p>
           <p className="mt-2">
             <strong>Never paste ChatGPT text directly into the WordPress Visual Editor.</strong> Clean first, then insert via the Code Editor.
@@ -83,7 +83,7 @@ export default function ChatGPTTextToWordPressWorkflowPage() {
 
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">The cleanest ChatGPT to WordPress workflow (step by step)</h2>
-        <div className="rounded-2xl border border-brand-100 bg-brand-50 p-5 text-sm text-brand-900 shadow-sm">
+        <div className="rounded-2xl border border-brand-100 bg-brand-50 p-5 text-sm text-brand-900 shadow-neo-sm">
           <p className="font-semibold text-brand-800">SEO-safe, performance-friendly pipeline</p>
           <ol className="mt-2 list-decimal space-y-2 pl-5 text-slate-800">
             <li>
@@ -136,11 +136,11 @@ export default function ChatGPTTextToWordPressWorkflowPage() {
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">Gutenberg blocks vs Classic Editor</h2>
         <div className="grid gap-4 md:grid-cols-2">
-          <div className="rounded-2xl border border-slate-200 bg-white/70 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/70 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Gutenberg (Block Editor)</p>
             <p className="mt-2">Most sensitive to hidden characters and broken structure. The clean workflow prevents block corruption.</p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/70 p-5 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/70 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Classic Editor</p>
             <p className="mt-2">More forgiving, but still vulnerable to invisible Unicode and spacing artifacts. Cleaning still matters.</p>
           </div>
@@ -201,7 +201,7 @@ export default function ChatGPTTextToWordPressWorkflowPage() {
             { q: 'Is this workflow beginner-friendly?', a: 'Yes. Once you do it a few times it becomes second nature.' },
             { q: 'Is this necessary for small blogs?', a: 'If you care about SEO, UX, and performance, yes.' },
           ].map((item) => (
-            <div key={item.q} className="rounded-2xl border border-slate-200 bg-white/60 p-4 text-sm text-slate-700 shadow-sm">
+            <div key={item.q} className="rounded-2xl border-3 border-black bg-white/60 p-4 text-sm text-slate-700 shadow-neo-sm">
               <p className="font-semibold text-slate-900">{item.q}</p>
               <p className="mt-1">{item.a}</p>
             </div>

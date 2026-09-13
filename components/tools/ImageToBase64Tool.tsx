@@ -36,7 +36,7 @@ export function ImageToBase64Tool() {
         onDragLeave={() => setIsDragging(false)}
         onDrop={e => { e.preventDefault(); setIsDragging(false); const f = e.dataTransfer.files?.[0]; if (f) processFile(f); }}
         onClick={() => fileInputRef.current?.click()}
-        className={`border-2 border-dashed rounded-lg p-8 text-center cursor-pointer transition-colors ${isDragging ? 'border-blue-500 bg-blue-50' : 'border-slate-300 hover:border-blue-400 hover:bg-slate-50'}`}
+        className={`border-2 border-dashed rounded-lg p-8 text-center cursor-pointer transition-colors ${isDragging ? 'border-blue-500 bg-blue-50' : 'border-black hover:border-blue-400 hover:bg-slate-50'}`}
       >
         <p className="text-sm font-medium text-slate-700">Drop an image here or click to upload</p>
         <p className="text-xs text-slate-400 mt-1">PNG, JPG, GIF, WebP, SVG</p>
@@ -45,7 +45,7 @@ export function ImageToBase64Tool() {
 
       {imgSrc && (
         <div className="flex items-center gap-3">
-          <img src={imgSrc} alt="Preview" className="w-16 h-16 rounded object-cover border border-slate-200" />
+          <img src={imgSrc} alt="Preview" className="w-16 h-16 rounded object-cover border-3 border-black" />
           <span className="text-sm text-slate-600">Image loaded</span>
         </div>
       )}
@@ -58,7 +58,7 @@ export function ImageToBase64Tool() {
                 <label className="text-xs font-medium text-slate-600">{label}</label>
                 <button onClick={() => copy(val, key)} className={`px-3 py-1 rounded text-xs font-medium transition-colors ${copied === key ? 'bg-green-500 text-white' : 'bg-blue-600 hover:bg-blue-700 text-white'}`}>{copied === key ? '✓ Copied!' : 'Copy'}</button>
               </div>
-              <textarea readOnly value={val} rows={2} className="w-full rounded border border-slate-200 bg-slate-50 px-2 py-1.5 text-xs font-mono resize-none" />
+              <textarea readOnly value={val} rows={2} className="w-full rounded border-3 border-black bg-slate-50 px-2 py-1.5 text-xs font-mono resize-none" />
             </div>
           ))}
         </div>

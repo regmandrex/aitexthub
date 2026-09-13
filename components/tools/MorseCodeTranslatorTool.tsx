@@ -49,7 +49,7 @@ export function MorseCodeTranslatorTool() {
           className={`rounded-full px-4 py-2 text-sm font-semibold ${
             mode === 'encode'
               ? 'bg-brand-700 text-white'
-              : 'border border-slate-200 bg-white text-slate-700 hover:border-slate-300'
+              : 'border-3 border-black bg-white text-slate-700 hover:border-black'
           }`}
         >
           Text to Morse
@@ -60,7 +60,7 @@ export function MorseCodeTranslatorTool() {
           className={`rounded-full px-4 py-2 text-sm font-semibold ${
             mode === 'decode'
               ? 'bg-brand-700 text-white'
-              : 'border border-slate-200 bg-white text-slate-700 hover:border-slate-300'
+              : 'border-3 border-black bg-white text-slate-700 hover:border-black'
           }`}
         >
           Morse to Text
@@ -93,7 +93,7 @@ export function MorseCodeTranslatorTool() {
         />
       </div>
 
-      <div className="rounded-xl border border-slate-200 bg-slate-50 p-4">
+      <div className="rounded-xl border-3 border-black bg-slate-50 p-4">
         <h3 className="text-sm font-semibold text-slate-800">Options</h3>
         <div className="mt-3 grid gap-3 text-sm text-slate-700 md:grid-cols-2">
           <label className="flex items-center gap-2">
@@ -121,14 +121,14 @@ export function MorseCodeTranslatorTool() {
         <button
           type="button"
           onClick={handleClear}
-          className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
+          className="inline-flex items-center justify-center rounded-lg border-3 border-black bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
         >
           Clear
         </button>
         <button
           type="button"
           onClick={handleSample}
-          className="inline-flex items-center justify-center rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
+          className="inline-flex items-center justify-center rounded-lg border-3 border-black bg-white px-4 py-2 text-sm font-semibold text-slate-700 hover:bg-slate-50"
         >
           Load sample
         </button>

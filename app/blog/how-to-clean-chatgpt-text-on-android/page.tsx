@@ -29,7 +29,7 @@ export default function HowToCleanChatGPTTextOnAndroidPage() {
         <AdSenseSlot className="w-full" />
       </div>
 
-      <div className="rounded-[28px] border border-slate-200 bg-white/70 p-6 shadow-xl shadow-slate-900/5 backdrop-blur-lg">
+      <div className="rounded-[28px] border-3 border-black bg-white/70 p-6 shadow-neo-lg shadow-slate-900/5 backdrop-blur-lg">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">
           Android workflow for clean ChatGPT text
         </p>
@@ -111,15 +111,15 @@ export default function HowToCleanChatGPTTextOnAndroidPage() {
       <section className="mt-10 space-y-3">
         <h2 className="text-2xl font-semibold text-slate-900">FAQ</h2>
         <div className="space-y-3">
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-4 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-4 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Should I clean before I add links and headings in my CMS?</p>
             <p className="mt-1">Yes. Clean first, then format in the CMS so it doesn&apos;t inherit chat artifacts.</p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-4 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-4 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Will cleaning change my wording?</p>
             <p className="mt-1">No—cleanup is meant to fix spacing and hidden characters, not rewrite.</p>
           </div>
-          <div className="rounded-2xl border border-slate-200 bg-white/60 p-4 text-sm text-slate-700 shadow-sm">
+          <div className="rounded-2xl border-3 border-black bg-white/60 p-4 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Why does the same text look different between apps?</p>
             <p className="mt-1">Apps interpret whitespace and line breaks differently, especially when the source was a chat UI.</p>
           </div>

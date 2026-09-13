@@ -61,7 +61,7 @@ export default function AuthModal({ onClose, onSuccess, initialMode = 'login', p
     <div className="fixed inset-0 z-[60] flex items-center justify-center p-4">
       <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" onClick={onClose} />
 
-      <div className="relative w-full max-w-md overflow-hidden rounded-2xl bg-white shadow-2xl">
+      <div className="relative w-full max-w-md overflow-hidden rounded-2xl border-3 border-black bg-white shadow-neo-lg">
         {/* Header */}
         <div className="bg-gradient-to-r from-slate-900 to-slate-800 px-6 py-5">
           <button
@@ -95,7 +95,7 @@ export default function AuthModal({ onClose, onSuccess, initialMode = 'login', p
           <button
             type="button"
             onClick={() => signIn.social({ provider: 'google', callbackURL: '/ai-humanizer-pro' })}
-            className="flex w-full items-center justify-center gap-2 rounded-xl border border-slate-300 bg-white px-4 py-2.5 text-sm font-medium text-slate-700 transition hover:bg-slate-50"
+            className="flex w-full items-center justify-center gap-2 rounded-xl border-2 border-black bg-white px-4 py-2.5 text-sm font-medium text-slate-700 transition hover:bg-slate-50"
           >
             <svg className="h-4 w-4" viewBox="0 0 48 48">
               <path fill="#FFC107" d="M43.6 20.5H42V20H24v8h11.3c-1.6 4.7-6 8-11.3 8-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.1 7.9 3l5.7-5.7C34 6.1 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20c11 0 19.7-8 19.7-20 0-1.3-.1-2.3-.4-3.5z" />
@@ -120,7 +120,7 @@ export default function AuthModal({ onClose, onSuccess, initialMode = 'login', p
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="you@example.com"
-                className="mt-1 w-full rounded-lg border border-slate-300 px-3 py-2 text-sm focus:border-violet-500 focus:outline-none focus:ring-1 focus:ring-violet-500"
+                className="mt-1 w-full rounded-lg border-2 border-black px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-violet-500"
               />
             </div>
             <div>
@@ -133,7 +133,7 @@ export default function AuthModal({ onClose, onSuccess, initialMode = 'login', p
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   placeholder={isLogin ? '••••••••' : 'At least 8 characters'}
-                  className="w-full rounded-lg border border-slate-300 px-3 py-2 pr-10 text-sm focus:border-violet-500 focus:outline-none focus:ring-1 focus:ring-violet-500"
+                  className="w-full rounded-lg border-2 border-black px-3 py-2 pr-10 text-sm focus:outline-none focus:ring-2 focus:ring-violet-500"
                 />
                 <button type="button" onClick={() => setShowPassword((v) => !v)} className="absolute right-3 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600">
                   {showPassword ? (
@@ -147,7 +147,7 @@ export default function AuthModal({ onClose, onSuccess, initialMode = 'login', p
             <button
               type="submit"
               disabled={loading}
-              className="w-full rounded-xl bg-gradient-to-r from-violet-600 to-purple-700 py-2.5 text-sm font-bold text-white shadow-sm transition hover:from-violet-700 hover:to-purple-800 disabled:opacity-60"
+              className="w-full rounded-xl border-3 border-black bg-gradient-to-r from-violet-600 to-purple-700 py-2.5 text-sm font-bold text-white shadow-neo-sm transition-transform hover:translate-y-0.5 hover:shadow-none disabled:opacity-60"
             >
               {loading ? (isLogin ? 'Signing in...' : 'Creating account...') : (isLogin ? 'Sign In' : 'Create Account')}
             </button>

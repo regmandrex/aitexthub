@@ -60,7 +60,7 @@ const faqKeys = [
 
 function createWriteUp() {
   return (
-    <section className="rounded-2xl border border-slate-200 bg-white p-4 shadow-sm md:p-6 mt-10">
+    <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
         <h2>Find and Replace Online: Bulk Text Replacement Tool</h2>
         <p>Changing the same word, phrase, or character everywhere in a long document by hand is slow and error-prone. A find and replace tool does it in one step: you enter the text to find and the text to replace it with, and the tool updates every occurrence at once. Whether you need to fix a repeated typo, normalize a product name, swap placeholders, or clean data by removing or replacing a character, a free find and replace online tool saves time and keeps edits consistent.</p>
