@@ -14,8 +14,9 @@
  *   node scripts/check-encoding.mjs            # scan whole repo (CI)
  *   node scripts/check-encoding.mjs <files...> # scan specific files (pre-commit)
  */
-import { readFileSync, statSync } from 'node:fs';
+import { readFileSync, statSync, readdirSync } from 'node:fs';
 import { execSync } from 'node:child_process';
+import path from 'node:path';
 
 const EXTS = /\.(ts|tsx|js|jsx|mjs|json|css|md|mdx|html|txt|xml)$/;
 
@@ -73,10 +74,30 @@ const ALLOW_LINE = /shows as|garbled characters|mojibake|example of corrupt/i;
 // Files where '?' / invisible chars are real content.
 const ALLOW_FILE = /invisible|zero-width|unicode-text|csv-to-json/;
 
+const WALK_IGNORE = /^(node_modules|\.git|\.next|\.vercel|dist|build|coverage)$/;
+
+// Plain filesystem walk, used when git isn't available (e.g. a Vercel build
+// deploying from an uploaded archive rather than a git checkout).
+function walkFiles(dir = '.', out = []) {
+  for (const entry of readdirSync(dir, { withFileTypes: true })) {
+    if (WALK_IGNORE.test(entry.name)) continue;
+    const full = path.join(dir, entry.name);
+    if (entry.isDirectory()) walkFiles(full, out);
+    else out.push(full.split(path.sep).join('/'));
+  }
+  return out;
+}
+
 function listFiles(args) {
   if (args.length) return args.filter((f) => EXTS.test(f));
-  const out = execSync('git ls-files', { encoding: 'utf8' });
-  return out.split('\n').filter((f) => f && EXTS.test(f));
+  try {
+    const out = execSync('git ls-files', { encoding: 'utf8', stdio: ['ignore', 'pipe', 'ignore'] });
+    return out.split('\n').filter((f) => f && EXTS.test(f));
+  } catch {
+    // Not a git checkout (e.g. Vercel building from an uploaded archive) —
+    // fall back to walking the filesystem directly.
+    return walkFiles('.').filter((f) => EXTS.test(f));
+  }
 }
 
 const files = listFiles(process.argv.slice(2));
