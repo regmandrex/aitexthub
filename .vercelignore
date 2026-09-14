@@ -1,0 +1,7 @@
+# Tooling/dev-only directories that should never be uploaded to a Vercel build.
+# (These aren't excluded via .gitignore because they're intentionally tracked
+# in git for the team's own use — just not needed inside the deploy.)
+.claude
+.agents
+docs
+*.log

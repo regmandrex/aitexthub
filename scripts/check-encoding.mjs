@@ -74,7 +74,7 @@ const ALLOW_LINE = /shows as|garbled characters|mojibake|example of corrupt/i;
 // Files where '?' / invisible chars are real content.
 const ALLOW_FILE = /invisible|zero-width|unicode-text|csv-to-json/;
 
-const WALK_IGNORE = /^(node_modules|\.git|\.next|\.vercel|dist|build|coverage)$/;
+const WALK_IGNORE = /^(node_modules|\.git|\.next|\.vercel|dist|build|coverage|\.claude|\.agents)$/;
 
 // Plain filesystem walk, used when git isn't available (e.g. a Vercel build
 // deploying from an uploaded archive rather than a git checkout).
