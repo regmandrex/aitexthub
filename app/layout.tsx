@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from 'next';
 import { ReactNode } from 'react';
 import dynamic from 'next/dynamic';
 import { Outfit } from 'next/font/google';
+import Script from 'next/script';
 import Header from '../components/Header';
 import { JsonLd } from '../components/JsonLd';
 import { BreadcrumbJsonLdAndLang } from '../components/BreadcrumbJsonLdAndLang';
@@ -103,11 +104,17 @@ export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html lang="en" dir="ltr">
       <head>
+        <link rel="preconnect" href="https://pagead2.googlesyndication.com" />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
         <link rel="alternate" type="application/rss+xml" title="AI Text Cleanup Tools Blog & Tools RSS Feed" href="https://aitextcleanuptools.com/rss.xml" />
       </head>
       <body className={`${outfit.variable} bg-slate-50 text-slate-900 antialiased`}>
-        {/* AdSense script disabled site-wide for now — see components/ads/* and GoogleAds.tsx. */}
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8764610479002120"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
         <DeferredThirdPartyScripts />
         <JsonLd data={ORG_SCHEMA} />
         <JsonLd data={SITE_SCHEMA} />
