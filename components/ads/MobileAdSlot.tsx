@@ -1,14 +1,6 @@
-import AdSenseSlot from './AdSenseSlot';
-
+// AdSense is temporarily disabled site-wide. Returning null here (rather than
+// editing every call site) keeps all existing <MobileAdSlot /> usages working
+// with zero rendered output. Restore the previous implementation to re-enable.
 export default function MobileAdSlot() {
-  return (
-    <div className="md:hidden my-4 flex justify-center">
-      <div
-        className="w-full max-w-[360px] min-h-[280px]"
-        aria-label="Mobile ad slot"
-      >
-        <AdSenseSlot className="w-full" />
-      </div>
-    </div>
-  );
+  return null;
 }
