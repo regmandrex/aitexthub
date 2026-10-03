@@ -191,18 +191,18 @@ export default function Footer() {
         <div className="mt-6 rounded-lg border-3 border-black bg-amber-50 px-4 py-3 shadow-neo-sm">
           <h2 className="text-sm font-semibold text-slate-900">Important Disclaimer</h2>
           <p className="mt-1 text-xs leading-relaxed text-slate-700">
-            All tools provided on this website are for <strong>educational purposes only</strong> and are not intended to be
-            used for any other purpose. All mentions of brand names, trademarks, service marks, and company names are made
-            solely for <strong>educational and informational purposes</strong> and do not constitute endorsement, affiliation,
-            sponsorship, or approval. We do not intend to infringe upon any copyright, trademark, or intellectual property
-            rights. The tools provided are designed for educational use and are not intended to violate, breach, or circumvent
-            the terms of service of any mentioned brands or services.{' '}
+            Every tool on this site is offered <strong>for educational use only</strong> and should not be used for any
+            other purpose. Product names, company names, trademarks and service marks appear here only{' '}
+            <strong>to inform and explain</strong>; naming them does not imply any endorsement, sponsorship, partnership or
+            approval. We respect the copyrights, trademarks and other intellectual property of their owners and do not
+            intend to infringe on them, and none of these tools are meant to break or get around any service&apos;s terms
+            of use.{' '}
             <strong>
-              We are not affiliated with, endorsed by, or associated with any of the brands, companies, or services mentioned
-              on this website.
+              AI Text Cleanup Tools is independent and has no affiliation with, or endorsement from, any brand, company or
+              service referenced on this site.
             </strong>{' '}
-            All brand names are the property of their respective owners. Use of these tools is at your own risk and
-            responsibility. See our{' '}
+            Each brand name belongs to its respective owner. You use these tools at your own discretion and risk. Read
+            the{' '}
             <Link href="/disclaimer" className="font-semibold text-brand-700 hover:underline">
               full disclaimer
             </Link>
