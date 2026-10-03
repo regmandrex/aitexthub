@@ -19,7 +19,7 @@ function WriteUp() {
         <h3>Frequent AI Patterns in Roleplay Reply</h3>
         <p>AI-created roleplay reply often: adopts an overly formal register failing to match conversational expectations of the format; addresses relevant points systematically rather than prioritizing emotional resonance; employs generic transitional phrasing resembling boilerplate instead of authentic voice; and misses specific cultural callbacks, inside jokes, and community-specific terms making specialized content appear native.</p>
 
-        <h2>[10] Instructions For The Roleplay Reply Generator</h2>
+        <h2>Instructions For The Roleplay Reply Generator</h2>
         <p>Input your brief, prompt, or draft into the text box. Hit Generate. The system evaluates your text and crafts original, human-sounding material. Inspect the output - always evaluate AI-generated writing prior to deployment - and refine any areas that fall short of your exact requirements. The entire procedure wraps up in under ten seconds for most inputs.</p>
 
         <h2>Key Features</h2>

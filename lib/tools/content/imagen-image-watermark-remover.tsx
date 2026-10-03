@@ -30,7 +30,7 @@ function WriteUp() {
         <h3>Third-Party Imagen Integrations</h3>
         <p>Numerous SaaS apps and creative utilities rely on the Imagen API, delivering Imagen-driven image creation inside their own application environments. Pictures supplied through these third-party integrations may or may not retain watermarks depending on how the integration operates. This utility manages Imagen graphics no matter if they arrived straight from Google API or via a third-party integration keeping the watermarks.</p>
 
-        <h2>[10] Instructions For The Imagen Image Watermark Remover</h2>
+        <h2>Instructions For The Imagen Image Watermark Remover</h2>
         <p>Upload your Imagen graphic utilizing the file browser underneath. Optionally configure a corner crop to eliminate visible overlays and select PNG or JPEG output. Click <strong>Clean image</strong> and retrieve the processed result. All processing executes locally inside your browser without any server upload.</p>
 
         <h2>Limitations</h2>

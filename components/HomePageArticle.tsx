@@ -4,7 +4,7 @@ export default function HomePageArticle() {
   return (
     <section className="mt-10 space-y-7 rounded-[28px] border-3 border-black bg-white p-5 shadow-neo md:p-8">
       <div className="max-w-3xl">
-        <p className="text-xs font-bold uppercase tracking-[0.18em] text-teal-700">[25] Clean AI text workflow</p>
+        <p className="text-xs font-bold uppercase tracking-[0.18em] text-teal-700">Clean AI text workflow</p>
         <h2 className="mt-2 text-2xl font-bold text-slate-950">Refine AI Writing Before You Copy, Share, or Upload</h2>
       </div>
       <p>AI Text Cleanup Tools provides a reliable sanitization step for any content extracted from ChatGPT, Claude, Gemini, DeepSeek, Perplexity, and other writing assistants. The main homepage utility, AI Text Cleaner, serves a practical purpose: taking copied AI output laden with formatting clutter and transforming it into uniform text that functions correctly across documents, websites, emails, forms, CMS editors, and publishing platforms.</p>

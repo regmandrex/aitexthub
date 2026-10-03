@@ -84,7 +84,7 @@ function createWriteUp() {
         <p>Beyond chats, games, sports, and literature, individuals apply a Funny Name Generator toward pets, automobiles, houseplants, robotic vacuums, home Wi-Fi networks, band titles, podcast names, party badges, baby shower games, and icebreakers. These represent low-stakes uses, and instances where you ought to lean heaviest into absurdity — nothing important rests on the title, meaning the single criteria is whether it induces laughter.</p>
         <p>Wi-Fi network names deserve mention due to an unusual trait: your neighbors witness them. A humorous network title is a joke told to an audience you never encounter and who cannot reply, representing its own unique delight. The identical logic applies to a funny name on a delivery ticket or a coffee mug.</p>
 
-        <h2>[10] How to Use This Funny Name Generator</h2>
+        <h2>How to Use This Funny Name Generator</h2>
         <p>This Funny Name Generator is purposefully straightforward, yet several habits significantly enhance what you extract from it.</p>
         <ul>
           <li><strong>Start with twenty-four on your initial attempt.</strong> Humor relies on contrast. You need multiple options to determine which moniker stands out rather than just feeling average.</li>

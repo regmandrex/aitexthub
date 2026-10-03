@@ -86,23 +86,23 @@ const WriteUp = () => (
       <h3>Attacks Against TOTP</h3>
       <p><strong>Real-time phishing (adversary-in-the-middle)</strong>: The most impactful practical threat. A fraudulent page forwards user credentials alongside the TOTP code instantly to the legitimate service, granting access prior to the expiration of the 30-second timeframe. Software like Evilginx2 and Modlishka streamline this process. TOTP fails to defend against advanced real-time phishing schemes. Hardware-based security keys (FIDO2/WebAuthn) defend against such attacks by tying authentication directly to the origin URL.</p>
       <p><strong>Secret theft</strong>: When the database containing server-side TOTP secrets suffers a breach and secrets remain unencrypted, TOTP security fails for every account. Secrets demand encrypted storage at rest, preferably leveraging hardware security modules (HSMs).</p>
-      <p>[1] <strong>Live brute-force attempts</strong>: Given a 6-character code and a 30-second interval, an adversary can submit perhaps 2 guesses per cycle (production systems typically block access after 1 to 3 failed attempts). Because the overall pool spans 1,000,000 potential combinations, guessing an active code without rate limits carries just a 1-in-1,000,000 probability. When request throttling is implemented, guessing the code in real time becomes mathematically impossible.</p>
-      <p>[2] <strong>Clock manipulation</strong>: The validity of TOTP codes depends upon matching system clocks. Should an attacker succeed in altering a target's internal clock, they might manage to authenticate using expired or future tokens. Robust authentication backends counteract minor timing variations by allowing a drift window (frequently ±1 period, which translates to ±30 seconds) to manage slight system desynchronization.</p>
-      <p>[3] <strong>SIM card hijacking</strong>: This threat exclusively targets text-based verification rather than TOTP systems. Because TOTP tokens bypass cellular messaging entirely, the protocol remains completely safe from SIM swapping schemes.</p>
-      <p>[4] <strong>Malicious software</strong>: When an attacker infects a victim's machine with spyware, they can capture the active TOTP string straight out of the authenticator application or log keystrokes during entry. That vulnerability stems from an insecure operating environment rather than any flaw in TOTP design.</p>
+      <p><strong>Live brute-force attempts</strong>: Given a 6-character code and a 30-second interval, an adversary can submit perhaps 2 guesses per cycle (production systems typically block access after 1 to 3 failed attempts). Because the overall pool spans 1,000,000 potential combinations, guessing an active code without rate limits carries just a 1-in-1,000,000 probability. When request throttling is implemented, guessing the code in real time becomes mathematically impossible.</p>
+      <p><strong>Clock manipulation</strong>: The validity of TOTP codes depends upon matching system clocks. Should an attacker succeed in altering a target's internal clock, they might manage to authenticate using expired or future tokens. Robust authentication backends counteract minor timing variations by allowing a drift window (frequently ±1 period, which translates to ±30 seconds) to manage slight system desynchronization.</p>
+      <p><strong>SIM card hijacking</strong>: This threat exclusively targets text-based verification rather than TOTP systems. Because TOTP tokens bypass cellular messaging entirely, the protocol remains completely safe from SIM swapping schemes.</p>
+      <p><strong>Malicious software</strong>: When an attacker infects a victim's machine with spyware, they can capture the active TOTP string straight out of the authenticator application or log keystrokes during entry. That vulnerability stems from an insecure operating environment rather than any flaw in TOTP design.</p>
 
-      <h3>[5] TOTP vs. SMS 2FA vs. FIDO2</h3>
-      <p>[6] Not all 2FA is equally secure. Here's a comparative analysis:</p>
+      <h3>TOTP vs. SMS 2FA vs. FIDO2</h3>
+      <p>Not all 2FA is equally secure. Here's a comparative analysis:</p>
       <ul>
-        <li>[7] <strong>Text message 2FA</strong>: Simple to adopt but inherently insecure—exposed to carrier impersonation, SS7 routing vulnerabilities, network eavesdropping, and SIM hijacking. Consequently, NIST SP 800-63B advises against relying on SMS messaging for core multi-factor authentication.</li>
-        <li>[8] <strong>TOTP</strong>: Dependable protection—unaffected by carrier exploits or SIM hijacking, functional without an internet connection, and universally supported. It remains susceptible to live adversary-in-the-middle phishing and database secret leakage, yet outperforms SMS dramatically.</li>
-        <li>[9] <strong>Hardware tokens via FIDO2/WebAuthn</strong>: Top-tier defense—immune to phishing through cryptographic domain binding, protected from replay attempts, requiring no secret data stored on authentication servers, and resilient even during active proxy sessions. The premier benchmark for mission-critical accounts.</li>
-        <li>[10] <strong>Push notifications (Duo, Microsoft Authenticator)</strong>: Convenient but vulnerable to MFA fatigue attacks where attackers spam push requests until the user accidentally approves one.</li>
+        <li><strong>Text message 2FA</strong>: Simple to adopt but inherently insecure—exposed to carrier impersonation, SS7 routing vulnerabilities, network eavesdropping, and SIM hijacking. Consequently, NIST SP 800-63B advises against relying on SMS messaging for core multi-factor authentication.</li>
+        <li><strong>TOTP</strong>: Dependable protection—unaffected by carrier exploits or SIM hijacking, functional without an internet connection, and universally supported. It remains susceptible to live adversary-in-the-middle phishing and database secret leakage, yet outperforms SMS dramatically.</li>
+        <li><strong>Hardware tokens via FIDO2/WebAuthn</strong>: Top-tier defense—immune to phishing through cryptographic domain binding, protected from replay attempts, requiring no secret data stored on authentication servers, and resilient even during active proxy sessions. The premier benchmark for mission-critical accounts.</li>
+        <li><strong>Push notifications (Duo, Microsoft Authenticator)</strong>: Convenient but vulnerable to MFA fatigue attacks where attackers spam push requests until the user accidentally approves one.</li>
       </ul>
 
-      <h2>[11] Implementing TOTP: Server-Side Code</h2>
+      <h2>Implementing TOTP: Server-Side Code</h2>
 
-      <h3>[12] Generating a TOTP Secret</h3>
+      <h3>Generating a TOTP Secret</h3>
       <pre><code>{`// Node.js
 import * as crypto from 'crypto';
 
@@ -119,7 +119,7 @@ def generate_totp_secret(byte_length=20):
     random_bytes = secrets.token_bytes(byte_length)
     return base64.b32encode(random_bytes).decode('utf-8')`}</code></pre>
 
-      <h3>[13] Validating a TOTP Code</h3>
+      <h3>Validating a TOTP Code</h3>
       <pre><code>{`// Node.js — TOTP validation with clock skew tolerance
 import * as crypto from 'crypto';
 
@@ -153,19 +153,19 @@ function generateHotp(secretBytes: Buffer, counter: number, digits: number): str
   return code.toString().padStart(digits, '0');
 }`}</code></pre>
 
-      <h3>[14] Libraries for TOTP Implementation</h3>
+      <h3>Libraries for TOTP Implementation</h3>
       <ul>
-        <li>[15] <strong>Node.js</strong>: <code>otplib</code>, <code>speakeasy</code>, <code>@otplib/preset-default</code></li>
+        <li><strong>Node.js</strong>: <code>otplib</code>, <code>speakeasy</code>, <code>@otplib/preset-default</code></li>
         <li><strong>Python</strong>: <code>pyotp</code>, <code>onetimepass</code></li>
-        <li>[16] <strong>Go</strong>: <code>github.com/pquerna/otp</code></li>
+        <li><strong>Go</strong>: <code>github.com/pquerna/otp</code></li>
         <li><strong>Ruby</strong>: <code>rotp</code></li>
         <li><strong>Java</strong>: <code>GoogleAuth</code>, <code>aerogear-otp-java</code></li>
-        <li>[17] <strong>PHP</strong>: <code>spomky-labs/otphp</code>, <code>google-authenticator-php</code></li>
+        <li><strong>PHP</strong>: <code>spomky-labs/otphp</code>, <code>google-authenticator-php</code></li>
       </ul>
-      <p>[18] Rely on an established, well-tested package instead of rolling your own TOTP algorithm. Battle-tested packages properly address intricate edge scenarios including Base32 padding discrepancies, clock drift tolerance, side-channel immune comparisons, and accurate HMAC operations.</p>
+      <p>Rely on an established, well-tested package instead of rolling your own TOTP algorithm. Battle-tested packages properly address intricate edge scenarios including Base32 padding discrepancies, clock drift tolerance, side-channel immune comparisons, and accurate HMAC operations.</p>
 
       <h3>Timing-Safe Comparison</h3>
-      <p>[19] TOTP code comparison must use timing-safe string comparison to prevent timing side-channel attacks. A naive <code>code === expected</code> comparison in some languages returns faster when the strings differ at an earlier position, leaking information about how many digits are correct:</p>
+      <p>TOTP code comparison must use timing-safe string comparison to prevent timing side-channel attacks. A naive <code>code === expected</code> comparison in some languages returns faster when the strings differ at an earlier position, leaking information about how many digits are correct:</p>
       <pre><code>{`// Node.js — timing-safe comparison
 import * as crypto from 'crypto';
 function timingSafeEqual(a: string, b: string): boolean {
@@ -178,17 +178,17 @@ import hmac
 def timing_safe_equal(a: str, b: str) -> bool:
     return hmac.compare_digest(a, b)`}</code></pre>
 
-      <h2>[20] TOTP Enrollment Flow Best Practices</h2>
-      <p>[21] The onboarding workflow is just as vital as the core mathematical cryptography. An unintuitive or confusing verification registration creates friction, escalates user lockout problems, and exposes security vulnerabilities.</p>
+      <h2>TOTP Enrollment Flow Best Practices</h2>
+      <p>The onboarding workflow is just as vital as the core mathematical cryptography. An unintuitive or confusing verification registration creates friction, escalates user lockout problems, and exposes security vulnerabilities.</p>
 
-      <h3>[22] Secret Generation and QR Code Display</h3>
-      <p>[23] Produce the authentication key directly on the backend using a CSPRNG (cryptographically secure pseudo-random number generator). Avoid creating TOTP secrets inside the client environment. Present the QR graphic alongside the unencoded secret string simultaneously; this ensures visitors lacking cameras or configuring credentials inside a password manager can finalize their setup.</p>
+      <h3>Secret Generation and QR Code Display</h3>
+      <p>Produce the authentication key directly on the backend using a CSPRNG (cryptographically secure pseudo-random number generator). Avoid creating TOTP secrets inside the client environment. Present the QR graphic alongside the unencoded secret string simultaneously; this ensures visitors lacking cameras or configuring credentials inside a password manager can finalize their setup.</p>
 
       <h3>Verification Before Enabling</h3>
-      <p>[24] Do not store the shared secret or activate TOTP on a user account until they supply a verified TOTP code. Doing so ensures that they properly captured the QR code and are capable of producing valid passcodes. Skipping this confirmation phase risks permanently locking out individuals who scanned the code improperly.</p>
+      <p>Do not store the shared secret or activate TOTP on a user account until they supply a verified TOTP code. Doing so ensures that they properly captured the QR code and are capable of producing valid passcodes. Skipping this confirmation phase risks permanently locking out individuals who scanned the code improperly.</p>
 
       <h3>Backup Codes</h3>
-      <p>[25] Provide an allotment of single-use recovery credentials whenever an individual turns on TOTP. With these tokens, people can regain account access if they misplace their authenticator hardware. Industry standards recommend generating 8–10 distinct codes containing 8–12 characters apiece. Keep these values hashed via bcrypt or comparable algorithms; handle them like login passwords instead of ordinary secrets. Show them just one time, prompt the user to archive them securely, and include an option to issue new ones (which must immediately cancel all existing recovery tokens).</p>
+      <p>Provide an allotment of single-use recovery credentials whenever an individual turns on TOTP. With these tokens, people can regain account access if they misplace their authenticator hardware. Industry standards recommend generating 8–10 distinct codes containing 8–12 characters apiece. Keep these values hashed via bcrypt or comparable algorithms; handle them like login passwords instead of ordinary secrets. Show them just one time, prompt the user to archive them securely, and include an option to issue new ones (which must immediately cancel all existing recovery tokens).</p>
 
       <h3>Clock Synchronization</h3>
       <p>Clock drift must be accounted for during TOTP validation. A standard window is plus or minus 30 seconds, which permits the prior and subsequent codes. Certain systems permit plus or minus 90 seconds, spanning three windows, to support hardware with heavy time drift. Monitor allowable time variance on a per-user basis when utilizing extended windows.</p>

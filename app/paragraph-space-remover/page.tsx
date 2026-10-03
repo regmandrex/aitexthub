@@ -194,11 +194,11 @@ const article = (
     <h3>Technical Writing and Documentation</h3>
     <p>Technical documentation in Confluence, Notion, GitBook, or plain text formats requires consistent paragraph spacing for professional presentation. AI-drafted documentation with irregular paragraph spacing looks unrefined and proves harder to read. A Paragraph Space Remover pass prior to publishing documentation guarantees consistent visual rhythm throughout.</p>
 
-    <h2>[4] The Mechanics Of The Paragraph Space Remover</h2>
+    <h2>The Mechanics Of The Paragraph Space Remover</h2>
     <p>The Paragraph Space Remover employs a regular expression to locate consecutive empty lines — sequences of two or more newline characters featuring only whitespace between them — and substitutes each sequence with precisely two newline characters (which yields a single empty line between paragraphs). Line endings are normalized to LF initially so the detection functions consistently regardless of whether the source used CRLF (Windows), CR (Mac), or LF (Unix/Linux) line endings. Multiple consecutive spaces within lines are condensed to single spaces as part of the same pass.</p>
     <p>The outcome is text featuring uniform paragraph spacing: every paragraph block is separated from the next by exactly one empty line, and every line inside a paragraph block has standard single-character spacing between words. No more double-spaced AI output, no more PDF-extracted five-empty-line page breaks, no more Word-document-copied inconsistent spacing. One pass, consistent result, every time.</p>
 
-    <h2>[6] Paragraph Space Remover for Various AI Models</h2>
+    <h2>Paragraph Space Remover for Various AI Models</h2>
     <p>Each major AI model exhibits slightly different paragraph spacing habits, but all benefit from a Paragraph Space Remover pass before their output is utilized professionally.</p>
     <p><strong>ChatGPT (GPT-4, GPT-4o, GPT-3.5)</strong> — ChatGPT inserts double empty lines between major sections and after lists. Long-form ChatGPT replies — articles, reports, structured analyses — consistently feature more empty lines than are appropriate for most publishing contexts. A Paragraph Space Remover pass after every ChatGPT paste normalizes this to single empty lines throughout.</p>
     <p><strong>Claude (Anthropic)</strong> — Claude's output tends to feature consistent but heavy spacing, particularly following bullet lists and preceding new sections. Claude also frequently employs extra empty lines to visually separate different types of content (prose vs lists vs code). The Paragraph Space Remover reduces these visual separators to consistent single empty lines.</p>

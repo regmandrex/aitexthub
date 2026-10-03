@@ -79,7 +79,7 @@ function createWriteUp() {
           <li><strong>Clans and guild armies.</strong> Online clans and guilds borrow that identical martial register to designate their roster of combatants.</li>
         </ul>
 
-        <h2>[10] How to Use This Army Name Generator</h2>
+        <h2>How to Use This Army Name Generator</h2>
         <ol className="list-decimal pl-6 space-y-2">
           <li>Choose the quantity of names generated per batch (1–24).</li>
           <li>Select <strong>Generate names</strong> to acquire a fresh set of legion, regiment, and faction titles.</li>
@@ -109,7 +109,7 @@ function createWriteUp() {
 }
 
 const pageFaqs: FaqItem[] = [
-  { category: 'General', question: '[3] What is an Army Name Generator?', answer: 'An Army Name Generator is a web utility that generates titles for fictional combat forces, including legions, regiments, orders, mercenary groups, and entire factions. It merges impactful combat adjectives such as Iron, Crimson, Ashen, and Eternal with unit nouns like Legion, Host, Brigade, Vanguard, and Order to make the results sound like an authentic battle banner. It is designed to name the military force as a whole instead of individual fighters, running locally without registration and storing zero data.' },
+  { category: 'General', question: 'What is an Army Name Generator?', answer: 'An Army Name Generator is a web utility that generates titles for fictional combat forces, including legions, regiments, orders, mercenary groups, and entire factions. It merges impactful combat adjectives such as Iron, Crimson, Ashen, and Eternal with unit nouns like Legion, Host, Brigade, Vanguard, and Order to make the results sound like an authentic battle banner. It is designed to name the military force as a whole instead of individual fighters, running locally without registration and storing zero data.' },
   { category: 'Naming style', question: 'How do real and fictional military forces receive their titles?', answer: 'Armed forces generally get named in one of four distinct ways: via the nation or flag they represent (the Imperial Legion), through a defining characteristic or philosophy (the Iron Brigade, the Crimson Vanguard), by their commander (the Black Company, the Ten Thousand), or based on their home territory (the Northmen, the Highland Watch). The most effective titles frequently combine two of these elements, such as the Iron Legion of Karthos, which links a trait with a location.' },
   { category: 'Naming style', question: 'What constitutes the formula for a strong army title?', answer: 'Most robust army names break down into an epithet paired with a unit noun, like Crimson combined with Vanguard, Iron with Legion, or Ashen with Host. The descriptive modifier establishes the atmosphere, while the unit noun defines the scope and era. Changing either half completely alters the overall vibe. Incorporating a third layer, such as a location or creator like the Crimson Vanguard of Therin, transforms a generic label into an unforgettable designation.' },
   { category: 'Naming style', question: 'Which combat terms make effective unit nouns?', answer: 'Every unit noun carries an inherent sense of scale and atmosphere. Terms like legion, host, and horde evoke immense, ancient proportions. Brigade, regiment, division, and corps sound contemporary and structured. Vanguard, phalanx, and shieldwall feel frontline-focused and tactical. Order, guard, watch, and sentinels suggest sworn, elite status. Meanwhile, company, band, and free company imply smaller, mercenary, or irregular forces.' },

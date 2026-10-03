@@ -58,7 +58,7 @@ function createWriteUp() {
         <h2>Designing an Original Character for Hallownest</h2>
         <p>Fan creators and authors adore designing custom bugs for Hollow Knight, whilst the moniker serves as the foundation. A robust Hallownest OC label accomplishes two tasks: it sounds tender and archaic within the Team Cherry framework, and it hints at the insect the persona represents — a moth, a beetle, a spider, a snail. Produce a batch, then review every label visualizing it uttered softly on a solitary bench; the ones bearing that gentle, wistful gravity represent the keepers. You may also derive a moniker directly from the insect your OC relies upon, representing precisely how many official labels were created.</p>
 
-        <h2>[10] How to Use This Hollow Knight Name Generator</h2>
+        <h2>How to Use This Hollow Knight Name Generator</h2>
         <ol className="list-decimal pl-6 space-y-2">
           <li>Choose the quantity of names generated per batch (1–24).</li>
           <li>Click <strong>Generate names</strong> to acquire a collection of Hallownest-style monikers.</li>
@@ -109,7 +109,7 @@ const pageFaqs: FaqItem[] = [
   { category: 'General', question: 'Does the Hollow Knight Name Generator cost anything?', answer: 'Yes, entirely free with zero accounts, registrations, or downloads. Produce as many bug, vessel, and OC names as you wish, as frequently as you like.' },
   { category: 'Best practices', question: 'How can I ensure a title genuinely evokes Hallownest?', answer: 'Keep it gentle, brief, and ancient, anchor it in an insect or natural term, and say it softly like it was uttered on a quiet bench. Matching the title to your OC’s bug and region represents the fastest way to ensure it belongs in the Team Cherry style.' },
   { category: 'Best practices', question: 'Ought the moniker to carry a sorrowful or soft tone?', answer: 'Ideally both. Hollow Knight features a tone of quiet sorrow, meaning the best choices are tender with a wistful, mournful touch. Even warrior titles maintain that softness. If a name feels too bright or too harsh, guide it toward the realm\'s quiet melancholy.' },
-  { category: 'Troubleshooting', question: '[2] The names feel overly generic — what should I do?', answer: 'Produce a larger batch and filter for the gentle, insect-rooted results, removing anything fitting a generic fantasy game. Next, guide your top pick toward your OC\'s specific bug. The more you embrace Hallownest\'s gentle, insect-based style, the less generic the outcome appears.' },
+  { category: 'Troubleshooting', question: 'The names feel overly generic — what should I do?', answer: 'Produce a larger batch and filter for the gentle, insect-rooted results, removing anything fitting a generic fantasy game. Next, guide your top pick toward your OC\'s specific bug. The more you embrace Hallownest\'s gentle, insect-based style, the less generic the outcome appears.' },
 ];
 
 export default async function HollowKnightNameGeneratorPage() {

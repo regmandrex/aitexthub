@@ -61,7 +61,7 @@ function createWriteUp() {
         <p>A symbiote represents only half the persona. The remaining half is the host it merges with — Eddie Brock for Venom, Cletus Kasady for Carnage, Patricia Robertson for Scream. When a host and symbiote unite, the combined entity frequently adopts the symbiote&apos;s designation: the human turns into &quot;Venom,&quot; the &quot;we&quot; voiced by the symbiote. This means your OC title must function on two levels — as the alien&apos;s name and as the identity shared by the paired duo.</p>
         <p>Consider the contrast between host and symbiote during the naming process. A gentle host paired with a brutally named symbiote generates tension; a violent host combined with an equally savage title doubles down. The moniker you create serves as more than just the creature&apos;s label — it is the persona the host assumes every time the symbiote takes control. Pick a term you would want a character to growl in the third-person plural.</p>
 
-        <h2>[10] How to Use This Symbiote Name Generator</h2>
+        <h2>How to Use This Symbiote Name Generator</h2>
         <ol className="list-decimal pl-6 space-y-2">
           <li>Choose the quantity of names generated per batch (1–24).</li>
           <li>Click <strong>Generate names</strong> to acquire a fresh set of single-word, symbiote-style monikers.</li>

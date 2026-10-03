@@ -5,11 +5,11 @@ function WriteUp() {
   return (
     <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
-        <h2>[21] SQL Formatter: Free Online SQL Beautifier, Formatter, and Pretty Printer</h2>
+        <h2>SQL Formatter: Free Online SQL Beautifier, Formatter, and Pretty Printer</h2>
         <p>When generated under rapid development timelines — captured from query execution logs, dumped via ORM debuggers, pulled from operational production reporting consoles, or compressed during network payload transit — SQL frequently becomes an unreadable, single-line mess. With our free online SQL formatter, you can instantly turn compressed, misaligned, or poorly spaced statements into clean, structured queries with unified keyword casing, neatly aligned operators, and clear visual depth. We provide full compatibility with major SQL implementations: MySQL, PostgreSQL, SQL Server (T-SQL), Oracle (PL/SQL), SQLite, BigQuery, Snowflake, Amazon Redshift, and ANSI SQL.</p>
-        <p>[23] Whether you are debugging a complex multi-table JOIN that returned unexpected results, reviewing a stored procedure that a previous developer wrote in one continuous line, optimizing a slow query by making its structure visible, or preparing SQL for documentation or a code review, our formatter makes the logic immediately clear. All formatting runs in your browser "" no query content is sent to any server.</p>
+        <p>Whether you are debugging a complex multi-table JOIN that returned unexpected results, reviewing a stored procedure that a previous developer wrote in one continuous line, optimizing a slow query by making its structure visible, or preparing SQL for documentation or a code review, our formatter makes the logic immediately clear. All formatting runs in your browser "" no query content is sent to any server.</p>
 
-        <h2>[24] Why SQL Formatting Matters for Developer Productivity</h2>
+        <h2>Why SQL Formatting Matters for Developer Productivity</h2>
         <p>Unlike common procedural and object-oriented languages, SQL hides its architectural structure — detailing which tables link together, how filtering expressions behave, and which attributes receive aggregations — entirely within the raw text layout. To the relational database parser, a dense, one-line script spanning 200 characters functions identically to that exact logic spread across 30 indented lines; for human engineers reading the code, however, the gap in mental effort and readability is tremendous.</p>
         <p>Unstructured SQL causes distinct issues:</p>
         <ul>
@@ -380,21 +380,21 @@ const faqs: FaqItem[] = [
   },
   {
     category: 'Indentation',
-    question: '[1] Is it better to use 2-space or 4-space indentation for SQL?',
+    question: 'Is it better to use 2-space or 4-space indentation for SQL?',
     answer:
-      '[2] Both options work fine; consistency across the project is what matters. Our formatter defaults to 4-space indentation for SQL (which is slightly more popular than the 2-space standard found in YAML/JavaScript). Pick based on your team&#39;s style guide and set up your IDE accordingly.',
+      'Both options work fine; consistency across the project is what matters. Our formatter defaults to 4-space indentation for SQL (which is slightly more popular than the 2-space standard found in YAML/JavaScript). Pick based on your team&#39;s style guide and set up your IDE accordingly.',
   },
   {
     category: 'Comments',
-    question: '[3] Does the formatter keep SQL comments intact?',
+    question: 'Does the formatter keep SQL comments intact?',
     answer:
-      '[4] Yes "” both single-line comments (-- comment) and block comments (/* comment */) stay in their exact places relative to the SQL they describe. Comments within SELECT clauses, WHERE statements, and between CTE definitions are preserved after the format process.',
+      'Yes "” both single-line comments (-- comment) and block comments (/* comment */) stay in their exact places relative to the SQL they describe. Comments within SELECT clauses, WHERE statements, and between CTE definitions are preserved after the format process.',
   },
   {
     category: 'General',
-    question: '[5] What is an online SQL formatter?',
+    question: 'What is an online SQL formatter?',
     answer:
-      '[6] An online SQL formatter is a free web utility that takes raw or minified SQL statements and reorganizes them with proper indentation, keyword casing, and line breaks "” ensuring they remain readable and easy to maintain. This SQL formatter works with Standard SQL, MySQL, PostgreSQL, and SQLite dialects. Input any SQL query and press Format to receive clean, correctly indented output immediately without needing any setup.',
+      'An online SQL formatter is a free web utility that takes raw or minified SQL statements and reorganizes them with proper indentation, keyword casing, and line breaks "” ensuring they remain readable and easy to maintain. This SQL formatter works with Standard SQL, MySQL, PostgreSQL, and SQLite dialects. Input any SQL query and press Format to receive clean, correctly indented output immediately without needing any setup.',
   },
 ];
 

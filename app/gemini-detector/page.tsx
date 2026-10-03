@@ -48,10 +48,10 @@ function createWriteUp() {
         <h3>Business and Professional Applications</h3>
         <p>Enterprises and specialists might employ a Gemini Detector to evaluate internal or customer materials when originality and human creation matter. The utility serves as one factor among several for quality and protocol adherence.</p>
 
-        <h2>[8] Who Ought To Utilize A Gemini Detector</h2>
+        <h2>Who Ought To Utilize A Gemini Detector</h2>
         <p>Instructors assessing student assignments, publishers validating contributor material, and anyone requiring a rapid evaluation for Gemini-created or alternate AI text may utilize this. The Gemini Detector acts as a screening utility rather than a substitute for official academic integrity procedures or human evaluation.</p>
 
-        <h2>[10] Instructions For The Gemini Detector</h2>
+        <h2>Instructions For The Gemini Detector</h2>
         <p>Insert your text into the utility and execute the evaluation. For more dependable outcomes, provide at least 200–300 words; extended excerpts provide the scanner additional data points to analyze. Input full paragraphs rather than isolated sentences whenever possible.</p>
 
         <h3>Interpreting Results</h3>
@@ -64,23 +64,23 @@ function createWriteUp() {
         <p>This Gemini Detector evaluates writing right in your web browser. Your information remains unsent to our networks and is never saved. Analysis delivers an estimation only; alternative utilities and networks may yield varying outcomes. For critical choices, adhere to your enterprise's authorized utilities and methods.</p>
       
 
-        <h2>[13] How Gemini Detector Integrates Into AI Writing Routines In 2026</h2>
-        <p>[14] As AI-assisted composition becomes standard in educational institutions, publishing groups, and corporate workflows, the Gemini Detector offers users a functional approach to assess text before trusting it. Whether you are inspecting coursework, reviewing drafts, or checking professional writing, grasping what the Gemini Detector can and cannot disclose renders the evaluation procedure clearer and more dependable.</p>
-        <p>[15] The subsections below clarify why utilities of this nature exist, where they fit within a broader review procedure, and how to react to findings without viewing them as a definitive judgment. The aim is to assist you in operating the Gemini Detector with greater assurance while still honoring guideline requirements, context, and human discretion.</p>
+        <h2>How Gemini Detector Integrates Into AI Writing Routines In 2026</h2>
+        <p>As AI-assisted composition becomes standard in educational institutions, publishing groups, and corporate workflows, the Gemini Detector offers users a functional approach to assess text before trusting it. Whether you are inspecting coursework, reviewing drafts, or checking professional writing, grasping what the Gemini Detector can and cannot disclose renders the evaluation procedure clearer and more dependable.</p>
+        <p>The subsections below clarify why utilities of this nature exist, where they fit within a broader review procedure, and how to react to findings without viewing them as a definitive judgment. The aim is to assist you in operating the Gemini Detector with greater assurance while still honoring guideline requirements, context, and human discretion.</p>
 
-        <h3>[16] Why AI Content Utilities Matter Today</h3>
-        <p>[17] Large language models can generate fluent, coherent writing that proves challenging to differentiate from human composition at first glance. That has sparked valid anxieties concerning academic integrity, publishing benchmarks, and the necessity for transparency. Simultaneously, AI can back composition, research, and messaging when deployed openly. The Gemini Detector represents one of numerous assets aiding users through this environment by delivering an indication of whether text could be machine-generated or how it might be enhanced, contingent on utility type.</p>
-        <p>[18] The Gemini Detector ought to back human assessment, not supplant it or override an official procedure. It introduces a single indicator that can assist you in determining which paragraphs demand closer reading, discussion, revision, or escalation pursuant to your personal policy. For critical determinations, apply the approved utilities, documentation criteria, and review steps mandated by your establishment or enterprise.</p>
+        <h3>Why AI Content Utilities Matter Today</h3>
+        <p>Large language models can generate fluent, coherent writing that proves challenging to differentiate from human composition at first glance. That has sparked valid anxieties concerning academic integrity, publishing benchmarks, and the necessity for transparency. Simultaneously, AI can back composition, research, and messaging when deployed openly. The Gemini Detector represents one of numerous assets aiding users through this environment by delivering an indication of whether text could be machine-generated or how it might be enhanced, contingent on utility type.</p>
+        <p>The Gemini Detector ought to back human assessment, not supplant it or override an official procedure. It introduces a single indicator that can assist you in determining which paragraphs demand closer reading, discussion, revision, or escalation pursuant to your personal policy. For critical determinations, apply the approved utilities, documentation criteria, and review steps mandated by your establishment or enterprise.</p>
 
-        <h3>[19] How The Gemini Detector Integrates Into Your Workflow</h3>
-        <p>[20] The Gemini Detector functions most effectively as a filtering stage, rather than the final verdict. For teachers, that might involve executing detection or analysis on drafts prior to evaluation, or leveraging the utility to initiate dialogues with students regarding AI deployment and citations. For editors and publishers, it can signify a rapid check prior to forwarding content to external verification services or to guide author discussions. For professionals and enterprises, it can back internal evaluations when authenticity and human creation matter.</p>
-        <p>[21] If alternative individuals are impacted by the outcome, clarify how you employ the Gemini Detector and what transpires when a page or segment requires closer examination. A consistent, transparent procedure renders the utility more advantageous and lessens ambiguity surrounding borderline outcomes.</p>
+        <h3>How The Gemini Detector Integrates Into Your Workflow</h3>
+        <p>The Gemini Detector functions most effectively as a filtering stage, rather than the final verdict. For teachers, that might involve executing detection or analysis on drafts prior to evaluation, or leveraging the utility to initiate dialogues with students regarding AI deployment and citations. For editors and publishers, it can signify a rapid check prior to forwarding content to external verification services or to guide author discussions. For professionals and enterprises, it can back internal evaluations when authenticity and human creation matter.</p>
+        <p>If alternative individuals are impacted by the outcome, clarify how you employ the Gemini Detector and what transpires when a page or segment requires closer examination. A consistent, transparent procedure renders the utility more advantageous and lessens ambiguity surrounding borderline outcomes.</p>
 
-        <h2>[22] Recommendations For Consistent Operation Of The Gemini Detector</h2>
-        <p>[23] For superior outcomes with the Gemini Detector, apply full paragraphs or complete sections, steer clear of brief fragments, and execute checks in a reproducible manner so distinct drafts can be contrasted equitably. No automated utility is flawless, therefore interpret the output as an indicator to investigate rather than an independent conclusion.</p>
+        <h2>Recommendations For Consistent Operation Of The Gemini Detector</h2>
+        <p>For superior outcomes with the Gemini Detector, apply full paragraphs or complete sections, steer clear of brief fragments, and execute checks in a reproducible manner so distinct drafts can be contrasted equitably. No automated utility is flawless, therefore interpret the output as an indicator to investigate rather than an independent conclusion.</p>
 
-        <h3>[24] Input Quality And Length</h3>
-        <p>[25] Most AI-content review utilities operate more dependably when the input is sufficiently long and structured as a cohesive passage. If the Gemini Detector advises a minimal word count or suggests utilizing full paragraphs, adhere to that recommendation. Extremely brief snippets and disconnected fragments can yield volatile outcomes. Whenever feasible, submit writing that mirrors how the material would genuinely be utilized or evaluated.</p>
+        <h3>Input Quality And Length</h3>
+        <p>Most AI-content review utilities operate more dependably when the input is sufficiently long and structured as a cohesive passage. If the Gemini Detector advises a minimal word count or suggests utilizing full paragraphs, adhere to that recommendation. Extremely brief snippets and disconnected fragments can yield volatile outcomes. Whenever feasible, submit writing that mirrors how the material would genuinely be utilized or evaluated.</p>
 
         <h3>Following Your Results: What to Do Next</h3>
         <p>Outcomes from the Gemini Detector are clues, not absolute proof. Never rely on a single score or label by itself to penalize, blame, or make a definitive choice. Utilize the outcome to determine what needs rereading, what to ask the writer, or if another approved check is necessary. Record how you utilize the tool and what guidelines you follow so your procedure remains transparent and equitable.</p>

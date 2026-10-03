@@ -45,7 +45,7 @@ const WriteUp = () => (
 
     <p className="text-slate-700 mb-4">Arabic YouTube material — educational channels, entertainment, comedy, lifestyle — demands the precise regional accent and phrasing habits of the creator&#39;s native dialect. An Egyptian YouTuber&#39;s video script in MSA would distance their viewers; a Gulf lifestyle influencer&#39;s content in Levantine Arabic would feel fake. The humanizer tailors content to the precise local variant and platform standards needed.</p>
 
-    <h3 className="text-xl font-semibold text-slate-800 mb-3">[4] The Mechanics Of The Arabic AI Humanizer</h3>
+    <h3 className="text-xl font-semibold text-slate-800 mb-3">The Mechanics Of The Arabic AI Humanizer</h3>
     <p className="text-slate-700 mb-4">The Arabic AI Humanizer performs region-specific and context-specific adjustments on AI-created Arabic writing:</p>
 
     <p className="text-slate-700 mb-4"><strong>Register conversion:</strong> The main transformation — turning MSA into the right local colloquial form. This involves not only vocabulary swaps but also morphological shifts (varying verb forms across dialects), syntactic tweaks (varying sentence designs in colloquial speech), and pragmatic tuning (varying discourse norms).</p>
@@ -169,8 +169,8 @@ export const arabicAiHumanizerContent: ToolContent = {
     },
     {
       category: 'general',
-      question: '[1] Can the humanizer enhance AI-generated Arabic text originally produced for formal settings?',
-      answer: '[2] Yes, even within formal contexts where Modern Standard Arabic is suitable, AI-crafted Arabic can still be refined. Academic Arabic, journalistic Arabic, and official documentation produced by AI frequently rely on overly archaic terms, uniform sentence lengths, and formulaic structures. The humanizer enhances formal Arabic by choosing contemporary Modern Standard Arabic terminology over dated alternatives, varying sentence structures to reflect human formal Arabic writing styles, and incorporating the natural rhetorical variations that define genuine human formal Arabic composition.',
+      question: 'Can the humanizer enhance AI-generated Arabic text originally produced for formal settings?',
+      answer: 'Yes, even within formal contexts where Modern Standard Arabic is suitable, AI-crafted Arabic can still be refined. Academic Arabic, journalistic Arabic, and official documentation produced by AI frequently rely on overly archaic terms, uniform sentence lengths, and formulaic structures. The humanizer enhances formal Arabic by choosing contemporary Modern Standard Arabic terminology over dated alternatives, varying sentence structures to reflect human formal Arabic writing styles, and incorporating the natural rhetorical variations that define genuine human formal Arabic composition.',
     },
   ],
 };

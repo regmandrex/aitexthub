@@ -10,30 +10,30 @@ function WriteUp() {
         <p>Our free JSON to YAML Converter completes the conversion instantly inside your browser "” zero server round-trips, zero file uploads, zero size restrictions, zero accounts required. Input your JSON, hit convert, and receive flawlessly formatted YAML featuring proper indentation, accurate data type mapping, and valid syntax ready for deployment in your configuration files, infrastructure-as-code repositories, or API documentation.</p>
         <p>The converter handles every edge case: nested objects and arrays, numeric types (integers, floats, scientific notation), booleans, null values, multiline strings, special characters requiring YAML quoting, and Unicode content. The final output adheres to YAML 1.2 specification guidelines to ensure maximum compatibility with tools like Kubernetes, Helm, GitHub Actions, and cloud provider CLIs.</p>
 
-        <h2>[1] JSON: The Universal Data Interchange Format</h2>
+        <h2>JSON: The Universal Data Interchange Format</h2>
         <p>JSON (JavaScript Object Notation) was developed by Douglas Crockford in the early 2000s as a simpler alternative to XML for transmitting data between servers and web clients. Even though its title mentions JavaScript, JSON remains completely language-agnostic and serves as the standard data-sharing format across virtually every platform and programming language.</p>
         <p>JSON's architecture relies upon two fundamental data structures found in some fashion within all programming languages:</p>
         <ul>
-          <li>[2] <strong>Objects</strong> – an unordered collection of key-value pairs enclosed in curly braces: <code>&#123;"key": "value", "number": 42&#125;</code></li>
-          <li>[3] <strong>Arrays</strong> – an ordered list of values enclosed in square brackets: <code>[1, "two", true, null, &#123;"nested": "object"&#125;]</code></li>
+          <li><strong>Objects</strong> – an unordered collection of key-value pairs enclosed in curly braces: <code>&#123;"key": "value", "number": 42&#125;</code></li>
+          <li><strong>Arrays</strong> – an ordered list of values enclosed in square brackets: <code>[1, "two", true, null, &#123;"nested": "object"&#125;]</code></li>
         </ul>
-        <p>[4] Six fundamental data types exist within JSON: string values (Unicode encased in double quotes), number values (integers as well as decimals), boolean states (<code>true</code> or <code>false</code>), alongside <code>null</code>. Hierarchies may branch without limit. Specifications are rigid: object property names mandate quotes, notes/comments are disallowed, trailing commas are invalid, and undefined values are omitted.</p>
-        <p>[5] Its straightforward nature explains why JSON reigns supreme. Engines parse it in one sweep, native data structures across programming languages reflect it cleanly, and engineers can easily inspect it without sacrificing lightweight transport efficiency. Web services rely on JSON universally. It powers client storage mechanisms like localStorage and IndexedDB. Projects in npm configure through JSON (package.json, tsconfig.json, .eslintrc.json). Responses from GraphQL arrive as JSON. Webhooks transmit events as JSON.</p>
+        <p>Six fundamental data types exist within JSON: string values (Unicode encased in double quotes), number values (integers as well as decimals), boolean states (<code>true</code> or <code>false</code>), alongside <code>null</code>. Hierarchies may branch without limit. Specifications are rigid: object property names mandate quotes, notes/comments are disallowed, trailing commas are invalid, and undefined values are omitted.</p>
+        <p>Its straightforward nature explains why JSON reigns supreme. Engines parse it in one sweep, native data structures across programming languages reflect it cleanly, and engineers can easily inspect it without sacrificing lightweight transport efficiency. Web services rely on JSON universally. It powers client storage mechanisms like localStorage and IndexedDB. Projects in npm configure through JSON (package.json, tsconfig.json, .eslintrc.json). Responses from GraphQL arrive as JSON. Webhooks transmit events as JSON.</p>
 
-        <h3>[6] JSON Limitations That Drive YAML Adoption</h3>
-        <p>[7] Despite its strengths, JSON has characteristics that make it unsuitable as a configuration file format for humans:</p>
+        <h3>JSON Limitations That Drive YAML Adoption</h3>
+        <p>Despite its strengths, JSON has characteristics that make it unsuitable as a configuration file format for humans:</p>
         <p><strong>No comments</strong>: JSON completely lacks native comment capability. Inline notes clarifying why specific configuration settings exist provide immense utility to developers. Although variations like JSON5 and JSONC (JSON with Comments) deliver comment support, they lack inclusion in the formal specification and are far from universally recognized.</p>
         <p><strong>Verbosity with quotes</strong>: standard keys invariably demand enclosing double quotes. Across config files packed with options, this creates heavy visual clutter that masks your meaningful settings and values.</p>
-        <p>[10] <strong>No multiline strings</strong>: representing multiline text in JSON requires escaped newlines (<code>\n</code>), making shell scripts, SQL queries, or documentation embedded in JSON difficult to read and edit.</p>
+        <p><strong>No multiline strings</strong>: representing multiline text in JSON requires escaped newlines (<code>\n</code>), making shell scripts, SQL queries, or documentation embedded in JSON difficult to read and edit.</p>
         <p><strong>Strict syntax</strong>: leaving out a lone comma, adding a trailing comma, or neglecting to close a bracket renders the whole file unparseable. Manual editing of JSON invites mistakes that cleaner formats like YAML naturally prevent.</p>
 
-        <h2>[12] YAML: The Human-Friendly Configuration Language</h2>
+        <h2>YAML: The Human-Friendly Configuration Language</h2>
         <p>YAML (YAML Ain't Markup Language – a recursive acronym) prioritized seamless human readability right from inception. Version 1.0 surfaced in 2001, while YAML 1.2 (2009) updated the rules to integrate seamlessly with JSON, turning JSON into a pure subset of YAML. Hence, every valid JSON snippet qualifies as valid YAML.</p>
         <p>Relying on whitespace indentation (strictly spaces, forbidden tabs) to denote hierarchy, YAML strips away curly braces and square brackets found in JSON. A JSON object translates directly to a YAML mapping, while arrays shift to sequences. This yields a far cleaner layout for configuration management:</p>
         <p>
           JSON:
         </p>
-        <p>[15] <code>&#123;"server": &#123;"host": "localhost", "port": 8080, "ssl": true&#125;&#125;</code></p>
+        <p><code>&#123;"server": &#123;"host": "localhost", "port": 8080, "ssl": true&#125;&#125;</code></p>
         <p>
           YAML:
         </p>
@@ -41,12 +41,12 @@ function WriteUp() {
   host: localhost
   port: 8080
   ssl: true`}</pre>
-        <p>[16] The YAML version is immediately understandable to non-technical stakeholders, is easier to edit without making syntax errors, and supports inline documentation through comments.</p>
+        <p>The YAML version is immediately understandable to non-technical stakeholders, is easier to edit without making syntax errors, and supports inline documentation through comments.</p>
 
         <h3>YAML Key Features</h3>
 
         <h4>Comments</h4>
-        <p>[17] YAML supports comments beginning with <code>#</code>, either on their own line or inline after a value. This is the single most important feature for configuration files – explaining why a setting exists, linking to documentation, or noting constraints.</p>
+        <p>YAML supports comments beginning with <code>#</code>, either on their own line or inline after a value. This is the single most important feature for configuration files – explaining why a setting exists, linking to documentation, or noting constraints.</p>
 
         <h4>Multiline Strings</h4>
         <p>YAML supplies two distinct block scalar formats for multiline strings. The literal style (<code>|</code>) preserves exact line breaks, proving superb for embedding Python, SQL queries, or shell scripts. Conversely, the folded style (<code>&gt;</code>) converts newlines into spaces (resembling HTML whitespace collapsing), ideal for lengthy narrative text.</p>
@@ -64,8 +64,8 @@ function WriteUp() {
           sequences like <code>\n</code>, <code>\t</code>, <code>A</code>).
         </p>
 
-        <h2>[22] The JSON to YAML Conversion Process</h2>
-        <p>[23] Our converter parses the input JSON using a standards-compliant JSON parser, builds an in-memory object graph, then serializes that graph to YAML following these mapping rules:</p>
+        <h2>The JSON to YAML Conversion Process</h2>
+        <p>Our converter parses the input JSON using a standards-compliant JSON parser, builds an in-memory object graph, then serializes that graph to YAML following these mapping rules:</p>
 
         <h3>Data Type Conversion: JSON to YAML</h3>
         <p><strong>JSON Object – YAML Mapping</strong>: Every key-value pair transforms into a YAML mapping item. Keys appear unquoted if they function as valid YAML plain scalars (consisting of alphanumeric characters plus hyphens and underscores, avoiding YAML keywords), while remaining quoted otherwise.</p>

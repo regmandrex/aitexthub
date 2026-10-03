@@ -16,7 +16,7 @@ function WriteUp() {
         <h3>Typical AI Patterns Found in Sermon Writer</h3>
         <p>AI-generated Sermon Writer tends to: use an overly formal register that doesn&#39;t match the conversational expectations of the format; cover all relevant points systematically rather than prioritizing for emotional impact; use generic transitional phrases that feel like boilerplate rather than authentic voice; and miss the specific cultural references, in-jokes, and community-specific expressions that make specialized content feel native.</p>
 
-        <h2>[10] Instructions For The Sermon Writer</h2>
+        <h2>Instructions For The Sermon Writer</h2>
         <p>Input your brief, prompt, or draft into the text box. Hit Generate. The system evaluates your text and crafts original, human-sounding material. Inspect the output - always evaluate AI-generated writing prior to deployment - and refine any areas that fall short of your exact requirements. The entire procedure wraps up in under ten seconds for most inputs.</p>
 
         <h2>Key Features</h2>

@@ -16,7 +16,7 @@ function WriteUp() {
         <h3>Typical AI Patterns Found in Sermons</h3>
         <p>AI-generated sermon often displays a overly formal tone unsuited to conversational norms, covers all relevant points systematically instead of focusing on emotional impact, employs generic transitional phrases that read like boilerplate rather than a true voice, and omits the unique cultural references, community expressions, and in-jokes that give specialized content an authentic feel.</p>
 
-        <h2>[10] Instructions For The Sermon Humanizer</h2>
+        <h2>Instructions For The Sermon Humanizer</h2>
         <p>Drop your AI-crafted text into the submission area. Press Humanize. The utility parses your text and generates a natural-sounding human equivalent. Check the result ” always check AI-processed material prior to publishing ” and modify any parts that do not fit your exact requirements. The procedure finishes in under ten seconds for most texts.</p>
 
         <h2>Key Features</h2>

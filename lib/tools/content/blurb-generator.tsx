@@ -67,7 +67,7 @@ function WriteUp() {
         <p>"Clara walked out of Millhaven driven by two guarantees: a spot in medical school and an absolute refusal to ever return. Over a decade later, her mother's illness compels her back to the very place she fought so hard to escape "” directly into the path of Jake Mercer, the partner she deserted without a single word of explanation. As an aggressive property developer attempts to acquire the Mercer farm before autumn ends, Clara and Jake must navigate an uneasy alliance. Yet collaborating across the very fields that echo the history they tried to bury could demand more than Clara is ready to give up "” because not every vow can withstand the journey home."</p>
         <p>The rewrite demonstrates core concepts: the initial hook presents character alongside conflict, the stakes are both material (the farm) and sentimental (the connection), while the conclusion delays resolution yet makes it compulsive.</p>
 
-        <h2>[10] Tips for Getting the Best Results</h2>
+        <h2>Tips for Getting the Best Results</h2>
         <h3>Focus on Your Main Character's Primary Desire, Not Their Past</h3>
         <p>The frequent pitfall in raw summaries is launching with the protagonist's background instead of their ambition. "Clara grew up in a small town" mentions her origin. "Clara left Millhaven with two promises" reveals her identity and instantly builds narrative tension. Structure your details around what your lead wants and what blocks their path.</p>
         <h3>State the Feeling, Not Merely the Sequence</h3>

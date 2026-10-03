@@ -53,7 +53,7 @@ function createWriteUp() {
         <h2>Naming a Club for Fiction and Games</h2>
         <p>For a Sons of Anarchy-inspired narrative or a video game faction, the club title functions as a character in its own right. It should signal the organization&apos;s exact function — whether antagonist, antihero collective, or noble riders — while hinting at its background. Generate several options and read each aloud as if shouted across a tavern or stitched onto leather: does it evoke fear, respect, or a desire to ride alongside them? In gaming applications, a memorable, punchy moniker that fits neatly within user interface banners and reads instantly works best. Retain options that balance attitude with clarity, and pair the winner with a territory and a couple of chapters to grant the organization a sense of history predating the narrative.</p>
 
-        <h2>[10] How to Use This Motorcycle Club Name Generator</h2>
+        <h2>How to Use This Motorcycle Club Name Generator</h2>
         <ol className="list-decimal pl-6 space-y-2">
           <li>Choose the quantity of names generated per batch (1–24).</li>
           <li>Click <strong>Generate names</strong> to produce a fresh batch of biker and MC titles.</li>
@@ -63,7 +63,7 @@ function createWriteUp() {
         </ol>
         <p>Generation occurs entirely within your web browser. Your preferences and generated names remain entirely local and are never transmitted to any external server, ensuring your story notes and club concepts stay completely confidential until you decide to reveal them.</p>
 
-        <h2>[17] Common Mistakes to Avoid</h2>
+        <h2>Common Mistakes to Avoid</h2>
         <p>The most frequent blunder is tone inconsistency — coupling menacing outlaw visuals with a benign assembly, or vice versa. For actual riding groups, avoid titles that replicate existing recognized associations (since organizations like the Hells Angels vigorously protect their monikers and insignia); such overlap invites genuine friction rather than mere confusion. Do not overload a title with excessive harsh terminology at once (&quot;Death Skull Reaper Demons MC&quot; collapses under its own weight); a single potent visual outperforms four weak ones. Furthermore, ensure it functions effectively as a top rocker — an overly lengthy name will fail to fit a patch or remain legible out on the highway.</p>
 
         <h2>Constructing the Entire Club</h2>

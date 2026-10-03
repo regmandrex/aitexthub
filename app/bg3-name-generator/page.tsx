@@ -54,7 +54,7 @@ function createWriteUp() {
         <h2>Naming for Multiplayer and Custom Campaigns</h2>
         <p>BG3 supports multiplayer groups consisting of custom heroes, and numerous squads prefer a harmonious collection of monikers rather than conflicting styles. Generate a collection for each player&apos;s ancestry and select monikers that seem capable of adventuring side-by-side — diverse yet tonally unified. The identical strategy applies if you are transferring your BG3 Tav into a tabletop D&amp;D campaign: the monikers are setting-accurate for the Forgotten Realms, meaning they transition seamlessly from the digital screen to the tabletop.</p>
 
-        <h2>[10] How to Use This BG3 Name Generator</h2>
+        <h2>How to Use This BG3 Name Generator</h2>
         <ol className="list-decimal pl-6 space-y-2">
           <li>Choose the quantity of names generated per batch (1–24).</li>
           <li>Click <strong>Generate names</strong> to acquire a collection of D&amp;D-style monikers.</li>
@@ -105,7 +105,7 @@ const pageFaqs: FaqItem[] = [
   { category: 'General', question: 'Does the BG3 Name Generator cost anything?', answer: 'Of course, it is totally costless with zero requirement for registration, accounts, or software downloads. Create as many Tav and companion monikers as you desire, as frequently as you wish.' },
   { category: 'Best practices', question: 'What steps ensure a name truly captures the essence of BG3?', answer: 'Ground it within your specific race\'s naming customs, hint at your profession or origin, and speak it out loud to verify its ease of articulation. Evaluating your choice alongside an official companion from the same race represents the quickest method to verify it fits the proper tone.' },
   { category: 'Best practices', question: 'Must the moniker align with my visual design?', answer: 'Not strictly, but a moniker that matches your heritage and character style enhances immersion. A weathered, battle-scarred fighter carrying a delicate poetic name might seem out of place, although intentional contrast can also make for a powerful roleplay decision if that is what you want.' },
-  { category: 'Troubleshooting', question: '[2] The names feel overly generic — what should I do?', answer: 'Produce a bigger batch and screen severely for heritage-appropriate phonetics, throwing away anything that could fit any fantasy figure. Afterward, polish your top choice\'s orthography toward its tradition. The closer you stay to one species\' rules, the less standard the output feels.' },
+  { category: 'Troubleshooting', question: 'The names feel overly generic — what should I do?', answer: 'Produce a bigger batch and screen severely for heritage-appropriate phonetics, throwing away anything that could fit any fantasy figure. Afterward, polish your top choice\'s orthography toward its tradition. The closer you stay to one species\' rules, the less standard the output feels.' },
 ];
 
 export default async function Bg3NameGeneratorPage() {

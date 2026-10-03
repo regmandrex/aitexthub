@@ -23,16 +23,16 @@ function createWriteUp() {
         <p>A Grok Assignment Checker functions as a complimentary web utility assessing assignments created with or by Grok for adherence and quality. It helps you check that your work is properly organized, satisfies the prompt requirements, and is prepared for delivery, enabling you to hand it in assuredly.</p>
         <p>Learners employ a coursework analyzer to spot neglected prerequisites, fragile layouts, or vague responses before handing in projects. Insert your homework, execute the evaluation, and assess the suggestions. Apply it in accordance with your university&apos;s AI and academic honesty guidelines; you remain accountable for satisfying all class mandates. This utility operates within your web browser; your writing is never transmitted to our servers or saved.</p>
 
-        <h2>[4] The Mechanics Of The Grok Assignment Checker</h2>
+        <h2>The Mechanics Of The Grok Assignment Checker</h2>
         <p>The application inspects organization, lucidity, and completeness. It might flag ambiguous replies, neglected sections, or weak arrangements. Apply the suggestions to align your assignment with the task prompt and elevate standard.</p>
 
         <h3>What to Review Prior to Submission</h3>
         <p>Verify that you have addressed every component of the prompt, employed robust organization, and backed up your arguments. The analyzer assists you in locating gaps or zones requiring revision so you can enhance your work prior to delivering.</p>
 
-        <h2>[8] Who Ought To Utilize A Grok Assignment Checker</h2>
+        <h2>Who Ought To Utilize A Grok Assignment Checker</h2>
         <p>Pupils and instructors wishing to verify the layout and standards of homework prior to turning it in are able to utilize it. Employ the Grok Assignment Checker subsequent to finishing a draft to catch neglected prerequisites, fragile layouts, or vague responses—always matching your university&apos;s AI and academic honesty guidelines.</p>
 
-        <h2>[10] Instructions For The Grok Assignment Checker</h2>
+        <h2>Instructions For The Grok Assignment Checker</h2>
         <p>Insert your homework into the submission box, execute the evaluation, and inspect the critiques. Utilize it alongside the assignment rubric or directions. Run the analyzer after you finish a draft; apply the suggestions to update prior to delivering. You are accountable for satisfying all class prerequisites and disclosure rules.</p>
 
         <h2>Best Practices</h2>
@@ -42,23 +42,23 @@ function createWriteUp() {
         <p>This tool serves as a screening aid. It cannot substitute for reading assignment instructions or instructor feedback. Utilize it to enhance quality; ultimate grading adheres to your institution's procedures.</p>
       
 
-        <h2>[13] How Grok Assignment Checker Integrates Into AI Writing Routines In 2026</h2>
-        <p>[14] As AI-assisted composition becomes standard in educational institutions, publishing groups, and corporate workflows, the Grok Assignment Checker offers users a functional approach to assess text before trusting it. Whether you are inspecting coursework, reviewing drafts, or checking professional writing, grasping what the Grok Assignment Checker can and cannot disclose renders the evaluation procedure clearer and more dependable.</p>
-        <p>[15] The subsections below clarify why utilities of this nature exist, where they fit within a broader review procedure, and how to react to findings without viewing them as a definitive judgment. The aim is to assist you in operating the Grok Assignment Checker with greater assurance while still honoring guideline requirements, context, and human discretion.</p>
+        <h2>How Grok Assignment Checker Integrates Into AI Writing Routines In 2026</h2>
+        <p>As AI-assisted composition becomes standard in educational institutions, publishing groups, and corporate workflows, the Grok Assignment Checker offers users a functional approach to assess text before trusting it. Whether you are inspecting coursework, reviewing drafts, or checking professional writing, grasping what the Grok Assignment Checker can and cannot disclose renders the evaluation procedure clearer and more dependable.</p>
+        <p>The subsections below clarify why utilities of this nature exist, where they fit within a broader review procedure, and how to react to findings without viewing them as a definitive judgment. The aim is to assist you in operating the Grok Assignment Checker with greater assurance while still honoring guideline requirements, context, and human discretion.</p>
 
-        <h3>[16] Why AI Content Utilities Matter Today</h3>
-        <p>[17] Large language models can generate fluent, coherent writing that proves challenging to differentiate from human composition at first glance. That has sparked valid anxieties concerning academic integrity, publishing benchmarks, and the necessity for transparency. Simultaneously, AI can back composition, research, and messaging when deployed openly. The Grok Assignment Checker represents one of numerous assets aiding users through this environment by delivering an indication of whether text could be machine-generated or how it might be enhanced, contingent on utility type.</p>
-        <p>[18] The Grok Assignment Checker ought to back human assessment, not supplant it or override an official procedure. It introduces a single indicator that can assist you in determining which paragraphs demand closer reading, discussion, revision, or escalation pursuant to your personal policy. For critical determinations, apply the approved utilities, documentation criteria, and review steps mandated by your establishment or enterprise.</p>
+        <h3>Why AI Content Utilities Matter Today</h3>
+        <p>Large language models can generate fluent, coherent writing that proves challenging to differentiate from human composition at first glance. That has sparked valid anxieties concerning academic integrity, publishing benchmarks, and the necessity for transparency. Simultaneously, AI can back composition, research, and messaging when deployed openly. The Grok Assignment Checker represents one of numerous assets aiding users through this environment by delivering an indication of whether text could be machine-generated or how it might be enhanced, contingent on utility type.</p>
+        <p>The Grok Assignment Checker ought to back human assessment, not supplant it or override an official procedure. It introduces a single indicator that can assist you in determining which paragraphs demand closer reading, discussion, revision, or escalation pursuant to your personal policy. For critical determinations, apply the approved utilities, documentation criteria, and review steps mandated by your establishment or enterprise.</p>
 
-        <h3>[19] How The Grok Assignment Checker Integrates Into Your Workflow</h3>
-        <p>[20] The Grok Assignment Checker functions most effectively as a filtering stage, rather than the final verdict. For teachers, that might involve executing detection or analysis on drafts prior to evaluation, or leveraging the utility to initiate dialogues with students regarding AI deployment and citations. For editors and publishers, it can signify a rapid check prior to forwarding content to external verification services or to guide author discussions. For professionals and enterprises, it can back internal evaluations when authenticity and human creation matter.</p>
-        <p>[21] If alternative individuals are impacted by the outcome, clarify how you employ the Grok Assignment Checker and what transpires when a page or segment requires closer examination. A consistent, transparent procedure renders the utility more advantageous and lessens ambiguity surrounding borderline outcomes.</p>
+        <h3>How The Grok Assignment Checker Integrates Into Your Workflow</h3>
+        <p>The Grok Assignment Checker functions most effectively as a filtering stage, rather than the final verdict. For teachers, that might involve executing detection or analysis on drafts prior to evaluation, or leveraging the utility to initiate dialogues with students regarding AI deployment and citations. For editors and publishers, it can signify a rapid check prior to forwarding content to external verification services or to guide author discussions. For professionals and enterprises, it can back internal evaluations when authenticity and human creation matter.</p>
+        <p>If alternative individuals are impacted by the outcome, clarify how you employ the Grok Assignment Checker and what transpires when a page or segment requires closer examination. A consistent, transparent procedure renders the utility more advantageous and lessens ambiguity surrounding borderline outcomes.</p>
 
-        <h2>[22] Recommendations For Consistent Operation Of The Grok Assignment Checker</h2>
-        <p>[23] For superior outcomes with the Grok Assignment Checker, apply full paragraphs or complete sections, steer clear of brief fragments, and execute checks in a reproducible manner so distinct drafts can be contrasted equitably. No automated utility is flawless, therefore interpret the output as an indicator to investigate rather than an independent conclusion.</p>
+        <h2>Recommendations For Consistent Operation Of The Grok Assignment Checker</h2>
+        <p>For superior outcomes with the Grok Assignment Checker, apply full paragraphs or complete sections, steer clear of brief fragments, and execute checks in a reproducible manner so distinct drafts can be contrasted equitably. No automated utility is flawless, therefore interpret the output as an indicator to investigate rather than an independent conclusion.</p>
 
-        <h3>[24] Input Quality And Length</h3>
-        <p>[25] Most AI-content review utilities operate more dependably when the input is sufficiently long and structured as a cohesive passage. If the Grok Assignment Checker advises a minimal word count or suggests utilizing full paragraphs, adhere to that recommendation. Extremely brief snippets and disconnected fragments can yield volatile outcomes. Whenever feasible, submit writing that mirrors how the material would genuinely be utilized or evaluated.</p>
+        <h3>Input Quality And Length</h3>
+        <p>Most AI-content review utilities operate more dependably when the input is sufficiently long and structured as a cohesive passage. If the Grok Assignment Checker advises a minimal word count or suggests utilizing full paragraphs, adhere to that recommendation. Extremely brief snippets and disconnected fragments can yield volatile outcomes. Whenever feasible, submit writing that mirrors how the material would genuinely be utilized or evaluated.</p>
 
         <h3>Following Your Results: What to Do Next</h3>
         <p>Outcomes from the Grok Assignment Checker are clues, not absolute proof. Never rely on a single score or label by itself to penalize, blame, or make a definitive choice. Utilize the outcome to determine what needs rereading, what to ask the writer, or if another approved check is necessary. Record how you utilize the tool and what guidelines you follow so your procedure remains transparent and equitable.</p>

@@ -16,7 +16,7 @@ function WriteUp() {
         <h3>Frequent AI Patterns Found in Roleplay</h3>
         <p>AI-crafted roleplay tends to: adopt an overly formal tone failing to meet conversational expectations of the medium; address all pertinent points systematically instead of focusing on emotional resonance; incorporate generic transitional phrases resembling boilerplate rather than a genuine persona; and overlook distinct cultural references, inside jokes, and community-specific vocabulary that make niche material feel authentic.</p>
 
-        <h2>[10] Instructions For The Roleplay Humanizer</h2>
+        <h2>Instructions For The Roleplay Humanizer</h2>
         <p>Drop your AI-crafted text into the submission area. Press Humanize. The utility parses your text and generates a natural-sounding human equivalent. Check the result ” always check AI-processed material prior to publishing ” and modify any parts that do not fit your exact requirements. The procedure finishes in under ten seconds for most texts.</p>
 
         <h2>Key Features</h2>

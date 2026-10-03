@@ -19,7 +19,7 @@ const toolSlug = 'god-goddess-name-generator';
 export async function generateMetadata(): Promise<Metadata> {
   return buildToolMeta({
     title: 'God & Goddess Name Generator',
-    description: '[21] Generate god and goddess names with meanings. Pick a culture (Greek, Norse, Egyptian, Roman) and receive deity monikers for fiction, games, and storytelling.',
+    description: 'Generate god and goddess names with meanings. Pick a culture (Greek, Norse, Egyptian, Roman) and receive deity monikers for fiction, games, and storytelling.',
     seoTitle: 'God & Goddess Name Generator - Deity Names With Meaning',
     urlPath: `/${toolSlug}`,
   });
@@ -29,9 +29,9 @@ function createWriteUp() {
   return (
     <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
-        <h2>[22] God &amp; Goddess Name Generator - Deity Names With Meaning</h2>
-        <p>[23] A divinity&apos;s title provides the foundation for an entire mythological framework. Names like Zeus, Odin, Ra, and Isis instantly conjure an explicit realm, temperament, and cosmic station within a solitary term. Inspired by historic pantheons, this god and goddess name generator crafts sacred titles to help you flesh out rosters for tabletop RPGs, fantasy fiction, and custom universes. Tailor your results by <strong>culture</strong> (Greek, Norse, Egyptian, Roman, or Any), designate a <strong>type</strong> (gods only, goddesses only, or both), and optionally <strong>include a meaning</strong> so every title is tied to a domain. Running purely within your browser without logins, it outputs 1–24 names per run.</p>
-        <p>[24] Divine names are not interchangeable across cultures — a Norse god and an Egyptian goddess sound completely different, and that contrast is the entire point. The guide below explains how theonyms (god-names) actually function in each of the four supported pantheons, how epithets and domains shape a deity&apos;s identity, and how to utilize the culture and type options to construct a cohesive pantheon rather than a random collection of names.</p>
+        <h2>God &amp; Goddess Name Generator - Deity Names With Meaning</h2>
+        <p>A divinity&apos;s title provides the foundation for an entire mythological framework. Names like Zeus, Odin, Ra, and Isis instantly conjure an explicit realm, temperament, and cosmic station within a solitary term. Inspired by historic pantheons, this god and goddess name generator crafts sacred titles to help you flesh out rosters for tabletop RPGs, fantasy fiction, and custom universes. Tailor your results by <strong>culture</strong> (Greek, Norse, Egyptian, Roman, or Any), designate a <strong>type</strong> (gods only, goddesses only, or both), and optionally <strong>include a meaning</strong> so every title is tied to a domain. Running purely within your browser without logins, it outputs 1–24 names per run.</p>
+        <p>Divine names are not interchangeable across cultures — a Norse god and an Egyptian goddess sound completely different, and that contrast is the entire point. The guide below explains how theonyms (god-names) actually function in each of the four supported pantheons, how epithets and domains shape a deity&apos;s identity, and how to utilize the culture and type options to construct a cohesive pantheon rather than a random collection of names.</p>
 
         <h2>Understanding Divine Names: Theonyms, Domains, and Epithets</h2>
         <p>A <strong>theonym</strong> is simply a divine title, and throughout different myths these labels rely on specific patterns. Many connect to a <strong>domain</strong> — the particular realm the deity governs, such as battle, ocean, romance, agriculture, or morning — meaning a label and a function travel side by side (which is what the &quot;Include meaning&quot; option surfaces). Deities also accumulate <strong>epithets</strong>: descriptive alternate names highlighting a specific quality or action. Zeus is &quot;Zeus the Thunderer,&quot; Athena is &quot;Grey-eyed Athena,&quot; Apollo is &quot;Far-shooting.&quot; When inventing a deity for creative writing, blending a primary name with a domain and an epithet grants it the same complex presence actual gods possess.</p>
@@ -70,7 +70,7 @@ function createWriteUp() {
         </ol>
         <p>All generation occurs locally inside your browser. Your preferences and the titles you produce are never transmitted to an external server, keeping your fictional universe confidential until you decide to reveal it.</p>
 
-        <h2>[17] Common Mistakes to Avoid</h2>
+        <h2>Common Mistakes to Avoid</h2>
         <p>Several errors shatter the illusion of an authentic pantheon. The primary mistake is blending linguistic styles accidentally — a Germanic-sounding term next to a Hellenic one feels discordant unless your setting is consciously mixed (select one tradition per pantheon to prevent this). The secondary mistake is borrowing a well-known immortal title directly (Zeus, Thor, Ra) unless the homage is deliberate. The third mistake is assigning redundant spheres, giving multiple immortals identical portfolios. The fourth mistake is disregarding significance — a term is much better when it connects to a defined domain. Retain titles that fit the tone, remain unique, and suit a specific function. These are imaginative creations drawn from legends, not an academic database, so check against historical sources if absolute precision is required.</p>
 
         <h2>Privacy</h2>

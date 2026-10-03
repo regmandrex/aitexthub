@@ -265,7 +265,7 @@ export default function GeminiWatermarkDetectorPage() {
       <p>Such signals endure resizing or compression, while staying identifiable through Google&apos;s internal tools.</p>
       <p>This approach guarantees durability: cropping, paraphrasing, or editing will not automatically remove the watermark.</p>
 
-      <h3 className="text-xl font-semibold text-slate-900">[4] The Mechanics Of The Gemini Watermark Detector</h3>
+      <h3 className="text-xl font-semibold text-slate-900">The Mechanics Of The Gemini Watermark Detector</h3>
       <p>Generally speaking, the detection workflow consists of:</p>
       <ul className="list-disc list-inside space-y-1 text-slate-700">
         <li>Tokenization: Splitting the input data (whether text or media) into smaller components.</li>
@@ -421,7 +421,7 @@ export default function GeminiWatermarkDetectorPage() {
       </ul>
       <p>Google will likely launch business access or APIs shortly, particularly because the need for content authenticity utilities rises within strict sectors.</p>
 
-      <h3 className="text-xl font-semibold text-slate-900">[22] Recommendations For Consistent Operation Of The Gemini Watermark Detector</h3>
+      <h3 className="text-xl font-semibold text-slate-900">Recommendations For Consistent Operation Of The Gemini Watermark Detector</h3>
       <p>No matter if you run an academic institution, a media organization, or a programming team, here is the way to utilize watermark detection effectively:</p>
       <p>Do:</p>
       <ul className="list-disc list-inside space-y-1 text-slate-700">

@@ -47,7 +47,7 @@ function WriteUp() {
         <h3>Archival Standardization</h3>
         <p>Institutions archiving diverse sets of photographs, AI-generated images, and digital assets often standardize onto a single metadata schema for storage purposes. Rather than being embedded directly within the file, DALL-E C2PA metadata might be captured separately in an archive management database beside the clean image file--a standard practice in digital preservation.</p>
 
-        <h2>[10] Instructions For The DALL-E Image Watermark Remover</h2>
+        <h2>Instructions For The DALL-E Image Watermark Remover</h2>
 
         <h3>Phase 1: Submit Your Picture</h3>
         <p>Drag your DALL-E image into the upload box or click to browse. You can also paste from the clipboard using Ctrl+V or Cmd+V. The tool supports PNG, JPEG, WebP, and TIFF. DALL-E original files are normally PNG, but all formats receive identical handling.</p>

@@ -16,7 +16,7 @@ function WriteUp() {
         <h3>Typical AI Characteristics Found in Newsletter</h3>
         <p>AI-produced newsletter material often relies on an overly rigid register unsuited for the conversational tone expected in this format. It systematically addresses all relevant points rather than prioritizing emotional impact, uses generic transitions that resemble boilerplate text instead of a genuine voice, and misses local cultural references, inside jokes, and niche expressions that make specialized content feel authentic.</p>
 
-        <h2>[10] Instructions For The Newsletter Humanizer</h2>
+        <h2>Instructions For The Newsletter Humanizer</h2>
         <p>Drop your AI-crafted text into the submission area. Press Humanize. The utility parses your text and generates a natural-sounding human equivalent. Check the result ” always check AI-processed material prior to publishing ” and modify any parts that do not fit your exact requirements. The procedure finishes in under ten seconds for most texts.</p>
 
         <h2>Key Features</h2>

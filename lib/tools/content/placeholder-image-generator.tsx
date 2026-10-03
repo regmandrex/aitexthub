@@ -112,7 +112,7 @@ export const placeholderImageGeneratorContent: ToolContent = {
         <h3>Express.js Placeholder Endpoint</h3>
         <pre><code>{"app.get('/placeholder/:size', async (req, res) => {\n  const [width, height] = req.params.size.split('x').map(Number);\n  const buffer = await generatePlaceholder(width, height);\n  res.set('Content-Type', 'image/png');\n  res.set('Cache-Control', 'public, max-age=31536000');\n  res.send(buffer);\n});"}</code></pre>
 
-        <h2>[10] How to Use This Placeholder Image Generator</h2>
+        <h2>How to Use This Placeholder Image Generator</h2>
         <p>Type your preferred width and height in pixels, modify the background tone, font color, and caption text. The tool builds the picture instantly inside the preview and provides downloads as PNG or SVG format. Users may additionally copy the graphic as a base64 data URI for direct embedding within HTML or CSS. Choose from standard dimensions for frequent scenarios (avatar, card image, hero banner, Open Graph) to rapidly create standard-size placefillers. These generated graphics look neat, feature clear dimension labels, and work great for development wireframes, Storybook stories, design documentation, and prototype presentations.</p>
       </div>
     </section>

@@ -93,91 +93,91 @@ const faqs: FaqItem[] = [
     category: 'General',
     question: 'Does the Mistral Watermark Cleaner alter the internal architecture of Mistral?',
     answer:
-      '[1] Negative. The utility does not engage with or modify Mistral\'s architecture, model behavior, or internal mechanisms. It functions solely on exported plain text, executing cleanup externally without altering how Mistral operates or produces output.',
+      'Negative. The utility does not engage with or modify Mistral\'s architecture, model behavior, or internal mechanisms. It functions solely on exported plain text, executing cleanup externally without altering how Mistral operates or produces output.',
   },
   {
     category: 'General',
     question: 'Does the tool bypass or turn off AI safeguards?',
     answer:
-      '[2] Absolutely not. Mistral Watermark Cleaner will not circumvent, disable, or tamper with any AI safeguards, watermarking techniques, or content attribution mechanisms. Built strictly as a text-formatting utility, it serves no role in detection evasion or system manipulation.',
+      'Absolutely not. Mistral Watermark Cleaner will not circumvent, disable, or tamper with any AI safeguards, watermarking techniques, or content attribution mechanisms. Built strictly as a text-formatting utility, it serves no role in detection evasion or system manipulation.',
   },
   {
     category: 'General',
-    question: '[3] Does the tool guarantee that AI-generated text won\'t be detected?',
+    question: 'Does the tool guarantee that AI-generated text won\'t be detected?',
     answer:
-      '[4] Negative. The utility does not guarantee changes in AI detectability. Detection systems evaluate statistical features, word patterns, and model-specific traits that extend past surface formatting. Although cleanup enhances text quality, it does not impact underlying generative signatures utilized in AI detection.',
+      'Negative. The utility does not guarantee changes in AI detectability. Detection systems evaluate statistical features, word patterns, and model-specific traits that extend past surface formatting. Although cleanup enhances text quality, it does not impact underlying generative signatures utilized in AI detection.',
   },
   {
     category: 'General',
     question: 'Will this utility strip away system-level metadata?',
     answer:
-      '[5] Negative. The utility does not access or delete metadata preserved by platforms where Mistral outputs are produced. Metadata generally resides outside the copied text and contains attributes such as timestamps or author identifiers. The cleaner processes only the visible content following export or copying.',
+      'Negative. The utility does not access or delete metadata preserved by platforms where Mistral outputs are produced. Metadata generally resides outside the copied text and contains attributes such as timestamps or author identifiers. The cleaner processes only the visible content following export or copying.',
   },
   {
     category: 'General',
-    question: '[6] Is it acceptable to use a text cleanup tool on AI-generated content?',
+    question: 'Is it acceptable to use a text cleanup tool on AI-generated content?',
     answer:
-      '[7] Affirmative. Utilizing cleanup tools to resolve formatting issues or enhance readability is broadly accepted in publishing and content preparation. It becomes a concern only when applied to misrepresent content origin or breach usage policies. Ethical application of cleanup tools promotes transparency.',
+      'Affirmative. Utilizing cleanup tools to resolve formatting issues or enhance readability is broadly accepted in publishing and content preparation. It becomes a concern only when applied to misrepresent content origin or breach usage policies. Ethical application of cleanup tools promotes transparency.',
   },
   {
     category: 'General',
     question: 'How do responsible editing and misrepresentation differ from each other?',
     answer:
-      '[8] Responsible editing entails improving structure, clarity, and formatting while preserving transparency regarding content origin. Misrepresentation happens when AI-generated content is passed off as entirely human-written without disclosure. Applying cleanup tools ethically demands honesty about AI involvement where disclosure is expected or mandated.',
+      'Responsible editing entails improving structure, clarity, and formatting while preserving transparency regarding content origin. Misrepresentation happens when AI-generated content is passed off as entirely human-written without disclosure. Applying cleanup tools ethically demands honesty about AI involvement where disclosure is expected or mandated.',
   },
   {
     category: 'General',
-    question: '[9] Can the Mistral Watermark Cleaner be utilized in academic or professional settings?',
+    question: 'Can the Mistral Watermark Cleaner be utilized in academic or professional settings?',
     answer:
-      '[10] Affirmative. The utility can help with refining Mistral-generated content for academic or professional workflows by eliminating hidden formatting errors. Nevertheless, users must adhere to their institution\'s or publisher\'s guidelines regarding AI usage and ensure disclosure where appropriate to sustain ethical compliance.',
+      'Affirmative. The utility can help with refining Mistral-generated content for academic or professional workflows by eliminating hidden formatting errors. Nevertheless, users must adhere to their institution\'s or publisher\'s guidelines regarding AI usage and ensure disclosure where appropriate to sustain ethical compliance.',
   },
   {
     category: 'General',
-    question: '[11] Why is disclosing AI usage important?',
+    question: 'Why is disclosing AI usage important?',
     answer:
-      '[12] Disclosing AI-generated content aids transparency, helps preserve trust in professional and academic settings, and corresponds with changing policies on responsible AI usage. Even when text is cleaned for formatting, acknowledging AI involvement remains vital in environments demanding authorship clarity.',
+      'Disclosing AI-generated content aids transparency, helps preserve trust in professional and academic settings, and corresponds with changing policies on responsible AI usage. Even when text is cleaned for formatting, acknowledging AI involvement remains vital in environments demanding authorship clarity.',
   },
   {
     category: 'General',
-    question: '[13] What are legitimate uses of the Mistral Watermark Cleaner?',
+    question: 'What are legitimate uses of the Mistral Watermark Cleaner?',
     answer:
-      '[14] Legitimate use cases comprise: Preparing Mistral-generated drafts for editorial review Cleaning formatting issues for publishing in CMS platforms Eliminating hidden characters for enhanced accessibility Ensuring consistency in client-facing reports or documentation Fixing copy-paste anomalies from AI output interfaces Each of these supports clarity and usability without changing the origin of the content.',
+      'Legitimate use cases comprise: Preparing Mistral-generated drafts for editorial review Cleaning formatting issues for publishing in CMS platforms Eliminating hidden characters for enhanced accessibility Ensuring consistency in client-facing reports or documentation Fixing copy-paste anomalies from AI output interfaces Each of these supports clarity and usability without changing the origin of the content.',
   },
   {
     category: 'General',
-    question: '[15] Can the tool resolve formatting issues resulting from copying Mistral text?',
+    question: 'Can the tool resolve formatting issues resulting from copying Mistral text?',
     answer:
-      '[16] Affirmative. Copying text from AI tools may introduce hidden characters, excess spacing, or irregular punctuation. The Mistral Watermark Cleaner tackles these problems by executing text normalization techniques that reestablish formatting consistency across platforms and devices.',
+      'Affirmative. Copying text from AI tools may introduce hidden characters, excess spacing, or irregular punctuation. The Mistral Watermark Cleaner tackles these problems by executing text normalization techniques that reestablish formatting consistency across platforms and devices.',
   },
   {
     category: 'General',
-    question: '[17] How can hidden characters impact SEO or search indexing?',
+    question: 'How can hidden characters impact SEO or search indexing?',
     answer:
-      '[18] Hidden characters can interfere with how search engines parse and index content, potentially influencing how keywords are interpreted or shown. Eliminating these characters enhances content structure for superior compatibility with SEO tools but does not manipulate or sway ranking algorithms.',
+      'Hidden characters can interfere with how search engines parse and index content, potentially influencing how keywords are interpreted or shown. Eliminating these characters enhances content structure for superior compatibility with SEO tools but does not manipulate or sway ranking algorithms.',
   },
   {
     category: 'General',
-    question: '[19] Does formatting cleanup alter how AI detection tools operate?',
+    question: 'Does formatting cleanup alter how AI detection tools operate?',
     answer:
-      '[20] Negative. Formatting modifications have minimal impact on AI detection systems, which center on content features like sentence structure, token choice, and statistical patterns. The cleaner enhances surface readability but does not impact deeper generative characteristics utilized in detection.',
+      'Negative. Formatting modifications have minimal impact on AI detection systems, which center on content features like sentence structure, token choice, and statistical patterns. The cleaner enhances surface readability but does not impact deeper generative characteristics utilized in detection.',
   },
   {
     category: 'General',
-    question: '[21] Why doesn\'t the tool impact watermark detection outcomes?',
+    question: 'Why doesn\'t the tool impact watermark detection outcomes?',
     answer:
-      '[22] Watermarking, when present, frequently entails token-level patterns that remain separate from spacing or formatting. Because the utility functions at the formatting layer, it does not interfere with embedded patterns or statistical features that might be leveraged for detection or attribution.',
+      'Watermarking, when present, frequently entails token-level patterns that remain separate from spacing or formatting. Because the utility functions at the formatting layer, it does not interfere with embedded patterns or statistical features that might be leveraged for detection or attribution.',
   },
   {
     category: 'General',
-    question: '[23] Does the tool connect to or access Mistral AI systems?',
+    question: 'Does the tool connect to or access Mistral AI systems?',
     answer:
-      '[24] Negative. The Mistral Watermark Cleaner does not link to Mistral AI infrastructure, APIs, or internal components. It operates strictly as an external utility that handles plain text content post-generation, without modifying or accessing model-specific systems.',
+      'Negative. The Mistral Watermark Cleaner does not link to Mistral AI infrastructure, APIs, or internal components. It operates strictly as an external utility that handles plain text content post-generation, without modifying or accessing model-specific systems.',
   },
   {
     category: 'General',
     question: 'What are the constraints of the Mistral Watermark Cleaner?',
     answer:
-      '[25] The utility is restricted to handling plain text. It does not alter metadata, rewrite content meaning, or eliminate watermarking logic embedded in statistical output patterns. Its effectiveness relies on the input\'s formatting issues and does not cover semantic editing or detection alteration.',
+      'The utility is restricted to handling plain text. It does not alter metadata, rewrite content meaning, or eliminate watermarking logic embedded in statistical output patterns. Its effectiveness relies on the input\'s formatting issues and does not cover semantic editing or detection alteration.',
   },
   {
     category: 'General',

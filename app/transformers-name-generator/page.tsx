@@ -62,7 +62,7 @@ function createWriteUp() {
         <p>For fan fiction, comics, and role-play, the moniker represents the initial element readers evaluate. A robust Transformers original character moniker performs three tasks simultaneously: it establishes a faction (Autobot or Decepticon, Maximal or Predacon), it hints at the alt-mode or signature capability, and it maintains the appropriate tone for the bot&apos;s disposition. Generate a batch, then evaluate each moniker: could it appear in a roll-call beside Optimus, Megatron, or Dinobot without anyone blinking? If yes, it occupies the correct register.</p>
         <p>One standard method is securing the alternate mode initially — like a rescue chopper or tactical digger — and building the moniker around it (Skylift, Quarrybreaker). Next, incorporate a descriptive trait: a daring pilot could be dubbed Recklash, while a steady protector could be named Stonewatch. Should your OC belong to a combining squad (similar to how the Constructicons make up Devastator), ensure the individual titles share a thematic connection to feel cohesive as a group.</p>
 
-        <h2>[10] How to Use This Transformers Name Generator</h2>
+        <h2>How to Use This Transformers Name Generator</h2>
         <ol className="list-decimal pl-6 space-y-2">
           <li>Choose the quantity of names generated per batch (1–24).</li>
           <li>Click <strong>Generate names</strong> to produce a new set of Cybertronian-style names.</li>

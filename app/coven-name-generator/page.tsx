@@ -61,7 +61,7 @@ function createWriteUp() {
         <p>In fiction, a coven title accomplishes significant worldbuilding effortlessly — it communicates the group&apos;s age, philosophy, and reputation to the reader prior to any scene. For tabletop and video-game campaigns, a coven functions as a memorable faction or adversary, so provide a title that players will recall and fear or pursue. Within role-play communities and Discord servers, a shared coven designation offers members a collective identity, complete with a sigil, a color, and specific ranks.</p>
         <p>When your universe contains competing covens, intentionally assign them opposing titles and themes — a lunar sisterhood versus a blood cabal, a green hedge-circle against an ashen order — so your audience recognizes the conflict between them instantly and never confuses the two.</p>
 
-        <h2>[10] How to Use This Coven Name Generator</h2>
+        <h2>How to Use This Coven Name Generator</h2>
         <ol className="list-decimal pl-6 space-y-2">
           <li>Determine your coven&apos;s atmosphere and theme initially — dark cabal, cozy hedge-circle, lunar sisterhood, or ancient order.</li>
           <li>Select the number of names you desire per generation (1–24) and click <strong>Generate names</strong> to receive a fresh set of coven and witch titles.</li>

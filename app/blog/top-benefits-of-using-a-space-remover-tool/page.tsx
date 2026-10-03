@@ -102,7 +102,7 @@ export default function TopBenefitsOfUsingASpaceRemoverToolPage() {
 
       <div className="mt-8 rounded-2xl border border-brand-100 bg-brand-50 p-4 text-sm text-brand-800">
         <p className="font-semibold">Enhance quality and save time</p>
-        <p>[1] <Link href="/space-remover">Space Remover</Link> — rapid cleanup for students and professionals. No registration needed.</p>
+        <p><Link href="/space-remover">Space Remover</Link> — rapid cleanup for students and professionals. No registration needed.</p>
       </div>
     </article>
   );

@@ -33,7 +33,7 @@ function createWriteUp() {
         <h2>What Constitutes Old English (Anglo-Saxon)?</h2>
         <p>Old English, otherwise known as Anglo-Saxon, represents the earliest phase of English, utilized in England spanning roughly 450 to 1150. It serves as the speech of Beowulf and the Anglo-Saxon Chronicle. An Old English Translator does not reproduce historical documents word-for-word; rather, it infuses your contemporary sentences with an Anglo-Saxon flavor. For a subsequent era (Chaucer's time), apply a Middle English translator or medieval translator; for Early Modern English (thee, thou), employ the Shakespearean translator.</p>
 
-        <h2>[10] Instructions For The Old English Translator</h2>
+        <h2>Instructions For The Old English Translator</h2>
         <p>Launch the Old English Translator, type or paste your modern English into the entry box, and click Translate to Anglo Saxon or Convert. The utility generates an Old English–styled variant. Copy the outcome for deployment within essays, role-playing scenarios, or assignments. If your text originated from a webpage or file, sanitize it beforehand so the input consists of plain text.</p>
 
         <h2>Convert to Anglo Saxon: What It Means</h2>
@@ -114,7 +114,7 @@ function createWriteUp() {
         <p>To translate to Anglo Saxon utilizing this utility: (1) Navigate to the Old English Translator page. (2) Type or input your modern English inside the designated text box. Should the text originate from a website, sanitize it initially via a space-remover and strip-HTML utility. (3) Select Convert or Translate to Anglo Saxon. (4) Copy the resultant Old English-style text. (5) Modify as required by your assignment.</p>
         <p>Regarding extensive texts, execute processing section by section to facilitate reviewing and editing of each segment. Merge the portions while smoothing out transitions. The objective consists of consistent, readable output matching your target audience.</p>
 
-        <h2>[21] Old English Translator Output: Stylistic vs Exact</h2>
+        <h2>Old English Translator Output: Stylistic vs Exact</h2>
         <p>Old English Translator output remains stylistic rather than acting as a replica of historical Old English inflection and grammar. Authentic Anglo-Saxon featured intricate word order and case endings; the utility yields a readable approximation. Treat the final product as a baseline, refining it for your specific project. Should the output appear overly contemporary, attempt rewriting your input utilizing simpler vocabulary. If it feels excessively obscure, revise for clarity.</p>
 
         <h2>Using an Old English Translator for Classroom Instruction</h2>
@@ -124,20 +124,20 @@ function createWriteUp() {
         <h2>Old English Translator for Video and Podcasts</h2>
         <p>Content producers designing Beowulf or Anglo-Saxon themed media sometimes employ an Old English Translator to draft on-screen text, captions, or scripts. The utility provides a translate to Anglo Saxon flavor, requiring edits for pacing and clarity. Keep captions or dialogue in the Old English style brief so audiences can easily follow.</p>
 
-        <h2>[9] Old English Translator and Social Media</h2>
+        <h2>Old English Translator and Social Media</h2>
         <p>Bios or captions styled in the Anglo-Saxon manner can lend a historical twist to social media profiles. Maintain concise phrases to ensure readability. Utilize the Old English Translator purely for educational enjoyment, avoiding its use for formal communication.</p>
 
         <h2>Why Translate to Anglo Saxon and Old English Translator Matter</h2>
         <p>As the earliest variation of English and the language behind Beowulf, Old English (Anglo-Saxon) is well-known. An Old English Translator assists in exploring that era without requiring you to master the complete grammar. Employ the utility for classroom discussions, creative writing, or literature and history courses, combining it with primary texts for greater depth.</p>
         <p>Educators can leverage the Old English Translator to illustrate how English appeared prior to the Middle English period and the Norman Conquest. Pupils can evaluate utility outputs against authentic Old English literature such as Beowulf to observe structure and vocabulary within context.</p>
 
-        <h2>[1] Old English Translator and Education Standards</h2>
+        <h2>Old English Translator and Education Standards</h2>
         <p>Numerous universities and schools instruct students on the history of English and Beowulf. An Old English Translator aids this syllabus by offering learners a method to translate to Anglo Saxon for discussions and homework. Always combine utility usage with grammar guides and primary sources. When suggesting this utility to peers or students, stress that it supports learning and that primary sources remain vital.</p>
 
         <h2>Complimentary Old English Translator with No Sign-Up</h2>
         <p>This Old English Translator comes at no cost and demands no sign-up or account creation. You are able to open the website, paste your text, and translate to Anglo Saxon style within moments. That renders it handy for creative writing, classroom demonstrations, or Beowulf homework. A lot of users favor utilities operating directly in browsers without dispatching data to external servers; this Old English Translator is built with that principle in mind whenever feasible.</p>
 
-        <h2>[18] Old English Translator Bookmark and Quick Access</h2>
+        <h2>Old English Translator Bookmark and Quick Access</h2>
         <p>Save this Old English Translator page to your bookmarks for fast access whenever you must translate to Anglo Saxon. The utility functions across mobile and desktop devices. Individuals researching Anglo-Saxon history or Beowulf frequently require a rapid method to approximate Old English, a need satisfied by this complimentary Old English Translator. For rigorous academic work, supplement it with primary literature and grammar references.</p>
 
         <h2>Overview: Appropriate Moments to Employ an Old English Translator</h2>
@@ -147,7 +147,7 @@ function createWriteUp() {
         <p>Employ the Old English Translator whenever you must translate to Anglo Saxon. Should you require a different era, consider the Middle English translator (Chaucer-era), the medieval translator, or the Early Modern Shakespearean translator. For decorative text, the fancy English translator works well, while the Navajo translator handles English to Navajo. Additional utilities are available on the website.</p>
         <p>Old English Translator results are intended strictly for educational and creative purposes. For formal correspondence, stick to standard modern English.</p>
 
-        <h2>[6] Final Checklist for Old English Translator</h2>
+        <h2>Final Checklist for Old English Translator</h2>
         <p>Prior to submitting or publishing text generated by the Old English Translator, consider these points: Is the result appropriate for your intended readers? If the text originated on the web, did you clean the pasted input using a space-remover and strip-HTML utility? Did you refine the outcome for consistency and readability? Restrict your use of the Old English Translator strictly to educational and creative endeavors.</p>
 
         <h2>Translate to Anglo Saxon: Concluding Remarks</h2>
@@ -202,7 +202,7 @@ export default async function OldEnglishTranslatorPage() {
   const webAppSchema = { '@context': 'https://schema.org', '@type': 'WebApplication', name: title, applicationCategory: 'UtilitiesApplication', operatingSystem: 'Web', description: description, url, offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' }, aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', ratingCount: '1840', bestRating: '5', worstRating: '1' } };
 
   const pageFaqs: FaqItem[] = [
-    { category: 'General', question: '[3] What is an Old English Translator?', answer: 'An Old English Translator serves as a web utility that transforms contemporary English into an Old English (Anglo-Saxon) format—the tongue of Anglo-Saxon England and Beowulf. It assists you in translating to Anglo Saxon for schooling, creative projects, or learning. The resulting text is approximate and stylistic rather than a literal historical translation.' },
+    { category: 'General', question: 'What is an Old English Translator?', answer: 'An Old English Translator serves as a web utility that transforms contemporary English into an Old English (Anglo-Saxon) format—the tongue of Anglo-Saxon England and Beowulf. It assists you in translating to Anglo Saxon for schooling, creative projects, or learning. The resulting text is approximate and stylistic rather than a literal historical translation.' },
     { category: 'General', question: 'Does the Old English Translator cost anything?', answer: 'Affirmative. This Old English Translator is entirely free to operate within your browser with no account or sign-up necessary. You simply input or paste your writing, select translate, and copy the Anglo-Saxon-style output. The tool executes locally whenever possible to ensure your text is never transmitted to an external server.' },
     { category: 'Usage', question: 'How can someone operate the Old English Translator?', answer: 'Launch the Old English Translator page, paste or type your contemporary English into the text box, and select Translate to Anglo Saxon or Convert. Retrieve the output for use in schoolwork, role-play, or essays. If your writing was copied from a document or webpage, sanitize it beforehand using a space-remover and strip-HTML utility to ensure the input consists solely of plain text.' },
     { category: 'Technical', question: 'What is Anglo-Saxon (Old English)?', answer: 'Old English, also called Anglo-Saxon, represents the earliest stage of English spoken in England between roughly 450 and 1150, encompassing the language of the Anglo-Saxon Chronicle and Beowulf. It featured grammatical gender, case endings, and an intricate word order that contrast sharply with modern English.' },

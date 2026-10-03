@@ -16,7 +16,7 @@ function WriteUp() {
         <h3>Typical AI Patterns in Dnd</h3>
         <p>Machine-generated dnd usually: adopts an excessively stiff tone that clashes with standard chat expectations; covers every point methodically instead of focusing on emotional resonance; relies on standard transitional clichés rather than a genuine voice; and leaves out niche cultural references, inside jokes, and server-specific terms that give specialized writing a natural feel.</p>
 
-        <h2>[10] Instructions For The D&D Text Humanizer</h2>
+        <h2>Instructions For The D&D Text Humanizer</h2>
         <p>Drop your AI-crafted text into the submission area. Press Humanize. The utility parses your text and generates a natural-sounding human equivalent. Check the result ” always check AI-processed material prior to publishing ” and modify any parts that do not fit your exact requirements. The procedure finishes in under ten seconds for most texts.</p>
 
         <h2>Key Features</h2>

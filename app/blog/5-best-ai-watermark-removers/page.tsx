@@ -65,7 +65,7 @@ export default function FiveBestAiWatermarkRemoversPage() {
       </section>
 
       <section className="mt-10 space-y-4">
-        <h2 className="text-2xl font-semibold text-slate-900">[1] Solution One: AI Text Cleanup Tools &mdash; ChatGPT Watermark Remover</h2>
+        <h2 className="text-2xl font-semibold text-slate-900">Solution One: AI Text Cleanup Tools &mdash; ChatGPT Watermark Remover</h2>
         <p className="text-slate-700">The <Link href="/chatgpt-watermark-remover">ChatGPT Watermark Remover</Link> on this platform is our leading choice for nearly all users. It handles text completely within the browser, supports every primary hidden character type, and displays precisely what was detected and stripped.</p>
         <div className="grid gap-4 md:grid-cols-2">
           <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
@@ -95,7 +95,7 @@ export default function FiveBestAiWatermarkRemoversPage() {
       <div className="ad-slot"><AdSenseSlot className="w-full" /></div>
 
       <section className="mt-10 space-y-4">
-        <h2 className="text-2xl font-semibold text-slate-900">[3] Solution Two: AI Text Cleanup Tools &mdash; Invisible Character Detector</h2>
+        <h2 className="text-2xl font-semibold text-slate-900">Solution Two: AI Text Cleanup Tools &mdash; Invisible Character Detector</h2>
         <p className="text-slate-700">The <Link href="/invisible-character-detector">Invisible Character Detector</Link> is the finest choice when you must comprehend precisely what your text contains prior to acting. It delivers character-level Unicode analysis: every hidden character spotted is displayed with its code point, position, and title.</p>
         <div className="grid gap-4 md:grid-cols-2">
           <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
@@ -122,7 +122,7 @@ export default function FiveBestAiWatermarkRemoversPage() {
       </section>
 
       <section className="mt-10 space-y-4">
-        <h2 className="text-2xl font-semibold text-slate-900">[5] Solution Three: AI Text Cleanup Tools &mdash; Zero-Width Space Remover</h2>
+        <h2 className="text-2xl font-semibold text-slate-900">Solution Three: AI Text Cleanup Tools &mdash; Zero-Width Space Remover</h2>
         <p className="text-slate-700">The <Link href="/zero-width-space-remover">Zero-Width Space Remover</Link> is a specific utility built for the frequent single hidden character found in AI outputs: U+200B. When your tests indicate zero-width spaces represent the primary flaw, this specialized instrument delivers the quickest precise cleanup.</p>
         <div className="grid gap-4 md:grid-cols-2">
           <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
@@ -148,7 +148,7 @@ export default function FiveBestAiWatermarkRemoversPage() {
       </section>
 
       <section className="mt-10 space-y-4">
-        <h2 className="text-2xl font-semibold text-slate-900">[6] Solution Four: AI Text Cleanup Tools &mdash; AI Text Cleanup Tools Main Suite</h2>
+        <h2 className="text-2xl font-semibold text-slate-900">Solution Four: AI Text Cleanup Tools &mdash; AI Text Cleanup Tools Main Suite</h2>
         <p className="text-slate-700">The <Link href="/">AI Text Cleanup Tools</Link> main page serves as an all-inclusive text scrubbing bundle addressing invisible characters alongside a wider purification process that simultaneously fixes layout structures, standardizes punctuation marks, and resolves other frequent AI writing flaws.</p>
         <div className="grid gap-4 md:grid-cols-2">
           <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">

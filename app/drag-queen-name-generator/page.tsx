@@ -55,7 +55,7 @@ function createWriteUp() {
         <h2>Drag Family and House Titles</h2>
         <p>Across numerous scenes, a queen&apos;s surname denotes affiliation. Drag houses and families — mentored collectives originating from a &quot;drag mother&quot; — frequently share a surname that new queens adopt upon joining, mimicking generational family names. Should you belong to or establish a drag family, a shared surname unites members and immediately establishes a lineage for anyone familiar with the community. While generating names, you can keep a chosen family surname constant and utilize the tool solely for first-name suggestions that harmonize well with it.</p>
 
-        <h2>[10] How to Use This Drag Queen Name Generator</h2>
+        <h2>How to Use This Drag Queen Name Generator</h2>
         <ol className="list-decimal pl-6 space-y-2">
           <li>Select the quantity of queen monikers you desire per batch (1–24).</li>
           <li>Click <strong>Generate names</strong> to receive a new set of drag queen stage monikers.</li>

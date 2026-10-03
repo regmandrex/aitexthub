@@ -16,7 +16,7 @@ function WriteUp() {
         <h3>Typical AI Traits in Lyrics</h3>
         <p>AI-crafted lyrics generally: adopt an excessively stiff tone failing to match conversational standards of the medium; address all pertinent points mechanically rather than focusing on emotional impact; insert generic transition terms acting as boilerplate instead of a genuine voice; and overlook specific cultural nods, inside jokes, and niche expressions giving specialized content its native feel.</p>
 
-        <h2>[10] Instructions For The Lyrics Humanizer</h2>
+        <h2>Instructions For The Lyrics Humanizer</h2>
         <p>Drop your AI-crafted text into the submission area. Press Humanize. The utility parses your text and generates a natural-sounding human equivalent. Check the result ” always check AI-processed material prior to publishing ” and modify any parts that do not fit your exact requirements. The procedure finishes in under ten seconds for most texts.</p>
 
         <h2>Key Features</h2>

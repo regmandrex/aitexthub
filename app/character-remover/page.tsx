@@ -212,7 +212,7 @@ const article = (
     <h3>Email Platforms</h3>
     <p>Email HTML renders across hundreds of diverse client and OS combinations, rendering it especially vulnerable to character issues. Non-breaking spaces rendering invisibly in one client can appear as visible characters in another. Invisible characters can alter character counts within subject lines and preview text. Character removal before any text reaches an email platform guarantees uniform rendering across all recipient environments.</p>
 
-    <h2>[23] Character Remover Best Practices</h2>
+    <h2>Character Remover Best Practices</h2>
     <p>For maximum advantage, integrate the Character Remover as a standard phase within your content and data workflows rather than applying it reactively when issues surface.</p>
     <p>For content writers: pass every AI draft through the Character Remover before it enters your editing routine. Cleaning at the outset guarantees all subsequent editing occurs on pristine text, and no hidden characters survive toward publication.</p>
     <p>For developers: pass all AI-generated code snippets and documentation through the Character Remover before implementation. This is exceptionally critical for code destined for commitment to a shared codebase.</p>

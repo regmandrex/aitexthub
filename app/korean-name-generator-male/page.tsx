@@ -72,7 +72,7 @@ function createWriteUp() {
         </ol>
         <p>Processing happens completely inside your browser. Your preferences and the names you generate never get transmitted to any server, ensuring your character planning remains entirely private until you decide to share it.</p>
 
-        <h2>[17] Common Mistakes to Avoid</h2>
+        <h2>Common Mistakes to Avoid</h2>
         <p>A few mistakes can make a Korean name feel fake. The primary one is reversing the sequence — the family name always comes first. The second involves using a three-syllable given name or invented sounds that never occur in actual names; stick to combinations formed from genuine syllables. The third is mixing romanization methods inside a single story, writing a character as Lee in one scene and Yi in another. The fourth is ignoring the era by giving a modern teenager a clearly old-fashioned name. Stick to names that are surname-first, two-syllable, natural, and consistently spelled.</p>
 
         <h2>Privacy</h2>

@@ -16,7 +16,7 @@ function WriteUp() {
         <h3>Typical AI Patterns in Wattpad Story</h3>
         <p>AI-crafted wattpad story usually tends to: employ an excessively formal tone that fails to match the informal expectations of the genre; cover all points methodically rather than aiming for emotional resonance; utilize generic transitional phrases that resemble boilerplate instead of a genuine voice; and overlook the niche cultural references, inside jokes, and community slang that make specialized writing feel authentic.</p>
 
-        <h2>[10] Instructions For The Wattpad Story Humanizer</h2>
+        <h2>Instructions For The Wattpad Story Humanizer</h2>
         <p>Drop your AI-crafted text into the submission area. Press Humanize. The utility parses your text and generates a natural-sounding human equivalent. Check the result ” always check AI-processed material prior to publishing ” and modify any parts that do not fit your exact requirements. The procedure finishes in under ten seconds for most texts.</p>
 
         <h2>Key Features</h2>

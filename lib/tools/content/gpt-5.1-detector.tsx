@@ -29,7 +29,7 @@ const WriteUp = () => (
     <h3>Cross-Session Consistency</h3>
     <p>GPT-5.1 outputs highly consistent results when provided with similar prompts — a trait that boosts reliability for professional tasks yet builds a recognizable signature when multiple files from the identical origin undergo joint analysis. The detector can evaluate standalone files, but multi-document review magnifies the signal by spotting systematic patterns remaining uniform across outputs from the same system.</p>
 
-    <h2>[4] The Mechanics Of The GPT-5.1 Detector</h2>
+    <h2>The Mechanics Of The GPT-5.1 Detector</h2>
 
     <h3>Multi-Feature Extraction</h3>
     <p>The detection workflow kicks off by pulling statistical metrics from the source writing. These involve perplexity values gauged via a reference language model, sentence length and complexity distributions, type-token ratio and vocabulary depth metrics, part-of-speech sequence data, hedging phrase frequency and setting, semantic coherence rates across sentence pairs, and document-level structural analysis. Every metric captures a distinct aspect of the writing&#39;s statistical profile.</p>

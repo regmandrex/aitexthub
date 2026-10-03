@@ -16,7 +16,7 @@ function WriteUp() {
         <h3>Typical AI Patterns in Screenplay</h3>
         <p>AI-crafted screenplay frequently: employs a stiff formal tone failing to meet conversational norms; addresses every topic systematically instead of focusing on emotional resonance; relies on standard transitional filler rather than a genuine voice; and omits essential cultural nods, local jokes, and group-specific phrasing required for niche material to feel authentic.</p>
 
-        <h2>[10] Instructions For The Screenplay Rewriter</h2>
+        <h2>Instructions For The Screenplay Rewriter</h2>
         <p>Drop your AI-crafted text into the submission area. Press Humanize. The utility parses your text and generates a natural-sounding human equivalent. Check the result ” always check AI-processed material prior to publishing ” and modify any parts that do not fit your exact requirements. The procedure finishes in under ten seconds for most texts.</p>
 
         <h2>Key Features</h2>

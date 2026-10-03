@@ -40,7 +40,7 @@ function WriteUp() {
         <h3>Commercial and Legal Contexts</h3>
         <p>Copyright questions around AI-made graphics remain unsettled across many regions, yet the origin of a graphic matters in any legal dispute over ownership, licensing, or misuse. Confirming that a graphic is a DALL-E output - rather than a photo or human-made illustration - can serve as material evidence in intellectual property cases, fraud investigations, and contract disputes over deliverable specifications.</p>
 
-        <h2>[10] Instructions For The ChatGPT Image Watermark Detector</h2>
+        <h2>Instructions For The ChatGPT Image Watermark Detector</h2>
         <p>The tool is built to provide an answer in under ten seconds without requiring any account or uploading your image to our servers. Processing occurs entirely locally within your browser.</p>
 
         <h3>Step 1: Get Your Image Ready</h3>

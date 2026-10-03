@@ -24,42 +24,42 @@ function RailAd(_props: { side: 'left' | 'right' }) {
 const faqs: FaqItem[] = [
   {
     category: 'General',
-    question: '[11] What does it mean to Remove Text Formatting?',
-    answer: '[12] To Remove Text Formatting means to strip the formatting layers accumulating in text during copy-paste tasks, word processing, and AI generation — leaving solely the visible words with consistent, clean spacing. Text formatting comprises markdown syntax (hashes for headers, asterisks for bold, backticks for code), invisible Unicode formatting characters (byte-order marks, zero-width spaces, non-breaking spaces), and typographic special characters (ellipsis characters, curly quotes, em dashes). When you Remove Text Formatting, you reset the text to an unformatted, neutral state functioning reliably across any destination app without provoking formatting bugs or syntax errors.',
+    question: 'What does it mean to Remove Text Formatting?',
+    answer: 'To Remove Text Formatting means to strip the formatting layers accumulating in text during copy-paste tasks, word processing, and AI generation — leaving solely the visible words with consistent, clean spacing. Text formatting comprises markdown syntax (hashes for headers, asterisks for bold, backticks for code), invisible Unicode formatting characters (byte-order marks, zero-width spaces, non-breaking spaces), and typographic special characters (ellipsis characters, curly quotes, em dashes). When you Remove Text Formatting, you reset the text to an unformatted, neutral state functioning reliably across any destination app without provoking formatting bugs or syntax errors.',
   },
   {
     category: 'General',
-    question: '[13] Why do I need to Remove Text Formatting from AI-generated content?',
-    answer: '[14] AI models such as Claude, ChatGPT, and Gemini apply formatting to their output by default — markdown syntax for visual layout in the chat window, invisible Unicode characters as byproducts of the tokenization process, and typographic special characters for extra polish. When you copy AI output and drop it into a platform failing to render markdown (code editors, Gmail, spreadsheets, CMS body fields), the formatting symbols display as literal characters or trigger unexpected behavior. Clearing text formatting prior to pasting guarantees the text arrives clean and acts predictably across every destination.',
+    question: 'Why do I need to Remove Text Formatting from AI-generated content?',
+    answer: 'AI models such as Claude, ChatGPT, and Gemini apply formatting to their output by default — markdown syntax for visual layout in the chat window, invisible Unicode characters as byproducts of the tokenization process, and typographic special characters for extra polish. When you copy AI output and drop it into a platform failing to render markdown (code editors, Gmail, spreadsheets, CMS body fields), the formatting symbols display as literal characters or trigger unexpected behavior. Clearing text formatting prior to pasting guarantees the text arrives clean and acts predictably across every destination.',
   },
   {
     category: 'General',
-    question: '[15] Is Remove Text Formatting the same as paste as plain text?',
-    answer: '[16] No. Paste as plain text (Ctrl+Shift+V) eliminates rich formatting data saved in the clipboard — bold, colors, fonts, hyperlinks — but leaves behind invisible Unicode characters forming part of the plain text data. Byte-order marks, zero-width spaces, soft hyphens, and non-breaking spaces endure any paste-as-plain-text action because they represent valid plain-text code points. This Remove Text Formatting utility goes further: it strips invisible Unicode formatting characters and visual formatting markers (markdown), providing you with text that remains clean at every tier.',
+    question: 'Is Remove Text Formatting the same as paste as plain text?',
+    answer: 'No. Paste as plain text (Ctrl+Shift+V) eliminates rich formatting data saved in the clipboard — bold, colors, fonts, hyperlinks — but leaves behind invisible Unicode characters forming part of the plain text data. Byte-order marks, zero-width spaces, soft hyphens, and non-breaking spaces endure any paste-as-plain-text action because they represent valid plain-text code points. This Remove Text Formatting utility goes further: it strips invisible Unicode formatting characters and visual formatting markers (markdown), providing you with text that remains clean at every tier.',
   },
   {
     category: 'General',
-    question: '[17] Does removing text formatting delete my actual content?',
-    answer: '[18] No. Remove Text Formatting strips the formatting levels while keeping every visible word precisely as written. If your text contained 500 words prior to formatting removal, it holds 500 words after. The sole adjustments are: markdown symbols get deleted (the words they styled stay intact), curly quotes turn into straight quotes, em dashes become hyphens, and invisible Unicode characters get dropped. None of your real paragraphs, sentences, or words are altered. The content stays intact; merely the formatting artifacts are eliminated.',
+    question: 'Does removing text formatting delete my actual content?',
+    answer: 'No. Remove Text Formatting strips the formatting levels while keeping every visible word precisely as written. If your text contained 500 words prior to formatting removal, it holds 500 words after. The sole adjustments are: markdown symbols get deleted (the words they styled stay intact), curly quotes turn into straight quotes, em dashes become hyphens, and invisible Unicode characters get dropped. None of your real paragraphs, sentences, or words are altered. The content stays intact; merely the formatting artifacts are eliminated.',
   },
   {
     category: 'Usage',
-    question: '[19] How do I Remove Text Formatting online for free?',
-    answer: '[20] To Remove Text Formatting online for free: launch this utility within your browser, paste your styled text into the input field, press Clean Text, and copy the clean output. No file uploads, no account required, no character caps. The Remove Text Formatting routine runs entirely inside your browser — your text is never transmitted to a server. It functions for text from any origin: Microsoft Word, AI utilities, Google Docs, PDFs, websites, and email threads. Save this page as your go-to Remove Text Formatting utility for any content requiring seamless movement between applications.',
+    question: 'How do I Remove Text Formatting online for free?',
+    answer: 'To Remove Text Formatting online for free: launch this utility within your browser, paste your styled text into the input field, press Clean Text, and copy the clean output. No file uploads, no account required, no character caps. The Remove Text Formatting routine runs entirely inside your browser — your text is never transmitted to a server. It functions for text from any origin: Microsoft Word, AI utilities, Google Docs, PDFs, websites, and email threads. Save this page as your go-to Remove Text Formatting utility for any content requiring seamless movement between applications.',
   },
   {
     category: 'Usage',
-    question: '[21] What is the fastest way to Remove Text Formatting from a long document?',
-    answer: '[22] The quickest way to Remove Text Formatting from a lengthy document is to copy the entire document text, paste it into this utility, press Clean Text, and grab the output back. The utility handles all formatting deletion simultaneously regardless of document size — a 10,000-word file requires the exact same fraction of a second as a single paragraph. Contrast this with manual formatting removal, demanding separate find-and-replace tasks for each category of formatting symbol. For lengthy files, automated Remove Text Formatting saves considerable time and proves more thorough than any manual method.',
+    question: 'What is the fastest way to Remove Text Formatting from a long document?',
+    answer: 'The quickest way to Remove Text Formatting from a lengthy document is to copy the entire document text, paste it into this utility, press Clean Text, and grab the output back. The utility handles all formatting deletion simultaneously regardless of document size — a 10,000-word file requires the exact same fraction of a second as a single paragraph. Contrast this with manual formatting removal, demanding separate find-and-replace tasks for each category of formatting symbol. For lengthy files, automated Remove Text Formatting saves considerable time and proves more thorough than any manual method.',
   },
   {
     category: 'Usage',
-    question: '[23] Should I Remove Text Formatting before or after editing content?',
-    answer: '[24] Remove Text Formatting first, then edit. If you Remove Text Formatting post-editing, you run the risk of stripping formatting purposely introduced during your editing phase — heading structure, bold emphasis, or other styling you wish to retain. By removing text formatting from the source material initially, you begin with a pristine baseline, ensuring any formatting added afterward remains deliberate. The workflow is: paste raw source text, Remove Text Formatting, followed by editing and applying your personal styling. This guarantees every formatting feature in the finished version is intentional.',
+    question: 'Should I Remove Text Formatting before or after editing content?',
+    answer: 'Remove Text Formatting first, then edit. If you Remove Text Formatting post-editing, you run the risk of stripping formatting purposely introduced during your editing phase — heading structure, bold emphasis, or other styling you wish to retain. By removing text formatting from the source material initially, you begin with a pristine baseline, ensuring any formatting added afterward remains deliberate. The workflow is: paste raw source text, Remove Text Formatting, followed by editing and applying your personal styling. This guarantees every formatting feature in the finished version is intentional.',
   },
   {
     category: 'Usage',
-    question: '[25] How do I Remove Text Formatting from a specific section, not the whole document?',
+    question: 'How do I Remove Text Formatting from a specific section, not the whole document?',
     answer: 'To extract Remove Text Formatting out of a certain area, highlight just that segment, drop it inside this Remove Text Formatting utility, press Clean Text, and grab the sanitized segment. Move it back into your file replacing the original segment. This targeted method enables you to Remove Text Formatting from problematic zones — an AI-created paragraph containing markdown, a Word-imported block featuring non-breaking spaces — without impacting remaining file parts that are already pristine.',
   },
   {
@@ -191,10 +191,10 @@ const article = (
     <p>Mailchimp, HubSpot, Klaviyo, ConvertKit, and similar services parse your email HTML and display it across hundreds of distinct email clients. Non-breaking spaces stop proper text wrapping on narrow mobile screens. Invisible characters create spacing discrepancies inside email applications handling Unicode differently than desktop browsers. Remove Text Formatting from email copy prior to uploading it into your platform to guarantee consistent rendering across all recipients' email clients.</p>
     <h3>Code and Documentation</h3>
     <p>Curly quotes, em dashes, and hidden Unicode characters generate syntax errors, testing failures, and runtime bugs whenever they emerge inside code files, configuration documents, JSON data, CSV imports, and technical guides. Any AI-created code example, comment, or documentation string ought to have text formatting eliminated before placement in a codebase. The single most frequent trigger for looks-correct-but-fails bugs in AI-generated code involves a curly quote or hidden character undetectable to the developer.</p>
-    <h3>[5] Professional and Academic Writing</h3>
+    <h3>Professional and Academic Writing</h3>
     <p>Educational institutions and corporate organizations regularly utilize submission portals, document management systems, and compliance platforms processing text differently than standard word processors. A non-breaking space inside a legal clause can render uniquely across two separate PDF viewers. An invisible character within a crucial term might prevent it from appearing during text searches inside the document. Remove Text Formatting from any AI-assisted material before it enters a formal document management workflow.</p>
 
-    <h2>[6] Remove Text Formatting for Various AI Models</h2>
+    <h2>Remove Text Formatting for Various AI Models</h2>
     <p>Every prominent AI model introduces formatting artifacts requiring elimination, though the exact character profile fluctuates slightly depending on the model and interface.</p>
     <p><strong>ChatGPT (GPT-4, GPT-4o, GPT-3.5)</strong> — Heavy utilization of markdown formatting (asterisks, hashes) while consistently embedding zero-width spaces and byte-order marks. Curly quotes come standard in ChatGPT output. Em dashes and en dashes appear regularly. ChatGPT output benefits from comprehensive formatting elimination prior to any professional application.</p>
     <p><strong>Claude (Anthropic)</strong> — Comparable markdown usage to ChatGPT. Claude tends to generate well-organized responses featuring heading hashes and bullet markdown requiring removal for non-markdown destinations. The invisible character profile aligns closely with ChatGPT.</p>

@@ -431,7 +431,7 @@ const faqs: FaqItem[] = [
   },
   {
     category: 'General',
-    question: '[3] What is an Image to Base64 Converter?',
+    question: 'What is an Image to Base64 Converter?',
     answer: 'An Image to Base64 Converter is a utility that processes an image file and converts it into a Base64 string, representing the binary image data in text format. You can use this generated Base64 string directly within HTML using a data URL (data:image/png;base64,...), inside CSS as a background-image, or across JSON API payloads. This free online Image to Base64 Converter accepts PNG, JPG, GIF, WebP, and SVG files while offering one-click copying for data URLs, raw Base64 strings, CSS background properties, and HTML img tag structures.',
   },
 ];

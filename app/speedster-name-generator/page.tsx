@@ -36,47 +36,47 @@ function createWriteUp() {
         <p>Across decades of comics, super-speed characters emerge from a tight thematic palette. Understanding this palette helps generate aliases reading as genuinely fast rather than merely &quot;cool word plus hero&quot;:</p>
         <ul>
           <li><strong>Velocity terms at their foundation.</strong> Flash, Dash, Bolt, Zoom, Streak, Rush, Blur, Sprint, Velocity, Quicksilver. These serve as the foundational expressions across the genre, guaranteeing that any moniker derived from them instantly rings true for a speedster.</li>
-          <li>[1] <strong>Thunderbolt and electric themes.</strong> Unmatched swiftness is often portrayed through electrical arcs, leading to names incorporating that visual: Bolt, Spark, Volt, Surge, Arc, Storm, Static, Thunder. It is no fluke that The Flash&apos;s primary costume features an electric insignia across the chest.</li>
-          <li>[2] <strong>Motion and momentum.</strong> Terms indicating continuous forward movement — Rush, Momentum, Kinetic, Slipstream, Tempo, Wake — push the title toward velocity without relying on the term &quot;fast.&quot;</li>
-          <li>[3] <strong>Short and punchy beats out long and ornate.</strong> The most effective speedster names consist of one or two shoutable syllables. Compare the sharp snap of Zoom or Dash to a clumsy four-word label; speed titles demand quick utterance, matching character movement speed.</li>
+          <li><strong>Thunderbolt and electric themes.</strong> Unmatched swiftness is often portrayed through electrical arcs, leading to names incorporating that visual: Bolt, Spark, Volt, Surge, Arc, Storm, Static, Thunder. It is no fluke that The Flash&apos;s primary costume features an electric insignia across the chest.</li>
+          <li><strong>Motion and momentum.</strong> Terms indicating continuous forward movement — Rush, Momentum, Kinetic, Slipstream, Tempo, Wake — push the title toward velocity without relying on the term &quot;fast.&quot;</li>
+          <li><strong>Short and punchy beats out long and ornate.</strong> The most effective speedster names consist of one or two shoutable syllables. Compare the sharp snap of Zoom or Dash to a clumsy four-word label; speed titles demand quick utterance, matching character movement speed.</li>
         </ul>
 
-        <h2>[4] The Speed Force and Legacy Naming</h2>
+        <h2>The Speed Force and Legacy Naming</h2>
         <p>A hallmark feature of the genre is the concept of a shared source of super-speed — the Speed Force — binding an entire lineage of fast figures. That singular idea dictates how speedsters receive their names, since fresh heroes frequently inherit, riff on, or push back against an established moniker:</p>
         <ul>
-          <li>[6] <strong>Legacy and the &quot;Flash family.&quot;</strong> As mantles transfer between heroes, titles endure — Flash, Kid Flash, Impulse, and the broader Flash family. If your OC serves as a successor or sidekick, framing their alias as a mentor-derived variation (using a &quot;Kid&quot; prefix, related velocity term, or junior twist) clearly establishes that lineage.</li>
+          <li><strong>Legacy and the &quot;Flash family.&quot;</strong> As mantles transfer between heroes, titles endure — Flash, Kid Flash, Impulse, and the broader Flash family. If your OC serves as a successor or sidekick, framing their alias as a mentor-derived variation (using a &quot;Kid&quot; prefix, related velocity term, or junior twist) clearly establishes that lineage.</li>
           <li><strong>Source-tied names.</strong> Characters whose abilities stem from a cosmic speed-energy can adopt names hinting at that genesis — anything evoking force, current, or an inexhaustible well of movement reads as &quot;plugged into the source.&quot;</li>
           <li><strong>Names that imply velocity has a cost.</strong> Part of Speed Force lore is the peril of running too fast and getting sucked into it. Aliases hinting at the edge of control — Overdrive, Redshift, Terminal Velocity — suit characters who flirt with that boundary.</li>
         </ul>
         <p>If you are writing within a Speed Force-style universe, first determine whether your character is the original, a legacy successor, or a rival tapping into the identical power. That decision dictates whether you should generate a fresh standalone name or one that mirrors an existing one.</p>
 
-        <h2>[10] Hero Alias vs. Civilian Name</h2>
-        <p>[11] Nearly all speedsters maintain dual identities serving distinct purposes. Civilian monickers remain ordinary and human — Barry Allen, Wally West, Pietro Maximoff — grounding figures prior to superhuman movement. Aliases act as prominent thematic codenames — the Flash, Quicksilver — recognized by the public. Complete speedster OCs generally require both.</p>
+        <h2>Hero Alias vs. Civilian Name</h2>
+        <p>Nearly all speedsters maintain dual identities serving distinct purposes. Civilian monickers remain ordinary and human — Barry Allen, Wally West, Pietro Maximoff — grounding figures prior to superhuman movement. Aliases act as prominent thematic codenames — the Flash, Quicksilver — recognized by the public. Complete speedster OCs generally require both.</p>
         <p>This generator centers on the alias, the component required to sound fast. The trick for the civilian name is the exact opposite: keep it unremarkable, even slightly mundane, so the contrast between &quot;ordinary person&quot; and &quot;streak of lightning&quot; hits the way the genre intends. A helpful framework is the alliterative civilian name (Barry Allen, Wally West, Peter Parker within the broader superhero tradition) — a mild, authentic-sounding moniker with matching initials, paired with a hard-hitting speed alias. Generate your codename here, then pick a consciously grounded civilian identity to rest beneath it.</p>
 
-        <h2>[13] Naming a Speedster OC for Comics, Fanfic, and RP</h2>
+        <h2>Naming a Speedster OC for Comics, Fanfic, and RP</h2>
         <p>For an original character, the alias represents the initial element readers judge, and a potent speedster name accomplishes three goals simultaneously: it announces super-speed in a syllable, it conveys a lightning or motion visual, and it matches the character&apos;s tone (bright hero or shadowed rival). Generate a batch, then test every name with a single question: could a narrator yell &quot;Go,&quot; followed by this title, as the figure streaks out of frame? If it sounds great shouted during a sprint, it hits the right register.</p>
         <p>For fanfic and role-play set within an established speedster realm, you must also ensure the name avoids colliding with canon. Borrowing the theme is acceptable and expected; reusing an identical existing alias is not. A solid strategy is to take a speed or lightning root favored by the genre and twist it into something novel — a fresh take on Bolt, Dash, or Surge that no canon character currently claims. For tabletop and D&D-style hero campaigns, identical logic applies: a speedster build demands a name signaling the gimmick the moment it hits the table, allowing fellow players to instantly visualize someone acting twice before anyone else moves.</p>
 
-        <h2>[16] Villain Speedster Names: Going Darker</h2>
+        <h2>Villain Speedster Names: Going Darker</h2>
         <p>The genre&apos;s most unforgettable speedsters frequently turn out to be villains, and their names rest upon a darker variation of that exact palette. While heroes receive bright, forward words (Flash, Dash, Impulse), villain speedsters acquire monikers twisting speed into menace — Zoom, Reverse-Flash, Savitar, Godspeed. Observe the methods:</p>
         <ul>
           <li><strong>Inversion.</strong> &quot;Reverse-Flash&quot; literally negates the protagonist — a mirror-image alias is a classic technique for naming an evil counterpart to your main character. If your hero is Bolt, your villain could well be Backlash or Anti-Surge.</li>
-          <li>[19] <strong>Hard, hissing sounds.</strong> Zoom, Savitar, Shade — sharp consonants alongside ominous vowels lend speed titles threatening rather than heroic qualities.</li>
+          <li><strong>Hard, hissing sounds.</strong> Zoom, Savitar, Shade — sharp consonants alongside ominous vowels lend speed titles threatening rather than heroic qualities.</li>
           <li><strong>Grandiose or godlike titles.</strong> Godspeed, the Rival, the Black Flash — villain speedsters frequently claim a moniker asserting dominance over speed itself, implying they represent the absolute fastest and are fully aware of it.</li>
         </ul>
         <p>When generating a villain alias, lean toward the darker, sharper outcomes in your batch and away from the bright, friendly options. A name like Zoom functions effectively precisely because it sounds fast and subtly wrong concurrently.</p>
 
-        <h2>[22] Building a Fast-Sounding Word From Scratch</h2>
+        <h2>Building a Fast-Sounding Word From Scratch</h2>
         <p>If you desire something more original than a standard speed term, you can build an alias simply sounding quick. Several techniques the genre depends upon:</p>
         <ul>
           <li><strong>Begin using an abrupt consonant.</strong> Phonetics like B, D, K, T, and Z pop forcefully — Bolt, Dash, Kinetic, Zoom. Any handle kicking off with those syllables gives the impression of exploding outward from the starting gate.</li>
-          <li>[25] <strong>Keep vowels short.</strong> Clipped short vowels outperform drawn-out long ones. &quot;Dash&quot; outpaces &quot;Daaron&quot; textually.</li>
+          <li><strong>Keep vowels short.</strong> Clipped short vowels outperform drawn-out long ones. &quot;Dash&quot; outpaces &quot;Daaron&quot; textually.</li>
           <li><strong>Merge a pair of velocity concepts.</strong> Mix a movement root with an energy root — Voltdash, Sparkstreak, Quickbolt — to invent something original that still reads as a speedster. Employ the generator to spark these combinations, then refine them down to the neatest version.</li>
           <li><strong>Finish on forward momentum.</strong> Endings like -dash, -bolt, -surge, or -streak enable you to attach a velocity punch onto nearly any front half and make the entire item read fast.</li>
         </ul>
 
-        <h2>[10] How to Use This Speedster Name Generator</h2>
+        <h2>How to Use This Speedster Name Generator</h2>
         <ol className="list-decimal pl-6 space-y-2">
           <li>Choose how many aliases you desire per run (1-24).</li>
           <li>Press <strong>Generate names</strong> to obtain a brand-new batch of speedster-themed codenames.</li>

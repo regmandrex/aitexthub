@@ -5,8 +5,8 @@ function WriteUp() {
   return (
     <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
-        <h2>[1] Adobe Firefly Video Watermark Remover: Everything You Need to Know About C2PA Metadata and Free Online Removal</h2>
-        <p>[2] Holding a leading position among state-of-the-art AI video suites, Adobe Firefly equips every generated render with an embedded C2PA Content Credentials watermark—a hybrid safeguard pairing cryptographic validation with hidden steganographic patterns to mark synthetic media. Should you need a zero-cost online Adobe Firefly Video Watermark Remover, our resource explores every facet of this provenance architecture, breaks down which data layers are serviceable, analyzes the technical and statutory challenges of modification, and explains how to clean your own legitimate creations safely.</p>
+        <h2>Adobe Firefly Video Watermark Remover: Everything You Need to Know About C2PA Metadata and Free Online Removal</h2>
+        <p>Holding a leading position among state-of-the-art AI video suites, Adobe Firefly equips every generated render with an embedded C2PA Content Credentials watermark—a hybrid safeguard pairing cryptographic validation with hidden steganographic patterns to mark synthetic media. Should you need a zero-cost online Adobe Firefly Video Watermark Remover, our resource explores every facet of this provenance architecture, breaks down which data layers are serviceable, analyzes the technical and statutory challenges of modification, and explains how to clean your own legitimate creations safely.</p>
 
         <h2>Comprehending the Adobe Firefly C2PA Watermark Prior to Its Removal</h2>
         <p>You cannot make educated choices regarding watermark extraction unless you first grasp what the watermark is and its function. Adobe Firefly embeds Content Credentials leveraging the C2PA (Coalition for Content Provenance and Authenticity) open standard. The watermark has two distinct parts, and they operate quite differently.</p>
@@ -16,7 +16,7 @@ function WriteUp() {
         <p>Apart from the container metadata, Adobe integrates a trained steganographic signal straight into the luminance values of every video frame. This signal remains invisible to human observers yet gets spotted by a compatible neural-network decoder. It aims to endure re-encoding, color grading, minor cropping, and social media compression. This layer stays active even after stripping the container metadata.</p>
 
         <h2>Why Individuals Must Remove Adobe Firefly Video Watermarks</h2>
-        <h3>[3] Workflow Integration Without Disclosure</h3>
+        <h3>Workflow Integration Without Disclosure</h3>
         <p>Content creators utilizing Firefly as a starting point and later heavily altering the output via post-production — incorporating live-action overlays, motion graphics, voice-over, and custom color grades — might yield a final deliverable they view chiefly as their personal creative project. In legal areas or contractual settings recognizing substantial transformation, the creator possesses a valid reason to handle the provenance metadata tied to the underlying Firefly-produced components.</p>
         <h3>Privacy in Metadata</h3>
         <p>The C2PA manifest might house more data than creators realize, encompassing the initial generation prompt. For commercial projects where prompts include proprietary brand info or unannounced product details, certain clients and agencies prefer deleting the manifest metadata prior to handing over the final video to safeguard confidential creative process data.</p>
@@ -25,32 +25,32 @@ function WriteUp() {
         <h3>Research and Testing</h3>
         <p>Security researchers, watermarking experts, and platform trust-and-safety engineers have to test detection systems against both watermarked and non-watermarked material. Generating test scenarios featuring altered or missing watermarks proves vital for confirming detection precision and resilience.</p>
 
-        <h2>[4] Legal Landscape: When Is Removing an Adobe Firefly Watermark Legal?</h2>
-        <h3>[5] Your Own Content, Your Own Use</h3>
+        <h2>Legal Landscape: When Is Removing an Adobe Firefly Watermark Legal?</h2>
+        <h3>Your Own Content, Your Own Use</h3>
         <p>Should you produce the video with your individual Adobe Firefly subscription and administer the metadata for your personal workflow, publication, or archiving needs, no law across major jurisdictions bans editing or erasing metadata from your personal files. The C2PA manifest represents metadata you control as the content creator, making personal metadata management entirely lawful.</p>
-        <h3>[6] The Digital Millennium Copyright Act (DMCA) — Section 1202</h3>
+        <h3>The Digital Millennium Copyright Act (DMCA) — Section 1202</h3>
         <p>Within the United States, DMCA Section 1202 forbids removing or modifying Copyright Management Information (CMI) with the purpose of aiding copyright infringement. The C2PA manifest inside Firefly videos isn't strictly CMI in the classic sense — it functions as provenance metadata instead of copyright ownership data. Still, courts occasionally interpret CMI broadly. Removing the watermark with the goal of falsely portraying AI-generated content as human-made material and distributing it commercially creates potential liability under Section 1202.</p>
-        <h3>[7] EU AI Act and Transparency Obligations</h3>
+        <h3>EU AI Act and Transparency Obligations</h3>
         <p>The EU AI Act mandates that AI-generated audiovisual content be labeled in a machine-readable format. Stripping the C2PA watermark from Firefly-produced video and distributing that video inside the EU sans alternative disclosure might breach Article 50 transparency requirements. The responsibility falls on the "deployer" or distributor, rather than the end user storing the file locally. Seek legal advice before stripping watermarks from content distributed within EU markets.</p>
-        <h3>[8] Platform Terms of Service</h3>
+        <h3>Platform Terms of Service</h3>
         <p>Adobe Firefly's Terms of Service demand that users obey applicable laws and refrain from using content deceptively. The ToS does not explicitly ban removing the C2PA watermark from your personally generated content, yet utilizing waterless content to deceitfully portray AI work as human effort breaks the general misuse clauses.</p>
 
-        <h2>[4] The Mechanics Of The Adobe Firefly Video Watermark Remover</h2>
+        <h2>The Mechanics Of The Adobe Firefly Video Watermark Remover</h2>
         <h3>Phase 1: Upload Your Video</h3>
         <p>Upload your Firefly-produced MP4, MOV, or WebM file employing the drag-and-drop interface or file browser. The tool accepts files up to 2 GB. For files exceeding 500 MB, utilize the URL upload option if your video is hosted online. Processing duration scales linearly relative to file length — most clips under 5 minutes finish inside 30 seconds.</p>
         <h3>Phase 2: Select Removal Scope</h3>
         <p>You can select from three removal modes. "Manifest Only" strips the C2PA container UUID box while preserving the pixel-level steganographic signal intact — the video stops displaying Content Credentials on C2PA verification sites while the pixel signal remains. "Full Removal" attempts erasure of both the manifest and the pixel-level signal leveraging a signal suppression algorithm. "Metadata Scrub" clears all non-essential container metadata including the C2PA box, EXIF data, XMP data, as well as other provenance fields, while leaving the video stream unaltered.</p>
         <h3>Step 3: Execute and Retrieve</h3>
-        <p>[9] Stripping away the manifest operates as a bit-for-bit lossless action that bypasses stream re-encoding altogether. Running the deep scrubbing mode applies an isolated signal-dampening pass using near-lossless compression settings (specifically CRF 18 under H.264). Once calculation finishes, grab your processed file from the browser. The source asset remains completely unaltered, as our platform always writes out a fresh destination file.</p>
+        <p>Stripping away the manifest operates as a bit-for-bit lossless action that bypasses stream re-encoding altogether. Running the deep scrubbing mode applies an isolated signal-dampening pass using near-lossless compression settings (specifically CRF 18 under H.264). Once calculation finishes, grab your processed file from the browser. The source asset remains completely unaltered, as our platform always writes out a fresh destination file.</p>
 
-        <h2>[10] Technical Approach: How Manifest Removal Works</h2>
+        <h2>Technical Approach: How Manifest Removal Works</h2>
         <p>Deleting the C2PA container manifest acts as a simple file-level procedure. The MP4 container structure consists of a hierarchy of boxes or atoms. C2PA information resides inside a UUID box featuring the specific C2PA UUID. A remuxing routine utilizing utilities like MP4Box or FFmpeg can pinpoint and omit this box while copying all remaining boxes—comprising audio and video streams—to the target file. The resulting document is an exact byte-for-byte replica of the initial asset except for the missing C2PA UUID box.</p>
         <p>This procedure involves zero decoding or re-encoding of the video stream, ensuring no quality loss whatsoever. The execution finishes within seconds, even for massive files, due to its nature as a basic file copy operation with one omitted segment.</p>
 
-        <h2>[11] Technical Approach: Pixel-Level Signal Suppression</h2>
+        <h2>Technical Approach: Pixel-Level Signal Suppression</h2>
         <p>The pixel-level steganographic signal proves considerably more challenging to tackle than container metadata. Because the signal disperses across the frequency domain of video frames, naive strategies such as introducing Gaussian noise, applying slight blurring, or re-encoding with reduced bitrate might weaken the signal yet typically fail to drop it below the detection threshold of a capable decoder.</p>
         <p>Superior methods employ adversarial perturbation tactics. By passing the video through an optimization routine that minimizes decoder confidence while keeping pixel distortions strictly under a human-perceptual limit (evaluated via LPIPS or SSIM metrics), the signal suffers severe degradation. Such an approach demands heavy computation—requiring GPU power and usually taking several minutes per minute of video—yet yields results visually indistinguishable from the original.</p>
-        <p>[12] Users must recognize that no steganographic dampening technique can promise absolute 100% eradication. Because the native Adobe decoder incorporates adversarial training routines, it maintains moderate resistance against baseline signal perturbation strategies. An experienced investigator operating the full proprietary decoder might still capture trace signatures. While this utility minimizes markers below the threshold recognized by common public decoders, we cannot guarantee identical performance against closed-source or newly released decoder revisions.</p>
+        <p>Users must recognize that no steganographic dampening technique can promise absolute 100% eradication. Because the native Adobe decoder incorporates adversarial training routines, it maintains moderate resistance against baseline signal perturbation strategies. An experienced investigator operating the full proprietary decoder might still capture trace signatures. While this utility minimizes markers below the threshold recognized by common public decoders, we cannot guarantee identical performance against closed-source or newly released decoder revisions.</p>
 
         <h2>Preserving Quality During Watermark Elimination</h2>
         <p>A frequent worry concerning video watermark elimination involves quality reduction. Our metadata-only removal setting remains completely lossless; zero re-encoding takes place and the output matches the input bit-for-bit apart from the eliminated metadata box. Full removal mode implements near-lossless compression parameters (H.264 CRF 18 or H.265 CRF 22) producing files whose PSNR metrics exceed 45 dB relative to the source—imperceptible to human eyes and virtually untraceable by objective quality measurements.</p>
@@ -58,30 +58,30 @@ function WriteUp() {
 
         <h2>Contrasting Alternative Techniques for Firefly Metadata Erasure</h2>
         <h3>FFmpeg Manual Remuxing</h3>
-        <p>[13] Advanced technical users can strip out the C2PA manifest programmatically with FFmpeg, executing the `-map_metadata -1` parameter alongside custom stream filters to discard the c2pa UUID box. Although this terminal approach effectively wipes the manifest at zero cost, it demands command-line expertise and leaves underlying pixel-level signatures intact. Our web application wraps these intricate commands in an intuitive visual interface while applying specialized pixel suppression algorithms.</p>
+        <p>Advanced technical users can strip out the C2PA manifest programmatically with FFmpeg, executing the `-map_metadata -1` parameter alongside custom stream filters to discard the c2pa UUID box. Although this terminal approach effectively wipes the manifest at zero cost, it demands command-line expertise and leaves underlying pixel-level signatures intact. Our web application wraps these intricate commands in an intuitive visual interface while applying specialized pixel suppression algorithms.</p>
         <h3>Commercial Video Editors (DaVinci Resolve, Premiere Pro)</h3>
         <p>Re-exporting a Firefly clip via a professional video editor typically retains the C2PA manifest (particularly within Adobe Premiere Pro, which natively supports Content Credentials) while leaving the pixel-level signal untouched. Commercial editing software is not built for watermark removal and proves ineffective for this task.</p>
-        <h3>[14] Social Media Upload and Re-Download</h3>
+        <h3>Social Media Upload and Re-Download</h3>
         <p>Uploading a video to networks like TikTok or Instagram and retrieving the processed copy might strip container metadata because these platforms re-mux videos into proprietary formats. Nonetheless, the pixel-level steganographic signal is engineered specifically to withstand this procedure, meaning downloaded social media clips frequently retain the pixel signal. This tactic also heavily degrades video quality due to platform compression.</p>
 
         <h2>Sectors and Applications for Firefly Video Watermark Elimination</h2>
-        <h3>[15] Post-Production and VFX Studios</h3>
+        <h3>Post-Production and VFX Studios</h3>
         <p>Studios utilizing Firefly for concept art, animatics, or background creation frequently need to deliver final composites free of embedded third-party metadata that might complicate provenance chains or clash with client NDA clauses regarding creative workflow disclosures. Metadata removal mode suits these pipelines perfectly.</p>
         <h3>Advertising Agencies</h3>
         <p>Agencies crafting AI-enhanced advertising materials for clients occasionally manage provenance metadata for competitive privacy purposes, as rivals inspecting the C2PA manifest could uncover AI tools utilized during creation. Stripping manifests prior to handover safeguards the agency technology stack.</p>
-        <h3>[16] Software and Platform Development</h3>
-        <p>[17] Software engineers designing automated moderation tools, forensic provenance suites, or synthetic media scanners require robust benchmark collections containing both watermarked clips and matching pristine source files. This stripping utility provides an indispensable resource for curating these rigorous evaluation datasets.</p>
-        <h3>[18] Archival and Long-Term Storage</h3>
+        <h3>Software and Platform Development</h3>
+        <p>Software engineers designing automated moderation tools, forensic provenance suites, or synthetic media scanners require robust benchmark collections containing both watermarked clips and matching pristine source files. This stripping utility provides an indispensable resource for curating these rigorous evaluation datasets.</p>
+        <h3>Archival and Long-Term Storage</h3>
         <p>Archivists and digital preservation experts frequently choose to store clean video assets devoid of embedded third-party metadata, treating provenance details as separate sidecar files within asset management systems rather than embedding them inside documents. Metadata removal streamlines this separation of duties.</p>
 
-        <h2>[19] What the Remover Cannot Do</h2>
+        <h2>What the Remover Cannot Do</h2>
         <p>It remains vital to acknowledge limits. Our software cannot promise total elimination of the pixel-level signal in every scenario because extremely well-trained decoders might spot a residual signal underneath our suppression limit. This utility does not fix additional AI detection signals potentially existing inside the video, like behavioral patterns tied to motion creation that behavioral-analysis AI detectors recognize. Even once watermarks vanish, advanced behavioral analysis utilities could still label a video as AI-generated relying upon statistical traits of motion vectors, texture synthesis, and temporal coherence patterns typical for AI video production.</p>
         <p>Watermark removal fails to make an AI-generated video legally identical to human-filmed footage across all situations. Based on copyright laws, platform regulations, and contractual agreements, the AI origin of a video carries legal consequences regardless of watermark presence.</p>
 
         <h2>Privacy and Security of the Removal Utility</h2>
         <p>Videos uploaded for processing undergo handling inside isolated compute environments lacking persistent storage. Files face automatic deletion within sixty seconds after the processed output becomes ready for download. No frame data, generation metadata, or user info gets saved. This service stays GDPR-compliant and avoids utilizing uploaded material for training or analytics. For individuals possessing strict data sovereignty needs, an on-premises Docker deployment remains available.</p>
 
-        <h2>[20] The Responsible Use Framework</h2>
+        <h2>The Responsible Use Framework</h2>
         <p>We constructed this utility to support proper use cases: workflow integration, metadata privacy, platform compatibility, and research. We actively reject its application toward generating disinformation, deceptively presenting AI content as human-made work during legal or commercial settings, or any objective breaking applicable laws. We urge all users to familiarize themselves with legal duties within their jurisdiction regarding AI content disclosure prior to managing provenance metadata.</p>
 
         <h2>Conclusion</h2>
@@ -124,7 +124,7 @@ const faqs: FaqItem[] = [
   },
   {
     category: 'How It Works',
-    question: '[21] What is the difference between "Manifest Only" and "Full Removal" modes?',
+    question: 'What is the difference between "Manifest Only" and "Full Removal" modes?',
     answer: 'Manifest Only mode strips C2PA UUID boxes from video containers through a lossless remuxing action where zero video re-encoding happens, preserving quality perfectly. The pixel-level steganographic signal inside video frames stays intact, meaning frame-level analysis may still spot the watermark. Full Removal mode adds a signal suppression pass utilizing adversarial perturbation to bring pixel-level signals beneath detection thresholds, demanding a near-lossless re-encoding stage. Apply Manifest Only for quality-critical workflows and Full Removal for detection-resistant needs.',
   },
   {

@@ -60,7 +60,7 @@ function createWriteUp() {
         <h2>Stage Monikers for Fiction and Alter-Egos</h2>
         <p>Authors employ stage monikers to characterize dancers, cabaret performers, and nightlife personalities in a single word — glamorous, tough, sweet, or mysterious — prior to any dialogue. This same impulse fits drag personas, roller derby skate titles, and cosplay alter-egos, all of which value a bold, immediately readable identity. Create options, select the one whose tone fits the specific character or performance, and adjust the spelling or add a clever pun to make it entirely your own.</p>
 
-        <h2>[10] How to Use This Stripper Name Generator</h2>
+        <h2>How to Use This Stripper Name Generator</h2>
         <ol className="list-decimal pl-6 space-y-2">
           <li>Determine your preferred mood first — glamorous, cheeky, vintage burlesque, or bold and high-impact.</li>
           <li>Select how many names you want per run (1–24) and click <strong>Generate names</strong> for a fresh batch of stage names.</li>

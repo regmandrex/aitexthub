@@ -260,17 +260,17 @@ const faqs: FaqItem[] = [
   {
     category: 'Advanced',
     question: 'Should I humanize captions differently when posting from personal accounts versus brand accounts?',
-    answer: '[1] Absolutely. Personal account captions gain the most advantage through bringing back first-person identity and emotional sincerity — elements that make a personal caption appear as though a genuine individual published it. Brand account captions demand brand voice uniformity and the exclusion of corporate messaging. The humanizer tackles both, though your post-humanization editing needs adjustment based on the account variety you oversee.',
+    answer: 'Absolutely. Personal account captions gain the most advantage through bringing back first-person identity and emotional sincerity — elements that make a personal caption appear as though a genuine individual published it. Brand account captions demand brand voice uniformity and the exclusion of corporate messaging. The humanizer tackles both, though your post-humanization editing needs adjustment based on the account variety you oversee.',
   },
   {
     category: 'Advanced',
-    question: '[2] What is the word or character maximum for the Caption Humanizer?',
-    answer: '[3] The tool accepts text blocks up to roughly 3,000 characters. For extremely long caption drafts, handle them piece by piece. Most social media captions fit comfortably inside this span — Instagram permits 2,200 characters at most, and successful captions tend to be significantly shorter than that limit.',
+    question: 'What is the word or character maximum for the Caption Humanizer?',
+    answer: 'The tool accepts text blocks up to roughly 3,000 characters. For extremely long caption drafts, handle them piece by piece. Most social media captions fit comfortably inside this span — Instagram permits 2,200 characters at most, and successful captions tend to be significantly shorter than that limit.',
   },
   {
     category: 'Privacy',
-    question: '[4] Is my caption text saved or utilized for model training?',
-    answer: '[5] No — your provided text is not kept on servers and is never used for any training datasets. Execution occurs within the browser session and gets erased immediately.',
+    question: 'Is my caption text saved or utilized for model training?',
+    answer: 'No — your provided text is not kept on servers and is never used for any training datasets. Execution occurs within the browser session and gets erased immediately.',
   },
 ];
 

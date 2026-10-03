@@ -19,7 +19,7 @@ function WriteUp() {
         <h3>Typical AI Tends in Dnd Text</h3>
         <p>AI-crafted dnd text usually: adopts an overly stiff tone that fails to match the conversational style of the format; hits every relevant detail systematically instead of focusing on emotional punch; relies on standard transition words that read like generic templates rather than a true voice; and leaves out the precise cultural nods, inside jokes, and community phrasing that make niche content feel authentic.</p>
 
-        <h2>[10] Instructions For The D&D Text Generator</h2>
+        <h2>Instructions For The D&D Text Generator</h2>
         <p>Input your brief, prompt, or draft into the text box. Hit Generate. The system evaluates your text and crafts original, human-sounding material. Inspect the output - always evaluate AI-generated writing prior to deployment - and refine any areas that fall short of your exact requirements. The entire procedure wraps up in under ten seconds for most inputs.</p>
 
         <h2>Key Features</h2>

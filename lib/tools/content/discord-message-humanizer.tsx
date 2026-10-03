@@ -16,7 +16,7 @@ function WriteUp() {
         <h3>Typical AI Speech Tends in Discord Chat</h3>
         <p>AI-produced discord message generally tends to: adopt an excessively stiff tone failing to fit the chatty norms of the medium; address all pertinent subjects methodically instead of focusing on emotional resonance; employ standard transition words that read like template filler rather than a genuine voice; and overlook the precise cultural nods, niche humor, and group-centric terms that make specialized text feel completely natural.</p>
 
-        <h2>[10] Instructions For The Discord Message Humanizer</h2>
+        <h2>Instructions For The Discord Message Humanizer</h2>
         <p>Drop your AI-crafted text into the submission area. Press Humanize. The utility parses your text and generates a natural-sounding human equivalent. Check the result ” always check AI-processed material prior to publishing ” and modify any parts that do not fit your exact requirements. The procedure finishes in under ten seconds for most texts.</p>
 
         <h2>Key Features</h2>

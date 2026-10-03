@@ -53,7 +53,7 @@ function createWriteUp() {
         <h2>Goofy Names for Comic Characters</h2>
         <p>In comedy writing, cartoons, sketches, and lighthearted tabletop campaigns, a character&apos;s moniker can deliver the punchline before they even utter a word. A carefully selected silly name signals &quot;do not take this individual too seriously&quot; and prepares the audience to laugh. For an entire cast of comedic figures, generate a batch and assign related characters names within the same absurd theme so the ensemble feels deliberate. Match the degree of silliness to the overall tone: a subtle pun for a warm comedy, or a thoroughly absurd mash-up for broad slapstick.</p>
 
-        <h2>[10] How to Use This Silly Name Generator</h2>
+        <h2>How to Use This Silly Name Generator</h2>
         <ol className="list-decimal pl-6 space-y-2">
           <li>Decide where the moniker is headed — group chat, gamertag, fantasy team, or comic character — so you can evaluate what will succeed.</li>
           <li>Choose the quantity of names per batch (1–24) and select <strong>Generate names</strong> to get a new set of ridiculous, pun-filled, funny names.</li>

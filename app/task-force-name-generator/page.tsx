@@ -53,7 +53,7 @@ function createWriteUp() {
           <li><strong>Covert / black ops.</strong> Ambiguous, deniable monikers — intentionally vague or administrative — that obscure the unit&apos;s genuine mandate.</li>
         </ul>
 
-        <h2>[10] How to Use This Task Force Name Generator</h2>
+        <h2>How to Use This Task Force Name Generator</h2>
         <ol className="list-decimal pl-6 space-y-2">
           <li>Select the quantity of unit designations you desire per batch (1–24).</li>
           <li>Click <strong>Generate names</strong> to acquire a fresh set of tactical-style identifiers.</li>
@@ -71,7 +71,7 @@ function createWriteUp() {
         <h2>Guidelines for a Task Force Name That Lands</h2>
         <p>Pronounce it as an officer would during a briefing; a strong unit title sounds sharp and authoritative aloud. Keep callsigns brief for maximum radio clarity amidst static. Match your tone to the objective: black-ops teams need deniable, ambiguous titles, whereas large coalitions require formal, numbered designations. Avoid lifting monikers directly from renowned fictional or real units such as Task Force 141 or Delta Force unless you explicitly intend to reference them, due to their heavy baggage.</p>
 
-        <h2>[17] Common Mistakes to Avoid</h2>
+        <h2>Common Mistakes to Avoid</h2>
         <p>A few common errors can make a military designation feel inauthentic. The first involves mixing layers—labeling a standing unit &quot;Operation&quot; or a mission &quot;Task Force&quot; confuses readers who understand the distinction. The second is an operation title that explicitly outlines the objective, which actual militaries dodge for security. The third entails callsigns too awkward or lengthy for fast radio communication. The fourth features over-ornate names stacked with excessive adjectives until they lose official credibility. When evaluating a batch, retain titles that remain sharp, layer-appropriate, and command-ready.</p>
 
         <h2>Privacy</h2>

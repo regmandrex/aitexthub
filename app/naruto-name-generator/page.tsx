@@ -59,7 +59,7 @@ function createWriteUp() {
         <h2>Techniques, Monikers, and Titles</h2>
         <p>Beyond birth names, Naruto relies heavily on epithets - titles gained through battle. Jiraiya is the Toad Sage; Tsunade is the Slug Princess; Minato is the Yellow Flash; Itachi bears the burden of the Uchiha massacre. If you are naming an OC, think about creating a base moniker and appending an epithet reflecting their signature jutsu or chakra affinity: &quot;the Crimson Blade,&quot; &quot;the Silent Mist,&quot; &quot;the Lightning Fang.&quot; This dual-layer naming (real name plus combat title) is among the most recognizable tropes in the franchise.</p>
 
-        <h2>[10] How to Use This Naruto Name Generator</h2>
+        <h2>How to Use This Naruto Name Generator</h2>
         <ol className="list-decimal pl-6 space-y-2">
           <li>Choose the quantity of names generated per batch (1–24).</li>
           <li>Click <strong>Generate names</strong> to retrieve a fresh set of shinobi-themed monikers.</li>

@@ -55,7 +55,7 @@ function createWriteUp() {
           Because a store name is a business asset, it carries legal weight a gamer tag never does. Before you commit, it is worth checking that your chosen name is not already trademarked in your product category, since building a brand on a name someone else owns can force a costly rebrand or a legal dispute down the line. Search the trademark database in your country, look for existing businesses using the same or a confusingly similar name in your space, and favor distinctive or invented names, which are both easier to trademark yourself and less likely to collide with an established mark. This tool suggests creative ideas only — it does not check trademarks or availability, so that due diligence is on you before you launch.
         </p>
 
-        <h2>[10] How to Use This Shopify Store Name Generator</h2>
+        <h2>How to Use This Shopify Store Name Generator</h2>
         <ol className="list-decimal pl-6 space-y-2">
           <li>Configure how many store title concepts you desire per batch (1–24).</li>
           <li>Click <strong>Generate names</strong> to acquire a fresh selection of brandable ecommerce titles.</li>

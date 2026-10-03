@@ -18,7 +18,7 @@ const toolSlug = 'ancient-greek-name-generator';
 export async function generateMetadata(): Promise<Metadata> {
   return buildToolMeta({
     title: 'Ancient Greek Name Generator',
-    description: '[4] Free Ancient Greek Name Generator for character names. Create Greek-style name ideas in your browser without any sign-up.',
+    description: 'Free Ancient Greek Name Generator for character names. Create Greek-style name ideas in your browser without any sign-up.',
     seoTitle: 'Ancient Greek Name Generator – Greek Names for Characters & Mythology',
     urlPath: `/${toolSlug}`,
   });
@@ -28,42 +28,42 @@ function createWriteUp() {
   return (
     <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
-        <h2>[5] Ancient Greek Name Generator – Greek Names for Characters &amp; Mythology</h2>
+        <h2>Ancient Greek Name Generator – Greek Names for Characters &amp; Mythology</h2>
         <p>Classical Greek designations were far more than surface tags — they functioned as condensed statements. Virtually every historical moniker from the region combines genuine semantic bases: Nikolaos fuses <em>nike</em> (conquest) with <em>laos</em> (the populace) to signify &quot;victory of the people&quot;; Sophia translates to &quot;wisdom&quot;; Alexandros conveys &quot;protector of men.&quot; Producing identities through this legitimate methodology, this engine applies authentic root words, appropriate grammatical gender markers, and ancient customs so your outputs feel native to Sparta or Athens instead of a vague fantasy backdrop. It serves creators of period novels, mythological adaptations, D&amp;D adventures featuring Hellenic themes, or anyone seeking deeply purposeful names.</p>
         <p>Since each moniker adheres to genuine linguistic rules of the Hellenic world — proper grammatical inflections, sacred terms paying homage to deities, and rich compound components — you may choose any option confident it fits a citizen walking an ancient polis. Below, we break down these historical practices so you can select an option matching your figure&apos;s background, time period, and social station, while fully grasping the message behind their identity.</p>
 
-        <h2>[8] How Ancient Greek Names Are Built</h2>
-        <p>[9] The classical Greek naming system is remarkably consistent, and knowing its logic lets you pick names that feel authentic rather than invented:</p>
+        <h2>How Ancient Greek Names Are Built</h2>
+        <p>The classical Greek naming system is remarkably consistent, and knowing its logic lets you pick names that feel authentic rather than invented:</p>
         <ul>
-          <li>[10] <strong>Compound stems with meaning.</strong> Most classical names pair two roots with distinct definitions — <em>nike</em> (victory), <em>laos</em> (people), <em>kleos</em> (renown), <em>kratos</em> (might), <em>philos</em> (fond of), <em>hippos</em> (steed). Nikolaos, Kleisthenes, and Philippos (&quot;horse lover&quot;) rely on this very structure.</li>
-          <li>[11] <strong>Gender-based word endings.</strong> Masculine identifiers generally conclude with <strong>-os</strong>, <strong>-es</strong>, or <strong>-on</strong> (Nikolaos, Sokrates, Jason). Feminine alternatives commonly finish with <strong>-a</strong> or <strong>-e</strong> (Sophia, Helena, Penelope, Aphrodite).</li>
-          <li>[12] <strong>Single monikers without family names.</strong> Citizens of ancient Greece carried one unique identity, distinguished by ancestral patronymics and local civic origins rather than hereditary surnames.</li>
-          <li>[13] <strong>Distinctive phonetics.</strong> Consonant combinations such as <em>th</em>, <em>ph</em>, <em>kl</em>, and <em>chr</em>, alongside prominent vowel terminations, grant ancient Greek names their melodic cadence.</li>
+          <li><strong>Compound stems with meaning.</strong> Most classical names pair two roots with distinct definitions — <em>nike</em> (victory), <em>laos</em> (people), <em>kleos</em> (renown), <em>kratos</em> (might), <em>philos</em> (fond of), <em>hippos</em> (steed). Nikolaos, Kleisthenes, and Philippos (&quot;horse lover&quot;) rely on this very structure.</li>
+          <li><strong>Gender-based word endings.</strong> Masculine identifiers generally conclude with <strong>-os</strong>, <strong>-es</strong>, or <strong>-on</strong> (Nikolaos, Sokrates, Jason). Feminine alternatives commonly finish with <strong>-a</strong> or <strong>-e</strong> (Sophia, Helena, Penelope, Aphrodite).</li>
+          <li><strong>Single monikers without family names.</strong> Citizens of ancient Greece carried one unique identity, distinguished by ancestral patronymics and local civic origins rather than hereditary surnames.</li>
+          <li><strong>Distinctive phonetics.</strong> Consonant combinations such as <em>th</em>, <em>ph</em>, <em>kl</em>, and <em>chr</em>, alongside prominent vowel terminations, grant ancient Greek names their melodic cadence.</li>
         </ul>
 
-        <h2>[14] Male, Female, and the Gendered Endings</h2>
-        <p>[15] Aligning the grammatical ending with the character&apos;s gender is the quickest method to ensure historical accuracy. Masculine identities commonly use <strong>-os</strong> (Nikolaos, Demetrios), <strong>-es</strong> (Sokrates, Aristoteles, Herakles), and <strong>-on</strong> (Jason, Solon, Platon). Feminine forms typically employ <strong>-a</strong> (Sophia, Chloe rendered archaically as Chloa, Kassandra) and <strong>-e</strong> (Penelope, Aphrodite, Persephone, Arete). Changing the suffix on a single stem alters its gender — Nikolaos and Nikolaia both draw on &quot;victory,&quot; tailored for male and female figures respectively. Generating a list lets you sort by terminal letters to find the ideal match for every role.</p>
+        <h2>Male, Female, and the Gendered Endings</h2>
+        <p>Aligning the grammatical ending with the character&apos;s gender is the quickest method to ensure historical accuracy. Masculine identities commonly use <strong>-os</strong> (Nikolaos, Demetrios), <strong>-es</strong> (Sokrates, Aristoteles, Herakles), and <strong>-on</strong> (Jason, Solon, Platon). Feminine forms typically employ <strong>-a</strong> (Sophia, Chloe rendered archaically as Chloa, Kassandra) and <strong>-e</strong> (Penelope, Aphrodite, Persephone, Arete). Changing the suffix on a single stem alters its gender — Nikolaos and Nikolaia both draw on &quot;victory,&quot; tailored for male and female figures respectively. Generating a list lets you sort by terminal letters to find the ideal match for every role.</p>
 
-        <h2>[16] Theophoric Names: Honoring the Gods</h2>
-        <p>[17] A huge share of Greek names are <em>theophoric</em> — built to honor a deity by embedding the god&apos;s name or an attribute. This was a genuine act of devotion, and it makes a name feel deeply rooted in the ancient world:</p>
+        <h2>Theophoric Names: Honoring the Gods</h2>
+        <p>A huge share of Greek names are <em>theophoric</em> — built to honor a deity by embedding the god&apos;s name or an attribute. This was a genuine act of devotion, and it makes a name feel deeply rooted in the ancient world:</p>
         <ul>
-          <li>[18] <strong>Apollo:</strong> Apollodoros (&quot;gift of Apollo&quot;), Apollonios.</li>
+          <li><strong>Apollo:</strong> Apollodoros (&quot;gift of Apollo&quot;), Apollonios.</li>
           <li><strong>Dionysos:</strong> Dionysios, Dionysia.</li>
-          <li>[19] <strong>Demeter:</strong> Demetrios, Demetria (&quot;devoted to Demeter&quot;).</li>
-          <li>[20] <strong>Athena / Zeus / Hera:</strong> Athenodoros, Diodoros (&quot;gift of Zeus,&quot; from <em>Dios</em>), Herodotos.</li>
+          <li><strong>Demeter:</strong> Demetrios, Demetria (&quot;devoted to Demeter&quot;).</li>
+          <li><strong>Athena / Zeus / Hera:</strong> Athenodoros, Diodoros (&quot;gift of Zeus,&quot; from <em>Dios</em>), Herodotos.</li>
         </ul>
-        <p>[21] For characters serving as priestesses, oracle attendants, or children of deeply devout households, a god-honoring theophoric identity communicates that heritage immediately. Pick a patron deity relevant to their narrative and choose an option featuring that divine root.</p>
+        <p>For characters serving as priestesses, oracle attendants, or children of deeply devout households, a god-honoring theophoric identity communicates that heritage immediately. Pick a patron deity relevant to their narrative and choose an option featuring that divine root.</p>
 
-        <h2>[22] Patronymics and Identifying a Citizen</h2>
-        <p>[23] Classical individuals lacked surnames and were traditionally identified by a <strong>patronymic</strong> — highlighting their father with &quot;son of&quot; or &quot;daughter of.&quot; Though Greek relies on the genitive case, English historical texts usually phrase this as &quot;Perikles, son of Xanthippos&quot; or &quot;Perikles Xanthippou.&quot; Citizens were also recognized by their native <em>deme</em> or origin — like &quot;Demosthenes of Paiania.&quot; For complete period authenticity, combine a generated forename with their paternal lineage and home community: personal name, father&apos;s name, hometown. That exact trio constituted formal identification for historical Athenians.</p>
+        <h2>Patronymics and Identifying a Citizen</h2>
+        <p>Classical individuals lacked surnames and were traditionally identified by a <strong>patronymic</strong> — highlighting their father with &quot;son of&quot; or &quot;daughter of.&quot; Though Greek relies on the genitive case, English historical texts usually phrase this as &quot;Perikles, son of Xanthippos&quot; or &quot;Perikles Xanthippou.&quot; Citizens were also recognized by their native <em>deme</em> or origin — like &quot;Demosthenes of Paiania.&quot; For complete period authenticity, combine a generated forename with their paternal lineage and home community: personal name, father&apos;s name, hometown. That exact trio constituted formal identification for historical Athenians.</p>
 
-        <h2>[24] Famous Names as a Register Guide</h2>
+        <h2>Famous Names as a Register Guide</h2>
         <p>Real historical figures and mythic personalities provide the ultimate benchmark for linguistic authenticity. Renowned thinkers (Sokrates, Platon, Aristoteles), political leaders (Perikles, Themistokles, Solon), alongside military commanders (Leonidas, Alexandros) illustrate masculine styles; legendary and actual historical women (Penelope, Kassandra, Aspasia, Hypatia, Sappho) demonstrate feminine counterparts. Avoid directly borrowing iconic identities for new personas — christening someone verbatim as Helen or Leonidas brings distracting associations — yet mirroring their morphological components is key to credibility. Produce several choices and evaluate whether any option blends seamlessly among these classical references without seeming artificial or contemporary.</p>
 
         <h2>How to Create a Character Moniker for Stories or D&amp;D</h2>
         <p>Begin with the character's gender and role, then let the meaning do the heavy lifting. A warrior might bear a name stemming from <em>nike</em>, <em>kratos</em>, or <em>machos</em> (battle); a scholar from <em>sophia</em> (wisdom) or <em>logos</em>; a religious figure in a theophoric name. Produce a set, filter by the proper gendered suffix, and read the definitions — select a name whose sense reinforces who the person is. For a Hellenic-style D&amp;D campaign, this supplies NPCs and player characters with designations that feel integrated and authentic, as if they belong to a single culture instead of a random assortment.</p>
 
-        <h2>[10] How to Use This Ancient Greek Name Generator</h2>
+        <h2>How to Use This Ancient Greek Name Generator</h2>
         <ol className="list-decimal pl-6 space-y-2">
           <li>Choose the quantity of names generated per batch (1–24).</li>
           <li>Click <strong>Generate names</strong> to acquire a fresh set of genuine-sounding Greek names.</li>
@@ -73,7 +73,7 @@ function createWriteUp() {
         </ol>
         <p>Generation occurs completely within your browser. Your configurations and the names you build are never transmitted to a server, ensuring your characters and plot notes remain confidential until you choose to reveal them.</p>
 
-        <h2>[17] Common Mistakes to Avoid</h2>
+        <h2>Common Mistakes to Avoid</h2>
         <p>The most frequent error is misaligning the gendered suffix — assigning a male character a name ending in -a, or a female character one terminating in -os, which looks incorrect instantly to anyone acquainted with the language. Refrain from attaching Latin or Roman endings (-us, -ius) to Greek roots; those belong to Rome, not Athens, and blending them shatters the illusion. Avoid famous canonical names for major original figures. And do not over-modernize the orthography into unrecognizable shapes — the classic <em>k</em>, <em>ph</em>, and <em>-os</em> forms are what preserve the ancient vibe.</p>
 
         <h2>Applying These Monikers Within Your Projects</h2>
@@ -84,7 +84,7 @@ function createWriteUp() {
 }
 
 const pageFaqs: FaqItem[] = [
-  { category: 'General', question: '[3] What is an Ancient Greek Name Generator?', answer: 'It is a browser utility that creates genuine-sounding Ancient Greek personal names for characters, mythology, and historical fiction — designations formed from real Greek roots and suffixes, like Theron, Nikias, Kleon, Sophia, or Kassandra. It aims for the tone of classical Hellas rather than contemporary usernames. Everything executes locally in your browser, nothing is uploaded or archived, and it is free with no registration. You acquire 1 to 24 names per execution and can produce as many batches as you desire.' },
+  { category: 'General', question: 'What is an Ancient Greek Name Generator?', answer: 'It is a browser utility that creates genuine-sounding Ancient Greek personal names for characters, mythology, and historical fiction — designations formed from real Greek roots and suffixes, like Theron, Nikias, Kleon, Sophia, or Kassandra. It aims for the tone of classical Hellas rather than contemporary usernames. Everything executes locally in your browser, nothing is uploaded or archived, and it is free with no registration. You acquire 1 to 24 names per execution and can produce as many batches as you desire.' },
   { category: 'Naming', question: 'What gives a name that genuine Ancient Greek feel?', answer: 'Authentic-feeling Greek names derive from meaningful roots combined together and completed with characteristic suffixes. Masculine names frequently terminate in -os, -es, -on, or -as (Nikolaos, Sokrates, Jason, Leonidas); feminine names typically end in -a or -e (Helena, Penelope, Kassandra). Roots carry significance — nikē (victory), sophia (wisdom), kratos (power), theos (god) — so a designation like Nikandros reads as "victory-man." The tool integrates these components so the results mirror true classical names.' },
   { category: 'Naming', question: 'Which suffixes are common in Ancient Greek names?', answer: 'Masculine names usually close with -os, -on, -es, -as, or -eus (Alexios, Jason, Achilles, Leonidas, Odysseus). Feminine names generally end in -a, -e, or -is (Aikaterina, Ariadne, Chloris). These suffixes are the fastest way to make a name read as Greek, so if a generated result feels off, altering the ending to one of these usually corrects it. The terminations also indicate gender, which assists when you are naming a diverse cast.' },
   { category: 'Naming', question: 'What origins and definitions surface in Greek names?', answer: 'Many classical names are amalgams of two meaningful roots. Common ones feature nikē (victory), kratos (power), demos (people), theos (god), sophia (wisdom), philos (loving), andros (man), and hippos (horse). Nikodemos translates to "victory of the people," Philippos means "horse-lover," Theodora means "gift of god." Knowing a few roots enables you to read and even construct names, and the generator utilizes this vocabulary so its output carries plausible significance rather than random syllables.' },

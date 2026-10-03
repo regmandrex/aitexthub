@@ -86,7 +86,7 @@ function WriteUp() {
         <h3>Interest and Hobby Communities</h3>
         <p>Boards centered around specific passions — r/photography, r/woodworking, r/sourdough, r/mechanicalkeyboards, r/DIY — maintain internal lingo and group inside jokes that AI almost never gets right. A submission in r/sourdough using the term "crumb" without realizing it points to the internal texture of a loaf, not bread crumbs, gets flagged immediately as authored by someone who never actually bakes sourdough. Every hobby community features dozens of such vocabulary tests, and AI submissions constantly fail them.</p>
 
-        <h2>[4] The Mechanics Of The Reddit Post Humanizer</h2>
+        <h2>The Mechanics Of The Reddit Post Humanizer</h2>
         <p>The Reddit Post Humanizer executes a community-aware transformation on AI-created text submissions, stripping out the hallmarks of machine generation and substituting them with the specific voice traits that Reddit communities reward with upvotes and authentic interaction.</p>
 
         <h3>Eliminating Platform-Specific AI Artifacts on Reddit</h3>

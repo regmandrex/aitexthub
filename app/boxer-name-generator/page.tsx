@@ -63,7 +63,7 @@ function createWriteUp() {
         <h2>Nicknames Across Different Weight Classes</h2>
         <p>Weight classes subtly dictate what a moniker ought to convey. Heavyweight tags lean toward raw might and destruction — the division of single-punch knockouts demands titles like &quot;Iron,&quot; &quot;The Beast,&quot; or &quot;Bronze Bomber.&quot; The lighter classes, where velocity and output reign supreme, favor faster, sharper names — &quot;Lightning,&quot; &quot;Sugar,&quot; &quot;The Flash.&quot; Middleweight and welterweight, boxing&apos;s premier showcases, balance both, explaining why they spawn several of the sport&apos;s most legendary all-around sobriquets. When generating a list, retain those whose mass and vibe align with the division your pugilist fights within.</p>
 
-        <h2>[10] How to Use This Boxer Name Generator</h2>
+        <h2>How to Use This Boxer Name Generator</h2>
         <ol className="list-decimal pl-6 space-y-2">
           <li>Select the quantity of pugilist names you desire per generation (1–24).</li>
           <li>Click <strong>Generate names</strong> to acquire a fresh set of boxing-themed names and aliases.</li>
@@ -81,7 +81,7 @@ function createWriteUp() {
         <h2>Guidelines for a Boxing Name That Succeeds</h2>
         <p>Pronounce it aloud in a ring announcer&apos;s tone — a stellar boxing moniker sounds impressive dragged out across a microphone prior to the opening bell. Keep the alias brief and impactful; the superior ones consist of one or two words supporters can chant. Ensure it matches the competitor you truly desire: a menacing nickname on a friendly, technical boxer muddies the narrative unless the contrast remains intentional. Furthermore, avoid names overly similar to an actual legend unless you deliberately compose a tribute, because &quot;Iron Mike&quot; or &quot;The Greatest&quot; remain permanently bound to their original owners.</p>
 
-        <h2>[17] Common Mistakes to Avoid</h2>
+        <h2>Common Mistakes to Avoid</h2>
         <p>Several missteps can weaken an otherwise robust fighter name. The first involves a nickname opposing the style — designating a defensive counter-puncher &quot;The Destroyer&quot; establishes incorrect expectations. The second entails excessive length; stacking numerous words obscures the catchy core that supporters actually shout. The third consists of copying a legend so closely the designation reads as plagiarism instead of homage. The fourth features a name proving difficult for a commentator to articulate rapidly amid crowd noise. When reviewing a generated batch, preserve designations that are punchy, style-appropriate, distinct, and simple to announce.</p>
 
         <h2>Privacy</h2>

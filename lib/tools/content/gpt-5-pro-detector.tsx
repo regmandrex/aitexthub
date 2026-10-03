@@ -33,7 +33,7 @@ const WriteUp = () => (
     <h3>Logical Flow and Inter-Paragraph Harmony</h3>
     <p>One of GPT-5 Pro&#39;s unique strengths — and a noticeable fingerprint — is its exceptionally high cross-paragraph coherence. Human writers lose track of threads, introduce minor discrepancies, revisit points unexpectedly, and alter emphasis throughout an extensive document in ways that mirror organic argument development. GPT-5 Pro preserves a strong level of internal consistency that, while superficially impressive, statistically differs from human long-form writing. The detector examines semantic coherence trends across the entire input, going beyond mere sentence-level traits.</p>
 
-    <h2>[4] The Mechanics Of The GPT-5 Pro Detector</h2>
+    <h2>The Mechanics Of The GPT-5 Pro Detector</h2>
     <p>The detection framework merges several analytical methodologies and combines their indicators into one single probability estimate.</p>
 
     <h3>Feature Extraction</h3>

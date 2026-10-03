@@ -29,7 +29,7 @@ const WriteUp = () => (
     <h3>Vocabulary and Register Consistency</h3>
     <p>GPT-5.2 preserves lexical register with remarkable consistency throughout a document. When drafting in a formal register, it maintains formality with less variance than GPT-5.1. When composing in an informal register, it does the same. Human writers organically drift across registers, insert colloquialisms into formal prose, and alter word choices in reaction to developing topics within a text. GPT-5.2's register stability functions as an identifiable marker itself, notably in long-form pieces where register shifts are commonly anticipated from human creators.</p>
 
-    <h2>[4] The Mechanics Of The GPT-5.2 Detector</h2>
+    <h2>The Mechanics Of The GPT-5.2 Detector</h2>
 
     <h3>Feature Extraction Pipeline</h3>
     <p>The analysis system commences with thorough feature extraction derived from the input text. Extracted features comprise: token-level perplexity metrics calculated using a calibrated baseline model; sentence length, complexity, and burstiness analytics; lexical richness alongside domain-specific term frequencies; hedging and uncertainty expression distributions; topic coherence across sentence pairs and paragraph pairs; register consistency indicators; structural organization traits; and safety qualification frequencies within topic-appropriate contexts.</p>

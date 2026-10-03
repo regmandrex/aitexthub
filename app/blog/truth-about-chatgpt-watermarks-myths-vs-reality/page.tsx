@@ -24,14 +24,14 @@ export default function TruthAboutChatGptWatermarksMythsVsRealityPage() {
 
       {/* Hero card */}
       <div className="rounded-[28px] border-3 border-black bg-white/70 p-6 shadow-neo-lg shadow-slate-900/5 backdrop-blur-lg">
-        <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">[2] Misconceptions vs Facts 2026</p>
+        <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">Misconceptions vs Facts 2026</p>
         <h1 className="mt-3 text-3xl font-semibold text-slate-900">The Truth About ChatGPT Watermarks</h1>
-        <p className="mt-2 text-slate-600">[3] ChatGPT watermarks remain among the most misunderstood subjects in artificial intelligence writing debates. False notions spread on both sides: exaggerated claims regarding what OpenAI monitors, alongside dismissive arguments that zero watermarks exist. The truth is far more complex, technical, and practical than either extreme.</p>
+        <p className="mt-2 text-slate-600">ChatGPT watermarks remain among the most misunderstood subjects in artificial intelligence writing debates. False notions spread on both sides: exaggerated claims regarding what OpenAI monitors, alongside dismissive arguments that zero watermarks exist. The truth is far more complex, technical, and practical than either extreme.</p>
         <div className="mt-5 grid gap-4 sm:grid-cols-3">
           {[
-            { title: 'Myths to debunk', detail: '[4] Frequently held misconceptions concerning existing elements' },
-            { title: 'What is actually true', detail: '[5] The proven truth about artificial intelligence text artifacts' },
-            { title: 'Practical takeaways', detail: '[6] What this implies for your utilization of AI-generated content' },
+            { title: 'Myths to debunk', detail: 'Frequently held misconceptions concerning existing elements' },
+            { title: 'What is actually true', detail: 'The proven truth about artificial intelligence text artifacts' },
+            { title: 'Practical takeaways', detail: 'What this implies for your utilization of AI-generated content' },
           ].map((item) => (
             <div key={item.title} className="rounded-2xl border-2 border-black bg-slate-50 p-4 text-xs text-slate-700">
               <p className="font-semibold text-slate-900">{item.title}</p>
@@ -42,39 +42,39 @@ export default function TruthAboutChatGptWatermarksMythsVsRealityPage() {
       </div>
 
       <section className="mt-10 space-y-4">
-        <h2 className="text-2xl font-semibold text-slate-900">[7] Myth 1: &quot;OpenAI Has Already Deployed Cryptographic Watermarks&quot;</h2>
-        <p className="text-slate-700">[8] <strong>The myth:</strong> ChatGPT embeds a secret, unreadable cryptographic marker inside every generated piece of text. This specific marker can be read by certain institutions and OpenAI to confirm the content was AI-generated.</p>
-        <p className="text-slate-700">[9] <strong>The reality:</strong> This is currently false. Cryptographic watermarking for AI text is an ongoing research topic, and OpenAI has addressed it publicly, yet it has not launched such a mechanism within its production ChatGPT service. Academic research (primarily from the University of Maryland) outlines how such a setup might operate, but it stays theoretical rather than deployed.</p>
-        <p className="text-slate-700">[10] What ChatGPT output actually contains are accidental Unicode artifacts &mdash; hidden characters emerging as byproducts of generation, instead of intentional tracking mechanisms. These remain detectable although they are not cryptographic watermarks.</p>
+        <h2 className="text-2xl font-semibold text-slate-900">Myth 1: &quot;OpenAI Has Already Deployed Cryptographic Watermarks&quot;</h2>
+        <p className="text-slate-700"><strong>The myth:</strong> ChatGPT embeds a secret, unreadable cryptographic marker inside every generated piece of text. This specific marker can be read by certain institutions and OpenAI to confirm the content was AI-generated.</p>
+        <p className="text-slate-700"><strong>The reality:</strong> This is currently false. Cryptographic watermarking for AI text is an ongoing research topic, and OpenAI has addressed it publicly, yet it has not launched such a mechanism within its production ChatGPT service. Academic research (primarily from the University of Maryland) outlines how such a setup might operate, but it stays theoretical rather than deployed.</p>
+        <p className="text-slate-700">What ChatGPT output actually contains are accidental Unicode artifacts &mdash; hidden characters emerging as byproducts of generation, instead of intentional tracking mechanisms. These remain detectable although they are not cryptographic watermarks.</p>
       </section>
 
       <section className="mt-10 space-y-4">
-        <h2 className="text-2xl font-semibold text-slate-900">[11] Myth 2: &quot;ChatGPT Text Contains No Detectable Watermarks&quot;</h2>
-        <p className="text-slate-700">[12] <strong>The myth:</strong> ChatGPT writing consists of clean plain text lacking any distinguishing marks. Nothing identifiable exists inside it pointing to an AI source.</p>
-        <p className="text-slate-700">[13] <strong>The reality:</strong> This is equally incorrect. ChatGPT content features two kinds of identifiable markers. First, hidden Unicode characters (byte-order marks, soft hyphens, zero-width spaces) showing up as generation artifacts. These are both detectable and removable. Second, statistical patterns &mdash; low burstiness, low perplexity, distinct vocabulary &mdash; which form natural traits of AI text that probabilistic detectors spot.</p>
-        <p className="text-slate-700">[14] Neither option constitutes a cryptographic watermark, yet both are genuine and discoverable via available utilities. The{' '} <Link href="/chatgpt-watermark-detector">ChatGPT Watermark Detector</Link> and the{' '} <Link href="/invisible-character-detector">Invisible Character Detector</Link> can locate and display them.</p>
+        <h2 className="text-2xl font-semibold text-slate-900">Myth 2: &quot;ChatGPT Text Contains No Detectable Watermarks&quot;</h2>
+        <p className="text-slate-700"><strong>The myth:</strong> ChatGPT writing consists of clean plain text lacking any distinguishing marks. Nothing identifiable exists inside it pointing to an AI source.</p>
+        <p className="text-slate-700"><strong>The reality:</strong> This is equally incorrect. ChatGPT content features two kinds of identifiable markers. First, hidden Unicode characters (byte-order marks, soft hyphens, zero-width spaces) showing up as generation artifacts. These are both detectable and removable. Second, statistical patterns &mdash; low burstiness, low perplexity, distinct vocabulary &mdash; which form natural traits of AI text that probabilistic detectors spot.</p>
+        <p className="text-slate-700">Neither option constitutes a cryptographic watermark, yet both are genuine and discoverable via available utilities. The{' '} <Link href="/chatgpt-watermark-detector">ChatGPT Watermark Detector</Link> and the{' '} <Link href="/invisible-character-detector">Invisible Character Detector</Link> can locate and display them.</p>
       </section>
 
       <section className="mt-10 space-y-4">
-        <h2 className="text-2xl font-semibold text-slate-900">[15] Myth 3: &quot;AI Detectors Are Always Accurate&quot;</h2>
-        <p className="text-slate-700">[16] <strong>The myth:</strong> AI detection tools reliably and conclusively determine if text was authored by artificial intelligence. A positive result implies the content was certainly AI-created.</p>
-        <p className="text-slate-700">[17] <strong>The reality:</strong> AI detectors represent probabilistic classifiers featuring documented false negative and false positive rates. Studies indicate false positive percentages exceeding 10% for general writing and surpassing 60% for non-native English writers under certain conditions. Detection outputs are probability estimates, not final verdicts.</p>
-        <p className="text-slate-700">[18] Turnitin openly admits this within its official documentation, noting that AI detection scores ought to function as one factor during a broader review, rather than standalone proof of academic cheating. Any employer or institution treating detection scores as definitive evidence acts beyond the limits supported by the technology.</p>
+        <h2 className="text-2xl font-semibold text-slate-900">Myth 3: &quot;AI Detectors Are Always Accurate&quot;</h2>
+        <p className="text-slate-700"><strong>The myth:</strong> AI detection tools reliably and conclusively determine if text was authored by artificial intelligence. A positive result implies the content was certainly AI-created.</p>
+        <p className="text-slate-700"><strong>The reality:</strong> AI detectors represent probabilistic classifiers featuring documented false negative and false positive rates. Studies indicate false positive percentages exceeding 10% for general writing and surpassing 60% for non-native English writers under certain conditions. Detection outputs are probability estimates, not final verdicts.</p>
+        <p className="text-slate-700">Turnitin openly admits this within its official documentation, noting that AI detection scores ought to function as one factor during a broader review, rather than standalone proof of academic cheating. Any employer or institution treating detection scores as definitive evidence acts beyond the limits supported by the technology.</p>
       </section>
 
       <div className="ad-slot"><AdSenseSlot className="w-full" /></div>
 
       <section className="mt-10 space-y-4">
-        <h2 className="text-2xl font-semibold text-slate-900">[19] Myth 4: &quot;Removing Watermarks Makes AI Text Completely Undetectable&quot;</h2>
-        <p className="text-slate-700">[20] <strong>The myth:</strong> Eradicating hidden characters from AI-produced text prevents AI detectors from finding it. Watermarks represent the sole factor revealing AI text.</p>
-        <p className="text-slate-700">[21] <strong>The reality:</strong> Invisible character deletion targets only a single detection signal among several. Statistical patterns &mdash; low perplexity, low burstiness, AI-associated vocabulary &mdash; remain unaffected by hidden character removal. Content stripped of invisible characters but otherwise unedited will continue registering as AI on perplexity-based scanners.</p>
-        <p className="text-slate-700">[22] Eliminating invisible characters matters for technical neatness and specific detector categories, but it is not a complete fix for AI detection. True reduction in statistical AI indicators demands manual content editing.</p>
+        <h2 className="text-2xl font-semibold text-slate-900">Myth 4: &quot;Removing Watermarks Makes AI Text Completely Undetectable&quot;</h2>
+        <p className="text-slate-700"><strong>The myth:</strong> Eradicating hidden characters from AI-produced text prevents AI detectors from finding it. Watermarks represent the sole factor revealing AI text.</p>
+        <p className="text-slate-700"><strong>The reality:</strong> Invisible character deletion targets only a single detection signal among several. Statistical patterns &mdash; low perplexity, low burstiness, AI-associated vocabulary &mdash; remain unaffected by hidden character removal. Content stripped of invisible characters but otherwise unedited will continue registering as AI on perplexity-based scanners.</p>
+        <p className="text-slate-700">Eliminating invisible characters matters for technical neatness and specific detector categories, but it is not a complete fix for AI detection. True reduction in statistical AI indicators demands manual content editing.</p>
       </section>
 
       <section className="mt-10 space-y-4">
-        <h2 className="text-2xl font-semibold text-slate-900">[23] Myth 5: &quot;Google Can Detect and Penalize AI Text Specifically&quot;</h2>
-        <p className="text-slate-700">[24] <strong>The myth:</strong> Google incorporates AI detection directly into search ranking algorithms. Publishing AI material results in automatic detection and penalties through reduced rankings.</p>
-        <p className="text-slate-700">[25] <strong>The reality:</strong> Google has openly and clearly stated that it refuses to penalize text based on whether artificial intelligence created it. Google&apos;s guidelines target materials built primarily to manipulate search standings rather than assist readers &mdash; regardless of creation methods. The Helpful Content Update focuses on thin, unhelpful content no matter if AI was utilized.</p>
+        <h2 className="text-2xl font-semibold text-slate-900">Myth 5: &quot;Google Can Detect and Penalize AI Text Specifically&quot;</h2>
+        <p className="text-slate-700"><strong>The myth:</strong> Google incorporates AI detection directly into search ranking algorithms. Publishing AI material results in automatic detection and penalties through reduced rankings.</p>
+        <p className="text-slate-700"><strong>The reality:</strong> Google has openly and clearly stated that it refuses to penalize text based on whether artificial intelligence created it. Google&apos;s guidelines target materials built primarily to manipulate search standings rather than assist readers &mdash; regardless of creation methods. The Helpful Content Update focuses on thin, unhelpful content no matter if AI was utilized.</p>
         <p className="text-slate-700">Google focuses on quality metrics like engagement, authority, trust, and precision rather than how content is produced. High-quality, genuinely useful AI material can achieve strong rankings. Subpar, shallow AI material cannot, exactly why low-quality human writing fails too.</p>
       </section>
 

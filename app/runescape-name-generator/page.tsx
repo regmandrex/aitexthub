@@ -57,7 +57,7 @@ function createWriteUp() {
         <h2>OSRS vs. RS3</h2>
         <p>Old School RuneScape and RuneScape 3 share naming guidelines but appeal to different vibes. OSRS, featuring 2007 origins and a PvP-centric community, favors traditional and tryhard monikers — that nostalgic aesthetic fits right in. RS3, being more contemporary and PvM-oriented, supports the same names though you will notice sleeker, fantasy-inspired RSNs. Both adhere to the 12-character limit, meaning anything the generator creates functions on either version; choose the style fitting your game and community.</p>
 
-        <h2>[10] How to Use This RuneScape Name Generator</h2>
+        <h2>How to Use This RuneScape Name Generator</h2>
         <ol className="list-decimal pl-6 space-y-2">
           <li>Choose the quantity of names generated per batch (1–24).</li>
           <li>Click <strong>Generate names</strong> to obtain a selection of RSN concepts within the 12-character limit.</li>

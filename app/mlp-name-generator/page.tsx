@@ -57,7 +57,7 @@ function createWriteUp() {
         <h2>Names, Cutie Marks, and Talent</h2>
         <p>Within MLP, name, cutie mark, and special talent build a tight cohesive unit. Applejack&apos;s name, apple cutie mark, alongside farming talent mutually reinforce each other; Rarity&apos;s name, gem cutie mark, plus fashion-design talent achieve the same. Whenever you generate a name, consider the cutie mark and talent it implies — a moniker like &quot;Star Weaver&quot; points toward a magical, celestial talent alongside a starry mark, whereas &quot;Clover Field&quot; implies an earth pony linked to growing things. Allowing the name to guide design preserves your OC&apos;s consistency.</p>
 
-        <h2>[10] How to Use This MLP Name Generator</h2>
+        <h2>How to Use This MLP Name Generator</h2>
         <ol className="list-decimal pl-6 space-y-2">
           <li>Choose the quantity of names generated per batch (1–24).</li>
           <li>Click <strong>Generate names</strong> to obtain a batch of two-word pony names.</li>
@@ -86,7 +86,7 @@ function createWriteUp() {
 }
 
 const pageFaqs: FaqItem[] = [
-  { category: 'General', question: '[3] What is an MLP Name Generator?', answer: 'It functions as a browser utility that generates My Little Pony names for ponysonas and OCs matching the Friendship Is Magic aesthetic — double-word descriptive titles that capture a characteristic or ability, such as Twilight Sparkle or Rainbow Dash. It compiles designations sorted by pony species so your OC fits Equestria. It executes locally without requiring registration and saves nothing.' },
+  { category: 'General', question: 'What is an MLP Name Generator?', answer: 'It functions as a browser utility that generates My Little Pony names for ponysonas and OCs matching the Friendship Is Magic aesthetic — double-word descriptive titles that capture a characteristic or ability, such as Twilight Sparkle or Rainbow Dash. It compiles designations sorted by pony species so your OC fits Equestria. It executes locally without requiring registration and saves nothing.' },
   { category: 'Naming style', question: 'How do My Little Pony names function?', answer: 'Nearly every pony features a two-word descriptive title that paints a rapid picture and typically suggests their unique talent and cutie mark — Rainbow Dash, Apple Bloom, Pinkie Pie. The tone feels gentle, welcoming, and frequently alliterative. The pairing of the two words forms the name, which communicates the character’s disposition.' },
   { category: 'Naming style', question: 'Why are MLP names composed of two words?', answer: 'The two-word structure forms the foundation of the Friendship Is Magic naming convention — allowing a moniker to describe a trait or talent in a concise, memorable manner. Adhering to two descriptive words stands as the single biggest factor making a name read as genuinely MLP rather than generic.' },
   { category: 'Pony types', question: 'How do names vary by pony species?', answer: 'Earth ponies receive grounded designations connected to nature, agriculture, and sustenance; pegasi obtain sky-focused monikers centered on clouds, weather, and aviation; unicorns get magic-, gem-, and star-oriented titles; and alicorns secure grand, majestic names like Celestia or Luna. Aligning the name with your pony’s lineage renders it immediately credible.' },
@@ -109,7 +109,7 @@ const pageFaqs: FaqItem[] = [
   { category: 'General', question: 'Does the MLP Name Generator cost anything?', answer: 'Indeed, entirely free with no account, registration, or download required. Create as many ponysona and OC monikers as you wish, as frequently as you like.' },
   { category: 'Best practices', question: 'What is the best way to make a name feel truly MLP?', answer: 'Maintain the two-word structure, match those words to your pony type, and target a title hinting at a skill so it links to a cutie mark. A hint of alliteration contributes the show’s musical flair, and speaking it aloud ensures it sounds welcoming and friendly.' },
   { category: 'Best practices', question: 'Ought the name to give a hint about a specific talent?', answer: 'Yes — it stands as one of the most authentic touches. In MLP, a pony’s title, cutie mark, and special skill all align, meaning a name suggesting a clear ability grants your OC depth and a head start on the cutie mark. A meaningful title always feels more authentic to the genre than a random pairing.' },
-  { category: 'Troubleshooting', question: '[2] The names feel overly generic — what should I do?', answer: 'Generate a larger batch and filter for the pairs clearly matching your pony type and a distinct talent, discarding anything vague. Next, polish a favorite so both words point toward the identical trait. The tighter the two words connect to a personality and cutie mark, the more genuinely MLP the title feels.' },
+  { category: 'Troubleshooting', question: 'The names feel overly generic — what should I do?', answer: 'Generate a larger batch and filter for the pairs clearly matching your pony type and a distinct talent, discarding anything vague. Next, polish a favorite so both words point toward the identical trait. The tighter the two words connect to a personality and cutie mark, the more genuinely MLP the title feels.' },
 ];
 
 export default async function MlpNameGeneratorPage() {

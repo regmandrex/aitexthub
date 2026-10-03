@@ -257,7 +257,7 @@ export default function GrokWatermarkDetectorPage() {
       </ul>
       <p>Employing this strategy directly reflects experimental work published by alternative research outfits like OpenAI, which has highlighted related tracking mechanisms in whitepapers. Such a format successfully balances security tracking against stylistic transparency, keeping the overall prose polished and unimpaired.</p>
 
-      <h3 className="text-xl font-semibold text-slate-900">[4] The Mechanics Of The Grok Watermark Detector</h3>
+      <h3 className="text-xl font-semibold text-slate-900">The Mechanics Of The Grok Watermark Detector</h3>
       <p>Picture having a block of text, perhaps a tweet or a 300-word essay. You are unsure whether a student wrote it or Grok generated it. What occurs next?</p>
       <p>This is precisely where the Grok Watermark Detector goes to work.</p>
       <p>Step-by-step detection process:</p>

@@ -52,7 +52,7 @@ function createWriteUp() {
         <h2>Bracket Layout, Matchups, and Seeding</h2>
         <p>Understanding basic bracket structure helps your names land with greater impact. Entries are typically <strong>seeded</strong>—ranked so the strongest is No. 1 and the weakest sits at the bottom—and the layout pairs high seeds against low seeds so premier battles occur in later stages. That framework creates the drama that bracket titles leverage: the top-seed favorite boasting an arrogant name, the low-seed underdog whose Cinderella title turns into a fan favorite if it survives, and the play-in long shots positioned at the very edge. When naming entries, consider their placement: a cocky title suits a top seed, whereas a self-deprecating or scrappy name works wonders for an underdog nobody anticipated advancing.</p>
 
-        <h2>[10] How to Use This Bracket Name Generator</h2>
+        <h2>How to Use This Bracket Name Generator</h2>
         <ol className="list-decimal pl-6 space-y-2">
           <li>Determine what you are naming—your personal entry, the entire pool, or the individual seeds within a challenge.</li>
           <li>Specify how many names you prefer per run (1-24) and click <strong>Generate names</strong>.</li>

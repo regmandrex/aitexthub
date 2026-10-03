@@ -53,7 +53,7 @@ function WriteUp() {
         <h3 className="text-xl font-semibold text-slate-800 mb-3 mt-6">Brand Safety and Commercial Use</h3>
         <p className="text-slate-700 mb-4">Advertisers, brands, and agencies must verify the origin of creative assets prior to launching costly campaigns. Using an Aurora-generated image in business ads without a label might break FTC rules in the United States and comparable laws elsewhere. Brand protection teams checking image origins before sign-off keep clients safe from regulatory trouble and bad press tied to hidden AI content.</p>
 
-        <h2 className="text-2xl font-bold text-slate-900 mb-4 mt-8">[10] Instructions For The Grok Image Watermark Detector</h2>
+        <h2 className="text-2xl font-bold text-slate-900 mb-4 mt-8">Instructions For The Grok Image Watermark Detector</h2>
 
         <h3 className="text-xl font-semibold text-slate-800 mb-3 mt-6">Phase 1: Acquire the Highest Quality File</h3>
         <p className="text-slate-700 mb-4">Detection accuracy peaks with the raw file as produced by Grok — pulled straight from the Grok interface or fetched via the xAI API response without extra processing. PNGs from direct Grok downloads keep C2PA metadata intact. If you check a file from X (Twitter), keep in mind that X&apos;s image processing pipeline might have stripped the metadata; pixel-level checking still works, but metadata clues could be missing. Skip analyzing screenshots, which hold zero original metadata.</p>

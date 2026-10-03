@@ -225,7 +225,7 @@ const article = (
       <p>The expression watermark remover remains because countless users view AI-era formatting as a type of signature. The writing appears fine visually yet acts strangely upon being pasted elsewhere. Such behavior resembles a watermark, even though it merely represents a formatting artifact. The phrase has become common slang for clearing those artifacts during daily tasks.</p>
       <p>This utility adopts that popular phrasing while defining its actual purpose. It strips away formatting noise rather than statistical watermarks. The title addresses the user's struggle, whereas the documentation outlines the technical limits. Such an equilibrium keeps the utility reachable without making unprovable promises.</p>
 
-      <h2>[4] The Mechanics Of The AI Watermark Remover</h2>
+      <h2>The Mechanics Of The AI Watermark Remover</h2>
       <p>The utility executes a precise, deterministic procedure. It abstains from evaluating meaning or editing writing. Instead, it applies formatting rules to strip out hidden characters, adjust whitespace, and stabilize line breaks. The outcome remains the identical text possessing a tidier structure.</p>
       <ol>
         <li>Insert your text inside the designated input box.</li>

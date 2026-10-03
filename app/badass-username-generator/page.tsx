@@ -58,7 +58,7 @@ function createWriteUp() {
           <li><strong>Streaming and content.</strong> A creator or channel name with attitude suited for a competitive or hardcore brand.</li>
         </ul>
 
-        <h2>[10] How to Use This Badass Username Generator</h2>
+        <h2>How to Use This Badass Username Generator</h2>
         <ol className="list-decimal pl-6 space-y-2">
           <li>Choose the quantity of usernames you desire per run (1–24).</li>
           <li>Press <strong>Generate names</strong> to produce a new set of tough, edgy handles.</li>

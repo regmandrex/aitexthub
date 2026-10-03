@@ -62,7 +62,7 @@ function createWriteUp() {
         <p>Within a tabletop campaign or a story, a tribe&apos;s name offers effortless characterization. Connect it directly to the surrounding culture and environment: mountain warrior tribes, forest-dwelling clans, and desert peoples should all sound distinct because their environments vary. When designing rival factions, intentionally assign them contrasting sounds and names—pairing a flowing, mystic tribe against a harsh, consonant-heavy warrior group—so players or readers instantly sense factional tension and never mix them up.</p>
         <p>Across an expansive world, apply a shared naming convention to related tribes—utilizing a regional flavor, common suffix, or recurring root—so they appear as offshoots of a single culture, while distinctively foreign enemies sound noticeably different from another area. This exact contrast brings invented societies to life on the page.</p>
 
-        <h2>[10] How to Use This Tribe Name Generator</h2>
+        <h2>How to Use This Tribe Name Generator</h2>
         <ol className="list-decimal pl-6 space-y-2">
           <li>Determine your tribe's tone and theme first, whether they are mountain guardians, spirit-worshippers, forest nomads, or fierce raiders.</li>
           <li>Choose your desired number of names per run (1–24) and click <strong>Generate names</strong> to receive a fresh collection of clan and tribe options.</li>

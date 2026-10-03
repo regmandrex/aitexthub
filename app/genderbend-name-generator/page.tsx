@@ -56,7 +56,7 @@ function createWriteUp() {
           <li><strong>Roleplay.</strong> Across servers and forums, a familiar counterpart name ensures a gender-swapped character remains easily understood by everyone involved.</li>
         </ul>
 
-        <h2>[10] How to Use This Genderbend Name Generator</h2>
+        <h2>How to Use This Genderbend Name Generator</h2>
         <ol className="list-decimal pl-6 space-y-2">
           <li>Choose your desired direction — feminine to masculine, masculine to feminine, or toward a neutral variation.</li>
           <li>Select the quantity of alternate names desired per generation (1–24) and click <strong>Generate names</strong>.</li>

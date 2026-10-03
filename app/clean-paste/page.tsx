@@ -176,44 +176,44 @@ const faqs: FaqItem[] = [
 
 const article = (
   <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10"><div className="prose prose-slate max-w-none">
-    <h2>[1] Clean Paste — Paste Pristine Text Every Time</h2>
-    <p>[2] <strong>Clean Paste</strong> involves sanitizing your text before inserting it into your destination application. Regular copy-and-paste actions fail to filter your copied content; everything moves along: the visible letters, the unseen Unicode symbols, markdown elements, smart quotation marks, and hard spaces. A <strong>Clean Paste</strong> procedure adds a single phase between copying from your origin and pasting into your end point: passing the text through a cleaner that eliminates all unintended elements.</p>
-    <p>[3] AI Text Cleanup Tools offers a free <strong>cleanpaste</strong> utility — also referred to as a Clean Paste solution — that tackles all forms of textual contamination instantly. Transfer your text from any origin, select Clean Text, and grab the sanitized version ready for use.</p>
+    <h2>Clean Paste — Paste Pristine Text Every Time</h2>
+    <p><strong>Clean Paste</strong> involves sanitizing your text before inserting it into your destination application. Regular copy-and-paste actions fail to filter your copied content; everything moves along: the visible letters, the unseen Unicode symbols, markdown elements, smart quotation marks, and hard spaces. A <strong>Clean Paste</strong> procedure adds a single phase between copying from your origin and pasting into your end point: passing the text through a cleaner that eliminates all unintended elements.</p>
+    <p>AI Text Cleanup Tools offers a free <strong>cleanpaste</strong> utility — also referred to as a Clean Paste solution — that tackles all forms of textual contamination instantly. Transfer your text from any origin, select Clean Text, and grab the sanitized version ready for use.</p>
 
-    <h2>[4] The Issues With Direct Pasting</h2>
-    <p>[5] The main drawback of moving content straight from an artificial intelligence model, word processor, web page, or PDF into your final tool is that these sources bring along hidden symbols and formatting remnants that remain unseen on your screen yet create genuine failures in your target software.</p>
+    <h2>The Issues With Direct Pasting</h2>
+    <p>The main drawback of moving content straight from an artificial intelligence model, word processor, web page, or PDF into your final tool is that these sources bring along hidden symbols and formatting remnants that remain unseen on your screen yet create genuine failures in your target software.</p>
     <p>Originating from AI tools: hidden zero-width spaces left over from tokenization, hash marks and markdown asterisks used for formatting, plus default curly quotes and em dashes. Originating from word processors: automatic non-breaking spaces inserted by AutoCorrect, typographic curly quotes, and en dashes or em dashes from auto-hyphenation. Originating from websites: layout-driven non-breaking spaces, directional markers for global content, and hidden characters originating from JavaScript framework rendering. Originating from PDFs: ligature glitches from character encoding, alongside line-break hyphenation marks from the source document.</p>
-    <p>[7] None of these show up when you highlight and copy text. They only emerge once pasted — appearing as stray asterisks in your CMS, incorrect word counts in your editor, broken mobile designs, code syntax errors, or spreadsheet matching failures. Clean Paste stops all of these issues by stripping away leftovers before they reach your destination.</p>
+    <p>None of these show up when you highlight and copy text. They only emerge once pasted — appearing as stray asterisks in your CMS, incorrect word counts in your editor, broken mobile designs, code syntax errors, or spreadsheet matching failures. Clean Paste stops all of these issues by stripping away leftovers before they reach your destination.</p>
 
-    <h2>[8] The Clean Paste Procedure</h2>
-    <p>[9] The Clean Paste method is straightforward and demands merely seconds beyond a standard paste operation:</p>
+    <h2>The Clean Paste Procedure</h2>
+    <p>The Clean Paste method is straightforward and demands merely seconds beyond a standard paste operation:</p>
     <ol>
-      <li>[10] <strong>Copy</strong> your text from its original location (AI tool, website, Word file, PDF, email message).</li>
-      <li>[11] <strong>Paste</strong> into the AI Text Cleanup Tools Clean Paste utility above.</li>
-      <li>[12] <strong>Click</strong> Clean Text to eliminate all invisible symbols, markdown codes, styling remnants, and spacing flaws.</li>
-      <li>[13] <strong>Review</strong> the final output along with the count of deleted characters.</li>
-      <li>[14] <strong>Copy</strong> the sanitized output from the designated area.</li>
-      <li>[15] <strong>Paste</strong> directly into your destination tool — CMS, editor, email client, spreadsheet, or IDE.</li>
+      <li><strong>Copy</strong> your text from its original location (AI tool, website, Word file, PDF, email message).</li>
+      <li><strong>Paste</strong> into the AI Text Cleanup Tools Clean Paste utility above.</li>
+      <li><strong>Click</strong> Clean Text to eliminate all invisible symbols, markdown codes, styling remnants, and spacing flaws.</li>
+      <li><strong>Review</strong> the final output along with the count of deleted characters.</li>
+      <li><strong>Copy</strong> the sanitized output from the designated area.</li>
+      <li><strong>Paste</strong> directly into your destination tool — CMS, editor, email client, spreadsheet, or IDE.</li>
     </ol>
-    <p>[16] This six-phase process supersedes the typical two-phase copy-paste routine with an enhanced clean-paste workflow. Steps 2 through 5 take mere moments. Ultimately, every insertion into your final app becomes a Clean Paste — guaranteed devoid of hidden characters, markdown fragments, and layout irregularities regardless of the source.</p>
+    <p>This six-phase process supersedes the typical two-phase copy-paste routine with an enhanced clean-paste workflow. Steps 2 through 5 take mere moments. Ultimately, every insertion into your final app becomes a Clean Paste — guaranteed devoid of hidden characters, markdown fragments, and layout irregularities regardless of the source.</p>
 
-    <h2>[17] What Clean Paste Eradicates</h2>
+    <h2>What Clean Paste Eradicates</h2>
     <h3>Invisible Unicode Characters</h3>
-    <p>[18] Zero-width spaces (U+200B) represent the most frequent invisible character within machine-generated text. They possess no visible form yet impact word counts, text highlighting, and matching routines. Byte-order marks (U+FEFF) trigger rendering flaws if located mid-text. Non-breaking spaces (U+00A0) look identical to normal spaces but stop natural line wrapping and alter string comparisons. Soft hyphens (U+00AD) can cause unexpected line breaks. Zero-width non-joiners, word joiners, and directional markers all influence rendering. Every single one is removed during the Clean Paste procedure.</p>
+    <p>Zero-width spaces (U+200B) represent the most frequent invisible character within machine-generated text. They possess no visible form yet impact word counts, text highlighting, and matching routines. Byte-order marks (U+FEFF) trigger rendering flaws if located mid-text. Non-breaking spaces (U+00A0) look identical to normal spaces but stop natural line wrapping and alter string comparisons. Soft hyphens (U+00AD) can cause unexpected line breaks. Zero-width non-joiners, word joiners, and directional markers all influence rendering. Every single one is removed during the Clean Paste procedure.</p>
     <h3>Markdown Formatting</h3>
-    <p>[19] AI models structure their replies using markdown: dual asterisks for bold text, underscores for italics, hashes for headers, and backticks for code blocks. Within chat UIs, markdown displays visually. In software lacking markdown support, these symbols display explicitly. Clean Paste strips out all markdown syntax, preserving solely the text itself.</p>
+    <p>AI models structure their replies using markdown: dual asterisks for bold text, underscores for italics, hashes for headers, and backticks for code blocks. Within chat UIs, markdown displays visually. In software lacking markdown support, these symbols display explicitly. Clean Paste strips out all markdown syntax, preserving solely the text itself.</p>
     <h3>Typographic Special Characters</h3>
-    <p>[20] Smart quotation marks trigger JSON decoding errors, coding syntax issues, and CSV failures. En dashes and em dashes create complications within command-line apps, data sets, and anywhere a standard hyphen is expected. Clean Paste converts each of these items into standard ASCII equivalents.</p>
+    <p>Smart quotation marks trigger JSON decoding errors, coding syntax issues, and CSV failures. En dashes and em dashes create complications within command-line apps, data sets, and anywhere a standard hyphen is expected. Clean Paste converts each of these items into standard ASCII equivalents.</p>
     <h3>Spacing Artifacts</h3>
-    <p>[21] AI systems frequently insert numerous blank lines between paragraphs. Non-breaking spaces generate rigid, immovable gaps. Leading or trailing whitespace creates indentation bugs in strict code editors. Clean Paste normalizes all spacing into uniform, predictable standard intervals.</p>
+    <p>AI systems frequently insert numerous blank lines between paragraphs. Non-breaking spaces generate rigid, immovable gaps. Leading or trailing whitespace creates indentation bugs in strict code editors. Clean Paste normalizes all spacing into uniform, predictable standard intervals.</p>
 
-    <h2>[22] Clean Paste Across Different Workflows</h2>
+    <h2>Clean Paste Across Different Workflows</h2>
     <h3>Content and Publishing</h3>
-    <p>[23] Editorial departments should adopt Clean Paste as a compulsory step between AI content creation and CMS publishing. This works best as a strict team guideline: zero AI text enters the CMS raw. Every draft goes through the Clean Paste tool first. This averts multiple publishing bugs, such as raw markdown in articles, hidden HTML symbols, and responsive design breaks caused by stubborn non-breaking spaces.</p>
+    <p>Editorial departments should adopt Clean Paste as a compulsory step between AI content creation and CMS publishing. This works best as a strict team guideline: zero AI text enters the CMS raw. Every draft goes through the Clean Paste tool first. This averts multiple publishing bugs, such as raw markdown in articles, hidden HTML symbols, and responsive design breaks caused by stubborn non-breaking spaces.</p>
     <h3>Development and Code</h3>
     <p>Developers must employ Clean Paste on every piece of AI-generated code prior to merging it into a repository. Hidden characters in source files bypass code reviews yet trigger execution failures. Running Clean Paste beforehand stops these anomalies before they impact production environments. This step holds special significance for open source initiatives maintaining strict quality guidelines, where various contributors might overlook hidden character problems.</p>
     <h3>Email and Communication</h3>
-    <p>[25] Email marketers, sales professionals, and anyone drafting professional correspondence should employ Clean Paste for AI-written email text. Email rendering notoriously varies across different mail clients, and unseen symbols exacerbate those inconsistencies. Running a Clean Paste check before content enters an email service provider guarantees uniform presentation for all recipients regardless of their software or operating system.</p>
+    <p>Email marketers, sales professionals, and anyone drafting professional correspondence should employ Clean Paste for AI-written email text. Email rendering notoriously varies across different mail clients, and unseen symbols exacerbate those inconsistencies. Running a Clean Paste check before content enters an email service provider guarantees uniform presentation for all recipients regardless of their software or operating system.</p>
     <h3>Data and Analytics</h3>
     <p>Data teams ought to utilize Clean Paste as a standard procedure when importing text from outside sources — AI utilities, web scrapers, third-party exports — prior to loading into databases, spreadsheets, or data pipelines. This guarantees uniform, comparable string values throughout the dataset and stops hidden characters from disrupting string operations that expect exact character-by-character matching.</p>
 
@@ -278,7 +278,7 @@ const article = (
 
     <h2>Free Cleanpaste Tool — No Account, No Limits</h2>
     <p>AI Text Cleanup Tools functions as a complimentary <strong>cleanpaste</strong> utility requiring no registration, imposing no character limits, and demanding no subscription. All processing occurs locally within your browser — your text is never uploaded, logged, or retained. The Clean Paste utility processes text originating from every source: AI models (ChatGPT, Claude, Gemini, DeepSeek, Grok, Llama, Mistral, Perplexity), word processors (Microsoft Word, Google Docs), websites, PDFs, and email clients. It eliminates every category of text contamination — invisible Unicode, markdown, typographic special characters, spacing irregularities — in a single pass. Make Clean Paste an integral component of every text workflow and permanently eradicate hidden character issues from your content pipeline. The utility remains permanently accessible at this URL, entirely free, and consistently processes text with complete privacy safeguards.</p>
-    <p>[1] Whether you employ it for a solitary blog post or as a segment of a high-volume content pipeline, the Clean Paste utility delivers identical outcomes continuously: copy that is technically pristine, safe for release, and prepared for any subsequent software. Paste cleanly, publish securely. Bookmark this site to establish Clean Paste as the default initial action in every text routine — the distinction between material that creates issues and material that simply operates.</p>
+    <p>Whether you employ it for a solitary blog post or as a segment of a high-volume content pipeline, the Clean Paste utility delivers identical outcomes continuously: copy that is technically pristine, safe for release, and prepared for any subsequent software. Paste cleanly, publish securely. Bookmark this site to establish Clean Paste as the default initial action in every text routine — the distinction between material that creates issues and material that simply operates.</p>
   </div>
   </section>
 );
@@ -352,7 +352,7 @@ export default async function CleanPastePage() {
 
         <div className="mt-10 space-y-3">
           <h2 className="text-2xl font-semibold text-slate-900">Clean Paste FAQ</h2>
-          <p className="text-slate-700 text-sm">[2] Frequent inquiries regarding Clean Paste, cleanpaste workflows, and eliminating formatting artifacts prior to pasting.</p>
+          <p className="text-slate-700 text-sm">Frequent inquiries regarding Clean Paste, cleanpaste workflows, and eliminating formatting artifacts prior to pasting.</p>
         </div>
         <FAQSection items={faqs} />
         <FaqJsonLd faqs={faqs} />

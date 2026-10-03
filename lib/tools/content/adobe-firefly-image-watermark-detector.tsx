@@ -77,7 +77,7 @@ function WriteUp() {
           Researchers studying AI image generation, digital provenance systems, and media authenticity depend on tools that can detect and analyze C2PA metadata and invisible watermarks. An Adobe Firefly watermark detector supplies ground-truth data for research into how watermarking affects image quality, how well these signals hold up under adversarial attack, and how detection tools perform across different formats and compression levels.
         </p>
 
-        <h2>[4] The Mechanics Of The Adobe Firefly Image Watermark Detector</h2>
+        <h2>The Mechanics Of The Adobe Firefly Image Watermark Detector</h2>
         <p>
           Our free online Adobe Firefly image watermark detector runs a multi-step analysis pipeline on every image you upload. Here's a closer look at what happens once you submit an image for analysis.
         </p>

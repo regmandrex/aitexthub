@@ -28,11 +28,11 @@ function createWriteUp() {
   return (
     <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
-        <h2>[1] Secret Organization Name Generator - Moniker Concepts for Societies</h2>
+        <h2>Secret Organization Name Generator - Moniker Concepts for Societies</h2>
         <p>Every great espionage thriller and conspiracy plot requires a hidden power behind the scenes, needing an appropriate title. Consider SHIELD, HYDRA, SPECTRE, the Illuminati, the Court of Owls, or Assassin&apos;s Creed Templars; a secret society title communicates vast storytelling in two or three words, indicating whether it represents a covert heroic agency, a dark syndicate, an ancient fraternity, or a corporate front. This generator creates labels across all these categories: threatening acronyms, abstract terror-nouns, &quot;The Order of&quot; phrases, and harmless-sounding shell companies for spy fiction, thrillers, conspiracy tales, tabletop campaigns, and games.</p>
         <p>Clandestine-group naming is its own category, featuring familiar tropes that immediately signal to a reader that they are viewing something hidden and mighty. This page analyzes those structures — the acronym approach, the abstract-noun approach, the ancient-order approach, and the front-organization approach — so you can select a name that suits your organization&apos;s character, period, and function, and lands with proper menace or deceitful innocence.</p>
 
-        <h2>[2] The Primary Categories of Covert Group Titles</h2>
+        <h2>The Primary Categories of Covert Group Titles</h2>
         <p>Most unforgettable secret societies fall into several specific naming styles. Recognizing them helps align the moniker with the group&apos;s true identity:</p>
         <ul>
           <li><strong>The acronym.</strong> A threatening or clinical initialism, frequently featuring a mundane &quot;official&quot; expansion like SHIELD, HYDRA, SPECTRE, or UNCLE. These feel governmental, clandestine, and modern.</li>
@@ -41,32 +41,32 @@ function createWriteUp() {
           <li><strong>The front organization.</strong> A purposefully dull, legitimate-sounding title masking reality, including Meridian Holdings, the Blackwood Foundation, or Cornerstone Logistics. The danger lies in its ordinariness.</li>
         </ul>
 
-        <h2>[3] Constructing a Threatening Initialism</h2>
+        <h2>Constructing a Threatening Initialism</h2>
         <p>The acronym is the traditional espionage trope, and the top examples function on dual levels: a sharp, punchy initialism alongside a dull administrative expansion that heightens the threat. SHIELD represents a long string of bureau terms; HYDRA suggests the multi-headed beast you cannot destroy. To craft one, choose a term carrying existing weight (a mythical creature, a natural catastrophe, an armament) and work backward to create an official-sounding phrase, or begin with a threatening set of division terms and grab the starting letters. The distance between the icy acronym and the awful deed it commits generates the fear.</p>
 
-        <h2>[4] Abstract Substantives and Specific Determiners</h2>
+        <h2>Abstract Substantives and Specific Determiners</h2>
         <p>Several of the most terrifying faction titles are the most ambiguous, because the mind supplies the danger. A definite article paired with a single heavy noun — <strong>The</strong> Syndicate, <strong>The</strong> Consortium, <strong>The</strong> Circle, <strong>The</strong> Hand, <strong>The</strong> Silence — suggests a force so entrenched it demands no introduction. Terms of authority (Dominion, Ascendancy, Vanguard), secrecy (Veil, Shadow, Eclipse), and inevitability (The Reckoning, Endgame) all function. The key is moderation: one potent abstract noun following &quot;The&quot; conveys greater fear than a stack of modifiers. Produce a set and retain the options that spark curiosity while revealing nothing.</p>
 
-        <h2>[5] Historic Guilds and Secret Fraternities</h2>
+        <h2>Historic Guilds and Secret Fraternities</h2>
         <p>When organizations possess antiquity—centuries of hidden influence, ritual, and inherited purpose—naming shifts toward the order-and-brotherhood format. &quot;The Order of the Black Sun,&quot; &quot;The Brotherhood of the Veil,&quot; &quot;The Sisterhood of Ash,&quot; and &quot;The Covenant&quot; highlight deep history alongside concealed rites. Combine &quot;Order,&quot; &quot;Brotherhood,&quot; &quot;Sisterhood,&quot; &quot;Covenant,&quot; or &quot;Circle&quot; with evocative symbols like celestial bodies, animals, elements, or colors to forge societies feeling active in the shadows well before your narrative began. This approach suits historical conspiracies, occult thrillers, and fantasy secret societies perfectly.</p>
 
-        <h2>[6] Cover Entities: Concealing in Plain View</h2>
+        <h2>Cover Entities: Concealing in Plain View</h2>
         <p>The most dangerous hidden societies do not sound secretive at all. A <strong>front</strong> — a trust, an investment firm, a research center, a philanthropy — allows an evil group to function in broad daylight, and the terror lies in its apparent ordinariness. Blackwood Foundation, Meridian Global, the Cornerstone Institute, Pinnacle Logistics: these appear to be genuine corporate bodies, which is precisely the objective. To design one, pair a reliable, dependable-sounding term (a location, a moral, a shape) with a proper corporate suffix (Holdings, Group, Foundation, Institute, Partners). When you want the plot twist — that the friendly charity is the conspiracy — the ordinary title pays off.</p>
 
-        <h2>[7] Aligning the Title with the Group's Function</h2>
+        <h2>Aligning the Title with the Group's Function</h2>
         <p>The label must suit the group&apos;s function within your narrative. A covert protective agency (heroes) can utilize a crisp, official acronym. A world-threatening cabal requires an abstract dread-noun or monstrous abbreviation. An ancient conspiracy demands an order-or-brotherhood designation. A corporate villain masking true motives needs a bland front. Determine the organization&apos;s role and era initially, generate options, and keep monikers whose register corresponds appropriately, as the title frequently serves as the audience&apos;s initial clue regarding who they face, accurately conveying or intentionally misrepresenting the group&apos;s true nature.</p>
 
-        <h2>[10] How to Use This Secret Organization Name Generator</h2>
+        <h2>How to Use This Secret Organization Name Generator</h2>
         <ol className="list-decimal pl-6 space-y-2">
           <li>Choose the quantity of names generated per batch (1–24).</li>
-          <li>[8] Click <strong>Generate names</strong> to get a fresh batch of secret society, agency, and cabal names.</li>
+          <li>Click <strong>Generate names</strong> to get a fresh batch of secret society, agency, and cabal names.</li>
           <li>Determine the format first — acronym, abstract noun, ancient order, or front — and preserve the titles that fit.</li>
           <li>Use the Copy button to save your shortlist, then polish a top choice (add &quot;The,&quot; invent an acronym expansion, or attach a symbol).</li>
           <li>Run it again as frequently as you wish — there is no profile, no download, and no restriction on uses.</li>
         </ol>
         <p>All generation occurs directly within your web browser. Your preferences and generated names are never transmitted to any remote server, ensuring your plot twists and worldbuilding remain entirely confidential until you decide to share them.</p>
 
-        <h2>[17] Common Mistakes to Avoid</h2>
+        <h2>Common Mistakes to Avoid</h2>
         <p>The most frequent blunder is overloading a title — &quot;The Secret Shadow Order of the Dark Cabal&quot; tries so hard it turns comical; one potent concept outperforms four piled-up ones. Steer clear of borrowing famous canon names like HYDRA or SPECTRE for a realistic custom organization, since those pre-existing ties overshadow your unique creation. Match your tone to its function: a contemporary spy agency shouldn't be named &quot;The Brotherhood of the Ancient Flame,&quot; and a centuries-old occult group shouldn't be styled &quot;Global Dynamics Inc.&quot; Additionally, ensure it is pronounceable — words that characters must speak aloud in conversation need to flow smoothly off the tongue.</p>
 
         <h2>Developing the Organization Behind the Title</h2>

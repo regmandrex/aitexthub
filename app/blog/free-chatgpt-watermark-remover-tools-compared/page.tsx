@@ -29,9 +29,9 @@ export default function FreeChatGptWatermarkRemoverToolsComparedPage() {
         <p className="mt-2 text-slate-600">You can currently find numerous utilities that promise to strip away ChatGPT watermarks. Their actual functionality, text processing methods, and data privacy standards differ widely. This manual details key evaluation criteria, contrasts various methods, and assists you in selecting the ideal application for your specific requirements.</p>
         <div className="mt-5 grid gap-4 sm:grid-cols-3">
           {[
-            { title: 'What to look for', detail: '[6] Unicode removal, privacy, completeness of scanning' },
-            { title: 'Approach comparison', detail: '[7] Browser-based vs. server-based vs. API tools' },
-            { title: 'Privacy considerations', detail: '[8] Where your text goes when you paste it' },
+            { title: 'What to look for', detail: 'Unicode removal, privacy, completeness of scanning' },
+            { title: 'Approach comparison', detail: 'Browser-based vs. server-based vs. API tools' },
+            { title: 'Privacy considerations', detail: 'Where your text goes when you paste it' },
           ].map((item) => (
             <div key={item.title} className="rounded-2xl border-2 border-black bg-slate-50 p-4 text-xs text-slate-700">
               <p className="font-semibold text-slate-900">{item.title}</p>
@@ -42,40 +42,40 @@ export default function FreeChatGptWatermarkRemoverToolsComparedPage() {
       </div>
 
       <section className="mt-10 space-y-4">
-        <h2 className="text-2xl font-semibold text-slate-900">[9] What Does a ChatGPT Watermark Remover Actually Do?</h2>
-        <p className="text-slate-700">[10] Prior to reviewing competing solutions, we must clarify what such software aims to purge. In the realm of processing utilities, &quot;ChatGPT watermarks&quot; generally denotes unseen Unicode elements &mdash; zero-width spacing, byte order markers, discretionary hyphens, and corresponding residue &mdash; tucked inside machine-generated copy. These do not represent deliberate tracking signatures injected by OpenAI, but rather accidental side effects of natural language production.</p>
-        <p className="text-slate-700">[11] A reliable watermark remover ought to: spot all sorts of hidden Unicode symbols within your copy, strip them safely without altering visible text, verify the sanitized output, and ideally accomplish this minus transmitting data externally.</p>
-        <p className="text-slate-700">[12] Numerous programs provide secondary cleanup capabilities: fixing em dashes, unifying quotation styles, stripping trailing white space, and addressing noticeable yet unwanted AI style artifacts. Such features serve as practical enhancements, transforming a standard utility into a well-rounded text sanitizer.</p>
+        <h2 className="text-2xl font-semibold text-slate-900">What Does a ChatGPT Watermark Remover Actually Do?</h2>
+        <p className="text-slate-700">Prior to reviewing competing solutions, we must clarify what such software aims to purge. In the realm of processing utilities, &quot;ChatGPT watermarks&quot; generally denotes unseen Unicode elements &mdash; zero-width spacing, byte order markers, discretionary hyphens, and corresponding residue &mdash; tucked inside machine-generated copy. These do not represent deliberate tracking signatures injected by OpenAI, but rather accidental side effects of natural language production.</p>
+        <p className="text-slate-700">A reliable watermark remover ought to: spot all sorts of hidden Unicode symbols within your copy, strip them safely without altering visible text, verify the sanitized output, and ideally accomplish this minus transmitting data externally.</p>
+        <p className="text-slate-700">Numerous programs provide secondary cleanup capabilities: fixing em dashes, unifying quotation styles, stripping trailing white space, and addressing noticeable yet unwanted AI style artifacts. Such features serve as practical enhancements, transforming a standard utility into a well-rounded text sanitizer.</p>
       </section>
 
       <section className="mt-10 space-y-4">
-        <h2 className="text-2xl font-semibold text-slate-900">[13] The Critical Factor: Where Does Your Text Go?</h2>
-        <p className="text-slate-700">[14] This marks the primary consideration when evaluating any utility built to process sensitive copy. Whenever you submit material to an artifact remover, does your text remain locally inside your browser, or does it get uploaded to an external server?</p>
+        <h2 className="text-2xl font-semibold text-slate-900">The Critical Factor: Where Does Your Text Go?</h2>
+        <p className="text-slate-700">This marks the primary consideration when evaluating any utility built to process sensitive copy. Whenever you submit material to an artifact remover, does your text remain locally inside your browser, or does it get uploaded to an external server?</p>
         <div className="grid gap-4 md:grid-cols-2">
           <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">Browser-based processing (Privacy-safe)</p>
-            <p className="mt-2">[15] Operating exclusively on your device, this program relies completely on client-side JavaScript. None of your writing ever gets forwarded to an outside server. Character inspection and scrubbing happen entirely within your local environment. Even when hosted on an external site, your data remains fully confidential.</p>
-            <p className="mt-3 font-medium text-green-700">[16] Best for: sensitive documents, confidential content, any content you do not want to share</p>
+            <p className="mt-2">Operating exclusively on your device, this program relies completely on client-side JavaScript. None of your writing ever gets forwarded to an outside server. Character inspection and scrubbing happen entirely within your local environment. Even when hosted on an external site, your data remains fully confidential.</p>
+            <p className="mt-3 font-medium text-green-700">Best for: sensitive documents, confidential content, any content you do not want to share</p>
           </div>
           <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
-            <p className="font-semibold text-slate-900">[17] Server-based processing (Privacy risk)</p>
-            <p className="mt-2">[18] Your copy travels over the network to the provider&apos;s machine, gets handled remotely, and returns to your screen. The entity running that backend can easily record, store, inspect, or redistribute your writing. A significant portion of &quot;no-cost&quot; utilities in this space profit by harvesting submitted content.</p>
-            <p className="mt-3 font-medium text-red-700">[19] Risk for: confidential content, client work, anything with NDA implications</p>
+            <p className="font-semibold text-slate-900">Server-based processing (Privacy risk)</p>
+            <p className="mt-2">Your copy travels over the network to the provider&apos;s machine, gets handled remotely, and returns to your screen. The entity running that backend can easily record, store, inspect, or redistribute your writing. A significant portion of &quot;no-cost&quot; utilities in this space profit by harvesting submitted content.</p>
+            <p className="mt-3 font-medium text-red-700">Risk for: confidential content, client work, anything with NDA implications</p>
           </div>
         </div>
-        <p className="text-slate-700">[20] The dedicated <Link href="/chatgpt-watermark-remover">ChatGPT Watermark Remover</Link> provided here scrubs your writing directly inside your local browser. At no point is your copy uploaded to an external machine. This client-only design represents the critical benchmark when selecting a sanitizer for sensitive documents.</p>
+        <p className="text-slate-700">The dedicated <Link href="/chatgpt-watermark-remover">ChatGPT Watermark Remover</Link> provided here scrubs your writing directly inside your local browser. At no point is your copy uploaded to an external machine. This client-only design represents the critical benchmark when selecting a sanitizer for sensitive documents.</p>
       </section>
 
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">Comparing Tool Approaches</h2>
-        <p className="text-slate-700">[21] The watermark removal tool space can be categorized into several distinct approaches, each with different trade-offs.</p>
+        <p className="text-slate-700">The watermark removal tool space can be categorized into several distinct approaches, each with different trade-offs.</p>
         <div className="grid gap-4 md:grid-cols-2">
           <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
-            <p className="font-semibold text-slate-900">[22] Approach 1: Pure Unicode removers</p>
+            <p className="font-semibold text-slate-900">Approach 1: Pure Unicode removers</p>
             <p className="mt-2">Such utilities concentrate strictly on hidden Unicode characters. They analyze the raw string, detect non-printing elements, and strip them out. Their precision for this task is exceptional, though they fail to resolve visible layout problems or statistical AI traits.</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
-              <li>[24] Pros: Precise, fast, easy to verify</li>
-              <li>[25] Cons: Does not address statistical AI signals</li>
+              <li>Pros: Precise, fast, easy to verify</li>
+              <li>Cons: Does not address statistical AI signals</li>
               <li>Ideal for: Tech-savvy users seeking precise sanitation</li>
             </ul>
           </div>

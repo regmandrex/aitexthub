@@ -65,7 +65,7 @@ function createWriteUp() {
         <h2>Methods for Naming a World in Your Tale or Campaign</h2>
         <p>Begin with the world&apos;s function, not the title. Determine if it acts as a fortress, a shrine, a hive, or a death world, because the category establishes the mood. Next, generate a batch and organize the outcomes by feel — the darkest, harshest titles belong to death and fortress worlds; the most sacred Latin ones belong to shrine worlds; the iron-heavy ones belong to forge worlds. Include a designation if the planet rests within a wider system. A moniker selected this way arrives pre-loaded with implied history, precisely what a grimdark setting desires.</p>
 
-        <h2>[10] How to Use This 40K Planet Name Generator</h2>
+        <h2>How to Use This 40K Planet Name Generator</h2>
         <ol className="list-decimal pl-6 space-y-2">
           <li>Set how many world titles you desire per run (1–24).</li>
           <li>Click <strong>Generate names</strong> to acquire a fresh batch of grimdark, Imperial-style planet titles.</li>
@@ -75,7 +75,7 @@ function createWriteUp() {
         </ol>
         <p>Generation happens completely inside your browser. Your preferences and the titles you generate are never transmitted to a server, ensuring your unrevealed spheres and campaign plans remain confidential until you decide to share them.</p>
 
-        <h2>[17] Common Mistakes to Avoid</h2>
+        <h2>Common Mistakes to Avoid</h2>
         <p>The primary mistake is a title sounding overly soft or contemporary for the environment — a bright, clean, cheerful moniker shatters the grimdark atmosphere instantly. Prevent overusing a single suffix, or every globe inside your sector blurs into &quot;-us, -us, -us.&quot; Watch out for accidentally duplicating a famous canon world like Cadia, Terra, or Macragge unless you intend the reference. And keep pronunciations simple at the table; a title nobody can speak aloud will never endure in a campaign.</p>
 
         <h2>Application in Tabletop, Homebrew, and Fan Fiction</h2>

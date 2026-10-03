@@ -59,42 +59,42 @@ function WriteUp() {
           <li>Cyrillic: Привет → privet</li>
           <li>Greek characters: Î•Î»Î»Î¬Î´Î± → Ellada</li>
           <li>Chinese characters: 你好 → ni hao</li>
-          <li>[1] Japanese: こんにちは → konnichiwa (hiragana romanization)</li>
-          <li>[2] Arabic: مرحبا → mrhba (transliterated, as Arabic has no vowel letters in most positions)</li>
+          <li>Japanese: こんにちは → konnichiwa (hiragana romanization)</li>
+          <li>Arabic: مرحبا → mrhba (transliterated, as Arabic has no vowel letters in most positions)</li>
         </ul>
-        <p>[3] Our generator utilizes the Unicode Consortium&apos;s CLDR (Common Locale Data Repository) conversion rules to ensure top accuracy across various languages. For Chinese and Japanese, we apply standard Pinyin and Hepburn romanization respectively.</p>
+        <p>Our generator utilizes the Unicode Consortium&apos;s CLDR (Common Locale Data Repository) conversion rules to ensure top accuracy across various languages. For Chinese and Japanese, we apply standard Pinyin and Hepburn romanization respectively.</p>
 
-        <h2>[4] Slug Generation in CMS and Framework Ecosystems</h2>
+        <h2>Slug Generation in CMS and Framework Ecosystems</h2>
 
         <h3>WordPress</h3>
-        <p>[5] WordPress creates slugs from post titles automatically via its <code>sanitize_title()</code> function, which eliminates HTML, special characters, and converts to lowercase with hyphens. You can modify the generated slug prior to publishing. WordPress keeps the slug inside the <code>post_name</code> column of the <code>wp_posts</code> table. Furthermore, WordPress supports custom permalink structures where slugs show up inside date or category URL patterns: <code>/2024/01/%postname%/</code> or <code>/%category%/%postname%/</code>.</p>
-        <p>[6] When migrating a WordPress site or altering its permalink setup, proper 301 redirect management becomes vital. The Redirection plugin for WordPress can automatically set up redirects whenever post slugs change, safeguarding link equity during restructuring. Always verify slugs in a staging environment prior to updating live pages that feature established backlinks.</p>
+        <p>WordPress creates slugs from post titles automatically via its <code>sanitize_title()</code> function, which eliminates HTML, special characters, and converts to lowercase with hyphens. You can modify the generated slug prior to publishing. WordPress keeps the slug inside the <code>post_name</code> column of the <code>wp_posts</code> table. Furthermore, WordPress supports custom permalink structures where slugs show up inside date or category URL patterns: <code>/2024/01/%postname%/</code> or <code>/%category%/%postname%/</code>.</p>
+        <p>When migrating a WordPress site or altering its permalink setup, proper 301 redirect management becomes vital. The Redirection plugin for WordPress can automatically set up redirects whenever post slugs change, safeguarding link equity during restructuring. Always verify slugs in a staging environment prior to updating live pages that feature established backlinks.</p>
 
         <h3>Shopify</h3>
-        <p>[7] Shopify automatically generates URL handles (Shopify&apos;s term for slugs) using product titles and collection names. The handle acts as the unique identifier for products in URLs: <code>/products/my-product-handle</code>. Shopify handles are lowercase, hyphenated, and stripped of any special characters. You can edit handles inside the product editor under the &quot;Search engine listing preview&quot; tab. Shopify maintains automatic redirects upon handle updates, protecting SEO equity though accumulating many redirects over time.</p>
+        <p>Shopify automatically generates URL handles (Shopify&apos;s term for slugs) using product titles and collection names. The handle acts as the unique identifier for products in URLs: <code>/products/my-product-handle</code>. Shopify handles are lowercase, hyphenated, and stripped of any special characters. You can edit handles inside the product editor under the &quot;Search engine listing preview&quot; tab. Shopify maintains automatic redirects upon handle updates, protecting SEO equity though accumulating many redirects over time.</p>
 
         <h3>Webflow</h3>
-        <p>[8] Webflow produces slugs starting from CMS collection item names. The slug field remains editable right in the CMS editor and follows the standard lowercase-hyphen convention. Webflow&apos;s CMS slug validation prevents duplicate slugs inside any single collection. For Webflow websites featuring massive product catalogs or blog archives, bulk slug editing via the Webflow API offers the most efficient method when renaming content at scale.</p>
+        <p>Webflow produces slugs starting from CMS collection item names. The slug field remains editable right in the CMS editor and follows the standard lowercase-hyphen convention. Webflow&apos;s CMS slug validation prevents duplicate slugs inside any single collection. For Webflow websites featuring massive product catalogs or blog archives, bulk slug editing via the Webflow API offers the most efficient method when renaming content at scale.</p>
 
         <h3>Ghost</h3>
-        <p>[9] Ghost builds slugs from post titles utilizing a comparable algorithm. Ghost slugs are URL-encoded and cleared of special characters. Custom slugs can be defined inside the post settings panel. Ghost&apos;s URL layout is simple: <code>/post-slug</code> for standard posts, <code>/tag/tag-slug</code> for tags, and <code>/author/author-slug</code> for author pages.</p>
+        <p>Ghost builds slugs from post titles utilizing a comparable algorithm. Ghost slugs are URL-encoded and cleared of special characters. Custom slugs can be defined inside the post settings panel. Ghost&apos;s URL layout is simple: <code>/post-slug</code> for standard posts, <code>/tag/tag-slug</code> for tags, and <code>/author/author-slug</code> for author pages.</p>
 
         <h3>Strapi</h3>
-        <p>[10] Strapi, the Node.js headless CMS, features a <code>slugify</code> plugin that automatically builds slugs from title fields. Configuration choices include separator, lowercase enforcement, and strict mode (which strips out all non-alphanumeric characters except the chosen separator). Strapi&apos;s API simplifies querying content by slug: <code>GET /api/articles?filters[slug][$eq]=my-slug</code>.</p>
+        <p>Strapi, the Node.js headless CMS, features a <code>slugify</code> plugin that automatically builds slugs from title fields. Configuration choices include separator, lowercase enforcement, and strict mode (which strips out all non-alphanumeric characters except the chosen separator). Strapi&apos;s API simplifies querying content by slug: <code>GET /api/articles?filters[slug][$eq]=my-slug</code>.</p>
 
         <h3>Django</h3>
-        <p>[11] Django supplies <code>django.utils.text.slugify()</code> which transforms any string into a slug adhering to Django&apos;s standards: lowercase, hyphens, and removing characters that are not alphanumerics, hyphens, or underscores. The <code>SlugField</code> model field applies this automatically alongside <code>prepopulated_fields</code> in the Django admin.</p>
+        <p>Django supplies <code>django.utils.text.slugify()</code> which transforms any string into a slug adhering to Django&apos;s standards: lowercase, hyphens, and removing characters that are not alphanumerics, hyphens, or underscores. The <code>SlugField</code> model field applies this automatically alongside <code>prepopulated_fields</code> in the Django admin.</p>
 
         <h3>Rails</h3>
-        <p>[12] Rails provides <code>ActiveSupport::Inflector.parameterize()</code>: <code>&quot;Hello World!&quot;.parameterize</code> → <code>&quot;hello-world&quot;</code>. The widely used <code>friendly_id</code> gem incorporates slug creation featuring history (keeping old slugs as redirects), scoping, and UUID fallbacks for Rails models.</p>
+        <p>Rails provides <code>ActiveSupport::Inflector.parameterize()</code>: <code>&quot;Hello World!&quot;.parameterize</code> → <code>&quot;hello-world&quot;</code>. The widely used <code>friendly_id</code> gem incorporates slug creation featuring history (keeping old slugs as redirects), scoping, and UUID fallbacks for Rails models.</p>
 
         <h3>Node.js / JavaScript</h3>
-        <p>[13] The <code>slugify</code> npm package: <code>slugify(&apos;Hello World!&apos;, &#123; lower: true, strict: true &#125;)</code> → <code>&apos;hello-world&apos;</code>. It supports locale-aware transliteration, tailored character maps, and stop word removal via extra configuration. The <code>@sindresorhus/slugify</code> package serves as a modern alternative boasting full Unicode support and reliable defaults.</p>
+        <p>The <code>slugify</code> npm package: <code>slugify(&apos;Hello World!&apos;, &#123; lower: true, strict: true &#125;)</code> → <code>&apos;hello-world&apos;</code>. It supports locale-aware transliteration, tailored character maps, and stop word removal via extra configuration. The <code>@sindresorhus/slugify</code> package serves as a modern alternative boasting full Unicode support and reliable defaults.</p>
 
-        <h2>[14] Programmatic Slug Generation Code Examples</h2>
+        <h2>Programmatic Slug Generation Code Examples</h2>
 
         <h3>JavaScript (Vanilla)</h3>
-        <p>[15] A dependable slug function designed for modern JavaScript:</p>
+        <p>A dependable slug function designed for modern JavaScript:</p>
         <pre>{`function slugify(text) {
   return text
     .toLowerCase()
@@ -107,7 +107,7 @@ function WriteUp() {
 }`}</pre>
 
         <h3>Python</h3>
-        <p>[16] Using the <code>python-slugify</code> package (recommended for production environments):</p>
+        <p>Using the <code>python-slugify</code> package (recommended for production environments):</p>
         <pre>{`pip install python-slugify
 from slugify import slugify
 
@@ -120,19 +120,19 @@ slug = slugify("My Article Title", separator="_")
 `}</pre>
 
         <h3>PHP (Laravel)</h3>
-        <p>[17] <code>Str::slug(&apos;Hello World! Café&apos;, &apos;-&apos;)</code> → <code>&apos;hello-world-cafe&apos;</code>. Powered by iconv along with native transliteration features in PHP. In a similar manner, WordPress features <code>sanitize_title(&apos;Hello World!&apos;)</code> to manage locale-specific character transliteration.</p>
+        <p><code>Str::slug(&apos;Hello World! Café&apos;, &apos;-&apos;)</code> → <code>&apos;hello-world-cafe&apos;</code>. Powered by iconv along with native transliteration features in PHP. In a similar manner, WordPress features <code>sanitize_title(&apos;Hello World!&apos;)</code> to manage locale-specific character transliteration.</p>
 
         <h3>Go</h3>
-        <p>[18] The <code>github.com/gosimple/slug</code> package: <code>slug.Make(&quot;Hello World!&quot;)</code> → <code>&quot;hello-world&quot;</code>. It supports transliteration across over 40 languages via an extensive character map. Perfect for Go-driven static site generators and web services.</p>
+        <p>The <code>github.com/gosimple/slug</code> package: <code>slug.Make(&quot;Hello World!&quot;)</code> → <code>&quot;hello-world&quot;</code>. It supports transliteration across over 40 languages via an extensive character map. Perfect for Go-driven static site generators and web services.</p>
 
-        <h2>[19] Slug Best Practices for SEO</h2>
-        <p>[20] Google&apos;s John Mueller and Gary Illyes have delivered the following guidance regarding URL structure and slugs that serves as the foundation for SEO best practices:</p>
+        <h2>Slug Best Practices for SEO</h2>
+        <p>Google&apos;s John Mueller and Gary Illyes have delivered the following guidance regarding URL structure and slugs that serves as the foundation for SEO best practices:</p>
         <ul>
           <li>Use real words that describe the content &quot; avoid meaningless IDs or codes in URLs</li>
-          <li>[21] Keep URLs as concise as possible while remaining descriptive</li>
+          <li>Keep URLs as concise as possible while remaining descriptive</li>
           <li>Use hyphens as word separators &quot; never underscores</li>
           <li>Avoid excessive subdirectories &quot; 2-3 levels is usually sufficient</li>
-          <li>[22] Modifying URL slugs after a page gets indexed hurts SEO unless correct 301 redirects are established</li>
+          <li>Modifying URL slugs after a page gets indexed hurts SEO unless correct 301 redirects are established</li>
           <li>Put your primary keyword right in the slug, but avoid keyword-stuffing it</li>
           <li>Keep dates out of slugs for evergreen material "” <code>/best-laptops</code> works better than <code>/best-laptops-2022</code> when you plan to update the page</li>
           <li>Place the main keyword as close to the domain root as possible within the URL path</li>

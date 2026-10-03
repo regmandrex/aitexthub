@@ -26,12 +26,12 @@ const faqs: FaqItem[] = [
   },
   {
     category: 'Basics',
-    question: '[22] What is ASCII and why was it created?',
+    question: 'What is ASCII and why was it created?',
     answer: `Initially introduced in 1963 and finalized in 1968, ASCII (American Standard Code for Information Interchange) established an agreed-upon character encoding standard for computing hardware and telecommunication networks. Prior to this, hardware producers utilized proprietary encodings, preventing cross-platform text sharing between different vendors. ASCII resolved this by allocating 7-bit numerical values (0–127) across 128 characters: 33 non-printing control codes (spanning 0–31 and 127), 10 numerical digits (48–57), 26 uppercase alphabet letters (65–90), 26 lowercase alphabet letters (97–122), plus 33 punctuation marks, symbols, and whitespace. This breakthrough meant any machine adhering to the ASCII standard could flawlessly exchange understandable text with another. It subsequently laid the groundwork for modern text systems like Unicode, which expands on ASCII to incorporate over 140,000 characters while remaining completely backward-compatible with the primary 128 ASCII codes.`,
   },
   {
     category: 'Basics',
-    question: '[24] What is the difference between ASCII, Unicode, and UTF-8?',
+    question: 'What is the difference between ASCII, Unicode, and UTF-8?',
     answer: `While frequently mentioned together, these concepts serve different roles. ASCII is an early 7-bit encoding standard addressing 128 characters — primarily English letters, basic punctuation, numbers, and system control signals. Built exclusively for English text processing, it lacks native handling for diacritics, alternate alphabets, or non-Latin symbols. Unicode, by contrast, is an international standard that assigns individual code points to more than 140,000 characters encompassing global writing systems; it acts as a character registry rather than a physical file encoding. UTF-8 represents the most prevalent encoding format for Unicode, utilizing dynamic lengths of 1 to 4 bytes per character. Notably, UTF-8 maintains complete backward compatibility with ASCII: the initial 128 Unicode code points (U+0000 through U+007F) occupy a single byte and mirror the original ASCII index. Consequently, standard ASCII text constitutes fully valid UTF-8. Our ASCII Converter handles the baseline 128-entry ASCII system (as well as extended characters spanning 128–255 via the Extended ASCII setting).`,
   },
   {

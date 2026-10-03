@@ -61,7 +61,7 @@ function createWriteUp() {
         <h2>Nun Names in Gothic and Horror Stories</h2>
         <p>A cloistered monastery serves as a traditional gothic and horror backdrop, and strictly vowed names amplify the fear — Sister Mary of the Sorrows, Mother Agatha, Sister Perpetua. Choose older, severe &quot;of the&quot; structures and obscure saints for an archaic, creepy atmosphere. The style thrives on the tension between a sacred title and a dark narrative, meaning a gentle, holy-sounding name on a frightening character is far more disturbing than an overtly menacing one.</p>
 
-        <h2>[10] How to Use This Nun Name Generator</h2>
+        <h2>How to Use This Nun Name Generator</h2>
         <ol className="list-decimal pl-6 space-y-2">
           <li>Determine your order&apos;s era and spirituality initially, whether it is an austere medieval cloister, Marian convent, Carmelite house, or modern congregation.</li>
           <li>Specify your desired name quantity per run between 1 and 24, then click <strong>Generate names</strong> to obtain fresh batches of Sister and Mother options.</li>

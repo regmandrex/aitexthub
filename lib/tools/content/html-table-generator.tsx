@@ -175,7 +175,7 @@ export const htmlTableGeneratorContent: ToolContent = {
         <h2>HTML Tables in Emails</h2>
         <p>A notable exception to the rule against using tables for layout is found in email HTML. Due to extremely limited CSS support, email clients like Outlook cannot handle Flexbox, Grid, or many modern layout properties. For complex email templates to render reliably across major clients such as Outlook, Gmail, and Apple Mail, table-based layouts remain the sole dependable option. Higher-level abstractions compiled to table-based HTML for emails are provided by frameworks like Foundation for Emails and MJML.</p>
 
-        <h2>[10] How to Use This HTML Table Generator</h2>
+        <h2>How to Use This HTML Table Generator</h2>
         <p>
           Configure the number of rows and columns, add header text, data cells, and optional caption.
           Toggle <code>colspan</code> and <code>rowspan</code> for merged cells. Select styling options
@@ -319,19 +319,19 @@ export const htmlTableGeneratorContent: ToolContent = {
       category: 'JavaScript',
       question: 'How can I dynamically generate an HTML table utilizing JavaScript?',
       answer:
-        '[1] Generate the table tag, then leverage innerHTML or document.createElement. For rendering dynamic data: const table = document.createElement("table"); const tbody = table.createTBody(); data.forEach(row => { const tr = tbody.insertRow(); row.forEach(cell => { tr.insertCell().textContent = cell; }); }). insertRow() along with insertCell() serve as DOM Table API functions dedicated to proper node generation. When working in React/Vue, iterate through your data collections to produce JSX or template-based rows.',
+        'Generate the table tag, then leverage innerHTML or document.createElement. For rendering dynamic data: const table = document.createElement("table"); const tbody = table.createTBody(); data.forEach(row => { const tr = tbody.insertRow(); row.forEach(cell => { tr.insertCell().textContent = cell; }); }). insertRow() along with insertCell() serve as DOM Table API functions dedicated to proper node generation. When working in React/Vue, iterate through your data collections to produce JSX or template-based rows.',
     },
     {
       category: 'Export',
-      question: '[2] How do I export an HTML table to CSV or Excel?',
+      question: 'How do I export an HTML table to CSV or Excel?',
       answer:
-        '[3] Exporting to CSV: traverse each table row and its corresponding cells, concatenating entries with commas and separating rows with line breaks, while escaping text values containing commas. Generate a Blob assigned the text/csv MIME type and trigger a file download using an injected <a> element. Exporting to Excel: incorporate the SheetJS (xlsx) library, capable of processing a DOM table element directly via XLSX.utils.table_to_sheet(tableElement) to output an .xlsx workbook. For backend-driven exports, transmit your dataset via JSON and process it with backend libraries.',
+        'Exporting to CSV: traverse each table row and its corresponding cells, concatenating entries with commas and separating rows with line breaks, while escaping text values containing commas. Generate a Blob assigned the text/csv MIME type and trigger a file download using an injected <a> element. Exporting to Excel: incorporate the SheetJS (xlsx) library, capable of processing a DOM table element directly via XLSX.utils.table_to_sheet(tableElement) to output an .xlsx workbook. For backend-driven exports, transmit your dataset via JSON and process it with backend libraries.',
     },
     {
       category: 'Print',
-      question: '[4] How do I make HTML table headers repeat on every printed page?',
+      question: 'How do I make HTML table headers repeat on every printed page?',
       answer:
-        '[5] Enclosing your header lines within <thead> provides the canonical mechanism to duplicate headings across printouts: modern web browsers (Chrome, Firefox, Safari, Edge) automatically repeat <thead> items along the top margin of every printed sheet across extended tables. Verify that your print stylesheet avoids assigning display: block to any table nodes, which disrupts this native behavior. Alternatively, you can apply CSS: thead { display: table-header-group; } directly.',
+        'Enclosing your header lines within <thead> provides the canonical mechanism to duplicate headings across printouts: modern web browsers (Chrome, Firefox, Safari, Edge) automatically repeat <thead> items along the top margin of every printed sheet across extended tables. Verify that your print stylesheet avoids assigning display: block to any table nodes, which disrupts this native behavior. Alternatively, you can apply CSS: thead { display: table-header-group; } directly.',
     },
   ],
 };

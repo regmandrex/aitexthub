@@ -32,7 +32,7 @@ function WriteUp() {
         <p>GPT-4.5 sustains a surprisingly steady formal-to-neutral tone across an entire piece. Human writers shift tones naturally — moving between formal analysis and casual remarks, adding slang or humor, using colloquialisms in some settings and technical terms in others. This tonal diversity defines a genuine human voice that GPT-4.5 fails to copy naturally.</p>
         <p>Our humanizer applies controlled tone variation, incorporating informal terms, contractions, and everyday expressions in suitable spots to break up the uniform formal tone of machine-generated text.</p>
 
-        <h2>[4] The Mechanics Of The GPT-4.5 Humanizer</h2>
+        <h2>The Mechanics Of The GPT-4.5 Humanizer</h2>
         <p>Our humanizer is not a basic synonym swapper or sentence mixer. It employs an advanced multi-stage rewriting method aimed at the specific detection traits linked to GPT-4.5 output while keeping the semantic meaning, factual correctness, and readability intact.</p>
 
         <h3>First Stage: Structural Evaluation</h3>

@@ -53,7 +53,7 @@ function createWriteUp() {
           <li><strong>Charismatic showman.</strong> Flashy, self-promoting titles — featuring integrated gold, glitz, and swagger.</li>
         </ul>
 
-        <h2>[10] How to Use This Wrestling Name Generator</h2>
+        <h2>How to Use This Wrestling Name Generator</h2>
         <ol className="list-decimal pl-6 space-y-2">
           <li>Select your preferred quantity of ring monikers per execution (1–24).</li>
           <li>Click <strong>Generate names</strong> to acquire a fresh set of wrestling-inspired titles.</li>
@@ -86,7 +86,7 @@ function createWriteUp() {
         <p>To observe how a single generated moniker transforms into a complete persona, review a few scenarios. Imagine the generator supplies you with &quot;Dread.&quot; That harsh, one-word tag reads as a monster heel; incorporate the nickname &quot;The Nightmare,&quot; a slow menacing entrance, a mask or face paint, and a finisher labeled &quot;Lights Out,&quot; and you possess a fully realized villain. Now consider &quot;Bolt.&quot; Bright and fast, it suits a high-flying face; pair it with &quot;The Human Lightning,&quot; an energetic entrance, and an aerial finisher dubbed &quot;Thunderstrike,&quot; and the character sells itself ahead of the opening maneuver.</p>
         <p>A moniker such as &quot;Sterling Gold&quot; implies an arrogant, flashy showman — assign him the epithet &quot;The Million-Dollar Smile,&quot; gaudy ring gear, and a smug catchphrase, and the gimmick builds itself. The objective behind these examples is the methodology: the generated tag plants the seed, while the gimmick, nickname, appearance, and finisher develop from it in a uniform direction. Run the generator, select a tag whose tone is evident, then let every additional choice reinforce it.</p>
 
-        <h2>[17] Common Mistakes to Avoid</h2>
+        <h2>Common Mistakes to Avoid</h2>
         <p>A few missteps can undermine an otherwise solid ring name. The initial error is selecting a tag that proves difficult to chant or pronounce — if the crowd cannot easily shout it, it will never gain traction, regardless of how clever it appears in writing. The second is a moniker that opposes the gimmick: a soft, gentle tag on a monster heel confuses the audience unless the contrast is intentional. The third is excessive length; stacking too many words (&quot;The Unstoppable Crimson War-Machine of Doom&quot; bytes) obscures the memorable core. The fourth is accidental resemblance to an existing star, which reads as copying. Ultimately, avoid tags so generic they could belong to anyone — the sole purpose of a ring name is to indicate a specific character. When you evaluate a generated batch, filter against these traps and preserve the tags that remain chantable, gimmick-aligned, concise, distinctive, and specific.</p>
 
         <h2>Privacy</h2>

@@ -49,7 +49,7 @@ function createWriteUp() {
         <h2>Puns, Wordplay, and Self-Aware Names</h2>
         <p>Tumblr humor is a category of its own, and it appears in URLs constantly. Puns on a favorite character's name, bizarre or chaotic phrases, ironic and self-deprecating handles, and knowing jokes about internet culture are deeply Tumblr. A name like &quot;localcryptid&quot; or a pun-based fandom URL accomplishes two goals: it shares your content and your sense of humor at once. If a generated idea inspires a joke or a pun, embrace it — the platform rewards handles with a wink far more than polished, brand-friendly ones.</p>
 
-        <h2>[10] How to Use This Tumblr Blog Name Generator</h2>
+        <h2>How to Use This Tumblr Blog Name Generator</h2>
         <ol className="list-decimal pl-6 space-y-2">
           <li>Determine your blog&apos;s direction — a fandom, an aesthetic, or a personal/chaotic vibe.</li>
           <li>Select the number of name suggestions desired per batch (1–24) and click <strong>Generate names</strong>.</li>

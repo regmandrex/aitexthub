@@ -138,7 +138,7 @@ export const faviconGeneratorContent: ToolContent = {
           <li><strong>Low-contrast designs</strong>: Dark logos on dark tab bars (or light logos on light tab bars) turn invisible. Always test across both light and dark browser themes.</li>
         </ul>
 
-        <h2>[10] How to Use This Favicon Generator</h2>
+        <h2>How to Use This Favicon Generator</h2>
         <p>
           Upload your source image "” ideally a high-resolution PNG (512×512 or larger) or an SVG for
           maximum quality. The generator produces all required sizes and formats: favicon.ico (16×16 and

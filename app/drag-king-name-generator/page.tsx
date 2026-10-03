@@ -56,7 +56,7 @@ function createWriteUp() {
         <p>The primary guiding principle is starting with your character, never the generated text. First define who your king represents — a sleek crooner, a leather-wearing rocker, a rapid-fire punster, or a parody macho bro — and retain only suggestions matching that vision. An ultra-smooth lounge lizard and a rowdy biker must not sport similar handles, even if each counts as &quot;drag king names.&quot; Practice speaking every contender like a venue emcee, noting if it introduces the exact vibe of your routine. That title must carry out storytelling work before you ever take a step on stage.</p>
         <p>Many kings additionally anchor their title to something personal — a riff on their real name, a hometown, a favorite music genre, or an inside joke — because a name with a story behind it feels authentic and is simple to discuss in interviews. Use the generator to spark ideas, then bend a promising outcome toward that personal hook.</p>
 
-        <h2>[10] How to Use This Drag King Name Generator</h2>
+        <h2>How to Use This Drag King Name Generator</h2>
         <ol className="list-decimal pl-6 space-y-2">
           <li>Choose the quantity of king names you wish to generate at once (1–24).</li>
           <li>Press <strong>Generate names</strong> to produce a new set of drag king stage names.</li>

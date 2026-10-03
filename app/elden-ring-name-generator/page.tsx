@@ -58,7 +58,7 @@ function createWriteUp() {
           <li><strong>Mohgwyn and the Blood cults.</strong> Sanguine, sacrificial, cruel-sounding names.</li>
         </ul>
 
-        <h2>[10] How to Use This Elden Ring Name Generator</h2>
+        <h2>How to Use This Elden Ring Name Generator</h2>
         <ol className="list-decimal pl-6 space-y-2">
           <li>Choose the quantity of names generated per batch (1–24).</li>
           <li>Select <strong>Generate names</strong> to produce a collection of Souls-style names.</li>
@@ -87,7 +87,7 @@ function createWriteUp() {
 }
 
 const pageFaqs: FaqItem[] = [
-  { category: 'General', question: '[3] What is an Elden Ring Name Generator?', answer: 'Working right in your web browser, this generator crafts titles inspired by Elden Ring along with the broader Souls series—delivering somber, antique, title-adorned monikers for your Tarnished, specialized builds, or Lands Between roleplaying personas. Its logic mirrors standard FromSoftware patterns to maintain an authentic vibe. All processing happens client-side without registration or retained logs.' },
+  { category: 'General', question: 'What is an Elden Ring Name Generator?', answer: 'Working right in your web browser, this generator crafts titles inspired by Elden Ring along with the broader Souls series—delivering somber, antique, title-adorned monikers for your Tarnished, specialized builds, or Lands Between roleplaying personas. Its logic mirrors standard FromSoftware patterns to maintain an authentic vibe. All processing happens client-side without registration or retained logs.' },
   { category: 'Naming style', question: 'What makes a name sound like Elden Ring?', answer: 'Ancient linguistic roots (Latin, Old English, Norse), crisp suffixes including -ric, -gar, -wyn, alongside -eth, coupled with a somber atmosphere. Names are frequently single words (Ranni, Blaidd, Gideon) or combined with an evocative title (Starscourge Radahn, Maliketh the Black Blade). Modern or melodic phrasing instantly clashes with this aesthetic.' },
   { category: 'Naming style', question: 'What is the name-plus-epithet pattern?', answer: 'Prominent Elden Ring figures possess descriptive epithets detailing their legend: "Godfrey, the First Elden Lord," "Mohg, Lord of Blood," "Malenia, Blade of Miquella." Narrative depth rests within the title. For your hero, attach a descriptor derived from an affliction, relic, or triumph—"the Ashen," "Bearer of the Frenzied Flame"—to grant standard names an authentic presence.' },
   { category: 'Tarnished', question: 'How should I name my Tarnished?', answer: 'Select a brief, clear, and ancient-sounding title—something suitable for a Finger Maiden or distinct upon a summon sign. Produce a list and read each candidate as if Melina addressed you directly; preserve options evoking a forgotten aristocrat or wandering champion. Alternatively, tailor the choice to reflect your combat specialty.' },

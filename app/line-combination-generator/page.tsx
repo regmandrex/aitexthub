@@ -59,7 +59,7 @@ function createWriteUp() {
         <h2>What Do Line Combinations Mean?</h2>
         <p>A line combination is a subset of lines from your list. For example, if your lines are A, B, and C, the combinations of size 2 are {`{A,B}`}, {`{A,C}`}, and {`{B,C}`}. The order of lines within a combination typically does not matter—{`{A,B}`} and {`{B,A}`} are the same combination. The line combination generator lists each combination once in a consistent order (e.g., lexicographic) so you can copy the output to Excel, use it for testing, or explore content mixes. The number of combinations is C(n,k) = n! / (k!(n-k)!): for n lines and combination size k, you get that many distinct subsets.</p>
 
-        <h2>[4] The Mechanics Of The Line Combination Generator</h2>
+        <h2>The Mechanics Of The Line Combination Generator</h2>
         <p>Input or paste your lines into the entry space—one item per line. Each line can function as a word, phrase, sentence, headline, or any text. The utility parses them into a list (certain utilities discard duplicate lines; verify the settings if duplicates matter). Select the combination magnitude: 2 for all pairs, 3 for all triples, or an alternative number. Execute the tool; the output displays every combination. Copy the result or utilize a download option if accessible. Processing executes locally in your browser, meaning nothing transmits to a server and your lines stay private. For extremely extensive lists, the quantity of combinations escalates rapidly (such as 15 lines choose 5 equals 3,003), so employ sensible list sizes to maintain utility responsiveness.</p>
 
         <h2>When to Utilize a Line Combination Generator</h2>

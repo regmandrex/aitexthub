@@ -54,7 +54,7 @@ function createWriteUp() {
         <h2>Common Use Cases</h2>
         <p>Aside from original fan fiction characters, these names serve multiple purposes. Tabletop and video game players crafting a Predator-style hunter desire a moniker that reads as alien and dangerous on a character sheet. Cosplayers and prop makers naming their bio-mask persona want something fitting the lore. Authors of crossover fiction — Alien vs. Predator and beyond — require names for background hunters and opposing clans. In every scenario, the objective remains identical: a name that sounds as though it were roared rather than spoken.</p>
 
-        <h2>[10] How to Use This Yautja Name Generator</h2>
+        <h2>How to Use This Yautja Name Generator</h2>
         <ol className="list-decimal pl-6 space-y-2">
           <li>Decide your Predator&apos;s standing and clan first — Unblooded youth, Blooded hunter, respected Elder, or dishonored Bad Blood.</li>
           <li>Choose the quantity of names per batch (1–24) and press <strong>Generate names</strong> to produce a new set of Yautja-style names.</li>

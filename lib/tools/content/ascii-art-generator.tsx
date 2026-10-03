@@ -164,25 +164,25 @@ const WriteUp = () => (
       <ul>
         <li><strong>pyfiglet</strong>: Full Python port of FIGlet featuring the complete typeface collection</li>
         <li><strong>art</strong>: Python package featuring text graphics and ASCII art derived from pictures</li>
-        <li>[1] <strong>Pillow + custom</strong>: Converting images into ASCII art programmatically utilizing PIL/Pillow</li>
+        <li><strong>Pillow + custom</strong>: Converting images into ASCII art programmatically utilizing PIL/Pillow</li>
       </ul>
 
-      <h2>[2] Practical Uses for ASCII Art Today</h2>
+      <h2>Practical Uses for ASCII Art Today</h2>
 
-      <h3>[3] Developer Tools and CLIs</h3>
-      <p>[4] When creating developer utilities, version displays and startup banners in ASCII art bring charm and a polished feel. Numerous applications like Next.js, Vite, Create React App, and others present stylized text or ASCII art upon booting up. This practice serves as a standard professional convention within the developer tool ecosystem.</p>
+      <h3>Developer Tools and CLIs</h3>
+      <p>When creating developer utilities, version displays and startup banners in ASCII art bring charm and a polished feel. Numerous applications like Next.js, Vite, Create React App, and others present stylized text or ASCII art upon booting up. This practice serves as a standard professional convention within the developer tool ecosystem.</p>
 
-      <h3>[5] Print-Friendly Certificates and Badges</h3>
-      <p>[6] Messages of acknowledgment, badges, and plain-text certificates featuring ASCII art borders can be printed on any hardware without requiring specific fonts or layouts, making them valuable for command-line games, terminal-based educational courses, and text-only communication systems.</p>
+      <h3>Print-Friendly Certificates and Badges</h3>
+      <p>Messages of acknowledgment, badges, and plain-text certificates featuring ASCII art borders can be printed on any hardware without requiring specific fonts or layouts, making them valuable for command-line games, terminal-based educational courses, and text-only communication systems.</p>
 
-      <h3>[7] Placeholder Text in Wireframes</h3>
-      <p>[8] Programmers sometimes utilize placeholder images and ASCII art boxes within early mockups and wireframes shared as plain text or inside monospace-rendered environments like Slack threads, Jira tickets, and GitHub issues.</p>
+      <h3>Placeholder Text in Wireframes</h3>
+      <p>Programmers sometimes utilize placeholder images and ASCII art boxes within early mockups and wireframes shared as plain text or inside monospace-rendered environments like Slack threads, Jira tickets, and GitHub issues.</p>
 
       <h3>Game Development</h3>
-      <p>[9] Text-based adventures, terminal games, and roguelikes form a thriving category that relies entirely upon Unicode/ASCII art for visual presentation. Countless terminal-based games and titles like Dwarf Fortress (ASCII mode) and NetHack employ ASCII characters as their primary graphic medium. Rather than acting as a technical restriction, the ASCII art aesthetic is chosen deliberately, with players actively favoring the abstract and imaginative nature of text-driven graphics.</p>
+      <p>Text-based adventures, terminal games, and roguelikes form a thriving category that relies entirely upon Unicode/ASCII art for visual presentation. Countless terminal-based games and titles like Dwarf Fortress (ASCII mode) and NetHack employ ASCII characters as their primary graphic medium. Rather than acting as a technical restriction, the ASCII art aesthetic is chosen deliberately, with players actively favoring the abstract and imaginative nature of text-driven graphics.</p>
 
       <h3>Retro Aesthetic Design</h3>
-      <p>[10] The retro computing style and terminal aesthetic remain popular in UI design, particularly for cyberpunk-influenced design systems, hacker-focused projects, and developer tools. ASCII art integrates smoothly with this look, recalling the atmosphere of early personal computers, BBS culture, and vintage Unix systems.</p>
+      <p>The retro computing style and terminal aesthetic remain popular in UI design, particularly for cyberpunk-influenced design systems, hacker-focused projects, and developer tools. ASCII art integrates smoothly with this look, recalling the atmosphere of early personal computers, BBS culture, and vintage Unix systems.</p>
     </div>
   </section>
 );
@@ -190,42 +190,42 @@ const WriteUp = () => (
 const faqs: FaqItem[] = [
   {
     category: 'General',
-    question: '[11] What is ASCII art?',
-    answer: '[12] ASCII art consists of visual designs produced using the ninety-five printable characters of the ASCII character set. It covers both image-based creations, which arrange characters to form pictures, and text banners, which render large decorative letters using smaller symbols. Originating during the 1960s and 1970s on text-only terminals, ASCII art remains popular in online spaces, terminal software, and developer culture.',
+    question: 'What is ASCII art?',
+    answer: 'ASCII art consists of visual designs produced using the ninety-five printable characters of the ASCII character set. It covers both image-based creations, which arrange characters to form pictures, and text banners, which render large decorative letters using smaller symbols. Originating during the 1960s and 1970s on text-only terminals, ASCII art remains popular in online spaces, terminal software, and developer culture.',
   },
   {
     category: 'General',
-    question: '[13] What is FIGlet and how does it work?',
-    answer: '[14] Developed in 1991, FIGlet (Frank, Ian and Glenn\'s Letters) is software designed to produce large ASCII text banners. It relies on font files (.flf) that specify how individual characters render as multi-line blocks of ASCII symbols. Users provide text input, and the utility translates it into oversized decorative lettering. Available on Linux and Mac through commands like brew install figlet and apt install figlet, the tool has been ported to every major programming language.',
+    question: 'What is FIGlet and how does it work?',
+    answer: 'Developed in 1991, FIGlet (Frank, Ian and Glenn\'s Letters) is software designed to produce large ASCII text banners. It relies on font files (.flf) that specify how individual characters render as multi-line blocks of ASCII symbols. Users provide text input, and the utility translates it into oversized decorative lettering. Available on Linux and Mac through commands like brew install figlet and apt install figlet, the tool has been ported to every major programming language.',
   },
   {
     category: 'General',
-    question: '[15] What is the difference between ASCII art and Unicode art?',
-    answer: '[16] ASCII art depends exclusively on the ninety-five printable symbols outlined in the 7-bit ASCII standard from 1963. Unicode art expands on this by incorporating thousands of extra characters, including emoji, Braille characters for high-resolution pixel art, block elements (█▄▀), and box-drawing symbols (─│┌┐). Contemporary generators of ASCII art frequently utilize Unicode characters to enhance visual fidelity while preserving the classic text-art style.',
+    question: 'What is the difference between ASCII art and Unicode art?',
+    answer: 'ASCII art depends exclusively on the ninety-five printable symbols outlined in the 7-bit ASCII standard from 1963. Unicode art expands on this by incorporating thousands of extra characters, including emoji, Braille characters for high-resolution pixel art, block elements (█▄▀), and box-drawing symbols (─│┌┐). Contemporary generators of ASCII art frequently utilize Unicode characters to enhance visual fidelity while preserving the classic text-art style.',
   },
   {
     category: 'Fonts',
-    question: '[17] What are the most popular FIGlet fonts?',
-    answer: '[18] Among the most frequently utilized FIGlet fonts are Standard (clean default), Big (tall prominent letters), Banner (wide blocky # characters), Block (solid modern letters), Bubble (rounded circular letters), Digital (seven-segment display style), Doom (angular gaming aesthetic), Graffiti (street-art style), Larry 3D (3D perspective shadow), Slant (exaggerated italic), Star Wars (movie crawl style), and Shadow (drop shadow effect). You can find hundreds of alternative fonts directly at figlet.org.',
+    question: 'What are the most popular FIGlet fonts?',
+    answer: 'Among the most frequently utilized FIGlet fonts are Standard (clean default), Big (tall prominent letters), Banner (wide blocky # characters), Block (solid modern letters), Bubble (rounded circular letters), Digital (seven-segment display style), Doom (angular gaming aesthetic), Graffiti (street-art style), Larry 3D (3D perspective shadow), Slant (exaggerated italic), Star Wars (movie crawl style), and Shadow (drop shadow effect). You can find hundreds of alternative fonts directly at figlet.org.',
   },
   {
     category: 'Fonts',
-    question: '[19] How do I choose the right ASCII art font?',
-    answer: '[20] Select your font based on context: use Standard or Small for readable, clean technical README documents; Big or Block for striking banners; Digital or Shadow for a contemporary tech feel; Doom or Graffiti for metal and gaming aesthetics; Bubble or Script for casual or friendly projects; and Star Wars for dramatic, reveal-style headers. Always keep available column width in mind, as certain fonts demand over eighty columns per character for proper rendering.',
+    question: 'How do I choose the right ASCII art font?',
+    answer: 'Select your font based on context: use Standard or Small for readable, clean technical README documents; Big or Block for striking banners; Digital or Shadow for a contemporary tech feel; Doom or Graffiti for metal and gaming aesthetics; Bubble or Script for casual or friendly projects; and Star Wars for dramatic, reveal-style headers. Always keep available column width in mind, as certain fonts demand over eighty columns per character for proper rendering.',
   },
   {
     category: 'Usage',
-    question: '[21] How do I add ASCII art to a README file?',
+    question: 'How do I add ASCII art to a README file?',
     answer: 'Wrap the ASCII art in a code block (triple backticks) to ensure monospace rendering: ```\\n<ascii art here>\\n```. GitHub renders code blocks in monospace, preserving character spacing. Without a code block, Markdown may collapse spaces and break the art. For centered display, there\'s no standard Markdown centering, but HTML `<pre>` tags with `align="center"` work on GitHub.',
   },
   {
     category: 'Usage',
-    question: '[23] How do I add an ASCII art banner to a Node.js CLI app?',
-    answer: '[24] Run `npm install figlet` to install figlet.js. Next, write: `import figlet from "figlet"; figlet("My Tool", (err, data) => { console.log(data); });`. For synchronous usage, use `figlet.textSync("My Tool", { font: "Big" })`. To build polished startup banners for your command-line interface, pair this with chalk for ANSI colors or boxen for framing borders.',
+    question: 'How do I add an ASCII art banner to a Node.js CLI app?',
+    answer: 'Run `npm install figlet` to install figlet.js. Next, write: `import figlet from "figlet"; figlet("My Tool", (err, data) => { console.log(data); });`. For synchronous usage, use `figlet.textSync("My Tool", { font: "Big" })`. To build polished startup banners for your command-line interface, pair this with chalk for ANSI colors or boxen for framing borders.',
   },
   {
     category: 'Usage',
-    question: '[25] How do I generate ASCII art in Python?',
+    question: 'How do I generate ASCII art in Python?',
     answer: 'Use pyfiglet: `pip install pyfiglet`. Then: `import pyfiglet; result = pyfiglet.figlet_format("Hello", font="big"); print(result)`. List available fonts: `pyfiglet.FigletFont.getFonts()`. For image-to-ASCII conversion, use the art library or implement your own with Pillow: convert to grayscale, resize, map brightness values to a character gradient.',
   },
   {

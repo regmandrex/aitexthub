@@ -252,7 +252,7 @@ export default function MistralWatermarkDetectorPage() {
       </ul>
       <p>Mistral&apos;s method centers on invisible, durable watermarking that operates at scale, preserves output quality, and enables real-time generation.</p>
 
-      <h3 className="text-xl font-semibold text-slate-900">[4] The Mechanics Of The Mistral Watermark Detector</h3>
+      <h3 className="text-xl font-semibold text-slate-900">The Mechanics Of The Mistral Watermark Detector</h3>
       <p>The recognition procedure proves as interesting as the watermarking itself.</p>
       <p>Here is what takes place behind the scenes:</p>
       <ul className="list-disc list-inside space-y-1 text-slate-700">

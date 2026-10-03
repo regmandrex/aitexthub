@@ -81,7 +81,7 @@ function WriteUp() {
         <h3>Publishing Content on Social Media</h3>
         <p>Social platforms including Meta (Facebook and Instagram), LinkedIn, and YouTube have announced or rolled out support for C2PA Content Credentials -- displaying AI origin tags whenever a C2PA manifest is spotted in uploaded media. For some creators, this automated labeling offers welcome transparency that helps their audience grasp the nature of the media. For others -- specifically those producing photorealistic media for scenarios where AI disclosure might confuse rather than enlighten, or who work in environments where the AI disclosure label interferes with the intended viewer experience -- erasing the C2PA manifest prior to upload stops the automated labeling from showing up on their material.</p>
 
-        <h2>[10] Instructions For The Sora Image Watermark Remover</h2>
+        <h2>Instructions For The Sora Image Watermark Remover</h2>
 
         <h3>Step 1: Export Your Image Out of Sora</h3>
         <p>Within the Sora interface on ChatGPT, create your video and go to the frame you wish to export. Utilize Sora's built-in frame export capability to save the frame as a PNG or JPEG, or apply the storyboard download feature to save storyboard graphics. The exported document contains C2PA metadata added by OpenAI at the time of creation. Download the file directly from the Sora interface to verify you possess the original file alongside complete metadata -- taking a screenshot of the interface rather than downloading will result in a document lacking C2PA metadata since the screenshot captures rendered pixels rather than the initial image file.</p>

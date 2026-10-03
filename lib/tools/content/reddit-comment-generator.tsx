@@ -19,7 +19,7 @@ function WriteUp() {
         <h3>Typical AI Patterns in Reddit Comment</h3>
         <p>AI-generated reddit comment tends to: lean toward an overly stiff tone that fails to fit the casual conversational vibe of the platform; cover every point methodically rather than focusing on emotional resonance; rely on standard boilerplate transitional phrases instead of a genuine personal voice; and miss the specific cultural nuances, insider jokes, and niche slang that make specialized material sound authentic.</p>
 
-        <h2>[10] Instructions For The Reddit Comment Generator</h2>
+        <h2>Instructions For The Reddit Comment Generator</h2>
         <p>Input your brief, prompt, or draft into the text box. Hit Generate. The system evaluates your text and crafts original, human-sounding material. Inspect the output - always evaluate AI-generated writing prior to deployment - and refine any areas that fall short of your exact requirements. The entire procedure wraps up in under ten seconds for most inputs.</p>
 
         <h2>Key Features</h2>
@@ -38,11 +38,11 @@ function WriteUp() {
         <h2>Growing Reddit Karma and Community Standing</h2>
         <p>Reddit karma (upvotes minus downvotes) measures the quality of your community contributions and is necessary for posting in certain subreddits. Earning organic karma demands steady, valuable participation: helpful answers within technical forums, compelling viewpoints in discussion boards, and engaging material in hobby-focused spaces. The Reddit Comment Generator can assist you in creating stronger initial drafts for your authentic contributions, elevating your comment quality and consequently your karma progress. The generator functions merely as a drafting tool; your genuine expertise, viewpoint, and community dedication are what drive long-term karma growth.</p>
 
-        <h2>[24] Reddit Comment Length and Format Best Practices</h2>
+        <h2>Reddit Comment Length and Format Best Practices</h2>
         <p>Reddit comment success changes greatly based on length and structure depending on the specific subreddit and situation. In technical forums (r/programming, r/personalfinance, r/legaladvice), detailed and well-structured replies featuring headers and bullet points frequently become top comments "” thoroughness demonstrates authority. In casual or entertainment boards, conciseness and humor beat lengthy breakdowns "” a brief, well-placed remark will earn more upvotes than a detailed three-paragraph essay. In conversation boards, medium-sized responses featuring a distinct stance and supporting logic generally work best.</p>
         <p>The generator creates responses with a fitting length for the content type and prompt you supply. For comments targeted at specific subreddits, supply the subreddit details and common comment tone within your prompt to receive output tailored to that board's formatting expectations. Reddit Markdown formatting (asterisks for bolding, headers with ##, code blocks using backticks) is supported and should be applied when it genuinely boosts legibility, not simply as decoration.</p>
 
-        <h2>[25] Subreddit Moderation and AI Content Detection</h2>
+        <h2>Subreddit Moderation and AI Content Detection</h2>
         <p>Numerous active subreddits feature moderator groups that check flagged material and spot trends of artificial or inauthentic commenting. Certain subreddits maintain direct prohibitions against AI-created material. Prior to publishing any generated text within a subreddit, review the community guidelines (typically found in the sidebar) regarding AI content rules. For boards where genuine human input is strictly demanded, utilize the generator purely for drafting help and perform major revisions that weave in your personal knowledge and perspective before submitting.</p>
 
         <h2>The Value System of Reddit and Upvote Triggers</h2>

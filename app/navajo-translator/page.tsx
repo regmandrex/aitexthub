@@ -37,7 +37,7 @@ function createWriteUp() {
         <p>Navajo (Diné bizaad) serves as the official speech of the Navajo Nation and stands as one of the top Indigenous languages spoken in the US. An English to Navajo Translator cannot substitute for instruction by native speakers or certified texts, though it aids in discovering new vocabulary and expressions.</p>
         <p>Navajo features intricate grammar, incorporating pitch accent and verb structure, which automated systems cannot fully process. Employ this English to Navajo Translator strictly as an educational supplement alongside course books, speaker guidance, and courses provided by the Navajo Nation or formal language programs. For official or published translations, always rely on certified translation professionals.</p>
 
-        <h2>[10] Instructions For The Navajo Translator</h2>
+        <h2>Instructions For The Navajo Translator</h2>
         <p>Launch the Navajo Translator, input or paste your English sentences into the designated field, and click Translate to Navajo or Translate. The utility supplies a Navajo translation or phrase assistance. Copy the output for studies, respectful correspondence, or school projects. If your text comes from a website or document, clean it up using plain text first so the input remains neat.</p>
 
         <h2>English to Navajo: Handle With Respect</h2>
@@ -104,7 +104,7 @@ function createWriteUp() {
         <h2>Navajo Materials and Language Rebirth</h2>
         <p>Navajo, or Diné bizaad, has been central to ongoing language revitalization campaigns. An English to Navajo Translator can assist students and teachers when utilized alongside official programs and certified materials from the Navajo Nation. When suggesting this utility to others, make sure to emphasize that it is meant exclusively for learning and support.</p>
 
-        <h2>[8] When Not to Use a Navajo Translator</h2>
+        <h2>When Not to Use a Navajo Translator</h2>
         <p>Never rely on a Navajo Translator for medical data, published work, legal matters, or official documentation in the absence of certified translation. The platform is designed for respectful educational use, vocabulary discovery, and personal study. In any scenario where legal validity or accuracy is critical, consult official Navajo Nation resources and professional Navajo Translators.</p>
         <p>When recommending this platform to colleagues or learners, state the boundaries clearly: it is strictly for support and study. For official or formal Navajo needs, guide users toward certified materials.</p>
 
@@ -118,14 +118,14 @@ function createWriteUp() {
         <h2>English to Navajo for Video and Podcasts</h2>
         <p>Media makers producing cultural or language content sometimes employ an English to Navajo Translator to assist with phrase or vocabulary segments. This instrument is intended for education and help; combine it with community sources and certified materials. Keep any Navajo portions brief and correct; seek certified translators for official or published needs.</p>
 
-        <h2>[9] Navajo Translator and Social Media</h2>
+        <h2>Navajo Translator and Social Media</h2>
         <p>English to Navajo expressions can aid language studies or respectful cultural media projects. Maintain proper usage alongside certified materials. Employ the Navajo Translator exclusively for educational and respectful purposes; for official or formal translation needs, rely on certified professionals.</p>
 
         <h2>The Importance of English to Navajo Translator</h2>
         <p>Navajo (Diné bizaad) ranks among the most spoken Indigenous languages across the United States. An English to Navajo Translator assists with language studies and respectful application when paired with certified materials and local resources. Utilize the tool for educational projects, vocabulary study, or classrooms, and look to accredited programs and the Navajo Nation for depth.</p>
         <p>Educators may apply the Navajo Translator to aid cultural and language units. Combine it with speaker feedback and certified materials. Stress that this utility acts as a supplement rather than a substitute for learning directly from speakers or getting certified translations.</p>
 
-        <h2>[1] Navajo Translator and Education Standards</h2>
+        <h2>Navajo Translator and Education Standards</h2>
         <p>Numerous schools and colleges teach Indigenous cultures and languages. An English to Navajo Translator can back that curriculum when used together with community resources and certified materials. Always pair the utility with speaker feedback and accredited programs. When sharing this Navajo Translator with colleagues or students, stress that it serves strictly for education and help, requiring certified sources for official purposes.</p>
 
         <h2>English to Navajo and Language Education</h2>
@@ -137,7 +137,7 @@ function createWriteUp() {
         <h2>Complimentary Navajo Translator with No Sign-Up</h2>
         <p>This Navajo Translator comes at no cost and demands no account registration. You can open the site, insert your English content, and receive English to Navajo assistance within seconds. This renders it handy for classroom demonstrations, language acquisition, or respectful study. Many visitors prefer utilities operating directly in browsers without dispatching information to servers; this English to Navajo Translator builds on that concept whenever feasible.</p>
 
-        <h2>[18] Navajo Translator Bookmark and Quick Access</h2>
+        <h2>Navajo Translator Bookmark and Quick Access</h2>
         <p>Bookmark this Navajo Translator page for fast availability whenever you require English to Navajo assistance. The utility functions on both mobile devices and desktops. Students and teachers frequently need a swift English to Navajo utility for phrase or vocabulary drills; this free Navajo Translator delivers just that. Professional resources should be consulted for certified or official translations.</p>
 
         <h2>Summary: When to Utilize a Navajo Translator</h2>
@@ -147,7 +147,7 @@ function createWriteUp() {
         <p>Utilize the Navajo Translator whenever you require English to Navajo assistance. View the website for other utilities.</p>
         <p>Navajo Translator output serves educational and respectful uses only. Consult professional resources for certified or official translation work.</p>
 
-        <h2>[6] Final Checklist for Navajo Translator</h2>
+        <h2>Final Checklist for Navajo Translator</h2>
         <p>Prior to sharing or utilizing output originating from the Navajo Translator: Is the application proper (strictly for study and help)? Did you supply plain text for inserted content originating from the web? Have you directed users toward professional resources for official or certified Navajo? Utilize the Navajo Translator strictly for educational and respectful applications.</p>
 
         <h2>English to Navajo: Final Remarks</h2>

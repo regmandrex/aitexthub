@@ -73,7 +73,7 @@ function createWriteUp() {
         <p>Gorilla Tag relies heavily on custom items — hats, face items, badges, holdables, and color selections obtained at the shop. Your moniker combined with your accessories constructs your identity within the lobby, making it beneficial to select a title complementing your aesthetic. A spooky item setup matches well with &quot;SHADOW&quot; or &quot;VOIDAPE&quot;; a humorous hat suits &quot;OOFYMONKE&quot;; a sleek competitive style fits &quot;APEX&quot; or &quot;SWIFT.&quot;</p>
         <p>Veterans often coordinate their whole look: a fiery red primate called &quot;EMBER,&quot; a frosty one labeled &quot;FROST.&quot; Once you produce a set, inspect the cosmetics you currently equip and retain the monikers that complement that aesthetic. A matching title-and-outfit pairing stands out more than either element individually, which counts in a title where you encounter identical users across rooms.</p>
 
-        <h2>[10] How to Use This Gorilla Tag Name Generator</h2>
+        <h2>How to Use This Gorilla Tag Name Generator</h2>
         <ol className="list-decimal pl-6 space-y-2">
           <li>Choose the quantity of names generated per batch (1–24).</li>
           <li>Click <strong>Generate names</strong> to obtain a new selection of ape-inspired, uppercase-ready concepts.</li>

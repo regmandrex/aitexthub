@@ -18,7 +18,7 @@ const toolSlug = 'crew-name-generator';
 export async function generateMetadata(): Promise<Metadata> {
   return buildToolMeta({
     title: 'Crew Name Generator',
-    description: '[11] Free Crew Name Generator for crew and gang names. Create crew-style name ideas in your browser with no registration.',
+    description: 'Free Crew Name Generator for crew and gang names. Create crew-style name ideas in your browser with no registration.',
     seoTitle: 'Crew Name Generator – Gang & Crew Name Ideas',
     urlPath: `/${toolSlug}`,
   });
@@ -28,32 +28,32 @@ function createWriteUp() {
   return (
     <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
-        <h2>[12] Crew Name Generator – Gang, Clan &amp; Crew Names</h2>
-        <p>[13] A crew name acts as a banner. Whether it flies over a GTA Online crew, a Rocket League clan, a street racing team, a heist gang in your story, or a Discord friend group, the name declares the group&apos;s attitude before anyone sees a single member. This Crew Name Generator constructs crew, gang, and clan names in that spirit — blending sharp nouns, colors, city references, and edge so you land on something that sounds tight and territorial. It operates entirely within your browser, needs no registration, and gives you 1–24 names per run.</p>
-        <p>[14] Whether you are establishing a gaming crew or clan, naming a gang for a story or role-play, branding a car meet or racing team, or simply labeling a squad of friends, the generator gives you a swift pool of ideas to rally under. The guide below outlines what makes crew names stick — the tone, the tag, and the identity — so the name you select reads like a real crew, not a random pair of words.</p>
+        <h2>Crew Name Generator – Gang, Clan &amp; Crew Names</h2>
+        <p>A crew name acts as a banner. Whether it flies over a GTA Online crew, a Rocket League clan, a street racing team, a heist gang in your story, or a Discord friend group, the name declares the group&apos;s attitude before anyone sees a single member. This Crew Name Generator constructs crew, gang, and clan names in that spirit — blending sharp nouns, colors, city references, and edge so you land on something that sounds tight and territorial. It operates entirely within your browser, needs no registration, and gives you 1–24 names per run.</p>
+        <p>Whether you are establishing a gaming crew or clan, naming a gang for a story or role-play, branding a car meet or racing team, or simply labeling a squad of friends, the generator gives you a swift pool of ideas to rally under. The guide below outlines what makes crew names stick — the tone, the tag, and the identity — so the name you select reads like a real crew, not a random pair of words.</p>
 
-        <h2>[15] What Makes a Great Crew Name</h2>
-        <p>[16] Crew names live and die on a few traits. Grasping them helps you turn a generated idea into a banner people want to fly:</p>
+        <h2>What Makes a Great Crew Name</h2>
+        <p>Crew names live and die on a few traits. Grasping them helps you turn a generated idea into a banner people want to fly:</p>
         <ul>
-          <li>[17] <strong>A clear tone.</strong> Intimidating, sleek, humorous, or prestigious — the title ought to telegraph the entire group's atmosphere immediately. An organization named &quot;Midnight Syndicate&quot; sets an entirely contrasting tone compared to something labeled &quot;Chaos Squad.&quot;</li>
-          <li>[18] <strong>A short tag or abbreviation.</strong> Great crew names shorten neatly to a 2–4 letter clan tag that fits next to a username in-game — [NGT], [VLT], [666].</li>
-          <li>[19] <strong>A shared identity.</strong> The finest names give members something to belong to — a color, a symbol, a territory, an attitude everyone shares.</li>
+          <li><strong>A clear tone.</strong> Intimidating, sleek, humorous, or prestigious — the title ought to telegraph the entire group's atmosphere immediately. An organization named &quot;Midnight Syndicate&quot; sets an entirely contrasting tone compared to something labeled &quot;Chaos Squad.&quot;</li>
+          <li><strong>A short tag or abbreviation.</strong> Great crew names shorten neatly to a 2–4 letter clan tag that fits next to a username in-game — [NGT], [VLT], [666].</li>
+          <li><strong>A shared identity.</strong> The finest names give members something to belong to — a color, a symbol, a territory, an attitude everyone shares.</li>
         </ul>
 
-        <h2>[20] The Clan Tag Matters just as Much as the Name</h2>
-        <p>[21] Across multiplayer arenas and competitive tournaments, picking a faction title is merely step one — the team tag represents the shorthand moniker team members actually display. Such tags are the tiny bracketed tokens appearing alongside an individual player's handle, meaning they must remain instantly recognizable when condensed onto an intense scoreboard. Whenever you settle on an AI-generated faction title, ensure it compresses naturally into a punchy 2–4 letter marker: &quot;Nightfall Order&quot; condenses to [NFO], while &quot;Vault&quot; strips down to [VLT]. Lacking an intuitive tag makes representing your crew far trickier, so give preference to outputs that trim down cleanly.</p>
+        <h2>The Clan Tag Matters just as Much as the Name</h2>
+        <p>Across multiplayer arenas and competitive tournaments, picking a faction title is merely step one — the team tag represents the shorthand moniker team members actually display. Such tags are the tiny bracketed tokens appearing alongside an individual player's handle, meaning they must remain instantly recognizable when condensed onto an intense scoreboard. Whenever you settle on an AI-generated faction title, ensure it compresses naturally into a punchy 2–4 letter marker: &quot;Nightfall Order&quot; condenses to [NFO], while &quot;Vault&quot; strips down to [VLT]. Lacking an intuitive tag makes representing your crew far trickier, so give preference to outputs that trim down cleanly.</p>
 
-        <h2>[22] Crew Names by Type</h2>
-        <p>[23] The sort of group you are naming should guide which generated names you keep:</p>
+        <h2>Crew Names by Type</h2>
+        <p>The sort of group you are naming should guide which generated names you keep:</p>
         <ul>
-          <li>[24] <strong>Gaming clan / esports crew.</strong> Snappy, competitive, easily abbreviated handles — &quot;Vanguard,&quot; &quot;Ascend,&quot; &quot;Nemesis&quot; — that stand out proudly atop the competitive rankings.</li>
-          <li>[25] <strong>Street gang / GTA crew.</strong> Aggressive, territorial monikers — featuring turf references, distinctive shades, and raw danger — tailor-made for an open-world syndicate.</li>
+          <li><strong>Gaming clan / esports crew.</strong> Snappy, competitive, easily abbreviated handles — &quot;Vanguard,&quot; &quot;Ascend,&quot; &quot;Nemesis&quot; — that stand out proudly atop the competitive rankings.</li>
+          <li><strong>Street gang / GTA crew.</strong> Aggressive, territorial monikers — featuring turf references, distinctive shades, and raw danger — tailor-made for an open-world syndicate.</li>
           <li><strong>Racing / car crew.</strong> High-speed, mechanical options like &quot;Redline,&quot; &quot;Nitro Kings,&quot; and &quot;Apex&quot; that fit an authentic street-racing atmosphere.</li>
           <li><strong>Heist / criminal crew (fiction).</strong> Sleek, professional titles that make your roster seem like experts instead of common thugs.</li>
           <li><strong>Friend group / casual squad.</strong> Lighthearted, self-deprecating monikers for circles that refuse to take themselves too seriously.</li>
         </ul>
 
-        <h2>[10] How to Use This Crew Name Generator</h2>
+        <h2>How to Use This Crew Name Generator</h2>
         <ol className="list-decimal pl-6 space-y-2">
           <li>Pick your preferred quantity of crew names for every single run (1–24).</li>
           <li>Press <strong>Generate names</strong> to produce a brand new set of crew, gang, and clan titles.</li>
@@ -71,7 +71,7 @@ function createWriteUp() {
         <h2>Guidelines for a Memorable Crew Name</h2>
         <p>Say it and tag it — a fantastic crew name sounds great shouted over voice chat and looks sharp abbreviated on any leaderboard. Keep it concise so it reads rapidly; extended names frequently get truncated or ignored. Match the vibe to your actual group, since an intimidating tag on a laid-back friend circle only works when it is a deliberate joke. Furthermore, verify that the moniker is not already an established clan or crew in your game, both to prevent confusion and because numerous titles block duplicate groups completely.</p>
 
-        <h2>[17] Common Mistakes to Avoid</h2>
+        <h2>Common Mistakes to Avoid</h2>
         <p>A few common mistakes can ruin an otherwise solid crew name. The first is selecting a title that lacks a clean clan tag, leaving your members with nothing brief to wear. The second is excessive length; titles that take too long to say or display never catch on. The third is a mismatch in tone — such as an elite esports handle on a casual squad, or vice versa. The fourth involves mirroring a famous group, which appears unoriginal and might trigger duplicate blocks. When evaluating your generated batch, prioritize options that remain concise, taggable, distinct, and appropriate in tone.</p>
 
         <h2>Privacy</h2>

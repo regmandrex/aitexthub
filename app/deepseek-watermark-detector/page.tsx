@@ -186,7 +186,7 @@ export async function generateMetadata() {
 export default function DeepseekWatermarkDetectorPage() {
   const writeUp = (
     <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 space-y-4 mt-10">
-      <h2 className="text-2xl font-semibold text-slate-900">[1] DeepSeek Watermark Detector: What It Is, How It Works, and How to Use It</h2>
+      <h2 className="text-2xl font-semibold text-slate-900">DeepSeek Watermark Detector: What It Is, How It Works, and How to Use It</h2>
       <p>Let&apos;s imagine a scenario. You possess a block of text - perhaps a support ticket answer, a blog draft, a student paper, or a &quot;totally original&quot; item description. Someone claims, &quot;It was written with DeepSeek,&quot; or perhaps you have your doubts. Then you encounter this term: DeepSeek Watermark Detector. Seems like an easy fix, doesn't it? Similar to checking a bill under ultraviolet light to reveal the hidden security thread.</p>
       <p>In reality, things are more complicated - though still helpful when you know what your test targets.</p>
       <p>A &quot;watermark detector&quot; generally aims to figure out if text came from a watermarking method - a deliberate statistical trend built into an AI model's vocabulary selections. The main appeal is quite alluring: rather than guessing &quot;this sounds AI-ish,&quot; you spot a signal acting more like a distinct fingerprint. However, here lies the problem: not all models employ watermarks, not all services activate them, and not all detectors actually spot a watermark (some are merely standard AI classifiers in disguise).</p>
@@ -198,7 +198,7 @@ export default function DeepseekWatermarkDetectorPage() {
       </ul>
       <p>This guide explores the actual mechanics - without any hype or confusion. We will discuss what a watermark is (and is not), the conceptual basis of watermark detection, factors that make outputs dependable or deceptive, and proper ways to utilize detection. For developers, this provides a conceptual framework for creating and testing a detector so you avoid relying on an arbitrary confidence score as if it were a television lie detector.</p>
 
-      <h3 className="text-xl font-semibold text-slate-900">[2] Why &quot;Watermark Detection&quot; Suddenly Matters for AI Text</h3>
+      <h3 className="text-xl font-semibold text-slate-900">Why &quot;Watermark Detection&quot; Suddenly Matters for AI Text</h3>
       <p>Far from being an amusing technical novelty, synthetic prose has integrated itself into foundational operations. Workers depend on systems like this to compose communications, annotate program lines, create advertising copy, distill conferences, or explore concepts during late-night creative blocks. Naturally, this explosion triggers an obvious concern: authenticity. Put simply, who originally authored these words?</p>
       <p>Furthermore, provenance holds importance across several scenarios:</p>
       <ul className="list-disc list-inside space-y-1 text-slate-700">
@@ -247,7 +247,7 @@ export default function DeepseekWatermarkDetectorPage() {
       <h3 className="text-xl font-semibold text-slate-900">What Individuals Mean by &quot;DeepSeek Watermark&quot;</h3>
       <p>This is the point where matters get interesting, because the term &quot;DeepSeek watermark&quot; can refer to several distinct concepts depending on the speaker.</p>
       <h4 className="text-lg font-semibold text-slate-900">Could it be a model watermark, a platform watermark, or a copy and paste artifact?</h4>
-      <p>[3] There are three realistic interpretations:</p>
+      <p>There are three realistic interpretations:</p>
       <ul className="list-disc list-inside space-y-1 text-slate-700">
         <li>Model-level watermarking: The model incorporates a statistical watermark while generating text.</li>
         <li>Platform-level tagging: A platform adds metadata, hidden characters, or tracking logs.</li>
@@ -302,8 +302,8 @@ export default function DeepseekWatermarkDetectorPage() {
       <p>Should you lack the key, heuristic detection might still be attempted, though it proves weaker and simpler to deceive or misconstrue.</p>
       <p>This explains why a &quot;DeepSeek Watermark Detector&quot; can represent a perplexing product class. When the watermark lacks public specification—or when the generator applied no watermark at all—the checker functions as a standard AI classifier instead of a genuine watermark validator.</p>
 
-      <h3 className="text-xl font-semibold text-slate-900">[4] Detector Types You&apos;ll See in the Wild</h3>
-      <p>[5] Let&apos;s categorize what is out there, because the label on the box rarely matches what is inside.</p>
+      <h3 className="text-xl font-semibold text-slate-900">Detector Types You&apos;ll See in the Wild</h3>
+      <p>Let&apos;s categorize what is out there, because the label on the box rarely matches what is inside.</p>
       <ol className="list-decimal list-inside space-y-1 text-slate-700">
         <li><strong>Keyed watermark detectors:</strong> Rely on a recognized scheme, a known key, and specific tokenization rules. They prove dependable on extended, unedited passages, though they remain infrequently open to the public.</li>
         <li><strong>Heuristic watermark detectors:</strong> Search for abnormal token frequency skews or distributional quirks without utilizing a key. These exhibit a higher rate of false positives.</li>
@@ -315,7 +315,7 @@ export default function DeepseekWatermarkDetectorPage() {
         <li>Heuristic-based detectors fall short when topics are specific or when writing resembles model output.</li>
         <li>Classifiers struggle against high-grade human composition, lightly altered AI text, or non-native writing styles.</li>
       </ul>
-      <p>[6] The most sensible approach avoids absolute reliance on any singular scanning utility. Instead, cross-reference distinct analytical markers and evaluate overall data with mature restraint rather than treating every readout as unquestionable truth.</p>
+      <p>The most sensible approach avoids absolute reliance on any singular scanning utility. Instead, cross-reference distinct analytical markers and evaluate overall data with mature restraint rather than treating every readout as unquestionable truth.</p>
 
       <h3 className="text-xl font-semibold text-slate-900">Step-by-Step: Practical Guide for Watermark Verification in Text</h3>
       <p>Now let's get down to business. You possess copy, you believe it might feature a DeepSeek-style watermark, and you wish to verify it accurately. This is where most individuals fail - not because the solutions are flawed, but due to careless methods.</p>
@@ -324,11 +324,11 @@ export default function DeepseekWatermarkDetectorPage() {
       <p>Prior to using any detector, perform these mundane yet essential reviews:</p>
       <ul className="list-disc list-inside space-y-1 text-slate-700">
         <li>Text length: Pieces under 300 to 500 words prove highly unreliable for watermarks. Short passages lack sufficient tokens for statistical bias to surface.</li>
-        <li>[7] Structural layout: Glitches during clipboard transfers - like converted curly quotes, omitted paragraph spacing, or altered markdown tokens - can distort algorithmic parsing. Always submit clean source text kept as identical to its native form as feasible.</li>
+        <li>Structural layout: Glitches during clipboard transfers - like converted curly quotes, omitted paragraph spacing, or altered markdown tokens - can distort algorithmic parsing. Always submit clean source text kept as identical to its native form as feasible.</li>
         <li>Editing history: Determine whether the text underwent paraphrasing, summarizing, translation, or human polishing. Each step degrades or erases watermark signals.</li>
       </ul>
-      <p>[8] Lacking these core prerequisites, zero analytical platforms - whether focused on DeepSeek or rival architectures - can deliver dependable findings. Verifying these basics first prevents an overwhelming share of erroneous attributions.</p>
-      <h4 className="text-lg font-semibold text-slate-900">[9] Running multiple tests without fooling yourself</h4>
+      <p>Lacking these core prerequisites, zero analytical platforms - whether focused on DeepSeek or rival architectures - can deliver dependable findings. Verifying these basics first prevents an overwhelming share of erroneous attributions.</p>
+      <h4 className="text-lg font-semibold text-slate-900">Running multiple tests without fooling yourself</h4>
       <p>Among the major errors users commit is pasting identical writing into five apps and relying solely on the one supporting their bias. That represents confirmation bias disguised as science.</p>
       <p>A superior workflow follows this structure:</p>
       <ul className="list-disc list-inside space-y-1 text-slate-700">
@@ -365,7 +365,7 @@ export default function DeepseekWatermarkDetectorPage() {
       <h4 className="text-lg font-semibold text-slate-900">Mixed-authorship problem</h4>
       <p>Many current texts consist of:</p>
       <ul className="list-disc list-inside space-y-1 text-slate-700">
-        <li>[10] AI drafts edited by humans</li>
+        <li>AI drafts edited by humans</li>
         <li>AI-generated text expanded by humans</li>
         <li>Human input combined with multiple AI passes</li>
       </ul>

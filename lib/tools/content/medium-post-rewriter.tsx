@@ -16,7 +16,7 @@ function WriteUp() {
         <h3>Frequent AI Writing Patterns Found in Medium Articles</h3>
         <p>AI-generated medium post tends to: employ an excessively formal register failing to match the conversational tone expected by the format; cover every relevant point systematically rather than focusing on emotional resonance; use generic transitional phrases acting as boilerplate instead of a genuine voice; and miss specific cultural references, inside jokes, and community expressions that make specialized content feel authentic.</p>
 
-        <h2>[10] Instructions For The Medium Post Rewriter</h2>
+        <h2>Instructions For The Medium Post Rewriter</h2>
         <p>Drop your AI-crafted text into the submission area. Press Humanize. The utility parses your text and generates a natural-sounding human equivalent. Check the result ” always check AI-processed material prior to publishing ” and modify any parts that do not fit your exact requirements. The procedure finishes in under ten seconds for most texts.</p>
 
         <h2>Key Features</h2>

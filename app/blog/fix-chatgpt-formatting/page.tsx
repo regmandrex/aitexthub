@@ -190,7 +190,7 @@ export default function FixChatGPTFormattingPage() {
             { q: 'Can rankings be affected by formatting issues?', a: 'Indeed. Poor accessibility and reduced UX metrics from bad formatting can affect SEO.' },
             { q: 'Is it secure to remove all formatting?', a: 'Yes. Reapply necessary formatting natively within your publishing tool.' },
             { q: 'Does cleaning alter the meaning of the content?', a: 'No. Cleaning improves compatibility and structure while maintaining meaning.' },
-            { q: '[1] Is it necessary to repair formatting constantly?', a: '[2] For external materials, definitely. A consistent process avoids repeated problems.' },
+            { q: 'Is it necessary to repair formatting constantly?', a: 'For external materials, definitely. A consistent process avoids repeated problems.' },
           ].map((item) => (
             <div key={item.q} className="rounded-2xl border-3 border-black bg-white/60 p-4 text-sm text-slate-700 shadow-neo-sm">
               <p className="font-semibold text-slate-900">{item.q}</p>
@@ -202,10 +202,10 @@ export default function FixChatGPTFormattingPage() {
 
       <section className="mt-10 space-y-3">
         <h2 className="text-2xl font-semibold text-slate-900">Final thoughts</h2>
-        <p className="text-slate-700">[3] ChatGPT drafts strong foundational text, yet its output formatting demands refinement before going live. Broken headings, corrupted bullet points, and erratic padding damage user satisfaction, undermine credibility, degrade SEO, and potentially hurt page speed. Sanitize your text first, then reapply structural styling cleanly to guarantee solid, professional layouts.</p>
+        <p className="text-slate-700">ChatGPT drafts strong foundational text, yet its output formatting demands refinement before going live. Broken headings, corrupted bullet points, and erratic padding damage user satisfaction, undermine credibility, degrade SEO, and potentially hurt page speed. Sanitize your text first, then reapply structural styling cleanly to guarantee solid, professional layouts.</p>
         <div className="rounded-2xl border border-brand-100 bg-brand-50 p-4 text-sm text-brand-800">
           <p className="font-semibold">Make formatting predictable.</p>
-          <p>[4] Sanitize your copy using the <Link href="/">ChatGPT Text Cleaner</Link>, then transfer it to your publishing platform to apply styling natively. Whenever erratic punctuation disrupts your design, run everything through the{' '} <Link href="/em-dash-remover">Em Dash Remover</Link> beforehand.</p>
+          <p>Sanitize your copy using the <Link href="/">ChatGPT Text Cleaner</Link>, then transfer it to your publishing platform to apply styling natively. Whenever erratic punctuation disrupts your design, run everything through the{' '} <Link href="/em-dash-remover">Em Dash Remover</Link> beforehand.</p>
         </div>
       </section>
 

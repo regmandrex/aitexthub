@@ -36,22 +36,22 @@ function createWriteUp() {
         <p>Berk human residents receive names within a recognizable Norse register, blended with the franchise's unique comedic flair. Grasping this structure enables you to produce titles sounding natural to the Hairy Hooligan Tribe rather than randomly assembled:</p>
         <ul>
           <li><strong>Old Norse roots.</strong> Valka, Astrid, Stoick, Eret, and Gobber display the consonant-heavy, harsh cadence typical of Scandinavian names. Strong vowel pairings and clusters like &quot;th,&quot; &quot;gr,&quot; and &quot;st&quot; instantly read as authentic Viking.</li>
-          <li>[1] <strong>Blunt, descriptive epithets.</strong> Clan members in HTTYD pick up honorifics that describe them completely: Stoick the Vast, Hiccup the Useful, Snotlout. Such nicknames frequently spotlight an obvious build, a legendary triumph, or an embarrassing shortcoming without any sugarcoating.</li>
-          <li>[2] <strong>Comedic, even insulting given names.</strong> &quot;Hiccup&quot; and &quot;Snotlout&quot; carry little glory — the running joke remains that Viking clans labeled weaker offspring and troublemakers to ward off subterranean beasts and trolls. Quirky, offbeat monikers belong firmly in the setting.</li>
-          <li>[3] <strong>Compound and twin names.</strong> Fishlegs, Tuffnut, and Ruffnut showcase the way two ordinary terms fuse into a single tough handle, alongside how brothers and sisters often share rhyming or complementary titles (Tuff/Ruff).</li>
+          <li><strong>Blunt, descriptive epithets.</strong> Clan members in HTTYD pick up honorifics that describe them completely: Stoick the Vast, Hiccup the Useful, Snotlout. Such nicknames frequently spotlight an obvious build, a legendary triumph, or an embarrassing shortcoming without any sugarcoating.</li>
+          <li><strong>Comedic, even insulting given names.</strong> &quot;Hiccup&quot; and &quot;Snotlout&quot; carry little glory — the running joke remains that Viking clans labeled weaker offspring and troublemakers to ward off subterranean beasts and trolls. Quirky, offbeat monikers belong firmly in the setting.</li>
+          <li><strong>Compound and twin names.</strong> Fishlegs, Tuffnut, and Ruffnut showcase the way two ordinary terms fuse into a single tough handle, alongside how brothers and sisters often share rhyming or complementary titles (Tuff/Ruff).</li>
         </ul>
 
-        <h2>[4] How Dragon Names Work in How to Train Your Dragon</h2>
-        <p>[5] Dragon names follow a completely different rule from Viking names: they are descriptions, not heritage. A rider looks at the creature and names the most obvious trait, ability, or quirk:</p>
+        <h2>How Dragon Names Work in How to Train Your Dragon</h2>
+        <p>Dragon names follow a completely different rule from Viking names: they are descriptions, not heritage. A rider looks at the creature and names the most obvious trait, ability, or quirk:</p>
         <ul>
-          <li>[24] <strong>Appearance-based.</strong> Toothless (his teeth retract), Hookfang (curved tusks), Meatlug (a stout, lumpy Gronckle), Skullcrusher — the moniker serves as a direct mirror of the beast&apos;s physical presence.</li>
-          <li>[25] <strong>Ability-based.</strong> Stormfly darts quickly while launching sharp quills; Cloudjumper navigates deep fog banks; Barf and Belch, the two-headed Zippleback, earned their titles because one snout exhales volatile vapor while the other sparks the flame.</li>
+          <li><strong>Appearance-based.</strong> Toothless (his teeth retract), Hookfang (curved tusks), Meatlug (a stout, lumpy Gronckle), Skullcrusher — the moniker serves as a direct mirror of the beast&apos;s physical presence.</li>
+          <li><strong>Ability-based.</strong> Stormfly darts quickly while launching sharp quills; Cloudjumper navigates deep fog banks; Barf and Belch, the two-headed Zippleback, earned their titles because one snout exhales volatile vapor while the other sparks the flame.</li>
           <li><strong>Fused characteristic terms.</strong> Pairing two tangible words together — like Cloud + jumper, Storm + fly, or Skull + crusher — forms the vast majority of dragon names, establishing an authentic &quot;Berk dragon&quot; feel instead of an ordinary fantasy creature.</li>
           <li><strong>Endearing or playful.</strong> Bond-names can stay sweet or humorous despite a beast's ferocity — Meatlug as well as Toothless belong to deadly breeds yet carry distinctly loving names.</li>
         </ul>
 
-        <h2>[10] Naming by Dragon Species and Class</h2>
-        <p>[11] How to Train Your Dragon sorts dragons into species, each with a distinct look and temperament, and matching a name to a species makes an OC dragon instantly more believable:</p>
+        <h2>Naming by Dragon Species and Class</h2>
+        <p>How to Train Your Dragon sorts dragons into species, each with a distinct look and temperament, and matching a name to a species makes an OC dragon instantly more believable:</p>
         <ul>
           <li><strong>Night Fury.</strong> The breed of Toothless — dark, aerodynamic, quiet, firing blasts of plasma. Titles should evoke rapid movement and deep shadows.</li>
           <li><strong>Deadly Nadder.</strong> The breed of Stormfly — vibrant, quill-covered, proud, sporting tail-launched spines. Sharp-sounding, colorful titles work best.</li>
@@ -59,21 +59,21 @@ function createWriteUp() {
           <li><strong>Gronckle.</strong> The breed of Meatlug — stout, sluggish, spewing molten rock, yet remarkably sweet. Chunky, blunt, endearing titles fit nicely.</li>
           <li><strong>Hideous Zippleback.</strong> The breed of Barf and Belch — dual-headed, venting flammable gas alongside an igniting spark. These virtually always require twin titles operating as a pair.</li>
         </ul>
-        <p>[17] Pick a species first, then generate a batch and keep the names whose sound matches its class and temperament. A stealthy Night Fury and a hot-headed Monstrous Nightmare should not share the same kind of name, even though both are &quot;HTTYD-style.&quot;</p>
+        <p>Pick a species first, then generate a batch and keep the names whose sound matches its class and temperament. A stealthy Night Fury and a hot-headed Monstrous Nightmare should not share the same kind of name, even though both are &quot;HTTYD-style.&quot;</p>
 
-        <h2>[18] Building an Original Character (OC) Viking</h2>
+        <h2>Building an Original Character (OC) Viking</h2>
         <p>Whether writing fanfic, creating art, or doing role-play, viewers form an initial impression from an OC Viking&apos;s name. A well-crafted Berk Viking name fulfills two key roles: echoing Old Norse roots while offering a blunt, descriptive twist true to tribal humor. Produce a list, then consider: could someone bellow this across the Great Hall alongside Stoick and Gobber without jarring the ears? If it fits, you have hit the target tone.</p>
         <p>A dependable method unites a stout personal name with an earned moniker — such as &quot;Bjorn the Stubborn,&quot; &quot;Sigrid the Loud,&quot; or &quot;Halvard the Half-Bearded.&quot; This epithet provides the perfect outlet for Norse humor: highlight a personal defect, a physical quirk, or an infamous blunder rather than pure victory. Should your OC serve as lighthearted comic relief like Snotlout or Fishlegs, a slightly clumsy title builds deeper character than an entire paragraph of exposition.</p>
 
-        <h2>[21] Building an Original Character (OC) Dragon</h2>
+        <h2>Building an Original Character (OC) Dragon</h2>
         <p>Coming up with an OC dragon name demands the reverse strategy of a Viking: focus on its physical build rather than family history. Settle on a species and highlight its single most memorable attribute — a spiky crest, a parted tail, a tendency to hum — and craft the title to reflect it. Every official dragon was designated this way, explaining why &quot;Frostquill&quot; or &quot;Emberhide&quot; sounds immediately like a Berk dragon whereas an elven fantasy name feels completely alien.</p>
         <p>Whenever an OC dragon belongs to a human partner, think about how that particular handler would title it. A battle-hardened fighter might favor a fierce, direct label (Skullcrusher); an affectionate tamer could settle on something warm and goofy (Meatlug). The final choice needs to honor both the dragon&apos;s physical traits and the personality of its human — that mutual connection makes any bond-name feel deeply authentic instead of casually applied.</p>
 
-        <h2>[10] How to Use This HTTYD Name Generator</h2>
+        <h2>How to Use This HTTYD Name Generator</h2>
         <ol className="list-decimal pl-6 space-y-2">
           <li>Choose the quantity of names generated per batch (1–24).</li>
-          <li>[24] Click <strong>Generate names</strong> to get a fresh batch of Berk-style Viking and dragon names.</li>
-          <li>[25] Skim for names that fit your chosen Viking tribe role or dragon species, then use the Copy button to save the whole list.</li>
+          <li>Click <strong>Generate names</strong> to get a fresh batch of Berk-style Viking and dragon names.</li>
+          <li>Skim for names that fit your chosen Viking tribe role or dragon species, then use the Copy button to save the whole list.</li>
           <li>Drop these into your art caption, story notes, or character sheet, and narrow down your top picks.</li>
           <li>Run the generator again for additional selections — there are zero restrictions, no login required, and zero downloads needed.</li>
         </ol>

@@ -2495,7 +2495,7 @@ export const toolPages: ToolPage[] = [
   {
     slug: 'god-goddess-name-generator',
     title: 'God & Goddess Name Generator',
-    description: '[21] Generate god and goddess names with meanings. Pick a culture (Greek, Norse, Egyptian, Roman) and receive deity monikers for fiction, games, and storytelling.',
+    description: 'Generate god and goddess names with meanings. Pick a culture (Greek, Norse, Egyptian, Roman) and receive deity monikers for fiction, games, and storytelling.',
     seoTitle: 'God & Goddess Name Generator - Deity Names With Meaning',
     category: 'generator',
   },

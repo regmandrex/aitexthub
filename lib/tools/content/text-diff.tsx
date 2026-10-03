@@ -5,23 +5,23 @@ function WriteUp() {
   return (
     <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
-        <h2>[6] Text Diff: Free Online Side-by-Side Text Comparison and Difference Finder</h2>
-        <p>[7] Evaluating changes between text sources "" checking configuration revisions before and after updates, inspecting divergent drafts that require consolidation, auditing code adjustments against existing branches, or verifying localized copy alongside source text "" forms an indispensable workflow across engineering, technical documentation, and web authoring. Our free web-based text diff utility clarifies precisely where text segments differ via an intuitive visual comparison that operates at line and character resolution, marking fresh insertions in green while showing removed lines in red.</p>
-        <p>[8] All processing operates completely client-side in your web browser "" your text is never uploaded to any remote system. Drop two blocks of text into the interface, execute the comparison, and instantly inspect added phrases, dropped words, and changed lines clearly highlighted. Toggle smoothly between a split-screen layout (viewing two text panels parallel to each other) or a unified representation (displaying an integrated chronological view, similar to a standard git diff command). It handles all types of source material: programming code, system files, long-form articles, debug logs, JSON payloads, YAML configurations, CSV data, and beyond.</p>
+        <h2>Text Diff: Free Online Side-by-Side Text Comparison and Difference Finder</h2>
+        <p>Evaluating changes between text sources "" checking configuration revisions before and after updates, inspecting divergent drafts that require consolidation, auditing code adjustments against existing branches, or verifying localized copy alongside source text "" forms an indispensable workflow across engineering, technical documentation, and web authoring. Our free web-based text diff utility clarifies precisely where text segments differ via an intuitive visual comparison that operates at line and character resolution, marking fresh insertions in green while showing removed lines in red.</p>
+        <p>All processing operates completely client-side in your web browser "" your text is never uploaded to any remote system. Drop two blocks of text into the interface, execute the comparison, and instantly inspect added phrases, dropped words, and changed lines clearly highlighted. Toggle smoothly between a split-screen layout (viewing two text panels parallel to each other) or a unified representation (displaying an integrated chronological view, similar to a standard git diff command). It handles all types of source material: programming code, system files, long-form articles, debug logs, JSON payloads, YAML configurations, CSV data, and beyond.</p>
 
-        <h2>[9] What Is a Text Diff?</h2>
-        <p>[10] Known colloquially as a "diff" (short for difference), this format captures the exact textual divergence separating two versions of a document or string. This methodology originates from the classic Unix <code>diff</code> utility created in 1974, which evaluates two distinct files to compute the exact adjustments necessary to convert the initial text into the subsequent revision. The resulting delta layout came to serve as the structural backbone supporting contemporary version management utilities and coordinated authoring systems.</p>
+        <h2>What Is a Text Diff?</h2>
+        <p>Known colloquially as a "diff" (short for difference), this format captures the exact textual divergence separating two versions of a document or string. This methodology originates from the classic Unix <code>diff</code> utility created in 1974, which evaluates two distinct files to compute the exact adjustments necessary to convert the initial text into the subsequent revision. The resulting delta layout came to serve as the structural backbone supporting contemporary version management utilities and coordinated authoring systems.</p>
         <p>Most comparison engines, including our web-based tool, rely fundamentally on the Longest Common Subsequence (LCS) algorithm to discover the greatest chain of lines (or characters) maintaining identical relative order across both documents. Any line omitted from this LCS gets flagged as an insertion (found in the newer text rather than the original) or a removal (present in the previous text but absent afterwards).</p>
         <p>Modern diff implementations leverage specialized optimizations and variants of the LCS algorithm for streamlined processing of extensive files: Eugene Myers' O(ND) diff algorithm, git's Patience diff algorithm, along with the Histogram diff algorithm (utilized within git on particular file formats). Each approach outputs slightly distinct results from identical inputs, balancing raw speed against how intuitively human readers can digest the output.</p>
 
-        <h2>[13] Understanding Diff Output Formats</h2>
+        <h2>Understanding Diff Output Formats</h2>
 
         <h3>Side-by-Side Diff</h3>
         <p>A side-by-side view positions the original copy along the left and updated content along the right, keeping equivalent lines aligned horizontally. Any edited lines show up across both columns featuring character-level changes highlighted right within the text. Insertions appear solely on the right pane, while deletions remain exclusive to the left side. Selecting this perspective offers the clearest appreciation of overall context and the direct relationships connecting both fragments.</p>
 
         <h3>Unified Diff</h3>
         <p>Presenting changes in a single column alongside surrounding rows, the unified diff format (used by git diff) keeps readers situated. Rows starting with <code>+</code> represent inserted text; rows starting with <code>-</code> denote removed content; and rows beginning with a blank space supply context (unchanged). These context rows preserve surrounding baseline material, letting viewers pinpoint the exact position where each change occurs in the file.</p>
-        <p>[16] A typical unified diff chunk looks like:</p>
+        <p>A typical unified diff chunk looks like:</p>
         <pre>{`@@ -10,7 +10,8 @@
  function calculateTotal(items) {
 -  let total = 0;
@@ -32,19 +32,19 @@ function WriteUp() {
    }
 +  return parseFloat(total.toFixed(2));
  }`}</pre>
-        <p>[17] The <code>@@</code> hunk header <code>-10,7 +10,8</code> means: starting at line 10 in the original file (7 lines shown), starting at line 10 in the new file (8 lines shown).</p>
+        <p>The <code>@@</code> hunk header <code>-10,7 +10,8</code> means: starting at line 10 in the original file (7 lines shown), starting at line 10 in the new file (8 lines shown).</p>
 
         <h3>Inline Diff (Character-Level)</h3>
-        <p>[18] Character-level diffing highlights changes within individual lines rather than just showing entire lines as added or removed. This is invaluable when lines differ by only a single character "" a typo, a number change, a renamed variable "" where showing the entire line as changed would obscure the small but critical difference.</p>
-        <p>[19] Our tool performs character-level diffing within changed lines by default, similar to how GitHub highlights intra-line differences in pull request reviews.</p>
+        <p>Character-level diffing highlights changes within individual lines rather than just showing entire lines as added or removed. This is invaluable when lines differ by only a single character "" a typo, a number change, a renamed variable "" where showing the entire line as changed would obscure the small but critical difference.</p>
+        <p>Our tool performs character-level diffing within changed lines by default, similar to how GitHub highlights intra-line differences in pull request reviews.</p>
 
-        <h2>[20] Myers Diff Algorithm: The Foundation of git diff</h2>
+        <h2>Myers Diff Algorithm: The Foundation of git diff</h2>
         <p>First outlined by Eugene Myers in 1986, the O(ND) difference algorithm identifies the shortest edit script: the minimal collection of additions and deletions required to convert an original text into a target string. Achieving this shortest edit script mirrors the LCS methodology, because as two documents exhibit greater overlap, their necessary edit script contracts.</p>
-        <p>[22] Git uses the Myers algorithm by default (<code>git diff --diff-algorithm=myers</code>). Other algorithms git supports:</p>
+        <p>Git uses the Myers algorithm by default (<code>git diff --diff-algorithm=myers</code>). Other algorithms git supports:</p>
         <ul>
           <li><strong>Patience</strong>: isolates unique lines present exactly once throughout both documents, establishing them as anchor points to structure comparisons. Generates cleaner, more legible diffs when reviewing restructured source code. Invoke it by running <code>git diff --patience</code>.</li>
-          <li>[24] <strong>Histogram</strong>: an extension of Patience that handles low-occurrence lines more efficiently. Generally recommended over Patience for code. Use with <code>git diff --histogram</code>.</li>
-          <li>[25] <strong>Minimal</strong>: produces the absolute minimum edit distance, often at the cost of readability. Use with <code>git diff --minimal</code>.</li>
+          <li><strong>Histogram</strong>: an extension of Patience that handles low-occurrence lines more efficiently. Generally recommended over Patience for code. Use with <code>git diff --histogram</code>.</li>
+          <li><strong>Minimal</strong>: produces the absolute minimum edit distance, often at the cost of readability. Use with <code>git diff --minimal</code>.</li>
         </ul>
         <p>Our utility relies on the Myers algorithm for line-level diff alongside a custom character-level technique for intra-line highlighting.</p>
 
@@ -99,10 +99,10 @@ function WriteUp() {
         <h3>Whitespace Handling</h3>
         <p>Code diffs frequently generate clutter from whitespace adjustments, including tab-to-space conversions, restyling, and extra trailing newlines. Our utility provides whitespace normalization settings:</p>
         <ul>
-          <li>[1] <strong>Ignore all whitespace</strong>: regards differences consisting solely of whitespace as no change</li>
-          <li>[2] <strong>Ignore leading whitespace</strong>: helpful for indentation adjustments (re-indented code blocks)</li>
-          <li>[3] <strong>Ignore trailing whitespace</strong>: disregards trailing space and tab variations</li>
-          <li>[4] <strong>Ignore empty lines</strong>: considers added or removed blank lines as no modification</li>
+          <li><strong>Ignore all whitespace</strong>: regards differences consisting solely of whitespace as no change</li>
+          <li><strong>Ignore leading whitespace</strong>: helpful for indentation adjustments (re-indented code blocks)</li>
+          <li><strong>Ignore trailing whitespace</strong>: disregards trailing space and tab variations</li>
+          <li><strong>Ignore empty lines</strong>: considers added or removed blank lines as no modification</li>
         </ul>
 
         <h3>Case Sensitivity</h3>
@@ -116,16 +116,16 @@ function WriteUp() {
           every line appear changed. Our tool normalizes line endings before comparison by default.
         </p>
 
-        <h2>[7] Semantic Diff vs Syntactic Diff</h2>
-        <p>[8] Standard text diff is syntactic "” it compares text character-by-character and line-by-line without understanding the meaning of the content. Semantic diff understands the structure of the content type and compares meaning:</p>
+        <h2>Semantic Diff vs Syntactic Diff</h2>
+        <p>Standard text diff is syntactic "” it compares text character-by-character and line-by-line without understanding the meaning of the content. Semantic diff understands the structure of the content type and compares meaning:</p>
         <ul>
           <li><strong>JSON semantic diff</strong>: acknowledges that key sequencing inside an object carries no weight, while array sequence remains critical. Accordingly, two separate JSON entities containing matching key-value pairs arranged in differing sequence are semantically identical.</li>
-          <li>[10] <strong>XML/HTML semantic diff</strong>: understands attribute order is irrelevant, namespace prefixes are interchangeable with consistent declarations, and equivalent empty element forms (<code>&lt;br/&gt;</code> vs <code>&lt;br&gt;&lt;/br&gt;</code>) are the same.</li>
-          <li>[11] <strong>AST diff (code diff)</strong>: compares Abstract Syntax Trees of parsed code, finding semantic refactors (variable renaming) vs behavioral changes (logic modification).</li>
+          <li><strong>XML/HTML semantic diff</strong>: understands attribute order is irrelevant, namespace prefixes are interchangeable with consistent declarations, and equivalent empty element forms (<code>&lt;br/&gt;</code> vs <code>&lt;br&gt;&lt;/br&gt;</code>) are the same.</li>
+          <li><strong>AST diff (code diff)</strong>: compares Abstract Syntax Trees of parsed code, finding semantic refactors (variable renaming) vs behavioral changes (logic modification).</li>
         </ul>
         <p>Because our utility handles a syntactic text diff, evaluating a JSON semantic diff requires reordering keys systematically (via our JSON formatter) on both payloads prior to comparison; doing so eliminates false discrepancies stemming purely from key ordering.</p>
 
-        <h2>[13] Diff Output in Code Review Workflows</h2>
+        <h2>Diff Output in Code Review Workflows</h2>
 
         <h3>Pull Request Reviews</h3>
         <p>Code review platforms like GitHub, GitLab, and Bitbucket summarize merge requests using visual diffs marked with identical green/red highlights to our tool. Reviewing patches efficiently accelerates team workflows: focus first on altered complex logic, inspect the change delta for conceptual defects instead of scanning untouched regions, and rely on character-level highlighting to catch subtle bugs like off-by-one errors or swapped variable names.</p>
@@ -133,15 +133,15 @@ function WriteUp() {
         <h3>Patch Files</h3>
         <p>Software engineers frequently rely on the unified diff format when generating patch files: plain text records detailing changes that can alter one version of a file into another using the <code>patch</code> command. Our application can construct patch-compliant outputs that you can easily download and apply via <code>patch -p0 &lt; changes.patch</code>.</p>
 
-        <h2>[16] Measuring Diff Complexity: Edit Distance Metrics</h2>
-        <p>[17] The edit distance between two texts can be measured in several ways:</p>
+        <h2>Measuring Diff Complexity: Edit Distance Metrics</h2>
+        <p>The edit distance between two texts can be measured in several ways:</p>
         <ul>
           <li><strong>Levenshtein distance</strong>: quantifies the fewest edits, removals, or replacements required when converting a string to a new one. Applied per character across text, and per line across documents.</li>
           <li><strong>Hamming distance</strong>: tracks how many index positions mismatch across two strings of identical length. The calculation is restricted strictly to text strings sharing the same character length.</li>
           <li><strong>Jaro-Winkler distance</strong>: calculates a normalized similarity metric between 0 and 1, fine-tuned specifically for brief inputs such as proper names. Unused for standard file diff, it excels at fuzzy matching tasks.</li>
           <li><strong>Diff hunk count</strong>: represents the overall volume of distinct modified sections throughout a comparison. An extensive spread of compact hunks often indicates minor formatting updates, whereas few broad hunks indicate substantive, targeted updates.</li>
         </ul>
-        <p>[22] Our tool displays statistics: lines added, lines removed, characters changed, percentage similarity "” giving you a quantitative sense of how different the two texts are.</p>
+        <p>Our tool displays statistics: lines added, lines removed, characters changed, percentage similarity "” giving you a quantitative sense of how different the two texts are.</p>
 
         <h2>Privacy and Performance</h2>
         <p>Every step of the text evaluation occurs locally inside your browser through client-side JavaScript. None of your submitted content is ever transferred over the network to our servers. Because algorithms execute strictly on your device, this approach guarantees privacy when inspecting confidential documents, proprietary source code, personal communications, or any sensitive content. We enforce zero server-side size barriers; the only ceiling depends on your browser's available memory (our tool handles files up to several megabytes without issues).</p>
@@ -154,7 +154,7 @@ function WriteUp() {
 const faqs: FaqItem[] = [
   {
     category: 'General',
-    question: '[25] What is a text diff tool?',
+    question: 'What is a text diff tool?',
     answer:
       'A text diff utility analyzes two text blocks and flags the changes--additions in green, deletions in red, and edits--via a diff algorithm. It displays precise alterations between both inputs, providing instant visibility instead of manual checking.',
   },
@@ -286,7 +286,7 @@ const faqs: FaqItem[] = [
   },
   {
     category: 'General',
-    question: '[25] What is a text diff tool?',
+    question: 'What is a text diff tool?',
     answer:
       'A text diff utility evaluates two text blocks and emphasizes their discrepancies &#8212; pointing out which characters, lines, or words were altered, deleted, or inserted. This complimentary web-based text diff program executes word-level analysis while coloring deletions in red and additions in green. It proves valuable for verifying edited material, reviewing source code modifications, comparing document editions, and performing audits on revisions.',
   },
