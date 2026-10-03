@@ -35,6 +35,16 @@ const newFaqItems = [
   },
   {
     category: 'Text Cleaner',
+    question: 'Is this GPT cleanup tool free to use?',
+    answer: 'Yes. The GPT cleanup tool on this page is free, needs no account, and has no word limit. It runs in your browser, so you can clean as many ChatGPT, Claude or Gemini drafts as you like and the text you paste is not uploaded to a server.',
+  },
+  {
+    category: 'Text Cleaner',
+    question: 'Does GPT cleanup change my wording?',
+    answer: 'No. GPT cleanup only touches formatting: invisible characters, irregular spaces, markdown symbols, quote and dash styles, and trailing whitespace. Your words, sentence order and meaning are left exactly as they were. If you also want the tone or phrasing reworked, that is a separate step for a rewriting or humanizer tool, not part of a GPT cleanup.',
+  },
+  {
+    category: 'Text Cleaner',
     question: 'What defines a text cleaner?',
     answer: 'A text cleaner is a utility that deletes invisible Unicode symbols, excessive white space, leftover markdown elements, and various artifacts from text so it pastes neatly into any application or editor. When you copy content from an AI model like ChatGPT, Claude, or Gemini, or from a PDF, website, or rich text editor, hidden characters and formatting marks travel alongside the visible words. These invisible symbols include zero-width spaces (U+200B), byte-order marks (U+FEFF), non-breaking spaces (U+00A0), and soft hyphens (U+00AD). They provoke word count expansion, broken layouts within CMS platforms, formatting glitches inside Google Docs and Microsoft Word, and unexpected rendering across email clients. A text cleaner purges all those artifacts and supplies plain, uniform text that functions properly everywhere. AI Text Cleanup Tools operates as a complimentary text cleaner — paste your content into the utility above, click Clean Text, and copy the outcome within seconds. No registration needed, no character caps, no file uploads. It functions on output from any AI model and any other text source.',
   },
@@ -259,7 +269,7 @@ export default async function HomePage() {
 
           {/* Category 1 — AI Text Cleaners */}
           <div>
-            <h2 className="mb-3 text-xs font-black uppercase tracking-[0.18em] text-slate-500">AI Text Cleaners</h2>
+            <h2 className="mb-3 text-xs font-black uppercase tracking-[0.18em] text-slate-500">AI Text Cleaners &amp; GPT Cleanup</h2>
             <div className="grid grid-cols-1 gap-2 sm:grid-cols-2">
               {[
                 { slug: 'chatgpt-text-cleaner', title: 'ChatGPT Text Cleaner', desc: 'Efficiently clear out hidden Unicode symbols and structural debris from ChatGPT responses.' },
@@ -395,10 +405,26 @@ export default async function HomePage() {
           <p className="text-sm leading-6 text-slate-700">This is especially crucial when content has traveled through multiple utilities. A student might draft in ChatGPT, revise in Claude, paste into Google Docs, and finally submit via a portal running <strong>Turnitin</strong>. A publisher could generate an outline in Gemini, edit in Notion, move the article into WordPress, and review it with Originality.ai. Every single copy action can introduce distinct spacing, encoding, or styling layers. Pre-cleansing before final review supplies the detector, editor, CMS, and reader with a tidier version of that exact text instead of a draft full of avoidable technical noise.</p>
         </section>
 
+        {/* GPT CLEANUP */}
+        <section className="mt-6 space-y-3 rounded-[28px] border-3 border-black bg-white p-5 shadow-neo md:p-7">
+          <h2 className="text-xl font-bold text-slate-950">GPT Cleanup: What Gets Removed and Why It Matters</h2>
+          <p className="text-sm leading-6 text-slate-700">GPT cleanup is the quick pass you run on text from ChatGPT or any other GPT-based model before it goes anywhere public. The words themselves are usually fine. The problems sit underneath them: zero-width spaces that break search and word counts, non-breaking spaces that stop lines from wrapping, stray asterisks and hash marks left over from markdown, and curly quotes or long dashes that trip up code, spreadsheets and some CMS fields.</p>
+          <p className="text-sm leading-6 text-slate-700">The cleaner at the top of this page handles GPT cleanup in a single click. Each fix is a separate switch, so you decide what changes:</p>
+          <ul className="list-disc space-y-1 pl-5 text-sm leading-6 text-slate-700">
+            <li><strong>Hidden characters</strong> — zero-width spaces, joiners and byte-order marks are deleted.</li>
+            <li><strong>Non-breaking spaces</strong> — converted to normal spaces so text wraps naturally.</li>
+            <li><strong>Dashes, quotes and ellipses</strong> — normalized to plain keyboard characters.</li>
+            <li><strong>Markdown leftovers</strong> — heading hashes and (optionally) asterisks are stripped.</li>
+            <li><strong>Trailing whitespace and Unicode forms</strong> — tidied so every line behaves the same.</li>
+          </ul>
+          <p className="text-sm leading-6 text-slate-700">Good GPT cleanup changes formatting, never meaning. Your sentences, facts and structure stay exactly as they were, which is why it is safe to run on essays, client copy, product descriptions and code comments alike. Because the cleaning runs in your browser, the text you paste is not uploaded anywhere.</p>
+          <p className="text-sm leading-6 text-slate-700">A simple routine works well: paste the draft, run the GPT cleanup, then paste the result into its final home and give it one read-through. If a platform still shows odd spacing, the <Link href="/invisible-character-detector" className="font-semibold text-teal-700 underline">invisible character detector</Link> will point to exactly which character is responsible.</p>
+        </section>
+
         {/* USE CASES */}
         <section className="mt-6 space-y-4 rounded-[28px] border-3 border-black bg-white p-5 shadow-neo md:p-7">
           <h2 className="text-xl font-bold text-slate-950">Who Relies On AI Text Cleanup Tools</h2>
-          <p className="text-sm leading-6 text-slate-700">AI Text Cleanup Tools is useful anywhere AI-generated content moves from a chat window into a real workflow. Students, working professionals, marketers, content creators, editors, and technical teams all face the same basic problem: copied AI text can carry invisible characters and formatting residue even when the visible draft looks polished. The tool is not only for people trying to repair broken text after the fact; it also works as a routine pre-paste step before a draft enters school systems, client files, publishing pipelines, customer support tools, or technical documentation.</p>
+          <p className="text-sm leading-6 text-slate-700">AI Text Cleanup Tools is useful anywhere AI-generated content moves from a chat window into a real workflow. Students, working professionals, marketers, content creators, editors, and technical teams all face the same basic problem: copied AI text can carry invisible characters and formatting residue even when the visible draft looks polished. The tool is not only for people trying to repair broken text after the fact; it also works as a routine pre-paste step before a draft enters school systems, client files, publishing pipelines, customer support tools, or technical documentation. A thirty-second GPT cleanup before that handoff prevents most formatting surprises.</p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-2">
             <div className="rounded-2xl border-3 border-black bg-slate-50/70 p-4">
@@ -413,6 +439,7 @@ export default async function HomePage() {
                 <li>• Remove formatting residue from AI-assisted drafts before final submission</li>
                 <li>• Strip invisible markers from summaries, translations, and study outlines</li>
                 <li>• Keep academic workflows cleaner while still following disclosure rules</li>
+                <li>• Run a quick GPT cleanup on research notes so quotes and spacing survive the move into Word or Google Docs</li>
               </ul>
             </div>
 
@@ -428,6 +455,7 @@ export default async function HomePage() {
                 <li>• Support workplace AI policies with a repeatable cleanup step</li>
                 <li>• Remove copy-paste artifacts before customer, legal, or executive review</li>
                 <li>• Reduce technical issues before <strong>Copyleaks</strong> and <strong>Sapling</strong> checks used in enterprise workflows</li>
+                <li>• Do a GPT cleanup on reports, proposals, and emails before they reach clients or colleagues</li>
               </ul>
             </div>
 
@@ -443,6 +471,7 @@ export default async function HomePage() {
                 <li>• Prepare long-form drafts for editorial workflows that may involve <strong>Winston AI</strong></li>
                 <li>• Safeguard SEO formatting by eliminating concealed Unicode that can disrupt keyword analysis</li>
                 <li>• Bulk-clean drafts prior to publishing on WordPress, Webflow, Shopify, or newsletter platforms</li>
+                <li>• Make GPT cleanup the last step before pasting posts into WordPress, Shopify, or social schedulers</li>
               </ul>
             </div>
           </div>
@@ -450,7 +479,7 @@ export default async function HomePage() {
 
         {/* SECTION 1 — Free Text Cleaner */}
         <section className="mt-6 space-y-3 rounded-[28px] border-3 border-black bg-white p-5 shadow-neo md:p-7">
-          <h2 className="text-xl font-bold text-slate-950">Free Text Cleaner — Clean Text Online in One Click</h2>
+          <h2 className="text-xl font-bold text-slate-950">Free Text Cleaner &amp; GPT Cleanup — Clean Text Online in One Click</h2>
           <p className="text-sm leading-6 text-slate-700">A <strong>text cleaner</strong> is a utility for turning raw, messy copied text into clean text that behaves correctly after paste. It removes the material that should not travel with the words: invisible Unicode characters, inconsistent spacing, leftover markdown symbols, smart punctuation, and formatting artifacts picked up from AI tools, PDFs, rich text editors, web pages, and documents. The result is plain, predictable text you can paste into Google Docs, Microsoft Word, WordPress, Notion, email clients, CMS fields, spreadsheets, and code editors without fighting the same formatting problem twice.</p>
           <p className="text-sm leading-6 text-slate-700">AI Text Cleanup Tools is a <strong>text cleaner free</strong> to use with no account gate, no sign-up wall, and no daily usage limit. Paste text into the cleaner above, click Clean Text, and copy the cleaned result. Whether someone searches for a <strong>textcleaner</strong>, a text sanitizer, a formatting fixer, a paste cleanup tool, or a copy-paste cleaner, the work is the same: remove the junk while keeping the actual words intact. This <strong>clean text online</strong> tool supports output from ChatGPT, Claude, Gemini, Copilot, Grok, DeepSeek, Perplexity, Llama, Mistral, and text copied from nearly any other source. It is also a practical <strong>text cleaner free</strong> option for quick edits where downloading an extension or installing a desktop utility would slow the work down.</p>
           <p className="text-sm leading-6 text-slate-700">The reason a text cleaner matters is simple: AI-assisted writing has made copy-paste problems more common. When you copy from an AI model and paste into a document, email, CMS, form, or editor, invisible characters can move with the visible text. Zero-width spaces (U+200B) are especially common; they do not appear on screen, but they still occupy a place in the underlying character data and can affect word counts, selection behavior, and line wrapping. Byte-order marks (U+FEFF) belong at the beginning of encoded text files, yet copied AI text can contain them in the middle of a paragraph. Non-breaking spaces (U+00A0) look like regular spaces but prevent natural wrapping and can create overflow in narrow layouts.</p>
