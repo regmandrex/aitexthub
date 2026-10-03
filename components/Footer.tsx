@@ -139,7 +139,7 @@ export default function Footer() {
         <div className="grid gap-8 pb-6 md:grid-cols-4">
           <div className="space-y-2">
             <h3 className="text-xs font-bold uppercase text-slate-900">About</h3>
-            <p>Free AI text cleanup tools to remove hidden Unicode, fix spacing, and normalize text for publishing.</p>
+            <p>Free utilities that strip hidden Unicode, tidy spacing and get AI-written text ready to publish.</p>
           </div>
           <div className="space-y-2">
             <h3 className="text-xs font-bold uppercase text-slate-900">Explore</h3>
@@ -215,7 +215,7 @@ export default function Footer() {
           <Link href="https://aitextcleanuptools.com" className="font-semibold text-slate-800 hover:underline">
             AI Text Cleaner
           </Link>
-          . Free AI text cleanup utilities.{' '}
+          . Free tools for cleaning up AI-generated text.{' '}
           All rights reserved.
         </div>
       </div>
