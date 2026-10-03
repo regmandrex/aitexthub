@@ -77,15 +77,13 @@ function WriteUp() {
           Researchers studying AI image generation, digital provenance systems, and media authenticity depend on tools that can detect and analyze C2PA metadata and invisible watermarks. An Adobe Firefly watermark detector supplies ground-truth data for research into how watermarking affects image quality, how well these signals hold up under adversarial attack, and how detection tools perform across different formats and compression levels.
         </p>
 
-        <h2>How the Adobe Firefly Image Watermark Detector Works</h2>
+        <h2>[4] The Mechanics Of The Adobe Firefly Image Watermark Detector</h2>
         <p>
           Our free online Adobe Firefly image watermark detector runs a multi-step analysis pipeline on every image you upload. Here's a closer look at what happens once you submit an image for analysis.
         </p>
 
         <h3>Step 1: File Format Parsing and Metadata Extraction</h3>
-        <p>
-          The first step parses the image file to pull out whatever metadata is available. For JPEG files, that means EXIF, IPTC, and XMP metadata blocks. For PNG files, it means the iTXt and tEXt chunks. For WebP files, it's the EXIF and XMP metadata. For HEIC/HEIF files (increasingly common from mobile devices), it extracts the EXIF container. The detector specifically hunts for XMP metadata blocks holding C2PA manifest data, which Adobe Firefly always embeds when it creates or edits an image.
-        </p>
+        <p>Initially, the system reads through the graphic file to gather all detectable metadata records. When handling JPEG files, it inspects EXIF, IPTC, and XMP metadata blocks. With PNG files, it scans the iTXt and tEXt chunks. Across WebP files, it reviews EXIF and XMP metadata structures. If dealing with HEIC/HEIF files (frequent in smartphone photography), it targets the EXIF container. The scanner is programmed to locate XMP metadata blocks carrying C2PA manifest data, which Adobe Firefly routinely includes during image generation and editing.</p>
 
         <h3>Step 2: C2PA Manifest Parsing and Verification</h3>
         <p>
@@ -117,10 +115,8 @@ function WriteUp() {
           Download or save the image you want to check. For the most reliable results, use the highest-quality version you have access to. Heavy JPEG compression can degrade metadata and make pixel-level watermark detection less dependable. If you have both a compressed and an uncompressed copy, go with the uncompressed one.
         </p>
 
-        <h3>Step 2: Upload the Image</h3>
-        <p>
-          Click the upload button on our free Adobe Firefly watermark detector page and choose your image file. We support JPEG, PNG, WebP, HEIC, TIFF, and most other common image formats. You can also drag and drop the file straight onto the upload area. Files up to 50MB are supported.
-        </p>
+        <h3>Phase 2: Submit the Image</h3>
+        <p>Select the upload button within our complimentary Adobe Firefly watermark detector and pick your target graphic. Our system handles JPEG, PNG, WebP, HEIC, TIFF, alongside nearly every standard visual file format. Alternatively, drop your asset directly into the designated dropzone. We accommodate files scaling up to 50MB.</p>
 
         <h3>Step 3: Wait for Analysis</h3>
         <p>
@@ -137,7 +133,7 @@ function WriteUp() {
           You can copy the report to your clipboard, download it as a PDF, or share a link to the analysis — handy for compliance documentation, client reports, or editorial review records.
         </p>
 
-        <h2>Understanding Detection Results: What Each Signal Means</h2>
+        <h2>Understanding Analysis Outcomes: What Each Indicator Denotes</h2>
 
         <h3>C2PA Manifest Present and Valid</h3>
         <p>
@@ -167,7 +163,7 @@ function WriteUp() {
           Adobe's combination — C2PA metadata (standardized, cryptographically verifiable, human-readable) paired with invisible pixel watermarks (robust against metadata stripping) — currently sets the standard for AI image watermarking. It's also the approach most likely to become a legal compliance requirement, since regulators studying AI content transparency tend to point to C2PA as the preferred technical standard.
         </p>
 
-        <h2>Privacy and Security Considerations</h2>
+        <h2>Security and Privacy Factors</h2>
         <p>
           When you use our free Adobe Firefly image watermark detector, your privacy stays protected. Images you upload are processed in memory and are never stored on our servers once analysis finishes. We don't keep copies of uploaded images, log their content, or share analysis data with third parties. Analysis runs server-side to keep results consistent across devices and browsers, but no image data lingers once the analysis session ends.
         </p>
@@ -241,7 +237,7 @@ const faqs: FaqItem[] = [
     category: 'Getting Started',
     question: 'What is an Adobe Firefly image watermark and how is it added to images?',
     answer:
-      'An Adobe Firefly image watermark is a form of digital provenance metadata embedded in every image generated or processed by Adobe Firefly and related Adobe AI tools. The primary watermark is a C2PA (Coalition for Content Provenance and Authenticity) manifest — a cryptographically signed data structure embedded in the image file&#39;s metadata that records the image&#39;s origin, creation time, AI model used, and any edits made. Adobe Firefly also embeds invisible pixel-level watermarks that persist even if metadata is stripped. Together these two mechanisms create a robust, tamper-evident record of an image&#39;s AI-generated origin.',
+      'An Adobe Firefly image watermark acts as an authentication stamp embedded within every piece of media created or touched by Adobe Firefly and related Adobe AI tools. Its core component consists of a C2PA (Coalition for Content Provenance and Authenticity) manifest — an encrypted information block stored within the image file&#39;s metadata that logs source data, creation timestamps, the AI model used, plus subsequent adjustments. Furthermore, Adobe Firefly applies subtle, imperceptible pixel adjustments that survive basic metadata stripping. Working jointly, these twin safeguards yield a resilient, tamper-evident record confirming an image&#39;s AI-generated origin.',
   },
   {
     category: 'Getting Started',
@@ -361,7 +357,7 @@ const faqs: FaqItem[] = [
     category: 'Advanced',
     question: 'Can I integrate the Adobe Firefly watermark detector into my own application or workflow?',
     answer:
-      'Yes, we offer an API for developers and enterprises who want to build Firefly watermark detection into their own applications, content moderation pipelines, or compliance workflows. The API accepts image uploads and returns structured JSON responses with detection results, C2PA manifest data, and confidence scores. Reach out to us for API documentation, pricing, and enterprise integration support.',
+      'Certainly, an API is available for organizations and programmers seeking to incorporate Firefly watermark detection within bespoke software, content moderation pipelines, or compliance workflows. This interface processes image uploads and delivers clean JSON responses containing detection results, C2PA manifest data, along with confidence scores. Please get in touch to obtain API documentation, pricing details, and enterprise integration support.',
   },
   {
     category: 'Advanced',
@@ -385,7 +381,7 @@ const faqs: FaqItem[] = [
     category: 'Accuracy',
     question: 'Can the Adobe Firefly detector return false positives or false negatives?',
     answer:
-      'False positives on the C2PA Content Credentials layer are essentially impossible, since the manifest is cryptographically signed by Adobe and the certificate chain can be verified; a positive C2PA detection tied to Adobe is definitive. False negatives, on the other hand, are common whenever Content Credentials have been stripped by a social media upload, an image editor that doesn&#39;t preserve C2PA, or some other third-party processing pipeline. A "no watermark" result means Content Credentials were absent or removed before the file reached you — not that the image definitely didn&#39;t come from Firefly. Pixel-level signal detection is heuristic and reports confidence levels for ambiguous cases.',
+      'Erronous detections are practically non-existent regarding the C2PA Content Credentials layer, because the certificate chain can be verified against the manifest cryptographically signed by Adobe; confirming an Adobe origin via C2PA detection is absolute. Conversely, false negatives emerge frequently whenever Content Credentials have been stripped during social media distribution, modified via an image editor that doesn&#39;t preserve C2PA, or altered in an external processing sequence. Receiving a "no watermark" status merely signals that Content Credentials were absent or removed prior to reaching our tool — it does not ensure the image definitely didn&#39;t come from Firefly. For nuanced cases, our pixel-level signal detection relies on probabilistic evaluation to yield detailed confidence levels.',
   },
   {
     category: 'Reporting',

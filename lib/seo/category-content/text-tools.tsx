@@ -5,30 +5,10 @@ import type { FaqItem } from '@/components/faqData';
 function Intro() {
   return (
     <>
-      <p>
-        <strong>Text tools</strong> handle the small, constant jobs that come up whenever you move writing
-        between applications. This category collects utilities for changing case, removing duplicate
-        lines, stripping HTML, counting words, fixing whitespace, finding and replacing, and detecting the
-        invisible characters that cause text to behave strangely for no visible reason.
-      </p>
-      <p>
-        These are the tools you reach for when something is wrong and you cannot see why. Text that will
-        not match in a search. A word count that disagrees between two programs. Spacing that changes when
-        the page renders. A spreadsheet import that fails on a file that looks perfectly fine. In most
-        cases the cause is a character that occupies space in the data and nothing on screen.
-      </p>
-      <p>
-        The tools divide roughly into three jobs. Some inspect, reporting what is present without changing
-        anything, which is where you should usually start. Some clean, removing characters or formatting
-        that should not be there. Some transform, changing case, extracting values, or substituting text.
-        Reaching for a cleaning tool before you have inspected is the most common way to apply the wrong
-        fix and still not understand the original problem.
-      </p>
-      <p>
-        Every tool here runs entirely in your browser. Nothing you paste is uploaded, logged, or stored,
-        which matters because these utilities routinely handle unpublished drafts, client material, and
-        internal documents.
-      </p>
+      <p><strong>Text tools</strong> manage the quick, recurring tasks that arise whenever you transfer copy between programs. This group gathers utilities for altering cases, deleting duplicate rows, stripping HTML, tallying words, correcting spacing, finding and replacing, and spotting hidden symbols that cause text to behave erratically for no apparent reason.</p>
+      <p>These are the utilities you utilize whenever an issue arises and the cause eludes you. Text failing to rank properly in search results. A word count discrepancy across different applications. Spacing shifts upon page rendering. A spreadsheet import error on a file that appears entirely correct. Frequently, the culprit is a hidden character existing within the data yet remaining invisible visually.</p>
+      <p>The utilities break down roughly into three functions. Some inspect, reporting existing elements without altering anything, which serves as the ideal starting point. Some clean, erasing unwanted symbols or formatting. Some transform, altering cases, pulling values, or substituting text. Applying a cleanup utility prior to inspection is the most frequent way to execute the incorrect repair while failing to grasp the original issue.</p>
+      <p>Every utility here executes entirely within your browser. Nothing you paste gets uploaded, saved, or tracked, which is crucial since these tools frequently process unreleased drafts, client work, and internal files.</p>
     </>
   );
 }
@@ -36,371 +16,93 @@ function Intro() {
 function Body() {
   return (
     <>
-      <h2>Invisible Characters: The Cause of Most Mysterious Text Problems</h2>
-      <p>
-        The <Link href="/invisible-character-detector">invisible character detector</Link>,{' '}
-        <Link href="/invisible-character-remover">invisible character remover</Link>,{' '}
-        <Link href="/zero-width-space-remover">zero-width space remover</Link>, and{' '}
-        <Link href="/character-remover">character remover</Link> address a category of problem that is
-        genuinely invisible and therefore extremely frustrating to diagnose.
-      </p>
-      <p>
-        Unicode contains many characters that occupy no visual space or are indistinguishable from
-        ordinary ones. They arrive through copy-paste from web pages, PDFs, word processors, and AI
-        output, and once present they travel silently through every subsequent operation.
-      </p>
-      <p>
-        <strong>Zero-width characters</strong> render as absolutely nothing. The zero-width space
-        (U+200B), zero-width non-joiner (U+200C), zero-width joiner (U+200D), and word joiner (U+2060)
-        have no width and no mark, yet they count as characters, break word boundaries, and prevent string
-        matches. A zero-width space inside a word means a search for that word fails while the text looks
-        identical on screen.
-      </p>
-      <p>
-        <strong>Non-breaking spaces</strong> (U+00A0) look exactly like ordinary spaces but prevent line
-        wrapping and do not match a regular space in comparisons. This is why a paragraph occasionally
-        refuses to wrap correctly, and why find-and-replace skips instances that are visibly right there.
-      </p>
-      <p>
-        <strong>Byte order marks</strong> (U+FEFF) sometimes appear at the very start of copied text and
-        cause parse errors in JSON, CSV, and configuration files. The error points at position zero while
-        the file looks flawless in an editor, which makes it a memorably annoying bug.
-      </p>
-      <p>
-        <strong>Directional marks</strong> (U+200E, U+200F) control bidirectional text ordering and can
-        make characters appear in an unexpected order when they turn up unintentionally.
-      </p>
-      <p>
-        The <Link href="/invisible-text-copy-paste">invisible text copy-paste tool</Link> works in the
-        other direction, generating invisible characters deliberately, which people use for blank messages
-        and usernames on platforms that require non-empty input.
-      </p>
-      <p>
-        There is also a security dimension worth knowing about. Because certain Unicode characters are
-        visually identical to Latin letters while being entirely different code points, they can be used
-        to construct strings that look legitimate and are not. A Cyrillic letter that renders identically
-        to a Latin one makes a convincing lookalike domain or filename. Invisible characters can likewise
-        be used to slip content past naive keyword filters. Detecting what is actually present, rather
-        than trusting what renders, is the defence in both cases.
-      </p>
+      <h2>Invisible Characters: The Root of Most Cryptic Text Issues</h2>
+      <p>The <Link href="/invisible-character-detector">invisible character detector</Link>,{' '} <Link href="/invisible-character-remover">invisible character remover</Link>,{' '} <Link href="/zero-width-space-remover">zero-width space remover</Link>, and{' '} <Link href="/character-remover">character remover</Link> tackle an issue category that is completely imperceptible and consequently extremely hard to diagnose.</p>
+      <p>Unicode features numerous symbols taking up zero visual space or remaining indistinguishable from standard ones. They enter via copy-pasting from web pages, PDFs, text editors, and AI outputs, and once present, they propagate silently across every subsequent action.</p>
+      <p><strong>Zero-width characters</strong> render as absolute nothingness. The zero-width space (U+200B), zero-width non-joiner (U+200C), zero-width joiner (U+200D), and word joiner (U+2060) have zero width and zero mark, yet they count as symbols, disrupt word boundaries, and block string matches. A zero-width space inside a term means a search for that term fails while the copy appears identical visually.</p>
+      <p><strong>Non-breaking spaces</strong> (U+00A0) resemble standard spaces identically yet prevent line wraps and fail to match regular spaces during comparisons. This explains why paragraphs occasionally refuse to wrap properly, and why find-and-replace misses instances sitting right there visually.</p>
+      <p><strong>Byte order marks</strong> (U+FEFF) occasionally surface right at the beginning of copied text and trigger parsing failures in JSON, CSV, and config files. The error points to position zero while the file looks pristine in an editor, rendering it a uniquely frustrating bug.</p>
+      <p><strong>Directional marks</strong> (U+200E, U+200F) regulate bidirectional text sequence and can cause symbols to display in unexpected orders when appearing accidentally.</p>
+      <p>The <Link href="/invisible-text-copy-paste">invisible text copy-paste tool</Link> operates conversely, generating invisible characters intentionally, which users employ for blank messages and usernames on services demanding non-empty inputs.</p>
+      <p>There is also a security aspect worth understanding. Because certain Unicode characters look just like Latin letters while being distinct code points, they can build strings that appear valid but are not. A Cyrillic letter rendering identically to a Latin one creates a convincing counterfeit domain or filename. Similarly, invisible characters can bypass simple keyword filters. Finding what is truly there rather than trusting what appears visually is the protection in both cases.</p>
 
       <h2>Case Conversion</h2>
-      <p>
-        The <Link href="/case-converter">case converter</Link> switches text between uppercase, lowercase,
-        title case, sentence case, and other variants. Straightforward in principle, with two
-        complications worth knowing.
-      </p>
-      <p>
-        <strong>Title case is not a single standard.</strong> Different style guides disagree about which
-        words to capitalize. AP style capitalizes words of four letters or more; Chicago capitalizes
-        principal words and lowercases articles, prepositions, and coordinating conjunctions regardless of
-        length. Both capitalize the first and last word whatever they are. This is why automated title
-        case sometimes produces results that look wrong: it is following a different convention from the
-        one you have in mind.
-      </p>
-      <p>
-        <strong>Case conversion is language-dependent.</strong> Turkish has both dotted and dotless i, and
-        naive uppercasing of Turkish text produces the wrong letter, which is a well-known source of bugs
-        in software that assumes English casing rules apply universally. German sharp s traditionally
-        uppercases to a two-letter sequence. Greek final sigma changes form depending on position.
-      </p>
+      <p>The <Link href="/case-converter">case converter</Link> switches copy between uppercase, lowercase, title case, sentence case, and additional formats. Simple in theory, featuring two complexities worth understanding.</p>
+      <p><strong>Title case is not a single standard.</strong> Different style guides disagree on which words to capitalize. AP style capitalizes words with four or more letters; Chicago capitalizes main words and lowercases articles, prepositions, and coordinating conjunctions regardless of length. Both capitalize the first and last word no matter what they are. This is why automated title case occasionally yields outcomes that seem incorrect: it follows a different rule set than the one you expect.</p>
+      <p><strong>Case conversion is language-dependent.</strong> Turkish includes both dotted and dotless i, and naive capitalization of Turkish text yields the incorrect letter, a well-known bug source in software assuming universal English casing rules. German sharp s traditionally capitalizes into a two-character string. Greek final sigma shifts form according to position.</p>
 
-      <h2>Whitespace and Line Handling</h2>
-      <p>
-        The <Link href="/remove-whitespace">whitespace remover</Link>,{' '}
-        <Link href="/space-remover">space remover</Link>,{' '}
-        <Link href="/paragraph-space-remover">paragraph space remover</Link>,{' '}
-        <Link href="/remove-line-breaks">line break remover</Link>, and{' '}
-        <Link href="/remove-spaces-excel">Excel space remover</Link> normalize spacing.
-      </p>
-      <p>
-        Whitespace problems are common because different systems represent line endings differently.
-        Windows uses carriage return plus line feed; Unix, Linux, and modern macOS use line feed alone.
-        Text moved between them can show as one long line, display stray characters, or produce doubled
-        spacing. This is also why a file edited on two operating systems can appear entirely rewritten in
-        a version control diff when nothing meaningful changed.
-      </p>
-      <p>
-        Trailing whitespace deserves specific mention because it is invisible and consequential. In code
-        it produces noisy diffs where lines appear changed although nothing meaningful differs, which
-        makes review harder and pollutes blame history. In data files it causes lookups to fail, since a
-        trailing space makes an otherwise matching value distinct.
-      </p>
-      <p>
-        The <Link href="/remove-spaces-excel">Excel space remover</Link> addresses a specific recurring
-        problem. Spreadsheet data frequently carries leading or trailing spaces from imports and manual
-        entry, which break VLOOKUP and other exact-match functions in ways that are hard to spot because
-        the cells look correct.
-      </p>
+      <h2>Whitespace and Line Management</h2>
+      <p>The <Link href="/remove-whitespace">whitespace remover</Link>,{' '} <Link href="/space-remover">space remover</Link>,{' '} <Link href="/paragraph-space-remover">paragraph space remover</Link>,{' '} <Link href="/remove-line-breaks">line break remover</Link>, and{' '} <Link href="/remove-spaces-excel">Excel space remover</Link> standardize spacing.</p>
+      <p>Whitespace issues prevail because disparate systems handle line endings differently. Windows employs carriage return plus line feed; Unix, Linux, and current macOS utilize line feed alone. Text transferred between them might appear as a single long line, show stray symbols, or create doubled spacing. This also explains why files edited across two operating systems can look completely rewritten within version control diffs despite zero meaningful alterations.</p>
+      <p>Trailing whitespace merits explicit note due to its hidden yet impactful nature. In code, it generates noisy diffs where lines appear altered despite identical contents, complicating reviews and polluting blame histories. In data files, it causes lookups to fail, as a trailing space renders an otherwise matching value unique.</p>
+      <p>The <Link href="/remove-spaces-excel">Excel space remover</Link> resolves a specific recurring hurdle. Spreadsheet data frequently retains leading or trailing spaces from imports and manual entries, breaking VLOOKUP alongside other exact-match formulas in hard-to-spot ways because cells appear correct.</p>
 
-      <h2>Duplicates, Sorting, and Extraction</h2>
-      <p>
-        The <Link href="/remove-duplicate-lines">duplicate line remover</Link> deduplicates lists, which
-        sounds simple until you consider what counts as a duplicate. Lines differing only in case, or in
-        leading or trailing whitespace, or in whether they contain a non-breaking space rather than a
-        regular one, are visually identical and textually distinct. This is why deduplication sometimes
-        leaves entries that clearly look the same, and why cleaning whitespace before deduplicating gives
-        better results.
-      </p>
-      <p>
-        The <Link href="/extract-numbers-from-text">number extractor</Link> pulls numeric values out of
-        surrounding text, useful for processing reports, logs, and pasted content where the figures matter
-        and the prose does not.
-      </p>
-      <p>
-        The <Link href="/word-descrambler">word descrambler</Link> finds words that can be formed from a
-        set of letters, which serves word games and puzzles.
-      </p>
+      <h2>Sorting, Extraction, and Duplicates</h2>
+      <p>The <Link href="/remove-duplicate-lines">duplicate line remover</Link> filters out identical list entries, which seems straightforward until you define what constitutes a duplicate. Lines that vary only in capitalization, leading or trailing spaces, or by containing a non-breaking space instead of a standard one, appear identical yet remain textually separate. This explains why deduplication occasionally retains items that clearly look identical, and why removing whitespace beforehand yields superior results.</p>
+      <p>The <Link href="/extract-numbers-from-text">number extractor</Link> pulls digits out of surrounding text, proving useful for handling reports, logs, and pasted content where numbers matter and words do not.</p>
+      <p>The <Link href="/word-descrambler">word descrambler</Link> uncovers possible words built from a provided set of letters, supporting word games and puzzles.</p>
 
-      <h2>Finding, Replacing, and Counting</h2>
-      <p>
-        The <Link href="/find-and-replace">find and replace tool</Link> performs bulk substitution across
-        text, with the advantage over an editor&apos;s built-in version of operating on pasted content
-        without touching a file.
-      </p>
-      <p>
-        The reason find and replace appears to fail is nearly always an invisible character. If you are
-        searching for a phrase that is visibly present and getting no match, run the{' '}
-        <Link href="/invisible-character-detector">invisible character detector</Link> first. A
-        non-breaking space where you typed a regular space, or a zero-width character between two letters,
-        makes the strings genuinely different.
-      </p>
-      <p>
-        The <Link href="/word-counter">word counter</Link> counts words, characters, sentences, and
-        paragraphs. Counts vary between applications more than people expect, because different programs
-        make different decisions about hyphenated words, numbers, contractions, and whether headers,
-        footnotes, and captions are included. Invisible characters widen the gap further by breaking word
-        boundaries. Where a limit is enforced, check what the enforcing system counts rather than
-        assuming.
-      </p>
+      <h2>Searching, Substituting, and Tallying</h2>
+      <p>The <Link href="/find-and-replace">find and replace tool</Link> executes bulk text swaps, offering the benefit over standard editor functions by altering pasted content directly without modifying a file.</p>
+      <p>The reason find and replace seems to fail is almost always an invisible character. If you search for a visible phrase and find no matches, run the{' '} <Link href="/invisible-character-detector">invisible character detector</Link> first. A non-breaking space where a normal space belongs, or a zero-width character nestled between letters, makes the strings entirely different.</p>
+      <p>The <Link href="/word-counter">word counter</Link> measures words, characters, sentences, and paragraphs. Counts diverge across programs more than expected because different software handles hyphenated words, numbers, contractions, and whether titles, footnotes, or captions count differently. Invisible characters expand this gap further by disrupting word boundaries. When limits apply, verify what the checking system actually counts instead of assuming.</p>
 
-      <h2>Formatting and Markup Removal</h2>
-      <p>
-        The <Link href="/strip-html">HTML stripper</Link> removes tags and returns plain text, useful for
-        extracting content from scraped pages, email source, or CMS exports.
-      </p>
-      <p>
-        The <Link href="/remove-text-formatting">formatting remover</Link>,{' '}
-        <Link href="/format-remover">format remover</Link>, and{' '}
-        <Link href="/clean-paste">clean paste tool</Link> strip rich text formatting so pasted content
-        adopts the destination&apos;s styling rather than importing its source styling. This is the
-        problem behind text that pastes into a document carrying the wrong font, size, and color, and it
-        is the single most common formatting complaint in word processing.
-      </p>
-      <p>
-        The <Link href="/em-dash-remover">em dash remover</Link> converts em dashes to hyphens or other
-        punctuation. Em dashes are typographically correct in published prose and actively harmful in
-        code, CSV, and any ASCII-expecting system. They have also become the most recognizable stylistic
-        marker of AI-generated text, since models use them at well above natural human frequency. The{' '}
-        <Link href="/em-dash-copy-paste">em dash copy-paste tool</Link> serves the opposite need, when you
-        want a proper em dash and your keyboard has no direct key for it.
-      </p>
+      <h2>Styling and Tag Elimination</h2>
+      <p>The <Link href="/strip-html">HTML stripper</Link> strips tags to leave plain text, ideal for pulling content from scraped web pages, email source code, or CMS outputs.</p>
+      <p>The <Link href="/remove-text-formatting">formatting remover</Link>,{' '} <Link href="/format-remover">format remover</Link>, and{' '} <Link href="/clean-paste">clean paste tool</Link> remove rich text styling so pasted data takes on the destination styling rather than retaining its origin styling. This causes text pasted into a file to carry the incorrect font, size, and color, representing the most frequent formatting complaint in word processing.</p>
+      <p>The <Link href="/em-dash-remover">em dash remover</Link> changes em dashes into hyphens or other marks. Em dashes are correct in published prose but harmful within code, CSV files, and ASCII systems. They also serve as the most identifiable sign of AI-generated content, since models deploy them far above typical human frequencies. The{' '} <Link href="/em-dash-copy-paste">em dash copy-paste tool</Link> addresses the opposite need, letting you insert a proper em dash when your keyboard lacks a dedicated key.</p>
 
       <h2>AI Text Cleanup</h2>
-      <p>
-        The <Link href="/chatgpt-text-cleaner">ChatGPT text cleaner</Link>,{' '}
-        <Link href="/text-cleaner">text cleaner</Link>, and{' '}
-        <Link href="/chatgpt-line-spacing">ChatGPT line spacing tool</Link> combine several operations for
-        the specific case of preparing AI output for publication.
-      </p>
-      <p>
-        AI output is rarely plain text. It typically carries smart quotes, em dashes, non-breaking spaces,
-        occasional zero-width characters, and sometimes literal Markdown syntax that the destination
-        editor will not interpret. Running one combined cleanup is faster than applying five separate
-        tools.
-      </p>
-      <p>
-        For model-specific cleaners and a fuller treatment of AI text artifacts, see the{' '}
-        <Link href="/ai-tools/ai-cleanup-tools">AI cleanup tools</Link> category.
-      </p>
+      <p>The <Link href="/chatgpt-text-cleaner">ChatGPT text cleaner</Link>,{' '} <Link href="/text-cleaner">text cleaner</Link>, and{' '} <Link href="/chatgpt-line-spacing">ChatGPT line spacing tool</Link> merge multiple steps specifically for formatting AI text prior to publishing.</p>
+      <p>AI output is rarely plain text. It usually contains smart quotes, em dashes, non-breaking spaces, occasional zero-width marks, and sometimes raw Markdown syntax that destination editors cannot parse. Running a single combined cleanup works quicker than using five separate utilities.</p>
+      <p>For model-specific cleaners and broader coverage of AI text elements, check out the{' '} <Link href="/ai-tools/ai-cleanup-tools">AI cleanup tools</Link> category.</p>
 
       <h2>Understanding Character Encoding</h2>
-      <p>
-        Most text problems trace back to encoding, and a working understanding of it turns a class of
-        baffling bugs into obvious ones.
-      </p>
-      <p>
-        <strong>Characters versus bytes.</strong> A character is what a reader sees. A byte is what the
-        computer stores. In ASCII these mapped one to one, which is why the distinction went unnoticed for
-        decades. Unicode assigns a number, called a code point, to every character across every writing
-        system, and an encoding determines how those numbers become bytes.
-      </p>
-      <p>
-        <strong>UTF-8 is the encoding to use.</strong> It represents ASCII characters in a single byte,
-        keeping English text compact and backward compatible, while using two to four bytes for everything
-        else. It is now the overwhelming majority of web content. Problems arise almost entirely when
-        something assumes a different encoding.
-      </p>
-      <p>
-        <strong>Mojibake is what encoding mismatch looks like.</strong> When UTF-8 bytes are interpreted
-        as Latin-1 or Windows-1252, each byte of a multi-byte character is rendered separately, producing
-        the characteristic garbled sequences where a single curly apostrophe becomes several strange
-        symbols. The data is usually intact; only the interpretation is wrong, which means it is often
-        recoverable if you identify the mismatch.
-      </p>
-      <p>
-        <strong>Replacement characters mean information was lost.</strong> A black diamond with a question
-        mark, or a plain question mark where a letter should be, indicates the system could not represent
-        the character at all and substituted a placeholder. Unlike mojibake, this is usually
-        unrecoverable, because the original value is gone rather than misread.
-      </p>
-      <p>
-        <strong>Normalization forms matter for comparison.</strong> Unicode often allows the same visible
-        character to be encoded more than one way. An accented e can be a single precomposed code point or
-        a plain e followed by a combining accent. Both look identical and neither is wrong, but they are
-        different byte sequences, so comparisons fail and uniqueness constraints treat them as distinct.
-        Normalizing to NFC before storing or comparing eliminates the problem.
-      </p>
+      <p>Most text errors originate from encoding, and grasping how it works turns a set of confusing bugs into obvious ones.</p>
+      <p><strong>Characters versus bytes.</strong> A character represents what users see. A byte denotes what computers store. ASCII once mapped these one-to-one, keeping the difference hidden for years. Unicode grants a distinct number, termed a code point, to every character in every writing system, while encoding dictates how those numbers convert into bytes.</p>
+      <p><strong>UTF-8 is the encoding to use.</strong> It stores ASCII characters in single bytes to keep English text light and backward compatible, while using two to four bytes for everything else. It now powers the vast majority of web data. Issues arise mainly when systems assume alternative encodings.</p>
+      <p><strong>Mojibake represents the visible outcome of an encoding conflict.</strong> Whenever Latin-1 or Windows-1252 attempts to decode UTF-8 byte sequences, the individual parts of multi-byte glyphs are rendered in isolation, turning content into gibberish where a standard typographical apostrophe shifts into odd sequences of symbols. The source information typically remains safe; the rendering phase simply erred, allowing for clean restoration if identified early.</p>
+      <p><strong>Replacement characters mean information was lost.</strong> A black diamond featuring a question mark, or a standard question mark where letters belong, shows that the system failed to render the character and inserted a placeholder instead. Unlike mojibake, this is generally permanent because the initial value vanished rather than being misread.</p>
+      <p><strong>Normalization forms matter for comparison.</strong> Unicode often permits identical visual characters to be encoded in multiple ways. An accented e can exist as one precomposed code point or a basic e followed by a combining accent. Both look identical and neither is incorrect, yet their byte sequences differ, causing comparisons to fail and uniqueness checks to treat them as separate. Normalizing to NFC before saving or comparing solves this issue.</p>
 
-      <h2>How Text Length Is Measured</h2>
-      <p>
-        String length is far less obvious than it appears, and the disagreement between systems causes
-        real bugs.
-      </p>
-      <p>
-        <strong>Three different counts exist</strong> for the same text. Bytes, which is what storage and
-        transmission care about. Code points, which is roughly what Unicode considers a character.
-        Grapheme clusters, which is what a reader perceives as a single character.
-      </p>
-      <p>
-        A plain letter is one of each. An emoji may be one grapheme cluster, two UTF-16 code units in
-        JavaScript, and four bytes in UTF-8. Emoji built from zero-width joiner sequences, such as family
-        or profession emoji, can span a dozen code points while a reader sees one symbol. Flag emoji are
-        pairs of regional indicator symbols.
-      </p>
-      <p>
-        This explains several persistent problems. A database column declared to hold 255 characters does
-        not reliably hold 255 arbitrary Unicode characters, because the limit may be in bytes. Browser
-        validation using a string length property can disagree with server-side validation counting bytes,
-        letting input pass one and fail the other. And truncating text at a fixed length can split a
-        grapheme cluster, producing a broken character or an emoji that renders as unrelated components.
-      </p>
-      <p>
-        The practical rule: when a limit matters, find out what unit is being counted rather than assuming
-        it matches what you see.
-      </p>
+      <h2>How Text Length Is Determined</h2>
+      <p>String length is much less straightforward than it appears, and system discrepancies create genuine bugs.</p>
+      <p><strong>Three distinct counts exist</strong> for identical text. Bytes, which storage and transmission rely on. Code points, which roughly equate to what Unicode views as a character. Grapheme clusters, which represent what a person sees as a single character.</p>
+      <p>A standard letter counts as one for each. An emoji might equal one grapheme cluster, two UTF-16 code units in JavaScript, and four bytes in UTF-8. Emoji created using zero-width joiner sequences, like family or professional icons, span dozens of code points while appearing as a single symbol to readers. Flag emoji consist of regional indicator symbol pairs.</p>
+      <p>This explains various ongoing challenges. A database column set to hold 255 characters might not reliably store 255 random Unicode characters because limits can be measured in bytes. Browser validation relying on string length properties can conflict with server-side checks counting bytes, letting input pass one test while failing the other. Furthermore, cutting text at fixed lengths can divide grapheme clusters, resulting in broken characters or emojis rendering as separate parts.</p>
+      <p>The useful principle: when a restriction matters, discover what unit is counted instead of presuming it matches what you observe.</p>
 
       <h2>A Diagnostic Guide</h2>
-      <p>
-        Matching symptoms to causes, since the same few problems account for most text trouble.
-      </p>
-      <p>
-        <strong>Search finds nothing although the text is visibly there.</strong> An invisible character
-        inside the string, or a non-breaking space where you typed a regular one.
-      </p>
-      <p>
-        <strong>Text pastes with the wrong font and color.</strong> Rich text formatting travelled with
-        it. Use a clean paste tool or paste as plain text.
-      </p>
-      <p>
-        <strong>A line refuses to wrap and breaks the layout.</strong> A non-breaking space is preventing
-        the wrap. It is invisible and identical to a normal space.
-      </p>
-      <p>
-        <strong>Character count exceeds a limit although visible text is shorter.</strong> Invisible
-        characters counting toward the total, which matters for meta descriptions and social posts.
-      </p>
-      <p>
-        <strong>A CSV or JSON file fails to parse at position zero.</strong> A byte order mark at the
-        start.
-      </p>
-      <p>
-        <strong>VLOOKUP fails on values that match.</strong> Leading or trailing whitespace in one of
-        them.
-      </p>
-      <p>
-        <strong>Deduplication leaves obvious duplicates.</strong> Differences in case, whitespace, or
-        space type. Normalize before deduplicating.
-      </p>
-      <p>
-        <strong>A file shows as entirely changed in a diff.</strong> Line ending conversion between
-        Windows and Unix conventions.
-      </p>
-      <p>
-        <strong>Accented text will not match despite looking identical.</strong> Unicode normalization: the
-        same character encoded two different ways. Normalize both sides to NFC before comparing them, and
-        the mismatch disappears. This affects non-English text and copied web content most often.
-      </p>
+      <p>Connecting symptoms to root causes, as the identical few issues cause most text errors.</p>
+      <p><strong>Search returns nothing even though the text is clearly visible.</strong> An invisible character is hidden inside the string, or a non-breaking space sits where you typed a standard one.</p>
+      <p><strong>The copied snippet lands carrying an unexpected typeface and hue.</strong> Accompanying rich text style properties were carried along during the action. Run it through a cleaning utility or insert it directly as unformatted plain text.</p>
+      <p><strong>A line refuses to wrap and distorts the layout.</strong> A non-breaking space blocks the wrap. It remains invisible and looks identical to a regular space.</p>
+      <p><strong>Character count exceeds the maximum even though the visible text is shorter.</strong> Invisible characters add to the total sum, which matters for meta descriptions and social media posts.</p>
+      <p><strong>A CSV or JSON file fails during parsing at the initial position.</strong> A byte order mark sits at the beginning.</p>
+      <p><strong>VLOOKUP fails on values that match.</strong> Leading or trailing whitespace exists in one of them.</p>
+      <p><strong>Deduplication retains obvious duplicates.</strong> Variations in case, whitespace, or space type occur. Normalize prior to deduplicating.</p>
+      <p><strong>A file appears completely modified within a diff tool.</strong> Line ending conventions differ between Windows and Unix systems.</p>
+      <p><strong>Accented text fails to match despite appearing identical.</strong> Unicode normalization: the same character encoded in two separate ways. Normalize both sides to NFC prior to comparing, and the discrepancy vanishes. This impacts non-English text and copied web data most frequently.</p>
 
       <h2>Where Text Problems Come From</h2>
-      <p>
-        Knowing the usual sources helps you anticipate what cleaning a given piece of text will need.
-      </p>
-      <p>
-        <strong>PDFs are the worst offender.</strong> A PDF stores glyph positions rather than flowing
-        text, so copying reconstructs a plausible reading order that is frequently wrong. Multi-column
-        layouts interleave. Ligatures such as fi and fl may copy as single characters that break search.
-        Hyphenation inserted for line breaks becomes literal hyphens mid-word. Headers and footers
-        interrupt the body. Text copied from a PDF almost always needs work.
-      </p>
-      <p>
-        <strong>Word processors carry formatting and autocorrect artifacts.</strong> Autocorrect converts
-        straight quotes to curly ones, hyphens to dashes, and applies capitalization rules, all of which
-        are correct in the document and often wrong in the destination. Tracked changes and comments can
-        surface unexpectedly when content is copied.
-      </p>
-      <p>
-        <strong>Web pages carry markup and styling.</strong> Copying from a browser brings HTML structure,
-        inline styles, and often non-breaking spaces used for layout. Content management systems then
-        re-encode this, sometimes double-encoding entities so an ampersand appears as its escaped form
-        rather than the symbol.
-      </p>
-      <p>
-        <strong>Spreadsheets coerce values aggressively.</strong> Excel converts anything resembling a date
-        into one, strips leading zeros from identifiers and postcodes, and truncates long numbers into
-        scientific notation. These changes happen on open, before you have done anything, which is why
-        importing through the data import path rather than double-clicking a CSV matters.
-      </p>
-      <p>
-        <strong>AI output carries its own signature.</strong> Smart quotes, em dashes at high density,
-        occasional zero-width characters, and literal Markdown that the destination will not render.
-      </p>
-      <p>
-        <strong>Messaging and email clients reformat silently.</strong> Line breaks are inserted at fixed
-        widths, URLs are linkified, and quoting adds prefix characters that survive copying.
-      </p>
+      <p>Knowing typical origins helps you predict what cleaning a specific piece of text will require.</p>
+      <p><strong>PDFs present the biggest issue.</strong> A PDF retains glyph placements instead of flowing text, meaning copying recreates a plausible reading order that is often incorrect. Multi-column layouts intermix. Ligatures like fi and fl may copy as single characters that break search. Hyphens added for line breaks turn into literal hyphens mid-word. Headers and footers disrupt the main body. Text copied from a PDF almost always requires fixes.</p>
+      <p><strong>Word processors retain formatting and autocorrect residue.</strong> Autocorrect transforms straight quotes into curly ones, hyphens into dashes, and applies capitalization rules, all appropriate in the document yet often wrong in the target location. Tracked changes and comments can emerge unexpectedly when content is copied.</p>
+      <p><strong>Web pages incorporate markup and styling.</strong> Copying from a browser brings HTML structure, inline styles, and frequently non-breaking spaces used for layout. Content management systems re-encode this, sometimes double-encoding entities so an ampersand shows as its escaped version instead of the actual symbol.</p>
+      <p><strong>Spreadsheets process values aggressively.</strong> Excel turns anything looking like a date into one, removes leading zeros from identifiers and postal codes, and shortens long numbers into scientific notation. These shifts happen immediately upon opening, prior to any manual actions, which explains why importing via data import pathways rather than double-clicking a CSV matters.</p>
+      <p><strong>AI output bears its own unique traits.</strong> Smart quotes, frequent em dashes, occasional zero-width characters, and literal Markdown that the target destination will not render.</p>
+      <p><strong>Messaging and email platforms reformat automatically.</strong> Line breaks appear at fixed widths, URLs become clickable links, and quoting introduces prefix characters that persist through copying.</p>
 
-      <h2>Working With Large Volumes</h2>
-      <p>
-        These tools handle individual passages well. When you are processing a lot of text, a few
-        practices make the work reliable rather than repetitive.
-      </p>
-      <p>
-        <strong>Fix problems at the source when you can.</strong> If every export from a system carries
-        the same artifact, changing the export settings once is better than cleaning every file. Many
-        systems offer a plain text or UTF-8 export option that eliminates the problem entirely.
-      </p>
-      <p>
-        <strong>Establish the pattern on a sample first.</strong> Run the detector on a representative
-        piece, work out exactly which operations are needed and in what order, then apply that sequence.
-        Discovering on file forty that an earlier step was wrong is expensive.
-      </p>
-      <p>
-        <strong>Keep the original.</strong> Cleanup is lossy by design, and you occasionally discover that
-        something you removed mattered. Working on a copy costs nothing and preserves the ability to start
-        again.
-      </p>
-      <p>
-        <strong>Verify in the destination, not the tool.</strong> Text that looks correct after cleaning
-        can still behave unexpectedly in the target application. The destination is the only ground truth,
-        and checking one item there before processing hundreds saves rework.
-      </p>
-      <p>
-        <strong>Normalize before comparing anything.</strong> Whether you are deduplicating, matching
-        records, or diffing versions, running normalization first makes the comparison meaningful. Most
-        apparent tool failures in comparison tasks are normalization that did not happen.
-      </p>
+      <h2>Processing Large Amounts of Data</h2>
+      <p>These utilities manage single sections effectively. When handling massive amounts of content, certain habits ensure the process stays dependable instead of repetitive.</p>
+      <p><strong>Address issues at the origin whenever possible.</strong> Should every system export contain an identical blemish, adjusting the export configuration once beats sanitizing every single document. Numerous platforms provide a raw text or UTF-8 export choice that removes the issue completely.</p>
+      <p><strong>Test the workflow on a specimen initially.</strong> Process a typical sample through the detector, determine precisely what actions are required and their sequence, then execute that routine. Realizing at document forty that a prior phase was incorrect proves costly.</p>
+      <p><strong>Retain the source.</strong> Sanitization is inherently destructive, and users sometimes realize that a deleted element was actually important. Editing a duplicate is free and maintains the option to restart.</p>
+      <p><strong>Check the target environment, not just the utility.</strong> Text appearing properly post-cleanup might still react strangely within the destination software. The final platform remains the sole definitive test, and validating a single record there prior to batch processing prevents duplicated effort.</p>
+      <p><strong>Normalize before comparing anything.</strong> Whether you are diffing versions, matching records, or deduplicating, performing normalization first ensures the comparison is meaningful. Most perceived tool failures during comparison tasks stem from omitted normalization.</p>
 
       <h2>Related Tool Categories</h2>
-      <p>
-        For AI-specific cleanup across models, see the{' '}
-        <Link href="/ai-tools/ai-cleanup-tools">AI cleanup tools</Link>. For Base64, URL encoding, and
-        binary conversion, see the <Link href="/ai-tools/encoding-tools">encoding tools</Link>. For
-        grammar, readability, and tone, see the{' '}
-        <Link href="/ai-tools/writing-tools">writing tools</Link>. For regex testing, diffing, and
-        formatters, see the <Link href="/ai-tools/developer-tools">developer tools</Link>. The full{' '}
-        <Link href="/ai-tools">tool directory</Link> is searchable.
-      </p>
+      <p>To handle AI-focused sanitation between models, check out the{' '} <Link href="/ai-tools/ai-cleanup-tools">AI cleanup tools</Link>. For binary data, URL encoding, and Base64, visit the <Link href="/ai-tools/encoding-tools">encoding tools</Link>. For style, clarity, and grammar, explore the{' '} <Link href="/ai-tools/writing-tools">writing tools</Link>. For formatters, diffing, and regular expression testing, browse the <Link href="/ai-tools/developer-tools">developer tools</Link>. The complete{' '} <Link href="/ai-tools">tool directory</Link> features search functionality.</p>
     </>
   );
 }
@@ -408,237 +110,237 @@ function Body() {
 const faqs: FaqItem[] = [
   {
     category: 'General',
-    question: 'What are text tools used for?',
+    question: 'What purpose do text tools serve?',
     answer:
-      'The routine jobs that come up when moving writing between applications: changing case, removing duplicate lines, stripping HTML, counting words, normalizing whitespace, finding and replacing, and detecting invisible characters. They are the tools you reach for when text behaves strangely and nothing on screen explains why.',
+      'Those routine tasks that arise when transferring text between applications: modifying case, eliminating duplicate lines, stripping HTML, tallying words, standardizing whitespace, executing find and replace, and spotting hidden characters. These are the utilities you turn to when text behaves oddly and nothing on display explains the cause.',
   },
   {
     category: 'General',
-    question: 'Are these text tools free?',
+    question: 'Do these text utilities cost money?',
     answer:
-      'Yes. Every tool in this category is free with no account required and no usage limits. They run in your browser, so you can process as much text as your device handles.',
+      'Yes. Every single utility in this category is free, requiring no account and carrying zero usage limits. They execute directly inside your web browser, allowing you to process as much text as your hardware can manage.',
   },
   {
     category: 'Privacy and Security',
-    question: 'Is my text uploaded when I use these tools?',
+    question: 'Does my content get uploaded during tool usage?',
     answer:
-      'No. Every tool in this category processes text entirely in your browser using client-side JavaScript. Nothing is uploaded, logged, or stored. You can verify this by opening your browser developer tools, selecting the Network tab, and confirming no request fires when you use a tool.',
+      'No. Every single utility in this category processes text entirely inside your browser via client-side JavaScript. Nothing ever gets logged, stored, or uploaded. You can verify this behavior by opening your browser developer tools, checking the Network tab, and confirming that no request transmits when utilizing a tool.',
   },
   {
     category: 'Privacy and Security',
-    question: 'Can I safely process confidential documents?',
+    question: 'Is it secure to handle sensitive files?',
     answer:
-      'Yes. Because processing is client-side, confidential material never leaves your machine. This matters here because these utilities routinely handle unpublished drafts, client material under NDA, and internal documents that should not be transmitted to a third party.',
+      'Yes. Because all processing happens client-side, sensitive material never departs your device. This is crucial here since these utilities frequently handle internal documents, client materials under NDA, and unpublished drafts that ought not be transmitted to any third party.',
   },
   {
     category: 'Technical',
-    question: 'What is a zero-width space?',
+    question: 'What defines a zero-width space?',
     answer:
-      'A Unicode character (U+200B) with no visual width and no mark, making it completely invisible. It still counts as a character, breaks word boundaries, disrupts search and replace, and inflates character counts. A zero-width space inside a word means searching for that word fails while the text looks identical.',
+      'A Unicode character (U+200B) possessing no visual mark and zero width, rendering it completely invisible. It still counts as a distinct character, fractures word boundaries, interferes with search and replace, and inflates character tallies. A zero-width space hidden inside a word causes searches for that word to fail while the text appears completely normal.',
   },
   {
     category: 'Technical',
-    question: 'What is a non-breaking space and why does it cause problems?',
+    question: 'What is a non-breaking space and why does it create issues?',
     answer:
-      'A character (U+00A0) that looks identical to an ordinary space but prevents line wrapping at that point and does not match a regular space in comparisons. Because it is visually indistinguishable, it survives proofreading indefinitely, and it explains both text that refuses to wrap and searches that skip visible matches.',
+      'A character (U+00A0) that looks identical to a standard space yet prevents line breaking at that specific location and fails to match an ordinary space during comparisons. Because it remains visually indistinguishable, it persists through proofreading indefinitely, explaining both text refusing to wrap and searches bypassing visible matches.',
   },
   {
     category: 'Technical',
-    question: 'Why does my JSON or CSV fail to parse at position zero?',
+    question: 'Why does my CSV or JSON fail parsing at the zeroth position?',
     answer:
-      'Almost certainly a byte order mark (U+FEFF) at the very start of the file. It is invisible, so the file looks perfect in an editor, but many parsers do not expect it and fail immediately. Removing invisible characters from the start of the file resolves it.',
+      'Almost certainly a byte order mark (U+FEFF) sitting right at the beginning of the file. It remains invisible, making the document look flawless in any editor, yet numerous parsers fail to anticipate it and break instantly. Eliminating hidden characters from the file\'s start fixes the issue.',
   },
   {
     category: 'Technical',
-    question: 'Why does the same file show as completely changed in a diff?',
+    question: 'Why does an identical file appear entirely modified within a diff?',
     answer:
-      'Line ending conversion. Windows uses carriage return plus line feed while Unix, Linux, and modern macOS use line feed alone. Editing a file on two operating systems rewrites every line ending, so a diff reports every line as changed even though nothing meaningful differs.',
+      'Line ending conversion. Windows utilizes a carriage return followed by a line feed, whereas Unix, Linux, and modern macOS rely solely on a line feed. Modifying a document across two operating systems rewrites every line termination, causing a diff utility to flag every single line as altered even though no actual content differs.',
   },
   {
     category: 'Technical',
-    question: 'Why is case conversion language-dependent?',
+    question: 'Why does changing text case depend on the language?',
     answer:
-      'Because casing rules differ between languages. Turkish has dotted and dotless i, so naive uppercasing produces the wrong letter, a well-known bug in software assuming English rules. German sharp s traditionally uppercases to two letters, and Greek final sigma changes form depending on position.',
+      'Because capitalization rules vary across languages. Turkish features both dotted and dotless i characters, meaning naive uppercasing yields the incorrect letter, a well-known flaw in software presuming English standards. The German sharp s traditionally capitalizes into two letters, and the Greek final sigma alters its shape depending on its location.',
   },
   {
     category: 'Technical',
-    question: 'Why does automated title case look wrong sometimes?',
+    question: 'Why does automated title case occasionally appear incorrect?',
     answer:
-      'Because title case is not a single standard. AP style capitalizes words of four letters or more, while Chicago capitalizes principal words and lowercases articles, prepositions, and coordinating conjunctions regardless of length. Both capitalize the first and last word. A tool following one convention will look wrong to someone expecting the other.',
+      'Because title case lacks a universal standard. AP style capitalizes words of four or more letters, whereas Chicago capitalizes principal words while lowercasing articles, prepositions, and coordinating conjunctions regardless of length. Both capitalize the initial and final word. A utility adhering to one standard will appear incorrect to anyone anticipating the other.',
   },
   {
     category: 'Usage',
-    question: 'Why does find and replace skip matches that are clearly there?',
+    question: 'Why does find and replace miss matches that are visibly present?',
     answer:
-      'Nearly always an invisible character inside the string. A non-breaking space where you typed a regular space, or a zero-width character between two letters, makes the strings genuinely different even though they look identical. Run the invisible character detector before assuming the tool is broken.',
+      'Almost invariably due to a hidden character embedded within the string. A non-breaking space placed where you entered a standard space, or a zero-width character situated between two letters, renders the strings genuinely distinct despite looking identical. Execute the invisible character detector prior to assuming the utility is malfunctioning.',
   },
   {
     category: 'Usage',
-    question: 'Why do my word counts differ between applications?',
+    question: 'Why do word counts vary between different software applications?',
     answer:
-      'Different programs make different decisions about hyphenated words, numbers, contractions, and whether headers, footnotes, and captions count. Invisible characters widen the gap by breaking word boundaries. Where a limit is enforced, check what the enforcing system counts rather than trusting another application total.',
+      'Different applications make varying choices regarding hyphenated terms, numbers, contractions, and whether captions, footnotes, and headers are tallied. Hidden characters widen this discrepancy by fracturing word boundaries. Whenever a limit is enforced, verify what the enforcing system measures rather than relying blindly on another application\'s total.',
   },
   {
     category: 'Usage',
-    question: 'Why does deduplication leave entries that look identical?',
+    question: 'Why do entries appear identical yet remain after deduplication?',
     answer:
-      'Because they differ in ways you cannot see: case, leading or trailing whitespace, or a non-breaking space instead of a regular one. Visually identical is not textually identical. Normalizing whitespace and case before deduplicating produces much better results.',
+      'Due to hidden differences like capitalization, extra spaces at either end, or non-breaking spaces replacing regular ones. Looking identical does not mean they match textually. Standardizing both case and spacing prior to deduplication yields significantly superior outcomes.',
   },
   {
     category: 'Usage',
     question: 'Why does VLOOKUP fail on values that clearly match?',
     answer:
-      'Leading or trailing whitespace in one of the values, usually introduced by an import or manual entry. Exact-match functions treat a trailing space as a real difference, and the cells look correct because the space is invisible. Trimming whitespace across the column resolves it.',
+      'Extra spaces at the beginning or end of a value, typically caused by manual typing or data imports. Exact-match formulas view trailing spaces as actual discrepancies, while the cells appear fine because those spaces cannot be seen. Clearing whitespace throughout the column fixes this issue.',
   },
   {
     category: 'Usage',
-    question: 'Why does text paste with the wrong font and color?',
+    question: 'Why does pasted text retain incorrect fonts and colors?',
     answer:
-      'Because rich text formatting travelled with the content, so it imported its source styling instead of adopting the destination styling. Use a clean paste tool to strip the formatting first, or paste as plain text using your application unformatted-paste shortcut.',
+      'Rich text formatting accompanied the copied content, carrying its origin styling instead of inheriting the target format. Run a clean paste utility to eliminate the formatting beforehand, or insert as plain text via your software\'s unformatted-paste command.',
   },
   {
     category: 'Usage',
-    question: 'Should I remove em dashes from my text?',
+    question: 'Is it advisable to delete em dashes from my writing?',
     answer:
-      'It depends on the destination. In published prose they are typographically correct and should stay. In code, CSV, JSON, or any ASCII-expecting system they cause real failures. They are also the most recognizable marker of AI-generated writing, since models use them well above natural human frequency.',
+      'It relies entirely on where it is going. In published literature they are stylistically proper and ought to remain. Within programming code, CSV, JSON, or any ASCII-dependent environment they trigger actual errors. Furthermore, they serve as the clearest indicator of AI-generated content, since models deploy them far more often than humans naturally do.',
   },
   {
     category: 'Usage',
-    question: 'Why does trailing whitespace matter?',
+    question: 'Why is trailing whitespace important?',
     answer:
-      'In code it produces noisy diffs where lines appear changed although nothing meaningful differs, which makes review harder and pollutes blame history. In data files it causes exact-match lookups to fail, since a trailing space makes an otherwise matching value distinct. It is invisible in both cases.',
+      'In programming it creates cluttered diffs where lines look modified despite no actual changes occurring, complicating code reviews and messing up blame histories. In datasets it breaks exact-match queries, since a final space turns an otherwise matching string into a unique value. The space remains hidden in both scenarios.',
   },
   {
     category: 'Detection and Limits',
-    question: 'How do invisible characters get into my text?',
+    question: 'How do hidden characters find their way into my writing?',
     answer:
-      'Copy-paste, almost always. Web pages, PDFs, word processors, and AI output all embed them, and copying carries the underlying character data along with what you can see. Once present they travel silently through every subsequent edit, paste, and save.',
+      'Through copying and pasting, nearly every time. Web content, PDFs, document editors, and AI responses all contain them, and copying transfers the underlying character data alongside the visible text. Once introduced, they persist unnoticed through every subsequent modification, paste, and save operation.',
   },
   {
     category: 'Detection and Limits',
-    question: 'Can I see invisible characters in a normal text editor?',
+    question: 'Am I able to view hidden characters using a standard text editor?',
     answer:
-      'Not by default. Some code editors can show them with a whitespace-rendering or non-printable-character setting enabled, but ordinary word processors and text fields give no indication. This is exactly why a detector is useful: it reports what is present rather than relying on you spotting it.',
+      'Not out of the box. Certain code editors can display them when whitespace-rendering or non-printable-character modes are turned on, but standard word processors and input fields offer no visual cues. This explains why a detector proves so valuable: it detects what is actually there instead of depending on your ability to spot it.',
   },
   {
     category: 'Detection and Limits',
-    question: 'Does removing invisible characters change my writing?',
+    question: 'Does deleting hidden characters alter my written content?',
     answer:
-      'No. These tools remove characters that should not be there and normalize malformed spacing. Your words, wording, and meaning stay exactly as written. This is different from a rewriter or humanizer, which changes the text itself.',
+      'No. These utilities eliminate characters that should not exist and clean up irregular spacing. Your terminology, phrasing, and message remain completely untouched. This differs from a rewriter or humanizer, which actively modifies the text itself.',
   },
   {
     category: 'Compatibility and Formats',
-    question: 'Why does my text look wrong after uploading to a CMS or LMS?',
+    question: 'Why does my text display incorrectly after posting to a content management system or learning management system?',
     answer:
-      'Many content systems run older text pipelines that handle extended Unicode poorly, so smart quotes and em dashes appear as question marks or black diamonds. Normalizing punctuation to plain ASCII and removing invisible characters before uploading avoids it.',
+      'Numerous publishing platforms utilize older text engines that manage extended Unicode poorly, causing smart quotes and em dashes to render as question marks or diamond symbols with question marks. Standardizing punctuation to basic ASCII and stripping out hidden characters prior to upload prevents this.',
   },
   {
     category: 'Compatibility and Formats',
-    question: 'Why does my character count exceed a limit when the text looks shorter?',
+    question: 'Why is my character count over the limit when the text appears brief?',
     answer:
-      'Invisible characters counting toward the total. This bites most on fields with hard caps such as meta descriptions, social media posts, and form inputs, where a paste from a formatted source can add characters you have no way to see.',
+      'Hidden characters add to the overall count. This frequently catches people out on strict input fields like meta descriptions, social media updates, and form submissions, where pasting from a styled document introduces characters you cannot see.',
   },
   {
     category: 'Compatibility and Formats',
     question: 'What is the difference between CRLF and LF line endings?',
     answer:
-      'CRLF is carriage return plus line feed, used by Windows. LF is line feed alone, used by Unix, Linux, and modern macOS. Text moved between conventions can appear as one long line, show stray characters, or produce doubled spacing, depending on what reads it.',
+      'CRLF stands for carriage return plus line feed, utilized by Windows. LF represents line feed by itself, employed by Unix, Linux, and current macOS versions. Content transferred across different standards may display as a single continuous line, exhibit random symbols, or create double spacing, contingent upon the reading system.',
   },
   {
     category: 'Troubleshooting and Comparison',
     question: 'What is the difference between these and the AI cleanup tools?',
     answer:
-      'These are general-purpose utilities that work on any text from any source. The AI cleanup tools target the specific artifact patterns different language models produce, with dedicated cleaners for ChatGPT, Gemini, Claude and others. There is overlap, and for AI output the dedicated category is more thorough.',
+      'These are universal utilities designed for any content from any origin. The AI cleanup tools focus on particular artifact patterns generated by various language models, featuring specialized sanitizers for ChatGPT, Gemini, Claude and others. While some overlap exists, the dedicated category provides a more comprehensive solution for AI text.',
   },
   {
     category: 'Troubleshooting and Comparison',
-    question: 'Which tool should I use first when text is behaving strangely?',
+    question: 'Which utility ought to be applied first when text acts unexpectedly?',
     answer:
-      'The invisible character detector. It inspects without changing anything, so it tells you what is actually present before you apply any transformation. Knowing the cause prevents you running cleanup steps that were never needed and missing the one that was.',
+      'The hidden character scanner. It examines without altering anything, showing you precisely what exists before running any transformation. Knowing the root cause keeps you from performing unnecessary cleanup actions while missing the crucial one.',
   },
   {
     category: 'Privacy and Security',
-    question: 'Can invisible or lookalike characters be used maliciously?',
+    question: 'Are deceptive or identical-looking symbols able to be exploited maliciously?',
     answer:
-      'Yes. Some Unicode characters render identically to Latin letters while being different code points, so a Cyrillic letter can make a convincing lookalike domain or filename. Invisible characters can also slip content past naive keyword filters. Detecting what is actually present, rather than trusting what renders, is the defence in both cases.',
+      'Yes. Certain Unicode symbols look identical to Latin characters while having distinct code points, allowing a Cyrillic letter to create a convincing replica domain or filename. Hidden characters can also bypass simple keyword filters. Finding what is truly there, rather than trusting visual output, serves as protection in both situations.',
   },
   {
     category: 'Technical',
-    question: 'What is UTF-8 and why does it matter?',
+    question: 'What is UTF-8 and for what reason is it significant?',
     answer:
-      'UTF-8 is the encoding that maps Unicode code points to bytes, using a single byte for ASCII characters and two to four for everything else. It keeps English text compact while representing every writing system, and it is now the overwhelming majority of web content. Nearly all encoding problems arise when something assumes a different encoding.',
+      'UTF-8 is the encoding system mapping Unicode code points to bytes, utilizing one byte for ASCII symbols and two through four for everything else. It keeps English copy concise while supporting all writing systems, and it now powers the vast majority of web data. Almost all encoding issues stem from assuming an incorrect encoding.',
   },
   {
     category: 'Compatibility and Formats',
-    question: 'Why does truncating text sometimes break an emoji?',
+    question: 'For what cause does shortening text occasionally fracture an emoji?',
     answer:
-      'Because a fixed-length cut can split a grapheme cluster. An emoji built from multiple code points joined together will render as unrelated components, or as a broken character, if the truncation lands mid-sequence. Truncating on grapheme boundaries rather than raw length avoids it.',
+      'Because a strict length cut can divide a grapheme cluster. An emoji composed of multiple connected code points will display as separate elements or a corrupted symbol if the cut lands mid-sequence. Cutting at grapheme boundaries instead of raw length prevents this.',
   },
   {
     category: 'Compatibility and Formats',
-    question: 'Why do HTML entities sometimes appear as literal text on my page?',
+    question: 'Why do HTML entities at times show up as literal text across my website?',
     answer:
-      'Double encoding. The content was escaped once, then escaped again by a content management system, so the ampersand in the escape sequence was itself escaped. The result displays the entity code rather than the character it represents. Decoding once resolves it.',
+      'Double encoding. The content was escaped once and subsequently escaped again by a content management platform, meaning the ampersand in the escape sequence was itself converted. The outcome shows the entity code rather than the intended character. Decoding once fixes the problem.',
   },
   {
     category: 'Technical',
-    question: 'What is mojibake and can I recover from it?',
+    question: 'What constitutes mojibake and is it possible to restore it?',
     answer:
-      'Mojibake is what encoding mismatch looks like: UTF-8 bytes interpreted as Latin-1 or Windows-1252, so each byte of a multi-byte character renders separately and a curly apostrophe becomes several strange symbols. The data is usually intact and only the interpretation is wrong, which means it is often recoverable once you identify the mismatch.',
+      'Mojibake is the result of an encoding conflict: UTF-8 bytes read as Latin-1 or Windows-1252, causing every byte of a multi-byte symbol to display independently so a curly apostrophe turns into strange symbols. The information is normally preserved and only the interpretation fails, meaning recovery is often possible once you spot the mismatch.',
   },
   {
     category: 'Technical',
-    question: 'What does a black diamond question mark character mean?',
+    question: 'What is the implication of a black diamond question mark symbol?',
     answer:
-      'It is a replacement character, indicating the system could not represent the original at all and substituted a placeholder. Unlike mojibake, this is usually unrecoverable, because the original value was discarded rather than misread. It typically means text passed through a system with a narrower character set.',
+      'It is a substitution symbol, showing the platform failed to display the original entirely and inserted a placeholder. Unlike mojibake, this is generally permanent, because the initial value was lost instead of misread. It typically indicates text traveled through a system with a more restrictive character set.',
   },
   {
     category: 'Technical',
-    question: 'Why do two identical-looking strings not match?',
+    question: 'Why do two visually identical strings fail to match?',
     answer:
-      'Often Unicode normalization. The same visible character can be encoded more than one way: an accented e can be a single precomposed code point or a plain e plus a combining accent. Both look identical and neither is wrong, but the byte sequences differ, so comparisons fail. Normalizing to NFC before comparing fixes it.',
+      'Usually Unicode normalization. The exact same visual character can be encoded in multiple ways: an accented e can be a single precomposed code point or a standard e combined with an accent. Both appear identical and neither is incorrect, yet the byte patterns vary, causing comparisons to fail. Normalizing to NFC prior to comparison resolves it.',
   },
   {
     category: 'Technical',
-    question: 'Why does one emoji count as several characters?',
+    question: 'For what reason does a single emoji measure as multiple characters?',
     answer:
-      'Because bytes, code points, and grapheme clusters are three different counts. An emoji may be one grapheme cluster that a reader sees as one symbol, two UTF-16 code units in JavaScript, and four bytes in UTF-8. Emoji built from zero-width joiner sequences, such as family emoji, can span a dozen code points.',
+      'Because bytes, code points, and grapheme clusters represent three distinct measurements. An emoji might be a single grapheme cluster viewed as one symbol by a user, two UTF-16 code units inside JavaScript, and four bytes via UTF-8. Emojis built from zero-width joiner sequences, like family icons, can span numerous code points.',
   },
   {
     category: 'Compatibility and Formats',
-    question: 'Why is text copied from a PDF such a mess?',
+    question: 'Why does content copied out of a PDF turn into such a disaster?',
     answer:
-      'A PDF stores glyph positions rather than flowing text, so copying reconstructs a reading order that is frequently wrong. Multi-column layouts interleave, ligatures like fi may copy as single characters that break search, hyphenation inserted for line breaks becomes literal hyphens mid-word, and headers interrupt the body.',
+      'A PDF preserves glyph locations rather than flowing text, meaning copying recreates a reading sequence that is frequently incorrect. Multi-column documents get mixed up, ligatures such as fi can copy as single characters disrupting search, hyphenation added for line wraps turns into literal hyphens mid-word, and headers break the main text.',
   },
   {
     category: 'Compatibility and Formats',
-    question: 'Why does Excel change my data when I open a CSV?',
+    question: 'Why does Excel alter my information upon opening a CSV file?',
     answer:
-      'It coerces values aggressively on open, before you have done anything. Anything resembling a date becomes one, leading zeros are stripped from identifiers and postcodes, and long numbers become scientific notation. Importing through the Data tab rather than double-clicking the file lets you set column types first.',
+      'It alters values forcefully upon opening, prior to any user action. Anything resembling a date gets converted, leading zeros are removed from IDs and postcodes, and lengthy numbers convert to scientific notation. Importing via the Data tab instead of double-clicking allows you to define column types beforehand.',
   },
   {
     category: 'Advanced Workflow',
-    question: 'How should I handle cleaning a large batch of files?',
+    question: 'In what way ought I to manage sanitizing a massive collection of documents?',
     answer:
-      'Fix the problem at the source if the same artifact appears in every export, since changing export settings once beats cleaning every file. Otherwise establish the operation sequence on a representative sample first, keep the originals, and verify one result in the real destination before processing the rest.',
+      'Address the issue at the origin if the exact same flaw occurs in every export, since adjusting export parameters once beats cleaning every document. Otherwise, test your operational sequence on a typical sample first, preserve the source files, and check one output in the final environment prior to processing the remainder.',
   },
   {
     category: 'Advanced Workflow',
-    question: 'What order should I apply text cleanup operations?',
+    question: 'In what sequence must I execute text cleaning procedures?',
     answer:
-      'Detect first so you know what is there. Then remove invisible characters, since that resolves most problems. Then normalize whitespace. Then handle punctuation only if the destination requires ASCII. Then strip formatting or markup if needed. Finally verify by pasting into the real destination rather than assuming.',
+      'Scan first to understand what exists. Next, eliminate invisible characters, as this solves most problems. Afterward, normalize spacing. Then handle punctuation only if the target demands ASCII. Next, remove formatting or markup if necessary. Finally, verify by pasting directly into the actual environment instead of assuming.',
   },
   {
     category: 'Advanced Workflow',
-    question: 'How do I prepare a list for reliable deduplication?',
+    question: 'What steps ensure a list is properly set up for dependable deduplication?',
     answer:
-      'Normalize before comparing. Remove invisible characters, trim leading and trailing whitespace, collapse internal runs of spaces, and decide whether case should matter. Only then deduplicate. Skipping normalization is why lists that look clean still contain apparent duplicates afterwards.',
+      'Normalize first before you compare. Clear hidden characters, trim leading and trailing spaces, condense any runs of internal spacing, and decide if case sensitivity matters. Only then should you run deduplication. Ignoring normalization is precisely why lists appearing spotless still show clear duplicates afterward.',
   },
   {
     category: 'Advanced Workflow',
-    question: 'How should I clean spreadsheet data before analysis?',
+    question: 'How ought one to scrub spreadsheet info prior to conducting an analysis?',
     answer:
-      'Trim leading and trailing whitespace across every text column first, since that alone fixes most failed lookups. Remove invisible characters, which imports frequently introduce. Then normalize case if you are matching on text values. Doing this before building formulas avoids debugging results that are wrong for invisible reasons.',
+      'Wipe out leading and trailing whitespace across all text columns initially, because doing just that fixes most failed lookups. Eradicate hidden characters, which imports frequently bring in. Next, standardize case if your matching relies on text values. Executing this ahead of building formulas prevents you from debugging results that are wrong for invisible reasons.',
   },
 ];
 

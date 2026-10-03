@@ -18,7 +18,7 @@ const toolSlug = 'naruto-name-generator';
 export async function generateMetadata(): Promise<Metadata> {
   return buildToolMeta({
     title: 'Naruto Name Generator',
-    description: 'Free Naruto name generator for shinobi, OC, and clan names. Build ninja names with clan surnames, given names, and Hidden Village ties — in your browser, no sign-up.',
+    description: 'Free Naruto Name Generator for clan, OC, and shinobi names. Create ninja names incorporating given names, clan surnames, and Hidden Village connections — right in your browser without registering.',
     seoTitle: 'Naruto Name Generator – Shinobi, Clan & OC Names',
     urlPath: `/${toolSlug}`,
   });
@@ -29,114 +29,90 @@ function createWriteUp() {
     <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
         <h2>Naruto Name Generator – Shinobi, Clan &amp; OC Names</h2>
-        <p>
-          This Naruto name generator builds shinobi names the way the series itself does: a clan surname, a given name, and a sense of which Hidden Village a character belongs to. Whether you are writing a fan fiction set in Konohagakure, designing an original character (OC) for a role-play server, or just want a handle that sounds like it belongs in the Naruto universe, the tool produces ready-to-use ninja names in your browser. There is no sign-up, nothing is stored, and you can generate as many batches as you like.
-        </p>
-        <p>
-          Naruto names are not random syllables. They follow Japanese naming order (surname first, given name second), draw on nature and food motifs, and often hint at a character&apos;s clan, element, or fighting style. This page explains those conventions so the names you pick actually feel canon — and so an OC you create can slot believably into a village, a team of three, or a clan with a kekkei genkai.
-        </p>
+        <p>This Naruto Name Generator constructs shinobi names the exact way the original series does: a given name, a clan surname, and an indication of the character's Hidden Village. Whether you are drafting fan fiction located in Konohagakure, creating an original character (OC) for a roleplay server, or simply wanting a screen name that fits the Naruto universe, the utility instantly delivers ready-to-use ninja names within your browser. There is no registration, no data is stored, and you are free to generate as many sets as you desire.</p>
+        <p>Naruto names are never just random syllables. They adhere to traditional Japanese naming conventions (family name first, personal name second), incorporate food and nature themes, and frequently hint at a character's element, clan, or combat style. This section outlines these exact rules so the names you choose genuinely feel canon — allowing any OC you design to fit seamlessly into a clan, a three-person squad, or a village possessing a kekkei genkai.</p>
 
-        <h2>How Naruto Character Names Are Built</h2>
-        <p>
-          Kishimoto built the cast from real Japanese words, food puns, and folklore. Understanding the pattern lets you generate names that sound native to the world rather than thrown together:
-        </p>
+        <h2>How Are Naruto Character Names Constructed</h2>
+        <p>Kishimoto constructed the character roster using traditional Japanese vocabulary, folklore references, and food puns. Comprehending this structure allows you to build names that feel native to the universe instead of randomly assembled:</p>
         <ul>
-          <li><strong>Surname first.</strong> Uzumaki Naruto, Uchiha Sasuke, Hyuga Hinata — the family name leads. Clan surnames carry the most identity, so the generator treats the surname as the anchor.</li>
-          <li><strong>Food and plant puns.</strong> &quot;Naruto&quot; is the fish-cake swirl in ramen; &quot;Sasuke&quot; and &quot;Sakura&quot; (cherry blossom) follow plant and folklore roots. Soft, edible-sounding given names are very in-genre.</li>
-          <li><strong>Clan = theme.</strong> Uchiha (fan/fire), Hyuga (sun), Nara (deer/shadow), Akimichi (food/expansion), Aburame (insects). A surname signals a kekkei genkai or jutsu specialty before you read a single line.</li>
-          <li><strong>Nature-nature naming.</strong> Many names lean on fire, water, wind, lightning, and earth — the five chakra natures — which is why elemental words make strong given names for an OC.</li>
+          <li><strong>Surname first.</strong> Uchiha Sasuke, Uzumaki Naruto, Hyuga Hinata — the family name comes first. Because clan surnames carry the heaviest identity, the generator utilizes the surname as the primary anchor.</li>
+          <li><strong>Food and plant puns.</strong> &quot;Naruto&quot; refers to the spiral fish-cake found in ramen; &quot;Sakura&quot; (cherry blossom) and &quot;Sasuke&quot; draw on botanical and folklore roots. Soft, edible-sounding given names fit the genre perfectly.</li>
+          <li><strong>Clan = theme.</strong> Hyuga (sun), Uchiha (fire/fan), Akimichi (expansion/food), Nara (shadow/deer), Aburame (insects). A family name immediately hints at a jutsu specialty or kekkei genkai before you read a single sentence.</li>
+          <li><strong>Nature-nature naming.</strong> Many names draw inspiration from the five chakra natures — earth, wind, fire, water, and lightning — which explains why elemental terms make fantastic given names for an OC.</li>
         </ul>
 
-        <h2>Names by Hidden Village</h2>
-        <p>
-          Each of the great shinobi villages has its own flavor, and matching a name to a village makes an OC instantly more believable:
-        </p>
+        <h2>Monikers Grouped by Hidden Village</h2>
+        <p>Every major shinobi village possesses its own distinct style, and matching a name to the correct village makes any OC instantly more convincing:</p>
         <ul>
-          <li><strong>Konohagakure (Hidden Leaf).</strong> Home of the Uchiha, Hyuga, Nara, Akimichi, and Uzumaki. Warm, plant-and-food-rooted names fit here.</li>
-          <li><strong>Sunagakure (Hidden Sand).</strong> Gaara, Temari, Kankuro — harder consonants and desert/wind motifs.</li>
-          <li><strong>Kirigakure (Hidden Mist).</strong> The Seven Swordsmen, Haku, Zabuza — cold, water-edged names with a sharper edge.</li>
-          <li><strong>Kumogakure (Hidden Cloud).</strong> Killer B, the Raikage — lightning and storm associations.</li>
-          <li><strong>Iwagakure (Hidden Stone).</strong> Earth-natured, grounded, blunt-sounding names.</li>
+          <li><strong>Konohagakure (Hidden Leaf).</strong> The birthplace of the Uzumaki, Hyuga, Uchiha, Nara, and Akimichi clans. Plant- and food-inspired names feel right at home here.</li>
+          <li><strong>Sunagakure (Hidden Sand).</strong> Kankuro, Gaara, Temari — featuring harsher consonants alongside wind and desert motifs.</li>
+          <li><strong>Kirigakure (Hidden Mist).</strong> The Seven Swordsmen, Haku, Zabuza - chilly, water-based monikers carrying extra sharpness.</li>
+          <li><strong>Kumogakure (Hidden Cloud).</strong> Killer B, the Raikage - tied to storms and electrical forces.</li>
+          <li><strong>Iwagakure (Hidden Stone).</strong> Earth-affiliated, solid, heavy-sounding titles.</li>
         </ul>
-        <p>
-          Pick a village first, then generate a batch and keep the names whose sound matches its element. A Hidden Mist OC named for water and a Hidden Sand OC named for wind read very differently even when both are &quot;Naruto-style.&quot;
-        </p>
+        <p>Select a settlement first, produce a set, and retain those whose tones match its element. A Hidden Mist OC named after water and a Hidden Sand OC named after wind read quite differently even when both are &quot;Naruto-style.&quot;</p>
 
-        <h2>Building an Original Character (OC)</h2>
-        <p>
-          For fan fiction and role-play, a name is the first thing readers judge. A strong Naruto OC name does three jobs at once: it places the character in a village, it hints at their clan or element, and it follows the surname-first order so it sits naturally beside canon characters. Generate a batch, then ask of each name: Does it sound like it could appear on a team roster next to Kakashi&apos;s squad? If yes, it is in the right register.
-        </p>
-        <p>
-          A common approach is to pick a canon clan to tie your OC to — say, a minor Hyuga branch member or a stray Uzumaki who survived the clan&apos;s fall — and let the surname do the heavy lifting while the generated given name keeps it fresh. If your OC is clanless (an orphan of the village, like Naruto himself early on), a standalone given name plus a self-chosen nickname can work just as well.
-        </p>
+        <h2>Designing an Original Character (OC)</h2>
+        <p>For fan fiction and role-play, a moniker is the initial detail critics notice. A solid Naruto OC name serves three purposes at once: it places the figure in a settlement, it hints at their lineage or element, and it applies the surname-first sequence so it fits smoothly next to official characters. Create a batch, then ask regarding each option: Does it sound like it could appear on a squad roster next to Kakashi&apos;s team? If affirmative, it matches the right tone.</p>
+        <p>A frequent tactic is picking an official clan to connect your OC with - like a minor Hyuga branch member or a lone Uzumaki surviving the clan&apos;s fall - letting the surname carry the weight while the generated given name keeps it fresh. Should your OC lack a clan (an orphan of the settlement, like Naruto himself initially), an independent given name plus a self-selected nickname works equally well.</p>
 
-        <h2>Jutsu, Nicknames, and Epithets</h2>
-        <p>
-          Beyond birth names, Naruto leans heavily on epithets — titles earned in battle. Jiraiya is the Toad Sage; Tsunade is the Slug Princess; Minato is the Yellow Flash; Itachi carries the weight of the Uchiha massacre. If you are naming an OC, consider generating a base name and then adding an epithet that reflects their signature jutsu or chakra nature: &quot;the Crimson Blade,&quot; &quot;the Silent Mist,&quot; &quot;the Lightning Fang.&quot; This two-layer naming (real name + battle title) is one of the most recognizable patterns in the series.
-        </p>
+        <h2>Techniques, Monikers, and Titles</h2>
+        <p>Beyond birth names, Naruto relies heavily on epithets - titles gained through battle. Jiraiya is the Toad Sage; Tsunade is the Slug Princess; Minato is the Yellow Flash; Itachi bears the burden of the Uchiha massacre. If you are naming an OC, think about creating a base moniker and appending an epithet reflecting their signature jutsu or chakra affinity: &quot;the Crimson Blade,&quot; &quot;the Silent Mist,&quot; &quot;the Lightning Fang.&quot; This dual-layer naming (real name plus combat title) is among the most recognizable tropes in the franchise.</p>
 
-        <h2>How to Use This Naruto Name Generator</h2>
+        <h2>[10] How to Use This Naruto Name Generator</h2>
         <ol className="list-decimal pl-6 space-y-2">
-          <li>Set how many names you want per run (1–24).</li>
-          <li>Click <strong>Generate names</strong> to get a fresh batch of shinobi-style names.</li>
-          <li>Skim for names that fit your chosen village or clan, then use the Copy button to save the whole list.</li>
-          <li>Paste into your story notes or character sheet and shortlist your favorites.</li>
-          <li>Run again for more options — there is no limit, no account, and no download.</li>
+          <li>Choose the quantity of names generated per batch (1–24).</li>
+          <li>Click <strong>Generate names</strong> to retrieve a fresh set of shinobi-themed monikers.</li>
+          <li>Scan for titles matching your chosen settlement or clan, then apply the Copy button to preserve the full selection.</li>
+          <li>Paste into your narrative notes or character sheet and shortlist your top picks.</li>
+          <li>Run the generator again for additional selections — there are zero restrictions, no login required, and zero downloads needed.</li>
         </ol>
-        <p>
-          Generation happens entirely in your browser. Your settings and the names you create are never sent to a server, so your OC ideas stay private until you choose to share them.
-        </p>
+        <p>Generation occurs completely within your browser. Your preferences and the monikers you build are never transmitted to a server, keeping your OC concepts private until you decide to share them.</p>
 
         <h2>Tips for Picking the Right Name</h2>
-        <p>
-          Say the name out loud — Naruto names are meant to be spoken in dub and sub alike, so a name that trips the tongue will trip your readers too. Keep the surname-first order if you want canon flavor, or flip it to given-name-first if your fic uses Western order for accessibility; just be consistent across your cast. Avoid accidentally reusing a canon full name (you do not want an OC literally called Uchiha Sasuke), but borrowing a canon surname for a new branch member is fair game and instantly grounds the character.
-        </p>
-        <p>
-          If you are naming a full team of three (the standard genin squad), generate a batch and pick names that contrast — one soft and plant-rooted, one hard and elemental, one neutral — so the trio sounds like distinct people rather than variations on one theme. That contrast is exactly what makes Team 7 (Naruto, Sasuke, Sakura) work on the page.
-        </p>
+        <p>Speak the moniker aloud - Naruto monikers are meant for vocalization in sub and dub alike, so a title that trips the tongue will trip your readers too. Maintain the surname-first sequence if you want official flavor, or reverse it to given-name-first when your story uses Western order for accessibility; just keep it uniform across your cast. Avoid accidentally duplicating an official full name (you do not want an OC literally called Uchiha Sasuke), but borrowing an official surname for a new branch member is fully acceptable and instantly grounds the figure.</p>
+        <p>If you are naming a complete team of three (the standard genin squad), produce a set and choose monikers offering contrast - one soft and plant-based, one hard and elemental, one neutral - so the trio reads like distinct individuals instead of variations on a single theme. That exact contrast makes Team 7 (Naruto, Sasuke, Sakura) succeed on the page.</p>
 
         <h2>What This Tool Does and Does Not Do</h2>
         <ul>
-          <li>It generates Naruto-style shinobi, clan, and OC names for fan fiction, role-play, and handles.</li>
-          <li>It does not reproduce official character names as a database — output is for original creative use.</li>
-          <li>It does not store your generated list or settings; everything runs locally in your browser.</li>
-          <li>It does not check name availability on any game, forum, or social platform — verify that yourself if you plan to use a name as a username.</li>
+          <li>It creates Naruto-style shinobi, clan, and OC names for fan fiction, role-play, and handles.</li>
+          <li>It does not duplicate official character names as a database - output is meant for original creative use.</li>
+          <li>It does not save your generated list or settings; everything processes locally inside your browser.</li>
+          <li>It does not verify name availability on any game, forum, or social network - check that yourself when planning to use a moniker as a username.</li>
         </ul>
 
         <h2>Final Notes</h2>
-        <p>
-          Naruto is one of the most-named fandoms online — fic writers, AMV makers, role-players, and players of titles like Shinobi Striker and the Ultimate Ninja Storm series all need names that fit. This Naruto name generator gives you that pool instantly, grounded in the franchise&apos;s real naming logic: surname-first order, clan-coded surnames, village-flavored sounds, and elemental given names. Generate a batch, lean on the clan and village notes above, and you will end up with shinobi names that feel like they were always part of the world.
-        </p>
+        <p>Naruto is among the most-named fandoms online - fiction writers, AMV creators, role-players, and gamers playing titles like Shinobi Striker and the Ultimate Ninja Storm series all require monikers that fit. This Naruto Name Generator supplies that pool instantly, grounded in the franchise&apos;s authentic naming logic: surname-first order, clan-coded surnames, village-flavored tones, and elemental given names. Create a set, rely on the clan and settlement notes above, and you will finish with shinobi names feeling as though they always belonged to the world.</p>
       </div>
     </section>
   );
 }
 
 const pageFaqs: FaqItem[] = [
-  { category: 'General', question: 'What is a Naruto name generator?', answer: 'A Naruto name generator is a browser tool that creates shinobi-style names in the style of the Naruto series — clan surnames, given names, and village-flavored sounds. It follows the franchise\'s naming logic (surname first, food and nature motifs, clan-coded surnames) so the names fit fan fiction, original characters, role-play, and handles. It runs locally with no sign-up and stores nothing.' },
-  { category: 'Naming style', question: 'How are real Naruto names structured?', answer: 'Naruto uses Japanese naming order: the surname comes first, then the given name (Uzumaki Naruto, Uchiha Sasuke, Hyuga Hinata). Surnames are clan-coded and hint at a kekkei genkai or jutsu specialty, while given names often come from food, plants, or folklore. "Naruto" itself is the swirl of fish cake in ramen, and "Sakura" means cherry blossom.' },
-  { category: 'Naming style', question: 'Do Naruto names mean something?', answer: 'Very often, yes. Kishimoto built names from real Japanese words and puns. Clan names signal a theme — Uchiha is fan/fire, Nara is deer/shadow, Aburame is insects, Akimichi is food. Given names lean on the five chakra natures (fire, water, wind, lightning, earth) and on nature imagery. Choosing a name with fitting meaning makes an OC feel canon.' },
-  { category: 'OC', question: 'How do I name a Naruto OC (original character)?', answer: 'A strong Naruto OC name does three things: places the character in a village, hints at their clan or element, and keeps surname-first order so it sits naturally beside canon characters. Tie your OC to a clan and let the surname do the heavy lifting, or make them clanless with a standalone given name plus a self-chosen nickname like Naruto had early on.' },
-  { category: 'OC', question: 'Can I give my OC a canon clan surname?', answer: 'Yes — borrowing a canon surname for a new branch member is a common and effective way to ground an OC. A minor Hyuga branch member or a surviving Uzumaki instantly reads as part of the world. Just avoid reusing a complete canon name (do not name an OC literally Uchiha Sasuke); pair the canon surname with a fresh given name.' },
-  { category: 'Villages', question: 'How do names differ by Hidden Village?', answer: 'Each village has a flavor. Konohagakure (Leaf) names are warm and plant- or food-rooted. Sunagakure (Sand) uses harder consonants and wind motifs. Kirigakure (Mist) leans cold and water-edged. Kumogakure (Cloud) carries lightning associations, and Iwagakure (Stone) sounds grounded and blunt. Pick a village first, then keep the generated names whose sound matches its element.' },
-  { category: 'Villages', question: 'Which village should my character be from?', answer: 'Choose the village that fits your story and your character\'s element. If your OC uses water jutsu, Kirigakure (Hidden Mist) fits; wind users suit Sunagakure (Hidden Sand); lightning users suit Kumogakure (Hidden Cloud). Konohagakure (Hidden Leaf) is the default home of most major clans, so it is the safest pick for a fic set in the main canon.' },
-  { category: 'Naming style', question: 'What are epithets and battle titles in Naruto?', answer: 'Beyond birth names, characters earn epithets from their deeds: Jiraiya is the Toad Sage, Tsunade the Slug Princess, Minato the Yellow Flash. For an OC, generate a base name then add a title reflecting their signature jutsu or chakra nature — "the Crimson Blade," "the Silent Mist," "the Lightning Fang." This real-name-plus-title pattern is one of the most recognizable in the series.' },
-  { category: 'OC', question: 'How do I name a full genin team of three?', answer: 'Generate a batch and pick three names that contrast: one soft and plant-rooted, one hard and elemental, one neutral. That contrast is what makes Team 7 (Naruto, Sasuke, Sakura) sound like three distinct people rather than variations on a theme. Aim for variety in length and sound across the squad.' },
-  { category: 'Usage', question: 'How do I use this Naruto name generator?', answer: 'Set how many names you want (1–24), click Generate names, then skim for names that fit your chosen clan or village. Use the Copy button to save the whole list, paste it into your story notes or character sheet, and shortlist your favorites. Run again for more — there is no limit, account, or download.' },
-  { category: 'Usage', question: 'Should I keep surname-first order?', answer: 'Keep surname-first (Uzumaki Naruto) for canon flavor. Some fics flip to given-name-first for Western readers — that is fine too, as long as you are consistent across your whole cast. Mixing orders within one story confuses readers, so decide early and stick with it.' },
-  { category: 'Usage', question: 'Can I edit the generated names?', answer: 'Absolutely. The output is a starting point. Tweak spelling, swap a surname onto a given name you like, or add an epithet. Many writers generate a batch, take the surname from one result and the given name from another, and combine them into the final character name.' },
-  { category: 'Use cases', question: 'Can I use these names for fan fiction?', answer: 'Yes — fan fiction is the primary use. The names follow the series\' naming conventions so your OCs sit believably alongside canon characters. Use the clan and village notes to match a name to your character\'s background, element, and the squad they belong to.' },
-  { category: 'Use cases', question: 'Can I use these names for role-play servers?', answer: 'Yes. Naruto role-play communities on Discord and forums expect names that fit the world. Generate shinobi-style names, pick one that matches your character\'s village and clan, and you will fit the setting. If the server requires unique names, check the member roster before claiming one.' },
-  { category: 'Use cases', question: 'Can I use these for Naruto games like Shinobi Striker or Ultimate Ninja Storm?', answer: 'Yes. Players of Shinobi Striker, the Ultimate Ninja Storm series, and other Naruto games use generators to name custom characters and online handles. Generate a batch, pick a name in the right register, then check availability in the game if it requires unique display names.' },
-  { category: 'Use cases', question: 'Can I use a generated name as a username?', answer: 'Yes, the names work as gaming or social handles. Just note this tool does not check whether a name is taken — usernames must be unique on each platform, so verify availability on the specific game, forum, or social network before committing.' },
-  { category: 'Technical', question: 'How are the names generated?', answer: 'The generator combines curated name elements built around Naruto\'s conventions — clan-style surnames, food and nature given names, and village-flavored sounds — and shuffles them at random in your browser. Each run produces a new set. Nothing is sent to a server; generation is entirely local.' },
-  { category: 'Technical', question: 'Are these real characters from the anime?', answer: 'No. The generator creates original, Naruto-style names for your own use rather than reproducing the official cast as a lookup database. That is intentional — you want fresh names for OCs and handles, not duplicates of canon characters you cannot use as your own.' },
-  { category: 'Privacy', question: 'Is my data sent to a server?', answer: 'No. Everything runs in your browser. When you click generate, names are created on your device. Your settings and the generated names are never sent to our servers and nothing is stored. You can use the tool in a private window and your OC ideas stay yours.' },
-  { category: 'Limits', question: 'How many names can I generate at once?', answer: 'You can request 1–24 names per run. For more, just run it again — each run produces a fresh random set and there is no daily or total limit. Paste multiple runs into one document if you want a large pool to shortlist from.' },
-  { category: 'Compatibility', question: 'Does it work on mobile?', answer: 'Yes. The generator runs in any modern browser on desktop, tablet, or phone with no app install. Generate a batch on your phone, copy it into your notes, and shortlist names wherever you are writing or playing.' },
-  { category: 'General', question: 'Is the Naruto name generator free?', answer: 'Yes, it is completely free with no account, sign-up, or download. Generate as many shinobi, clan, and OC names as you like, as often as you like.' },
-  { category: 'Best practices', question: 'How do I make a generated name sound more canon?', answer: 'Say it out loud — Naruto names are meant to be spoken, so a name that trips the tongue will trip your readers. Anchor it to a clan or village from the notes above, keep surname-first order, and consider adding a meaning-based given name (a chakra nature or nature word) so the name carries the same kind of weight canon names do.' },
-  { category: 'Troubleshooting', question: 'The names do not feel Naruto enough — what should I do?', answer: 'Generate a larger batch and filter hard: keep only the names whose sound matches a specific village element, and discard anything generic. Pair a strong clan-style surname with a softer, nature-rooted given name — that contrast is what gives canon names their feel. Adding a battle epithet also pushes a plain name firmly into the world.' },
+  { category: 'General', question: 'What is a Naruto name generator?', answer: 'A Naruto Name Generator is a browser utility that builds shinobi-themed monikers in the fashion of the Naruto series - clan surnames, given names, and settlement-flavored sounds. It follows the franchise\'s naming logic (surname first, food and nature motifs, clan-coded surnames) so the monikers suit fan fiction, original characters, role-play, and handles. It functions locally with zero registration and preserves nothing.' },
+  { category: 'Naming style', question: 'How do actual Naruto names work structurally?', answer: 'Naruto utilizes Japanese naming order: the surname appears first, then the given name (Uzumaki Naruto, Uchiha Sasuke, Hyuga Hinata). Surnames are clan-coded and point toward a kekkei genkai or jutsu specialty, while given names often originate from food, plants, or folklore. "Naruto" itself represents the swirl of fish cake in ramen, and "Sakura" denotes cherry blossom.' },
+  { category: 'Naming style', question: 'Do names in Naruto carry specific meanings?', answer: 'Most definitely. Kishimoto routinely based names on authentic Japanese terms and wordplay. Family names signify an inherent theme — Uchiha relates to fans and fire, Nara denotes shadow and deer, Aburame pertains to insects, and Akimichi references sustenance. Given names regularly reflect the natural landscape or the five elemental chakra types (lightning, fire, water, earth, wind). Selecting a name with deliberate significance gives your custom OC an authentic presence.' },
+  { category: 'OC', question: 'What is the best way to create a name for a Naruto OC (original character)?', answer: 'A powerful Naruto OC name accomplishes three goals: grounds the person in a specific settlement, hints at their elemental affinity or family, and maintains the traditional surname-first structure so it fits smoothly beside official characters. Connect your OC to a designated family and let the surname carry the weight, or make them independent by using a standalone given name combined with an original moniker like Naruto possessed initially.' },
+  { category: 'OC', question: 'Is it acceptable to assign my OC a recognized family surname?', answer: 'Indeed - adopting an established surname for a new collateral family member remains a reliable and effective strategy to anchor an OC. A minor Hyuga branch descendant or a surviving Uzumaki instantly feels authentic to the setting. Simply avoid duplicating a complete canonical name (never call an OC literally Uchiha Sasuke); instead, pair the familiar surname with an entirely original given name.' },
+  { category: 'Villages', question: 'In what ways do names vary depending on the Hidden Village?', answer: 'Every settlement carries a distinct style. Konohagakure (Leaf) names feel warm and draw inspiration from plants or foods. Sunagakure (Sand) relies on harsher consonants and wind themes. Kirigakure (Mist) leans toward cold, water-associated tones. Kumogakure (Cloud) holds lightning connections, and Iwagakure (Stone) sounds grounded and heavy. Choose your village first, then select generated names whose sounds match that region\'s element.' },
+  { category: 'Villages', question: 'Which village should my character originate from?', answer: 'Select the town that matches your narrative and your character\'s chakra affinity. If your OC specializes in water techniques, Kirigakure (Hidden Mist) works well; wind users fit Sunagakure (Hidden Sand); lightning users suit Kumogakure (Hidden Cloud). Konohagakure (Hidden Leaf) serves as the standard home for most prominent clans, making it the most secure choice for a story set in the primary canon timeline.' },
+  { category: 'Naming style', question: 'What exactly are epithets and combat titles within Naruto?', answer: 'Beyond given names, figures earn titles based on their achievements: Jiraiya is the Toad Sage, Tsunade the Slug Princess, Minato the Yellow Flash. For an OC, create a foundational name and attach a title representing their signature technique or chakra type - "the Crimson Blade," "the Silent Mist," "the Lightning Fang." This real-name-plus-title formula stands out as one of the most recognizable conventions in the franchise.' },
+  { category: 'OC', question: 'How can I properly name a complete three-person genin squad?', answer: 'Produce a collection and select three names that offer good contrast: one soft and plant-based, one hard and elemental, one neutral. That exact contrast is why Team 7 (Naruto, Sasuke, Sakura) sounds like three distinct individuals rather than copy-pasted themes. Try to ensure variation in length and auditory feel across the entire team.' },
+  { category: 'Usage', question: 'How can I operate this Naruto Name Generator?', answer: 'Set the desired quantity of names (1-24), click Generate names, and review the results for options that suit your chosen clan or village. Use the Copy button to capture the complete list, paste it directly into your writing notes or character profile, and shortlist your top picks. Run it again for additional choices - there are zero restrictions, required accounts, or downloads.' },
+  { category: 'Usage', question: 'Ought I to maintain the surname-first arrangement?', answer: 'Preserve the surname-first order (Uzumaki Naruto) for genuine canonical flavor. Certain stories invert this to given-name-first for Western audiences - which is also acceptable, provided you remain consistent throughout your entire cast. Mixing naming formats inside a single project confuses readers, so make your choice early and stick with it.' },
+  { category: 'Usage', question: 'Am I allowed to edit the generated names?', answer: 'Certainly. The generated output serves merely as a starting point. Adjust spellings, swap a surname onto a given name you prefer, or append an epithet. Numerous authors produce a batch, take the surname from one option and the given name from another, and merge them together to form the final character identity.' },
+  { category: 'Use cases', question: 'Can I apply these names toward fan fiction projects?', answer: 'Yes - fan fiction represents the primary use case. The generated names follow the franchise\'s strict naming traditions so your OCs blend naturally alongside official figures. Utilize the clan and village guidelines to align a name with your character\'s background, element, and squad affiliation.' },
+  { category: 'Use cases', question: 'Are these names suitable for role-play servers?', answer: 'Indeed. Naruto role-playing groups across Discord and various forums expect names that match the universe. Generate shinobi-style options, select one that reflects your character\'s home village and clan, and you will blend right into the environment. If the server demands completely unique names, check the roster before claiming one.' },
+  { category: 'Use cases', question: 'Am I allowed to use these for Naruto games like Shinobi Striker or Ultimate Ninja Storm?', answer: 'Yes. Participants playing Shinobi Striker, the Ultimate Ninja Storm series, and related Naruto titles utilize generators to name custom avatars and online handles. Produce a batch, choose a name matching the correct tone, and verify availability inside the game if it mandates unique display names.' },
+  { category: 'Use cases', question: 'Is it okay to use a generated name as a username?', answer: 'Indeed, these monickers function well for gaming or social profiles. Be aware that this tool does not verify if a handle is already in use — usernames need to be distinct on every platform, so check availability on your chosen game, forum, or social network beforehand.' },
+  { category: 'Technical', question: 'In what manner are the names created?', answer: 'The generator blends hand-picked name components designed around Naruto\'s established rules - clan-themed surnames, food and nature given names, and village-inspired sounds - and randomizes them directly inside your browser. Every execution generates a fresh batch. Nothing gets transmitted to any server; the creation process happens entirely locally.' },
+  { category: 'Technical', question: 'Are these actual characters featured in the anime?', answer: 'No. The generator produces brand new, Naruto-themed names for your personal use rather than replicating the official cast as a searchable database. That is intentional - you require fresh names for OCs and handles, rather than duplicates of canon characters you cannot truly make your own.' },
+  { category: 'Privacy', question: 'Are my details transmitted to a server?', answer: 'None at all. Everything processes directly within your web browser. The moment you press the button, titles are generated right on your machine. Your personal options and generated outputs never touch external servers or databases. Running this system within private browsing mode guarantees your OC concepts remain entirely your own.' },
+  { category: 'Limits', question: 'How many names am I able to generate simultaneously?', answer: 'Each query lets you produce between 1 and 24 results. When you want additional ideas, simply trigger the generator again — every click offers an entirely new random set without daily caps or usage ceilings. You can paste consecutive batches into a blank draft to compile a broad collection for your shortlist.' },
+  { category: 'Compatibility', question: 'Does it function on mobile devices?', answer: 'Absolutely. The tool functions seamlessly across any current web browser on smartphones, tablets, or desktop setups without requiring extra software. Produce an assortment on your mobile device, store them in your notes app, and refine your roster wherever your writing takes place.' },
+  { category: 'General', question: 'Does the Naruto Name Generator cost anything?', answer: 'Indeed, this tool is entirely free to access, demanding no account setup, logins, or external downloads. Feel free to generate endless batches of shinobi identities, OC concepts, and custom clan titles whenever necessary.' },
+  { category: 'Best practices', question: 'How can I make a generated name feel more authentic to the canon?', answer: 'Test the cadence aloud — monikers in Naruto are crafted to be spoken, meaning an awkward flow will disrupt your reader. Ground the character by referencing an established village or clan from above, use the traditional surname-first structure, and integrate a meaningful personal name (like a nature element or chakra nature) to mirror the weight of canonical figures.' },
+  { category: 'Troubleshooting', question: 'The names do not feel Naruto enough — what should I do?', answer: 'Create a larger batch of options and trim them aggressively: retain merely the names whose phonetic flavor matches an elemental village style, casting aside anything bland. Contrast an imposing, clan-oriented surname with a gentler, nature-inspired personal name — that precise balance defines genuine canonical figures. Attaching an earned combat epithet will also instantly integrate a basic moniker into the universe.' },
 ];
 
 export default async function NarutoNameGeneratorPage() {
@@ -154,7 +130,7 @@ export default async function NarutoNameGeneratorPage() {
         {createWriteUp()}
         <div className="mt-10 space-y-3">
           <h2 className="text-2xl font-semibold text-slate-900">Frequently Asked Questions</h2>
-          <p className="text-slate-700">Common questions about the Naruto name generator.</p>
+          <p className="text-slate-700">Frequent inquiries concerning the Naruto Name Generator.</p>
         </div>
         <FAQSection items={pageFaqs} />
         <FaqJsonLd faqs={pageFaqs} />

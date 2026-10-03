@@ -25,201 +25,201 @@ export async function generateMetadata(): Promise<Metadata> {
 const faqs: FaqItem[] = [
   {
     category: 'Getting started',
-    question: 'Can ChatGPT actually clean my computer?',
+    question: 'Can ChatGPT truly tidy up my machine?',
     answer:
-      'It depends which ChatGPT you mean. The chat window in your browser cannot — it has no file system access, cannot delete files, and cannot see your disk. It advises; you execute. But agentic coding tools like Codex, Claude Code, and Cursor run locally with real terminal and file access, and those can genuinely scan your drive, report what is consuming space, and run cleanup commands directly. Most guides still say "AI cannot touch your computer", which was true in 2023 and is now only half the picture. Pick advisory mode when you want to understand something, agentic mode when you want the work done.',
+      'It relies on which ChatGPT you reference. The web interface in your browser cannot — it lacks filesystem access, cannot erase documents, and cannot view your storage. It suggests; you execute. Yet agentic coding utilities like Codex, Claude Code, and Cursor operate locally with genuine terminal and file permissions, and those can genuinely inspect your drive, report what consumes capacity, and run removal commands directly. Most manuals still state "AI cannot touch your device", which held true in 2023 and currently represents only half the reality. Select advisory mode when you wish to comprehend a concept, agentic mode when you want tasks executed.',
   },
   {
     category: 'Getting started',
-    question: 'Is it safe to let ChatGPT tell me which files to delete?',
+    question: 'Is it secure to permit ChatGPT to indicate which documents to erase?',
     answer:
-      'It is safe when you verify before acting, and risky when you paste commands blindly. ChatGPT does not know your specific machine — it cannot see which files exist, which programs you depend on, or whether a folder holds irreplaceable data. It generates plausible advice based on patterns, which is usually correct for standard Windows paths but occasionally confidently wrong. The rule that keeps you safe: never run a delete command you do not understand. Ask it to explain what a path contains and what breaks if it is removed before you touch anything.',
+      'It remains secure when you validate prior to execution, and hazardous when you paste instructions blindly. ChatGPT lacks awareness of your specific device — it cannot view which documents exist, which applications you rely upon, or whether a directory contains irreplaceable information. It produces plausible recommendations derived from patterns, typically accurate for standard Windows directories yet occasionally confidently erroneous. The guideline ensuring your safety: never execute a removal instruction you fail to comprehend. Request an explanation of what a directory contains and what breaks if removed prior to touching anything.',
   },
   {
     category: 'Getting started',
-    question: 'Which agentic tools can actually access my computer?',
+    question: 'Which agentic utilities can genuinely access my device?',
     answer:
-      'Codex, Claude Code, and Cursor all run locally and can read files, list directories, and execute shell commands with your permission. Claude Code and Codex run in a terminal; Cursor is an editor with an agent built in. They were designed for software development, but nothing restricts them to code — a directory scan is a directory scan whether it holds source files or old video exports. For cleanup work they are substantially better than browser chat at the discovery step, because they can measure your actual disk instead of describing what is typically true. Each asks before running commands by default, and you should leave that setting on.',
+      'Codex, Claude Code, and Cursor all execute locally and can read files, enumerate folders, and run shell instructions with your authorization. Claude Code and Codex operate within a terminal; Cursor is an editor featuring an integrated agent. They were engineered for software creation, yet nothing restricts them to code — a folder scan constitutes a folder scan whether it houses source documents or legacy video outputs. For cleanup operations they prove significantly superior to browser chat during the discovery phase, since they measure your actual storage instead of describing typical conditions. Each inquires prior to executing instructions by default, and you ought to keep that setting active.',
   },
   {
     category: 'Getting started',
-    question: 'Is it risky to let an agentic tool delete files for me?',
+    question: 'Is it hazardous to allow an agentic utility to erase documents on my behalf?',
     answer:
-      'Yes, and the risk is different in kind from advisory mode. A wrong suggestion in chat costs you nothing until you act on it; a wrong action from a tool with delete permissions is already done. The mitigations that work: ask for a report before any action, require a dry run that prints paths without deleting, keep the confirmation prompt enabled rather than approving everything automatically, and never point one at a directory holding irreplaceable data you have not backed up. Used with those constraints it is safer than manual deletion, because the tool can check what a file is before removing it. Used with blanket approval it is the most dangerous option on this page.',
+      'Yes, and the hazard differs fundamentally from advisory mode. An incorrect recommendation within chat costs nothing until you act upon it; an incorrect action from a utility having removal privileges is already executed. Effective mitigations: request a report prior to any operation, demand a dry run outputting paths without erasing, maintain the confirmation prompt active instead of approving everything automatically, and never target a directory housing irreplaceable information left unbacked. Utilized alongside these constraints it proves safer than manual removal, because the utility verifies document identities prior to elimination. Utilized with blanket approval it represents the most hazardous option on this page.',
   },
   {
     category: 'Getting started',
-    question: 'What information should I give ChatGPT about my computer?',
+    question: 'What details should I provide ChatGPT regarding my device?',
     answer:
-      'Start with your operating system and version (Windows 11 23H2, Windows 10 22H2, macOS Sonoma), your total and free disk space, how much RAM you have, and the specific symptom you want fixed. Vague prompts produce generic listicles. A prompt like "Windows 11, 256GB SSD with 8GB free, machine takes four minutes to boot, I mostly use Chrome and Excel" gets a far more targeted response than "how do I clean my PC". Avoid pasting anything containing your name, license keys, account numbers, or file paths that include personal identifiers.',
+      'Begin with your OS and edition (Windows 11 23H2, Windows 10 22H2, macOS Sonoma), your total and available storage, your RAM capacity, and the exact symptom requiring resolution. Vague prompts yield generic listicles. A prompt like "Windows 11, 256GB SSD with 8GB free, machine takes four minutes to boot, I mostly use Chrome and Excel" yields a far more targeted response than "how do I clean my PC". Prevent pasting anything containing your identity, license keys, account numbers, or file paths incorporating personal markers.',
   },
   {
     category: 'Getting started',
-    question: 'Do I need ChatGPT Plus for this, or does the free tier work?',
+    question: 'Do I require ChatGPT Plus for this, or does the free tier suffice?',
     answer:
-      'The free tier handles this task well. Diagnosing a slow computer relies on general technical knowledge that all current models have. Paid tiers give you faster responses, higher usage limits, and access to newer models, which helps if you are working through a long troubleshooting session and hit a rate limit mid-diagnosis. For a one-off cleanup, free is sufficient. Do not upgrade specifically for PC maintenance advice.',
+      'The free tier manages this operation effectively. Diagnosing a sluggish device depends on general technical expertise possessed by all current models. Paid editions grant expedited responses, elevated usage caps, and access to newer models, beneficial if executing an extended troubleshooting session and encountering a rate limit mid-diagnosis. For a singular cleanup, free proves adequate. Avoid upgrading specifically for PC upkeep guidance.',
   },
   {
     category: 'Diagnosis',
-    question: 'How do I find out what is actually making my computer slow?',
+    question: 'What is the best way to discover the true cause of my computer\'s slowdown?',
     answer:
-      'Measure before you change anything. On Windows, open Task Manager (Ctrl+Shift+Esc), go to the Performance tab, and note which resource is saturated: CPU, memory, disk, or GPU. A machine pinned at 100% disk has a completely different cause than one at 100% memory. Then check the Startup tab to see what launches at boot. Paste your findings to ChatGPT and ask it to interpret them. This measurement-first approach prevents the most common mistake — deleting files when the actual problem is a background process or failing drive.',
+      'Measure prior to modifying anything. On Windows, open Task Manager (Ctrl+Shift+Esc), navigate to the Performance tab, and observe which resource is maxed out: CPU, memory, storage, or GPU. A device pinned at 100% storage exhibits an entirely different root cause than one at 100% memory. Subsequently review the Startup tab to observe what initiates at boot. Paste your discoveries to ChatGPT and request an interpretation. This measurement-first methodology averts the most frequent error — erasing documents when the genuine issue involves a background process or failing drive.',
   },
   {
     category: 'Diagnosis',
-    question: 'What is a good first prompt to diagnose a slow PC?',
+    question: 'What constitutes a beneficial initial prompt for diagnosing a sluggish PC?',
     answer:
-      'Try: "I am on Windows 11. In Task Manager, memory sits at 85% at idle with no apps open, and my disk is at 3% usage. I have 8GB RAM. What are the most likely causes, ranked by probability, and how do I confirm each one?" This gives ChatGPT the specifics it needs, asks for ranked hypotheses rather than a generic list, and requests confirmation steps so you verify before acting. Asking for a ranked list with confirmation steps is the single biggest improvement you can make to troubleshooting prompts.',
+      'Try this: "Running Windows 11 with 8GB RAM, Task Manager reports memory at 85% during idle with nothing running, while disk activity is around 3%. Could you rank the probable reasons by likelihood, along with verification methods for every scenario?" Providing ChatGPT with these exact parameters demands a prioritized diagnosis rather than a vague rundown, offering practical validation actions before you intervene. Demanding prioritized suggestions paired with distinct diagnostic steps constitutes the ultimate strategy to boost your tech support queries.',
   },
   {
     category: 'Diagnosis',
-    question: 'How can ChatGPT help me read Task Manager output?',
+    question: 'How can ChatGPT assist me in reading Task Manager output?',
     answer:
-      'Paste the process names consuming the most resources and ask what each one is. Windows is full of processes with opaque names — svchost.exe, dwm.exe, MsMpEng.exe, RuntimeBroker.exe — and knowing which are essential system components versus optional bloat is genuinely useful. MsMpEng.exe, for example, is Windows Defender doing a scan; it is meant to be there and will settle down. Ask specifically: "Is this a core Windows process, a driver, or third-party software, and what happens if I end it?"',
+      'Copy the active resource-heavy process names and inquire about their identity. Windows contains numerous services featuring obscure titles — svchost.exe, dwm.exe, MsMpEng.exe, RuntimeBroker.exe — and determining which represent vital system components versus optional bloat proves genuinely helpful. For instance, MsMpEng.exe represents Windows Defender running a scan; it belongs there and will eventually quiet down. Ask precisely: "Is this a core Windows process, a driver, or third-party software, and what happens if I end it?"',
   },
   {
     category: 'Diagnosis',
-    question: 'My disk shows 100% usage constantly. What does that mean?',
+    question: 'My storage drive exhibits constant 100% activity. What does that signify?',
     answer:
-      'On mechanical hard drives, sustained 100% disk usage usually means the drive cannot keep up with requests — often from Windows Search indexing, Windows Update downloading in the background, or Superfetch/SysMain preloading data. On SSDs it more often signals a failing drive or a runaway process. Ask ChatGPT to walk you through checking drive health with the built-in command "wmic diskdrive get status" or through CrystalDiskInfo. If a drive reports anything other than OK, stop cleaning and back up immediately — cleanup is irrelevant if the hardware is dying.',
+      'On traditional hard drives, continuous 100% disk usage typically indicates the hardware cannot process requests quickly enough — frequently caused by Windows Search indexing, Windows Update downloading silently, or Superfetch/SysMain caching data. For solid-state drives, this points more frequently toward a failing drive or a runaway process. Ask ChatGPT to guide you through verifying drive health utilizing the native command "wmic diskdrive get status" or via CrystalDiskInfo. If any drive reports a status other than OK, halt the optimization process and back up immediately — cleanup means nothing if the hardware fails.',
   },
   {
     category: 'Diagnosis',
-    question: 'How do I tell if I need more RAM or just need to close things?',
+    question: 'How can I determine if I require additional RAM or simply need to shut down applications?',
     answer:
-      'In Task Manager, check memory usage with your normal workload open. If you are consistently above 80% with everyday apps running, and the Committed value substantially exceeds your physical RAM, you are paging to disk and more RAM would genuinely help. If memory only spikes when you have forty browser tabs open, that is a habit problem, not a hardware problem. Describe both numbers to ChatGPT and it can tell you which pattern you are seeing. Browsers are the usual culprit — Chrome and Edge each tab can consume hundreds of megabytes.',
+      'Inside Task Manager, inspect your memory consumption while running your typical workload. If you consistently exceed 80% usage with everyday programs active, and the Committed value greatly surpasses your physical RAM, your system is paging to disk and more RAM would genuinely provide relief. If consumption only spikes when forty browser tabs remain open, that represents a behavioral habit rather than a hardware limitation. Share both metrics with ChatGPT so it can identify your specific pattern. Browsers represent the typical culprits — Chrome and Edge can consume hundreds of megabytes per tab.',
   },
   {
     category: 'Disk space',
-    question: 'What is the safest way to free up disk space on Windows?',
+    question: 'What constitutes the safest technique for reclaiming disk storage on Windows?',
     answer:
-      'Start with the built-in tools, which are designed not to break anything. Storage Sense (Settings > System > Storage) shows exactly what is consuming space, broken down by category, and can automatically clear temporary files. Disk Cleanup with the "Clean up system files" button removes old Windows Update files, which frequently reclaims 5–20GB after a major update. Both are safe by design. Only after exhausting these should you consider manually deleting anything, and that is where ChatGPT is useful for identifying what a mystery folder actually contains.',
+      'Begin with the native utilities, which are built to prevent system damage. Storage Sense (Settings > System > Storage) reveals precisely what occupies space, categorized by type, and automatically purges temporary files. Disk Cleanup featuring the "Clean up system files" button eliminates outdated Windows Update data, frequently recovering 5–20GB following a major upgrade. Both options are safe by design. Consider manual deletion only after exhausting these methods, which is where ChatGPT proves valuable for figuring out what an unfamiliar folder actually holds.',
   },
   {
     category: 'Disk space',
-    question: 'Can I delete the Windows.old folder?',
+    question: 'Is it safe to delete the Windows.old directory?',
     answer:
-      'Yes, and it is often the single largest easy win — commonly 15–30GB. Windows.old contains your previous Windows installation, kept so you can roll back after an upgrade. After roughly ten days Windows deletes it automatically, but if you upgraded and the folder persists, you can remove it. Do not delete it manually with File Explorer; use Disk Cleanup, select "Previous Windows installation(s)", and let Windows handle it. Manual deletion can leave permission-locked remnants. The tradeoff: once removed, you cannot roll back to your previous Windows version.',
+      'Indeed, and it often represents the single largest effortless victory — typically saving 15–30GB. Windows.old preserves your prior Windows installation, allowing you to revert following an upgrade. Windows removes it automatically after roughly ten days, but if you upgraded and the directory remains, you can delete it. Avoid manual removal through File Explorer; utilize Disk Cleanup, choose "Previous Windows installation(s)", and let the operating system handle the task. Manual removal might leave behind permission-locked remnants. The compromise: once deleted, returning to your previous Windows release is impossible.',
   },
   {
     category: 'Disk space',
-    question: 'What are temp files and is it safe to clear them?',
+    question: 'What are temporary files and does clearing them pose any risk?',
     answer:
       'Temporary files are scratch data written by applications and the operating system during normal work — installer caches, browser caches, crash dumps, and partial downloads. Most become useless the moment the application closes, but some are actively in use. Clearing them through Disk Cleanup or Storage Sense is safe because those tools skip files currently in use. Manually deleting everything in C:\\Windows\\Temp while applications are running can cause the running application to error. Use the built-in tools rather than manual deletion.',
   },
   {
     category: 'Disk space',
-    question: 'How do I find which folders are eating my disk space?',
+    question: 'How do I locate which directories consume my storage capacity?',
     answer:
-      'Windows Storage settings gives a category breakdown, but for folder-level detail a free tool like WizTree or WinDirStat shows a visual map of exactly which directories are largest. Once you have identified a large mystery folder, that is the ideal question for ChatGPT: paste the path and ask what creates it and whether it is safe to clear. Common surprises include hibernation files (hiberfil.sys, equal to your RAM size), the WinSxS component store, and orphaned game installations.',
+      'Windows Storage settings provides a categorical breakdown, though for directory-level precision a complimentary utility like WizTree or WinDirStat displays a visual map highlighting the largest folders. Upon locating an expansive unknown directory, pose that exact query to ChatGPT: share the path and ask what generates it and whether purging it is safe. Typical surprises include hibernation files (hiberfil.sys, matching your RAM capacity), the WinSxS component store, and leftover game installations.',
   },
   {
     category: 'Disk space',
-    question: 'Should I delete hiberfil.sys to save space?',
+    question: 'Should I erase hiberfil.sys to recover storage?',
     answer:
-      'Only if you never use hibernation. The file equals roughly your installed RAM — 16GB of RAM means a 16GB file — so it is tempting on small drives. Disabling hibernation with "powercfg /hibernate off" in an admin prompt removes it. The cost: you lose hibernate and Windows Fast Startup, so boot times may increase and laptops will fully shut down instead of suspending to disk. On a desktop with a large drive, leave it alone. On a laptop with a 128GB SSD, it can be worth reclaiming.',
+      'Only if you never utilize hibernation. The file size roughly mirrors your installed memory — 16GB of RAM results in a 16GB file — making it appealing on compact drives. Disabling hibernation via "powercfg /hibernate off" within an administrator prompt removes it entirely. The drawback: you forfeit hibernation and Windows Fast Startup, meaning boot times might lengthen and laptops will shut down completely instead of entering suspend-to-disk mode. On a desktop featuring an expansive drive, keep it untouched. On a laptop equipped with a 128GB SSD, reclaiming that space proves worthwhile.',
   },
   {
     category: 'Disk space',
-    question: 'Is it worth emptying the browser cache?',
+    question: 'Does emptying the browser cache provide any benefit?',
     answer:
-      'Rarely for space, sometimes for troubleshooting. Browser caches are typically a few hundred megabytes to a couple of gigabytes — meaningful on a nearly-full drive, negligible otherwise. The cache exists to make browsing faster, so clearing it means pages reload from scratch and feel slower for a while. Clear it when you are debugging a website that renders incorrectly, not as routine maintenance. If your drive is genuinely full, the cache is far from your biggest target.',
+      'Seldom for storage, occasionally for troubleshooting. Browser caches typically span a few hundred megabytes up to multiple gigabytes — significant on a nearly-full drive, negligible otherwise. The cache exists to accelerate web browsing, meaning clearing it forces pages to reload completely and feel sluggish temporarily. Clear it when diagnosing a website displaying rendering errors, not as routine maintenance. If your drive is genuinely at capacity, the cache is far from your primary target.',
   },
   {
     category: 'Startup and performance',
-    question: 'How do I decide which startup programs to disable?',
+    question: 'How do I determine which startup apps to deactivate?',
     answer:
-      'Open Task Manager, go to the Startup apps tab, and sort by startup impact. Anything marked High and not essential is a candidate. The judgment call is knowing what is essential, which is exactly where ChatGPT helps — paste the list of startup entries and ask which are required for the system to function, which are optional convenience features, and which are known bloatware. Disabling a startup entry does not uninstall the program; you can still launch it manually, and you can re-enable it if something breaks.',
+      'Launch Task Manager, navigate to the Startup apps tab, and sort entries by startup impact. Any item labeled High and deemed non-essential serves as a candidate. The judgment call involves recognizing essential items, which is precisely where ChatGPT assists — share the startup list and ask which are necessary for system operations, which represent optional conveniences, and which constitute known bloatware. Disabling a startup item does not remove the software; you can still launch it manually, and you can reactivate it if issues arise.',
   },
   {
     category: 'Startup and performance',
-    question: 'What startup programs should I never disable?',
+    question: 'Which startup applications should remain active under all circumstances?',
     answer:
-      'Leave anything belonging to your antivirus, audio drivers, graphics drivers, touchpad or input drivers, and OEM power management alone. Disabling audio or graphics driver helpers commonly results in no sound, broken display scaling, or non-functioning function keys. Cloud storage clients (OneDrive, Dropbox) are safe to disable but will stop syncing until you launch them, which surprises people who assume their files are still backing up. If you are unsure about an entry, ask before disabling.',
+      'Preserve anything associated with your antivirus software, audio drivers, graphics drivers, touchpad or input drivers, and OEM power management. Deactivating audio or graphics driver assistants frequently leads to missing sound, flawed display scaling, or non-operational function keys. Cloud storage programs (OneDrive, Dropbox) are safe to disable but will halt synchronization until opened manually, surprising users who assume backups continue running. If uncertainty surrounds any entry, inquire before turning it off.',
   },
   {
     category: 'Startup and performance',
-    question: 'Will disabling startup programs actually speed up boot?',
+    question: 'Will turning off startup programs genuinely accelerate system boot times?',
     answer:
-      'Usually yes, and it is one of the highest-impact changes available. Every startup entry adds work before your desktop becomes usable. A machine with twenty startup programs can take several minutes to become responsive after login even though the desktop appears quickly. That gap between "desktop visible" and "actually usable" is almost entirely startup programs loading. Trimming high-impact entries you do not need often produces the most noticeable improvement of any cleanup step.',
+      'Typically yes, and it represents one of the highest-impact adjustments available. Every startup entry creates background tasks before your desktop becomes usable. A computer featuring twenty startup items might require several minutes to respond following login even though the desktop appears rapidly. That delay between "desktop visible" and "actually usable" stems almost entirely from loading startup programs. Trimming high-impact items you do not need frequently delivers the most noticeable enhancement of any optimization step.',
   },
   {
     category: 'Startup and performance',
-    question: 'Do I still need to defragment my drive?',
+    question: 'Is it still necessary to defragment my drive?',
     answer:
-      'Only if you have a mechanical hard drive, and Windows already does it on a schedule. Defragmenting reorganizes fragmented files so a spinning disk head travels less. Solid-state drives have no moving parts, gain nothing from defragmentation, and suffer unnecessary write wear from it. Windows recognizes SSDs and runs TRIM instead, which is the correct maintenance operation. If ChatGPT suggests defragmenting without asking your drive type, that is a sign it is generating generic advice — tell it which drive you have.',
+      'Only if you operate a traditional mechanical hard drive, and Windows already manages this automatically on a schedule. Defragmentation rearranges scattered files so a spinning disk head travels shorter distances. Solid-state drives contain zero moving parts, gain no advantage from defragmentation, and experience unnecessary write wear as a result. Windows detects SSDs and executes TRIM instead, which serves as the proper maintenance procedure. If ChatGPT recommends defragmenting without checking your drive type, that indicates it is supplying generic guidance — inform it which drive type you use.',
   },
   {
     category: 'Startup and performance',
-    question: 'Does clearing the registry improve performance?',
+    question: 'Does cleaning the registry enhance speed?',
     answer:
-      'No, and this is one of the most persistent myths in PC maintenance. Registry cleaners promise speed gains that do not materialize in measurement — the registry is a database that handles orphaned entries efficiently, and removing a few thousand unused keys from millions changes nothing perceptible. The risk is real, though: an aggressive cleaner removing an in-use key can break applications or prevent boot. Microsoft does not support registry cleaners. If ChatGPT recommends one, push back and ask for measured evidence.',
+      'No, and this remains a leading myth in PC maintenance. Registry cleaners promise performance boosts that fail to appear in testing — the registry functions as a database managing orphaned entries effectively, and clearing a few thousand dead keys out of millions alters nothing noticeable. The danger proves real, though: an aggressive cleaner removing an active key can crash programs or stop booting. Microsoft does not back registry cleaners. If ChatGPT suggests one, challenge it and request empirical proof.',
   },
   {
     category: 'Safety',
-    question: 'What commands should I never run just because ChatGPT suggested them?',
+    question: 'Which commands should I avoid running solely because ChatGPT recommended them?',
     answer:
-      'Treat anything that deletes recursively, formats, or modifies disk partitions as requiring independent verification. On Windows that includes format, diskpart clean, and del /s /q against system paths. On macOS and Linux, any rm -rf against a path you did not personally verify. Also be cautious with commands that disable security features. The failure mode is not malice — it is a plausible-sounding command aimed at the wrong path. Ask ChatGPT to explain each flag before running anything destructive.',
+      'Treat anything that wipes recursively, formats, or alters disk partitions as needing independent checks. On Windows that entails format, diskpart clean, and del /s /q against system directories. On macOS and Linux, any rm -rf against a directory you did not personally check. Also remain careful with commands turning off security features. The failure mode involves no malice — it is a convincing-looking command pointed at the wrong folder. Ask ChatGPT to define each flag prior to executing anything destructive.',
   },
   {
     category: 'Safety',
-    question: 'Should I back up before doing any of this?',
+    question: 'Should I create a backup before attempting any of this?',
     answer:
-      'Yes, and it takes minutes. Create a System Restore point before making system changes (search "Create a restore point" in the Start menu), which lets you roll back registry and system file changes. For irreplaceable data, a restore point is not a backup — copy important files to external storage or cloud sync separately. System Restore protects system state, not your documents. This single step converts most cleanup mistakes from disasters into inconveniences.',
+      'Yes, and the process takes minutes. Set up a System Restore point prior to applying system modifications (look up "Create a restore point" within the Start menu), allowing you to revert registry and system file edits. For vital data, a restore point serves as no backup — move crucial files to external drives or cloud sync separately. System Restore safeguards system state, not your personal documents. This single measure turns most cleanup errors from disasters into minor annoyances.',
   },
   {
     category: 'Safety',
-    question: 'Can ChatGPT give me wrong information about my computer?',
+    question: 'Can ChatGPT provide inaccurate details regarding my PC?',
     answer:
-      'Yes, and it does so in a specific pattern worth recognizing: confident, well-formatted, plausible, and wrong in the details. It may cite a settings path that moved in a newer Windows version, suggest a utility that no longer exists, or give a registry key that is subtly incorrect. Because the surrounding advice is correct and the tone is authoritative, errors are easy to miss. Verify any specific path, command, or registry key against Microsoft documentation before acting. Use it for understanding concepts, not as an unverified source of exact commands.',
+      'Yes, and it does so in a clear pattern worth identifying: self-assured, neatly formatted, convincing, and wrong on specifics. It might reference a settings location that shifted in a newer Windows release, propose a utility that no longer exists, or supply a registry entry that is subtly flawed. Since the surrounding guidance is sound and the tone remains authoritative, mistakes prove simple to miss. Validate any exact path, command, or registry entry against Microsoft documentation prior to taking action. Rely on it for grasping concepts, not as an unverified source of precise commands.',
   },
   {
     category: 'Safety',
-    question: 'Is it safe to paste error messages or system output into ChatGPT?',
+    question: 'Is it safe to paste error messages or system logs into ChatGPT?',
     answer:
-      'Generally yes, with one caution: check what the output contains before pasting. System logs and error dumps sometimes include your Windows username, full file paths that reveal personal information, network names, hardware serial numbers, or license keys. Review the text and redact identifying details. Note also that conversations may be retained and used for training depending on your account settings — if that concerns you, disable chat history or use a temporary chat for troubleshooting sessions.',
+      'Typically yes, with one warning: inspect what the output contains before pasting. System logs and error outputs occasionally display your Windows user profile, complete file directories exposing personal info, network names, hardware serial numbers, or license keys. Check the text and obscure identifying info. Keep in mind also that chats might be stored and applied for training based on your account settings — if that worries you, turn off chat history or use a temporary chat for troubleshooting tasks.',
   },
   {
     category: 'Safety',
-    question: 'Should I use a third-party PC cleaner instead?',
+    question: 'Should I opt for a third-party PC cleaner instead?',
     answer:
-      'The built-in Windows tools cover almost everything a general-purpose cleaner does, without the bundled extras. Third-party cleaners have a poor track record: aggressive default settings, bundled additional software, subscription upsells, and in some cases performance claims that do not survive measurement. If you want one tool beyond Windows, a disk-space visualizer like WizTree is genuinely useful because it shows information Windows does not surface well. Avoid anything advertising registry cleaning or one-click speed boosts.',
+      'The built-in Windows utilities handle nearly everything a general utility accomplishes, minus the bundled bloat. Third-party cleaners hold a weak track record: aggressive default settings, bundled extra programs, subscription pushes, and occasionally performance claims failing survival in testing. If you desire one utility beyond Windows, a storage visualizer like WizTree proves genuinely helpful since it displays data Windows does not surface well. Steer clear of anything advertising registry cleaning or one-click speed enhancements.',
   },
   {
     category: 'Advanced',
-    question: 'How do I use ChatGPT to write a cleanup script safely?',
+    question: 'How can I employ ChatGPT to draft a cleanup script securely?',
     answer:
-      'Ask for the script with two constraints: a dry-run mode that prints what it would delete without deleting, and inline comments explaining each operation. Run the dry run, read the output carefully, verify the paths are what you expect, and only then run for real. This workflow catches the most dangerous failure — a script that works perfectly but targets the wrong directory. Never run a generated script against system paths without a dry run first, regardless of how straightforward it looks.',
+      'Request the script with two limits: a dry-run mode printing what it would erase without actually deleting, and inline comments describing every step. Execute the dry run, review the output closely, confirm the paths match your expectations, and only then run for real. This workflow catches the primary danger — a script functioning perfectly but targeting the wrong folder. Never run a generated script against system paths without an initial dry run, regardless of how simple it appears.',
   },
   {
     category: 'Advanced',
-    question: 'What is the WinSxS folder and can I shrink it?',
+    question: 'What is the WinSxS folder and can I reduce its size?',
     answer:
-      'WinSxS is the Windows component store, holding multiple versions of system files so updates can be rolled back and features enabled without the install media. It typically reports 5–10GB and alarms people, though the reported size is misleading because many entries are hard links counted twice. Never delete from it manually — that reliably breaks Windows Update. The supported way to reclaim space is "DISM /Online /Cleanup-Image /StartComponentCleanup" from an admin prompt, which removes superseded components safely.',
+      'Serving as the dedicated Windows component store, WinSxS retains legacy iterations of core binaries so admins can revert patches or turn on optional features without physical media. Displaying roughly 5–10GB, it frequently spooks people, but this measurement inflates the true footprint because hard links get calculated more than once. Never manually erase files here, as you will definitely corrupt Windows Update. The official fix to reclaim drive capacity is running "DISM /Online /Cleanup-Image /StartComponentCleanup" via an elevated terminal to safely purge obsolete packages.',
   },
   {
     category: 'Advanced',
-    question: 'How often should I do this kind of cleanup?',
+    question: 'How frequently ought I to perform this style of cleanup?',
     answer:
-      'Far less often than cleaner software marketing implies. Modern Windows manages temporary files automatically through Storage Sense, and a healthy machine does not need monthly intervention. A reasonable cadence is a startup program review every six months, a disk space check when you drop below 15% free, and targeted troubleshooting when you notice an actual symptom. Cleaning on a schedule with no symptom is mostly wasted effort and adds risk without benefit.',
+      'Far less often than cleaner software marketing suggests. Modern Windows manages temporary files automatically via Storage Sense, and a healthy system requires no monthly intervention. A sensible schedule involves a startup program review every six months, a disk space check when you drop past 15% free, and targeted troubleshooting when you spot a genuine symptom. Cleaning on a schedule showing no symptom wastes effort and introduces risk without reward.',
   },
   {
     category: 'Advanced',
-    question: 'My computer is still slow after cleaning. What now?',
+    question: 'My PC remains sluggish following a cleanup. What next?',
     answer:
-      'Cleanup addresses software clutter, which is only one cause of slowness. If a thorough cleanup changed nothing, suspect hardware: a mechanical hard drive where an SSD belongs (by far the most common cause of a slow older machine), insufficient RAM for your workload, a failing drive, or thermal throttling from dust-clogged fans. An SSD upgrade on a machine still running a mechanical drive produces a larger improvement than every software optimization combined. Describe your hardware and symptoms to ChatGPT and ask it to rank hardware causes.',
+      'Cleanup targets software clutter, representing only one origin of slowness. If a thorough cleanup altered nothing, suspect hardware: a traditional hard drive where an SSD belongs (by far the most frequent source of a slow older machine), inadequate RAM for your workload, a failing drive, or thermal throttling from dust-choked fans. An SSD upgrade on a machine still running a mechanical drive yields a larger boost than every software optimization combined. Detail your hardware and symptoms to ChatGPT and prompt it to rank hardware causes.',
   },
   {
     category: 'Advanced',
-    question: 'Does this advice work for Mac as well as Windows?',
+    question: 'Does this guidance apply to Mac as well as Windows?',
     answer:
-      'The principles transfer — measure first, use built-in tools, verify before deleting — but the specifics differ substantially. macOS has Storage Management (About This Mac > Storage), handles temporary files differently, and does not have a registry at all. Startup items live in System Settings > General > Login Items. Always tell ChatGPT which operating system and version you are on; otherwise it defaults to Windows advice, and Windows instructions applied to a Mac range from useless to harmful.',
+      'The principles translate — measure first, utilize built-in utilities, verify prior to deleting — yet the specifics vary significantly. macOS features Storage Management (About This Mac > Storage), handles temp files differently, and lacks a registry entirely. Startup items reside in System Settings > General > Login Items. Always inform ChatGPT which operating system and version you run; otherwise it defaults to Windows advice, and Windows instructions applied to a Mac range from useless to harmful.',
   },
   {
     category: 'Advanced',
-    question: 'What about cleaning up the text ChatGPT gives me?',
+    question: 'What about cleaning up the text ChatGPT supplies?',
     answer:
-      'That is a different problem with a different solution. Text copied out of ChatGPT carries invisible Unicode characters — zero-width spaces, non-breaking spaces, byte-order marks — that break word counts, create odd spacing in Word and Google Docs, and cause layout issues when published to a CMS. No amount of PC cleanup addresses this because it lives in the text itself. If that is what brought you here, the AI Text Cleaner handles it directly.',
+      'That presents a separate issue with a distinct resolution. Text copied from ChatGPT carries hidden Unicode characters — zero-width spaces, non-breaking spaces, byte-order marks — that ruin word counts, produce weird spacing in Word and Google Docs, and trigger layout bugs when published to a CMS. No amount of PC cleanup resolves this since it lives inside the text itself. If that brought you here, the AI Text Cleaner addresses it directly.',
   },
 ];
 
@@ -234,344 +234,126 @@ export default function CleanMyComputerWithChatGPTPage() {
       </div>
 
       <div className="rounded-[28px] border-3 border-black bg-white/70 p-6 shadow-neo-lg shadow-slate-900/5 backdrop-blur-lg">
-        <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">
-          PC maintenance with an AI assistant
-        </p>
+        <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">PC maintenance utilizing an AI assistant</p>
         <h1 className="mt-3 text-3xl font-semibold text-slate-900">{headline}</h1>
-        <p className="mt-2 text-slate-600">
-          There are two ways to do this in 2026, and choosing the wrong one wastes an afternoon. Browser ChatGPT advises — you run
-          every command yourself. Agentic tools like Codex, Claude Code, and Cursor run locally with real terminal access and can
-          execute cleanup for you. This guide covers both: copy-paste prompts for each, which approach fits which job, and the
-          specific places both get it wrong.
-        </p>
+        <p className="mt-2 text-slate-600">In 2026, there are two approaches for this, and picking the incorrect one wastes an entire afternoon. Browser ChatGPT advises — you execute every command personally. Agentic tools like Codex, Claude Code, and Cursor operate locally with direct terminal access and can perform cleanup on your behalf. This guide details both: copy-paste prompts for each, which method suits which task, and the exact areas where both fail.</p>
       </div>
 
       <section className="mt-10 space-y-4">
-        <h2 className="text-2xl font-semibold text-slate-900">Two ways to do this — pick the right one first</h2>
-        <p className="text-slate-700">
-          Most guides on this topic are out of date on one important point. They tell you ChatGPT cannot touch your computer, which
-          is true of the chat window in your browser and false of the tools most people now reach for.
-        </p>
+        <h2 className="text-2xl font-semibold text-slate-900">Two ways to handle this — select the correct one first</h2>
+        <p className="text-slate-700">Most guides concerning this subject are outdated on one key detail. They claim ChatGPT cannot access your machine, which applies to the browser chat interface yet is false regarding the tools most users now utilize.</p>
         <div className="grid gap-4 md:grid-cols-2">
           <div className="rounded-2xl border-3 border-black bg-white/70 p-5 text-sm text-slate-700 shadow-neo-sm">
-            <p className="font-semibold text-slate-900">Advisory mode — ChatGPT in a browser</p>
-            <p className="mt-2">
-              No file access. You describe symptoms, paste output, and run every command yourself. Best for understanding what a
-              process or folder is, interpreting Task Manager, and deciding what is safe to remove.
-            </p>
+            <p className="font-semibold text-slate-900">Advisory mode — ChatGPT within a browser</p>
+            <p className="mt-2">No file access. You outline symptoms, paste output, and execute each command by yourself. Ideal for comprehending what a folder or process is, reading Task Manager, and determining what remains safe to delete.</p>
           </div>
           <div className="rounded-2xl border-3 border-black bg-white/70 p-5 text-sm text-slate-700 shadow-neo-sm">
-            <p className="font-semibold text-slate-900">Agentic mode — Codex, Claude Code, Cursor</p>
-            <p className="mt-2">
-              Runs locally with real terminal and file access. It can scan directories, report sizes, and execute cleanup commands
-              directly. Best for finding what is actually consuming space and acting on it in one pass.
-            </p>
+            <p className="font-semibold text-slate-900">Agentic mode &mdash; Codex, Claude Code, Cursor</p>
+            <p className="mt-2">Operates locally possessing real terminal and file access. It is capable of scanning directories, reporting sizes, and running cleanup commands directly. Best for discovering what truly consumes storage and acting upon it in one step.</p>
           </div>
         </div>
-        <p className="text-slate-700">
-          The practical difference is who does the work. In advisory mode you are the hands and ChatGPT is the knowledge — it will
-          tell you that <code>MsMpEng.exe</code> is Windows Defender mid-scan and will settle down on its own, which is genuinely
-          the thing most people need to know. In agentic mode you delegate the whole loop: it inspects the machine, finds the 40GB
-          folder of old video exports you forgot about, and asks whether to delete it.
-        </p>
-        <p className="text-slate-700">
-          Agentic mode is faster and much better at discovery, because it can see your actual disk instead of guessing at typical
-          layouts. It also carries real risk — a tool with delete permissions acting on a wrong assumption does damage at machine
-          speed. The rest of this guide gives prompts for both, and flags which mode each job suits.
-        </p>
+        <p className="text-slate-700">The practical distinction lies in who performs the work. In advisory mode you act as the hands and ChatGPT serves as the knowledge — it will explain that <code>MsMpEng.exe</code> is Windows Defender during a scan and will settle down independently, which is genuinely what most users need to know. In agentic mode you hand over the complete cycle: it checks the system, spots the 40GB directory of prior video exports you forgot about, and asks whether to remove it.</p>
+        <p className="text-slate-700">Agentic mode proves faster and far superior at discovery, since it observes your actual drive rather than guessing typical layouts. It also introduces genuine risk — a utility featuring delete permissions acting on a flawed assumption causes damage at machine velocity. The remainder of this guide provides prompts for both, and highlights which mode each task fits.</p>
       </section>
 
       <section className="mt-10 space-y-4">
-        <h2 className="text-2xl font-semibold text-slate-900">Measure before you delete anything</h2>
-        <p className="text-slate-700">
-          The most common mistake in PC cleanup is deleting files when the actual problem is something else entirely. A machine
-          that feels slow because a background process pins the CPU will feel exactly as slow after you free 20GB of disk space.
-          Diagnosis first, cleanup second.
-        </p>
-        <p className="text-slate-700">
-          Open Task Manager with <code>Ctrl+Shift+Esc</code> and go to the Performance tab. Note which resource is saturated. Four
-          different patterns point at four different causes:
-        </p>
+        <h2 className="text-2xl font-semibold text-slate-900">Measure before you eliminate anything</h2>
+        <p className="text-slate-700">The most frequent error in PC maintenance is deleting files when the real issue is entirely different. A system that feels sluggish because a background process pins the CPU will feel just as slow after you recover 20GB of storage. Diagnosis comes first, cleanup second.</p>
+        <p className="text-slate-700">Launch Task Manager utilizing <code>Ctrl+Shift+Esc</code> and navigate to the Performance tab. Note which resource is saturated. Four distinct patterns point to four separate causes:</p>
         <ul className="list-disc pl-5 text-slate-700">
-          <li>
-            <strong>Memory near capacity at idle</strong> — too many background applications, a memory leak, or genuinely
-            insufficient RAM for your workload.
-          </li>
-          <li>
-            <strong>Disk pinned at 100%</strong> — Windows Search indexing, an update downloading, or on an SSD, a drive that is
-            failing.
-          </li>
-          <li>
-            <strong>CPU high with no apps open</strong> — a background scan, a scheduled task, or unwanted software.
-          </li>
-          <li>
-            <strong>Everything normal but the machine feels slow</strong> — often thermal throttling or a mechanical hard drive
-            that no amount of cleanup will fix.
-          </li>
+          <li><strong>Memory near capacity at idle</strong> — excessive background applications, a memory leak, or truly insufficient RAM for your workload.</li>
+          <li><strong>Disk pinned at 100%</strong> — Windows Search indexing, a downloading update, or on an SSD, a failing drive.</li>
+          <li><strong>CPU high with no apps open</strong> — a scheduled task, a background scan, or unwanted software.</li>
+          <li><strong>Everything normal but the machine feels slow</strong> — frequently thermal throttling or a mechanical hard drive that no amount of cleaning will resolve.</li>
         </ul>
-        <p className="text-slate-700">
-          Take those numbers to ChatGPT with specifics. &ldquo;Windows 11, 8GB RAM, memory at 85% with nothing open, disk at
-          3%&rdquo; produces a useful ranked diagnosis. &ldquo;My computer is slow&rdquo; produces a generic listicle you could
-          have found anywhere.
-        </p>
-        <p className="text-slate-700">
-          It helps to record a baseline before you touch anything. Note your free disk space, your idle memory percentage, and
-          roughly how long the machine takes from power button to usable desktop. Without those numbers you have no way to tell
-          whether a change helped, and the temptation afterwards is to assume it did because you spent an afternoon on it. People
-          routinely report a machine feeling faster after cleanup that measurably did nothing — expectation is a powerful filter.
-        </p>
-        <p className="text-slate-700">
-          The Startup tab in Task Manager deserves a look during diagnosis rather than later, because it explains a symptom people
-          often misattribute. If the machine is responsive after ten minutes but painful for the first five, that is startup load,
-          not disk clutter. Deleting files will not change it. Conversely, if the machine is uniformly slow whether freshly booted
-          or running for hours, startup programs are not your problem and trimming them will disappoint you.
-        </p>
-        <p className="text-slate-700">
-          One more distinction worth drawing early: slow at a specific task versus slow at everything. A machine that handles
-          general use fine but crawls in one application has a problem with that application — an oversized cache, a corrupted
-          profile, a plugin — and general cleanup will not touch it. Tell ChatGPT which pattern you are seeing, because the
-          diagnostic paths diverge immediately and it cannot observe the difference itself.
-        </p>
+        <p className="text-slate-700">Bring those figures to ChatGPT with specifics. &ldquo;Windows 11, 8GB RAM, memory at 85% with nothing open, disk at 3%&rdquo; yields a helpful prioritized diagnosis. &ldquo;My computer is slow&rdquo; yields a generic listicle you could have located anywhere.</p>
+        <p className="text-slate-700">It helps to document a baseline prior to altering anything. Record your available disk space, your idle memory percentage, and roughly how long the system takes from power button to usable desktop. Without those figures you possess no method to determine whether an adjustment helped, and the temptation afterward is to assume it did simply because you spent an afternoon on it. People routinely report a machine feeling quicker following maintenance that measurably accomplished nothing — expectation acts as a strong filter.</p>
+        <p className="text-slate-700">The Startup tab in Task Manager merits examination during diagnosis rather than later, since it clarifies a symptom people frequently misattribute. If the system responds well after ten minutes but struggles for the initial five, that represents startup load, not disk clutter. Removing files will not alter it. Conversely, if the system remains uniformly sluggish whether freshly booted or running for hours, startup applications are not your issue and trimming them will disappoint you.</p>
+        <p className="text-slate-700">One additional distinction worth drawing early: slow at a specific task versus slow at everything. A machine that handles standard usage fine but struggles in a single application has an issue with that specific application — an oversized cache, a corrupted profile, a plugin — and general cleaning will not affect it. Inform ChatGPT which pattern you are witnessing, because the diagnostic paths diverge immediately and it cannot observe the variance itself.</p>
       </section>
 
       <section className="mt-10 space-y-4">
-        <h2 className="text-2xl font-semibold text-slate-900">Prompts that actually work</h2>
-        <p className="text-slate-700">
-          Copy these and replace the bracketed parts. The difference between these and &ldquo;how do I clean my PC&rdquo; is that
-          they give the model something it cannot observe on its own, and ask for a diagnosis rather than a listicle.
-        </p>
+        <h2 className="text-2xl font-semibold text-slate-900">Prompts that actually function</h2>
+        <p className="text-slate-700">Copy these and substitute the bracketed segments. The variance between these and &ldquo;how do I clean my PC&rdquo; is that they supply the model with information it cannot observe independently, and request a diagnosis instead of a listicle.</p>
 
         <div className="rounded-2xl border-3 border-black bg-slate-50 p-5">
-          <p className="text-xs font-semibold uppercase tracking-wider text-slate-500">Advisory — diagnose a slow machine</p>
-          <p className="mt-2 font-mono text-sm text-slate-800">
-            I&rsquo;m on [Windows 11 23H2]. Task Manager at idle shows memory [85%], CPU [4%], disk [3%]. I have [8GB] RAM and
-            [12GB] free of [256GB]. Boot to usable desktop takes about [3 minutes]. Rank the most likely causes by probability, and
-            for each one tell me the exact check that confirms or rules it out. Don&rsquo;t suggest fixes yet.
-          </p>
+          <p className="text-xs font-semibold uppercase tracking-wider text-slate-500">Advisory — diagnose a sluggish machine</p>
+          <p className="mt-2 font-mono text-sm text-slate-800">I am currently using [Windows 11 23H2]. Under zero load, Task Manager indicates memory [85%], CPU [4%], and disk [3%]. My machine features [8GB] RAM with [12GB] available on a [256GB] drive. Reaching an interactive desktop takes roughly [3 minutes]. Please list the primary suspects ordered by likelihood, specifying the exact diagnostic test to verify or dismiss each one. Skip repair recommendations for now.</p>
         </div>
 
         <div className="rounded-2xl border-3 border-black bg-slate-50 p-5">
-          <p className="text-xs font-semibold uppercase tracking-wider text-slate-500">Advisory — identify startup entries</p>
-          <p className="mt-2 font-mono text-sm text-slate-800">
-            Here are my Task Manager startup entries with their impact ratings: [paste list]. For each, tell me whether it&rsquo;s a
-            core Windows component, a hardware driver, or optional third-party software, and what specifically stops working if I
-            disable it. Flag any I should not touch.
-          </p>
+          <p className="text-xs font-semibold uppercase tracking-wider text-slate-500">Advisory &mdash; identify startup entries</p>
+          <p className="mt-2 font-mono text-sm text-slate-800">Here are my Task Manager startup entries along with their impact ratings: [paste list]. For each one, explain whether it functions as a core Windows component, a hardware driver, or optional third-party software, and what specifically stops working if I turn it off. Point out any that I must not touch.</p>
         </div>
 
         <div className="rounded-2xl border-3 border-black bg-slate-50 p-5">
-          <p className="text-xs font-semibold uppercase tracking-wider text-slate-500">Agentic — find what is eating the disk</p>
-          <p className="mt-2 font-mono text-sm text-slate-800">
-            Scan my system drive and list the 20 largest directories with their sizes. For each, tell me what created it and
-            whether it&rsquo;s safe to clear. Do not delete anything yet — report only.
-          </p>
+          <p className="text-xs font-semibold uppercase tracking-wider text-slate-500">Agentic — discover what is consuming storage</p>
+          <p className="mt-2 font-mono text-sm text-slate-800">Examine my primary volume and identify the 20 most massive directories with their footprints. For every entry, state what generated it and if removing it is safe. Only provide an analysis — avoid deleting any files.</p>
         </div>
 
         <div className="rounded-2xl border-3 border-black bg-slate-50 p-5">
-          <p className="text-xs font-semibold uppercase tracking-wider text-slate-500">Agentic — execute cleanup with a dry run</p>
-          <p className="mt-2 font-mono text-sm text-slate-800">
-            Based on that scan, write a cleanup script targeting only the items we agreed on. Include a dry-run mode that prints
-            every path it would delete without deleting. Run the dry run first and show me the output. Wait for my confirmation
-            before running it for real.
-          </p>
+          <p className="text-xs font-semibold uppercase tracking-wider text-slate-500">Agentic — perform cleanup using a dry run</p>
+          <p className="mt-2 font-mono text-sm text-slate-800">Based on that scan, write a cleanup script targeting solely the items we agreed on. Include a dry-run mode that prints every path it would delete without deleting anything. Run the dry run first and display the output. Wait for my confirmation prior to running it for real.</p>
         </div>
 
-        <p className="text-slate-700">
-          The &ldquo;report only, don&rsquo;t act yet&rdquo; constraint on agentic prompts matters more than anything else here. It
-          converts a tool with delete permissions into one that surfaces information, and it gives you the decision point that
-          prevents the one failure mode that actually costs you data.
-        </p>
-        <p className="text-slate-700">
-          One caution on pasting. System output sometimes contains your Windows username, file paths revealing personal
-          information, network names, or hardware serial numbers. Skim before pasting and redact anything identifying. If retention
-          concerns you, use a temporary chat.
-        </p>
+        <p className="text-slate-700">The &ldquo;report only, don&rsquo;t act yet&rdquo; constraint regarding agentic prompts matters more than anything else here. It converts a tool equipped with delete permissions into one that surfaces information, and it provides you with the decision point that prevents the single failure mode which actually costs you data.</p>
+        <p className="text-slate-700">A quick word of advice on clipboard data. Terminal outputs frequently display your Windows username, file directories containing personal details, network identities, or serial identifiers. Review logs prior to submission and scrub identifying markers. If you worry about data storage policies, switch to a temporary chat session.</p>
       </section>
 
       <section className="mt-10 space-y-4">
-        <h2 className="text-2xl font-semibold text-slate-900">Freeing disk space, safest options first</h2>
-        <p className="text-slate-700">
-          Work outward from the tools designed not to break anything. Windows ships with utilities that handle the majority of
-          reclaimable space, and they skip files currently in use — a protection manual deletion does not give you.
-        </p>
-        <p className="text-slate-700">
-          <strong>Storage Sense</strong> (Settings &gt; System &gt; Storage) breaks down consumption by category and clears
-          temporary files on a schedule. <strong>Disk Cleanup</strong>, run with the &ldquo;Clean up system files&rdquo; button,
-          reaches further — including old Windows Update files, which routinely reclaim 5–20GB after a major version upgrade.
-        </p>
-        <p className="text-slate-700">
-          The largest single win is usually <code>Windows.old</code>, the previous Windows installation retained after an upgrade,
-          commonly 15–30GB. Remove it through Disk Cleanup rather than File Explorer — manual deletion leaves permission-locked
-          remnants. Understand the tradeoff first: once gone, rolling back to your previous Windows version is no longer possible.
-        </p>
-        <p className="text-slate-700">
-          For folder-level detail, a visualizer like WizTree maps which directories are actually large. When it surfaces a folder
-          you do not recognize, that is the ideal ChatGPT question: paste the path and ask what creates it, what it holds, and what
-          breaks if it is cleared.
-        </p>
-        <p className="text-slate-700">
-          A few space consumers surprise people consistently. <code>hiberfil.sys</code> sits at the root of your system drive and
-          is roughly the size of your installed RAM — 16GB of memory means a 16GB file. Disabling hibernation with{' '}
-          <code>powercfg /hibernate off</code> reclaims it, at the cost of hibernate and Fast Startup. On a desktop with a large
-          drive that trade is not worth making; on a laptop with a 128GB SSD it often is.
-        </p>
-        <p className="text-slate-700">
-          The <code>WinSxS</code> folder alarms people because it reports 5–10GB, but the number is misleading — many entries are
-          hard links counted twice by tools that do not resolve them. It holds the component store Windows needs to roll back
-          updates and enable features without install media. Deleting from it manually reliably breaks Windows Update. The
-          supported cleanup is <code>DISM /Online /Cleanup-Image /StartComponentCleanup</code> from an administrator prompt, which
-          removes genuinely superseded components and leaves the rest intact.
-        </p>
-        <p className="text-slate-700">
-          Downloads folders and orphaned game installations are worth a manual pass, since neither Storage Sense nor Disk Cleanup
-          will touch files you might still want. So are old system restore points, which can consume many gigabytes — System
-          Properties lets you cap how much space they are allowed. Browser caches, despite their reputation, are usually a few
-          hundred megabytes and rarely worth clearing for space alone. Clear those when debugging a site that renders wrongly, not
-          as routine maintenance.
-        </p>
+        <h2 className="text-2xl font-semibold text-slate-900">Reclaiming storage space, beginning with the safest choices</h2>
+        <p className="text-slate-700">Work outward from tools designed not to break anything. Windows comes with utilities handling the bulk of reclaimable space, and they skip files currently in use — a protection manual deletion fails to give you.</p>
+        <p className="text-slate-700"><strong>Storage Sense</strong> (Settings &gt; System &gt; Storage) breaks down consumption by category and clears temporary files according to a schedule. <strong>Disk Cleanup</strong>, run via the &ldquo;Clean up system files&rdquo; button, reaches further — including old Windows Update files, which routinely reclaim 5–20GB after a major version upgrade.</p>
+        <p className="text-slate-700">The single largest win is typically <code>Windows.old</code>, the previous Windows installation kept following an upgrade, normally 15–30GB. Remove it using Disk Cleanup instead of File Explorer — manual deletion leaves permission-locked remnants. Comprehend the tradeoff first: once gone, rolling back to your prior Windows version is no longer possible.</p>
+        <p className="text-slate-700">To analyze directories visually, an interactive disk tool such as WizTree highlights which locations hog storage. Whenever you encounter an unfamiliar directory, submit it straight to ChatGPT: supply the exact location and ask which process created it, its contents, and the consequences of purging it.</p>
+        <p className="text-slate-700">A few space consumers consistently surprise people. <code>hiberfil.sys</code> sits at the root of your system drive and equals roughly the size of your installed RAM — 16GB of memory implies a 16GB file. Disabling hibernation using{' '} <code>powercfg /hibernate off</code> reclaims it, at the expense of hibernate and Fast Startup. On a desktop featuring a large drive that trade is not worth making; on a laptop with a 128GB SSD it often is.</p>
+        <p className="text-slate-700">Seeing the <code>WinSxS</code> directory claim 5–10GB routinely worries computer owners, yet this total misleads because unresolving utilities calculate hard links multiple times. It functions as the core component store Windows relies upon for update rollbacks and media-free feature deployment. Attempting manual deletions here will break Windows Update without fail. The sanctioned remedy is invoking <code>DISM /Online /Cleanup-Image /StartComponentCleanup</code> through an administrative console, discarding strictly outdated packages without disturbing necessary files.</p>
+        <p className="text-slate-700">Downloads folders and orphaned game installations warrant a manual pass, given that neither Storage Sense nor Disk Cleanup will touch files you might still want. So do old system restore points, which can consume many gigabytes — System Properties allows you to cap how much space they are permitted. Browser caches, in spite of their reputation, typically span a few hundred megabytes and are rarely worth clearing for space alone. Clear those when debugging a site that renders improperly, not as routine maintenance.</p>
       </section>
 
       <section className="mt-10 space-y-4">
         <h2 className="text-2xl font-semibold text-slate-900">Triaging startup programs</h2>
-        <p className="text-slate-700">
-          This is usually the highest-impact change available, and the one where ChatGPT helps most. Every startup entry adds work
-          between login and a usable desktop. The gap people describe as &ldquo;it takes forever to become responsive even though
-          the desktop appears&rdquo; is almost entirely startup programs still loading.
-        </p>
-        <p className="text-slate-700">
-          Task Manager&rsquo;s Startup apps tab lists entries with a startup impact rating. The hard part is knowing which are
-          essential — the names are often opaque, and disabling the wrong one costs you audio, display scaling, or function keys.
-          Paste the list and ask which are core system components, which are optional conveniences, and which are known bloatware.
-        </p>
-        <p className="text-slate-700">
-          Leave alone: antivirus, audio drivers, graphics drivers, input and touchpad drivers, and OEM power management. Safe to
-          disable but worth understanding: cloud storage clients, which stop syncing until launched — a surprise for anyone
-          assuming their files are still backing up. Disabling a startup entry does not uninstall anything, and every change is
-          reversible from the same screen.
-        </p>
-        <p className="text-slate-700">
-          Change entries in small batches rather than all at once. If you disable fifteen programs and something stops working, you
-          have fifteen suspects and no easy way to isolate the cause. Disabling four or five, rebooting, and using the machine
-          normally for a day gives you a clear signal about what each change cost. It is slower, but it is the difference between a
-          reversible experiment and a puzzle.
-        </p>
-        <p className="text-slate-700">
-          Startup entries are not the only thing loading at boot. Scheduled tasks and background services also run, and they are
-          less visible — Task Scheduler and the Services console hold entries that never appear in the Startup tab. These are worth
-          investigating only if trimming startup programs did not help, and they carry more risk since Windows depends on many
-          services directly. If you go looking there, ask ChatGPT what a specific service does and what depends on it before
-          changing its startup type, and change it to Manual rather than Disabled so the system can still start it on demand.
-        </p>
+        <p className="text-slate-700">Addressing this issue usually yields the most dramatic performance gains, and ChatGPT proves exceptionally valuable here. Every background app launched on boot inserts latency between authentication and an operational desktop. That familiar delay where people complain that &ldquo;the desktop shows up but the system stays unresponsive forever&rdquo; almost always stems from background startup processes finishing their boot cycle.</p>
+        <p className="text-slate-700">Task Manager&rsquo;s Startup apps tab enumerates entries alongside a startup impact rating. The hard part involves knowing which ones are essential — the names are often opaque, and disabling the wrong one costs you audio, display scaling, or function keys. Paste the list and ask which represent core system components, which are optional conveniences, and which constitute known bloatware.</p>
+        <p className="text-slate-700">Leave alone: antivirus, audio drivers, graphics drivers, input and touchpad drivers, plus OEM power management. Safe to disable yet worth understanding: cloud storage clients, which stop syncing until launched — a surprise for anyone assuming their files are still backing up. Disabling a startup entry does not uninstall anything, and every change remains reversible from the very same screen.</p>
+        <p className="text-slate-700">Modify entries in small batches rather than all at once. If you disable fifteen programs and something stops functioning, you possess fifteen suspects and no straightforward way to isolate the root cause. Disabling four or five, rebooting, and utilizing the machine normally for a day supplies a clear signal regarding what each change cost. It is slower, yet it represents the difference between a reversible experiment and a puzzle.</p>
+        <p className="text-slate-700">Startup entries are not the sole items loading at boot. Scheduled tasks and background services also run, and they are less visible — Task Scheduler and the Services console hold entries that never surface in the Startup tab. These deserve investigation only if trimming startup programs failed to help, and they carry greater risk since Windows relies on numerous services directly. Should you look there, ask ChatGPT what a specific service does and what relies upon it prior to altering its startup type, and switch it to Manual rather than Disabled so the system can still start it on demand.</p>
       </section>
 
       <section className="mt-10 space-y-4">
-        <h2 className="text-2xl font-semibold text-slate-900">Where ChatGPT gets this wrong</h2>
-        <p className="text-slate-700">
-          The failure pattern is specific and worth learning to recognize: confident, well-structured, plausible, and wrong in
-          exactly the details that matter. Because the surrounding explanation is correct and the tone is authoritative, the errors
-          are easy to miss.
-        </p>
+        <h2 className="text-2xl font-semibold text-slate-900">Where ChatGPT gets this incorrect</h2>
+        <p className="text-slate-700">The failure pattern is specific and worth learning to recognize: confident, well-structured, plausible, and incorrect in precisely the details that matter. Because the surrounding explanation is correct and the tone authoritative, the errors remain easy to miss.</p>
         <ul className="list-disc pl-5 text-slate-700">
-          <li>
-            <strong>Settings paths that moved.</strong> Windows reorganizes settings between versions. A path that was accurate for
-            Windows 10 may not exist in Windows 11.
-          </li>
-          <li>
-            <strong>Defragmentation advice for SSDs.</strong> If it suggests defragmenting without asking your drive type, it is
-            generating generic advice. SSDs gain nothing and suffer write wear.
-          </li>
-          <li>
-            <strong>Registry cleaning.</strong> A persistent myth with no measured benefit and real risk of breaking applications.
-            Microsoft does not support registry cleaners.
-          </li>
-          <li>
-            <strong>Subtly incorrect commands.</strong> A command with the right shape aimed at the wrong path is the most
-            dangerous output, because it looks exactly like the correct one.
-          </li>
+          <li><strong>Settings paths that moved.</strong> Windows reorganizes settings across versions. A path that was accurate for Windows 10 might not exist in Windows 11.</li>
+          <li><strong>Defragmentation advice for SSDs.</strong> If it suggests defragmenting without inquiring about your drive type, it is producing generic advice. SSDs gain nothing and endure write wear.</li>
+          <li><strong>Registry cleaning.</strong> A persistent myth lacking measured benefit and carrying real risk of breaking applications. Microsoft does not support registry cleaners.</li>
+          <li><strong>Subtly incorrect commands.</strong> An instruction with the proper layout pointing at the wrong directory proves to be the riskiest outcome, since it looks identical to the correct one.</li>
         </ul>
-        <p className="text-slate-700">
-          The mitigation is simple: verify any specific path, command, or registry key against official documentation before
-          running it. Use ChatGPT to understand concepts and interpret output — not as an unverified source of exact commands.
-        </p>
-        <p className="text-slate-700">
-          There is a second category of error that is subtler: advice that is technically correct but wrong for your situation.
-          Ask about freeing disk space and you may get instructions for clearing the package manager cache — accurate in general,
-          useless if that is not where your space went. ChatGPT cannot see that your actual problem is a 40GB folder of old video
-          exports, so it answers the general question rather than yours. This is why measuring first matters so much: it converts a
-          general question into a specific one.
-        </p>
-        <p className="text-slate-700">
-          A practical habit that catches both failure modes is asking for reasoning rather than instructions. &ldquo;Why would that
-          folder be large, and what would I check to confirm that explanation?&rdquo; forces the model to expose its assumptions,
-          and wrong assumptions are far easier to spot than wrong commands. When it says &ldquo;this is typically caused by X,
-          which you can verify by checking Y&rdquo;, you have something you can test rather than something you have to trust.
-        </p>
-        <p className="text-slate-700">
-          Agentic tools fix the biggest of these problems and introduce a new one. They fix guessing — a tool that can scan your
-          drive does not need to speculate about what is typical, because it can see what is actually there. What they introduce is
-          consequence. In advisory mode a wrong answer costs nothing until you act on it. In agentic mode the action and the error
-          arrive together.
-        </p>
-        <p className="text-slate-700">
-          The habit that makes this safe is separating discovery from action. Ask for a report first, read it, decide what goes,
-          then authorize a specific deletion. Keep the confirmation prompt enabled rather than approving everything up front. The
-          moment you grant blanket approval to a tool that can delete recursively, you have removed the only checkpoint that
-          catches a wrong assumption before it becomes a restore from backup.
-        </p>
+        <p className="text-slate-700">The remedy remains straightforward: check any specific path, command, or registry key against official documentation prior to executing it. Use ChatGPT for grasping concepts and interpreting output — rather than treating it as a verified source for exact commands.</p>
+        <p className="text-slate-700">A second type of error exists that is more subtle: advice that is technically accurate yet wrong for your specific scenario. Inquire about reclaiming storage and you might receive guidance on emptying the package manager cache — correct in general, useless if that is not where your capacity went. ChatGPT cannot perceive that your actual issue is a 40GB directory of dated video exports, so it answers the broader question instead of yours. This explains why measuring first matters immensely: it turns a generic query into a targeted one.</p>
+        <p className="text-slate-700">A practical habit that catches both failure scenarios is requesting reasoning rather than instructions. &ldquo;Why would that directory be large, and what would I check to confirm that explanation?&rdquo; compels the model to reveal its assumptions, and erroneous assumptions are far simpler to spot than flawed commands. When it states &ldquo;this is typically caused by X, which you can verify by checking Y&rdquo;, you obtain something you can test rather than something you must blindly trust.</p>
+        <p className="text-slate-700">Agentic tools resolve the biggest among these issues while introducing a new one. They eliminate guesswork — a utility capable of scanning your drive has no need to speculate about typical conditions, because it can observe what actually exists there. What they bring in is consequence. In advisory mode an incorrect answer costs nothing until you act upon it. In agentic mode the action and the mistake arrive simultaneously.</p>
+        <p className="text-slate-700">The practice that keeps this secure involves separating discovery from action. Request a report first, review it, determine what goes, then authorize a specific deletion. Keep the confirmation prompt active rather than approving everything right away. The moment you grant blanket approval to a tool capable of recursive deletion, you eliminate the sole checkpoint that catches a false assumption before it turns into a restore from backup.</p>
       </section>
 
       <section className="mt-10 space-y-4">
-        <h2 className="text-2xl font-semibold text-slate-900">Protect yourself before you start</h2>
-        <p className="text-slate-700">
-          Create a System Restore point before making system changes — search &ldquo;Create a restore point&rdquo; in the Start
-          menu. It takes a couple of minutes and converts most cleanup mistakes from disasters into inconveniences.
-        </p>
-        <p className="text-slate-700">
-          Understand its limit, though: System Restore protects system state and registry, not your documents. For irreplaceable
-          files, copy them to external storage or cloud sync separately. These are two different protections and people routinely
-          conflate them.
-        </p>
-        <p className="text-slate-700">
-          Treat anything that deletes recursively, formats, or modifies partitions as requiring independent verification —{' '}
-          <code>format</code>, <code>diskpart clean</code>, <code>del /s /q</code> against system paths. If you ask for a cleanup
-          script, ask for a dry-run mode that prints what it would delete without deleting, plus comments explaining each
-          operation. Read the dry-run output, confirm the paths are what you expect, then run it for real.
-        </p>
+        <h2 className="text-2xl font-semibold text-slate-900">Safeguard your system prior to beginning</h2>
+        <p className="text-slate-700">Create a System Restore point prior to making system modifications — search &ldquo;Create a restore point&rdquo; inside the Start menu. It requires a couple of minutes and turns most cleanup blunders from disasters into minor inconveniences.</p>
+        <p className="text-slate-700">Understand its limit, however: System Restore protects system state and registry, not your files. For irreplaceable documents, copy them to external storage or cloud sync separately. These represent two distinct protections and people frequently confuse them.</p>
+        <p className="text-slate-700">Treat anything that deletes recursively, formats, or alters partitions as needing independent verification —{' '} <code>format</code>, <code>diskpart clean</code>, <code>del /s /q</code> against system paths. Should you request a cleanup script, ask for a dry-run mode that outputs what it would delete without removing anything, along with comments describing each operation. Read the dry-run output, verify the paths match your expectations, then execute it for real.</p>
       </section>
 
       <section className="mt-10 space-y-4">
-        <h2 className="text-2xl font-semibold text-slate-900">When cleanup is not the answer</h2>
-        <p className="text-slate-700">
-          If a thorough cleanup changed nothing, the cause is probably hardware. The dominant one is a mechanical hard drive in a
-          machine that should have an SSD — an upgrade there produces a larger improvement than every software optimization
-          combined, and no amount of file deletion substitutes for it.
-        </p>
-        <p className="text-slate-700">
-          Other hardware causes worth ruling out: insufficient RAM for your actual workload, thermal throttling from dust-clogged
-          fans, and a failing drive. Check drive health early — if <code>wmic diskdrive get status</code> reports anything other
-          than OK, stop cleaning and back up immediately. Cleanup is irrelevant if the hardware is dying.
-        </p>
-        <p className="text-slate-700">
-          It is also worth resisting the maintenance-on-a-schedule habit. Modern Windows manages temporary files automatically. A
-          startup review every six months, a disk check when you drop below 15% free, and targeted troubleshooting when you notice
-          an actual symptom is a reasonable cadence. Cleaning with no symptom mostly adds risk without benefit.
-        </p>
+        <h2 className="text-2xl font-semibold text-slate-900">If clearing out fails to solve the issue</h2>
+        <p className="text-slate-700">If a thorough cleanup changed nothing, the root cause is likely hardware. The primary culprit is a mechanical hard drive in a device that ought to have an SSD — an upgrade there yields a bigger enhancement than all software optimizations combined, and no amount of file deletion replaces it.</p>
+        <p className="text-slate-700">Other hardware issues worth eliminating: insufficient RAM for your actual workload, thermal throttling from dust-choked fans, and a failing drive. Check drive health early — if <code>wmic diskdrive get status</code> returns anything other than OK, halt cleaning and back up immediately. Cleanup is meaningless if the hardware is failing.</p>
+        <p className="text-slate-700">It is also wise to resist the maintenance-on-a-schedule routine. Modern Windows handles temporary files automatically. A startup review every six months, a disk check when you fall beneath 15% free, and targeted troubleshooting when you spot a real symptom constitutes a reasonable cadence. Cleaning with no symptom primarily introduces risk without benefit.</p>
       </section>
 
       <section className="mt-10 space-y-4">
-        <h2 className="text-2xl font-semibold text-slate-900">A different kind of ChatAI text cleanup</h2>
-        <p className="text-slate-700">
-          One thing worth separating, because the phrasing overlaps: cleaning your computer is a different problem from cleaning
-          the text ChatGPT produces. Output copied out of ChatGPT carries invisible Unicode — zero-width spaces, non-breaking
-          spaces, byte-order marks — that survives the copy-paste and breaks word counts, creates strange spacing in Word and
-          Google Docs, and causes layout problems when published to a CMS.
-        </p>
-        <p className="text-slate-700">
-          No amount of disk cleanup touches that, because the artifacts live inside the text itself. If that is the problem that
-          brought you here, the <Link href="/ai-text-cleaner">AI Text Cleaner</Link> strips those characters directly, and the{' '}
-          <Link href="/invisible-character-detector">Invisible Character Detector</Link> shows you what was hiding in a document
-          before you clean it.
-        </p>
+        <h2 className="text-2xl font-semibold text-slate-900">An alternate approach to ChatAI text cleanup</h2>
+        <p className="text-slate-700">One element worth separating, since the wording overlaps: cleaning your computer is a separate problem from cleaning the text ChatGPT generates. Output copied from ChatGPT contains invisible Unicode — zero-width spaces, non-breaking spaces, byte-order marks — that survives the copy-paste process and disrupts word counts, generates strange spacing in Word and Google Docs, and causes layout issues when published to a CMS.</p>
+        <p className="text-slate-700">No amount of disk cleanup addresses that, because the artifacts reside inside the text itself. If this is the issue that brought you here, the <Link href="/ai-text-cleaner">AI Text Cleaner</Link> strips those characters directly, and the{' '} <Link href="/invisible-character-detector">Invisible Character Detector</Link> reveals what was hiding within a document before you clean it.</p>
       </section>
 
       <FAQSection items={faqs} />

@@ -114,10 +114,8 @@ function WriteUp() {
 
         <h2>Step-by-Step Guide: Removing Adobe Firefly Watermarks</h2>
 
-        <h3>Step 1: Upload Your Image</h3>
-        <p>
-          Click the upload button or drag and drop your Adobe Firefly-generated image onto the upload area. We accept JPEG, PNG, WebP, HEIC, TIFF, and other common formats. For the best results, upload the highest-quality version you have. Got several images to process? You can upload them as a batch.
-        </p>
+        <h3>Phase 1: Submit Your Picture</h3>
+        <p>Hit the upload prompt or directly drop your Adobe Firefly-generated image right into the processing box. We take JPEG, PNG, WebP, HEIC, TIFF, as well as multiple other formats. Uploading the highest-resolution copy available ensures optimal outcomes. Working through a collection? Feel free to upload them as a batch.</p>
 
         <h3>Step 2: Configure Removal Options</h3>
         <p>
@@ -197,13 +195,13 @@ const faqs: FaqItem[] = [
     category: 'Getting Started',
     question: 'What watermarks does Adobe Firefly add to images, and can they all be removed?',
     answer:
-      'Adobe Firefly adds two types of watermarks: C2PA metadata (a cryptographically signed provenance record stored in the file&#39;s XMP metadata) and invisible pixel-level watermarks embedded in the image data. Both can be removed, though each needs a different approach. C2PA metadata can be stripped with standard metadata removal tools. Invisible pixel watermarks require frequency-domain signal processing to attenuate. Our free tool handles both types in a single pass, giving you a fully watermark-free output image.',
+      'Two discrete tagging methods are applied by Adobe Firefly: C2PA metadata (an encrypted provenance record stored in the file&#39;s XMP metadata) along with hidden pixel-level adjustments within visual elements. Both markers are removable, yet each requires a unique strategy. Removing C2PA metadata is straightforward using common metadata removal utilities. Erasing invisible pixel watermarks demands frequency-domain signal processing to attenuate the trace. Our free tool successfully eliminates both varieties in a single pass, providing a completely watermark-free output image.',
   },
   {
     category: 'Getting Started',
     question: 'Is the Adobe Firefly watermark remover free to use online?',
     answer:
-      'Yes, our Adobe Firefly watermark remover is completely free to use online, with no account registration required. We support images up to 50MB and offer batch processing for multiple images at once. There are no daily limits or usage caps for individual users. Enterprise users with high-volume needs can contact us about dedicated API access.',
+      'Indeed, our Adobe Firefly watermark remover functions as an entirely complimentary web application, eliminating the need to set up an account. We accept images up to 50MB and let you process batches of visual files simultaneously. There are no daily limits or usage caps restricting individual users. Organizations with large-scale processing needs may reach out regarding dedicated API access.',
   },
   {
     category: 'Getting Started',
@@ -305,17 +303,17 @@ const faqs: FaqItem[] = [
     category: 'Advanced',
     question: 'Can I remove Adobe Firefly watermarks in batch for multiple images?',
     answer:
-      'Yes, our tool supports batch processing. You can upload several images at once and apply the same removal settings across all of them, or set different options per image within the batch. Processed images can be downloaded individually or as a ZIP archive. Batch processing is especially handy for agencies and brands handling large volumes of AI-generated deliverables that need consistent processing.',
+      'Certainly, our tool supports batch processing. Users can submit multiple pictures simultaneously to run identical cleanup configurations, or establish customized options for individual items across the queue. You can retrieve final results one by one or download everything as a ZIP archive. This feature is particularly valuable for agencies and brands managing considerable amounts of AI-generated deliverables needing uniform results.',
   },
   {
     category: 'Advanced',
     question: 'Is there an API for integrating Firefly watermark removal into automated workflows?',
     answer:
-      'Yes, we offer a watermark removal API for developers and enterprises. It accepts image uploads via HTTP POST, takes removal configuration parameters (metadata removal, pixel-level removal intensity, output format), and returns the processed image. That makes it straightforward to plug into automated content pipelines, CMS workflows, and creative production systems. Contact us for API documentation and enterprise pricing.',
+      'Indeed, we supply a dedicated watermark removal API tailored for developers and enterprises. Accepting incoming files through HTTP POST, it processes chosen configuration arguments (metadata removal, pixel-level removal intensity, output format) before returning the altered graphic. Consequently, it integrates cleanly into automated content pipelines, CMS workflows, or high-volume creative production systems. Reach out to request API documentation and discuss enterprise pricing.',
   },
   {
     category: 'Advanced',
-    question: 'Can watermark removal be reversed? Is there any way to recover removed watermarks?',
+    question: 'Is it possible to undo watermark extraction? Can stripped watermarks be reconstructed in any scenario?',
     answer:
       'No, watermark removal can&#39;t be undone. Once C2PA metadata is stripped from a file and the file is saved, that metadata is gone for good. Similarly, once invisible pixel watermarks are attenuated through frequency-domain filtering and the image gets re-encoded, the original watermark signal can&#39;t be recovered. That&#39;s exactly why we recommend keeping your own separate record of which images were AI-generated — so internal provenance information survives even after file-level watermarks are removed.',
   },
@@ -341,7 +339,7 @@ const faqs: FaqItem[] = [
     category: 'Commercial Use',
     question: 'How do I clean Adobe Firefly images for commercial use?',
     answer:
-      'Adobe Firefly is built specifically for commercial use — paid Adobe Creative Cloud subscribers get a commercial license for Firefly outputs trained on Adobe Stock and properly licensed content. Once your commercial rights are confirmed, run images through this Adobe Firefly Image Watermark Remover to strip the full C2PA Content Credentials manifest, XMP attribution, and IPTC metadata. Apply your own copyright and creator metadata afterward using Photoshop File Info or ExifTool. Note that Adobe&#39;s official position is that Content Credentials should generally stay intact as transparency about AI use; removal makes sense when your DAM, prepress, or client workflow specifically calls for a clean metadata schema.',
+      'Engineered explicitly for business applications, Adobe Firefly grants paying Adobe Creative Cloud members a commercial license covering Firefly assets generated from Adobe Stock together with properly cleared assets. After confirming your commercial rights, drop your assets into this Adobe Firefly Image Watermark Remover so it can eliminate the complete C2PA Content Credentials manifest, XMP attribution, alongside IPTC metadata. Next, insert your preferred creator and ownership attributes via ExifTool or Photoshop File Info. Keep in mind that Adobe&#39;s official policy suggests keeping Content Credentials active to ensure AI openness; purging them is justified whenever your internal DAM system, prepress pipeline, or client guidelines demand a sanitized metadata schema.',
   },
   {
     category: 'Detection',
@@ -353,7 +351,7 @@ const faqs: FaqItem[] = [
     category: 'Safety',
     question: 'Are Adobe Firefly images safe to use after removing watermarks?',
     answer:
-      'Yes — the cleaned files remain perfectly valid PNG, JPEG, WebP, or TIFF images that open normally in every viewer and editing application, including Photoshop, Lightroom, and Bridge. Removing the C2PA Content Credentials manifest and XMP fields doesn&#39;t introduce malware, corrupt the file, or touch the image data in any way. The image content is functionally identical before and after.',
+      'Certainly — the processed outputs continue to be completely standard PNG, JPEG, WebP, or TIFF files capable of opening seamlessly in any viewing or editing software such as Photoshop, Lightroom, and Bridge. Purging the C2PA Content Credentials manifest along with XMP fields will never inject malicious code, break the container, or alter your raw pixel data. In visual terms, the graphic information remains entirely identical before and after cleaning.',
   },
   {
     category: 'Workflow',

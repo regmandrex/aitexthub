@@ -18,7 +18,7 @@ const toolSlug = 'fallout-name-generator';
 export async function generateMetadata(): Promise<Metadata> {
   return buildToolMeta({
     title: 'Fallout Name Generator',
-    description: 'Free Fallout name generator for Vault Dwellers, wasteland survivors, raiders, and ghouls. Retro-apocalyptic names with that Fallout 1950s-meets-nuclear vibe — in your browser, no sign-up.',
+    description: '[3] An entirely free Fallout Name Generator built for Vault Dwellers, wasteland survivors, raiders, and ghouls. Craft classic retro-apocalyptic aliases steeped in Fallout style mid-century nuclear flavor—directly in your browser with zero registration.',
     seoTitle: 'Fallout Name Generator – Vault Dweller & Wasteland Names',
     urlPath: `/${toolSlug}`,
   });
@@ -28,111 +28,93 @@ function createWriteUp() {
   return (
     <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
-        <h2>Fallout Name Generator – Vault Dweller &amp; Wasteland Names</h2>
-        <p>
-          This Fallout name generator creates names that fit the retro-apocalyptic world of the Fallout series — a place where 1950s Americana froze in time and then got irradiated. Whether you are naming a Vault Dweller for a playthrough, a wasteland survivor for an RP character, a raider with a fearsome handle, or a settlement in Fallout 4, the generator produces names with the right blend of mid-century charm and post-nuclear grit. It runs in your browser with no sign-up and stores nothing.
-        </p>
-        <p>
-          Fallout&apos;s naming style is one of its strongest bits of worldbuilding: wholesome &quot;Greaser&quot; and &quot;Sunshine&quot; names sitting next to brutal raider monikers, all under that yellow-and-blue Vault-Tec sheen. This page breaks down the naming flavor by faction and survivor type so the name you generate lands squarely in the Fallout register.
-        </p>
+        <h2>[4] Fallout Name Generator – Vault Dweller &amp; Wasteland Names</h2>
+        <p>[5] This Fallout Name Generator generates fitting titles for the retro-apocalyptic universe of the Fallout series—a setting where mid-century Americana was frozen in place before enduring nuclear fallout. Whether creating a fresh Vault Dweller, a hardened wasteland survivor for roleplay, a notorious raider boss, or a new outpost in Fallout 4, this utility provides the quintessential balance of atomic-age cheer and post-war grit. It works straight in your browser, requires no login, and saves nothing.</p>
+        <p>[6] The unmistakable naming conventions in Fallout stand out as masterclass worldbuilding: breezy &quot;Greaser&quot; and &quot;Sunshine&quot; tropes clashing against ruthless raider handles, all coated in vintage Vault-Tec promotional gloss. This guide explores naming conventions across various survivor types and factions so your output genuinely matches the Fallout aesthetic.</p>
 
-        <h2>The Fallout Naming Aesthetic</h2>
-        <p>
-          Fallout&apos;s identity comes from a specific collision of eras. Understanding it makes your names feel canon:
-        </p>
+        <h2>[7] The Fallout Naming Aesthetic</h2>
+        <p>[8] Fallout&apos;s identity comes from a specific collision of eras. Understanding it makes your names feel canon:</p>
         <ul>
-          <li><strong>1950s Americana, preserved.</strong> Wholesome, mid-century first names — the kind you would hear in a pre-war diner or a Vault-Tec ad. Think clean, optimistic, a little old-fashioned.</li>
-          <li><strong>Post-nuclear grit.</strong> Wastelanders often go by tough nicknames, callsigns, or single hard-edged words earned in the ruins.</li>
-          <li><strong>Faction flavor.</strong> The Brotherhood of Steel, the NCR, Caesar&apos;s Legion, raiders, and ghouls each carry their own naming feel — from military ranks to Latin-flavored Legion names.</li>
-          <li><strong>Dark irony.</strong> Fallout loves a cheerful name on a grim thing. A friendly mid-century name worn by a hardened survivor is peak Fallout tone.</li>
+          <li>[9] <strong>1950s Americana, preserved.</strong> Upbeat, vintage personal names reminiscent of mid-century soda shops or glossy Vault-Tec advertisements. They evoke clean, cheerful, nostalgic simplicity.</li>
+          <li>[10] <strong>Post-nuclear grit.</strong> Wasteland denizens frequently adopt rugged monikers, squad callsigns, or blunt, sharp descriptors forged amid the ruins.</li>
+          <li>[11] <strong>Faction flavor.</strong> Groups like the Brotherhood of Steel, the NCR, Caesar&apos;s Legion, raider gangs, and ghouls reflect distinct styling—spanning formal military rankings to classical Latinate handles.</li>
+          <li>[12] <strong>Dark irony.</strong> The Fallout universe thrives on pairing sunny phrases with grim settings. An upbeat atomic-age forename applied to a ruthless drifter captures that signature tone.</li>
         </ul>
 
-        <h2>Names by Survivor Type</h2>
-        <p>
-          The kind of character you are naming shapes the right register:
-        </p>
+        <h2>[13] Names by Survivor Type</h2>
+        <p>[14] The kind of character you are naming shapes the right register:</p>
         <ul>
-          <li><strong>Vault Dwellers.</strong> Clean, pre-war American names fit those raised in the controlled comfort of a Vault — they sound like they grew up on Vault-Tec orientation films.</li>
-          <li><strong>Wasteland survivors.</strong> A first name plus a tough earned nickname, or a single weathered name, suits those who clawed their way through the wastes.</li>
-          <li><strong>Raiders.</strong> Aggressive, intimidating handles meant to scare — brutal, blunt, sometimes darkly funny.</li>
-          <li><strong>Ghouls.</strong> Often keep their pre-war names (they may be centuries old), giving a poignant contrast between an old human name and a radiation-ravaged body.</li>
-          <li><strong>Super mutants.</strong> Simple, blunt, often single-word names reflecting their changed minds.</li>
+          <li><strong>Vault Dwellers.</strong> Polished, pre-war American naming conventions match inhabitants sheltered within the sanitized safety of an underground Vault — echoing childhoods steeped in vintage Vault-Tec instructional reels.</li>
+          <li>[16] <strong>Wasteland survivors.</strong> A standard first name joined with a gritty moniker, or an unadorned weathered title, fits characters fighting to survive the harsh wastes.</li>
+          <li>[17] <strong>Raiders.</strong> Menacing, aggressive street tags created to spread fear—coarse, violent, and occasionally laced with pitch-black humor.</li>
+          <li>[18] <strong>Ghouls.</strong> Frequently retaining their original pre-war identities from centuries past, creating an emotional rift between historical ordinary names and scarred, irradiated exteriors.</li>
+          <li>[19] <strong>Super mutants.</strong> Direct, unrefined, usually single-word names that mirror their altered intellect and altered psychology.</li>
         </ul>
 
         <h2>Faction Naming</h2>
-        <p>
-          Fallout&apos;s factions each have a naming culture worth matching:
-        </p>
+        <p>[20] Fallout&apos;s factions each have a naming culture worth matching:</p>
         <ul>
-          <li><strong>Brotherhood of Steel.</strong> Military first-name-plus-rank structure; knights, paladins, and scribes with a disciplined feel.</li>
-          <li><strong>NCR.</strong> Practical, frontier-republic names with a Western, settler-rebuilding flavor.</li>
-          <li><strong>Caesar&apos;s Legion.</strong> Latinized names and titles reflecting their Roman cosplay-empire — among the most distinctive in the series.</li>
-          <li><strong>The Institute / Enclave.</strong> Cold, formal, technocratic names fitting their secrecy and ambition.</li>
+          <li>[21] <strong>Brotherhood of Steel.</strong> Structured military designations pairing title with rank; scribes, knights, and paladins exude orderly formality.</li>
+          <li>[22] <strong>NCR.</strong> Practical, frontier-style monikers capturing an emergent democratic nation with old-school pioneer resilience.</li>
+          <li>[23] <strong>Caesar&apos;s Legion.</strong> Latin-inspired names and official titles mirroring their neo-Roman militant culture—some of the most unmistakable sounds in the wasteland.</li>
+          <li>[24] <strong>The Institute / Enclave.</strong> Detached, bureaucratic, high-tech identifiers that underline their hidden agendas and clinical operations.</li>
         </ul>
 
         <h2>Naming Settlements (Fallout 4)</h2>
-        <p>
-          Fallout 4&apos;s settlement system means players also name places, not just people. A good settlement name evokes either pre-war optimism (a cheery, brochure-style name) or post-war reality (something defensive, scrappy, or grimly hopeful). Generate a batch and look for names that would fit on a hand-painted sign at the edge of a rebuilt town — that is the sweet spot for a Commonwealth settlement.
-        </p>
+        <p>Because Fallout 4 emphasizes settlement construction, adventurers also name towns along with personalities. An ideal town title channels either forgotten atomic optimism (sunny, tourist-brochure labels) or harsh wasteland survival (fortified, makeshift, or stubbornly hopeful names). Produce a collection and select tags that would make sense carved onto a weathered entrance sign—that delivers the quintessential Commonwealth settlement experience.</p>
 
-        <h2>How to Use This Fallout Name Generator</h2>
+        <h2>[10] How to Use This Fallout Name Generator</h2>
         <ol className="list-decimal pl-6 space-y-2">
-          <li>Set how many names you want per run (1–24).</li>
-          <li>Click <strong>Generate names</strong> to get a batch of wasteland-style names.</li>
-          <li>Keep the ones that fit your survivor type or faction, using the notes above.</li>
-          <li>Copy the list into your notes and shortlist your favorites for your character or settlement.</li>
-          <li>Run again for more — no limit, no account, no download.</li>
+          <li>Choose the quantity of names generated per batch (1–24).</li>
+          <li>Press <strong>Generate names</strong> to instantly produce a fresh set of post-apocalyptic options.</li>
+          <li>Rely on the provided guidance to select whatever suits your specific survivor concept or group.</li>
+          <li>Save the results into a separate document and highlight top contenders for your settlement or build.</li>
+          <li>Spin the tool repeatedly for fresh ideas — zero restrictions, sign-ups, or software required.</li>
         </ol>
-        <p>
-          Everything runs locally in your browser. Your settings and generated names are never sent to a server, so your character ideas stay private.
-        </p>
+        <p>All processing happens directly within your web browser. None of your options or created monikers get transmitted over the internet, keeping all your personal concept work entirely confidential.</p>
 
         <h2>Tips for a Fallout-Fitting Name</h2>
-        <p>
-          Lean into the era clash: a wholesome mid-century first name carries Fallout&apos;s tone better than a generic fantasy name. For raiders, go blunt and a little theatrical — the wasteland rewards a name that sounds dangerous. For ghouls, remember they often keep an old human name, so a slightly dated pre-war name with a backstory of survival hits hardest. If you are role-playing a faction member, match the faction&apos;s register (military for the Brotherhood, Latin for the Legion) and the character will slot right into the world.
-        </p>
+        <p>Embrace the contrast of timelines: an earnest mid-twentieth-century forename fits the atmosphere of Fallout far better than an ordinary high-fantasy alias. When designing raiders, choose punchy, slightly exaggerated tags — surviving the wastes favors a handle that inspires fear. With ghouls, recall that many hold onto their original mortal identities, meaning an antiquated pre-war title coupled with an endurance narrative works best. When building an affiliate of a specific group, adopt their linguistic style (militaristic jargon for the Brotherhood, classical Latin for the Legion) so your persona integrates smoothly.</p>
 
         <h2>What This Tool Does and Does Not Do</h2>
         <ul>
           <li>It generates Fallout-style names for Vault Dwellers, survivors, raiders, ghouls, and settlements.</li>
-          <li>It does not reproduce official characters as a list — output is original for your own use.</li>
-          <li>It does not store your generated names or settings; generation is fully local.</li>
-          <li>It does not connect to the game — it only suggests names to use in your playthrough or RP.</li>
+          <li>You will not find existing canon personalities here — each generated moniker is novel and yours to adapt.</li>
+          <li>It never logs or saves your preferences or creations; everything happens solely on your device.</li>
+          <li>It operates separately from the title itself, providing inspiration tailored for your tabletop campaigns or play.</li>
         </ul>
 
         <h2>Final Notes</h2>
-        <p>
-          Fallout&apos;s world lives in the gap between a cheerful 1950s that never ended and the radioactive ruin that followed. The best Fallout names sit in that gap — wholesome and grim at once. This generator gives you a pool grounded in that aesthetic, sorted by survivor type and faction, from Vault-Tec-clean first names to brutal raider handles. Pick your character&apos;s background, generate a batch, lean on the notes above, and you will have a name that feels like it was always part of the wasteland. War. War never changes.
-        </p>
+        <p>The universe of Fallout thrives within the tension dividing an idealized, perpetual 1950s atomic optimism from the irradiated devastation that destroyed it. Outstanding Fallout handles embody this paradox by blending cheeriness with bleakness. Drawing from that precise thematic spirit, our tool provides curated lists organized across survivor roles and allegiances, covering everything from polished Vault-Tec titles to savage raider epithets. Select your persona's origins, produce a list, apply the provided guidance, and create an identity woven seamlessly into post-nuclear lore. War. War never changes.</p>
       </div>
     </section>
   );
 }
 
 const pageFaqs: FaqItem[] = [
-  { category: 'General', question: 'What is a Fallout name generator?', answer: 'It is a browser tool that creates names in the style of the Fallout series — retro-apocalyptic names blending 1950s Americana with post-nuclear grit. It produces names for Vault Dwellers, wasteland survivors, raiders, ghouls, and settlements, sorted by the franchise’s real naming flavor. It runs locally with no sign-up and stores nothing.' },
-  { category: 'Aesthetic', question: 'What makes a name sound like Fallout?', answer: 'Fallout names live in the collision of a frozen 1950s and a radioactive ruin. Wholesome mid-century first names, tough earned nicknames, and a streak of dark irony (a cheerful name on a grim survivor) all define the tone. A name that feels both old-fashioned and weathered lands squarely in the Fallout register.' },
-  { category: 'Survivor types', question: 'How do I name a Vault Dweller?', answer: 'Vault Dwellers grew up in the controlled comfort of a Vault, so clean, pre-war American first names fit them best — the kind you would hear in a Vault-Tec orientation film. Generate a batch and keep the wholesome, optimistic, slightly old-fashioned results.' },
-  { category: 'Survivor types', question: 'How do I name a wasteland survivor?', answer: 'Survivors who clawed through the wastes often go by a first name plus a tough earned nickname, or a single weathered word. Generate a batch and look for names that sound like they were hardened by the ruins — practical, a little scarred, and memorable.' },
-  { category: 'Survivor types', question: 'How do I name a raider?', answer: 'Raider names are aggressive, intimidating handles built to scare — blunt, brutal, and sometimes darkly funny. Generate in that lane and pick something that would make a settlement nervous. Theatrical menace fits raider culture better than subtlety.' },
-  { category: 'Survivor types', question: 'How do I name a ghoul?', answer: 'Ghouls are often centuries old and tend to keep their pre-war human names, which creates a poignant contrast between an old name and a radiation-ravaged body. A slightly dated, pre-war first name with a survival backstory hits hardest for a ghoul character.' },
-  { category: 'Factions', question: 'How do I name a Brotherhood of Steel character?', answer: 'The Brotherhood uses a military first-name-plus-rank structure — knights, paladins, and scribes with a disciplined feel. Generate a base name and pair it with a Brotherhood rank for an authentic result that fits their order.' },
-  { category: 'Factions', question: 'How do I name a Caesar’s Legion character?', answer: 'The Legion uses Latinized names and titles reflecting their Roman-empire cosplay — among the most distinctive naming styles in Fallout. Generate a batch and lean toward the Latin-flavored results, or adapt a name into a Legion-style title for full effect.' },
-  { category: 'Factions', question: 'What about NCR or Institute names?', answer: 'NCR names are practical and frontier-flavored, fitting a settler republic rebuilding the West. Institute and Enclave names are cold, formal, and technocratic, matching their secrecy and ambition. Match the faction’s register and your character will fit its culture.' },
-  { category: 'Settlements', question: 'Can I name a Fallout 4 settlement?', answer: 'Yes. A good settlement name evokes either pre-war optimism (a cheery, brochure-style name) or post-war reality (something scrappy or grimly hopeful). Generate a batch and look for names that would fit on a hand-painted sign at the edge of a rebuilt Commonwealth town.' },
-  { category: 'Usage', question: 'How do I use this generator?', answer: 'Set how many names you want (1–24), click Generate names, then keep the ones that fit your survivor type or faction using the notes above. Copy the list into your notes and shortlist your favorites. Run again for more — no limit, account, or download.' },
-  { category: 'Usage', question: 'Can I edit the generated names?', answer: 'Yes. The output is a starting point. Pair a clean first name with a tough nickname, Latinize a name for the Legion, or trim it to a single blunt word for a super mutant. Many players generate a batch and then refine a favorite to fit their exact character.' },
-  { category: 'Aesthetic', question: 'Why do cheerful names work for grim characters?', answer: 'Dark irony is core to Fallout’s tone — a wholesome mid-century name worn by a hardened survivor captures the gap between the optimistic pre-war world and the brutal one that replaced it. That contrast is often more in-genre than a purely grim name.' },
-  { category: 'Use cases', question: 'Can I use these names for role-play?', answer: 'Yes — tabletop, play-by-post, and Discord RP set in the Fallout world all need names that fit the wasteland. Generate a batch, match it to your character’s background and faction, and the result will sit naturally alongside canon characters.' },
-  { category: 'Technical', question: 'How are the names generated?', answer: 'The generator combines curated Fallout-style elements — mid-century first names, wasteland nicknames, faction flavor — and shuffles them at random in your browser. Each run produces a new set. Nothing is sent to a server; generation is entirely local.' },
-  { category: 'Technical', question: 'Are these real characters from Fallout?', answer: 'No. The generator creates original, Fallout-style names for your own use rather than reproducing the official cast. That is intentional — you want a fresh name for your survivor, not a duplicate of a canon character you cannot make your own.' },
-  { category: 'Privacy', question: 'Is my data sent to a server?', answer: 'No. Everything runs in your browser. When you click generate, names are created on your device. Your settings and generated names are never sent to our servers and nothing is stored. You can use the tool in a private window and your character ideas stay yours.' },
-  { category: 'Limits', question: 'How many names can I generate at once?', answer: 'You can request 1–24 names per run. For more, run it again — each run produces a fresh random set with no daily or total limit. Paste multiple runs into one document if you want a large pool to choose from.' },
-  { category: 'Compatibility', question: 'Does it work on mobile?', answer: 'Yes. The generator runs in any modern browser on desktop, tablet, or phone with no app install. Generate a batch on your phone while planning a character, copy it into notes, and shortlist names wherever you are.' },
-  { category: 'General', question: 'Is the Fallout name generator free?', answer: 'Yes, completely free with no account, sign-up, or download. Generate as many Vault Dweller, survivor, raider, and settlement names as you like, as often as you like.' },
-  { category: 'Best practices', question: 'How do I make a name feel truly Fallout?', answer: 'Lean into the era clash — a wholesome mid-century name carries the tone better than generic fantasy. Match the name to your character’s survivor type or faction, and for extra flavor, add a tough nickname or a faction rank. Read it aloud against the franchise’s wholesome-but-grim vibe to confirm it fits.' },
-  { category: 'Best practices', question: 'Should the name match my character’s faction?', answer: 'It deepens immersion. A Brotherhood paladin, an NCR ranger, and a Legion centurion should all sound different. Matching the name to the faction’s register — military, frontier, or Latin — instantly grounds the character in the wasteland’s politics.' },
-  { category: 'Troubleshooting', question: 'The names feel too generic — what should I do?', answer: 'Generate a larger batch and filter for the era-specific results: keep the mid-century first names and the gritty wasteland nicknames, discard anything that could belong to any game. Then pair a clean first name with a tough nickname to capture Fallout’s signature contrast.' },
+  { category: 'General', question: 'What is a Fallout name generator?', answer: 'This web application supplies Fallout-inspired aliases, fusing nostalgic 1950s Americana with harsh post-atomic survivor gritty flavor. It serves Vault dwellers, scavengers, bandits, mutated ghouls, and outposts based on genuine setting tropes. The entire engine executes inside your browser without accounts, installations, or data retention.' },
+  { category: 'Aesthetic', question: 'What makes a name sound like Fallout?', answer: 'A proper Fallout identity reflects an idealized 1950s caught in total nuclear collapse. Cheerful mid-century forenames, gritty battlefield handles, and grimly playful contrasts (like an upbeat alias given to a ruthless scavenger) define this universe. Any identity combining quaint vintage warmth with rugged grit fits the setting.' },
+  { category: 'Survivor types', question: 'How do I name a Vault Dweller?', answer: 'Vault Dwellers matured within the secure shelter of a Vault, making pristine, pre-war American first names ideal for them — the sort heard during a Vault-Tec orientation film. Produce a selection and preserve the wholesome, hopeful, slightly nostalgic choices.' },
+  { category: 'Survivor types', question: 'How should I name a wasteland survivor?', answer: 'Survivors who fought through the wastes frequently use a first name coupled with a hard-earned nickname, or a single weathered term. Generate a batch and look for handles that feel roughened by the ruins — practical, somewhat scarred, and memorable.' },
+  { category: 'Survivor types', question: 'How should I name a raider?', answer: 'Raider names are aggressive, intimidating monikers designed to frighten — blunt, brutal, and occasionally darkly humorous. Create within that style and select something that would make a settlement anxious. Theatrical menace suits raider culture better than subtlety.' },
+  { category: 'Survivor types', question: 'How should I name a ghoul?', answer: 'Ghouls are frequently centuries old and tend to keep their pre-war human names, establishing a striking contrast between an ancient name and a radiation-damaged body. A slightly dated, pre-war first name paired with a survival background works best for a ghoul character.' },
+  { category: 'Factions', question: 'What is the best way to name a Brotherhood of Steel character?', answer: 'The Brotherhood relies on a military first-name-plus-rank approach featuring knights, paladins, and scribes for a disciplined vibe. Create a base name and combine it with a Brotherhood rank to achieve an authentic fit for their order.' },
+  { category: 'Factions', question: 'How can I create a Caesar’s Legion character name?', answer: 'The Legion employs Latinized names and titles that evoke Roman-empire cosplay, standing out as one of Fallout\'s most unique naming conventions. Generate a set and favor the Latin-inspired options, or modify a name into a Legion-style title for maximum impact.' },
+  { category: 'Factions', question: 'What about names for the NCR or the Institute?', answer: 'NCR names feel practical and frontier-oriented, suiting a settler republic working to rebuild the West. Conversely, Institute and Enclave names sound cold, formal, and technocratic, reflecting their secretive and ambitious nature. Align with the faction’s tone to ensure your character matches its culture.' },
+  { category: 'Settlements', question: 'Is it possible to name a Fallout 4 settlement?', answer: 'Certainly. A strong settlement name suggests either pre-war optimism, resembling a cheerful brochure, or post-war reality, such as something scrappy or grimly hopeful. Generate a batch and search for titles that look right at home on a hand-painted sign near a reconstructed Commonwealth town.' },
+  { category: 'Usage', question: 'How do I operate this generator?', answer: 'Choose your desired number of names (1–24), press Generate names, and select the ones matching your survivor type or faction using the tips provided above. Copy the list into your notes to narrow down your favorites. Run the tool again for additional options with no limits, accounts, or downloads required.' },
+  { category: 'Usage', question: 'Am I allowed to edit the generated names?', answer: 'Indeed, the output serves as a foundation. Combine a clean first name with a rugged nickname, apply a Latin twist for the Legion, or shorten it to a single direct word for a super mutant. Many gamers generate a batch and then tweak a favorite to suit their specific character concept.' },
+  { category: 'Aesthetic', question: 'Why do cheerful names suit grim characters?', answer: 'Dark irony is central to the Fallout atmosphere; a wholesome mid-century moniker worn by a hardened survivor highlights the disconnect between the hopeful pre-war era and the harsh reality that followed. This contrast often fits the genre better than a strictly gloomy name.' },
+  { category: 'Use cases', question: 'Can these names be used for role-playing?', answer: 'Yes, tabletop, play-by-post, and Discord RP set in the Fallout universe all require wasteland-appropriate names. Generate a batch, align it with your character’s origin and faction, and the result will blend seamlessly alongside official canon characters.' },
+  { category: 'Technical', question: 'In what manner are the names created?', answer: 'The tool merges hand-picked Fallout motifs—like mid-century given names, wasteland monikers, and faction styles—and mixes them randomly inside your browser. Every execution yields a fresh list. No information is transmitted to any server since generation happens completely locally.' },
+  { category: 'Technical', question: 'Are these authentic characters from Fallout?', answer: 'Negative. The utility generates unique, Fallout-inspired names for your personal use instead of recycling the official roster. This design choice ensures your survivor receives a fresh title rather than duplicating a canon figure you cannot truly customize.' },
+  { category: 'Privacy', question: 'Are my details transmitted to a server?', answer: 'No. Everything processes directly within your browser. When you hit generate, names form right on your device. Your preferences and generated names never transmit to our servers, and zero data gets saved. Feel free to use the tool in a private window to keep your character concepts private.' },
+  { category: 'Limits', question: 'How many names am I able to generate simultaneously?', answer: 'You are welcome to request between 1 and 24 names per generation. To get more, simply run it again; each attempt delivers a brand-new random selection with no daily or lifetime caps. Combine multiple runs into a single document should you need an extensive pool of options.' },
+  { category: 'Compatibility', question: 'Does it function on mobile devices?', answer: 'Absolutely. The generator functions on any contemporary browser across desktop, tablet, or mobile devices without requiring app downloads. Produce a batch on your smartphone while brainstorming a character, save them to your notes, and curate your top picks wherever you happen to be.' },
+  { category: 'General', question: 'Does the Fallout Name Generator cost anything?', answer: 'Yes, it is entirely free without needing an account, registration, or software download. Create as many Vault Dweller, survivor, raider, and settlement names as you desire, as frequently as you wish.' },
+  { category: 'Best practices', question: 'How do I give a name a genuine Fallout feel?', answer: 'Emphasize the era clash; a wholesome mid-century name captures the mood far better than standard fantasy tropes. Tailor the name to your character’s survivor category or faction, and incorporate a rugged nickname or faction rank for added flavor. Say it aloud against the franchise\'s cheerful-yet-grim tone to verify it works.' },
+  { category: 'Best practices', question: 'Should the name correspond to my character’s faction?', answer: '[1] It enhances immersion. A Brotherhood paladin, an NCR ranger, and a Legion centurion ought to sound distinct. Matching the name to the faction’s register — military, frontier, or Latin — immediately roots the character in the wasteland’s politics.' },
+  { category: 'Troubleshooting', question: '[2] The names feel overly generic — what should I do?', answer: '[3] Produce an expanded collection and screen for specific historical tones: isolate vintage mid-century titles and weathered survivor tags, filtering out anything that reads too generic. Fusing an innocent retro given name with a harsh moniker creates that iconic Fallout irony.' },
 ];
 
 export default async function FalloutNameGeneratorPage() {
@@ -150,7 +132,7 @@ export default async function FalloutNameGeneratorPage() {
         {createWriteUp()}
         <div className="mt-10 space-y-3">
           <h2 className="text-2xl font-semibold text-slate-900">Frequently Asked Questions</h2>
-          <p className="text-slate-700">Common questions about the Fallout name generator.</p>
+          <p className="text-slate-700">Frequent inquiries concerning the Fallout Name Generator.</p>
         </div>
         <FAQSection items={pageFaqs} />
         <FaqJsonLd faqs={pageFaqs} />

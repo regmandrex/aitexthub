@@ -5,3 +5,5 @@
 .agents
 docs
 *.log
+content-migration
+scripts/content-migration

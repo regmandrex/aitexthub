@@ -5,112 +5,62 @@ function WriteUp() {
   return (
     <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
-        <h2>Poetry Humanizer: Make AI-Generated Poetry Sound Lyrical, Emotional, and Authentically Human</h2>
-        <p>
-          Poetry is perhaps the hardest form of writing for AI to produce convincingly. Where an AI can generate a serviceable blog post or a functional product description, AI-generated poetry almost always reveals itself — through forced rhymes, clichéd imagery, mechanical meter, and that fundamental absence of lived experience that distinguishes genuine verse from technically correct versification. The Poetry Humanizer was built specifically to address these failures, transforming AI-generated poems into work that sounds as though it emerged from a real person with a real perspective and a genuine relationship with language.
-        </p>
-        <p>
-          Whether you are using AI as a drafting tool to overcome writer's block, generating poems at scale for a creative project, or working with AI-assisted poetry for publication, the Poetry Humanizer gives you output that transcends the mechanical predictability of raw AI verse. This is not simple paraphrasing or synonym replacement — it is a deep reworking of the qualities that make AI poetry feel artificial, guided by an understanding of what genuine poetic voice sounds like.
-        </p>
+        <h2>Poetry Humanizer: Transform Artificial Intelligence Verse to Feel Lyrical, Expressive, and Genuinely Human</h2>
+        <p>Poetry is arguably the toughest writing style for AI to create believably. While an AI can produce a usable article or a practical item summary, AI poetry nearly always gives itself away — via rigid rhymes, worn-out pictures, stiff rhythm, and that core lack of real-world background separating true poetry from merely correct rhyming. The Poetry Humanizer was designed expressly to fix these flaws, turning machine-made verses into pieces that read like they came from a real individual possessing a genuine viewpoint and a true connection to words.</p>
+        <p>No matter if you employ AI for brainstorming to beat writer's block, producing poems in bulk for an artistic assignment, or handling AI-assisted verses for release, the Poetry Humanizer yields results surpassing the rigid predictability of raw AI output. This goes beyond basic rephrasing or swapping words — it represents a thorough overhaul of the traits making AI verse seem fake, shaped by a grasp of what authentic poetic tone truly resembles.</p>
 
-        <h2>Why AI Poetry Sounds Mechanical: The Specific Problems</h2>
-        <p>
-          To understand what the Poetry Humanizer does, you first need to understand precisely why AI-generated poetry fails on the page. These are not random failures — they are systematic patterns that emerge from how language models generate text.
-        </p>
+        <h2>Why Machine-Made Poems Feel Robotic: The Core Issues</h2>
+        <p>To grasp what the Poetry Humanizer achieves, one must first recognize precisely why AI poetry falls short on paper. These are not random mistakes — they are consistent trends arising from how language models create text.</p>
 
-        <h3>Forced Rhymes and Predictable End-Sounds</h3>
-        <p>
-          AI models trained on large corpora of poetry learn that poems often rhyme, and they apply this pattern aggressively. The result is verse where the rhyme scheme feels coerced — where the sentence bends itself into an unnatural shape to land on the expected rhyming sound. "Love" must be paired with "above" or "dove." "Heart" inevitably finds "apart." "Night" pairs with "light" with machine-like reliability. Human poets know when to break the expected rhyme, when to use slant rhyme for more interesting sonic texture, and when to abandon rhyme entirely in service of authentic expression. AI models lack this discretion.
-        </p>
+        <h3>Unnatural Rhymes and Foreseeable Terminal Sounds</h3>
+        <p>AI systems trained on massive poetry datasets learn that verses frequently rhyme, applying this habit strongly. The outcome is verse where the rhyming feels pushed — where the phrasing twists into a strange form to hit the anticipated rhyming note. "Love" must connect with "above" or "dove." "Heart" always meets "apart." "Night" joins "light" with robotic consistency. Human writers recognize when to skip expected rhymes, when to use slant rhymes for better sound depth, and when to drop rhyming completely for genuine messaging. AI systems lack this judgment.</p>
 
-        <h3>Clichéd Imagery and Predictable Metaphors</h3>
-        <p>
-          Because AI generates text by predicting what commonly follows what has come before, its imagery tends toward the most-used metaphors in existing poetry: hearts are compared to birds, grief is described as weight, time flows like rivers, and love blooms like flowers. These are not bad metaphors — they became common because they resonated — but their familiarity has drained them of impact. The best human poetry reaches for the specific, the surprising, the image that makes the abstract suddenly concrete in a way the reader has not encountered before. AI-generated imagery almost never achieves this freshness.
-        </p>
+        <h3>Trite Visuals and Anticipated Metaphors</h3>
+        <p>Since AI builds text by forecasting what typically follows previous input, its pictures lean toward the most common metaphors in existing verses: hearts resemble birds, sorrow acts as weight, time runs like streams, and romance grows like blooms. These are not poor metaphors — they became popular because they worked — but their overuse stripped away their power. Top human poetry aims for the unique, unexpected picture turning abstract ideas into concrete shapes unseen by the reader prior. AI imagery rarely reaches this originality.</p>
 
-        <h3>Perfect Meter That Sounds Mechanical</h3>
-        <p>
-          AI poetry often achieves technically correct meter while sounding robotic. Human poets know that meter is a framework for variation, not a constraint to be mechanically fulfilled. The strategic anapest in an iambic line, the caesura that creates a pause the reader feels, the headless line that begins with unexpected stress — these controlled departures from regular meter are what give verse its living quality. AI-generated poetry tends to be metrically monotonous, every line landing on the same beat pattern, producing a singsong effect that kills emotional impact.
-        </p>
+        <h3>Flawless Rhythm That Feels Rigid</h3>
+        <p>AI poetry often hits correct rhythm while sounding robotic. Human authors understand that meter acts as a base for variation, not a strict rule to be fulfilled blindly. The deliberate anapest within an iambic verse, the pause building a felt gap, the truncated start beginning with unexpected stress — these managed breaks from standard rhythm give verse its lifelike feel. AI verse tends to be rhythmically dull, every line hitting identical beats, creating a singsong tune that ruins emotional resonance.</p>
 
-        <h3>Telling Rather Than Showing</h3>
-        <p>
-          Workshop wisdom has always held that effective poetry shows rather than tells — and this is one of the areas where AI consistently fails. AI-generated poems tend to state their themes directly: "I feel so sad," "love is painful," "nature is beautiful." Strong poetry enacts its meanings through specific images and actions rather than naming them. The AI that writes "I grieved alone in the empty house" is doing the work the reader should be doing — the better poem gives you the unwashed coffee cup still on the counter, the half-read book face-down on the pillow, and lets you feel the grief yourself.
-        </p>
+        <h3>Explaining Instead of Depicting</h3>
+        <p>Writing classes have always taught that great poetry demonstrates instead of explaining — and this represents a major weakness for AI. Poems produced by AI usually declare their messages openly: "I feel so sad," "love is painful," "nature is beautiful." Powerful poetry demonstrates its concepts through concrete visuals and actions rather than labeling them. An AI writing "I grieved alone in the empty house" does the heavy lifting meant for the audience — a superior poem provides the unwashed coffee cup resting on the counter, the half-read book face-down on the pillow, allowing you to experience the sorrow directly.</p>
 
-        <h3>Generic Universal Experience vs Specific Witnessed Detail</h3>
-        <p>
-          Human poetry draws its power from the paradox of the specific: a poem about one particular autumn afternoon in one particular place, rendered with enough precision, somehow speaks to every autumn. AI-generated poetry tends toward the generic universal — broad statements about loss, love, change, nature — without the grounding in specific witnessed detail that creates emotional resonance. The Poetry Humanizer pushes AI verse toward the particular, substituting the generic with the concrete in ways that make the poem feel inhabited.
-        </p>
+        <h3>Generic Broad Themes Versus Concrete Observed Particulars</h3>
+        <p>Human poetry gains its strength from the paradox of specificity: a verse regarding a single autumn afternoon in one precise location, captured with exact precision, strangely addresses every autumn. AI-created poetry leans toward generic universality — sweeping declarations about grief, love, transformation, nature — lacking the anchor of concrete observed detail that builds emotional resonance. The Poetry Humanizer guides AI verses toward the specific, replacing generalized terms with tangible elements in ways that make the writing feel authentic.</p>
 
-        <h2>Poetry Forms and How the Humanizer Approaches Them</h2>
-        <p>
-          Different poetry forms require different humanization approaches. The Poetry Humanizer adapts its output based on the form of the input, preserving the structural requirements of formal verse while humanizing the content and voice.
-        </p>
+        <h2>Poetic Structures and the Way the Humanizer Handles Them</h2>
+        <p>Various poetry styles demand distinct humanization techniques. The Poetry Humanizer customizes its results according to the style of the input text, maintaining the structural rules of traditional verse while naturalizing the messaging and tone.</p>
 
         <h3>Free Verse Humanization</h3>
-        <p>
-          Free verse is paradoxically more demanding than formal verse — without the scaffold of meter and rhyme, every other element of craft must carry more weight. Line breaks become critical decisions: where the line ends shapes how the reader experiences the pause, the word that hangs at the end, the enjambment that pulls the eye forward. AI-generated free verse tends to break lines mechanically, often at grammatical boundaries that feel arbitrary rather than purposeful. The humanizer reworks these breaks for emotional and sonic effect.
-        </p>
+        <p>Free verse is surprisingly harder to write than traditional verse — without the framework of rhythm and rhyme, every other aspect of technique must carry heavier weight. Line breaks turn into vital choices: where a line stops dictates how readers process the pause, the final word hanging at the end, the enjambment driving the gaze downward. AI-created free verse typically breaks lines mechanically, frequently at grammatical limits that seem random instead of intentional. The humanizer adjusts these pauses for maximum emotional and auditory impact.</p>
 
-        <h3>Sonnet and Formal Verse Humanization</h3>
-        <p>
-          Sonnets and other formal verse structures require maintaining the structural form while humanizing the content. The humanizer preserves iambic pentameter constraints (or the chosen meter) and rhyme scheme requirements, but reworks the specific language, imagery, and syntactic choices within those constraints to feel more natural and less mechanical. The volta — the turn in a sonnet — is particularly important: AI-generated sonnets often produce perfunctory or predictable turns, and the humanizer aims to deepen this central dramatic movement.
-        </p>
+        <h3>Sonnet and Traditional Verse Transformation</h3>
+        <p>Sonnets and additional traditional verse patterns demand keeping the formal framework while humanizing the messaging. The humanizer maintains iambic pentameter rules (or the chosen meter) alongside rhyme scheme demands, yet refines the exact vocabulary, imagery, and grammatical decisions inside those limits to sound more authentic and less robotic. The volta — the shift in a sonnet — is especially vital: AI-created sonnets frequently deliver basic or obvious turns, and the humanizer strives to strengthen this core dramatic shift.</p>
 
         <h3>Haiku Humanization</h3>
-        <p>
-          Haiku is a form that AI generates particularly poorly — the surface simplicity conceals profound craft requirements that AI almost never achieves. True haiku depends on juxtaposition, on the charged gap between two images that creates a resonance greater than either image alone. AI haiku tends to be three-line nature descriptions without the essential dynamic tension. The humanizer identifies and deepens the juxtaposition, creates a more surprising or resonant image pairing, and ensures the kigo (seasonal reference) feels organic rather than inserted.
-        </p>
+        <p>Haiku is a genre that AI produces exceptionally badly — the apparent simplicity hides deep technical demands that AI nearly always misses. Authentic haiku relies on contrast, on the charged space bridging two visuals that forms a resonance greater than either visual on its own. AI haiku usually consists of three-line nature descriptions absent the vital dynamic tension. The humanizer detects and strengthens the contrast, builds a more unexpected or striking image pairing, and guarantees the kigo (seasonal reference) feels natural rather than forced.</p>
 
-        <h3>Villanelle and Highly Structured Forms</h3>
-        <p>
-          The villanelle's two recurring refrains accumulate meaning as they appear in different contexts throughout the poem — this is the form's essential power. AI-generated villanelles often have refrains that are merely repeated without deepening, losing the form's cumulative effect. The humanizer works on the refrains themselves (ensuring they can bear multiple readings in different contexts) and on the stanzas that recontextualize them.
-        </p>
+        <h3>Villanelle and Strictly Organized Structures</h3>
+        <p>The villanelle pair of repeating refrains build significance as they return in varied settings throughout the poem — representing the style's core strength. AI-created villanelles commonly feature refrains that simply repeat without gaining depth, missing the structure's accumulating impact. The humanizer refines the refrains themselves (making sure they support multiple interpretations in different settings) alongside the stanzas that frame them anew.</p>
 
-        <h2>Enjambment, Line Breaks, and the Music of Verse</h2>
-        <p>
-          One of the most telling signs of an AI-generated poem is its mechanical approach to line endings. Human poets use the line break as one of their most powerful tools — creating momentary ambiguity, emphasizing unexpected words, generating forward momentum or contemplative pausing depending on the poem's needs.
-        </p>
-        <p>
-          The Poetry Humanizer pays particular attention to line breaks, reworking mechanical end-stopped patterns into a more varied, purposeful approach. A line that ends on a preposition creates productive forward pull; a line that ends on a verb leaves action suspended; a line that ends on an adjective before the noun it modifies creates a tiny, intense moment of anticipation. These are the micro-decisions that distinguish verse from prose cut into lines.
-        </p>
-        <p>
-          Enjambment — running the sense of one line across the line break into the next — is one of the techniques AI poetry handles most poorly. The humanizer introduces enjambment where it serves the poem's emotional pacing, creating the sense of thought continuing beyond the expected stopping point that gives much modern verse its characteristic feel of following a mind in motion.
-        </p>
+        <h2>Enjambment, Stanza Breaks, and the Melody of Poetry</h2>
+        <p>One of the clearest indicators of an AI-crafted verse is its rigid pattern regarding line endings. Human writers treat the line break as one of their greatest assets, utilizing it to build subtle ambiguity, stress unexpected vocabulary, spark forward drive, or encourage contemplative pauses based on the poem's demands.</p>
+        <p>The Poetry Humanizer focuses heavily on line breaks, transforming rigid end-stopped structures into a dynamic, intentional format. A line finishing with a preposition generates constructive forward pull; a line concluding on a verb leaves action hanging; a line ending with an adjective prior to the modified noun builds a brief, intense moment of suspense. These micro-choices separate true verse from prose broken into rows.</p>
+        <p>Enjambment, which is extending the sense of a single line across the break into the following one, represents a technique AI verse manages quite poorly. The humanizer integrates enjambment where it supports the poem's emotional tempo, establishing the feeling of a thought stretching past the anticipated stopping point that provides modern verse with its signature vibe of tracking a thinking mind.</p>
 
-        <h2>Voice and Persona in AI-Generated Poetry</h2>
-        <p>
-          Perhaps the deepest failure of AI-generated poetry is its lack of voice — that indefinable quality that makes you feel a distinct sensibility behind the words. Human poets have voices: we recognize Mary Oliver's intimacy with the natural world, Nikki Giovanni's oral energy, Philip Larkin's compressed bitterness, Ocean Vuong's lyric density. AI-generated poetry has no voice — it has the averaged-out quality of all voices blended together into a kind of statistical mean.
-        </p>
-        <p>
-          The Poetry Humanizer cannot fully replicate the development of an authentic poetic voice, which comes from years of reading, writing, revision, and lived experience. But it can introduce the markers of voice: a consistent perspective, a characteristic approach to line, a recurring set of image domains, a distinctive relationship between the lyric speaker and the world being observed. Even establishing these minimal conditions of voice consistency transforms AI poetry from something that reads like a committee product into something that reads like a person.
-        </p>
+        <h2>Persona and Tone in Verses Created by AI</h2>
+        <p>Perhaps the most profound shortcoming of AI-generated poetry is its absence of voice—that elusive quality imparting a distinct sensibility behind the text. Human creators possess voices: we easily recognize Mary Oliver's closeness to the natural world, Nikki Giovanni's oral energy, Philip Larkin's distilled bitterness, or Ocean Vuong's lyric depth. AI verse lacks any voice, offering instead the averaged-out blend of all tones merged into a statistical mean.</p>
+        <p>The Poetry Humanizer cannot fully replicate the emergence of an authentic poetic voice, which arises from years of reading, writing, editing, and living. Yet, it can instill markers of voice: a consistent perspective, an intentional approach to lines, recurring image themes, and a distinct dynamic between the lyric speaker and the observed world. Setting these basic conditions for voice consistency transforms AI verse from something resembling a committee draft into something resembling a person.</p>
 
-        <h2>What Workshop Feedback Reveals About AI Poetry</h2>
-        <p>
-          The patterns in workshop feedback on AI-submitted poems are highly consistent — and they map almost perfectly onto the patterns the Poetry Humanizer is designed to address. The most common workshop criticisms of AI poetry include: "I don't feel a distinct speaker," "the imagery is familiar," "the ending is too neat — it resolves everything," "there are no surprises," "the line breaks feel arbitrary," and "I want more specificity — show me a real place, a real moment, not a general impression."
-        </p>
-        <p>
-          These critiques reveal what experienced readers instinctively detect when they encounter AI poetry: the absence of risk, surprise, and genuine investment. Human poets take risks — they commit to strange images, they leave things unresolved, they follow a thought into uncertainty. AI poetry is always safe. The humanizer introduces the controlled risk-taking that distinguishes interesting verse from competent versification.
-        </p>
-        <p>
-          The "too-neat ending" problem is particularly worth noting. AI-generated poems almost always conclude with a summary statement or affirmation that wraps up the poem's theme with satisfying completeness. Strong human poetry rarely does this — it tends to end on an image, a gesture, or a question that opens outward rather than closing down. The Poetry Humanizer works to open endings rather than resolve them.
-        </p>
+        <h2>Insights from Workshop Critiques on AI Verse</h2>
+        <p>The trends found in workshop critiques regarding AI-submitted verses remain remarkably consistent, mapping cleanly onto the issues the Poetry Humanizer aims to resolve. Typical workshop complaints directed at AI verse feature phrases like: "I cannot sense a distinct speaker," "the imagery feels familiar," "the conclusion is overly neat—it wraps up everything," "there are zero surprises," "the line breaks seem arbitrary," and "I desire greater specificity—show a tangible place, a specific moment, rather than vague impressions."</p>
+        <p>Such critiques highlight what seasoned readers instinctively notice upon encountering AI poetry: the complete lack of risk, surprise, and genuine investment. Human poets embrace risks—they commit to unusual imagery, keep matters unresolved, and chase thoughts into uncertainty. AI poetry stays entirely safe. The humanizer injects controlled risk-taking that sets captivating verse apart from mere competent versification.</p>
+        <p>The overly neat conclusion issue deserves specific attention. AI-crafted verses nearly always finish with a summary remark or affirmation resolving the core theme with neat completeness. Strong human poetry seldom does this; instead, it prefers concluding on an image, gesture, or inquiry that opens outward instead of shutting down. The Poetry Humanizer strives to open endings rather than wrap them up neatly.</p>
 
-        <h2>Using the Poetry Humanizer Effectively</h2>
-        <p>
-          Getting the best results from the Poetry Humanizer requires understanding it as a collaborative tool rather than a replacement for craft. Here is how to work with it most effectively.
-        </p>
-        <p>
-          Start with the strongest possible AI-generated draft. The more specific and developed your input, the more the humanizer has to work with. A vague prompt like "write a poem about autumn" will produce a more difficult input to work with than a specific one like "write a poem about walking home through fallen leaves after a difficult phone call." The specificity of the input shapes the specificity of the output.
-        </p>
-        <p>
-          Review the humanized output with a poet's eye, not just a proofreader's eye. Look at the line breaks: do they feel purposeful? Look at the images: are they specific enough? Look at the ending: does it open or close? Look at the rhythm: does it feel varied and intentional? The humanizer does significant work, but your own judgment about what the poem needs is irreplaceable.
-        </p>
-        <p>
-          Consider the humanized output as a strong draft that has earned its final edit. The gap between "strong draft" and "finished poem" is often the most creative and personal stage of the writing process. The humanizer gets you closer to that final poem than raw AI output does, but the last editorial pass — adjusting a single word for sound, breaking a line differently, changing the ending — is where your voice enters.
-        </p>
+        <h2>Making the Best Use of Poetry Humanizer</h2>
+        <p>Securing optimal outcomes from the Poetry Humanizer requires treating it as a collaborative assistant rather than a substitute for genuine craftsmanship. Below is the best way to leverage it properly.</p>
+        <p>Begin with the strongest possible AI-generated draft. The more detailed and refined your input, the greater the material the humanizer has to shape. A broad prompt like "write a poem about autumn" yields a far more challenging draft than a targeted one such as "write a poem about walking home through fallen leaves following a difficult phone call." Input specificity dictates output specificity.</p>
+        <p>Examine the humanized output with a poet's perspective, going beyond a mere proofreader's glance. Check the line breaks: do they feel deliberate? Inspect the imagery: is it specific enough? Review the conclusion: does it open or close? Evaluate the rhythm: does it appear varied and planned? The humanizer performs heavy lifting, but your personal intuition regarding what the poem requires remains irreplaceable.</p>
+        <p>Treat the humanized output as a polished draft ready for its final polish. The gap between a robust draft and a finished poem usually represents the most creative and personal phase of writing. The humanizer brings you much closer to that ultimate poem than raw AI text ever could, but the final editorial touch—adjusting a word for better sound, breaking a line differently, or tweaking the ending—is where your unique voice shines.</p>
       </div>
     </section>
   );
@@ -119,123 +69,123 @@ function WriteUp() {
 const faqs: FaqItem[] = [
   {
     category: 'Getting Started',
-    question: 'What does the Poetry Humanizer do?',
-    answer: 'The Poetry Humanizer rewrites AI-generated poetry to sound genuinely lyrical, emotionally resonant, and authentically human. It addresses the specific failures of AI verse: forced rhymes, clichéd imagery, mechanical meter, stating feelings instead of showing them, generic universal experience instead of specific detail, and lack of poetic voice.',
+    question: 'What does the Poetry Humanizer accomplish?',
+    answer: 'The Poetry Humanizer rewrites AI-generated poetry so it reads as genuinely lyrical, emotionally resonant, and authentically human. It tackles the specific shortcomings of AI verse: forced rhymes, tired imagery, mechanical meter, stating emotions instead of demonstrating them, generic universal themes instead of concrete details, and an overall absence of poetic voice.',
   },
   {
     category: 'Getting Started',
-    question: 'Is the Poetry Humanizer free to use?',
-    answer: 'Yes — completely free with no account required. Paste your AI-generated poem into the tool and receive humanized output immediately.',
+    question: 'Is the Poetry Humanizer available at no charge?',
+    answer: 'Yes, completely free with zero account requirements. Simply paste your AI-generated poem into the platform and receive humanized results instantly.',
   },
   {
     category: 'Getting Started',
-    question: 'What kinds of AI-generated poetry does this tool work with?',
-    answer: 'The Poetry Humanizer works with poetry generated by any AI system — ChatGPT, Gemini, Claude, and others. It handles all poetry forms including free verse, sonnets, haiku, villanelles, ballads, odes, and experimental forms. The tool adapts its humanization approach based on the form present in the input.',
+    question: 'What varieties of AI-generated poetry are compatible with this tool?',
+    answer: 'The Poetry Humanizer functions alongside poetry produced by any artificial intelligence system, including ChatGPT, Gemini, Claude, and others. It supports every poetic style, from free verse and sonnets to haiku, villanelles, ballads, odes, and experimental formats. The platform adjusts its humanization technique according to the specific structure present in the source text.',
   },
   {
     category: 'How It Works',
-    question: 'Why does AI poetry sound mechanical even when it technically follows the rules?',
-    answer: 'AI poetry fails because it predicts the most statistically common patterns in existing verse — which produces technically correct but creatively safe output. Forced rhymes, clichéd metaphors, monotonous meter, and direct statement of theme rather than imagery are the result of averaging across all poetry rather than taking the creative risks that make individual poems distinctive and alive.',
+    question: 'Why does AI poetry sound mechanical even when it strictly adheres to the rules?',
+    answer: 'AI verse stumbles because it predicts the statistically most common formulas found in existing literature, producing technically accurate yet creatively safe results. Forced rhymes, tired metaphors, monotonous rhythms, and straightforward statements of themes rather than vivid imagery stem from averaging across all poetry instead of taking the creative chances that render individual poems distinct and alive.',
   },
   {
     category: 'How It Works',
-    question: 'How does the Poetry Humanizer improve line breaks and enjambment?',
-    answer: 'Human poets use line endings as expressive tools — creating productive ambiguity, emphasizing key words, controlling pace. AI poetry tends to break lines at grammatical boundaries that feel arbitrary rather than purposeful. The humanizer reworks line breaks for emotional and sonic effect, introducing enjambment where it creates meaningful forward momentum and end-stopping where it creates emphasis.',
+    question: 'In what way does the Poetry Humanizer enhance line breaks and enjambment?',
+    answer: 'Human creators leverage line endings as expressive devices to build helpful ambiguity, stress core words, and manage pacing. AI verse tends to break lines at grammatical boundaries that seem arbitrary rather than purposeful. The humanizer reshapes line breaks for maximum emotional and sonic impact, inserting enjambment where it fosters meaningful forward movement and end-stops where they create distinct emphasis.',
   },
   {
     category: 'How It Works',
-    question: 'Can the Poetry Humanizer handle formal verse like sonnets and villanelles?',
-    answer: 'Yes. For formal verse, the humanizer preserves the structural requirements — meter, rhyme scheme, refrains — while reworking the specific language, imagery, and syntax within those constraints to feel more natural. For sonnets, particular attention is given to the volta; for villanelles, the recurring refrains are worked to accumulate meaning across their reappearances.',
+    question: 'Is the Poetry Humanizer capable of managing strict structures like sonnets and villanelles?',
+    answer: 'Yes. For formal verse, the humanizer retains structural rules like meter, rhyme schemes, and refrains, while refining the specific vocabulary, imagery, and syntax within those boundaries to sound much more natural. For sonnets, special focus goes toward the volta, while for villanelles, the recurring refrains are adjusted to build deeper meaning across their reappearances.',
   },
   {
     category: 'How It Works',
-    question: 'What does "telling vs showing" mean in the context of AI poetry, and how does the humanizer fix it?',
-    answer: 'AI poetry tends to state its emotions directly ("I am sad," "love is difficult"). Strong poetry enacts its meanings through concrete images and actions rather than naming them. The humanizer replaces emotional labels with specific images and actions that create the feeling in the reader rather than declaring it — turning "I grieved" into the specific sensory details that produce grief in the reader without naming it.',
+    question: 'How does the concept of telling versus showing apply to machine-generated verse, and in what way does the humanizer resolve this issue?',
+    answer: 'Artificial intelligence verses typically state feelings outright ("I am sad," "love is difficult"). Powerful verse conveys meaning through tangible imagery and actions instead of direct naming. The humanizer substitutes emotional descriptors with distinct visuals and actions that evoke the emotion in the audience naturally — changing "I grieved" into the precise sensory specifics that evoke sorrow without explicitly stating it.',
   },
   {
     category: 'Poetry Forms',
-    question: 'Does the Poetry Humanizer work differently for haiku vs free verse?',
-    answer: 'Yes. Haiku humanization focuses on the essential juxtaposition between two images — the charged gap that creates resonance — which AI haiku almost always fails to achieve. Free verse humanization focuses on purposeful line breaks, specific imagery, and voice consistency. The tool identifies the form in your input and applies form-appropriate humanization techniques.',
+    question: 'Does the Poetry Humanizer operate differently when processing haiku compared to free verse?',
+    answer: 'Indeed. Haiku processing emphasizes the vital juxtaposition between a pair of visuals — the resonant tension that automated haikus routinely miss. Free verse processing concentrates on intentional line breaks, precise imagery, and tone consistency. The utility detects the format of your submission and applies formatting-specific refinement methods.',
   },
   {
     category: 'Poetry Forms',
-    question: 'What is the most common workshop critique of AI poetry, and does this tool address it?',
-    answer: 'The most consistent workshop critiques of AI poetry are: no distinct speaker, familiar imagery, too-neat endings that resolve everything, no surprises, arbitrary line breaks, and lack of specific detail. The Poetry Humanizer directly addresses all of these: it develops voice consistency, introduces surprising imagery, opens rather than closes endings, adds purposeful line variation, and grounds universal experience in specific detail.',
+    question: 'What represents the frequent critique of machine-generated verse in workshops, and does this utility resolve it?',
+    answer: 'The most frequent workshop criticisms regarding automated verse involve: an absent unique speaker, predictable imagery, overly tidy conclusions that wrap everything up, a lack of unexpected elements, random line breaks, and insufficient specific detail. The Poetry Humanizer tackles all of these points directly: it builds tone consistency, incorporates unexpected imagery, leaves conclusions open rather than definitive, adds intentional line variation, and anchors broad themes in precise detail.',
   },
   {
     category: 'Quality',
-    question: 'Will the humanized poetry be entirely original, or will it resemble specific known poets?',
-    answer: 'The humanizer produces original work rather than imitation of specific poets. It introduces general markers of authentic poetic voice — perspective consistency, image specificity, sonic variation, purposeful line breaks — without mimicking any particular poet\'s signature style. If you want output that resembles a specific poet\'s style, you can achieve this by adding style-specific guidance in your input prompt to the AI generator before humanizing.',
+    question: 'Will the resulting humanized verse be completely unique, or will it mirror well-known authors?',
+    answer: 'The humanizer generates original material instead of mimicking particular writers. It integrates standard indicators of genuine poetic expression — viewpoint consistency, image precision, acoustic variation, intentional line breaks — minus replicating any specific author\'s distinct style. Should you desire output that mirrors a particular writer\'s approach, you can accomplish this by including style-oriented instructions within your initial prompt before processing.',
   },
   {
     category: 'Quality',
-    question: 'How does the Poetry Humanizer handle the ending of a poem?',
-    answer: 'AI poetry almost universally ends with a summary statement or affirmation that wraps everything up neatly. Strong human poetry typically ends on an image, gesture, or question that opens outward rather than resolving. The humanizer works specifically on poem endings to open them — replacing summary conclusions with images or moments that resonate beyond the page.',
+    question: 'In what manner does the Poetry Humanizer manage the conclusion of a verse?',
+    answer: 'Machine-generated verse almost always concludes with a concluding remark or affirmation that ties everything together too neatly. Powerful human verse generally concludes with a visual, action, or inquiry that opens outward rather than bringing closure. The humanizer focuses specifically on verse conclusions to open them up — substituting summary endings with visuals or moments that linger past the reading.',
   },
   {
     category: 'Use Cases',
-    question: 'Who should use the Poetry Humanizer?',
-    answer: 'The Poetry Humanizer is valuable for: creative writers using AI to overcome writer\'s block or generate drafts; poets exploring AI as a collaborative tool; educators working with poetry; content creators producing poems for greeting cards, memorials, or special occasions; and writers producing verse at scale for digital platforms. Anyone who wants AI poetry to sound genuinely poetic rather than mechanically generated will find it useful.',
+    question: 'Who is the intended audience for the Poetry Humanizer?',
+    answer: 'The Poetry Humanizer proves useful for: imaginative authors employing artificial intelligence to conquer writer\'s block or draft content; bards investigating artificial intelligence as a partner tool; instructors teaching poetry; creators generating verses for greeting cards, tributes, or unique events; and authors producing verse in volume for online channels. Anyone desiring machine verse to read authentically artistic instead of automatically produced will benefit from it.',
   },
   {
     category: 'Use Cases',
-    question: 'Can I use the Poetry Humanizer for memorial or tribute poems?',
-    answer: 'Yes — this is one of the most valuable use cases. Memorial and tribute poems need to feel genuinely personal and emotionally authentic, and AI-generated versions often fall flat precisely when emotional authenticity matters most. The humanizer transforms generic AI memorial poetry into something that sounds as though it comes from a real person with real feeling.',
+    question: 'Am I able to employ the Poetry Humanizer for tribute or memorial verses?',
+    answer: 'Indeed, this represents a premier application. Memorial and tribute verses must convey genuine personal and emotional sincerity, whereas AI creations frequently lack impact precisely when emotional truth is paramount. The humanizer converts standard AI memorial verse into something reading as though authored by a genuine individual experiencing true emotion.',
   },
   {
     category: 'Use Cases',
-    question: 'Is the Poetry Humanizer suitable for children\'s poetry?',
-    answer: 'Yes, with some considerations. Children\'s poetry has distinct conventions — accessible language, playful sound patterns, concrete and imaginative imagery — that AI often fails to capture authentically. The humanizer can improve AI children\'s poetry, though you should review the output specifically for age-appropriate language and the characteristic delight in sound-play that good children\'s verse requires.',
+    question: 'Can the Poetry Humanizer be used for poetry written for kids?',
+    answer: 'Certainly, with a few factors to keep in mind. Children\'s verse possesses unique conventions — simple vocabulary, fun phonetic rhythms, and vivid, creative imagery — which AI frequently struggles to replicate naturally. The humanizer enhances AI-generated youth verse, although you ought to inspect the final text for age-appropriate terms and the joyful linguistic play essential to quality children\'s poetry.',
   },
   {
     category: 'Workflow',
-    question: 'What is the best way to prompt AI before using the Poetry Humanizer?',
-    answer: 'Specificity in your initial AI prompt produces better humanizer input. Instead of "write a poem about loss," try "write a poem about the first morning after a loved one\'s death, focusing on a specific ordinary object in the house." The more specific and concrete your AI prompt, the more the humanizer has to work with, and the less ground it needs to cover to reach genuine poetic specificity.',
+    question: 'How should you instruct the AI beforehand when utilizing the Poetry Humanizer?',
+    answer: 'Detailed initial AI prompts yield superior input for the humanizer. Rather than asking for a verse regarding grief, request a piece detailing the initial dawn following a family member\'s passing, concentrating on one ordinary household item. The more detailed and grounded your AI instructions are, the greater the humanizer has to build upon, requiring less effort to achieve true poetic precision.',
   },
   {
     category: 'Workflow',
-    question: 'Should I edit the output after humanization?',
-    answer: 'Yes — treat the humanized output as a strong draft that has earned its final edit. Look specifically at line breaks (do they feel purposeful?), imagery (is it specific enough?), the ending (does it open or close?), and rhythm (does it feel varied?). The last editorial pass — adjusting a word for sound, reworking a line break, changing the ending — is where your own voice enters the poem.',
+    question: 'Is it necessary to revise the results following the humanization process?',
+    answer: 'Affirmatively, view the humanized text as a robust draft ready for its final polish. Pay close attention to line endings (do they serve a purpose?), imagery (is it sufficiently distinct?), the conclusion (does it expand or resolve?), and cadence (does the rhythm vary?). This final polishing stage — tweaking a term for its sound, modifying a line break, or altering the finish — allows your personal style to shape the poem.',
   },
   {
     category: 'Ethical Considerations',
-    question: 'Is it ethical to publish AI-humanized poetry as my own work?',
-    answer: 'This depends on context and your intended use. For personal creative use, blogs, or non-competitive contexts, AI-assisted poetry with humanization is a legitimate creative tool similar to using any writing aid. For poetry competitions, literary journals, or contexts where the work is presented as entirely your own unaided creation, transparency about AI assistance is appropriate and increasingly expected.',
+    question: 'Does publishing poetry humanized by AI under your own name raise ethical concerns?',
+    answer: 'This varies based on the situation and how you plan to use it. For personal creative projects, online journals, or casual platforms, combining AI generation with humanization serves as a valid creative aid akin to standard writing tools. For verse contests, literary magazines, or places where writing must be presented strictly as your unaided creation, acknowledging AI involvement is proper and increasingly demanded.',
   },
   {
     category: 'Ethical Considerations',
-    question: 'Will AI-humanized poetry pass AI detection tools?',
-    answer: 'The Poetry Humanizer significantly reduces AI detection scores by replacing the statistical patterns that detectors identify as AI-generated. However, the primary goal is not to defeat detectors — it is to create poetry that genuinely works for human readers. A poem that passes detection while failing as verse is useless. The humanizer focuses on authentic poetic quality; improved detection scores follow from that quality.',
+    question: 'Will poems processed by the AI humanizer successfully bypass AI detection software?',
+    answer: 'The Poetry Humanizer greatly lowers AI detection metrics by eliminating the mathematical patterns that checkers flag as machine-made. Still, the main objective is not bypassing checkers — it involves crafting verse that truly resonates with human audiences. A piece that evades detection yet falls flat as art holds no value. The humanizer emphasizes genuine artistic merit; better detection outcomes emerge naturally from that standard.',
   },
   {
     category: 'Technical',
-    question: 'Is there a length limit for poems I can humanize?',
-    answer: 'The tool handles poems up to approximately 100 lines comfortably. For longer works — extended sequences, book-length poems — process each section separately and review the joins between sections for voice and tonal consistency. The humanizer maintains voice within a section; maintaining consistency across multiple processed sections requires your editorial oversight.',
+    question: 'Are there any restrictions on the length of poems you can run through the humanizer?',
+    answer: 'The utility easily manages verses up to roughly 100 lines. For extended compositions — long poem sequences or entire books — run each segment individually and check the transitions between parts for stylistic and emotional harmony. The humanizer preserves tone inside a single segment; sustaining consistency across multiple processed parts demands your personal editorial oversight.',
   },
   {
     category: 'Technical',
-    question: 'Does the Poetry Humanizer preserve rhyme schemes in formal verse?',
-    answer: 'Yes. When the input follows a clear rhyme scheme (ABAB, ABBA, etc.), the humanizer maintains that scheme while reworking the specific language within it. The goal is to make the rhymes feel earned rather than forced — to arrive at the rhyming word through natural expression rather than contorting the syntax to get there.',
+    question: 'Does the Poetry Humanizer maintain rhyme patterns in strict verse?',
+    answer: 'Indeed. When the source text contains a clear rhyme structure (such as ABAB or ABBA), the humanizer preserves that framework while refreshing the vocabulary inside it. The objective is to make the rhymes feel organic instead of forced -- arriving at rhyming words through natural phrasing rather than twisting the grammar to fit.',
   },
   {
     category: 'Comparison',
-    question: 'How does the Poetry Humanizer differ from just asking ChatGPT to rewrite a poem?',
-    answer: 'Asking ChatGPT to rewrite a poem typically produces another AI-generated poem with the same systemic failures. The Poetry Humanizer applies a process specifically designed to address the particular failure modes of AI verse — forced rhymes, clichéd imagery, mechanical meter, telling not showing, neat endings — rather than generating another version of the same patterns.',
+    question: 'In what ways does the Poetry Humanizer differ from simply asking ChatGPT to rewrite a poem?',
+    answer: 'Asking ChatGPT to rewrite a poem generally yields another machine-made piece suffering from the exact same systemic flaws. The Poetry Humanizer employs a method specifically built to tackle the typical weaknesses of AI poetry -- unnatural rhymes, tired imagery, rigid meter, telling instead of showing, and predictable conclusions -- rather than outputting another iteration of those very flaws.',
   },
   {
     category: 'Comparison',
-    question: 'Is the Poetry Humanizer better than general-purpose AI humanizers for poetry?',
-    answer: 'Yes. General-purpose humanizers are calibrated for prose — they address prose-specific AI tells like formal vocabulary and predictable paragraph structure. Poetry requires entirely different humanization: attention to line breaks, meter, rhyme, imagery, voice, and the specific craft conventions of verse. The Poetry Humanizer is built specifically for these poetic requirements.',
+    question: 'Is the Poetry Humanizer superior to standard AI humanizers when it comes to poetry?',
+    answer: 'Yes. General humanizers are tuned for prose, fixing prose-based AI traits like formal word choice and uniform paragraph flow. Poetry demands a completely different type of refinement: focus on line breaks, rhythm, rhyme, visual language, tone, and the distinct artistic rules of verse. The Poetry Humanizer is engineered expressly for these poetic needs.',
   },
   {
     category: 'Advanced',
-    question: 'Can the Poetry Humanizer help with poetry in languages other than English?',
-    answer: 'The tool is optimized for English-language poetry and its specific conventions. For poetry in other languages, results may be less reliable because the humanization models are calibrated to English poetic craft conventions — meter systems, rhyme traditions, imagery expectations — that may not transfer directly to other poetic traditions.',
+    question: 'Can the Poetry Humanizer assist with poetry written in languages besides English?',
+    answer: 'The application is optimized for English-language poetry and its unique standards. For verses in other tongues, outcomes might prove less dependable since the humanization algorithms are calibrated around English poetic traditions -- such as meter rules, rhyme schemes, and imagery expectations -- which may not translate directly to foreign poetic forms.',
   },
   {
     category: 'Advanced',
-    question: 'Can I use the Poetry Humanizer for song lyrics?',
-    answer: 'Song lyrics share many conventions with poetry — meter, rhyme, imagery, voice — and the humanizer can improve AI-generated lyrics significantly. However, lyrics also have genre-specific conventions (verse-chorus structure, singability, genre vocabulary) that the humanizer is not specifically calibrated for. Review humanized lyrics with your specific genre conventions in mind and adjust accordingly.',
+    question: 'Am I able to use the Poetry Humanizer for song lyrics?',
+    answer: 'Song lyrics share numerous traits with poetry, including meter, rhyme, imagery, and voice, meaning the humanizer can greatly enhance AI-created lyrics. Nevertheless, lyrics also involve genre-specific rules like verse-chorus layouts, singability, and niche vocabulary that the humanizer is not purposely calibrated to handle. Always evaluate humanized lyrics against your target genre conventions and tweak them appropriately.',
   },
 ];
 

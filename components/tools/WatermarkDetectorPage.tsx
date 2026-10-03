@@ -71,18 +71,18 @@ export default function WatermarkDetectorPage({ modelName, modelSlug, faqItems, 
             <div className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 space-y-4">
               <h2 className="text-xl font-semibold text-slate-900">How it works</h2>
               <ul className="list-disc list-inside space-y-1 text-slate-700">
-                <li>Scans for hidden Unicode (e.g. zero-width spaces, non-breaking spaces).</li>
-                <li>Highlights irregular spacing and repeated punctuation.</li>
-                <li>Reports structural patterns; does not determine authorship.</li>
+                <li>Detects concealed Unicode (such as zero-width spaces, non-breaking spaces).</li>
+                <li>Flags uneven spacing and duplicate punctuation.</li>
+                <li>Identifies structural trends; fails to establish authorship.</li>
               </ul>
             </div>
             <div className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 space-y-4">
-              <h2 className="text-xl font-semibold text-slate-900">What it can / can&apos;t do</h2>
+              <h2 className="text-xl font-semibold text-slate-900">What it is capable of and what it can&apos;t do</h2>
               <ul className="list-disc list-inside space-y-1 text-slate-700">
-                <li>Can highlight formatting artifacts and hidden characters.</li>
-                <li>Cannot confirm authorship or AI origin.</li>
-                <li>Not a bypass tool; for analysis and cleanup only.</li>
-                <li>Review output and use responsibly.</li>
+                <li>Is capable of emphasizing layout anomalies and concealed symbols.</li>
+                <li>Fails to verify authorship or artificial intelligence origin.</li>
+                <li>Not an evasion utility; intended strictly for review and refinement.</li>
+                <li>Inspect results and apply them prudently.</li>
               </ul>
             </div>
           </section>
@@ -91,7 +91,7 @@ export default function WatermarkDetectorPage({ modelName, modelSlug, faqItems, 
         <div className="mt-10 space-y-3">
           <h2 className="text-2xl font-semibold text-slate-900">{modelName} Watermark Detector – FAQ</h2>
           <p className="text-slate-700">
-            {faqIntro ?? 'Common questions about watermark detection and text analysis.'}
+            {faqIntro ?? 'Frequently asked questions regarding text inspection methods and watermark detection.'}
           </p>
         </div>
 

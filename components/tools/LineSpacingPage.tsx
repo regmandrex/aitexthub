@@ -71,18 +71,18 @@ export default function LineSpacingPage({ modelName, modelSlug, faqItems, conten
             <div className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 space-y-4">
               <h2 className="text-xl font-semibold text-slate-900">How it works</h2>
               <ul className="list-disc list-inside space-y-1 text-slate-700">
-                <li>Choose single, 1.5, double, or custom line spacing.</li>
-                <li>Paste text and get consistently spaced output.</li>
-                <li>Use for readability and formatting in docs or CMS.</li>
+                <li>Select single, 1.5, double, or custom line spacing.</li>
+                <li>Insert your text to receive uniformly spaced results.</li>
+                <li>Apply this to improve legibility and structure within documents or a CMS.</li>
               </ul>
             </div>
             <div className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 space-y-4">
-              <h2 className="text-xl font-semibold text-slate-900">What it can / can&apos;t do</h2>
+              <h2 className="text-xl font-semibold text-slate-900">What it is capable of and what it can&apos;t do</h2>
               <ul className="list-disc list-inside space-y-1 text-slate-700">
-                <li>Can normalize line spacing for cleaner layout.</li>
-                <li>Can&apos;t verify authorship or AI origin.</li>
-                <li>Not a bypass tool; formatting only.</li>
-                <li>Review output before publishing.</li>
+                <li>It is capable of standardizing line gaps to achieve a tidier design.</li>
+                <li>Unable to confirm writer identity or artificial intelligence sources.</li>
+                <li>This is strictly for layout adjustments, not an evasion utility.</li>
+                <li>Check results prior to publication.</li>
               </ul>
             </div>
           </section>
@@ -90,9 +90,7 @@ export default function LineSpacingPage({ modelName, modelSlug, faqItems, conten
 
         <div className="mt-10 space-y-3">
           <h2 className="text-2xl font-semibold text-slate-900">{modelName} Line Spacing – FAQ</h2>
-          <p className="text-slate-700">
-            Common questions about line spacing and formatting.
-          </p>
+          <p className="text-slate-700">Frequently asked questions concerning line spacing and layout.</p>
         </div>
 
         <FAQSection items={faqItems} />

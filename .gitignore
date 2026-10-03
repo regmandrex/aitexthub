@@ -12,3 +12,8 @@ coverage
 *.tsbuildinfo
 dev.log
 dev.err.log
+
+.vercel
+
+# content migration working files (backups, prompts, outputs, reports)
+content-migration/

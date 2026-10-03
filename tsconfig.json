@@ -52,6 +52,7 @@
   ],
   "exclude": [
     "node_modules",
-    "lib/seo/generated-registry-entries.ts"
+    "lib/seo/generated-registry-entries.ts",
+    "content-migration"
   ]
 }

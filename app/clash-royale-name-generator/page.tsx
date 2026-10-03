@@ -18,7 +18,7 @@ const toolSlug = 'clash-royale-name-generator';
 export async function generateMetadata(): Promise<Metadata> {
   return buildToolMeta({
     title: 'Clash Royale Name Generator',
-    description: 'Free Clash Royale name generator for player names and clan names. Get cool, sweaty, or funny CR usernames and clan name ideas that fit the game — in your browser, no sign-up.',
+    description: 'Free Clash Royale Name Generator for player tags and group names. Discover awesome, competitive, or hilarious CR user tags and group concepts suited for the title — inside your web browser, zero registration.',
     seoTitle: 'Clash Royale Name Generator – Player & Clan Names',
     urlPath: `/${toolSlug}`,
   });
@@ -28,104 +28,86 @@ function createWriteUp() {
   return (
     <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
-        <h2>Clash Royale Name Generator – Player &amp; Clan Names</h2>
-        <p>
-          This Clash Royale name generator creates both player names and clan names that fit the game&apos;s style — the cool, sweaty, and funny handles you see climbing the ladder and in the top clans. Whether you are setting up a fresh account, rebranding your in-game name, or founding a clan that needs a name and a vibe, the generator gives you a batch of CR-flavored ideas built around the game&apos;s card-and-arena world. It runs in your browser with no sign-up and stores nothing.
-        </p>
-        <p>
-          Your Clash Royale name shows up every battle, in clan chat, on the leaderboard, and in tournament brackets, so it is worth more than a random string. This page covers what makes a name work in CR — the rules, the styles, and how player names differ from clan names — so the one you pick lands the way you want.
-        </p>
+        <h2>[1] Clash Royale Name Generator – Player &amp; Clan Tags</h2>
+        <p>This Clash Royale Name Generator crafts both player names and clan names matching the game&apos;s style — those cool, sweaty, and funny handles you witness scaling the ladder and within top clans. Whether you are setting up a brand-new account, rebranding your in-game moniker, or starting a clan requiring a distinct name and atmosphere, the generator supplies a collection of CR-themed ideas centered around the game&apos;s card-and-arena universe. It executes directly in your browser without requiring registration and stores nothing.</p>
+        <p>Your Clash Royale name appears in every battle, inside clan chat, across the leaderboard, and throughout tournament brackets, making it far more valuable than a random string of characters. This page outlines what makes a name succeed in CR — the guidelines, the aesthetics, and how player names differ from clan names — ensuring the one you select hits the way you intend.</p>
 
-        <h2>Clash Royale Name Rules</h2>
-        <p>
-          A few practical points shape what you can actually use:
-        </p>
+        <h2>Clash Royale Naming Guidelines</h2>
+        <p>A few practical considerations dictate what you can actually employ:</p>
         <ul>
-          <li><strong>Player name length.</strong> In-game names are limited to 15 characters, so the generator keeps player-name suggestions within a usable length.</li>
-          <li><strong>One free change.</strong> Clash Royale gives you a single free name change after your first pick, so your starter choice matters — but you are not locked in forever.</li>
-          <li><strong>Emojis and symbols.</strong> CR supports emoji and some symbols in names, which is a big part of the game&apos;s naming culture — a flame, a crown, or a skull next to your name is classic.</li>
-          <li><strong>Clan names.</strong> Clan names follow their own length rules and are usually a bit longer and more branded than personal names.</li>
+          <li><strong>Player name length.</strong> In-game names restrict you to 15 characters, so the generator keeps player-name suggestions within a functional length limit.</li>
+          <li><strong>One free change.</strong> Clash Royale grants a single complimentary name change following your initial choice, meaning your starting pick matters — though you aren't bound to it permanently.</li>
+          <li><strong>Emojis and symbols.</strong> CR accommodates emojis and select symbols within names, forming a major component of the game&apos;s naming culture — placing a flame, a crown, or a skull next to your name remains a classic approach.</li>
+          <li><strong>Clan names.</strong> Clan names follow separate length criteria and tend to be slightly longer and more brand-oriented than personal tags.</li>
         </ul>
 
         <h2>Player Name Styles</h2>
-        <p>
-          Clash Royale players gravitate toward a few recognizable naming styles. The generator can lean into any of them:
-        </p>
+        <p>Clash Royale participants lean toward several recognizable naming aesthetics. The generator can easily adapt to any of them:</p>
         <ul>
-          <li><strong>Cool / clean.</strong> Sharp, readable names that look good on the leaderboard without trying too hard.</li>
-          <li><strong>Sweaty / tryhard.</strong> Aggressive, competitive names for ladder grinders and tournament players — the kind that signal you are here to win.</li>
-          <li><strong>Card-themed.</strong> Names that reference signature cards or archetypes (Hog, Mega Knight, X-Bow, log-bait), instantly recognizable to other players.</li>
-          <li><strong>Funny / meme.</strong> Joke names and puns that get a reaction in clan chat or when you tower-take an opponent.</li>
-          <li><strong>Symbol-decorated.</strong> A clean base name dressed up with emoji or symbols, the signature CR look.</li>
+          <li><strong>Cool / clean.</strong> Sharp, legible names that appear impressive on the leaderboard without trying excessively hard.</li>
+          <li><strong>Sweaty / tryhard.</strong> Aggressive, competitive monikers meant for ladder grinders and tournament contenders — the sort that telegraph your absolute intent to win.</li>
+          <li><strong>Card-themed.</strong> Names referencing iconic cards or archetypes (Hog, Mega Knight, X-Bow, log-bait), instantly identifiable to fellow players.</li>
+          <li><strong>Funny / meme.</strong> Humorous names and puns designed to elicit reactions in clan chat or when you successfully take down an opponent's tower.</li>
+          <li><strong>Symbol-decorated.</strong> A straightforward base name enhanced with emojis or symbols, representing the iconic CR aesthetic.</li>
         </ul>
 
-        <h2>Clan Names vs. Player Names</h2>
-        <p>
-          A clan name does a different job than a personal name. It is a brand for a group, so it works best when it signals identity and ambition — competitive clans lean serious and intimidating, casual clans lean fun and welcoming, and themed clans pick a hook (a region, a card archetype, a meme) and run with it. When founding a clan, generate a batch and look for names that members will be proud to wear next to their own. A strong clan name also helps recruitment: it is the first thing prospective members see in the clan search.
-        </p>
+        <h2>Clan Names versus Player Names</h2>
+        <p>A team tag serves an entirely different purpose than an individual gamer handle. Operating as an organization's public identity, it thrives when highlighting group character and competitive goals — tournament squads lean toward stern and imposing phrases, friendly groups pick lighthearted and inviting terms, while concept squads adopt a specific motif (a hometown, an archetype, an internet joke) and commit to it. Upon creating a team, roll a batch and seek out banners that players will proudly display beside their own gamertags. An appealing team tag also boosts recruitment efforts: it provides the initial detail prospective teammates spot across public rosters.</p>
 
-        <h2>Naming for Competitive Play</h2>
-        <p>
-          If you grind ladder, push for top ranks, or enter tournaments, your name becomes a small part of your reputation. Competitive players often favor short, sharp, sweaty names that read cleanly in spectator mode and on brackets — easy to remember when you start climbing. A card-themed name can also telegraph your main deck or playstyle. Generate in the sweaty or card-themed lane and pick something that will look good when you are the one being spectated.
-        </p>
+        <h2>Titles for Esports and Competition</h2>
+        <p>If you climb ladder, chase top spots, or join tournaments, your tag turns into a piece of your standing. Serious competitors usually prefer brief, fierce, intense names that display clearly during spectator mode and on brackets — simple to recall as you start rising. A card-based moniker can also signal your primary deck or strategy. Create in the intense or card-based style and select something that will appear great when you are being watched.</p>
 
-        <h2>How to Use This Clash Royale Name Generator</h2>
+        <h2>[10] How to Use This Clash Royale Name Generator</h2>
         <ol className="list-decimal pl-6 space-y-2">
-          <li>Set how many names you want per run (1–24).</li>
-          <li>Click <strong>Generate names</strong> to get a batch of CR-style player or clan name ideas.</li>
-          <li>Keep the ones that match your style — cool, sweaty, card-themed, or funny.</li>
-          <li>Copy the list, then add emoji or symbols in-game if you want that classic CR look.</li>
-          <li>Run again for more — no limit, no account, no download.</li>
+          <li>Choose the quantity of names generated per batch (1–24).</li>
+          <li>Click <strong>Generate names</strong> to view a set of CR-style player or group tag concepts.</li>
+          <li>Save the ones that suit your vibe – awesome, competitive, card-themed, or hilarious.</li>
+          <li>Copy the collection, then insert emojis or icons inside the game if you want that traditional CR aesthetic.</li>
+          <li>Spin the tool repeatedly for fresh ideas — zero restrictions, sign-ups, or software required.</li>
         </ol>
-        <p>
-          Everything runs locally in your browser. Your settings and generated names are never sent to a server, so your name ideas stay private.
-        </p>
+        <p>All processing happens right inside your browser. Your preferences and generated tags are never transmitted to any server, keeping your tag ideas confidential.</p>
 
-        <h2>Tips for Picking a CR Name</h2>
-        <p>
-          Keep player names short and readable — they need to look good in the small space above the arena and on the leaderboard. Decide your lane first (cool vs. sweaty vs. funny) so your batch is consistent. Remember you get one free name change, so do not panic over your starter name, but do pick something you will not be embarrassed by when you climb. For the signature CR look, take a clean generated base and add an emoji or symbol in-game. For clans, prioritize a name members will want to represent, since it doubles as your recruitment hook.
-        </p>
+        <h2>Advice for Selecting a CR Handle</h2>
+        <p>Keep user tags concise and clear – they need to display nicely within the compact area above the battlefield and on the ranking list. Pick your direction initially (awesome vs. competitive vs. hilarious) so your batch remains uniform. Keep in mind you receive one complimentary tag update, so do not stress over your initial tag, but make sure to select one you will not regret during your progression. For the signature CR aesthetic, take a polished generated foundation and insert an emoji or icon inside the app. For groups, focus on a title members will be proud to display, as it also serves as your recruitment magnet.</p>
 
         <h2>What This Tool Does and Does Not Do</h2>
         <ul>
-          <li>It generates Clash Royale player-name and clan-name ideas in the game&apos;s style.</li>
-          <li>It does not add emoji or symbols for you — apply those in-game where CR supports them.</li>
-          <li>It does not store your generated names or settings; generation is fully local.</li>
-          <li>It does not connect to Supercell accounts — it only suggests names to use in the game.</li>
+          <li>It creates Clash Royale user-tag and group-tag concepts matching the title&apos;s aesthetic.</li>
+          <li>It does not insert emojis or icons for you – incorporate those inside the app where CR supports them.</li>
+          <li>It never logs or saves your preferences or creations; everything happens solely on your device.</li>
+          <li>It does not link to Supercell accounts – it merely proposes tags to utilize within the title.</li>
         </ul>
 
         <h2>Final Notes</h2>
-        <p>
-          A Clash Royale name is your banner every battle — on the ladder, in clan wars, and in tournaments. This generator gives you a pool of CR-fitting ideas for both players and clans, sorted by the styles the community actually uses: cool, sweaty, card-themed, and funny. Pick your lane, generate a batch, dress it up with an emoji if you want that classic look, and head into the arena with a name worth defending.
-        </p>
+        <p>A Clash Royale name is your banner every match – on the ladder, in clan wars, and in tournaments. This generator supplies a pool of CR-suited concepts for both players and groups, organized by the styles the community actually utilizes: awesome, competitive, card-themed, and hilarious. Select your direction, produce a batch, embellish it with an emoji if you desire that traditional aesthetic, and enter the battlefield with a tag worth defending.</p>
       </div>
     </section>
   );
 }
 
 const pageFaqs: FaqItem[] = [
-  { category: 'General', question: 'What is a Clash Royale name generator?', answer: 'It is a browser tool that creates Clash Royale player names and clan names in the game’s style — cool, sweaty, card-themed, or funny. It builds CR-flavored ideas around the game’s card-and-arena world and keeps player names within a usable length. It runs locally with no sign-up and stores nothing.' },
-  { category: 'Rules', question: 'How long can a Clash Royale name be?', answer: 'In-game player names are limited to 15 characters, so the generator keeps player-name suggestions within a usable length. Clan names follow their own slightly longer rules. Keeping a player name short also helps it read cleanly above the arena and on the leaderboard.' },
-  { category: 'Rules', question: 'Can I change my Clash Royale name?', answer: 'Yes — Clash Royale gives you one free name change after your first pick. That means your starter name is not permanent, but it is worth choosing well since additional changes are limited. Generate a shortlist so you are happy with your choice from the start.' },
-  { category: 'Rules', question: 'Can I use emojis or symbols in my CR name?', answer: 'Yes. Clash Royale supports emoji and some symbols in names, and decorating a clean base name with a flame, crown, or skull is a signature part of CR naming culture. The generator gives you the base name; add the emoji or symbol in-game.' },
-  { category: 'Styles', question: 'What name styles work in Clash Royale?', answer: 'The main lanes are cool/clean (sharp and readable), sweaty/tryhard (aggressive competitive names), card-themed (referencing cards like Hog or Mega Knight), funny/meme (joke names and puns), and symbol-decorated (a clean base dressed with emoji). Pick a lane so your batch stays consistent.' },
-  { category: 'Styles', question: 'What is a "sweaty" Clash Royale name?', answer: 'A sweaty name is an aggressive, competitive handle favored by ladder grinders and tournament players — short, sharp, and signaling you are there to win. Generate in the sweaty lane and pick something that reads cleanly in spectator mode and on tournament brackets.' },
-  { category: 'Styles', question: 'Can it make card-themed names?', answer: 'Yes. Names that reference signature cards or archetypes — Hog, Mega Knight, X-Bow, log-bait — are instantly recognizable to other players and can even telegraph your main deck. Generate a batch and look for the card-flavored results.' },
-  { category: 'Clans', question: 'How do I name a clan?', answer: 'A clan name is a brand for a group, so it works best when it signals identity and ambition. Competitive clans lean serious and intimidating, casual clans lean fun and welcoming, and themed clans pick a hook and run with it. Generate a batch and choose a name members will be proud to wear — it doubles as your recruitment hook.' },
-  { category: 'Clans', question: 'What makes a good clan name for recruitment?', answer: 'The clan name is the first thing prospective members see in clan search, so a clear, appealing name that signals your clan’s vibe (competitive, casual, or themed) attracts the right people. Avoid anything confusing or generic — a memorable, on-brand name stands out in a crowded clan list.' },
-  { category: 'Competitive', question: 'What name is best for ladder and tournaments?', answer: 'Competitive players favor short, sharp, sweaty names that read cleanly in spectator mode and on brackets, and that are easy to remember as you climb. A card-themed name can also telegraph your playstyle. Generate in the sweaty or card-themed lane for a competitive feel.' },
-  { category: 'Usage', question: 'How do I use this generator?', answer: 'Set how many names you want (1–24), click Generate names, and keep the ones that match your style — cool, sweaty, card-themed, or funny. Copy the list, add emoji or symbols in-game for the classic CR look, and run again for more. No limit, account, or download.' },
-  { category: 'Usage', question: 'Can I edit the generated names?', answer: 'Yes. The output is a starting point. Trim a player name to fit the 15-character limit, add a card reference, or dress it with an emoji in-game. Many players generate a batch and then refine a favorite into their final handle or clan name.' },
-  { category: 'Player vs clan', question: 'What is the difference between a player name and a clan name?', answer: 'A player name is your personal handle, best kept short and readable; a clan name is a group brand, usually a bit longer and more identity-driven. Competitive player names lean sweaty, while clan names balance ambition with appeal to attract members. The generator handles both styles.' },
-  { category: 'Technical', question: 'How are the names generated?', answer: 'The generator combines curated Clash Royale-style elements — card references, competitive words, clean bases — and shuffles them at random in your browser, keeping player names within a usable length. Each run produces a new set. Nothing is sent to a server; generation is entirely local.' },
-  { category: 'Availability', question: 'Can I check if a name is taken in Clash Royale?', answer: 'Clash Royale allows duplicate player names (you are identified by a unique player tag), so player names do not need to be unique. Clan names, however, are easier to recruit for when distinctive. This tool does not connect to the game, so it only suggests names — try them in-game to see how they look.' },
-  { category: 'Privacy', question: 'Is my data sent to a server?', answer: 'No. Everything runs in your browser. When you click generate, names are created on your device. Your settings and generated names are never sent to our servers and nothing is stored. You can use the tool in a private window and your name ideas stay yours.' },
-  { category: 'Limits', question: 'How many names can I generate at once?', answer: 'You can request 1–24 names per run. For more, run it again — each run produces a fresh random set with no daily or total limit. Generate a large pool when you want plenty of player and clan options to compare.' },
-  { category: 'Compatibility', question: 'Does it work on mobile?', answer: 'Yes. The generator runs in any modern browser on desktop, tablet, or phone — handy since Clash Royale is a mobile game. Generate a batch on your phone, copy a name, and paste it straight into the game.' },
-  { category: 'General', question: 'Is the Clash Royale name generator free?', answer: 'Yes, completely free with no account, sign-up, or download. Generate as many player and clan name ideas as you like, as often as you like.' },
-  { category: 'Best practices', question: 'How do I pick the best CR name?', answer: 'Decide your lane (cool, sweaty, card-themed, or funny), keep player names short and readable, and remember you get one free change so you are not locked in. For the signature look, add an emoji or symbol in-game. For clans, prioritize a name members will be proud to represent.' },
-  { category: 'Best practices', question: 'Should my name match my deck or playstyle?', answer: 'It is a fun touch. A card-themed name like a Hog or X-Bow reference can telegraph your main deck and give you a bit of identity on the ladder. It is not required, but it makes your handle more memorable to opponents and clanmates.' },
-  { category: 'Troubleshooting', question: 'The names feel too generic — what should I do?', answer: 'Generate a larger batch and filter for the CR-specific results: keep the card-themed and sweaty options, discard anything that could belong to any game. Then dress your favorite with an emoji or symbol in-game to give it the unmistakable Clash Royale look.' },
+  { category: 'General', question: 'What is a Clash Royale name generator?', answer: 'It is a browser utility that crafts Clash Royale user tags and group tags mirroring the game’s aesthetic – awesome, competitive, card-themed, or hilarious. It formulates CR-inspired concepts around the title’s card-and-arena universe and maintains player tags within an appropriate size. It operates locally with no registration and saves nothing.' },
+  { category: 'Rules', question: '[2] How extended may a Clash Royale moniker be?', answer: 'In-game user tags are restricted to 15 characters, so the generator keeps player-name suggestions within a functional size. Group tags abide by their own slightly extended guidelines. Maintaining a compact user tag additionally ensures it displays clearly above the battlefield and on the ranking list.' },
+  { category: 'Rules', question: '[3] Is it possible to modify my Clash Royale moniker?', answer: 'Affirmative – Clash Royale grants you one complimentary tag update following your initial choice. This implies your initial tag is not permanent, though it is wise to select carefully since extra updates are restricted. Produce a shortlist so you are satisfied with your selection right from the beginning.' },
+  { category: 'Rules', question: '[4] May I incorporate emojis or symbols in my CR moniker?', answer: 'Affirmative. Clash Royale permits emojis and select icons in tags, and decorating a polished base tag with a flame, crown, or skull is a defining element of CR naming culture. The generator supplies the base tag; insert the emoji or symbol inside the app.' },
+  { category: 'Styles', question: '[5] What naming formats function in Clash Royale?', answer: 'The primary directions are awesome/clean (crisp and legible), competitive/tryhard (intense ranking tags), card-themed (referencing characters like Hog or Mega Knight), hilarious/meme (humorous tags and wordplay), and icon-decorated (a polished foundation styled with emojis). Select a direction so your batch stays uniform.' },
+  { category: 'Styles', question: '[6] How is a sweaty Clash Royale moniker defined?', answer: 'An aggressive, competitive handle preferred by ladder grinders and tournament regulars is known as a sweaty name — brief, punchy, and showing you are there for victory. Create within the sweaty category and select something that looks clear during spectator mode and on tournament brackets.' },
+  { category: 'Styles', question: 'Can it produce card-themed names?', answer: 'Indeed. Handles that mention signature cards or archetypes — Hog, Mega Knight, X-Bow, log-bait — are immediately recognizable to fellow players and can even hint at your primary deck. Generate a selection and search for the card-inspired options.' },
+  { category: 'Clans', question: 'How do I choose a clan title?', answer: 'A clan title acts as a brand for your group, functioning best when it communicates identity and ambition. Competitive clans stay serious and intimidating, casual clans remain fun and welcoming, while themed clans pick a concept and stick with it. Produce a batch and pick a title members will wear with pride — it also serves as your recruitment magnet.' },
+  { category: 'Clans', question: 'What makes an effective clan title for recruitment?', answer: 'The clan title is the initial element prospective members view during a clan search, meaning a clear, attractive title showing your clan\'s vibe (competitive, casual, or themed) draws in the right individuals. Steer clear of anything generic or confusing — a memorable, on-brand title stands out amid a crowded clan directory.' },
+  { category: 'Competitive', question: 'Which title works best for ladder and tournaments?', answer: 'Competitive gamers prefer brief, sharp, sweaty names that remain clear in spectator mode and on brackets, plus stay simple to recall while you climb. A card-themed handle can likewise signal your playstyle. Generate within the sweaty or card-themed category for a competitive atmosphere.' },
+  { category: 'Usage', question: 'How do I operate this generator?', answer: 'Select the quantity of names you desire (1–24), press Generate names, and save the ones fitting your style — cool, sweaty, card-themed, or humorous. Copy the list, insert an emoji or symbols in-game for that classic CR aesthetic, and run it again for extra choices. No limit, account, or download needed.' },
+  { category: 'Usage', question: 'Am I allowed to edit the generated names?', answer: 'Yes. The output serves as a baseline. Trim a gamer handle to respect the 15-character limit, incorporate a card mention, or decorate it with an emoji in-game. Many players generate a batch and subsequently refine a favorite into their ultimate handle or clan title.' },
+  { category: 'Player vs clan', question: 'What is the difference between a player name and a clan name?', answer: 'A player name is your individual handle, best maintained short and legible; a clan title represents a group brand, usually slightly longer and more identity-driven. Competitive player names lean sweaty, whereas clan titles balance ambition with appeal to draw members. The generator accommodates both styles.' },
+  { category: 'Technical', question: 'In what manner are the names created?', answer: 'The tool merges curated Clash Royale-style elements — card references, competitive terms, clean foundations — and mixes them randomly inside your browser, keeping gamer handles within a usable length. Every execution delivers a fresh set. Nothing transmits to a server; creation happens completely locally.' },
+  { category: 'Availability', question: 'Can I verify whether a name is claimed in Clash Royale?', answer: 'Clash Royale permits duplicate player names (since you are identified by a unique player tag), meaning player names do not require uniqueness. Clan titles, however, recruit more successfully when distinctive. This utility lacks a connection to the game, so it solely suggests names — test them inside the game to observe their appearance.' },
+  { category: 'Privacy', question: 'Are my details transmitted to a server?', answer: 'No. Everything executes inside your browser. When you select generate, titles form directly on your device. Your settings and generated handles never travel to our servers and nothing gets stored. You can utilize the utility within a private window and keep your name concepts entirely yours.' },
+  { category: 'Limits', question: 'How many names am I able to generate simultaneously?', answer: 'You may request 1–24 names per execution. For additional options, run it once more — each attempt yields a fresh random set lacking any daily or total ceiling. Produce a large pool whenever you require plenty of player and clan selections for comparison.' },
+  { category: 'Compatibility', question: 'Does it function on mobile devices?', answer: 'Yes. The tool functions on any current browser across desktop, tablet, or mobile — convenient since Clash Royale is a mobile game. Create a batch on your phone, copy a handle, and insert it directly into the title screen.' },
+  { category: 'General', question: 'Does the Clash Royale Name Generator cost anything?', answer: 'Yes, totally free without any account, registration, or download. Generate as many player and clan name concepts as you prefer, as frequently as you wish.' },
+  { category: 'Best practices', question: 'How should I select the top CR name?', answer: 'Determine your category (cool, sweaty, card-themed, or funny), maintain short and legible player names, and remember you receive one free modification so you are not permanently locked in. For the signature look, include an emoji or symbol in-game. For clans, prioritize a title members will gladly represent.' },
+  { category: 'Best practices', question: 'Should my name correspond with my deck or playstyle?', answer: 'It creates a fun touch. A card-themed moniker like a Hog or X-Bow reference can hint at your primary deck and grant you a distinct identity on the ladder. It remains optional, yet it renders your handle extra memorable for opponents and clanmates.' },
+  { category: 'Troubleshooting', question: '[2] The names feel overly generic — what should I do?', answer: 'Produce a larger batch and filter for the CR-specific results: retain the card-themed and sweaty selections, discard anything applicable to any other game. Afterwards, adorn your favorite with an emoji or symbol in-game to grant it that unmistakable Clash Royale vibe.' },
 ];
 
 export default async function ClashRoyaleNameGeneratorPage() {
@@ -143,7 +125,7 @@ export default async function ClashRoyaleNameGeneratorPage() {
         {createWriteUp()}
         <div className="mt-10 space-y-3">
           <h2 className="text-2xl font-semibold text-slate-900">Frequently Asked Questions</h2>
-          <p className="text-slate-700">Common questions about the Clash Royale name generator.</p>
+          <p className="text-slate-700">Frequent inquiries concerning the Clash Royale Name Generator.</p>
         </div>
         <FAQSection items={pageFaqs} />
         <FaqJsonLd faqs={pageFaqs} />

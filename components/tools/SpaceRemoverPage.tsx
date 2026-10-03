@@ -70,18 +70,18 @@ export default function SpaceRemoverPage({ modelName, modelSlug, faqItems, conte
             <div className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 space-y-4">
               <h2 className="text-xl font-semibold text-slate-900">How it works</h2>
               <ul className="list-disc list-inside space-y-1 text-slate-700">
-                <li>Collapses repeated spaces while keeping your line breaks intact.</li>
-                <li>Trims leading and trailing line whitespace for cleaner paragraphs.</li>
-                <li>Normalizes tabs and line endings for consistent formatting across tools.</li>
+                <li>Compresses duplicate spaces while preserving your original line breaks.</li>
+                <li>Eliminates starting and ending line spaces to make paragraphs look neater.</li>
+                <li>Standardizes tabs and line endings to ensure uniform formatting across different utilities.</li>
               </ul>
             </div>
             <div className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 space-y-4">
-              <h2 className="text-xl font-semibold text-slate-900">What it can / can&apos;t do</h2>
+              <h2 className="text-xl font-semibold text-slate-900">What it is capable of and what it can&apos;t do</h2>
               <ul className="list-disc list-inside space-y-1 text-slate-700">
-                <li>Can reduce formatting glitches caused by inconsistent spacing.</li>
-                <li>Can&apos;t verify authorship, provenance, or model identity.</li>
-                <li>Not a bypass tool; it only adjusts spacing and formatting.</li>
-                <li>Not a guarantee; use responsibly and review the output before publishing.</li>
+                <li>May decrease formatting errors resulting from irregular spacing.</li>
+                <li>Unable to confirm authorship, origin, or model identity.</li>
+                <li>Not designed for bypassing; it merely modifies spacing and layout.</li>
+                <li>No absolute guarantee; apply prudently and check results prior to publication.</li>
               </ul>
             </div>
           </section>
@@ -89,9 +89,7 @@ export default function SpaceRemoverPage({ modelName, modelSlug, faqItems, conte
 
         <div className="mt-10 space-y-3">
           <h2 className="text-2xl font-semibold text-slate-900">{modelName} Space Remover – Frequently Asked Questions</h2>
-          <p className="text-slate-700">
-            This FAQ covers common spacing issues, what the tool changes, and what it does not. Review the cleaned output to confirm spacing and formatting match your intended use.
-          </p>
+          <p className="text-slate-700">This FAQ addresses frequent spacing problems, the modifications made by the utility, and its limitations. Inspect the sanitized text to ensure spacing and layout align with your goals.</p>
         </div>
 
         <FAQSection items={faqItems} />

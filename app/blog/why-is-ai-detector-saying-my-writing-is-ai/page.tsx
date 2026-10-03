@@ -26,16 +26,12 @@ export default function WhyIsAiDetectorSayingMyWritingIsAiPage() {
       <div className="rounded-[28px] border-3 border-black bg-white/70 p-6 shadow-neo-lg shadow-slate-900/5 backdrop-blur-lg">
         <p className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-500">False Positives Explained</p>
         <h1 className="mt-3 text-3xl font-semibold text-slate-900">Why Is the AI Detector Saying My Writing Is AI?</h1>
-        <p className="mt-2 text-slate-600">
-          If you wrote something yourself and an AI detector is flagging it as machine-generated, you are not alone. False positives
-          are a documented, well-understood problem with current detection technology. There are specific, fixable reasons why
-          human writing gets flagged &mdash; and specific solutions for each.
-        </p>
+        <p className="mt-2 text-slate-600">If an AI detector mistakenly flags your original human writing as machine-made, you are far from alone. False positives represent a well-documented flaw in modern detection software. There are clear, resolvable causes for why human text gets flagged &mdash; along with practical fixes for each.</p>
         <div className="mt-5 grid gap-4 sm:grid-cols-3">
           {[
-            { title: 'Formal writing style', detail: 'Structured, predictable prose scores like AI text' },
-            { title: 'Non-native English', detail: 'Careful grammar creates false AI signals' },
-            { title: 'Invisible characters', detail: 'Hidden Unicode from copy-paste can trigger detectors' },
+            { title: 'Formal writing style', detail: 'Structured and predictable prose mimics AI writing patterns' },
+            { title: 'Non-native English', detail: 'Meticulous grammar can generate false AI indicators' },
+            { title: 'Invisible characters', detail: 'Hidden Unicode stemming from copy-paste actions may set off detectors' },
           ].map((item) => (
             <div key={item.title} className="rounded-2xl border-2 border-black bg-slate-50 p-4 text-xs text-slate-700">
               <p className="font-semibold text-slate-900">{item.title}</p>
@@ -46,237 +42,127 @@ export default function WhyIsAiDetectorSayingMyWritingIsAiPage() {
       </div>
 
       <section className="mt-10 space-y-4">
-        <h2 className="text-2xl font-semibold text-slate-900">How AI Detectors Actually Classify Text</h2>
-        <p className="text-slate-700">
-          Before we go into why your writing is being flagged, it helps to understand what AI detectors are actually measuring.
-          They are not reading your text for meaning or checking whether you used ChatGPT. They are running statistical analysis
-          on your word choices and sentence structures to see how predictable they are.
-        </p>
-        <p className="text-slate-700">
-          The core metric is called perplexity. A language model scores your text based on how &quot;surprised&quot; it would
-          be by each word choice. AI-generated text tends to make very predictable, high-probability word choices &mdash; because
-          that&apos;s what language models do. Human writing tends to be more varied and surprising. When your human writing
-          scores as very predictable, the detector flags it as AI.
-        </p>
-        <p className="text-slate-700">
-          The second metric is burstiness &mdash; the variation in your sentence lengths and structures. AI text is typically
-          uniform. Human text is typically varied. When your writing is very consistent in structure and length, it looks
-          statistically similar to AI output.
-        </p>
-        <p className="text-slate-700">
-          Understanding this is the key to understanding false positives: any human writing that is unusually predictable and
-          structurally consistent can be misclassified. This happens for entirely natural reasons.
-        </p>
+        <h2 className="text-2xl font-semibold text-slate-900">The Way AI Detectors Truly Categorize Content</h2>
+        <p className="text-slate-700">Prior to exploring why your content gets flagged, it is useful to grasp what AI detectors truly evaluate. They do not comprehend your prose for context or verify if you utilized ChatGPT. Instead, they perform statistical evaluations on your vocabulary and phrasing to determine predictability.</p>
+        <p className="text-slate-700">The primary metric is known as perplexity. A language model evaluates your text based on how &quot;surprised&quot; it feels by each selected word. AI output generally relies on highly predictable, probable word choices &mdash; matching how language models function. Conversely, human writing is usually diverse and unexpected. When human writing appears overly predictable, detectors mistakenly label it as AI.</p>
+        <p className="text-slate-700">The secondary metric is burstiness &mdash; representing the diversity in your sentence lengths and patterns. AI-generated text stays uniform, while human writing fluctuates. When your prose maintains strict consistency in length and syntax, its statistical profile resembles machine output.</p>
+        <p className="text-slate-700">Grasping this concept is vital for understanding false positives: any human text displaying unusual predictability and structural consistency risks misclassification due to entirely natural circumstances.</p>
       </section>
 
       <section className="mt-10 space-y-4">
-        <h2 className="text-2xl font-semibold text-slate-900">Reason 1: You Write in a Formal or Academic Style</h2>
-        <p className="text-slate-700">
-          Academic writing, legal writing, business communication, and technical documentation all follow very predictable
-          conventions. Sentence structure is consistent, vocabulary is formal and domain-specific, arguments progress logically
-          from point to point, and the writing adheres closely to style guide rules. This creates exactly the low-perplexity,
-          low-burstiness profile that AI detectors associate with machine generation.
-        </p>
-        <p className="text-slate-700">
-          This is one of the most documented false positive patterns. Students who write careful, structured academic essays
-          are frequently flagged. Professional writers who draft formal reports and memos face the same problem. The detector
-          cannot distinguish between &quot;human writing that follows conventions carefully&quot; and &quot;AI text that follows
-          conventions because it was trained to.&quot;
-        </p>
+        <h2 className="text-2xl font-semibold text-slate-900">Reason 1: You Write in a Scholarly or Formal Manner</h2>
+        <p className="text-slate-700">Academic papers, legal documents, professional correspondence, and technical manuals all rely heavily on predictable conventions. Sentence structures remain steady, vocabulary stays formal and specialized, arguments flow logically, and the writing strictly follows style guidelines. This generates the exact low-perplexity and low-burstiness signature that AI detectors link to machine generation.</p>
+        <p className="text-slate-700">This represents a frequently documented false positive trend. Students crafting meticulous, well-organized academic papers are regularly flagged. Professional authors creating formal reports and memos encounter the identical issue. The detector fails to differentiate between &quot;human writing that follows conventions carefully&quot; and &quot;AI text that follows conventions because it was trained to.&quot;</p>
         <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
-          <p className="font-semibold text-slate-900">Signs your style is triggering false positives</p>
+          <p className="font-semibold text-slate-900">Indicators your style is triggering false positives</p>
           <ul className="mt-2 list-disc space-y-1 pl-5">
-            <li>You consistently write in complex, multi-clause sentences</li>
-            <li>Your paragraph structures follow a predictable pattern (claim, evidence, conclusion)</li>
-            <li>You use a formal vocabulary and avoid contractions</li>
-            <li>Your writing stays on topic without personal digressions</li>
-            <li>Your sentence lengths fall within a narrow range</li>
+            <li>You consistently compose in complex, multi-clause sentences</li>
+            <li>Your paragraph layouts adhere to a steady sequence (assertion, proof, summary)</li>
+            <li>You employ an elevated lexicon and steer clear of contractions</li>
+            <li>Your composition remains focused without personal tangents</li>
+            <li>Your sentence sizes fall within a restricted span</li>
           </ul>
         </div>
-        <p className="text-slate-700">
-          The fix is not to write worse &mdash; it is to add stylistic variety. Mix sentence lengths deliberately. Add one or
-          two short punchy statements. Include a personal observation or an admission of limitation. Vary your paragraph openers.
-          These changes increase your burstiness score without reducing quality.
-        </p>
+        <p className="text-slate-700">The remedy is not to compose poorly &mdash; it is to introduce stylistic diversity. Blend sentence dimensions purposefully. Insert one or two brief snappy statements. Incorporate a personal remark or a concession of constraint. Vary your paragraph introductions. These modifications elevate your burstiness score without lowering standards.</p>
       </section>
 
       <section className="mt-10 space-y-4">
-        <h2 className="text-2xl font-semibold text-slate-900">Reason 2: You Are a Non-Native English Speaker Writing Carefully</h2>
-        <p className="text-slate-700">
-          This is perhaps the most concerning documented pattern in AI detection research. Multiple independent studies have
-          shown that text written by non-native English speakers is flagged as AI at dramatically higher rates than text from
-          native speakers. Some studies found false positive rates of 60% or higher for non-native speaker writing.
-        </p>
-        <p className="text-slate-700">
-          The mechanism is straightforward: when you are writing in your second or third language, you tend to write carefully
-          and predictably. You stick to vocabulary you know well. You use sentence structures you are confident about. You avoid
-          idiomatic expressions and informal constructions. All of these behaviors produce text with lower perplexity and lower
-          burstiness &mdash; making it look statistically more like AI output.
-        </p>
-        <p className="text-slate-700">
-          This is a genuine fairness issue with current AI detection tools. They are calibrated on datasets that skew toward
-          native English writing patterns, and they systematically misidentify careful non-native writing as artificial. If
-          you&apos;re a non-native speaker and you&apos;re being flagged, the problem is with the tool, not your writing.
-        </p>
+        <h2 className="text-2xl font-semibold text-slate-900">Cause B: Your Writing Style Mimics Careful Non-Native English</h2>
+        <p className="text-slate-700">This is arguably the most alarming recorded trend in AI detection research. Multiple separate analyses have demonstrated that prose crafted by non-native English speakers is tagged as artificial at vastly greater frequencies than work from native speakers. Certain studies revealed false positive rates of 60% or more for non-native authoring.</p>
+        <p className="text-slate-700">The underlying cause is clear: when composing in your second or third language, you tend to write cautiously and predictably. You rely on terms you know thoroughly. You apply syntactic forms you feel secure about. You bypass idiomatic phrases and casual constructions. All these actions generate prose with reduced perplexity and lower burstiness &mdash; rendering it statistically closer to machine generation.</p>
+        <p className="text-slate-700">This represents a real equity concern with present AI detection software. They are tuned using datasets that lean toward native English stylistic trends, and they consistently misclassify careful non-native prose as synthetic. If you&apos;re a non-native author and you&apos;re being flagged, the issue lies with the application, not your writing.</p>
         <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
-          <p className="font-semibold text-slate-900">Practical steps for non-native speakers being falsely flagged</p>
+          <p className="font-semibold text-slate-900">Actionable measures for non-native authors experiencing false flags</p>
           <ul className="mt-2 list-disc space-y-2 pl-5">
-            <li>Use the <Link href="/ai-humanizer">AI Humanizer</Link> to add natural variation to your text</li>
-            <li>Include occasional informal phrases or conversational asides</li>
-            <li>Vary your sentence length range more widely</li>
-            <li>Add personal examples or first-person observations</li>
-            <li>If in an academic context, document your writing process with drafts</li>
+            <li>Use the <Link href="/ai-humanizer">AI Humanizer</Link> to introduce organic variation to your text</li>
+            <li>Incorporate occasional casual idioms or conversational remarks</li>
+            <li>Fluctuate your sentence length span more broadly</li>
+            <li>Include personal illustrations or first-person reflections</li>
+            <li>If in a scholarly environment, preserve your drafting history with drafts</li>
           </ul>
         </div>
       </section>
 
       <section className="mt-10 space-y-4">
-        <h2 className="text-2xl font-semibold text-slate-900">Reason 3: Invisible Characters in Your Text</h2>
-        <p className="text-slate-700">
-          Here is a cause that most people never suspect: invisible Unicode characters embedded in your text. This can happen
-          even when you have written every word yourself, if you copied and pasted any text from a web source, a PDF, another
-          document, or &mdash; crucially &mdash; from an AI tool that you then edited heavily.
-        </p>
-        <p className="text-slate-700">
-          Zero-width spaces (U+200B), zero-width non-joiners (U+200C), byte-order marks (U+FEFF), and soft hyphens (U+00AD)
-          are characters that are invisible in normal text editors but present in the actual string. Some AI detectors scan
-          for these characters as a secondary signal because they appear more frequently in AI-generated output than in
-          purely human-written text.
-        </p>
-        <p className="text-slate-700">
-          If your text has invisible characters &mdash; even if you wrote every visible word yourself &mdash; it can push
-          your score toward the AI classification. The solution is to scan for and remove these characters before running
-          your text through a detector.
-        </p>
-        <p className="text-slate-700">
-          Use the <Link href="/invisible-character-detector">Invisible Character Detector</Link> to see whether your text contains
-          any hidden characters. If it does, remove them and re-run the AI detection scan. You may see a significant improvement
-          in your score.
-        </p>
+        <h2 className="text-2xl font-semibold text-slate-900">Cause C: Hidden Characters Inside Your Written Text</h2>
+        <p className="text-slate-700">Here is a trigger that most individuals overlook: hidden Unicode symbols embedded within your prose. This may occur even when you have authored every single term yourself, provided you copied and pasted any material from an online site, a PDF, an alternative file, or &mdash; importantly &mdash; from an AI assistant that you subsequently revised extensively.</p>
+        <p className="text-slate-700">Zero-width spaces (U+200B), zero-width non-joiners (U+200C), byte-order marks (U+FEFF), and soft hyphens (U+00AD) are symbols that remain unseen in standard text editors yet exist within the actual string. Certain AI analyzers check for these marks as a supplementary indicator since they turn up more often in machine-produced content than in entirely human-crafted prose.</p>
+        <p className="text-slate-700">If your content contains hidden characters &mdash; even if you authored every visible term personally &mdash; it can shift your metric toward the AI category. The answer is to inspect for and eliminate these symbols prior to passing your content through a scanner.</p>
+        <p className="text-slate-700">Run the <Link href="/invisible-character-detector">Invisible Character Detector</Link> on your draft to confirm if unseen symbols linger inside. Once cleared, trigger the AI detection check once more. Your overall results could improve quite dramatically.</p>
       </section>
 
       <div className="ad-slot"><AdSenseSlot className="w-full" /></div>
 
       <section className="mt-10 space-y-4">
-        <h2 className="text-2xl font-semibold text-slate-900">Reason 4: You Use Specific Phrases or Transitions That AI Models Favor</h2>
-        <p className="text-slate-700">
-          Certain phrases and transition patterns appear disproportionately in AI-generated text because models have learned
-          to use them from their training data. Some detectors are specifically trained to recognize these patterns. If you
-          naturally use these phrases in your own writing, you may inadvertently trigger the classifier.
-        </p>
+        <h2 className="text-2xl font-semibold text-slate-900">Cause 4: You Use Specific Phrases or Transitions That AI Models Favor</h2>
+        <p className="text-slate-700">Particular expressions and connective patterns turn up excessively in machine-made writing because algorithms have learned to apply them from their training materials. Certain checkers are specifically tuned to spot these trends. If you naturally employ these terms in your personal composition, you might accidentally trip the classifier.</p>
         <div className="grid gap-4 md:grid-cols-2">
           <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">AI-associated phrase patterns</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
-              <li>&quot;It is important to note that...&quot;</li>
-              <li>&quot;In conclusion, it is clear that...&quot;</li>
-              <li>&quot;Furthermore, it is worth considering...&quot;</li>
-              <li>&quot;This underscores the importance of...&quot;</li>
-              <li>&quot;In today&apos;s rapidly changing world...&quot;</li>
-              <li>&quot;With that in mind, let us explore...&quot;</li>
+              <li>&quot;It must be remembered that...&quot;</li>
+              <li>&quot;Ultimately, it is evident that...&quot;</li>
+              <li>&quot;Additionally, one should think about...&quot;</li>
+              <li>&quot;This highlights the value of...&quot;</li>
+              <li>&quot;In today&apos;s fast-paced environment...&quot;</li>
+              <li>&quot;Bearing that in thought, we shall examine...&quot;</li>
             </ul>
           </div>
           <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
             <p className="font-semibold text-slate-900">More natural alternatives</p>
             <ul className="mt-2 list-disc space-y-1 pl-5">
-              <li>Simply make the claim directly</li>
-              <li>End sections with your strongest point, not a generic wrap-up</li>
-              <li>Use &quot;also&quot; or &quot;but&quot; instead of formal transitions</li>
-              <li>State the implication without signposting it</li>
-              <li>Start with a specific detail rather than broad context</li>
-              <li>Move to the next point without announcing it</li>
+              <li>State your point straight away</li>
+              <li>Finish sections using your most powerful argument instead of a standard conclusion</li>
+              <li>Employ &quot;also&quot; or &quot;but&quot; in place of traditional transitional words</li>
+              <li>Present the consequence without signaling it beforehand</li>
+              <li>Begin with a particular fact instead of wide-ranging background</li>
+              <li>Proceed to the following point without declaring it</li>
             </ul>
           </div>
         </div>
       </section>
 
       <section className="mt-10 space-y-4">
-        <h2 className="text-2xl font-semibold text-slate-900">Reason 5: Your Content Topic Is One AI Models Write About Frequently</h2>
-        <p className="text-slate-700">
-          Some topics are so thoroughly covered by AI models in training and output that detectors have become highly sensitive
-          to any text in those domains. Technology overviews, general how-to guides, introductory explanations of common
-          concepts, and marketing copy in certain categories all exist in such abundance in AI training data that any new
-          text in those categories resembles the distribution.
-        </p>
-        <p className="text-slate-700">
-          If you are writing about AI itself, productivity, digital marketing, or technology basics, you are in a topic
-          category where detectors have more training data and more aggressive thresholds. Adding specific, personal, or
-          primary-source-derived content helps differentiate your writing.
-        </p>
+        <h2 className="text-2xl font-semibold text-slate-900">Cause 5: Your Content Topic Is One AI Models Write About Frequently</h2>
+        <p className="text-slate-700">Certain subjects are so extensively covered by artificial intelligence systems during training and generation that detection tools are extremely alert to any writing within those fields. Technology summaries, standard instructional guides, basic introductions to everyday ideas, and specific marketing materials appear so frequently within AI dataset collections that any fresh writing covering those areas matches the pattern.</p>
+        <p className="text-slate-700">When you write about artificial intelligence itself, efficiency, online marketing, or tech fundamentals, you operate in a subject area where detectors possess greater training information and stricter limits. Including concrete, individual, or original-source-based material assists in separating your composition.</p>
       </section>
 
       <section className="mt-10 space-y-4">
-        <h2 className="text-2xl font-semibold text-slate-900">Step-by-Step: How to Fix a False Positive</h2>
+        <h2 className="text-2xl font-semibold text-slate-900">Guide: How to Resolve a False Positive Step by Step</h2>
         <div className="rounded-2xl border-3 border-black bg-slate-50 p-5 text-sm text-slate-700 shadow-neo-sm">
-          <p className="font-semibold text-slate-900">Systematic approach to reducing false positive scores</p>
+          <p className="font-semibold text-slate-900">Methodical method for lowering incorrect positive readings</p>
           <ol className="mt-2 list-decimal space-y-2 pl-5">
-            <li>
-              <strong>Scan for invisible characters first.</strong> Use the{' '}
-              <Link href="/invisible-character-detector">Invisible Character Detector</Link> and remove any hidden Unicode.
-            </li>
-            <li>
-              <strong>Check your sentence length variety.</strong> Count your sentences. If most are between 15 and 25 words,
-              add some very short ones (under 10 words) and some longer ones (over 30 words).
-            </li>
-            <li>
-              <strong>Add a personal detail or anecdote.</strong> Something specific from your own experience that no model
-              could have generated.
-            </li>
-            <li>
-              <strong>Remove common AI transition phrases.</strong> Find and replace &quot;it is important to note,&quot;
-              &quot;it is worth noting,&quot; &quot;in conclusion,&quot; and similar stock phrases.
-            </li>
-            <li>
-              <strong>Vary your paragraph openers.</strong> Avoid starting multiple paragraphs with &quot;The&quot; or
-              &quot;This.&quot;
-            </li>
-            <li>
-              <strong>Use contractions and informal asides.</strong> &quot;Don&apos;t&quot; instead of &quot;do not.&quot;
-              &quot;Here&apos;s the thing:&quot; as an opener. These increase burstiness.
-            </li>
-            <li>
-              <strong>Re-run the detector.</strong> Use the <Link href="/ai-detector">AI Detector</Link> after each change
-              to see which modifications have the most impact on your score.
-            </li>
+            <li><strong>Scan for invisible characters first.</strong> Use the{' '} <Link href="/invisible-character-detector">Invisible Character Detector</Link> and strip out any concealed Unicode.</li>
+            <li><strong>Check your sentence length variety.</strong> Analyze your sentence lengths. If most fall between 15 and 25 words, incorporate some extremely brief ones (under 10 words) alongside extended ones (over 30 words).</li>
+            <li><strong>Add a personal detail or anecdote.</strong> A specific tale from your personal life that any model would fail to produce.</li>
+            <li><strong>Remove common AI transition phrases.</strong> Locate and eliminate &quot;it is important to note,&quot; &quot;it is worth noting,&quot; &quot;in conclusion,&quot; and similar standard expressions.</li>
+            <li><strong>Vary your paragraph openers.</strong> Refrain from beginning multiple paragraphs with &quot;The&quot; or &quot;This.&quot;</li>
+            <li><strong>Weave in casual phrasing and contractions.</strong> Prefer &quot;don&apos;t&quot; over &quot;do not,&quot; or introduce thoughts with &quot;Here&apos;s the thing:&quot; Such conversational quirks elevate your burstiness.</li>
+            <li><strong>Re-run the detector.</strong> Utilize the <Link href="/ai-detector">AI Detector</Link> following every adjustment to determine which tweaks yield the greatest effect on your rating.</li>
           </ol>
         </div>
       </section>
 
       <section className="mt-10 space-y-4">
-        <h2 className="text-2xl font-semibold text-slate-900">What to Do If You&apos;re Accused of Using AI in an Academic Context</h2>
-        <p className="text-slate-700">
-          If you have been accused of using AI based on a detector score and you genuinely did not, there are concrete steps
-          you can take. AI detector results are not definitive proof of AI use &mdash; they are probabilistic estimates with
-          documented false positive rates that are well above zero.
-        </p>
+        <h2 className="text-2xl font-semibold text-slate-900">Steps to Take If You&apos;re Accused of Using AI in an Academic Context</h2>
+        <p className="text-slate-700">Should you be wrongly accused of AI utilization using a detector metric when you truly did not, actionable measures are available. AI detector outcomes are not absolute proof of artificial intelligence involvement &mdash; rather, they serve as probabilistic assessments featuring documented false positive rates significantly exceeding zero.</p>
         <div className="rounded-2xl border-3 border-black bg-white/60 p-5 text-sm text-slate-700 shadow-neo-sm">
           <p className="font-semibold text-slate-900">Building your case</p>
           <ul className="mt-2 list-disc space-y-2 pl-5">
-            <li>Save all intermediate drafts in version-controlled documents (Google Docs history is useful here)</li>
-            <li>Document any research process with timestamps (browser history, note-taking app records)</li>
-            <li>Reference the peer-reviewed literature on AI detector false positive rates</li>
-            <li>
-              Point out that the same detector flagging your work has been shown to flag essays by Shakespeare, the
-              Federalist Papers, and other historical human writing at high rates
-            </li>
-            <li>Request a human review based on content knowledge, not statistical signals</li>
+            <li>Preserve all draft versions inside version-controlled files (the Google Docs history proves beneficial here)</li>
+            <li>Record every research step accompanied by timestamps (such as browser history and note-taking app logs)</li>
+            <li>Cite the peer-reviewed studies regarding false positive rates of AI detectors</li>
+            <li>Point out that the identical detector flagging your text has frequently flagged writings by Shakespeare, the Federalist Papers, and additional historical human texts at high rates</li>
+            <li>Ask for a human assessment based on content expertise instead of statistical indicators</li>
           </ul>
         </div>
-        <p className="text-slate-700">
-          The <Link href="/ai-humanizer">AI Humanizer</Link> tool can also help you understand which aspects of your writing
-          score as AI-like and make targeted adjustments. Even if you are confident your writing is genuine, reducing AI-like
-          patterns proactively can prevent these situations.
-        </p>
+        <p className="text-slate-700">The <Link href="/ai-humanizer">AI Humanizer</Link> tool can additionally assist you in recognizing which elements of your composition register as AI-like and implementing specific corrections. Even when you feel certain your writing is authentic, lowering AI-associated traits beforehand can avert such scenarios.</p>
       </section>
 
       <div className="mt-8 rounded-2xl border border-brand-100 bg-brand-50 p-4 text-sm text-brand-800">
-        <p className="font-semibold">Get a clear picture before you panic.</p>
-        <p>
-          Use the <Link href="/ai-detector">AI Detector</Link> to see your score, then the{' '}
-          <Link href="/invisible-character-detector">Invisible Character Detector</Link> to rule out hidden character artifacts.
-          If you need to reduce your AI score, the <Link href="/ai-humanizer">AI Humanizer</Link> can help add the natural
-          variation that brings your text back into the human range.
-        </p>
+        <p className="font-semibold">Obtain a clear perspective before you panic.</p>
+        <p>Utilize the <Link href="/ai-detector">AI Detector</Link> to view your score, followed by the{' '} <Link href="/invisible-character-detector">Invisible Character Detector</Link> to eliminate hidden character anomalies. Should you need to lower your AI score, the <Link href="/ai-humanizer">AI Humanizer</Link> can assist in introducing natural diversity that returns your writing to the human range.</p>
       </div>
     </article>
   );

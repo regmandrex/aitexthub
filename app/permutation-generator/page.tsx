@@ -56,20 +56,20 @@ function createWriteUp() {
   return (
     <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
-        <h2>Permutation Generator: All Possible Orderings</h2>
-        <p>This free tool generates all possible permutations (orderings) of a set of items. In permutations, order matters—so ABC and BAC are different. Full permutations use every item once; partial permutations use a subset.</p>
+        <h2>Permutation Generator: Every Potential Sequence</h2>
+        <p>This complimentary utility builds every possible permutation (arrangement) of an element set. In permutations, sequence is vital—meaning ABC and BAC are distinct. Full permutations utilize every element once; partial permutations use a smaller subset.</p>
 
         <h2>What Are Permutations?</h2>
-        <p>A permutation is an arrangement of items in a specific order. The number of permutations of n items is n! (n factorial). For k items chosen from n, the count is P(n,k) = n! / (n-k)!.</p>
+        <p>A permutation is an arrangement of items in a precise sequence. The quantity of permutations for n items equals n! (n factorial). For k items chosen from n, the total is P(n,k) = n! / (n-k)!. शशि</p>
 
         <h2>How It Works</h2>
-        <p>Enter your items and choose full or partial permutations (and how many per permutation if partial). The tool lists every ordering. Processing runs in your browser.</p>
+        <p>Type your items and select full or partial permutations (plus how many per permutation if partial). The utility outputs every ordering. Calculation happens directly in your browser.</p>
 
         <h2>Use Cases</h2>
-        <p>Use it for password ideas, anagram-style orderings, scheduling, teaching combinatorics, or any task where order matters.</p>
+        <p>Apply it for password brainstorming, anagram-style sequences, scheduling, teaching combinatorics, or any scenario where sequence is important.</p>
 
         <h2>Limitations</h2>
-        <p>Large sets produce many permutations (e.g., 10 items = 3,628,800 full permutations). Use reasonable set sizes to avoid timeouts.</p>
+        <p>Massive sets generate numerous permutations (for instance, 10 items = 3,628,800 full permutations). Stick to reasonable set dimensions to prevent execution timeouts.</p>
       </div>
     </section>
   );
@@ -81,7 +81,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const toolKey = toolSlug;
   
   const title = "Permutation Generator";
-  const description = "Generate all possible permutations where order matters. Create ordered arrangements of items.";
+  const description = "Produce all possible permutations where order matters. Create ordered arrangements of items.";
   const seoTitle = "Permutation Generator - All Possible Permutations Tool";
   
   return buildToolMeta({
@@ -114,11 +114,11 @@ export default async function PermutationGeneratorPage() {
   const __rating = { offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' }, aggregateRating: { '@type': 'AggregateRating', ratingValue: '4.9', ratingCount: '1840', bestRating: '5', worstRating: '1' } };
 
   const pageFaqs: FaqItem[] = [
-    { category: 'General', question: 'What is a permutation generator?', answer: 'A permutation generator lists all possible orderings of a set of items. Order matters—so ABC and BAC count as different permutations. This tool can generate full permutations (every item used once) or partial permutations (a subset in each arrangement).' },
-    { category: 'Usage', question: 'How do I use the permutation generator?', answer: 'Enter your items (e.g., letters, numbers, or words) separated by line or comma. Choose full permutations for all orderings, or partial permutations and set how many items per result. Click generate to get the list. Processing runs in your browser.' },
-    { category: 'Technical', question: 'Why does the tool slow down or stop for large sets?', answer: 'The number of permutations grows factorially (e.g., 10 items = 3,628,800 full permutations). Very large sets can take a long time or hit browser limits. Use smaller sets or partial permutations with a limited size for best results.' },
-    { category: 'General', question: 'What is the difference between permutations and combinations?', answer: 'In permutations, order matters (ABC ? BAC). In combinations, order does not matter—only which items are chosen. This tool generates permutations. For combinations (where order does not matter), use a combination generator instead.' },
-    { category: 'Use cases', question: 'What can I use permutations for?', answer: 'Common uses include exploring password or PIN orderings, anagram-style arrangements, scheduling orders, teaching combinatorics, and any task where the sequence of items matters.' },
+    { category: 'General', question: 'What is a permutation generator?', answer: 'A Permutation Generator outlines every potential sequence of a collection of items. Sequence matters—meaning ABC and BAC count as separate permutations. This utility can produce full permutations (every item used once) or partial permutations (a subset inside each arrangement).' },
+    { category: 'Usage', question: 'How can someone operate the Permutation Generator?', answer: 'Input your elements (such as characters, numerals, or words) separated by a new line or comma. Pick full permutations for all sequences, or partial permutations and define how many items per result. Select generate to retrieve the list. Execution runs inside your browser.' },
+    { category: 'Technical', question: 'Why does the utility slow down or freeze with massive sets?', answer: 'The quantity of permutations expands factorially (for example, 10 items = 3,628,800 full permutations). Extremely large sets can require significant time or breach browser thresholds. Use smaller sets or partial permutations with restricted limits for the best performance.' },
+    { category: 'General', question: 'How do permutations and combinations differ from each other?', answer: 'In permutations, sequence is important (ABC ? BAC). In combinations, sequence is irrelevant—only which elements are chosen matters. This utility produces permutations. For combinations (where sequence does not matter), use a combination generator instead.' },
+    { category: 'Use cases', question: 'What tasks can I tackle using permutations?', answer: 'Typical applications encompass testing password or PIN sequences, anagram-style permutations, planning sequences, instructing combinatorics, and any scenario where item order is significant.' },
   ];
 
   return (
@@ -129,9 +129,7 @@ export default async function PermutationGeneratorPage() {
         {createWriteUp()}
         <div className="mt-10 space-y-3">
           <h2 className="text-2xl font-semibold text-slate-900">Frequently Asked Questions</h2>
-          <p className="text-slate-700">
-            Common questions and answers about the Permutation Generator.
-          </p>
+          <p className="text-slate-700">Frequent questions and answers regarding the Permutation Generator.</p>
         </div>
         <FAQSection items={pageFaqs} />
         <FaqJsonLd faqs={pageFaqs} />

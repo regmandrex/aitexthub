@@ -18,7 +18,7 @@ const toolSlug = 'bg3-name-generator';
 export async function generateMetadata(): Promise<Metadata> {
   return buildToolMeta({
     title: 'BG3 Name Generator',
-    description: 'Free Baldur’s Gate 3 name generator for your Tav and custom characters. Race-fitting D&D names for elves, tieflings, dwarves, githyanki, and more — in your browser, no sign-up.',
+    description: 'No-cost Baldur’s Gate 3 name generator designed for your Tav and custom characters. Race-appropriate D&D monikers for tieflings, elves, dwarves, githyanki, and additional races — right in your browser, without registering.',
     seoTitle: 'BG3 Name Generator – Baldur’s Gate 3 Tav & D&D Names',
     urlPath: `/${toolSlug}`,
   });
@@ -29,103 +29,83 @@ function createWriteUp() {
     <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
         <h2>BG3 Name Generator – Baldur&apos;s Gate 3 Tav &amp; D&amp;D Names</h2>
-        <p>
-          This BG3 name generator builds names for your custom character — your &quot;Tav&quot; — and for any companion, hireling, or origin character you create in Baldur&apos;s Gate 3. Because BG3 runs on Dungeons &amp; Dragons 5e and the Forgotten Realms setting, names are not generic fantasy filler: each playable race has its own naming traditions, from the flowing names of elves to the harsh, guttural names of githyanki. The generator leans into those conventions so the name you pick fits both your race and the world of Faerûn. It runs in your browser with no sign-up and stores nothing.
-        </p>
-        <p>
-          A name in BG3 sticks with you through a 100-hour campaign, voiced by companions and narrated by the Dream Visitor, so it is worth getting right. This page walks through D&amp;D naming by race so the name you generate sounds like it belongs to a Sword Coast adventurer rather than a placeholder.
-        </p>
+        <p>This BG3 Name Generator creates monikers for your custom hero — your &quot;Tav&quot; — and for any companion, mercenary, or origin hero you design in Baldur&apos;s Gate 3. Since BG3 utilizes Dungeons &amp; Dragons 5e and the Forgotten Realms universe, titles are not generic fantasy filler: every playable race features its own naming customs, ranging from the smooth titles of elves to the abrasive, harsh monikers of githyanki. The utility embraces these standards so the title you select matches both your ancestry and the realm of Faerûn. It runs inside your browser with no registration and saves nothing.</p>
+        <p>A title in BG3 stays with you through a 100-hour playthrough, voiced by allies and narrated by the Dream Visitor, making it crucial to get right. This article reviews D&amp;D naming by race so the moniker you create sounds like it belongs to a Sword Coast hero rather than a placeholder.</p>
 
         <h2>D&amp;D Naming by Race</h2>
-        <p>
-          Baldur&apos;s Gate 3 lets you play a wide roster of races, each with distinct naming traditions drawn from D&amp;D lore. Matching the name to the race is the single biggest thing that makes a Tav feel real:
-        </p>
+        <p>Baldur&apos;s Gate 3 allows you to play a broad variety of races, each featuring distinct naming traditions derived from D&amp;D lore. Aligning the title with the ancestry is the single most important factor that makes a Tav feel authentic:</p>
         <ul>
-          <li><strong>Elves &amp; half-elves.</strong> Flowing, melodic names with soft consonants — graceful, vowel-rich sounds. High elves and wood elves both favor lyrical names.</li>
-          <li><strong>Tieflings.</strong> Often a &quot;virtue name&quot; (a word or concept) alongside an Infernal-flavored name, reflecting their fiendish heritage and the names they choose for themselves.</li>
-          <li><strong>Dwarves.</strong> Hard, strong names with clan associations — sturdy consonants and a sense of stone and lineage.</li>
-          <li><strong>Githyanki.</strong> Harsh, alien, guttural names with apostrophes and hard sounds (like Lae&apos;zel) — distinctly non-human.</li>
-          <li><strong>Humans.</strong> The widest range, drawing on the many cultures of the Sword Coast and beyond.</li>
-          <li><strong>Halflings &amp; gnomes.</strong> Warmer, homier, often slightly whimsical names that suit their communities.</li>
-          <li><strong>Dragonborn &amp; half-orcs.</strong> Strong, clan- or deed-rooted names with weight and presence.</li>
+          <li><strong>Elves &amp; half-elves.</strong> Flowing, melodic monikers featuring soft consonants — graceful, vowel-heavy sounds. High elves and wood elves both prefer lyrical titles.</li>
+          <li><strong>Tieflings.</strong> Frequently a &quot;virtue name&quot; (a term or concept) alongside an Infernal-themed moniker, demonstrating their demonic background and the names they select for themselves.</li>
+          <li><strong>Dwarves.</strong> Tough, solid titles featuring clan connections — sturdy consonants alongside a feeling of stone and ancestry.</li>
+          <li><strong>Githyanki.</strong> Harsh, alien, guttural monikers featuring apostrophes and hard sounds (like Lae&apos;zel) — clearly non-human.</li>
+          <li><strong>Humans.</strong> The broadest selection, drawing upon the numerous cultures of the Sword Coast and beyond.</li>
+          <li><strong>Halflings &amp; gnomes.</strong> Warmer, cozier, frequently somewhat whimsical titles that fit their communities.</li>
+          <li><strong>Dragonborn &amp; half-orcs.</strong> Robust, clan- or deed-based monikers possessing weight and presence.</li>
         </ul>
 
         <h2>Naming Your Tav</h2>
-        <p>
-          &quot;Tav&quot; is the community nickname for a custom (non-origin) BG3 protagonist — named after the default character. When you build your own hero instead of playing an origin like Astarion or Shadowheart, you choose everything, including the name companions will use for the rest of the game. Generate a batch filtered to your race, then read each one as if Shadowheart were saying it across a campfire; the names that sound natural in that context are the ones to keep.
-        </p>
-        <p>
-          Consider your class and background too. A noble Paladin might carry a more formal, lineage-heavy name; a wild Druid something earthier; a roguish Urchin something short and street-worn. D&amp;D characters are defined as much by background as by stats, and a name that nods to that background makes the character feel authored rather than rolled.
-        </p>
+        <p>"Tav" represents the popular moniker for a bespoke BG3 hero that is non-origin, originating from the initial character preset. When crafting your own champion instead of selecting preset characters like Astarion or Shadowheart, you customize everything, including the moniker companions address you by throughout the journey. Produce a selection filtered by your ancestry, then review each option imagining Shadowheart uttering it by a campfire; those that feel natural within that setting are the ones you ought to retain.</p>
+        <p>Take your class and background into account as well. A noble Paladin might bear a weightier, heritage-bound moniker; a wild Druid something earthier; a roguish Urchin something concise and street-hardened. D&amp;D heroes are defined just as much by their origins as their statistics, and a designation that reflects that background renders the hero feeling deliberately crafted instead of randomly rolled.</p>
 
         <h2>Origin vs. Custom Characters</h2>
-        <p>
-          BG3&apos;s origin characters — Astarion, Gale, Lae&apos;zel, Shadowheart, Wyll, Karlach, and the Dark Urge — come pre-named, and those names are a masterclass in race-fitting naming. Lae&apos;zel is unmistakably githyanki; Astarion has the smooth elegance of a high-elf vampire; Karlach is strong and direct, fitting her tiefling barbarian energy. If you are creating a custom character or a multiplayer party, use these as a tuning fork: generate names and compare them to the canon companions of the same race to check that yours sits in the same register.
-        </p>
+        <p>BG3&apos;s origin characters — Astarion, Gale, Lae&apos;zel, Shadowheart, Wyll, Karlach, and the Dark Urge — arrive pre-named, and those monikers serve as a masterclass in race-appropriate nomenclature. Lae&apos;zel is distinctly githyanki; Astarion possesses the smooth sophistication of a high-elf vampire; Karlach is robust and direct, matching her tiefling barbarian energy. Should you be designing a custom hero or a multiplayer party, utilize these as a tuning fork: generate monikers and contrast them against canon companions of identical ancestry to verify yours resides in the same category.</p>
 
         <h2>Naming for Multiplayer and Custom Campaigns</h2>
-        <p>
-          BG3 supports multiplayer parties of custom characters, and many groups want a cohesive set of names rather than a clash of styles. Generate a batch for each player&apos;s race and pick names that feel like they could adventure together — varied but tonally consistent. The same approach works if you are porting your BG3 Tav into a tabletop D&amp;D campaign: the names are setting-accurate for the Forgotten Realms, so they travel cleanly from the video game to the tabletop.
-        </p>
+        <p>BG3 supports multiplayer groups consisting of custom heroes, and numerous squads prefer a harmonious collection of monikers rather than conflicting styles. Generate a collection for each player&apos;s ancestry and select monikers that seem capable of adventuring side-by-side — diverse yet tonally unified. The identical strategy applies if you are transferring your BG3 Tav into a tabletop D&amp;D campaign: the monikers are setting-accurate for the Forgotten Realms, meaning they transition seamlessly from the digital screen to the tabletop.</p>
 
-        <h2>How to Use This BG3 Name Generator</h2>
+        <h2>[10] How to Use This BG3 Name Generator</h2>
         <ol className="list-decimal pl-6 space-y-2">
-          <li>Set how many names you want per run (1–24).</li>
-          <li>Click <strong>Generate names</strong> to get a batch of D&amp;D-style names.</li>
-          <li>Keep the names that fit your chosen race and class, using the race notes above as a guide.</li>
-          <li>Copy the list into your notes and shortlist your favorites for character creation.</li>
-          <li>Run again for more — no limit, no account, no download.</li>
+          <li>Choose the quantity of names generated per batch (1–24).</li>
+          <li>Click <strong>Generate names</strong> to acquire a collection of D&amp;D-style monikers.</li>
+          <li>Preserve the monikers that suit your chosen ancestry and class, referencing the ancestry notes provided previously as a guide.</li>
+          <li>Transfer the list into your notes and shortlist your favored options for hero creation.</li>
+          <li>Spin the tool repeatedly for fresh ideas — zero restrictions, sign-ups, or software required.</li>
         </ol>
-        <p>
-          Generation happens entirely in your browser. Your settings and the names you create are never sent to a server, so your character ideas stay private until you choose to use them.
-        </p>
+        <p>Generation takes place entirely within your browser. Your preferences and the monikers you generate are never transmitted to a server, ensuring your hero concepts remain confidential until you decide to implement them.</p>
 
         <h2>Tips for a Race-Fitting Name</h2>
-        <p>
-          Decide your race first, then filter hard for sound: elven names should flow, dwarven names should feel like stone, githyanki names should sound alien. Say the name out loud — it will be spoken constantly in cutscenes, so a name that is awkward to pronounce will grate over a long campaign. Avoid borrowing a canon companion&apos;s exact name, but echoing the style of a same-race companion is a reliable shortcut. If a generated name is close, tweak the spelling or add an apostrophe (for githyanki) to push it fully into the right tradition.
-        </p>
+        <p>Determine your ancestry first, then screen rigorously for phonetics: elven monikers ought to flow, dwarven monikers should feel like stone, githyanki monikers must sound extraterrestrial. Utter the moniker aloud — it will be spoken continuously during cutscenes, meaning a designation that proves awkward to articulate will become tiresome over an extended campaign. Refrain from adopting a canon companion&apos;s exact moniker, but mirroring the aesthetic of a same-race companion offers a dependable shortcut. If a generated moniker is close, adjust the spelling or append an apostrophe (for githyanki) to push it completely into the appropriate tradition.</p>
 
         <h2>What This Tool Does and Does Not Do</h2>
         <ul>
-          <li>It generates Baldur&apos;s Gate 3 and D&amp;D-style names for your Tav, companions, and custom characters.</li>
-          <li>It does not reproduce official companion names as a list — output is original for your own use.</li>
-          <li>It does not store your generated names or settings; generation is fully local.</li>
-          <li>It does not interact with your save file or the game — it only suggests names to type into character creation.</li>
+          <li>It produces Baldur&apos;s Gate 3 and D&amp;D-style monikers for your Tav, companions, and custom heroes.</li>
+          <li>It does not replicate official companion monikers as a compilation — the output remains original for your personal utilization.</li>
+          <li>It never logs or saves your preferences or creations; everything happens solely on your device.</li>
+          <li>It does not interface with your save data or the application — it merely proposes monikers to input into hero creation.</li>
         </ul>
 
         <h2>Final Notes</h2>
-        <p>
-          Baldur&apos;s Gate 3 is one of the most character-creation-driven games ever made, and naming your Tav is part of the fun. This generator gives you a pool of names grounded in real D&amp;D and Forgotten Realms naming traditions — race-by-race, from lilting elven names to harsh githyanki ones. Pick your race, generate a batch, lean on the notes above, and you will end up with a name that fits both your character and the Sword Coast they are about to save (or doom).
-        </p>
+        <p>Baldur&apos;s Gate 3 stands as one of the premier character-creation-driven titles ever developed, and naming your Tav forms part of the enjoyment. This generator supplies you with a pool of monikers rooted in authentic D&amp;D and Forgotten Realms naming conventions — ancestry by ancestry, ranging from lyrical elven monikers to harsh githyanki ones. Select your ancestry, produce a collection, rely on the notes above, and you will ultimately secure a moniker that suits both your hero and the Sword Coast they are poised to rescue (or devastate).</p>
       </div>
     </section>
   );
 }
 
 const pageFaqs: FaqItem[] = [
-  { category: 'General', question: 'What is a BG3 name generator?', answer: 'It is a browser tool that creates names for Baldur’s Gate 3 characters — your custom "Tav," companions, and hirelings — in the style of D&D and the Forgotten Realms. Because each playable race has its own naming tradition, the generator produces race-fitting names rather than generic fantasy filler. It runs locally with no sign-up and stores nothing.' },
-  { category: 'Tav', question: 'What is a "Tav" in BG3?', answer: '"Tav" is the community nickname for a custom (non-origin) Baldur’s Gate 3 protagonist, taken from the default character. When you build your own hero rather than playing an origin like Astarion or Shadowheart, you choose the name companions will use for the entire campaign — so it is worth picking one that fits your race and class.' },
-  { category: 'Races', question: 'How do names differ by race in BG3?', answer: 'Elves and half-elves favor flowing, melodic names; tieflings often use a virtue name plus Infernal flavor; dwarves use hard, clan-rooted names; githyanki use harsh, alien names with apostrophes (like Lae’zel); humans span many cultures; halflings and gnomes lean warm and homey; dragonborn and half-orcs use strong, deed-rooted names. Matching the name to the race is what makes a Tav feel real.' },
-  { category: 'Races', question: 'How do I name an elf or half-elf?', answer: 'Elven names are flowing and melodic with soft consonants and rich vowels. Generate a batch, keep the lyrical-sounding ones, and read them aloud — if it sounds graceful and a little otherworldly, it fits. Half-elves can lean either toward their elven or human heritage depending on the character you want.' },
-  { category: 'Races', question: 'How do I name a tiefling?', answer: 'Tieflings in D&D often carry a "virtue name" — a word or concept they choose for themselves — alongside an Infernal-flavored name reflecting their fiendish heritage. The generator can give you a base; pair it with a virtue concept (like Hope, Ire, or Sorrow) for an authentically tiefling result. Karlach is a good canon reference for tone.' },
-  { category: 'Races', question: 'How do I name a githyanki?', answer: 'Githyanki names are harsh, alien, and guttural, frequently with apostrophes and hard consonants — Lae’zel is the canonical example. Filter your batch for the most non-human-sounding results, and add an apostrophe if needed to push a name fully into the githyanki tradition.' },
-  { category: 'Origins', question: 'Can I use these for origin or companion characters?', answer: 'The origin characters (Astarion, Gale, Lae’zel, Shadowheart, Wyll, Karlach, the Dark Urge) come pre-named, but you can use this generator when creating your own companion-style NPCs, hirelings, or alternate party members. Compare your generated names to the canon companion of the same race to check the register.' },
-  { category: 'Class', question: 'Should the name match my class or background?', answer: 'It helps. A noble Paladin suits a formal, lineage-heavy name; a Druid something earthier; an Urchin rogue something short and street-worn. D&D characters are defined by background as much as stats, so a name that nods to yours makes the character feel authored rather than randomly rolled.' },
-  { category: 'Use cases', question: 'Can I use these names in tabletop D&D?', answer: 'Yes. Because BG3 uses D&D 5e and the Forgotten Realms, the names are setting-accurate and travel cleanly to tabletop campaigns. If you are porting your Tav into a home game, the generated name will fit right in alongside other Sword Coast characters.' },
-  { category: 'Use cases', question: 'Can I use this for multiplayer parties?', answer: 'Yes. For a multiplayer party of custom characters, generate a batch for each player’s race and pick names that feel like they could adventure together — varied but tonally consistent. This avoids a clash of naming styles across the party.' },
-  { category: 'Usage', question: 'How do I use this generator?', answer: 'Set how many names you want (1–24), click Generate names, then keep the ones that fit your chosen race and class using the race notes above. Copy the list into your notes, shortlist your favorites, and type your pick into BG3 character creation. Run again for more — no limit, account, or download.' },
-  { category: 'Usage', question: 'Can I edit the generated names?', answer: 'Yes. The output is a starting point. Tweak the spelling, add an apostrophe for a githyanki feel, soften consonants for an elf, or combine parts of two results. Many players generate a batch and then refine a favorite until it is exactly right.' },
-  { category: 'Naming style', question: 'My name does not sound race-appropriate — what do I do?', answer: 'Decide your race first, then filter the batch hard for sound: elven names should flow, dwarven names should feel like stone, githyanki names should sound alien. If a result is close, adjust the spelling toward that tradition. Comparing against a same-race canon companion is a reliable check.' },
-  { category: 'Naming style', question: 'Should I worry about how the name is pronounced?', answer: 'Yes. The name is spoken constantly in BG3 cutscenes by companions and the narrator, so a name that is awkward to say will grate over a long campaign. Read each candidate aloud before committing and favor ones that roll off the tongue.' },
-  { category: 'Technical', question: 'How are the names generated?', answer: 'The generator combines curated name elements built around D&D and Forgotten Realms race conventions and shuffles them at random in your browser. Each run produces a new set. Nothing is sent to a server; generation is entirely local.' },
-  { category: 'Technical', question: 'Are these real characters from BG3?', answer: 'No. The generator creates original, D&D-style names for your own use rather than reproducing the official companions. That is intentional — you want a fresh name for your Tav, not a duplicate of Astarion or Shadowheart that you cannot make your own.' },
-  { category: 'Privacy', question: 'Is my data sent to a server?', answer: 'No. Everything runs in your browser. When you click generate, names are created on your device. Your settings and generated names are never sent to our servers and nothing is stored. You can use the tool in a private window and your character ideas stay yours.' },
-  { category: 'Limits', question: 'How many names can I generate at once?', answer: 'You can request 1–24 names per run. For more, run it again — each run produces a fresh random set with no daily or total limit. Paste multiple runs into one document if you want a large pool to choose from for your party.' },
-  { category: 'Compatibility', question: 'Does it work on mobile?', answer: 'Yes. The generator runs in any modern browser on desktop, tablet, or phone with no app install. Generate a batch on your phone while planning your character, copy it into notes, and shortlist names before you sit down to play.' },
-  { category: 'General', question: 'Is the BG3 name generator free?', answer: 'Yes, completely free with no account, sign-up, or download. Generate as many Tav and companion names as you like, as often as you like.' },
-  { category: 'Best practices', question: 'How do I make a name feel truly BG3?', answer: 'Anchor it to your race’s naming tradition, nod to your class or background, and read it aloud to be sure it is comfortable to say. Comparing your candidate to the canon companion of the same race is the fastest way to confirm it sits in the right register.' },
-  { category: 'Best practices', question: 'Does the name need to match my appearance?', answer: 'Not strictly, but a name that fits your race and the vibe of your character build deepens immersion. A grim, scarred warrior with a soft lyrical name can feel mismatched — though deliberate contrast can also be a strong roleplay choice if that is your intent.' },
-  { category: 'Troubleshooting', question: 'The names feel too generic — what should I do?', answer: 'Generate a larger batch and filter ruthlessly for race-specific sound, discarding anything that could belong to any fantasy character. Then refine your favorite’s spelling toward its tradition. The more you lean into a single race’s conventions, the less generic the result feels.' },
+  { category: 'General', question: 'What is a BG3 name generator?', answer: 'It functions as a browser utility that generates monikers for Baldur’s Gate 3 heroes — your custom "Tav," companions, and hirelings — in the aesthetic of D&D and the Forgotten Realms. Because each playable ancestry features its respective naming convention, the generator yields race-fitting monikers instead of generic fantasy filler. It operates locally absent of registration and archives nothing.' },
+  { category: 'Tav', question: 'What is a "Tav" in BG3?', answer: '"Tav" acts as the community moniker for a custom (non-origin) Baldur’s Gate 3 protagonist, derived from the default character. When you forge your personal hero instead of controlling an origin like Astarion or Shadowheart, you decide the moniker companions will utilize for the entirety of the campaign — making it worthwhile to select one matching your ancestry and class.' },
+  { category: 'Races', question: 'How do names differ by race in BG3?', answer: 'Elves and half-elves prefer flowing, melodic monikers; tieflings frequently employ a virtue moniker combined with Infernal flavor; dwarves utilize rigid, clan-anchored monikers; githyanki deploy severe, alien monikers featuring apostrophes (such as Lae’zel); humans encompass numerous cultures; halflings and gnomes lean warm and domestic; dragonborn and half-orcs implement robust, deed-anchored monikers. Aligning the moniker with the ancestry is precisely what causes a Tav to feel authentic.' },
+  { category: 'Races', question: 'How do I name an elf or half-elf?', answer: 'Elven monikers are flowing and melodic containing gentle consonants and rich vowels. Generate a collection, retain the lyrical-sounding ones, and read them aloud — should it sound graceful and somewhat otherworldly, it applies. Half-elves may lean toward either their elven or human heritage according to the hero you desire.' },
+  { category: 'Races', question: 'What is the best way to christen a tiefling?', answer: 'Tieflings within D&D frequently bear a "virtue name" — a term or concept they select for themselves — alongside an Infernal-flavored moniker reflecting their fiendish heritage. The generator can furnish a foundation; couple it with a virtue concept (such as Hope, Ire, or Sorrow) to achieve an authentically tiefling outcome. Karlach serves as a solid canon reference regarding tone.' },
+  { category: 'Races', question: 'What is the best way to name a githyanki?', answer: 'Githyanki names sound harsh, alien, and guttural, often featuring apostrophes and hard consonants, with Lae’zel serving as the prime example. Sort your batch to find the least human-sounding options, and insert an apostrophe if necessary to firmly establish the githyanki naming convention.' },
+  { category: 'Origins', question: 'Are these suitable for origin or companion characters?', answer: 'The origin characters (Astarion, Gale, Lae’zel, Shadowheart, Wyll, Karlach, the Dark Urge) arrive already named, but you can employ this generator when designing your own companion-style NPCs, hirelings, or alternative party members. Match your generated names against the canonical companion of identical race to verify the tone.' },
+  { category: 'Class', question: 'Ought the name to match my class or background?', answer: 'It helps. A noble Paladin fits a formal, ancestry-focused name; a Druid requires something more earthy; an Urchin rogue needs a brief, street-worn moniker. D&D characters gain definition from their background as much as their stats, meaning a fitting name makes the character feel crafted rather than randomly generated.' },
+  { category: 'Use cases', question: 'Is it possible to use these names in tabletop D&D?', answer: 'Yes. Since BG3 relies on D&D 5e and the Forgotten Realms, the names remain setting-appropriate and transfer seamlessly to tabletop campaigns. Should you bring your Tav into a home game, the resulting name will blend in perfectly alongside other Sword Coast inhabitants.' },
+  { category: 'Use cases', question: 'Can I employ this for multiplayer parties?', answer: 'Yes. For a multiplayer group of custom characters, produce a batch for every player’s race and select names that sound cohesive for an adventuring party, remaining varied yet tonally uniform. This prevents any jarring style clashes throughout the group.' },
+  { category: 'Usage', question: 'How do I operate this generator?', answer: 'Choose your desired name quantity (1–24), hit Generate names, and retain the options that match your selected race and class by utilizing the race notes provided above. Transfer the list to your notes, narrow down your top choices, and type your selection into the BG3 character creator. Generate more as needed without any restrictions, account requirements, or downloads.' },
+  { category: 'Usage', question: 'Am I allowed to edit the generated names?', answer: 'Yes. The generated results serve as a foundation. Adjust the spelling, insert an apostrophe for a githyanki touch, soften the consonants for an elf, or merge elements from two distinct outcomes. Numerous players create a batch and subsequently polish a favorite until it feels completely correct.' },
+  { category: 'Naming style', question: 'Why does my name fail to sound fitting for my race, and how can I fix it?', answer: 'Pick your race initially, then narrow down options strictly by phonetics: elven titles ought to be fluid, dwarven ones heavy as rock, and githyanki ones strange and otherworldly. When an option comes close, tweak its orthography to match that heritage. Testing against an official companion of the identical race serves as a dependable test.' },
+  { category: 'Naming style', question: 'Is pronunciation something I need to be concerned about?', answer: 'Indeed. Since companions and the narrator voice the name frequently throughout BG3 cutscenes, a moniker that feels clumsy to utter becomes irritating across an extended playthrough. Speak every option out preference prior to finalizing and prioritize those that flow smoothly.' },
+  { category: 'Technical', question: 'In what manner are the names created?', answer: 'The tool mixes hand-picked naming parts based on D&D along with Forgotten Realms racial rules, blending them randomly right inside your web browser. Every single generation delivers a brand new batch. Zero data leaves for an external server; processing happens completely on your device.' },
+  { category: 'Technical', question: 'Do these represent actual characters featured in BG3?', answer: 'Negative. The system invents brand new, D&D-inspired titles for your personal gameplay rather than copying canonical companions. That design is deliberate since you require a unique moniker for your Tav, instead of a clone of Astarion or Shadowheart that feels impossible to claim as your own.' },
+  { category: 'Privacy', question: 'Are my details transmitted to a server?', answer: 'No. Everything processes directly within your browser. When you hit generate, names form right on your device. Your preferences and generated names never transmit to our servers, and zero data gets saved. Feel free to use the tool in a private window to keep your character concepts private.' },
+  { category: 'Limits', question: 'How many names am I able to generate simultaneously?', answer: 'Users may ask for 1 to 24 results per generation. Should you need additional ones, simply trigger it once more since every execution yields a fresh randomized selection without any restrictions on daily or overall counts. Combine multiple batches inside a single file if you desire an extensive list to pick from for your group.' },
+  { category: 'Compatibility', question: 'Does it function on mobile devices?', answer: 'Certainly. The tool functions within any contemporary browser across computers, tablets, or smartphones without requiring any software installation. Produce a list on your mobile device while designing your hero, save it to your memos, and pick favorites prior to launching your session.' },
+  { category: 'General', question: 'Does the BG3 Name Generator cost anything?', answer: 'Of course, it is totally costless with zero requirement for registration, accounts, or software downloads. Create as many Tav and companion monikers as you desire, as frequently as you wish.' },
+  { category: 'Best practices', question: 'What steps ensure a name truly captures the essence of BG3?', answer: 'Ground it within your specific race\'s naming customs, hint at your profession or origin, and speak it out loud to verify its ease of articulation. Evaluating your choice alongside an official companion from the same race represents the quickest method to verify it fits the proper tone.' },
+  { category: 'Best practices', question: 'Must the moniker align with my visual design?', answer: 'Not strictly, but a moniker that matches your heritage and character style enhances immersion. A weathered, battle-scarred fighter carrying a delicate poetic name might seem out of place, although intentional contrast can also make for a powerful roleplay decision if that is what you want.' },
+  { category: 'Troubleshooting', question: '[2] The names feel overly generic — what should I do?', answer: 'Produce a bigger batch and screen severely for heritage-appropriate phonetics, throwing away anything that could fit any fantasy figure. Afterward, polish your top choice\'s orthography toward its tradition. The closer you stay to one species\' rules, the less standard the output feels.' },
 ];
 
 export default async function Bg3NameGeneratorPage() {
@@ -143,7 +123,7 @@ export default async function Bg3NameGeneratorPage() {
         {createWriteUp()}
         <div className="mt-10 space-y-3">
           <h2 className="text-2xl font-semibold text-slate-900">Frequently Asked Questions</h2>
-          <p className="text-slate-700">Common questions about the BG3 name generator.</p>
+          <p className="text-slate-700">Frequent inquiries concerning the BG3 Name Generator.</p>
         </div>
         <FAQSection items={pageFaqs} />
         <FaqJsonLd faqs={pageFaqs} />

@@ -5,185 +5,101 @@ function WriteUp() {
   return (
     <section className="rounded-2xl border-3 border-black bg-white p-4 shadow-neo-sm md:p-6 mt-10">
       <div className="prose prose-slate max-w-none">
-        <h2>Book Blurb Generator: Craft Back-Cover Copy That Sells</h2>
-        <p>
-          A book blurb is arguably the most important piece of marketing copy an author will ever write. It lives on the back cover of a printed book, dominates the above-the-fold description on Amazon and Goodreads, and determines whether a browser becomes a buyer in under thirty seconds. Yet most authors "” even those who write brilliantly for hundreds of pages "” find blurb writing paralyzing. The skills that make a novelist great (scene-building, interiority, pacing) are largely the opposite of what a blurb demands (compression, hooks, urgency). Our free book blurb generator bridges that gap by turning your plot summary into polished, market-ready back-cover copy that mirrors the voice of bestselling books in your genre.
-        </p>
-        <p>
-          Whether you are querying literary agents, launching a self-published title, or refreshing the description on a backlist book that stopped converting, this tool produces blurbs that feel crafted rather than generated. Below, we explore what makes a blurb work, why AI-generated descriptions often miss the mark, and how to get the best results from this generator.
-        </p>
+        <h2>Book Blurb Generator: Write Back-Cover Copy That Drives Sales</h2>
+        <p>A book blurb is arguably the most vital piece of marketing copy any author will ever author. It sits on the back cover of a physical book, commands the above-the-fold description on Amazon and Goodreads, and decides whether a browser turns into a buyer in under thirty seconds. Yet the majority of authors "” even those writing brilliantly across hundreds of pages "” find blurb creation paralyzing. The talents rendering a novelist exceptional (scene creation, interiority, pacing) run mostly counter to what a blurb requires (compression, hooks, urgency). Our complimentary Book Blurb Generator bridges that gap by transforming your plot summary into polished, market-ready back-cover copy mirroring the tone of bestselling books within your genre.</p>
+        <p>Whether you happen to query literary agents, release a self-published title, or refresh the description on a backlist book that stopped converting, this tool crafts blurbs that feel carefully made rather than generated. Below, we examine what makes a blurb successful, why AI-generated descriptions often miss their mark, and how you can achieve top results from this generator.</p>
 
-        <h2>What Is a Book Blurb and Why Does It Matter So Much?</h2>
-        <p>
-          A book blurb (also called a book description, back-cover copy, or jacket copy) is a short persuasive text "” typically 150 to 300 words "” designed to entice a potential reader into opening the book. It is not a synopsis. A synopsis tells an agent or editor what happens, including the ending. A blurb is a sales tool: it teases the core conflict, introduces the protagonist in a compelling way, raises the emotional stakes, and ends on a note of irresistible curiosity.
-        </p>
-        <p>
-          Professional publishers employ specialized copywriters to write blurbs. Indie authors rarely have that luxury. The result is a market flooded with self-published titles featuring descriptions that either spoil too much, say too little, or bury the hook under pages of world-building context. In a category like romance, thriller, or fantasy "” where readers browse dozens of titles in a single session "” a weak blurb is a conversion killer regardless of how good the book itself is.
-        </p>
-        <p>
-          The stakes are equally high for query letters. When you submit to an agent, the one-paragraph hook you include in your query letter is functionally a blurb. Agents read hundreds of these weekly. A blurb that captures the core dramatic question with urgency and voice gets requests for the full manuscript. One that meanders into backstory gets a polite pass.
-        </p>
+        <h2>What Is a Book Blurb and Why Is It So Critical?</h2>
+        <p>A book blurb (also known as a book description, back-cover copy, or jacket copy) is a brief persuasive text "” usually 150 to 300 words "” crafted to entice a prospective reader into opening the book. It functions as no synopsis. A synopsis informs an agent or editor about events, including the conclusion. A blurb acts as a sales tool: it teases the central conflict, introduces the protagonist compellingly, raises the emotional stakes, and finishes on a note of irresistible curiosity.</p>
+        <p>Traditional publishers hire specialized copywriters to compose blurbs. Indie authors rarely enjoy that luxury. The outcome is a market flooded with self-published titles featuring descriptions that either reveal too much, state too little, or bury the hook beneath pages of world-building context. In categories like romance, thriller, or fantasy "” where readers scan dozens of titles per session "” a weak blurb destroys conversions regardless of the book's underlying quality.</p>
+        <p>The stakes remain equally high concerning query letters. When submitting to an agent, the single-paragraph hook included inside your query letter serves functionally as a blurb. Agents read hundreds of these weekly. A blurb capturing the core dramatic question with urgency and voice secures requests for the complete manuscript. One meandering into backstory receives a polite pass.</p>
 
-        <h2>Why AI-Generated Blurbs Often Sound Robotic</h2>
-        <p>
-          General-purpose AI writing tools tend to produce blurbs that are technically correct but commercially ineffective. The most common failure modes are:
-        </p>
+        <h2>Why AI-Generated Blurbs Tend to Sound Robotic</h2>
+        <p>General-purpose AI writing tools tend to generate blurbs that are technically correct yet commercially ineffective. The frequent failure modes consist of:</p>
         <h3>Over-summarizing the Plot</h3>
-        <p>
-          AI models trained on book data often learn that descriptions should explain what happens. But the best blurbs withhold as much as they reveal. A thriller blurb never tells you who the killer is. A romance blurb never describes the resolution of the central misunderstanding. Generic AI tools lean toward completeness when they should lean toward tension.
-        </p>
-        <h3>Missing the Emotional Core</h3>
-        <p>
-          Readers buy books based on the emotional experience they expect, not the plot mechanics. A great blurb for a literary novel might not even name the protagonist's job or hometown "” but it will make you feel the specific quality of grief or longing the story delivers. AI that doesn't understand this distinction produces flat, functional summaries instead of emotionally resonant copy.
-        </p>
+        <p>AI models trained on book data often learn that descriptions must explain events. Yet the finest blurbs withhold just as much as they disclose. A thriller blurb never reveals the killer's identity. A romance blurb never outlines the resolution to the central misunderstanding. Generic AI tools favor completeness when leaning toward tension is required.</p>
+        <h3>Failing to Capture the Emotional Core</h3>
+        <p>Readers purchase books based upon the expected emotional experience, not plot mechanics. An exceptional blurb for a literary novel might completely omit the protagonist's profession or hometown "” but it will make you feel the distinct quality of grief or longing delivered by the story. AI failing to grasp this distinction yields flat, functional summaries instead of emotionally resonant copy.</p>
         <h3>Ignoring Genre Conventions</h3>
-        <p>
-          Romance blurbs follow different rules from thriller blurbs. Fantasy blurbs for epic secondary-world stories use different language from contemporary fantasy. Cozy mystery blurbs have a warm, wry tone that would feel wrong in a dark psychological suspense novel. AI models without genre-specific fine-tuning produce blurbs in a vague middle register that fits no genre particularly well.
-        </p>
+        <p>Romance blurbs adhere to rules distinct from thriller blurbs. Fantasy blurbs for epic secondary-world tales employ language differing from contemporary fantasy. Cozy mystery blurbs feature a warm, wry tone inappropriate for a dark psychological suspense novel. AI models lacking genre-specific fine-tuning construct blurbs within a vague middle register suiting no particular genre well.</p>
         <h3>Clichéd Openers</h3>
-        <p>
-          "In a world where..." or "When [name] discovers..." are the blurb equivalent of "It was a dark and stormy night." They signal to an agent or experienced reader that the author doesn't know the current market. AI tools frequently default to these openers because they appear commonly in training data.
-        </p>
+        <p>"In a world where..." or "When [name] discovers..." stand as the blurb equivalent of "It was a dark and stormy night." They signal agents or experienced readers that the author is unfamiliar with current market standards. AI tools frequently default to these opening lines because they appear frequently within training datasets.</p>
 
-        <h2>How Our Book Blurb Generator Works Differently</h2>
-        <p>
-          Our blurb generator is tuned specifically for back-cover copy rather than general prose. It applies the following principles that separate professional jacket copy from amateur summaries:
-        </p>
+        <h2>How Our Book Blurb Generator Operates Differently</h2>
+        <p>Our blurb generator is tuned specifically for back-cover copy rather than general prose. It implements the following principles distinguishing professional jacket copy from amateur summaries:</p>
         <h3>Hook-First Architecture</h3>
-        <p>
-          Every blurb the tool produces opens with the core dramatic question or the protagonist's most compelling situation "” not with backstory, setting, or character biography. The first sentence is engineered to make the reader ask "and then what?" immediately.
-        </p>
+        <p>Every blurb generated by the tool starts with the core dramatic question or the protagonist's most compelling scenario "” bypassing backstory, setting, or character biography. The opening sentence is designed to make the reader ask "and then what?" instantly.</p>
         <h3>Stakes Escalation</h3>
-        <p>
-          The middle section of the blurb builds stakes progressively. What does the protagonist want? What is standing in the way? What will they lose if they fail? This three-beat structure mirrors the way the best commercial blurbs create urgency without giving away the second or third act.
-        </p>
+        <p>The middle portion of the blurb escalates stakes progressively. What does the protagonist desire? What obstructs their path? What will they forfeit upon failure? This three-beat structure mirrors how top commercial blurbs generate urgency without spoiling the second or third act.</p>
         <h3>Genre-Calibrated Language</h3>
-        <p>
-          The tool adjusts vocabulary, sentence rhythm, and emotional temperature to match your specified genre. A dark romance blurb uses different language than a middle-grade adventure blurb, and the generator recognizes this distinction.
-        </p>
+        <p>The tool modifies vocabulary, sentence rhythm, and emotional tone to fit your stated genre. A dark romance blurb utilizes language distinct from a middle-grade adventure blurb, and the generator acknowledges this distinction.</p>
         <h3>Cliffhanger Endings</h3>
-        <p>
-          Professional blurbs almost always end on an open question or a provocative statement that forces the reader to open the book to find the answer. The generator is specifically tuned to produce these endings rather than summarizing the resolution.
-        </p>
+        <p>Skilled blurbs almost universally conclude with a provocative statement or open question that compels the audience to open the book for the answer. The generator is specifically designed to craft these conclusions rather than summarizing the resolution.</p>
 
-        <h2>Step-by-Step: How to Use the Book Blurb Generator</h2>
-        <h3>Step 1: Gather Your Core Story Elements</h3>
-        <p>
-          Before you type anything into the generator, take five minutes to identify: your protagonist's name and defining trait, the inciting incident that launches the story, the central conflict or dramatic question, the primary emotional stakes (what the protagonist stands to gain or lose emotionally), and your genre and subgenre. The more precisely you can articulate these elements, the better the output will be.
-        </p>
-        <h3>Step 2: Write a Raw Summary</h3>
-        <p>
-          Paste a rough description of your book into the input field. Don't worry about polish "” this is the material the generator will reshape. Include the protagonist's situation at the start of the story, what disrupts that situation, what they're trying to achieve, and what the central obstacle is. Three to five sentences is usually sufficient.
-        </p>
-        <h3>Step 3: Specify Genre and Tone</h3>
-        <p>
-          Select your genre from the dropdown or type it in. If your book has subgenre characteristics "” "dark romance," "cozy mystery," "epic secondary-world fantasy," "literary fiction" "” include those as well. Tone guidance such as "witty and warm," "tense and atmospheric," or "emotional and character-driven" will further calibrate the output.
-        </p>
-        <h3>Step 4: Generate and Compare Variants</h3>
-        <p>
-          Generate at least three variants. Blurb writing involves a degree of subjective judgment, and different versions will emphasize different aspects of the story. Compare the openings of each variant "” which one would make you keep reading if you saw it on a shelf? Which one most accurately captures what your book feels like to read?
-        </p>
-        <h3>Step 5: Edit and Personalize</h3>
-        <p>
-          Use the best generated blurb as a working draft. Read it aloud. Swap any word that doesn't match your book's specific voice. Tighten any sentence that feels loose. Add any detail that the generator missed because it wasn't in your raw summary. The goal is a blurb that could only be about this book, in this author's voice.
-        </p>
+        <h2>Guide: Instructions for Using the Book Blurb Generator</h2>
+        <h3>Phase 1: Collect Your Main Plot Points</h3>
+        <p>Before entering any text into the generator, spend five minutes identifying: your protagonist's name alongside their defining trait, the inciting incident kicking off the plot, the central conflict or dramatic question, the primary emotional stakes (what your main character stands to gain or lose emotionally), plus your genre and subgenre. The more precisely you define these details, the superior the resulting output will be.</p>
+        <h3>Phase 2: Draft an Unfiltered Overview</h3>
+        <p>Paste a rough overview of your novel into the input box. Do not worry about polish "” this serves as the raw material the generator will reshape. Include the protagonist's starting situation, the event disrupting it, their main objective, and the primary obstacle. Three to five sentences usually suffice.</p>
+        <h3>Phase 3: Choose Style and Mood</h3>
+        <p>Pick your genre from the menu or type it in directly. If your story possesses subgenre traits "” "dark romance," "cozy mystery," "epic secondary-world fantasy," "literary fiction" "” add those as well. Tone descriptions like "witty and warm," "tense and atmospheric," or "emotional and character-driven" will further refine the output.</p>
+        <h3>Phase 4: Produce and Review Options</h3>
+        <p>Produce at least three different variants. Blurb creation involves subjective judgment, and distinct versions emphasize various facets of the narrative. Compare the openings of each option "” which one would compel you to keep reading upon spotting it on a shelf? Which variant most accurately reflects the reading experience of your book?</p>
+        <h3>Phase 5: Refine and Customize</h3>
+        <p>Treat the best generated blurb as your working draft. Read it aloud. Swap out any word failing to match your book's unique voice. Tighten any sentence feeling slack. Include any specific detail missed by the generator because it was absent from your raw summary. The objective is a blurb uniquely tailored to this exact book and authorial voice.</p>
 
         <h2>Use Cases for the Book Blurb Generator</h2>
-        <h3>Self-Published Authors on Amazon KDP</h3>
-        <p>
-          Amazon's book description field allows up to 4,000 characters, but studies of bestselling indie titles consistently show that the most effective descriptions are between 150 and 300 words. The generator produces output in this sweet spot. You can also use the tool to generate an extended description for Amazon's A+ Content feature, which allows formatted text with headers and additional paragraphs.
-        </p>
+        <h3>Independent Writers Using Amazon KDP</h3>
+        <p>Amazon's book description box accommodates up to 4,000 characters, yet analyses of top-selling indie books consistently demonstrate that peak-performing descriptions range between 150 and 300 words. The generator crafts output hitting this exact sweet spot. You may also utilize the utility to create an expanded description suited for Amazon's A+ Content feature, which supports formatted text featuring headers and extra paragraphs.</p>
         <h3>Query Letter Hooks</h3>
-        <p>
-          The one-paragraph hook in a query letter to a literary agent follows the same structural rules as a back-cover blurb: introduce the protagonist, establish the conflict, raise the stakes, end with a question. Many authors use the generator to draft their query hook and then adapt the same language for their Goodreads description and promotional materials.
-        </p>
-        <h3>Goodreads and BookBub Descriptions</h3>
-        <p>
-          Readers on Goodreads and BookBub are active book consumers who evaluate dozens of descriptions in a single browsing session. A description that opens with a strong hook and maintains tension throughout converts significantly better than one that buries the premise in backstory. The generator can produce platform-specific variants with appropriate formatting.
-        </p>
-        <h3>Series Bible and Marketing Materials</h3>
-        <p>
-          Authors writing series need consistent blurb language across multiple books. The generator helps establish a voice and structural template for the series that can be applied to each successive title while highlighting what makes each installment unique.
-        </p>
-        <h3>Book Proposal Non-Fiction Summaries</h3>
-        <p>
-          Non-fiction book proposals require an overview section that functions like a blurb "” it must articulate the book's core argument, its target audience, and why this book, at this moment, matters. The generator can be adapted for this use case by framing the "conflict" as the problem the book solves and the "stakes" as what readers stand to gain.
-        </p>
+        <p>The single-paragraph hook found in a literary agent query letter follows identical structural guidelines to a back-cover blurb: introduce the lead, establish the conflict, elevate the stakes, and finish with a question. Numerous authors leverage the generator to compose their query hook before adapting that exact phrasing for Goodreads descriptions and marketing materials.</p>
+        <h3>BookBub and Goodreads Synopses</h3>
+        <p>Users on Goodreads and BookBub are active readers who assess dozens of descriptions during a single browsing session. A description kicking off with a powerful hook and sustaining tension throughout performs vastly better than one burying the core premise within backstory. The generator creates platform-tailored variants featuring appropriate formatting.</p>
+        <h3>Promotional Content and Series Bible</h3>
+        <p>Authors penning series require consistent blurb terminology across multiple volumes. The generator assists in establishing a distinct voice and structural blueprint for the series that adapts to every subsequent title while spotlighting what makes each installment distinct.</p>
+        <h3>Non-Fiction Book Proposal Overviews</h3>
+        <p>Non-fiction book proposals demand an overview section acting like a blurb "” it must clearly state the book's central thesis, target audience, and why this specific work matters right now. The generator adapts to this use case by framing the "conflict" as the problem resolved by the book and the "stakes" as the reader's potential gain.</p>
 
-        <h2>Before and After: What the Generator Transforms</h2>
-        <h3>Before (Author's Raw Summary)</h3>
-        <p>
-          "My book is about a woman named Clara who grew up in a small town and left to become a doctor in the city. When her mother gets sick, she has to go back home and deal with all the memories she left behind. She also runs into her ex, Jake, who is now running the family farm. They have to work together to save the farm from a developer, and along the way they fall in love again. It's a second-chance romance set in Vermont."
-        </p>
+        <h2>Before and After: The Transformations Made by the Generator</h2>
+        <h3>Before (Unpolished Author Overview)</h3>
+        <p>"My story centers on Clara, a young woman who left her rural hometown behind to pursue a medical career in the city. After her mother falls ill, she is forced to return home and confront a past full of unresolved history. Along the way, she reconnects with her former flame, Jake, who is now managing his family's farm. The two must join forces to defend the property from an aggressive land developer, rediscovering their feelings for one another as they fight. It is a heartfelt second-chance romance taking place in Vermont."</p>
         <h3>After (Generator Output)</h3>
-        <p>
-          "Clara left Millhaven with two promises: a medical school acceptance letter and a vow never to look back. Twelve years later, her mother's diagnosis drags her home to the one place she swore she'd outrun "” and straight back into the orbit of Jake Mercer, the man she walked away from without a word of explanation. With a ruthless developer threatening to level the Mercer farm before the harvest is in, Clara and Jake are forced into an uneasy partnership. But working side by side on land that holds every memory they've spent a decade avoiding might cost Clara more than she's willing to lose "” because some promises can't survive coming home."
-        </p>
-        <p>
-          The transformation illustrates the key principles: the opening hook establishes character and conflict simultaneously, the stakes are both practical (the farm) and emotional (the relationship), and the ending withholds the resolution while making it irresistible.
-        </p>
+        <p>"Clara walked out of Millhaven driven by two guarantees: a spot in medical school and an absolute refusal to ever return. Over a decade later, her mother's illness compels her back to the very place she fought so hard to escape "” directly into the path of Jake Mercer, the partner she deserted without a single word of explanation. As an aggressive property developer attempts to acquire the Mercer farm before autumn ends, Clara and Jake must navigate an uneasy alliance. Yet collaborating across the very fields that echo the history they tried to bury could demand more than Clara is ready to give up "” because not every vow can withstand the journey home."</p>
+        <p>The rewrite demonstrates core concepts: the initial hook presents character alongside conflict, the stakes are both material (the farm) and sentimental (the connection), while the conclusion delays resolution yet makes it compulsive.</p>
 
-        <h2>Tips for Getting the Best Results</h2>
-        <h3>Lead with Your Protagonist's Core Want, Not Their Biography</h3>
-        <p>
-          The most common mistake in raw summaries is opening with the protagonist's history rather than their desire. "Clara grew up in a small town" tells us where she's from. "Clara left Millhaven with two promises" tells us who she is and immediately creates narrative tension. Frame your input around what your protagonist wants and what is standing in the way.
-        </p>
-        <h3>Name the Emotional Experience, Not Just the Plot</h3>
-        <p>
-          Add a line to your input about the emotional experience of the book: "It's ultimately about the courage it takes to forgive someone who hurt you." "The story explores what happens when ambition and love ask for incompatible things." This gives the generator the emotional texture it needs to produce copy that resonates rather than just summarizes.
-        </p>
-        <h3>Include Comparable Titles if You Have Them</h3>
-        <p>
-          If you know that your book reads like a specific author's work, include that in your input. The generator can calibrate the language register, sentence rhythm, and emotional temperature of the output to match comparable titles in the market, which is exactly what agents and readers use comp titles for.
-        </p>
-        <h3>Try Different Length Instructions</h3>
-        <p>
-          A blurb for a physical book back cover needs to fit in approximately 150 words due to space constraints. An Amazon description can be 250 to 300 words. A BookBub featured deal description might need to be under 150 characters. Specify your target length and platform for the most useful output.
-        </p>
+        <h2>[10] Tips for Getting the Best Results</h2>
+        <h3>Focus on Your Main Character's Primary Desire, Not Their Past</h3>
+        <p>The frequent pitfall in raw summaries is launching with the protagonist's background instead of their ambition. "Clara grew up in a small town" mentions her origin. "Clara left Millhaven with two promises" reveals her identity and instantly builds narrative tension. Structure your details around what your lead wants and what blocks their path.</p>
+        <h3>State the Feeling, Not Merely the Sequence</h3>
+        <p>Include an extra sentence in your submission regarding the book's emotional core: "It centers on the bravery required to pardon someone who wronged you." "The narrative investigates what occurs when ambition and love demand conflicting things." This supplies the tool with the affective depth needed to craft copy that connects instead of just recounting events.</p>
+        <h3>Add Similar Books If You Possess Them</h3>
+        <p>If you are aware that your novel resembles another writer's style, mention that in the data you submit. The tool can adjust the vocabulary level, sentence pacing, and emotional tone of the result to align with matching books in the industry, which is precisely how literary agents and consumers utilize comparable titles.</p>
+        <h3>Test Various Length Guidelines</h3>
+        <p>A blurb for a physical book's back cover must fit within roughly 150 words because of space limits. An Amazon synopsis can span 250 to 300 words. A BookBub featured deal description might need to stay under 150 characters. Define your desired size and channel for the most helpful output.</p>
 
-        <h2>How the Generator Compares to Writing a Blurb Manually</h2>
-        <p>
-          Writing a blurb manually from scratch typically takes authors between two hours and two days "” and often produces results they're not satisfied with. The emotional closeness authors feel to their own work makes it genuinely difficult to be objective about what the story is, versus what it means to them. The generator provides an outside perspective by default: it processes the story elements you provide and produces copy based on what those elements suggest to a neutral reader.
-        </p>
-        <p>
-          That said, the generator is a starting point rather than a final product. The best results come from treating the generated output as a first draft: a structurally sound starting point that you refine with the specific language, voice, and details that only you know. Think of it as having a professional copywriter produce a first draft that you then polish "” a process that compresses days of work into minutes.
-        </p>
+        <h2>In What Ways the Tool Measures Up Against Drafting a Blurb by Hand</h2>
+        <p>Crafting a blurb by hand from the ground up normally requires writers anywhere from two hours to two days "" and frequently yields outcomes they find disappointing. The personal attachment creators have toward their own creation makes remaining objective about the plot versus its personal significance genuinely hard. The tool supplies an external viewpoint automatically: it analyzes the plot details you supply and generates text derived from what those components convey to an unbiased audience.</p>
+        <p>Nevertheless, the tool serves as a beginning point rather than a completed piece. The highest quality outcomes emerge from viewing the generated text as an initial draft: a solidly built starting point that you enhance using the unique wording, tone, and specifics only you possess. Consider it equivalent to having an expert copywriter draft an initial version that you subsequently refine "" a workflow that condenses days of effort into moments.</p>
 
-        <h2>SEO Considerations for Book Descriptions</h2>
-        <p>
-          Amazon's search algorithm "” called A9 "” weights book descriptions for keyword relevance, particularly for categories and subgenres. A romance novel with "second chance romance," "small-town romance," and "Vermont" in the description will rank higher for those searches than a book with an identical cover and title but a keyword-sparse description. The generator incorporates the genre and subgenre terms you specify naturally into the copy, supporting discoverability without keyword stuffing.
-        </p>
-        <p>
-          For Google indexing of your author website or book landing page, the same principles apply. A description that includes the genre name, subgenre, setting, and emotional theme naturally "” the way readers actually search "” performs better in search results than one that focuses only on plot.
-        </p>
+        <h2>SEO Factors for Book Synopses</h2>
+        <p>Amazon's search algorithm "" known as A9 "" assesses book summaries regarding keyword matching, especially concerning genres and micro-genres. A romantic story featuring "second chance romance," "small-town romance," and "Vermont" within the summary will place higher for such queries than a publication featuring an identical cover and title alongside a keyword-deficient summary. The tool weaves the genre and micro-genre phrases you input organically into the text, aiding visibility while avoiding keyword stuffing.</p>
+        <p>For Google indexing of your author website or book landing page, identical rules apply. A summary containing the genre, subgenre, setting, and emotional theme naturally--the way users genuinely search--performs better in search rankings than one concentrating strictly on plot.</p>
 
-        <h2>Blurb Conventions by Genre</h2>
+        <h2>Blurb Guidelines by Category</h2>
         <h3>Romance</h3>
-        <p>
-          Romance blurbs almost always introduce both romantic leads in the first two sentences, establish the meet or reunion, name the central conflict or tension that keeps them apart, and end with a question about whether love will win. Dark romance blurbs use more intense, atmospheric language. Contemporary romance blurbs are warmer and often wry. Historical romance blurbs use period-appropriate vocabulary without being inaccessible.
-        </p>
+        <p>Romance summaries nearly always present both romantic leads within the initial two sentences, establish the meeting or reunion, state the primary conflict or tension dividing them, and conclude with a question regarding whether love will prevail. Dark romance descriptions employ heavier, more atmospheric phrasing. Contemporary romance blurbs are friendlier and frequently wry. Historical romance synopses utilize period-accurate language without becoming obscure.</p>
         <h3>Thriller and Mystery</h3>
-        <p>
-          Thriller blurbs open with the inciting crime or threat and establish the protagonist's personal stakes immediately. The best thriller blurbs create a sense of ticking clock "” something terrible will happen unless the protagonist acts. Mystery blurbs in the cozy subgenre are warmer and often include the setting as a character; in the hardboiled subgenre they are spare and atmospheric.
-        </p>
+        <p>Thriller summaries start with the inciting crime or danger and set up the protagonist's personal stakes instantly. The finest thriller blurbs foster a feeling of a ticking clock--something disastrous will happen unless the protagonist acts. Mystery descriptions in the cozy category are warmer and often treat the setting as a character; within the hardboiled category, they remain sparse and atmospheric.</p>
         <h3>Fantasy and Science Fiction</h3>
-        <p>
-          Speculative fiction blurbs face the unique challenge of introducing a world that doesn't exist while maintaining focus on the human story at the center. The best SFF blurbs spend one sentence on world-context and then immediately pivot to the character's conflict. The temptation to describe the magic system or the political structure of the alien empire should be resisted "” readers come for the story, not the world bible.
-        </p>
+        <p>Speculative fiction blurbs face the unique hurdle of introducing a nonexistent world while keeping the emphasis on the central human narrative. The best SFF summaries dedicate a single sentence to world-building before immediately shifting to the character's conflict. The urge to outline the magic system or the political framework of the alien empire should be resisted--readers arrive for the plot, not the world bible.</p>
         <h3>Literary Fiction</h3>
-        <p>
-          Literary fiction blurbs often work by atmosphere and emotional resonance rather than plot mechanics. They focus on the quality of the reading experience "” the specific texture of emotion the book delivers "” and lean on language that signals literary quality: unusual word choices, elegant sentence structures, thematic language. The generator calibrates its output to match this register when literary fiction is specified.
-        </p>
+        <p>Literary fiction blurbs frequently function through mood and emotional depth rather than plot mechanics. They center on the nature of the reading experience "" the specific emotional feel the publication provides "" and depend on terminology denoting literary excellence: distinct vocabulary, sophisticated sentence designs, thematic phrasing. The tool fine-tunes its output to reflect this tone when literary fiction is designated.</p>
 
-        <h2>Common Blurb Writing Mistakes the Generator Helps Avoid</h2>
-        <p>
-          Among the most common blurb mistakes the generator actively counters: starting with a rhetorical question directed at the reader ("Have you ever wondered what it would be like to...?"), using the word "journey" as a substitute for describing the actual story, beginning with the protagonist's name and nothing else ("Sarah Mitchell is a woman who..."), spoiling the climax or ending, including more than two character names in a blurb under 250 words (readers can't track more than two), and using genre clichés that appear in thousands of other blurbs without differentiating the book.
-        </p>
+        <h2>Frequent Blurb Composition Errors the Tool Assists in Preventing</h2>
+        <p>Among the most frequent blurb errors the tool actively combats: opening with a rhetorical inquiry addressed to the audience ("Have you ever wondered what it would be like to...?"), employing the word "journey" instead of outlining the actual plot, starting with the main character's title and nothing further ("Sarah Mitchell is a woman who..."), revealing the climax or conclusion, mentioning more than two character titles in a summary under 250 words (audiences struggle to follow exceeding two), and utilizing genre tropes found in thousands of other summaries without distinguishing the book.</p>
 
-        <h2>Using Generated Blurbs in Your Author Brand</h2>
-        <p>
-          A strong blurb doesn't just sell a single book "” it communicates what kind of author you are and what kind of reading experience readers can expect from your entire catalog. Once you've refined a generated blurb that truly captures your book's essence, study its language choices and structural moves. Over time, you'll develop an intuitive sense of how to apply those principles to future titles without needing to start from scratch each time. Many authors find that working with the generator accelerates their understanding of their own authorial voice by showing them what their story sounds like from the outside.
-        </p>
+        <h2>Leveraging Generated Summaries in Your Author Brand</h2>
+        <p>A compelling blurb doesn't just market one publication "" it conveys what sort of writer you are and what style of reading adventure audiences can anticipate from your entire body of work. Once you have perfected a created summary that genuinely captures your book's core, analyze its word selections and structural choices. Eventually, you will cultivate an instinctive grasp of how to implement those concepts toward upcoming releases without needing to begin from zero every single time. Numerous creators discover that utilizing the tool speeds up their comprehension of their personal creative voice by demonstrating how their plot appears from an external perspective.</p>
       </div>
     </section>
   );
@@ -194,139 +110,139 @@ const faqs: FaqItem[] = [
     category: 'Getting Started',
     question: 'What information do I need to provide to get a good blurb?',
     answer:
-      'The most important elements are your protagonist&#39;s core desire, the inciting incident that disrupts their life, the central conflict or obstacle, the emotional stakes, and your genre and subgenre. You don&#39;t need a polished summary "” a rough three-to-five sentence description of the story&#39;s setup is sufficient. The more clearly you articulate what the protagonist wants and what stands in the way, the stronger the output will be.',
+      'The key components include your main character&#39;s primary goal, the inciting event that shatters their routine, the main struggle, the emotional stakes, along with your genre and subgenre. A polished summary isn&#39;t required; a basic three-to-five sentence overview of the plot foundation works well. The better you define the hero&#39;s desires and obstacles, the better the final result.',
   },
   {
     category: 'Getting Started',
-    question: 'How long should my book blurb be?',
+    question: 'how long should a book summary be?',
     answer:
-      'The ideal blurb length depends on the platform. For a physical book back cover, 150 words is usually the sweet spot due to space constraints. For Amazon KDP, 200 to 300 words converts best. For a query letter hook, aim for one tight paragraph of 75 to 100 words. The generator can produce output calibrated to any of these lengths "” specify your target length in your input.',
+      'The best blurb length varies by channel. For a printed book back cover, 150 words generally works best given physical limits. For Amazon KDP, 200 to 300 words drives the highest conversion. For a query letter hook, target a single concise paragraph of 75 to 100 words. The generator creates copy tailored to any of these sizes; simply indicate your preferred length in the prompt.',
   },
   {
     category: 'Getting Started',
-    question: 'Can I use this generator for non-fiction books?',
+    question: 'Can I apply this tool for non-fiction titles?',
     answer:
-      'Yes. For non-fiction, frame the "conflict" as the problem your reader faces and the "protagonist" as the reader themselves or the central subject of the book. The generator can produce compelling back-cover copy for self-help, memoir, business books, and prescriptive non-fiction by applying the same hook-first, stakes-driven structure that works for fiction.',
+      'Indeed. For non-fiction, treat the "conflict" as the challenge your audience encounters and the "protagonist" as the reader themself or the core topic. The generator creates strong back-cover text for self-help, memoir, business titles, and prescriptive non-fiction by utilizing the identical hook-first, stakes-focused framework effective for fiction.',
   },
   {
     category: 'How It Works',
-    question: 'Why does the generator avoid starting with the protagonist\'s name?',
+    question: 'Why does the system avoid starting with the protagonist\'s name?',
     answer:
-      'Opening with a name tells readers nothing except the name. Professional blurbs open with situation, conflict, or emotional tone "” elements that immediately engage a reader&#39;s curiosity. "Clara left Millhaven with two promises" is more compelling than "Clara Mitchell is a doctor who..." because it implies story from the first word. The generator follows this convention unless you specifically request a name-first opening.',
+      'Starting with a character name offers readers zero context outside of that name. Expert blurbs kick off with a scenario, dilemma, or emotional vibe—factors that instantly hook a reader&#39;s interest. "Clara left Millhaven with two promises" grabs attention better than "Clara Mitchell is a doctor who..." since it hints at narrative right away. The generator applies this rule unless you explicitly ask for a name-led start.',
   },
   {
     category: 'How It Works',
-    question: 'How does the generator handle genre-specific conventions?',
+    question: 'How does the system handle genre-specific conventions?',
     answer:
-      'The generator adjusts vocabulary, sentence rhythm, emotional temperature, and structural conventions based on the genre you specify. Romance blurbs introduce both leads and name the central tension. Thriller blurbs establish urgency and ticking-clock stakes. Literary fiction blurbs emphasize emotional texture over plot mechanics. Specifying your subgenre (dark romance, cozy mystery, epic fantasy) produces even more calibrated output.',
+      'The system tailors word choice, cadence, emotional depth, and structural conventions according to whichever category you pick. A romance blurb introduces both protagonists and highlights the underlying romantic conflict. A thriller blurb builds pressure through time-sensitive danger and rising stakes. A literary fiction summary prioritizes psychological nuance instead of intricate plot mechanics. Selecting an exact subgenre (dark romance, cozy mystery, epic fantasy) ensures an even more customized blurb generation.',
   },
   {
     category: 'How It Works',
-    question: 'Will the generator spoil my ending?',
+    question: 'Will the generated text spoil my ending?',
     answer:
-      'The generator is specifically tuned to withhold resolutions and end on open questions rather than summarizing the ending. A blurb that reveals the climax removes the reader&#39;s incentive to buy the book. If you include the ending in your raw summary, the generator will use that information to build tension toward it without revealing it in the output.',
+      'The system is specifically designed to omit conclusions and wrap up with lingering questions instead of summarizing the finale. A summary giving away the climax destroys the buyer&#39;s motivation to purchase. Should your initial notes contain the ending, the system leverages those details to build suspense toward it without spoiling the final outcome in the text.',
   },
   {
     category: 'Quality and Editing',
-    question: 'How much editing does the generated blurb typically need?',
+    question: 'How much editing does the generated blurb generally require?',
     answer:
-      'Most generated blurbs require light editing rather than heavy revision. The structure, hook, and stakes are usually strong out of the box. The editing work typically involves swapping any words that don&#39;t match your specific voice, adding details the generator couldn&#39;t know from your summary, and tightening any sentence that feels slightly off. Treat the output as a well-structured first draft rather than a finished product.',
+      'The vast majority of generated book summaries only require basic polishing rather than an exhaustive rewrite. In most cases, the core hook, structure, and story stakes are solid from the start. Your editing efforts should focus on replacing phrases that miss your personal author voice, incorporating nuances the platform could not infer from your brief synopsis, and refining any awkward sentence structures. Approach the generated copy as a well-crafted initial draft instead of an absolute finished version.',
   },
   {
     category: 'Quality and Editing',
-    question: 'What should I do if the generated blurb doesn\'t capture my story\'s tone?',
+    question: 'What should I do if the generated blurb fails to capture my story\'s tone?',
     answer:
-      'Try adding explicit tone guidance to your input: "This is a dark, atmospheric story" or "The tone is warm and witty with a lot of banter." Also check whether your raw summary conveys the emotional core of the story or only the plot mechanics. Adding a sentence about how the book is supposed to make readers feel "” the emotional experience you&#39;re delivering "” significantly improves tonal accuracy.',
+      'Try inserting direct mood instructions into your prompt: "This is a dark, atmospheric story" or "The tone is warm and witty with a lot of banter." Also verify whether your draft captures the story&#39;s emotional heart or merely plot events. Including a line regarding how the novel should make readers feel—the emotional journey you provide—greatly enhances style precision.',
   },
   {
     category: 'Quality and Editing',
-    question: 'Can I generate multiple variants and combine elements from different versions?',
+    question: 'Can I produce multiple variants and combine elements from different versions?',
     answer:
-      'Absolutely, and this is often the best approach. Generate three to five variants, then identify which version has the strongest opening, which has the best stakes escalation, and which has the most compelling ending. Combine the best elements from different variants into a single refined blurb. This mix-and-match approach often produces better results than any single generated output.',
+      'Absolutely, and adopting this method often yields the strongest copy. Create three to five distinct variations, then identify which draft boasts the most engaging hook, which escalates the central conflict best, and which closes on the most memorable note. Blend these premier sections across the different drafts to assemble a single polished description. Combining your favorite elements from multiple versions frequently produces a much better blurb than relying on any solitary output.',
   },
   {
     category: 'Platform-Specific Use',
-    question: 'How do I optimize a blurb for Amazon search?',
+    question: 'How can I fine-tune a blurb for Amazon search?',
     answer:
-      'Amazon&#39;s A9 algorithm considers keywords in your book description for discoverability. Include your genre name, subgenre terms, setting, and emotional themes naturally in the text. For example, a "small-town second-chance romance set in Vermont" should include those exact phrases. The generator incorporates genre and setting terms you specify, but you can add additional keyword phrases during editing without disrupting readability.',
+      'Amazon&#39;s A9 algorithm indexes keywords within your book description for search visibility. Naturally weave your genre label, subgenre keywords, setting, and emotional themes into the copy. For instance, a "small-town second-chance romance set in Vermont" ought to contain those exact terms. The generator integrates the genre and setting keywords you provide, but you can also include extra keyword phrases during revision without hurting flow.',
   },
   {
     category: 'Platform-Specific Use',
-    question: 'Can I use this tool for my query letter hook?',
+    question: 'Can I utilize this tool for my query letter hook?',
     answer:
-      'Yes. The one-paragraph hook in a query letter follows the same structural rules as a back-cover blurb "” introduce the protagonist, establish the conflict, raise the stakes, end with a question. Specify "query letter hook" as your format and aim for 75 to 100 words. Many agents also appreciate a single-sentence logline above the hook; the generator can produce both.',
+      'Yes. The single-paragraph hook in a query letter obeys the same layout guidelines as a back-cover blurb—introduce the protagonist, set up the conflict, raise the stakes, and finish with a question. Request "query letter hook" as your style and target 75 to 100 words. Numerous agents also welcome a one-sentence logline preceding the hook; the generator can create both.',
   },
   {
     category: 'Platform-Specific Use',
-    question: 'How does a Goodreads blurb differ from an Amazon blurb?',
+    question: 'How does a Goodreads blurb compare to an Amazon blurb?',
     answer:
-      'Goodreads readers are often more engaged book consumers than casual Amazon browsers, and blurbs on Goodreads benefit from slightly more literary language and slightly more specific emotional texture. Both platforms benefit from strong hooks, but Goodreads readers respond well to blurbs that signal what the reading experience feels like, not just what happens. The generator can be directed to produce Goodreads-optimized copy by specifying the platform.',
+      'Goodreads users generally display greater passion for books than casual shoppers browsing Amazon, which means Goodreads book blurbs perform better with elevated literary phrasing and richer emotional depth. While compelling hooks are vital on both platforms, Goodreads members gravitate toward descriptions that convey the atmospheric mood of the read rather than simple plot summaries. You can prompt the generator to craft copy tailored for Goodreads by designating the target platform beforehand.',
   },
   {
     category: 'Series and Backlist',
-    question: 'Can I use this tool for books that are part of a series?',
+    question: 'Can I utilize this tool for novels that belong to a series?',
     answer:
-      'Yes, and series blurbs have specific conventions worth noting. The first book in a series should stand completely alone in its blurb "” do not mention the series or future books unless the series is already established. From the second book onward, you can reference the series name and briefly orient readers who may be joining mid-series, while still focusing primarily on the current book&#39;s conflict.',
+      'Indeed, series summaries follow unique guidelines worth keeping in mind. Book one ought to stand entirely on its own within its description; avoid referencing the overarching series or upcoming volumes unless the sequence is already well-established. Starting with the second instalment onward, you may mention the series title and briefly guide readers who might be jumping in midway, whilst still keeping the primary focus on the present book\'s central conflict.',
   },
   {
     category: 'Series and Backlist',
-    question: 'How can I use the generator to refresh a backlist book\'s description?',
+    question: 'In what ways might I leverage the generator to update an older book\'s description?',
     answer:
-      'If a backlist title has low conversion rates, a refreshed blurb can significantly improve sales without any other changes. Use the generator to produce a new version based on what you now know about how readers respond to the book "” what they highlight in reviews, what emotions they mention, what they recommend it for. Incorporate that reader-validated language into your input for the most resonant output.',
+      'Should a backlist title suffer from poor conversion rates, a fresh summary can markedly boost sales without requiring any other alterations. Utilise the generator to craft a new variant drawing on your current understanding of audience feedback—what reviewers spotlight, the sentiments they mention, and the purposes for which they recommend it. Integrate that reader-tested phrasing into your prompt to achieve the most resonant results.',
   },
   {
     category: 'Writing Craft',
-    question: 'What is the difference between a blurb and a synopsis?',
+    question: 'What is the difference between a synopsis and a blurb?',
     answer:
-      'A synopsis is a complete plot summary used by agents and editors "” it tells everything that happens, including the ending. A blurb is a sales tool that withholds the ending and focuses on creating desire rather than conveying information. They serve opposite purposes: a synopsis proves you can plot; a blurb proves you can sell. This tool generates blurbs, not synopses.',
+      'A synopsis is a full plot overview utilised by literary agents and editors detailing every event that occurs, the conclusion included. Conversely, a blurb acts as a promotional tool that omits the ending and aims to build anticipation rather than impart information. They fulfil opposing functions: a synopsis demonstrates your plotting abilities, whereas a blurb proves your selling capability. This utility produces blurbs rather than synopses.',
   },
   {
     category: 'Writing Craft',
-    question: 'How important is the final line of a blurb?',
+    question: 'Just how crucial is the concluding sentence of a blurb?',
     answer:
-      'The final line is disproportionately important. Readers who make it to the end of a blurb are already interested "” the final line tips them from interested to committed. Professional blurbs almost always end on an open question, a provocative statement, or a raised stake that can only be resolved by reading the book. Avoid ending with a statement that implies the story will have a satisfying resolution "” end instead with the question that makes the resolution feel necessary.',
+      'The final line holds disproportionate significance. Readers reaching the end of a summary are already engaged, and the last sentence shifts them from intrigued to committed. Professional blurbs almost always conclude with an open-ended inquiry, a striking declaration, or heightened stakes resolvable only through reading the book. Steer clear of finales suggesting the tale achieves a neat conclusion; finish instead with the question making that resolution feel essential.',
   },
   {
     category: 'Writing Craft',
-    question: 'Should my blurb mention the title or my author name?',
+    question: 'Ought my summary to include the book title or my pen name?',
     answer:
-      'No. The title appears above or below the blurb, and your author name is credited separately. Including them inside the blurb text wastes valuable words and looks amateurish. The blurb should function as pure persuasive copy focused entirely on hooking the reader into the story.',
+      'No. The title sits above or below the text, and your author moniker is credited independently. Embedding them within the blurb wastes precious space and appears amateur. The description should operate strictly as persuasive material dedicated entirely to drawing the reader into the narrative.',
   },
   {
     category: 'Common Problems',
-    question: 'Why does my generated blurb feel generic even after editing?',
+    question: 'Why does my AI-crafted blurb still feel generic following edits?',
     answer:
-      'Generic blurbs usually result from generic input. If your raw summary uses abstract language ("she goes on a journey of self-discovery") rather than specific story details ("she discovers the man she&#39;s falling for was hired to investigate her family"), the output will be similarly abstract. Revise your input to include the most specific, concrete, surprising elements of your story and regenerate.',
+      'Generic input generally leads to generic blurbs. When your draft summary relies on vague phrasing ("she goes on a journey of self-discovery") instead of concrete plot points ("she discovers the man she&#39;s falling for was hired to investigate her family"), the generated result remains equally vague. Update your text to feature the most unique, concrete, and surprising aspects of your plot before trying again.',
   },
   {
     category: 'Common Problems',
-    question: 'How do I write a blurb for a character-driven literary novel with no strong external plot?',
+    question: 'How can I compose a summary for a character-focused literary novel lacking a robust external plot?',
     answer:
-      'Literary fiction blurbs work by emotional and atmospheric specificity rather than plot mechanics. Focus your input on the specific emotional situation the protagonist is in, the specific quality of longing or conflict or tension that drives the story, and the particular way the book makes readers feel. The generator calibrated to "literary fiction" will produce copy that sells the reading experience rather than the plot.',
+      'Literary fiction descriptions succeed through emotional and atmospheric precision rather than plot mechanics. Direct your prompt toward the specific emotional state of the protagonist, the distinct nature of yearning, conflict, or tension propelling the tale, and the unique manner the book makes audiences feel. The generator tuned to literary fiction will supply copy that sells the reading journey rather than the plot.',
   },
   {
     category: 'Common Problems',
-    question: 'My book has multiple POV characters. How do I write a blurb for it?',
+    question: 'My story features multiple POV characters. How do I approach writing its summary?',
     answer:
-      'Multi-POV blurbs typically work best by focusing on one or two of the most compelling characters and the overarching conflict that connects all perspectives. If every POV character is equally important, consider structuring the blurb around the central dramatic question that all characters are entangled in, rather than introducing each one. Too many names in a blurb creates confusion rather than complexity.',
+      'Multi-POV descriptions generally perform best by concentrating on one or two of the most compelling figures alongside the overarching conflict uniting all viewpoints. Should every perspective character hold equal weight, consider framing the blurb around the core dramatic question binding them all together, rather than introducing each individually. An excess of names in a summary breeds confusion instead of complexity.',
   },
   {
     category: 'Advanced Use',
-    question: 'Can I use the generator to write taglines and one-liners as well as full blurbs?',
+    question: 'Am I able to use the generator to draft taglines and one-liners alongside complete blurbs?',
     answer:
-      'Yes. A tagline is the single sentence that appears on a book cover or in a promotional header "” it distills the book&#39;s core promise to its most essential and evocative form. Specify "tagline" or "one-line hook" as your format and the generator will produce options in the five-to-fifteen word range that capture the book&#39;s essence. These are useful for social media, advertising copy, and author bio pages.',
+      'Yes. A tagline consists of a focused single sentence displayed on a book cover or marketing banner &#8211; it distills the book\'s core premise down to its sharpest, most evocative expression. Simply select "tagline" or "one-line hook" as your desired output style, and the tool will deliver punchy concepts within the five-to-fifteen word range capturing the story\'s core. These work exceptionally well across paid ads, promotional social posts, and author bio sections.',
   },
   {
     category: 'Advanced Use',
-    question: 'How do I adapt a blurb for different marketing contexts like newsletter features, BookBub ads, or Amazon ads?',
+    question: 'In what ways can I tailor a blurb for diverse promotional channels like newsletter segments, BookBub ads, or Amazon ads?',
     answer:
-      'Different platforms have different copy lengths and audience expectations. BookBub featured deal descriptions need to be under 150 characters. Amazon ads display only the first few lines. Newsletter features allow slightly more space and can include a more personal authorial voice. Specify the platform and word/character limit in your input and the generator will produce copy optimized for that specific context.',
+      'Different platforms entail varying length constraints and audience expectations. BookBub featured deal summaries must stay under 150 characters. Amazon promotions display merely the initial few lines. Newsletter features afford slightly greater room and accommodate a more personal authorial tone. Specify the platform along with the word or character limits in your input, and the utility will deliver copy optimised for that precise setting.',
   },
   {
     category: 'Advanced Use',
-    question: 'Can the generator help me write comparison titles (comps) for my query letter?',
+    question: 'Might the generator aid me in devising comparison titles for my query letter?',
     answer:
-      'The generator can help you articulate the "X meets Y" or "for fans of Z" framing that agents look for in comp titles, but selecting the actual titles is judgment that requires market knowledge. Once you&#39;ve identified your comp titles, you can include them in your input and the generator will incorporate them naturally into the query hook "” for example, "In the tradition of [Author], this novel..." or "Fans of [Title] will recognize..."',
+      'The generator can help you articulate the "X meets Y" or "for fans of Z" framing that agents look for in comp titles, but selecting the actual titles is judgment that requires market knowledge. Once you&#39;ve identified your comp titles, you can include them in your input and the generator will incorporate them naturally into the query hook &#8211; for example, "In the tradition of [Author], this novel..." or "Fans of [Title] will recognize..."',
   },
 ];
 

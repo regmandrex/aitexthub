@@ -50,13 +50,8 @@ export default async function SpaceRemoverPage() {
         <SpaceRemoverWriteUp />
 
         <div className="mt-10 space-y-3">
-          <h2 className="text-2xl font-semibold text-slate-900">
-            Frequently Asked Questions – Space Remover Online
-          </h2>
-          <p className="text-slate-700">
-            Common questions about the space remover tool, removing extra spaces,
-            normalizing whitespace, and cleaning text online.
-          </p>
+          <h2 className="text-2xl font-semibold text-slate-900">FAQ – Space Remover on the Web</h2>
+          <p className="text-slate-700">Common inquiries concerning the Space Remover utility, eliminating extra spaces, standardizing whitespace, and cleaning copy over the internet.</p>
         </div>
 
         <FAQSection
